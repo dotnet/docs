@@ -15,9 +15,9 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
 ## WPF and Win32 Interoperation Basics  
  There are two basic techniques for interoperation between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code.  
   
--   Host [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. With this technique, you can use the advanced graphics capabilities of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] within the framework of a standard [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window and application.  
+- Host [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content in a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window. With this technique, you can use the advanced graphics capabilities of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] within the framework of a standard [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window and application.  
   
--   Host a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. With this technique, you can use an existing custom [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] control in the context of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and pass data across the boundaries.  
+- Host a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] window in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. With this technique, you can use an existing custom [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] control in the context of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and pass data across the boundaries.  
   
  Each of these techniques is conceptually introduced in this topic. For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)], see [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md). For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Walkthrough: Hosting a Win32 Control in WPF](walkthrough-hosting-a-win32-control-in-wpf.md).  
   
@@ -27,13 +27,13 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
  One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files into a [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] project.  There are several project division techniques to compensate for this.  
   
--   Create a C# DLL that contains all your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages as a compiled assembly, and then have your [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] executable include that [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] as a reference.  
+- Create a C# DLL that contains all your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages as a compiled assembly, and then have your [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] executable include that [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] as a reference.  
   
--   Create a C# executable for the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and have it reference a [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] that contains the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] content.  
+- Create a C# executable for the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and have it reference a [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] that contains the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] content.  
   
--   Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] at run time, instead of compiling your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
+- Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] at run time, instead of compiling your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
--   Do not use [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] at all, and write all your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in code, building up the element tree from <xref:System.Windows.Application>.  
+- Do not use [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] at all, and write all your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in code, building up the element tree from <xref:System.Windows.Application>.  
   
  Use whatever approach works best for you.  
   
@@ -62,13 +62,13 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 5. Within the handler (or a function that the handler calls), do the following:  
   
-    1.  Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window HWND as its `parent` parameter.  
+    1. Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window HWND as its `parent` parameter.  
   
-    2.  Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class.  
+    2. Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class.  
   
-    3.  Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property.  
+    3. Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property.  
   
-    4.  The <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.Handle%2A> property contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
+    4. The <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.Handle%2A> property contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
   
 6. Implement a managed class that contains a static field that holds a reference to your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object. This class allows you to get a reference to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content object from your [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code, but more importantly it prevents your <xref:System.Windows.Interop.HwndSource> from being inadvertently garbage collected.  
   
@@ -97,11 +97,11 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 6. Process selected window messages, such as control notifications. There are two approaches. Both provide identical access to the message stream, so your choice is largely a matter of programming convenience.  
   
-    -   Implement message processing for all messages (not just shutdown messages) in your override of the <xref:System.Windows.Interop.HwndHost> method <xref:System.Windows.Interop.HwndHost.WndProc%2A>.  
+    - Implement message processing for all messages (not just shutdown messages) in your override of the <xref:System.Windows.Interop.HwndHost> method <xref:System.Windows.Interop.HwndHost.WndProc%2A>.  
   
-    -   Have the hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element process the messages by handling the <xref:System.Windows.Interop.HwndHost.MessageHook> event. This event is raised for every message that is sent to the main window procedure of the hosted window.  
+    - Have the hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element process the messages by handling the <xref:System.Windows.Interop.HwndHost.MessageHook> event. This event is raised for every message that is sent to the main window procedure of the hosted window.  
   
-    -   You cannot process messages from windows that are out of process using <xref:System.Windows.Interop.HwndHost.WndProc%2A>.  
+    - You cannot process messages from windows that are out of process using <xref:System.Windows.Interop.HwndHost.WndProc%2A>.  
   
 7. Communicate with the hosted window by using platform invoke to call the unmanaged `SendMessage` function.  
   
@@ -114,35 +114,35 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 #### Notable Differences in Output Behavior  
   
--   <xref:System.Windows.FrameworkElement>, which is the <xref:System.Windows.Interop.HwndHost> base class, has quite a few properties that imply changes to the UI. These include properties such as <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType>, which changes the layout of elements within that element as a parent. However, most of these properties are not mapped to possible [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] equivalents, even if such equivalents might exist. Too many of these properties and their meanings are too rendering-technology specific for mappings to be practical. Therefore, setting properties such as <xref:System.Windows.FrameworkElement.FlowDirection%2A> on <xref:System.Windows.Interop.HwndHost> has no effect.  
+- <xref:System.Windows.FrameworkElement>, which is the <xref:System.Windows.Interop.HwndHost> base class, has quite a few properties that imply changes to the UI. These include properties such as <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType>, which changes the layout of elements within that element as a parent. However, most of these properties are not mapped to possible [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] equivalents, even if such equivalents might exist. Too many of these properties and their meanings are too rendering-technology specific for mappings to be practical. Therefore, setting properties such as <xref:System.Windows.FrameworkElement.FlowDirection%2A> on <xref:System.Windows.Interop.HwndHost> has no effect.  
   
--   <xref:System.Windows.Interop.HwndHost> cannot be rotated, scaled, skewed, or otherwise affected by a Transform.  
+- <xref:System.Windows.Interop.HwndHost> cannot be rotated, scaled, skewed, or otherwise affected by a Transform.  
   
--   <xref:System.Windows.Interop.HwndHost> does not support the <xref:System.Windows.UIElement.Opacity%2A> property (alpha blending). If content inside the <xref:System.Windows.Interop.HwndHost> performs <xref:System.Drawing> operations that include alpha information, that is itself not a violation, but the <xref:System.Windows.Interop.HwndHost> as a whole only supports Opacity = 1.0 (100%).  
+- <xref:System.Windows.Interop.HwndHost> does not support the <xref:System.Windows.UIElement.Opacity%2A> property (alpha blending). If content inside the <xref:System.Windows.Interop.HwndHost> performs <xref:System.Drawing> operations that include alpha information, that is itself not a violation, but the <xref:System.Windows.Interop.HwndHost> as a whole only supports Opacity = 1.0 (100%).  
   
--   <xref:System.Windows.Interop.HwndHost> will appear on top of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements in the same top-level window. However, a <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ContextMenu> generated menu is a separate top-level window, and so will behave correctly with <xref:System.Windows.Interop.HwndHost>.  
+- <xref:System.Windows.Interop.HwndHost> will appear on top of other [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements in the same top-level window. However, a <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ContextMenu> generated menu is a separate top-level window, and so will behave correctly with <xref:System.Windows.Interop.HwndHost>.  
   
--   <xref:System.Windows.Interop.HwndHost> does not respect the clipping region of its parent <xref:System.Windows.UIElement>. This is potentially an issue if you attempt to put an <xref:System.Windows.Interop.HwndHost> class inside a scrolling region or <xref:System.Windows.Controls.Canvas>.  
+- <xref:System.Windows.Interop.HwndHost> does not respect the clipping region of its parent <xref:System.Windows.UIElement>. This is potentially an issue if you attempt to put an <xref:System.Windows.Interop.HwndHost> class inside a scrolling region or <xref:System.Windows.Controls.Canvas>.  
   
 #### Notable Differences in Input Behavior  
   
--   In general, while input devices are scoped within the <xref:System.Windows.Interop.HwndHost> hosted [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] region, input events go directly to [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)].  
+- In general, while input devices are scoped within the <xref:System.Windows.Interop.HwndHost> hosted [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] region, input events go directly to [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)].  
   
--   While the mouse is over the <xref:System.Windows.Interop.HwndHost>, your application does not receive [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] mouse events, and the value of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property <xref:System.Windows.UIElement.IsMouseOver%2A> will be `false`.  
+- While the mouse is over the <xref:System.Windows.Interop.HwndHost>, your application does not receive [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] mouse events, and the value of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property <xref:System.Windows.UIElement.IsMouseOver%2A> will be `false`.  
   
--   While the <xref:System.Windows.Interop.HwndHost> has keyboard focus, your application will not receive [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] keyboard events and the value of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> will be `false`.  
+- While the <xref:System.Windows.Interop.HwndHost> has keyboard focus, your application will not receive [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] keyboard events and the value of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> will be `false`.  
   
--   When focus is within the <xref:System.Windows.Interop.HwndHost> and changes to another control inside the <xref:System.Windows.Interop.HwndHost>, your application will not receive the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus>.  
+- When focus is within the <xref:System.Windows.Interop.HwndHost> and changes to another control inside the <xref:System.Windows.Interop.HwndHost>, your application will not receive the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus>.  
   
--   Related stylus properties and events are analogous, and do not report information while the stylus is over <xref:System.Windows.Interop.HwndHost>.  
+- Related stylus properties and events are analogous, and do not report information while the stylus is over <xref:System.Windows.Interop.HwndHost>.  
   
 <a name="tabbing_mnemonics_accelerators"></a>   
 ## Tabbing, Mnemonics, and Accelerators  
  The <xref:System.Windows.Interop.IKeyboardInputSink> and <xref:System.Windows.Interop.IKeyboardInputSite> interfaces allow you to create a seamless keyboard experience for mixed [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] applications:  
   
--   Tabbing between [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] components  
+- Tabbing between [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] components  
   
--   Mnemonics and accelerators that work both when focus is within a Win32 component and when it is within a WPF component.  
+- Mnemonics and accelerators that work both when focus is within a Win32 component and when it is within a WPF component.  
   
  The <xref:System.Windows.Interop.HwndHost> and <xref:System.Windows.Interop.HwndSource> classes both provide implementations of <xref:System.Windows.Interop.IKeyboardInputSink>, but they may not handle all the input messages that you want for more advanced scenarios. Override the appropriate methods to get the keyboard behavior you want.  
   

@@ -17,13 +17,13 @@ Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to p
   
  Common applications for adorners include:  
   
--   Adding functional handles to a <xref:System.Windows.UIElement> that enable a user to manipulate the element in some way (resize, rotate, reposition, etc.).  
+- Adding functional handles to a <xref:System.Windows.UIElement> that enable a user to manipulate the element in some way (resize, rotate, reposition, etc.).  
   
--   Provide visual feedback to indicate various states, or in response to various events.  
+- Provide visual feedback to indicate various states, or in response to various events.  
   
--   Overlay visual decorations on a <xref:System.Windows.UIElement>.  
+- Overlay visual decorations on a <xref:System.Windows.UIElement>.  
   
--   Visually mask or override part or all of a <xref:System.Windows.UIElement>.  
+- Visually mask or override part or all of a <xref:System.Windows.UIElement>.  
   
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a basic framework for adorning visual elements. The following table lists the primary types used when adorning objects, and their purpose. Several usage examples follow.  
   

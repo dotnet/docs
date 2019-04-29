@@ -10,11 +10,11 @@ The `My.Computer.Mouse.WheelScrollLines` property was called, but the mouse has 
   
 ## To correct this error  
   
--   Check the `My.Computer.Mouse.WheelExists` property to see if the mouse has a scroll wheel before calling the `My.Computer.Mouse.WheelScrollLines` property.  
+- Check the `My.Computer.Mouse.WheelExists` property to see if the mouse has a scroll wheel before calling the `My.Computer.Mouse.WheelScrollLines` property.  
   
      -or-  
   
--   Install a mouse with a scroll wheel on the computer.  
+- Install a mouse with a scroll wheel on the computer.  
   
 ## See also
 

@@ -22,9 +22,9 @@ This sample demonstrates how to batch a set of changes so that they can be undon
   
 2. Click **Open Editing Scope**.  
   
-    1.  This command calls <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A> that creates an editing scope and pushes it onto the editing stack.  
+    1. This command calls <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A> that creates an editing scope and pushes it onto the editing stack.  
   
-    2.  Three activities are then added to the selected <xref:System.Activities.Presentation.Model.ModelItem>. Note that if the editing scope had not been opened with <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A>, three new activities would appear on the designer canvas. Because this operation is still pending within the <xref:System.Activities.Presentation.Model.EditingScope>, the designer is not yet updated.  
+    2. Three activities are then added to the selected <xref:System.Activities.Presentation.Model.ModelItem>. Note that if the editing scope had not been opened with <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A>, three new activities would appear on the designer canvas. Because this operation is still pending within the <xref:System.Activities.Presentation.Model.EditingScope>, the designer is not yet updated.  
   
 3. Press **Close Editing Scope** to commit the editing scope. Three activities appear in the designer.  
   

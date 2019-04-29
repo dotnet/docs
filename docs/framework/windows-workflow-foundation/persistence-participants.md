@@ -42,17 +42,17 @@ A persistence participant can participate in a persistence operation (Save or Lo
   
  When loading a workflow instance the persistence provider creates a lock on that instance. This prevents the instance from being loaded by more than one host in a multi-node scenario. If you attempt to load a workflow instance that has been locked you will see an exception like the following: The exception " System.ServiceModel.Persistence.InstanceLockException: The requested operation could not complete because the lock for instance '00000000-0000-0000-0000-000000000000' could not be acquired". This error is caused when one of the following occurs:  
   
--   In a multi-node scenario the instance is loaded by another host.  There are a few different ways to resolve these types of conflicts: forward the processing to the node which owns the lock and retry, or force the load which will cause the other host to be unable to save their work.  
+- In a multi-node scenario the instance is loaded by another host.  There are a few different ways to resolve these types of conflicts: forward the processing to the node which owns the lock and retry, or force the load which will cause the other host to be unable to save their work.  
   
--   In a single-node scenario and the host crashed.  When the host starts up again (a process recycle or creating a new persistence provider factory) the new host attempts to load an instance which is still locked by the old host because the lock hasn't expired yet.  
+- In a single-node scenario and the host crashed.  When the host starts up again (a process recycle or creating a new persistence provider factory) the new host attempts to load an instance which is still locked by the old host because the lock hasn't expired yet.  
   
--   In a single-node scenario and the instance in question was aborted at some point and a new persistence provider instance is created which has a different host ID.  
+- In a single-node scenario and the instance in question was aborted at some point and a new persistence provider instance is created which has a different host ID.  
   
  The lock timeout value has a default value of 5 minutes, you can specify a different timeout value when calling <xref:System.ServiceModel.Persistence.PersistenceProvider.Load%2A>.  
   
 ## In This Section  
   
--   [How to: Create a Custom Persistence Participant](how-to-create-a-custom-persistence-participant.md)  
+- [How to: Create a Custom Persistence Participant](how-to-create-a-custom-persistence-participant.md)  
   
 ## See also
 

@@ -10,7 +10,7 @@ A cyclic operation has failed. Cyclic operations cycle and therefore cannot comp
   
 ## To correct this error  
   
--   When inheriting, make sure that there are no cyclic references.  
+- When inheriting, make sure that there are no cyclic references.  
   
 ## See also
 

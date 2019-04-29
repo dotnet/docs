@@ -10,7 +10,7 @@ You tried to access an object whose methods don't support named arguments.
   
 ## To correct this error  
   
--   Specify arguments positionally when accessing methods on this object. See the object's documentation for more information on argument positions and types.  
+- Specify arguments positionally when accessing methods on this object. See the object's documentation for more information on argument positions and types.  
   
 ## See also
 

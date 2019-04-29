@@ -3,10 +3,10 @@
 - name: Overview
   expanded: true
   items:
-  - name: What is ML.NET?
-    href: what-is-mldotnet.md
-  - name: Model training concepts
-    href: basic-concepts-model-training-in-mldotnet.md
+  - name: What is machine learning?
+    href: what-is-machine-learning.md
+  - name: How does ML.NET work?
+    href: how-does-mldotnet-work.md
 - name: Tutorials
   items:
   - name: Overview
@@ -28,24 +28,17 @@
   - name: Load data
     href: how-to-guides/load-data-ml-net.md
   - name: Prepare data
-    href: how-to-guides/index.md
-    items:
-    - name: Apply categorical feature engineering
-      href: how-to-guides/train-model-categorical-ml-net.md
-    - name: Apply textual feature engineering
-      href: how-to-guides/train-model-textual-ml-net.md
-    - name: Preprocess data with normalizers
-      href: how-to-guides/normalizers-preprocess-data-ml-net.md
+    href: how-to-guides/prepare-data-ml-net.md
   - name: Train, evaluate, and explain the model
     items:
-    - name: Train model using cross-validation
-      href: how-to-guides/train-cross-validation-ml-net.md
-    - name: Inspect intermediate pipeline data values
-      href: how-to-guides/inspect-intermediate-data-ml-net.md
-    - name: Train regression model
-      href: how-to-guides/train-regression-model-ml-net.md
     - name: Determine model feature importance with PFI
       href: how-to-guides/determine-global-feature-importance-in-model.md
+    - name: Inspect intermediate pipeline data values
+      href: how-to-guides/inspect-intermediate-data-ml-net.md      
+    - name: Train a model
+      href: how-to-guides/train-machine-learning-model-ml-net.md
+    - name: Train model using cross-validation
+      href: how-to-guides/train-cross-validation-ml-net.md
   - name: Use the trained model
     items:
     - name: One prediction at a time with PredictionEngine
@@ -56,18 +49,20 @@
       href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
     - name: Serve Model in Web API
       href: how-to-guides/serve-model-web-api-ml-net.md
-    - name: Infer.NET
-      items:
-      - name: Probabilistic programming with Infer.NET
-        href: how-to-guides/matchup-app-infer-net.md
   - name: ML.NET CLI
     items:
     - name: Install the ML.NET CLI
       href: how-to-guides/install-ml-net-cli.md
+  - name: Infer.NET
+    items:
+    - name: Probabilistic programming with Infer.NET
+      href: how-to-guides/matchup-app-infer-net.md
 - name: Reference
   items:
   - name: API Reference
     href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+  - name: Preview API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
   - name: CLI Reference
     href: reference/ml-net-cli-reference.md
 - name: Resources

@@ -150,9 +150,9 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
   
  While many Routing Service configurations use exclusive filter logic that routes messages to only one specific endpoint, you may need to route a given message to multiple destination endpoints. To multicast a message to multiple destinations, the following conditions must be true:  
   
--   The channel shape must not be request-reply (though may be one-way or duplex,) because only one reply can be received by the client application in response to the request.  
+- The channel shape must not be request-reply (though may be one-way or duplex,) because only one reply can be received by the client application in response to the request.  
   
--   Multiple filters must return `true` when evaluating the message.  
+- Multiple filters must return `true` when evaluating the message.  
   
  If these conditions are met, the message is routed to all endpoints of all filters that evaluate to `true`. The following example defines a routing configuration that results in messages being routed to both endpoints if the endpoint address in the message is `http://localhost:8000/routingservice/router/rounding`.  
   
@@ -189,33 +189,33 @@ rc.FilterTable.Add(new EndpointAddressMessageFilter(new EndpointAddress(
   
  **Request processing**  
   
--   Get the **MessageVersion** of the outbound binding/channel.  
+- Get the **MessageVersion** of the outbound binding/channel.  
   
--   Get the body reader for the original message.  
+- Get the body reader for the original message.  
   
--   Create a new message with the same action, body reader, and a new **MessageVersion**.  
+- Create a new message with the same action, body reader, and a new **MessageVersion**.  
   
--   If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
+- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
   
--   Copy all message properties to the new message.  
+- Copy all message properties to the new message.  
   
--   Store the original request message to use when processing the response.  
+- Store the original request message to use when processing the response.  
   
--   Return the new request message.  
+- Return the new request message.  
   
  **Response processing**  
   
--   Get the **MessageVersion** of the original request message.  
+- Get the **MessageVersion** of the original request message.  
   
--   Get the body reader for the received response message.  
+- Get the body reader for the received response message.  
   
--   Create a new response message with the same action, body reader, and the **MessageVersion** of the original request message.  
+- Create a new response message with the same action, body reader, and the **MessageVersion** of the original request message.  
   
--   If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
+- If <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> != **Addressing.None**, copy the To, From, FaultTo, and RelatesTo headers to the new message.  
   
--   Copy the message properties to the new message.  
+- Copy the message properties to the new message.  
   
--   Return the new response message.  
+- Return the new response message.  
   
  By default, the **SoapProcessingBehavior** is automatically added to the client endpoints by the <xref:System.ServiceModel.Routing.RoutingBehavior> when the service starts; however, you can control whether SOAP processing is added to all client endpoints by using the <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> property. You can also add the behavior directly to a specific endpoint and enable or disable this behavior at the endpoint level if a more granular control of SOAP processing is required.  
   

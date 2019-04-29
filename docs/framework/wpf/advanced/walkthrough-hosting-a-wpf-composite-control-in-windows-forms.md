@@ -14,9 +14,9 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
   
  Tasks illustrated in this walkthrough include:  
   
--   Implementing the WPF composite control.  
+- Implementing the WPF composite control.  
   
--   Implementing the Windows Forms host application.  
+- Implementing the Windows Forms host application.  
   
  For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=159996).  
   
@@ -48,13 +48,13 @@ You need Visual Studio to complete this walkthrough.
   
  Your project should have references to the following system DLLs. If any of these DLLs are not included by default, add them to your project.  
   
--   PresentationCore  
+- PresentationCore  
   
--   PresentationFramework  
+- PresentationFramework  
   
--   System  
+- System  
   
--   WindowsBase  
+- WindowsBase  
   
 ### Creating the User Interface  
  The [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] for the composite control is implemented with [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. The composite control [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
@@ -133,11 +133,11 @@ namespace MyControls
 #### Initializing the Control  
  The following code implements several basic tasks:  
   
--   Declares a private event, `OnButtonClick`, and its associated delegate, `MyControlEventHandler`.  
+- Declares a private event, `OnButtonClick`, and its associated delegate, `MyControlEventHandler`.  
   
--   Creates several private global variables that store the user's data. This data is exposed through corresponding properties.  
+- Creates several private global variables that store the user's data. This data is exposed through corresponding properties.  
   
--   Implements a handler, `Init`, for the control’s <xref:System.Windows.FrameworkElement.Loaded> event. This handler initializes the global variables by assigning them the values defined in MyControl1.xaml. To do this, it uses the <xref:System.Windows.FrameworkElement.Name%2A> assigned to a typical <xref:System.Windows.Controls.TextBlock> element, `nameLabel`, to access that element's property settings.  
+- Implements a handler, `Init`, for the control’s <xref:System.Windows.FrameworkElement.Loaded> event. This handler initializes the global variables by assigning them the values defined in MyControl1.xaml. To do this, it uses the <xref:System.Windows.FrameworkElement.Name%2A> assigned to a typical <xref:System.Windows.Controls.TextBlock> element, `nameLabel`, to access that element's property settings.  
   
  Delete the existing constructor and add the following code to your `MyControl1` class.  
   
@@ -146,11 +146,11 @@ namespace MyControls
 #### Handling the Buttons' Click Events  
  The user indicates that the data-entry task is finished by clicking either the **OK** button or the **Cancel** button. Both buttons use the same <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler, `ButtonClicked`. Both buttons have a name, `btnOK` or `btnCancel`, that enables the handler to determine which button was clicked by examining the value of the `sender` argument. The handler does the following:  
   
--   Creates a `MyControlEventArgs` object that contains the data from the <xref:System.Windows.Controls.TextBox> elements.  
+- Creates a `MyControlEventArgs` object that contains the data from the <xref:System.Windows.Controls.TextBox> elements.  
   
--   If the user clicked the **Cancel** button, sets the `MyControlEventArgs` object's `IsOK` property to `false`.  
+- If the user clicked the **Cancel** button, sets the `MyControlEventArgs` object's `IsOK` property to `false`.  
   
--   Raises the `OnButtonClick` event to indicate to the host that the user is finished, and passes back the collected data.  
+- Raises the `OnButtonClick` event to indicate to the host that the user is finished, and passes back the collected data.  
   
  Add the following code to your `MyControl1` class, after the `Init` method.  
   
@@ -203,15 +203,15 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
   
 4. Add references to the following assemblies.  
   
-    -   PresentationCore  
+    - PresentationCore  
   
-    -   PresentationFramework  
+    - PresentationFramework  
   
-    -   System.Xaml  
+    - System.Xaml  
   
-    -   WindowsBase  
+    - WindowsBase  
   
-    -   WindowsFormsIntegration  
+    - WindowsFormsIntegration  
   
 ### Implementing the User Interface for the Application  
  The UI for the Windows Form application contains several controls to interact with the WPF composite control.  
@@ -290,9 +290,9 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
   
  The remaining two lines in the `Form1_Load` method attach handlers to two control events:  
   
--   `OnButtonClick` is a custom event that is fired by the composite control when the user clicks the **OK** or **Cancel** button. You handle the event to get the user's response and to collect any data that the user specified.  
+- `OnButtonClick` is a custom event that is fired by the composite control when the user clicks the **OK** or **Cancel** button. You handle the event to get the user's response and to collect any data that the user specified.  
   
--   <xref:System.Windows.FrameworkElement.Loaded> is a standard event that is raised by a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control when it is fully loaded. The event is used here because the example needs to initialize several global variables using properties from the control. At the time of the form's <xref:System.Windows.Forms.Form.Load> event, the control is not fully loaded and those values are still set to `null`. You need to wait until the control’s <xref:System.Windows.FrameworkElement.Loaded> event occurs before you can access those properties.  
+- <xref:System.Windows.FrameworkElement.Loaded> is a standard event that is raised by a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control when it is fully loaded. The event is used here because the example needs to initialize several global variables using properties from the control. At the time of the form's <xref:System.Windows.Forms.Form.Load> event, the control is not fully loaded and those values are still set to `null`. You need to wait until the control’s <xref:System.Windows.FrameworkElement.Loaded> event occurs before you can access those properties.  
   
  The <xref:System.Windows.FrameworkElement.Loaded> event handler is shown in the preceding code. The `OnButtonClick` handler is discussed in the next section.  
   

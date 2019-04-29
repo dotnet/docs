@@ -8,16 +8,16 @@ A *model-defined function* is a function that is defined in a conceptual model. 
   
  A definition for a model-defined function contains the following information:  
   
--   A function name. (Required)  
+- A function name. (Required)  
   
--   The type of the return value. (Optional)  
+- The type of the return value. (Optional)  
   
     > [!NOTE]
     >  If no return type is specified, the return value is void.  
   
--   Parameter information. (Optional)  
+- Parameter information. (Optional)  
   
--   An [Entity SQL](../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md) expression that defines the body of the function.  
+- An [Entity SQL](../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md) expression that defines the body of the function.  
   
  Note that model-defined functions do not support output parameters. This restriction is in place so that model-defined functions can be composed.  
   

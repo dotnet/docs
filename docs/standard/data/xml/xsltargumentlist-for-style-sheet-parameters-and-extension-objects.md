@@ -19,13 +19,13 @@ The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet 
   
  The following are advantages to passing an object rather than using an embedded script:  
   
--   Provides better encapsulation and reuse of classes.  
+- Provides better encapsulation and reuse of classes.  
   
--   Allows style sheets to be smaller and more maintainable.  
+- Allows style sheets to be smaller and more maintainable.  
   
--   Supports calling methods on classes belonging to namespaces other than those defined within the set of supported <xref:System> namespaces.  
+- Supports calling methods on classes belonging to namespaces other than those defined within the set of supported <xref:System> namespaces.  
   
--   Supports passing result tree fragments to the style sheet with the use of the <xref:System.Xml.XPath.XPathNodeIterator>.  
+- Supports passing result tree fragments to the style sheet with the use of the <xref:System.Xml.XPath.XPathNodeIterator>.  
   
 ## XSLT Style Sheet Parameters  
  XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace Uniform Resource Identifier (URI) are associated with the parameter object at that time.  

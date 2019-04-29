@@ -19,7 +19,7 @@ When programming Windows Communication Foundation (WCF) services, the service se
   
 ### To get the current security context  
   
--   Access the static property <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> to get the current security context. Examine any of the properties of the current context from the reference.  
+- Access the static property <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> to get the current security context. Examine any of the properties of the current context from the reference.  
   
 ### To determine the identity of the caller  
   
@@ -40,13 +40,13 @@ When programming Windows Communication Foundation (WCF) services, the service se
 ## Compiling the Code  
  The code uses the following namespaces:  
   
--   <xref:System>  
+- <xref:System>  
   
--   <xref:System.ServiceModel>  
+- <xref:System.ServiceModel>  
   
--   <xref:System.IdentityModel.Policy>  
+- <xref:System.IdentityModel.Policy>  
   
--   <xref:System.IdentityModel.Claims>  
+- <xref:System.IdentityModel.Claims>  
   
 ## See also
 

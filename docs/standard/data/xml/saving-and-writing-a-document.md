@@ -12,19 +12,19 @@ ms.author: "mairaw"
 # Saving and Writing a Document
 When you load and save an <xref:System.Xml.XmlDocument>, the saved document may differ from the original in the following ways:  
   
--   If the <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property is set to `true` before the <xref:System.Xml.XmlDocument.Save%2A> method is called, white space in the document is preserved in the output; if this property is `false`, <xref:System.Xml.XmlDocument> auto-indents the output.  
+- If the <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property is set to `true` before the <xref:System.Xml.XmlDocument.Save%2A> method is called, white space in the document is preserved in the output; if this property is `false`, <xref:System.Xml.XmlDocument> auto-indents the output.  
   
--   All the white space between attributes is reduced to a single space character.  
+- All the white space between attributes is reduced to a single space character.  
   
--   The white space between elements is changed. Significant white space is preserved and insignificant white space is not. But when the document is saved, it will use the <xref:System.Xml.XmlTextWriter> **Indenting** mode by default to neatly print the output to make it more readable.  
+- The white space between elements is changed. Significant white space is preserved and insignificant white space is not. But when the document is saved, it will use the <xref:System.Xml.XmlTextWriter> **Indenting** mode by default to neatly print the output to make it more readable.  
   
--   The quote character used around attribute values is changed to double quote by default. You can use the <xref:System.Xml.XmlTextReader.QuoteChar%2A> property on <xref:System.Xml.XmlTextWriter> to set the quote character to either double quote or single quote.  
+- The quote character used around attribute values is changed to double quote by default. You can use the <xref:System.Xml.XmlTextReader.QuoteChar%2A> property on <xref:System.Xml.XmlTextWriter> to set the quote character to either double quote or single quote.  
   
--   By default, numeric character entities like `{` are expanded.  
+- By default, numeric character entities like `{` are expanded.  
   
--   The byte-order mark found in the input document is not preserved. UCS-2 is saved as UTF-8 unless you explicitly create an XML declaration that specifies a different encoding.  
+- The byte-order mark found in the input document is not preserved. UCS-2 is saved as UTF-8 unless you explicitly create an XML declaration that specifies a different encoding.  
   
--   If you want to write out the <xref:System.Xml.XmlDocument> into a file or stream, the output written out is the same as the content of the document. That is, the <xref:System.Xml.XmlDeclaration> is written out only if there is one contained in the document, and the encoding used when writing out the document is the same encoding given in the declaration node.  
+- If you want to write out the <xref:System.Xml.XmlDocument> into a file or stream, the output written out is the same as the content of the document. That is, the <xref:System.Xml.XmlDeclaration> is written out only if there is one contained in the document, and the encoding used when writing out the document is the same encoding given in the declaration node.  
   
 ## Writing an XmlDeclaration  
  The <xref:System.Xml.XmlDocument> and <xref:System.Xml.XmlDeclaration> members of <xref:System.Xml.XmlNode.OuterXml%2A>, <xref:System.Xml.XmlNode.InnerXml%2A>, and <xref:System.Xml.XmlNode.WriteTo%2A>, in addition to the <xref:System.Xml.XmlDocument> methods of <xref:System.Xml.XmlDocument.Save%2A> and <xref:System.Xml.XmlDocument.WriteContentTo%2A>, create an XML declaration.  

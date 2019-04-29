@@ -17,23 +17,23 @@ Some applications require a form with a layout that arranges itself appropriatel
   
  The <xref:System.Windows.Forms.FlowLayoutPanel> arranges its contents in a specific flow direction: horizontal or vertical. Its contents can be wrapped from one row to the next, or from one column to the next. Alternately, its contents can be clipped instead of wrapped. Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows Forms project  
+- Creating a Windows Forms project  
   
--   Arranging Controls Horizontally and Vertically  
+- Arranging Controls Horizontally and Vertically  
   
--   Changing Flow Direction  
+- Changing Flow Direction  
   
--   Inserting Flow Breaks  
+- Inserting Flow Breaks  
   
--   Arranging Controls Using Padding and Margins  
+- Arranging Controls Using Padding and Margins  
   
--   Inserting Controls by Double-clicking Them in the Toolbox  
+- Inserting Controls by Double-clicking Them in the Toolbox  
   
--   Inserting a Control by Drawing Its Outline  
+- Inserting a Control by Drawing Its Outline  
   
--   Inserting Controls Using the Caret  
+- Inserting Controls Using the Caret  
   
--   Reassigning Existing Controls to a Different Parent  
+- Reassigning Existing Controls to a Different Parent  
   
  When you are finished, you will have an understanding of the role played by these important layout features.  
   
@@ -173,13 +173,13 @@ Some applications require a form with a layout that arranges itself appropriatel
 ## Next Steps  
  You can achieve a complex layout using a combination of layout panels and controls. Suggestions for more exploration include:  
   
--   Resize one of the <xref:System.Windows.Forms.Button> controls to a larger size and note the effect on the layout.  
+- Resize one of the <xref:System.Windows.Forms.Button> controls to a larger size and note the effect on the layout.  
   
--   Layout panels can contain other layout panels. Experiment with dropping a <xref:System.Windows.Forms.TableLayoutPanel> control into the existing control.  
+- Layout panels can contain other layout panels. Experiment with dropping a <xref:System.Windows.Forms.TableLayoutPanel> control into the existing control.  
   
--   Dock the <xref:System.Windows.Forms.FlowLayoutPanel> control to the parent form. Resize the form and note the effect on the layout.  
+- Dock the <xref:System.Windows.Forms.FlowLayoutPanel> control to the parent form. Resize the form and note the effect on the layout.  
   
--   Set the <xref:System.Windows.Forms.Control.Visible%2A> property of one of the controls to `false` and note how the <xref:System.Windows.Forms.FlowLayoutPanel> reflows in response.  
+- Set the <xref:System.Windows.Forms.Control.Visible%2A> property of one of the controls to `false` and note how the <xref:System.Windows.Forms.FlowLayoutPanel> reflows in response.  
   
 ## See also
 

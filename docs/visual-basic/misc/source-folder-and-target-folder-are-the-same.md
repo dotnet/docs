@@ -8,7 +8,7 @@ An attempt has been made to copy or move a file, but the specified source direct
   
 ## To correct this error  
   
--   Make sure you supplied the correct source and target directories.  
+- Make sure you supplied the correct source and target directories.  
   
 ## See also
 

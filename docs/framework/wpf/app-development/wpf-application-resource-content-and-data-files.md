@@ -21,11 +21,11 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 # WPF Application Resource, Content, and Data Files
 [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] applications often depend on files that contain non-executable data, such as [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], images, video, and audio. Windows Presentation Foundation (WPF) offers special support for configuring, identifying, and using these types of data files, which are called application data files. This support revolves around a specific set of application data file types, including:  
   
--   **Resource Files**: Data files that are compiled into either an executable or library [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] assembly.  
+- **Resource Files**: Data files that are compiled into either an executable or library [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] assembly.  
   
--   **Content Files**: Standalone data files that have an explicit association with an executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] assembly.  
+- **Content Files**: Standalone data files that have an explicit association with an executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] assembly.  
   
--   **Site of Origin Files**: Standalone data files that have no association with an executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] assembly.  
+- **Site of Origin Files**: Standalone data files that have no association with an executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] assembly.  
   
  One important distinction to make between these three types of files is that resource files and content files are known at build time; an assembly has explicit knowledge of them. For site of origin files, however, an assembly may have no knowledge of them at all, or implicit knowledge through a pack [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] reference; the case of the latter, there is no guarantee that the referenced site of origin file actually exists.  
   
@@ -39,11 +39,11 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
   
  You should use resource files when:  
   
--   You don't need to update the resource file's content after it is compiled into an assembly.  
+- You don't need to update the resource file's content after it is compiled into an assembly.  
   
--   You want to simplify application distribution complexity by reducing the number of file dependencies.  
+- You want to simplify application distribution complexity by reducing the number of file dependencies.  
   
--   Your application data file needs to be localizable (see [WPF Globalization and Localization Overview](../advanced/wpf-globalization-and-localization-overview.md)).  
+- Your application data file needs to be localizable (see [WPF Globalization and Localization Overview](../advanced/wpf-globalization-and-localization-overview.md)).  
   
 > [!NOTE]
 >  The resource files described in this section are different than the resource files described in [XAML Resources](../advanced/xaml-resources.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
@@ -169,13 +169,13 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ## Site of Origin Files  
  Resource files have an explicit relationship with the assemblies that they are distributed alongside, as defined by the <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute>. But, there are times when you may want to establish either an implicit or non-existent relationship between an assembly and an application data file, including when:  
   
--   A file doesn't exist at compile time.  
+- A file doesn't exist at compile time.  
   
--   You don't know what files your assembly will require until run time.  
+- You don't know what files your assembly will require until run time.  
   
--   You want to be able to update files without recompiling the assembly that they are associated with.  
+- You want to be able to update files without recompiling the assembly that they are associated with.  
   
--   Your application uses large data files, such as audio and video, and you only want users to download them if they choose to.  
+- Your application uses large data files, such as audio and video, and you only want users to download them if they choose to.  
   
  It is possible to load these types of files by using traditional [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] schemes, such as the file:/// and http:// schemes.  
   

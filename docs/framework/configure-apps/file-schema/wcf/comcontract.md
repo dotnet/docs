@@ -85,7 +85,6 @@ Specifies a COM+ integration service contract.
 ## See also
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
-- <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>
 - [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)
 - [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)

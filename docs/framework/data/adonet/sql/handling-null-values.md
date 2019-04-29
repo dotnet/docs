@@ -15,11 +15,11 @@ A null value in a relational database is used when the value in a column is unkn
 ## Nulls and Three-Valued Logic  
  Allowing null values in column definitions introduces three-valued logic into your application. A comparison can evaluate to one of three conditions:  
   
--   True  
+- True  
   
--   False  
+- False  
   
--   Unknown  
+- Unknown  
   
  Because null is considered to be unknown, two null values compared to each other are not considered to be equal. In expressions using arithmetic operators, if any of the operands is null, the result is null as well.  
   

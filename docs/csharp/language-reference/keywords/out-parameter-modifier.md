@@ -39,9 +39,9 @@ Properties are not variables and therefore cannot be passed as `out` parameters.
   
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
--   Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
+- Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
   
--   Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
 
 ## Declaring `out` parameters   
 

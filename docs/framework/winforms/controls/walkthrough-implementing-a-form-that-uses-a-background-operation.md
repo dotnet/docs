@@ -23,13 +23,13 @@ If you have an operation that will take a long time to complete, and you do not 
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a Windows-based Application  
+- Creating a Windows-based Application  
   
--   Creating a <xref:System.ComponentModel.BackgroundWorker> in Your Form  
+- Creating a <xref:System.ComponentModel.BackgroundWorker> in Your Form  
   
--   Adding Asynchronous Event Handlers  
+- Adding Asynchronous Event Handlers  
   
--   Adding Progress Reporting and Support for Cancellation  
+- Adding Progress Reporting and Support for Cancellation  
   
  For a complete listing of the code used in this example, see [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md).  
   
@@ -62,7 +62,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 #### To create a BackgroundWorker with the Designer  
   
--   From the **Components** tab of the **Toolbox**, drag a <xref:System.ComponentModel.BackgroundWorker> onto the form.  
+- From the **Components** tab of the **Toolbox**, drag a <xref:System.ComponentModel.BackgroundWorker> onto the form.  
   
 ## Adding Asynchronous Event Handlers  
  You are now ready to add event handlers for the <xref:System.ComponentModel.BackgroundWorker> component's asynchronous events. The time-consuming operation that will run in the background, which computes Fibonacci numbers, is called by one of these event handlers.  
@@ -139,7 +139,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 #### To test your project  
   
--   Press F5 to compile and run the application.  
+- Press F5 to compile and run the application.  
   
      While the calculation is running in the background, you will see the <xref:System.Windows.Forms.ProgressBar> displaying the progress of the calculation toward completion. You can also cancel the pending operation.  
   
@@ -148,11 +148,11 @@ If you have an operation that will take a long time to complete, and you do not 
 ## Next Steps  
  Now that you have implemented a form that uses a <xref:System.ComponentModel.BackgroundWorker> component to execute a computation in the background, you can explore other possibilities for asynchronous operations:  
   
--   Use multiple <xref:System.ComponentModel.BackgroundWorker> objects for several simultaneous operations.  
+- Use multiple <xref:System.ComponentModel.BackgroundWorker> objects for several simultaneous operations.  
   
--   To debug your multithreaded application, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).  
+- To debug your multithreaded application, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).  
   
--   Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
+- Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
     > [!CAUTION]
     >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  

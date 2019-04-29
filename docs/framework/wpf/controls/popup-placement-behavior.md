@@ -30,13 +30,13 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
 ## Definitions of Terms: The Anatomy of a Popup  
  The following terms are useful in understanding how the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties relate to each other and the <xref:System.Windows.Controls.Primitives.Popup>:  
   
--   Target object  
+- Target object  
   
--   Target area  
+- Target area  
   
--   Target origin  
+- Target origin  
   
--   Popup alignment point  
+- Popup alignment point  
   
  These terms provide a convenient way to refer to various aspects of the <xref:System.Windows.Controls.Primitives.Popup> and the control that it is associated with.  
   
@@ -129,11 +129,11 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
 ## When the Popup Encounters the Edge of the Screen  
  For security reasons, a <xref:System.Windows.Controls.Primitives.Popup> cannot be hidden by the edge of a screen. One of the following three things happens when the <xref:System.Windows.Controls.Primitives.Popup> encounters a screen edge:  
   
--   The popup realigns itself along the screen edge that would obscure the <xref:System.Windows.Controls.Primitives.Popup>.  
+- The popup realigns itself along the screen edge that would obscure the <xref:System.Windows.Controls.Primitives.Popup>.  
   
--   The popup uses a different popup alignment point.  
+- The popup uses a different popup alignment point.  
   
--   The popup uses a different target origin and popup alignment point.  
+- The popup uses a different target origin and popup alignment point.  
   
  These options are described further later in this section.  
   

@@ -12,23 +12,23 @@ ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd
 # How to: Construct Font Families and Fonts
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] groups fonts with the same typeface but different styles into font families. For example, the Arial font family contains the following fonts:  
   
--   Arial Regular  
+- Arial Regular  
   
--   Arial Bold  
+- Arial Bold  
   
--   Arial Italic  
+- Arial Italic  
   
--   Arial Bold Italic  
+- Arial Bold Italic  
   
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] uses four styles to form families: regular, bold, italic, and bold italic. Adjectives such as *narrow* and *rounded* are not considered styles; rather they are part of the family name. For example, Arial Narrow is a font family with the following members:  
   
--   Arial Narrow Regular  
+- Arial Narrow Regular  
   
--   Arial Narrow Bold  
+- Arial Narrow Bold  
   
--   Arial Narrow Italic  
+- Arial Narrow Italic  
   
--   Arial Narrow Bold Italic  
+- Arial Narrow Bold Italic  
   
  Before you can draw text with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], you need to construct a <xref:System.Drawing.FontFamily> object and a <xref:System.Drawing.Font> object. The <xref:System.Drawing.FontFamily> object specifies the typeface (for example, Arial), and the <xref:System.Drawing.Font> object specifies the size, style, and units.  
   

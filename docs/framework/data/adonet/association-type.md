@@ -8,14 +8,14 @@ An *association type* (also called an association) is the fundamental building b
   
  An association definition contains the following information:  
   
--   A unique name. (Required)  
+- A unique name. (Required)  
   
--   Two [association ends](../../../../docs/framework/data/adonet/association-end.md), one for each entity type in the relationship. (Required)  
+- Two [association ends](../../../../docs/framework/data/adonet/association-end.md), one for each entity type in the relationship. (Required)  
   
     > [!NOTE]
     >  An association cannot represent a relationship among more than two entity types. An association can, however, define a self-relationship by specifying the same entity type for each of its association ends.  
   
--   A [referential integrity constraint](../../../../docs/framework/data/adonet/referential-integrity-constraint.md). (Optional)  
+- A [referential integrity constraint](../../../../docs/framework/data/adonet/referential-integrity-constraint.md). (Optional)  
   
  Each association end must specify an [association end multiplicity](../../../../docs/framework/data/adonet/association-end-multiplicity.md) that indicates the number of entity type instances that can be at one end of the association. An association end multiplicity can have a value of one (1), zero or one (0..1), or many (\*). Entity type instances at one end of an association can be accessed through [navigation properties](../../../../docs/framework/data/adonet/navigation-property.md) or foreign keys if they are exposed on an entity type. For more information, see [Entity Data Model: Foreign Keys](../../../../docs/framework/data/adonet/foreign-key-property.md).  
   

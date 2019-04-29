@@ -12,13 +12,13 @@ ms.assetid: ff7c0616-67f7-4fa2-84ee-b8d642f2b09b
 # How to: Obtain Font Metrics
 The <xref:System.Drawing.FontFamily> class provides the following methods that retrieve various metrics for a particular family/style combination:  
   
--   <xref:System.Drawing.FontFamily.GetEmHeight%2A>(FontStyle)  
+- <xref:System.Drawing.FontFamily.GetEmHeight%2A>(FontStyle)  
   
--   <xref:System.Drawing.FontFamily.GetCellAscent%2A>(FontStyle)  
+- <xref:System.Drawing.FontFamily.GetCellAscent%2A>(FontStyle)  
   
--   <xref:System.Drawing.FontFamily.GetCellDescent%2A>(FontStyle)  
+- <xref:System.Drawing.FontFamily.GetCellDescent%2A>(FontStyle)  
   
--   <xref:System.Drawing.FontFamily.GetLineSpacing%2A>(FontStyle)  
+- <xref:System.Drawing.FontFamily.GetLineSpacing%2A>(FontStyle)  
   
  The numbers returned by these methods are in font design units, so they are independent of the size and units of a particular <xref:System.Drawing.Font> object.  
   

@@ -70,13 +70,13 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
 ### XAML Namescope Implementations  
  The following classes implement <xref:System.Windows.Markup.INameScope> directly:  
   
--   <xref:System.Windows.NameScope>  
+- <xref:System.Windows.NameScope>  
   
--   <xref:System.Windows.Style>  
+- <xref:System.Windows.Style>  
   
--   <xref:System.Windows.ResourceDictionary>  
+- <xref:System.Windows.ResourceDictionary>  
   
--   <xref:System.Windows.FrameworkTemplate>  
+- <xref:System.Windows.FrameworkTemplate>  
   
  <xref:System.Windows.ResourceDictionary> does not use XAML names or namescopes ; it uses keys instead, because it is a dictionary implementation. The only reason that <xref:System.Windows.ResourceDictionary> implements <xref:System.Windows.Markup.INameScope> is so it can raise exceptions to user code that help clarify the distinction between a true XAML namescope and how a <xref:System.Windows.ResourceDictionary> handles keys, and also to assure that XAML namescopes are not applied to a <xref:System.Windows.ResourceDictionary> by parent elements.  
   
@@ -84,9 +84,9 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  The following classes define their own XAML namescope, by using the <xref:System.Windows.NameScope?displayProperty=nameWithType> helper class and connecting to its XAML namescope implementation through the <xref:System.Windows.NameScope.NameScope%2A?displayProperty=nameWithType> attached property:  
   
--   <xref:System.Windows.FrameworkElement>  
+- <xref:System.Windows.FrameworkElement>  
   
--   <xref:System.Windows.FrameworkContentElement>  
+- <xref:System.Windows.FrameworkContentElement>  
   
 ## See also
 

@@ -31,13 +31,13 @@ ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
   
  This means that an activity must satisfy the following conditions.  
   
--   It must start and stop respectively by a Start and Stop traces  
+- It must start and stop respectively by a Start and Stop traces  
   
--   It must have a Transfer trace immediately preceding a Suspend or Resume trace  
+- It must have a Transfer trace immediately preceding a Suspend or Resume trace  
   
--   It must not have any traces between the Suspend and Resume traces if such traces exist  
+- It must not have any traces between the Suspend and Resume traces if such traces exist  
   
--   It can have any and as many of critical/Error/Warning/Information/Verbose/Transfer traces as long as the previous conditions are observed  
+- It can have any and as many of critical/Error/Warning/Information/Verbose/Transfer traces as long as the previous conditions are observed  
   
  The following is a regular expression that defines an ideal activity in the global scope,  
   

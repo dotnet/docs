@@ -40,11 +40,11 @@ Yield expression
 ## Iterator Functions and Get Accessors  
  The declaration of an iterator function or `Get` accessor must meet the following requirements:  
   
--   It must include an [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md) modifier.  
+- It must include an [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md) modifier.  
   
--   The return type must be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
+- The return type must be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
--   It cannot have any `ByRef` parameters.  
+- It cannot have any `ByRef` parameters.  
   
  An iterator function cannot occur in an event, instance constructor, static constructor, or static destructor.  
   

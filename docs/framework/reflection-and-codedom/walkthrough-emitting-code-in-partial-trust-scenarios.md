@@ -25,14 +25,14 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
  This walkthrough illustrates the following tasks:  
   
--   [Setting up a simple sandbox for testing partially trusted code](#Setting_up).  
+- [Setting up a simple sandbox for testing partially trusted code](#Setting_up).  
   
     > [!IMPORTANT]
     >  This is a simple way to experiment with code in partial trust. To run code that actually comes from untrusted locations, see [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).  
   
--   [Running code in partially trusted application domains](#Running_code).  
+- [Running code in partially trusted application domains](#Running_code).  
   
--   [Using anonymously hosted dynamic methods to emit and execute code in partial trust](#Using_methods).  
+- [Using anonymously hosted dynamic methods to emit and execute code in partial trust](#Using_methods).  
   
  For more information about emitting code in partial trust scenarios, see [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).  
   
@@ -42,9 +42,9 @@ Reflection emit uses the same API set in full or partial trust, but some feature
 ## Setting up Partially Trusted Locations  
  The following two procedures show how to set up locations from which you can test code with partial trust.  
   
--   The first procedure shows how to create a sandboxed application domain in which code is granted Internet permissions.  
+- The first procedure shows how to create a sandboxed application domain in which code is granted Internet permissions.  
   
--   The second procedure shows how to add <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag to a partially trusted application domain, to enable access to private data in assemblies of equal or lesser trust.  
+- The second procedure shows how to add <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag to a partially trusted application domain, to enable access to private data in assemblies of equal or lesser trust.  
   
 ### Creating Sandboxed Application Domains  
  To create an application domain in which your assemblies run with partial trust, you must specify the set of permissions to be granted to the assemblies by using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload to create the application domain. The easiest way to specify the grant set is to retrieve a named permission set from security policy.  
@@ -149,7 +149,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 #### To use anonymously hosted dynamic methods  
   
--   Create an anonymously hosted dynamic method by using a constructor that does not specify an associated module or type.  
+- Create an anonymously hosted dynamic method by using a constructor that does not specify an associated module or type.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#15](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#15)]
      [!code-vb[HowToEmitCodeInPartialTrust#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#15)]  
@@ -158,7 +158,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
      No special permissions are required to emit a dynamic method, but the emitted code requires the permissions that are demanded by the types and methods it uses. For example, if the emitted code calls a method that accesses a file, it requires <xref:System.Security.Permissions.FileIOPermission>. If the trust level does not include that permission, a security exception is thrown when the emitted code is executed. The code shown here emits a dynamic method that uses only the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method. Therefore, the code can be executed from partially trusted locations.  
   
--   Alternatively, create an anonymously hosted dynamic method with restricted ability to skip JIT visibility checks, by using the <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29> constructor and specifying `true` for the `restrictedSkipVisibility` parameter.  
+- Alternatively, create an anonymously hosted dynamic method with restricted ability to skip JIT visibility checks, by using the <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29> constructor and specifying `true` for the `restrictedSkipVisibility` parameter.  
   
      [!code-csharp[HowToEmitCodeInPartialTrust#16](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#16)]
      [!code-vb[HowToEmitCodeInPartialTrust#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#16)]  
@@ -185,15 +185,15 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
  The example uses a helper method to create a grant set limited to `Internet` permissions, and then creates an application domain, using the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=nameWithType> method overload to specify that all code that executes in the domain uses this grant set. The example creates an instance of the `Worker` class in the application domain, and executes the `AccessPrivateMethod` method two times.  
   
--   The first time the `AccessPrivateMethod` method is executed, JIT visibility checks are enforced. The dynamic method fails when it is invoked, because JIT visibility checks prevent it from accessing the private method.  
+- The first time the `AccessPrivateMethod` method is executed, JIT visibility checks are enforced. The dynamic method fails when it is invoked, because JIT visibility checks prevent it from accessing the private method.  
   
--   The second time the `AccessPrivateMethod` method is executed, JIT visibility checks are skipped. The dynamic method fails when it is compiled, because the `Internet` grant set does not grant sufficient permissions to skip visibility checks.  
+- The second time the `AccessPrivateMethod` method is executed, JIT visibility checks are skipped. The dynamic method fails when it is compiled, because the `Internet` grant set does not grant sufficient permissions to skip visibility checks.  
   
  The example adds <xref:System.Security.Permissions.ReflectionPermission> with <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> to the grant set. The example then creates a second domain, specifying that all code that executes in the domain is granted the permissions in the new grant set. The example creates an instance of the `Worker` class in the new application domain, and executes both overloads of the `AccessPrivateMethod` method.  
   
--   The first overload of the `AccessPrivateMethod` method is executed, and JIT visibility checks are skipped. The dynamic method compiles and executes successfully, because the assembly that emits the code is the same as the assembly that contains the private method. Therefore, the trust levels are equal. If the application that contains the `Worker` class had several assemblies, the same process would succeed for any one of those assemblies, because they would all be at the same trust level.  
+- The first overload of the `AccessPrivateMethod` method is executed, and JIT visibility checks are skipped. The dynamic method compiles and executes successfully, because the assembly that emits the code is the same as the assembly that contains the private method. Therefore, the trust levels are equal. If the application that contains the `Worker` class had several assemblies, the same process would succeed for any one of those assemblies, because they would all be at the same trust level.  
   
--   The second overload of the `AccessPrivateMethod` method is executed, and again JIT visibility checks are skipped. This time the dynamic method fails when it is compiled, because it tries to access the `internal` `FirstChar` property of the <xref:System.String> class. The assembly that contains the <xref:System.String> class is fully trusted. Therefore, it is at a higher level of trust than the assembly that emits the code.  
+- The second overload of the `AccessPrivateMethod` method is executed, and again JIT visibility checks are skipped. This time the dynamic method fails when it is compiled, because it tries to access the `internal` `FirstChar` property of the <xref:System.String> class. The assembly that contains the <xref:System.String> class is fully trusted. Therefore, it is at a higher level of trust than the assembly that emits the code.  
   
  This comparison shows how <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> enables partially trusted code to skip visibility checks for other partially trusted code without compromising the security of trusted code.  
   
@@ -203,7 +203,7 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 ## Compiling the Code  
   
--   If you build this code example in Visual Studio, you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
+- If you build this code example in Visual Studio, you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
 ## See also
 

@@ -17,19 +17,19 @@ ms.author: "mairaw"
 # Covariance and Contravariance in Generics
 <a name="top"></a> Covariance and contravariance are terms that refer to the ability to use a more derived type (more specific) or a less derived type (less specific) than originally specified. Generic type parameters support covariance and contravariance to provide greater flexibility in assigning and using generic types. When you are referring to a type system, covariance, contravariance, and invariance have the following definitions. The examples assume a base class named `Base` and a derived class named `Derived`.  
   
--   `Covariance`  
+- `Covariance`  
   
      Enables you to use a more derived type than originally specified.  
   
      You can assign an instance of `IEnumerable<Derived>` (`IEnumerable(Of Derived)` in Visual Basic) to a variable of type `IEnumerable<Base>`.  
   
--   `Contravariance`  
+- `Contravariance`  
   
      Enables you to use a more generic (less derived) type than originally specified.  
   
      You can assign an instance of `Action<Base>` (`Action(Of Base)` in Visual Basic) to a variable of type `Action<Derived>`.  
   
--   `Invariance`  
+- `Invariance`  
   
      Means that you can use only the type originally specified; so an invariant generic type parameter is neither covariant nor contravariant.  
   
@@ -53,25 +53,25 @@ ms.author: "mairaw"
   
  Covariance and contravariance are collectively referred to as *variance*. A generic type parameter that is not marked covariant or contravariant is referred to as *invariant*. A brief summary of facts about variance in the common language runtime:  
   
--   In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], variant type parameters are restricted to generic interface and generic delegate types.  
+- In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], variant type parameters are restricted to generic interface and generic delegate types.  
   
--   A generic interface or generic delegate type can have both covariant and contravariant type parameters.  
+- A generic interface or generic delegate type can have both covariant and contravariant type parameters.  
   
--   Variance applies only to reference types; if you specify a value type for a variant type parameter, that type parameter is invariant for the resulting constructed type.  
+- Variance applies only to reference types; if you specify a value type for a variant type parameter, that type parameter is invariant for the resulting constructed type.  
   
--   Variance does not apply to delegate combination. That is, given two delegates of types `Action<Derived>` and `Action<Base>` (`Action(Of Derived)` and `Action(Of Base)` in Visual Basic), you cannot combine the second delegate with the first although the result would be type safe. Variance allows the second delegate to be assigned to a variable of type `Action<Derived>`, but delegates can combine only if their types match exactly.  
+- Variance does not apply to delegate combination. That is, given two delegates of types `Action<Derived>` and `Action<Base>` (`Action(Of Derived)` and `Action(Of Base)` in Visual Basic), you cannot combine the second delegate with the first although the result would be type safe. Variance allows the second delegate to be assigned to a variable of type `Action<Derived>`, but delegates can combine only if their types match exactly.  
   
  The following subsections describe covariant and contravariant type parameters in detail:  
   
--   [Generic Interfaces with Covariant Type Parameters](#InterfaceCovariantTypeParameters)  
+- [Generic Interfaces with Covariant Type Parameters](#InterfaceCovariantTypeParameters)  
   
--   [Generic Interfaces with Contravariant Generic Type Parameters](#InterfaceCovariantTypeParameters)  
+- [Generic Interfaces with Contravariant Generic Type Parameters](#InterfaceCovariantTypeParameters)  
   
--   [Generic Delegates with Variant Type Parameters](#DelegateVariantTypeParameters)  
+- [Generic Delegates with Variant Type Parameters](#DelegateVariantTypeParameters)  
   
--   [Defining Variant Generic Interfaces and Delegates](#DefiningVariantTypeParameters)  
+- [Defining Variant Generic Interfaces and Delegates](#DefiningVariantTypeParameters)  
   
--   [List of Variant Generic Interface and Delegate Types](#VariantList)  
+- [List of Variant Generic Interface and Delegate Types](#VariantList)  
   
 <a name="InterfaceCovariantTypeParameters"></a>   
 ## Generic Interfaces with Covariant Type Parameters  

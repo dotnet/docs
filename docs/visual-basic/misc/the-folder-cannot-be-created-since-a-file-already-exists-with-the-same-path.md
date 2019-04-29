@@ -8,9 +8,9 @@ An attempt has been made to create a directory, but a file already exists with t
   
 ## To correct this error  
   
--   Check that you are supplying the correct path.  
+- Check that you are supplying the correct path.  
   
--   Remove the redundant file if it is no longer needed.  
+- Remove the redundant file if it is no longer needed.  
   
 ## See also
 

@@ -21,9 +21,9 @@ Extended Protection is a security initiative to protect against man-in-the-middl
   
 4. This sample requires the client to establish a secure channel with the server and so it requires the presence of a server certificate which can be installed from Internet Information Services (IIS) Manager.  
   
-    1.  Open the IIS manager -> Server certificates (from the feature view tab).  
+    1. Open the IIS manager -> Server certificates (from the feature view tab).  
   
-    2.  For the purpose of testing this sample, you can create a self-signed certificate. (If you don’t want Internet Explorer to prompt you about the certificate not being secure, you can install it in the Trusted Certificate Root authority store).  
+    2. For the purpose of testing this sample, you can create a self-signed certificate. (If you don’t want Internet Explorer to prompt you about the certificate not being secure, you can install it in the Trusted Certificate Root authority store).  
   
 5. Go to the Actions pane for the Default Web site. Click Edit Site -> Bindings. Add HTTPS as a type if it is not already present, with port number 443, and assign the SSL certificate created in the above step.  
   

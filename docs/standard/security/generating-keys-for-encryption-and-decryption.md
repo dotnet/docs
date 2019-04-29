@@ -58,9 +58,9 @@ tdes.GenerateKey();
   
  A public/private key pair is generated whenever a new instance of an asymmetric algorithm class is created. After a new instance of the class is created, the key information can be extracted using one of two methods:  
   
--   The <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, which returns an XML representation of the key information.  
+- The <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, which returns an XML representation of the key information.  
   
--   The <xref:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters%2A> method, which returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information.  
+- The <xref:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters%2A> method, which returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information.  
   
  Both methods accept a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information. An **RSACryptoServiceProvider** class can be initialized to the value of an **RSAParameters** structure by using the <xref:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters%2A> method.  
   

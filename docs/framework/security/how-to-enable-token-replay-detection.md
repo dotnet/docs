@@ -7,30 +7,30 @@ author: "BrucePerlerMS"
 # How To: Enable Token Replay Detection
 ## Applies To  
   
--   Microsoft® Windows® Identity Foundation (WIF)  
+- Microsoft® Windows® Identity Foundation (WIF)  
   
--   ASP.NET® Web Forms  
+- ASP.NET® Web Forms  
   
 ## Summary  
  This How-To provides detailed step-by-step procedures for enabling token replay detection in an ASP.NET application that uses WIF. It also provides instructions for how to test the application to verify that token replay detection is enabled. This How-To does not have detailed instructions for creating a Security Token Service (STS), and instead uses the Development STS that comes with the Identity and Access tool. The Development STS does not perform real authentication and is intended for testing purposes only. You will need to install the Identity and Access tool to complete this How-To. It can be downloaded from the following location: [Identity and Access Tool](https://go.microsoft.com/fwlink/?LinkID=245849)  
   
 ## Contents  
   
--   Objectives  
+- Objectives  
   
--   Overview  
+- Overview  
   
--   Summary of Steps  
+- Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application and Enable Replay Detection  
+- Step 1 – Create a Simple ASP.NET Web Forms Application and Enable Replay Detection  
   
--   Step 2 – Test Your Solution  
+- Step 2 – Test Your Solution  
   
 ## Objectives  
   
--   Create a simple ASP.NET application that uses WIF and the Development STS from the Identity and Access Tool  
+- Create a simple ASP.NET application that uses WIF and the Development STS from the Identity and Access Tool  
   
--   Enable token replay detection and verify that it is working  
+- Enable token replay detection and verify that it is working  
   
 ## Overview  
  A replay attack occurs when a client attempts to authenticate to a relying party with an STS token that the client has already used. To help prevent this attack, WIF contains a replay detection cache of previously used STS tokens. When enabled, replay detection checks the token of the incoming request and verifies whether or not the token has been previously used. If the token has been used already, the request is refused and a <xref:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException> exception is thrown.  
@@ -39,9 +39,9 @@ author: "BrucePerlerMS"
   
 ## Summary of Steps  
   
--   Step 1 – Create a Simple ASP.NET Web Forms Application and Enable Replay Detection  
+- Step 1 – Create a Simple ASP.NET Web Forms Application and Enable Replay Detection  
   
--   Step 2 – Test Your Solution  
+- Step 2 – Test Your Solution  
   
 ## Step 1 – Create a Simple ASP.NET Web Forms Application and Enable Replay Detection  
  In this step, you will create a new ASP.NET Web Forms application and modify the *Web.config* file to enable replay detection.  

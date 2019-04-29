@@ -20,11 +20,11 @@ You can inspect or modify the incoming or outgoing messages across a Windows Com
 ## Example  
  The following code examples show, in order:  
   
--   A service inspector implementation.  
+- A service inspector implementation.  
   
--   A service behavior that inserts the inspector.  
+- A service behavior that inserts the inspector.  
   
--   A configuration file that loads and runs the behavior in a service application.  
+- A configuration file that loads and runs the behavior in a service application.  
   
  [!code-csharp[Interceptors#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#7)]
  [!code-vb[Interceptors#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#7)]  

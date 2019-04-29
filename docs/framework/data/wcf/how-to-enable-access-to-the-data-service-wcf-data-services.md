@@ -16,7 +16,7 @@ In [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you must explici
   
 ### To enable access to the data service  
   
--   In the code for the data service, replace the placeholder code in the `InitializeService` function with the following:  
+- In the code for the data service, replace the placeholder code in the `InitializeService` function with the following:  
   
      [!code-csharp[Astoria Quickstart Service#AllReadConfig](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_quickstart_service/cs/northwind.svc.cs#allreadconfig)]
      [!code-vb[Astoria Quickstart Service#AllReadConfig](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_quickstart_service/vb/northwind.svc.vb#allreadconfig)]  

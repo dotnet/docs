@@ -57,11 +57,11 @@ This sample demonstrates how to implement and configure a typical service and cl
   
 3. Run the sample by following these steps:  
   
-    1.  Right click the **Service** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
+    1. Right click the **Service** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
   
-    2.  Wait for the console output confirming that the service is up and running.  
+    2. Wait for the console output confirming that the service is up and running.  
   
-    3.  Right click the **Client** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
+    3. Right click the **Client** project and select **Set as StartUp project**, then press **Ctrl+F5**.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

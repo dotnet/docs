@@ -85,9 +85,9 @@ vbc /t:library RegexUtilities.vb
   
  Assuming you've created a class library named RegexUtilities.dll that includes your email validation regular expression, you can compile this example in either of the following ways:  
   
--   In Visual Studio, by creating a Console Application and adding a reference to RegexUtilities.dll to your project.  
+- In Visual Studio, by creating a Console Application and adding a reference to RegexUtilities.dll to your project.  
   
--   From the command line, by copying and pasting the source code into a text file and compiling it with a command like the following (assuming that the name of the source code file is Example.cs or Example.vb:  
+- From the command line, by copying and pasting the source code into a text file and compiling it with a command like the following (assuming that the name of the source code file is Example.cs or Example.vb:  
   
     ```csharp  
     csc Example.cs /r:RegexUtilities.dll  

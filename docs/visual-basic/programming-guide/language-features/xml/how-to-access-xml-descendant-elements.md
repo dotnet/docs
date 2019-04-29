@@ -17,7 +17,7 @@ This example shows how to use a descendant axis property to access all XML eleme
 ## Compiling the Code  
  This example requires:  
   
--   A reference to the <xref:System.Xml.Linq> namespace.  
+- A reference to the <xref:System.Xml.Linq> namespace.  
   
 ## See also
 

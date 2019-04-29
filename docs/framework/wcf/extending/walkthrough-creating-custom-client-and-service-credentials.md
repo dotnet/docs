@@ -12,9 +12,9 @@ This topic shows how to implement custom client and service credentials and how 
 ## Credentials Extensibility Classes  
  The <xref:System.ServiceModel.Description.ClientCredentials> and <xref:System.ServiceModel.Description.ServiceCredentials> classes are the main entry points to the Windows Communication Foundation (WCF) security extensibility. These credentials classes provide the APIs that enable application code to set credentials information and to convert credential types into security tokens. (*Security tokens* are the form used to transmit credential information inside SOAP messages.) The responsibilities of these credentials classes can be divided into two areas:  
   
--   Provide the APIs for applications to set credentials information.  
+- Provide the APIs for applications to set credentials information.  
   
--   Perform as a factory for <xref:System.IdentityModel.Selectors.SecurityTokenManager> implementations.  
+- Perform as a factory for <xref:System.IdentityModel.Selectors.SecurityTokenManager> implementations.  
   
  Both the <xref:System.ServiceModel.Description.ClientCredentials> and the <xref:System.ServiceModel.Description.ServiceCredentials> classes inherit from the abstract <xref:System.ServiceModel.Security.SecurityCredentialsManager> class that defines the contract for returning the <xref:System.IdentityModel.Selectors.SecurityTokenManager>.  
   
@@ -23,22 +23,22 @@ This topic shows how to implement custom client and service credentials and how 
 ## Reasons to Customize  
  There are multiple reasons for customizing either client or service credential classes. Foremost is the requirement to change the default WCF security behavior with regard to handling system-provided credential types, especially for the following reasons:  
   
--   Changes that are not possible using other extensibility points.  
+- Changes that are not possible using other extensibility points.  
   
--   Adding new credential types.  
+- Adding new credential types.  
   
--   Adding new custom security token types.  
+- Adding new custom security token types.  
   
  This topic describes how to implement custom client and service credentials and how to use them from application code.  
   
 ## First in a Series  
  Creating a custom credentials class is only the first step, because the reason for customizing credentials is to change WCF behavior regarding credentials provisioning, security token serialization, or authentication. Other topics in this section describe how to create custom serializers and authenticators. In this regard, creating custom credential class is the first topic in the series. Subsequent actions (creating custom serializers and authenticators) can be done only after creating custom credentials. Additional topics that build upon this topic include:  
   
--   [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
+- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
   
--   [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
+- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
   
--   [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md).  
+- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md).  
   
 ## Procedures  
   

@@ -6,13 +6,13 @@ ms.assetid: b13a3508-1b97-4359-b336-03d85fa23bc4
 # How to: Deserialize Instance Data Properties
 There may be situations when a user or workflow administrator may want to manually inspect the state of a persisted workflow instance. <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> provides a view on the Instances table that exposes the following four columns:  
   
--   ReadWritePrimitiveDataProperties  
+- ReadWritePrimitiveDataProperties  
   
--   WriteOnlyPrimitiveDataProperties  
+- WriteOnlyPrimitiveDataProperties  
   
--   ReadWriteComplexDataProperties  
+- ReadWriteComplexDataProperties  
   
--   WriteOnlyComplexDataProperties  
+- WriteOnlyComplexDataProperties  
   
  Primitive data properties refer to properties whose .NET Framework types are considered to be "common" (for example, Int32 and String), while complex data properties refer to all other types. An exact enumeration of primitive types is found later in this code example.  
   

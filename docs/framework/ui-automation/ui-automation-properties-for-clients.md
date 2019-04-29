@@ -35,11 +35,11 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
  For more information, see the following reference topics:  
   
--   <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>  
+- <xref:System.Windows.Automation.AutomationElement.FindFirst%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.FindAll%2A>  
+- <xref:System.Windows.Automation.AutomationElement.FindAll%2A>  
   
--   <xref:System.Windows.Automation.TreeWalker.Condition%2A>  
+- <xref:System.Windows.Automation.TreeWalker.Condition%2A>  
   
 <a name="Retrieving_Properties"></a>   
 ## Retrieving Properties  
@@ -47,9 +47,9 @@ ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
   
  In addition, any <xref:System.Windows.Automation.AutomationElement> or control pattern property, including a property that is not available in the <xref:System.Windows.Automation.AutomationElement.Cached%2A> or <xref:System.Windows.Automation.AutomationElement.Current%2A> structure, can be retrieved by using one of the following methods:  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>  
   
  These methods offer slightly better performance as well as access to the full range of properties.  
   

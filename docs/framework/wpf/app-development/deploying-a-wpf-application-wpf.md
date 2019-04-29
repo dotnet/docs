@@ -13,21 +13,21 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ## Deployment Technologies  
  [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] and the .NET Framework include several deployment technologies, including:  
   
--   XCopy deployment.  
+- XCopy deployment.  
   
--   [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] deployment.  
+- [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] deployment.  
   
--   [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] deployment.  
+- [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] deployment.  
   
 <a name="XCopy_Deployment"></a>   
 ### XCopy Deployment  
  XCopy deployment refers to the use of the XCopy command-line program to copy files from one location to another. XCopy deployment is suitable under the following circumstances:  
   
--   The application is self-contained. It does not need to update the client to run.  
+- The application is self-contained. It does not need to update the client to run.  
   
--   Application files must be moved from one location to another, such as from a build location (local disk, [!INCLUDE[TLA2#tla_unc](../../../../includes/tla2sharptla-unc-md.md)] file share, and so on) to a publish location (Web site, [!INCLUDE[TLA2#tla_unc](../../../../includes/tla2sharptla-unc-md.md)] file share, and so on).  
+- Application files must be moved from one location to another, such as from a build location (local disk, [!INCLUDE[TLA2#tla_unc](../../../../includes/tla2sharptla-unc-md.md)] file share, and so on) to a publish location (Web site, [!INCLUDE[TLA2#tla_unc](../../../../includes/tla2sharptla-unc-md.md)] file share, and so on).  
   
--   The application does not require shell integration (Start menu shortcut, desktop icon, and so on).  
+- The application does not require shell integration (Start menu shortcut, desktop icon, and so on).  
   
  Although XCopy is suitable for simple deployment scenarios, it is limited when more complex deployment capabilities are required. In particular, using XCopy often incurs the overhead for creating, executing, and maintaining scripts for managing deployment in a robust way. Furthermore, XCopy does not support versioning, uninstallation, or rollback.  
   
@@ -43,15 +43,15 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ### ClickOnce Deployment  
  [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] enables Web-style application deployment for non-Web applications. Applications are published to and deployed from Web or file servers. Although [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] does not support the full range of client features that [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]-installed applications do, it does support a subset that includes the following:  
   
--   Integration with the Start menu and Programs control panel.  
+- Integration with the Start menu and Programs control panel.  
   
--   Versioning, rollback, and uninstallation.  
+- Versioning, rollback, and uninstallation.  
   
--   Online install mode, which always launches an application from the deployment location.  
+- Online install mode, which always launches an application from the deployment location.  
   
--   Automatic updating when new versions are released.  
+- Automatic updating when new versions are released.  
   
--   Registration of file extensions.  
+- Registration of file extensions.  
   
  For more information about [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)], see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
   
@@ -59,11 +59,11 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ## Deploying WPF Applications  
  The deployment options for a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depend on the type of application. From a deployment perspective, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] has three significant application types:  
   
--   Standalone applications.  
+- Standalone applications.  
   
--   Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] applications.  
+- Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] applications.  
   
--   [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].  
+- [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].  
   
 <a name="Deploying_Standalone_Applications"></a>   
 ### Deploying Standalone Applications  
@@ -83,11 +83,11 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ### Deploying XAML Browser Applications  
  [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are compiled applications that require the following three files to be deployed:  
   
--   *ApplicationName*.exe: The executable assembly application file.  
+- *ApplicationName*.exe: The executable assembly application file.  
   
--   *ApplicationName*.xbap: The deployment manifest.  
+- *ApplicationName*.xbap: The deployment manifest.  
   
--   *ApplicationName*.exe.manifest: The application manifest.  
+- *ApplicationName*.exe.manifest: The application manifest.  
   
 > [!NOTE]
 >  For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  

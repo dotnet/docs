@@ -16,13 +16,13 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
   
  This topic contains the following subsections:  
   
--   [Architecture](#Architecture)  
+- [Architecture](#Architecture)  
   
--   [Implementing Stylus Plug-ins](#ImplementingStylusPlugins)  
+- [Implementing Stylus Plug-ins](#ImplementingStylusPlugins)  
   
--   [Adding Your Plug-in to an InkCanvas](#AddingYourPluginToAnInkCanvas)  
+- [Adding Your Plug-in to an InkCanvas](#AddingYourPluginToAnInkCanvas)  
   
--   [Conclusion](#Conclusion)  
+- [Conclusion](#Conclusion)  
   
 <a name="Architecture"></a>   
 ## Architecture  

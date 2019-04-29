@@ -6,7 +6,7 @@ ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model through the internet using an ASP.NET Core Web API
 ---
 
-# How-To: Serve Machine Learning Model Through ASP.NET Core Web API
+# How-To: Serve a Machine Learning Model Through ASP.NET Core Web API
 
 This how-to shows how to serve a pre-built ML.NET machine learning model to the web using an ASP.NET Core Web API. By doing so it allows for users to access the API for prediction purposes via standard HTTP methods.
 

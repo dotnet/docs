@@ -23,11 +23,11 @@ Windows Explorer is a common user-interface choice for applications because of i
   
 2. From the **Toolbox**:  
   
-    1.  Drag a <xref:System.Windows.Forms.SplitContainer> control onto your form.  
+    1. Drag a <xref:System.Windows.Forms.SplitContainer> control onto your form.  
   
-    2.  Drag a <xref:System.Windows.Forms.TreeView> control into **SplitterPanel1** (the panel of the <xref:System.Windows.Forms.SplitContainer> control marked **Panel1**).  
+    2. Drag a <xref:System.Windows.Forms.TreeView> control into **SplitterPanel1** (the panel of the <xref:System.Windows.Forms.SplitContainer> control marked **Panel1**).  
   
-    3.  Drag a <xref:System.Windows.Forms.ListView> control into **SplitterPanel2** (the panel of the <xref:System.Windows.Forms.SplitContainer> control marked **Panel2**).  
+    3. Drag a <xref:System.Windows.Forms.ListView> control into **SplitterPanel2** (the panel of the <xref:System.Windows.Forms.SplitContainer> control marked **Panel2**).  
   
 3. Select all three controls by pressing the CTRL key and clicking them in turn. When you select the <xref:System.Windows.Forms.SplitContainer> control, click the splitter bar, rather than the panels.  
   

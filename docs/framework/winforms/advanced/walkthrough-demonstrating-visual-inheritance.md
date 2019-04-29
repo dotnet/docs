@@ -15,13 +15,13 @@ ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
 # Walkthrough: Demonstrating Visual Inheritance
 Visual inheritance enables you to see the controls on the base form and to add new controls. In this walkthrough you will create a base form and compile it into a class library. You will import this class library into another project and create a new form that inherits from the base form. During this walkthrough, you will learn how to:  
   
--   Create a class library project containing a base form.  
+- Create a class library project containing a base form.  
   
--   Add a button with properties that derived classes of the base form can modify.  
+- Add a button with properties that derived classes of the base form can modify.  
   
--   Add a button that cannot be modified by inheritors of the base form.  
+- Add a button that cannot be modified by inheritors of the base form.  
   
--   Create a project containing a form that inherits from `BaseForm`.  
+- Create a project containing a form that inherits from `BaseForm`.  
   
  Ultimately, this walkthrough will demonstrate the difference between private and protected controls on an inherited form.  
   
@@ -70,11 +70,11 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 3. In the Properties window, set the following properties of the button:  
   
-    -   Set the **Text** property to **Say Hello**.  
+    - Set the **Text** property to **Say Hello**.  
   
-    -   Set the **(Name)** property to **btnProtected**.  
+    - Set the **(Name)** property to **btnProtected**.  
   
-    -   Set the **Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
+    - Set the **Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
   
 4. Double-click the **Say Hello** button to add an event handler for the **Click** event.  
   
@@ -94,11 +94,11 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 2. Add a second button and set its properties as follows:  
   
-    -   Set the **Text** property to **Say Goodbye**.  
+    - Set the **Text** property to **Say Goodbye**.  
   
-    -   Set the **(Name)** property to **btnPrivate**.  
+    - Set the **(Name)** property to **btnPrivate**.  
   
-    -   Set the **Modifiers** property to **Private**. This makes it impossible for forms that inherit from **Form1** to modify the properties of **btnPrivate**.  
+    - Set the **Modifiers** property to **Private**. This makes it impossible for forms that inherit from **Form1** to modify the properties of **btnPrivate**.  
   
 3. Double-click the **Say Goodbye** button to add an event handler for the **Click** event. Place the following line of code in the event procedure:  
   
@@ -142,9 +142,9 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 8. If you are using Visual C#:  
   
-    1.  In **Solution Explorer**, right-click **Form1** in the **InheritanceTest** project and then choose **Delete**. In the message box that appears, click **OK** to confirm the deletion.  
+    1. In **Solution Explorer**, right-click **Form1** in the **InheritanceTest** project and then choose **Delete**. In the message box that appears, click **OK** to confirm the deletion.  
   
-    2.  Open the Program.cs file and change the line `Application.Run(new Form1());` to `Application.Run(new Form2());`.  
+    2. Open the Program.cs file and change the line `Application.Run(new Form1());` to `Application.Run(new Form2());`.  
   
 9. In **Solution Explorer**, right-click the **InheritanceTest** project and select **Set As Startup Project**.  
   

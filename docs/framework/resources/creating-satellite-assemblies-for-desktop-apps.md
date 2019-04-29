@@ -35,16 +35,16 @@ Resource files play a central role in localized applications. They enable an app
 ## Satellite Assembly Name and Location  
  The hub-and-spoke model requires that you place resources in specific locations so that they can be easily located and used. If you do not compile and name resources as expected, or if you do not place them in the correct locations, the common language runtime will not be able to locate them and will use the resources of the default culture instead. The .NET Framework Resource Manager, represented by a <xref:System.Resources.ResourceManager> object, is used to automatically access localized resources. The Resource Manager requires the following:  
   
--   A single satellite assembly must include all the resources for a particular culture. In other words, you should compile multiple .txt or .resx files into a single binary .resources file.  
+- A single satellite assembly must include all the resources for a particular culture. In other words, you should compile multiple .txt or .resx files into a single binary .resources file.  
   
--   There must be a separate subdirectory in the application directory for each localized culture that stores that culture's resources. The subdirectory name must be the same as the culture name. Alternately, you can store your satellite assemblies in the global assembly cache. In this case, the culture information component of the assembly's strong name must indicate its culture. (See the [Installing Satellite Assemblies in the Global Assembly Cache](#SN) section later in this topic.)  
+- There must be a separate subdirectory in the application directory for each localized culture that stores that culture's resources. The subdirectory name must be the same as the culture name. Alternately, you can store your satellite assemblies in the global assembly cache. In this case, the culture information component of the assembly's strong name must indicate its culture. (See the [Installing Satellite Assemblies in the Global Assembly Cache](#SN) section later in this topic.)  
   
     > [!NOTE]
     >  If your application includes resources for subcultures, place each subculture in a separate subdirectory under the application directory. Do not place subcultures in subdirectories under their main culture's directory.  
   
--   The satellite assembly must have the same name as the application, and must use the file name extension ".resources.dll". For example, if an application is named Example.exe, the name of each satellite assembly should be Example.resources.dll. Note that the satellite assembly name does not indicate the culture of its resource files. However, the satellite assembly appears in a directory that does specify the culture.  
+- The satellite assembly must have the same name as the application, and must use the file name extension ".resources.dll". For example, if an application is named Example.exe, the name of each satellite assembly should be Example.resources.dll. Note that the satellite assembly name does not indicate the culture of its resource files. However, the satellite assembly appears in a directory that does specify the culture.  
   
--   Information about the culture of the satellite assembly must be included in the assembly's metadata. To store the culture name in the satellite assembly's metadata, you specify the `/culture` option when you use [Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md) to embed resources in the satellite assembly.  
+- Information about the culture of the satellite assembly must be included in the assembly's metadata. To store the culture name in the satellite assembly's metadata, you specify the `/culture` option when you use [Assembly Linker](../../../docs/framework/tools/al-exe-assembly-linker.md) to embed resources in the satellite assembly.  
   
  The following illustration shows a sample directory structure and location requirements for applications that you are not installing in the [global assembly cache](../../../docs/framework/app-domains/gac.md). The items with .txt and .resources extensions will not ship with the final application. These are the intermediate resource files used to create the final satellite resource assemblies. In this example, you could substitute .resx files for the .txt files. For more information, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). 
  
@@ -91,11 +91,11 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
   
 3. Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:  
   
-    -   To support the en-US or English (United States) culture, create a resource file named Greeting.en-US.resx or Greeting.en-US.txt, and store in it a single string named `HelloString` whose value is "Hi world!"  
+    - To support the en-US or English (United States) culture, create a resource file named Greeting.en-US.resx or Greeting.en-US.txt, and store in it a single string named `HelloString` whose value is "Hi world!"  
   
-    -   To support the fr-FR or French (France) culture, create a resource file named Greeting.fr-FR.resx or Greeting.fr-FR.txt, and store in it a single string named `HelloString` whose value is "Salut tout le monde!"  
+    - To support the fr-FR or French (France) culture, create a resource file named Greeting.fr-FR.resx or Greeting.fr-FR.txt, and store in it a single string named `HelloString` whose value is "Salut tout le monde!"  
   
-    -   To support the ru-RU or Russian (Russia) culture, create a resource file named Greeting.ru-RU.resx or Greeting.ru-RU.txt, and store in it a single string named `HelloString` whose value is "Всем привет!"  
+    - To support the ru-RU or Russian (Russia) culture, create a resource file named Greeting.ru-RU.resx or Greeting.ru-RU.txt, and store in it a single string named `HelloString` whose value is "Всем привет!"  
   
 4. Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following commands to compile the .resx files into .resources files:  
   
@@ -220,11 +220,11 @@ gacutil -i:StringLibrary.resources.dll
   
 5. Add support for additional cultures (the en-US, fr-FR, and ru-RU cultures) to the application as follows:  
   
-    -   To support the "en-US" or English (United States) culture, create a resource file named Strings.en-US.resx or Strings.en-US.txt, and store in it a single string named `Greeting` whose value is "Hello!".  
+    - To support the "en-US" or English (United States) culture, create a resource file named Strings.en-US.resx or Strings.en-US.txt, and store in it a single string named `Greeting` whose value is "Hello!".  
   
-    -   To support the "fr-FR" or French (France) culture, create a resource file named Strings.fr-FR.resx or Strings.fr-FR.txt and store in it a single string named `Greeting` whose value is "Bon jour!"  
+    - To support the "fr-FR" or French (France) culture, create a resource file named Strings.fr-FR.resx or Strings.fr-FR.txt and store in it a single string named `Greeting` whose value is "Bon jour!"  
   
-    -   To support the "ru-RU" or Russian (Russia) culture, create a resource file named Strings.ru-RU.resx or Strings.ru-RU.txt and store in it a single string named `Greeting` whose value is "Привет!"  
+    - To support the "ru-RU" or Russian (Russia) culture, create a resource file named Strings.ru-RU.resx or Strings.ru-RU.txt and store in it a single string named `Greeting` whose value is "Привет!"  
   
 6. Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following command to compile the .resx files into .resources files:  
   

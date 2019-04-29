@@ -14,20 +14,20 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
  Tasks illustrated in this walkthrough include:
 
--   Creating the project.
+- Creating the project.
 
--   Creating the ActiveX control.
+- Creating the ActiveX control.
 
--   Hosting the ActiveX control on a WPF Page.
+- Hosting the ActiveX control on a WPF Page.
 
  When you have completed this walkthrough, you will understand how to use [!INCLUDE[TLA#tla_actx](../../../../includes/tlasharptla-actx-md.md)] controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application.
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
 
--   [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] installed on the computer where Visual Studio is installed.
+- [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] installed on the computer where Visual Studio is installed.
 
--   Visual Studio 2010.
+- Visual Studio 2010.
 
 ## Creating the Project
 

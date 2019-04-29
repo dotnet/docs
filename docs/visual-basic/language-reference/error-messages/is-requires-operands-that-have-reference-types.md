@@ -15,7 +15,7 @@ The `Is` comparison operator determines whether two object variables refer to th
   
 ## To correct this error  
   
--   Use the appropriate arithmetic comparison operator or the `Like` operator to compare two value types.  
+- Use the appropriate arithmetic comparison operator or the `Like` operator to compare two value types.  
   
 ## See also
 

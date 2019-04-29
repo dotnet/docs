@@ -35,5 +35,4 @@ With the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method in the <xre
 - <xref:System.Windows.Forms.TextRenderer>
 - <xref:System.Drawing.Font>
 - <xref:System.Drawing.Color>
-- <xref:System.Drawing.Color>
 - [Using Fonts and Text](using-fonts-and-text.md)

@@ -24,17 +24,17 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layou
 ### Targeted Use  
  Use the <xref:System.Windows.Forms.TableLayoutPanel> control sparingly. You should not use it in all situations that require a resizable layout. The following list describes layouts that benefit most from the use of the <xref:System.Windows.Forms.TableLayoutPanel> control:  
   
--   Layouts in which there are multiple parts of the form that resize proportionally to each other.  
+- Layouts in which there are multiple parts of the form that resize proportionally to each other.  
   
--   Layouts that will be modified or generated dynamically at run time, such as data entry forms that have user-customizable fields added or subtracted based on preferences.  
+- Layouts that will be modified or generated dynamically at run time, such as data entry forms that have user-customizable fields added or subtracted based on preferences.  
   
--   Layouts that should remain at an overall fixed size. For example, you may have a dialog box that should remain smaller than 800 x 600, but you need to support localized strings.  
+- Layouts that should remain at an overall fixed size. For example, you may have a dialog box that should remain smaller than 800 x 600, but you need to support localized strings.  
   
  The following list describes layouts that do not benefit greatly from using the <xref:System.Windows.Forms.TableLayoutPanel> control:  
   
--   Simple data entry forms with a single column of labels and a single column of text-entry areas.  
+- Simple data entry forms with a single column of labels and a single column of text-entry areas.  
   
--   Forms with a single large display area that should fill all the available space when a resize occurs. An example of this is a form that displays a single <xref:System.Windows.Forms.PropertyGrid> control. In this case, use anchoring, because nothing else should expand when the form is resized.  
+- Forms with a single large display area that should fill all the available space when a resize occurs. An example of this is a form that displays a single <xref:System.Windows.Forms.PropertyGrid> control. In this case, use anchoring, because nothing else should expand when the form is resized.  
   
  Choose carefully which controls need to be in a <xref:System.Windows.Forms.TableLayoutPanel> control. If you have room for your text to grow by 30% using anchoring, consider using the <xref:System.Windows.Forms.Control.Anchor%2A> property only. If you can estimate the space required by your layout, use of <xref:System.Windows.Forms.Control.Dock%2A> and <xref:System.Windows.Forms.Control.Anchor%2A> is easier than estimating the details of remaining space and <xref:System.Windows.Forms.Control.AutoSize%2A> behavior.  
   

@@ -8,29 +8,29 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
   
  **Programming Model:**  
   
--   <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>  
+- <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>  
   
--   <xref:System.ServiceModel.Web.WebGetAttribute>  
+- <xref:System.ServiceModel.Web.WebGetAttribute>  
   
--   <xref:System.ServiceModel.Web.WebInvokeAttribute>  
+- <xref:System.ServiceModel.Web.WebInvokeAttribute>  
   
--   <xref:System.ServiceModel.Web.WebServiceHost>  
+- <xref:System.ServiceModel.Web.WebServiceHost>  
   
  **Channels and Dispatcher Infrastructure:**  
   
--   <xref:System.ServiceModel.WebHttpBinding>  
+- <xref:System.ServiceModel.WebHttpBinding>  
   
--   <xref:System.ServiceModel.Description.WebHttpBehavior>  
+- <xref:System.ServiceModel.Description.WebHttpBehavior>  
   
  **Utility Classes and Extensibility Points:**  
   
--   <xref:System.UriTemplate>  
+- <xref:System.UriTemplate>  
   
--   <xref:System.UriTemplateTable>  
+- <xref:System.UriTemplateTable>  
   
--   <xref:System.ServiceModel.Dispatcher.QueryStringConverter>  
+- <xref:System.ServiceModel.Dispatcher.QueryStringConverter>  
   
--   <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
+- <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
   
 ## AspNetCacheProfileAttribute  
  The <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>, when applied to a service operation, indicates the ASP.NET output cache profile in the configuration file that should be used by to cache responses from the operation in the ASP .NET Output Cache. This property takes only one parameter, the cache profile name that specifies the cache settings in the configuration file.  

@@ -96,15 +96,15 @@ typedef enum {
 ## Members  
  The following sections list `COR_PRF_MONITOR` enumeration members by category. The categories are:  
   
--   [No flags set](#None)  
+- [No flags set](#None)  
   
--   [Callback flags](#Callback)  
+- [Callback flags](#Callback)  
   
--   [Feature-enabling flags](#Feature)  
+- [Feature-enabling flags](#Feature)  
   
--   [Configuration flags](#Config)  
+- [Configuration flags](#Config)  
   
--   [Composite flags](#Composite)  
+- [Composite flags](#Composite)  
   
 <a name="None"></a>   
 ### No flags set  

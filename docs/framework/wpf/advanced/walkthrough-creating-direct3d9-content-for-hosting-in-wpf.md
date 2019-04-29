@@ -13,18 +13,18 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
  In this walkthrough, you perform the following tasks:
 
--   Create a Direct3D9 project.
+- Create a Direct3D9 project.
 
--   Configure the Direct3D9 project for hosting in a WPF application.
+- Configure the Direct3D9 project for hosting in a WPF application.
 
  When you are finished, you will have a DLL that contains Direct3D9 content for use in a WPF application.
 
 ## Prerequisites
  You need the following components to complete this walkthrough:
 
--   Visual Studio 2010.
+- Visual Studio 2010.
 
--   DirectX SDK 9 or later.
+- DirectX SDK 9 or later.
 
 ## Creating the Direct3D9 Project
  The first step is to create and configure the Direct3D9 project.
@@ -131,7 +131,7 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 ## Next Steps
 
--   Host the Direct3D9 content in a WPF application. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](walkthrough-hosting-direct3d9-content-in-wpf.md).
+- Host the Direct3D9 content in a WPF application. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](walkthrough-hosting-direct3d9-content-in-wpf.md).
 
 ## See also
 

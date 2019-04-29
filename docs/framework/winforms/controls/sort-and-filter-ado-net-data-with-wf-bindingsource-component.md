@@ -22,7 +22,7 @@ You can expose the sorting and filtering capability of <xref:System.Windows.Form
   
 ### To filter data with the BindingSource  
   
--   Set the <xref:System.Windows.Forms.BindingSource.Filter%2A> property to expression that you want.  
+- Set the <xref:System.Windows.Forms.BindingSource.Filter%2A> property to expression that you want.  
   
      In the following code example, the expression is a column name followed by value that you want for the column.  
   

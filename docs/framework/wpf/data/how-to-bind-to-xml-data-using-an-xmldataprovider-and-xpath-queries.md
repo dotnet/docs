@@ -30,13 +30,13 @@ This example shows how to bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tl
   
  The **XPath** properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] are handled by the XmlNode.SelectNodes method. You can modify the **XPath** queries to get different results. Here are some examples for the <xref:System.Windows.Data.Binding.XPath%2A> query on the bound <xref:System.Windows.Controls.ListBox> from the previous example:  
   
--   `XPath="Book[1]"` will return the first book element ("XML in Action"). Note that **XPath** indexes are based on 1, not 0.  
+- `XPath="Book[1]"` will return the first book element ("XML in Action"). Note that **XPath** indexes are based on 1, not 0.  
   
--   `XPath="Book[@*]"` will return all book elements with any attributes.  
+- `XPath="Book[@*]"` will return all book elements with any attributes.  
   
--   `XPath="Book[last()-1]"` will return the second to last book element ("Introducing Microsoft .NET").  
+- `XPath="Book[last()-1]"` will return the second to last book element ("Introducing Microsoft .NET").  
   
--   `XPath="*[position()>3]"` will return all of the book elements except for the first 3.  
+- `XPath="*[position()>3]"` will return all of the book elements except for the first 3.  
   
  When you run an **XPath** query, it returns an <xref:System.Xml.XmlNode> or a list of XmlNodes. <xref:System.Xml.XmlNode> is a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] object, which means you can use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] properties. Consider the previous example again. If the rest of the example stays the same and you change the <xref:System.Windows.Controls.TextBlock> binding to the following, you will see the names of the returned XmlNodes in the <xref:System.Windows.Controls.ListBox>. In this case, the name of all the returned nodes is "*Book*".  
   

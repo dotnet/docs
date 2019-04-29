@@ -34,11 +34,11 @@ HRESULT GetSaveSize (
  `fSave`  
  [in] A value of the [CorSaveSize](../../../../docs/framework/unmanaged-api/metadata/corsavesize-enumeration.md) enumeration that specifies whether to get an accurate or approximate size. Only three values are valid: cssAccurate, cssQuick, and cssDiscardTransientCAs:  
   
--   cssAccurate returns the exact save size but takes longer to calculate.  
+- cssAccurate returns the exact save size but takes longer to calculate.  
   
--   cssQuick returns a size, padded for safety, but takes less time to calculate.  
+- cssQuick returns a size, padded for safety, but takes less time to calculate.  
   
--   cssDiscardTransientCAs tells `GetSaveSize` that it can throw away discardable custom attributes.  
+- cssDiscardTransientCAs tells `GetSaveSize` that it can throw away discardable custom attributes.  
   
  `pdwSaveSize`  
  [out] A pointer to the size that is required to save the file.  

@@ -14,29 +14,29 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
  In this walkthrough, you complete the following tasks:  
   
--   [To create a WPF application](#CreateWPFApp)  
+- [To create a WPF application](#CreateWPFApp)  
   
--   [To design a simple WPF MainWindow](#MainWindow)  
+- [To design a simple WPF MainWindow](#MainWindow)  
   
--   [To add a reference](#AddRef)  
+- [To add a reference](#AddRef)  
   
--   [To add necessary Imports statements](#ImportsState)  
+- [To add necessary Imports statements](#ImportsState)  
   
--   [To create a synchronous application](#synchronous)  
+- [To create a synchronous application](#synchronous)  
   
--   [To test the synchronous solution](#testSynch)  
+- [To test the synchronous solution](#testSynch)  
   
--   [To convert GetURLContents to an asynchronous method](#GetURLContents)  
+- [To convert GetURLContents to an asynchronous method](#GetURLContents)  
   
--   [To convert SumPageSizes to an asynchronous method](#SumPageSizes)  
+- [To convert SumPageSizes to an asynchronous method](#SumPageSizes)  
   
--   [To convert startButton_Click to an asynchronous method](#startButton)  
+- [To convert startButton_Click to an asynchronous method](#startButton)  
   
--   [To test the asynchronous solution](#testAsynch)  
+- [To test the asynchronous solution](#testAsynch)  
   
--   [To replace method GetURLContentsAsync with a .NET Framework method](#GetURLContentsAsync)  
+- [To replace method GetURLContentsAsync with a .NET Framework method](#GetURLContentsAsync)  
   
--   [Example](#BKMK_CompleteCodeExamples)  
+- [Example](#BKMK_CompleteCodeExamples)  
   
 ## Prerequisites  
  Visual Studio 2012 or later must be installed on your computer. For more information, see the [Microsoft website](https://go.microsoft.com/fwlink/?LinkId=235233).  
@@ -66,19 +66,19 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 4. Highlight the **TextBox** control and, in the **Properties** window, set the following values:  
   
-    -   Set the **Name** property to `resultsTextBox`.  
+    - Set the **Name** property to `resultsTextBox`.  
   
-    -   Set the **Height** property to 250.  
+    - Set the **Height** property to 250.  
   
-    -   Set the **Width** property to 500.  
+    - Set the **Width** property to 500.  
   
-    -   On the **Text** tab, specify a monospaced font, such as Lucida Console or Global Monospace.  
+    - On the **Text** tab, specify a monospaced font, such as Lucida Console or Global Monospace.  
   
 5. Highlight the **Button** control and, in the **Properties** window, set the following values:  
   
-    -   Set the **Name** property to `startButton`.  
+    - Set the **Name** property to `startButton`.  
   
-    -   Change the value of the **Content** property from **Button** to **Start**.  
+    - Change the value of the **Content** property from **Button** to **Start**.  
   
 6. Position the text box and the button so that both appear in the **MainWindow** window.  
   
@@ -131,13 +131,13 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 3. The code for the synchronous solution contains the following four methods:  
   
-    -   `SumPageSizes`, which gets a list of webpage URLs from `SetUpURLList` and then calls `GetURLContents` and `DisplayResults` to process each URL.  
+    - `SumPageSizes`, which gets a list of webpage URLs from `SetUpURLList` and then calls `GetURLContents` and `DisplayResults` to process each URL.  
   
-    -   `SetUpURLList`, which makes and returns a list of web addresses.  
+    - `SetUpURLList`, which makes and returns a list of web addresses.  
   
-    -   `GetURLContents`, which downloads the contents of each website and returns the contents as a byte array.  
+    - `GetURLContents`, which downloads the contents of each website and returns the contents as a byte array.  
   
-    -   `DisplayResults`, which displays  the number of bytes in the byte array for each URL.  
+    - `DisplayResults`, which displays  the number of bytes in the byte array for each URL.  
   
      Copy the following four methods, and then paste them under the `startButton_Click` event handler in MainWindow.xaml.vb:  
   
@@ -280,9 +280,9 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 3. Because you added the `Await` operator in the previous step, a compiler error occurs. The operator can be used only in methods that are marked with the [Async](../../../../visual-basic/language-reference/modifiers/async.md) modifier. Ignore the error while you repeat the conversion steps to replace the call to `CopyTo` with a call to `CopyToAsync`.  
   
-    -   Change the name of the method that’s called to <xref:System.IO.Stream.CopyToAsync%2A>.  
+    - Change the name of the method that’s called to <xref:System.IO.Stream.CopyToAsync%2A>.  
   
-    -   The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn’t return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.  
+    - The `CopyTo` or `CopyToAsync` method copies bytes to its argument, `content`, and doesn’t return a meaningful value. In the synchronous version, the call to `CopyTo` is a simple statement that doesn't return a value. The asynchronous version, `CopyToAsync`, returns a <xref:System.Threading.Tasks.Task>. The task functions like "Task(void)" and enables the method to be awaited. Apply `Await` or `await` to the call to `CopyToAsync`, as the following code shows.  
   
         ```vb  
         Await responseStream.CopyToAsync(content)  
@@ -311,9 +311,9 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
      Method `GetURLContents` has a return statement, and the statement returns a byte array. Therefore, the return type of the async version is Task(T), where T is a byte array. Make the following changes in the method signature:  
   
-    -   Change the return type to `Task(Of Byte())`.  
+    - Change the return type to `Task(Of Byte())`.  
   
-    -   By convention, asynchronous methods have names that end in "Async," so rename the method `GetURLContentsAsync`.  
+    - By convention, asynchronous methods have names that end in "Async," so rename the method `GetURLContentsAsync`.  
   
      The following code shows these changes.  
   
@@ -328,9 +328,9 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 1. Repeat the steps from the previous procedure for `SumPageSizes`. First, change the call to `GetURLContents` to an asynchronous call.  
   
-    -   Change the name of the method that’s called from `GetURLContents` to `GetURLContentsAsync`, if you haven't already done so.  
+    - Change the name of the method that’s called from `GetURLContents` to `GetURLContentsAsync`, if you haven't already done so.  
   
-    -   Apply `Await` to the task that `GetURLContentsAsync` returns to obtain the byte array value.  
+    - Apply `Await` to the task that `GetURLContentsAsync` returns to obtain the byte array value.  
   
      The following code shows these changes.  
   
@@ -349,11 +349,11 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 2. Make the following changes in the method's signature:  
   
-    -   Mark the method with the `Async` modifier.  
+    - Mark the method with the `Async` modifier.  
   
-    -   Add "Async" to the method name.  
+    - Add "Async" to the method name.  
   
-    -   There is no task return variable, T, this time because `SumPageSizesAsync` doesn’t return a value for T. (The method has no `Return` statement.) However, the method must return a `Task` to be awaitable. Therefore, change the method type from `Sub` to `Function`. The return type of the function is `Task`.  
+    - There is no task return variable, T, this time because `SumPageSizesAsync` doesn’t return a value for T. (The method has no `Return` statement.) However, the method must return a `Task` to be awaitable. Therefore, change the method type from `Sub` to `Function`. The return type of the function is `Task`.  
   
      The following code shows these changes.  
   
@@ -416,9 +416,9 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 2. Output that resembles the output of the synchronous solution should appear. However, notice the following differences.  
   
-    -   The results don’t all occur at the same time, after the processing is complete. For example, both programs contain a line in `startButton_Click` that clears the text box. The intent is to clear the text box between runs if you choose the **Start** button for a second time, after one set of results has appeared. In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work. In the asynchronous version, the text box clears immediately after you choose the **Start** button.  
+    - The results don’t all occur at the same time, after the processing is complete. For example, both programs contain a line in `startButton_Click` that clears the text box. The intent is to clear the text box between runs if you choose the **Start** button for a second time, after one set of results has appeared. In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work. In the asynchronous version, the text box clears immediately after you choose the **Start** button.  
   
-    -   Most importantly, the UI thread isn’t blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).  
+    - Most importantly, the UI thread isn’t blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).  
   
 ## <a name="BKMK_ReplaceGetByteArrayAsync"></a>   
 ### <a name="GetURLContentsAsync"></a> To replace method GetURLContentsAsync with a .NET Framework method  

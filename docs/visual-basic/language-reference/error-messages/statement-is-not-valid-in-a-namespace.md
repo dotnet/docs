@@ -15,7 +15,7 @@ The statement cannot appear at the level of a namespace. The only declarations a
   
 ## To correct this error  
   
--   Move the statement to a location within a module, class, interface, structure, enumeration, or delegate definition.  
+- Move the statement to a location within a module, class, interface, structure, enumeration, or delegate definition.  
   
 ## See also
 

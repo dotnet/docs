@@ -56,11 +56,11 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 ### Opening and Viewing WCF Trace Files  
  The Service Trace Viewer supports three file types:  
   
--   WCF Tracing File (.svcLog)  
+- WCF Tracing File (.svcLog)  
   
--   Event Tracing File (.etl)  
+- Event Tracing File (.etl)  
   
--   Crimson Tracing File  
+- Crimson Tracing File  
   
  Service Trace Viewer enables you to open any supported trace file, add and integrate additional trace files, or open and merge a group of trace files simultaneously.  
   
@@ -100,9 +100,9 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
   
  There are two ways to manage projects:  
   
--   In the **File** menu, you can open, save and close projects.  
+- In the **File** menu, you can open, save and close projects.  
   
--   In the **Project** tab, you can add files to a project.  
+- In the **Project** tab, you can add files to a project.  
   
 ### Viewing WCF Traces  
  WCF emits traces using the activity tracing format. In the activity tracing model, individual traces are grouped in activities according to their purpose. Logical control flow is transferred between activities. For example, during the lifetime of an application, many "message send activities" appear and disappear. For more information on viewing traces and activities, and the user interface of the Service Trace Viewer too, see [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
@@ -110,13 +110,13 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 #### Switching to Different Views  
  The Service Trace Viewer provides the following different views. They are displayed as tabs on the left pane of the Viewer, and can also be accessed from the **View** menu.  
   
--   Activity View  
+- Activity View  
   
--   Project View  
+- Project View  
   
--   Message View  
+- Message View  
   
--   Graph View  
+- Graph View  
   
 ##### Activity view  
  Once the trace files are opened, you can see the traces grouped into activities and displayed in the **Activity** view in the left-hand pane.  
@@ -138,9 +138,12 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
   
 ##### Project View  
  This view enables you to manage trace files in the current project. See the Managing Project section for more details.  
-  
+
+##### Message View
+ This view enables you to view all message log traces, including Action, Date/Time, Process, Acivity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
+ 
 ##### Graph View  
- One of the most powerful features of Service Trace Viewer is the **Graph** view, which displays the trace data for a given activity in chart form. The chart form enables you to see the stepwise execution of events and the interrelationships between multiple activities as data moves between them.  
+ This view displays the trace data for a given activity in chart form. The chart form enables you to see the stepwise execution of events and the interrelationships between multiple activities as data moves between them.  
   
  To switch to **Graph** view, select an activity in the **Activity** view and click the **Activity** tab, or a message log trace in the **Message** View. If multiple trace files are loaded and the activity involves traces from more than one file, all of the relevant traces appear in the graph view. Double-clicking on the activities and message log traces also leads you to the **Graph** view.  
   
@@ -186,9 +189,9 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 ###### Options  
  You can select two options from the **Option** menu in Graph view.  
   
--   Show Activity Boundary Traces, which when unchecked ignore the activity boundary traces in the graph.  
+- Show Activity Boundary Traces, which when unchecked ignore the activity boundary traces in the graph.  
   
--   Show Non-message Verbose Traces, which when unchecked ignore verbose level traces, except for message traces. In most cases, verbose level traces are less important for analysis. This option is helpful when you do not want to analyze verbose level traces and only want to focus on more important traces.  
+- Show Non-message Verbose Traces, which when unchecked ignore verbose level traces, except for message traces. In most cases, verbose level traces are less important for analysis. This option is helpful when you do not want to analyze verbose level traces and only want to focus on more important traces.  
   
 ###### Layout Mode  
  The viewer has two Layout Modes: **Process** and **Thread**. This setting defines the largest unit of organization. The default Layout Mode is **Process**, which means that activities are grouped by processes in the graph.  
@@ -216,22 +219,22 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 ### Filtering WCF Traces  
  To make the analysis of trace easier, you can filter them in the following ways:  
   
--   The filter toolbar provides access to pre-defined and custom filters. It can be enabled through the **View** menu.  
+- The filter toolbar provides access to pre-defined and custom filters. It can be enabled through the **View** menu.  
   
--   The pre-defined filter of the viewer can be used to selectively filter parts of the WCF traces. By default, it is set to allow all infrastructure traces to pass through. The settings of this filter are defined in the **Filter Options** sub-menu under **View** menu.  
+- The pre-defined filter of the viewer can be used to selectively filter parts of the WCF traces. By default, it is set to allow all infrastructure traces to pass through. The settings of this filter are defined in the **Filter Options** sub-menu under **View** menu.  
   
--   Custom XPath filters give users full control over filtering. They can be defined in the **Custom Filter** under **View** menu.  
+- Custom XPath filters give users full control over filtering. They can be defined in the **Custom Filter** under **View** menu.  
   
  Only traces that passes through all filters is displayed.  
   
 #### Using the Filter Toolbar  
  The filter toolbar appears across the top of the tool. If it is not present, you can activate it in the **View** menu. The bar has three components:  
   
--   Look for: **Look for** defines the subject to look for in the filter operation. For example, if you want to find all traces that were emitted in the context of process X, set this field to X and the **Search In** field to ‘Process Name’. This field changes to a DateTime selector control when a time-based filter is selected.  
+- Look for: **Look for** defines the subject to look for in the filter operation. For example, if you want to find all traces that were emitted in the context of process X, set this field to X and the **Search In** field to ‘Process Name’. This field changes to a DateTime selector control when a time-based filter is selected.  
   
--   Search in: This field defines the type of filter to apply.  
+- Search in: This field defines the type of filter to apply.  
   
--   Level: The level setting defines the minimum trace level allowed by the filter. For example, if the level is set to Error and Up, only traces at the Error and critical level are displayed. This filter combines with the criteria specified by Look For and Search In.  
+- Level: The level setting defines the minimum trace level allowed by the filter. For example, if the level is set to Error and Up, only traces at the Error and critical level are displayed. This filter combines with the criteria specified by Look For and Search In.  
   
  The **Filter Now** button starts the filter operation. Some filters, especially when they are applied to a large data set, take a long time to complete. You can cancel the filter operation by pressing the **Stop** button that appears in the status bar under the **Operations** menu.  
   
@@ -315,27 +318,27 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 ### Finding Data  
  The viewer provides the following ways to find data:  
   
--   The Find toolbar provides a quick access to the most common find options.  
+- The Find toolbar provides a quick access to the most common find options.  
   
--   The Find dialog provides more find options. It is accessible through the **Edit** menu, or by the short key Ctrl + F.  
+- The Find dialog provides more find options. It is accessible through the **Edit** menu, or by the short key Ctrl + F.  
   
  The find toolbar appears at the top of the viewer. If it is not present, you can activate it in the **View** menu. The bar has two components:  
   
--   Find What: Allows you to enter search keyword.  
+- Find What: Allows you to enter search keyword.  
   
--   Look In: Allows you to enter the search scope. You can select whether to search in all activities or in the current activity only.  
+- Look In: Allows you to enter the search scope. You can select whether to search in all activities or in the current activity only.  
   
  The find dialog provides two additional options:  
   
--   Find target:  
+- Find target:  
   
-    -   The "Raw log data" option searches the keyword in all raw data.  
+    - The "Raw log data" option searches the keyword in all raw data.  
   
-    -   The "XML Text" and "XML Attribute" options only search in XML elements.  
+    - The "XML Text" and "XML Attribute" options only search in XML elements.  
   
-    -   The "Logged Message" option searches the keyword only in messages.  
+    - The "Logged Message" option searches the keyword only in messages.  
   
--   Ignore root activity: The search ignores the traces in the "000000000000" activity. This improves performance in large trace files when the root activity has thousands of traces, most of which are transfers.  
+- Ignore root activity: The search ignores the traces in the "000000000000" activity. This improves performance in large trace files when the root activity has thousands of traces, most of which are transfers.  
   
 ### Navigating Traces  
  Because traces are recorded step by step during application runtime, navigating traces can help you to debug your application. The Service Trace Viewer provides various ways to navigate in traces.  
@@ -343,9 +346,9 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 #### Step Forward or Backward  
  If you consider each trace as a line of code in the program, stepping forward is very similar to "Step over" in the Visual Studio Integrated Development Environment (IDE). The difference is that you can also step backward in the traces. Stepping forward means moving to the next trace in the activity.  
   
--   Step Forward: Use the **Activity** menu, or press "F10". You can also use arrow key "down" in the trace pane.  
+- Step Forward: Use the **Activity** menu, or press "F10". You can also use arrow key "down" in the trace pane.  
   
--   Step Backward: Use the **Activity** menu, or press "F9". You can also use arrow key "up" in the trace pane.  
+- Step Backward: Use the **Activity** menu, or press "F9". You can also use arrow key "up" in the trace pane.  
   
 > [!NOTE]
 >  This can take you to an activity occurring in a different process or even on a different computer, because WCF messages can carry activity IDs that span machines.  
@@ -357,9 +360,9 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
   
  There are two ways to follow a transfer: by mouse or by keyboard:  
   
--   By Mouse: Double-click the transfer trace in the trace pane.  
+- By Mouse: Double-click the transfer trace in the trace pane.  
   
--   By Keyboard: Select a transfer trace, and use "Follow Transfer" in the **Activity** menu, or press "F11"  
+- By Keyboard: Select a transfer trace, and use "Follow Transfer" in the **Activity** menu, or press "F11"  
   
 > [!NOTE]
 >  In many cases, when Activity A transfers to Activity B, Activity A waits until Activity B transfers back to Activity A. This means that Activity A has no trace logged during the period when Activity B is actively tracing. However, it is also possible that Activity A does not wait, and continues to log traces. It is also possible that Activity B does not transfer back to Activity A. Therefore, activity transfers are still different from function calls in this sense. You can understand activity transfers better in Graph view.  
@@ -367,9 +370,9 @@ Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes a
 #### Jump to Next or Previous Transfer  
  When you are analyzing the current activity, or selected activities when multiple activities are selected, you may want to quickly find the activities it transfers to. "Jump to next transfer" allows you to locate the next transfer trace in the activity. Once you find the transfer trace, you can use "Follow transfer" to step into the next activity.  
   
--   Jump to Next Transfer: Use the **Activity** menu, or press "Ctrl + F10".  
+- Jump to Next Transfer: Use the **Activity** menu, or press "Ctrl + F10".  
   
--   Jump to Previous Transfer: Use the **Activity** menu, or press "Ctrl + F9".  
+- Jump to Previous Transfer: Use the **Activity** menu, or press "Ctrl + F9".  
   
 #### Navigate in Graph View  
  Although navigating in the activity pane and trace pane is similar to debugging, using **Graph** view provides a much better experience in navigation. See "Graph View" section for more information.  

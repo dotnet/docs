@@ -92,13 +92,13 @@ adapter.Update(table.Select(null, null, DataViewRowState.Added));
 ## Use a DataAdapter to Retrieve and Update Data  
  You can use a DataAdapter to retrieve and update the data.  
   
--   The sample uses DataAdapter.AcceptChangesDuringFill to clone the data in the database. If the property is set as false, AcceptChanges is not called when filling the table, and the newly added rows are treated as inserted rows. So, the sample uses these rows to insert the new rows into the database.  
+- The sample uses DataAdapter.AcceptChangesDuringFill to clone the data in the database. If the property is set as false, AcceptChanges is not called when filling the table, and the newly added rows are treated as inserted rows. So, the sample uses these rows to insert the new rows into the database.  
   
--   The samples uses DataAdapter.TableMappings to define the mapping between the source table and DataTable.  
+- The samples uses DataAdapter.TableMappings to define the mapping between the source table and DataTable.  
   
--   The sample uses DataAdapter.FillLoadOption to determine how the adapter fills the DataTable from the DbDataReader. When you create a DataTable, you can only write the data from database to the current version or the original version by setting the property as the LoadOption.Upsert or the LoadOption.PreserveChanges.  
+- The sample uses DataAdapter.FillLoadOption to determine how the adapter fills the DataTable from the DbDataReader. When you create a DataTable, you can only write the data from database to the current version or the original version by setting the property as the LoadOption.Upsert or the LoadOption.PreserveChanges.  
   
--   The sample will also update the table by using DbDataAdapter.UpdateBatchSize to perform batch operations.  
+- The sample will also update the table by using DbDataAdapter.UpdateBatchSize to perform batch operations.  
   
  Before you compile and run the sample, you need to create the sample database:  
   

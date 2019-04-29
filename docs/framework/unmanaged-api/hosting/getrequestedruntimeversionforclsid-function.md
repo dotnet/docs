@@ -50,9 +50,9 @@ HRESULT GetRequestedRuntimeVersionForCLSID (
  `dwResolutionFlags`  
  [in]  One of the CLSID_RESOLUTION_FLAGS values. The following values are supported:  
   
--   CLSID_RESOLUTION_DEFAULT: (0x0) Specifies that default interop behavior should be used.  
+- CLSID_RESOLUTION_DEFAULT: (0x0) Specifies that default interop behavior should be used.  
   
--   CLSID_RESOLUTION_REGISTERED: (0x1) Specifies that the registry should be searched and shim policy should be applied.  
+- CLSID_RESOLUTION_REGISTERED: (0x1) Specifies that the registry should be searched and shim policy should be applied.  
   
 ## Return Value  
   

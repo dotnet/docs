@@ -6,15 +6,15 @@ ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
 # Common Attributes (Visual Basic)
 This topic describes the attributes that are most commonly used in Visual Basic programs.  
   
--   [Global Attributes](#Global)  
+- [Global Attributes](#Global)  
   
--   [Obsolete Attribute](#Obsolete)  
+- [Obsolete Attribute](#Obsolete)  
   
--   [Conditional Attribute](#Conditional)  
+- [Conditional Attribute](#Conditional)  
   
--   [Caller Info Attributes](#CallerInfo)  
+- [Caller Info Attributes](#CallerInfo)  
   
--   [Visual Basic Attributes](#VB)  
+- [Visual Basic Attributes](#VB)  
   
 ## <a name="Global"></a> Global Attributes  
  Most attributes are applied to specific language elements such as classes or methods; however, some attributes are global—they apply to an entire assembly or module. For example, the <xref:System.Reflection.AssemblyVersionAttribute> attribute can be used to embed version information into an assembly, like this:  
@@ -27,11 +27,11 @@ This topic describes the attributes that are most commonly used in Visual Basic 
   
  Assembly attributes are values that provide information about an assembly. They fall into the following categories:  
   
--   Assembly identity attributes  
+- Assembly identity attributes  
   
--   Informational attributes  
+- Informational attributes  
   
--   Assembly manifest attributes  
+- Assembly manifest attributes  
   
 ### Assembly Identity Attributes  
  Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created, based on the file that contains the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.  

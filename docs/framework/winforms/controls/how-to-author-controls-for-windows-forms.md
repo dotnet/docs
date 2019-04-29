@@ -19,13 +19,13 @@ A control represents a graphical link between the user and the program. A contro
   
 1. Determine what you want your control to accomplish, or what part it will play in your application. Factors to consider are:  
   
-    -   What kind of graphical interface do you need?  
+    - What kind of graphical interface do you need?  
   
-    -   What specific user interactions will this control handle?  
+    - What specific user interactions will this control handle?  
   
-    -   Is the functionality you need provided by any existing controls?  
+    - Is the functionality you need provided by any existing controls?  
   
-    -   Can you get the functionality you need by combining several Windows Forms controls?  
+    - Can you get the functionality you need by combining several Windows Forms controls?  
   
 2. If you need an object model for your control, determine how functionality will be distributed throughout the object model, and divide up functionality between the control and any subobjects. An object model may be useful if you are planning a complex control, or want to incorporate several functionalities.  
   

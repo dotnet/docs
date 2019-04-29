@@ -67,7 +67,7 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
   
 ### To initialize trace sources, listeners, and filters without a configuration file  
   
--   Use the following example code to enable tracing through a trace source without using a configuration file. This is not a recommended practice, but there may be circumstances in which you do not want to depend on configuration files to ensure tracing.  
+- Use the following example code to enable tracing through a trace source without using a configuration file. This is not a recommended practice, but there may be circumstances in which you do not want to depend on configuration files to ensure tracing.  
   
      [!code-csharp[TraceSourceExample2#1](../../../samples/snippets/csharp/VS_Snippets_CLR/tracesourceexample2/cs/program.cs#1)]
      [!code-vb[TraceSourceExample2#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/tracesourceexample2/vb/program.vb#1)]  

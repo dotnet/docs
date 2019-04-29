@@ -15,11 +15,11 @@ ms.author: "ronpet"
 # Regsvcs.exe (.NET Services Installation Tool)
 The .NET Services Installation tool performs the following actions:  
   
--   Loads and registers an assembly.  
+- Loads and registers an assembly.  
   
--   Generates, registers, and installs a type library into a specified COM+ application.  
+- Generates, registers, and installs a type library into a specified COM+ application.  
   
--   Configures services that you have added programmatically to your class.  
+- Configures services that you have added programmatically to your class.  
   
  To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   

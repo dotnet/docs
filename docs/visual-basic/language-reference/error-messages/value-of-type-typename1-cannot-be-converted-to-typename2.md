@@ -51,7 +51,7 @@ Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatc
   
 ## To correct this error  
   
--   Change the file reference to a project reference.  
+- Change the file reference to a project reference.  
   
 ## See also
 

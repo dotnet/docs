@@ -45,27 +45,27 @@ IEnumerable<Task<int>> downloadTasksQuery = from url in urlList select ProcessUR
 
 In the MainWindow.xaml.cs file of the project, make the following changes to the `AccessTheWebAsync` method.
 
--   Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.
+- Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.
 
     ```csharp
     List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
     ```
 
--   Add a `while` loop that performs the following steps for each task in the collection:
+- Add a `while` loop that performs the following steps for each task in the collection:
 
-    1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.
+    1. Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.
 
         ```csharp
         Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
         ```
 
-    2.  Removes that task from the collection.
+    2. Removes that task from the collection.
 
         ```csharp
         downloadTasks.Remove(firstFinishedTask);
         ```
 
-    3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.
+    3. Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.
 
         ```csharp
         int length = await firstFinishedTask;

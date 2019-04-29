@@ -31,11 +31,11 @@ Inherits basetypenames
   
 ## Rules  
   
--   **Class Inheritance.** If a class uses the `Inherits` statement, you can specify only one base class.  
+- **Class Inheritance.** If a class uses the `Inherits` statement, you can specify only one base class.  
   
      A class cannot inherit from a class nested within it.  
   
--   **Interface Inheritance.** If an interface uses the `Inherits` statement, you can specify one or more base interfaces. You can inherit from two interfaces even if they each define a member with the same name. If you do so, the implementing code must use name qualification to specify which member it is implementing.  
+- **Interface Inheritance.** If an interface uses the `Inherits` statement, you can specify one or more base interfaces. You can inherit from two interfaces even if they each define a member with the same name. If you do so, the implementing code must use name qualification to specify which member it is implementing.  
   
      An interface cannot inherit from another interface with a more restrictive access level. For example, a `Public` interface cannot inherit from a `Friend` interface.  
   

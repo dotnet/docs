@@ -1,5 +1,5 @@
 ---
-title: "How-To: Load Data in ML.NET"
+title: 'How-To: Load Data '
 description: Load data file and streaming data into ML.NET
 ms.date: 04/03/2019
 ms.custom: mvc,how-to

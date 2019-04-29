@@ -24,7 +24,7 @@ The following code example shows how to use the <xref:System.Drawing.Graphics.Dr
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The Arial font is not installed.  
+- The Arial font is not installed.  
   
 ## See also
 

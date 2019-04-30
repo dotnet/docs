@@ -20,7 +20,7 @@ Just as tiles can be placed next to each other to cover a floor, rectangular ima
   
 -   This example uses the following 75×75 image to tile a 200×200 rectangle.  
   
- ![Screenshot that shows a tile image.](./media/how-to-tile-a-shape-with-an-image/rectangle-tile-200x200.gif)  
+ ![The tile image that shows a red house and a tree.](./media/how-to-tile-a-shape-with-an-image/rectangle-tile-200x200.gif)  
   
 -   The following illustration shows how the rectangle is tiled with the image. Note that all tiles have the same orientation; there is no flipping.  
   

@@ -68,9 +68,8 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
     
             // 4. Make a prediction
             var size = new HouseData() { Size = 2.5F };
-            var predEngine = model.CreatePredictionEngine<HouseData, Prediction>(mlContext);
-            var price = predEngine.Predict(size);
-    
+            var price = mlContext.Model.CreatePredictionEngine<HouseData, Prediction>(model).Predict(size);
+
             Console.WriteLine($"Predicted price for size: {size.Size*1000} sq ft= {price.Price*100:C}k");
 
             // Predicted price for size: 2500 sq ft= $261.98k
@@ -80,12 +79,16 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
 ## Code workflow
 
-The following diagram visually outlines the steps in the code, as well as a couple of additions, which are discussed later in this article:
-
+The following diagram represents the application code structure, as well as the iterative process of model development:
+- Collect and load training data into an **IDataView** object
+- Specify a pipeline of operations to extract features and apply a machine learning algorithm
+- Create a model by calling **Fit()** on the pipeline
 - Evaluate the model and iterate to improve
-- Separate model development and model usage (deployment)
-    
-![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png) 
+- Save the model into binary format, for use in an application
+- Load the model back into an **ITransformer** object
+- Make predictions by calling **CreatePredictionEngine.Predict()**
+
+![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/ml-net-annotated-workflow.svg) 
 
 Let's dig a little deeper into those concepts.
 
@@ -109,7 +112,7 @@ Each transaction description is broken down into a set of features by removing r
 
 ![Text Classification Model](./media/text-classification-model.svg)
 
-Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models, and others. You can find out more about the models in [How to choose an ML.NET model](./resources/tasks.md).
+Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models, and others. You can find out more about the models in [Tasks](./resources/tasks.md).
 
 ## Data preparation
 

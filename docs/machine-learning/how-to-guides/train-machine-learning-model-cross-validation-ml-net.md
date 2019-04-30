@@ -103,7 +103,7 @@ If you inspect the contents of the `rSquared` variable, the output should be fiv
 
 ## Select the best performing model
 
-Using metrics like R-Squared, select the models from best to worst performing. 
+Using metrics like R-Squared, select the models from best to worst performing. Then, select the top model to make predictions or perform additional operations with.
 
 ```csharp
 // Select all models
@@ -116,5 +116,3 @@ ITransformer[] models =
 // Get Top Model
 ITransformer topModel = models[0];
 ```
-
-Then, select the top model to make predictions or perform additional operations with.

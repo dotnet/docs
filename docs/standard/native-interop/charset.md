@@ -12,10 +12,10 @@ The way `char` values, `string` objects, and `System.Text.StringBuilder` objects
 
 The following table shows a mapping between each charset and how a character or string is represented when marshaled with that charset:
 
-| CharSet | Windows            | Unix on .NET Core 2.2 and earlier | Mono and Unix on .NET Core 3.0 and later |
-|---------|--------------------|-----------------------------|------------------------------------------|
-| Ansi    | `char` (ANSI)      | `char` (UTF-8)              | `char` (UTF-8)                           |
-| Unicode | `wchar_t` (UTF-16) | `char16_t` (UTF-16)         | `char16_t` (UTF-16)                      |
-| Auto    | `wchar_t` (UTF-16) | `char16_t` (UTF-16)         | `char` (UTF-8)                           |
+| `CharSet` value | Windows            | .NET Core 2.2 and earlier on Unix | .NET Core 3.0 and later and Mono on Unix |
+|-----------------|--------------------|-----------------------------------|------------------------------------------|
+| Ansi            | `char` (ANSI)      | `char` (UTF-8)                    | `char` (UTF-8)                           |
+| Unicode         | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char16_t` (UTF-16)                      |
+| Auto            | `wchar_t` (UTF-16) | `char16_t` (UTF-16)               | `char` (UTF-8)                           |
 
 Make sure you know what representation your native representation expects when picking your charset.

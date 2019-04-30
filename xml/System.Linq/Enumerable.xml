@@ -5527,6 +5527,8 @@ Only unique elements are returned.
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          No object in <paramref name="source" /> implements the <see cref="T:System.IComparable" /> or <see cref="T:System.IComparable`1" /> interface. </exception>  
         <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>
@@ -6996,6 +6998,8 @@ Only unique elements are returned.
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          No object in <paramref name="source" /> implements the <see cref="T:System.IComparable" /> or <see cref="T:System.IComparable`1" /> interface. </exception>  
         <related type="Article" href="~/docs/visual-basic/language-reference/queries/aggregate-clause.md">Aggregate Clause (Visual Basic)</related>
       </Docs>
     </Member>

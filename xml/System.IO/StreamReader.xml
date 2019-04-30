@@ -1033,13 +1033,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overrides the <xref:System.IO.TextWriter.Close%2A?displayProperty=nameWithType> method.  
+
+This method overrides the <xref:System.IO.TextReader.Close%2A?displayProperty=nameWithType> method.  
   
- This implementation of <xref:System.IO.StreamReader.Close%2A> calls the <xref:System.IO.StreamReader.Dispose%2A> method passing a `true` value.  
+This implementation of <xref:System.IO.StreamReader.Close%2A> calls the <xref:System.IO.StreamReader.Dispose%2A> method, passing a `true` value.  
   
- Flushing the stream will not flush its underlying encoder unless you explicitly call <xref:System.IO.StreamReader.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7, where certain characters can be encoded only after the encoder receives the adjacent character or characters.  
-  
- Following a call to <xref:System.IO.StreamReader.Close%2A>, any operations on the reader might raise exceptions.  
+Following a call to <xref:System.IO.StreamReader.Close%2A>, any operations on the reader might raise exceptions.  
   
  ]]></format>
         </remarks>

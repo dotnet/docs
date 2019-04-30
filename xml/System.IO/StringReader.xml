@@ -198,15 +198,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
+
+For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
   
- This method overrides the <xref:System.IO.Stream.Close%2A?displayProperty=nameWithType> method.  
+This method overrides the <xref:System.IO.TextReader.Close%2A?displayProperty=nameWithType> method.  
   
- This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%2A> method passing a `true` value.  
-  
- Flushing the stream will not flush its underlying encoder unless you explicitly call `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
-  
- Following a call to `Close`, other methods might throw an exception.  
+This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%2A>, method passing a `true` value. Following a call to `Close`, other methods might throw an exception.  
   
  ]]></format>
         </remarks>

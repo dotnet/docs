@@ -47,8 +47,6 @@ OOB releases for core common language runtime (CLR) components are delivered thr
 
  To find both prerelease and stable packages, choose **Include Prerelease** in the NuGet Package Manager.
 
- If you want to be notified of stable package releases, subscribe to [the .NET Framework feed](https://www.nuget.org/api/v2/curated-feeds/microsoftdotnet/Packages/).
-
 ## See also
 
 - [Getting Started](../../../docs/framework/get-started/index.md)

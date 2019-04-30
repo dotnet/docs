@@ -33,7 +33,7 @@ If customers IsNot Nothing Then
 End If
 ```
 
-Sometimes you need to take an action on an object that may be null, based on the value of a boolean member on that object (like the boolean property `IsAllowedFreeShipping` in the code below):
+Sometimes you need to take an action on an object that may be null, based on the value of a Boolean member on that object (like the Boolean property `IsAllowedFreeShipping` in the following example):
 
 ```vb
   Dim customer = FindCustomerByID(123) 'customer will be Nothing if not found.

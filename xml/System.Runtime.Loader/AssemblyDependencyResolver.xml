@@ -14,8 +14,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows a program to resolve assemblies and native libraries to paths based on the dependencies of a given assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The `AssemblyDependencyResolver` class enables application developers to more easily develop a plugin architecture in conjunction with custom <xref:System.Runtime.Loader.AssemblyLoadContext?displayProperty=nameWithType> instances to isolate plugins and also enable plugins to load dependencies.
+
+ The [tutorial on creating a .NET Core application with plugins](https://docs.microsoft.com/dotnet/core/tutorials/creating-app-with-plugin-support) describes how to create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> that uses an `AssemblyDependencyResolver` to resolve the dependencies of the plugin and correctly isolate the plugin's dependencies from the hosting application.
+ 
+    ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +43,9 @@
         <Parameter Name="componentAssemblyPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="componentAssemblyPath">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="componentAssemblyPath">The path to the component or plugin's managed entry point.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Loader.AssemblyDependencyResolver" /> class with a path to a component's assembly.</summary>
+        <remarks>`componentAssemblyPath` can be a relative or an absolute path. The assembly must have an accompanying deps.json file in the same directory that describes the assembly's dependencies. This file is output during the build process.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveAssemblyToPath">
@@ -57,9 +66,9 @@
         <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
       </Parameters>
       <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="assemblyName">The assembly name to resolve.</param>
+        <summary>Resolves a path to an assembly with the given assembly name based on the component's dependencies.</summary>
+        <returns>The path to an assembly with the given name from the component's deps.json file, or <c>null</c> if the assembly does not exist in the deps.json file or is not on disk in the location specified by the deps.json file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,9 +91,9 @@
         <Parameter Name="unmanagedDllName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="unmanagedDllName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="unmanagedDllName">The name of the native library to resolve.</param>
+        <summary>Resolves a path to a native library with the given name based on the component's dependencies.</summary>
+        <returns>The path to a native library with the given name from the component's deps.json file and the current runtime identifier, or <c>null</c> if the assembly does not exist in the deps.json file or is not on disk  in the location specified by the deps.json file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

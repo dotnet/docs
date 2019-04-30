@@ -18,7 +18,7 @@ In this tutorial, you learn how to:
 > * Train the model
 > * Evaluate the model
 > * Predict with the trained model
-> * Deploy and Predict with a loaded model
+> * Deploy and predict with a loaded model
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
 

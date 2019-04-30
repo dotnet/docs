@@ -50,10 +50,10 @@ the NuGet package manager to restore missing dependencies.
 
 Before you start making modifications, type
 `dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
-run your application. If there are missing dependencies this command will also
-execute `dotnet restore` ([see note](#dotnet-restore-note)) and `dotnet build`.
-After your initial setup, you will only need to run `dotnet restore` or
-`dotnet build` ([see note](#dotnet-restore-note)) when it makes sense for your project.
+run your application. `dotnet run` automatically performs `dotnet restore`
+if your environment is missing dependencies. It also performs `dotnet build` if your application needs to be rebuilt.
+After your initial setup, you will only need to run `dotnet restore` or `dotnet build`
+when it makes sense for your project.
 
 ## Adding New Dependencies
 

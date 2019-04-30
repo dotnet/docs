@@ -3,7 +3,7 @@ title: .NET Framework technologies unavailable on .NET Core
 description: Learn about .NET Framework technologies that are unavailable on .NET Core
 author: cartermp
 ms.author: mairaw
-ms.date: 12/7/2018
+ms.date: 04/30/2019
 ---
 
 # .NET Framework technologies unavailable on .NET Core
@@ -37,6 +37,10 @@ Use security boundaries provided by the operating system, such as virtualization
 Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](~/docs/framework/misc/security-transparent-code.md). This feature is heavily used by Silverlight. 
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
+
+### System.EnterpriseServices
+
+System.EnterpiseServices (COM+) is not supported by .NET Core.
 
 >[!div class="step-by-step"]
 >[Next](third-party-deps.md)

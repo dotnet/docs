@@ -1,11 +1,10 @@
 ---
 title: "How-To: Use a trained model to make predictions"
 description: Learn to make predictions using a trained model
-ms.date: 04/29/2019
+ms.date: 04/30/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc
-ms.topic: how-to
+ms.custom: mvc, how-to
 #Customer intent: As a developer I want to use my model to make predictions
 ---
 
@@ -35,7 +34,7 @@ public class HousingData
 
 ### Output Data
 
-Like input column names, ML.NET has default names for columns that contain the predicted value of a model. Depending on the task it may be different. 
+Like the `Features` and `Label` input column names, ML.NET has default names for the predicted value columns produced by a model. Depending on the task the name may differ.
 
 Because the algorithm used in this sample is a linear regression algorithm, the default name of the output column is `Score` which is defined by the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute on the `PredictedPrice` property.
 
@@ -51,31 +50,27 @@ The `HousingPrediction` data model inherits from `HousingData` to make it easy t
 
 ## Set up Prediction Pipeline
 
-Whether making a single or batch prediction, the prediction pipeline needs to be set up. After loading the data preparation pipeline and the trained model, they're  combined into an [`ITransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601).
+Whether making a single or batch prediction, the prediction pipeline needs to be loaded into the application. This pipeline contains both the data pre-processing transformations as well as the trained model. The code snippet below loads the prediction pipeline from a file named `model.zip`.
 
 ```csharp
 //Create MLContext 
 MLContext mlContext = new MLContext();
 
-// Load Data Preparation Pipeline and Trained Model
-DataViewSchema dataPrepPipelineSchema, modelSchema;
-ITransformer dataPreparationPipeline = mlContext.Model.Load("data_preparation_pipeline.zip", out modelSchema);
-ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
-
-// Combine data preparation pipeline and trained model transformer into TransformerChain
-TransformerChain<ITransformer> predictionPipeline = dataPreparationPipeline.Append(trainedModel);
+// Load Trained Model
+DataViewSchema predictionPipelineSchema;
+ITransformer predictionPipeline = mlContext.Model.Load("model.zip", out predictionPipelineSchema);
 ```
 
 ## Single Prediction
 
-To make a single prediction, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) using the `predictionPipeline` [`ITransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601).
+To make a single prediction, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) using the loaded prediction pipeline.
 
 ```csharp
 // Create PredictionEngines
 PredictionEngine<HousingData, HousingPrediction> predictionEngine = mlContext.Model.CreatePredictionEngine<HousingData, HousingPrediction>(predictionPipeline);
 ```
 
-Then, use the [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) method and pass in your input data as a parameter. Notice that using the [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) method does not require the input to be an [`IDataView`](xref:Microsoft.ML.IDataView)). This is because it conveniently internalizes the input data type manipulation so you can pass in an object of the input data type. Additionally, since `CurrentPrice` is the target or label, don't set a value for it in the input data.
+Then, use the [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) method and pass in your input data as a parameter. Notice that using the [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) method does not require the input to be an [`IDataView`](xref:Microsoft.ML.IDataView)). This is because it conveniently internalizes the input data type manipulation so you can pass in an object of the input data type. Additionally, since `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.
 
 ```csharp
 // Input Data
@@ -93,7 +88,7 @@ If you access the `Score` property of the `prediction` object, you should get a 
 
 ## Batch Prediction
 
-Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). Because `CurrentPrice` is the target or label, don't set a value for it in the input data.
+Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). Because `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.
 
 ```csharp
 // Actual data
@@ -117,14 +112,14 @@ HousingData[] housingData = new HousingData[]
 };
 ```
 
-Then, use the [`Transform`](xref:Microsoft.ML.Data.TransformerChain%601.Transform*) method to apply the data transformations and generate predictions.
+Then, use the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) method to apply the data transformations and generate predictions.
 
 ```csharp
 // Predicted Data
 IDataView predictions = predictionPipeline.Transform(inputData);
 ```
 
-Inspect the predicted values by using the [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn*) method and 
+Inspect the predicted values by using the [`GetColumn`](xref:Microsoft.ML.Data.ColumnCursorExtensions.GetColumn*) method.
 
 ```csharp
 // Get Predictions

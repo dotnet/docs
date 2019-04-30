@@ -24,7 +24,6 @@ In this tutorial, you learn how to:
 
 This tutorial and related sample are currently using **ML.NET version 1.0.0-preview**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
 
-
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/GitHubIssueClassification) repository.
 
 ## Prerequisites

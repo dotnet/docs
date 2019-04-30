@@ -58,13 +58,11 @@ The first step is to create the application infrastructure, which includes an ap
 
    2. In the **Language** dropdown, select either **C#** or **Visual Basic**.
 
-<<<<<<< HEAD
       ![New Project dialog with WPF app selected](./media/walkthrough-my-first-wpf-desktop-application/new-project-dialog-box.png)
-=======
+      
    3. Select the **WPF App (.NET Framework)** template and then select **Next**. 
     
    4. Select **Create a new project**.
->>>>>>> 77d9be5fb9403221463bba63c83354a20fbbaeb9
 
       The **Configure a new project** dialog opens.
 
@@ -289,13 +287,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
     The following illustration shows the controls you created:
 
-<<<<<<< HEAD
 ![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png "Shows the controls you've added.")
-=======
-    ![ExpenseIt sample screen shot](./media/gettingstartedfigure2.png)
-
-3. Close the application to return to Visual Studio.
->>>>>>> 77d9be5fb9403221463bba63c83354a20fbbaeb9
 
 ## Add an image and a title
 

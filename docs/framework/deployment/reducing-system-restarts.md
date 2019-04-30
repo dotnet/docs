@@ -20,7 +20,7 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] installer uses the [Res
   
  If the Restart Manager detects a situation that will require a system restart even if running apps are closed, the message is not displayed.  
   
- ![Close Application Dialog](./media/reducing-system-restarts/close-application-dialog.png "This is the prompt for closing .NET Framework apps that are in use.")  
+ ![Screenshot that shows the Close Application dialog.](./media/reducing-system-restarts/close-application-dialog.png)  
   
 ## Using a Chained Installer  
  If you want to redistribute the .NET Framework with your app, but you want to use your own setup program and UI, you can include (chain) the .NET Framework setup process to your setup process. For more information about chained installations, see [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md). To reduce system restarts in chained installations, the .NET Framework installer supplies your setup program with the list of apps to close. Your setup program must provide this information to the user through a user interface such as a message box, get the user’s response, and then pass the response back to the .NET Framework installer. For an example of a chained installer, see the article [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md).  

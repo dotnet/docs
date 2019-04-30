@@ -3,7 +3,7 @@ title: Steps in the outer-loop DevOps workflow for a Docker application
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
+ms.date: 02/15/2019
 ---
 # Creating CI/CD pipelines in Azure DevOps Services for a .NET Core 2.0 application on Containers and deploying to a Kubernetes cluster
 
@@ -17,20 +17,20 @@ It is important to highlight that the two pipelines, build/CI, and release/CD, a
 
 As shown in Figure 5-13, the first phase is the build/CI pipeline. In Azure DevOps Services you can create build/CD pipelines that will compile the code, create the Docker images, and push them to a Docker Registry like Docker Hub or Azure Container Registry.
 
-![](media/build-ci-pipeline-azure-devops-push-to-docker-registry.png)
+![Browser view of Azure DevOps, Build process task definition.](media/build-ci-pipeline-azure-devops-push-to-docker-registry.png)
 
 **Figure 5-13**. Build/CI pipeline in Azure DevOps building Docker images and pushing images to a Docker registry
 
 The second phase is to create a deployment/release pipeline. In Azure DevOps Services, you can easily create a deployment pipeline targeting a Kubernetes cluster by using the Kubernetes tasks for Azure DevOps Services, as shown in Figure 5-14.
 
-![Deploy MVC](media/release-cd-pipeline-azure-devops-deploy-to-kubernetes.png)
+![Browser view of Azure DevOps, deploy to Kubernetes task definition.](media/release-cd-pipeline-azure-devops-deploy-to-kubernetes.png)
 
 **Figure 5-14**. Release/CD pipeline in Azure DevOps Services deploying to a Kubernetes cluster
 
 > [!Walkthrough] Deploying eShopModernized to Kubernetes:
 >
 > For a detailed walkthrough of Azure DevOps CI/CD pipelines deploying to Kubernetes, see this post: \
->[https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD))
+><https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
 >[!div class="step-by-step"]
 >[Previous](docker-application-outer-loop-devops-workflow.md)

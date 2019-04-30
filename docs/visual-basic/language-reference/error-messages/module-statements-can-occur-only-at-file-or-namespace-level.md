@@ -15,7 +15,8 @@ ms.assetid: 5e9de8e5-d26b-4fb2-9e28-814413fe9cef
   
 ## To correct this error  
   
--   Move the `Module` statement to the top of your namespace declaration or source file.  
+- Move the `Module` statement to the top of your namespace declaration or source file.  
   
 ## See also
+
 - [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

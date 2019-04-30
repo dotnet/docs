@@ -9,9 +9,9 @@ Peer Name Resolution Protocol (PNRP) caches are local collections of algorithmic
 ## PNRP Cache Initialization  
  To initialize the PNRP cache, or Peer Name Record Collection, when a peer node starts up, a node can use the following methods:  
   
--   Persistent cache entries that were present when the node was shut down are loaded from hard disk storage.  
+- Persistent cache entries that were present when the node was shut down are loaded from hard disk storage.  
   
--   If an application uses the P2P collaboration infrastructure, collaboration information is available in the Contact Manager for that node.  
+- If an application uses the P2P collaboration infrastructure, collaboration information is available in the Contact Manager for that node.  
   
 ## Scaling Peer Name Resolution with a Multi-Level Cache  
  To keep the sizes of the PNRP caches small, peer nodes use a multi-level cache, in which each level contains a maximum number of entries. Each level in the cache represents a one tenth smaller portion of the PNRP ID number space (2<sup>256</sup>). The lowest level in the cache contains a locally registered PNRP ID and other PNRP IDs that are numerically close to it. As a level of the cache is filled with a maximum of 20 entries, a new lower level is created. The maximum number of levels in the cache is on the order of log10(Total number of PNRP IDs in the cloud). For example, for a global cloud with 100 million PNRP IDs, there are no more than 8 (=log10(100,000,000)) levels in the cache and a similar number of hops to resolve a PNRP ID during name resolution. This mechanism allows for a distributed hash table for which an arbitrary PNRP ID can be resolved by forwarding PNRP Request messages to the next-closest peer until the peer with the corresponding CPA is found.  
@@ -30,4 +30,5 @@ Peer Name Resolution Protocol (PNRP) caches are local collections of algorithmic
  Peers can register interest in receiving objects from other peers. When an object is updated, the collaboration application is notified and the new object is passed to all subscribers of the application. For example, a peer in a group chat application can register interest in receiving application information, which will send it all chat records as application data.  This allows it to monitor chat activity within the cloud.  
   
 ## See also
+
 - <xref:System.Net.PeerToPeer>

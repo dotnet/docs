@@ -27,4 +27,4 @@ Markup files that are created in [!INCLUDE[TLA#tla_visualstu](../../../../includ
  The following example shows how you can use special characters in text when creating markup.  
   
 ## Example  
- [!code-xaml[SpecialCharsSnippets#SpecialCharsSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SpecialCharsSnippets/CS/Window1.xaml#specialcharssnippet1)]
+ [!code-xaml[SpecialCharsSnippets#SpecialCharsSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpecialCharsSnippets/CS/Window1.xaml#specialcharssnippet1)]

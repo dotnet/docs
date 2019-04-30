@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<cookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
@@ -78,6 +78,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Services.CookieHandler>
 - <xref:System.IdentityModel.Services.ChunkedCookieHandler>
 - <xref:System.IdentityModel.Services.SessionAuthenticationModule>

@@ -22,7 +22,7 @@ The ADO.NET Data Platform is a multi-release strategy to decrease the amount of 
  Entity SQL is a text-based query language designed to interact with an Entity Data Model. Entity SQL is an SQL dialect that contains constructs for querying in terms of higher-level modeling concepts, such as inheritance, complex types, and explicit relationships. Developers can also use Entity SQL directly with Object Services. For more information, see [Entity SQL Language](../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md).  
   
 ### EntityClient  
- EntityClient is a new .NET Framework data provider used for interacting with an Entity Data Model. EntityClient follows the .NET Framework data provider pattern of exposing <xref:System.Data.EntityClient.EntityConnection> and <xref:System.Data.EntityClient.EntityCommand> objects that return an <xref:System.Data.EntityClient.EntityDataReader>. EntityClient works with the Entity SQL language, providing flexible mapping to storage-specific data providers. For more information, see [EntityClient and Entity SQL](https://msdn.microsoft.com/library/49202ab9-ac98-4b4b-a05c-140e422bf527).  
+ EntityClient is a new .NET Framework data provider used for interacting with an Entity Data Model. EntityClient follows the .NET Framework data provider pattern of exposing <xref:System.Data.EntityClient.EntityConnection> and <xref:System.Data.EntityClient.EntityCommand> objects that return an <xref:System.Data.EntityClient.EntityDataReader>. EntityClient works with the Entity SQL language, providing flexible mapping to storage-specific data providers. For more information, see [EntityClient Provider for the Entity Framework](./ef/entityclient-provider-for-the-entity-framework.md).  
   
 ### Entity Data Model Tools  
  The Entity Framework provides command-line tools, wizards, and designers to facilitate building EDM applications. The EntityDataSource control supports data binding scenarios based on the EDM. The programming surface of the EntityDataSource control is similar to other data source controls in Visual Studio. For more information, see [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)).  
@@ -34,6 +34,7 @@ The ADO.NET Data Platform is a multi-release strategy to decrease the amount of 
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] deploys data services on the Web or on an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md).  
   
 ## See also
+
 - [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
 - [What's New in ADO.NET](../../../../docs/framework/data/adonet/whats-new.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

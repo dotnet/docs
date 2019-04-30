@@ -13,11 +13,11 @@ Transport quotas are a policy mechanism for deciding when a connection is consum
 ## Types of Transport Quotas  
  WCF transports have three types of quotas:  
   
--   *Timeouts* mitigate denial of service attacks that rely on tying up resources for an extended period of time.  
+- *Timeouts* mitigate denial of service attacks that rely on tying up resources for an extended period of time.  
   
--   *Memory allocation limits* prevent a single connection from exhausting system memory and denying service to other connections.  
+- *Memory allocation limits* prevent a single connection from exhausting system memory and denying service to other connections.  
   
--   *Collection size limits* bound the consumption of resources that indirectly allocate memory or are in limited supply.  
+- *Collection size limits* bound the consumption of resources that indirectly allocate memory or are in limited supply.  
   
 ## Transport Quota Descriptions  
  This section describes the transport quotas available for the standard WCF transports: HTTP(S), TCP/IP, and named pipes. Custom transports can expose their own configurable quotas not included in this list. Consult the documentation for a custom transport to find out about its quotas.  
@@ -94,14 +94,15 @@ Transport quotas are a policy mechanism for deciding when a connection is consum
 |`ReceiveTimeout`|X|X|X|  
 |`SendTimeout`|X|X|X|  
   
-1.  The `MaxBufferSize` transport quota is only available on the `BasicHttp` binding. The `WSHttp` bindings are for scenarios that do not support streamed transport modes.  
+1. The `MaxBufferSize` transport quota is only available on the `BasicHttp` binding. The `WSHttp` bindings are for scenarios that do not support streamed transport modes.  
   
-2.  The transport quotas `MaxPendingConnections` and `MaxOutboundConnectionsPerEndpoint` are combined into a single transport quota called `MaxConnections`.  
+2. The transport quotas `MaxPendingConnections` and `MaxOutboundConnectionsPerEndpoint` are combined into a single transport quota called `MaxConnections`.  
   
 ### Controlling Transport Quotas from Configuration  
  Application configuration can set the same transport quotas as directly accessing properties on a binding. In configuration files, the name of a transport quota always starts with a lowercase letter. For example, the `CloseTimeout` property on a binding corresponds to the `closeTimeout` setting in configuration and the `MaxConnections` property on a binding corresponds to the `maxConnections` setting in configuration.  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TcpTransportBindingElement>

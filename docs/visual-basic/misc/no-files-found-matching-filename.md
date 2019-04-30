@@ -10,7 +10,8 @@ The file name is incorrect, or the file does not exist.
   
 ## To correct this error  
   
-1.  Ensure that the file name is correct.  
+1. Ensure that the file name is correct.  
   
 ## See also
+
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

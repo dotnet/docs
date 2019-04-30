@@ -5,7 +5,7 @@ author: erikdietrich
 ms.date: 09/20/2017
 ---
 
-# The history of C# #
+# The history of C\#
 
 This article provides a history of each major release of the C# language. The C# team is continuing to innovate and add new features. Detailed language feature status, including features considered for upcoming releases can be found [on the dotnet/roslyn repository](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md) on GitHub.
 
@@ -15,11 +15,11 @@ This article provides a history of each major release of the C# language. The C#
 The C# build tools consider the latest major language release the default language version. There may be point releases between major releases, detailed in other articles in this section. To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version. There have been three point releases since C# 7.0:
 
 * [C# 7.3](csharp-7-3.md):
-  - C# 7.3 is currently available in [Visual Studio 2017 version 15.7](https://visualstudio.microsoft.com/vs/whatsnew/), and in the [.NET Core 2.1 SDK 2.1.300 RC1](../../core/whats-new/index.md).
+  - C# 7.3 is available starting with [Visual Studio 2017 version 15.7](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) and [.NET Core 2.1 SDK](../../core/whats-new/dotnet-core-2-1.md).
 * [C# 7.2](csharp-7-2.md):
-  - C# 7.2 is currently available in [Visual Studio 2017 version 15.5](https://visualstudio.microsoft.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+  - C# 7.2 is available starting with [Visual Studio 2017 version 15.5](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link), and [.NET Core 2.0 SDK](../../core/whats-new/dotnet-core-2-0.md).
 * [C# 7.1](csharp-7-1.md):
-  - These features were added in [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/vs/whatsnew/), and in the [.NET Core 2.0 SDK](../../core/whats-new/index.md).
+  - C# 7.1 is available starting with [Visual Studio 2017 version 15.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) and [.NET Core 2.0 SDK](../../core/whats-new/dotnet-core-2-0.md).
 
 ## C# version 1.0
 
@@ -79,7 +79,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/query-expression-basics.md)
-- [Lambda expressions](../lambda-expressions.md)
+- [Lambda expressions](../programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [Expression trees](../expression-trees.md)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/keywords/var.md)

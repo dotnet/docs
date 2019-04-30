@@ -15,17 +15,18 @@ More memory was required than is available.
   
 ## To correct this error  
   
--   Close unnecessary applications, documents and source files.  
+- Close unnecessary applications, documents and source files.  
   
--   Eliminate unnecessary controls and forms so fewer are loaded at one time  
+- Eliminate unnecessary controls and forms so fewer are loaded at one time  
   
--   Reduce the number of `Public` variables.  
+- Reduce the number of `Public` variables.  
   
--   Check available disk space.  
+- Check available disk space.  
   
--   Increase the available RAM by installing additional memory or reallocating memory.  
+- Increase the available RAM by installing additional memory or reallocating memory.  
   
--   Make sure that memory is freed when it is no longer needed.  
+- Make sure that memory is freed when it is no longer needed.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

@@ -33,33 +33,33 @@ This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the EtwTrackingParticipantSample.sln solution file.
+1. Using Visual Studio 2010, open the EtwTrackingParticipantSample.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press F5.
+3. To run the solution, press F5.
 
      By default, the service is listening on port 53797 (http://localhost:53797/SampleWorkflowService.xamlx).
 
-4.  Using [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], open the WCF test client.
+4. Using [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], open the WCF test client.
 
      The WCF test client (WcfTestClient.exe) is located in the \<Visual Studio 2010 installation folder>\Common7\IDE\ folder.
 
      The default Visual Studio 2010 installation folder is C:\Program Files\Microsoft Visual Studio 10.0.
 
-5.  In WCF test client, select **Add Service** from the **File** menu.
+5. In WCF test client, select **Add Service** from the **File** menu.
 
      Add the endpoint address in the input box. The default is `http://localhost:53797/SampleWorkflowService.xamlx`.
 
-6.  Open the Event Viewer application.
+6. Open the Event Viewer application.
 
      Before invoking the service, start Event Viewer from the **Start** menu, select **Run** and type in `eventvwr.exe`. Ensure that the event log is listening for tracking events emitted from the workflow service.
 
-7.  In the tree view of the Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, and **Microsoft**. Right-click **Microsoft** and select **View** and then **Show Analytic and Debug Logs** to enable the analytic and debug logs
+7. In the tree view of the Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, and **Microsoft**. Right-click **Microsoft** and select **View** and then **Show Analytic and Debug Logs** to enable the analytic and debug logs
 
      Ensure that the **Show Analytic and Debug Logs** option is checked.
 
-8.  In the tree view in Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Right-click **Analytic** and select **Enable Log** to enable the **Analytic** log.
+8. In the tree view in Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Right-click **Analytic** and select **Enable Log** to enable the **Analytic** log.
 
 9. Test the service using the WCF test client by double-clicking `GetData`.
 
@@ -117,13 +117,13 @@ This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking
 
 #### To clean up (Optional)
 
-1.  Open Event Viewer.
+1. Open Event Viewer.
 
-2.  Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Right-click **Analytic** and select **Disable Log**.
+2. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Right-click **Analytic** and select **Disable Log**.
 
-3.  Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Right-click **Analytic** and select **Clear Log**.
+3. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, **Application Server-Applications**. Right-click **Analytic** and select **Clear Log**.
 
-4.  Choose the **Clear** option to clear the events.
+4. Choose the **Clear** option to clear the events.
 
 ## Known Issue
 
@@ -144,4 +144,5 @@ This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\EtwTracking`  
   
 ## See also
+
 - [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

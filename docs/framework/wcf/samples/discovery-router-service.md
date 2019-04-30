@@ -16,13 +16,13 @@ This sample demonstrates how to forward discovery messages to another endpoint.
   
 #### To set up, build, and run the sample  
   
-1.  Build the sample.  
+1. Build the sample.  
   
-2.  Run the DiscoveryRouter executable.  
+2. Run the DiscoveryRouter executable.  
   
-3.  Run the service executable from the build directory.  
+3. Run the service executable from the build directory.  
   
-4.  Run the client executable. Note that the client locates the service.  
+4. Run the client executable. Note that the client locates the service.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

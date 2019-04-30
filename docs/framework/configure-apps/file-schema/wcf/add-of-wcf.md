@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<add> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: c196f6d7-77f6-4266-973c-305b2b4dd8a2
@@ -83,6 +83,7 @@ Configure a tracking participant that listens to the tracking records being emit
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>

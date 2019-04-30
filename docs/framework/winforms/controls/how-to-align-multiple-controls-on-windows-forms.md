@@ -16,19 +16,20 @@ To standardize the layout of the user interface (UI) of your Windows-based appli
   
 ### To align multiple controls on a form  
   
-1.  Open the form containing the controls you want to position in the **Windows Forms Designer**.  
+1. Open the form containing the controls you want to position in the **Windows Forms Designer**.  
   
-2.  Select the controls you want to align so that the first control you select is the primary control to which the others should be aligned.  
+2. Select the controls you want to align so that the first control you select is the primary control to which the others should be aligned.  
   
-3.  On the **Format** menu, point to **Align**, and then click one of the seven choices available.  
+3. On the **Format** menu, point to **Align**, and then click one of the seven choices available.  
   
 ## See also
-- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)
-- [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)
-- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
-- [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
-- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
-- [How to: Reassign Existing Controls to a Different Parent](../../../../docs/framework/winforms/controls/how-to-reassign-existing-controls-to-a-different-parent.md)
+
+- [Windows Forms Controls](index.md)
+- [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
+- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
+- [Windows Forms Controls by Function](windows-forms-controls-by-function.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
+- [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
+- [How to: Reassign Existing Controls to a Different Parent](how-to-reassign-existing-controls-to-a-different-parent.md)

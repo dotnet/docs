@@ -1,0 +1,724 @@
+- name: WCF Configuration Schema
+  href: index.md
+  items:
+  - name: <system.serviceModel>
+    href: system-servicemodel.md
+    items:
+    - name: <behaviors>
+      href: behaviors.md
+      items:
+      - name: <endpointBehaviors>
+        href: endpointbehaviors.md
+        items:
+        - name: <behavior>
+          href: behavior-of-endpointbehaviors.md
+          items:
+          - name: <clientCredentials>
+            href: clientcredentials.md
+            items:
+            - name: <clientCertificate>
+              href: clientcertificate-of-clientcredentials-element.md
+            - name: <httpDigest>
+              href: httpdigest-element.md
+            - name: <issuedToken>
+              href: issuedtoken.md
+              items:
+              - name: <issuerChannelBehaviors>
+                href: issuerchannelbehaviors-element.md
+                items:
+                - name: <add>
+                  href: add-of-issuerchannelbehaviors.md
+              - name: <localIssuer>
+                href: localissuer.md
+                items:
+                - name: <headers>
+                  href: headers-element.md
+            - name: <peer>
+              href: peer-of-clientcredentials-element.md
+              items:
+              - name: <certificate>
+                href: certificate-element.md
+              - name: <messageSenderAuthentication>
+                href: messagesenderauthentication-element.md
+              - name: <peerAuthentication>
+                href: peerauthentication-element.md
+            - name: <serviceCertificate>
+              href: servicecertificate-of-clientcredentials-element.md
+              items:
+              - name: <authentication>
+                href: authentication-of-servicecertificate-element.md
+              - name: <defaultCertificate>
+                href: defaultcertificate-element.md
+              - name: <scopedCertificates>
+                href: scopedcertificates-element.md
+                items:
+                - name: <add>
+                  href: add-of-scopedcertificates-element.md
+            - name: <windows>
+              href: windows-of-clientcredentials-element.md
+          - name: <callbackDebug>
+            href: callbackdebug.md
+          - name: <callbackTimeouts>
+            href: callbacktimeouts.md
+          - name: <clientVia>
+            href: clientvia.md
+          - name: <dataContractSerializer>
+            href: datacontractserializer.md
+          - name: <dispatcherSynchronization>
+            href: dispatchersynchronization.md
+          - name: <enableWebScript>
+            href: enablewebscript.md
+          - name: <endpointDiscovery>
+            href: endpointdiscovery.md
+            items:
+            - name: <scopes>
+              href: scopes.md
+              items:
+              - name: <add>
+                href: add-of-scopes.md
+            - name: <extensions>
+              href: extensions.md
+          - name: <soapProcessing>
+            href: soapprocessing.md
+          - name: <synchronousReceive>
+            href: synchronousreceive-element.md
+          - name: <transactedBatching>
+            href: transactedbatching.md
+          - name: <webHttp>
+            href: webhttp.md
+      - name: <serviceBehaviors>
+        href: servicebehaviors.md
+        items:
+        - name: <behavior>
+          href: behavior-of-servicebehaviors.md
+          items:
+          - name: <dataContractSerializer>
+            href: datacontractserializer-element.md
+          - name: <persistenceProvider>
+            href: persistenceprovider.md
+          - name: <routing>
+            href: routing-of-servicebehavior.md
+          - name: <serviceAuthenticationManager>
+            href: serviceauthenticationmanager.md
+          - name: <serviceAuthorization>
+            href: serviceauthorization-element.md
+            items:
+            - name: <authorizationPolicies>
+              href: authorizationpolicies.md
+              items:
+              - name: <add>
+                href: add-of-authorizationpolicies.md
+          - name: <serviceCredentials>
+            href: servicecredentials.md
+            items:
+            - name: <clientCertificate>
+              href: clientcertificate-of-servicecredentials.md
+              items:
+              - name: <authentication>
+                href: authentication-of-clientcertificate-element.md
+              - name: <certificate>
+                href: certificate-of-clientcertificate-element.md
+            - name: <issuedTokenAuthentication>
+              href: issuedtokenauthentication-of-servicecredentials.md
+              items:
+              - name: <allowedAudienceUris>
+                href: allowedaudienceuris.md
+                items:
+                - name: <add>
+                  href: add-of-allowedaudienceuris.md
+              - name: <knownCertificates>
+                href: knowncertificates.md
+                items:
+                - name: <add>
+                  href: add-of-knowncertificates.md
+            - name: <peer>
+              href: peer-of-servicecredentials.md
+              items:
+              - name: <certificate>
+                href: certificate-of-peer.md
+              - name: <messageSenderAuthentication>
+                href: messagesenderauthentication.md
+              - name: <peerAuthentication>
+                href: peerauthentication.md
+            - name: <serviceCertificate>
+              href: servicecertificate-of-servicecredentials.md
+            - name: <secureConversationAuthentication>
+              href: secureconversationauthentication-of-servicecredential.md
+            - name: <userNameAuthentication>
+              href: usernameauthentication.md
+            - name: <windowsAuthentication>
+              href: windowsauthentication-of-servicecredentials.md
+          - name: <serviceDebug>
+            href: servicedebug.md
+          - name: <serviceDiscovery>
+            href: servicediscovery.md
+          - name: <serviceMetadata>
+            href: servicemetadata.md
+          - name: <serviceSecurityAudit>
+            href: servicesecurityaudit.md
+          - name: <serviceThrottling>
+            href: servicethrottling.md
+          - name: <serviceTimeouts>
+            href: servicetimeouts.md
+          - name: <workflowRuntime>
+            href: workflowruntime.md
+            items:
+            - name: <commonParameters>
+              href: commonparameters.md
+              items:
+              - name: <add>
+                href: add-of-commonparameters.md
+            - name: <services>
+              href: services-of-workflowruntime.md
+              items:
+              - name: <add>
+                href: add-of-services.md
+          - name: <useRequestHeadersForMetadataAddress>
+            href: userequestheadersformetadataaddress.md
+            items:
+            - name: <defaultPorts>
+              href: defaultports.md
+              items:
+              - name: <add> of <defaultPorts>
+                href: add-of-defaultports.md
+    - name: <bindings>
+      href: bindings.md
+      items:
+      - name: <basicHttpBinding>
+        href: basichttpbinding.md
+        items:
+        - name: <security>
+          href: security-of-basichttpbinding.md
+          items:
+          - name: <message>
+            href: message-of-basichttpbinding.md
+          - name: <transport>
+            href: transport-of-basichttpbinding.md
+      - name: <basicHttpContextBinding>
+        href: basichttpcontextbinding.md
+      - name: <mexHttpBinding>
+        href: mexhttpbinding.md
+      - name: <mexHttpsBinding>
+        href: mexhttpsbinding.md
+      - name: <mexNamedPipeBinding>
+        href: mexnamedpipebinding.md
+      - name: <mexTcpBinding>
+        href: mextcpbinding.md
+      - name: <msmqIntegrationBinding>
+        href: msmqintegrationbinding.md
+        items:
+        - name: <security>
+          href: security-of-msmqintegrationbinding.md
+          items:
+          - name: <transport>
+            href: transport-of-msmqintegrationbinding.md
+      - name: <netMsmqBinding>
+        href: netmsmqbinding.md
+        items:
+        - name: <security>
+          href: security-of-netmsmqbinding.md
+          items:
+          - name: <message>
+            href: message-of-netmsmqbinding.md
+          - name: <transport>
+            href: transport-of-netmsmqbinding.md
+      - name: <netNamedPipeBinding>
+        href: netnamedpipebinding.md
+        items:
+        - name: <security>
+          href: security-of-netnamedpipebinding.md
+          items:
+          - name: <transport>
+            href: transport-of-netnamedpipebinding.md
+      - name: <netPeerTcpBinding>
+        href: netpeertcpbinding.md
+        items:
+        - name: <resolver>
+          href: resolver.md
+          items:
+          - name: <custom>
+            href: custom.md
+        - name: <security>
+          href: security-of-netpeerbinding.md
+          items:
+          - name: <transport>
+            href: transport-of-netpeertcpbinding.md
+      - name: <netTcpBinding>
+        href: nettcpbinding.md
+        items:
+        - name: <security>
+          href: security-of-nettcpbinding.md
+          items:
+          - name: <transport>
+            href: transport-of-nettcpbinding.md
+          - name: <message>
+            href: message-element-of-nettcpbinding.md
+      - name: <netTcpContextBinding>
+        href: nettcpcontextbinding.md
+      - name: <webHttpBinding>
+        href: webhttpbinding.md
+        items:
+        - name: <security>
+          href: security-of-webhttpbinding.md
+          items:
+          - name: <transport>
+            href: transport-of-webhttpbinding.md
+      - name: <wsDualHttpBinding>
+        href: wsdualhttpbinding.md
+        items:
+        - name: <security>
+          href: security-of-wsdualhttpbinding.md
+          items:
+          - name: <message>
+            href: message-of-wsdualhttpbinding.md
+      - name: <wsFederationHttpBinding>
+        href: wsfederationhttpbinding.md
+        items:
+        - name: <security>
+          href: security-of-wsfederationhttpbinding.md
+          items:
+          - name: <message>
+            href: message-element-of-wsfederationhttpbinding.md
+            items:
+            - name: <claimTypeRequirements>
+              href: claimtyperequirements-for-message.md
+              items:
+              - name: <add>
+                href: add-of-claimtyperequirements-element.md
+              - name: <remove>
+                href: remove-of-claimtyperequirements-element.md
+              - name: <clear>
+                href: clear-of-claimtyperequirements-element.md
+            - name: <issuer>
+              href: issuer.md
+            - name: <issuerMetadata>
+              href: issuermetadata.md
+            - name: <tokenRequestParameters>
+              href: tokenrequestparameters.md
+              items:
+              - name: <xmlElement>
+                href: xmlelement.md
+      - name: <wsHttpBinding>
+        href: wshttpbinding.md
+        items:
+        - name: <security>
+          href: security-of-wshttpbinding.md
+          items:
+          - name: <message>
+            href: message-of-wshttpbinding.md
+          - name: <transport>
+            href: transport-of-wshttpbinding.md
+      - name: <wsHttpContextBinding>
+        href: wshttpcontextbinding.md
+      - name: <ws2007FederationHttpBinding>
+        href: ws2007federationhttpbinding.md
+        items:
+        - name: <security>
+          href: security-element-of-ws2007federationhttpbinding.md
+          items:
+          - name: <message>
+            href: message-element-of-ws2007federationhttpbinding.md
+      - name: <ws2007HttpBinding>
+        href: ws2007httpbinding.md
+        items:
+        - name: <security>
+          href: security-of-ws2007httpbinding.md
+          items:
+          - name: <message>
+            href: message-of-ws2007httpbinding.md
+          - name: <transport>
+            href: transport-of-ws2007httpbinding.md
+      - name: <customBinding>
+        href: custombinding.md
+        items:
+        - name: <compositeDuplex>
+          href: compositeduplex.md
+        - name: <discoveryClient>
+          href: discoveryclient.md
+        - name: Message Encoding
+          href: message-encoding.md
+          items:
+          - name: <binaryMessageEncoding>
+            href: binarymessageencoding.md
+          - name: <mtomMessageEncoding>
+            href: mtommessageencoding.md
+          - name: <textMessageEncoding>
+            href: textmessageencoding.md
+          - name: <webMessageEncoding>
+            href: webmessageencoding.md
+          - name: <byteStreamMessageEncoding>
+            href: bytestreammessageencoding.md
+        - name: <oneWay>
+          href: oneway.md
+          items:
+          - name: <channelPoolSettings>
+            href: channelpoolsettings.md
+        - name: <pnrpPeerResolver>
+          href: pnrppeerresolver.md
+        - name: <privacyNoticeAt>
+          href: privacynoticeat.md
+        - name: <reliableSession>
+          href: reliablesession.md
+        - name: <security>
+          href: security-of-custombinding.md
+          items:
+          - name: <issuedTokenParameters>
+            href: issuedtokenparameters.md
+            items:
+            - name: <additionalRequestParameters>
+              href: additionalrequestparameters-element.md
+            - name: <claimTypeRequirements>
+              href: claimtyperequirements-element.md
+              items:
+              - name: <add>
+                href: add-of-claimtyperequirements.md
+            - name: <issuer>
+              href: issuer-of-issuedtokenparameters.md
+            - name: <issuerMetadata>
+              href: issuermetadata-of-issuedtokenparameters.md
+          - name: <localClientSettings>
+            href: localclientsettings-element.md
+          - name: <localServiceSettings>
+            href: localservicesettings-element.md
+          - name: <secureConversationBootstrap>
+            href: secureconversationbootstrap.md
+        - name: <sslStreamSecurity>
+          href: sslstreamsecurity.md
+        - name: <transactionFlow>
+          href: transactionflow.md
+        - name: Transports
+          href: transports.md
+          items:
+          - name: <httpTransport>
+            href: httptransport.md
+          - name: <httpsTransport>
+            href: httpstransport.md
+          - name: <msmqIntegration>
+            href: msmqintegration.md
+            items:
+            - name: <msmqTransportSecurity>
+              href: msmqtransportsecurity.md
+          - name: <msmqTransport>
+            href: msmqtransport.md
+          - name: <namedPipeTransport>
+            href: namedpipetransport.md
+            items:
+            - name: <connectionPoolSettings> of <namedPipeTransport>
+              href: connectionpoolsettings.md
+          - name: <peerTransport>
+            href: peertransport.md
+            items:
+            - name: <security>
+              href: security-of-peertransport.md
+              items:
+              - name: <transport>
+                href: transport-of-peertransport.md
+          - name: <tcpTransport>
+            href: tcptransport.md
+            items:
+            - name: <connectionPoolSettings>
+              href: connectionpoolsettings-of-tcptransport.md
+        - name: <unrecognizedPolicyAssertion>
+          href: unrecognizedpolicyassertion.md
+        - name: <useManagedPresentation>
+          href: usemanagedpresentation.md
+        - name: <windowsStreamSecurity>
+          href: windowsstreamsecurity.md
+      - name: <netHttpBinding>
+        href: nethttpbinding.md
+        items:
+        - name: <security>
+          href: security-of-nethttpbinding.md
+          items:
+          - name: <message>
+            href: message-of-nethttpbinding.md
+          - name: <transport>
+            href: transport-of-nethttpbinding.md
+        - name: <webSocketSettings>
+          href: websocketsettings.md
+      - name: <netHttpsBinding>
+        href: nethttpsbinding.md
+      - name: <udpBinding>
+        href: udpbinding.md
+    - name: <client>
+      href: client.md
+      items:
+      - name: <endpoint>
+        href: endpoint-of-client.md
+        items:
+        - name: <headers>
+          href: headers.md
+        - name: <identity>
+          href: identity.md
+          items:
+          - name: <certificate>
+            href: certificate-for-identity.md
+          - name: <certificateReference>
+            href: certificatereference-for-identity.md
+          - name: <dns>
+            href: dns.md
+          - name: <rsa>
+            href: rsa.md
+          - name: <servicePrincipalName>
+            href: serviceprincipalname.md
+          - name: <userPrincipalName>
+            href: userprincipalname.md
+      - name: <metadata>
+        href: metadata.md
+        items:
+        - name: <wsdlImporters>
+          href: wsdlimporters.md
+          items:
+          - name: <wsdlImporter>
+            href: wsdlimporter.md
+        - name: <policyImporters>
+          href: policyimporters.md
+          items:
+          - name: <policyImporter>
+            href: policyimporter.md
+    - name: <comContracts>
+      href: comcontracts.md
+      items:
+      - name: <comContract>
+        href: comcontract.md
+        items:
+        - name: <exposedMethods>
+          href: exposedmethods.md
+          items:
+          - name: <exposedMethod>
+            href: exposedmethod.md
+        - name: <persistableTypes>
+          href: persistabletypes.md
+          items:
+          - name: <persistableType>
+            href: persistabletype.md
+        - name: <userDefinedTypes>
+          href: userdefinedtypes.md
+          items:
+          - name: <userDefinedType>
+            href: userdefinedtype.md
+    - name: <commonBehaviors>
+      href: commonbehaviors.md
+    - name: <diagnostics>
+      href: diagnostics.md
+      items:
+      - name: <endToEndTracing>
+        href: endtoendtracing.md
+      - name: <messageLogging>
+        href: messagelogging.md
+        items:
+        - name: <filters>
+          href: filters.md
+          items:
+          - name: <add>
+            href: add-of-filters.md
+    - name: <extensions>
+      href: extensions-section.md
+      items:
+      - name: <behaviorExtensions>
+        href: behaviorextensions.md
+      - name: <bindingElementExtensions>
+        href: bindingelementextensions.md
+      - name: <bindingExtensions>
+        href: bindingextensions.md
+      - name: <endpointExtensions>
+        href: endpointextensions.md
+    - name: <protocolMapping>
+      href: protocolmapping.md
+      items:
+      - name: <add>
+        href: add-of-protocolmapping.md
+    - name: <routing>
+      href: routing.md
+      items:
+      - name: <backupLists>
+        href: backuplists.md
+        items:
+        - name: <backupList>
+          href: backuplist.md
+          items:
+          - name: <add>
+            href: add-of-backuplist.md
+      - name: <filters>
+        href: filters-of-routing.md
+        items:
+        - name: <filter>
+          href: filter.md
+      - name: <filterTables>
+        href: filtertables.md
+        items:
+        - name: <filterTable>
+          href: filtertable.md
+          items:
+          - name: <entries>
+            href: entries.md
+            items:
+            - name: <add>
+              href: add-of-entries.md
+      - name: <namespaceTable>
+        href: namespacetable.md
+        items:
+        - name: <add> of <namespaceTable>
+          href: add-of-namespacetable.md
+    - name: <serviceHostingEnvironment>
+      href: servicehostingenvironment.md
+      items:
+      - name: <baseAddressPrefixFilters>
+        href: baseaddressprefixfilters.md
+        items:
+        - name: <add>
+          href: add-of-baseaddressprefixfilter.md
+      - name: <serviceActivations>
+        href: serviceactivations.md
+        items:
+        - name: <add>
+          href: add-of-serviceactivations.md
+      - name: <transportConfigurationTypes>
+        href: transportconfigurationtypes.md
+        items:
+        - name: <add>
+          href: add-of-transportconfigurationtype.md
+    - name: <services>
+      href: services.md
+      items:
+      - name: <service>
+        href: service.md
+        items:
+        - name: <host>
+          href: host.md
+          items:
+          - name: <baseAddresses>
+            href: baseaddresses.md
+            items:
+            - name: <add>
+              href: add-of-baseaddresses.md
+          - name: <timeOuts>
+            href: timeouts.md
+        - name: <endpoint>
+          href: endpoint-element.md
+    - name: <standardEndpoints>
+      href: standardendpoints.md
+      items:
+      - name: <announcementEndpoint>
+        href: announcementendpoint.md
+      - name: <discoveryEndpoint>
+        href: discoveryendpoint.md
+      - name: <dynamicEndpoint>
+        href: dynamicendpoint.md
+        items:
+        - name: <discoveryClientSettings>
+          href: discoveryclientsettings.md
+          items:
+          - name: <findCriteria>
+            href: findcriteria.md
+            items:
+            - name: <contractTypeNames>
+              href: contracttypenames.md
+              items:
+              - name: <add>
+                href: add-of-contracttypenames.md
+      - name: <mexEndpoint>
+        href: mexendpoint.md
+      - name: <udpAnnouncementEndpoint>
+        href: udpannouncementendpoint.md
+        items:
+        - name: <udpTransportSettings>
+          href: udptransportsettings-of-udpannouncementendpoint.md
+      - name: <udpDiscoveryEndpoint>
+        href: udpdiscoveryendpoint.md
+        items:
+        - name: <udpTransportSettings>
+          href: udptransportsettings.md
+      - name: <webHttpEndpoint>
+        href: webhttpendpoint.md
+      - name: <webScriptEndpoint>
+        href: webscriptendpoint.md
+      - name: <workflowControlEndpoint>
+        href: workflowcontrolendpoint.md
+    - name: <tracking>
+      href: tracking-of-wcf.md
+      items:
+      - name: <participants>
+        href: participants-of-wcf.md
+        items:
+        - name: <add>
+          href: add-of-wcf.md
+      - name: <trackingProfile>
+        href: trackingprofile-of-wcf.md
+        items:
+        - name: <workflow>
+          href: workflow-of-wcf.md
+          items:
+          - name: <activityScheduledQueries>
+            href: activityscheduledqueries-of-wcf.md
+            items:
+            - name: <activityScheduledQuery>
+              href: activityscheduledquery-of-wcf.md
+          - name: <activityStateQueries>
+            href: activitystatequeries-of-wcf.md
+            items:
+            - name: <activityStateQuery>
+              href: activitystatequery-of-wcf.md
+          - name: <bookmarkResumptionQueries>
+            href: bookmarkresumptionqueries-of-wcf.md
+            items:
+            - name: <bookmarkResumptionQuery>
+              href: bookmarkresumptionquery-of-wcf.md
+          - name: <cancelRequestedQueries>
+            href: cancelrequestedqueries-of-wcf.md
+            items:
+            - name: <cancelRequestedQuery>
+              href: cancelrequestedquery-of-wcf.md
+          - name: <customTrackingQueries>
+            href: customtrackingqueries-of-wcf.md
+            items:
+            - name: <customTrackingQuery>
+              href: customtrackingquery-of-wcf.md
+          - name: <faultPropagationQueries>
+            href: faultpropagationqueries-of-wcf.md
+            items:
+            - name: <faultPropagationQuery>
+              href: faultpropagationquery-of-wcf.md
+          - name: <workflowInstanceQueries>
+            href: workflowinstancequeries-of-wcf.md
+            items:
+            - name: <workflowInstanceQuery>
+              href: workflowinstancequery-of-wcf.md
+              items:
+              - name: <states>
+                href: states-of-wcf-workflowinstancequery.md
+                items:
+                - name: <state>
+                  href: state-of-wcf-workflowinstancequery.md
+  - name: <system.serviceModel.activation>
+    href: system-servicemodel-activation.md
+    items:
+    - name: <diagnostics>
+      href: diagnostics-for-activation.md
+    - name: <net.pipe>
+      href: net-pipe.md
+      items:
+      - name: <allowAccounts>
+        href: allowaccounts.md
+        items:
+        - name: <add>
+          href: add-of-allowaccounts.md
+    - name: <net.tcp>
+      href: net-tcp.md
+  - name: <system.runtime.serialization>
+    href: system-runtime-serialization.md
+    items:
+    - name: <dataContractSerializer>
+      href: datacontractserializer-of-system-runtime-serialization.md
+      items:
+      - name: <declaredTypes>
+        href: declaredtypes.md
+        items:
+        - name: <add>
+          href: add-of-declaredtypes-element.md
+          items:
+          - name: <knownType>
+            href: knowntype.md
+            items:
+            - name: <parameter>
+              href: parameter.md

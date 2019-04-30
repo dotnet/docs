@@ -31,19 +31,19 @@ HRESULT DefineTypeRefByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkResolutionScope`  
  [in] The token specifying the resolution scope. The following token types are valid:  
   
--   `mdModuleRef`, if the type is defined in the same assembly in which the caller is defined.  
+- `mdModuleRef`, if the type is defined in the same assembly in which the caller is defined.  
   
--   `mdAssemblyRef`, if the type is defined in an assembly other than the one in which the caller is defined.  
+- `mdAssemblyRef`, if the type is defined in an assembly other than the one in which the caller is defined.  
   
--   `mdTypeRef`, if the type is a nested type.  
+- `mdTypeRef`, if the type is a nested type.  
   
--   `mdModule`, if the type is defined in the same module in which the caller is defined.  
+- `mdModule`, if the type is defined in the same module in which the caller is defined.  
   
--   Null, if the type is defined globally.  
+- Null, if the type is defined globally.  
   
  `szName`  
  [in] The name of the target type in Unicode.  
@@ -61,5 +61,6 @@ HRESULT DefineTypeRefByName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

@@ -32,7 +32,7 @@ HRESULT CreateICeeFileGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ceeFileGen`  
  [out] A pointer to the address of a new `ICeeFileGen` object.  
   
@@ -54,4 +54,5 @@ HRESULT CreateICeeFileGen (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

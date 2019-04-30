@@ -17,7 +17,7 @@ The topics in this section describe how to apply visual effects to bitmap images
 >  In the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] or later, the <xref:System.Windows.Media.Effects.BitmapEffect> class is obsolete. If you try to use the <xref:System.Windows.Media.Effects.BitmapEffect> class, you will get an obsolete exception. The non-obsolete alternative to the <xref:System.Windows.Media.Effects.BitmapEffect> class is the <xref:System.Windows.Media.Effects.Effect> class. In most situations, the <xref:System.Windows.Media.Effects.Effect> class is significantly faster.  
   
 ## In This Section  
- [Bitmap Effects Overview](../../../../docs/framework/wpf/graphics-multimedia/bitmap-effects-overview.md)  
+ [Bitmap Effects Overview](bitmap-effects-overview.md)  
   
 ## Reference  
  <xref:System.Windows.Media.Effects.BitmapEffect>  
@@ -25,6 +25,6 @@ The topics in this section describe how to apply visual effects to bitmap images
  <xref:System.Windows.Media.Effects>  
   
 ## Related Sections  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
+ [Graphics and Multimedia](index.md)  
   
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+ [Imaging Overview](imaging-overview.md)

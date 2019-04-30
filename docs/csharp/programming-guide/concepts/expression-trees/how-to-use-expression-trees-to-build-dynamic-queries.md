@@ -94,13 +94,13 @@ foreach (string company in results)
   
 ## Compiling the Code  
   
--   Create a new **Console Application** project.  
+- Create a new **Console Application** project.  
   
--   Add a reference to System.Core.dll if it is not already referenced.  
+- Add a reference to System.Core.dll if it is not already referenced.  
   
--   Include the System.Linq.Expressions namespace.  
+- Include the System.Linq.Expressions namespace.  
   
--   Copy the code from the example and paste it into the `Main` method.  
+- Copy the code from the example and paste it into the `Main` method.  
   
 ## See also
 

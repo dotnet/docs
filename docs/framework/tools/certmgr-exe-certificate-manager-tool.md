@@ -38,7 +38,7 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 [/s[/r registryLocation]] [destinationStorename]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -69,13 +69,13 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 ## Remarks  
  Certmgr.exe performs the following basic functions:  
   
--   Displays certificates, CTLs, and CRLs to the console.  
+- Displays certificates, CTLs, and CRLs to the console.  
   
--   Adds certificates, CTLs, and CRLs to a certificate store.  
+- Adds certificates, CTLs, and CRLs to a certificate store.  
   
--   Deletes certificates, CTLs, and CRLs from a certificate store.  
+- Deletes certificates, CTLs, and CRLs from a certificate store.  
   
--   Saves an X.509 certificate, CTL, or CRL from a certificate store to a file.  
+- Saves an X.509 certificate, CTL, or CRL from a certificate store to a file.  
   
  Certmgr.exe works with two types of certificate stores: **StoreFile** and system store. It is not necessary to specify the type of certificate store; Certmgr.exe can identify the store type and perform the appropriate operations.  
   
@@ -132,6 +132,7 @@ certmgr /put /c /s my newFile
 ```  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

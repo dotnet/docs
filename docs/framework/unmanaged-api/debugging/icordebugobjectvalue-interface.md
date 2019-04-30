@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue Interface1"
+title: "ICorDebugObjectValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugObjectValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugObjectValue Interface1
+# ICorDebugObjectValue Interface
+
 A subclass of "ICorDebugValue" that represents a value that contains an object.  
   
 ## Methods  
@@ -48,5 +49,5 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

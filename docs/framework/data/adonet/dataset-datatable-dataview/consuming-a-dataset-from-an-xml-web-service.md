@@ -16,7 +16,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
   
 ### To create an XML Web service that returns and consumes a DataSet  
   
-1.  Create the XML Web service.  
+1. Create the XML Web service.  
   
      In the example, an XML Web service is created that returns data, in this case a list of customers from the **Northwind** database, and receives a **DataSet** with updates to the data, which the XML Web service resolves back to the original data source.  
   
@@ -153,7 +153,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
   
      In a typical scenario, the **UpdateCustomers** method would be written to catch optimistic concurrency violations. For simplicity, the example does not include this. For more information about optimistic concurrency, see [Optimistic Concurrency](../../../../../docs/framework/data/adonet/optimistic-concurrency.md).  
   
-2.  Create an XML Web service proxy.  
+2. Create an XML Web service proxy.  
   
      Clients of the XML Web service require a SOAP proxy in order to consume the exposed methods. You can have Visual Studio generate this proxy for you. By setting a Web reference to an existing Web service from within Visual Studio, all the behavior described in this step occurs transparently. If you want to create the proxy class yourself, continue with this discussion. In most circumstances, however, using Visual Studio to create the proxy class for the client application is sufficient.  
   
@@ -181,7 +181,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     csc -t:library -out:sample.dll sample.cs -r:System.dll -r:System.Web.Services.dll -r:System.Data.dll -r:System.Xml.dll  
     ```  
   
-3.  Create an XML Web service client.  
+3. Create an XML Web service client.  
   
      If you want to have Visual Studio generate the Web service proxy class for you, simply create the client project, and, in the Solution Explorer window, right-click the project, click **Add Web Reference**, and select the Web service from the list of available Web services (this may require supplying the address of the Web service endpoint, if the Web service isn't available within the current solution, or on the current computer.) If you create the XML Web service proxy yourself (as described in the previous step), you can import it into your client code and consume the XML Web service methods. The following sample code imports the proxy library, calls **GetCustomers** to get a list of customers, adds a new customer, and then returns a **DataSet** with the updates to **UpdateCustomers**.  
   
@@ -254,6 +254,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     ```  
   
 ## See also
+
 - [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
 - [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
 - [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)

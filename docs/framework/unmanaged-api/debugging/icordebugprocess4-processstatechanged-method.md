@@ -28,11 +28,10 @@ HRESULT ProcessStateChanged(
 );
 ```
 
-#### Parameters
+## Parameters
 
- `eChange`
-
- [in] A member of the [CorDebugStateChange enumeration](cordebugstatechange-enumeration.md) describing a change in the process's execution state.
+ `eChange`\
+[in] A member of the [CorDebugStateChange enumeration](cordebugstatechange-enumeration.md) describing a change in the process's execution state.
 
 ## Remarks
 

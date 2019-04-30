@@ -14,33 +14,34 @@ In peer-to-peer environments, peers use specific name resolution systems to reso
   
 The Peer Name Resolution Protocol demonstrates the following properties:  
   
--   Distributed and almost entirely serverless. Servers are only required for the bootstrapping process.  
+- Distributed and almost entirely serverless. Servers are only required for the bootstrapping process.  
   
--   Secure name publication without the involvement of third parties. Unlike DNS name publication, PNRP name publication is instantaneous and without financial cost.  
+- Secure name publication without the involvement of third parties. Unlike DNS name publication, PNRP name publication is instantaneous and without financial cost.  
   
--   PNRP updates in real-time, which prevents the resolution of stale addresses.  
+- PNRP updates in real-time, which prevents the resolution of stale addresses.  
   
--   The resolution of names via PNRP extends beyond computers by also allowing name resolution for services.  
+- The resolution of names via PNRP extends beyond computers by also allowing name resolution for services.  
   
 ## The System.Net.PeerToPeer namespace  
   
--   PNRP functionality is defined by the <xref:System.Net.PeerToPeer> namespace within the .NET Framework version 3.5. It provides a set of types that can be used to register and resolve peer names with an available PNRP service.  
+- PNRP functionality is defined by the <xref:System.Net.PeerToPeer> namespace within the .NET Framework version 3.5. It provides a set of types that can be used to register and resolve peer names with an available PNRP service.  
   
--   (PNRP and custom peer resolvers can be created and instantiated using the types provided in the <xref:System.ServiceModel.PeerResolvers> namespace.)  
+- (PNRP and custom peer resolvers can be created and instantiated using the types provided in the <xref:System.ServiceModel.PeerResolvers> namespace.)  
   
--   The basic types used to register and resolve names with an available PNRP service are as follows:  
+- The basic types used to register and resolve names with an available PNRP service are as follows:  
   
--   <xref:System.Net.PeerToPeer.Cloud>: Defines the information describing an available PNRP cloud, including its scope.  
+- <xref:System.Net.PeerToPeer.Cloud>: Defines the information describing an available PNRP cloud, including its scope.  
   
--   <xref:System.Net.PeerToPeer.PeerName>: Defines a peer name that can be used to register and subsequently resolve a peer within a cloud.  
+- <xref:System.Net.PeerToPeer.PeerName>: Defines a peer name that can be used to register and subsequently resolve a peer within a cloud.  
   
--   <xref:System.Net.PeerToPeer.PeerNameRecord>: Defines the record in PNRP cloud that contains the registration information for a peer, which includes the network endpoints at which the peer can be contacted.  
+- <xref:System.Net.PeerToPeer.PeerNameRecord>: Defines the record in PNRP cloud that contains the registration information for a peer, which includes the network endpoints at which the peer can be contacted.  
   
--   <xref:System.Net.PeerToPeer.PeerNameRegistration>: Defines the registration process for a peer name, including methods to start and stop peer name registration.  
+- <xref:System.Net.PeerToPeer.PeerNameRegistration>: Defines the registration process for a peer name, including methods to start and stop peer name registration.  
   
--   <xref:System.Net.PeerToPeer.PeerNameResolver>: Defines the process for resolving a peer name to its network endpoint(s), including both synchronous and asynchronous methods for resolution.  
+- <xref:System.Net.PeerToPeer.PeerNameResolver>: Defines the process for resolving a peer name to its network endpoint(s), including both synchronous and asynchronous methods for resolution.  
   
 ## See also
+
 - <xref:System.ServiceModel.PeerResolvers>
 - <xref:System.Net.PeerToPeer>
 - [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)

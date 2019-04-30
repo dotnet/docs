@@ -28,7 +28,7 @@ HRESULT GetLocalVarSigToken(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pmdSig`  
  [out] A pointer to the `mdSignature` token for the local variable signature for this function, or `mdSignatureNil` if there is no signature (that is, if the function doesn't have any local variables).  
   
@@ -44,5 +44,6 @@ HRESULT GetLocalVarSigToken(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [ICorDebugILCode2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -15,29 +15,35 @@ ms.date: 05/30/2018
 ## Synopsis
 
 # [.NET Core 2.1](#tab/netcore21)
+
 ```
 dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
     [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger]
     [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [--Blame|/Blame] [--InIsolation|/InIsolation]
     [[--] <args>...]] [-?|--Help|/?|/Help]
 ```
+
 # [.NET Core 2.0](#tab/netcore20)
+
 ```
 dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath] 
     [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger]
     [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [[--] <args>...]] [-?|--Help|/?|/Help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
 ```
 dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
     [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger] 
     [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [[--] <args>...]] [-?|--Help|/?|/Help]
 ```
+
 ---
 
 ## Description
 
-The `dotnet-vstest` command runs the `VSTest.Console` command-line application to run automated unit and coded UI application tests.
+The `dotnet-vstest` command runs the `VSTest.Console` command-line application to run automated unit tests.
 
 ## Arguments
 
@@ -67,11 +73,11 @@ Target platform architecture used for test execution. Valid values are `x86`, `x
 
 `--Framework|/Framework:<Framework Version>`
 
-Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework35`, `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
+Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
 
 `--Parallel|/Parallel`
 
-Execute tests in parallel. By default, all available cores on the machine are available for use. Set an explicit number of cores with a settings file.
+Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
@@ -131,7 +137,6 @@ Runs the tests in an isolated process. This makes *vstest.console.exe* process l
 
 Reads response file for more options.
 
-
 `args`
 
 Specifies extra arguments to pass to the adapter. Arguments are specified as name-value pairs of the form `<n>=<v>`, where `<n>` is the argument name and `<v>` is the argument value. Use a space to separate multiple arguments.
@@ -156,11 +161,11 @@ Target platform architecture used for test execution. Valid values are `x86`, `x
 
 `--Framework|/Framework:<Framework Version>`
 
-Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework35`, `Framework40`, `Framework45`, and `FrameworkCore10`.
+Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework40`, `Framework45`, and `FrameworkCore10`.
 
 `--Parallel|/Parallel`
 
-Execute tests in parallel. By default, all available cores on the machine are available for use. Set an explicit number of cores with a settings file.
+Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
@@ -232,11 +237,11 @@ Target platform architecture used for test execution. Valid values are `x86`, `x
 
 `--Framework|/Framework:<Framework Version>`
 
-Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework35`, `Framework40`, `Framework45`, and `FrameworkCore10`.
+Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework40`, `Framework45`, and `FrameworkCore10`.
 
 `--Parallel|/Parallel`
 
-Execute tests in parallel. By default, all available cores on the machine are available for use. Set an explicit number of cores with a settings file.
+Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 

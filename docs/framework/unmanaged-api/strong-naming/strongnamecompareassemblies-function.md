@@ -32,7 +32,7 @@ BOOLEAN StrongNameCompareAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssembly1`  
  [in] The path to the first assembly.  
   
@@ -42,11 +42,11 @@ BOOLEAN StrongNameCompareAssemblies (
  `pdwResult`  
  [out] One of the following values:  
   
--   `SN_CMP_DIFFERENT` (0) - Specifies that the assemblies contain different data.  
+- `SN_CMP_DIFFERENT` (0) - Specifies that the assemblies contain different data.  
   
--   `SN_CMP_IDENTICAL` (1) - Specifies that the assemblies are exactly the same, including their signatures and checksum.  
+- `SN_CMP_IDENTICAL` (1) - Specifies that the assemblies are exactly the same, including their signatures and checksum.  
   
--   `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
+- `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
  `true` on successful completion; otherwise, `false`.  
@@ -66,5 +66,6 @@ BOOLEAN StrongNameCompareAssemblies (
  If the `StrongNameCompareAssemblies` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## See also
+
 - [StrongNameCompareAssemblies Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamecompareassemblies-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

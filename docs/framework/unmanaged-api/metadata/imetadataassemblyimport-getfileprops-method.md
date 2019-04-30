@@ -35,7 +35,7 @@ HRESULT GetFileProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdf`  
  [in] The `mdFile` metadata token that represents the file for which to get the properties.  
   
@@ -67,4 +67,5 @@ HRESULT GetFileProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

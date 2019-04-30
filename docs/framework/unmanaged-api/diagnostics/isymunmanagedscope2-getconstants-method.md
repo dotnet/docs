@@ -32,7 +32,7 @@ HRESULT GetConstants(
              constants[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cConstants`  
  [in] The length of the buffer that the `pcConstants` parameter points to.  
   
@@ -49,4 +49,5 @@ HRESULT GetConstants(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-interface.md)

@@ -9,6 +9,9 @@ You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the
 
 To begin, ensure that you have [F# and the Ionide plugin correctly installed](install-fsharp.md#install-f-with-visual-studio-code).
 
+> [!NOTE]
+> Ionide will generate .NET Framework F# projects, not dotnet core, which can have cross-platform compatibility issues. If you are running on **Linux** or **OSX**, a simpler way to get started is to use the [command line tools](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line).
+
 ## Creating your first project with Ionide
 
 To create a new F# project, open Visual Studio Code in a new folder (you can name it whatever you like).
@@ -144,6 +147,7 @@ Next, open the `Script.fsx` file again, and delete the entire `toPigLatin` funct
 #load "ClassLibraryDemo.fs"
 open ClassLibraryDemo
 ```
+
 Select both lines of text and press Alt+Enter to execute these lines in FSI. These will load the contents of the Pig Latin library into the FSI process and `open` the `ClassLibraryDemo` namespace so that you have access to the functionality.
 
 Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:

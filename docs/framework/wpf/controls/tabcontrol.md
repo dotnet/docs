@@ -13,7 +13,7 @@ ms.assetid: 3d26404b-431e-432d-a82b-ef026feb3fff
   
  The following illustration shows a <xref:System.Windows.Controls.TabControl>.  
   
- ![Tab control](../../../../docs/framework/wpf/controls/media/ss-ctl-tabcontrol.gif "SS_CTL_tabcontrol")  
+ ![Tab control](./media/ss-ctl-tabcontrol.gif "SS_CTL_tabcontrol")  
 Typical TabControl  
   
 ## Reference  

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<securityTokenHandlerConfiguration>"
 ms.date: "03/30/2017"
 ms.assetid: 28724cc6-020c-4a06-9a1f-d7594f315019

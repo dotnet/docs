@@ -29,7 +29,7 @@ HRESULT IsActive (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbActive`  
  [out] Returns `true` if the stepper is currently executing a step; otherwise, returns `false`.  
   

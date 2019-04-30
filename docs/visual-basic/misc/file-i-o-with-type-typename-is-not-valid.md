@@ -10,8 +10,9 @@ You are attempting to write an unsupported type to a file.
   
 ## To correct this error  
   
--   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
+- Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
 ## See also
+
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
 - [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)

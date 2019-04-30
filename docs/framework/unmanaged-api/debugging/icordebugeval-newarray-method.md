@@ -35,7 +35,7 @@ HRESULT NewArray (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the element type of the array.  
   

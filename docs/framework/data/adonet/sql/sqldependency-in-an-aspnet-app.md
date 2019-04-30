@@ -18,11 +18,11 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
 ## Creating the Sample Application  
  Follow these steps to create and run the sample application:  
   
-1.  Create a new ASP.NET Web site.  
+1. Create a new ASP.NET Web site.  
   
-2.  Add a <xref:System.Web.UI.WebControls.Label> and a <xref:System.Web.UI.WebControls.GridView> control to the Default.aspx page.  
+2. Add a <xref:System.Web.UI.WebControls.Label> and a <xref:System.Web.UI.WebControls.GridView> control to the Default.aspx page.  
   
-3.  Open the page's class module and add the following directives:  
+3. Open the page's class module and add the following directives:  
   
     ```vb  
     Option Strict On  
@@ -36,12 +36,12 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
     using System.Web.Caching;  
     ```  
   
-4.  Add the following code in the page's `Page_Load` event:  
+4. Add the following code in the page's `Page_Load` event:  
   
      [!code-csharp[DataWorks SqlDependency.AspNet#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#1)]
      [!code-vb[DataWorks SqlDependency.AspNet#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#1)]  
   
-5.  Add two helper methods, `GetConnectionString` and `GetSQL`. The connection string defined uses integrated security. You will need to verify that the account you are using has the necessary database permissions and that the sample database, **AdventureWorks**, has notifications enabled.
+5. Add two helper methods, `GetConnectionString` and `GetSQL`. The connection string defined uses integrated security. You will need to verify that the account you are using has the necessary database permissions and that the sample database, **AdventureWorks**, has notifications enabled.
   
      [!code-csharp[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/CS/Default.aspx.cs#2)]
      [!code-vb[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#2)]  
@@ -52,5 +52,6 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
  Now update the data in the database, using a Transact-SQL UPDATE command and refresh the page. The time displayed now indicates that the cache was refreshed with the new data from the database. Note that although the cache is updated, the time displayed on the page does not change until a postback event occurs.  
   
 ## See also
+
 - [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

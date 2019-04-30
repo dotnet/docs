@@ -14,13 +14,13 @@ XML Document Object Model (DOM) hierarchy
   
  The following classes do not inherit from the **XmlNode**:  
   
--   **XmlImplementation**  
+- **XmlImplementation**  
   
--   **XmlNamedNodeMap**  
+- **XmlNamedNodeMap**  
   
--   **XmlNodeList**  
+- **XmlNodeList**  
   
--   **XmlNodeChangedEventArgs**  
+- **XmlNodeChangedEventArgs**  
   
  The **XmlImplementation** class is used to create an XML document. For more information, see [XML Document Creation](../../../../docs/standard/data/xml/xml-document-creation.md).  
   

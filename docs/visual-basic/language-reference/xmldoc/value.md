@@ -15,7 +15,7 @@ Specifies the description of a property.
 <value>property-description</value>  
 ```  
   
-#### Parameters  
+## Parameters  
  `property-description`  
  A description for the property.  
   
@@ -27,7 +27,8 @@ Specifies the description of a property.
 ## Example  
  This example uses the `<value>` tag to describe what value the `Counter` property holds.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/value_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

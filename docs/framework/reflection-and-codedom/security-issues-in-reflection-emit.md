@@ -17,11 +17,11 @@ ms.author: "ronpet"
 # Security Issues in Reflection Emit
 The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:  
   
--   [Dynamic assemblies](#Dynamic_Assemblies)  
+- [Dynamic assemblies](#Dynamic_Assemblies)  
   
--   [Anonymously hosted dynamic methods](#Anonymously_Hosted_Dynamic_Methods)  
+- [Anonymously hosted dynamic methods](#Anonymously_Hosted_Dynamic_Methods)  
   
--   [Dynamic methods associated with existing assemblies](#Dynamic_Methods_Associated_with_Existing_Assemblies)  
+- [Dynamic methods associated with existing assemblies](#Dynamic_Methods_Associated_with_Existing_Assemblies)  
   
  Regardless of the way you generate dynamic code, executing the generated code requires all the permissions that are required by the types and methods the generated code uses.  
   
@@ -45,13 +45,13 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
 ### Generating Dynamic Assemblies from Partially Trusted Code  
  Consider the conditions in which an assembly with Internet permissions can generate a transient dynamic assembly and execute its code:  
   
--   The dynamic assembly uses only public types and members of other assemblies.  
+- The dynamic assembly uses only public types and members of other assemblies.  
   
--   The permissions demanded by those types and members are included in the grant set of the partially trusted assembly.  
+- The permissions demanded by those types and members are included in the grant set of the partially trusted assembly.  
   
--   The assembly is not saved to disk.  
+- The assembly is not saved to disk.  
   
--   Debug symbols are not generated. (`Internet` and `LocalIntranet` permission sets do not include the necessary permissions.)  
+- Debug symbols are not generated. (`Internet` and `LocalIntranet` permission sets do not include the necessary permissions.)  
   
 <a name="Anonymously_Hosted_Dynamic_Methods"></a>   
 ## Anonymously Hosted Dynamic Methods  
@@ -64,9 +64,9 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
   
  If the application domain permits it, anonymously hosted dynamic methods can skip JIT visibility checks, subject to the following restriction: The nonpublic types and members accessed by an anonymously hosted dynamic method must be in assemblies whose grant sets are equal to, or subsets of, the grant set of the emitting call stack. This restricted ability to skip JIT visibility checks is enabled if the application domain grants <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag.  
   
--   If your method uses only public types and members, no permissions are required during construction.  
+- If your method uses only public types and members, no permissions are required during construction.  
   
--   If you specify that JIT visibility checks should be skipped, the demand that is made when the method is constructed includes <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and the grant set of the assembly that contains the nonpublic member that is being accessed.  
+- If you specify that JIT visibility checks should be skipped, the demand that is made when the method is constructed includes <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag and the grant set of the assembly that contains the nonpublic member that is being accessed.  
   
  Because the grant set of the nonpublic member is taken into consideration, partially trusted code that has been granted <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> cannot elevate its privileges by executing nonpublic members of trusted assemblies.  
   
@@ -79,9 +79,9 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
 ### Generating Anonymously Hosted Dynamic Methods from Partially Trusted Code  
  Consider the conditions in which an assembly with Internet permissions can generate an anonymously hosted dynamic method and execute it:  
   
--   The dynamic method uses only public types and members. If its grant set includes <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>, it can use nonpublic types and members of any assembly whose grant set is equal to, or a subset of, the grant set of the emitting assembly.  
+- The dynamic method uses only public types and members. If its grant set includes <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>, it can use nonpublic types and members of any assembly whose grant set is equal to, or a subset of, the grant set of the emitting assembly.  
   
--   The permissions that are required by all the types and members used by the dynamic method are included in the grant set of the partially trusted assembly.  
+- The permissions that are required by all the types and members used by the dynamic method are included in the grant set of the partially trusted assembly.  
   
 > [!NOTE]
 >  Dynamic methods do not support debug symbols.  
@@ -90,21 +90,21 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
 ## Dynamic Methods Associated with Existing Assemblies  
  To associate a dynamic method with a type or module in an existing assembly, use any of the <xref:System.Reflection.Emit.DynamicMethod> constructors that specify the associated type or module. The permissions that are required to call these constructors vary, because associating a dynamic method with an existing type or module gives the dynamic method access to nonpublic types and members:  
   
--   A dynamic method that is associated with a type has access to all members of that type, even private members, and to all internal types and members in the assembly that contains the associated type.  
+- A dynamic method that is associated with a type has access to all members of that type, even private members, and to all internal types and members in the assembly that contains the associated type.  
   
--   A dynamic method that is associated with a module has access to all the `internal` types and members (`Friend` in Visual Basic, `assembly` in common language runtime metadata) in the module.  
+- A dynamic method that is associated with a module has access to all the `internal` types and members (`Friend` in Visual Basic, `assembly` in common language runtime metadata) in the module.  
   
  In addition, you can use a constructor that specifies the ability to skip the visibility checks of the JIT compiler. Doing so gives your dynamic method access to all types and members in all assemblies, regardless of access level.  
   
  The permissions demanded by the constructor depend on how much access you decide to give your dynamic method:  
   
--   If your method uses only public types and members, and you associate it with your own type or your own module, no permissions are required.  
+- If your method uses only public types and members, and you associate it with your own type or your own module, no permissions are required.  
   
--   If you specify that JIT visibility checks should be skipped, the constructor demands <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
+- If you specify that JIT visibility checks should be skipped, the constructor demands <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag.  
   
--   If you associate the dynamic method with another type, even another type in your own assembly, the constructor demands <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag and <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag.  
+- If you associate the dynamic method with another type, even another type in your own assembly, the constructor demands <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag and <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag.  
   
--   If you associate the dynamic method with a type or module in another assembly, the constructor demands two things: <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag, and the grant set of the assembly that contains the other module. That is, your call stack must include all the permissions in the grant set of the target module, plus <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>.  
+- If you associate the dynamic method with a type or module in another assembly, the constructor demands two things: <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag, and the grant set of the assembly that contains the other module. That is, your call stack must include all the permissions in the grant set of the target module, plus <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>.  
   
     > [!NOTE]
     >  For backward compatibility, if the demand for the target grant set plus <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> fails, the constructor demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence?displayProperty=nameWithType> flag.  
@@ -120,13 +120,13 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
   
  Consider the conditions in which an assembly with Internet permissions can generate a dynamic method and execute it:  
   
--   Either the dynamic method is associated with the module or type that emits it, or its grant set includes <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> and it is associated with a module in an assembly whose grant set is equal to, or a subset of, the grant set of the emitting assembly.  
+- Either the dynamic method is associated with the module or type that emits it, or its grant set includes <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> and it is associated with a module in an assembly whose grant set is equal to, or a subset of, the grant set of the emitting assembly.  
   
--   The dynamic method uses only public types and members. If its grant set includes <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> and it is associated with a module in an assembly whose grant set is equal to, or a subset of, the grant set of the emitting assembly, it can use types and members marked `internal` (`Friend` in Visual Basic, `assembly` in common language runtime metadata) in the associated module.  
+- The dynamic method uses only public types and members. If its grant set includes <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> and it is associated with a module in an assembly whose grant set is equal to, or a subset of, the grant set of the emitting assembly, it can use types and members marked `internal` (`Friend` in Visual Basic, `assembly` in common language runtime metadata) in the associated module.  
   
--   The permissions demanded by all the types and members used by the dynamic method are included in the grant set of the partially trusted assembly.  
+- The permissions demanded by all the types and members used by the dynamic method are included in the grant set of the partially trusted assembly.  
   
--   The dynamic method does not skip JIT visibility checks.  
+- The dynamic method does not skip JIT visibility checks.  
   
 > [!NOTE]
 >  Dynamic methods do not support debug symbols.  
@@ -148,5 +148,6 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
  Starting with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
   
 ## See also
+
 - [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)
 - [Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)

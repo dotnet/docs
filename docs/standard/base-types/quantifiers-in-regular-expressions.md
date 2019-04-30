@@ -222,11 +222,11 @@ Quantifiers specify how many instances of a character, group, or character class
 ## Greedy and Lazy Quantifiers  
  A number of the quantifiers have two versions:  
   
--   A greedy version.  
+- A greedy version.  
   
      A greedy quantifier tries to match an element as many times as possible.  
   
--   A non-greedy (or lazy) version.  
+- A non-greedy (or lazy) version.  
   
      A non-greedy quantifier tries to match an element as few times as possible. You can turn a greedy quantifier into a lazy quantifier by simply adding a `?`.  
   

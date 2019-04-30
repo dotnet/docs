@@ -2,7 +2,7 @@
 title: Port libraries to .NET Core
 description: Learn how to port library projects from the .NET Framework to .NET Core.
 author: cartermp
-ms.date: 12/7/2018
+ms.date: 12/07/2018
 ms.custom: seodec18
 ---
 # Port .NET Framework libraries to .NET Core
@@ -20,7 +20,7 @@ This article assumes that you:
 
 You should also become familiar with the content of the following topics:
 
-[.NET Standard](~/docs/standard/net-standard.md)   
+[.NET Standard](../../standard/net-standard.md)\
 This topic describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
 [Packages, Metapackages and Frameworks](~/docs/core/packages.md)   

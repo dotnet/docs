@@ -10,7 +10,7 @@ ms.date: 01/30/2019
 > _"With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-class services."_  
 > _- Roy Stephan_
 
- ## Vision
+## Vision
 
 > *Develop well-designed ASP .NET Core applications the way you like, using Visual Studio or the dotnet CLI and Visual Studio Code or your editor of choice.*
 

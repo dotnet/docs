@@ -30,7 +30,7 @@ HRESULT CallNeedsHostHook (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `target`  
  [in] The address within the mapped portable executable (PE) file of the unmanaged function that is to be called.  
   
@@ -63,6 +63,7 @@ HRESULT CallNeedsHostHook (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

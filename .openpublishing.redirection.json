@@ -30,6 +30,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/docker/docker-basics-dotnet-core.md",
+            "redirect_url": "/dotnet/core/docker/build-container"
+        },
+        {
+            "source_path": "docs/core/docker/build-docker-netcore-container.md",
+            "redirect_url": "/dotnet/core/docker/build-container"
+        },
+        {
+            "source_path": "docs/core/docker/building-net-docker-images.md",
+            "redirect_url": "/aspnet/core/host-and-deploy/docker/building-net-docker-images"
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -241,6 +253,10 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/core/tutorials/using-on-windows-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
             "source_path": "docs/core/versions/install-management.md",
             "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
         },
@@ -379,6 +395,10 @@
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
+            "source_path": "docs/csharp/lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
         },
@@ -395,16 +415,140 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
         },
         {
+            "source_path": "docs/csharp/language-reference/language-specification/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/introduction"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.1/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.2/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.2/readonly-ref"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.3/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.3/blittable"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-8.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/bitwise-complement-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#bitwise-complement-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/conditional-and-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#conditional-logical-and-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/conditional-or-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#conditional-logical-or-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/decrement-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/division-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/division-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#division-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/equality-comparison-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/equality-operators#equality-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/greater-than-equal-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#greater-than-or-equal-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/greater-than-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#greater-than-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/increment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/left-shift-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/left-shift-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#left-shift-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/less-than-equal-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#less-than-or-equal-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/less-than-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/comparison-operators#less-than-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/logical-negation-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-negation-operator-"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/modulus-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/not-equal-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/equality-operators#inequality-operator-"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/null-conditional-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/null-coalescing-operator"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/or-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/or-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-or-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/remainder-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/remainder-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/right-shift-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/right-shift-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#right-shift-operator-"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/xor-assignment-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/operators/xor-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",
@@ -425,6 +569,20 @@
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies.md",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
@@ -642,12 +800,12 @@
         },
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings-local",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings",
             "redirect_document_id": true
         },
         {
@@ -686,6 +844,14 @@
         {
             "source_path": "docs/csharp/roslyn/index.md",
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
         },
         {
             "source_path": "docs/csharp/tutorials/microservices.md",
@@ -766,6 +932,11 @@
             "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546195(v=vs.100)"
         },
         {
+            "source_path": "docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/udpannouncementendpoint",
+            "redirect_document_id": true
+        },        
+        {
             "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
             "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
         },
@@ -825,6 +996,14 @@
             "source_path": "docs/framework/docker/aspnetmvc.md",
             "redirect_url": "/aspnet/mvc/overview/deployment/docker-aspnetmvc",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/docker/console.md",
+            "redirect_url": "/dotnet/framework"
+        },
+        {
+            "source_path": "docs/framework/docker/index.md",
+            "redirect_url": "/dotnet/framework"
         },
         {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
@@ -906,6 +1085,11 @@
             "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
+
+        {
+            "source_path": "docs/framework/migration-guide/release-keys-and-os-versions.md",
+            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
+        },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
             "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
@@ -953,6 +1137,10 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/misc/binding.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
@@ -1354,6 +1542,11 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff642473(v%3dvs.100)"
         },
@@ -1517,6 +1710,26 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/passwordbox-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/passwordbox-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/repeatbutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/repeatbutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
             "redirect_url": "/dotnet/framework/xaml-services/escape-sequence-markup-extension",
             "redirect_document_id": true
@@ -1537,6 +1750,11 @@
         {
             "source_path": "docs/fsharp/language-reference/code-formatting-guidelines.md",
             "redirect_url": "/dotnet/fsharp/style-guide/formatting"
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/lazy-computations.md",
+            "redirect_url": "/dotnet/fsharp/language-reference/lazy-expressions",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/language-reference/primitive-types.md",
@@ -1621,8 +1839,53 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-data-from-text-file-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-non-file-training-data-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-model-categorical-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-model-textual-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-regression-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/train-machine-learning-model-ml-net",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/machine-learning/resources/basics.md",
             "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/resources/what-is-mldotnet.md",
+            "redirect_url": "/dotnet/machine-learning/what-is-machine-learning",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
             "redirect_document_id": true
         },
         {
@@ -1640,6 +1903,11 @@
         {
             "source_path": "docs/standard/about.md",
             "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path": "docs/standard/assembly-format.md",
+            "redirect_url": "/dotnet/standard/assembly/file-format",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
@@ -2017,6 +2285,10 @@
             "redirect_url": "/dotnet/api/system.threading.readerwriterlockslim"
         },
         {
+            "source_path": "docs/standard/threading/thread-suspend-garbage-collection-and-safe-points.md",
+            "redirect_url": "/dotnet/api/system.threading.thread.suspend"
+        },
+        {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
             "redirect_url": "/dotnet/csharp/tutorials/microservices"
         },
@@ -2038,9 +2310,40 @@
             "redirect_url": "/visualstudio/debugger/debugger-basics"
         },
         {
+            "source_path": "docs/visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233804(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882689(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629268(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690944(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629243(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629256(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/index.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690938(v=vs.100)"
+        },
+        {
             "source_path": "docs/visual-basic/developing-apps/printing/printing-and-reporting.md",
-            "redirect_url": "/dotnet/visual-basic/developing-apps/printing/index",
-            "redirect_document_id": true
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md",
@@ -2266,6 +2569,18 @@
         {
             "source_path": "docs/visual-basic/misc/next-control-variable-does-not-match-for-loop-control-variable.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

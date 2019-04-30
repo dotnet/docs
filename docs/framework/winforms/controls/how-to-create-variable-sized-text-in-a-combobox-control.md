@@ -52,19 +52,20 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   A Windows form.  
+- A Windows form.  
   
--   A <xref:System.Windows.Forms.ComboBox> control named `ListBox1` with three items in the <xref:System.Windows.Forms.ComboBox.Items%2A> property. In this example, the three items are named `"One", Two", and Three"`. The <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property of `ComboBox1` must be set to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable>.  
+- A <xref:System.Windows.Forms.ComboBox> control named `ListBox1` with three items in the <xref:System.Windows.Forms.ComboBox.Items%2A> property. In this example, the three items are named `"One", Two", and Three"`. The <xref:System.Windows.Forms.ComboBox.DrawMode%2A> property of `ComboBox1` must be set to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable>.  
   
     > [!NOTE]
     >  This technique is also applicable to the <xref:System.Windows.Forms.ListBox> control — you can substitute a <xref:System.Windows.Forms.ListBox> for the <xref:System.Windows.Forms.ComboBox>.  
   
--   References to the <xref:System.Windows.Forms?displayProperty=nameWithType> and <xref:System.Drawing?displayProperty=nameWithType> namespaces.  
+- References to the <xref:System.Windows.Forms?displayProperty=nameWithType> and <xref:System.Drawing?displayProperty=nameWithType> namespaces.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ComboBox.DrawItem>
 - <xref:System.Windows.Forms.DrawItemEventArgs>
 - <xref:System.Windows.Forms.ComboBox.MeasureItem>
-- [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)
-- [ListBox Control](../../../../docs/framework/winforms/controls/listbox-control-windows-forms.md)
-- [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md)
+- [Controls with Built-In Owner-Drawing Support](controls-with-built-in-owner-drawing-support.md)
+- [ListBox Control](listbox-control-windows-forms.md)
+- [ComboBox Control](combobox-control-windows-forms.md)

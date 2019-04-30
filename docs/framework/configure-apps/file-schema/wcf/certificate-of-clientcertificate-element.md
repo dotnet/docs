@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<certificate> of <clientCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
@@ -69,6 +69,7 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement>

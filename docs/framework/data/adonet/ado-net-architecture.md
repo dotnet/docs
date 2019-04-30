@@ -23,13 +23,13 @@ ADO.NET architecture
 ### Choosing a DataReader or a DataSet  
  When you decide whether your application should use a `DataReader` (see [Retrieving Data Using a DataReader](../../../../docs/framework/data/adonet/retrieving-data-using-a-datareader.md)) or a `DataSet` (see [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)), consider the type of functionality that your application requires. Use a `DataSet` to do the following:  
   
--   Cache data locally in your application so that you can manipulate it. If you only need to read the results of a query, the `DataReader` is the better choice.  
+- Cache data locally in your application so that you can manipulate it. If you only need to read the results of a query, the `DataReader` is the better choice.  
   
--   Remote data between tiers or from an XML Web service.  
+- Remote data between tiers or from an XML Web service.  
   
--   Interact with data dynamically such as binding to a Windows Forms control or combining and relating data from multiple sources.  
+- Interact with data dynamically such as binding to a Windows Forms control or combining and relating data from multiple sources.  
   
--   Perform extensive processing on data without requiring an open connection to the data source, which frees the connection to be used by other clients.  
+- Perform extensive processing on data without requiring an open connection to the data source, which frees the connection to be used by other clients.  
   
  If you do not require the functionality provided by the `DataSet`, you can improve the performance of your application by using the `DataReader` to return your data in a forward-only, read-only manner. Although the `DataAdapter` uses the `DataReader` to fill the contents of a `DataSet` (see [Populating a DataSet from a DataAdapter](../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)), by using the `DataReader`, you can boost performance because you will save memory that would be consumed by the `DataSet`, and avoid the processing that is required to create and fill the contents of the `DataSet`.  
   
@@ -51,5 +51,6 @@ ADO.NET architecture
  [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] and the XML classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] converge in the `DataSet` object. The `DataSet` can be populated with data from an XML source, whether it is a file or an XML stream. The `DataSet` can be written as World-Wide Web Consortium (W3C) compliant XML that includes its schema as XML schema definition language (XSD) schema, regardless of the source of the data in the `DataSet`. Because of the native serialization format of the `DataSet` is XML, it is an excellent medium for moving data between tiers, making the `DataSet` an optimal choice for remoting data and schema context to and from an XML Web service. For more information, see [XML Documents and Data](../../../../docs/standard/data/xml/index.md).  
   
 ## See also
+
 - [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -14,7 +14,7 @@ Sets the starting method that initiates the async operation.
 HRESULT DefineKickoffMethod(    [in] mdToken kickoffMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -27,4 +27,5 @@ HRESULT DefineKickoffMethod(    [in] mdToken kickoffMethod);
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedAsyncMethodPropertiesWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md)

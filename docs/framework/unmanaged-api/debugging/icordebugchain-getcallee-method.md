@@ -29,7 +29,7 @@ HRESULT GetCallee (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the called chain. If this chain is currently executing (that is, if this chain is not waiting for a called chain to return), `ppChain` will be null.  
   

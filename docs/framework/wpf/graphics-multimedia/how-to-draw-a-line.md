@@ -17,10 +17,11 @@ This example shows you how to draw lines by using the <xref:System.Windows.Shape
  The following example draws three lines inside a <xref:System.Windows.Controls.Canvas> element.  
   
 ## Example  
- [!code-xaml[drawingwithshapeelements#LineExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/lineexample.xaml#lineexample1)]  
+ [!code-xaml[drawingwithshapeelements#LineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/lineexample.xaml#lineexample1)]  
   
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See also
+
 - <xref:System.Windows.Shapes.Line>
 - [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)

@@ -32,7 +32,7 @@ HRESULT GetAssemblyIdentityFromFile (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] A valid path to the requested assembly.  
   
@@ -50,5 +50,6 @@ HRESULT GetAssemblyIdentityFromFile (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IUnknown](/cpp/atl/iunknown)
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

@@ -11,11 +11,12 @@ ms.assetid: b4a97c97-7f88-4a89-b1d1-cf2c0d087955
 The topics in this section demonstrate how to use the font features included with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
 ## In This Section  
- [Enumerate System Fonts](../../../../docs/framework/wpf/advanced/how-to-enumerate-system-fonts.md)  
- [Use the FontSizeConverter Class](../../../../docs/framework/wpf/advanced/how-to-use-the-fontsizeconverter-class.md)  
+ [Enumerate System Fonts](how-to-enumerate-system-fonts.md)  
+ [Use the FontSizeConverter Class](how-to-use-the-fontsizeconverter-class.md)  
   
 ## See also
+
 - <xref:System.Windows.FontStyle>
 - <xref:System.Windows.SystemFonts>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [Documents in WPF](documents-in-wpf.md)
+- [Typography in WPF](typography-in-wpf.md)

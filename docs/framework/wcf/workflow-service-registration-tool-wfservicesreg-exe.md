@@ -28,25 +28,25 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
 ## Registration  
  The tool inspects the Web.config file and registers the following:  
   
--   [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] reference assemblies.  
+- [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] reference assemblies.  
   
--   A build provider for .xoml files.  
+- A build provider for .xoml files.  
   
--   HTTP handlers for .xoml and .rules files.  
+- HTTP handlers for .xoml and .rules files.  
   
  The tool inspects the Machine.config file and registers the following extensions:  
   
--   behaviorExtensions  
+- behaviorExtensions  
   
--   bindingElementExtensions  
+- bindingElementExtensions  
   
--   bindingExtensions  
+- bindingExtensions  
   
  The tool also registers the following client metadata importers:  
   
--   policyImporters  
+- policyImporters  
   
--   wsdlImporters  
+- wsdlImporters  
   
  The tool also registers .xoml and .rules scriptmaps and handlers in the IIS metabase.  
   

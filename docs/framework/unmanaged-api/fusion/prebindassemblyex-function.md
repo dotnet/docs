@@ -35,7 +35,7 @@ HRESULT PreBindAssemblyEx (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppCtx`  
  [in] Identifies the application context.  
   
@@ -67,4 +67,5 @@ HRESULT PreBindAssemblyEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

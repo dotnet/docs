@@ -29,7 +29,7 @@ HRESULT GetAddress (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStart`  
  [out] A pointer to the RVA of the code segment.  
   
@@ -43,4 +43,3 @@ HRESULT GetAddress (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

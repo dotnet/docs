@@ -20,25 +20,25 @@ Extended Protection is a security initiative for protecting against man-in-the-m
   
 #### To set up, build, and run the sample  
   
-1.  Install Internet Information Services from **Control Panel**, **Add/Remove Programs**, **Windows Features**.  
+1. Install Internet Information Services from **Control Panel**, **Add/Remove Programs**, **Windows Features**.  
   
-2.  Install **Windows Authentication** in **Windows Features**, **Internet Information Services**, **World Wide Web Services**, **Security**, and **Windows Authentication**.  
+2. Install **Windows Authentication** in **Windows Features**, **Internet Information Services**, **World Wide Web Services**, **Security**, and **Windows Authentication**.  
   
-3.  Install **Windows Communication Foundation HTTP Activation** in **Windows Features**, **Microsoft .NET Framework 3.5.1**, and **Windows Communication Foundation HTTP Activation**.  
+3. Install **Windows Communication Foundation HTTP Activation** in **Windows Features**, **Microsoft .NET Framework 3.5.1**, and **Windows Communication Foundation HTTP Activation**.  
   
-4.  This sample requires the client to establish a secure channel with the server, so it requires the presence of a server certificate which can be installed from Internet Information Services (IIS) Manager.  
+4. This sample requires the client to establish a secure channel with the server, so it requires the presence of a server certificate which can be installed from Internet Information Services (IIS) Manager.  
   
-    1.  Open IIS Manager. Open **Server certificates**, which appears in the **Feature View** tab when the root node (machine name) is selected.  
+    1. Open IIS Manager. Open **Server certificates**, which appears in the **Feature View** tab when the root node (machine name) is selected.  
   
-    2.  For the purpose of testing this sample, create a self-signed certificate. If you do not want Internet Explorer to prompt you about the certificate not being secure, install the certificate in the Trusted Certificate Root authority store.  
+    2. For the purpose of testing this sample, create a self-signed certificate. If you do not want Internet Explorer to prompt you about the certificate not being secure, install the certificate in the Trusted Certificate Root authority store.  
   
-5.  Open the **Actions** pane for the default Web site. Click **Edit Site**, **Bindings**. Add HTTPS as a type if not already present, with port number 443. Assign the SSL certificate created in the preceding step.  
+5. Open the **Actions** pane for the default Web site. Click **Edit Site**, **Bindings**. Add HTTPS as a type if not already present, with port number 443. Assign the SSL certificate created in the preceding step.  
   
-6.  Build the service. This creates a virtual directory in IIS, and copies the .dll, .svc and .config files as required for the service to be Web hosted.  
+6. Build the service. This creates a virtual directory in IIS, and copies the .dll, .svc and .config files as required for the service to be Web hosted.  
   
-7.  Open IIS Manager. Right-click the virtual directory (**ExtendedProtection**), which was created in the preceding step. Select **Convert to Application**.  
+7. Open IIS Manager. Right-click the virtual directory (**ExtendedProtection**), which was created in the preceding step. Select **Convert to Application**.  
   
-8.  Open the **Authentication** module in IIS Manager for this virtual directory and enable **Windows Authentication**.  
+8. Open the **Authentication** module in IIS Manager for this virtual directory and enable **Windows Authentication**.  
   
 9. Open **Advanced Settings** under **Windows Authentication** for this virtual directory and set it to **Required**.  
   

@@ -13,7 +13,7 @@ See the following tables for a list of Microsoft technologies you can use to pro
   
 |**Option**|**Processing type**|**Description**|  
 |----------------|-------------------------|---------------------|  
-|[LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) <br />(<xref:System.Xml.Linq> namespace)|In-memory|-   Based on the .NET Framework Language-Integrated Query (LINQ) technology.<br />-   Provides query experience that is similar to SQL for objects, relational data, and XML data.<br />-   Provides intuitive document creation and transformation capabilities.<br />-   Use this option if you're writing new code.|  
+|[LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) <br/> [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md) <br />(<xref:System.Xml.Linq> namespace)|In-memory|-   Based on the .NET Framework Language-Integrated Query (LINQ) technology.<br />-   Provides query experience that is similar to SQL for objects, relational data, and XML data.<br />-   Provides intuitive document creation and transformation capabilities.<br />-   Use this option if you're writing new code.|  
 |<xref:System.Xml.XmlReader?displayProperty=nameWithType>|Stream-based|-   Provides a fast, non-cached, forward-only way to access XML data.<br />-   You can create objects by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method, and specify the set of features to enable on the object by using the <xref:System.Xml.XmlReaderSettings> class.|  
 |<xref:System.Xml.XmlWriter?displayProperty=nameWithType>|Stream-based|-   Provides a fast, non-cached, forward-only way to generate XML data.<br />-   You can create objects by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method, and specify the set of features to enable on the object by using the <xref:System.Xml.XmlWriterSettings> class.|  
 |<xref:System.Xml.XmlDocument?displayProperty=nameWithType>|In-memory|-   Implements the [W3C Document Object Model (DOM) Level 1 Core](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html) and [DOM Level 2 Core](https://www.w3.org/TR/DOM-Level-2-Core/) recommendations.<br />-   You can create, insert, remove, and modify nodes by using methods and properties based on the familiar DOM model.<br />-   Use this option if you're modifying existing code that utilizes the W3C DOM.|  
@@ -24,8 +24,8 @@ See the following tables for a list of Microsoft technologies you can use to pro
   
 |**Option**|**Description**|  
 |----------------|---------------------|  
-|[XmlLite](https://msdn.microsoft.com/library/ms752872.aspx)|-   A fast, secure, non-caching, forward-only XML parser that helps you build high-performance XML apps.<br />-   Works with any language that can use dynamic link libraries (DLLs); we recommend using C++.|  
-|[MSXML](https://msdn.microsoft.com/library/ms763742.aspx)|-   COM-based technology for processing XML that is included with the Windows operating system.<br />-   Provides a native implementation of the DOM with support for XPath and XSLT.<br />-   Contains the SAX2 event-based parser.|  
+|[XmlLite](https://docs.microsoft.com/previous-versions/windows/desktop/ms752872(v=vs.85))|-   A fast, secure, non-caching, forward-only XML parser that helps you build high-performance XML apps.<br />-   Works with any language that can use dynamic link libraries (DLLs); we recommend using C++.|  
+|[MSXML](https://docs.microsoft.com/previous-versions/windows/desktop/ms763742(v=vs.85))|-   COM-based technology for processing XML that is included with the Windows operating system.<br />-   Provides a native implementation of the DOM with support for XPath and XSLT.<br />-   Contains the SAX2 event-based parser.|  
   
 ## See also
 

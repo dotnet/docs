@@ -20,13 +20,14 @@ If you have defined a class or structure, you can define a type conversion opera
 ## Example  
  The following example defines conversion operators between a structure called `digit` and a `Byte`.  
   
- [!code-vb[VbVbcnProcedures#27](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_1.vb)]  
+ [!code-vb[VbVbcnProcedures#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#27)]  
   
  You can test the structure `digit` with the following code.  
   
- [!code-vb[VbVbcnProcedures#28](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_2.vb)]  
+ [!code-vb[VbVbcnProcedures#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#28)]  
   
 ## See also
+
 - [Operator Procedures](./operator-procedures.md)
 - [How to: Define an Operator](./how-to-define-an-operator.md)
 - [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)

@@ -18,11 +18,11 @@ A password box is a Windows Forms text box that displays placeholder characters 
   
 ### To create a password text box  
   
-1.  Set the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property of the <xref:System.Windows.Forms.TextBox> control to a specific character.  
+1. Set the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property of the <xref:System.Windows.Forms.TextBox> control to a specific character.  
   
      The <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property specifies the character displayed in the text box. For example, if you want asterisks displayed in the password box, specify * for the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property in the Properties window. Then, regardless of what character a user types in the text box, an asterisk is displayed.  
   
-2.  (Optional) Set the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property. The property determines how many characters can be typed in the text box. If the maximum length is exceeded, the system emits a beep and the text box does not accept any more characters. Note that you may not wish to do this as the maximum length of a password may be of use to hackers who are trying to guess the password.  
+2. (Optional) Set the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property. The property determines how many characters can be typed in the text box. If the maximum length is exceeded, the system emits a beep and the text box does not accept any more characters. Note that you may not wish to do this as the maximum length of a password may be of use to hackers who are trying to guess the password.  
   
      The following code example shows how to initialize a text box that will accept a string up to 14 characters long and display asterisks in place of the string. The `InitializeMyControl` procedure will not execute automatically; it must be called.  
   
@@ -66,11 +66,12 @@ A password box is a Windows Forms text box that displays placeholder characters 
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.TextBox>
-- [TextBox Control Overview](../../../../docs/framework/winforms/controls/textbox-control-overview-windows-forms.md)
-- [How to: Control the Insertion Point in a Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)
-- [How to: Create a Read-Only Text Box](../../../../docs/framework/winforms/controls/how-to-create-a-read-only-text-box-windows-forms.md)
-- [How to: Put Quotation Marks in a String](../../../../docs/framework/winforms/controls/how-to-put-quotation-marks-in-a-string-windows-forms.md)
-- [How to: Select Text in the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-select-text-in-the-windows-forms-textbox-control.md)
-- [How to: View Multiple Lines in the Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-view-multiple-lines-in-the-windows-forms-textbox-control.md)
-- [TextBox Control](../../../../docs/framework/winforms/controls/textbox-control-windows-forms.md)
+- [TextBox Control Overview](textbox-control-overview-windows-forms.md)
+- [How to: Control the Insertion Point in a Windows Forms TextBox Control](how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)
+- [How to: Create a Read-Only Text Box](how-to-create-a-read-only-text-box-windows-forms.md)
+- [How to: Put Quotation Marks in a String](how-to-put-quotation-marks-in-a-string-windows-forms.md)
+- [How to: Select Text in the Windows Forms TextBox Control](how-to-select-text-in-the-windows-forms-textbox-control.md)
+- [How to: View Multiple Lines in the Windows Forms TextBox Control](how-to-view-multiple-lines-in-the-windows-forms-textbox-control.md)
+- [TextBox Control](textbox-control-windows-forms.md)

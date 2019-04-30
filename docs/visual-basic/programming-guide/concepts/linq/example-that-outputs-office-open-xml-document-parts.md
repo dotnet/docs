@@ -59,4 +59,5 @@ End Using
 ```  
   
 ## See also
+
 - [Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

@@ -32,7 +32,7 @@ HRESULT GetMethodsInDocument(
         length_is(*pcMethod)] ISymUnmanagedMethod* pRetVal[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] A pointer to the document.  
   
@@ -52,4 +52,5 @@ HRESULT GetMethodsInDocument(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

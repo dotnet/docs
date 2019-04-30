@@ -1,0 +1,54 @@
+- name: C# Operators
+  href: index.md
+  items:
+  - name: Arithmetic operators
+    href: arithmetic-operators.md
+    displayName: ++, --, +, -, *, /, %, +=, -=, *=, /=, %=, checked, unchecked
+  - name: Boolean logical operators
+    href: boolean-logical-operators.md
+    displayName: "!, &&, ||, &, |, ^, &=, |=, ^="
+  - name: Bitwise and shift operators
+    href: bitwise-and-shift-operators.md
+    displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>="
+  - name: Equality operators
+    href: equality-operators.md
+    displayName: ==, !=
+  - name: Comparison operators
+    href: comparison-operators.md
+    displayName: ">, <, >=, <=, greater, less"
+  - name: "[] Operator"
+    href: index-operator.md
+  - name: () Operator
+    href: invocation-operator.md
+  - name: . Operator
+    href: member-access-operator.md
+  - name: "?. and ?[] Operators"
+    href: null-conditional-operators.md
+  - name: ":: Operator"
+    href: namespace-alias-qualifer.md
+  - name: + Operator
+    href: addition-operator.md
+  - name: "- Operator"
+    href: subtraction-operator.md
+  - name: "* Operator"
+    href: multiplication-operator.md
+  - name: "& Operator"
+    href: and-operator.md
+  - name: = Operator
+    href: assignment-operator.md
+  - name: "?: Operator"
+    href: conditional-operator.md
+  - name: += Operator
+    href: addition-assignment-operator.md
+  - name: -= Operator
+    href: subtraction-assignment-operator.md
+  - name: "*= Operator"
+    href: multiplication-assignment-operator.md
+  - name: "&= Operator"
+    href: and-assignment-operator.md
+  - name: -> Operator
+    href: dereference-operator.md
+  - name: "?? Operator"
+    href: null-coalescing-operator.md
+  - name: => Operator
+    href: lambda-operator.md

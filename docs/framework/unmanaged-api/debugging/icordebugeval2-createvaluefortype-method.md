@@ -30,7 +30,7 @@ HRESULT CreateValueForType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [in] Pointer to an ICorDebugType object that represents the type.  
   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What's New in Windows Identity Foundation 4.5"
 ms.date: "03/30/2017"
 ms.assetid: 3b381f04-593b-471f-bd33-0362be1aade5
@@ -17,29 +17,29 @@ The first version of Windows Identity Foundation (WIF) shipped as a standalone d
   
 ## Changes to the WIF 4.5 Visual Studio Experience  
   
--   The **Add STS Reference …** Visual Studio functionality (cmdline utility FedUtil) no longer exists; instead you can use the new Visual Studio extension **Identity and Access Tool for Visual Studio 2012**. This allows you to federate with an existing STS or use LocalSTS to test your solutions. After installing the extension you can right-click on your project and look for **Identity and Access** in the context menu.  
+- The **Add STS Reference …** Visual Studio functionality (cmdline utility FedUtil) no longer exists; instead you can use the new Visual Studio extension **Identity and Access Tool for Visual Studio 2012**. This allows you to federate with an existing STS or use LocalSTS to test your solutions. After installing the extension you can right-click on your project and look for **Identity and Access** in the context menu.  
   
--   The ASP.NET and STS templates are no longer provided as claims can be used directly in existing project templates for ASP.Net, web sites, and WCF.  
+- The ASP.NET and STS templates are no longer provided as claims can be used directly in existing project templates for ASP.Net, web sites, and WCF.  
   
--   The controls in the `Microsoft.IdentityModel.Web.Controls` namespace (`SignInControl`, `FederatedPassiveSignInControl`, and `FederatedPassiveSignInStatus`) are not carried over into WIF 4.5.  
+- The controls in the `Microsoft.IdentityModel.Web.Controls` namespace (`SignInControl`, `FederatedPassiveSignInControl`, and `FederatedPassiveSignInStatus`) are not carried over into WIF 4.5.  
   
 ## Changes to the WIF 4.5 API  
   
--   In general, claims related classes are in the <xref:System.Security.Claims?displayProperty=nameWithType> namespace; WCF related classes –- service contracts, channels, channel factories, and service hosts that are used for WS-Trust scenarios -- are in <xref:System.ServiceModel.Security?displayProperty=nameWithType>; and all other WIF classes are spread across various [System.IdentityModel](https://go.microsoft.com/fwlink/?LinkId=272004) namespaces – these include, for example, classes that represent WS-* and SAML artifacts, token handlers and related classes, and classes used in WS-Federation scenarios. For more information, see [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md) and [WIF API Reference](../../../docs/framework/security/wif-api-reference.md).  
+- In general, claims related classes are in the <xref:System.Security.Claims?displayProperty=nameWithType> namespace; WCF related classes –- service contracts, channels, channel factories, and service hosts that are used for WS-Trust scenarios -- are in <xref:System.ServiceModel.Security?displayProperty=nameWithType>; and all other WIF classes are spread across various [System.IdentityModel](https://go.microsoft.com/fwlink/?LinkId=272004) namespaces – these include, for example, classes that represent WS-* and SAML artifacts, token handlers and related classes, and classes used in WS-Federation scenarios. For more information, see [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md) and [WIF API Reference](../../../docs/framework/security/wif-api-reference.md).  
   
--   Machine key has been enabled for use in session cookies for web farm scenarios. For more information, see [WIF and Web Farms](../../../docs/framework/security/wif-and-web-farms.md).  
+- Machine key has been enabled for use in session cookies for web farm scenarios. For more information, see [WIF and Web Farms](../../../docs/framework/security/wif-and-web-farms.md).  
   
--   You now declaratively configure WIF under the [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) and [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) elements. For more information about WIF configuration, see [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md).  
+- You now declaratively configure WIF under the [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) and [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) elements. For more information about WIF configuration, see [WIF Configuration Reference](../../../docs/framework/security/wif-configuration-reference.md).  
   
 ## Other notable .NET changes or features that are caused by the integration of WIF into .NET  
   
--   The potential for performing claims-based authorization (CBAC) is now integral to the .NET framework. You can configure a <xref:System.Security.Claims.ClaimsAuthorizationManager> object and then use the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> and <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> classes to perform imperative and declarative access checks in your code. CBAC provides more flexibility and greater granularity than traditional role-based access checks (RBAC). It also allows greater separation of authorization policy from business logic because the business logic can base the access check on a specific claim or set of claims and the authorization policy for those claims can be configured declaratively under the [\<claimsAuthorizationManager>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager.md) element.  
+- The potential for performing claims-based authorization (CBAC) is now integral to the .NET framework. You can configure a <xref:System.Security.Claims.ClaimsAuthorizationManager> object and then use the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> and <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> classes to perform imperative and declarative access checks in your code. CBAC provides more flexibility and greater granularity than traditional role-based access checks (RBAC). It also allows greater separation of authorization policy from business logic because the business logic can base the access check on a specific claim or set of claims and the authorization policy for those claims can be configured declaratively under the [\<claimsAuthorizationManager>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager.md) element.  
   
 ## WCF changes as a result of WIF integration:  
   
--   The WCF claims-based identity model is superseded by WIF. This means that classes in the <xref:System.IdentityModel.Claims?displayProperty=nameWithType>, <xref:System.IdentityModel.Policy?displayProperty=nameWithType>, and <xref:System.IdentityModel.Selectors?displayProperty=nameWithType> namespaces should be dropped in favor of using WIF classes.  
+- The WCF claims-based identity model is superseded by WIF. This means that classes in the <xref:System.IdentityModel.Claims?displayProperty=nameWithType>, <xref:System.IdentityModel.Policy?displayProperty=nameWithType>, and <xref:System.IdentityModel.Selectors?displayProperty=nameWithType> namespaces should be dropped in favor of using WIF classes.  
   
--   WIF is now enabled on a WCF service by specifying the `useIdentityConfiguration` attribute on the `<system.serviceModel>`/`<behaviors>`/`<serviceBehaviors>`/`<serviceCredentials>` element as in the following XML:  
+- WIF is now enabled on a WCF service by specifying the `useIdentityConfiguration` attribute on the `<system.serviceModel>`/`<behaviors>`/`<serviceBehaviors>`/`<serviceCredentials>` element as in the following XML:  
   
     ```xml  
     <serviceCredentials useIdentityConfiguration="true">  
@@ -51,6 +51,7 @@ The first version of Windows Identity Foundation (WIF) shipped as a standalone d
      When you use the **Identity and Access Tool for Visual Studio 2012** (see **Changes to the Visual Studio Experience** above), the tool adds a `<serviceCredentials>` element with the `useIdentityConfiguration` attribute set to the configuration file for you. It also adds a corresponding [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) element that contains the WIF configuration settings and adds a binding and other settings necessary to outsource authentication to your chosen STS.  
   
 ## See also
+
 - [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)
 - [Namespace Mapping between WIF 3.5 and WIF 4.5](../../../docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md)
 - [WIF API Reference](../../../docs/framework/security/wif-api-reference.md)

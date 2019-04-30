@@ -29,7 +29,7 @@ HRESULT RegisterMemoryNotificationCallback (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallback`  
  [in] An interface pointer to an [ICLRMemoryNotificationCallback](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md) instance that is implemented by the CLR.  
   
@@ -60,5 +60,6 @@ HRESULT RegisterMemoryNotificationCallback (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRMemoryNotificationCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

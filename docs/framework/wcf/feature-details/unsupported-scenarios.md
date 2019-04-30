@@ -14,13 +14,13 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ### Windows XP and Secure Context Token Cookie Enabled  
  WCF does not support impersonation and an <xref:System.InvalidOperationException> is thrown when the following conditions exist:  
   
--   The operating system is [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- The operating system is [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
--   The authentication mode results in a Windows identity.  
+- The authentication mode results in a Windows identity.  
   
--   The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property of the <xref:System.ServiceModel.OperationBehaviorAttribute> is set to <xref:System.ServiceModel.ImpersonationOption.Required>.  
+- The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property of the <xref:System.ServiceModel.OperationBehaviorAttribute> is set to <xref:System.ServiceModel.ImpersonationOption.Required>.  
   
--   A state-based security context token (SCT) is created (by default, creation is disabled).  
+- A state-based security context token (SCT) is created (by default, creation is disabled).  
   
  The state-based SCT can only be created using a custom binding. For more information, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).) In code, the token is enabled by creating a security binding element (either <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> or <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>) using the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> or the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> method and setting the `requireCancellation` parameter to `false`. The parameter refers to the caching of the SCT. Setting the value to `false` enables the state-based SCT feature.  
   
@@ -62,18 +62,18 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
  There are two possible ways to tell if a certificate uses KSP:  
   
--   Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.  
+- Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.  
   
--   Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://go.microsoft.com/fwlink/?LinkId=120056).  
+- Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://go.microsoft.com/fwlink/?LinkId=120056).  
   
 ## Message Security Fails if Using ASP.NET Impersonation and ASP.NET Compatibility Is Required  
  WCF does not support the following combination of settings because they can prevent client authentication from occurring:  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
+- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
+- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
   
--   Message mode security is used.  
+- Message mode security is used.  
   
  The work-around is to turn off the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode. Or, if the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is required, disable the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] impersonation feature and use WCF-provided impersonation instead. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
@@ -103,6 +103,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  The fix is to modify the binding directly on the client after doing the import.  
   
 ## See also
+
 - [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
 - [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
 - [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)

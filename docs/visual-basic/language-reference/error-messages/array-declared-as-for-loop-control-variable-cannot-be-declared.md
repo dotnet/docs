@@ -25,9 +25,10 @@ For Each listElement(1) As Integer In arrayList
   
 ## To correct this error  
   
--   Remove the initialization from the declaration of the *element* iteration variable.  
+- Remove the initialization from the declaration of the *element* iteration variable.  
   
 ## See also
+
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
 - [Collections](../../../standard/collections/index.md)

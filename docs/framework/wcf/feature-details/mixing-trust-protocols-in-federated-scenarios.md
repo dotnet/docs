@@ -9,17 +9,17 @@ There may be scenarios in which federated clients communicate with a service and
 ## RP Feb 2005 and STS Feb 2005  
  The WSDL for Relying Party (RP) contains the following elements within the `RequestSecurityTokenTemplate` section:  
   
--   `CanonicalizationAlgorithm`  
+- `CanonicalizationAlgorithm`  
   
--   `EncryptionAlgorithm`  
+- `EncryptionAlgorithm`  
   
--   `EncryptWith`  
+- `EncryptWith`  
   
--   `SignWith`  
+- `SignWith`  
   
--   `KeySize`  
+- `KeySize`  
   
--   `KeyType`  
+- `KeyType`  
   
  The client configuration file contains a list of parameters.  
   
@@ -28,19 +28,19 @@ There may be scenarios in which federated clients communicate with a service and
 ## RP Trust 1.3 and STS Trust 1.3  
  The WSDL for RP contains the following elements within the `RequestSecurityTokenTemplate` section:  
   
--   `CanonicalizationAlgorithm`  
+- `CanonicalizationAlgorithm`  
   
--   `EncryptionAlgorithm`  
+- `EncryptionAlgorithm`  
   
--   `EncryptWith`  
+- `EncryptWith`  
   
--   `SignWith`  
+- `SignWith`  
   
--   `KeySize`  
+- `KeySize`  
   
--   `KeyType`  
+- `KeyType`  
   
--   `KeyWrapAlgorithm`  
+- `KeyWrapAlgorithm`  
   
  The client configuration file contains a `secondaryParameters` element that wraps the parameters specified by the RP.  
   
@@ -49,17 +49,17 @@ There may be scenarios in which federated clients communicate with a service and
 ## RP Trust Feb 2005 and STS Trust 1.3  
  The WSDL for RP contains the following elements in the `RequestSecurityTokenTemplate` section:  
   
--   `CanonicalizationAlgorithm`  
+- `CanonicalizationAlgorithm`  
   
--   `EncryptionAlgorithm`  
+- `EncryptionAlgorithm`  
   
--   `EncryptWith`  
+- `EncryptWith`  
   
--   `SignWith`  
+- `SignWith`  
   
--   `KeySize`  
+- `KeySize`  
   
--   `KeyType`  
+- `KeyType`  
   
  The client configuration file contains a list of parameters.  
   
@@ -67,28 +67,28 @@ There may be scenarios in which federated clients communicate with a service and
   
  WCF handles the `KeyType`, `KeySize`, and `TokenType` elements as follows:  
   
--   Download the WSDL, create the binding, and assign `KeyType`, `KeySize`, and `TokenType` from the RP parameters. The client configuration file is then generated.  
+- Download the WSDL, create the binding, and assign `KeyType`, `KeySize`, and `TokenType` from the RP parameters. The client configuration file is then generated.  
   
--   The client can now change any parameter in the configuration file.  
+- The client can now change any parameter in the configuration file.  
   
--   During runtime, WCF copies all parameters specified into the `AdditionalTokenParameters` section of the client configuration file except `KeyType`, `KeySize` and `TokenType`, because these parameters are accounted for during the configuration file generation.  
+- During runtime, WCF copies all parameters specified into the `AdditionalTokenParameters` section of the client configuration file except `KeyType`, `KeySize` and `TokenType`, because these parameters are accounted for during the configuration file generation.  
   
 ## RP Trust 1.3 and STS Trust Feb 2005  
  The WSDL for RP contains the following elements in the `RequestSecurityTokenTemplate` section:  
   
--   `CanonicalizationAlgorithm`  
+- `CanonicalizationAlgorithm`  
   
--   `EncryptionAlgorithm`  
+- `EncryptionAlgorithm`  
   
--   `EncryptWith`  
+- `EncryptWith`  
   
--   `SignWith`  
+- `SignWith`  
   
--   `KeySize`  
+- `KeySize`  
   
--   `KeyType`  
+- `KeyType`  
   
--   `KeyWrapAlgorithm`  
+- `KeyWrapAlgorithm`  
   
  The client configuration file contains a `secondaryParamters` element that wraps the parameters specified by the RP.  
   

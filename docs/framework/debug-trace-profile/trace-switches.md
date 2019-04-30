@@ -27,13 +27,13 @@ Trace switches enable you to enable, disable, and filter tracing output. They ar
 ## Trace Levels  
  When you use **TraceSwitch**, there are additional considerations. A **TraceSwitch** object has four properties that return **Boolean** values indicating whether the switch is set to at least a particular level:  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceError%2A?displayProperty=nameWithType>  
+- <xref:System.Diagnostics.TraceSwitch.TraceError%2A?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A?displayProperty=nameWithType>  
+- <xref:System.Diagnostics.TraceSwitch.TraceWarning%2A?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A?displayProperty=nameWithType>  
+- <xref:System.Diagnostics.TraceSwitch.TraceInfo%2A?displayProperty=nameWithType>  
   
--   <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A?displayProperty=nameWithType>  
+- <xref:System.Diagnostics.TraceSwitch.TraceVerbose%2A?displayProperty=nameWithType>  
   
  Levels allow you to limit the amount of tracing information you receive to only that information needed to solve a problem. You specify the level of detail you want in your tracing output by setting and configuring trace switches to the appropriate trace level. You can receive error messages, warning messages, informational messages, verbose tracing messages, or no message at all.  
   
@@ -78,6 +78,7 @@ MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());
  In addition to providing **BooleanSwitch** and **TraceSwitch**, you can define your own switches by inheriting from the **Switch** class and overriding the base class methods with customized methods. For more information about creating developer-defined switches, see the <xref:System.Diagnostics.Switch> class in the .NET Framework reference.  
   
 ## See also
+
 - [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
 - [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
 - [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

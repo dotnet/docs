@@ -1,1 +1,0 @@
-        Dim car2 = New With {Key .Name = car.Name, Key .ID = car.ID}

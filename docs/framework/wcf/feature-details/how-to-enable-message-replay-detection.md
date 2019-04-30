@@ -20,33 +20,33 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
 ### To control replay detection on the client using code  
   
-1.  Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> to use in a <xref:System.ServiceModel.Channels.CustomBinding>. For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md). The following example uses a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> created with the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
+1. Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> to use in a <xref:System.ServiceModel.Channels.CustomBinding>. For more information, see [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md). The following example uses a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> created with the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
   
-2.  Use the <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A> property to return a reference to the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings> class and set any of the following properties, as appropriate:  
+2. Use the <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A> property to return a reference to the <xref:System.ServiceModel.Channels.LocalClientSecuritySettings> class and set any of the following properties, as appropriate:  
   
-    1.  `DetectReplay`. A Boolean value. This governs whether the client should detect replays from the server. The default is `true`.  
+    1. `DetectReplay`. A Boolean value. This governs whether the client should detect replays from the server. The default is `true`.  
   
-    2.  `MaxClockSkew`. A <xref:System.TimeSpan> value. Governs how much time skew the replay mechanism can tolerate between the client and the server. The security mechanism examines the time stamp sent and determines whether it was sent too far back in the past. The default is 5 minutes.  
+    2. `MaxClockSkew`. A <xref:System.TimeSpan> value. Governs how much time skew the replay mechanism can tolerate between the client and the server. The security mechanism examines the time stamp sent and determines whether it was sent too far back in the past. The default is 5 minutes.  
   
-    3.  `ReplayWindow`. A `TimeSpan` value. This governs how long a message can live in the network after the server sends it (through intermediaries) before reaching the client. The client tracks the signatures of the messages sent within the latest `ReplayWindow` for the purposes of replay detection.  
+    3. `ReplayWindow`. A `TimeSpan` value. This governs how long a message can live in the network after the server sends it (through intermediaries) before reaching the client. The client tracks the signatures of the messages sent within the latest `ReplayWindow` for the purposes of replay detection.  
   
-    4.  `ReplayCacheSize`. An integer value. The client stores the signatures of the message in a cache. This setting specifies how many signatures the cache can store. If the number of messages sent within the last replay window reaches the cache limit, new messages are rejected until the oldest cached signatures reach the time limit. The default is 500000.  
+    4. `ReplayCacheSize`. An integer value. The client stores the signatures of the message in a cache. This setting specifies how many signatures the cache can store. If the number of messages sent within the last replay window reaches the cache limit, new messages are rejected until the oldest cached signatures reach the time limit. The default is 500000.  
   
 ### To control replay detection on the service using code  
   
-1.  Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> to use in a <xref:System.ServiceModel.Channels.CustomBinding>.  
+1. Create a <xref:System.ServiceModel.Channels.SecurityBindingElement> to use in a <xref:System.ServiceModel.Channels.CustomBinding>.  
   
-2.  Use the <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A> property to return a reference to the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> class, and set the properties as described previously.  
+2. Use the <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A> property to return a reference to the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings> class, and set the properties as described previously.  
   
 ### To control replay detection in configuration for the client or service  
   
-1.  Create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+1. Create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
-2.  Create a `<security>` element.  
+2. Create a `<security>` element.  
   
-3.  Create a [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md) or [\<localServiceSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md).  
+3. Create a [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md) or [\<localServiceSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md).  
   
-4.  Set the following attribute values, as appropriate: `detectReplays`, `maxClockSkew`, `replayWindow`, and `replayCacheSize`. The following example sets the attributes of both a `<localServiceSettings>` and a `<localClientSettings>` element:  
+4. Set the following attribute values, as appropriate: `detectReplays`, `maxClockSkew`, `replayWindow`, and `replayCacheSize`. The following example sets the attributes of both a `<localServiceSettings>` and a `<localClientSettings>` element:  
   
     ```xml  
     <customBinding>  
@@ -82,21 +82,22 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
  If you do not use secure conversation sessions, replay detection does not guarantee detecting replays in server farm scenarios and when the process is recycled. This applies to the following system-provided bindings:  
   
--   <xref:System.ServiceModel.BasicHttpBinding>.  
+- <xref:System.ServiceModel.BasicHttpBinding>.  
   
--   <xref:System.ServiceModel.WSHttpBinding> with the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property set to `false`.  
+- <xref:System.ServiceModel.WSHttpBinding> with the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> property set to `false`.  
   
 ## Compiling the Code  
   
--   The following namespaces are required to compile the code:  
+- The following namespaces are required to compile the code:  
   
--   <xref:System>  
+- <xref:System>  
   
--   <xref:System.ServiceModel>  
+- <xref:System.ServiceModel>  
   
--   <xref:System.ServiceModel.Channels>  
+- <xref:System.ServiceModel.Channels>  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)

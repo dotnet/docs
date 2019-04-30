@@ -75,9 +75,9 @@ Applies runtime reflection policy to a property.
   
  However, compiling and executing this example throws a [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exception. Although we've made metadata for the `Book` type available, we've failed to make the implementations of the property getters available dynamically. We can correct this error by either in one of two ways:  
   
--   by defining the `Dynamic` policy for the `Book` type in its [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element.  
+- by defining the `Dynamic` policy for the `Book` type in its [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element.  
   
--   By adding a nested [\<Property>](../../../docs/framework/net-native/property-element-net-native.md) element for each property whose getter we'd like to invoke, as the following default.rd.xml file does.  
+- By adding a nested [\<Property>](../../../docs/framework/net-native/property-element-net-native.md) element for each property whose getter we'd like to invoke, as the following default.rd.xml file does.  
   
     ```xml  
     <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -94,6 +94,7 @@ Applies runtime reflection policy to a property.
     ```  
   
 ## See also
+
 - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
 - [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
 - [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

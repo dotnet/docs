@@ -43,19 +43,19 @@ Select item
   
  In addition to these [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] capabilities, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides an improved XML programming interface. Using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you can:  
   
--   Load XML from files or streams.  
+- Load XML from files or streams.  
   
--   Serialize XML to files or streams.  
+- Serialize XML to files or streams.  
   
--   Create XML from scratch by using functional construction.  
+- Create XML from scratch by using functional construction.  
   
--   Query XML using XPath-like axes.  
+- Query XML using XPath-like axes.  
   
--   Manipulate the in-memory XML tree by using methods such as <xref:System.Xml.Linq.XContainer.Add%2A>, <xref:System.Xml.Linq.XNode.Remove%2A>, <xref:System.Xml.Linq.XNode.ReplaceWith%2A>, and <xref:System.Xml.Linq.XElement.SetValue%2A>.  
+- Manipulate the in-memory XML tree by using methods such as <xref:System.Xml.Linq.XContainer.Add%2A>, <xref:System.Xml.Linq.XNode.Remove%2A>, <xref:System.Xml.Linq.XNode.ReplaceWith%2A>, and <xref:System.Xml.Linq.XElement.SetValue%2A>.  
   
--   Validate XML trees using XSD.  
+- Validate XML trees using XSD.  
   
--   Use a combination of these features to transform XML trees from one shape into another.  
+- Use a combination of these features to transform XML trees from one shape into another.  
   
 ## Creating XML Trees  
  IOne of the most significant advantages of programming with [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is that it is easy to create XML trees. For example, to create a small XML tree, you can write  code as follows:  

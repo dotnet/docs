@@ -1,0 +1,14 @@
+- name: Compiler and Language Provider Settings Schema
+  href: index.md
+  items:
+  - name: <system.codedom> Element
+    href: system-codedom-element.md
+    items:
+    - name: <compilers> Element
+      href: compilers-element.md
+      items:
+      - name: <compiler> Element
+        href: compiler-element.md
+        items:
+        - name: <providerOption> Element
+          href: provideroption-element.md

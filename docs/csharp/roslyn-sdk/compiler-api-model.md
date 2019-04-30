@@ -4,6 +4,7 @@ description: This overview provides the background you need to work effectively 
 ms.date: 10/10/2017
 ms.custom: mvc
 ---
+
 # Understand the .NET Compiler Platform SDK model
 
 Compilers process the code you write following structured rules that often
@@ -26,7 +27,7 @@ imported metadata to form named symbols. Next, the bind phase matches identifier
 in the code to symbols. Finally, the emit phase emits an assembly with
 all the information built up by the compiler.
 
-![compiler pipeline api provides access to each step that is part of the compiler pipelien](media/compiler-api-model/compiler-pipeline-api.png)
+![compiler pipeline api provides access to each step that is part of the compiler pipeline](media/compiler-api-model/compiler-pipeline-api.png)
 
 Corresponding to each of those phases, the .NET Compiler Platform SDK exposes an
 object model that allows access to the information at that phase. The parsing

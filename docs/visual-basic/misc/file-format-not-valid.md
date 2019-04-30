@@ -10,9 +10,10 @@ Either you tried to load a file into a component, but the format of the data in 
   
 ## To correct this error  
   
-1.  Consult the documentation for the component to determine the proper format for disk file data.  
+1. Consult the documentation for the component to determine the proper format for disk file data.  
   
-2.  Consult the documentation for the component to determine whether it provides support for converting from one format to another.  
+2. Consult the documentation for the component to determine whether it provides support for converting from one format to another.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

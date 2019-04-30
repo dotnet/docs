@@ -12,7 +12,7 @@ ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
  The Windows Forms `MainMenu` component displays a menu at run time.  
   
 ## In This Section  
- [MainMenu Component Overview](../../../../docs/framework/winforms/controls/mainmenu-component-overview-windows-forms.md)  
+ [MainMenu Component Overview](mainmenu-component-overview-windows-forms.md)  
  Explains what this component is and its key features and properties.  
   
 ## Reference  
@@ -20,5 +20,6 @@ ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
  Describes this class and has links to all its members.  
   
 ## See also
+
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ContextMenuStrip>

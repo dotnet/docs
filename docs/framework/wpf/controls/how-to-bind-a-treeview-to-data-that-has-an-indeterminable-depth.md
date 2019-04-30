@@ -17,8 +17,9 @@ There might be times when you want to bind a <xref:System.Windows.Controls.TreeV
 ## Example  
  The following example demonstrates how to bind a <xref:System.Windows.Controls.TreeView> to hierarchical data and use a <xref:System.Windows.HierarchicalDataTemplate> to specify the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> for each <xref:System.Windows.Controls.TreeViewItem>.  The <xref:System.Windows.Controls.TreeView> binds to XML data that represents the employees in a company.  Each `Employee` element can contain other `Employee` elements to indicate who reports to whom. Because the data is recursive, the <xref:System.Windows.HierarchicalDataTemplate> can be applied to each level.  
   
- [!code-xaml[TreeViewWithUnknownDepth#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewWithUnknownDepth/CS/Window1.xaml#1)]  
+ [!code-xaml[TreeViewWithUnknownDepth#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewWithUnknownDepth/CS/Window1.xaml#1)]  
   
 ## See also
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+
+- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Templating Overview](../data/data-templating-overview.md)

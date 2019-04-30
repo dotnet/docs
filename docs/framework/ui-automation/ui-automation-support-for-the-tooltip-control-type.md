@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "ToolTip control type"
   - "control types, ToolTip"
 ms.assetid: c3779d78-3164-43ae-8dae-bfaeafffdd65
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the ToolTip Control Type
 > [!NOTE]
@@ -80,6 +78,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.ToolTip>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

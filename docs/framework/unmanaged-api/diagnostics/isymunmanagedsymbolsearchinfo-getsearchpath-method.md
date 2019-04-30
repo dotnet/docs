@@ -28,7 +28,7 @@ HRESULT GetSearchPathLength(
     [out] ULONG32 *pcchPath);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcchPath`  
  [out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the search path.  
   
@@ -39,4 +39,5 @@ HRESULT GetSearchPathLength(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md)

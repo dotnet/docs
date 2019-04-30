@@ -58,6 +58,7 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
  Security can be either message- or transport-specific.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.PeerSecurityElement>
 - <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Security%2A>

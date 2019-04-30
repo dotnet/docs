@@ -1,4 +1,4 @@
-﻿---
+---
 title: "What's New in WPF Version 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -11,33 +11,33 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
   
  This topic contains the following sections:  
   
--   [Ribbon control](#ribbon_control)  
+- [Ribbon control](#ribbon_control)  
   
--   [Improved performance when displaying large sets of grouped data](#grouped_virtualization)  
+- [Improved performance when displaying large sets of grouped data](#grouped_virtualization)  
   
--   [New features for the VirtualizingPanel](#VirtualizingPanel)  
+- [New features for the VirtualizingPanel](#VirtualizingPanel)  
   
--   [Binding to static properties](#static_properties)  
+- [Binding to static properties](#static_properties)  
   
--   [Accessing collections on non-UI Threads](#xthread_access)  
+- [Accessing collections on non-UI Threads](#xthread_access)  
   
--   [Synchronously and Asynchronously validating data](#INotifyDataErrorInfo)  
+- [Synchronously and Asynchronously validating data](#INotifyDataErrorInfo)  
   
--   [Automatically updating the source of a data binding](#delay)  
+- [Automatically updating the source of a data binding](#delay)  
   
--   [Binding to types that Implement ICustomTypeProvider](#ICustomTypeProvider)  
+- [Binding to types that Implement ICustomTypeProvider](#ICustomTypeProvider)  
   
--   [Retrieving data binding information from a binding expression](#binding_state)  
+- [Retrieving data binding information from a binding expression](#binding_state)  
   
--   [Checking for a valid DataContext object](#DisconnectedSource)  
+- [Checking for a valid DataContext object](#DisconnectedSource)  
   
--   [Repositioning data as the data's values change (Live shaping)](#live_shaping)  
+- [Repositioning data as the data's values change (Live shaping)](#live_shaping)  
   
--   [Improved Support for Establishing a Weak Reference to an Event](#weak_event_pattern)  
+- [Improved Support for Establishing a Weak Reference to an Event](#weak_event_pattern)  
   
--   [New methods for the Dispatcher class](#async)  
+- [New methods for the Dispatcher class](#async)  
   
--   [Markup Extensions for Events](#events_markup_extenions)  
+- [Markup Extensions for Events](#events_markup_extenions)  
   
 <a name="ribbon_control"></a>   
 ## Ribbon control  
@@ -50,17 +50,17 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 <a name="VirtualizingPanel"></a>   
 ## New features for the VirtualizingPanel  
   
-1.  You can specify whether a <xref:System.Windows.Controls.VirtualizingPanel>, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, displays partial items by using the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> attached property. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Item>, the <xref:System.Windows.Controls.VirtualizingPanel> will only display items that are completely visible. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Pixel>, the <xref:System.Windows.Controls.VirtualizingPanel> can display partially visible items.  
+1. You can specify whether a <xref:System.Windows.Controls.VirtualizingPanel>, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, displays partial items by using the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> attached property. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Item>, the <xref:System.Windows.Controls.VirtualizingPanel> will only display items that are completely visible. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Pixel>, the <xref:System.Windows.Controls.VirtualizingPanel> can display partially visible items.  
   
-2.  You can specify the  size of the cache before and after the viewport when the <xref:System.Windows.Controls.VirtualizingPanel> is virtualizing by using the <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A> attached property.  The cache is the amount of space above or below the viewport in which items are not virtualized.  Using a cache to avoid generating UI elements as they’re scrolled into view can improve performance. The cache is populated at a lower priority so that the application does not become unresponsive during the operation. The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A?displayProperty=nameWithType> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=nameWithType>.  
+2. You can specify the  size of the cache before and after the viewport when the <xref:System.Windows.Controls.VirtualizingPanel> is virtualizing by using the <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A> attached property.  The cache is the amount of space above or below the viewport in which items are not virtualized.  Using a cache to avoid generating UI elements as they’re scrolled into view can improve performance. The cache is populated at a lower priority so that the application does not become unresponsive during the operation. The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A?displayProperty=nameWithType> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=nameWithType>.  
   
 <a name="static_properties"></a>   
 ## Binding to static properties  
  You can use static properties as the source of a data binding. The data binding engine recognizes when the property's value changes if a static event is raised.  For example, if the class `SomeClass` defines a static property called `MyProperty`, `SomeClass` can define a static event that is raised when the value of `MyProperty` changes.  The static event can use either of the following signatures.  
   
--   `public static event EventHandler MyPropertyChanged;`  
+- `public static event EventHandler MyPropertyChanged;`  
   
--   `public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;`  
+- `public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;`  
   
  Note that in the first case, the class exposes a static event named *PropertyName*`Changed` that passes <xref:System.EventArgs> to the event handler.  In the second case, the class exposes a static event named `StaticPropertyChanged` that passes <xref:System.ComponentModel.PropertyChangedEventArgs> to the event handler. A class that implements the static property can choose to raise property-change notifications using either method.  
   
@@ -80,11 +80,11 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ## Binding to types that Implement ICustomTypeProvider  
  WPF supports data binding to objects that implement <xref:System.Reflection.ICustomTypeProvider>, also known as custom types.  You can use custom types in the following cases.  
   
-1.  As a <xref:System.Windows.PropertyPath> in a data binding. For example, the <xref:System.Windows.Data.Binding.Path%2A> property of a <xref:System.Windows.Data.Binding> can reference a property of a custom type.  
+1. As a <xref:System.Windows.PropertyPath> in a data binding. For example, the <xref:System.Windows.Data.Binding.Path%2A> property of a <xref:System.Windows.Data.Binding> can reference a property of a custom type.  
   
-2.  As the value of the <xref:System.Windows.DataTemplate.DataType%2A> property.  
+2. As the value of the <xref:System.Windows.DataTemplate.DataType%2A> property.  
   
-3.  As a type that determines the automatically generated columns in a <xref:System.Windows.Controls.DataGrid>.  
+3. As a type that determines the automatically generated columns in a <xref:System.Windows.Controls.DataGrid>.  
   
 <a name="binding_state"></a>   
 ## Retrieving data binding information from a binding expression  
@@ -109,15 +109,16 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
   
 <a name="weak_event_pattern"></a>   
 ## Improved Support for Establishing a Weak Reference to an Event  
- Implementing the weak event pattern is now easier because subscribers to events can participate in it without implementing an extra interface.  The generic <xref:System.Windows.WeakEventManager> class also enables subscribers to participate in the weak event pattern if a dedicated <xref:System.Windows.WeakEventManager> does not exist for a certain event.  For more information, see [Weak Event Patterns](../../../../docs/framework/wpf/advanced/weak-event-patterns.md).  
+ Implementing the weak event pattern is now easier because subscribers to events can participate in it without implementing an extra interface.  The generic <xref:System.Windows.WeakEventManager> class also enables subscribers to participate in the weak event pattern if a dedicated <xref:System.Windows.WeakEventManager> does not exist for a certain event.  For more information, see [Weak Event Patterns](../advanced/weak-event-patterns.md).  
   
 <a name="async"></a>   
 ## New methods for the Dispatcher class  
- The Dispatcher class defines new methods for synchronous and asynchronous operations.  The synchronous <xref:System.Windows.Threading.Dispatcher.Invoke%2A> method defines overloads that take an <xref:System.Action> or <xref:System.Func%601> parameter. The new asynchronous method, <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, also takes an <xref:System.Action> or <xref:System.Func%601> as the callback parameter and returns a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>.   The <xref:System.Windows.Threading.DispatcherOperation> and <xref:System.Windows.Threading.DispatcherOperation%601> classes define a <xref:System.Threading.Tasks.Task> property.  When you call <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, you can use the `await` keyword with either the <xref:System.Windows.Threading.DispatcherOperation> or the associated <xref:System.Threading.Tasks.Task>. If you need to wait synchronously for the <xref:System.Threading.Tasks.Task> that is returned by a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>, call the <xref:System.Windows.Threading.TaskExtensions.DispatcherOperationWait%2A> extension method. Calling <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> will result in a deadlock if the operation is queued on a calling thread. For more information about using a <xref:System.Threading.Tasks.Task> to perform asynchronous operations, see [Task Parallelism (Task Parallel Library)](../../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md).  
+ The Dispatcher class defines new methods for synchronous and asynchronous operations.  The synchronous <xref:System.Windows.Threading.Dispatcher.Invoke%2A> method defines overloads that take an <xref:System.Action> or <xref:System.Func%601> parameter. The new asynchronous method, <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, also takes an <xref:System.Action> or <xref:System.Func%601> as the callback parameter and returns a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>.   The <xref:System.Windows.Threading.DispatcherOperation> and <xref:System.Windows.Threading.DispatcherOperation%601> classes define a <xref:System.Threading.Tasks.Task> property.  When you call <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, you can use the `await` keyword with either the <xref:System.Windows.Threading.DispatcherOperation> or the associated <xref:System.Threading.Tasks.Task>. If you need to wait synchronously for the <xref:System.Threading.Tasks.Task> that is returned by a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>, call the <xref:System.Windows.Threading.TaskExtensions.DispatcherOperationWait%2A> extension method. Calling <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> will result in a deadlock if the operation is queued on a calling thread. For more information about using a <xref:System.Threading.Tasks.Task> to perform asynchronous operations, see [Task Parallelism (Task Parallel Library)](../../../standard/parallel-programming/task-based-asynchronous-programming.md).  
   
 <a name="events_markup_extenions"></a>   
 ## Markup Extensions for Events  
  WPF 4.5 supports markup extensions for events.  While WPF does not define a markup extension to be used for events, third parties are able to create a markup extension that can be used with events.  
   
 ## See also
-- [What's New in the .NET Framework](../../../../docs/framework/whats-new/index.md)
+
+- [What's New in the .NET Framework](../../whats-new/index.md)

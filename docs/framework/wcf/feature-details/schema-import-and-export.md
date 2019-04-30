@@ -27,11 +27,11 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
   
  Note that the generated type follows several data contract best practices (found in [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)):  
   
--   The type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. For more information, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+- The type implements the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. For more information, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
--   Data members are implemented as public properties that wrap private fields.  
+- Data members are implemented as public properties that wrap private fields.  
   
--   The class is a partial class, and additions can be made without modifying generated code.  
+- The class is a partial class, and additions can be made without modifying generated code.  
   
  The <xref:System.Runtime.Serialization.XsdDataContractExporter> enables you to do the reverse—take types that are serializable with the `DataContractSerializer` and generate an XSD Schema document.  
   
@@ -54,6 +54,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  For more information about using the <xref:System.Runtime.Serialization.XsdDataContractExporter>, see [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md).  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>
 - <xref:System.Runtime.Serialization.XsdDataContractExporter>

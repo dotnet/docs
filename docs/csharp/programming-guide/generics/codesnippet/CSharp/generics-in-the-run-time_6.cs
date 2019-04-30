@@ -1,1 +1,0 @@
-            customers = new Stack<Customer>();

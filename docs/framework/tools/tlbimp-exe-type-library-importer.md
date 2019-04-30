@@ -26,7 +26,7 @@ The Type Library Importer converts the type definitions found within a COM type 
 tlbimp tlbFile [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -120,6 +120,7 @@ void SomeMethod(out bool x);
 ```  
   
 ## See also
+
 - [Tools](index.md)
 - [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)
 - [Importing a Type Library as an Assembly](../interop/importing-a-type-library-as-an-assembly.md)

@@ -21,26 +21,26 @@ To maintain type safety and security, C# does not support pointer arithmetic, by
 ## Unsafe Code Overview  
  Unsafe code has the following properties:  
   
--   Methods, types, and code blocks can be defined as unsafe.  
+- Methods, types, and code blocks can be defined as unsafe.  
   
--   In some cases, unsafe code may increase an application's performance by removing array bounds checks.  
+- In some cases, unsafe code may increase an application's performance by removing array bounds checks.  
   
--   Unsafe code is required when you call native functions that require pointers.  
+- Unsafe code is required when you call native functions that require pointers.  
   
--   Using unsafe code introduces security and stability risks.  
+- Using unsafe code introduces security and stability risks.  
   
--   In order for C# to compile unsafe code, the application must be compiled with [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md).  
+- In order for C# to compile unsafe code, the application must be compiled with [/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md).  
   
 ## Related Sections  
  For more information, see:  
   
--   [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
   
--   [Fixed Size Buffers](../../../csharp/programming-guide/unsafe-code-pointers/fixed-size-buffers.md)  
+- [Fixed Size Buffers](../../../csharp/programming-guide/unsafe-code-pointers/fixed-size-buffers.md)  
   
--   [How to: Use Pointers to Copy an Array of Bytes](../../../csharp/programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md)  
+- [How to: Use Pointers to Copy an Array of Bytes](../../../csharp/programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md)  
   
--   [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
   
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

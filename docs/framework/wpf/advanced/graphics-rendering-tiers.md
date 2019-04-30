@@ -11,30 +11,28 @@ ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
 ---
 # Graphics Rendering Tiers
 A rendering tier defines a level of graphics hardware capability and performance for a device that runs a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
-  
 
-  
 <a name="graphics_hardware"></a>   
 ## Graphics Hardware  
  The features of the graphics hardware that most impact the rendering tier levels are:  
   
--   **Video RAM** The amount of video memory on the graphics hardware determines the size and number of buffers that can be used for compositing graphics.  
+- **Video RAM** The amount of video memory on the graphics hardware determines the size and number of buffers that can be used for compositing graphics.  
   
--   **Pixel Shader** A pixel shader is a graphics processing function that calculates effects on a per-pixel basis. Depending on the resolution of the displayed graphics, there could be several million pixels that need to be processed for each display frame.  
+- **Pixel Shader** A pixel shader is a graphics processing function that calculates effects on a per-pixel basis. Depending on the resolution of the displayed graphics, there could be several million pixels that need to be processed for each display frame.  
   
--   **Vertex Shader** A vertex shader is a graphics processing function that performs mathematical operations on the vertex data of the object.  
+- **Vertex Shader** A vertex shader is a graphics processing function that performs mathematical operations on the vertex data of the object.  
   
--   **Multitexture Support** Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
+- **Multitexture Support** Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
   
 <a name="rendering_tier_definitions"></a>   
 ## Rendering Tier Definitions  
  The features of the graphics hardware determine the rendering capability of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] system defines three rendering tiers:  
   
--   **Rendering Tier 0** No graphics hardware acceleration. All graphics features use software acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is less than version 9.0.  
+- **Rendering Tier 0** No graphics hardware acceleration. All graphics features use software acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is less than version 9.0.  
   
--   **Rendering Tier 1** Some graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
+- **Rendering Tier 1** Some graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
   
--   **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
+- **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] version level is greater than or equal to version 9.0.  
   
  The <xref:System.Windows.Media.RenderCapability.Tier%2A?displayProperty=nameWithType> property allows you to retrieve the rendering tier at application run time. You use the rendering tier to determine whether the device supports certain hardware-accelerated graphics features. Your application can then take different code paths at run time depending on the rendering tier supported by the device.  
   
@@ -84,7 +82,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Rasterized content that uses <xref:System.Windows.Media.Imaging.RenderTargetBitmap>|Any content rendered by using the <xref:System.Windows.Media.Imaging.RenderTargetBitmap.Render%2A> method of <xref:System.Windows.Media.Imaging.RenderTargetBitmap>.|  
 |Tiled content that uses <xref:System.Windows.Media.TileBrush>|Any tiled content in which the <xref:System.Windows.Media.TileBrush.TileMode%2A> property of the <xref:System.Windows.Media.TileBrush> is set to <xref:System.Windows.Media.TileMode.Tile>.|  
 |Surfaces that exceed the maximum texture size of the graphics hardware|For most graphics hardware, large surfaces are 2048x2048 or 4096x4096 pixels in size.|  
-|Any operation whose video RAM requirement exceeds the memory of the graphics hardware|You can monitor application video RAM usage by using the Perforator tool that is included in the [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e) in the Windows SDK.|  
+|Any operation whose video RAM requirement exceeds the memory of the graphics hardware|You can monitor application video RAM usage by using the Perforator tool that is included in the [WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100)) in the Windows SDK.|  
 |Layered windows|Layered windows allow [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications to render content to the screen in a non-rectangular window. On operating systems that support Windows Display Driver Model (WDDM), such as [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] and [!INCLUDE[win7](../../../../includes/win7-md.md)], layered windows are hardware accelerated. On other systems, such as [!INCLUDE[winxp](../../../../includes/winxp-md.md)], layered windows are rendered by software with no hardware acceleration.<br /><br /> You can enable layered windows in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] by setting the following <xref:System.Windows.Window> properties:<br /><br /> -   <xref:System.Windows.Window.WindowStyle%2A> = <xref:System.Windows.WindowStyle.None><br />-   <xref:System.Windows.Window.AllowsTransparency%2A> = `true`<br />-   <xref:System.Windows.Controls.Control.Background%2A> = <xref:System.Windows.Media.Brushes.Transparent%2A>|  
   
 <a name="other_resources"></a>   
@@ -101,7 +99,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
   
- These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Registry Editor. For more information, see [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md).  
+ These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Registry Editor. For more information, see [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md).  
   
 ### WPF Performance Profiling Tools  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The following table lists the performance profiling tools that are included in the [!INCLUDE[TLA2#tla_lhsdk](../../../../includes/tla2sharptla-lhsdk-md.md)] tool, WPF Performance Suite:  
@@ -111,7 +109,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Perforator|Use for analyzing rendering behavior.|  
 |Visual Profiler|Use for profiling the use of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] services, such as layout and event handling, by elements in the visual tree.|  
   
- The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e).  
+ The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100)).  
   
 ### DirectX Diagnostic Tool  
  The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]-related issues. The default installation folder for the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool is:  
@@ -120,13 +118,14 @@ A rendering tier defines a level of graphics hardware capability and performance
   
  When you run the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]-related information. For example, the **System** tab provides system information about your computer and specifies the version of [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] that is installed on your computer.  
   
- ![Screenhot: DirectX Diagnostic Tool](../../../../docs/framework/wpf/advanced/media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
+ ![Screenhot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
 DirectX Diagnostic Tool main window  
   
 ## See also
+
 - <xref:System.Windows.Media.RenderCapability>
 - <xref:System.Windows.Media.RenderOptions>
-- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)
-- [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)
-- [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)
+- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+- [WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))
+- [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md)
+- [Animation Tips and Tricks](../graphics-multimedia/animation-tips-and-tricks.md)

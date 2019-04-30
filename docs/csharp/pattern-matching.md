@@ -1,11 +1,11 @@
 ---
 title: Pattern Matching - C# Guide
 description: Learn about pattern matching expressions in C#
-ms.date: 01/24/2017
+ms.date: 04/10/2019
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 
-# Pattern Matching #
+# Pattern Matching
 
 Patterns test that a value has a certain *shape*, and can *extract*
 information from the value when it has the matching shape. Pattern
@@ -13,17 +13,17 @@ matching provides more concise syntax for algorithms you already use
 today. You already create pattern matching algorithms using existing
 syntax. You write `if` or `switch` statements that test values. Then,
 when those statements match, you extract and use information from that
-value. The new syntax elements are extensions to statements you are already
+value. The new syntax elements are extensions to statements you're already
 familiar with: `is` and `switch`. These new extensions combine testing
 a value and extracting that information.
 
-In this topic, we'll look at the new syntax to show you how it enables
+In this article, we'll look at the new syntax to show you how it enables
 readable, concise code. Pattern matching enables idioms where data and
-the code are separated, unlike object oriented designs where data 
+the code are separated, unlike object-oriented designs where data 
 and the methods that manipulate them are tightly coupled.
 
 To illustrate these new idioms, let's work with structures that represent
-geometric shapes using pattern matching statements. You are probably
+geometric shapes using pattern matching statements. You're probably
 familiar with building class hierarchies and creating
 [virtual methods and overridden methods](methods.md#inherited) to
 customize object behavior based on the runtime type of the object.
@@ -36,14 +36,13 @@ write `if` statements and `switch` that test a variable's value. You write `is`
 statements that test a variable's type. *Pattern matching* adds new capabilities
 to those statements.
 
-In this topic, you'll build a method  that computes the area of
-different geometric shapes. But, you'll do it without resorting to object
-oriented techniques and building a class hierarchy for the different shapes.
+In this article, you'll build a method  that computes the area of
+different geometric shapes. But, you'll do it without resorting to object-oriented techniques and building a class hierarchy for the different shapes.
 You'll use *pattern matching* instead.
 As you go through this sample, contrast this code with how it would
 be structured as an object hierarchy. When the data you must
-query and manipulate is not a class hierarchy, pattern matching enables
-very elegant designs.
+query and manipulate isn't a class hierarchy, pattern matching enables
+elegant designs.
 
 Rather than starting with an abstract shape definition and adding different
 specific shape classes, let's start instead with simple data only definitions
@@ -84,8 +83,8 @@ Let's examine both of those rules in detail, beginning with scope. The variable
 `c` is in scope only in the `else` branch of the first `if` statement. The variable
 `s` is in scope in the method `ComputeAreaModernIs`. That's because each 
 branch of an `if` statement establishes a separate scope for variables. However, the `if` statement
-itself does not. That means variables declared in the `if` statement are in the
-same scope as the `if` statement (the method in this case.) This behavior is not
+itself doesn't. That means variables declared in the `if` statement are in the
+same scope as the `if` statement (the method in this case.) This behavior isn't
 specific to pattern matching, but is the defined behavior for variable scopes 
 and `if` and `else` statements.
 
@@ -101,13 +100,13 @@ because of the definitely assigned when true mechanism.
 > `false` branch. While this is valid C#, it is not recommended
 > because it is more confusing to follow the logic.
 
-These rules mean that you are unlikely to accidentally access the result
-of a pattern match expression when that pattern was not met.
+These rules mean that you're unlikely to accidentally access the result
+of a pattern match expression when that pattern wasn't met.
 
 ## Using pattern matching `switch` statements
 
 As time goes on, you may need to support other shape types. As the number
-of conditions you are testing grows, you'll find that using the `is` pattern
+of conditions you're testing grows, you'll find that using the `is` pattern
 matching expressions can become cumbersome. In addition to requiring `if`
 statements on each type you want to check, the `is` expressions are limited
 to testing if the input matches a single type. In this case, you'll find that the `switch` pattern
@@ -129,7 +128,7 @@ statement using the type pattern:
 The pattern matching `switch` statement uses familiar syntax to developers
 who have used the traditional C-style `switch` statement. Each `case` is evaluated
 and the code beneath the condition that matches the input variable is
-executed. Code execution cannot "fall through" from one case expression
+executed. Code execution can't "fall through" from one case expression
 to the next; the syntax of the `case` statement requires that each `case`
 end with a `break`, `return`, or `goto`.
 
@@ -151,9 +150,9 @@ it followed that the
 Now, with more generalized `switch` expressions, the order of each section
 matters. The `switch` expressions are evaluated in textual order. Execution
 transfers to the first `switch` label that matches the `switch` expression.  
-Note that the `default` case will only be executed if no other
+The `default` case will only be executed if no other
 case labels match. The `default` case is evaluated last, regardless
-of its textual order. If there is no `default` case, and none of the
+of its textual order. If there's no `default` case, and none of the
 other `case` statements match, execution continues at the statement
 following the `switch` statement. None of the `case` labels code is
 executed.
@@ -175,13 +174,13 @@ method returns the constant 0.
 
 This example introduces two different variables in the two `case` labels
 for the first `switch` block. Notice that the statements in this `switch` block
-do not use either the variables `c` (for the circle) or `s` (for the square).
+don't use either the variables `c` (for the circle) or `s` (for the square).
 Neither of those variables is definitely assigned in this `switch` block.
 If either of these cases match, clearly one of the variables has been assigned.
-However, it is impossible to tell *which* has been assigned at compile-time,
+However, it's impossible to tell *which* has been assigned at compile time,
 because either case could match at runtime. For that reason,
 most times when you use multiple `case` labels for the same block, you won't
-introduce a new variable in the `case` statement, or you will only use the
+introduce a new variable in the `case` statement, or you'll only use the
 variable in the `when` clause.
 
 Having added those shapes with 0 area, let's add a couple more shape types:
@@ -192,20 +191,20 @@ a rectangle and a triangle:
  This set of changes adds `case` labels for the degenerate case, and labels
  and blocks for each of the new shapes. 
 
-Finally, you can add a `null` case to ensure the argument is not `null`:
+Finally, you can add a `null` case to ensure the argument isn't `null`:
 
 [!code-csharp[NullCase](../../samples/csharp/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
 
 The special behavior for the `null` pattern is interesting because the constant
-`null` in the pattern does not have a type but can be converted to any reference
+`null` in the pattern doesn't have a type but can be converted to any reference
 type or nullable type. Rather than convert a `null` to any type, the language
-defines that a `null` value will not match any type pattern, regardless of the
+defines that a `null` value won't match any type pattern, regardless of the
 compile-time type of the variable. This behavior makes the new `switch` based
 type pattern consistent with the `is` statement: `is` statements always return `false` when
-the value being checked is `null`. It's also simpler: once you have
+the value being checked is `null`. It's also simpler: once you've
 checked the type, you don't need an additional null check. You can see that from
 the fact that there are no null checks in any of the case blocks of the samples above:
-they are not necessary, since matching the type pattern guarantees a non-null value.
+they aren't necessary, since matching the type pattern guarantees a non-null value.
 
 ## `var` declarations in `case` expressions
 
@@ -217,7 +216,7 @@ follows the normal type inference rules: The type is inferred to be the
 static type of the switch expression. From that rule, the type always
 matches.
 
-The second rule is that a `var` declaration does not have the null check
+The second rule is that a `var` declaration doesn't have the null check
 that other type pattern expressions include. That means the variable
 may be null, and a null check is necessary in that case.
 
@@ -232,14 +231,14 @@ case will never execute.
 > `switch` statement behavior where all possible cases have been listed.
 
 The third rule introduces uses where a `var` case may be useful. Imagine
-that you are doing a pattern match where the input is a string and you are
+that you're doing a pattern match where the input is a string and you're
 searching for known command values. You might write something like:
 
 [!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
 
 The `var` case matches `null`, the empty string, or any string that contains
 only white space. Notice that the preceding code uses the `?.` operator to
-ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.
+ensure that it doesn't accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that aren't understood by this command parser.
 
 This is one example where you may want to consider
 a `var` case expression that is distinct from a `default` expression.
@@ -247,12 +246,12 @@ a `var` case expression that is distinct from a `default` expression.
 ## Conclusions
 
 *Pattern Matching constructs* enable you to easily manage control flow
-among different variables and types that are not related by an inheritance
+among different variables and types that aren't related by an inheritance
 hierarchy. You can also control logic to use any condition you test on
 the variable. It enables patterns and idioms that you'll need more often
 as you build more distributed applications, where data and the methods that
 manipulate that data are separate. You'll notice that the shape structs
-used in this sample do not contain any methods, just read-only properties.
+used in this sample don't contain any methods, just read-only properties.
 Pattern Matching works with any data type. You write expressions that examine
 the object, and make control flow decisions based on those conditions.
 
@@ -260,6 +259,5 @@ Compare the code from this sample with the design that would follow from
 creating a class hierarchy for an abstract `Shape` and specific derived
 shapes each with their own implementation of a virtual method to calculate
 the area. You'll often find that pattern matching expressions can be a very
-useful tool when you are working with data and want to separate the data
+useful tool when you're working with data and want to separate the data
 storage concerns from the behavior concerns.
-

@@ -21,7 +21,7 @@ Sign Tool is a command-line tool that digitally signs files, verifies signatures
 signtool [command] [options] [file_name | ...]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -204,5 +204,6 @@ signtool verify /c MyCatalog.cat SystemFile.dll
 ```  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

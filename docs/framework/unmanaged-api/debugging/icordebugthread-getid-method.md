@@ -29,7 +29,7 @@ HRESULT GetID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwThreadId`  
  [out] The identifier of the thread.  
   

@@ -5,6 +5,7 @@ api_name:
   - "CoInitializeCor"
 api_location: 
   - "mscoree.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -35,4 +36,5 @@ STDAPI CoInitializeCor (
  **Header:** Cor.h  
   
 ## See also
+
 - [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

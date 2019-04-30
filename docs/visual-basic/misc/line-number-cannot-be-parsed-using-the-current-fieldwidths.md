@@ -10,7 +10,7 @@ The specified line cannot be parsed because its fields have widths other than th
   
 ## To correct this error  
   
--   Adjust `FieldWidths` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
+- Adjust `FieldWidths` so the line can be parsed correctly, or insert exception-handling code in order to handle the line.  
   
 ## See also
 

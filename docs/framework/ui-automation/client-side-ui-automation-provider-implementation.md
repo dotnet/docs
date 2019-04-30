@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "client-side UI Automation provider, implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Client-Side UI Automation Provider Implementation
 > [!NOTE]
@@ -35,16 +33,17 @@ ms.author: "mhopkins"
   
  Providers implemented in the client's own code are registered by using <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviders%2A>. This method takes as an argument an array of <xref:System.Windows.Automation.ClientSideProviderDescription> structures, each of which specifies the following properties:  
   
--   A callback function that creates the provider object.  
+- A callback function that creates the provider object.  
   
--   The class name of the controls that the provider will serve.  
+- The class name of the controls that the provider will serve.  
   
--   The image name of the application (usually the full name of the executable file) that the provider will serve.  
+- The image name of the application (usually the full name of the executable file) that the provider will serve.  
   
--   Flags that govern how the class name is matched against window classes found in the target application.  
+- Flags that govern how the class name is matched against window classes found in the target application.  
   
  The last two parameters are optional. The client might specify the image name of the target application when it wants to use different providers for different applications. For example, the client might use one provider for a [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] list view control in a known application that supports the Multiple View pattern, and another for a similar control in another known application that does not.  
   
 ## See also
+
 - [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
 - [Implement UI Automation Providers in a Client Application](../../../docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md)

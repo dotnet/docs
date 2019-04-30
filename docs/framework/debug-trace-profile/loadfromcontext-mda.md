@@ -22,11 +22,11 @@ The `loadFromContext` managed debugging assistant (MDA) is activated if an assem
 ## Resolution  
  Configure applications such that <xref:System.Reflection.Assembly.LoadFrom%2A> calls are no longer needed. You can use the following techniques for doing so:  
   
--   Install assemblies in the global assembly cache.  
+- Install assemblies in the global assembly cache.  
   
--   Place assemblies in the <xref:System.AppDomainSetup.ApplicationBase%2A> directory for the <xref:System.AppDomain>. In the case of the default domain, the <xref:System.AppDomainSetup.ApplicationBase%2A> directory is the one that contains the executable file that started the process. This might also require creating a new <xref:System.AppDomain> if it is not convenient to move the assembly.  
+- Place assemblies in the <xref:System.AppDomainSetup.ApplicationBase%2A> directory for the <xref:System.AppDomain>. In the case of the default domain, the <xref:System.AppDomainSetup.ApplicationBase%2A> directory is the one that contains the executable file that started the process. This might also require creating a new <xref:System.AppDomain> if it is not convenient to move the assembly.  
   
--   Add a probing path to your application configuration (.config) file or to secondary  application domains if dependent assemblies are in child directories relative to the executable.  
+- Add a probing path to your application configuration (.config) file or to secondary  application domains if dependent assemblies are in child directories relative to the executable.  
   
  In each case, the code can be changed to use the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
   
@@ -67,4 +67,5 @@ namespace ConsoleApplication1
 ```  
   
 ## See also
+
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

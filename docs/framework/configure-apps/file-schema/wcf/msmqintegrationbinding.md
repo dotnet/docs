@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<msmqIntegrationBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -124,6 +124,7 @@ msmqIntegrationBinding
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement>
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>

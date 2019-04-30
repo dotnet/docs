@@ -16,7 +16,8 @@ ms.assetid: 3b0592bd-7223-4860-a108-a5d72f3a9178
   
  This example does not run.  
   
- [!code-csharp[FontSizeConverter#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FontSizeConverter/CSharp/Window1.xaml.cs#1)]  
+ [!code-csharp[FontSizeConverter#1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSizeConverter/CSharp/Window1.xaml.cs#1)]  
   
 ## See also
+
 - <xref:System.Windows.FontSizeConverter>

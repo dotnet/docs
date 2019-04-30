@@ -29,7 +29,7 @@ HRESULT IsNull (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbNull`  
  [out] A pointer to a Boolean value that is `true` if this `ICorDebugReferenceValue` object is null; otherwise, `pbNull` is `false`.  
   

@@ -29,7 +29,7 @@ HRESULT GetCallee (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrame`  
  [out] A pointer to the address of an `ICorDebugFrame` object that represents the called frame. This value is null if the calling frame is the innermost frame in the current chain.  
   

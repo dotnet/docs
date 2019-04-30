@@ -20,7 +20,7 @@ The following web sites provide guidance and can help you find answers to common
 |Term|Definition|
 |----------|----------------|
 |[Visual Basic .NET Language Design](https://github.com/dotnet/vblang)|Official repository on GitHub for Visual Basic .NET language design.|
-|[Microsoft Visual Basic Team Blog](https://blogs.msdn.microsoft.com/vbteam/)|Provides access to the Visual Basic team blog.|
+|[Microsoft Visual Basic Team Blog](https://devblogs.microsoft.com/vbteam/)|Provides access to the Visual Basic team blog.|
 
 ### Code samples
 

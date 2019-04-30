@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "UI Automation, exposing content of tables"
   - "exposing content of tables using UI Automation"
 ms.assetid: ac3c5eaa-49c7-4653-b83e-532e2a2604a2
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Expose the Content of a Table Using UI Automation
 > [!NOTE]
@@ -38,6 +36,7 @@ ms.author: "mhopkins"
 [!code-vb[UIATableItemPattern_snip#103](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#103)]  
   
 ## See also
+
 - [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
 - [Implementing the UI Automation Table Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-table-control-pattern.md)

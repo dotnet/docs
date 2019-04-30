@@ -37,7 +37,7 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 caspol [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -241,5 +241,6 @@ caspol -all -resolveperm testassembly
 ```  
   
 ## See also
+
 - [Tools](index.md)
 - [Command Prompts](developer-command-prompt-for-vs.md)

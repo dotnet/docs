@@ -1,1 +1,0 @@
-  ' The preceding statement generates a COMPILER ERROR. 

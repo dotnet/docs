@@ -10,7 +10,8 @@ The specified process cannot be located.
   
 ## To correct this error  
   
-1.  Ensure that you have supplied the correct process name.  
+1. Ensure that you have supplied the correct process name.  
   
 ## See also
+
 - [Managing Processes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/z63bbakd(v=vs.90))

@@ -23,7 +23,7 @@ HRESULT ForwardTranslateAccelerator(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  pMsg  
  A pointer to a message.  
   
@@ -31,7 +31,7 @@ HRESULT ForwardTranslateAccelerator(
  `true` when the app has already been given a chance to handle the input message, but has not handled it; otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [.NET Framework System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [.NET Framework System Requirements](../../get-started/system-requirements.md).  
   
  **DLL:**  
   
@@ -42,4 +42,5 @@ HRESULT ForwardTranslateAccelerator(
  **.NET Framework Version:** [!INCLUDE[net_current_v30plus](../../../../includes/net-current-v30plus-md.md)]  
   
 ## See also
-- [WPF Unmanaged API Reference](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)
+
+- [WPF Unmanaged API Reference](wpf-unmanaged-api-reference.md)

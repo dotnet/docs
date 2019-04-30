@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation, control patterns for clients"
   - "control patterns, UI Automation clients"
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Control Patterns for Clients
 > [!NOTE]
@@ -41,6 +39,7 @@ ms.author: "mhopkins"
  Controls implementing custom control types can have any set of control patterns that are needed to represent their functionality.  
   
 ## See also
+
 - [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)
 - [UI Automation Text Pattern](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)
 - [Invoke a Control Using UI Automation](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)

@@ -19,9 +19,10 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control arranges its contents in
   
  Any Windows Forms control can be a child of the <xref:System.Windows.Forms.FlowLayoutPanel> control, including other instances of <xref:System.Windows.Forms.FlowLayoutPanel>. With this capability, you can construct sophisticated layouts that adapt to your form's dimensions at run time.  
   
- Also see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](https://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\)).  
+ Also see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>
 - <xref:System.Windows.Forms.TableLayoutPanel>
-- [FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/flowlayoutpanel-control-windows-forms.md)
+- [FlowLayoutPanel Control](flowlayoutpanel-control-windows-forms.md)

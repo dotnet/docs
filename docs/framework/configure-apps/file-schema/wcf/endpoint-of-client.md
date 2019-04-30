@@ -66,6 +66,7 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
 - <xref:System.ServiceModel.Configuration.ClientSection>
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>

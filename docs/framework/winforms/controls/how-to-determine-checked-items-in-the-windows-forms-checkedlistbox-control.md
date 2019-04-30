@@ -15,7 +15,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
 ### To determine checked items in a CheckedListBox control  
   
-1.  Iterate through the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> collection, starting at 0 since the collection is zero-based. Note that this method will give you the item number in the list of checked items, not the overall list. So if the first item in the list is not checked and the second item is checked, the code below will display text like "Checked Item 1 = MyListItem2".  
+1. Iterate through the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> collection, starting at 0 since the collection is zero-based. Note that this method will give you the item number in the list of checked items, not the overall list. So if the first item in the list is not checked and the second item is checked, the code below will display text like "Checked Item 1 = MyListItem2".  
   
     ```vb  
     ' Determine if there are any items checked.  
@@ -62,7 +62,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
      - or -  
   
-2.  Step through the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection, starting at 0 since the collection is zero-based, and call the <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> method for each item. Note that this method will give you the item number in the overall list, so if the first item in the list is not checked and the second item is checked, it will display something like "Item 2 = MyListItem2".  
+2. Step through the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection, starting at 0 since the collection is zero-based, and call the <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> method for each item. Note that this method will give you the item number in the overall list, so if the first item in the list is not checked and the second item is checked, it will display something like "Item 2 = MyListItem2".  
   
     ```vb  
     Dim i As Integer  
@@ -106,4 +106,5 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
     ```  
   
 ## See also
-- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

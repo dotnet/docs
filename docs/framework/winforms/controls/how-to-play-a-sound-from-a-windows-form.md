@@ -34,31 +34,31 @@ private void playSimpleSound()
 ## Compiling the Code  
  This example requires:  
   
--   That you replace the file name `"c:\Windows\Media\chimes.wav"` with a valid file name.  
+- That you replace the file name `"c:\Windows\Media\chimes.wav"` with a valid file name.  
   
--   (C#) A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
+- (C#) A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
 ## Robust Programming  
  File operations should be enclosed within appropriate structured exception handling blocks.  
   
  The following conditions may cause an exception:  
   
--   The path name is malformed. For example, it contains illegal characters or is only white space (<xref:System.ArgumentException> class).  
+- The path name is malformed. For example, it contains illegal characters or is only white space (<xref:System.ArgumentException> class).  
   
--   The path is read-only (<xref:System.IO.IOException> class).  
+- The path is read-only (<xref:System.IO.IOException> class).  
   
--   The path name is `null` (<xref:System.ArgumentNullException> class).  
+- The path name is `null` (<xref:System.ArgumentNullException> class).  
   
--   The path name is too long (<xref:System.IO.PathTooLongException> class).  
+- The path name is too long (<xref:System.IO.PathTooLongException> class).  
   
--   The path is invalid (<xref:System.IO.DirectoryNotFoundException> class).  
+- The path is invalid (<xref:System.IO.DirectoryNotFoundException> class).  
   
--   The path is only a colon, ":" (<xref:System.NotSupportedException> class).  
+- The path is only a colon, ":" (<xref:System.NotSupportedException> class).  
   
 ## .NET Framework Security  
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
 ## See also
-- <xref:System.Media.SoundPlayer>
-- [How to: Load a Sound Asynchronously within a Windows Form](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)
 
+- <xref:System.Media.SoundPlayer>
+- [How to: Load a Sound Asynchronously within a Windows Form](how-to-load-a-sound-asynchronously-within-a-windows-form.md)

@@ -35,9 +35,10 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
 ## Example  
  The following code shows two examples where the `Call` keyword is necessary to call a procedure. In both examples, the called expression doesn't start with an identifier.  
   
- [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/call-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#97](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#97)]  
   
 ## See also
+
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
 - [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)

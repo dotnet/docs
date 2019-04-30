@@ -13,31 +13,32 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A> method retu
   
 ### To find subdirectories with a specific pattern  
   
--   Use the `GetDirectories` method, supplying the name and path of the directory you want to search. The following example returns all the directories in the directory structure that contain the word "Logs" in their name, and adds them to `ListBox1`.  
+- Use the `GetDirectories` method, supplying the name and path of the directory you want to search. The following example returns all the directories in the directory structure that contain the word "Logs" in their name, and adds them to `ListBox1`.  
   
-     [!code-vb[VbVbcnFileAccess#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-find-subdirectories-with-a-specific-pattern_1.vb)]  
+     [!code-vb[VbVbcnFileAccess#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnFileAccess/VB/Class1.vb#1)]  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
+- The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
   
--   The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
+- The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   One or more of the specified wildcard characters is `Nothing`, an empty string, or contains only spaces (<xref:System.ArgumentNullException>).  
+- One or more of the specified wildcard characters is `Nothing`, an empty string, or contains only spaces (<xref:System.ArgumentNullException>).  
   
--   `directory` does not exist (<xref:System.IO.DirectoryNotFoundException>).  
+- `directory` does not exist (<xref:System.IO.DirectoryNotFoundException>).  
   
--   `directory` points to an existing file (<xref:System.IO.IOException>).  
+- `directory` points to an existing file (<xref:System.IO.IOException>).  
   
--   The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
+- The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
   
--   A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
+- A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
   
--   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
+- The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
--   The user lacks necessary permissions (<xref:System.UnauthorizedAccessException>).  
+- The user lacks necessary permissions (<xref:System.UnauthorizedAccessException>).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>
 - [How to: Find Files with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)

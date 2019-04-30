@@ -30,21 +30,21 @@ You can navigate over nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref
 ## Comments and Processing Instruction Node Navigation  
  The following <xref:System.Xml.XPath.XPathNavigator> class methods are valid for moving to comments or processing instructions from other nodes in an XML document.  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToFirstChild%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToFirstChild%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>  
   
 ## See also
 

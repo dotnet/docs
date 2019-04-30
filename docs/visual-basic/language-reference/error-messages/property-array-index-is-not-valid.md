@@ -10,7 +10,8 @@ The supplied value is not valid for a property array index.
   
 ## To correct this error  
   
--   Check the component's documentation to make sure your index is within the valid range for the specified property.  
+- Check the component's documentation to make sure your index is within the valid range for the specified property.  
   
 ## See also
+
 - [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

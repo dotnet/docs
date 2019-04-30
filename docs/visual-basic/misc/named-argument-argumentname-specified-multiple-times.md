@@ -10,7 +10,8 @@ You specified a named argument more than once.
   
 ## To correct this error  
   
--   Remove all but one of the specifications.  
+- Remove all but one of the specifications.  
   
 ## See also
+
 - [Passing Arguments by Position and by Name](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)

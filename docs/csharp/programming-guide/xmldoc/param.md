@@ -17,7 +17,7 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 <param name="name">description</param>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of a method parameter. Enclose the name in double quotation marks (" ").  
   
@@ -32,7 +32,7 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#1](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/param_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#1)]  
   
 ## See also
 

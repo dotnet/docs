@@ -31,7 +31,7 @@ HRESULT GetOffset(
     [out, retval] ULONG32*        pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] A pointer to the document for which the offset is requested.  
   
@@ -51,4 +51,5 @@ HRESULT GetOffset(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

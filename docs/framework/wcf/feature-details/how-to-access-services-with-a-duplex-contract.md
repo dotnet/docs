@@ -1,13 +1,14 @@
 ---
 title: "How to: Access services with a duplex contract"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "duplex contracts [WCF]"
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
 ---
+
 # How to: Access services with a duplex contract
 
 One feature of Windows Communication Foundation (WCF) is the ability to create a service that uses a duplex messaging pattern. This pattern allows a service to communicate with the client through a callback. This topic shows the steps to create a WCF client in a client class that implements the callback interface.
@@ -47,7 +48,7 @@ For a tutorial on creating a basic WCF service and client, see [Getting Started 
           Console.WriteLine("Result ({0})", result)
        End Sub
         Public Sub Equation(ByVal equation As String)
-            Console.Writeline("Equation({0})", equation)
+            Console.WriteLine("Equation({0})", equation)
         End Sub
     End Class
     ```

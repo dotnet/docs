@@ -10,8 +10,9 @@ A cyclic operation has failed. Cyclic operations cycle and therefore cannot comp
   
 ## To correct this error  
   
--   When inheriting, make sure that there are no cyclic references.  
+- When inheriting, make sure that there are no cyclic references.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
-- [Debugging Basics: Breakpoints](https://msdn.microsoft.com/library/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)
+- [Use breakpoints in the Visual Studio debugger](/visualstudio/debugger/using-breakpoints)

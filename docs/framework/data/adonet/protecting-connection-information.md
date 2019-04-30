@@ -34,6 +34,7 @@ Protecting access to your data source is one of the most important goals when se
  You can also store connection strings in configuration files, which eliminates the need to embed them in your application's code. Configuration files are standard XML files for which the .NET Framework has defined a common set of elements. Connection strings in configuration files are typically stored inside the **\<connectionStrings>** element in the **app.config** for a Windows application, or the **web.config** file for an ASP.NET application. For more information on the basics of storing, retrieving and encrypting connection strings from configuration files, see [Connection Strings and Configuration Files](../../../../docs/framework/data/adonet/connection-strings-and-configuration-files.md).  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/previous-versions/aspnet/53tyfkaw(v=vs.100))
 - [Security in .NET](../../../standard/security/index.md)

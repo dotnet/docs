@@ -16,29 +16,30 @@ The <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Wi
   
 ### Retrieving the dynamic source with the OuterHtml property  
   
-1.  Create a new Windows Forms application. Start with a single <xref:System.Windows.Forms.Form>, and call it `Form1`.  
+1. Create a new Windows Forms application. Start with a single <xref:System.Windows.Forms.Form>, and call it `Form1`.  
   
-2.  Host the <xref:System.Windows.Forms.WebBrowser> control in your Windows Forms application, and name it `WebBrowser1`. For more information, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../../../../docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
+2. Host the <xref:System.Windows.Forms.WebBrowser> control in your Windows Forms application, and name it `WebBrowser1`. For more information, see [How to: Add Web Browser Capabilities to a Windows Forms Application](how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
-3.  Create a second <xref:System.Windows.Forms.Form> in your application called `CodeForm`.  
+3. Create a second <xref:System.Windows.Forms.Form> in your application called `CodeForm`.  
   
-4.  Add a <xref:System.Windows.Forms.RichTextBox> control to `CodeForm` and set its <xref:System.Windows.Forms.Control.Dock%2A> property to `Fill`.  
+4. Add a <xref:System.Windows.Forms.RichTextBox> control to `CodeForm` and set its <xref:System.Windows.Forms.Control.Dock%2A> property to `Fill`.  
   
-5.  Create a public property on `CodeForm` called `Code`.  
+5. Create a public property on `CodeForm` called `Code`.  
   
-     [!code-csharp[DisplayWebBrowserCode#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/DisplayWebBrowserCode/CS/CodeForm.cs#1)]
-     [!code-vb[DisplayWebBrowserCode#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayWebBrowserCode/VB/CodeForm.vb#1)]  
+     [!code-csharp[DisplayWebBrowserCode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DisplayWebBrowserCode/CS/CodeForm.cs#1)]
+     [!code-vb[DisplayWebBrowserCode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayWebBrowserCode/VB/CodeForm.vb#1)]  
   
-6.  Add a <xref:System.Windows.Forms.Button> control named `Button1` to your <xref:System.Windows.Forms.Form>, and monitor for the <xref:System.Windows.Forms.Control.Click> event. For details on monitoring events, see [Events](../../../../docs/standard/events/index.md).  
+6. Add a <xref:System.Windows.Forms.Button> control named `Button1` to your <xref:System.Windows.Forms.Form>, and monitor for the <xref:System.Windows.Forms.Control.Click> event. For details on monitoring events, see [Events](../../../standard/events/index.md).  
   
-7.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler.  
+7. Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler.  
   
-     [!code-csharp[DisplayWebBrowserCode#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/DisplayWebBrowserCode/CS/Form1.cs#2)]
-     [!code-vb[DisplayWebBrowserCode#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayWebBrowserCode/VB/Form1.vb#2)]  
+     [!code-csharp[DisplayWebBrowserCode#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DisplayWebBrowserCode/CS/Form1.cs#2)]
+     [!code-vb[DisplayWebBrowserCode#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayWebBrowserCode/VB/Form1.vb#2)]  
   
 ## Robust Programming  
  Always test the value of <xref:System.Windows.Forms.WebBrowser.Document%2A> before attempting to retrieve it. If the current page is not finished loading, <xref:System.Windows.Forms.WebBrowser.Document%2A> or one or more of its child objects may not be initialized.  
   
 ## See also
-- [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)
-- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)
+
+- [Using the Managed HTML Document Object Model](using-the-managed-html-document-object-model.md)
+- [WebBrowser Control Overview](webbrowser-control-overview.md)

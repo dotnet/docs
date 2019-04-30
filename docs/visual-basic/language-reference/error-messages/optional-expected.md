@@ -15,9 +15,10 @@ An optional argument in a procedure declaration is followed by a required argume
   
 ## To correct this error  
   
-1.  If the argument is intended to be required, move it to precede the first optional argument in the argument list.  
+1. If the argument is intended to be required, move it to precede the first optional argument in the argument list.  
   
-2.  If the argument is intended to be optional, use the `Optional` keyword.  
+2. If the argument is intended to be optional, use the `Optional` keyword.  
   
 ## See also
+
 - [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)

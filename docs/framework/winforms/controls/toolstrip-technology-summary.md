@@ -19,23 +19,23 @@ This topic summarizes information about the `ToolStrip` control and the classes 
 ## Background  
  With the `ToolStrip` control and its associated classes, you can create advanced toolbar functionality that has consistent and professional appearance and behavior. The `ToolStrip` control and classes offer the following improvements over previous controls:  
   
--   A more consistent event model.  
+- A more consistent event model.  
   
--   A more consistent design-time behavior that contains task lists and item collection editors.  
+- A more consistent design-time behavior that contains task lists and item collection editors.  
   
--   Custom rendering with `ToolStripManager` and `ToolStripRenderer`.  
+- Custom rendering with `ToolStripManager` and `ToolStripRenderer`.  
   
--   Built-in rafting (sharing of horizontal or vertical space within the tool area when docked) with the `ToolStripContainer` and `ToolStripPanel`.  
+- Built-in rafting (sharing of horizontal or vertical space within the tool area when docked) with the `ToolStripContainer` and `ToolStripPanel`.  
   
--   Design-time and run-time reordering of items with the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property.  
+- Design-time and run-time reordering of items with the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property.  
   
--   Relocation of items to an overflow menu with the <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A> property.  
+- Relocation of items to an overflow menu with the <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A> property.  
   
--   Completely configurable control location with the `ToolStripContainer`, `ToolStripPanel`, and `ToolStripContentPanel`.  
+- Completely configurable control location with the `ToolStripContainer`, `ToolStripPanel`, and `ToolStripContentPanel`.  
   
--   Hosting of `ToolStrip`, traditional, or custom controls using `ToolStripControlHost`.  
+- Hosting of `ToolStrip`, traditional, or custom controls using `ToolStripControlHost`.  
   
--   Merging of `ToolStrip` controls using `ToolStripPanel`.  
+- Merging of `ToolStrip` controls using `ToolStripPanel`.  
   
  `ToolStrip` is the extensible base class for `MenuStrip`, `ContextMenuStrip`, and `StatusStrip`. These controls are <xref:System.Windows.Forms.ToolStripItem> containers that inherit common behavior and event handling, extended so that each implementation deals with the behavior that is appropriate for it. Controls that derive from <xref:System.Windows.Forms.ToolStripItem> are listed in the following table. The base `ToolStrip` class handles painting, user input, and drag-and-drop events for these controls.  
   
@@ -57,31 +57,31 @@ This topic summarizes information about the `ToolStrip` control and the classes 
 ### Task Dialog Boxes  
  In Visual Studio, clicking the smart tag on a control in the designer displays a task list for convenient access to many frequently used commands.  
   
--   [MenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
+- [MenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
   
--   [ToolStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
+- [ToolStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233648(v=vs.100))  
   
--   [ContextMenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233646\(v=vs.110\))  
+- [ContextMenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100))  
   
--   [StatusStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233642\(v=vs.110\))  
+- [StatusStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100))  
   
--   [ToolStripContainer Tasks Dialog Box](https://msdn.microsoft.com/library/ms233647\(v=vs.110\))  
+- [ToolStripContainer Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233647(v=vs.100))  
   
 ### Items Collection Editors  
  In Visual Studio, when you click **Edit Items** on the task list or right-click the control and select **Edit Items** in the shortcut menu, the collection editor for the control is displayed. Collection editors let you add, remove, and reorder items that the control contains. You can also view and change the properties for the control and the control's items.  
   
--   [MenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
+- [MenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
   
--   [StatusStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233631\(v=vs.110\))  
+- [StatusStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233631(v=vs.100))  
   
--   [ContextMenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233641\(v=vs.110\))  
+- [ContextMenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233641(v=vs.100))  
   
--   [ToolStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
+- [ToolStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100))  
   
 ## Hosting Controls  
  The <xref:System.Windows.Forms.ToolStripControlHost> class provides built-in wrappers for <xref:System.Windows.Forms.ToolStripComboBox>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> controls. You can also host any other existing or COM control in a <xref:System.Windows.Forms.ToolStripControlHost>.  
   
- For an example of control hosting, see [How to: Wrap a Windows Forms Control with ToolStripControlHost](../../../../docs/framework/winforms/controls/how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost.md).  
+ For an example of control hosting, see [How to: Wrap a Windows Forms Control with ToolStripControlHost](how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost.md).  
   
 ## Rendering  
  <xref:System.Windows.Forms.ToolStrip> classes implement a rendering scheme that is significantly different from other Windows Forms controls. With this scheme, you can easily apply styles and themes.  
@@ -90,7 +90,7 @@ This topic summarizes information about the `ToolStrip` control and the classes 
   
  You can apply the same style to multiple <xref:System.Windows.Forms.ToolStrip> objects in the same application by setting the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> to <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode> and setting the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A> or <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> property to <xref:System.Windows.Forms.ToolStripManagerRenderMode> that you want or <xref:System.Windows.Forms.ToolStripRenderer> value, respectively.  
   
- For examples of rendering, see [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](../../../../docs/framework/winforms/controls/create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md).  
+ For examples of rendering, see [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md).  
   
 ## Styles and Themes  
  <xref:System.Windows.Forms.ToolStrip> and associated classes provide an easy way to support visual styles and custom appearance that do not require overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A> methods for each item. Use the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> and the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> and <xref:System.Windows.Forms.ToolStrip.Renderer%2A> properties.  
@@ -106,12 +106,13 @@ This topic summarizes information about the `ToolStrip` control and the classes 
   
  The advantage of rafting over docking is that <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.StatusStrip> controls can share horizontal or vertical space with other controls.  
   
- Most of the <xref:System.Windows.Forms.ToolStrip> controls can be docked to the form like other controls instead of using rafting. You can also specify that a <xref:System.Windows.Forms.ToolStrip> control be freely positioned on the form by removing it from its <xref:System.Windows.Forms.ToolStripContainer> and setting its `Dock` property to `None`, or you can specify its absolute position by setting the respective <xref:System.Windows.Forms.Control.Location%2A> property. See [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](../../../../docs/framework/winforms/controls/how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md).  
+ Most of the <xref:System.Windows.Forms.ToolStrip> controls can be docked to the form like other controls instead of using rafting. You can also specify that a <xref:System.Windows.Forms.ToolStrip> control be freely positioned on the form by removing it from its <xref:System.Windows.Forms.ToolStripContainer> and setting its `Dock` property to `None`, or you can specify its absolute position by setting the respective <xref:System.Windows.Forms.Control.Location%2A> property. See [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md).  
   
  Use one or more <xref:System.Windows.Forms.ToolStripPanel> controls for more flexibility, especially for Multiple Document Interface (MDI) applications, or if you do not need a <xref:System.Windows.Forms.ToolStripContainer>. A <xref:System.Windows.Forms.ToolStripPanel> provides a dockable space for locating and rafting <xref:System.Windows.Forms.ToolStrip> controls but not traditional controls. By default, the <xref:System.Windows.Forms.ToolStripPanel> does not appear in the designer **Toolbox**, but you can put it there by right-clicking the **Toolbox**, and then click **Choose Items**. You can also programmatically access the <xref:System.Windows.Forms.ToolStripPanel> like any other class.  
   
  The <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.StatusStrip> let items overflow. This is similar to the way these items behave on Microsoft Office toolbars.  
   
 ## See also
-- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
-- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
+
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)

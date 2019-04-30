@@ -15,13 +15,14 @@ The purpose of hit testing is to determine whether the cursor is over a given ob
 ## Example  
  The following example creates a plus-shaped region by forming the union of two rectangular regions. Assume that the variable `point` holds the location of the most recent click. The code checks to see whether `point` is in the plus-shaped region. If the point is in the region (a hit), the region is filled with an opaque red brush. Otherwise, the region is filled with a semitransparent red brush.  
   
- [!code-csharp[System.Drawing.MiscLegacyTopics#31](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#31)]
- [!code-vb[System.Drawing.MiscLegacyTopics#31](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#31)]  
+ [!code-csharp[System.Drawing.MiscLegacyTopics#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#31)]
+ [!code-vb[System.Drawing.MiscLegacyTopics#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#31)]  
   
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
+
 - <xref:System.Drawing.Region>
-- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)
-- [How to: Use Clipping with a Region](../../../../docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md)
+- [Regions in GDI+](regions-in-gdi.md)
+- [How to: Use Clipping with a Region](how-to-use-clipping-with-a-region.md)

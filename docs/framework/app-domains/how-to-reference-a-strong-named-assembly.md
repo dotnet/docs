@@ -24,7 +24,7 @@ The process for referencing types or resources in a strong-named assembly is usu
   
 ### To make a compile-time reference to a strong-named assembly  
   
-1.  At the command prompt, type the following command:  
+1. At the command prompt, type the following command:  
   
      \<*compiler command*> **/reference:**\<*assembly name*>  
   
@@ -38,7 +38,7 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
   
 ### To make a run-time reference to a strong-named assembly  
   
-1.  When you make a run-time reference to a strong-named assembly (for example, by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> method), you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:  
+1. When you make a run-time reference to a strong-named assembly (for example, by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> method), you must use the display name of the referenced strong-named assembly. The syntax of a display name is as follows:  
   
      \<*assembly name*>**,** \<*version number*>**,** \<*culture*>**,** \<*public key token*>  
   
@@ -65,4 +65,5 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
  **sn -tp \<** *public key file* **>**  
   
 ## See also
+
 - [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

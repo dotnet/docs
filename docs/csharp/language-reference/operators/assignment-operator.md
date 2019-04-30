@@ -37,7 +37,7 @@ Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassi
 
 In the case of the ref assignment operator, the type of the left operand and the right operand must be the same.
 
-For more information, see the [feature proposal note](https://github.com/dotnet/csharplang/blob/master/proposals/csharp-7.3/ref-local-reassignment.md).
+For more information, see the [feature proposal note](../../../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md).
 
 ## Operator overloadability
 

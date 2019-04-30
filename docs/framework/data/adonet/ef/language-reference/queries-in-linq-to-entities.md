@@ -18,48 +18,49 @@ A query is an expression that retrieves data from a data source. Queries are usu
 ### Query Expression Syntax  
  Query expressions are a declarative query syntax. This syntax enables a developer to write queries in a high-level language that is formatted similar to Transact-SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, [Basic Query Operations (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/linq/basic-query-operations.md). For examples that demonstrate how to use the query expression syntax, see the following topics:  
   
--   [Query Expression Syntax Examples: Projection](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-projection.md)  
+- [Query Expression Syntax Examples: Projection](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-projection.md)  
   
--   [Query Expression Syntax Examples: Filtering](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-filtering.md)  
+- [Query Expression Syntax Examples: Filtering](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-filtering.md)  
   
--   [Query Expression Syntax Examples: Ordering](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-ordering.md)  
+- [Query Expression Syntax Examples: Ordering](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-ordering.md)  
   
--   [Query Expression Syntax Examples: Aggregate Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-aggregate-operators.md)  
+- [Query Expression Syntax Examples: Aggregate Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-aggregate-operators.md)  
   
--   [Query Expression Syntax Examples: Partitioning](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-partitioning.md)  
+- [Query Expression Syntax Examples: Partitioning](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-partitioning.md)  
   
--   [Query Expression Syntax Examples: Join Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-join-operators.md)  
+- [Query Expression Syntax Examples: Join Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-join-operators.md)  
   
--   [Query Expression Syntax Examples: Element Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-element-operators.md)  
+- [Query Expression Syntax Examples: Element Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-element-operators.md)  
   
--   [Query Expression Syntax Examples: Grouping](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-grouping.md)  
+- [Query Expression Syntax Examples: Grouping](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-grouping.md)  
   
--   [Query Expression Syntax Examples: Navigating Relationships](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-navigating-relationships.md)  
+- [Query Expression Syntax Examples: Navigating Relationships](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expression-syntax-examples-navigating-relationships.md)  
   
 ### Method-Based Query Syntax  
  Another way to compose [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md). For examples that demonstrate how to use method-based syntax, see the following topics:  
   
--   [Method-Based Query Syntax Examples: Projection](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-projection.md)  
+- [Method-Based Query Syntax Examples: Projection](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-projection.md)  
   
--   [Method-Based Query Syntax Examples: Filtering](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-filtering.md)  
+- [Method-Based Query Syntax Examples: Filtering](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-filtering.md)  
   
--   [Method-Based Query Syntax Examples: Ordering](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-ordering.md)  
+- [Method-Based Query Syntax Examples: Ordering](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-ordering.md)  
   
--   [Method-Based Query Syntax Examples: Aggregate Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-aggregate-operators.md)  
+- [Method-Based Query Syntax Examples: Aggregate Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-aggregate-operators.md)  
   
--   [Method-Based Query Syntax Examples: Partitioning](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-partitioning.md)  
+- [Method-Based Query Syntax Examples: Partitioning](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-partitioning.md)  
   
--   [Method-Based Query Syntax Examples: Conversion](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-conversion.md)  
+- [Method-Based Query Syntax Examples: Conversion](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-conversion.md)  
   
--   [Method-Based Query Syntax Examples: Join Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-join-operators.md)  
+- [Method-Based Query Syntax Examples: Join Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-join-operators.md)  
   
--   [Method-Based Query Syntax Examples: Element Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-element-operators.md)  
+- [Method-Based Query Syntax Examples: Element Operators](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-element-operators.md)  
   
--   [Method-Based Query Syntax Examples: Grouping](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-grouping.md)  
+- [Method-Based Query Syntax Examples: Grouping](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-grouping.md)  
   
--   [Method-Based Query Syntax Examples: Navigating Relationships](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-navigating-relationships.md)  
+- [Method-Based Query Syntax Examples: Navigating Relationships](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-navigating-relationships.md)  
   
 ## See also
+
 - [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
 - [Getting Started with LINQ in C#](~/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Getting Started with LINQ in Visual Basic](~/docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

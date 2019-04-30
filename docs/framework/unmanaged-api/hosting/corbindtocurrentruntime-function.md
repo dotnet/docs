@@ -34,7 +34,7 @@ HRESULT CorBindToCurrentRuntime (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszFileName`  
  [in] The name of an application configuration file that specifies the version of the CLR to load. If the file name is not fully qualified, it is assumed to be in the same directory as the executable making the call.  
   
@@ -61,6 +61,7 @@ HRESULT CorBindToCurrentRuntime (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [CorBindToRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)
 - [CorBindToRuntimeByCfg Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)
 - [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)

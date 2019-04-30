@@ -14,13 +14,13 @@ Client applications must create, configure, and use WCF client or channel object
 ## Overview  
  This topic describes behavior and issues relating to:  
   
--   Channel and session lifetimes.  
+- Channel and session lifetimes.  
   
--   Handling exceptions.  
+- Handling exceptions.  
   
--   Understanding blocking issues.  
+- Understanding blocking issues.  
   
--   Initializing channels interactively.  
+- Initializing channels interactively.  
   
 ### Channel and Session Lifetimes  
  Windows Communication Foundation (WCF) applications includes two categories of channels, datagram and sessionful.  
@@ -77,17 +77,18 @@ Client applications must create, configure, and use WCF client or channel object
   
  If using the explicit approach, the application must perform the following steps in order:  
   
-1.  Call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=nameWithType> (or an asynchronous version).  
+1. Call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=nameWithType> (or an asynchronous version).  
   
-2.  When the initializers have returned, call either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.IClientChannel> object or on the <xref:System.ServiceModel.IClientChannel> object returned from the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A?displayProperty=nameWithType> property.  
+2. When the initializers have returned, call either the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.IClientChannel> object or on the <xref:System.ServiceModel.IClientChannel> object returned from the <xref:System.ServiceModel.ClientBase%601.InnerChannel%2A?displayProperty=nameWithType> property.  
   
-3.  Call operations.  
+3. Call operations.  
   
  It is recommended that production-quality applications control the user-interface process by adopting the explicit approach.  
   
  Applications that use the implicit approach invoke the user-interface initializers, but if the user of the application fails to respond within the send timeout period of the binding, an exception is thrown when the user interface returns.  
   
 ## See also
+
 - [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)
 - [How to: Access Services with One-Way and Request-Reply Contracts](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
 - [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)

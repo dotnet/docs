@@ -29,7 +29,7 @@ HRESULT GetHelperThreadID (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThreadID`  
  [out] A pointer to the OS thread ID of the debugger's internal helper thread.  
   

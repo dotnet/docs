@@ -172,7 +172,7 @@ which has been disposed of. (It's been disposed, because it was declared in a
 `using` statement.) 
 
 Now, when you execute the delegate returned from this method, you'll have a
-`ObjecctDisposedException` thrown at the point of execution.
+`ObjectDisposedException` thrown at the point of execution.
 
 It does seem strange to have a runtime error representing a compile-time
 construct, but that's the world we enter when we work with

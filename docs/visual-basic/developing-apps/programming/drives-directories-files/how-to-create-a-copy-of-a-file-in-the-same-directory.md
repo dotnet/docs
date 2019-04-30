@@ -15,48 +15,49 @@ Use the `My.Computer.FileSystem.CopyFile` method to copy files. The parameters a
   
 ### To create a copy of a file in the same folder  
   
--   Use the `CopyFile` method, supplying the target file and the location. The following example creates a copy of `test.txt` called `test2.txt`.  
+- Use the `CopyFile` method, supplying the target file and the location. The following example creates a copy of `test.txt` called `test2.txt`.  
   
-     [!code-vb[VbVbcnMyFileSystem#51](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-the-same-directory_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#51)]  
   
 ### To create a copy of a file in the same folder, overwriting existing files  
   
--   Use the `CopyFile` method, supplying the target file and location, and setting `overwrite` to `True`. The following example creates a copy of `test.txt` called `test2.txt` and overwrites any existing files by that name.  
+- Use the `CopyFile` method, supplying the target file and location, and setting `overwrite` to `True`. The following example creates a copy of `test.txt` called `test2.txt` and overwrites any existing files by that name.  
   
-     [!code-vb[VbVbcnMyFileSystem#52](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-the-same-directory_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#52](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#52)]  
   
 ## Robust Programming  
  The following conditions may cause an exception to be thrown:  
   
--   The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
+- The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
   
--   The system could not retrieve the absolute path (<xref:System.ArgumentException>).  
+- The system could not retrieve the absolute path (<xref:System.ArgumentException>).  
   
--   The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
+- The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   The source file is not valid or does not exist (<xref:System.IO.FileNotFoundException>).  
+- The source file is not valid or does not exist (<xref:System.IO.FileNotFoundException>).  
   
--   The combined path points to an existing directory (<xref:System.IO.IOException>).  
+- The combined path points to an existing directory (<xref:System.IO.IOException>).  
   
--   The destination file exists and `overwrite` is set to `False` (<xref:System.IO.IOException>).  
+- The destination file exists and `overwrite` is set to `False` (<xref:System.IO.IOException>).  
   
--   The user does not have sufficient permissions to access the file (<xref:System.IO.IOException>).  
+- The user does not have sufficient permissions to access the file (<xref:System.IO.IOException>).  
   
--   A file in the target folder with the same name is in use (<xref:System.IO.IOException>).  
+- A file in the target folder with the same name is in use (<xref:System.IO.IOException>).  
   
--   A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
+- A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
   
--   `ShowUI` is set to `True`, `onUserCancel` is set to `ThrowException`, and the user has cancelled the operation (<xref:System.OperationCanceledException>).  
+- `ShowUI` is set to `True`, `onUserCancel` is set to `ThrowException`, and the user has cancelled the operation (<xref:System.OperationCanceledException>).  
   
--   `ShowUI` is set to `True`, `onUserCancel` is set to `ThrowException`, and an unspecified I/O error occurs (<xref:System.OperationCanceledException>).  
+- `ShowUI` is set to `True`, `onUserCancel` is set to `ThrowException`, and an unspecified I/O error occurs (<xref:System.OperationCanceledException>).  
   
--   The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
+- The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
   
--   The user does not have required permission (<xref:System.UnauthorizedAccessException>).  
+- The user does not have required permission (<xref:System.UnauthorizedAccessException>).  
   
--   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
+- The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>
 - <xref:Microsoft.VisualBasic.FileIO.UICancelOption>

@@ -1,8 +1,6 @@
 ---
 title: What is managed code?
 description: Learn how managed code is code whose execution is managed by a runtime, the Common Language Runtime (CLR).
-author: blackdwarf
-ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
@@ -33,6 +31,6 @@ Similar to this, C# is one language that allows you to use unmanaged constructs 
 
 ## More resources
 
-*   [.NET Framework Conceptual Overview](https://msdn.microsoft.com/library/zw4w595w.aspx)
-*   [Unsafe Code and Pointers](../../docs/csharp/programming-guide/unsafe-code-pointers/index.md)
-*   [Interoperability (C# Programming guide)](https://msdn.microsoft.com/library/ms173184.aspx)
+* [Overview of the .NET Framework](../framework/get-started/overview.md)
+* [Unsafe Code and Pointers](../../docs/csharp/programming-guide/unsafe-code-pointers/index.md)
+* [Native interoperability](./native-interop/index.md)

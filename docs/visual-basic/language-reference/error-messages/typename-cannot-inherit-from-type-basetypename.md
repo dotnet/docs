@@ -17,13 +17,14 @@ A class or interface inherits from a base class or interface but has a less rest
   
 ## To correct this error  
   
--   Change the access level of the derived class or interface to be at least as restrictive as that of the base class or interface.  
+- Change the access level of the derived class or interface to be at least as restrictive as that of the base class or interface.  
   
      -or-  
   
--   If you require the less restrictive access level, remove the `Inherits` statement. You cannot inherit from a more restricted base class or interface.  
+- If you require the less restrictive access level, remove the `Inherits` statement. You cannot inherit from a more restricted base class or interface.  
   
 ## See also
+
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)

@@ -15,10 +15,11 @@ This example shows you how to create a simple <xref:System.Windows.Data.Binding>
   
  The highlighted line that contains the `<src>` element in the following example instantiates the `Person` object with a `PersonName` property value of `Joe`. This is done in the `Resources` section and assigned an `x:Key`.  
   
- [!code-xaml[SimpleBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=9,37)]  
+ [!code-xaml[SimpleBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=9,37)]  
   
  The highlighted line that contains the `<TextBlock>` element then binds the <xref:System.Windows.Controls.TextBlock> control to the `PersonName` property. As a result, the <xref:System.Windows.Controls.TextBlock> appears with the value "Joe".  
   
 ## See also
-- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+
+- [Data Binding Overview](data-binding-overview.md)
+- [How-to Topics](data-binding-how-to-topics.md)

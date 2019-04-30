@@ -28,7 +28,7 @@ HRESULT SetCodegenFlags(
     [in] DWORD flags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `flags`  
  [in] One or more flags from the [COR_PRF_CODEGEN_FLAGS](../../../../docs/framework/unmanaged-api/profiling/cor-prf-codegen-flags-enumeration.md) enumeration.  
   
@@ -47,4 +47,5 @@ HRESULT SetCodegenFlags(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)

@@ -29,7 +29,7 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssemblyPath`  
  [in] The path and name of the assembly whose metadata will be modified.  
   
@@ -58,6 +58,7 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-interface.md)
 - [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)
 - [COR_PRF_ASSEMBLY_REFERENCE_INFO Structure](../../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md)

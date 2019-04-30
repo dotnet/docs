@@ -29,7 +29,7 @@ HRESULT CreateAssemblyScavenger (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppUnkReserved`  
  [out] The returned `IUnknown` pointer.  
   
@@ -41,4 +41,5 @@ HRESULT CreateAssemblyScavenger (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)

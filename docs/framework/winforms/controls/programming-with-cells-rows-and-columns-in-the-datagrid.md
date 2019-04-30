@@ -13,22 +13,22 @@ ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
 This section provides topics that demonstrate various programming tasks involving cell, row, and column objects.  
   
 ## In This Section  
- [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md)  
+ [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md)  
  Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event to provide different ToolTips for individual cells.  
   
- [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/perform-a-custom-action-based-on-changes-in-a-cell-of-a-datagrid.md)  
+ [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](perform-a-custom-action-based-on-changes-in-a-cell-of-a-datagrid.md)  
  Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged> and <xref:System.Windows.Forms.DataGridView.CellStateChanged> events.  
   
- [How to: Manipulate Bands in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-manipulate-bands-in-the-windows-forms-datagridview-control.md)  
+ [How to: Manipulate Bands in the Windows Forms DataGridView Control](how-to-manipulate-bands-in-the-windows-forms-datagridview-control.md)  
  Describes how to program with objects of type <xref:System.Windows.Forms.DataGridViewBand>, which is the base type for rows and columns.  
   
- [How to: Manipulate Rows in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md)  
+ [How to: Manipulate Rows in the Windows Forms DataGridView Control](how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md)  
  Describes how to program with objects of type `DataGridViewRow`.  
   
- [How to: Manipulate Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md)  
+ [How to: Manipulate Columns in the Windows Forms DataGridView Control](how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md)  
  Describes how to program with objects of type `DataGridViewColumn`.  
   
- [How to: Work with Image Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)  
+ [How to: Work with Image Columns in the Windows Forms DataGridView Control](how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)  
  Describes how to program with the `DataGridViewImageColumn` class.  
   
 ## Reference  
@@ -45,9 +45,10 @@ This section provides topics that demonstrate various programming tasks involvin
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
   
 ## Related Sections  
- [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
+ [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](basic-column-row-and-cell-features-wf-datagridview-control.md)  
  Provides topics that describe commonly used cell, row, and column properties.  
   
 ## See also
-- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
-- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)
+
+- [DataGridView Control](datagridview-control-windows-forms.md)
+- [Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)

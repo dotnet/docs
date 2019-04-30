@@ -18,7 +18,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
 #pragma checksum "filename" "{guid}" "checksum bytes"  
 ```  
   
-#### Parameters  
+## Parameters  
  `"filename"`  
  The name of the file that requires monitoring for changes or updates.  
   

@@ -10,7 +10,8 @@ An error occurred at the printer, but no other information was returned to the c
   
 ### To correct the error  
   
--   Physically examine the printer. Make sure all connections between the computer and the printer are solid. Most printers provide a display for error information such as "Offline" or "Out of paper."  
+- Physically examine the printer. Make sure all connections between the computer and the printer are solid. Most printers provide a display for error information such as "Offline" or "Out of paper."  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

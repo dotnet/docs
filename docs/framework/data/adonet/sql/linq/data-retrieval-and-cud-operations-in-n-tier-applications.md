@@ -79,9 +79,9 @@ private void GetProdsByCat_Click(object sender, EventArgs e)
 ### Middle Tier Implementation  
  The following example shows an implementation of the interface method on the middle tier. The following are the two main points to note:  
   
--   The <xref:System.Data.Linq.DataContext> is declared at method scope.  
+- The <xref:System.Data.Linq.DataContext> is declared at method scope.  
   
--   The method returns an <xref:System.Collections.IEnumerable> collection of the actual results. The serializer will execute the query to send the results back to the client/presentation tier. To access the query results locally on the middle tier, you can force execution by calling `ToList` or `ToArray` on the query variable. You can then return that list or array as an `IEnumerable`.  
+- The method returns an <xref:System.Collections.IEnumerable> collection of the actual results. The serializer will execute the query to send the results back to the client/presentation tier. To access the query results locally on the middle tier, you can force execution by calling `ToList` or `ToArray` on the query variable. You can then return that list or array as an `IEnumerable`.  
   
 ```vb  
 Public Function GetProductsByCategory(ByVal categoryID As Integer) _  
@@ -204,11 +204,11 @@ public void DeleteOrder(Order order)
 ## Updating Data  
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports updates in these scenarios involving optimistic concurrency:  
   
--   Optimistic concurrency based on timestamps or RowVersion numbers.  
+- Optimistic concurrency based on timestamps or RowVersion numbers.  
   
--   Optimistic concurrency based on original values of a subset of entity properties.  
+- Optimistic concurrency based on original values of a subset of entity properties.  
   
--   Optimistic concurrency based on the complete original and modified entities.  
+- Optimistic concurrency based on the complete original and modified entities.  
   
  You can also perform updates or deletes on an entity together with its relations, for example a Customer and a collection of its associated Order objects. When you make modifications on the client to a graph of entity objects and their child (`EntitySet`) collections, and the optimistic concurrency checks require original values, the client must provide those original values for each entity and <xref:System.Data.Linq.EntitySet%601> object. If you want to enable clients to make a set of related updates, deletes, and insertions in a single method call, you must provide the client a way to indicate what type of operation to perform on each entity. On the middle tier, you then must call the appropriate <xref:System.Data.Linq.ITable.Attach%2A> method and then <xref:System.Data.Linq.ITable.InsertOnSubmit%2A>, <xref:System.Data.Linq.ITable.DeleteAllOnSubmit%2A>, or <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A> (without `Attach`, for insertions) for each entity before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. Do not retrieve data from the database as a way to obtain original values before you try updates.  
   
@@ -373,11 +373,11 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 ### Expected Entity Members  
  As stated previously, only certain members of the entity object are required to be set before you call the `Attach` methods. Entity members that are required to be set must fulfill the following criteria:  
   
--   Be part of the entity’s identity.  
+- Be part of the entity’s identity.  
   
--   Be expected to be modified.  
+- Be expected to be modified.  
   
--   Be a timestamp or have its <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> attribute set to something besides `Never`.  
+- Be a timestamp or have its <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> attribute set to something besides `Never`.  
   
  If a table uses a timestamp or version number for an optimistic concurrency check, you must set those members before you call <xref:System.Data.Linq.ITable.Attach%2A>. A member is dedicated for optimistic concurrency checking when the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A> property is set to true on that Column attribute. Any requested updates will be submitted only if the version number or timestamp values are the same on the database.  
   
@@ -388,11 +388,11 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
 ### State  
  After an entity object is attached to the <xref:System.Data.Linq.DataContext> instance, the object is considered to be in the `PossiblyModified` state. There are three ways to force an attached object to be considered `Modified`.  
   
-1.  Attach it as unmodified, and then directly modify the fields.  
+1. Attach it as unmodified, and then directly modify the fields.  
   
-2.  Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes current and original object instances. This supplies the change tracker with old and new values so that it will automatically know which fields have changed.  
+2. Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes current and original object instances. This supplies the change tracker with old and new values so that it will automatically know which fields have changed.  
   
-3.  Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes a second Boolean parameter (set to true). This will tell the change tracker to consider the object modified without having to supply any original values. In this approach, the object must have a version/timestamp field.  
+3. Attach it with the <xref:System.Data.Linq.Table%601.Attach%2A> overload that takes a second Boolean parameter (set to true). This will tell the change tracker to consider the object modified without having to supply any original values. In this approach, the object must have a version/timestamp field.  
   
  For more information, see [Object States and Change-Tracking](../../../../../../docs/framework/data/adonet/sql/linq/object-states-and-change-tracking.md).  
   
@@ -401,5 +401,6 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
  When you attach with an `IEnumerable` set of objects, a <xref:System.Data.Linq.DuplicateKeyException> is thrown when an already existing key is present. Remaining objects are not attached.  
   
 ## See also
+
 - [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)
 - [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

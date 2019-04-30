@@ -65,7 +65,7 @@ For more information, see the [spec of the compatibility pack](https://github.co
 3. If you want to stay on Windows, you're all set.
 
 4. If you want to run the .NET Core application or .NET Standard library on
-   Linux or macOS, use the [API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)
+   Linux or macOS, use the [API Analyzer](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/)
    to find usage of APIs that won't work cross-platform.
 
 5. Either remove the usages of those APIs, replace them with cross-platform

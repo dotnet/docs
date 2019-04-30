@@ -29,7 +29,7 @@ HRESULT IsActive (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbActive`  
  [out] Pointer to a value that indicates whether this evaluation is active.  
   

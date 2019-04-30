@@ -36,11 +36,11 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
   
  To create a constructor for a class, create a procedure named `Sub New` anywhere in the class definition. To create a parameterized constructor, specify the names and data types of arguments to `Sub New` just as you would specify arguments for any other procedure, as in the following code:  
   
- [!code-vb[VbVbalrOOP#42](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_1.vb)]  
+ [!code-vb[VbVbalrOOP#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/WhidbeyStuff.vb#42)]  
   
  Constructors are frequently overloaded, as in the following code:  
   
- [!code-vb[VbVbalrOOP#116](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_2.vb)]  
+ [!code-vb[VbVbalrOOP#116](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/WhidbeyStuff.vb#116)]  
   
  When you define a class derived from another class, the first line of a constructor must be a call to the constructor of the base class, unless the base class has an accessible constructor that takes no parameters. A call to the base class that contains the above constructor, for example, would be `MyBase.New(s)`. Otherwise, `MyBase.New` is optional, and the Visual Basic runtime calls it implicitly.  
   
@@ -64,11 +64,11 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
   
  When an instance of a derived class is created, the `Sub New` constructor of the base class executes first, followed by constructors in derived classes. This happens because the first line of code in a `Sub New` constructor uses the syntax `MyBase.New()`to call the constructor of the class immediately above itself in the class hierarchy. The `Sub New` constructor is then called for each class in the class hierarchy until the constructor for the base class is reached. At that point, the code in the constructor for the base class executes, followed by the code in each constructor in all derived classes and the code in the most derived classes is executed last.  
   
- ![Constructors and Inheritance](../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance.gif "vaConstructorsInheritance")  
+ ![Screenshot showing class hierarchy constructors and inheritance.](./media/object-lifetime-how-objects-are-created-and-destroyed/subnew-constructor-inheritance.gif)  
   
  When an object is no longer needed, the CLR calls the <xref:System.Object.Finalize%2A> method for that object before freeing its memory. The <xref:System.Object.Finalize%2A> method is called a `destructor` because it performs cleanup tasks, such as saving state information, closing files and connections to databases, and other tasks that must be done before releasing the object.  
   
- ![Constructors Inheritance2](../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance_2.gif "vaConstructorsInheritance_2")  
+ ![Screenshot showing the Finalize method destructor.](./media/object-lifetime-how-objects-are-created-and-destroyed/finalize-method-destructor.gif)  
   
 ## IDisposable Interface  
  Class instances often control resources not managed by the CLR, such as Windows handles and database connections. These resources must be disposed of in the `Finalize` method of the class, so that they will be released when the object is destroyed by the garbage collector. However, the garbage collector destroys objects only when the CLR requires more free memory. This means that the resources may not be released until long after the object goes out of scope.  
@@ -78,13 +78,13 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
 ### Implementing IDisposable  
  A class that implements the <xref:System.IDisposable> interface should include these sections of code:  
   
--   A field for keeping track of whether the object has been disposed:  
+- A field for keeping track of whether the object has been disposed:  
   
     ```  
     Protected disposed As Boolean = False  
     ```  
   
--   An overload of the <xref:System.IDisposable.Dispose%2A> that frees the class's resources. This method should be called by the <xref:System.IDisposable.Dispose%2A> and `Finalize` methods of the base class:  
+- An overload of the <xref:System.IDisposable.Dispose%2A> that frees the class's resources. This method should be called by the <xref:System.IDisposable.Dispose%2A> and `Finalize` methods of the base class:  
   
     ```  
     Protected Overridable Sub Dispose(ByVal disposing As Boolean)  
@@ -98,7 +98,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
     End Sub  
     ```  
   
--   An implementation of <xref:System.IDisposable.Dispose%2A> that contains only the following code:  
+- An implementation of <xref:System.IDisposable.Dispose%2A> that contains only the following code:  
   
     ```  
     Public Sub Dispose() Implements IDisposable.Dispose  
@@ -107,7 +107,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
     End Sub  
     ```  
   
--   An override of the `Finalize` method that contains only the following code:  
+- An override of the `Finalize` method that contains only the following code:  
   
     ```  
     Protected Overrides Sub Finalize()  
@@ -141,6 +141,7 @@ End Sub
  Another difference between the garbage-collection systems involves the use of `Nothing`. To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned `Nothing` to object variables to release the references those variables held. If the variable held the last reference to the object, the object's resources were released immediately. In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately. To release resources immediately, use the object's <xref:System.IDisposable.Dispose%2A> method, if available. The only time you should set a variable to `Nothing` is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.  
   
 ## See also
+
 - <xref:System.IDisposable.Dispose%2A>
 - [Initialization and Termination of Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
 - [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)

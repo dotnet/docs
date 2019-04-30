@@ -6,7 +6,7 @@ ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
 ---
 
-# Using Attributes in C# #
+# Using Attributes in C\#
 
 Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to a variety of targets.
 
@@ -162,4 +162,4 @@ In the above code, you don't have to have a literal `"Name"` string. This can he
 
 ## Summary
 
-Attributes bring declarative power to C#. But they are a form of code as meta-data, and don't act by themselves.
+Attributes bring declarative power to C#, but they are a meta-data form of code and don't act by themselves.

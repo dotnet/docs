@@ -31,4 +31,5 @@ An expression is a fragment of code that can be evaluated to a single value, obj
  [Relationships, navigation properties and foreign keys](/ef/ef6/fundamentals/relationships)  
   
 ## See also
+
 - [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)

@@ -8,18 +8,19 @@ The topics in this section provide details about properties of the SQL Workflow 
   
 ## In This Section  
   
--   [Instance Encoding Option](../../../docs/framework/windows-workflow-foundation/instance-encoding-option.md)  
+- [Instance Encoding Option](instance-encoding-option.md)  
   
--   [Instance Completion Action](../../../docs/framework/windows-workflow-foundation/instance-completion-action.md)  
+- [Instance Completion Action](instance-completion-action.md)  
   
--   [Instance Locked Exception Action](../../../docs/framework/windows-workflow-foundation/instance-locked-exception-action.md)  
+- [Instance Locked Exception Action](instance-locked-exception-action.md)  
   
--   [Host Lock Renewal Period](../../../docs/framework/windows-workflow-foundation/host-lock-renewal-period.md)  
+- [Host Lock Renewal Period](host-lock-renewal-period.md)  
   
--   [Runnable Instances Detection Period](../../../docs/framework/windows-workflow-foundation/runnable-instances-detection-period.md)  
+- [Runnable Instances Detection Period](runnable-instances-detection-period.md)  
   
--   [Connection String and Connection String Name](../../../docs/framework/windows-workflow-foundation/connection-string-and-connection-string-name.md)  
+- [Connection String and Connection String Name](connection-string-and-connection-string-name.md)  
   
 ## See also
+
 - [Windows Server App Fabric Instance Store](https://go.microsoft.com/fwlink/?LinkId=201201)
 - [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkId=201202)

@@ -22,7 +22,7 @@ ms.assetid: 5b7944cd-d402-46a1-ad8f-feffb2d83673
 #pragma pragma-name pragma-arguments  
 ```  
   
-#### Parameters  
+## Parameters  
  `pragma-name`  
  The name of a recognized pragma.  
   

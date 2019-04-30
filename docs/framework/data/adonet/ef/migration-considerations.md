@@ -11,13 +11,13 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
 ## General Migration Considerations  
  The following considerations apply when you migrate any application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]:  
   
--   Any application that uses the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 can be migrated to the Entity Framework, as long as the data provider for the data source that is used by the application supports the Entity Framework.  
+- Any application that uses the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1 can be migrated to the Entity Framework, as long as the data provider for the data source that is used by the application supports the Entity Framework.  
   
--   The Entity Framework may not support all the functionality of a data source provider, even if that provider supports the Entity Framework.  
+- The Entity Framework may not support all the functionality of a data source provider, even if that provider supports the Entity Framework.  
   
--   For a large or complex application, you are not required to migrate the whole application to the Entity Framework at one time. However, any part of the application that does not use the Entity Framework must still be changed when the data source changes.  
+- For a large or complex application, you are not required to migrate the whole application to the Entity Framework at one time. However, any part of the application that does not use the Entity Framework must still be changed when the data source changes.  
   
--   The data provider connection used by the Entity Framework can be shared with other parts of your application because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers to access the data source. For example, the SqlClient provider is used by the Entity Framework to access a SQL Server database. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
+- The data provider connection used by the Entity Framework can be shared with other parts of your application because the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers to access the data source. For example, the SqlClient provider is used by the Entity Framework to access a SQL Server database. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
   
 ## Common Migration Tasks  
  The path to migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
@@ -25,11 +25,11 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
 > [!NOTE]
 >  All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
-1.  Upgrade the application.  
+1. Upgrade the application.  
   
      A project created by using an earlier version of Visual Studio and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] must be upgraded to use Visual Studio 2008 SP1 and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] starting with version 3.5 SP1.  
   
-2.  Define the models and mapping.  
+2. Define the models and mapping.  
   
      The model and mapping files define entities in the conceptual model; structures in the data source, such as tables, stored procedures, and views; and the mapping between the entities and data source structures. For more information, see [How to: Manually Define the Model and Mapping Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399785(v=vs.100)).  
   
@@ -38,11 +38,11 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
     > [!NOTE]
     >  The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)).  
   
-3.  Define the connection string.  
+3. Define the connection string.  
   
      The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses a specially formatted connection string when executing queries against a conceptual model. This connection string encapsulates information about the model and mapping files and the connection to the data source. For more information, see [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md).  
   
-4.  Configure the Visual Studio project.  
+4. Configure the Visual Studio project.  
   
      References to [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] assemblies and the model and mapping files must be added to the Visual Studio project. You can add these mapping files to the project to ensure that they are deployed with the application in the location that is indicated in the connection string. For more information, see [How to: Manually Configure an Entity Framework Project](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).  
   
@@ -97,5 +97,6 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
   
 ## See also
+
 - [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
 - [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)

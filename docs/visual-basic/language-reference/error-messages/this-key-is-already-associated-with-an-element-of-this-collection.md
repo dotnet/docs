@@ -10,7 +10,8 @@ The specified a key for a collection member already identifies another member of
   
 ## To correct this error  
   
--   Use a different key for this member.  
+- Use a different key for this member.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

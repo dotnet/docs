@@ -141,7 +141,7 @@ your design intent to pass arguments by reference to
 avoid unnecessary copying. You don't intend to modify the object used
 as that argument.
 
-This practice often improves performance for readonly value types that are larger than <xref:System.IntPtr.Size?displayProperty=nameWithType>. For simple types (`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimial. In fact, performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
+This practice often improves performance for readonly value types that are larger than <xref:System.IntPtr.Size?displayProperty=nameWithType>. For simple types (`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `char`, `float`, `double`, `decimal` and `bool`, and `enum` types), any potential performance gains are minimal. In fact, performance may degrade by using pass-by-reference for types smaller than <xref:System.IntPtr.Size?displayProperty=nameWithType>.
 
 The following code shows an example of a method
 that calculates the distance between two points in 3D space.
@@ -232,6 +232,8 @@ The compiler generates more efficient code when you call members of a
 `readonly struct`: The `this` reference, instead of a copy of the receiver,
 is always an `in` parameter passed by reference to the member method. This optimization
 saves copying when you use a `readonly struct` as an `in` argument.
+
+You should not pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type is not declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
 
 You can see an example program that demonstrates the performance differences using [Benchmark.net](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/master/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
 

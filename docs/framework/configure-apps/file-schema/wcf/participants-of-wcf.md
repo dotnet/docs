@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<participants> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: d99dbddc-0057-4e18-8e42-f91411d39970
@@ -80,6 +80,7 @@ Configure a list of tracking participants that listen to the tracking records be
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
 - [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

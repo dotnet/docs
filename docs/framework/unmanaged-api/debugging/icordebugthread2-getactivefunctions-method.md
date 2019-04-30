@@ -32,7 +32,7 @@ HRESULT GetActiveFunctions (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cFunctions`  
  [in] The size of the `pFunctions` array.  
   

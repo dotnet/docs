@@ -13,8 +13,8 @@ ms.assetid: c33980e8-36e7-45ce-a485-8c826dd29009
 The following topics show how to create Windows Presentation Foundation (WPF) add-ins.  
   
 ## In This Section  
- [Create an Add-In That Returns a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-returns-a-ui.md)  
- [Create an Add-In That Is a UI](../../../../docs/framework/wpf/app-development/how-to-create-an-add-in-that-is-a-ui.md)  
+ [Create an Add-In That Returns a UI](how-to-create-an-add-in-that-returns-a-ui.md)  
+ [Create an Add-In That Is a UI](how-to-create-an-add-in-that-is-a-ui.md)  
   
 ## Related Sections  
- [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)
+ [WPF Add-Ins Overview](wpf-add-ins-overview.md)

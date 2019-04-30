@@ -55,7 +55,7 @@ You can view a video that walks through the entire migration: [Lift and shift wi
 
 Extract, Transform, and Load (ETL) is a common business function that integrates different systems. Traditional approaches often involve setting up dedicated FTP servers then deploying scheduled jobs to parse files and translate them for business use. Serverless architecture makes the job easier because a trigger can fire when the file is uploaded. Azure Functions tackles tasks like ETL through its ideal composition of small pieces of code that focus on a specific problem.
 
-![ETL architecture](./media/csvimport.png)
+![Screenshot that shows the csv parsing process.](./media/serverless-business-scenarios/csv-parse-database-import.png)
 
 For source code and a hands-on lab, see [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol).
 

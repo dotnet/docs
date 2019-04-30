@@ -24,7 +24,7 @@ Issues and tasks for all these repositories are tracked here.
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
 
-**Step 1:** Skip this step for small changes. If you're interested in writing new content or in thoroughly revising existing content, open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do.
+**Step 1:** Skip this step for small changes (for example, if you're correcting a typo or immediately opening a pull request to address an issue that you find in the docs). If you're interested in writing new content or in thoroughly revising existing content, open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do.
 The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
 
 -or-
@@ -112,7 +112,7 @@ Your topic will also contain links to the sample. Link directly to the sample's 
 
 For more information, see the [Samples Readme](https://github.com/dotnet/samples/blob/master/README.md).
 
-## The C# interactive experience #
+## The C# interactive experience
 
 Short code samples in C# can use the `csharp-interactive` language tag to
 specify a C# sample that runs in the browser. (Inline code samples use the

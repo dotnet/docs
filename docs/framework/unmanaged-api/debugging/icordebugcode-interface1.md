@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode Interface1"
+title: "ICorDebugCode Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugCode"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugCode Interface1
+# ICorDebugCode Interface
+
 Represents a segment of either Microsoft intermediate language (MSIL) code or native code.  
   
 ## Methods  

@@ -28,7 +28,8 @@ ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
   
  Usually there is no reason to set a style or template inline, even if you only intend to use that style or template in that location. Most elements that can take a style or template also support a content property and a content model. If you are only using whatever logical tree you create through styling or templating once, it would be even easier to just fill that content property with the equivalent child elements in direct markup. This would bypass the style and template mechanisms altogether.  
   
- Other syntaxes enabled by markup extensions that return an object are also possible for styles and templates. Two such extensions that have possible scenarios include [TemplateBinding](../../../../docs/framework/wpf/advanced/templatebinding-markup-extension.md) and <xref:System.Windows.Data.Binding>.  
+ Other syntaxes enabled by markup extensions that return an object are also possible for styles and templates. Two such extensions that have possible scenarios include [TemplateBinding](templatebinding-markup-extension.md) and <xref:System.Windows.Data.Binding>.  
   
 ## See also
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+
+- [Styling and Templating](../controls/styling-and-templating.md)

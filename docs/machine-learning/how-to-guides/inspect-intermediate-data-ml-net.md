@@ -80,7 +80,7 @@ If you only need access to a portion of the data or specific indices, use [`Crea
 > [!WARNING]
 > Converting the result of [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) to an array or list will load all the requested [`IDataView`](xref:Microsoft.ML.IDataView) rows into memory which may affect performance.
 
-Then, you can perform operations with the data. The code snippet below takes the first three rows in the dataset and calculates the average current price.
+Once the array has been created, you can perform operations on the data. The code snippet below takes the first three rows in the dataset and calculates the average current price.
 
 ```csharp
 // Create an Array of HousingData objects from IDataView
@@ -107,6 +107,9 @@ IEnumerable<float> sizeColumn = data.GetColumn<float>("Size").ToList();
 ## Inspect IDataView values one row at a time
 
 [`IDataView`](xref:Microsoft.ML.IDataView) is lazily evaluated. To iterate over the rows of an [`IDataView`](xref:Microsoft.ML.IDataView) without converting to an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) as demonstrated in previous sections of this document, create a [`DataViewRowCursor`](xref:Microsoft.ML.DataViewRowCursor) by using the [`GetRowCursor`](xref:Microsoft.ML.IDataView.GetRowCursor*) method and passing in the [DataViewSchema](xref:Microsoft.ML.DataViewSchema) of your [`IDataView`](xref:Microsoft.ML.IDataView) as a parameter. Then, to iterate over rows, use the [`MoveNext`](xref:Microsoft.ML.DataViewRowCursor.MoveNext*) cursor method along with [`ValueGetter`](xref:Microsoft.ML.ValueGetter%601) delegates to extract the respective values from each of the columns.
+
+> [!IMPORTANT]
+> For performance purposes, vectors in ML.NET use [`VBuffer`](xref:Microsoft.ML.Data.VBuffer`1) instead of native collection types (i.e. `Vector`,`float[]`). 
 
 ```csharp
 // Get DataViewSchema of IDataView
@@ -135,9 +138,6 @@ using (DataViewRowCursor cursor = data.GetRowCursor(columns))
     }
 }
 ```
-
-> [!IMPORTANT]
-> For performance purposes, vectors in ML.NET use [`VBuffer`](xref:Microsoft.ML.Data.VBuffer`1) instead of native collection types (i.e. `Vector`,`float[]`). 
 
 ## Preview result of pre-processing or training on a subset of the data
 

@@ -10,7 +10,9 @@ ms.custom: mvc,how-to
 
 # How-To: Learn how to train and evaluate a machine learning model using cross validation in ML.NET
 
-Learn how to use cross validation to build more robust machine learning models in ML.NET. Although this sample uses a regression model, it is applicable to other algorithms in ML.NET.
+Learn how to use cross validation to build more robust machine learning models in ML.NET. 
+
+Cross-validation is a training and model evaluation technique that splits the data into several partitions and trains multiple algorithms on these partitions. This technique improves the robustness of the model by holding out data from the training process. In addition to improving performance on unseen observations, in data constrained environments it can be an effective tool for training models with a smaller dataset.
 
 ## The data and data model
 
@@ -46,7 +48,9 @@ Load the data in into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ## Prepare the data
 
-Pre-process the data before using it to build the machine learning model. In this sample, the `Size` and `HistoricalPrices` columns are combined into a single feature vector,  which is output to a new column called `Features` using the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*) method. Then, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) is applied to the `Features` column to get `Size` and `HistoricalPrices` in the same range between 0-1.
+Pre-process the data before using it to build the machine learning model. In this sample, the `Size` and `HistoricalPrices` columns are combined into a single feature vector,  which is output to a new column called `Features` using the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*) method. In addition to getting the data into the format expected by ML.NET algorithms, concatenating columns optimizes subsequent operations in the pipeline by applying the operation once for the concatenated column instead of each of the separate columns. 
+
+Once the columns are combined into a single vector, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) is applied to the `Features` column to get `Size` and `HistoricalPrices` in the same range between 0-1. 
 
 ```csharp
 // Define data prep estimator
@@ -63,10 +67,10 @@ IDataView transformedData = dataPrepTransformer.Transform(data);
 
 ## Train model with cross validation
 
-Once the data has been pre-processed, it's time to train the model. First, select the algorithm that most closely aligns with the machine learning task to be performed. Because the predicted value is a numerically continuous value, the task is regression. One of the regression algorithms implemented by ML.NET is the [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) algorithm. To train the model with cross-validation use the [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) method.
+Once the data has been pre-processed, it's time to train the model. First, select the algorithm that most closely aligns with the machine learning task to be performed. Because the predicted value is a numerically continuous value, the task is regression. One of the regression algorithms implemented by ML.NET is the [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) algorithm. To train the model with cross-validation use the [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) method. 
 
 > [!NOTE]
-> CrossValidate is also available for clustering, binary classification and multiclass classification algorithms.
+> Although this sample uses a linear regression model, CrossValidate is applicable to other machine learning tasks in ML.NET except Anomaly Detection.
 
 ```csharp
 // Define StochasticDualCoordinateAscent algorithm estimator
@@ -78,8 +82,8 @@ var cvResults = mlContext.Regression.CrossValidate(transformedData, sdcaEstimato
 
 [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) performs the following operations:
 
-1. Partitions the data into a number of partitions equal to the value specified in the `numberOfFolds` parameter. The result of these each partition is a [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) object.
-1. A model is trained on each of the partitions by applying the specified machine learning algorithm estimator to the training data set.
+1. Partitions the data into a number of partitions equal to the value specified in the `numberOfFolds` parameter. The result of each partition is a [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) object.
+1. A model is trained on each of the partitions using the specified machine learning algorithm estimator on the training data set.
 1. Each model's performance is evaluated using the [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*) method on the test data set. 
 1. The model along with its metrics are returned for each of the models.
 
@@ -87,7 +91,7 @@ The result stored in `cvResults` is a collection of [`CrossValidationResult`](xr
 
 ## Extract metrics
 
-Metrics for the different trained models can be accessed through the `Metrics` property of the individual [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult`1) object. In this case, the R-Squared metric is being accessed and stored in the variable `rSquared`. 
+Metrics for the different trained models can be accessed through the `Metrics` property of the individual [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601) object. In this case, the [R-Squared metric](https://en.wikipedia.org/wiki/Coefficient_of_determination) is accessed and stored in the variable `rSquared`. 
 
 ```csharp
 IEnumerable<double> rSquared = 

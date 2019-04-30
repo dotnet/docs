@@ -16,23 +16,23 @@ This procedure shows you how to copy a Windows Presentation Foundation (WPF) con
   
 ### To copy and paste an ElementHost control at design time  
   
-1.  Add a new WPF <xref:System.Windows.Controls.UserControl> to your Windows Forms project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
+1. Add a new WPF <xref:System.Windows.Controls.UserControl> to your Windows Forms project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
-2.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties of `UserControl1` to `200`.  
+2. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties of `UserControl1` to `200`.  
   
-3.  Set the value of the <xref:System.Windows.Controls.Control.Background%2A> property to `Blue`.  
+3. Set the value of the <xref:System.Windows.Controls.Control.Background%2A> property to `Blue`.  
   
-4.  Build the project.  
+4. Build the project.  
   
-5.  Open `Form1` in the Windows Forms Designer.  
+5. Open `Form1` in the Windows Forms Designer.  
   
-6.  From the **Toolbox**, drag an instance of `UserControl1` onto the form.  
+6. From the **Toolbox**, drag an instance of `UserControl1` onto the form.  
   
      An instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.  
   
-7.  With `elementHost1` selected, press CTRL+C to copy it to the clipboard.  
+7. With `elementHost1` selected, press CTRL+C to copy it to the clipboard.  
   
-8.  Press CTRL+V to paste the copied control onto the form.  
+8. Press CTRL+V to paste the copied control onto the form.  
   
      A new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost2` is created on the form.  
   
@@ -40,6 +40,6 @@ This procedure shows you how to copy a Windows Presentation Foundation (WPF) con
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
-- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

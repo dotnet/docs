@@ -17,7 +17,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
   
 ### To add nodes programmatically  
   
-1.  Use the <xref:System.Windows.Forms.TreeNodeCollection.Add%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
+1. Use the <xref:System.Windows.Forms.TreeNodeCollection.Add%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property.  
   
     ```vb  
     ' Adds new node as a child node of the currently selected node.  
@@ -39,7 +39,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
   
 ### To remove nodes programmatically  
   
-1.  Use the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property to remove a single node, or the <xref:System.Windows.Forms.TreeNodeCollection.Clear%2A> method to clear all nodes.  
+1. Use the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method of the tree view's <xref:System.Windows.Forms.TreeView.Nodes%2A> property to remove a single node, or the <xref:System.Windows.Forms.TreeNodeCollection.Clear%2A> method to clear all nodes.  
   
     ```vb  
     ' Removes currently selected node, or root if nothing is selected.  
@@ -65,9 +65,10 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     ```  
   
 ## See also
-- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
-- [TreeView Control Overview](../../../../docs/framework/winforms/controls/treeview-control-overview-windows-forms.md)
-- [How to: Set Icons for the Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-set-icons-for-the-windows-forms-treeview-control.md)
-- [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)
-- [How to: Determine Which TreeView Node Was Clicked](../../../../docs/framework/winforms/controls/how-to-determine-which-treeview-node-was-clicked-windows-forms.md)
-- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](../../../../docs/framework/winforms/controls/add-custom-information-to-a-treeview-or-listview-control-wf.md)
+
+- [TreeView Control](treeview-control-windows-forms.md)
+- [TreeView Control Overview](treeview-control-overview-windows-forms.md)
+- [How to: Set Icons for the Windows Forms TreeView Control](how-to-set-icons-for-the-windows-forms-treeview-control.md)
+- [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)
+- [How to: Determine Which TreeView Node Was Clicked](how-to-determine-which-treeview-node-was-clicked-windows-forms.md)
+- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](add-custom-information-to-a-treeview-or-listview-control-wf.md)

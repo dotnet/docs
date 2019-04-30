@@ -30,7 +30,7 @@ HRESULT GetURL(
     [out, size_is(cchUrl), length_is(*pcchUrl)] WCHAR szUrl[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchUrl`  
  [in] The size, in characters, of the `szURL` buffer.  
   
@@ -44,4 +44,5 @@ HRESULT GetURL(
  S_OK if the method succeeds; otherwise, an error code.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

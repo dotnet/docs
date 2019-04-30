@@ -21,24 +21,24 @@ You call an operator procedure by using the operator symbol in an expression. In
   
 ### To call an operator procedure  
   
-1.  Use the operator symbol in an expression in the ordinary way.  
+1. Use the operator symbol in an expression in the ordinary way.  
   
-2.  Be sure the data types of the operands are appropriate for the operator, and in the correct order.  
+2. Be sure the data types of the operands are appropriate for the operator, and in the correct order.  
   
-3.  The operator contributes to the value of the expression as expected.  
+3. The operator contributes to the value of the expression as expected.  
   
 ### To call a conversion operator procedure  
   
-1.  Use `CType` inside an expression.  
+1. Use `CType` inside an expression.  
   
-2.  Be sure the data types of the operands are appropriate for the conversion, and in the correct order.  
+2. Be sure the data types of the operands are appropriate for the conversion, and in the correct order.  
   
-3.  `CType` calls the conversion operator procedure and returns the converted value.  
+3. `CType` calls the conversion operator procedure and returns the converted value.  
   
 ## Example  
  The following example creates two <xref:System.TimeSpan> structures, adds them together, and stores the result in a third <xref:System.TimeSpan> structure. The <xref:System.TimeSpan> structure defines operator procedures to overload several standard operators.  
   
- [!code-vb[VbVbcnProcedures#29](./codesnippet/VisualBasic/how-to-call-an-operator-procedure_1.vb)]  
+ [!code-vb[VbVbcnProcedures#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#29)]  
   
  Because <xref:System.TimeSpan> overloads the standard `+` operator, the previous example calls an operator procedure when it calculates the value of `combinedSpan`.  
   
@@ -48,6 +48,7 @@ You call an operator procedure by using the operator symbol in an expression. In
  Be sure the class or structure you are using defines the operator you want to use.  
   
 ## See also
+
 - [Operator Procedures](./operator-procedures.md)
 - [How to: Define an Operator](./how-to-define-an-operator.md)
 - [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)

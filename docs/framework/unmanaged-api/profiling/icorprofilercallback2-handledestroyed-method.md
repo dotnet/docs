@@ -28,7 +28,7 @@ HRESULT HandleDestroyed(
     [in] GCHandleID handleId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `handleId`  
  [in] The ID of the handle for the garbage collection.  
   
@@ -42,5 +42,6 @@ HRESULT HandleDestroyed(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

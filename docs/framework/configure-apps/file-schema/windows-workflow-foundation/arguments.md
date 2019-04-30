@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<arguments>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
@@ -70,6 +70,7 @@ Represents a collection of arguments associated with an activity state query.
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.ActivityStateQuery?displayProperty=nameWithType>
 - [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

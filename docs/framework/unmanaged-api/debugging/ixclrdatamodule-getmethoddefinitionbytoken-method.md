@@ -31,12 +31,12 @@ HRESULT GetMethodDefinitionByToken(
 );
 ```
 
-### Parameters
+## Parameters
 
-`token`
+`token`\
 [in] The method token.
 
-`methodDefinition`
+`methodDefinition`\
 [out] The method definition.
 
 ## Remarks
@@ -52,5 +52,5 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
  
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataModule Interface](ixclrdatamodule-interface.md)

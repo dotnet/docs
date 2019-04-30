@@ -1,7 +1,6 @@
 ---
-title: "Common Language Runtime (CLR)"
-ms.custom: "updateeachrelease"
-ms.date: "04/16/2018"
+title: "Common Language Runtime (CLR) overview - .NET Framework"
+ms.date: "04/02/2019"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
@@ -18,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: "updateeachrelease"
 ---
 # Common Language Runtime (CLR) overview
 
@@ -58,7 +58,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 ## CLR versions
 
-The version number of the .NET Framework doesn't necessarily correspond to the version number of the CLR it includes. The following table shows how the two version numbers correlate.
+The version number of the .NET Framework doesn't necessarily correspond to the version number of the CLR it includes. The following table shows how the two version numbers correlate:
 
 |.NET Framework version|Includes CLR version|
 |----------------------------|--------------------------|
@@ -71,6 +71,7 @@ The version number of the .NET Framework doesn't necessarily correspond to the v
 |4.5 (including 4.5.1 and 4.5.2)|4|
 |4.6 (including 4.6.1 and 4.6.2)|4|
 |4.7 (including 4.7.1 and 4.7.2)|4|
+|4.8|4|
 
 ## Related topics
 

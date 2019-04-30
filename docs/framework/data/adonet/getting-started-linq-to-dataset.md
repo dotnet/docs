@@ -27,6 +27,7 @@ This section provides introductory information about programming with [!INCLUDE[
  <xref:System.Data.DataTableExtensions>  
   
 ## See also
+
 - [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)
 - [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)  
 - [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  

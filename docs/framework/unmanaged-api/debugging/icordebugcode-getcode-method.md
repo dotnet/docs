@@ -34,7 +34,7 @@ HRESULT GetCode (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `startOffset`  
  [in] The offset of the beginning of the function.  
   
@@ -63,5 +63,5 @@ HRESULT GetCode (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
-- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
 
+- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)

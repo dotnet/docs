@@ -30,7 +30,7 @@ HRESULT SetOption (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `optionId`  
  [in] A pointer to a GUID that specifies the option to be set.  
   
@@ -66,5 +66,6 @@ HRESULT SetOption (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

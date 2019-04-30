@@ -77,7 +77,7 @@ specialization.
 Let's fill out the FileSearcher class to search for files that match
 a pattern, and raise the correct event when a match is discovered.
 
-[!code-csharp[FileSearxcher](../../samples/csharp/events/Program.cs#FileSearcherV1 "Create the initial file searcher")]
+[!code-csharp[FileSearcher](../../samples/csharp/events/Program.cs#FileSearcherV1 "Create the initial file searcher")]
 
 ## Defining and Raising Field-Like Events
 

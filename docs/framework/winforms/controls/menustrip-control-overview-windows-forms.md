@@ -20,11 +20,11 @@ Menus expose functionality to your users by holding commands that are grouped by
 ## Ways to Use the MenuStrip Control  
  Use the <xref:System.Windows.Forms.MenuStrip> control to:  
   
--   Create easily customized, commonly employed menus that support advanced user interface and layout features, such as text and image ordering and alignment, drag-and-drop operations, MDI, overflow, and alternate modes of accessing menu commands.  
+- Create easily customized, commonly employed menus that support advanced user interface and layout features, such as text and image ordering and alignment, drag-and-drop operations, MDI, overflow, and alternate modes of accessing menu commands.  
   
--   Support the typical appearance and behavior of the operating system.  
+- Support the typical appearance and behavior of the operating system.  
   
--   Handle events consistently for all containers and contained items, in the same way you handle events for other controls.  
+- Handle events consistently for all containers and contained items, in the same way you handle events for other controls.  
   
  The following table shows some particularly important properties of <xref:System.Windows.Forms.MenuStrip> and associated classes.  
   
@@ -49,6 +49,7 @@ Menus expose functionality to your users by holding commands that are grouped by
 |<xref:System.Windows.Forms.ToolStripDropDownItem>|Provides basic functionality for controls derived from <xref:System.Windows.Forms.ToolStripItem> that display drop-down items when clicked.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStrip>
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ContextMenuStrip>

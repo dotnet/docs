@@ -13,7 +13,7 @@ The <xref:System.Windows.Controls.Primitives.RepeatButton> is similar to a <xref
   
  The following graphic shows an example of the three states of a repeat button control, Default, PointerFocused, and Pressed. The first button shows the default state of the <xref:System.Windows.Controls.Primitives.RepeatButton>. The second shows how the appearance of the button changes when the mouse pointer hovers over the button, giving it focus. The last button shows the appearance of the <xref:System.Windows.Controls.Primitives.RepeatButton> when the user presses the mouse button over the control.  
   
- ![Repeat button states](../../../../docs/framework/wpf/controls/media/ss-ctl-repeatbutton.png "SS_CTL_repeatbutton")  
+ ![Repeat button states](./media/ss-ctl-repeatbutton.png "SS_CTL_repeatbutton")  
 Typical RepeatButton  
   
 ## In This Section  

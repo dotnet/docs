@@ -6,15 +6,15 @@ ms.assetid: 40db462d-2fd2-4cc1-ad86-d280403e63fa
 # How to: Use EdmGen.exe to Generate the Model and Mapping Files
 This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the following files based on the School database:  
   
--   A conceptual model (a .csdl file).  
+- A conceptual model (a .csdl file).  
   
--   A storage model (a .ssdl file).  
+- A storage model (a .ssdl file).  
   
--   Mapping between the conceptual and storage models (a .msl file).  
+- Mapping between the conceptual and storage models (a .msl file).  
   
--   Object-layer code in Visual Basic or C#.  
+- Object-layer code in Visual Basic or C#.  
   
--   View files.  
+- View files.  
   
  The EdmGen.exe tool uses /mode:FullGeneration to generate the files listed above. For more information about EdmGen.exe commands, see [EDM Generator (EdmGen.exe)](../../../../../docs/framework/data/adonet/ef/edm-generator-edmgen-exe.md).  
   
@@ -25,9 +25,9 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
   
 ### To generate the School model for a Visual Basic project using EdmGen.exe  
   
-1.  Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
-2.  At the command prompt, execute the following command without line breaks:  
+2. At the command prompt, execute the following command without line breaks:  
   
     ```  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
@@ -37,9 +37,9 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
   
 ### To generate the School model for a C# project using EdmGen.exe  
   
-1.  Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
-2.  At the command prompt, execute the following command without line breaks:  
+2. At the command prompt, execute the following command without line breaks:  
   
     ```  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
@@ -48,6 +48,7 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
     ```  
   
 ## See also
+
 - [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)
 - [How to: Manually Configure an Entity Framework Project](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))
 - [How to: Pre-Generate Views to Improve Query Performance](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))

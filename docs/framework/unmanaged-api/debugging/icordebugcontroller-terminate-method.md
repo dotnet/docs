@@ -32,7 +32,7 @@ HRESULT Terminate (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `exitCode`  
  [in] A numeric value that is the exit code. The valid numeric values are defined in Winbase.h.  
   
@@ -52,4 +52,3 @@ HRESULT Terminate (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

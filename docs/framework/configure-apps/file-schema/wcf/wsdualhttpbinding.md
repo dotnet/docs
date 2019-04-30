@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<wsDualHttpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -126,6 +126,7 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.WSDualHttpBinding>
 - <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>
 - [Bindings](../../../../../docs/framework/wcf/bindings.md)

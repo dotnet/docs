@@ -10,9 +10,10 @@ You tried to read a property at run time that is only accessible at design time.
   
 ## To correct this error  
   
-1.  Check the property and determine under what conditions it can be set.  
+1. Check the property and determine under what conditions it can be set.  
   
-2.  Remove the reference to the property.  
+2. Remove the reference to the property.  
   
 ## See also
+
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

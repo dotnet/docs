@@ -29,7 +29,7 @@ HRESULT GetMaxThreads (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxWorkerThreads`  
  [out] A pointer to the maximum number of threads that the host maintains in the thread pool.  
   
@@ -60,6 +60,7 @@ HRESULT GetMaxThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.ThreadPool.GetMaxThreads%2A>
 - <xref:System.Threading.ThreadPool>
 - [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)

@@ -12,27 +12,28 @@ Performing drag-and-drop operations between applications is no different than en
   
 ### To perform a drag-and-drop procedure between applications  
   
-1.  Create a new Windows Forms application.  
+1. Create a new Windows Forms application.  
   
-2.  Add a <xref:System.Windows.Forms.TextBox> control to your form.  
+2. Add a <xref:System.Windows.Forms.TextBox> control to your form.  
   
-3.  Configure the <xref:System.Windows.Forms.TextBox> control to receive dropped data.  
+3. Configure the <xref:System.Windows.Forms.TextBox> control to receive dropped data.  
   
-     For more information, see [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](../../../../docs/framework/winforms/advanced/walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md).  
+     For more information, see [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md).  
   
-4.  Run your Windows-based application, and while the application is running, run WordPad.  
+4. Run your Windows-based application, and while the application is running, run WordPad.  
   
      WordPad is a text editor installed by Windows that allows drag-and-drop operations. It is accessible by pressing the **Start** button, selecting **Run**, and then typing `WordPad` into the text box of the **Run** dialog box and clicking **OK**.  
   
-5.  Once WordPad is open, type a string of text into it.  
+5. Once WordPad is open, type a string of text into it.  
   
-6.  Using the mouse, select the text, and then drag the selected text over to the <xref:System.Windows.Forms.TextBox> control in your Windows-based application.  
+6. Using the mouse, select the text, and then drag the selected text over to the <xref:System.Windows.Forms.TextBox> control in your Windows-based application.  
   
      Observe that when you mouse over the <xref:System.Windows.Forms.TextBox> control (and, consequently, raise the <xref:System.Windows.Forms.Control.DragEnter> event), the cursor changes, and you can drop the selected text into the <xref:System.Windows.Forms.TextBox> control.  
   
-     Additionally, you can configure your <xref:System.Windows.Forms.TextBox> control to allow text strings to be dragged and dropped into WordPad. For more information, see [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](../../../../docs/framework/winforms/advanced/walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md).  
+     Additionally, you can configure your <xref:System.Windows.Forms.TextBox> control to allow text strings to be dragged and dropped into WordPad. For more information, see [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md).  
   
 ## See also
-- [How to: Add Data to the Clipboard](../../../../docs/framework/winforms/advanced/how-to-add-data-to-the-clipboard.md)
-- [How to: Retrieve Data from the Clipboard](../../../../docs/framework/winforms/advanced/how-to-retrieve-data-from-the-clipboard.md)
-- [Drag-and-Drop Operations and Clipboard Support](../../../../docs/framework/winforms/advanced/drag-and-drop-operations-and-clipboard-support.md)
+
+- [How to: Add Data to the Clipboard](how-to-add-data-to-the-clipboard.md)
+- [How to: Retrieve Data from the Clipboard](how-to-retrieve-data-from-the-clipboard.md)
+- [Drag-and-Drop Operations and Clipboard Support](drag-and-drop-operations-and-clipboard-support.md)

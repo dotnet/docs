@@ -11,11 +11,11 @@ helpviewer_keywords:
 ms.assetid: 5d9dd47e-e68c-48c9-a0a3-a9ff34ba009d
 ---
 # How to: Resize Windows Forms
-You can specify the size of your Windows Form in several ways. You can change both the height and the width of the form programmatically by setting a new value for the <xref:System.Windows.Forms.Form.Size%2A> property, or adjust the <xref:System.Windows.Forms.Control.Height%2A> or <xref:System.Windows.Forms.Control.Width%2A> properties individually. If you are using Visual Studio, you can change the size using the Windows Forms Designer. Also see [How to: Resize Windows Forms Using the Designer](https://msdn.microsoft.com/library/37k2zkwx\(v=vs.110\)).  
+You can specify the size of your Windows Form in several ways. You can change both the height and the width of the form programmatically by setting a new value for the <xref:System.Windows.Forms.Form.Size%2A> property, or adjust the <xref:System.Windows.Forms.Control.Height%2A> or <xref:System.Windows.Forms.Control.Width%2A> properties individually. If you are using Visual Studio, you can change the size using the Windows Forms Designer. Also see [How to: Resize Windows Forms Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37k2zkwx(v=vs.100)).  
   
 ### To resize a form programmatically  
   
--   Define the size of a form at run time by setting the <xref:System.Windows.Forms.Form.Size%2A> property of the form.  
+- Define the size of a form at run time by setting the <xref:System.Windows.Forms.Form.Size%2A> property of the form.  
   
      The following code example shows the form size set to 100 × 100 pixels.  
   
@@ -33,7 +33,7 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
 ### To change form width and height programmatically  
   
--   After the <xref:System.Windows.Forms.Form.Size%2A> is defined, change either the form height or width by using the <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> properties.  
+- After the <xref:System.Windows.Forms.Form.Size%2A> is defined, change either the form height or width by using the <xref:System.Windows.Forms.Control.Width%2A> or <xref:System.Windows.Forms.Control.Height%2A> properties.  
   
      The following code example shows the width of the form set to 300 pixels from the left edge of the form, whereas the height stays constant.  
   
@@ -69,7 +69,7 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
 ### To change form size by increments programmatically  
   
--   To increment the size of the form, set the <xref:System.Drawing.Size.Width%2A> and <xref:System.Drawing.Size.Height%2A> properties.  
+- To increment the size of the form, set the <xref:System.Drawing.Size.Width%2A> and <xref:System.Drawing.Size.Height%2A> properties.  
   
      The following code example shows the width of the form set to 200 pixels wider than the current setting.  
   
@@ -107,5 +107,6 @@ You can specify the size of your Windows Form in several ways. You can change bo
     ```  
   
 ## See also
-- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
-- [Enhancing Windows Forms Applications](../../../docs/framework/winforms/advanced/index.md)
+
+- [Getting Started with Windows Forms](getting-started-with-windows-forms.md)
+- [Enhancing Windows Forms Applications](./advanced/index.md)

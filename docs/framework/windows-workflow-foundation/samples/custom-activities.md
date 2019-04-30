@@ -7,8 +7,8 @@ ms.assetid: 5cde06b3-51b2-4e46-900d-11140bae77f4
 This section contains samples that demonstrate how to create custom activities in Windows Workflow Foundation (WF).  
   
 ## In This Section  
- [Code-Bodied](../../../../docs/framework/windows-workflow-foundation/samples/code-bodied.md)  
+ [Code-Bodied](code-bodied.md)  
  Contains custom activity samples created declaratively in code.
   
- [Custom Activity Designers](../../../../docs/framework/windows-workflow-foundation/samples/custom-activity-designers.md)  
+ [Custom Activity Designers](custom-activity-designers.md)  
  Contains activity samples that use custom designers for display in the workflow designer.

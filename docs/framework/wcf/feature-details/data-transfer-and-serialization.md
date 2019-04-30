@@ -55,5 +55,6 @@ In a connected system, services and clients depend on the exchange of data to ac
  [Extending Encoders and Serializers](../../../../docs/framework/wcf/extending/extending-encoders-and-serializers.md)  
   
 ## See also
+
 - [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)
 - [Service Versioning](../../../../docs/framework/wcf/service-versioning.md)

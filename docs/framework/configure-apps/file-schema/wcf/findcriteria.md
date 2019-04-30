@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<findCriteria>"
 ms.date: "03/30/2017"
 ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
@@ -62,5 +62,6 @@ A configuration element that supplies a set of criteria used by a client applica
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>

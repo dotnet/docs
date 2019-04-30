@@ -14,7 +14,7 @@ When you have an object variable that refers to an object, you often want to wor
   
 #### To access members of an object  
   
--   Use the member-access operator (`.`) between the object variable name and the member name.  
+- Use the member-access operator (`.`) between the object variable name and the member name.  
   
     ```  
     currentText = newForm.Text  
@@ -27,7 +27,7 @@ When you have an object variable that refers to an object, you often want to wor
   
 #### To access members of an object for which you know the type at compile time  
   
-1.  Declare the object variable to be of the type of the object you intend to assign to the variable.  
+1. Declare the object variable to be of the type of the object you intend to assign to the variable.  
   
     ```  
     Dim extraForm As System.Windows.Forms.Form  
@@ -35,7 +35,7 @@ When you have an object variable that refers to an object, you often want to wor
   
      With `Option Strict On`, you can assign only <xref:System.Windows.Forms.Form> objects (or objects of a type derived from <xref:System.Windows.Forms.Form>) to `extraForm`. If you have defined a class or structure with a widening `CType` conversion to <xref:System.Windows.Forms.Form>, you can also assign that class or structure to `extraForm`.  
   
-2.  Use the member-access operator (`.`) between the object variable name and the member name.  
+2. Use the member-access operator (`.`) between the object variable name and the member name.  
   
     ```  
     extraForm.Show()  
@@ -48,7 +48,7 @@ When you have an object variable that refers to an object, you often want to wor
   
 #### To access members of an object for which you do not know the type at compile time  
   
-1.  Declare the object variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). (Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=nameWithType>.)  
+1. Declare the object variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). (Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=nameWithType>.)  
   
     ```  
     Dim someControl As Object  
@@ -56,7 +56,7 @@ When you have an object variable that refers to an object, you often want to wor
   
      With `Option Strict On`, you can access only the members that are defined on the <xref:System.Object> class.  
   
-2.  Use the member-access operator (`.`) between the object variable name and the member name.  
+2. Use the member-access operator (`.`) between the object variable name and the member name.  
   
     ```  
     someControl.GetType()  
@@ -65,6 +65,7 @@ When you have an object variable that refers to an object, you often want to wor
      To be able to access the members of any object you assign to the object variable, you must set `Option Strict Off`. When you do this, the compiler cannot guarantee that a given member is exposed by the object you assign to the variable. If the object does not expose a member you attempt to access, a <xref:System.MemberAccessException> exception occurs.  
   
 ## See also
+
 - <xref:System.Object>
 - <xref:System.Windows.Forms.Form>
 - <xref:System.MemberAccessException>

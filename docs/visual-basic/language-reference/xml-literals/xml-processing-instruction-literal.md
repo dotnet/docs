@@ -52,9 +52,10 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
 ## Example  
  The following example creates a processing instruction identifying a style-sheet for an XML document.  
   
- [!code-vb[VbXMLSamples#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-processing-instruction-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#28)]  
   
 ## See also
+
 - <xref:System.Xml.Linq.XProcessingInstruction>
 - [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
 - [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)

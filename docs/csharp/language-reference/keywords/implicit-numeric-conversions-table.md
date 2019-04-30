@@ -1,7 +1,6 @@
 ---
 title: "Implicit numeric conversions table - C# Reference"
 ms.custom: seodec18
-
 ms.date: 09/05/2018
 helpviewer_keywords: 
   - "conversions [C#], implicit numeric"
@@ -33,9 +32,9 @@ The following table shows the predefined implicit conversions between .NET numer
 
 - Precision but not magnitude might be lost in the conversions from `int`, `uint`, `long`, or `ulong` to `float` and from `long` or `ulong` to `double`.  
   
-- There are no implicit conversions to the `char`, `byte` and `sbyte` types.  
+- There are no implicit conversions to the `char`, `byte`, and `sbyte` types.  
 
-- There are no implicit conversions from the `char`, `double` and `decimal` types.
+- There are no implicit conversions from the `double` and `decimal` types.
   
 - There are no implicit conversions between the `decimal` type and the `float` or `double` types.  
   

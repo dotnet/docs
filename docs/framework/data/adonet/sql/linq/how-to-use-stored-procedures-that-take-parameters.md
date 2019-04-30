@@ -34,6 +34,7 @@ where O.CUSTOMERID = @CustomerID AND O.ORDERID = OD.ORDERID
  [!code-vb[DLinqSprox#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/Module1.vb#3)]  
   
 ## See also
+
 - [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
 - [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
 - [Using Nullable Types](~/docs/csharp/programming-guide/nullable-types/using-nullable-types.md)

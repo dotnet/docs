@@ -8,7 +8,7 @@ ms.date: 01/30/2019
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
-![cover image](./media/cover.png)
+![Cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
 
 PUBLISHED BY
 
@@ -102,7 +102,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 ## References
 
 - **Choosing between .NET Core and .NET Framework for server apps**  
-  <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
+  [https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server](../choosing-core-framework-server.md)
 
 >[!div class="step-by-step"]
 >[Next](modern-web-applications-characteristics.md)

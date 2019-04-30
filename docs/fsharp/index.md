@@ -8,7 +8,7 @@ ms.date: 08/03/2018
 
 The F# guide provides many resources to learn the F# language.
 
-## Learning F# #
+## Learning F\#
 
 [What is F#](what-is-fsharp.md) describes what the F# language is and what programming in it is like, with short code samples. This is recommended if you are new to F#.
 

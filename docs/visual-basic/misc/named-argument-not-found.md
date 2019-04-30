@@ -10,7 +10,8 @@ A named argument can not be used in a procedure invocation unless it appears in 
   
 ## To correct this error  
   
--   Check the spelling of the argument name.  
+- Check the spelling of the argument name.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

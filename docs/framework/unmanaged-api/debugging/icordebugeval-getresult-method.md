@@ -29,7 +29,7 @@ HRESULT GetResult (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppResult`  
  [out] Pointer to the address of an ICorDebugValue object that represents the results of this evaluation, if the evaluation completes normally.  
   

@@ -1,0 +1,133 @@
+- name: Base Types
+  href: index.md
+  items:
+  - name: Common Type System
+    href: common-type-system.md
+  - name: Type Conversion in .NET
+    href: type-conversion.md
+    items:
+    - name: Type Conversion Tables
+      href: conversion-tables.md
+  - name: Formatting Types
+    href: formatting-types.md
+    items:
+    - name: Standard Numeric Format Strings
+      href: standard-numeric-format-strings.md
+    - name: Custom Numeric Format Strings
+      href: custom-numeric-format-strings.md
+    - name: Standard Date and Time Format Strings
+      href: standard-date-and-time-format-strings.md
+    - name: Custom Date and Time Format Strings
+      href: custom-date-and-time-format-strings.md
+    - name: Standard TimeSpan Format Strings
+      href: standard-timespan-format-strings.md
+    - name: Custom TimeSpan Format Strings
+      href: custom-timespan-format-strings.md
+    - name: Enumeration Format Strings
+      href: enumeration-format-strings.md
+    - name: Composite Formatting
+      href: composite-formatting.md
+    - name: Performing Formatting Operations
+      href: performing-formatting-operations.md
+      items:
+      - name: "How to: Pad a Number with Leading Zeros"
+        href: how-to-pad-a-number-with-leading-zeros.md
+      - name: "How to: Extract the Day of the Week from a Specific Date"
+        href: how-to-extract-the-day-of-the-week-from-a-specific-date.md
+      - name: "How to: Define and Use Custom Numeric Format Providers"
+        href: how-to-define-and-use-custom-numeric-format-providers.md
+      - name: "How to: Round-trip Date and Time Values"
+        href: how-to-round-trip-date-and-time-values.md
+      - name: "How to: Convert Numeric User Input in Web Controls to Numbers"
+        href: how-to-convert-numeric-user-input-in-web-controls-to-numbers.md
+      - name: "How to: Display Localized Date and Time Information to Web Users"
+        href: how-to-display-localized-date-and-time-information-to-web-users.md
+      - name: "How to: Display Milliseconds in Date and Time Values"
+        href: how-to-display-milliseconds-in-date-and-time-values.md
+      - name: "How to: Display Dates in Non-Gregorian Calendars"
+        href: how-to-display-dates-in-non-gregorian-calendars.md
+  - name: Manipulating Strings
+    href: manipulating-strings.md
+    items:
+    - name: Best Practices for Using Strings
+      href: best-practices-strings.md
+    - name: Basic String Operations
+      href: basic-string-operations.md
+      items:
+      - name: Creating New Strings
+        href: creating-new.md
+      - name: Trimming and Removing Characters
+        href: trimming.md
+      - name: Padding Strings
+        href: padding.md
+      - name: Comparing Strings
+        href: comparing.md
+      - name: Changing Case
+        href: changing-case.md
+      - name: Using the StringBuilder Class
+        href: stringbuilder.md
+      - name: "How to: Perform Basic String Manipulations"
+        href: basic-manipulations.md
+    - name: Regular Expressions in .NET
+      href: regular-expressions.md
+      items:
+      - name: Regular Expression Language - Quick Reference
+        href: regular-expression-language-quick-reference.md
+        items:
+        - name: Character Escapes
+          href: character-escapes-in-regular-expressions.md
+        - name: Character Classes
+          href: character-classes-in-regular-expressions.md
+        - name: Anchors
+          href: anchors-in-regular-expressions.md
+        - name: Grouping Constructs
+          href: grouping-constructs-in-regular-expressions.md
+        - name: Quantifiers
+          href: quantifiers-in-regular-expressions.md
+        - name: Backreference Constructs
+          href: backreference-constructs-in-regular-expressions.md
+        - name: Alternation Constructs
+          href: alternation-constructs-in-regular-expressions.md
+        - name: Substitutions
+          href: substitutions-in-regular-expressions.md
+        - name: Regular Expression Options
+          href: regular-expression-options.md
+        - name: Miscellaneous Constructs
+          href: miscellaneous-constructs-in-regular-expressions.md
+      - name: Best Practices for Regular Expressions
+        href: best-practices.md
+      - name: The Regular Expression Object Model
+        href: the-regular-expression-object-model.md
+      - name: Details of Regular Expression Behavior
+        href: details-of-regular-expression-behavior.md
+        items:
+        - name: Backtracking
+          href: backtracking-in-regular-expressions.md
+        - name: Compilation and Reuse
+          href: compilation-and-reuse-in-regular-expressions.md
+        - name: Thread Safety
+          href: thread-safety-in-regular-expressions.md
+      - name: Regular Expression Examples
+        href: regular-expression-examples.md
+        items:
+        - name: "Example: Scanning for HREFs"
+          href: regular-expression-example-scanning-for-hrefs.md
+        - name: "Example: Changing Date Formats"
+          href: regular-expression-example-changing-date-formats.md
+        - name: "How to: Extract a Protocol and Port Number from a URL"
+          href: how-to-extract-a-protocol-and-port-number-from-a-url.md
+        - name: "How to: Strip Invalid Characters from a String"
+          href: how-to-strip-invalid-characters-from-a-string.md
+        - name: "How to: Verify that Strings Are in Valid Email Format"
+          href: how-to-verify-that-strings-are-in-valid-email-format.md
+    - name: Character Encoding in .NET
+      href: character-encoding.md
+  - name: Parsing Strings
+    href: parsing-strings.md
+    items:
+    - name: Parsing Numeric Strings
+      href: parsing-numeric.md
+    - name: Parsing Date and Time Strings
+      href: parsing-datetime.md
+    - name: Parsing Other Strings
+      href: parsing-other.md

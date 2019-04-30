@@ -34,7 +34,7 @@ HRESULT SetILInstrumentedCodeMap(
     [in, size_is(cILMapEntries)] COR_IL_MAP rgILMapEntries[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which to set the code map.  
   
@@ -52,11 +52,11 @@ HRESULT SetILInstrumentedCodeMap(
   
  The debugger will assume that each old offset refers to an MSIL offset within the original, unmodified MSIL code, and that each new offset refers to the MSIL offset within the new, instrumented code. The map should be sorted in increasing order. For stepping to work properly, follow these guidelines:  
   
--   Do not reorder instrumented MSIL code.  
+- Do not reorder instrumented MSIL code.  
   
--   Do not remove the original MSIL code.  
+- Do not remove the original MSIL code.  
   
--   Include entries for all the sequence points from the program database (PDB) file in the map. The map does not interpolate missing entries. So, given the following map:  
+- Include entries for all the sequence points from the program database (PDB) file in the map. The map does not interpolate missing entries. So, given the following map:  
   
      (0 old, 0 new)  
   
@@ -64,17 +64,17 @@ HRESULT SetILInstrumentedCodeMap(
   
      (9 old, 20 new)  
   
-    -   An old offset of 0, 1, 2, 3, or 4 will be mapped to new offset 0.  
+    - An old offset of 0, 1, 2, 3, or 4 will be mapped to new offset 0.  
   
-    -   An old offset of 5, 6, 7, or 8 will be mapped to new offset 10.  
+    - An old offset of 5, 6, 7, or 8 will be mapped to new offset 10.  
   
-    -   An old offset of 9 or higher will be mapped to new offset 20.  
+    - An old offset of 9 or higher will be mapped to new offset 20.  
   
-    -   A new offset of 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9 will be mapped to old offset 0.  
+    - A new offset of 0, 1, 2, 3, 4, 5, 6, 7, 8, or 9 will be mapped to old offset 0.  
   
-    -   A new offset of 10, 11, 12, 13, 14, 15, 16, 17, 18, or 19 will be mapped to old offset 5.  
+    - A new offset of 10, 11, 12, 13, 14, 15, 16, 17, 18, or 19 will be mapped to old offset 5.  
   
-    -   A new offset of 20 or higher will be mapped to old offset 9.  
+    - A new offset of 20 or higher will be mapped to old offset 9.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -86,4 +86,5 @@ HRESULT SetILInstrumentedCodeMap(
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<discoveryClient>"
 ms.date: "03/30/2017"
 ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb
@@ -53,5 +53,6 @@ A configuration element for creating a custom binding that enables a client appl
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
 - <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement>

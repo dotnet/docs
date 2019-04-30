@@ -16,15 +16,15 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
   
  Reliable messaging performs the following functions:  
   
--   Transfers assurances for messages sent from a source to a destination regardless of message transfer or transport failures.  
+- Transfers assurances for messages sent from a source to a destination regardless of message transfer or transport failures.  
   
--   Separates the source and the destination from each other. This provides independent failure and recovery of the source and the destination, as well as reliable transfer and delivery of messages, even when the source or destination is unavailable.  
+- Separates the source and the destination from each other. This provides independent failure and recovery of the source and the destination, as well as reliable transfer and delivery of messages, even when the source or destination is unavailable.  
   
  Reliable messaging frequently comes at the cost of high latency. *Latency* is the time it takes for the message to reach the destination from the source. WCF, therefore, provides the following types of reliable messaging:  
   
--   [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md), which offers reliable transfer without the cost of high latency.  
+- [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md), which offers reliable transfer without the cost of high latency.  
   
--   [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md), which offers both reliable transfers and separation between the source and the destination.  
+- [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md), which offers both reliable transfers and separation between the source and the destination.  
   
 ## Reliable Sessions  
  Reliable sessions provide end-to-end reliable transfer of messages between a source and a destination using the WS-Reliable Messaging protocol, regardless of the number or type of intermediaries that separate the messaging (source and destination) endpoints. This includes any transport intermediaries that do not use SOAP (for example, HTTP proxies) or intermediaries that use SOAP (for example, SOAP-based routers or bridges) that are required for messages to flow between the endpoints. Reliable sessions use an in-memory transfer window to mask SOAP message-level failures and re-establish connections in the case of transport failures.  
@@ -39,5 +39,6 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
  The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when the source's rate of message production and the destination's rate of the message consumption do not match. For more information about queues, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
 ## See also
+
 - [Reliable Sessions Overview](../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)
 - [Queuing in WCF](../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)

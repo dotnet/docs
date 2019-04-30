@@ -39,6 +39,7 @@ Represents a configuration element that specifies the interval of time allowed f
 |[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|A configuration element that specifies settings for a service host.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
 - [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

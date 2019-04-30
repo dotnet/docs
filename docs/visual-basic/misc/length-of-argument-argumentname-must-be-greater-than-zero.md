@@ -10,8 +10,8 @@ An argument has a value that is equal to or less than zero.
   
 ## To correct this error  
   
--   Supply an argument that is greater than zero.  
+- Supply an argument that is greater than zero.  
   
 ## See also
-- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
 
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

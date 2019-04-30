@@ -13,33 +13,33 @@ This topic shows the basic steps to create methods that use a duplex (two-way) c
   
 ### To create a duplex contract  
   
-1.  Create the interface that makes up the server side of the duplex contract.  
+1. Create the interface that makes up the server side of the duplex contract.  
   
-2.  Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
+2. Apply the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface.  
   
      [!code-csharp[S_WS_DualHttp#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#3)]
      [!code-vb[S_WS_DualHttp#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_ws_dualhttp/vb/service.vb#3)]  
   
-3.  Declare the method signatures in the interface.  
+3. Declare the method signatures in the interface.  
   
-4.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method signature that must be part of the public contract.  
+4. Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method signature that must be part of the public contract.  
   
-5.  Create the callback interface that defines the set of operations that the service can invoke on the client.  
+5. Create the callback interface that defines the set of operations that the service can invoke on the client.  
   
      [!code-csharp[S_WS_DualHttp#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#4)]
      [!code-vb[S_WS_DualHttp#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_ws_dualhttp/vb/service.vb#4)]  
   
-6.  Declare the method signatures in the callback interface.  
+6. Declare the method signatures in the callback interface.  
   
-7.  Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method signature that must be part of the public contract.  
+7. Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method signature that must be part of the public contract.  
   
-8.  Link the two interfaces into a duplex contract by setting the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A> property in the primary interface to the type of the callback interface.  
+8. Link the two interfaces into a duplex contract by setting the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A> property in the primary interface to the type of the callback interface.  
   
 ### To call methods on the client  
   
-1.  In the service's implementation of the primary contract, declare a variable for the callback interface.  
+1. In the service's implementation of the primary contract, declare a variable for the callback interface.  
   
-2.  Set the variable to the object reference returned by the <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> method of the <xref:System.ServiceModel.OperationContext> class.  
+2. Set the variable to the object reference returned by the <xref:System.ServiceModel.OperationContext.GetCallbackChannel%2A> method of the <xref:System.ServiceModel.OperationContext> class.  
   
      [!code-csharp[S_WS_DualHttp#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#1)]
      [!code-vb[S_WS_DualHttp#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_ws_dualhttp/vb/service.vb#1)]  
@@ -47,7 +47,7 @@ This topic shows the basic steps to create methods that use a duplex (two-way) c
      [!code-csharp[S_WS_DualHttp#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#2)]
      [!code-vb[S_WS_DualHttp#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_ws_dualhttp/vb/service.vb#2)]  
   
-3.  Call the methods defined by the callback interface.  
+3. Call the methods defined by the callback interface.  
   
 ## Example  
  The following code example demonstrates duplex communication. The service’s contract contains service operations for moving forward and backward. The client’s contract contains a service operation for reporting its position.  
@@ -55,13 +55,14 @@ This topic shows the basic steps to create methods that use a duplex (two-way) c
  [!code-csharp[S_WS_DualHttp#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#5)]
  [!code-vb[S_WS_DualHttp#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_ws_dualhttp/vb/service.vb#5)]  
   
--   Applying the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes allows the automatic generation of service contract definitions in the Web Services Description Language (WSDL).  
+- Applying the <xref:System.ServiceModel.ServiceContractAttribute> and <xref:System.ServiceModel.OperationContractAttribute> attributes allows the automatic generation of service contract definitions in the Web Services Description Language (WSDL).  
   
--   Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to retrieve the WSDL document and (optional) code and configuration for a client.  
+- Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to retrieve the WSDL document and (optional) code and configuration for a client.  
   
--   Endpoints exposing duplex services must be secured. When a service receives a duplex message, it looks at the ReplyTo in that incoming message to determine where to send the reply. If the channel is not secured, then an untrusted client could send a malicious message with a target machine's ReplyTo, leading to a denial of service of the target machine. With regular request-reply messages, this is not an issue, because the ReplyTo is ignored and the response is sent on the channel the original message came in on.  
+- Endpoints exposing duplex services must be secured. When a service receives a duplex message, it looks at the ReplyTo in that incoming message to determine where to send the reply. If the channel is not secured, then an untrusted client could send a malicious message with a target machine's ReplyTo, leading to a denial of service of the target machine. With regular request-reply messages, this is not an issue, because the ReplyTo is ignored and the response is sent on the channel the original message came in on.  
   
 ## See also
+
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
 - [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)

@@ -33,7 +33,7 @@ HRESULT SetMethodSourceRange(
     [in] ULONG32                      endColumn);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startDoc`  
  [in] A pointer to the document containing the starting position.  
   
@@ -59,4 +59,5 @@ HRESULT SetMethodSourceRange(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

@@ -19,11 +19,11 @@ This topic explains the meaning and use of the design-time error list that appea
   
  You can expand or collapse an error category by either clicking on the error category heading or by clicking the expand/collapse chevron. When you expand an error category, the following additional help is displayed:  
   
--   Instances of this error.  
+- Instances of this error.  
   
--   Help with this error.  
+- Help with this error.  
   
--   Forum posts about this error.  
+- Forum posts about this error.  
   
 ### Instances of This Error  
  The additional help list all instances of the error in your current project. Many errors include an exact location in the following format: *[Project Name]* *[Form Name]* Line:*[Line Number]* Column:*[Column Number]*. The **Go to code** link takes you to the location in your code where the error occurs.  
@@ -39,15 +39,16 @@ This topic explains the meaning and use of the design-time error list that appea
 ### Forum posts about this error  
  The additional help will include a link to MSDN forum posts related to the error. The forums are searched based on the string of the error message. You can also try searching the following forums:  
   
--   [Windows Forms Designer Forum](https://go.microsoft.com/fwlink/?LinkId=203524)  
+- [Windows Forms Designer Forum](https://go.microsoft.com/fwlink/?LinkId=203524)  
   
--   [Windows Forms Forums](https://go.microsoft.com/fwlink/?LinkId=203523)  
+- [Windows Forms Forums](https://go.microsoft.com/fwlink/?LinkId=203523)  
   
 ### Ignore and Continue  
  You can choose to ignore the error condition and continue loading the designer. Choosing this action may result in unexpected behavior. For example, controls may not appear on the design surface.  
   
 ## See also
-- [Troubleshooting Design-Time Development](https://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)
-- [Troubleshooting Control and Component Authoring](../../../../docs/framework/winforms/controls/troubleshooting-control-and-component-authoring.md)
-- [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
-- [Windows Forms Designer Error Messages](https://msdn.microsoft.com/library/cf610bf4-5fe4-471c-bce7-6a05ece07bd2)
+
+- [Troubleshooting Design-Time Development](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171843(v=vs.120))
+- [Troubleshooting Control and Component Authoring](troubleshooting-control-and-component-authoring.md)
+- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)
+- [Windows Forms Designer Error Messages](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233640(v=vs.100))

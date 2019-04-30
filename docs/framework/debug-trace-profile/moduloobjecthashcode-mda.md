@@ -19,13 +19,13 @@ The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavio
 ## Symptoms  
  After moving to a new version of the common language runtime (CLR), a program no longer executes properly:  
   
--   The program is getting the wrong object from a <xref:System.Collections.Hashtable>.  
+- The program is getting the wrong object from a <xref:System.Collections.Hashtable>.  
   
--   The order of enumeration from a <xref:System.Collections.Hashtable> has a change that breaks the program.  
+- The order of enumeration from a <xref:System.Collections.Hashtable> has a change that breaks the program.  
   
--   Two objects that used to be equal are no longer equal.  
+- Two objects that used to be equal are no longer equal.  
   
--   Two objects that used to not be equal are now equal.  
+- Two objects that used to not be equal are now equal.  
   
 ## Cause  
  Your program may be getting the wrong object from a <xref:System.Collections.Hashtable> because the implementation of the <xref:System.Object.Equals%2A> method on the class for the key into the <xref:System.Collections.Hashtable> tests for equality of objects by comparing the results of the call to the <xref:System.Object.GetHashCode%2A> method. Hash codes should not be used to test for object equality because two objects may have the same hash code even if their respective fields have different values. These hash code collisions, although rare in practice, do occur. The effect this has on a <xref:System.Collections.Hashtable> lookup is that two keys which are not equal appear to be equal, and the wrong object is returned from the <xref:System.Collections.Hashtable>. For performance reasons, the implementation of <xref:System.Object.GetHashCode%2A> can change between runtime versions, so collisions that might not occur on one version might occur on subsequent versions. Enable this MDA to test whether your code has bugs when hash codes collide. When enabled, this MDA causes the <xref:System.Object.GetHashCode%2A> method to return 0, resulting in all hash codes colliding. The only effect enabling this MDA should have on your program is that your program runs slower.  
@@ -55,6 +55,7 @@ The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavio
 ```  
   
 ## See also
+
 - <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

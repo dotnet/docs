@@ -29,7 +29,7 @@ HRESULT SetDebugState (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `state`  
  [in] A bitwise combination of CorDebugThreadState enumeration values that specify the debugging state of this thread.  
   

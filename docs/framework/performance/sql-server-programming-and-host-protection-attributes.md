@@ -21,11 +21,11 @@ The ability to load and execute managed code in a SQL Server host requires meeti
 ## Host Protection Attributes  
  Host protection attributes identify types or members that do not fit the host programming model and represent the following increasing levels of reliability threat:  
   
--   Are otherwise benign.  
+- Are otherwise benign.  
   
--   Could lead to destabilization of server-managed user code.  
+- Could lead to destabilization of server-managed user code.  
   
--   Could lead to destabilization of the server process itself.  
+- Could lead to destabilization of the server process itself.  
   
  SQL Server disallows the use of a type or member that has a <xref:System.Security.Permissions.HostProtectionAttribute> that specifies a <xref:System.Security.Permissions.HostProtectionResource> value of <xref:System.Security.Permissions.HostProtectionResource.SharedState>, <xref:System.Security.Permissions.HostProtectionResource.Synchronization>, <xref:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort>, or <xref:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt>. This prevents the assemblies from calling members that enable sharing state, perform synchronization, might cause a resource leak on termination, or affect the integrity of the SQL Server process.  
   
@@ -70,5 +70,6 @@ The ability to load and execute managed code in a SQL Server host requires meeti
  Given these considerations, SQL Server disallows the use of static variables and static data members. For SAFE and EXTERNAL-ACCESS assemblies, SQL Server examines the metadata of the assembly at CREATE ASSEMBLY time, and fails the creation of such assemblies if it finds the use of static data members and variables.  
   
 ## See also
+
 - <xref:System.Security.Permissions.HostProtectionAttribute>
 - <xref:System.Security.Permissions.HostProtectionResource>

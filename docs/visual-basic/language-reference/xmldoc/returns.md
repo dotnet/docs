@@ -15,7 +15,7 @@ Specifies the return value of the property or function.
 <returns>description</returns>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the return value.  
   
@@ -27,7 +27,8 @@ Specifies the return value of the property or function.
 ## Example  
  This example uses the `<returns>` tag to explain what the `DoesRecordExist` function returns.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/returns_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

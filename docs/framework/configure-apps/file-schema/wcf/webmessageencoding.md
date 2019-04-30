@@ -66,6 +66,7 @@ Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and 
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>

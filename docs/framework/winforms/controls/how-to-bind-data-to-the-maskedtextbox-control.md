@@ -18,15 +18,15 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
   
 ### To bind data to a MaskedTextBox control  
   
-1.  Create a new Windows Forms project.  
+1. Create a new Windows Forms project.  
   
-2.  Drag two <xref:System.Windows.Forms.TextBox> controls onto your form; name them `FirstName` and `LastName`.  
+2. Drag two <xref:System.Windows.Forms.TextBox> controls onto your form; name them `FirstName` and `LastName`.  
   
-3.  Drag a <xref:System.Windows.Forms.MaskedTextBox> control onto your form; name it `PhoneMask`.  
+3. Drag a <xref:System.Windows.Forms.MaskedTextBox> control onto your form; name it `PhoneMask`.  
   
-4.  Set the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property of `PhoneMask` to `(000) 000-0000 x9999`.  
+4. Set the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property of `PhoneMask` to `(000) 000-0000 x9999`.  
   
-5.  Add the following namespace imports to the form.  
+5. Add the following namespace imports to the form.  
   
     ```csharp  
     using System.Data.SqlClient;  
@@ -36,7 +36,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
     Imports System.Data.SqlClient  
     ```  
   
-6.  Right-click the form and choose **View Code**. Place this code anywhere in your form class.  
+6. Right-click the form and choose **View Code**. Place this code anywhere in your form class.  
   
     ```csharp  
     Binding currentBinding, phoneBinding;  
@@ -130,7 +130,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
     End Sub  
     ```  
   
-7.  Add event handlers for the <xref:System.Windows.Forms.Binding.Format> and <xref:System.Windows.Forms.Binding.Parse> events to combine and separate the `PhoneNumber` and `Extension` fields from the bound <xref:System.Data.DataSet>.  
+7. Add event handlers for the <xref:System.Windows.Forms.Binding.Format> and <xref:System.Windows.Forms.Binding.Parse> events to combine and separate the `PhoneNumber` and `Extension` fields from the bound <xref:System.Data.DataSet>.  
   
     ```csharp  
     private void phoneBinding_Format(Object sender, ConvertEventArgs e)  
@@ -198,7 +198,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
     End Sub  
     ```  
   
-8.  Add two <xref:System.Windows.Forms.Button> controls to the form. Name them `previousButton` and `nextButton`. Double-click each button to add a <xref:System.Windows.Forms.Control.Click> event handler, and fill in the event handlers as shown in the following code example.  
+8. Add two <xref:System.Windows.Forms.Button> controls to the form. Name them `previousButton` and `nextButton`. Double-click each button to add a <xref:System.Windows.Forms.Control.Click> event handler, and fill in the event handlers as shown in the following code example.  
   
     ```csharp  
     private void previousButton_Click(object sender, EventArgs e)  
@@ -227,21 +227,22 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
 ## Example  
  The following code example is the full code listing that results from completing the previous procedure.  
   
- [!code-cpp[MaskedTextBoxData#1](../../../../samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]
- [!code-csharp[MaskedTextBoxData#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/MaskedTextBoxData/CS/form1.cs#1)]
- [!code-vb[MaskedTextBoxData#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/MaskedTextBoxData/VB/form1.vb#1)]  
+ [!code-cpp[MaskedTextBoxData#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]
+ [!code-csharp[MaskedTextBoxData#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MaskedTextBoxData/CS/form1.cs#1)]
+ [!code-vb[MaskedTextBoxData#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MaskedTextBoxData/VB/form1.vb#1)]  
   
 ## Compiling the Code  
   
--   Create a Visual C# or Visual Basic project.  
+- Create a Visual C# or Visual Basic project.  
   
--   Add the <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.MaskedTextBox> controls to the form, as described in the previous procedure.  
+- Add the <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.MaskedTextBox> controls to the form, as described in the previous procedure.  
   
--   Open the source code file for the project's default form.  
+- Open the source code file for the project's default form.  
   
--   Replace the source code in this file with the code listed in the previous "Code" section.  
+- Replace the source code in this file with the code listed in the previous "Code" section.  
   
--   Compile the application.  
+- Compile the application.  
   
 ## See also
-- [Walkthrough: Working with the MaskedTextBox Control](../../../../docs/framework/winforms/controls/walkthrough-working-with-the-maskedtextbox-control.md)
+
+- [Walkthrough: Working with the MaskedTextBox Control](walkthrough-working-with-the-maskedtextbox-control.md)

@@ -29,7 +29,7 @@ HRESULT CreateStepper (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppStepper`  
  [out] A pointer to the address of an ICorDebugStepper object that allows the debugger to perform stepping operations relative to the current frame.  
   

@@ -25,13 +25,13 @@ This sample demonstrates how the communication between two different Windows Wor
   
 #### To set up, build, and run the sample  
   
-1.  Right-click the **AsynchronousCommunication** solution and select **Properties**.  
+1. Right-click the **AsynchronousCommunication** solution and select **Properties**.  
   
-2.  In **Common Properties**, select **Startup Project**, and select **Multiple Startup Projects**.  
+2. In **Common Properties**, select **Startup Project**, and select **Multiple Startup Projects**.  
   
-3.  Move **RentalApprovalService** to the first position in the list, followed by **CreditCheckService**, followed by **Client**. Set the **Start** action on all three projects.  
+3. Move **RentalApprovalService** to the first position in the list, followed by **CreditCheckService**, followed by **Client**. Set the **Start** action on all three projects.  
   
-4.  Click **OK**, and press F5 to run the sample.  
+4. Click **OK**, and press F5 to run the sample.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

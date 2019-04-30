@@ -17,7 +17,7 @@ ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
 <returns>description</returns>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A description of the return value.  
   
@@ -27,7 +27,7 @@ ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
  Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#10](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/returns_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#10)]  
   
 ## See also
 

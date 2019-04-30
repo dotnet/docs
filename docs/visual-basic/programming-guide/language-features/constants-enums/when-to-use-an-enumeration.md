@@ -13,13 +13,13 @@ Enumerations offer an easy way to work with sets of related constants. An enumer
   
  The benefits of using enumerations include:  
   
--   Reduces errors caused by transposing or mistyping numbers.  
+- Reduces errors caused by transposing or mistyping numbers.  
   
--   Makes it easy to change values in the future.  
+- Makes it easy to change values in the future.  
   
--   Makes code easier to read, which means it is less likely that errors will creep into it.  
+- Makes code easier to read, which means it is less likely that errors will creep into it.  
   
--   Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
+- Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
   
 ## Naming Enumerations  
  Use a naming convention for enumeration members. When Visual Basic encounters an enumeration member name, an exception may be thrown if other referenced type libraries contain the same name. Use a unique prefix that identifies the values from your application or component.  
@@ -30,6 +30,7 @@ Enumerations offer an easy way to work with sets of related constants. An enumer
  Visual Basic provides a number of predefined enumerations, such as `FirstDayOfWeek` and `MsgBoxResult`, to facilitate your code. For a list of these see [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md).  
   
 ## See also
+
 - [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
 - [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)
 - [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)

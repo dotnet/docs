@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be
 ---
 # Service Identity and Authentication
-A service's *endpoint identity*is a value generated from the service Web Services Description Language (WSDL). This value, propagated to any client, is used to authenticate the service. After the client initiates a communication to an endpoint and the service authenticates itself to the client, the client compares the endpoint identity value with the actual value the endpoint authentication process returned. If they match, the client is assured it has contacted the expected service endpoint. This functions as a protection against *phishing* by preventing a client from being redirected to an endpoint hosted by a malicious service.  
+A service's *endpoint identity* is a value generated from the service Web Services Description Language (WSDL). This value, propagated to any client, is used to authenticate the service. After the client initiates a communication to an endpoint and the service authenticates itself to the client, the client compares the endpoint identity value with the actual value the endpoint authentication process returned. If they match, the client is assured it has contacted the expected service endpoint. This functions as a protection against *phishing* by preventing a client from being redirected to an endpoint hosted by a malicious service.  
   
  For a sample application that demonstrates identity setting, see [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md). For more information about endpoints and endpoint addresses, see [Addresses](../../../../docs/framework/wcf/feature-details/endpoint-addresses.md).  
   
@@ -20,9 +20,9 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
  Identity processing consists of the following stages:  
   
--   At design time, the client developer determines the service's identity from the endpoint's metadata (exposed through WSDL).  
+- At design time, the client developer determines the service's identity from the endpoint's metadata (exposed through WSDL).  
   
--   At runtime, the client application checks the claims of the service's security credentials before sending any messages to the service.  
+- At runtime, the client application checks the claims of the service's security credentials before sending any messages to the service.  
   
  Identity processing on the client is analogous to client authentication on the service. A secure service does not execute code until the client's credentials have been authenticated. Likewise, the client does not send messages to the service until the service's credentials have been authenticated based on what is known in advance from the service's metadata.  
   
@@ -48,13 +48,9 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
 ## Using the \<identity> Element in Configuration  
  If you change the client credential type in the binding previously shown to `Certificate,` then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
-  
-  
-  
+
  You can change the value of the default service identity or change the type of the identity by using the `<identity>` element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.  
-  
-  
-  
+
 ## Setting Identity Programmatically  
  Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
   
@@ -63,16 +59,12 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
 ## Specifying Identity at the Client  
  At design time, a client developer typically uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate client configuration. The generated configuration file (intended for use by the client) contains the server's identity. For example, the following code is generated from a service that specifies a DNS identity, as shown in the preceding example. Note that the client's endpoint identity value matches that of the service. In this case, when the client receives the Windows (Kerberos) credentials for the service, it expects the value to be `contoso.com`.  
-  
-  
-  
+
  If, instead of Windows, the service specifies a certificate as the client credential type, then the certificate's DNS property is expected to be the value `contoso.com`. (Or if the DNS property is `null`, the certificate's subject name must be `contoso.com`.)  
   
 #### Using a Specific Value for Identity  
  The following client configuration file shows how the service's identity is expected to be a specific value. In the following example, the client can communicate with two endpoints. The first is identified with a certificate thumbprint and the second with a certificate RSA key. That is, a certificate that contains only a public key/private key pair, but is not issued by a trusted authority.  
-  
-  
-  
+
 ## Identity Checking at Run Time  
  At design time, a client developer determines the server's identity through its metadata. At runtime, the identity check is performed before calling any endpoints on the service.  
   
@@ -80,21 +72,21 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
  If the channel is configured to authenticate using message- or transport-level Secure Sockets Layer (SSL) with X.509 certificates for authentication, the following identity values are valid:  
   
--   DNS. WCF ensures that the certificate provided during the SSL handshake contains a DNS or `CommonName` (CN) attribute equal to the value specified in the DNS identity on the client. Note that these checks are done in addition to determining the validity of the server certificate. By default, WCF validates that the server certificate is issued by a trusted root authority.  
+- DNS. WCF ensures that the certificate provided during the SSL handshake contains a DNS or `CommonName` (CN) attribute equal to the value specified in the DNS identity on the client. Note that these checks are done in addition to determining the validity of the server certificate. By default, WCF validates that the server certificate is issued by a trusted root authority.  
   
--   Certificate. During the SSL handshake, WCF ensures that the remote endpoint provides the exact certificate value specified in the identity.  
+- Certificate. During the SSL handshake, WCF ensures that the remote endpoint provides the exact certificate value specified in the identity.  
   
--   Certificate Reference. Same as Certificate.  
+- Certificate Reference. Same as Certificate.  
   
--   RSA. During the SSL handshake, WCF ensures that the remote endpoint provides the exact RSA key specified in the identity.  
+- RSA. During the SSL handshake, WCF ensures that the remote endpoint provides the exact RSA key specified in the identity.  
   
  If the service authenticates using message- or transport-level SSL with a Windows credential for authentication, and negotiates the credential, the following identity values are valid:  
   
--   DNS. The negotiation passes the service's SPN so that the DNS name can be checked. The SPN is in the form `host/<dns name>`.  
+- DNS. The negotiation passes the service's SPN so that the DNS name can be checked. The SPN is in the form `host/<dns name>`.  
   
--   SPN. An explicit service SPN is returned, for example, `host/myservice`.  
+- SPN. An explicit service SPN is returned, for example, `host/myservice`.  
   
--   UPN. The UPN of the service account. The UPN is in the form `username`@`domain`. For example, when the service is running in a user account, it may be `username@contoso.com`.  
+- UPN. The UPN of the service account. The UPN is in the form `username`@`domain`. For example, when the service is running in a user account, it may be `username@contoso.com`.  
   
  Specifying the identity programmatically (using the <xref:System.ServiceModel.EndpointAddress.Identity%2A> property) is optional. If no identity is specified, and the client credential type is Windows, the default is SPN with the value set to the hostname part of the service endpoint address prefixed with the "host/" literal. If no identity is specified, and the client credential type is a certificate, the default is `Certificate`. This applies to both message- and transport-level security.  
   
@@ -107,6 +99,7 @@ A service's *endpoint identity*is a value generated from the service Web Service
  For more information about how to stack binding elements correctly for a custom binding, see [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md). For more information about creating a custom binding with the <xref:System.ServiceModel.Channels.SecurityBindingElement>, see [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md).  
   
 ## See also
+
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)
 - [How to: Create a Custom Client Identity Verifier](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)

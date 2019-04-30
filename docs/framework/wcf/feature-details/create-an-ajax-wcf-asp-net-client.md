@@ -71,15 +71,15 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 4. Back in the **Source** view, add the following code between the **\<ScriptManager>** tags to specify the path to the WCF service:
 
-    ```html
+    ```xml
     <Services>
        <asp:ServiceReference Path="~/CostService.svc" />
     </Services>
     ```
 
-1. Add the code for the Javascript function `Calculate()`. Place the following code in the **head** section of the web form:
+5. Add the code for the Javascript function `Calculate()`. Place the following code in the **head** section of the web form:
 
-    ```javascript
+    ```html
     <script type="text/javascript">
 
         function Calculate() {

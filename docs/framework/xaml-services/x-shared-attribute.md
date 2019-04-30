@@ -27,7 +27,7 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
  Modifying an object that is returned through a resource API, such as <xref:System.Windows.FrameworkElement.FindResource%2A>, or modifying an object directly within a <xref:System.Windows.ResourceDictionary>, changes the original resource. If references to that resource were dynamic resource references, the consumers of that resource get the changed resource.  
   
- If references to the resource were static resource references, changes to the resource after [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing time are irrelevant. For more information about static versus dynamic resource references, see [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md).  
+ If references to the resource were static resource references, changes to the resource after [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing time are irrelevant. For more information about static versus dynamic resource references, see [XAML Resources](../wpf/advanced/xaml-resources.md).  
   
  Explicitly specifying `x:Shared="true"` is rarely done, because that is already the default. There is no direct code equivalent for `x:Shared` in the WPF object model; it can only be specified in a XAML usage and must be processed either by the default WPF behavior or in an intermediate XAML node stream on the load path if processed using .NET Framework XAML Services and its XAML readers.  
   
@@ -39,11 +39,12 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
  In WPF, `x:Shared` is only valid under the following conditions:  
   
--   The <xref:System.Windows.ResourceDictionary> that contains the items with `x:Shared` must be compiled. The <xref:System.Windows.ResourceDictionary> cannot be within loose XAML or used for themes.  
+- The <xref:System.Windows.ResourceDictionary> that contains the items with `x:Shared` must be compiled. The <xref:System.Windows.ResourceDictionary> cannot be within loose XAML or used for themes.  
   
--   The <xref:System.Windows.ResourceDictionary> that contains the items must not be nested within another <xref:System.Windows.ResourceDictionary>. For example, you cannot use `x:Shared` for items in a <xref:System.Windows.ResourceDictionary> that is within a <xref:System.Windows.Style> that is already a <xref:System.Windows.ResourceDictionary> item.  
+- The <xref:System.Windows.ResourceDictionary> that contains the items must not be nested within another <xref:System.Windows.ResourceDictionary>. For example, you cannot use `x:Shared` for items in a <xref:System.Windows.ResourceDictionary> that is within a <xref:System.Windows.Style> that is already a <xref:System.Windows.ResourceDictionary> item.  
   
 ## See also
+
 - <xref:System.Windows.ResourceDictionary>
-- [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)
-- [Base Elements](../../../docs/framework/wpf/advanced/base-elements.md)
+- [XAML Resources](../wpf/advanced/xaml-resources.md)
+- [Base Elements](../wpf/advanced/base-elements.md)

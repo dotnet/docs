@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<wsHttpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
@@ -93,6 +93,7 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## See also
+
 - <xref:System.ServiceModel.WSHttpBinding>
 - <xref:System.ServiceModel.WSHttpContextBinding>
 - <xref:System.ServiceModel.Configuration.WSHttpContextBindingElement>

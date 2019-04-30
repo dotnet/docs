@@ -21,11 +21,11 @@ Windows Communication Foundation (WCF) provides a new TCP-based network protocol
 ## Port Sharing Architecture  
  The Port Sharing architecture in WCF has three main components:  
   
--   A Worker Process: Any process communicating over net.tcp:// using shared ports.  
+- A Worker Process: Any process communicating over net.tcp:// using shared ports.  
   
--   The WCF TCP transport: Implements the net.tcp:// protocol.  
+- The WCF TCP transport: Implements the net.tcp:// protocol.  
   
--   The Net.TCP Port Sharing Service: Allows many worker processes to share the same TCP port.  
+- The Net.TCP Port Sharing Service: Allows many worker processes to share the same TCP port.  
   
  The Net.TCP Port Sharing Service is a user-mode Windows service that accepts net.tcp:// connections on behalf of the worker processes that connect through it. When a socket connection arrives, the port sharing service inspects the incoming message stream to obtain its destination address. Based on this address, the port sharing service can route the data stream to the application that ultimately processes it.  
   
@@ -43,6 +43,7 @@ Windows Communication Foundation (WCF) provides a new TCP-based network protocol
  Although the Net.TCP Port Sharing Service provides a layer of processing between applications and the network, applications that use port sharing should still be secured as if they were directly listening on the network. Specifically, applications that use port sharing should evaluate the process privileges under which they run. Consider running your application using the built-in Network Service account, which runs with the minimal set of process privileges required for network communication.  
   
 ## See also
+
 - [Configuring the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)
 - [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)
 - [How to: Configure a WCF Service to Use Port Sharing](../../../../docs/framework/wcf/feature-details/how-to-configure-a-wcf-service-to-use-port-sharing.md)

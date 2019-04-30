@@ -13,9 +13,9 @@ ms.author: "ronpet"
 # Lazy Initialization
 *Lazy initialization* of an object means that its creation is deferred until it is first used. (For this topic, the terms *lazy initialization* and *lazy instantiation* are synonymous.) Lazy initialization is primarily used to improve performance, avoid wasteful computation, and reduce program memory requirements. These are the most common scenarios:  
   
--   When you have an object that is expensive to create, and the program might not use it. For example, assume that you have in memory a `Customer` object that has an `Orders` property that contains a large array of `Order` objects that, to be initialized, requires a database connection. If the user never asks to display the Orders or use the data in a computation, then there is no reason to use system memory or computing cycles to create it. By using `Lazy<Orders>` to declare the `Orders` object for lazy initialization, you can avoid wasting system resources when the object is not used.  
+- When you have an object that is expensive to create, and the program might not use it. For example, assume that you have in memory a `Customer` object that has an `Orders` property that contains a large array of `Order` objects that, to be initialized, requires a database connection. If the user never asks to display the Orders or use the data in a computation, then there is no reason to use system memory or computing cycles to create it. By using `Lazy<Orders>` to declare the `Orders` object for lazy initialization, you can avoid wasting system resources when the object is not used.  
   
--   When you have an object that is expensive to create, and you want to defer its creation until after other expensive operations have been completed. For example, assume that your program loads several object instances when it starts, but only some of them are required immediately. You can improve the startup performance of the program by deferring initialization of the objects that are not required until the required objects have been created.  
+- When you have an object that is expensive to create, and you want to defer its creation until after other expensive operations have been completed. For example, assume that your program loads several object instances when it starts, but only some of them are required immediately. You can improve the startup performance of the program by deferring initialization of the objects that are not required until the required objects have been created.  
   
  Although you can write your own code to perform lazy initialization, we recommend that you use <xref:System.Lazy%601> instead. <xref:System.Lazy%601> and its related types also support thread-safety and provide a consistent exception propagation policy.  
   
@@ -122,11 +122,11 @@ ms.author: "ronpet"
   
  <xref:System.Threading.ThreadLocal%601> wraps its object in much the same way as <xref:System.Lazy%601>, with these essential differences:  
   
--   Each thread initializes the thread-local variable by using its own private data that is not accessible from other threads.  
+- Each thread initializes the thread-local variable by using its own private data that is not accessible from other threads.  
   
--   The <xref:System.Threading.ThreadLocal%601.Value%2A?displayProperty=nameWithType> property is read-write, and can be modified any number of times. This can affect exception propagation, for example, one `get` operation can raise an exception but the next one can successfully initialize the value.  
+- The <xref:System.Threading.ThreadLocal%601.Value%2A?displayProperty=nameWithType> property is read-write, and can be modified any number of times. This can affect exception propagation, for example, one `get` operation can raise an exception but the next one can successfully initialize the value.  
   
--   If no initialization delegate is provided, <xref:System.Threading.ThreadLocal%601> will initialize its wrapped type by using the default value of the type. In this regard, <xref:System.Threading.ThreadLocal%601> is consistent with the <xref:System.ThreadStaticAttribute> attribute.  
+- If no initialization delegate is provided, <xref:System.Threading.ThreadLocal%601> will initialize its wrapped type by using the default value of the type. In this regard, <xref:System.Threading.ThreadLocal%601> is consistent with the <xref:System.ThreadStaticAttribute> attribute.  
   
  The following example demonstrates that every thread that accesses the `ThreadLocal<int>` instance gets its own unique copy of the data.  
   
@@ -147,6 +147,7 @@ ms.author: "ronpet"
  In this example, notice that the initialization procedure is invoked on every iteration of the loop. In multi-threaded scenarios, the first thread to invoke the initialization procedure is the one whose value is seen by all threads. Later threads also invoke the initialization procedure, but their results are not used. If this kind of potential race condition is not acceptable, use the overload of <xref:System.Threading.LazyInitializer.EnsureInitialized%2A?displayProperty=nameWithType> that takes a Boolean argument and a synchronization object.  
   
 ## See also
+
 - [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
 - [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
 - [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

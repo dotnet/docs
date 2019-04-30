@@ -10,11 +10,12 @@ A method call contains the wrong number of arguments.
   
 ## To correct this error  
   
-1.  Count the arguments that you have supplied.  
+1. Count the arguments that you have supplied.  
   
-2.  Match the number against the number of parameters in the method you want to call.  
+2. Match the number against the number of parameters in the method you want to call.  
   
-3.  Adjust the number of arguments if the two numbers do not agree.  
+3. Adjust the number of arguments if the two numbers do not agree.  
   
 ## See also
+
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

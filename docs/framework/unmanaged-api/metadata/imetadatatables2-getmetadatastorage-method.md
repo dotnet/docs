@@ -30,7 +30,7 @@ HRESULT GetMetaDataStorage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppvMd`  
  [in, out] A pointer to a metadata section.  
   
@@ -47,5 +47,6 @@ HRESULT GetMetaDataStorage (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)

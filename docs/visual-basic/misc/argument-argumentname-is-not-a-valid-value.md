@@ -10,10 +10,10 @@ An argument's value is not valid.
   
 ## To correct this error  
   
-1.  Check the value of the argument.  
+1. Check the value of the argument.  
   
-2.  If the argument is supplied by a calculation, check the values that the calculation processes.  
+2. If the argument is supplied by a calculation, check the values that the calculation processes.  
   
 ## See also
-- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
 
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

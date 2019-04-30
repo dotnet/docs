@@ -15,25 +15,25 @@ ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
 # Walkthrough: Working with the MaskedTextBox Control
 Tasks illustrated in this walkthrough include:  
   
--   Initializing the <xref:System.Windows.Forms.MaskedTextBox> control  
+- Initializing the <xref:System.Windows.Forms.MaskedTextBox> control  
   
--   Using the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event handler to alert the user when a character does not conform to the mask  
+- Using the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event handler to alert the user when a character does not conform to the mask  
   
--   Assigning a type to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property and using the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler to alert the user when the value they're attempting to commit is not valid for the type  
+- Assigning a type to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property and using the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler to alert the user when the value they're attempting to commit is not valid for the type  
   
 ## Creating the Project and Adding a Control  
   
 #### To add a MaskedTextBox control to your form  
   
-1.  Open the form on which you want to place the <xref:System.Windows.Forms.MaskedTextBox> control.  
+1. Open the form on which you want to place the <xref:System.Windows.Forms.MaskedTextBox> control.  
   
-2.  Drag a <xref:System.Windows.Forms.MaskedTextBox> control from the **Toolbox** to your form.  
+2. Drag a <xref:System.Windows.Forms.MaskedTextBox> control from the **Toolbox** to your form.  
   
-3.  Right-click the control and choose **Properties**. In the **Properties** window, select the **Mask** property and click the **...** (ellipsis) button next to the property name.  
+3. Right-click the control and choose **Properties**. In the **Properties** window, select the **Mask** property and click the **...** (ellipsis) button next to the property name.  
   
-4.  In the **Input Mask** dialog box, select the **Short Date** mask and click **OK**.  
+4. In the **Input Mask** dialog box, select the **Short Date** mask and click **OK**.  
   
-5.  In the **Properties** window set the <xref:System.Windows.Forms.MaskedTextBox.BeepOnError%2A> property to `true`. This property causes a short beep to sound every time the user attempts to input a character that violates the mask definition.  
+5. In the **Properties** window set the <xref:System.Windows.Forms.MaskedTextBox.BeepOnError%2A> property to `true`. This property causes a short beep to sound every time the user attempts to input a character that violates the mask definition.  
   
  For a summary of the characters that the Mask property supports, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
@@ -41,9 +41,9 @@ Tasks illustrated in this walkthrough include:
   
 #### Add a balloon tip for rejected mask input  
   
-1.  Return to the **Toolbox** and add a <xref:System.Windows.Forms.ToolTip> to your form.  
+1. Return to the **Toolbox** and add a <xref:System.Windows.Forms.ToolTip> to your form.  
   
-2.  Create an event handler for the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event that raises the <xref:System.Windows.Forms.ToolTip> when an input error occurs. The balloon tip remains visible for five seconds, or until the user clicks it.  
+2. Create an event handler for the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event that raises the <xref:System.Windows.Forms.ToolTip> when an input error occurs. The balloon tip remains visible for five seconds, or until the user clicks it.  
   
     ```csharp  
     public void Form1_Load(Object sender, EventArgs e)   
@@ -76,7 +76,7 @@ Tasks illustrated in this walkthrough include:
   
 #### Add a balloon tip for invalid data types  
   
-1.  In your form's <xref:System.Windows.Forms.Form.Load> event handler, assign a <xref:System.Type> object representing the <xref:System.DateTime> type to the <xref:System.Windows.Forms.MaskedTextBox> control's <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property:  
+1. In your form's <xref:System.Windows.Forms.Form.Load> event handler, assign a <xref:System.Type> object representing the <xref:System.DateTime> type to the <xref:System.Windows.Forms.MaskedTextBox> control's <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property:  
   
     ```csharp  
     private void Form1_Load(Object sender, EventArgs e)  
@@ -94,7 +94,7 @@ Tasks illustrated in this walkthrough include:
     End Sub  
     ```  
   
-2.  Add an event handler for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event:  
+2. Add an event handler for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event:  
   
     ```csharp  
     public void maskedTextBox1_TypeValidationCompleted(object sender, TypeValidationEventArgs e)  
@@ -119,5 +119,6 @@ Tasks illustrated in this walkthrough include:
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.MaskedTextBox>
-- [MaskedTextBox Control](../../../../docs/framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+- [MaskedTextBox Control](maskedtextbox-control-windows-forms.md)

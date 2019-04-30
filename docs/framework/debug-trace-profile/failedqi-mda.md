@@ -19,11 +19,11 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
   
 ## Cause  
   
--   The call is made from the wrong context.  
+- The call is made from the wrong context.  
   
--   The registered proxy is failing the `QueryInterface` call because the call was attempted in the wrong context.  
+- The registered proxy is failing the `QueryInterface` call because the call was attempted in the wrong context.  
   
--   An OLE-owned proxy returned a failure HRESULT.  
+- An OLE-owned proxy returned a failure HRESULT.  
   
 ## Resolution  
  See the MSDN documentation on COM rules.  
@@ -45,6 +45,7 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
 ```  
   
 ## See also
+
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)

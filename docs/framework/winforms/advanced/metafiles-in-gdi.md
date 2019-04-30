@@ -16,11 +16,11 @@ ms.assetid: 51da872c-c783-440f-8bf6-1e580a966c31
 ## Metafile Formats  
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can display metafiles that have been stored in the following formats:  
   
--   Windows Metafile (WMF)  
+- Windows Metafile (WMF)  
   
--   Enhanced Metafile (EMF)  
+- Enhanced Metafile (EMF)  
   
--   EMF+  
+- EMF+  
   
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] can record metafiles in the EMF and EMF+ formats, but not in the WMF format.  
   
@@ -28,8 +28,9 @@ ms.assetid: 51da872c-c783-440f-8bf6-1e580a966c31
   
  The following example displays a metafile that was previously saved as a file. The metafile is displayed with its upper-left corner at (100, 100).  
   
- [!code-csharp[System.Drawing.ImagesBitmapsMetafiles#21](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImagesBitmapsMetafiles/CS/Class1.cs#21)]
- [!code-vb[System.Drawing.ImagesBitmapsMetafiles#21](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImagesBitmapsMetafiles/VB/Class1.vb#21)]  
+ [!code-csharp[System.Drawing.ImagesBitmapsMetafiles#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImagesBitmapsMetafiles/CS/Class1.cs#21)]
+ [!code-vb[System.Drawing.ImagesBitmapsMetafiles#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImagesBitmapsMetafiles/VB/Class1.vb#21)]  
   
 ## See also
-- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+
+- [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)

@@ -15,50 +15,50 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
 
 ## Create the activity library project
 
-1.  Open Visual Studio and choose **New** > **Project** from the **File** menu.
+1. Open Visual Studio and choose **New** > **Project** from the **File** menu.
 
-2.  In the **New Project** dialog, under the **Installed** category, select **Visual C#** > **Workflow** (or **Visual Basic** > **Workflow**).
+2. In the **New Project** dialog, under the **Installed** category, select **Visual C#** > **Workflow** (or **Visual Basic** > **Workflow**).
 
     > [!NOTE]
     > If you don't see the **Workflow** template category, you may need to install the **Windows Workflow Foundation** component of Visual Studio. Choose the **Open Visual Studio Installer** link on the left-hand side of the **New Project** dialog. In Visual Studio Installer, select the **Individual components** tab. Then, under the **Development activities** category, select the **Windows Workflow Foundation** component. Choose **Modify** to install the component.
 
 3. Select the **Activity Library** project template. Type `NumberGuessWorkflowActivities` in the **Name** box and then click **OK**.
 
-4.  Right-click **Activity1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.
+4. Right-click **Activity1.xaml** in **Solution Explorer** and choose **Delete**. Click **OK** to confirm.
 
 ## Create the ReadInt activity
 
-1.  Choose **Add New Item** from the **Project** menu.
+1. Choose **Add New Item** from the **Project** menu.
 
-2.  In the **Installed** > **Common Items** node, select **Workflow**. Select **Code Activity** from the **Workflow** list.
+2. In the **Installed** > **Common Items** node, select **Workflow**. Select **Code Activity** from the **Workflow** list.
 
-3.  Type `ReadInt` into the **Name** box and then click **Add**.
+3. Type `ReadInt` into the **Name** box and then click **Add**.
 
-4.  Replace the existing `ReadInt` definition with the following definition.
+4. Replace the existing `ReadInt` definition with the following definition.
 
-     [!code-csharp[CFX_WF_GettingStarted#1](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
-     [!code-vb[CFX_WF_GettingStarted#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]
+     [!code-csharp[CFX_WF_GettingStarted#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
+     [!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]
 
     > [!NOTE]
     > The `ReadInt` activity derives from <xref:System.Activities.NativeActivity%601> instead of <xref:System.Activities.CodeActivity>, which is the default for the code activity template. <xref:System.Activities.CodeActivity%601> can be used if the activity provides a single result, which is exposed through the <xref:System.Activities.Activity%601.Result%2A> argument, but <xref:System.Activities.CodeActivity%601> does not support the use of bookmarks, so <xref:System.Activities.NativeActivity%601> is used.
 
 ## Create the Prompt activity
 
-1.  Press **Ctrl**+**Shift**+**B** to build the project. Building the project enables the `ReadInt` activity in this project to be used to build the custom activity from this step.
+1. Press **Ctrl**+**Shift**+**B** to build the project. Building the project enables the `ReadInt` activity in this project to be used to build the custom activity from this step.
 
-2.  Choose **Add New Item** from the **Project** menu.
+2. Choose **Add New Item** from the **Project** menu.
 
-3.  In the **Installed** > **Common Items** node, select **Workflow**. Select **Activity** from the **Workflow** list.
+3. In the **Installed** > **Common Items** node, select **Workflow**. Select **Activity** from the **Workflow** list.
 
-4.  Type `Prompt` into the **Name** box and then click **Add**.
+4. Type `Prompt` into the **Name** box and then click **Add**.
 
-5.  Double-click **Prompt.xaml** in **Solution Explorer** to display it in the designer if it is not already displayed.
+5. Double-click **Prompt.xaml** in **Solution Explorer** to display it in the designer if it is not already displayed.
 
-6.  Click **Arguments** in the lower-left side of the activity designer to display the **Arguments** pane.
+6. Click **Arguments** in the lower-left side of the activity designer to display the **Arguments** pane.
 
-7.  Click **Create Argument**.
+7. Click **Create Argument**.
 
-8.  Type `BookmarkName` into the **Name** box, select **In** from the **Direction** drop-down list, select **String** from the **Argument type** drop-down list, and then press **Enter** to save the argument.
+8. Type `BookmarkName` into the **Name** box, select **In** from the **Direction** drop-down list, select **String** from the **Argument type** drop-down list, and then press **Enter** to save the argument.
 
 9. Click **Create Argument**.
 
@@ -94,13 +94,13 @@ Activities are the core unit of behavior in [!INCLUDE[wf1](../../../includes/wf1
 
 ## Next steps
 
-For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md).
+For instructions on how to create a workflow by using these activities, see the next step in the tutorial, [How to: Create a Workflow](how-to-create-a-workflow.md).
 
 ## See also
 
 - <xref:System.Activities.CodeActivity>
 - <xref:System.Activities.NativeActivity%601>
-- [Designing and Implementing Custom Activities](../../../docs/framework/windows-workflow-foundation/designing-and-implementing-custom-activities.md)
-- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)
-- [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md)
-- [Using the ExpressionTextBox in a Custom Activity Designer](../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)
+- [Designing and Implementing Custom Activities](designing-and-implementing-custom-activities.md)
+- [Getting Started Tutorial](getting-started-tutorial.md)
+- [How to: Create a Workflow](how-to-create-a-workflow.md)
+- [Using the ExpressionTextBox in a Custom Activity Designer](./samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

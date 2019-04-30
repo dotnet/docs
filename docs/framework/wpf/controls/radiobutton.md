@@ -13,7 +13,7 @@ ms.assetid: 6c9ba847-eab7-4bba-9c74-6b56ef72067b
   
  The following illustration shows an example of a <xref:System.Windows.Controls.RadioButton> control.  
   
- ![Radio button states](../../../../docs/framework/wpf/controls/media/ss-ctl-radiobuttons.gif "SS_CTL_radiobuttons")  
+ ![Radio button states](./media/ss-ctl-radiobuttons.gif "SS_CTL_radiobuttons")  
 Typical RadioButton  
   
 ## Reference  

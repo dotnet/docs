@@ -18,7 +18,7 @@ HRESULT GetCodeRange(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `codeRva`  
  [in] The relative virtual address (RVA) in a method.  
   
@@ -43,5 +43,6 @@ HRESULT GetCodeRange(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

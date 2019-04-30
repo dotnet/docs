@@ -32,7 +32,7 @@ HRESULT EnumProcesses (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcProcs`  
  [out] The number of processes returned in `ppProcs`. This value can be 0 (zero).  
   
@@ -62,4 +62,5 @@ HRESULT EnumProcesses (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

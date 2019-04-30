@@ -29,7 +29,7 @@ HRESULT Free (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMem`  
  [in] A pointer to the memory to be freed.  
   
@@ -58,5 +58,6 @@ HRESULT Free (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
 - [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)

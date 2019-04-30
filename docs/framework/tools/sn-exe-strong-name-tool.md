@@ -34,7 +34,7 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../..
 sn [-quiet][option [parameter(s)]]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  
@@ -119,6 +119,7 @@ sn -d MyContainer
 ```  
   
 ## See also
+
 - [Tools](../../../docs/framework/tools/index.md)
 - [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
 - [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)

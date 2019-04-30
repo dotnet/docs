@@ -30,7 +30,7 @@ HRESULT SetCheckSum(
     [in, size_is(checkSumSize)]  BYTE checkSum[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `algorithmId`  
  [in] The GUID that represents the algorithm identifier.  
   
@@ -47,4 +47,5 @@ HRESULT SetCheckSum(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedDocumentWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)

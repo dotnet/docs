@@ -8,4 +8,3 @@
 |Version|4.6|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Globalization.PersianCalendar?displayProperty=nameWithType></li></ul>|
-

@@ -29,7 +29,7 @@ HRESULT EnumDomains (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [out] An enumerator for the domains.  
   
@@ -52,4 +52,5 @@ HRESULT EnumDomains (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

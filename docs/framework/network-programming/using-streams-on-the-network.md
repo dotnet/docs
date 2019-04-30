@@ -21,11 +21,11 @@ ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
 # Using Streams on the Network
 Network resources are represented in the .NET Framework as streams. By treating streams generically, the .NET Framework offers the following capabilities:  
   
--   A common way to send and receive Web data. Whatever the actual contents of the file — HTML, XML, or anything else — your application will use <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> to send and receive data.  
+- A common way to send and receive Web data. Whatever the actual contents of the file — HTML, XML, or anything else — your application will use <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> to send and receive data.  
   
--   Compatibility with streams across the .NET Framework. Streams are used throughout the .NET Framework, which has a rich infrastructure for handling them. For example, you can modify an application that reads XML data from a <xref:System.IO.FileStream> to read data from a <xref:System.Net.Sockets.NetworkStream> instead by changing only the few lines of code that initialize the stream. The major differences between the **NetworkStream** class and other streams are that **NetworkStream** is not seekable, the <xref:System.Net.Sockets.NetworkStream.CanSeek%2A> property always returns **false**, and the <xref:System.Net.Sockets.NetworkStream.Seek%2A> and <xref:System.Net.Sockets.NetworkStream.Position%2A> methods throw a <xref:System.NotSupportedException>.  
+- Compatibility with streams across the .NET Framework. Streams are used throughout the .NET Framework, which has a rich infrastructure for handling them. For example, you can modify an application that reads XML data from a <xref:System.IO.FileStream> to read data from a <xref:System.Net.Sockets.NetworkStream> instead by changing only the few lines of code that initialize the stream. The major differences between the **NetworkStream** class and other streams are that **NetworkStream** is not seekable, the <xref:System.Net.Sockets.NetworkStream.CanSeek%2A> property always returns **false**, and the <xref:System.Net.Sockets.NetworkStream.Seek%2A> and <xref:System.Net.Sockets.NetworkStream.Position%2A> methods throw a <xref:System.NotSupportedException>.  
   
--   Processing of data as it arrives. Streams provide access to data as it arrives from the network, rather than forcing your application to wait for an entire data set to be downloaded.  
+- Processing of data as it arrives. Streams provide access to data as it arrives from the network, rather than forcing your application to wait for an entire data set to be downloaded.  
   
  The <xref:System.Net.Sockets> namespace contains a **NetworkStream** class that implements the <xref:System.IO.Stream> class specifically for use with network resources. Classes in the <xref:System.Net.Sockets> namespace use the **NetworkStream** class to represent streams.  
   
@@ -66,15 +66,15 @@ End Try
   
  When using streams from network resources, keep in mind the following points:  
   
--   The **CanSeek** property always returns **false** since the **NetworkStream** class cannot change position in the stream. The **Seek** and **Position** methods throw a **NotSupportedException**.  
+- The **CanSeek** property always returns **false** since the **NetworkStream** class cannot change position in the stream. The **Seek** and **Position** methods throw a **NotSupportedException**.  
   
--   When you use **WebRequest** and **WebResponse**, stream instances created by calling **GetResponseStream** are read-only and stream instances created by calling **GetRequestStream** are write-only.  
+- When you use **WebRequest** and **WebResponse**, stream instances created by calling **GetResponseStream** are read-only and stream instances created by calling **GetRequestStream** are write-only.  
   
--   Use the <xref:System.IO.StreamReader> class to make encoding easier. The following code example uses a **StreamReader** to read an ASCII-encoded stream from a **WebResponse** (the example does not show creating the request).  
+- Use the <xref:System.IO.StreamReader> class to make encoding easier. The following code example uses a **StreamReader** to read an ASCII-encoded stream from a **WebResponse** (the example does not show creating the request).  
   
--   The call to **GetResponse** can block if network resources are not available. You should consider using an asynchronous request with the <xref:System.Net.WebRequest.BeginGetResponse%2A> and <xref:System.Net.WebRequest.EndGetResponse%2A> methods.  
+- The call to **GetResponse** can block if network resources are not available. You should consider using an asynchronous request with the <xref:System.Net.WebRequest.BeginGetResponse%2A> and <xref:System.Net.WebRequest.EndGetResponse%2A> methods.  
   
--   The call to **GetRequestStream** can block while the connection to the server is created. You should consider using an asynchronous request for the stream with the <xref:System.Net.WebRequest.BeginGetRequestStream%2A> and <xref:System.Net.WebRequest.EndGetRequestStream%2A> methods.  
+- The call to **GetRequestStream** can block while the connection to the server is created. You should consider using an asynchronous request for the stream with the <xref:System.Net.WebRequest.BeginGetRequestStream%2A> and <xref:System.Net.WebRequest.EndGetRequestStream%2A> methods.  
   
 ```csharp  
 // Create a response object.  
@@ -97,5 +97,6 @@ sr.Close()
 ```  
   
 ## See also
+
 - [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)
 - [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

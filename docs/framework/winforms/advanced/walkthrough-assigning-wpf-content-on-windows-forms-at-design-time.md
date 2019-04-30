@@ -14,11 +14,11 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
 
  In this walkthrough, you perform the following tasks:
 
--   Create the project.
+- Create the project.
 
--   Create the WPF control types.
+- Create the WPF control types.
 
--   Select WPF controls.
+- Select WPF controls.
 
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -26,7 +26,7 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio 2012.  
+- Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  
@@ -36,63 +36,64 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 #### To create the project  
   
--   Create a new Windows Forms Application project in Visual Basic or Visual C# named `SelectingWpfContent`.  
+- Create a new Windows Forms Application project in Visual Basic or Visual C# named `SelectingWpfContent`.  
   
 ## Creating the WPF Control Types  
  After you add WPF control types to the project, you can host them in different <xref:System.Windows.Forms.Integration.ElementHost> controls.  
   
 #### To create WPF control types  
   
-1.  Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
+1. Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
-2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).  
+2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
   
-3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
+3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
+4. Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content**.  
   
-5.  Add a second WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl2.xaml`.  
+5. Add a second WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl2.xaml`.  
   
-6.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
+6. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-7.  Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content 2**.  
+7. Add a <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.TextBox.Text%2A> property to **Hosted Content 2**.  
   
  **Note** In general, you should host more sophisticated WPF content. The <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType> control is used here for illustrative purposes only.  
   
-1.  Build the project.  
+1. Build the project.  
   
 ## Selecting WPF Controls  
  You can assign different WPF content to an <xref:System.Windows.Forms.Integration.ElementHost> control, which is already hosting content.  
   
 #### To select WPF controls  
   
-1.  Open `Form1` in the Windows Forms Designer.  
+1. Open `Form1` in the Windows Forms Designer.  
   
-2.  In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.  
+2. In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.  
   
      An instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.  
   
-3.  In the smart tag panel for `elementHost1`, open the **Select Hosted Content** drop-down list.  
+3. In the smart tag panel for `elementHost1`, open the **Select Hosted Content** drop-down list.  
   
-4.  Select **UserControl2** from the drop-down list box.  
+4. Select **UserControl2** from the drop-down list box.  
   
      The `elementHost1` control now hosts an instance of the `UserControl2` type.  
   
-5.  In the **Properties** window, confirm that the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property is set to **UserControl2**.  
+5. In the **Properties** window, confirm that the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property is set to **UserControl2**.  
   
-6.  From the **Toolbox**, in the **WPF Interoperability** group, drag an <xref:System.Windows.Forms.Integration.ElementHost> control onto the form.  
+6. From the **Toolbox**, in the **WPF Interoperability** group, drag an <xref:System.Windows.Forms.Integration.ElementHost> control onto the form.  
   
      The default name for the new control is `elementHost2`.  
   
-7.  In the smart tag panel for `elementHost2`, open the **Select Hosted Content** drop-down list.  
+7. In the smart tag panel for `elementHost2`, open the **Select Hosted Content** drop-down list.  
   
-8.  Select **UserControl1** from the drop-down list.  
+8. Select **UserControl1** from the drop-down list.  
   
 9. The `elementHost2` control now hosts an instance of the `UserControl1` type.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
-- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

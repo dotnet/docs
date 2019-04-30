@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "control types, Menu Bar"
   - "Menu Bar control type"
 ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the MenuBar Control Type
 > [!NOTE]
@@ -73,6 +71,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.MenuBar>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

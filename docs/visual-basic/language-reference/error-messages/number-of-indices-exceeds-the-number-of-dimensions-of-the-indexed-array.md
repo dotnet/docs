@@ -15,7 +15,7 @@ The number of indices used to access an array element must be exactly the same a
   
 ## To correct this error  
   
--   Remove subscripts from the array reference until the total number of subscripts equals the rank of the array. For example:  
+- Remove subscripts from the array reference until the total number of subscripts equals the rank of the array. For example:  
   
     ```vb  
     Dim gameBoard(3, 3) As String  
@@ -30,4 +30,5 @@ The number of indices used to access an array element must be exactly the same a
     ```  
   
 ## See also
+
 - [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

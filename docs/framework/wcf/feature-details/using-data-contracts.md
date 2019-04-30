@@ -32,21 +32,21 @@ A *data contract* is a formal agreement between a service and a client that abst
 ### Notes  
  The following notes provide items to consider when creating data contracts:  
   
--   The <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> attribute is only honored when used with unmarked types. This includes types that are not marked with one of the <xref:System.Runtime.Serialization.DataContractAttribute>, <xref:System.SerializableAttribute>, <xref:System.Runtime.Serialization.CollectionDataContractAttribute>, or <xref:System.Runtime.Serialization.EnumMemberAttribute> attributes, or marked as serializable by any other means (such as <xref:System.Xml.Serialization.IXmlSerializable>).  
+- The <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> attribute is only honored when used with unmarked types. This includes types that are not marked with one of the <xref:System.Runtime.Serialization.DataContractAttribute>, <xref:System.SerializableAttribute>, <xref:System.Runtime.Serialization.CollectionDataContractAttribute>, or <xref:System.Runtime.Serialization.EnumMemberAttribute> attributes, or marked as serializable by any other means (such as <xref:System.Xml.Serialization.IXmlSerializable>).  
   
--   You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to fields, and properties.  
+- You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to fields, and properties.  
   
--   Member accessibility levels (internal, private, protected, or public) do not affect the data contract in any way.  
+- Member accessibility levels (internal, private, protected, or public) do not affect the data contract in any way.  
   
--   The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute is ignored if it is applied to static members.  
+- The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute is ignored if it is applied to static members.  
   
--   During serialization, property-get code is called for property data members to get the value of the properties to be serialized.  
+- During serialization, property-get code is called for property data members to get the value of the properties to be serialized.  
   
--   During deserialization, an uninitialized object is first created, without calling any constructors on the type. Then all data members are deserialized.  
+- During deserialization, an uninitialized object is first created, without calling any constructors on the type. Then all data members are deserialized.  
   
--   During deserialization, property-set code is called for property data members to set the properties to the value being deserialized.  
+- During deserialization, property-set code is called for property data members to set the properties to the value being deserialized.  
   
--   For a data contract to be valid, it must be possible to serialize all of its data members. For a full list of serializable types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
+- For a data contract to be valid, it must be possible to serialize all of its data members. For a full list of serializable types, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
      Generic types are handled in exactly the same way as non-generic types. There are no special requirements for generic parameters. For example, consider the following type.  
   
@@ -61,6 +61,7 @@ A *data contract* is a formal agreement between a service and a client that abst
  For a complete code sample of a WCF service that defines a data contract see the [Basic Data Contract](../../../../docs/framework/wcf/samples/basic-data-contract.md) sample.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)

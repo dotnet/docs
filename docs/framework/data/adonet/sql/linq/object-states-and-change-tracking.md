@@ -32,11 +32,11 @@ ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] performs the following processing when an object is deleted (<xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A>) from its table:  
   
--   When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, a `DELETE` operation is performed for that object.  
+- When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, a `DELETE` operation is performed for that object.  
   
--   The removal is not propagated to related objects regardless of whether they are loaded. Specifically, related objects are not loaded for updating the relationship property.  
+- The removal is not propagated to related objects regardless of whether they are loaded. Specifically, related objects are not loaded for updating the relationship property.  
   
--   After successful execution of <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, the objects are set to the `Deleted` state. As a result, you cannot use the object or its `id` in that <xref:System.Data.Linq.DataContext>. The internal cache maintained by a <xref:System.Data.Linq.DataContext> instance does not eliminate objects that are retrieved or added as new, even after the objects have been deleted in the database.  
+- After successful execution of <xref:System.Data.Linq.DataContext.SubmitChanges%2A>, the objects are set to the `Deleted` state. As a result, you cannot use the object or its `id` in that <xref:System.Data.Linq.DataContext>. The internal cache maintained by a <xref:System.Data.Linq.DataContext> instance does not eliminate objects that are retrieved or added as new, even after the objects have been deleted in the database.  
   
  You can call <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> only on an object tracked by the <xref:System.Data.Linq.DataContext>. For an `Untracked` object, you must call <xref:System.Data.Linq.Table%601.Attach%2A> before you call <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A>. Calling <xref:System.Data.Linq.Table%601.DeleteOnSubmit%2A> on an `Untracked` object throws an exception.  
   
@@ -57,5 +57,6 @@ ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
  If you update both the required reference and the corresponding foreign key, you must make sure that they agree. An <xref:System.InvalidOperationException> exception is thrown if the two are not synchronized at the time that you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. Although foreign key value changes are sufficient for affecting an update of the underlying row, you should change the reference to maintain connectivity of the object graph and bidirectional consistency of relationships.  
   
 ## See also
+
 - [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
 - [Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/insert-update-and-delete-operations.md)

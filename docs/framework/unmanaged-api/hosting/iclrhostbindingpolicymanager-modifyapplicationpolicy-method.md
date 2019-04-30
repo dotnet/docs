@@ -35,7 +35,7 @@ HRESULT  ModifyApplicationPolicy (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzSourceAssemblyIdentity`  
  [in] The identity of the assembly to modify.  
   
@@ -83,4 +83,5 @@ HRESULT  ModifyApplicationPolicy (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)

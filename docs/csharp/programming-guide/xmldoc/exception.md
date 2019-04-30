@@ -17,11 +17,11 @@ ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
 <exception cref="member">description</exception>  
 ```  
   
-#### Parameters  
+## Parameters  
  cref = " `member`"  
  A reference to an exception that is available from the current compilation environment. The compiler checks that the given exception exists and translates `member` to the canonical element name in the output XML. `member` must appear within double quotation marks (" ").  
   
- For more information on how to create a cref reference to a generic type, see [\<see>](../../../csharp/programming-guide/xmldoc/see.md).  
+ For more information on how to format `member` to reference a generic type, see [Processing the XML File](processing-the-xml-file.md).
   
  `description`  
  A description of the exception.  
@@ -29,14 +29,14 @@ ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
 ## Remarks  
  The \<exception> tag lets you specify which exceptions can be thrown. This tag can be applied to definitions for methods, properties, events, and indexers.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
- For more information about exception handling, see [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md).  
+ For more information about exception handling, see [Exceptions and Exception Handling](../exceptions/index.md).  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#4](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/exception_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#4)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](recommended-tags-for-documentation-comments.md)

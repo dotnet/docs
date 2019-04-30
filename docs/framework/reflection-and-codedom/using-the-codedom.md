@@ -28,9 +28,9 @@ The CodeDOM provides types that represent many common types of source code eleme
   
  Some common uses for the CodeDOM include:  
   
--   Templated code generation: generating code for ASP.NET, XML Web services client proxies, code wizards, designers, or other code-emitting mechanisms.  
+- Templated code generation: generating code for ASP.NET, XML Web services client proxies, code wizards, designers, or other code-emitting mechanisms.  
   
--   Dynamic compilation: supporting code compilation in single or multiple languages.  
+- Dynamic compilation: supporting code compilation in single or multiple languages.  
   
 ## Building a CodeDOM Graph  
  The <xref:System.CodeDom> namespace provides classes for representing the logical structure of source code, independent of language syntax.  
@@ -121,4 +121,4 @@ The CodeDOM provides types that represent many common types of source code eleme
   
  For documentation for the each of the CodeDOM types, see the reference documentation for the <xref:System.CodeDom> namespace.  
   
- For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).
+ For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)).

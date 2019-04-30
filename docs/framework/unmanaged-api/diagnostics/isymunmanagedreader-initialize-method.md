@@ -34,7 +34,7 @@ HRESULT Initialize (
     [in]  IStream      *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] The metadata importer interface with which this reader will be associated.  
   
@@ -57,4 +57,5 @@ HRESULT Initialize (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

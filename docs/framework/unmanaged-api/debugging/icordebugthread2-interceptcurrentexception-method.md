@@ -29,7 +29,7 @@ HRESULT InterceptCurrentException (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrame`  
  [in] A pointer to an ICorDebugFrame that represents the active stack frame.  
   

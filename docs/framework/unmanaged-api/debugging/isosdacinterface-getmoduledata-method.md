@@ -31,14 +31,13 @@ HRESULT GetModuleData(
 );
 ```
 
-### Parameters
+## Parameters
 
-`moduleAddr`
+`moduleAddr`\
 [in] The address of the module to retrieve information for.
 
-`data`
+`data`\
 [out] The [DacpModuleData structure](dacpmoduledata-structure.md) to hold the information of the loaded module.
-
 
 ## Remarks
 
@@ -53,5 +52,5 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)
+- [Debugging](index.md)
+- [ISOSDacInterface Interface](isosdacinterface-interface.md)

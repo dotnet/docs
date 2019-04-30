@@ -30,9 +30,9 @@ HRESULT GetRepresentativeEntryAddress(
 );
 ```
 
-### Parameters
+## Parameters
 
-`addr`
+`addr`\
 [out] The address of the most representative native entry point for the method.
 
 ## Remarks
@@ -48,5 +48,5 @@ The provided method is part of the [`IXCLRDataMethodInstance` interface](ixclrda
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<contractTypeNames>"
 ms.date: "03/30/2017"
 ms.assetid: 5ec5efc6-87f8-4160-9be0-dcd2e01df3df
@@ -55,6 +55,7 @@ A configuration section that specifies a list of contract type names, which are 
 |[\<findCriteria>](../../../../../docs/framework/configure-apps/file-schema/wcf/findcriteria.md)|A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).|  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
 - <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection>

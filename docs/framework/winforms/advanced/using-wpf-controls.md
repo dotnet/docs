@@ -14,19 +14,19 @@ You can use Windows Presentation Foundation (WPF) controls in your Windows Forms
  You can also use Windows Forms controls in your WPF-based applications. For more information, see [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).  
   
 ## In This Section  
- [How to: Copy and Paste an ElementHost Control at Design Time](../../../../docs/framework/winforms/advanced/how-to-copy-and-paste-an-elementhost-control-at-design-time.md)  
+ [How to: Copy and Paste an ElementHost Control at Design Time](how-to-copy-and-paste-an-elementhost-control-at-design-time.md)  
  Shows how to copy a Windows Presentation Foundation control on a Windows Form.  
   
- [Walkthrough: Arranging WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time.md)  
+ [Walkthrough: Arranging WPF Content on Windows Forms at Design Time](walkthrough-arranging-wpf-content-on-windows-forms-at-design-time.md)  
  Shows how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation controls.
   
- [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)  
+ [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)  
  Shows how to create a Windows Presentation Foundation control for use in your Windows Forms-based applications.
   
- [Walkthrough: Assigning WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-assigning-wpf-content-on-windows-forms-at-design-time.md)  
+ [Walkthrough: Assigning WPF Content on Windows Forms at Design Time](walkthrough-assigning-wpf-content-on-windows-forms-at-design-time.md)  
  Shows how to select the Windows Presentation Foundation control types you want to display on your form.  
   
- [Walkthrough: Styling WPF Content](../../../../docs/framework/winforms/advanced/walkthrough-styling-wpf-content.md)  
+ [Walkthrough: Styling WPF Content](walkthrough-styling-wpf-content.md)  
  Shows the workflow between the Windows Forms Designer and the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] for applying styles to Windows Presentation Foundation controls.  
   
 ## Reference  
@@ -37,7 +37,7 @@ You can use Windows Presentation Foundation (WPF) controls in your Windows Forms
  Describes a class which you can use to host Windows Forms controls in your Windows Presentation Foundation-based application.  
   
 ## Related Sections  
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
+ [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)  
  Describes interoperation between the Windows Presentation Foundation and Windows Forms technologies.  
   
  [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  

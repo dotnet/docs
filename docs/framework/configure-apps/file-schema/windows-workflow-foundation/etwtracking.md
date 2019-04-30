@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<etwTracking>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
@@ -79,6 +79,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>
 - [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

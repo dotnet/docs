@@ -24,11 +24,11 @@ When you place a component on a Windows Form, two properties are provided by the
   
 ### To specify whether a component is a member of the form  
   
-1.  In the Windows Forms Designer, open your form.  
+1. In the Windows Forms Designer, open your form.  
   
-2.  Open the **Toolbox**, and on the form, place three <xref:System.Windows.Forms.Button> controls.  
+2. Open the **Toolbox**, and on the form, place three <xref:System.Windows.Forms.Button> controls.  
   
-3.  Set the `GenerateMember` and `Modifiers` properties for each <xref:System.Windows.Forms.Button> control according to the following table.  
+3. Set the `GenerateMember` and `Modifiers` properties for each <xref:System.Windows.Forms.Button> control according to the following table.  
   
     |Button name|GenerateMember value|Modifiers value|  
     |-----------------|--------------------------|---------------------|  
@@ -36,25 +36,26 @@ When you place a component on a Windows Form, two properties are provided by the
     |`button2`|`true`|`protected`|  
     |`button3`|`false`|No change|  
   
-4.  Build the solution.  
+4. Build the solution.  
   
-5.  In **Solution Explorer**, click the **Show All Files** button.  
+5. In **Solution Explorer**, click the **Show All Files** button.  
   
-6.  Open the **Form1** node, and in the **Code Editor**,open the **Form1.Designer.vb** or **Form1.Designer.cs** file. This file contains the code emitted by the Windows Forms Designer.  
+6. Open the **Form1** node, and in the **Code Editor**,open the **Form1.Designer.vb** or **Form1.Designer.cs** file. This file contains the code emitted by the Windows Forms Designer.  
   
-7.  Find the declarations for the three buttons. The following code example shows the differences specified by the `GenerateMember` and `Modifiers` properties.  
+7. Find the declarations for the three buttons. The following code example shows the differences specified by the `GenerateMember` and `Modifiers` properties.  
   
-     [!code-csharp[System.Windows.Forms.GenerateMember#3](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/CS/Form1.cs#3)]
-     [!code-vb[System.Windows.Forms.GenerateMember#3](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/VB/Form1.vb#3)]  
+     [!code-csharp[System.Windows.Forms.GenerateMember#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/CS/Form1.cs#3)]
+     [!code-vb[System.Windows.Forms.GenerateMember#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/VB/Form1.vb#3)]  
   
-     [!code-csharp[System.Windows.Forms.GenerateMember#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/CS/Form1.cs#2)]
-     [!code-vb[System.Windows.Forms.GenerateMember#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/VB/Form1.vb#2)]  
+     [!code-csharp[System.Windows.Forms.GenerateMember#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/CS/Form1.cs#2)]
+     [!code-vb[System.Windows.Forms.GenerateMember#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GenerateMember/VB/Form1.vb#2)]  
   
 > [!NOTE]
 >  By default, the Windows Forms Designer assigns the `private` (`Friend` in Visual Basic) modifier to container controls like <xref:System.Windows.Forms.Panel>. If your base <xref:System.Windows.Forms.UserControl> or <xref:System.Windows.Forms.Form> has a container control, it will not accept new children in inherited controls and forms. The solution is to change the modifier of the base container control to `protected` or `public`.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Button>
-- [Windows Forms Visual Inheritance](../../../../docs/framework/winforms/advanced/windows-forms-visual-inheritance.md)
-- [Walkthrough: Demonstrating Visual Inheritance](../../../../docs/framework/winforms/advanced/walkthrough-demonstrating-visual-inheritance.md)
-- [How to: Inherit Windows Forms](../../../../docs/framework/winforms/advanced/how-to-inherit-windows-forms.md)
+- [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)
+- [Walkthrough: Demonstrating Visual Inheritance](walkthrough-demonstrating-visual-inheritance.md)
+- [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)

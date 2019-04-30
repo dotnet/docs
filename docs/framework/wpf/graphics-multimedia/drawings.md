@@ -18,12 +18,13 @@ ms.assetid: 6ab1fe6b-3eed-4432-a248-b487e7234e5b
 <xref:System.Windows.Media.Drawing> objects are used to efficiently draw shapes, images, or text. Drawings are used when painting with a <xref:System.Windows.Media.DrawingBrush> or programming with <xref:System.Windows.Media.Visual> objects.  
   
 ## In This Section  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
-  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/drawings-how-to-topics.md)  
+ [Drawing Objects Overview](drawing-objects-overview.md)  
+  [How-to Topics](drawings-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Drawing>
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)
+- [Graphics and Multimedia](index.md)

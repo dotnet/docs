@@ -36,7 +36,7 @@ The following code examples show how to read characters synchronously or asynchr
 - <xref:System.IO.StringReader>  
 - <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
 - [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [How to: Create a directory listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
+- [How to: Create a directory listing](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100))  
 - [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
 - [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
 - [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  

@@ -68,24 +68,24 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<service> Element  
  Each service has these attributes:  
   
--   `name`. Specifies the type that provides an implementation of a service contract. This is a fully qualified name which consists of the namespace, a period, and then the type name. For example `"MyNameSpace.myServiceType"`.  
+- `name`. Specifies the type that provides an implementation of a service contract. This is a fully qualified name which consists of the namespace, a period, and then the type name. For example `"MyNameSpace.myServiceType"`.  
   
--   `behaviorConfiguration`. Specifies the name of one of the `behavior` elements found in the `behaviors` element. The specified behavior governs actions such as whether the service allows impersonation. If its value is the empty name or no `behaviorConfiguration` is provided then the default set of service behaviors is added to the service.  
+- `behaviorConfiguration`. Specifies the name of one of the `behavior` elements found in the `behaviors` element. The specified behavior governs actions such as whether the service allows impersonation. If its value is the empty name or no `behaviorConfiguration` is provided then the default set of service behaviors is added to the service.  
   
--   [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
+- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
   
 ### The \<endpoint> Element  
  Each endpoint requires an address, a binding, and a contract, which are represented by the following attributes:  
   
--   `address`. Specifies the service's Uniform Resource Identifier (URI), which can be an absolute address or one that is given relative to the base address of the service. If set to an empty string, it indicates that the endpoint is available at the base address that is specified when creating the <xref:System.ServiceModel.ServiceHost> for the service.  
+- `address`. Specifies the service's Uniform Resource Identifier (URI), which can be an absolute address or one that is given relative to the base address of the service. If set to an empty string, it indicates that the endpoint is available at the base address that is specified when creating the <xref:System.ServiceModel.ServiceHost> for the service.  
   
--   `binding`. Typically specifies a system-provided binding like <xref:System.ServiceModel.WSHttpBinding>, but can also specify a user-defined binding. The binding specified determines the type of transport, security and encoding used, and whether reliable sessions, transactions, or streaming is supported or enabled.  
+- `binding`. Typically specifies a system-provided binding like <xref:System.ServiceModel.WSHttpBinding>, but can also specify a user-defined binding. The binding specified determines the type of transport, security and encoding used, and whether reliable sessions, transactions, or streaming is supported or enabled.  
   
--   `bindingConfiguration`. If the default values of a binding must be modified, this can be done by configuring the appropriate `binding` element in the `bindings` element. This attribute should be given the same value as the `name` attribute of the `binding` element that is used to change the defaults. If no name is given, or no `bindingConfiguration` is specified in the binding, then the default binding of the binding type is used in the endpoint.  
+- `bindingConfiguration`. If the default values of a binding must be modified, this can be done by configuring the appropriate `binding` element in the `bindings` element. This attribute should be given the same value as the `name` attribute of the `binding` element that is used to change the defaults. If no name is given, or no `bindingConfiguration` is specified in the binding, then the default binding of the binding type is used in the endpoint.  
   
--   `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
+- `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
   
--   [\<endpoint> element reference](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017)  
+- [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md)  
   
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  
@@ -95,7 +95,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
- For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a).  
+For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
  [\<binding>](../../../docs/framework/misc/binding.md)  
   
@@ -257,7 +257,8 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
  If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be "true".  
   
 ## See also
+
 - [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
-- [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)
+- [Configuring WCF services](configuring-services.md)
 - [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
 - [\<binding>](../../../docs/framework/misc/binding.md)

@@ -60,9 +60,9 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
 ### Getting Data from a Message Body  
  You can extract the data stored in a message body in two main ways:  
   
--   You can get the entire message body at one time by calling the <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method and passing in an XML writer. The complete message body is written out to this writer. Getting the entire message body at one time is also called *writing a message*. Writing is done primarily by the channel stack when sending messages—some part of the channel stack will usually get access to the entire message body, encode it, and send it.  
+- You can get the entire message body at one time by calling the <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method and passing in an XML writer. The complete message body is written out to this writer. Getting the entire message body at one time is also called *writing a message*. Writing is done primarily by the channel stack when sending messages—some part of the channel stack will usually get access to the entire message body, encode it, and send it.  
   
--   Another way to get information out of the message body is to call <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents> and get an XML reader. The message body can then be accessed sequentially as needed by calling methods on the reader. Getting the message body piece-by-piece is also called *reading a message*. Reading the message is primarily used by the service framework when receiving messages. For example, when the <xref:System.Runtime.Serialization.DataContractSerializer> is in use, the service framework will get an XML reader over the body and pass it to the deserialization engine, which will then start reading the message element-by-element and constructing the corresponding object graph.  
+- Another way to get information out of the message body is to call <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents> and get an XML reader. The message body can then be accessed sequentially as needed by calling methods on the reader. Getting the message body piece-by-piece is also called *reading a message*. Reading the message is primarily used by the service framework when receiving messages. For example, when the <xref:System.Runtime.Serialization.DataContractSerializer> is in use, the service framework will get an XML reader over the body and pass it to the deserialization engine, which will then start reading the message element-by-element and constructing the corresponding object graph.  
   
  A message body can be retrieved only once. This makes it possible to work with forward-only streams. For example, you can write an <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> override that reads from a <xref:System.IO.FileStream> and returns the results as an XML Infoset. You will never need to "rewind" to the beginning of the file.  
   
@@ -101,15 +101,15 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
   
  For this to be possible, a mapping must be defined between the entire `Message` instance and an XML Infoset. Such a mapping, in fact, exists: WCF uses the SOAP standard to define this mapping. When a `Message` instance is written out as an XML Infoset, the resulting Infoset is the valid SOAP envelope that contains the message. Thus, `WriteMessage` would normally perform the following steps:  
   
-1.  Write the SOAP envelope element opening tag.  
+1. Write the SOAP envelope element opening tag.  
   
-2.  Write the SOAP header element opening tag, write out all of the headers, and close the header element.  
+2. Write the SOAP header element opening tag, write out all of the headers, and close the header element.  
   
-3.  Write the SOAP body element opening tag.  
+3. Write the SOAP body element opening tag.  
   
-4.  Call `WriteBodyContents` or an equivalent method to write out the body.  
+4. Call `WriteBodyContents` or an equivalent method to write out the body.  
   
-5.  Close the body and envelope elements.  
+5. Close the body and envelope elements.  
   
  The preceding steps are closely tied to the SOAP standard. This is complicated by the fact that multiple versions of SOAP exist, for example, it is impossible to write out the SOAP envelope element correctly without knowing the SOAP version in use. Also, in some cases, it may be desirable to turn off this complex SOAP-specific mapping completely.  
   
@@ -154,21 +154,21 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
 ### The IStreamProvider Interface  
  When writing an outgoing message that contains a streamed body to an XML writer, the <xref:System.ServiceModel.Channels.Message> uses a sequence of calls similar to the following in its <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> implementation:  
   
--   Write any necessary information preceding the stream (for example, the opening XML tag).  
+- Write any necessary information preceding the stream (for example, the opening XML tag).  
   
--   Write the stream.  
+- Write the stream.  
   
--   Write any information following the stream (for example, the closing XML tag).  
+- Write any information following the stream (for example, the closing XML tag).  
   
  This works well with encodings that are similar to the textual XML encoding. However, some encodings do not place XML Infoset information (for example, tags for starting and ending XML elements) together with the data contained within elements. For example, in the MTOM encoding, the message is split into multiple parts. One part contains the XML Infoset, which may contain references to other parts for actual element contents. The XML Infoset is normally small compared to the streamed contents, so it makes sense to buffer the Infoset, write it out, and then write the contents in a streamed way. This means that by the time the closing element tag is written, the stream should not have been written out yet.  
   
  For this purpose, the <xref:System.Xml.IStreamProvider> interface is used. The interface has a <xref:System.Xml.IStreamProvider.GetStream> method that returns the stream to be written. The correct way to write out a streamed message body in <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> is as follows:  
   
-1.  Write any necessary information preceding the stream (for example, the opening XML tag).  
+1. Write any necessary information preceding the stream (for example, the opening XML tag).  
   
-2.  Call the `WriteValue` overload on the <xref:System.Xml.XmlDictionaryWriter> that takes an <xref:System.Xml.IStreamProvider>, with an `IStreamProvider` implementation that returns the stream to be written.  
+2. Call the `WriteValue` overload on the <xref:System.Xml.XmlDictionaryWriter> that takes an <xref:System.Xml.IStreamProvider>, with an `IStreamProvider` implementation that returns the stream to be written.  
   
-3.  Write any information following the stream (for example, the closing XML tag).  
+3. Write any information following the stream (for example, the closing XML tag).  
   
  With this approach, the XML writer has a choice of when to call <xref:System.Xml.IStreamProvider.GetStream> and write out the streamed data. For example, the textual and binary XML writers will call it immediately and write out the streamed contents in-between the start and end tags. The MTOM writer may decide to call <xref:System.Xml.IStreamProvider.GetStream> later, when it is ready to write the appropriate part of the message.  
   
@@ -267,4 +267,5 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> and <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> are the operation behaviors responsible for plugging in the message formatters for the `DataContractSerializer` and the `XmlSerializer`, respectively. The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> behavior can actually operate with any serializer that derives from <xref:System.Runtime.Serialization.XmlObjectSerializer>, including the <xref:System.Runtime.Serialization.NetDataContractSerializer> (described in detail in Using Stand-Alone Serialization). The behavior calls one of the `CreateSerializer` virtual method overloads to obtain the serializer. To plug in a different serializer, create a new <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> subclass and override both `CreateSerializer` overloads.  
   
 ## See also
+
 - [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

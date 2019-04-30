@@ -15,7 +15,7 @@ Specifies the summary of the member.
 <summary>description</summary>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A summary of the object.  
   
@@ -29,7 +29,8 @@ Specifies the summary of the member.
 ## Example  
  This example uses the `<summary>` tag to describe the `ResetCounter` method and `Counter` property.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/summary_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -24,4 +24,5 @@ Provides a property and methods to write event and exception information to the 
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See also
+
 - [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)

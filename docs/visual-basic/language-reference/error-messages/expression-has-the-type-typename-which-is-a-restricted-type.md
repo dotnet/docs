@@ -19,11 +19,12 @@ An expression evaluates to a type that cannot be boxed by the common language ru
   
 ## To correct this error  
   
-1.  Locate the expression that evaluates to the cited type.  
+1. Locate the expression that evaluates to the cited type.  
   
-2.  Locate the part of your statement that attempts to call the method inherited from <xref:System.Object> or <xref:System.ValueType>.  
+2. Locate the part of your statement that attempts to call the method inherited from <xref:System.Object> or <xref:System.ValueType>.  
   
-3.  Rewrite the statement to avoid the method call.  
+3. Rewrite the statement to avoid the method call.  
   
 ## See also
+
 - [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

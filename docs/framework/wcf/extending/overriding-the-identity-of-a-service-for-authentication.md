@@ -8,13 +8,9 @@ ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
 ---
 # Overriding the Identity of a Service for Authentication
 Typically, you do not have to set the identity on a service because the selection of a client credential type dictates the type of identity exposed in the service metadata. For example, the following configuration code uses the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element and sets the `clientCredentialType` attribute to Windows.  
-  
-  
-  
+
  The following Web Services Description Language (WSDL) fragment shows the identity for the endpoint previously defined. In this example, the service is running as a self-hosted service under a particular user account (username@contoso.com) and therefore the user principal name (UPN) identity contains the account name. The UPN is also known as the user logon name in a Windows domain.  
-  
-  
-  
+
  For a sample application that demonstrates identity setting, see [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md). For more information about service identity, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 ## Kerberos Authentication and Identity  
@@ -25,34 +21,30 @@ Typically, you do not have to set the identity on a service because the selectio
 > [!NOTE]
 >  To use the Windows credential type without negotiation, the service's user account must have access to the SPN that is registered with the Active Directory domain. You can do this in the following ways:  
   
--   Use the NetworkService or LocalSystem account to run your service. Because those accounts have access to the machine SPN that is established when the machine joins the Active Directory domain, WCF automatically generates the proper SPN element inside the service's endpoint in the service's metadata (WSDL).  
+- Use the NetworkService or LocalSystem account to run your service. Because those accounts have access to the machine SPN that is established when the machine joins the Active Directory domain, WCF automatically generates the proper SPN element inside the service's endpoint in the service's metadata (WSDL).  
   
--   Use an arbitrary Active Directory domain account to run your service. In this case, establish an SPN for that domain account, which you can do by using the Setspn.exe utility tool. Once you create the SPN for the service's account, configure WCF to publish that SPN to the service's clients through its metadata (WSDL). This is done by setting the endpoint identity for the exposed endpoint, either through an application configuration file or code.  
+- Use an arbitrary Active Directory domain account to run your service. In this case, establish an SPN for that domain account, which you can do by using the Setspn.exe utility tool. Once you create the SPN for the service's account, configure WCF to publish that SPN to the service's clients through its metadata (WSDL). This is done by setting the endpoint identity for the exposed endpoint, either through an application configuration file or code.  
   
  For more information about SPNs, the Kerberos protocol, and Active Directory, see [Kerberos Technical Supplement for Windows](https://go.microsoft.com/fwlink/?LinkId=88330).  
   
 ### When SPN or UPN Equals the Empty String  
  If you set the SPN or UPN equal to an empty string, a number of different things happen, depending on the security level and authentication mode being used:  
   
--   If you are using transport level security, NT LanMan (NTLM) authentication is chosen.  
+- If you are using transport level security, NT LanMan (NTLM) authentication is chosen.  
   
--   If you are using message level security, authentication may fail, depending on the authentication mode:  
+- If you are using message level security, authentication may fail, depending on the authentication mode:  
   
--   If you are using `spnego` mode and the `AllowNtlm` attribute is set to `false`, authentication fail.  
+- If you are using `spnego` mode and the `AllowNtlm` attribute is set to `false`, authentication fail.  
   
--   If you are using `spnego` mode and the `AllowNtlm` attribute is set to `true`, authentication fails if the UPN is empty, but succeeds if the SPN is empty.  
+- If you are using `spnego` mode and the `AllowNtlm` attribute is set to `true`, authentication fails if the UPN is empty, but succeeds if the SPN is empty.  
   
--   If you are using Kerberos direct (also known as "one-shot"), authentication fails.  
+- If you are using Kerberos direct (also known as "one-shot"), authentication fails.  
   
 ### Using the \<identity> Element in Configuration  
  If you change the client credential type in the binding previously shown to Certificate`,` then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
-  
-  
-  
+
  You can change the value of the default service identity or change the type of the identity by using the <`identity`> element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.  
-  
-  
-  
+
 ### Setting Identity Programmatically  
  Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
   
@@ -60,5 +52,6 @@ Typically, you do not have to set the identity on a service because the selectio
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
   
 ## See also
+
 - [How to: Create a Custom Client Identity Verifier](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)
 - [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

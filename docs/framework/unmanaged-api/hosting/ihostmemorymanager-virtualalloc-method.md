@@ -34,7 +34,7 @@ HRESULT VirtualAlloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [in] A pointer to the starting address of the region to allocate.  
   
@@ -80,4 +80,5 @@ HRESULT VirtualAlloc (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

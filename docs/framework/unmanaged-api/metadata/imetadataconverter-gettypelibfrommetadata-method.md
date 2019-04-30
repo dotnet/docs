@@ -31,7 +31,7 @@ HRESULT GetTypeLibFromMetaData (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `strModule`  
  [in] The name of the type library's module.  
   
@@ -51,4 +51,5 @@ HRESULT GetTypeLibFromMetaData (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataConverter Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataconverter-interface.md)

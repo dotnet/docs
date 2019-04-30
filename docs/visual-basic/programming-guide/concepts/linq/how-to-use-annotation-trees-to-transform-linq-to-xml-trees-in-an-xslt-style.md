@@ -18,21 +18,21 @@ Annotations can be used to facilitate transforms of an XML tree.
   
  The summary of the approach is:  
   
--   First, annotate elements in the tree with a replacement element.  
+- First, annotate elements in the tree with a replacement element.  
   
--   Second, iterate through the entire tree, creating a new tree where you replace each element with its annotation. This example implements the iteration and creation of the new tree in a function named `XForm`.  
+- Second, iterate through the entire tree, creating a new tree where you replace each element with its annotation. This example implements the iteration and creation of the new tree in a function named `XForm`.  
   
  In detail, the approach consists of:  
   
--   Execute one or more LINQ to XML queries that return the set of elements that you want to transform from one shape to another. For each element in the query, add a new <xref:System.Xml.Linq.XElement> object as an annotation to the element. This new element will replace the annotated element in the new, transformed tree. This is simple code to write, as demonstrated by the example.  
+- Execute one or more LINQ to XML queries that return the set of elements that you want to transform from one shape to another. For each element in the query, add a new <xref:System.Xml.Linq.XElement> object as an annotation to the element. This new element will replace the annotated element in the new, transformed tree. This is simple code to write, as demonstrated by the example.  
   
--   The new element that is added as an annotation can contain new child nodes; it can form a sub-tree with any desired shape.  
+- The new element that is added as an annotation can contain new child nodes; it can form a sub-tree with any desired shape.  
   
--   There is a special rule: If a child node of the new element is in a different namespace, a namespace that is made up for this purpose (in this example, the namespace is `http://www.microsoft.com/LinqToXmlTransform/2007`), then that child element is not copied to the new tree. Instead, if the namespace is the above mentioned special namespace, and the local name of the element is `ApplyTransforms`, then the child nodes of the element in the source tree are iterated, and copied to the new tree (with the exception that annotated child elements are themselves transformed according to these rules).  
+- There is a special rule: If a child node of the new element is in a different namespace, a namespace that is made up for this purpose (in this example, the namespace is `http://www.microsoft.com/LinqToXmlTransform/2007`), then that child element is not copied to the new tree. Instead, if the namespace is the above mentioned special namespace, and the local name of the element is `ApplyTransforms`, then the child nodes of the element in the source tree are iterated, and copied to the new tree (with the exception that annotated child elements are themselves transformed according to these rules).  
   
--   This is somewhat analogous to the specification of transforms in XSL. The query that selects a set of nodes is analogous to the XPath expression for a template. The code to create the new <xref:System.Xml.Linq.XElement> that is saved as an annotation is analogous to the sequence constructor in XSL, and the `ApplyTransforms` element is analogous in function to the `xsl:apply-templates` element in XSL.  
+- This is somewhat analogous to the specification of transforms in XSL. The query that selects a set of nodes is analogous to the XPath expression for a template. The code to create the new <xref:System.Xml.Linq.XElement> that is saved as an annotation is analogous to the sequence constructor in XSL, and the `ApplyTransforms` element is analogous in function to the `xsl:apply-templates` element in XSL.  
   
--   One advantage to taking this approach - as you formulate queries, you are always writing queries on the unmodified source tree. You need not worry about how modifications to the tree affect the queries that you are writing.  
+- One advantage to taking this approach - as you formulate queries, you are always writing queries on the unmodified source tree. You need not worry about how modifications to the tree affect the queries that you are writing.  
   
 ## Transforming a Tree  
  This first example renames all `Paragraph` nodes to `para`.  
@@ -152,7 +152,7 @@ After Transform
 ## Effecting the Transform  
  A small function, `XForm`, creates a new transformed tree from the original, annotated tree.  
   
--   The pseudo code for the function is quite simple:  
+- The pseudo code for the function is quite simple:  
   
 ```  
 The function takes an XElement as an argument and returns an XElement.   
@@ -373,4 +373,5 @@ After Transform
 ```  
   
 ## See also
+
 - [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

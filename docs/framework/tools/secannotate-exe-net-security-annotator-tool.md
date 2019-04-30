@@ -23,7 +23,7 @@ The .NET Security Annotator tool (SecAnnotate.exe) is a command-line application
 SecAnnotate.exe [parameters] [assemblies]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  

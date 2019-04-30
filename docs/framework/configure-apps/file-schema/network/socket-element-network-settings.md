@@ -58,9 +58,9 @@ Specifies whether socket operations use completion ports.
   
  This `ipProtectionLevel` attribute setting affects only initial incoming traffic:  
   
--   A TCP server listening for incoming connections on a socket.  
+- A TCP server listening for incoming connections on a socket.  
   
--   A UDP application receiving a packet on a socket.  
+- A UDP application receiving a packet on a socket.  
   
  This configuration setting does not affect already established TCP connections (traffic is unrestricted in both directions) and does not affect an application sending UDP packets.  
   
@@ -98,6 +98,7 @@ Specifies whether socket operations use completion ports.
 ```  
   
 ## See also
+
 - <xref:System.Net?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>
 - <xref:System.Net.Sockets?displayProperty=nameWithType>

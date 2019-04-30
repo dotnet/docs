@@ -12,21 +12,21 @@ ms.author: "ronpet"
 # Performance Counters in the .NET Framework
 This topic provides a list of performance counters you can find in the [Windows Performance Monitor](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29).  
   
--   [Exception performance counters](#exception)  
+- [Exception performance counters](#exception)  
   
--   [Interop performance counters](#interop)  
+- [Interop performance counters](#interop)  
   
--   [JIT performance counters](#jit)  
+- [JIT performance counters](#jit)  
   
--   [Loading performance counters](#loading)  
+- [Loading performance counters](#loading)  
   
--   [Lock and thread performance counters](#lockthread)  
+- [Lock and thread performance counters](#lockthread)  
   
--   [Memory performance counters](#memory)  
+- [Memory performance counters](#memory)  
   
--   [Networking performance counters](#networking)  
+- [Networking performance counters](#networking)  
   
--   [Security performance counters](#security)  
+- [Security performance counters](#security)  
   
 <a name="exception"></a>   
 ## Exception performance counters  
@@ -155,21 +155,21 @@ This topic provides a list of performance counters you can find in the [Windows 
   
  There are several classes of networking performance counters supported:  
   
--   Event counters that measure the number of times some event occurred.  
+- Event counters that measure the number of times some event occurred.  
   
--   Data counters that measure the quantity of data sent or received.  
+- Data counters that measure the quantity of data sent or received.  
   
--   Duration counters that measure how long different processes take. The times are measured on the objects each interval (usually in seconds) after they come out of different states.  
+- Duration counters that measure how long different processes take. The times are measured on the objects each interval (usually in seconds) after they come out of different states.  
   
--   Per-Interval counters that measure the number of objects that are making a particular transition per interval (normally per second).  
+- Per-Interval counters that measure the number of objects that are making a particular transition per interval (normally per second).  
   
  The networking performance counters for events include the following:  
   
--   **Connections Established**  
+- **Connections Established**  
   
--   **Datagrams Received**  
+- **Datagrams Received**  
   
--   **Datagrams Sent**  
+- **Datagrams Sent**  
   
  These performance counters provide counts since the process started. The counts of <xref:System.Net.Sockets.Socket> connections established includes explicit <xref:System.Net.Sockets.Socket> method calls by an application for a stream socket connection that was established as well as internal calls made by other classes (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, <xref:System.Net.WebClient>, and <xref:System.Net.Sockets.TcpClient>, for example) to <xref:System.Net.Sockets.Socket> class  
   
@@ -177,33 +177,33 @@ This topic provides a list of performance counters you can find in the [Windows 
   
  The networking performance counters for data include the following:  
   
--   **Bytes Received**  
+- **Bytes Received**  
   
--   **Bytes Sent**  
+- **Bytes Sent**  
   
  The above counters provide counts of bytes since the process started.  
   
  There are two duration counters that measure how long it took for <xref:System.Net.HttpWebRequest> objects to pass through either their entire life cycle or just part of it:  
   
--   **HttpWebRequest Average Lifetime**  
+- **HttpWebRequest Average Lifetime**  
   
--   **HttpWebRequest Average Queue Time**  
+- **HttpWebRequest Average Queue Time**  
   
  For the **HttpWebRequest Average Lifetime** counter, the lifetime of most <xref:System.Net.HttpWebRequest> objects always starts with the time that the object is created up until the time that the response stream is closed by the application. There are two uncommon cases:  
   
--   If the application never calls the <xref:System.Net.HttpWebRequest.GetResponse%2A> or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> methods, then the lifetime of the <xref:System.Net.HttpWebRequest> object is ignored.  
+- If the application never calls the <xref:System.Net.HttpWebRequest.GetResponse%2A> or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> methods, then the lifetime of the <xref:System.Net.HttpWebRequest> object is ignored.  
   
--   If the <xref:System.Net.HttpWebRequest> object throws a <xref:System.Net.WebException> when calling the <xref:System.Net.HttpWebRequest.GetResponse%2A> or <xref:System.Net.HttpWebRequest.EndGetResponse%2A> methods, the lifetime ends when the exception is thrown. Technically, the underlying response stream is also closed at that point (the response stream returned to the user is really a memory stream containing a copy of the response stream).  
+- If the <xref:System.Net.HttpWebRequest> object throws a <xref:System.Net.WebException> when calling the <xref:System.Net.HttpWebRequest.GetResponse%2A> or <xref:System.Net.HttpWebRequest.EndGetResponse%2A> methods, the lifetime ends when the exception is thrown. Technically, the underlying response stream is also closed at that point (the response stream returned to the user is really a memory stream containing a copy of the response stream).  
   
  There are four counters that track certain <xref:System.Net.HttpWebRequest> object issues per interval. These performance counters can help application developers, administrators, and support staff better understand what the <xref:System.Net.HttpWebRequest> objects are doing. The counters include the following:  
   
--   **HttpWebRequests Created/sec**  
+- **HttpWebRequests Created/sec**  
   
--   **HttpWebRequests Queued/sec**  
+- **HttpWebRequests Queued/sec**  
   
--   **HttpWebRequests Aborted/sec**  
+- **HttpWebRequests Aborted/sec**  
   
--   **HttpWebRequests Failed/sec**  
+- **HttpWebRequests Failed/sec**  
   
  For the **HttpWebRequests Aborted/sec** counter, internal calls to <xref:System.Net.HttpWebRequest.Abort%2A> are also counted. These internal calls are usually caused by timeouts that an application may want to measure.  
   
@@ -227,9 +227,9 @@ for (int i = 0; i < Array.Length; i++)
   
  The networking performance counters are listed in two categories:  
   
--   ".NET CLR Networking" - the original performance counters introduced on .NET Framework Version 2 and supported on .NET Framework Version 2 and later.  
+- ".NET CLR Networking" - the original performance counters introduced on .NET Framework Version 2 and supported on .NET Framework Version 2 and later.  
   
--   ".NET CLR Networking 4.0.0.0" - All of the above socket counters plus the new performance counters supported on .NET Framework Version 4 and later. These new counters provide performance information on <xref:System.Net.HttpWebRequest> objects.  
+- ".NET CLR Networking 4.0.0.0" - All of the above socket counters plus the new performance counters supported on .NET Framework Version 4 and later. These new counters provide performance information on <xref:System.Net.HttpWebRequest> objects.  
   
  For more information on accessing and managing performance counters in an application, see [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md).  
   
@@ -246,5 +246,6 @@ for (int i = 0; i < Array.Length; i++)
 |**Total Runtime Checks**|Displays the total number of runtime code access security checks performed since the application started. Runtime code access security checks are performed when a caller demands a particular permission. The runtime check is made on every call by the caller and examines the current thread stack of the caller. When used with the **Stack Walk Depth** counter, this counter indicates the performance penalty that occurs for security checks.|  
   
 ## See also
+
 - [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
 - [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)

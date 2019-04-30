@@ -5,9 +5,10 @@ author: cartermp
 ms.date: 06/20/2016
 ms.custom: "seodec18"
 ---
+
 # Reducing Package Dependencies with project.json
 
-This article covers what you need to know about reducing your package dependencies when authoring `project.json` libraries. By the end of this article, you will learn how to compose your library such that it only uses the dependencies it needs. 
+This article covers what you need to know about reducing your package dependencies when authoring `project.json` libraries. By the end of this article, you will learn how to compose your library such that it only uses the dependencies it needs.
 
 ## Why it's Important
 
@@ -21,18 +22,17 @@ Currently, there is no official `dotnet` command which trims package references.
 
 1. Reference `NETStandard.Library` version `1.6.0` in a `dependencies` section of your `project.json`.
 2. Restore packages with `dotnet restore` ([see note](#dotnet-restore-note)) from the command line.
-3. Inspect the `project.lock.json` file and find the `NETSTandard.Library` section.  It's near the beginning of the file.
+3. Inspect the `project.lock.json` file and find the `NETStandard.Library` section.  It's near the beginning of the file.
 4. Copy all of the listed packages under `dependencies`.
 5. Remove the `.NETStandard.Library` reference and replace it with the copied packages.
 6. Remove references to packages you don't need.
-
 
 You can find out which packages you don't need by one of the following ways:
 
 1. Trial and error.  This involves removing a package, restoring, seeing if your library still compiles, and repeating this process.
 2. Using a tool such as [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------) or [.NET Reflector](https://www.red-gate.com/products/dotnet-development/reflector) to peek at references to see what your code is actually using.  You can then remove packages which don't correspond to types you're using.
 
-## Example 
+## Example
 
 Imagine that you wrote a library which provided additional functionality to generic collection types.  Such a library would need to depend on packages such as `System.Collections`, but may not at all depend on packages such as `System.Net.Http`.  As such, it would be good to trim package dependencies down to only what this library required!
 
@@ -50,7 +50,7 @@ To trim this library, you start with the `project.json` file and add a reference
 }
 ```
 
-Next, you restore packages with `dotnet restore` ([see note](#dotnet-restore-note)), inspect the `project.lock.json` file, and find all the packages restored for `NETSTandard.Library`.
+Next, you restore packages with `dotnet restore` ([see note](#dotnet-restore-note)), inspect the `project.lock.json` file, and find all the packages restored for `NETStandard.Library`.
 
 Here's what the relevant section in the `project.lock.json` file looks like when targeting `netstandard1.0`:
 

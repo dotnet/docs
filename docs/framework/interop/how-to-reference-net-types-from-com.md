@@ -22,7 +22,7 @@ From the point of view of client and server code, the differences between COM an
   
 ### To import a library  
   
--   Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
+- Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
   
     ```cpp  
     #import "..\LoanLib\LoanLib.tlb" raw_interfaces_only  
@@ -30,7 +30,7 @@ From the point of view of client and server code, the differences between COM an
   
      -or-  
   
--   Include an #import directive for Mscorlib.tlb. For example:  
+- Include an #import directive for Mscorlib.tlb. For example:  
   
     ```cpp  
     #import "mscorlib.tlb"  
@@ -38,7 +38,8 @@ From the point of view of client and server code, the differences between COM an
     ```  
   
 ## See also
+
 - [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
 - [Registering Assemblies with COM](registering-assemblies-with-com.md)
-- [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))
-- [Deploying an Application for COM Access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))
+- [Calling a .NET Object](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))
+- [Deploying an Application for COM Access](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100))

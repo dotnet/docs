@@ -1,10 +1,11 @@
 ---
 title: Asynchronous message-based communication
-description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communications is an essential concept in the microservices architecture, because it's the best way to keep microservices independent from one another while also beeing sychronized, eventually.
+description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communications is an essential concept in the microservices architecture, because it's the best way to keep microservices independent from one another while also being synchronized eventually.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/20/2018
 ---
+
 # Asynchronous message-based communication
 
 Asynchronous messaging and event-driven communication are critical when propagating changes across multiple microservices and their related domain models. As mentioned earlier in the discussion microservices and Bounded Contexts (BCs), models (User, Customer, Product, Account, etc.) can mean different things to different microservices or BCs. That means that when changes occur, you need some way to reconcile changes across the different models. A solution is eventual consistency and event-driven communication based on asynchronous messaging.
@@ -71,7 +72,7 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 - Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
-- Using full [Event Sourcing](https://msdn.microsoft.com/library/dn589792.aspx) pattern.
+- Using full [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing) pattern.
 
 - Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 
@@ -80,26 +81,26 @@ Additional topics to consider when using asynchronous communication are message 
 ## Additional resources
 
 - **Event Driven Messaging** \
-  [*http://soapatterns.org/design_patterns/event_driven_messaging*](http://soapatterns.org/design_patterns/event_driven_messaging)
+  <http://soapatterns.org/design_patterns/event_driven_messaging>
 
 - **Publish/Subscribe Channel** \
-  [*https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
+  <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>
 
 - **Udi Dahan. Clarified CQRS** \
-  [*http://udidahan.com/2009/12/09/clarified-cqrs/*](http://udidahan.com/2009/12/09/clarified-cqrs/)
+  <http://udidahan.com/2009/12/09/clarified-cqrs/>
 
 - **Command and Query Responsibility Segregation (CQRS)** \
-  [*https://docs.microsoft.com/azure/architecture/patterns/cqrs*](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
+  <https://docs.microsoft.com/azure/architecture/patterns/cqrs>
 
 - **Communicating Between Bounded Contexts** \
-  [*https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10))
+  <https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)>
 
 - **Eventual consistency** \
-  [*https://en.wikipedia.org/wiki/Eventual_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
+  <https://en.wikipedia.org/wiki/Eventual_consistency>
 
 - **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling** \
-  [*https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
+  <https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/>
 
->[!div class="step-by-step"]
->[Previous](communication-in-microservice-architecture.md)
->[Next](maintain-microservice-apis.md)
+> [!div class="step-by-step"]
+> [Previous](communication-in-microservice-architecture.md)
+> [Next](maintain-microservice-apis.md)

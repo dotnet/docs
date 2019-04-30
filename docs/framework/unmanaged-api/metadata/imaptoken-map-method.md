@@ -30,7 +30,7 @@ HRESULT Map (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkImp`  
  [in] The metadata token that represents the imported code object.  
   
@@ -50,4 +50,5 @@ HRESULT Map (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMapToken Interface](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md)

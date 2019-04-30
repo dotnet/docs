@@ -29,7 +29,7 @@ HRESULT GetThread (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThread`  
  [out] A pointer to the address of an ICorDebugThread object that represents the thread.  
   

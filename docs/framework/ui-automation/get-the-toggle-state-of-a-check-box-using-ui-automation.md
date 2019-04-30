@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "check boxes, getting toggle states of"
   - "getting, toggle states of check boxes"
 ms.assetid: 84fc31a3-175f-4e93-90a0-dd29d89b77ce
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Get the Toggle State of a Check Box Using UI Automation
 > [!NOTE]

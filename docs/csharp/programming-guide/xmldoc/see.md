@@ -19,7 +19,7 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
 <see cref="member"/>  
 ```  
   
-#### Parameters  
+## Parameters  
  cref = " `member`"  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" ").  
   
@@ -30,7 +30,7 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
   
  The following example shows a \<see> tag within a summary section.  
   
- [!code-csharp[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/see_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#12)]  
   
 ## See also
 

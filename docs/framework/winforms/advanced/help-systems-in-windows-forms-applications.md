@@ -18,6 +18,7 @@ One of the most important courtesies you, as a developer of applications, can fu
  You can generate HTML Help 1.x files with the HTML Help Workshop. For more information on HTML Help, see the "HTML Help Workshop" or the other "HTML Help" topics in MSDN.  
   
 ## See also
+
 - [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
 - [HelpProvider Component](../controls/helpprovider-component-windows-forms.md)
 - [ToolTip Component](../controls/tooltip-component-windows-forms.md)

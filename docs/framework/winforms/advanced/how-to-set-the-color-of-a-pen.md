@@ -21,12 +21,13 @@ This example changes the color of a pre-existing <xref:System.Drawing.Pen> objec
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Drawing.Pen> object named `myPen`.  
+- A <xref:System.Drawing.Pen> object named `myPen`.  
   
 ## Robust Programming  
  You should call <xref:System.Drawing.Pen.Dispose%2A> on objects that consume system resources (such as <xref:System.Drawing.Pen> objects) after you are finished using them.  
   
 ## See also
+
 - <xref:System.Drawing.Pen>
 - [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)
 - [How to: Create a Pen](how-to-create-a-pen.md)

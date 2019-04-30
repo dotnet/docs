@@ -29,19 +29,19 @@ The **-nowarn** option lets you suppress the compiler from displaying one or mor
   
  The following warnings cannot be suppressed by the `-nowarn` option:  
   
--   Compiler Warning (level 1) CS2002  
+- Compiler Warning (level 1) CS2002  
   
--   Compiler Warning (level 1) CS2023  
+- Compiler Warning (level 1) CS2023  
   
--   Compiler Warning (level 1) CS2029  
+- Compiler Warning (level 1) CS2029  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the **Properties** page for the project. For details, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1. Open the **Properties** page for the project. For details, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Modify the **Suppress Warnings** property.  
+3. Modify the **Suppress Warnings** property.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>.  
   

@@ -24,7 +24,7 @@ The following code example demonstrates how to use the <xref:System.Windows.Form
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Data, System.Windows.Forms, and System.XML assemblies.  
+- References to the System, System.Data, System.Windows.Forms, and System.XML assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
@@ -32,6 +32,7 @@ The following code example demonstrates how to use the <xref:System.Windows.Form
  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.BindingSource>
 - [Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](handling-errors-that-occur-during-data-entry-in-the-datagrid.md)

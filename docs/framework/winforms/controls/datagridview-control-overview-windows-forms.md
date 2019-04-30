@@ -30,13 +30,13 @@ ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
   
  The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it will bind to instances of classes described in the following list:  
   
--   Any class that implements the <xref:System.Collections.IList> interface, including one-dimensional arrays.  
+- Any class that implements the <xref:System.Collections.IList> interface, including one-dimensional arrays.  
   
--   Any class that implements the <xref:System.ComponentModel.IListSource> interface, such as the <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes.  
+- Any class that implements the <xref:System.ComponentModel.IListSource> interface, such as the <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes.  
   
--   Any class that implements the <xref:System.ComponentModel.IBindingList> interface, such as the <xref:System.ComponentModel.BindingList%601> class.  
+- Any class that implements the <xref:System.ComponentModel.IBindingList> interface, such as the <xref:System.ComponentModel.BindingList%601> class.  
   
--   Any class that implements the <xref:System.ComponentModel.IBindingListView> interface, such as the <xref:System.Windows.Forms.BindingSource> class.  
+- Any class that implements the <xref:System.ComponentModel.IBindingListView> interface, such as the <xref:System.Windows.Forms.BindingSource> class.  
   
  The <xref:System.Windows.Forms.DataGridView> control supports data binding to the public properties of the objects returned by these interfaces or to the properties collection returned by an <xref:System.ComponentModel.ICustomTypeDescriptor> interface, if implemented on the returned objects.  
   
@@ -73,6 +73,7 @@ ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
  Provides topics that describe how to use the control efficiently to avoid performance problems when working with large amounts of data.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.BindingSource>
 - [DataGridView Control](datagridview-control-windows-forms.md)

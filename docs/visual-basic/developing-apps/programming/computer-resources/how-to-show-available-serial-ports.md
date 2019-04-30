@@ -25,11 +25,11 @@ This topic describes how to use `My.Computer.Ports` to show the available serial
 ## Compiling the Code  
  This example requires:  
   
--   A project reference to System.Windows.Forms.dll.  
+- A project reference to System.Windows.Forms.dll.  
   
--   Access to the members of the <xref:System.Windows.Forms> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
+- Access to the members of the <xref:System.Windows.Forms> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
--   That your form have a <xref:System.Windows.Forms.ListBox> control named `ListBox1`.  
+- That your form have a <xref:System.Windows.Forms.ListBox> control named `ListBox1`.  
   
 ## Robust Programming  
  You do not have to use the <xref:System.Windows.Forms.ListBox> control to display the available serial port names. Instead, you can use a <xref:System.Windows.Forms.ComboBox> or other control. If the application does not need a response from the user, you can use a <xref:System.Windows.Forms.TextBox> control to display the information.  
@@ -38,6 +38,7 @@ This topic describes how to use `My.Computer.Ports` to show the available serial
 >  The port names returned by `My.Computer.Ports.SerialPortNames` may be incorrect when run on Windows 98. To prevent application errors, use exception handling, such as the `Try...Catch...Finally` statement or the `Using` statement, when using the port names to open ports.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Devices.Ports>
 - [How to: Dial Modems Attached to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)
 - [How to: Send Strings to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports.md)

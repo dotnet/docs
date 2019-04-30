@@ -52,6 +52,7 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
 |<xref:System.Windows.Forms.BindingSource.Filter%2A> property|If the data source is an <xref:System.ComponentModel.IBindingListView>, gets or sets the expression used to filter which rows are viewed.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.Windows.Forms.BindingNavigator>
 - [BindingSource Component Architecture](bindingsource-component-architecture.md)

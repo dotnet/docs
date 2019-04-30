@@ -14,7 +14,7 @@ For more advanced double buffering scenarios, you can use the [!INCLUDE[dnprdnsh
   
 ### To obtain a reference to the default BufferedGraphicsContext  
   
--   Set the <xref:System.Drawing.BufferedGraphicsManager.Current%2A> property, as shown in the following code example.  
+- Set the <xref:System.Drawing.BufferedGraphicsManager.Current%2A> property, as shown in the following code example.  
   
      [!code-csharp[System.Windows.Forms.LegacyBufferedGraphics#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/CS/Class1.cs#11)]
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#11)]  
@@ -26,12 +26,13 @@ For more advanced double buffering scenarios, you can use the [!INCLUDE[dnprdnsh
   
 ### To create a dedicated BufferedGraphicsContext  
   
--   Declare and create a new instance of the <xref:System.Drawing.BufferedGraphicsContext> class, as shown in the following code example.  
+- Declare and create a new instance of the <xref:System.Drawing.BufferedGraphicsContext> class, as shown in the following code example.  
   
      [!code-csharp[System.Windows.Forms.LegacyBufferedGraphics#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/CS/Class1.cs#12)]
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#12)]  
   
 ## See also
+
 - <xref:System.Drawing.BufferedGraphicsContext>
 - [Double Buffered Graphics](double-buffered-graphics.md)
 - [How to: Manually Render Buffered Graphics](how-to-manually-render-buffered-graphics.md)

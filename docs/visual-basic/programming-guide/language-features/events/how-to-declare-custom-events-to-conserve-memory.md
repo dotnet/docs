@@ -22,6 +22,7 @@ There are several circumstances when it is important that an application keep it
  [!code-vb[VbVbalrEvents#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#22)]  
   
 ## See also
+
 - <xref:System.ComponentModel.EventHandlerList>
 - [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
 - [How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)

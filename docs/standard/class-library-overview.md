@@ -46,17 +46,17 @@ ms.author: "ronpet"
   
  .NET types are the foundation on which .NET applications, components, and controls are built. .NET implementations include types that perform the following functions:  
   
--   Represent base data types and exceptions.  
+- Represent base data types and exceptions.  
   
--   Encapsulate data structures.  
+- Encapsulate data structures.  
   
--   Perform I/O.  
+- Perform I/O.  
   
--   Access information about loaded types.  
+- Access information about loaded types.  
   
--   Invoke .NET Framework security checks.  
+- Invoke .NET Framework security checks.  
   
--   Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
+- Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
   
  .NET provides a rich set of interfaces, as well as abstract and concrete (non-abstract) classes. You can use the concrete classes as is or, in many cases, derive your own classes from them. To use the functionality of an interface, you can either create a class that implements the interface or derive a class from one of the .NET classes that implements the interface.  
   

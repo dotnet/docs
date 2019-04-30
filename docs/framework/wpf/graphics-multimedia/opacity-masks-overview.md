@@ -30,21 +30,21 @@ Opacity masking example
 ## Creating an Opacity Mask  
  To create an opacity mask, you create a <xref:System.Windows.Media.Brush> and apply it to the <xref:System.Windows.UIElement.OpacityMask%2A> property of an element or visual. You can use any type of <xref:System.Windows.Media.Brush> as an opacity mask.  
   
--   <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>: Used to make an element or visual fade from view.  
+- <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>: Used to make an element or visual fade from view.  
   
      The following image shows a <xref:System.Windows.Media.LinearGradientBrush> used as an opacity mask.  
   
      ![An object with an LinearGradientBrush opacity mask](./media/wcpsdk-graphicsmm-brushes-lineagradientopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_lineagradientopacitymasksingle")  
 LinearGradientBrush Opacity Masking Example  
   
--   <xref:System.Windows.Media.ImageBrush>: Used to create texture and soft or torn edge effects.  
+- <xref:System.Windows.Media.ImageBrush>: Used to create texture and soft or torn edge effects.  
   
      The following image shows an <xref:System.Windows.Media.ImageBrush> used as an opacity mask.  
   
      ![Object that has an ImageBrush opacity mask](./media/wcpsdk-graphicsmm-brushes-imageasopacitymasksingle.jpg "wcpsdk_graphicsmm_brushes_imageasopacitymasksingle")  
 LinearGradientBrush opacity masking example  
   
--   <xref:System.Windows.Media.DrawingBrush>: Used to create complex opacity masks from patterns of shapes, images, and gradients.  
+- <xref:System.Windows.Media.DrawingBrush>: Used to create complex opacity masks from patterns of shapes, images, and gradients.  
   
      The following image shows a <xref:System.Windows.Media.DrawingBrush> used as an opacity mask.  
   
@@ -110,5 +110,6 @@ DrawingBrush opacity masking example
  [!code-xaml[OpacityMasksSnippet#TiledDrawingasOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/DrawingBrushExample.xaml#tileddrawingasopacitymask)]  
   
 ## See also
+
 - [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md)
 - [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)

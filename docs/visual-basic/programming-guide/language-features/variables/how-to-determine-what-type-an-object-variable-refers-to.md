@@ -12,14 +12,14 @@ An object variable contains a pointer to data that is stored elsewhere. The type
   
 ### To determine the exact type an object variable currently refers to  
   
-1.  On the object variable, call the <xref:System.Object.GetType%2A> method to retrieve a <xref:System.Type?displayProperty=nameWithType> object.  
+1. On the object variable, call the <xref:System.Object.GetType%2A> method to retrieve a <xref:System.Type?displayProperty=nameWithType> object.  
   
     ```  
     Dim myObject As Object  
     myObject.GetType()  
     ```  
   
-2.  On the <xref:System.Type?displayProperty=nameWithType> class, call the shared method <xref:System.Type.GetTypeCode%2A> to retrieve the <xref:System.TypeCode> enumeration value for the object's type.  
+2. On the <xref:System.Type?displayProperty=nameWithType> class, call the shared method <xref:System.Type.GetTypeCode%2A> to retrieve the <xref:System.TypeCode> enumeration value for the object's type.  
   
     ```  
     Dim myObject As Object  
@@ -31,7 +31,7 @@ An object variable contains a pointer to data that is stored elsewhere. The type
   
 ### To determine whether an object variable's type is compatible with a specified type  
   
--   Use the `TypeOf` operator in combination with the [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) to test the object with a `TypeOf`...`Is` expression.  
+- Use the `TypeOf` operator in combination with the [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) to test the object with a `TypeOf`...`Is` expression.  
   
     ```  
     If TypeOf objA Is System.Windows.Forms.Control Then  
@@ -47,6 +47,7 @@ An object variable contains a pointer to data that is stored elsewhere. The type
  Note that the specified type cannot be a variable or expression. It must be the name of a defined type, such as a class, structure, or interface. This includes intrinsic types such as `Integer` and `String`.  
   
 ## See also
+
 - <xref:System.Object.GetType%2A>
 - <xref:System.Type?displayProperty=nameWithType>
 - <xref:System.Type.GetTypeCode%2A>

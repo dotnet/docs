@@ -10,11 +10,11 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
   
  There are several scenarios for handling the <xref:System.Windows.FrameworkElement.ContextMenuOpening> event:  
   
--   Adjusting the menu items before display.  
+- Adjusting the menu items before display.  
   
--   Replacing the entire menu before display.  
+- Replacing the entire menu before display.  
   
--   Completely suppressing any existing context menu and displaying no context menu.  
+- Completely suppressing any existing context menu and displaying no context menu.  
   
 ## Example  
   
@@ -36,11 +36,11 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
   
  However, if you use this style of handler for <xref:System.Windows.FrameworkElement.ContextMenuOpening>, you can potentially expose a timing issue if the object where you are setting the <xref:System.Windows.Controls.ContextMenu> does not have a preexisting context menu. When a user right-clicks a control, <xref:System.Windows.FrameworkElement.ContextMenuOpening> is raised even if the existing <xref:System.Windows.Controls.ContextMenu> is empty or null. But in this case, whatever new <xref:System.Windows.Controls.ContextMenu> you set on the source element arrives too late to be displayed. Also, if the user happens to right-click a second time, this time your new <xref:System.Windows.Controls.ContextMenu> appears, the value is non null, and your handler will properly replace and display the menu when the handler runs a second time. This suggests two possible workarounds:  
   
-1.  Insure that <xref:System.Windows.FrameworkElement.ContextMenuOpening> handlers always run against controls that have at least a placeholder <xref:System.Windows.Controls.ContextMenu> available, which you intend to be replaced by the handler code. In this case, you can still use the handler shown in the previous example, but you typically want to assign a placeholder <xref:System.Windows.Controls.ContextMenu> in the initial markup:  
+1. Insure that <xref:System.Windows.FrameworkElement.ContextMenuOpening> handlers always run against controls that have at least a placeholder <xref:System.Windows.Controls.ContextMenu> available, which you intend to be replaced by the handler code. In this case, you can still use the handler shown in the previous example, but you typically want to assign a placeholder <xref:System.Windows.Controls.ContextMenu> in the initial markup:  
   
      [!code-xaml[ContextMenuOpeningHandlers#XAMLWithInitCM](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuOpeningHandlers/CSharp/Pane1.xaml#xamlwithinitcm)]  
   
-2.  Assume that the initial <xref:System.Windows.Controls.ContextMenu> value might be null, based on some preliminary logic. You could either check <xref:System.Windows.Controls.ContextMenu> for null, or use a flag in your code to check whether your handler has been run at least once. Because you assume that the <xref:System.Windows.Controls.ContextMenu> is about to be displayed, your handler then sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` in the event data. To the <xref:System.Windows.Controls.ContextMenuService> that is responsible for context menu display, a `true` value for <xref:System.Windows.RoutedEventArgs.Handled%2A> in the event data represents a request to cancel the display for the context menu / control combination that raised the event.  
+2. Assume that the initial <xref:System.Windows.Controls.ContextMenu> value might be null, based on some preliminary logic. You could either check <xref:System.Windows.Controls.ContextMenu> for null, or use a flag in your code to check whether your handler has been run at least once. Because you assume that the <xref:System.Windows.Controls.ContextMenu> is about to be displayed, your handler then sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` in the event data. To the <xref:System.Windows.Controls.ContextMenuService> that is responsible for context menu display, a `true` value for <xref:System.Windows.RoutedEventArgs.Handled%2A> in the event data represents a request to cancel the display for the context menu / control combination that raised the event.  
   
  Now that you have suppressed the potentially suspect context menu, the next step is to supply a new one, then display it. Setting the new one is basically the same as the previous handler: you build a new <xref:System.Windows.Controls.ContextMenu> and set the control source's <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType> property with it. The additional step is that you must now force the display of the context menu, because you suppressed the first attempt. To force the display, you set the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A?displayProperty=nameWithType> property to `true` within the handler. Be careful when you do this, because opening the context menu in the handler raises the <xref:System.Windows.FrameworkElement.ContextMenuOpening> event again. If you reenter your handler, it becomes infinitely recursive. This is why you always need to check for `null` or use a flag if you open a context menu from within a <xref:System.Windows.FrameworkElement.ContextMenuOpening> event handler.  
   
@@ -50,6 +50,7 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
  [!code-csharp[ContextMenuOpeningHandlers#ReplaceReopen](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuOpeningHandlers/CSharp/Pane1.xaml.cs#replacereopen)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.ContextMenu>
 - <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>
 - [Base Elements Overview](base-elements-overview.md)

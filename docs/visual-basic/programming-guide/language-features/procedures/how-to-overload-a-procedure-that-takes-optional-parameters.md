@@ -18,17 +18,17 @@ If a procedure has one or more [Optional](../../../../visual-basic/language-refe
   
 #### To overload a procedure that takes one optional parameter  
   
-1.  Write a `Sub` or `Function` declaration statement that includes the optional parameter in the parameter list. Do not use the `Optional` keyword in this overloaded version.  
+1. Write a `Sub` or `Function` declaration statement that includes the optional parameter in the parameter list. Do not use the `Optional` keyword in this overloaded version.  
   
-2.  Precede the `Sub` or `Function` keyword with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword.  
+2. Precede the `Sub` or `Function` keyword with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword.  
   
-3.  Write the procedure code that should execute when the calling code supplies the optional argument.  
+3. Write the procedure code that should execute when the calling code supplies the optional argument.  
   
-4.  Terminate the procedure with the `End Sub` or `End Function` statement as appropriate.  
+4. Terminate the procedure with the `End Sub` or `End Function` statement as appropriate.  
   
-5.  Write a second declaration statement that is identical to the first declaration except that it does not include the optional parameter in the parameter list.  
+5. Write a second declaration statement that is identical to the first declaration except that it does not include the optional parameter in the parameter list.  
   
-6.  Write the procedure code that should execute when the calling code does not supply the optional argument. Terminate the procedure with the `End Sub` or `End Function` statement as appropriate.  
+6. Write the procedure code that should execute when the calling code does not supply the optional argument. Terminate the procedure with the `End Sub` or `End Function` statement as appropriate.  
   
      The following example shows a procedure defined with an optional parameter,  an equivalent set of two overloaded procedures, and finally examples of both invalid and valid overloaded versions.  
   
@@ -45,17 +45,18 @@ If a procedure has one or more [Optional](../../../../visual-basic/language-refe
   
 #### To overload a procedure that takes more than one optional parameter  
   
-1.  Determine which combinations of supplied optional arguments are acceptable to the logic of the procedure. An unacceptable combination might arise if one optional parameter depends on another. For example, if one parameter accepts a spouse's name and another accepts the spouse's age, a combination of arguments supplying the age but omitting the name is unacceptable.  
+1. Determine which combinations of supplied optional arguments are acceptable to the logic of the procedure. An unacceptable combination might arise if one optional parameter depends on another. For example, if one parameter accepts a spouse's name and another accepts the spouse's age, a combination of arguments supplying the age but omitting the name is unacceptable.  
   
-2.  For each acceptable combination of supplied optional arguments, write a `Sub` or `Function` declaration statement that defines the corresponding parameter list. Do not use the `Optional` keyword.  
+2. For each acceptable combination of supplied optional arguments, write a `Sub` or `Function` declaration statement that defines the corresponding parameter list. Do not use the `Optional` keyword.  
   
-3.  In each declaration, precede the `Sub` or `Function` keyword with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword.  
+3. In each declaration, precede the `Sub` or `Function` keyword with the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword.  
   
-4.  Following each declaration, write the procedure code that should execute when the calling code supplies an argument list corresponding to that declaration's parameter list.  
+4. Following each declaration, write the procedure code that should execute when the calling code supplies an argument list corresponding to that declaration's parameter list.  
   
-5.  Terminate each procedure with the `End Sub` or `End Function` statement as appropriate.  
+5. Terminate each procedure with the `End Sub` or `End Function` statement as appropriate.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Optional Parameters](./optional-parameters.md)

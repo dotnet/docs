@@ -69,9 +69,10 @@ To develop components and controls that interact correctly with the design envir
   
 ## Compiling the Code  
   
--   The form that hosts the `AttributesDemoControl` requires a reference to the `AttributesDemoControl` assembly in order to build.  
+- The form that hosts the `AttributesDemoControl` requires a reference to the `AttributesDemoControl` assembly in order to build.  
   
 ## See also
+
 - <xref:System.IComparable>
 - <xref:System.Windows.Forms.DataGridView>
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)

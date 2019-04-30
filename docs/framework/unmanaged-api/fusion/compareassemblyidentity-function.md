@@ -59,11 +59,11 @@ STDAPI CompareAssemblyIdentity (
 ## Remarks  
  `CompareAssemblyIdentity` checks whether `pwzAssemblyIdentity1` and `pwzAssemblyIdentity2` are equivalent. `pfEquivalent` is set to `true` under one or more of the following conditions:  
   
--   The two assembly identities are equivalent. For strongly named assemblies, equivalency requires the assembly name, version, public key token, and culture to be identical. For simply named assemblies, equivalency requires a match on the assembly name and culture.  
+- The two assembly identities are equivalent. For strongly named assemblies, equivalency requires the assembly name, version, public key token, and culture to be identical. For simply named assemblies, equivalency requires a match on the assembly name and culture.  
   
--   Both assembly identities refer to assemblies that run on the .NET Framework. This condition returns `true` even if the assembly version numbers do not match.  
+- Both assembly identities refer to assemblies that run on the .NET Framework. This condition returns `true` even if the assembly version numbers do not match.  
   
--   The two assemblies are not managed assemblies, but `fUnified1` or `fUnified2` was set to `true`.  
+- The two assemblies are not managed assemblies, but `fUnified1` or `fUnified2` was set to `true`.  
   
  The `fUnified` flag indicates that all version numbers up to the version number of the strongly named assembly are considered equivalent to the strongly named assembly. For example, if the value of `pwzAssemblyIndentity1` is "MyAssembly, version=3.0.0.0, culture=neutral, publicKeyToken=....", and the value of `fUnified1` is `true`, this indicates that all versions of MyAssembly from version 0.0.0.0 to 3.0.0.0 should be treated as equivalent. In such a case, if `pwzAssemblyIndentity2` refers to the same assembly as `pwzAssemblyIndentity1`, except that it has a lower version number, `pfEquivalent` is set to `true`. If `pwzAssemblyIdentity2` refers to a higher version number, `pfEquivalent` is set to `true` only if the value of `fUnified2` is `true`.  
   
@@ -79,5 +79,6 @@ STDAPI CompareAssemblyIdentity (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
 - [AssemblyComparisonResult Enumeration](../../../../docs/framework/unmanaged-api/fusion/assemblycomparisonresult-enumeration.md)

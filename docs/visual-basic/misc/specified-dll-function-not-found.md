@@ -10,10 +10,10 @@ The dynamic-link library (DLL) in a user library reference was found, but the DL
   
 ## To correct this error  
   
-1.  Specify a valid ordinal in the function declaration.  
+1. Specify a valid ordinal in the function declaration.  
   
-2.  Make sure the DLL name and alias are correct.  
+2. Make sure the DLL name and alias are correct.  
   
 ## See also
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

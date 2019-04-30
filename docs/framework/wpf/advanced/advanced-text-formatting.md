@@ -17,9 +17,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
 > [!NOTE]
 >  All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
-  
 
-  
 <a name="prereq"></a>   
 ## Prerequisites  
  This topic assumes that you are familiar with the higher level [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] used for text presentation. Most user scenarios will not require the advanced text formatting [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] discussed in this topic. For an introduction to the different text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see [Documents in WPF](documents-in-wpf.md).  
@@ -36,8 +34,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of [!INCLUDE[TLA
   
  Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
- ![Diagram of text layout client and TextFormatter](./media/textformatter01.png "TextFormatter01")  
-Interaction between application and TextFormatter  
+ ![Diagram of text layout client and TextFormatter](./media/advanced-text-formatting/text-layout-textformatter-interaction.png)  
   
  The text formatter is used to retrieve formatted text lines from the text store, which is an implementation of <xref:System.Windows.Media.TextFormatting.TextSource>. This is done by first creating an instance of the text formatter by using the <xref:System.Windows.Media.TextFormatting.TextFormatter.Create%2A> method. This method creates an instance of the text formatter and sets the maximum line height and width values. As soon as an instance of the text formatter is created, the line creation process is started by calling the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method. <xref:System.Windows.Media.TextFormatting.TextFormatter> calls back to the text source to retrieve the text and formatting parameters for the runs of text that form a line.  
   
@@ -52,11 +49,11 @@ Interaction between application and TextFormatter
   
  To handle the virtualization of the text store, the text store must be derived from <xref:System.Windows.Media.TextFormatting.TextSource>. <xref:System.Windows.Media.TextFormatting.TextSource> defines the method the text formatter uses to retrieve text runs from the text store. <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> is the method used by the text formatter to retrieve text runs used in line formatting. The call to <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> is repeatedly made by the text formatter until one of the following conditions occurs:  
   
--   A <xref:System.Windows.Media.TextFormatting.TextEndOfLine> or a subclass is returned.  
+- A <xref:System.Windows.Media.TextFormatting.TextEndOfLine> or a subclass is returned.  
   
--   The accumulated width of text runs exceeds the maximum line width specified in either the call to create the text formatter or the call to the text formatter's <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method.  
+- The accumulated width of text runs exceeds the maximum line width specified in either the call to create the text formatter or the call to the text formatter's <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method.  
   
--   A [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] newline sequence, such as "CF", "LF", or "CRLF", is returned.  
+- A [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] newline sequence, such as "CF", "LF", or "CRLF", is returned.  
   
 <a name="section4"></a>   
 ## Providing Text Runs  
@@ -89,5 +86,6 @@ Interaction between application and TextFormatter
  <xref:System.Windows.Media.TextFormatting.TextRun> objects are formatted by using properties provided by the text store. These properties come in two types, <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties>. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> handle paragraph inclusive properties such as <xref:System.Windows.TextAlignment> and <xref:System.Windows.FlowDirection>. <xref:System.Windows.Media.TextFormatting.TextRunProperties> are properties that can be different for each text run within a paragraph, such as foreground brush, <xref:System.Windows.Media.Typeface>, and font size. To implement custom paragraph and custom text run property types, your application must create classes that derive from <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties> respectively.  
   
 ## See also
+
 - [Typography in WPF](typography-in-wpf.md)
 - [Documents in WPF](documents-in-wpf.md)

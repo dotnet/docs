@@ -31,17 +31,17 @@ A custom NumericUpDown control
   
  This topic contains the following sections:  
   
--   [Prerequisites](#prerequisites)  
+- [Prerequisites](#prerequisites)  
   
--   [Parts and States Model](#parts_and_states_model)  
+- [Parts and States Model](#parts_and_states_model)  
   
--   [Defining the Visual Structure and Visual Behavior of a Control in a ControlTemplate](#defining_the_visual_structure_and_visual_behavior_of_a_control_in_a_controltemplate)  
+- [Defining the Visual Structure and Visual Behavior of a Control in a ControlTemplate](#defining_the_visual_structure_and_visual_behavior_of_a_control_in_a_controltemplate)  
   
--   [Using Parts of the ControlTemplate in Code](#using_parts_of_the_controltemplate_in_code)  
+- [Using Parts of the ControlTemplate in Code](#using_parts_of_the_controltemplate_in_code)  
   
--   [Providing the Control Contract](#providing_the_control_contract)  
+- [Providing the Control Contract](#providing_the_control_contract)  
   
--   [Complete Example](#complete_example)  
+- [Complete Example](#complete_example)  
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
@@ -54,11 +54,11 @@ A custom NumericUpDown control
 ## Parts and States Model  
  The parts and states model specifies how to define the visual structure and visual behavior of a control. To follow the parts and states model, you should do the following:  
   
--   Define the visual structure and visual behavior in the <xref:System.Windows.Controls.ControlTemplate> of a control.  
+- Define the visual structure and visual behavior in the <xref:System.Windows.Controls.ControlTemplate> of a control.  
   
--   Follow certain best practices when your control's logic interacts with parts of the control template.  
+- Follow certain best practices when your control's logic interacts with parts of the control template.  
   
--   Provide a control contract to specify what should be included in the <xref:System.Windows.Controls.ControlTemplate>.  
+- Provide a control contract to specify what should be included in the <xref:System.Windows.Controls.ControlTemplate>.  
   
  When you define the visual structure and visual behavior in the <xref:System.Windows.Controls.ControlTemplate> of a control, application authors can change the visual structure and visual behavior of your control by creating a new <xref:System.Windows.Controls.ControlTemplate> instead of writing code.   You must provide a control contract that tells application authors which <xref:System.Windows.FrameworkElement> objects and states should be defined in the <xref:System.Windows.Controls.ControlTemplate>. You should follow some best practices when you interact with the parts in the <xref:System.Windows.Controls.ControlTemplate> so that your control properly handles an incomplete <xref:System.Windows.Controls.ControlTemplate>.  If you follow these three principles, application authors will be able to create a <xref:System.Windows.Controls.ControlTemplate> for your control just as easily as they can for the controls that ship with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  The following section explains each of these recommendations in detail.  
   
@@ -88,15 +88,15 @@ A custom NumericUpDown control
   
  The following practices will ensure that your control responds properly to missing <xref:System.Windows.FrameworkElement> objects:  
   
-1.  Set the `x:Name` attribute for each <xref:System.Windows.FrameworkElement> that you need to reference in code.  
+1. Set the `x:Name` attribute for each <xref:System.Windows.FrameworkElement> that you need to reference in code.  
   
-2.  Define private properties for each <xref:System.Windows.FrameworkElement> that you need to interact with.  
+2. Define private properties for each <xref:System.Windows.FrameworkElement> that you need to interact with.  
   
-3.  Subscribe to and unsubscribe from any events that your control handles in the <xref:System.Windows.FrameworkElement> property's set accessor.  
+3. Subscribe to and unsubscribe from any events that your control handles in the <xref:System.Windows.FrameworkElement> property's set accessor.  
   
-4.  Set the <xref:System.Windows.FrameworkElement> properties that you defined in step 2 in the <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> method. This is the earliest that the <xref:System.Windows.FrameworkElement> in the <xref:System.Windows.Controls.ControlTemplate> is available to the control. Use the `x:Name` of the <xref:System.Windows.FrameworkElement> to get it from the <xref:System.Windows.Controls.ControlTemplate>.  
+4. Set the <xref:System.Windows.FrameworkElement> properties that you defined in step 2 in the <xref:System.Windows.FrameworkElement.OnApplyTemplate%2A> method. This is the earliest that the <xref:System.Windows.FrameworkElement> in the <xref:System.Windows.Controls.ControlTemplate> is available to the control. Use the `x:Name` of the <xref:System.Windows.FrameworkElement> to get it from the <xref:System.Windows.Controls.ControlTemplate>.  
   
-5.  Check that the <xref:System.Windows.FrameworkElement> is not `null` before accessing its members.  If it is `null`, do not report an error.  
+5. Check that the <xref:System.Windows.FrameworkElement> is not `null` before accessing its members.  If it is `null`, do not report an error.  
   
  The following examples show how the `NumericUpDown` control interacts with <xref:System.Windows.FrameworkElement> objects in accordance with the recommendations in the preceding list.  
   
@@ -128,18 +128,18 @@ A custom NumericUpDown control
   
  The <xref:System.Windows.VisualStateManager.GoToState%2A> method performs the logic necessary to start and stop the storyboards appropriately. When a control calls <xref:System.Windows.VisualStateManager.GoToState%2A> to change its state, the <xref:System.Windows.VisualStateManager> does the following:  
   
--   If the <xref:System.Windows.VisualState> that the control is going to has a <xref:System.Windows.Media.Animation.Storyboard>, the storyboard begins. Then, if the <xref:System.Windows.VisualState> that the control is coming from has a <xref:System.Windows.Media.Animation.Storyboard>, the storyboard ends.  
+- If the <xref:System.Windows.VisualState> that the control is going to has a <xref:System.Windows.Media.Animation.Storyboard>, the storyboard begins. Then, if the <xref:System.Windows.VisualState> that the control is coming from has a <xref:System.Windows.Media.Animation.Storyboard>, the storyboard ends.  
   
--   If the control is already in the state that is specified, <xref:System.Windows.VisualStateManager.GoToState%2A> takes no action and returns `true`.  
+- If the control is already in the state that is specified, <xref:System.Windows.VisualStateManager.GoToState%2A> takes no action and returns `true`.  
   
--   If state that is specified doesn't exist in the <xref:System.Windows.Controls.ControlTemplate> of `control`, <xref:System.Windows.VisualStateManager.GoToState%2A> takes no action and returns `false`.  
+- If state that is specified doesn't exist in the <xref:System.Windows.Controls.ControlTemplate> of `control`, <xref:System.Windows.VisualStateManager.GoToState%2A> takes no action and returns `false`.  
   
 #### Best Practices for Working with the VisualStateManager  
  It is recommended that you do the following to maintain your control's states:  
   
--   Use properties to track its state.  
+- Use properties to track its state.  
   
--   Create a helper method to transition between states.  
+- Create a helper method to transition between states.  
   
  The `NumericUpDown` control uses its `Value` property to track whether it is in the `Positive` or `Negative` state.  The `NumericUpDown` control also defines the `Focused` and `UnFocused` states, which tracks the <xref:System.Windows.UIElement.IsFocused%2A> property. If you use states that do not naturally correspond to a property of the control, you can define a private property to track the state.  
   
@@ -154,11 +154,11 @@ A custom NumericUpDown control
   
  There are three typical places where the state of a control might change:  
   
--   When the <xref:System.Windows.Controls.ControlTemplate> is applied to the <xref:System.Windows.Controls.Control>.  
+- When the <xref:System.Windows.Controls.ControlTemplate> is applied to the <xref:System.Windows.Controls.Control>.  
   
--   When a property changes.  
+- When a property changes.  
   
--   When an event occurs.  
+- When an event occurs.  
   
  The following examples demonstrate updating the state of the `NumericUpDown` control in these cases.  
   
@@ -183,33 +183,33 @@ A custom NumericUpDown control
 ## Providing the Control Contract  
  You provide a control contract so that <xref:System.Windows.Controls.ControlTemplate> authors will know what to put in the template. A control contract has three elements:  
   
--   The visual elements that the control's logic uses.  
+- The visual elements that the control's logic uses.  
   
--   The states of the control and the group each state belongs to.  
+- The states of the control and the group each state belongs to.  
   
--   The public properties that visually affect the control.  
+- The public properties that visually affect the control.  
   
  Someone that creates a new <xref:System.Windows.Controls.ControlTemplate> needs to know what <xref:System.Windows.FrameworkElement> objects the control's logic uses, what type each object is, and what its name is. A <xref:System.Windows.Controls.ControlTemplate> author also needs to know the name of each possible state the control can be in, and which <xref:System.Windows.VisualStateGroup> the state is in.  
   
  Returning to the `NumericUpDown` example, the control expects the <xref:System.Windows.Controls.ControlTemplate> to have the following <xref:System.Windows.FrameworkElement> objects:  
   
--   A <xref:System.Windows.Controls.Primitives.RepeatButton> called `UpButton`.  
+- A <xref:System.Windows.Controls.Primitives.RepeatButton> called `UpButton`.  
   
--   A <xref:System.Windows.Controls.Primitives.RepeatButton> called `DownButton.`  
+- A <xref:System.Windows.Controls.Primitives.RepeatButton> called `DownButton.`  
   
  The control can be in the following states:  
   
--   In the `ValueStates`<xref:System.Windows.VisualStateGroup>  
+- In the `ValueStates`<xref:System.Windows.VisualStateGroup>  
   
-    -   `Positive`  
+    - `Positive`  
   
-    -   `Negative`  
+    - `Negative`  
   
--   In the `FocusStates`<xref:System.Windows.VisualStateGroup>  
+- In the `FocusStates`<xref:System.Windows.VisualStateGroup>  
   
-    -   `Focused`  
+    - `Focused`  
   
-    -   `Unfocused`  
+    - `Unfocused`  
   
  To specify what <xref:System.Windows.FrameworkElement> objects the control expects, you use the <xref:System.Windows.TemplatePartAttribute>, which specifies the name and type of the expected elements.  To specify the possible states of a control, you use the <xref:System.Windows.TemplateVisualStateAttribute>, which specifies the state's name and which <xref:System.Windows.VisualStateGroup> it belongs to.  Put the <xref:System.Windows.TemplatePartAttribute> and <xref:System.Windows.TemplateVisualStateAttribute> on the class definition of the control.  
   
@@ -232,5 +232,6 @@ A custom NumericUpDown control
  [!code-vb[VSMCustomControl#ControlLogic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic/numericupdown.vb#controllogic)]  
   
 ## See also
+
 - [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
 - [Control Customization](control-customization.md)

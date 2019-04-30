@@ -21,11 +21,11 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
 ## UI Automation Control Pattern Components  
  Control patterns support the methods, properties, events, and relationships needed to define a discrete piece of functionality available in a control.  
   
--   The relationship between a UI Automation element and its parent, children and siblings describes the element's structure within the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.  
+- The relationship between a UI Automation element and its parent, children and siblings describes the element's structure within the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.  
   
--   The methods allow UI Automation clients to manipulate the control.  
+- The methods allow UI Automation clients to manipulate the control.  
   
--   The properties and events provide information about the control pattern's functionality as well as information about the state of the control.  
+- The properties and events provide information about the control pattern's functionality as well as information about the state of the control.  
   
  Control patterns relate to [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] as interfaces relate to [!INCLUDE[TLA#tla_com](../../../includes/tlasharptla-com-md.md)] objects. In [!INCLUDE[TLA2#tla_com](../../../includes/tla2sharptla-com-md.md)], you can query an object to ask what interfaces it supports and then use those interfaces to access functionality. In [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], UI Automation clients can ask a control which control patterns it supports and then interact with the control through the properties, methods, events, and structures exposed by the supported control patterns. For example, for a multiline edit box, UI Automation providers implement <xref:System.Windows.Automation.Provider.IScrollProvider>. When a client knows that an <xref:System.Windows.Automation.AutomationElement> supports the <xref:System.Windows.Automation.ScrollPattern> control pattern, it can use the properties, methods, and events exposed by that control pattern to manipulate the control, or access information about the control.  
   
@@ -67,6 +67,7 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
 |<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.Provider.IWindowProvider>|Exposes information specific to windows, a fundamental concept to the [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] operating system. Examples of controls that are windows are top-level application windows ([!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)], [!INCLUDE[TLA#tla_winexpl](../../../includes/tlasharptla-winexpl-md.md)], and so on), [!INCLUDE[TLA#tla_mdi](../../../includes/tlasharptla-mdi-md.md)] child windows, and dialogs.|  
   
 ## See also
+
 - [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
 - [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

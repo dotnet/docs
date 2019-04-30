@@ -30,5 +30,6 @@ This example shows how to create a quadratic Bezier curve.  To create a quadrati
  This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See also
+
 - [Create an Elliptical Arc](how-to-create-an-elliptical-arc.md)
 - [Create a Cubic Bezier Curve](how-to-create-a-cubic-bezier-curve.md)

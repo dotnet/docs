@@ -10,8 +10,8 @@ You tried to access an object that does not support the locale setting for the c
   
 ## To correct this error  
   
--   Check which locale settings the object supports.  
+- Check which locale settings the object supports.  
   
 ## See also
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

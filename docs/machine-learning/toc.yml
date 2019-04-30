@@ -1,0 +1,72 @@
+- name: ML.NET Guide
+  href: index.yml
+- name: Overview
+  expanded: true
+  items:
+  - name: What is machine learning?
+    href: what-is-machine-learning.md
+  - name: How does ML.NET work?
+    href: how-does-mldotnet-work.md
+- name: Tutorials
+  items:
+  - name: Overview
+    href: tutorials/index.md
+  - name: Sentiment analysis (binary classification)
+    href: tutorials/sentiment-analysis.md
+  - name: Issue classification (multiclass classification)
+    href: tutorials/github-issue-classification.md
+  - name: Price prediction (regression)
+    href: tutorials/taxi-fare.md
+  - name: Iris flowers (clustering)
+    href: tutorials/iris-clustering.md
+  - name: Movie recommendation (recommendation)
+    href: tutorials/movie-recommmendation.md
+  - name: Image Classification (transfer learning)
+    href: tutorials/image-classification.md
+- name: How-to guides
+  items:
+  - name: Load data
+    href: how-to-guides/load-data-ml-net.md
+  - name: Prepare data
+    href: how-to-guides/prepare-data-ml-net.md
+  - name: Train, evaluate, and explain the model
+    items:
+    - name: Determine model feature importance with PFI
+      href: how-to-guides/determine-global-feature-importance-in-model.md
+    - name: Inspect intermediate pipeline data values
+      href: how-to-guides/inspect-intermediate-data-ml-net.md      
+    - name: Train a model
+      href: how-to-guides/train-machine-learning-model-ml-net.md
+    - name: Train model using cross-validation
+      href: how-to-guides/train-cross-validation-ml-net.md
+  - name: Use the trained model
+    items:
+    - name: One prediction at a time with PredictionEngine
+      href: how-to-guides/single-predict-model-ml-net.md
+    - name: Operationalize a trained model
+      href: how-to-guides/consuming-model-ml-net.md
+    - name: Retrain a model
+      href: how-to-guides/retrain-model-ml-net.md
+    - name: Serve Model Azure Functions
+      href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
+    - name: Serve Model in Web API
+      href: how-to-guides/serve-model-web-api-ml-net.md
+  - name: Infer.NET
+    items:
+    - name: Probabilistic programming with Infer.NET
+      href: how-to-guides/matchup-app-infer-net.md
+- name: Reference
+  items:
+  - name: API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+  - name: Preview API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
+- name: Resources
+  href: resources/index.md
+  items:
+  - name: Machine learning glossary
+    href: resources/glossary.md
+  - name: Machine learning tasks
+    href: resources/tasks.md
+  - name: Data transforms
+    href: resources/transforms.md

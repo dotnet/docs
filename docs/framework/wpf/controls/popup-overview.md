@@ -8,9 +8,7 @@ ms.assetid: 774f53ca-bff8-470e-9ce9-3928b4cf3d4c
 ---
 # Popup Overview
 The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to display content in a separate window that floats over the current application window relative to a designated element or screen coordinate. This topic introduces the <xref:System.Windows.Controls.Primitives.Popup> control and provides information about its use.  
-  
- 
-  
+
 <a name="What_Is_a_Popup_"></a>   
 ## What Is a Popup?  
  A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a separate window relative to an element or point on the screen. When the <xref:System.Windows.Controls.Primitives.Popup> is visible, the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property is set to `true`.  
@@ -30,13 +28,13 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
 ## Controls That Implement a Popup  
  You can build <xref:System.Windows.Controls.Primitives.Popup> controls into other controls. The following controls implement the <xref:System.Windows.Controls.Primitives.Popup> control for specific uses:  
   
--   <xref:System.Windows.Controls.ToolTip>. If you want to create a tooltip for an element, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](tooltip-overview.md).  
+- <xref:System.Windows.Controls.ToolTip>. If you want to create a tooltip for an element, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](tooltip-overview.md).  
   
--   <xref:System.Windows.Controls.ContextMenu>. If you want to create a context menu for an element, use the <xref:System.Windows.Controls.ContextMenu> control. For more information, see [ContextMenu Overview](contextmenu-overview.md).  
+- <xref:System.Windows.Controls.ContextMenu>. If you want to create a context menu for an element, use the <xref:System.Windows.Controls.ContextMenu> control. For more information, see [ContextMenu Overview](contextmenu-overview.md).  
   
--   <xref:System.Windows.Controls.ComboBox>. If you want to create a selection control that has a drop-down list box that can be shown or hidden, use the <xref:System.Windows.Controls.ComboBox> control.  
+- <xref:System.Windows.Controls.ComboBox>. If you want to create a selection control that has a drop-down list box that can be shown or hidden, use the <xref:System.Windows.Controls.ComboBox> control.  
   
--   <xref:System.Windows.Controls.Expander>. If you want to create a control that displays a header with a collapsible area that displays content, use the <xref:System.Windows.Controls.Expander> control. For more information, see [Expander Overview](expander-overview.md).  
+- <xref:System.Windows.Controls.Expander>. If you want to create a control that displays a header with a collapsible area that displays content, use the <xref:System.Windows.Controls.Expander> control. For more information, see [Expander Overview](expander-overview.md).  
   
 <a name="PopupBehaviorandAppearance"></a>   
 ## Popup Behavior and Appearance  
@@ -83,6 +81,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
  The <xref:System.Windows.Controls.Primitives.Popup> control maintains a reference to its <xref:System.Windows.Controls.Primitives.Popup.Child%2A> content as a logical child. When the new window is created, the content of <xref:System.Windows.Controls.Primitives.Popup> becomes a visual child of the window and remains the logical child of <xref:System.Windows.Controls.Primitives.Popup>. Conversely, <xref:System.Windows.Controls.Primitives.Popup> remains the logical parent of its <xref:System.Windows.Controls.Primitives.Popup.Child%2A> content.  
   
 ## See also
+
 - <xref:System.Windows.Controls.Primitives.Popup>
 - <xref:System.Windows.Controls.Primitives.PopupPrimaryAxis>
 - <xref:System.Windows.Controls.Primitives.PlacementMode>

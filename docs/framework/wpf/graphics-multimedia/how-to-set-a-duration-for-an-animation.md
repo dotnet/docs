@@ -18,5 +18,6 @@ A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time an
  [!code-xaml[timingbehaviors_snip#DurationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DurationExample.xaml#durationexamplewholepage)]  
   
 ## See also
+
 - <xref:System.Windows.Duration>
 - [Animation Overview](animation-overview.md)

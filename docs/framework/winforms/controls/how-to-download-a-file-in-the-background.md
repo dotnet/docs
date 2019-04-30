@@ -52,7 +52,7 @@ Downloading a file is a common task, and it is often useful to run this potentia
 ## Compiling the Code  
  This example requires:  
   
--   References to the System.Drawing, System.Windows.Forms, and System.Xml assemblies.  
+- References to the System.Drawing, System.Windows.Forms, and System.Xml assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
@@ -60,6 +60,7 @@ Downloading a file is a common task, and it is often useful to run this potentia
  Always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> property in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler before attempting to access the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property or any other object that may have been affected by the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler.  
   
 ## See also
+
 - <xref:System.ComponentModel.BackgroundWorker>
 - [How to: Run an Operation in the Background](how-to-run-an-operation-in-the-background.md)
 - [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)

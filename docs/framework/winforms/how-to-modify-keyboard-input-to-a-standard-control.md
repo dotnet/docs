@@ -16,7 +16,7 @@ Windows Forms provides the ability to consume and modify keyboard input. Consumi
   
 ### To consume a key  
   
--   In a <xref:System.Windows.Forms.Control.KeyPress> event handler, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property of the <xref:System.Windows.Forms.KeyPressEventArgs> class to `true`.  
+- In a <xref:System.Windows.Forms.Control.KeyPress> event handler, set the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property of the <xref:System.Windows.Forms.KeyPressEventArgs> class to `true`.  
   
      -or-  
   
@@ -32,7 +32,7 @@ Windows Forms provides the ability to consume and modify keyboard input. Consumi
   
 ### To modify a standard character key  
   
--   In a <xref:System.Windows.Forms.Control.KeyPress> event handler, set the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property of the <xref:System.Windows.Forms.KeyPressEventArgs> class to the value of the new character key.  
+- In a <xref:System.Windows.Forms.Control.KeyPress> event handler, set the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property of the <xref:System.Windows.Forms.KeyPressEventArgs> class to the value of the new character key.  
   
      The following example is an excerpt from a `switch` statement that modifies 'B' to 'A' and 'b' to 'a'. Note that the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property of the <xref:System.Windows.Forms.KeyPressEventArgs> parameter is set to `false`, so that the new key value is propagated to other methods and events in the message queue.  
   
@@ -41,7 +41,7 @@ Windows Forms provides the ability to consume and modify keyboard input. Consumi
   
 ### To modify a noncharacter key  
   
--   Override a <xref:System.Windows.Forms.Control> method that processes Windows messages, detect the WM_KEYDOWN or WM_SYSKEYDOWN message, and set the <xref:System.Windows.Forms.Message.WParam%2A> property of the <xref:System.Windows.Forms.Message> parameter to the <xref:System.Windows.Forms.Keys> value that represents the new noncharacter key.  
+- Override a <xref:System.Windows.Forms.Control> method that processes Windows messages, detect the WM_KEYDOWN or WM_SYSKEYDOWN message, and set the <xref:System.Windows.Forms.Message.WParam%2A> property of the <xref:System.Windows.Forms.Message> parameter to the <xref:System.Windows.Forms.Keys> value that represents the new noncharacter key.  
   
      The following code example demonstrates how to override the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method of a control to detect keys F1 through F9 and modify any F3 key press to F1. For more information on <xref:System.Windows.Forms.Control> methods that you can override to intercept keyboard messages, see [User Input in a Windows Forms Application](user-input-in-a-windows-forms-application.md) and [How Keyboard Input Works](how-keyboard-input-works.md).  
   
@@ -57,11 +57,12 @@ Windows Forms provides the ability to consume and modify keyboard input. Consumi
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing and System.Windows.Forms assemblies.  
+- References to the System, System.Drawing and System.Windows.Forms assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - [Keyboard Input in a Windows Forms Application](keyboard-input-in-a-windows-forms-application.md)
 - [User Input in a Windows Forms Application](user-input-in-a-windows-forms-application.md)
 - [How Keyboard Input Works](how-keyboard-input-works.md)

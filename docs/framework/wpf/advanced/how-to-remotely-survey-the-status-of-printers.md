@@ -18,11 +18,11 @@ At any given time at medium and large companies there may be multiple printers t
 ## Example  
  The major steps for creating this kind of utility are as follows.  
   
-1.  Obtain a list of all print servers.  
+1. Obtain a list of all print servers.  
   
-2.  Loop through the servers to query their print queues.  
+2. Loop through the servers to query their print queues.  
   
-3.  Within each pass of the server loop, loop through all the server's queues and read each property that might indicate that the queue is not currently working.  
+3. Within each pass of the server loop, loop through all the server's queues and read each property that might indicate that the queue is not currently working.  
   
  The code below is a series of snippets. For simplicity, this example assumes that there is a CRLF-delimited list of print servers. The variable `fileOfPrintServers` is a <xref:System.IO.StreamReader> object for this file. Since each server name is on its own line, any call of <xref:System.IO.StreamReader.ReadLine%2A> gets the name of the next server and moves the <xref:System.IO.StreamReader>'s cursor to the beginning of the next line.  
   
@@ -33,9 +33,9 @@ At any given time at medium and large companies there may be multiple printers t
   
  The example then uses <xref:System.Printing.PrintServer.GetPrintQueues%2A> to create a collection of all of the server's queues and begins to loop through them. This inner loop contains a branching structure corresponding to the two ways of checking a printer's status:  
   
--   You can read the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property which is of type <xref:System.Printing.PrintQueueStatus>.  
+- You can read the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property which is of type <xref:System.Printing.PrintQueueStatus>.  
   
--   You can read each relevant property such as <xref:System.Printing.PrintQueue.IsOutOfPaper%2A>, and <xref:System.Printing.PrintQueue.IsPaperJammed%2A>.  
+- You can read each relevant property such as <xref:System.Printing.PrintQueue.IsOutOfPaper%2A>, and <xref:System.Printing.PrintQueue.IsPaperJammed%2A>.  
   
  This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "y" if he or she wanted to use the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property. See below for the details of the two methods.  
   
@@ -68,6 +68,7 @@ At any given time at medium and large companies there may be multiple printers t
  [!code-vb[PrinterStatusSurvey#UsingStartAndUntilTimes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#usingstartanduntiltimes)]  
   
 ## See also
+
 - <xref:System.Printing.PrintQueue.StartTimeOfDay%2A>
 - <xref:System.Printing.PrintQueue.UntilTimeOfDay%2A>
 - <xref:System.DateTime>

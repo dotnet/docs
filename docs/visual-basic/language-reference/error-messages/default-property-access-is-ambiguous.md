@@ -35,7 +35,7 @@ End Class
   
 ## To correct this error  
   
--   Avoid inheriting any members with the same name. In the preceding example, if `testObj` does not need any of the members of, say, `Iface2`, then declare it as follows:  
+- Avoid inheriting any members with the same name. In the preceding example, if `testObj` does not need any of the members of, say, `Iface2`, then declare it as follows:  
   
     ```  
     Dim testObj As Iface1  
@@ -43,7 +43,7 @@ End Class
   
      -or-  
   
--   Implement the inheriting interface in a class. Then you can implement each of the inherited properties with different names. However, only one of them can be the default property of the implementing class. The following example illustrates this.  
+- Implement the inheriting interface in a class. Then you can implement each of the inherited properties with different names. However, only one of them can be the default property of the implementing class. The following example illustrates this.  
   
     ```  
     Public Class useIface3  
@@ -58,4 +58,5 @@ End Class
     ```  
   
 ## See also
+
 - [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

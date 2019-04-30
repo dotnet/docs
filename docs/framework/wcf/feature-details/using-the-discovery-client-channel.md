@@ -14,9 +14,9 @@ When writing a WCF client application you need to know the endpoint address of t
   
  The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class contains two public properties:  
   
-1.  <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A>, which is used to describe the service you want to call.  
+1. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A>, which is used to describe the service you want to call.  
   
-2.  <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider%2A> which specifies the discovery endpoint to send discovery messages to.  
+2. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider%2A> which specifies the discovery endpoint to send discovery messages to.  
   
  The <xref:System.ServiceModel.Discovery.FindCriteria.%23ctor%2A> property allows you to specify the service contract you are searching for, any required scope URIs, and the maximum number of time to attempt to open the channel. The contract type is specified by calling the constructor  <xref:System.ServiceModel.Discovery.FindCriteria>. Scope URIs can be added to the <xref:System.ServiceModel.Discovery.FindCriteria.Scopes%2A> property. The <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> property allows you to specify the maximum number of results to which the client tries to connect to. When a probe response is received the client attempts to open the channel using the endpoint address from the probe response. If an exception occurs the client moves on to the next probe response, waiting for more responses to be received if necessary. It continues to do this until the channel is successfully opened or the maximum number of results is reached. For more information about these settings, see <xref:System.ServiceModel.Discovery.FindCriteria>.  
   

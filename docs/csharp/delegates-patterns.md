@@ -147,7 +147,6 @@ Here is that file based logger:
 
 [!code-csharp[FileLogger](../../samples/csharp/delegates-and-events/FileLogger.cs#FileLogger "Log to files")]
 
-
 Once you've created this class, you can instantiate it and it attaches
 its LogMessage method to the Logger component:
 

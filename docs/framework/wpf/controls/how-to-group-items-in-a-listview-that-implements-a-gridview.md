@@ -21,6 +21,7 @@ This example shows how to display groups of items in the <xref:System.Windows.Co
 [!code-xaml[GridViewWithGroups#ListViewEnd](~/samples/snippets/csharp/VS_Snippets_Wpf/GridViewWithGroups/CS/Window1.xaml#listviewend)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
 - [How-to Topics](listview-how-to-topics.md)

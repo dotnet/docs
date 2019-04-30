@@ -37,19 +37,19 @@ Traversing an XML schema using the Schema Object Model (SOM) API provides access
   
  The sample traverses the customer schema in the following steps.  
   
-1.  Adds the customer schema to a new <xref:System.Xml.Schema.XmlSchemaSet> object and then compiles it. Any schema validation warnings and errors encountered reading or compiling the schema are handled by the <xref:System.Xml.Schema.ValidationEventHandler> delegate.  
+1. Adds the customer schema to a new <xref:System.Xml.Schema.XmlSchemaSet> object and then compiles it. Any schema validation warnings and errors encountered reading or compiling the schema are handled by the <xref:System.Xml.Schema.ValidationEventHandler> delegate.  
   
-2.  Retrieves the compiled <xref:System.Xml.Schema.XmlSchema> object from the <xref:System.Xml.Schema.XmlSchemaSet> by iterating over the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property. Because the schema is compiled, Post-Schema-Compilation-Infoset (PSCI) properties are accessible.  
+2. Retrieves the compiled <xref:System.Xml.Schema.XmlSchema> object from the <xref:System.Xml.Schema.XmlSchemaSet> by iterating over the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property. Because the schema is compiled, Post-Schema-Compilation-Infoset (PSCI) properties are accessible.  
   
-3.  Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaObjectTable.Values%2A> collection of the post-schema-compilation <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> collection writing the name of each element to the console.  
+3. Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaObjectTable.Values%2A> collection of the post-schema-compilation <xref:System.Xml.Schema.XmlSchema.Elements%2A?displayProperty=nameWithType> collection writing the name of each element to the console.  
   
-4.  Gets the complex type of the `Customer` element using the <xref:System.Xml.Schema.XmlSchemaComplexType> class.  
+4. Gets the complex type of the `Customer` element using the <xref:System.Xml.Schema.XmlSchemaComplexType> class.  
   
-5.  If the complex type has any attributes, gets an <xref:System.Collections.IDictionaryEnumerator> to enumerate over each <xref:System.Xml.Schema.XmlSchemaAttribute> and writes its name to the console.  
+5. If the complex type has any attributes, gets an <xref:System.Collections.IDictionaryEnumerator> to enumerate over each <xref:System.Xml.Schema.XmlSchemaAttribute> and writes its name to the console.  
   
-6.  Gets the sequence particle of the complex type using the <xref:System.Xml.Schema.XmlSchemaSequence> class.  
+6. Gets the sequence particle of the complex type using the <xref:System.Xml.Schema.XmlSchemaSequence> class.  
   
-7.  Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaSequence.Items%2A?displayProperty=nameWithType> collection writing the name of each child element to the console.  
+7. Iterates over each <xref:System.Xml.Schema.XmlSchemaElement> in the <xref:System.Xml.Schema.XmlSchemaSequence.Items%2A?displayProperty=nameWithType> collection writing the name of each child element to the console.  
   
  The following is the complete code example.  
   

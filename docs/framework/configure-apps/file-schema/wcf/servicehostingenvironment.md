@@ -57,25 +57,25 @@ This element defines the type the service hosting environment instantiates for a
 ## Remarks  
  By default, WCF services run side-by-side with ASP.NET in hosted Application Domains (AppDomain). Even though WCF and ASP.NET can coexist in the same AppDomain, WCF requests are not processed by the ASP.NET HTTP Pipeline by default. As a result, several elements of the ASP.NET application platform are not available to WCF services. These include  
   
--   ASP.NET File/URL Authorization  
+- ASP.NET File/URL Authorization  
   
--   ASP.NET Impersonation  
+- ASP.NET Impersonation  
   
--   Cookie-based Session State  
+- Cookie-based Session State  
   
--   HttpContext.Current  
+- HttpContext.Current  
   
--   Pipeline Extensibility via custom HttpModule  
+- Pipeline Extensibility via custom HttpModule  
   
  If your WCF services need to function in the ASP.NET context, and communicate only over HTTP, you can use WCF’s ASP.NET compatibility mode. This mode is turned on when the `aspNetCompatibilityEnabled` attribute is set to `true` at the application level. Service implementations must declare their ability to run in compatibility mode using the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> class. When the compatibility mode is enabled,  
   
--   ASP.NET File/URL Authorization is enforced prior to WCF authorization. An authorization decision is based on the transport-level identity of the request. Identities at the message level are ignored.  
+- ASP.NET File/URL Authorization is enforced prior to WCF authorization. An authorization decision is based on the transport-level identity of the request. Identities at the message level are ignored.  
   
--   WCF service operations start to execute in the ASP.NET impersonation context. If both ASP.NET impersonation and WCF impersonation are enabled for a specific service, the WCF impersonation context applies.  
+- WCF service operations start to execute in the ASP.NET impersonation context. If both ASP.NET impersonation and WCF impersonation are enabled for a specific service, the WCF impersonation context applies.  
   
--   HttpContext.Current can be used from WCF service code, and services are prevented from exposing non-HTTP endpoints.  
+- HttpContext.Current can be used from WCF service code, and services are prevented from exposing non-HTTP endpoints.  
   
--   WCF requests are processed by the ASP.NET pipeline. HttpModules that have been configured to act on incoming requests can also process WCF requests. These can include ASP.NET platform components (e.g., <xref:System.Web.SessionState.SessionStateModule>), as well as custom third party modules.  
+- WCF requests are processed by the ASP.NET pipeline. HttpModules that have been configured to act on incoming requests can also process WCF requests. These can include ASP.NET platform components (e.g., <xref:System.Web.SessionState.SessionStateModule>), as well as custom third party modules.  
   
 ## Example  
  The following code sample shows how to enable ASP Compatibility Mode.  
@@ -87,6 +87,7 @@ This element defines the type the service hosting environment instantiates for a
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
 - [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

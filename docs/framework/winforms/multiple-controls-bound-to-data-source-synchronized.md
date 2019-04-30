@@ -12,9 +12,9 @@ ms.assetid: c2f0ecc6-11e6-4c2c-a1ca-0759630c451e
 # How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized
 Oftentimes when working with data binding in Windows Forms, multiple controls are bound to the same data source. In some cases, it may be necessary to take extra steps to ensure that the bound properties of the controls remain synchronized with each other and the data source. These steps are necessary in two situations:  
   
--   If the data source does not implement <xref:System.ComponentModel.IBindingList>, and therefore generate <xref:System.ComponentModel.IBindingList.ListChanged> events of type <xref:System.ComponentModel.ListChangedType.ItemChanged>.  
+- If the data source does not implement <xref:System.ComponentModel.IBindingList>, and therefore generate <xref:System.ComponentModel.IBindingList.ListChanged> events of type <xref:System.ComponentModel.ListChangedType.ItemChanged>.  
   
--   If the data source implements <xref:System.ComponentModel.IEditableObject>.  
+- If the data source implements <xref:System.ComponentModel.IEditableObject>.  
   
  In the former case, you can use a <xref:System.Windows.Forms.BindingSource> to bind the data source to the controls. In the latter case, you use a <xref:System.Windows.Forms.BindingSource> and handle the <xref:System.Windows.Forms.BindingSource.BindingComplete> event and call <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> on the associated <xref:System.Windows.Forms.BindingManagerBase>.  
   
@@ -28,13 +28,14 @@ Oftentimes when working with data binding in Windows Forms, multiple controls ar
   
 ## Compiling the Code  
   
--   This code example requires  
+- This code example requires  
   
--   References to the <xref:System>, <xref:System.Windows.Forms>, and <xref:System.Drawing> assemblies.  
+- References to the <xref:System>, <xref:System.Windows.Forms>, and <xref:System.Drawing> assemblies.  
   
--   A form with the <xref:System.Windows.Forms.Form.Load> event handled and a call to the `InitializeControlsAndDataSource` method in the example from the form's <xref:System.Windows.Forms.Form.Load> event handler.  
+- A form with the <xref:System.Windows.Forms.Form.Load> event handled and a call to the `InitializeControlsAndDataSource` method in the example from the form's <xref:System.Windows.Forms.Form.Load> event handler.  
   
 ## See also
+
 - [How to: Share Bound Data Across Forms Using the BindingSource Component](./controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)
 - [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)
 - [Interfaces Related to Data Binding](interfaces-related-to-data-binding.md)

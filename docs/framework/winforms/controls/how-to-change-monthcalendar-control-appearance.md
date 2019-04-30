@@ -15,7 +15,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
   
 ### To change the month calendar's color scheme  
   
--   Set properties such as <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A> and <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A>. The <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A> property also determines the font color for the days of the week. The <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> property determines the color of the dates that precede and follow the displayed month or months.  
+- Set properties such as <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A> and <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A>. The <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A> property also determines the font color for the days of the week. The <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> property determines the color of the dates that precede and follow the displayed month or months.  
   
     ```vb  
     MonthCalendar1.TitleBackColor = System.Drawing.Color.Blue  
@@ -40,7 +40,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
   
 ### To display the current date at the bottom of the control  
   
--   Set the <xref:System.Windows.Forms.MonthCalendar.ShowToday%2A> property to `true`. The example below toggles between displaying and omitting today's date when the form is double-clicked.  
+- Set the <xref:System.Windows.Forms.MonthCalendar.ShowToday%2A> property to `true`. The example below toggles between displaying and omitting today's date when the form is double-clicked.  
   
     ```vb  
     Private Sub Form1_DoubleClick(ByVal sender As Object, _  
@@ -81,7 +81,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
   
 ### To display week numbers  
   
--   Set the <xref:System.Windows.Forms.MonthCalendar.ShowWeekNumbers%2A> property to `true`. You can set this property either in code or in the Properties window.  
+- Set the <xref:System.Windows.Forms.MonthCalendar.ShowWeekNumbers%2A> property to `true`. You can set this property either in code or in the Properties window.  
   
      Week numbers appear in a separate column to the left of the first day of the week.  
   
@@ -98,6 +98,7 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you t
     ```  
   
 ## See also
+
 - [MonthCalendar Control](monthcalendar-control-windows-forms.md)
 - [How to: Select a Range of Dates in the Windows Forms MonthCalendar Control](how-to-select-a-range-of-dates-in-the-windows-forms-monthcalendar-control.md)
 - [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](display-specific-days-in-bold-with-wf-monthcalendar-control.md)

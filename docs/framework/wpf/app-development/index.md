@@ -10,40 +10,38 @@ ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
 <a name="introduction"></a>
 Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
--   Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
+- Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
   
--   [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] or Mozilla Firefox).  
+- [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] or Mozilla Firefox).  
   
--   Custom Control Libraries (non-executable assemblies containing reusable controls).  
+- Custom Control Libraries (non-executable assemblies containing reusable controls).  
   
--   Class Libraries (non-executable assemblies that contain reusable classes).  
+- Class Libraries (non-executable assemblies that contain reusable classes).  
   
 > [!NOTE]
 >  Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
   
  To build this set of applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements a host of services. This topic provides an overview of these services and where to find more information.  
-  
 
-  
 <a name="Application_Management"></a>   
 ## Application Management  
  Executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications commonly require a core set of functionality that includes the following:  
   
--   Creating and managing common application infrastructure (including creating an entry point method and a Windows message loop to receive system and input messages).  
+- Creating and managing common application infrastructure (including creating an entry point method and a Windows message loop to receive system and input messages).  
   
--   Tracking and interacting with the lifetime of an application.  
+- Tracking and interacting with the lifetime of an application.  
   
--   Retrieving and processing command-line parameters.  
+- Retrieving and processing command-line parameters.  
   
--   Sharing application-scope properties and [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] resources.  
+- Sharing application-scope properties and [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] resources.  
   
--   Detecting and processing unhandled exceptions.  
+- Detecting and processing unhandled exceptions.  
   
--   Returning exit codes.  
+- Returning exit codes.  
   
--   Managing windows in standalone applications.  
+- Managing windows in standalone applications.  
   
--   Tracking navigation in [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)], and standalone applications with navigation windows and frames.  
+- Tracking navigation in [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)], and standalone applications with navigation windows and frames.  
   
  These capabilities are implemented by the <xref:System.Windows.Application> class, which you add to your applications using an *application definition*.  
   
@@ -59,13 +57,13 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 ## Windows and Dialog Boxes  
  Users interact with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] standalone applications through windows. The purpose of a window is to host application content and expose application functionality that usually allows users to interact with the content. In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], windows are encapsulated by the <xref:System.Windows.Window> class, which supports:  
   
--   Creating and showing windows.  
+- Creating and showing windows.  
   
--   Establishing owner/owned window relationships.  
+- Establishing owner/owned window relationships.  
   
--   Configuring window appearance (for example, size, location, icons, title bar text, border).  
+- Configuring window appearance (for example, size, location, icons, title bar text, border).  
   
--   Tracking and interacting with the lifetime of a window.  
+- Tracking and interacting with the lifetime of a window.  
   
  For more information, see [WPF Windows Overview](wpf-windows-overview.md).  
   
@@ -81,23 +79,23 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 ## Navigation  
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] supports Web-style navigation using pages (<xref:System.Windows.Controls.Page>) and hyperlinks (<xref:System.Windows.Documents.Hyperlink>). Navigation can be implemented in a variety of ways that include the following:  
   
--   Standalone pages that are hosted in a Web browser.  
+- Standalone pages that are hosted in a Web browser.  
   
--   Pages compiled into an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] that is hosted in a Web browser.  
+- Pages compiled into an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] that is hosted in a Web browser.  
   
--   Pages compiled into a standalone application and hosted by a navigation window (<xref:System.Windows.Navigation.NavigationWindow>).  
+- Pages compiled into a standalone application and hosted by a navigation window (<xref:System.Windows.Navigation.NavigationWindow>).  
   
--   Pages that are hosted by a frame (<xref:System.Windows.Controls.Frame>), which may be hosted in a standalone page, or a page compiled into either an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] or a standalone application.  
+- Pages that are hosted by a frame (<xref:System.Windows.Controls.Frame>), which may be hosted in a standalone page, or a page compiled into either an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] or a standalone application.  
   
  To facilitate navigation, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements the following:  
   
--   <xref:System.Windows.Navigation.NavigationService>, the shared navigation engine for processing navigation requests that is used by <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Navigation.NavigationWindow>, and [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] to support intra-application navigation.  
+- <xref:System.Windows.Navigation.NavigationService>, the shared navigation engine for processing navigation requests that is used by <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Navigation.NavigationWindow>, and [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] to support intra-application navigation.  
   
--   Navigation methods to initiate navigation.  
+- Navigation methods to initiate navigation.  
   
--   Navigation events to track and interact with navigation lifetime.  
+- Navigation events to track and interact with navigation lifetime.  
   
--   Remembering back and forward navigation using a journal, which can also be inspected and manipulated.  
+- Remembering back and forward navigation using a journal, which can also be inspected and manipulated.  
   
  For information, see [Navigation Overview](navigation-overview.md).  
   

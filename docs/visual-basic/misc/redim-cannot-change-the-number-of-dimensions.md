@@ -10,9 +10,10 @@ An operation attempts to use the `ReDim` statement to change the rank (number of
   
 ## To correct this error  
   
--   Ensure that you intend to change the array's rank and not the sizes of its dimensions, and if possible, use `Dim` to declare a new array with the desired rank.  
+- Ensure that you intend to change the array's rank and not the sizes of its dimensions, and if possible, use `Dim` to declare a new array with the desired rank.  
   
 ## See also
+
 - [Arrays in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)
 - [Array dimensions in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)
 - [ReDim Statement](../../visual-basic/language-reference/statements/redim-statement.md)

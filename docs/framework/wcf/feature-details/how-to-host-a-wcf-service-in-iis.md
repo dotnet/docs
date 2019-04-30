@@ -15,28 +15,28 @@ This topic outlines the basic steps required to create a Windows Communication F
   
 ### To create a service hosted by IIS  
   
-1.  Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](https://go.microsoft.com/fwlink/?LinkID=132128)  
+1. Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](https://go.microsoft.com/fwlink/?LinkID=132128)  
   
-2.  Create a new folder for your application files called "IISHostedCalcService", ensure that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] has access to the contents of the folder, and use the IIS management tool to create a new IIS application that is physically located in this application directory. When creating an alias for the application directory use "IISHostedCalc".  
+2. Create a new folder for your application files called "IISHostedCalcService", ensure that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] has access to the contents of the folder, and use the IIS management tool to create a new IIS application that is physically located in this application directory. When creating an alias for the application directory use "IISHostedCalc".  
   
-3.  Create a new file named "service.svc" in the application directory. Edit this file by adding the following @ServiceHost element.  
+3. Create a new file named "service.svc" in the application directory. Edit this file by adding the following @ServiceHost element.  
   
     ```  
     <%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService"%>  
     ```  
   
-4.  Create an App_Code subdirectory within the application directory.  
+4. Create an App_Code subdirectory within the application directory.  
   
-5.  Create a code file named Service.cs in the App_Code subdirectory.  
+5. Create a code file named Service.cs in the App_Code subdirectory.  
   
-6.  Add the following using statements to the top of the Service.cs file.  
+6. Add the following using statements to the top of the Service.cs file.  
   
     ```csharp  
     using System;  
     using System.ServiceModel;  
     ```  
   
-7.  Add the following namespace declaration after the using statements.  
+7. Add the following namespace declaration after the using statements.  
   
     ```csharp  
     namespace Microsoft.ServiceModel.Samples  
@@ -44,7 +44,7 @@ This topic outlines the basic steps required to create a Windows Communication F
     }  
     ```  
   
-8.  Define the service contract inside the namespace declaration as shown in the following code.  
+8. Define the service contract inside the namespace declaration as shown in the following code.  
   
      [!code-csharp[c_HowTo_HostInIIS#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#11)]
      [!code-vb[c_HowTo_HostInIIS#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostiniis/vb/source.vb#11)]  
@@ -70,6 +70,7 @@ This topic outlines the basic steps required to create a Windows Communication F
  [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]  
   
 ## See also
+
 - [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)
 - [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)
 - [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)

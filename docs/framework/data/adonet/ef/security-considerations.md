@@ -12,11 +12,11 @@ This topic describes security considerations that are specific to developing, de
 #### Use only trusted data source providers.  
  To communicate with the data source, a provider must do the following:  
   
--   Receive the connection string from the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
+- Receive the connection string from the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
--   Translate the command tree to the data source's native query language.  
+- Translate the command tree to the data source's native query language.  
   
--   Assemble and return result sets.  
+- Assemble and return result sets.  
   
  During the logon operation, information that is based on the user password is passed to the server through the network libraries of the underlying data source. A malicious provider can steal user credentials, generate malicious queries, or tamper with the result set.  
   
@@ -26,19 +26,19 @@ This topic describes security considerations that are specific to developing, de
 #### Secure the connection string.  
  Protecting access to your data source is one of the most important goals when securing an application. A connection string presents a potential vulnerability if it is not secured or if it is improperly constructed. When you store connection information in plain text or persist it in memory, you risk compromising your entire system. The following are the recommended methods for securing connection strings:  
   
--   Use Windows Authentication with a SQL Server data source.  
+- Use Windows Authentication with a SQL Server data source.  
   
      When you use Windows Authentication to connect to a SQL Server data source, the connection string does not contain logon and password information.  
   
--   Encrypt configuration file sections using protected configuration.  
+- Encrypt configuration file sections using protected configuration.  
   
      ASP.NET provides a feature called protected configuration that enables you to encrypt sensitive information in a configuration file. Although primarily designed for ASP.NET, you can also use protected configuration to encrypt sections of configuration files in Windows applications. For a detailed description of the new protected configuration capabilities, see [Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/previous-versions/aspnet/53tyfkaw(v=vs.100)).  
   
--   Store connection strings in secured configuration files.  
+- Store connection strings in secured configuration files.  
   
      You should never embed connection strings in your source code. You can store connection strings in configuration files, which eliminates the need to embed them in your application's code. By default, the Entity Data Model Wizard stores connection strings in the application configuration file. You must secure this file to prevent unauthorized access.  
   
--   Use connection string builders when dynamically creating connections.  
+- Use connection string builders when dynamically creating connections.  
   
      If you must construct connection strings at runtime, use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This string builder class helps prevent connection string injection attacks by validating and escaping invalid input information. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md). Also use the appropriate string builder class to construct the data source connection string that is part of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] connection string. For information about connection string builders for ADO.NET providers, see [Connection String Builders](../../../../../docs/framework/data/adonet/connection-string-builders.md).  
   
@@ -59,15 +59,15 @@ This topic describes security considerations that are specific to developing, de
 #### Run applications with the minimum permissions.  
  When you allow a managed application to run with full-trust permission, the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] does not limit the application's access to your computer. This may enable a security vulnerability in your application to compromise the entire system. To use code access security and other security mechanisms in the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)], you should run applications by using partial-trust permissions and with the minimum set of permissions that are needed to enable the application to function. The following code access permissions are the minimum permissions your [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application needs:  
   
--   <xref:System.Security.Permissions.FileIOPermission>: <xref:System.Security.Permissions.FileIOPermissionAccess.Write> to open the specified metadata files or <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> to search a directory for metadata files.  
+- <xref:System.Security.Permissions.FileIOPermission>: <xref:System.Security.Permissions.FileIOPermissionAccess.Write> to open the specified metadata files or <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> to search a directory for metadata files.  
   
--   <xref:System.Security.Permissions.ReflectionPermission>: <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> to support LINQ to Entities queries.  
+- <xref:System.Security.Permissions.ReflectionPermission>: <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> to support LINQ to Entities queries.  
   
--   <xref:System.Transactions.DistributedTransactionPermission>: <xref:System.Security.Permissions.PermissionState.Unrestricted> to enlist in a <xref:System.Transactions><xref:System.Transactions.Transaction>.  
+- <xref:System.Transactions.DistributedTransactionPermission>: <xref:System.Security.Permissions.PermissionState.Unrestricted> to enlist in a <xref:System.Transactions><xref:System.Transactions.Transaction>.  
   
--   <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> to serialize exceptions by using the <xref:System.Runtime.Serialization.ISerializable> interface.  
+- <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> to serialize exceptions by using the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
--   Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a SQL Server database.  
+- Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a SQL Server database.  
   
  For more information, see [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md).  
   
@@ -88,31 +88,31 @@ This topic describes security considerations that are specific to developing, de
 #### Prevent SQL injection attacks.  
  Applications frequently take external input (from a user or another external agent) and perform actions based on that input. Any input that is directly or indirectly derived from the user or an external agent might have content that uses the syntax of the target language in order to perform unauthorized actions. When the target language is a Structured Query Language (SQL), such as [!INCLUDE[tsql](../../../../../includes/tsql-md.md)], this manipulation is known as a SQL injection attack. A malicious user can inject commands directly into the query and drop a database table, cause a denial of service, or otherwise change the nature of the operation being performed.  
   
--   [!INCLUDE[esql](../../../../../includes/esql-md.md)] injection attacks:  
+- [!INCLUDE[esql](../../../../../includes/esql-md.md)] injection attacks:  
   
      SQL injection attacks can be performed in [!INCLUDE[esql](../../../../../includes/esql-md.md)] by supplying malicious input to values that are used in a query predicate and in parameter names. To avoid the risk of SQL injection, you should never combine user input with [!INCLUDE[esql](../../../../../includes/esql-md.md)] command text.  
   
      [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries accept parameters everywhere that literals are accepted. You should use parameterized queries instead of injecting literals from an external agent directly into the query. You should also consider using [query builder methods](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896238(v=vs.100)) to safely construct Entity SQL.  
   
--   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] injection attacks:  
+- [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] injection attacks:  
   
      Although query composition is possible in [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)], it is performed through the object model API. Unlike [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries, [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] queries are not composed by using string manipulation or concatenation, and they are not susceptible to traditional SQL injection attacks.  
   
 #### Prevent very large result sets.  
  A very large result set could cause the client system to shut down if the client is performing operations that consume resources proportional to the size of the result set. Unexpectedly large result sets can occur under the following conditions:  
   
--   In queries against a large database that do not include appropriate filter conditions.  
+- In queries against a large database that do not include appropriate filter conditions.  
   
--   In queries that create Cartesian joins on the server.  
+- In queries that create Cartesian joins on the server.  
   
--   In nested [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries.  
+- In nested [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries.  
   
  When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take%2A> method in [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] or the [LIMIT](../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) operator in [!INCLUDE[esql](../../../../../includes/esql-md.md)] to limit the size of the result set.  
   
 #### Avoid Returning IQueryable Results When Exposing Methods to Potentially Untrusted Callers.  
  Avoid returning <xref:System.Linq.IQueryable%601> types from methods that are exposed to potentially untrusted callers for the following reasons:  
   
--   A consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:  
+- A consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:  
   
     ```  
     public IQueryable<Customer> GetCustomer(int customerId)  
@@ -120,7 +120,7 @@ This topic describes security considerations that are specific to developing, de
   
      A consumer of this query could call `.Include("Orders")` on the returned `IQueryable<Customer>` to retrieve data that the query did not intend to expose. This can be avoided by changing the return type of the method to <xref:System.Collections.Generic.IEnumerable%601> and calling a method (such as `.ToList()`) that materializes the results.  
   
--   Because <xref:System.Linq.IQueryable%601> queries are executed when the results are iterated over, a consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could catch exceptions that are thrown. Exceptions could contain information not intended for the consumer.  
+- Because <xref:System.Linq.IQueryable%601> queries are executed when the results are iterated over, a consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could catch exceptions that are thrown. Exceptions could contain information not intended for the consumer.  
   
 ## Security Considerations for Entities  
  The following security considerations apply when generating and working with entity types.  
@@ -156,6 +156,7 @@ This topic describes security considerations that are specific to developing, de
  Applications should not accept instances of the <xref:System.Data.Metadata.Edm.MetadataWorkspace> class from untrusted sources. Instead, you should explicitly construct and populate a workspace from such a source.  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
 - [Migration Considerations](../../../../../docs/framework/data/adonet/ef/migration-considerations.md)

@@ -11,33 +11,33 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
   
  This topic contains the following sections:  
   
--   [Ribbon control](#ribbon_control)  
+- [Ribbon control](#ribbon_control)  
   
--   [Improved performance when displaying large sets of grouped data](#grouped_virtualization)  
+- [Improved performance when displaying large sets of grouped data](#grouped_virtualization)  
   
--   [New features for the VirtualizingPanel](#VirtualizingPanel)  
+- [New features for the VirtualizingPanel](#VirtualizingPanel)  
   
--   [Binding to static properties](#static_properties)  
+- [Binding to static properties](#static_properties)  
   
--   [Accessing collections on non-UI Threads](#xthread_access)  
+- [Accessing collections on non-UI Threads](#xthread_access)  
   
--   [Synchronously and Asynchronously validating data](#INotifyDataErrorInfo)  
+- [Synchronously and Asynchronously validating data](#INotifyDataErrorInfo)  
   
--   [Automatically updating the source of a data binding](#delay)  
+- [Automatically updating the source of a data binding](#delay)  
   
--   [Binding to types that Implement ICustomTypeProvider](#ICustomTypeProvider)  
+- [Binding to types that Implement ICustomTypeProvider](#ICustomTypeProvider)  
   
--   [Retrieving data binding information from a binding expression](#binding_state)  
+- [Retrieving data binding information from a binding expression](#binding_state)  
   
--   [Checking for a valid DataContext object](#DisconnectedSource)  
+- [Checking for a valid DataContext object](#DisconnectedSource)  
   
--   [Repositioning data as the data's values change (Live shaping)](#live_shaping)  
+- [Repositioning data as the data's values change (Live shaping)](#live_shaping)  
   
--   [Improved Support for Establishing a Weak Reference to an Event](#weak_event_pattern)  
+- [Improved Support for Establishing a Weak Reference to an Event](#weak_event_pattern)  
   
--   [New methods for the Dispatcher class](#async)  
+- [New methods for the Dispatcher class](#async)  
   
--   [Markup Extensions for Events](#events_markup_extenions)  
+- [Markup Extensions for Events](#events_markup_extenions)  
   
 <a name="ribbon_control"></a>   
 ## Ribbon control  
@@ -50,17 +50,17 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 <a name="VirtualizingPanel"></a>   
 ## New features for the VirtualizingPanel  
   
-1.  You can specify whether a <xref:System.Windows.Controls.VirtualizingPanel>, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, displays partial items by using the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> attached property. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Item>, the <xref:System.Windows.Controls.VirtualizingPanel> will only display items that are completely visible. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Pixel>, the <xref:System.Windows.Controls.VirtualizingPanel> can display partially visible items.  
+1. You can specify whether a <xref:System.Windows.Controls.VirtualizingPanel>, such as the <xref:System.Windows.Controls.VirtualizingStackPanel>, displays partial items by using the <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> attached property. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Item>, the <xref:System.Windows.Controls.VirtualizingPanel> will only display items that are completely visible. If <xref:System.Windows.Controls.VirtualizingPanel.ScrollUnit%2A> is set to <xref:System.Windows.Controls.ScrollUnit.Pixel>, the <xref:System.Windows.Controls.VirtualizingPanel> can display partially visible items.  
   
-2.  You can specify the  size of the cache before and after the viewport when the <xref:System.Windows.Controls.VirtualizingPanel> is virtualizing by using the <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A> attached property.  The cache is the amount of space above or below the viewport in which items are not virtualized.  Using a cache to avoid generating UI elements as they’re scrolled into view can improve performance. The cache is populated at a lower priority so that the application does not become unresponsive during the operation. The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A?displayProperty=nameWithType> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=nameWithType>.  
+2. You can specify the  size of the cache before and after the viewport when the <xref:System.Windows.Controls.VirtualizingPanel> is virtualizing by using the <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A> attached property.  The cache is the amount of space above or below the viewport in which items are not virtualized.  Using a cache to avoid generating UI elements as they’re scrolled into view can improve performance. The cache is populated at a lower priority so that the application does not become unresponsive during the operation. The <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A?displayProperty=nameWithType> property determines the unit of measurement that is used by <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=nameWithType>.  
   
 <a name="static_properties"></a>   
 ## Binding to static properties  
  You can use static properties as the source of a data binding. The data binding engine recognizes when the property's value changes if a static event is raised.  For example, if the class `SomeClass` defines a static property called `MyProperty`, `SomeClass` can define a static event that is raised when the value of `MyProperty` changes.  The static event can use either of the following signatures.  
   
--   `public static event EventHandler MyPropertyChanged;`  
+- `public static event EventHandler MyPropertyChanged;`  
   
--   `public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;`  
+- `public static event EventHandler<PropertyChangedEventArgs> StaticPropertyChanged;`  
   
  Note that in the first case, the class exposes a static event named *PropertyName*`Changed` that passes <xref:System.EventArgs> to the event handler.  In the second case, the class exposes a static event named `StaticPropertyChanged` that passes <xref:System.ComponentModel.PropertyChangedEventArgs> to the event handler. A class that implements the static property can choose to raise property-change notifications using either method.  
   
@@ -80,11 +80,11 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ## Binding to types that Implement ICustomTypeProvider  
  WPF supports data binding to objects that implement <xref:System.Reflection.ICustomTypeProvider>, also known as custom types.  You can use custom types in the following cases.  
   
-1.  As a <xref:System.Windows.PropertyPath> in a data binding. For example, the <xref:System.Windows.Data.Binding.Path%2A> property of a <xref:System.Windows.Data.Binding> can reference a property of a custom type.  
+1. As a <xref:System.Windows.PropertyPath> in a data binding. For example, the <xref:System.Windows.Data.Binding.Path%2A> property of a <xref:System.Windows.Data.Binding> can reference a property of a custom type.  
   
-2.  As the value of the <xref:System.Windows.DataTemplate.DataType%2A> property.  
+2. As the value of the <xref:System.Windows.DataTemplate.DataType%2A> property.  
   
-3.  As a type that determines the automatically generated columns in a <xref:System.Windows.Controls.DataGrid>.  
+3. As a type that determines the automatically generated columns in a <xref:System.Windows.Controls.DataGrid>.  
   
 <a name="binding_state"></a>   
 ## Retrieving data binding information from a binding expression  
@@ -120,4 +120,5 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
  WPF 4.5 supports markup extensions for events.  While WPF does not define a markup extension to be used for events, third parties are able to create a markup extension that can be used with events.  
   
 ## See also
+
 - [What's New in the .NET Framework](../../whats-new/index.md)

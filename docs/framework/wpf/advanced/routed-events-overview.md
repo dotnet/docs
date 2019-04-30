@@ -80,11 +80,11 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
 ## Routing Strategies  
  Routed events use one of three routing strategies:  
   
--   **Bubbling:** Event handlers on the event source are invoked. The routed event then routes to successive parent elements until reaching the element tree root. Most routed events use the bubbling routing strategy. Bubbling routed events are generally used to report input or state changes from distinct controls or other UI elements.  
+- **Bubbling:** Event handlers on the event source are invoked. The routed event then routes to successive parent elements until reaching the element tree root. Most routed events use the bubbling routing strategy. Bubbling routed events are generally used to report input or state changes from distinct controls or other UI elements.  
   
--   **Direct:** Only the source element itself is given the opportunity to invoke handlers in response. This is analogous to the "routing" that [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] uses for events. However, unlike a standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event, direct routed events support class handling (class handling is explained in an upcoming section) and can be used by <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger>.  
+- **Direct:** Only the source element itself is given the opportunity to invoke handlers in response. This is analogous to the "routing" that [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] uses for events. However, unlike a standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event, direct routed events support class handling (class handling is explained in an upcoming section) and can be used by <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger>.  
   
--   **Tunneling:** Initially, event handlers at the element tree root are invoked. The routed event then travels a route through successive child elements along the route, towards the node element that is the routed event source (the element that raised the routed event). Tunneling routed events are often used or handled as part of the compositing for a control, such that events from composite parts can be deliberately suppressed or replaced by events that are specific to the complete control. Input events provided in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] often come implemented as a tunneling/bubbling pair. Tunneling events are also sometimes referred to as Preview events, because of a naming convention that is used for the pairs.  
+- **Tunneling:** Initially, event handlers at the element tree root are invoked. The routed event then travels a route through successive child elements along the route, towards the node element that is the routed event source (the element that raised the routed event). Tunneling routed events are often used or handled as part of the compositing for a control, such that events from composite parts can be deliberately suppressed or replaced by events that are specific to the complete control. Input events provided in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] often come implemented as a tunneling/bubbling pair. Tunneling events are also sometimes referred to as Preview events, because of a naming convention that is used for the pairs.  
   
 <a name="why_use"></a>   
 ## Why Use Routed Events?  
@@ -98,9 +98,9 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  Other than the routing aspect, there are two other reasons that any given [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event might be implemented as a routed event instead of a standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event. If you are implementing your own events, you might also consider these principles:  
   
--   Certain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] styling and templating features such as <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger> require the referenced event to be a routed event. This is the event identifier scenario mentioned earlier.  
+- Certain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] styling and templating features such as <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger> require the referenced event to be a routed event. This is the event identifier scenario mentioned earlier.  
   
--   Routed events support a class handling mechanism whereby the class can specify static methods that have the opportunity to handle routed events before any registered instance handlers can access them. This is very useful in control design, because your class can enforce event-driven class behaviors that cannot be accidentally suppressed by handling an event on an instance.  
+- Routed events support a class handling mechanism whereby the class can specify static methods that have the opportunity to handle routed events before any registered instance handlers can access them. This is very useful in control design, because your class can enforce event-driven class behaviors that cannot be accidentally suppressed by handling an event on an instance.  
   
  Each of the above considerations is discussed in a separate section of this topic.  
   
@@ -141,21 +141,21 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  However, there is a "handledEventsToo" mechanism whereby listeners can still run handlers in response to routed events where <xref:System.Windows.RoutedEventArgs.Handled%2A> is `true` in the event data. In other words, the event route is not truly stopped by marking the event data as handled. You can only use the handledEventsToo mechanism in code, or in an <xref:System.Windows.EventSetter>:  
   
--   In code, instead of using a language-specific event syntax that works for general [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] events, call the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] method <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> to add your handler. Specify the value of `handledEventsToo` as `true`.  
+- In code, instead of using a language-specific event syntax that works for general [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] events, call the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] method <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> to add your handler. Specify the value of `handledEventsToo` as `true`.  
   
--   In an <xref:System.Windows.EventSetter>, set the <xref:System.Windows.EventSetter.HandledEventsToo%2A> attribute to be `true`.  
+- In an <xref:System.Windows.EventSetter>, set the <xref:System.Windows.EventSetter.HandledEventsToo%2A> attribute to be `true`.  
   
  In addition to the behavior that <xref:System.Windows.RoutedEventArgs.Handled%2A> state produces in routed events, the concept of <xref:System.Windows.RoutedEventArgs.Handled%2A> has implications for how you should design your application and write the event handler code. You can conceptualize <xref:System.Windows.RoutedEventArgs.Handled%2A> as being a simple protocol that is exposed by routed events. Exactly how you use this protocol is up to you, but the conceptual design for how the value of <xref:System.Windows.RoutedEventArgs.Handled%2A> is intended to be used is as follows:  
   
--   If a routed event is marked as handled, then it does not need to be handled again by other elements along that route.  
+- If a routed event is marked as handled, then it does not need to be handled again by other elements along that route.  
   
--   If a routed event is not marked as handled, then other listeners that were earlier along the route have chosen either not to register a handler, or the handlers that were registered chose not to manipulate the event data and set <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`. (Or, it is of course possible that the current listener is the first point in the route.) Handlers on the current listener now have three possible courses of action:  
+- If a routed event is not marked as handled, then other listeners that were earlier along the route have chosen either not to register a handler, or the handlers that were registered chose not to manipulate the event data and set <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`. (Or, it is of course possible that the current listener is the first point in the route.) Handlers on the current listener now have three possible courses of action:  
   
-    -   Take no action at all; the event remains unhandled, and the event routes to the next listener.  
+    - Take no action at all; the event remains unhandled, and the event routes to the next listener.  
   
-    -   Execute code in response to the event, but make the determination that the action taken was not substantial enough to warrant marking the event as handled. The event routes to the next listener.  
+    - Execute code in response to the event, but make the determination that the action taken was not substantial enough to warrant marking the event as handled. The event routes to the next listener.  
   
-    -   Execute code in response to the event. Mark the event as handled in the event data passed to the handler, because the action taken was deemed substantial enough to warrant marking as handled. The event still routes to the next listener, but with <xref:System.Windows.RoutedEventArgs.Handled%2A>=`true` in its event data, so only `handledEventsToo` listeners have the opportunity to invoke further handlers.  
+    - Execute code in response to the event. Mark the event as handled in the event data passed to the handler, because the action taken was deemed substantial enough to warrant marking as handled. The event still routes to the next listener, but with <xref:System.Windows.RoutedEventArgs.Handled%2A>=`true` in its event data, so only `handledEventsToo` listeners have the opportunity to invoke further handlers.  
   
  This conceptual design is reinforced by the routing behavior mentioned earlier: it is more difficult (although still possible in code or styles) to attach handlers for routed events that are invoked even if a previous handler along the route has already set <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`.  
   
@@ -198,17 +198,17 @@ Input Event Bubbling and Tunneling
   
  The order of event processing is as follows:  
   
-1.  `PreviewMouseDown` (tunnel) on root element.  
+1. `PreviewMouseDown` (tunnel) on root element.  
   
-2.  `PreviewMouseDown` (tunnel) on intermediate element #1.  
+2. `PreviewMouseDown` (tunnel) on intermediate element #1.  
   
-3.  `PreviewMouseDown` (tunnel) on source element #2.  
+3. `PreviewMouseDown` (tunnel) on source element #2.  
   
-4.  `MouseDown` (bubble) on source element #2.  
+4. `MouseDown` (bubble) on source element #2.  
   
-5.  `MouseDown` (bubble) on intermediate element #1.  
+5. `MouseDown` (bubble) on intermediate element #1.  
   
-6.  `MouseDown` (bubble) on root element.  
+6. `MouseDown` (bubble) on root element.  
   
  A routed event handler delegate provides references to two objects: the object that raised the event and the object where the handler was invoked. The object where the handler was invoked is the object reported by the `sender` parameter. The object where the event was first raised is reported by the <xref:System.Windows.RoutedEventArgs.Source%2A> property in the event data. A routed event can still be raised and handled by the same object, in which case `sender` and <xref:System.Windows.RoutedEventArgs.Source%2A> are identical (this is the case with Steps 3 and 4 in the event processing example list).  
   
@@ -239,6 +239,7 @@ Input Event Bubbling and Tunneling
  This topic mainly discusses routed events from the perspective of describing the basic concepts and offering guidance on how and when to respond to the routed events that are already present in the various base elements and controls. However, you can create your own routed event on your custom class along with all the necessary support, such as specialized event data classes and delegates. The routed event owner can be any class, but routed events must be raised by and handled by <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> derived classes in order to be useful. For more information about custom events, see [Create a Custom Routed Event](how-to-create-a-custom-routed-event.md).  
   
 ## See also
+
 - <xref:System.Windows.EventManager>
 - <xref:System.Windows.RoutedEvent>
 - <xref:System.Windows.RoutedEventArgs>

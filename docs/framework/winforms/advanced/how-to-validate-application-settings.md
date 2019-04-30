@@ -28,11 +28,11 @@ This topic demonstrates how to validate application settings before they are per
   
  An event handler generally performs one of the following actions when it detects an invalid value:  
   
--   Automatically supplies a value known to be correct, such as the default value.  
+- Automatically supplies a value known to be correct, such as the default value.  
   
--   Re-queries the user of server code for information.  
+- Re-queries the user of server code for information.  
   
--   For events raised before their associated actions, such as <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>, uses the <xref:System.ComponentModel.CancelEventArgs> argument to cancel the operation.  
+- For events raised before their associated actions, such as <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>, uses the <xref:System.ComponentModel.CancelEventArgs> argument to cancel the operation.  
   
  For more information about event handling, see [Event Handlers Overview](../event-handlers-overview-windows-forms.md).  
   
@@ -40,9 +40,9 @@ This topic demonstrates how to validate application settings before they are per
   
 ### To obtain the application settings object  
   
--   Obtain a reference to the application settings object (the wrapper instance) by completing one of the following bulleted items:  
+- Obtain a reference to the application settings object (the wrapper instance) by completing one of the following bulleted items:  
   
-    -   If you created your settings using the Visual Studio Application Settings dialog box in the **Property Editor**, you can retrieve the default settings object generated for your language through the following expression.  
+    - If you created your settings using the Visual Studio Application Settings dialog box in the **Property Editor**, you can retrieve the default settings object generated for your language through the following expression.  
   
         ```csharp  
         Configuration.Settings.Default   
@@ -54,11 +54,11 @@ This topic demonstrates how to validate application settings before they are per
   
          -or-  
   
-    -   If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](~/docs/visual-basic/language-reference/objects/my-settings-object.md).  
+    - If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](~/docs/visual-basic/language-reference/objects/my-settings-object.md).  
   
          -or-  
   
-    -   If you created your settings by deriving from <xref:System.Configuration.ApplicationSettingsBase> directly, you need to instantiate your class manually.  
+    - If you created your settings by deriving from <xref:System.Configuration.ApplicationSettingsBase> directly, you need to instantiate your class manually.  
   
         ```csharp  
         MyCustomSettings settings = new MyCustomSettings();  
@@ -72,7 +72,7 @@ This topic demonstrates how to validate application settings before they are per
   
 ### To validate Application Settings when a setting is changing  
   
-1.  If you are a C# developer, in your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event.  
+1. If you are a C# developer, in your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event.  
   
      -or-  
   
@@ -91,7 +91,7 @@ This topic demonstrates how to validate application settings before they are per
     End Sub   
     ```  
   
-2.  Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
+2. Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
   
     ```csharp  
     private void MyCustomSettings_SettingChanging(Object sender, SettingChangingEventArgs e)  
@@ -120,7 +120,7 @@ This topic demonstrates how to validate application settings before they are per
   
 ### To validate Application Settings when a Save occurs  
   
-1.  In your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event.  
+1. In your form or control's `Load` event, add an event handler for the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event.  
   
     ```csharp  
     public void Form1_Load(Object sender, EventArgs e)   
@@ -135,7 +135,7 @@ This topic demonstrates how to validate application settings before they are per
     End Sub  
     ```  
   
-2.  Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
+2. Define the event handler, and write the code inside of it to perform bounds checking on the birth date.  
   
     ```csharp  
     private void MyCustomSettings_SettingsSaving(Object sender, SettingsSavingEventArgs e)  
@@ -155,5 +155,6 @@ This topic demonstrates how to validate application settings before they are per
     ```  
   
 ## See also
+
 - [Creating Event Handlers in Windows Forms](../creating-event-handlers-in-windows-forms.md)
 - [How to: Create Application Settings](how-to-create-application-settings.md)

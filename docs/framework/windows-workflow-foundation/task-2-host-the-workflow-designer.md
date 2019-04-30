@@ -10,19 +10,19 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
   
 ### To host the workflow designer  
   
-1.  Open the HostingApplication project you created in [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md).  
+1. Open the HostingApplication project you created in [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md).  
   
-2.  Adjust the size of the window to make it easier to use the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, select **MainWindow** in the designer, press F4 to display the **Properties** window, and, in the **Layout** section there, set the **Width** to a value of 600 and the **Height** to a value of 350.  
+2. Adjust the size of the window to make it easier to use the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, select **MainWindow** in the designer, press F4 to display the **Properties** window, and, in the **Layout** section there, set the **Width** to a value of 600 and the **Height** to a value of 350.  
   
-3.  Set the grid name by selecting the **Grid** panel in the designer (click the box inside the **MainWindow**) and setting the **Name** property at the top of the **Properties** window to "grid1".  
+3. Set the grid name by selecting the **Grid** panel in the designer (click the box inside the **MainWindow**) and setting the **Name** property at the top of the **Properties** window to "grid1".  
   
-4.  In the **Properties** window, click the ellipsis (**…**) next to the `ColumnDefinitions` property to open the **Collection Editor** dialog box.  
+4. In the **Properties** window, click the ellipsis (**…**) next to the `ColumnDefinitions` property to open the **Collection Editor** dialog box.  
   
-5.  In the **Collection Editor** dialog box, click the **Add** button three times to insert three columns into the layout. The first column will contain the **Toolbox**, the second column will host the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)], and the third column will be used for the property inspector.  
+5. In the **Collection Editor** dialog box, click the **Add** button three times to insert three columns into the layout. The first column will contain the **Toolbox**, the second column will host the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)], and the third column will be used for the property inspector.  
   
-6.  Set the `Width` property of the middle column to the value "4*".  
+6. Set the `Width` property of the middle column to the value "4*".  
   
-7.  Click **OK** to save the changes. The following XAML is added to your MainWindow.xaml file:  
+7. Click **OK** to save the changes. The following XAML is added to your MainWindow.xaml file:  
   
     ```xml  
     <Grid Name="grid1">  
@@ -34,9 +34,9 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
     </Grid>  
     ```  
   
-8.  In **Solution Explorer**, right-click MainWindow.xaml and select **View Code**. Modify the code by following these steps:  
+8. In **Solution Explorer**, right-click MainWindow.xaml and select **View Code**. Modify the code by following these steps:  
   
-    1.  Add the following namespaces:  
+    1. Add the following namespaces:  
   
         ```csharp  
         using System.Activities;  
@@ -48,7 +48,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         using System.ComponentModel;  
         ```  
   
-    2.  To declare a private member field to hold an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, add the following code to the `MainWindow` class.  
+    2. To declare a private member field to hold an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, add the following code to the `MainWindow` class.  
   
         ```csharp  
         public partial class MainWindow : Window  
@@ -62,7 +62,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         }  
         ```  
   
-    3.  Add the following `AddDesigner` method to the `MainWindow` class. The implementation creates an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, adds a <xref:System.Activities.Statements.Sequence> activity to it, and places it in middle column of the grid1 **Grid**.  
+    3. Add the following `AddDesigner` method to the `MainWindow` class. The implementation creates an instance of the <xref:System.Activities.Presentation.WorkflowDesigner>, adds a <xref:System.Activities.Statements.Sequence> activity to it, and places it in middle column of the grid1 **Grid**.  
   
         ```csharp  
         private void AddDesigner()  
@@ -81,7 +81,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
         }  
         ```  
   
-    4.  Register the designer metadata to add designer support for all the  built-in activities. This enables you to drop activities from the toolbox onto the original <xref:System.Activities.Statements.Sequence> activity in the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, add the `RegisterMetadata` method to the `MainWindow` class.  
+    4. Register the designer metadata to add designer support for all the  built-in activities. This enables you to drop activities from the toolbox onto the original <xref:System.Activities.Statements.Sequence> activity in the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, add the `RegisterMetadata` method to the `MainWindow` class.  
   
         ```csharp  
         private void RegisterMetadata()  
@@ -93,7 +93,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
   
          For more information about registering activity designers, see [How to: Create a Custom Activity Designer](how-to-create-a-custom-activity-designer.md).  
   
-    5.  In the `MainWindow` class constructor, add calls to the methods declared previously to register the metadata for designer support and to create the <xref:System.Activities.Presentation.WorkflowDesigner>.  
+    5. In the `MainWindow` class constructor, add calls to the methods declared previously to register the metadata for designer support and to create the <xref:System.Activities.Presentation.WorkflowDesigner>.  
   
         ```csharp  
         public MainWindow()  
@@ -116,6 +116,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
 10. See [Task 3: Create the Toolbox and PropertyGrid Panes](task-3-create-the-toolbox-and-propertygrid-panes.md) to learn how to add **Toolbox** and **PropertyGrid** support to your rehosted workflow designer.  
   
 ## See also
+
 - [Rehosting the Workflow Designer](rehosting-the-workflow-designer.md)
 - [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md)
 - [Task 3: Create the Toolbox and PropertyGrid Panes](task-3-create-the-toolbox-and-propertygrid-panes.md)

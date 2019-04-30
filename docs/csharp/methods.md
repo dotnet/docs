@@ -57,7 +57,7 @@ Note that the `Motorcycle` class includes an overloaded method, `Drive`. Two met
 
 ## Method invocation
 
-Methods can be either *instance* or *static*. Invoking an instance method requires that you instantiate an object and call the method on that object; an instance method operates on that instance and its data. You invoke a static method by referencing the name of the type to which the method belongs; static methods operate do not operate on instance data. Attempting to call a static method through an object instance generates a compiler error.
+Methods can be either *instance* or *static*. Invoking an instance method requires that you instantiate an object and call the method on that object; an instance method operates on that instance and its data. You invoke a static method by referencing the name of the type to which the method belongs; static methods do not operate on instance data. Attempting to call a static method through an object instance generates a compiler error.
 
 Calling a method is like accessing a field. After the object name (if you are calling an instance method) or the type name (if you are calling a `static` method), add a period, the name of the method, and parentheses. Arguments are listed within the parentheses, and are separated by commas.
 
@@ -152,7 +152,7 @@ A method definition can specify that its parameters are required or that they ar
 The parameter's default value must be assigned by one of the following kinds of expressions:
 
 - A constant, such as a literal string or number.
-- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit default constructor, which is not an actual member of the type.
+- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
 - An expression of the form `default(ValType)`, where `ValType` is a value type.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.

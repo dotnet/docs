@@ -20,11 +20,11 @@ The [ColorDialog](colordialog-component-windows-forms.md) component displays a p
   
 ### To choose a color using the ColorDialog component  
   
-1.  Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
+1. Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
   
-2.  Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
+2. Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
   
-3.  Use the <xref:System.Windows.Forms.ColorDialog.Color%2A> property of the <xref:System.Windows.Forms.ColorDialog> component to set the chosen color.  
+3. Use the <xref:System.Windows.Forms.ColorDialog.Color%2A> property of the <xref:System.Windows.Forms.ColorDialog> component to set the chosen color.  
   
      In the example below, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens a <xref:System.Windows.Forms.ColorDialog> component. When a color is chosen and the user clicks **OK**, the <xref:System.Windows.Forms.Button> control's background color is set to the chosen color. The example assumes your form has a <xref:System.Windows.Forms.Button> control and a <xref:System.Windows.Forms.ColorDialog> component.  
   
@@ -71,5 +71,6 @@ The [ColorDialog](colordialog-component-windows-forms.md) component displays a p
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ColorDialog>
 - [ColorDialog Component](colordialog-component-windows-forms.md)

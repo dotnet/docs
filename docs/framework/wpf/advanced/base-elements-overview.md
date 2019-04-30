@@ -7,8 +7,7 @@ ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72
 ---
 # Base Elements Overview
 A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] are derived from four classes which are commonly referred to in the [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] documentation as the base element classes. These classes are <xref:System.Windows.UIElement>, <xref:System.Windows.FrameworkElement>, <xref:System.Windows.ContentElement>, and <xref:System.Windows.FrameworkContentElement>. The <xref:System.Windows.DependencyObject> class is also related, because it is a common base class of both <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>  
- 
-  
+
 <a name="base_apis"></a>   
 ## Base Element APIs in WPF Classes  
  Both <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> are derived from <xref:System.Windows.DependencyObject>, through somewhat different pathways. The split at this level deals with how a <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> are used in a user interface and what purpose they serve in an application. <xref:System.Windows.UIElement> also has <xref:System.Windows.Media.Visual> in its class hierarchy, which is a class that exposes the lower-level graphics support underlying the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. <xref:System.Windows.Media.Visual> provides a rendering framework by defining independent rectangular screen regions. In practice, <xref:System.Windows.UIElement> is for elements that will support a larger object model, are intended to render and layout into regions that can be described as rectangular screen regions, and where the content model is deliberately more open, to allow different combinations of elements. <xref:System.Windows.ContentElement> does not derive from <xref:System.Windows.Media.Visual>; its model is that a <xref:System.Windows.ContentElement> would be consumed by something else, such as a reader or viewer that would then interpret the elements and produce the complete <xref:System.Windows.Media.Visual> for [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] to consume. Certain <xref:System.Windows.UIElement> classes are intended to be content hosts: they provide the hosting and rendering for one or more <xref:System.Windows.ContentElement> classes (<xref:System.Windows.Controls.DocumentViewer> is an example of such a class). <xref:System.Windows.ContentElement> is used as base class for elements with somewhat smaller object models and that more address the text, information, or document content that might be hosted within a <xref:System.Windows.UIElement>.  
@@ -26,49 +25,49 @@ A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../include
   
  If you create a class that derives from <xref:System.Windows.DependencyObject>, you inherit the following functionality:  
   
--   <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> support, and general property system support.  
+- <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> support, and general property system support.  
   
--   Ability to use dependency properties and attached properties that are implemented as dependency properties.  
+- Ability to use dependency properties and attached properties that are implemented as dependency properties.  
   
  If you create a class that derives from <xref:System.Windows.UIElement>, you inherit the following functionality in addition to that provided by <xref:System.Windows.DependencyObject>:  
   
--   Basic support for animated property values. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).  
+- Basic support for animated property values. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
--   Basic input event support, and commanding support. For more information, see [Input Overview](input-overview.md) and [Commanding Overview](commanding-overview.md).  
+- Basic input event support, and commanding support. For more information, see [Input Overview](input-overview.md) and [Commanding Overview](commanding-overview.md).  
   
--   Virtual methods that can be overridden to provide information to a layout system.  
+- Virtual methods that can be overridden to provide information to a layout system.  
   
  If you create a class that derives from <xref:System.Windows.FrameworkElement>, you inherit the following functionality in addition to that provided by <xref:System.Windows.UIElement>:  
   
--   Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
+- Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
   
--   Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
+- Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
   
--   Support for dynamic resource references. For more information, see [XAML Resources](xaml-resources.md).  
+- Support for dynamic resource references. For more information, see [XAML Resources](xaml-resources.md).  
   
--   Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services such as data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](framework-property-metadata.md).  
+- Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services such as data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](framework-property-metadata.md).  
   
--   The concept of the logical tree. For more information, see [Trees in WPF](trees-in-wpf.md).  
+- The concept of the logical tree. For more information, see [Trees in WPF](trees-in-wpf.md).  
   
--   Support for the practical WPF framework-level implementation of the layout system, including an <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> override that can detect changes to properties that influence layout.  
+- Support for the practical WPF framework-level implementation of the layout system, including an <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> override that can detect changes to properties that influence layout.  
   
  If you create a class that derives from <xref:System.Windows.ContentElement>, you inherit the following functionality in addition to that provided by <xref:System.Windows.DependencyObject>:  
   
--   Support for animations. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).  
+- Support for animations. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
--   Basic input event support, and commanding support. For more information, see [Input Overview](input-overview.md) and [Commanding Overview](commanding-overview.md).  
+- Basic input event support, and commanding support. For more information, see [Input Overview](input-overview.md) and [Commanding Overview](commanding-overview.md).  
   
  If you create a class that derives from <xref:System.Windows.FrameworkContentElement>, you get the following functionality in addition to that provided by <xref:System.Windows.ContentElement>:  
   
--   Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Animation Overview](../graphics-multimedia/animation-overview.md).  
+- Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
--   Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
+- Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
   
--   Support for dynamic resource references. For more information, see [XAML Resources](xaml-resources.md).  
+- Support for dynamic resource references. For more information, see [XAML Resources](xaml-resources.md).  
   
--   Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services like data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](framework-property-metadata.md).  
+- Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services like data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](framework-property-metadata.md).  
   
--   You do not inherit access to layout system modifications (such as <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>). Layout system implementations are only available on <xref:System.Windows.FrameworkElement>. However, you inherit an <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> override that can detect changes to properties that influence layout and report these to any content hosts.  
+- You do not inherit access to layout system modifications (such as <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>). Layout system implementations are only available on <xref:System.Windows.FrameworkElement>. However, you inherit an <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> override that can detect changes to properties that influence layout and report these to any content hosts.  
   
  Content models are documented for a variety of classes. The content model for a class is one possible factor you should consider if you want to find an appropriate class to derive from. For more information, see [WPF Content Model](../controls/wpf-content-model.md).  
   
@@ -92,6 +91,7 @@ A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../include
  <xref:System.Windows.Controls.Control> is the intended base class for the type of object that is variously termed a control or component, depending on the technology. In general, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control classes are classes that either directly represent a UI control or participate closely in control composition. The primary functionality that <xref:System.Windows.Controls.Control> enables is control templating.  
   
 ## See also
+
 - <xref:System.Windows.Controls.Control>
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Control Authoring Overview](../controls/control-authoring-overview.md)

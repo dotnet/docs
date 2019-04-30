@@ -12,19 +12,19 @@ The <xref:System.Windows.SystemColors> class provides access to system brushes a
   
  You can use system brushes as either a static or a dynamic resource. Use a dynamic resource if you want the brush to update automatically if the user changes the system brush as the application is running; otherwise, use a static resource. The SystemColors class contains a variety of static properties that follow a strict naming convention:  
   
--   *\<SystemColor>*Brush  
+- *\<SystemColor>*Brush  
   
      Gets a static reference to a <xref:System.Windows.Media.SolidColorBrush> of the specified system color.  
   
--   *\<SystemColor>*BrushKey  
+- *\<SystemColor>*BrushKey  
   
      Gets a dynamic reference to a <xref:System.Windows.Media.SolidColorBrush> of the specified system color.  
   
--   *\<SystemColor>*Color  
+- *\<SystemColor>*Color  
   
      Gets a static reference to a <xref:System.Windows.Media.Color> structure of the specified system color.  
   
--   *\<SystemColor>*ColorKey  
+- *\<SystemColor>*ColorKey  
   
      Gets a dynamic reference to the <xref:System.Windows.Media.Color> structure of the specified system color.  
   
@@ -42,5 +42,6 @@ The <xref:System.Windows.SystemColors> class provides access to system brushes a
  For an example showing how to use a system color in a gradient, see [Use System Colors in a Gradient](how-to-use-system-colors-in-a-gradient.md).  
   
 ## See also
+
 - [Use System Colors in a Gradient](how-to-use-system-colors-in-a-gradient.md)
 - [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)

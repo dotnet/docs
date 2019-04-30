@@ -16,19 +16,19 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] provides a new approach to side-by-side hosting that ensures the following:  
   
--   Installing a new version of the .NET Framework has no effect on existing applications.  
+- Installing a new version of the .NET Framework has no effect on existing applications.  
   
--   Applications run against the version of the .NET Framework that they were built with. They do not use the new version of the .NET Framework unless expressly directed to do so. However, it is easier for applications to transition to using a new version of the .NET Framework.  
+- Applications run against the version of the .NET Framework that they were built with. They do not use the new version of the .NET Framework unless expressly directed to do so. However, it is easier for applications to transition to using a new version of the .NET Framework.  
   
 ## Effects on Users and Developers  
   
--   **End users and system administrators**. These users can now have greater confidence that when they install a new version of the runtime, either independently or with an application, it will have no impact on their computers. Existing applications will continue to run as they did before.  
+- **End users and system administrators**. These users can now have greater confidence that when they install a new version of the runtime, either independently or with an application, it will have no impact on their computers. Existing applications will continue to run as they did before.  
   
--   **Application developers**. Side-by-side hosting has almost no effect on application developers. By default, applications always run against the version of the .NET Framework they were built on; this has not changed. However, developers can override this behavior and direct the application to run under a newer version of the .NET Framework (see [scenario 2](#scenarios)).  
+- **Application developers**. Side-by-side hosting has almost no effect on application developers. By default, applications always run against the version of the .NET Framework they were built on; this has not changed. However, developers can override this behavior and direct the application to run under a newer version of the .NET Framework (see [scenario 2](#scenarios)).  
   
--   **Library developers and consumers**. Side-by-side hosting does not solve the compatibility problems that library developers face. A library that is directly loaded by an application -- either through a direct reference or through an <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> call -- continues to use the runtime of the <xref:System.AppDomain> it is loaded into. You should test your libraries against all versions of the .NET Framework that you want to support. If an application is compiled using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime but includes a library that was built using an earlier runtime, that library will use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime as well. However, if you have an application that was built using an earlier runtime and a library that was built using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must force your application to also use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] (see [scenario 3](#scenarios)).  
+- **Library developers and consumers**. Side-by-side hosting does not solve the compatibility problems that library developers face. A library that is directly loaded by an application -- either through a direct reference or through an <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> call -- continues to use the runtime of the <xref:System.AppDomain> it is loaded into. You should test your libraries against all versions of the .NET Framework that you want to support. If an application is compiled using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime but includes a library that was built using an earlier runtime, that library will use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] runtime as well. However, if you have an application that was built using an earlier runtime and a library that was built using the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], you must force your application to also use the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] (see [scenario 3](#scenarios)).  
   
--   **Managed COM component developers**. In the past, managed COM components automatically ran using the latest version of the runtime installed on the computer. You can now execute COM components against the version of the runtime they were built with.  
+- **Managed COM component developers**. In the past, managed COM components automatically ran using the latest version of the runtime installed on the computer. You can now execute COM components against the version of the runtime they were built with.  
   
      As shown by the following table, components that were built with the .NET Framework version 1.1 can run side by side with version 4 components, but they cannot run with version 2.0, 3.0, or 3.5 components, because side-by-side hosting is not available for those versions.  
   
@@ -44,13 +44,13 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
 <a name="scenarios"></a>   
 ## Common Side-by-Side Hosting Scenarios  
   
--   **Scenario 1:** Native application that uses COM components built with earlier versions of the .NET Framework.  
+- **Scenario 1:** Native application that uses COM components built with earlier versions of the .NET Framework.  
   
      .NET Framework versions installed: The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] and all other versions of the .NET Framework used by the COM components.  
   
      What to do: In this scenario, do nothing. The COM components will run with the version of the .NET Framework they were registered with.  
   
--   **Scenario 2**: Managed application built with the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that you would prefer to run with the [!INCLUDE[dnprdnext](../../../includes/dnprdnext-md.md)], but are willing to run on the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] if version 2.0 is not present.  
+- **Scenario 2**: Managed application built with the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that you would prefer to run with the [!INCLUDE[dnprdnext](../../../includes/dnprdnext-md.md)], but are willing to run on the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] if version 2.0 is not present.  
   
      .NET Framework versions installed: An earlier version of the .NET Framework and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   
@@ -65,7 +65,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
     </configuration>  
     ```  
   
--   **Scenario 3:** Native application that uses COM components built with earlier versions of the .NET Framework that you want to run with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
+- **Scenario 3:** Native application that uses COM components built with earlier versions of the .NET Framework that you want to run with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   
      .NET Framework versions installed: The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   
@@ -168,5 +168,6 @@ int _tmain(int argc, _TCHAR* argv[])
 ```  
   
 ## See also
+
 - [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)
 - [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

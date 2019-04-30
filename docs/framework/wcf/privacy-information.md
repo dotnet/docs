@@ -32,9 +32,9 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  Authentication is performed by passing credentials between the clients and services. Authentication can be either through transport-level security or through SOAP message-level security, as follows:  
   
--   In SOAP message security, authentication is performed through credentials like username/passwords, X.509 certificates, Kerberos tickets, and SAML tokens, all of which might contain personal information, depending on the issuer.  
+- In SOAP message security, authentication is performed through credentials like username/passwords, X.509 certificates, Kerberos tickets, and SAML tokens, all of which might contain personal information, depending on the issuer.  
   
--   Using transport security, authentication is done through traditional transport authentication mechanisms like HTTP authentication schemes (Basic, Digest, Negotiate, Integrated Windows Authorization, NTLM, None, and Anonymous), and form authentication.  
+- Using transport security, authentication is done through traditional transport authentication mechanisms like HTTP authentication schemes (Basic, Digest, Negotiate, Integrated Windows Authorization, NTLM, None, and Anonymous), and form authentication.  
   
  Authentication can result in a secure session established between the communicating endpoints. The session is identified by a GUID that lasts the lifetime of the security session. The following table shows what is kept and where.  
   
@@ -396,5 +396,6 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The Web Services Description Language (WSDL) contains a definition of the port. Each port has an endpoint address and a binding that represents the services used by the application. Exposing WSDL can be turned off using configuration. No information is retained on the machine.  
   
 ## See also
+
 - [Windows Communication Foundation](index.md)
 - [Security](../../../docs/framework/wcf/feature-details/security.md)

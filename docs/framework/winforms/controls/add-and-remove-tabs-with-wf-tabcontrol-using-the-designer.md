@@ -19,13 +19,14 @@ When you place a <xref:System.Windows.Forms.TabControl> control on your form, it
   
 ### To add or remove a tab using the designer  
   
--   On the control's smart tag, click **Add Tab** or **Remove Tab**  
+- On the control's smart tag, click **Add Tab** or **Remove Tab**  
   
      -or-  
   
      In the **Properties** window, click the **Ellipsis** button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/add-and-remove-tabs-with-wf-tabcontrol-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.TabControl.TabPages%2A> property to open the **TabPage Collection Editor**. Click the **Add** or **Remove** button.  
   
 ## See also
+
 - [TabControl Control](tabcontrol-control-windows-forms.md)
 - [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)
 - [How to: Add a Control to a Tab Page](how-to-add-a-control-to-a-tab-page.md)

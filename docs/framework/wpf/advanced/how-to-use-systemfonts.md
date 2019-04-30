@@ -31,6 +31,7 @@ This example shows how to use the static resources of the <xref:System.Windows.S
  [!code-vb[SystemRes_snip#FontResourcesCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SystemRes_snip/VisualBasic/Pane1.xaml.vb#fontresourcescode)]  
   
 ## See also
+
 - <xref:System.Windows.SystemFonts>
 - [Paint an Area with a System Brush](../graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
 - [Use SystemParameters](how-to-use-systemparameters.md)

@@ -44,6 +44,4 @@ A subclass of "ICorDebugValue" that represents an object that has been collected
   
 ## See also
 
-
-
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

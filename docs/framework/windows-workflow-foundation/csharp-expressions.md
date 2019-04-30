@@ -8,19 +8,19 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressio
 
 ## Using C# expressions in workflows
 
--   [Using C# expressions in the Workflow Designer](csharp-expressions.md#WFDesigner)
+- [Using C# expressions in the Workflow Designer](csharp-expressions.md#WFDesigner)
 
-    -   [Backwards compatibility](csharp-expressions.md#BackwardCompat)
+    - [Backwards compatibility](csharp-expressions.md#BackwardCompat)
 
--   [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows)
+- [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows)
 
--   [Using C# expressions in XAML workflows](csharp-expressions.md#XamlWorkflows)
+- [Using C# expressions in XAML workflows](csharp-expressions.md#XamlWorkflows)
 
-    -   [Compiled Xaml](csharp-expressions.md#CompiledXaml)
+    - [Compiled Xaml](csharp-expressions.md#CompiledXaml)
 
-    -   [Loose Xaml](csharp-expressions.md#LooseXaml)
+    - [Loose Xaml](csharp-expressions.md#LooseXaml)
 
--   [Using C# expressions in XAMLX workflow services](csharp-expressions.md#WFServices)
+- [Using C# expressions in XAMLX workflow services](csharp-expressions.md#WFServices)
 
 ### <a name="WFDesigner"></a> Using C# expressions in the Workflow Designer
  Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], C# expressions are supported in Windows Workflow Foundation (WF). C# workflow projects created in Visual Studio 2012 that target [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] use C# expressions, while Visual Basic workflow projects use Visual Basic expressions. To specify the desired C# expression, type it into the box labeled **Enter a C# expression**. This label is displayed in the properties window when the activity is selected in the designer, or on the activity in the workflow designer. In the following example, two `WriteLine` activities are contained within a `Sequence` inside a `NoPersistScope`.
@@ -170,22 +170,22 @@ static void CompileExpressions(DynamicActivity dynamicActivity)
 
  There are several differences in the `CompileExpressions` overload that compiles the C# expressions in a dynamic activity.
 
--   The parameter to `CompileExpressions` is a `DynamicActivity`.
+- The parameter to `CompileExpressions` is a `DynamicActivity`.
 
--   The type name and namespace are retrieved using the `DynamicActivity.Name` property.
+- The type name and namespace are retrieved using the `DynamicActivity.Name` property.
 
--   `TextExpressionCompilerSettings.ForImplementation` is set to `true`.
+- `TextExpressionCompilerSettings.ForImplementation` is set to `true`.
 
--   `CompiledExpressionInvoker.SetCompiledExpressionRootForImplementation` is called instead of `CompiledExpressionInvoker.SetCompiledExpressionRoot`.
+- `CompiledExpressionInvoker.SetCompiledExpressionRootForImplementation` is called instead of `CompiledExpressionInvoker.SetCompiledExpressionRoot`.
 
  For more information about working with expressions in code, see [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md).
 
 ### <a name="XamlWorkflows"></a> Using C# expressions in XAML workflows
  C# expressions are supported in XAML workflows. Compiled XAML workflows are compiled into a type, and loose XAML workflows are loaded by the runtime and compiled into an activity tree when the workflow is executed.
 
--   [Compiled Xaml](csharp-expressions.md#CompiledXaml)
+- [Compiled Xaml](csharp-expressions.md#CompiledXaml)
 
--   [Loose Xaml](csharp-expressions.md#LooseXaml)
+- [Loose Xaml](csharp-expressions.md#LooseXaml)
 
 #### <a name="CompiledXaml"></a> Compiled Xaml
  C# expressions are supported in compiled XAML workflows that are compiled to a type as part of a C# workflow project that targets [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]. Compiled XAML is the default type of workflow authoring in Visual Studio, and C# workflow projects created in Visual Studio that target [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] use C# expressions.

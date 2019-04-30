@@ -16,13 +16,13 @@ Rendering refers to the process of creating a visual representation on a user's 
   
  The following elements are involved in control rendering:  
   
--   The drawing functionality provided by the base class <xref:System.Windows.Forms.Control?displayProperty=nameWithType>.  
+- The drawing functionality provided by the base class <xref:System.Windows.Forms.Control?displayProperty=nameWithType>.  
   
--   The essential elements of the [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] graphics library.  
+- The essential elements of the [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] graphics library.  
   
--   The geometry of the drawing region.  
+- The geometry of the drawing region.  
   
--   The procedure for freeing graphics resources.  
+- The procedure for freeing graphics resources.  
   
 ## Drawing Functionality Provided by Control  
  The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET Framework, see [Handling and Raising Events](../../../standard/events/index.md).  
@@ -112,4 +112,5 @@ protected virtual void OnPaintBackground(PaintEventArgs pevent);
  [!code-vb[System.Windows.Forms.FlashTrackBar#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/FlashTrackBar.vb#3)]  
   
 ## See also
+
 - [How to: Create a Windows Forms Control That Shows Progress](how-to-create-a-windows-forms-control-that-shows-progress.md)

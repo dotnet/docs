@@ -42,21 +42,21 @@ From element [ As type ] In collection [ _ ]
   
  Each `From` clause can be followed by any combination of additional query clauses to refine the query. You can refine the query in the following ways:  
   
--   Combine multiple collections implicitly by using the `From` and `Select` clauses, or explicitly by using the `Join` or `Group Join` clauses.  
+- Combine multiple collections implicitly by using the `From` and `Select` clauses, or explicitly by using the `Join` or `Group Join` clauses.  
   
--   Use the `Where` clause to filter the query result.  
+- Use the `Where` clause to filter the query result.  
   
--   Sort the result by using the `Order By` clause.  
+- Sort the result by using the `Order By` clause.  
   
--   Group similar results together by using the `Group By` clause.  
+- Group similar results together by using the `Group By` clause.  
   
--   Use the `Aggregate` clause to identify aggregate functions to evaluate for the whole query result.  
+- Use the `Aggregate` clause to identify aggregate functions to evaluate for the whole query result.  
   
--   Use the `Let` clause to introduce an iteration variable whose value is determined by an expression instead of a collection.  
+- Use the `Let` clause to introduce an iteration variable whose value is determined by an expression instead of a collection.  
   
--   Use the `Distinct` clause to ignore duplicate query results.  
+- Use the `Distinct` clause to ignore duplicate query results.  
   
--   Identify parts of the result to return by using the `Skip`, `Take`, `Skip While`, and `Take While` clauses.  
+- Identify parts of the result to return by using the `Skip`, `Take`, `Skip While`, and `Take While` clauses.  
   
 ## Example  
  The following query expression uses a `From` clause to declare a range variable `cust` for each `Customer` object in the `customers` collection. The `Where` clause uses the range variable to restrict the output to customers from the specified region. The `For Each` loop displays the company name for each customer in the query result.  
@@ -64,6 +64,7 @@ From element [ As type ] In collection [ _ ]
  [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  
   
 ## See also
+
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

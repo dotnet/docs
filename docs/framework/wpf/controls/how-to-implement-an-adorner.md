@@ -24,4 +24,5 @@ This example shows a minimal adorner implementation.
  [!code-vb[Adorners_SimpleCircleAdorner#_SimpleCircleAdornerBody](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_simplecircleadornerbody)]  
   
 ## See also
+
 - [Adorners Overview](adorners-overview.md)

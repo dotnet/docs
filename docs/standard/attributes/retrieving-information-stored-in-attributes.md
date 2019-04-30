@@ -22,11 +22,11 @@ Retrieving a custom attribute is a simple process. First, declare an instance of
   
  This section describes the following ways to retrieve attributes:  
   
--   [Retrieving a single instance of an attribute](#cpconretrievingsingleinstanceofattribute)  
+- [Retrieving a single instance of an attribute](#cpconretrievingsingleinstanceofattribute)  
   
--   [Retrieving multiple instances of an attribute applied to the same scope](#cpconretrievingmultipleinstancesofattributeappliedtosamescope)  
+- [Retrieving multiple instances of an attribute applied to the same scope](#cpconretrievingmultipleinstancesofattributeappliedtosamescope)  
   
--   [Retrieving multiple instances of an attribute applied to different scopes](#cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes)  
+- [Retrieving multiple instances of an attribute applied to different scopes](#cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes)  
   
 <a name="cpconretrievingsingleinstanceofattribute"></a>   
 ## Retrieving a Single Instance of an Attribute  

@@ -46,9 +46,9 @@ Defines and references keys for resources that are loaded from external assembli
 ## Remarks  
  As seen in the usages above, a {`ComponentResourceKey`} markup extension usage is found in two places:  
   
--   The definition of a key within a theme resource dictionary, as provided by a control author.  
+- The definition of a key within a theme resource dictionary, as provided by a control author.  
   
--   Accessing a theme resource from the assembly, when you are retemplating the control but want to use property values that come from resources provided by the control's themes.  
+- Accessing a theme resource from the assembly, when you are retemplating the control but want to use property values that come from resources provided by the control's themes.  
   
  For referencing component resources that come from themes, it is generally recommended that you use `{DynamicResource}` rather than `{StaticResource}`. This is shown in the usages. `{DynamicResource}` is recommended because the theme itself can be changed by the user. If you want the component resource that most closely matches the control author's intent for supporting a theme, you should enable your component resource reference to be dynamic also.  
   
@@ -69,6 +69,7 @@ Defines and references keys for resources that are loaded from external assembli
  `ComponentResourceKey` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   
 ## See also
+
 - <xref:System.Windows.ComponentResourceKey>
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Authoring Overview](../controls/control-authoring-overview.md)

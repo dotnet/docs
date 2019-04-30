@@ -9,9 +9,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 ---
 # GridView Overview
 <xref:System.Windows.Controls.GridView> view mode is one of the view modes for a <xref:System.Windows.Controls.ListView> control. The <xref:System.Windows.Controls.GridView> class and its supporting classes enable you and your users to view item collections in a table that typically uses buttons as interactive column headers. This topic introduces the <xref:System.Windows.Controls.GridView> class and outlines its use.  
-  
-  
-  
+
 <a name="DefiningaListViewthatusesGridViewView"></a>   
 ## What Is a GridView View?  
  The <xref:System.Windows.Controls.GridView> view mode displays a list of data items by binding data fields to columns and by displaying a column header to identify the field. The default <xref:System.Windows.Controls.GridView> style implements buttons as column headers. By using buttons for column headers, you can implement important user interaction capabilities; for example, users can click the column header to sort <xref:System.Windows.Controls.GridView> data according to the contents of a specific column.  
@@ -20,10 +18,8 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 >  The button controls that <xref:System.Windows.Controls.GridView> uses for column headers are derived from <xref:System.Windows.Controls.Primitives.ButtonBase>.  
   
  The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.  
-  
- **GridView view of ListView content**  
-  
- ![Styled ListView](./media/styledlistview.PNG "StyledListView")  
+    
+ ![Screenshot that shows GridView view of ListView content.](./media/gridview-overview/styled-listview-content.png)  
   
  <xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.  
   
@@ -31,11 +27,9 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
  [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
   
- The following illustration shows the table that the previous example creates.  
-  
- **GridView that displays data from an ItemsSource**  
-  
- ![ListView with GridView output](./media/listviewgridview.JPG "ListViewGridView")  
+ The following illustration shows the table that the previous example creates. The GridView control displays data from an ItemsSource object:
+    
+ ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   
 <a name="GridViewLayoutandStyle"></a>   
 ## GridView Layout and Style  
@@ -73,30 +67,30 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
  The following list discusses in more detail the capabilities of using <xref:System.Windows.Controls.GridView> for user interaction:  
   
--   **Reorder columns by using the drag-and-drop method.**  
+- **Reorder columns by using the drag-and-drop method.**  
   
      Users can reorder columns in a <xref:System.Windows.Controls.GridView> by pressing the left mouse button while it is over a column header and then dragging that column to a new position. While the user drags the column header, a floating version of the header is displayed as well as a solid black line that shows where to insert the column.  
   
      If you want to modify the default style for the floating version of a header, specify a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.GridViewColumnHeader> type that is triggered when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole.Floating>. For more information, see [Create a Style for a Dragged GridView Column Header](how-to-create-a-style-for-a-dragged-gridview-column-header.md).  
   
--   **Resize a column to its content.**  
+- **Resize a column to its content.**  
   
      Users can double-click the gripper to the right of a column header in order to resize a column to fit its content.  
   
     > [!NOTE]
     >  You can set the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property to `Double.NaN` to produce the same effect.  
   
--   **Select row items.**  
+- **Select row items.**  
   
      Users can select one or more items in a <xref:System.Windows.Controls.GridView>.  
   
      If you want to change the <xref:System.Windows.Style> of a selected item, see [Use Triggers to Style Selected Items in a ListView](how-to-use-triggers-to-style-selected-items-in-a-listview.md).  
   
--   **Scroll to view content that is not initially visible on the screen.**  
+- **Scroll to view content that is not initially visible on the screen.**  
   
      If the size of the <xref:System.Windows.Controls.GridView> is not large enough to display all the items, users can scroll horizontally or vertically by using scrollbars, which are provided by a <xref:System.Windows.Controls.ScrollViewer> control. A <xref:System.Windows.Controls.Primitives.ScrollBar> is hidden if all the content is visible in a specific direction. Column headers do not scroll with a vertical scroll bar, but do scroll horizontally.  
   
--   **Interact with columns by clicking the column header buttons.**  
+- **Interact with columns by clicking the column header buttons.**  
   
      When users click a column header button, they can sort the data that is displayed in the column if you have provided a sorting algorithm.  
   
@@ -110,19 +104,20 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 ## GridView Supporting Classes  
  The following classes support the <xref:System.Windows.Controls.GridView> view mode.  
   
--   <xref:System.Windows.Controls.GridViewColumn>  
+- <xref:System.Windows.Controls.GridViewColumn>  
   
--   <xref:System.Windows.Controls.GridViewColumnHeader>  
+- <xref:System.Windows.Controls.GridViewColumnHeader>  
   
--   <xref:System.Windows.Controls.GridViewRowPresenter>  
+- <xref:System.Windows.Controls.GridViewRowPresenter>  
   
--   <xref:System.Windows.Controls.GridViewHeaderRowPresenter>  
+- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>  
   
--   <xref:System.Windows.Controls.GridViewColumnCollection>  
+- <xref:System.Windows.Controls.GridViewColumnCollection>  
   
--   <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
+- <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
   
 ## See also
+
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.ListViewItem>
 - <xref:System.Windows.Controls.GridViewColumn>

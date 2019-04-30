@@ -27,9 +27,9 @@ ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
   
  The control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree consists of:  
   
--   Zero to many items within the container (items can be based on the Tree Item, Data Item, or other control type).  
+- Zero to many items within the container (items can be based on the Tree Item, Data Item, or other control type).  
   
--   Zero, one or two scroll bars.  
+- Zero, one or two scroll bars.  
   
  The content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree consists of zero or many items within the container (items can be based on the Tree Item, Data Item, or other control type).  
   
@@ -81,6 +81,7 @@ ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.Tree>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

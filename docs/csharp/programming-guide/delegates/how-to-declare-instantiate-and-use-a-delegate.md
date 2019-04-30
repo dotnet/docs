@@ -36,7 +36,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
 ## Robust Programming  
   
--   Declaring a delegate.  
+- Declaring a delegate.  
   
      The following statement declares a new delegate type.  
   
@@ -44,7 +44,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
      Each delegate type describes the number and types of the arguments, and the type of the return value of methods that it can encapsulate. Whenever a new set of argument types or return value type is needed, a new delegate type must be declared.  
   
--   Instantiating a delegate.  
+- Instantiating a delegate.  
   
      After a delegate type has been declared, a delegate object must be created and associated with a particular method. In the previous example, you do this by passing the `PrintTitle` method to the `ProcessPaperbackBooks` method as in the following example:  
   
@@ -58,7 +58,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
      After a delegate is created, the method it is associated with never changes; delegate objects are immutable.  
   
--   Calling a delegate.  
+- Calling a delegate.  
   
      After a delegate object is created, the delegate object is typically passed to other code that will call the delegate. A delegate object is called by using the name of the delegate object, followed by the parenthesized arguments to be passed to the delegate. Following is an example of a delegate call:  
   

@@ -53,31 +53,31 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 ## Rules  
   
--   **Multiple Variables.** You can resize several array variables in the same declaration statement and specify the `name` and `boundlist` parts for each variable. Multiple variables are separated by commas.  
+- **Multiple Variables.** You can resize several array variables in the same declaration statement and specify the `name` and `boundlist` parts for each variable. Multiple variables are separated by commas.  
   
--   **Array Bounds.** Each entry in `boundlist` can specify the lower and upper bounds of that dimension. The lower bound is always 0 (zero). The upper bound is the highest possible index value for that dimension, not the length of the dimension (which is the upper bound plus one). The index for each dimension can vary from 0 through its upper bound value.  
+- **Array Bounds.** Each entry in `boundlist` can specify the lower and upper bounds of that dimension. The lower bound is always 0 (zero). The upper bound is the highest possible index value for that dimension, not the length of the dimension (which is the upper bound plus one). The index for each dimension can vary from 0 through its upper bound value.  
   
      The number of dimensions in `boundlist` must match the original number of dimensions (rank) of the array.  
   
--   **Data Types.** The `ReDim` statement cannot change the data type of an array variable or its elements.  
+- **Data Types.** The `ReDim` statement cannot change the data type of an array variable or its elements.  
   
--   **Initialization.** The `ReDim` statement cannot provide new initialization values for the array elements.  
+- **Initialization.** The `ReDim` statement cannot provide new initialization values for the array elements.  
   
--   **Rank.** The `ReDim` statement cannot change the rank (the number of dimensions) of the array.  
+- **Rank.** The `ReDim` statement cannot change the rank (the number of dimensions) of the array.  
   
--   **Resizing with Preserve.** If you use `Preserve`, you can resize only the last dimension of the array. For every other dimension, you must specify the bound of the existing array.  
+- **Resizing with Preserve.** If you use `Preserve`, you can resize only the last dimension of the array. For every other dimension, you must specify the bound of the existing array.  
   
      For example, if your array has only one dimension, you can resize that dimension and still preserve all the contents of the array, because you are changing the last and only dimension. However, if your array has two or more dimensions, you can change the size of only the last dimension if you use `Preserve`.  
   
--   **Properties.** You can use `ReDim` on a property that holds an array of values.  
+- **Properties.** You can use `ReDim` on a property that holds an array of values.  
   
 ## Behavior  
   
--   **Array Replacement.** `ReDim` releases the existing array and creates a new array with the same rank. The new array replaces the released array in the array variable.  
+- **Array Replacement.** `ReDim` releases the existing array and creates a new array with the same rank. The new array replaces the released array in the array variable.  
   
--   **Initialization without Preserve.** If you do not specify `Preserve`, `ReDim` initializes the elements of the new array by using the default value for their data type.  
+- **Initialization without Preserve.** If you do not specify `Preserve`, `ReDim` initializes the elements of the new array by using the default value for their data type.  
   
--   **Initialization with Preserve.** If you specify `Preserve`, Visual Basic copies the elements from the existing array to the new array.  
+- **Initialization with Preserve.** If you specify `Preserve`, Visual Basic copies the elements from the existing array to the new array.  
   
 ## Example  
  The following example increases the size of the last dimension of a dynamic array without losing any existing data in the array, and then decreases the size with partial data loss. Finally, it decreases the size back to its original value and reinitializes all the array elements.  
@@ -95,6 +95,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
  For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## See also
+
 - <xref:System.IndexOutOfRangeException>
 - [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
 - [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)

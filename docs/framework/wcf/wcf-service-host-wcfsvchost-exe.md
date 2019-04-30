@@ -66,32 +66,32 @@ Windows Communication Foundation (WCF) Service Host (WcfSvcHost.exe) allows you 
   
  The **WCF Service Host** main window contains two menus:  
   
--   **File**: Contains the **Close** and **Exit** commands. When you click **Close**, the **WCF Service Host** dialog box closes, but the services continue to be hosted. When you click **Exit**, WCF Service Host is also shut down. This also stops all hosted services.  
+- **File**: Contains the **Close** and **Exit** commands. When you click **Close**, the **WCF Service Host** dialog box closes, but the services continue to be hosted. When you click **Exit**, WCF Service Host is also shut down. This also stops all hosted services.  
   
--   **Help**: Contains the **About** command that contains version information. It also contains the **Help** command that can open a help file.  
+- **Help**: Contains the **About** command that contains version information. It also contains the **Help** command that can open a help file.  
   
  The main **WCF Service Host** window contains two areas:  
   
--   The first area is **Service**. It contains a list that displays basic information of all services. The information includes:  
+- The first area is **Service**. It contains a list that displays basic information of all services. The information includes:  
   
-    -   **Service**: Lists all the services.  
+    - **Service**: Lists all the services.  
   
-    -   **Status**: Lists the status of the service. Valid values are "Started", "Stopped," and "Error".  
+    - **Status**: Lists the status of the service. Valid values are "Started", "Stopped," and "Error".  
   
-    -   **Metadata Address**: Displays the metadata address of the services.  
+    - **Metadata Address**: Displays the metadata address of the services.  
   
--   The second area is **Additional Information**. It displays a detailed explanation of the service status when the specific service line is selected in the **Service** area. If the status is Error, you can view the full error message on the screen.  
+- The second area is **Additional Information**. It displays a detailed explanation of the service status when the specific service line is selected in the **Service** area. If the status is Error, you can view the full error message on the screen.  
   
 ## Stopping WCF Service Host  
  You can shut down WCF Service Host in the following four ways:  
   
--   Stop the debugging session in Visual Studio.  
+- Stop the debugging session in Visual Studio.  
   
--   Select **Exit** from the **File** menu in the **WCF Service Host** window.  
+- Select **Exit** from the **File** menu in the **WCF Service Host** window.  
   
--   Select **Exit** from context menu of WCF Service Host tray icon in the system notification area.  
+- Select **Exit** from context menu of WCF Service Host tray icon in the system notification area.  
   
--   Exit WCF Test Client if it is being used.  
+- Exit WCF Test Client if it is being used.  
   
 ## Using Service Host without Administrator privilege  
  To enable users without administrator privilege to develop WCF services, an ACL (Access Control List) is created for the namespace "http://+:8731/Design_Time_Addresses" during the installation of Visual Studio. The ACL is set to (UI), which includes all interactive users logged on to the machine. Administrators can add or remove users from this ACL, or open additional ports.This ACL enables users to use the WCF Service Auto Host (wcfSvcHost.exe) without granting them administrator privileges.  
@@ -105,4 +105,5 @@ netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
  For more information on netsh.exe, see "[How to Use the Netsh.exe Tool and Command-Line Switches](https://go.microsoft.com/fwlink/?LinkId=97877)".  
   
 ## See also
+
 - [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

@@ -8,9 +8,10 @@ The parameter `TargetFilePath` specifies an existing directory but must specify 
   
 ## To correct this error  
   
--   Change `TargetFilePath` to specify a new, rather than existing, directory.  
+- Change `TargetFilePath` to specify a new, rather than existing, directory.  
   
 ## See also
+
 - [How to: Move a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)
 - [How to: Move a Directory in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ct88d1f1(v=vs.100))
 - [How to: Rename a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)

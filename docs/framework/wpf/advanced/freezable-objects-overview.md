@@ -57,11 +57,11 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
   
  A Freezable **can't** be frozen if any of the following are true:  
   
--   It has animated or data bound properties.  
+- It has animated or data bound properties.  
   
--   It has properties set by a dynamic resource. (See the [XAML Resources](xaml-resources.md) for more information about dynamic resources.)  
+- It has properties set by a dynamic resource. (See the [XAML Resources](xaml-resources.md) for more information about dynamic resources.)  
   
--   It contains <xref:System.Windows.Freezable> sub-objects that can't be frozen.  
+- It contains <xref:System.Windows.Freezable> sub-objects that can't be frozen.  
   
  If these conditions are false, and you don't intend to modify the <xref:System.Windows.Freezable>, then you should freeze it to gain the performance benefits described earlier.  
   
@@ -116,13 +116,13 @@ mc:Ignorable="PresentationOptions"
 ## Creating Your Own Freezable Class  
  A class that derives from <xref:System.Windows.Freezable> gains the following features.  
   
--   Special states: a read-only (frozen) and a writable state.  
+- Special states: a read-only (frozen) and a writable state.  
   
--   Thread safety: a frozen <xref:System.Windows.Freezable> can be shared across threads.  
+- Thread safety: a frozen <xref:System.Windows.Freezable> can be shared across threads.  
   
--   Detailed change notification: Unlike other <xref:System.Windows.DependencyObject>s, Freezable objects provide change notifications when sub-property values change.  
+- Detailed change notification: Unlike other <xref:System.Windows.DependencyObject>s, Freezable objects provide change notifications when sub-property values change.  
   
--   Easy cloning: the Freezable class has already implemented several methods that produce deep clones.  
+- Easy cloning: the Freezable class has already implemented several methods that produce deep clones.  
   
  A <xref:System.Windows.Freezable> is a type of <xref:System.Windows.DependencyObject>, and therefore uses the dependency property system. Your class properties don't have to be dependency properties, but using dependency properties will reduce the amount of code you have to write, because the <xref:System.Windows.Freezable> class was designed with dependency properties in mind. For more information about the dependency property system, see the [Dependency Properties Overview](dependency-properties-overview.md).  
   
@@ -130,23 +130,23 @@ mc:Ignorable="PresentationOptions"
   
  If your class contains non-dependency property data members, you must also override the following methods:  
   
--   <xref:System.Windows.Freezable.CloneCore%2A>  
+- <xref:System.Windows.Freezable.CloneCore%2A>  
   
--   <xref:System.Windows.Freezable.CloneCurrentValueCore%2A>  
+- <xref:System.Windows.Freezable.CloneCurrentValueCore%2A>  
   
--   <xref:System.Windows.Freezable.GetAsFrozenCore%2A>  
+- <xref:System.Windows.Freezable.GetAsFrozenCore%2A>  
   
--   <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A>  
+- <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A>  
   
--   <xref:System.Windows.Freezable.FreezeCore%2A>  
+- <xref:System.Windows.Freezable.FreezeCore%2A>  
   
  You must also observe the following rules for accessing and writing to data members that are not dependency properties:  
   
--   At the beginning of any [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] that reads non-dependency property data members, call the <xref:System.Windows.Freezable.ReadPreamble%2A> method.  
+- At the beginning of any [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] that reads non-dependency property data members, call the <xref:System.Windows.Freezable.ReadPreamble%2A> method.  
   
--   At the beginning of any API that writes non-dependency property data members, call the <xref:System.Windows.Freezable.WritePreamble%2A> method. (Once you've called <xref:System.Windows.Freezable.WritePreamble%2A> in an [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], you don't need to make an additional call to <xref:System.Windows.Freezable.ReadPreamble%2A> if you also read non-dependency property data members.)  
+- At the beginning of any API that writes non-dependency property data members, call the <xref:System.Windows.Freezable.WritePreamble%2A> method. (Once you've called <xref:System.Windows.Freezable.WritePreamble%2A> in an [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], you don't need to make an additional call to <xref:System.Windows.Freezable.ReadPreamble%2A> if you also read non-dependency property data members.)  
   
--   Call the <xref:System.Windows.Freezable.WritePostscript%2A> method before exiting methods that write to non-dependency property data members.  
+- Call the <xref:System.Windows.Freezable.WritePostscript%2A> method before exiting methods that write to non-dependency property data members.  
   
  If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change one of their values, even if you're setting the member to `null`.  
   
@@ -156,6 +156,7 @@ mc:Ignorable="PresentationOptions"
  For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   
 ## See also
+
 - <xref:System.Windows.Freezable>
 - [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
 - [Dependency Properties Overview](dependency-properties-overview.md)

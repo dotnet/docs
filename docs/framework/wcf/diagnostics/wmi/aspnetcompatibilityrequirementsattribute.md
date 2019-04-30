@@ -35,4 +35,5 @@ class AspNetCompatibilityRequirementsAttribute : Behavior
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled%2A>

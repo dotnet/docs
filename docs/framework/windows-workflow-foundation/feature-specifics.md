@@ -38,9 +38,9 @@ The <xref:System.ServiceModel.WorkflowServiceHost> is the out-of-box workflow ho
 
 - Samples for the <xref:System.ServiceModel.WorkflowServiceHost> can be found in the following sections:
 
-    - [Execution](./samples/execution.md)
+  - [Execution](./samples/execution.md)
 
-    - Application: [Suspended Instance Management](./samples/suspended-instance-management.md)
+  - Application: [Suspended Instance Management](./samples/suspended-instance-management.md)
 
 - [Hosting Workflow services overview](../wcf/feature-details/hosting-workflow-services-overview.md)
 
@@ -62,13 +62,13 @@ A correlation is one of two things:
 
 - An example of correlation used to group messages together is a Request-Reply correlation that groups messages together.
 
-    - On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.
+  - On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.
 
-    - Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.
+  - Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.
 
 - An example of mapping a piece of data to a service instance is content-based correlation which maps a piece of data (for example, an order ID) to a particular workflow instance.
 
-    - On any messaging activity, click on the `CorrelationInitializers` property and add a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> using the <xref:System.ServiceModel.Activities.CorrelationHandle> variable created above. Double-click on the desired property on the message (e.g. OrderID) from the drop-down menu. Set the `CorrelatesWith` property to the <xref:System.ServiceModel.Activities.CorrelationHandle> variable used above.
+  - On any messaging activity, click on the `CorrelationInitializers` property and add a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> using the <xref:System.ServiceModel.Activities.CorrelationHandle> variable created above. Double-click on the desired property on the message (e.g. OrderID) from the drop-down menu. Set the `CorrelatesWith` property to the <xref:System.ServiceModel.Activities.CorrelationHandle> variable used above.
 
 - [Correlation Conceptual Documentation](../wcf/feature-details/correlation.md)
 
@@ -96,7 +96,7 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 - [Standard Endpoint Element](https://go.microsoft.com/fwlink/?LinkId=204942)
 
-- [Service configuration improvements in .Net Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)
+- [Service configuration improvements in .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)
 
 - [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://go.microsoft.com/fwlink/?LinkId=204944)
 
@@ -126,9 +126,9 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 - Samples:
 
-    - [DataContractResolver](../wcf/samples/datacontractresolver.md)
+  - [DataContractResolver](../wcf/samples/datacontractresolver.md)
 
-    - [KnownAssemblyAttribute](../wcf/samples/knownassemblyattribute.md)
+  - [KnownAssemblyAttribute](../wcf/samples/knownassemblyattribute.md)
 
 ### Data Contract Resolver Scenarios
 
@@ -146,25 +146,25 @@ Flowchart is a well-known paradigm to visually represent domain problems. It is 
 
 - The flowchart feature uses the following classes:
 
-    - <xref:System.Activities.Statements.Flowchart>
+  - <xref:System.Activities.Statements.Flowchart>
 
-    - <xref:System.Activities.Statements.FlowNode>
+  - <xref:System.Activities.Statements.FlowNode>
 
-    - <xref:System.Activities.Statements.FlowDecision>
+  - <xref:System.Activities.Statements.FlowDecision>
 
-    - <xref:System.Activities.Statements.FlowStep>
+  - <xref:System.Activities.Statements.FlowStep>
 
-    - <xref:System.Activities.Statements.FlowSwitch%601>
+  - <xref:System.Activities.Statements.FlowSwitch%601>
 
 - Samples:
 
-    - [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
+  - [Fault Handling in a Flowchart Activity Using TryCatch](./samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)
 
-    - [Hiring Process](./samples/hiring-process.md)
+  - [Hiring Process](./samples/hiring-process.md)
 
 - Designer Documentation:
 
-    - [Flowchart Activity Designers](/visualstudio/workflow-designer/flowchart-activity-designers)
+  - [Flowchart Activity Designers](/visualstudio/workflow-designer/flowchart-activity-designers)
 
 ### Flowchart Scenarios
 
@@ -192,15 +192,15 @@ Procedural activities provide a mechanism to model sequential control flow using
 
 - Samples:
 
-    - [Hiring Process](./samples/hiring-process.md)
+  - [Hiring Process](./samples/hiring-process.md)
 
-    - [Corporate Purchase Process](./samples/corporate-purchase-process.md)
+  - [Corporate Purchase Process](./samples/corporate-purchase-process.md)
 
 - Designer Documentation:
 
-    - [Parallel Activity Designer](/visualstudio/workflow-designer/parallel-activity-designer)
+  - [Parallel Activity Designer](/visualstudio/workflow-designer/parallel-activity-designer)
 
-    - [ParallelForEach\<T> Activity Designer](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)
+  - [ParallelForEach\<T> Activity Designer](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)
 
 ### Procedural Activity Scenarios
 
@@ -258,7 +258,7 @@ A user needs to be prompted for input. Under normal circumstances, the developer
 
 ## WCF Routing Service
 
-The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .Net Framework 3.5 had the following limitations:
+The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .NET Framework 3.5 had the following limitations:
 
 - Error handling was complex, as this logic had to be hard-coded into the client.
 
@@ -266,7 +266,7 @@ The Routing Service is designed to be a generic software Router that allows you 
 
 - Services were rarely well factored: it is easier to have the client talk to one service which implements everything, rather than needing to choose between multiple services.
 
-The routing service in .Net 4 is designed to make these problems easier to solve. The new routing service has the following features:
+The routing service in .NET 4 is designed to make these problems easier to solve. The new routing service has the following features:
 
 1. Content based routing (<xref:System.ServiceModel.Dispatcher.MessageFilter> objects examine a message to determine where it should be sent.)
 
@@ -322,7 +322,7 @@ A developer doesn't want to hard code endpoints, since it is unknown when my ser
 
 ## Tracking
 
-Workflow tracking provides insight into the execution of a workflow instance. The tracking events are emitted from a workflow at the workflow instance level and when activities within the workflow execute. A workflow tracking participant needs to be added to the workflow host to subscribe to tracking records. The tracking records are filtered using a tracking profile. The .Net Framework provides an ETW (Event Tracing for Windows) tracking participant, and a basic profile is installed in the machine.config file.
+Workflow tracking provides insight into the execution of a workflow instance. The tracking events are emitted from a workflow at the workflow instance level and when activities within the workflow execute. A workflow tracking participant needs to be added to the workflow host to subscribe to tracking records. The tracking records are filtered using a tracking profile. The .NET Framework provides an ETW (Event Tracing for Windows) tracking participant, and a basic profile is installed in the machine.config file.
 
 ### Getting Started
 

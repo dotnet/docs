@@ -24,39 +24,39 @@ ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
 ## Overloading Rules  
  When you overload a procedure, the following rules apply:  
   
--   **Same Name**. Each overloaded version must use the same procedure name.  
+- **Same Name**. Each overloaded version must use the same procedure name.  
   
--   **Different Signature**. Each overloaded version must differ from all other overloaded versions in at least one of the following respects:  
+- **Different Signature**. Each overloaded version must differ from all other overloaded versions in at least one of the following respects:  
   
-    -   Number of parameters  
+    - Number of parameters  
   
-    -   Order of the parameters  
+    - Order of the parameters  
   
-    -   Data types of the parameters  
+    - Data types of the parameters  
   
-    -   Number of type parameters (for a generic procedure)  
+    - Number of type parameters (for a generic procedure)  
   
-    -   Return type (only for a conversion operator)  
+    - Return type (only for a conversion operator)  
   
      Together with the procedure name, the preceding items are collectively called the *signature* of the procedure. When you call an overloaded procedure, the compiler uses the signature to check that the call correctly matches the definition.  
   
--   **Items Not Part of Signature**. You cannot overload a procedure without varying the signature. In particular, you cannot overload a procedure by varying only one or more of the following items:  
+- **Items Not Part of Signature**. You cannot overload a procedure without varying the signature. In particular, you cannot overload a procedure by varying only one or more of the following items:  
   
-    -   Procedure modifier keywords, such as `Public`, `Shared`, and `Static`  
+    - Procedure modifier keywords, such as `Public`, `Shared`, and `Static`  
   
-    -   Parameter or type parameter names  
+    - Parameter or type parameter names  
   
-    -   Type parameter constraints (for a generic procedure)  
+    - Type parameter constraints (for a generic procedure)  
   
-    -   Parameter modifier keywords, such as `ByRef` and `Optional`  
+    - Parameter modifier keywords, such as `ByRef` and `Optional`  
   
-    -   Whether it returns a value  
+    - Whether it returns a value  
   
-    -   The data type of the return value (except for a conversion operator)  
+    - The data type of the return value (except for a conversion operator)  
   
      The items in the preceding list are not part of the signature. Although you cannot use them to differentiate between overloaded versions, you can vary them among overloaded versions that are properly differentiated by their signatures.  
   
--   **Late-Bound Arguments**. If you intend to pass a late bound object variable to an overloaded version, you must declare the appropriate parameter as <xref:System.Object>.  
+- **Late-Bound Arguments**. If you intend to pass a late bound object variable to an overloaded version, you must declare the appropriate parameter as <xref:System.Object>.  
   
 ## Multiple Versions of a Procedure  
  Suppose you are writing a `Sub` procedure to post a transaction against a customer's balance, and you want to be able to refer to the customer either by name or by account number. To accommodate this, you can define two different `Sub` procedures, as in the following example:  
@@ -79,6 +79,7 @@ ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
  [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [How to: Define Multiple Versions of a Procedure](./how-to-define-multiple-versions-of-a-procedure.md)
 - [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md)

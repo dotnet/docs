@@ -22,5 +22,6 @@ This example shows how to include an image on a <xref:System.Windows.Controls.Bu
  [!code-vb[BtnColor#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BtnColor/VisualBasic/Pane1.xaml.vb#6)]  
   
 ## See also
+
 - [Controls](index.md)
 - [Control Library](control-library.md)

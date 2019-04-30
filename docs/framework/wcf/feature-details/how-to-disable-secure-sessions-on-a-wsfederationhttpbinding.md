@@ -16,15 +16,15 @@ Some services may require federated credentials but not support secure sessions.
   
 ### To create a custom federated binding without secure session  
   
-1.  Create an instance of the <xref:System.ServiceModel.WSFederationHttpBinding> class either imperatively in code or by loading one from the configuration file.  
+1. Create an instance of the <xref:System.ServiceModel.WSFederationHttpBinding> class either imperatively in code or by loading one from the configuration file.  
   
-2.  Clone the <xref:System.ServiceModel.WSFederationHttpBinding> into a <xref:System.ServiceModel.Channels.CustomBinding>.  
+2. Clone the <xref:System.ServiceModel.WSFederationHttpBinding> into a <xref:System.ServiceModel.Channels.CustomBinding>.  
   
-3.  Find the <xref:System.ServiceModel.Channels.SecurityBindingElement> in the <xref:System.ServiceModel.Channels.CustomBinding>.  
+3. Find the <xref:System.ServiceModel.Channels.SecurityBindingElement> in the <xref:System.ServiceModel.Channels.CustomBinding>.  
   
-4.  Find the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters> in the <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
+4. Find the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters> in the <xref:System.ServiceModel.Channels.SecurityBindingElement>.  
   
-5.  Replace the original <xref:System.ServiceModel.Channels.SecurityBindingElement> with the bootstrap security binding element from the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>.  
+5. Replace the original <xref:System.ServiceModel.Channels.SecurityBindingElement> with the bootstrap security binding element from the <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>.  
   
 ## Example  
  This following example creates a custom federated binding without secure session.  
@@ -34,7 +34,8 @@ Some services may require federated credentials but not support secure sessions.
   
 ## Compiling the Code  
   
--   To compile the code example, create a project that references the System.ServiceModel.dll assembly.  
+- To compile the code example, create a project that references the System.ServiceModel.dll assembly.  
   
 ## See also
+
 - [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)

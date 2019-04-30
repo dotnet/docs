@@ -13,9 +13,9 @@ An anonymous function is an "inline" statement or expression that can be used wh
   
  There are two kinds of anonymous functions, which are discussed individually in the following topics:  
   
--   [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
--   [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
   
     > [!NOTE]
     >  Lambda expressions can be bound to expression trees and also to delegates.  

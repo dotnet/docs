@@ -8,30 +8,31 @@ This section contains topics that describe different scenarios for using tracing
   
  Activity Tracing is implemented for Reply/Response, OneWay and Duplex scenarios using the following  
   
--   Synchronous or Asynchronous  
+- Synchronous or Asynchronous  
   
--   BasicHttpBinding, netNamedPipeBinding, netTcpBinding, wsHttpBinding or netMsmqBinding  
+- BasicHttpBinding, netNamedPipeBinding, netTcpBinding, wsHttpBinding or netMsmqBinding  
   
--   COM Service  
+- COM Service  
   
--   User activity id propagation  
+- User activity id propagation  
   
 ## In This Section  
   
--   [Activity List](../../../../../docs/framework/wcf/diagnostics/tracing/activity-list.md)  
+- [Activity List](../../../../../docs/framework/wcf/diagnostics/tracing/activity-list.md)  
   
--   [Activity ID Propagation](../../../../../docs/framework/wcf/diagnostics/tracing/activity-id-propagation.md)  
+- [Activity ID Propagation](../../../../../docs/framework/wcf/diagnostics/tracing/activity-id-propagation.md)  
   
--   [Synchronous Scenarios using HTTP, TCP or Named-Pipe](../../../../../docs/framework/wcf/diagnostics/tracing/synchronous-scenarios-using-http-tcp-or-named-pipe.md)  
+- [Synchronous Scenarios using HTTP, TCP or Named-Pipe](../../../../../docs/framework/wcf/diagnostics/tracing/synchronous-scenarios-using-http-tcp-or-named-pipe.md)  
   
--   [Asynchronous Scenarios using HTTP, TCP, or Named-Pipe](../../../../../docs/framework/wcf/diagnostics/tracing/asynchronous-scenarios-using-http-tcp-or-named-pipe.md)  
+- [Asynchronous Scenarios using HTTP, TCP, or Named-Pipe](../../../../../docs/framework/wcf/diagnostics/tracing/asynchronous-scenarios-using-http-tcp-or-named-pipe.md)  
   
--   [Activity Tracing in Message Security](../../../../../docs/framework/wcf/diagnostics/tracing/activity-tracing-in-message-security.md)  
+- [Activity Tracing in Message Security](../../../../../docs/framework/wcf/diagnostics/tracing/activity-tracing-in-message-security.md)  
   
--   [MSMQ](../../../../../docs/framework/wcf/diagnostics/tracing/msmq.md)  
+- [MSMQ](../../../../../docs/framework/wcf/diagnostics/tracing/msmq.md)  
   
--   [COM+](../../../../../docs/framework/wcf/diagnostics/tracing/com.md)  
+- [COM+](../../../../../docs/framework/wcf/diagnostics/tracing/com.md)  
   
 ## See also
+
 - [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
 - [End-to-End Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)

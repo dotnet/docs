@@ -17,13 +17,13 @@ In Visual Basic, data types are implemented based on their classification. The V
 ## Value Types  
  A data type is a *value type* if it holds the data within its own memory allocation. Value types include the following:  
   
--   All numeric data types  
+- All numeric data types  
   
--   `Boolean`, `Char`, and `Date`  
+- `Boolean`, `Char`, and `Date`  
   
--   All structures, even if their members are reference types  
+- All structures, even if their members are reference types  
   
--   Enumerations, since their underlying type is always `SByte`, `Short`, `Integer`, `Long`, `Byte`, `UShort`, `UInteger`, or `ULong`  
+- Enumerations, since their underlying type is always `SByte`, `Short`, `Integer`, `Long`, `Byte`, `UShort`, `UInteger`, or `ULong`  
   
  Every structure is a value type, even if it contains reference type members. For this reason, value types such as `Char` and `Integer` are implemented by .NET Framework structures.  
   
@@ -32,13 +32,13 @@ In Visual Basic, data types are implemented based on their classification. The V
 ## Reference Types  
  A *reference type* contains a pointer to another memory location that holds the data. Reference types include the following:  
   
--   `String`  
+- `String`  
   
--   All arrays, even if their elements are value types  
+- All arrays, even if their elements are value types  
   
--   Class types, such as <xref:System.Windows.Forms.Form>  
+- Class types, such as <xref:System.Windows.Forms.Form>  
   
--   Delegates  
+- Delegates  
   
  A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] classes. Note that every array is a reference type, even if its members are value types.  
   
@@ -51,15 +51,15 @@ Dim totals() As Single = New Single(8) {}
 ## Elements That Are Not Types  
  The following programming elements do not qualify as types, because you cannot specify any of them as a data type for a declared element:  
   
--   Namespaces  
+- Namespaces  
   
--   Modules  
+- Modules  
   
--   Events  
+- Events  
   
--   Properties and procedures  
+- Properties and procedures  
   
--   Variables, constants, and fields  
+- Variables, constants, and fields  
   
 ## Working with the Object Data Type  
  You can assign either a reference type or a value type to a variable of the `Object` data type. An `Object` variable always holds a pointer to the data, never the data itself. However, if you assign a value type to an `Object` variable, it behaves as if it holds its own data. For more information, see [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md).  
@@ -67,6 +67,7 @@ Dim totals() As Single = New Single(8) {}
  You can find out whether an `Object` variable is acting as a reference type or a value type by passing it to the <xref:Microsoft.VisualBasic.Information.IsReference%2A> method in the <xref:Microsoft.VisualBasic.Information> class of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace. <xref:Microsoft.VisualBasic.Information.IsReference%2A?displayProperty=nameWithType> returns `True` if the content of the `Object` variable represents a reference type.  
   
 ## See also
+
 - [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
 - [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)

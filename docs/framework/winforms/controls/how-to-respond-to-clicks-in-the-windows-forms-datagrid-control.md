@@ -21,7 +21,7 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
   
 ### To detect when the user of the DataGrid selects a different cell  
   
--   In the <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event handler, write code to respond appropriately.  
+- In the <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event handler, write code to respond appropriately.  
   
     ```vb  
     Private Sub myDataGrid_CurrentCellChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles myDataGrid.CurrentCellChanged  
@@ -50,7 +50,7 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
   
 ### To determine which part of the DataGrid the user clicked  
   
--   Call the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in an appropriate event handler, such as for the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.Click> event.  
+- Call the <xref:System.Windows.Forms.DataGrid.HitTest%2A> method in an appropriate event handler, such as for the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.Click> event.  
   
      The <xref:System.Windows.Forms.DataGrid.HitTest%2A> method returns a <xref:System.Windows.Forms.DataGrid.HitTestInfo> object that contains the row and column of a clicked area.  
   
@@ -135,5 +135,6 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
     ```  
   
 ## See also
+
 - [DataGrid Control](datagrid-control-windows-forms.md)
 - [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](change-displayed-data-at-run-time-wf-datagrid-control.md)

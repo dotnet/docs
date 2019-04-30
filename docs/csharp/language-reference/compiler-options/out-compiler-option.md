@@ -29,9 +29,9 @@ The **-out** option specifies the name of the output file.
   
  If you do not specify the name of the output file:  
   
--   An .exe will take its name from the source code file that contains the **Main** method.  
+- An .exe will take its name from the source code file that contains the **Main** method.  
   
--   A .dll or .netmodule will take its name from the first source code file.  
+- A .dll or .netmodule will take its name from the first source code file.  
   
  A source code file used to compile one output file cannot be used in the same compilation for the compilation of another output file.  
   
@@ -43,11 +43,11 @@ The **-out** option specifies the name of the output file.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Modify the **Assembly name** property.  
+3. Modify the **Assembly name** property.  
   
      To set this compiler option programmatically: the <xref:VSLangProj80.ProjectProperties3.OutputFileName%2A> is a read-only property, which is determined by a combination of the project type (exe, library, and so forth) and the assembly name. Modifying one or both of these properties will be necessary to set the output file name.  
   

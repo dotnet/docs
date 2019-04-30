@@ -11,13 +11,13 @@ ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
 # Mapping Algorithm Names to Cryptography Classes
 There are four ways a developer can create a cryptography object using the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]:  
   
--   Create an object by using the **new** operator.  
+- Create an object by using the **new** operator.  
   
--   Create an object that implements a particular cryptography algorithm by calling the **Create** method on the abstract class for that algorithm.  
+- Create an object that implements a particular cryptography algorithm by calling the **Create** method on the abstract class for that algorithm.  
   
--   Create an object that implements a particular cryptography algorithm by calling the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method.  
+- Create an object that implements a particular cryptography algorithm by calling the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method.  
   
--   Create an object that implements a class of cryptographic algorithms (such as a symmetric block cipher) by calling the **Create** method on the abstract class for that type of algorithm (such as <xref:System.Security.Cryptography.SymmetricAlgorithm>).  
+- Create an object that implements a class of cryptographic algorithms (such as a symmetric block cipher) by calling the **Create** method on the abstract class for that type of algorithm (such as <xref:System.Security.Cryptography.SymmetricAlgorithm>).  
   
  For example, suppose a developer wants to compute the SHA1 hash of a set of bytes. The <xref:System.Security.Cryptography> namespace contains two implementations of the SHA1 algorithm, one purely managed implementation and one that wraps CryptoAPI. The developer can choose to instantiate a particular SHA1 implementation (such as the <xref:System.Security.Cryptography.SHA1Managed>) by calling the **new** operator. However, if it does not matter which class the common language runtime loads as long as the class implements the SHA1 hash algorithm, the developer can create an object by calling the <xref:System.Security.Cryptography.SHA1.Create%2A?displayProperty=nameWithType> method. This method calls **System.Security.Cryptography.CryptoConfig.CreateFromName("System.Security.Cryptography.SHA1")**, which must return an implementation of the SHA1 hash algorithm.  
   
@@ -62,5 +62,6 @@ There are four ways a developer can create a cryptography object using the [!INC
  For a list of default names and the classes they map to, see <xref:System.Security.Cryptography.CryptoConfig>.  
   
 ## See also
+
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

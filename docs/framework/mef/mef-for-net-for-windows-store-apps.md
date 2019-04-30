@@ -10,17 +10,18 @@ ms.author: "ronpet"
   
  These namespaces are not part of the core class library distributed with the .NET Framework. To install these namespaces, open your project in Visual Studio, choose **Manage NuGet Packages** from the **Project** menu, and search online for the Microsoft.Composition package.  
   
--   <xref:System.Composition?displayProperty=nameWithType> provides classes that constitute the core MEF for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
+- <xref:System.Composition?displayProperty=nameWithType> provides classes that constitute the core MEF for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
   
--   <xref:System.Composition.Convention?displayProperty=nameWithType> provides types that support using MEF with a convention-based configuration model.  
+- <xref:System.Composition.Convention?displayProperty=nameWithType> provides types that support using MEF with a convention-based configuration model.  
   
--   <xref:System.Composition.Hosting?displayProperty=nameWithType> provides MEF types that are useful to developers of host applications.  
+- <xref:System.Composition.Hosting?displayProperty=nameWithType> provides MEF types that are useful to developers of host applications.  
   
--   <xref:System.Composition.Hosting.Core?displayProperty=nameWithType> provides MEF types used internally by the composition engine.  
+- <xref:System.Composition.Hosting.Core?displayProperty=nameWithType> provides MEF types used internally by the composition engine.  
   
  For more information about [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and a list of namespaces and types that it contains, see [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312) in the Windows Dev Center.  
   
 ## See also
+
 - [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312)
 - [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/p/?LinkID=247912)
 - [Managed Extensibility Framework (MEF)](../../../docs/framework/mef/index.md)

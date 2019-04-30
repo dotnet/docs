@@ -27,9 +27,9 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
 ## Remarks  
  If the value of `enableExceptionsOutsideOfJMC` is `false`:  
   
--   A DEBUG_EXCEPTION_FIRST_CHANCE exception will not result in a callback to the debugger.  
+- A DEBUG_EXCEPTION_FIRST_CHANCE exception will not result in a callback to the debugger.  
   
--   A DEBUG_EXCEPTION_CATCH_HANDLER_FOUND exception will not result in a callback to the debugger if the exception never escapes into user code (that is, the path from an exception origin to an exception handler has no methods marked as JustMyCode, or JMC).  
+- A DEBUG_EXCEPTION_CATCH_HANDLER_FOUND exception will not result in a callback to the debugger if the exception never escapes into user code (that is, the path from an exception origin to an exception handler has no methods marked as JustMyCode, or JMC).  
   
  The default value of `enableExceptionsOutsideOfJMC` is `true`.  
   
@@ -43,5 +43,6 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess8 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess8-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

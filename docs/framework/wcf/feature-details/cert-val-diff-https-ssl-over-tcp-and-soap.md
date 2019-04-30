@@ -42,5 +42,6 @@ You can use certificates in Windows Communication Foundation (WCF) with message-
  [!code-vb[c_CertificateValidationDifferences#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#4)]  
   
 ## See also
+
 - <xref:System.Net.Security.RemoteCertificateValidationCallback>
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

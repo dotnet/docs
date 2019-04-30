@@ -22,5 +22,6 @@ The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control is essentiall
  This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control Overview](numericupdown-control-overview-windows-forms.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.DomainUpDown>
 - [DomainUpDown Control](domainupdown-control-windows-forms.md)

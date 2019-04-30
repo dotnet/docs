@@ -94,7 +94,7 @@ There is a special type, `unit`, that is used when there is nothing to return. F
 
 ```fsharp
 let printString (str: string) =
-    printfn "String is: %s" s
+    printfn "String is: %s" str
 ```
 
 The signature looks like this:

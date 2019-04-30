@@ -8,9 +8,10 @@ The size of the file you are attempting to read into a byte array exceeds 4 GB. 
   
 ## To correct this error  
   
--   Use a <xref:System.IO.StreamReader> to read the file. For more information, see [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md).  
+- Use a <xref:System.IO.StreamReader> to read the file. For more information, see [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllBytes%2A>
 - <xref:System.IO.StreamReader>
 - [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

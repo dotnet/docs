@@ -21,10 +21,11 @@ This example demonstrates how to programmatically select an item in a Windows Fo
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.ListView> control named `listView1` that contains at least one item.  
+- A <xref:System.Windows.Forms.ListView> control named `listView1` that contains at least one item.  
   
--   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces.  
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> namespaces.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView>
 - <xref:System.Windows.Forms.ListViewItem.Selected%2A?displayProperty=nameWithType>

@@ -10,14 +10,14 @@ The drive cannot be found. Either your network connection has been lost, or the 
   
 ## To correct this error  
   
-1.  Check power to the drive.  
+1. Check power to the drive.  
   
-2.  Ensure that any cables connecting your computer to the network are properly attached.  
+2. Ensure that any cables connecting your computer to the network are properly attached.  
   
-3.  To access a drive over a network, ensure that a logical connection exists between your computer and the drive.  
+3. To access a drive over a network, ensure that a logical connection exists between your computer and the drive.  
   
-4.  Reconnect to the network and try again.  
+4. Reconnect to the network and try again.  
   
 ## See also
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

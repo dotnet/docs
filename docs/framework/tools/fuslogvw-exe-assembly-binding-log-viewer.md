@@ -30,32 +30,32 @@ fuslogvw
   
 ### To change the log location view  
   
-1.  Select the **Default** option button to view bind failures for all application types. By default, log entries are stored in per-user directories on disk in the wininet cache.  
+1. Select the **Default** option button to view bind failures for all application types. By default, log entries are stored in per-user directories on disk in the wininet cache.  
   
-2.  Select the **Custom** option button to view bind failures in a custom directory that you specify. You must specify the custom location where you want the runtime to store the logs by setting the custom log location in the **Log Settings** dialog to a valid directory name. This directory should be clean, and only contain files that the runtime generates. If it contains an executable that generates a failure to be logged, the failure will not be logged because the tool tries to create a directory with the same name as the executable. In addition, an attempt to run an executable from the log location will fail.  
+2. Select the **Custom** option button to view bind failures in a custom directory that you specify. You must specify the custom location where you want the runtime to store the logs by setting the custom log location in the **Log Settings** dialog to a valid directory name. This directory should be clean, and only contain files that the runtime generates. If it contains an executable that generates a failure to be logged, the failure will not be logged because the tool tries to create a directory with the same name as the executable. In addition, an attempt to run an executable from the log location will fail.  
   
     > [!NOTE]
     >  The default bind location is preferable to the custom bind location. The runtime stores the default bind location in the wininet cache, and therefore automatically cleans it out. If you specify a custom bind location, you are responsible for cleaning it out.  
   
 ### To view details about a specific failure  
   
-1.  Select the application name of the desired entry in the viewer.  
+1. Select the application name of the desired entry in the viewer.  
   
-2.  Click the **View Log** button. Alternately, you can double-click the selected entry.  
+2. Click the **View Log** button. Alternately, you can double-click the selected entry.  
   
      The tool displays the following details about the selected bind failure:  
   
-    -   The specific reason the bind failed, such as "file not found" or "version mismatch".  
+    - The specific reason the bind failed, such as "file not found" or "version mismatch".  
   
-    -   Information about the application that initiated the bind, including its name, the application's root directory (AppBase), and a description of the private search path, if there is one.  
+    - Information about the application that initiated the bind, including its name, the application's root directory (AppBase), and a description of the private search path, if there is one.  
   
-    -   The identity of the assembly the tool is looking for.  
+    - The identity of the assembly the tool is looking for.  
   
-    -   A description of any Application, Publisher, or Administrator version policies that have been applied.  
+    - A description of any Application, Publisher, or Administrator version policies that have been applied.  
   
-    -   Whether the assembly was found in the [global assembly cache](../../../docs/framework/app-domains/gac.md).  
+    - Whether the assembly was found in the [global assembly cache](../../../docs/framework/app-domains/gac.md).  
   
-    -   A list of all probing URLs.  
+    - A list of all probing URLs.  
   
  The following sample log entry shows detailed information about a failed assembly bind.  
   
@@ -93,32 +93,32 @@ LOG: All probing URLs attempted and failed.
   
 ### To delete a single entry from the log  
   
-1.  Select an entry in the viewer.  
+1. Select an entry in the viewer.  
   
-2.  Click the **Delete Entry** button.  
+2. Click the **Delete Entry** button.  
   
 ### To delete all entries from the log  
   
--   Click the **Delete All** button.  
+- Click the **Delete All** button.  
   
 ### To refresh the user interface  
   
--   Click the **Refresh** button. The viewer does not automatically detect new log entries while it is running. You must use the **Refresh** button to display them.  
+- Click the **Refresh** button. The viewer does not automatically detect new log entries while it is running. You must use the **Refresh** button to display them.  
   
 ### To change the log settings  
   
--   Click the **Settings** button to open the **Log Settings** dialog.  
+- Click the **Settings** button to open the **Log Settings** dialog.  
   
 ### To view the About dialog  
   
--   Click the **About** button.  
+- Click the **About** button.  
   
 ## Binding Logs for Native Images  
  By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you can log assembly binds for native images that were created using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md).  
   
 #### To log assembly binds for native images  
   
--   In the **Log Categories** group, select the **Native Images** option button.  
+- In the **Log Categories** group, select the **Native Images** option button.  
   
  The following log shows a failure caused by a dependency that did not exist when the native image was created for the application. If the dependencies at run time differ from the dependencies when Ngen.exe is run, binding to a native image is not allowed.  
   
@@ -179,23 +179,23 @@ Discarding native image.
   
 #### To disable logging  
   
--   Select the **Log disabled** option button.  Note that this option is selected by default.  
+- Select the **Log disabled** option button.  Note that this option is selected by default.  
   
 #### To log assembly binds in exceptions  
   
--   Select the **Log in exception text** option button. Only the least detailed fusion log information is logged in exception text. To view full information, use one of the other settings.  
+- Select the **Log in exception text** option button. Only the least detailed fusion log information is logged in exception text. To view full information, use one of the other settings.  
   
      See the Important note regarding assemblies that are loaded as domain neutral.  
   
 #### To log assembly bind failures  
   
--   Select the **Log bind failures to disk** option button.  
+- Select the **Log bind failures to disk** option button.  
   
      See the Important note regarding assemblies that are loaded as domain neutral.  
   
 #### To log all assembly binds  
   
--   Select the **Log all binds to disk** option button.  
+- Select the **Log all binds to disk** option button.  
   
      See the Important note regarding assemblies that are loaded as domain neutral.  
   
@@ -204,9 +204,9 @@ Discarding native image.
   
 #### To enable a custom log path  
   
-1.  Select the **Enable custom log path** option button.  
+1. Select the **Enable custom log path** option button.  
   
-2.  Enter the path into the **Custom log path** text box.  
+2. Enter the path into the **Custom log path** text box.  
   
 > [!NOTE]
 >  The [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) uses the Internet Explorer (IE) cache to store its binding log. Due to occasional corruption in the IE cache, the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) can sometimes stop showing new binding logs in the viewing window. As a result of this corruption, the .NET binding infrastructure (fusion) cannot write to or read from the binding log. (This issue is not encountered if you use a custom log path.)  To fix the corruption and allow fusion to show binding logs again, clear the IE cache by deleting temporary internet files from within the IE Internet Options dialog.  
@@ -215,14 +215,15 @@ Discarding native image.
   
 #### To enable logging for apps running in the Windows app container  
   
-1.  Enable a custom log path, as described in the previous procedure. By default, apps that are running in the Windows app container have limited access to the hard disk. The directory you specify will have read/write access for all apps in the app container.  
+1. Enable a custom log path, as described in the previous procedure. By default, apps that are running in the Windows app container have limited access to the hard disk. The directory you specify will have read/write access for all apps in the app container.  
   
-2.  Select the **Enable immersive logging** check box.  
+2. Select the **Enable immersive logging** check box.  
   
     > [!NOTE]
     >  This box is enabled only on Windows 8 or later.  
   
 ## See also
+
 - <xref:System.TypeLoadException>
 - [Tools](../../../docs/framework/tools/index.md)
 - [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)

@@ -15,8 +15,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 ---
 # Optimizing Performance: 2D Graphics and Imaging
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a wide range of 2D graphics and imaging functionality that can be optimized for your application requirements. This topic provides information about performance optimization in those areas.  
-  
-  
+
 <a name="Drawing_and_Shapes"></a>   
 ## Drawing and Shapes  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides both <xref:System.Windows.Media.Drawing> and <xref:System.Windows.Shapes.Shape> objects to represent graphical drawing content. However, <xref:System.Windows.Media.Drawing> objects are simpler constructs than <xref:System.Windows.Shapes.Shape> objects and provide better performance characteristics.  
@@ -29,13 +28,13 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  There are four types of <xref:System.Windows.Media.Drawing> objects:  
   
--   <xref:System.Windows.Media.GeometryDrawing> Draws a shape.  
+- <xref:System.Windows.Media.GeometryDrawing> Draws a shape.  
   
--   <xref:System.Windows.Media.ImageDrawing> Draws an image.  
+- <xref:System.Windows.Media.ImageDrawing> Draws an image.  
   
--   <xref:System.Windows.Media.GlyphRunDrawing> Draws text.  
+- <xref:System.Windows.Media.GlyphRunDrawing> Draws text.  
   
--   <xref:System.Windows.Media.DrawingGroup> Draws other drawings. Use a drawing group to combine other drawings into a single composite drawing.  
+- <xref:System.Windows.Media.DrawingGroup> Draws other drawings. Use a drawing group to combine other drawings into a single composite drawing.  
   
  The <xref:System.Windows.Media.GeometryDrawing> object is used to render geometry content. The <xref:System.Windows.Media.Geometry> class and the concrete classes which derive from it, such as <xref:System.Windows.Media.CombinedGeometry>, <xref:System.Windows.Media.EllipseGeometry>, and <xref:System.Windows.Media.PathGeometry>, provide a means for rendering 2D graphics, as well as providing hit-testing and clipping support. Geometry objects can be used to define the region of a control, for example, or to define the clip region to apply to an image. Geometry objects can be simple regions, such as rectangles and circles, or composite regions created from two or more geometry objects. More complex geometric regions can be created by combining <xref:System.Windows.Media.PathSegment>-derived objects, such as <xref:System.Windows.Media.ArcSegment>, <xref:System.Windows.Media.BezierSegment>, and <xref:System.Windows.Media.QuadraticBezierSegment>.  
   
@@ -65,13 +64,13 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  When using images, consider the following recommendations for gaining better performance:  
   
--   If your application requires you to display thumbnail images, consider creating a reduced-sized version of the image. By default, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] loads your image and decodes it to its full size. If you only want a thumbnail version of the image, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] unnecessary decodes the image to its full-size and then scales it down to a thumbnail size. To avoid this unnecessary overhead, you can either request [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to decode the image to a thumbnail size, or request [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to load a thumbnail size image.  
+- If your application requires you to display thumbnail images, consider creating a reduced-sized version of the image. By default, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] loads your image and decodes it to its full size. If you only want a thumbnail version of the image, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] unnecessary decodes the image to its full-size and then scales it down to a thumbnail size. To avoid this unnecessary overhead, you can either request [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to decode the image to a thumbnail size, or request [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to load a thumbnail size image.  
   
--   Always decode the image to desired size and not to the default size. As mentioned above, request [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to decode your image to a desired size and not the default full size. You will reduce not only your application's working set, but execution speed as well.  
+- Always decode the image to desired size and not to the default size. As mentioned above, request [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to decode your image to a desired size and not the default full size. You will reduce not only your application's working set, but execution speed as well.  
   
--   If possible, combine the images into a single image, such as a film strip composed of multiple images.  
+- If possible, combine the images into a single image, such as a film strip composed of multiple images.  
   
--   For more information, see [Imaging Overview](../graphics-multimedia/imaging-overview.md).  
+- For more information, see [Imaging Overview](../graphics-multimedia/imaging-overview.md).  
   
 ### BitmapScalingMode  
  When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.BitmapScalingMode.LowQuality> you can create a smoother animation when scaling a bitmap. <xref:System.Windows.Media.BitmapScalingMode.LowQuality> mode tells the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering engine to switch from a quality-optimized algorithm to a speed-optimized algorithm when processing images.  
@@ -94,6 +93,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
  [!code-vb[RenderOptions#RenderOptionsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet3)]  
   
 ## See also
+
 - [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)

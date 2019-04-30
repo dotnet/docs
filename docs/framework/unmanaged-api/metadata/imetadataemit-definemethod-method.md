@@ -84,9 +84,9 @@ HRESULT DefineMethod (
 ## Defining a Method for PInvoke  
  For each unmanaged function to be called through PInvoke, you must define a managed method that represents the target unmanaged function. To define the managed method, use `DefineMethod` with some of the parameters set to certain values, depending on the way in which PInvoke is used:  
   
--   True PInvoke - involves invocation of an external unmanaged method that resides in an unmanaged DLL.  
+- True PInvoke - involves invocation of an external unmanaged method that resides in an unmanaged DLL.  
   
--   Local PInvoke - involves invocation of a native unmanaged method that is embedded in the current managed module.  
+- Local PInvoke - involves invocation of a native unmanaged method that is embedded in the current managed module.  
   
  The parameter settings are given in the following table.  
   
@@ -107,5 +107,6 @@ HRESULT DefineMethod (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

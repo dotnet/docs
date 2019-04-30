@@ -9,11 +9,11 @@ The SQL Workflow Instance Store runs an internal task that periodically wakes up
 ## <a name="RunnableSection"></a> Detecting and Activating Runnable Workflow Instances  
  The SQL Workflow Instance Store considers a workflow instance *runnable* if the instance is not in the suspended state or the completed state and satisfies the following conditions:  
   
--   The instance is unlocked and has a pending timer that has expired.  
+- The instance is unlocked and has a pending timer that has expired.  
   
--   The instance has an expired lock on it.  
+- The instance has an expired lock on it.  
   
--   The instance is unlocked and its status is **Executing**.  
+- The instance is unlocked and its status is **Executing**.  
   
  The SQL Workflow Instance Store raises the <xref:System.Activities.DurableInstancing.HasRunnableWorkflowEvent> when it finds a runnable instance. After this, the SqlWorkflowInstanceStore stops monitoring until the <xref:System.Activities.DurableInstancing.TryLoadRunnableWorkflowCommand> is called once on the store.  
   

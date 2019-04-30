@@ -28,8 +28,7 @@ Looking for some quick help on using the CLI? The following table shows some exa
 |                                | 2.2 | `dotnet publish -c Release -r <RID> --self-contained true` |
 |                                | 3.0 | `dotnet publish -c Release -r <RID> --self-contained true` |
 
-> [!IMPORTANT]
-> \*When using SDK version 3.0, framework-dependent executable this is the default publishing mode when running the basic `dotnet publish` command. This only applies to projects that target **.NET Core 2.1** or **.NET Core 3.0**.
+\* When using SDK version 3.0, framework-dependent executable is the default publishing mode when running the basic `dotnet publish` command. This only applies when the project targets either **.NET Core 2.1** or **.NET Core 3.0**.
 
 ## Publishing basics
 
@@ -45,7 +44,7 @@ If you use .NET Core SDK 2.1, the default publish mode for apps that target .NET
 
 ### Native dependencies
 
-If your app has native dependencies, it may not run on a different operating system. For example, if your app uses the native Win32 API, it won't run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
+If your app has native dependencies, it may not run on a different operating system. For example, if your app uses the native Windows API, it won't run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
 
 Consider also, if a library you referenced has a native dependency, your app may not run on every platform. However, it's possible a NuGet package you're referencing has included platform-specific versions to handle the required native dependencies for you.
 
@@ -153,7 +152,6 @@ You must use the following switches with the `dotnet publish` command to publish
 
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)
-
 
 ## See also
 

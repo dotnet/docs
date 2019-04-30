@@ -24,14 +24,15 @@ As part of the development process, you typically will want to print a copy of y
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   You do not have permission to access the printer.  
+- You do not have permission to access the printer.  
   
--   There is no printer installed.  
+- There is no printer installed.  
   
 ## .NET Framework Security  
  In order to run this code example, you must have permission to access the printer you use with your computer.  
   
 ## See also
+
 - <xref:System.Drawing.Printing.PrintDocument>
 - [How to: Render Images with GDI+](how-to-render-images-with-gdi.md)
 - [How to: Print Graphics in Windows Forms](how-to-print-graphics-in-windows-forms.md)

@@ -85,6 +85,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>
 - <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>

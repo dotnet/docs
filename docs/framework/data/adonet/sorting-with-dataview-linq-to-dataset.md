@@ -59,9 +59,9 @@ The ability to sort data based on specific criteria and then present the data to
 ## Clearing the Sort  
  The sorting information on a <xref:System.Data.DataView> can be cleared after it has been set using the <xref:System.Data.DataView.Sort%2A> property. There are two ways to clear the sorting information in <xref:System.Data.DataView>:  
   
--   Set the <xref:System.Data.DataView.Sort%2A> property to `null`.  
+- Set the <xref:System.Data.DataView.Sort%2A> property to `null`.  
   
--   Set the <xref:System.Data.DataView.Sort%2A> property to an empty string.  
+- Set the <xref:System.Data.DataView.Sort%2A> property to an empty string.  
   
 ### Example  
  The following example creates a <xref:System.Data.DataView> from a query and clears the sorting by setting the <xref:System.Data.DataView.Sort%2A> property to an empty string:  
@@ -76,6 +76,7 @@ The ability to sort data based on specific criteria and then present the data to
  [!code-vb[DP DataView Samples#LDVClearSort2](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvclearsort2)]  
   
 ## See also
+
 - [Data Binding and LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)
 - [Filtering with DataView](../../../../docs/framework/data/adonet/filtering-with-dataview-linq-to-dataset.md)
 - [Sorting Data](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb546145(v=vs.120))

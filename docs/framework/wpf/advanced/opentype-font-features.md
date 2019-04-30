@@ -20,15 +20,15 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
   
  The [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] font format addresses the following developer challenges:  
   
--   Broader multi-platform support.  
+- Broader multi-platform support.  
   
--   Better support for international character sets.  
+- Better support for international character sets.  
   
--   Better protection for font data.  
+- Better protection for font data.  
   
--   Smaller file sizes to make font distribution more efficient.  
+- Smaller file sizes to make font distribution more efficient.  
   
--   Broader support for advanced typographic control.  
+- Broader support for advanced typographic control.  
   
 > [!NOTE]
 >  The Windows SDK contains a set of sample [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts that you can use with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
@@ -38,11 +38,11 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
 ### Advanced Typographic Extensions  
  The Advanced Typographic tables ([!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] Layout tables) extend the functionality of fonts with either [!INCLUDE[TLA2#tla_truetype](../../../../includes/tla2sharptla-truetype-md.md)] or CFF outlines. [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] Layout fonts contain additional information that extends the capabilities of the fonts to support high-quality international typography. Most [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts expose only a subset of the total [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] features available. [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts provide the following features.  
   
--   Rich mapping between characters and glyphs that support ligatures, positional forms, alternates, and other font substitutions.  
+- Rich mapping between characters and glyphs that support ligatures, positional forms, alternates, and other font substitutions.  
   
--   Support for two-dimensional positioning and glyph attachment.  
+- Support for two-dimensional positioning and glyph attachment.  
   
--   Explicit script and language information contained in font, so a text-processing application can adjust its behavior accordingly.  
+- Explicit script and language information contained in font, so a text-processing application can adjust its behavior accordingly.  
   
  The [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] Layout tables are described in more detail in the ["Font File Tables"](https://www.microsoft.com/typography/otspec/otff.htm) section of the [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] specification.  
   
@@ -114,13 +114,13 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
 ## Ligatures  
  Ligatures are two or more glyphs that are formed into a single glyph in order to create more readable or attractive text. [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts support four types of ligatures:  
   
--   **Standard ligatures**. Designed to enhance readability. Standard ligatures include "fi", "fl", and "ff".  
+- **Standard ligatures**. Designed to enhance readability. Standard ligatures include "fi", "fl", and "ff".  
   
--   **Contextual ligatures**. Designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
+- **Contextual ligatures**. Designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
   
--   **Discretionary ligatures**. Designed to be ornamental, and not specifically designed for readability.  
+- **Discretionary ligatures**. Designed to be ornamental, and not specifically designed for readability.  
   
--   **Historical ligatures**. Designed to be historical, and not specifically designed for readability.  
+- **Historical ligatures**. Designed to be historical, and not specifically designed for readability.  
   
  The following text displays standard ligature glyphs for the Pericles font.  
   
@@ -155,8 +155,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
  Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
   
  ![Text using OpenType standard and swash glyphs](./media/opentype-font-features/opentype-standard-swash-glyphs.gif "Text using OpenType standard and swash glyphs")  
-  
-  
+
  Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
   
  ![Text using OpenType swashes](./media/opentype-font-features/opentype-swashes.gif "Text using OpenType swashes")  
@@ -179,8 +178,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
  Alternates are glyphs that can be substituted for a standard glyph. [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts, such as the Pericles font used in the following examples, can contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
   
  ![Text using OpenType standard glyphs](./media/opentype-font-features/opentype-standard-glyphs.gif "Text using OpenType standard glyphs")  
-  
-  
+
  The Pericles [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
   
  ![Text using OpenType stylistic alternate glyphs](./media/opentype-font-features/opentype-stylistic-alternate-glyphs.gif "Text using OpenType stylistic alternate glyphs")  
@@ -332,6 +330,7 @@ This topic provides an overview of some of the key features of [!INCLUDE[TLA#tla
 |<xref:System.Windows.Documents.Typography.Variants%2A>|<xref:System.Windows.FontVariants.Inferior> &#124; <xref:System.Windows.FontVariants.Normal> &#124; <xref:System.Windows.FontVariants.Ordinal> &#124; <xref:System.Windows.FontVariants.Ruby> &#124; <xref:System.Windows.FontVariants.Subscript> &#124; <xref:System.Windows.FontVariants.Superscript>|<xref:System.Windows.FontVariants.Normal?displayProperty=nameWithType>|  
   
 ## See also
+
 - <xref:System.Windows.Documents.Typography>
 - [OpenType Specification](https://go.microsoft.com/fwlink/?LinkId=96731)
 - [Typography in WPF](typography-in-wpf.md)

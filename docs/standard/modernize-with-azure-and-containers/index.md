@@ -7,7 +7,7 @@ ms.date: 04/28/2018
 ---
 # Modernize existing .NET applications with Azure cloud and Windows Containers (2nd edition)
 
-![cover image](./media/cover.png)
+![Cover image of the Modernize .NET applications guide.](./media/index/web-application-guide-cover-image.png)
 
 PUBLISHED BY  
 Microsoft Press and Microsoft DevDiv  
@@ -117,7 +117,7 @@ Each maturity level in the modernization process is associated with the followin
 
 - **Cloud-Optimized** (Managed Services and Windows Containers): This model is about making a few important deployment optimizations to gain some significant benefits from the cloud, without changing the core architecture of the application. The fundamental step here is to add [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/) support to your existing .NET Framework applications. This important step (containerization) doesn't require touching the code, so the overall lift and shift effort is light. You can use tools like [Image2Docker](https://github.com/docker/communitytools-image2docker-win) or Visual Studio, with its tools for [Docker](https://www.docker.com/). Visual Studio automatically chooses smart defaults for ASP.NET applications and Windows Containers images. These tools offer both a rapid inner loop, and a fast path to get the containers to Azure. Your agility is improved when you deploy to multiple environments. 
 Then, moving to production, you can deploy your Windows Containers to [Azure Web App for Containers](https://azure.microsoft.com/services/app-service/containers/), [Azure Container Instances (ACI), and Azure VMs with Windows Server 2016 and containers if you prefer an IaaS approach. For slightly more complex multi-container applications, into orchestrators like [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) or [Azure Kubernetes Service (AKS/ACS)](https://azure.microsoft.com/services/container-service/). 
-During this initial modernization, you can also add assets from the cloud, such as monitoring with tools like [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview); CI/CD pipelines for your app lifecycles with [Azure DevOps Services](https://visualstudio.microsoft.com/team-services/); and many more data resource services that are available in Azure. For instance, you can modify a monolithic web app that was originally developed by using traditional [ASP.NET Web Forms](https://www.asp.net/web-forms) or [ASP.NET MVC](https://www.asp.net/mvc), but now you deploy it by using Windows Containers. When you use Windows Containers, you should also migrate your data to a database in [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/), all without changing the core architecture of your application.
+During this initial modernization, you can also add assets from the cloud, such as monitoring with tools like [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview); CI/CD pipelines for your app lifecycles with [Azure DevOps Services](https://azure.microsoft.com/services/devops/); and many more data resource services that are available in Azure. For instance, you can modify a monolithic web app that was originally developed by using traditional [ASP.NET Web Forms](https://www.asp.net/web-forms) or [ASP.NET MVC](https://www.asp.net/mvc), but now you deploy it by using Windows Containers. When you use Windows Containers, you should also migrate your data to a database in [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/), all without changing the core architecture of your application.
 
 - **Cloud-Native**: As introduced, you should think about architecting [cloud-native](https://www.gartner.com/doc/3181919/architect-design-cloudnative-applications) applications when you are targeting large and complex applications with multiple independent development teams working on different microservices that can be developed and deployed autonomously. Also, due to granularized and independent scalability per microservice. These architectural approaches face very important challenges and complexities but can be greatly simplified by using cloud PaaS and orchestrators like [Azure Kubernetes Service (AKS/ACS)](https://azure.microsoft.com/services/container-service/) (managed Kubernetes), [Azure Service Fabric, and [Azure Functions](https://azure.microsoft.com/services/functions/) for a serverless approach. All these approaches (like microservices and Serverless) typically require you to architect for the cloud and write new code—code that is adapted to specific PaaS platforms, or code that aligns with specific architectures, like microservices.
 
@@ -151,7 +151,6 @@ Next, as the ideal scenario for many existing .NET Framework applications to mig
 
 Going even further, you could extend your existing Cloud-Optimized application by adding a few microservices for specific scenarios. This would move you partially to the level of Cloud-Native model, which is not the main focus of the present guidance.
 
-
 ## What this guide does not cover
 
 This guide covers a specific subset of the example scenarios, as shown in Figure 1-7. This guide focuses only on lift and shift scenarios, and ultimately, on the Cloud-Optimized model. In the Cloud-Optimized model, a .NET Framework application is modernized by using Windows Containers, plus additional components like monitoring and CI/CD pipelines. Each component is fundamental to deploying applications to the cloud, faster, and with agility.
@@ -166,11 +165,14 @@ This guide doesn't show you how to create Cloud-Native applications, such as how
 
 ### Additional resources
 
-- **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book): [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+- **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book) \
+  <https://aka.ms/dockerlifecycleebook>
 
-- **.NET Microservices: Architecture for containerized .NET applications** (downloadable e-book): [*https://aka.ms/microservicesebook*](https://aka.ms/microservicesebook)
+- **.NET Microservices: Architecture for containerized .NET applications** (downloadable e-book) \
+  <https://aka.ms/microservicesebook>
 
-- **Architecting modern web applications with ASP.NET Core and Azure** (downloadable e-book): [*https://aka.ms/webappebook*](https://aka.ms/webappebook)
+- **Architecting modern web applications with ASP.NET Core and Azure** (downloadable e-book) \
+  <https://aka.ms/webappebook>
 
 ## Who should use this guide
 

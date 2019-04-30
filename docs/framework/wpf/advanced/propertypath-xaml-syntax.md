@@ -8,8 +8,7 @@ ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 ---
 # PropertyPath XAML Syntax
 The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.  
-    
-  
+
 <a name="where"></a>   
 ## Where PropertyPath Is Used  
  <xref:System.Windows.PropertyPath> is a common object that is used in several [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] features. Despite using the common <xref:System.Windows.PropertyPath> to convey property path information, the usages for each feature area where <xref:System.Windows.PropertyPath> is used as a type vary. Therefore, it is more practical to document the syntaxes on a per-feature basis.  
@@ -64,11 +63,11 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
   
  The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:  
   
--   The path is specified in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.  
+- The path is specified in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.  
   
--   The property is an attached property.  
+- The property is an attached property.  
   
--   You are binding to a static property.  
+- You are binding to a static property.  
   
  For use as storyboard target, the property specified as `propertyName` must be a <xref:System.Windows.DependencyProperty>.  
   
@@ -113,19 +112,19 @@ or
 ### Escapes for Property Path Strings  
  For certain business objects, you might encounter a case where the property path string requires an escape sequence in order to parse correctly. The need to escape should be rare, because many of these characters have similar naming-interaction issues in languages that would typically be used to define the business object.  
   
--   Inside indexers ([ ]), the caret character (^) escapes the next character.  
+- Inside indexers ([ ]), the caret character (^) escapes the next character.  
   
--   You must escape (using XML entities) certain characters that are special to the XML language definition. Use `&` to escape the character "&". Use `>` to escape the end tag ">".  
+- You must escape (using XML entities) certain characters that are special to the XML language definition. Use `&` to escape the character "&". Use `>` to escape the end tag ">".  
   
--   You must escape (using backslash `\`) characters that are special to the WPF XAML parser behavior for processing a markup extension.  
+- You must escape (using backslash `\`) characters that are special to the WPF XAML parser behavior for processing a markup extension.  
   
-    -   Backslash (`\`) is the escape character itself.  
+    - Backslash (`\`) is the escape character itself.  
   
-    -   The equal sign (`=`) separates property name from property value.  
+    - The equal sign (`=`) separates property name from property value.  
   
-    -   Comma (`,`) separates properties.  
+    - Comma (`,`) separates properties.  
   
-    -   The right curly brace (`}`) is the end of a markup extension.  
+    - The right curly brace (`}`) is the end of a markup extension.  
   
 > [!NOTE]
 >  Technically, these escapes work for a storyboard property path also, but you are usually traversing object models for existing WPF objects, and escaping should be unnecessary.  
@@ -191,6 +190,7 @@ or
  In general, <xref:System.Windows.PropertyPath> is designed to use two different constructors, one for the binding usages and simplest animation usages, and one for the complex animation usages. Use the <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> signature for binding usages, where the object is a string. Use the <xref:System.Windows.PropertyPath.%23ctor%28System.Object%29> signature for one-step animation paths, where the object is a <xref:System.Windows.DependencyProperty>. Use the <xref:System.Windows.PropertyPath.%23ctor%28System.String%2CSystem.Object%5B%5D%29> signature for complex animations. This latter constructor uses a token string for the first parameter and an array of objects that fill positions in the token string to define a property path relationship.  
   
 ## See also
+
 - <xref:System.Windows.PropertyPath>
 - [Data Binding Overview](../data/data-binding-overview.md)
 - [Storyboards Overview](../graphics-multimedia/storyboards-overview.md)

@@ -18,7 +18,7 @@ Hiding menu items is a way to control the user interface of your application and
   
 ### To hide any menu item programmatically  
   
--   Within the method where you set the properties of the menu item, add code to set the <xref:System.Windows.Forms.ToolStripItem.Visible%2A> property to `false`.  
+- Within the method where you set the properties of the menu item, add code to set the <xref:System.Windows.Forms.ToolStripItem.Visible%2A> property to `false`.  
   
     ```vb  
     MenuItem3.Visible = False  
@@ -33,6 +33,7 @@ Hiding menu items is a way to control the user interface of your application and
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ToolStripItem.Visible%2A>
 - <xref:System.Windows.Forms.MenuStrip>
 - [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)

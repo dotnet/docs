@@ -21,19 +21,19 @@ If you intend to share an assembly among several applications, you can install i
   
  There are several reasons why you might want to install an assembly into the global assembly cache:  
   
--   Shared location.  
+- Shared location.  
   
      Assemblies that should be used by applications can be put in the global assembly cache. For example, if all applications should use an assembly located in the global assembly cache, a version policy statement can be added to the Machine.config file that redirects references to the assembly.  
   
--   File security.  
+- File security.  
   
      Administrators often protect the systemroot directory using an Access Control List (ACL) to control write and execute access. Because the global assembly cache is installed in the systemroot directory, it inherits that directory's ACL. It is recommended that only users with Administrator privileges be allowed to delete files from the global assembly cache.  
   
--   Side-by-side versioning.  
+- Side-by-side versioning.  
   
      Multiple copies of assemblies with the same name but different version information can be maintained in the global assembly cache.  
   
--   Additional search location.  
+- Additional search location.  
   
      The common language runtime checks the global assembly cache for an assembly that matches the assembly request before probing or using the codebase information in a configuration file.  
   

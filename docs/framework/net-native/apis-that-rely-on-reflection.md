@@ -45,11 +45,11 @@ App1.AppClass`1<System.Int32>.
   
  To run successfully, this code requires several items of metadata:  
   
--   `Browse` metadata for the type whose method you want to call.  
+- `Browse` metadata for the type whose method you want to call.  
   
--   `Browse` metadata for the method you want to call.  If it is a public method, adding public `Browse` metadata for the containing type includes the method, too.  
+- `Browse` metadata for the method you want to call.  If it is a public method, adding public `Browse` metadata for the containing type includes the method, too.  
   
--   Dynamic metadata for the method you want to call, so that the reflection invocation delegate is not removed by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. If dynamic metadata is missing for the method, the following exception is thrown when the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method is called:  
+- Dynamic metadata for the method you want to call, so that the reflection invocation delegate is not removed by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. If dynamic metadata is missing for the method, the following exception is thrown when the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method is called:  
   
     ```  
     MakeGenericMethod() cannot create this generic method instantiation because the instantiation was not metadata-enabled: 'App1.Class1.GenMethod<Int32>(Int32)'.  
@@ -87,5 +87,6 @@ Unfortunately, no further information is available.
 ```  
   
 ## See also
+
 - [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

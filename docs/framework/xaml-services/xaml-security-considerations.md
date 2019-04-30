@@ -28,12 +28,13 @@ This topic describes best practices for security in applications when you use XA
 ## XAML Namespaces and Assembly Trust  
  The basic unqualified syntax and definition for how XAML interprets a custom XAML namespace mapping to an assembly does not distinguish between a trusted and untrusted assembly as loaded into the application domain. Thus, it is technically possible for an untrusted assembly to spoof a trusted assembly's intended XAML namespace mapping and capture a XAML source's declared object and property information. If you have security requirements to avoid this situation, your intended XAML namespace mapping should be made using one of the following techniques:  
   
--   Use a fully qualified assembly name with strong name in any XAML namespace mapping made by your application's XAML.  
+- Use a fully qualified assembly name with strong name in any XAML namespace mapping made by your application's XAML.  
   
--   Restrict assembly mapping to a fixed set of reference assemblies, by constructing a specific <xref:System.Xaml.XamlSchemaContext> for your XAML readers and XAML object writers. See <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Reflection.Assembly%7D%29>.  
+- Restrict assembly mapping to a fixed set of reference assemblies, by constructing a specific <xref:System.Xaml.XamlSchemaContext> for your XAML readers and XAML object writers. See <xref:System.Xaml.XamlSchemaContext.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.Reflection.Assembly%7D%29>.  
   
 ## XAML Type Mapping and Type System Access  
  XAML supports its own type system, which in many ways is a peer to how CLR implements the basic CLR type system. However, for certain aspects of type awareness where you are making trust decisions about a type based on its type information, you should defer to the type information in the CLR backing types. This is because some of the specific reporting capabilities of the XAML type system are left open as virtual methods and are therefore, not fully under the control of the original .NET Framework XAML Services implementations. These extensibility points exist because the XAML type system is extensible, to match the extensibility of XAML itself and its possible alternative type-mapping strategies versus the default CLR-backed implementation and default XAML schema context. For more information, see the specific notes on several of the properties of <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>.  
   
 ## See also
+
 - <xref:System.Xaml.Permissions.XamlAccessLevel>

@@ -19,9 +19,9 @@ A property procedure is a series of Visual Basic statements that manipulate a cu
   
  Visual Basic provides for the following property procedures:  
   
--   A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
+- A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
   
--   A `Set` procedure sets a property to a value, including an object reference. It is called when you assign a value to the property.  
+- A `Set` procedure sets a property to a value, including an object reference. It is called when you assign a value to the property.  
   
  You usually define property procedures in pairs, using the `Get` and `Set` statements, but you can define either procedure alone if the property is read-only ([Get Statement](../../../../visual-basic/language-reference/statements/get-statement.md)) or write-only ([Set Statement](../../../../visual-basic/language-reference/statements/set-statement.md)).  
   
@@ -100,6 +100,7 @@ End Property
  [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Function Procedures](./function-procedures.md)
 - [Operator Procedures](./operator-procedures.md)

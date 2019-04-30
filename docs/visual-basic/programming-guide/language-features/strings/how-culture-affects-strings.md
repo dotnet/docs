@@ -23,9 +23,9 @@ This Help page discusses how Visual Basic uses culture information to perform st
   
  The `Str` (converts numbers to strings) and `Val` (converts strings to numbers) functions do not use the application's culture information when converting between strings and numbers. Instead, they recognize only the period (.) as a valid decimal separator. The culturally-aware analogues of these functions are:  
   
--   **Conversions that use the current culture.** The `CStr` and `Format` functions convert a number to a string, and the `CDbl` and `CInt` functions convert a string to a number.  
+- **Conversions that use the current culture.** The `CStr` and `Format` functions convert a number to a string, and the `CDbl` and `CInt` functions convert a string to a number.  
   
--   **Conversions that use a specific culture.** Each number object has a `ToString(IFormatProvider)` method that converts a number to a string, and a `Parse(String, IFormatProvider)` method that converts a string to a number. For example, the `Double` type provides the <xref:System.Double.ToString%28System.IFormatProvider%29> and <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> methods.  
+- **Conversions that use a specific culture.** Each number object has a `ToString(IFormatProvider)` method that converts a number to a string, and a `Parse(String, IFormatProvider)` method that converts a string to a number. For example, the `Double` type provides the <xref:System.Double.ToString%28System.IFormatProvider%29> and <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> methods.  
   
  For more information, see <xref:Microsoft.VisualBasic.Conversion.Str%2A> and <xref:Microsoft.VisualBasic.Conversion.Val%2A>.  
   
@@ -46,9 +46,9 @@ This Help page discusses how Visual Basic uses culture information to perform st
 ## Comparing Strings  
  There are two important situations where string comparisons are needed:  
   
--   **Sorting data for display to the user.** Use operations based on the current culture so the strings sort appropriately.  
+- **Sorting data for display to the user.** Use operations based on the current culture so the strings sort appropriately.  
   
--   **Determining if two application-internal strings exactly match (typically for security purposes).** Use operations that disregard the current culture.  
+- **Determining if two application-internal strings exactly match (typically for security purposes).** Use operations that disregard the current culture.  
   
  You can perform both types of comparisons with the Visual Basic <xref:Microsoft.VisualBasic.Strings.StrComp%2A> function. Specify the optional `Compare` argument to control the type of comparison: `Text` for most input and output `Binary` for determining exact matches.  
   
@@ -73,6 +73,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass `Ordinal` or `OrdinalIgnoreCase` for the `comparisonType` argument.  
   
 ## See also
+
 - <xref:System.Globalization.CultureInfo>
 - [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
 - [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

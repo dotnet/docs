@@ -8,9 +8,10 @@ You are specifying a file while attempting to perform a folder-related action.
   
 ## To correct this error  
   
--   Check the path you are supplying to make sure you are specifying a folder rather than a file.  
+- Check the path you are supplying to make sure you are specifying a folder rather than a file.  
   
 ## See also
+
 - [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
 - [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

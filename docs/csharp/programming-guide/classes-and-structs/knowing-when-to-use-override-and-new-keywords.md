@@ -33,11 +33,11 @@ class DerivedClass : BaseClass
   
  In the `Main` method, declare variables `bc`, `dc`, and `bcdc`.  
   
--   `bc` is of type `BaseClass`, and its value is of type `BaseClass`.  
+- `bc` is of type `BaseClass`, and its value is of type `BaseClass`.  
   
--   `dc` is of type `DerivedClass`, and its value is of type `DerivedClass`.  
+- `dc` is of type `DerivedClass`, and its value is of type `DerivedClass`.  
   
--   `bcdc` is of type `BaseClass`, and its value is of type `DerivedClass`. This is the variable to pay attention to.  
+- `bcdc` is of type `BaseClass`, and its value is of type `DerivedClass`. This is the variable to pay attention to.  
   
  Because `bc` and `bcdc` have type `BaseClass`, they can only directly access `Method1`, unless you use casting. Variable `dc` can access both `Method1` and `Method2`. These relationships are shown in the following code.  
   

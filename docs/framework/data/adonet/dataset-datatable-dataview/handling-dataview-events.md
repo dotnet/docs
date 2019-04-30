@@ -46,6 +46,7 @@ protected static void OnListChanged(object sender,
 ```  
   
 ## See also
+
 - <xref:System.Data.DataView>
 - <xref:System.ComponentModel.ListChangedEventHandler>
 - [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)

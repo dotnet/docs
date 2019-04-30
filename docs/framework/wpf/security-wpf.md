@@ -25,17 +25,17 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  This topic contains the following sections:  
   
--   [Safe Navigation](#SafeTopLevelNavigation)  
+- [Safe Navigation](#SafeTopLevelNavigation)  
   
--   [Web Browsing Software Security Settings](#InternetExplorerSecuritySettings)  
+- [Web Browsing Software Security Settings](#InternetExplorerSecuritySettings)  
   
--   [WebBrowser Control and Feature Controls](#webbrowser_control_and_feature_controls)  
+- [WebBrowser Control and Feature Controls](#webbrowser_control_and_feature_controls)  
   
--   [Disabling APTCA Assemblies for Partially Trusted Client Applications](#APTCA)  
+- [Disabling APTCA Assemblies for Partially Trusted Client Applications](#APTCA)  
   
--   [Sandbox Behavior for Loose XAML Files](#LooseContentSandboxing)  
+- [Sandbox Behavior for Loose XAML Files](#LooseContentSandboxing)  
   
--   [Resources for Developing WPF Applications that Promote Security](#BestPractices)  
+- [Resources for Developing WPF Applications that Promote Security](#BestPractices)  
   
 <a name="SafeTopLevelNavigation"></a>   
 ## Safe Navigation  
@@ -43,7 +43,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  *Application navigation* is navigation between items of content within an application that is hosted by a browser. *Browser navigation* is navigation that changes the content and location URL of a browser itself. The relationship between application navigation (typically XAML) and browser navigation (typically HTML) is shown in the following illustration:
   
- ![Navigation diagram](./media/safetoplevelnavigationfigure.png "SafeTopLevelNavigationFigure")  
+ ![Relationship between application navigation and browser navigation.](./media/security-wpf/application-browser-navigation-relationship.png)  
   
  The type of content that is considered safe for an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] to navigate to is primarily determined by whether application navigation or browser navigation is used.  
   
@@ -63,19 +63,19 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  Files of these content types can be navigated to by either the user or programmatically:  
   
--   **User Navigation**. The user navigates by clicking a <xref:System.Windows.Documents.Hyperlink> element.  
+- **User Navigation**. The user navigates by clicking a <xref:System.Windows.Documents.Hyperlink> element.  
   
--   **Programmatic Navigation**. The application navigates without involving the user, for example, by setting the <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=nameWithType> property.  
+- **Programmatic Navigation**. The application navigates without involving the user, for example, by setting the <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=nameWithType> property.  
   
 <a name="Browser_Navigation_Security"></a>   
 ### Browser Navigation Security  
  Browser navigation is considered safe only under the following conditions:  
   
--   **User Navigation**. The user navigates by clicking a <xref:System.Windows.Documents.Hyperlink> element that is within the main <xref:System.Windows.Navigation.NavigationWindow>, not in a nested <xref:System.Windows.Controls.Frame>.  
+- **User Navigation**. The user navigates by clicking a <xref:System.Windows.Documents.Hyperlink> element that is within the main <xref:System.Windows.Navigation.NavigationWindow>, not in a nested <xref:System.Windows.Controls.Frame>.  
   
--   **Zone**. The content being navigated to is located on the Internet or the local intranet.  
+- **Zone**. The content being navigated to is located on the Internet or the local intranet.  
   
--   **Protocol**. The protocol being used is either **http**, **https**, **file**, or **mailto**.  
+- **Protocol**. The protocol being used is either **http**, **https**, **file**, or **mailto**.  
   
  If an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] attempts to navigate to content in a manner that does not comply with these conditions, a <xref:System.Security.SecurityException> is thrown.  
   
@@ -85,40 +85,40 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] provides a mechanism by which you can configure the functionality that is allowed to be executed by or from [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)], including the following:  
   
--   .NET Framework-reliant components  
+- .NET Framework-reliant components  
   
--   ActiveX controls and plug-ins  
+- ActiveX controls and plug-ins  
   
--   Downloads  
+- Downloads  
   
--   Scripting  
+- Scripting  
   
--   User Authentication  
+- User Authentication  
   
  The collection of functionality that can be secured in this way is configured on a per-zone basis for the **Internet**, **Intranet**, **Trusted Sites**, and **Restricted Sites** zones. The following steps describe how to configure your security settings:  
   
-1.  Open **Control Panel**.  
+1. Open **Control Panel**.  
   
-2.  Click **Network and Internet** and then click **Internet Options**.  
+2. Click **Network and Internet** and then click **Internet Options**.  
   
      The Internet Options dialog box appears.  
   
-3.  On the **Security** tab, select the zone to configure the security settings for.  
+3. On the **Security** tab, select the zone to configure the security settings for.  
   
-4.  Click the **Custom Level** button.  
+4. Click the **Custom Level** button.  
   
      The **Security Settings** dialog box appears and you can configure the security settings for the selected zone.  
   
-     ![Security Settings dialog box](./media/wpfsecurityfigure1.PNG "WPFSecurityFigure1")  
+     ![Screenshot that shows the Security Settings dialog box.](./media/security-wpf/windows-presentation-foundation-security-settings.png)  
   
 > [!NOTE]
 >  You can also get to the Internet Options dialog box from Internet Explorer. Click **Tools** and then click **Internet Options**.  
   
  Starting with [!INCLUDE[TLA#tla_ie7](../../../includes/tlasharptla-ie7-md.md)], the following security settings specifically for .NET Framework are included:  
   
--   **Loose XAML**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
+- **Loose XAML**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
   
--   **XAML browser applications**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
+- **XAML browser applications**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
   
  By default, these settings are all enabled for the **Internet**, **Local intranet**, and **Trusted sites** zones, and disabled for the **Restricted sites** zone.  
   
@@ -226,11 +226,11 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  This key establishes an entry for the APTCA assembly. You also have to create a value in this key that enables or disables the assembly. The following are the details of the value:  
   
--   Value Name: **APTCA_FLAG**.  
+- Value Name: **APTCA_FLAG**.  
   
--   Value Type: **REG_DWORD**.  
+- Value Type: **REG_DWORD**.  
   
--   Value Data: **1** to disable; **0** to enable.  
+- Value Data: **1** to disable; **0** to enable.  
   
  If an assembly has to be disabled for partially trusted client applications, you can write an update that creates the registry key and value.  
   
@@ -266,6 +266,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](wpf-partial-trust-security.md)|  
   
 ## See also
+
 - [WPF Partial Trust Security](wpf-partial-trust-security.md)
 - [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)
 - [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)

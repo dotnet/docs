@@ -19,35 +19,35 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  The overall objectives are the following:  
   
-1.  If the client is updated to support the extended protection, applications should supply a channel binding and service binding information to all supported authentication protocols. Channel binding information can only be supplied when there is a channel (TLS) to bind to. Service binding information should always be supplied.  
+1. If the client is updated to support the extended protection, applications should supply a channel binding and service binding information to all supported authentication protocols. Channel binding information can only be supplied when there is a channel (TLS) to bind to. Service binding information should always be supplied.  
   
-2.  Updated servers which are properly configured may verify the channel and service binding information when it is present in the client authentication token and reject the authentication attempt if the channel bindings do not match. Depending on the deployment scenario, servers may verify channel binding, service binding or both.  
+2. Updated servers which are properly configured may verify the channel and service binding information when it is present in the client authentication token and reject the authentication attempt if the channel bindings do not match. Depending on the deployment scenario, servers may verify channel binding, service binding or both.  
   
-3.  Updated servers have the ability to accept or reject down-level client requests that do not contain the channel binding information based on policy.  
+3. Updated servers have the ability to accept or reject down-level client requests that do not contain the channel binding information based on policy.  
   
  Information used by extended protection consists of one or both of the following two parts:  
   
-1.  A Channel Binding Token or CBT.  
+1. A Channel Binding Token or CBT.  
   
-2.  Service Binding information in the form of a Service Principal Name or SPN.  
+2. Service Binding information in the form of a Service Principal Name or SPN.  
   
  Service Binding information is an indication of a client’s intent to authenticate to a particular service endpoint. It is communicated from client to server with the following properties:  
   
--   The SPN value must be available to the server performing client authentication in clear text form.  
+- The SPN value must be available to the server performing client authentication in clear text form.  
   
--   The value of the SPN is public.  
+- The value of the SPN is public.  
   
--   The SPN must be cryptographically protected in transit such that a man-in-the-middle attack cannot insert, remove or modify its value.  
+- The SPN must be cryptographically protected in transit such that a man-in-the-middle attack cannot insert, remove or modify its value.  
   
  A CBT is a property of the outer secure channel (such as TLS) used to tie (bind) it to a conversation over an inner, client-authenticated channel. The CBT must have the following properties (also defined by IETF RFC 5056):  
   
--   When an outer channel exists, the value of the CBT must be a property identifying either the outer channel or the server endpoint, independently arrived at by both client and server sides of a conversation.  
+- When an outer channel exists, the value of the CBT must be a property identifying either the outer channel or the server endpoint, independently arrived at by both client and server sides of a conversation.  
   
--   Value of the CBT sent by the client must not be something an attacker can influence.  
+- Value of the CBT sent by the client must not be something an attacker can influence.  
   
--   No guarantees are made about secrecy of the CBT value. This does not however mean that the value of the service binding as well as channel binding information can always be examined by any other but the server performing authentication, as the protocol carrying the CBT may be encrypting it.  
+- No guarantees are made about secrecy of the CBT value. This does not however mean that the value of the service binding as well as channel binding information can always be examined by any other but the server performing authentication, as the protocol carrying the CBT may be encrypting it.  
   
--   The CBT must be cryptographically integrity protected in transit such that an attacker cannot insert, remove or modify its value.  
+- The CBT must be cryptographically integrity protected in transit such that an attacker cannot insert, remove or modify its value.  
   
  Channel binding is accomplished by the client transferring the SPN and the CBT to the server in a tamperproof fashion. The server validates the channel binding information in accordance with its policy and rejects authentication attempts for which it does not believe itself to have been the intended target. This way, the two channels become cryptographically bound together.  
   
@@ -66,37 +66,37 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  A <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> that has the following elements:  
   
--   An <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.OSSupportsExtendedProtection%2A> property that indicates whether the operating system supports integrated windows authentication with extended protection.  
+- An <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.OSSupportsExtendedProtection%2A> property that indicates whether the operating system supports integrated windows authentication with extended protection.  
   
--   A <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> value that indicates when the extended protection policy should be enforced.  
+- A <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> value that indicates when the extended protection policy should be enforced.  
   
--   A <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> value that indicates the deployment scenario. This influences how extended protection is checked.  
+- A <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> value that indicates the deployment scenario. This influences how extended protection is checked.  
   
--   An optional <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> that contains the custom SPN list that is used to match against the SPN provided by the client as the intended target of the authentication.  
+- An optional <xref:System.Security.Authentication.ExtendedProtection.ServiceNameCollection> that contains the custom SPN list that is used to match against the SPN provided by the client as the intended target of the authentication.  
   
--   An optional <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> that contains a custom channel binding to use for validation. This scenario is not a common case  
+- An optional <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> that contains a custom channel binding to use for validation. This scenario is not a common case  
   
  The <xref:System.Security.Authentication.ExtendedProtection.Configuration> namespace provides support for configuration of authentication using extended protection for applications.  
   
  A number of feature changes were made to support extended protection in the existing <xref:System.Net> namespace. These changes include the following:  
   
--   A new <xref:System.Net.TransportContext> class added to the <xref:System.Net> namespace that represents a transport context.  
+- A new <xref:System.Net.TransportContext> class added to the <xref:System.Net> namespace that represents a transport context.  
   
--   New <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> and <xref:System.Net.HttpWebRequest.GetRequestStream%2A> overload methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> to support extended protection for client applications.  
+- New <xref:System.Net.HttpWebRequest.EndGetRequestStream%2A> and <xref:System.Net.HttpWebRequest.GetRequestStream%2A> overload methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> to support extended protection for client applications.  
   
--   Additions to the <xref:System.Net.HttpListener> and <xref:System.Net.HttpListenerRequest> classes to support server applications.  
+- Additions to the <xref:System.Net.HttpListener> and <xref:System.Net.HttpListenerRequest> classes to support server applications.  
   
  A feature change was made to support extended protection for SMTP client applications in the existing <xref:System.Net.Mail> namespace:  
   
--   A <xref:System.Net.Mail.SmtpClient.TargetName%2A> property in the <xref:System.Net.Mail.SmtpClient> class that represents the SPN to use for authentication when using extended protection for SMTP client applications.  
+- A <xref:System.Net.Mail.SmtpClient.TargetName%2A> property in the <xref:System.Net.Mail.SmtpClient> class that represents the SPN to use for authentication when using extended protection for SMTP client applications.  
   
  A number of feature changes were made to support extended protection in the existing <xref:System.Net.Security> namespace. These changes include the following:  
   
--   New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing a CBT to support extended protection for client applications.  
+- New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing a CBT to support extended protection for client applications.  
   
--   New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> to support extended protection for server applications.  
+- New <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> and <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> overload methods in the <xref:System.Net.Security.NegotiateStream> class that allow passing an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> to support extended protection for server applications.  
   
--   A new <xref:System.Net.Security.SslStream.TransportContext%2A> property in the <xref:System.Net.Security.SslStream> class to support extended protection for client and server applications.  
+- A new <xref:System.Net.Security.SslStream.TransportContext%2A> property in the <xref:System.Net.Security.SslStream> class to support extended protection for client and server applications.  
   
  A <xref:System.Net.Configuration.SmtpNetworkElement> property was added to support configuration of extended protection for SMTP clients in the <xref:System.Net.Security> namespace.  
   
@@ -116,11 +116,11 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  In this configuration when a request is made to the server through an outer secure channel, the outer channel is queried for a channel binding. This channel binding is passed to the authentication SSPI calls, which validate that the channel binding in the authentication blob matches. There are three possible outcomes:  
   
-1.  The server’s underlying operating system does not support extended protection. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
+1. The server’s underlying operating system does not support extended protection. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
   
-2.  The SSPI call fails indicating that either the client specified a channel binding that did not match the expected value retrieved from the outer channel or the client failed to supply a channel binding when the extended protection policy on the server was configured for <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>. In both cases, the request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
+2. The SSPI call fails indicating that either the client specified a channel binding that did not match the expected value retrieved from the outer channel or the client failed to supply a channel binding when the extended protection policy on the server was configured for <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>. In both cases, the request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
   
-3.  The client specifies the correct channel binding or is allowed to connect without specifying a channel binding since the extended protection policy on the server is configured with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> The request is returned to the application for processing. No service name check is performed automatically. An application may choose to perform its own service name validation using the <xref:System.Net.HttpListenerRequest.ServiceName%2A> property, but under these circumstances it is redundant.  
+3. The client specifies the correct channel binding or is allowed to connect without specifying a channel binding since the extended protection policy on the server is configured with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> The request is returned to the application for processing. No service name check is performed automatically. An application may choose to perform its own service name validation using the <xref:System.Net.HttpListenerRequest.ServiceName%2A> property, but under these circumstances it is redundant.  
   
  If an application makes its own SSPI calls to perform authentication based on blobs passed back and forth within the body of an HTTP request and wishes to support channel binding, it needs to retrieve the expected channel binding from the outer secure channel using <xref:System.Net.HttpListener> in order to pass it to native Win32 [AcceptSecurityContext](https://go.microsoft.com/fwlink/?LinkId=147021) function. To do this, use the <xref:System.Net.HttpListenerRequest.TransportContext%2A> property and call <xref:System.Net.TransportContext.GetChannelBinding%2A> method to retrieve the CBT. Only endpoint bindings are supported. If anything other <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint> is specified, a <xref:System.NotSupportedException> will be thrown. If the underlying operating system supports channel binding, the <xref:System.Net.TransportContext.GetChannelBinding%2A> method will return a <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding><xref:System.Runtime.InteropServices.SafeHandle> wrapping a pointer to a channel binding suitable for passing to [AcceptSecurityContext](https://go.microsoft.com/fwlink/?LinkId=147021) function as the pvBuffer member of a SecBuffer structure passed in the `pInput` parameter. The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding.Size%2A> property contains the length, in bytes, of the channel binding. If the underlying operating system does not support channel bindings, the function will return `null`.  
   
@@ -130,18 +130,19 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  In this configuration, when a request is made to the server without an outer secure channel authentication proceeds normally without a channel binding check. If the authentication succeeds, the context is queried for the service name that the client provided and validated against the list of acceptable service names. There are four possible outcomes:  
   
-1.  The server’s underlying operating system does not support extended protection. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
+1. The server’s underlying operating system does not support extended protection. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
   
-2.  The client’s underlying operating system does not support extended protection. In the <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> configuration, the authentication attempt will succeed and the request will be returned to the application. In the <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> configuration, the authentication attempt will fail. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
+2. The client’s underlying operating system does not support extended protection. In the <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> configuration, the authentication attempt will succeed and the request will be returned to the application. In the <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> configuration, the authentication attempt will fail. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
   
-3.  The client’s underlying operating system supports extended protection, but the application did not specify a service binding. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
+3. The client’s underlying operating system supports extended protection, but the application did not specify a service binding. The request will not be exposed to the application, and an unauthorized (401) response will be returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
   
-4.  The client specified a service binding. The service binding is compared to the list of allowed service bindings. If it matches, the request is returned to the application. Otherwise, the request will not be exposed to the application, and an unauthorized (401) response will be automatically returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
+4. The client specified a service binding. The service binding is compared to the list of allowed service bindings. If it matches, the request is returned to the application. Otherwise, the request will not be exposed to the application, and an unauthorized (401) response will be automatically returned to the client. A message will be logged to the <xref:System.Net.HttpListener> trace source specifying the reason for the failure.  
   
  If this simple approach using an allowed list of acceptable service names is insufficient, an application may provide its own service name validation by querying the <xref:System.Net.HttpListenerRequest.ServiceName%2A> property. In cases 1 and 2 above, the property will return `null`. In case 3, it will return an empty string. In case 4, the service name specified by the client will be returned.  
   
  These extended protection features can also be used by server applications for authentication with other types of requests and when trusted proxies are used.  
   
 ## See also
+
 - <xref:System.Security.Authentication.ExtendedProtection>
 - <xref:System.Security.Authentication.ExtendedProtection.Configuration>

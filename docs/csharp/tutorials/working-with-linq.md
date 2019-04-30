@@ -110,7 +110,7 @@ The compiler translates LINQ statements written with query syntax into the equiv
 
 Go ahead and run the sample you've built at this point. It will display all 52 cards in the deck. You may find it very helpful to run this sample under a debugger to observe how the `Suits()` and `Ranks()` methods execute. You can clearly see that each string in each sequence is generated only as it is needed.
 
-![Console window showing the app writing out 52 cards](./media/working-with-linq/console.png)
+![A console window showing the app writing out 52 cards.](./media/working-with-linq/console-52-card-application.png)
 
 ## Manipulating the Order
 
@@ -335,9 +335,9 @@ Aside from LINQ, you learned a bit about a technique magicians use for card tric
 
 For more information on LINQ, see:
 - [Language Integrated Query (LINQ)](../programming-guide/concepts/linq/index.md)
-    - [Introduction to LINQ](../programming-guide/concepts/linq/introduction-to-linq.md)
-    - [Getting Started With LINQ in C#](../programming-guide/concepts/linq/getting-started-with-linq.md)
-        - [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/basic-linq-query-operations.md)
-        - [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
-        - [Query Syntax and Method Syntax in LINQ (C#)](../programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md)
-        - [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)
+  - [Introduction to LINQ](../programming-guide/concepts/linq/introduction-to-linq.md)
+  - [Getting Started With LINQ in C#](../programming-guide/concepts/linq/getting-started-with-linq.md)
+    - [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/basic-linq-query-operations.md)
+    - [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
+    - [Query Syntax and Method Syntax in LINQ (C#)](../programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md)
+    - [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)

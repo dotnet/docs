@@ -150,7 +150,7 @@ Discriminated unions can be recursive, meaning that the union itself can be incl
 
 In the previous code, `resultSumTree` has the value 10. The following illustration shows the tree structure for `myTree`.
 
-![Tree structure for myTree](../media/TreeStructureDiagram.png)
+![Diagram that shows the tree structure for myTree.](../media/discriminated-unions/tree-structure-mytree.png)
 
 Discriminated unions work well if the nodes in the tree are heterogeneous. In the following code, the type `Expression` represents the abstract syntax tree of an expression in a simple programming language that supports addition and multiplication of numbers and variables. Some of the union cases are not recursive and represent either numbers (`Number`) or variables (`Variable`). Other cases are recursive, and represent operations (`Add` and `Multiply`), where the operands are also expressions. The `Evaluate` function uses a match expression to recursively process the syntax tree.
 

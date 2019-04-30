@@ -23,9 +23,9 @@ The following code example shows how to use virtual mode in the <xref:System.Win
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Data, System.Xml, and System.Windows.Forms assemblies.  
+- References to the System, System.Data, System.Xml, and System.Windows.Forms assemblies.  
   
--   Access to a server with the Northwind SQL Server sample database installed.  
+- Access to a server with the Northwind SQL Server sample database installed.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
@@ -33,6 +33,7 @@ The following code example shows how to use virtual mode in the <xref:System.Win
  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>
 - <xref:System.Windows.Forms.DataGridView.CellValueNeeded>

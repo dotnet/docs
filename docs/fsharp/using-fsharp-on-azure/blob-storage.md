@@ -96,14 +96,14 @@ You can also name blobs with path information in their names. This creates a vir
 
 For example, consider the following set of block blobs in a container named `photos`:
 
-*photo1.jpg*
-*2015/architecture/description.txt*
-*2015/architecture/photo3.jpg*
-*2015/architecture/photo4.jpg*
-*2016/architecture/photo5.jpg*
-*2016/architecture/photo6.jpg*
-*2016/architecture/description.txt*
-*2016/photo7.jpg*
+*photo1.jpg*\
+*2015/architecture/description.txt*\
+*2015/architecture/photo3.jpg*\
+*2015/architecture/photo4.jpg*\
+*2016/architecture/photo5.jpg*\
+*2016/architecture/photo6.jpg*\
+*2016/architecture/description.txt*\
+*2016/photo7.jpg*\
 
 When you call `ListBlobs` on a container (as in the above sample), a hierarchical listing is returned. If it contains both `CloudBlobDirectory` and `CloudBlockBlob` objects, representing the directories and blobs in the container, respectively, then the resulting output looks similar to this:
 
@@ -192,8 +192,8 @@ For more information, see [Managing Concurrency in Microsoft Azure Storage](http
 
 Every blob in Azure storage must reside in a container. The container forms part of the blob name. For example, `mydata` is the name of the container in these sample blob URIs:
 
-	https://storagesample.blob.core.windows.net/mydata/blob1.txt
-	https://storagesample.blob.core.windows.net/mydata/photos/myphoto.jpg
+    https://storagesample.blob.core.windows.net/mydata/blob1.txt
+    https://storagesample.blob.core.windows.net/mydata/photos/myphoto.jpg
 
 A container name must be a valid DNS name, conforming to the following naming rules:
 

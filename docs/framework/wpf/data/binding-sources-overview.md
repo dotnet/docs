@@ -9,9 +9,7 @@ ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 ---
 # Binding Sources Overview
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.  
-  
-  
-  
+
 <a name="binding_sources"></a>   
 ## Binding Source Types  
  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding supports the following binding source types:  
@@ -38,13 +36,13 @@ In data binding, the binding source object refers to the object you obtain data 
 ### Other Characteristics  
  The following list provides other important points to note:  
   
--   If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a default constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as C#, the default constructor might be created for you.  
+- If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a default constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as C#, the default constructor might be created for you.  
   
--   The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.  
+- The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.  
   
--   You cannot bind to public fields.  
+- You cannot bind to public fields.  
   
--   The type of the property declared in your class is the type that is passed to the binding. However, the type ultimately used by the binding depends on the type of the binding target property, not of the binding source property. If there is a difference in type, you might want to write a converter to handle how your custom property is initially passed to the binding. For more information, see <xref:System.Windows.Data.IValueConverter>.  
+- The type of the property declared in your class is the type that is passed to the binding. However, the type ultimately used by the binding depends on the type of the binding target property, not of the binding source property. If there is a difference in type, you might want to write a converter to handle how your custom property is initially passed to the binding. For more information, see <xref:System.Windows.Data.IValueConverter>.  
   
 <a name="objects"></a>   
 ## Using Entire Objects as a Binding Source  
@@ -76,11 +74,11 @@ In data binding, the binding source object refers to the object you obtain data 
   
  This table describes the following important points about permission requirements in data binding:  
   
--   For [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] properties, data binding works as long as the binding engine is able to access the binding source property using reflection. Otherwise, the binding engine issues a warning that the property cannot be found and uses the fallback value or the default value, if it is available.  
+- For [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] properties, data binding works as long as the binding engine is able to access the binding source property using reflection. Otherwise, the binding engine issues a warning that the property cannot be found and uses the fallback value or the default value, if it is available.  
   
--   You can bind to properties on dynamic objects that are defined at compile time or run time.  
+- You can bind to properties on dynamic objects that are defined at compile time or run time.  
   
--   You can always bind to dependency properties.  
+- You can always bind to dependency properties.  
   
  The permission requirement for [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] binding is similar. In a partial-trust sandbox, <xref:System.Windows.Data.XmlDataProvider> fails when it does not have permissions to access the specified data.  
   
@@ -89,6 +87,7 @@ In data binding, the binding source object refers to the object you obtain data 
  For more information about partial-trust security, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).  
   
 ## See also
+
 - <xref:System.Windows.Data.ObjectDataProvider>
 - <xref:System.Windows.Data.XmlDataProvider>
 - [Specify the Binding Source](how-to-specify-the-binding-source.md)

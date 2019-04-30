@@ -16,15 +16,15 @@ This topic introduces the <xref:System.Xml.Linq.XDocument> class.
 ## Components of XDocument  
  An <xref:System.Xml.Linq.XDocument> can contain the following elements:  
   
--   One <xref:System.Xml.Linq.XDeclaration> object. <xref:System.Xml.Linq.XDeclaration> enables you to specify the pertinent parts of an XML declaration: the XML version, the encoding of the document, and whether the XML document is stand-alone.  
+- One <xref:System.Xml.Linq.XDeclaration> object. <xref:System.Xml.Linq.XDeclaration> enables you to specify the pertinent parts of an XML declaration: the XML version, the encoding of the document, and whether the XML document is stand-alone.  
   
--   One <xref:System.Xml.Linq.XElement> object. This is the root node of the XML document.  
+- One <xref:System.Xml.Linq.XElement> object. This is the root node of the XML document.  
   
--   Any number of <xref:System.Xml.Linq.XProcessingInstruction> objects. A processing instruction communicates information to an application that processes the XML.  
+- Any number of <xref:System.Xml.Linq.XProcessingInstruction> objects. A processing instruction communicates information to an application that processes the XML.  
   
--   Any number of <xref:System.Xml.Linq.XComment> objects. The comments will be siblings to the root element. The <xref:System.Xml.Linq.XComment> object cannot be the first argument in the list, because it is not valid for an XML document to start with a comment.  
+- Any number of <xref:System.Xml.Linq.XComment> objects. The comments will be siblings to the root element. The <xref:System.Xml.Linq.XComment> object cannot be the first argument in the list, because it is not valid for an XML document to start with a comment.  
   
--   One <xref:System.Xml.Linq.XDocumentType> for the DTD.  
+- One <xref:System.Xml.Linq.XDocumentType> for the DTD.  
   
  When you serialize an <xref:System.Xml.Linq.XDocument>, even if `XDocument.Declaration` is `null`, the output will have an XML declaration if the writer has `Writer.Settings.OmitXmlDeclaration` set to `false` (the default).  
   
@@ -76,4 +76,5 @@ doc.Save("test.xml")
 ```  
   
 ## See also
+
 - [LINQ to XML Programming Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

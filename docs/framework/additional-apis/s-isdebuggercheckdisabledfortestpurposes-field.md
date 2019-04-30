@@ -1,8 +1,7 @@
 ---
 title: "s_isDebuggerCheckDisabledForTestPurposes Field"
 ms.date: "03/30/2017"
-ms.technology:
-  - "dotnet-wpf"
+ms.technology: "dotnet-wpf"
 topic_type:
   - "apiref"
 api_name:

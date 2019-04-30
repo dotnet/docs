@@ -24,8 +24,7 @@ Inheritance, together with encapsulation and polymorphism, is one of the three p
   
  The following illustration shows a class `WorkItem` that represents an item of work in some business process. Like all classes, it derives from <xref:System.Object?displayProperty=nameWithType> and inherits all its methods. `WorkItem` adds five members of its own. These include a constructor, because constructors are not inherited. Class `ChangeRequest` inherits from `WorkItem` and represents a particular kind of work item. `ChangeRequest` adds two more members to the members that it inherits from `WorkItem` and from <xref:System.Object>. It must add its own constructor, and it also adds `originalItemID`. Property `originalItemID` enables the `ChangeRequest` instance to be associated with the original `WorkItem` to which the change request applies.  
   
- ![Class Inheritance](../../../csharp/programming-guide/classes-and-structs/media/class_inheritance.png "Class_Inheritance")  
-Class inheritance  
+ ![Diagram that shows class inheritance](./media/inheritance/class-inheritance-diagram.png)  
   
  The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method.  
   

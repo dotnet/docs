@@ -10,8 +10,9 @@ The specified `For...Next` control values have different types, and therefore ar
   
 ## To correct this error  
   
-1.  Change the type of one or more of the values so that all values can be converted to a common type.  
+1. Change the type of one or more of the values so that all values can be converted to a common type.  
   
 ## See also
+
 - [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)
 - [For...Next Statement](../../visual-basic/language-reference/statements/for-next-statement.md)

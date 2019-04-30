@@ -12,11 +12,11 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 
  In this walkthrough, you perform the following tasks:
 
--   Create the project.
+- Create the project.
 
--   Create the WPF control type.
+- Create the WPF control type.
 
--   Apply a style to the WPF control.
+- Apply a style to the WPF control.
 
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
@@ -24,7 +24,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   Visual Studio 2012.  
+- Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  
@@ -34,41 +34,41 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
   
 #### To create the project  
   
--   Create a new Windows Forms Application project in Visual Basic or Visual C# named `StylingWpfContent`.  
+- Create a new Windows Forms Application project in Visual Basic or Visual C# named `StylingWpfContent`.  
   
 ## Creating the WPF Control Types  
  After you add a WPF control type to the project, you can host it in an <xref:System.Windows.Forms.Integration.ElementHost> control.  
   
 #### To create WPF control types  
   
-1.  Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
+1. Add a new WPF <xref:System.Windows.Controls.UserControl> project to the solution. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
-2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
+2. In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514527(v=vs.100)).  
   
-3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
+3. In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
-4.  Add a <xref:System.Windows.Controls.Button?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.ContentControl.Content%2A> property to **Cancel**.  
+4. Add a <xref:System.Windows.Controls.Button?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.ContentControl.Content%2A> property to **Cancel**.  
   
-5.  Add a second <xref:System.Windows.Controls.Button?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.ContentControl.Content%2A> property to **OK**.  
+5. Add a second <xref:System.Windows.Controls.Button?displayProperty=nameWithType> control to the <xref:System.Windows.Controls.UserControl> and set the value of the <xref:System.Windows.Controls.ContentControl.Content%2A> property to **OK**.  
   
-6.  Build the project.  
+6. Build the project.  
   
 ## Applying a Style to a WPF Control  
  You can apply different styling to a WPF control to change its appearance and behavior.  
   
 #### To apply a style to a WPF control  
   
-1.  Open `Form1` in the Windows Forms Designer.  
+1. Open `Form1` in the Windows Forms Designer.  
   
-2.  In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.  
+2. In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.  
   
      An instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.  
   
-3.  In the smart tag panel for `elementHost1`, click **Edit Hosted Content** from the drop-down list.  
+3. In the smart tag panel for `elementHost1`, click **Edit Hosted Content** from the drop-down list.  
   
      `UserControl1` opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
-4.  In XAML view, insert the following XAML after the `<UserControl>` opening tag.  
+4. In XAML view, insert the following XAML after the `<UserControl>` opening tag.  
   
      This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).  
   
@@ -120,7 +120,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 </UserControl.Resources>  
 ```  
   
-1.  Apply the `SimpleButton` style defined in the previous step to the Cancel button by inserting the following XAML in the `<Button>` tag of the Cancel button.  
+1. Apply the `SimpleButton` style defined in the previous step to the Cancel button by inserting the following XAML in the `<Button>` tag of the Cancel button.  
   
     ```  
     Style="{StaticResource SimpleButton}  
@@ -133,17 +133,18 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
                 Style="{StaticResource SimpleButton}">Cancel</Button>  
 ```  
   
-1.  Build the project.  
+1. Build the project.  
   
-2.  Open `Form1` in the Windows Forms Designer.  
+2. Open `Form1` in the Windows Forms Designer.  
   
-3.  The new style is applied to the button control.  
+3. The new style is applied to the button control.  
   
-4.  From the **Debug** menu, select **Start Debugging** to run the application.  
+4. From the **Debug** menu, select **Start Debugging** to run the application.  
   
-5.  Click the OK and Cancel buttons and view the differences.  
+5. Click the OK and Cancel buttons and view the differences.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)

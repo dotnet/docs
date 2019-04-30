@@ -10,9 +10,10 @@ The argument requires a value other than an empty string ("") or `Nothing`. This
   
 ## To correct this error  
   
--   Supply a valid value for the argument.  
+- Supply a valid value for the argument.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 - [Nothing](../../visual-basic/language-reference/nothing.md)
 - <xref:System.NullReferenceException>

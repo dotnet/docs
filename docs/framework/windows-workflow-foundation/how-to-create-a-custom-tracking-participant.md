@@ -14,9 +14,9 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
 ## To create the custom tracking participant  
   
-1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Class**. Type `StatusTrackingParticipant` into the **Name** box, and click **Add**.  
+1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Class**. Type `StatusTrackingParticipant` into the **Name** box, and click **Add**.  
   
-2.  Add the following `using` (or `Imports`) statements at the top of the file with the other `using` (or `Imports`) statements.  
+2. Add the following `using` (or `Imports`) statements at the top of the file with the other `using` (or `Imports`) statements.  
   
     ```vb  
     Imports System.Activities.Tracking  
@@ -28,7 +28,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     using System.IO;  
     ```  
   
-3.  Modify the `StatusTrackingParticipant` class so that it inherits from `TrackingParticipant`.  
+3. Modify the `StatusTrackingParticipant` class so that it inherits from `TrackingParticipant`.  
   
     ```vb  
     Public Class StatusTrackingParticipant  
@@ -43,7 +43,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     }  
     ```  
   
-4.  Add the following `Track` method override. There are several different types of tracking records. We are interested in the output of `WriteLine` activities, which are contained in activity tracking records. If the `TrackingRecord` is an `ActivityTrackingRecord` for a `WriteLine` activity, the `Text` of the `WriteLine` is appended to a file named after the `InstanceId` of the workflow. In this tutorial, the file is saved to the current folder of the host application.  
+4. Add the following `Track` method override. There are several different types of tracking records. We are interested in the output of `WriteLine` activities, which are contained in activity tracking records. If the `TrackingRecord` is an `ActivityTrackingRecord` for a `WriteLine` activity, the `Text` of the `WriteLine` is appended to a file named after the `InstanceId` of the workflow. In this tutorial, the file is saved to the current folder of the host application.  
   
     ```vb  
     Protected Overrides Sub Track(record As TrackingRecord, timeout As TimeSpan)  
@@ -90,9 +90,9 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
 ## To create the tracking profile and register the tracking participant  
   
-1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
+1. Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
-2.  Add the following `using` (or `Imports`) statement at the top of the file with the other `using` (or `Imports`) statements.  
+2. Add the following `using` (or `Imports`) statement at the top of the file with the other `using` (or `Imports`) statements.  
   
     ```vb  
     Imports System.Activities.Tracking  
@@ -102,7 +102,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     using System.Activities.Tracking;  
     ```  
   
-3.  Add the following code to `ConfigureWorkflowApplication` just after the code that adds the `StringWriter` to the workflow extensions and before the workflow lifecycle handlers.  
+3. Add the following code to `ConfigureWorkflowApplication` just after the code that adds the `StringWriter` to the workflow extensions and before the workflow lifecycle handlers.  
   
     ```vb  
     'Add the custom tracking participant with a tracking profile  
@@ -211,9 +211,9 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
 ## To display the tracking information  
   
-1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
+1. Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
-2.  In the `InstanceId_SelectedIndexChanged` handler, add the following code immediately after the code that clears the status window.  
+2. In the `InstanceId_SelectedIndexChanged` handler, add the following code immediately after the code that clears the status window.  
   
     ```vb  
     'If there is tracking data for this workflow, display it  
@@ -306,11 +306,11 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
 ## To build and run the application  
   
-1.  Press Ctrl+Shift+B to build the application.  
+1. Press Ctrl+Shift+B to build the application.  
   
-2.  Press Ctrl+F5 to start the application.  
+2. Press Ctrl+F5 to start the application.  
   
-3.  Select a range for the guessing game and the type of workflow to start, and click **New Game**. Enter a guess in the **Guess** box and click **Go** to submit your guess. Note that the status of the workflow is displayed in the status window. This output is captured from the `WriteLine` activities. Switch to a different workflow by selecting one from the **Workflow Instance Id** combo box and note that the status of the current workflow is removed. Switch back to the previous workflow and note that the status is restored, similar to the following example.  
+3. Select a range for the guessing game and the type of workflow to start, and click **New Game**. Enter a guess in the **Guess** box and click **Go** to submit your guess. Note that the status of the workflow is displayed in the status window. This output is captured from the `WriteLine` activities. Switch to a different workflow by selecting one from the **Workflow Instance Id** combo box and note that the status of the current workflow is removed. Switch back to the previous workflow and note that the status is restored, similar to the following example.  
   
     > [!NOTE]
     > If you switch to a workflow that was started before tracking was enabled no status is displayed. However if you make additional guesses, their status is saved because tracking is now enabled.  
@@ -326,7 +326,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
 
     Make a note of the workflow instance id, and play the game through to its completion.
   
-4.  Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings). Note that in addition to the project executable files there are files with guid filenames. Identify the one that corresponds to the workflow instance id from the completed workflow in the previous step and open it in Notepad. The tracking information contains information similar to the following.  
+4. Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings). Note that in addition to the project executable files there are files with guid filenames. Identify the one that corresponds to the workflow instance id from the completed workflow in the previous step and open it in Notepad. The tracking information contains information similar to the following.  
   
     ```output
     Please enter a number between 1 and 10

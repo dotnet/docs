@@ -13,32 +13,32 @@ This section shows you how to define and implement WCF contracts. A service cont
 ## Overview  
  This topic provides a high level conceptual orientation to designing and implementing WCF services. Subtopics provide more detailed information about the specifics of design and implementation. Before designing and implementing your WCF application, it is recommended that you:  
   
--   Understand what a service contract is, how it works, and how to create one.  
+- Understand what a service contract is, how it works, and how to create one.  
   
--   Understand that contracts state minimum requirements that runtime configuration or the hosting environment may not support.  
+- Understand that contracts state minimum requirements that runtime configuration or the hosting environment may not support.  
   
 ## Service Contracts  
  A service contract specifies the following:  
   
--   The operations a contract exposes.  
+- The operations a contract exposes.  
   
--   The signature of the operations in terms of messages exchanged.  
+- The signature of the operations in terms of messages exchanged.  
   
--   The data types of these messages.  
+- The data types of these messages.  
   
--   The location of the operations.  
+- The location of the operations.  
   
--   The specific protocols and serialization formats that are used to support successful communication with the service.  
+- The specific protocols and serialization formats that are used to support successful communication with the service.  
   
  For example, a purchase order contract might have a `CreateOrder` operation that accepts an input of order information types and returns success or failure information, including an order identifier. It might also have a `GetOrderStatus` operation that accepts an order identifier and returns order status information. A service contract of this sort would specify:  
   
-1.  That the purchase order contract consisted of `CreateOrder` and `GetOrderStatus` operations.  
+1. That the purchase order contract consisted of `CreateOrder` and `GetOrderStatus` operations.  
   
-2.  That the operations have specified input messages and output messages.  
+2. That the operations have specified input messages and output messages.  
   
-3.  The data that these messages can carry.  
+3. The data that these messages can carry.  
   
-4.  Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
+4. Categorical statements about the communication infrastructure necessary to successfully process the messages. For example, these details include whether and what forms of security are required to establish successful communication.  
   
  To convey this kind of information to other applications on many platforms (including non-Microsoft platforms), XML service contracts are publicly expressed in standard XML formats, such as [Web Services Description Language](https://go.microsoft.com/fwlink/?LinkId=94952) (WSDL) and [XML Schema](https://go.microsoft.com/fwlink/?LinkId=94953) (XSD), among others. Developers for many platforms can use this public contract information to create applications that can communicate with the service, both because they understand the language of the specification and because those languages are designed to enable interoperation by describing the public forms, formats, and protocols that the service supports. For more information about how WCF handles this kind of information, see [Metadata](../../../docs/framework/wcf/feature-details/metadata.md).  
   
@@ -61,5 +61,6 @@ This section shows you how to define and implement WCF contracts. A service cont
  This additive requirement process is important to keep in mind while designing, implementing, configuring, and hosting a Windows Communication Foundation (WCF) service application. For example, the contract can specify that it needs to support a session. If so, then you must configure the binding to support that contractual requirement, or the service implementation will not work. Or if your service requires Windows Integrated Authentication and is hosted in Internet Information Services (IIS), the Web application in which the service resides must have Windows Integrated Authentication turned on and anonymous support turned off. For more information about the features and impact of the different service host application types, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
 ## See also
+
 - [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)
 - [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)

@@ -23,7 +23,7 @@ Because this call is not awaited, execution of the current method continues befo
   
 ### To address this warning  
   
--   You should consider suppressing the warning only if you're sure that you don't want to wait for the asynchronous call to complete and that the called method won't raise any exceptions. In that case, you can suppress the warning by assigning the task result of the call to a variable.  
+- You should consider suppressing the warning only if you're sure that you don't want to wait for the asynchronous call to complete and that the called method won't raise any exceptions. In that case, you can suppress the warning by assigning the task result of the call to a variable.  
   
      The following example shows how to cause the warning, how to suppress it, and how to await the call.  
   
@@ -89,13 +89,13 @@ Because this call is not awaited, execution of the current method continues befo
 ## Example  
  The following Windows Presentation Foundation (WPF) application contains the methods from the previous example. The following steps set up the application.  
   
-1.  Create a WPF application, and name it `AsyncWarning`.  
+1. Create a WPF application, and name it `AsyncWarning`.  
   
-2.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
+2. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
   
      If the tab isn't visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **View Code**.  
   
-3.  Replace the code in the **XAML** view of MainWindow.xaml with the following code.  
+3. Replace the code in the **XAML** view of MainWindow.xaml with the following code.  
   
     ```vb  
     <Window x:Class="MainWindow"  
@@ -113,7 +113,7 @@ Because this call is not awaited, execution of the current method continues befo
   
      For more information about the XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
-4.  Replace the code in MainWindow.xaml.vb with the following code.  
+4. Replace the code in MainWindow.xaml.vb with the following code.  
   
     ```vb  
     Class MainWindow   
@@ -193,7 +193,7 @@ Because this call is not awaited, execution of the current method continues befo
     ' Exiting the Click event handler.  
     ```  
   
-5.  Choose the F5 key to run the program, and then choose the **Start** button.  
+5. Choose the F5 key to run the program, and then choose the **Start** button.  
   
      The expected output appears at the end of the code.  
   

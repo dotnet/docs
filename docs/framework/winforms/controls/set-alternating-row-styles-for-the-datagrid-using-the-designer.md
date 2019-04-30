@@ -21,18 +21,19 @@ Tabular data is often presented in a ledger-like format where alternating rows h
   
 ### Define styles for alternating rows  
   
-1.  Select the <xref:System.Windows.Forms.DataGridView> control in the designer.  
+1. Select the <xref:System.Windows.Forms.DataGridView> control in the designer.  
   
-2.  In the **Properties** window, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/set-alternating-row-styles-for-the-datagrid-using-the-designer/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property.  
+2.  In the **Properties** window, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/set-alternating-row-styles-for-the-datagrid-using-the-designer/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property.  
   
-3.  In the **CellStyle Builder** dialog box, define the style by setting the properties, and use the **Preview** pane to confirm your choices. The styles you specify are used for every other row displayed in the control, starting with the second one.  
+3. In the **CellStyle Builder** dialog box, define the style by setting the properties, and use the **Preview** pane to confirm your choices. The styles you specify are used for every other row displayed in the control, starting with the second one.  
   
-4.  To define styles for the remaining rows, repeat steps 2 and 3 using the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> property.  
+4. To define styles for the remaining rows, repeat steps 2 and 3 using the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> property.  
   
     > [!NOTE]
     >  Cells are displayed using styles inherited from multiple properties. For more information about style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md).  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md)
 - [Basic Formatting and Styling in the Windows Forms DataGridView Control](basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)

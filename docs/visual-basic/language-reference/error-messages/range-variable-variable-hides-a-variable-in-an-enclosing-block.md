@@ -15,9 +15,10 @@ A range variable name specified in a `Select`, `From`, `Aggregate`, or `Let` cla
   
 ## To correct this error  
   
--   Ensure that all range variables in a particular query scope have unique names. You can enclose a query in parentheses to ensure that nested queries have a unique scope.  
+- Ensure that all range variables in a particular query scope have unique names. You can enclose a query in parentheses to ensure that nested queries have a unique scope.  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
 - [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)

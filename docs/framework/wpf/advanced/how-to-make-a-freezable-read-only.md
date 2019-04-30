@@ -13,11 +13,11 @@ This example shows how to make a <xref:System.Windows.Freezable> read-only by ca
   
  You cannot freeze a <xref:System.Windows.Freezable> object if any one of the following conditions is `true` about the object:  
   
--   It has animated or data bound properties.  
+- It has animated or data bound properties.  
   
--   It has properties that are set by a dynamic resource. For more information about dynamic resources, see the [XAML Resources](xaml-resources.md).  
+- It has properties that are set by a dynamic resource. For more information about dynamic resources, see the [XAML Resources](xaml-resources.md).  
   
--   It contains <xref:System.Windows.Freezable> sub-objects that cannot be frozen.  
+- It contains <xref:System.Windows.Freezable> sub-objects that cannot be frozen.  
   
  If these conditions are `false` for your <xref:System.Windows.Freezable> object and you do not intend to modify it, consider freezing it to gain performance benefits.  
   
@@ -30,6 +30,7 @@ This example shows how to make a <xref:System.Windows.Freezable> read-only by ca
  For more information about <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](freezable-objects-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Freezable>
 - <xref:System.Windows.Freezable.CanFreeze%2A>
 - <xref:System.Windows.Freezable.Freeze%2A>

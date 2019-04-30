@@ -8,9 +8,7 @@ ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 ---
 # Multimedia Overview
 The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enable you to integrate audio and video into your applications to enhance the user experience. This topic introduces the multimedia features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
-  
- 
-  
+
 <a name="mediaapi"></a>   
 ## Media API  
  The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] 10 control for media playback. Which class you use, depends on the scenario.  
@@ -33,11 +31,11 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ### Independent Mode  
  In independent mode, the media content drives media playback. Independent mode enables the following options:  
   
--   Media's <xref:System.Uri> can be directly specified.  
+- Media's <xref:System.Uri> can be directly specified.  
   
--   Media playback can be directly controlled.  
+- Media playback can be directly controlled.  
   
--   Media's <xref:System.Windows.Controls.MediaElement.Position%2A> and <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> properties can be modified.  
+- Media's <xref:System.Windows.Controls.MediaElement.Position%2A> and <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> properties can be modified.  
   
  Media is loaded by either setting the <xref:System.Windows.Controls.MediaElement> object's <xref:System.Windows.Controls.MediaElement.Source%2A> property or by calling the <xref:System.Windows.Media.MediaPlayer> object's <xref:System.Windows.Media.MediaPlayer.Open%2A> method.  
   
@@ -48,11 +46,11 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ### Clock Mode  
  In clock mode, a <xref:System.Windows.Media.MediaTimeline> drives media playback. Clock mode has the following characteristics:  
   
--   Media's <xref:System.Uri> is indirectly set through a <xref:System.Windows.Media.MediaTimeline>.  
+- Media's <xref:System.Uri> is indirectly set through a <xref:System.Windows.Media.MediaTimeline>.  
   
--   Media playback can be controlled by the clock. The media object's control methods cannot be used.  
+- Media playback can be controlled by the clock. The media object's control methods cannot be used.  
   
--   Media is loaded by setting a <xref:System.Windows.Media.MediaTimeline> object's <xref:System.Windows.Media.MediaTimeline.Source%2A> property, creating the clock from the timeline, and assigning the clock to the media object. Media is also loaded this way when a <xref:System.Windows.Media.MediaTimeline> inside a <xref:System.Windows.Media.Animation.Storyboard> targets a <xref:System.Windows.Controls.MediaElement>.  
+- Media is loaded by setting a <xref:System.Windows.Media.MediaTimeline> object's <xref:System.Windows.Media.MediaTimeline.Source%2A> property, creating the clock from the timeline, and assigning the clock to the media object. Media is also loaded this way when a <xref:System.Windows.Media.MediaTimeline> inside a <xref:System.Windows.Media.Animation.Storyboard> targets a <xref:System.Windows.Controls.MediaElement>.  
   
  To control media playback in clock mode, the <xref:System.Windows.Media.Animation.ClockController> control methods must be used. A <xref:System.Windows.Media.Animation.ClockController> is obtained from the <xref:System.Windows.Media.Animation.ClockController> property of the <xref:System.Windows.Media.MediaClock>. If you attempt to use the control methods of either a <xref:System.Windows.Controls.MediaElement> or <xref:System.Windows.Media.MediaPlayer> object while in clock mode, an <xref:System.InvalidOperationException> will be thrown.  
   
@@ -73,13 +71,13 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
  The <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> and <xref:System.Windows.Controls.MediaElement.UnloadedBehavior%2A> properties are not the only way to control media playback. In clock mode, the clock can control the <xref:System.Windows.Controls.MediaElement> and the interactive control methods have control when the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> is <xref:System.Windows.Controls.MediaState.Manual>. <xref:System.Windows.Controls.MediaElement> handles this competition for control by evaluating the following priorities.  
   
-1.  <xref:System.Windows.Controls.MediaElement.UnloadedBehavior%2A>. In place when media is unloaded. This ensures that all media resources are released by default, even when a <xref:System.Windows.Media.MediaClock> is associated with the <xref:System.Windows.Controls.MediaElement>.  
+1. <xref:System.Windows.Controls.MediaElement.UnloadedBehavior%2A>. In place when media is unloaded. This ensures that all media resources are released by default, even when a <xref:System.Windows.Media.MediaClock> is associated with the <xref:System.Windows.Controls.MediaElement>.  
   
-2.  <xref:System.Windows.Media.MediaClock>. In place when media has a <xref:System.Windows.Controls.MediaElement.Clock%2A>. If media is unloaded, the <xref:System.Windows.Media.MediaClock> will take effect as long as the <xref:System.Windows.Controls.MediaElement.UnloadedBehavior%2A> is <xref:System.Windows.Controls.MediaState.Manual>. Clock mode always overrides the loaded behavior of the <xref:System.Windows.Controls.MediaElement>.  
+2. <xref:System.Windows.Media.MediaClock>. In place when media has a <xref:System.Windows.Controls.MediaElement.Clock%2A>. If media is unloaded, the <xref:System.Windows.Media.MediaClock> will take effect as long as the <xref:System.Windows.Controls.MediaElement.UnloadedBehavior%2A> is <xref:System.Windows.Controls.MediaState.Manual>. Clock mode always overrides the loaded behavior of the <xref:System.Windows.Controls.MediaElement>.  
   
-3.  <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A>. In place when media is loaded.  
+3. <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A>. In place when media is loaded.  
   
-4.  Interactive control methods. In place when <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> is <xref:System.Windows.Controls.MediaState.Manual>. The control methods available are <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, <xref:System.Windows.Controls.MediaElement.Close%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A>.  
+4. Interactive control methods. In place when <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> is <xref:System.Windows.Controls.MediaState.Manual>. The control methods available are <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, <xref:System.Windows.Controls.MediaElement.Close%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A>.  
   
 ### Displaying a MediaElement  
  To display a <xref:System.Windows.Controls.MediaElement> it must have content to render and it will have its <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A> properties set to zero until content is loaded. For audio only content, these properties are always zero. For video content, once the <xref:System.Windows.Controls.MediaElement.MediaOpened> event has been raised the <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A> will report the size of the loaded media. This means that until media is loaded, the <xref:System.Windows.Controls.MediaElement> will not take up any physical space in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] unless the <xref:System.Windows.FrameworkElement.Width%2A> or <xref:System.Windows.FrameworkElement.Height%2A> properties are set.  
@@ -95,9 +93,9 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ### Controlling MediaPlayer  
  Because <xref:System.Windows.Media.MediaPlayer> is stateless, there are only two ways to control media playback.  
   
-1.  Interactive control methods. In place when in independent mode (`null`<xref:System.Windows.Media.MediaPlayer.Clock%2A> property).  
+1. Interactive control methods. In place when in independent mode (`null`<xref:System.Windows.Media.MediaPlayer.Clock%2A> property).  
   
-2.  <xref:System.Windows.Media.MediaClock>. In place when media has a <xref:System.Windows.Media.MediaPlayer.Clock%2A>.  
+2. <xref:System.Windows.Media.MediaClock>. In place when media has a <xref:System.Windows.Media.MediaPlayer.Clock%2A>.  
   
 ### Displaying a MediaPlayer  
  Technically, a <xref:System.Windows.Media.MediaPlayer> cannot be displayed since it has no physical representation. However, it can be used to present media in a <xref:System.Windows.Media.Drawing> using the <xref:System.Windows.Media.VideoDrawing> class. The following example demonstrates the use of a <xref:System.Windows.Media.VideoDrawing> to display media.  
@@ -107,6 +105,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
  See the [Drawing Objects Overview](drawing-objects-overview.md) for more information about <xref:System.Windows.Media.Drawing> objects.  
   
 ## See also
+
 - <xref:System.Windows.Media.DrawingGroup>
 - [Layout](../advanced/layout.md)
 - [How-to Topics](audio-and-video-how-to-topics.md)

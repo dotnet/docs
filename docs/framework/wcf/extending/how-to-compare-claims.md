@@ -30,33 +30,33 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) is u
   
 ### Comparing built-in claims  
   
-1.  Given two instances of the <xref:System.IdentityModel.Claims.Claim> class, use the <xref:System.IdentityModel.Claims.Claim.Equals%2A> to make the comparison, as shown in the following code.  
+1. Given two instances of the <xref:System.IdentityModel.Claims.Claim> class, use the <xref:System.IdentityModel.Claims.Claim.Equals%2A> to make the comparison, as shown in the following code.  
   
      [!code-csharp[c_CustomClaimComparison#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#5)]
      [!code-vb[c_CustomClaimComparison#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#5)]  
   
 ### Comparing custom claims with primitive resource types  
   
-1.  For custom claims with primitive resource types, comparison can be performed as for built-in claims, as shown in the following code.  
+1. For custom claims with primitive resource types, comparison can be performed as for built-in claims, as shown in the following code.  
   
      [!code-csharp[c_CustomClaimComparison#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#6)]
      [!code-vb[c_CustomClaimComparison#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#6)]  
   
-2.  For custom claims with structure or class based resource types, the resource type should override the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method.  
+2. For custom claims with structure or class based resource types, the resource type should override the <xref:System.IdentityModel.Claims.Claim.Equals%2A> method.  
   
-3.  First check whether the `obj` parameter is `null`, and if so, return `false`.  
+3. First check whether the `obj` parameter is `null`, and if so, return `false`.  
   
      [!code-csharp[c_CustomClaimComparison#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#7)]
      [!code-vb[c_CustomClaimComparison#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#7)]  
   
-4.  Next call <xref:System.Object.ReferenceEquals%2A> and pass `this` and `obj` as parameters. If it returns `true`, then return `true`.  
+4. Next call <xref:System.Object.ReferenceEquals%2A> and pass `this` and `obj` as parameters. If it returns `true`, then return `true`.  
   
      [!code-csharp[c_CustomClaimComparison#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#8)]
      [!code-vb[c_CustomClaimComparison#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#8)]  
   
-5.  Next attempt to assign `obj` to a local variable of the class type. If this fails, the reference is `null`. In such cases, return `false`.  
+5. Next attempt to assign `obj` to a local variable of the class type. If this fails, the reference is `null`. In such cases, return `false`.  
   
-6.  Perform the custom comparison necessary to correctly compare the current claim to the provided claim.  
+6. Perform the custom comparison necessary to correctly compare the current claim to the provided claim.  
   
 ## Example  
  The following example shows a comparison of custom claims where the claim resource is a non-primitive type.  
@@ -65,5 +65,6 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) is u
  [!code-vb[c_CustomClaimComparison#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#0)]  
   
 ## See also
+
 - [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
 - [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)

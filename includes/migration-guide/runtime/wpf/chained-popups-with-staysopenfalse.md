@@ -7,4 +7,3 @@
 |Version|4.7.1|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Windows.Controls.Primitives.Popup.StaysOpen?displayProperty=nameWithType></li></ul>|
-

@@ -73,4 +73,5 @@ The Windows Forms `WebBrowser` control hosts Web pages and provides Web browsing
  Describes this enumeration and all its values.  
   
 ## See also
+
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

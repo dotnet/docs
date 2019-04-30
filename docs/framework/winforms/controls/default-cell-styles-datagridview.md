@@ -22,11 +22,11 @@ The <xref:System.Windows.Forms.DataGridView> control lets you specify default ce
   
 ### To set default styles for all cells in the control  
   
-1.  Select the <xref:System.Windows.Forms.DataGridView> control in the designer.  
+1. Select the <xref:System.Windows.Forms.DataGridView> control in the designer.  
   
-2.  In the **Properties** window, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/default-cell-styles-datagridview/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, or <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> property. The **CellStyle Builder** dialog box appears.  
+2.  In the **Properties** window, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/default-cell-styles-datagridview/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, or <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> property. The **CellStyle Builder** dialog box appears.  
   
-3.  Define the style by setting the properties, using the **Preview** pane to confirm your choices.  
+3. Define the style by setting the properties, using the **Preview** pane to confirm your choices.  
   
 > [!NOTE]
 >  If visual styles are enabled, the row and column headers (except for the <xref:System.Windows.Forms.DataGridView.TopLeftHeaderCell%2A>) are automatically styled by the current theme, overriding the <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A> and <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> property values.  
@@ -35,25 +35,26 @@ The <xref:System.Windows.Forms.DataGridView> control lets you specify default ce
   
 ### To set default styles for cells in individual columns  
   
-1.  Right-click the <xref:System.Windows.Forms.DataGridView> control in the designer and choose **Edit Columns**.  
+1. Right-click the <xref:System.Windows.Forms.DataGridView> control in the designer and choose **Edit Columns**.  
   
-2.  Select a column from the **Selected Columns** list.  
+2. Select a column from the **Selected Columns** list.  
   
-3.  In the **Column Properties** grid, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/default-cell-styles-datagridview/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property. The **CellStyle Builder** dialog box appears.  
+3.  In the **Column Properties** grid, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/default-cell-styles-datagridview/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property. The **CellStyle Builder** dialog box appears.  
   
-4.  Define the style by setting the properties, using the **Preview** pane to confirm your choices.  
+4. Define the style by setting the properties, using the **Preview** pane to confirm your choices.  
   
 ### To format data in cells  
   
-1.  Use one of the preceding procedures to display a **CellStyle Builder** dialog box related to a default cell style property.  
+1. Use one of the preceding procedures to display a **CellStyle Builder** dialog box related to a default cell style property.  
   
-2.  In the **CellStyle Builder** dialog box, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/default-cell-styles-datagridview/visual-studio-ellipsis-button.png "Use the ellipsis button to access the CellStyle Builder dialog box.")) next to the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property. The **Format String** dialog box appears.  
+2.  In the **CellStyle Builder** dialog box, click the ellipsis button (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/default-cell-styles-datagridview/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property. The **Format String** dialog box appears.  
   
-3.  Select a format type, then modify the details of the type (such as the number of decimal places to display), using the **Sample** box to confirm your choices.  
+3. Select a format type, then modify the details of the type (such as the number of decimal places to display), using the **Sample** box to confirm your choices.  
   
-4.  If you are binding the <xref:System.Windows.Forms.DataGridView> control to a data source that is likely to contain null values, fill in the **Null Value** text box. This value is displayed when the cell value is equal to a null reference (`Nothing` in Visual Basic) or <xref:System.DBNull.Value?displayProperty=nameWithType>.  
+4. If you are binding the <xref:System.Windows.Forms.DataGridView> control to a data source that is likely to contain null values, fill in the **Null Value** text box. This value is displayed when the cell value is equal to a null reference (`Nothing` in Visual Basic) or <xref:System.DBNull.Value?displayProperty=nameWithType>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridViewCellStyle>
 - <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType>

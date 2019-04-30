@@ -24,7 +24,7 @@ Just as tiles can be placed next to each other to cover a floor, rectangular ima
   
 -   The following illustration shows how the rectangle is tiled with the image. Note that all tiles have the same orientation; there is no flipping.  
   
- ![Screenshot of a rectangle tiled with an image.](./media/how-to-tile-a-shape-with-an-image/rectangle-tiled-image-no-flip.gif)  
+ ![A rectangle tiled with the image using the same orientation for all tiles.](./media/how-to-tile-a-shape-with-an-image/rectangle-tiled-image-no-flip.gif)  
   
  [!code-csharp[System.Drawing.UsingABrush#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingABrush/CS/Class1.cs#31)]
  [!code-vb[System.Drawing.UsingABrush#31](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#31)]  

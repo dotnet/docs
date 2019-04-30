@@ -41,7 +41,7 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
   
  The following illustration shows the original image on the left and the transformed image on the right.  
   
- ![Screenshot that shows the color transformation of an image.](./media/how-to-use-a-color-matrix-to-transform-a-single-color/color-transformation.png)  
+ ![A purple square on the left and a fuchsia square on the right.](./media/how-to-use-a-color-matrix-to-transform-a-single-color/color-transformation.png)  
   
  The code in the following example uses the following steps to perform the recoloring:  
   

@@ -80,7 +80,7 @@ If you only need access to a portion of the data or specific indices, use [`Crea
 > [!WARNING]
 > Converting the result of [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) to an array or list will load all the requested [`IDataView`](xref:Microsoft.ML.IDataView) rows into memory which may affect performance.
 
-Once the array has been created, you can perform operations on the data. The code snippet below takes the first three rows in the dataset and calculates the average current price.
+Once the collection has been created, you can perform operations on the data. The code snippet below takes the first three rows in the dataset and calculates the average current price.
 
 ```csharp
 // Create an Array of HousingData objects from IDataView

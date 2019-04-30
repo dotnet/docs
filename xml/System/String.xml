@@ -5444,7 +5444,7 @@ In contrast, the use of interpolated strings in the following example produce mu
 
 ## Examples
 
-Numerous examples that call the <xref:System.String.Format%2A> method are interspersed through the [Remarks](#remarks) section of this article.  
+Numerous examples that call the <xref:System.String.Format%2A> method are interspersed through the [Remarks](#remarks-top) section of this article.  
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
@@ -5786,7 +5786,8 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
 This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to convert four or more expressions to their string representations and to embed those representations in a string. In performing the conversion, the method uses culture-sensitive formatting or a custom formatter. The method converts each <xref:System.Object> argument to its string representation by calling its **ToString(IFormatProvider)** method or, if the object's corresponding format item includes a format string, by calling its **ToString(String,IFormatProvider)** method. If these methods don't exist, it calls the object's parameterless **ToString** method.  
 
 [!INCLUDE[provider-string-format](~/includes/provider-string-format.md)]
-  
+
+<a name="culture-sensitive-formatting" /> 
 ## Example: Culture-sensitive formatting  
  This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
   

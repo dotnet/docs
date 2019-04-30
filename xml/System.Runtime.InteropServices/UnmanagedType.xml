@@ -310,15 +310,7 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>Used for in-line, fixed-length character arrays that appear within a structure. The character type used with <see cref="F:System.Runtime.InteropServices.UnmanagedType.ByValTStr" /> is determined by the <see cref="T:System.Runtime.InteropServices.CharSet" /> argument of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> attribute applied to the containing structure. Always use the <see cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" /> field to indicate the size of the array.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- .NET Framework ByValTStr types behave like C-style, fixed-size strings inside a structure (for example, `char s[5]`). The behavior in managed code differs from the Microsoft Visual Basic 6.0 behavior, which is not null terminated (for example, `MyString As String * 5`).  
-  
- ]]></format>
-        </remarks>
+        <summary>Used for in-line, fixed-length character arrays that appear within a structure. <see langword="ByValTStr" /> types behave like C-style, fixed-size strings inside a structure (for example, <c>char s[5]</c>). The character type used with <see langword="ByValTStr" /> is determined by the <see cref="T:System.Runtime.InteropServices.CharSet" /> argument of the <see cref="T:System.Runtime.InteropServices.StructLayoutAttribute" /> attribute applied to the containing structure. Always use the <see cref="F:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst" /> field to indicate the size of the array.</summary>
       </Docs>
     </Member>
     <Member MemberName="Currency">
@@ -1060,15 +1052,7 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>A 2-byte, null-terminated Unicode character string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that you cannot use the LPWStr value with an unmanaged string unless the string was created by using the unmanaged `CoTaskMemAlloc` function.  
-  
- ]]></format>
-        </remarks>
+        <summary>A 2-byte, null-terminated Unicode character string. You cannot use the <see langword="LPWStr" /> value with an unmanaged string unless the string was created by using the unmanaged <see langword="CoTaskMemAlloc" /> function. </summary>
       </Docs>
     </Member>
     <Member MemberName="R4">

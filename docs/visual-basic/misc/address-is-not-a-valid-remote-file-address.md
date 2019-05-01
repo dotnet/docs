@@ -10,7 +10,7 @@ ms.assetid: 2c312242-6c42-4754-a1f5-7e801a542604
   
 ## To correct this error  
   
--   Check the address you have specified to determine where it fails, and supply the necessary information.  
+- Check the address you have specified to determine where it fails, and supply the necessary information.  
   
 ## See also
 

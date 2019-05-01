@@ -17,7 +17,7 @@ Using the layout features of Visual Studio, you can precisely direct where contr
   
 ### To snap all controls to the grid  
   
--   Select the **SnapToGrid** layout mode in the Windows Forms Designer **Options** dialog box.  
+- Select the **SnapToGrid** layout mode in the Windows Forms Designer **Options** dialog box.  
   
      For more information, see [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100)). All controls now align themselves along the points on the grid.  
   
@@ -25,11 +25,12 @@ Using the layout features of Visual Studio, you can precisely direct where contr
   
 ### To align controls using snaplines  
   
--   Select the **SnapLines** layout mode in the Windows Forms Designer **Options** dialog box.  
+- Select the **SnapLines** layout mode in the Windows Forms Designer **Options** dialog box.  
   
      For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md). You can now use snaplines to align and arrange controls on your form.  
   
 ## See also
+
 - [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Windows Forms Controls](index.md)

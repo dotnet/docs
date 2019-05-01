@@ -100,9 +100,9 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
  The following example creates a <xref:System.Windows.Media.Animation.Storyboard> that has two child <xref:System.Windows.Media.Animation.DoubleAnimation> objects. Both <xref:System.Windows.Media.Animation.DoubleAnimation> objects animate the <xref:System.Windows.FrameworkElement.Width%2A> of a <xref:System.Windows.Shapes.Rectangle> from 0 to 100. The <xref:System.Windows.Shapes.Rectangle> elements have non-animated <xref:System.Windows.FrameworkElement.Width%2A> values of 500 [device independent pixels].  
   
--   The <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property of the first <xref:System.Windows.Media.Animation.DoubleAnimation> is set to <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the default value. As a result, the Width of the Rectangle stays at 100 after the <xref:System.Windows.Media.Animation.DoubleAnimation> ends.  
+- The <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property of the first <xref:System.Windows.Media.Animation.DoubleAnimation> is set to <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the default value. As a result, the Width of the Rectangle stays at 100 after the <xref:System.Windows.Media.Animation.DoubleAnimation> ends.  
   
--   The <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property of the second <xref:System.Windows.Media.Animation.DoubleAnimation> is set to <xref:System.Windows.Media.Animation.FillBehavior.Stop>. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the second <xref:System.Windows.Shapes.Rectangle> reverts to 500 after the <xref:System.Windows.Media.Animation.DoubleAnimation> ends.  
+- The <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property of the second <xref:System.Windows.Media.Animation.DoubleAnimation> is set to <xref:System.Windows.Media.Animation.FillBehavior.Stop>. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the second <xref:System.Windows.Shapes.Rectangle> reverts to 500 after the <xref:System.Windows.Media.Animation.DoubleAnimation> ends.  
   
  [!code-xaml[animation_ovws_snippet#TBFillBehaviorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbfillbehaviorexample)]  
   
@@ -110,13 +110,14 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 ## Properties that Control the Speed of a Timeline  
  The <xref:System.Windows.Media.Animation.Timeline> class provides three properties for specifying its speed:  
   
--   <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> – Specifies that rate, relative to its parent, at which time progresses for a <xref:System.Windows.Media.Animation.Timeline>. Values greater than one increase the speed of the <xref:System.Windows.Media.Animation.Timeline> and its child <xref:System.Windows.Media.Animation.Timeline> objects; values between zero and one slow it down. A value of one indicates that <xref:System.Windows.Media.Animation.Timeline> progresses at the same rate as its parent. The <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> setting  of a container timeline affects all of its child <xref:System.Windows.Media.Animation.Timeline> objects as well.  
+- <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> – Specifies that rate, relative to its parent, at which time progresses for a <xref:System.Windows.Media.Animation.Timeline>. Values greater than one increase the speed of the <xref:System.Windows.Media.Animation.Timeline> and its child <xref:System.Windows.Media.Animation.Timeline> objects; values between zero and one slow it down. A value of one indicates that <xref:System.Windows.Media.Animation.Timeline> progresses at the same rate as its parent. The <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> setting  of a container timeline affects all of its child <xref:System.Windows.Media.Animation.Timeline> objects as well.  
   
--   <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent accelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md). 
+- <xref:System.Windows.Media.Animation.Timeline.AccelerationRatio%2A> – Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent accelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md). 
   
--   <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> - Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent decelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md).  
+- <xref:System.Windows.Media.Animation.Timeline.DecelerationRatio%2A> - Specifies the percentage of the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a Timeline spent decelerating. For an example, see [How to: Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md).  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Animation and Timing System Overview](animation-and-timing-system-overview.md)
 - [Timing Events Overview](timing-events-overview.md)

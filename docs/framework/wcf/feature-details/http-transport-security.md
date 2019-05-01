@@ -25,9 +25,9 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
 ## Implementing SSL with WCF  
  HTTP transport security (or SSL) is provided externally to WCF. You can implement SSL in one of two ways; the deciding factor is how your application is hosted:  
   
--   If you are using Internet Information Services (IIS) as your WCF host, use the IIS infrastructure to set up an SSL service.  
+- If you are using Internet Information Services (IIS) as your WCF host, use the IIS infrastructure to set up an SSL service.  
   
--   If you are creating a self-hosted WCF application, you can bind an SSL certificate to the address using the HttpCfg.exe tool.  
+- If you are creating a self-hosted WCF application, you can bind an SSL certificate to the address using the HttpCfg.exe tool.  
   
 ### Using IIS for Transport Security  
   
@@ -47,5 +47,6 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
  For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See also
+
 - [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)
 - [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)

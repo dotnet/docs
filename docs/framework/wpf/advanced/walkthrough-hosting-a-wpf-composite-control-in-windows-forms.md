@@ -14,9 +14,9 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
   
  Tasks illustrated in this walkthrough include:  
   
--   Implementing the WPF composite control.  
+- Implementing the WPF composite control.  
   
--   Implementing the Windows Forms host application.  
+- Implementing the Windows Forms host application.  
   
  For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=159996).  
   
@@ -25,35 +25,36 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 You need Visual Studio to complete this walkthrough.  
   
 ## Implementing the WPF Composite Control  
- The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control.  
-  
- ![Simple WPF control](./media/avaloncontrol.png "AvalonControl")  
-WPF composite control  
+ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control. 
+
+ The following image shows a WPF composite control: 
+
+ ![Screenshot that shows a simple WPF control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-presentation-foundation-composite-control.png)  
   
 ### Creating the Project  
  To start the project:  
   
-1.  Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
   
-2.  In Visual C# and the Windows category, select the **WPF User Control Library** template.  
+2. In Visual C# and the Windows category, select the **WPF User Control Library** template.  
   
-3.  Name the new project `MyControls`.  
+3. Name the new project `MyControls`.  
   
-4.  For the location, specify a conveniently named top-level folder, such as `WindowsFormsHostingWpfControl`. Later, you will put the host application in this folder.  
+4. For the location, specify a conveniently named top-level folder, such as `WindowsFormsHostingWpfControl`. Later, you will put the host application in this folder.  
   
-5.  Click **OK** to create the project. The default project contains a single control named `UserControl1`.  
+5. Click **OK** to create the project. The default project contains a single control named `UserControl1`.  
   
-6.  In Solution Explorer, rename `UserControl1` to `MyControl1`.  
+6. In Solution Explorer, rename `UserControl1` to `MyControl1`.  
   
  Your project should have references to the following system DLLs. If any of these DLLs are not included by default, add them to your project.  
   
--   PresentationCore  
+- PresentationCore  
   
--   PresentationFramework  
+- PresentationFramework  
   
--   System  
+- System  
   
--   WindowsBase  
+- WindowsBase  
   
 ### Creating the User Interface  
  The [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] for the composite control is implemented with [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. The composite control [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
@@ -98,11 +99,11 @@ WPF composite control
 ### Implementing the Code-Behind File  
  The code-behind file, MyControl1.xaml.cs, implements three essential tasks:
   
-1.  Handles the event that occurs when the user clicks one of the buttons.  
+1. Handles the event that occurs when the user clicks one of the buttons.  
   
-2.  Retrieves the data from the <xref:System.Windows.Controls.TextBox> elements, and packages it in a custom event argument object.  
+2. Retrieves the data from the <xref:System.Windows.Controls.TextBox> elements, and packages it in a custom event argument object.  
   
-3.  Raises the custom `OnButtonClick` event, which notifies the host that the user is finished and passes the data back to the host.  
+3. Raises the custom `OnButtonClick` event, which notifies the host that the user is finished and passes the data back to the host.  
   
  The control also exposes a number of color and font properties that enable you to change the appearance. Unlike the <xref:System.Windows.Forms.Integration.WindowsFormsHost> class, which is used to host a Windows Forms control, the <xref:System.Windows.Forms.Integration.ElementHost> class exposes the control’s <xref:System.Windows.Controls.Panel.Background%2A> property only. To maintain the similarity between this code example and the example discussed in [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md), the control exposes the remaining properties directly.  
   
@@ -132,11 +133,11 @@ namespace MyControls
 #### Initializing the Control  
  The following code implements several basic tasks:  
   
--   Declares a private event, `OnButtonClick`, and its associated delegate, `MyControlEventHandler`.  
+- Declares a private event, `OnButtonClick`, and its associated delegate, `MyControlEventHandler`.  
   
--   Creates several private global variables that store the user's data. This data is exposed through corresponding properties.  
+- Creates several private global variables that store the user's data. This data is exposed through corresponding properties.  
   
--   Implements a handler, `Init`, for the control’s <xref:System.Windows.FrameworkElement.Loaded> event. This handler initializes the global variables by assigning them the values defined in MyControl1.xaml. To do this, it uses the <xref:System.Windows.FrameworkElement.Name%2A> assigned to a typical <xref:System.Windows.Controls.TextBlock> element, `nameLabel`, to access that element's property settings.  
+- Implements a handler, `Init`, for the control’s <xref:System.Windows.FrameworkElement.Loaded> event. This handler initializes the global variables by assigning them the values defined in MyControl1.xaml. To do this, it uses the <xref:System.Windows.FrameworkElement.Name%2A> assigned to a typical <xref:System.Windows.Controls.TextBlock> element, `nameLabel`, to access that element's property settings.  
   
  Delete the existing constructor and add the following code to your `MyControl1` class.  
   
@@ -145,11 +146,11 @@ namespace MyControls
 #### Handling the Buttons' Click Events  
  The user indicates that the data-entry task is finished by clicking either the **OK** button or the **Cancel** button. Both buttons use the same <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler, `ButtonClicked`. Both buttons have a name, `btnOK` or `btnCancel`, that enables the handler to determine which button was clicked by examining the value of the `sender` argument. The handler does the following:  
   
--   Creates a `MyControlEventArgs` object that contains the data from the <xref:System.Windows.Controls.TextBox> elements.  
+- Creates a `MyControlEventArgs` object that contains the data from the <xref:System.Windows.Controls.TextBox> elements.  
   
--   If the user clicked the **Cancel** button, sets the `MyControlEventArgs` object's `IsOK` property to `false`.  
+- If the user clicked the **Cancel** button, sets the `MyControlEventArgs` object's `IsOK` property to `false`.  
   
--   Raises the `OnButtonClick` event to indicate to the host that the user is finished, and passes back the collected data.  
+- Raises the `OnButtonClick` event to indicate to the host that the user is finished, and passes back the collected data.  
   
  Add the following code to your `MyControl1` class, after the `Init` method.  
   
@@ -174,53 +175,54 @@ namespace MyControls
 <a name="winforms_host_section"></a>   
 ## Implementing the Windows Forms Host Application  
  The Windows Forms host application uses an <xref:System.Windows.Forms.Integration.ElementHost> object to host the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control. The application handles the `OnButtonClick` event to receive the data from the composite control. The application also has a set of option buttons that you can use to modify the control’s appearance. The following illustration shows the application.  
-  
- ![Windows Form Hosting Avalon Control](./media/wfhost.png "WFHost")  
-WPF composite control hosted in a Windows Forms application  
+
+The following image shows a WPF composite control hosted in a Windows Forms application"  
+
+ ![Scteenshot that shows a Windows Form Hosting Avalon control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-form-hosting-avalon-control.png)  
   
 ### Creating the Project  
  To start the project:  
   
-1.  Launch [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and open the **New Project** dialog box.  
   
-2.  In Visual C# and the Windows category, select  the **Windows Forms Application** template.  
+2. In Visual C# and the Windows category, select  the **Windows Forms Application** template.  
   
-3.  Name the new project `WFHost`.  
+3. Name the new project `WFHost`.  
   
-4.  For the location, specify the same top-level folder that contains the MyControls project.  
+4. For the location, specify the same top-level folder that contains the MyControls project.  
   
-5.  Click **OK** to create the project.  
+5. Click **OK** to create the project.  
   
  You also need to add references to the DLL that contains `MyControl1` and other assemblies.  
   
-1.  Right-click the project name in Solution Explorer, and select **Add Reference**.  
+1. Right-click the project name in Solution Explorer, and select **Add Reference**.  
   
-2.  Click the **Browse** tab, and browse to the folder that contains MyControls.dll. For this walkthrough, this folder is MyControls\bin\Debug.  
+2. Click the **Browse** tab, and browse to the folder that contains MyControls.dll. For this walkthrough, this folder is MyControls\bin\Debug.  
   
-3.  Select MyControls.dll, and then click **OK**.  
+3. Select MyControls.dll, and then click **OK**.  
   
-4.  Add references to the following assemblies.  
+4. Add references to the following assemblies.  
   
-    -   PresentationCore  
+    - PresentationCore  
   
-    -   PresentationFramework  
+    - PresentationFramework  
   
-    -   System.Xaml  
+    - System.Xaml  
   
-    -   WindowsBase  
+    - WindowsBase  
   
-    -   WindowsFormsIntegration  
+    - WindowsFormsIntegration  
   
 ### Implementing the User Interface for the Application  
  The UI for the Windows Form application contains several controls to interact with the WPF composite control.  
   
-1.  Open Form1 in the Windows Form Designer.  
+1. Open Form1 in the Windows Form Designer.  
   
-2.  Enlarge the form to accommodate the controls.  
+2. Enlarge the form to accommodate the controls.  
   
-3.  In the upper-right corner of the form, add a <xref:System.Windows.Forms.Panel?displayProperty=nameWithType> control to hold the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
+3. In the upper-right corner of the form, add a <xref:System.Windows.Forms.Panel?displayProperty=nameWithType> control to hold the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
   
-4.  Add the following <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls to the form.  
+4. Add the following <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls to the form.  
   
     |Name|Text|  
     |----------|----------|  
@@ -232,7 +234,7 @@ WPF composite control hosted in a Windows Forms application
     |groupBox6|Font Weight|  
     |groupBox7|Data from control|  
   
-5.  Add the following <xref:System.Windows.Forms.RadioButton?displayProperty=nameWithType> controls to the <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls.  
+5. Add the following <xref:System.Windows.Forms.RadioButton?displayProperty=nameWithType> controls to the <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls.  
   
     |GroupBox|Name|Text|  
     |--------------|----------|----------|  
@@ -253,7 +255,7 @@ WPF composite control hosted in a Windows Forms application
     |groupBox6|radioWeightOriginal|Original|  
     |groupBox6|radioWeightBold|Bold|  
   
-6.  Add the following <xref:System.Windows.Forms.Label?displayProperty=nameWithType> controls to the last <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>. These controls display the data returned by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
+6. Add the following <xref:System.Windows.Forms.Label?displayProperty=nameWithType> controls to the last <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>. These controls display the data returned by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] composite control.  
   
     |GroupBox|Name|Text|  
     |--------------|----------|----------|  
@@ -276,21 +278,21 @@ WPF composite control hosted in a Windows Forms application
   
  The `Form1_Load` method in the preceding code shows the general procedure for hosting a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
   
-1.  Create a new <xref:System.Windows.Forms.Integration.ElementHost> object.  
+1. Create a new <xref:System.Windows.Forms.Integration.ElementHost> object.  
   
-2.  Set the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType>.  
+2. Set the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=nameWithType>.  
   
-3.  Add the <xref:System.Windows.Forms.Integration.ElementHost> control to the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Controls%2A> collection.  
+3. Add the <xref:System.Windows.Forms.Integration.ElementHost> control to the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Controls%2A> collection.  
   
-4.  Create an instance of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control.  
+4. Create an instance of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control.  
   
-5.  Host the composite control on the form by assigning the control to the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property.  
+5. Host the composite control on the form by assigning the control to the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property.  
   
  The remaining two lines in the `Form1_Load` method attach handlers to two control events:  
   
--   `OnButtonClick` is a custom event that is fired by the composite control when the user clicks the **OK** or **Cancel** button. You handle the event to get the user's response and to collect any data that the user specified.  
+- `OnButtonClick` is a custom event that is fired by the composite control when the user clicks the **OK** or **Cancel** button. You handle the event to get the user's response and to collect any data that the user specified.  
   
--   <xref:System.Windows.FrameworkElement.Loaded> is a standard event that is raised by a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control when it is fully loaded. The event is used here because the example needs to initialize several global variables using properties from the control. At the time of the form's <xref:System.Windows.Forms.Form.Load> event, the control is not fully loaded and those values are still set to `null`. You need to wait until the control’s <xref:System.Windows.FrameworkElement.Loaded> event occurs before you can access those properties.  
+- <xref:System.Windows.FrameworkElement.Loaded> is a standard event that is raised by a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control when it is fully loaded. The event is used here because the example needs to initialize several global variables using properties from the control. At the time of the form's <xref:System.Windows.Forms.Form.Load> event, the control is not fully loaded and those values are still set to `null`. You need to wait until the control’s <xref:System.Windows.FrameworkElement.Loaded> event occurs before you can access those properties.  
   
  The <xref:System.Windows.FrameworkElement.Loaded> event handler is shown in the preceding code. The `OnButtonClick` handler is discussed in the next section.  
   
@@ -315,6 +317,7 @@ WPF composite control hosted in a Windows Forms application
  Build and run the application. Click the different radio buttons to see the effect on the WPF composite control.  
   
 ## See also
+
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

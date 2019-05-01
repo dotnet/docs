@@ -15,8 +15,7 @@ ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
 ---
 # Painting with Images, Drawings, and Visuals
 This topic describes how to use <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, and <xref:System.Windows.Media.VisualBrush> objects to paint an area with an image, a <xref:System.Windows.Media.Drawing>, or a <xref:System.Windows.Media.Visual>.  
-    
-  
+
 <a name="prereqs"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with the different types of brushes [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides and their basic features. For an introduction, see the [WPF Brushes Overview](wpf-brushes-overview.md).  
@@ -52,15 +51,15 @@ Objects painted by a DrawingBrush
   
  A <xref:System.Windows.Media.DrawingBrush> paints an area with a <xref:System.Windows.Media.Drawing> object. A <xref:System.Windows.Media.Drawing> object describes visible content, such as a shape, bitmap, video, or a line of text. Different types of drawings describe different types of content. The following is a list of the different types of drawing objects.  
   
--   <xref:System.Windows.Media.GeometryDrawing> – Draws a shape.  
+- <xref:System.Windows.Media.GeometryDrawing> – Draws a shape.  
   
--   <xref:System.Windows.Media.ImageDrawing> – Draws an image.  
+- <xref:System.Windows.Media.ImageDrawing> – Draws an image.  
   
--   <xref:System.Windows.Media.GlyphRunDrawing> – Draws text.  
+- <xref:System.Windows.Media.GlyphRunDrawing> – Draws text.  
   
--   <xref:System.Windows.Media.VideoDrawing> – Plays an audio or video file.  
+- <xref:System.Windows.Media.VideoDrawing> – Plays an audio or video file.  
   
--   <xref:System.Windows.Media.DrawingGroup> – Draws other drawings. Use a drawing group to combine other drawings into a single composite drawing.  
+- <xref:System.Windows.Media.DrawingGroup> – Draws other drawings. Use a drawing group to combine other drawings into a single composite drawing.  
   
  For more information about <xref:System.Windows.Media.Drawing> objects, see the [Drawing Objects Overview](drawing-objects-overview.md).  
   
@@ -84,9 +83,9 @@ Objects painted by a DrawingBrush
   
  There are two ways to specify the <xref:System.Windows.Media.VisualBrush.Visual%2A> content of a <xref:System.Windows.Media.VisualBrush>.  
   
--   Create a new <xref:System.Windows.Media.Visual> and use it to set the <xref:System.Windows.Media.VisualBrush.Visual%2A> property of the <xref:System.Windows.Media.VisualBrush>. For an example, see the [Example: Paint an Object with a Visual](#examplevisualbrush1) section that follows.  
+- Create a new <xref:System.Windows.Media.Visual> and use it to set the <xref:System.Windows.Media.VisualBrush.Visual%2A> property of the <xref:System.Windows.Media.VisualBrush>. For an example, see the [Example: Paint an Object with a Visual](#examplevisualbrush1) section that follows.  
   
--   Use an existing <xref:System.Windows.Media.Visual>, which creates a duplicate image of the target <xref:System.Windows.Media.Visual>. You can then use the <xref:System.Windows.Media.VisualBrush> to create interesting effects, such as reflection and magnification. For an example, see the [Example: Create a Reflection](#examplevisualbrush2) section.  
+- Use an existing <xref:System.Windows.Media.Visual>, which creates a duplicate image of the target <xref:System.Windows.Media.Visual>. You can then use the <xref:System.Windows.Media.VisualBrush> to create interesting effects, such as reflection and magnification. For an example, see the [Example: Create a Reflection](#examplevisualbrush2) section.  
   
  When you define a new <xref:System.Windows.Media.VisualBrush.Visual%2A> for a <xref:System.Windows.Media.VisualBrush> and that <xref:System.Windows.Media.Visual> is a <xref:System.Windows.UIElement> (such as a panel or control), the layout system runs on the <xref:System.Windows.UIElement> and its child elements when the <xref:System.Windows.Media.VisualBrush.AutoLayoutContent%2A> property is set to `true`. However, the root <xref:System.Windows.UIElement> is essentially isolated from the rest of the system: styles, and external layout can't permeate this boundary. Therefore, you should explicitly specify the size of the root <xref:System.Windows.UIElement>, because its only parent is the <xref:System.Windows.Media.VisualBrush> and therefore it cannot automatically size itself to the area being painted. For more information about layout in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], see the [Layout](../advanced/layout.md).  
   
@@ -129,6 +128,7 @@ Components of a TileBrush with multiple tiles
  For more information about the tiling features of <xref:System.Windows.Media.TileBrush> objects, see the [TileBrush Overview](tilebrush-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.ImageBrush>
 - <xref:System.Windows.Media.DrawingBrush>
 - <xref:System.Windows.Media.VisualBrush>

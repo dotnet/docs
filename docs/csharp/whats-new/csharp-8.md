@@ -52,7 +52,7 @@ public enum Rainbow
 }
 ```
 
-You could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
+If your application defined an `RGBColor` type that is constructed from the `R`, `G` and `B` components, you could convert a `Rainbow` value to its RGB values using the following method containing a switch expression:
 
 ```csharp
 public static RGBColor FromRainbow(Rainbow colorBand) =>
@@ -158,22 +158,37 @@ public class Point
 }
 ```
 
-The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the quadrant of the point:
+Additionally, consider the following enum that represents various positions of a quadrant:
 
 ```csharp
-static string Quadrant(Point p) => p switch
+public enum Quadrant
 {
-    (0, 0) => "origin",
-    (var x, var y) when x > 0 && y > 0 => "Quadrant 1",
-    (var x, var y) when x < 0 && y > 0 => "Quadrant 2",
-    (var x, var y) when x < 0 && y < 0 => "Quadrant 3",
-    (var x, var y) when x > 0 && y < 0 => "Quadrant 4",
-    (var x, var y) => "on a border",
-    _ => "unknown"
+    Unknown,
+    Origin,
+    One,
+    Two,
+    Three,
+    Four,
+    OnBorder
+}
+```
+
+The following method uses the **positional pattern** to extract the values of `x` and `y`. Then, it uses a `when` clause to determine the `Quadrant` of the point:
+
+```csharp
+static Quadrant GetQuadrant(Point point) => point switch
+{
+    (0, 0) => Quadrant.Origin,
+    var (x, y) when x > 0 && y > 0 => Quadrant.One,
+    var (x, y) when x < 0 && y > 0 => Quadrant.Two,
+    var (x, y) when x < 0 && y < 0 => Quadrant.Three,
+    var (x, y) when x > 0 && y < 0 => Quadrant.Four,
+    var (_, _) => Quadrant.OnBorder,
+    _ => Quadrant.Unknown
 };
 ```
 
-The discard pattern in the preceding switch matches when either `x` or `y`, but not both, is 0. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
 
 You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
 
@@ -198,7 +213,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 ```
 
 In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
-
 
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)
@@ -301,7 +315,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
-You can specify an index **from the end**. You specify **from the end** using the `^` operator. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". The index `^0` means "the end", or the index that follows the last element.
+You can specify an index **from the end** using the `^` character before the index. Indexing from the end starts from the rule that `0..^0` specifies the entire range. To enumerate an entire array, you start *at the first element*, and continue until you are *past the last element*. Think of the behavior of the `MoveNext` method on an enumerator: it returns false when the enumeration passes the last element. The index `^0` means "the end", `array[array.Length]`, or the index that follows the last element. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". 
 
 You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
 
@@ -320,7 +334,7 @@ var words = new string[]
     "the",      // 6                   ^3
     "lazy",     // 7                   ^2
     "dog"       // 8                   ^1
-};
+};              // 9 (or words.Length) ^0
 ```
 
 The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
@@ -363,3 +377,5 @@ The range can then be used inside the `[` and `]` characters:
 ```csharp
 var text = words[phrase];
 ```
+
+You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).

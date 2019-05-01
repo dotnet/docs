@@ -64,13 +64,13 @@ Arithmetic operators are used to perform many of the familiar arithmetic operati
   
  Arithmetic shifts are not circular, which means the bits shifted off one end of the result are not reintroduced at the other end. The bit positions vacated by a shift are set as follows:  
   
--   0 for an arithmetic left shift  
+- 0 for an arithmetic left shift  
   
--   0 for an arithmetic right shift of a positive number  
+- 0 for an arithmetic right shift of a positive number  
   
--   0 for an arithmetic right shift of an unsigned data type (`Byte`, `UShort`, `UInteger`, `ULong`)  
+- 0 for an arithmetic right shift of an unsigned data type (`Byte`, `UShort`, `UInteger`, `ULong`)  
   
--   1 for an arithmetic right shift of a negative number (`SByte`, `Short`, `Integer`, or `Long`)  
+- 1 for an arithmetic right shift of a negative number (`SByte`, `Short`, `Integer`, or `Long`)  
   
  The following example shifts an `Integer` value both left and right.  
   
@@ -89,6 +89,7 @@ Arithmetic operators are used to perform many of the familiar arithmetic operati
  If you set `Option Strict Off`, however, Visual Basic allows implicit narrowing conversions to take place, although they can result in the unexpected loss of data or precision. For this reason, we recommend that you use `Option Strict On` when writing production code. For more information, see [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
 ## See also
+
 - [Arithmetic Operators](../../../../visual-basic/language-reference/operators/arithmetic-operators.md)
 - [Bit Shift Operators](../../../../visual-basic/language-reference/operators/bit-shift-operators.md)
 - [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)

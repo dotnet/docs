@@ -16,13 +16,13 @@ ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
   
  This topic demonstrates how to perform the following tasks:  
   
--   Find a control that matches specific property conditions by walking the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree for the target application.  
+- Find a control that matches specific property conditions by walking the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree for the target application.  
   
--   Create an <xref:System.Windows.Automation.AutomationElement> for each control.  
+- Create an <xref:System.Windows.Automation.AutomationElement> for each control.  
   
--   Obtain an <xref:System.Windows.Automation.InvokePattern> object from any [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] element found that supports the <xref:System.Windows.Automation.InvokePattern> control pattern.  
+- Obtain an <xref:System.Windows.Automation.InvokePattern> object from any [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] element found that supports the <xref:System.Windows.Automation.InvokePattern> control pattern.  
   
--   Use <xref:System.Windows.Automation.InvokePattern.Invoke%2A> to invoke the control from a client event handler.  
+- Use <xref:System.Windows.Automation.InvokePattern.Invoke%2A> to invoke the control from a client event handler.  
   
 ## Example  
  This example uses the <xref:System.Windows.Automation.AutomationElement.TryGetCurrentPattern%2A> method of the <xref:System.Windows.Automation.AutomationElement> class to generate an <xref:System.Windows.Automation.InvokePattern> object and invoke a control by using the <xref:System.Windows.Automation.InvokePattern.Invoke%2A> method.  
@@ -33,4 +33,5 @@ ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
 [!code-vb[InvokePatternApp#1102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1102)]  
   
 ## See also
+
 - [InvokePattern, ExpandCollapsePattern, and TogglePattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)

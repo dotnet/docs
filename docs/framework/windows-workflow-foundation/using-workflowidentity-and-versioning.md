@@ -8,13 +8,13 @@ ms.assetid: b8451735-8046-478f-912b-40870a6c0c3a
   
 ## In this topic  
   
--   [Using WorkflowIdentity](using-workflowidentity-and-versioning.md#UsingWorkflowIdentity)  
+- [Using WorkflowIdentity](using-workflowidentity-and-versioning.md#UsingWorkflowIdentity)  
   
-    -   [Side-by-side Execution using WorkflowIdentity](using-workflowidentity-and-versioning.md#SxS)  
+    - [Side-by-side Execution using WorkflowIdentity](using-workflowidentity-and-versioning.md#SxS)  
   
--   [Upgrading .NET Framework 4 Persistence Databases to Support Workflow Versioning](using-workflowidentity-and-versioning.md#UpdatingWF4PersistenceDatabases)  
+- [Upgrading .NET Framework 4 Persistence Databases to Support Workflow Versioning](using-workflowidentity-and-versioning.md#UpdatingWF4PersistenceDatabases)  
   
-    -   [To upgrade the database schema](using-workflowidentity-and-versioning.md#ToUpgrade)  
+    - [To upgrade the database schema](using-workflowidentity-and-versioning.md#ToUpgrade)  
   
 ## <a name="UsingWorkflowIdentity"></a> Using WorkflowIdentity  
  To use <xref:System.Activities.WorkflowIdentity>, create an instance, configure it, and associate it with a <xref:System.Activities.WorkflowApplication> instance. A <xref:System.Activities.WorkflowIdentity> instance contains three identifying pieces of information. <xref:System.Activities.WorkflowIdentity.Name%2A> and <xref:System.Activities.WorkflowIdentity.Version%2A> contain a name and a <xref:System.Version> and are required, and <xref:System.Activities.WorkflowIdentity.Package%2A> is optional and can be used to specify an additional string containing information such as assembly name or other desired information. A <xref:System.Activities.WorkflowIdentity> is unique if any of its three properties are different from another <xref:System.Activities.WorkflowIdentity>.  
@@ -140,14 +140,14 @@ wfApp.Load(instance);
  **The SqlWorkflowInstanceStore has a database version of '4.0.0.0'. InstancePersistenceCommand 'System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand' cannot be run against this database version.  Please upgrade the database to '4.5.0.0'.**  
 ### <a name="ToUpgrade"></a> To upgrade the database schema  
   
-1.  Open SQL Server Management Studio and connect to the persistence database server, for example **.\SQLEXPRESS**.  
+1. Open SQL Server Management Studio and connect to the persistence database server, for example **.\SQLEXPRESS**.  
   
-2.  Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\4.0.30319\sql\en`  
+2. Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\4.0.30319\sql\en`  
   
-3.  Select **SqlWorkflowInstanceStoreSchemaUpgrade.sql** and click **Open**.  
+3. Select **SqlWorkflowInstanceStoreSchemaUpgrade.sql** and click **Open**.  
   
-4.  Select the name of the persistence database in the **Available Databases** drop-down.  
+4. Select the name of the persistence database in the **Available Databases** drop-down.  
   
-5.  Choose **Execute** from the **Query** menu.  
+5. Choose **Execute** from the **Query** menu.  
   
  When the query completes, the database schema is upgraded, and if desired, you can view the default workflow identity that was assigned to the persisted workflow instances. Expand your persistence database in the **Databases** node of the **Object Explorer**, and then expand the **Views** node. Right-click **System.Activities.DurableInstancing.Instances** and choose **Select Top 1000 Rows**. Scroll to end of the columns and note that there are six additional columns added to the view: **IdentityName**, **IdentityPackage**, **Build**, **Major**, **Minor**, and **Revision**. Any persisted workflows will have a value of **NULL** for these fields, representing a null workflow identity.

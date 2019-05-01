@@ -15,7 +15,8 @@ A single-line `If` statement contains several statements separated by colons (:)
   
 ## To correct this error  
   
--   Move the single-line `If` statement outside the control block that contains the `End If` statement.  
+- Move the single-line `If` statement outside the control block that contains the `End If` statement.  
   
 ## See also
+
 - [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)

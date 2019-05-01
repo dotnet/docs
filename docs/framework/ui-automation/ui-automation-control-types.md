@@ -58,4 +58,5 @@ ms.assetid: 261dcc59-3a62-4e40-91dd-63ff9d2241c0
  <xref:System.Windows.Automation.ControlType>  
   
 ## See also
+
 - [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)

@@ -20,11 +20,11 @@ This topic describes activity propagation in the Windows Communication Foundatio
 ## Propagation Definition  
  Activity M’s gAId is propagated to activity N if all of the following conditions apply.  
   
--   N is created because of M  
+- N is created because of M  
   
--   M’s gAId is known to N  
+- M’s gAId is known to N  
   
--   N's gAId is equal to M’s gAId.  
+- N's gAId is equal to M’s gAId.  
   
  The gAId is propagated through the ActivityId message header, as illustrated in the following XML schema.  
   
@@ -71,6 +71,7 @@ This topic describes activity propagation in the Windows Communication Foundatio
  To synchronize events across endpoints that run on different machines, a CorrelationId is added to the ActivityId header that is propagated in messages. Tools can use this ID to synchronize events across machines with clock discrepancy. Specifically, the Service Trace Viewer tool uses this ID for showing message flows between endpoints.  
   
 ## See also
+
 - [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
 - [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
 - [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)

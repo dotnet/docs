@@ -15,17 +15,17 @@ This topic provides Visual Basic guidelines for naming XML elements and attribut
 ## Rules  
  A local name of an element or attribute in Visual Basic must adhere to the following rules.  
   
--   It can begin with a namespace. It must begin with an alphabetical character or an underscore (`_`).  
+- It can begin with a namespace. It must begin with an alphabetical character or an underscore (`_`).  
   
--   It must contain only alphabetical characters, decimal digits, underscores, periods (.), and hyphens (-).  
+- It must contain only alphabetical characters, decimal digits, underscores, periods (.), and hyphens (-).  
   
--   It must not be more than 1,024 characters long.  
+- It must not be more than 1,024 characters long.  
   
--   Colons that appear in names indicate namespace demarcation. Therefore, you can use colons only to specify an XML namespace for a particular name.  
+- Colons that appear in names indicate namespace demarcation. Therefore, you can use colons only to specify an XML namespace for a particular name.  
   
  In addition, you should adhere to the following guideline.  
   
--   The XML 1.0 specification reserves all names starting with the string "xml", of any capitalization variation. Therefore, do not use those names for your element and attribute names.  
+- The XML 1.0 specification reserves all names starting with the string "xml", of any capitalization variation. Therefore, do not use those names for your element and attribute names.  
   
 ### Name Length Guidelines  
  As a practical matter, a name should be as short as possible while still clearly identifying the nature of the element. This improves the readability of your code and reduces line length and source-file size.  
@@ -39,5 +39,6 @@ This topic provides Visual Basic guidelines for naming XML elements and attribut
  When creating an XML element literal, you can specify the XML namespace prefix for the element name. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
   
 ## See also
+
 - [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
 - [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

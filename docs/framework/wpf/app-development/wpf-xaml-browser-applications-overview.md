@@ -17,15 +17,15 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
  This topic contains the following sections:  
   
--   [Creating a New XAML Browser Application (XBAP)](#creating_a_new_xaml_browser_application_xbap)  
+- [Creating a New XAML Browser Application (XBAP)](#creating_a_new_xaml_browser_application_xbap)  
   
--   [Deploying an XBAP](#deploying_a_xbap)  
+- [Deploying an XBAP](#deploying_a_xbap)  
   
--   [Communicating with the Host Web Page](#communicating_with_the_host_web_page)  
+- [Communicating with the Host Web Page](#communicating_with_the_host_web_page)  
   
--   [XBAP Security Considerations](#xbap_security_considerations)  
+- [XBAP Security Considerations](#xbap_security_considerations)  
   
--   [XBAP Start Time Performance Considerations](#xbap_start_time_performance_considerations)  
+- [XBAP Start Time Performance Considerations](#xbap_start_time_performance_considerations)  
   
 <a name="creating_a_new_xaml_browser_application_xbap"></a>   
 ## Creating a New XAML Browser Application (XBAP)  
@@ -94,25 +94,25 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ### Debugging XBAPs that Use HostScript  
  If your XBAP uses the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object to communicate with the HTML window, there are two settings that you must specify to run and debug the application in Visual Studio. The application must have access to its site of origin and you must start the application with the HTML page that contains the XBAP. The following steps describe how to check these two settings:  
   
-1.  In Visual Studio, open the project properties.  
+1. In Visual Studio, open the project properties.  
   
-2.  On the **Security** tab, click **Advanced**.  
+2. On the **Security** tab, click **Advanced**.  
   
      The Advanced Security Settings dialog box appears.  
   
-3.  Make sure that the **Grant the application access to its site of origin** check box is checked and then click **OK**.  
+3. Make sure that the **Grant the application access to its site of origin** check box is checked and then click **OK**.  
   
-4.  On the **Debug** tab, select the **Start browser with URL** option and specify the URL for the HTML page that contains the XBAP.  
+4. On the **Debug** tab, select the **Start browser with URL** option and specify the URL for the HTML page that contains the XBAP.  
   
-5.  In Internet Explorer, click the **Tools** button and then select **Internet Options**.  
+5. In Internet Explorer, click the **Tools** button and then select **Internet Options**.  
   
      The Internet Options dialog box appears.  
   
-6.  Click the **Advanced** tab.  
+6. Click the **Advanced** tab.  
   
-7.  In the **Settings** list under **Security**, check the **Allow active content to run in files on My Computer** check box.  
+7. In the **Settings** list under **Security**, check the **Allow active content to run in files on My Computer** check box.  
   
-8.  Click **OK**.  
+8. Click **OK**.  
   
      The changes will take effect after you restart Internet Explorer.  
   
@@ -125,30 +125,30 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
  When you use a <xref:System.Windows.Controls.WebBrowser> control in your application, WPF internally instantiates the native WebBrowser ActiveX control. When your application is a partial-trust XBAP running in Internet Explorer, the ActiveX control runs in a dedicated thread of the Internet Explorer process. Therefore, the following limitations apply:  
   
--   The <xref:System.Windows.Controls.WebBrowser> control should provide behavior similar to the host browser, including security restrictions. Some of these security restrictions can be controlled through the Internet Explorer security settings. For more information, see [Security](../security-wpf.md).  
+- The <xref:System.Windows.Controls.WebBrowser> control should provide behavior similar to the host browser, including security restrictions. Some of these security restrictions can be controlled through the Internet Explorer security settings. For more information, see [Security](../security-wpf.md).  
   
--   An exception is thrown when an XBAP is loaded cross-domain in an HTML page.  
+- An exception is thrown when an XBAP is loaded cross-domain in an HTML page.  
   
--   Input is on a separate thread from the WPF <xref:System.Windows.Controls.WebBrowser>, so keyboard input cannot be intercepted and the IME state is not shared.  
+- Input is on a separate thread from the WPF <xref:System.Windows.Controls.WebBrowser>, so keyboard input cannot be intercepted and the IME state is not shared.  
   
--   The timing or order of navigation may be different due to the ActiveX control running on another thread. For example, navigating to a page is not always cancelled by starting another navigation request.  
+- The timing or order of navigation may be different due to the ActiveX control running on another thread. For example, navigating to a page is not always cancelled by starting another navigation request.  
   
--   A custom ActiveX control may have trouble with communication since the WPF application is running in a separate thread.  
+- A custom ActiveX control may have trouble with communication since the WPF application is running in a separate thread.  
   
--   <xref:System.Windows.Interop.HwndHost.MessageHook> does not get raised because <xref:System.Windows.Interop.HwndHost> cannot subclass a window running in another thread or process.  
+- <xref:System.Windows.Interop.HwndHost.MessageHook> does not get raised because <xref:System.Windows.Interop.HwndHost> cannot subclass a window running in another thread or process.  
   
 ### Creating a Full-Trust XBAP  
  If your XBAP requires full trust, you can change your project to enable this permission. The following steps describe how to enable full trust:  
   
-1.  In Visual Studio, open the project properties.  
+1. In Visual Studio, open the project properties.  
   
-2.  On the **Security** tab, select the **This is a full trust application** option.  
+2. On the **Security** tab, select the **This is a full trust application** option.  
   
  This setting makes the following changes:  
   
--   In the project file, the `<TargetZone>` element value is changed to `Custom`.  
+- In the project file, the `<TargetZone>` element value is changed to `Custom`.  
   
--   In the application manifest (app.manifest), an `Unrestricted="true"` attribute is added to the `<xref:System.Security.PermissionSet> element.  
+- In the application manifest (app.manifest), an `Unrestricted="true"` attribute is added to the `<xref:System.Security.PermissionSet> element.  
   
     ```xml
     <PermissionSet class="System.Security.PermissionSet"   
@@ -181,5 +181,6 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
  In addition, improved concurrency of the ClickOnce download sequence improves start time by up to ten percent. After ClickOnce downloads and validates manifests, the application download starts, and the progress bar starts to update.  
   
 ## See also
+
 - [Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service](configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md)
 - [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)

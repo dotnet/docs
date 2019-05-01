@@ -251,11 +251,9 @@
     - name: Introduction to .NET and Docker
       href: core/docker/intro-net-docker.md
     - name: Containerize a .NET Core app
-      href: core/docker/docker-basics-dotnet-core.md
-    - name: Work with Docker base images
-      href: core/docker/building-net-docker-images.md
-    - name: Visual Studio Tools for Docker
-      href: /aspnet/core/publishing/visual-studio-tools-for-docker
+      href: core/docker/build-container.md
+    - name: Container Tools in Visual Studio
+      href: /visualstudio/containers/overview
   - name: Unit Testing
     href: core/testing/index.md
     items:
@@ -380,6 +378,8 @@
         items:
         - name: dotnet add package
           href: core/tools/dotnet-add-package.md
+        - name: dotnet list package
+          href: core/tools/dotnet-list-package.md
         - name: dotnet remove package
           href: core/tools/dotnet-remove-package.md
     - name: global.json
@@ -412,6 +412,8 @@
       href: core/porting/windows-compat-pack.md
     - name: Port Windows Forms projects
       href: core/porting/winforms.md
+    - name: Port WPF projects
+      href: core/porting/wpf.md
   - name: Build .NET Core from source
     href: core/build/index.md
     items:
@@ -508,8 +510,6 @@
         href: csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml
       - name: Branches and loops
         href: csharp/tutorials/intro-to-csharp/branches-and-loops.yml
-      - name: String interpolation
-        href: csharp/tutorials/intro-to-csharp/interpolated-strings.yml
       - name: List collections
         href: csharp/tutorials/intro-to-csharp/list-collection.yml
       - name: Work in your local environment
@@ -519,14 +519,22 @@
           href: csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md
         - name: Branches and loops
           href: csharp/tutorials/intro-to-csharp/branches-and-loops-local.md
-        - name: String interpolation
-          href: csharp/tutorials/intro-to-csharp/interpolated-strings-local.md
         - name: List collections
           href: csharp/tutorials/intro-to-csharp/arrays-and-collections.md
         - name: Introduction to classes
           href: csharp/tutorials/intro-to-csharp/introduction-to-classes.md
     - name: Explore C# 6
       href: csharp/tutorials/exploration/csharp-6.yml
+    - name: Explore C# 7.0
+      href: csharp/tutorials/exploration/csharp-7.yml
+    - name: Explore string interpolation - interactive
+      href: csharp/tutorials/exploration/interpolated-strings.yml
+    - name: Explore string interpolation - in your environment
+      href: csharp/tutorials/exploration/interpolated-strings-local.md
+    - name: Advanced scenarios for string Interpolation
+      href: csharp/tutorials/string-interpolation.md
+    - name: Explore indexes and ranges
+      href: csharp/tutorials/ranges-indexes.md
     - name: Work with nullable reference types
       href: csharp/tutorials/nullable-reference-types.md
     - name: Upgrade an app to nullable reference types
@@ -543,13 +551,11 @@
       href: csharp/tutorials/inheritance.md
     - name: Working with LINQ
       href: csharp/tutorials/working-with-linq.md
-    - name: String Interpolation
-      href: csharp/tutorials/string-interpolation.md
     - name: Using Attributes
       href: csharp/tutorials/attributes.md
   - name: Tour of C#
     href: csharp/tour-of-csharp/
-  - name: What's new in C
+  - name: What's new in C#
     items:
     - name: C# 8.0 - Preview 2
       href: csharp/whats-new/csharp-8.md
@@ -2370,82 +2376,6 @@
   - name: Walkthroughs
     href: visual-basic/walkthroughs.md
 - name: ML.NET Guide
-  href: machine-learning/index.md
-  items:
-  - name: Overview
-    items:
-    - name: What is ML.NET?
-      href: machine-learning/what-is-mldotnet.md
-    - name: Model training concepts
-      href: machine-learning/basic-concepts-model-training-in-mldotnet.md
-  - name: Tutorials
-    href: machine-learning/tutorials/index.md
-    items:
-    - name: Sentiment analysis (binary classification)
-      href: machine-learning/tutorials/sentiment-analysis.md
-    - name: Issue classification (multiclass classification)
-      href: machine-learning/tutorials/github-issue-classification.md
-    - name: Price prediction (regression)
-      href: machine-learning/tutorials/taxi-fare.md
-    - name: Iris flowers (clustering)
-      href: machine-learning/tutorials/iris-clustering.md
-    - name: Movie recommendation (recommendation)
-      href: machine-learning/tutorials/movie-recommmendation.md
-  - name: How-to guides
-    href: machine-learning/how-to-guides/index.md
-    items:
-    - name: Prepare data
-      items:
-      - name: Apply categorical feature engineering
-        href: machine-learning/how-to-guides/train-model-categorical-ml-net.md
-      - name: Apply textual feature engineering
-        href: machine-learning/how-to-guides/train-model-textual-ml-net.md
-      - name: Load data with many columns
-        href: machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md
-      - name: Load data from multiple files
-        href: machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md
-      - name: Load data from text file
-        href: machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD
-      - name: Preprocess data with normalizers
-        href: machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md
-    - name: Train, evaluate, and explain the model
-      items:
-      - name: Train model with real-time data sources
-        href: machine-learning/how-to-guides/load-non-file-training-data-ml-net.md
-      - name: Train model using cross-validation
-        href: machine-learning/how-to-guides/train-cross-validation-ml-net.md
-      - name: Inspect intermediate pipeline data values
-        href: machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md
-      - name: Train regression model
-        href: machine-learning/how-to-guides/train-regression-model-ml-net.md
-      - name: Determine model feature importance with PFI
-        href: machine-learning/how-to-guides/determine-global-feature-importance-in-model.md
-    - name: Use the trained model
-      items:
-      - name: One prediction at a time with PredictionEngine
-        href: machine-learning/how-to-guides/single-predict-model-ml-net.md
-      - name: Operationalize a trained model
-        href: machine-learning/how-to-guides/consuming-model-ml-net.md
-      - name: Serve Model Azure Functions
-        href: machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net.md
-      - name: Serve Model in Web API
-        href: machine-learning/how-to-guides/serve-model-web-api-ml-net.md
-    - name: Infer.NET
-      items:
-      - name: Probabilistic programming with Infer.NET
-        href: machine-learning/how-to-guides/matchup-app-infer-net.md
-  - name: Reference
-    items:
-    - name: API Reference
-      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
-  - name: Resources
-    href: machine-learning/resources/index.md
-    items:
-    - name: Machine learning glossary
-      href: machine-learning/resources/glossary.md
-    - name: Machine learning tasks
-      href: machine-learning/resources/tasks.md
-    - name: Data transforms
-      href: machine-learning/resources/transforms.md
+  href: machine-learning/index.yml
 - name: Samples and Tutorials
   href: samples-and-tutorials/index.md

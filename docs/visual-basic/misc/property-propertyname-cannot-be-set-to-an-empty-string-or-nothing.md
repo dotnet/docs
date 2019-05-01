@@ -8,7 +8,7 @@ The property requires a value other than an empty string ("") or `Nothing`. This
   
 ## To correct this error  
   
--   Supply a valid value.  
+- Supply a valid value.  
   
 ## See also
 

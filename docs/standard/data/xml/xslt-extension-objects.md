@@ -11,9 +11,9 @@ Extension objects are used to extend the functionality of style sheets. Extensio
   
  The following are advantages to using an extension object rather than embedded script:  
   
--   Provides better encapsulation and reuse of classes.  
+- Provides better encapsulation and reuse of classes.  
   
--   Allows style sheets to be smaller and more maintainable.  
+- Allows style sheets to be smaller and more maintainable.  
   
  XSLT extension objects are added to the <xref:System.Xml.Xsl.XsltArgumentList> object using the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method. A qualified name and namespace URI are associated with the extension object at that time.  
   
@@ -26,11 +26,11 @@ Extension objects are used to extend the functionality of style sheets. Extensio
   
 ### To use an XSLT extension object  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> object and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> object and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method.  
   
-2.  Call the extension object from the style sheet.  
+2. Call the extension object from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
   
 ## See also
 

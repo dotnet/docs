@@ -15,11 +15,11 @@ This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAni
 ## Example  
  The following example animates an object along a path by doing the following:  
   
--   Applies a <xref:System.Windows.Media.MatrixTransform> to the object in order to move it.  
+- Applies a <xref:System.Windows.Media.MatrixTransform> to the object in order to move it.  
   
--   Defines the path by using a <xref:System.Windows.Media.PathGeometry>.  
+- Defines the path by using a <xref:System.Windows.Media.PathGeometry>.  
   
--   Creates a <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> and uses it to animate the <xref:System.Windows.Media.Matrix> property of the <xref:System.Windows.Media.MatrixTransform>. The <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> takes the <xref:System.Windows.Media.PathGeometry> and uses it to generate <xref:System.Windows.Media.Matrix> values.  
+- Creates a <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> and uses it to animate the <xref:System.Windows.Media.Matrix> property of the <xref:System.Windows.Media.MatrixTransform>. The <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> takes the <xref:System.Windows.Media.PathGeometry> and uses it to generate <xref:System.Windows.Media.Matrix> values.  
   
  [!code-xaml[PathAnimationGallery_snippet#MatrixAnimationUsingPathWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/matrixanimationusingpathexample.xaml#matrixanimationusingpathwholepage)]  
   
@@ -29,6 +29,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAni
  For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028). For more information about geometric paths, see the [Geometry Overview](geometry-overview.md).  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)

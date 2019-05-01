@@ -26,17 +26,18 @@ Strong-naming an assembly creates a unique identity for the assembly, and can pr
   
  Strong-named assemblies are useful in the following scenarios:  
   
--   You want to enable your assemblies to be referenced by strong-named assemblies, or you want to give `friend` access to your assemblies from other strong-named assemblies.  
+- You want to enable your assemblies to be referenced by strong-named assemblies, or you want to give `friend` access to your assemblies from other strong-named assemblies.  
   
--   An app needs access to different versions of the same assembly. This means  you need different versions of an assembly to load side by side in the same app domain without conflict. For example, if different extensions of an API exist in assemblies that have the same simple name, strong-naming provides a unique identity for each version of the assembly.  
+- An app needs access to different versions of the same assembly. This means  you need different versions of an assembly to load side by side in the same app domain without conflict. For example, if different extensions of an API exist in assemblies that have the same simple name, strong-naming provides a unique identity for each version of the assembly.  
   
--   You do not want to negatively affect performance of apps using your assembly, so you want the assembly to be domain neutral. This requires strong-naming because a domain-neutral assembly must be installed in the global assembly cache.  
+- You do not want to negatively affect performance of apps using your assembly, so you want the assembly to be domain neutral. This requires strong-naming because a domain-neutral assembly must be installed in the global assembly cache.  
   
--   When you want to centralize servicing for your app by applying publisher policy, which means the assembly must be installed in the  global assembly cache.  
+- When you want to centralize servicing for your app by applying publisher policy, which means the assembly must be installed in the  global assembly cache.  
   
  If you are an open-source developer and you want the identity benefits of a strong-named assembly, consider checking in the private key associated with an assembly into your source control system.  
   
 ## See also
+
 - [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
 - [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)
 - [Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)

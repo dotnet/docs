@@ -14,22 +14,22 @@ Windows Identity Foundation 4.5 is a set of .NET Framework classes for implement
   
  WIF 4.5 has the following major features:  
   
--   Build claims-aware applications (relying party applications). WIF helps developers build claims-aware applications. In addition to providing a claims model, it provides application developers with a rich set of APIs to help making user access decisions based on claims.  WIF also provides developers with a consistent programming experience whether they choose to build their applications in ASP.NET or in WCF environments.  
+- Build claims-aware applications (relying party applications). WIF helps developers build claims-aware applications. In addition to providing a claims model, it provides application developers with a rich set of APIs to help making user access decisions based on claims.  WIF also provides developers with a consistent programming experience whether they choose to build their applications in ASP.NET or in WCF environments.  
   
--   Build identity delegation support into claims-aware applications.  WIF offers the capability of maintaining the identities of original requestors across the multiple service boundaries. This capability can be achieved by either using the "ActAs" or the "OnBehalfOf" functionality in the framework and it offers developers the ability to add identity delegation support into their claims-aware applications.  
+- Build identity delegation support into claims-aware applications.  WIF offers the capability of maintaining the identities of original requestors across the multiple service boundaries. This capability can be achieved by either using the "ActAs" or the "OnBehalfOf" functionality in the framework and it offers developers the ability to add identity delegation support into their claims-aware applications.  
   
--   Build custom STSs.  WIF makes it substantially easier to build a custom STS that supports the WS-Trust protocol. Such an STS is also referred to as an Active STS.  
+- Build custom STSs.  WIF makes it substantially easier to build a custom STS that supports the WS-Trust protocol. Such an STS is also referred to as an Active STS.  
   
      In addition, the framework also provides support for building an STS that supports WS-Federation to enable Web browser clients. Such an STS is also referred to as a Passive STS.  
   
--   New identity and access tool for Visual Studio 11 that enables you to secure your application with claims based identity and accept users from multiple identity providers. You can download this WIF tool from the following URL: [https://go.microsoft.com/fwlink/?LinkID=245849](https://go.microsoft.com/fwlink/?LinkID=245849) or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager. For more information, see [Identity and Access Tool for Visual Studio 2012](../../../docs/framework/security/identity-and-access-tool-for-vs.md).  
+- New identity and access tool for Visual Studio 11 that enables you to secure your application with claims based identity and accept users from multiple identity providers. You can download this WIF tool from the following URL: <https://go.microsoft.com/fwlink/?LinkID=245849> or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager. For more information, see [Identity and Access Tool for Visual Studio 2012](../../../docs/framework/security/identity-and-access-tool-for-vs.md).  
   
  WIF supports the following major scenarios:  
   
--   Federation.  WIF makes it possible to enable federation between two or more partners. Its support for building claims-aware applications (RPs) and custom STSs helps developers achieve this scenario.  
+- Federation.  WIF makes it possible to enable federation between two or more partners. Its support for building claims-aware applications (RPs) and custom STSs helps developers achieve this scenario.  
   
--   Identity Delegation.  WIF makes it easy to maintain the identities across the service boundaries so that developers can achieve an identity delegation scenario.  
+- Identity Delegation.  WIF makes it easy to maintain the identities across the service boundaries so that developers can achieve an identity delegation scenario.  
   
--   Step-up Authentication. Authentication requirements for different resources within an application may vary. WIF provides developers the ability to build applications that can require incremental authentication requirements (for example: initial login with Username/Password authentication and then step-up to Smart Card authentication).  
+- Step-up Authentication. Authentication requirements for different resources within an application may vary. WIF provides developers the ability to build applications that can require incremental authentication requirements (for example: initial login with Username/Password authentication and then step-up to Smart Card authentication).  
   
  By using WIF, you’ll more easily reap the benefits of the claims-based identity model. For more information, see [Windows Identity Foundation White Paper for Developers](https://download.microsoft.com/download/7/d/0/7d0b5166-6a8a-418a-addd-95ee9b046994/windowsidentityfoundationwhitepaperfordevelopers-rtw.pdf).

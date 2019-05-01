@@ -26,11 +26,11 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
   
--   Credentials used to authenticate client and service.  
+- Credentials used to authenticate client and service.  
   
--   Message or transport security protection mechanisms.  
+- Message or transport security protection mechanisms.  
   
--   Message exchange patterns.  
+- Message exchange patterns.  
   
 |Authentication Mode|Client Authentication|Server Authentication|Mode|  
 |-------------------------|---------------------------|---------------------------|----------|  

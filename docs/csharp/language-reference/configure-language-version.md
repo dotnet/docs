@@ -79,7 +79,7 @@ The value `latest` uses the latest minor version of the C# language. Valid value
 
 ## Configure multiple projects
 
-You can create a **Directory.build.props** file that contains the `<LangVersion>` element to configure multiple directories. You typically do that in your solution directory. Add the following to a **Directory.build.props** file in your solution directory:
+You can create a **Directory.Build.props** file that contains the `<LangVersion>` element to configure multiple directories. You typically do that in your solution directory. Add the following to a **Directory.Build.props** file in your solution directory:
 
 ```xml
 <Project>

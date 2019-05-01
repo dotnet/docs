@@ -21,10 +21,11 @@ A reference was created to embedded interop assembly '\<assembly1>' because of a
   
 ### To address this warning  
   
--   To embed interop type information for both assemblies, set the `Embed Interop Types` property on all references to assembly1 to `True`.  
+- To embed interop type information for both assemblies, set the `Embed Interop Types` property on all references to assembly1 to `True`.  
   
--   To remove the warning, you can set the `Embed Interop Types` property of assembly1 to `False`. In this case, interop type information is provided by a primary interop assembly (PIA).  
+- To remove the warning, you can set the `Embed Interop Types` property of assembly1 to `False`. In this case, interop type information is provided by a primary interop assembly (PIA).  
   
 ## See also
+
 - [/link (Visual Basic)](../../../visual-basic/reference/command-line-compiler/link.md)
 - [Interoperating with Unmanaged Code](../../../framework/interop/index.md)

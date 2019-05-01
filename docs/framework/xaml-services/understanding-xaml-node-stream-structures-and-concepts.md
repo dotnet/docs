@@ -40,13 +40,13 @@ A basic reading node loop for examining a XAML node stream consists of the follo
 
 - Based on which <xref:System.Xaml.XamlNodeType> is reported as the current node or current record, call one of the following to obtain information about the node contents:
 
-    - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.StartMember> or <xref:System.Xaml.XamlNodeType.EndMember>, call <xref:System.Xaml.XamlXmlReader.Member%2A> to obtain <xref:System.Xaml.XamlMember> information about a member. Note that the member might be a <xref:System.Xaml.XamlDirective>, and thus might not necessarily be a conventional type-defined member of the preceding object. For example, `x:Name` applied to an object appears as a XAML member where <xref:System.Xaml.XamlMember.IsDirective%2A> is true and the <xref:System.Xaml.XamlMember.Name%2A> of the member is `Name`, with other properties indicating that this directive is under the XAML language XAML namespace.
+  - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.StartMember> or <xref:System.Xaml.XamlNodeType.EndMember>, call <xref:System.Xaml.XamlXmlReader.Member%2A> to obtain <xref:System.Xaml.XamlMember> information about a member. Note that the member might be a <xref:System.Xaml.XamlDirective>, and thus might not necessarily be a conventional type-defined member of the preceding object. For example, `x:Name` applied to an object appears as a XAML member where <xref:System.Xaml.XamlMember.IsDirective%2A> is true and the <xref:System.Xaml.XamlMember.Name%2A> of the member is `Name`, with other properties indicating that this directive is under the XAML language XAML namespace.
 
-    - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.StartObject> or <xref:System.Xaml.XamlNodeType.EndObject>, call <xref:System.Xaml.XamlXmlReader.Type%2A> to obtain <xref:System.Xaml.XamlType> information about an object.
+  - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.StartObject> or <xref:System.Xaml.XamlNodeType.EndObject>, call <xref:System.Xaml.XamlXmlReader.Type%2A> to obtain <xref:System.Xaml.XamlType> information about an object.
 
-    - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.Value>, call <xref:System.Xaml.XamlXmlReader.Value%2A>. A node is a value only if it is the simplest expression of a value for a member, or the initialization text for an object (however, you should be aware of type conversion behavior as documented in an upcoming section of this topic).
+  - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.Value>, call <xref:System.Xaml.XamlXmlReader.Value%2A>. A node is a value only if it is the simplest expression of a value for a member, or the initialization text for an object (however, you should be aware of type conversion behavior as documented in an upcoming section of this topic).
 
-    - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>, call <xref:System.Xaml.XamlXmlReader.Namespace%2A> to obtain namespace information for a namespace node.
+  - For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>, call <xref:System.Xaml.XamlXmlReader.Namespace%2A> to obtain namespace information for a namespace node.
 
 - Call <xref:System.Xaml.XamlXmlReader.Read%2A> to advance the XAML reader to the next node in the XAML node stream, and repeat the steps again.
 
@@ -135,15 +135,15 @@ In the XAML node stream, you can rely on the following behavior:
 
 - A `Value` node represents the value itself; there is no "EndValue". It can be followed only by an `EndMember`.
 
-    - XAML initialization text of the object as might be used by construction does not result in an Object-Value structure. Instead, a dedicated member node for a member named `_Initialization` is created. and that member node contains the initialization value string. If it exists, `_Initialization` is always the first `StartMember`. `_Initialization` may be qualified in some XAML services representations with the XAML language XAML namescope, to clarify that `_Initialization` is not a defined property in backing types.
+  - XAML initialization text of the object as might be used by construction does not result in an Object-Value structure. Instead, a dedicated member node for a member named `_Initialization` is created. and that member node contains the initialization value string. If it exists, `_Initialization` is always the first `StartMember`. `_Initialization` may be qualified in some XAML services representations with the XAML language XAML namescope, to clarify that `_Initialization` is not a defined property in backing types.
 
-    - A Member-Value combination represents an attribute setting of the value. There might eventually be a value converter involved in processing this value, and the value is a plain string. However, that is not evaluated until a XAML object writer processes this node stream. The XAML object writer possesses the necessary XAML schema context, type system mapping, and other support needed for value conversions.
+  - A Member-Value combination represents an attribute setting of the value. There might eventually be a value converter involved in processing this value, and the value is a plain string. However, that is not evaluated until a XAML object writer processes this node stream. The XAML object writer possesses the necessary XAML schema context, type system mapping, and other support needed for value conversions.
 
 - An `EndMember` node can be followed by a `StartMember` node for a subsequent member, or by an `EndObject` node for the member owner.
 
 - An `EndObject` node can be followed by an `EndMember` node. It can also be followed by a `StartObject` node for cases where the objects are peers in a collection's items. Or it can be followed by a `Namespace` node, which applies to an upcoming `StartObject`.
 
-    - For the unique case of closing the entire node stream, the `EndObject` of the root is not followed by anything; the reader is now end-of-file, and <xref:System.Xaml.XamlReader.Read%2A> returns `false`.
+  - For the unique case of closing the entire node stream, the `EndObject` of the root is not followed by anything; the reader is now end-of-file, and <xref:System.Xaml.XamlReader.Read%2A> returns `false`.
 
 <a name="value_converters_and_the_xaml_node_stream"></a>
 
@@ -213,7 +213,7 @@ The following list notes all cases where a XAML reader is expected to introduce 
 
 - **Unknown content:** The name of this member node is `_UnknownContent`. Strictly speaking, it is a <xref:System.Xaml.XamlDirective>, and it is defined in the XAML language XAML namespace. This directive is used as a sentinel for cases where a XAML object element contains content in the source XAML but no content property can be determined under the currently available XAML schema context. You can detect this case in a XAML node stream by checking for members named `_UnknownContent`. If no other action is taken in a load path XAML node stream, the default <xref:System.Xaml.XamlObjectWriter> throws on attempted `WriteEndObject` when it encounters the `_UnknownContent` member on any object. The default <xref:System.Xaml.XamlXmlWriter> does not throw, and treats the member as implicit. You can get a static entity for `_UnknownContent` from <xref:System.Xaml.XamlLanguage.UnknownContent%2A>.
 
-- **Collection property of a collection:**Although the backing CLR type of a collection class that is used for XAML usually has a dedicated named property that holds the collection items, that property is not known to a XAML type system prior to backing type resolution. Instead, the XAML node stream introduces an `Items` placeholder as a member of the collection XAML type. In the .NET Framework XAML Services implementation the name of this directive / member in the node stream is `_Items`. A constant for this directive can be obtained from <xref:System.Xaml.XamlLanguage.Items%2A>.
+- **Collection property of a collection:** Although the backing CLR type of a collection class that is used for XAML usually has a dedicated named property that holds the collection items, that property is not known to a XAML type system prior to backing type resolution. Instead, the XAML node stream introduces an `Items` placeholder as a member of the collection XAML type. In the .NET Framework XAML Services implementation the name of this directive / member in the node stream is `_Items`. A constant for this directive can be obtained from <xref:System.Xaml.XamlLanguage.Items%2A>.
 
     Note that a XAML node stream might contain an Items property with items that turn out to not be parsable based on the backing type resolution and XAML schema context. For example,
 

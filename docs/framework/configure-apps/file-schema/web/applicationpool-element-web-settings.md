@@ -60,11 +60,11 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
 ## Example  
  The following example shows how to configure ASP.NET process-wide behavior in the aspnet.config file in the following circumstances:  
   
--   The application is hosted in an [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] application pool.  
+- The application is hosted in an [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] application pool.  
   
--   [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] is running in Integrated mode.  
+- [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] is running in Integrated mode.  
   
--   The application is using the [!INCLUDE[net_v35SP1_short](../../../../../includes/net-v35sp1-short-md.md)] or a later version.  
+- The application is using the [!INCLUDE[net_v35SP1_short](../../../../../includes/net-v35sp1-short-md.md)] or a later version.  
   
  The values in the example are the default values.  
   
@@ -89,4 +89,5 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
 |Can be Empty||  
   
 ## See also
+
 - [\<system.web> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)

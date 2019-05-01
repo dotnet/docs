@@ -21,22 +21,23 @@ You can use the collection editor of the <xref:System.Windows.Forms.TableLayoutP
   
 ### To edit rows and columns  
   
-1.  Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
+1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.  
   
-2.  Click the <xref:System.Windows.Forms.TableLayoutPanel> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) and select **Edit Rows and Columns** to open the **Column and Row Styles** dialog box. You can also right click on the <xref:System.Windows.Forms.TableLayoutPanel> control and select **Edit Rows and Columns** from the shortcut menu.  
+2. Click the <xref:System.Windows.Forms.TableLayoutPanel> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) and select **Edit Rows and Columns** to open the **Column and Row Styles** dialog box. You can also right click on the <xref:System.Windows.Forms.TableLayoutPanel> control and select **Edit Rows and Columns** from the shortcut menu.  
   
-3.  To add or remove columns, select **Columns** from the **Member type** drop-down list box.  
+3. To add or remove columns, select **Columns** from the **Member type** drop-down list box.  
   
-4.  To add or remove rows, select **Rows** from the **Member type** drop-down list box.  
+4. To add or remove rows, select **Rows** from the **Member type** drop-down list box.  
   
-5.  Click the **Add** button to add a row or column to the end of the **Member** list.  
+5. Click the **Add** button to add a row or column to the end of the **Member** list.  
   
-6.  Click the **Insert** button to add a row or column before the currently selected item in the list.  
+6. Click the **Insert** button to add a row or column before the currently selected item in the list.  
   
-7.  If you are adding a row or column, select the **Size Type** for the new row or column. For more information, see <xref:System.Windows.Forms.SizeType>.  
+7. If you are adding a row or column, select the **Size Type** for the new row or column. For more information, see <xref:System.Windows.Forms.SizeType>.  
   
-8.  To remove a row or column, click the **Remove** button to delete the currently selected item in the **Member** list.  
+8. To remove a row or column, click the **Remove** button to delete the currently selected item in the **Member** list.  
   
 ## See also
+
 - <xref:System.Windows.Forms.SizeType>
 - [TableLayoutPanel Control](tablelayoutpanel-control-windows-forms.md)

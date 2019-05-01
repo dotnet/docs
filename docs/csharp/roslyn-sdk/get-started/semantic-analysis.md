@@ -51,7 +51,7 @@ Next, build a <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation> from the tr
 
 [!code-csharp[Create the compilation](../../../../samples/csharp/roslyn-sdk/SemanticQuickStart/Program.cs#3 "Create the compilation for the semantic model")]
 
-The <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddReferences%2A?displayProperty=nameWithType> method adds references to the compilation. The <xref:Microsoft.CodeAnalysis.MetadataReference.CreateFromFile%2A?displayProperty=nameWithType> method loads an assembly as a reference. 
+The <xref:Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddReferences%2A?displayProperty=nameWithType> method adds references to the compilation. The <xref:Microsoft.CodeAnalysis.MetadataReference.CreateFromFile%2A?displayProperty=nameWithType> method loads an assembly as a reference.
 
 ## Querying the semantic model
 
@@ -154,4 +154,5 @@ Intern
 IsInterned
 Press any key to continue . . .
 ```
+
 You've used the Semantic API to find and display information about the symbols that are part of this program.

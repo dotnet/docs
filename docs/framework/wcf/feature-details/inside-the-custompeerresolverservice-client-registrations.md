@@ -20,12 +20,13 @@ Each node in the mesh publishes its endpoint information to the resolver service
   
  To implement your own resolver service, you need to write a maintenance function to remove stale registration records. There are several ways to do this:  
   
--   **Periodic maintenance**: Set a timer to go off periodically, and go through your data store to delete old records. The <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService> uses this approach.  
+- **Periodic maintenance**: Set a timer to go off periodically, and go through your data store to delete old records. The <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService> uses this approach.  
   
--   **Passive deletion**: Instead of actively searching for stale records at regular intervals, you can identify and delete stale records when your service is already performing another function. This may potentially slow down response time to requests from the resolver clients, but it eliminates the need for a timer, and may be more efficient if few nodes are expected to leave without calling `Unregister`.  
+- **Passive deletion**: Instead of actively searching for stale records at regular intervals, you can identify and delete stale records when your service is already performing another function. This may potentially slow down response time to requests from the resolver clients, but it eliminates the need for a timer, and may be more efficient if few nodes are expected to leave without calling `Unregister`.  
   
 ## RegistrationLifetime and Refresh  
  When a node registers with a resolver service, it receives a <xref:System.ServiceModel.PeerResolvers.RegisterResponseInfo> object from the service. This object has a `RegistrationLifetime` property which indicates to the node how much time it has before the registration expires and is removed by the resolver service. If, for example, the `RegistrationLifetime` is 2 minutes, the node needs to call `Refresh` in under 2 minutes to ensure the record stays fresh and is not deleted. When the resolver service receives a `Refresh` request, it looks up the record and resets the expiration time. Refresh returns a <xref:System.ServiceModel.PeerResolvers.RefreshResponseInfo> object with a `RegistrationLifetime` property.  
   
 ## See also
+
 - [Peer Resolvers](../../../../docs/framework/wcf/feature-details/peer-resolvers.md)

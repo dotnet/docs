@@ -9,21 +9,21 @@ ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
 # How the WCF Syndication Object Model Maps to Atom and RSS
 When developing a Windows Communication Foundation (WCF) syndication service, you create feeds and items using the following classes:  
   
--   <xref:System.ServiceModel.Syndication.SyndicationFeed>  
+- <xref:System.ServiceModel.Syndication.SyndicationFeed>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationItem>  
+- <xref:System.ServiceModel.Syndication.SyndicationItem>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationPerson>  
+- <xref:System.ServiceModel.Syndication.SyndicationPerson>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationLink>  
+- <xref:System.ServiceModel.Syndication.SyndicationLink>  
   
--   <xref:System.ServiceModel.Syndication.SyndicationCategory>  
+- <xref:System.ServiceModel.Syndication.SyndicationCategory>  
   
--   <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
+- <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
   
--   <xref:System.ServiceModel.Syndication.UrlSyndicationContent>  
+- <xref:System.ServiceModel.Syndication.UrlSyndicationContent>  
   
--   <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
+- <xref:System.ServiceModel.Syndication.XmlSyndicationContent>  
   
  A <xref:System.ServiceModel.Syndication.SyndicationFeed> can be serialized into any syndication format for which a formatter is defined. WCF ships with two formatters: <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> and <xref:System.ServiceModel.Syndication.Rss20FeedFormatter>.  
   
@@ -392,6 +392,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  `</content>`  
   
 ## See also
+
 - [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)
 - [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)
 - [How to: Create a Basic RSS Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)

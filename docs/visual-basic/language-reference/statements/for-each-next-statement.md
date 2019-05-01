@@ -86,11 +86,11 @@ Next [ element ]
   
  `Exit For` is often used after an evaluation of some condition, for example, in an `If`...`Then`...`Else` structure. You might want to use `Exit For` for the following conditions:  
   
--   Continuing to iterate is unnecessary or impossible. This might be caused by an erroneous value or a termination request.  
+- Continuing to iterate is unnecessary or impossible. This might be caused by an erroneous value or a termination request.  
   
--   An exception is caught in a `Try`...`Catch`...`Finally`. You might use `Exit For` at the end of the `Finally` block.  
+- An exception is caught in a `Try`...`Catch`...`Finally`. You might use `Exit For` at the end of the `Finally` block.  
   
--   There an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md).  
+- There an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md).  
   
 ## Iterators  
  You use an *iterator* to perform a custom iteration over a collection. An iterator can be a function or a `Get` accessor. It uses a `Yield` statement to return each element of the collection one at a time.  
@@ -167,6 +167,7 @@ End Sub
  [!code-vb[VbVbalrStatements#125](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#125)]  
   
 ## See also
+
 - [Collections](../../../standard/collections/index.md)
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)

@@ -15,15 +15,15 @@ Document type definitions (DTDs) complicate namespace support. For example, the 
   
  The following are possible resolutions if this construct is allowed:  
   
--   The `x:` is treated as a namespace prefix, but this prefix must be resolvable using an `xmlns:x` namespace declaration, which must also exist somewhere in the DTD. It is an error to map this prefix to something different in the instance document.  
+- The `x:` is treated as a namespace prefix, but this prefix must be resolvable using an `xmlns:x` namespace declaration, which must also exist somewhere in the DTD. It is an error to map this prefix to something different in the instance document.  
   
--   The `x:` is treated as a namespace prefix, but this prefix is always resolved in the context of the instance elements. This means the prefix could actually map to different namespace Uniform Resource Identifiers (URIs), depending on the namespace scope in which the `item` element appears. This behavior is more predictable than the resolution given in the earlier bullet, but it has other complicated ramifications because it requires the default attributes be materialized.  
+- The `x:` is treated as a namespace prefix, but this prefix is always resolved in the context of the instance elements. This means the prefix could actually map to different namespace Uniform Resource Identifiers (URIs), depending on the namespace scope in which the `item` element appears. This behavior is more predictable than the resolution given in the earlier bullet, but it has other complicated ramifications because it requires the default attributes be materialized.  
   
--   The colon is ignored because it is in a DTD, and the name of the attribute is `x:y`, no prefix and no namespace URI.  
+- The colon is ignored because it is in a DTD, and the name of the attribute is `x:y`, no prefix and no namespace URI.  
   
--   The colon in the default attribute throws an exception, saying that colons in names inside a DTD are not supported. This results in a predictable behavior, but means you cannot load many of the World Wide Web Consortium (W3C) published DTDs.  
+- The colon in the default attribute throws an exception, saying that colons in names inside a DTD are not supported. This results in a predictable behavior, but means you cannot load many of the World Wide Web Consortium (W3C) published DTDs.  
   
--   When the user requests DTD validation, namespace support for the entire document is turned off. This makes it possible to load W3C DTDs and results in a predictable behavior.  
+- When the user requests DTD validation, namespace support for the entire document is turned off. This makes it possible to load W3C DTDs and results in a predictable behavior.  
   
  The XML in the Microsoft .NET Framework implements the second option for maximum W3C compatibility.  
   

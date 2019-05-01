@@ -241,7 +241,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 ## Configuring Connection Information
  All DbActivities share the same configuration parameters. They can be configured in two ways:
 
--   `ConnectionString + InvariantName`: Set the ADO.NET provider invariant name and connection string.
+- `ConnectionString + InvariantName`: Set the ADO.NET provider invariant name and connection string.
 
     ```
     Activity dbSelectCount = new DbQueryScalar<DateTime>()
@@ -254,7 +254,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
     };
     ```
 
--   `ConfigName`: Set the name of the configuration section that contains the connection information.
+- `ConfigName`: Set the name of the configuration section that contains the connection information.
 
     ```xml
     <connectionStrings>
@@ -264,7 +264,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
       </connectionStrings>
     ```
 
--   In the activity:
+- In the activity:
 
     ```
     Activity dbSelectCount = new DbQueryScalar<int>()
@@ -281,38 +281,38 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 
  The Setup.cmd script invokes the CreateDb.sql script file, which contains SQL commands that do the following:
 
--   Creates a database called DbActivitiesSample.
+- Creates a database called DbActivitiesSample.
 
--   Creates the Roles table.
+- Creates the Roles table.
 
--   Creates Employees table.
+- Creates Employees table.
 
--   Inserts three records into the Roles table.
+- Inserts three records into the Roles table.
 
--   Inserts twelve records into the Employees table.
+- Inserts twelve records into the Employees table.
 
 ##### To run Setup.cmd
 
-1.  Open a command prompt.
+1. Open a command prompt.
 
-2.  Go to the DbActivities sample folder.
+2. Go to the DbActivities sample folder.
 
-3.  Type "setup.cmd" and press ENTER.
+3. Type "setup.cmd" and press ENTER.
 
     > [!NOTE]
     >  Setup.cmd attempts to install the sample in your local machine SqlExpress instance. If you want to install it in other SQL server instance, edit Setup.cmd with the new instance name.
 
 ##### To uninstall the sample database
 
-1.  Run Cleanup.cmd from the sample folder in a command prompt.
+1. Run Cleanup.cmd from the sample folder in a command prompt.
 
 ##### To run the sample
 
-1.  Open the solution in Visual Studio 2010
+1. Open the solution in Visual Studio 2010
 
-2.  To compile the solution, press CTRL+SHIFT+B.
+2. To compile the solution, press CTRL+SHIFT+B.
 
-3.  To run the sample without debugging, press CTRL+F5.
+3. To run the sample without debugging, press CTRL+F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

@@ -26,11 +26,11 @@ Provides properties and classes for accessing the application's resources.
   
  Each resource has a name, category, and value, and these resource settings determine how the property to access the resource appears in the `My.Resources` object. For resources added in the **Project Designer**:  
   
--   The name determines the name of the property,  
+- The name determines the name of the property,  
   
--   The resource data is the value of the property,  
+- The resource data is the value of the property,  
   
--   The category determines the type of the property:  
+- The category determines the type of the property:  
   
 |Category|Property data type|  
 |---|---|  
@@ -72,6 +72,6 @@ Provides properties and classes for accessing the application's resources.
  [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
 ## See also
+
 - [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
 - [Resources in Desktop Apps](../../../framework/resources/index.md)
-

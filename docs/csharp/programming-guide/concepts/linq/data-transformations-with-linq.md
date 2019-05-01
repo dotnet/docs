@@ -14,13 +14,13 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 # Data Transformations with LINQ (C#)
 [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] is not only about retrieving data. It is also a powerful tool for transforming data. By using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries is the ability to create new types. This is accomplished in the [select](../../../../csharp/language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  
   
--   Merge multiple input sequences into a single output sequence that has a new type.  
+- Merge multiple input sequences into a single output sequence that has a new type.  
   
--   Create output sequences whose elements consist of only one or several properties of each element in the source sequence.  
+- Create output sequences whose elements consist of only one or several properties of each element in the source sequence.  
   
--   Create output sequences whose elements consist of the results of operations performed on the source data.  
+- Create output sequences whose elements consist of the results of operations performed on the source data.  
   
--   Create output sequences in a different format. For example, you can transform data from SQL rows or text files into XML.  
+- Create output sequences in a different format. For example, you can transform data from SQL rows or text files into XML.  
   
  These are just several examples. Of course, these transformations can be combined in various ways in the same query. Furthermore, the output sequence of one query can be used as the input sequence for a new query.  
   
@@ -38,14 +38,14 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 ## Selecting a Subset of each Source Element  
  There are two primary ways to select a subset of each element in the source sequence:  
   
-1.  To select just one member of the source element, use the dot operation. In the following example, assume that a `Customer` object contains several public properties including a string named `City`. When executed, this query will produce an output sequence of strings.  
+1. To select just one member of the source element, use the dot operation. In the following example, assume that a `Customer` object contains several public properties including a string named `City`. When executed, this query will produce an output sequence of strings.  
   
     ```csharp
     var query = from cust in Customers  
                 select cust.City;  
     ```  
   
-2.  To create elements that contain more than one property from the source element, you can use an object initializer with either a named object or an anonymous type. The following example shows the use of an anonymous type to encapsulate two properties from each `Customer` element:  
+2. To create elements that contain more than one property from the source element, you can use an object initializer with either a named object or an anonymous type. The following example shows the use of an anonymous type to encapsulate two properties from each `Customer` element:  
   
     ```csharp
     var query = from cust in Customer  

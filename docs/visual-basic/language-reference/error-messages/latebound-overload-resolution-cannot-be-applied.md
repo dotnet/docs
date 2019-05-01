@@ -18,7 +18,7 @@ The compiler is attempting to resolve a reference to an overloaded property or p
   
 ## To correct this error  
   
--   Use `CType` to cast the argument from `Object` to the type specified by the signature of the overload you want to call.  
+- Use `CType` to cast the argument from `Object` to the type specified by the signature of the overload you want to call.  
   
      Note that it does not help to cast the referring object to the underlying interface. You must cast the argument to avoid this error.  
   
@@ -59,6 +59,7 @@ refer.s1(CType(o1, Double))
  Each of the preceding lines of code explicitly casts the `Object` variable `o1` to one of the parameter types defined for the overloads.  
   
 ## See also
+
 - [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
 - [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
 - [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)

@@ -11,9 +11,9 @@ One of the most important concepts of Windows Forms data binding is *change noti
   
  There are different kinds of change notification, depending on the kind of data binding:  
   
--   Simple binding, in which a single control property is bound to a single instance of an object.  
+- Simple binding, in which a single control property is bound to a single instance of an object.  
   
--   List-based binding, which can include a single control property bound to the property of an item in a list or a control property bound to a list of objects.  
+- List-based binding, which can include a single control property bound to the property of an item in a list or a control property bound to a list of objects.  
   
  Additionally, if you are creating Windows Forms controls that you want to use for data binding, you must apply the *PropertyName*Changed pattern to the controls, so that changes to the bound property of a control are propagated to the data source.  
   
@@ -27,6 +27,7 @@ One of the most important concepts of Windows Forms data binding is *change noti
  Finally, from the control side you must expose a *PropertyName*Changed event for each property designed to be bound to data. The changes to the control property are then propagated to the bound data source. For more information, see [How to: Apply the PropertyNameChanged Pattern](how-to-apply-the-propertynamechanged-pattern.md)  
   
 ## See also
+
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.ComponentModel.INotifyPropertyChanged>
 - <xref:System.ComponentModel.BindingList%601>

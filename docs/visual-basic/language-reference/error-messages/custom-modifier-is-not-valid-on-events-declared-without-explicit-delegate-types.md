@@ -17,13 +17,13 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
   
 ## To correct this error  
   
-1.  Define a delegate with the same parameter list as the custom event.  
+1. Define a delegate with the same parameter list as the custom event.  
   
      For example, if the `Custom Event` was defined by `Custom Event Test(ByVal sender As Object, ByVal i As Integer)`, then the corresponding delegate would be the following.  
   
      [!code-vb[VbVbalrEventError#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#18)]  
   
-2.  Replace the parameter list of the custom event with an `As` clause specifying the delegate type.  
+2. Replace the parameter list of the custom event with an `As` clause specifying the delegate type.  
   
      Continuing with the example, `Custom Event` declaration would be rewritten as follows.  
   
@@ -35,6 +35,7 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
  [!code-vb[VbVbalrEventError#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#2)]  
   
 ## See also
+
 - [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
 - [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
 - [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

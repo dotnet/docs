@@ -17,11 +17,12 @@ The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to displa
   
 ### To add a control using the designer  
   
-1.  Click the appropriate tab page so that it appears on top.  
+1. Click the appropriate tab page so that it appears on top.  
   
-2.  Draw the control on the tab page.  
+2. Draw the control on the tab page.  
   
 ## See also
+
 - [TabControl Control](tabcontrol-control-windows-forms.md)
 - [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)
 - [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)

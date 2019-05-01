@@ -112,6 +112,7 @@ Defines properties that control authentication parameters for the HTTP transport
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>
 - <xref:System.ServiceModel.HttpTransportSecurity>

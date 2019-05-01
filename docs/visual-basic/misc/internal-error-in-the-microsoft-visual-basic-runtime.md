@@ -10,7 +10,7 @@ An internal error has occurred in the Microsoft Visual Basic runtime.
   
 ## To correct this error  
   
--   Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
+- Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
 ## See also
 

@@ -18,11 +18,11 @@ Specifies that a variable or property can be read but not written.
   
 ## Rules  
   
--   **Declaration Context.** You can use `ReadOnly` only at module level. This means the declaration context for a `ReadOnly` element must be a class, structure, or module, and cannot be a source file, namespace, or procedure.  
+- **Declaration Context.** You can use `ReadOnly` only at module level. This means the declaration context for a `ReadOnly` element must be a class, structure, or module, and cannot be a source file, namespace, or procedure.  
   
--   **Combined Modifiers.** You cannot specify `ReadOnly` together with `Static` in the same declaration.  
+- **Combined Modifiers.** You cannot specify `ReadOnly` together with `Static` in the same declaration.  
   
--   **Assigning a Value.** Code consuming a `ReadOnly` property cannot set its value. But code that has access to the underlying storage can assign or change the value at any time.  
+- **Assigning a Value.** Code consuming a `ReadOnly` property cannot set its value. But code that has access to the underlying storage can assign or change the value at any time.  
   
      You can assign a value to a `ReadOnly` variable only in its declaration or in the constructor of a class or structure in which it is defined.  
   
@@ -56,5 +56,6 @@ Specifies that a variable or property can be read but not written.
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## See also
+
 - [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

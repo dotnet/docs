@@ -10,22 +10,21 @@ ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
 ---
 # Application Management Overview
 All applications tend to share a common set of functionality that applies to application implementation and management. This topic provides an overview of the functionality in the <xref:System.Windows.Application> class for creating and managing applications.  
-   
-  
+
 ## The Application Class  
  In WPF, common application-scoped functionality is encapsulated in the <xref:System.Windows.Application> class. The <xref:System.Windows.Application> class includes the following functionality:  
   
--   Tracking and interacting with application lifetime.  
+- Tracking and interacting with application lifetime.  
   
--   Retrieving and processing command-line parameters.  
+- Retrieving and processing command-line parameters.  
   
--   Detecting and responding to unhandled exceptions.  
+- Detecting and responding to unhandled exceptions.  
   
--   Sharing application-scope properties and resources.  
+- Sharing application-scope properties and resources.  
   
--   Managing windows in standalone applications.  
+- Managing windows in standalone applications.  
   
--   Tracking and managing navigation.  
+- Tracking and managing navigation.  
   
 <a name="The_Application_Class"></a>   
 ## How to Perform Common Tasks Using the Application Class  
@@ -66,7 +65,7 @@ All applications tend to share a common set of functionality that applies to app
   
 - In markup, the `Application` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes MSBuild to create a `partial` class that derives from <xref:System.Windows.Application> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the XAML schema (`xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`).
   
--   In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup and must derive from <xref:System.Windows.Application>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built (see [Building a WPF Application](building-a-wpf-application-wpf.md)).  
+- In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup and must derive from <xref:System.Windows.Application>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built (see [Building a WPF Application](building-a-wpf-application-wpf.md)).  
   
 > [!NOTE]
 >  When you create a new WPF Application project or WPF Browser Application project using Visual Studio, an application definition is included by default and is defined using both markup and code-behind.  
@@ -119,8 +118,7 @@ All applications tend to share a common set of functionality that applies to app
 <a name="Application_Lifetime"></a>   
 ## Application Lifetime  
  The lifetime of a WPF application is marked by several events that are raised by <xref:System.Windows.Application> to let you know when your application has started, has been activated and deactivated, and has been shut down.  
-  
-  
+
 <a name="Splash_Screen"></a>   
 ### Splash Screen  
  Starting in the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], you can specify an image to be used in a startup window, or *splash screen*. The <xref:System.Windows.SplashScreen> class makes it easy to display a startup window while your application is loading. The <xref:System.Windows.SplashScreen> window is created and shown before <xref:System.Windows.Application.Run%2A> is called. For more information, see [Application Startup Time](../advanced/application-startup-time.md) and [Add a Splash Screen to a WPF Application](how-to-add-a-splash-screen-to-a-wpf-application.md).  
@@ -191,17 +189,17 @@ All applications tend to share a common set of functionality that applies to app
 ### Application Activation and Deactivation  
  Windows allows users to switch between applications. The most common way is to use the ALT+TAB key combination. An application can only be switched to if it has a visible <xref:System.Windows.Window> that a user can select. The currently selected <xref:System.Windows.Window> is the *active window* (also known as the *foreground window*) and is the <xref:System.Windows.Window> that receives user input. The application with the active window is the *active application* (or *foreground application*). An application becomes the active application in the following circumstances:  
   
--   It is launched and shows a <xref:System.Windows.Window>.  
+- It is launched and shows a <xref:System.Windows.Window>.  
   
--   A user switches from another application by selecting a <xref:System.Windows.Window> in the application.  
+- A user switches from another application by selecting a <xref:System.Windows.Window> in the application.  
   
  You can detect when an application becomes active by handling the <xref:System.Windows.Application.Activated?displayProperty=nameWithType> event.  
   
  Likewise, an application can become inactive in the following circumstances:  
   
--   A user switches to another application from the current one.  
+- A user switches to another application from the current one.  
   
--   When the application shuts down.  
+- When the application shuts down.  
   
  You can detect when an application becomes inactive by handling the <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> event.  
   
@@ -221,13 +219,13 @@ All applications tend to share a common set of functionality that applies to app
 ### Application Shutdown  
  The life of an application ends when it is shut down, which can occur for the following reasons:  
   
--   A user closes every <xref:System.Windows.Window>.  
+- A user closes every <xref:System.Windows.Window>.  
   
--   A user closes the main <xref:System.Windows.Window>.  
+- A user closes the main <xref:System.Windows.Window>.  
   
--   A user ends the Windows session by logging off or shutting down.  
+- A user ends the Windows session by logging off or shutting down.  
   
--   An application-specific condition has been met.  
+- An application-specific condition has been met.  
   
  To help you manage application shutdown, <xref:System.Windows.Application> provides the <xref:System.Windows.Application.Shutdown%2A> method, the <xref:System.Windows.Application.ShutdownMode%2A> property, and the <xref:System.Windows.Application.SessionEnding> and <xref:System.Windows.Application.Exit> events.  
   
@@ -237,11 +235,11 @@ All applications tend to share a common set of functionality that applies to app
 #### Shutdown Mode  
  Most applications shut down either when all the windows are closed or when the main window is closed. Sometimes, however, other application-specific conditions may determine when an application shuts down. You can specify the conditions under which your application will shut down by setting <xref:System.Windows.Application.ShutdownMode%2A> with one of the following <xref:System.Windows.ShutdownMode> enumeration values:  
   
--   <xref:System.Windows.ShutdownMode.OnLastWindowClose>  
+- <xref:System.Windows.ShutdownMode.OnLastWindowClose>  
   
--   <xref:System.Windows.ShutdownMode.OnMainWindowClose>  
+- <xref:System.Windows.ShutdownMode.OnMainWindowClose>  
   
--   <xref:System.Windows.ShutdownMode.OnExplicitShutdown>  
+- <xref:System.Windows.ShutdownMode.OnExplicitShutdown>  
   
  The default value of <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode.OnLastWindowClose>, which means that an application automatically shuts down when the last window in the application is closed by the user. However, if your application should be shut down when the main window is closed, WPF automatically does that if you set <xref:System.Windows.Application.ShutdownMode%2A> to <xref:System.Windows.ShutdownMode.OnMainWindowClose>. This is shown in the following example.  
   
@@ -255,13 +253,13 @@ All applications tend to share a common set of functionality that applies to app
 #### Session Ending  
  The shutdown conditions that are described by the <xref:System.Windows.Application.ShutdownMode%2A> property are specific to an application. In some cases, though, an application may shut down as a result of an external condition. The most common external condition occurs when a user ends the Windows session by the following actions:  
   
--   Logging off  
+- Logging off  
   
--   Shutting down  
+- Shutting down  
   
--   Restarting  
+- Restarting  
   
--   Hibernating  
+- Hibernating  
   
  To detect when a Windows session ends, you can handle the <xref:System.Windows.Application.SessionEnding> event, as illustrated in the following example.  
   
@@ -287,11 +285,11 @@ All applications tend to share a common set of functionality that applies to app
   
  <xref:System.Windows.Application.Exit> can be handled by both standalone applications and XBAPs. For XBAPs, <xref:System.Windows.Application.Exit> is raised when in the following circumstances:  
   
--   An XBAP is navigated away from.  
+- An XBAP is navigated away from.  
   
--   In [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)], when the tab that is hosting the XBAP is closed.  
+- In [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)], when the tab that is hosting the XBAP is closed.  
   
--   When the browser is closed.  
+- When the browser is closed.  
   
 #### Exit Code  
  Applications are mostly launched by the operating system in response to a user request. However, an application can be launched by another application to perform some specific task. When the launched application shuts down, the launching application may want to know the condition under which the launched application shut down. In these situations, Windows allows applications to return an application exit code on shutdown. By default, WPF applications return an exit code value of 0.  
@@ -317,15 +315,15 @@ All applications tend to share a common set of functionality that applies to app
 ### Unhandled Exceptions  
  Sometimes an application may shut down under abnormal conditions, such as when an unanticipated exception is thrown. In this case, the application may not have the code to detect and process the exception. This type of exception is an unhandled exception; a notification similar to that shown in the following figure is displayed before the application is closed.  
   
- ![Unhandled exception notification](./media/applicationmanagementoverviewfigure2.png "ApplicationManagementOverviewFigure2")  
+ ![Screenshot that shows an unhandled exception notification.](./media/application-management-overview/unhandled-exception-notification.png)  
   
  From the user experience perspective, it is better for an application to avoid this default behavior by doing some or all of the following:  
   
--   Displaying user-friendly information.  
+- Displaying user-friendly information.  
   
--   Attempting to keep an application running.  
+- Attempting to keep an application running.  
   
--   Recording detailed, developer-friendly exception information in the Windows event log.  
+- Recording detailed, developer-friendly exception information in the Windows event log.  
   
  Implementing this support depends on being able to detect unhandled exceptions, which is what the <xref:System.Windows.Application.DispatcherUnhandledException> event is raised for.  
   
@@ -351,6 +349,7 @@ All applications tend to share a common set of functionality that applies to app
  ![XBAP &#45; Application Object Events](./media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
   
 ## See also
+
 - <xref:System.Windows.Application>
 - [WPF Windows Overview](wpf-windows-overview.md)
 - [Navigation Overview](navigation-overview.md)

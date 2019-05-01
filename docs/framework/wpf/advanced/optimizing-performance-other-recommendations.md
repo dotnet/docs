@@ -17,17 +17,17 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
  This topic contains the following sections:  
   
--   [Opacity on Brushes Versus Opacity on Elements](#Opacity)  
+- [Opacity on Brushes Versus Opacity on Elements](#Opacity)  
   
--   [Navigation to Object](#Navigation_Objects)  
+- [Navigation to Object](#Navigation_Objects)  
   
--   [Hit Testing on Large 3D Surfaces](#Hit_Testing)  
+- [Hit Testing on Large 3D Surfaces](#Hit_Testing)  
   
--   [CompositionTarget.Rendering Event](#CompositionTarget_Rendering_Event)  
+- [CompositionTarget.Rendering Event](#CompositionTarget_Rendering_Event)  
   
--   [Avoid Using ScrollBarVisibility=Auto](#Avoid_Using_ScrollBarVisibility)  
+- [Avoid Using ScrollBarVisibility=Auto](#Avoid_Using_ScrollBarVisibility)  
   
--   [Configure Font Cache Service to Reduce Start-up Time](#FontCache)  
+- [Configure Font Cache Service to Reduce Start-up Time](#FontCache)  
   
 <a name="Opacity"></a>   
 ## Opacity on Brushes Versus Opacity on Elements  
@@ -67,6 +67,7 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] Font Cache service shares font data between [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. The first [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application you run starts this service if the service is not already running. If you are using [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], you can set the "Windows Presentation Foundation (WPF) Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
 ## See also
+
 - [Planning for Application Performance](planning-for-application-performance.md)
 - [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)
 - [Layout and Design](optimizing-performance-layout-and-design.md)

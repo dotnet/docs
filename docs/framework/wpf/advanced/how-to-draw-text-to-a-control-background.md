@@ -23,5 +23,6 @@ Example of controls with custom text backgrounds
  [!code-csharp[DrawTextToControlBackground#DrawTextToControlBackground1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawTextToControlBackground/CSHARP/Window1.xaml.cs#drawtexttocontrolbackground1)]  
   
 ## See also
+
 - <xref:System.Windows.Media.FormattedText>
 - [Drawing Formatted Text](drawing-formatted-text.md)

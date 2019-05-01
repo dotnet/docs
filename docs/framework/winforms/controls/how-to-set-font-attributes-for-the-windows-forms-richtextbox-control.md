@@ -20,11 +20,11 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
   
 ### To change the appearance of characters  
   
-1.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionFont%2A> property to an appropriate font.  
+1. Set the <xref:System.Windows.Forms.RichTextBox.SelectionFont%2A> property to an appropriate font.  
   
      To enable users to set the font family, size, and typeface in an application, you would typically use the <xref:System.Windows.Forms.FontDialog> component. For an overview, see [FontDialog Component Overview](fontdialog-component-overview-windows-forms.md).  
   
-2.  Set the <xref:System.Windows.Forms.RichTextBox.SelectionColor%2A> property to an appropriate color.  
+2. Set the <xref:System.Windows.Forms.RichTextBox.SelectionColor%2A> property to an appropriate color.  
   
      To enable users to set the color in an application, you would typically use the <xref:System.Windows.Forms.ColorDialog> component. For an overview, see [ColorDialog Component Overview](colordialog-component-overview-windows-forms.md).  
   
@@ -48,6 +48,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     >  These properties only affect selected text, or, if no text is selected, the text that is typed at the current location of the insertion point. For information on selecting text programmatically, see <xref:System.Windows.Forms.TextBoxBase.Select%2A>.  
   
 ## See also
+
 - <xref:System.Windows.Forms.RichTextBox>
 - [RichTextBox Control](richtextbox-control-windows-forms.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

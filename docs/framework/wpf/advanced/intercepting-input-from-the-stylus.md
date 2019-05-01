@@ -16,13 +16,13 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
   
  This topic contains the following subsections:  
   
--   [Architecture](#Architecture)  
+- [Architecture](#Architecture)  
   
--   [Implementing Stylus Plug-ins](#ImplementingStylusPlugins)  
+- [Implementing Stylus Plug-ins](#ImplementingStylusPlugins)  
   
--   [Adding Your Plug-in to an InkCanvas](#AddingYourPluginToAnInkCanvas)  
+- [Adding Your Plug-in to an InkCanvas](#AddingYourPluginToAnInkCanvas)  
   
--   [Conclusion](#Conclusion)  
+- [Conclusion](#Conclusion)  
   
 <a name="Architecture"></a>   
 ## Architecture  
@@ -65,5 +65,6 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
  By deriving your own <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> classes and inserting them into <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> collections, you can greatly enhance the behavior of your digital ink. You have access to the <xref:System.Windows.Input.StylusPoint> data as it is generated, giving you the opportunity to customize the <xref:System.Windows.Input.Stylus> input. Because you have such low-level access to the <xref:System.Windows.Input.StylusPoint> data, you can implement ink collection and rendering with optimal performance for your application.  
   
 ## See also
+
 - [Advanced Ink Handling](advanced-ink-handling.md)
 - [Accessing and Manipulating Pen Input](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

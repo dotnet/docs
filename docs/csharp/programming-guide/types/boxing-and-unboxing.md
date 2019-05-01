@@ -40,10 +40,9 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
   
  [!code-csharp[csProgGuideTypes#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#18)]  
   
- The result of this statement is creating an object reference `o`, on the stack, that references a value of the type `int`, on the heap. This value is a copy of the value-type value assigned to the variable `i`. The difference between the two variables, `i` and `o`, is illustrated in the following figure.  
+ The result of this statement is creating an object reference `o`, on the stack, that references a value of the type `int`, on the heap. This value is a copy of the value-type value assigned to the variable `i`. The difference between the two variables, `i` and `o`, is illustrated in the following image of boxing conversion:  
   
- ![BoxingConversion graphic](../../../csharp/programming-guide/types/media/vcboxingconversion.gif "vcBoxingConversion")  
-Boxing Conversion  
+ ![Graphic showing the difference between i and o variables.](./media/boxing-and-unboxing/boxing-operation-i-o-variables.gif)    
   
  It is also possible to perform the boxing explicitly as in the following example, but explicit boxing is never required:  
   
@@ -58,18 +57,17 @@ Boxing Conversion
 ## Unboxing  
  Unboxing is an explicit conversion from the type `object` to a [value type](../../../csharp/language-reference/keywords/value-types.md) or from an interface type to a value type that implements the interface. An unboxing operation consists of:  
   
--   Checking the object instance to make sure that it is a boxed value of the given value type.  
+- Checking the object instance to make sure that it is a boxed value of the given value type.  
   
--   Copying the value from the instance into the value-type variable.  
+- Copying the value from the instance into the value-type variable.  
   
  The following statements demonstrate both boxing and unboxing operations:  
   
  [!code-csharp[csProgGuideTypes#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#21)]  
   
- The following figure demonstrates the result of the previous statements.  
+ The following figure demonstrates the result of the previous statements: 
   
- ![UnBoxing Conversion graphic](../../../csharp/programming-guide/types/media/vcunboxingconversion.gif "vcUnBoxingConversion")  
-Unboxing Conversion  
+ ![Graphic showing an unboxing conversion.](./media/boxing-and-unboxing/unboxing-conversion-operation.gif)
   
  For the unboxing of value types to succeed at run time, the item being unboxed must be a reference to an object that was previously created by boxing an instance of that value type. Attempting to unbox `null` causes a <xref:System.NullReferenceException>. Attempting to unbox a reference to an incompatible value type causes an <xref:System.InvalidCastException>.  
   
@@ -104,9 +102,9 @@ int j = (int) o;
 ## Related Sections  
  For more information:  
   
--   [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
   
--   [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+- [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
   
 ## See also
 

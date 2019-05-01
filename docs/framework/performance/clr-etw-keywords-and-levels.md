@@ -19,13 +19,13 @@ ms.author: "mairaw"
   
  The keywords are described in the following tables:  
   
--   [CLR ETW runtime keywords](#runtime)  
+- [CLR ETW runtime keywords](#runtime)  
   
--   [CLR ETW rundown keywords](#rundown)  
+- [CLR ETW rundown keywords](#rundown)  
   
--   [Keyword combinations for symbol resolution for the runtime provider](#runtime_combo)  
+- [Keyword combinations for symbol resolution for the runtime provider](#runtime_combo)  
   
--   [Keyword combinations for symbol resolution for the rundown provider](#rundown_combo)  
+- [Keyword combinations for symbol resolution for the rundown provider](#rundown_combo)  
   
 <a name="runtime"></a>   
 ### CLR ETW Runtime Keywords  
@@ -117,6 +117,7 @@ ms.author: "mairaw"
  0x0 - LogAlways  
   
 ## See also
+
 - [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
 - [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

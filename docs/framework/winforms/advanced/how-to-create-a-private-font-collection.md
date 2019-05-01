@@ -19,11 +19,11 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
 ## Example  
  The following example adds the following three font files to a <xref:System.Drawing.Text.PrivateFontCollection> object:  
   
--   C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
+- C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
   
--   C:\\*systemroot*\Fonts\CourBI.tff (Courier New, bold italic)  
+- C:\\*systemroot*\Fonts\CourBI.tff (Courier New, bold italic)  
   
--   C:\\*systemroot*\Fonts\TimesBd.tff (Times New Roman, bold)  
+- C:\\*systemroot*\Fonts\TimesBd.tff (Times New Roman, bold)  
   
  The code retrieves an array of <xref:System.Drawing.FontFamily> objects from the <xref:System.Drawing.Text.FontCollection.Families%2A> property of the <xref:System.Drawing.Text.PrivateFontCollection> object.  
   
@@ -46,5 +46,6 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
+
 - <xref:System.Drawing.Text.PrivateFontCollection>
 - [Using Fonts and Text](using-fonts-and-text.md)

@@ -10,7 +10,7 @@ You jumped into the middle of a `For...Next` loop.
   
 ## To correct this error  
   
-1.  Remove the jump into the loop.  
+1. Remove the jump into the loop.  
   
 ## See also
 

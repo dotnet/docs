@@ -20,17 +20,17 @@ This example creates an empty text file at the specified path using the <xref:Sy
   
  The following conditions may cause an exception:  
   
--   The path name is malformed. For example, it contains illegal characters or is only white space (<xref:System.ArgumentException>).  
+- The path name is malformed. For example, it contains illegal characters or is only white space (<xref:System.ArgumentException>).  
   
--   The path is read-only (<xref:System.IO.IOException>).  
+- The path is read-only (<xref:System.IO.IOException>).  
   
--   The path name is `Nothing` (<xref:System.ArgumentNullException>).  
+- The path name is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   The path name is too long (<xref:System.IO.PathTooLongException>).  
+- The path name is too long (<xref:System.IO.PathTooLongException>).  
   
--   The path is invalid (<xref:System.IO.DirectoryNotFoundException>).  
+- The path is invalid (<xref:System.IO.DirectoryNotFoundException>).  
   
--   The path is only a colon ":" (<xref:System.NotSupportedException>).  
+- The path is only a colon ":" (<xref:System.NotSupportedException>).  
   
 ## .NET Framework Security  
  A <xref:System.Security.SecurityException> may be thrown in partial-trust environments.  
@@ -40,6 +40,7 @@ This example creates an empty text file at the specified path using the <xref:Sy
  An <xref:System.UnauthorizedAccessException> is thrown if the user does not have permission to create the file.  
   
 ## See also
+
 - <xref:System.IO>
 - <xref:System.IO.File.Create%2A>
 - [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)

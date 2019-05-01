@@ -43,9 +43,9 @@ While the Routing Service is highly customizable, it can be a challenge to desig
 ### Multicast  
  When routing messages, usually you routing each message to one specific destination endpoint.  However, you may occasionally need to route a copy of the message to multiple destination endpoints. To perform multicast routing, the following conditions must be true:  
   
--   The channel shape must not be request-reply (though it may be one-way or duplex,) because request-reply mandates that only one reply can be received by the client application in response to the request.  
+- The channel shape must not be request-reply (though it may be one-way or duplex,) because request-reply mandates that only one reply can be received by the client application in response to the request.  
   
--   Multiple filters must return **true** when evaluating the message.  
+- Multiple filters must return **true** when evaluating the message.  
   
  If these conditions are met, each destination endpoint that is associated with a filter that returns true will receive a copy of the message.  
   
@@ -69,4 +69,5 @@ While the Routing Service is highly customizable, it can be a challenge to desig
  [How To: Error Handling](../../../../docs/framework/wcf/feature-details/how-to-error-handling.md)  
   
 ## See also
+
 - [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)

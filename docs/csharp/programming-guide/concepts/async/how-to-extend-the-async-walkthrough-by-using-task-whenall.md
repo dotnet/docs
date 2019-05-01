@@ -17,11 +17,11 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 ### To add Task.WhenAll to your GetURLContentsAsync solution  
   
-1.  Add the `ProcessURLAsync` method to the first application that's developed in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
+1. Add the `ProcessURLAsync` method to the first application that's developed in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
-    -   If you downloaded the code from  [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough project, and then add `ProcessURLAsync` to the MainWindow.xaml.cs file.  
+    - If you downloaded the code from  [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough project, and then add `ProcessURLAsync` to the MainWindow.xaml.cs file.  
   
-    -   If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that includes the `GetURLContentsAsync` method. The MainWindow.xaml.cs file for this application is the first example in the "Complete Code Examples from the Walkthrough" section.  
+    - If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that includes the `GetURLContentsAsync` method. The MainWindow.xaml.cs file for this application is the first example in the "Complete Code Examples from the Walkthrough" section.  
   
      The `ProcessURLAsync` method consolidates the actions in the body of the `foreach` loop in `SumPageSizesAsync` in the original walkthrough. The method asynchronously downloads the contents of a specified website as a byte array, and then displays and returns the length of the byte array.  
   
@@ -34,7 +34,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     }  
     ```  
   
-2.  Comment out or delete the `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
+2. Comment out or delete the `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
   
     ```csharp  
     //var total = 0;  
@@ -55,7 +55,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Create a collection of tasks. The following code defines a [query](../../../../csharp/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3. Create a collection of tasks. The following code defines a [query](../../../../csharp/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
@@ -68,7 +68,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
     ```  
   
-4.  Apply `Task.WhenAll` to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.  
+4. Apply `Task.WhenAll` to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.  
   
      In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. The expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.  
   
@@ -81,7 +81,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //int[] lengths = await whenAllTask;  
     ```  
   
-5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
+5. Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
     ```csharp  
     int total = lengths.Sum();  
@@ -89,11 +89,11 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 ### To add Task.WhenAll to the HttpClient.GetByteArrayAsync solution  
   
-1.  Add the following version of `ProcessURLAsync` to the second application that's developed in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
+1. Add the following version of `ProcessURLAsync` to the second application that's developed in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md).  
   
-    -   If you downloaded the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough_HttpClient project, and then add `ProcessURLAsync` to the MainWindow.xaml.cs file.  
+    - If you downloaded the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough_HttpClient project, and then add `ProcessURLAsync` to the MainWindow.xaml.cs file.  
   
-    -   If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that uses the `HttpClient.GetByteArrayAsync` method. The MainWindow.xaml.cs file for this application is the second example in the "Complete Code Examples from the Walkthrough" section.  
+    - If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that uses the `HttpClient.GetByteArrayAsync` method. The MainWindow.xaml.cs file for this application is the second example in the "Complete Code Examples from the Walkthrough" section.  
   
      The `ProcessURLAsync` method consolidates the actions in the body of the `foreach` loop in `SumPageSizesAsync` in the original walkthrough. The method asynchronously downloads the contents of a specified website as a byte array, and then displays and returns the length of the byte array.  
   
@@ -108,7 +108,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     }  
     ```  
   
-2.  Comment out or delete the `For Each` or `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
+2. Comment out or delete the `For Each` or `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
   
     ```csharp  
     //var total = 0;  
@@ -130,7 +130,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //}  
     ```  
   
-3.  Define a [query](../../../../csharp/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
+3. Define a [query](../../../../csharp/programming-guide/concepts/linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   
@@ -143,7 +143,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
     ```  
   
-4.  Next, apply `Task.WhenAll` to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.  
+4. Next, apply `Task.WhenAll` to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.  
   
      In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. When complete, the `await` expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.  
   
@@ -156,7 +156,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     //int[] lengths = await whenAllTask;  
     ```  
   
-5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
+5. Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
     ```csharp  
     int total = lengths.Sum();
@@ -164,7 +164,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 ### To test the Task.WhenAll solutions  
   
--   For either solution, choose the F5 key to run the program, and then choose the **Start** button. The output should resemble the output from the async solutions in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). However, notice that the websites appear in a different order each time.  
+- For either solution, choose the F5 key to run the program, and then choose the **Start** button. The output should resemble the output from the async solutions in [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). However, notice that the websites appear in a different order each time.  
   
 ## Example  
  The following code shows the extensions to the project that uses the `GetURLContentsAsync` method to download content from the web.  

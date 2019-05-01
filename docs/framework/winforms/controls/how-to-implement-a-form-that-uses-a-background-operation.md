@@ -32,7 +32,7 @@ The following example program creates a form that calculates Fibonacci numbers. 
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
+- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
@@ -42,6 +42,7 @@ The following example program creates a form that calculates Fibonacci numbers. 
 >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
 ## See also
+
 - <xref:System.ComponentModel.BackgroundWorker>
 - <xref:System.ComponentModel.DoWorkEventArgs>
 - [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)

@@ -30,11 +30,12 @@ If you have an operation that will take a long time to complete, and you do not 
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing and System.Windows.Forms assemblies.  
+- References to the System, System.Drawing and System.Windows.Forms assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - <xref:System.ComponentModel.BackgroundWorker>
 - <xref:System.ComponentModel.DoWorkEventArgs>
 - [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)

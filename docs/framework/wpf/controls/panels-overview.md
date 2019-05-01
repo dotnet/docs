@@ -15,19 +15,19 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  This topic contains the following sections.  
   
--   [The Panel Class](#Panels_view_from_10000_feet)  
+- [The Panel Class](#Panels_view_from_10000_feet)  
   
--   [Panel Element Common Members](#Panels_declared_members)  
+- [Panel Element Common Members](#Panels_declared_members)  
   
--   [Derived Panel Elements](#Panels_derived_elements)  
+- [Derived Panel Elements](#Panels_derived_elements)  
   
--   [User Interface Panels](#Panels_main_UI_elements)  
+- [User Interface Panels](#Panels_main_UI_elements)  
   
--   [Nested Panel Elements](#Panels_nested_panel_elements)  
+- [Nested Panel Elements](#Panels_nested_panel_elements)  
   
--   [Custom Panel Elements](#Panels_custom_panel_elements)  
+- [Custom Panel Elements](#Panels_custom_panel_elements)  
   
--   [Localization/Globalization Support](#Panels_global_localization)  
+- [Localization/Globalization Support](#Panels_global_localization)  
   
 <a name="Panels_view_from_10000_feet"></a>   
 ## The Panel Class  
@@ -247,6 +247,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
   
 ## See also
+
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
 - [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)
 - [Layout](../advanced/layout.md)

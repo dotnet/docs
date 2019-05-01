@@ -27,11 +27,11 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ## Customizing Feeds with the Entity Framework Provider  
  The data model used with the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider is represented as XML in the .edmx file. In this case, the attributes that define custom feeds are added to the `EntityType` and `Property` elements that represent entity types and properties in the data model. These feed customization attributes are not defined in [\[MC-CSDL\]: Conceptual Schema Definition File Format](https://go.microsoft.com/fwlink/?LinkId=159072), which is the format that the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider uses to define the data model. Therefore, you must declare feed customization attributes in a specific schema namespace, which is defined as `m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"`. The following XML fragment shows feed customization attributes applied to `Property` elements of the `Products` entity type that define the `ProductName`, `ReorderLevel`, and `UnitsInStock` properties.  
   
- [!code-xml[Astoria Custom Feeds#EdmFeedAttributes](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedattributes)]  
+ [!code-xml[Astoria Custom Feeds#EdmFeedAttributes](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/northwind.csdl#edmfeedattributes)]  
   
  These attributes produce the following customized data feed for the `Products` entity set. In the customized data feed, the `ProductName` property value is displayed in both in the `author` element and as the `ProductName` property element, and the `UnitsInStock` property is displayed in a custom element that has its own unique namespace and with the `ReorderLevel` property as an attribute:  
   
- [!code-xml[Astoria Custom Feeds#EdmFeedResultProduct](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/edmfeedresult.xml#edmfeedresultproduct)]  
+ [!code-xml[Astoria Custom Feeds#EdmFeedResultProduct](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/edmfeedresult.xml#edmfeedresultproduct)]  
   
  For more information, see [How to: Customize Feeds with the Entity Framework Provider](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-ef-provider-wcf-data-services.md).  
   
@@ -59,12 +59,12 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 > [!NOTE]
 >  The data model for this example is defined in the topic [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md).  
   
- [!code-csharp[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria custom feeds/cs/orderitems.svc.cs#customorderfeed)]
- [!code-vb[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria custom feeds/vb/orderitems.svc.vb#customorderfeed)]  
+ [!code-csharp[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_custom_feeds/cs/orderitems.svc.cs#customorderfeed)]
+ [!code-vb[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_custom_feeds/vb/orderitems.svc.vb#customorderfeed)]  
   
  These attributes produce the following customized data feed for the `Orders` entity set. In this customized feed, the `OrderId` property value displays only in the `title` element of the `entry` and the `Customer` property value displays both in the `author` element and as the `Customer` property element:  
   
- [!code-xml[Astoria Custom Feeds#IQueryableFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/iqueryablefeedresult.xml#iqueryablefeedresult)]  
+ [!code-xml[Astoria Custom Feeds#IQueryableFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/iqueryablefeedresult.xml#iqueryablefeedresult)]  
   
  For more information, see [How to: Customize Feeds with the Reflection Provider](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-the-reflection-provider-wcf-data-services.md).  
   
@@ -77,15 +77,16 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ## Feed Customization Considerations  
  You should consider the following when defining custom feed mappings.  
   
--   The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
+- The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
   
 ## Versioning Requirements  
  Feed customization has the following [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol versioning requirements:  
   
--   Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
+- Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See also
+
 - [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)
 - [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

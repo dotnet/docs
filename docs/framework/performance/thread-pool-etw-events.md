@@ -13,9 +13,9 @@ ms.author: "mairaw"
   
  There are two groups of thread pool events:  
   
--   [Worker thread pool events](#worker), which provide information about how an application uses the thread pool, and the effect of workloads on concurrency control.  
+- [Worker thread pool events](#worker), which provide information about how an application uses the thread pool, and the effect of workloads on concurrency control.  
   
--   [I/O thread pool events](#io), which provide information about I/O threads that are created, retired, unretired, or terminated in the thread pool.  
+- [I/O thread pool events](#io), which provide information about I/O threads that are created, retired, unretired, or terminated in the thread pool.  
   
 <a name="worker"></a>   
 ## Worker Thread Pool Events  
@@ -210,4 +210,5 @@ ms.author: "mairaw"
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ## See also
+
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

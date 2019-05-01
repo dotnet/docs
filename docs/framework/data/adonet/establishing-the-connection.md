@@ -52,9 +52,9 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
  For the .NET Framework Data Provider for OLE DB, the connection string format is identical to the connection string format used in ADO, with the following exceptions:  
   
--   The **Provider** keyword is required.  
+- The **Provider** keyword is required.  
   
--   The **URL**, **Remote Provider**, and **Remote Server** keywords are not supported.  
+- The **URL**, **Remote Provider**, and **Remote Server** keywords are not supported.  
   
  For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> topic. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at run time.  
   
@@ -137,6 +137,7 @@ nwindConn.Open();
 ```  
   
 ## See also
+
 - [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
 - [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
 - [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)

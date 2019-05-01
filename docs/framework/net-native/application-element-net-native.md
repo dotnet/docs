@@ -75,11 +75,12 @@ Serves as a container for application-wide types and type members whose metadata
   
  The `<Application>` element can be used in one of two ways:  
   
--   As a container to define the program elements whose metadata is needed at run time. In this case, the `<Application>` element need not have any attributes. At compile time, compiler tools search all libraries, including .NET Framework core libraries, for program elements identified by child elements of the `<Application>` element. In contrast, compiler tools search only the library designated by the [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element for program elements identified by the child elements of [\<Library>](../../../docs/framework/net-native/library-element-net-native.md).  
+- As a container to define the program elements whose metadata is needed at run time. In this case, the `<Application>` element need not have any attributes. At compile time, compiler tools search all libraries, including .NET Framework core libraries, for program elements identified by child elements of the `<Application>` element. In contrast, compiler tools search only the library designated by the [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element for program elements identified by the child elements of [\<Library>](../../../docs/framework/net-native/library-element-net-native.md).  
   
--   As an element that sets application-wide policy for reflection, serialization, and interop. The attributes of the `<Application>` element define application-wide policy, which may be overridden by the child elements defined by the `<Application>` or [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element.  
+- As an element that sets application-wide policy for reflection, serialization, and interop. The attributes of the `<Application>` element define application-wide policy, which may be overridden by the child elements defined by the `<Application>` or [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element.  
   
 ## See also
+
 - [\<Library> Element](../../../docs/framework/net-native/library-element-net-native.md)
 - [\<Directives> Element](../../../docs/framework/net-native/directives-element-net-native.md)
 - [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

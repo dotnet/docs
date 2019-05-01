@@ -19,17 +19,17 @@ The `CreateSubKey` method of the `My.Computer.Registry` object can be used to cr
   
 #### To create a registry key  
   
--   Use the `CreateSubKey` method, specifying which hive to place the key under as well as the name of the key. The parameter `Subkey` is not case-sensitive. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
+- Use the `CreateSubKey` method, specifying which hive to place the key under as well as the name of the key. The parameter `Subkey` is not case-sensitive. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
   
      [!code-vb[VbResourceTasks#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#17)]  
   
 #### To create a registry key and set a value in it  
   
-1.  Use the `CreateSubkey` method, specifying which hive to place the key under as well as the name of the key. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
+1. Use the `CreateSubkey` method, specifying which hive to place the key under as well as the name of the key. This example creates the registry key `MyTestKey` under HKEY_CURRENT_USER.  
   
      [!code-vb[VbResourceTasks#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#17)]  
   
-2.  Set the value with the `SetValue` method. This example sets the string value. "MyTestKeyValue" to "This is a test value".  
+2. Set the value with the `SetValue` method. This example sets the string value. "MyTestKeyValue" to "This is a test value".  
   
      [!code-vb[VbResourceTasks#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#14)]  
   
@@ -51,20 +51,21 @@ The `CreateSubKey` method of the `My.Computer.Registry` object can be used to cr
   
  The following conditions may cause an exception:  
   
--   The name of the key is `Nothing` (<xref:System.ArgumentNullException>).  
+- The name of the key is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   The user does not have permissions to create registry keys (<xref:System.Security.SecurityException>).  
+- The user does not have permissions to create registry keys (<xref:System.Security.SecurityException>).  
   
--   The key name exceeds the 255-character limit (<xref:System.ArgumentException>).  
+- The key name exceeds the 255-character limit (<xref:System.ArgumentException>).  
   
--   The key is closed (<xref:System.IO.IOException>).  
+- The key is closed (<xref:System.IO.IOException>).  
   
--   The registry key is read-only (<xref:System.UnauthorizedAccessException>).  
+- The registry key is read-only (<xref:System.UnauthorizedAccessException>).  
   
 ## .NET Framework Security  
  To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser%2A>
 - <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A>

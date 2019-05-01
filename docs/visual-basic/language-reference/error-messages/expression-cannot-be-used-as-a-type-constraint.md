@@ -13,17 +13,17 @@ A constraint list includes an expression that does not represent a valid constra
   
  A constraint list imposes requirements on the type argument passed to the type parameter. You can specify the following requirements in any combination:  
   
--   The type argument must implement one or more interfaces  
+- The type argument must implement one or more interfaces  
   
--   The type argument must inherit from at most one class  
+- The type argument must inherit from at most one class  
   
--   The type argument must expose a parameterless constructor that the creating code can access (include the `New` constraint)  
+- The type argument must expose a parameterless constructor that the creating code can access (include the `New` constraint)  
   
  If you do not include any specific class or interface in the constraint list, you can impose a more general requirement by specifying one of the following:  
   
--   The type argument must be a value type (include the `Structure` constraint)  
+- The type argument must be a value type (include the `Structure` constraint)  
   
--   The type argument must be a reference type (include the `Class` constraint)  
+- The type argument must be a reference type (include the `Class` constraint)  
   
  You cannot specify both `Structure` and `Class` for the same type parameter, and you cannot specify either one more than once.  
   
@@ -31,14 +31,14 @@ A constraint list includes an expression that does not represent a valid constra
   
 ## To correct this error  
   
--   Verify that the expression and its elements are spelled correctly.  
+- Verify that the expression and its elements are spelled correctly.  
   
--   If the expression does not qualify for the preceding list of requirements, remove it from the constraint list.  
+- If the expression does not qualify for the preceding list of requirements, remove it from the constraint list.  
   
--   If the expression refers to an interface or class, verify that the compiler has access to that interface or class. You might need to qualify its name, and you might need to add a reference to your project. For more information, see "References to Projects" in [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
+- If the expression refers to an interface or class, verify that the compiler has access to that interface or class. You might need to qualify its name, and you might need to add a reference to your project. For more information, see "References to Projects" in [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
 ## See also
+
 - [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
 - [Value Types and Reference Types](../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
 - [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
-

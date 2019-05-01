@@ -55,13 +55,13 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
   
  Data items within the data grid containers will support at a minimum:  
   
--   Selection Item control pattern (if the data grid is selectable)  
+- Selection Item control pattern (if the data grid is selectable)  
   
--   Scroll Item control pattern (if the data grid is scrollable)  
+- Scroll Item control pattern (if the data grid is scrollable)  
   
--   Grid Item control pattern  
+- Grid Item control pattern  
   
--   Table Item control pattern  
+- Table Item control pattern  
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  
@@ -99,6 +99,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
  *The preceding example shows a DataGrid that contains multiple levels of controls. The Group ("Contoso") control contains two DataItem controls ("Accounts Receivable.doc" and "Accounts Payable.doc"). A DataGrid/GridItem pair is independent of a pair at another level. The DataItem controls under a Group can also be exposed as a ListItem control type, enabling them to be presented more clearly as selectable objects, rather than as simple data elements. This example does not include the sub-elements of the grouped data items.  
   
 ## See also
+
 - <xref:System.Windows.Automation.ControlType.DataGrid>
 - [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
 - [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

@@ -18,61 +18,61 @@ A security token service implements the protocol defined in the WS-Trust specifi
 ### Request Message Structure  
  The issue request message structure typically consists of the following items:  
   
--   A request type URI with a value of `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue`.
+- A request type URI with a value of `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue`.
   
--   A token type URI. For Security Assertions Markup Language (SAML) 1.1 tokens, the value of this URI is `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`.  
+- A token type URI. For Security Assertions Markup Language (SAML) 1.1 tokens, the value of this URI is `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1`.  
   
--   A key size value that indicates the number of bits in the key to be associated with the issued token.  
+- A key size value that indicates the number of bits in the key to be associated with the issued token.  
   
--   A key type URI. For symmetric keys, the value of this URI is `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey`.  
+- A key type URI. For symmetric keys, the value of this URI is `http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey`.  
   
  In addition, a couple of other items might be present:  
   
--   Key material provided by the client.  
+- Key material provided by the client.  
   
--   Scope information that indicates the target service that the issued token will be used with.  
+- Scope information that indicates the target service that the issued token will be used with.  
   
  The security token service uses the information in the issue request message when it constructs the Issue Response message.  
   
 ## Response Message Structure  
  The issue response message structure typically consists of the following items;  
   
--   The issued security token, for example, a SAML 1.1 assertion.  
+- The issued security token, for example, a SAML 1.1 assertion.  
   
--   A proof token associated with the security token. For symmetric keys, this is often an encrypted form of the key material.  
+- A proof token associated with the security token. For symmetric keys, this is often an encrypted form of the key material.  
   
--   References to the issued security token. Typically, the security token service returns a reference that can be used when the issued token appears in a subsequent message sent by the client and another that can be used when the token is not present in subsequent messages.  
+- References to the issued security token. Typically, the security token service returns a reference that can be used when the issued token appears in a subsequent message sent by the client and another that can be used when the token is not present in subsequent messages.  
   
  In addition, a couple of other items might be present:  
   
--   Key material provided by the security token service.  
+- Key material provided by the security token service.  
   
--   The algorithm needed to compute the shared key.  
+- The algorithm needed to compute the shared key.  
   
--   Lifetime information for the issued token.  
+- Lifetime information for the issued token.  
   
 ## Processing Request Messages  
  The security token service processes the issue request by examining the various pieces of the request message and ensuring that it can issue a token that satisfies the request. The security token service must determine the following before it constructs the token to be issued:  
   
--   The request really is a request for a token to be issued.  
+- The request really is a request for a token to be issued.  
   
--   The security token service supports the requested token type.  
+- The security token service supports the requested token type.  
   
--   The requester is authorized to make the request.  
+- The requester is authorized to make the request.  
   
--   The security token service can meet the requester's expectations with respect to key material.  
+- The security token service can meet the requester's expectations with respect to key material.  
   
  Two vital parts of constructing a token are determining what key to sign the token with and what key to encrypt the shared key with. The token needs to be signed so that when the client presents the token to the target service, that service can determine that the token was issued by a security token service that it trusts. The key material needs to be encrypted in such a way that the target service can decrypt that key material.  
   
  Signing a SAML assertion involves creating a <xref:System.IdentityModel.Tokens.SigningCredentials> instance. The constructor for this class takes the following:  
   
--   A <xref:System.IdentityModel.Tokens.SecurityKey> for the key to use to sign the SAML assertion.  
+- A <xref:System.IdentityModel.Tokens.SecurityKey> for the key to use to sign the SAML assertion.  
   
--   A string identifying the signature algorithm to use.  
+- A string identifying the signature algorithm to use.  
   
--   A string identifying the digest algorithm to use.  
+- A string identifying the digest algorithm to use.  
   
--   Optionally, a <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier> that identifies the key to use to sign the assertion.  
+- Optionally, a <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier> that identifies the key to use to sign the assertion.  
   
  [!code-csharp[c_CreateSTS#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#1)]
  [!code-vb[c_CreateSTS#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#1)]  
@@ -118,6 +118,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
  For full code for a security token service, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
 ## See also
+
 - <xref:System.IdentityModel.Tokens.SigningCredentials>
 - <xref:System.IdentityModel.Tokens.SecurityKey>
 - <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>

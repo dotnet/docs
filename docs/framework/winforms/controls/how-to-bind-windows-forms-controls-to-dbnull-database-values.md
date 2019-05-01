@@ -24,11 +24,12 @@ When you bind Windows Forms controls to a data source and the data source return
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  
+- References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
+
 - [BindingSource Component](bindingsource-component.md)
 - [How to: Handle Errors and Exceptions that Occur with Databinding](how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)
 - [How to: Bind a Windows Forms Control to a Type](how-to-bind-a-windows-forms-control-to-a-type.md)

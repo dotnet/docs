@@ -18,11 +18,11 @@ In Windows Forms, you can bind to not just traditional data sources, but also to
   
  In addition, you can bind any property of any control to the data source. In traditional data binding, you typically bind the display property—for example, the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control—to the data source. With the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], you also have the option of setting other properties through binding as well. You might use binding to perform the following tasks:  
   
--   Setting the graphic of an image control.  
+- Setting the graphic of an image control.  
   
--   Setting the background color of one or more controls.  
+- Setting the background color of one or more controls.  
   
--   Setting the size of controls.  
+- Setting the size of controls.  
   
  Essentially, data binding is an automatic way of setting any run-time accessible property of any control on a form.  
   
@@ -48,6 +48,7 @@ In Windows Forms, you can bind to not just traditional data sources, but also to
 |Lookup Table|Another common data presentation/manipulation scenario is the table lookup. Often, as part of a larger data display, a <xref:System.Windows.Forms.ComboBox> control is used to display and manipulate data. The key is that the data displayed in the <xref:System.Windows.Forms.ComboBox> control is different than the data written to the database. For example, if you have a <xref:System.Windows.Forms.ComboBox> control displaying the items available from a grocery store, you would probably like to see the names of the products (bread, milk, eggs). However, to ease information retrieval within the database and for database normalization, you would probably store the information for the specific items of a given order as item numbers (#501, #603, and so on). Thus, there is an implicit connection between the "friendly name" of the grocery item in the <xref:System.Windows.Forms.ComboBox> control on your form and the related item number that is present in an order. This is the essence of a table lookup. For more information, see [How to: Create a Lookup Table with the Windows Forms BindingSource Component](./controls/how-to-create-a-lookup-table-with-the-windows-forms-bindingsource-component.md).|  
   
 ## See also
+
 - <xref:System.Windows.Forms.Binding>
 - [Windows Forms Data Binding](windows-forms-data-binding.md)
 - [How to: Bind the Windows Forms DataGrid Control to a Data Source](./controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)

@@ -18,15 +18,15 @@ This topic describes how the Application Settings architecture works, and explor
 ## Defining Settings  
  The application settings architecture is used within both [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and Windows Forms, and it contains a number of base classes that are shared across both environments. The most important is <xref:System.Configuration.SettingsBase>, which provides access to settings through a collection, and provides low-level methods for loading and saving settings. Each environment implements its own class derived from <xref:System.Configuration.SettingsBase> to provide additional settings functionality for that environment. In a Windows Forms-based application, all application settings must be defined on a class derived from the <xref:System.Configuration.ApplicationSettingsBase> class, which adds the following functionality to the base class:  
   
--   Higher-level loading and saving operations  
+- Higher-level loading and saving operations  
   
--   Support for user-scoped settings  
+- Support for user-scoped settings  
   
--   Reverting a user's settings to the predefined defaults  
+- Reverting a user's settings to the predefined defaults  
   
--   Upgrading settings from a previous application version  
+- Upgrading settings from a previous application version  
   
--   Validating settings, either before they are changed or before they are saved  
+- Validating settings, either before they are changed or before they are saved  
   
  The settings can be described using a number of attributes defined within the <xref:System.Configuration> namespace; these are described in [Application Settings Attributes](application-settings-attributes.md). When you define a setting, you must apply it with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>, which describes whether the setting applies to the entire application or just to the current user.  
   
@@ -40,11 +40,11 @@ This topic describes how the Application Settings architecture works, and explor
   
  The configuration system that was originally released with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] supports providing static application configuration data through either the local computer's machine.config file or within an `app.`exe.config file that you deploy with your application. The <xref:System.Configuration.LocalFileSettingsProvider> class expands this native support in the following ways:  
   
--   Application-scoped settings can be stored in either the machine.config or `app.`exe.config files. Machine.config is always read-only, while `app`.exe.config is restricted by security considerations to read-only for most applications.  
+- Application-scoped settings can be stored in either the machine.config or `app.`exe.config files. Machine.config is always read-only, while `app`.exe.config is restricted by security considerations to read-only for most applications.  
   
--   User-scoped settings can be stored in `app`.exe.config files, in which case they are treated as static defaults.  
+- User-scoped settings can be stored in `app`.exe.config files, in which case they are treated as static defaults.  
   
--   Non-default user-scoped settings are stored in a new file, *user*.config, where *user* is the user name of the person currently executing the application. You can specify a default for a user-scoped setting with <xref:System.Configuration.DefaultSettingValueAttribute>. Because user-scoped settings often change during application execution, `user`.config is always read/write.  
+- Non-default user-scoped settings are stored in a new file, *user*.config, where *user* is the user name of the person currently executing the application. You can specify a default for a user-scoped setting with <xref:System.Configuration.DefaultSettingValueAttribute>. Because user-scoped settings often change during application execution, `user`.config is always read/write.  
   
  All three configuration files store settings in XML format. The top-level XML element for application-scoped settings is `<appSettings>`, while `<userSettings>` is used for user-scoped settings. An `app`.exe.config file which contains both application-scoped settings and defaults for user-scoped settings would look like this:  
   
@@ -94,11 +94,11 @@ This topic describes how the Application Settings architecture works, and explor
 ### Settings Serialization  
  When <xref:System.Configuration.LocalFileSettingsProvider> must save settings to disk, it performs the following actions:  
   
-1.  Uses reflection to examine all of the properties defined on your <xref:System.Configuration.ApplicationSettingsBase> derived class, finding those that are applied with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>.  
+1. Uses reflection to examine all of the properties defined on your <xref:System.Configuration.ApplicationSettingsBase> derived class, finding those that are applied with either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>.  
   
-2.  Serializes the property to disk. It first attempts to call the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> or <xref:System.ComponentModel.TypeConverter.ConvertFromString%2A> on the type's associated <xref:System.ComponentModel.TypeConverter>. If this does not succeed, it uses XML serialization instead.  
+2. Serializes the property to disk. It first attempts to call the <xref:System.ComponentModel.TypeConverter.ConvertToString%2A> or <xref:System.ComponentModel.TypeConverter.ConvertFromString%2A> on the type's associated <xref:System.ComponentModel.TypeConverter>. If this does not succeed, it uses XML serialization instead.  
   
-3.  Determines which settings go in which files, based on the setting's attribute.  
+3. Determines which settings go in which files, based on the setting's attribute.  
   
  If you implement your own settings class, you can use the <xref:System.Configuration.SettingsSerializeAsAttribute> to mark a setting for either binary or custom serialization using the <xref:System.Configuration.SettingsSerializeAs> enumeration. For more information on creating your own settings class in code, see [How to: Create Application Settings](how-to-create-application-settings.md).  
   
@@ -141,6 +141,7 @@ This topic describes how the Application Settings architecture works, and explor
  Your provider does not need to support all of the settings attributes defined in the <xref:System.Configuration?displayProperty=nameWithType> namespace, though it must at a minimum support <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>, and should also support <xref:System.Configuration.DefaultSettingValueAttribute>. For those attributes that it does not support, your provider should just fail without notification; it should not throw an exception. If the settings class uses an invalid combination of attributes, however — such as applying <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute> to the same setting — your provider should throw an exception and cease operation.  
   
 ## See also
+
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
 - <xref:System.Configuration.LocalFileSettingsProvider>

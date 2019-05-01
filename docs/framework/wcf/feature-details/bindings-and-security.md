@@ -29,21 +29,21 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  This binding is designed for use with a range of existing technologies, including the following:  
   
--   ASP.NET Web services (ASMX), version 1.  
+- ASP.NET Web services (ASMX), version 1.  
   
--   Web Service Enhancements (WSE) applications.  
+- Web Service Enhancements (WSE) applications.  
   
--   Basic Profile as defined in the Web Services Interoperability (WS-I) specification ([https://go.microsoft.com/fwlink/?LinkId=38955](https://go.microsoft.com/fwlink/?LinkId=38955)).  
+- Basic Profile as defined in the Web Services Interoperability (WS-I) specification (<https://go.microsoft.com/fwlink/?LinkId=38955>).  
   
--   Basic security profile as defined in WS-I.  
+- Basic security profile as defined in WS-I.  
   
  By default, this binding is not secure. It is designed to interoperate with ASMX services. When security is enabled, the binding is designed for seamless interoperation with Internet Information Services (IIS) security mechanisms, such as basic authentication, digest, and integrated Windows security. For more information, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md). This binding supports the following:  
   
--   HTTPS transport security.  
+- HTTPS transport security.  
   
--   HTTP basic authentication.  
+- HTTP basic authentication.  
   
--   WS-Security.  
+- WS-Security.  
   
  For more information, see <xref:System.ServiceModel.BasicHttpSecurity>, <xref:System.ServiceModel.BasicHttpMessageSecurity>, <xref:System.ServiceModel.BasicHttpMessageCredentialType>, and <xref:System.ServiceModel.BasicHttpSecurityMode>.  
   
@@ -52,11 +52,11 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  By default, this binding implements the WS-Security specification and provides interoperability with services that implement the WS-* specifications. It supports the following:  
   
--   HTTPS transport security.  
+- HTTPS transport security.  
   
--   WS-Security.  
+- WS-Security.  
   
--   HTTPS transport protection with SOAP message credential security for authenticating the caller.  
+- HTTPS transport protection with SOAP message credential security for authenticating the caller.  
   
  For more information, see <xref:System.ServiceModel.WSHttpSecurity>, <xref:System.ServiceModel.MessageSecurityOverHttp>, <xref:System.ServiceModel.MessageCredentialType>, <xref:System.ServiceModel.SecurityMode>, <xref:System.ServiceModel.HttpTransportSecurity>, <xref:System.ServiceModel.HttpClientCredentialType>, and <xref:System.ServiceModel.HttpProxyCredentialType>.  
   
@@ -65,23 +65,23 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  This binding is designed to enable duplex service applications. This binding implements the WS-Security specification for message-based transfer security. Transport security is not available. By default, it provides the following features:  
   
--   Implements WS-Reliable Messaging for reliability.  
+- Implements WS-Reliable Messaging for reliability.  
   
--   Implements WS-Security for transfer security and authentication.  
+- Implements WS-Security for transfer security and authentication.  
   
--   Uses HTTP for message delivery.  
+- Uses HTTP for message delivery.  
   
--   Uses text/XML message encoding.  
+- Uses text/XML message encoding.  
   
  Using WS-Security (message-layer security), the binding allows you to configure the following parameters:  
   
--   The security algorithm suite to determine the cryptographic algorithm.  
+- The security algorithm suite to determine the cryptographic algorithm.  
   
--   Binding options for the following:  
+- Binding options for the following:  
   
-    -   Providing service credentials available out-of-band at the client.  
+    - Providing service credentials available out-of-band at the client.  
   
-    -   Providing service credentials negotiated from the service as part of channel setup.  
+    - Providing service credentials negotiated from the service as part of channel setup.  
   
  For more information, see <xref:System.ServiceModel.WSDualHttpSecurity> and <xref:System.ServiceModel.WSDualHttpSecurityMode>.  
   
@@ -90,21 +90,21 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  This binding is optimized for cross-machine communication. By default, it has the following characteristics:  
   
--   Implements transport-layer security.  
+- Implements transport-layer security.  
   
--   Leverages Windows security for transfer security and authentication.  
+- Leverages Windows security for transfer security and authentication.  
   
--   Uses TCP for transport.  
+- Uses TCP for transport.  
   
--   Implements binary message encoding.  
+- Implements binary message encoding.  
   
--   Implements WS-Reliable Messaging.  
+- Implements WS-Reliable Messaging.  
   
  Options include the following:  
   
--   Message-layer security (using WS-Security).  
+- Message-layer security (using WS-Security).  
   
--   Transport security with message credential—confidentiality and integrity provided by Transport Layer Security (TLS) over TCP, and credentials for authorization provided by WS-Security.  
+- Transport security with message credential—confidentiality and integrity provided by Transport Layer Security (TLS) over TCP, and credentials for authorization provided by WS-Security.  
   
  For more information, see <xref:System.ServiceModel.NetTcpSecurity>, <xref:System.ServiceModel.TcpTransportSecurity>, <xref:System.ServiceModel.TcpClientCredentialType>, <xref:System.ServiceModel.MessageSecurityOverTcp>, and <xref:System.ServiceModel.MessageCredentialType>.  
   
@@ -113,17 +113,17 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  This binding is optimized for cross-process communication (usually on the same machine). By default, this binding has the following characteristics:  
   
--   Uses transport security for message transfer and authentication.  
+- Uses transport security for message transfer and authentication.  
   
--   Uses named pipes for message delivery.  
+- Uses named pipes for message delivery.  
   
--   Implements binary message encoding.  
+- Implements binary message encoding.  
   
--   Encryption and message signing.  
+- Encryption and message signing.  
   
  Options include the following:  
   
--   Authentication using Windows security.  
+- Authentication using Windows security.  
   
  For more information, see <xref:System.ServiceModel.NetNamedPipeSecurity>, <xref:System.ServiceModel.NetNamedPipeSecurityMode>, and <xref:System.ServiceModel.NamedPipeTransportSecurity>.  
   
@@ -134,9 +134,9 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  By default, this binding uses transport security and provides the following security characteristics:  
   
--   Security can be disabled (None).  
+- Security can be disabled (None).  
   
--   MSMQ transport security (Transport).  
+- MSMQ transport security (Transport).  
   
  For more information, see <xref:System.ServiceModel.NetMsmqSecurity> and <xref:System.ServiceModel.NetMsmqSecurityMode>.  
   
@@ -147,15 +147,15 @@ The system-provided bindings included with Windows Communication Foundation (WCF
   
  By default, this binding uses transport security and provides the following security characteristics:  
   
--   Security can be disabled (None).  
+- Security can be disabled (None).  
   
--   MSMQ transport security (Transport).  
+- MSMQ transport security (Transport).  
   
--   SOAP-based message security (Message).  
+- SOAP-based message security (Message).  
   
--   Simultaneous Transport and Message security (Both).  
+- Simultaneous Transport and Message security (Both).  
   
--   Client Credential Types supported: None, Windows, UserName, Certificate, IssuedToken.  
+- Client Credential Types supported: None, Windows, UserName, Certificate, IssuedToken.  
   
  The <xref:System.ServiceModel.MessageCredentialType.Certificate> credential is supported only when the security mode is set to either <xref:System.ServiceModel.NetMsmqSecurityMode.Both> or <xref:System.ServiceModel.NetMsmqSecurityMode.Message>.  
   
@@ -199,8 +199,8 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |Type|Description|  
 |----------|-----------------|  
 |None|Specifies that the client does not need to present any credential. This translates to an anonymous client.|  
-|Basic|Basic authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [https://go.microsoft.com/fwlink/?LinkId=84023](https://go.microsoft.com/fwlink/?LinkId=84023).|  
-|Digest|Digest authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at [https://go.microsoft.com/fwlink/?LinkId=84023](https://go.microsoft.com/fwlink/?LinkId=84023).|  
+|Basic|Basic authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at <https://go.microsoft.com/fwlink/?LinkId=84023>.|  
+|Digest|Digest authentication. For more information, see RFC 2617 – HTTP Authentication: Basic and Digest Authentication, available at <https://go.microsoft.com/fwlink/?LinkId=84023>.|  
 |NTLM|NT LAN Manager (NTLM) authentication.|  
 |Windows|Windows authentication.|  
 |Certificate|Authentication performed using a certificate.|  
@@ -218,6 +218,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |IssuedToken|Allows the service to use a security token service to supply a custom token.|  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
 - [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)

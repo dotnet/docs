@@ -23,15 +23,15 @@ ms.author: "ronpet"
   
  There are two distinct ways evidence is used:  
   
--   The input evidence is merged with the evidence gathered by the loader to create a final set of evidence used for policy resolution. The methods that use this semantic include **Assembly.Load**, **Assembly.LoadFrom**, and **Activator.CreateInstance**.  
+- The input evidence is merged with the evidence gathered by the loader to create a final set of evidence used for policy resolution. The methods that use this semantic include **Assembly.Load**, **Assembly.LoadFrom**, and **Activator.CreateInstance**.  
   
--   The input evidence is used unaltered as the final set of evidence used for policy resolution. The methods that use this semantic include **Assembly.Load(byte[])** and **AppDomain.DefineDynamicAssembly()**.  
+- The input evidence is used unaltered as the final set of evidence used for policy resolution. The methods that use this semantic include **Assembly.Load(byte[])** and **AppDomain.DefineDynamicAssembly()**.  
   
  Optional permissions can be granted by the [security policy](../../../docs/framework/misc/code-access-security-basics.md) set on the computer where the assembly will run. If you want your code to handle all potential security exceptions, you can do one of the following:  
   
--   Insert a permission request for all the permissions your code must have, and handle up front the load-time failure that occurs if the permissions are not granted.  
+- Insert a permission request for all the permissions your code must have, and handle up front the load-time failure that occurs if the permissions are not granted.  
   
--   Do not use a permission request to obtain permissions your code might need, but be prepared to handle security exceptions if permissions are not granted.  
+- Do not use a permission request to obtain permissions your code might need, but be prepared to handle security exceptions if permissions are not granted.  
   
     > [!NOTE]
     >  Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md).  
@@ -57,6 +57,7 @@ ms.author: "ronpet"
  Because strong naming and signing using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) guarantee integrity, you can base code access security policy on these two forms of assembly evidence. Strong naming and signing using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) guarantee integrity through digital signatures and certificates. All the technologies mentioned—hash verification, strong naming, and signing using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md)—work together to ensure that the assembly has not been altered in any way.  
   
 ## See also
+
 - [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md)

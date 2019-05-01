@@ -19,15 +19,15 @@ This section describes known issues related to the .NET Framework Data Provider 
   
  The following are some typical scenarios that might lead to the presence of CROSS APPLY and/or OUTER APPLY operators in the output query:  
   
--   A correlated subquery with paging.  
+- A correlated subquery with paging.  
   
--   An `AnyElement` over a correlated sub-query, or over a collection produced by navigation.  
+- An `AnyElement` over a correlated sub-query, or over a collection produced by navigation.  
   
--   LINQ queries that use grouping methods that accept an element selector.  
+- LINQ queries that use grouping methods that accept an element selector.  
   
--   A query in which a CROSS APPLY or an OUTER APPLY is explicitly specified  
+- A query in which a CROSS APPLY or an OUTER APPLY is explicitly specified  
   
--   A query that has a DEREF construct over a REF construct.  
+- A query that has a DEREF construct over a REF construct.  
   
 ## SKIP Operator  
  If you are using [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)], using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)]. For example, in the following query, more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:  
@@ -54,5 +54,6 @@ SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2
  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports server-generated GUID type identity values, but the provider must support returning the server-generated identity value after a row was inserted. Starting with SQL Server 2005, you can return the server-generated GUID type in a SQL Server database through the [OUTPUT clause](https://go.microsoft.com/fwlink/?LinkId=169400) .  
   
 ## See also
+
 - [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)
 - [Known Issues and Considerations in LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/known-issues-and-considerations-in-linq-to-entities.md)

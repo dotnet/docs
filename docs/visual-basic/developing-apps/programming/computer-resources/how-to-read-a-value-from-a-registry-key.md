@@ -20,7 +20,7 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
   
 ### To read a value from a registry key  
   
--   Use the `GetValue` method, specifying the path and name) to read a value from registry key. The following example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a message box.  
+- Use the `GetValue` method, specifying the path and name) to read a value from registry key. The following example reads the value `Name` from `HKEY_CURRENT_USER\Software\MyApp` and displays it in a message box.  
   
      [!code-vb[VbResourceTasks#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#4)]  
   
@@ -28,7 +28,7 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
   
 ### To determine whether a value exists in a registry key  
   
--   Use the `GetValue` method to retrieve the value. The following code checks whether the value exists and returns a message if it does not.  
+- Use the `GetValue` method to retrieve the value. The following code checks whether the value exists and returns a message if it does not.  
   
      [!code-vb[VbResourceTasks#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#12)]  
   
@@ -37,16 +37,17 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
   
  The following conditions may cause an exception:  
   
--   The name of the key is `Nothing` (<xref:System.ArgumentNullException>).  
+- The name of the key is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   The user does not have permissions to read from registry keys (<xref:System.Security.SecurityException>).  
+- The user does not have permissions to read from registry keys (<xref:System.Security.SecurityException>).  
   
--   The key name exceeds the 255-character limit (<xref:System.ArgumentException>).  
+- The key name exceeds the 255-character limit (<xref:System.ArgumentException>).  
   
 ## .NET Framework Security  
  To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
 - <xref:Microsoft.Win32.RegistryHive>
 - [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

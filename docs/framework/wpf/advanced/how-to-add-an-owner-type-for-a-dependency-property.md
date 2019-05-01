@@ -25,5 +25,6 @@ This example shows how to add a class as an owner of a dependency property regis
 [!code-vb[PropertySystemEsoterics#UnrelatedStateControl](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/sdksamplelibrary/class1.vb#unrelatedstatecontrol)]  
   
 ## See also
+
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)

@@ -11,8 +11,6 @@ ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
 # Globalization for WPF
 This topic introduces issues that you should be aware of when writing [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications for the global market. The globalization programming elements are defined in [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] in `System.Globalization`.
 
-
-
 <a name="xaml_globalization"></a>
 ## XAML Globalization
  [!INCLUDE[TLA#tla_xaml#initcap](../../../../includes/tlasharptla-xamlsharpinitcap-md.md)] is based on [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] and takes advantage of the globalization support defined in the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] specification. The following sections describe some [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] features that you should be aware of.
@@ -65,59 +63,59 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  The following scripts are currently supported:
 
--   Arabic
+- Arabic
 
--   Bengali
+- Bengali
 
--   Devanagari
+- Devanagari
 
--   Cyrillic
+- Cyrillic
 
--   Greek
+- Greek
 
--   Gujarati
+- Gujarati
 
--   Gurmukhi
+- Gurmukhi
 
--   Hebrew
+- Hebrew
 
--   Ideographic scripts
+- Ideographic scripts
 
--   Kannada
+- Kannada
 
--   Lao
+- Lao
 
--   Latin
+- Latin
 
--   Malayalam
+- Malayalam
 
--   Mongolian
+- Mongolian
 
--   Odia
+- Odia
 
--   Syriac
+- Syriac
 
--   Tamil
+- Tamil
 
--   Telugu
+- Telugu
 
--   Thaana
+- Thaana
 
--   Thai*
+- Thai*
 
--   Tibetan
+- Tibetan
 
  *In this release the display and editing of Thai text is supported; word breaking is not.
 
  The following scripts are not currently supported:
 
--   Khmer
+- Khmer
 
--   Korean Old Hangul
+- Korean Old Hangul
 
--   Myanmar
+- Myanmar
 
--   Sinhala
+- Sinhala
 
  All the writing system engines support [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] fonts. [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] fonts can include the [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] layout tables that enable font creators to design better international and high-end typographic fonts. The [!INCLUDE[TLA2#tla_opentype](../../../../includes/tla2sharptla-opentype-md.md)] font layout tables contain information about glyph substitutions, glyph positioning, justification, and baseline positioning, enabling text-processing applications to improve text layout.
 
@@ -129,9 +127,9 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ### International Layout
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a very convenient way to support horizontal, bidirectional, and vertical layouts. In presentation framework the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property can be used to define layout. The flow direction patterns are:
 
--   *LeftToRight* - horizontal layout for Latin, East Asian and so forth.
+- *LeftToRight* - horizontal layout for Latin, East Asian and so forth.
 
--   *RightToLeft* - bidirectional for Arabic, Hebrew and so forth.
+- *RightToLeft* - bidirectional for Arabic, Hebrew and so forth.
 
 <a name="developing_localizable_apps"></a>
 ## Developing Localizable Applications
@@ -175,4 +173,5 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ```
 
 ## See also
+
 - [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)

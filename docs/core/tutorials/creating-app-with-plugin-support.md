@@ -107,8 +107,6 @@ IEnumerable<ICommand> commands = pluginPaths.SelectMany(pluginPath =>
 }).ToList();
 ```
 
-
-
 Then replace the `// Output the loaded commands` comment with the following code snippet:
 
 ```csharp

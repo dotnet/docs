@@ -31,13 +31,13 @@ A constant is a meaningful name that takes the place of a number or string that 
 ## Scope of User-Defined Constants  
  A `Const` statement's scope is the same as that of a variable declared in the same location. You can specify scope in any of the following ways:  
   
--   To create a constant that exists only within a procedure, declare it within that procedure.  
+- To create a constant that exists only within a procedure, declare it within that procedure.  
   
--   To create a constant available to all procedures within a class, but not to any code outside that module, declare it in the declarations section of the class.  
+- To create a constant available to all procedures within a class, but not to any code outside that module, declare it in the declarations section of the class.  
   
--   To create a constant that is available to all members of an assembly, but not to outside clients of the assembly, declare it using the `Friend` keyword in the declarations section of the class.  
+- To create a constant that is available to all members of an assembly, but not to outside clients of the assembly, declare it using the `Friend` keyword in the declarations section of the class.  
   
--   To create a constant available throughout the application, declare it using the `Public` keyword in the declarations section the class.  
+- To create a constant available throughout the application, declare it using the `Public` keyword in the declarations section the class.  
   
  For more information, see [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md).  
   
@@ -50,6 +50,7 @@ A constant is a meaningful name that takes the place of a number or string that 
  If a cycle occurs, Visual Basic generates a compiler error.  
   
 ## See also
+
 - [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)
 - [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)
 - [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)

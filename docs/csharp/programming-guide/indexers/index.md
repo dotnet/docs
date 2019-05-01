@@ -34,29 +34,29 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
   
 ## Indexers Overview  
   
--   Indexers enable objects to be indexed in a similar manner to arrays.  
+- Indexers enable objects to be indexed in a similar manner to arrays.  
   
--   A `get` accessor returns a value. A `set` accessor assigns a value.  
+- A `get` accessor returns a value. A `set` accessor assigns a value.  
   
--   The [this](../../../csharp/language-reference/keywords/this.md) keyword is used to define the indexer.  
+- The [this](../../../csharp/language-reference/keywords/this.md) keyword is used to define the indexer.  
   
--   The [value](../../../csharp/language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` indexer.  
+- The [value](../../../csharp/language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` indexer.  
   
--   Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.  
+- Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.  
   
--   Indexers can be overloaded.  
+- Indexers can be overloaded.  
   
--   Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.  
+- Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.  
   
 ## <a name="BKMK_RelatedSections"></a> Related Sections  
   
--   [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)  
+- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)  
   
--   [Indexers in Interfaces](../../../csharp/programming-guide/indexers/indexers-in-interfaces.md)  
+- [Indexers in Interfaces](../../../csharp/programming-guide/indexers/indexers-in-interfaces.md)  
   
--   [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
   
--   [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
+- [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
   
 ## C# Language Specification  
 

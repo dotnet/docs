@@ -65,15 +65,16 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 ## XAML 2009  
  XAML 2009 provides additional support for generic types and modifies the feature behavior of `x:TypeArguments` and `x:Type` to provide this support.  
   
--   `x:TypeArguments` and the associated object element for a generic object instantiation can be on elements other than the root. For more information, see the "XAML 2009" section of [x:TypeArguments Directive](x-typearguments-directive.md).  
+- `x:TypeArguments` and the associated object element for a generic object instantiation can be on elements other than the root. For more information, see the "XAML 2009" section of [x:TypeArguments Directive](x-typearguments-directive.md).  
   
--   XAML 2009 supports a syntax for specifying a generic type's constraint in markup. This can be used by `x:TypeArguments`, by `x:Type`, or by the two features in combination.  
+- XAML 2009 supports a syntax for specifying a generic type's constraint in markup. This can be used by `x:TypeArguments`, by `x:Type`, or by the two features in combination.  
   
--   WPF XAML implementation when processing XAML 2009 for load also adds this capability to the implicit type conversion behavior for certain framework properties that use type <xref:System.Type>.  
+- WPF XAML implementation when processing XAML 2009 for load also adds this capability to the implicit type conversion behavior for certain framework properties that use type <xref:System.Type>.  
   
  In WPF, you can use XAML 2009 features but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features.  
   
 ## See also
+
 - <xref:System.Windows.Style>
 - [Styling and Templating](../wpf/controls/styling-and-templating.md)
 - [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)

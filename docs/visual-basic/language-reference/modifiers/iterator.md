@@ -28,9 +28,9 @@ Specifies that a function or `Get` accessor is an iterator.
 ## Usage  
  The `Iterator` modifier can be used in these contexts:  
   
--   [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
   
--   [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## Example  
  The following example demonstrates an iterator function. The iterator function has a `Yield` statement that is inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. Each iteration of the [For Each](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
@@ -45,6 +45,7 @@ Specifies that a function or `Get` accessor is an iterator.
  For additional examples, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## See also
+
 - <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>
 - [Iterators](../../programming-guide/concepts/iterators.md)
 - [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)

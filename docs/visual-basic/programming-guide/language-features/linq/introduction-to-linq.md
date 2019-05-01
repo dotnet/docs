@@ -176,11 +176,11 @@ You can use additional LINQ query features by calling members of the enumerable 
 ## Visual Basic features that support LINQ  
  Visual Basic includes other notable features that make the use of LINQ simple and reduce the amount of code that you must write to perform LINQ queries. These include the following:  
   
--   **Anonymous types**, which enable you to create a new type based on a query result.  
+- **Anonymous types**, which enable you to create a new type based on a query result.  
   
--   **Implicitly typed variables**, which enable you to defer specifying a type and let the compiler infer the type based on the query result.  
+- **Implicitly typed variables**, which enable you to defer specifying a type and let the compiler infer the type based on the query result.  
   
--   **Extension methods**, which enable you to extend an existing type with your own methods without modifying the type itself.  
+- **Extension methods**, which enable you to extend an existing type with your own methods without modifying the type itself.  
   
  For details, see [Visual Basic Features That Support LINQ](../../concepts/linq/features-that-support-linq.md).  
   

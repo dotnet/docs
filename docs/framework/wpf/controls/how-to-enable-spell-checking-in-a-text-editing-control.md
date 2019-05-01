@@ -22,6 +22,7 @@ The following example shows how to enable real-time spell checking in a <xref:Sy
  [!code-vb[TextBoxMiscSnippets_procedural_snip#SpellCheckCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/spellcheckexample.vb#spellcheckcodeexamplewholepage)]  
   
 ## See also
+
 - [Use Spell Checking with a Context Menu](how-to-use-spell-checking-with-a-context-menu.md)
 - [TextBox Overview](textbox-overview.md)
 - [RichTextBox Overview](richtextbox-overview.md)

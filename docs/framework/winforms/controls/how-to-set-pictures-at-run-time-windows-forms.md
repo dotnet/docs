@@ -19,7 +19,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
   
 ### To set a picture programmatically  
   
--   Set the <xref:System.Windows.Forms.PictureBox.Image%2A> property using the <xref:System.Drawing.Image.FromFile%2A> method of the <xref:System.Drawing.Image> class.  
+- Set the <xref:System.Windows.Forms.PictureBox.Image%2A> property using the <xref:System.Drawing.Image.FromFile%2A> method of the <xref:System.Drawing.Image> class.  
   
      In the example below, the path set for the location of the image is the My Documents folder. This is done, because you can assume that most computers running the Windows operating system will include this directory. This also allows users with minimal system access levels to safely run the application. The example below assumes a form with a <xref:System.Windows.Forms.PictureBox> control already added.  
   
@@ -61,7 +61,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
   
 ### To clear a graphic  
   
--   First, release the memory being used by the image, and then clear the graphic. Garbage collection will free up the memory later if memory management becomes a problem.  
+- First, release the memory being used by the image, and then clear the graphic. Garbage collection will free up the memory later if memory management becomes a problem.  
   
     ```vb  
     If Not (PictureBox1.Image Is Nothing) Then  
@@ -92,6 +92,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
      This code will clear the image even if a graphic was loaded into the control at design time.  
   
 ## See also
+
 - <xref:System.Windows.Forms.PictureBox>
 - <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>
 - [PictureBox Control Overview](picturebox-control-overview-windows-forms.md)

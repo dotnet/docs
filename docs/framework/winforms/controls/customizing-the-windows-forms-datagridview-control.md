@@ -48,5 +48,6 @@ The `DataGridView` control provides several properties that you can use to adjus
  Provides topics that describe how to modify the basic appearance of the control and the display formatting of cell data.  
   
 ## See also
+
 - [DataGridView Control](datagridview-control-windows-forms.md)
 - [Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)

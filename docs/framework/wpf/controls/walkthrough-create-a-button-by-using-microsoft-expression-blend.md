@@ -22,37 +22,37 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 #### To create a new project in Expression Blend  
   
-1.  Start Expression Blend. (Click **Start**, point to **All Programs**, point to **Microsoft Expression**, and then click **Microsoft Expression Blend**.)  
+1. Start Expression Blend. (Click **Start**, point to **All Programs**, point to **Microsoft Expression**, and then click **Microsoft Expression Blend**.)  
   
-2.  Maximize the application if needed.  
+2. Maximize the application if needed.  
   
-3.  On the **File** menu, click **New Project**.  
+3. On the **File** menu, click **New Project**.  
   
-4.  Select **Standard Application (.exe)**.  
+4. Select **Standard Application (.exe)**.  
   
-5.  Name the project `CustomButton` and press **OK**.  
+5. Name the project `CustomButton` and press **OK**.  
   
  At this point you have a blank [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] project. You can press F5 to run the application. As you might expect, the application consists of only a blank window. Next, you create a rounded rectangle and convert it into a button.  
   
 #### To convert a Rectangle to a Button  
   
-1.  **Set the Window Background property to black:** Select the Window, click the **Properties Tab**, and set the <xref:System.Windows.Controls.Control.Background%2A> property to `Black`.  
+1. **Set the Window Background property to black:** Select the Window, click the **Properties Tab**, and set the <xref:System.Windows.Controls.Control.Background%2A> property to `Black`.  
   
      ![How to set the background of a button to black](./media/custom-button-blend-changebackground.png "custom_button_blend_ChangeBackground")  
   
-2.  **Draw a rectangle approximately the size of a button on the Window:** Select the rectangle tool on the left-hand tool panel and drag the rectangle onto the Window.  
+2. **Draw a rectangle approximately the size of a button on the Window:** Select the rectangle tool on the left-hand tool panel and drag the rectangle onto the Window.  
   
      ![How to draw a rectangle](./media/custom-button-blend-drawrect.png "custom_button_blend_DrawRect")  
   
-3.  **Round out the corners of the rectangle:** Either drag the control points of the rectangle or directly set the <xref:System.Windows.Shapes.Rectangle.RadiusX%2A> and <xref:System.Windows.Shapes.Rectangle.RadiusY%2A> properties. Set the values of <xref:System.Windows.Shapes.Rectangle.RadiusX%2A> and <xref:System.Windows.Shapes.Rectangle.RadiusY%2A> to 20.  
+3. **Round out the corners of the rectangle:** Either drag the control points of the rectangle or directly set the <xref:System.Windows.Shapes.Rectangle.RadiusX%2A> and <xref:System.Windows.Shapes.Rectangle.RadiusY%2A> properties. Set the values of <xref:System.Windows.Shapes.Rectangle.RadiusX%2A> and <xref:System.Windows.Shapes.Rectangle.RadiusY%2A> to 20.  
   
      ![How to make the corners of a rectangle round](./media/custom-button-blend-roundcorners.png "custom_button_blend_RoundCorners")  
   
-4.  **Change the rectangle into a button:** Select the rectangle. On the **Tools** menu, click **Make Button**.  
+4. **Change the rectangle into a button:** Select the rectangle. On the **Tools** menu, click **Make Button**.  
   
      ![How to make a shape into a button](./media/custom-button-blend-makebutton.png "custom_button_blend_MakeButton")  
   
-5.  **Specify the scope of the style/template:** A dialog box like the following appears.  
+5. **Specify the scope of the style/template:** A dialog box like the following appears.  
   
      ![The "Create Style Resource" dialog box](./media/custom-button-blend-makebutton2.gif "custom_button_blend_MakeButton2")  
   
@@ -63,7 +63,7 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 #### To edit the button template to change the button appearance  
   
-1.  **Go into edit template view:** To further customize the look of our button, we need to edit the button template. This template was created when we converted the rectangle into a button. To edit the button template, right-click the button and select **Edit Control Parts (Template)** and then **Edit Template**.  
+1. **Go into edit template view:** To further customize the look of our button, we need to edit the button template. This template was created when we converted the rectangle into a button. To edit the button template, right-click the button and select **Edit Control Parts (Template)** and then **Edit Template**.  
   
      ![How to edit a template](./media/custom-button-blend-edittemplate.jpg "custom_button_blend_EditTemplate")  
   
@@ -71,11 +71,11 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
      ![Components in the presentation of a rectangle](./media/custom-button-blend-templatepanel.png "custom_button_blend_TemplatePanel")  
   
-2.  **Change the names of the template components:** Right-click the rectangle in the template inventory, change the <xref:System.Windows.Shapes.Rectangle> name from "[Rectangle]" to "outerRectangle", and change "[ContentPresenter]" to "myContentPresenter".  
+2. **Change the names of the template components:** Right-click the rectangle in the template inventory, change the <xref:System.Windows.Shapes.Rectangle> name from "[Rectangle]" to "outerRectangle", and change "[ContentPresenter]" to "myContentPresenter".  
   
      ![How to rename a component of a template](./media/custom-button-blend-renamecomponents.png "custom_button_blend_RenameComponents")  
   
-3.  **Alter the rectangle so that it is empty inside (like a donut):** Select **outerRectangle** and set <xref:System.Windows.Shapes.Shape.Fill%2A> to "Transparent" and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> to 5.  
+3. **Alter the rectangle so that it is empty inside (like a donut):** Select **outerRectangle** and set <xref:System.Windows.Shapes.Shape.Fill%2A> to "Transparent" and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> to 5.  
   
      ![How to make a rectangle empty](./media/custom-button-blend-changerectproperties.png "custom_button_blend_ChangeRectProperties")  
   
@@ -83,27 +83,27 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
      ![How to set the use the color of the template](./media/custom-button-blend-templatestroke.png "custom_button_blend_TemplateStroke")  
   
-4.  **Create an inner rectangle:** Now, create another rectangle (name it "innerRectangle") and position it symmetrically on the inside of **outerRectangle** . For this kind of work, you will probably want to zoom to make the button larger in the editing area.  
+4. **Create an inner rectangle:** Now, create another rectangle (name it "innerRectangle") and position it symmetrically on the inside of **outerRectangle** . For this kind of work, you will probably want to zoom to make the button larger in the editing area.  
   
     > [!NOTE]
     >  Your rectangle might look different than the one in the figure (for example, it might have rounded corners).  
   
      ![How to create a rectangle inside another rectangle](./media/custom-button-blend-innerrectangleproperties.png "custom_button_blend_innerRectangleProperties")  
   
-5.  **Move ContentPresenter to the top:** At this point, it is possible that the text "Button" will not be visible any longer. If this is so, this is because **innerRectangle** is on top of the **myContentPresenter**. To fix this, drag **myContentPresenter** below **innerRectangle**. Reposition rectangles and **myContentPresenter** to look similar to below.  
+5. **Move ContentPresenter to the top:** At this point, it is possible that the text "Button" will not be visible any longer. If this is so, this is because **innerRectangle** is on top of the **myContentPresenter**. To fix this, drag **myContentPresenter** below **innerRectangle**. Reposition rectangles and **myContentPresenter** to look similar to below.  
   
     > [!NOTE]
     >  Alternatively, you can also position **myContentPresenter** on top by right-clicking it and pressing **Send Forward**.  
   
      ![How to move one button on top of another button](./media/custom-button-blend-innerrectangle2.png "custom_button_blend_innerRectangle2")  
   
-6.  **Change the look of innerRectangle:** Set the <xref:System.Windows.Shapes.Rectangle.RadiusX%2A>, <xref:System.Windows.Shapes.Rectangle.RadiusY%2A>, and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> values to 20. In addition, set the <xref:System.Windows.Shapes.Shape.Fill%2A> to the background of the template using the custom expression "{TemplateBinding Background}" ) and set <xref:System.Windows.Shapes.Shape.Stroke%2A> to "transparent". Notice that the settings for the <xref:System.Windows.Shapes.Shape.Fill%2A> and <xref:System.Windows.Shapes.Shape.Stroke%2A> of **innerRectangle** are the opposite of those for **outerRectangle**.  
+6. **Change the look of innerRectangle:** Set the <xref:System.Windows.Shapes.Rectangle.RadiusX%2A>, <xref:System.Windows.Shapes.Rectangle.RadiusY%2A>, and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> values to 20. In addition, set the <xref:System.Windows.Shapes.Shape.Fill%2A> to the background of the template using the custom expression "{TemplateBinding Background}" ) and set <xref:System.Windows.Shapes.Shape.Stroke%2A> to "transparent". Notice that the settings for the <xref:System.Windows.Shapes.Shape.Fill%2A> and <xref:System.Windows.Shapes.Shape.Stroke%2A> of **innerRectangle** are the opposite of those for **outerRectangle**.  
   
      ![How to change the appearance of a rectangle](./media/custom-button-blend-glassrectangleproperties1.png "custom_button_blend_glassRectangleProperties1")  
   
-7.  **Add a glass layer on top:** The final piece of customizing the look of the button is to add a glass layer on top. This glass layer consists of a third rectangle. Because the glass will cover the entire button, the glass rectangle is similar in dimensions to the **outerRectangle**. Therefore, create the rectangle by simply making a copy of the **outerRectangle**. Highlight **outerRectangle** and use CTRL+C and CTRL+V to make a copy. Name this new rectangle "glassCube".  
+7. **Add a glass layer on top:** The final piece of customizing the look of the button is to add a glass layer on top. This glass layer consists of a third rectangle. Because the glass will cover the entire button, the glass rectangle is similar in dimensions to the **outerRectangle**. Therefore, create the rectangle by simply making a copy of the **outerRectangle**. Highlight **outerRectangle** and use CTRL+C and CTRL+V to make a copy. Name this new rectangle "glassCube".  
   
-8.  **Reposition glassCube if necessary:** If **glassCube** is not already positioned so that it covers the entire button, drag it into position.  
+8. **Reposition glassCube if necessary:** If **glassCube** is not already positioned so that it covers the entire button, drag it into position.  
   
 9. **Give glassCube a slightly different shape than outerRectangle:** Change the properties of **glassCube**. Start off by changing the <xref:System.Windows.Shapes.Rectangle.RadiusX%2A> and <xref:System.Windows.Shapes.Rectangle.RadiusY%2A> properties to 10 and the <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> to 2.  
   
@@ -111,17 +111,17 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 10. **Make glassCube look like glass:** Set the <xref:System.Windows.Shapes.Shape.Fill%2A> to a glassy look by  using a linear gradient that is 75% opaque and alternates between the color White and Transparent over 6 approximately evenly spaced intervals. This is what to set the gradient stops to:  
   
-    -   Gradient Stop 1: White with Alpha value of 75%  
+    - Gradient Stop 1: White with Alpha value of 75%  
   
-    -   Gradient Stop 2: Transparent  
+    - Gradient Stop 2: Transparent  
   
-    -   Gradient Stop 3: White with Alpha value of 75%  
+    - Gradient Stop 3: White with Alpha value of 75%  
   
-    -   Gradient Stop 4: Transparent  
+    - Gradient Stop 4: Transparent  
   
-    -   Gradient Stop 5: White with Alpha value of 75%  
+    - Gradient Stop 5: White with Alpha value of 75%  
   
-    -   Gradient Stop 6: Transparent  
+    - Gradient Stop 6: Transparent  
   
      This creates a "wavy" glass look.  
   
@@ -136,13 +136,13 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
 #### To set property triggers  
   
-1.  **Create a new property trigger:** With **glassCube** selected, click **+ Property** in the **Triggers** panel (see the figure that follows the next step). This creates a property trigger with a default property trigger.  
+1. **Create a new property trigger:** With **glassCube** selected, click **+ Property** in the **Triggers** panel (see the figure that follows the next step). This creates a property trigger with a default property trigger.  
   
-2.  **Make IsMouseOver the property used by the trigger:** Change the property to <xref:System.Windows.UIElement.IsMouseOver%2A>. This makes the property trigger activate when the <xref:System.Windows.UIElement.IsMouseOver%2A> property is `true` (when the user points to the button with the mouse).  
+2. **Make IsMouseOver the property used by the trigger:** Change the property to <xref:System.Windows.UIElement.IsMouseOver%2A>. This makes the property trigger activate when the <xref:System.Windows.UIElement.IsMouseOver%2A> property is `true` (when the user points to the button with the mouse).  
   
      ![How to set a trigger on a property](./media/custom-button-blend-ismousedoverpropertytrigger.png "custom_button_blend_IsMousedOverPropertyTrigger")  
   
-3.  **IsMouseOver triggers opacity of 100% for glassCube:** Notice that the **Trigger recording is on** (see the preceding figure). This means that any changes you make to the property values of **glassCube** while recording is on will become an action that takes place when <xref:System.Windows.UIElement.IsMouseOver%2A> is `true`. While recording, change the <xref:System.Windows.UIElement.Opacity%2A> of **glassCube** to 100%.  
+3. **IsMouseOver triggers opacity of 100% for glassCube:** Notice that the **Trigger recording is on** (see the preceding figure). This means that any changes you make to the property values of **glassCube** while recording is on will become an action that takes place when <xref:System.Windows.UIElement.IsMouseOver%2A> is `true`. While recording, change the <xref:System.Windows.UIElement.Opacity%2A> of **glassCube** to 100%.  
   
      ![How to set the opacity of a button](./media/custom-button-blend-ismousedoverpropertytrigger2.gif "custom_button_blend_IsMousedOverPropertyTrigger2")  
   
@@ -152,11 +152,11 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
      Press F5 to run the application, and move the mouse pointer over and off the button. You should see the glass layer appear when you mouse-over the button and disappear when the pointer leaves.  
   
-4.  **IsMouseOver triggers stroke value change:** Let's associate some other actions with the <xref:System.Windows.UIElement.IsMouseOver%2A> trigger. While recording continues, switch your selection from **glassCube** to **outerRectangle**. Then set the <xref:System.Windows.Shapes.Shape.Stroke%2A> of **outerRectangle** to the custom expression of "{DynamicResource {x:Static SystemColors.HighlightBrushKey}}". This sets the <xref:System.Windows.Shapes.Shape.Stroke%2A> to the typical highlight color used by buttons. Press F5 to see the effect when you mouse over the button.  
+4. **IsMouseOver triggers stroke value change:** Let's associate some other actions with the <xref:System.Windows.UIElement.IsMouseOver%2A> trigger. While recording continues, switch your selection from **glassCube** to **outerRectangle**. Then set the <xref:System.Windows.Shapes.Shape.Stroke%2A> of **outerRectangle** to the custom expression of "{DynamicResource {x:Static SystemColors.HighlightBrushKey}}". This sets the <xref:System.Windows.Shapes.Shape.Stroke%2A> to the typical highlight color used by buttons. Press F5 to see the effect when you mouse over the button.  
   
      ![How to set the stroke to the highlight color](./media/custom-button-blend-ismousedoverpropertytrigger3.png "custom_button_blend_IsMousedOverPropertyTrigger3")  
   
-5.  **IsMouseOver triggers blurry text:** Let's associate one more action to the <xref:System.Windows.UIElement.IsMouseOver%2A> property trigger. Make the content of the button appear a little blurry when the glass appears over it. To do this, we can apply a blur <xref:System.Windows.Media.Effects.BitmapEffect> to the <xref:System.Windows.Controls.ContentPresenter> (**myContentPresenter**).  
+5. **IsMouseOver triggers blurry text:** Let's associate one more action to the <xref:System.Windows.UIElement.IsMouseOver%2A> property trigger. Make the content of the button appear a little blurry when the glass appears over it. To do this, we can apply a blur <xref:System.Windows.Media.Effects.BitmapEffect> to the <xref:System.Windows.Controls.ContentPresenter> (**myContentPresenter**).  
   
      ![How to blur the content of a button](./media/custom-button-blend-propertytriggerwithbitmapeffect.png "custom_button_blend_PropertyTriggerWithBitMapEffect")  
   
@@ -165,21 +165,21 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
      At this point, we have used a property trigger with several associated actions to create highlighting behavior for when the mouse pointer enters and leaves the button area. Another typical behavior for a button is to highlight when it has focus (as after it is clicked). We can add such behavior by adding another property trigger for the <xref:System.Windows.UIElement.IsFocused%2A> property.  
   
-6.  **Create property trigger for IsFocused:** Using the same procedure as for <xref:System.Windows.UIElement.IsMouseOver%2A> (see the first step of this section), create another property trigger for the <xref:System.Windows.UIElement.IsFocused%2A> property. While **Trigger recording is on**, add the following actions to the trigger:  
+6. **Create property trigger for IsFocused:** Using the same procedure as for <xref:System.Windows.UIElement.IsMouseOver%2A> (see the first step of this section), create another property trigger for the <xref:System.Windows.UIElement.IsFocused%2A> property. While **Trigger recording is on**, add the following actions to the trigger:  
   
-    -   **glassCube** gets an <xref:System.Windows.UIElement.Opacity%2A> of 100%.  
+    - **glassCube** gets an <xref:System.Windows.UIElement.Opacity%2A> of 100%.  
   
-    -   **outerRectangle** gets a <xref:System.Windows.Shapes.Shape.Stroke%2A> custom expression value of "{DynamicResource {x:Static SystemColors.HighlightBrushKey}}".  
+    - **outerRectangle** gets a <xref:System.Windows.Shapes.Shape.Stroke%2A> custom expression value of "{DynamicResource {x:Static SystemColors.HighlightBrushKey}}".  
   
  As the final step in this walkthrough, we will add animations to the button. These animations will be triggered by events—specifically, the <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.Controls.Primitives.ButtonBase.Click> events.  
   
 #### To use event triggers and animations to add interactivity  
   
-1.  **Create a MouseEnter Event Trigger:** Add a new event trigger and select <xref:System.Windows.UIElement.MouseEnter> as the event to use in the trigger.  
+1. **Create a MouseEnter Event Trigger:** Add a new event trigger and select <xref:System.Windows.UIElement.MouseEnter> as the event to use in the trigger.  
   
      ![How to create a MouseEnter event trigger](./media/custom-button-blend-mouseovereventtrigger.png "custom_button_blend_MouseOverEventTrigger")  
   
-2.  **Create an animation timeline:** Next, associate an animation timeline to the <xref:System.Windows.UIElement.MouseEnter> event.  
+2. **Create an animation timeline:** Next, associate an animation timeline to the <xref:System.Windows.UIElement.MouseEnter> event.  
   
      ![How to add an animation timeline to an event](./media/custom-button-blend-mouseovereventtrigger2.png "custom_button_blend_MouseOverEventTrigger2")  
   
@@ -190,31 +190,31 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
      ![The timeline panel](./media/custom-button-blend-mouseovereventtrigger3.png "custom_button_blend_MouseOverEventTrigger3")  
   
-3.  **Create a keyframe:** To create an animation, select the object you want to animate, create two or more keyframes on the timeline, and for those keyframes, set the property values you want the animation to interpolate between. The following figure guides you through the creation of a keyframe.  
+3. **Create a keyframe:** To create an animation, select the object you want to animate, create two or more keyframes on the timeline, and for those keyframes, set the property values you want the animation to interpolate between. The following figure guides you through the creation of a keyframe.  
   
      ![How to create a keyframe](./media/custom-button-blend-mouseovereventtrigger4.png "custom_button_blend_MouseOverEventTrigger4")  
   
-4.  **Shrink glassCube at this keyframe:** With the second keyframe selected, shrink the size of the **glassCube** to 90% of its full size using the **Size Transform**.  
+4. **Shrink glassCube at this keyframe:** With the second keyframe selected, shrink the size of the **glassCube** to 90% of its full size using the **Size Transform**.  
   
      ![How to shrink the size of a button](./media/custom-button-blend-sizetransform.png "custom_button_blend_SizeTransform")  
   
      Press F5 to run the application. Move the mouse pointer over the button. Notice that the glass layer shrinks on top of the button.  
   
-5.  **Create another Event Trigger and associate a different animation with it:** Let's add one more animation. Use a similar procedure to what you used to create the previous event trigger animation:  
+5. **Create another Event Trigger and associate a different animation with it:** Let's add one more animation. Use a similar procedure to what you used to create the previous event trigger animation:  
   
-    1.  Create a new event trigger using the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+    1. Create a new event trigger using the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
-    2.  Associate a new timeline with the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
+    2. Associate a new timeline with the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
      ![How to create a new timeline](./media/custom-button-blend-clickeventtrigger1.png "custom_button_blend_ClickEventTrigger1")  
   
-    1.  For this timeline, create two keyframes, one at 0.0 seconds and the second one at 0.3 seconds.  
+    1. For this timeline, create two keyframes, one at 0.0 seconds and the second one at 0.3 seconds.  
   
-    2.  With the keyframe at 0.3 seconds highlighted, set the **Rotate Transform Angle** to 360 degrees.  
+    2. With the keyframe at 0.3 seconds highlighted, set the **Rotate Transform Angle** to 360 degrees.  
   
      ![How to create a rotate transform](./media/custom-button-blend-rotatetransform.gif "custom_button_blend_RotateTransform")  
   
-    1.  Press F5 to run the application. Click the button. Notice that the glass layer spins around.  
+    1. Press F5 to run the application. Click the button. Notice that the glass layer spins around.  
   
 ## Conclusion  
  You have completed a customized button. You did this using a button template that was applied to all buttons in the application. If you leave the template editing mode (see the following figure) and create more buttons, you will see that they look and behave like your custom button rather than like the default button.  
@@ -231,17 +231,18 @@ This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_
   
  In conclusion, in the process of customizing a button template you have learned how to do the following in Microsoft Expression Blend:  
   
--   Customize the look of a control.  
+- Customize the look of a control.  
   
--   Set property triggers. Property triggers are very useful because they can be used on most objects, not just controls.  
+- Set property triggers. Property triggers are very useful because they can be used on most objects, not just controls.  
   
--   Set event triggers. Event triggers are very useful because they can be used on most objects, not just controls.  
+- Set event triggers. Event triggers are very useful because they can be used on most objects, not just controls.  
   
--   Create animations.  
+- Create animations.  
   
--   Miscellaneous: create gradients, add BitmapEffects, use transforms, and set basic properties of objects.  
+- Miscellaneous: create gradients, add BitmapEffects, use transforms, and set basic properties of objects.  
   
 ## See also
+
 - [Create a Button by Using XAML](walkthrough-create-a-button-by-using-xaml.md)
 - [Styling and Templating](styling-and-templating.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)

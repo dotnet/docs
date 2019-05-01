@@ -19,4 +19,5 @@ This category covers the various base classes, interfaces and other elements and
  [UI Automation of a WPF Custom Control](ui-automation-of-a-wpf-custom-control.md)  
   
 ## See also
+
 - [Styling and Templating](styling-and-templating.md)

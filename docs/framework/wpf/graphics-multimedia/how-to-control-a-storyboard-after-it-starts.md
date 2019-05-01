@@ -15,19 +15,19 @@ This example shows how to use code to control a <xref:System.Windows.Media.Anima
   
  To make a storyboard controllable, you use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify **true** as the second parameter. You can then use the storyboard's interactive methods to pause, resume, seek, stop, speed up, or slow down the storyboard, or advance it to its fill period. The following is a list of the storyboard's interactive methods:  
   
--   <xref:System.Windows.Media.Animation.Storyboard.Pause%2A>: Pauses the storyboard.  
+- <xref:System.Windows.Media.Animation.Storyboard.Pause%2A>: Pauses the storyboard.  
   
--   <xref:System.Windows.Media.Animation.Storyboard.Resume%2A>: Resumes a paused storyboard.  
+- <xref:System.Windows.Media.Animation.Storyboard.Resume%2A>: Resumes a paused storyboard.  
   
--   <xref:System.Windows.Media.Animation.Storyboard.SetSpeedRatio%2A>: Sets the storyboard's interactive speed.  
+- <xref:System.Windows.Media.Animation.Storyboard.SetSpeedRatio%2A>: Sets the storyboard's interactive speed.  
   
--   <xref:System.Windows.Media.Animation.Storyboard.Seek%2A>: Seeks the storyboard the specified location.  
+- <xref:System.Windows.Media.Animation.Storyboard.Seek%2A>: Seeks the storyboard the specified location.  
   
--   <xref:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick%2A>: Seeks the storyboard to the specified location. Unlike the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method, this operation is processed before the next tick.  
+- <xref:System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick%2A>: Seeks the storyboard to the specified location. Unlike the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method, this operation is processed before the next tick.  
   
--   <xref:System.Windows.Media.Animation.Storyboard.SkipToFill%2A>: Advances the storyboard to its fill period, if it has one.  
+- <xref:System.Windows.Media.Animation.Storyboard.SkipToFill%2A>: Advances the storyboard to its fill period, if it has one.  
   
--   <xref:System.Windows.Media.Animation.Storyboard.Stop%2A>: Stops the storyboard.  
+- <xref:System.Windows.Media.Animation.Storyboard.Stop%2A>: Stops the storyboard.  
   
  In the following example, several storyboard methods are used to interactively control a storyboard.  
   
@@ -38,4 +38,5 @@ This example shows how to use code to control a <xref:System.Windows.Media.Anima
  [!code-vb[timingbehaviors_procedural_snip#ControlStoryboardExampleUsingWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/timingbehaviors_procedural_snip/visualbasic/controlstoryboardexample.vb#controlstoryboardexampleusingwholepage)]  
   
 ## See also
+
 - [Use Event Triggers to Control a Storyboard After It Starts](how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md)

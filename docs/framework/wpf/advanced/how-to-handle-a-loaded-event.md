@@ -22,6 +22,7 @@ This example shows how to handle the <xref:System.Windows.FrameworkElement.Loade
  [!code-vb[FELoaded#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FELoaded/VisualBasic/default.xaml.vb#handler)]  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement>
 - [Object Lifetime Events](object-lifetime-events.md)
 - [Routed Events Overview](routed-events-overview.md)

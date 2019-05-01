@@ -10,11 +10,11 @@ ms.assetid: 3b680d9c-0998-42df-8ba7-5783f7abda75
 # Access Keywords (C# Reference)
 This section introduces the following access keywords:  
   
--   [base](../../../csharp/language-reference/keywords/base.md)  
+- [base](../../../csharp/language-reference/keywords/base.md)  
   
      Accesses the members of the base class.  
   
--   [this](../../../csharp/language-reference/keywords/this.md)  
+- [this](../../../csharp/language-reference/keywords/this.md)  
   
      Refers to the current instance of the class.  
   

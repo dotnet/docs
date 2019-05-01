@@ -69,15 +69,15 @@ string connectionString = "Data Source=MSSQL1;" +
   
  The batch execution environment includes the following components:  
   
--   Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)  
+- Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)  
   
--   Security context (user/application role)  
+- Security context (user/application role)  
   
--   Database context (current database)  
+- Database context (current database)  
   
--   Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)  
+- Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)  
   
--   Top-level temporary tables  
+- Top-level temporary tables  
   
  With MARS, a default execution environment is associated to a connection. Every new batch that starts executing under a given connection receives a copy of the default environment. Whenever code is executed under a given batch, all changes made to the environment are scoped to the specific batch. Once execution finishes, the execution settings are copied into the default environment. In the case of a single batch issuing several commands to be executed sequentially under the same transaction, semantics are the same as those exposed by connections involving earlier clients or servers.  
   
@@ -96,15 +96,16 @@ string connectionString = "Data Source=MSSQL1;" +
   
  There are three options for handling this scenario:  
   
-1.  Start the transaction after the reader is created, so that it is not part of the transaction. Every update then becomes its own transaction.  
+1. Start the transaction after the reader is created, so that it is not part of the transaction. Every update then becomes its own transaction.  
   
-2.  Commit all work after the reader is closed. This has the potential for a substantial batch of updates.  
+2. Commit all work after the reader is closed. This has the potential for a substantial batch of updates.  
   
-3.  Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
+3. Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
   
 ### Detecting MARS Support  
  An application can check for MARS support by reading the `SqlConnection.ServerVersion` value. The major number should be 9 for SQL Server 2005 and 10 for SQL Server 2008.  
   
 ## See also
+
 - [Multiple Active Result Sets (MARS)](../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

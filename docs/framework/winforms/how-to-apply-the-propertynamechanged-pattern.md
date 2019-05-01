@@ -20,9 +20,10 @@ The following code example demonstrates how to apply the *PropertyName*Changed p
 ## Compiling the Code  
  To compile the previous code example:  
   
--   Paste the code into an empty code file. You must use the custom control on a Windows Form that contains a `Main` method.  
+- Paste the code into an empty code file. You must use the custom control on a Windows Form that contains a `Main` method.  
   
 ## See also
+
 - [How to: Implement the INotifyPropertyChanged Interface](how-to-implement-the-inotifypropertychanged-interface.md)
 - [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)
 - [Windows Forms Data Binding](windows-forms-data-binding.md)

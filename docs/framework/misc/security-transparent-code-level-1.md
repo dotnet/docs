@@ -22,11 +22,11 @@ ms.author: "mairaw"
   
  This topic contains the following sections:  
   
--   [The Level 1 Transparency Model](#the_level_1_transparency_model)  
+- [The Level 1 Transparency Model](#the_level_1_transparency_model)  
   
--   [Transparency Attributes](#transparency_attributes)  
+- [Transparency Attributes](#transparency_attributes)  
   
--   [Security Transparency Examples](#security_transparency_examples)  
+- [Security Transparency Examples](#security_transparency_examples)  
   
 <a name="the_level_1_transparency_model"></a>   
 ## The Level 1 Transparency Model  
@@ -34,11 +34,11 @@ ms.author: "mairaw"
   
  You can mark a whole assembly, some classes in an assembly, or some methods in a class as security-transparent. Security-transparent code cannot elevate privileges. This restriction has three consequences:  
   
--   Security-transparent code cannot perform <xref:System.Security.Permissions.SecurityAction.Assert> actions.  
+- Security-transparent code cannot perform <xref:System.Security.Permissions.SecurityAction.Assert> actions.  
   
--   Any link demand that would be satisfied by security-transparent code becomes a full demand.  
+- Any link demand that would be satisfied by security-transparent code becomes a full demand.  
   
--   Any unsafe (unverifiable) code that must execute in security-transparent code causes a full demand for the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> security permission.  
+- Any unsafe (unverifiable) code that must execute in security-transparent code causes a full demand for the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> security permission.  
   
  These rules are enforced during execution by the common language runtime (CLR). Security-transparent code passes all the security requirements of the code it calls back to its callers. Demands that flow through the security-transparent code cannot elevate privileges. If a low-trust application calls security-transparent code and causes a demand for high privilege, the demand will flow back to the low-trust code and fail. The security-transparent code cannot stop the demand because it cannot perform assert actions. The same security-transparent code called from full-trust code results in a successful demand.  
   
@@ -125,5 +125,6 @@ public class B
  The previous code is transparent except for the `Critical` method, which is explicitly marked as security-critical. Transparency is the default setting, even with the assembly-level <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
 ## See also
+
 - [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)
 - [Security Changes](../../../docs/framework/security/security-changes.md)

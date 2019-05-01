@@ -43,6 +43,7 @@ A translation adds a value to one or more of the four color components. The colo
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `ColorBars.bmp` with an image file name and path that are valid on your system.  
   
 ## See also
+
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)

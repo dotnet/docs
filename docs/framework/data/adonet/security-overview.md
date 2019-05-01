@@ -40,19 +40,19 @@ Securing an application is an ongoing process. There will never be a point where
 ## Code Access Security (CAS)  
  Code access security (CAS) is a mechanism that helps limit the access that code has to protected resources and operations. In the .NET Framework, CAS performs the following functions:  
   
--   Defines permissions and permission sets that represent the right to access various system resources.  
+- Defines permissions and permission sets that represent the right to access various system resources.  
   
--   Enables administrators to configure security policy by associating sets of permissions with groups of code (code groups).  
+- Enables administrators to configure security policy by associating sets of permissions with groups of code (code groups).  
   
--   Enables code to request the permissions it requires in order to run, as well as the permissions that would be useful to have, and specifies which permissions the code must never have.  
+- Enables code to request the permissions it requires in order to run, as well as the permissions that would be useful to have, and specifies which permissions the code must never have.  
   
--   Grants permissions to each assembly that is loaded, based on the permissions requested by the code and on the operations permitted by security policy.  
+- Grants permissions to each assembly that is loaded, based on the permissions requested by the code and on the operations permitted by security policy.  
   
--   Enables code to demand that its callers have specific permissions.  
+- Enables code to demand that its callers have specific permissions.  
   
--   Enables code to demand that its callers possess a digital signature, thus allowing only callers from a particular organization or site to call the protected code.  
+- Enables code to demand that its callers possess a digital signature, thus allowing only callers from a particular organization or site to call the protected code.  
   
--   Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
+- Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
   
  To minimize the amount of damage that can occur if an attack succeeds, choose a security context for your code that grants access only to the resources it needs to get its work done and no more.  
   
@@ -66,17 +66,17 @@ Securing an application is an ongoing process. There will never be a point where
 ## Database Security  
  The principle of least privilege also applies to your data source. Some general guidelines for database security include:  
   
--   Create accounts with the lowest possible privileges.  
+- Create accounts with the lowest possible privileges.  
   
--   Do not allow users access to administrative accounts just to get code working.  
+- Do not allow users access to administrative accounts just to get code working.  
   
--   Do not return server-side error messages to client applications.  
+- Do not return server-side error messages to client applications.  
   
--   Validate all input at both the client and the server.  
+- Validate all input at both the client and the server.  
   
--   Use parameterized commands and avoid dynamic SQL statements.  
+- Use parameterized commands and avoid dynamic SQL statements.  
   
--   Enable security auditing and logging for the database you are using so that you are alerted to any security breaches.  
+- Enable security auditing and logging for the database you are using so that you are alerted to any security breaches.  
   
  For more information, see the following resources.  
   
@@ -96,6 +96,7 @@ Securing an application is an ongoing process. There will never be a point where
 |[Security Policy Best Practices](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|Provides links describing how to administer security policy.|  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Security in .NET](../../../standard/security/index.md)
 - [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)

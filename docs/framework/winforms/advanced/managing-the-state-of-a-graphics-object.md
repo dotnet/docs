@@ -29,11 +29,11 @@ graphics.DrawRectangle(pen, 10, 10, 200, 100);
 ## Graphics State  
  A <xref:System.Drawing.Graphics> object does more than provide drawing methods, such as <xref:System.Drawing.Graphics.DrawLine%2A> and <xref:System.Drawing.Graphics.DrawRectangle%2A>. A <xref:System.Drawing.Graphics> object also maintains graphics state, which can be divided into the following categories:  
   
--   Quality settings  
+- Quality settings  
   
--   Transformations  
+- Transformations  
   
--   Clipping region  
+- Clipping region  
   
 ### Quality Settings  
  A <xref:System.Drawing.Graphics> object has several properties that influence the quality of the items that are drawn. For example, you can set the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property to specify the type of antialiasing (if any) applied to text. Other properties that influence quality are <xref:System.Drawing.Graphics.SmoothingMode%2A>, <xref:System.Drawing.Graphics.CompositingMode%2A>, <xref:System.Drawing.Graphics.CompositingQuality%2A>, and <xref:System.Drawing.Graphics.InterpolationMode%2A>.  
@@ -89,7 +89,7 @@ graphics.DrawEllipse(pen, 0, 0, 100, 50);
   
  The following illustration shows the two ellipses. Note that the 30-degree rotation is about the origin of the coordinate system (upper-left corner of the client area), not about the centers of the ellipses. Also note that the pen width of 1 means 1 pixel for the first ellipse and 1 millimeter for the second ellipse.  
   
- ![Ovals](./media/csgraphicsascon1.png "csgraphicsascon1")  
+ ![Illustration that shows two ellipses: rotation and pen width.](./media/managing-the-state-of-a-graphics-object/set-rotation-pen-width-drawellipse-method.png)  
   
 ### Clipping Region  
  A <xref:System.Drawing.Graphics> object maintains a clipping region that applies to all items drawn by that <xref:System.Drawing.Graphics> object. You can set the clipping region by calling the <xref:System.Drawing.Graphics.SetClip%2A> method.  
@@ -140,10 +140,11 @@ graphics.DrawLine(pen, 0, 30, 150, 160);
 graphics.DrawLine(pen, 40, 20, 190, 150);  
 ```  
   
- The following illustration shows the clipped lines.  
+ The following illustration shows the clipped lines:  
   
- ![Limited Clip Region](./media/graphicsascon2.png "graphicsascon2")  
+ ![Diagram that shows the limited clip region.](./media/managing-the-state-of-a-graphics-object/set-clipping-region-setclip-method.png)  
   
 ## See also
+
 - [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
 - [Using Nested Graphics Containers](using-nested-graphics-containers.md)

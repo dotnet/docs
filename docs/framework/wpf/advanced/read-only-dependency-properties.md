@@ -8,9 +8,7 @@ ms.assetid: f23d6ec9-3780-4c09-a2ff-b2f0a2deddf1
 ---
 # Read-Only Dependency Properties
 This topic describes read-only dependency properties, including existing read-only dependency properties and the scenarios and techniques for creating a custom read-only dependency property.  
-  
 
-  
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand the basic scenarios of implementing a dependency property, and how metadata is applied to a custom dependency property. See [Custom Dependency Properties](custom-dependency-properties.md) and [Dependency Property Metadata](dependency-property-metadata.md) for context.  
@@ -27,17 +25,18 @@ This topic describes read-only dependency properties, including existing read-on
   
  Much of the process of creating a read-only dependency property is the same as is described in the [Custom Dependency Properties](custom-dependency-properties.md) and [Implement a Dependency Property](how-to-implement-a-dependency-property.md) topics. There are three important differences:  
   
--   When registering your property, call the <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A> method instead of the normal <xref:System.Windows.DependencyProperty.Register%2A> method for property registration.  
+- When registering your property, call the <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A> method instead of the normal <xref:System.Windows.DependencyProperty.Register%2A> method for property registration.  
   
--   When implementing the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" property, make sure that the wrapper too doesn't have a set implementation, so that there is no inconsistency in read-only state for the public wrapper you expose.  
+- When implementing the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" property, make sure that the wrapper too doesn't have a set implementation, so that there is no inconsistency in read-only state for the public wrapper you expose.  
   
--   The object returned by the read-only registration is <xref:System.Windows.DependencyPropertyKey> rather than <xref:System.Windows.DependencyProperty>. You should still store this field as a member but typically you would not make it a public member of the type.  
+- The object returned by the read-only registration is <xref:System.Windows.DependencyPropertyKey> rather than <xref:System.Windows.DependencyProperty>. You should still store this field as a member but typically you would not make it a public member of the type.  
   
  Whatever private field or value you have backing your read-only dependency property can of course be fully writable using whatever logic you decide. However, the most straightforward way to set the property either initially or as part of runtime logic is to use the property system's [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], rather than circumventing the property system and setting the private backing field directly. In particular, there is a signature of <xref:System.Windows.DependencyObject.SetValue%2A> that accepts a parameter of type <xref:System.Windows.DependencyPropertyKey>. How and where you set this value programmatically within your application logic will affect how you may wish to set access on the <xref:System.Windows.DependencyPropertyKey> created when you first registered the dependency property. If you handle this logic all within the class you could make it private, or if you require it to be set from other portions of the assembly you might set it internal. One approach is to call <xref:System.Windows.DependencyObject.SetValue%2A> within a class event handler of a relevant event that informs a class instance that the stored property value needs to be changed. Another approach is to tie dependency properties together by using paired <xref:System.Windows.PropertyChangedCallback> and <xref:System.Windows.CoerceValueCallback> callbacks as part of those properties' metadata during registration.  
   
  Because the <xref:System.Windows.DependencyPropertyKey> is private, and is not propagated by the property system outside of your code, a read-only dependency property does have better setting security than a read-write dependency property. For a read-write dependency property, the identifying field is explicitly or implicitly public and thus the property is widely settable. For more specifics, see [Dependency Property Security](dependency-property-security.md).  
   
 ## See also
+
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Styling and Templating](../controls/styling-and-templating.md)

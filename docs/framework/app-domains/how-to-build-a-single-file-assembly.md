@@ -27,7 +27,7 @@ The following procedures show how to create single-file assemblies using command
 
 ## To create an assembly with an .exe extension
 
-1.  At the command prompt, type the following command:
+1. At the command prompt, type the following command:
 
      \<*compiler command*> \<*module name*>
 
@@ -45,7 +45,7 @@ vbc myCode.vb
 
 ### To create an assembly with an .exe extension and specify the output file name
 
-1.  At the command prompt, type the following command:
+1. At the command prompt, type the following command:
 
      \<*compiler command*> **/out:**\<*file name*> \<*module name*>
 
@@ -66,7 +66,7 @@ vbc -out:myAssembly.exe myCode.vb
 
 ### To create a library assembly
 
-1.  At the command prompt, type the following command:
+1. At the command prompt, type the following command:
 
      \<*compiler command*> **-t:library** \<*module name*>
 

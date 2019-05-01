@@ -17,7 +17,7 @@ In a Windows application, the easiest way to navigate through records in a data 
   
 ### To increment the position in a data source  
   
-1.  Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource> for your bound data to the record position to go to. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the <xref:System.Windows.Forms.BindingSource> to increment the <xref:System.Windows.Forms.BindingSource.Position%2A> property when the `nextButton` is clicked. The <xref:System.Windows.Forms.BindingSource> is associated with the `Customers` table of a dataset `Northwind`.  
+1. Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource> for your bound data to the record position to go to. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the <xref:System.Windows.Forms.BindingSource> to increment the <xref:System.Windows.Forms.BindingSource.Position%2A> property when the `nextButton` is clicked. The <xref:System.Windows.Forms.BindingSource> is associated with the `Customers` table of a dataset `Northwind`.  
   
     > [!NOTE]
     >  Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] will not allow you to set the position to a value outside the bounds of the list. If it is important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.  
@@ -27,7 +27,7 @@ In a Windows application, the easiest way to navigate through records in a data 
   
 ### To check whether you have passed the end or beginning  
   
-1.  Create an event handler for the <xref:System.Windows.Forms.BindingSource.PositionChanged> event. In the handler, you can test whether the proposed position value has exceeded the actual data element count.  
+1. Create an event handler for the <xref:System.Windows.Forms.BindingSource.PositionChanged> event. In the handler, you can test whether the proposed position value has exceeded the actual data element count.  
   
      The following example illustrates how you can test whether you have reached the last data element. In the example, if you are at the last element, the **Next** button on the form is disabled.  
   
@@ -39,12 +39,13 @@ In a Windows application, the easiest way to navigate through records in a data 
   
 ### To find an item and set it as the current item  
   
-1.  Find the record you wish to set as the current item. You can do this using the <xref:System.Windows.Forms.BindingSource.Find%2A> method of the <xref:System.Windows.Forms.BindingSource>, if your data source implements <xref:System.ComponentModel.IBindingList>. Some examples of data sources that implement <xref:System.ComponentModel.IBindingList> are <xref:System.ComponentModel.BindingList%601> and <xref:System.Data.DataView>.  
+1. Find the record you wish to set as the current item. You can do this using the <xref:System.Windows.Forms.BindingSource.Find%2A> method of the <xref:System.Windows.Forms.BindingSource>, if your data source implements <xref:System.ComponentModel.IBindingList>. Some examples of data sources that implement <xref:System.ComponentModel.IBindingList> are <xref:System.ComponentModel.BindingList%601> and <xref:System.Data.DataView>.  
   
      [!code-csharp[System.Windows.Forms.NavigatingData#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/CS/Form1.cs#2)]
      [!code-vb[System.Windows.Forms.NavigatingData#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#2)]  
   
 ## See also
+
 - [Data Sources Supported by Windows Forms](data-sources-supported-by-windows-forms.md)
 - [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)
 - [Data Binding and Windows Forms](data-binding-and-windows-forms.md)

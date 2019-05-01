@@ -8,36 +8,36 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
 ## In this topic  
   
--   [Mapping service contract attributes to workflow attributes](contract-first-workflow-service-development.md#MappingAttributes)  
+- [Mapping service contract attributes to workflow attributes](contract-first-workflow-service-development.md#MappingAttributes)  
   
-    -   [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
+    - [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
   
-    -   [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
+    - [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
   
-    -   [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
+    - [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
   
-    -   [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
+    - [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
   
-    -   [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
+    - [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
   
--   [Additional Support and Implementation Information](contract-first-workflow-service-development.md#AdditionalSupport)  
+- [Additional Support and Implementation Information](contract-first-workflow-service-development.md#AdditionalSupport)  
   
-    -   [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
+    - [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
-    -   [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
+    - [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
   
 ## <a name="MappingAttributes"></a> Mapping service contract attributes to workflow attributes  
  The tables in the following sections specify the different WCF attributes and properties and how they are mapped to the messaging activities and properties in a contract-first workflow.  
   
--   [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
+- [Service Contract Attributes](contract-first-workflow-service-development.md#ServiceContract)  
   
--   [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
+- [Operation Contract Attributes](contract-first-workflow-service-development.md#OperationContract)  
   
--   [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
+- [Message Contract Attributes](contract-first-workflow-service-development.md#MessageContract)  
   
--   [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
+- [Data Contract Attributes](contract-first-workflow-service-development.md#DataContract)  
   
--   [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
+- [Fault Contract Attributes](contract-first-workflow-service-development.md#FaultContract)  
   
 ### <a name="ServiceContract"></a> Service Contract Attributes  
   
@@ -103,22 +103,22 @@ Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Windows Work
   
 ## <a name="AdditionalSupport"></a> Additional Support and Implementation Information  
   
--   [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
+- [Unsupported service contract features](contract-first-workflow-service-development.md#UnsupportedFeatures)  
   
--   [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
+- [Generation of configured messaging activities](contract-first-workflow-service-development.md#ActivityGeneration)  
   
 ### <a name="UnsupportedFeatures"></a> Unsupported service contract features  
   
--   Use of TPL (Task Parallel Library) Tasks in contracts is not supported.  
+- Use of TPL (Task Parallel Library) Tasks in contracts is not supported.  
   
--   Inheritance in Service Contracts is not supported.  
+- Inheritance in Service Contracts is not supported.  
   
 ### <a name="ActivityGeneration"></a> Generation of configured messaging activities  
  Two public static methods are added to the <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> activities to support the generation of pre-configured message activities when using contract-first workflow services.  
   
--   <xref:System.ServiceModel.Activities.Receive.FromOperationDescription%2A?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Activities.Receive.FromOperationDescription%2A?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Activities.SendReply.FromOperationDescription%2A?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Activities.SendReply.FromOperationDescription%2A?displayProperty=nameWithType>  
   
  The activity generated by these methods should pass contract validation, and therefore these methods are used internally as part of the validation logic for <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply>. The <xref:System.ServiceModel.Activities.Receive.OperationName%2A>,  <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>,  <xref:System.ServiceModel.Activities.Receive.Action%2A>,  <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>,  <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>, and <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> are all pre-configured to match the imported contract. In the content properties page for the activities in the workflow designer, the **Message** or **Parameters** sections are also pre-configured to match the contract.  
   

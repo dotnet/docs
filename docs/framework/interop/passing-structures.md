@@ -23,11 +23,11 @@ Many unmanaged functions expect you to pass, as a parameter to the function, mem
   
  The table describes the following guidelines for platform invoke declarations:  
   
--   Use a structure passed by value when the unmanaged function demands no indirection.  
+- Use a structure passed by value when the unmanaged function demands no indirection.  
   
--   Use either a structure passed by reference or a class passed by value when the unmanaged function demands one level of indirection.  
+- Use either a structure passed by reference or a class passed by value when the unmanaged function demands one level of indirection.  
   
--   Use a class passed by reference when the unmanaged function demands two levels of indirection.  
+- Use a class passed by reference when the unmanaged function demands two levels of indirection.  
   
 ## Declaring and Passing Structures  
  The following example shows how to define the `Point` and `Rect` structures in managed code, and pass the types as parameter to the **PtInRect** function in the User32.dll file. **PtInRect** has the following unmanaged signature:  
@@ -172,7 +172,7 @@ public class TestPlatformInvoke
 ```  
   
 ## See also
+
 - [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
-- <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - <xref:System.Runtime.InteropServices.FieldOffsetAttribute>

@@ -8,16 +8,16 @@ An *association end* identifies the [entity type](../../../../docs/framework/dat
   
  An association end definition contains the following information:  
   
--   One of the entity types involved in the association. (Required)  
+- One of the entity types involved in the association. (Required)  
   
     > [!NOTE]
     >  For a given association, the entity type specified for each association end can be the same. This creates a self-association.  
   
--   An [association end multiplicity](../../../../docs/framework/data/adonet/association-end-multiplicity.md) that indicates the number of entity type instances that can be at one end of the association. An association end multiplicity can have a value of one (1), zero or one (0..1), or many (\*).  
+- An [association end multiplicity](../../../../docs/framework/data/adonet/association-end-multiplicity.md) that indicates the number of entity type instances that can be at one end of the association. An association end multiplicity can have a value of one (1), zero or one (0..1), or many (\*).  
   
--   A name for the association end. (Optional)  
+- A name for the association end. (Optional)  
   
--   Information about operations that are performed on the association end, such as cascade on delete. (Optional)  
+- Information about operations that are performed on the association end, such as cascade on delete. (Optional)  
   
 ## Example  
  The diagram below shows a conceptual model with two associations: `PublishedBy` and `WrittenBy`. The association ends for the `PublishedBy` association are the `Book` and `Publisher` entity types. The multiplicity of the `Publisher` end is one (1) and the multiplicity of the `Book` end is many (\*), indicating that a publisher publishes many books and a book is published by one publisher.  
@@ -29,5 +29,6 @@ An *association end* identifies the [entity type](../../../../docs/framework/dat
  [!code-xml[EDM_Example_Model#AssociationEnd](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#associationend)]  
   
 ## See also
+
 - [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

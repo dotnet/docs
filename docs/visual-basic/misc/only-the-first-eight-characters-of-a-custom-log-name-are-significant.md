@@ -8,7 +8,7 @@ When checking event log names for uniqueness, only the first eight characters ar
   
 ## To correct this error  
   
--   Give the event log a name in which the first eight characters are unique.  
+- Give the event log a name in which the first eight characters are unique.  
   
 ## See also
 

@@ -8,9 +8,9 @@ An *entity container* is a logical grouping of [entity sets](../../../../docs/fr
   
  The following must be true of an entity container defined in a conceptual model:  
   
--   At least one entity container must be defined in each conceptual model.  
+- At least one entity container must be defined in each conceptual model.  
   
--   The entity container must have a unique name within each conceptual model.  
+- The entity container must have a unique name within each conceptual model.  
   
  An entity container can define entity sets or association sets that use entity types or associations defined in one or more namespaces. For more information, see [Entity Data Model: Namespaces](../../../../docs/framework/data/adonet/entity-data-model-namespaces.md).  
   
@@ -24,5 +24,6 @@ An *entity container* is a logical grouping of [entity sets](../../../../docs/fr
  [!code-xml[EDM_Example_Model#EntityContainerExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entitycontainerexample)]  
   
 ## See also
+
 - [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

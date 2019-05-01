@@ -13,9 +13,9 @@ ms.author: "mairaw"
   
  This category consists of the following events:  
   
--   [ILStubGenerated Event](#ilstubgenerated_event)  
+- [ILStubGenerated Event](#ilstubgenerated_event)  
   
--   [ILStubCacheHit Event](#ilstubcachehit_event)  
+- [ILStubCacheHit Event](#ilstubcachehit_event)  
   
 <a name="ilstubgenerated_event"></a>   
 ## ILStubGenerated Event  
@@ -78,4 +78,5 @@ ms.author: "mairaw"
  [Back to top](#top)  
   
 ## See also
+
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

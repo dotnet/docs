@@ -27,9 +27,9 @@ HRESULT GetGenericDictionaryInfo(
   
  The map consists of two top-level sections:  
   
--   A [directory](#Directory) containing the relative virtual addresses (RVA) of all dictionaries included in this map.  
+- A [directory](#Directory) containing the relative virtual addresses (RVA) of all dictionaries included in this map.  
   
--   A byte-aligned [heap](#Heap) that contains object instantiation information. It starts immediately after the last directory entry.  
+- A byte-aligned [heap](#Heap) that contains object instantiation information. It starts immediately after the last directory entry.  
   
 <a name="Directory"></a>   
 ## The Directory  
@@ -37,13 +37,13 @@ HRESULT GetGenericDictionaryInfo(
   
  The directory portion of the generic dictionary map has the following structure:  
   
--   The first 4 bytes contains the number of dictionary entries (that is, the number of relative virtual addresses in the dictionary). We will refer to this value as *N*. If the high bit is set, the entries are sorted by relative virtual address in ascending order.  
+- The first 4 bytes contains the number of dictionary entries (that is, the number of relative virtual addresses in the dictionary). We will refer to this value as *N*. If the high bit is set, the entries are sorted by relative virtual address in ascending order.  
   
--   The *N* directory entries follow. Each entry consists of 8 bytes, in two 4-byte segments:  
+- The *N* directory entries follow. Each entry consists of 8 bytes, in two 4-byte segments:  
   
-    -   Bytes 0-3: RVA; the dictionary's relative virtual address.  
+    - Bytes 0-3: RVA; the dictionary's relative virtual address.  
   
-    -   Bytes 4-7: Offset; an offset relative to the start of the heap.  
+    - Bytes 4-7: Offset; an offset relative to the start of the heap.  
   
 <a name="Heap"></a>   
 ## The Heap  
@@ -57,11 +57,11 @@ Heap Size = Stream.Length – (Directory Size + 4)
   
  The format for each instantiation information item on the heap is:  
   
--   The length of this instantiation information item in bytes in compressed ECMA metadata format. The value excludes this length information.  
+- The length of this instantiation information item in bytes in compressed ECMA metadata format. The value excludes this length information.  
   
--   The number of generic instantiation types, or *T*, in compressed ECMA metadata format.  
+- The number of generic instantiation types, or *T*, in compressed ECMA metadata format.  
   
--   *T* types, each represented in ECMA type signature format.  
+- *T* types, each represented in ECMA type signature format.  
   
  The inclusion of the length for each heap element enables simple sorting of the directory section without affecting the heap.  
   
@@ -75,5 +75,6 @@ Heap Size = Stream.Length – (Directory Size + 4)
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugSymbolProvider2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

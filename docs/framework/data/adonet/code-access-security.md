@@ -21,11 +21,11 @@ The .NET Framework offers role-based security as well as code access security (C
   
  There are three types of code access permissions:  
   
--   `Code access permissions` derive from the <xref:System.Security.CodeAccessPermission> class. Permissions are required in order to access protected resources, such as files and environment variables, and to perform protected operations, such as accessing unmanaged code.  
+- `Code access permissions` derive from the <xref:System.Security.CodeAccessPermission> class. Permissions are required in order to access protected resources, such as files and environment variables, and to perform protected operations, such as accessing unmanaged code.  
   
--   `Identity permissions` represent characteristics that identify an assembly. Permissions are granted to an assembly based on evidence, which can include items such as a digital signature or where the code originated. Identity permissions also derive from the <xref:System.Security.CodeAccessPermission> base class.  
+- `Identity permissions` represent characteristics that identify an assembly. Permissions are granted to an assembly based on evidence, which can include items such as a digital signature or where the code originated. Identity permissions also derive from the <xref:System.Security.CodeAccessPermission> base class.  
   
--   `Role-based security permissions` are based on whether a principal has a specified identity or is a member of a specified role. The <xref:System.Security.Permissions.PrincipalPermission> class allows both declarative and imperative permission checks against the active principal.  
+- `Role-based security permissions` are based on whether a principal has a specified identity or is a member of a specified role. The <xref:System.Security.Permissions.PrincipalPermission> class allows both declarative and imperative permission checks against the active principal.  
   
  To determine whether code is authorized to access a resource or perform an operation, the runtime's security system traverses the call stack, comparing the granted permissions of each caller to the permission being demanded. If any caller in the call stack does not have the demanded permission, a <xref:System.Security.SecurityException> is thrown and access is refused.  
   
@@ -189,6 +189,7 @@ Failed, as expected: Request failed.
  The .NET Framework also supports backward compatibility to existing COM components by providing access through COM interop. You can incorporate COM components into a .NET Framework application by using COM interop tools to import the relevant COM types. Once imported, the COM types are ready to use. COM interop also enables COM clients to access managed code by exporting assembly metadata to a type library and registering the managed component as a COM component. For more information, see [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx).  
   
 ## See also
+
 - [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Security in Native and .NET Framework Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
 - [Role-Based Security](../../../../docs/standard/security/role-based-security.md)

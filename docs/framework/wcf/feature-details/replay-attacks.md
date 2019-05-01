@@ -11,11 +11,11 @@ A *replay attack* occurs when an attacker copies a stream of messages between tw
   
  Reflection attacks are mitigated by default because the WCF service model adds a signed message ID to request messages and expects a signed `relates-to` header on response messages. Consequently, the request message cannot be replayed as a response. In secure reliable message (RM) scenarios, reflection attacks are mitigated because:  
   
--   The create sequence and create sequence response message schemas are different.  
+- The create sequence and create sequence response message schemas are different.  
   
--   For simplex sequences, sequence messages the client sends cannot be replayed back to it because the client cannot understand such messages.  
+- For simplex sequences, sequence messages the client sends cannot be replayed back to it because the client cannot understand such messages.  
   
--   For duplex sequences, the two sequence IDs must be unique. Thus, an outgoing sequence message cannot be replayed back as an incoming sequence message (all sequence headers and bodies are signed, too).  
+- For duplex sequences, the two sequence IDs must be unique. Thus, an outgoing sequence message cannot be replayed back as an incoming sequence message (all sequence headers and bodies are signed, too).  
   
  The only bindings that are susceptible to reflection attacks are those without WS-Addressing: custom bindings that have WS-Addressing disabled and use the symmetric key-based security. The <xref:System.ServiceModel.BasicHttpBinding> does not use WS-Addressing by default, but it does not use symmetric key-based security in a way that allows it to be vulnerable to this attack.  
   
@@ -26,11 +26,12 @@ A *replay attack* occurs when an attacker copies a stream of messages between tw
   
  Mitigations include:  
   
--   Use message mode security with stateful security context tokens (with or without secure conversation enabled). For more information, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+- Use message mode security with stateful security context tokens (with or without secure conversation enabled). For more information, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
   
--   Configure the service to use transport-level security.  
+- Configure the service to use transport-level security.  
   
 ## See also
+
 - [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
 - [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
 - [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)

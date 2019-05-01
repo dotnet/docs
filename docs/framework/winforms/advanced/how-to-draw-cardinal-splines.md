@@ -15,7 +15,7 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
   
 ### Drawing a Bell-Shaped Cardinal Spline  
   
--   The following example draws a bell-shaped cardinal spline that passes through five designated points. The following illustration shows the curve and five points.  
+- The following example draws a bell-shaped cardinal spline that passes through five designated points. The following illustration shows the curve and five points.  
   
      ![Diagram that shows a bell-shaped cardinal spline.](./media/how-to-draw-cardinal-splines/bell-shaped-cardinal-spline.png)  
   
@@ -24,7 +24,7 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
   
 ### Drawing a Closed Cardinal Spline  
   
--   Use the <xref:System.Drawing.Graphics.DrawClosedCurve%2A> method of the <xref:System.Drawing.Graphics> class to draw a closed cardinal spline. In a closed cardinal spline, the curve continues through the last point in the array and connects with the first point in the array. The following example draws a closed cardinal spline that passes through six designated points. The following illustration shows the closed spline along with the six points:  
+- Use the <xref:System.Drawing.Graphics.DrawClosedCurve%2A> method of the <xref:System.Drawing.Graphics> class to draw a closed cardinal spline. In a closed cardinal spline, the curve continues through the last point in the array and connects with the first point in the array. The following example draws a closed cardinal spline that passes through six designated points. The following illustration shows the closed spline along with the six points:  
   
  ![Diagram that shows a closed cardinal spline.](./media/how-to-draw-cardinal-splines/closed-cardinal-spine.png)  
   
@@ -33,7 +33,7 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
   
 ### Changing the Bend of a Cardinal Spline  
   
--   Change the way a cardinal spline bends by passing a tension argument to the <xref:System.Drawing.Graphics.DrawCurve%2A> method. The following example draws three cardinal splines that pass through the same set of points. The following illustration shows the three splines along with their tension values. Note that when the tension is 0, the points are connected by straight lines.  
+- Change the way a cardinal spline bends by passing a tension argument to the <xref:System.Drawing.Graphics.DrawCurve%2A> method. The following example draws three cardinal splines that pass through the same set of points. The following illustration shows the three splines along with their tension values. Note that when the tension is 0, the points are connected by straight lines.  
   
  ![Diagram that shows three cardinal splines.](./media/how-to-draw-cardinal-splines/three-cardinal-splines.png)  
   
@@ -44,5 +44,6 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
  The preceding examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)
 - [Constructing and Drawing Curves](constructing-and-drawing-curves.md)

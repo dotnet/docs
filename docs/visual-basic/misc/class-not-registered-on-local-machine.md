@@ -10,7 +10,7 @@ This error is usually encountered as a result of a corrupted file. You may need 
   
 ## To correct this error  
   
--   Reinstall Visual Studio.  
+- Reinstall Visual Studio.  
   
 ## See also
 

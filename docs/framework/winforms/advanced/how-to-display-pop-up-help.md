@@ -22,21 +22,22 @@ One way to display Help on Windows Forms is through the **Help** button, located
   
 ### To display pop-up Help  
   
-1.  Drag a [HelpProvider](../controls/helpprovider-component-windows-forms.md) component from the Toolbox to your form.  
+1. Drag a [HelpProvider](../controls/helpprovider-component-windows-forms.md) component from the Toolbox to your form.  
   
      It will sit in the tray at the bottom of the Windows Forms Designer.  
   
-2.  In the Properties window, set the <xref:System.Windows.Forms.Form.HelpButton%2A> property to `true`. This will display a button with a question mark in it on the right side of the title bar of the form.  
+2. In the Properties window, set the <xref:System.Windows.Forms.Form.HelpButton%2A> property to `true`. This will display a button with a question mark in it on the right side of the title bar of the form.  
   
-3.  In order for the <xref:System.Windows.Forms.Form.HelpButton%2A> to display, the form's <xref:System.Windows.Forms.Form.MinimizeBox%2A> and <xref:System.Windows.Forms.Form.MaximizeBox%2A> properties must be set to `false`, the <xref:System.Windows.Forms.Form.ControlBox%2A> property set to `true`, and the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to one of the following values: <xref:System.Windows.Forms.FormBorderStyle.FixedSingle>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D>, <xref:System.Windows.Forms.FormBorderStyle.FixedDialog> or <xref:System.Windows.Forms.FormBorderStyle.Sizable>.  
+3. In order for the <xref:System.Windows.Forms.Form.HelpButton%2A> to display, the form's <xref:System.Windows.Forms.Form.MinimizeBox%2A> and <xref:System.Windows.Forms.Form.MaximizeBox%2A> properties must be set to `false`, the <xref:System.Windows.Forms.Form.ControlBox%2A> property set to `true`, and the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to one of the following values: <xref:System.Windows.Forms.FormBorderStyle.FixedSingle>, <xref:System.Windows.Forms.FormBorderStyle.Fixed3D>, <xref:System.Windows.Forms.FormBorderStyle.FixedDialog> or <xref:System.Windows.Forms.FormBorderStyle.Sizable>.  
   
-4.  Select the control for which you want to show help on your form and set the Help string in the Properties window. This is the string of text that will be displayed in a window similar to a [ToolTip](../controls/tooltip-component-windows-forms.md).  
+4. Select the control for which you want to show help on your form and set the Help string in the Properties window. This is the string of text that will be displayed in a window similar to a [ToolTip](../controls/tooltip-component-windows-forms.md).  
   
-5.  Press **F5**.  
+5. Press **F5**.  
   
-6.  Press the **Help** button on the title bar and click the control on which you set the Help string.  
+6. Press the **Help** button on the title bar and click the control on which you set the Help string.  
   
 ## See also
+
 - [Control Help Using ToolTips](control-help-using-tooltips.md)
 - [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
 - [Windows Forms](../index.md)

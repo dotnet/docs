@@ -17,15 +17,15 @@ You can set up a button that you can use to cancel an async application if you d
 ### Downloading the Example  
  You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
-1.  Decompress the file that you downloaded, and then start Visual Studio.  
+1. Decompress the file that you downloaded, and then start Visual Studio.  
   
-2.  On the menu bar, choose **File**, **Open**, **Project/Solution**.  
+2. On the menu bar, choose **File**, **Open**, **Project/Solution**.  
   
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningVB.  
+3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningVB.  
   
-4.  In **Solution Explorer**, open the shortcut menu for the **CancelATask** project, and then choose **Set as StartUp Project**.  
+4. In **Solution Explorer**, open the shortcut menu for the **CancelATask** project, and then choose **Set as StartUp Project**.  
   
-5.  Choose the F5 key to run the project.  
+5. Choose the F5 key to run the project.  
   
      Choose the Ctrl+F5 keys to run the project without debugging it.  
   
@@ -38,7 +38,7 @@ You can set up a button that you can use to cancel an async application if you d
   
  Then add the following changes to the MainWindow.xaml.vb file of that project.  
   
-1.  Declare a `CancellationTokenSource` variable, `cts`, that’s in scope for all methods that access it.  
+1. Declare a `CancellationTokenSource` variable, `cts`, that’s in scope for all methods that access it.  
   
     ```vb  
     Class MainWindow  
@@ -47,7 +47,7 @@ You can set up a button that you can use to cancel an async application if you d
         Dim cts As CancellationTokenSource  
     ```  
   
-2.  Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.  
+2. Add the following event handler for the **Cancel** button. The event handler uses the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method to notify `cts` when the user requests cancellation.  
   
     ```vb  
     ' ***Add an event handler for the Cancel button.  
@@ -59,16 +59,16 @@ You can set up a button that you can use to cancel an async application if you d
     End Sub  
     ```  
   
-3.  Make the following changes in the event handler for the **Start** button, `startButton_Click`.  
+3. Make the following changes in the event handler for the **Start** button, `startButton_Click`.  
   
-    -   Instantiate the `CancellationTokenSource`, `cts`.  
+    - Instantiate the `CancellationTokenSource`, `cts`.  
   
         ```vb  
         ' ***Instantiate the CancellationTokenSource.  
         cts = New CancellationTokenSource()  
         ```  
   
-    -   In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.  
+    - In the call to `AccessTheWebAsync`, which downloads the contents of a specified website, send the <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=nameWithType> property of `cts` as an argument. The `Token` property propagates the message if cancellation is requested. Add a catch block that displays a message if the user chooses to cancel the download operation. The following code shows the changes.  
   
         ```vb  
         Try  
@@ -87,7 +87,7 @@ You can set up a button that you can use to cancel an async application if you d
         End Try  
         ```  
   
-4.  In `AccessTheWebAsync`, use the  <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> overload of the `GetAsync` method in the <xref:System.Net.Http.HttpClient> type to download the contents of a website. Pass `ct`, the <xref:System.Threading.CancellationToken> parameter of `AccessTheWebAsync`, as the second argument. The token carries the message if the user chooses the **Cancel** button.  
+4. In `AccessTheWebAsync`, use the  <xref:System.Net.Http.HttpClient.GetAsync%28System.String%2CSystem.Threading.CancellationToken%29?displayProperty=nameWithType> overload of the `GetAsync` method in the <xref:System.Net.Http.HttpClient> type to download the contents of a website. Pass `ct`, the <xref:System.Threading.CancellationToken> parameter of `AccessTheWebAsync`, as the second argument. The token carries the message if the user chooses the **Cancel** button.  
   
      The following code shows the changes in `AccessTheWebAsync`.  
   
@@ -115,7 +115,7 @@ You can set up a button that you can use to cancel an async application if you d
     End Function  
     ```  
   
-5.  If you don’t cancel the program, it produces the following output.  
+5. If you don’t cancel the program, it produces the following output.  
   
     ```  
     Ready to download.  
@@ -135,15 +135,15 @@ You can set up a button that you can use to cancel an async application if you d
 ### Downloading the Example  
  You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
-1.  Decompress the file that you downloaded, and then start Visual Studio.  
+1. Decompress the file that you downloaded, and then start Visual Studio.  
   
-2.  On the menu bar, choose **File**, **Open**, **Project/Solution**.  
+2. On the menu bar, choose **File**, **Open**, **Project/Solution**.  
   
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningVB.  
+3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningVB.  
   
-4.  In **Solution Explorer**, open the shortcut menu for the **CancelAListOfTasks** project, and then choose **Set as StartUp Project**.  
+4. In **Solution Explorer**, open the shortcut menu for the **CancelAListOfTasks** project, and then choose **Set as StartUp Project**.  
   
-5.  Choose the F5 key to run the project.  
+5. Choose the F5 key to run the project.  
   
      Choose the Ctrl+F5 keys to run the project without debugging it.  
   
@@ -152,7 +152,7 @@ You can set up a button that you can use to cancel an async application if you d
 ### Building the Example  
  To extend the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelATask** as the **StartUp Project**. Add the following changes to that project. Asterisks mark the changes in the program.  
   
-1.  Add a method to create a list of web addresses.  
+1. Add a method to create a list of web addresses.  
   
     ```vb  
     ' ***Add a method that creates a list of web addresses.  
@@ -172,14 +172,14 @@ You can set up a button that you can use to cancel an async application if you d
     End Function  
     ```  
   
-2.  Call the method in `AccessTheWebAsync`.  
+2. Call the method in `AccessTheWebAsync`.  
   
     ```vb  
     ' ***Call SetUpURLList to make a list of web addresses.  
     Dim urlList As List(Of String) = SetUpURLList()  
     ```  
   
-3.  Add the following loop in `AccessTheWebAsync` to process each web address in the list.  
+3. Add the following loop in `AccessTheWebAsync` to process each web address in the list.  
   
     ```vb  
     ' ***Add a loop to process the list of web addresses.  
@@ -197,7 +197,7 @@ You can set up a button that you can use to cancel an async application if you d
     Next  
     ```  
   
-4.  Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.  
+4. Because `AccessTheWebAsync` displays the lengths, the method doesn't need to return anything. Remove the return statement, and change the return type of the method to <xref:System.Threading.Tasks.Task> instead of <xref:System.Threading.Tasks.Task%601>.  
   
     ```vb  
     Async Function AccessTheWebAsync(ct As CancellationToken) As Task  
@@ -209,7 +209,7 @@ You can set up a button that you can use to cancel an async application if you d
     Await AccessTheWebAsync(cts.Token)  
     ```  
   
-5.  If you don’t cancel the program, it produces the following output.  
+5. If you don’t cancel the program, it produces the following output.  
   
     ```  
     Length of the downloaded string: 35939.  
@@ -449,6 +449,7 @@ End Class
 ```  
   
 ## See also
+
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)

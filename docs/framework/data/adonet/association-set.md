@@ -10,11 +10,11 @@ An *association set* is a logical container for [association](../../../../docs/f
   
  A definition for an association set contains the following information:  
   
--   The association set name. (Required)  
+- The association set name. (Required)  
   
--   The association of which it will contain instances. (Required)  
+- The association of which it will contain instances. (Required)  
   
--   Two [association set ends](../../../../docs/framework/data/adonet/association-set-end.md).  
+- Two [association set ends](../../../../docs/framework/data/adonet/association-set-end.md).  
   
 ## Example  
  The diagram below shows a conceptual model with two associations: `PublishedBy`, and `WrittenBy`. Although information about association sets is not conveyed in the diagram, the next diagram shows an example of association sets and entity sets based on this model.  
@@ -34,6 +34,7 @@ An *association set* is a logical container for [association](../../../../docs/f
  [!code-xml[EDM_Example_Model#MultipleAssociationSets](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#multipleassociationsets)]  
   
 ## See also
+
 - [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
 - [foreign key property](../../../../docs/framework/data/adonet/foreign-key-property.md)

@@ -11,11 +11,11 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
   
  A property definition contains the following information:  
   
--   A property name. (Required)  
+- A property name. (Required)  
   
--   A property type. (Required)  
+- A property type. (Required)  
   
--   A set of [facets](../../../../docs/framework/data/adonet/facet.md). (Optional)  
+- A set of [facets](../../../../docs/framework/data/adonet/facet.md). (Optional)  
   
  A property can contain primitive data (such as a string, an integer, or a Boolean value), or structured data (such as a complex type). Properties that are of primitive type are also called scalar properties. For more information, see [Entity Data Model: Primitive Data Types](../../../../docs/framework/data/adonet/entity-data-model-primitive-data-types.md).  
   
@@ -36,5 +36,6 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
  [!code-xml[EDM_Example_Model#ComplexTypeExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books2.edmx#complextypeexample)]  
   
 ## See also
+
 - [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
 - [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

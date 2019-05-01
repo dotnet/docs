@@ -10,10 +10,11 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
   
 ## To correct this error  
   
-1.  Check the documentation of the application that created the object for limitations on the use of automation with this class of object.  
+1. Check the documentation of the application that created the object for limitations on the use of automation with this class of object.  
   
-2.  If you changed a project from .dll to .exe or vice versa, you must manually unregister the old .dll or .exe.  
+2. If you changed a project from .dll to .exe or vice versa, you must manually unregister the old .dll or .exe.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

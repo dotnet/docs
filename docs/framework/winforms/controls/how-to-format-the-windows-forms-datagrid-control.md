@@ -27,7 +27,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
   
 ### To establish a default style for the DataGrid control  
   
-1.  Set the following properties as appropriate:  
+1. Set the following properties as appropriate:  
   
     |Property|Description|  
     |--------------|-----------------|  
@@ -62,19 +62,19 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
   
 ### To set the table and column style of a data table programmatically  
   
-1.  Create a new table style and set its properties.  
+1. Create a new table style and set its properties.  
   
-2.  Create a column style and set its properties.  
+2. Create a column style and set its properties.  
   
-3.  Add the column style to the table style's column styles collection.  
+3. Add the column style to the table style's column styles collection.  
   
-4.  Add the table style to the data grid's table styles collection.  
+4. Add the table style to the data grid's table styles collection.  
   
-5.  In the example below, create an instance of a new <xref:System.Windows.Forms.DataGridTableStyle> and set its <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property.  
+5. In the example below, create an instance of a new <xref:System.Windows.Forms.DataGridTableStyle> and set its <xref:System.Windows.Forms.DataGridTableStyle.MappingName%2A> property.  
   
-6.  Create a new instance of a **GridColumnStyle** and set its **MappingName** (and some other layout and display properties).  
+6. Create a new instance of a **GridColumnStyle** and set its **MappingName** (and some other layout and display properties).  
   
-7.  Repeat steps 2 through 6 for each column style you want to create.  
+7. Repeat steps 2 through 6 for each column style you want to create.  
   
      The following example illustrates how a <xref:System.Windows.Forms.DataGridTextBoxColumn> is created, because a name is to be displayed in the column. Additionally, you add the column style to the <xref:System.Windows.Forms.GridColumnStylesCollection> of the table style, and you add the table style to the <xref:System.Windows.Forms.GridTableStylesCollection> of the data grid.  
   
@@ -148,6 +148,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.GridTableStylesCollection>
 - <xref:System.Windows.Forms.GridColumnStylesCollection>
 - <xref:System.Windows.Forms.DataGrid>

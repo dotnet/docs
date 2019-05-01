@@ -13,8 +13,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)]. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
-  
-  
+
 <a name="types_of_documents"></a>   
 ## Types of Documents  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] divides documents into two broad categories based on their intended use; these document categories are termed "fixed documents" and "flow documents."  
@@ -56,11 +55,11 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
   
--   [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents conforming to the [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)].  
+- [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents conforming to the [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)].  
   
--   Microsoft Office "12" open XML format documents (.docx).  
+- Microsoft Office "12" open XML format documents (.docx).  
   
--   Custom storage formats for your own application design.  
+- Custom storage formats for your own application design.  
   
  Based on the packaging APIs, an <xref:System.Windows.Xps.Packaging.XpsDocument> is specifically designed for storing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] fixed content documents. An <xref:System.Windows.Xps.Packaging.XpsDocument> is a self-contained document that can be opened in a viewer, displayed in a <xref:System.Windows.Controls.DocumentViewer> control, routed to a print spool, or output directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
@@ -84,9 +83,9 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 #### PackageDigitalSignatures  
  For security, a <xref:System.IO.Packaging.PackageDigitalSignature> ("digital signature") can be associated with parts within a package. A <xref:System.IO.Packaging.PackageDigitalSignature> incorporates a [509] that provides two features:  
   
-1.  Identifies and authenticates the originator of the part.  
+1. Identifies and authenticates the originator of the part.  
   
-2.  Validates that the part has not been modified.  
+2. Validates that the part has not been modified.  
   
  The digital signature does not preclude a part from being modified, but a validation check against the digital signature will fail if the part is altered in any way. The application can then take appropriate action—for example, block opening the part or notify the user that the part has been modified and is not secure.  
   
@@ -94,17 +93,17 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 #### PackageRelationships  
  A <xref:System.IO.Packaging.PackageRelationship> ("relationship") provides a mechanism for associating additional information with the package or a part within the package. A relationship is a package-level facility that can associate additional information with a part without modifying the actual part content. Inserting new data directly into the part content of is usually not practical in many cases:  
   
--   The actual type of the part and its content schema is not known.  
+- The actual type of the part and its content schema is not known.  
   
--   Even if known, the content schema might not provide a means for adding new information.  
+- Even if known, the content schema might not provide a means for adding new information.  
   
--   The part might be digitally signed or encrypted, precluding any modification.  
+- The part might be digitally signed or encrypted, precluding any modification.  
   
  Package relationships provide a discoverable means for adding and associating additional information with individual parts or with the entire package. Package relationships are used for two primary functions:  
   
-1.  Defining dependency relationships from one part to another part.  
+1. Defining dependency relationships from one part to another part.  
   
-2.  Defining information relationships that add notes or other data related to the part.  
+2. Defining information relationships that add notes or other data related to the part.  
   
  A <xref:System.IO.Packaging.PackageRelationship> provides a quick, discoverable means to define dependencies and add other information associated with a part of the package or the package as a whole.  
   
@@ -120,15 +119,16 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ## XPS Documents  
  [!INCLUDE[TLA#tla_xps](../../../../includes/tlasharptla-xps-md.md)] document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] is also the native [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#PackageRelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
   
--   Reading, writing, and storing fixed-document content and resources as a single, portable, and easy-to-distribute file.  
+- Reading, writing, and storing fixed-document content and resources as a single, portable, and easy-to-distribute file.  
   
--   Displaying documents with the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Viewer application.  
+- Displaying documents with the [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] Viewer application.  
   
--   Outputting documents in the native print spool output format of [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  
+- Outputting documents in the native print spool output format of [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  
   
--   Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
+- Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
 ## See also
+
 - <xref:System.Windows.Documents.FixedDocument>
 - <xref:System.Windows.Documents.FlowDocument>
 - <xref:System.Windows.Xps.Packaging.XpsDocument>

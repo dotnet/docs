@@ -1,7 +1,7 @@
 ---
 title: "<AppContextSwitchOverrides> Element"
 ms.custom: "updateeachrelease"
-ms.date: "03/07/2019"
+ms.date: "04/18/2019"
 helpviewer_keywords: 
   - "AppContextSwitchOverrides"
   - "compatibility switches"
@@ -90,7 +90,9 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Security.ClaimsIdentity.`<br/>`SetActorAsReferenceWhenCopyingClaimsIdentity`|Controls whether the <xref:System.Security.Claims.ClaimsIdentity.%23ctor%28System.Security.Principal.IIdentity%29?displayProperty=nameWithType> constructor sets the  new object's <xref:System.Security.Claims.ClaimsIdentity.Actor%2A?displayProperty=nameWithType> property with an existing object reference. For more information, see [Mitigation: ClaimsIdentity Constructor](../../../migration-guide/mitigation-claimsidentity-constructor.md).|.NET Framework 4.6.2|  
 |`Switch.System.Security.Cryptography.`<br/>`AesCryptoServiceProvider.DontCorrectlyResetDecryptor`|Controls whether the attempt to reuse an <xref:System.Security.Cryptography.AesCryptoServiceProvider> decryptor throws a <xref:System.Security.Cryptography.CryptographicException>. For more information, see [AesCryptoServiceProvider decryptor provides a reusable transform](../../../migration-guide/retargeting/4.6.1-4.6.2.md#aescryptoserviceprovider-decryptor-provides-a-reusable-transform).|.NET Framework 4.6.2|
 |`Switch.System.Security.Cryptography.`<br/>`DoNotAddrOfCspParentWindowHandle`|Controls whether the value of the [CspParameters.ParentWindowHandle](xref:System.Security.Cryptography.CspParameters.ParentWindowHandle) property is an [IntPtr](xref:System.IntPtr) that represents the memory location of a window handle, or whether it is a window handle (an HWND). For more information, see [Mitigation: CspParameters.ParentWindowHandle Expects an HWND](../../../migration-guide/retargeting/4.6.2-4.7.md#cspparametersparentwindowhandle-now-expects-hwnd-value). |.NET Framework 4.7|   
+|`Switch.System.Security.Cryptography.`<br/>`UseLegacyFipsThrow`|Controls whether the use of managed cryptography classes in FIPS mode throws a <xref:System.Security.Cryptography.CryptographicException> (`true`) or relies on the implementation of system libraries (`false`).|.NET Framework 4.8|
 |`Switch.System.Security.Cryptography.Pkcs.`<br/>`UseInsecureHashAlgorithms`|Determines whether the default for some SignedCMS operations is SHA1 or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|.NET Framework 4.7.1|
+|`Switch.System.Security.Cryptography.X509Certificates.`<br/>`ECDsaCertificateExtensions.UseLegacyPublicKeyReader`|Controls whether the <xref:System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions.GetECDsaPublicKey%2A?displayProperty=nameWithtype> method correctly handles all named curves supported by the operating system (`false`) or reverts to legacy behavior.|.NET Framework 4.8|
 |`Switch.System.Security.Cryptography.Xml.`<br/>`UseInsecureHashAlgorithms`|Determines whether the default for some SignedXML operations is SHA1 or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|.NET Framework 4.7.1|
 |`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|Determines whether the `TransportWithMessageCredential` security mode allows messages with an unsigned "to" header. This is an opt-in switch. For more information, see [Runtime Changes in the .NET Framework 4.6.1](../../../migration-guide/runtime/4.5.2-4.6.1.md#windows-communication-foundation-wcf).|.NET Framework 4.6.1| 
 |`Switch.System.ServiceModel.`<br/>`DisableAddressHeaderCollectionValidation`>|Controls whether the <xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})> constructor throws an <xref:System.ArgumentException> if one of the elements is `null`.|.NET Framework 4.7.1| 
@@ -103,6 +105,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.ServiceModel.`<br/>`UseSha1InPipeConnectionGetHashAlgorithm`|Controls whether WCF uses a SHA1 or a SHA256 hash to generate random names for named pipes.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|.NET Framework 4.7.1|
 |`Switch.System.ServiceModel.Internals`<br/>`IncludeNullExceptionMessageInETWTrace`|Controls whether to throw a [NullReferenceException](xref:System.NullReferenceException) when the exception message is null.|.NET Framework 4.7|  
 |`Switch.System.ServiceProcess.`<br/>`DontThrowExceptionsOnStart`|Controls whether exceptions thrown on service startup are propagated to the caller of the <xref:System.ServiceProcess.ServiceBase.Run%2A?displayProperty=nameWithType> method.|.NET Framework 4.7.1|
+|`Switch.System.Threading.UseNetCoreTimer`|Controls whether <xref:System.Threading.Timer> instances take advantage of performance improvements for high-scale environments. If `true`, the performance improvements are enabled; if `false` (the default value), they are disabled.|.NET Framework 4.8|
 |`Switch.System.Uri.`<br/>`DontEnableStrictRFC3986ReservedCharacterSets`|Determines whether certain percent-encoded characters that were sometimes decoded are now consistently left encoded. If `true`, they are decoded; otherwise, `false`.|.NET Framework 4.7.2|
 |`Switch.System.Uri.`<br/>`DontKeepUnicodeBidiFormattingCharacters`|Determines the handling of Unicode bidirectional characters in URIs. `true` to strip them from URIs; `false` to preserve and percent-encode them.|.NET Framework 4.7.2|
 |`Switch.System.Windows.Controls.Grid.`<br/>`StarDefinitionsCanExceedAvailableSpace` |Determines whether Windows Presentation Foundation applies an old algorithm (`true`) or a new algorithm (`false`) in allocating space to \*-columns. For more information, see [Mitigation: Grid Control's Space Allocation to Star-columns](../../../migration-guide/retargeting/4.6.2-4.7.md#wpf-grid-allocation-of-space-to-star-columns). |.NET Framework 4.7 |
@@ -169,6 +172,7 @@ The following example uses the `<add>` element to add two settings to the `<appS
 ```  
   
 ## See also
+
 - <xref:System.AppContext?displayProperty=nameWithType>
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)

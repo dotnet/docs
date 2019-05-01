@@ -13,15 +13,15 @@ This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tl
 ## Advantages of Using Automatic Layout  
  Because the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation system is powerful and flexible, it provides the ability to layout elements in an application that can be adjusted to fit the requirements of different languages. The following list points out some of the advantages of automatic layout.  
 
--   UI displays well  in any language.  
+- UI displays well  in any language.  
 
--   Reduces the need to readjust position and size of controls after text is translated.  
+- Reduces the need to readjust position and size of controls after text is translated.  
   
--   Reduces the need to readjust window size.  
+- Reduces the need to readjust window size.  
 
--   UI layout renders properly in any language.  
+- UI layout renders properly in any language.  
 
--   Localization can be reduced to the point that it is little more than string translation.  
+- Localization can be reduced to the point that it is little more than string translation.  
   
 <a name="autolayout_controls"></a>   
 ## Automatic Layout and Controls  
@@ -101,6 +101,7 @@ Grid
  **Note** For the complete code sample, see [Share Sizing Properties Between Grids](../controls/how-to-share-sizing-properties-between-grids.md)  
   
 ## See also
+
 - [Globalization for WPF](globalization-for-wpf.md)
 - [Use Automatic Layout to Create a Button](how-to-use-automatic-layout-to-create-a-button.md)
 - [Use a Grid for Automatic Layout](how-to-use-a-grid-for-automatic-layout.md)

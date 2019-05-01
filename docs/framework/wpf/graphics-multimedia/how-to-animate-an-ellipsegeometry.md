@@ -21,5 +21,6 @@ This example shows how to animate a <xref:System.Windows.Media.Geometry> within 
  [!code-vb[animatepath_snip#201](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animatepath_snip/VisualBasic/EllipseGeometryExample.vb#201)]  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Geometry Overview](geometry-overview.md)

@@ -15,14 +15,14 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
   
 ### To detect changes in the values of DataGridView cells  
   
--   Write a handler for the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event.  
+- Write a handler for the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event.  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#130](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#130)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#130](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#130)]  
   
 ### To detect changes in the states of DataGridView cells  
   
--   Write a handler for the <xref:System.Windows.Forms.DataGridView.CellStateChanged> event.  
+- Write a handler for the <xref:System.Windows.Forms.DataGridView.CellStateChanged> event.  
   
      [!code-csharp[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#135)]
      [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
@@ -30,11 +30,12 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  
   
--   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=nameWithType>

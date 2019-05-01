@@ -14,11 +14,11 @@ ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
 # Dialog Boxes Overview
 Standalone applications typically have a main window that both displays the main data over which the application operates and exposes the functionality to process that data through [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] mechanisms like menu bars, tool bars, and status bars. A non-trivial application may also display additional windows to do the following:  
   
--   Display specific information to users.  
+- Display specific information to users.  
   
--   Gather information from users.  
+- Gather information from users.  
   
--   Both display and gather information.  
+- Both display and gather information.  
   
  These types of windows are known as *dialog boxes*, and there are two types: modal and modeless.  
   
@@ -27,14 +27,12 @@ Standalone applications typically have a main window that both displays the main
  A *modeless* dialog box, on the other hand, does not prevent a user from activating other windows while it is open. For example, if a user wants to find occurrences of a particular word in a document, a main window will often open a dialog box to ask a user what word they are looking for. Since finding a word doesn't prevent a user from editing the document, however, the dialog box doesn't need to be modal. A modeless dialog box at least provides a **Close** button to close the dialog box, and may provide additional buttons to execute specific functions, such as a **Find Next** button to find the next word that matches the find criteria of a word search.  
   
  Windows Presentation Foundation (WPF) allows you to create several types of dialog boxes, including message boxes, common dialog boxes, and custom dialog boxes. This topic discusses each, and the [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984) provides matching examples.  
-  
- 
-  
+
 <a name="Message_Boxes"></a>   
 ## Message Boxes  
  A *message box* is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that displays textual information, asks a question, and provides the user with three buttons to answer the question.  
   
- ![Word Processor dialog box](./media/dialogboxesoverviewfigure1.png "DialogBoxesOverviewFigure1")  
+ ![A Word Processor dialog box asking if you want to save the changes to the document before the application closes.](./media/dialog-boxes-overview/word-processor-dialog.png)  
   
  To create a message box, you use the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox> lets you configure the message box text, title, icon, and buttons, using code like the following.  
   
@@ -67,7 +65,7 @@ Standalone applications typically have a main window that both displays the main
 ### Open File Dialog  
  The open file dialog box, shown in the following figure, is used by file opening functionality to retrieve the name of a file to open.  
   
- ![Open dialog box](./media/dialogboxesoverviewfigure2.png "DialogBoxesOverviewFigure2")  
+ ![An Open dialog box showing the location to retrieve the file.](./media/dialog-boxes-overview/open-file-dialog-box.png)  
   
  The common open file dialog box is implemented as the <xref:Microsoft.Win32.OpenFileDialog> class and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.  
   
@@ -83,7 +81,7 @@ Standalone applications typically have a main window that both displays the main
 ### Save File Dialog Box  
  The save file dialog box, shown in the following figure, is used by file saving functionality to retrieve the name of a file to save.  
   
- ![Save As dialog box](./media/dialogboxesoverviewfigure3.png "DialogBoxesOverviewFigure3")  
+ ![A Save As dialog box showing the location to save the file.](./media/dialog-boxes-overview/save-file-dialog-box.png)  
   
  The common save file dialog box is implemented as the <xref:Microsoft.Win32.SaveFileDialog> class, and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.  
   
@@ -96,7 +94,7 @@ Standalone applications typically have a main window that both displays the main
 ### Print Dialog Box  
  The print dialog box, shown in the following figure, is used by printing functionality to choose and configure the printer that a user would like to print data to.  
   
- ![Print dialog box](./media/dialogboxesoverviewfigure4.png "DialogBoxesOverviewFigure4")  
+ ![Screenshot that shows a Print dialog box.](./media/dialog-boxes-overview/print-data-dialog-box.png)  
   
  The common print dialog box is implemented as the <xref:System.Windows.Controls.PrintDialog> class, and is located in the <xref:System.Windows.Controls> namespace. The following code shows how to create, configure, and show one.  
   
@@ -113,32 +111,32 @@ Standalone applications typically have a main window that both displays the main
 ### Creating a Modal Custom Dialog Box  
  This topic shows how to use <xref:System.Windows.Window> to create a typical modal dialog box implementation, using the `Margins` dialog box as an example (see [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)). The `Margins` dialog box is shown in the following figure.  
   
- ![Margins dialog box](./media/dialogboxesoverviewfigure5.png "DialogBoxesOverviewFigure5")  
+ ![A Margins dialog box with fields to define left margin, top margin, right margin, and bottom margin.](./media/dialog-boxes-overview/margin-size-dialog-box.png)  
   
 #### Configuring a Modal Dialog Box  
  The user interface for a typical dialog box includes the following:  
   
--   The various controls that are required to gather the desired data.  
+- The various controls that are required to gather the desired data.  
   
--   Showing an **OK** button that users click to close the dialog box, return to the function, and continue processing.  
+- Showing an **OK** button that users click to close the dialog box, return to the function, and continue processing.  
   
--   Showing a **Cancel** button that users click to close the dialog box and stop the function from further processing.  
+- Showing a **Cancel** button that users click to close the dialog box and stop the function from further processing.  
   
--   Showing a **Close** button in the title bar.  
+- Showing a **Close** button in the title bar.  
   
--   Showing an icon.  
+- Showing an icon.  
   
--   Showing **Minimize**, **Maximize**, and **Restore** buttons.  
+- Showing **Minimize**, **Maximize**, and **Restore** buttons.  
   
--   Showing a **System** menu to minimize, maximize, restore, and close the dialog box.  
+- Showing a **System** menu to minimize, maximize, restore, and close the dialog box.  
   
--   Opening above and in the center of the window that opened the dialog box.  
+- Opening above and in the center of the window that opened the dialog box.  
   
--   Dialog boxes should be resizable where possible so, to prevent the dialog box from being too small, and to provide the user with a useful default size, you need to set both default and a minimum dimensions respectively.  
+- Dialog boxes should be resizable where possible so, to prevent the dialog box from being too small, and to provide the user with a useful default size, you need to set both default and a minimum dimensions respectively.  
   
--   Pressing the ESC key should be configured as a keyboard shortcut that causes the **Cancel** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsCancel%2A> property of the **Cancel** button to `true`.  
+- Pressing the ESC key should be configured as a keyboard shortcut that causes the **Cancel** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsCancel%2A> property of the **Cancel** button to `true`.  
   
--   Pressing the ENTER (or RETURN) key should be configured as a keyboard shortcut that causes the **OK** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsDefault%2A> property of the **OK** button `true`.  
+- Pressing the ENTER (or RETURN) key should be configured as a keyboard shortcut that causes the **OK** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsDefault%2A> property of the **OK** button `true`.  
   
  The following code demonstrates this configuration.  
   
@@ -179,13 +177,13 @@ Standalone applications typically have a main window that both displays the main
 #### Validating User-Provided Data  
  When a dialog box is opened and the user provides the required data, a dialog box is responsible for ensuring that the provided data is valid for the following reasons:  
   
--   From a security perspective, all input should be validated.  
+- From a security perspective, all input should be validated.  
   
--   From a domain-specific perspective, data validation prevents erroneous data from being processed by the code, which could potentially throw exceptions.  
+- From a domain-specific perspective, data validation prevents erroneous data from being processed by the code, which could potentially throw exceptions.  
   
--   From a user-experience perspective, a dialog box can help users by showing them which data they have entered is invalid.  
+- From a user-experience perspective, a dialog box can help users by showing them which data they have entered is invalid.  
   
--   From a performance perspective, data validation in a multi-tier application can reduce the number of round trips between the client and the application tiers, particularly when the application is composed of Web services or server-based databases.  
+- From a performance perspective, data validation in a multi-tier application can reduce the number of round trips between the client and the application tiers, particularly when the application is composed of Web services or server-based databases.  
   
  To validate a bound control in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you need to define a validation rule and associate it with the binding. A validation rule is a custom class that derives from <xref:System.Windows.Controls.ValidationRule>. The following example shows a validation rule, `MarginValidationRule`, which checks that a bound value is a <xref:System.Double> and is within a specified range.  
   
@@ -202,7 +200,7 @@ Standalone applications typically have a main window that both displays the main
   
  Once the validation rule is associated, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] will automatically apply it when data is entered into the bound control. When a control contains invalid data, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] will display a red border around the invalid control, as shown in the following figure.  
   
- ![Invalid left margin](./media/dialogboxesoverviewfigure7.png "DialogBoxesOverviewFigure7")  
+ ![A Margins dialog box with a red border around the invalid left margin value.](./media/dialog-boxes-overview/invalid-left-margin-dialog.png)  
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] does not restrict a user to the invalid control until they have entered valid data. This is good behavior for a dialog box; a user should be able to freely navigate the controls in a dialog box whether or not data is valid. However, this means a user can enter invalid data and press the **OK** button. For this reason, your code also needs to validate all controls in a dialog box when the **OK** button is pressed by handling the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
@@ -271,7 +269,7 @@ Standalone applications typically have a main window that both displays the main
 ### Creating a Modeless Custom Dialog Box  
  A modeless dialog box, such as the Find Dialog Box shown in the following figure, has the same fundamental appearance as the modal dialog box.  
   
- ![Find dialog box](./media/dialogboxesoverviewfigure6.PNG "DialogBoxesOverviewFigure6")  
+ ![Screenshot that shows a Find dialog box.](./media/dialog-boxes-overview/find-modeless-dialog-box.png)  
   
  However, the behavior is slightly different, as described in the following sections.  
   
@@ -325,11 +323,11 @@ Standalone applications typically have a main window that both displays the main
 #### Closing a Modeless Dialog Box  
  Because <xref:System.Windows.Window.DialogResult%2A> does not need to be set, a modeless dialog can be closed using system provide mechanisms, including the following:  
   
--   Clicking the **Close** button in the title bar.  
+- Clicking the **Close** button in the title bar.  
   
--   Pressing ALT+F4.  
+- Pressing ALT+F4.  
   
--   Choosing **Close** from the **System** menu.  
+- Choosing **Close** from the **System** menu.  
   
  Alternatively, your code can call <xref:System.Windows.Window.Close%2A> when the **Close** button is clicked.  
   
@@ -339,6 +337,7 @@ Standalone applications typically have a main window that both displays the main
 [!code-vb[DialogBoxSample#FindDialogCloseCODEBEHIND2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/FindDialogBox.xaml.vb#finddialogclosecodebehind2)]  
   
 ## See also
+
 - [Popup Overview](../controls/popup-overview.md)
 - [Dialog Box Sample](https://go.microsoft.com/fwlink/?LinkID=159984)
 - [ColorPicker Custom Control Sample](https://go.microsoft.com/fwlink/?LinkID=159977)

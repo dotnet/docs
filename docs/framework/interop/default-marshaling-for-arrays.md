@@ -140,7 +140,7 @@ void New3(ref String ar);
   
  You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e753eftz(v=vs.100)). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
   
--   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0.     
+- Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0.     
   
     ```vb  
     Sub [New](ElemCnt As Integer, _  
@@ -154,7 +154,7 @@ void New3(ref String ar);
        [MarshalAs(UnmanagedType.LPArray, SizeParamIndex=0)] int[] ar );  
     ```  
   
--   Define the size of the array as a constant. For example:  
+- Define the size of the array as a constant. For example:  
   
     ```vb  
     Sub [New](\<MarshalAs(UnmanagedType.LPArray, SizeConst:=128)> _  
@@ -355,6 +355,7 @@ public struct MyStruct {
 ```  
   
 ## See also
+
 - [Default Marshaling Behavior](default-marshaling-behavior.md)
 - [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
 - [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))

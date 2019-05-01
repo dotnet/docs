@@ -23,9 +23,9 @@ This topic describes how you can view message logs.
   
  You can use either one of the following methods to resolve this problem.  
   
--   Only view two of the three message logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at any time.  
+- Only view two of the three message logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at any time.  
   
--   If you must view all three logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at the same time, you can modify the relay service by creating a new <xref:System.ServiceModel.Channels.Message> instance. This instance should be a copy of the body of the incoming message, plus all the headers except for the `ActivityId` and `Action` headers. The following example code demonstrates how to do this.  
+- If you must view all three logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at the same time, you can modify the relay service by creating a new <xref:System.ServiceModel.Channels.Message> instance. This instance should be a copy of the body of the incoming message, plus all the headers except for the `ActivityId` and `Action` headers. The following example code demonstrates how to do this.  
   
 ```csharp
 Message outgoingMessage = Message.CreateMessage(incomingMessage.Version, incomingMessage.Headers.Action, incomingMessage.GetReaderAtBodyContents());  
@@ -44,17 +44,18 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
 ## Exceptional Cases for Inaccurate Message Logging Content  
  Under the following conditions, messages being logged might not be the exact representation of the octet stream present on the wire.  
   
--   For BasicHttpBinding, envelope headers are logged for the incoming messages in the /addressing/none namespace.  
+- For BasicHttpBinding, envelope headers are logged for the incoming messages in the /addressing/none namespace.  
   
--   White spaces can be mismatched.  
+- White spaces can be mismatched.  
   
--   For incoming messages, empty elements can be represented differently. For example, \<tag>\</tag> instead of  \<tag/>  
+- For incoming messages, empty elements can be represented differently. For example, \<tag>\</tag> instead of  \<tag/>  
   
--   When known PII logging is disabled either by default or explicit setting enableLoggingKnownPii="true".  
+- When known PII logging is disabled either by default or explicit setting enableLoggingKnownPii="true".  
   
--   Encoding is enabled for transforming to UTF-8.  
+- Encoding is enabled for transforming to UTF-8.  
   
 ## See also
+
 - [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
 - [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
 - [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)

@@ -11,9 +11,10 @@ Counter Name: Instances.
   
  Most of the time, the number of instance contexts is identical to the number of instances. However, the following scenarios are exception to this rule.  
   
--   A service method calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method explicitly.  
+- A service method calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method explicitly.  
   
--   A <xref:System.ServiceModel.ReleaseInstanceMode> is applied to an <xref:System.ServiceModel.OperationBehaviorAttribute> instance.  
+- A <xref:System.ServiceModel.ReleaseInstanceMode> is applied to an <xref:System.ServiceModel.OperationBehaviorAttribute> instance.  
   
 ## See also
+
 - <xref:System.ServiceModel.OperationBehaviorAttribute>

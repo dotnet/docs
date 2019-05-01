@@ -14,13 +14,14 @@ You can control the auto-launching capability of Windows Communication Foundatio
   
  This option is available to the following projects:  
   
--   WCF Service Library Project.  
+- WCF Service Library Project.  
   
--   Sequential Workflow Service Library Project.  
+- Sequential Workflow Service Library Project.  
   
--   State Machine Workflow Service Library Project.  
+- State Machine Workflow Service Library Project.  
   
--   Syndication Service Library Project.  
+- Syndication Service Library Project.  
   
 ## See also
+
 - [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

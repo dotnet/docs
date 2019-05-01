@@ -12,17 +12,17 @@ The C# language is designed so that versioning between [base](../../../csharp/la
   
  In C#, derived classes can contain methods with the same name as base class methods.  
   
--   The base class method must be defined [virtual](../../../csharp/language-reference/keywords/virtual.md).  
+- The base class method must be defined [virtual](../../../csharp/language-reference/keywords/virtual.md).  
   
--   If the method in the derived class is not preceded by [new](../../../csharp/language-reference/keywords/new.md) or [override](../../../csharp/language-reference/keywords/override.md) keywords, the compiler will issue a warning and the method will behave as if the `new` keyword were present.  
+- If the method in the derived class is not preceded by [new](../../../csharp/language-reference/keywords/new.md) or [override](../../../csharp/language-reference/keywords/override.md) keywords, the compiler will issue a warning and the method will behave as if the `new` keyword were present.  
   
--   If the method in the derived class is preceded with the `new` keyword, the method is defined as being independent of the method in the base class.  
+- If the method in the derived class is preceded with the `new` keyword, the method is defined as being independent of the method in the base class.  
   
--   If the method in the derived class is preceded with the `override` keyword, objects of the derived class will call that method instead of the base class method.  
+- If the method in the derived class is preceded with the `override` keyword, objects of the derived class will call that method instead of the base class method.  
   
--   The base class method can be called from within the derived class using the `base` keyword.  
+- The base class method can be called from within the derived class using the `base` keyword.  
   
--   The `override`, `virtual`, and `new` keywords can also be applied to properties, indexers, and events.  
+- The `override`, `virtual`, and `new` keywords can also be applied to properties, indexers, and events.  
   
  By default, C# methods are not virtual. If a method is declared as virtual, any class inheriting the method can implement its own version. To make a method virtual, the `virtual` modifier is used in the method declaration of the base class. The derived class can then override the base virtual method by using the `override` keyword or hide the virtual method in the base class by using the `new` keyword. If neither the `override` keyword nor the `new` keyword is specified, the compiler will issue a warning and the method in the derived class will hide the method in the base class.  
   

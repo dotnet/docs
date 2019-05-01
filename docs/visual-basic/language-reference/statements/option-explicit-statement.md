@@ -41,17 +41,17 @@ Option Explicit { On | Off }
   
 #### To set Option Explicit in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
+1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Set the value in the **Option Explicit** box.  
+3. Set the value in the **Option Explicit** box.  
   
  When you create a new project, the **Option Explicit** setting on the **Compile** tab is set to the **Option Explicit** setting in the **VB Defaults** dialog box. To access the **VB Defaults** dialog box, on the **Tools** menu, click **Options**. In the **Options** dialog box, expand **Projects and Solutions**, and then click **VB Defaults**. The initial default setting in **VB Defaults** is `On`.  
   
 #### To set Option Explicit on the command line  
   
--   Include the [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option in the **vbc** command.  
+- Include the [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option in the **vbc** command.  
   
 ## Example  
  The following example uses the `Option Explicit` statement to force explicit declaration of all variables. Attempting to use an undeclared variable causes an error at compile time.  
@@ -61,6 +61,7 @@ Option Explicit { On | Off }
  [!code-vb[VbVbalrStatements#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#48)]  
   
 ## See also
+
 - [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
 - [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)

@@ -64,9 +64,9 @@ End Module
   
  Related operators include the following:  
   
--   The [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md) returns the integer quotient of a division. For example, the expression `14 \ 4` evaluates to 3.  
+- The [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md) returns the integer quotient of a division. For example, the expression `14 \ 4` evaluates to 3.  
   
--   The [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md) returns the full quotient, including the remainder, as a floating-point number. For example, the expression `14 / 4` evaluates to 3.5.  
+- The [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md) returns the full quotient, including the remainder, as a floating-point number. For example, the expression `14 / 4` evaluates to 3.5.  
   
 ## Attempted division by zero  
  If `number2` evaluates to zero, the behavior of the `Mod` operator depends on the data type of the operands. An integral division throws a <xref:System.DivideByZeroException> exception. A floating-point division returns <xref:System.Double.NaN>.  
@@ -95,6 +95,7 @@ End Module
  [!code-vb[VbVbalrOperators#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#32)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Conversion.Int%2A>
 - <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
 - [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

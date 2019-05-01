@@ -55,9 +55,9 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
 ## WPF Usage Notes  
  Child objects of a parent object that is an <xref:System.Collections.IDictionary> implementation, such as the WPF <xref:System.Windows.ResourceDictionary>, must typically include an `x:Key` attribute, and the key value must be unique within that dictionary. There are two notable exceptions:  
   
--   Some WPF types declare an implicit key for dictionary usage. For example, a <xref:System.Windows.Style> with a <xref:System.Windows.Style.TargetType%2A>, or a <xref:System.Windows.DataTemplate> with a <xref:System.Windows.DataTemplate.DataType%2A>, can be  in a <xref:System.Windows.ResourceDictionary> and use the implicit key.  
+- Some WPF types declare an implicit key for dictionary usage. For example, a <xref:System.Windows.Style> with a <xref:System.Windows.Style.TargetType%2A>, or a <xref:System.Windows.DataTemplate> with a <xref:System.Windows.DataTemplate.DataType%2A>, can be  in a <xref:System.Windows.ResourceDictionary> and use the implicit key.  
   
--   WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged Resource Dictionaries](../wpf/advanced/merged-resource-dictionaries.md).  
+- WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged Resource Dictionaries](../wpf/advanced/merged-resource-dictionaries.md).  
   
  In the overall WPF XAML implementation and application model, key uniqueness is not checked by the XAML markup compiler. Instead, missing or nonunique `x:Key` values cause load-time XAML parser errors. However, Visual Studio handling of dictionaries for WPF can often note such errors in the design phase.  
   
@@ -95,16 +95,17 @@ keyObject
 |-|-|  
 |`keyObject`|Object element for the object that is used as the key for a given `object` in a specialized dictionary.|  
   
--   The container/parent for this kind of use is not shown here. `object` is expected to be a child of an object element that represents a specialized dictionary implementation. `keyObject` is expected to be an object instance (or a value of a value type) that is appropriate as the key for that particular specialized dictionary implementation.  
+- The container/parent for this kind of use is not shown here. `object` is expected to be a child of an object element that represents a specialized dictionary implementation. `keyObject` is expected to be an object instance (or a value of a value type) that is appropriate as the key for that particular specialized dictionary implementation.  
   
--   WPF does not implement dictionaries that require this usage. Object keys is more a general feature of the XAML language, possibly useful for certain custom dictionary scenarios where creating the dictionary in XAML is desirable. For WPF features such as implicit styles that use non-string keys for resources, other techniques for establishing or specifying the keys exist, so using an object key is not necessary.  
+- WPF does not implement dictionaries that require this usage. Object keys is more a general feature of the XAML language, possibly useful for certain custom dictionary scenarios where creating the dictionary in XAML is desirable. For WPF features such as implicit styles that use non-string keys for resources, other techniques for establishing or specifying the keys exist, so using an object key is not necessary.  
   
--   *keyObject* could also be a markup extension usage in object element form, rather than a direct object instance.  
+- *keyObject* could also be a markup extension usage in object element form, rather than a direct object instance.  
   
 ## Silverlight Usage Notes  
  `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081).  
   
 ## See also
+
 - [XAML Resources](../wpf/advanced/xaml-resources.md)
 - [Resources and Code](../wpf/advanced/resources-and-code.md)
 - [StaticResource Markup Extension](../wpf/advanced/staticresource-markup-extension.md)

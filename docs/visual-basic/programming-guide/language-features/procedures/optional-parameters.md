@@ -16,11 +16,11 @@ ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
 # Optional Parameters (Visual Basic)
 You can specify that a procedure parameter is optional and no argument has to be supplied for it when the procedure is called. *Optional parameters* are indicated by the `Optional` keyword in the procedure definition. The following rules apply:  
   
--   Every optional parameter in the procedure definition must specify a default value.  
+- Every optional parameter in the procedure definition must specify a default value.  
   
--   The default value for an optional parameter must be a constant expression.  
+- The default value for an optional parameter must be a constant expression.  
   
--   Every parameter following an optional parameter in the procedure definition must also be optional.  
+- Every parameter following an optional parameter in the procedure definition must also be optional.  
   
  The following syntax shows a procedure declaration with an optional parameter:  
   
@@ -54,6 +54,7 @@ Sub name(argument 1, , , argument 4)
  Another way to define a procedure with optional parameters is to use overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one accepting the parameter and one without it. This approach becomes more complicated as the number of optional parameters increases. However, its advantage is that you can be absolutely sure whether the calling program supplied each optional argument.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)

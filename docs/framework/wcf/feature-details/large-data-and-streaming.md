@@ -42,11 +42,11 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
   
  The most common scenario in which such large data content transfers occur are transfers of binary data objects that:  
   
--   Cannot be easily broken up into a message sequence.  
+- Cannot be easily broken up into a message sequence.  
   
--   Must be delivered in a timely manner.  
+- Must be delivered in a timely manner.  
   
--   Are not available in their entirety when the transfer is initiated.  
+- Are not available in their entirety when the transfer is initiated.  
   
  For data that does not have these constraints, it is typically better to send sequences of messages within the scope of a session than one large message. For more information, see the "Streaming Data" section later in this topic.  
   
@@ -106,9 +106,9 @@ class MyData
   
  When using MTOM, the preceding data contract is serialized according to the following rules:  
   
--   If `binaryBuffer` is not `null` and individually contains enough data to justify the MTOM externalization overhead (MIME headers, and so on) when compared to Base64 encoding, the data is externalized and carried with the message as a binary MIME part. If the threshold is not exceeded, the data is encoded as Base64.  
+- If `binaryBuffer` is not `null` and individually contains enough data to justify the MTOM externalization overhead (MIME headers, and so on) when compared to Base64 encoding, the data is externalized and carried with the message as a binary MIME part. If the threshold is not exceeded, the data is encoded as Base64.  
   
--   The string (and all other types that are not binary) is always represented as a string inside the message body, regardless of size.  
+- The string (and all other types that are not binary) is always represented as a string inside the message body, regardless of size.  
   
  The effect on the MTOM encoding is the same whether you use an explicit data contract, as shown in the preceding example, use a parameter list in an operation, have nested data contracts, or transfer a data contract object inside a collection. Byte arrays are always candidates for optimization and are optimized if the optimization thresholds are being met.  
   
@@ -123,21 +123,21 @@ class MyData
 ### Restrictions  
  You cannot use a significant number of WCF features when streaming is enabled:  
   
--   Digital signatures for the message body cannot be performed because they require computing a hash over the entire message contents. With streaming, the content is not fully available when the message headers are constructed and sent and, therefore, a digital signature cannot be computed.  
+- Digital signatures for the message body cannot be performed because they require computing a hash over the entire message contents. With streaming, the content is not fully available when the message headers are constructed and sent and, therefore, a digital signature cannot be computed.  
   
--   Encryption depends on digital signatures to verify that the data has been reconstructed correctly.  
+- Encryption depends on digital signatures to verify that the data has been reconstructed correctly.  
   
--   Reliable sessions must buffer sent messages on the client for redelivery if a message gets lost in transfer and must hold messages on the service before handing them to the service implementation to preserve message order in case messages are received out-of-sequence.  
+- Reliable sessions must buffer sent messages on the client for redelivery if a message gets lost in transfer and must hold messages on the service before handing them to the service implementation to preserve message order in case messages are received out-of-sequence.  
   
  Because of these functional constraints, you can use only transport-level security options for streaming and you cannot turn on reliable sessions. Streaming is only available with the following system-defined bindings:  
   
--   <xref:System.ServiceModel.BasicHttpBinding>  
+- <xref:System.ServiceModel.BasicHttpBinding>  
   
--   <xref:System.ServiceModel.NetTcpBinding>  
+- <xref:System.ServiceModel.NetTcpBinding>  
   
--   <xref:System.ServiceModel.NetNamedPipeBinding>  
+- <xref:System.ServiceModel.NetNamedPipeBinding>  
   
--   <xref:System.ServiceModel.WebHttpBinding>  
+- <xref:System.ServiceModel.WebHttpBinding>  
   
  Because the underlying transports of <xref:System.ServiceModel.NetTcpBinding> and <xref:System.ServiceModel.NetNamedPipeBinding> have inherent reliable delivery and connection-based session support, unlike HTTP, these two bindings are only minimally affected by these constraints, in practice.  
   
@@ -154,11 +154,11 @@ class MyData
 ### Enabling Streaming  
  You can enable streaming in the following ways:  
   
--   Send and accept requests in streaming mode, and accept and return responses in buffered mode (<xref:System.ServiceModel.TransferMode.StreamedRequest>).  
+- Send and accept requests in streaming mode, and accept and return responses in buffered mode (<xref:System.ServiceModel.TransferMode.StreamedRequest>).  
   
--   Send and accept requests in buffered mode, and accept and return responses in streamed mode (<xref:System.ServiceModel.TransferMode.StreamedResponse>).  
+- Send and accept requests in buffered mode, and accept and return responses in streamed mode (<xref:System.ServiceModel.TransferMode.StreamedResponse>).  
   
--   Send and receive requests and responses in streamed mode in both directions. (<xref:System.ServiceModel.TransferMode.Streamed>).  
+- Send and receive requests and responses in streamed mode in both directions. (<xref:System.ServiceModel.TransferMode.Streamed>).  
   
  You can disable streaming by setting the transfer mode to <xref:System.ServiceModel.TransferMode.Buffered>, which is the default setting on all bindings. The following code shows how to set the transfer mode in configuration.  
   
@@ -167,7 +167,7 @@ class MyData
      …  
     <bindings>  
       <basicHttpBinding>  
-        <binding name="ExampleBinding" transferMode="Streaming"/>  
+        <binding name="ExampleBinding" transferMode="Streamed"/>  
       </basicHttpBinding>  
     </bindings>  
      …  
@@ -233,4 +233,5 @@ public class UploadStreamMessage
 >  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
 ## See also
+
 - [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)

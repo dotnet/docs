@@ -10,7 +10,8 @@ Some part of the call cannot be completed.
   
 ## To correct this error  
   
--   Check the permitted ranges for arguments to make sure no arrangement exceeds the permitted values.  
+- Check the permitted ranges for arguments to make sure no arrangement exceeds the permitted values.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

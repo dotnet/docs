@@ -14,22 +14,20 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
  However, other types of applications have pages that do need to know when they have been navigated between. For example, consider a human resources application that has one page to list all the employees in an organization—the "List Employees" page. This page could also allow users to add a new employee by clicking a hyperlink. When clicked, the page navigates to an "Add an Employee" page to gather the new employee's details and return them to the "List Employees" page to create the new employee and update the list. This style of navigation is similar to calling a method to perform some processing and return a value, which is known as structured programming. As such, this style of navigation is known as *structured navigation*.  
   
  The <xref:System.Windows.Controls.Page> class doesn't implement support for structured navigation. Instead, the <xref:System.Windows.Navigation.PageFunction%601> class derives from <xref:System.Windows.Controls.Page> and extends it with the basic constructs required for structured navigation. This topic shows how to establish structured navigation using <xref:System.Windows.Navigation.PageFunction%601>.  
-  
- 
-  
+
 <a name="Structured_Navigation"></a>   
 ## Structured Navigation  
  When one page calls another page in a structured navigation, some or all of the following behaviors are required:  
   
--   The calling page navigates to the called page, optionally passing parameters required by the called page.  
+- The calling page navigates to the called page, optionally passing parameters required by the called page.  
   
--   The called page, when a user has completed using the calling page, returns specifically to the calling page, optionally:  
+- The called page, when a user has completed using the calling page, returns specifically to the calling page, optionally:  
   
-    -   Returning state information that describes how the calling page was completed (for example, whether a user pressed an OK button or a Cancel button).  
+    - Returning state information that describes how the calling page was completed (for example, whether a user pressed an OK button or a Cancel button).  
   
-    -   Returning that data that was collected from the user (for example, new employee details).  
+    - Returning that data that was collected from the user (for example, new employee details).  
   
--   When the calling page returns to the called page, the called page is removed from navigation history to isolate one instance of a called page from another.  
+- When the calling page returns to the called page, the called page is removed from navigation history to isolate one instance of a called page from another.  
   
  These behaviors are illustrated by the following figure:  
   
@@ -111,17 +109,17 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  You are not required to pass parameters to the called page. Instead, you could do the following:  
   
--   From the calling page:  
+- From the calling page:  
   
-    1.  Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
+    1. Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
-    2.  Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
+    2. Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
   
-    3.  Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
+    3. Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
   
--   From the called <xref:System.Windows.Navigation.PageFunction%601>:  
+- From the called <xref:System.Windows.Navigation.PageFunction%601>:  
   
-    -   Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.  
+    - Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.  
   
  But, as you'll see shortly, you'll still need use code to instantiate and navigate to the called page to collect the data returned by the called page. For this reason, the <xref:System.Windows.Navigation.PageFunction%601> needs to be kept alive; otherwise, the next time you navigate to the <xref:System.Windows.Navigation.PageFunction%601>, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] instantiates the <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
@@ -130,9 +128,9 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
 ### Returning Task Result and Task Data from a Task to a Calling Page  
  Once the user has finished using the called page, signified in this example by pressing either the OK or Cancel buttons, the called page needs to return. Since the calling page used the called page to collect data from the user, the calling page requires two types of information:  
   
-1.  Whether the user canceled the called page (by pressing either the OK button or the Cancel button in this example). This allows the calling page to determine whether to process the data that the calling page gathered from the user.  
+1. Whether the user canceled the called page (by pressing either the OK button or the Cancel button in this example). This allows the calling page to determine whether to process the data that the calling page gathered from the user.  
   
-2.  The data that was provided by the user.  
+2. The data that was provided by the user.  
   
  To return information, <xref:System.Windows.Navigation.PageFunction%601> implements the <xref:System.Windows.Navigation.PageFunction%601.OnReturn%2A> method. The following code shows how to call it.  
   
@@ -164,6 +162,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
  In other cases, applications may have complex navigation topologies that depend on structured navigation to operate effectively. For more information, see [Navigation Topologies Overview](navigation-topologies-overview.md).  
   
 ## See also
+
 - <xref:System.Windows.Navigation.PageFunction%601>
 - <xref:System.Windows.Navigation.NavigationService>
 - [Navigation Topologies Overview](navigation-topologies-overview.md)

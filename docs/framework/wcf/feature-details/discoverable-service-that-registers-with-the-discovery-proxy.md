@@ -8,24 +8,24 @@ This topic is the second of four topics that discusses how to implement a discov
 
 ### To define the service contract
 
-1.  Add a new console application project to the `DiscoveryProxyExample` solution called `Service`.
+1. Add a new console application project to the `DiscoveryProxyExample` solution called `Service`.
 
-2.  Add references to the following assemblies:
+2. Add references to the following assemblies:
 
-    1.  System.ServiceModel
+    1. System.ServiceModel
 
-    2.  System.ServiceModel.Discovery
+    2. System.ServiceModel.Discovery
 
-3.  Add a new class to the project called `CalculatorService`.
+3. Add a new class to the project called `CalculatorService`.
 
-4.  Add the following using statements.
+4. Add the following using statements.
 
     ```csharp
     using System;
     using System.ServiceModel;
     ```
 
-5.  Within CalculatorService.cs, define the service contract.
+5. Within CalculatorService.cs, define the service contract.
 
     ```csharp
     // Define a service contract.
@@ -43,7 +43,7 @@ This topic is the second of four topics that discusses how to implement a discov
     }
     ```
 
-6.  Also within CalculatorService.cs, implement the service contract.
+6. Also within CalculatorService.cs, implement the service contract.
 
     ```csharp
     // Service class which implements the service contract.
@@ -85,9 +85,9 @@ This topic is the second of four topics that discusses how to implement a discov
 
 ### To host the service
 
-1.  Open the Program.cs file that was generated when you created the project.
+1. Open the Program.cs file that was generated when you created the project.
 
-2.  Add the following using statements.
+2. Add the following using statements.
 
     ```csharp
     using System;
@@ -96,7 +96,7 @@ This topic is the second of four topics that discusses how to implement a discov
     using System.ServiceModel.Discovery;
     ```
 
-3.  Within the `Main()` method, add the following code:
+3. Within the `Main()` method, add the following code:
 
     ```csharp
     // Define the base address of the service
@@ -284,6 +284,7 @@ namespace Microsoft.Samples.Discovery
 ```
 
 ## See also
+
 - [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)
 - [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)
 - [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)

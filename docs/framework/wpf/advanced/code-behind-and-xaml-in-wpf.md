@@ -11,15 +11,15 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
  This topic contains the following sections:  
   
--   [Prerequisites](#Prerequisites)  
+- [Prerequisites](#Prerequisites)  
   
--   [Code-Behind and the XAML Language](#codebehind_and_the_xaml_language)  
+- [Code-Behind and the XAML Language](#codebehind_and_the_xaml_language)  
   
--   [Code-behind, Event Handler, and Partial Class Requirements in WPF](#Code_behind__Event_Handler__and_Partial_Class)  
+- [Code-behind, Event Handler, and Partial Class Requirements in WPF](#Code_behind__Event_Handler__and_Partial_Class)  
   
--   [x:Code](#x_Code)  
+- [x:Code](#x_Code)  
   
--   [Inline Code Limitations](#Inline_Code_Limitations)  
+- [Inline Code Limitations](#Inline_Code_Limitations)  
   
 <a name="Prerequisites"></a>   
 ## Prerequisites  
@@ -32,15 +32,15 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
 <a name="Code_behind__Event_Handler__and_Partial_Class"></a>   
 ## Code-behind, Event Handler, and Partial Class Requirements in WPF  
   
--   The partial class must derive from the type that backs the root element.  
+- The partial class must derive from the type that backs the root element.  
   
--   Note that under the default behavior of the markup compile build actions, you can leave the derivation blank in the partial class definition on the code-behind side. The compiled result will assume the page root's backing type to be the basis for the partial class, even if it not specified. However, relying on this behavior is not a best practice.  
+- Note that under the default behavior of the markup compile build actions, you can leave the derivation blank in the partial class definition on the code-behind side. The compiled result will assume the page root's backing type to be the basis for the partial class, even if it not specified. However, relying on this behavior is not a best practice.  
   
--   The event handlers you write in the code-behind must be instance methods and cannot be static methods. These methods must be defined by the partial class within the CLR namespace identified by `x:Class`. You cannot qualify the name of an event handler to instruct a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor to look for an event handler for event wiring in a different class scope.  
+- The event handlers you write in the code-behind must be instance methods and cannot be static methods. These methods must be defined by the partial class within the CLR namespace identified by `x:Class`. You cannot qualify the name of an event handler to instruct a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor to look for an event handler for event wiring in a different class scope.  
   
--   The handler must match the delegate for the appropriate event in the backing type system.  
+- The handler must match the delegate for the appropriate event in the backing type system.  
   
--   For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
+- For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
   
 <a name="x_Code"></a>   
 ## x:Code  
@@ -53,6 +53,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
  You should consider avoiding or limiting the use of inline code. In terms of architecture and coding philosophy, maintaining a separation between markup and code-behind keeps the designer and developer roles much more distinct. On a more technical level, the code that you write for inline code can be awkward to write, because you are always writing into the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] generated partial class, and can only use the default XML namespace mappings. Because you cannot add `using` statements, you must fully qualify many of the [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] calls that you make. The default [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] mappings include most but not all [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespaces that are present in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies; you will have to fully qualify calls to types and members contained within the other CLR namespaces. You also cannot define anything beyond the partial class in the inline code, and all user code entities you reference must exist as a member or variable within the generated partial class. Other language specific programming features, such as macros or `#ifdef` against global variables or build variables, are also not available. For more information, see [x:Code Intrinsic XAML Type](../../xaml-services/x-code-intrinsic-xaml-type.md).  
   
 ## See also
+
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [x:Code Intrinsic XAML Type](../../xaml-services/x-code-intrinsic-xaml-type.md)
 - [Building a WPF Application](../app-development/building-a-wpf-application-wpf.md)

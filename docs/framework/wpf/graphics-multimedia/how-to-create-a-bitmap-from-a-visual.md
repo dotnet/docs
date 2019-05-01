@@ -17,6 +17,7 @@ This example shows how you can create a bitmap from a <xref:System.Windows.Media
  [!code-vb[ImagingSnippetGallery_procedural_snip#CreateRTBImage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/RenderTargetBitmapExample.vb#creatertbimage)]  
   
 ## See also
+
 - <xref:System.Windows.Media.DrawingContext>
 - [Imaging Overview](imaging-overview.md)
 - [Drawing Objects Overview](drawing-objects-overview.md)

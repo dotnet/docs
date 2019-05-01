@@ -10,9 +10,7 @@ ms.assetid: d01ed009-b722-41bf-b82f-fe1a8cdc50dd
 ---
 # Dependency Property Metadata
 The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system includes a metadata reporting system that goes beyond what can be reported about a property through reflection or general [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] characteristics. Metadata for a dependency property can also be assigned uniquely by the class that defines a dependency property, can be changed when the dependency property is added to a different class, and can be specifically overridden by all derived classes that inherit the dependency property from the defining base class.  
-  
- 
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
@@ -21,11 +19,11 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
 ## How Dependency Property Metadata is Used  
  Dependency property metadata exists as an object that can be queried to examine the characteristics of a dependency property. This metadata is also accessed frequently by the property system as it processes any given dependency property. The metadata object for a dependency property can contain the following types of information:  
   
--   Default value for the dependency property, if no other value can be determined for the dependency property by local value, style, inheritance, etc. For a thorough discussion of how default values participate in the precedence used by the property system when assigning values for dependency properties, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
+- Default value for the dependency property, if no other value can be determined for the dependency property by local value, style, inheritance, etc. For a thorough discussion of how default values participate in the precedence used by the property system when assigning values for dependency properties, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
   
--   References to callback implementations that affect coercion or change-notification behaviors on a per-owner-type basis. Note that these callbacks are often defined with a nonpublic access level, so obtaining the actual references from metadata is generally not possible unless the references are within your permitted access scope. For more information on dependency property callbacks, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
+- References to callback implementations that affect coercion or change-notification behaviors on a per-owner-type basis. Note that these callbacks are often defined with a nonpublic access level, so obtaining the actual references from metadata is generally not possible unless the references are within your permitted access scope. For more information on dependency property callbacks, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
   
--   If the dependency property in question is considered to be a WPF framework-level property, the metadata might contain WPF framework-level dependency property characteristics, which report information and state for services such as the WPF framework-level layout engine and property inheritance logic. For more information on this aspect of dependency property metadata, see [Framework Property Metadata](framework-property-metadata.md).  
+- If the dependency property in question is considered to be a WPF framework-level property, the metadata might contain WPF framework-level dependency property characteristics, which report information and state for services such as the WPF framework-level layout engine and property inheritance logic. For more information on this aspect of dependency property metadata, see [Framework Property Metadata](framework-property-metadata.md).  
   
 <a name="APIs"></a>   
 ## Metadata APIs  
@@ -58,15 +56,15 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
   
  When you override metadata, the different metadata characteristics are either merged or replaced.  
   
--   <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> is merged. If you add a new <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A>, that callback is stored in the metadata. If you do not specify a <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> in the override, the value of <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> is promoted as a reference from the nearest ancestor that specified it in metadata.  
+- <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> is merged. If you add a new <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A>, that callback is stored in the metadata. If you do not specify a <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> in the override, the value of <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> is promoted as a reference from the nearest ancestor that specified it in metadata.  
   
--   The actual property system behavior for <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> is that implementations for all metadata owners in the hierarchy are retained and added to a table, with order of execution by the property system being that the most derived class's callbacks are invoked first.  
+- The actual property system behavior for <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A> is that implementations for all metadata owners in the hierarchy are retained and added to a table, with order of execution by the property system being that the most derived class's callbacks are invoked first.  
   
--   <xref:System.Windows.PropertyMetadata.DefaultValue%2A> is replaced. If you do not specify a <xref:System.Windows.PropertyMetadata.DefaultValue%2A> in the override, the value of <xref:System.Windows.PropertyMetadata.DefaultValue%2A> comes from the nearest ancestor that specified it in metadata.  
+- <xref:System.Windows.PropertyMetadata.DefaultValue%2A> is replaced. If you do not specify a <xref:System.Windows.PropertyMetadata.DefaultValue%2A> in the override, the value of <xref:System.Windows.PropertyMetadata.DefaultValue%2A> comes from the nearest ancestor that specified it in metadata.  
   
--   <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> implementations are replaced. If you add a new <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A>, that callback is stored in the metadata. If you do not specify a <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> in the override, the value of <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> is promoted as a reference from the nearest ancestor that specified it in metadata.  
+- <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> implementations are replaced. If you add a new <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A>, that callback is stored in the metadata. If you do not specify a <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> in the override, the value of <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> is promoted as a reference from the nearest ancestor that specified it in metadata.  
   
--   The property system behavior is that only the <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> in the immediate metadata is invoked. No references to other <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> implementations in the hierarchy are retained.  
+- The property system behavior is that only the <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> in the immediate metadata is invoked. No references to other <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> implementations in the hierarchy are retained.  
   
  This behavior is implemented by <xref:System.Windows.PropertyMetadata.Merge%2A>, and can be overridden on derived metadata classes.  
   
@@ -86,6 +84,7 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
  You can call <xref:System.Windows.DependencyProperty.AddOwner%2A> for a dependency property that is defined as an attached property by the owner class. Generally the reason for doing this is to expose the previously attached property as a non-attached dependency property. You then will expose the <xref:System.Windows.DependencyProperty.AddOwner%2A> return value as a `public static readonly` field for use as the dependency property identifier, and will define appropriate "wrapper" properties so that the property appears in the members table and supports a non-attached property usage in your class.  
   
 ## See also
+
 - <xref:System.Windows.PropertyMetadata>
 - <xref:System.Windows.DependencyObject>
 - <xref:System.Windows.DependencyProperty>

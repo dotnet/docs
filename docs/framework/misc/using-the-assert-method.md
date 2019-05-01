@@ -37,19 +37,19 @@ ms.author: "mairaw"
   
  The following illustration shows what happens when you use **Assert**. Assume that the following statements are true about assemblies A, B, C, E, and F, and two permissions, P1 and P1A:  
   
--   P1A represents the right to read .txt files on the C drive.  
+- P1A represents the right to read .txt files on the C drive.  
   
--   P1 represents the right to read all files on the C drive.  
+- P1 represents the right to read all files on the C drive.  
   
--   P1A and P1 are both **FileIOPermission** types, and P1A is a subset of P1.  
+- P1A and P1 are both **FileIOPermission** types, and P1A is a subset of P1.  
   
--   Assemblies E and F have been granted P1A permission.  
+- Assemblies E and F have been granted P1A permission.  
   
--   Assembly C has been granted P1 permission.  
+- Assembly C has been granted P1 permission.  
   
--   Assemblies A and B have been granted neither P1 nor P1A permissions.  
+- Assemblies A and B have been granted neither P1 nor P1A permissions.  
   
--   Method A is contained in assembly A, method B is contained in assembly B, and so on.  
+- Method A is contained in assembly A, method B is contained in assembly B, and so on.  
   
  ![Diagram that shows the Assert method assemblies.](./media/using-the-assert-method/assert-method-assemblies.gif)    
   
@@ -162,6 +162,7 @@ namespace LogUtil
 ```  
   
 ## See also
+
 - <xref:System.Security.PermissionSet>
 - <xref:System.Security.Permissions.SecurityPermission>
 - <xref:System.Security.Permissions.FileIOPermission>

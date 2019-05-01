@@ -12,11 +12,11 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 ## Designing Windows Forms Applications  
  You can create Windows Forms and Windows service applications with Visual Studio. For more information, see the following topics:  
   
--   [Getting Started with Windows Forms](../../../framework/winforms/getting-started-with-windows-forms.md). Provides information on how to create and program Windows Forms.  
+- [Getting Started with Windows Forms](../../../framework/winforms/getting-started-with-windows-forms.md). Provides information on how to create and program Windows Forms.  
    
--   [Windows Forms Controls](../../../framework/winforms/controls/index.md). Collection of topics detailing the use of Windows Forms controls.  
+- [Windows Forms Controls](../../../framework/winforms/controls/index.md). Collection of topics detailing the use of Windows Forms controls.  
   
--   [Windows Service Applications](../../../framework/windows-services/index.md). Lists topics that explain how to create Windows services.  
+- [Windows Service Applications](../../../framework/windows-services/index.md). Lists topics that explain how to create Windows services.  
   
 ## Building Rich, Interactive User Interfaces  
  Windows Forms is the smart-client component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like Visual Studio, you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  

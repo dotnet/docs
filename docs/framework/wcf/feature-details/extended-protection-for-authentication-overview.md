@@ -18,13 +18,14 @@ Extended Protection for Authentication helps protect against man-in-the-middle (
   
  The server can have the following levels of protection:  
   
--   None. No channel binding validation is performed. This is the behavior of all servers that have not been updated.  
+- None. No channel binding validation is performed. This is the behavior of all servers that have not been updated.  
   
--   Partial. All clients that have been updated must provide channel binding information to the server. Clients that have not been updated do not have to do so. This is an intermediate option that allows for application compatibility.  
+- Partial. All clients that have been updated must provide channel binding information to the server. Clients that have not been updated do not have to do so. This is an intermediate option that allows for application compatibility.  
   
--   Full. All clients must provide channel binding information. The server rejects authentication requests from clients that do not do so.  
+- Full. All clients must provide channel binding information. The server rejects authentication requests from clients that do not do so.  
   
  For more information, see the Win7 CBT/Extended Protection sample.  
   
 ## See also
+
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -10,10 +10,11 @@ An error occurred while executing a method or getting or setting a property of a
   
 ## To correct this error  
   
-1.  Check the properties of the `Err` object to determine the source and nature of the error.  
+1. Check the properties of the `Err` object to determine the source and nature of the error.  
   
-2.  Use the `On Error Resume Next` statement immediately before the accessing statement, and then check for errors immediately after the accessing statement.  
+2. Use the `On Error Resume Next` statement immediately before the accessing statement, and then check for errors immediately after the accessing statement.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

@@ -63,7 +63,7 @@ The following options are valid for *.exe*, *.dll*, and *.winmd* files for file 
 |**/classlist**|Includes a list of classes defined in the module.|
 |**/forward**|Uses forward class declaration.|
 |**/headers**|Includes file header information in the output.|
-|**/item:** `class`[**::** `member`[`(sig`]]|Disassembles the following depending upon the argument supplied:<br /><br /> -   Disassembles the specified `class`.<br />-   Disassembles the specified `member` of the `class`.<br />-   Disassembles the `member` of the `class` with the specified signature `sig`. The format of `sig` is:<br />     [`instance`] `returnType`(`parameterType1`, `parameterType2`, …, `parameterTypeN`)<br />     **Note** In the .NET Framework versions 1.0 and 1.1, `sig` must be followed by a closing parenthesis: `(sig)`. Starting with the Net Framework 2.0 the closing parenthesis must be omitted: (`sig`.|
+|**/item:** `class`[**::** `member`[`(sig`]]|Disassembles the following depending upon the argument supplied:<br /><br /> -   Disassembles the specified `class`.<br />-   Disassembles the specified `member` of the `class`.<br />-   Disassembles the `member` of the `class` with the specified signature `sig`. The format of `sig` is:<br />     [`instance`] `returnType`(`parameterType1`, `parameterType2`, …, `parameterTypeN`)<br />     **Note** In the .NET Framework versions 1.0 and 1.1, `sig` must be followed by a closing parenthesis: `(sig)`. Starting with the Net Framework 2.0 the closing parenthesis must be omitted: `(sig`.|
 |**/noil**|Suppresses IL assembly code output.|
 |**/stats**|Includes statistics on the image.|
 |**/typelist**|Produces the full list of types, to preserve type ordering in a round trip.|

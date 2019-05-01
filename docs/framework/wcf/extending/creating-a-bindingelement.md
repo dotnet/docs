@@ -53,11 +53,11 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
 #### Encoding Binding Elements  
  To create new Encoding Binding Elements, start by extending the <xref:System.ServiceModel.Channels.BindingElement> class and implementing the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement?displayProperty=nameWithType> class. At a minimum, you must then implement the <xref:System.ServiceModel.Channels.BindingElement.Clone%2A>, <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A?displayProperty=nameWithType> methods and the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion%2A?displayProperty=nameWithType> property.  
   
--   <xref:System.ServiceModel.Channels.BindingElement.Clone%2A>. Returns a fresh copy of this binding element. As a best practice, we recommend that binding element authors implement <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> by using a copy constructor that calls the base copy constructor, then clones any additional fields in this class.  
+- <xref:System.ServiceModel.Channels.BindingElement.Clone%2A>. Returns a fresh copy of this binding element. As a best practice, we recommend that binding element authors implement <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> by using a copy constructor that calls the base copy constructor, then clones any additional fields in this class.  
   
--   <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A>. Returns a <xref:System.ServiceModel.Channels.MessageEncoderFactory>, which provides a handle to the actual class that implements your new encoder and which should extend <xref:System.ServiceModel.Channels.MessageEncoder>. For more information, see <xref:System.ServiceModel.Channels.MessageEncoderFactory> and <xref:System.ServiceModel.Channels.MessageEncoder>.  
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A>. Returns a <xref:System.ServiceModel.Channels.MessageEncoderFactory>, which provides a handle to the actual class that implements your new encoder and which should extend <xref:System.ServiceModel.Channels.MessageEncoder>. For more information, see <xref:System.ServiceModel.Channels.MessageEncoderFactory> and <xref:System.ServiceModel.Channels.MessageEncoder>.  
   
--   <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion%2A>. Returns the <xref:System.ServiceModel.Channels.MessageVersion> used in this encoding, which represents the versions of SOAP and WS-Addressing in use.  
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion%2A>. Returns the <xref:System.ServiceModel.Channels.MessageVersion> used in this encoding, which represents the versions of SOAP and WS-Addressing in use.  
   
  For a complete listing of optional methods and properties for user-defined encoding binding elements, see <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  
   
@@ -66,6 +66,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  Once you have created a binding element for your channel, return to the [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md) topic to see whether you want to add configuration file support to your binding element, if and how to add metadata publication support, and whether and how to construct a user-defined binding that uses your binding element.  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.BindingElement>
 - [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)
 - [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)

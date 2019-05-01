@@ -39,39 +39,39 @@ Text with ClearType y-direction antialiasing
 ## Enhanced International Text Support  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides enhanced international text support by providing the following features:  
   
--   Automatic line-spacing in all writing systems, using adaptive measurement.  
+- Automatic line-spacing in all writing systems, using adaptive measurement.  
   
--   Broad support for international text. For more information, see [Globalization for WPF](globalization-for-wpf.md).  
+- Broad support for international text. For more information, see [Globalization for WPF](globalization-for-wpf.md).  
   
--   Language-guided line breaking, hyphenation, and justification.  
+- Language-guided line breaking, hyphenation, and justification.  
   
 <a name="Enhanced_Font_Support"></a>   
 ## Enhanced Font Support  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides enhanced font support by providing the following features:  
   
--   Unicode for all text. Font behavior and selection no longer require charset or codepage.  
+- Unicode for all text. Font behavior and selection no longer require charset or codepage.  
   
--   Font behavior independent of global settings, such as system locale.  
+- Font behavior independent of global settings, such as system locale.  
   
--   Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] programming, in which Boolean combinations of italic and bold are used to define a font family.  
+- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] programming, in which Boolean combinations of italic and bold are used to define a font family.  
   
--   Writing direction (horizontal versus vertical) handled independent of font name.  
+- Writing direction (horizontal versus vertical) handled independent of font name.  
   
--   Font linking and font fallback in a portable [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] file, using composite font technology. Composite fonts allow for the construction of full range multilingual fonts. Composite fonts also provide a mechanism that avoids displaying missing glyphs. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
+- Font linking and font fallback in a portable [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] file, using composite font technology. Composite fonts allow for the construction of full range multilingual fonts. Composite fonts also provide a mechanism that avoids displaying missing glyphs. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
   
--   International fonts built from composite fonts, using a group of single-language fonts. This saves on resource costs when developing fonts for multiple languages.  
+- International fonts built from composite fonts, using a group of single-language fonts. This saves on resource costs when developing fonts for multiple languages.  
   
--   Composite fonts embedded in a document, thereby providing document portability. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
+- Composite fonts embedded in a document, thereby providing document portability. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
   
 <a name="New_Text_APIs"></a>   
 ## New Text Application Programming Interfaces (APIs)  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides several text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] for developers to use when including text in their applications. These [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] are grouped into three categories:  
   
--   **Layout and user interface**. The common text controls for the [!INCLUDE[TLA#tla_gui](../../../../includes/tlasharptla-gui-md.md)].  
+- **Layout and user interface**. The common text controls for the [!INCLUDE[TLA#tla_gui](../../../../includes/tlasharptla-gui-md.md)].  
   
--   **Lightweight text drawing**. Allows you to draw text directly to objects.  
+- **Lightweight text drawing**. Allows you to draw text directly to objects.  
   
--   **Advanced text formatting**. Allows you to implement a custom text engine.  
+- **Advanced text formatting**. Allows you to implement a custom text engine.  
   
 ### Layout and User Interface  
  At the highest level of functionality, the text [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] provide common [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] controls such as <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBlock>, and <xref:System.Windows.Controls.TextBox>. These controls provide the basic [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements within an application, and offer an easy way to present and interact with text. Controls such as <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.PasswordBox> enable more advanced or specialized text-handling. And classes such as <xref:System.Windows.Documents.TextRange>, <xref:System.Windows.Documents.TextSelection>, and <xref:System.Windows.Documents.TextPointer> enable useful text manipulation. These [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] controls provide properties such as <xref:System.Windows.Controls.Control.FontFamily%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, and <xref:System.Windows.Controls.Control.FontStyle%2A>, which enable you to control the font that is used to render the text.  
@@ -143,6 +143,7 @@ Text with ClearType y-direction antialiasing
  For more details on creating custom text layout, see [Advanced Text Formatting](advanced-text-formatting.md).  
   
 ## See also
+
 - <xref:System.Windows.Media.FormattedText>
 - <xref:System.Windows.Media.TextFormatting.TextFormatter>
 - [ClearType Overview](cleartype-overview.md)

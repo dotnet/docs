@@ -25,8 +25,7 @@ A button that uses a custom control template
   
  ![A button with a red border.](./media/ndp-buttonmouseover.png "NDP_ButtonMouseOver")  
 A button that uses a custom control template and has the mouse pointer over it  
-  
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
  This topic assumes that you understand how to create and use controls and styles as discussed in [Controls](index.md). The concepts discussed in this topic apply to elements that inherit from the <xref:System.Windows.Controls.Control> class, except for the <xref:System.Windows.Controls.UserControl>. You cannot apply a <xref:System.Windows.Controls.ControlTemplate> to a <xref:System.Windows.Controls.UserControl>.  
@@ -59,11 +58,11 @@ A CheckBox that uses a custom control template
   
  In this example, the visual structure consists of the following parts:  
   
--   A <xref:System.Windows.Controls.Border> named `RootElement` that serves as the template's root <xref:System.Windows.FrameworkElement>.  
+- A <xref:System.Windows.Controls.Border> named `RootElement` that serves as the template's root <xref:System.Windows.FrameworkElement>.  
   
--   A <xref:System.Windows.Controls.Grid> that is a child of `RootElement`.  
+- A <xref:System.Windows.Controls.Grid> that is a child of `RootElement`.  
   
--   A <xref:System.Windows.Controls.ContentPresenter> that displays the button's content. The <xref:System.Windows.Controls.ContentPresenter> enables any type of object to be displayed.  
+- A <xref:System.Windows.Controls.ContentPresenter> that displays the button's content. The <xref:System.Windows.Controls.ContentPresenter> enables any type of object to be displayed.  
   
  [!code-xaml[VSMButtonTemplate#BasicTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#basictemplate)]  
   
@@ -80,9 +79,9 @@ A CheckBox that uses a custom control template
   
  The <xref:System.Windows.Controls.Control> class defines several properties that must be used by the control template to have an effect on the control when they are set. How the <xref:System.Windows.Controls.ControlTemplate> uses the property depends on the property. The <xref:System.Windows.Controls.ControlTemplate> must use the property in one of the following ways:  
   
--   An element in the <xref:System.Windows.Controls.ControlTemplate> template binds to the property.  
+- An element in the <xref:System.Windows.Controls.ControlTemplate> template binds to the property.  
   
--   An element in the <xref:System.Windows.Controls.ControlTemplate> inherits the property from a parent <xref:System.Windows.FrameworkElement>.  
+- An element in the <xref:System.Windows.Controls.ControlTemplate> inherits the property from a parent <xref:System.Windows.FrameworkElement>.  
   
  The following table lists the visual properties inherited by a control from the <xref:System.Windows.Controls.Control> class. It also indicates whether the default control template of a control uses the inherited property value or if it must be template bound.  
   
@@ -162,11 +161,11 @@ A button that uses a custom control template in the pressed state
   
  You can specify the amount of time that it takes an animation to occur to smoothly transition a control from one state to another by adding <xref:System.Windows.VisualTransition> objects to the <xref:System.Windows.Controls.ControlTemplate>. When you create a <xref:System.Windows.VisualTransition>, you specify one or more of the following:  
   
--   The time it takes for a transition between states to occur.  
+- The time it takes for a transition between states to occur.  
   
--   Additional changes in the control's appearance that occur at the time of the transition.  
+- Additional changes in the control's appearance that occur at the time of the transition.  
   
--   Which states the <xref:System.Windows.VisualTransition> is applied to.  
+- Which states the <xref:System.Windows.VisualTransition> is applied to.  
   
 ### Specifying the Duration of a Transition  
  You can specify how long a transition takes by setting the <xref:System.Windows.VisualTransition.GeneratedDuration%2A> property. The preceding example has a <xref:System.Windows.VisualState> that specifies that the button's border becomes transparent when the button is pressed, but the animation takes too long to be noticeable if the button is quickly pressed and released. You can use a <xref:System.Windows.VisualTransition> to specify the amount of time it takes the control to transition into the pressed state. The following example specifies that the control takes one hundredth of a second to go into the pressed state.  
@@ -196,13 +195,13 @@ A button that uses a custom control template in the pressed state
   
  The following example shows the <xref:System.Windows.VisualStateGroup> for the `CommonStates`. The example defines a <xref:System.Windows.VisualTransition> for each of the button's following transitions.  
   
--   To the `Pressed` state.  
+- To the `Pressed` state.  
   
--   To the `MouseOver` state.  
+- To the `MouseOver` state.  
   
--   From the `Pressed` state to the `MouseOver` state.  
+- From the `Pressed` state to the `MouseOver` state.  
   
--   From the `MouseOver` state to the `Normal` state.  
+- From the `MouseOver` state to the `Normal` state.  
   
  [!code-xaml[VSMButtonTemplate#VisualTransitions](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#visualtransitions)]  
   
@@ -212,11 +211,11 @@ A button that uses a custom control template in the pressed state
   
  A control contract has three elements:  
   
--   The visual elements that the control's logic uses.  
+- The visual elements that the control's logic uses.  
   
--   The states of the control and the group each state belongs to.  
+- The states of the control and the group each state belongs to.  
   
--   The public properties that visually affect the control.  
+- The public properties that visually affect the control.  
   
 ### Visual Elements in the Control Contract  
  Sometimes a control's logic interacts with a <xref:System.Windows.FrameworkElement> that is in the <xref:System.Windows.Controls.ControlTemplate>. For example, the control might handle an event of one of its elements. When a control expects to find a particular <xref:System.Windows.FrameworkElement> in the <xref:System.Windows.Controls.ControlTemplate>, it must convey that information to the <xref:System.Windows.Controls.ControlTemplate> author. The control uses the <xref:System.Windows.TemplatePartAttribute> to convey the type of element that is expected, and what the name of the element should be. The <xref:System.Windows.Controls.Button> does not have <xref:System.Windows.FrameworkElement> parts in its control contract, but other controls, such as the <xref:System.Windows.Controls.ComboBox>, do.  
@@ -245,9 +244,9 @@ A button that uses a custom control template in the pressed state
   
  When creating a <xref:System.Windows.Controls.ControlTemplate>, it is often easiest to begin with an existing <xref:System.Windows.Controls.ControlTemplate> and make changes to it. You can do one of the following to change an existing <xref:System.Windows.Controls.ControlTemplate>:  
   
--   Use a designer, such as Expression Blend, which provides a graphical user interface for creating control templates. For more information, see [Styling a control that supports templates](https://go.microsoft.com/fwlink/?LinkId=161153).  
+- Use a designer, such as Expression Blend, which provides a graphical user interface for creating control templates. For more information, see [Styling a control that supports templates](https://go.microsoft.com/fwlink/?LinkId=161153).  
   
--   Get the default <xref:System.Windows.Controls.ControlTemplate> and edit it. To find the default control templates that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
+- Get the default <xref:System.Windows.Controls.ControlTemplate> and edit it. To find the default control templates that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 <a name="complete_example"></a>   
 ## Complete Example  
@@ -256,4 +255,5 @@ A button that uses a custom control template in the pressed state
  [!code-xaml[VSMButtonTemplate#3](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#3)]  
   
 ## See also
+
 - [Styling and Templating](styling-and-templating.md)

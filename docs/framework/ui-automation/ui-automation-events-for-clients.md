@@ -52,6 +52,7 @@ ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
  For example code, see [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md).  
   
 ## See also
+
 - [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
 - [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
 - [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)

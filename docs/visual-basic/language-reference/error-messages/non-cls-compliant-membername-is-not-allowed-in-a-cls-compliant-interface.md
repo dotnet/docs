@@ -23,12 +23,12 @@ A property, procedure, or event in an interface is marked as `<CLSCompliant(True
   
 ## To correct this error  
   
--   If you require CLS compliance and have control over the interface source code, mark the interface as `<CLSCompliant(True)>` if all its members are compliant.  
+- If you require CLS compliance and have control over the interface source code, mark the interface as `<CLSCompliant(True)>` if all its members are compliant.  
   
--   If you require CLS compliance and do not have control over the interface source code, or if it does not qualify to be compliant, define this member within a different interface.  
+- If you require CLS compliance and do not have control over the interface source code, or if it does not qualify to be compliant, define this member within a different interface.  
   
--   If you require that this member remain within its current interface, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`.  
+- If you require that this member remain within its current interface, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`.  
   
 ## See also
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
 
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)

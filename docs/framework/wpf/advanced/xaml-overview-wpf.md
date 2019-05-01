@@ -22,9 +22,7 @@ ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
 ---
 # XAML overview (WPF)
 This topic describes the features of the XAML language and demonstrates how you can use XAML to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic specifically describes XAML as implemented by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. XAML itself is a larger language concept than [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
-  
-  
-  
+
 <a name="what_is_xaml"></a>   
 ## What is XAML?  
  XAML is a declarative markup language. As applied to the .NET Framework programming model, XAML simplifies creating a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] for a .NET Framework application. You can create visible [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements in the declarative XAML markup, and then separate the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] definition from the run-time logic by using code-behind files, joined to the markup through partial class definitions. XAML directly represents the instantiation of objects in a specific set of backing types defined in assemblies. This is unlike most other markup languages, which are typically an interpreted language without such a direct tie to a backing type system. XAML enables a workflow where separate parties can work on the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] and the logic of an application, using potentially different tools.  
@@ -111,11 +109,11 @@ This topic describes the features of the XAML language and demonstrates how you 
 ### Text content  
  A small number of XAML elements can directly process text as their content. To enable this, one of the following cases must be true:  
   
--   The class must declare a content property, and that content property must be of a type assignable to a string (the type could be <xref:System.Object>). For instance, any <xref:System.Windows.Controls.ContentControl> uses <xref:System.Windows.Controls.ContentControl.Content%2A> as its content property and it is type <xref:System.Object>, and this supports the following usage on a practical <xref:System.Windows.Controls.ContentControl> such as a <xref:System.Windows.Controls.Button>: `<Button>Hello</Button>`.  
+- The class must declare a content property, and that content property must be of a type assignable to a string (the type could be <xref:System.Object>). For instance, any <xref:System.Windows.Controls.ContentControl> uses <xref:System.Windows.Controls.ContentControl.Content%2A> as its content property and it is type <xref:System.Object>, and this supports the following usage on a practical <xref:System.Windows.Controls.ContentControl> such as a <xref:System.Windows.Controls.Button>: `<Button>Hello</Button>`.  
   
--   The type must declare a type converter, in which case the text content is used as initialization text for that type converter. For example, `<Brush>Blue</Brush>`. This case is less common in practice.  
+- The type must declare a type converter, in which case the text content is used as initialization text for that type converter. For example, `<Brush>Blue</Brush>`. This case is less common in practice.  
   
--   The type must be a known XAML language primitive.  
+- The type must be a known XAML language primitive.  
   
 ### Content properties and collection syntax combined  
  Consider this example:  
@@ -129,9 +127,9 @@ This topic describes the features of the XAML language and demonstrates how you 
   
  Here, each <xref:System.Windows.Controls.Button> is a child element of <xref:System.Windows.Controls.StackPanel>. This is a streamlined and intuitive markup that omits two tags for two different reasons.  
   
--   **Omitted StackPanel.Children property element:** <xref:System.Windows.Controls.StackPanel> derives from <xref:System.Windows.Controls.Panel>. <xref:System.Windows.Controls.Panel> defines <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> as its XAML content property.  
+- **Omitted StackPanel.Children property element:** <xref:System.Windows.Controls.StackPanel> derives from <xref:System.Windows.Controls.Panel>. <xref:System.Windows.Controls.Panel> defines <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> as its XAML content property.  
   
--   **Omitted UIElementCollection object element:** The <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> property takes the type <xref:System.Windows.Controls.UIElementCollection>, which implements <xref:System.Collections.IList>. The collection's element tag can be omitted, based on the XAML rules for processing collections such as <xref:System.Collections.IList>. (In this case, <xref:System.Windows.Controls.UIElementCollection> actually cannot be instantiated because it does not expose a default constructor, and that is why the <xref:System.Windows.Controls.UIElementCollection> object element is shown commented out).  
+- **Omitted UIElementCollection object element:** The <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> property takes the type <xref:System.Windows.Controls.UIElementCollection>, which implements <xref:System.Collections.IList>. The collection's element tag can be omitted, based on the XAML rules for processing collections such as <xref:System.Collections.IList>. (In this case, <xref:System.Windows.Controls.UIElementCollection> actually cannot be instantiated because it does not expose a default constructor, and that is why the <xref:System.Windows.Controls.UIElementCollection> object element is shown commented out).  
   
 ```xaml  
 <StackPanel>  
@@ -206,15 +204,15 @@ This topic describes the features of the XAML language and demonstrates how you 
 ### The x: prefix  
  In the previous root element example, the prefix `x:` was used to map the XAML namespace [!INCLUDE[TLA#tla_xamlxmlnsv1](../../../../includes/tlasharptla-xamlxmlnsv1-md.md)], which is the dedicated XAML namespace that supports XAML language constructs. This `x:` prefix is used for mapping this XAML namespace in the templates for projects, in examples, and in documentation throughout this [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)]. The XAML namespace for the XAML language contain several programming constructs that you will use very frequently in your XAML. The following is a listing of the most common `x:` prefix programming constructs you will use:  
   
--   [x:Key](../../xaml-services/x-key-directive.md): Sets a unique key for each resource in a <xref:System.Windows.ResourceDictionary> (or similar dictionary concepts in other frameworks). `x:Key` will probably account for 90% of the `x:` usages you will see in a typical WPF application's markup.  
+- [x:Key](../../xaml-services/x-key-directive.md): Sets a unique key for each resource in a <xref:System.Windows.ResourceDictionary> (or similar dictionary concepts in other frameworks). `x:Key` will probably account for 90% of the `x:` usages you will see in a typical WPF application's markup.  
   
--   [x:Class](../../xaml-services/x-class-directive.md): Specifies the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind per the WPF programming model, and therefore you almost always see `x:` mapped, even if there are no resources.  
+- [x:Class](../../xaml-services/x-class-directive.md): Specifies the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind per the WPF programming model, and therefore you almost always see `x:` mapped, even if there are no resources.  
   
--   [x:Name](../../xaml-services/x-name-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../../xaml-services/x-name-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for application programming, where you frequently use run time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>. You might still use [x:Name](../../xaml-services/x-name-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.  
+- [x:Name](../../xaml-services/x-name-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../../xaml-services/x-name-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for application programming, where you frequently use run time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>. You might still use [x:Name](../../xaml-services/x-name-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.  
   
--   [x:Static](../../xaml-services/x-static-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.  
+- [x:Static](../../xaml-services/x-static-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.  
   
--   [x:Type](../../xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../../xaml-services/x-type-markup-extension.md) markup extension usage is optional.  
+- [x:Type](../../xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../../xaml-services/x-type-markup-extension.md) markup extension usage is optional.  
   
  There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md).  
   
@@ -322,6 +320,7 @@ This topic describes the features of the XAML language and demonstrates how you 
  [Dependency Properties Overview](dependency-properties-overview.md) gives more information about the versatility of properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], and introduces the concept of dependency properties.  
   
 ## See also
+
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
 - [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)

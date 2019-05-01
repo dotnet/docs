@@ -21,13 +21,13 @@ ms.author: "ronpet"
   
  This document contains the following sections:  
   
--   [Programming Model](#model)  
+- [Programming Model](#model)  
   
--   [Predefined Dataflow Block Types](#predefined_types)  
+- [Predefined Dataflow Block Types](#predefined_types)  
   
--   [Configuring Dataflow Block Behavior](#behavior)  
+- [Configuring Dataflow Block Behavior](#behavior)  
   
--   [Custom Dataflow Blocks](#custom)  
+- [Custom Dataflow Blocks](#custom)  
   
 <a name="model"></a>   
 ## Programming Model  

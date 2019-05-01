@@ -26,7 +26,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 * [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
 
-[!NOTE]
+>[!NOTE]
 > The data format in `product-sales.csv` is based on the dataset “Shampoo Sales Over a Three Year Period” originally sourced from DataMarket and provided by Time Series Data Library (TSDL), created by Rob Hyndman. 
 > “Shampoo Sales Over a Three Year Period” Dataset Licensed Under the DataMarket Default Open License.
 

@@ -70,7 +70,7 @@ IDataView transformedData = dataPrepTransformer.Transform(data);
 Once the data has been pre-processed, it's time to train the model. First, select the algorithm that most closely aligns with the machine learning task to be performed. Because the predicted value is a numerically continuous value, the task is regression. One of the regression algorithms implemented by ML.NET is the [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) algorithm. To train the model with cross-validation use the [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) method. 
 
 > [!NOTE]
-> Although this sample uses a linear regression model, CrossValidate is applicable to other machine learning tasks in ML.NET except Anomaly Detection.
+> Although this sample uses a linear regression model, CrossValidate is applicable to all other machine learning tasks in ML.NET except Anomaly Detection.
 
 ```csharp
 // Define StochasticDualCoordinateAscent algorithm estimator

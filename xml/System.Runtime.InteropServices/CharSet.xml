@@ -127,7 +127,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Automatically marshal strings appropriately for the target operating system. This value has the same behavior as <see cref="F:System.Runtime.InteropServices.CharSet.Unicode" />. Although the common language runtime default is <see cref="F:System.Runtime.InteropServices.CharSet.Auto" />, languages may override this default. For example, by default C# and Visual Basic mark all methods and types as <see cref="F:System.Runtime.InteropServices.CharSet.Ansi" />.</summary>
+        <summary>Automatically marshal strings appropriately for the target operating system. See [Charsets and marshalling](~/docs/standard/native-interop/charset.md) for details. Although the common language runtime default is <see cref="F:System.Runtime.InteropServices.CharSet.Auto" />, languages may override this default. For example, by default C# and Visual Basic mark all methods and types as <see cref="F:System.Runtime.InteropServices.CharSet.Ansi" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -197,7 +197,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Marshal strings as Unicode 2-byte characters.</summary>
+        <summary>Marshal strings as Unicode 2-byte character strings.</summary>
       </Docs>
     </Member>
   </Members>

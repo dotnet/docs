@@ -104,13 +104,13 @@ Because a memory block is owned but is intended to be passed to multiple compone
 
 - It is possible for a component to operate on a buffer at the same time that another component is operating on it, in the process corrupting the data in the buffer.
 
-- While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
+- While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
 
 The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Note that guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
 
 **Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible.**
 
-<xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion isn't possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
+<xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion isn't possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
 
 Using a parameter of type <xref:System.Span%601> instead of type <xref:System.Memory%601> also helps you write a correct consuming method implementation. You'll automatically get compile-time checks to ensure that you're not attempting to access the buffer beyond your method's lease (more on this later).
 

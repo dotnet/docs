@@ -400,7 +400,7 @@ The appearance of various elements is often the same for all elements of the sam
 
 6. Build and run the application. The window appearance is the same as previously.
 
-    ![ExpenseIt sample screen shot](./media/gettingstartedfigure4.png)
+    ![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application//create-application-ui.png)
 
 7. Close the application to return to Visual Studio.
 

@@ -183,7 +183,7 @@ When preparing a model, you use part of the dataset to train it and part of the 
 
 ### Add a learning algorithm
 
-This app uses a classification algorithm, an algorithm that classifies items or rows of data. This app classifies website comments as either positive or negative, so use the binary classification task.
+This app uses a classification algorithm that categorizes items or rows of data. The app categorizes website comments as either positive or negative, so use the binary classification task.
 
 Append the machine learning task to the data transformation definitions by adding the following as the next line of code in `BuildAndTrainModel()`:
 

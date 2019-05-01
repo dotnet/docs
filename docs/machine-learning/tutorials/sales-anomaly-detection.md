@@ -258,7 +258,7 @@ Alert   Score   P-Value
 
 Add the following call to the `DetectChangepoint()`method as the next line of code in the `Main()` method:
 
-[!code-csharp[CallDetectChangepoint](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#CallDetectChangepoint]
+[!code-csharp[CallDetectChangepoint](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#CallDetectChangepoint)]
 
 The `DetectChangepoint()` method executes the following tasks:
 

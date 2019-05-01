@@ -291,15 +291,15 @@ Use the following code to display the metrics:
 
     [!code-csharp[Predict](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#Predict "Create a prediction of sentiment")]
 
-The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single row of data.
+    The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single row of data.
 
-### Use the model: prediction
+6. Display `SentimentText` and corresponding sentiment prediction using the following code:
 
-Display `SentimentText` and corresponding sentiment prediction using the following code:
+    [!code-csharp[OutputPrediction](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#OutputPrediction "Display prediction output")]
 
-[!code-csharp[OutputPrediction](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#OutputPrediction "Display prediction output")]
+## Use the model for prediction
 
-## Deploy and predict batch items
+### Deploy and predict batch items
 
 1. Create the `UseModelWithBatchItems()` method, just after the `UseModelWithSingleItem()` method, using the following code:
 
@@ -325,7 +325,7 @@ Display `SentimentText` and corresponding sentiment prediction using the followi
 
     [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssues "Create test data for predictions")]
 
-### Use the model for prediction
+### Predict comment sentiment
 
 Use the model to predict the comment data sentiment using the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method:
 

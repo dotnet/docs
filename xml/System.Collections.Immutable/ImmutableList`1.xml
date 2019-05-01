@@ -1127,7 +1127,8 @@
         <summary>Gets a read-only reference to the element of the set at the given <paramref name="index" />.</summary>
         <returns>A read-only reference to the element at the given position.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.IndexOutOfRangeException"><paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -1629,7 +1630,8 @@
         <summary>Sorts the elements in the entire immutable list using the specified comparer.</summary>
         <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="comparison" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comparison" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sort">

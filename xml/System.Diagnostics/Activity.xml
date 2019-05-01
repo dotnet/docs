@@ -45,6 +45,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ActivityTraceFlags">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.ActivityTraceFlags ActivityTraceFlags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.ActivityTraceFlags ActivityTraceFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.ActivityTraceFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivityTraceFlags As ActivityTraceFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ActivityTraceFlags ActivityTraceFlags { System::Diagnostics::ActivityTraceFlags get(); void set(System::Diagnostics::ActivityTraceFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.ActivityTraceFlags : System.Diagnostics.ActivityTraceFlags with get, set" Usage="System.Diagnostics.Activity.ActivityTraceFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AddBaggage">
       <MemberSignature Language="C#" Value="public System.Diagnostics.Activity AddBaggage (string key, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Activity AddBaggage(string key, string value) cil managed" />
@@ -153,6 +174,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefaultIdFormat">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.ActivityIdFormat DefaultIdFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Diagnostics.ActivityIdFormat DefaultIdFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.DefaultIdFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultIdFormat As ActivityIdFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::ActivityIdFormat DefaultIdFormat { System::Diagnostics::ActivityIdFormat get(); void set(System::Diagnostics::ActivityIdFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultIdFormat : System.Diagnostics.ActivityIdFormat with get, set" Usage="System.Diagnostics.Activity.DefaultIdFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityIdFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Duration">
       <MemberSignature Language="C#" Value="public TimeSpan Duration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
@@ -170,6 +212,27 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceDefaultIdFormat">
+      <MemberSignature Language="C#" Value="public static bool ForceDefaultIdFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool ForceDefaultIdFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.ForceDefaultIdFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ForceDefaultIdFormat As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ForceDefaultIdFormat { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ForceDefaultIdFormat : bool with get, set" Usage="System.Diagnostics.Activity.ForceDefaultIdFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -222,6 +285,27 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdFormat">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.ActivityIdFormat IdFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.ActivityIdFormat IdFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.IdFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdFormat As ActivityIdFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ActivityIdFormat IdFormat { System::Diagnostics::ActivityIdFormat get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdFormat : System.Diagnostics.ActivityIdFormat" Usage="System.Diagnostics.Activity.IdFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityIdFormat</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -294,6 +378,48 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentSpanId">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.ActivitySpanId ParentSpanId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ActivitySpanId ParentSpanId" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.ParentSpanId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentSpanId As ActivitySpanId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ActivitySpanId ^ ParentSpanId { System::Diagnostics::ActivitySpanId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentSpanId : System.Diagnostics.ActivitySpanId" Usage="System.Diagnostics.Activity.ParentSpanId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Ref">
+        <ReturnType>System.Diagnostics.ActivitySpanId</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recorded">
+      <MemberSignature Language="C#" Value="public bool Recorded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Recorded" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.Recorded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Recorded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Recorded { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Recorded : bool" Usage="System.Diagnostics.Activity.Recorded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -381,6 +507,33 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetParentId">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Activity SetParentId (ref System.Diagnostics.ActivityTraceId traceId, ref System.Diagnostics.ActivitySpanId spanId, System.Diagnostics.ActivityTraceFlags activityTraceFlags = System.Diagnostics.ActivityTraceFlags.None);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Activity SetParentId([in]valuetype System.Diagnostics.ActivityTraceId&amp; traceId, [in]valuetype System.Diagnostics.ActivitySpanId&amp; spanId, valuetype System.Diagnostics.ActivityTraceFlags activityTraceFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Activity.SetParentId(System.Diagnostics.ActivityTraceId@,System.Diagnostics.ActivitySpanId@,System.Diagnostics.ActivityTraceFlags)" />
+      <MemberSignature Language="F#" Value="member this.SetParentId :  *  * System.Diagnostics.ActivityTraceFlags -&gt; System.Diagnostics.Activity" Usage="activity.SetParentId (traceId, spanId, activityTraceFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="traceId" Type="System.Diagnostics.ActivityTraceId" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="spanId" Type="System.Diagnostics.ActivitySpanId" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="activityTraceFlags" Type="System.Diagnostics.ActivityTraceFlags" Index="2" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="traceId">To be added.</param>
+        <param name="spanId">To be added.</param>
+        <param name="activityTraceFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetStartTime">
       <MemberSignature Language="C#" Value="public System.Diagnostics.Activity SetStartTime (DateTime startTimeUtc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Activity SetStartTime(valuetype System.DateTime startTimeUtc) cil managed" />
@@ -406,6 +559,27 @@
         <param name="startTimeUtc">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpanId">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.ActivitySpanId SpanId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ActivitySpanId SpanId" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.SpanId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpanId As ActivitySpanId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ActivitySpanId ^ SpanId { System::Diagnostics::ActivitySpanId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpanId : System.Diagnostics.ActivitySpanId" Usage="System.Diagnostics.Activity.SpanId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Ref">
+        <ReturnType>System.Diagnostics.ActivitySpanId</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,6 +673,48 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceId">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.ActivityTraceId TraceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.ActivityTraceId TraceId" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.TraceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceId As ActivityTraceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::ActivityTraceId ^ TraceId { System::Diagnostics::ActivityTraceId ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TraceId : System.Diagnostics.ActivityTraceId" Usage="System.Diagnostics.Activity.TraceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Ref">
+        <ReturnType>System.Diagnostics.ActivityTraceId</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceStateString">
+      <MemberSignature Language="C#" Value="public string TraceStateString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TraceStateString" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Activity.TraceStateString" />
+      <MemberSignature Language="VB.NET" Value="Public Property TraceStateString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TraceStateString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TraceStateString : string with get, set" Usage="System.Diagnostics.Activity.TraceStateString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

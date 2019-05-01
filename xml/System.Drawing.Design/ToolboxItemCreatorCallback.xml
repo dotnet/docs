@@ -18,11 +18,6 @@
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Parameters>
     <Parameter Name="serializedObject" Type="System.Object" />
     <Parameter Name="format" Type="System.String" />

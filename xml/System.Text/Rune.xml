@@ -98,6 +98,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Rune (char highSurrogate, char lowSurrogate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char highSurrogate, char lowSurrogate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.#ctor(System.Char,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (highSurrogate As Char, lowSurrogate As Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rune(char highSurrogate, char lowSurrogate);" />
+      <MemberSignature Language="F#" Value="new System.Text.Rune : char * char -&gt; System.Text.Rune" Usage="new System.Text.Rune (highSurrogate, lowSurrogate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="highSurrogate" Type="System.Char" />
+        <Parameter Name="lowSurrogate" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="highSurrogate">To be added.</param>
+        <param name="lowSurrogate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (System.Text.Rune other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.Text.Rune other) cil managed" />
@@ -121,6 +144,172 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeFromUtf16">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus DecodeFromUtf16 (ReadOnlySpan&lt;char&gt; source, out System.Text.Rune result, out int charsConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeFromUtf16(valuetype System.ReadOnlySpan`1&lt;char&gt; source, [out] valuetype System.Text.Rune&amp; result, [out] int32&amp; charsConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.DecodeFromUtf16(System.ReadOnlySpan{System.Char},System.Text.Rune@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeFromUtf16 (source As ReadOnlySpan(Of Char), ByRef result As Rune, ByRef charsConsumed As Integer) As OperationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus DecodeFromUtf16(ReadOnlySpan&lt;char&gt; source, [Runtime::InteropServices::Out] System::Text::Rune % result, [Runtime::InteropServices::Out] int % charsConsumed);" />
+      <MemberSignature Language="F#" Value="static member DecodeFromUtf16 : ReadOnlySpan&lt;char&gt; *  *  -&gt; System.Buffers.OperationStatus" Usage="System.Text.Rune.DecodeFromUtf16 (source, result, charsConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+        <Parameter Name="charsConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="charsConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeFromUtf8">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus DecodeFromUtf8 (ReadOnlySpan&lt;byte&gt; source, out System.Text.Rune result, out int bytesConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeFromUtf8(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] valuetype System.Text.Rune&amp; result, [out] int32&amp; bytesConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.DecodeFromUtf8(System.ReadOnlySpan{System.Byte},System.Text.Rune@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeFromUtf8 (source As ReadOnlySpan(Of Byte), ByRef result As Rune, ByRef bytesConsumed As Integer) As OperationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus DecodeFromUtf8(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::Text::Rune % result, [Runtime::InteropServices::Out] int % bytesConsumed);" />
+      <MemberSignature Language="F#" Value="static member DecodeFromUtf8 : ReadOnlySpan&lt;byte&gt; *  *  -&gt; System.Buffers.OperationStatus" Usage="System.Text.Rune.DecodeFromUtf8 (source, result, bytesConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="bytesConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeLastFromUtf16">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus DecodeLastFromUtf16 (ReadOnlySpan&lt;char&gt; source, out System.Text.Rune result, out int charsConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeLastFromUtf16(valuetype System.ReadOnlySpan`1&lt;char&gt; source, [out] valuetype System.Text.Rune&amp; result, [out] int32&amp; charsConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.DecodeLastFromUtf16(System.ReadOnlySpan{System.Char},System.Text.Rune@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeLastFromUtf16 (source As ReadOnlySpan(Of Char), ByRef result As Rune, ByRef charsConsumed As Integer) As OperationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus DecodeLastFromUtf16(ReadOnlySpan&lt;char&gt; source, [Runtime::InteropServices::Out] System::Text::Rune % result, [Runtime::InteropServices::Out] int % charsConsumed);" />
+      <MemberSignature Language="F#" Value="static member DecodeLastFromUtf16 : ReadOnlySpan&lt;char&gt; *  *  -&gt; System.Buffers.OperationStatus" Usage="System.Text.Rune.DecodeLastFromUtf16 (source, result, charsConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+        <Parameter Name="charsConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="result">To be added.</param>
+        <param name="charsConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeLastFromUtf8">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus DecodeLastFromUtf8 (ReadOnlySpan&lt;byte&gt; source, out System.Text.Rune value, out int bytesConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus DecodeLastFromUtf8(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, [out] valuetype System.Text.Rune&amp; value, [out] int32&amp; bytesConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.DecodeLastFromUtf8(System.ReadOnlySpan{System.Byte},System.Text.Rune@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecodeLastFromUtf8 (source As ReadOnlySpan(Of Byte), ByRef value As Rune, ByRef bytesConsumed As Integer) As OperationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::OperationStatus DecodeLastFromUtf8(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::Text::Rune % value, [Runtime::InteropServices::Out] int % bytesConsumed);" />
+      <MemberSignature Language="F#" Value="static member DecodeLastFromUtf8 : ReadOnlySpan&lt;byte&gt; *  *  -&gt; System.Buffers.OperationStatus" Usage="System.Text.Rune.DecodeLastFromUtf8 (source, value, bytesConsumed)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Text.Rune" RefType="out" />
+        <Parameter Name="bytesConsumed" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="bytesConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeToUtf16">
+      <MemberSignature Language="C#" Value="public int EncodeToUtf16 (Span&lt;char&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EncodeToUtf16(valuetype System.Span`1&lt;char&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.EncodeToUtf16(System.Span{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Function EncodeToUtf16 (destination As Span(Of Char)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EncodeToUtf16(Span&lt;char&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.EncodeToUtf16 : Span&lt;char&gt; -&gt; int" Usage="rune.EncodeToUtf16 destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeToUtf8">
+      <MemberSignature Language="C#" Value="public int EncodeToUtf8 (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EncodeToUtf8(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.EncodeToUtf8(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Function EncodeToUtf8 (destination As Span(Of Byte)) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EncodeToUtf8(Span&lt;System::Byte&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.EncodeToUtf8 : Span&lt;byte&gt; -&gt; int" Usage="rune.EncodeToUtf8 destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1146,13 +1335,42 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TryEncode">
-      <MemberSignature Language="C#" Value="public bool TryEncode (Span&lt;char&gt; destination, out int charsWritten);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEncode(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryEncode(System.Span{System.Char},System.Int32@)" />
-      <MemberSignature Language="VB.NET" Value="Public Function TryEncode (destination As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEncode(Span&lt;char&gt; destination, [Runtime::InteropServices::Out] int % charsWritten);" />
-      <MemberSignature Language="F#" Value="member this.TryEncode : Span&lt;char&gt; *  -&gt; bool" Usage="rune.TryEncode (destination, charsWritten)" />
+    <Member MemberName="TryCreate">
+      <MemberSignature Language="C#" Value="public static bool TryCreate (char highSurrogate, char lowSurrogate, out System.Text.Rune result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCreate(char highSurrogate, char lowSurrogate, [out] valuetype System.Text.Rune&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryCreate(System.Char,System.Char,System.Text.Rune@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryCreate (highSurrogate As Char, lowSurrogate As Char, ByRef result As Rune) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryCreate(char highSurrogate, char lowSurrogate, [Runtime::InteropServices::Out] System::Text::Rune % result);" />
+      <MemberSignature Language="F#" Value="static member TryCreate : char * char *  -&gt; bool" Usage="System.Text.Rune.TryCreate (highSurrogate, lowSurrogate, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="highSurrogate" Type="System.Char" />
+        <Parameter Name="lowSurrogate" Type="System.Char" />
+        <Parameter Name="result" Type="System.Text.Rune" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="highSurrogate">To be added.</param>
+        <param name="lowSurrogate">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEncodeToUtf16">
+      <MemberSignature Language="C#" Value="public bool TryEncodeToUtf16 (Span&lt;char&gt; destination, out int charsWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEncodeToUtf16(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryEncodeToUtf16(System.Span{System.Char},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEncodeToUtf16 (destination As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEncodeToUtf16(Span&lt;char&gt; destination, [Runtime::InteropServices::Out] int % charsWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryEncodeToUtf16 : Span&lt;char&gt; *  -&gt; bool" Usage="rune.TryEncodeToUtf16 (destination, charsWritten)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1168,6 +1386,33 @@
       <Docs>
         <param name="destination">To be added.</param>
         <param name="charsWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEncodeToUtf8">
+      <MemberSignature Language="C#" Value="public bool TryEncodeToUtf8 (Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryEncodeToUtf8(valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Rune.TryEncodeToUtf8(System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryEncodeToUtf8 (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryEncodeToUtf8(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="member this.TryEncodeToUtf8 : Span&lt;byte&gt; *  -&gt; bool" Usage="rune.TryEncodeToUtf8 (destination, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

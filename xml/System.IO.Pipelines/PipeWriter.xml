@@ -167,6 +167,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipelines.PipeWriter Create (System.IO.Stream stream, System.IO.Pipelines.StreamPipeWriterOptions writerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Pipelines.PipeWriter Create(class System.IO.Stream stream, class System.IO.Pipelines.StreamPipeWriterOptions writerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeWriter.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeWriterOptions)" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.IO.Pipelines.StreamPipeWriterOptions -&gt; System.IO.Pipelines.PipeWriter" Usage="System.IO.Pipelines.PipeWriter.Create (stream, writerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="writerOptions" Type="System.IO.Pipelines.StreamPipeWriterOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="writerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FlushAsync">
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.FlushResult&gt; FlushAsync (System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;valuetype System.IO.Pipelines.FlushResult&gt; FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -219,7 +244,7 @@
         <summary>Returns a <see cref="T:System.Memory`1" /> to write to that is at least the requested size, as specified by the <paramref name="sizeHint" /> parameter.</summary>
         <returns>A memory buffer of at least <paramref name="sizeHint" /> bytes. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer of arbitrary size.</returns>
         <remarks>
-             <format type="text/markdown"><![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
 
@@ -260,7 +285,7 @@ You must request a new buffer after calling <xref:System.IO.Pipelines.PipeWriter
         <summary>Returns a <see cref="T:System.Span`1" /> to write to that is at least the requested size, as specified by the <paramref name="sizeHint" /> parameter.</summary>
         <returns>A buffer of at least <paramref name="sizeHint" /> bytes. If <paramref name="sizeHint" /> is 0, returns a non-empty buffer of arbitrary size.</returns>
         <remarks>
-             <format type="text/markdown"><![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
 

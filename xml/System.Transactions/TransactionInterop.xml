@@ -113,7 +113,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ GetExportCookie(System::Transactions::Transaction ^ transaction, cli::array &lt;System::Byte&gt; ^ exportCookie);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetExportCookie(System.Transactions.Transaction,System.Byte[])" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member GetExportCookie : System.Transactions.Transaction * byte[] -&gt; byte[]" Usage="System.Transactions.TransactionInterop.GetExportCookie (transaction, exportCookie)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member GetExportCookie : System.Transactions.Transaction * byte[] -&gt; byte[]" Usage="System.Transactions.TransactionInterop.GetExportCookie (transaction, exportCookie)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member GetExportCookie : System.Transactions.Transaction * byte[] -&gt; byte[]" Usage="System.Transactions.TransactionInterop.GetExportCookie (transaction, exportCookie)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -169,7 +169,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Transaction ^ GetTransactionFromDtcTransaction(System::Transactions::IDtcTransaction ^ dtc);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransactionFromDtcTransaction(System.Transactions.IDtcTransaction)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member GetTransactionFromDtcTransaction : System.Transactions.IDtcTransaction -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromDtcTransaction dtc" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member GetTransactionFromDtcTransaction : System.Transactions.IDtcTransaction -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromDtcTransaction dtc" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member GetTransactionFromDtcTransaction : System.Transactions.IDtcTransaction -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromDtcTransaction dtc" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -221,7 +221,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Transaction ^ GetTransactionFromExportCookie(cli::array &lt;System::Byte&gt; ^ exportCookie);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransactionFromExportCookie(System.Byte[])" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member GetTransactionFromExportCookie : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromExportCookie exportCookie" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member GetTransactionFromExportCookie : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromExportCookie exportCookie" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member GetTransactionFromExportCookie : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromExportCookie exportCookie" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -273,7 +273,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Transactions::Transaction ^ GetTransactionFromTransmitterPropagationToken(cli::array &lt;System::Byte&gt; ^ token);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken(System.Byte[])" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member GetTransactionFromTransmitterPropagationToken : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken token" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member GetTransactionFromTransmitterPropagationToken : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken token" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member GetTransactionFromTransmitterPropagationToken : byte[] -&gt; System.Transactions.Transaction" Usage="System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken token" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

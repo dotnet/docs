@@ -36,9 +36,6 @@
     <Attribute>
       <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Windows.Forms")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
     <summary>Base designer class for extending the design mode behavior of, and providing a root-level design mode view for, a <see cref="T:System.Windows.Forms.Control" /> that supports nested controls and should receive scroll messages.</summary>

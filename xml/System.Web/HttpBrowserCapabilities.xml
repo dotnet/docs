@@ -72,7 +72,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports ActiveX controls.</summary>
-        <value><see langword="true" /> if the browser client supports ActiveX controls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports ActiveX controls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +94,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client is an America Online (AOL) browser.</summary>
-        <value><see langword="true" /> if the browser client is an AOL browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client is an AOL browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +116,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports background sounds.</summary>
-        <value><see langword="true" /> if the browser client supports background sounds; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports background sounds; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +138,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the browser is a beta release.</summary>
-        <value><see langword="true" /> if the browser client is a beta version; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client is a beta version; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +181,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports Channel Definition Format (CDF) for webcasting.</summary>
-        <value><see langword="true" /> if the browser client supports CDF; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports CDF; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,7 +224,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports cookies.</summary>
-        <value><see langword="true" /> if the browser client supports cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +246,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser is a Web crawler search engine.</summary>
-        <value><see langword="true" /> if the browser client is a search engine; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client is a search engine; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +298,8 @@ For more information, see [ECMA's official Web site](https://www.ecma.ch).
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports HTML frames.</summary>
-        <value><see langword="true" /> if the browser client supports frames; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports frames; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +342,8 @@ For more information, see [ECMA's official Web site](https://www.ecma.ch).
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports Java applets.</summary>
-        <value><see langword="true" /> if the browser client supports Java applets; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports Java applets; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,7 +364,8 @@ For more information, see [ECMA's official Web site](https://www.ecma.ch).
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports JavaScript.</summary>
-        <value><see langword="true" /> if browser client supports JavaScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if browser client supports JavaScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -468,7 +478,8 @@ If the client browser supports JavaScript but scripting is disabled through a se
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports HTML tables.</summary>
-        <value><see langword="true" /> if the browser client supports tables; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports tables; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,7 +543,8 @@ If the client browser supports JavaScript but scripting is disabled through a se
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client browser supports VBScript.</summary>
-        <value><see langword="true" /> if the browser client supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,7 +617,8 @@ To correctly get the version as a data type that can be used in a numeric compar
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client is a Win16-based computer.</summary>
-        <value><see langword="true" /> if the browser client is a Win16-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client is a Win16-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -626,7 +639,8 @@ To correctly get the version as a data type that can be used in a numeric compar
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the client is a Win32-based computer.</summary>
-        <value><see langword="true" /> if the browser client is a Win32-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the browser client is a Win32-based computer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

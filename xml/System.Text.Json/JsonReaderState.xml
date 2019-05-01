@@ -29,37 +29,23 @@ this type can survive across async/await boundaries, and hence it's required to 
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JsonReaderState (int maxDepth = 64, System.Text.Json.JsonReaderOptions options = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 maxDepth, valuetype System.Text.Json.JsonReaderOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonReaderState.#ctor(System.Int32,System.Text.Json.JsonReaderOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional maxDepth As Integer = 64, Optional options As JsonReaderOptions = null)" />
-      <MemberSignature Language="F#" Value="new System.Text.Json.JsonReaderState : int * System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonReaderState" Usage="new System.Text.Json.JsonReaderState (maxDepth, options)" />
+      <MemberSignature Language="C#" Value="public JsonReaderState (System.Text.Json.JsonReaderOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Text.Json.JsonReaderOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonReaderState.#ctor(System.Text.Json.JsonReaderOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional options As JsonReaderOptions = null)" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonReaderState : System.Text.Json.JsonReaderOptions -&gt; System.Text.Json.JsonReaderState" Usage="new System.Text.Json.JsonReaderState options" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="maxDepth" Type="System.Int32" />
         <Parameter Name="options" Type="System.Text.Json.JsonReaderOptions" />
       </Parameters>
       <Docs>
-        <param name="maxDepth">The maximum depth allowed when reading JSON. This is an optional parameter, and its default value is 64. Reading past this depth throws a <see cref="T:System.Text.Json.JsonReaderException" /></param>
-        <param name="options">The customized behavior of the <see cref="T:System.Text.Json.Utf8JsonReader" /> that is different from the JSON RFC (for example, how to handle comments).
-            This is an optional parameter and, by default, the <see cref="T:System.Text.Json.Utf8JsonReader" /> struct follows the JSON RFC strictly (that is, comments within the JSON are invalid).</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.Json.JsonReaderState" /> struct.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-
-## Remarks
-
-A <xref:System.Text.Json.JsonReaderState> instance must be passed to the <xref:System.Text.Json.Utf8JsonReader> constructor with the JSON data.
-Unlike the <xref:System.Text.Json.Utf8JsonReader>, which is a ref struct, the state can survive across async/await boundaries, and hence this type is required to provide support for reading more data asynchronously before continuing with a new instance of the <xref:System.Text.Json.Utf8JsonReader> class.
-
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="maxDepth" /> is less than or equal to 0.</exception>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BytesConsumed">
@@ -81,35 +67,6 @@ Unlike the <xref:System.Text.Json.Utf8JsonReader>, which is a ref struct, the st
         <summary>Gets the total number of bytes consumed by the <see cref="T:System.Text.Json.Utf8JsonReader" /> so far for the given UTF-8 encoded input text.</summary>
         <value>The total number of bytes consumed by the <see cref="T:System.Text.Json.Utf8JsonReader" /> so far.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MaxDepth">
-      <MemberSignature Language="C#" Value="public int MaxDepth { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDepth" />
-      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderState.MaxDepth" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxDepth As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDepth { int get(); };" />
-      <MemberSignature Language="F#" Value="member this.MaxDepth : int" Usage="System.Text.Json.JsonReaderState.MaxDepth" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Text.Json</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the maximum depth allowed when reading JSON.</summary>
-        <value>To be added.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-
-## Remarks
-        
-Reading past `MaxDepth` throws a <xref:System.Text.Json.JsonReaderException>.
-
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">

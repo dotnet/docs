@@ -111,6 +111,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public DateTime GetDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDateTime() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDateTime () As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime GetDateTime();" />
+      <MemberSignature Language="F#" Value="member this.GetDateTime : unit -&gt; DateTime" Usage="jsonElement.GetDateTime " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTimeOffset">
+      <MemberSignature Language="C#" Value="public DateTimeOffset GetDateTimeOffset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTimeOffset GetDateTimeOffset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetDateTimeOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDateTimeOffset () As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeOffset GetDateTimeOffset();" />
+      <MemberSignature Language="F#" Value="member this.GetDateTimeOffset : unit -&gt; DateTimeOffset" Usage="jsonElement.GetDateTimeOffset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetDecimal">
       <MemberSignature Language="C#" Value="public decimal GetDecimal ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal GetDecimal() cil managed" />
@@ -147,6 +191,28 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public Guid GetGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid GetGuid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGuid () As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid GetGuid();" />
+      <MemberSignature Language="F#" Value="member this.GetGuid : unit -&gt; Guid" Usage="jsonElement.GetGuid " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -441,6 +507,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TryGetDateTime">
+      <MemberSignature Language="C#" Value="public bool TryGetDateTime (out DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDateTime([out] valuetype System.DateTime&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetDateTime(System.DateTime@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetDateTime (ByRef value As DateTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetDateTime([Runtime::InteropServices::Out] DateTime % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetDateTime :  -&gt; bool" Usage="jsonElement.TryGetDateTime value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetDateTimeOffset">
+      <MemberSignature Language="C#" Value="public bool TryGetDateTimeOffset (out DateTimeOffset value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDateTimeOffset([out] valuetype System.DateTimeOffset&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetDateTimeOffset(System.DateTimeOffset@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetDateTimeOffset (ByRef value As DateTimeOffset) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetDateTimeOffset([Runtime::InteropServices::Out] DateTimeOffset % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetDateTimeOffset :  -&gt; bool" Usage="jsonElement.TryGetDateTimeOffset value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTimeOffset" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TryGetDecimal">
       <MemberSignature Language="C#" Value="public bool TryGetDecimal (out decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDecimal([out] valuetype System.Decimal&amp; value) cil managed" />
@@ -483,6 +599,31 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Double" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetGuid">
+      <MemberSignature Language="C#" Value="public bool TryGetGuid (out Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid([out] valuetype System.Guid&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetGuid(System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetGuid (ByRef value As Guid) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetGuid([Runtime::InteropServices::Out] Guid % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetGuid :  -&gt; bool" Usage="jsonElement.TryGetGuid value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Guid" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -725,6 +866,82 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsProperty">
+      <MemberSignature Language="C#" Value="public void WriteAsProperty (ReadOnlySpan&lt;byte&gt; utf8PropertyName, ref System.Text.Json.Utf8JsonWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsProperty(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.Text.Json.Utf8JsonWriter&amp; writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.WriteAsProperty(System.ReadOnlySpan{System.Byte},System.Text.Json.Utf8JsonWriter@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAsProperty (utf8PropertyName As ReadOnlySpan(Of Byte), ByRef writer As Utf8JsonWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAsProperty(ReadOnlySpan&lt;System::Byte&gt; utf8PropertyName, System::Text::Json::Utf8JsonWriter % writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteAsProperty : ReadOnlySpan&lt;byte&gt; *  -&gt; unit" Usage="jsonElement.WriteAsProperty (utf8PropertyName, writer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsProperty">
+      <MemberSignature Language="C#" Value="public void WriteAsProperty (ReadOnlySpan&lt;char&gt; propertyName, ref System.Text.Json.Utf8JsonWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsProperty(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.Text.Json.Utf8JsonWriter&amp; writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.WriteAsProperty(System.ReadOnlySpan{System.Char},System.Text.Json.Utf8JsonWriter@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAsProperty (propertyName As ReadOnlySpan(Of Char), ByRef writer As Utf8JsonWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAsProperty(ReadOnlySpan&lt;char&gt; propertyName, System::Text::Json::Utf8JsonWriter % writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteAsProperty : ReadOnlySpan&lt;char&gt; *  -&gt; unit" Usage="jsonElement.WriteAsProperty (propertyName, writer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsValue">
+      <MemberSignature Language="C#" Value="public void WriteAsValue (ref System.Text.Json.Utf8JsonWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsValue(valuetype System.Text.Json.Utf8JsonWriter&amp; writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.WriteAsValue(System.Text.Json.Utf8JsonWriter@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAsValue (ByRef writer As Utf8JsonWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAsValue(System::Text::Json::Utf8JsonWriter % writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteAsValue :  -&gt; unit" Usage="jsonElement.WriteAsValue writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

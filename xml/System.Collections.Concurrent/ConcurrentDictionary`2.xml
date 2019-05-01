@@ -973,7 +973,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is a <see langword="null" /> reference (Nothing in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is a <see langword="null" /> reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
       </Docs>
     </Member>

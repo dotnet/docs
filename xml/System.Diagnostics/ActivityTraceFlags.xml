@@ -1,0 +1,66 @@
+﻿<Type Name="ActivityTraceFlags" FullName="System.Diagnostics.ActivityTraceFlags">
+  <TypeSignature Language="C#" Value="public enum ActivityTraceFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActivityTraceFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.ActivityTraceFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActivityTraceFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ActivityTraceFlags" />
+  <TypeSignature Language="F#" Value="type ActivityTraceFlags = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ActivityTraceFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.ActivityTraceFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.ActivityTraceFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceFlags</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recorded">
+      <MemberSignature Language="C#" Value="Recorded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ActivityTraceFlags Recorded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.ActivityTraceFlags.Recorded" />
+      <MemberSignature Language="VB.NET" Value="Recorded" />
+      <MemberSignature Language="C++ CLI" Value="Recorded" />
+      <MemberSignature Language="F#" Value="Recorded = 1" Usage="System.Diagnostics.ActivityTraceFlags.Recorded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceFlags</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

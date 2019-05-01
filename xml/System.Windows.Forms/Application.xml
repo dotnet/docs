@@ -1959,6 +1959,27 @@ static class Program
         <altmember cref="T:System.Windows.Forms.SystemInformation" />
       </Docs>
     </Member>
+    <Member MemberName="UseVisualStyles">
+      <MemberSignature Language="C#" Value="public static bool UseVisualStyles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool UseVisualStyles" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Application.UseVisualStyles" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UseVisualStyles As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool UseVisualStyles { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UseVisualStyles : bool" Usage="System.Windows.Forms.Application.UseVisualStyles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UseWaitCursor">
       <MemberSignature Language="C#" Value="public static bool UseWaitCursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool UseWaitCursor" />

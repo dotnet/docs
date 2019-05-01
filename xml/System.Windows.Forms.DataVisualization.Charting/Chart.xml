@@ -2591,13 +2591,13 @@ These data point properties are:
       <Docs>
         <param name="e">An object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event. </summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Raising the <xref:System.Windows.Forms.Control.GotFocus> event invokes the event handler through a delegate. For more information, see [Handling and raising events](~/docs/standard/events/index.md).
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLocationChanged">
@@ -2645,13 +2645,13 @@ Raising the <xref:System.Windows.Forms.Control.GotFocus> event invokes the event
       <Docs>
         <param name="e">An object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event. </summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Raising the <xref:System.Windows.Forms.Control.LostFocus> event invokes the event handler through a delegate. For more information, see [Handling and raising events](~/docs/standard/events/index.md).
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnMouseDown">

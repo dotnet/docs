@@ -8262,6 +8262,50 @@
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Zip&lt;TFirst,TSecond&gt;">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;ValueTuple&lt;TFirst,TSecond&gt;&gt; Zip&lt;TFirst,TSecond&gt; (this System.Linq.IQueryable&lt;TFirst&gt; source1, System.Collections.Generic.IEnumerable&lt;TSecond&gt; source2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;valuetype System.ValueTuple`2&lt;!!TFirst, !!TSecond&gt;&gt; Zip&lt;TFirst, TSecond&gt;(class System.Linq.IQueryable`1&lt;!!TFirst&gt; source1, class System.Collections.Generic.IEnumerable`1&lt;!!TSecond&gt; source2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Zip``2(System.Linq.IQueryable{``0},System.Collections.Generic.IEnumerable{``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Zip(Of TFirst, TSecond) (source1 As IQueryable(Of TFirst), source2 As IEnumerable(Of TSecond)) As IQueryable(Of ValueTuple(Of TFirst, TSecond))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFirst, typename TSecond&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Linq::IQueryable&lt;ValueTuple&lt;TFirst, TSecond&gt;&gt; ^ Zip(System::Linq::IQueryable&lt;TFirst&gt; ^ source1, System::Collections::Generic::IEnumerable&lt;TSecond&gt; ^ source2);" />
+      <MemberSignature Language="F#" Value="static member Zip : System.Linq.IQueryable&lt;'First&gt; * seq&lt;'Second&gt; -&gt; System.Linq.IQueryable&lt;ValueTuple&lt;'First, 'Second&gt;&gt;" Usage="System.Linq.Queryable.Zip (source1, source2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Queryable</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;System.ValueTuple&lt;TFirst,TSecond&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="netcore-3.0">
+            <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "First", "Second" })</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFirst" />
+        <TypeParameter Name="TSecond" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source1" Type="System.Linq.IQueryable&lt;TFirst&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="source2" Type="System.Collections.Generic.IEnumerable&lt;TSecond&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFirst">To be added.</typeparam>
+        <typeparam name="TSecond">To be added.</typeparam>
+        <param name="source1">To be added.</param>
+        <param name="source2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Zip&lt;TFirst,TSecond,TResult&gt;">
       <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TResult&gt; Zip&lt;TFirst,TSecond,TResult&gt; (this System.Linq.IQueryable&lt;TFirst&gt; source1, System.Collections.Generic.IEnumerable&lt;TSecond&gt; source2, System.Linq.Expressions.Expression&lt;Func&lt;TFirst,TSecond,TResult&gt;&gt; resultSelector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TResult&gt; Zip&lt;TFirst, TSecond, TResult&gt;(class System.Linq.IQueryable`1&lt;!!TFirst&gt; source1, class System.Collections.Generic.IEnumerable`1&lt;!!TSecond&gt; source2, class System.Linq.Expressions.Expression`1&lt;class System.Func`3&lt;!!TFirst, !!TSecond, !!TResult&gt;&gt; resultSelector) cil managed" />

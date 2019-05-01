@@ -1,0 +1,83 @@
+﻿<Type Name="AmbiguousImplementationException" FullName="System.Runtime.AmbiguousImplementationException">
+  <TypeSignature Language="C#" Value="public sealed class AmbiguousImplementationException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AmbiguousImplementationException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.AmbiguousImplementationException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AmbiguousImplementationException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AmbiguousImplementationException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type AmbiguousImplementationException = class&#xA;    inherit Exception" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AmbiguousImplementationException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.AmbiguousImplementationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousImplementationException();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AmbiguousImplementationException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.AmbiguousImplementationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousImplementationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.AmbiguousImplementationException : string -&gt; System.Runtime.AmbiguousImplementationException" Usage="new System.Runtime.AmbiguousImplementationException message" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AmbiguousImplementationException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.AmbiguousImplementationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbiguousImplementationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.AmbiguousImplementationException : string * Exception -&gt; System.Runtime.AmbiguousImplementationException" Usage="new System.Runtime.AmbiguousImplementationException (message, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -350,7 +350,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether this application is a single-instance application.</summary>
-        <value><see langword="True" /> to indicate this application is a single-instance application; otherwise, <see langword="False" />.</value>
+        <value>
+          <see langword="True" /> to indicate this application is a single-instance application; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

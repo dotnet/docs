@@ -51,7 +51,8 @@
       <Docs>
         <param name="count">The number of bytes that the <see cref="T:System.Net.WebSockets.WebSocket" /> received.</param>
         <param name="messageType">One of the enumeration values that indicates whether the current message is a UTF-8 message or a binary message.</param>
-        <param name="endOfMessage"><see langword="true" /> to indicate the messsage has been received completely; otherwise, <see langword="false" />.</param>
+        <param name="endOfMessage">
+          <see langword="true" /> to indicate the messsage has been received completely; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.WebSockets.ValueWebSocketReceiveResult" /> struct. An instance of this struct represents the result of performing a single <c>ReceiveAsync</c> operation on a <see cref="T:System.Net.WebSockets.WebSocket" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>

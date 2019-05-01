@@ -4393,7 +4393,7 @@ The implementation of this method is typically to call the constructor of a spec
  All <xref:System.Windows.ContentElement> derived classes should implement this method in order to provide their own specific <xref:System.Windows.Automation.Peers.AutomationPeer> implementations to the WPF infrastructure. For details on implementing this pattern, see <xref:System.Windows.Automation.Peers.AutomationPeer>.
 
  ]]></format>
-        </remarks>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnDragEnter">

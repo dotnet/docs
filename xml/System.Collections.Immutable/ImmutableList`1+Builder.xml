@@ -204,7 +204,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException"><paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type T.
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type T.
             </exception>
       </Docs>
     </Member>
@@ -249,12 +250,15 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> is less than 0.
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.
 -or-
 
 <paramref name="count" /> is less than 0.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="index" /> and <paramref name="count" /> do not denote a valid range in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
-        <exception cref="T:System.InvalidOperationException"><paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type T.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="comparer" /> is <see langword="null" />, and the default comparer <see cref="P:System.Collections.Generic.Comparer`1.Default" /> cannot find an implementation of the <see cref="T:System.IComparable`1" /> generic interface or the <see cref="T:System.IComparable" /> interface for type T.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -1516,7 +1520,8 @@
         <param name="comparison">The object to use when comparing elements.</param>
         <summary>Sorts the elements in the entire immutable list by using the specified comparison object.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="comparison" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comparison" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sort">

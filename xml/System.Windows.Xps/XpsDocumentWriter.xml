@@ -173,6 +173,36 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (string documentPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string documentPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (documentPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ documentPath);" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="xpsDocumentWriter.Write documentPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="documentPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="documentPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (System.Windows.Documents.DocumentPaginator documentPaginator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Windows.Documents.DocumentPaginator documentPaginator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.Write(System.Windows.Documents.DocumentPaginator)" />

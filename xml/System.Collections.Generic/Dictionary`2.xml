@@ -2781,7 +2781,8 @@ finally {
         <param name="key">The key of the element to add.</param>
         <param name="value">The value of the element to add. It can be <see langword="null" />.</param>
         <summary>Attempts to add the specified key and value to the dictionary.</summary>
-        <returns><see langword="true" /> if the key/value pair was added to the dictionary successfully; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the key/value pair was added to the dictionary successfully; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

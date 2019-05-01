@@ -1,0 +1,81 @@
+﻿<Type Name="ComponentActionsType" FullName="System.Windows.Forms.Design.ComponentActionsType">
+  <TypeSignature Language="C#" Value="public enum ComponentActionsType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComponentActionsType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentActionsType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ComponentActionsType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComponentActionsType" />
+  <TypeSignature Language="F#" Value="type ComponentActionsType = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ComponentActionsType All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ComponentActionsType.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Windows.Forms.Design.ComponentActionsType.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ComponentActionsType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Component">
+      <MemberSignature Language="C#" Value="Component" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ComponentActionsType Component = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ComponentActionsType.Component" />
+      <MemberSignature Language="VB.NET" Value="Component" />
+      <MemberSignature Language="C++ CLI" Value="Component" />
+      <MemberSignature Language="F#" Value="Component = 1" Usage="System.Windows.Forms.Design.ComponentActionsType.Component" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ComponentActionsType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="Service" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ComponentActionsType Service = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ComponentActionsType.Service" />
+      <MemberSignature Language="VB.NET" Value="Service" />
+      <MemberSignature Language="C++ CLI" Value="Service" />
+      <MemberSignature Language="F#" Value="Service = 2" Usage="System.Windows.Forms.Design.ComponentActionsType.Service" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ComponentActionsType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

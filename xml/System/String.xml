@@ -4272,6 +4272,12 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Obsolete("This API should not be used to create mutable strings. See https://go.microsoft.com/fwlink/?linkid=2084035 for alternatives.")</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

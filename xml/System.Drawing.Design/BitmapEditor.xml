@@ -78,6 +78,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BitmapExtensions">
+      <MemberSignature Language="C#" Value="protected static System.Collections.Generic.List&lt;string&gt; BitmapExtensions;" />
+      <MemberSignature Language="ILAsm" Value=".field family static class System.Collections.Generic.List`1&lt;string&gt; BitmapExtensions" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Design.BitmapEditor.BitmapExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared BitmapExtensions As List(Of String) " />
+      <MemberSignature Language="C++ CLI" Value="protected: static System::Collections::Generic::List&lt;System::String ^&gt; ^ BitmapExtensions;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BitmapExtensions : System.Collections.Generic.List&lt;string&gt;" Usage="System.Drawing.Design.BitmapEditor.BitmapExtensions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetExtensions">
       <MemberSignature Language="C#" Value="protected override string[] GetExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string[] GetExtensions() cil managed" />

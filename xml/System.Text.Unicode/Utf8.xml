@@ -1,0 +1,90 @@
+﻿<Type Name="Utf8" FullName="System.Text.Unicode.Utf8">
+  <TypeSignature Language="C#" Value="public static class Utf8" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Utf8 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Unicode.Utf8" />
+  <TypeSignature Language="VB.NET" Value="Public Class Utf8" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Utf8 abstract sealed" />
+  <TypeSignature Language="F#" Value="type Utf8 = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FromUtf16">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus FromUtf16 (ReadOnlySpan&lt;char&gt; source, Span&lt;byte&gt; destination, out int charsRead, out int bytesWritten, bool replaceInvalidSequences = true, bool isFinalBlock = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus FromUtf16(valuetype System.ReadOnlySpan`1&lt;char&gt; source, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; charsRead, [out] int32&amp; bytesWritten, bool replaceInvalidSequences, bool isFinalBlock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Unicode.Utf8.FromUtf16(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@,System.Int32@,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromUtf16 (source As ReadOnlySpan(Of Char), destination As Span(Of Byte), ByRef charsRead As Integer, ByRef bytesWritten As Integer, Optional replaceInvalidSequences As Boolean = true, Optional isFinalBlock As Boolean = true) As OperationStatus" />
+      <MemberSignature Language="F#" Value="static member FromUtf16 : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; *  *  * bool * bool -&gt; System.Buffers.OperationStatus" Usage="System.Text.Unicode.Utf8.FromUtf16 (source, destination, charsRead, bytesWritten, replaceInvalidSequences, isFinalBlock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="charsRead" Type="System.Int32" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+        <Parameter Name="replaceInvalidSequences" Type="System.Boolean" />
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="charsRead">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <param name="replaceInvalidSequences">To be added.</param>
+        <param name="isFinalBlock">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUtf16">
+      <MemberSignature Language="C#" Value="public static System.Buffers.OperationStatus ToUtf16 (ReadOnlySpan&lt;byte&gt; source, Span&lt;char&gt; destination, out int bytesRead, out int charsWritten, bool replaceInvalidSequences = true, bool isFinalBlock = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Buffers.OperationStatus ToUtf16(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; bytesRead, [out] int32&amp; charsWritten, bool replaceInvalidSequences, bool isFinalBlock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Unicode.Utf8.ToUtf16(System.ReadOnlySpan{System.Byte},System.Span{System.Char},System.Int32@,System.Int32@,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUtf16 (source As ReadOnlySpan(Of Byte), destination As Span(Of Char), ByRef bytesRead As Integer, ByRef charsWritten As Integer, Optional replaceInvalidSequences As Boolean = true, Optional isFinalBlock As Boolean = true) As OperationStatus" />
+      <MemberSignature Language="F#" Value="static member ToUtf16 : ReadOnlySpan&lt;byte&gt; * Span&lt;char&gt; *  *  * bool * bool -&gt; System.Buffers.OperationStatus" Usage="System.Text.Unicode.Utf8.ToUtf16 (source, destination, bytesRead, charsWritten, replaceInvalidSequences, isFinalBlock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.OperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
+        <Parameter Name="bytesRead" Type="System.Int32" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
+        <Parameter Name="replaceInvalidSequences" Type="System.Boolean" />
+        <Parameter Name="isFinalBlock" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="bytesRead">To be added.</param>
+        <param name="charsWritten">To be added.</param>
+        <param name="replaceInvalidSequences">To be added.</param>
+        <param name="isFinalBlock">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

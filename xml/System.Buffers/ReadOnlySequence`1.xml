@@ -236,6 +236,30 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FirstSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; FirstSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;!T&gt; FirstSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.FirstSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstSpan As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;T&gt; FirstSpan { ReadOnlySpan&lt;T&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstSpan : ReadOnlySpan&lt;'T&gt;" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.FirstSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />

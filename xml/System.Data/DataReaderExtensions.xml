@@ -1,0 +1,763 @@
+﻿<Type Name="DataReaderExtensions" FullName="System.Data.DataReaderExtensions">
+  <TypeSignature Language="C#" Value="public static class DataReaderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataReaderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataReaderExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DataReaderExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataReaderExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type DataReaderExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public static bool GetBoolean (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetBoolean(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetBoolean(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBoolean (reader As DbDataReader, name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool GetBoolean(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetBoolean : System.Data.Common.DbDataReader * string -&gt; bool" Usage="System.Data.DataReaderExtensions.GetBoolean (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public static byte GetByte (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 GetByte(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetByte(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetByte (reader As DbDataReader, name As String) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Byte GetByte(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetByte : System.Data.Common.DbDataReader * string -&gt; byte" Usage="System.Data.DataReaderExtensions.GetByte (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public static long GetBytes (this System.Data.Common.DbDataReader reader, string name, long dataOffset, byte[] buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetBytes(class System.Data.Common.DbDataReader reader, string name, int64 dataOffset, unsigned int8[] buffer, int32 bufferOffset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetBytes(System.Data.Common.DbDataReader,System.String,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBytes (reader As DbDataReader, name As String, dataOffset As Long, buffer As Byte(), bufferOffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long GetBytes(System::Data::Common::DbDataReader ^ reader, System::String ^ name, long dataOffset, cli::array &lt;System::Byte&gt; ^ buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="F#" Value="static member GetBytes : System.Data.Common.DbDataReader * string * int64 * byte[] * int * int -&gt; int64" Usage="System.Data.DataReaderExtensions.GetBytes (reader, name, dataOffset, buffer, bufferOffset, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataOffset" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="bufferOffset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="dataOffset">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferOffset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public static char GetChar (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig char GetChar(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetChar(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetChar (reader As DbDataReader, name As String) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static char GetChar(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetChar : System.Data.Common.DbDataReader * string -&gt; char" Usage="System.Data.DataReaderExtensions.GetChar (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public static long GetChars (this System.Data.Common.DbDataReader reader, string name, long dataOffset, char[] buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetChars(class System.Data.Common.DbDataReader reader, string name, int64 dataOffset, char[] buffer, int32 bufferOffset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetChars(System.Data.Common.DbDataReader,System.String,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetChars (reader As DbDataReader, name As String, dataOffset As Long, buffer As Char(), bufferOffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long GetChars(System::Data::Common::DbDataReader ^ reader, System::String ^ name, long dataOffset, cli::array &lt;char&gt; ^ buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="F#" Value="static member GetChars : System.Data.Common.DbDataReader * string * int64 * char[] * int * int -&gt; int64" Usage="System.Data.DataReaderExtensions.GetChars (reader, name, dataOffset, buffer, bufferOffset, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataOffset" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="bufferOffset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="dataOffset">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="bufferOffset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.DbDataReader GetData (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbDataReader GetData(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetData(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetData (reader As DbDataReader, name As String) As DbDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::Common::DbDataReader ^ GetData(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetData : System.Data.Common.DbDataReader * string -&gt; System.Data.Common.DbDataReader" Usage="System.Data.DataReaderExtensions.GetData (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataTypeName">
+      <MemberSignature Language="C#" Value="public static string GetDataTypeName (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDataTypeName(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetDataTypeName(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDataTypeName (reader As DbDataReader, name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetDataTypeName(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetDataTypeName : System.Data.Common.DbDataReader * string -&gt; string" Usage="System.Data.DataReaderExtensions.GetDataTypeName (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public static DateTime GetDateTime (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetDateTime(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetDateTime(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDateTime (reader As DbDataReader, name As String) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static DateTime GetDateTime(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetDateTime : System.Data.Common.DbDataReader * string -&gt; DateTime" Usage="System.Data.DataReaderExtensions.GetDateTime (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public static decimal GetDecimal (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal GetDecimal(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetDecimal(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDecimal (reader As DbDataReader, name As String) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Decimal GetDecimal(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetDecimal : System.Data.Common.DbDataReader * string -&gt; decimal" Usage="System.Data.DataReaderExtensions.GetDecimal (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public static double GetDouble (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetDouble(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetDouble(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDouble (reader As DbDataReader, name As String) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static double GetDouble(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetDouble : System.Data.Common.DbDataReader * string -&gt; double" Usage="System.Data.DataReaderExtensions.GetDouble (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldType">
+      <MemberSignature Language="C#" Value="public static Type GetFieldType (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetFieldType(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetFieldType(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFieldType (reader As DbDataReader, name As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Type ^ GetFieldType(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetFieldType : System.Data.Common.DbDataReader * string -&gt; Type" Usage="System.Data.DataReaderExtensions.GetFieldType (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetFieldValue&lt;T&gt; (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetFieldValue&lt;T&gt;(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetFieldValue``1(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFieldValue(Of T) (reader As DbDataReader, name As String) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T GetFieldValue(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetFieldValue : System.Data.Common.DbDataReader * string -&gt; 'T" Usage="System.Data.DataReaderExtensions.GetFieldValue (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; GetFieldValueAsync&lt;T&gt; (this System.Data.Common.DbDataReader reader, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(class System.Data.Common.DbDataReader reader, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetFieldValueAsync``1(System.Data.Common.DbDataReader,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member GetFieldValueAsync : System.Data.Common.DbDataReader * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="System.Data.DataReaderExtensions.GetFieldValueAsync (reader, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFloat">
+      <MemberSignature Language="C#" Value="public static float GetFloat (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 GetFloat(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetFloat(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFloat (reader As DbDataReader, name As String) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static float GetFloat(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetFloat : System.Data.Common.DbDataReader * string -&gt; single" Usage="System.Data.DataReaderExtensions.GetFloat (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public static Guid GetGuid (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetGuid(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetGuid(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGuid (reader As DbDataReader, name As String) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Guid GetGuid(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetGuid : System.Data.Common.DbDataReader * string -&gt; Guid" Usage="System.Data.DataReaderExtensions.GetGuid (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt16">
+      <MemberSignature Language="C#" Value="public static short GetInt16 (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 GetInt16(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetInt16(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetInt16 (reader As DbDataReader, name As String) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static short GetInt16(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetInt16 : System.Data.Common.DbDataReader * string -&gt; int16" Usage="System.Data.DataReaderExtensions.GetInt16 (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public static int GetInt32 (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetInt32(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetInt32(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetInt32 (reader As DbDataReader, name As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetInt32(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetInt32 : System.Data.Common.DbDataReader * string -&gt; int" Usage="System.Data.DataReaderExtensions.GetInt32 (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public static long GetInt64 (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetInt64(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetInt64(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetInt64 (reader As DbDataReader, name As String) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static long GetInt64(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetInt64 : System.Data.Common.DbDataReader * string -&gt; int64" Usage="System.Data.DataReaderExtensions.GetInt64 (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificFieldType">
+      <MemberSignature Language="C#" Value="public static Type GetProviderSpecificFieldType (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetProviderSpecificFieldType(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetProviderSpecificFieldType(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProviderSpecificFieldType (reader As DbDataReader, name As String) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Type ^ GetProviderSpecificFieldType(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetProviderSpecificFieldType : System.Data.Common.DbDataReader * string -&gt; Type" Usage="System.Data.DataReaderExtensions.GetProviderSpecificFieldType (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificValue">
+      <MemberSignature Language="C#" Value="public static object GetProviderSpecificValue (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetProviderSpecificValue(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetProviderSpecificValue(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetProviderSpecificValue (reader As DbDataReader, name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ GetProviderSpecificValue(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetProviderSpecificValue : System.Data.Common.DbDataReader * string -&gt; obj" Usage="System.Data.DataReaderExtensions.GetProviderSpecificValue (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream GetStream (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetStream(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetStream(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStream (reader As DbDataReader, name As String) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ GetStream(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetStream : System.Data.Common.DbDataReader * string -&gt; System.IO.Stream" Usage="System.Data.DataReaderExtensions.GetStream (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public static string GetString (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetString(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetString(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetString (reader As DbDataReader, name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetString(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetString : System.Data.Common.DbDataReader * string -&gt; string" Usage="System.Data.DataReaderExtensions.GetString (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextReader">
+      <MemberSignature Language="C#" Value="public static System.IO.TextReader GetTextReader (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.TextReader GetTextReader(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetTextReader(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTextReader (reader As DbDataReader, name As String) As TextReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::TextReader ^ GetTextReader(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetTextReader : System.Data.Common.DbDataReader * string -&gt; System.IO.TextReader" Usage="System.Data.DataReaderExtensions.GetTextReader (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public static object GetValue (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetValue(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.GetValue(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValue (reader As DbDataReader, name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ GetValue(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetValue : System.Data.Common.DbDataReader * string -&gt; obj" Usage="System.Data.DataReaderExtensions.GetValue (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNull">
+      <MemberSignature Language="C#" Value="public static bool IsDBNull (this System.Data.Common.DbDataReader reader, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDBNull(class System.Data.Common.DbDataReader reader, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.IsDBNull(System.Data.Common.DbDataReader,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDBNull (reader As DbDataReader, name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDBNull(System::Data::Common::DbDataReader ^ reader, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member IsDBNull : System.Data.Common.DbDataReader * string -&gt; bool" Usage="System.Data.DataReaderExtensions.IsDBNull (reader, name)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNullAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; IsDBNullAsync (this System.Data.Common.DbDataReader reader, string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(class System.Data.Common.DbDataReader reader, string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataReaderExtensions.IsDBNullAsync(System.Data.Common.DbDataReader,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member IsDBNullAsync : System.Data.Common.DbDataReader * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="System.Data.DataReaderExtensions.IsDBNullAsync (reader, name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Data.Common.DbDataReader" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,376 @@
+﻿<Type Name="JsonSerializer" FullName="System.Text.Json.Serialization.JsonSerializer">
+  <TypeSignature Language="C#" Value="public static class JsonSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit JsonSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.Serialization.JsonSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class JsonSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonSerializer abstract sealed" />
+  <TypeSignature Language="F#" Value="type JsonSerializer = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static object Parse (ReadOnlySpan&lt;byte&gt; utf8Json, Type returnType, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Parse(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Json, class System.Type returnType, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.Parse(System.ReadOnlySpan{System.Byte},System.Type,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (utf8Json As ReadOnlySpan(Of Byte), returnType As Type, Optional options As JsonSerializerOptions = null) As Object" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;byte&gt; * Type * System.Text.Json.Serialization.JsonSerializerOptions -&gt; obj" Usage="System.Text.Json.Serialization.JsonSerializer.Parse (utf8Json, returnType, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Json">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static object Parse (string json, Type returnType, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Parse(string json, class System.Type returnType, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.Parse(System.String,System.Type,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (json As String, returnType As Type, Optional options As JsonSerializerOptions = null) As Object" />
+      <MemberSignature Language="F#" Value="static member Parse : string * Type * System.Text.Json.Serialization.JsonSerializerOptions -&gt; obj" Usage="System.Text.Json.Serialization.JsonSerializer.Parse (json, returnType, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="json" Type="System.String" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <param name="json">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public static TValue Parse&lt;TValue&gt; (ReadOnlySpan&lt;byte&gt; utf8Json, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TValue Parse&lt;TValue&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Json, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.Parse``1(System.ReadOnlySpan{System.Byte},System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse(Of TValue) (utf8Json As ReadOnlySpan(Of Byte), Optional options As JsonSerializerOptions = null) As TValue" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;byte&gt; * System.Text.Json.Serialization.JsonSerializerOptions -&gt; 'Value" Usage="System.Text.Json.Serialization.JsonSerializer.Parse (utf8Json, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="utf8Json">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public static TValue Parse&lt;TValue&gt; (string json, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TValue Parse&lt;TValue&gt;(string json, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.Parse``1(System.String,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse(Of TValue) (json As String, Optional options As JsonSerializerOptions = null) As TValue" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Text.Json.Serialization.JsonSerializerOptions -&gt; 'Value" Usage="System.Text.Json.Serialization.JsonSerializer.Parse (json, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="json" Type="System.String" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="json">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ValueTask&lt;object&gt; ReadAsync (System.IO.Stream utf8Json, Type returnType, System.Text.Json.Serialization.JsonSerializerOptions options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ValueTask`1&lt;object&gt; ReadAsync(class System.IO.Stream utf8Json, class System.Type returnType, class System.Text.Json.Serialization.JsonSerializerOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.ReadAsync(System.IO.Stream,System.Type,System.Text.Json.Serialization.JsonSerializerOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReadAsync : System.IO.Stream * Type * System.Text.Json.Serialization.JsonSerializerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;obj&gt;" Usage="System.Text.Json.Serialization.JsonSerializer.ReadAsync (utf8Json, returnType, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.IO.Stream" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Json">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ValueTask&lt;TValue&gt; ReadAsync&lt;TValue&gt; (System.IO.Stream utf8Json, System.Text.Json.Serialization.JsonSerializerOptions options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ValueTask`1&lt;!!TValue&gt; ReadAsync&lt;TValue&gt;(class System.IO.Stream utf8Json, class System.Text.Json.Serialization.JsonSerializerOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.ReadAsync``1(System.IO.Stream,System.Text.Json.Serialization.JsonSerializerOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReadAsync : System.IO.Stream * System.Text.Json.Serialization.JsonSerializerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;'Value&gt;" Usage="System.Text.Json.Serialization.JsonSerializer.ReadAsync (utf8Json, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;TValue&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="utf8Json" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="utf8Json">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBytes">
+      <MemberSignature Language="C#" Value="public static byte[] ToBytes (object value, Type type, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] ToBytes(object value, class System.Type type, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.ToBytes(System.Object,System.Type,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="F#" Value="static member ToBytes : obj * Type * System.Text.Json.Serialization.JsonSerializerOptions -&gt; byte[]" Usage="System.Text.Json.Serialization.JsonSerializer.ToBytes (value, type, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBytes&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public static byte[] ToBytes&lt;TValue&gt; (TValue value, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] ToBytes&lt;TValue&gt;(!!TValue value, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.ToBytes``1(``0,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToBytes(Of TValue) (value As TValue, Optional options As JsonSerializerOptions = null) As Byte()" />
+      <MemberSignature Language="F#" Value="static member ToBytes : 'Value * System.Text.Json.Serialization.JsonSerializerOptions -&gt; byte[]" Usage="System.Text.Json.Serialization.JsonSerializer.ToBytes (value, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="TValue" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (object value, Type type, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(object value, class System.Type type, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.ToString(System.Object,System.Type,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="F#" Value="static member ToString : obj * Type * System.Text.Json.Serialization.JsonSerializerOptions -&gt; string" Usage="System.Text.Json.Serialization.JsonSerializer.ToString (value, type, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public static string ToString&lt;TValue&gt; (TValue value, System.Text.Json.Serialization.JsonSerializerOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString&lt;TValue&gt;(!!TValue value, class System.Text.Json.Serialization.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.ToString``1(``0,System.Text.Json.Serialization.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString(Of TValue) (value As TValue, Optional options As JsonSerializerOptions = null) As String" />
+      <MemberSignature Language="F#" Value="static member ToString : 'Value * System.Text.Json.Serialization.JsonSerializerOptions -&gt; string" Usage="System.Text.Json.Serialization.JsonSerializer.ToString (value, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="TValue" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAsync (object value, Type type, System.IO.Stream utf8Json, System.Text.Json.Serialization.JsonSerializerOptions options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAsync(object value, class System.Type type, class System.IO.Stream utf8Json, class System.Text.Json.Serialization.JsonSerializerOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.WriteAsync(System.Object,System.Type,System.IO.Stream,System.Text.Json.Serialization.JsonSerializerOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member WriteAsync : obj * Type * System.IO.Stream * System.Text.Json.Serialization.JsonSerializerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="System.Text.Json.Serialization.JsonSerializer.WriteAsync (value, type, utf8Json, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="utf8Json" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="utf8Json">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAsync&lt;TValue&gt; (TValue value, System.IO.Stream utf8Json, System.Text.Json.Serialization.JsonSerializerOptions options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAsync&lt;TValue&gt;(!!TValue value, class System.IO.Stream utf8Json, class System.Text.Json.Serialization.JsonSerializerOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonSerializer.WriteAsync``1(``0,System.IO.Stream,System.Text.Json.Serialization.JsonSerializerOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member WriteAsync : 'Value * System.IO.Stream * System.Text.Json.Serialization.JsonSerializerOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="System.Text.Json.Serialization.JsonSerializer.WriteAsync (value, utf8Json, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="TValue" />
+        <Parameter Name="utf8Json" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="System.Text.Json.Serialization.JsonSerializerOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="utf8Json">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

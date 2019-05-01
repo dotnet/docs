@@ -1141,11 +1141,16 @@
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.IExtenderProvider.CanExtend">
-      <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object component);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object component) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Function CanExtend (component As Object) As Boolean Implements IExtenderProvider.CanExtend" />
-      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ component) = System::ComponentModel::IExtenderProvider::CanExtend;" />
+      <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object extendee);" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object extendee) cil managed" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Function CanExtend (extendee As Object) As Boolean Implements IExtenderProvider.CanExtend" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ extendee) = System::ComponentModel::IExtenderProvider::CanExtend;" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object component);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object component) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="VB.NET" Value="Function CanExtend (component As Object) As Boolean Implements IExtenderProvider.CanExtend" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ component) = System::ComponentModel::IExtenderProvider::CanExtend;" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
@@ -1164,10 +1169,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="extendee" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="component" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.Object" /> to receive the extender properties.</param>
+        <param name="extendee">To be added.</param>
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />.</summary>
         <returns>
           <see langword="true" /> if this object can provide extender properties to the specified object; otherwise, <see langword="false" />.</returns>

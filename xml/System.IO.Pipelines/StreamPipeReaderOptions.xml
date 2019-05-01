@@ -1,0 +1,109 @@
+﻿<Type Name="StreamPipeReaderOptions" FullName="System.IO.Pipelines.StreamPipeReaderOptions">
+  <TypeSignature Language="C#" Value="public class StreamPipeReaderOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamPipeReaderOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipelines.StreamPipeReaderOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamPipeReaderOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamPipeReaderOptions" />
+  <TypeSignature Language="F#" Value="type StreamPipeReaderOptions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipelines</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StreamPipeReaderOptions (System.Buffers.MemoryPool&lt;byte&gt; pool = null, int bufferSize = 4096, int minimumReadSize = 1024);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.MemoryPool`1&lt;unsigned int8&gt; pool, int32 bufferSize, int32 minimumReadSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.StreamPipeReaderOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional pool As MemoryPool(Of Byte) = null, Optional bufferSize As Integer = 4096, Optional minimumReadSize As Integer = 1024)" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipelines.StreamPipeReaderOptions : System.Buffers.MemoryPool&lt;byte&gt; * int * int -&gt; System.IO.Pipelines.StreamPipeReaderOptions" Usage="new System.IO.Pipelines.StreamPipeReaderOptions (pool, bufferSize, minimumReadSize)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pool" Type="System.Buffers.MemoryPool&lt;System.Byte&gt;" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+        <Parameter Name="minimumReadSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pool">To be added.</param>
+        <param name="bufferSize">To be added.</param>
+        <param name="minimumReadSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferSize">
+      <MemberSignature Language="C#" Value="public int BufferSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BufferSize" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.StreamPipeReaderOptions.BufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BufferSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BufferSize : int" Usage="System.IO.Pipelines.StreamPipeReaderOptions.BufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumReadSize">
+      <MemberSignature Language="C#" Value="public int MinimumReadSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumReadSize" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.StreamPipeReaderOptions.MinimumReadSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumReadSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumReadSize { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumReadSize : int" Usage="System.IO.Pipelines.StreamPipeReaderOptions.MinimumReadSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pool">
+      <MemberSignature Language="C#" Value="public System.Buffers.MemoryPool&lt;byte&gt; Pool { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Buffers.MemoryPool`1&lt;unsigned int8&gt; Pool" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipelines.StreamPipeReaderOptions.Pool" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pool As MemoryPool(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Buffers::MemoryPool&lt;System::Byte&gt; ^ Pool { System::Buffers::MemoryPool&lt;System::Byte&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pool : System.Buffers.MemoryPool&lt;byte&gt;" Usage="System.IO.Pipelines.StreamPipeReaderOptions.Pool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.MemoryPool&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

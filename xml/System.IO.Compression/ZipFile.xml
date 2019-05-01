@@ -475,11 +475,12 @@
       <Docs>
         <param name="sourceArchiveFileName">The path on the file system to the archive that is to be extracted.</param>
         <param name="destinationDirectoryName">The path to the destination directory on the file system. The directory specified must not exist, but the directory that it is contained in must exist.</param>
-        <param name="overwriteFiles"><see langword="true" /> to overwrite files; <see langword="false" /> otherwise.</param>
+        <param name="overwriteFiles">
+          <see langword="true" /> to overwrite files; <see langword="false" /> otherwise.</param>
         <summary>Extracts all of the files in the specified archive to a directory on the file system.</summary>
         <remarks>
-          <format type="text/markdown">
-    <![CDATA[
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks
  The specified directory must not exist. The method creates the specified directory and all subdirectories.
  
@@ -493,9 +494,12 @@
 
           ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is a zero-length string, contains only whitespace, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> specifies a path, a file name, or both that exceed the system-defined maximum length. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is a zero-length string, contains only whitespace, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> specifies a path, a file name, or both that exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path specified by <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">The directory specified by <paramref name="destinationDirectoryName" /> already exists.
 
@@ -661,10 +665,12 @@ A <see cref="T:System.IO.Compression.ZipArchiveEntry" /> has been compressed usi
         <param name="sourceArchiveFileName">The path on the file system to the archive that is to be extracted.</param>
         <param name="destinationDirectoryName">The path to the destination directory on the file system. The directory specified must not exist, but the directory that it is contained in must exist.</param>
         <param name="entryNameEncoding">The encoding to use when reading entry names in this <see cref="T:System.IO.Compression.ZipArchive" />.</param>
-        <param name="overwriteFiles"><see langword="true" /> to overwrite files; <see langword="false" /> otherwise.</param>
+        <param name="overwriteFiles">
+          <see langword="true" /> to overwrite files; <see langword="false" /> otherwise.</param>
         <summary>Extracts all of the files in the specified archive to a directory on the file system.</summary>
         <remarks>
-<format type="text/markdown"><![CDATA[
+          <format type="text/markdown"><![CDATA[
+
 ## Remarks
  The specified directory must not exist. This method will create the specified directory and all subdirectories.
 
@@ -676,16 +682,18 @@ A <see cref="T:System.IO.Compression.ZipArchiveEntry" /> has been compressed usi
 
  If a file to be archived has an invalid last modified time, the first date and time representable in the Zip timestamp format (midnight on January 1, 1980) will be used.
  
-]]>
-</format>
+]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is a zero-length string, contains only whitespace, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is a zero-length string, contains only whitespace, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.
  
  -or- 
  
  <paramref name="entryNameEncoding" /> is set to a Unicode encoding other than UTF-8.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.IO.PathTooLongException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> specifies a path, a file name, or both that exceed the system-defined maximum length. </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> specifies a path, a file name, or both that exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path specified by <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">The directory specified by <paramref name="destinationDirectoryName" /> already exists.
 
@@ -705,8 +713,10 @@ Extracting a <see cref="T:System.IO.Compression.ZipArchiveEntry" /> would result
 
 A <see cref="T:System.IO.Compression.ZipArchiveEntry" /> has the same name as an already extracted entry from the same archive.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
-        <exception cref="T:System.NotSupportedException"><paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is in an invalid format. </exception>
-        <exception cref="T:System.IO.FileNotFoundException"><paramref name="sourceArchiveFileName" /> was not found.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="sourceArchiveFileName" /> or <paramref name="destinationDirectoryName" /> is in an invalid format. </exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="sourceArchiveFileName" /> was not found.</exception>
         <exception cref="T:System.IO.InvalidDataException">The archive specified by <paramref name="sourceArchiveFileName" /> is not a valid <see cref="T:System.IO.Compression.ZipArchive" />.
 
 -or-

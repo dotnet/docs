@@ -41,13 +41,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="firstPackUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="secondPackUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="firstPackUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
+        <Parameter Name="secondPackUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="firstPackUri">The first pack URI.</param>
@@ -201,6 +202,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -211,7 +213,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="packageUri">The URI of the referenced <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -267,6 +269,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -277,8 +280,8 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
+        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="packageUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -345,14 +348,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="fragment" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
+        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
+        <Parameter Name="fragment" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="packageUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -475,8 +479,10 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160055">Writing a Package Sample</related>
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
-        <exception cref="T:System.ArgumentNullException"><paramref name="partUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNormalizedPartUri">
@@ -525,7 +531,8 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
-        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPackageUri">
@@ -543,12 +550,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="packUri">The pack URI from which to return the URI of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -573,8 +581,10 @@
         <altmember cref="Overload:System.IO.Packaging.PackUriHelper.Create" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
-        <exception cref="T:System.ArgumentNullException"><paramref name="packUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="packUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="packUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="packUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPartUri">

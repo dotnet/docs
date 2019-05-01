@@ -106,6 +106,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnActivityExport">
+      <MemberSignature Language="C#" Value="public virtual void OnActivityExport (System.Diagnostics.Activity activity, object payload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnActivityExport(class System.Diagnostics.Activity activity, object payload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.OnActivityExport(System.Diagnostics.Activity,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnActivityExport(System::Diagnostics::Activity ^ activity, System::Object ^ payload);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivityExport : System.Diagnostics.Activity * obj -&gt; unit&#xA;override this.OnActivityExport : System.Diagnostics.Activity * obj -&gt; unit" Usage="diagnosticSource.OnActivityExport (activity, payload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Diagnostics.Activity" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="payload" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="payload">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivityImport">
+      <MemberSignature Language="C#" Value="public virtual void OnActivityImport (System.Diagnostics.Activity activity, object payload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnActivityImport(class System.Diagnostics.Activity activity, object payload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticSource.OnActivityImport(System.Diagnostics.Activity,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnActivityImport(System::Diagnostics::Activity ^ activity, System::Object ^ payload);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivityImport : System.Diagnostics.Activity * obj -&gt; unit&#xA;override this.OnActivityImport : System.Diagnostics.Activity * obj -&gt; unit" Usage="diagnosticSource.OnActivityImport (activity, payload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Diagnostics.Activity" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="payload" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="payload">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StartActivity">
       <MemberSignature Language="C#" Value="public System.Diagnostics.Activity StartActivity (System.Diagnostics.Activity activity, object args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Activity StartActivity(class System.Diagnostics.Activity activity, object args) cil managed" />

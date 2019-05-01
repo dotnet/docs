@@ -1,0 +1,81 @@
+﻿<Type Name="DeserializationBlockedException" FullName="System.Runtime.Serialization.DeserializationBlockedException">
+  <TypeSignature Language="C#" Value="public sealed class DeserializationBlockedException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeserializationBlockedException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DeserializationBlockedException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeserializationBlockedException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeserializationBlockedException sealed : Exception" />
+  <TypeSignature Language="F#" Value="type DeserializationBlockedException = class&#xA;    inherit Exception" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeserializationBlockedException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DeserializationBlockedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeserializationBlockedException();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeserializationBlockedException (Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DeserializationBlockedException.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeserializationBlockedException(Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.DeserializationBlockedException : Exception -&gt; System.Runtime.Serialization.DeserializationBlockedException" Usage="new System.Runtime.Serialization.DeserializationBlockedException innerException" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeserializationBlockedException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DeserializationBlockedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeserializationBlockedException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.DeserializationBlockedException : string -&gt; System.Runtime.Serialization.DeserializationBlockedException" Usage="new System.Runtime.Serialization.DeserializationBlockedException message" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

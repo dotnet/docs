@@ -95,7 +95,8 @@
         <summary>Creates an object instance that derives from class <typeparamref name="TProxy" /> and implements interface <typeparamref name="T" />.</summary>
         <returns>An object instance that implements <typeparamref name="T" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><typeparamref name="T" /> is a class, or <typeparamref name="TProxy" /> is sealed or does not have a parameterless constructor.</exception>
+        <exception cref="T:System.ArgumentException">
+          <typeparamref name="T" /> is a class, or <typeparamref name="TProxy" /> is sealed or does not have a parameterless constructor.</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke">

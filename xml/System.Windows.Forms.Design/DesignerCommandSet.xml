@@ -1,0 +1,106 @@
+﻿<Type Name="DesignerCommandSet" FullName="System.Windows.Forms.Design.DesignerCommandSet">
+  <TypeSignature Language="C#" Value="public class DesignerCommandSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerCommandSet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerCommandSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerCommandSet" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerCommandSet" />
+  <TypeSignature Language="F#" Value="type DesignerCommandSet = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerCommandSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DesignerCommandSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerCommandSet();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerCommandSet.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Windows.Forms.Design.DesignerCommandSet.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommands">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection GetCommands (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetCommands(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DesignerCommandSet.GetCommands(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCommands (name As String) As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ICollection ^ GetCommands(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member GetCommands : string -&gt; System.Collections.ICollection&#xA;override this.GetCommands : string -&gt; System.Collections.ICollection" Usage="designerCommandSet.GetCommands name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerVerbCollection Verbs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerCommandSet.Verbs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Verbs As DesignerVerbCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.Windows.Forms.Design.DesignerCommandSet.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

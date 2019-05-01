@@ -9,6 +9,9 @@
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -30,6 +33,9 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>
       </ReturnValue>
@@ -50,6 +56,9 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>

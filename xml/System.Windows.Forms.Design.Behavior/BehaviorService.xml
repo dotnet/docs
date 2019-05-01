@@ -22,11 +22,6 @@
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Manages user interface in the designer. This class cannot be inherited.</summary>
     <remarks>

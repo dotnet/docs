@@ -875,7 +875,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ s, System::Text::Encoding ^ e);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member UrlDecode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (s, e)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member UrlDecode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (s, e)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (s, e)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1416,7 +1416,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ s, System::Text::Encoding ^ Enc);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (s, Enc)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (s, Enc)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (s, Enc)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1828,7 +1828,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlPathEncode(System::String ^ s);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="static member UrlPathEncode : string -&gt; string" Usage="System.Web.HttpUtility.UrlPathEncode s" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member UrlPathEncode : string -&gt; string" Usage="System.Web.HttpUtility.UrlPathEncode s" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member UrlPathEncode : string -&gt; string" Usage="System.Web.HttpUtility.UrlPathEncode s" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

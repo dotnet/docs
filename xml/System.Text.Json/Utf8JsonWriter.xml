@@ -65,7 +65,7 @@ This is the reason why the constructor accepts a <xref:System.Text.Json.JsonWrit
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-            <paramref name="bufferWriter" /> is <see langword="null" />.</exception>
+          <paramref name="bufferWriter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BytesCommitted">
@@ -159,7 +159,8 @@ The `CurrentDepth` property tracks the recursive depth of the nested objects / a
         <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isFinalBlock"><see langword="true" /> to indicate no more data will be written; otherwise, <see langword="false" />. This is used to validate
+        <param name="isFinalBlock">
+          <see langword="true" /> to indicate no more data will be written; otherwise, <see langword="false" />. This is used to validate
             that the JSON written so far is structurally valid if no more data is to follow.</param>
         <summary>Advances the underlying <see cref="T:System.Buffers.IBufferWriter`1" /> based on what has been written so far.</summary>
         <remarks>To be added.</remarks>
@@ -226,11 +227,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON literal "true" or "false" as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Boolean" /> value (as a JSON literal "true" or "false") as part of a name/value pair of a JSON object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -257,11 +259,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON literal "true" or "false" as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Boolean" /> value (as a JSON literal "true" or "false") as part of a name/value pair of a JSON object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -288,11 +291,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON literal "true" or "false" as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Boolean" /> value (as a JSON literal "true" or "false") as part of a name/value pair of a JSON object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -343,11 +347,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       </Parameters>
       <Docs>
         <param name="utf8Value">The UTF-8 encoded value to be written as a JSON comment.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the UTF-8 text value as a JSON comment (within <c>/*..*/</c>).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8Value" /> is too large.</exception>
+          <paramref name="utf8Value" /> is too large.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCommentValue">
@@ -370,11 +375,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       </Parameters>
       <Docs>
         <param name="value">The UTF-16 encoded value to be written as a UTF-8 transcoded JSON comment.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the UTF-16 text value as a JSON comment (within <c>/*..*/</c>).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="value" /> is too large.</exception>
+          <paramref name="value" /> is too large.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCommentValue">
@@ -397,11 +403,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       </Parameters>
       <Docs>
         <param name="value">The UTF-16 encoded value to be written as a UTF-8 transcoded JSON comment.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the string text value as a JSON comment (within <c>/*..*/</c>).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="value" /> is too large.</exception>
+          <paramref name="value" /> is too large.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndArray">
@@ -470,11 +477,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       </Parameters>
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and the JSON literal "null" as part of a name/value pair of a JSON object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -499,11 +507,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       </Parameters>
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to transcode and write as UTF-8.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and the JSON literal "null" as part of a name/value pair of a JSON object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -528,11 +537,12 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       </Parameters>
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and the JSON literal "null" as part of a name/value pair of a JSON object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -582,13 +592,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Decimal" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Decimal" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -615,13 +626,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Double" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Double" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -648,13 +660,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Int32" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Int32" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -681,13 +694,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Int64" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Int64" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -714,13 +728,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Single" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Single" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -752,13 +767,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.UInt32" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.UInt32" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -790,13 +806,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.UInt64" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.UInt64" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -823,13 +840,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Decimal" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Decimal" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -856,13 +874,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Double" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Double" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -889,13 +908,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Int32" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Int32" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -922,13 +942,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Int64" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Int64" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -955,13 +976,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Single" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Single" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -993,13 +1015,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.UInt32" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.UInt32" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1031,13 +1054,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.UInt64" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.UInt64" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1064,13 +1088,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Decimal" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Decimal" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1097,13 +1122,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Double" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Double" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1130,13 +1156,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Int32" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Int32" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1163,13 +1190,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Int64" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Int64" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1196,13 +1224,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Single" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Single" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G').
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1234,13 +1263,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.UInt32" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.UInt32" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1272,13 +1302,14 @@ Call <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> before getting the current 
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON number as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.UInt64" /> value (as a JSON number) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.UInt64" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'G'). For example, 32767.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1537,11 +1568,12 @@ if this would result in an invalid JSON to be written (while validation is enabl
       </Parameters>
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON array to be written.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the beginning of a JSON array with a property name as the key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The depth of the JSON has exceeded the maximum depth of 1000.
 
@@ -1571,11 +1603,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON array to be transcoded and written as UTF-8.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the beginning of a JSON array with a property name as the key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The depth of the JSON has exceeded the maximum depth of 1000.
 
@@ -1605,11 +1638,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON array to be transcoded and written as UTF-8.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the beginning of a JSON array with a property name as the key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The depth of the JSON has exceeded the maximum depth of 1000.
 
@@ -1667,11 +1701,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the beginning of a JSON object with a property name as the key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The depth of the JSON has exceeded the maximum depth of 1000.
 
@@ -1701,11 +1736,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the beginning of a JSON object with a property name as the key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The depth of the JSON has exceeded the maximum depth of 1000.
 
@@ -1735,11 +1771,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the beginning of a JSON object with a property name as the key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The depth of the JSON has exceeded the maximum depth of 1000.
 
@@ -1771,13 +1808,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.DateTime" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.DateTime" /> using the round-trippable ('O') <see cref="T:System.Buffers.StandardFormat" /> . For example, 2017-06-12T05:30:45.7680000.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1804,13 +1842,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.DateTimeOffset" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.DateTimeOffset" /> using the round-trippable ('O') <see cref="T:System.Buffers.StandardFormat" /> . For example, 2017-06-12T05:30:45.7680000-07:00.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1837,13 +1876,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="utf8PropertyName">The UTF-8 encoded property name of the JSON object to be written.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Guid" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Guid" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'D'), as the form: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8PropertyName" /> is too large.</exception>
+          <paramref name="utf8PropertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -1969,13 +2009,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.DateTime" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.DateTime" /> using the round-trippable ('O') <see cref="T:System.Buffers.StandardFormat" /> . For example, 2017-06-12T05:30:45.7680000.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2002,13 +2043,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.DateTimeOffset" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.DateTimeOffset" /> using the round-trippable ('O') <see cref="T:System.Buffers.StandardFormat" /> . For example, 2017-06-12T05:30:45.7680000-07:00.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2035,13 +2077,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Guid" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Guid" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'D'), as the form: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2167,13 +2210,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.DateTime" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.DateTime" /> using the round-trippable ('O') <see cref="T:System.Buffers.StandardFormat" /> . For example, 2017-06-12T05:30:45.7680000.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2200,13 +2244,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.DateTimeOffset" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.DateTimeOffset" /> using the round-trippable ('O') <see cref="T:System.Buffers.StandardFormat" /> . For example, 2017-06-12T05:30:45.7680000-07:00.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2233,13 +2278,14 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       <Docs>
         <param name="propertyName">The UTF-16 encoded property name of the JSON object to be transcoded and written as UTF-8.</param>
         <param name="value">The value to be written as a JSON string as part of the name/value pair.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter; its default value is <see langword="true" />.</param>
         <summary>Writes the property name and <see cref="T:System.Guid" /> value (as a JSON string) as part of a name/value pair of a JSON object.</summary>
         <remarks>
             Writes the <see cref="T:System.Guid" /> using the default <see cref="T:System.Buffers.StandardFormat" /> (that is, 'D'), as the form: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn.
             </remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="propertyName" /> is too large.</exception>
+          <paramref name="propertyName" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2447,11 +2493,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="utf8Value">The UTF-8 encoded value to be written as a JSON string element of a JSON array.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the UTF-8 text value (as a JSON string) as an element of a JSON array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="utf8Value" /> is too large.</exception>
+          <paramref name="utf8Value" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2476,11 +2523,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="value">The UTF-16 encoded value to be written as a UTF-8 transcoded JSON string element of a JSON array.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the UTF-16 text value (as a JSON string) as an element of a JSON array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="value" /> is too large.</exception>
+          <paramref name="value" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>
@@ -2505,11 +2553,12 @@ The JSON data to be written would be invalid JSON (while validation is enabled).
       </Parameters>
       <Docs>
         <param name="value">The UTF-16 encoded value to be written as a UTF-8 transcoded JSON string element of a JSON array.</param>
-        <param name="escape"><see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
+        <param name="escape">
+          <see langword="false" /> to indicate the writer should assume the property name is properly escaped and skips the escaping step; otherwise, <see langword="true" />. This is an optional parameter and its default value is <see langword="true" />.</param>
         <summary>Writes the string text value (as a JSON string) as an element of a JSON array.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
-            <paramref name="value" /> is too large.</exception>
+          <paramref name="value" /> is too large.</exception>
         <exception cref="T:System.InvalidOperationException">
             The JSON data to be written would be invalid JSON (while validation is enabled).</exception>
       </Docs>

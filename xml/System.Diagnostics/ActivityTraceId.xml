@@ -1,0 +1,320 @@
+﻿<Type Name="ActivityTraceId" FullName="System.Diagnostics.ActivityTraceId">
+  <TypeSignature Language="C#" Value="public struct ActivityTraceId : IEquatable&lt;System.Diagnostics.ActivityTraceId&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ActivityTraceId extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Diagnostics.ActivityTraceId&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.ActivityTraceId" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ActivityTraceId&#xA;Implements IEquatable(Of ActivityTraceId)" />
+  <TypeSignature Language="C++ CLI" Value="public value class ActivityTraceId : IEquatable&lt;System::Diagnostics::ActivityTraceId&gt;" />
+  <TypeSignature Language="F#" Value="type ActivityTraceId = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Diagnostics.ActivityTraceId&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.CopyTo(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Span(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Span&lt;System::Byte&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Span&lt;byte&gt; -&gt; unit" Usage="activityTraceId.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromBytes">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.ActivityTraceId CreateFromBytes (ReadOnlySpan&lt;byte&gt; idData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Diagnostics.ActivityTraceId CreateFromBytes(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; idData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.CreateFromBytes(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromBytes (idData As ReadOnlySpan(Of Byte)) As ActivityTraceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::ActivityTraceId CreateFromBytes(ReadOnlySpan&lt;System::Byte&gt; idData);" />
+      <MemberSignature Language="F#" Value="static member CreateFromBytes : ReadOnlySpan&lt;byte&gt; -&gt; System.Diagnostics.ActivityTraceId" Usage="System.Diagnostics.ActivityTraceId.CreateFromBytes idData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceId</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="idData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromString">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.ActivityTraceId CreateFromString (ReadOnlySpan&lt;char&gt; idData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Diagnostics.ActivityTraceId CreateFromString(valuetype System.ReadOnlySpan`1&lt;char&gt; idData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.CreateFromString(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromString (idData As ReadOnlySpan(Of Char)) As ActivityTraceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::ActivityTraceId CreateFromString(ReadOnlySpan&lt;char&gt; idData);" />
+      <MemberSignature Language="F#" Value="static member CreateFromString : ReadOnlySpan&lt;char&gt; -&gt; System.Diagnostics.ActivityTraceId" Usage="System.Diagnostics.ActivityTraceId.CreateFromString idData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceId</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idData" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="idData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromUtf8String">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.ActivityTraceId CreateFromUtf8String (ReadOnlySpan&lt;byte&gt; idData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Diagnostics.ActivityTraceId CreateFromUtf8String(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; idData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.CreateFromUtf8String(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromUtf8String (idData As ReadOnlySpan(Of Byte)) As ActivityTraceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::ActivityTraceId CreateFromUtf8String(ReadOnlySpan&lt;System::Byte&gt; idData);" />
+      <MemberSignature Language="F#" Value="static member CreateFromUtf8String : ReadOnlySpan&lt;byte&gt; -&gt; System.Diagnostics.ActivityTraceId" Usage="System.Diagnostics.ActivityTraceId.CreateFromUtf8String idData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceId</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="idData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRandom">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.ActivityTraceId CreateRandom ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Diagnostics.ActivityTraceId CreateRandom() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.CreateRandom" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRandom () As ActivityTraceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::ActivityTraceId CreateRandom();" />
+      <MemberSignature Language="F#" Value="static member CreateRandom : unit -&gt; System.Diagnostics.ActivityTraceId" Usage="System.Diagnostics.ActivityTraceId.CreateRandom " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ActivityTraceId</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Diagnostics.ActivityTraceId traceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Diagnostics.ActivityTraceId traceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.Equals(System.Diagnostics.ActivityTraceId)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (traceId As ActivityTraceId) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Diagnostics::ActivityTraceId traceId);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Diagnostics.ActivityTraceId -&gt; bool" Usage="activityTraceId.Equals traceId" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="traceId" Type="System.Diagnostics.ActivityTraceId" />
+      </Parameters>
+      <Docs>
+        <param name="traceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="activityTraceId.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="activityTraceId.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (ref System.Diagnostics.ActivityTraceId traceId1, ref System.Diagnostics.ActivityTraceId traceId2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality([in]valuetype System.Diagnostics.ActivityTraceId&amp; traceId1, [in]valuetype System.Diagnostics.ActivityTraceId&amp; traceId2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.op_Equality(System.Diagnostics.ActivityTraceId@,System.Diagnostics.ActivityTraceId@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (ByRef traceId1 As ActivityTraceId, ByRef traceId2 As ActivityTraceId) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Diagnostics::ActivityTraceId % traceId1, System::Diagnostics::ActivityTraceId % traceId2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) :  *  -&gt; bool" Usage="traceId1 = traceId2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="traceId1" Type="System.Diagnostics.ActivityTraceId" RefType="ref" />
+        <Parameter Name="traceId2" Type="System.Diagnostics.ActivityTraceId" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="traceId1">To be added.</param>
+        <param name="traceId2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (ref System.Diagnostics.ActivityTraceId traceId1, ref System.Diagnostics.ActivityTraceId traceId2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality([in]valuetype System.Diagnostics.ActivityTraceId&amp; traceId1, [in]valuetype System.Diagnostics.ActivityTraceId&amp; traceId2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.op_Inequality(System.Diagnostics.ActivityTraceId@,System.Diagnostics.ActivityTraceId@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (ByRef traceId1 As ActivityTraceId, ByRef traceId2 As ActivityTraceId) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Diagnostics::ActivityTraceId % traceId1, System::Diagnostics::ActivityTraceId % traceId2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality :  *  -&gt; bool" Usage="System.Diagnostics.ActivityTraceId.op_Inequality (traceId1, traceId2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="traceId1" Type="System.Diagnostics.ActivityTraceId" RefType="ref" />
+        <Parameter Name="traceId2" Type="System.Diagnostics.ActivityTraceId" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="traceId1">To be added.</param>
+        <param name="traceId2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToHexString">
+      <MemberSignature Language="C#" Value="public string ToHexString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToHexString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.ToHexString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToHexString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToHexString();" />
+      <MemberSignature Language="F#" Value="member this.ToHexString : unit -&gt; string" Usage="activityTraceId.ToHexString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ActivityTraceId.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activityTraceId.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

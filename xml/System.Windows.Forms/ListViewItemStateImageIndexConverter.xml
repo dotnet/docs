@@ -1,0 +1,85 @@
+﻿<Type Name="ListViewItemStateImageIndexConverter" FullName="System.Windows.Forms.ListViewItemStateImageIndexConverter">
+  <TypeSignature Language="C#" Value="public class ListViewItemStateImageIndexConverter : System.Windows.Forms.ImageIndexConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewItemStateImageIndexConverter extends System.Windows.Forms.ImageIndexConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemStateImageIndexConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewItemStateImageIndexConverter&#xA;Inherits ImageIndexConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewItemStateImageIndexConverter : System::Windows::Forms::ImageIndexConverter" />
+  <TypeSignature Language="F#" Value="type ListViewItemStateImageIndexConverter = class&#xA;    inherit ImageIndexConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ImageIndexConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItemStateImageIndexConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItemStateImageIndexConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewItemStateImageIndexConverter();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValues">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItemStateImageIndexConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="listViewItemStateImageIndexConverter.GetStandardValues context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeNoneAsStandardValue">
+      <MemberSignature Language="C#" Value="protected override bool IncludeNoneAsStandardValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeNoneAsStandardValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItemStateImageIndexConverter.IncludeNoneAsStandardValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IncludeNoneAsStandardValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IncludeNoneAsStandardValue { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeNoneAsStandardValue : bool" Usage="System.Windows.Forms.ListViewItemStateImageIndexConverter.IncludeNoneAsStandardValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

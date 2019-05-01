@@ -18,11 +18,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents a single user interface (UI) entity managed by an <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</summary>
     <remarks>

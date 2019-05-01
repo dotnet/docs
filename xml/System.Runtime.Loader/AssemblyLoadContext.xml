@@ -129,6 +129,70 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AssemblyLoadContext (string name, bool isCollectible = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, bool isCollectible) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Loader.AssemblyLoadContext.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional isCollectible As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Loader.AssemblyLoadContext : string * bool -&gt; System.Runtime.Loader.AssemblyLoadContext" Usage="new System.Runtime.Loader.AssemblyLoadContext (name, isCollectible)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="isCollectible" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="isCollectible">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Runtime.Loader.AssemblyLoadContext&gt; All { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class System.Runtime.Loader.AssemblyLoadContext&gt; All" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Loader.AssemblyLoadContext.All" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property All As IEnumerable(Of AssemblyLoadContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IEnumerable&lt;System::Runtime::Loader::AssemblyLoadContext ^&gt; ^ All { System::Collections::Generic::IEnumerable&lt;System::Runtime::Loader::AssemblyLoadContext ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.All : seq&lt;System.Runtime.Loader.AssemblyLoadContext&gt;" Usage="System.Runtime.Loader.AssemblyLoadContext.All" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Runtime.Loader.AssemblyLoadContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assemblies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; Assemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; Assemblies" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Loader.AssemblyLoadContext.Assemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assemblies As IEnumerable(Of Assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ Assemblies { System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Assemblies : seq&lt;System.Reflection.Assembly&gt;" Usage="System.Runtime.Loader.AssemblyLoadContext.Assemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public static System.Runtime.Loader.AssemblyLoadContext Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Runtime.Loader.AssemblyLoadContext Default" />
@@ -591,6 +655,27 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <exception cref="T:System.IO.FileNotFoundException">The unmanaged library cannot be found.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Loader.AssemblyLoadContext.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Loader.AssemblyLoadContext.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Resolving">
       <MemberSignature Language="C#" Value="public event Func&lt;System.Runtime.Loader.AssemblyLoadContext,System.Reflection.AssemblyName,System.Reflection.Assembly&gt; Resolving;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`3&lt;class System.Runtime.Loader.AssemblyLoadContext, class System.Reflection.AssemblyName, class System.Reflection.Assembly&gt; Resolving" />
@@ -636,7 +721,7 @@ This constructor is protected. It can only be called from the <xref:System.Runti
       <MemberSignature Language="C#" Value="public event Func&lt;System.Reflection.Assembly,string,IntPtr&gt; ResolvingUnmanagedDll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Func`3&lt;class System.Reflection.Assembly, string, native int&gt; ResolvingUnmanagedDll" />
       <MemberSignature Language="DocId" Value="E:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll" />
-      <MemberSignature Language="VB.NET" Value="Public Event ResolvingUnmanagedDll As Func(Of Assembly, String, IntPtr) " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ResolvingUnmanagedDll As Func(Of Assembly, String, IntPtr) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Func&lt;System::Reflection::Assembly ^, System::String ^, IntPtr&gt; ^ ResolvingUnmanagedDll;" />
       <MemberSignature Language="F#" Value="member this.ResolvingUnmanagedDll : Func&lt;System.Reflection.Assembly, string, nativeint&gt; " Usage="member this.ResolvingUnmanagedDll : System.Func&lt;System.Reflection.Assembly, System.string, System.nativeint&gt; " />
       <MemberType>Event</MemberType>

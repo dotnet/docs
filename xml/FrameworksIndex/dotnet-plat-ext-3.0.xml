@@ -13,7 +13,6 @@
     <Assembly Name="System.Composition.Runtime" Version="1.0.34.0" />
     <Assembly Name="System.Composition.TypedParts" Version="1.0.34.0" />
     <Assembly Name="System.Configuration.ConfigurationManager" Version="4.0.2.0" />
-    <Assembly Name="System.Data.DataSetExtensions" Version="4.0.0.0" />
     <Assembly Name="System.Data.Odbc" Version="4.0.1.0" />
     <Assembly Name="System.Data.SqlClient" Version="4.6.0.0" />
     <Assembly Name="System.Diagnostics.EventLog" Version="4.0.1.0" />
@@ -35,7 +34,7 @@
     <Assembly Name="System.Reflection.Context" Version="4.0.0.0" />
     <Assembly Name="System.Reflection.MetadataLoadContext" Version="4.0.0.0" />
     <Assembly Name="System.Runtime.Caching" Version="4.0.0.0" />
-    <Assembly Name="System.Runtime.CompilerServices.Unsafe" Version="4.0.5.0" />
+    <Assembly Name="System.Runtime.Intrinsics.Experimental" Version="4.0.0.0" />
     <Assembly Name="System.Runtime.WindowsRuntime" Version="4.0.14.0" />
     <Assembly Name="System.Runtime.WindowsRuntime.UI.Xaml" Version="4.0.4.0" />
     <Assembly Name="System.Security.AccessControl" Version="4.1.1.0" />
@@ -58,6 +57,7 @@
     <Assembly Name="System.Text.Encodings.Web" Version="4.0.4.0" />
     <Assembly Name="System.Threading.AccessControl" Version="4.0.4.0" />
     <Assembly Name="System.Threading.Channels" Version="4.0.1.0" />
+    <Assembly Name="System.Utf8String.Experimental" Version="4.0.0.0" />
     <Assembly Name="System.Windows.Extensions" Version="4.0.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.CSharp">
@@ -3962,110 +3962,6 @@
       <Member Id="P:System.Data.Common.DBDataPermissionAttribute.KeyRestrictions" />
     </Type>
   </Namespace>
-  <Namespace Name="System.Data">
-    <Type Name="System.Data.DataRowComparer" Id="T:System.Data.DataRowComparer">
-      <Member Id="P:System.Data.DataRowComparer.Default" />
-    </Type>
-    <Type Name="System.Data.DataRowComparer`1" Id="T:System.Data.DataRowComparer`1">
-      <Member Id="M:System.Data.DataRowComparer`1.Equals(`0,`0)" />
-      <Member Id="M:System.Data.DataRowComparer`1.GetHashCode(`0)" />
-      <Member Id="P:System.Data.DataRowComparer`1.Default" />
-    </Type>
-    <Type Name="System.Data.DataRowExtensions" Id="T:System.Data.DataRowExtensions">
-      <Member Id="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Data.DataColumn)" />
-      <Member Id="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Data.DataColumn,System.Data.DataRowVersion)" />
-      <Member Id="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Int32)" />
-      <Member Id="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.Int32,System.Data.DataRowVersion)" />
-      <Member Id="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.String)" />
-      <Member Id="M:System.Data.DataRowExtensions.Field``1(System.Data.DataRow,System.String,System.Data.DataRowVersion)" />
-      <Member Id="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Data.DataColumn,``0)" />
-      <Member Id="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.Int32,``0)" />
-      <Member Id="M:System.Data.DataRowExtensions.SetField``1(System.Data.DataRow,System.String,``0)" />
-    </Type>
-    <Type Name="System.Data.DataTableExtensions" Id="T:System.Data.DataTableExtensions">
-      <Member Id="M:System.Data.DataTableExtensions.AsEnumerable(System.Data.DataTable)" />
-      <Member Id="M:System.Data.DataTableExtensions.CopyToDataTable``1(System.Collections.Generic.IEnumerable{``0})" />
-      <Member Id="M:System.Data.DataTableExtensions.CopyToDataTable``1(System.Collections.Generic.IEnumerable{``0},System.Data.DataTable,System.Data.LoadOption)" />
-      <Member Id="M:System.Data.DataTableExtensions.CopyToDataTable``1(System.Collections.Generic.IEnumerable{``0},System.Data.DataTable,System.Data.LoadOption,System.Data.FillErrorEventHandler)" />
-    </Type>
-    <Type Name="System.Data.EnumerableRowCollection" Id="T:System.Data.EnumerableRowCollection">
-      <Member Id="M:System.Data.EnumerableRowCollection.System#Collections#IEnumerable#GetEnumerator" />
-    </Type>
-    <Type Name="System.Data.EnumerableRowCollection`1" Id="T:System.Data.EnumerableRowCollection`1">
-      <Member Id="M:System.Data.EnumerableRowCollection`1.GetEnumerator" />
-      <Member Id="M:System.Data.EnumerableRowCollection`1.System#Collections#IEnumerable#GetEnumerator" />
-    </Type>
-    <Type Name="System.Data.EnumerableRowCollectionExtensions" Id="T:System.Data.EnumerableRowCollectionExtensions">
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.Cast``1(System.Data.EnumerableRowCollection)" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.OrderBy``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.OrderBy``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.OrderByDescending``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.OrderByDescending``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.ThenBy``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.ThenBy``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.ThenByDescending``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.ThenByDescending``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <Member Id="M:System.Data.EnumerableRowCollectionExtensions.Where``1(System.Data.EnumerableRowCollection{``0},System.Func{``0,System.Boolean})" />
-    </Type>
-    <Type Name="System.Data.OperationAbortedException" Id="T:System.Data.OperationAbortedException" />
-    <Type Name="System.Data.OrderedEnumerableRowCollection`1" Id="T:System.Data.OrderedEnumerableRowCollection`1" />
-    <Type Name="System.Data.SqlDbType" Id="T:System.Data.SqlDbType">
-      <Member Id="F:System.Data.SqlDbType.BigInt" />
-      <Member Id="F:System.Data.SqlDbType.Binary" />
-      <Member Id="F:System.Data.SqlDbType.Bit" />
-      <Member Id="F:System.Data.SqlDbType.Char" />
-      <Member Id="F:System.Data.SqlDbType.Date" />
-      <Member Id="F:System.Data.SqlDbType.DateTime" />
-      <Member Id="F:System.Data.SqlDbType.DateTime2" />
-      <Member Id="F:System.Data.SqlDbType.DateTimeOffset" />
-      <Member Id="F:System.Data.SqlDbType.Decimal" />
-      <Member Id="F:System.Data.SqlDbType.Float" />
-      <Member Id="F:System.Data.SqlDbType.Image" />
-      <Member Id="F:System.Data.SqlDbType.Int" />
-      <Member Id="F:System.Data.SqlDbType.Money" />
-      <Member Id="F:System.Data.SqlDbType.NChar" />
-      <Member Id="F:System.Data.SqlDbType.NText" />
-      <Member Id="F:System.Data.SqlDbType.NVarChar" />
-      <Member Id="F:System.Data.SqlDbType.Real" />
-      <Member Id="F:System.Data.SqlDbType.SmallDateTime" />
-      <Member Id="F:System.Data.SqlDbType.SmallInt" />
-      <Member Id="F:System.Data.SqlDbType.SmallMoney" />
-      <Member Id="F:System.Data.SqlDbType.Structured" />
-      <Member Id="F:System.Data.SqlDbType.Text" />
-      <Member Id="F:System.Data.SqlDbType.Time" />
-      <Member Id="F:System.Data.SqlDbType.Timestamp" />
-      <Member Id="F:System.Data.SqlDbType.TinyInt" />
-      <Member Id="F:System.Data.SqlDbType.Udt" />
-      <Member Id="F:System.Data.SqlDbType.UniqueIdentifier" />
-      <Member Id="F:System.Data.SqlDbType.VarBinary" />
-      <Member Id="F:System.Data.SqlDbType.VarChar" />
-      <Member Id="F:System.Data.SqlDbType.Variant" />
-      <Member Id="F:System.Data.SqlDbType.Xml" />
-    </Type>
-    <Type Name="System.Data.StatementCompletedEventArgs" Id="T:System.Data.StatementCompletedEventArgs">
-      <Member Id="M:System.Data.StatementCompletedEventArgs.#ctor(System.Int32)" />
-      <Member Id="P:System.Data.StatementCompletedEventArgs.RecordCount" />
-    </Type>
-    <Type Name="System.Data.StatementCompletedEventHandler" Id="T:System.Data.StatementCompletedEventHandler" />
-    <Type Name="System.Data.TypedTableBase`1" Id="T:System.Data.TypedTableBase`1">
-      <Member Id="M:System.Data.TypedTableBase`1.#ctor" />
-      <Member Id="M:System.Data.TypedTableBase`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:System.Data.TypedTableBase`1.Cast``1" />
-      <Member Id="M:System.Data.TypedTableBase`1.GetEnumerator" />
-      <Member Id="M:System.Data.TypedTableBase`1.System#Collections#IEnumerable#GetEnumerator" />
-    </Type>
-    <Type Name="System.Data.TypedTableBaseExtensions" Id="T:System.Data.TypedTableBaseExtensions">
-      <Member Id="M:System.Data.TypedTableBaseExtensions.AsEnumerable``1(System.Data.TypedTableBase{``0})" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.ElementAtOrDefault``1(System.Data.TypedTableBase{``0},System.Int32)" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.OrderBy``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.OrderBy``2(System.Data.TypedTableBase{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.OrderByDescending``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.OrderByDescending``2(System.Data.TypedTableBase{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.Select``2(System.Data.TypedTableBase{``0},System.Func{``0,``1})" />
-      <Member Id="M:System.Data.TypedTableBaseExtensions.Where``1(System.Data.TypedTableBase{``0},System.Func{``0,System.Boolean})" />
-    </Type>
-  </Namespace>
   <Namespace Name="System.Data.Odbc">
     <Type Name="System.Data.Odbc.OdbcCommand" Id="T:System.Data.Odbc.OdbcCommand">
       <Member Id="M:System.Data.Odbc.OdbcCommand.#ctor" />
@@ -4394,6 +4290,47 @@
       <Member Id="M:System.Data.OleDb.OleDbPermissionAttribute.CreatePermission" />
       <Member Id="P:System.Data.OleDb.OleDbPermissionAttribute.Provider" />
     </Type>
+  </Namespace>
+  <Namespace Name="System.Data">
+    <Type Name="System.Data.OperationAbortedException" Id="T:System.Data.OperationAbortedException" />
+    <Type Name="System.Data.SqlDbType" Id="T:System.Data.SqlDbType">
+      <Member Id="F:System.Data.SqlDbType.BigInt" />
+      <Member Id="F:System.Data.SqlDbType.Binary" />
+      <Member Id="F:System.Data.SqlDbType.Bit" />
+      <Member Id="F:System.Data.SqlDbType.Char" />
+      <Member Id="F:System.Data.SqlDbType.Date" />
+      <Member Id="F:System.Data.SqlDbType.DateTime" />
+      <Member Id="F:System.Data.SqlDbType.DateTime2" />
+      <Member Id="F:System.Data.SqlDbType.DateTimeOffset" />
+      <Member Id="F:System.Data.SqlDbType.Decimal" />
+      <Member Id="F:System.Data.SqlDbType.Float" />
+      <Member Id="F:System.Data.SqlDbType.Image" />
+      <Member Id="F:System.Data.SqlDbType.Int" />
+      <Member Id="F:System.Data.SqlDbType.Money" />
+      <Member Id="F:System.Data.SqlDbType.NChar" />
+      <Member Id="F:System.Data.SqlDbType.NText" />
+      <Member Id="F:System.Data.SqlDbType.NVarChar" />
+      <Member Id="F:System.Data.SqlDbType.Real" />
+      <Member Id="F:System.Data.SqlDbType.SmallDateTime" />
+      <Member Id="F:System.Data.SqlDbType.SmallInt" />
+      <Member Id="F:System.Data.SqlDbType.SmallMoney" />
+      <Member Id="F:System.Data.SqlDbType.Structured" />
+      <Member Id="F:System.Data.SqlDbType.Text" />
+      <Member Id="F:System.Data.SqlDbType.Time" />
+      <Member Id="F:System.Data.SqlDbType.Timestamp" />
+      <Member Id="F:System.Data.SqlDbType.TinyInt" />
+      <Member Id="F:System.Data.SqlDbType.Udt" />
+      <Member Id="F:System.Data.SqlDbType.UniqueIdentifier" />
+      <Member Id="F:System.Data.SqlDbType.VarBinary" />
+      <Member Id="F:System.Data.SqlDbType.VarChar" />
+      <Member Id="F:System.Data.SqlDbType.Variant" />
+      <Member Id="F:System.Data.SqlDbType.Xml" />
+    </Type>
+    <Type Name="System.Data.StatementCompletedEventArgs" Id="T:System.Data.StatementCompletedEventArgs">
+      <Member Id="M:System.Data.StatementCompletedEventArgs.#ctor(System.Int32)" />
+      <Member Id="P:System.Data.StatementCompletedEventArgs.RecordCount" />
+    </Type>
+    <Type Name="System.Data.StatementCompletedEventHandler" Id="T:System.Data.StatementCompletedEventHandler" />
   </Namespace>
   <Namespace Name="System.Data.OracleClient">
     <Type Name="System.Data.OracleClient.OraclePermission" Id="T:System.Data.OracleClient.OraclePermission">
@@ -12174,9 +12111,14 @@
     </Type>
     <Type Name="System.IO.Packaging.PackUriHelper" Id="T:System.IO.Packaging.PackUriHelper">
       <Member Id="F:System.IO.Packaging.PackUriHelper.UriSchemePack" />
+      <Member Id="M:System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)" />
       <Member Id="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
+      <Member Id="M:System.IO.Packaging.PackUriHelper.Create(System.Uri)" />
+      <Member Id="M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri)" />
+      <Member Id="M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri,System.String)" />
       <Member Id="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
       <Member Id="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
+      <Member Id="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
       <Member Id="M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)" />
       <Member Id="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
       <Member Id="M:System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)" />
@@ -12235,6 +12177,7 @@
       <Member Id="M:System.IO.Pipelines.PipeReader.CancelPendingRead" />
       <Member Id="M:System.IO.Pipelines.PipeReader.Complete(System.Exception)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.CopyToAsync(System.IO.Stream,System.Threading.CancellationToken)" />
+      <Member Id="M:System.IO.Pipelines.PipeReader.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeReaderOptions)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.OnWriterCompleted(System.Action{System.Exception,System.Object},System.Object)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Pipelines.PipeReader.TryRead(System.IO.Pipelines.ReadResult@)" />
@@ -12252,6 +12195,7 @@
       <Member Id="M:System.IO.Pipelines.PipeWriter.CancelPendingFlush" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.Complete(System.Exception)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.CopyFromAsync(System.IO.Stream,System.Threading.CancellationToken)" />
+      <Member Id="M:System.IO.Pipelines.PipeWriter.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeWriterOptions)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.GetMemory(System.Int32)" />
       <Member Id="M:System.IO.Pipelines.PipeWriter.GetSpan(System.Int32)" />
@@ -12266,6 +12210,17 @@
     </Type>
     <Type Name="System.IO.Pipelines.StreamPipeExtensions" Id="T:System.IO.Pipelines.StreamPipeExtensions">
       <Member Id="M:System.IO.Pipelines.StreamPipeExtensions.CopyToAsync(System.IO.Stream,System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="System.IO.Pipelines.StreamPipeReaderOptions" Id="T:System.IO.Pipelines.StreamPipeReaderOptions">
+      <Member Id="M:System.IO.Pipelines.StreamPipeReaderOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32,System.Int32)" />
+      <Member Id="P:System.IO.Pipelines.StreamPipeReaderOptions.BufferSize" />
+      <Member Id="P:System.IO.Pipelines.StreamPipeReaderOptions.MinimumReadSize" />
+      <Member Id="P:System.IO.Pipelines.StreamPipeReaderOptions.Pool" />
+    </Type>
+    <Type Name="System.IO.Pipelines.StreamPipeWriterOptions" Id="T:System.IO.Pipelines.StreamPipeWriterOptions">
+      <Member Id="M:System.IO.Pipelines.StreamPipeWriterOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32)" />
+      <Member Id="P:System.IO.Pipelines.StreamPipeWriterOptions.MinimumBufferSize" />
+      <Member Id="P:System.IO.Pipelines.StreamPipeWriterOptions.Pool" />
     </Type>
   </Namespace>
   <Namespace Name="System.IO.Pipes">
@@ -13816,45 +13771,6 @@
       <Member Id="M:System.Runtime.Caching.Hosting.IMemoryCacheManager.UpdateCacheSize(System.Int64,System.Runtime.Caching.MemoryCache)" />
     </Type>
   </Namespace>
-  <Namespace Name="System.Runtime.CompilerServices">
-    <Type Name="System.Runtime.CompilerServices.Unsafe" Id="T:System.Runtime.CompilerServices.Unsafe">
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Add``1(System.Void*,System.Int32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.As``1(System.Object)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.As``2(``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.IsAddressGreaterThan``1(``0@,``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.IsAddressLessThan``1(``0@,``0@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Void*)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.SizeOf``1" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(System.Void*,System.Int32)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Unbox``1(System.Object)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)" />
-      <Member Id="M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Void*,``0)" />
-    </Type>
-  </Namespace>
   <Namespace Name="System.Runtime.InteropServices.WindowsRuntime">
     <Type Name="System.Runtime.InteropServices.WindowsRuntime.AsyncInfo" Id="T:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo">
       <Member Id="M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
@@ -13883,6 +13799,178 @@
       <Member Id="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.IsSameData(Windows.Storage.Streams.IBuffer,Windows.Storage.Streams.IBuffer)" />
       <Member Id="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.ToArray(Windows.Storage.Streams.IBuffer)" />
       <Member Id="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.ToArray(Windows.Storage.Streams.IBuffer,System.UInt32,System.Int32)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="System.Runtime.Intrinsics.Arm.Arm64">
+    <Type Name="System.Runtime.Intrinsics.Arm.Arm64.Aes" Id="T:System.Runtime.Intrinsics.Arm.Arm64.Aes">
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.Decrypt(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.Encrypt(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.InverseMixColumns(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Aes.MixColumns(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="P:System.Runtime.Intrinsics.Arm.Arm64.Aes.IsSupported" />
+    </Type>
+    <Type Name="System.Runtime.Intrinsics.Arm.Arm64.Base" Id="T:System.Runtime.Intrinsics.Arm.Arm64.Base">
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Base.LeadingSignCount(System.Int32)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Base.LeadingSignCount(System.Int64)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Base.LeadingZeroCount(System.Int32)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Base.LeadingZeroCount(System.Int64)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Base.LeadingZeroCount(System.UInt32)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Base.LeadingZeroCount(System.UInt64)" />
+      <Member Id="P:System.Runtime.Intrinsics.Arm.Arm64.Base.IsSupported" />
+    </Type>
+    <Type Name="System.Runtime.Intrinsics.Arm.Arm64.Sha1" Id="T:System.Runtime.Intrinsics.Arm.Arm64.Sha1">
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.FixedRotate(System.UInt32)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashChoose(System.Runtime.Intrinsics.Vector128{System.UInt32},System.UInt32,System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashMajority(System.Runtime.Intrinsics.Vector128{System.UInt32},System.UInt32,System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.HashParity(System.Runtime.Intrinsics.Vector128{System.UInt32},System.UInt32,System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.SchedulePart1(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha1.SchedulePart2(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="P:System.Runtime.Intrinsics.Arm.Arm64.Sha1.IsSupported" />
+    </Type>
+    <Type Name="System.Runtime.Intrinsics.Arm.Arm64.Sha256" Id="T:System.Runtime.Intrinsics.Arm.Arm64.Sha256">
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha256.HashLower(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha256.HashUpper(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha256.SchedulePart1(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Sha256.SchedulePart2(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="P:System.Runtime.Intrinsics.Arm.Arm64.Sha256.IsSupported" />
+    </Type>
+    <Type Name="System.Runtime.Intrinsics.Arm.Arm64.Simd" Id="T:System.Runtime.Intrinsics.Arm.Arm64.Simd">
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector128{System.Int64})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Abs(System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Add``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Add``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.And``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.And``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.AndNot``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.AndNot``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.BitwiseSelect``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.BitwiseSelect``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareEqual``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareEqual``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareEqualZero``1(System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareEqualZero``1(System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThan``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThan``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThanOrEqual``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThanOrEqual``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThanOrEqualZero``1(System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThanOrEqualZero``1(System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThanZero``1(System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareGreaterThanZero``1(System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareLessThanOrEqualZero``1(System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareLessThanOrEqualZero``1(System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareLessThanZero``1(System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareLessThanZero``1(System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareTest``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.CompareTest``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Divide(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Divide(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Divide(System.Runtime.Intrinsics.Vector64{System.Single},System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Extract``1(System.Runtime.Intrinsics.Vector128{``0},System.Byte)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Extract``1(System.Runtime.Intrinsics.Vector64{``0},System.Byte)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Insert``1(System.Runtime.Intrinsics.Vector128{``0},System.Byte,``0)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Insert``1(System.Runtime.Intrinsics.Vector64{``0},System.Byte,``0)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingSignCount(System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingSignCount(System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingSignCount(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingSignCount(System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingSignCount(System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingSignCount(System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector64{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector64{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.LeadingZeroCount(System.Runtime.Intrinsics.Vector64{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.Byte},System.Runtime.Intrinsics.Vector64{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.Int16},System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.Int32},System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.SByte},System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.Single},System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.UInt16},System.Runtime.Intrinsics.Vector64{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Max(System.Runtime.Intrinsics.Vector64{System.UInt32},System.Runtime.Intrinsics.Vector64{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.Byte},System.Runtime.Intrinsics.Vector64{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.Int16},System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.Int32},System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.SByte},System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.Single},System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.UInt16},System.Runtime.Intrinsics.Vector64{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Min(System.Runtime.Intrinsics.Vector64{System.UInt32},System.Runtime.Intrinsics.Vector64{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.Byte},System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.SByte},System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.Byte},System.Runtime.Intrinsics.Vector64{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.Int16},System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.Int32},System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.SByte},System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.Single},System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.UInt16},System.Runtime.Intrinsics.Vector64{System.UInt16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Multiply(System.Runtime.Intrinsics.Vector64{System.UInt32},System.Runtime.Intrinsics.Vector64{System.UInt32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector128{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector128{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector128{System.Int64})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector64{System.Int16})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector64{System.Int32})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Negate(System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Not``1(System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Not``1(System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Or``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Or``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.OrNot``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.OrNot``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.PopCount(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.PopCount(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.PopCount(System.Runtime.Intrinsics.Vector64{System.Byte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.PopCount(System.Runtime.Intrinsics.Vector64{System.SByte})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.SetAllVector128``1(``0)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.SetAllVector64``1(``0)" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Sqrt(System.Runtime.Intrinsics.Vector128{System.Double})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Sqrt(System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Sqrt(System.Runtime.Intrinsics.Vector64{System.Single})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Subtract``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Subtract``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Xor``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+      <Member Id="M:System.Runtime.Intrinsics.Arm.Arm64.Simd.Xor``1(System.Runtime.Intrinsics.Vector64{``0},System.Runtime.Intrinsics.Vector64{``0})" />
+      <Member Id="P:System.Runtime.Intrinsics.Arm.Arm64.Simd.IsSupported" />
     </Type>
   </Namespace>
   <Namespace Name="System.Security.AccessControl">
@@ -20243,6 +20331,7 @@
     <Type Name="System.Threading.Channels.ChannelClosedException" Id="T:System.Threading.Channels.ChannelClosedException">
       <Member Id="M:System.Threading.Channels.ChannelClosedException.#ctor" />
       <Member Id="M:System.Threading.Channels.ChannelClosedException.#ctor(System.Exception)" />
+      <Member Id="M:System.Threading.Channels.ChannelClosedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Threading.Channels.ChannelClosedException.#ctor(System.String)" />
       <Member Id="M:System.Threading.Channels.ChannelClosedException.#ctor(System.String,System.Exception)" />
     </Type>

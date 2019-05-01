@@ -19,11 +19,6 @@
     <BaseTypeName>System.ComponentModel.Design.ComponentDesigner</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Extends the design mode behavior of a <see cref="T:System.Windows.Forms.Control" />.</summary>
     <remarks>

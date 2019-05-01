@@ -1,0 +1,440 @@
+﻿<Type Name="BitOperations" FullName="System.Numerics.BitOperations">
+  <TypeSignature Language="C#" Value="public static class BitOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BitOperations extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.BitOperations" />
+  <TypeSignature Language="VB.NET" Value="Public Class BitOperations" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitOperations abstract sealed" />
+  <TypeSignature Language="F#" Value="type BitOperations = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LeadingZeroCount">
+      <MemberSignature Language="C#" Value="public static int LeadingZeroCount (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 LeadingZeroCount(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.LeadingZeroCount(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LeadingZeroCount (value As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int LeadingZeroCount(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member LeadingZeroCount : uint32 -&gt; int" Usage="System.Numerics.BitOperations.LeadingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeadingZeroCount">
+      <MemberSignature Language="C#" Value="public static int LeadingZeroCount (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 LeadingZeroCount(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.LeadingZeroCount(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LeadingZeroCount (value As ULong) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int LeadingZeroCount(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member LeadingZeroCount : uint64 -&gt; int" Usage="System.Numerics.BitOperations.LeadingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log2">
+      <MemberSignature Language="C#" Value="public static int Log2 (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Log2(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.Log2(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Log2 (value As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Log2(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member Log2 : uint32 -&gt; int" Usage="System.Numerics.BitOperations.Log2 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log2">
+      <MemberSignature Language="C#" Value="public static int Log2 (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Log2(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.Log2(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Log2 (value As ULong) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Log2(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member Log2 : uint64 -&gt; int" Usage="System.Numerics.BitOperations.Log2 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopCount">
+      <MemberSignature Language="C#" Value="public static int PopCount (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 PopCount(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.PopCount(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PopCount (value As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int PopCount(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member PopCount : uint32 -&gt; int" Usage="System.Numerics.BitOperations.PopCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopCount">
+      <MemberSignature Language="C#" Value="public static int PopCount (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 PopCount(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.PopCount(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PopCount (value As ULong) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int PopCount(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member PopCount : uint64 -&gt; int" Usage="System.Numerics.BitOperations.PopCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateLeft">
+      <MemberSignature Language="C#" Value="public static uint RotateLeft (uint value, int bitOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 RotateLeft(unsigned int32 value, int32 bitOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.RotateLeft(System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RotateLeft (value As UInteger, bitOffset As Integer) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 RotateLeft(System::UInt32 value, int bitOffset);" />
+      <MemberSignature Language="F#" Value="static member RotateLeft : uint32 * int -&gt; uint32" Usage="System.Numerics.BitOperations.RotateLeft (value, bitOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="bitOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="bitOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateLeft">
+      <MemberSignature Language="C#" Value="public static ulong RotateLeft (ulong value, int bitOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 RotateLeft(unsigned int64 value, int32 bitOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.RotateLeft(System.UInt64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RotateLeft (value As ULong, bitOffset As Integer) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 RotateLeft(System::UInt64 value, int bitOffset);" />
+      <MemberSignature Language="F#" Value="static member RotateLeft : uint64 * int -&gt; uint64" Usage="System.Numerics.BitOperations.RotateLeft (value, bitOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="bitOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="bitOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateRight">
+      <MemberSignature Language="C#" Value="public static uint RotateRight (uint value, int bitOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 RotateRight(unsigned int32 value, int32 bitOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.RotateRight(System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RotateRight (value As UInteger, bitOffset As Integer) As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 RotateRight(System::UInt32 value, int bitOffset);" />
+      <MemberSignature Language="F#" Value="static member RotateRight : uint32 * int -&gt; uint32" Usage="System.Numerics.BitOperations.RotateRight (value, bitOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="bitOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="bitOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateRight">
+      <MemberSignature Language="C#" Value="public static ulong RotateRight (ulong value, int bitOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 RotateRight(unsigned int64 value, int32 bitOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.RotateRight(System.UInt64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RotateRight (value As ULong, bitOffset As Integer) As ULong" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 RotateRight(System::UInt64 value, int bitOffset);" />
+      <MemberSignature Language="F#" Value="static member RotateRight : uint64 * int -&gt; uint64" Usage="System.Numerics.BitOperations.RotateRight (value, bitOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="bitOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="bitOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingZeroCount">
+      <MemberSignature Language="C#" Value="public static int TrailingZeroCount (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TrailingZeroCount(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.TrailingZeroCount(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrailingZeroCount (value As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TrailingZeroCount(int value);" />
+      <MemberSignature Language="F#" Value="static member TrailingZeroCount : int -&gt; int" Usage="System.Numerics.BitOperations.TrailingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingZeroCount">
+      <MemberSignature Language="C#" Value="public static int TrailingZeroCount (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TrailingZeroCount(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.TrailingZeroCount(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrailingZeroCount (value As Long) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TrailingZeroCount(long value);" />
+      <MemberSignature Language="F#" Value="static member TrailingZeroCount : int64 -&gt; int" Usage="System.Numerics.BitOperations.TrailingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingZeroCount">
+      <MemberSignature Language="C#" Value="public static int TrailingZeroCount (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TrailingZeroCount(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.TrailingZeroCount(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrailingZeroCount (value As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TrailingZeroCount(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member TrailingZeroCount : uint32 -&gt; int" Usage="System.Numerics.BitOperations.TrailingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingZeroCount">
+      <MemberSignature Language="C#" Value="public static int TrailingZeroCount (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TrailingZeroCount(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.BitOperations.TrailingZeroCount(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrailingZeroCount (value As ULong) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int TrailingZeroCount(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member TrailingZeroCount : uint64 -&gt; int" Usage="System.Numerics.BitOperations.TrailingZeroCount value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

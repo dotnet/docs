@@ -22,11 +22,6 @@
       <InterfaceName>System.Collections.IEnumerator</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Supports iteration over a <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection" />.</summary>
     <remarks>To be added.</remarks>

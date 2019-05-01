@@ -203,6 +203,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ParseValue">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonDocument ParseValue (ref System.Text.Json.Utf8JsonReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Json.JsonDocument ParseValue(valuetype System.Text.Json.Utf8JsonReader&amp; reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseValue (ByRef reader As Utf8JsonReader) As JsonDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Json::JsonDocument ^ ParseValue(System::Text::Json::Utf8JsonReader % reader);" />
+      <MemberSignature Language="F#" Value="static member ParseValue :  -&gt; System.Text.Json.JsonDocument" Usage="System.Text.Json.JsonDocument.ParseValue reader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RootElement">
       <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement RootElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonElement RootElement" />
@@ -221,6 +246,33 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParseValue">
+      <MemberSignature Language="C#" Value="public static bool TryParseValue (ref System.Text.Json.Utf8JsonReader reader, out System.Text.Json.JsonDocument document);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseValue(valuetype System.Text.Json.Utf8JsonReader&amp; reader, [out] class System.Text.Json.JsonDocument&amp; document) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonDocument.TryParseValue(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonDocument@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParseValue (ByRef reader As Utf8JsonReader, ByRef document As JsonDocument) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParseValue(System::Text::Json::Utf8JsonReader % reader, [Runtime::InteropServices::Out] System::Text::Json::JsonDocument ^ % document);" />
+      <MemberSignature Language="F#" Value="static member TryParseValue :  *  -&gt; bool" Usage="System.Text.Json.JsonDocument.TryParseValue (reader, document)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Text.Json.Utf8JsonReader" RefType="ref" />
+        <Parameter Name="document" Type="System.Text.Json.JsonDocument" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="document">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

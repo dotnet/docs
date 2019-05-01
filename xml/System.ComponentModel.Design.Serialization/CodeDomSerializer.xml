@@ -21,11 +21,8 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.ComponentModel.Design.Serialization.DefaultSerializationProvider(typeof(System.ComponentModel.Design.Serialization.CodeDomSerializationProvider))</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -641,7 +638,7 @@
         <param name="manager">The serialization manager to use during serialization.</param>
         <param name="value">The object to serialize.</param>
         <summary>Serializes the specified value to a CodeDOM expression.</summary>
-        <returns>The serialized value. This returns a null reference (Nothing in Visual Basic) if there is no serializer for the specified value, or if the serializer for that value did not return a <see cref="T:System.CodeDom.CodeExpression"/>.</returns>
+        <returns>The serialized value. This returns a null reference (Nothing in Visual Basic) if there is no serializer for the specified value, or if the serializer for that value did not return a <see cref="T:System.CodeDom.CodeExpression" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

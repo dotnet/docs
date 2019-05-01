@@ -190,6 +190,31 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipelines.PipeReader Create (System.IO.Stream stream, System.IO.Pipelines.StreamPipeReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Pipelines.PipeReader Create(class System.IO.Stream stream, class System.IO.Pipelines.StreamPipeReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeReader.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeReaderOptions)" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.IO.Pipelines.StreamPipeReaderOptions -&gt; System.IO.Pipelines.PipeReader" Usage="System.IO.Pipelines.PipeReader.Create (stream, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="readerOptions" Type="System.IO.Pipelines.StreamPipeReaderOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnWriterCompleted">
       <MemberSignature Language="C#" Value="public abstract void OnWriterCompleted (Action&lt;Exception,object&gt; callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnWriterCompleted(class System.Action`2&lt;class System.Exception, object&gt; callback, object state) cil managed" />

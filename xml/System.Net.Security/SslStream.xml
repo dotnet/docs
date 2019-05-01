@@ -3396,6 +3396,38 @@ Authentication has not occurred.</exception>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NegotiatedCipherSuite">
+      <MemberSignature Language="C#" Value="public virtual System.Net.Security.TlsCipherSuite NegotiatedCipherSuite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.TlsCipherSuite NegotiatedCipherSuite" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslStream.NegotiatedCipherSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NegotiatedCipherSuite As TlsCipherSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Security::TlsCipherSuite NegotiatedCipherSuite { System::Net::Security::TlsCipherSuite get(); };" />
+      <MemberSignature Language="F#" Value="member this.NegotiatedCipherSuite : System.Net.Security.TlsCipherSuite" Usage="System.Net.Security.SslStream.NegotiatedCipherSuite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.TlsCipherSuite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Position">
       <MemberSignature Language="C#" Value="public override long Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />

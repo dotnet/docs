@@ -17,6 +17,9 @@
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{{{Namespace}}}{Name}{TypeArgStringForDebugger}")</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="netcore-3.0">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{ToString()}")</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>Provides a means to specify a XAML type in terms of name and namespace.</summary>

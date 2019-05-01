@@ -18,6 +18,27 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="AllowTrailingCommas">
+      <MemberSignature Language="C#" Value="public bool AllowTrailingCommas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowTrailingCommas" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderOptions.AllowTrailingCommas" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowTrailingCommas As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowTrailingCommas { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowTrailingCommas : bool with get, set" Usage="System.Text.Json.JsonReaderOptions.AllowTrailingCommas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CommentHandling">
       <MemberSignature Language="C#" Value="public System.Text.Json.JsonCommentHandling CommentHandling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonCommentHandling CommentHandling" />
@@ -45,6 +66,27 @@ By default, the reader throws a <xref:System.Text.Json.JsonReaderException> if i
 
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDepth">
+      <MemberSignature Language="C#" Value="public int MaxDepth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonReaderOptions.MaxDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDepth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDepth : int with get, set" Usage="System.Text.Json.JsonReaderOptions.MaxDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

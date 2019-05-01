@@ -110,11 +110,14 @@
       <Docs>
         <summary>Gets or sets the block size, in bits, of the cryptographic operation.</summary>
         <value>The block size, in bits, of the cryptographic operation. The default is 128 bits.</value>
-        <remarks><format type="text/markdown"><![CDATA[  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For AES, the only valid block size is 128 bits. See the <xref:System.Security.Cryptography.SymmetricAlgorithm.BlockSize> for more information about block size.   
- ]]></format></remarks>
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDecryptor">
@@ -173,7 +176,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ key, cli::array &lt;System::Byte&gt; ^ iv);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesManaged.CreateDecryptor(System.Byte[],System.Byte[])" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateDecryptor (key, iv)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateDecryptor (key, iv)" FrameworkAlternate="netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateDecryptor (key, iv)" FrameworkAlternate="netframework-3.5" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -280,7 +283,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ key, cli::array &lt;System::Byte&gt; ^ iv);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesManaged.CreateEncryptor(System.Byte[],System.Byte[])" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateEncryptor (key, iv)" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateEncryptor (key, iv)" FrameworkAlternate="netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateEncryptor (key, iv)" FrameworkAlternate="netframework-3.5" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -506,11 +509,14 @@
       <Docs>
         <summary>Gets or sets the initialization vector (IV) to use for the symmetric algorithm.</summary>
         <value>The initialization vector to use for the symmetric algorithm</value>
-        <remarks><format type="text/markdown"><![CDATA[  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  See the <xref:System.Security.Cryptography.SymmetricAlgorithm.IV> for more information about initialization vector.  
- ]]></format></remarks>
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -612,11 +618,14 @@
       <Docs>
         <summary>Gets the block sizes, in bits, that are supported by the symmetric algorithm.</summary>
         <value>The block sizes, in bits, that are supported by the symmetric algorithm.</value>
-        <remarks><format type="text/markdown"><![CDATA[  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The only valid block size for AES is 128 bits.  
- ]]></format></remarks>
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LegalKeySizes">
@@ -645,11 +654,14 @@
       <Docs>
         <summary>Gets the key sizes, in bits, that are supported by the symmetric algorithm.</summary>
         <value>The key sizes, in bits, that are supported by the symmetric algorithm.</value>
-        <remarks><format type="text/markdown"><![CDATA[  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The valid key sizes for AES are 128, 192 and 256 bits.  
- ]]></format></remarks>
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -724,11 +736,14 @@
       <Docs>
         <summary>Gets or sets the padding mode used in the symmetric algorithm.</summary>
         <value>One of the enumeration values that specifies the type of padding to apply. The default is <see cref="F:System.Security.Cryptography.PaddingMode.PKCS7" />.</value>
-        <remarks><format type="text/markdown"><![CDATA[  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  See the <xref:System.Security.Cryptography.SymmetricAlgorithm.Padding> for more information about padding.  
- ]]></format></remarks>
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

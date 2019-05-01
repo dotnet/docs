@@ -19,11 +19,6 @@
     <BaseTypeName>System.Windows.Forms.Design.ControlDesigner</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Extends the design mode behavior of a <see cref="T:System.Windows.Forms.Control" /> that supports nested controls.</summary>
     <remarks>
@@ -1766,7 +1761,7 @@
         <Parameter Name="m" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="m">The <see cref="T:System.Windows.Forms.Message"/> to process.</param>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
         <summary>Processes Windows messages.</summary>
         <remarks>To be added.</remarks>
       </Docs>

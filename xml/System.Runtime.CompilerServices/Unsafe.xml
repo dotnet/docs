@@ -45,8 +45,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="elementOffset" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="elementOffset" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -178,8 +178,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.1" />
-        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.1" />
+        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.1;netcore-3.0" />
+        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.1;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -353,7 +353,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="source" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -385,8 +385,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="origin" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="target" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="origin" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="target" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -490,9 +490,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination address to copy to.</param>
@@ -557,9 +557,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination address to copy to.</param>
@@ -590,9 +590,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="source" Type="System.Void*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="destination" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Void*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination address to copy to.</param>
@@ -624,9 +624,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="startAddress">The address of the start of the memory block to initialize.</param>
@@ -691,9 +691,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="startAddress">The address of the start of the memory block to initialize.</param>
@@ -724,9 +724,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="startAddress" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="startAddress">The address of the start of the memory block to initialize.</param>
@@ -760,8 +760,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -793,8 +793,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -862,7 +862,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to read.</typeparam>
@@ -896,7 +896,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to read.</typeparam>
@@ -960,8 +960,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="elementOffset" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="elementOffset" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1096,14 +1096,14 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="box" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="box" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to be unboxed.</typeparam>
         <param name="box">The value to unbox.</param>
         <summary>Returns a <see langword="mutable ref" /> to a boxed value.</summary>
         <returns>A <see langword="mutable ref" /> to the boxed value <paramref name="box" />.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The `Unbox<T>` method is simply a wrapper for the IL [unbox](xref:System.Reflection.Emit.OpCodes.Unbox) instruction. It is useful as a performance optimization. Whenever an API that takes an <xref:System.Object> needs to be called repeatedly with different values of a value type, the same box object can be reused rather than a new one created each time.
@@ -1123,15 +1123,18 @@ Unsafe.Unbox<System.Drawing.Point>(obj).X = 50;
 For more information, see sections III.1.8.1.2.2 ("Controlled-muttability managed pointers") and III.4.32 ("unbox -- convert boxed value type to its raw form") in [ECMA-335: Common Language Infrastructure (CLI) Partitions I to VI](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf).
 
          ]]></format>
-         </remarks>       
-        <exception cref="T:System.NullReferenceException"><paramref name="box" /> is <see langword="null" />, and <typeparamref name="T" /> is a non-nullable value type.</exception>
-         <exception cref="T:System.InvalidCastException"><paramref name="box" /> is not a boxed value type.
+        </remarks>
+        <exception cref="T:System.NullReferenceException">
+          <paramref name="box" /> is <see langword="null" />, and <typeparamref name="T" /> is a non-nullable value type.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="box" /> is not a boxed value type.
          
 -or-
 
 <paramref name="box" /> is not a boxed <typeparamref name="T" />.
          </exception>
-        <exception cref="T:System.TypeLoadException"><typeparamref name="T" /> cannot be found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <typeparamref name="T" /> cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write&lt;T&gt;">
@@ -1192,8 +1195,8 @@ For more information, see sections III.1.8.1.2.2 ("Controlled-muttability manage
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of value to write.</typeparam>
@@ -1227,8 +1230,8 @@ For more information, see sections III.1.8.1.2.2 ("Controlled-muttability manage
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
+        <Parameter Name="destination" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of value to write.</typeparam>

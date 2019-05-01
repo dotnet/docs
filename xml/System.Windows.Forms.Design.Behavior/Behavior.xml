@@ -18,11 +18,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.CLSCompliant(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents the <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> objects that are managed by a <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
     <remarks>

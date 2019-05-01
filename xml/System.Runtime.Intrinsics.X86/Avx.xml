@@ -1927,9 +1927,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Byte*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.Byte*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -1958,9 +1958,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Double*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -1989,9 +1989,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Int16*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.Int16*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2020,9 +2020,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Int32*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2051,9 +2051,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Int64*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2082,9 +2082,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.SByte*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.SByte*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2113,9 +2113,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.Single*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2144,9 +2144,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.UInt16*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.UInt16*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2175,9 +2175,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.UInt32*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2206,9 +2206,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="address" Type="System.UInt64*" />
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
@@ -2741,9 +2741,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;" />
-        <Parameter Name="address" Type="System.Byte*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.Byte*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2805,9 +2805,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" />
-        <Parameter Name="address" Type="System.Double*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Double&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.Double*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2869,9 +2869,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;" />
-        <Parameter Name="address" Type="System.Int16*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.Int16*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2933,9 +2933,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;" />
-        <Parameter Name="address" Type="System.Int32*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.Int32*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2997,9 +2997,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;" />
-        <Parameter Name="address" Type="System.Int64*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.Int64*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3093,9 +3093,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;" />
-        <Parameter Name="address" Type="System.SByte*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.SByte*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3157,9 +3157,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" />
-        <Parameter Name="address" Type="System.Single*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.Single*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3221,9 +3221,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;" />
-        <Parameter Name="address" Type="System.UInt16*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.UInt16*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3285,9 +3285,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;" />
-        <Parameter Name="address" Type="System.UInt32*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.UInt32*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3349,9 +3349,9 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;" />
-        <Parameter Name="address" Type="System.UInt64*" />
-        <Parameter Name="index" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="address" Type="System.UInt64*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="index" Type="System.Byte" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>

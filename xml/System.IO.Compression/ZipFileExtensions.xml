@@ -365,7 +365,8 @@
       <Docs>
         <param name="source">The <see cref="T:System.IO.Compression.ZipArchive" /> to extract.</param>
         <param name="destinationDirectoryName">The path to the destination directory on the file system. The path can be relative or absolute. A relative path is interpreted as relative to the current working directory.</param>
-        <param name="overwriteFiles"><see langword="true" /> to indicate that existing files are to be overwritten; <see langword="false" /> otherwise.</param>
+        <param name="overwriteFiles">
+          <see langword="true" /> to indicate that existing files are to be overwritten; <see langword="false" /> otherwise.</param>
         <summary>Extracts all of the files in the archive to a directory on the file system. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -380,9 +381,11 @@
  
           ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="destinationArchiveFileName" /> is a zero-length string, contains only whitespace,
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationArchiveFileName" /> is a zero-length string, contains only whitespace,
             or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="destinationArchiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationArchiveFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">The name of a <see cref="T:System.IO.Compression.ZipArchiveEntry" /> is zero-length, contains only whitespace, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.
@@ -395,7 +398,8 @@ Extracting a <see cref="T:System.IO.Compression.ZipArchiveEntry" /> would have r
 
 A <see cref="T:System.IO.Compression.ZipArchiveEntry" /> has the same name as an already extracted entry from the same archive.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
-        <exception cref="T:System.NotSupportedException"><paramref name="destinationArchiveFileName" /> is in an invalid format. </exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="destinationArchiveFileName" /> is in an invalid format. </exception>
         <exception cref="T:System.IO.InvalidDataException">A <see cref="T:System.IO.Compression.ZipArchiveEntry" /> was not found or was corrupt.
 
 -or-

@@ -54,7 +54,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(IntPtr manager, int whatever, int whatever2);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.Abort(System.IntPtr,System.Int32,System.Int32)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="abstract member Abort : nativeint * int * int -&gt; unit" Usage="iDtcTransaction.Abort (manager, whatever, whatever2)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member Abort : nativeint * int * int -&gt; unit" Usage="iDtcTransaction.Abort (manager, whatever, whatever2)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="abstract member Abort : nativeint * int * int -&gt; unit" Usage="iDtcTransaction.Abort (manager, whatever, whatever2)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -113,7 +113,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit(int whatever, int whatever2, int whatever3);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.Commit(System.Int32,System.Int32,System.Int32)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="abstract member Commit : int * int * int -&gt; unit" Usage="iDtcTransaction.Commit (whatever, whatever2, whatever3)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member Commit : int * int * int -&gt; unit" Usage="iDtcTransaction.Commit (whatever, whatever2, whatever3)" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="abstract member Commit : int * int * int -&gt; unit" Usage="iDtcTransaction.Commit (whatever, whatever2, whatever3)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -174,7 +174,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTransactionInfo(IntPtr whatever);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.GetTransactionInfo(System.IntPtr)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberSignature Language="F#" Value="abstract member GetTransactionInfo : nativeint -&gt; unit" Usage="iDtcTransaction.GetTransactionInfo whatever" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member GetTransactionInfo : nativeint -&gt; unit" Usage="iDtcTransaction.GetTransactionInfo whatever" FrameworkAlternate="xamarinandroid-7.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="abstract member GetTransactionInfo : nativeint -&gt; unit" Usage="iDtcTransaction.GetTransactionInfo whatever" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

@@ -44,7 +44,8 @@ Also, <xref:System.Text.Json.Utf8JsonWriter> throws an exception if the user att
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Text.Json.Utf8JsonWriter" /> should format the JSON output, which includes indenting nested JSON tokens, adding new lines, and adding white space between property names and values.</summary>
-        <value><see langword="true" /> to format the JSON output; <see langword="false" /> to write without any extra white space. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> to format the JSON output; <see langword="false" /> to write without any extra white space. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +66,8 @@ Also, <xref:System.Text.Json.Utf8JsonWriter> throws an exception if the user att
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Text.Json.Utf8JsonWriter" /> should skip structural validation and allow the user to write invalid JSON.</summary>
-        <value><see langword="true" /> to skip structural validation and allow invalid JSON; <see langword="false" /> to throw an <see cref="T:System.InvalidOperationException" /> on any attempt to write invalid JSON.
+        <value>
+          <see langword="true" /> to skip structural validation and allow invalid JSON; <see langword="false" /> to throw an <see cref="T:System.InvalidOperationException" /> on any attempt to write invalid JSON.
 </value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

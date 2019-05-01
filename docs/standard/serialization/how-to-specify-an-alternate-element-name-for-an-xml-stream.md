@@ -94,4 +94,3 @@ public class SerializeOverride()
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

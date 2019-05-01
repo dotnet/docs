@@ -16,9 +16,9 @@ This sample demonstrates the use of many Windows Workflow Foundation (WF) and Wi
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Application\DocumentApprovalProcess`  
   
 ## Sample Details  
- The following graphic demonstrates the document approval process workflow.  
+ The following graphic demonstrates the document approval process workflow:  
   
- ![A document approval process workflow](./media/approvalprocess.jpg "ApprovalProcess")  
+ ![A document approval process workflow](./media/document-approval-process/document-approval-process.jpg)  
   
  From the client's perspective, the approval process functions as follows:  
   

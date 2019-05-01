@@ -17,4 +17,5 @@ This section introduces functional transformations, including the underlying con
 |[Functional Transformation of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)|Describes functional transformations in the context of transforming XML trees.|  
   
 ## See also
+
 - [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)

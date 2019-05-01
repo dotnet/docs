@@ -33,8 +33,8 @@ This first table describes the mappings for various types for whom the marshalli
 | `uint`    | `uint32_t`              |
 | `long`    | `int64_t`               |
 | `ulong`   | `uint64_t`              |
-| `char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](/.charset.md). |
-| `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](/.charset.md). |
+| `char`    | Either `char` or `char16_t` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
+| `string`  | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke or structure. See the [charset documentation](charset.md). |
 | `System.IntPtr` | `intptr_t`        |
 | `System.UIntPtr` | `uintptr_t`      |
 | .NET Pointer types (ex. `void*`)  | `void*` |
@@ -68,7 +68,7 @@ Some types can only be marshalled as parameters and not as fields. These types a
 
 | .NET Type | Native Type (Parameter Only) |
 |-----------|------------------------------|
-| `System.Text.StringBuilder` | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke.  See the [charset documentation](/.charset.md). |
+| `System.Text.StringBuilder` | Either `char*` or `char16_t*` depending on the `CharSet` of the P/Invoke.  See the [charset documentation](charset.md). |
 | `System.ArgIterator` | `va_list` (on Windows x86/x64/arm64 only) |
 | `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |

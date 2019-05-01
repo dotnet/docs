@@ -58,10 +58,10 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 ### Additional resources
 
 - **Get started with Docker CE for Windows** \
-  [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
+  [https://docs.docker.com/docker-for-windows/](https://docs.docker.com/docker-for-windows/)
 
 - **Visual Studio 2017** \
-  [*https://visualstudio.microsoft.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+  [https://visualstudio.microsoft.com/downloads/](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![2 - Write Dockerfiles](./media/image4.png)
 
@@ -91,14 +91,14 @@ In a similar fashion, Visual Studio can also add a docker-compose.yml file for t
 
 You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing `aspnetcore` image.
 
-Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `microsoft/dotnet:2.2-aspnetcore-runtime`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM microsoft/dotnet:2.2-aspnetcore-runtime` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
+Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `mcr.microsoft.com/dotnet/core/aspnet:2.2`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM mcr.microsoft.com/dotnet/core/aspnet:2.2` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
 
 Using an official .NET image repository from Docker Hub with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
 ```Dockerfile
-FROM microsoft/dotnet:2.2-aspnetcore-runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 ARG source
 WORKDIR /app
 EXPOSE 80
@@ -106,27 +106,27 @@ COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 ```
 
-In this case, the image is based on version 2.2 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM microsoft/dotnet:2.2-aspnetcore-runtime`. (For more information about this base image, see the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
+In this case, the image is based on version 2.2 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM mcr.microsoft.com/dotnet/core/aspnet:2.2`. (For more information about this base image, see the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the ENTRYPOINT line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
 ### Additional resources
 
 - **Building Docker Images for .NET Core Applications** \
-  [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
+  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](../../../core/docker/building-net-docker-images.md)
 
 - **Build your own image**. In the official Docker documentation.\
-  [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
+  [https://docs.docker.com/engine/tutorials/dockerimages/](https://docs.docker.com/engine/tutorials/dockerimages/)
 
 - **Staying up-to-date with .NET Container Images** \
-  *<https://devblogs.microsoft.com/dotnet/staying-up-to-date-with-net-container-images/>*
+  <https://devblogs.microsoft.com/dotnet/staying-up-to-date-with-net-container-images/>
 
 - **Using .NET and Docker Together - DockerCon 2018 Update** \
-  *<https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/>*
+  <https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/>
 
 ### Using multi-arch image repositories
 
-A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name.
+A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [dotnet/core](https://hub.docker.com/_/microsoft-dotnet-core/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name.
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
@@ -168,11 +168,11 @@ Probably the best way to understand multi-stage is going through a Dockerfile in
 The initial Dockerfile might look something like this:
 
 ```Dockerfile
- 1  FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
+ 1  FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS base
  2  WORKDIR /app
  3  EXPOSE 80
  4
- 5  FROM microsoft/dotnet:2.2-sdk AS build
+ 5  FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
  6  WORKDIR /src
  7  COPY src/Services/Catalog/Catalog.API/Catalog.API.csproj …
  8  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks … 
@@ -260,11 +260,11 @@ For the final optimization, it just happens that line 20 is redundant, as line 2
 The resulting file is then:
 
 ```Dockerfile
- 1  FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
+ 1  FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS base
  2  WORKDIR /app
  3  EXPOSE 80
  4
- 5  FROM microsoft/dotnet:2.2-sdk AS publish
+ 5  FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS publish
  6  WORKDIR /src
  7  COPY . .
  8  RUN dotnet restore /ignoreprojectextensions:.dcproj
@@ -284,10 +284,10 @@ You can create your own Docker base image from scratch. This scenario is not rec
 ### Additional resources
 
 - **Multi-arch .NET Core images**.\
-  [*https://github.com/dotnet/announcements/issues/14*](https://github.com/dotnet/announcements/issues/14)
+  [https://github.com/dotnet/announcements/issues/14](https://github.com/dotnet/announcements/issues/14)
 
 - **Create a base image**. Official Docker documentation.\
-  [*https://docs.docker.com/engine/userguide/eng-image/baseimages/*](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
+  [https://docs.docker.com/engine/userguide/eng-image/baseimages/](https://docs.docker.com/engine/userguide/eng-image/baseimages/)
 
 ![3 - Create images defined at Dockerfiles](./media/image7.png)
 
@@ -479,7 +479,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  [*https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker*](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
+  [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 
@@ -516,10 +516,10 @@ If you're developing using the editor/CLI approach, debugging containers is more
 ### Additional resources
 
 - **Debugging apps in a local Docker container** \
-  [*https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh*](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
+  [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
 - **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video. \
-  [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
+  [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
 
 ## Simplified workflow when developing containers with Visual Studio
 
@@ -534,7 +534,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 ### Additional resources
 
 - **Steve Lasker. .NET Docker Development with Visual Studio 2017** \
-  [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
+  [https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111)
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers 
 
@@ -556,7 +556,7 @@ RUN powershell add-windowsfeature web-asp-net45
 ### Additional resources
 
 - **aspnet-docker/Dockerfile.** Example PowerShell commands to run from dockerfiles to include Windows features.\
-  [*https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile)
+  [https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile](https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

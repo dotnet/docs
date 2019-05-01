@@ -117,4 +117,3 @@ Press <ENTER> to terminate client.
     <compositeDuplex clientBaseAddress="http://client_machine_name:8000/myClient/" />  
     ```  
   
-## See also

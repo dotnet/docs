@@ -13,7 +13,7 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
  The following illustration shows a <xref:System.Windows.Controls.ListView>.  
   
- ![ListView with GridView output](./media/listviewgridview.JPG "ListViewGridView")  
+ ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   
 ## In This Section  
  [Overviews](listview-overviews.md)  

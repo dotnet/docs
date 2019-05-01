@@ -76,6 +76,7 @@ vbc -platform:x86 myFile.vb
 ```  
   
 ## See also
+
 - [/target (Visual Basic)](target.md)
 - [Visual Basic Command-Line Compiler](index.md)
 - [Sample Compilation Command Lines](sample-compilation-command-lines.md)

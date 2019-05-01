@@ -202,6 +202,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
  [!code-vb[VbVbalrStatements#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#51)]  
   
 ## See also
+
 - [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
 - [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
 - [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)

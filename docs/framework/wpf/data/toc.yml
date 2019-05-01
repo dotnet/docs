@@ -1,0 +1,87 @@
+- name: Data
+  href: index.md
+  items:
+  - name: Data Binding
+    href: data-binding-wpf.md
+    items:
+    - name: Data Binding Overview
+      href: data-binding-overview.md
+    - name: Binding Sources Overview
+      href: binding-sources-overview.md
+    - name: Data Templating Overview
+      href: data-templating-overview.md
+    - name: Binding Declarations Overview
+      href: binding-declarations-overview.md
+    - name: How-to Topics
+      href: data-binding-how-to-topics.md
+      items:
+      - name: Create a Simple Binding
+        href: how-to-create-a-simple-binding.md
+      - name: Specify the Binding Source
+        href: how-to-specify-the-binding-source.md
+      - name: Make Data Available for Binding in XAML
+        href: how-to-make-data-available-for-binding-in-xaml.md
+      - name: Control When the TextBox Text Updates the Source
+        href: how-to-control-when-the-textbox-text-updates-the-source.md
+      - name: Specify the Direction of the Binding
+        href: how-to-specify-the-direction-of-the-binding.md
+      - name: Bind to a Collection and Display Information Based on Selection
+        href: how-to-bind-to-a-collection-and-display-information-based-on-selection.md
+      - name: Bind to an Enumeration
+        href: how-to-bind-to-an-enumeration.md
+      - name: Bind the Properties of Two Controls
+        href: how-to-bind-the-properties-of-two-controls.md
+      - name: Implement Binding Validation
+        href: how-to-implement-binding-validation.md
+      - name: Implement Validation Logic on Custom Objects
+        href: how-to-implement-validation-logic-on-custom-objects.md
+      - name: Get the Binding Object from a Bound Target Property
+        href: how-to-get-the-binding-object-from-a-bound-target-property.md
+      - name: Implement a CompositeCollection
+        href: how-to-implement-a-compositecollection.md
+      - name: Convert Bound Data
+        href: how-to-convert-bound-data.md
+      - name: Create a Binding in Code
+        href: how-to-create-a-binding-in-code.md
+      - name: Get the Default View of a Data Collection
+        href: how-to-get-the-default-view-of-a-data-collection.md
+      - name: Navigate Through the Objects in a Data CollectionView
+        href: how-to-navigate-through-the-objects-in-a-data-collectionview.md
+      - name: Filter Data in a View
+        href: how-to-filter-data-in-a-view.md
+      - name: Sort Data in a View
+        href: how-to-sort-data-in-a-view.md
+      - name: Sort and Group Data Using a View in XAML
+        href: how-to-sort-and-group-data-using-a-view-in-xaml.md
+      - name: Use the Master-Detail Pattern with Hierarchical Data
+        href: how-to-use-the-master-detail-pattern-with-hierarchical-data.md
+      - name: Use the Master-Detail Pattern with Hierarchical XML Data
+        href: how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md
+      - name: Produce a Value Based on a List of Bound Items
+        href: how-to-produce-a-value-based-on-a-list-of-bound-items.md
+      - name: Implement Property Change Notification
+        href: how-to-implement-property-change-notification.md
+      - name: Create and Bind to an ObservableCollection
+        href: how-to-create-and-bind-to-an-observablecollection.md
+      - name: Implement PriorityBinding
+        href: how-to-implement-prioritybinding.md
+      - name: Bind to XML Data Using an XMLDataProvider and XPath Queries
+        href: how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md
+      - name: Bind to XDocument, XElement, or LINQ for XML Query Results
+        href: how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md
+      - name: Use XML Namespaces in Data Binding
+        href: how-to-use-xml-namespaces-in-data-binding.md
+      - name: Bind to an ADO.NET Data Source
+        href: how-to-bind-to-an-ado-net-data-source.md
+      - name: Bind to a Method
+        href: how-to-bind-to-a-method.md
+      - name: Set Up Notification of Binding Updates
+        href: how-to-set-up-notification-of-binding-updates.md
+      - name: Clear Bindings
+        href: how-to-clear-bindings.md
+      - name: Find DataTemplate-Generated Elements
+        href: how-to-find-datatemplate-generated-elements.md
+      - name: Bind to a Web Service
+        href: how-to-bind-to-a-web-service.md
+      - name: Bind to the Results of a LINQ Query
+        href: how-to-bind-to-the-results-of-a-linq-query.md

@@ -23,7 +23,7 @@ Tag the issue with the `breaking-change` tag.
 ## New behavior
 
 
-## Reason for changer
+## Reason for change
 
 
 ## Mitigations

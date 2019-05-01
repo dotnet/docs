@@ -150,6 +150,9 @@
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and Soap Serialization</related>
+        <exception cref="T:System.ArgumentNullException"><paramref name="info" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException"><paramref name="info" /> is missing a required value.</exception>
+        <exception cref="T:System.InvalidCastException"><paramref name="info" /> contains a value that cannot be cast to the correct type.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

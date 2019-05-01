@@ -39,6 +39,9 @@
         <param name="part">The part to compose.</param>
         <summary>Composes the specified part, with recomposition and validation disabled.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="part" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> contains a collection of errors that occurred.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.ICompositionService" /> has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

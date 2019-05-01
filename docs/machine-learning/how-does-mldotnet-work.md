@@ -88,7 +88,7 @@ The following diagram represents the application code structure, as well as the 
 - Load the model back into an **ITransformer** object
 - Make predictions by calling **CreatePredictionEngine.Predict()**
 
-![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/ml-net-annotated-workflow.svg) 
+![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png) 
 
 Let's dig a little deeper into those concepts.
 

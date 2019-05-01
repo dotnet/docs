@@ -17,10 +17,14 @@ Tag the issue with the `breaking-change` tag.
 
 [Version in which the breaking change first occurred]
 
-## Change description
+## Old behavior
 
-[Description of the change: the previous behavior, the new behavior, and its impact]
 
-## Recommended action
+## New behavior
 
-[Guidance on available workarounds or handling the consequences of the change]
+
+## Reason for changer
+
+
+## Mitigations
+

@@ -54,7 +54,7 @@ The first step is to create the application infrastructure, which includes an ap
 
       The **Create a new project** dialog opens.
 
-      ![Create a new project dialog](./media/gettingstartedfigure0a.png)
+      ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
 
    2. In the **Language** dropdown, select either **C#** or **Visual Basic**.
 
@@ -66,7 +66,7 @@ The first step is to create the application infrastructure, which includes an ap
 
       The **Configure a new project** dialog opens.
 
-      ![Configure a new project dialog](./media/gettingstartedfigure0c.png)
+      ![Configure a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/configure-new-project-dialog.png)
 
    5. Enter the project name **`ExpenseIt`** and then select **Create**.
 
@@ -400,7 +400,7 @@ The appearance of various elements is often the same for all elements of the sam
 
 6. Build and run the application. The window appearance is the same as previously.
 
-    ![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application//create-application-ui.png)
+    ![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
 
 7. Close the application to return to Visual Studio.
 

@@ -8,8 +8,6 @@ This issue template is for use in opening issues that document breaking changes.
 
 Text in brackets are placeholders; replace the text with the requested information and remove the brackets before submitting the issue. Also, remove this comment before submitting the issue.
 
-Tag the issue with the `breaking-change` tag.
-
 -->
 # [Brief description of the change]
 
@@ -28,3 +26,8 @@ Tag the issue with the `breaking-change` tag.
 
 ## Mitigations
 
+---
+
+<!-- Do not modify this section -->
+
+- Issue type: breaking-change

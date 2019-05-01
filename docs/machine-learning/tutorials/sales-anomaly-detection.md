@@ -42,7 +42,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 
-    [!code-csharp[UsingStatements](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#UsingStatements "Add necessary usings")]
+    [!code-csharp[AddUsings](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddUsings "Add necessary usings")]
 
 ### Download your data
 

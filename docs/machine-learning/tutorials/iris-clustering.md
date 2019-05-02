@@ -38,7 +38,7 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 ## Create a console application
 
-1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "IrisFlowerClustering" and then select the **OK** button.
+1. Open Visual Studio. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "IrisFlowerClustering" and then select the **OK** button.
 
 1. Create a directory named *Data* in your project to store the data set and model files:
 

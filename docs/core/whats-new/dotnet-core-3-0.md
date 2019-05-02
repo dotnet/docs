@@ -9,16 +9,17 @@ ms.author: adegeo
 ms.date: 04/19/2019
 ---
 
-# What's new in .NET Core 3.0 (Preview 3)
+# What's new in .NET Core 3.0 (Preview 4)
 
-This article describes what is new in .NET Core 3.0 (preview 3). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
+This article describes what is new in .NET Core 3.0 (preview 4). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
 .NET Core 3.0 adds support for C# 8.0.
 
-[Download and get started with .NET Core 3.0 Preview 3](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux. You can see complete details of the release in the [.NET Core 3.0 Preview 3 release notes](https://aka.ms/netcore3releasenotes).
+[Download and get started with .NET Core 3.0 Preview 4](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
 
-For more information about what was released with each version, see the following announcements:
+For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-4/)
 - [.NET Core 3.0 Preview 3 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-3/)
 - [.NET Core 3.0 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
 - [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
@@ -47,7 +48,34 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 </Project>
 ```
 
-If you're using Visual Studio, you need Visual Studio 2019 as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
+If you're using Visual Studio, you need Visual Studio 2019, as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**. We highly recommend that you use [Visual Studio 2019 Update 1 Preview](https://visualstudio.microsoft.com/vs/preview/).
+
+## Improved .NET Core Version APIs
+
+Starting with .NET Core 3.0 Preview 4, the version APIs provided with .NET Core now return the information you expect. For example:
+
+```csharp
+System.Console.WriteLine($"Environment.Version: {System.Environment.Version}");
+
+// Old result
+//   Environment.Version: 4.0.30319.42000
+//
+// New result
+//   Environment.Version: 3.0.0
+```
+
+```csharp
+System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription}");
+
+// Old result
+//   RuntimeInformation.FrameworkDescription: .NET Core 4.6.27415.71
+//
+// New result
+//   RuntimeInformation.FrameworkDescription: .NET Core 3.0.0-preview4-27615-11
+```
+
+> [!WARNING]
+> Breaking change. This is technically a breaking change because the versioning scheme has changed.
 
 ## IEEE Floating-point improvements
 
@@ -101,9 +129,23 @@ During `dotnet build` or `dotnet publish`, an executable is created that matches
 
 ## Tiered compilation
 
-[Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
+[Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
 
-This feature was added as an opt-in feature in [.NET Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt in with the .NET Core 2.2 release.
+The main benefit of TC is to enable (re-)jitting methods with slower-but-faster to produce code or higher-quality-but-slower to produce code. This helps increase performance of an application as it goes through various stages of execution, from startup through steady-state. This contrasts with the non-TC approach, where every method is compiled a single way (the same as the high-quality tier), which is biased to steady-state over startup performance.
+
+To enable Quick JIT (tier 0 jitted code), use this setting in your project file:
+
+```xml
+<PropertyGroup>
+  <TieredCompilationQuickJit>true</TieredCompilationQuickJit>
+</PropertyGroup>
+```
+
+To disable TC completely, use this setting in your project file:
+
+```xml
+<TieredCompilation>false</TieredCompilation>
+```
 
 ## Build copies dependencies
 
@@ -213,6 +255,12 @@ Here is a C# 8.0 example of reading through the [**launch.json**](https://github
 
 Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. While .NET Core supports **P/Invoke**, .NET Core 3.0 adds the ability to **CoCreate COM APIs** and **Activate WinRT APIs**. For a code example, see the [Excel Demo](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo).
 
+## HTTP/2 support
+
+The <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> type supports the HTTP/2 protocol. Support is currently disabled but can be turned on by calling `AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2Support", true);` before you use <xref:System.Net.Http.HttpClient>. You can also enable HTTP/2 support by setting the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` environment variable to `true` before you run your app.
+
+If HTTP/2 is enabled, the HTTP protocol version will be negotiated via TLS/ALPN, and HTTP/2 will only be used if the server selects to use it.
+
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 
 .NET Core now takes advantage of [TLS 1.3 support in OpenSSL 1.1.1](https://www.openssl.org/blog/blog/2018/09/11/release111/), when it's available in a given environment. With TLS 1.3:
@@ -277,6 +325,10 @@ Starting with Preview 3, running .NET Core 3.0 on Linux with Docker works better
 * Default Garbage Collector (GC) heap size: maximum of 20 mb or 75% of the memory limit on the container.
 * Explicit size can be set as an absolute number or percentage of cgroup limit.
 * Minimum reserved segment size per GC heap is 16 mb. This size reduces the number of heaps that are created on machines.
+
+## Smaller Garbage Collection heap sizes
+
+The Garbage Collector's default heap size has been reduced resulting in .NET Core using less memory. This change better aligns with the generation 0 allocation budget with modern processor cache sizes.
 
 ## GPIO Support for Raspberry Pi
 

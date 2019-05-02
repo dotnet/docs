@@ -150,7 +150,7 @@ Console.WriteLine("Feature\tPFI");
 
 foreach (var feature in featureImportanceMetrics)
 {
-    Console.WriteLine($"{featureColumnNames[feature.index],-20}|\t{feature.RSquared.Mean,10}");
+    Console.WriteLine($"{featureColumnNames[feature.index],-20}|\t{feature.RSquared.Mean:F6}");
 }
 ```
 

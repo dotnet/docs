@@ -1,5 +1,5 @@
 ---
-title: Categorize iris flowers using a clustering learner 
+title: Categorize iris flowers using a clustering model 
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.author: johalex
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can build a model to cluster iris flowers based on its parameters.
 ---
-# Tutorial: Categorize iris flowers using a clustering learner with ML.NET
+# Tutorial: Categorize iris flowers using a clustering model with ML.NET
 
 This tutorial illustrates how to use ML.NET to build a [clustering model](../resources/tasks.md#clustering) for the [iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set).
 

@@ -98,8 +98,6 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 You prepare the app, and then load data:
 
-<!--- do we need to call out initialization explicitly, or could we just lump this together with loading data as I have-->
-
 1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
 
     [!code-csharp[CreateMLContext](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateMLContext "Create the ML Context")]
@@ -166,7 +164,6 @@ When preparing a model, you use part of the dataset to train it and part of the 
     ```
 
 ### Extract and transform the data
-<!---The transform and featurization parts of this section seem like they'd be under "prepare data" above. A quirk of the ML.NET process? -->
 
 1. Call `FeaturizeText` as the next line of code:
 

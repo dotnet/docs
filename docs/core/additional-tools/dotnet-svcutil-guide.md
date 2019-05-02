@@ -62,9 +62,9 @@ From a Windows, macOS, or Linux command window perform the following steps:
     <!-- markdownlint-disable MD023 -->
     # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-        ```console
-        dotnet tool install --global dotnet-svcutil
-        ```
+    ```console
+    dotnet tool install --global dotnet-svcutil
+    ```
 
     # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
     Open the `HelloSvcutil.csproj` project file in your editor, edit the `Project` element, and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:

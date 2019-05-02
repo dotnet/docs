@@ -82,7 +82,7 @@
 |Application Type|Message|  
 |----------------------|-------------|  
 |WPF app|**The calling thread cannot access this object because a different thread owns it.**|  
-|UWP app|**The application called an interface that was marshalled for a different thread.**|  
+|UWP app|**The application called an interface that was marshaled for a different thread.**|  
 |Windows Forms app|**Cross-thread operation not valid: Control 'TextBox1' accessed from a thread other than the thread it was created on.**|  
   
  UI frameworks for the .NET Framework implement a *dispatcher* pattern that includes a method to check whether a call to a member of a UI element is being executed on the UI thread, and other methods to schedule the call on the UI thread:  

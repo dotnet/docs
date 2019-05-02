@@ -34,7 +34,7 @@
     </remarks>
     <threadsafe>Any public <see langword="static" /> members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
- This object can be accessed only from the thread on which it was created. Attempts to access it from other threads will throw an <see cref="T:System.InvalidOperationException" />. <see cref="M:System.Windows.Threading.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> or <see cref="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> provide support for marshalling work to the correct thread.</threadsafe>
+ This object can be accessed only from the thread on which it was created. Attempts to access it from other threads will throw an <see cref="T:System.InvalidOperationException" />. <see cref="M:System.Windows.Threading.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> or <see cref="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> provide support for marshaling work to the correct thread.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

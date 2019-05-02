@@ -794,7 +794,7 @@
         <Parameter Name="unmanagedMarshal" Type="System.Reflection.Emit.UnmanagedMarshal" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="unmanagedMarshal">A descriptor specifying the native marshalling of this field.</param>
+        <param name="unmanagedMarshal">A descriptor specifying the native marshaling of this field.</param>
         <summary>Describes the native marshaling of the field.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

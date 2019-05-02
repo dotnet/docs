@@ -50,7 +50,7 @@
  <xref:System.Runtime.InteropServices.ComImportAttribute> is a pseudo-custom attribute that indicates that a type has been defined in a previously published type library. The common language runtime treats these types differently when activating, exporting, coercing, and so on.  
   
 > [!NOTE]
->  All base COM types that are inherited by a managed object must aggregate the Free Threaded Marshaller (FTM).  COM types that do not aggregate the FTM can't be inherited by managed objects.  
+>  All base COM types that are inherited by a managed object must aggregate the Free Threaded Marshaler (FTM).  COM types that do not aggregate the FTM can't be inherited by managed objects.  
   
    
   

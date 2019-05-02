@@ -66,7 +66,7 @@
  
  * The binding isolation process creates multiple types with the same type name.
      * This can lead to confusing error messages, for example "type Foo.Foo cannot be cast to type Foo.Foo."
-     * Marshalling across isolation boundaries is non-trivial. A typical solution would be to use an interface defined in an assembly which is only loaded into the default load context.
+     * Marshaling across isolation boundaries is non-trivial. A typical solution would be to use an interface defined in an assembly which is only loaded into the default load context.
  
  ]]></format>
     </remarks>

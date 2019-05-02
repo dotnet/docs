@@ -49,7 +49,7 @@
     </remarks>
     <threadsafe>Any public <see langword="static" /> members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
- When the <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />, a <see cref="T:System.Windows.Freezable" /> object can be accessed only from the thread on which it was created. Attempting to access it from another thread throws an <see cref="T:System.InvalidOperationException" />. The <see cref="Overload:System.Windows.Threading.Dispatcher.Invoke" /> and <see cref="Overload:System.Windows.Threading.Dispatcher.BeginInvoke" /> methods provide support for marshalling to the correct thread.  
+ When the <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />, a <see cref="T:System.Windows.Freezable" /> object can be accessed only from the thread on which it was created. Attempting to access it from another thread throws an <see cref="T:System.InvalidOperationException" />. The <see cref="Overload:System.Windows.Threading.Dispatcher.Invoke" /> and <see cref="Overload:System.Windows.Threading.Dispatcher.BeginInvoke" /> methods provide support for marshaling to the correct thread.  
   
  When their <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, <see cref="T:System.Windows.Freezable" /> objects are free-threaded.  For more information, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</threadsafe>
   </Docs>

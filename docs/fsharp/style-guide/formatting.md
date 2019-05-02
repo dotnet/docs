@@ -96,7 +96,7 @@ let myFunBad (a:decimal)(b)c = a + b + c
 
 ### Type annotations
 
-#### Right-pad function argument type annotation with white space
+#### Right-pad function argument type annotations
 
 When defining arguments with type annotations, use white space after the `:` symbol:
 

@@ -82,7 +82,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 The following diagram represents the application code structure, as well as the iterative process of model development:
 - Collect and load training data into an **IDataView** object
 - Specify a pipeline of operations to extract features and apply a machine learning algorithm
-- Create a model by calling **Fit()** on the pipeline
+- Train a model by calling **Fit()** on the pipeline
 - Evaluate the model and iterate to improve
 - Save the model into binary format, for use in an application
 - Load the model back into an **ITransformer** object

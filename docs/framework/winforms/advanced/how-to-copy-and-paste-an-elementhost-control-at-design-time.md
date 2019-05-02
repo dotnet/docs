@@ -12,9 +12,6 @@ ms.assetid: e570375d-2a68-44ba-b4f7-c781af2d20e8
 
 This procedure shows you how to copy a Windows Presentation Foundation (WPF) control on a Windows Form in Visual Studio.
 
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
 ## Copy and paste an ElementHost control at design time
 
 1. Add a new WPF <xref:System.Windows.Controls.UserControl> to your Windows Forms project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).

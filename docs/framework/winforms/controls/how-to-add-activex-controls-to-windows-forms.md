@@ -16,9 +16,6 @@ While the Windows Forms Designer in Visual Studio is optimized to host Windows F
 
 Before you add ActiveX controls to your form, you must add them to the Toolbox. For more information, see [COM Components, Customize Toolbox Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/cby6tzh5(v=vs.100)).
 
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
 ## Add an ActiveX control to your Windows Form
 
 To add an ActiveX control to your Windows Form, double-click the control on the Toolbox.

@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
 ---
 # Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls
+
 As you construct forms and controls for your Windows Forms application, there are many tasks you will perform repeatedly. These are some of the commonly performed tasks you will encounter:
 
 - Adding or removing a tab on a <xref:System.Windows.Forms.TabControl>.
@@ -29,9 +30,6 @@ Tasks illustrated in this walkthrough include:
 - Enabling and Disabling Smart Tags
 
 When you are finished, you will have an understanding of the role played by these important layout features.
-
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 ## Create the project
 

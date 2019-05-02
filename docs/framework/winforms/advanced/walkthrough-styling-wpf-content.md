@@ -17,10 +17,7 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 
 - Create the WPF control type.
 
-- Apply a style to the WPF control.
-
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+- Apply a style to the WPF control.a
 
 ## Prerequisites
 

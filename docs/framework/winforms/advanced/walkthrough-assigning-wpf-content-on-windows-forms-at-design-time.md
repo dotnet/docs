@@ -21,9 +21,6 @@ In this walkthrough, you perform the following tasks:
 
 - Select WPF controls.
 
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
 ## Prerequisites
 
 You need Visual Studio to complete this walkthrough.

@@ -20,9 +20,6 @@ ms.assetid: 3381a5e4-e1a3-44e2-a765-a0b758937b85
 
 When you place a component on a Windows Form, two properties are provided by the design environment: `GenerateMember` and `Modifiers`. The `GenerateMember` property specifies when the Windows Forms Designer generates a member variable for a component. The `Modifiers` property is the access modifier assigned to that member variable. If the value of the `GenerateMember` property is `false`, the value of the `Modifiers` property has no effect.
 
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
-
 ## Specify whether a component is a member of the form
 
 1. In Visual Studio, in the Windows Forms Designer, open your form.

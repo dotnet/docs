@@ -285,7 +285,7 @@ public static ITransformer ReuseAndTuneInceptionModel(MLContext mlContext, strin
 
 ### Load the data
 
-Data in ML.NET is represented as an [IDataView class](xref:Microsoft.Data.DataView.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
+Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataView). `IDataView` is a flexible, efficient way of describing tabular data (numeric and text). Data can be loaded from a text file or in real time (for example, SQL database or log files) to an `IDataView` object.
 
 Load the data using the `MLContext.Data.LoadFromTextFile` wrapper. Add the following code as the next line in the `ReuseAndTuneInceptionModel()` method:
 

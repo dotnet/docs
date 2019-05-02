@@ -4,7 +4,6 @@ description: Learn how to train and evaluate machine learning models in ML.NET
 ms.date: 04/17/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.topic: how-to
 ms.custom: mvc
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---

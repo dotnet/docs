@@ -4,7 +4,6 @@ description: Learn how to use transforms in ML.NET to manipulate and prepare dat
 author: luisquintanilla
 ms.author: luquinta
 ms.date: 04/26/2019
-ms.topic: how-to
 ms.custom: mvc
 #Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET using transforms
 ---

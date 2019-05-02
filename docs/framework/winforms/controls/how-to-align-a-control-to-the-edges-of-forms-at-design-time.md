@@ -1,40 +1,41 @@
 ---
 title: "How to: Align a Control to the Edges of Forms at Design Time"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom controls [Windows Forms], docking using designer"
   - "Dock property [Windows Forms], aligning controls (using designer)"
 ms.assetid: 51f08998-5e3b-4330-be58-a4edd0eb60f4
 ---
 # How to: Align a Control to the Edges of Forms at Design Time
-You can make your control align to the edge of your forms by setting the <xref:System.Windows.Forms.Control.Dock%2A>. This property designates where your control resides in the form. The <xref:System.Windows.Forms.Control.Dock%2A> property can be set to the following values:  
-  
-|Setting|Effect on your control|  
-|-------------|----------------------------|  
-|<xref:System.Windows.Forms.DockStyle.Bottom>|Docks to the bottom of the form.|  
-|<xref:System.Windows.Forms.DockStyle.Fill>|Fills all remaining space in the form.|  
-|<xref:System.Windows.Forms.DockStyle.Left>|Docks to the left side of the form.|  
-|<xref:System.Windows.Forms.DockStyle.None>|Does not dock anywhere, and it appears at the location specified by its <xref:System.Windows.Forms.Control.Location%2A>.|  
-|<xref:System.Windows.Forms.DockStyle.Right>|Docks to the right side of the form.|  
-|<xref:System.Windows.Forms.DockStyle.Top>|Docks to the top of the form.|  
-  
- These values can also be set in code. For more information, see [How to: Align a Control to the Edges of Forms](how-to-align-a-control-to-the-edges-of-forms.md).  
-  
+
+You can make your control align to the edge of your forms by setting the value of the <xref:System.Windows.Forms.Control.Dock%2A> property. This property designates where your control resides in the form. The <xref:System.Windows.Forms.Control.Dock%2A> property can be set to the following values:
+
+|Setting|Effect on your control|
+|-------------|----------------------------|
+|<xref:System.Windows.Forms.DockStyle.Bottom>|Docks to the bottom of the form.|
+|<xref:System.Windows.Forms.DockStyle.Fill>|Fills all remaining space in the form.|
+|<xref:System.Windows.Forms.DockStyle.Left>|Docks to the left side of the form.|
+|<xref:System.Windows.Forms.DockStyle.None>|Does not dock anywhere, and it appears at the location specified by its <xref:System.Windows.Forms.Control.Location%2A>.|
+|<xref:System.Windows.Forms.DockStyle.Right>|Docks to the right side of the form.|
+|<xref:System.Windows.Forms.DockStyle.Top>|Docks to the top of the form.|
+
+These values can also be set in code. For more information, see [How to: Align a Control to the Edges of Forms](how-to-align-a-control-to-the-edges-of-forms.md).
+
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
-### To set the Dock property for your control at design time  
-  
-1. In the Windows Forms Designer, select your control.  
-  
-2. In the **Properties** window, click the drop-down box next to the <xref:System.Windows.Forms.Control.Dock%2A> property.  
-  
-     A graphical interface representing the six possible <xref:System.Windows.Forms.Control.Dock%2A> settings is displayed.  
-  
-3. Choose the appropriate setting.  
-  
-4. Your control will now dock in the manner specified by the setting.  
-  
+> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+
+## Set the Dock property for your control at design time
+
+1. In the Windows Forms Designer in Visual Studio, select your control.
+
+2. In the **Properties** window, click the drop-down box next to the <xref:System.Windows.Forms.Control.Dock%2A> property.
+
+     A graphical interface representing the six possible <xref:System.Windows.Forms.Control.Dock%2A> settings is displayed.
+
+3. Choose the appropriate setting.
+
+4. Your control will now dock in the manner specified by the setting.
+
 ## See also
 
 - <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>

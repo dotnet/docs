@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], controls"
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
 ---
-
 # Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features
 
 The design-time experience for a custom control can be enhanced by authoring an associated custom designer.
@@ -63,17 +62,13 @@ For the complete code listing, see [How to: Create a Windows Forms Control That 
 
 ## Prerequisites
 
-In order to complete this walkthrough, you will need:
-
-- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.
+In order to complete this walkthrough, you'll need Visual Studio.
 
 ## Creating the Project
 
 The first step is to create the application project. You will use this project to build the application that hosts the custom control.
 
-### To create the project
-
-- Create a Windows Forms Application project called "MarqueeControlTest" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
+Open Visual Studio and create a Windows Forms Application project called "MarqueeControlTest" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
 
 ## Creating a Control Library Project
 

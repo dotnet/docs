@@ -2051,7 +2051,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29> method overload to create an instance of an object in a target application domain and call its methods.  
   
- The example defines the `MarshallableExample` class, which can be marshaled across application domain boundaries. The example builds a path to the currently executing assembly, creates a target application domain, and uses the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29> method overload to load the example assembly into the target application domain and create an instance of `MarshallableExample`.  
+ The example defines the `MarshalableExample` class, which can be marshaled across application domain boundaries. The example builds a path to the currently executing assembly, creates a target application domain, and uses the <xref:System.AppDomain.CreateInstanceFrom%28System.String%2CSystem.String%29> method overload to load the example assembly into the target application domain and create an instance of `MarshalableExample`.  
   
 > [!NOTE]
 >  The path is absolute in this example, but a relative path would also work because the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method is used to load the assembly.  

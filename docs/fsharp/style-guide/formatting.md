@@ -98,7 +98,7 @@ let myFunBad (a:decimal)(b)c = a + b + c
 
 #### Right-pad function argument type annotation with white space
 
-When defining arguments with type annotation, use white space after the `:` symbol:
+When defining arguments with type annotations, use white space after the `:` symbol:
 
 ```fsharp
 // OK

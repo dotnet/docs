@@ -1043,7 +1043,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To convert a <xref:System.Boolean> value to its byte representation, call the <xref:System.BitConverter.ToBoolean%2A> method.  
+ To convert a <xref:System.Boolean> value to its byte representation, call the <xref:System.BitConverter.GetBytes(System.Boolean)> method.  
   
    
   

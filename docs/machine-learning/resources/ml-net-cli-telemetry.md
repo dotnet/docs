@@ -6,7 +6,6 @@ ms.date: 05/05/2019
 ms.custom: ""
 ---
 
-
 # Telemetry collection by the ML.NET CLI 
 
 The [ML.NET CLI](http://aka.ms/mlnet-cli) includes a telemetry feature that collects anonymous usage data that is aggregated for use by Microsoft.
@@ -27,7 +26,6 @@ Telemetry *isn't enabled* when you run the `mlnet` command with no other command
 - `mlnet --help`
 
 Telemetry *is enabled* when you run an [ML.NET CLI command](../reference/ml-net-cli-reference.md), such as `mlnet auto-train`.
-
 
 ## Opt out of data collection
 
@@ -63,10 +61,6 @@ If you suspect that the ML.NET CLI telemetry is collecting sensitive data or tha
 
 The Microsoft distribution of ML.NET CLI is licensed with the [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula). For details on data collection and processing, see the section entitled "Data."
 
-<!--- 
-Removed quoted license text. Reduce risk of error by not publishing legal content that could be revised and that the doc team doesn't own. The DATA section has changed at least twice recently, meaning text in the draft of this article and the .NET Core telemetry article were outdated.
--->
-
 ## Disclosure
 
 When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet auto-train`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running. 
@@ -76,4 +70,3 @@ When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) 
 - [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula)
 - [Privacy at Microsoft](https://www.microsoft.com/en-us/trustcenter/privacy/)
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
-

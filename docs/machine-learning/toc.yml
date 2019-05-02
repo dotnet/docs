@@ -49,10 +49,6 @@
       href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
     - name: Serve Model in Web API
       href: how-to-guides/serve-model-web-api-ml-net.md
-  - name: ML.NET CLI
-    items:
-    - name: Install the ML.NET CLI
-      href: how-to-guides/install-ml-net-cli.md
   - name: Infer.NET
     items:
     - name: Probabilistic programming with Infer.NET
@@ -63,8 +59,6 @@
     href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
   - name: Preview API Reference
     href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
-  - name: CLI Reference
-    href: reference/ml-net-cli-reference.md
 - name: Resources
   href: resources/index.md
   items:
@@ -74,5 +68,22 @@
     href: resources/tasks.md
   - name: Data transforms
     href: resources/transforms.md
-  - name: ML.NET CLI Telemetry
-    href: resources/ml-net-cli-telemetry.md
+  - name: Metrics
+    href: resources/metrics.md
+- name: Automated ML preview
+  items:
+  - name: Overview
+    href: automl-overview.md
+  - name: ML.NET CLI
+    items:
+    - name: Install the CLI
+      href: how-to-guides/install-ml-net-cli.md
+    - name: Automated machine learning
+      href: automate-training-with-cli.md
+    - name: Auto-generate a binary classifier
+      href: tutorials/mlnet-cli.md  
+    - name: CLI reference
+      href: reference/ml-net-cli-reference.md
+    - name: CLI telemetry
+      href: resources/ml-net-cli-telemetry.md
+  

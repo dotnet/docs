@@ -48,7 +48,7 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 </Project>
 ```
 
-If you're using Visual Studio, you need Visual Studio 2019 as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**. It is highly recommended that you use [Visual Studio 2019 Update 1 Preview](https://visualstudio.microsoft.com/vs/preview/).
+If you're using Visual Studio, you need Visual Studio 2019, as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**. We highly recommend that you use [Visual Studio 2019 Update 1 Preview](https://visualstudio.microsoft.com/vs/preview/).
 
 ## Improved .NET Core Version APIs
 
@@ -133,7 +133,7 @@ During `dotnet build` or `dotnet publish`, an executable is created that matches
 
 The main benefit of TC is to enable (re-)jitting methods with slower-but-faster to produce code or higher-quality-but-slower to produce code. This helps increase performance of an application as it goes through various stages of execution, from startup through steady-state. This contrasts with the non-TC approach, where every method is compiled a single way (the same as the high-quality tier), which is biased to steady-state over startup performance.
 
-To enable Quick JIT (tier 0 jitted code), use this setting in your project:
+To enable Quick JIT (tier 0 jitted code), use this setting in your project file:
 
 ```xml
 <PropertyGroup>
@@ -141,7 +141,7 @@ To enable Quick JIT (tier 0 jitted code), use this setting in your project:
 </PropertyGroup>
 ```
 
-To disable TC completely, use this setting in your project:
+To disable TC completely, use this setting in your project file:
 
 ```xml
 <TieredCompilation>false</TieredCompilation>
@@ -259,7 +259,7 @@ Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. Whi
 
 The <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> type supports the HTTP/2 protocol. Support is currently disabled but can be turned on by calling `AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2Support", true);` before you use <xref:System.Net.Http.HttpClient>. You can also enable HTTP/2 support by setting the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` environment variable to `true` before you run your app.
 
-If HTTP/2 is enabled, the HTTP protocol version will be negotiated via TLS/ALPN and HTTP/2 will only be used if the server selects to use it.
+If HTTP/2 is enabled, the HTTP protocol version will be negotiated via TLS/ALPN, and HTTP/2 will only be used if the server selects to use it.
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 

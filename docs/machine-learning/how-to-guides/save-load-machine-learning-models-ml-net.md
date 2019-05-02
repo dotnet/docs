@@ -8,7 +8,7 @@ ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to use ML.NET to consume my trained and evaluated machine learning model in my applications.
 ---
 
-# How-To: Save and load trained models
+# Save and load trained models
 
 Learn how to save and load trained models in your application. 
 

@@ -1,14 +1,14 @@
 ---
-title: "How-To: Explain model predictions using Permutation Feature Importance"
+title: "Explain model predictions using Permutation Feature Importance"
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 05/01/2019
+ms.date: 05/02/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use Permutation Feature Importance in ML.NET to determine the feature importance of my models so that I can understand how my machine learning models make decisions and which features contribute to their performance.
 ---
 
-# How-To: Explain model predictions using Permutation Feature Importance
+# Explain model predictions using Permutation Feature Importance
 
 Learn how to explain ML.NET machine learning model predictions by understanding the contribution features have to predictions using Permutation Feature Importance (PFI).
 

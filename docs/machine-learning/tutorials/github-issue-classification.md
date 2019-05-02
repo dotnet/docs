@@ -1,7 +1,7 @@
 ---
 title: Classify GitHub issues - multiclass classification 
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 04/29/2019
+ms.date: 05/02/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to classify GitHGub issues to assign them to a given area.
@@ -18,12 +18,6 @@ In this tutorial, you learn how to:
 > * Evaluate the model
 > * Predict with the trained model
 > * Deploy and Predict with a loaded model
-
-> [!NOTE]
-> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
-
-This tutorial and related sample are currently using **ML.NET version 1.0.0-preview**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
-
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/GitHubIssueClassification) repository.
 
@@ -50,7 +44,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 4. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select the **v 1.0.0-preview** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select the **v 1.0.0** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ### Prepare your data
 
@@ -331,12 +325,11 @@ Display `Area` in order to categorize the issue and act on it accordingly. Creat
 Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These messages have been removed from the following results for clarity.
 
 ```console
-=============== Single Prediction just-trained-model - Result: area-System.Net ===============
 *************************************************************************************************************
 *       Metrics for Multi-class Classification model - Test Data
 *------------------------------------------------------------------------------------------------------------
-*       MicroAccuracy:    0.741
-*       MacroAccuracy:    0.67
+*       MicroAccuracy:    0.742
+*       MacroAccuracy:    0.669
 *       LogLoss:          .916
 *       LogLossReduction: .645
 *************************************************************************************************************

@@ -41,10 +41,10 @@
       href: how-to-guides/train-cross-validation-ml-net.md
   - name: Use the trained model
     items:
-    - name: Use a trained model to make predictions
-      href: how-to-guides/machine-learning-model-predictions-ml-net.md
-    - name: Operationalize a trained model
-      href: how-to-guides/consuming-model-ml-net.md
+    - name: One prediction at a time with PredictionEngine
+      href: how-to-guides/single-predict-model-ml-net.md
+    - name: Save and load trained models
+      href: how-to-guides/save-load-machine-learning-models-ml-net.md
     - name: Retrain a model
       href: how-to-guides/retrain-model-ml-net.md
     - name: Serve Model Azure Functions

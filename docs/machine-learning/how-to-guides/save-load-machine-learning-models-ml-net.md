@@ -1,19 +1,18 @@
 ---
-title: "How-To: Save and Load Data Preparation Pipelines and Trained Models"
-description: Discover how to use ML.NET to consume a trained and evaluated machine learning model in applications
-ms.date: 04/29/2019
+title: "Save and Load Trained Models"
+description: Learn how to save and load trained models
+ms.date: 05/02/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc
-ms.topic: how-to
+ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to use ML.NET to consume my trained and evaluated machine learning model in my applications.
 ---
 
 # How-To: Save and load trained models
 
-Learn how to save and load data preparation pipelines and trained models in your application. 
+Learn how to save and load trained models in your application. 
 
-Throughout the model building process, a model lives in memory and is accessible throughout the application's lifecycle. However, once the application stops running, if the model is not saved somewhere locally or remotely, it's no longer accessible. Typically models are used at some point after training either for inference or re-training. Therefore, it's important to store the model as well as its data preparation pipeline. Save and load these components using the steps described in subsequent sections of this document when using data preparation and model training pipelines like the one detailed below. Although this sample uses a linear regression model, the same process applies to other ML.NET algorithms.
+Throughout the model building process, a model lives in memory and is accessible throughout the application's lifecycle. However, once the application stops running, if the model is not saved somewhere locally or remotely, it's no longer accessible. Typically models are used at some point after training in other applications either for inference or re-training. Therefore, it's important to store the model. Save and load models using the steps described in subsequent sections of this document when using data preparation and model training pipelines like the one detailed below. Although this sample uses a linear regression model, the same process applies to other ML.NET algorithms.
 
 ```csharp
 HousingData[] housingData = new HousingData[]
@@ -66,7 +65,7 @@ When saving a model you need two things:
 1. The [`ITransformer`](xref:Microsoft.ML.ITransformer) of the model.
 2. The [`DataViewSchema`](xref:Microsoft.ML.DataViewSchema) of the [`ITransformer`](xref:Microsoft.ML.ITransformer)'s expected input.
 
-After training the model, use the [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save*) method to save the trained model to a file called `model.zip` using the `DataViewSchema` of the data after the data preparation pipeline has been applied. 
+After training the model, use the [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save*) method to save the trained model to a file called `model.zip` using the `DataViewSchema` of the input data. 
 
 ```csharp
 // Save Trained Model
@@ -110,9 +109,12 @@ using (HttpClient client = new HttpClient())
 
 ## Separate Data Preparation Pipelines and Models
 
-When working with separate data preparation pipelines and models, the same operations apply, except they both now components need to be saved and loaded simultaneously.
+> [!NOTE]
+> Working with separate data preparation and model training pipelines is optional. Separation of pipelines makes it easier to inspect the learned model parameters. For predictions, it's easier to save and load a single pipeline that includes the data preparation and model training operations.
 
-Given separate data preparation pipeline and model components:
+When working with separate data preparation pipelines and models, the same process as single pipelines applies; except now both pipelines need to be saved and loaded simultaneously.
+
+Given separate data preparation and model training pipelines:
 
 ```csharp
 // Define data preparation estimator
@@ -153,9 +155,10 @@ In a separate process or application, load the data preparation pipeline and tra
 // Create MLContext
 MLContext mlContext = new MLContext();
 
-// Define
+// Define data preparation and trained model schemas
 DataViewSchema dataPrepPipelineSchema, modelSchema;
 
+// Load data preparation pipeline and trained model
 ITransformer dataPrepPipeline = mlContext.Model.Load("data_preparation_pipeline.zip",out dataPrepPipelineSchema);
 ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 ```

@@ -1289,8 +1289,8 @@ On Unix platforms that do not support creation or birth time, this property retu
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the original path. Use the <see cref="P:System.IO.FileSystemInfo.FullName" /> or <see cref="P:System.IO.FileSystemInfo.Name" /> properties for the full path or file/directory name.</summary>
+        <returns>A string with the original path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,8 +10,6 @@ ms.custom: mvc, seodec18
 ---
 # Tutorial: Categorize iris flowers using a clustering learner with ML.NET
 
-This tutorial and related sample are using **ML.NET 1.0**. For more information, see the release notes at the [dotnet/machinelearning GitHub repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
-
 This tutorial illustrates how to use ML.NET to build a [clustering model](../resources/tasks.md#clustering) for the [iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set).
 
 In this tutorial, you learn how to:

@@ -1,18 +1,19 @@
 ---
 title: "How-To: Save and Load Data Preparation Pipelines and Trained Models"
 description: Discover how to use ML.NET to consume a trained and evaluated machine learning model in applications
-ms.date: 05/02/2019
+ms.date: 04/29/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc, how-to
+ms.custom: mvc
+ms.topic: how-to
 #Customer intent: As a developer, I want to use ML.NET to consume my trained and evaluated machine learning model in my applications.
 ---
 
 # How-To: Save and load trained models
 
-Learn how to save and load trained models in your application. 
+Learn how to save and load data preparation pipelines and trained models in your application. 
 
-Throughout the model building process, a model lives in memory and is accessible throughout the application's lifecycle. However, once the application stops running, if the model is not saved somewhere locally or remotely, it's no longer accessible. Typically models are used at some point after training in other applications either for inference or re-training. Therefore, it's important to store the model. Save and load models using the steps described in subsequent sections of this document when using data preparation and model training pipelines like the one detailed below. Although this sample uses a linear regression model, the same process applies to other ML.NET algorithms.
+Throughout the model building process, a model lives in memory and is accessible throughout the application's lifecycle. However, once the application stops running, if the model is not saved somewhere locally or remotely, it's no longer accessible. Typically models are used at some point after training either for inference or re-training. Therefore, it's important to store the model as well as its data preparation pipeline. Save and load these components using the steps described in subsequent sections of this document when using data preparation and model training pipelines like the one detailed below. Although this sample uses a linear regression model, the same process applies to other ML.NET algorithms.
 
 ```csharp
 HousingData[] housingData = new HousingData[]

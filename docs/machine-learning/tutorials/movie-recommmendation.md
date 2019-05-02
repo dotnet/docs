@@ -1,5 +1,5 @@
 ---
-title: Build a movie recommender
+title: 'Tutorial: Build a movie recommender'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
 ms.author: johalex

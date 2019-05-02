@@ -108,7 +108,7 @@ let complexFunction (a: int) (b: int) c = a + b + c
 let complexFunctionBad (a :int) (b :int) (c:int) = a + b + c
 ```
 
-#### Surround definition type annotations with white space
+#### Surround return type annotations with white space
 
 In a let-bound function or value type annotation (return type in the case of a function), use white space before and after the `:` symbol:
 

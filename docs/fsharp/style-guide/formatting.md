@@ -94,7 +94,7 @@ let myFun (a: decimal) b c = a + b + c
 let myFunBad (a:decimal)(b)c = a + b + c
 ```
 
-### type annotation
+### Type annotations
 
 #### Right-pad function argument type annotation with white space
 

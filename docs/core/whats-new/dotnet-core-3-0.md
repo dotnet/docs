@@ -328,7 +328,7 @@ Starting with Preview 3, running .NET Core 3.0 on Linux with Docker works better
 
 ## Smaller Garbage Collection heap sizes
 
-While the default Garbage Collector (GC) heap size was reduced for Docker, memory usage has been improved while not running in a container. This better aligns with the generation 0 allocation budget with modern processor cache sizes.
+The Garbage Collector's default heap size has been reduced resulting in .NET Core using less memory. This change better aligns with the generation 0 allocation budget with modern processor cache sizes.
 
 ## GPIO Support for Raspberry Pi
 

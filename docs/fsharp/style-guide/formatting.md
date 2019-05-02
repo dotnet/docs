@@ -115,7 +115,7 @@ In a let-bound function or value type annotation (return type in the case of a f
 ```fsharp
 // OK
 let expensiveToCompute : int = 0 // Type annotation for let-bound value
-let myFun (a: decimal) b c : decimal = a + b + c
+let myFun (a: decimal) b c : decimal = a + b + c // Type annotation for the return type of a function
 // Bad
 let expensiveToComputeBad1:int = 1
 let expensiveToComputeBad2 :int = 2

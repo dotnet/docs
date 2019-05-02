@@ -8,7 +8,7 @@ ms.custom: mvc
 ---
 # Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues
 
-This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio 2019.
+This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio 2017.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -325,13 +325,14 @@ Display `Area` in order to categorize the issue and act on it accordingly. Creat
 Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These messages have been removed from the following results for clarity.
 
 ```console
+=============== Single Prediction just-trained-model - Result: area-System.Net ===============
 *************************************************************************************************************
 *       Metrics for Multi-class Classification model - Test Data
 *------------------------------------------------------------------------------------------------------------
-*       MicroAccuracy:    0.742
-*       MacroAccuracy:    0.669
-*       LogLoss:          .916
-*       LogLossReduction: .645
+*       MicroAccuracy:    0.738
+*       MacroAccuracy:    0.668
+*       LogLoss:          .919
+*       LogLossReduction: .643
 *************************************************************************************************************
 =============== Single Prediction - Result: area-System.Data ===============
 ```

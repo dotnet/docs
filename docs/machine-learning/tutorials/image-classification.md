@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Build an ML.NET custom image classifier with TensorFlow'
 description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
-ms.date: 04/25/2019
+ms.date: 05/06/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
@@ -20,11 +20,6 @@ In this tutorial, you learn how to:
 > * Reuse and tune the pre-trained model
 > * Classify Images
 
-> [!NOTE]
-> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
-
-This tutorial and related sample are currently using **ML.NET version 1.0.0-preview**. For more information, see the release notes at the [dotnet/machinelearning](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes) GitHub repository.
-
 ## Image classification sample overview
 
 The sample is a console application that uses ML.NET to build an image classifier by reusing a pre-trained model to classify images with a small amount of training data.
@@ -35,9 +30,9 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 * [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
-* Microsoft.ML 1.0.0-preview Nuget package
-* Microsoft.ML.ImageAnalytics 1.0.0-preview Nuget package
-* Microsoft.ML.TensorFlow 0.12.0-preview Nuget package
+* Microsoft.ML 1.0.0 Nuget package
+* Microsoft.ML.ImageAnalytics 1.0.0 Nuget package
+* Microsoft.ML.TensorFlow 0.12.0 Nuget package
 
 * [The tutorial assets directory .ZIP file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
 
@@ -126,10 +121,7 @@ The training and testing images are located in the assets folders that you'll do
 
 2. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**. Click on the **Version** drop-down, select the **1.0.0-preview** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.ImageAnalytics v1.0.0-preview** and **Microsoft.ML.TensorFlow v0.12.0-preview**.
-
-  > [!NOTE]
-  > This tutorial uses **Microsoft.ML v0.10.0**, **Microsoft.ML.ImageAnalytics v0.10.0**, and **Microsoft.ML.TensorFlow v0.12.0-preview**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**. Click on the **Version** drop-down, select the **1.0.0** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.ImageAnalytics v1.0.0** and **Microsoft.ML.TensorFlow v0.12.0**.
 
 ### Prepare your data
 

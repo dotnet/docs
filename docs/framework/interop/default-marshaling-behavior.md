@@ -224,7 +224,7 @@ BOOL PtInRect(const RECT *lprc, POINT pt);
   
 ```vb
 Friend Class NativeMethods
-    Friend Shared Declare Auto Function PtInRect Lib "User32.dll" (
+    Friend Declare Auto Function PtInRect Lib "User32.dll" (
         ByRef r As Rect, p As Point) As Boolean
 End Class
 ```
@@ -286,7 +286,7 @@ void GetSystemTime(SYSTEMTIME* SystemTime);
   
 ```vb
 Friend Class NativeMethods
-    Friend Shared Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
+    Friend Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
         ByVal sysTime As SystemTime)
 End Class
 ```

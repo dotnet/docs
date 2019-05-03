@@ -1,7 +1,7 @@
 ---
 title: 'How-To: Load Data'
 description: Load data file and streaming data into ML.NET
-ms.date: 04/03/2019
+ms.date: 05/03/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer I want to know how to load data from file and streaming data sources.
 ---

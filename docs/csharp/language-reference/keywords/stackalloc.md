@@ -1,8 +1,7 @@
 ---
 title: "stackalloc keyword - C# Reference"
 ms.custom: seodec18
-
-ms.date: 04/12/2018
+ms.date: 04/10/2019
 f1_keywords: 
   - "stackalloc_CSharpKeyword"
   - "stackalloc"

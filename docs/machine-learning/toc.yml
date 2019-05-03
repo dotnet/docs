@@ -3,9 +3,7 @@
 - name: Overview
   expanded: true
   items:
-  - name: What is machine learning?
-    href: what-is-machine-learning.md
-  - name: How does ML.NET work?
+  - name: What is ML.NET & how does it work?
     href: how-does-mldotnet-work.md
 - name: Tutorials
   items:
@@ -23,6 +21,8 @@
     href: tutorials/movie-recommmendation.md
   - name: Image Classification (transfer learning)
     href: tutorials/image-classification.md
+  - name: Product Sales Analysis (anomaly detection)
+    href: tutorials/sales-anomaly-detection.md
 - name: How-to guides
   items:
   - name: Load data
@@ -43,8 +43,8 @@
     items:
     - name: One prediction at a time with PredictionEngine
       href: how-to-guides/single-predict-model-ml-net.md
-    - name: Operationalize a trained model
-      href: how-to-guides/consuming-model-ml-net.md
+    - name: Save and load trained models
+      href: how-to-guides/save-load-machine-learning-models-ml-net.md
     - name: Retrain a model
       href: how-to-guides/retrain-model-ml-net.md
     - name: Serve Model Azure Functions

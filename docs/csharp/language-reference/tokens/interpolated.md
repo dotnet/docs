@@ -1,9 +1,8 @@
 ---
 title: "$ - string interpolation - C# Reference"
 ms.custom: seodec18
-
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 03/26/2018
+ms.date: 04/29/2019
 f1_keywords: 
   - "$_CSharpKeyword"
   - "$"
@@ -21,7 +20,7 @@ The `$` special character identifies a string literal as an *interpolated string
 
 String interpolation provides a more readable and convenient syntax to create formatted strings than a [string composite formatting](../../../standard/base-types/composite-formatting.md) feature. The following example uses both features to produce the same output:
 
-[!code-csharp-interactive[compare with composite formatting](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#1)]
+[!code-csharp-interactive[compare with composite formatting](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#1)]
 
 ## Structure of an interpolated string
 
@@ -43,7 +42,7 @@ Elements in square brackets are optional. The following table describes each ele
 
 The following example uses optional formatting components described above:
 
-[!code-csharp-interactive[specify alignment and format string](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#2)]
+[!code-csharp-interactive[specify alignment and format string](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#2)]
 
 ## Special characters
 
@@ -53,7 +52,7 @@ As the colon (":") has special meaning in an interpolated expression item, in or
 
 The following example shows how to include a brace in a result string and how to use a conditional operator in an interpolated expression:
 
-[!code-csharp-interactive[example with ternary conditional operator](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
+[!code-csharp-interactive[example with ternary conditional operator](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
 
 A verbatim interpolated string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../keywords/string.md) and [verbatim identifier](verbatim.md) topics.
 
@@ -78,11 +77,21 @@ There are three implicit conversions from an interpolated string:
 
 The following example uses implicit conversion to <xref:System.FormattableString> to create culture-specific result strings:
 
-[!code-csharp-interactive[create culture-specific result strings](../../../../samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#4)]
+[!code-csharp-interactive[create culture-specific result strings](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#4)]
 
 ## Additional resources
 
-If you are new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. Or you can try the  [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial locally on your machine.
+If you are new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. You also can check another [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial that demonstrates how to use interpolated strings to produce formatted strings.
+
+## Compilation of interpolated strings
+
+If an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler may substitute <xref:System.String.Format%2A?displayProperty=nameWithType> for <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+
+If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
+
+## C# language specification
+
+For more information, see the [Interpolated strings](~/_csharplang/spec/expressions.md#interpolated-strings) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

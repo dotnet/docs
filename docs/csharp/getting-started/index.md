@@ -11,7 +11,7 @@ ms.custom: seoapril2019
 ---
 # Get started with C\#
 
-This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. These articles assume some programming experience. If your are new to programming, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) interactive tutorials.
+This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio 2017 and Visual Studio Code. These articles assume some programming experience. If you are new to programming, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) interactive tutorials.
 
 The following topics are available:
 

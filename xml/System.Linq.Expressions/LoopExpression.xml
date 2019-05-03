@@ -80,9 +80,9 @@
         <Parameter Name="visitor" Type="System.Linq.Expressions.ExpressionVisitor" />
       </Parameters>
       <Docs>
-        <param name="visitor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+         <param name="visitor">The visitor to visit this node with.</param>
+        <summary>Dispatches to the specific visit method for this node type.</summary>
+         <returns>The result of visiting this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

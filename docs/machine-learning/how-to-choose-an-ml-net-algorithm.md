@@ -46,7 +46,7 @@ You will notice that there are more variants than just algorithm/task too. Hold 
 
 An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 
 
-- Linear
+1. Linear
 
     Linear algorithms produce a model that calculates **scores** from a linear combination of the input data and a set of **weights**. The weights are parameters of the model estimated during training.
 
@@ -71,7 +71,7 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 
         Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. If you are able to use the raw score in your application, the non calibrated versions execute more efficiently.
 
-- Boosted tree
+2. Boosted tree
 
     Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.
 
@@ -87,25 +87,25 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 
     These algorithms scale to 30000-100000 features and memory-bound for the size of the training set.
 
-- Generalized additive model (GAM)
+3. Generalized additive model (GAM)
 
     Like decision tree algorithms, generalized additive model (GAM) algorithms also use trees.
 
     They bridge the gap between the explainability of linear models and tree models. 
 
-- Matrix Factorization
+4. Matrix Factorization
 
     Matrix factorization algorithms handle large sparse data sets where there are categories involved.
 
-- Ensemble
+5. Ensemble
 
     Ensemble algorithms try multiple algorithms and return the one with the best results.
 
 ## Trainer Index
 
 |Trainer|Type|Properties|
-|-------|----|======----|
-|Binary classification||||
+|-------|----|----------|
+|Binary classification|||
 |<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|Linear| Works best with featurized text. Does not have l1-reg, does have l2-reg|
 |<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>|| Stores training data in memory. Doesn't scale as well as the AveragedPerceptronTrainer but produces proper logistic regression training statistics. Does not make multiple passes over data; has parameter to constrain weights to be positive only (bias is adjusted to make weights positive)|
 |<xref:Microsoft.ML.Trainers.LinearSvmTrainer>|| This trainer does not perform regularization |

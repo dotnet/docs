@@ -1,14 +1,14 @@
 ---
-title: "How-To: Deploy ML.NET machine learning model to Azure Functions"
+title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 04/29/2019
+ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model to make predictions through the internet using Azure Functions
 ---
 
-# How-To: Deploy ML.NET machine learning model to Azure Functions
+# Deploy a model to Azure Functions
 
 Learn how to deploy a pre-trained ML.NET machine learning model for predictions over HTTP through an Azure Functions serverless environment.
 
@@ -24,7 +24,7 @@ Learn how to deploy a pre-trained ML.NET machine learning model for predictions 
     
     - Download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
-## Create Azure Functions Project
+## Create Azure Functions project
 
 1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **Cloud** node. Then select the **Azure Functions** project template. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and then select the **OK** button.
 1. In the **New Project** dialog, open the dropdown above the project options and select **Azure Functions v2 (.NET Core)**. Then, select the **Http trigger** project and then select the **OK** button.
@@ -36,12 +36,12 @@ Learn how to deploy a pre-trained ML.NET machine learning model for predictions 
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-## Add Pre-built Model To Project
+## Add Pre-trained Model To project
 
 1. Copy your pre-built model to the *MLModels* folder.
 1. In Solution Explorer, right-click your pre-built model file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-## Create Function to Analyze Sentiment
+## Create Azure Function to analyze sentiment
 
 Create a class to predict sentiment. Add a new class to your project:
 
@@ -67,7 +67,7 @@ Create a class to predict sentiment. Add a new class to your project:
     using SentimentAnalysisFunctionsApp.DataModels;
     ```
 
-## Create Data Models
+## Create data models
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
@@ -172,7 +172,7 @@ ILogger log)
 
 When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). The [`Predict`](xref:Microsoft.ML.PredictionEngineBase%602.Predict*) method is then called to generate a prediction and return the result to the user. 
 
-## Test Locally
+## Test locally
 
 Now that everything is set up, it's time to test the application:
 

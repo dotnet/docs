@@ -64,19 +64,19 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
   
 ```vb
 Friend Class NativeMethods
-    Friend Shared Declare Function MessageBoxA Lib "user32.dll" (
+    Friend Declare Function MessageBoxA Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
         ByVal lpCaption As String,
         ByVal uType As UInteger) As Integer
 
-    Friend Shared Declare Unicode Function MessageBoxW Lib "user32.dll" (
+    Friend Declare Unicode Function MessageBoxW Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
         ByVal lpCaption As String,
         ByVal uType As UInteger) As Integer
 
-    Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
+    Friend Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
         ByVal lpCaption As String,

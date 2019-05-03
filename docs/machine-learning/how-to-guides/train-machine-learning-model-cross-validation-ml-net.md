@@ -1,5 +1,5 @@
 ---
-title: "How-To: Learn how to train and evaluate a machine learning model using cross validation in ML.NET"
+title: Learn how to train and evaluate a machine learning model using cross validation in ML.NET
 description: Learn how to train and evaluate a machine learning model using cross validation in ML.NET
 ms.date: 05/01/2019
 author: luisquintanilla

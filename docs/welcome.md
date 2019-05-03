@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 04/02/2019
+ms.date: 05/06/2019
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -45,6 +45,7 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
 - [ML.NET Guide](machine-learning/index.yml)
+- [.NET for Apache Spark](spark/index.yml)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
 

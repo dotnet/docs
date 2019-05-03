@@ -18,29 +18,7 @@ Algorithms operate on **features**. Features are numerical values computed from 
 
 With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Descent Coordinated Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task. 
 
-For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the following trainers all use the Stochastic Descent Coordinated Ascent algorithm:
-
-1. Regression
-
-    Regression trainers produce ...
-
-    - <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>
-
-1. Binary Classification
-
-    - <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>
-    - <xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>
-
-        Binary classification trainers produce ...
-
-1. Multiclass Classification
-
-    - <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>
-    - <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>
-
-       Multiclass classification trainers produce ...
-
-You will notice that there are more variants than just algorithm/task too. Hold that thought: we will cover that later in this article.
+For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to **Regression tasks**.
 
 ## Algorithm types
 
@@ -56,7 +34,7 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 
     In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
 
-    You should always add a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer. Linear algorithms make multiple passes over the training data. Adding a cache checkpoint will increase the training efficiency.
+    Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer, will make the training run faster.
 
 2. Boosted tree
 

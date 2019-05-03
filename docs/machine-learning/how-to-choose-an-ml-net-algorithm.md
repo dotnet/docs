@@ -24,47 +24,24 @@ For each algorithm/task combination, ML.NET provides a component that executes t
 
 An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 
 
-1. Linear
-
-    Linear algorithms produce a model that calculates **scores** from a linear combination of the input data and a set of **weights**. The weights are parameters of the model estimated during training.
-
-    Linear algorithms work well for features that are [linearly separable](https://en.wikipedia.org/wiki/Linear_separability).
-
-    Before training with a linear algorithm, the features should be normalized. This prevents one feature having more influence over the result than others.
-
-    In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
-
-    Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer, will make the training run faster.
-
-2. Boosted tree
-
-    Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.
-
-    Features do not need to be linearly separable to use this type of algorithm. And features do not need to be normalized, because the individual values in the feature vector are used independently in the decision process.
-
-    Decision tree algorithms are generally very accurate.
-
-    Depending on the number of features, tree models can lack explainability.
-
-    Decision tree algorithms take more resources and do not scale as well as linear ones do. They do perform well on datasets that can fit into memory.
-
-    Boosted decision trees are an ensemble of small trees where each tree scores the input data and passes the score onto the next tree to produce a better score, and so on, where each tree in the ensemble improves on the previous.
-
-    These algorithms scale to 30000-100000 features and memory-bound for the size of the training set.
-
-3. Generalized additive model (GAM)
-
-    Like decision tree algorithms, generalized additive model (GAM) algorithms also use trees.
-
-    They bridge the gap between the explainability of linear models and tree models. 
-
-4. Matrix Factorization
-
-    Matrix factorization algorithms handle large sparse data sets where there are categories involved.
-
-5. Ensemble
-
-    Ensemble algorithms try multiple algorithms and return the one with the best results.
+||||
+|-|-|-|
+|Linear|Linear algorithms produce a model that calculates **scores** from a linear combination of the input data and a set of **weights**. The weights are parameters of the model estimated during training.|
+||Linear algorithms work well for features that are [linearly separable](https://en.wikipedia.org/wiki/Linear_separability).|
+||Before training with a linear algorithm, the features should be normalized. This prevents one feature having more influence over the result than others.|
+||In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.|
+||Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer, will make the training run faster.|
+|Boosted tree|Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.|
+||Features do not need to be linearly separable to use this type of algorithm. And features do not need to be normalized, because the individual values in the feature vector are used independently in the decision process.|
+||Decision tree algorithms are generally very accurate.|
+||Depending on the number of features, tree models can lack explainability.|
+||Decision tree algorithms take more resources and do not scale as well as linear ones do. They do perform well on datasets that can fit into memory.|
+||Boosted decision trees are an ensemble of small trees where each tree scores the input data and passes the score onto the next tree to produce a better score, and so on, where each tree in the ensemble improves on the previous.|
+||These algorithms scale to 30000-100000 features and memory-bound for the size of the training set.|
+|Generalized additive model (GAM)|Like decision tree algorithms, generalized additive model (GAM) algorithms also use trees.|
+||They bridge the gap between the explainability of linear models and tree models.|
+|Matrix Factorization|Matrix factorization algorithms handle large sparse data sets where there are categories involved.|
+|Ensemble|Ensemble algorithms try multiple algorithms and return the one with the best results.|
 
 ## Trainer Index
 

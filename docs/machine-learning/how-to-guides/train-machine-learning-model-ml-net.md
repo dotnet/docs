@@ -8,7 +8,7 @@ ms.custom: mvc, how-to
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---
 
-# Train and evaluate model
+# Train and evaluate a model
 
 Learn how to build machine learning models, extract learned parameters and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
 

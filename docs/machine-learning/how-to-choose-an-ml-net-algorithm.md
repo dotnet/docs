@@ -58,19 +58,6 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 
     You should always add a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer. Linear algorithms make multiple passes over the training data. Adding a cache checkpoint will increase the training efficiency.
 
-    - Regularization
-
-        Regularization penalizes a linear model for being too complicated. There are two types of regularization:
-
-        - $L-1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
-        - $L-2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
-
-        Some linear trainers perform both types of regularization, and some do neither, and some are configurable. The type(s) of regularization for each trainer is noted in the [trainer index](#trainer-index) below.
-
-    - Calibration
-
-        Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. If you are able to use the raw score in your application, the non calibrated versions execute more efficiently.
-
 2. Boosted tree
 
     Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.

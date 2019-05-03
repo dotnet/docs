@@ -23,6 +23,10 @@ In [binary classification](#binary-classification), an evaluation metric that is
 
 A [classification](#classification) case where the [label](#label) is only one out of two classes. For more information, see the [Binary classification](tasks.md#binary-classification) section of the [Machine learning tasks](tasks.md) topic.
 
+## Calibration
+
+Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. 
+
 ## Catalog 
 
 In ML.NET, a catalog is a collection of extension functions, grouped by a common purpose.
@@ -117,6 +121,13 @@ In [classification](#classification), the precision for a class is the number of
 ## Recall
 
 In [classification](#classification), the recall for a class is the number of items correctly predicted as belonging to that class divided by the total number of items that actually belong to the class.
+
+## Regularization
+
+ Regularization penalizes a linear model for being too complicated. There are two types of regularization:
+
+- $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
+- $L_2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
 
 ## Regression
 

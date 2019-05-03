@@ -1,12 +1,12 @@
 ---
-title: 'How-To: Load Data'
+title: Load Data
 description: Load data file and streaming data into ML.NET
 ms.date: 05/03/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer I want to know how to load data from file and streaming data sources.
 ---
 
-# How-To: Learn how to load data from file and in-memory sources in ML.NET
+# Load data from file and in-memory sources
 
 This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or real-time / streaming data sources.
 

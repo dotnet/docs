@@ -18,7 +18,7 @@ Algorithms operate on **features**. Features are numerical values computed from 
 
 With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Descent Coordinated Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task. 
 
-For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to **Regression tasks**.
+For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to the **Regression** task.
 
 ## Algorithm types
 
@@ -71,9 +71,9 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 |Trainer|Type|Properties|
 |-------|----|----------|
 |Binary classification|||
-|<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|Linear| Works best with featurized text. Does not have l1-reg, does have l2-reg|
-|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>|| Stores training data in memory. Doesn't scale as well as the AveragedPerceptronTrainer but produces proper logistic regression training statistics. Does not make multiple passes over data; has parameter to constrain weights to be positive only (bias is adjusted to make weights positive)|
-|<xref:Microsoft.ML.Trainers.LinearSvmTrainer>|| This trainer does not perform regularization |
+|<xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>|Linear| Best for text classification
+|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>|| Doesn't scale as well as the AveragedPerceptronTrainer, but does produces proper logistic regression training statistics|
+|<xref:Microsoft.ML.Trainers.LinearSvmTrainer>||  |
 |<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>|| Auto-tunes hyper-parameters (l1, l2-regularization), so good performance out of the box |
 |<xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>|| Autotunes hyper-parameters (l1, l2-regularization), so good performance out of the box. Slightly faster than the SdcaLogisticRegressionBinaryTrainer because it is uncalibrated |
 |<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|| Fastest and most accurate linear binary classification trainer. Scales well with number of processors. Performs l-2 regularization |
@@ -90,7 +90,8 @@ An algorithm is the math that executes to produce a **model**. Different algorit
 |<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|Naive Bayes|Input features must <xref:System.Single> values that are interpreted as boolean values (greater than 0 being true, and less than or equal to zero being false|
 |<xref:Microsoft.ML.Trainers.OneVersusAllTrainer>|Ensemble|Takes a binary classifier and trains all values within a class against all values not in that class, for all classes. Does not scale well with number of classes|
 |<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>||Similar to the OneVersusAllTrainer but takes pairs of classes at a time|
-|Regression|<xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|Linear||
+|Regression|||
+|<xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|Linear||
 |<xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>|||
 |<xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|||
 |<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|||

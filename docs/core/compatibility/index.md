@@ -7,7 +7,7 @@ ms.date: 04/29/2019
 ---
 # .NET Core application compatibility
 
-Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true of .NET Core. Although .NET Core can be considered as a new technology that is independent of .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
+Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true of .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
 
 - A large number of developers either originally developed or continue to develop .NET Framework applications. They expect consistent behavior across .NET implementations.
 
@@ -19,7 +19,7 @@ This article outlines the categories of compatibility changes and the way in whi
 
 ## Modifications to the public contract
 
-Changes in this category *modify* the public surface area of a type. Most of the changes in this category are disallowed. They include:
+Changes in this category *modify* the public surface area of a type. Most of the changes in this category are disallowed since they violate *backwards compatibility* (the ability of an application that was developed with a previous version of an API to execute without recompilation on a later version). They include:
 
 - **Renaming or removing a public type, member, or parameter.**
 
@@ -29,7 +29,6 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **Sealing a type that was previously unsealed.**
 
-
 - **Making a virtual member abstract.**
 
 - **Adding an interface to the set of base types of an interface.**
@@ -38,10 +37,12 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **Removing a type or interface from the set of base types.**
 
- 
+- **Reducing the visibility of a type or member.**
+
 - **Changing the return type of a member.**
 
 Some kinds of changes are allowed, however:
 
 - Adding a new interface implementation to a type.
 
+- Expanding the visibility of a type or member. 

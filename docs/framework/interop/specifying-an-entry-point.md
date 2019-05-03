@@ -28,8 +28,6 @@ An entry point identifies the location of a function in a DLL. Within a managed 
  Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
   
 ```vb
-Imports System
-
 Friend Class NativeMethods
     Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
@@ -42,8 +40,6 @@ End Class
  You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md).  
   
 ```vb
-Imports System
-
 Friend Class NativeMethods
     Friend Shared Declare Auto Function MsgBox _
         Lib "user32.dll" Alias "MessageBox" (

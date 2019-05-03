@@ -1,5 +1,5 @@
 ---
-title: Customizing structure marshalling - .NET
+title: Customizing structure marshaling - .NET
 description: Learn how to customize how .NET marshals your structures to a native representation.
 author: jkoritzinsky
 ms.author: jekoritz
@@ -9,9 +9,9 @@ dev_langs:
   - "cpp"
 ---
 
-# Customizing structure marshalling
+# Customizing structure marshaling
 
-Sometimes the default marshalling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled.
+Sometimes the default marshaling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled.
 
 ## Customizing structure layout
 
@@ -19,15 +19,15 @@ Sometimes the default marshalling rules for structures aren't exactly what you n
 
 **✔️ CONSIDER** using `LayoutKind.Sequential` whenever possible.
 
-**✔️ DO** only use `LayoutKind.Explicit` in marshalling when your native struct is also has an explicit layout, such as a union.
+**✔️ DO** only use `LayoutKind.Explicit` in marshaling when your native struct is also has an explicit layout, such as a union.
 
-**❌ AVOID** using `LayoutKind.Explicit` when marshalling structures on non-Windows platforms. The .NET Core runtime doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
+**❌ AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms. The .NET Core runtime doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
-## Customizing boolean field marshalling
+## Customizing boolean field marshaling
 
 Native code has many different boolean representations. On Windows alone, there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. The .NET runtime provides a way to indicate how to marshal your boolean field. The following examples show how to marshal .NET `bool` to different native boolean types.
 
-Boolean values default to marshalling as a native 4-byte Win32 [`BOOL`](/windows/desktop/winprog/windows-data-types#BOOL) value as shown in the following example:
+Boolean values default to marshaling as a native 4-byte Win32 [`BOOL`](/windows/desktop/winprog/windows-data-types#BOOL) value as shown in the following example:
 
 ```csharp
 public struct WinBool
@@ -97,9 +97,9 @@ struct VariantBool
 > [!NOTE]
 > `VARIANT_BOOL` is different than most bool types in that `VARIANT_TRUE = -1` and `VARIANT_FALSE = 0`. Additionally, all values that aren't equal to `VARIANT_TRUE` are considered false.
 
-## Customizing array field marshalling
+## Customizing array field marshaling
 
-.NET also includes a few ways to customize array marshalling.
+.NET also includes a few ways to customize array marshaling.
 
 By default, .NET marshals arrays as a pointer to a contiguous list of the elements:
 
@@ -136,7 +136,7 @@ struct SafeArrayExample
 
 If you need to customize what type of element is in the `SAFEARRAY`, then you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
 
-If you need to marshal the array in-place, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray?displayProperty=nameWithType> value to tell the marshaler to marshal the array in-place. When you're using this marshalling, you also must supply a value to the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field  for the number of elements in the array so the runtime can correctly allocate space for the structure.
+If you need to marshal the array in-place, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray?displayProperty=nameWithType> value to tell the marshaler to marshal the array in-place. When you're using this marshaling, you also must supply a value to the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field  for the number of elements in the array so the runtime can correctly allocate space for the structure.
 
 ```csharp
 public struct InPlaceArray
@@ -154,11 +154,11 @@ struct InPlaceArray
 ```
 
 > [!NOTE]
-> .NET doesn't support marshalling a variable length array field as a C99 Flexible Array Member.
+> .NET doesn't support marshaling a variable length array field as a C99 Flexible Array Member.
 
-## Customizing string field marshalling
+## Customizing string field marshaling
 
-.NET also provides a wide variety of customizations for marshalling string fields.
+.NET also provides a wide variety of customizations for marshaling string fields.
 
 By default, .NET marshals a string as a pointer to a null-terminated string. The encoding depends on the value of the <xref:System.Runtime.InteropServices.StructLayoutAttribute.CharSet?displayProperty=nameWithType> field in the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType>. If no attribute is specified, the encoding defaults to an ANSI encoding.
 
@@ -278,7 +278,7 @@ struct BString
 };
 ```
 
-If your API requires you to pass the string in-place in the structure, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValTStr?displayProperty=nameWithType> value. Do note that the encoding for a string marshalled by `ByValTStr` is determined from the `CharSet` attribute. Additionally, it requires that a string length is passed by the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field.
+If your API requires you to pass the string in-place in the structure, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.ByValTStr?displayProperty=nameWithType> value. Do note that the encoding for a string marshaled by `ByValTStr` is determined from the `CharSet` attribute. Additionally, it requires that a string length is passed by the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst?displayProperty=nameWithType> field.
 
 ```csharp
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
@@ -312,7 +312,7 @@ struct DefaultString
 };
 ```
 
-## Customizing decimal field marshalling
+## Customizing decimal field marshaling
 
 If you're working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](/windows/desktop/api/wtypes/ns-wtypes-tagcy) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](/windows/desktop/api/wtypes/ns-wtypes-tagdec) structure. However, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaler to convert a `decimal` value to a native `CY` value.
 
@@ -331,14 +331,14 @@ struct Currency
 };
 ```
 
-## Marshalling `System.Object`s
+## Marshaling `System.Object`s
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
 - [`VARIANT`](/windows/desktop/api/oaidl/ns-oaidl-tagvariant)
 - [`IUnknown*`](/windows/desktop/api/unknwn/nn-unknwn-iunknown)
 - [`IDispatch*`](/windows/desktop/api/oaidl/nn-oaidl-idispatch)
 
-By default, an `object`-typed field will be marshalled to an `IUnknown*` that wraps the object.
+By default, an `object`-typed field will be marshaled to an `IUnknown*` that wraps the object.
 
 ```csharp
 public struct ObjectDefault

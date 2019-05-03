@@ -15,7 +15,7 @@ In Figure 5-12 you can see the end-to-end DevOps scenario covering the code mana
 
 It is important to highlight that the two pipelines, build/CI, and release/CD, are connected through the Docker Registry (such as Docker Hub or Azure Container Registry). The Docker registry is one of the main differences compared to a traditional CI/CD process without Docker.
 
-As shown in Figure 5-13, the first phase is the build/CI pipeline. In Azure DevOps Services you can create build/CD pipelines that will compile the code, create the Docker images, and push them to a Docker Registry like Docker Hub or Azure Container Registry.
+As shown in Figure 5-13, the first phase is the build/CI pipeline. In Azure DevOps Services you can create build/CI pipelines that will compile the code, create the Docker images, and push them to a Docker Registry like Docker Hub or Azure Container Registry.
 
 ![Browser view of Azure DevOps, Build process task definition.](media/build-ci-pipeline-azure-devops-push-to-docker-registry.png)
 

@@ -3,9 +3,7 @@
 - name: Overview
   expanded: true
   items:
-  - name: What is machine learning?
-    href: what-is-machine-learning.md
-  - name: How does ML.NET work?
+  - name: What is ML.NET & how does it work?
     href: how-does-mldotnet-work.md
 - name: Tutorials
   items:
@@ -23,6 +21,8 @@
     href: tutorials/movie-recommmendation.md
   - name: Image Classification (transfer learning)
     href: tutorials/image-classification.md
+  - name: Product Sales Analysis (anomaly detection)
+    href: tutorials/sales-anomaly-detection.md
 - name: How-to guides
   items:
   - name: Load data
@@ -31,25 +31,25 @@
     href: how-to-guides/prepare-data-ml-net.md
   - name: Train, evaluate, and explain the model
     items:
-    - name: Determine model feature importance with PFI
-      href: how-to-guides/determine-global-feature-importance-in-model.md
-    - name: Inspect intermediate pipeline data values
-      href: how-to-guides/inspect-intermediate-data-ml-net.md      
     - name: Train a model
       href: how-to-guides/train-machine-learning-model-ml-net.md
-    - name: Train model using cross-validation
-      href: how-to-guides/train-cross-validation-ml-net.md
+    - name: Train a model using cross-validation
+      href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
+    - name: Inspect intermediate pipeline data values
+      href: how-to-guides/inspect-intermediate-data-ml-net.md   
+    - name: Determine model feature importance with PFI
+      href: how-to-guides/determine-global-feature-importance-in-model.md
   - name: Use the trained model
     items:
-    - name: One prediction at a time with PredictionEngine
-      href: how-to-guides/single-predict-model-ml-net.md
-    - name: Operationalize a trained model
-      href: how-to-guides/consuming-model-ml-net.md
+    - name: Use a model to make predictions
+      href: how-to-guides/machine-learning-model-predictions-ml-net.md
+    - name: Save and load a model
+      href: how-to-guides/save-load-machine-learning-models-ml-net.md
     - name: Retrain a model
       href: how-to-guides/retrain-model-ml-net.md
-    - name: Serve Model Azure Functions
+    - name: Serve a model in Azure Functions
       href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
-    - name: Serve Model in Web API
+    - name: Serve a model in a web API
       href: how-to-guides/serve-model-web-api-ml-net.md
   - name: Infer.NET
     items:

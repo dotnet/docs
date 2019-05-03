@@ -1,6 +1,6 @@
 ---
-title: Predict prices using a regression learner 
-description: Predict prices using a regression learner with ML.NET.
+title: 'Tutorial: Predict prices using a regression algorithm'
+description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
 author: jralexander
 ms.author: johalex
 ms.date: 04/24/2019
@@ -8,9 +8,9 @@ ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
 ---
-# Tutorial: Predict prices using a regression learner with ML.NET
+# Tutorial: Predict prices using a regression model with ML.NET
 
-This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting prices, specifically, New York City taxi fares.
+This tutorial illustrates how to build a [regression model](../resources/glossary.md#regression) using ML.NET to predict prices, specifically, New York City taxi fares.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

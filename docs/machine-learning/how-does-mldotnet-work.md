@@ -1,6 +1,6 @@
 ---
-title: How does ML.NET work?
-description: Learn about the code patterns needed to build and deploy and machine learning application with ML.NET
+title: What is ML.NET and how does it work?
+description: ML.NET gives you the ability to add machine learning to .NET applications. With this capability, you can make automatic predictions using the data available to your application. This article explains the basics of machine learning in ML.NET. 
 ms.date: 04/10/2019
 ms.topic: overview
 ms.custom: mvc
@@ -9,9 +9,9 @@ author: natke
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
 ---
 
-# How does ML.NET work?
+# What is ML.NET and how does it work?
 
-ML.NET gives you the ability to add machine learning to your .NET application. With this capability, you can make automatic predictions using the data available to your application.
+ML.NET gives you the ability to add machine learning to .NET applications. With this capability, you can make automatic predictions using the data available to your application. This article explains the basics of machine learning in ML.NET. 
 
 Examples of the type of predictions that you can make with ML.NET include:
 

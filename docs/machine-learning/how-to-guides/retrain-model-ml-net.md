@@ -8,7 +8,7 @@ ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to retrain a model using existing model parameters.
 ---
 
-# Re-train a machine learning model
+# Re-train a model
 
 Learn how to retrain a machine learning model in ML.NET.
 

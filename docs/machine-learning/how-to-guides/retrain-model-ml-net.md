@@ -1,11 +1,10 @@
 ---
 title: "How-To: Re-train a model"
 description: Learn how retrain a model in ML.NET
-ms.date: 04/23/2019
+ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to retrain a model using existing model parameters.
 ---
 

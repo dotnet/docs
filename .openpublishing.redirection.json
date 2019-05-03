@@ -1839,6 +1839,17 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/machine-learning/how-to-guides/consuming-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net",
+            "redirect_document_id": true
+        },
+        {
+      
+            "source_path": "docs/machine-learning/how-to-guides/determine-global-feature-importance-in-model.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net",
+            "redirect_document_id":true
+        },
+        {
             "source_path": "docs/machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md",
             "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
         },
@@ -1885,18 +1896,20 @@
         },
         {
             "source_path": "docs/machine-learning/resources/basics.md",
-            "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },
         {
             "source_path": "docs/machine-learning/resources/what-is-mldotnet.md",
-            "redirect_url": "/dotnet/machine-learning/what-is-machine-learning",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },        
         {
             "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
             "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/what-is-machine-learning.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },
         {
             "source_path": "docs/scenarios/index.md",

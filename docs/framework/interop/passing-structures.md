@@ -93,9 +93,7 @@ void GetSystemTime(SYSTEMTIME* SystemTime);
  Unlike value types, classes always have at least one level of indirection.  
   
 ```vb  
-Imports System  
 Imports System.Runtime.InteropServices  
-Imports Microsoft.VisualBasic  
   
 <StructLayout(LayoutKind.Sequential)> Public Class MySystemTime  
     Public wYear As Short  
@@ -109,9 +107,9 @@ Imports Microsoft.VisualBasic
 End Class  
   
 Friend Class NativeMethods  
-    Friend Shared Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
+    Friend Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (
         sysTime As MySystemTime)  
-    Friend Shared Declare Auto Function MessageBox Lib "User32.dll" (
+    Friend Declare Auto Function MessageBox Lib "User32.dll" (
         hWnd As IntPtr, lpText As String, lpCaption As String, uType As UInteger) As Integer  
 End Class  
   

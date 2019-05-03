@@ -3,7 +3,7 @@ title: "How-To: Prepare Data with ML.NET"
 description: Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 04/26/2019
+ms.date: 05/03/2019
 ms.custom: mvc
 #Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET using transforms
 ---
@@ -273,7 +273,7 @@ The resulting transform would convert the text values in the `Description` colum
 [ 0.2041241, 0.2041241, 0.2041241, 0.4082483, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0, 0, 0, 0, 0.4472136, 0.4472136, 0.4472136, 0.4472136, 0.4472136, 0 ]
 ```
 
-Combine complex text processing steps into an [`EstimatorChain`](xref:xref:Microsoft.ML.Data.EstimatorChain%601) to remove noise and potentially reduce the amount of required processing resources as needed.
+Combine complex text processing steps into an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) to remove noise and potentially reduce the amount of required processing resources as needed.
 
 ```csharp
 // Define text transform estimator

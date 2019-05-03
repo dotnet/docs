@@ -63,8 +63,6 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
  If you omit the character-set keyword, as is done in the first declaration statement, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field defaults to the ANSI character set. The second and third statements in the example explicitly specify a character set with a keyword.  
   
 ```vb
-Imports System
-
 Friend Class NativeMethods
     Friend Shared Declare Function MessageBoxA Lib "user32.dll" (
         ByVal hWnd As IntPtr,

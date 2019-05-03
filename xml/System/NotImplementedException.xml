@@ -58,7 +58,7 @@
  In some cases, a <xref:System.NotImplementedException> exception may not be used to indicate functionality that is still in development in a pre-production library. However, this still indicates that the functionality is unavailable, and you should remove the member invocation from your code.  
   
 ## NotImplementedException and other exception types  
- The .NET Framework also includes two other exception types, <xref:System.NotSupportedException> and <xref:System.PlatformNotSupportedException>, that indicate that no implementation exists for a particular member of a type. You should use throw one of these instead of a <xref:System.NotImplementedException> exception under the following conditions.  
+ The .NET Framework also includes two other exception types, <xref:System.NotSupportedException> and <xref:System.PlatformNotSupportedException>, that indicate that no implementation exists for a particular member of a type. You should throw one of these instead of a <xref:System.NotImplementedException> exception under the following conditions.  
   
  <xref:System.PlatformNotSupportedException> exception  
  If you've designed a type with one or more members that are available on some platforms or in some versions but not on others, you can throw  this exception on platforms on which the functionality is not supported.  

@@ -54,7 +54,7 @@ Public Structure <StructLayout(LayoutKind.Explicit)> Rect
 End Structure  
   
 Friend Class NativeMethods      
-    Friend Shared Declare Auto Function PtInRect Lib "user32.dll" (
+    Friend Declare Auto Function PtInRect Lib "user32.dll" (
         ByRef r As Rect, p As Point) As Boolean  
 End Class  
 ```  

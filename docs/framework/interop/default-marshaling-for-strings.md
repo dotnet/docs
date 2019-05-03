@@ -241,7 +241,11 @@ int GetWindowText(
 A `StringBuilder` can be dereferenced and modified by the callee, provided it does not exceed the capacity of the `StringBuilder`. The following code example demonstrates how `StringBuilder` can be initialized to a fixed length.
 
 ```csharp
-internal static class WindowsAPI
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
+
+internal static class NativeMethods
 {
     [DllImport("User32.dll")]
     internal static extern void GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
@@ -253,15 +257,17 @@ public class Window
     public String GetText()
     {
         StringBuilder sb = new StringBuilder(256);
-        WindowsAPI.GetWindowText(h, sb, sb.Capacity + 1);
+        NativeMethods.GetWindowText(h, sb, sb.Capacity + 1);
         return sb.ToString();
     }
 }
 ```
 
 ```vb
-Friend Class WindowsAPI
-    Friend Shared Declare Auto Sub GetWindowText Lib "User32.dll" _
+Imports System.Text
+
+Friend Class NativeMethods
+    Friend Declare Auto Sub GetWindowText Lib "User32.dll" _
         (hWnd As IntPtr, lpString As StringBuilder, nMaxCount As Integer)
 End Class
 
@@ -269,7 +275,7 @@ Public Class Window
     Friend h As IntPtr ' Friend handle to Window.
     Public Function GetText() As String
         Dim sb As New StringBuilder(256)
-        WindowsAPI.GetWindowText(h, sb, sb.Capacity + 1)
+        NativeMethods.GetWindowText(h, sb, sb.Capacity + 1)
         Return sb.ToString()
    End Function
 End Class

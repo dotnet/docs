@@ -29,7 +29,7 @@ An entry point identifies the location of a function in a DLL. Within a managed 
   
 ```vb
 Friend Class NativeMethods
-    Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
+    Friend Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
         ByVal lpCaption As String,
@@ -41,7 +41,7 @@ End Class
   
 ```vb
 Friend Class NativeMethods
-    Friend Shared Declare Auto Function MsgBox _
+    Friend Declare Auto Function MsgBox _
         Lib "user32.dll" Alias "MessageBox" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,

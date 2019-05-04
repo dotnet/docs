@@ -1,7 +1,7 @@
 ---
-title: Save and Load Trained Models
+title: Save and load trained models
 description: Learn how to save and load trained models
-ms.date: 05/02/2019
+ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
@@ -58,7 +58,7 @@ mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 
 Because most models and data preparation pipelines inherit from the same set of classes, the save and load method signatures for these components is the same. Depending on your use case, you can either combine the data preparation pipeline and model into a single [`EstimatorChain`](xref:Microsoft.ML.Data.TransformerChain%601) which would output a single [`ITransformer`](xref:Microsoft.ML.ITransformer) or separate them thus creating a separate [`ITransformer`](xref:Microsoft.ML.ITransformer) for each. 
 
-## Save Model Locally
+## Save a model locally
 
 When saving a model you need two things:
 
@@ -72,7 +72,7 @@ After training the model, use the [`Save`](xref:Microsoft.ML.ModelOperationsCata
 mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 ```
 
-## Load Model Stored Locally
+## Load a model stored locally
 
 Models stored locally can be used in other processes or applications like `ASP.NET Core` and `Serverless Web Applications`. See [Use ML.NET in Web API](./serve-model-web-api-ml-net.md) and [Deploy ML.NET Serverless Web App](./serve-model-serverless-azure-functions-ml-net.md) how-to articles to learn more. 
 
@@ -86,7 +86,7 @@ DataViewSchema modelSchema;
 ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 ```
 
-## Load Model Stored Remotely
+## Load a model stored remotely
 
 To load data preparation pipelines and models stored in a remote location into your application, use a [`Stream`](xref:System.IO.Stream) instead of a file path in the [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load*) method.
 
@@ -107,7 +107,7 @@ using (HttpClient client = new HttpClient())
 }
 ```
 
-## Separate Data Preparation Pipelines and Models
+## Working with separate data preparation and model pipelines
 
 > [!NOTE]
 > Working with separate data preparation and model training pipelines is optional. Separation of pipelines makes it easier to inspect the learned model parameters. For predictions, it's easier to save and load a single pipeline that includes the data preparation and model training operations.

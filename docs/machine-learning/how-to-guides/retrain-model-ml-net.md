@@ -1,5 +1,5 @@
 ---
-title: "How-To: Re-train a model"
+title: Re-train a model
 description: Learn how retrain a model in ML.NET
 ms.date: 05/03/2019
 author: luisquintanilla
@@ -8,7 +8,7 @@ ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to retrain a model using existing model parameters.
 ---
 
-# How-To: Re-train a machine learning model in ML.NET
+# Re-train a model
 
 Learn how to retrain a machine learning model in ML.NET.
 
@@ -55,7 +55,7 @@ LinearRegressionModelParameters originalModelParameters =
     ((ISingleFeaturePredictionTransformer<object>)trainedModel).Model as LinearRegressionModelParameters;
 ```
 
-## Retrain model
+## Re-train model
 
 The process for retraining a model is no different than that of training a model. The only difference is, the [`Fit`](xref:Microsoft.ML.Trainers.OnlineLinearTrainer`2.Fit*) method in addition to the data also takes as input the original learned model parameters and uses them as a starting point in the re-training process.  
 
@@ -95,7 +95,7 @@ RegressionPredictionTransformer<LinearRegressionModelParameters> retrainedModel 
         .Fit(transformedNewData, originalModelParameters);
 ```
 
-## Comparing Model Parameters
+## Compare model parameters
 
 How do you know if re-training actually happened? One way would be to compare whether the re-trained model's parameters are different than those of the original model. The code sample below compares the original against the re-trained model weights and outputs them to the console.
 

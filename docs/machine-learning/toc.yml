@@ -31,25 +31,25 @@
     href: how-to-guides/prepare-data-ml-net.md
   - name: Train, evaluate, and explain the model
     items:
-    - name: Train a model
+    - name: Train and evaluate a model
       href: how-to-guides/train-machine-learning-model-ml-net.md
     - name: Train a model using cross-validation
       href: how-to-guides/train-machine-learning-model-cross-validation-ml-net.md
     - name: Inspect intermediate pipeline data values
       href: how-to-guides/inspect-intermediate-data-ml-net.md   
     - name: Determine model feature importance with PFI
-      href: how-to-guides/determine-global-feature-importance-in-model.md
+      href: how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md
   - name: Use the trained model
     items:
-    - name: Use a model to make predictions
-      href: how-to-guides/machine-learning-model-predictions-ml-net.md
     - name: Save and load a model
       href: how-to-guides/save-load-machine-learning-models-ml-net.md
-    - name: Retrain a model
+    - name: Use a model to make predictions
+      href: how-to-guides/machine-learning-model-predictions-ml-net.md
+    - name: Re-train a model
       href: how-to-guides/retrain-model-ml-net.md
-    - name: Serve a model in Azure Functions
+    - name: Deploy a model to Azure Functions
       href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
-    - name: Serve a model in a web API
+    - name: Deploy a model to a web API
       href: how-to-guides/serve-model-web-api-ml-net.md
   - name: Infer.NET
     items:

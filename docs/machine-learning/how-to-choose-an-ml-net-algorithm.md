@@ -16,15 +16,13 @@ Algorithms operate on **features**. Features are numerical values computed from 
 
 ## Trainer = Algorithm + Task
 
+An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 
+
 With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Descent Coordinated Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task. 
 
 For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to the **Regression** task.
 
-## Algorithm types
-
-An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 
-
-### Linear algorithms
+## Linear algorithms
 
 Linear algorithms produce a model that calculates **scores** from a linear combination of the input data and a set of **weights**. The weights are parameters of the model estimated during training.
 
@@ -35,9 +33,6 @@ Before training with a linear algorithm, the features should be normalized. This
 In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
 
 Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer, will make the training run faster.
-
-|Matrix Factorization|Matrix factorization algorithms handle large sparse data sets where there are categories involved.|
-|Ensemble|Ensemble algorithms try multiple algorithms and return the one with the best results.|
 
 **Linear Trainers**
 
@@ -74,9 +69,9 @@ Boosted decision trees are an ensemble of small trees where each tree scores the
 ## Other algorithms 
 
 |Algorithm|Properties|Trainers|
-|----------|--------|---------|
+|---------|----------|--------|
 |Generalized additive model|Best for problems that perform well with tree algorithms but where explainability is a priority|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>| <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|
-|Matrix factorization|Best for sparse categorical data|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|
+|Matrix factorization|Best for sparse categorical data, with large datasets|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|
 |Ensemble|Creates a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>. Is limited in scale by the number of classes to b categorize|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer> <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|
 |Naive Bayes||<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|
 |K-Means|Use for clustering|<xref:Microsoft.ML.Trainers.KMeansTrainer>|

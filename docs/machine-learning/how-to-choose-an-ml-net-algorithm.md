@@ -44,7 +44,7 @@ Linear algorithms make multiple passes over the training data. If your dataset f
 |Symbolic stochastic gradient descent|Fastest and most accurate linear binary classification trainer. Scales well with number of processors|<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|
 |Online gradient descent||<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|
 
-## Boosted decision tree trainers
+## Boosted decision tree algorithms
 
 Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.
 
@@ -64,15 +64,43 @@ Boosted decision trees are an ensemble of small trees where each tree scores the
 |---------|----------|--------|
 |Light gradient boosted machine|Fastest and most accurate of the binary classification tree trainers. Highly tunable|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>|
 |Fast tree|Resilient to unbalanced data. Highly tunable | <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|
-|Fast forest|Works well with nosy data|<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>|
+|Fast forest|Works well with noisy data|<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>|
 
-## Other algorithms 
+## Generalized additive models (GAMs)
+
+|Properties|Trainers|
+|----------|--------|
+|Best for problems that perform well with tree algorithms but where explainability is a priority|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|
+
+## Matrix factorization
+
+|Properties|Trainers|
+|----------|--------|
+|Best for sparse categorical data, with large datasets|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|
+
+## Ensemble algorithms
+
+Creates a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|
-|Generalized additive model|Best for problems that perform well with tree algorithms but where explainability is a priority|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>| <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|
-|Matrix factorization|Best for sparse categorical data, with large datasets|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|
-|Ensemble|Creates a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>. Is limited in scale by the number of classes to b categorize|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer> <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|
-|Naive Bayes||<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|
+|One versus all| Is limited in scale by the number of classes to categorize|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer> |
+|Pairwise coupling||<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|
+
+## Naive Bayes
+
+|Properties|Trainers|
+|----------|--------|
+||<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|
+
+## K-Means
+
+|Algorithm|Properties|Trainers|
+|---------|----------|--------|
 |K-Means|Use for clustering|<xref:Microsoft.ML.Trainers.KMeansTrainer>|
+
+## Principal component analysis
+
+|Algorithm|Properties|Trainers|
+|---------|----------|--------|
 |Principal component analysis|Use for anomaly detection|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|

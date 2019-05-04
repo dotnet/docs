@@ -87,20 +87,27 @@ Creates a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML
 |One versus all| Is limited in scale by the number of classes to categorize|<xref:Microsoft.ML.Trainers.OneVersusAllTrainer> |
 |Pairwise coupling||<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|
 
-## Naive Bayes
+## K-Means
 
 |Properties|Trainers|
 |----------|--------|
-||<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|
-
-## K-Means
-
-|Algorithm|Properties|Trainers|
-|---------|----------|--------|
-|K-Means|Use for clustering|<xref:Microsoft.ML.Trainers.KMeansTrainer>|
+|Use for clustering|<xref:Microsoft.ML.Trainers.KMeansTrainer>|
 
 ## Principal component analysis
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|
 |Principal component analysis|Use for anomaly detection|<xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>|
+
+## Naive Bayes
+
+|Properties|Trainers|
+|----------|--------|
+|Use for multi-class classification when the features are independent, and the training dataset is small.|<xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>|
+
+## Prior Trainer
+
+|Properties|Trainers|
+|----------|--------|
+|This trainer can be used to baseline the performance of other trainers. To be effective, the metrics of the other trainers should be better than the prior trainer. |<xref:Microsoft.ML.Trainers.PriorTrainer>|
+

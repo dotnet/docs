@@ -8,8 +8,6 @@ ms.date: 04/20/1029
 
 # How to choose an ML.NET algorithm
 
-Learn how to choose the best ML.NET algorithm for your application. 
-
 For each [ML.NET task](resources/tasks.md), there are multiple training algorithms to choose from. Which one to choose depends on the problem you are trying to solve, the characteristics of your data, and the compute and storage resources you have available. It is important to note that training a machine learning model is an iterative process. You might need to try multiple algorithms to find the one that works best.
 
 Algorithms operate on **features**. Features are numerical values computed from your input data. They are optimal inputs for machine learning algorithms. You transform your raw input data into features using one or more [data transforms](resources/transforms.md). For example, text data is transformed into a set of word counts and word combination counts. 
@@ -42,7 +40,7 @@ Linear algorithms make multiple passes over the training data. If your dataset f
 |Stochastic descent coordinated ascent|Tuning not needed for good default performance|<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer> <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer> <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer> <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer> <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|
 |L-BFGS|Use when number of features is large. Produces logistic regression training statistics, but doesn't scale as well as the AveragedPerceptronTrainer|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer> <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer> <xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|
 |Symbolic stochastic gradient descent|Fastest and most accurate linear binary classification trainer. Scales well with number of processors|<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|
-|Online gradient descent||<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|
+|Online gradient descent|Use this regression trainer when ...|<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|
 
 ## Boosted decision tree algorithms
 
@@ -84,8 +82,8 @@ Creates a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|
-|One versus all| Is limited in scale by the number of classes to categorize|[OneVersusAllTrainer<BinaryClassificationTrainer>]<xref:Microsoft.ML.Trainers.OneVersusAllTrainer> |
-|Pairwise coupling||[PairwiseCouplingTrainer<BinaryClassificationTrainer>]<xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>|
+|One versus all|This multiclass classifier trains one binary classifier for each class, which distinguishes that class from all other classes. Is limited in scale by the number of classes to categorize|[OneVersusAllTrainer<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.OneVersusAllTrainer) |
+|Pairwise coupling|This multiclass classifier trains a binary classification algorithm on each pair of classes. Is limited in scale by the number of classes, as each combination of two classes must be trained.|[PairwiseCouplingTrainer<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer)|
 
 ## K-Means
 

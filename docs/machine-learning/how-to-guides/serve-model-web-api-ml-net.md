@@ -1,12 +1,12 @@
 ---
-title: Serve Machine Learning Model In ASP.NET Core Web API
+title: Deploy a model in an ASP.NET Core Web API
 description: Serve ML.NET sentiment analysis machine learning model over the internet using ASP.NET Core Web API
-ms.date: 03/05/2019
+ms.date: 05/03/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model through the internet using an ASP.NET Core Web API
 ---
 
-# How-To: Serve a Machine Learning Model Through ASP.NET Core Web API
+# Deploy a model in an ASP.NET Core Web API
 
 This how-to shows how to serve a pre-built ML.NET machine learning model to the web using an ASP.NET Core Web API. By doing so it allows for users to access the API for prediction purposes via standard HTTP methods.
 
@@ -23,7 +23,7 @@ This how-to and related sample are currently using **ML.NET version 0.10**. For 
     - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
     - Download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
-## Create ASP.NET Core Web API Project
+## Create ASP.NET Core Web API project
 
 1. Open Visual Studio 2017. Select **File > New > Project** from the menu bar. In the New Project dialog, select the **Visual C#** node followed by the **Web** node. Then select the **ASP.NET Core Web Application** project template. In the **Name** text box, type "SentimentAnalysisWebAPI" and then select the **OK** button.
 1. In the window that displays the different types of ASP.NET Core Projects, select **API** and the select the **OK** button.
@@ -35,12 +35,12 @@ This how-to and related sample are currently using **ML.NET version 0.10**. For 
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the Install button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
 
-### Add Model to ASP.NET Core Web API Project
+### Add pre-trained model to ASP.NET Core Web API project
 
 1. Copy your pre-built model to the *MLModels* directory
 1. In Solution Explorer, right-click the model zip file and select Properties. Under Advanced, change the value of Copy to Output Directory to Copy if newer.
 
-## Build Data Models
+## Create data models
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 

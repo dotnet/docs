@@ -7,18 +7,12 @@ ms.custom: mvc,how-to
 
 # How to use the ML.NET automated machine learning API
 
-Automated machine learning performs feature engineering, trainer selection and hyper-parameter tuning. In this guide, learn how to define various configuration settings, and run the task.
+Automated machine learning (AutoML) automates the process of applying machine learning to data. Given a dataset, you can run an AutoML **experiment** to iterate over different data featurizations, machine learning algorithms, and hyperparameters to select the best model.
 
 > [!NOTE]
-> This topic refers to the automated machine learning API for ML.NET, which are currently in Preview, and material may be subject to change.
+> This topic refers to the automated machine learning API for ML.NET, which is currently in preview. Material may be subject to change.
 
-## Select your machine learning task type
-Before you begin your task, determine the kind of machine learning problem you are solving. Automated machine learning allows you to select among the following supported ML tasks:
-* Binary Classification
-* Multiclass Classification
-* Regression
-
-## Data source and format
+## Load data
 
 Automated machine learning supports loading a dataset into an [IDataView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.idataview?view=ml-dotnet). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.
 
@@ -32,9 +26,30 @@ using Microsoft.ML.AutoML;
     IDataView trainDataView = mlContext.Data.LoadFromTextFile<SentimentIssue>("my-data-file.csv", hasHeader: true);
 ```
 
-## Configure your experiment settings
+## Select the machine learning task type
+Before creating an experiment, determine the kind of machine learning problem you want to solve. Automated machine learning supports the following ML tasks:
+* Binary Classification
+* Multiclass Classification
+* Regression
 
-In automated ML, an experiment is the process of selecting the optimal algorithm for your machine learning task.
+## Create experiment settings
+
+Create experiment settings for the determined ML task type:
+
+* Binary Classification
+```csharp
+var experimentSettings = new BinaryExperimentSettings();
+```
+* Multiclass Classification
+```csharp
+var experimentSettings = new MulticlassExperimentSettings();
+```
+* Regression
+```csharp
+var experimentSettings = new RegressionExperimentSettings();
+```
+
+## Configure experiment settings
 
 Experiments are highly configurable. See the [AutoML API docs](https://docs.microsoft.com/dotnet/api/microsoft.ml.auto?view=ml-dotnet) for a full list of configuration settings.
 
@@ -43,7 +58,6 @@ Some examples include:
 1. Specify the maximum time that the experiment is allowed to run.
 
     ```csharp
-    var experimentSettings = new RegressionExperimentSettings();
     experimentSettings.MaxExperimentTimeInSeconds = 3600;
     ```
 
@@ -71,7 +85,7 @@ Some examples include:
 
 1. Instruct automated ML not to use certain trainers.
 
-    A default list of trainers to optimize are explored per task. This list can be modified for each experiment. Trainers which are operating slowly on your dataset can be removed from the list, or non-default trainers, such as GAM, can be added to focus on explainable models. To optimize on one specific trainer call `experimentSettings.Trainers.Clear()`, the adding the trainers that you want to use. 
+    A default list of trainers to optimize are explored per task. This list can be modified for each experiment. For instance, trainers that run slowly on your dataset can be removed from the list. To optimize on one specific trainer call `experimentSettings.Trainers.Clear()`, then add the trainer that you want to use.
 
     ```csharp
     var experimentSettings = new RegressionExperimentSettings();
@@ -136,17 +150,24 @@ Define the criteria to complete your task:
     experimentSettings.CancellationToken = cts.Token;
     ```
 
-## Run task
+## Create an experiment
 
-Once you have set the parameters of the experiment, you are ready to execute the task. Executing triggers data pre-processing, learning algorithm selection and hyperparameter tuning. AutoML will continue to generate combinations of featurization, learning algorithms and hyper-parameters until the `MaxExperimentTimeInSeconds` is reached or the experiment is terminated.
+Once you have configured the experiment settings, you are ready to create the experiment.
 
 ```csharp
-ExperimentResult<RegressionMetrics> experimentResult = mlContext.Auto()
-    .CreateRegressionExperiment(ExperimentTime)
+RegressionExperiment experiment = mlContext.Auto().CreateRegressionExperiment(experimentSettings);
+```
+
+## Run the experiment
+
+Running the experiment triggers data pre-processing, learning algorithm selection, and hyperparameter tuning. AutoML will continue to generate combinations of featurization, learning algorithms, and hyperparameters until the `MaxExperimentTimeInSeconds` is reached or the experiment is terminated.
+
+```csharp
+ExperimentResult<RegressionMetrics> experimentResult = experiment
     .Execute(trainingDataView, LabelColumnName, progressHandler: progressHandler);
 ```
 
-Explore other overloads for `Execute()` if you want to pass in validation data, column information indicating the column purpose or prefeaturizers.
+Explore other overloads for `Execute()` if you want to pass in validation data, column information indicating the column purpose, or prefeaturizers.
 
 ## Training modes
 

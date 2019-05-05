@@ -10,7 +10,7 @@ ms.date: 04/20/1029
 
 For each [ML.NET task](resources/tasks.md), there are multiple training algorithms to choose from. Which one to choose depends on the problem you are trying to solve, the characteristics of your data, and the compute and storage resources you have available. It is important to note that training a machine learning model is an iterative process. You might need to try multiple algorithms to find the one that works best.
 
-Algorithms operate on **features**. Features are numerical values computed from your input data. They are optimal inputs for machine learning algorithms. You transform your raw input data into features using one or more [data transforms](resources/transforms.md). For example, text data is transformed into a set of word counts and word combination counts. 
+Algorithms operate on **features**. Features are numerical values computed from your input data. They are optimal inputs for machine learning algorithms. You transform your raw input data into features using one or more [data transforms](resources/transforms.md). For example, text data is transformed into a set of word counts and word combination counts. Once the features have been extracted from a raw data type using data transforms, they are referred to as **featurized**. For example, featurized text, or featurized image data.
 
 ## Trainer = Algorithm + Task
 
@@ -40,9 +40,8 @@ Linear algorithms make multiple passes over the training data. If your dataset f
 |Stochastic descent coordinated ascent|Tuning not needed for good default performance|<xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer> <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer> <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer> <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer> <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>|
 |L-BFGS|Use when number of features is large. Produces logistic regression training statistics, but doesn't scale as well as the AveragedPerceptronTrainer|<xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer> <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer> <xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>|
 |Symbolic stochastic gradient descent|Fastest and most accurate linear binary classification trainer. Scales well with number of processors|<xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>|
-|Online gradient descent|Use this regression trainer when ...|<xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>|
 
-## Boosted decision tree algorithms
+## Decision tree algorithms
 
 Decision tree algorithms create a model that contains a series of decisions: effectively a flow chart through the data values.
 
@@ -50,25 +49,20 @@ Features do not need to be linearly separable to use this type of algorithm. And
 
 Decision tree algorithms are generally very accurate.
 
-Depending on the number of features, tree models can lack explainability.
+Except for Generalized Additive Models (GAMs), tree models can lack explainability when the number of features is large.
 
 Decision tree algorithms take more resources and do not scale as well as linear ones do. They do perform well on datasets that can fit into memory.
 
 Boosted decision trees are an ensemble of small trees where each tree scores the input data and passes the score onto the next tree to produce a better score, and so on, where each tree in the ensemble improves on the previous.
 
-**Boosted decision tree trainers**
+**Decision tree trainers**
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|
 |Light gradient boosted machine|Fastest and most accurate of the binary classification tree trainers. Highly tunable|<xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer> <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>|
-|Fast tree|Resilient to unbalanced data. Highly tunable | <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|
+|Fast tree|Use for featurized image data. Resilient to unbalanced data. Highly tunable | <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>|
 |Fast forest|Works well with noisy data|<xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>|
-
-## Generalized additive models (GAMs)
-
-|Properties|Trainers|
-|----------|--------|
-|Best for problems that perform well with tree algorithms but where explainability is a priority|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|
+|Generalized additive model (GAM)|Best for problems that perform well with tree algorithms but where explainability is a priority|<xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>|
 
 ## Matrix factorization
 
@@ -76,9 +70,9 @@ Boosted decision trees are an ensemble of small trees where each tree scores the
 |----------|--------|
 |Best for sparse categorical data, with large datasets|<xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>|
 
-## Ensemble algorithms
+## Meta algorithms
 
-Creates a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
+These trainers create a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|

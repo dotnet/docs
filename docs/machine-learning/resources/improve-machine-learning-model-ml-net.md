@@ -28,13 +28,13 @@ The meaning of a single data point can be difficult to interpret. Building conte
 
 Although more data samples and features can help improve the accuracy of the model, they may also introduce noise since not all data and features are meaningful. Therefore, it is important to understand which features are the ones that most heavily impact decisions made by the algorithm. Using techniques like Permutation Feature Importance (PFI) can help identify those salient features and not only help explain the model but also use the output as a feature selection method to reduce the amount of noisy features going into the training process. 
 
-Learn to use PFI by visiting the following [link](./explain-machine-learning-model-permutation-feature-importance-ml-net.md)
+Learn to use PFI by visiting the following [link](../how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md)
 
 ## Cross-validation
 
 Cross-validation is a training and model evaluation technique that splits the data into several partitions and trains multiple algorithms on these partitions. This technique improves the robustness of the model by holding out data from the training process. In addition to improving performance on unseen observations, in data-constrained environments it can be an effective tool for training models with a smaller dataset.
 
-Visit the following link to learn [how to use cross validation in ML.NET](./train-machine-learning-model-cross-validation-ml-net.md)
+Visit the following link to learn [how to use cross validation in ML.NET](../how-to-guides/train-machine-learning-model-cross-validation-ml-net.md)
 
 ## Hyperparameter tuning
 
@@ -44,5 +44,5 @@ Training machine learning models is an iterative and exploratory process. For ex
 
 Machine learning tasks like regression and classification contain various algorithm implementations. It may be the case that the problem you are trying to solve and the way your data is structured does not fit well into the current algorithm. In such case, consider using a different algorithm for your task to see if it learns better from your data. 
 
-The following link provides more [guidance on which algorithm to choose](./how-to-choose-an-ml-net-algorithm.md). 
+The following link provides more [guidance on which algorithm to choose](../how-to-choose-an-ml-net-algorithm.md). 
  

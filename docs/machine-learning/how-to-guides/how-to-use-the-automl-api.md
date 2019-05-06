@@ -14,7 +14,7 @@ Automated machine learning (AutoML) automates the process of applying machine le
 
 ## Load data
 
-Automated machine learning supports loading a dataset into an [IDataView](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.idataview?view=ml-dotnet). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.
+Automated machine learning supports loading a dataset into an [IDataView](https://docs.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.
 
 Example:
 

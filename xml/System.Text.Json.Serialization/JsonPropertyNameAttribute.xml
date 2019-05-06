@@ -1,0 +1,69 @@
+﻿<Type Name="JsonPropertyNameAttribute" FullName="System.Text.Json.Serialization.JsonPropertyNameAttribute">
+  <TypeSignature Language="C#" Value="public sealed class JsonPropertyNameAttribute : System.Text.Json.Serialization.JsonAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JsonPropertyNameAttribute extends System.Text.Json.Serialization.JsonAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.Serialization.JsonPropertyNameAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JsonPropertyNameAttribute&#xA;Inherits JsonAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonPropertyNameAttribute sealed : System::Text::Json::Serialization::JsonAttribute" />
+  <TypeSignature Language="F#" Value="type JsonPropertyNameAttribute = class&#xA;    inherit JsonAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Text.Json.Serialization.JsonAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonPropertyNameAttribute (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonPropertyNameAttribute(System::String ^ propertyName);" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.Serialization.JsonPropertyNameAttribute : string -&gt; System.Text.Json.Serialization.JsonPropertyNameAttribute" Usage="new System.Text.Json.Serialization.JsonPropertyNameAttribute propertyName" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonPropertyNameAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Text.Json.Serialization.JsonPropertyNameAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

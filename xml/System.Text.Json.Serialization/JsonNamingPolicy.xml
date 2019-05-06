@@ -1,0 +1,85 @@
+﻿<Type Name="JsonNamingPolicy" FullName="System.Text.Json.Serialization.JsonNamingPolicy">
+  <TypeSignature Language="C#" Value="public abstract class JsonNamingPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JsonNamingPolicy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.Serialization.JsonNamingPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class JsonNamingPolicy" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonNamingPolicy abstract" />
+  <TypeSignature Language="F#" Value="type JsonNamingPolicy = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JsonNamingPolicy ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonNamingPolicy.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; JsonNamingPolicy();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CamelCase">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.Serialization.JsonNamingPolicy CamelCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Json.Serialization.JsonNamingPolicy CamelCase" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonNamingPolicy.CamelCase" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CamelCase As JsonNamingPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Json::Serialization::JsonNamingPolicy ^ CamelCase { System::Text::Json::Serialization::JsonNamingPolicy ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CamelCase : System.Text.Json.Serialization.JsonNamingPolicy" Usage="System.Text.Json.Serialization.JsonNamingPolicy.CamelCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.Serialization.JsonNamingPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertName">
+      <MemberSignature Language="C#" Value="public abstract string ConvertName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ConvertName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonNamingPolicy.ConvertName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ConvertName (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ConvertName(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertName : string -&gt; string" Usage="jsonNamingPolicy.ConvertName name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

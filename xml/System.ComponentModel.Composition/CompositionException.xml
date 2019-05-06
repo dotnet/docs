@@ -88,7 +88,8 @@
         <param name="errors">A collection of <see cref="T:System.ComponentModel.Composition.CompositionError" /> objects that represent problems during composition.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.CompositionException" /> class with the specified collection of composition errors.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="errors" /> contains an element that is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="errors" /> contains an element that is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

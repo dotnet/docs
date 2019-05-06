@@ -6381,6 +6381,44 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetPinnableReference">
+      <MemberSignature Language="C#" Value="public ref readonly char GetPinnableReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.char GetPinnableReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.String.GetPinnableReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPinnableReference () As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; char ^ GetPinnableReference();" />
+      <MemberSignature Language="F#" Value="member this.GetPinnableReference : unit -&gt; char" Usage="string.GetPinnableReference " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>System.Char</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="netcore-3.0">
+            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTypeCode">
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />

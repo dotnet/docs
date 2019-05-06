@@ -1,0 +1,46 @@
+﻿<Type Name="PollingCounter" FullName="System.Diagnostics.Tracing.PollingCounter">
+  <TypeSignature Language="C#" Value="public class PollingCounter : System.Diagnostics.Tracing.DiagnosticCounter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PollingCounter extends System.Diagnostics.Tracing.DiagnosticCounter" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.PollingCounter" />
+  <TypeSignature Language="VB.NET" Value="Public Class PollingCounter&#xA;Inherits DiagnosticCounter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PollingCounter : System::Diagnostics::Tracing::DiagnosticCounter" />
+  <TypeSignature Language="F#" Value="type PollingCounter = class&#xA;    inherit DiagnosticCounter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Diagnostics.Tracing.DiagnosticCounter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PollingCounter (string name, System.Diagnostics.Tracing.EventSource eventSource, Func&lt;double&gt; metricProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Diagnostics.Tracing.EventSource eventSource, class System.Func`1&lt;float64&gt; metricProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.PollingCounter.#ctor(System.String,System.Diagnostics.Tracing.EventSource,System.Func{System.Double})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PollingCounter(System::String ^ name, System::Diagnostics::Tracing::EventSource ^ eventSource, Func&lt;double&gt; ^ metricProvider);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.PollingCounter : string * System.Diagnostics.Tracing.EventSource * Func&lt;double&gt; -&gt; System.Diagnostics.Tracing.PollingCounter" Usage="new System.Diagnostics.Tracing.PollingCounter (name, eventSource, metricProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Diagnostics.Tracing.EventSource" />
+        <Parameter Name="metricProvider" Type="System.Func&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="eventSource">To be added.</param>
+        <param name="metricProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

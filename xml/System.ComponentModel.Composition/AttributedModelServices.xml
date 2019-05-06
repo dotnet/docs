@@ -745,7 +745,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="compositionService" /> or <paramref name="attributedPart" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="compositionService" /> or <paramref name="attributedPart" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ComponentModel.Composition.CompositionException">An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> contains a collection of errors that occurred.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.ICompositionService" /> has been disposed.</exception>
       </Docs>

@@ -77,9 +77,9 @@
         <Parameter Name="visitor" Type="System.Linq.Expressions.ExpressionVisitor" />
       </Parameters>
       <Docs>
-         <param name="visitor">The visitor to visit this node with.</param>
+        <param name="visitor">The visitor to visit this node with.</param>
         <summary>Dispatches to the specific visit method for this node type.</summary>
-         <returns>The result of visiting this node.</returns>
+        <returns>The result of visiting this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

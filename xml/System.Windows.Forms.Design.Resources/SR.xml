@@ -110,6 +110,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BehaviorServiceResizeControl">
+      <MemberSignature Language="C#" Value="public static string BehaviorServiceResizeControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string BehaviorServiceResizeControl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.BehaviorServiceResizeControl" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BehaviorServiceResizeControl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BehaviorServiceResizeControl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorServiceResizeControl : string" Usage="System.Windows.Forms.Design.Resources.SR.BehaviorServiceResizeControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BehaviorServiceResizeControls">
+      <MemberSignature Language="C#" Value="public static string BehaviorServiceResizeControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string BehaviorServiceResizeControls" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.BehaviorServiceResizeControls" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BehaviorServiceResizeControls As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BehaviorServiceResizeControls { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BehaviorServiceResizeControls : string" Usage="System.Windows.Forms.Design.Resources.SR.BehaviorServiceResizeControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CannotConvertDoubleToDate">
       <MemberSignature Language="C#" Value="public static string CannotConvertDoubleToDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CannotConvertDoubleToDate" />
@@ -138,6 +180,69 @@
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CannotConvertIntToFloat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CannotConvertIntToFloat { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CannotConvertIntToFloat : string" Usage="System.Windows.Forms.Design.Resources.SR.CannotConvertIntToFloat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDomComponentSerializationServiceClosedStore">
+      <MemberSignature Language="C#" Value="public static string CodeDomComponentSerializationServiceClosedStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CodeDomComponentSerializationServiceClosedStore" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.CodeDomComponentSerializationServiceClosedStore" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CodeDomComponentSerializationServiceClosedStore As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CodeDomComponentSerializationServiceClosedStore { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeDomComponentSerializationServiceClosedStore : string" Usage="System.Windows.Forms.Design.Resources.SR.CodeDomComponentSerializationServiceClosedStore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDomComponentSerializationServiceDeserializationError">
+      <MemberSignature Language="C#" Value="public static string CodeDomComponentSerializationServiceDeserializationError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CodeDomComponentSerializationServiceDeserializationError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.CodeDomComponentSerializationServiceDeserializationError" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CodeDomComponentSerializationServiceDeserializationError As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CodeDomComponentSerializationServiceDeserializationError { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeDomComponentSerializationServiceDeserializationError : string" Usage="System.Windows.Forms.Design.Resources.SR.CodeDomComponentSerializationServiceDeserializationError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeDomComponentSerializationServiceUnknownStore">
+      <MemberSignature Language="C#" Value="public static string CodeDomComponentSerializationServiceUnknownStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CodeDomComponentSerializationServiceUnknownStore" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.CodeDomComponentSerializationServiceUnknownStore" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CodeDomComponentSerializationServiceUnknownStore As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CodeDomComponentSerializationServiceUnknownStore { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CodeDomComponentSerializationServiceUnknownStore : string" Usage="System.Windows.Forms.Design.Resources.SR.CodeDomComponentSerializationServiceUnknownStore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
@@ -390,6 +495,363 @@
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComponentDesignerAddEvent As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ComponentDesignerAddEvent { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ComponentDesignerAddEvent : string" Usage="System.Windows.Forms.Design.Resources.SR.ComponentDesignerAddEvent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuAlignToGrid">
+      <MemberSignature Language="C#" Value="public static string ContextMenuAlignToGrid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuAlignToGrid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuAlignToGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuAlignToGrid As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuAlignToGrid { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuAlignToGrid : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuAlignToGrid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuBringToFront">
+      <MemberSignature Language="C#" Value="public static string ContextMenuBringToFront { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuBringToFront" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuBringToFront" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuBringToFront As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuBringToFront { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuBringToFront : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuBringToFront" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuCopy">
+      <MemberSignature Language="C#" Value="public static string ContextMenuCopy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuCopy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuCopy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuCopy { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuCopy : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuCopy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuCut">
+      <MemberSignature Language="C#" Value="public static string ContextMenuCut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuCut" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuCut" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuCut As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuCut { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuCut : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuCut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuDelete">
+      <MemberSignature Language="C#" Value="public static string ContextMenuDelete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuDelete" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuDelete As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuDelete { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuDelete : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuDelete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuDocumentOutline">
+      <MemberSignature Language="C#" Value="public static string ContextMenuDocumentOutline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuDocumentOutline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuDocumentOutline" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuDocumentOutline As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuDocumentOutline { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuDocumentOutline : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuDocumentOutline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuLockControls">
+      <MemberSignature Language="C#" Value="public static string ContextMenuLockControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuLockControls" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuLockControls" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuLockControls As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuLockControls { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuLockControls : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuLockControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuPaste">
+      <MemberSignature Language="C#" Value="public static string ContextMenuPaste { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuPaste" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuPaste" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuPaste As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuPaste { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuPaste : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuPaste" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuProperties">
+      <MemberSignature Language="C#" Value="public static string ContextMenuProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuProperties As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuProperties { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuProperties : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuSelect">
+      <MemberSignature Language="C#" Value="public static string ContextMenuSelect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuSelect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuSelect" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuSelect As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuSelect { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuSelect : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuSelect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuSendToBack">
+      <MemberSignature Language="C#" Value="public static string ContextMenuSendToBack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuSendToBack" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuSendToBack" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuSendToBack As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuSendToBack { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuSendToBack : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuSendToBack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStripActionList_ShowCheckMargin">
+      <MemberSignature Language="C#" Value="public static string ContextMenuStripActionList_ShowCheckMargin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuStripActionList_ShowCheckMargin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowCheckMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuStripActionList_ShowCheckMargin As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuStripActionList_ShowCheckMargin { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripActionList_ShowCheckMargin : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowCheckMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStripActionList_ShowCheckMarginDesc">
+      <MemberSignature Language="C#" Value="public static string ContextMenuStripActionList_ShowCheckMarginDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuStripActionList_ShowCheckMarginDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowCheckMarginDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuStripActionList_ShowCheckMarginDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuStripActionList_ShowCheckMarginDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripActionList_ShowCheckMarginDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowCheckMarginDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStripActionList_ShowImageMargin">
+      <MemberSignature Language="C#" Value="public static string ContextMenuStripActionList_ShowImageMargin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuStripActionList_ShowImageMargin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowImageMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuStripActionList_ShowImageMargin As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuStripActionList_ShowImageMargin { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripActionList_ShowImageMargin : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowImageMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStripActionList_ShowImageMarginDesc">
+      <MemberSignature Language="C#" Value="public static string ContextMenuStripActionList_ShowImageMarginDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuStripActionList_ShowImageMarginDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowImageMarginDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuStripActionList_ShowImageMarginDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuStripActionList_ShowImageMarginDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripActionList_ShowImageMarginDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuStripActionList_ShowImageMarginDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuViewCode">
+      <MemberSignature Language="C#" Value="public static string ContextMenuViewCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ContextMenuViewCode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ContextMenuViewCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuViewCode As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContextMenuViewCode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuViewCode : string" Usage="System.Windows.Forms.Design.Resources.SR.ContextMenuViewCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlDesigner_WndProcException">
+      <MemberSignature Language="C#" Value="public static string ControlDesigner_WndProcException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ControlDesigner_WndProcException" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ControlDesigner_WndProcException" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ControlDesigner_WndProcException As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ControlDesigner_WndProcException { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlDesigner_WndProcException : string" Usage="System.Windows.Forms.Design.Resources.SR.ControlDesigner_WndProcException" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
@@ -1270,6 +1732,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DesignerShortcutDockInParent">
+      <MemberSignature Language="C#" Value="public static string DesignerShortcutDockInParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DesignerShortcutDockInParent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.DesignerShortcutDockInParent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerShortcutDockInParent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ DesignerShortcutDockInParent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerShortcutDockInParent : string" Usage="System.Windows.Forms.Design.Resources.SR.DesignerShortcutDockInParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerShortcutUndockInParent">
+      <MemberSignature Language="C#" Value="public static string DesignerShortcutUndockInParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DesignerShortcutUndockInParent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.DesignerShortcutUndockInParent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerShortcutUndockInParent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ DesignerShortcutUndockInParent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerShortcutUndockInParent : string" Usage="System.Windows.Forms.Design.Resources.SR.DesignerShortcutUndockInParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DesignSurfaceContainerDispose">
       <MemberSignature Language="C#" Value="public static string DesignSurfaceContainerDispose { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string DesignSurfaceContainerDispose" />
@@ -1585,6 +2089,69 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="InvalidArgument">
+      <MemberSignature Language="C#" Value="public static string InvalidArgument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string InvalidArgument" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.InvalidArgument" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvalidArgument As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ InvalidArgument { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvalidArgument : string" Usage="System.Windows.Forms.Design.Resources.SR.InvalidArgument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidBoundArgument">
+      <MemberSignature Language="C#" Value="public static string InvalidBoundArgument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string InvalidBoundArgument" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.InvalidBoundArgument" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvalidBoundArgument As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ InvalidBoundArgument { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InvalidBoundArgument : string" Usage="System.Windows.Forms.Design.Resources.SR.InvalidBoundArgument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lockedDescr">
+      <MemberSignature Language="C#" Value="public static string lockedDescr { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string lockedDescr" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.lockedDescr" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property lockedDescr As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ lockedDescr { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.lockedDescr : string" Usage="System.Windows.Forms.Design.Resources.SR.lockedDescr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NotImplementedByDesign">
       <MemberSignature Language="C#" Value="public static string NotImplementedByDesign { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NotImplementedByDesign" />
@@ -1660,6 +2227,993 @@
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RTL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ RTL { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RTL : string" Usage="System.Windows.Forms.Design.Resources.SR.RTL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerAreadyInSession">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerAreadyInSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerAreadyInSession" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerAreadyInSession" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerAreadyInSession As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerAreadyInSession { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerAreadyInSession : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerAreadyInSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerDuplicateComponentDecl">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerDuplicateComponentDecl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerDuplicateComponentDecl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerDuplicateComponentDecl" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerDuplicateComponentDecl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerDuplicateComponentDecl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerDuplicateComponentDecl : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerDuplicateComponentDecl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerNameInUse">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerNameInUse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerNameInUse" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerNameInUse" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerNameInUse As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerNameInUse { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerNameInUse : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerNameInUse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerNoMatchingCtor">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerNoMatchingCtor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerNoMatchingCtor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerNoMatchingCtor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerNoMatchingCtor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerNoMatchingCtor { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerNoMatchingCtor : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerNoMatchingCtor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerNoSession">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerNoSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerNoSession" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerNoSession" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerNoSession As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerNoSession { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerNoSession : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerNoSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerObjectHasName">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerObjectHasName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerObjectHasName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerObjectHasName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerObjectHasName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerObjectHasName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerObjectHasName : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerObjectHasName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationManagerWithinSession">
+      <MemberSignature Language="C#" Value="public static string SerializationManagerWithinSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializationManagerWithinSession" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializationManagerWithinSession" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializationManagerWithinSession As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializationManagerWithinSession { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializationManagerWithinSession : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializationManagerWithinSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerBadElementTypes">
+      <MemberSignature Language="C#" Value="public static string SerializerBadElementTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerBadElementTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerBadElementTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerBadElementTypes As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerBadElementTypes { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerBadElementTypes : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerBadElementTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerFieldTargetEvalFailed">
+      <MemberSignature Language="C#" Value="public static string SerializerFieldTargetEvalFailed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerFieldTargetEvalFailed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerFieldTargetEvalFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerFieldTargetEvalFailed As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerFieldTargetEvalFailed { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerFieldTargetEvalFailed : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerFieldTargetEvalFailed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerInvalidArrayRank">
+      <MemberSignature Language="C#" Value="public static string SerializerInvalidArrayRank { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerInvalidArrayRank" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerInvalidArrayRank" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerInvalidArrayRank As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerInvalidArrayRank { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerInvalidArrayRank : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerInvalidArrayRank" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerLostStatements">
+      <MemberSignature Language="C#" Value="public static string SerializerLostStatements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerLostStatements" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerLostStatements" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerLostStatements As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerLostStatements { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerLostStatements : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerLostStatements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerMemberTypeNotSerializable">
+      <MemberSignature Language="C#" Value="public static string SerializerMemberTypeNotSerializable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerMemberTypeNotSerializable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerMemberTypeNotSerializable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerMemberTypeNotSerializable As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerMemberTypeNotSerializable { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerMemberTypeNotSerializable : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerMemberTypeNotSerializable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerNoRootExpression">
+      <MemberSignature Language="C#" Value="public static string SerializerNoRootExpression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerNoRootExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerNoRootExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerNoRootExpression As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerNoRootExpression { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerNoRootExpression : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerNoRootExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerNoSerializerForComponent">
+      <MemberSignature Language="C#" Value="public static string SerializerNoSerializerForComponent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerNoSerializerForComponent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerNoSerializerForComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerNoSerializerForComponent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerNoSerializerForComponent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerNoSerializerForComponent : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerNoSerializerForComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerNoSuchEvent">
+      <MemberSignature Language="C#" Value="public static string SerializerNoSuchEvent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerNoSuchEvent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerNoSuchEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerNoSuchEvent As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerNoSuchEvent { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerNoSuchEvent : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerNoSuchEvent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerNoSuchField">
+      <MemberSignature Language="C#" Value="public static string SerializerNoSuchField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerNoSuchField" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerNoSuchField" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerNoSuchField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerNoSuchField { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerNoSuchField : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerNoSuchField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerNoSuchProperty">
+      <MemberSignature Language="C#" Value="public static string SerializerNoSuchProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerNoSuchProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerNoSuchProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerNoSuchProperty As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerNoSuchProperty { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerNoSuchProperty : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerNoSuchProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerResourceException">
+      <MemberSignature Language="C#" Value="public static string SerializerResourceException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerResourceException" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerResourceException" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerResourceException As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerResourceException { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerResourceException : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerResourceException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerResourceExceptionInvariant">
+      <MemberSignature Language="C#" Value="public static string SerializerResourceExceptionInvariant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerResourceExceptionInvariant" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerResourceExceptionInvariant" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerResourceExceptionInvariant As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerResourceExceptionInvariant { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerResourceExceptionInvariant : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerResourceExceptionInvariant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerTypeNotFound">
+      <MemberSignature Language="C#" Value="public static string SerializerTypeNotFound { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerTypeNotFound" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerTypeNotFound" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerTypeNotFound As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerTypeNotFound { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerTypeNotFound : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerTypeNotFound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializerUndeclaredName">
+      <MemberSignature Language="C#" Value="public static string SerializerUndeclaredName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string SerializerUndeclaredName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.SerializerUndeclaredName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SerializerUndeclaredName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ SerializerUndeclaredName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SerializerUndeclaredName : string" Usage="System.Windows.Forms.Design.Resources.SR.SerializerUndeclaredName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuAbout">
+      <MemberSignature Language="C#" Value="public static string StandardMenuAbout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuAbout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuAbout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuAbout As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuAbout { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuAbout : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuAbout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuContents">
+      <MemberSignature Language="C#" Value="public static string StandardMenuContents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuContents" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuContents" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuContents As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuContents { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuContents : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuContents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuCopy">
+      <MemberSignature Language="C#" Value="public static string StandardMenuCopy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuCopy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuCopy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuCopy { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuCopy : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuCopy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuCreateDesc">
+      <MemberSignature Language="C#" Value="public static string StandardMenuCreateDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuCreateDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuCreateDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuCreateDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuCreateDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuCreateDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuCreateDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuCustomize">
+      <MemberSignature Language="C#" Value="public static string StandardMenuCustomize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuCustomize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuCustomize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuCustomize As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuCustomize { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuCustomize : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuCustomize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuCut">
+      <MemberSignature Language="C#" Value="public static string StandardMenuCut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuCut" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuCut" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuCut As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuCut { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuCut : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuCut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuEdit">
+      <MemberSignature Language="C#" Value="public static string StandardMenuEdit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuEdit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuEdit As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuEdit { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuEdit : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuEdit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuExit">
+      <MemberSignature Language="C#" Value="public static string StandardMenuExit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuExit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuExit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuExit As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuExit { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuExit : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuExit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuFile">
+      <MemberSignature Language="C#" Value="public static string StandardMenuFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuFile" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuFile" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuFile { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuFile : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuHelp">
+      <MemberSignature Language="C#" Value="public static string StandardMenuHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuHelp" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuHelp As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuHelp { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuHelp : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuIndex">
+      <MemberSignature Language="C#" Value="public static string StandardMenuIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuIndex As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuIndex { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuIndex : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuNew">
+      <MemberSignature Language="C#" Value="public static string StandardMenuNew { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuNew" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuNew" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuNew As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuNew { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuNew : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuNew" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuOpen">
+      <MemberSignature Language="C#" Value="public static string StandardMenuOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuOpen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuOpen As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuOpen { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuOpen : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuOptions">
+      <MemberSignature Language="C#" Value="public static string StandardMenuOptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuOptions As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuOptions { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuOptions : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuPaste">
+      <MemberSignature Language="C#" Value="public static string StandardMenuPaste { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuPaste" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuPaste" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuPaste As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuPaste { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuPaste : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuPaste" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuPrint">
+      <MemberSignature Language="C#" Value="public static string StandardMenuPrint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuPrint" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuPrint" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuPrint As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuPrint { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuPrint : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuPrint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuPrintPreview">
+      <MemberSignature Language="C#" Value="public static string StandardMenuPrintPreview { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuPrintPreview" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuPrintPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuPrintPreview As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuPrintPreview { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuPrintPreview : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuPrintPreview" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuRedo">
+      <MemberSignature Language="C#" Value="public static string StandardMenuRedo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuRedo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuRedo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuRedo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuRedo { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuRedo : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuRedo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuSave">
+      <MemberSignature Language="C#" Value="public static string StandardMenuSave { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuSave" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuSave" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuSave As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuSave { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuSave : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuSave" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuSaveAs">
+      <MemberSignature Language="C#" Value="public static string StandardMenuSaveAs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuSaveAs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuSaveAs" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuSaveAs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuSaveAs { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuSaveAs : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuSaveAs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuSearch">
+      <MemberSignature Language="C#" Value="public static string StandardMenuSearch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuSearch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuSearch As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuSearch { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuSearch : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuSearch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuSelectAll">
+      <MemberSignature Language="C#" Value="public static string StandardMenuSelectAll { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuSelectAll" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuSelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuSelectAll As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuSelectAll { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuSelectAll : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuSelectAll" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuTools">
+      <MemberSignature Language="C#" Value="public static string StandardMenuTools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuTools" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuTools" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuTools As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuTools { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuTools : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuTools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardMenuUndo">
+      <MemberSignature Language="C#" Value="public static string StandardMenuUndo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardMenuUndo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardMenuUndo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardMenuUndo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardMenuUndo { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardMenuUndo : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardMenuUndo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardToolCut">
+      <MemberSignature Language="C#" Value="public static string StandardToolCut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardToolCut" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardToolCut" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardToolCut As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardToolCut { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardToolCut : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardToolCut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardToolHelp">
+      <MemberSignature Language="C#" Value="public static string StandardToolHelp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StandardToolHelp" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.StandardToolHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardToolHelp As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ StandardToolHelp { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StandardToolHelp : string" Usage="System.Windows.Forms.Design.Resources.SR.StandardToolHelp" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
@@ -1758,6 +3312,678 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ToolStripActionList_Dock">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_Dock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_Dock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_Dock" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_Dock As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_Dock { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_Dock : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_Dock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripActionList_DockDesc">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_DockDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_DockDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_DockDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_DockDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_DockDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_DockDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_DockDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripActionList_GripStyle">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_GripStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_GripStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_GripStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_GripStyle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_GripStyle { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_GripStyle : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_GripStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripActionList_GripStyleDesc">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_GripStyleDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_GripStyleDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_GripStyleDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_GripStyleDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_GripStyleDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_GripStyleDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_GripStyleDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripActionList_Layout">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_Layout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_Layout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_Layout As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_Layout { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_Layout : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_Layout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripActionList_RenderMode">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_RenderMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_RenderMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_RenderMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_RenderMode As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_RenderMode { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_RenderMode : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_RenderMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripActionList_RenderModeDesc">
+      <MemberSignature Language="C#" Value="public static string ToolStripActionList_RenderModeDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripActionList_RenderModeDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripActionList_RenderModeDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripActionList_RenderModeDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripActionList_RenderModeDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripActionList_RenderModeDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripActionList_RenderModeDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripAddingItem">
+      <MemberSignature Language="C#" Value="public static string ToolStripAddingItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripAddingItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripAddingItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripAddingItem As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripAddingItem { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripAddingItem : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripAddingItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue">
+      <MemberSignature Language="C#" Value="public static string ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripAllowItemReorderAndAllowDropCannotBeSetToTrue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripCreatingNewItemTransaction">
+      <MemberSignature Language="C#" Value="public static string ToolStripCreatingNewItemTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripCreatingNewItemTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripCreatingNewItemTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripCreatingNewItemTransaction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripCreatingNewItemTransaction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripCreatingNewItemTransaction : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripCreatingNewItemTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerEmbedVerb">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerEmbedVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerEmbedVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerEmbedVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerEmbedVerb As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerEmbedVerb { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerEmbedVerb : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerEmbedVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerEmbedVerbDesc">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerEmbedVerbDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerEmbedVerbDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerEmbedVerbDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerEmbedVerbDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerEmbedVerbDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerEmbedVerbDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerEmbedVerbDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerStandardItemsVerb">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerStandardItemsVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerStandardItemsVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerStandardItemsVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerStandardItemsVerb As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerStandardItemsVerb { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerStandardItemsVerb : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerStandardItemsVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerStandardItemsVerbDesc">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerStandardItemsVerbDesc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerStandardItemsVerbDesc" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerStandardItemsVerbDesc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerStandardItemsVerbDesc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerStandardItemsVerbDesc { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerStandardItemsVerbDesc : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerStandardItemsVerbDesc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTemplateNodeEnterText">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTemplateNodeEnterText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTemplateNodeEnterText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeEnterText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTemplateNodeEnterText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTemplateNodeEnterText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTemplateNodeEnterText : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeEnterText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTemplateNodeLabelToolTip">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTemplateNodeLabelToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTemplateNodeLabelToolTip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeLabelToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTemplateNodeLabelToolTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTemplateNodeLabelToolTip { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTemplateNodeLabelToolTip : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeLabelToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeSplitButtonStatusStripAccessibleName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeSplitButtonStatusStripToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTemplateNodeSplitButtonToolTip">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTemplateNodeSplitButtonToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTemplateNodeSplitButtonToolTip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeSplitButtonToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTemplateNodeSplitButtonToolTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTemplateNodeSplitButtonToolTip { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTemplateNodeSplitButtonToolTip : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTemplateNodeSplitButtonToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerToolStripAccessibleName">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerToolStripAccessibleName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerToolStripAccessibleName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerToolStripAccessibleName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerToolStripAccessibleName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerToolStripAccessibleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerToolStripAccessibleName : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerToolStripAccessibleName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTransactionAddingItem">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTransactionAddingItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTransactionAddingItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTransactionAddingItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTransactionAddingItem As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTransactionAddingItem { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTransactionAddingItem : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTransactionAddingItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDesignerTransactionRemovingItem">
+      <MemberSignature Language="C#" Value="public static string ToolStripDesignerTransactionRemovingItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDesignerTransactionRemovingItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTransactionRemovingItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDesignerTransactionRemovingItem As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDesignerTransactionRemovingItem { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDesignerTransactionRemovingItem : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDesignerTransactionRemovingItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDropDownItemCollectionEditorVerb">
+      <MemberSignature Language="C#" Value="public static string ToolStripDropDownItemCollectionEditorVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripDropDownItemCollectionEditorVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripDropDownItemCollectionEditorVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripDropDownItemCollectionEditorVerb As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripDropDownItemCollectionEditorVerb { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDropDownItemCollectionEditorVerb : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripDropDownItemCollectionEditorVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripInsertingIntoDropDownTransaction">
+      <MemberSignature Language="C#" Value="public static string ToolStripInsertingIntoDropDownTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripInsertingIntoDropDownTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripInsertingIntoDropDownTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripInsertingIntoDropDownTransaction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripInsertingIntoDropDownTransaction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripInsertingIntoDropDownTransaction : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripInsertingIntoDropDownTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripItemCollectionEditorVerb">
+      <MemberSignature Language="C#" Value="public static string ToolStripItemCollectionEditorVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripItemCollectionEditorVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripItemCollectionEditorVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripItemCollectionEditorVerb As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripItemCollectionEditorVerb { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripItemCollectionEditorVerb : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripItemCollectionEditorVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripItemContextMenuConvertTo">
+      <MemberSignature Language="C#" Value="public static string ToolStripItemContextMenuConvertTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripItemContextMenuConvertTo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripItemContextMenuConvertTo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripItemContextMenuConvertTo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripItemContextMenuConvertTo { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripItemContextMenuConvertTo : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripItemContextMenuConvertTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripItemContextMenuInsert">
+      <MemberSignature Language="C#" Value="public static string ToolStripItemContextMenuInsert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripItemContextMenuInsert" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripItemContextMenuInsert" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripItemContextMenuInsert As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripItemContextMenuInsert { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripItemContextMenuInsert : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripItemContextMenuInsert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripItemContextMenuSetImage">
+      <MemberSignature Language="C#" Value="public static string ToolStripItemContextMenuSetImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripItemContextMenuSetImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripItemContextMenuSetImage" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripItemContextMenuSetImage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripItemContextMenuSetImage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripItemContextMenuSetImage : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripItemContextMenuSetImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripItemPropertyChangeTransaction">
+      <MemberSignature Language="C#" Value="public static string ToolStripItemPropertyChangeTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripItemPropertyChangeTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripItemPropertyChangeTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripItemPropertyChangeTransaction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripItemPropertyChangeTransaction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripItemPropertyChangeTransaction : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripItemPropertyChangeTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripMorphingItemTransaction">
+      <MemberSignature Language="C#" Value="public static string ToolStripMorphingItemTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripMorphingItemTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripMorphingItemTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripMorphingItemTransaction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripMorphingItemTransaction { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripMorphingItemTransaction : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripMorphingItemTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripSelectMenuItem">
+      <MemberSignature Language="C#" Value="public static string ToolStripSelectMenuItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripSelectMenuItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripSelectMenuItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripSelectMenuItem As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripSelectMenuItem { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripSelectMenuItem : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripSelectMenuItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripSeparatorError">
+      <MemberSignature Language="C#" Value="public static string ToolStripSeparatorError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ToolStripSeparatorError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.ToolStripSeparatorError" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToolStripSeparatorError As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ToolStripSeparatorError { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ToolStripSeparatorError : string" Usage="System.Windows.Forms.Design.Resources.SR.ToolStripSeparatorError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TrayAutoArrange">
       <MemberSignature Language="C#" Value="public static string TrayAutoArrange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TrayAutoArrange" />
@@ -1807,6 +4033,27 @@
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TrayShowLargeIcons As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TrayShowLargeIcons { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TrayShowLargeIcons : string" Usage="System.Windows.Forms.Design.Resources.SR.TrayShowLargeIcons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeNotFoundInTargetFramework">
+      <MemberSignature Language="C#" Value="public static string TypeNotFoundInTargetFramework { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TypeNotFoundInTargetFramework" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Resources.SR.TypeNotFoundInTargetFramework" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TypeNotFoundInTargetFramework As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TypeNotFoundInTargetFramework { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TypeNotFoundInTargetFramework : string" Usage="System.Windows.Forms.Design.Resources.SR.TypeNotFoundInTargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>

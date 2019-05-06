@@ -165,7 +165,8 @@ if (null != principal)
         <param name="other">The security claim.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class.</summary>
         <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="other" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,7 +203,8 @@ if (null != principal)
         <param name="subject">The subject that this claim describes.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified reader and subject.</summary>
         <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -239,7 +241,8 @@ if (null != principal)
         <param name="subject">The subject that this claim describes.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified security claim and subject.</summary>
         <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="other" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1047,7 +1050,8 @@ if (null != principal)
         <param name="userData">The user data to claim.</param>
         <summary>Writes this <see cref="T:System.Security.Claims.Claim" /> to the writer.</summary>
         <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

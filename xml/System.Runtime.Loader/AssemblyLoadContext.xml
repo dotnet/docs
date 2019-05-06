@@ -193,6 +193,27 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CurrentContextualReflectionContext">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Loader.AssemblyLoadContext CurrentContextualReflectionContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Runtime.Loader.AssemblyLoadContext CurrentContextualReflectionContext" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentContextualReflectionContext As AssemblyLoadContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Runtime::Loader::AssemblyLoadContext ^ CurrentContextualReflectionContext { System::Runtime::Loader::AssemblyLoadContext ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentContextualReflectionContext : System.Runtime.Loader.AssemblyLoadContext" Usage="System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Loader.AssemblyLoadContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Default">
       <MemberSignature Language="C#" Value="public static System.Runtime.Loader.AssemblyLoadContext Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Runtime.Loader.AssemblyLoadContext Default" />
@@ -218,6 +239,53 @@ This constructor is protected. It can only be called from the <xref:System.Runti
       <Docs>
         <summary>Gets the default <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />. The default context contains the main application assembly and its static dependencies.</summary>
         <value>The default assembly load context.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterContextualReflection">
+      <MemberSignature Language="C#" Value="public System.Runtime.Loader.AssemblyLoadContext.ContextualReflectionScope EnterContextualReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.Loader.AssemblyLoadContext/ContextualReflectionScope EnterContextualReflection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnterContextualReflection () As AssemblyLoadContext.ContextualReflectionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Loader::AssemblyLoadContext::ContextualReflectionScope EnterContextualReflection();" />
+      <MemberSignature Language="F#" Value="member this.EnterContextualReflection : unit -&gt; System.Runtime.Loader.AssemblyLoadContext.ContextualReflectionScope" Usage="assemblyLoadContext.EnterContextualReflection " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Loader.AssemblyLoadContext+ContextualReflectionScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterContextualReflection">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Loader.AssemblyLoadContext.ContextualReflectionScope EnterContextualReflection (System.Reflection.Assembly activating);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Loader.AssemblyLoadContext/ContextualReflectionScope EnterContextualReflection(class System.Reflection.Assembly activating) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnterContextualReflection (activating As Assembly) As AssemblyLoadContext.ContextualReflectionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Loader::AssemblyLoadContext::ContextualReflectionScope EnterContextualReflection(System::Reflection::Assembly ^ activating);" />
+      <MemberSignature Language="F#" Value="static member EnterContextualReflection : System.Reflection.Assembly -&gt; System.Runtime.Loader.AssemblyLoadContext.ContextualReflectionScope" Usage="System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection activating" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Loader.AssemblyLoadContext+ContextualReflectionScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activating" Type="System.Reflection.Assembly" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="activating">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

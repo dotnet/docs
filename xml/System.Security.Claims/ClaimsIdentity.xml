@@ -258,7 +258,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
         <remarks></remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
-        <exception cref="T:System.ArgumentNullException"><paramref name="info" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -748,7 +749,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException"><paramref name="identity" /> is a <see cref="T:System.Security.Claims.ClaimsIdentity" /> and <see cref="P:System.Security.Claims.ClaimsIdentity.Actor" /> results in a circular reference back to <see langword="this" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="identity" /> is a <see cref="T:System.Security.Claims.ClaimsIdentity" /> and <see cref="P:System.Security.Claims.ClaimsIdentity.Actor" /> results in a circular reference back to <see langword="this" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Actor">

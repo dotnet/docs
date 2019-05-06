@@ -23,6 +23,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netcore-3.0">System.Diagnostics.Tracing.DiagnosticCounter</BaseTypeName>
   </Base>
   <Interfaces></Interfaces>
   <Attributes>
@@ -106,6 +107,33 @@ For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> 
       </ReturnValue>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMetric">
+      <MemberSignature Language="C#" Value="public void WriteMetric (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMetric(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteMetric (value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMetric(double value);" />
+      <MemberSignature Language="F#" Value="member this.WriteMetric : double -&gt; unit" Usage="eventCounter.WriteMetric value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

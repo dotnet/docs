@@ -35,6 +35,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AllowTrailingCommas">
+      <MemberSignature Language="C#" Value="public bool AllowTrailingCommas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowTrailingCommas" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.AllowTrailingCommas" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowTrailingCommas As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowTrailingCommas { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowTrailingCommas : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.AllowTrailingCommas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefaultBufferSize">
       <MemberSignature Language="C#" Value="public int DefaultBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultBufferSize" />
@@ -56,13 +77,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IgnoreNullPropertyValueOnRead">
-      <MemberSignature Language="C#" Value="public bool IgnoreNullPropertyValueOnRead { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreNullPropertyValueOnRead" />
-      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.IgnoreNullPropertyValueOnRead" />
-      <MemberSignature Language="VB.NET" Value="Public Property IgnoreNullPropertyValueOnRead As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreNullPropertyValueOnRead { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.IgnoreNullPropertyValueOnRead : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.IgnoreNullPropertyValueOnRead" />
+    <Member MemberName="DictionaryKeyPolicy">
+      <MemberSignature Language="C#" Value="public System.Text.Json.Serialization.JsonNamingPolicy DictionaryKeyPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Json.Serialization.JsonNamingPolicy DictionaryKeyPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.DictionaryKeyPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property DictionaryKeyPolicy As JsonNamingPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::Serialization::JsonNamingPolicy ^ DictionaryKeyPolicy { System::Text::Json::Serialization::JsonNamingPolicy ^ get(); void set(System::Text::Json::Serialization::JsonNamingPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DictionaryKeyPolicy : System.Text.Json.Serialization.JsonNamingPolicy with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.DictionaryKeyPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.Serialization.JsonNamingPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreNullValues">
+      <MemberSignature Language="C#" Value="public bool IgnoreNullValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreNullValues" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.IgnoreNullValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreNullValues As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreNullValues { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreNullValues : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.IgnoreNullValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Json</AssemblyName>
@@ -77,13 +119,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IgnoreNullPropertyValueOnWrite">
-      <MemberSignature Language="C#" Value="public bool IgnoreNullPropertyValueOnWrite { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreNullPropertyValueOnWrite" />
-      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.IgnoreNullPropertyValueOnWrite" />
-      <MemberSignature Language="VB.NET" Value="Public Property IgnoreNullPropertyValueOnWrite As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreNullPropertyValueOnWrite { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.IgnoreNullPropertyValueOnWrite : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.IgnoreNullPropertyValueOnWrite" />
+    <Member MemberName="IgnoreReadOnlyProperties">
+      <MemberSignature Language="C#" Value="public bool IgnoreReadOnlyProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreReadOnlyProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.IgnoreReadOnlyProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreReadOnlyProperties As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreReadOnlyProperties { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreReadOnlyProperties : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.IgnoreReadOnlyProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Json</AssemblyName>
@@ -98,20 +140,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ReaderOptions">
-      <MemberSignature Language="C#" Value="public System.Text.Json.JsonReaderOptions ReaderOptions { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonReaderOptions ReaderOptions" />
-      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.ReaderOptions" />
-      <MemberSignature Language="VB.NET" Value="Public Property ReaderOptions As JsonReaderOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonReaderOptions ReaderOptions { System::Text::Json::JsonReaderOptions get(); void set(System::Text::Json::JsonReaderOptions value); };" />
-      <MemberSignature Language="F#" Value="member this.ReaderOptions : System.Text.Json.JsonReaderOptions with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.ReaderOptions" />
+    <Member MemberName="MaxDepth">
+      <MemberSignature Language="C#" Value="public int MaxDepth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.MaxDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDepth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxDepth : int with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.MaxDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Text.Json.JsonReaderOptions</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -119,20 +161,83 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WriterOptions">
-      <MemberSignature Language="C#" Value="public System.Text.Json.JsonWriterOptions WriterOptions { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonWriterOptions WriterOptions" />
-      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.WriterOptions" />
-      <MemberSignature Language="VB.NET" Value="Public Property WriterOptions As JsonWriterOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonWriterOptions WriterOptions { System::Text::Json::JsonWriterOptions get(); void set(System::Text::Json::JsonWriterOptions value); };" />
-      <MemberSignature Language="F#" Value="member this.WriterOptions : System.Text.Json.JsonWriterOptions with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.WriterOptions" />
+    <Member MemberName="PropertyNameCaseInsensitive">
+      <MemberSignature Language="C#" Value="public bool PropertyNameCaseInsensitive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PropertyNameCaseInsensitive" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.PropertyNameCaseInsensitive" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyNameCaseInsensitive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PropertyNameCaseInsensitive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyNameCaseInsensitive : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.PropertyNameCaseInsensitive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Json</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Text.Json.JsonWriterOptions</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyNamingPolicy">
+      <MemberSignature Language="C#" Value="public System.Text.Json.Serialization.JsonNamingPolicy PropertyNamingPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Json.Serialization.JsonNamingPolicy PropertyNamingPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.PropertyNamingPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyNamingPolicy As JsonNamingPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::Serialization::JsonNamingPolicy ^ PropertyNamingPolicy { System::Text::Json::Serialization::JsonNamingPolicy ^ get(); void set(System::Text::Json::Serialization::JsonNamingPolicy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PropertyNamingPolicy : System.Text.Json.Serialization.JsonNamingPolicy with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.PropertyNamingPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.Serialization.JsonNamingPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCommentHandling">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonCommentHandling ReadCommentHandling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.JsonCommentHandling ReadCommentHandling" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.ReadCommentHandling" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadCommentHandling As JsonCommentHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::JsonCommentHandling ReadCommentHandling { System::Text::Json::JsonCommentHandling get(); void set(System::Text::Json::JsonCommentHandling value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadCommentHandling : System.Text.Json.JsonCommentHandling with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.ReadCommentHandling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonCommentHandling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteIndented">
+      <MemberSignature Language="C#" Value="public bool WriteIndented { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WriteIndented" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Serialization.JsonSerializerOptions.WriteIndented" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteIndented As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WriteIndented { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WriteIndented : bool with get, set" Usage="System.Text.Json.Serialization.JsonSerializerOptions.WriteIndented" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

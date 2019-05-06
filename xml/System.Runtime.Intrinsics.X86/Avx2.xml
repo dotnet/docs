@@ -3664,6 +3664,55 @@
       </Docs>
     </Member>
     <Member MemberName="ConvertToVector256Int16">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; ConvertToVector256Int16 (byte* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; ConvertToVector256Int16(unsigned int8* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16(System.Byte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; ConvertToVector256Int16(System::Byte* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int16 : nativeptr&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Byte*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int16">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; ConvertToVector256Int16 (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; ConvertToVector256Int16(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToVector256Int16 (value As Vector128(Of Byte)) As Vector256(Of Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; ConvertToVector256Int16(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int16 : System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int16">
       <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; ConvertToVector256Int16 (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; ConvertToVector256Int16(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16(System.Runtime.Intrinsics.Vector128{System.SByte})" />
@@ -3691,6 +3740,103 @@
             __m256i _mm256_cvtepi8_epi16 (__m128i a)
               VPMOVSXBW ymm, xmm/m128
             </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int16">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;short&gt; ConvertToVector256Int16 (sbyte* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; ConvertToVector256Int16(int8* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16(System.SByte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;short&gt; ConvertToVector256Int16(System::SByte* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int16 : nativeptr&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int16&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int16 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.SByte*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int32">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; ConvertToVector256Int32 (byte* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; ConvertToVector256Int32(unsigned int8* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32(System.Byte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; ConvertToVector256Int32(System::Byte* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int32 : nativeptr&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Byte*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int32">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; ConvertToVector256Int32 (short* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; ConvertToVector256Int32(int16* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32(System.Int16*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; ConvertToVector256Int32(short* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int32 : nativeptr&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int16*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int32">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; ConvertToVector256Int32 (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; ConvertToVector256Int32(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToVector256Int32 (value As Vector128(Of Byte)) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; ConvertToVector256Int32(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int32 : System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3755,6 +3901,176 @@
             __m256i _mm256_cvtepi8_epi32 (__m128i a)
               VPMOVSXBD ymm, xmm/m128
             </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int32">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; ConvertToVector256Int32 (System.Runtime.Intrinsics.Vector128&lt;ushort&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; ConvertToVector256Int32(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int16&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32(System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToVector256Int32 (value As Vector128(Of UShort)) As Vector256(Of Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; ConvertToVector256Int32(System::Runtime::Intrinsics::Vector128&lt;System::UInt16&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int32 : System.Runtime.Intrinsics.Vector128&lt;uint16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int32">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; ConvertToVector256Int32 (sbyte* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; ConvertToVector256Int32(int8* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32(System.SByte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; ConvertToVector256Int32(System::SByte* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int32 : nativeptr&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.SByte*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int32">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;int&gt; ConvertToVector256Int32 (ushort* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int32&gt; ConvertToVector256Int32(unsigned int16* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32(System.UInt16*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;int&gt; ConvertToVector256Int32(System::UInt16* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int32 : nativeptr&lt;uint16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int32 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt16*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (byte* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(unsigned int8* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.Byte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::Byte* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : nativeptr&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Byte*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (short* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(int16* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.Int16*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(short* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : nativeptr&lt;int16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int16*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (int* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(int32* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.Int32*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(int* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : nativeptr&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToVector256Int64 (value As Vector128(Of Byte)) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3855,6 +4171,128 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (System.Runtime.Intrinsics.Vector128&lt;ushort&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int16&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.Runtime.Intrinsics.Vector128{System.UInt16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToVector256Int64 (value As Vector128(Of UShort)) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::Runtime::Intrinsics::Vector128&lt;System::UInt16&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : System.Runtime.Intrinsics.Vector128&lt;uint16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (System.Runtime.Intrinsics.Vector128&lt;uint&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.Runtime.Intrinsics.Vector128{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToVector256Int64 (value As Vector128(Of UInteger)) As Vector256(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::Runtime::Intrinsics::Vector128&lt;System::UInt32&gt; value);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : System.Runtime.Intrinsics.Vector128&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (sbyte* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(int8* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.SByte*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::SByte* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : nativeptr&lt;sbyte&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.SByte*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (ushort* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(unsigned int16* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.UInt16*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::UInt16* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : nativeptr&lt;uint16&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt16*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToVector256Int64">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;long&gt; ConvertToVector256Int64 (uint* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;int64&gt; ConvertToVector256Int64(unsigned int32* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64(System.UInt32*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector256&lt;long&gt; ConvertToVector256Int64(System::UInt32* address);" />
+      <MemberSignature Language="F#" Value="static member ConvertToVector256Int64 : nativeptr&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector256&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx2.ConvertToVector256Int64 address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ConvertToVector256UInt16">
       <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;ushort&gt; ConvertToVector256UInt16 (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; ConvertToVector256UInt16(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
@@ -3875,7 +4313,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3907,7 +4345,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3939,7 +4377,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3971,7 +4409,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4003,7 +4441,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4035,7 +4473,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>

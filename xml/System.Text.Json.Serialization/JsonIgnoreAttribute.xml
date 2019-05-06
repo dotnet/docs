@@ -1,0 +1,44 @@
+﻿<Type Name="JsonIgnoreAttribute" FullName="System.Text.Json.Serialization.JsonIgnoreAttribute">
+  <TypeSignature Language="C#" Value="public sealed class JsonIgnoreAttribute : System.Text.Json.Serialization.JsonAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JsonIgnoreAttribute extends System.Text.Json.Serialization.JsonAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.Serialization.JsonIgnoreAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JsonIgnoreAttribute&#xA;Inherits JsonAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonIgnoreAttribute sealed : System::Text::Json::Serialization::JsonAttribute" />
+  <TypeSignature Language="F#" Value="type JsonIgnoreAttribute = class&#xA;    inherit JsonAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Text.Json.Serialization.JsonAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonIgnoreAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonIgnoreAttribute();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

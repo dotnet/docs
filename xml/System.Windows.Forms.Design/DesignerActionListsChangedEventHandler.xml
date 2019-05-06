@@ -1,0 +1,33 @@
+﻿<Type Name="DesignerActionListsChangedEventHandler" FullName="System.Windows.Forms.Design.DesignerActionListsChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DesignerActionListsChangedEventHandler(object sender, DesignerActionListsChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerActionListsChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerActionListsChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DesignerActionListsChangedEventHandler(sender As Object, e As DesignerActionListsChangedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DesignerActionListsChangedEventHandler(System::Object ^ sender, DesignerActionListsChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DesignerActionListsChangedEventHandler = delegate of obj * DesignerActionListsChangedEventArgs -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.Design.DesignerActionListsChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

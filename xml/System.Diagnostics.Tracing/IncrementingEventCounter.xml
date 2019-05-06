@@ -1,0 +1,88 @@
+﻿<Type Name="IncrementingEventCounter" FullName="System.Diagnostics.Tracing.IncrementingEventCounter">
+  <TypeSignature Language="C#" Value="public class IncrementingEventCounter : System.Diagnostics.Tracing.DiagnosticCounter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncrementingEventCounter extends System.Diagnostics.Tracing.DiagnosticCounter" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.IncrementingEventCounter" />
+  <TypeSignature Language="VB.NET" Value="Public Class IncrementingEventCounter&#xA;Inherits DiagnosticCounter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IncrementingEventCounter : System::Diagnostics::Tracing::DiagnosticCounter" />
+  <TypeSignature Language="F#" Value="type IncrementingEventCounter = class&#xA;    inherit DiagnosticCounter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Diagnostics.Tracing.DiagnosticCounter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IncrementingEventCounter (string name, System.Diagnostics.Tracing.EventSource eventSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Diagnostics.Tracing.EventSource eventSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.IncrementingEventCounter.#ctor(System.String,System.Diagnostics.Tracing.EventSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IncrementingEventCounter(System::String ^ name, System::Diagnostics::Tracing::EventSource ^ eventSource);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.IncrementingEventCounter : string * System.Diagnostics.Tracing.EventSource -&gt; System.Diagnostics.Tracing.IncrementingEventCounter" Usage="new System.Diagnostics.Tracing.IncrementingEventCounter (name, eventSource)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Diagnostics.Tracing.EventSource" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="eventSource">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRateTimeScale">
+      <MemberSignature Language="C#" Value="public TimeSpan DisplayRateTimeScale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DisplayRateTimeScale" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.IncrementingEventCounter.DisplayRateTimeScale" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayRateTimeScale As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DisplayRateTimeScale { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayRateTimeScale : TimeSpan with get, set" Usage="System.Diagnostics.Tracing.IncrementingEventCounter.DisplayRateTimeScale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public void Increment (double increment = 1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Increment(float64 increment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.IncrementingEventCounter.Increment(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Increment (Optional increment As Double = 1)" />
+      <MemberSignature Language="F#" Value="member this.Increment : double -&gt; unit" Usage="incrementingEventCounter.Increment increment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="increment" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="increment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -20343,7 +20343,7 @@
     </Type>
     <Type Name="System.Threading.Channels.ChannelReader`1" Id="T:System.Threading.Channels.ChannelReader`1">
       <Member Id="M:System.Threading.Channels.ChannelReader`1.#ctor" />
-      <Member Id="M:System.Threading.Channels.ChannelReader`1.ReadAllAsync" />
+      <Member Id="M:System.Threading.Channels.ChannelReader`1.ReadAllAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.Threading.Channels.ChannelReader`1.ReadAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.Threading.Channels.ChannelReader`1.TryRead(`0@)" />
       <Member Id="M:System.Threading.Channels.ChannelReader`1.WaitToReadAsync(System.Threading.CancellationToken)" />

@@ -1,0 +1,110 @@
+﻿<Type Name="DesignerActionListsChangedEventArgs" FullName="System.Windows.Forms.Design.DesignerActionListsChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class DesignerActionListsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionListsChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerActionListsChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerActionListsChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionListsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignerActionListsChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionListsChangedEventArgs (object relatedObject, System.Windows.Forms.Design.DesignerActionListsChangedType changeType, System.ComponentModel.Design.DesignerActionListCollection actionLists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object relatedObject, valuetype System.Windows.Forms.Design.DesignerActionListsChangedType changeType, class System.ComponentModel.Design.DesignerActionListCollection actionLists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.#ctor(System.Object,System.Windows.Forms.Design.DesignerActionListsChangedType,System.ComponentModel.Design.DesignerActionListCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (relatedObject As Object, changeType As DesignerActionListsChangedType, actionLists As DesignerActionListCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionListsChangedEventArgs(System::Object ^ relatedObject, System::Windows::Forms::Design::DesignerActionListsChangedType changeType, System::ComponentModel::Design::DesignerActionListCollection ^ actionLists);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.DesignerActionListsChangedEventArgs : obj * System.Windows.Forms.Design.DesignerActionListsChangedType * System.ComponentModel.Design.DesignerActionListCollection -&gt; System.Windows.Forms.Design.DesignerActionListsChangedEventArgs" Usage="new System.Windows.Forms.Design.DesignerActionListsChangedEventArgs (relatedObject, changeType, actionLists)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relatedObject" Type="System.Object" />
+        <Parameter Name="changeType" Type="System.Windows.Forms.Design.DesignerActionListsChangedType" />
+        <Parameter Name="actionLists" Type="System.ComponentModel.Design.DesignerActionListCollection" />
+      </Parameters>
+      <Docs>
+        <param name="relatedObject">To be added.</param>
+        <param name="changeType">To be added.</param>
+        <param name="actionLists">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.DesignerActionListsChangedType ChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.DesignerActionListsChangedType ChangeType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.ChangeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeType As DesignerActionListsChangedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::DesignerActionListsChangedType ChangeType { System::Windows::Forms::Design::DesignerActionListsChangedType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : System.Windows.Forms.Design.DesignerActionListsChangedType" Usage="System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.ChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.DesignerActionListsChangedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedObject">
+      <MemberSignature Language="C#" Value="public object RelatedObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RelatedObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.RelatedObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedObject : obj" Usage="System.Windows.Forms.Design.DesignerActionListsChangedEventArgs.RelatedObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

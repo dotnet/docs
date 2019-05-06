@@ -3156,6 +3156,62 @@
       </Docs>
     </Member>
     <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static Memory&lt;char&gt; Trim (this Memory&lt;char&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;char&gt; Trim(valuetype System.Memory`1&lt;char&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.Memory{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim (memory As Memory(Of Char)) As Memory(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;char&gt; Trim(Memory&lt;char&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member Trim : Memory&lt;char&gt; -&gt; Memory&lt;char&gt;" Usage="System.MemoryExtensions.Trim memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;char&gt; Trim (this ReadOnlyMemory&lt;char&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;char&gt; Trim(valuetype System.ReadOnlyMemory`1&lt;char&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.ReadOnlyMemory{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim (memory As ReadOnlyMemory(Of Char)) As ReadOnlyMemory(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;char&gt; Trim(ReadOnlyMemory&lt;char&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlyMemory&lt;char&gt; -&gt; ReadOnlyMemory&lt;char&gt;" Usage="System.MemoryExtensions.Trim memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
       <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; Trim (this ReadOnlySpan&lt;char&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; Trim(valuetype System.ReadOnlySpan`1&lt;char&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.ReadOnlySpan{System.Char})" />
@@ -3178,6 +3234,34 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static Span&lt;char&gt; Trim (this Span&lt;char&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;char&gt; Trim(valuetype System.Span`1&lt;char&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.Span{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim (span As Span(Of Char)) As Span(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;char&gt; Trim(Span&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member Trim : Span&lt;char&gt; -&gt; Span&lt;char&gt;" Usage="System.MemoryExtensions.Trim span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3252,6 +3336,366 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; Trim&lt;T&gt; (this Memory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Memory`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.Memory{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As Memory(Of T), trimElements As ReadOnlySpan(Of T)) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; Trim(Memory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member Trim : Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; Trim&lt;T&gt; (this Memory&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Memory`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.Memory{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As Memory(Of T), trimElement As T) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; Trim(Memory&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member Trim : Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;T&gt; Trim&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.ReadOnlyMemory{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As ReadOnlyMemory(Of T), trimElements As ReadOnlySpan(Of T)) As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;T&gt; Trim(ReadOnlyMemory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;T&gt; Trim&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.ReadOnlyMemory{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As ReadOnlyMemory(Of T), trimElement As T) As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;T&gt; Trim(ReadOnlyMemory&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; Trim&lt;T&gt; (this ReadOnlySpan&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As ReadOnlySpan(Of T), trimElements As ReadOnlySpan(Of T)) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;T&gt; Trim(ReadOnlySpan&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; Trim&lt;T&gt; (this ReadOnlySpan&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.ReadOnlySpan{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As ReadOnlySpan(Of T), trimElement As T) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;T&gt; Trim(ReadOnlySpan&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; Trim&lt;T&gt; (this Span&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.Span{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As Span(Of T), trimElements As ReadOnlySpan(Of T)) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; Trim(Span&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member Trim : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; Trim&lt;T&gt; (this Span&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; Trim&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim``1(System.Span{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim(Of T As IEquatable(Of T)) (memory As Span(Of T), trimElement As T) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; Trim(Span&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member Trim : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.Trim (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd">
+      <MemberSignature Language="C#" Value="public static Memory&lt;char&gt; TrimEnd (this Memory&lt;char&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;char&gt; TrimEnd(valuetype System.Memory`1&lt;char&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd(System.Memory{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd (memory As Memory(Of Char)) As Memory(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;char&gt; TrimEnd(Memory&lt;char&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : Memory&lt;char&gt; -&gt; Memory&lt;char&gt;" Usage="System.MemoryExtensions.TrimEnd memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;char&gt; TrimEnd (this ReadOnlyMemory&lt;char&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;char&gt; TrimEnd(valuetype System.ReadOnlyMemory`1&lt;char&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd(System.ReadOnlyMemory{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd (memory As ReadOnlyMemory(Of Char)) As ReadOnlyMemory(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;char&gt; TrimEnd(ReadOnlyMemory&lt;char&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlyMemory&lt;char&gt; -&gt; ReadOnlyMemory&lt;char&gt;" Usage="System.MemoryExtensions.TrimEnd memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TrimEnd">
       <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; TrimEnd (this ReadOnlySpan&lt;char&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; TrimEnd(valuetype System.ReadOnlySpan`1&lt;char&gt; span) cil managed" />
@@ -3275,6 +3719,34 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd">
+      <MemberSignature Language="C#" Value="public static Span&lt;char&gt; TrimEnd (this Span&lt;char&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;char&gt; TrimEnd(valuetype System.Span`1&lt;char&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd(System.Span{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd (span As Span(Of Char)) As Span(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;char&gt; TrimEnd(Span&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : Span&lt;char&gt; -&gt; Span&lt;char&gt;" Usage="System.MemoryExtensions.TrimEnd span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3349,6 +3821,366 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; TrimEnd&lt;T&gt; (this Memory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Memory`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.Memory{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As Memory(Of T), trimElements As ReadOnlySpan(Of T)) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; TrimEnd(Memory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; TrimEnd&lt;T&gt; (this Memory&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Memory`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.Memory{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As Memory(Of T), trimElement As T) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; TrimEnd(Memory&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;T&gt; TrimEnd&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.ReadOnlyMemory{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As ReadOnlyMemory(Of T), trimElements As ReadOnlySpan(Of T)) As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;T&gt; TrimEnd(ReadOnlyMemory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;T&gt; TrimEnd&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.ReadOnlyMemory{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As ReadOnlyMemory(Of T), trimElement As T) As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;T&gt; TrimEnd(ReadOnlyMemory&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; TrimEnd&lt;T&gt; (this ReadOnlySpan&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As ReadOnlySpan(Of T), trimElements As ReadOnlySpan(Of T)) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;T&gt; TrimEnd(ReadOnlySpan&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; TrimEnd&lt;T&gt; (this ReadOnlySpan&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.ReadOnlySpan{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As ReadOnlySpan(Of T), trimElement As T) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;T&gt; TrimEnd(ReadOnlySpan&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; TrimEnd&lt;T&gt; (this Span&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.Span{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As Span(Of T), trimElements As ReadOnlySpan(Of T)) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; TrimEnd(Span&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; TrimEnd&lt;T&gt; (this Span&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; TrimEnd&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd``1(System.Span{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd(Of T As IEquatable(Of T)) (memory As Span(Of T), trimElement As T) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; TrimEnd(Span&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimEnd (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart">
+      <MemberSignature Language="C#" Value="public static Memory&lt;char&gt; TrimStart (this Memory&lt;char&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;char&gt; TrimStart(valuetype System.Memory`1&lt;char&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart(System.Memory{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart (memory As Memory(Of Char)) As Memory(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;char&gt; TrimStart(Memory&lt;char&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : Memory&lt;char&gt; -&gt; Memory&lt;char&gt;" Usage="System.MemoryExtensions.TrimStart memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;char&gt; TrimStart (this ReadOnlyMemory&lt;char&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;char&gt; TrimStart(valuetype System.ReadOnlyMemory`1&lt;char&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart(System.ReadOnlyMemory{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart (memory As ReadOnlyMemory(Of Char)) As ReadOnlyMemory(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;char&gt; TrimStart(ReadOnlyMemory&lt;char&gt; memory);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlyMemory&lt;char&gt; -&gt; ReadOnlyMemory&lt;char&gt;" Usage="System.MemoryExtensions.TrimStart memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TrimStart">
       <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; TrimStart (this ReadOnlySpan&lt;char&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; TrimStart(valuetype System.ReadOnlySpan`1&lt;char&gt; span) cil managed" />
@@ -3372,6 +4204,34 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart">
+      <MemberSignature Language="C#" Value="public static Span&lt;char&gt; TrimStart (this Span&lt;char&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;char&gt; TrimStart(valuetype System.Span`1&lt;char&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart(System.Span{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart (span As Span(Of Char)) As Span(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;char&gt; TrimStart(Span&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : Span&lt;char&gt; -&gt; Span&lt;char&gt;" Usage="System.MemoryExtensions.TrimStart span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;System.Char&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
@@ -3441,6 +4301,310 @@
       <Docs>
         <param name="span">To be added.</param>
         <param name="trimChars">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; TrimStart&lt;T&gt; (this Memory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Memory`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.Memory{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As Memory(Of T), trimElements As ReadOnlySpan(Of T)) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; TrimStart(Memory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Memory&lt;T&gt; TrimStart&lt;T&gt; (this Memory&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Memory`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Memory`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.Memory{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As Memory(Of T), trimElement As T) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; TrimStart(Memory&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; Memory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;T&gt; TrimStart&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.ReadOnlyMemory{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As ReadOnlyMemory(Of T), trimElements As ReadOnlySpan(Of T)) As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;T&gt; TrimStart(ReadOnlyMemory&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;T&gt; TrimStart&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.ReadOnlyMemory{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As ReadOnlyMemory(Of T), trimElement As T) As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;T&gt; TrimStart(ReadOnlyMemory&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; ReadOnlyMemory&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; TrimStart&lt;T&gt; (this ReadOnlySpan&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As ReadOnlySpan(Of T), trimElements As ReadOnlySpan(Of T)) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;T&gt; TrimStart(ReadOnlySpan&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;T&gt; TrimStart&lt;T&gt; (this ReadOnlySpan&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.ReadOnlySpan{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As ReadOnlySpan(Of T), trimElement As T) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;T&gt; TrimStart(ReadOnlySpan&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; TrimStart&lt;T&gt; (this Span&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; memory, valuetype System.ReadOnlySpan`1&lt;!!T&gt; trimElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.Span{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As Span(Of T), trimElements As ReadOnlySpan(Of T)) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; TrimStart(Span&lt;T&gt; memory, ReadOnlySpan&lt;T&gt; trimElements);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElements)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElements" Type="System.ReadOnlySpan&lt;T&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; TrimStart&lt;T&gt; (this Span&lt;T&gt; memory, T trimElement) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; TrimStart&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; memory, !!T trimElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart``1(System.Span{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart(Of T As IEquatable(Of T)) (memory As Span(Of T), trimElement As T) As Span(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; TrimStart(Span&lt;T&gt; memory, T trimElement);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.TrimStart (memory, trimElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Span&lt;T&gt;" RefType="this" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="trimElement" Type="T" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="memory">To be added.</param>
+        <param name="trimElement">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

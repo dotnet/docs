@@ -244,7 +244,7 @@
         <ReturnType>System.Range+OffsetAndLength</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" Index="0" FrameworkAlternate="netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="length">To be added.</param>

@@ -214,8 +214,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -248,8 +248,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -282,8 +282,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -350,8 +350,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -418,8 +418,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -452,8 +452,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -486,8 +486,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -520,8 +520,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -554,8 +554,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -622,8 +622,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -690,8 +690,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -724,8 +724,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -758,8 +758,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -792,8 +792,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -826,8 +826,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -894,8 +894,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -928,8 +928,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -962,8 +962,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1064,8 +1064,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1098,8 +1098,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1200,8 +1200,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1234,8 +1234,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1302,8 +1302,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1312,6 +1312,654 @@
             __m128 _mm_cmpord_ss (__m128 a,  __m128 b)
               CMPSS xmm, xmm/m32, imm8(7)
             </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarGreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarLessThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotGreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotLessThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrdered">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarOrdered (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarOrdered(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrdered(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrdered (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarOrdered(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrdered : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrdered (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedGreaterThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedLessThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedNotEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedNotEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedNotEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedNotEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedNotEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedNotEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedNotEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedNotEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnordered">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarUnordered (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarUnordered(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnordered(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnordered (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarUnordered(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnordered : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnordered (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedGreaterThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedLessThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedNotEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedNotEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedNotEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedNotEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedNotEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedNotEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedNotEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedNotEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1370,8 +2018,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>

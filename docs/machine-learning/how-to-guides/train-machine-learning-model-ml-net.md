@@ -1,19 +1,18 @@
 ---
-title: 'How-To: Train and evaluate a machine learning model' 
+title: Train and evaluate a model
 description: Learn how to train and evaluate machine learning models in ML.NET
-ms.date: 04/17/2019
+ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc, how-to
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---
 
-# How-To: Learn how to train and evaluate a machine learning model in ML.NET
+# Train and evaluate a model
 
 Learn how to build machine learning models, extract learned parameters and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
 
-## Split data for training and testing sets
+## Split data for training and testing
 
 The goal of a machine learning model is to identify patterns within training data. These patterns are used to make predictions using new data.
 

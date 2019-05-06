@@ -1,29 +1,25 @@
 ---
-title: Predict prices using a regression learner 
-description: Predict prices using a regression learner with ML.NET.
+title: 'Tutorial: Predict prices using a regression algorithm'
+description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
 author: jralexander
 ms.author: johalex
-ms.date: 04/24/2019
+ms.date: 05/06/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
 ---
-# Tutorial: Predict prices using a regression learner with ML.NET
+# Tutorial: Predict prices using a regression model with ML.NET
 
-This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting prices, specifically, New York City taxi fares.
+This tutorial illustrates how to build a [regression model](../resources/glossary.md#regression) using ML.NET to predict prices, specifically, New York City taxi fares.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Prepare and understand the data
-> * Create a learning pipeline
 > * Load and transform the data
 > * Choose a learning algorithm
 > * Train the model
 > * Evaluate the model
 > * Use the model for predictions
-
-> [!NOTE]
-> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 ## Prerequisites
 
@@ -80,7 +76,7 @@ The `TaxiTripFarePrediction` class represents predicted results. It has a single
 > [!NOTE]
 > Use the `float` type to represent floating-point values in the input and prediction data classes.
 
-## Define data and model paths
+### Define data and model paths
 
 Add the following additional `using` statements to the top of the *Program.cs* file:
 
@@ -217,12 +213,10 @@ Console.WriteLine($"*------------------------------------------------");
 
 ## Use the model for predictions
 
-## Predict the test data outcome with the model and a single comment
-
 Create the `TestSinglePrediction` method, just after the `Evaluate` method, using the following code:
 
 ```csharp
-private static void TestSinglePrediction(MLContext mlContext)
+private static void TestSinglePrediction(MLContext mlContext, ITransformer model)
 {
 
 }

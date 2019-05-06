@@ -1,14 +1,14 @@
 ---
-title: "How-To: Deploy ML.NET machine learning model to Azure Functions"
+title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 05/01/2019
+ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model to make predictions through the internet using Azure Functions
 ---
 
-# How-To: Deploy ML.NET machine learning model to Azure Functions
+# Deploy a model to Azure Functions
 
 Learn how to deploy a pre-trained ML.NET machine learning model for predictions over HTTP through an Azure Functions serverless environment.
 
@@ -43,7 +43,7 @@ Learn how to deploy a pre-trained ML.NET machine learning model for predictions 
 1. Copy your pre-built model to the *MLModels* folder.
 1. In Solution Explorer, right-click your pre-built model file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-## Create Function to Analyze Sentiment
+## Create Azure Function to analyze sentiment
 
 Create a class to predict sentiment. Add a new class to your project:
 
@@ -239,7 +239,7 @@ ILogger log)
 
 When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to generate a prediction and return the result to the user. 
 
-## Test Locally
+## Test locally
 
 Now that everything is set up, it's time to test the application:
 

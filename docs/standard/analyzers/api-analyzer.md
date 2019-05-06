@@ -3,7 +3,7 @@ title: .NET API analyzer
 description: Learn how the .NET API Analyzer can help detect deprecated APIs and platform compatibility issues.
 author: oliag
 ms.author: mairaw
-ms.date: 05/31/2018
+ms.date: 04/26/2019
 ms.technology: dotnet-standard
 ---
 # .NET API analyzer
@@ -17,7 +17,7 @@ API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility]
 
 ## Prerequisites
 
-* Visual Studio 2017 or Visual Studio for Mac (all versions).
+* Visual Studio 2017 and later versions, or Visual Studio for Mac (all versions).
 
 ## Discovering deprecated APIs
 
@@ -93,6 +93,7 @@ Currently, the analyzer handles the following cases:
 * Usage of a .NET Standard API that throws <xref:System.PlatformNotSupportedException> (PC001).
 * Usage of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
 * Usage of a native API that doesn’t exist in UWP (PC003).
+* Usage of Delegate.BeginInvoke and EndInvoke APIs (PC004).
 * Usage of an API that is marked as deprecated (DEXXXX).
 
 ## CI machine

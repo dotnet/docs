@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
 ---
 # TypeOf Operator (Visual Basic)
-Compares an object reference variable to a data type.  
+Checks whether the runtime type of an expression's result is type-compatible with the specified type.
   
 ## Syntax  
   

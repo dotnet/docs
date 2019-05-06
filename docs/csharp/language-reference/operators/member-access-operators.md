@@ -14,7 +14,7 @@ helpviewer_keywords:
   - ". operator [C#]"
   - "subscript operator [C#]"
   - "square brackets [] operator [C#]"
-  - "indexing operator [C#]"
+  - "indexer operator [C#]"
   - "[] operator [C#]"
   - "null-conditional operators [C#]"
   - "?. operator [C#]"
@@ -29,7 +29,7 @@ helpviewer_keywords:
 You might use the following operators to access a type member:
 
 - [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
-- [`[]` (element access)](#element-access-operator-): to access an array element or type indexer
+- [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or type indexer
 - [`?.` and `?[]` (null-conditional)](#null-conditional-operators--and-): to perform a member or element access operation only for non-null instances
 - [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate.
 
@@ -53,7 +53,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
 You can also use `.` to access an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 
-## Element access operator []
+## Indexer operator []
 
 Square brackets, `[]`, are typically used for array, indexer, or pointer element access.
 
@@ -143,7 +143,7 @@ You also use parentheses to specify the order in which to evaluate operations in
 
 ## Operator overloadability
 
-The `.` and `()` operators cannot be overloaded. Element access `[]` is also considered as a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
+The `.` and `()` operators cannot be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
 
 ## C# language specification
 

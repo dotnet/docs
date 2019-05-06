@@ -1,7 +1,7 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 05/03/2019
+ms.date: 05/06/2019
 ---
 # dotnet new
 
@@ -59,6 +59,8 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 `TEMPLATE`
 
 The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
+
+If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
 
 # [.NET Core 2.2](#tab/netcore22)
 
@@ -724,6 +726,10 @@ Each project template may have additional options available. The core templates 
 
 ## Examples
 
+Create a C# console application project:
+
+`dotnet new "Console Application"`
+
 Create an F# console application project in the current directory:
 
 `dotnet new console -lang F#`
@@ -732,17 +738,25 @@ Create a .NET Standard class library project in the specified directory (availab
 
 `dotnet new classlib -lang VB -o MyLibrary`
 
-Create a new ASP.NET Core C# MVC application project in the current directory with no authentication:
+Create a new ASP.NET Core C# MVC project in the current directory with no authentication:
 
 `dotnet new mvc -au None`
 
-Create a new xUnit application:
+Create a new xUnit project:
 
 `dotnet new xunit`
 
 List all templates available for MVC:
 
 `dotnet new mvc -l`
+
+List all templates matching the *we* substring. No exact match is found, so substring matching runs against both the short name and name columns.
+
+`dotnet new we`
+
+List all templates matching the *ng* substring. Only one match is found, so the project is created.
+
+`dotnet new ng`
 
 Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 1.1 and later versions only):
 

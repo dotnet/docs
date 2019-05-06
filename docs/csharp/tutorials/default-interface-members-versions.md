@@ -1,7 +1,7 @@
 ---
 title: Safely update interfaces using default interface members in C#
 description: This advanced tutorial explores how you can safely add new capabilities to existing interface definitions without breaking all classes and structs that implement that interface.
-ms.date: 05/02/2019
+ms.date: 05/06/2019
 ms.custom: mvc
 ---
 # Tutorial: Learn how to use default interface members in C# 8 to safely update interface definitions to add functionality to all implementations
@@ -38,6 +38,9 @@ First, add the new method to the implementation:
 ```csharp
 // code
 ```
+
+. Add that it's an explicit interface implementation.
+.. Reason: avoid collisions with existing code.
 
 That's a good start. But, the default implementation is too restrictive. Many consumers of this system may choose different thresholds for number of purchases, or a different percentage discount. You can provide a better upgrade experience for more customers by providing a way to set those parameters. Let's add a static method that sets those two parameters controlling the default implementation:
 

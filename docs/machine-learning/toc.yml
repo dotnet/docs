@@ -72,5 +72,29 @@
     href: how-to-choose-an-ml-net-algorithm.md
   - name: Data transforms
     href: resources/transforms.md
+  - name: Metrics
+    href: resources/metrics.md
   - name: Improve model accuracy
     href: resources/improve-machine-learning-model-ml-net.md
+- name: Automated ML preview
+  items:
+  - name: Overview
+    href: automl-overview.md
+  - name: ML.NET CLI
+    items:
+    - name: Install the CLI
+      href: how-to-guides/install-ml-net-cli.md
+    - name: Automated machine learning
+      href: automate-training-with-cli.md
+    - name: Auto-generate a binary classifier
+      href: tutorials/mlnet-cli.md  
+    - name: CLI reference
+      href: reference/ml-net-cli-reference.md
+    - name: CLI telemetry
+      href: resources/ml-net-cli-telemetry.md
+  - name: Automated ML API
+    items:
+    - name: Use the automated ML API
+      href: how-to-guides/how-to-use-the-automl-api.md
+    - name: API reference
+      href: https://docs.microsoft.com/en-us/dotnet/api/index?view=automl-dotnet

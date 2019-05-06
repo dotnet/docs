@@ -296,7 +296,7 @@
         },
         {
             "source_path": "docs/csharp/features.md",
-            "redirect_url": "/dotnet/csharp/concepts"
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts"
         },
         {
             "source_path": "docs/csharp/generics.md",
@@ -312,7 +312,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/getting-started/consuming-library-with-visual-studio",
+            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio",
             "redirect_document_id": true
         },
         {
@@ -577,7 +577,7 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies",
             "redirect_document_id":true
         },
         {
@@ -1051,7 +1051,7 @@
         },
         {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-eventsource-writeevent-method-calls.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtimef/4.5-4.5.1"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
         },
         {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-grid-control.md",
@@ -1781,12 +1781,12 @@
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studio",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-visual-studio",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-vscode.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-vscode",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-vscode",
             "redirect_document_id": true
         },
         {
@@ -1839,6 +1839,17 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/machine-learning/how-to-guides/consuming-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net",
+            "redirect_document_id": true
+        },
+        {
+      
+            "source_path": "docs/machine-learning/how-to-guides/determine-global-feature-importance-in-model.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net",
+            "redirect_document_id":true
+        },
+        {
             "source_path": "docs/machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md",
             "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
         },
@@ -1860,6 +1871,16 @@
             "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
         },
         {
+            "source_path": "docs/machine-learning/how-to-guides/single-predict-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/machine-learning-model-predictions-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-cross-validation-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/train-machine-learning-model-cross-validation-ml-net",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/machine-learning/how-to-guides/train-model-categorical-ml-net.md",
             "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net",
             "redirect_document_id": true
@@ -1875,18 +1896,20 @@
         },
         {
             "source_path": "docs/machine-learning/resources/basics.md",
-            "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },
         {
             "source_path": "docs/machine-learning/resources/what-is-mldotnet.md",
-            "redirect_url": "/dotnet/machine-learning/what-is-machine-learning",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },        
         {
             "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
             "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/what-is-machine-learning.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },
         {
             "source_path": "docs/scenarios/index.md",
@@ -2235,6 +2258,21 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/native-interop/customize-parameter-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/customize-parameter-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/native-interop/customize-struct-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/customize-struct-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/native-interop/type-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/type-marshaling",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
             "redirect_url": "/dotnet/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables",
             "redirect_document_id": true
@@ -2250,11 +2288,11 @@
         },
         {
             "source_path": "docs/standard/serialization/marshal-by-value.md",
-            "redirect_url": "/dotnet/standard/serialization-concepts"
+            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
         },
         {
             "source_path": "docs/standard/serialization/persistent-storage.md",
-            "redirect_url": "/dotnet/standard/serialization-concepts"
+            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
         },
         {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",

@@ -142,8 +142,7 @@ ms.date: "12/04/2018"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/xamarin-icon
-                                                    .svg" alt="" />
+                                                    <img src="/dotnet/images/hub/xamarin-icon.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

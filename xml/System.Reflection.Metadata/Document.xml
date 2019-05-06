@@ -47,7 +47,7 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the document content hash.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,7 +72,7 @@
         <ReturnType>System.Reflection.Metadata.GuidHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the hash algorithm used to calculate the <see cref="P:System.Reflection.Metadata.Document.Hash" /> (SHA1, SHA256, etc.).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +97,7 @@
         <ReturnType>System.Reflection.Metadata.GuidHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the source code language (C#, VB, F#, etc.).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,7 +122,7 @@
         <ReturnType>System.Reflection.Metadata.DocumentNameBlobHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the document name blob.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

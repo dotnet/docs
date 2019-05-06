@@ -102,8 +102,23 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle to resolve the implementation of the target type.</summary>
+        <value>
+          <list type="bullet">
+            <item>
+              <description>
+                <see cref="T:System.Reflection.Metadata.AssemblyFileHandle" /> representing another module in the assembly.</description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:System.Reflection.Metadata.AssemblyReferenceHandle" /> representing another assembly if <see cref="P:System.Reflection.Metadata.ExportedType.IsForwarder" /> is <see langword="true" />.</description>
+            </item>
+            <item>
+              <description>
+                <see cref="T:System.Reflection.Metadata.ExportedTypeHandle" /> representing the declaring exported type in which this was is nested.</description>
+            </item>
+          </list>
+        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +169,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the target type, or <see langword="default" /> if the type is nested or defined in a root namespace.</summary>
+        <value>A <see cref="T:System.Reflection.Metadata.StringHandle" /> struct instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +195,7 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the full name of the namespace that contains the target type, or <see langword="default" /> if the type is nested or defined in a root namespace.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +221,7 @@
         <ReturnType>System.Reflection.Metadata.NamespaceDefinitionHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the definition handle of the namespace where the target type is defined, or <see langword="default" /> if the type is nested or defined in a root namespace.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

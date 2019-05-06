@@ -49,10 +49,13 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">A pointer to the start of the memory block.</param>
+        <param name="length">Length in bytes of the memory block.</param>
+        <summary>Creates a reader of the specified memory block.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" /> and <paramref name="length" /> is greater than zero.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="length" /> is negative.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is not little-endian.</exception>
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -78,7 +81,7 @@
       </Parameters>
       <Docs>
         <param name="alignment">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Repositions the reader forward by the number of bytes required to satisfy the given alignment.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,7 +103,7 @@
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a pointer to the byte at the current position of the reader.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,9 +129,9 @@
         <Parameter Name="value" Type="System.Byte" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The byte value to find.</param>
+        <summary>Searches for a specified byte in the blob following the current position.</summary>
+        <returns>The index relative to the current position, or -1 if the byte is not found in the blob following the current position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +156,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the total length of the underlying memory block.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,9 +182,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the offset from the start of the blob to the current position.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The offset is set outside the bounds of the underlying reader.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBlobHandle">
@@ -205,7 +209,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads a Blob heap handle encoded as a compressed integer.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,10 +292,11 @@
         <Parameter Name="byteCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="byteCount">The number of bytes to read.</param>
+        <summary>Reads bytes starting at the current position.</summary>
+        <returns>The byte array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytes">
@@ -318,11 +323,12 @@
         <Parameter Name="bufferOffset" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="bufferOffset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="byteCount">The number of bytes to read.</param>
+        <param name="buffer">The destination buffer the bytes read will be written to.</param>
+        <param name="bufferOffset">The offset in the destination buffer where the bytes read will be written.</param>
+        <summary>Reads bytes starting at the current position and writes them to the specified buffer starting at the specified offset.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadChar">
@@ -374,9 +380,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads an unsigned compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns>The value of the compressed integer that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The data at the current position was not a valid compressed integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadCompressedSignedInteger">
@@ -401,9 +408,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a signed compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns>The value of the compressed integer that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The data at the current position was not a valid compressed integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadConstant">
@@ -430,9 +438,11 @@
       </Parameters>
       <Docs>
         <param name="typeCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a constant value (see ECMA-335 Partition II section 22.9) from the current position.</summary>
+        <returns>A boxed constant value. To avoid allocating the object use Read* methods directly.</returns>
+        <remarks>Constants of type <see cref="F:System.Reflection.Metadata.ConstantTypeCode.String" /> are encoded as UTF16 strings, use <see cref="M:System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)" /> to read them.</remarks>
+        <exception cref="T:System.BadImageFormatException">Error while reading from the blob.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="typeCode" /> is not a valid <see cref="T:System.Reflection.Metadata.ConstantTypeCode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadDateTime">
@@ -482,9 +492,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads a <see cref="T:System.Decimal" /> number.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The data at the current position was not a valid <see cref="T:System.Decimal" /> number.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadDouble">
@@ -670,8 +681,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a type code encoded in a serialized custom attribute value.</summary>
+        <returns><see cref="F:System.Reflection.Metadata.SerializationTypeCode.Invalid" /> if the encoding is invalid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,9 +708,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a string encoded as a compressed integer containing its length followed by its contents in UTF8. Null strings are encoded as a single 0xFF byte.</summary>
+        <returns>A string value, or <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The encoding is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadSignatureHeader">
@@ -751,8 +763,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a type code encoded in a signature.</summary>
+        <returns>The type code encoded in the serialized custom attribute value if the encoding is valid, or <see cref="F:System.Reflection.Metadata.SignatureTypeCode.Invalid" /> if the encoding is invalid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -805,8 +817,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a type handle encoded in a signature as TypeDefOrRefOrSpecEncoded (see ECMA-335 II.23.2.8).</summary>
+        <returns>The handle when the encoding is valid. Otherwise, a handle where the <see cref="P:System.Reflection.Metadata.EntityHandle.IsNil" /> property is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -915,10 +927,11 @@
         <Parameter Name="byteCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="byteCount">The number of bytes to read.</param>
+        <summary>Reads a UTF16 (little-endian) encoded string starting at the current position.</summary>
+        <returns>The string.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadUTF8">
@@ -945,10 +958,11 @@
         <Parameter Name="byteCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="byteCount">The number of bytes to read.</param>
+        <summary>Reads a UTF8 encoded string starting at the current position.</summary>
+        <returns>The string.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemainingBytes">
@@ -972,7 +986,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the number of bytes remaining from current position to the end of the underlying memory block.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -999,7 +1013,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Repositions the reader to the start of the underlying memory block.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1069,7 +1083,7 @@
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a pointer to the byte at the start of the underlying memory block.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1098,9 +1112,9 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value of the compressed integer that was read.</param>
+        <summary>Reads an unsigned compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns><see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1128,9 +1142,9 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value of the compressed integer that was read.</param>
+        <summary>Reads a signed compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns><see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

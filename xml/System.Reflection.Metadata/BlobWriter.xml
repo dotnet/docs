@@ -218,7 +218,7 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Compares the current content of this writer with another one.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,6 +375,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The range specified by <paramref name="start" /> and <paramref name="byteCount" /> falls outside of the bounds of the buffer content.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToImmutableArray">
@@ -430,6 +431,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Range specified by <paramref name="start" /> and <paramref name="byteCount" /> falls outside of the bounds of the buffer content.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBoolean">
@@ -511,6 +513,7 @@
         <param name="buffer">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -538,6 +541,7 @@
         <param name="buffer">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -565,6 +569,7 @@
         <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -594,6 +599,7 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -622,6 +628,8 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -652,6 +660,8 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -683,6 +693,8 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Range specified by <paramref name="start" /> and <paramref name="byteCount" /> falls outside of the bounds of the <paramref name="buffer" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -714,6 +726,8 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Range specified by <paramref name="start" /> and <paramref name="byteCount" /> falls outside of the bounds of the <paramref name="buffer" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCompressedInteger">
@@ -739,8 +753,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Implements compressed unsigned integer encoding as defined by ECMA-335-II chapter 23.2: Blobs and signatures.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> can't be represented as a compressed unsigned integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCompressedSignedInteger">
@@ -766,8 +781,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Implements compressed signed integer encoding as defined by ECMA-335-II chapter 23.2: Blobs and signatures.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> can't be represented as a compressed signed integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteConstant">
@@ -793,8 +809,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes a constant value (see ECMA-335 Partition II section 22.9) at the current position.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException"><paramref name="value" /> is not of a constant type.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteDateTime">
@@ -1063,9 +1080,9 @@
         <Parameter Name="isSmall" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="reference">To be added.</param>
-        <param name="isSmall">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="reference">Heap offset or table row number.</param>
+        <param name="isSmall"><see langword="true" /> to encode the reference as 16-bit integer, <see langword="false" /> to encode as 32-bit integer.</param>
+        <summary>Writes a reference to a heap (heap offset) or a table (row number).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1119,8 +1136,9 @@
       </Parameters>
       <Docs>
         <param name="str">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes a string in SerString format (see ECMA-335-II 23.3 Custom attributes).</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteSingle">
@@ -1308,8 +1326,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes a string in User String (#US) heap format (see ECMA-335-II 24.2.4 #US and #Blob heaps).</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Builder is not writable, it has been linked with another one.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteUTF16">
@@ -1335,8 +1354,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes a UTF16 (little-endian) encoded string at the current position.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteUTF16">
@@ -1362,8 +1382,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes a UTF16 (little-endian) encoded string at the current position.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteUTF8">
@@ -1391,8 +1412,9 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="allowUnpairedSurrogates">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Writes a UTF8 encoded string at the current position.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 3fa0ac7d-e266-4954-bfac-3fbe2f913153
 ---
 # Populating a DataSet from a DataAdapter
-The [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]<xref:System.Data.DataSet> is a memory-resident representation of data that provides a consistent relational programming model independent of the data source. The `DataSet` represents a complete set of data that includes tables, constraints, and relationships among the tables. Because the `DataSet` is independent of the data source, a `DataSet` can include data local to the application, and data from multiple data sources. Interaction with existing data sources is controlled through the `DataAdapter`.  
+The [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] <xref:System.Data.DataSet> is a memory-resident representation of data that provides a consistent relational programming model independent of the data source. The `DataSet` represents a complete set of data that includes tables, constraints, and relationships among the tables. Because the `DataSet` is independent of the data source, a `DataSet` can include data local to the application, and data from multiple data sources. Interaction with existing data sources is controlled through the `DataAdapter`.  
   
  The `SelectCommand` property of the `DataAdapter` is a `Command` object that retrieves data from the data source. The `InsertCommand`, `UpdateCommand`, and `DeleteCommand` properties of the `DataAdapter` are `Command` objects that manage updates to the data in the data source according to modifications made to the data in the `DataSet`. These properties are covered in more detail in [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  
   

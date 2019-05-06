@@ -51,10 +51,10 @@
       href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
     - name: Deploy a model to a web API
       href: how-to-guides/serve-model-web-api-ml-net.md
-    - name: Infer.NET
-      items:
-      - name: Probabilistic programming with Infer.NET
-        href: how-to-guides/matchup-app-infer-net.md
+  - name: Infer.NET
+    items:
+    - name: Probabilistic programming with Infer.NET
+      href: how-to-guides/matchup-app-infer-net.md
 - name: Reference
   items:
   - name: API Reference
@@ -97,4 +97,4 @@
     - name: Use the automated ML API
       href: how-to-guides/how-to-use-the-automl-api.md
     - name: API reference
-      href: https://docs.microsoft.com/en-us/dotnet/api/index?view=automl-dotnet
+      href: https://docs.microsoft.com/dotnet/api/index?view=automl-dotnet

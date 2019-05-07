@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "null-conditional operators [C#]"
   - "?. operator [C#]"
   - "?[] operator [C#]"
+  - "invocation operator [C#]"
   - "method call [C#]"
   - "method invocation [C#]"
   - "delegate invocation [C#]"
@@ -26,12 +27,12 @@ helpviewer_keywords:
 ---
 # Member access operators
 
-You might use the following operators to access a type member:
+You might use the following operators when you access a type member:
 
 - [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
-- [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or type indexer
-- [`?.` and `?[]` (null-conditional)](#null-conditional-operators--and-): to perform a member or element access operation only for non-null instances
-- [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate.
+- [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
+- [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-): to perform a member or element access operation only if an operand is non-null
+- [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate
 
 ## Member access operator .
 
@@ -65,7 +66,7 @@ The following example demonstrates how to access array elements:
 
 If an array index is outside the bounds of the corresponding dimension of an array, an <xref:System.IndexOutOfRangeException> is thrown.
 
-As the preceding example shows, you also use square brackets in declaration of an array type and instantiation of an array instance.
+As the preceding example shows, you also use square brackets when you declare an array type or instantiate an array instance.
 
 For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
 
@@ -105,7 +106,7 @@ The following example demonstrates the usage of the `?.` and `?[]` operators:
 
 [!code-csharp-interactive[null-conditional operators](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#NullConditional)]
 
-The preceding example also shows the usage of the [null-coalescing operator](null-coalescing-operator.md). You might use the null-coalescing operator to provide an alternative expression to evaluate when the result of the null-conditional operation is `null`.
+The preceding example also shows the usage of the [null-coalescing operator](null-coalescing-operator.md). You might use the null-coalescing operator to provide an alternative expression to evaluate in case the result of the null-conditional operation is `null`.
 
 ### Thread-safe delegate invocation
 

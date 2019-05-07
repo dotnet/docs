@@ -43,5 +43,5 @@ For an example of how to use the `::` operator, see the following section:
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# operators](index.md)
 - [Namespace Keywords](../keywords/namespace-keywords.md)
-- [. operator](member-access-operator.md)
+- [. operator](member-access-operators.md#member-access-operator-)
 - [extern alias](../keywords/extern-alias.md)

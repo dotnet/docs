@@ -10346,7 +10346,7 @@ GetType(Array).IsAssignableFrom(type)
       </Parameters>
       <Docs>
         <param name="c">The type to compare with the current type.</param>
-        <summary>Determines whether an instance of a specified type can be assigned to an instance of the current type.</summary>
+        <summary>Determines whether an instance of a specified type can be assigned to a variable of the current type.</summary>
         <returns>
           <see langword="true" /> if any of the following conditions is true:  
   

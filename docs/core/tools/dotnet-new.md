@@ -208,11 +208,11 @@ Location to place the generated output. The default is the current directory.
 
 `--type`
 
-Filters templates based on available types. Predefined values are "project", "item" or "other".
+Filters templates based on available types. Predefined values are "project", "item", or "other".
 
 `-u|--uninstall <PATH|NUGET_ID>`
 
-Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
+Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed.
 
 > [!NOTE]
 > To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
@@ -752,9 +752,9 @@ List all templates available for MVC:
 
 List all templates matching the *we* substring. No exact match is found, so substring matching runs against both the short name and name columns.
 
-`dotnet new we`
+`dotnet new we -l`
 
-List all templates matching the *ng* substring. Only one match is found, so the project is created.
+Attempt to invoke the template matching *ng*. If a single match can't be determined, list the templates that are partial matches.
 
 `dotnet new ng`
 

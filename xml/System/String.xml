@@ -3176,6 +3176,14 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
       </AssemblyInfo>
       <Docs>
         <summary>Concatenates one or more instances of <see cref="T:System.String" />, or the <see cref="T:System.String" /> representations of the values of one or more instances of <see cref="T:System.Object" />.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+> [!NOTE]
+>  You can also use your language's string concatenation operator, such as `+` in C#, or `&` and `+` in Visual Basic, to concatenate strings. Both compilers translate the concatenation operator into a call to one of the overloads of `String.Concat`. 
+
+         ]]></format>
+         </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Concat">
@@ -3608,14 +3616,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 ## Remarks  
  The method concatenates `str0` and `str1`; it does not add any delimiters.  
   
-> [!NOTE]
->  You can also use your language's string concatenation operator, such as `+` in C#, or `&` and `+` in Visual Basic)  
->   
->  , to concatenate strings.  
-  
  An <xref:System.String.Empty> string is used in place of any null argument.  
-  
-   
   
 ## Examples  
  The following example concatenates a person's first, middle, and last name.  
@@ -3783,15 +3784,6 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
 ## Remarks  
  The method concatenates `str0`, `str1`, and `str2`; it does not add any delimiters.  
-  
-> [!NOTE]
->  You can also use your language's string concatenation operator, such as `+` in C#, or `&` and `+` in Visual Basic)  
->   
->  , to concatenate strings.  
-  
- An <xref:System.String.Empty> string is used in place of any null argument.  
-  
-   
   
 ## Examples  
  The following example uses the <xref:System.String.Concat%2A> method to concatenate three strings and displays the result.  
@@ -3973,15 +3965,6 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
   
 ## Remarks  
  The method concatenates `str0`, `str1`, `str2`, and `str3`; it does not add any delimiters.  
-  
-> [!NOTE]
->  You can also use your language's string concatenation operator, such as `+` in C#, or `&` and `+` in Visual Basic)  
->   
->  , to concatenate strings.  
-  
- An <xref:System.String.Empty> string is used in place of any null object in the array.  
-  
-   
   
 ## Examples  
  The following example defines an array of four-letter words and stores their individual letters to a string array in order to scramble them. It then calls the <xref:System.String.Concat%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> method to reassemble the scrambled words.  

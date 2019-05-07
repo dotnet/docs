@@ -333,7 +333,8 @@
 
 |Switch|Values|Description|
 |--|--|--|
-|`System.Net.Http.useSocketsHttpHandler` |`true`|`false`|Determines whether high-level networking APIs such as <xref:System.Net.Http.HttpClient> use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (`true`) or <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> (`false`).|   
+|`System.Net.Http.SocketsHttpHandler.Http2Support`|`true` or `false`|Indicates whether support for the HTTP/2 protocol is enabled (`true`) or disabled (`false`). The default is disabled. The switch must be set before the first use of <xref:System.Net.Http.HttpClient>. Available starting with .NET Core 3.0 Preview 4.|
+|`System.Net.Http.useSocketsHttpHandler` |`true` or `false`|Determines whether high-level networking APIs such as <xref:System.Net.Http.HttpClient> use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (`true`) or <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> (`false`).|   
   
 ## Examples  
  The following line of code sets a switch named `Switch.AmazingLib.ThrowOnException` to `true`, which enables a legacy behavior. The library can then check whether a library consumer has set the value of the switch by calling the <xref:System.AppContext.TryGetSwitch%2A> method.  

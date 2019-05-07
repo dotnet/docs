@@ -31,7 +31,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 **✔️ CONSIDER** publishing symbol files (`*.pdb`).
 
-> For the best debugging experience your library should pubish symbol files as well as use Source Link. For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
+> For the best debugging experience your library should publish symbol files as well as use Source Link. For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
 
 >[!div class="step-by-step"]
 >[Previous](dependencies.md)

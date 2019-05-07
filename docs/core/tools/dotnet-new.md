@@ -726,7 +726,7 @@ Each project template may have additional options available. The core templates 
 
 ## Examples
 
-Create a C# console application project:
+Create a C# console application project by specifying the template name:
 
 `dotnet new "Console Application"`
 

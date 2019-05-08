@@ -47,7 +47,6 @@ If a [real numerical literal](~/_csharplang/spec/lexical-structure.md#real-liter
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Default values table](default-values-table.md)
 - [Value types](value-types.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)

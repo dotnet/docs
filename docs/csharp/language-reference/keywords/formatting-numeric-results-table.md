@@ -49,7 +49,6 @@ For more information, see [Standard Numeric Format Strings](../../../standard/ba
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Formatting types](../../../standard/base-types/formatting-types.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
 - [String interpolation](../tokens/interpolated.md)

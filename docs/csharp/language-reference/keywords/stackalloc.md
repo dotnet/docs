@@ -71,5 +71,4 @@ You should use <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> when pos
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Operator Keywords](operator-keywords.md)
 - [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md)

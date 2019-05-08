@@ -29,6 +29,5 @@ The C# typing system contains the following categories:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference Tables for Types](reference-tables-for-types.md)
 - [Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)
 - [Types](../../programming-guide/types/index.md)

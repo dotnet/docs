@@ -48,6 +48,5 @@ For more information, see [The foreach statement](~/_csharplang/spec/statements.
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Iteration Statements](iteration-statements.md)
 - [Using foreach with arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
 - [for statement](for.md)

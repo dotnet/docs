@@ -6356,7 +6356,6 @@ An <see cref="T:System.Xml.XmlReader" /> method was called before a previous asy
  -or-  
   
  The element content cannot be converted to a 32-bit signed integer.</exception>
-        <exception cref="T:System.ArgumentNullException">The method is called with <see langword="null" /> arguments.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsInt">

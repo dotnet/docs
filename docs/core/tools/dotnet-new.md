@@ -66,98 +66,97 @@ If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **S
 
 The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.2.100. The default language for the template is shown inside the brackets.
 
-|Template description                          | Template name     | Languages    |
-|----------------------------------------------|-------------------|--------------|
-| Console Application                          | `console`         | [C#], F#, VB |
-| Class library                                | `classlib`        | [C#], F#, VB |
-| Unit Test Project                            | `mstest`          | [C#], F#, VB |
-| NUnit 3 Test Project                         | `nunit`           | [C#], F#, VB |
-| NUnit 3 Test Item                            | `nunit-test`      | [C#], F#, VB |
-| xUnit Test Project                           | `xunit`           | [C#], F#, VB |
-| Razor Page                                   | `page`            | [C#]         |
-| MVC ViewImports                              | `viewimports`     | [C#]         |
-| MVC ViewStart                                | `viewstart`       | [C#]         |
-| ASP.NET Core Empty                           | `web`             | [C#], F#     |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`             | [C#], F#     | 
-| ASP.NET Core Web App                         | `webapp`, `razor` | [C#]         |
-| ASP.NET Core with Angular                    | `angular`         | [C#]         |
-| ASP.NET Core with React.js                   | `react`           | [C#]         |
-| ASP.NET Core with React.js and Redux         | `reactredux`      | [C#]         |
-| Razor Class Library                          | `razorclasslib`   | [C#]         |
-| ASP.NET Core Web API                         | `webapi`          | [C#], F#     |
-| global.json file                             | `globaljson`      |              |
-| NuGet Config                                 | `nugetconfig`     |              |
-| Web Config                                   | `webconfig`       |              |
-| Solution File                                | `sln`             |              |
+| Templates                                    | Short Name        | Language     | Tags                                  |
+|----------------------------------------------|-------------------|--------------|---------------------------------------|
+| Console Application                          | `console`         | [C#], F#, VB | Common/Console                        |
+| Class library                                | `classlib`        | [C#], F#, VB | Common/Library                        |
+| Unit Test Project                            | `mstest`          | [C#], F#, VB | Test/MSTest                           |
+| NUnit 3 Test Project                         | `nunit`           | [C#], F#, VB | Test/NUnit                            |
+| NUnit 3 Test Item                            | `nunit-test`      | [C#], F#, VB | Test/NUnit                            |
+| xUnit Test Project                           | `xunit`           | [C#], F#, VB | Test/xUnit                            |
+| Razor Page                                   | `page`            | [C#]         | Web/ASP.NET                           |
+| MVC ViewImports                              | `viewimports`     | [C#]         | Web/ASP.NET                           |
+| MVC ViewStart                                | `viewstart`       | [C#]         | Web/ASP.NET                           |
+| ASP.NET Core Empty                           | `web`             | [C#], F#     | Web/Empty                             |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`             | [C#], F#     | Web/MVC                               |
+| ASP.NET Core Web App                         | `webapp`, `razor` | [C#]         | Web/MVC/Razor Pages                   |
+| ASP.NET Core with Angular                    | `angular`         | [C#]         | Web/MVC/SPA                           |
+| ASP.NET Core with React.js                   | `react`           | [C#]         | Web/MVC/SPA                           |
+| ASP.NET Core with React.js and Redux         | `reactredux`      | [C#]         | Web/MVC/SPA                           |
+| Razor Class Library                          | `razorclasslib`   | [C#]         | Web/Razor/Library/Razor Class Library |
+| ASP.NET Core Web API                         | `webapi`          | [C#], F#     | Web/WebAPI                            |
+| global.json file                             | `globaljson`      |              | Config                                |
+| NuGet Config                                 | `nugetconfig`     |              | Config                                |
+| Web Config                                   | `webconfig`       |              | Config                                |
+| Solution File                                | `sln`             |              | Solution                              |
 
 # [.NET Core 2.1](#tab/netcore21)
 
 The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.1.300. The default language for the template is shown inside the brackets.
 
-|Template description                          | Template name    | Languages     |
-|----------------------------------------------|------------------|---------------|
-| Console application                          | `console`        | [C#], F#, VB  |
-| Class library                                | `classlib`       | [C#], F#, VB  |
-| Unit test project                            | `mstest`         | [C#], F#, VB  |
-| xUnit test project                           | `xunit`          | [C#], F#, VB  |
-| NUnit test project                           | `nunit`          | [C#], F#, VB  |
-| Razor page                                   | `page`           | [C#]          |
-| MVC ViewImports                              | `viewimports`    | [C#]          |
-| MVC ViewStart                                | `viewstart`      | [C#]          |
-| ASP.NET Core empty                           | `web`            | [C#], F#      |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`            | [C#], F#      |
-| ASP.NET Core Web App                         | `razor`, `webapp`| [C#]          |
-| ASP.NET Core with Angular                    | `angular`        | [C#]          |
-| ASP.NET Core with React.js                   | `react`          | [C#]          |
-| ASP.NET Core with React.js and Redux         | `reactredux`     | [C#]          |
-| ASP.NET Core Web API                         | `webapi`         | [C#], F#      |
-| Razor class library                          | `razorclasslib`  | [C#]          |
-| global.json file                             | `globaljson`     |               |
-| NuGet config                                 | `nugetconfig`    |               |
-| Web config                                   | `webconfig`      |               |
-| Solution file                                | `sln`            |               |
+| Templates                                    | Short Name      | Language     | Tags                                  |
+|----------------------------------------------|-----------------|--------------|---------------------------------------|
+| Console Application                          | `console`       | [C#], F#, VB | Common/Console                        |
+| Class library                                | `classlib`      | [C#], F#, VB | Common/Library                        |
+| Unit Test Project                            | `mstest`        | [C#], F#, VB | Test/MSTest                           |
+| xUnit Test Project                           | `xunit`         | [C#], F#, VB | Test/xUnit                            |
+| Razor Page                                   | `page`          | [C#]         | Web/ASP.NET                           |
+| MVC ViewImports                              | `viewimports`   | [C#]         | Web/ASP.NET                           |
+| MVC ViewStart                                | `viewstart`     | [C#]         | Web/ASP.NET                           |
+| ASP.NET Core Empty                           | `web`           | [C#], F#     | Web/Empty                             |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`           | [C#], F#     | Web/MVC                               |
+| ASP.NET Core Web App                         | `razor`         | [C#]         | Web/MVC/Razor Pages                   |
+| ASP.NET Core with Angular                    | `angular`       | [C#]         | Web/MVC/SPA                           |
+| ASP.NET Core with React.js                   | `react`         | [C#]         | Web/MVC/SPA                           |
+| ASP.NET Core with React.js and Redux         | `reactredux`    | [C#]         | Web/MVC/SPA                           | 
+| Razor Class Library                          | `razorclasslib` | [C#]         | Web/Razor/Library/Razor Class Library |
+| ASP.NET Core Web API                         | `webapi`        | [C#], F#     | Web/WebAPI                            |
+| global.json file                             | `globaljson`    |              | Config                                |
+| NuGet Config                                 | `nugetconfig`   |              | Config                                |
+| Web Config                                   | `webconfig`     |              | Config                                |
+| Solution File                                | `sln`           |              | Solution                              |
 
 # [.NET Core 2.0](#tab/netcore20)
 
-The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.0. The default language for the template is shown inside the brackets.
+The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.0.0. The default language for the template is shown inside the brackets.
 
-|Template description                          | Template name | Languages     |
-|----------------------------------------------|---------------|---------------|
-| Console application                          | `console`     | [C#], F#, VB  |
-| Class library                                | `classlib`    | [C#], F#, VB  |
-| Unit test project                            | `mstest`      | [C#], F#, VB  |
-| xUnit test project                           | `xunit`       | [C#], F#, VB  |
-| ASP.NET Core empty                           | `web`         | [C#], F#      |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`         | [C#], F#      |
-| ASP.NET Core Web App                         | `razor`       | [C#]          |
-| ASP.NET Core with Angular                    | `angular`     | [C#]          |
-| ASP.NET Core with React.js                   | `react`       | [C#]          |
-| ASP.NET Core with React.js and Redux         | `reactredux`  | [C#]          |
-| ASP.NET Core Web API                         | `webapi`      | [C#], F#      |
-| global.json file                             | `globaljson`  |               |
-| NuGet config                                 | `nugetconfig` |               |
-| Web config                                   | `webconfig`   |               |
-| Solution file                                | `sln`         |               |
-| Razor page                                   | `page`        |               |
-| MVC ViewImports                              | `viewimports` |               |
-| MVC ViewStart                                | `viewstart`   |               |
+| Templates                                    | Short Name    | Language     | Tags                |
+|----------------------------------------------|---------------|--------------|---------------------|
+| Console Application                          | `console`     | [C#], F#, VB | Common/Console      |
+| Class library                                | `classlib`    | [C#], F#, VB | Common/Library      |
+| Unit Test Project                            | `mstest`      | [C#], F#, VB | Test/MSTest         |
+| xUnit Test Project                           | `xunit`       | [C#], F#, VB | Test/xUnit          |
+| ASP.NET Core Empty                           | `web`         | [C#], F#     | Web/Empty           |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`         | [C#], F#     | Web/MVC             |
+| ASP.NET Core Web App                         | `razor`       | [C#]         | Web/MVC/Razor Pages |
+| ASP.NET Core with Angular                    | `angular`     | [C#]         | Web/MVC/SPA         |
+| ASP.NET Core with React.js                   | `react`       | [C#]         | Web/MVC/SPA         |
+| ASP.NET Core with React.js and Redux         | `reactredux`  | [C#]         | Web/MVC/SPA         |
+| ASP.NET Core Web API                         | `webapi`      | [C#], F#     | Web/WebAPI          |
+| global.json file                             | `globaljson`  |              | Config              |
+| Nuget Config                                 | `nugetconfig` |              | Config              |
+| Web Config                                   | `webconfig`   |              | Config              |
+| Solution File                                | `sln`         |              | Solution            |
+| Razor Page                                   | `page`        |              | Web/ASP.NET         |
+| MVC ViewImports                              | `viewimports` |              | Web/ASP.NET         |
+| MVC ViewStart                                | `viewstart`   |              | Web/ASP.NET         |
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-The command contains a default list of templates. Use `dotnet new -all` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 1.x. The default language for the template is shown inside the brackets.
+The command contains a default list of templates. Use `dotnet new -all` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 1.0.1. The default language for the template is shown inside the brackets.
 
-|Template description  | Template name | Languages |
-|----------------------|---------------|-----------|
-| Console application  | `console`     | [C#], F#  |
-| Class library        | `classlib`    | [C#], F#  |
-| Unit test project    | `mstest`      | [C#], F#  |
-| xUnit test project   | `xunit`       | [C#], F#  |
-| ASP.NET Core empty   | `web`         | [C#]      |
-| ASP.NET Core Web App | `mvc`         | [C#], F#  |
-| ASP.NET Core Web API | `webapi`      | [C#]      |
-| NuGet config         | `nugetconfig` |           |
-| Web config           | `webconfig`   |           |
-| Solution file        | `sln`         |           |
+| Templates            | Short Name    | Language | Tags           |
+|----------------------|---------------|----------|----------------|
+| Console Application  | `console`     | [C#], F# | Common/Console |
+| Class library        | `classlib`    | [C#], F# | Common/Library |
+| Unit Test Project    | `mstest`      | [C#], F# | Test/MSTest    |
+| xUnit Test Project   | `xunit`       | [C#], F# | Test/xUnit     |
+| ASP.NET Core Empty   | `web`         | [C#]     | Web/Empty      |
+| ASP.NET Core Web App | `mvc`         | [C#], F# | Web/MVC        |
+| ASP.NET Core Web API | `webapi`      | [C#]     | Web/WebAPI     |
+| Nuget Config         | `nugetconfig` |          | Config         |
+| Web Config           | `webconfig`   |          | Config         |
+| Solution File        | `sln`         |          | Solution       |
 
 ---
 

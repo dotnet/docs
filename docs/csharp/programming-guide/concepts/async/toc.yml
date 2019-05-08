@@ -1,7 +1,6 @@
 - name: Asynchronous Programming with async and await
+  href: index.md
   items:
-  - name: Understand the asynchronous programming model
-    href: index.md
   - name: Task asynchronous programming model
     href: task-asynchronous-programming-model.md
   - name: "Walkthrough: Accessing the Web by Using async and await"
@@ -15,8 +14,9 @@
   - name: Control Flow in Async Programs
     href: control-flow-in-async-programs.md
   - name: Fine-Tuning Your Async Application
-    href: fine-tuning-your-async-application.md
     items:
+    - name: Overview
+      href: fine-tuning-your-async-application.md
     - name: Cancel an Async Task or a List of Tasks
       href: cancel-an-async-task-or-a-list-of-tasks.md
     - name: Cancel Async Tasks after a Period of Time

@@ -200,7 +200,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">An instance with nonprimitive (non-blittable) members cannot be pinned.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="T:System.Runtime.InteropServices.GCHandleType" />
       </Docs>

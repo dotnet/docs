@@ -16,14 +16,11 @@
   - name: Comparison operators
     href: comparison-operators.md
     displayName: ">, <, >=, <=, greater, less"
-  - name: "[] Operator"
-    href: index-operator.md
+  - name: Member access operators
+    href: member-access-operators.md
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, invocation"
   - name: () Operator
     href: invocation-operator.md
-  - name: . Operator
-    href: member-access-operator.md
-  - name: "?. and ?[] Operators"
-    href: null-conditional-operators.md
   - name: ":: Operator"
     href: namespace-alias-qualifer.md
   - name: + Operator

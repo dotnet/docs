@@ -36,7 +36,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the the license terms for the package you choose. Do the same for the **Microsoft.ML.FastTree** NuGet package.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the the license terms for the package you choose. Do the same for the **Microsoft.ML.FastTree** NuGet package.
 
 ## Prepare your data
 

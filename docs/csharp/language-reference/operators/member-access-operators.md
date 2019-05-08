@@ -93,7 +93,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators ?. and ?[]
 
-Introduced in C# 6, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`.
+Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`.
 
 The null-conditional operators are short-circuiting. That is, if one operation in a chain of conditional member or element access operations returns `null`, the rest of the chain doesn't execute. In the following example, `E` doesn't execute if `A`, `B`, or `C` evaluates to `null`:
 
@@ -110,7 +110,7 @@ The preceding example also shows the usage of the [null-coalescing operator](nul
 
 ### Thread-safe delegate invocation
 
-Use the `?.` operator to check if a delegate is non-null and invoke it in a thread-safe way (for example, when you [raise an event](../../../standard/events/how-to-raise-and-consume-events.md)):
+Use the `?.` operator to check if a delegate is non-null and invoke it in a thread-safe way (for example, when you [raise an event](../../../standard/events/how-to-raise-and-consume-events.md)), as the following code shows:
 
 ```csharp
 PropertyChanged?.Invoke(…)

@@ -31,15 +31,15 @@ The following sections list the C# operators starting with the highest precedenc
 
 These are the highest precedence operators.
 
-[x.y](member-access-operator.md) – member access.
+[x.y](member-access-operators.md#member-access-operator-) – member access.
 
-[x?.y](null-conditional-operators.md) – null conditional member access. Returns `null` if the left-hand operand evaluates to `null`.
+[x?.y](member-access-operators.md#null-conditional-operators--and-) – null conditional member access. Returns `null` if the left-hand operand evaluates to `null`.
 
-[x?[y]](null-conditional-operators.md) - null conditional index access. Returns `null` if the left-hand operand evaluates to `null`.
+[x?[y]](member-access-operators.md#null-conditional-operators--and-) - null conditional array element or type indexer access. Returns `null` if the left-hand operand evaluates to `null`.
 
-[f(x)](invocation-operator.md) – function invocation.
+[f(x)](member-access-operators.md#invocation-operator-) – method call or delegate invocation.
 
-[a&#91;x&#93;](index-operator.md) – aggregate object indexing.
+[a&#91;x&#93;](member-access-operators.md#indexer-operator-) – array element or type indexer access.
 
 [x++](arithmetic-operators.md#increment-operator-) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
 

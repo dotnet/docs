@@ -12,9 +12,9 @@ author: natke
 # Automated machine learning with ML.NET
 
 Automated machine learning is a feature of ML.NET that performs automatic model selection and training. You specify the machine learning task and supply a dataset, and automated ML chooses the model with the best metrics. It outputs:
-- a binary model that can be loaded into an application
-- application code to run the model
-- the source code that was used to for feature selection and model training (so that you can understood the model)
+- a model file that can be loaded into your prediction application
+- application code to make predictions
+- the source code used for feature selection and model training (to understand the model)
 
 > [!NOTE]
 > This feature is currently in Preview, and material may be subject to change. 

@@ -246,7 +246,7 @@ For more information, see the [ranges and indices tutorial](../../csharp/tutoria
 
 ### Async streams
 
-The <xref:System.Collections.Generic.IAsyncEnumerable%061> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%061>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
+The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
 
 The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
 

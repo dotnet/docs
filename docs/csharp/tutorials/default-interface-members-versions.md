@@ -4,7 +4,7 @@ description: This advanced tutorial explores how you can safely add new capabili
 ms.date: 05/06/2019
 ms.custom: mvc
 ---
-# Tutorial: Learn how to use default interface members in C# 8 to safely update interface definitions to add functionality to all implementations
+# Tutorial: Update interfaces with default interface members in C# 8
 
 Beginning in C# 8 on .NET Core 3.0 you can define an implementation when you declare a member of an interface. The most common scenario is to safely add members to an interface already released and used by innumerable clients.
 
@@ -39,7 +39,7 @@ Default interface implementations enable developers to upgrade an interface whil
 
 ## Upgrade with default interface members
 
-The team agreed on the most likely default implementation: a loyalty discount for customers 
+The team agreed on the most likely default implementation: a loyalty discount for customers.
 
 The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. This makes it a perfect scenario for default interface members. You can add a method to the ICustomer interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
 
@@ -61,7 +61,7 @@ That's a good start. But, the default implementation is too restrictive. Many co
 
 There's many new capabilities shown in that small code fragment. Interfaces can now include static members, including fields and methods. Different access modifiers are also enabled. In the previous example, the additional fields are private, and the new method is public. Any of the modifiers are allowed on interface members.
 
-Applications that use the general formula for computing the loyalty discount, but different parameters don't need to provide a custom implementation; they can set the arguments through a static method. For example, the following code sets a "customer appreciation" that rewards any customer with more than one month's membership:
+Applications that use the general formula for computing the loyalty discount, but different parameters, don't need to provide a custom implementation; they can set the arguments through a static method. For example, the following code sets a "customer appreciation" that rewards any customer with more than one month's membership:
 
 [!code-csharp[SetLoyaltyThresholds](~/samples/csharp/tutorials/default-interface-members-versions/finished/customer-relationship/Program.cs?name=SnippetSetLoyaltyThresholds)]
 

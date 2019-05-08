@@ -46,7 +46,3 @@ Results are identical
 <ContactTitle>Marketing Manager</ContactTitle>  
 <Phone>(503) 555-7555</Phone>  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

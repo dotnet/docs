@@ -230,4 +230,4 @@ Console.WriteLine("Child2 was {0}",
 
 ## See also
 
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)

@@ -44,7 +44,3 @@ Console.WriteLine(e);
    </Book>  
 </Catalog>  
 ```  
-  
-## See also
-
-- [Parsing XML (C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)

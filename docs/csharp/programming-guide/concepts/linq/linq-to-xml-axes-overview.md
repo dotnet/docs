@@ -48,6 +48,3 @@ After you have created an XML tree or loaded an XML document into an XML tree, y
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>|Returns the <xref:System.Xml.Linq.XAttribute> that has the specified <xref:System.Xml.Linq.XName>.|  
   
-## See also
-
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)

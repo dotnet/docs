@@ -47,4 +47,4 @@ At compile time the `where` keyword is converted into a call to the <xref:System
 - [select clause](select-clause.md)
 - [Filtering Data](../../programming-guide/concepts/linq/filtering-data.md)
 - [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
-- [Getting Started with LINQ in C#](../../programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Getting Started with LINQ in C#](../../programming-guide/concepts/linq/index.md)

@@ -19,4 +19,4 @@ Serializing an XML tree means generating XML from the XML tree. You can serializ
   
 ## See also
 
-- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)

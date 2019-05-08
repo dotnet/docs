@@ -61,4 +61,4 @@ To write queries effectively, you should understand how types of the variables i
   
 ## See also
 
-- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/index.md)

@@ -12,7 +12,7 @@ This example builds on the previous example, [Retrieving the Paragraphs and Thei
   
  Of course, it would be possible to write a single query that contains the functionality to retrieve the paragraphs, the style of each paragraph, and the text of each paragraph. However, it often is useful to break up a more complicated query into multiple queries because the resulting code is more modular and easier to maintain. Furthermore, if you need to reuse a portion of the query, it is easier to refactor if the queries are written in this manner.  
   
- These queries, which are chained together, use the processing model that is examined in detail in the topic [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md).  
+ These queries, which are chained together, use the processing model that is examined in detail in the topic [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).  
   
 ## Example  
  This example processes a WordprocessingML document, determining the element node, the style name, and the text of each paragraph. This example builds on the previous examples in this tutorial. The new query is called out in comments in the code below.  
@@ -138,5 +138,5 @@ StyleName:Code >Hello World<
   
 ## See also
 
-- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](../../../../csharp/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md)
 - [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

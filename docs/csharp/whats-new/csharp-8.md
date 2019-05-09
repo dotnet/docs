@@ -1,12 +1,14 @@
 ---
 title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 2.
+description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
 ms.date: 02/12/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already with preview 2. The new features added in preview 2 are:
+There are many enhancements to the C# language that you can try out already. 
 
+- [Readonly members](#readonly-members)
+- [Default interface members](#default-interface-members)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
   * [Switch expressions](#switch-expressions)
   * [Property patterns](#property-patterns)
@@ -15,17 +17,67 @@ There are many enhancements to the C# language that you can try out already with
 - [Using declarations](#using-declarations)
 - [Static local functions](#static-local-functions)
 - [Disposable ref structs](#disposable-ref-structs)
-
-The following language features first appeared in C# 8.0 preview 1:
-
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
 
 > [!NOTE]
-> This article was last updated for C# 8.0 preview 2.
+> This article was last updated for C# 8.0 preview 5.
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
+
+## Readonly members
+
+You can apply the `readonly` modifier to any member of a struct. It indicates that the member does not modify state. It's more granular than applying the `readonly` modifier to a `struct` declaration.  Consider the following mutable struct:
+
+```csharp
+public struct Point
+{
+    public double X { get; set; }
+    public double Y { get; set; }
+    public double Distance => Math.Sqrt(X * X + Y * Y);
+
+    public override string ToString() =>
+        $"({X}, {Y}) is {Distance} from the origin";
+}
+```
+
+Like most structs, the `ToString()` method does not modify state. You could indicate that by adding the `readonly` modifier to the declaration of `ToString()`:
+
+```csharp
+public readonly override string ToString() =>
+    $"({X}, {Y}) is {Distance} from the origin";
+```
+
+The preceding change generates a compiler warning, because `ToString` accesses the `Distance` property, which is not marked `readonly`:
+
+```console
+warning CS8656: Call to non-readonly member 'Point.Distance.get' from a 'readonly' member results in an implicit copy of 'this'
+```
+
+The compiler warns you when it needs to create a defensive copy.  The `Distance` property does not change state, so you can fix this warning by adding the `readonly` modifier to the declaration:
+
+```csharp
+public readonly double Distance => Math.Sqrt(X * X + Y * Y);
+```
+
+Notice that the `readonly` modifier is necessary on a read only property. The compiler doesn't assume `get` accessors do not modify state; you must declare `readonly` explicitly. The compiler does enforce the rule that `readonly` members do not modify state. The following method will not compile unless you remove the `readonly` modifier:
+
+```csharp
+public readonly void Translate(int xOffset, int yOffset)
+{
+    X += xOffset;
+    Y += yOffset;
+}
+```
+
+This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
+
+## Default interface members
+
+You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface members also enable scenarios similar to a "traits" language feature.
+
+Default interface members affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-members-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 
@@ -315,9 +367,15 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
-You can specify an index **from the end** using the `^` character before the index. Indexing from the end starts from the rule that `0..^0` specifies the entire range. To enumerate an entire array, you start *at the first element*, and continue until you are *past the last element*. Think of the behavior of the `MoveNext` method on an enumerator: it returns false when the enumeration passes the last element. The index `^0` means "the end", `array[array.Length]`, or the index that follows the last element. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". 
+This support language support relies on two new types, and two new operators.
+- <xref:System.Index?displayProperty=nameWithType> represents in index into a sequence.
+- The `^` operator, which specifies that an index is relative to the end of the sequence.
+- <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
+- The Range operator (`..`), which specifies the start and end of a range as is operands.
 
-You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
+Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
+
+A range specifies the *start* and *end* of a range. Ranges are exclusive, meaning the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
@@ -336,8 +394,6 @@ var words = new string[]
     "dog"       // 8                   ^1
 };              // 9 (or words.Length) ^0
 ```
-
-The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
 
 You can retrieve the last word with the `^1` index:
 

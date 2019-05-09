@@ -83,7 +83,7 @@ Console.WriteLine(xmlTree);
 ### Querying XML Trees  
  You can write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries that extract data from an XML tree.  
   
- For more information, see [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md).  
+ For more information, see [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-attribute.md).  
   
 ### Modifying XML Trees  
  You can modify an element in a variety of ways, including changing its content or attributes. You can also remove an element from its parent.  

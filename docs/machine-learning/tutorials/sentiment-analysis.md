@@ -118,7 +118,7 @@ You prepare the app, and then load data:
     The `LoadData()` method executes the following tasks:
 
     * Loads the data.
-    *  Splits the loaded dataset into train and test datasets.
+    * Splits the loaded dataset into train and test datasets.
     * Returns the split train and test datasets.
 
 4. Add the following code as the first line of the `LoadData()` method:

@@ -34,7 +34,7 @@ int* p = &number; //address-of operator &
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/how-to-obtain-the-value-of-a-pointer-variable.md)
 - [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Types](../../../csharp/language-reference/keywords/types.md)
 - [unsafe](../../../csharp/language-reference/keywords/unsafe.md)

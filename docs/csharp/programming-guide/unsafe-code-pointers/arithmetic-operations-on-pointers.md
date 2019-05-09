@@ -34,9 +34,8 @@ This topic discusses using the arithmetic operators `+` and `-` to manipulate po
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Unsafe Code and Pointers](../../../csharp/programming-guide/unsafe-code-pointers/index.md)
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
 - [C# Operators](../../../csharp/language-reference/operators/index.md)
-- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/how-to-increment-and-decrement-pointers.md.md)
 - [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Types](../../../csharp/language-reference/keywords/types.md)
 - [unsafe](../../../csharp/language-reference/keywords/unsafe.md)

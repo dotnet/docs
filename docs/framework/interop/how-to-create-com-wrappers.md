@@ -32,7 +32,7 @@ In Visual Studio 2005, you can add the COM wrapper as a reference to your projec
 
      In **Solution Explorer**, note that the COM component is added to the References folder in your project.
 
-You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] or a `Using` statement for [!INCLUDE[csprcslong](../../../includes/csprcslong-md.md)].
+You can now write code to access the COM object. You can begin by declaring the object, such as with an `Imports` statement for Visual Basic or a `Using` statement for C#.
 
 > [!NOTE]
 > If you want to program Microsoft Office components, first install the [Microsoft Office Primary Interop Assemblies](https://go.microsoft.com/fwlink/?LinkId=50479) (PIAs) from the Microsoft Download Center. In step 4, select the latest version of the object library available for the Office product you want, such as the **Microsoft Word 11.0 Object Library**.  

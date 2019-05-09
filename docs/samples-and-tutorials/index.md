@@ -56,7 +56,7 @@ This sample demonstrates many of the problems that can be solved by using Expres
 
 This series of samples demonstrate many of the features of Language Integrated Query (LINQ). The [completed sample](https://github.com/dotnet/samples/tree/master/core/linq/csharp) is available in the dotnet/samples repository on GitHub.
 
-** Managed COM server Sample **
+**Managed COM server Sample**
 
 The [COM server](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) sample demonstrates the creation of a managed COM server and how it can be globally registered.
 

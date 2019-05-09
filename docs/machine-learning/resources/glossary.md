@@ -50,7 +50,7 @@ Data is central to any machine learning application. In ML.NET data is represent
 
 ## Estimator
 
-A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator`1> interface.
+A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator%601> interface.
 
 An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transformer](#transformer).
 

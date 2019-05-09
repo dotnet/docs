@@ -141,7 +141,7 @@ var trainedModel = sdcaEstimator.Fit(transformedTrainingData);
 
 ## Extract model parameters
 
-After the model has been trained, extract the learned [`ModelParameters`](xref:Microsoft.ML.Trainers.ModelParametersBase`1) for inspection or re-training. The [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters) provide the bias and learned coefficients or weights of the trained model. 
+After the model has been trained, extract the learned [`ModelParameters`](xref:Microsoft.ML.Trainers.ModelParametersBase%601) for inspection or re-training. The [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters) provide the bias and learned coefficients or weights of the trained model. 
 
 ```csharp
 var trainedModelParameters = trainedModel.Model as LinearRegressionModelParameters;

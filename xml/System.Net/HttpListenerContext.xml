@@ -43,6 +43,7 @@
  The following code example displays the user information for a client request.  
   
  [!code-csharp[Net_Listener_Basic#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#8)]  
+ [!code-vb[Net_Listener_Basic#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#8)]  
   
  ]]></format>
     </remarks>
@@ -373,6 +374,7 @@
  The following code example demonstrates calling this method. The `listener` variable holds an <xref:System.Net.HttpListener> object.  
   
  [!code-csharp[Net_Listener_Basic#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#3)]  
+ [!code-vb[Net_Listener_Basic#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#3)]  
   
  ]]></format>
         </remarks>
@@ -420,6 +422,7 @@
  The following code example demonstrates getting the response to a client's request and adding the response body.  
   
  [!code-csharp[Net_Listener_Basic#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#3)]  
+ [!code-vb[Net_Listener_Basic#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#3)]  
   
  ]]></format>
         </remarks>
@@ -472,6 +475,7 @@
  The following code example demonstrates accessing identity and authentication information about the client, and returning it to the client in the response.  
   
  [!code-csharp[Net_Listener_Basic#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#8)]  
+ [!code-vb[Net_Listener_Basic#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#8)]  
   
  ]]></format>
         </remarks>

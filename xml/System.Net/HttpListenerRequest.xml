@@ -43,6 +43,7 @@
  The following code example demonstrates how to receive and respond to a <xref:System.Net.HttpListenerRequest>.  
   
  [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ [!code-vb[Net_Listener_Basic#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#2)]  
   
  ]]></format>
     </remarks>
@@ -95,6 +96,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -240,6 +242,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.ContentEncoding%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ [!code-vb[Net_Listener_Basic#16](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#16)]  
   
  ]]></format>
         </remarks>
@@ -292,6 +295,7 @@
  The following code example uses the <xref:System.Net.HttpListenerRequest.ContentLength64%2A> property while processing body data.  
   
  [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ [!code-vb[Net_Listener_Basic#16](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#16)]  
   
  ]]></format>
         </remarks>
@@ -351,6 +355,7 @@
  The following code example demonstrates how to use this property.  
   
  [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ [!code-vb[Net_Listener_Basic#16](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#16)]  
   
  ]]></format>
         </remarks>
@@ -401,6 +406,7 @@
  The following code example displays the values of cookies sent with the request.  
   
  [!code-csharp[Net_Listener_Basic#18](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#18)]  
+ [!code-vb[Net_Listener_Basic#18](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#18)]  
   
  ]]></format>
         </remarks>
@@ -580,6 +586,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ [!code-vb[Net_Listener_Basic#16](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#16)]  
   
  ]]></format>
         </remarks>
@@ -632,6 +639,7 @@
  The following code example displays all the information in a given <xref:System.Net.WebHeaderCollection> object.  
   
  [!code-csharp[Net_Listener_Basic#21](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#21)]  
+ [!code-vb[Net_Listener_Basic#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#21)]  
   
  ]]></format>
         </remarks>
@@ -682,6 +690,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -735,6 +744,7 @@
  The following code example demonstrates using this property to read the data sent with a request.  
   
  [!code-csharp[Net_Listener_Basic#16](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#16)]  
+ [!code-vb[Net_Listener_Basic#16](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#16)]  
   
  ]]></format>
         </remarks>
@@ -796,6 +806,7 @@
  The following code example displays the value of the <xref:System.Net.HttpListenerRequest.IsAuthenticated%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -847,6 +858,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.IsLocal%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -898,6 +910,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.IsSecureConnection%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -988,6 +1001,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -1038,6 +1052,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -1093,6 +1108,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -1146,6 +1162,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.QueryString%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -1203,6 +1220,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.RawUrl%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#11](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#11)]  
+ [!code-vb[Net_Listener_Basic#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#11)]  
   
  ]]></format>
         </remarks>
@@ -1248,6 +1266,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#17](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#17)]  
+ [!code-vb[Net_Listener_Basic#17](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#17)]  
   
  ]]></format>
         </remarks>
@@ -1512,6 +1531,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -1571,6 +1591,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -1630,6 +1651,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -1680,6 +1702,7 @@
  The following code example displays the value of this property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -1739,6 +1762,7 @@
  The following code example demonstrates using this property.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>
@@ -1791,6 +1815,7 @@
  The following code example displays the languages from the request's `Accept-Language` header.  
   
  [!code-csharp[Net_Listener_Basic#15](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#15)]  
+ [!code-vb[Net_Listener_Basic#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#15)]  
   
  ]]></format>
         </remarks>

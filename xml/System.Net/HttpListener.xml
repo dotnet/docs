@@ -73,6 +73,7 @@
  The following code example demonstrates using a <xref:System.Net.HttpListener>.  
   
  [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ [!code-vb[Net_Listener_Basic#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#2)]  
   
  ]]></format>
     </remarks>
@@ -117,6 +118,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListener> constructor to create a new <xref:System.Net.HttpListener> object. For the complete example, see the <xref:System.Net.HttpListener> class topic.  
   
  [!code-csharp[Net_listener_Basic#9](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#9)]  
+ [!code-vb[Net_Listener_Basic#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#9)]  
   
  ]]></format>
         </remarks>
@@ -170,6 +172,7 @@
  The following code example demonstrates calling this method.  
   
  [!code-csharp[Net_Listener_Basic#11](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#11)]  
+ [!code-vb[Net_Listener_Basic#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#11)]  
   
  ]]></format>
         </remarks>
@@ -232,6 +235,7 @@
  The following code example demonstrates using the <xref:System.Net.HttpListener.AuthenticationSchemes%2A> property to specify an authentication scheme.  
   
  [!code-csharp[Net_listener_Basic#14](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#14)]  
+ [!code-vb[Net_Listener_Basic#14](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#14)]  
   
  ]]></format>
         </remarks>
@@ -355,10 +359,12 @@
  The following code example demonstrates using the <xref:System.Net.HttpListener.BeginGetContext%2A> method to specify a callback method that will handle incoming client requests.  
   
  [!code-csharp[Net_Listener_Basic#12](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#12)]  
+ [!code-vb[Net_Listener_Basic#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#12)]  
   
  The following code example implements a callback method.  
   
  [!code-csharp[Net_Listener_Basic#13](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#13)]  
+ [!code-vb[Net_Listener_Basic#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#13)]  
   
  ]]></format>
         </remarks>
@@ -413,6 +419,7 @@
 The following code example demonstrates calling the `Close` method:
   
 [!code-csharp[Net_Listener_Basic#12](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#12)]  
+[!code-vb[Net_Listener_Basic#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#12)]  
   
  ]]></format>
         </remarks>
@@ -543,6 +550,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example shows the implementation of a callback method that calls the <xref:System.Net.HttpListener.EndGetContext%2A> method.  
   
  [!code-csharp[Net_Listener_Basic#13](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#13)]  
+ [!code-vb[Net_Listener_Basic#13](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#13)]  
   
  ]]></format>
         </remarks>
@@ -726,6 +734,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates calling this method.  
   
  [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ [!code-vb[Net_Listener_Basic#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#2)]  
   
  ]]></format>
         </remarks>
@@ -832,6 +841,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates setting this property.  
   
  [!code-csharp[Net_Listener_Basic#14](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#14)]  
+ [!code-vb[Net_Listener_Basic#14](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#14)]  
   
  ]]></format>
         </remarks>
@@ -881,6 +891,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates using this property to determine the listening state of an instance.  
   
  [!code-csharp[Net_Listener_Basic#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#1)]  
+ [!code-vb[Net_Listener_Basic#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -929,6 +940,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates the use of the <xref:System.Net.HttpListener.IsSupported%2A> property to detect whether an <xref:System.Net.HttpListener> object can be used with the current operating system.  
   
  [!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+ [!code-vb[Net_Listener_Basic#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#2)]  
   
  ]]></format>
         </remarks>
@@ -976,6 +988,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates using the <xref:System.Net.HttpListener.Prefixes%2A> property to obtain and print the URI prefixes that are handled.  
   
  [!code-csharp[Net_Listener_Basic#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#1)]  
+ [!code-vb[Net_Listener_Basic#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1031,6 +1044,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates setting the <xref:System.Net.HttpListener.Realm%2A> property.  
   
  [!code-csharp[Net_Listener_Basic#10](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#10)]  
+ [!code-vb[Net_Listener_Basic#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#10)]  
   
  ]]></format>
         </remarks>
@@ -1084,6 +1098,7 @@ The following code example demonstrates calling the `Close` method:
  The following code example demonstrates using the <xref:System.Net.HttpListener.Start%2A> method to begin processing incoming requests.  
   
  [!code-csharp[Net_Listener_Basic#12](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#12)]  
+ [!code-vb[Net_Listener_Basic#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#12)]  
   
  ]]></format>
         </remarks>
@@ -1138,7 +1153,8 @@ The following code example demonstrates calling the `Close` method:
  
 The following code example demonstrates using the <xref:System.Net.HttpListener.Stop%2A> method to stop processing incoming requests.  
  
-[!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]
+[!code-csharp[Net_Listener_Basic#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#2)]  
+[!code-vb[Net_Listener_Basic#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#2)]  
   
  ]]></format>
         </remarks>
@@ -1295,6 +1311,7 @@ The following code example demonstrates using the <xref:System.Net.HttpListener.
  The following code example demonstrates setting this property.  
   
  [!code-csharp[Net_Listener_Basic#14](~/samples/snippets/csharp/VS_Snippets_Remoting/Net_Listener_Basic/CS/test.cs#14)]  
+ [!code-vb[Net_Listener_Basic#14](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Net_Listener_Basic/VB/test.vb#14)]  
   
  ]]></format>
         </remarks>

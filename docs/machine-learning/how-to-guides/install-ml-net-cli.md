@@ -51,10 +51,10 @@ You should see the help for available commands for the mlnet tool such as the 'a
 
 ## Install a specific release version
 
-If you're trying to install a pre-release version or a specific version of the tool, you can specify the version number using the following format:
+If you're trying to install a pre-release version or a specific version of the tool, you can specify the [framework](../../standard/frameworks.md) using the following format:
 
 ```console
-> dotnet tool install -g <package-name> --version <version-number>
+> dotnet tool install -g mlnet --framework <FRAMEWORK>
 ```
 
 You can also check if the package is properly installed by typing the following command:

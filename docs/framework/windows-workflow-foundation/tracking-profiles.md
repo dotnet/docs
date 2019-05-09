@@ -12,7 +12,7 @@ Tracking profiles contain tracking queries that permit a tracking participant to
 
 Tracking profiles are used to specify which tracking information is emitted for a workflow instance. If no profile is specified, then all tracking events are emitted. If a profile is specified, then the tracking events specified in the profile will be emitted. Depending on your monitoring requirements, you may write a profile that is very general, which subscribes to a small set of high-level state changes on a workflow. Conversely, you may create a very detailed profile whose resulting events are rich enough to reconstruct a detailed execution flow later.
 
-Tracking profiles manifest themselves as XML elements within a standard [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] configuration file or specified in code. The following example is of a [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started` and `Completed` workflow events.
+Tracking profiles manifest themselves as XML elements within a standard .NET Framework configuration file or specified in code. The following example is of a [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started` and `Completed` workflow events.
 
 ```xml
 <system.serviceModel>

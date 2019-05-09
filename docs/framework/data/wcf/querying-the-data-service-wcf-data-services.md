@@ -12,13 +12,13 @@ ms.assetid: 823e9444-27aa-4f1f-be8e-0486d67f54c0
 ---
 # Querying the Data Service (WCF Data Services)
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to execute queries against a data service by using familiar [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] programming patterns, including using language integrated query (LINQ). The client library translates a query, which is defined on the client as an instance of the <xref:System.Data.Services.Client.DataServiceQuery%601> class, into an HTTP GET request message. The library receives the response message and translates it into instances of client data service classes. These classes are tracked by the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs.
+The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to execute queries against a data service by using familiar .NET Framework programming patterns, including using language integrated query (LINQ). The client library translates a query, which is defined on the client as an instance of the <xref:System.Data.Services.Client.DataServiceQuery%601> class, into an HTTP GET request message. The library receives the response message and translates it into instances of client data service classes. These classes are tracked by the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs.
 
 ## Data Service Queries
 
 The <xref:System.Data.Services.Client.DataServiceQuery%601> generic class represents a query that returns a collection of zero or more entity type instances. A data service query always belongs to an existing data service context. This context maintains the service URI and metadata information that is required to compose and execute the query.
 
-When you use the **Add Service Reference** dialog to add a data service to a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]-based client application, an entity container class is created that inherits from the <xref:System.Data.Services.Client.DataServiceContext> class. This class includes properties that return typed <xref:System.Data.Services.Client.DataServiceQuery%601> instances. There is one property for each entity set that the data service exposes. These properties make it easier to create an instance of a typed <xref:System.Data.Services.Client.DataServiceQuery%601>.
+When you use the **Add Service Reference** dialog to add a data service to a .NET Framework-based client application, an entity container class is created that inherits from the <xref:System.Data.Services.Client.DataServiceContext> class. This class includes properties that return typed <xref:System.Data.Services.Client.DataServiceQuery%601> instances. There is one property for each entity set that the data service exposes. These properties make it easier to create an instance of a typed <xref:System.Data.Services.Client.DataServiceQuery%601>.
 
 A query is executed in the following scenarios:
 

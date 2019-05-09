@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
 ---
 # SqlMetal.exe (Code Generation Tool)
-The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
+The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the .NET Framework. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
   
 - From a database, generate source code and mapping attributes or a mapping file.  
   

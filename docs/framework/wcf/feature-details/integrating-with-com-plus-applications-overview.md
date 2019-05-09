@@ -43,7 +43,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
 - Interfaces that pass object references as parameters - the following limited object reference approach is described in the Limited Object Reference Support section.  
   
-- Interfaces that pass types that are not compatible with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] COM interoperability conversions.  
+- Interfaces that pass types that are not compatible with the .NET Framework COM interoperability conversions.  
   
 - Interfaces for applications that have application pooling enabled when hosted by COM+.  
   

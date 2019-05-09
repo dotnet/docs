@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 627df1e9-b254-41af-bbac-9a4f02810c54
 ---
 # Windows Forms
-As forms are the base unit of your application, it is essential that you give some thought to their function and design. A form is ultimately a blank slate that you, as a developer, enhance with controls to create a user interface and with code to manipulate data. To that end, Visual Studio provides you with an integrated development environment (IDE) to aid in writing code, as well as a rich control set written with the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By complementing the functionality of these controls with your code, you can easily and quickly develop the solutions you need.  
+As forms are the base unit of your application, it is essential that you give some thought to their function and design. A form is ultimately a blank slate that you, as a developer, enhance with controls to create a user interface and with code to manipulate data. To that end, Visual Studio provides you with an integrated development environment (IDE) to aid in writing code, as well as a rich control set written with the .NET Framework. By complementing the functionality of these controls with your code, you can easily and quickly develop the solutions you need.  
   
 ## In This Section  
  [Getting Started with Windows Forms](getting-started-with-windows-forms.md)  

@@ -97,7 +97,6 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     # [macOS Bash](#tab/macosbash)
 
-
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-bash.gif)
 
     In this particular case, in only 10 seconds and with the small dataset provided, the CLI tool was able to run quite a few iterations, meaning training multiple times based on different combinations of algorithms/configuration with different internal data transformations and algorithm's hyper-parameters. 

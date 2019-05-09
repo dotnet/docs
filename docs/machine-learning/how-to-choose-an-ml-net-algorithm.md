@@ -102,4 +102,3 @@ These trainers create a multi-class trainer from a binary trainer. Use with <xre
 |Properties|Trainers|
 |----------|--------|
 |Use this binary classification trainer to baseline the performance of other trainers. To be effective, the metrics of the other trainers should be better than the prior trainer. |<xref:Microsoft.ML.Trainers.PriorTrainer>|
-

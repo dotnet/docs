@@ -42,9 +42,7 @@
   
  The <xref:System.ComponentModel.TypeDescriptionProvider> class relies on a parent object of the same type, supplied during construction. This allows classes that derive from <xref:System.ComponentModel.CustomTypeDescriptor> to selectively override methods.  
   
- Instances of <xref:System.ComponentModel.TypeDescriptionProvider> are only built upon demand, minimizing the impact of custom type information on performance.  
-  
- This class cannot be inherited.  
+ Instances of <xref:System.ComponentModel.TypeDescriptionProvider> are only built upon demand, minimizing the impact of custom type information on performance.
   
  ]]></format>
     </remarks>

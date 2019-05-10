@@ -22,14 +22,14 @@ You can override the default behavior by specifying a language version. There ar
 
 ## Required SDK and Runtime version
 
-Language features may rely on library types, or APIs that are introduced in specific versions of .NET Standard, or specific implementations of the .NET library. The following list provides information on the supported SDK version corresponding to recent language versions:
+Language features may rely on library types, or APIs in a target framework. Therefore, in order to use a given language version, you must select a target framework that has the required APIs. The following table lists the required target framework for recent language versions. You may target any higher version as well.
 
-- **C# 8.0**: *netstandard2.1*, including *netcoreapp3.0*.
-- **C# 7.3**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
-- **C# 7.2**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
-- **C# 7.1**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
-- **C# 7.0**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
-- **C# 6.0**: *netstandard1.3*, including *netcoreapp1.0*, and *.NET Framework 4.6*.
+- **C# 8.0**: *.NET Standard 2.1*, including *.NET Core 3.0*.
+- **C# 7.3**: *.NET Standard 2.0*, including *.NET Core 2.1*, and *.NET Framework 4.7*.
+- **C# 7.2**: *.NET Standard 2.0*, including *.NET Core 2.1*, and *.NET Framework 4.7*.
+- **C# 7.1**: *.NET Standard 2.0*, including *.NET Core 2.1*, and *.NET Framework 4.7*.
+- **C# 7.0**: *.NET Standard 2.0*, including *.NET Core 2.1*, and *.NET Framework 4.7*.
+- **C# 6.0**: *.NET Standard 1.3*, including *.NET Core 1.0*, and *.NET Framework 4.6*.
 
 ## Visual Studio quick action
 

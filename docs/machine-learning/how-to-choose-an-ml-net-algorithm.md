@@ -16,7 +16,7 @@ Algorithms operate on **features**. Features are numerical values computed from 
 
 An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics. 
 
-With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Descent Coordinated Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task. 
+With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Duel Coordinated Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task. 
 
 For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to the **Regression** task.
 

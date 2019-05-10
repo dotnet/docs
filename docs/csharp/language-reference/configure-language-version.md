@@ -22,7 +22,7 @@ You can override the default behavior by specifying a language version. There ar
 
 ## Required target framework
 
-Language features may rely on library types, or APIs in a target framework. Therefore, in order to use a given language version, you must select a target framework that has the required APIs. The following table lists the required target framework for recent language versions. You may target any higher version as well.
+Language features may rely on library types or APIs in a target framework. Therefore, in order to use a given language version, you must select a target framework that has the required APIs. The following table lists the *minimum* required target framework for recent language versions. You may target any higher version as well.
 
 - **C# 8.0**: *.NET Standard 2.1*, including *.NET Core 3.0*.
 - **C# 7.3**: *.NET Standard 2.0*, including *.NET Core 2.1*, and *.NET Framework 4.7*.

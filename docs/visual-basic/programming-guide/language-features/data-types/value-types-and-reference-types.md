@@ -40,7 +40,7 @@ In Visual Basic, data types are implemented based on their classification. The V
   
 - Delegates  
   
- A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] classes. Note that every array is a reference type, even if its members are value types.  
+ A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by .NET Framework classes. Note that every array is a reference type, even if its members are value types.  
   
  Since every reference type represents an underlying .NET Framework class, you must use the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword when you initialize it. The following statement initializes an array.  
   

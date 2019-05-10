@@ -37,17 +37,22 @@ Before creating an experiment, determine the kind of machine learning problem yo
 Create experiment settings for the determined ML task type:
 
 * Binary Classification
-```csharp
-var experimentSettings = new BinaryExperimentSettings();
-```
+
+  ```csharp
+  var experimentSettings = new BinaryExperimentSettings();
+  ```
+
 * Multiclass Classification
-```csharp
-var experimentSettings = new MulticlassExperimentSettings();
-```
+
+  ```csharp
+  var experimentSettings = new MulticlassExperimentSettings();
+  ```
+
 * Regression
-```csharp
-var experimentSettings = new RegressionExperimentSettings();
-```
+
+  ```csharp
+  var experimentSettings = new RegressionExperimentSettings();
+  ```
 
 ## Configure experiment settings
 

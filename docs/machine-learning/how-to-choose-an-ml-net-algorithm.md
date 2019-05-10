@@ -76,8 +76,8 @@ These trainers create a multi-class trainer from a binary trainer. Use with <xre
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|
-|One versus all|This multiclass classifier trains one binary classifier for each class, which distinguishes that class from all other classes. Is limited in scale by the number of classes to categorize|[OneVersusAllTrainer<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.OneVersusAllTrainer) |
-|Pairwise coupling|This multiclass classifier trains a binary classification algorithm on each pair of classes. Is limited in scale by the number of classes, as each combination of two classes must be trained.|[PairwiseCouplingTrainer<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer)|
+|One versus all|This multiclass classifier trains one binary classifier for each class, which distinguishes that class from all other classes. Is limited in scale by the number of classes to categorize|[OneVersusAllTrainer\<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.OneVersusAllTrainer) |
+|Pairwise coupling|This multiclass classifier trains a binary classification algorithm on each pair of classes. Is limited in scale by the number of classes, as each combination of two classes must be trained.|[PairwiseCouplingTrainer\<BinaryClassificationTrainer>](xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer)|
 
 ## K-Means
 
@@ -102,4 +102,3 @@ These trainers create a multi-class trainer from a binary trainer. Use with <xre
 |Properties|Trainers|
 |----------|--------|
 |Use this binary classification trainer to baseline the performance of other trainers. To be effective, the metrics of the other trainers should be better than the prior trainer. |<xref:Microsoft.ML.Trainers.PriorTrainer>|
-

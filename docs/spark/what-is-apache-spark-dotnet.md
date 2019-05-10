@@ -12,8 +12,8 @@ ms.date: 05/06/2019
 
 With C# and F#, you can access:
 
-   * Dataframe and SparkSQL for working with structured data.
-   * Spark Structured Streaming for working with streaming data.
+* Dataframe and SparkSQL for working with structured data.
+* Spark Structured Streaming for working with streaming data.
 
 .NET for Apache Spark is compliant with .NET Standard, a formal specification of .NET APIs that are common across .NET implementations. This means you can use .NET for Apache Spark anywhere you write .NET code allowing you to reuse all the knowledge, skills, code, and libraries you already have as a .NET developer.
 

@@ -4,7 +4,7 @@ description: Discover how to run a .NET for Apache Spark app using .NET Core on 
 ms.date: 05/06/2019
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark. 
+#Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
 ---
 
 # Tutorial: Get started with .NET for Apache Spark
@@ -13,7 +13,7 @@ This tutorial teaches you how to run a .NET for Apache Spark app using .NET Core
 
 In this tutorial, you learn how to:
 
-> [!div class="checklist"] 
+> [!div class="checklist"]
 > * Prepare your Windows environment for .NET for Apache Spark
 > * Download the **Microsoft.Spark.Worker**
 > * Build and run a simple .NET for Apache Spark application
@@ -22,9 +22,9 @@ In this tutorial, you learn how to:
 
 Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line. If your environment is already prepared, you can skip to the next section. If you cannot run any or all of the commands, follow the steps below.
 
-1.  Download and install the [.NET Core 2.1x SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1). Installing the SDK adds the `dotnet` toolchain to your PATH. Use the PowerShell command `dotnet --version` to verify the installation.
+1. Download and install the [.NET Core 2.1x SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1). Installing the SDK adds the `dotnet` toolchain to your PATH. Use the PowerShell command `dotnet --version` to verify the installation.
 
-2. Install [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with the latest updates. You can use Community, Professional, or Enterprise. The Community version is free. 
+2. Install [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with the latest updates. You can use Community, Professional, or Enterprise. The Community version is free.
 
    Choose the following minimum requirements during installation:
        * .NET desktop development
@@ -65,7 +65,7 @@ Double check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 ## Clone the .NET for Apache Spark GitHub repo
 
-Use the following [GitBash](https://gitforwindows.org/) command to clone the .NET for Apache Spark repo to your machine. 
+Use the following [GitBash](https://gitforwindows.org/) command to clone the .NET for Apache Spark repo to your machine.
 
 ```bash
 git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
@@ -75,7 +75,7 @@ git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
 
 1. Open **Visual Studio** and navigate to **File > Create New Project > Console App (.NET Core)**. Name the application **HelloSpark**.
 
-2.  Install the [Microsoft.Spark NuGet package](https://www.nuget.org/profiles/spark). For more information on installing NuGet packages, see [Different ways to install a NuGet Package](https://docs.microsoft.com/nuget/consume-packages/ways-to-install-a-package).
+2. Install the [Microsoft.Spark NuGet package](https://www.nuget.org/profiles/spark). For more information on installing NuGet packages, see [Different ways to install a NuGet Package](https://docs.microsoft.com/nuget/consume-packages/ways-to-install-a-package).
 
 3. In **Solution Explorer**, open **Program.cs** and write the following C# code:
 

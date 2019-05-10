@@ -186,7 +186,7 @@ Inside each catalog is a set of extension methods. Let's look at how extension m
         .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
 ```
 
-In the snippet, `Concatenate` and `Sdca` are both methods in the catalog. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that is appended to the pipeline.
+In the snippet, `Concatenate` and `Sdca` are both methods in the catalog. They each create an [IEstimator](xref:Microsoft.ML.IEstimator%601) object that is appended to the pipeline.
 
 At this point, the objects are created only. No execution has happened.
 

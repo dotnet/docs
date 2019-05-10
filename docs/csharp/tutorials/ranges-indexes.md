@@ -17,9 +17,13 @@ In this tutorial, you'll learn how to:
 
 ## Language support for indices and ranges
 
-You can specify an index **from the end** using the `^` character before the index. Indexing from the end starts from the rule that `0..^0` specifies the entire range. To enumerate an entire array, you start *at the first element*, and continue until you are *past the last element*. Think of the behavior of the `MoveNext` method on an enumerator: it returns false when the enumeration passes the last element. The index `^0` means "the end", `array[array.Length]`, or the index that follows the last element. You are familiar with `array[2]` meaning the element "2 from the start". Now, `array[^2]` means the element "2 from the end". 
+This support language support relies on two new types, and two new operators.
+- <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
+- The `^` operator, which specifies that an index is relative to the end of the sequence.
+- <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
+- The Range operator (`..`), which specifies the start and end of a range as is operands.
 
-You can specify a **range** with the **range operator**: `..`. For example, `0..^0` specifies the entire range of the array: 0 from the start up to, but not including 0 from the end. Either operand may use "from the start" or "from the end". Furthermore, either operand may be omitted. The defaults are `0` for the start index, and `^0` for the end index.
+Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
 ```csharp-interactive
 string[] words = new string[]
@@ -37,11 +41,11 @@ string[] words = new string[]
 };              // 9 (or words.Length) ^0
 ```
 
-The index of each element reinforces the concept of "from the start", and "from the end", and that ranges are exclusive of the end of the range. The "start" of the entire array is the first element. The "end" of the entire array is *past* the last element.
-
 You can retrieve the last word with the `^1` index. Add the following code below the initialization:
 
 [!code-csharp[LastIndex](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastIndex)]
+
+A range specifies the *start* and *end* of a range. Ranges are exclusive, meaning the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
 
 The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range. Add the following code to the same method. Copy and paste it at the bottom of the interactive window.
 
@@ -58,11 +62,6 @@ The following examples create ranges that are open ended for the start, end, or 
 You can also declare ranges or indices as variables. The variable can then be used inside the `[` and `]` characters:
 
 [!code-csharp[IndexRangeTypes](~/samples/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_RangeIndexTypes)]
-
-The previous examples show two design decisions that require more explanation:
-
-- Ranges are *exclusive*, meaning the element at the last index isn't in the range.
-- The index `^0` is *the end* of the collection, not *the last element* in the collection.
 
 The following sample shows many of the reasons for those choices. Modify `x`, `y`, and `z` to try different combinations. When you experiment, use values where `x` is less than `y`, and `y` is less than `z` for valid combinations. Add the following code in a new method. Try different combinations:
 

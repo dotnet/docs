@@ -23,7 +23,7 @@ This language support relies on two new types and two new operators.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
 - The Range operator (`..`), which specifies the start and end of a range as its operands.
 
-Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence[sequence.Length - n]`.
+Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence[sequence.Length - n]`.
 
 ```csharp-interactive
 string[] words = new string[]

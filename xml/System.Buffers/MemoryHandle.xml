@@ -43,7 +43,7 @@ A `MemoryHandle` instance represents a handle to a pinned block of memory. It is
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MemoryHandle (void* pointer, System.Runtime.InteropServices.GCHandle handle = null, System.Buffers.IPinnable pinnable = null);" />
+      <MemberSignature Language="C#" Value="public MemoryHandle (void* pointer, System.Runtime.InteropServices.GCHandle handle = default, System.Buffers.IPinnable pinnable = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(void* pointer, valuetype System.Runtime.InteropServices.GCHandle handle, class System.Buffers.IPinnable pinnable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.MemoryHandle.#ctor(System.Void*,System.Runtime.InteropServices.GCHandle,System.Buffers.IPinnable)" />
       <MemberSignature Language="F#" Value="new System.Buffers.MemoryHandle : nativeptr&lt;unit&gt; * System.Runtime.InteropServices.GCHandle * System.Buffers.IPinnable -&gt; System.Buffers.MemoryHandle" Usage="new System.Buffers.MemoryHandle (pointer, handle, pinnable)" />

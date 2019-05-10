@@ -29,7 +29,7 @@
   
  You should never set a <xref:System.Printing.PrintTicket> property to Unknown. If some other <xref:System.Printing.PrintTicket> producing application has created a PrintTicket document that sets the input bin feature to an unrecognized option, (that is, an option that is not defined in the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have Unknown as the value of the <xref:System.Printing.PrintTicket.InputBin%2A> property.  
   
- Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket.InputBin%2A> or <xref:System.Printing.PrintCapabilities> classes. For more information, see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885).  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket.InputBin%2A> or <xref:System.Printing.PrintCapabilities> classes. For more information, see [How to: Extend the Print Schema and Create New Print System Classes](https://docs.microsoft.com/en-us/previous-versions/aa970573(v=vs.100)).  
   
    
   

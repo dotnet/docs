@@ -20,7 +20,7 @@ You can override the default behavior by specifying a language version. There ar
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
 - Configure the [`-langversion` compiler option](#set-the-langversion-compiler-option).
 
-## Required SDK and Runtime version
+## Required target framework
 
 Language features may rely on library types, or APIs in a target framework. Therefore, in order to use a given language version, you must select a target framework that has the required APIs. The following table lists the required target framework for recent language versions. You may target any higher version as well.
 

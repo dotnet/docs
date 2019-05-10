@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 ## Language support for indices and ranges
 
 This support language support relies on two new types, and two new operators.
-- <xref:System.Index?displayProperty=nameWithType> represents in index into a sequence.
+- <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
 - The `^` operator, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
 - The Range operator (`..`), which specifies the start and end of a range as is operands.

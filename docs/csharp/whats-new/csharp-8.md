@@ -368,7 +368,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
 
 This support language support relies on two new types, and two new operators.
-- <xref:System.Index?displayProperty=nameWithType> represents in index into a sequence.
+- <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
 - The `^` operator, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
 - The Range operator (`..`), which specifies the start and end of a range as is operands.

@@ -1511,12 +1511,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value used to interpret the end of a call to the <see cref="M:System.IO.Ports.SerialPort.ReadLine" /> and <see cref="M:System.IO.Ports.SerialPort.WriteLine(System.String)" /> methods.</summary>
-        <value>A value that represents the end of a line. The default is a line feed, <see cref="P:System.Environment.NewLine" />.</value>
+        <value>A value that represents the end of a line. The default is a line feed ("\n" in C# or <see cref="F:Microsoft.VisualBasic.Constants.vbLf" /> in Visual Basic).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines what value (byte) defines the end of a line for the <xref:System.IO.Ports.SerialPort.ReadLine%2A> and <xref:System.IO.Ports.SerialPort.WriteLine%2A> methods. By default the end-of-line value is <xref:System.Environment.NewLine%2A>. You would change this to a different value if the particular serial device you're working with uses a different value for the same purpose.  
+ This property determines what value (byte) defines the end of a line for the <xref:System.IO.Ports.SerialPort.ReadLine%2A> and <xref:System.IO.Ports.SerialPort.WriteLine%2A> methods. By default the end-of-line value is a line feed character (`\n` in C#, <xref:Microsoft.VisualBasic.Constants.vbLf?displayProperty=nameWithType> in Visual Basic). You would change this to a different value if the particular serial device you're working with uses a different value for the same purpose.  
   
  ]]></format>
         </remarks>

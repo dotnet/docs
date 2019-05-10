@@ -8848,8 +8848,8 @@ XPathNodeIterator ni = nav.Select(expr);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>When overridden in a derived class, gets the string value of the item.</summary>
+        <value>The string value of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

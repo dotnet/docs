@@ -862,10 +862,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="dataReader" Type="System.Data.IDataReader" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="dataTable">To be added.</param>
-        <param name="dataReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataTable">A <see cref="T:System.Data.DataTable" /> to fill with records and, if necessary, schema.</param>
+        <param name="dataReader">The name of the <see cref="T:System.Data.IDataReader" />.</param>
+        <summary>Adds or refreshes rows in a <see cref="T:System.Data.DataTable" /> to match those in the data source using the specified <see cref="T:System.Data.DataTable" /> and <see cref="T:System.Data.IDataReader" /> names.</summary>
+        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataTable" />. This does not include rows affected by statements that do not return rows.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1159,13 +1159,13 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <Parameter Name="maxRecords" Type="System.Int32" Index="4" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
-        <param name="dataSet">To be added.</param>
-        <param name="srcTable">To be added.</param>
-        <param name="dataReader">To be added.</param>
-        <param name="startRecord">To be added.</param>
-        <param name="maxRecords">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSet">A <see cref="T:System.Data.DataSet" /> to fill with records and, if necessary, schema.</param>
+        <param name="srcTable">The name of the <see cref="T:System.Data.DataTable" /> to use for table mapping.</param>
+        <param name="dataReader">The name of the <see cref="T:System.Data.IDataReader" />.</param>
+        <param name="startRecord">The zero-based record number to start with.</param>
+        <param name="maxRecords">The maximum number of records to retrieve.</param>
+        <summary>Adds or refreshes rows in a specified range in the <see cref="T:System.Data.DataSet" /> to match those in the data source using the <see cref="T:System.Data.DataSet" />, <see cref="T:System.Data.DataTable" />, and <see cref="T:System.Data.IDataReader" /> names.</summary>
+        <returns>The number of rows successfully added to or refreshed in the <see cref="T:System.Data.DataSet" />. This does not include rows affected by statements that do not return rows.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

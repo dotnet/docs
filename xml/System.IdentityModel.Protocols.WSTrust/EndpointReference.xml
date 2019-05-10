@@ -21,7 +21,7 @@
 ## Remarks  
  The wsa:EndpointReference element can be used in wst:OnBehalfOf and wp:AppliesTo elements inside of a wsp:RequestSecurityToken element to specify an endpoint reference.  
   
- Supports either the [WS-Addressing standard schema namespace](http://schemas.xmlsoap.org/ws/2004/08/addressing) or the [WS-Addressing 1.0 schema namespace](https://www.w3.org/2005/08/addressing) when reading. On write only the [WS-Addressing 1.0 namespace](https://www.w3.org/2005/08/addressing) is supported.  
+ Supports either the [WS-Addressing standard schema namespace](https://schemas.xmlsoap.org/ws/2004/08/addressing) or the [WS-Addressing 1.0 schema namespace](https://www.w3.org/2005/08/addressing) when reading. On write only the [WS-Addressing 1.0 namespace](https://www.w3.org/2005/08/addressing) is supported.  
   
  For more information about the wsa:EndpointReference element, see the Web Services Addressing - Core specification. For more information about its use in WS-Trust protocols, see the version of the WS-Trust specification that applies to your scenario.  
   
@@ -95,7 +95,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the [WS-Addressing standard schema](http://schemas.xmlsoap.org/ws/2004/08/addressing) or the [WS-Addressing 1.0 standard schema](https://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
+ Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the [WS-Addressing standard schema](https://schemas.xmlsoap.org/ws/2004/08/addressing) or the [WS-Addressing 1.0 standard schema](https://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
   
  ]]></format>
         </remarks>

@@ -20,6 +20,17 @@ You can override the default behavior by specifying a language version. There ar
 - Set the language version [for multiple projects in a subdirectory](#configure-multiple-projects).
 - Configure the [`-langversion` compiler option](#set-the-langversion-compiler-option).
 
+## Required SDK and Runtime version
+
+Language features may rely on library types, or APIs that are introduced in specific versions of .NET Standard, or specific implementations of the .NET library. The following list provides information on the supported SDK version corresponding to recent language versions:
+
+- **C# 8.0**: *netstandard2.1*, including *netcoreapp3.0*.
+- **C# 7.3**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
+- **C# 7.2**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
+- **C# 7.1**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
+- **C# 7.0**: *netstandard2.0*, including *netcoreapp2.1*, and *.NET Framework 4.7*.
+- **C# 6.0**: *netstandard1.3*, including *netcoreapp1.0*, and *.NET Framework 4.6*.
+
 ## Visual Studio quick action
 
 Visual Studio helps you determine the language version you need. If you use a language feature that is not available for the currently configured version, Visual Studio shows a potential fix to update the language version for the project.

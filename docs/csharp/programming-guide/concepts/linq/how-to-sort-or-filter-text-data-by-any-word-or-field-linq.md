@@ -70,7 +70,7 @@ public class SortLines
   
 ## Compiling the Code  
 
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
   
 ## See also
 

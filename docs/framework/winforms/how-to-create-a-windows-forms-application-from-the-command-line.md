@@ -103,10 +103,6 @@ The following procedures describe the basic steps that you must complete to crea
  [!code-csharp[System.Windows.Forms.FormWithButton#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FormWithButton/CS/Form1.cs#1)]
  [!code-vb[System.Windows.Forms.FormWithButton#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FormWithButton/VB/Form1.vb#1)]  
   
-## Compiling the Code  
-  
-- To compile the code, follow the instructions in the proceeding procedure that describe how to compile and run the application.  
-  
 ## See also
 
 - <xref:System.Windows.Forms.Form>

@@ -24,8 +24,6 @@ The following code example asynchronously loads a sound from an URL and then pla
   
 - That you replace the file name `"http://www.tailspintoys.com/sounds/stop.wav"` with a valid file name.  
   
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
-  
 ## Robust Programming  
  File operations should be enclosed within appropriate exception-handling blocks.  
   

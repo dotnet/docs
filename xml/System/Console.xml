@@ -381,6 +381,7 @@
   
  <paramref name="duration" /> is less than or equal to zero.</exception>
         <exception cref="T:System.Security.HostProtectionException">This method was executed on a server, such as SQL Server, that does not permit access to the console.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="BufferHeight">
@@ -452,6 +453,7 @@
  The value in a set operation is less than <see cref="P:System.Console.WindowTop" /> + <see cref="P:System.Console.WindowHeight" />.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -522,6 +524,7 @@
  The value in a set operation is less than <see cref="P:System.Console.WindowLeft" /> + <see cref="P:System.Console.WindowWidth" />.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -635,6 +638,7 @@
         <value>
           <see langword="true" /> if CAPS LOCK is turned on; <see langword="false" /> if CAPS LOCK is turned off.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The get operation is invoked on an operating system other than Windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -823,6 +827,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value specified in a set operation is less than 1 or greater than 100.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -941,6 +946,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The get operation is invoked on an operating system other than Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -1553,6 +1559,7 @@
  <paramref name="sourceLeft" /> + <paramref name="sourceWidth" /> is greater than or equal to <see cref="P:System.Console.BufferWidth" />.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -1643,6 +1650,7 @@
         <exception cref="T:System.ArgumentException">One or both of the color parameters is not a member of the <see cref="T:System.ConsoleColor" /> enumeration.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -1684,6 +1692,7 @@
         <value>
           <see langword="true" /> if NUM LOCK is turned on; <see langword="false" /> if NUM LOCK is turned off.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The get operation is invoked on an operating system other than Windows.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenStandardError">
@@ -2623,6 +2632,7 @@
  <paramref name="height" /> is less than <see cref="P:System.Console.WindowTop" /> + <see cref="P:System.Console.WindowHeight" />.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -2978,6 +2988,7 @@
  <paramref name="top" /> + <see cref="P:System.Console.WindowHeight" /> is greater than <see cref="P:System.Console.BufferHeight" />.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -3048,6 +3059,7 @@
  <paramref name="width" /> or <paramref name="height" /> is greater than the largest possible window width or height for the current screen resolution and console font.</exception>
         <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -3106,6 +3118,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">In a set operation, the specified title is longer than 24500 characters.</exception>
         <exception cref="T:System.ArgumentNullException">In a set operation, the specified title is <see langword="null" />.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The get operation is invoked on an operating system other than Windows.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
@@ -3244,6 +3257,7 @@
   
  The value of the <see cref="P:System.Console.WindowWidth" /> property or the value of the <see cref="P:System.Console.WindowHeight" /> property is greater than the largest possible window width or height for the current screen resolution and console font.</exception>
         <exception cref="T:System.IO.IOException">Error reading or writing information.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="WindowLeft">
@@ -3314,6 +3328,7 @@
   
  As a result of the assignment, <see cref="P:System.Console.WindowLeft" /> plus <see cref="P:System.Console.WindowWidth" /> would exceed <see cref="P:System.Console.BufferWidth" />.</exception>
         <exception cref="T:System.IO.IOException">Error reading or writing information.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="WindowTop">
@@ -3380,6 +3395,7 @@
   
  As a result of the assignment, <see cref="P:System.Console.WindowTop" /> plus <see cref="P:System.Console.WindowHeight" /> would exceed <see cref="P:System.Console.BufferHeight" />.</exception>
         <exception cref="T:System.IO.IOException">Error reading or writing information.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
       </Docs>
     </Member>
     <Member MemberName="WindowWidth">
@@ -3450,6 +3466,7 @@
   
  The value of the <see cref="P:System.Console.WindowWidth" /> property or the value of the <see cref="P:System.Console.WindowHeight" /> property is greater than the largest possible window width or height for the current screen resolution and console font.</exception>
         <exception cref="T:System.IO.IOException">Error reading or writing information.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The set operation is invoked on an operating system other than Windows.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">

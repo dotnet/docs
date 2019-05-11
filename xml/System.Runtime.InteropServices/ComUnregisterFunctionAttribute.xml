@@ -42,11 +42,11 @@
 ## Remarks  
  You can apply this attribute to methods.  
   
- <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> enables you to add code that reverses the operations performed by a registration method. If you apply the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> to provide a registration method, you must also provide an unregistration method to reverse the operations done in the registration method. You can have only one unregistration method for a class.  
-  
- The common language runtime calls the method with this attribute when its containing assembly is unregistered (directly or indirectly) with the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) or through the <xref:System.Runtime.InteropServices.RegistrationServices.UnregisterAssembly%2A?displayProperty=nameWithType> API method. Methods with this attribute can have any visibility (public, private, and so on), but must be `static` and must take a single <xref:System.Type> parameter for the <xref:System.Type> to unregister.  
-  
-   
+ `ComUnregisterFunctionAttribute` enables you to add code that reverses the operations performed by a registration method. If you apply the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> to provide a registration method, you should also provide an unregistration method to reverse the operations done in the registration method. You can have only one unregistration method for a class.
+
+**.NET Framework:** The common language runtime calls the method with this attribute when its containing assembly is unregistered (directly or indirectly) with the [Regasm.exe (Assembly Registration) tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) or through the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterAssembly%2A?displayProperty=nameWithType> method.
+
+ **.NET Core:** The common language runtime calls the method with this attribute when its containing assembly's COM host is unregistered via the [RegSvr32.exe tool](https://docs.microsoft.com/windows-server/administration/windows-commands/regsvr32). 
   
 ## Examples  
  The following example demonstrates applying <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> and <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> to methods with the appropriate signature.  

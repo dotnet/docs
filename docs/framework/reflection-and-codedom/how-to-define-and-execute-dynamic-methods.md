@@ -108,14 +108,6 @@ The following procedures show how to define and execute a simple dynamic method 
  [!code-csharp[DynamicMethodHowTo#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DynamicMethodHowTo/cs/source.cs#1)]
  [!code-vb[DynamicMethodHowTo#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DynamicMethodHowTo/vb/source.vb#1)]  
   
-## Compiling the Code  
-  
-- The code contains the C# `using` statements (`Imports` in Visual Basic) necessary for compilation.  
-  
-- No additional assembly references are required.  
-  
-- Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
-  
 ## See also
 
 - <xref:System.Reflection.Emit.DynamicMethod>

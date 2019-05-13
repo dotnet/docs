@@ -38,7 +38,7 @@ Console.WriteLine(student.First + " " + student.Last);
   
 ## Compiling the Code  
   
-- To run this code, copy and paste the class into a Visual C# console application project that has been created in Visual Studio. By default, this project targets version 3.5 of the .NET Framework, and it will have a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
+To run this code, copy and paste the class into a C# console application  with a `using` directive for System.Linq.
   
 ## See also
 

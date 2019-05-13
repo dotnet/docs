@@ -97,25 +97,6 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2);
   
  `TestCode 1234 5678`  
   
-## Compiling the Code  
- To build the file `MathLibrary.DLL`, compile the two files `Add` and `Mult` by using the following command line.  
-  
-```csharp  
-csc /target:library /out:MathLibrary.DLL Add.cs Mult.cs  
-```  
-  
- The [/target:library](../../../../csharp/language-reference/compiler-options/target-library-compiler-option.md) compiler option tells the compiler to output a DLL instead of an EXE file. The [/out](../../../../csharp/language-reference/compiler-options/out-compiler-option.md) compiler option followed by a file name is used to specify the DLL file name. Otherwise, the compiler uses the first file (`Add.cs`) as the name of the DLL.  
-  
- To build the executable file, `TestCode.exe`, use the following command line:  
-  
-```csharp  
-csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs  
-```  
-  
- The **/out** compiler option tells the compiler to output an EXE file and specifies the name of the output file (`TestCode.exe`). This compiler option is optional. The [/reference](../../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option specifies the DLL file or files that this program uses. For more information, see [/reference](../../../../csharp/language-reference/compiler-options/reference-compiler-option.md).  
-  
- For more information about building from the command line, see [Command-line Building With csc.exe](../../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
-  
 ## See also
 
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)

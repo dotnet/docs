@@ -54,7 +54,7 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
     [https://docs.microsoft.com/dotnet/core/porting/index](../../../core/porting/index.md)
 
 - **.NET Core on Docker Guide**
-    [https://docs.microsoft.com/dotnet/framework/docker/](../../../core/docker/index.md)
+    [https://docs.microsoft.com/dotnet/core/docker/intro-net-docker](../../../core/docker/intro-net-docker.md)
 
 - **.NET Components Overview**  
     [https://docs.microsoft.com/dotnet/standard/components](../../components.md)

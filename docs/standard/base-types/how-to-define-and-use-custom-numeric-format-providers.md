@@ -19,7 +19,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Define and Use Custom Numeric Format Providers
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:  
+The .NET Framework gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:  
   
 - Standard numeric format strings, which provide a predefined set of formats for converting numbers to their string representation. You can use them with any numeric formatting method, such as <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType>, that has a `format` parameter. For details, see [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md).  
   
@@ -27,7 +27,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
   
 - Custom <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> objects, which define the symbols and format patterns used in displaying the string representations of numeric values. You can use them with any numeric formatting method, such as <xref:System.Int32.ToString%2A>, that has a `provider` parameter. Typically, the `provider` parameter is used to specify culture-specific formatting.  
   
- In some cases (such as when an application must display a formatted account number, an identification number, or a postal code) these three techniques are inappropriate. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also enables you to define a formatting object that is neither a <xref:System.Globalization.CultureInfo> nor a <xref:System.Globalization.NumberFormatInfo> object to determine how a numeric value is formatted. This topic provides the step-by-step instructions for implementing such an object, and provides an example that formats telephone numbers.  
+ In some cases (such as when an application must display a formatted account number, an identification number, or a postal code) these three techniques are inappropriate. The .NET Framework also enables you to define a formatting object that is neither a <xref:System.Globalization.CultureInfo> nor a <xref:System.Globalization.NumberFormatInfo> object to determine how a numeric value is formatted. This topic provides the step-by-step instructions for implementing such an object, and provides an example that formats telephone numbers.  
   
 ### To define a custom format provider  
   

@@ -397,7 +397,7 @@ public static void ClassifyImages(MLContext mlContext, string dataLocation, stri
 
 First, call the `ReadFromTsv()` method to create an `IEnumerable<ImageData>` class that contains the fully qualified path for each `ImagePath`. You need that file path to pair your data and prediction results. You also need to convert the `IEnumerable<ImageData>` class to an `IDataView` that you will use to predict. Add the following code as the next two lines in the `ClassifyImages()` method:
 
-[!code-csharp[ReadFromTSV](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReadFromTSV)]
+[!code-csharp[CallReadFromTSV](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallReadFromTSV)]
 
 As you did previously with the training image data, predict the category of the test image data using the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method of the model passed in. Add the following code to the `ClassifyImages()` method for the predictions and to convert the `predictions` `IDataView` into an `IEnumerable` for pairing and display:
 

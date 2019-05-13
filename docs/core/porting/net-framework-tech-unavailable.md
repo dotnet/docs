@@ -38,7 +38,7 @@ Similar to CAS, Security Transparency separates sandboxed code from security cri
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
-### System.EnterpriseServices
+## System.EnterpriseServices
 
 System.EnterpiseServices (COM+) is not supported by .NET Core.
 

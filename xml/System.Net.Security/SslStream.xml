@@ -80,8 +80,9 @@
 ## Examples  
  The following code example demonstrates creating an <xref:System.Net.Sockets.TcpListener> that uses the <xref:System.Net.Security.SslStream> class to communicate with clients.  
   
- [!code-cpp[NclSslServerSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#0)]
- [!code-csharp[NclSslServerSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#0)]  
+[!code-cpp[NclSslServerSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#0)]
+[!code-csharp[NclSslServerSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#0)]  
+[!code-vb[NclSslServerSync#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#0)]
   
  The following code example demonstrates creating a <xref:System.Net.Sockets.TcpClient> that uses the <xref:System.Net.Security.SslStream> class to communicate with a server.  
   
@@ -229,7 +230,8 @@
   
  [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
  [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
-  
+ [!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)] 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -2027,9 +2029,10 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
-  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2127,8 +2130,9 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
   
  ]]></format>
         </remarks>
@@ -2182,8 +2186,9 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
   
  ]]></format>
         </remarks>
@@ -2235,8 +2240,9 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
   
  ]]></format>
         </remarks>
@@ -2289,8 +2295,9 @@
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2360,8 +2367,9 @@
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2830,8 +2838,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2883,8 +2892,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2936,8 +2946,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -2989,8 +3000,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -3042,8 +3054,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -3099,9 +3112,10 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
-  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3152,8 +3166,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -3206,8 +3221,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -3268,9 +3284,10 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
-  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]  
+
  ]]></format>
         </remarks>
       </Docs>
@@ -3360,8 +3377,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the certificate returned by this property.  
   
- [!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
- [!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
+[!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-vb[NclSslServerSync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#6)]
   
  ]]></format>
         </remarks>
@@ -3697,8 +3715,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates setting the value of this property.  
   
- [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
- [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
+[!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)]
   
  ]]></format>
         </remarks>
@@ -3744,8 +3763,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the certificate returned by this property.  
   
- [!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
- [!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
+[!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-vb[NclSslServerSync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#6)]
   
  ]]></format>
         </remarks>
@@ -3923,8 +3943,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following example displays the security properties of the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -4031,8 +4052,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates writing to an authenticated <xref:System.Net.Security.SslStream>.  
   
- [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
- [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
+[!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)]
   
  ]]></format>
         </remarks>
@@ -4229,8 +4251,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates setting the value of this property.  
   
- [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
- [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
+[!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)]
   
  ]]></format>
         </remarks>

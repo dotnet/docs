@@ -3362,7 +3362,7 @@
       <Docs>
         <param name="errorCode">The HRESULT to be converted.</param>
         <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object.</summary>
-        <returns>An object that represents the converted HRESULT.</returns>
+        <returns>An object that represents the converted HRESULT, or <see langword="null" /> if the HRESULT value doesn't represent an error code (for example, <see langword="S_OK" /> or <see langword="S_FALSE" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3425,7 +3425,7 @@
         <param name="errorCode">The HRESULT to be converted.</param>
         <param name="errorInfo">A pointer to the <see langword="IErrorInfo" /> interface that provides more information about the error. You can specify <c>IntPtr(0)</c> to use the current <see langword="IErrorInfo" /> interface, or <c>IntPtr(-1)</c> to ignore the current <see langword="IErrorInfo" /> interface and construct the exception just from the error code.</param>
         <summary>Converts the specified HRESULT error code to a corresponding <see cref="T:System.Exception" /> object, with additional error information passed in an [IErrorInfo](https://msdn.microsoft.com/library/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface for the exception object.</summary>
-        <returns>An object that represents the converted HRESULT and information obtained from <paramref name="errorInfo" />.</returns>
+        <returns>An object that represents the converted HRESULT and information obtained from <paramref name="errorInfo" />, or <see langword="null" /> if an HRESULT value doesn't represent an error code (for example, <see langword="S_OK" /> or <see langword="S_FALSE" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

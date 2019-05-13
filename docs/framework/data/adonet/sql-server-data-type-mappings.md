@@ -6,7 +6,7 @@ ms.assetid: fafdc31a-f435-4cd3-883f-1dfadd971277
 # SQL Server Data Type Mappings
 SQL Server and the .NET Framework are based on different type systems. For example, the .NET Framework <xref:System.Decimal> structure has a maximum scale of 28, whereas the SQL Server decimal and numeric data types have a maximum scale of 38. To maintain data integrity when reading and writing data, the  <xref:System.Data.SqlClient.SqlDataReader> exposes SQL Server–specific typed accessor methods that return objects of <xref:System.Data.SqlTypes> as well as accessor methods that return .NET Framework types. Both SQL Server types and .NET Framework types are also represented by enumerations in the <xref:System.Data.DbType> and <xref:System.Data.SqlDbType> classes, which you can use when specifying <xref:System.Data.SqlClient.SqlParameter> data types.  
   
- The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type, the <xref:System.Data.DbType> and <xref:System.Data.SqlDbType> enumerations, and the accessor methods for the <xref:System.Data.SqlClient.SqlDataReader>.  
+ The following table shows the inferred .NET Framework type, the <xref:System.Data.DbType> and <xref:System.Data.SqlDbType> enumerations, and the accessor methods for the <xref:System.Data.SqlClient.SqlDataReader>.  
   
 |SQL Server Database Engine type|.NET Framework type|SqlDbType enumeration|SqlDataReader SqlTypes typed accessor|DbType enumeration|SqlDataReader DbType typed accessor|  
 |-------------------------------------|-------------------------|---------------------------|-------------------------------------------|------------------------|-----------------------------------------|  

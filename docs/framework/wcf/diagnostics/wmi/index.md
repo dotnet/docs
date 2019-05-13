@@ -24,7 +24,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Accessing WMI Data  
- WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)]. For more information, see [Using WMI](https://go.microsoft.com/fwlink/?LinkId=95183).  
+ WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework. For more information, see [Using WMI](https://go.microsoft.com/fwlink/?LinkId=95183).  
   
 > [!CAUTION]
 >  If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  

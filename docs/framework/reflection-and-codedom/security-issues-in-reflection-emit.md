@@ -15,7 +15,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Security Issues in Reflection Emit
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:  
+The .NET Framework provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:  
   
 - [Dynamic assemblies](#Dynamic_Assemblies)  
   
@@ -26,7 +26,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
  Regardless of the way you generate dynamic code, executing the generated code requires all the permissions that are required by the types and methods the generated code uses.  
   
 > [!NOTE]
->  The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. See [Version Information](#Version_Information), later in this topic.  
+>  The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of the .NET Framework. See [Version Information](#Version_Information), later in this topic.  
   
 <a name="Dynamic_Assemblies"></a>   
 ## Dynamic Assemblies  
@@ -135,17 +135,17 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides three 
 ## Version Information  
  Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](../../../docs/framework/security/security-changes.md).  
   
- Starting with the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)], <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
+ Starting with the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)], <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of the .NET Framework.  
   
 > [!NOTE]
->  <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is included by default in the `FullTrust` and `LocalIntranet` named permission sets, but not in the `Internet` permission set. Therefore, in earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], a library can be used with Internet permissions only if it executes an <xref:System.Security.PermissionSet.Assert%2A> for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This allows libraries that emit code to be security transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, which simplifies the task of writing a secure library.  
+>  <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is included by default in the `FullTrust` and `LocalIntranet` named permission sets, but not in the `Internet` permission set. Therefore, in earlier versions of the .NET Framework, a library can be used with Internet permissions only if it executes an <xref:System.Security.PermissionSet.Assert%2A> for <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>. Such libraries require careful security review because coding errors could result in security holes. The [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] allows code to be emitted in partial trust scenarios without issuing any security demands, because generating code is not inherently a privileged operation. That is, the generated code has no more permissions than the assembly that emits it. This allows libraries that emit code to be security transparent and removes the need to assert <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit>, which simplifies the task of writing a secure library.  
   
- In addition, the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] introduces the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag for accessing nonpublic types and members from partially trusted dynamic methods. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for dynamic methods that access nonpublic types and members; this is a permission that should never be granted to partially trusted code.  
+ In addition, the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] introduces the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag for accessing nonpublic types and members from partially trusted dynamic methods. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for dynamic methods that access nonpublic types and members; this is a permission that should never be granted to partially trusted code.  
   
  Finally, the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] introduces anonymously hosted methods.  
   
 ### Obtaining Information on Types and Members  
- Starting with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
+ Starting with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], no permissions are required to obtain information about nonpublic types and members. Reflection is used to obtain information needed to emit dynamic methods. For example, <xref:System.Reflection.MethodInfo> objects are used to emit method calls. Earlier versions of the .NET Framework require <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag. For more information, see [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
   
 ## See also
 

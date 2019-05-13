@@ -46,7 +46,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
  WCF provides two standard queued bindings:  
   
-- <xref:System.ServiceModel.NetMsmqBinding>. A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] binding suitable for performing queue-based communication with other WCF endpoints.  
+- <xref:System.ServiceModel.NetMsmqBinding>. A .NET Framework binding suitable for performing queue-based communication with other WCF endpoints.  
   
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. A binding suitable for communicating with existing Message Queuing applications.  
   

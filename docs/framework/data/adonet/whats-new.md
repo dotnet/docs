@@ -9,7 +9,7 @@ The following features are new in [!INCLUDE[vstecado](../../../../includes/vstec
 
 ## SqlClient Data Provider
 
-The following features are new in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]:
+The following features are new in the .NET Framework Data Provider for SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]:
 
 - The ConnectRetryCount and ConnectRetryInterval connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.
 

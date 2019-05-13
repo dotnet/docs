@@ -23,7 +23,7 @@ An event is an action which you can respond to, or "handle," in code. Events can
  For information about how to raise and consume an event, see [Events](../../standard/events/index.md).
 
 ## Delegates and Their Role
- Delegates are classes commonly used within the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] to build event-handling mechanisms. Delegates roughly equate to function pointers, commonly used in [!INCLUDE[vcprvc](../../../includes/vcprvc-md.md)] and other object-oriented languages. Unlike function pointers however, delegates are object-oriented, type-safe, and secure. In addition, where a function pointer contains only a reference to a particular function, a delegate consists of a reference to an object, and references to one or more methods within the object.
+ Delegates are classes commonly used within the .NET Framework to build event-handling mechanisms. Delegates roughly equate to function pointers, commonly used in [!INCLUDE[vcprvc](../../../includes/vcprvc-md.md)] and other object-oriented languages. Unlike function pointers however, delegates are object-oriented, type-safe, and secure. In addition, where a function pointer contains only a reference to a particular function, a delegate consists of a reference to an object, and references to one or more methods within the object.
 
  This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Events](../../standard/events/index.md).
 

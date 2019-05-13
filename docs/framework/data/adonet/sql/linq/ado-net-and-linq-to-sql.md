@@ -25,7 +25,7 @@ ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
 ## Transactions  
  You can supply your <xref:System.Data.Linq.DataContext> with your own database transaction when your application has already initiated the transaction and you want your <xref:System.Data.Linq.DataContext> to be involved.  
   
- The preferred method of doing transactions with the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] is to use the <xref:System.Transactions.TransactionScope> object. By using this approach, you can make distributed transactions that work across databases and other memory-resident resource managers. Transaction scopes require few resources to start. They promote themselves to distributed transactions only when there are multiple connections within the scope of the transaction.  
+ The preferred method of doing transactions with the .NET Framework is to use the <xref:System.Transactions.TransactionScope> object. By using this approach, you can make distributed transactions that work across databases and other memory-resident resource managers. Transaction scopes require few resources to start. They promote themselves to distributed transactions only when there are multiple connections within the scope of the transaction.  
   
  [!code-csharp[DLinqAdoNet#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs/Program.cs#2)]
  [!code-vb[DLinqAdoNet#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb/Module1.vb#2)]  

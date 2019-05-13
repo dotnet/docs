@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
 ---
 # Security Considerations (Entity Framework)
-This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications. You should also follow recommendations for creating secure [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] applications. For more information, see [Security Overview](../../../../../docs/framework/data/adonet/security-overview.md).  
+This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications. You should also follow recommendations for creating secure .NET Framework applications. For more information, see [Security Overview](../../../../../docs/framework/data/adonet/security-overview.md).  
   
 ## General Security Considerations  
  The following security considerations apply to all applications that use the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
@@ -57,7 +57,7 @@ This topic describes security considerations that are specific to developing, de
  A data source administrator should grant only the necessary permissions to users. Even though [!INCLUDE[esql](../../../../../includes/esql-md.md)] does not support DML statements that modify data, such as INSERT, UPDATE, or DELETE, users can still access the connection to the data source. A malicious user could use this connection to execute DML statements in the native language of the data source.  
   
 #### Run applications with the minimum permissions.  
- When you allow a managed application to run with full-trust permission, the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] does not limit the application's access to your computer. This may enable a security vulnerability in your application to compromise the entire system. To use code access security and other security mechanisms in the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)], you should run applications by using partial-trust permissions and with the minimum set of permissions that are needed to enable the application to function. The following code access permissions are the minimum permissions your [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application needs:  
+ When you allow a managed application to run with full-trust permission, the .NET Framework does not limit the application's access to your computer. This may enable a security vulnerability in your application to compromise the entire system. To use code access security and other security mechanisms in the .NET Framework, you should run applications by using partial-trust permissions and with the minimum set of permissions that are needed to enable the application to function. The following code access permissions are the minimum permissions your [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application needs:  
   
 - <xref:System.Security.Permissions.FileIOPermission>: <xref:System.Security.Permissions.FileIOPermissionAccess.Write> to open the specified metadata files or <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> to search a directory for metadata files.  
   

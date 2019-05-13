@@ -23,7 +23,7 @@ This topic summarizes information about the `DataGridView` control and the class
  `BindingSource`  
   
 ## Background  
- User interface (UI) designers frequently find it necessary to display tabular data to users. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides several ways to show data in a table or grid. The `DataGridView` control represents the latest evolution of this technology for Windows Forms applications.  
+ User interface (UI) designers frequently find it necessary to display tabular data to users. The .NET Framework provides several ways to show data in a table or grid. The `DataGridView` control represents the latest evolution of this technology for Windows Forms applications.  
   
  The `DataGridView` control can display rows of data from a data store. Many types of data stores are supported. The data store can hold simple, untyped data, such as a one-dimensional array, or it can hold typed data, such as a <xref:System.Data.DataSet>. For more information, see [How to: Bind Data to the Windows Forms DataGridView Control](how-to-bind-data-to-the-windows-forms-datagridview-control.md).  
   

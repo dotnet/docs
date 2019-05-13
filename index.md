@@ -247,7 +247,7 @@ ms.date: "12/04/2018"
                                                 <h3><a href="/dotnet/spark">.NET for Apache Spark Guide</a></h3>
                                                 <p><a href="/dotnet/spark/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/spark/resources">Resources</a></p>
-                                                <p><a href="https://docs.microsoft.com/dotnet/api/Microsoft.Spark">.NET for Apache Spark API reference</a></p>
+                                                <p><a href="https://docs.microsoft.com/dotnet/api/?view=spark-dotnet">.NET for Apache Spark API reference</a></p>
                                             </div>
                                         </div>
                                     </div>

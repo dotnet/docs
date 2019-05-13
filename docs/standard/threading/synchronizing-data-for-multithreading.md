@@ -20,7 +20,7 @@ When multiple threads can make calls to the properties and methods of a single o
   
 - Manual synchronization. You can use the synchronization objects provided by the .NET class library. See [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md), which includes a discussion of the <xref:System.Threading.Monitor> class.  
   
-- Synchronized contexts. For the .NET Framework applications only, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
+- Synchronized contexts. For .NET Framework and Xamarin applications, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
   
 - Collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
   
@@ -61,7 +61,7 @@ When multiple threads can make calls to the properties and methods of a single o
   
 ## Synchronized Context  
  
-In .NET Framework applications only, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> on any <xref:System.ContextBoundObject> to synchronize all instance methods and fields. All objects in the same context domain share the same lock. Multiple threads are allowed to access the methods and fields, but only a single thread is allowed at any one time.  
+In .NET Framework and Xamarin applications only, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> on any <xref:System.ContextBoundObject> to synchronize all instance methods and fields. All objects in the same context domain share the same lock. Multiple threads are allowed to access the methods and fields, but only a single thread is allowed at any one time.  
   
 ## See also
 

@@ -9,7 +9,6 @@ The following tutorials enable you to understand how to use [.NET for Apache Spa
 
 - [Get started](get-started.md): demonstrates build and run a simple .NET for Apache Spark application.
 
-
 ## Next Steps
 
 For more examples that use .NET for Apache Spark, check out the [.NET for Apache Spark samples on GitHub](https://github.com/dotnet/spark#samples).

@@ -8,16 +8,16 @@ ms.custom: ""
 # The 'auto-train' command in ML.NET CLI
 
 > [!NOTE]
-> This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change. 
+> This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
 
-The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model (serialized model .zip file) plus the example C# code to run/score that model. In addition, the C# code to create/train that model is also generated for you to research what algorithm and settings it is using for that generated "best model". 
+The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model (serialized model .zip file) plus the example C# code to run/score that model. In addition, the C# code to create/train that model is also generated for you to research what algorithm and settings it is using for that generated "best model".
 
 You can generate those assets from your own datasets without coding by yourself, so it also improves your productivity even if you already know ML.NET.
 
 Currently, the ML Tasks supported by the ML.NET CLI are:
 
 - `binary-classification`
-- `multiclass-classification` 
+- `multiclass-classification`
 - `regression`
 
 - Future: Other machine learning tasks, such as
@@ -33,7 +33,7 @@ Example of usage on the command prompt:
 
 The `mlnet auto-train` command generates the following assets:
 
-- A serialized model .zip ("best model") ready to use. 
+- A serialized model .zip ("best model") ready to use.
 - C# code to run/score that generated model (To make predictions in your end-user apps with that model).
 - C# code with the training code used to generate that model (Learning purposes).
 
@@ -62,13 +62,13 @@ Simplest CLI command for a binary classification problem (AutoML will need to in
 Another simple CLI command for a regression problem:
 
 ``` console
-> mlnet auto-train --task regression --dataset "cars.csv" --label-column-name Price 
+> mlnet auto-train --task regression --dataset "cars.csv" --label-column-name Price
 ```
 
 Create and train a binary-classification model with a train dataset, a test dataset, and further customization explicit arguments:
 
-```console 
-> mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600 
+```console
+> mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600
 ```
 
 ## Name
@@ -78,7 +78,7 @@ Create and train a binary-classification model with a train dataset, a test data
 ## Synopsis
 
 ```console
-> mlnet auto-train 
+> mlnet auto-train
 
 --task | --mltask | -T <value>
 
@@ -117,21 +117,21 @@ Invalid input options should cause the CLI tool to emit a list of valid inputs a
 
  ----------------------------------------------------------
 
-`--task | --mltask | -T` (string) 
+`--task | --mltask | -T` (string)
 
-A single string providing the ML problem to solve. For instance, any of the following tasks (The CLI will eventually support all tasks supported in AutoML): 
+A single string providing the ML problem to solve. For instance, any of the following tasks (The CLI will eventually support all tasks supported in AutoML):
 
 - `regression` - Choose if the ML Model will be used to predict a numeric value
 - `binary-classification` - Choose if the ML Model result has two possible categorical boolean values (0 or 1).
 - `multiclass-classification` - Choose if the ML Model result has multiple categorical possible values.
 
-In future releases additional ML Tasks and scenarios such as `recommendations`, `clustering` and `ranking` will be supported. 
+In future releases additional ML Tasks and scenarios such as `recommendations`, `clustering` and `ranking` will be supported.
 
  Only one ML task should be provided in this argument.
 
  ----------------------------------------------------------
 
-`--dataset | -d` (string) 
+`--dataset | -d` (string)
 
 This argument provides the filepath to either one of the following options:
 
@@ -141,17 +141,17 @@ This argument provides the filepath to either one of the following options:
 
 ----------------------------------------------------------
 
-`--test-dataset | -t` (string) 
+`--test-dataset | -t` (string)
 
 File path pointing to the test dataset file, for example when using an 80% - 20% approach when making regular validations to obtain accuracy metrics.
 
-If using `--test-dataset`, then `--dataset` is also required. 
+If using `--test-dataset`, then `--dataset` is also required.
 
 The `--test-dataset` argument is optional unless the --validation-dataset is used. In that case, the user must use the three arguments.
 
 ----------------------------------------------------------
 
-`--validation-dataset | -v` (string) 
+`--validation-dataset | -v` (string)
 
 File path pointing to the validation dataset file. The validation dataset is optional, in any case.
 
@@ -159,7 +159,7 @@ If using a `validation dataset`, the behavior should be:
 
 - The `test-dataset` and `--dataset` arguments are also required.
 
-- The `validation-dataset` dataset is used to estimate prediction error for model selection. 
+- The `validation-dataset` dataset is used to estimate prediction error for model selection.
 
 - The `test-dataset` is used for assessment of the generalization error of the final chosen model. Ideally, the test set should be kept in a “vault,” and be brought out only at the end of the data analysis.
 
@@ -167,7 +167,7 @@ Basically, when using a `validation dataset` plus the `test dataset`, the valida
 
 1. In the first part, you just look at your models and select the best performing approach using the validation data (=validation)
 2. Then you estimate the accuracy of the selected approach (=test).
-	
+
 Hence, the separation of data could be 80/10/10 or 75/15/10. For example:
 
 - `training-dataset` file should have 75% of the data.
@@ -178,15 +178,15 @@ In any case, those percentages will be decided by the user using the CLI who wil
 
 ----------------------------------------------------------
 
-`--label-column-name | -n` (string) 
+`--label-column-name | -n` (string)
 
-With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header. 
+With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header.
 
 This argument is used only for supervised ML tasks such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
 
 ----------------------------------------------------------
 
-`--label-column-index | -i` (int) 
+`--label-column-index | -i` (int)
 
 With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's numeric index in the dataset's file (The column index values start at 1).
 
@@ -196,7 +196,7 @@ This argument is used only for supervised ML task such as a *classification prob
 
 ----------------------------------------------------------
 
-`--ignore-columns | -I` (string)  
+`--ignore-columns | -I` (string)
 
 With this argument, you can ignore existing columns in the dataset file so they are not loaded and used by the training processes.
 
@@ -208,20 +208,20 @@ Example:
 
 ----------------------------------------------------------
 
-`--has-header | -h` (bool) 
+`--has-header | -h` (bool)
 
 Specify if the dataset file(s) have a header row.
-Possible values are: 
+Possible values are:
 - `true`
 - `false`
 
-The by default value is `true` if this argument is not specified by the user. 
+The by default value is `true` if this argument is not specified by the user.
 
 In order to use the `--label-column-name` argument, you need to have a header in the dataset file and `--has-header` set to `true` (which is by default).
 
 ----------------------------------------------------------
 
-`--max-exploration-time | -x` (string) 
+`--max-exploration-time | -x` (string)
 
 By default, the maximum exploration time is 10 seconds.
 
@@ -231,7 +231,7 @@ The needed time for iterations can vary depending on the size of the dataset.
 
 ----------------------------------------------------------
 
-`--cache | -c` (string) 
+`--cache | -c` (string)
 
 If you use caching, the whole training dataset will be loaded in-memory.
 
@@ -241,7 +241,7 @@ However, for large datasets, loading all the data in memory can impact negativel
 
 You can specify the following values:
 
-`on`: Forces cache to be used when training. 
+`on`: Forces cache to be used when training.
 `off`: Forces cache not to be used when training.
 `auto`: Depending on AutoML heuristics, the cache will be used or not. Usually, small/medium datasets will use cache and large datasets won't use cache if you use the `auto` choice.
 
@@ -249,27 +249,27 @@ If you don't specify the `--cache` parameter, then the cache `auto` configuratio
 
 ----------------------------------------------------------
 
-`--name | -N` (string) 
+`--name | -N` (string)
 
-The name for the created output project or solution. If no name is specified, the name `sample-{mltask}` is used. 
+The name for the created output project or solution. If no name is specified, the name `sample-{mltask}` is used.
 
 The ML.NET model file (.ZIP file) will get the same name, as well.
 
 ----------------------------------------------------------
 
-`--output-path | -o` (string) 
+`--output-path | -o` (string)
 
 Root location/folder to place the generated output. The default is the current directory.
 
 ----------------------------------------------------------
 
-`--verbosity | -V` (string) 
+`--verbosity | -V` (string)
 
-Sets the verbosity level of the standard output. 
+Sets the verbosity level of the standard output.
 
 Allowed values are:
 
-- `q[uiet]` 
+- `q[uiet]`
 - `m[inimal]`  (by default)
 - `diag[nostic]` (logging information level)
 
@@ -277,9 +277,9 @@ By default, the CLI tool should show some minimum feedback (minimal) when workin
 
 ----------------------------------------------------------
 
-`-h|--help` 
+`-h|--help`
 
-Prints out help for the command with a description for each command's parameter. 
+Prints out help for the command with a description for each command's parameter.
 
 ----------------------------------------------------------
 

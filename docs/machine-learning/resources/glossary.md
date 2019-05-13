@@ -2,14 +2,11 @@
 title: Machine learning glossary
 description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
 ms.custom: seodec18
-ms.date: 03/05/2019
+ms.date: 05/09/2019
 ---
 # Machine learning glossary of important terms
 
 The following list is a compilation of important machine learning terms that are useful as you build your custom models in ML.NET.
-
-> [!NOTE]
-> This documentation refers to ML.NET, which is currently in Preview. Material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 ## Accuracy
 
@@ -50,7 +47,7 @@ Data is central to any machine learning application. In ML.NET data is represent
 
 ## Estimator
 
-A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator`1> interface.
+A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator%601> interface.
 
 An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transformer](#transformer).
 

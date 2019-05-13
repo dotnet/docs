@@ -8,7 +8,7 @@ ms.custom: mvc, seodec18
 ---
 # Tutorial: Analyze sentiment of website comments with binary classification in ML.NET
 
-This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio 2017. 
+This tutorial shows you how to create a .NET Core console application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses C# in Visual Studio 2017.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -70,7 +70,6 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
-    
 5. The *SentimentData.cs* file opens in the code editor. Add the following `using` statement to the top of *SentimentData.cs*:
 
     [!code-csharp[AddUsings](~/samples/machine-learning/tutorials/SentimentAnalysis/SentimentData.cs#AddUsings "Add necessary usings")]
@@ -118,7 +117,7 @@ You prepare the app, and then load data:
     The `LoadData()` method executes the following tasks:
 
     * Loads the data.
-    *  Splits the loaded dataset into train and test datasets.
+    * Splits the loaded dataset into train and test datasets.
     * Returns the split train and test datasets.
 
 4. Add the following code as the first line of the `LoadData()` method:
@@ -129,13 +128,13 @@ You prepare the app, and then load data:
 
 ### Split the dataset for model training and testing
 
-When preparing a model, you use part of the dataset to train it and part of the dataset to test the model's accuracy.  
+When preparing a model, you use part of the dataset to train it and part of the dataset to test the model's accuracy.
 
 1. To split the loaded data into the needed datasets, add the following code as the next line in the `LoadData()` method:
 
     [!code-csharp[SplitData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#SplitData "Split the Data")]
 
-    The previous code uses the [TrainTestSplit()](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A) method to split the loaded dataset into train and test datasets and return them in the [TrainTestData](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) class. Specify the test set percentage of data with the `testFraction`parameter. The default is 10%, in this case you use 20% to evaluate more data.  
+    The previous code uses the [TrainTestSplit()](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A) method to split the loaded dataset into train and test datasets and return them in the [TrainTestData](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) class. Specify the test set percentage of data with the `testFraction`parameter. The default is 10%, in this case you use 20% to evaluate more data.
 
 2. Return the `splitDataView` at the end of the `LoadData()` method:
 
@@ -155,7 +154,7 @@ When preparing a model, you use part of the dataset to train it and part of the 
     * Returns the model.
 
 2. Create the `BuildAndTrainModel()` method, just after the `Main()` method, using the following code:
-    
+
     ```csharp
     public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet)
     {
@@ -184,10 +183,8 @@ This app uses a classification algorithm that categorizes items or rows of data.
 
 Append the machine learning task to the data transformation definitions by adding the following as the next line of code in `BuildAndTrainModel()`:
 
-    
 [!code-csharp[SdcaLogisticRegressionBinaryTrainer](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#AddTrainer "Add a SdcaLogisticRegressionBinaryTrainer")]
 
-    
 The [SdcaLogisticRegressionBinaryTrainer](xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer) is your classification training algorithm. This is appended to the `estimator` and accepts the featurized `SentimentText` (`Features`) and the `Label` input parameters to learn from the historic data.
 
 ### Train the model
@@ -206,7 +203,7 @@ The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsof
 
 ## Evaluate the model
 
-After your model is trained, use your test data validate the model's performance. 
+After your model is trained, use your test data validate the model's performance.
 
 1. Create the `Evaluate()` method, just after `BuildAndTrainModel()`, with the following code:
 
@@ -279,7 +276,7 @@ Use the following code to display the metrics:
     [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreatePredictionEngine1 "Create the PredictionEngine")]
 
     The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data.
-  
+
 4. Add a comment to test the trained model's prediction in the `Predict()` method by creating an instance of `SentimentData`:
 
     [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssue1 "Create test data for single prediction")]

@@ -52,15 +52,15 @@ You can apply different styling to a WPF control to change its appearance and be
 
 1. Open `Form1` in the Windows Forms Designer.
 
-2. In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.
+1. In the **Toolbox**, double-click `UserControl1` to create an instance of `UserControl1` on the form.
 
      An instance of `UserControl1` is hosted in a new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost1`.
 
-3. In the smart tag panel for `elementHost1`, click **Edit Hosted Content** from the drop-down list.
+1. In the smart tag panel for `elementHost1`, click **Edit Hosted Content** from the drop-down list.
 
      `UserControl1` opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
 
-4. In XAML view, insert the following XAML after the `<UserControl>` opening tag.
+1. In XAML view, insert the following XAML after the `<UserControl>` opening tag.
 
      This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).
 
@@ -112,7 +112,7 @@ You can apply different styling to a WPF control to change its appearance and be
    </UserControl.Resources>
    ```
 
-4. Apply the `SimpleButton` style defined in the previous step to the Cancel button by inserting the following XAML in the `<Button>` tag of the Cancel button.
+1. Apply the `SimpleButton` style defined in the previous step to the Cancel button by inserting the following XAML in the `<Button>` tag of the Cancel button.
 
    ```xaml
    Style="{StaticResource SimpleButton}
@@ -125,15 +125,15 @@ You can apply different styling to a WPF control to change its appearance and be
                 Style="{StaticResource SimpleButton}">Cancel</Button>
    ```
 
-5. Build the project.
+1. Build the project.
 
-6. Open `Form1` in the Windows Forms Designer.
+1. Open `Form1` in the Windows Forms Designer.
 
-7. The new style is applied to the button control.
+1. The new style is applied to the button control.
 
-8. From the **Debug** menu, select **Start Debugging** to run the application.
+1. From the **Debug** menu, select **Start Debugging** to run the application.
 
-9. Click the OK and Cancel buttons and view the differences.
+1. Click the OK and Cancel buttons and view the differences.
 
 ## See also
 

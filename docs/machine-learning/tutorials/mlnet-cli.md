@@ -90,12 +90,12 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     You will see output from the CLI, similar to:
 
+    <!-- markdownlint-disable MD023 -->
     # [Windows](#tab/windows)
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-powershell.gif)
 
     # [macOS Bash](#tab/macosbash)
-
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-bash.gif)
 

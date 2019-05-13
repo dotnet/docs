@@ -22,14 +22,14 @@
   <Docs>
     <summary>Specifies search flags for finding a domain controller in a domain.</summary>
     <remarks>To be added.</remarks>
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.String,System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.String,System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
-    <altmember cref="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.LocatorFlags)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.FindDomainController(System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.DomainController.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog(System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
+    <altmember cref="M:System.DirectoryServices.ActiveDirectory.GlobalCatalog.FindOne(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.LocatorOptions)" />
   </Docs>
   <Members>
     <Member MemberName="AvoidSelf">

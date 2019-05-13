@@ -1847,8 +1847,8 @@ if (myObject is float) {
  -or-  
   
  The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.LookupId" /> property.</exception>
-        <altmember cref="M:System.Messaging.MessageQueue.PeekByLookupId" />
-        <altmember cref="M:System.Messaging.MessageQueue.ReceiveByLookupId" />
+        <altmember cref="Overload:System.Messaging.MessageQueue.PeekByLookupId" />
+        <altmember cref="Overload:System.Messaging.MessageQueue.ReceiveByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="MessageType">

@@ -4752,7 +4752,7 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <exception cref="T:System.InvalidOperationException">The message with the specified <paramref name="lookupId" /> could not be found.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <altmember cref="P:System.Messaging.Message.LookupId" />
-        <altmember cref="M:System.Messaging.MessageQueue.ReceiveByLookupId" />
+        <altmember cref="Overload:System.Messaging.MessageQueue.ReceiveByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="PeekByLookupId">
@@ -4816,7 +4816,7 @@ The name of the computer is not valid, possibly because the syntax is incorrect.
         <exception cref="T:System.Messaging.MessageQueueException">An error occurred when accessing a Message Queuing method.</exception>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="action" /> parameter is not one of the <see cref="T:System.Messaging.MessageLookupAction" /> members.</exception>
         <altmember cref="P:System.Messaging.Message.LookupId" />
-        <altmember cref="M:System.Messaging.MessageQueue.ReceiveByLookupId" />
+        <altmember cref="Overload:System.Messaging.MessageQueue.ReceiveByLookupId" />
       </Docs>
     </Member>
     <Member MemberName="PeekCompleted">

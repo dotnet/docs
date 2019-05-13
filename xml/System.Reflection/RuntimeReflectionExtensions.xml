@@ -536,7 +536,7 @@ The invoked method is not supported in the base class. Derived classes must prov
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is <see langword="null" />.</exception>
-        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags" />
+        <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeProperty">

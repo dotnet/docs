@@ -63,7 +63,7 @@ public abstract class Enumeration : IComparable
 You can use this class as a type in any entity or value object, as for the following `CardType` : `Enumeration` class:
 
 ```csharp
-public abstract class CardType : Enumeration
+public class CardType : Enumeration
 {
     public static CardType Amex = new CardType(1, "Amex");
     public static CardType Visa = new CardType(2, "Visa");

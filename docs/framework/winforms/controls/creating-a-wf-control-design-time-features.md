@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], controls"
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
 ---
-
 # Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features
 
 The design-time experience for a custom control can be enhanced by authoring an associated custom designer.
@@ -54,7 +53,7 @@ Tasks illustrated in this walkthrough include:
 
 When you are finished, your custom control will look something like the following:
 
-![A possible MarqueeControl arrangement](./media/demomarqueecontrol.gif "DemoMarqueeControl")
+![A possible MarqueeControl arrangement](./media/creating-a-wf-control-design-time-features/demo-marquee-control.gif)
 
 For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 
@@ -63,17 +62,13 @@ For the complete code listing, see [How to: Create a Windows Forms Control That 
 
 ## Prerequisites
 
-In order to complete this walkthrough, you will need:
-
-- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.
+In order to complete this walkthrough, you'll need Visual Studio.
 
 ## Creating the Project
 
 The first step is to create the application project. You will use this project to build the application that hosts the custom control.
 
-### To create the project
-
-- Create a Windows Forms Application project called "MarqueeControlTest" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
+Open Visual Studio and create a Windows Forms Application project called "MarqueeControlTest" (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
 
 ## Creating a Control Library Project
 
@@ -177,7 +172,7 @@ When you are developing a custom design-time experience, it will be necessary to
 
 2. In the "MarqueeControlLibrary Property Pages" dialog box, select the **Debug** page.
 
-3. In the **Start Action** section, select **Start External Program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to browse for the Visual Studio IDE. The name of the executable file is devenv.exe, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
+3. In the **Start Action** section, select **Start External Program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/creating-a-wf-control-design-time-features/visual-studio-ellipsis-button.png)) button to browse for the Visual Studio IDE. The name of the executable file is devenv.exe, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
 
 4. Click OK to close the dialog box.
 

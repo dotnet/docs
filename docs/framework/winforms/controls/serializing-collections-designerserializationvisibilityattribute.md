@@ -16,22 +16,17 @@ ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
 
 Your custom controls will sometimes expose a collection as a property. This walkthrough demonstrates how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> class to control how a collection is serialized at design time. Applying the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content> value to your collection property ensures that the property will be serialized.
 
- To copy the code in this topic as a single listing, see [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120)).
-
-> [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+To copy the code in this topic as a single listing, see [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120)).
 
 ## Prerequisites
- In order to complete this walkthrough, you will need:
 
-- Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.
+You need Visual Studio to complete this walkthrough.
 
-## Creating a Control That Has a Serializable Collection
- The first step is to create a control that has a serializable collection as a property. You can edit the contents of this collection using the **Collection Editor**, which you can access from the **Properties** window.
+## Create a control with a serializable collection
 
-### To create a control with a serializable collection
+The first step is to create a control that has a serializable collection as a property. You can edit the contents of this collection using the **Collection Editor**, which you can access from the **Properties** window.
 
-1. Create a Windows Control Library project called `SerializationDemoControlLib`. For more information, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
+1. In Visual Studio, create a Windows Control Library project called `SerializationDemoControlLib`. For more information, see [Windows Control Library Template](https://docs.microsoft.com/previous-versions/kxczf775(v=vs.100)).
 
 2. Rename `UserControl1` to `SerializationDemoControl`. For more information, see [Rename a code symbol refactoring](/visualstudio/ide/reference/rename).
 
@@ -56,25 +51,25 @@ Your custom controls will sometimes expose a collection as a property. This walk
 
 7. Define the `Strings` property on the `SerializationDemoControl`.
 
-> [!NOTE]
-> The <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content> value is used to enable serialization of the collection.
+   > [!NOTE]
+   > The <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content> value is used to enable serialization of the collection.
 
- [!code-cpp[System.ComponentModel.DesignerSerializationVisibilityAttribute#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.DesignerSerializationVisibilityAttribute/cpp/form1.cpp#5)]
- [!code-csharp[System.ComponentModel.DesignerSerializationVisibilityAttribute#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.DesignerSerializationVisibilityAttribute/CS/form1.cs#5)]
- [!code-vb[System.ComponentModel.DesignerSerializationVisibilityAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.DesignerSerializationVisibilityAttribute/VB/form1.vb#5)]
+   [!code-cpp[System.ComponentModel.DesignerSerializationVisibilityAttribute#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.DesignerSerializationVisibilityAttribute/cpp/form1.cpp#5)]
+   [!code-csharp[System.ComponentModel.DesignerSerializationVisibilityAttribute#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.DesignerSerializationVisibilityAttribute/CS/form1.cs#5)]
+   [!code-vb[System.ComponentModel.DesignerSerializationVisibilityAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.DesignerSerializationVisibilityAttribute/VB/form1.vb#5)]
 
-1. Press F5 to build the project and run your control in the **UserControl Test Container**.
+8. Press **F5** to build the project and run your control in the **UserControl Test Container**.
 
-2. Find the `Strings` property in the <xref:System.Windows.Forms.PropertyGrid> of the **UserControl Test Container**. Click the `Strings` property, then click the ellipsis (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to open the **String Collection Editor**.
+9. Find the `Strings` property in the <xref:System.Windows.Forms.PropertyGrid> of the **UserControl Test Container**. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.
 
-3. Enter several strings in the **String Collection Editor**. Separate them by pressing the ENTER key at the end of each string. Click **OK** when you are finished entering strings.
+10. Enter several strings in the **String Collection Editor**. Separate them by pressing the **Enter** key at the end of each string. Click **OK** when you are finished entering strings.
 
-> [!NOTE]
-> The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
+   > [!NOTE]
+   > The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
 
 ## Serializing a Collection Property
 
-To test the serialization behavior of your control, you will place it on a form and change the contents of the collection with the **Collection Editor**. You can see the serialized collection state by looking at a special designer file, into which the **Windows Forms Designer** emits code.
+To test the serialization behavior of your control, you will place it on a form and change the contents of the collection with the **Collection Editor**. You can see the serialized collection state by looking at a special designer file into which the **Windows Forms Designer** emits code.
 
 ### To serialize a collection
 
@@ -84,7 +79,7 @@ To test the serialization behavior of your control, you will place it on a form 
 
 3. Place a `SerializationDemoControl` on your form.
 
-4. Find the `Strings` property in the **Properties** window. Click the `Strings` property, then click the ellipsis (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to open the **String Collection Editor**.
+4. Find the `Strings` property in the **Properties** window. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.
 
 5. Type several strings in the **String Collection Editor**. Separate them by pressing the ENTER key at the end of each string. Click **OK** when you are finished entering strings.
 

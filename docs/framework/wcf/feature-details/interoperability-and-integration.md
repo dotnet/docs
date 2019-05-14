@@ -17,7 +17,7 @@ This section covers interoperability and integration with Windows Communication 
  Discusses the various methods for COM applications to call WCF services.  
   
  [Migrating .NET Remoting Applications to WCF](../../../../docs/framework/wcf/feature-details/migrating-net-remoting-applications-to-wcf.md)  
- Describes how WCF can be used with [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] remoting.  
+ Describes how WCF can be used with .NET Framework remoting.  
   
  [Interoperability with Web Services Enhancements 3.0](../../../../docs/framework/wcf/feature-details/interoperability-with-web-services-enhancements-3-0.md)  
  Describes how WCF can be used with Web services implemented with Web Services Enhancements (WSE) 3.0.  

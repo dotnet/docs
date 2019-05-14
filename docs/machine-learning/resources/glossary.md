@@ -2,14 +2,11 @@
 title: Machine learning glossary
 description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
 ms.custom: seodec18
-ms.date: 03/05/2019
+ms.date: 05/09/2019
 ---
 # Machine learning glossary of important terms
 
 The following list is a compilation of important machine learning terms that are useful as you build your custom models in ML.NET.
-
-> [!NOTE]
-> This documentation refers to ML.NET, which is currently in Preview. Material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 ## Accuracy
 
@@ -22,6 +19,10 @@ In [binary classification](#binary-classification), an evaluation metric that is
 ## Binary classification
 
 A [classification](#classification) case where the [label](#label) is only one out of two classes. For more information, see the [Binary classification](tasks.md#binary-classification) section of the [Machine learning tasks](tasks.md) topic.
+
+## Calibration
+
+Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. 
 
 ## Catalog 
 
@@ -46,7 +47,7 @@ Data is central to any machine learning application. In ML.NET data is represent
 
 ## Estimator
 
-A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator`1> interface.
+A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator%601> interface.
 
 An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transformer](#transformer).
 
@@ -80,6 +81,12 @@ The element to be predicted with the machine learning model. For example, the br
 
 In [classification](#classification), an evaluation metric that characterizes the accuracy of a classifier. The smaller log loss is, the more accurate a classifier is.
 
+## Loss function
+
+A loss function is the difference between the training label values and the prediction made by the model. The parameters of the model are estimated by minimizing the loss function.
+
+Different trainers can be configured with different loss functions.
+
 ## Mean absolute error (MAE)
 
 In [regression](#regression), an evaluation metric that is the average of all the model errors, where model error is the distance between the predicted [label](#label) value and the correct label value.
@@ -111,6 +118,13 @@ In [classification](#classification), the precision for a class is the number of
 ## Recall
 
 In [classification](#classification), the recall for a class is the number of items correctly predicted as belonging to that class divided by the total number of items that actually belong to the class.
+
+## Regularization
+
+ Regularization penalizes a linear model for being too complicated. There are two types of regularization:
+
+- $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
+- $L_2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
 
 ## Regression
 

@@ -1,15 +1,14 @@
 ---
-title: "How-To: Re-train a model"
+title: Re-train a model
 description: Learn how retrain a model in ML.NET
-ms.date: 04/23/2019
+ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to retrain a model using existing model parameters.
 ---
 
-# How-To: Re-train a machine learning model in ML.NET
+# Re-train a model
 
 Learn how to retrain a machine learning model in ML.NET.
 
@@ -48,7 +47,7 @@ ITransformer trainedModel = mlContext.Model.Load("ogd_model.zip", out modelSchem
 
 ## Extract pre-trained model parameters
 
-Once the model is loaded, extract the learned model parameters by accessing the [`Model`](xref:Microsoft.ML.Data.PredictionTransformerBase`1.Model*) property of the pre-trained model. The pre-trained model was trained using the linear regression model [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer) which creates a[`RegressionPredictionTransformer`](xref:Microsoft.ML.Data.RegressionPredictionTransformer`1) that outputs [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters). These linear regression model parameters contain the learned bias and weights or coefficients of the model. These values will be used as a starting point for the new re-trained model.
+Once the model is loaded, extract the learned model parameters by accessing the [`Model`](xref:Microsoft.ML.Data.PredictionTransformerBase`1.Model*) property of the pre-trained model. The pre-trained model was trained using the linear regression model [`OnlineGradientDescentTrainer`](xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer) which creates a[`RegressionPredictionTransformer`](xref:Microsoft.ML.Data.RegressionPredictionTransformer%601) that outputs [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters). These linear regression model parameters contain the learned bias and weights or coefficients of the model. These values will be used as a starting point for the new re-trained model.
 
 ```csharp
 // Extract trained model parameters
@@ -56,7 +55,7 @@ LinearRegressionModelParameters originalModelParameters =
     ((ISingleFeaturePredictionTransformer<object>)trainedModel).Model as LinearRegressionModelParameters;
 ```
 
-## Retrain model
+## Re-train model
 
 The process for retraining a model is no different than that of training a model. The only difference is, the [`Fit`](xref:Microsoft.ML.Trainers.OnlineLinearTrainer`2.Fit*) method in addition to the data also takes as input the original learned model parameters and uses them as a starting point in the re-training process.  
 
@@ -96,7 +95,7 @@ RegressionPredictionTransformer<LinearRegressionModelParameters> retrainedModel 
         .Fit(transformedNewData, originalModelParameters);
 ```
 
-## Comparing Model Parameters
+## Compare model parameters
 
 How do you know if re-training actually happened? One way would be to compare whether the re-trained model's parameters are different than those of the original model. The code sample below compares the original against the re-trained model weights and outputs them to the console.
 

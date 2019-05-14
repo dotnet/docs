@@ -31,7 +31,7 @@ Provides links to topics that introduce and discuss important features of Visual
 Contains the Visual Basic language and compiler information.  
 
 [Developing Applications with Visual Basic](../visual-basic/developing-apps/index.md)\
-Discusses various aspects of development in Visual Basic, such as security, exception handling, and using the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.
+Discusses various aspects of development in Visual Basic, such as security, exception handling, and using the .NET Framework class library.
 
 [COM Interop](../visual-basic/programming-guide/com-interop/index.md)\
 Explains the interoperability issues associated with creating and using component object model (COM) objects with Visual Basic.  
@@ -48,4 +48,4 @@ Provides links to step-by-step instructions for common scenarios.
 Provides links to topics that help you learn about the basics of Visual Studio.  
   
 [.NET API Browser](../../api/index.md)\
-Provides entry to the library of classes, interfaces, and value types that are included in the Microsoft [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.
+Provides entry to the library of classes, interfaces, and value types that are included in the Microsoft .NET Framework SDK.

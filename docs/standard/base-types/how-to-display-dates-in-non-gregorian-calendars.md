@@ -79,11 +79,6 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
   
  Regardless of the calendar used to create a <xref:System.DateTime> or <xref:System.DateTimeOffset> value in this example, that value is typically expressed as a Gregorian date. This is because the <xref:System.DateTime> and <xref:System.DateTimeOffset> types do not preserve any calendar information. Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001. The interpretation of that number depends on the calendar. For most cultures, the default calendar is the Gregorian calendar.  
   
-## Compiling the Code  
- This example requires a reference to System.Core.dll.  
-  
- Compile the code at the command line using csc.exe or vb.exe. To compile the code in Visual Studio, put it in a console application project template.  
-  
 ## See also
 
 - [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)

@@ -40,7 +40,7 @@ ms.author: "ronpet"
   
 - Conversion from an interface object back to the original type that implements that interface.  In C#, this conversion requires a casting operator. In Visual Basic, it requires the `CType` operator if `Option Strict` is on.  
   
- In addition to these automatic conversions, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides several features that support custom type conversion. These include the following:  
+ In addition to these automatic conversions, the .NET Framework provides several features that support custom type conversion. These include the following:  
   
 - The `Implicit` operator, which defines the available widening conversions between types. For more information, see the [Implicit Conversion with the Implicit Operator](#implicit_conversion_with_the_implicit_operator) section.  
   
@@ -91,7 +91,7 @@ ms.author: "ronpet"
 |<xref:System.UInt32>|<xref:System.UInt32.MaxValue?displayProperty=nameWithType> is greater than <xref:System.Int32.MaxValue?displayProperty=nameWithType>.|  
 |<xref:System.UInt64>|<xref:System.UInt64.MaxValue?displayProperty=nameWithType> is greater than <xref:System.Int32.MaxValue?displayProperty=nameWithType>.|  
   
- To handle such narrowing conversions, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows types to define an `Explicit` operator. Individual language compilers can then implement this operator using their own syntax, or a member of the <xref:System.Convert> class can be called to perform the conversion. (For more information about the <xref:System.Convert> class, see [The Convert Class](#Convert) later in this topic.) The following example illustrates the use of language features to handle the explicit conversion of these potentially out-of-range integer values to <xref:System.Int32> values.  
+ To handle such narrowing conversions, the .NET Framework allows types to define an `Explicit` operator. Individual language compilers can then implement this operator using their own syntax, or a member of the <xref:System.Convert> class can be called to perform the conversion. (For more information about the <xref:System.Convert> class, see [The Convert Class](#Convert) later in this topic.) The following example illustrates the use of language features to handle the explicit conversion of these potentially out-of-range integer values to <xref:System.Int32> values.  
   
  [!code-csharp[Conceptual.Conversion#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/explicit1.cs#4)]
  [!code-vb[Conceptual.Conversion#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/explicit1.vb#4)]  
@@ -121,7 +121,7 @@ ms.author: "ronpet"
   
 <a name="the_iconvertible_interface"></a>   
 ## The IConvertible Interface  
- To support the conversion of any type to a common language runtime base type, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the <xref:System.IConvertible> interface. The implementing type is required to provide the following:  
+ To support the conversion of any type to a common language runtime base type, the .NET Framework provides the <xref:System.IConvertible> interface. The implementing type is required to provide the following:  
   
 - A method that returns the <xref:System.TypeCode> of the implementing type.  
   
@@ -137,9 +137,9 @@ ms.author: "ronpet"
  The requirement to call the conversion method on its interface rather than on the implementing type makes explicit interface implementations relatively expensive. Instead, we recommend that you call the appropriate member of the <xref:System.Convert> class to convert between common language runtime base types. For more information, see the next section, [The Convert Class](#Convert).  
   
 > [!NOTE]
->  In addition to the <xref:System.IConvertible> interface and the <xref:System.Convert> class provided by the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], individual languages may also provide ways to perform conversions. For example, C# uses casting operators; Visual Basic uses compiler-implemented conversion functions such as `CType`, `CInt`, and `DirectCast`.  
+>  In addition to the <xref:System.IConvertible> interface and the <xref:System.Convert> class provided by the .NET Framework, individual languages may also provide ways to perform conversions. For example, C# uses casting operators; Visual Basic uses compiler-implemented conversion functions such as `CType`, `CInt`, and `DirectCast`.  
   
- For the most part, the <xref:System.IConvertible> interface is designed to support conversion between the base types in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. However, the interface can also be implemented by a custom type to support conversion of that type to other custom types. For more information, see the section [Custom Conversions with the ChangeType Method](#ChangeType) later in this topic.  
+ For the most part, the <xref:System.IConvertible> interface is designed to support conversion between the base types in the .NET Framework. However, the interface can also be implemented by a custom type to support conversion of that type to other custom types. For more information, see the section [Custom Conversions with the ChangeType Method](#ChangeType) later in this topic.  
   
  [Back to top](#top)  
   

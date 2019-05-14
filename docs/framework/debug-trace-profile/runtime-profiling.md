@@ -18,7 +18,7 @@ ms.author: "ronpet"
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  
   
 ## Tracking Performance Using the Performance Monitor (Perfmon.exe)  
- The Performance Monitor is the easiest tool to use to profile your [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] application. The Performance Monitor graphically represents data found in the .NET Framework performance counters that are installed with the common language runtime and the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]. These counters can be used to monitor everything from memory management to just-in-time (JIT) compiler performance. They tell you about the resources your application uses, which is an indirect measure of your application's performance. Use these counters to understand how your application works internally.  
+ The Performance Monitor is the easiest tool to use to profile your .NET Framework application. The Performance Monitor graphically represents data found in the .NET Framework performance counters that are installed with the common language runtime and the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)]. These counters can be used to monitor everything from memory management to just-in-time (JIT) compiler performance. They tell you about the resources your application uses, which is an indirect measure of your application's performance. Use these counters to understand how your application works internally.  
   
 #### To run Perfmon.exe on Windows Vista and later versions  
   
@@ -51,7 +51,7 @@ Profiling is a method of gathering performance data in any development or deploy
 >  On systems on which the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] is installed, the Performance Monitor may not display data for performance counters in some categories, such as **.NET CLR Data** and **.NET CLR Networking**, for applications that were developed using the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)]. If this is the case, you can configure Performance Monitor to display this data by adding the [\<forcePerformanceCounterUniqueSharedMemoryReads>](../../../docs/framework/configure-apps/file-schema/runtime/forceperformancecounteruniquesharedmemoryreads-element.md) element to the application's configuration file.  
   
 ## Reading and Creating Performance Counters Programmatically  
- The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides classes you can use to programmatically access the same performance information that is available in the Performance console. You can also use these classes to create custom performance counters. The following table describes some of the performance monitoring classes that are provided in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
+ The .NET Framework provides classes you can use to programmatically access the same performance information that is available in the Performance console. You can also use these classes to create custom performance counters. The following table describes some of the performance monitoring classes that are provided in the .NET Framework.  
   
 |Class|Description|  
 |-----------|-----------------|  

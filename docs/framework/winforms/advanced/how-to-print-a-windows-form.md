@@ -18,9 +18,6 @@ As part of the development process, you typically will want to print a copy of y
  [!code-csharp[System.Drawing.Graphics.CopyFromScreen#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Graphics.CopyFromScreen/CS/Form1.cs#1)]
  [!code-vb[System.Drawing.Graphics.CopyFromScreen#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Graphics.CopyFromScreen/VB/Form1.vb#1)]  
   
-## Compiling the Code  
- This is a complete code example that contains a `Main` method.  
-  
 ## Robust Programming  
  The following conditions may cause an exception:  
   

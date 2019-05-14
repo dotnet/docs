@@ -17,7 +17,7 @@ This section provides links to reference information about various aspects of Vi
  Provides links to information about the command-line compiler, which provides an alternative to compiling programs from the Visual Studio IDE.  
   
  [.NET Framework Reference Information](../../visual-basic/reference/net-framework-reference-information.md)  
- Provides links to information on working with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
+ Provides links to information on working with the .NET Framework class library.  
   
  [Visual Basic Language Specification](../../visual-basic/reference/language-specification/index.md)  
  Provides links to the complete Visual Basic language specification, which contains detailed information on all aspects of the language.  

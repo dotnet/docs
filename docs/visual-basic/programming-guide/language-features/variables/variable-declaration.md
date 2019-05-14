@@ -42,7 +42,7 @@ You declare a variable to specify its name and characteristics. The declaration 
   
 - An object type, or class, defined either in your application or in another application  
   
-- A [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class, such as <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.TextBox>  
+- A .NET Framework class, such as <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.TextBox>  
   
 - An interface type, such as <xref:System.IComparable> or <xref:System.IDisposable>  
   

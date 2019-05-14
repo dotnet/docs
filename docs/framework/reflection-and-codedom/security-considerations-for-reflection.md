@@ -82,7 +82,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 - Assembly A can use reflection to access private members of assembly B, because the grant set of assembly B does not include any permissions that A has not been granted.  
   
-- Assembly A cannot use reflection to access private members of [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] assemblies such as mscorlib.dll, because mscorlib.dll is fully trusted and therefore has permissions that have not been granted to assembly A. A <xref:System.MemberAccessException> is thrown when code access security walks the stack at run time.  
+- Assembly A cannot use reflection to access private members of .NET Framework assemblies such as mscorlib.dll, because mscorlib.dll is fully trusted and therefore has permissions that have not been granted to assembly A. A <xref:System.MemberAccessException> is thrown when code access security walks the stack at run time.  
   
 ## Serialization  
  For serialization, <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A?displayProperty=nameWithType> flag provides the ability to get and set members of serializable types, regardless of accessibility. This permission enables code to discover and change the private state of an instance. (In addition to being granted the appropriate permissions, the type must be [marked](../../../docs/standard/attributes/applying-attributes.md) as serializable in metadata.)  
@@ -94,7 +94,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 - Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], transparent code cannot use reflection to access security-critical members.  
   
-- The <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag is introduced in the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
+- The <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag is introduced in the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
   
 - Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag is required.  
   

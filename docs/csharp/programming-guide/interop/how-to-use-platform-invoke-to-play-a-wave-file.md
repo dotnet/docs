@@ -23,8 +23,6 @@ The following C# code example illustrates how to use platform invoke services to
   
 ## Compiling the Code  
   
-### To compile the code  
-  
 1. Create a new C# Windows Application project in Visual Studio and name it **WinSound**.  
   
 2. Copy the code above, and paste it over the contents of the `Form1.cs` file.  
@@ -34,9 +32,6 @@ The following C# code example illustrates how to use platform invoke services to
      [!code-csharp[csProgGuideInterop#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/WinSound.cs#4)]  
   
 4. Compile and run the code.  
-  
-## .NET Framework Security  
- For more information, see [Security in .NET](../../../standard/security/index.md).  
   
 ## See also
 

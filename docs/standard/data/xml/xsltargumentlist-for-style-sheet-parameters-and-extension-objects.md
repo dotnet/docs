@@ -30,7 +30,7 @@ The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet 
 ## XSLT Style Sheet Parameters  
  XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace Uniform Resource Identifier (URI) are associated with the parameter object at that time.  
   
- The parameter object should correspond to a World Wide Web Consortium (W3C) type. The following table shows the corresponding W3C types, the equivalent [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes (type), and whether the W3C type is an XML Path Language (XPath) type or XSLT type.  
+ The parameter object should correspond to a World Wide Web Consortium (W3C) type. The following table shows the corresponding W3C types, the equivalent .NET Framework classes (type), and whether the W3C type is an XML Path Language (XPath) type or XSLT type.  
   
 |W3C Type|Equivalent .NET Framework class (type)|XPath type or XSLT type|  
 |--------------|----------------------------------------------|-----------------------------|  

@@ -91,7 +91,7 @@ var filteredItems = from item in myItems
 
 Isn’t the API syntax just a more concise way to do the query syntax?
 
-No. The query syntax allows for the use the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code which is hard to read.
+No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code which is hard to read.
 
 So this begs the question, **should you just use the query syntax?**
 

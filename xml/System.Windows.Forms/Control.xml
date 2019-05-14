@@ -14276,15 +14276,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
    
   
 ## Examples  
- The following code example demonstrates a drag-and-drop operation between two <xref:System.Windows.Forms.ListBox> controls. The example calls the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method when the drag action starts. The drag action starts if the mouse has moved more than <xref:System.Windows.Forms.SystemInformation.DragSize%2A?displayProperty=nameWithType> from the mouse location during the <xref:System.Windows.Forms.Control.MouseDown> event. The <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method is used to determine the index of the item to drag during the `MouseDown` event.  
-  
- The example also demonstrates using custom cursors for the drag-and-drop operation. The example requires that two cursor files,`3dwarro.cur` and `3dwno.cur`, exist in the application directory, for the custom drag and no-drop cursors, respectively. The custom cursors will be used if the `UseCustomCursorsCheck`<xref:System.Windows.Forms.CheckBox> is checked. The custom cursors are set in the <xref:System.Windows.Forms.Control.GiveFeedback> event handler.  
-  
- The keyboard state is evaluated in the <xref:System.Windows.Forms.Control.DragOver> event handler for the right `ListBox`, to determine what the drag operation will be based on state of the SHIFT, CTRL, ALT, or CTRL+ALT keys. The location in the `ListBox` where the drop would occur is also determined during the `DragOver` event. If the data to drop is not a `String`, then the <xref:System.Windows.Forms.DragEventArgs.Effect%2A?displayProperty=nameWithType> is set to `None` in <xref:System.Windows.Forms.DragDropEffects>. Finally, the status of the drop is displayed in the `DropLocationLabel`<xref:System.Windows.Forms.Label>.  
-  
- The data to drop for the right `ListBox` is determined in the <xref:System.Windows.Forms.Control.DragDrop> event handler and the `String` value is added at the appropriate place in the `ListBox`. If the drag operation moves outside the bounds of the form, then the drag-and-drop operation is canceled in the <xref:System.Windows.Forms.Control.QueryContinueDrag> event handler.  
-  
- This code excerpt demonstrates using the <xref:System.Windows.Forms.Control.QueryContinueDrag> event. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
+ This code excerpt demonstrates using the <xref:System.Windows.Forms.Control.QueryContinueDrag> event to cancel the drag-and-drop operation if the drag operation moves outside the bounds of the form. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
   
  [!code-cpp[System.Windows.Forms.Control.DoDragDrop#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/CPP/form1.cpp#6)]
  [!code-csharp[System.Windows.Forms.Control.DoDragDrop#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/CS/form1.cs#6)]

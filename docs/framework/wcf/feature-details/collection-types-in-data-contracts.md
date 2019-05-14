@@ -11,9 +11,9 @@ helpviewer_keywords:
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
 ---
 # Collection Types in Data Contracts
-A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.  
+A *collection* is a list of items of a certain type. In the .NET Framework, such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.  
   
- A special form of collection exists that represents an association between one item (the "key") and another (the "value"). In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], these are represented by types such as <xref:System.Collections.Hashtable> and the generic dictionary. For example, an association collection may map a city ("key") to its population ("value"). These collections are called *dictionary collections*, regardless of their actual type.  
+ A special form of collection exists that represents an association between one item (the "key") and another (the "value"). In the .NET Framework, these are represented by types such as <xref:System.Collections.Hashtable> and the generic dictionary. For example, an association collection may map a city ("key") to its population ("value"). These collections are called *dictionary collections*, regardless of their actual type.  
   
  Collections receive special treatment in the data contract model.  
   
@@ -77,9 +77,9 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
 ### Collection Data Contract Naming  
  The rules for naming collection types are similar to those for naming regular data contract types, as described in [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md), although some important differences exist:  
   
--   The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute is used to customize the name, instead of the <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute also has `Name` and `Namespace` properties.  
+- The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute is used to customize the name, instead of the <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute also has `Name` and `Namespace` properties.  
   
--   When the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute is not applied, the default name and namespace for collection types depend on the names and namespaces of types contained within the collection. They are not affected by the name and namespace of the collection type itself. For an example, see the following types.  
+- When the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute is not applied, the default name and namespace for collection types depend on the names and namespaces of types contained within the collection. They are not affected by the name and namespace of the collection type itself. For an example, see the following types.  
   
     ```csharp  
     public CustomerList1 : Collection<string> {}  
@@ -117,7 +117,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  Notice that this is no longer equivalent to the XML representation of the non-customized types.  
   
--   You can use the `Name` and `Namespace` properties to further customize the naming. See the following class.  
+- You can use the `Name` and `Namespace` properties to further customize the naming. See the following class.  
   
      [!code-csharp[c_collection_types_in_data_contracts#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_collection_types_in_data_contracts/cs/program.cs#3)]
      [!code-vb[c_collection_types_in_data_contracts#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_collection_types_in_data_contracts/vb/program.vb#3)]  
@@ -272,9 +272,9 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
   
  If a type implements more than one list collection interface, the following restrictions apply:  
   
--   If the type implements Generic <xref:System.Collections.Generic.IEnumerable%601> (or its derived interfaces) multiple times for different types, the type is not considered a valid referenced collection type and is ignored. This is true even if some implementations are invalid or use open generics. For example, a type that implements Generic <xref:System.Collections.Generic.IEnumerable%601> of `int` and Generic <xref:System.Collections.Generic.IEnumerable%601> of T would never be used as a referenced collection of `int` or any other type, regardless of whether the type has an `Add` method accepting `int` or an `Add` method accepting a parameter of type T, or both.  
+- If the type implements Generic <xref:System.Collections.Generic.IEnumerable%601> (or its derived interfaces) multiple times for different types, the type is not considered a valid referenced collection type and is ignored. This is true even if some implementations are invalid or use open generics. For example, a type that implements Generic <xref:System.Collections.Generic.IEnumerable%601> of `int` and Generic <xref:System.Collections.Generic.IEnumerable%601> of T would never be used as a referenced collection of `int` or any other type, regardless of whether the type has an `Add` method accepting `int` or an `Add` method accepting a parameter of type T, or both.  
   
--   If the type implements a generic collection interface as well as <xref:System.Collections.IList>, the type is never used as a referenced collection type unless the generic collection interface is a closed generic of type <xref:System.Object>.  
+- If the type implements a generic collection interface as well as <xref:System.Collections.IList>, the type is never used as a referenced collection type unless the generic collection interface is a closed generic of type <xref:System.Object>.  
   
  For dictionary collections, only the cases in the following table are supported.  
   
@@ -297,21 +297,21 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ### Serializing Collections  
  The following is a list of collection rules for serialization:  
   
--   Combining collection types (having collections of collections) is allowed. Jagged arrays are treated as collections of collections. Multidimensional arrays are not supported.  
+- Combining collection types (having collections of collections) is allowed. Jagged arrays are treated as collections of collections. Multidimensional arrays are not supported.  
   
--   Arrays of byte and arrays of <xref:System.Xml.XmlNode> are special array types that are treated as primitives, not collections. Serializing an array of byte results in a single XML element that contains a chunk of Base64-encoded data, instead of a separate element for each byte. For more information about how an array of <xref:System.Xml.XmlNode> is treated, see [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md). Of course, these special types can themselves participate in collections: an array of array of byte results in multiple XML elements, with each containing a chunk of Base64-encoded data.  
+- Arrays of byte and arrays of <xref:System.Xml.XmlNode> are special array types that are treated as primitives, not collections. Serializing an array of byte results in a single XML element that contains a chunk of Base64-encoded data, instead of a separate element for each byte. For more information about how an array of <xref:System.Xml.XmlNode> is treated, see [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md). Of course, these special types can themselves participate in collections: an array of array of byte results in multiple XML elements, with each containing a chunk of Base64-encoded data.  
   
--   If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a collection type, the type is treated as a regular data contract type, not as a collection.  
+- If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a collection type, the type is treated as a regular data contract type, not as a collection.  
   
--   If a collection type implements the <xref:System.Xml.Serialization.IXmlSerializable> interface, the following rules apply, given a type `myType:IList<string>, IXmlSerializable`:  
+- If a collection type implements the <xref:System.Xml.Serialization.IXmlSerializable> interface, the following rules apply, given a type `myType:IList<string>, IXmlSerializable`:  
   
-    -   If the declared type is `IList<string>`, the type is serialized as a list.  
+    - If the declared type is `IList<string>`, the type is serialized as a list.  
   
-    -   If the declared type is `myType`, it is serialized as `IXmlSerializable`.  
+    - If the declared type is `myType`, it is serialized as `IXmlSerializable`.  
   
-    -   If the declared type is `IXmlSerializable`, it is serialized as `IXmlSerializable`, but only if you add `myType` to the list of known types.  
+    - If the declared type is `IXmlSerializable`, it is serialized as `IXmlSerializable`, but only if you add `myType` to the list of known types.  
   
--   Collections are serialized and deserialized using the methods shown in the following table.  
+- Collections are serialized and deserialized using the methods shown in the following table.  
   
 |Collection type implements|Method(s) called on serialization|Method(s) called on deserialization|  
 |--------------------------------|-----------------------------------------|-------------------------------------------|  
@@ -325,22 +325,22 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
   
  The preceding table lists collection interfaces in descending order of precedence. This means, for example, that if a type implements both <xref:System.Collections.IList> and Generic <xref:System.Collections.Generic.IEnumerable%601>, the collection is serialized and deserialized according to the <xref:System.Collections.IList> rules:  
   
--   At deserialization, all collections are deserialized by first creating an instance of the type by calling the default constructor, which must be present for the serializer to treat a collection type as a collection during both serialization and deserialization.  
+- At deserialization, all collections are deserialized by first creating an instance of the type by calling the default constructor, which must be present for the serializer to treat a collection type as a collection during both serialization and deserialization.  
   
--   If the same generic collection interface is implemented more than once (for example, if a type implements both Generic <xref:System.Collections.Generic.ICollection%601> of `Integer` and Generic <xref:System.Collections.Generic.ICollection%601> of <xref:System.String>) and no higher-precedence interface is found, the collection is not treated as a valid collection.  
+- If the same generic collection interface is implemented more than once (for example, if a type implements both Generic <xref:System.Collections.Generic.ICollection%601> of `Integer` and Generic <xref:System.Collections.Generic.ICollection%601> of <xref:System.String>) and no higher-precedence interface is found, the collection is not treated as a valid collection.  
   
--   Collection types can have the <xref:System.SerializableAttribute> attribute applied to them and can implement the <xref:System.Runtime.Serialization.ISerializable> interface. Both of these are ignored. However, if the type does not fully meet collection type requirements (for example, the `Add` method is missing), the type is not considered a collection type, and thus the <xref:System.SerializableAttribute> attribute and the <xref:System.Runtime.Serialization.ISerializable> interface are used to determine whether the type can be serialized.  
+- Collection types can have the <xref:System.SerializableAttribute> attribute applied to them and can implement the <xref:System.Runtime.Serialization.ISerializable> interface. Both of these are ignored. However, if the type does not fully meet collection type requirements (for example, the `Add` method is missing), the type is not considered a collection type, and thus the <xref:System.SerializableAttribute> attribute and the <xref:System.Runtime.Serialization.ISerializable> interface are used to determine whether the type can be serialized.  
   
--   Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a collection to customize it removes the <xref:System.SerializableAttribute> preceding fallback mechanism. Instead, if a customized collection does not meet collection type requirements, an <xref:System.Runtime.Serialization.InvalidDataContractException> exception is thrown. The exception string often contains information that explains why a given type is not considered a valid collection (no `Add` method, no default constructor, and so on), so it is often useful to apply the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute for debugging purposes.  
+- Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a collection to customize it removes the <xref:System.SerializableAttribute> preceding fallback mechanism. Instead, if a customized collection does not meet collection type requirements, an <xref:System.Runtime.Serialization.InvalidDataContractException> exception is thrown. The exception string often contains information that explains why a given type is not considered a valid collection (no `Add` method, no default constructor, and so on), so it is often useful to apply the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute for debugging purposes.  
   
 ### Collection Naming  
  The following is a list of collection naming rules:  
   
--   The default namespace for all dictionary collection data contracts, as well as for list collection data contracts that contain primitive types, is `http://schemas.microsoft.com/2003/10/Serialization/Arrays` unless overridden using Namespace. Types that map to built-in XSD types, as well as `char`, `Timespan`, and `Guid` types, are considered primitives for this purpose.  
+- The default namespace for all dictionary collection data contracts, as well as for list collection data contracts that contain primitive types, is `http://schemas.microsoft.com/2003/10/Serialization/Arrays` unless overridden using Namespace. Types that map to built-in XSD types, as well as `char`, `Timespan`, and `Guid` types, are considered primitives for this purpose.  
   
--   The default namespace for collection types that contain non-primitive types, unless it is overridden using Namespace, is the same as the data contract namespace of the type contained in the collection.  
+- The default namespace for collection types that contain non-primitive types, unless it is overridden using Namespace, is the same as the data contract namespace of the type contained in the collection.  
   
--   The default name for list collection data contracts, unless overridden using Name, is the string "ArrayOf" combined with the data contract name of the type contained in the collection. For example, the data contract name for a Generic List of Integers is "ArrayOfint". Keep in mind that the data contract name of `Object` is "anyType", so the data contract name of non-generic lists like <xref:System.Collections.ArrayList> is "ArrayOfanyType".  
+- The default name for list collection data contracts, unless overridden using Name, is the string "ArrayOf" combined with the data contract name of the type contained in the collection. For example, the data contract name for a Generic List of Integers is "ArrayOfint". Keep in mind that the data contract name of `Object` is "anyType", so the data contract name of non-generic lists like <xref:System.Collections.ArrayList> is "ArrayOfanyType".  
   
  The default name for dictionary collection data contracts, unless overridden using `Name`, is the string "ArrayOfKeyValueOf" combined with the data contract name of the key type followed by the data contract name of the value type. For example, the data contract name for a Generic Dictionary of String and Integer is "ArrayOfKeyValueOfstringint". Additionally, if either the key or the value types are not primitive types, a namespace hash of the data contract namespaces of the key and value types is appended to the name. For more information about namespace hashes, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).  
   
@@ -351,13 +351,13 @@ svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\Sys
 ## Collection Customization  
  The following uses of the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute are forbidden and result in an <xref:System.Runtime.Serialization.InvalidDataContractException> exception:  
   
--   Applying the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to a type to which the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute has been applied, or to one of its derived types.  
+- Applying the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to a type to which the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute has been applied, or to one of its derived types.  
   
--   Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a type that implements the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+- Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a type that implements the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
   
--   Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a non-collection type.  
+- Applying the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute to a non-collection type.  
   
--   Attempting to set <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> or <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> on a <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute applied to a non-dictionary type.  
+- Attempting to set <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> or <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> on a <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute applied to a non-dictionary type.  
   
 ### Polymorphism Rules  
  As previously mentioned, customizing collections by using the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute may interfere with collection interchangeability. Two customized collection types can only be considered equivalent if their name, namespace, item name, as well as key and value names (if these are dictionary collections) match.  

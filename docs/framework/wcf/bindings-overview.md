@@ -26,13 +26,13 @@ Bindings are objects that are used to specify the communication details that are
 ## System-Provided Bindings  
  The information in a binding can be complex, and some settings may not be compatible with others. For this reason, WCF includes a set of system-provided bindings. These bindings are designed to cover most application requirements. The following classes represent some examples of system-provided bindings:  
   
--   <xref:System.ServiceModel.BasicHttpBinding>: An HTTP protocol binding suitable for connecting to Web services that conforms to the WS-I Basic Profile specification (for example, ASP.NET Web services-based services).  
+- <xref:System.ServiceModel.BasicHttpBinding>: An HTTP protocol binding suitable for connecting to Web services that conforms to the WS-I Basic Profile specification (for example, ASP.NET Web services-based services).  
   
--   <xref:System.ServiceModel.WSHttpBinding>: An interoperable binding suitable for connecting to endpoints that conform to the WS-* protocols.  
+- <xref:System.ServiceModel.WSHttpBinding>: An interoperable binding suitable for connecting to endpoints that conform to the WS-* protocols.  
   
--   <xref:System.ServiceModel.NetNamedPipeBinding>: Uses the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] to connect to other WCF endpoints on the same machine.  
+- <xref:System.ServiceModel.NetNamedPipeBinding>: Uses the .NET Framework to connect to other WCF endpoints on the same machine.  
   
--   <xref:System.ServiceModel.NetMsmqBinding>: Uses the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] to create queued message connections with other WCF endpoints.  
+- <xref:System.ServiceModel.NetMsmqBinding>: Uses the .NET Framework to create queued message connections with other WCF endpoints.  
 
 - <xref:System.ServiceModel.NetTcpBinding>: This binding offers higher performance than HTTP bindings and is ideal for use in a local network.
   

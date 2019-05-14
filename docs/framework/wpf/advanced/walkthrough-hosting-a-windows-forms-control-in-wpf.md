@@ -28,9 +28,9 @@ You need Visual Studio to complete this walkthrough.
 
 2. Add references to the following assemblies.
 
-    -   WindowsFormsIntegration
+    - WindowsFormsIntegration
 
-    -   System.Windows.Forms
+    - System.Windows.Forms
 
 3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
 

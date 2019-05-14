@@ -31,13 +31,13 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
  [!code-csharp[C_IDataContractSurrogate#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#3)]  
   
--   On serialization, the mapping returned by this method is subsequently used to transform the original instance to a surrogated instance by calling the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%2A> method.  
+- On serialization, the mapping returned by this method is subsequently used to transform the original instance to a surrogated instance by calling the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%2A> method.  
   
--   On deserialization, the mapping returned by this method is used by the serializer to deserialize into an instance of the surrogate type. It subsequently calls <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%2A> to transform the surrogated instance into an instance of the original type.  
+- On deserialization, the mapping returned by this method is used by the serializer to deserialize into an instance of the surrogate type. It subsequently calls <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%2A> to transform the surrogated instance into an instance of the original type.  
   
--   On export, the surrogate type returned by this method is reflected to get the data contract to use for generating metadata.  
+- On export, the surrogate type returned by this method is reflected to get the data contract to use for generating metadata.  
   
--   On import, the initial type is changed to a surrogate type that is reflected to get the data contract to use for purposes like referencing support.  
+- On import, the initial type is changed to a surrogate type that is reflected to get the data contract to use for purposes like referencing support.  
   
  The <xref:System.Type> parameter is the type of the object that is being serialized, deserialized, imported, or exported. The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDataContractType%2A> method must return the input type if the surrogate does not handle the type. Otherwise, return the appropriate surrogated type. If several surrogate types exist, numerous mappings can be defined in this method.  
   

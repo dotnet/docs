@@ -28,12 +28,11 @@ With the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method in the <xre
  For more information about obtaining a <xref:System.Drawing.Graphics>, see [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md). For more information about constructing a <xref:System.Drawing.Font>, see [How to: Construct Font Families and Fonts](how-to-construct-font-families-and-fonts.md).  
   
 ## Compiling the Code  
- The preceding code example is designed for use with Windows Forms, and it requires the <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
+ The preceding code example is designed for use with Windows Forms, and it requires the <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
 
 - <xref:System.Windows.Forms.TextRenderer>
 - <xref:System.Drawing.Font>
-- <xref:System.Drawing.Color>
 - <xref:System.Drawing.Color>
 - [Using Fonts and Text](using-fonts-and-text.md)

@@ -19,13 +19,13 @@ ms.author: "ronpet"
   
  <xref:System.Threading.CountdownEvent> has these additional features:  
   
--   The wait operation can be canceled by using cancellation tokens.  
+- The wait operation can be canceled by using cancellation tokens.  
   
--   Its signal count can be incremented after the instance is created.  
+- Its signal count can be incremented after the instance is created.  
   
--   Instances can be reused after <xref:System.Threading.CountdownEvent.Wait%2A> has returned by calling the <xref:System.Threading.CountdownEvent.Reset%2A> method.  
+- Instances can be reused after <xref:System.Threading.CountdownEvent.Wait%2A> has returned by calling the <xref:System.Threading.CountdownEvent.Reset%2A> method.  
   
--   Instances expose a <xref:System.Threading.WaitHandle> for integration with other .NET Framework synchronization APIs such as <xref:System.Threading.WaitHandle.WaitAll%2A>.  
+- Instances expose a <xref:System.Threading.WaitHandle> for integration with other .NET Framework synchronization APIs such as <xref:System.Threading.WaitHandle.WaitAll%2A>.  
   
 ## Basic Usage  
  The following example demonstrates how to use a <xref:System.Threading.CountdownEvent> with <xref:System.Threading.ThreadPool> work items.  

@@ -26,7 +26,7 @@ You can use a <xref:System.Drawing.StringFormat> object to specify that text be 
   
 ## Compiling the Code  
   
--   The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e` , which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
+- The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e` , which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
 

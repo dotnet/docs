@@ -34,13 +34,13 @@ In applications, it is possible that handlers that are attached to event sources
 
  The following sections describe how to implement the weak event pattern.  For purposes of this discussion, the event to subscribe to has the following characteristics.  
   
--   The event name is `SomeEvent`.  
+- The event name is `SomeEvent`.  
   
--   The event is raised by the `EventSource` class.  
+- The event is raised by the `EventSource` class.  
   
--   The event handler has type: `SomeEventEventHandler` (or `EventHandler<SomeEventEventArgs>`).  
+- The event handler has type: `SomeEventEventHandler` (or `EventHandler<SomeEventEventArgs>`).  
   
--   The event passes a parameter of type `SomeEventEventArgs` to the event handlers.  
+- The event passes a parameter of type `SomeEventEventArgs` to the event handlers.  
   
 ### Using an Existing Weak Event Manager Class  
   

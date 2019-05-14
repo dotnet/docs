@@ -10,7 +10,7 @@ The line cannot be read because it exceeds the maximum line size. Usually this m
   
 ## To correct this error  
   
--   Insert a closing quotation mark in the file.  
+- Insert a closing quotation mark in the file.  
   
 ## See also
 

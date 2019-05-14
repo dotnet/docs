@@ -23,16 +23,16 @@ This Help page discusses how Visual Basic uses culture information to perform st
   
  The `Str` (converts numbers to strings) and `Val` (converts strings to numbers) functions do not use the application's culture information when converting between strings and numbers. Instead, they recognize only the period (.) as a valid decimal separator. The culturally-aware analogues of these functions are:  
   
--   **Conversions that use the current culture.** The `CStr` and `Format` functions convert a number to a string, and the `CDbl` and `CInt` functions convert a string to a number.  
+- **Conversions that use the current culture.** The `CStr` and `Format` functions convert a number to a string, and the `CDbl` and `CInt` functions convert a string to a number.  
   
--   **Conversions that use a specific culture.** Each number object has a `ToString(IFormatProvider)` method that converts a number to a string, and a `Parse(String, IFormatProvider)` method that converts a string to a number. For example, the `Double` type provides the <xref:System.Double.ToString%28System.IFormatProvider%29> and <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> methods.  
+- **Conversions that use a specific culture.** Each number object has a `ToString(IFormatProvider)` method that converts a number to a string, and a `Parse(String, IFormatProvider)` method that converts a string to a number. For example, the `Double` type provides the <xref:System.Double.ToString%28System.IFormatProvider%29> and <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> methods.  
   
  For more information, see <xref:Microsoft.VisualBasic.Conversion.Str%2A> and <xref:Microsoft.VisualBasic.Conversion.Val%2A>.  
   
 ## Using a Specific Culture  
  Imagine that you are developing an application that sends a date (formatted as a string) to a Web service. In this case, your application must use a specific culture for the string conversion. To illustrate why, consider the result of using the date's <xref:System.DateTime.ToString> method: If your application uses that method to format the date July 4, 2005, it returns "7/4/2005 12:00:00 AM" when run with the United States English (en-US) culture, but it returns "04.07.2005 00:00:00" when run with the German (de-DE) culture.  
   
- When you need to perform a string conversion in a specific culture format, you should use the `CultureInfo` class that is built into the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can create a new `CultureInfo` object for a specific culture by passing the culture's name to the <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The supported culture names are listed in the <xref:System.Globalization.CultureInfo> class Help page.  
+ When you need to perform a string conversion in a specific culture format, you should use the `CultureInfo` class that is built into the .NET Framework. You can create a new `CultureInfo` object for a specific culture by passing the culture's name to the <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The supported culture names are listed in the <xref:System.Globalization.CultureInfo> class Help page.  
   
  Alternatively, you can get an instance of the *invariant culture* from the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture is based on the English culture, but there are some differences. For example, the invariant culture specifies a 24-hour clock instead of a 12-hour clock.  
   
@@ -46,9 +46,9 @@ This Help page discusses how Visual Basic uses culture information to perform st
 ## Comparing Strings  
  There are two important situations where string comparisons are needed:  
   
--   **Sorting data for display to the user.** Use operations based on the current culture so the strings sort appropriately.  
+- **Sorting data for display to the user.** Use operations based on the current culture so the strings sort appropriately.  
   
--   **Determining if two application-internal strings exactly match (typically for security purposes).** Use operations that disregard the current culture.  
+- **Determining if two application-internal strings exactly match (typically for security purposes).** Use operations that disregard the current culture.  
   
  You can perform both types of comparisons with the Visual Basic <xref:Microsoft.VisualBasic.Strings.StrComp%2A> function. Specify the optional `Compare` argument to control the type of comparison: `Text` for most input and output `Binary` for determining exact matches.  
   
@@ -56,7 +56,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
   
  [!code-vb[VbVbalrStrings#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#22)]  
   
- You can also use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] partner of the `StrComp` function, the <xref:System.String.Compare%2A?displayProperty=nameWithType> method. This is a static, overloaded method of the base string class. The following example illustrates how this method is used:  
+ You can also use the .NET Framework partner of the `StrComp` function, the <xref:System.String.Compare%2A?displayProperty=nameWithType> method. This is a static, overloaded method of the base string class. The following example illustrates how this method is used:  
   
  [!code-vb[VbVbalrStrings#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#48)]  
   

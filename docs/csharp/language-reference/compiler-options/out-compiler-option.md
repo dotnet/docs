@@ -29,9 +29,9 @@ The **-out** option specifies the name of the output file.
   
  If you do not specify the name of the output file:  
   
--   An .exe will take its name from the source code file that contains the **Main** method.  
+- An .exe will take its name from the source code file that contains the **Main** method.  
   
--   A .dll or .netmodule will take its name from the first source code file.  
+- A .dll or .netmodule will take its name from the first source code file.  
   
  A source code file used to compile one output file cannot be used in the same compilation for the compilation of another output file.  
   

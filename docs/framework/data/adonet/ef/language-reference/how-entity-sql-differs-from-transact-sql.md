@@ -14,15 +14,15 @@ This topic describes the differences between [!INCLUDE[esql](../../../../../../i
 ## Support for Collections  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] treats collections as first-class entities. For example:  
   
--   Collection expressions are valid in a `from` clause.  
+- Collection expressions are valid in a `from` clause.  
   
--   `in` and `exists` subqueries have been generalized to allow any collections.  
+- `in` and `exists` subqueries have been generalized to allow any collections.  
   
      A subquery is one kind of collection. `e1 in e2` and `exists(e)` are the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] constructs to perform these operations.  
   
--   Set operations, such as `union`, `intersect`, and `except`, now operate on collections.  
+- Set operations, such as `union`, `intersect`, and `except`, now operate on collections.  
   
--   Joins operate on collections.  
+- Joins operate on collections.  
   
 ## Support for Expressions  
  [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] has subqueries (tables) and expressions (rows and columns).  

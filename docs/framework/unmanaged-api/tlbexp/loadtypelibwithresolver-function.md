@@ -37,11 +37,11 @@ HRESULT LoadTypeLibWithResolver(
  `regkind`  
  [in] A [REGKIND enumeration](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/ne-oleauto-tagregkind) flag that controls how the type library is registered. Its possible values are:  
   
--   `REGKIND_DEFAULT`: Use default registration behavior.  
+- `REGKIND_DEFAULT`: Use default registration behavior.  
   
--   `REGKIND_REGISTER`: Register this type library.  
+- `REGKIND_REGISTER`: Register this type library.  
   
--   `REGKIND_NONE`: Do not register this type library.  
+- `REGKIND_NONE`: Do not register this type library.  
   
  `pTlbResolver`  
  [in] A pointer to the implementation of the [ITypeLibResolver interface](../../../../docs/framework/unmanaged-api/tlbexp/itypelibresolver-interface.md).  

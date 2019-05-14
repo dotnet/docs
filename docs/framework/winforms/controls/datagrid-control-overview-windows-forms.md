@@ -35,7 +35,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  The <xref:System.Windows.Forms.DataGrid> can provide a user interface for a dataset, navigation between related tables, and rich formatting and editing capabilities.  
   
- The display and manipulation of data are separate functions: The control handles the user interface, whereas data updates are handled by the Windows Forms data-binding architecture and by [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers. Therefore, multiple controls bound to the same data source will stay in sync.  
+ The display and manipulation of data are separate functions: The control handles the user interface, whereas data updates are handled by the Windows Forms data-binding architecture and by .NET Framework data providers. Therefore, multiple controls bound to the same data source will stay in sync.  
   
 > [!NOTE]
 >  If you are familiar with the DataGrid control in Visual Basic 6.0, you will find some significant differences in the Windows Forms <xref:System.Windows.Forms.DataGrid> control.  
@@ -51,13 +51,13 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  Valid data sources for the <xref:System.Windows.Forms.DataGrid> include:  
   
--   <xref:System.Data.DataTable> class  
+- <xref:System.Data.DataTable> class  
   
--   <xref:System.Data.DataView> class  
+- <xref:System.Data.DataView> class  
   
--   <xref:System.Data.DataSet> class  
+- <xref:System.Data.DataSet> class  
   
--   <xref:System.Data.DataViewManager> class  
+- <xref:System.Data.DataViewManager> class  
   
  If your source is a dataset, the dataset might be an object in the form or an object passed to the form by an XML Web service. You can bind to either typed or untyped datasets.  
   
@@ -65,11 +65,11 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  You can bind to the following structures if their elements expose public properties:  
   
--   Any component that implements the <xref:System.Collections.IList> interface. This includes single-dimension arrays.  
+- Any component that implements the <xref:System.Collections.IList> interface. This includes single-dimension arrays.  
   
--   Any component that implements the <xref:System.ComponentModel.IListSource> interface.  
+- Any component that implements the <xref:System.ComponentModel.IListSource> interface.  
   
--   Any component that implements the <xref:System.ComponentModel.IBindingList> interface.  
+- Any component that implements the <xref:System.ComponentModel.IBindingList> interface.  
   
  For more information about possible data sources, see [Data Sources Supported by Windows Forms](../data-sources-supported-by-windows-forms.md).  
   

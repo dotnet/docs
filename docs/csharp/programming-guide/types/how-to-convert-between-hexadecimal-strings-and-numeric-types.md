@@ -12,15 +12,15 @@ ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
 # How to: Convert Between Hexadecimal Strings and Numeric Types (C# Programming Guide)
 These examples show you how to perform the following tasks:  
   
--   Obtain the hexadecimal value of each character in a [string](../../../csharp/language-reference/keywords/string.md).  
+- Obtain the hexadecimal value of each character in a [string](../../../csharp/language-reference/keywords/string.md).  
   
--   Obtain the [char](../../../csharp/language-reference/keywords/char.md) that corresponds to each value in a hexadecimal string.  
+- Obtain the [char](../../../csharp/language-reference/keywords/char.md) that corresponds to each value in a hexadecimal string.  
   
--   Convert a hexadecimal `string` to an [int](../../../csharp/language-reference/keywords/int.md).  
+- Convert a hexadecimal `string` to an [int](../../../csharp/language-reference/keywords/int.md).  
   
--   Convert a hexadecimal `string` to a [float](../../../csharp/language-reference/keywords/float.md).  
+- Convert a hexadecimal `string` to a [float](../../../csharp/language-reference/keywords/float.md).  
   
--   Convert a [byte](../../../csharp/language-reference/keywords/byte.md) array to a hexadecimal `string`.  
+- Convert a [byte](../../../csharp/language-reference/keywords/byte.md) array to a hexadecimal `string`.  
   
 ## Example  
  This example outputs the hexadecimal value of each character in a `string`. First it parses the `string` to an array of characters. Then it calls <xref:System.Convert.ToInt32%28System.Char%29> on each character to obtain its numeric value. Finally, it formats the number as its hexadecimal representation in a `string`.  

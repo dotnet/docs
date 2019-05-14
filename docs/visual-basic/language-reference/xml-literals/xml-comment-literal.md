@@ -33,9 +33,9 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
 ## Remarks  
  XML comment literals do not contain document content; they contain information about the document. The XML comment section ends with the sequence "-->". This implies the following points:  
   
--   You cannot use an embedded expression in an XML comment literal because the embedded expression delimiters are valid XML comment content.  
+- You cannot use an embedded expression in an XML comment literal because the embedded expression delimiters are valid XML comment content.  
   
--   XML comment sections cannot be nested, because `content` cannot contain the value "-->".  
+- XML comment sections cannot be nested, because `content` cannot contain the value "-->".  
   
  You can assign an XML comment literal to a variable, or you can include it in an XML element literal.  
   

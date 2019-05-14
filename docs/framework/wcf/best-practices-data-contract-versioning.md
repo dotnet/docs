@@ -33,9 +33,9 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  Occasionally, you must guarantee strict schema compliance for messages sent by your application, but cannot rely on the incoming messages to be strictly schema-compliant. In this case, there is a danger that an incoming message might contain extraneous data. The extraneous values are stored and returned by WCF and thus results in schema-invalid messages being sent. To avoid this problem, the round-tripping feature should be turned off. There are two ways to do this.  
   
--   Do not implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface on any of your types.  
+- Do not implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface on any of your types.  
   
--   Apply a <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to your service contract with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property set to `true`.  
+- Apply a <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to your service contract with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property set to `true`.  
   
  For more information about round-tripping, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
@@ -60,11 +60,11 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 8. In later versions, new data members can be added. They should always follow these rules:  
   
-    1.  The <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property should always be left at its default value of `false`.  
+    1. The <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property should always be left at its default value of `false`.  
   
-    2.  If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. For more information about the callback, see [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
+    2. If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. For more information about the callback, see [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
   
-    3.  The <xref:System.Runtime.Serialization.DataMemberAttribute.Order?displayProperty=nameWithType> property should be used to make sure that all of the newly added data members appear after the existing data members. The recommended way of doing this is as follows: None of the data members in the first version of the data contract should have their `Order` property set. All of the data members added in version 2 of the data contract should have their `Order` property set to 2. All of the data members added in version 3 of the data contract should have their `Order` set to 3, and so on. It is permissible to have more than one data member set to the same `Order` number.  
+    3. The <xref:System.Runtime.Serialization.DataMemberAttribute.Order?displayProperty=nameWithType> property should be used to make sure that all of the newly added data members appear after the existing data members. The recommended way of doing this is as follows: None of the data members in the first version of the data contract should have their `Order` property set. All of the data members added in version 2 of the data contract should have their `Order` property set to 2. All of the data members added in version 3 of the data contract should have their `Order` set to 3, and so on. It is permissible to have more than one data member set to the same `Order` number.  
   
 9. Do not remove data members in later versions, even if the <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property was left at its default property of `false` in prior versions.  
   

@@ -25,19 +25,19 @@ You can create data sources that are based on the generated data objects in an W
 
      This creates the following object elements in the XAML file for the window:
 
-    -   A <xref:System.Windows.Data.CollectionViewSource> element named `customersViewSource`. The <xref:System.Windows.FrameworkElement.DataContext%2A> property of the top-level <xref:System.Windows.Controls.Grid> object element is set to this new <xref:System.Windows.Data.CollectionViewSource>.
+    - A <xref:System.Windows.Data.CollectionViewSource> element named `customersViewSource`. The <xref:System.Windows.FrameworkElement.DataContext%2A> property of the top-level <xref:System.Windows.Controls.Grid> object element is set to this new <xref:System.Windows.Data.CollectionViewSource>.
 
-    -   A data-bound <xref:System.Windows.Controls.ComboBox> named `CustomerID`.
+    - A data-bound <xref:System.Windows.Controls.ComboBox> named `CustomerID`.
 
-    -   A <xref:System.Windows.Controls.Label>.
+    - A <xref:System.Windows.Controls.Label>.
 
 4. Drag the **Orders** navigation property to the designer.
 
      This creates the following additional object elements in the XAML file for the window:
 
-    -   A second <xref:System.Windows.Data.CollectionViewSource> element named `customersOrdersViewSource`, the source of which is the `customerViewSource`.
+    - A second <xref:System.Windows.Data.CollectionViewSource> element named `customersOrdersViewSource`, the source of which is the `customerViewSource`.
 
-    -   A data-bound <xref:System.Windows.Controls.DataGrid> control named `ordersDataGrid`.
+    - A data-bound <xref:System.Windows.Controls.DataGrid> control named `ordersDataGrid`.
 
 5. (Optional) Drag additional items from the **Customers** node to the designer.
 
@@ -76,13 +76,13 @@ You can create data sources that are based on the generated data objects in an W
 
      This creates the following controls on the form:
 
-    -   An instance of <xref:System.Windows.Forms.BindingSource> named `customersBindingSource`.
+    - An instance of <xref:System.Windows.Forms.BindingSource> named `customersBindingSource`.
 
-    -   An instance of <xref:System.Windows.Forms.BindingNavigator> named `customersBindingNavigator`. You can delete this control as it will not be needed.
+    - An instance of <xref:System.Windows.Forms.BindingNavigator> named `customersBindingNavigator`. You can delete this control as it will not be needed.
 
-    -   A data-bound <xref:System.Windows.Forms.ComboBox> named `CustomerID`.
+    - A data-bound <xref:System.Windows.Forms.ComboBox> named `CustomerID`.
 
-    -   A <xref:System.Windows.Forms.Label>.
+    - A <xref:System.Windows.Forms.Label>.
 
 3. Drag the **Orders** navigation property to the form.
 

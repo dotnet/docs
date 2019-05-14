@@ -13,9 +13,9 @@ ms.assetid: 5967d557-1867-420f-a524-ae3af78402da
 # Data and Data Objects
 Data that is transferred as part of a drag-and-drop operation is stored in a data object.  Conceptually, a data object consists of one or more of the following pairs:  
   
--   An <xref:System.Object> that contains the actual data.  
+- An <xref:System.Object> that contains the actual data.  
   
--   A corresponding data format identifier.  
+- A corresponding data format identifier.  
   
  The data itself can consist of anything that can be represented as a base <xref:System.Object>.  The corresponding data format is a string or <xref:System.Type> that provides a hint about what format the data is in.  Data objects support hosting multiple data/data format pairs; this enables a single data object to provide data in multiple formats.  
   

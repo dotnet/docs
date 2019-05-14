@@ -15,7 +15,7 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
 ## The Export Process  
  The schema export process starts with one or more types and produces an <xref:System.Xml.Schema.XmlSchemaSet> that describes the XML projection of these types.  
   
- The `XmlSchemaSet` is part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]’s Schema Object Model (SOM) that represents a set of XSD Schema documents. To create XSD documents from an `XmlSchemaSet`, use the collection of schemas from the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property of the `XmlSchemaSet` class. Then serialize each <xref:System.Xml.Schema.XmlSchema> object using the <xref:System.Xml.Serialization.XmlSerializer>.  
+ The `XmlSchemaSet` is part of the .NET Framework’s Schema Object Model (SOM) that represents a set of XSD Schema documents. To create XSD documents from an `XmlSchemaSet`, use the collection of schemas from the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property of the `XmlSchemaSet` class. Then serialize each <xref:System.Xml.Schema.XmlSchema> object using the <xref:System.Xml.Serialization.XmlSerializer>.  
   
 #### To export schemas  
   
@@ -37,18 +37,18 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
 ## Export Options  
  You can set the <xref:System.Runtime.Serialization.XsdDataContractExporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractExporter> to an instance of the <xref:System.Runtime.Serialization.ExportOptions> class to control various aspects of the export process. Specifically, you can set the following options:  
   
--   <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. This collection of `Type` represents the known types for the types being exported. (For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) These known types are exported on every `Export` call in addition to the types passed to the `Export` method.  
+- <xref:System.Runtime.Serialization.ExportOptions.KnownTypes%2A>. This collection of `Type` represents the known types for the types being exported. (For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).) These known types are exported on every `Export` call in addition to the types passed to the `Export` method.  
   
--   <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. An <xref:System.Runtime.Serialization.IDataContractSurrogate> can be supplied through this property that will customize the export process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
+- <xref:System.Runtime.Serialization.ExportOptions.DataContractSurrogate%2A>. An <xref:System.Runtime.Serialization.IDataContractSurrogate> can be supplied through this property that will customize the export process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
 ## Helper Methods  
  In addition to its primary role of exporting schema, the `XsdDataContractExporter` provides several useful helper methods that provide information about types. These include:  
   
--   <xref:System.Runtime.Serialization.XsdDataContractExporter.GetRootElementName%2A> method. This method takes a `Type` and returns an <xref:System.Xml.XmlQualifiedName> that represents the root element name and namespace that would be used if this type were serialized as the root object.  
+- <xref:System.Runtime.Serialization.XsdDataContractExporter.GetRootElementName%2A> method. This method takes a `Type` and returns an <xref:System.Xml.XmlQualifiedName> that represents the root element name and namespace that would be used if this type were serialized as the root object.  
   
--   <xref:System.Runtime.Serialization.XsdDataContractExporter.GetSchemaTypeName%2A> method. This method takes a `Type` and returns an <xref:System.Xml.XmlQualifiedName> that represents the name of the XSD schema type that would be used if this type were exported to the schema. For <xref:System.Xml.Serialization.IXmlSerializable> types represented as anonymous types in the schema, this method returns `null`.  
+- <xref:System.Runtime.Serialization.XsdDataContractExporter.GetSchemaTypeName%2A> method. This method takes a `Type` and returns an <xref:System.Xml.XmlQualifiedName> that represents the name of the XSD schema type that would be used if this type were exported to the schema. For <xref:System.Xml.Serialization.IXmlSerializable> types represented as anonymous types in the schema, this method returns `null`.  
   
--   <xref:System.Runtime.Serialization.XsdDataContractExporter.GetSchemaType%2A> method. This method works only with <xref:System.Xml.Serialization.IXmlSerializable> types that are represented as anonymous types in the schema, and returns `null` for all other types. For anonymous types, this method returns an <xref:System.Xml.Schema.XmlSchemaType> that represents a given `Type`.  
+- <xref:System.Runtime.Serialization.XsdDataContractExporter.GetSchemaType%2A> method. This method works only with <xref:System.Xml.Serialization.IXmlSerializable> types that are represented as anonymous types in the schema, and returns `null` for all other types. For anonymous types, this method returns an <xref:System.Xml.Schema.XmlSchemaType> that represents a given `Type`.  
   
  Export options affect all of these methods.  
   

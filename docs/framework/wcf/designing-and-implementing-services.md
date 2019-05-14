@@ -13,22 +13,22 @@ This section shows you how to define and implement WCF contracts. A service cont
 ## Overview  
  This topic provides a high level conceptual orientation to designing and implementing WCF services. Subtopics provide more detailed information about the specifics of design and implementation. Before designing and implementing your WCF application, it is recommended that you:  
   
--   Understand what a service contract is, how it works, and how to create one.  
+- Understand what a service contract is, how it works, and how to create one.  
   
--   Understand that contracts state minimum requirements that runtime configuration or the hosting environment may not support.  
+- Understand that contracts state minimum requirements that runtime configuration or the hosting environment may not support.  
   
 ## Service Contracts  
  A service contract specifies the following:  
   
--   The operations a contract exposes.  
+- The operations a contract exposes.  
   
--   The signature of the operations in terms of messages exchanged.  
+- The signature of the operations in terms of messages exchanged.  
   
--   The data types of these messages.  
+- The data types of these messages.  
   
--   The location of the operations.  
+- The location of the operations.  
   
--   The specific protocols and serialization formats that are used to support successful communication with the service.  
+- The specific protocols and serialization formats that are used to support successful communication with the service.  
   
  For example, a purchase order contract might have a `CreateOrder` operation that accepts an input of order information types and returns success or failure information, including an order identifier. It might also have a `GetOrderStatus` operation that accepts an order identifier and returns order status information. A service contract of this sort would specify:  
   

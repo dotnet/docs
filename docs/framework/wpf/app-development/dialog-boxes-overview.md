@@ -14,11 +14,11 @@ ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
 # Dialog Boxes Overview
 Standalone applications typically have a main window that both displays the main data over which the application operates and exposes the functionality to process that data through [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] mechanisms like menu bars, tool bars, and status bars. A non-trivial application may also display additional windows to do the following:  
   
--   Display specific information to users.  
+- Display specific information to users.  
   
--   Gather information from users.  
+- Gather information from users.  
   
--   Both display and gather information.  
+- Both display and gather information.  
   
  These types of windows are known as *dialog boxes*, and there are two types: modal and modeless.  
   
@@ -116,27 +116,27 @@ Standalone applications typically have a main window that both displays the main
 #### Configuring a Modal Dialog Box  
  The user interface for a typical dialog box includes the following:  
   
--   The various controls that are required to gather the desired data.  
+- The various controls that are required to gather the desired data.  
   
--   Showing an **OK** button that users click to close the dialog box, return to the function, and continue processing.  
+- Showing an **OK** button that users click to close the dialog box, return to the function, and continue processing.  
   
--   Showing a **Cancel** button that users click to close the dialog box and stop the function from further processing.  
+- Showing a **Cancel** button that users click to close the dialog box and stop the function from further processing.  
   
--   Showing a **Close** button in the title bar.  
+- Showing a **Close** button in the title bar.  
   
--   Showing an icon.  
+- Showing an icon.  
   
--   Showing **Minimize**, **Maximize**, and **Restore** buttons.  
+- Showing **Minimize**, **Maximize**, and **Restore** buttons.  
   
--   Showing a **System** menu to minimize, maximize, restore, and close the dialog box.  
+- Showing a **System** menu to minimize, maximize, restore, and close the dialog box.  
   
--   Opening above and in the center of the window that opened the dialog box.  
+- Opening above and in the center of the window that opened the dialog box.  
   
--   Dialog boxes should be resizable where possible so, to prevent the dialog box from being too small, and to provide the user with a useful default size, you need to set both default and a minimum dimensions respectively.  
+- Dialog boxes should be resizable where possible so, to prevent the dialog box from being too small, and to provide the user with a useful default size, you need to set both default and a minimum dimensions respectively.  
   
--   Pressing the ESC key should be configured as a keyboard shortcut that causes the **Cancel** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsCancel%2A> property of the **Cancel** button to `true`.  
+- Pressing the ESC key should be configured as a keyboard shortcut that causes the **Cancel** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsCancel%2A> property of the **Cancel** button to `true`.  
   
--   Pressing the ENTER (or RETURN) key should be configured as a keyboard shortcut that causes the **OK** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsDefault%2A> property of the **OK** button `true`.  
+- Pressing the ENTER (or RETURN) key should be configured as a keyboard shortcut that causes the **OK** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsDefault%2A> property of the **OK** button `true`.  
   
  The following code demonstrates this configuration.  
   
@@ -177,13 +177,13 @@ Standalone applications typically have a main window that both displays the main
 #### Validating User-Provided Data  
  When a dialog box is opened and the user provides the required data, a dialog box is responsible for ensuring that the provided data is valid for the following reasons:  
   
--   From a security perspective, all input should be validated.  
+- From a security perspective, all input should be validated.  
   
--   From a domain-specific perspective, data validation prevents erroneous data from being processed by the code, which could potentially throw exceptions.  
+- From a domain-specific perspective, data validation prevents erroneous data from being processed by the code, which could potentially throw exceptions.  
   
--   From a user-experience perspective, a dialog box can help users by showing them which data they have entered is invalid.  
+- From a user-experience perspective, a dialog box can help users by showing them which data they have entered is invalid.  
   
--   From a performance perspective, data validation in a multi-tier application can reduce the number of round trips between the client and the application tiers, particularly when the application is composed of Web services or server-based databases.  
+- From a performance perspective, data validation in a multi-tier application can reduce the number of round trips between the client and the application tiers, particularly when the application is composed of Web services or server-based databases.  
   
  To validate a bound control in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you need to define a validation rule and associate it with the binding. A validation rule is a custom class that derives from <xref:System.Windows.Controls.ValidationRule>. The following example shows a validation rule, `MarginValidationRule`, which checks that a bound value is a <xref:System.Double> and is within a specified range.  
   
@@ -323,11 +323,11 @@ Standalone applications typically have a main window that both displays the main
 #### Closing a Modeless Dialog Box  
  Because <xref:System.Windows.Window.DialogResult%2A> does not need to be set, a modeless dialog can be closed using system provide mechanisms, including the following:  
   
--   Clicking the **Close** button in the title bar.  
+- Clicking the **Close** button in the title bar.  
   
--   Pressing ALT+F4.  
+- Pressing ALT+F4.  
   
--   Choosing **Close** from the **System** menu.  
+- Choosing **Close** from the **System** menu.  
   
  Alternatively, your code can call <xref:System.Windows.Window.Close%2A> when the **Close** button is clicked.  
   

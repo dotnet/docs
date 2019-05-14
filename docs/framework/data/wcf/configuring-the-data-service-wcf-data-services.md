@@ -71,9 +71,9 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
 ## Versioning Requirements  
  The following data service configuration behaviors require version 2 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol, or later versions:  
   
--   Support for count requests.  
+- Support for count requests.  
   
--   Support for the $select query option for projection.  
+- Support for the $select query option for projection.  
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   

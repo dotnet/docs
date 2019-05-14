@@ -46,17 +46,17 @@ ms.author: "ronpet"
   
  .NET types are the foundation on which .NET applications, components, and controls are built. .NET implementations include types that perform the following functions:  
   
--   Represent base data types and exceptions.  
+- Represent base data types and exceptions.  
   
--   Encapsulate data structures.  
+- Encapsulate data structures.  
   
--   Perform I/O.  
+- Perform I/O.  
   
--   Access information about loaded types.  
+- Access information about loaded types.  
   
--   Invoke .NET Framework security checks.  
+- Invoke .NET Framework security checks.  
   
--   Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
+- Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
   
  .NET provides a rich set of interfaces, as well as abstract and concrete (non-abstract) classes. You can use the concrete classes as is or, in many cases, derive your own classes from them. To use the functionality of an interface, you can either create a class that implements the interface or derive a class from one of the .NET classes that implements the interface.  
   
@@ -64,7 +64,7 @@ ms.author: "ronpet"
 
  .NET types use a dot syntax naming scheme that connotes a hierarchy. This technique groups related types into namespaces so they can be searched and referenced more easily. The first part of the full name — up to the rightmost dot — is the namespace name. The last part of the name is the type name. For example, `System.Collections.Generic.List<T>` represents the `List<T>` type, which belongs to the `System.Collections.Generic` namespace. The types in <xref:System.Collections.Generic> can be used to work with generic collections.  
   
- This naming scheme makes it easy for library developers extending the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] to create hierarchical groups of types and name them in a consistent, informative manner. It also allows types to be unambiguously identified by their full name (that is, by their namespace and type name), which prevents type name collisions. Library developers are expected to use the following convention when creating names for their namespaces:  
+ This naming scheme makes it easy for library developers extending the .NET Framework to create hierarchical groups of types and name them in a consistent, informative manner. It also allows types to be unambiguously identified by their full name (that is, by their namespace and type name), which prevents type name collisions. Library developers are expected to use the following convention when creating names for their namespaces:  
   
  *CompanyName*.*TechnologyName*  
   

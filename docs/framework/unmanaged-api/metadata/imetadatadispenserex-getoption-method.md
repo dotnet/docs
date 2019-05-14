@@ -40,19 +40,19 @@ HRESULT GetOption (
 ## Remarks  
  The following list shows the GUIDs that are supported for this method. For descriptions, see the [IMetaDataDispenserEx::SetOption](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-setoption-method.md) method. If `optionId` is not in this list, this method returns HRESULT `E_INVALIDARG`, indicating an incorrect parameter.  
   
--   MetaDataCheckDuplicatesFor  
+- MetaDataCheckDuplicatesFor  
   
--   MetaDataRefToDefCheck  
+- MetaDataRefToDefCheck  
   
--   MetaDataNotificationForTokenMovement  
+- MetaDataNotificationForTokenMovement  
   
--   MetaDataSetENC  
+- MetaDataSetENC  
   
--   MetaDataErrorIfEmitOutOfOrder  
+- MetaDataErrorIfEmitOutOfOrder  
   
--   MetaDataGenerateTCEAdapters  
+- MetaDataGenerateTCEAdapters  
   
--   MetaDataLinkerOptions  
+- MetaDataLinkerOptions  
   
 ## Requirements  
  **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -17,17 +17,17 @@ In this walkthrough, you will implement a [!INCLUDE[TLA2#tla_winclient](../../..
 
 Tasks illustrated in this walkthrough include:
 
--   Creating the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl>.
+- Creating the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl>.
 
--   Creating the Windows Forms host project.
+- Creating the Windows Forms host project.
 
--   Hosting the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl>.
+- Hosting the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl>.
 
 ## Prerequisites
 
 You need the following components to complete this walkthrough:
 
--   Visual Studio 2017
+- Visual Studio 2017
 
 <a name="To_Create_the_UserControl"></a>
 ## Create the UserControl
@@ -51,11 +51,11 @@ You need the following components to complete this walkthrough:
 
 3. Add references to the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies:
 
-    -   PresentationCore
+    - PresentationCore
 
-    -   PresentationFramework
+    - PresentationFramework
 
-    -   WindowsBase
+    - WindowsBase
 
 4. Add a reference to the `HostingWpfUserControlInWf` project.
 

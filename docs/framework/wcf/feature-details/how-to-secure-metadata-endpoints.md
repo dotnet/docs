@@ -82,9 +82,9 @@ Metadata for a service can contain sensitive information about your application 
 ## Compiling the Code  
  The code example uses the following namespaces:  
   
--   <xref:System.ServiceModel?displayProperty=nameWithType>  
+- <xref:System.ServiceModel?displayProperty=nameWithType>  
   
--   <xref:System.ServiceModel.Description?displayProperty=nameWithType>  
+- <xref:System.ServiceModel.Description?displayProperty=nameWithType>  
   
 ## See also
 

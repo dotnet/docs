@@ -36,15 +36,15 @@ You declare a variable to specify its name and characteristics. The declaration 
 ## Declaring Data Type  
  The [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause in the declaration statement allows you to define the data type or object type of the variable you are declaring. You can specify any of the following types for a variable:  
   
--   An elementary data type, such as `Boolean`, `Long`, or `Decimal`  
+- An elementary data type, such as `Boolean`, `Long`, or `Decimal`  
   
--   A composite data type, such as an array or structure  
+- A composite data type, such as an array or structure  
   
--   An object type, or class, defined either in your application or in another application  
+- An object type, or class, defined either in your application or in another application  
   
--   A [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class, such as <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.TextBox>  
+- A .NET Framework class, such as <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.TextBox>  
   
--   An interface type, such as <xref:System.IComparable> or <xref:System.IDisposable>  
+- An interface type, such as <xref:System.IComparable> or <xref:System.IDisposable>  
   
  You can declare several variables in one statement without having to repeat the data type. In the following statements, the variables `i`, `j`, and `k` are declared as type `Integer`, `l` and `m` as `Long`, and `x` and `y` as `Single`:  
   

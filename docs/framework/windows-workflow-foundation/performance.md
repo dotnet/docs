@@ -12,7 +12,7 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 ## Terminology
  The version of [!INCLUDE[wf1](../../../includes/wf1-md.md)] introduced in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] will be referred to as WF4 for the rest of this topic.  [!INCLUDE[wf1](../../../includes/wf1-md.md)] was introduced in .NET 3.0 and had a few minor revisions through [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] SP1. The [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] version of Workflow Foundation will be referred to as WF3 for the rest of this topic. WF3 is shipped in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] side-by-side with WF4. For more information about migrating WF3 artifacts to WF4 see: [Windows Workflow Foundation 4 Migration Guide](https://go.microsoft.com/fwlink/?LinkID=153313)
 
- Windows Communication Foundation (WCF) is Microsoft’s unified programming model for building service-oriented applications. It was first introduced as part of .NET 3.0 together with WF3 and now is one of the key components of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].
+ Windows Communication Foundation (WCF) is Microsoft’s unified programming model for building service-oriented applications. It was first introduced as part of .NET 3.0 together with WF3 and now is one of the key components of the .NET Framework.
 
  Windows Server AppFabric is a set of integrated technologies that make it easier to build, scale and manage Web and composite applications that run on IIS. It provides tools for monitoring and managing services and workflows. For more information, see [Windows Server AppFabric 1.0](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)).
 
@@ -370,44 +370,44 @@ public class Workflow1 : Activity
 
  Note that the WF4 SQL persistence provider performs more work in the database tier.  The SQL database can become a bottleneck so it is important to monitor the CPU and disk usage there.  Be sure to include the following performance counters from the SQL database when performance testing workflow applications:
 
--   PhysicalDisk\\%Disk Read Time
+- PhysicalDisk\\%Disk Read Time
 
--   PhysicalDisk\\% Disk Time
+- PhysicalDisk\\% Disk Time
 
--   PhysicalDisk\\% Disk Write Time
+- PhysicalDisk\\% Disk Write Time
 
--   PhysicalDisk\\% Avg. Disk Queue Length
+- PhysicalDisk\\% Avg. Disk Queue Length
 
--   PhysicalDisk\Avg. Disk Read Queue Length
+- PhysicalDisk\Avg. Disk Read Queue Length
 
--   PhysicalDisk\Avg. Disk Write Queue Length
+- PhysicalDisk\Avg. Disk Write Queue Length
 
--   PhysicalDisk\Current Disk Queue Length
+- PhysicalDisk\Current Disk Queue Length
 
--   Processor Information\\% Processor Time
+- Processor Information\\% Processor Time
 
--   SQLServer:Latches\Average Latch Wait Time (ms)
+- SQLServer:Latches\Average Latch Wait Time (ms)
 
--   SQLServer:Latches\Latch Waits/sec
+- SQLServer:Latches\Latch Waits/sec
 
 ### Tracking
  Workflow tracking can be used to track the progress of a workflow.  The information that is included in the tracking events is determined by a tracking profile.  The more complex the tracking profile, the more expensive tracking becomes.
 
  WF3 shipped with a SQL-based tracking service.  This service could work in batched and non-batched modes.  In non-batched mode, tracking events are written directly to the database.  In batched mode, tracking events are collected into the same batch as the workflow instance state.  The batched mode has the best performance for the widest range of workflow designs.  However, batching can have a negative performance impact if the workflow runs many activities without persisting and those activities are tracked.  This would commonly happen in loops and the best way to avoid this scenario is to design large loops to contain a persistence point.  Introducing a persistence point into a loop can negatively affect performance as well so it is important to measure the costs of each and come up with a balance.
 
- WF4 is not shipped with a SQL tracking service.  Recording tracking information to a SQL database can be handled better from an application server rather than built into the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. Therefore SQL tracking is now handled by AppFabric.  The out-of-the-box tracking provider in WF4 is based on Event Tracing for Windows (ETW).
+ WF4 is not shipped with a SQL tracking service.  Recording tracking information to a SQL database can be handled better from an application server rather than built into the .NET Framework. Therefore SQL tracking is now handled by AppFabric.  The out-of-the-box tracking provider in WF4 is based on Event Tracing for Windows (ETW).
 
  ETW is a kernel-level, low-latency event system built into Windows.  It uses a provider/consumer model that makes it possible to only incur the penalty for event tracing when there is actually a consumer.  In addition to kernel events such as processor, disk, memory, and network usage, many applications leverage ETW as well.  ETW events are more powerful than performance counters in that events can be customized to the application.  An event can contain text such as a workflow ID or an informational message.  Also, events are categorized with bitmasks so that consuming a certain subset of events will have less performance impact than capturing all events.
 
  Benefits to the approach of using ETW for tracking instead of SQL include:
 
--   Collection of tracking events can be separated to another process.  This gives greater flexibility in how the events are recorded.
+- Collection of tracking events can be separated to another process.  This gives greater flexibility in how the events are recorded.
 
--   ETW tracking events are easily combined with the WCF ETW events or other ETW providers such as a SQL Server or kernel provider.
+- ETW tracking events are easily combined with the WCF ETW events or other ETW providers such as a SQL Server or kernel provider.
 
--   Workflow authors do not need to alter a workflow to work better with a particular tracking implementation, such as the WF3 SQL tracking service’s batch mode.
+- Workflow authors do not need to alter a workflow to work better with a particular tracking implementation, such as the WF3 SQL tracking service’s batch mode.
 
--   An administrator can turn tracking on or off without recycling the host process.
+- An administrator can turn tracking on or off without recycling the host process.
 
  The performance benefits to ETW tracking come with a drawback.  ETW events can be lost if the system is under intense resource pressure.  The processing of events is not meant to block normal program execution and therefore it is not guaranteed that all ETW events will be broadcast to their subscribers.  This makes ETW tracking great for health monitoring but not suitable for auditing.
 

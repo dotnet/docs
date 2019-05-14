@@ -26,16 +26,16 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
--   Access to Mscorlib.dll and the <xref:System> namespace.  
+- Access to the <xref:System> namespace.  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   Array is empty (<xref:System.ArgumentNullException> class)  
+- Array is empty (<xref:System.ArgumentNullException> class)  
   
--   Array is multidimensional (<xref:System.RankException> class)  
+- Array is multidimensional (<xref:System.RankException> class)  
   
--   One or more elements of the array do not implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class)  
+- One or more elements of the array do not implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class)  
   
 ## See also
 

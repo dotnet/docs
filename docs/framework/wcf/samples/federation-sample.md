@@ -11,13 +11,13 @@ This sample demonstrates federated security.
   
  The scenario is made up of 4 pieces:  
   
--   BookStore service  
+- BookStore service  
   
--   BookStore STS  
+- BookStore STS  
   
--   HomeRealm STS  
+- HomeRealm STS  
   
--   BookStore Client  
+- BookStore Client  
   
  The BookStore service supports two operations, `BrowseBooks` and `BuyBook`. It allows anonymous access to the `BrowseBooks` operation, but requires authenticated access to access the `BuyBooks` operation. The authentication takes the form of a token issued by the BookStore STS. The configuration file for the BookStore Service points clients to the BookStore STS using the `wsFederationHttpBinding`.  
   

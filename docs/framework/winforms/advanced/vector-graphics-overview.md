@@ -26,19 +26,19 @@ ms.assetid: 0195df81-66be-452d-bb53-5a582ebfdc09
   
  Over time, certain basic building blocks have proven to be the most useful for creating two-dimensional pictures. These building blocks, which are all supported by [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], are given in the following list:  
   
--   Lines  
+- Lines  
   
--   Rectangles  
+- Rectangles  
   
--   Ellipses  
+- Ellipses  
   
--   Arcs  
+- Arcs  
   
--   Polygons  
+- Polygons  
   
--   Cardinal splines  
+- Cardinal splines  
   
--   Bezier splines  
+- Bezier splines  
   
 ## Methods For Drawing with a Graphics Object  
  The <xref:System.Drawing.Graphics> class in [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides the following methods for drawing the items in the previous list: <xref:System.Drawing.Graphics.DrawLine%2A>, <xref:System.Drawing.Graphics.DrawRectangle%2A>, <xref:System.Drawing.Graphics.DrawEllipse%2A>, <xref:System.Drawing.Graphics.DrawPolygon%2A>, <xref:System.Drawing.Graphics.DrawArc%2A>, <xref:System.Drawing.Graphics.DrawCurve%2A> (for cardinal splines), and <xref:System.Drawing.Graphics.DrawBezier%2A>. Each of these methods is overloaded; that is, each method supports several different parameter lists. For example, one variation of the <xref:System.Drawing.Graphics.DrawLine%2A> method receives a <xref:System.Drawing.Pen> object and four integers, while another variation of the <xref:System.Drawing.Graphics.DrawLine%2A> method receives a <xref:System.Drawing.Pen> object and two <xref:System.Drawing.Point> objects.  

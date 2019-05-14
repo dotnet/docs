@@ -16,11 +16,11 @@ Windows Workflow tracking is a [!INCLUDE[netfx_current_long](../../../includes/n
   
  To understand the programming model, the primary components of the tracking infrastructure are discussed in this topic:  
   
--   <xref:System.Activities.Tracking.TrackingRecord> objects emitted from the workflow runtime. For more information, see [Tracking Records](tracking-records.md).  
+- <xref:System.Activities.Tracking.TrackingRecord> objects emitted from the workflow runtime. For more information, see [Tracking Records](tracking-records.md).  
   
--   <xref:System.Activities.Tracking.TrackingParticipant> objects subscribe to <xref:System.Activities.Tracking.TrackingRecord> objects. The tracking participants contain the logic to process the payload from the <xref:System.Activities.Tracking.TrackingRecord> objects (for example, they could choose to write to a file). For more information, see [Tracking Participants](tracking-participants.md).  
+- <xref:System.Activities.Tracking.TrackingParticipant> objects subscribe to <xref:System.Activities.Tracking.TrackingRecord> objects. The tracking participants contain the logic to process the payload from the <xref:System.Activities.Tracking.TrackingRecord> objects (for example, they could choose to write to a file). For more information, see [Tracking Participants](tracking-participants.md).  
   
--   <xref:System.Activities.Tracking.TrackingProfile> objects filter tracking records emitted from a workflow instance. For more information, see [Tracking Profiles](tracking-profiles.md).  
+- <xref:System.Activities.Tracking.TrackingProfile> objects filter tracking records emitted from a workflow instance. For more information, see [Tracking Profiles](tracking-profiles.md).  
   
 ## Workflow Tracking Infrastructure  
  The workflow tracking infrastructure follows a publish-and-subscribe paradigm. The workflow instance is the publisher of tracking records, while subscribers of the tracking records are registered as extensions to the workflow. These extensions that subscribe to <xref:System.Activities.Tracking.TrackingRecord> objects are called tracking participants. Tracking participants are extensibility points that access <xref:System.Activities.Tracking.TrackingRecord> objects and process them in whatever manner they are written to do so. The tracking infrastructure allows the application of a filter on the outgoing tracking records to allow a participant to subscribe to a subset of the records. This filtering mechanism is accomplished through a tracking profile file.  

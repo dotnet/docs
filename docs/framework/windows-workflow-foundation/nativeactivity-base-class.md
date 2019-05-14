@@ -10,21 +10,21 @@ ms.assetid: 254a4c50-425b-426d-a32f-0f7234925bac
 ## Using NativeActivityContext
  Features of the workflow runtime can be accessed from within the <xref:System.Activities.NativeActivity.Execute%2A> method by using members of the `context` parameter, of type <xref:System.Activities.NativeActivityContext>. The features available through <xref:System.Activities.NativeActivityContext> include the following:
 
--   Getting and setting of arguments and variables.
+- Getting and setting of arguments and variables.
 
--   Scheduling child activities with <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>
+- Scheduling child activities with <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>
 
--   Aborting activity execution using <xref:System.Activities.NativeActivityContext.Abort%2A>.
+- Aborting activity execution using <xref:System.Activities.NativeActivityContext.Abort%2A>.
 
--   Canceling child execution using <xref:System.Activities.NativeActivityContext.CancelChild%2A> and <xref:System.Activities.NativeActivityContext.CancelChildren%2A>.
+- Canceling child execution using <xref:System.Activities.NativeActivityContext.CancelChild%2A> and <xref:System.Activities.NativeActivityContext.CancelChildren%2A>.
 
--   Access to activity bookmarks using such methods as <xref:System.Activities.NativeActivityContext.CreateBookmark%2A>, <xref:System.Activities.NativeActivityContext.RemoveBookmark%2A>, and <xref:System.Activities.NativeActivityContext.ResumeBookmark%2A>.
+- Access to activity bookmarks using such methods as <xref:System.Activities.NativeActivityContext.CreateBookmark%2A>, <xref:System.Activities.NativeActivityContext.RemoveBookmark%2A>, and <xref:System.Activities.NativeActivityContext.ResumeBookmark%2A>.
 
--   Custom tracking features using <xref:System.Activities.CodeActivityContext.Track%2A>.
+- Custom tracking features using <xref:System.Activities.CodeActivityContext.Track%2A>.
 
--   Access to the activity’s execution properties and value properties using <xref:System.Activities.CodeActivityContext.GetProperty%2A> and <xref:System.Activities.NativeActivityContext.GetValue%2A>.
+- Access to the activity’s execution properties and value properties using <xref:System.Activities.CodeActivityContext.GetProperty%2A> and <xref:System.Activities.NativeActivityContext.GetValue%2A>.
 
--   Scheduling activity actions and functions using <xref:System.Activities.NativeActivityContext.ScheduleAction%2A> and <xref:System.Activities.NativeActivityContext.ScheduleFunc%2A>.
+- Scheduling activity actions and functions using <xref:System.Activities.NativeActivityContext.ScheduleAction%2A> and <xref:System.Activities.NativeActivityContext.ScheduleFunc%2A>.
 
 ### To create a custom activity that inherits from NativeActivity
 

@@ -19,9 +19,9 @@ This example shows how to add an event handler to an element by using code.
   
  The C# example uses the `+=` operator to assign a handler to an event. This is the same operator that is used to assign a handler in the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event handling model. Microsoft Visual Basic does not support this operator as a means of adding event handlers. It instead requires one of two techniques:  
   
--   Use the <xref:System.Windows.UIElement.AddHandler%2A> method, together with an `AddressOf` operator, to reference the event handler implementation.  
+- Use the <xref:System.Windows.UIElement.AddHandler%2A> method, together with an `AddressOf` operator, to reference the event handler implementation.  
   
--   Use the `Handles` keyword as part of the event handler definition. This technique is not shown here; see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
+- Use the `Handles` keyword as part of the event handler definition. This technique is not shown here; see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
   
  [!code-xaml[RoutedEventAddRemoveHandler#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventAddRemoveHandler/CSharp/default.xaml#xaml)]  
   

@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
 ---
 # SqlMetal.exe (Code Generation Tool)
-The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
+The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the .NET Framework. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
   
--   From a database, generate source code and mapping attributes or a mapping file.  
+- From a database, generate source code and mapping attributes or a mapping file.  
   
--   From a database, generate an intermediate database markup language (.dbml) file for customization.  
+- From a database, generate an intermediate database markup language (.dbml) file for customization.  
   
--   From a .dbml file, generate code and mapping attributes or a mapping file.  
+- From a .dbml file, generate code and mapping attributes or a mapping file.  
   
  This tool is automatically installed with Visual Studio. By default, the file is located at `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. If you do not install Visual Studio, you can also get the SQLMetal file by downloading the [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
   
@@ -82,9 +82,9 @@ sqlmetal [options] [<input file>]
 ## Remarks  
  SqlMetal functionality actually involves two steps:  
   
--   Extracting the metadata of the database into a .dbml file.  
+- Extracting the metadata of the database into a .dbml file.  
   
--   Generating a code output file.  
+- Generating a code output file.  
   
      By using the appropriate command-line options, you can produce Visual Basic or C# source code, or you can produce an XML mapping file.  
   
@@ -94,9 +94,9 @@ sqlmetal [options] [<input file>]
   
  [!INCLUDE[sqprsqext](../../../includes/sqprsqext-md.md)] throws an exception if one or more of the following conditions are true:  
   
--   SqlMetal tries to extract a stored procedure that calls itself.  
+- SqlMetal tries to extract a stored procedure that calls itself.  
   
--   The nesting level of a stored procedure, function, or view exceeds 32.  
+- The nesting level of a stored procedure, function, or view exceeds 32.  
   
      SqlMetal catches this exception and reports it as a warning.  
   

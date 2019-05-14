@@ -175,7 +175,7 @@ The initial Dockerfile might look something like this:
  5  FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
  6  WORKDIR /src
  7  COPY src/Services/Catalog/Catalog.API/Catalog.API.csproj …
- 8  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks … 
+ 8  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks …
  9  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.Extensions.HealthChecks …
 10  COPY src/BuildingBlocks/EventBus/IntegrationEventLogEF/ …
 11  COPY src/BuildingBlocks/EventBus/EventBus/EventBus.csproj …
@@ -200,6 +200,7 @@ The initial Dockerfile might look something like this:
 
 And these are the details, line by line:
 
+<!-- markdownlint-disable MD029-->
 1. Begin a stage with a "small" runtime-only base image, call it **base** for reference.
 2. Create **/app** directory in the image.
 3. Expose port **80**.
@@ -220,6 +221,7 @@ And these are the details, line by line:
 26. Change current directory to **/app**
 27. Copy the **/app** directory from stage **publish** to the current directory
 28. Define the command to run when the container is started.
+<!-- markdownlint-enable MD029-->
 
 Now let's explore some optimizations to improve the whole process performance that, in the case of eShopOnContainers, means about 22 minutes or more to build the complete solution in Linux containers.
 
@@ -227,7 +229,7 @@ You'll take advantage of Docker's layer cache feature, which is quite simple: if
 
 So, let's focus on the **build** stage, lines 5-6 are mostly the same, but lines 7-17 are different for every service from eShopOnContainers, so they have to execute every single time, however if you changed lines 7-16 to:
 
-```
+```Dockerfile
 COPY . .
 ```
 
@@ -239,7 +241,7 @@ Then it would be just the same for every service, it would copy the whole soluti
 
 The next significant optimization involves the `restore` command executed in line 17, which is also different for every service of eShopOnContainers. If you change that line to just:
 
-```console
+```Dockerfile
 RUN dotnet restore
 ```
 
@@ -247,13 +249,13 @@ It would restore the packages for the whole solution, but then again, it would d
 
 However, `dotnet restore` only runs if there's a single project or solution file in the folder, so achieving this is a bit more complicated and the way to solve it, without getting into too many details, is this:
 
-1) Add the following lines to **.dockerignore**:
+1. Add the following lines to **.dockerignore**:
 
    - `*.sln`, to ignore all solution files in the main folder tree
 
    - `!eShopOnContainers-ServicesAndWebApps.sln`, to include only this solution file.
 
-2) Include the `/ignoreprojectextensions:.dcproj` argument to `dotnet restore`, so it also ignores the docker-compose project and only restores the packages for the eShopOnContainers-ServicesAndWebApps solution.
+2. Include the `/ignoreprojectextensions:.dcproj` argument to `dotnet restore`, so it also ignores the docker-compose project and only restores the packages for the eShopOnContainers-ServicesAndWebApps solution.
 
 For the final optimization, it just happens that line 20 is redundant, as line 23 also builds the application and comes, in essence, right after line 20, so there goes another time-consuming command.
 
@@ -536,7 +538,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 - **Steve Lasker. .NET Docker Development with Visual Studio 2017** \
   <https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111>
 
-## Using PowerShell commands in a Dockerfile to set up Windows Containers 
+## Using PowerShell commands in a Dockerfile to set up Windows Containers
 
 [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 

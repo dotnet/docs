@@ -17,11 +17,11 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
 ## Requirements for the Main Procedure  
  A file that runs on its own (usually with extension .exe) must contain a `Main` procedure. A library (for example with extension .dll) does not run on its own and does not require a `Main` procedure. The requirements for the different types of projects you can create are as follows:  
   
--   Console applications run on their own, and you must supply at least one `Main` procedure. .  
+- Console applications run on their own, and you must supply at least one `Main` procedure. .  
   
--   Windows Forms applications run on their own. However, the Visual Basic compiler automatically generates a `Main` procedure in such an application, and you do not need to write one.  
+- Windows Forms applications run on their own. However, the Visual Basic compiler automatically generates a `Main` procedure in such an application, and you do not need to write one.  
   
--   Class libraries do not require a `Main` procedure. These include Windows Control Libraries and Web Control Libraries. Web applications are deployed as class libraries.  
+- Class libraries do not require a `Main` procedure. These include Windows Control Libraries and Web Control Libraries. Web applications are deployed as class libraries.  
   
 ## Declaring the Main Procedure  
  There are four ways to declare the `Main` procedure. It can take arguments or not, and it can return a value or not.  
@@ -29,7 +29,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
 > [!NOTE]
 >  If you declare `Main` in a class, you must use the `Shared` keyword. In a module, `Main` does not need to be `Shared`.  
   
--   The simplest way is to declare a `Sub` procedure that does not take arguments or return a value.  
+- The simplest way is to declare a `Sub` procedure that does not take arguments or return a value.  
   
     ```  
     Module mainModule  
@@ -41,7 +41,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
     End Module  
     ```  
   
--   `Main` can also return an `Integer` value, which the operating system uses as the exit code for your program. Other programs can test this code by examining the Windows ERRORLEVEL value. To return an exit code, you must declare `Main` as a `Function` procedure instead of a `Sub` procedure.  
+- `Main` can also return an `Integer` value, which the operating system uses as the exit code for your program. Other programs can test this code by examining the Windows ERRORLEVEL value. To return an exit code, you must declare `Main` as a `Function` procedure instead of a `Sub` procedure.  
   
     ```  
     Module mainModule  
@@ -58,7 +58,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
     End Module  
     ```  
   
--   `Main` can also take a `String` array as an argument. Each string in the array contains one of the command-line arguments used to invoke your program. You can take different actions depending on their values.  
+- `Main` can also take a `String` array as an argument. Each string in the array contains one of the command-line arguments used to invoke your program. You can take different actions depending on their values.  
   
     ```  
     Module mainModule  
@@ -82,7 +82,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
     End Module  
     ```  
   
--   You can declare `Main` to examine the command-line arguments but not return an exit code, as follows.  
+- You can declare `Main` to examine the command-line arguments but not return an exit code, as follows.  
   
     ```  
     Module mainModule  

@@ -10,11 +10,11 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
   
  There are several scenarios for handling the <xref:System.Windows.FrameworkElement.ContextMenuOpening> event:  
   
--   Adjusting the menu items before display.  
+- Adjusting the menu items before display.  
   
--   Replacing the entire menu before display.  
+- Replacing the entire menu before display.  
   
--   Completely suppressing any existing context menu and displaying no context menu.  
+- Completely suppressing any existing context menu and displaying no context menu.  
   
 ## Example  
   

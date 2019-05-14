@@ -47,11 +47,11 @@ While you might visualize a Visual Studio project as a series of procedures that
   
  The `WithEvents` statement and the `Handles` clause are often the best choice for event handlers because the declarative syntax they use makes event handling easier to code, read and debug. However, be aware of the following limitations on the use of `WithEvents` variables:  
   
--   You cannot use a `WithEvents` variable as an object variable. That is, you cannot declare it as `Object`—you must specify the class name when you declare the variable.  
+- You cannot use a `WithEvents` variable as an object variable. That is, you cannot declare it as `Object`—you must specify the class name when you declare the variable.  
   
--   Because shared events are not tied to class instances, you cannot use `WithEvents` to declaratively handle shared events. Similarly, you cannot use `WithEvents` or `Handles` to handle events from a `Structure`. In both cases, you can use the `AddHandler` statement to handle those events.  
+- Because shared events are not tied to class instances, you cannot use `WithEvents` to declaratively handle shared events. Similarly, you cannot use `WithEvents` or `Handles` to handle events from a `Structure`. In both cases, you can use the `AddHandler` statement to handle those events.  
   
--   You cannot create arrays of `WithEvents` variables.  
+- You cannot create arrays of `WithEvents` variables.  
   
  `WithEvents` variables allow a single event handler to handle one or more kind of event, or one or more event handlers to handle the same kind of event.  
   
@@ -85,7 +85,7 @@ While you might visualize a Visual Studio project as a series of procedures that
   
 ### To handle events from a base class  
   
--   Declare an event handler in the derived class by adding a `Handles MyBase.`*eventname* statement to the declaration line of your event-handler procedure, where *eventname* is the name of the event in the base class you are handling. For example:  
+- Declare an event handler in the derived class by adding a `Handles MyBase.`*eventname* statement to the declaration line of your event-handler procedure, where *eventname* is the name of the event in the base class you are handling. For example:  
   
      [!code-vb[VbVbalrEvents#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#12)]  
   
@@ -98,6 +98,6 @@ While you might visualize a Visual Studio project as a series of procedures that
 |[How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)|Demonstrates how to define a custom event that allows its event handlers to be called asynchronously.|  
 |[How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)|Demonstrates how to define a custom event that uses memory only when the event is handled.|  
 |[Troubleshooting Inherited Event Handlers in Visual Basic](../../../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)|Lists common issues that arise with event handlers in inherited components.|  
-|[Events](../../../../standard/events/index.md)|Provides an overview of the event model in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].|  
+|[Events](../../../../standard/events/index.md)|Provides an overview of the event model in the .NET Framework.|  
 |[Creating Event Handlers in Windows Forms](../../../../framework/winforms/creating-event-handlers-in-windows-forms.md)|Describes how to work with events associated with Windows Forms objects.|  
 |[Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)|Provides an overview of delegates in Visual Basic.|

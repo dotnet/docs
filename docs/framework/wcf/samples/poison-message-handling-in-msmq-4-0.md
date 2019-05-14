@@ -21,13 +21,13 @@ This sample demonstrates how to perform poison message handling in a service. Th
 
  Once the message is marked as poisoned, the message is dealt with according to the settings in the <xref:System.ServiceModel.MsmqBindingBase.ReceiveErrorHandling%2A> enumeration. To reiterate the possible values:
 
--   Fault (default): To fault the listener and also the service host.
+- Fault (default): To fault the listener and also the service host.
 
--   Drop: To drop the message.
+- Drop: To drop the message.
 
--   Move: To move the message to the poison message sub-queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- Move: To move the message to the poison message sub-queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
 
--   Reject: To reject the message, sending the message back to the sender's dead-letter queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- Reject: To reject the message, sending the message back to the sender's dead-letter queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
 
  The sample demonstrates using the `Move` disposition for the poison message. `Move` causes the message to move to the poison sub-queue.
 
@@ -271,15 +271,15 @@ Processing Purchase Order: 23e0b991-fbf9-4438-a0e2-20adf93a4f89
 
 2. If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
 
-    1.  Open Server Manager in Visual Studio 2012.
+    1. Open Server Manager in Visual Studio 2012.
 
-    2.  Expand the **Features** tab.
+    2. Expand the **Features** tab.
 
-    3.  Right-click **Private Message Queues**, and select **New**, **Private Queue**.
+    3. Right-click **Private Message Queues**, and select **New**, **Private Queue**.
 
-    4.  Check the **Transactional** box.
+    4. Check the **Transactional** box.
 
-    5.  Enter `ServiceModelSamplesTransacted` as the name of the new queue.
+    5. Enter `ServiceModelSamplesTransacted` as the name of the new queue.
 
 3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 

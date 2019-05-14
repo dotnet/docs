@@ -23,7 +23,7 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Demonstrates how to receive a string from a computer's serial port.  
   
  [Port Operations in the .NET Framework](../../../../visual-basic/developing-apps/programming/computer-resources/port-operations-in-the-net-framework.md)  
- Describes how to use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] when performing port operations.  
+ Describes how to use the .NET Framework when performing port operations.  
   
 ## Reference  
  <xref:Microsoft.VisualBasic.Devices.Ports>  

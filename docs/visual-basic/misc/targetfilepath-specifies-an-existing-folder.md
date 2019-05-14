@@ -8,7 +8,7 @@ The parameter `TargetFilePath` specifies an existing directory but must specify 
   
 ## To correct this error  
   
--   Change `TargetFilePath` to specify a new, rather than existing, directory.  
+- Change `TargetFilePath` to specify a new, rather than existing, directory.  
   
 ## See also
 

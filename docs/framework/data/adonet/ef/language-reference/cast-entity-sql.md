@@ -33,11 +33,11 @@ CAST( e as T )
   
  Values for the precision and scale facets may optionally be provided when casting to `Edm.Decimal`. If not explicitly provided, the default values for precision and scale are 18 and 0, respectively. Specifically, the following overloads are supported for `Decimal`:  
   
--   `CAST( d as Edm.Decimal );`  
+- `CAST( d as Edm.Decimal );`  
   
--   `CAST( d as Edm.Decimal(precision) );`  
+- `CAST( d as Edm.Decimal(precision) );`  
   
--   `CAST( d as Edm.Decimal(precision, scale) );`  
+- `CAST( d as Edm.Decimal(precision, scale) );`  
   
  The use of a cast expression is considered an explicit conversion. Explicit conversions might truncate data or lose precision.  
   

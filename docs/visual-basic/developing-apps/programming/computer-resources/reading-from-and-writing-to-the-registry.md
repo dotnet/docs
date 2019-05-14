@@ -23,7 +23,7 @@ This topic describes task and conceptual topics that are associated with the reg
  Describes how to use the `DeleteSubKey` method of the `My.Computer.Registry.CurrentUser` property to delete a registry key.  
   
  [Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md)  
- Describes how to use the `Registry` and `RegistryKey` classes of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to access the registry.  
+ Describes how to use the `Registry` and `RegistryKey` classes of the .NET Framework to access the registry.  
   
  [Security and the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/security-and-the-registry.md)  
  Discusses security issues involving the registry.  

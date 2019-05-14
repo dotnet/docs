@@ -54,15 +54,15 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
   
  There are three possible values for IDN depending on the DNS servers that are used:  
   
--   idn enabled = All  
+- idn enabled = All  
   
      This value will convert any Unicode domain names to their Punycode equivalents (IDN names).  
   
--   idn enabled = AllExceptIntranet  
+- idn enabled = AllExceptIntranet  
   
      This value will convert all Unicode domain names not on the local Intranet to use the Punycode equivalents (IDN names). In this case to handle international names on the local Intranet, the DNS servers that are used for the Intranet should support Unicode name resolution.  
   
--   idn enabled = None  
+- idn enabled = None  
   
      This value will not convert any Unicode domain names to use Punycode. This is the default value which is consistent with the .NET Framework 2.0 behaviour.  
   

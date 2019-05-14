@@ -13,7 +13,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate C# classes that support data binding
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```console
     "%windir%\Microsoft.NET\Framework\v3.5\DataSvcUtil.exe" /dataservicecollection /version:2.0 /language:CSharp /out:Northwind.cs /uri:http://localhost:12345/Northwind.svc
@@ -24,7 +24,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate Visual Basic classes that support data binding
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```console
     "%windir%\Microsoft.NET\Framework\v3.5\DataSvcUtil.exe" /dataservicecollection /version:2.0 /language:VB /out:Northwind.vb /uri:http://localhost:12345/Northwind.svc
@@ -35,7 +35,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate C# classes based on the service URI
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```
     "%windir%\Microsoft.NET\Framework\v3.5\DataSvcUtil.exe" /language:CSharp /out:northwind.cs /uri:http://localhost:12345/Northwind.svc
@@ -46,7 +46,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate Visual Basic classes based on the service URI
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /out:Northwind.vb /uri:http://localhost:12345/Northwind.svc
@@ -57,7 +57,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate C# classes based on the conceptual model file (CSDL)
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:CSharp /in:Northwind.csdl /out:Northwind.cs
@@ -65,7 +65,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate Visual Basic classes based on the conceptual model file (CSDL)
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.csdl /out:Northwind.vb
@@ -73,7 +73,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate C# classes based on the .edmx file
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:CSharp /in:Northwind.edmx /out:c:\northwind.cs
@@ -81,7 +81,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 ### To generate Visual Basic classes based on the .edmx file
 
--   At the command prompt, execute the following command without line breaks:
+- At the command prompt, execute the following command without line breaks:
 
     ```
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.edmx /out:c:\northwind.vb

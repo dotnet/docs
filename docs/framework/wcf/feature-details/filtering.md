@@ -30,9 +30,9 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
 ### Endpoint Address Filters  
  The <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> filters messages and message buffers based on an endpoint address, as represented in their header collection. For a message to pass such a filter, the following conditions must be met:  
   
--   The filter’s address Uniform Resource Identifier (URI) must be the same as the one in the message To header.  
+- The filter’s address Uniform Resource Identifier (URI) must be the same as the one in the message To header.  
   
--   Each endpoint parameter in the address of the filter (`address.Headers` collection) must find a header in the message to map on. Extra headers in the message or message buffer are acceptable for the match to remain `true`.  
+- Each endpoint parameter in the address of the filter (`address.Headers` collection) must find a header in the message to map on. Extra headers in the message or message buffer are acceptable for the match to remain `true`.  
   
 ### Prefix Endpoint Address Filters  
   
@@ -73,9 +73,9 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
 ### De-multiplexing  
  When multiple endpoints fan out from the same `ServiceListener` off the wire, the only way to de-multiplex messages and know whether they belong to a certain endpoint address, is to use <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>s, which select messages toward the registered endpoints by performing a lookup on the information stored in the headers. In these filters, only those messages that pass have all necessary headers that correspond to both:  
   
--   The URI in the `EndpointAddress`.  
+- The URI in the `EndpointAddress`.  
   
--   The rest of the endpoint parameters in the `EndpointAddress` as specified in the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>.  
+- The rest of the endpoint parameters in the `EndpointAddress` as specified in the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>.  
   
 ## See also
 

@@ -69,11 +69,11 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 2. If your project does not contain a configuration file (app.config or Web.config), then from the **Project** menu, select **Add New Item**.  
   
-    -   **Visual Basic:** In the **Add New Item** dialog box, choose **Application Configuration File**.  
+    - **Visual Basic:** In the **Add New Item** dialog box, choose **Application Configuration File**.  
   
          The application configuration file is created and opened. This is an XML document whose root element is `<configuration>.`  
   
-    -   **Visual C#:** In the **Add New Item** dialog box, choose **XML File**. Name this file **app.config**. In the XML editor, after the XML declaration, add the following XML:  
+    - **Visual C#:** In the **Add New Item** dialog box, choose **XML File**. Name this file **app.config**. In the XML editor, after the XML declaration, add the following XML:  
   
         ```xml  
         <configuration>  

@@ -1,30 +1,28 @@
 ---
-title: Deploy ML.NET Model to Azure Functions
+title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 03/08/2019
-ms.custom: mvc,how-to
+ms.date: 05/03/2019
+author: luisquintanilla
+ms.author: luquinta
+ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to use my ML.NET Machine Learning model to make predictions through the internet using Azure Functions
 ---
 
-# How-To: Use ML.NET Model in Azure Functions
+# Deploy a model to Azure Functions
 
-This how-to shows how individual predictions can be made using a pre-built ML.NET machine learning model through the internet in a serverless environment such as Azure Functions.
+Learn how to deploy a pre-trained ML.NET machine learning model for predictions over HTTP through an Azure Functions serverless environment.
 
 > [!NOTE]
-> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
-
-This how-to and related sample are currently using **ML.NET version 0.10**. For more information, see the release notes at the [dotnet/machinelearning github repo](https://github.com/dotnet/machinelearning/tree/master/docs/release-notes).
+> `PredictionEnginePool` service extension is currently in preview.
 
 ## Prerequisites
 
-- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed. 
+- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - Powershell
-- Pre-trained model. 
-    - Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
-    - Download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
-## Create Azure Functions Project
+## Create Azure Functions project
 
 1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **Cloud** node. Then select the **Azure Functions** project template. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and then select the **OK** button.
 1. In the **New Project** dialog, open the dropdown above the project options and select **Azure Functions v2 (.NET Core)**. Then, select the **Http trigger** project and then select the **OK** button.
@@ -36,12 +34,16 @@ This how-to and related sample are currently using **ML.NET version 0.10**. For 
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-## Add Pre-built Model To Project
+1. Install the **Microsoft.Extensions.ML NuGet Package**:
+
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.Extensions.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+
+## Add pre-trained model to project
 
 1. Copy your pre-built model to the *MLModels* folder.
 1. In Solution Explorer, right-click your pre-built model file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-## Create Function to Analyze Sentiment
+## Create Azure Function to analyze sentiment
 
 Create a class to predict sentiment. Add a new class to your project:
 
@@ -51,121 +53,208 @@ Create a class to predict sentiment. Add a new class to your project:
 
 1. In the **New Azure Function** dialog box, select **Http Trigger**. Then, select the **OK** button.
 
-    The *AnalyzeSentiment.cs* file opens in the code editor. Add the following `using` statement to the top of *GitHubIssueData.cs*:
+    The *AnalyzeSentiment.cs* file opens in the code editor. Add the following `using` statement to the top of *AnalyzeSentiment.cs*:
 
-```csharp
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using Microsoft.ML;
-using Microsoft.ML.Core.Data;
-using Microsoft.ML.Data;
-using MLNETServerless.DataModels;
-```
+    ```csharp
+    using System;
+    using System.IO;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Azure.WebJobs;
+    using Microsoft.Azure.WebJobs.Extensions.Http;
+    using Microsoft.AspNetCore.Http;
+    using Microsoft.Extensions.Logging;
+    using Newtonsoft.Json;
+    using Microsoft.Extensions.ML;
+    using SentimentAnalysisFunctionsApp.DataModels;
+    ```
 
-### Create Data Models
+    By default, the `AnalyzeSentiment` class is `static`. Make sure to remove the `static` keyword from the class definition.
+
+    ```csharp
+    public class AnalyzeSentiment
+    {
+    
+    }
+    ```
+
+## Create data models
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
 1. Create a directory named *DataModels* in your project to save your data models:
     In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "DataModels" and hit Enter.
 2. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
-3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
+3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. 
 
-```csharp
-using Microsoft.ML.Data;
-```
+    The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
 
-Remove the existing class definition and add the following code to the SentimentData.cs file:
+    ```csharp
+    using Microsoft.ML.Data;
+    ```
 
-```csharp
-public class SentimentData
-{
-    [LoadColumn(0)]
-    public bool Label { get; set; }
-    [LoadColumn(1)]
-    public string Text { get; set; }
-}
-```
+    Remove the existing class definition and add the following code to the *SentimentData.cs* file:
+    
+    ```csharp
+    public class SentimentData
+    {
+        [LoadColumn(0)]
+        public string SentimentText;
+
+        [LoadColumn(1)]
+        [ColumnName("Label")]
+        public bool Sentiment;
+    }
+    ```
 
 4. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
 5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the **Add** button. The *SentimentPrediction.cs* file opens in the code editor. Add the following using statement to the top of *SentimentPrediction.cs*:
 
-```csharp
-using Microsoft.ML.Data;
-```
+    ```csharp
+    using Microsoft.ML.Data;
+    ```
 
-Remove the existing class definition and add the following code to the *SentimentPrediction.cs* file:
+    Remove the existing class definition and add the following code to the *SentimentPrediction.cs* file:
+
+    ```csharp
+    public class SentimentPrediction : SentimentData
+    {
+
+        [ColumnName("PredictedLabel")]
+        public bool Prediction { get; set; }
+
+        public float Probability { get; set; }
+
+        public float Score { get; set; }
+    }
+    ```
+
+    `SentimentPrediction` inherits from `SentimentData` which provides access to the original data in the `SentimentText` property as well as the output generated by the model.
+
+## Register PredictionEnginePool service
+
+To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). In order to use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) in your application you must create it when it's needed. In that case, a best practice to consider is dependency injection.
+
+The following link provides more information if you want to learn about [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
+
+1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button. 
+
+    The *Startup.cs* file opens in the code editor. Add the following using statement to the top of *Startup.cs*:
+
+    ```csharp
+    using Microsoft.Azure.WebJobs;
+    using Microsoft.Azure.WebJobs.Hosting;
+    using Microsoft.Extensions.ML;
+    using SentimentAnalysisFunctionsApp;
+    using SentimentAnalysisFunctionsApp.DataModels;
+    ```
+
+    Remove the existing code below the using statements and add the following code to the *Startup.cs* file:
+
+    ```csharp
+    [assembly: WebJobsStartup(typeof(Startup))]
+    namespace SentimentAnalysisFunctionsApp
+    {
+        class Startup : IWebJobsStartup
+        {
+            public void Configure(IWebJobsBuilder builder)
+            {
+                builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
+                    .FromFile("MLModels/sentiment_model.zip");
+            }
+        }
+    }
+    ```
+
+At a high level, this code initializes the objects and services automatically when requested by the application instead of having to manually do it.
+
+> [!WARNING]
+> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. For improved performance and thread safety, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of `PredictionEngine` objects for application use. 
+
+## Register Startup as an Azure Functions extension
+
+In order to use `Startup` in your application, you need to register it as an Azure Functions extension. Create a new file called *extensions.json* in your project if one does not already exist.
+
+1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
+1. In the **New Item** dialog, select the **Visual C#** node followed by the **Web** node. Then select the **Json File** option. In the **Name** text box, type "extensions.json" and then select the **OK** button.
+
+    The *extensions.json* file opens in the code editor. Add the following content to *extensions.json*:
+    
+    ```json
+    {
+      "extensions": [
+        {
+          "name": "Startup",
+          "typename": "SentimentAnalysisFunctionsApp.Startup, SentimentAnalysisFunctionsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        }
+      ]
+    }
+    ```
+
+1. In Solution Explorer, right-click your *extensions.json* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
+
+## Load the model into the function
+
+Insert the following code inside the *AnalyzeSentiment* class:
 
 ```csharp
-public class SentimentPrediction
+private readonly PredictionEnginePool<SentimentData, SentimentPrediction> _predictionEnginePool;
+
+// AnalyzeSentiment class constructor
+public AnalyzeSentiment(PredictionEnginePool<SentimentData, SentimentPrediction> predictionEnginePool)
 {
-    [ColumnName("PredictedLabel")]
-    public bool Prediction { get; set; }
+    _predictionEnginePool = predictionEnginePool;
 }
 ```
 
-### Add Prediction Logic
+This code assigns the `PredictionEnginePool` by passing it to the function's constructor which you get via dependency injection.
+
+## Use the model to make predictions
 
 Replace the existing implementation of *Run* method in *AnalyzeSentiment* class with the following code:
 
 ```csharp
-    public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function,"post", Route = null)] HttpRequest req,
-        ILogger log)
-    {
-        log.LogInformation("C# HTTP trigger function processed a request.");
+[FunctionName("AnalyzeSentiment")]
+public async Task<IActionResult> Run(
+[HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+ILogger log)
+{
+    log.LogInformation("C# HTTP trigger function processed a request.");
 
-        //Create Context
-        MLContext mlContext = new MLContext();
+    //Parse HTTP Request Body
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+    SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
+    
+    //Make Prediction
+    SentimentPrediction prediction = _predictionEnginePool.Predict(data);
 
-        //Load Model
-        using (var fs = File.OpenRead("MLModels/sentiment_model.zip"))
-        {
-            model = mlContext.Model.Load(fs);
-        }
+    //Convert prediction to string
+    string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
 
-        //Parse HTTP Request Body
-        string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-        SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
-
-        //Create Prediction Engine
-        PredictionEngine<SentimentData, SentimentPrediction> predictionEngine = model.CreatePredictionEngine<SentimentData, SentimentPrediction>(mlContext);
-
-        //Make Prediction
-        SentimentPrediction prediction = predictionEngine.Predict(data);
-
-        //Convert prediction to string
-        string isToxic = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
-
-        //Return Prediction
-        return (ActionResult)new OkObjectResult(isToxic);
-    }
+    //Return Prediction
+    return (ActionResult)new OkObjectResult(sentiment);
 }
 ```
 
-## Test Locally
+When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to generate a prediction and return the result to the user. 
+
+## Test locally
 
 Now that everything is set up, it's time to test the application:
 
 1. Run the application
-1. Open PowerShell and enter the code into the prompt where PORT is the port your application is running on. Typically the port is 7071. 
+1. Open PowerShell and enter the code into the prompt where PORT is the port your application is running on. Typically the port is 7071.
 
-```powershell
-Invoke-RestMethod "http://localhost:<PORT>/api/AnalyzeSentiment" -Method Post -Body (@{Text="This is a very rude movie"} | ConvertTo-Json) -ContentType "application/json"
-```
+    ```powershell
+    Invoke-RestMethod "http://localhost:<PORT>/api/AnalyzeSentiment" -Method Post -Body (@{SentimentText="This is a very bad steak"} | ConvertTo-Json) -ContentType "application/json"
+    ```
 
-If successful, the output should look similar to the text below:
-
-```powershell
-Toxic
-```
+    If successful, the output should look similar to the text below:
+    
+    ```powershell
+    Negative
+    ```
 
 Congratulations! You have successfully served your model to make predictions over the internet using an Azure Function.
 

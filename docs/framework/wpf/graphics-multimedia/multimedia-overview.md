@@ -31,11 +31,11 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ### Independent Mode  
  In independent mode, the media content drives media playback. Independent mode enables the following options:  
   
--   Media's <xref:System.Uri> can be directly specified.  
+- Media's <xref:System.Uri> can be directly specified.  
   
--   Media playback can be directly controlled.  
+- Media playback can be directly controlled.  
   
--   Media's <xref:System.Windows.Controls.MediaElement.Position%2A> and <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> properties can be modified.  
+- Media's <xref:System.Windows.Controls.MediaElement.Position%2A> and <xref:System.Windows.Controls.MediaElement.SpeedRatio%2A> properties can be modified.  
   
  Media is loaded by either setting the <xref:System.Windows.Controls.MediaElement> object's <xref:System.Windows.Controls.MediaElement.Source%2A> property or by calling the <xref:System.Windows.Media.MediaPlayer> object's <xref:System.Windows.Media.MediaPlayer.Open%2A> method.  
   
@@ -46,11 +46,11 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ### Clock Mode  
  In clock mode, a <xref:System.Windows.Media.MediaTimeline> drives media playback. Clock mode has the following characteristics:  
   
--   Media's <xref:System.Uri> is indirectly set through a <xref:System.Windows.Media.MediaTimeline>.  
+- Media's <xref:System.Uri> is indirectly set through a <xref:System.Windows.Media.MediaTimeline>.  
   
--   Media playback can be controlled by the clock. The media object's control methods cannot be used.  
+- Media playback can be controlled by the clock. The media object's control methods cannot be used.  
   
--   Media is loaded by setting a <xref:System.Windows.Media.MediaTimeline> object's <xref:System.Windows.Media.MediaTimeline.Source%2A> property, creating the clock from the timeline, and assigning the clock to the media object. Media is also loaded this way when a <xref:System.Windows.Media.MediaTimeline> inside a <xref:System.Windows.Media.Animation.Storyboard> targets a <xref:System.Windows.Controls.MediaElement>.  
+- Media is loaded by setting a <xref:System.Windows.Media.MediaTimeline> object's <xref:System.Windows.Media.MediaTimeline.Source%2A> property, creating the clock from the timeline, and assigning the clock to the media object. Media is also loaded this way when a <xref:System.Windows.Media.MediaTimeline> inside a <xref:System.Windows.Media.Animation.Storyboard> targets a <xref:System.Windows.Controls.MediaElement>.  
   
  To control media playback in clock mode, the <xref:System.Windows.Media.Animation.ClockController> control methods must be used. A <xref:System.Windows.Media.Animation.ClockController> is obtained from the <xref:System.Windows.Media.Animation.ClockController> property of the <xref:System.Windows.Media.MediaClock>. If you attempt to use the control methods of either a <xref:System.Windows.Controls.MediaElement> or <xref:System.Windows.Media.MediaPlayer> object while in clock mode, an <xref:System.InvalidOperationException> will be thrown.  
   

@@ -33,7 +33,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
  [!code-csharp[csProgGuideNamespaces#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces2.cs#7)]  
   
 ## Using Namespaces to control scope  
- The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [. Operator](../../../csharp/language-reference/operators/member-access-operator.md) is used to differentiate which method gets called.  
+ The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [member access `.` operator](../../language-reference/operators/member-access-operators.md#member-access-operator-) is used to differentiate which method gets called.  
   
  [!code-csharp[csProgGuideNamespaces#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#8)]  
   
@@ -46,13 +46,13 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
  In the previous code segment:  
   
--   The namespace `N1` is a member of the global namespace. Its fully qualified name is `N1`.  
+- The namespace `N1` is a member of the global namespace. Its fully qualified name is `N1`.  
   
--   The namespace `N2` is a member of `N1`. Its fully qualified name is `N1.N2`.  
+- The namespace `N2` is a member of `N1`. Its fully qualified name is `N1.N2`.  
   
--   The class `C1` is a member of `N1`. Its fully qualified name is `N1.C1`.  
+- The class `C1` is a member of `N1`. Its fully qualified name is `N1.C1`.  
   
--   The class name `C2` is used two times in this code. However, the fully qualified names are unique. The first instance of `C2` is declared inside `C1`; therefore, its fully qualified name is: `N1.C1.C2`. The second instance of `C2` is declared inside a namespace `N2`; therefore, its fully qualified name is `N1.N2.C2`.  
+- The class name `C2` is used two times in this code. However, the fully qualified names are unique. The first instance of `C2` is declared inside `C1`; therefore, its fully qualified name is: `N1.C1.C2`. The second instance of `C2` is declared inside a namespace `N2`; therefore, its fully qualified name is `N1.N2.C2`.  
   
  Using the previous code segment, you can add a new class member, `C3`, to the namespace `N1.N2` as follows:  
   
@@ -87,6 +87,6 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
 - [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)
-- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
+- [. Operator](../../../csharp/language-reference/operators/member-access-operators.md#member-access-operator-)
 - [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
 - [extern](../../../csharp/language-reference/keywords/extern.md)

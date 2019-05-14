@@ -447,13 +447,13 @@ class Compilation { /*...*/
   
  In this article, we discussed how you should be aware of performance bottleneck symptoms that can affect your app's responsiveness, especially for large systems or systems that process a large amount of data. Common culprits include boxing, string manipulations, LINQ and lambda, caching in async methods, caching without a size limit or disposal policy, inappropriate use of dictionaries, and passing around structures. Keep in mind the four facts for tuning your apps:  
   
--   Don’t prematurely optimize – be productive and tune your app when you spot problems. 
+- Don’t prematurely optimize – be productive and tune your app when you spot problems. 
   
--   Profiles don’t lie – you’re guessing if you’re not measuring. 
+- Profiles don’t lie – you’re guessing if you’re not measuring. 
   
--   Good tools make all the difference – download PerfView and try it out. 
+- Good tools make all the difference – download PerfView and try it out. 
   
--   It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers. 
+- It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers. 
   
 ## See also
 

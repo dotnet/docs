@@ -44,7 +44,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
   
 ### To bind controls to the BindingSource that is bound to a Web service  
   
--   Bind controls to the <xref:System.Windows.Forms.BindingSource>, passing the public property of the Web service type that you want as a parameter.  
+- Bind controls to the <xref:System.Windows.Forms.BindingSource>, passing the public property of the Web service type that you want as a parameter.  
   
      [!code-cpp[System.Windows.Forms.DataConnectorWebService#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorWebService/CPP/form1.cpp#3)]
      [!code-csharp[System.Windows.Forms.DataConnectorWebService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorWebService/CS/form1.cs#3)]
@@ -62,9 +62,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
   
  This example requires:  
   
--   References to the System, System.Drawing, System.Web.Services, System.Windows.Forms and System.Xml assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the System, System.Drawing, System.Web.Services, System.Windows.Forms and System.Xml assemblies.  
   
 ## See also
 

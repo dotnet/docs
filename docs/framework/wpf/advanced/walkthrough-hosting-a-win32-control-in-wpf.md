@@ -41,9 +41,9 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 6. Handle selected messages sent to the host window, such as notifications from child controls. There are two ways to do this.  
   
-    -   If you prefer to handle messages in your hosting class, override the <xref:System.Windows.Interop.HwndHost.WndProc%2A> method of the <xref:System.Windows.Interop.HwndHost> class.  
+    - If you prefer to handle messages in your hosting class, override the <xref:System.Windows.Interop.HwndHost.WndProc%2A> method of the <xref:System.Windows.Interop.HwndHost> class.  
   
-    -   If you prefer to have the WPF handle the messages, handle the <xref:System.Windows.Interop.HwndHost> class <xref:System.Windows.Interop.HwndHost.MessageHook> event in your code-behind. This event occurs for every message that is received by the hosted window. If you choose this option, you must still override <xref:System.Windows.Interop.HwndHost.WndProc%2A>, but you only need a minimal implementation.  
+    - If you prefer to have the WPF handle the messages, handle the <xref:System.Windows.Interop.HwndHost> class <xref:System.Windows.Interop.HwndHost.MessageHook> event in your code-behind. This event occurs for every message that is received by the hosted window. If you choose this option, you must still override <xref:System.Windows.Interop.HwndHost.WndProc%2A>, but you only need a minimal implementation.  
   
 7. Override the <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A> and <xref:System.Windows.Interop.HwndHost.WndProc%2A> methods of <xref:System.Windows.Interop.HwndHost>. You must override these methods to satisfy the <xref:System.Windows.Interop.HwndHost> contract, but you may only need to provide a minimal implementation.  
   
@@ -123,13 +123,13 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
 ## Implement Communication Between the Control and the Page  
  You manipulate the control by sending it Windows messages. The control notifies you when the user interacts with it by sending notifications to its host window. The [Hosting a Win32 ListBox Control in WPF](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control) sample includes a UI that provides several examples of how this works:  
   
--   Append an item to the list.  
+- Append an item to the list.  
   
--   Delete the selected item from the list  
+- Delete the selected item from the list  
   
--   Display the text of the currently selected item.  
+- Display the text of the currently selected item.  
   
--   Display the number of items in the list.  
+- Display the number of items in the list.  
   
  The user can also select an item in the list box by clicking on it, just as they would for a conventional Win32 application. The displayed data is updated each time the user changes the state of the list box by selecting, adding, or appending an item.  
   

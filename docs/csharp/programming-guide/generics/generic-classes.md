@@ -14,19 +14,19 @@ Generic classes encapsulate operations that are not specific to a particular dat
   
  Typically, you create generic classes by starting with an existing concrete class, and changing types into type parameters one at a time until you reach the optimal balance of generalization and usability. When creating your own generic classes, important considerations include the following:  
   
--   Which types to generalize into type parameters.  
+- Which types to generalize into type parameters.  
   
      As a rule, the more types you can parameterize, the more flexible and reusable your code becomes. However, too much generalization can create code that is difficult for other developers to read or understand.  
   
--   What constraints, if any, to apply to the type parameters (See [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)).  
+- What constraints, if any, to apply to the type parameters (See [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)).  
   
      A good rule is to apply the maximum constraints possible that will still let you handle the types you must handle. For example, if you know that your generic class is intended for use only with reference types, apply the class constraint. That will prevent unintended use of your class with value types, and will enable you to use the `as` operator on `T`, and check for null values.  
   
--   Whether to factor generic behavior into base classes and subclasses.  
+- Whether to factor generic behavior into base classes and subclasses.  
   
      Because generic classes can serve as base classes, the same design considerations apply here as with non-generic classes. See the rules about inheriting from generic base classes later in this topic.  
   
--   Whether to implement one or more generic interfaces.  
+- Whether to implement one or more generic interfaces.  
   
      For example, if you are designing a class that will be used to create items in a generics-based collection, you may have to implement an interface such as <xref:System.IComparable%601> where `T` is the type of your class.  
   

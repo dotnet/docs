@@ -13,22 +13,22 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The .NET Framework provides caching functionality that you can use to improve the performance and scalability of both Windows client and server applications, including ASP.NET.  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and earlier versions, ASP.NET provided an in-memory cache implementation in the <xref:System.Web.Caching> namespace. In previous versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes. In the .NET Framework 4, the <xref:System.Runtime.Caching> namespace contains APIs that are designed for both Web and non-Web applications.  
+>  In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and earlier versions, ASP.NET provided an in-memory cache implementation in the <xref:System.Web.Caching> namespace. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes. In the .NET Framework 4, the <xref:System.Runtime.Caching> namespace contains APIs that are designed for both Web and non-Web applications.  
   
 ## Caching Data  
  You can cache information by using classes in the <xref:System.Runtime.Caching> namespace. The caching classes in this namespace provide the following features:  
   
--   Abstract types that provide the foundation for creating custom cache implementations.  
+- Abstract types that provide the foundation for creating custom cache implementations.  
   
--   A concrete in-memory object cache implementation.  
+- A concrete in-memory object cache implementation.  
   
  The abstract base caching class (<xref:System.Runtime.Caching.ObjectCache>) defines the following caching tasks:  
   
--   Creating and managing cache entries.  
+- Creating and managing cache entries.  
   
--   Specifying expiration and eviction information.  
+- Specifying expiration and eviction information.  
   
--   Triggering events that are raised in response to changes in cache entries.  
+- Triggering events that are raised in response to changes in cache entries.  
   
  The <xref:System.Runtime.Caching.MemoryCache> class is an in-memory object cache implementation of the <xref:System.Runtime.Caching.ObjectCache> class. You can use the <xref:System.Runtime.Caching.MemoryCache> class for most caching tasks.  
   
@@ -61,11 +61,11 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
  To extend caching you can do the following:  
   
--   Create a custom class that derives from the <xref:System.Runtime.Caching.ObjectCache> class and then provide a custom cache implementation in the derived class.  
+- Create a custom class that derives from the <xref:System.Runtime.Caching.ObjectCache> class and then provide a custom cache implementation in the derived class.  
   
--   Create a class that derives from <xref:System.Runtime.Caching.MemoryCache> class and customize or extend the derived class. For an example of how to do this, see [Caching Application Data by Using Multiple Cache Objects in an ASP.NET Application](https://blogs.msdn.com/aspnetue/archive/2010/03/22/caching-application-data-by-using-multiple-cache-objects-in-an-asp-net-application.aspx).  
+- Create a class that derives from <xref:System.Runtime.Caching.MemoryCache> class and customize or extend the derived class. For an example of how to do this, see [Caching Application Data by Using Multiple Cache Objects in an ASP.NET Application](https://blogs.msdn.com/aspnetue/archive/2010/03/22/caching-application-data-by-using-multiple-cache-objects-in-an-asp-net-application.aspx).  
   
--   Create a class that derives from the <xref:System.Web.Caching.OutputCacheProvider> class and configure the application to use the custom output cache provider.  
+- Create a class that derives from the <xref:System.Web.Caching.OutputCacheProvider> class and configure the application to use the custom output cache provider.  
   
  For more information, see the entry [Extensible Output Caching with ASP.NET 4 (VS 2010 and .NET 4.0 Series)](https://go.microsoft.com/fwlink/?LinkId=185772) on Scott Guthrie's blog.  
   

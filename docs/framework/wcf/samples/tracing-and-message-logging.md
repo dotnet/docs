@@ -46,11 +46,11 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   
  It is possible to extend the tracing that is provided by the ServiceModel by creating user-defined activity traces. User-defined activity tracing allows the user to create trace activities to:  
   
--   Group traces into logical units of work.  
+- Group traces into logical units of work.  
   
--   Correlate activities through transfers and propagation.  
+- Correlate activities through transfers and propagation.  
   
--   Lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
+- Lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
   
  For more information about user-defined activity trace, please see the [Extending Tracing](../../../../docs/framework/wcf/samples/extending-tracing.md) sample.  
   

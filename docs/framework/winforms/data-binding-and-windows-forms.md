@@ -16,13 +16,13 @@ ms.assetid: 419aac5e-819b-4aad-88b0-73a2f8c0bd27
 # Data Binding and Windows Forms
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.  
   
- In addition, you can bind any property of any control to the data source. In traditional data binding, you typically bind the display property—for example, the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control—to the data source. With the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], you also have the option of setting other properties through binding as well. You might use binding to perform the following tasks:  
+ In addition, you can bind any property of any control to the data source. In traditional data binding, you typically bind the display property—for example, the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control—to the data source. With the .NET Framework, you also have the option of setting other properties through binding as well. You might use binding to perform the following tasks:  
   
--   Setting the graphic of an image control.  
+- Setting the graphic of an image control.  
   
--   Setting the background color of one or more controls.  
+- Setting the background color of one or more controls.  
   
--   Setting the size of controls.  
+- Setting the size of controls.  
   
  Essentially, data binding is an automatic way of setting any run-time accessible property of any control on a form.  
   

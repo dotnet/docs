@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
 ---
 # Building a WPF Application (WPF)
-Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] executables (.exe), libraries (.dll), or a combination of both types of assemblies. This topic introduces how to build [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications and describes the key steps in the build process.  
+Windows Presentation Foundation (WPF) applications can be built as .NET Framework executables (.exe), libraries (.dll), or a combination of both types of assemblies. This topic introduces how to build [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications and describes the key steps in the build process.  
 
 <a name="Building_a_WPF_Application_using_Command_Line"></a>   
 ## Building a WPF Application  
  A WPF application can be compiled in the following ways:  
   
--   Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
+- Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
--   Microsoft Build Engine (MSBuild). In addition to the code and XAML files, the application must contain an MSBuild project file. For more information, see "MSBuild".  
+- Microsoft Build Engine (MSBuild). In addition to the code and XAML files, the application must contain an MSBuild project file. For more information, see "MSBuild".  
   
--   Visual Studio. Visual Studio is an integrated development environment that compiles WPF applications with MSBuild and includes a visual designer for creating UI. For more information, see [Write and manage code using Visual Studio](/visualstudio/ide/index-writing-code) and [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).  
+- Visual Studio. Visual Studio is an integrated development environment that compiles WPF applications with MSBuild and includes a visual designer for creating UI. For more information, see [Write and manage code using Visual Studio](/visualstudio/ide/index-writing-code) and [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).  
   
 <a name="The_Windows_Presentation_Foundation_Build_Pipeline"></a>   
 ## WPF Build Pipeline  
@@ -31,13 +31,13 @@ Windows Presentation Foundation (WPF) applications can be built as [!INCLUDE[dnp
 ### Pre-Build Initializations  
  Before building, [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] determines the location of important tools and libraries, including the following:  
   
--   The .NET Framework.  
+- The .NET Framework.  
   
--   The [!INCLUDE[TLA2#tla_wcsdk](../../../../includes/tla2sharptla-wcsdk-md.md)] directories.  
+- The [!INCLUDE[TLA2#tla_wcsdk](../../../../includes/tla2sharptla-wcsdk-md.md)] directories.  
   
--   The location of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] reference assemblies.  
+- The location of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] reference assemblies.  
   
--   The property for the assembly search paths.  
+- The property for the assembly search paths.  
   
  The first location where [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] searches for assemblies is the reference assembly directory (%ProgramFiles%\Reference Assemblies\Microsoft\Framework\v3.0\\). During this step, the build process also initializes the various properties and item groups and performs any required cleanup work.  
   
@@ -123,41 +123,41 @@ End Sub
 ## Incremental Build Support  
  The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] build system provides support for incremental builds. It is fairly intelligent about detecting changes made to markup or code, and it compiles only those artifacts affected by the change. The incremental build mechanism uses the following files:  
   
--   An $(*AssemblyName*)_MarkupCompiler.Cache file to maintain current compiler state.  
+- An $(*AssemblyName*)_MarkupCompiler.Cache file to maintain current compiler state.  
   
--   An $(*AssemblyName*)_MarkupCompiler.lref file to cache the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files with references to locally defined types.  
+- An $(*AssemblyName*)_MarkupCompiler.lref file to cache the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files with references to locally defined types.  
   
  The following is a set of rules governing incremental build:  
   
--   The file is the smallest unit at which the build system detects change. So, for a code file, the build system cannot tell if a type was changed or if code was added. The same holds for project files.  
+- The file is the smallest unit at which the build system detects change. So, for a code file, the build system cannot tell if a type was changed or if code was added. The same holds for project files.  
   
--   The incremental build mechanism must be cognizant that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page either defines a class or uses other classes.  
+- The incremental build mechanism must be cognizant that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] page either defines a class or uses other classes.  
   
--   If `Reference` entries change, then recompile all pages.  
+- If `Reference` entries change, then recompile all pages.  
   
--   If a code file changes, recompile all pages with locally defined type references.  
+- If a code file changes, recompile all pages with locally defined type references.  
   
--   If a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file changes:  
+- If a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file changes:  
   
-    -   If [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is declared as `Page` in the project: if the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] does not have locally defined type references, recompile that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] plus all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages with local references; if the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] has local references, recompile all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages with local references.  
+    - If [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is declared as `Page` in the project: if the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] does not have locally defined type references, recompile that [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] plus all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages with local references; if the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] has local references, recompile all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages with local references.  
   
-    -   If [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is declared as `ApplicationDefinition` in the project: recompile all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages (reason: each [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] has reference to an <xref:System.Windows.Application> type that may have changed).  
+    - If [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is declared as `ApplicationDefinition` in the project: recompile all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages (reason: each [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] has reference to an <xref:System.Windows.Application> type that may have changed).  
   
--   If the project file declares a code file as application definition instead of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file:  
+- If the project file declares a code file as application definition instead of a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file:  
   
-    -   Check if the `ApplicationClassName` value in the project file has changed (is there a new application type?). If so, recompile the entire application.  
+    - Check if the `ApplicationClassName` value in the project file has changed (is there a new application type?). If so, recompile the entire application.  
   
-    -   Otherwise, recompile all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages with local references.  
+    - Otherwise, recompile all [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages with local references.  
   
--   If a project file changes: apply all preceding rules and see what needs to be recompiled. Changes to the following properties trigger a complete recompile: `AssemblyName`, `IntermediateOutputPath`, `RootNamespace`, and `HostInBrowser`.  
+- If a project file changes: apply all preceding rules and see what needs to be recompiled. Changes to the following properties trigger a complete recompile: `AssemblyName`, `IntermediateOutputPath`, `RootNamespace`, and `HostInBrowser`.  
   
  The following recompile scenarios are possible:  
   
--   The entire application is recompiled.  
+- The entire application is recompiled.  
   
--   Only those [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files that have locally defined type references are recompiled.  
+- Only those [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files that have locally defined type references are recompiled.  
   
--   Nothing is recompiled (if nothing in the project has changed).  
+- Nothing is recompiled (if nothing in the project has changed).  
   
 ## See also
 

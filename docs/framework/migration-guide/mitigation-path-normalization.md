@@ -11,26 +11,26 @@ Starting with apps the target  the [!INCLUDE[net_v462](../../../includes/net-v46
 ## What is path normalization?  
  Normalizing a path involves modifying the string that identifies a path or file so that it conforms to a valid path on the target operating system. Normalization typically involves:  
   
--   Canonicalizing component and directory separators.  
+- Canonicalizing component and directory separators.  
   
--   Applying the current directory to a relative path.  
+- Applying the current directory to a relative path.  
   
--   Evaluating the relative directory (`.`) or the parent directory (`..`) in a path.  
+- Evaluating the relative directory (`.`) or the parent directory (`..`) in a path.  
   
--   Trimming specified characters.  
+- Trimming specified characters.  
   
 ## The changes  
  Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], path normalization has changed in the following ways:  
   
--   The runtime defers to the operating system's [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) function to normalize paths.  
+- The runtime defers to the operating system's [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) function to normalize paths.  
   
--   Normalization no longer involves trimming the end of directory segments (such as a space at the end of a directory name).  
+- Normalization no longer involves trimming the end of directory segments (such as a space at the end of a directory name).  
   
--   Support for device path syntax in full trust, including  `\\.\` and, for file I/O APIs   in mscorlib.dll, `\\?\`.  
+- Support for device path syntax in full trust, including  `\\.\` and, for file I/O APIs   in mscorlib.dll, `\\?\`.  
   
--   The runtime does not validate device syntax paths.  
+- The runtime does not validate device syntax paths.  
   
--   The use of device syntax to access alternate data streams is supported.  
+- The use of device syntax to access alternate data streams is supported.  
   
 ## Impact  
  For apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later, these changes are on  by default. They should improve performance while allowing methods to access previously inaccessible paths.  

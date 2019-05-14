@@ -31,11 +31,11 @@ Even if compilation produces an error instead of a warning message, <xref:System
 
 When you upgrade and recompile existing code, using an obsolete type or member that produces a compiler warning in your application is perfectly acceptable. However, you should review the compiler warning message to determine whether you should change your application code. If the message does not point to a suitable alternative, you should do either of the following:
 
--   Change your code by removing the use of the type or member, if possible.
+- Change your code by removing the use of the type or member, if possible.
 
      -or-
 
--   Review the documentation for this technology area to determine how to respond to the deprecation.
+- Review the documentation for this technology area to determine how to respond to the deprecation.
 
 You may choose not to recompile existing code against a later version of the .NET Framework. Instead, you can specify the version of the .NET Framework against which your existing compiled code runs. For example, suppose that you have an application named app1.exe that was compiled against the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], but you want the application to run against the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. This requires the following steps:
 

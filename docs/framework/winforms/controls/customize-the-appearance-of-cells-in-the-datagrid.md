@@ -22,9 +22,9 @@ You can customize the appearance of any cell by handling the <xref:System.Window
 ## Compiling the Code  
  This example requires:  
   
--   A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` with a `ContactName` column such as the one in the Customers table in the Northwind sample database.  
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` with a `ContactName` column such as the one in the Customers table in the Northwind sample database.  
   
--   References to the System, System.Windows.Forms, and System.Drawing assemblies.  
+- References to the System, System.Windows.Forms, and System.Drawing assemblies.  
   
 ## See also
 

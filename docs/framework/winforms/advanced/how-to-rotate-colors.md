@@ -39,7 +39,7 @@ Rotation in a four-dimensional color space is difficult to visualize. We can mak
  [!code-vb[System.Drawing.RotateColors#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RotateColors/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
- The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `RotationInput.bmp` with an image file name and path valid on your system.  
+ The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `RotationInput.bmp` with an image file name and path valid on your system.  
   
 ## See also
 

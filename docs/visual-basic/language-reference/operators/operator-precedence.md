@@ -21,13 +21,13 @@ When several operations occur in an expression, each part is evaluated and resol
 ## Precedence Rules  
  When expressions contain operators from more than one category, they are evaluated according to the following rules:  
   
--   The arithmetic and concatenation operators have the order of precedence described in the following section, and all have greater precedence than the comparison, logical, and bitwise operators.  
+- The arithmetic and concatenation operators have the order of precedence described in the following section, and all have greater precedence than the comparison, logical, and bitwise operators.  
   
--   All comparison operators have equal precedence, and all have greater precedence than the logical and bitwise operators, but lower precedence than the arithmetic and concatenation operators.  
+- All comparison operators have equal precedence, and all have greater precedence than the logical and bitwise operators, but lower precedence than the arithmetic and concatenation operators.  
   
--   The logical and bitwise operators have the order of precedence described in the following section, and all have lower precedence than the arithmetic, concatenation, and comparison operators.  
+- The logical and bitwise operators have the order of precedence described in the following section, and all have lower precedence than the arithmetic, concatenation, and comparison operators.  
   
--   Operators with equal precedence are evaluated left to right in the order in which they appear in the expression.  
+- Operators with equal precedence are evaluated left to right in the order in which they appear in the expression.  
   
 ## Precedence Order  
  Operators are evaluated in the following order of precedence:  

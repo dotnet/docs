@@ -77,21 +77,19 @@ In many applications, a date and time value is intended to unambiguously identif
 ## Compiling the Code  
  These examples require:  
   
--   That the following namespaces be imported with C# `using` statements or Visual Basic `Imports` statements:  
+- That the following namespaces be imported with C# `using` statements or Visual Basic `Imports` statements:  
   
-    -   <xref:System> (C# only).  
+    - <xref:System> (C# only).  
   
-    -   <xref:System.Globalization?displayProperty=nameWithType>.  
+    - <xref:System.Globalization?displayProperty=nameWithType>.  
   
-    -   <xref:System.IO?displayProperty=nameWithType>.  
+    - <xref:System.IO?displayProperty=nameWithType>.  
   
-    -   <xref:System.Runtime.Serialization?displayProperty=nameWithType>.  
+    - <xref:System.Runtime.Serialization?displayProperty=nameWithType>.  
   
-    -   <xref:System.Runtime.Serialization.Formatters.Binary?displayProperty=nameWithType>.  
+    - <xref:System.Runtime.Serialization.Formatters.Binary?displayProperty=nameWithType>.  
   
--   A reference to System.Core.dll.  
-  
--   Each code example, other than the `DateInTimeZone` class, should be included in a class or Visual Basic module, wrapped in methods, and called from the `Main` method.  
+- Each code example, other than the `DateInTimeZone` class, should be included in a class or Visual Basic module, wrapped in methods, and called from the `Main` method.  
   
 ## See also
 

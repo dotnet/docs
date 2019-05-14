@@ -23,9 +23,9 @@ Specifies that a class can be used only as a base class and that you cannot crea
   
 ## Rules  
   
--   **Declaration Context.** You can use `MustInherit` only in a `Class` statement.  
+- **Declaration Context.** You can use `MustInherit` only in a `Class` statement.  
   
--   **Combined Modifiers.** You cannot specify `MustInherit` together with `NotInheritable` in the same declaration.  
+- **Combined Modifiers.** You cannot specify `MustInherit` together with `NotInheritable` in the same declaration.  
   
 ## Example  
  The following example illustrates both forced inheritance and forced overriding. The base class `shape` defines a variable `acrossLine`. The classes `circle` and `square` derive from `shape`. They inherit the definition of `acrossLine`, but they must define the function `area` because that calculation is different for each kind of shape.  

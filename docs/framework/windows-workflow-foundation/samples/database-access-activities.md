@@ -241,7 +241,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 ## Configuring Connection Information
  All DbActivities share the same configuration parameters. They can be configured in two ways:
 
--   `ConnectionString + InvariantName`: Set the ADO.NET provider invariant name and connection string.
+- `ConnectionString + InvariantName`: Set the ADO.NET provider invariant name and connection string.
 
     ```
     Activity dbSelectCount = new DbQueryScalar<DateTime>()
@@ -254,7 +254,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
     };
     ```
 
--   `ConfigName`: Set the name of the configuration section that contains the connection information.
+- `ConfigName`: Set the name of the configuration section that contains the connection information.
 
     ```xml
     <connectionStrings>
@@ -264,7 +264,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
       </connectionStrings>
     ```
 
--   In the activity:
+- In the activity:
 
     ```
     Activity dbSelectCount = new DbQueryScalar<int>()
@@ -281,15 +281,15 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 
  The Setup.cmd script invokes the CreateDb.sql script file, which contains SQL commands that do the following:
 
--   Creates a database called DbActivitiesSample.
+- Creates a database called DbActivitiesSample.
 
--   Creates the Roles table.
+- Creates the Roles table.
 
--   Creates Employees table.
+- Creates Employees table.
 
--   Inserts three records into the Roles table.
+- Inserts three records into the Roles table.
 
--   Inserts twelve records into the Employees table.
+- Inserts twelve records into the Employees table.
 
 ##### To run Setup.cmd
 

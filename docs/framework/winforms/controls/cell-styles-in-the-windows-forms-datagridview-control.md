@@ -15,23 +15,23 @@ Each cell within the <xref:System.Windows.Forms.DataGridView> control can have i
 ## The DataGridViewCellStyle Class  
  The <xref:System.Windows.Forms.DataGridViewCellStyle> class contains the following properties related to visual style:  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.BackColor%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.ForeColor%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.BackColor%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.ForeColor%2A>  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor%2A>  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A>  
   
  This class also contains the following properties related to formatting:  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A>  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> and <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A>  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>  
   
--   <xref:System.Windows.Forms.DataGridViewCellStyle.Padding%2A>  
+- <xref:System.Windows.Forms.DataGridViewCellStyle.Padding%2A>  
   
  For more information on these properties and other cell-style properties, see the <xref:System.Windows.Forms.DataGridViewCellStyle> reference documentation and the topics listed in the See Also section below.  
   

@@ -38,28 +38,28 @@ A resource is an object that can be reused in different places in your applicati
   
  When you reference a resource, the following considerations can influence whether you use a static resource reference or a dynamic resource reference:  
   
--   The overall design of how you create the resources for your application (per page, in the application, in loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], in a resource only assembly).  
+- The overall design of how you create the resources for your application (per page, in the application, in loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], in a resource only assembly).  
   
--   The application functionality: is updating resources in real time part of your application requirements?  
+- The application functionality: is updating resources in real time part of your application requirements?  
   
--   The respective lookup behavior of that resource reference type.  
+- The respective lookup behavior of that resource reference type.  
   
--   The particular property or resource type, and the native behavior of those types.  
+- The particular property or resource type, and the native behavior of those types.  
   
 ### Static Resources  
  Static resource references work best for the following circumstances:  
   
--   Your application design concentrates most of all of its resources into page or application level resource dictionaries. Static resource references are not reevaluated based on runtime behaviors such as reloading a page, and therefore there can be some performance benefit to avoiding large numbers of dynamic resource references when they are not necessary per your resource and application design.  
+- Your application design concentrates most of all of its resources into page or application level resource dictionaries. Static resource references are not reevaluated based on runtime behaviors such as reloading a page, and therefore there can be some performance benefit to avoiding large numbers of dynamic resource references when they are not necessary per your resource and application design.  
   
--   You are setting the value of a property that is not on a <xref:System.Windows.DependencyObject> or a <xref:System.Windows.Freezable>.  
+- You are setting the value of a property that is not on a <xref:System.Windows.DependencyObject> or a <xref:System.Windows.Freezable>.  
   
--   You are creating a resource dictionary that will be compiled into a DLL, and packaged as part of the application or shared between applications.  
+- You are creating a resource dictionary that will be compiled into a DLL, and packaged as part of the application or shared between applications.  
   
--   You are creating a theme for a custom control, and are defining resources that are used within the themes. For this case, you typically do not want the dynamic resource reference lookup behavior, you instead want the static resource reference behavior so that the lookup is predictable and self-contained to the theme. With a dynamic resource reference, even a reference within a theme is left unevaluated until runtime, and there is a chance that when the theme is applied, some local element will redefine a key that your theme is trying to reference, and the local element will fall prior to the theme itself in the lookup. If that happens, your theme will not behave in an expected manner.  
+- You are creating a theme for a custom control, and are defining resources that are used within the themes. For this case, you typically do not want the dynamic resource reference lookup behavior, you instead want the static resource reference behavior so that the lookup is predictable and self-contained to the theme. With a dynamic resource reference, even a reference within a theme is left unevaluated until runtime, and there is a chance that when the theme is applied, some local element will redefine a key that your theme is trying to reference, and the local element will fall prior to the theme itself in the lookup. If that happens, your theme will not behave in an expected manner.  
   
--   You are using resources to set large numbers of dependency properties. Dependency properties have effective value caching as enabled by the property system, so if you provide a value for a dependency property that can be evaluated at load time, the dependency property does not have to check for a reevaluated expression and can return the last effective value. This technique can be a performance benefit.  
+- You are using resources to set large numbers of dependency properties. Dependency properties have effective value caching as enabled by the property system, so if you provide a value for a dependency property that can be evaluated at load time, the dependency property does not have to check for a reevaluated expression and can return the last effective value. This technique can be a performance benefit.  
   
--   You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../../xaml-services/x-shared-attribute.md).  
+- You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../../xaml-services/x-shared-attribute.md).  
   
 #### Static resource lookup behavior  
   
@@ -78,28 +78,28 @@ A resource is an object that can be reused in different places in your applicati
 ### Dynamic Resources  
  Dynamic resources work best for the following circumstances:  
   
--   The value of the resource depends on conditions that are not known until runtime. This includes system resources, or resources that are otherwise user settable. For example, you can create setter values that refer to system properties, as exposed by <xref:System.Windows.SystemColors>, <xref:System.Windows.SystemFonts>, or <xref:System.Windows.SystemParameters>. These values are truly dynamic because they ultimately come from the runtime environment of the user and operating system. You might also have application-level themes that can change, where page-level resource access must also capture the change.  
+- The value of the resource depends on conditions that are not known until runtime. This includes system resources, or resources that are otherwise user settable. For example, you can create setter values that refer to system properties, as exposed by <xref:System.Windows.SystemColors>, <xref:System.Windows.SystemFonts>, or <xref:System.Windows.SystemParameters>. These values are truly dynamic because they ultimately come from the runtime environment of the user and operating system. You might also have application-level themes that can change, where page-level resource access must also capture the change.  
   
--   You are creating or referencing theme styles for a custom control.  
+- You are creating or referencing theme styles for a custom control.  
   
--   You intend to adjust the contents of a <xref:System.Windows.ResourceDictionary> during an application lifetime.  
+- You intend to adjust the contents of a <xref:System.Windows.ResourceDictionary> during an application lifetime.  
   
--   You have a complicated resource structure that has interdependencies, where a forward reference may be required. Static resource references do not support forward references, but dynamic resource references do support them because the resource does not need to be evaluated until runtime, and forward references are therefore not a relevant concept.  
+- You have a complicated resource structure that has interdependencies, where a forward reference may be required. Static resource references do not support forward references, but dynamic resource references do support them because the resource does not need to be evaluated until runtime, and forward references are therefore not a relevant concept.  
   
--   You are referencing a resource that is particularly large from the perspective of a compile or working set, and the resource might not be used immediately when the page loads. Static resource references always load from [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] when the page loads; however, a dynamic resource reference does not load until it is actually used.  
+- You are referencing a resource that is particularly large from the perspective of a compile or working set, and the resource might not be used immediately when the page loads. Static resource references always load from [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] when the page loads; however, a dynamic resource reference does not load until it is actually used.  
   
--   You are creating a style where setter values might come from other values that are influenced by themes or other user settings.  
+- You are creating a style where setter values might come from other values that are influenced by themes or other user settings.  
   
--   You are applying resources to elements that might be reparented in the logical tree during application lifetime. Changing the parent also potentially changes the resource lookup scope, so if you want the resource for a reparented element to be reevaluated based on the new scope, always use a dynamic resource reference.  
+- You are applying resources to elements that might be reparented in the logical tree during application lifetime. Changing the parent also potentially changes the resource lookup scope, so if you want the resource for a reparented element to be reevaluated based on the new scope, always use a dynamic resource reference.  
   
 #### Dynamic resource lookup behavior  
  Resource lookup behavior for a dynamic resource reference parallels the lookup behavior in your code if you call <xref:System.Windows.FrameworkElement.FindResource%2A> or <xref:System.Windows.FrameworkElement.SetResourceReference%2A>.  
   
 1. The lookup process checks for the requested key within the resource dictionary defined by the element that sets the property.  
   
-    -   If the element defines a <xref:System.Windows.FrameworkElement.Style%2A> property, the <xref:System.Windows.Style.Resources%2A> dictionary within the <xref:System.Windows.Style> is checked.  
+    - If the element defines a <xref:System.Windows.FrameworkElement.Style%2A> property, the <xref:System.Windows.Style.Resources%2A> dictionary within the <xref:System.Windows.Style> is checked.  
   
-    -   If the element defines a <xref:System.Windows.Controls.Control.Template%2A> property, the <xref:System.Windows.FrameworkTemplate.Resources%2A> dictionary within the <xref:System.Windows.FrameworkTemplate> is checked.  
+    - If the element defines a <xref:System.Windows.Controls.Control.Template%2A> property, the <xref:System.Windows.FrameworkTemplate.Resources%2A> dictionary within the <xref:System.Windows.FrameworkTemplate> is checked.  
   
 2. The lookup process then traverses the logical tree upward, to the parent element and its resource dictionary. This continues until the root element is reached.  
   
@@ -111,20 +111,20 @@ A resource is an object that can be reused in different places in your applicati
   
  Exception behavior (if any) varies:  
   
--   If a resource was requested by a <xref:System.Windows.FrameworkElement.FindResource%2A> call, and was not found, an exception is raised.  
+- If a resource was requested by a <xref:System.Windows.FrameworkElement.FindResource%2A> call, and was not found, an exception is raised.  
   
--   If a resource was requested by a <xref:System.Windows.FrameworkElement.TryFindResource%2A> call, and was not found, no exception is raised, but the returned value is `null`. If the property being set does not accept `null`, then it is still possible that a deeper exception will be raised (this depends on the individual property being set).  
+- If a resource was requested by a <xref:System.Windows.FrameworkElement.TryFindResource%2A> call, and was not found, no exception is raised, but the returned value is `null`. If the property being set does not accept `null`, then it is still possible that a deeper exception will be raised (this depends on the individual property being set).  
   
--   If a resource was requested by a dynamic resource reference in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], and was not found, then the behavior depends on the general property system, but the general behavior is as if no property setting operation occurred at the level where the resource exists. For instance, if you attempt to set the background on a an individual button element using a resource that could not be evaluated, then no value set results, but the effective value can still come from other participants in the property system and value precedence. For instance, the background value might still come from a locally defined button style, or from the theme style. For properties that are not defined by theme styles, the effective value after a failed resource evaluation might come from the default value in the property metadata.  
+- If a resource was requested by a dynamic resource reference in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], and was not found, then the behavior depends on the general property system, but the general behavior is as if no property setting operation occurred at the level where the resource exists. For instance, if you attempt to set the background on a an individual button element using a resource that could not be evaluated, then no value set results, but the effective value can still come from other participants in the property system and value precedence. For instance, the background value might still come from a locally defined button style, or from the theme style. For properties that are not defined by theme styles, the effective value after a failed resource evaluation might come from the default value in the property metadata.  
   
 #### Restrictions  
  Dynamic resource references have some notable restrictions. At least one of the following must be true:  
   
--   The property being set must be a property on a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. That property must be backed by a <xref:System.Windows.DependencyProperty>.  
+- The property being set must be a property on a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. That property must be backed by a <xref:System.Windows.DependencyProperty>.  
   
--   The reference is for a value within a <xref:System.Windows.Style><xref:System.Windows.Setter>.  
+- The reference is for a value within a <xref:System.Windows.Style><xref:System.Windows.Setter>.  
   
--   The property being set must be a property on a <xref:System.Windows.Freezable> that is provided as a value of either a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> property, or a <xref:System.Windows.Setter> value.  
+- The property being set must be a property on a <xref:System.Windows.Freezable> that is provided as a value of either a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> property, or a <xref:System.Windows.Setter> value.  
   
  Because the property being set must be a <xref:System.Windows.DependencyProperty> or <xref:System.Windows.Freezable> property, most property changes can propagate to UI because a property change (the changed dynamic resource value) is acknowledged by the property system. Most controls include logic that will force another layout of a control if a <xref:System.Windows.DependencyProperty> changes and that property might affect layout. However, not all properties that have a [DynamicResource Markup Extension](dynamicresource-markup-extension.md) as their value are guaranteed to provide the value in such a way that they update in realtime in the UI. That functionality still might vary depending on the property, as well as depending on the type that owns the property, or even the logical structure of your application.  
   

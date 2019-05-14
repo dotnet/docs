@@ -101,13 +101,13 @@ new SendMail
   
  For more information about setting up a SMTP server, see the following links.  
   
--   [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
+- [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
   
--   [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
+- [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
   
--   [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
+- [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
   
--   [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
+- [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
   
  SMTP emulators provided by third parties are available for download.  
   

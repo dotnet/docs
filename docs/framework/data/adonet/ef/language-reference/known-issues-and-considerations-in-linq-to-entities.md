@@ -9,19 +9,19 @@ ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
 # Known Issues and Considerations in LINQ to Entities
 This section provides information about known issues with [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries.  
   
--   [LINQ Queries That cannot be Cached](#LINQQueriesThatAreNotCached)  
+- [LINQ Queries That cannot be Cached](#LINQQueriesThatAreNotCached)  
   
--   [Ordering Information Lost](#OrderingInfoLost)  
+- [Ordering Information Lost](#OrderingInfoLost)  
   
--   [Unsigned Integers Not Supported](#UnsignedIntsUnsupported)  
+- [Unsigned Integers Not Supported](#UnsignedIntsUnsupported)  
   
--   [Type Conversion Errors](#TypeConversionErrors)  
+- [Type Conversion Errors](#TypeConversionErrors)  
   
--   [Referencing Non-Scalar Variables Not Supported](#RefNonScalarClosures)  
+- [Referencing Non-Scalar Variables Not Supported](#RefNonScalarClosures)  
   
--   [Nested Queries May Fail with SQL Server 2000](#NestedQueriesSQL2000)  
+- [Nested Queries May Fail with SQL Server 2000](#NestedQueriesSQL2000)  
   
--   [Projecting to an Anonymous Type](#ProjectToAnonymousType)  
+- [Projecting to an Anonymous Type](#ProjectToAnonymousType)  
   
 <a name="LINQQueriesThatAreNotCached"></a>   
 ## LINQ Queries That cannot be Cached  

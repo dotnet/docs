@@ -13,33 +13,33 @@ ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
 # Walkthrough: Caching Application Data in a WPF Application
 Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead of retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.
 
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides classes that enable you to use caching in [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
+ The .NET Framework provides classes that enable you to use caching in .NET Framework applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
 
 > [!NOTE]
->  The <xref:System.Runtime.Caching> namespace is new in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]. This namespace makes caching is available to all [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] applications. In previous versions of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
+>  The <xref:System.Runtime.Caching> namespace is new in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]. This namespace makes caching is available to all .NET Framework applications. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
 
- This walkthrough shows you how to use the caching functionality that is available in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] as part of a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application. In the walkthrough, you cache the contents of a text file.
+ This walkthrough shows you how to use the caching functionality that is available in the .NET Framework as part of a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application. In the walkthrough, you cache the contents of a text file.
 
  Tasks illustrated in this walkthrough include the following:
 
--   Creating a WPF application project.
+- Creating a WPF application project.
 
--   Adding a reference to the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].
+- Adding a reference to the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].
 
--   Initializing a cache.
+- Initializing a cache.
 
--   Adding a cache entry that contains the contents of a text file.
+- Adding a cache entry that contains the contents of a text file.
 
--   Providing an eviction policy for the cache entry.
+- Providing an eviction policy for the cache entry.
 
--   Monitoring the path of the cached file and notifying the cache instance about changes to the monitored item.
+- Monitoring the path of the cached file and notifying the cache instance about changes to the monitored item.
 
 ## Prerequisites
  In order to complete this walkthrough, you will need:
 
--   Microsoft Visual Studio 2010.
+- Microsoft Visual Studio 2010.
 
--   A text file that contains a small amount of text. (You will display the contents of the text file in a message box.) The code illustrated in the walkthrough assumes that you are working with the following file:
+- A text file that contains a small amount of text. (You will display the contents of the text file in a message box.) The code illustrated in the walkthrough assumes that you are working with the following file:
 
      `c:\cache\cacheText.txt`
 
@@ -61,7 +61,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 4. In the **New Project** dialog box, select **WPF Application**.
 
     > [!NOTE]
-    >  If you do not see the **WPF Application** template, make sure that you are targeting a version of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] that supports WPF. In the **New Project** dialog box, select [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] from the list.
+    >  If you do not see the **WPF Application** template, make sure that you are targeting a version of the .NET Framework that supports WPF. In the **New Project** dialog box, select [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] from the list.
 
 5. In the **Name** text box, enter a name for your project. For example, you can enter **WPFCaching**.
 
@@ -103,9 +103,9 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 7. Add a reference to the caching assembly by following these steps:
 
-    1.  In **Solution Explorer**, right-click the name of the project and then click **Add Reference**.
+    1. In **Solution Explorer**, right-click the name of the project and then click **Add Reference**.
 
-    2.  Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
+    2. Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
 
 #### To change the target .NET Framework in a Visual C# project
 
@@ -119,9 +119,9 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 4. Add a reference to the caching assembly by following these steps:
 
-    1.  Right-click the **References** folder and then click **Add Reference**.
+    1. Right-click the **References** folder and then click **Add Reference**.
 
-    2.  Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
+    2. Select the **.NET** tab, select `System.Runtime.Caching`, and then click **OK**.
 
 ## Adding a Button to the WPF Window
  Next, you will add a button control and create an event handler for the button's `Click` event. Later you will add code to so when you click the button, the contents of the text file are cached and displayed.
@@ -137,13 +137,13 @@ Caching enables you to store data in memory for rapid access. When the data is a
 ## Initializing the Cache and Caching an Entry
  Next, you will add the code to perform the following tasks:
 
--   Create an instance of the cache class—that is, you will instantiate a new <xref:System.Runtime.Caching.MemoryCache> object.
+- Create an instance of the cache class—that is, you will instantiate a new <xref:System.Runtime.Caching.MemoryCache> object.
 
--   Specify that the cache uses a <xref:System.Runtime.Caching.HostFileChangeMonitor> object to monitor changes in the text file.
+- Specify that the cache uses a <xref:System.Runtime.Caching.HostFileChangeMonitor> object to monitor changes in the text file.
 
--   Read the text file and cache its contents as a cache entry.
+- Read the text file and cache its contents as a cache entry.
 
--   Display the contents of the cached text file.
+- Display the contents of the cached text file.
 
 #### To create the cache object
 

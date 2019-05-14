@@ -22,13 +22,13 @@ The <xref:System.ComponentModel.BackgroundWorker> component replaces and adds fu
   
  The following sample (`DirectorySearcher`) shows a multithreaded Windows Forms control that uses a background thread to recursively search a directory for files matching a specified search string and then populates a list box with the search result. The key concepts illustrated by the sample are as follows:  
   
--   `DirectorySearcher` starts a new thread to perform the search. The thread executes the `ThreadProcedure` method that in turn calls the helper `RecurseDirectory` method to do the actual search and to populate the list box. However, populating the list box requires a cross-thread call, as explained in the next two bulleted items.  
+- `DirectorySearcher` starts a new thread to perform the search. The thread executes the `ThreadProcedure` method that in turn calls the helper `RecurseDirectory` method to do the actual search and to populate the list box. However, populating the list box requires a cross-thread call, as explained in the next two bulleted items.  
   
--   `DirectorySearcher` defines the `AddFiles` method to add files to a list box; however, `RecurseDirectory` cannot directly invoke `AddFiles` because `AddFiles` can execute only in the STA thread that created `DirectorySearcher`.  
+- `DirectorySearcher` defines the `AddFiles` method to add files to a list box; however, `RecurseDirectory` cannot directly invoke `AddFiles` because `AddFiles` can execute only in the STA thread that created `DirectorySearcher`.  
   
--   The only way `RecurseDirectory` can call `AddFiles` is through a cross-thread call — that is, by calling <xref:System.Windows.Forms.Control.Invoke%2A> or <xref:System.Windows.Forms.Control.BeginInvoke%2A> to marshal `AddFiles` to the creation thread of `DirectorySearcher`. `RecurseDirectory` uses <xref:System.Windows.Forms.Control.BeginInvoke%2A> so that the call can be made asynchronously.  
+- The only way `RecurseDirectory` can call `AddFiles` is through a cross-thread call — that is, by calling <xref:System.Windows.Forms.Control.Invoke%2A> or <xref:System.Windows.Forms.Control.BeginInvoke%2A> to marshal `AddFiles` to the creation thread of `DirectorySearcher`. `RecurseDirectory` uses <xref:System.Windows.Forms.Control.BeginInvoke%2A> so that the call can be made asynchronously.  
   
--   Marshaling a method requires the equivalent of a function pointer or callback. This is accomplished using delegates in the .NET Framework. <xref:System.Windows.Forms.Control.BeginInvoke%2A> takes a delegate as an argument. `DirectorySearcher` therefore defines a delegate (`FileListDelegate`), binds `AddFiles` to an instance of `FileListDelegate` in its constructor, and passes this delegate instance to <xref:System.Windows.Forms.Control.BeginInvoke%2A>. `DirectorySearcher` also defines an event delegate that is marshaled when the search is completed.  
+- Marshaling a method requires the equivalent of a function pointer or callback. This is accomplished using delegates in the .NET Framework. <xref:System.Windows.Forms.Control.BeginInvoke%2A> takes a delegate as an argument. `DirectorySearcher` therefore defines a delegate (`FileListDelegate`), binds `AddFiles` to an instance of `FileListDelegate` in its constructor, and passes this delegate instance to <xref:System.Windows.Forms.Control.BeginInvoke%2A>. `DirectorySearcher` also defines an event delegate that is marshaled when the search is completed.  
   
 ```vb  
 Option Strict  

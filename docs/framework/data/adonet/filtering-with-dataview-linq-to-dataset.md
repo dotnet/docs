@@ -11,9 +11,9 @@ The ability to filter data using specific criteria and then present the data to 
   
  There are two ways to filter data using a <xref:System.Data.DataView>:  
   
--   Create a <xref:System.Data.DataView> from a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query with a Where clause.  
+- Create a <xref:System.Data.DataView> from a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query with a Where clause.  
   
--   Use the existing, string-based filtering capabilities of <xref:System.Data.DataView>.  
+- Use the existing, string-based filtering capabilities of <xref:System.Data.DataView>.  
   
 ## Creating DataView from a Query with Filtering Information  
  A <xref:System.Data.DataView> object can be created from a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query. If that query contains a `Where` clause, the <xref:System.Data.DataView> is created with the filtering information from the query. The expression in the `Where` clause is used to determine which data rows will be included in the <xref:System.Data.DataView>, and is the basis for the filter.  
@@ -70,9 +70,9 @@ The ability to filter data using specific criteria and then present the data to 
 ## Clearing the Filter  
  The filter on a <xref:System.Data.DataView> can be cleared after filtering has been set using the <xref:System.Data.DataView.RowFilter%2A> property. The filter on a <xref:System.Data.DataView> can be cleared in two different ways:  
   
--   Set the <xref:System.Data.DataView.RowFilter%2A> property to `null`.  
+- Set the <xref:System.Data.DataView.RowFilter%2A> property to `null`.  
   
--   Set the <xref:System.Data.DataView.RowFilter%2A> property to an empty string.  
+- Set the <xref:System.Data.DataView.RowFilter%2A> property to an empty string.  
   
 ### Example  
  The following example creates a <xref:System.Data.DataView> from a query and then clears the filter by setting <xref:System.Data.DataView.RowFilter%2A> property to `null`:  

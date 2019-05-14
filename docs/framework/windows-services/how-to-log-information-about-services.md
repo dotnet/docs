@@ -26,14 +26,14 @@ By default, all Windows Service projects have the ability to interact with the A
   
 ### To enable default event logging for your service  
   
--   Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `true`.  
+- Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `true`.  
   
     > [!NOTE]
     >  By default, this property is set to `true`. You do not need to set this explicitly unless you are building more complex processing, such as evaluating a condition and then setting the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property based on the result of that condition.  
   
 ### To disable event logging for your service  
   
--   Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `false`.  
+- Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `false`.  
   
      [!code-csharp[VbRadconService#17](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#17)]
      [!code-vb[VbRadconService#17](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#17)]  

@@ -66,7 +66,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Demonstrates how to use Visual Basic functions to determine information about a file, search for a string in a file, and write to a file.  
   
  [Manipulating Files Using .NET Framework Methods](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Demonstrates how to use [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods to determine information about a file, search for a string in a file, and write to a file.  
+ Demonstrates how to use .NET Framework methods to determine information about a file, search for a string in a file, and write to a file.  
   
  [Persisting an Object in Visual Basic](../visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)  
  Demonstrates how to create a simple object and persist its data to a file.  

@@ -11,19 +11,19 @@ Windows Communication Foundation (WCF) Service Publishing assists you in progres
 
 WCF Service Publishing supports publishing WCF services created from the set of WCF service library templates, and their corresponding item templates, which include the following:
 
--   WCF Service Library template with item template.
+- WCF Service Library template with item template.
 
--   Syndication Service Library.
+- Syndication Service Library.
 
 You can find these service templates by choosing **File** > **New Project** > [**Visual Basic** or **Visual C#**] > **WCF**. For other WCF templates in this location (including WCF Workflow Service Application and WCF Service Application), you can publish using [One-Click publishing for web applications](https://docs.microsoft.com/previous-versions/aspnet/dd465337(v=vs.110)).
 
 The service can be published to the following target locations.
 
--   Local IIS.
+- Local IIS.
 
--   File System.
+- File System.
 
--   FTP Site.
+- FTP Site.
 
 ## Using WCF Service Publishing
 
@@ -57,9 +57,9 @@ If you choose to deploy your application to local IIS, you may encounter errors 
 
  The generated Web.config file includes Web sections that are useful for Web hosting, and the content of App.config for the WCF service library with the following changes:
 
--   The base address is excluded.
+- The base address is excluded.
 
--   Settings in the `<diagnostics>` element are excluded to preserve the tracing settings of the target platform.
+- Settings in the `<diagnostics>` element are excluded to preserve the tracing settings of the target platform.
 
 ## Publishing WCF services with non-HTTP Bindings to IIS
  If you are using IIS7.0 or later, you can publish WCF services with non-HTTP bindings to IIS. You need to do some pre-configurations. For more information, please see the topics at  [Hosting in Windows Process Activation Service](../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).

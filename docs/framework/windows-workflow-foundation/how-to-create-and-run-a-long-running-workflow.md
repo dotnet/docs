@@ -17,25 +17,25 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
 ## In this topic  
   
--   [To create the persistence database](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreatePersistenceDatabase)  
+- [To create the persistence database](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreatePersistenceDatabase)  
   
--   [To add the reference to the DurableInstancing assemblies](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddReference)  
+- [To add the reference to the DurableInstancing assemblies](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddReference)  
   
--   [To create the workflow host form](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreateForm)  
+- [To create the workflow host form](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreateForm)  
   
--   [To add the properties and helper methods of the form](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods)  
+- [To add the properties and helper methods of the form](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods)  
   
--   [To configure the instance store, workflow lifecycle handlers, and extensions](how-to-create-and-run-a-long-running-workflow.md#BKMK_ConfigureWorkflowApplication)  
+- [To configure the instance store, workflow lifecycle handlers, and extensions](how-to-create-and-run-a-long-running-workflow.md#BKMK_ConfigureWorkflowApplication)  
   
--   [To enable starting and resuming multiple workflow types](how-to-create-and-run-a-long-running-workflow.md#BKMK_WorkflowVersionMap)  
+- [To enable starting and resuming multiple workflow types](how-to-create-and-run-a-long-running-workflow.md#BKMK_WorkflowVersionMap)  
   
--   [To start a new workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_StartWorkflow)  
+- [To start a new workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_StartWorkflow)  
   
--   [To resume a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_ResumeWorkflow)  
+- [To resume a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_ResumeWorkflow)  
   
--   [To terminate a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_TerminateWorkflow)  
+- [To terminate a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_TerminateWorkflow)  
   
--   [To build and run the application](how-to-create-and-run-a-long-running-workflow.md#BKMK_BuildAndRun)  
+- [To build and run the application](how-to-create-and-run-a-long-running-workflow.md#BKMK_BuildAndRun)  
   
 ### <a name="BKMK_CreatePersistenceDatabase"></a> To create the persistence database  
   
@@ -48,9 +48,9 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
      Select the following two files and click **Open**.  
   
-    -   SqlWorkflowInstanceStoreLogic.sql  
+    - SqlWorkflowInstanceStoreLogic.sql  
   
-    -   SqlWorkflowInstanceStoreSchema.sql  
+    - SqlWorkflowInstanceStoreSchema.sql  
   
 3. Choose **SqlWorkflowInstanceStoreSchema.sql** from the **Window** menu. Ensure that **WF45GettingStartedTutorial** is selected in the **Available Databases** drop-down and choose **Execute** from the **Query** menu.  
   
@@ -113,7 +113,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
  The following example illustrates the completed form.  
   
- ![WF45 Getting Started Tutorial Workflow Host Form](./media/wf45gettingstartedtutorialworkflowhostform.png "WF45GettingStartedTutorialWorkflowHostForm")  
+ ![Screenshot of a Windows Workflow Foundation Workflow Host Form.](./media/how-to-create-and-run-a-long-running-workflow/windows-workflow-foundation-workflowhostform.png)  
   
 ### <a name="BKMK_AddHelperMethods"></a> To add the properties and helper methods of the form  
  The steps in this section add properties and helper methods to the form class that configure the UI of the form to support running and resuming number guess workflows.  

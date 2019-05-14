@@ -30,10 +30,10 @@ Collection types are the common variations of data collections, such as hash tab
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Collections and Data Structures](../../../docs/standard/collections/index.md)|Discusses the various collection types available in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], including stacks, queues, lists, arrays, and dictionaries.|  
+|[Collections and Data Structures](../../../docs/standard/collections/index.md)|Discusses the various collection types available in the .NET Framework, including stacks, queues, lists, arrays, and dictionaries.|  
 |[Hashtable and Dictionary Collection Types](../../../docs/standard/collections/hashtable-and-dictionary-collection-types.md)|Describes the features of generic and nongeneric hash-based dictionary types.|  
 |[Sorted Collection Types](../../../docs/standard/collections/sorted-collection-types.md)|Describes classes that provide sorting functionality for lists and sets.|  
-|[Generics](../../../docs/standard/generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
+|[Generics](../../../docs/standard/generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by the .NET Framework. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
   
 ## Reference  
  <xref:System.Collections?displayProperty=nameWithType>  

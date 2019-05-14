@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: a00046aa-785d-4f7f-a8e5-d06475ea50da
 ---
 # Deciding When to Implement the Event-based Asynchronous Pattern
-The Event-based Asynchronous Pattern provides a pattern for exposing the asynchronous behavior of a class. With the introduction of this pattern, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] defines two patterns for exposing asynchronous behavior: the Asynchronous Pattern based on the <xref:System.IAsyncResult?displayProperty=nameWithType> interface, and the event-based pattern. This topic describes when it is appropriate for you to implement both patterns.  
+The Event-based Asynchronous Pattern provides a pattern for exposing the asynchronous behavior of a class. With the introduction of this pattern, the .NET Framework defines two patterns for exposing asynchronous behavior: the Asynchronous Pattern based on the <xref:System.IAsyncResult?displayProperty=nameWithType> interface, and the event-based pattern. This topic describes when it is appropriate for you to implement both patterns.  
   
  For more information about asynchronous programming with the <xref:System.IAsyncResult> interface, see [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md).  
   
@@ -27,36 +27,36 @@ The Event-based Asynchronous Pattern provides a pattern for exposing the asynchr
 ## Guidelines  
  The following list describes the guidelines for when you should implement Event-based Asynchronous Pattern:  
   
--   Use the event-based pattern as the default API to expose asynchronous behavior for your class.  
+- Use the event-based pattern as the default API to expose asynchronous behavior for your class.  
   
--   Do not expose the <xref:System.IAsyncResult> pattern when your class is primarily used in a client application, for example Windows Forms.  
+- Do not expose the <xref:System.IAsyncResult> pattern when your class is primarily used in a client application, for example Windows Forms.  
   
--   Only expose the <xref:System.IAsyncResult> pattern when it is necessary for meeting your requirements. For example, compatibility with an existing API may require you to expose the <xref:System.IAsyncResult> pattern.  
+- Only expose the <xref:System.IAsyncResult> pattern when it is necessary for meeting your requirements. For example, compatibility with an existing API may require you to expose the <xref:System.IAsyncResult> pattern.  
   
--   Do not expose the <xref:System.IAsyncResult> pattern without also exposing the event-based pattern.  
+- Do not expose the <xref:System.IAsyncResult> pattern without also exposing the event-based pattern.  
   
--   If you must expose the <xref:System.IAsyncResult> pattern, do so as an advanced option. For example, if you generate a proxy object, generate the event-based pattern by default, with an option to generate the <xref:System.IAsyncResult> pattern.  
+- If you must expose the <xref:System.IAsyncResult> pattern, do so as an advanced option. For example, if you generate a proxy object, generate the event-based pattern by default, with an option to generate the <xref:System.IAsyncResult> pattern.  
   
--   Build your event-based pattern implementation on your <xref:System.IAsyncResult> pattern implementation.  
+- Build your event-based pattern implementation on your <xref:System.IAsyncResult> pattern implementation.  
   
--   Avoid exposing both the event-based pattern and the <xref:System.IAsyncResult> pattern on the same class. Expose the event-based pattern on "higher level" classes and the <xref:System.IAsyncResult> pattern on "lower level" classes. For example, compare the event-based pattern on the <xref:System.Net.WebClient> component with the <xref:System.IAsyncResult> pattern on the <xref:System.Web.HttpRequest> class.  
+- Avoid exposing both the event-based pattern and the <xref:System.IAsyncResult> pattern on the same class. Expose the event-based pattern on "higher level" classes and the <xref:System.IAsyncResult> pattern on "lower level" classes. For example, compare the event-based pattern on the <xref:System.Net.WebClient> component with the <xref:System.IAsyncResult> pattern on the <xref:System.Web.HttpRequest> class.  
   
-    -   Expose the event-based pattern and the <xref:System.IAsyncResult> pattern on the same class when compatibility requires it. For example, if you have already released an API that uses the <xref:System.IAsyncResult> pattern, you would need to retain the <xref:System.IAsyncResult> pattern for backward compatibility.  
+    - Expose the event-based pattern and the <xref:System.IAsyncResult> pattern on the same class when compatibility requires it. For example, if you have already released an API that uses the <xref:System.IAsyncResult> pattern, you would need to retain the <xref:System.IAsyncResult> pattern for backward compatibility.  
   
-    -   Expose the event-based pattern and the <xref:System.IAsyncResult> pattern on the same class if the resulting object model complexity outweighs the benefit of separating the implementations. It is better to expose both patterns on a single class than to avoid exposing the event-based pattern.  
+    - Expose the event-based pattern and the <xref:System.IAsyncResult> pattern on the same class if the resulting object model complexity outweighs the benefit of separating the implementations. It is better to expose both patterns on a single class than to avoid exposing the event-based pattern.  
   
-    -   If you must expose both the event-based pattern and <xref:System.IAsyncResult> pattern on a single class, use <xref:System.ComponentModel.EditorBrowsableAttribute> set to <xref:System.ComponentModel.EditorBrowsableState.Advanced> to mark the <xref:System.IAsyncResult> pattern implementation as an advanced feature. This indicates to design environments, such as Visual Studio IntelliSense, not to display the <xref:System.IAsyncResult> properties and methods. These properties and methods are still fully usable, but the developer working through IntelliSense has a clearer view of the API.  
+    - If you must expose both the event-based pattern and <xref:System.IAsyncResult> pattern on a single class, use <xref:System.ComponentModel.EditorBrowsableAttribute> set to <xref:System.ComponentModel.EditorBrowsableState.Advanced> to mark the <xref:System.IAsyncResult> pattern implementation as an advanced feature. This indicates to design environments, such as Visual Studio IntelliSense, not to display the <xref:System.IAsyncResult> properties and methods. These properties and methods are still fully usable, but the developer working through IntelliSense has a clearer view of the API.  
   
 ## Criteria for Exposing the IAsyncResult Pattern in Addition to the Event-based Pattern  
  While the Event-based Asynchronous Pattern has many benefits under the previously mentioned scenarios, it does have some drawbacks, which you should be aware of if performance is your most important requirement.  
   
  There are three scenarios that the event-based pattern does not address as well as the <xref:System.IAsyncResult> pattern:  
   
--   Blocking wait on one <xref:System.IAsyncResult>  
+- Blocking wait on one <xref:System.IAsyncResult>  
   
--   Blocking wait on many <xref:System.IAsyncResult> objects  
+- Blocking wait on many <xref:System.IAsyncResult> objects  
   
--   Polling for completion on the <xref:System.IAsyncResult>  
+- Polling for completion on the <xref:System.IAsyncResult>  
   
  You can address these scenarios by using the event-based pattern, but doing so is more cumbersome than using the <xref:System.IAsyncResult> pattern.  
   
@@ -66,13 +66,13 @@ The Event-based Asynchronous Pattern provides a pattern for exposing the asynchr
   
  The following list shows some recommendations to follow if you decide to use the <xref:System.IAsyncResult> pattern:  
   
--   Only expose the <xref:System.IAsyncResult> pattern when you specifically require support for <xref:System.Threading.WaitHandle> or <xref:System.IAsyncResult> objects.  
+- Only expose the <xref:System.IAsyncResult> pattern when you specifically require support for <xref:System.Threading.WaitHandle> or <xref:System.IAsyncResult> objects.  
   
--   Only expose the <xref:System.IAsyncResult> pattern when you have an existing API that uses the <xref:System.IAsyncResult> pattern.  
+- Only expose the <xref:System.IAsyncResult> pattern when you have an existing API that uses the <xref:System.IAsyncResult> pattern.  
   
--   If you have an existing API based on the <xref:System.IAsyncResult> pattern, consider also exposing the event-based pattern in your next release.  
+- If you have an existing API based on the <xref:System.IAsyncResult> pattern, consider also exposing the event-based pattern in your next release.  
   
--   Only expose <xref:System.IAsyncResult> pattern if you have high performance requirements which you have verified cannot be met by the event-based pattern but can be met by the <xref:System.IAsyncResult> pattern.  
+- Only expose <xref:System.IAsyncResult> pattern if you have high performance requirements which you have verified cannot be met by the event-based pattern but can be met by the <xref:System.IAsyncResult> pattern.  
   
 ## See also
 

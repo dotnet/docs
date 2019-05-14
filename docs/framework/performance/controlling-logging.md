@@ -10,9 +10,9 @@ ms.author: "mairaw"
 # Controlling .NET Framework Logging
 You can use event tracing for Windows (ETW) to record common language runtime (CLR) events. You can create and view traces by using the following tools:  
   
--   The [Logman](/windows-server/administration/windows-commands/logman) and [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1) command-line tools, which are included with the Windows operating system.  
+- The [Logman](/windows-server/administration/windows-commands/logman) and [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1) command-line tools, which are included with the Windows operating system.  
   
--   The [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) tools in the [Windows Performance Toolkit](/windows-hardware/test/wpt/). For more information about Xperf, see the [Windows Performance blog](https://go.microsoft.com/fwlink/?LinkId=179509).  
+- The [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) tools in the [Windows Performance Toolkit](/windows-hardware/test/wpt/). For more information about Xperf, see the [Windows Performance blog](https://go.microsoft.com/fwlink/?LinkId=179509).  
   
  To capture CLR event information, the CLR provider must be installed on your computer. To confirm that the provider is installed, type `logman query providers` at the command prompt. A list of providers is displayed. This list should contain an entry for the CLR provider, as follows.  
   
@@ -31,11 +31,11 @@ Provider                                 GUID
   
  To turn on logging, a user must specify three things:  
   
--   The provider to communicate to.  
+- The provider to communicate to.  
   
--   A 64-bit number that represents a set of keywords. Each keyword represents a set of events that the provider can turn on. The number represents a combined set of keywords to turn on.  
+- A 64-bit number that represents a set of keywords. Each keyword represents a set of events that the provider can turn on. The number represents a combined set of keywords to turn on.  
   
--   A small number representing the level (verbosity) to log at. Level 1 is the least verbose, and level 5 is the most verbose. Level 0 is a default whose meaning is provider-specific.  
+- A small number representing the level (verbosity) to log at. Level 1 is the least verbose, and level 5 is the most verbose. Level 0 is a default whose meaning is provider-specific.  
   
 #### To capture CLR ETW events using Logman  
   
@@ -45,15 +45,15 @@ Provider                                 GUID
   
      where:  
   
-    -   The `-p` parameter identifies the provider GUID.  
+    - The `-p` parameter identifies the provider GUID.  
   
-    -   `0x1CCBD` specifies the categories of events that will be raised.  
+    - `0x1CCBD` specifies the categories of events that will be raised.  
   
-    -   `0x5` sets the level of logging (in this case, verbose (5)).  
+    - `0x5` sets the level of logging (in this case, verbose (5)).  
   
-    -   The `-ets` parameter instructs Logman to send commands to event tracing sessions.  
+    - The `-ets` parameter instructs Logman to send commands to event tracing sessions.  
   
-    -   The `-ct perf` parameter specifies that the `QueryPerformanceCounter` function will be used to log the time stamp for each event.  
+    - The `-ct perf` parameter specifies that the `QueryPerformanceCounter` function will be used to log the time stamp for each event.  
   
 2. To stop logging the events, type:  
   
@@ -80,7 +80,7 @@ Provider                                 GUID
   
 #### To view CLR ETW events using Tracerpt  
   
--   At the command prompt, type:  
+- At the command prompt, type:  
   
      `tracerpt clrevents.etl`  
   
@@ -88,7 +88,7 @@ Provider                                 GUID
   
 #### To view CLR ETW events using Xperf  
   
--   At the command prompt, type:  
+- At the command prompt, type:  
   
      `xperf clrevents.etl`  
   
@@ -96,7 +96,7 @@ Provider                                 GUID
   
 #### To convert the .etl file to a comma-separated value file  
   
--   At the command prompt, type:  
+- At the command prompt, type:  
   
      `xperf -i clrevents.etl -f clrevents.csv`  
   

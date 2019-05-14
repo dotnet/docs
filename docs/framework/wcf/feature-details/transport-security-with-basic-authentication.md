@@ -24,9 +24,9 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code shows how to create a service endpoint that uses a Windows domain user name and password for transfer security. Note that the service requires an X.509 certificate to authenticate to the client. For more information, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md) and [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  

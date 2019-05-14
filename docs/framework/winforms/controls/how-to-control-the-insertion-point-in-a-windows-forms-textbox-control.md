@@ -53,7 +53,7 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
   
 #### To make the text box insertion point visible by default on a new form  
   
--   Set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.TabIndex%2A> property to `0`.  
+- Set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.TabIndex%2A> property to `0`.  
   
 ## See also
 

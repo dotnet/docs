@@ -5,17 +5,17 @@ metadata:
   document_id: na
   title: ML.NET Documentation - Tutorials, API Reference
   meta.description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework you can use to build custom machine learning solutions and integrate them into .NET applications. Incorporate AI into your apps using the .NET skills you already have and without leaving .NET.
-  ms.prod: dotnet
-  ms.tech: machine-learning
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
-  ms.date: 05/05/2019
+  ms.date: 04/18/2019
   ms.author: cgronlun
   author: cjgronlund
 abstract:
   description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework for building custom machine learning solutions and integrating them into .NET applications. Tutorials, code examples, API reference, and other documentation show you how. 
 sections:
+- title: Get Started
+  items:
+  - type: paragraph
+    text: 'To learn how a machine learning application is built with ML.NET, read <a href="/dotnet/machine-learning/how-does-mldotnet-work">What is ML.NET and how does it work</a>? Or get started by adding the <b>Microsoft.ML</b> nuget package to your application.'
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
@@ -25,14 +25,17 @@ sections:
     items:
     - html: <a href="/dotnet/machine-learning/tutorials/sentiment-analysis">Analyze sentiment using binary classification</a>
     - html: <a href="/dotnet/machine-learning/tutorials/github-issue-classification">Categorize GitHub issues using multiclass classification</a></li>
-    - html: <a href="/dotnet/machine-learning/tutorials/taxi-fare">Predict NYC taxi fares using regresssion</a>
+    - html: <a href="/dotnet/machine-learning/tutorials/taxi-fare">Predict NYC taxi fares using regression</a>
     - html: <a href="/dotnet/machine-learning/tutorials/iris-clustering">Categorize flowers by characteristics using clustering</a>
     - html: <a href="/dotnet/machine-learning/tutorials/movie-recommmendation">Create a movie recommender with matrix factorization</a>
     - html: <a href="/dotnet/machine-learning/tutorials/image-classification">Build a custom image classifier with TensorFlow</a>
 - title: Reference and Resources
   items:
+  - type: paragraph
+    text: 'The ML.NET API has two sets of packages: release components and preview components. The release API contains components for data handling, algorithms for binary classification, multiclass classification, regression, anomaly detection and ranking, model saving and loading, and much more! The preview API contains ONNX and TensorFlow model handling, algorithms for recommendation tasks, and components to process time-series data.'
   - type: list
     style: unordered
     items:
     - html: '<a href="/dotnet/api/?view=ml-dotnet">ML.NET API</a>'
+    - html: '<a href="/dotnet/api/?view=ml-dotnet-preview">ML.NET Preview API</a>'
     - html: '<a href="https://github.com/dotnet/machinelearning-samples/blob/master/README.md">ML.NET samples: C# and F#</a>'

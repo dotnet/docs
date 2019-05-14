@@ -15,11 +15,11 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
   
  You can return a value from a `Function` procedure in any of the following ways:  
   
--   Include the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+- Include the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
   
--   Assign the value to the `Function` procedure name and then perform an `Exit Function` statement.  
+- Assign the value to the `Function` procedure name and then perform an `Exit Function` statement.  
   
--   Assign the value to the `Function` procedure name and then perform the `End Function` statement.  
+- Assign the value to the `Function` procedure name and then perform the `End Function` statement.  
   
  If control passes to `Exit Function` or `End Function` and you have not assigned any value to the procedure name, the procedure returns the default value of the return data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
   
@@ -29,7 +29,7 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
   
 ## To correct this error  
   
--   Check your control flow logic and make sure you assign a value before every statement that causes a return.  
+- Check your control flow logic and make sure you assign a value before every statement that causes a return.  
   
      It is easier to guarantee that every return from the procedure returns a value if you always use the `Return` statement. If you do this, the last statement before `End Function` should be a `Return` statement.  
   

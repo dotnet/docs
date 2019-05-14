@@ -57,7 +57,7 @@ End Module
   
 ## To correct this error  
   
--   Assign the value of the iteration variable to a local variable, and use the local variable in the lambda expression.  
+- Assign the value of the iteration variable to a local variable, and use the local variable in the lambda expression.  
   
 ```vb  
 Module Module1  

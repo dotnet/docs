@@ -1,7 +1,6 @@
 ---
 title: "?: Operator - C# Reference"
 ms.custom: seodec18
-
 ms.date: "11/20/2018"
 f1_keywords:
   - "?:_CSharpKeyword"
@@ -38,9 +37,9 @@ is evaluated as
 a ? b : (c ? d : e)
 ```
 
-A handy mnemonic device you can use to remember how this operator evaluates is by asking:
+A mnemonic device you can use to remember how this operator evaluates is to ask:
 
-```
+```text
 is this condition true ? yes : no
 ```
 
@@ -90,6 +89,6 @@ For more information, see the [Conditional operator](~/_csharplang/spec/expressi
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
 - [if-else statement](../keywords/if-else.md)
-- [?. and ?[] Operators](null-conditional-operators.md)
+- [?. and ?[] Operators](member-access-operators.md#null-conditional-operators--and-)
 - [?? Operator](null-coalescing-operator.md)
 - [ref keyword](../keywords/ref.md)

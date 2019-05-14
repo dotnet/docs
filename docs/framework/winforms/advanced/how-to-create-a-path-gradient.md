@@ -20,7 +20,7 @@ The examples in this article are methods that are called from a control's <xref:
 
 ### To fill an ellipse with a path gradient  
   
--   The following example fills an ellipse with a path gradient brush. The center color is set to blue and the boundary color is set to aqua. The following illustration shows the filled ellipse.  
+- The following example fills an ellipse with a path gradient brush. The center color is set to blue and the boundary color is set to aqua. The following illustration shows the filled ellipse.  
   
      ![Gradient Path fills an ellipse.](./media/how-to-create-a-path-gradient/gradient-path-filled-ellipse.png)  
   
@@ -37,12 +37,12 @@ The examples in this article are methods that are called from a control's <xref:
   
 ### To specify points on the boundary  
   
--   The following example constructs a path gradient brush from a star-shaped path. The code sets the <xref:System.Drawing.Drawing2D.PathGradientBrush.CenterColor%2A> property, which sets the color at the centroid of the star to red. Then the code sets the <xref:System.Drawing.Drawing2D.PathGradientBrush.SurroundColors%2A> property to specify various colors (stored in the `colors` array) at the individual points in the `points` array. The final code statement fills the star-shaped path with the path gradient brush.  
+- The following example constructs a path gradient brush from a star-shaped path. The code sets the <xref:System.Drawing.Drawing2D.PathGradientBrush.CenterColor%2A> property, which sets the color at the centroid of the star to red. Then the code sets the <xref:System.Drawing.Drawing2D.PathGradientBrush.SurroundColors%2A> property to specify various colors (stored in the `colors` array) at the individual points in the `points` array. The final code statement fills the star-shaped path with the path gradient brush.  
   
      [!code-csharp[System.Drawing.UsingaGradientBrush#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#12)]
      [!code-vb[System.Drawing.UsingaGradientBrush#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#12)]  
   
--   The following example draws a path gradient without a <xref:System.Drawing.Drawing2D.GraphicsPath> object in the code. The particular <xref:System.Drawing.Drawing2D.PathGradientBrush.%23ctor%2A> constructor in the example receives an array of points but does not require a <xref:System.Drawing.Drawing2D.GraphicsPath> object. Also, note that the <xref:System.Drawing.Drawing2D.PathGradientBrush> is used to fill a rectangle, not a path. The rectangle is larger than the closed path used to define the brush, so some of the rectangle is not painted by the brush. The following illustration shows the rectangle (dotted line) and the portion of the rectangle painted by the path gradient brush: 
+- The following example draws a path gradient without a <xref:System.Drawing.Drawing2D.GraphicsPath> object in the code. The particular <xref:System.Drawing.Drawing2D.PathGradientBrush.%23ctor%2A> constructor in the example receives an array of points but does not require a <xref:System.Drawing.Drawing2D.GraphicsPath> object. Also, note that the <xref:System.Drawing.Drawing2D.PathGradientBrush> is used to fill a rectangle, not a path. The rectangle is larger than the closed path used to define the brush, so some of the rectangle is not painted by the brush. The following illustration shows the rectangle (dotted line) and the portion of the rectangle painted by the path gradient brush: 
   
      ![Gradient portion painted by the path gradient brush.](./media/how-to-create-a-path-gradient/gradient-painted-path-gradient-brush.png)  
   
@@ -51,7 +51,7 @@ The examples in this article are methods that are called from a control's <xref:
   
 ### To customize a path gradient  
   
--   One way to customize a path gradient brush is to set its <xref:System.Drawing.Drawing2D.PathGradientBrush.FocusScales%2A> property. The focus scales specify an inner path that lies inside the main path. The center color is displayed everywhere inside that inner path rather than only at the center point.  
+- One way to customize a path gradient brush is to set its <xref:System.Drawing.Drawing2D.PathGradientBrush.FocusScales%2A> property. The focus scales specify an inner path that lies inside the main path. The center color is displayed everywhere inside that inner path rather than only at the center point.  
   
      The following example creates a path gradient brush based on an elliptical path. The code sets the boundary color to blue, sets the center color to aqua, and then uses the path gradient brush to fill the elliptical path.  
   
@@ -68,7 +68,7 @@ The examples in this article are methods that are called from a control's <xref:
   
 ### To customize with interpolation  
   
--   Another way to customize a path gradient brush is to specify an array of interpolation colors and an array of interpolation positions.  
+- Another way to customize a path gradient brush is to specify an array of interpolation colors and an array of interpolation positions.  
   
      The following example creates a path gradient brush based on a triangle. The code sets the <xref:System.Drawing.Drawing2D.PathGradientBrush.InterpolationColors%2A> property of the path gradient brush to specify an array of interpolation colors (dark green, aqua, blue) and an array of interpolation positions (0, 0.25, 1). As you move from the boundary of the triangle to the center point, the color changes gradually from dark green to aqua and then from aqua to blue. The change from dark green to aqua happens in 25 percent of the distance from dark green to blue.  
   
@@ -81,7 +81,7 @@ The examples in this article are methods that are called from a control's <xref:
   
 ### To set the center point  
   
--   By default, the center point of a path gradient brush is at the centroid of the path used to construct the brush. You can change the location of the center point by setting the <xref:System.Drawing.Drawing2D.PathGradientBrush.CenterPoint%2A> property of the <xref:System.Drawing.Drawing2D.PathGradientBrush> class.  
+- By default, the center point of a path gradient brush is at the centroid of the path used to construct the brush. You can change the location of the center point by setting the <xref:System.Drawing.Drawing2D.PathGradientBrush.CenterPoint%2A> property of the <xref:System.Drawing.Drawing2D.PathGradientBrush> class.  
   
      The following example creates a path gradient brush based on an ellipse. The center of the ellipse is at (70, 35), but the center point of the path gradient brush is set to (120, 40).  
   
@@ -92,7 +92,7 @@ The examples in this article are methods that are called from a control's <xref:
   
      ![Gradient Path with filled ellipse and center point.](./media/how-to-create-a-path-gradient/gradient-path-filled-ellipse-center-point.png)  
   
--   You can set the center point of a path gradient brush to a location outside the path that was used to construct the brush. The following example replaces the call to set the <xref:System.Drawing.Drawing2D.PathGradientBrush.CenterPoint%2A> property in the preceding code.  
+- You can set the center point of a path gradient brush to a location outside the path that was used to construct the brush. The following example replaces the call to set the <xref:System.Drawing.Drawing2D.PathGradientBrush.CenterPoint%2A> property in the preceding code.  
   
      [!code-csharp[System.Drawing.UsingaGradientBrush#17](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/CS/Class1.cs#17)]
      [!code-vb[System.Drawing.UsingaGradientBrush#17](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingaGradientBrush/VB/Class1.vb#17)]  

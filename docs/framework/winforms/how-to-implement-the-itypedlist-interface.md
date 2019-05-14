@@ -29,7 +29,7 @@ Implement the <xref:System.ComponentModel.ITypedList> interface to enable discov
 ## Compiling the Code  
  This example requires:  
   
--   References to the System.Drawing and System.Windows.Forms assemblies.  
+- References to the System.Drawing and System.Windows.Forms assemblies.  
   
 ## See also
 

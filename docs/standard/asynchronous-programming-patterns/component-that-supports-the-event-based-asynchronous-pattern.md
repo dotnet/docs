@@ -28,19 +28,19 @@ If you are writing a class with some operations that may incur noticeable delays
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating the Component  
+- Creating the Component  
   
--   Defining Public Asynchronous Events and Delegates  
+- Defining Public Asynchronous Events and Delegates  
   
--   Defining Private Delegates  
+- Defining Private Delegates  
   
--   Implementing Public Events  
+- Implementing Public Events  
   
--   Implementing the Completion Method  
+- Implementing the Completion Method  
   
--   Implementing the Worker Methods  
+- Implementing the Worker Methods  
   
--   Implementing Start and Cancel Methods  
+- Implementing Start and Cancel Methods  
   
  To copy the code in this topic as a single listing, see [How to: Implement a Client of the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
@@ -49,7 +49,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To create the component  
   
--   Create a class called `PrimeNumberCalculator` that inherits from <xref:System.ComponentModel.Component>.  
+- Create a class called `PrimeNumberCalculator` that inherits from <xref:System.ComponentModel.Component>.  
   
 ## Defining Public Asynchronous Events and Delegates  
  Your component communicates to clients using events. The _MethodName_**Completed** event alerts clients to the completion of an asynchronous task, and the _MethodName_**ProgressChanged** event informs clients of the progress of an asynchronous task.  
@@ -81,7 +81,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To test your component  
   
--   Compile the component.  
+- Compile the component.  
   
      You will receive two compiler warnings:  
   
@@ -142,7 +142,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To complete an asynchronous operation:  
   
--   Implement the completion method. It takes six parameters, which it uses to populate a `CalculatePrimeCompletedEventArgs` that is returned to the client through the client's `CalculatePrimeCompletedEventHandler`. It removes the client's task ID token from the internal collection, and it ends the asynchronous operation's lifetime with a call to <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A>. The <xref:System.ComponentModel.AsyncOperation> marshals the call to the thread or context that is appropriate for the application model.  
+- Implement the completion method. It takes six parameters, which it uses to populate a `CalculatePrimeCompletedEventArgs` that is returned to the client through the client's `CalculatePrimeCompletedEventHandler`. It removes the client's task ID token from the internal collection, and it ends the asynchronous operation's lifetime with a call to <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A>. The <xref:System.ComponentModel.AsyncOperation> marshals the call to the thread or context that is appropriate for the application model.  
   
      [!code-csharp[System.ComponentModel.AsyncOperationManager#26](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#26)]
      [!code-vb[System.ComponentModel.AsyncOperationManager#26](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#26)]  
@@ -152,7 +152,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To test your component  
   
--   Compile the component.  
+- Compile the component.  
   
      You will receive one compiler warning:  
   
@@ -206,7 +206,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To test your component  
   
--   Compile the component.  
+- Compile the component.  
   
      All that remains to be written are the methods to start and cancel asynchronous operations, `CalculatePrimeAsync` and `CancelAsync`.  
   
@@ -232,7 +232,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
 #### To test your component  
   
--   Compile the component.  
+- Compile the component.  
   
  The `PrimeNumberCalculator` component is now complete and ready to use.  
   

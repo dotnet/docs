@@ -68,15 +68,15 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
   
  The following list describes the query shapes that PLINQ by default will execute in sequential mode:  
   
--   Queries that contain a Select, indexed Where, indexed SelectMany, or ElementAt clause after an ordering or filtering operator that has removed or rearranged original indices.  
+- Queries that contain a Select, indexed Where, indexed SelectMany, or ElementAt clause after an ordering or filtering operator that has removed or rearranged original indices.  
   
--   Queries that contain a Take, TakeWhile, Skip, SkipWhile operator and where indices in the source sequence are not in the original order.  
+- Queries that contain a Take, TakeWhile, Skip, SkipWhile operator and where indices in the source sequence are not in the original order.  
   
--   Queries that contain Zip or SequenceEquals, unless one of the data sources has an originally ordered index and the other data source is indexable (i.e. an array or IList(T)).  
+- Queries that contain Zip or SequenceEquals, unless one of the data sources has an originally ordered index and the other data source is indexable (i.e. an array or IList(T)).  
   
--   Queries that contain Concat, unless it is applied to indexable data sources.  
+- Queries that contain Concat, unless it is applied to indexable data sources.  
   
--   Queries that contain Reverse, unless applied to an indexable data source.  
+- Queries that contain Reverse, unless applied to an indexable data source.  
   
 ## See also
 

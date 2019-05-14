@@ -10,7 +10,7 @@ This sample shows how to use the <xref:System.Runtime.Serialization.Serializatio
  <xref:System.Runtime.Serialization.SerializationBinder>, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
   
 ## Discussion  
- This sample shows how two entities that are targeting different versions of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] can communicate using the binary formatter and the serialization binder.  
+ This sample shows how two entities that are targeting different versions of the .NET Framework can communicate using the binary formatter and the serialization binder.  
   
  The development of this sample has been done using .NET Remoting. The sample consists of a server targeting [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)], which implements a contract with generic types, and two different clients, one targeting [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)] and another targeting [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)].  
   

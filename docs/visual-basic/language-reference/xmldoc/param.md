@@ -27,9 +27,9 @@ Defines a parameter name and description.
   
  The text for the `<param>` tag will appear in the following locations:  
   
--   Parameter Info of IntelliSense. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense).  
+- Parameter Info of IntelliSense. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense).  
   
--   Object Browser. For more information, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
+- Object Browser. For more information, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
  Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   

@@ -22,7 +22,7 @@ Many files have embedded icons that provide a visual representation of the assoc
 ## Compiling the Code  
  To compile the example:  
   
--   Paste the preceding code into a Windows Form, and call the `ExtractAssociatedIconExample` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+- Paste the preceding code into a Windows Form, and call the `ExtractAssociatedIconExample` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
   
      You will need to make sure that your form imports the <xref:System.IO> namespace.  
   

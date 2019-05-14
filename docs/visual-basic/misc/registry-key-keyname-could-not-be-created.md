@@ -10,7 +10,7 @@ The specified registry key could not be created, possibly because of insufficien
   
 ## To correct this error  
   
--   Ensure that you have sufficient security permissions to access the key.  
+- Ensure that you have sufficient security permissions to access the key.  
   
 ## See also
 

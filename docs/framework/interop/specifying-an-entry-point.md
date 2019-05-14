@@ -14,13 +14,13 @@ An entry point identifies the location of a function in a DLL. Within a managed 
   
  Following is a list of possible reasons to rename a DLL function:  
   
--   To avoid using case-sensitive API function names  
+- To avoid using case-sensitive API function names  
   
--   To comply with existing naming standards  
+- To comply with existing naming standards  
   
--   To accommodate functions that take different data types (by declaring multiple versions of the same DLL function)  
+- To accommodate functions that take different data types (by declaring multiple versions of the same DLL function)  
   
--   To simplify using APIs that contain ANSI and Unicode versions  
+- To simplify using APIs that contain ANSI and Unicode versions  
   
  This topic demonstrates how to rename a DLL function in managed code.  
   
@@ -28,10 +28,8 @@ An entry point identifies the location of a function in a DLL. Within a managed 
  Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
   
 ```vb
-Imports System
-
-Friend Class WindowsAPI
-    Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
+Friend Class NativeMethods
+    Friend Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
         ByVal lpCaption As String,
@@ -42,10 +40,8 @@ End Class
  You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md).  
   
 ```vb
-Imports System
-
-Friend Class WindowsAPI
-    Friend Shared Declare Auto Function MsgBox _
+Friend Class NativeMethods
+    Friend Declare Auto Function MsgBox _
         Lib "user32.dll" Alias "MessageBox" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
@@ -70,7 +66,7 @@ End Class
 using System;
 using System.Runtime.InteropServices;
 
-internal static class WindowsAPI
+internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
     internal static extern int MessageBox(

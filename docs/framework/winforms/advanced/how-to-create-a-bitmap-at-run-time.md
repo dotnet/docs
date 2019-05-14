@@ -19,7 +19,7 @@ This example creates and draws in a <xref:System.Drawing.Bitmap> object and disp
 ## Compiling the Code  
  This example requires:  
   
--   A Windows Form that imports the System, System.Drawing and System.Windows.Forms assemblies.  
+- A Windows Form that imports the System, System.Drawing and System.Windows.Forms assemblies.  
   
 ## See also
 

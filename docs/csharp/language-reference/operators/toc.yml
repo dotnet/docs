@@ -13,14 +13,14 @@
   - name: Equality operators
     href: equality-operators.md
     displayName: ==, !=
-  - name: "[] Operator"
-    href: index-operator.md
+  - name: Comparison operators
+    href: comparison-operators.md
+    displayName: ">, <, >=, <=, greater, less"
+  - name: Member access operators
+    href: member-access-operators.md
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, invocation"
   - name: () Operator
     href: invocation-operator.md
-  - name: . Operator
-    href: member-access-operator.md
-  - name: "?. and ?[] Operators"
-    href: null-conditional-operators.md
   - name: ":: Operator"
     href: namespace-alias-qualifer.md
   - name: + Operator
@@ -33,16 +33,8 @@
     href: and-operator.md
   - name: = Operator
     href: assignment-operator.md
-  - name: < Operator
-    href: less-than-operator.md
-  - name: "> Operator"
-    href: greater-than-operator.md
   - name: "?: Operator"
     href: conditional-operator.md
-  - name: <= Operator
-    href: less-than-equal-operator.md
-  - name: ">= Operator"
-    href: greater-than-equal-operator.md
   - name: += Operator
     href: addition-assignment-operator.md
   - name: -= Operator

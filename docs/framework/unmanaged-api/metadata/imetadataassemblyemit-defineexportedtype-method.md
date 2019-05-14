@@ -40,13 +40,13 @@ HRESULT DefineExportedType (
  `tkImplementation`  
  [in] A token specifying where the exported type is implemented. The valid values and their associated meanings are:  
   
--   `mdFile` The type is implemented in a different file within this assembly.  
+- `mdFile` The type is implemented in a different file within this assembly.  
   
--   `mdAssemblyRef` The type is implemented in a different assembly.  
+- `mdAssemblyRef` The type is implemented in a different assembly.  
   
--   `mdExportedTYpe` The type is nested within some other type.  
+- `mdExportedTYpe` The type is nested within some other type.  
   
--   `mdFileNil` The type is in the same file as the manifest and is not a nested type.  
+- `mdFileNil` The type is in the same file as the manifest and is not a nested type.  
   
  `tkTypeDef`  
  [in] A token to the metadata that specifies the type to be exported. This value is entered in the `TypeDef` table in the file that implements the type and is relevant only if that file is in this assembly.  

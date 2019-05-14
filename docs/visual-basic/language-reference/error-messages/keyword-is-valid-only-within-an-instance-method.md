@@ -15,7 +15,7 @@ The `Me`, `MyClass`, and `MyBase` keywords refer to specific class instances. Yo
   
 ## To correct this error  
   
--   Remove the keyword from the procedure, or remove the `Shared` keyword from the procedure declaration.  
+- Remove the keyword from the procedure, or remove the `Shared` keyword from the procedure declaration.  
   
 ## See also
 

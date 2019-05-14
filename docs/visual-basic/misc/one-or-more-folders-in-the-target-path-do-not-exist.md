@@ -8,7 +8,7 @@ One or more of the directories supplied in the target path do not exist. This ma
   
 ## To correct this error  
   
--   Check to make sure you are supplying the correct target path.  
+- Check to make sure you are supplying the correct target path.  
   
 ## See also
 

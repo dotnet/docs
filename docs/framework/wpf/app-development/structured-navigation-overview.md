@@ -19,15 +19,15 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
 ## Structured Navigation  
  When one page calls another page in a structured navigation, some or all of the following behaviors are required:  
   
--   The calling page navigates to the called page, optionally passing parameters required by the called page.  
+- The calling page navigates to the called page, optionally passing parameters required by the called page.  
   
--   The called page, when a user has completed using the calling page, returns specifically to the calling page, optionally:  
+- The called page, when a user has completed using the calling page, returns specifically to the calling page, optionally:  
   
-    -   Returning state information that describes how the calling page was completed (for example, whether a user pressed an OK button or a Cancel button).  
+    - Returning state information that describes how the calling page was completed (for example, whether a user pressed an OK button or a Cancel button).  
   
-    -   Returning that data that was collected from the user (for example, new employee details).  
+    - Returning that data that was collected from the user (for example, new employee details).  
   
--   When the calling page returns to the called page, the called page is removed from navigation history to isolate one instance of a called page from another.  
+- When the calling page returns to the called page, the called page is removed from navigation history to isolate one instance of a called page from another.  
   
  These behaviors are illustrated by the following figure:  
   
@@ -64,7 +64,7 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  The declaration of a <xref:System.Windows.Navigation.PageFunction%601> is similar to the declaration of a <xref:System.Windows.Controls.Page> with the addition of the type arguments. As you can see from the code example, the type arguments are specified in both [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup, using the `x:TypeArguments` attribute, and code-behind, using standard generic type argument syntax.  
   
- You don't have to use only [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes as type arguments. A <xref:System.Windows.Navigation.PageFunction%601> could be called to gather domain-specific data that is abstracted as a custom type. The following code shows how to use a custom type as a type argument for a <xref:System.Windows.Navigation.PageFunction%601>.  
+ You don't have to use only .NET Framework classes as type arguments. A <xref:System.Windows.Navigation.PageFunction%601> could be called to gather domain-specific data that is abstracted as a custom type. The following code shows how to use a custom type as a type argument for a <xref:System.Windows.Navigation.PageFunction%601>.  
   
  [!code-csharp[CustomTypePageFunctionSnippets#CustomTypeCODE1](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomTypePageFunctionSnippets/CSharp/CustomType.cs#customtypecode1)]
  [!code-vb[CustomTypePageFunctionSnippets#CustomTypeCODE1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomTypePageFunctionSnippets/VisualBasic/CustomType.vb#customtypecode1)]  
@@ -109,17 +109,17 @@ Content that can be hosted by an [!INCLUDE[TLA#tla_xbap](../../../../includes/tl
   
  You are not required to pass parameters to the called page. Instead, you could do the following:  
   
--   From the calling page:  
+- From the calling page:  
   
-    1.  Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
+    1. Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   
-    2.  Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
+    2. Store the parameters in <xref:System.Windows.Application.Properties%2A>.  
   
-    3.  Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
+    3. Navigate to the called <xref:System.Windows.Navigation.PageFunction%601>.  
   
--   From the called <xref:System.Windows.Navigation.PageFunction%601>:  
+- From the called <xref:System.Windows.Navigation.PageFunction%601>:  
   
-    -   Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.  
+    - Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.  
   
  But, as you'll see shortly, you'll still need use code to instantiate and navigate to the called page to collect the data returned by the called page. For this reason, the <xref:System.Windows.Navigation.PageFunction%601> needs to be kept alive; otherwise, the next time you navigate to the <xref:System.Windows.Navigation.PageFunction%601>, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] instantiates the <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.  
   

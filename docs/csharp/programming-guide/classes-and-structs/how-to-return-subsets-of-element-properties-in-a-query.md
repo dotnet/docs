@@ -9,9 +9,9 @@ ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
 # How to: Return Subsets of Element Properties in a Query (C# Programming Guide)
 Use an anonymous type in a query expression when both of these conditions apply:  
   
--   You want to return only some of the properties of each source element.  
+- You want to return only some of the properties of each source element.  
   
--   You do not have to store the query results outside the scope of the method in which the query is executed.  
+- You do not have to store the query results outside the scope of the method in which the query is executed.  
   
  If you only want to return one property or field from each source element, then you can just use the dot operator in the `select` clause. For example, to return only the `ID` of each `student`, write the `select` clause as follows:  
   
@@ -38,7 +38,7 @@ Console.WriteLine(student.First + " " + student.Last);
   
 ## Compiling the Code  
   
--   To run this code, copy and paste the class into a Visual C# console application project that has been created in Visual Studio. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it will have a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
+To run this code, copy and paste the class into a C# console application  with a `using` directive for System.Linq.
   
 ## See also
 

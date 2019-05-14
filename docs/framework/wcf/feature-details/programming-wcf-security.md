@@ -27,17 +27,17 @@ This topic describes the fundamental programming tasks used to create a secure W
   
      You have three choices:  
   
-    1.  `Transport`  
+    1. `Transport`  
   
          Transport security depends on the mechanism that the binding you have selected uses. For example, if you are using `WSHttpBinding` then the security mechanism is Secure Sockets Layer (SSL) (also the mechanism for the HTTPS protocol). Generally speaking, the main advantage of transport security is that it delivers good throughput no matter which transport you are using. However, it does have two limitations: The first is that the transport mechanism dictates the credential type used to authenticate a user. This is a drawback only if a service needs to interoperate with other services that demand different types of credentials. The second is that, because the security is not applied at the message level, security is implemented in a hop-by-hop manner rather than end-to-end. This latter limitation is an issue only if the message path between client and service includes intermediaries. For more information about which transport to use, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md). For more information about using transport security, see [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md).  
   
-    2.  `Message`  
+    2. `Message`  
   
          Message security means that every message includes the necessary headers and data to keep the message secure. Because the composition of the headers varies, you can include any number of credentials. This becomes a factor if you are interoperating with other services that demand a specific credential type that a transport mechanism can't supply, or if the message must be used with more than one service, where each service demands a different credential type.  
   
          For more information, see [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).  
   
-    3.  `TransportWithMessageCredential`  
+    3. `TransportWithMessageCredential`  
   
          This choice uses the transport layer to secure the message transfer, while every message includes the rich credentials other services need. This combines the performance advantage of transport security with the rich credentials advantage of message security. This is available with the following bindings: <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSFederationHttpBinding>, <xref:System.ServiceModel.NetPeerTcpBinding>, and <xref:System.ServiceModel.WSHttpBinding>.  
   
@@ -50,19 +50,19 @@ This topic describes the fundamental programming tasks used to create a secure W
 ## Setting the Client Credential Type  
  Select a client credential type as appropriate. For more information, see [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md). The following client credential types are available:  
   
--   `Windows`  
+- `Windows`  
   
--   `Certificate`  
+- `Certificate`  
   
--   `Digest`  
+- `Digest`  
   
--   `Basic`  
+- `Basic`  
   
--   `UserName`  
+- `UserName`  
   
--   `NTLM`  
+- `NTLM`  
   
--   `IssuedToken`  
+- `IssuedToken`  
   
  Depending on how you set the mode, you must set the credential type. For example, if you have selected the `wsHttpBinding`, and have set the mode to "Message," then you can also set the `clientCredentialType` attribute of the Message element to one of the following values: `None`, `Windows`, `UserName`, `Certificate`, and `IssuedToken`, as shown in the following configuration example.  
   

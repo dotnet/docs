@@ -33,13 +33,13 @@ Enumerations can be expressed in the data contract model. This topic walks throu
   
  For example, you can use `CarConditionEnum` on the sending side and `CarConditionWithNumbers` on the receiving side. Although the sending side uses the value "1" for `Used` and the receiving side uses the value "20," the XML representation is `<condition>Used</condition>` for both sides.  
   
- To be included in the data contract, you must apply the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute. In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], you can always apply the special value 0 (zero) to an enumeration, which is also the default value for any enumeration. However, even this special zero value cannot be serialized unless it is marked with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute.  
+ To be included in the data contract, you must apply the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute. In the .NET Framework, you can always apply the special value 0 (zero) to an enumeration, which is also the default value for any enumeration. However, even this special zero value cannot be serialized unless it is marked with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute.  
   
  There are two exceptions to this:  
   
--   Flag enumerations (discussed later in this topic).  
+- Flag enumerations (discussed later in this topic).  
   
--   Enumeration data members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property set to `false` (in which case, the enumeration with the value zero is omitted from the serialized data).  
+- Enumeration data members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property set to `false` (in which case, the enumeration with the value zero is omitted from the serialized data).  
   
 ### Customizing Enumeration Member Values  
  You can customize the enumeration member value that forms a part of the data contract by using the <xref:System.Runtime.Serialization.EnumMemberAttribute.Value%2A> property of the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute.  

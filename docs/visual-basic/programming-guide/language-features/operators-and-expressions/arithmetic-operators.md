@@ -45,7 +45,7 @@ Arithmetic operators are used to perform many of the familiar arithmetic operati
  [!code-vb[VbVbalrOperators#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#63)]  
   
 ### Attempted Division by Zero  
- Division by zero has different results depending on the data types involved. In integral divisions (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`), the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] throws a <xref:System.DivideByZeroException> exception. In division operations on the `Decimal` or `Single` data type, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] also throws a <xref:System.DivideByZeroException> exception.  
+ Division by zero has different results depending on the data types involved. In integral divisions (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`), the .NET Framework throws a <xref:System.DivideByZeroException> exception. In division operations on the `Decimal` or `Single` data type, the .NET Framework also throws a <xref:System.DivideByZeroException> exception.  
   
  In floating-point divisions involving the `Double` data type, no exception is thrown, and the result is the class member representing <xref:System.Double.NaN>, <xref:System.Double.PositiveInfinity>, or <xref:System.Double.NegativeInfinity>, depending on the dividend. The following table summarizes the various results of attempting to divide a `Double` value by zero.  
   
@@ -64,13 +64,13 @@ Arithmetic operators are used to perform many of the familiar arithmetic operati
   
  Arithmetic shifts are not circular, which means the bits shifted off one end of the result are not reintroduced at the other end. The bit positions vacated by a shift are set as follows:  
   
--   0 for an arithmetic left shift  
+- 0 for an arithmetic left shift  
   
--   0 for an arithmetic right shift of a positive number  
+- 0 for an arithmetic right shift of a positive number  
   
--   0 for an arithmetic right shift of an unsigned data type (`Byte`, `UShort`, `UInteger`, `ULong`)  
+- 0 for an arithmetic right shift of an unsigned data type (`Byte`, `UShort`, `UInteger`, `ULong`)  
   
--   1 for an arithmetic right shift of a negative number (`SByte`, `Short`, `Integer`, or `Long`)  
+- 1 for an arithmetic right shift of a negative number (`SByte`, `Short`, `Integer`, or `Long`)  
   
  The following example shifts an `Integer` value both left and right.  
   

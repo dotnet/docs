@@ -6,11 +6,11 @@ ms.assetid: 68862534-3b2e-4270-b097-8121b12a2c97
 # Activity Tracing in Message Security
 This topic describes activity tracing for security processing, which happens in the following three phases.  
   
--   Negotiation/SCT exchange. This can happen at the transport later (through binary data exchange) or message layer (through SOAP message exchanges).  
+- Negotiation/SCT exchange. This can happen at the transport later (through binary data exchange) or message layer (through SOAP message exchanges).  
   
--   Message encryption/decryption, with signature verification and authentication. Traces appear in the ambient activity, typically "Process Action."  
+- Message encryption/decryption, with signature verification and authentication. Traces appear in the ambient activity, typically "Process Action."  
   
--   Authorization and verification. This can happen locally or when communicating between endpoints.  
+- Authorization and verification. This can happen locally or when communicating between endpoints.  
   
 ## Negotiation/SCT exchange  
  In the negotiation/SCT exchange phase, two activity types are created on the client: "Set up Secure Session" and "Close Secure Session." "Set up Secure Session" encompasses traces for the RST/RSTR/SCT message exchanges, while "Close Secure Session" includes traces for the Cancel message.  

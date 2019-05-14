@@ -17,9 +17,9 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
 
 You need the following components to complete this walkthrough:
 
--   Visual Studio.
+- Visual Studio.
 
--   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorks sample database attached to it. You can download the AdventureWorks database from the [GitHub](https://github.com/Microsoft/sql-server-samples/releases).
+- Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorks sample database attached to it. You can download the AdventureWorks database from the [GitHub](https://github.com/Microsoft/sql-server-samples/releases).
 
 ## Create entity classes
 

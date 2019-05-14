@@ -51,13 +51,13 @@ LINQ to Entities provides Language-Integrated Query (LINQ) support that enables 
   
  Query results are usually returned as one of the following:  
   
--   A collection of zero or more typed entity objects or a projection of complex types defined in the conceptual model.  
+- A collection of zero or more typed entity objects or a projection of complex types defined in the conceptual model.  
   
--   CLR types that are supported by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  
+- CLR types that are supported by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)].  
   
--   Inline collections.  
+- Inline collections.  
   
--   Anonymous types.  
+- Anonymous types.  
   
  For more information, see [Query Results](../../../../../../docs/framework/data/adonet/ef/language-reference/query-results.md).  
   

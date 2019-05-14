@@ -40,13 +40,13 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 8. Make sure the following items are selected:  
   
-    1.  **.NET Extensibility**  
+    1. **.NET Extensibility**  
   
-    2.  **ASP.NET**  
+    2. **ASP.NET**  
   
-    3.  **ISAPI Extensions**  
+    3. **ISAPI Extensions**  
   
-    4.  **ISAPI Filters**  
+    4. **ISAPI Filters**  
   
 9. Under the item labeled **World Wide Web Services**, expand **Common Http Features**.  
   
@@ -98,13 +98,13 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 8. Make sure the following items are selected:  
   
-    1.  **.NET Extensibility**  
+    1. **.NET Extensibility**  
   
-    2.  **ASP.NET**  
+    2. **ASP.NET**  
   
-    3.  **ISAPI Extensions**  
+    3. **ISAPI Extensions**  
   
-    4.  **ISAPI Filters**  
+    4. **ISAPI Filters**  
   
 9. Expand the item labeled **Web Management Tools**, and then select **IIS Management Console**.  
   
@@ -157,7 +157,7 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
 4. A Web page with the text "Hello World" should appear.  
   
 > [!NOTE]
->  Each time you install a new version of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], you must re-register aspnet_isapi as a Web service extension for IIS. To do so, issue the `aspnet_regiis –I –enable` command.  
+>  Each time you install a new version of the .NET Framework, you must re-register aspnet_isapi as a Web service extension for IIS. To do so, issue the `aspnet_regiis –I –enable` command.  
   
 ## Sample Code  
   

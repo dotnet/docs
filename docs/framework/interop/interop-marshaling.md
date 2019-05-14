@@ -18,23 +18,23 @@ ms.author: "ronpet"
   
  This overview contains the following sections:  
   
--   [Platform Invoke and COM Interop Models](#platform_invoke_and_com_interop_models)  
+- [Platform Invoke and COM Interop Models](#platform_invoke_and_com_interop_models)  
   
--   [Marshaling and COM Apartments](#marshaling_and_com_apartments)  
+- [Marshaling and COM Apartments](#marshaling_and_com_apartments)  
   
--   [Marshaling Remote Calls](#marshaling_remote_calls)  
+- [Marshaling Remote Calls](#marshaling_remote_calls)  
   
--   [Related Topics](#related_topics)  
+- [Related Topics](#related_topics)  
   
--   [Reference](#reference)  
+- [Reference](#reference)  
   
 <a name="platform_invoke_and_com_interop_models"></a>   
 ## Platform Invoke and COM Interop Models  
  The common language runtime provides two mechanisms for interoperating with unmanaged code:  
   
--   Platform invoke, which enables managed code to call functions exported from an unmanaged library.  
+- Platform invoke, which enables managed code to call functions exported from an unmanaged library.  
   
--   COM interop, which enables managed code to interact with Component Object Model (COM) objects through interfaces.  
+- COM interop, which enables managed code to interact with Component Object Model (COM) objects through interfaces.  
   
  Both platform invoke and COM interop use interop marshaling to accurately move method arguments between caller and callee and back, if required. As the following illustration shows, a platform invoke method call flows from managed to unmanaged code and never the other way, except when [callback functions](callback-functions.md) are involved. Even though platform invoke calls can flow only from managed to unmanaged code, data can flow in both directions as input or output parameters. COM interop method calls can flow in either direction.  
   
@@ -65,7 +65,7 @@ ms.author: "ronpet"
  If you plan to export a managed server, be aware that the COM client determines the apartment of the server. A managed server called by a COM client initialized in an MTA must ensure thread safety.  
   
 ### Managed Clients and COM Servers  
- The default setting for managed client apartments is MTA; however, the application type of the .NET client can change the default setting. For example, a [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] client apartment setting is STA. You can use the <xref:System.STAThreadAttribute?displayProperty=nameWithType>, the <xref:System.MTAThreadAttribute?displayProperty=nameWithType>, the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType> property, or the <xref:System.Web.UI.Page.AspCompatMode%2A?displayProperty=nameWithType> property to examine and change the apartment setting of a managed client.  
+ The default setting for managed client apartments is MTA; however, the application type of the .NET client can change the default setting. For example, a Visual Basic client apartment setting is STA. You can use the <xref:System.STAThreadAttribute?displayProperty=nameWithType>, the <xref:System.MTAThreadAttribute?displayProperty=nameWithType>, the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType> property, or the <xref:System.Web.UI.Page.AspCompatMode%2A?displayProperty=nameWithType> property to examine and change the apartment setting of a managed client.  
   
  The author of the component sets the thread affinity of a COM server. The following table shows the combinations of apartment settings for .NET clients and COM servers. It also shows the resulting marshaling requirements for the combinations.  
   
@@ -80,9 +80,9 @@ ms.author: "ronpet"
   
  For cross-apartment marshaling, you can do the following:  
   
--   Accept the overhead of the cross-apartment marshaling, which is noticeable only when there are many calls across the boundary. You must register the type library of the COM component for calls to successfully cross the apartment boundary.  
+- Accept the overhead of the cross-apartment marshaling, which is noticeable only when there are many calls across the boundary. You must register the type library of the COM component for calls to successfully cross the apartment boundary.  
   
--   Alter the main thread by setting the client thread to STA or MTA. For example, if your C# client calls many STA COM components, you can avoid cross-apartment marshaling by setting the main thread to STA.  
+- Alter the main thread by setting the client thread to STA or MTA. For example, if your C# client calls many STA COM components, you can avoid cross-apartment marshaling by setting the main thread to STA.  
   
     > [!NOTE]
     >  Once the thread of a C# client is set to STA, calls to MTA COM components will require cross-apartment marshaling.  
@@ -95,9 +95,9 @@ ms.author: "ronpet"
 ## Marshaling Remote Calls  
  As with cross-apartment marshaling, COM marshaling is involved in each call between managed and unmanaged code whenever the objects reside in separate processes. For example:  
   
--   A COM client that invokes a managed server on a remote host uses distributed COM (DCOM).  
+- A COM client that invokes a managed server on a remote host uses distributed COM (DCOM).  
   
--   A managed client that invokes a COM server on a remote host uses DCOM.  
+- A managed client that invokes a COM server on a remote host uses DCOM.  
   
  The following illustration shows how interop marshaling and COM marshaling provide communications channels across process and host boundaries.  
   
@@ -110,9 +110,9 @@ ms.author: "ronpet"
   
  In this illustration:  
   
--   An unmanaged client gets a reference to a COM object from a managed object that gets this reference from a remote host. The remoting mechanism is DCOM.  
+- An unmanaged client gets a reference to a COM object from a managed object that gets this reference from a remote host. The remoting mechanism is DCOM.  
   
--   A managed client gets a reference to a managed object from a COM object that gets this reference from a remote host. The remoting mechanism is DCOM.  
+- A managed client gets a reference to a managed object from a COM object that gets this reference from a remote host. The remoting mechanism is DCOM.  
   
     > [!NOTE]
     >  The exported type library of the managed server must be registered.  

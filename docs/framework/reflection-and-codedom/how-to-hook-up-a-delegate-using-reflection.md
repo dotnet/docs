@@ -99,14 +99,6 @@ When you use reflection to load and run assemblies, you cannot use language feat
  [!code-csharp[HookUpDelegate#1](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#1)]
  [!code-vb[HookUpDelegate#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#1)]  
   
-## Compiling the Code  
-  
--   The code contains the C# `using` statements (`Imports` in Visual Basic) necessary for compilation.  
-  
--   No additional assembly references are required for compiling from the command line. In Visual Studio you must add a reference to System.Windows.Forms.dll because this example is a console application.  
-  
--   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
-  
 ## See also
 
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>

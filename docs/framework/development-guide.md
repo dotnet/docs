@@ -61,7 +61,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  
 ## Reference  
  [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  
- Supplies syntax, code examples, and usage information for each class that is contained in the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] namespaces.  
+ Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  
   
 ## Related Sections  
  [Getting Started](../../docs/framework/get-started/index.md)  

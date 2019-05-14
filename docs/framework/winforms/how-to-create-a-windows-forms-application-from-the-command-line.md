@@ -38,11 +38,11 @@ The following procedures describe the basic steps that you must complete to crea
   
 4. Add a `Main` method to the class.  
   
-    1.  Apply the <xref:System.STAThreadAttribute> to the C# `Main` method to specify your Windows Forms application is a single-threaded apartment. (The attribute is not necessary in Visual Basic, since Windows forms applications developed with Visual Basic use a single-threaded apartment model by default.)  
+    1. Apply the <xref:System.STAThreadAttribute> to the C# `Main` method to specify your Windows Forms application is a single-threaded apartment. (The attribute is not necessary in Visual Basic, since Windows forms applications developed with Visual Basic use a single-threaded apartment model by default.)  
   
-    2.  Call <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> to apply operating system styles to your application.  
+    2. Call <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> to apply operating system styles to your application.  
   
-    3.  Create an instance of the form and run it.  
+    3. Create an instance of the form and run it.  
   
      [!code-csharp[System.Windows.Forms.BasicForm#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BasicForm/CS/Form1.cs#5)]
      [!code-vb[System.Windows.Forms.BasicForm#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BasicForm/VB/Form1.vb#5)]  
@@ -53,11 +53,11 @@ The following procedures describe the basic steps that you must complete to crea
   
 2. Compile the form.  
   
-    -   If you are using C#, type: `csc form1.cs`  
+    - If you are using C#, type: `csc form1.cs`  
   
          `-or-`  
   
-    -   If you are using Visual Basic, type: `vbc form1.vb`  
+    - If you are using Visual Basic, type: `vbc form1.vb`  
   
 3. At the command prompt, type: `Form1.exe`  
   
@@ -102,10 +102,6 @@ The following procedures describe the basic steps that you must complete to crea
   
  [!code-csharp[System.Windows.Forms.FormWithButton#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FormWithButton/CS/Form1.cs#1)]
  [!code-vb[System.Windows.Forms.FormWithButton#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FormWithButton/VB/Form1.vb#1)]  
-  
-## Compiling the Code  
-  
--   To compile the code, follow the instructions in the proceeding procedure that describe how to compile and run the application.  
   
 ## See also
 

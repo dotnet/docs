@@ -17,13 +17,13 @@ In this walkthrough, you will create a custom WPF <xref:System.Windows.Controls.
 
 This walkthrough illustrates the following tasks:
 
--   Create a custom user control.
+- Create a custom user control.
 
--   Enable the user control to be a drag source.
+- Enable the user control to be a drag source.
 
--   Enable the user control to be a drop target.
+- Enable the user control to be a drop target.
 
--   Enable a panel to receive data dropped from the user control.
+- Enable a panel to receive data dropped from the user control.
 
 ## Prerequisites
 
@@ -102,17 +102,17 @@ You need Visual Studio to complete this walkthrough.
 
      This <xref:System.Windows.UIElement.OnMouseMove%2A> override performs the following tasks:
 
-    -   Checks whether the left mouse button is pressed while the mouse is moving.
+    - Checks whether the left mouse button is pressed while the mouse is moving.
 
-    -   Packages the Circle data into a <xref:System.Windows.DataObject>. In this case, the Circle control packages three data items; a string representation of its Fill color, a double representation of its height, and a copy of itself.
+    - Packages the Circle data into a <xref:System.Windows.DataObject>. In this case, the Circle control packages three data items; a string representation of its Fill color, a double representation of its height, and a copy of itself.
 
-    -   Calls the static <xref:System.Windows.DragDrop.DoDragDrop%2A?displayProperty=nameWithType> method to initiate the drag-and-drop operation. You pass the following three parameters to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method:
+    - Calls the static <xref:System.Windows.DragDrop.DoDragDrop%2A?displayProperty=nameWithType> method to initiate the drag-and-drop operation. You pass the following three parameters to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method:
 
-        -   `dragSource` – A reference to this control.
+        - `dragSource` – A reference to this control.
 
-        -   `data` – The <xref:System.Windows.DataObject> created in the previous code.
+        - `data` – The <xref:System.Windows.DataObject> created in the previous code.
 
-        -   `allowedEffects` – The allowed drag-and-drop operations, which are <xref:System.Windows.DragDropEffects.Copy> or <xref:System.Windows.DragDropEffects.Move>.
+        - `allowedEffects` – The allowed drag-and-drop operations, which are <xref:System.Windows.DragDropEffects.Copy> or <xref:System.Windows.DragDropEffects.Move>.
 
 3. Press **F5** to build and run the application.
 
@@ -137,9 +137,9 @@ By default, the cursor will change during a drag-and-drop operation to indicate 
 
      This <xref:System.Windows.UIElement.OnGiveFeedback%2A> override performs the following tasks:
 
-    -   Checks the <xref:System.Windows.GiveFeedbackEventArgs.Effects%2A> values that are set in the drop target's <xref:System.Windows.UIElement.DragOver> event handler.
+    - Checks the <xref:System.Windows.GiveFeedbackEventArgs.Effects%2A> values that are set in the drop target's <xref:System.Windows.UIElement.DragOver> event handler.
 
-    -   Sets a custom cursor based on the <xref:System.Windows.GiveFeedbackEventArgs.Effects%2A> value. The cursor is intended to give visual feedback to the user about what effect dropping the data will have.
+    - Sets a custom cursor based on the <xref:System.Windows.GiveFeedbackEventArgs.Effects%2A> value. The cursor is intended to give visual feedback to the user about what effect dropping the data will have.
 
 3. Press **F5** to build and run the application.
 
@@ -175,15 +175,15 @@ The <xref:System.Windows.UIElement.OnDrop%2A> method is called when the <xref:Sy
 
      This <xref:System.Windows.UIElement.OnDrop%2A> override performs the following tasks:
 
-    -   Uses the <xref:System.Windows.DataObject.GetDataPresent%2A> method to check if the dragged data contains a string object.
+    - Uses the <xref:System.Windows.DataObject.GetDataPresent%2A> method to check if the dragged data contains a string object.
 
-    -   Uses the <xref:System.Windows.DataObject.GetData%2A> method to extract the string data if it is present.
+    - Uses the <xref:System.Windows.DataObject.GetData%2A> method to extract the string data if it is present.
 
-    -   Uses a <xref:System.Windows.Media.BrushConverter> to try to convert the string to a <xref:System.Windows.Media.Brush>.
+    - Uses a <xref:System.Windows.Media.BrushConverter> to try to convert the string to a <xref:System.Windows.Media.Brush>.
 
-    -   If the conversion is successful, applies the brush to the <xref:System.Windows.Shapes.Shape.Fill%2A> of the <xref:System.Windows.Shapes.Ellipse> that provides the UI of the Circle control.
+    - If the conversion is successful, applies the brush to the <xref:System.Windows.Shapes.Shape.Fill%2A> of the <xref:System.Windows.Shapes.Ellipse> that provides the UI of the Circle control.
 
-    -   Marks the <xref:System.Windows.UIElement.Drop> event as handled. You should mark the drop event as handled so that other elements that receive this event know that the Circle user control handled it.
+    - Marks the <xref:System.Windows.UIElement.Drop> event as handled. You should mark the drop event as handled so that other elements that receive this event know that the Circle user control handled it.
 
 3. Press **F5** to build and run the application.
 
@@ -216,11 +216,11 @@ When data is dragged over the Circle user control, the control should notify the
 
      This <xref:System.Windows.UIElement.OnDragOver%2A> override performs the following tasks:
 
-    -   Sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.None>.
+    - Sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.None>.
 
-    -   Performs the same checks that are performed in the <xref:System.Windows.UIElement.OnDrop%2A> method to determine whether the Circle user control can process the dragged data.
+    - Performs the same checks that are performed in the <xref:System.Windows.UIElement.OnDrop%2A> method to determine whether the Circle user control can process the dragged data.
 
-    -   If the user control can process the data, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Copy> or <xref:System.Windows.DragDropEffects.Move>.
+    - If the user control can process the data, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Copy> or <xref:System.Windows.DragDropEffects.Move>.
 
 3. Press **F5** to build and run the application.
 
@@ -246,11 +246,11 @@ When data is dragged over the Circle user control, the control should notify the
 
      This <xref:System.Windows.UIElement.OnDragEnter%2A> override performs the following tasks:
 
-    -   Saves the <xref:System.Windows.Shapes.Shape.Fill%2A> property of the <xref:System.Windows.Shapes.Ellipse> in the `_previousFill` variable.
+    - Saves the <xref:System.Windows.Shapes.Shape.Fill%2A> property of the <xref:System.Windows.Shapes.Ellipse> in the `_previousFill` variable.
 
-    -   Performs the same checks that are performed in the <xref:System.Windows.UIElement.OnDrop%2A> method to determine whether the data can be converted to a <xref:System.Windows.Media.Brush>.
+    - Performs the same checks that are performed in the <xref:System.Windows.UIElement.OnDrop%2A> method to determine whether the data can be converted to a <xref:System.Windows.Media.Brush>.
 
-    -   If the data is converted to a valid <xref:System.Windows.Media.Brush>, applies it to the <xref:System.Windows.Shapes.Shape.Fill%2A> of the <xref:System.Windows.Shapes.Ellipse>.
+    - If the data is converted to a valid <xref:System.Windows.Media.Brush>, applies it to the <xref:System.Windows.Shapes.Shape.Fill%2A> of the <xref:System.Windows.Shapes.Ellipse>.
 
 4. Add the following <xref:System.Windows.UIElement.OnDragLeave%2A> override to provide class handling for the <xref:System.Windows.UIElement.DragLeave> event.
 
@@ -259,7 +259,7 @@ When data is dragged over the Circle user control, the control should notify the
 
      This <xref:System.Windows.UIElement.OnDragLeave%2A> override performs the following tasks:
 
-    -   Applies the <xref:System.Windows.Media.Brush> saved in the `_previousFill` variable to the <xref:System.Windows.Shapes.Shape.Fill%2A> of the <xref:System.Windows.Shapes.Ellipse> that provides the UI of the Circle user control.
+    - Applies the <xref:System.Windows.Media.Brush> saved in the `_previousFill` variable to the <xref:System.Windows.Shapes.Shape.Fill%2A> of the <xref:System.Windows.Shapes.Ellipse> that provides the UI of the Circle user control.
 
 5. Press **F5** to build and run the application.
 
@@ -290,11 +290,11 @@ In this section, you enable the panels that host the Circle user controls to act
 
      This <xref:System.Windows.UIElement.DragOver> event handler performs the following tasks:
 
-    -   Checks that the dragged data contains the "Object" data that was packaged in the <xref:System.Windows.DataObject> by the Circle user control and passed in the call to <xref:System.Windows.DragDrop.DoDragDrop%2A>.
+    - Checks that the dragged data contains the "Object" data that was packaged in the <xref:System.Windows.DataObject> by the Circle user control and passed in the call to <xref:System.Windows.DragDrop.DoDragDrop%2A>.
 
-    -   If the "Object" data is present, checks whether the **Ctrl** key is pressed.
+    - If the "Object" data is present, checks whether the **Ctrl** key is pressed.
 
-    -   If the **Ctrl** key is pressed, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Copy>. Otherwise, set the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Move>.
+    - If the **Ctrl** key is pressed, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Copy>. Otherwise, set the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Move>.
 
 5. Add the following code for the <xref:System.Windows.UIElement.Drop> event handler.
 
@@ -303,15 +303,15 @@ In this section, you enable the panels that host the Circle user controls to act
 
      This <xref:System.Windows.UIElement.Drop> event handler performs the following tasks:
 
-    -   Checks whether the <xref:System.Windows.UIElement.Drop> event has already been handled. For instance, if a Circle is dropped on another Circle which handles the <xref:System.Windows.UIElement.Drop> event, you do not want the panel that contains the Circle to also handle it.
+    - Checks whether the <xref:System.Windows.UIElement.Drop> event has already been handled. For instance, if a Circle is dropped on another Circle which handles the <xref:System.Windows.UIElement.Drop> event, you do not want the panel that contains the Circle to also handle it.
 
-    -   If the <xref:System.Windows.UIElement.Drop> event is not handled, checks whether the **Ctrl** key is pressed.
+    - If the <xref:System.Windows.UIElement.Drop> event is not handled, checks whether the **Ctrl** key is pressed.
 
-    -   If the **Ctrl** key is pressed when the <xref:System.Windows.UIElement.Drop> happens, makes a copy of the Circle control and add it to the <xref:System.Windows.Controls.Panel.Children%2A> collection of the <xref:System.Windows.Controls.StackPanel>.
+    - If the **Ctrl** key is pressed when the <xref:System.Windows.UIElement.Drop> happens, makes a copy of the Circle control and add it to the <xref:System.Windows.Controls.Panel.Children%2A> collection of the <xref:System.Windows.Controls.StackPanel>.
 
-    -   If the **Ctrl** key is not pressed, moves the Circle from the <xref:System.Windows.Controls.Panel.Children%2A> collection of its parent panel to the <xref:System.Windows.Controls.Panel.Children%2A> collection of the panel that it was dropped on.
+    - If the **Ctrl** key is not pressed, moves the Circle from the <xref:System.Windows.Controls.Panel.Children%2A> collection of its parent panel to the <xref:System.Windows.Controls.Panel.Children%2A> collection of the panel that it was dropped on.
 
-    -   Sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to notify the <xref:System.Windows.DragDrop.DoDragDrop%2A> method whether a move or copy operation was performed.
+    - Sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to notify the <xref:System.Windows.DragDrop.DoDragDrop%2A> method whether a move or copy operation was performed.
 
 6. Press **F5** to build and run the application.
 

@@ -5,7 +5,7 @@ ms.date: 10/25/2018
 ---
 # C# Tutorials
 
-Welcome to the C# tutorials. These start with interactive lessons that you can run in your browser. Later tutorials, and more advanced tutorials help you work with the .NET development tools to create C# programs on your machine.
+Welcome to the C# tutorials. These start with interactive lessons that you can run in your browser. Later tutorials and more advanced tutorials help you work with the .NET development tools to create C# programs on your machine.
 
 ## Introduction to C# interactive tutorials
 
@@ -63,6 +63,7 @@ on your machine.
 * [Nullable reference types](nullable-reference-types.md): demonstrates how to use nullable reference types to express your intent for null references.
 * [Update a project to make use of Nullable reference types](upgrade-to-nullable-references.md): demonstrates techniques to upgrade an existing project to make use of nullable reference types.
 * [Extend data capabilities using pattern matching](pattern-matching.md): demonstrates how to use pattern matching to extend types beyond their core features.
+* [Work with data sequences using indexes and ranges](ranges-indexes.md): Demonstrates new convenient syntax for accessing single elements or ranges of a sequential data container.
 
 ## General Tutorials
 

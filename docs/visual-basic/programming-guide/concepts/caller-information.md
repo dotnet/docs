@@ -52,9 +52,9 @@ End Sub
 ### <a name="MEMBERNAMES"></a> Member Names  
  You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that **Rename Refactoring** doesn't change the `String` values. This benefit is especially useful for the following tasks:  
   
--   Using tracing and diagnostic routines.  
+- Using tracing and diagnostic routines.  
   
--   Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.  
+- Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.  
   
  The following chart shows the member names that are returned when you use the `CallerMemberName` attribute.  
   

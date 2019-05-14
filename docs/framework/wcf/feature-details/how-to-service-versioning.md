@@ -11,13 +11,13 @@ This topic outlines the basic steps required to create a routing configuration t
   
  The operations exposed by both services are:  
   
--   Add  
+- Add  
   
--   Subtract  
+- Subtract  
   
--   Multiply  
+- Multiply  
   
--   Divide  
+- Divide  
   
  Because both service implementations handle the same operations, and are essentially identical other than the data that they return, the base data contained in messages sent from client applications is not unique enough to allow you to determine how to route the request. For example, Action filters cannot be used because the default actions for both services are the same.  
   

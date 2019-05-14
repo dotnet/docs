@@ -14,13 +14,16 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Datab
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * 
+> * Prepare Microsoft.Spark.Worker
+> * Publish your Spark .NET app
+> * Deploy your app to Databricks
+> * Run your app
 
 ## Prerequisites
 
 Before you start, make sure you have the following:
 
-* Download [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html)
+* Download the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html).
 * Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
 
 ## Prepare worker dependencies
@@ -31,15 +34,15 @@ Before you start, make sure you have the following:
 
    For example, if you want `.NET for Apache Spark v0.1.0` using `netcoreapp2.1`, you'd download [Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.1.0.tar.gz](https://github.com/dotnet/spark/releases/download/v0.1.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.1.0.tar.gz).
 
-2. Upload `Microsoft.Spark.Worker.<release>.tar.gz` and [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to a distributed file system (e.g., S3) that your cluster has access to.
+2. Upload `Microsoft.Spark.Worker.<release>.tar.gz` and [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to a distributed file system (e.g., DBFS) that your cluster has access to.
 
 ## Prepare your .NET for Apache Spark app
 
 1. Follow the [Get Started](get-started.md) tutorial to build your app.
 
-2. Publish your Spark .NET `app` as self-contained.
+2. Publish your Spark .NET app as self-contained.
 
-   For example, you can run the following command on Linux.
+   You can run the following command on Linux.
 
    ```bash
    foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
@@ -47,19 +50,20 @@ Before you start, make sure you have the following:
 
 3. Produce `<your app>.zip` for the published files.
 
-   For example, you can run the following command on Linux using `zip`.
+   You can run the following command on Linux using `zip`.
 
    ```bash
    foo@bar:~/path/to/app/bin/Release/netcoreapp2.1/ubuntu.16.04-x64/publish$ zip -r <your app>.zip .
    ```
 
-4. Upload the following to a distributed file system (e.g., HDFS, WASB, ADLS) that your cluster has access to:
+4. Upload the following to a distributed file system (e.g., DBFS) that your cluster has access to:
 
    * `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`: This jar is included as part of the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package and is colocated in your app's build output directory.
    * `<your app>.zip`
-   * Files (like dependency files or common data accessible to every worker) or Assemblies (like DLLs that contain your user-defined functions or libraries that your `app` depends on) to be placed in the working directory of each executor.
+   * Files (like dependency files or common data accessible to every worker) or assemblies (like DLLs that contain your user-defined functions or libraries that your app depends on) to be placed in the working directory of each executor.
 
 ## Deploy to Databricks
+
 [Databricks](http://databricks.com) is a platform that provides cloud-based big data processing using Apache Spark.
 
 > [!Note] 
@@ -72,7 +76,7 @@ Databricks allows you to submit .NET for Apache Spark apps to an existing active
 This step is only required once for a cluster.
 
 1. Download [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) and [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh
-) onto your local machine
+) onto your local machine.
 
 2. Modify **db-init.sh** to point to the **Microsoft.Spark.Worker** release you want to download and install on your cluster.
 
@@ -80,7 +84,7 @@ This step is only required once for a cluster.
 
 4. [Setup authentication](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html#set-up-authentication) details for the Databricks CLI.
 
-5. Upload the filesto your Databricks cluster using the following command:
+5. Upload the files to your Databricks cluster using the following command:
 
    ```bash
    cd <path-to-db-init-and-install-worker>
@@ -92,32 +96,32 @@ This step is only required once for a cluster.
 
 7. After configuring the cluster appropriately, set the **Init Script** and create the cluster.
 
-      <img src="../docs/img/deployment-databricks-init-script.PNG" alt="ScriptActionImage" width="600"/>
+   <img src="./media/databricks-deployment/deployment-databricks-init-script.png" alt="ScriptActionImage" width="600"/>
 
 ## Run your app 
 
 ### Use Set JAR
 
-Using [Set JAR](https://docs.databricks.com/user-guide/jobs.html#create-a-job) allows job submission to an existing active cluster.
+[Set JAR](https://docs.databricks.com/user-guide/jobs.html#create-a-job) allows you to submit a job to an existing active cluster.
 
-One-time setup:
+**One-time setup**
 
 1. Go to your Databricks cluster and select **Jobs** from the left-side menu. Then select **Set JAR**.
 
 2. Upload the appropriate `microsoft-spark-<spark-version>-<spark-dotnet-version>.jar` file.
 
-3. Set the params appropriately:
+3. Set the parameters appropriately.
 
    ```
    Main Class: org.apache.spark.deploy.DotnetRunner
    Arguments /dbfs/apps/<your-app-name>.zip <your-app-main-class>
    ```
  
-4. Configure the **Cluster** to point to the existing cluster you configured the Init Script for in the previous section.
+4. Configure the **Cluster** to point to the existing cluster you created the **Init Script** for in the previous section.
 
-Publish and run your app:
+**Publish and run your app**
 
-1. Use [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html) to upload your application to your Databricks cluster.
+1. Use the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html) to upload your application to your Databricks cluster.
 
       ```bash
       cd <path-to-your-app-publish-directory>
@@ -128,14 +132,14 @@ Publish and run your app:
 
    - Upload your application assemblies to your Databricks cluster
       
-      ```shell
+      ```bash
       cd <path-to-your-app-publish-directory>
       databricks fs cp <assembly>.dll dbfs:/apps/dependencies
       ```
 
    - Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path and upload to your Databricks cluster.
    
-      ```shell
+      ```bash
       cd <path-to-db-init-and-install-worker>
       databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
       ```
@@ -146,15 +150,17 @@ Publish and run your app:
 
 ### Use spark-submit
 
-The [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html) command allows submission ONLY to a cluster that is created on-demand.
+The [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html) command allows you to submit a job to a new cluster.
 
-1. [Create a Job](https://docs.databricks.com/user-guide/jobs.html) and select *Configure spark-submit*.
+1. [Create a Job](https://docs.databricks.com/user-guide/jobs.html) and select **Configure spark-submit**.
 
-1. Configure `spark-submit` with the following parameters:
+2. Configure `spark-submit` with the following parameters:
 
       ```bash
       ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
       ```
+
+3. Go to your Databricks cluster in your Databricks workspace. Under **Jobs**, select your job and then select **Run Now** to run your job.
 
 ## Next steps
 

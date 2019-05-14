@@ -14,13 +14,16 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Azure
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * 
+> * Prepare Microsoft.Spark.Worker
+> * Publish your Spark .NET app
+> * Deploy your app to Azure HDInsight
+> * Run your app
 
 ## Prerequisites
 
 Before you start, make sure you have the following:
 
-* Download [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
+* Download [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 * Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
 
 ## Prepare worker dependencies
@@ -37,9 +40,9 @@ Before you start, make sure you have the following:
 
 1. Follow the [Get Started](get-started.md) tutorial to build your app.
 
-2. Publish your Spark .NET `app` as self-contained.
+2. Publish your Spark .NET app as self-contained.
 
-   For example, you can run the following command on Linux.
+   You can run the following command on Linux.
 
    ```bash
    foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
@@ -47,7 +50,7 @@ Before you start, make sure you have the following:
 
 3. Produce `<your app>.zip` for the published files.
 
-   For example, you can run the following command on Linux using `zip`.
+   You can run the following command on Linux using `zip`.
 
    ```bash
    foo@bar:~/path/to/app/bin/Release/netcoreapp2.1/ubuntu.16.04-x64/publish$ zip -r <your app>.zip .
@@ -70,7 +73,7 @@ Before you start, make sure you have the following:
 
 This step is only required once for your cluster.
 
-Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux):
+Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
 |Setting|Value|
 |-------|-----|
@@ -80,7 +83,7 @@ Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://
 |Node type(s)|Worker|
 |Parameters|Parameters to `install-worker.sh`. For example, if you uploaded `install-worker.sh` to Azure Data Lake then it would be `azure adl://<cluster name>.azuredatalakestore.net/<some dir>/Microsoft.Spark.Worker.<release>.tar.gz /usr/local/bin`.|
 
-<img src="../docs/img/deployment-hdi-action-script.png" alt="ScriptActionImage" width="500"/>
+<img src="./media/hdinsight-deployment/deployment-hdi-action-script.png" alt="ScriptActionImage" width="500"/>
 
 ## Run your app
 
@@ -88,8 +91,9 @@ Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://
 
 You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html) command to submit .NET for Apache Spark jobs to Azure HDInsight.
  
-1. `ssh` into one of the head nodes in the cluster.
-2. Run `spark-submit`:
+1. `ssh` into one of the head nodes in your cluster.
+
+1. Run `spark-submit`:
 
    ```bash
    foo@bar:~$ $SPARK_HOME/bin/spark-submit \
@@ -102,7 +106,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 ### Use Apache Livy
 
-You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark REST API, to submit .NET for Apache Spark jobs to an Azure HDInsight Spark cluster as documented in [Remote jobs with Apache Livy](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-livy-rest-interface).
+You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark REST API, to submit .NET for Apache Spark jobs to an Azure HDInsight Spark cluster. For more information, see [Remote jobs with Apache Livy](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-livy-rest-interface).
 
 You can run the following command on Linux using `curl`:
 

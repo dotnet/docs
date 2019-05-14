@@ -14,13 +14,16 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Amazo
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * 
+> * Prepare Microsoft.Spark.Worker
+> * Publish your Spark .NET app
+> * Deploy your app to Amazon EMR Spark
+> * Run your app
 
 ## Prerequisites
 
 Before you start, make sure you have the following:
 
-* Download [AWS CLI](https://aws.amazon.com/cli/)
+* Download the [AWS CLI](https://aws.amazon.com/cli/).
 * Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
 
 ## Prepare worker dependencies
@@ -37,7 +40,7 @@ Before you start, make sure you have the following:
 
 1. Follow the [Get Started](get-started.md) tutorial to build your app.
 
-2. Publish your Spark .NET `app` as self-contained.
+2. Publish your Spark .NET app as self-contained.
 
    For example, you can run the following command on Linux.
 
@@ -53,18 +56,18 @@ Before you start, make sure you have the following:
    foo@bar:~/path/to/app/bin/Release/netcoreapp2.1/ubuntu.16.04-x64/publish$ zip -r <your app>.zip .
    ```
 
-4. Upload the following to a distributed file system (e.g., HDFS, WASB, ADLS) that your cluster has access to:
+4. Upload the following items to a distributed file system (e.g., S3) that your cluster has access to:
 
    * `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`: This jar is included as part of the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package and is colocated in your app's build output directory.
    * `<your app>.zip`
-   * Files (like dependency files or common data accessible to every worker) or Assemblies (like DLLs that contain your user-defined functions or libraries that your `app` depends on) to be placed in the working directory of each executor.
+   * Files (like dependency files or common data accessible to every worker) or assemblies (like DLLs that contain your user-defined functions or libraries that your app depends on) to be placed in the working directory of each executor.
 
 ## Deploy to Amazon EMR Spark
 
 [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html) is a managed cluster platform that simplifies running big data frameworks on AWS.
 
 > [!NOTE] 
-> AWS EMR Spark is Linux-based. Therefore, if you are interested in deploying your app to AWS EMR Spark, make sure your app is .NET Standard compatible and that you use [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
+> Amazon EMR Spark is Linux-based. Therefore, if you are interested in deploying your app to Amazon EMR Spark, make sure your app is .NET Standard compatible and that you use the [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
 
 ### Deploy Microsoft.Spark.Worker
 
@@ -72,7 +75,7 @@ This step is only required at cluster creation.
 
 Run `install-worker.sh` during cluster creation using [Bootstrap Actions](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-bootstrap.html).
 
-For example, you can run the following command on Linux using `aws` cli.
+You can run the following command on Linux using AWS CLI.
 
 ```bash
 foo@bar:~$ aws emr create-cluster \
@@ -90,11 +93,11 @@ foo@bar:~$ aws emr create-cluster \
 
 ### Use spark-submit
 
-You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html) command to submit .NET for Apache Spark jobs to AWS EMR Spark.
+You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html) command to submit .NET for Apache Spark jobs to Amazon EMR Spark.
 
 1. `ssh` into one of the nodes in the cluster.
 
-2. Run `spark-submit`:
+2. Run `spark-submit`.
 
    ```bash
    foo@bar:~$ spark-submit \
@@ -109,7 +112,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 [Amazon EMR Steps](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-submit-step.html) can be used to submit jobs to the Spark framework installed on the EMR cluster.
 
-For example, you can run the following command on Linux using `aws` cli.
+You can run the following command on Linux using AWS CLI.
 
 ```bash
 foo@bar:~$ aws emr add-steps \
@@ -118,3 +121,8 @@ foo@bar:~$ aws emr add-steps \
 ```
 
 ## Next steps
+
+In this tutorial, you deployed your .NET for Apache Spark application to Amazon EMR Spark. For .NET for Apache Spark example projects, continue to GitHub.
+
+> [!div class="nextstepaction"]
+> [.NET for Apache Spark samples](https://github.com/dotnet/spark/tree/master/examples)

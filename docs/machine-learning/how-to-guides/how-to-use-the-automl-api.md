@@ -99,7 +99,7 @@ Some examples include:
     ```
 
 The list of supported trainers per ML task can be found at the corresponding link below:
-* [Supported Binary Classification Algorithms](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.binaryclassificationtrainer?view=automl-dotnet)
+* [Supported Binary Classification Algorithms](xref:Microsoft.ML.AutoML.BinaryClassificationTrainer)
 * [Supported Multiclass Classification Algorithms](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.multiclassclassificationtrainer?view=automl-dotnet)
 * [Supported Regression Algorithms](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.regressiontrainer?view=automl-dotnet)
 

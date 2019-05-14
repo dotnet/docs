@@ -92,25 +92,6 @@ UtilityMethods.MultiplyClass.Multiply(num1, num2)
   
  `TestCode 1234 5678`  
   
-## Compiling the Code  
- To build the file `MathLibrary.DLL`, compile the two files `Add` and `Mult` by using the following command line.  
-  
-```console  
-vbc -target:library -out:MathLibrary.DLL Add.vb Mult.vb  
-```  
-  
- The [-target (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/target.md) compiler option tells the compiler to output a DLL instead of an EXE file. The [-out (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/out.md) compiler option followed by a file name is used to specify the DLL file name. Otherwise, the compiler uses the first file (`Add.vb`) as the name of the DLL.  
-  
- To build the executable file, `TestCode.exe`, use the following command line:  
-  
-```console  
-vbc -out:TestCode.exe -reference:MathLibrary.DLL TestCode.vb  
-```  
-  
- The **-out** compiler option tells the compiler to output an EXE file and specifies the name of the output file (`TestCode.exe`). This compiler option is optional. The [-reference (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/reference.md) compiler option specifies the DLL file or files that this program uses.  
-  
- For more information about building from the command line, see  and [Building from the Command Line](../../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
-  
 ## See also
 
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)

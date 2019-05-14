@@ -170,7 +170,7 @@ On the other hand, members declared within a module are publicly accessible by d
 
 Objects let you declare variables and procedures once and then reuse them whenever needed. For example, if you want to add a spelling checker to an application you could define all the variables and support functions to provide spell-checking functionality. If you create your spelling checker as a class, you can then reuse it in other applications by adding a reference to the compiled assembly. Better yet, you may be able to save yourself some work by using a spelling checker class that someone else has already developed.
 
-The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] provides many examples of components that are available for use. The following example uses the <xref:System.TimeZone> class in the <xref:System> namespace. <xref:System.TimeZone> provides members that allow you to retrieve information about the time zone of the current computer system.
+The .NET Framework provides many examples of components that are available for use. The following example uses the <xref:System.TimeZone> class in the <xref:System> namespace. <xref:System.TimeZone> provides members that allow you to retrieve information about the time zone of the current computer system.
 
 ```vb
 Public Sub examineTimeZone()

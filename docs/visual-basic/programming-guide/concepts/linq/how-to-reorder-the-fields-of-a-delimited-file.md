@@ -68,8 +68,6 @@ End Class
 ' 122, Michael Tucker  
 ```  
   
-## Compiling the Code  
-  
 ## See also
 
 - [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)

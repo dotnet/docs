@@ -15,9 +15,9 @@ One of the properties of the <xref:System.Drawing.Graphics> class is the clip re
 ## Example  
  The following example constructs a path that consists of a single polygon. Then the code constructs a region, based on that path. The region is passed to the <xref:System.Drawing.Graphics.SetClip%2A> method of a <xref:System.Drawing.Graphics> object, and then two strings are drawn.  
   
- The following illustration shows the clipped strings.  
+ The following illustration shows the clipped strings:  
   
- ![Clip](./media/clip1.png "clip1")  
+ ![Screenshot that shows clipped strings.](./media/how-to-use-clipping-with-a-region/clipped-strings-polygon.png)  
   
  [!code-csharp[System.Drawing.MiscLegacyTopics#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#41)]
  [!code-vb[System.Drawing.MiscLegacyTopics#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#41)]  

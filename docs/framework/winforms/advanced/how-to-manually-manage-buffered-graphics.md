@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918
 ---
 # How to: Manually Manage Buffered Graphics
-For more advanced double buffering scenarios, you can use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes to implement your own double-buffering logic. The class responsible for allocating and managing individual graphics buffers is the <xref:System.Drawing.BufferedGraphicsContext> class. Every application has its own default <xref:System.Drawing.BufferedGraphicsContext> that manages all of the default double buffering for that application. You can retrieve a reference to this instance by calling the <xref:System.Drawing.BufferedGraphicsManager.Current%2A>.  
+For more advanced double buffering scenarios, you can use the .NET Framework classes to implement your own double-buffering logic. The class responsible for allocating and managing individual graphics buffers is the <xref:System.Drawing.BufferedGraphicsContext> class. Every application has its own default <xref:System.Drawing.BufferedGraphicsContext> that manages all of the default double buffering for that application. You can retrieve a reference to this instance by calling the <xref:System.Drawing.BufferedGraphicsManager.Current%2A>.  
   
 ### To obtain a reference to the default BufferedGraphicsContext  
   

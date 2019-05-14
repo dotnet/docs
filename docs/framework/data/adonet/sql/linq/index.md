@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
 ---
 # LINQ to SQL
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is a component of [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] version 3.5 that provides a run-time infrastructure for managing relational data as objects.  
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is a component of .NET Framework version 3.5 that provides a run-time infrastructure for managing relational data as objects.  
   
 > [!NOTE]
 >  Relational data appears as a collection of two-dimensional tables (*relations* or *flat files*), where common columns relate tables to each other. To use [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] effectively, you must have some familiarity with the underlying principles of relational databases.  

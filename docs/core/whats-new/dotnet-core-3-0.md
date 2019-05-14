@@ -6,19 +6,21 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 04/19/2019
+ms.date: 05/06/2019
 ---
 
-# What's new in .NET Core 3.0 (Preview 3)
+# What's new in .NET Core 3.0 (Preview 5)
 
-This article describes what is new in .NET Core 3.0 (preview 3). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
+This article describes what is new in .NET Core 3.0 (through preview 5). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the latest release of Visual Studio 2019 Update 1 Preview or VSCode with the OmniSharp extension.
 
-[Download and get started with .NET Core 3.0 Preview 3](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux. You can see complete details of the release in the [.NET Core 3.0 Preview 3 release notes](https://aka.ms/netcore3releasenotes).
+[Download and get started with .NET Core 3.0 Preview 5](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
 
-For more information about what was released with each version, see the following announcements:
+For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 Preview 5 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-5/)
+- [.NET Core 3.0 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-4/)
 - [.NET Core 3.0 Preview 3 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-3/)
 - [.NET Core 3.0 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
 - [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
@@ -47,7 +49,220 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 </Project>
 ```
 
-If you're using Visual Studio, you need Visual Studio 2019 as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
+If you're using Visual Studio, you need Visual Studio 2019, as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**. We highly recommend that you use [Visual Studio 2019 Update 1 Preview](https://visualstudio.microsoft.com/vs/preview/).
+
+## Improved .NET Core Version APIs
+
+Starting with .NET Core 3.0, the version APIs provided with .NET Core now return the information you expect. For example:
+
+```csharp
+System.Console.WriteLine($"Environment.Version: {System.Environment.Version}");
+
+// Old result
+//   Environment.Version: 4.0.30319.42000
+//
+// New result
+//   Environment.Version: 3.0.0
+```
+
+```csharp
+System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription}");
+
+// Old result
+//   RuntimeInformation.FrameworkDescription: .NET Core 4.6.27415.71
+//
+// New result
+//   RuntimeInformation.FrameworkDescription: .NET Core 3.0.0-preview4-27615-11
+```
+
+> [!WARNING]
+> Breaking change. This is technically a breaking change because the versioning scheme has changed.
+
+## .NET Platform-Dependent Intrinsics
+
+APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel. 
+
+Where appropriate, the .NET libraries have begun using these instructions to improve performance.
+
+For more information, see [.NET Platform Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md).
+
+## Default executables
+
+.NET Core now builds [framework-dependent executables](../deploying/index.md#framework-dependent-executables-fde) by default. This behavior is new for applications that use a globally installed version of .NET Core. Previously, only [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) would produce an executable.
+
+During `dotnet build` or `dotnet publish`, an executable is created that matches the environment and platform of the SDK you're using. You can expect the same things with these executables as you would other native executables, such as:
+
+* You can double-click on the executable.
+* You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.
+
+## Single-file executables
+
+The `dotnet publish` command supports packaging your app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run your app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version was used.
+
+To publish a single-file executable, set the `PublishSingleFile` in your project or on the command line with the `dotnet publish` command:
+
+```console
+dotnet publish -r win10-x64 /p:PublishSingleFile=true
+```
+
+For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/single-file/design.md).
+
+## Tiered compilation
+
+[Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
+
+The main benefit of TC is to enable (re-)jitting methods with slower-but-faster to produce code or higher-quality-but-slower to produce code. This helps increase performance of an application as it goes through various stages of execution, from startup through steady-state. This contrasts with the non-TC approach, where every method is compiled a single way (the same as the high-quality tier), which is biased to steady-state over startup performance.
+
+To enable Quick JIT (tier 0 jitted code), use this setting in your project file:
+
+```xml
+<PropertyGroup>
+  <TieredCompilationQuickJit>true</TieredCompilationQuickJit>
+</PropertyGroup>
+```
+
+To disable TC completely, use this setting in your project file:
+
+```xml
+<TieredCompilation>false</TieredCompilation>
+```
+
+## Build copies dependencies
+
+The `dotnet build` command now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
+
+There are some operations, like linking and razor page publishing that will still require publishing.
+
+## Local tools
+
+.NET Core 3.0 introduces local tools. Local tools are similar to [global tools](../tools/global-tools.md) but are associated with a particular location on disk. Local tools aren't available globally and are distributed as NuGet packages.
+
+> [!WARNING]
+> If you tried local tools in .NET Core 3.0 Preview 1, such as running `dotnet tool restore` or `dotnet tool install`, delete the local tools cache folder. Otherwise, local tools won't work on any newer release. This folder is located at:
+>
+> On macOS, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
+>
+> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
+
+Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
+
+For both global and local tools, a compatible version of the runtime is required. Many tools currently on NuGet.org target .NET Core Runtime 2.1. To install these tools globally or locally, you would still need to install the [NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet-core/2.1).
+
+## Major-version Roll Forward
+
+.NET Core 3.0 introduces an opt-in feature that allows your app to roll forward to the latest major version of .NET Core. Additionally, a new setting has been added to control how roll forward is applied to your app. This can be configured in the following ways:
+
+- Project file property: `RollForward`
+- Runtime configuration file property: `rollForward`
+- Environment variable: `DOTNET_ROLL_FORWARD`
+- Command-line argument: `--roll-forward`
+
+One of the following values must be specified. If the setting is omitted, **Minor** is the default.
+
+- **LatestPatch**\
+Roll forward to the highest patch version. This disables minor version roll forward.
+- **Minor**\
+Roll forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the **LatestPatch** policy is used.
+- **Major**\
+Roll forward to lowest higher major version, and lowest minor version, if requested major version is missing. If the requested major version is present, then the **Minor** policy is used.
+- **LatestMinor**\
+Roll forward to highest minor version, even if requested minor version is present. Intended for component hosting scenarios.
+- **LatestMajor**\
+Roll forward to highest major and highest minor version, even if requested major is present. Intended for component hosting scenarios.
+- **Disable**\
+Don't roll forward. Only bind to specified version. This policy isn't recommended for general use because it disables the ability to roll forward to the latest patches. This value is only recommended for testing.
+
+Besides the **Disable** setting, all settings will use the highest available patch version.
+
+## Windows desktop
+
+.NET Core 3.0 supports Windows desktop applications using Windows Presentation Foundation (WPF) and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
+
+The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
+
+You can create a new WPF or Windows Forms app with the following `dotnet` commands:
+
+```console
+dotnet new wpf
+dotnet new winforms
+```
+
+Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF.
+
+For more information about how to port an existing .NET Framework application, see [Port WPF projects](../porting/wpf.md) and [Port Windows Forms projects](../porting/winforms.md).
+
+## COM-callable components - Windows Desktop
+
+On Windows, you can now create COM-callable managed components. This capability is critical to use .NET Core with COM add-in models and also to provide parity with .NET Framework.
+
+Unlike .NET Framework where the *mscoree.dll* was used as the COM server, .NET Core will add a native launcher dll to the *bin* directory when you build your COM component.
+
+For an example of how to create a COM component and consume it, see the [COM Demo](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo).
+
+## MSIX Deployment - Windows Desktop
+
+[MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows application package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
+
+The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
+
+The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
+
+```xml
+<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+```
+
+## WinForms HighDPI
+
+.NET Core Windows Forms applications can set High DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType>. The `SetHighDpiMode` method sets the corresponding High DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
+
+The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Forms.HighDpiMode?displayProperty=nameWithType> enum are:
+
+* `DpiUnaware`
+* `SystemAware`
+* `PerMonitor`
+* `PerMonitorV2`
+* `DpiUnawareGdiScaled`
+
+For more information about High DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
+
+### Ranges and indices
+
+The new <xref:System.Index?displayProperty=nameWithType> type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
+
+```csharp
+Index i1 = 3;  // number 3 from beginning
+Index i2 = ^4; // number 4 from end
+int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
+```
+
+There's also the <xref:System.Range?displayProperty=nameWithType> type, which consists of two `Index` values, one for the start and one for the end, and can be written with a `x..y` range expression (C#). You can then index with a `Range`, which produces a slice:
+
+```csharp
+var slice = a[i1..i2]; // { 3, 4, 5 }
+```
+
+For more information, see the [ranges and indices tutorial](../../csharp/tutorials/ranges-indexes.md).
+
+### Async streams
+
+The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
+
+The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
+
+```csharp
+async IAsyncEnumerable<int> GetBigResultsAsync()
+{
+    await foreach (var result in GetResultsAsync())
+    {
+        if (result > 20) yield return result; 
+    }
+}
+```
+
+In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
+
+For more information, see the [async streams tutorial](../../csharp/tutorials/generate-consume-asynchronous-stream.md).
 
 ## IEEE Floating-point improvements
 
@@ -82,93 +297,6 @@ Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That 
 * <xref:System.Math.CopySign(System.Double,System.Double)>\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
-## .NET Platform-Dependent Intrinsics
-
-APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel. 
-
-Where appropriate, the .NET libraries have begun using these instructions to improve performance.
-
-For more information, see [.NET Platform Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md).
-
-## Default executables
-
-.NET Core now builds [framework-dependent executables](../deploying/index.md#framework-dependent-executables-fde) by default. This behavior is new for applications that use a globally installed version of .NET Core. Previously, only [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) would produce an executable.
-
-During `dotnet build` or `dotnet publish`, an executable is created that matches the environment and platform of the SDK you're using. You can expect the same things with these executables as you would other native executables, such as:
-
-* You can double-click on the executable.
-* You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.
-
-## Tiered compilation
-
-[Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
-
-This feature was added as an opt-in feature in [.NET Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) and then was enabled by default in [.NET Core 2.2 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2-preview-2/). Subsequently, it has been reverted back to opt in with the .NET Core 2.2 release.
-
-## Build copies dependencies
-
-The `dotnet build` command now copies NuGet dependencies for your application from the NuGet cache to the build output folder. Previously, dependencies were only copied as part of `dotnet publish`.
-
-There are some operations, like linking and razor page publishing that will still require publishing.
-
-## Local tools
-
-.NET Core 3.0 introduces local tools. Local tools are similar to [global tools](../tools/global-tools.md) but are associated with a particular location on disk. Local tools aren't available globally and are distributed as NuGet packages.
-
-> [!WARNING]
-> If you tried local tools in .NET Core 3.0 Preview 1, such as running `dotnet tool restore` or `dotnet tool install`, delete the local tools cache folder. Otherwise, local tools won't work on any newer release. This folder is located at:
->
-> On macOS, Linux: `rm -r $HOME/.dotnet/toolResolverCache`
->
-> On Windows: `rmdir /s %USERPROFILE%\.dotnet\toolResolverCache`
-
-Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
-
-For both global and local tools, a compatible version of the runtime is required. Many tools currently on NuGet.org target .NET Core Runtime 2.1. To install these tools globally or locally, you would still need to install the [NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet-core/2.1).
-
-## Windows desktop
-
-.NET Core 3.0 supports Windows desktop applications using Windows Presentation Foundation (WPF) and Windows Forms. These frameworks also support using modern controls and Fluent styling from the Windows UI XAML Library (WinUI) via [XAML islands](/windows/uwp/xaml-platform/xaml-host-controls).
-
-The Windows Desktop component is part of the Windows .NET Core 3.0 SDK.
-
-You can create a new WPF or Windows Forms app with the following `dotnet` commands:
-
-```console
-dotnet new wpf
-dotnet new winforms
-```
-
-Visual Studio 2019 adds **New Project** templates for .NET Core 3.0 Windows Forms and WPF.
-
-For more information about how to port an existing .NET Framework application, see [Port WPF projects](../porting/winforms.md) and [Port Windows Forms projects](../porting/wpf.md).
-
-## MSIX Deployment for Windows Desktop
-
-[MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows application package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
-
-The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
-
-The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
-
-```xml
-<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
-```
-
-## WinForms HighDPI
-
-.NET Core Windows Forms applications can set High DPI mode with <xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)?displayProperty=nameWithType>. The `SetHighDpiMode` method sets the corresponding High DPI mode unless the setting has been set by other means like `App.Manifest` or P/Invoke before `Application.Run`.
-
-The possible `highDpiMode` values, as expressed by the <xref:System.Windows.Forms.HighDpiMode?displayProperty=nameWithType> enum are:
-
-* `DpiUnaware`
-* `SystemAware`
-* `PerMonitor`
-* `PerMonitorV2`
-* `DpiUnawareGdiScaled`
-
-For more information about High DPI modes, see [High DPI Desktop Application Development on Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
-
 ## Fast built-in JSON support
 
 .NET users have largely relied on [**Json.NET**](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. **Json.NET** uses .NET strings as its base datatype, which is UTF-16 under the hood.
@@ -179,11 +307,11 @@ The new built-in JSON support is high-performance, low allocation, and based on 
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a foundational, low-level type, that can be used to build custom parsers and deserializers. Reading through a JSON payload using the new `Utf8JsonReader` is 2x faster than using the reader from **Json.NET**. It doesn't allocate until you need to actualize JSON tokens as (UTF-16) strings.
 
-Here is an example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
+Here is an example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/snippets/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
 
-[!CODE-csharp[Utf8JsonReader](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#PrintJson)]
+[!CODE-csharp[Utf8JsonReader](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#PrintJson)]
 
-[!CODE-csharp[Utf8JsonReader](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#PrintJsonCall)]
+[!CODE-csharp[Utf8JsonReader](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#PrintJsonCall)]
 
 ### Utf8JsonWriter
 
@@ -195,11 +323,25 @@ Here is an example of reading through the [**launch.json**](https://github.com/d
 
 Here is a sample usage of the `JsonDocument` and `JsonElement` that can be used as a starting point:
 
-Here is a C# 8.0 example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
+Here is a C# 8.0 example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/snippets/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
 
-[!CODE-csharp[JsonDocument](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#ReadJson)]
+[!CODE-csharp[JsonDocument](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#ReadJson)]
 
-[!CODE-csharp[JsonDocument](~/samples/core/whats-new/whats-new-in-30/cs/program.cs#ReadJsonCall)]
+[!CODE-csharp[JsonDocument](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#ReadJsonCall)]
+
+### JsonSerializer
+
+<xref:System.Text.Json.Serialization.JsonSerializer?displayProperty=nameWithType> is built on top of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to provide a fast low-memory serialization option when working with JSON documents and fragments.
+
+EXAMINE: https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/docs/SerializerProgrammingModel.md for an example to port to this article
+
+Here is an example of serializing an object to JSON:
+
+[!CODE-csharp[JsonSerializer](~/samples/snippets/core/whats-new/whats-new-in-30/cs/JSON.cs#JsonSerialize)]
+
+Here is an example of deserializing a JSON string to an object. You can use the JSON string produced by the previous example:
+
+[!CODE-csharp[JsonDeserializer](~/samples/snippets/core/whats-new/whats-new-in-30/cs/JSON.cs#JsonDeserialize)]
 
 ## Interop improvements
 
@@ -212,6 +354,12 @@ Here is a C# 8.0 example of reading through the [**launch.json**](https://github
 ### Windows Native Interop
 
 Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. While .NET Core supports **P/Invoke**, .NET Core 3.0 adds the ability to **CoCreate COM APIs** and **Activate WinRT APIs**. For a code example, see the [Excel Demo](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo).
+
+## HTTP/2 support
+
+The <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> type supports the HTTP/2 protocol. Support is currently disabled but can be turned on by calling `AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2Support", true);` before you use <xref:System.Net.Http.HttpClient>. You can also enable HTTP/2 support by setting the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` environment variable to `true` before you run your app.
+
+If HTTP/2 is enabled, the HTTP protocol version will be negotiated via TLS/ALPN, and HTTP/2 will only be used if the server selects to use it.
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 
@@ -227,7 +375,7 @@ When available, .NET Core 3.0 uses **OpenSSL 1.1.1**, **OpenSSL 1.1.0**, or **Op
 
 The following C# 8.0 example demonstrates .NET Core 3.0 on Ubuntu 18.10 connecting to <https://www.cloudflare.com>:
 
-[!CODE-csharp[TLSExample](~/samples/core/whats-new/whats-new-in-30/cs/TLS.cs#TLS)]
+[!CODE-csharp[TLSExample](~/samples/snippets/core/whats-new/whats-new-in-30/cs/TLS.cs#TLS)]
 
 ## Cryptography ciphers
 
@@ -235,7 +383,7 @@ The following C# 8.0 example demonstrates .NET Core 3.0 on Ubuntu 18.10 connecti
 
 The following code demonstrates using `AesGcm` cipher to encrypt and decrypt random data.
 
-[!CODE-csharp[AesGcm](~/samples/core/whats-new/whats-new-in-30/cs/Cipher.cs#AesGcm)]
+[!CODE-csharp[AesGcm](~/samples/snippets/core/whats-new/whats-new-in-30/cs/Cipher.cs#AesGcm)]
 
 ## Cryptographic Key Import/Export
 
@@ -260,7 +408,7 @@ RSA keys also support:
 
 The export methods produce DER-encoded binary data, and the import methods expect the same. If a key is stored in the text-friendly PEM format, the caller will need to base64-decode the content before calling an import method.
 
-[!CODE-csharp[RSA](~/samples/core/whats-new/whats-new-in-30/cs/RSA.cs#Rsa)]
+[!CODE-csharp[RSA](~/samples/snippets/core/whats-new/whats-new-in-30/cs/RSA.cs#Rsa)]
 
 **PKCS#8** files can be inspected with <xref:System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo?displayProperty=nameWithType> and **PFX/PKCS#12** files can be inspected with <xref:System.Security.Cryptography.Pkcs.Pkcs12Info?displayProperty=nameWithType>. **PFX/PKCS#12** files can be manipulated with <xref:System.Security.Cryptography.Pkcs.Pkcs12Builder?displayProperty=nameWithType>.
 
@@ -277,6 +425,16 @@ Starting with Preview 3, running .NET Core 3.0 on Linux with Docker works better
 * Default Garbage Collector (GC) heap size: maximum of 20 mb or 75% of the memory limit on the container.
 * Explicit size can be set as an absolute number or percentage of cgroup limit.
 * Minimum reserved segment size per GC heap is 16 mb. This size reduces the number of heaps that are created on machines.
+
+## Smaller Garbage Collection heap sizes
+
+The Garbage Collector's default heap size has been reduced resulting in .NET Core using less memory. This change better aligns with the generation 0 allocation budget with modern processor cache sizes.
+
+## Garbage Collection Large Page support
+
+Large Pages (also known as Huge Pages on Linux) is a feature where the operating system is able to establish memory regions larger than the native page size (often 4K) to improve performance of the application requesting these large pages.
+
+The Garbage Collector can now be configured with the **GCLargePages** setting as an opt-in feature to choose to allocate large pages on Windows.
 
 ## GPIO Support for Raspberry Pi
 

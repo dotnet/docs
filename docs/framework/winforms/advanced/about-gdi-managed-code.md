@@ -10,7 +10,7 @@ ms.assetid: a98a76ab-e455-49c9-891c-0491ac932f2c
 # About GDI+ Managed Code
 [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is the portion of the Windows operating system that provides two-dimensional vector graphics, imaging, and typography. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] improves on [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] (the Graphics Device Interface included with earlier versions of Windows) by adding new features and by optimizing existing features.  
   
- The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] managed class interface (a set of wrappers) is part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], an environment for building, deploying, and running XML Web services and other applications.  
+ The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] managed class interface (a set of wrappers) is part of the .NET Framework, an environment for building, deploying, and running XML Web services and other applications.  
   
  This section provides information about the [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] API for programmers using managed code.  
   

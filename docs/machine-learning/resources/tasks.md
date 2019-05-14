@@ -2,7 +2,7 @@
 title: Machine learning tasks
 description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
 ms.custom: seodec18
-ms.date: 04/12/2019
+ms.date: 04/23/2019
 author: natke
 ---
 # Machine learning tasks in ML.NET
@@ -22,22 +22,36 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 
 For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
 
-### Binary Classification Training Algorithms
+### Binary classification trainers
 
 You can train a binary classification model using the following algorithms:
 
 * <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>
-* <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>
-* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.LinearSvmTrainer>
-* <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.PriorTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer> 
+* <xref:Microsoft.ML.Trainers.PriorTrainer> 
+* <xref:Microsoft.ML.Trainers.LinearSvmTrainer>
+
+### Binary classification inputs and outputs
+
+For best results with binary classification, the training data should be balanced (i.e. equal numbers of positive and negative training data). Missing and values should be handled before training.
+
+The input label column data must be <xref:System.Boolean>.
+The input features column data must be a fixed-size vector of <xref:System.Single>.
+
+These trainers outputs the following columns:
+
+| Output Column Name | Column Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The raw score that was calculated by the model|
+| `PredictedLabel` | <xref:System.Boolean> | The predicted label, based on the sign of the score. A negative score maps to `false` and a positive score maps to `true`.|
 
 ## Multiclass classification
 
@@ -52,17 +66,29 @@ For more information, see the [Multiclass classification](https://en.wikipedia.o
 >[!NOTE]
 >One vs all upgrades any [binary classification learner](#binary-classification) to act on multiclass datasets. More information on [Wikipedia] (https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest).
 
-### Multiclass Classification training algorithms
+### Multiclass classification trainers
 
 You can train a multiclass classification model using the following training algorithms:
 
-* <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer>
-* <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>
-* <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>
-* <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
+* <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer> 
+* <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer> 
+* <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
+* <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer> 
+
+### Multiclass classification inputs and outputs
+
+The input label column data must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
+The feature column must be a fixed size vector of <xref:System.Single>.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | Vector of <xref:System.Single> | The scores of all classes. Higher value means higher probability to fall into the associated class. If the i-th element has the largest value, the predicted label index would be i. Note that i is zero-based index. |
+| `PredictedLabel` | [key](xref:Microsoft.ML.Data.KeyDataViewType) type | The predicted label's index. If its value is i, the actual label would be the i-th category in the key-valued input label type. |
 
 ## Regression
 
@@ -72,19 +98,29 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * Predicting future stock prices based on historical data and current market trends.
 * Predicting sales of a product based on advertising budgets.
 
-### Regression training algorithms
+### Regression trainers
 
 You can train a regression model using the following algorithms:
 
+* <xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.OlsTrainer>
+* <xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer> 
 * <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>
-* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>
-* <xref:Microsoft.ML.Trainers.OlsTrainer>
-* <xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>
-* <xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>
-* <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>
+
+### Regression inputs and outputs
+
+The input label column data must be <xref:System.Single>.
+
+The trainers for this task output the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The raw score that was predicted by the model |
 
 ## Clustering
 
@@ -94,11 +130,22 @@ An [unsupervised machine learning](glossary.md#unsupervised-machine-learning) ta
 * Identifying customer segments and demographics to help build targeted advertising campaigns.
 * Categorizing inventory based on manufacturing metrics.
 
-### Clustering training algorithms
+### Clustering trainer
 
 You can train a clustering model using the following algorithm:
 
-* <xref:Microsoft.ML.Trainers.KMeansTrainer>
+* <xref:Microsoft.ML.Trainers.KMeansTrainer> 
+
+### Clustering inputs and outputs
+
+The input features data must be <xref:System.Single>. No labels are needed.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | vector of <xref:System.Single> | The distances of the given data point to all clusters' centriods |
+| `PredictedLabel` | [key](xref:Microsoft.ML.Data.KeyDataViewType) type | The closest cluster's index predicted by the model. |
 
 ## Anomaly detection
 
@@ -115,11 +162,21 @@ Anomaly detection encompasses many important tasks in machine learning:
 
 Because anomalies are rare events by definition, it can be difficult to collect a representative sample of data to use for modeling. The algorithms included in this category have been especially designed to address the core challenges of building and training models by using imbalanced data sets.
 
-### Anomaly detection training algorithms
+### Anomaly detection trainer
 
 You can train an anomaly detection model using the following algorithm:
 
 * <xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>
+
+### Anomaly detection inputs and outputs
+
+The input features must be a fixed-sized vector of <xref:System.Single>.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The non-negative, unbounded score that was calculated by the anomaly detection model |
 
 ## Ranking
 
@@ -129,8 +186,26 @@ A ranking task constructs a ranker from a set of labeled examples. This example 
 
 You can train a ranking model with the following algorithms:
 
-* <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>
 * <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer> 
+
+### Ranking input and outputs
+
+The input label data type must be [key](xref:Microsoft.ML.Data.KeyDataViewType)
+type or <xref:System.Single>. The value of the label determines relevance, where
+higher values indicate higher relevance. If the label is a
+[key](xref:Microsoft.ML.Data.KeyDataViewType) type, then the key index is the
+relevance value, where the smallest index is the least relevant. If the label is a
+<xref:System.Single>, larger values indicate higher relevance.
+
+The feature data must be a fixed size vector of <xref:System.Single> and input row group
+column must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The unbounded score that was calculated by the model to determine the prediction |
 
 ## Recommendation
 

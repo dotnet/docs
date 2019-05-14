@@ -13,7 +13,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The .NET Framework provides caching functionality that you can use to improve the performance and scalability of both Windows client and server applications, including ASP.NET.  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and earlier versions, ASP.NET provided an in-memory cache implementation in the <xref:System.Web.Caching> namespace. In previous versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes. In the .NET Framework 4, the <xref:System.Runtime.Caching> namespace contains APIs that are designed for both Web and non-Web applications.  
+>  In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and earlier versions, ASP.NET provided an in-memory cache implementation in the <xref:System.Web.Caching> namespace. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes. In the .NET Framework 4, the <xref:System.Runtime.Caching> namespace contains APIs that are designed for both Web and non-Web applications.  
   
 ## Caching Data  
  You can cache information by using classes in the <xref:System.Runtime.Caching> namespace. The caching classes in this namespace provide the following features:  

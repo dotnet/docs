@@ -40,7 +40,7 @@ Provided here is guidance about the Windows Communication Foundation (WCF) docum
   
 - To create a service that communicates with ASP.NET clients, see [How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients](../../../docs/framework/wcf/feature-details/config-wcf-service-with-aspnet-web-service.md).  
   
-- Integration with [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] remoting is explained in [Migrating .NET Remoting Applications to WCF](../../../docs/framework/wcf/feature-details/migrating-net-remoting-applications-to-wcf.md).  
+- Integration with .NET Framework remoting is explained in [Migrating .NET Remoting Applications to WCF](../../../docs/framework/wcf/feature-details/migrating-net-remoting-applications-to-wcf.md).  
   
 - To integrate an existing COM+ application with a WCF service or client, see [Integrating with COM+ Applications Overview](../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md).  
   

@@ -66,36 +66,12 @@ The following example uses a regular expression to verify that a string is in va
 ## Compiling the Code  
  The `IsValidEmail` and `DomainMapper` methods can be included in a library of regular expression utility methods, or they can be included as private static or instance methods in the application class.  
   
- To include them in a regular expression library, either copy and paste the code into a Visual Studio Class Library project, or copy and paste it into a text file and compile it from the command line with a command like the following (assuming that the name of the source code file is RegexUtilities.cs or RegexUtilities.vb:  
-  
-```csharp  
-csc /t:library RegexUtilities.cs  
-```  
-  
-```vb  
-vbc /t:library RegexUtilities.vb  
-```  
-  
  You can also use the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method to include this regular expression in a regular expression library.  
   
  If they are used in a regular expression library, you can call them by using code such as the following:  
   
  [!code-csharp[RegularExpressions.Examples.Email#8](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.Email/cs/example4.cs#8)]
  [!code-vb[RegularExpressions.Examples.Email#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.Email/vb/example4.vb#8)]  
-  
- Assuming you've created a class library named RegexUtilities.dll that includes your email validation regular expression, you can compile this example in either of the following ways:  
-  
-- In Visual Studio, by creating a Console Application and adding a reference to RegexUtilities.dll to your project.  
-  
-- From the command line, by copying and pasting the source code into a text file and compiling it with a command like the following (assuming that the name of the source code file is Example.cs or Example.vb:  
-  
-    ```csharp  
-    csc Example.cs /r:RegexUtilities.dll  
-    ```  
-  
-    ```vb  
-    vbc Example.vb /r:RegexUtilities.dll  
-    ```  
   
 ## See also
 

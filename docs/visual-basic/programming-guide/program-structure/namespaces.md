@@ -20,14 +20,14 @@ ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
 # Namespaces in Visual Basic
 Namespaces organize the objects defined in an assembly. Assemblies can contain multiple namespaces, which can in turn contain other namespaces. Namespaces prevent ambiguity and simplify references when using large groups of objects such as class libraries.  
   
- For example, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] defines the <xref:System.Windows.Forms.ListBox> class in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace. The following code fragment shows how to declare a variable using the fully qualified name for this class:  
+ For example, the .NET Framework defines the <xref:System.Windows.Forms.ListBox> class in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace. The following code fragment shows how to declare a variable using the fully qualified name for this class:  
   
  [!code-vb[VbVbalrApplication#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/Class1.vb#6)]  
   
 ## Avoiding Name Collisions  
- [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] namespaces address a problem sometimes called *namespace pollution*, in which the developer of a class library is hampered by the use of similar names in another library. These conflicts with existing components are sometimes called *name collisions*.  
+ .NET Framework namespaces address a problem sometimes called *namespace pollution*, in which the developer of a class library is hampered by the use of similar names in another library. These conflicts with existing components are sometimes called *name collisions*.  
   
- For example, if you create a new class named `ListBox`, you can use it inside your project without qualification. However, if you want to use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.Windows.Forms.ListBox> class in the same project, you must use a fully qualified reference to make the reference unique. If the reference is not unique, Visual Basic produces an error stating that the name is ambiguous. The following code example demonstrates how to declare these objects:  
+ For example, if you create a new class named `ListBox`, you can use it inside your project without qualification. However, if you want to use the .NET Framework <xref:System.Windows.Forms.ListBox> class in the same project, you must use a fully qualified reference to make the reference unique. If the reference is not unique, Visual Basic produces an error stating that the name is ambiguous. The following code example demonstrates how to declare these objects:  
   
  [!code-vb[VbVbalrApplication#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/Class1.vb#7)]  
   

@@ -80,8 +80,6 @@ The example can be tested using code such as the following:
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
 * That the following namespaces be imported:
 
   [!code-csharp[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#6)]

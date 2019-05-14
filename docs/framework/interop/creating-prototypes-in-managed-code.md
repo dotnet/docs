@@ -32,10 +32,8 @@ This topic describes how to access unmanaged functions and introduces several at
  Managed definitions to unmanaged functions are language-dependent, as you can see in the following examples. For more complete code examples, see [Platform Invoke Examples](platform-invoke-examples.md).  
   
 ```vb
-Imports System
-
-Friend Class WindowsAPI
-    Friend Shared Declare Auto Function MessageBox Lib "user32.dll" (
+Friend Class NativeMethods
+    Friend Declare Auto Function MessageBox Lib "user32.dll" (
         ByVal hWnd As IntPtr,
         ByVal lpText As String,
         ByVal lpCaption As String,
@@ -43,13 +41,12 @@ Friend Class WindowsAPI
 End Class
 ```
   
- To apply the <xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping>, <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention>, <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling>, <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>, <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError>, or <xref:System.Runtime.InteropServices.DllImportAttribute.ThrowOnUnmappableChar> fields to a [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)] declaration, you must use the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute instead of the `Declare` statement.  
+ To apply the <xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping?displayProperty=nameWithtype>, <xref:System.Runtime.InteropServices.DllImportAttribute.CallingConvention?displayProperty=nameWithtype>, <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling?displayProperty=nameWithtype>, <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig?displayProperty=nameWithtype>, <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError?displayProperty=nameWithtype>, or <xref:System.Runtime.InteropServices.DllImportAttribute.ThrowOnUnmappableChar?displayProperty=nameWithtype> fields to a Visual Basic declaration, you must use the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute instead of the `Declare` statement.  
   
 ```vb
-Imports System
 Imports System.Runtime.InteropServices
 
-Friend Class WindowsAPI
+Friend Class NativeMethods
     <DllImport("user32.dll", CharSet:=CharSet.Auto)>
     Friend Shared Function MessageBox(
         ByVal hWnd As IntPtr,
@@ -64,7 +61,7 @@ End Class
 using System;
 using System.Runtime.InteropServices;
 
-internal static class WindowsAPI
+internal static class NativeMethods
 {
     [DllImport("user32.dll")]
     internal static extern int MessageBox(
@@ -105,9 +102,9 @@ extern "C" int MessageBox(
 ### Platform Invoke Examples  
  The platform invoke samples in this section illustrate the use of the `RegistryPermission` attribute with the stack walk modifiers.  
   
- In the following code example, the <xref:System.Security.Permissions.SecurityAction>`Assert`, `Deny`, and `PermitOnly` modifiers are ignored.  
+ In the following example, the <xref:System.Security.Permissions.SecurityAction>`Assert`, `Deny`, and `PermitOnly` modifiers are ignored.  
   
-```  
+```csharp  
 [DllImport("MyClass.dll", EntryPoint = "CallRegistryPermission")]  
 [RegistryPermission(SecurityAction.Assert, Unrestricted = true)]  
     private static extern bool CallRegistryPermissionAssert();  
@@ -123,7 +120,7 @@ extern "C" int MessageBox(
   
  However, the `Demand` modifier in the following example is accepted.  
   
-```  
+```csharp
 [DllImport("MyClass.dll", EntryPoint = "CallRegistryPermission")]  
 [RegistryPermission(SecurityAction.Demand, Unrestricted = true)]  
     private static extern bool CallRegistryPermissionDeny();  

@@ -12,7 +12,7 @@ ms.assetid: 3304c9b2-5c7a-4a95-9d45-4f260dcb606e
   
 - A static SQL method specific to [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
-- A function supported by a [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] method.  
+- A function supported by a .NET Framework method.  
   
  The topics in this section show how to form and call these methods in your application if you write the code yourself. Developers using Visual Studio would typically use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to map user-defined functions.  
   

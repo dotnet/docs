@@ -55,7 +55,7 @@ End Module
 ```  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a   `Imports` statement for the System.Linq namespace.  
+Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
   
 ## See also
 

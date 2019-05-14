@@ -26,7 +26,7 @@ cmd.CommandText = @"SELECT VALUE p
 ```
   
 ## Executing Queries  
- When a query is executed, it is parsed and converted into a canonical command tree. All subsequent processing is performed on the command tree. The command tree is the means of communication between the <xref:System.Data.EntityClient> and the underlying [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider, such as <xref:System.Data.SqlClient>.  
+ When a query is executed, it is parsed and converted into a canonical command tree. All subsequent processing is performed on the command tree. The command tree is the means of communication between the <xref:System.Data.EntityClient> and the underlying .NET Framework data provider, such as <xref:System.Data.SqlClient>.  
   
  The <xref:System.Data.EntityClient.EntityDataReader> exposes the results of executing a <xref:System.Data.EntityClient.EntityCommand> against a conceptual model. To execute the command that returns the <xref:System.Data.EntityClient.EntityDataReader>, call <xref:System.Data.EntityClient.EntityCommand.ExecuteReader%2A>. The <xref:System.Data.EntityClient.EntityDataReader> implements <xref:System.Data.IExtendedDataRecord> to describe rich structured results.  
   

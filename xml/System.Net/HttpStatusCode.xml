@@ -36,13 +36,22 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Net.HttpStatusCode> enumeration contains the values of the status codes defined in RFC 2616 for HTTP 1.1.  
+## Remarks
+
+The <xref:System.Net.HttpStatusCode> enumeration contains the values of the status codes defined in RFC 2616 for HTTP 1.1.  
   
- The status of an HTTP request is contained in the <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property.  
-  
-   
-  
+The status of an HTTP request is contained in the <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property.  
+If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, the following enumeration values cause an exception to be thrown:
+ 
+- `Ambiguous`
+- `Found`
+- `MultipleChoices`
+- `Redirect`
+- `RedirectKeepVerb`
+- `RedirectMethod`
+- `SeeOther`
+- `TemporaryRedirect`
+
 ## Examples  
  The following example compares the status returned by an <xref:System.Net.HttpWebResponse> with a member of the <xref:System.Net.HttpStatusCode> class to determine the status of a response.  
   
@@ -159,17 +168,8 @@
       </ReturnValue>
       <MemberValue>300</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.Ambiguous" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Ambiguous will cause an exception to be thrown.  
-  
- Ambiguous is a synonym for MultipleChoices.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.Ambiguous" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. <c>Ambiguous</c> is a synonym for <c>MultipleChoices</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BadGateway">
@@ -541,17 +541,8 @@
       </ReturnValue>
       <MemberValue>302</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Found" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Found will cause an exception to be thrown.  
-  
- Found is a synonym for Redirect.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Found" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. <c>Found</c> is a synonym for <c>Redirect</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GatewayTimeout">
@@ -974,15 +965,8 @@
       </ReturnValue>
       <MemberValue>301</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.Moved" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Moved is a synonym for MovedPermanently.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.Moved" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. <c>Moved</c> is a synonym for <c>MovedPermanently</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MovedPermanently">
@@ -1021,15 +1005,8 @@
       </ReturnValue>
       <MemberValue>301</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.MovedPermanently" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MovedPermanently is a synonym for Moved.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.MovedPermanently" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. <c>MovedPermanently</c> is a synonym for <c>Moved</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MultipleChoices">
@@ -1068,17 +1045,8 @@
       </ReturnValue>
       <MemberValue>300</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.MultipleChoices" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, MultipleChoices will cause an exception to be thrown.  
-  
- MultipleChoices is a synonym for Ambiguous.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.MultipleChoices" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. <c>MultipleChoices</c> is a synonym for <c>Ambiguous</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiStatus">
@@ -1726,17 +1694,8 @@
       </ReturnValue>
       <MemberValue>302</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Redirect" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Redirect will cause an exception to be thrown.  
-  
- Redirect is a synonym for Found.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Redirect" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. <c>Redirect</c> is a synonym for <c>Found</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedirectKeepVerb">
@@ -1775,17 +1734,8 @@
       </ReturnValue>
       <MemberValue>307</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.RedirectKeepVerb" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, RedirectKeepVerb will cause an exception to be thrown.  
-  
- RedirectKeepVerb is a synonym for TemporaryRedirect.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.RedirectKeepVerb" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. <c>RedirectKeepVerb</c> is a synonym for <c>TemporaryRedirect</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedirectMethod">
@@ -1824,17 +1774,8 @@
       </ReturnValue>
       <MemberValue>303</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.RedirectMethod" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, RedirectMethod will cause an exception to be thrown.  
-  
- RedirectMethod is a synonym for SeeOther.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.RedirectMethod" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. <c>RedirectMethod</c> is a synonym for <c>SeeOther</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedRangeNotSatisfiable">
@@ -2098,17 +2039,8 @@
       </ReturnValue>
       <MemberValue>303</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.SeeOther" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, SeeOther will cause an exception to be thrown.  
-  
- SeeOther is a synonym for RedirectMethod.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.SeeOther" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. <c>SeeOther</c> is a synonym for <c>RedirectMethod</c></summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceUnavailable">
@@ -2225,17 +2157,8 @@
       </ReturnValue>
       <MemberValue>307</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.TemporaryRedirect" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, TemporaryRedirect will cause an exception to be thrown.  
-  
- TemporaryRedirect is a synonym for RedirectKeepVerb.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.TemporaryRedirect" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. <c>TemporaryRedirect</c> is a synonym for <c>RedirectKeepVerb</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TooManyRequests">

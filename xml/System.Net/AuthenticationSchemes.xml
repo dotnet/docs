@@ -37,12 +37,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used to specify the method used to authenticate client requests being processed by <xref:System.Net.HttpListener> objects.  
-  
- **Note** Basic authentication requires the exchange of a password and should therefore be avoided except in the case of secure, encrypted connections.  
-  
-   
-  
+
+This enumeration is used to specify the method used to authenticate client requests being processed by <xref:System.Net.HttpListener> objects.  
+
+> [!IMPORTANT]
+> Basic authentication requires the exchange of a password and should therefore be avoided except in the case of secure, encrypted connections.  
+
+For additional information on basic and digest authentication, see [RFC2617 - HTTP Authentication: Basic and Digest Authentication](https://www.rfc-editor.org/info/rfc2617). This document is available at <https://www.rfc-editor.org>.  
+
+
 ## Examples  
  The following code example demonstrates using the Negotiate enumeration value to specify that clients are authenticated using the Negotiate security protocol.  
   
@@ -119,14 +122,7 @@
       <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies basic authentication.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For additional information, see RFC2617 - HTTP Authentication: Basic and Digest Authentication. This document is available at [https://www.rfc-editor.org](https://www.rfc-editor.org/).  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Digest">
@@ -161,14 +157,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies digest authentication.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For additional information, see RFC2617 - HTTP Authentication: Basic and Digest Authentication. This document is available at [https://www.rfc-editor.org](https://www.rfc-editor.org/)  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IntegratedWindowsAuthentication">

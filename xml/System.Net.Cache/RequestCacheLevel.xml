@@ -35,10 +35,10 @@
  This <xref:System.Net.Cache.HttpRequestCacheLevel.BypassCache> value is the default cache behavior specified in the machine configuration file that ships with the .NET Framework. No entries are taken from caches, added to caches, or removed from caches between the client and server.  
   
  The <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=nameWithType> property is used to get or set the default cache policy for <xref:System.Net.HttpWebRequest> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=nameWithType> property is used to get or set the default cache policy for a <xref:System.Net.WebRequest> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=nameWithType> property is used to get or set the cache policy for a specific request.  
-  
- A copy of a resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So another request for the same resource could use a cached copy, depending on the default cache policy level for this request.  
-  
-   
+
+If the cache behavior is `CacheIfAvailable` or `Revalidate`, a copy of a requested resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. With `CacheIfAvailable`, subsequent requests for the same resource would use a cached copy. With `Revalidate`, subsequent requests for the same resource would use a cached copy if the timestamp for the cached resource is the same as the timestamp of the resource on the server.  
+
+A copy of a resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So another request for the same resource could use a cached copy, depending on the default cache policy level for this request.   
   
 ## Examples  
  The following code example creates policy that returns a resource only if it is in the cache.  
@@ -116,14 +116,7 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>Satisfies a request for a resource from the cache, if the resource is available; otherwise, sends a request for a resource to the server. If the requested item is available in any cache between the client and the server, the request might be satisfied by the intermediate cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A copy of a requested resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So subsequent requests for the same resource would use a cached copy.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CacheOnly">
@@ -284,14 +277,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>Satisfies a request by using the cached copy of the resource if the timestamp is the same as the timestamp of the resource on the server; otherwise, the resource is downloaded from the server, presented to the caller, and stored in the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A copy of a resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So subsequent requests for the same resource would use a cached copy if the timestamp for the cached resource is the same as the timestamp of the resource on the server.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

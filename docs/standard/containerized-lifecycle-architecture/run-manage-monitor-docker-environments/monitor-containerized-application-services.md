@@ -1,8 +1,6 @@
 ---
 title: Monitor containerized application services
 description: Learn some key aspects of monitoring container architectures
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Monitor containerized application services

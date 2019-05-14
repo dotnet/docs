@@ -1,8 +1,6 @@
 ---
 title: Architecting container and microservice-based applications
 description: Architecting container and microservice-based applications is no small feat and shouldn't be taken lightly. Learn the core concepts in this chapter.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Architecting container and microservice-based applications

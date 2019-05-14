@@ -1,8 +1,6 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistance.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Use NoSQL databases as a persistence infrastructure

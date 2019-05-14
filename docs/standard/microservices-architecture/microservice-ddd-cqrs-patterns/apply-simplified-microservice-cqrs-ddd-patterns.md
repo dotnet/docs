@@ -1,8 +1,6 @@
 ---
 title: Applying simplified CQRS and DDD patterns in a microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the overall relation between CQRS and DDD patterns.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Apply simplified CQRS and DDD patterns in a microservice

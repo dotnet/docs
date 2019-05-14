@@ -1,8 +1,6 @@
 ---
 title: State and data in Docker applications
 description: Learn the available option to save state in containerized applications.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # State and data in Docker applications

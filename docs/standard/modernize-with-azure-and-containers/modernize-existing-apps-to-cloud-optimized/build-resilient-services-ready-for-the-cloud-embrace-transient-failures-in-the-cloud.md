@@ -1,8 +1,6 @@
 ---
 title: Build resilient services ready for the cloud. Embrace transient failures in the cloud
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Build resilient services ready for the cloud. Embrace transient failures in the cloud
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud

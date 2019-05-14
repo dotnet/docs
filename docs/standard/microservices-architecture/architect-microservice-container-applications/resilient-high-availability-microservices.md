@@ -1,8 +1,6 @@
 ---
 title: Resiliency and high availability in microservices
 description: Microservices have to be designed to withstand transient network and dependencies failures they must be resilient to achieve high availability.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Resiliency and high availability in microservices

@@ -1,8 +1,6 @@
 ---
 title: Challenges and solutions for distributed data management
 description: Learn what are the challenges and solutions for distributed data management in the microservices world.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Challenges and solutions for distributed data management

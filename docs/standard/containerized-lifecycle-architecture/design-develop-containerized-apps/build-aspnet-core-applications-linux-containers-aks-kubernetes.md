@@ -1,8 +1,6 @@
 ---
 title: Build ASP.NET Core 2.2 applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/25/2019
 ---
 # Build ASP.NET Core 2.2 applications deployed as Linux containers into an AKS/Kubernetes orchestrator

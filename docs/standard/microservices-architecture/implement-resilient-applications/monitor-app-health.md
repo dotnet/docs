@@ -1,8 +1,6 @@
 ---
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 01/07/2019
 ---
 # Health monitoring

@@ -64,7 +64,7 @@ Before you start, make sure you have the following:
 
 ## Deploy to Azure HDInsight Spark
 
-[Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) is the Microsoft implementation of Apache Spark in the cloud that allows users to launch and configure Spark clusters in Azure. You can use HDInsight Spark clusters to process your data stored in [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) or [Azure Data Lake Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction).
+[Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) is the Microsoft implementation of Apache Spark in the cloud that allows users to launch and configure Spark clusters in Azure. You can use HDInsight Spark clusters to process your data stored in [Azure Storage](https://azure.microsoft.com/services/storage/) or [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
 > [!NOTE]
 > Azure HDInsight Spark is Linux-based. If you are interested in deploying your app to Azure HDInsight Spark, make sure your app is .NET Standard compatible and that you use the [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
@@ -73,7 +73,7 @@ Before you start, make sure you have the following:
 
 This step is only required once for your cluster.
 
-Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
+Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
 |Setting|Value|
 |-------|-----|
@@ -106,7 +106,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 ### Use Apache Livy
 
-You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark REST API, to submit .NET for Apache Spark jobs to an Azure HDInsight Spark cluster. For more information, see [Remote jobs with Apache Livy](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-livy-rest-interface).
+You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark REST API, to submit .NET for Apache Spark jobs to an Azure HDInsight Spark cluster. For more information, see [Remote jobs with Apache Livy](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-livy-rest-interface).
 
 You can run the following command on Linux using `curl`:
 

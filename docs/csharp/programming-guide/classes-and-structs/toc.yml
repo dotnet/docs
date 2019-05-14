@@ -6,9 +6,11 @@
   - name: Objects
     href: objects.md
   - name: Structs
-    href: structs.md
-  - name: Using Structs
-    href: using-structs.md
+    items:
+    - name: Overview
+      href: structs.md
+    - name: Using Structs
+      href: using-structs.md
   - name: Inheritance
     href: inheritance.md
   - name: Polymorphism
@@ -23,20 +25,20 @@
       href: how-to-override-the-tostring-method.md
   - name: Members
     items:
+    - name: Members overview
+      href: members.md
     - name: Abstract and Sealed Classes and Class Members
       href: abstract-and-sealed-classes-and-class-members.md
-    - name: "How to: Define Abstract Properties"
-      href: how-to-define-abstract-properties.md
     - name: Static Classes and Static Class Members
       href: static-classes-and-static-class-members.md
-    - name: Members
-      href: members.md
     - name: Access Modifiers
       href: access-modifiers.md
     - name: Fields
       href: fields.md
     - name: Constants
       href: constants.md
+    - name: "How to: Define Abstract Properties"
+      href: how-to-define-abstract-properties.md
     - name: "How to: Define Constants in C#"
       href: how-to-define-constants.md
   - name: Properties

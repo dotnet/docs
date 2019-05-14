@@ -327,7 +327,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Data.Common.DbException">The connection-level error that occurred while opening the connection.</exception>
         <altmember cref="M:System.Data.Common.DbConnection.Open" />
         <related type="Article" href="https://msdn.microsoft.com/library/955c057f-aea8-4ba8-aa6d-e3dfa18ba8d5">Connection Pooling (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>

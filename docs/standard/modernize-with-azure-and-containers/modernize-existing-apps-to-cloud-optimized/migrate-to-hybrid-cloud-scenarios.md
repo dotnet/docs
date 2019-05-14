@@ -1,8 +1,6 @@
 ---
 title: Migrate to hybrid cloud scenarios
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Migrate to hybrid cloud scenarios
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # Migrate to hybrid cloud scenarios

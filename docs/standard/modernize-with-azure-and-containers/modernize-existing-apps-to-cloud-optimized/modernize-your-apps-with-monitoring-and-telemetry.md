@@ -1,8 +1,6 @@
 ---
 title: Modernize your apps with monitoring and telemetry
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Modernize your apps with monitoring and telemetry
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # Modernize your apps with monitoring and telemetry

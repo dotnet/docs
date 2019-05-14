@@ -1,8 +1,6 @@
 ---
 title: Subscribing to events
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the details of publishing and subscription to integration events.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/02/2018
 ---
 

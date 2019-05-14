@@ -1,8 +1,6 @@
 ---
 title: SOA applications
 description: Bear in mind that containers can also be a useful deployment option for SOA applications.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Service-oriented applications

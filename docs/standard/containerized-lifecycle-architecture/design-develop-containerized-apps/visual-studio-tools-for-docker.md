@@ -1,8 +1,6 @@
 ---
 title: Visual Studio Tools for Docker on Windows
 description: Get to know the Docker tools available in Visual Studio 2017 version 15.7 and later.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ms.custom: vs-dotnet
 ---

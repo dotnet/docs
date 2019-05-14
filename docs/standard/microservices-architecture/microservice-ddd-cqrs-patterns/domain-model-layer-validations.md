@@ -1,8 +1,6 @@
 ---
 title: Designing validations in the domain model layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand key concepts of domain model validations.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 

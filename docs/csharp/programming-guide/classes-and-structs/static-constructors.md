@@ -16,7 +16,7 @@ A static constructor is used to initialize any [static](../../../csharp/language
   
 - A static constructor does not take access modifiers or have parameters.  
   
-- A static constructor is called automatically to initialize the [class](../../../csharp/language-reference/keywords/class.md) before the first instance is created or any static members are referenced.  
+- A static constructor is called automatically to initialize the [class](../../../csharp/language-reference/keywords/class.md) before the first instance is created or any static members are referenced. Note that a type's static constructor is called when a static method assigned to an event or a delegate is invoked and not when it is assigned.
   
 - A static constructor cannot be called directly.  
   

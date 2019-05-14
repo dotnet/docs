@@ -4142,15 +4142,16 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> exposes the Win32 [GetLastError](https://go.microsoft.com/fwlink/?LinkId=148657) function from Kernel32.DLL. This method exists because it is not safe to make a direct platform invoke call to `GetLastError` to obtain this information. If you want to access this error code, you must call <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> instead of writing your own platform invoke definition for `GetLastError` and calling it. The common language runtime can make internal calls to APIs that overwrite the `GetLastError` maintained by the operating system.  
+## Remarks
+
+On Windows systems, <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> exposes the Win32 [GetLastError](/windows/desktop/ms679360) function from Kernel32.DLL. This method exists because it is not reliable to make a direct platform invoke call to `GetLastError` to obtain this information. If you want to access this error code, you must call <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> instead of writing your own platform invoke definition for `GetLastError` and calling it. The common language runtime can make internal calls to APIs that overwrite the `GetLastError` maintained by the operating system.  
+
+You can use this method to obtain error codes only if you apply the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType> to the method signature and set the <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError?displayProperty=nameWithType> field to`true`. The process for this varies depending upon the source language used: C# and C++ are `false` by default, but the `Declare` statement in Visual Basic is `true`.  
   
- You can use this method to obtain error codes only if you apply the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType> to the method signature and set the <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> field to`true`. The process for this varies depending upon the source language used: C# and C++ are `false` by default, but the `Declare` statement in Visual Basic is `true`.  
-  
-   
-  
+There is a difference in the behavior of the `GetLastWin32Error` method on .NET Core and .NET Framework when <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError?displayProperty=nameWithType> is `true`. On .NET Framework, the `GetLastWin32Error` method can retain error information from one P/Invoke call to the next. On .NET Core, error information is cleared before P/Invoke call, and the `GetLastWin32Error` represents only error information from the last method call.
+
 ## Examples  
- The following example demonstrates calling the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method. The example first demonstrates calling the method with no error present and then demonstrates calling the method with an error present.  
+ The following example calls the `GetLastWin32Error` method. The example first demonstrates calling the method with no error present and then demonstrates calling the method with an error present.  
   
  [!code-csharp[Runtime.InteropServices.Marshal.GetLastWin32Error#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.InteropServices.Marshal.GetLastWin32Error/cs/example.cs#1)]
  [!code-vb[Runtime.InteropServices.Marshal.GetLastWin32Error#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.InteropServices.Marshal.GetLastWin32Error/vb/example.vb#1)]  

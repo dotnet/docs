@@ -14,7 +14,7 @@ Automated machine learning (AutoML) automates the process of applying machine le
 
 ## Load data
 
-Automated machine learning supports loading a dataset into an [IDataView](https://docs.microsoft.com/dotnet/api/microsoft.ml.idataview?view=ml-dotnet). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.
+Automated machine learning supports loading a dataset into an [IDataView](xref:Microsoft.ML.IDataView). Data can be in the form of tab-separated value (TSV) files and comma separated value (CSV) files.
 
 Example:
 
@@ -56,7 +56,7 @@ Create experiment settings for the determined ML task type:
 
 ## Configure experiment settings
 
-Experiments are highly configurable. See the [AutoML API docs](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl) for a full list of configuration settings.
+Experiments are highly configurable. See the AutoML API docs <xref:Microsoft.ML.AutoML> for a full list of configuration settings.
 
 Some examples include:
 
@@ -99,9 +99,9 @@ Some examples include:
     ```
 
 The list of supported trainers per ML task can be found at the corresponding link below:
-* [Supported Binary Classification Algorithms](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.automl.binaryclassificationtrainer?view=automl-dotnet)
-* [Supported Multiclass Classification Algorithms](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.automl.multiclassclassificationtrainer?view=automl-dotnet)
-* [Supported Regression Algorithms](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.automl.regressiontrainer?view=automl-dotnet)
+* [Supported Binary Classification Algorithms](xref:ML.AutoML.BinaryClassificationTrainer)
+* [Supported Multiclass Classification Algorithms](xref:Microsoft.ML.AutoML.MultiClassClassificationTrainer)
+* [Supported Regression Algorithms](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.automl.regressiontrainer)
 
 ## Optimizing metric
 

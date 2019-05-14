@@ -75,7 +75,7 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
 <a name="HostApp"></a>   
 ## Implementing the Host Application  
- With the host-side adapter and host view created, the host application can use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model to open the pipeline and acquire a host view of the add-in. These steps are shown in the following code.  
+ With the host-side adapter and host view created, the host application can use the .NET Framework add-in model to open the pipeline and acquire a host view of the add-in. These steps are shown in the following code.  
 
  The host application uses typical .NET Framework add-in model code to activate the add-in, which implicitly returns the host view to the host application. The host application subsequently displays the host view (which is a <xref:System.Windows.Controls.UserControl>) from a <xref:System.Windows.Controls.Grid>.  
   

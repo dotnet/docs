@@ -11,9 +11,9 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to Windows 
   
  You would not usually interact with the <xref:System.ServiceModel.Channels.Message> class directly. Instead, WCF service model constructs, such as data contracts, message contracts, and operation contracts, are used to describe incoming and outgoing messages. However, in some advanced scenarios you can program using the <xref:System.ServiceModel.Channels.Message> class directly. For example, you might want to use the <xref:System.ServiceModel.Channels.Message> class:  
   
-- When you need an alternative way of creating outgoing message contents (for example, creating a message directly from a file on disk) instead of serializing [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
+- When you need an alternative way of creating outgoing message contents (for example, creating a message directly from a file on disk) instead of serializing .NET Framework objects.  
   
-- When you need an alternative way of using incoming message contents (for example, when you want to apply an XSLT transformation to the raw XML contents) instead of deserializing into [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] objects.  
+- When you need an alternative way of using incoming message contents (for example, when you want to apply an XSLT transformation to the raw XML contents) instead of deserializing into .NET Framework objects.  
   
 - When you need to deal with messages in a general way regardless of message contents (for example, when routing or forwarding messages when building a router, load-balancer, or a publish-subscribe system).  
   

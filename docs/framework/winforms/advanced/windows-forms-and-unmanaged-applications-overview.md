@@ -41,7 +41,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  An application's message loop is an internal program loop that retrieves messages from a thread's message queue, translates them, and then sends them to the application to be handled. The message loop for a Windows Form does not have the same architecture as message loops that earlier applications, such as Visual Basic 6.0 applications and MFC applications, provide. The window messages that are posted to the message loop may be handled differently than the Windows Form expects. Therefore, unexpected behavior may occur. Some keystroke combinations may not work, some mouse activity may not work, or some events may not be raised as expected.  
   
 ## Resolving Interoperability Issues  
- You can resolve these problems by displaying the form on a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
+ You can resolve these problems by displaying the form on a .NET Framework message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
   
  To make a Windows Form work correctly from a COM client application, you must run it on a Windows Forms message loop. To do this, use one of the following approaches:  
   

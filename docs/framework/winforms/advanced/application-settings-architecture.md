@@ -38,7 +38,7 @@ This topic describes how the Application Settings architecture works, and explor
 ## Settings Persistence  
  The <xref:System.Configuration.ApplicationSettingsBase> class does not itself persist or load settings; this job falls to the settings provider, a class that derives from <xref:System.Configuration.SettingsProvider>. If a derived class of <xref:System.Configuration.ApplicationSettingsBase> does not specify a settings provider through the <xref:System.Configuration.SettingsProviderAttribute>, then the default provider, <xref:System.Configuration.LocalFileSettingsProvider>, is used.  
   
- The configuration system that was originally released with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] supports providing static application configuration data through either the local computer's machine.config file or within an `app.`exe.config file that you deploy with your application. The <xref:System.Configuration.LocalFileSettingsProvider> class expands this native support in the following ways:  
+ The configuration system that was originally released with the .NET Framework supports providing static application configuration data through either the local computer's machine.config file or within an `app.`exe.config file that you deploy with your application. The <xref:System.Configuration.LocalFileSettingsProvider> class expands this native support in the following ways:  
   
 - Application-scoped settings can be stored in either the machine.config or `app.`exe.config files. Machine.config is always read-only, while `app`.exe.config is restricted by security considerations to read-only for most applications.  
   

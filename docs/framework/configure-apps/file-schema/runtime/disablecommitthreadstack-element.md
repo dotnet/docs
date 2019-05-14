@@ -47,7 +47,7 @@ Specifies whether the full thread stack is committed when a thread is started.
   
 |Element|Description|  
 |-------------|-----------------|  
-|`configuration`|The root element in every configuration file used by the common language runtime and [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] applications.|  
+|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  

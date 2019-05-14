@@ -75,8 +75,6 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
   
 - References to the System, System.Data, System.Drawing, System.Windows.Forms, and System.XML assemblies.  
   
- For information about how to build this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
-  
 ## See also
 
 - [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](multiple-controls-bound-to-data-source-synchronized.md)

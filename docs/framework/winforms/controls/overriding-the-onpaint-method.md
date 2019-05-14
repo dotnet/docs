@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: e9ca2723-0107-4540-bb21-4f5ffb4a9906
 ---
 # Overriding the OnPaint Method
-The basic steps for overriding any event defined in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] are identical and are summarized in the following list.  
+The basic steps for overriding any event defined in the .NET Framework are identical and are summarized in the following list.  
   
 #### To override an inherited event  
   

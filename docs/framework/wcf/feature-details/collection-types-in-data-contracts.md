@@ -11,9 +11,9 @@ helpviewer_keywords:
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
 ---
 # Collection Types in Data Contracts
-A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.  
+A *collection* is a list of items of a certain type. In the .NET Framework, such lists can be represented using arrays or a variety of other types (Generic List, Generic <xref:System.ComponentModel.BindingList%601>, <xref:System.Collections.Specialized.StringCollection>, or <xref:System.Collections.ArrayList>). For example, a collection may hold a list of Addresses for a given Customer. These collections are called *list collections*, regardless of their actual type.  
   
- A special form of collection exists that represents an association between one item (the "key") and another (the "value"). In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], these are represented by types such as <xref:System.Collections.Hashtable> and the generic dictionary. For example, an association collection may map a city ("key") to its population ("value"). These collections are called *dictionary collections*, regardless of their actual type.  
+ A special form of collection exists that represents an association between one item (the "key") and another (the "value"). In the .NET Framework, these are represented by types such as <xref:System.Collections.Hashtable> and the generic dictionary. For example, an association collection may map a city ("key") to its population ("value"). These collections are called *dictionary collections*, regardless of their actual type.  
   
  Collections receive special treatment in the data contract model.  
   

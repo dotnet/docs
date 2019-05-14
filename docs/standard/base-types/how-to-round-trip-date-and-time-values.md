@@ -89,8 +89,6 @@ In many applications, a date and time value is intended to unambiguously identif
   
     - <xref:System.Runtime.Serialization.Formatters.Binary?displayProperty=nameWithType>.  
   
-- A reference to System.Core.dll.  
-  
 - Each code example, other than the `DateInTimeZone` class, should be included in a class or Visual Basic module, wrapped in methods, and called from the `Main` method.  
   
 ## See also

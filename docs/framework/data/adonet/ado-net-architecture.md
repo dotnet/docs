@@ -7,7 +7,7 @@ ms.assetid: fcd45b99-ae8f-45ab-8b97-d887beda734e
 Data processing has traditionally relied primarily on a connection-based, two-tier model. As data processing increasingly uses multi-tier architectures, programmers are switching to a disconnected approach to provide better scalability for their applications.  
   
 ## ADO.NET Components  
- The two main components of [!INCLUDE[ado_orcas_long](../../../../includes/ado-orcas-long-md.md)] for accessing and manipulating data are the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers and the <xref:System.Data.DataSet>.  
+ The two main components of [!INCLUDE[ado_orcas_long](../../../../includes/ado-orcas-long-md.md)] for accessing and manipulating data are the .NET Framework data providers and the <xref:System.Data.DataSet>.  
   
 ### .NET Framework Data Providers  
  The .NET Framework Data Providers are components that have been explicitly designed for data manipulation and fast, forward-only, read-only access to data. The `Connection` object provides connectivity to a data source. The `Command` object enables access to database commands to return data, modify data, run stored procedures, and send or retrieve parameter information. The `DataReader` provides a high-performance stream of data from the data source. Finally, the `DataAdapter` provides the bridge between the `DataSet` object and the data source. The `DataAdapter` uses `Command` objects to execute SQL commands at the data source to both load the `DataSet` with data and reconcile changes that were made to the data in the `DataSet` back to the data source. For more information, see [.NET Framework Data Providers](../../../../docs/framework/data/adonet/data-providers.md) and [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md).  
@@ -15,7 +15,7 @@ Data processing has traditionally relied primarily on a connection-based, two-ti
 ### The DataSet  
  The ADO.NET `DataSet` is explicitly designed for data access independent of any data source. As a result, it can be used with multiple and differing data sources, used with XML data, or used to manage data local to the application. The `DataSet` contains a collection of one or more <xref:System.Data.DataTable> objects consisting of rows and columns of data, and also primary key, foreign key, constraint, and relation information about the data in the `DataTable` objects. For more information, see [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md).  
   
- The following diagram illustrates the relationship between a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider and a `DataSet`.  
+ The following diagram illustrates the relationship between a .NET Framework data provider and a `DataSet`.  
   
  ![ADO.Net graphic](../../../../docs/framework/data/adonet/media/ado-1-bpuedev11.png "ado_1_bpuedev11")  
 ADO.NET architecture  
@@ -46,9 +46,9 @@ ADO.NET architecture
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] is used to deploy data services on the Web or an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md).  
   
 ## XML and ADO.NET  
- [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] leverages the power of XML to provide disconnected access to data. [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] was designed hand-in-hand with the XML classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]; both are components of a single architecture.  
+ [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] leverages the power of XML to provide disconnected access to data. [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] was designed hand-in-hand with the XML classes in the .NET Framework; both are components of a single architecture.  
   
- [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] and the XML classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] converge in the `DataSet` object. The `DataSet` can be populated with data from an XML source, whether it is a file or an XML stream. The `DataSet` can be written as World-Wide Web Consortium (W3C) compliant XML that includes its schema as XML schema definition language (XSD) schema, regardless of the source of the data in the `DataSet`. Because of the native serialization format of the `DataSet` is XML, it is an excellent medium for moving data between tiers, making the `DataSet` an optimal choice for remoting data and schema context to and from an XML Web service. For more information, see [XML Documents and Data](../../../../docs/standard/data/xml/index.md).  
+ [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] and the XML classes in the .NET Framework converge in the `DataSet` object. The `DataSet` can be populated with data from an XML source, whether it is a file or an XML stream. The `DataSet` can be written as World-Wide Web Consortium (W3C) compliant XML that includes its schema as XML schema definition language (XSD) schema, regardless of the source of the data in the `DataSet`. Because of the native serialization format of the `DataSet` is XML, it is an excellent medium for moving data between tiers, making the `DataSet` an optimal choice for remoting data and schema context to and from an XML Web service. For more information, see [XML Documents and Data](../../../../docs/standard/data/xml/index.md).  
   
 ## See also
 

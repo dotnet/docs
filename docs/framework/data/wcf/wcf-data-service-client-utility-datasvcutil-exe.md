@@ -19,7 +19,7 @@ DataSvcUtil.exe is a command-line tool provided by WCF Data Services that consum
 
 For more information, see [How to: Manually Generate Client Data Service Classes](../../../../docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md).
 
-The DataSvcUtil.exe tool is installed in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] directory. In many cases, this is located in *C:\Windows\Microsoft.NET\Framework\v4.0*. For 64-bit systems, this is located in *C:\Windows\Microsoft.NET\Framework64\v4.0*. You can also access the DataSvcUtil.exe tool from Developer Command Prompt for Visual Studio.
+The DataSvcUtil.exe tool is installed in the .NET Framework directory. In many cases, this is located in *C:\Windows\Microsoft.NET\Framework\v4.0*. For 64-bit systems, this is located in *C:\Windows\Microsoft.NET\Framework64\v4.0*. You can also access the DataSvcUtil.exe tool from Developer Command Prompt for Visual Studio.
 
 ## Syntax
 

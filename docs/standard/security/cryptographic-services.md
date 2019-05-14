@@ -107,7 +107,7 @@ The disadvantage of secret-key encryption is that it presumes two parties have a
 
 Assuming that Alice and Bob are two parties who want to communicate over a nonsecure channel, they might use secret-key encryption as follows: Alice and Bob agree to use one particular algorithm (AES, for example) with a particular key and IV. Alice composes a message and creates a network stream (perhaps a named pipe or network email) on which to send the message. Next, she encrypts the text using the key and IV, and sends the encrypted message and IV to Bob over the intranet. Bob receives the encrypted text and decrypts it by using the IV and previously agreed upon key. If the transmission is intercepted, the interceptor cannot recover the original message, because he does not know the key. In this scenario, only the key must remain secret. In a real world scenario, either Alice or Bob generates a secret key and uses public-key (asymmetric) encryption to transfer the secret (symmetric) key to the other party. For more information about public-key encryption, see the next section.
 
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the following classes that implement secret-key encryption algorithms:
+The .NET Framework provides the following classes that implement secret-key encryption algorithms:
 
 - <xref:System.Security.Cryptography.AesManaged> (introduced in the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]).
 
@@ -149,7 +149,7 @@ The following list offers comparisons between public-key and secret-key cryptogr
 
 - Public-key algorithms are very slow compared with secret-key algorithms, and are not designed to encrypt large amounts of data. Public-key algorithms are useful only for transferring very small amounts of data. Typically, public-key encryption is used to encrypt a key and IV to be used by a secret-key algorithm. After the key and IV are transferred, secret-key encryption is used for the remainder of the session.
 
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the following classes that implement public-key encryption algorithms:
+The .NET Framework provides the following classes that implement public-key encryption algorithms:
 
 - <xref:System.Security.Cryptography.DSACryptoServiceProvider>
 
@@ -180,7 +180,7 @@ To use public-key cryptography to digitally sign a message, Alice first applies 
 > [!NOTE]
 > A signature can be verified by anyone because the sender's public key is common knowledge and is typically included in the digital signature format. This method does not retain the secrecy of the message; for the message to be secret, it must also be encrypted.
 
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the following classes that implement digital signature algorithms:
+The .NET Framework provides the following classes that implement digital signature algorithms:
 
 - <xref:System.Security.Cryptography.DSACryptoServiceProvider>
 
@@ -218,7 +218,7 @@ Two parties (Alice and Bob) could use a hash function to ensure message integrit
 
 None of the previous methods will prevent someone from reading Alice's messages, because they are transmitted in plaintext. Full security typically requires digital signatures (message signing) and encryption.
 
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the following classes that implement hashing algorithms:
+The .NET Framework provides the following classes that implement hashing algorithms:
 
 - <xref:System.Security.Cryptography.HMACSHA1>.
 
@@ -251,7 +251,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the fo
 
 ## Random Number Generation
 
-Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] use random number generators to generate cryptographic keys.
+Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in the .NET Framework use random number generators to generate cryptographic keys.
 
 The <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class is an implementation of a random number generator algorithm.
 

@@ -22,7 +22,7 @@ Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].
 
 ## Remarks
 
-The `-netcf` option causes the Visual Basic compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)] rather than the full [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Language functionality that is present only in the full [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] is disabled.
+The `-netcf` option causes the Visual Basic compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)] rather than the full .NET Framework. Language functionality that is present only in the full .NET Framework is disabled.
 
 The `-netcf` option is designed to be used with [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md). The language features disabled by `-netcf` are the same language features not present in the files targeted with `-sdkpath`.
 

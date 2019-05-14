@@ -33,7 +33,7 @@ The following types do not have reasonable counterparts.
   - **TimeSpan**. This type represents the difference between two `DateTime` values and does not correspond to the `timestamp` of SQL Server. The CLR <xref:System.TimeSpan?displayProperty=nameWithType> may also map to the SQL Server `TIME` type in some cases. The SQL Server `TIME` type was only intended to represent positive values less than 24 hours. The CLR <xref:System.TimeSpan> has a much larger range.
 
   > [!NOTE]
-  > SQL Server-specific [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] types in <xref:System.Data.SqlTypes> are not included in this comparison.
+  > SQL Server-specific .NET Framework types in <xref:System.Data.SqlTypes> are not included in this comparison.
 
 - Mismatches in SQL Server:
 
@@ -161,7 +161,7 @@ Operators and functions that are essentially comparable have subtly different se
 
   - A loose translation to `AND`/`OR` operators could cause unexpected errors if the C# expression relies on evaluation the second operand being based on the result of the evaluation of the first operand.
 
-- `Round()` function has different semantics in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] and in T-SQL.
+- `Round()` function has different semantics in .NET Framework and in T-SQL.
 
 - Starting index for strings is 0 in the CLR but 1 in SQL. Therefore, any function that has index needs index translation.
 
@@ -188,7 +188,7 @@ Operators and functions that are essentially comparable have subtly different se
 [!code-csharp[DLinqMismatch#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqMismatch/cs/Program.cs#5)]
 [!code-vb[DLinqMismatch#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqMismatch/vb/Module1.vb#5)]
 
-- SQL performs symmetric arithmetic rounding while [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] uses banker’s rounding. See Knowledgebase article 196652 for additional details.
+- SQL performs symmetric arithmetic rounding while .NET Framework uses banker’s rounding. See Knowledgebase article 196652 for additional details.
 
 - By default, for common locales, character-string comparisons are case-insensitive in SQL. In Visual Basic and in C#, they are case-sensitive. For example, `s == "Food"` (`s = "Food"` in Visual Basic) and `s == "Food"` can yield different results if `s` is `food`.
 

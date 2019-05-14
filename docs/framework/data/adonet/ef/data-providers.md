@@ -8,10 +8,10 @@ This section provides information on data providers that support the [!INCLUDE[a
   
 ## In This Section  
  [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)  
- Describes the EntityClient data provider. This provider transforms queries against a data model into a canonical command tree. The command tree can then be consumed by a [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider for the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
+ Describes the EntityClient data provider. This provider transforms queries against a data model into a canonical command tree. The command tree can then be consumed by a .NET Framework data provider for the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
  [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)  
- Describes the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider that supports the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for use with a SQL Server database.  
+ Describes the .NET Framework data provider that supports the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for use with a SQL Server database.  
   
 ## Related Sections  
  [Entity Framework (SQL Server Compact)](https://go.microsoft.com/fwlink/?LinkId=135638)  

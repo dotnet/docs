@@ -42,7 +42,6 @@ p--;
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/how-to-obtain-the-value-of-a-pointer-variable.md)
 - [C# Operators](../../../csharp/language-reference/operators/index.md)
 - [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/how-to-increment-and-decrement-pointers.md)
 - [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)

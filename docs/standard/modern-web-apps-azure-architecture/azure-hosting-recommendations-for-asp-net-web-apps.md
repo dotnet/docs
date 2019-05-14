@@ -53,7 +53,6 @@ Web App for Containers from Azure App Service lets you bring your own Docker for
 
 If you have an existing application that would require substantial modifications to run in App Service, you could choose Virtual Machines in order to simplify migrating to the cloud. However, correctly configuring, securing, and maintaining VMs requires much more time and IT expertise compared to Azure App Service. If you're considering Azure Virtual Machines, make sure you take into account the ongoing maintenance effort required to patch, update, and manage your VM environment. Azure Virtual Machines is infrastructure as a service (IaaS), while App Service is PaaS. You should also consider whether deploying your app as a Windows Container to Web App for Containers might be a viable option for your scenario.
 
-
 ## Logical processes
 
 Individual logical processes that can be decoupled from the rest of the application may be deployed independently to Azure Functions in a "serverless" manner. Azure Functions lets you just write the code you need for a given problem, without worrying about the application or infrastructure to run it. You can choose from a variety of programming languages, including C\#, F\#, Node.js, Python, and PHP, allowing you to pick the most productive language for the task at hand. Like most cloud-based solutions, you pay only for the amount of time your use, and you can trust Azure Functions to scale up as needed.
@@ -89,14 +88,11 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 - Web Apps overview\
   <https://docs.microsoft.com/azure/app-service/app-service-web-overview>
 
-<<<<<<< HEAD
-=======
 - Web App for Containers\
   <https://azure.microsoft.com/en-us/services/app-service/containers/>
 
 - Introduction to Azure Kubernetes Service (AKS)\
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>
 
->>>>>>> f6b92cc07d548b00b494e0c688740a16ea97c8d0
 >[!div class="step-by-step"]
 >[Previous](development-process-for-azure.md)

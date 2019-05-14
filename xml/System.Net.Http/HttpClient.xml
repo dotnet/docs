@@ -2174,6 +2174,15 @@ public class GoodController : ApiController
   
  The same timeout will apply for all requests using this <xref:System.Net.Http.HttpClient> instance.  You may also set different timeouts for individual requests using a <xref:System.Threading.CancellationTokenSource> on a task. Note that only the shorter of the two timeouts will apply.  
   
+ ## Example
+ 
+ The following example sets the `Timeout` property.
+  
+```csharp
+HttpClient httpClient = new HttpClient();
+httpClient.Timeout = TimeSpan.FromMinutes(10);
+```
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than or equal to zero and is not <see cref="F:System.Threading.Timeout.InfiniteTimeSpan" />.</exception>

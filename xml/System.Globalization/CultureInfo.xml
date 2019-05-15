@@ -60,6 +60,7 @@
  [Invariant, neutral, and specific cultures](#Invariant)   
  [Custom cultures](#Custom)   
  [Dynamic culture data](#Dynamic)   
+ [CultureInfo and cultural data](#cultureinfo-and-cultural-data)
  [The current culture and current UI culture](#Current)   
  [Getting all cultures](#GetAll)   
  [Culture and threads](#Threads)   
@@ -69,7 +70,7 @@
  [Control Panel overrides](#CPanel)   
  [Alternate sort orders](#AlternateSort)   
  [Culture and Windows apps](#Windows)  
-  
+
 <a name="CultureNames"></a>   
 ## Culture names and identifiers  
  The <xref:System.Globalization.CultureInfo> class specifies a unique name for each culture, based on RFC 4646. The name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an ISO 3166 two-letter uppercase subculture code associated with a country or region. In addition, for apps that target [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] or later and are running under Windows 10 or later, culture names that correspond to valid BCP-47 language tags are supported.  
@@ -142,7 +143,27 @@
 -   Remember that custom cultures override default values. Therefore, you cannot consider culture data to be stable. Country names, number and date formats, and spellings may change in the future. If you want to serialize culture-sensitive data such as date and time strings to be passed to the date and time parsing functions, you should use the invariant culture or a specific .  
   
  The <xref:System.Globalization.CultureInfo.CultureTypes%2A> property value of custom cultures installed on a system includes the <xref:System.Globalization.CultureTypes?displayProperty=nameWithType> flag, and custom cultures are assigned an <xref:System.Globalization.CultureInfo.LCID%2A> property value of `LOCALE_CUSTOM_UNSPECIFIED` (0x1000, or 4096). Note that, starting with Windows 10, this value is also assigned to system-defined cultures that lack complete cultural data.  
-  
+
+## CultureInfo and cultural data
+
+.NET derives its cultural data from a one of a variety of sources, depending on implementation, platform, and version:
+
+- In .NET Framework 3.5 and earlier versions, cultural data is provided by both the Windows operating system and the .NET Framework.
+
+- In .NET Framework 4 and later versions, cultural data is provided by the Windows operating system.
+
+- In all versions of .NET Core running on Windows, cultural data is provided by the Windows operating system.
+
+- In all versions of .NET Core running on Unix platforms, cultural data is provided by the [International Components for Unicode (ICU) Library](http://site.icu-project.org/). The specific version of the ICU Library depends on the individual operating system.
+
+Because of this, a culture available on a particular .NET implementation, platform, or version may not be available on a different .NET implementation, platform, or version.
+
+Some `CultureInfo` objects differ depending on the underlying platform. In particular, "zh-CN", or Chinese (Simplified, China) and zh-TW, or Chinese (Traditional, Taiwan), are available cultures on Windows systems, but they are aliased cultures on Unix systems. "zh-CN" is an alias for the "zh-Hans-CN" culture, and "zh-TW" is an alias for the "zh-Hant-TW" culture. Aliased cultures are not returned by calls to the <xref:System.Globalization.CultureInfo.GetCultures%2A> method and may have different property values, including different <xref:System.Globalization.CultureInfo.Parent> cultures, than their Windows counterparts. For the zh-CN and zh-TW cultures, these differenes include the following:
+
+- On Windows systems, the parent culture of the "zh-CN" culture is "zh-Hans", and the parent culture of the "zh-TW" culture is "zh-Hant". The parent culture of both these cultures is "zh". On Unix systems, the parents of both cultures are "zh". This means that, if you don't provide culture-specific resources for the "zh-CN" or "zh-TW" cultures but do provide a resources for the neutral "zh-Hans" or "zh-Hant" culture, your application will load the resources for the neutral culture on Windows but not on Unix. On Unix systems, you must explicitly set the thread's <xref:System.Globalization.CultureInfo.CurrentUICulture> to either "zh-Hans" or "zh-Hant". 
+
+- On Windows systems, calling <xref:System.Globalization.CultureInfo.Equals%2A?displayProperty=nameWithType> on an instance that represents the "zh-CN" culture and passing it a "zh-Hans-CN" instance returns `true`. On Unix systems, the method call returns `false`. This behavior also applies to calling <xref:System.Globalization.CultureInfo.Equals%2A> on a "zh-TW" <xref:System.Globalization.CultureInfo> instance and passing it a "zh-Hant-Tw" instance.
+
 <a name="Dynamic"></a>   
 ## Dynamic culture data  
  Except for the invariant culture, culture data is dynamic. This is true even for the predefined cultures. For example, countries or regions adopt new currencies, change their spellings of words, or change their preferred calendar, and culture definitions change to track this.  Custom cultures are subject to change without notice, and any specific culture might be overridden by a custom replacement culture. Also, as discussed below, an individual user can override cultural preferences. Applications should always obtain culture data at run time.  
@@ -152,7 +173,7 @@
   
 <a name="Current"></a>   
 ## The current culture and current UI culture  
- Every thread in a .NET Framework application has a current culture and a current UI culture. The current culture determines the formatting conventions for dates, times, numbers, and currency values, the sort order of text, casing conventions, and the ways in which strings are compared. The current UI culture is used to retrieve culture-specific resources at runtime.  
+ Every thread in a .NET application has a current culture and a current UI culture. The current culture determines the formatting conventions for dates, times, numbers, and currency values, the sort order of text, casing conventions, and the ways in which strings are compared. The current UI culture is used to retrieve culture-specific resources at runtime.  
   
 > [!NOTE]
 >  For information on how the current and current UI culture is determined on a per-thread basis, see the  [Culture and threads](#Threads) section. For information on how the current and current UI culture is determined on threads executing in a new application domain, and on threads that cross application domain boundaries, see the [Culture and application domains](#AppDomain) section. For information on how the current  and current is determined on  threads performing task-based asynchronous operations, see the [Culture and task-based asynchronous operations](#Async) section.  
@@ -187,7 +208,7 @@
   
 1.  Instantiate a <xref:System.Globalization.CultureInfo> object that represents that culture by calling a <xref:System.Globalization.CultureInfo> class constructor and passing it the name of the culture. The <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor instantiates a  <xref:System.Globalization.CultureInfo> object that reflects user overrides if the new culture is the same as the current Windows culture.   The <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor allows you to specify whether the newly instantiated <xref:System.Globalization.CultureInfo> object reflects user overrides if the new culture is the same as the current Windows culture.  
   
-2.  Assign the <xref:System.Globalization.CultureInfo> object to the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> property. In addition, for apps running on the version 4.6 or later of the desktop .NET Framework, you can also assign the  <xref:System.Globalization.CultureInfo> object to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property.  
+2.  Assign the <xref:System.Globalization.CultureInfo> object to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> property on .NET Core and .NET Framework 4.6 and later versions. (On .NET Framework 4.5.2 and earlier versions, youc an assign the `CultureInfo` object to the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> or <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> property.)   
   
  The following example retrieves the current culture. If it is anything other than the French (France) culture, it changes the current culture to French (France). Otherwise, it changes the current culture to French (Luxembourg).  
   
@@ -277,15 +298,15 @@
  [!code-csharp[System.Globalization.CultureInfo.Class.Async#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/cs/asyncculture4.cs#4)]
  [!code-vb[System.Globalization.CultureInfo.Class.Async#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/vb/asyncculture4.vb#4)]  
   
-<a name="Serialization"></a>   
+<a name="Serialization"></a>  
 ## CultureInfo object serialization  
  When a <xref:System.Globalization.CultureInfo> object is serialized, all that is actually stored is <xref:System.Globalization.CultureInfo.Name%2A> and <xref:System.Globalization.CultureInfo.UseUserOverride%2A>. It is successfully de-serialized only in an environment where that <xref:System.Globalization.CultureInfo.Name%2A> has the same meaning. The following three examples show why this is not always the case:  
   
--   If the <xref:System.Globalization.CultureInfo.CultureTypes%2A> property value is <xref:System.Globalization.CultureTypes?displayProperty=nameWithType>, and if that culture was first introduced in Windows Vista or a later version of the Windows operating system, it is not possible to de-serialize it on Windows XP. Similarly, if the culture was first introduced in Windows XP Service Pack 2, it is not possible to de-serialize it for a Windows XP system on which the culture has not been installed.  
+- If the <xref:System.Globalization.CultureInfo.CultureTypes%2A> property value is <xref:System.Globalization.CultureTypes.InstalledWin32Cultures?displayProperty=nameWithType>, and if that culture was first introduced in a particular version of the Windows operating system, it is not possible to deserialize it on an earlier version of Windows. For example, if a culture was introduced in Windows 10, it cannot be deserialized on Windows 8.  
   
--   If the <xref:System.Globalization.CultureInfo.CultureTypes%2A> value is <xref:System.Globalization.CultureTypes?displayProperty=nameWithType>, and the computer on which it is de-serialized does not have this user custom culture installed, it is not possible to de-serialize it.  
+-   If the <xref:System.Globalization.CultureInfo.CultureTypes%2A> value is <xref:System.Globalization.CultureTypes.UserCustomCulture?displayProperty=nameWithType>, and the computer on which it is de-serialized does not have this user custom culture installed, it is not possible to deserialize it.  
   
--   If the <xref:System.Globalization.CultureInfo.CultureTypes%2A> value is <xref:System.Globalization.CultureTypes?displayProperty=nameWithType>, and the computer on which it is de-serialized does not have this replacement culture, it de-serializes to the same name, but not all of the same characteristics. For example, if en-US is a replacement culture on computer A, but not on computer B, and if a <xref:System.Globalization.CultureInfo> object referring to this culture is serialized on computer A and de-serialized on computer B, then none of the custom characteristics of the culture are transmitted. The culture de-serializes successfully, but with a different meaning.  
+-   If the <xref:System.Globalization.CultureInfo.CultureTypes%2A> value is <xref:System.Globalization.CultureTypes.ReplacementCultures?displayProperty=nameWithType>, and the computer on which it is de-serialized does not have this replacement culture, it de-serializes to the same name, but not all of the same characteristics. For example, if en-US is a replacement culture on computer A, but not on computer B, and if a <xref:System.Globalization.CultureInfo> object referring to this culture is serialized on computer A and de-serialized on computer B, then none of the custom characteristics of the culture are transmitted. The culture deserializes successfully, but with a different meaning.  
   
 <a name="CPanel"></a>   
 ## Control Panel overrides  

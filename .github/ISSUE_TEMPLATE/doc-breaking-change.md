@@ -26,8 +26,9 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 ## Mitigations
 
----
+<!-- Do not modify anything below this line -->
 
-<!-- Do not modify this section -->
+---
+### Docs issue header
 
 - Issue type: breaking-change

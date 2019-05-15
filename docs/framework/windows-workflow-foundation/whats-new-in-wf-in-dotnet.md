@@ -121,7 +121,7 @@ Since a workflow or certain container activities (such as <xref:System.Activitie
 
 The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
-![Auto-surround with WriteLine activity](./media/whats-new-in-wf-in-dotnet/auto-surround-write-line-activity.png)
+![A WriteLine activity in the Body of a NoPersistScope activity.](./media/whats-new-in-wf-in-dotnet/auto-surround-write-line-activity.png)
 
 The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 

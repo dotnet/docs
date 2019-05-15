@@ -149,7 +149,7 @@ In order to make hierarchical workflows easier to navigate, components of a work
 
 The following screenshot of the completed workflow from the [Getting Started Tutorial](getting-started-tutorial.md) shows the outline view with a sequential workflow.
 
-![Outline view with a sequential workflow.](./media/whats-new-in-wf-in-dotnet/outline-view-in-workflow-designer.jpg)
+![Screenshot of outline view with a sequential workflow in Visual Studio.](./media/whats-new-in-wf-in-dotnet/outline-view-in-workflow-designer.jpg)
 
 ### <a name="BKMK_CSharpExpressions"></a> C# Expressions
 

@@ -28,7 +28,7 @@ To complete this quickstart, you must install the following components:
 
  [Create the Data Service](../../../../docs/framework/data/wcf/creating-the-data-service.md)
 
- Define the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, define the data model, create the data service, and enable access to resources.
+ Define the ASP.NET application, define the data model, create the data service, and enable access to resources.
 
  [Access the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)
 

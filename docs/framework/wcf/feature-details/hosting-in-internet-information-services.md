@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
 ---
 # Hosting in Internet Information Services
-One option for hosting Windows Communication Foundation (WCF) services is inside of an Internet Information Services (IIS) application. This hosting model is similar to the model used by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and ASP.NET Web services (ASMX) Web Services.  
+One option for hosting Windows Communication Foundation (WCF) services is inside of an Internet Information Services (IIS) application. This hosting model is similar to the model used by ASP.NET and ASP.NET Web services (ASMX) Web Services.  
   
 ## Versions of IIS  
  WCF can be hosted on the following versions of IIS on the following operating systems:  
@@ -22,11 +22,11 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
 ## Benefits of IIS Hosting  
  Hosting WCF services in IIS has several benefits:  
   
-- WCF services hosted in IIS are deployed and managed like any other type of IIS application, including [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and ASMX.  
+- WCF services hosted in IIS are deployed and managed like any other type of IIS application, including ASP.NET applications and ASMX.  
   
 - IIS provides process activation, health management, and recycling capabilities to increase the reliability of hosted applications.  
   
-- Like [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], WCF services hosted in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] can take advantage of the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] shared hosting model where multiple applications reside in a common worker process for improved server density and scalability.  
+- Like ASP.NET, WCF services hosted in ASP.NET can take advantage of the ASP.NET shared hosting model where multiple applications reside in a common worker process for improved server density and scalability.  
   
 - WCF services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)], which simplifies development and deployment of hosted services.  
   
@@ -37,7 +37,7 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
   
 - Ensure that IIS, ASP.NET, WCF and the WCF HTTP activation component are correctly installed and registered.  
   
-- Create a new IIS application, or reuse an existing [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application.  
+- Create a new IIS application, or reuse an existing ASP.NET application.  
   
 - Create a .svc file for the WCF service.  
   
@@ -48,7 +48,7 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
  For a discussion of each of these tasks, see [Deploying an Internet Information Services-Hosted WCF Service](../../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md).  
   
 ## WCF Services and ASP.NET  
- WCF services can be hosted either side-by-side with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] or in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Compatibility Mode in which services can take full advantage of features provided by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web application platform. For a discussion of these features, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
+ WCF services can be hosted either side-by-side with ASP.NET or in ASP.NET Compatibility Mode in which services can take full advantage of features provided by the ASP.NET Web application platform. For a discussion of these features, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
   
 ## See also
 

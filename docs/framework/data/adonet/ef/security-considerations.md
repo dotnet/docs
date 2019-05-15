@@ -136,7 +136,7 @@ This topic describes security considerations that are specific to developing, de
   
 ## Security Considerations for ASP.NET Applications  
 
-You should considered when you work with paths in ASP.NET applications.  
+You should consider the following when you work with paths in ASP.NET applications.  
   
 #### Verify whether your host performs path checks.  
  When the `|DataDirectory|` (enclosed in pipe symbols) substitution string is used, ADO.NET verifies that the resolved path is supported. For example, ".." is not allowed behind `DataDirectory`. That same check for resolving the Web application root operator (`~`) is performed by the process hosting ASP.NET. IIS performs this check; however, hosts other than IIS may not verify that the resolved path is supported. You should know the behavior of the host on which you deploy an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  

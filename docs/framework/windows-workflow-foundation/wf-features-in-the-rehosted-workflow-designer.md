@@ -38,7 +38,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
 
  The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
- ![Auto-surround with WriteLine activity](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-write-line-activity.png)
+ ![A WriteLine activity in the Body of a NoPersistScope activity.](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-write-line-activity.png)
 
  The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 

@@ -137,7 +137,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenBy" />
         <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -188,7 +188,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenBy" />
         <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -247,7 +247,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenByDescending" />
         <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
       </Docs>
@@ -298,7 +298,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenByDescending" />
         <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -407,7 +407,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderBy" />
         <altmember cref="M:System.Linq.Enumerable.ThenBy``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1})" />
       </Docs>
@@ -460,7 +460,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderBy" />
         <altmember cref="M:System.Linq.Enumerable.ThenBy``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -521,7 +521,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderByDescending" />
         <altmember cref="M:System.Linq.Enumerable.ThenByDescending``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1})" />
       </Docs>
@@ -574,7 +574,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderByDescending" />
         <altmember cref="M:System.Linq.Enumerable.ThenByDescending``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -621,7 +621,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="M:System.Linq.Enumerable.Where``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})" />
       </Docs>
     </Member>

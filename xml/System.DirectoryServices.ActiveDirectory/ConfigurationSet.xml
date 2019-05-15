@@ -447,7 +447,7 @@
         <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object that represents the AD LDS instance that currently holds the domain naming master role.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ADAMInstance.Roles" />
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.AdamInstance.Roles" />
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
       </Docs>
     </Member>
@@ -500,7 +500,7 @@
  instance that currently holds the schema operations master role.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
-        <altmember cref="P:System.DirectoryServices.ActiveDirectory.ADAMInstance.Roles" />
+        <altmember cref="P:System.DirectoryServices.ActiveDirectory.AdamInstance.Roles" />
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
       </Docs>
     </Member>

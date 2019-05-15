@@ -51,7 +51,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </MemberGroup>
@@ -79,7 +79,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -112,7 +112,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -143,7 +143,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -173,7 +173,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -207,7 +207,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -235,7 +235,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -266,7 +266,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -297,7 +297,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -328,7 +328,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -356,7 +356,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -394,7 +394,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -425,7 +425,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -456,7 +456,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -484,7 +484,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -519,7 +519,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -554,7 +554,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -640,7 +640,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -671,7 +671,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -702,7 +702,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -733,7 +733,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -762,7 +762,7 @@
         <altmember cref="T:Microsoft.JScript.Context" />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
@@ -798,7 +798,7 @@
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
         <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.JScript.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>

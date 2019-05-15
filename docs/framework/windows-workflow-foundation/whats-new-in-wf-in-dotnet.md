@@ -125,7 +125,7 @@ The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPers
 
 The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 
-![Auto-surround with Sequence activity](./media/whats-new-in-wf-in-dotnet/auto-surround-sequence-activity.png)
+![An automatically created Sequence in the Body of a NoPersistScope.](./media/whats-new-in-wf-in-dotnet/auto-surround-sequence-activity.png)
 
 ### <a name="BKMK_PanMode"></a> Pan Mode
 

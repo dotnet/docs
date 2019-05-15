@@ -19,17 +19,17 @@ This section describes the following concepts:
 
   - [Class Members](#Members)
 
-        [Properties and Fields](#Properties)
+    - [Properties and Fields](#Properties)
 
-        [Methods](#Methods)
+    - [Methods](#Methods)
 
-        [Constructors](#Constructors)
+    - [Constructors](#Constructors)
 
-        [Finalizers](#Finalizers)
+    - [Finalizers](#Finalizers)
 
-        [Events](#Events)
+    - [Events](#Events)
 
-        [Nested Classes](#NestedClasses)
+    - [Nested Classes](#NestedClasses)
 
   - [Access Modifiers and Access Levels](#AccessModifiers)
 

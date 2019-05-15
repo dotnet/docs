@@ -25,7 +25,7 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
  The following illustration shows the line, the ellipse, and the rectangle. Note that the color gradient repeats itself as the horizontal coordinate increases beyond 200.  
   
- ![Shows gradient in the line, ellipse, and rectangle.](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png)  
+ ![A line, an ellipse, and a rectangle filled with a color gradient.](./media/how-to-create-a-linear-gradient/gradient-line-ellipse-rectangle.png)  
   
 ## To use horizontal linear gradients  
   

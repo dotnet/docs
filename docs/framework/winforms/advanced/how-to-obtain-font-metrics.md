@@ -37,7 +37,7 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
   
  For example, you can convert the ascent from design units to pixels as follows:  
   
- ![Example of converting from design units to pixels](./media/how-to-obtain-font-metrics/convert-font-units-example.png "Example of converting from design units to pixels")  
+ ![Formula showing the conversion from design units to pixels](./media/how-to-obtain-font-metrics/convert-font-units-example.png)  
   
  The following code positions text vertically by setting the <xref:System.Drawing.PointF.Y%2A> data member of a <xref:System.Drawing.PointF> object. The y-coordinate is increased by `font.Height` for each new line of text. The <xref:System.Drawing.Font.Height%2A> property of a <xref:System.Drawing.Font> object returns the line spacing (in pixels) for that particular <xref:System.Drawing.Font> object. In this example, the number returned by <xref:System.Drawing.Font.Height%2A> is 19. Note that this is the same as the number (rounded up to an integer) obtained by converting the line-spacing metric to pixels.  
   

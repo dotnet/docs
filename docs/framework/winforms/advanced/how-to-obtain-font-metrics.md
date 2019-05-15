@@ -22,7 +22,7 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
   
  The numbers returned by these methods are in font design units, so they are independent of the size and units of a particular <xref:System.Drawing.Font> object.  
   
- The following illustration shows the various metrics.  
+ The following illustration shows the various metrics:
   
  ![Illustration of various font metrics](./media/how-to-obtain-font-metrics/various-font-metrics.png "Illustration of various font metrics")  
   

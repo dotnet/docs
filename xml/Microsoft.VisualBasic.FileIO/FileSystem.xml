@@ -224,9 +224,9 @@
    
   
 ## Examples  
- The following example copies the contents of directory `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
+ The following example copies the contents of directory `TestDirectory1` into `TestDirectory2`.  
   
- [!code-vb[VbVbcnMyFileSystem#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#49)]  
+ [!code-vb[VbVbcnMyFileSystem#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#94)]  
   
  Replace `C:\TestDirectory1` and `C:\TestDirectory2` with the path and name of the directory you wish to copy and the location to which you wish to copy it.  
   
@@ -293,9 +293,9 @@
    
   
 ## Examples  
- The following example copies the contents of directory `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
+ The following example copies the contents of directory `TestDirectory1` into `TestDirectory2`, showing progress dialog and any error dialog.  
   
- [!code-vb[VbVbcnMyFileSystem#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#49)]  
+ [!code-vb[VbVbcnMyFileSystem#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#92)]  
   
  Replace `C:\TestDirectory1` and `C:\TestDirectory2` with the path and name of the directory you wish to copy and the location to which you wish to copy it.  
   
@@ -442,9 +442,9 @@
    
   
 ## Examples  
- The following example copies the contents of directory `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
+ The following example copies the contents of directory `TestDirectory1` into `TestDirectory2`, showing progress dialog and any error dialog, and does nothing if the user clicks **Cancel** during the operation.  
   
- [!code-vb[VbVbcnMyFileSystem#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#49)]  
+ [!code-vb[VbVbcnMyFileSystem#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#93)]  
   
  Replace `C:\TestDirectory1` and `C:\TestDirectory2` with the path and name of the directory you wish to copy and the location to which you wish to copy it.  
   

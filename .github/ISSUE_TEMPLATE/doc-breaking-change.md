@@ -31,4 +31,4 @@ Text in brackets are placeholders; replace the text with the requested informati
 ---
 ### Docs issue header
 
-- Issue type: breaking-change
+* Issue type: breaking-change

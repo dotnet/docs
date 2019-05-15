@@ -38,11 +38,11 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
 
  The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
- ![Auto-surround with WriteLine activity](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-write-line-activity.png)
+ ![A WriteLine activity in the Body of a NoPersistScope activity.](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-write-line-activity.png)
 
  The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 
- ![Auto-surround with Sequence activity](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-sequence-activity.png)
+ ![An automatically created Sequence in the Body of a NoPersistScope.](./media/wf-features-in-the-rehosted-workflow-designer/auto-surround-sequence-activity.png)
 
 ### Pan Mode
  To more easily navigate a large workflow in the designer, pan mode can be enabled, allowing the developer to click and drag to move the visible portion of the workflow, rather than needing to use the scroll bars. The button to activate pan mode is in the lower right corner of the designer. This feature is supported in the rehosted designer.
@@ -63,7 +63,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
 
  The following screenshot of the completed workflow from the [Getting Started Tutorial](getting-started-tutorial.md) shows the outline view with a sequential workflow.
 
- ![Outline View with a sequential workflow](./media/wf-features-in-the-rehosted-workflow-designer/outline-view-in-workflow-designer.jpg)
+ ![Screenshot of outline view with a sequential workflow in Visual Studio](./media/wf-features-in-the-rehosted-workflow-designer/outline-view-in-workflow-designer.jpg)
 
 ### More control of visibility of shell bar and header items
  In a rehosted designer, some of the standard UI controls may not have meaning for a given workflow, and may be turned off. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this customization is only supported by the shell bar at the bottom of the designer. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the visibility of shell header items at the top of the designer can be adjusted by setting <xref:System.Activities.Presentation.View.DesignerView.WorkflowShellHeaderItemsVisibility%2A> with the appropriate <xref:System.Activities.Presentation.View.ShellHeaderItemsVisibility> value.

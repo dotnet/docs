@@ -24,7 +24,7 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
   
  The following illustration shows the various metrics:
   
- ![Illustration of various font metrics](./media/how-to-obtain-font-metrics/various-font-metrics.png "Illustration of various font metrics")  
+ ![Illustration of font metrics: ascent, descent, and line spacing.](./media/how-to-obtain-font-metrics/various-font-metrics.png)  
   
 ## Example  
  The following example displays the metrics for the regular style of the Arial font family. The code also creates a <xref:System.Drawing.Font> object (based on the Arial family) with size 16 pixels and displays the metrics (in pixels) for that particular <xref:System.Drawing.Font> object.  

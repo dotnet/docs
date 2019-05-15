@@ -51,7 +51,6 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
  The following illustration shows the resulting ellipse and rectangle.  
   
  ![Shows gradient in the ellipse and rectangle.](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png)  
-  
 ### To customize linear gradients  
   
 - Pass in the opaque black and opaque red as the third and fourth argument, respectively.  

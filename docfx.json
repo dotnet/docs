@@ -5,7 +5,8 @@
       {
         "files": [
           "api/**/*.yml",
-          "api/**/*.md"
+          "api/**/*.md",
+          "breadcrumb/toc.yml"
         ],
         "exclude": [
           "api/overwrites/**",

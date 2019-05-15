@@ -49,7 +49,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
 
  The following screenshot shows the pan button which is located at the bottom right corner of the workflow designer.
 
- ![Use the pan button to move the visible portion of the workflow.](./media/wf-features-in-the-rehosted-workflow-designer/pan-button-visible-workflow.png)
+ ![The pan button highlighted in the workflow designer.](./media/wf-features-in-the-rehosted-workflow-designer/pan-button-workflow-designer.png)
 
  The middle mouse button or space bar can also be used to pan the workflow designer.
 
@@ -128,7 +128,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
   
  The following screenshot shows the completed state machine workflow from the [Getting Started Tutorial](getting-started-tutorial.md) step [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md).  
   
- ![Completed state machine workflow from the Getting Started Tutorial](./media/wf-features-in-the-rehosted-workflow-designer/getting-started-tutorial-complete-state-machine-workflow.jpg)  
+ ![Illustration that shows the completed state machine workflow.](./media/wf-features-in-the-rehosted-workflow-designer/complete-state-machine-workflow.jpg)  
   
  For more information on creating state machine workflows, see [State Machine Workflows](state-machine-workflows.md). State machine workflows are supported in the rehosted designer.  
   

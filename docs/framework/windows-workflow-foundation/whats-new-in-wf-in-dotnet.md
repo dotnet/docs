@@ -133,7 +133,7 @@ To more easily navigate a large workflow in the designer, pan mode can be enable
 
 The following screenshot shows the pan button which is located at the bottom right corner of the workflow designer.
 
-![Use the pan button to move the visible portion of the workflow.](./media/whats-new-in-wf-in-dotnet/pan-button-visible-workflow.png)
+![The pan button highlighted in the workflow designer.](./media/whats-new-in-wf-in-dotnet/pan-button-workflow-designer.png)
 
 The middle mouse button or space bar can also be used to pan the workflow designer.
 
@@ -227,7 +227,7 @@ State machine workflows were introduced as part of the .NET Framework 4, version
 
 The following screenshot shows the completed state machine workflow from the [Getting Started Tutorial](getting-started-tutorial.md) step [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md).
 
-![Completed state machine workflow from the Getting Started Tutorial](./media/whats-new-in-wf-in-dotnet/getting-started-tutorial-complete-state-machine-workflow.jpg)
+![Illustration that shows the completed state machine workflow.](./media/whats-new-in-wf-in-dotnet/complete-state-machine-workflow.jpg)
 
 For more information on creating state machine workflows, see [State Machine Workflows](state-machine-workflows.md).
 

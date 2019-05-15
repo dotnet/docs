@@ -78,7 +78,7 @@ This is the final task of the WCF Data Services quickstart. In this task, you wi
 
 You have successfully created the client application that accesses the sample Northwind OData feed. You've also completed the WCF Data Services quickstart!
 
-For more information about accessing an OData feed from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).
+For more information about accessing an OData feed from a .NET Framework application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).
 
 ## See also
 

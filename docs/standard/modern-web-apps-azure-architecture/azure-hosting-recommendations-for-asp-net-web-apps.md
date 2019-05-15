@@ -21,11 +21,9 @@ Web applications can be hosted with:
 
 - Containers
 
-- Azure Service Fabric
-
 - Virtual Machines (VMs)
 
-Of these, App Service Web Apps is the recommended approach for most scenarios. For microservice architectures, consider a container-based approach or Service Fabric. If you need more control over the machines running your application, consider Azure Virtual Machines.
+Of these, App Service Web Apps is the recommended approach for most scenarios. For microservice architectures, consider a container-based approach. If you need more control over the machines running your application, consider Azure Virtual Machines.
 
 ### App Service Web Apps
 
@@ -40,6 +38,8 @@ App Service Web Apps offers a fully managed platform optimized for hosting web a
 - Security and compliance.
 
 - Visual Studio integration.
+
+- Support for Linux and Windows containers via [Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/).
 
 Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app.
 
@@ -56,30 +56,9 @@ AKS reduces the complexity and operational overhead of managing a Kubernetes clu
 
 With Azure handling the management of the nodes in your AKS cluster, you no longer need to perform many tasks manually, like cluster upgrades. Because Azure handles these critical maintenance tasks for you, AKS doesn't provide direct access (such as with SSH) to the cluster.
 
-### Azure Service Fabric
-
-Service Fabric is a good choice if you're creating a new app or rewriting an existing app to use a microservice architecture. Apps, which run on a shared pool of machines, can start small and grow to massive scale with hundreds or thousands of machines as needed. Stateful services make it easy to consistently and reliably store app state, and Service Fabric automatically manages service partitioning, scaling, and availability for you. Service Fabric also supports WebAPI with Open Web Interface for .NET (OWIN) and ASP.NET Core. Compared to App Service, Service Fabric also provides more control over, or direct access to, the underlying infrastructure. You can remote into your servers or configure server startup tasks.
-
 ### Azure Virtual Machines
 
-If you have an existing application that would require substantial modifications to run in App Service or Service Fabric, you could choose Virtual Machines in order to simplify migrating to the cloud. However, correctly configuring, securing, and maintaining VMs requires much more time and IT expertise compared to Azure App Service and Service Fabric. If you're considering Azure Virtual Machines, make sure you take into account the ongoing maintenance effort required to patch, update, and manage your VM environment. Azure Virtual Machines is infrastructure as a service (IaaS), while App Service and Service Fabric are PaaS.
-
-#### Feature Comparison
-
-| Feature                                                                                    | App Service | Containers (AKS) | Service Fabric | Virtual Machine |
-| ------------------------------------------------------------------------------------------ | ----------- | ---------------- | -------------- | --------------- |
-| Near-Instant Deployment                                                                    | X           | X                | X              |                 |
-| Scale up to larger machines without redeploy                                               | X           | X                | X              |                 |
-| Instances share content and configuration; no need to redeploy or reconfigure when scaling | X           | X                | X              |                 |
-| Multiple deployment environments (production, staging)                                     | X           | X                | X              |                 |
-| Automatic OS update management                                                             | X           | X                |                |                 |
-| Seamless switching between 32/64-bit platforms                                             | X           | X                |                |                 |
-| Deploy code with Git, FTP                                                                  | X           | X                |                | X               |
-| Deploy code with WebDeploy                                                                 | X           | X                |                | X               |
-| Deploy code with TFS                                                                       | X           | X                | X              | X               |
-| Host web or web service tier of multi-tier architecture                                    | X           | X                | X              | X               |
-| Access Azure services like Service Bus, Storage, SQL Database                              | X           | X                | X              | X               |
-| Install any custom MSI                                                                     |             | X                | X              | X               |
+If you have an existing application that would require substantial modifications to run in App Service, you could choose Virtual Machines in order to simplify migrating to the cloud. However, correctly configuring, securing, and maintaining VMs requires much more time and IT expertise compared to Azure App Service. If you're considering Azure Virtual Machines, make sure you take into account the ongoing maintenance effort required to patch, update, and manage your VM environment. Azure Virtual Machines is infrastructure as a service (IaaS), while App Service is PaaS. You should also consider whether deploying your app as a Windows Container to Web App for Containers might be a viable option for your scenario.
 
 ## Logical processes
 
@@ -116,8 +95,8 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 - Web Apps overview\
   <https://docs.microsoft.com/azure/app-service/app-service-web-overview>
 
-- Azure App Service, Virtual Machines, Service Fabric, and Cloud Services comparison\
-  <https://docs.microsoft.com/azure/app-service-web/choose-web-site-cloud-service-vm>
+- Web App for Containers\
+  <https://azure.microsoft.com/en-us/services/app-service/containers/>
 
 - Introduction to Azure Kubernetes Service (AKS)\
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>

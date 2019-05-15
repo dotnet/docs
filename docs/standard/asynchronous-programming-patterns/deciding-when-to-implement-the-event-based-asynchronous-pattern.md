@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: a00046aa-785d-4f7f-a8e5-d06475ea50da
 ---
 # Deciding When to Implement the Event-based Asynchronous Pattern
-The Event-based Asynchronous Pattern provides a pattern for exposing the asynchronous behavior of a class. With the introduction of this pattern, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] defines two patterns for exposing asynchronous behavior: the Asynchronous Pattern based on the <xref:System.IAsyncResult?displayProperty=nameWithType> interface, and the event-based pattern. This topic describes when it is appropriate for you to implement both patterns.  
+The Event-based Asynchronous Pattern provides a pattern for exposing the asynchronous behavior of a class. With the introduction of this pattern, the .NET Framework defines two patterns for exposing asynchronous behavior: the Asynchronous Pattern based on the <xref:System.IAsyncResult?displayProperty=nameWithType> interface, and the event-based pattern. This topic describes when it is appropriate for you to implement both patterns.  
   
  For more information about asynchronous programming with the <xref:System.IAsyncResult> interface, see [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md).  
   

@@ -49,7 +49,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.runtime.caching>](../../../../../docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)].|  
+|[\<system.runtime.caching>](../../../../../docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|  
   
 ## Remarks  
  The <xref:System.Runtime.Caching.MemoryCache> class is a concrete implementation of the abstract <xref:System.Runtime.Caching.ObjectCache> class. Instances of the <xref:System.Runtime.Caching.MemoryCache> class can be supplied with configuration information from application configuration files. The [memoryCache](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md) configuration section contains a `namedCaches` configuration collection.  

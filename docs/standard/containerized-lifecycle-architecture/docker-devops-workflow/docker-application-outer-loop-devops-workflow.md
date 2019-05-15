@@ -1,8 +1,6 @@
 ---
 title: Steps in the outer-loop DevOps workflow for a Docker application
 description: Learn the steps for the "outer loop" of the DevOps workflow
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Steps in the outer-loop DevOps workflow for a Docker application

@@ -1,8 +1,6 @@
 ---
 title: Build ASP.NET Core 2.2 applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/25/2019
 ---
 # Build ASP.NET Core 2.2 applications deployed as Linux containers into an AKS/Kubernetes orchestrator
@@ -119,6 +117,12 @@ After running the `docker tag` command, list the images with the `docker images`
 
 ### Push the image into the Azure ACR
 
+Log in to the Azure Container Registry
+
+```console
+az acr login --name mssampleacr
+```
+
 Push the image into the Azure ACR, using the following command:
 
 ```console
@@ -152,7 +156,7 @@ spec:
         app: mssample-kub-app
     spec:
       containers:
-        - mane: mssample-services-app
+        - name: mssample-services-app
           image: mssampleacr.azurecr.io/mssampleaksapplication:v1
           ports:
             - containerPort: 80

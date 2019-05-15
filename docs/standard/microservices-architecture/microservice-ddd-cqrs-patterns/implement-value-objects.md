@@ -1,8 +1,6 @@
 ---
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 
@@ -319,7 +317,7 @@ public class Address
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/aspnet/EntityFramework/issues/246>
 
-- **ValueObject.cs.** Base value object class in eShopOnContainers.**  \
+- **ValueObject.cs.** Base value object class in eShopOnContainers. \
   <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs>
 
 - **Address class.** Sample value object class in eShopOnContainers. \

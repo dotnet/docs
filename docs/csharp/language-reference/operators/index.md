@@ -1,6 +1,6 @@
 ---
 title: "C# operators"
-ms.date: 04/04/2018
+ms.date: 04/30/2019
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -21,25 +21,25 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
 # C# operators
 
-C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression. You can [overload](../../programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.
+C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
 
-Operations on integral types (such as `==`, `!=`, `<`, `>`, `&`, `|`) are generally allowed on enumeration (`enum`) types.
+A user-defined type can overload certain operators to define the corresponding behavior for the operands of that type. For more information, see the [operator](../keywords/operator.md) keyword article.
 
-The sections below list the C# operators starting with the highest precedence to the lowest. The operators within each section share the same precedence level.
+The following sections list the C# operators starting with the highest precedence to the lowest. The operators within each section share the same precedence level.
 
 ## Primary operators
 
 These are the highest precedence operators.
 
-[x.y](member-access-operator.md) – member access.
+[x.y](member-access-operators.md#member-access-operator-) – member access.
 
-[x?.y](null-conditional-operators.md) – null conditional member access. Returns `null` if the left-hand operand evaluates to `null`.
+[x?.y](member-access-operators.md#null-conditional-operators--and-) – null conditional member access. Returns `null` if the left-hand operand evaluates to `null`.
 
-[x?[y]](null-conditional-operators.md) - null conditional index access. Returns `null` if the left-hand operand evaluates to `null`.
+[x?[y]](member-access-operators.md#null-conditional-operators--and-) - null conditional array element or type indexer access. Returns `null` if the left-hand operand evaluates to `null`.
 
-[f(x)](invocation-operator.md) – function invocation.
+[f(x)](member-access-operators.md#invocation-operator-) – method call or delegate invocation.
 
-[a&#91;x&#93;](index-operator.md) – aggregate object indexing.
+[a&#91;x&#93;](member-access-operators.md#indexer-operator-) – array element or type indexer access.
 
 [x++](arithmetic-operators.md#increment-operator-) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
 
@@ -55,9 +55,13 @@ These are the highest precedence operators.
 
 [default(T)](../../programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.
 
+[nameof](../keywords/nameof.md) - obtains the simple (unqualified) name of a variable, type, or member as a constant string.
+
 [delegate](../../programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.
 
 [sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
+
+[stackalloc](../keywords/stackalloc.md) - allocates a block of memory on the stack.
 
 [->](dereference-operator.md) – pointer dereferencing combined with member access.
 
@@ -181,7 +185,7 @@ This operator has higher precedence than the next section and lower precedence t
 
 [t ? x : y](conditional-operator.md) – if test `t` evaluates to true, then evaluate and return `x`; otherwise, evaluate and return `y`.
 
-## Assignment and Lambda operators
+## Assignment and lambda operators
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 

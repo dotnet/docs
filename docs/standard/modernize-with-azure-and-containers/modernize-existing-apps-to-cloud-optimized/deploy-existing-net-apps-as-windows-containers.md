@@ -1,8 +1,6 @@
 ---
 title: Deploy existing .NET apps as Windows containers
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Deploy existing .NET apps as Windows containers
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/29/2018
 ---
 # Deploy existing .NET apps as Windows containers

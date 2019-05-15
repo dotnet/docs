@@ -10,11 +10,11 @@ ms.assetid: dec51976-eae0-4398-a537-20bca7974722
 The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md). For more information about choosing the control you need, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
   
 > [!NOTE]
->  Visual Basic controls are based on classes provided by the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
+>  Visual Basic controls are based on classes provided by the .NET Framework.  
   
 ## In This Section  
  [Windows Forms Controls by Function](windows-forms-controls-by-function.md)  
- Lists and describes Windows Forms controls based on the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
+ Lists and describes Windows Forms controls based on the .NET Framework.  
   
  [Controls with Built-In Owner-Drawing Support](controls-with-built-in-owner-drawing-support.md)  
  Describes how to alter aspects of a control's appearance that are not available through properties.  
@@ -164,7 +164,7 @@ The following is an alphabetic list of controls and components that can be used 
  Allows the user to resize a docked control.  
   
  [Splitter Control](splitter-control-windows-forms.md)  
- Allows the user to resize a docked control ([!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.x).  
+ Allows the user to resize a docked control (.NET Framework version 1.x).  
   
  [StatusBar Control](statusbar-control-windows-forms.md)  
  Displays status information related to the control that has focus. Although <xref:System.Windows.Forms.StatusStrip> replaces and extends the <xref:System.Windows.Forms.StatusBar> control of previous versions, <xref:System.Windows.Forms.StatusBar> is retained for both backward compatibility and future use if you choose.  
@@ -225,7 +225,7 @@ The following is an alphabetic list of controls and components that can be used 
  Provides links to step-by-step topics, recommendations for which kind of control to create, and other information about creating your own control.  
   
  [Controls and Programmable Objects Compared in Various Languages and Libraries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))  
- Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in [!INCLUDE[vbprvblong](../../../../includes/vbprvblong-md.md)]. Note that controls are now classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
+ Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in Visual Basic. Note that controls are now classes in the .NET Framework.  
   
  [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md)  
  Describes how to use ActiveX controls on Windows Forms.

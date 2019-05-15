@@ -33,7 +33,7 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
  [!code-csharp[csProgGuideNamespaces#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces2.cs#7)]  
   
 ## Using Namespaces to control scope  
- The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [. Operator](../../../csharp/language-reference/operators/member-access-operator.md) is used to differentiate which method gets called.  
+ The `namespace` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types. In the following example, a class titled `SampleClass` is defined in two namespaces, one nested inside the other. The [member access `.` operator](../../language-reference/operators/member-access-operators.md#member-access-operator-) is used to differentiate which method gets called.  
   
  [!code-csharp[csProgGuideNamespaces#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideNamespaces/CS/Namespaces.cs#8)]  
   
@@ -87,6 +87,6 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
 - [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)
-- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
+- [. Operator](../../../csharp/language-reference/operators/member-access-operators.md#member-access-operator-)
 - [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
 - [extern](../../../csharp/language-reference/keywords/extern.md)

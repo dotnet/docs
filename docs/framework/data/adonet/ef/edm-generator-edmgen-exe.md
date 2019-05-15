@@ -16,7 +16,7 @@ EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../
 
 - Generate a C# or Visual Basic code file that contains the pre-generated views for an existing model. For more information, [How to: Pre-Generate Views to Improve Query Performance](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100)).
 
-The EdmGen.exe tool is installed in the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] directory. In many cases, this is located in C:\windows\Microsoft.NET\Framework\v4.0. For 64-bit systems, this is located in C:\windows\Microsoft.NET\Framework64\v4.0. You can also access the EdmGen.exe tool from the Visual Studio command prompt (Click **Start**, point to **All Programs**, point to **Microsoft Visual Studio 2010**, point to **Visual Studio Tools**, and then click **Visual Studio 2010 Command Prompt**).
+The EdmGen.exe tool is installed in the .NET Framework directory. In many cases, this is located in C:\windows\Microsoft.NET\Framework\v4.0. For 64-bit systems, this is located in C:\windows\Microsoft.NET\Framework64\v4.0. You can also access the EdmGen.exe tool from the Visual Studio command prompt (Click **Start**, point to **All Programs**, point to **Microsoft Visual Studio 2010**, point to **Visual Studio Tools**, and then click **Visual Studio 2010 Command Prompt**).
 
 ## Syntax
 
@@ -41,7 +41,7 @@ When using the EdmGen.exe tool, you must specify one of the following modes.
 |Option|Description|
 |------------|-----------------|
 |`/p[roject]:`\<string>|Specifies the project name to use. The project name is used as a default for the namespace setting, the name of the model and mapping files, the name of object source file, and the name of view generation source file. The entity container name is set to \<project>Context.|
-|`/prov[ider]:`\<string>|The name of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] data provider to be used to generate the storage model (.ssdl) file. The default provider is the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (<xref:System.Data.SqlClient?displayProperty=nameWithType>).|
+|`/prov[ider]:`\<string>|The name of the .NET Framework data provider to be used to generate the storage model (.ssdl) file. The default provider is the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient?displayProperty=nameWithType>).|
 |`/c[onnectionstring]:`\<connection string>|Specifies the string that is used to connect to the data source.|
 |`/incsdl:`\<file>|Specifies the .csdl file or a directory where the .csdl files are located. This argument can be specified multiple times so that you can specify several directories or .csdl files. Specifying multiple directories can be useful for generating classes (`/mode:EntityClassGeneration`) or views (`/mode:ViewGeneration`) when the conceptual model is split across several files. This can also be useful when you want to validate multiple models (`/mode:ValidateArtifacts`).|
 |`/refcsdl:`\<file>|Specifies the additional .csdl file or files used to resolve any references in the source .csdl file. (The source .csdl file is, the file specified by the `/incsdl` option). The `/refcsdl` file contains types that the source .csdl file is dependent upon. This argument can be specified multiple times.|

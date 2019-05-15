@@ -8,7 +8,7 @@ ms.date: 04/02/2019
 
 # Data transformations
 
-Data transformations are used to prepare data for model training. The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator`1) interface. Data transformations can be chained together. Each transformation both expects and produces data of specific types and formats, which are specified in the linked reference documentation.
+Data transformations are used to prepare data for model training. The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator%601) interface. Data transformations can be chained together. Each transformation both expects and produces data of specific types and formats, which are specified in the linked reference documentation.
 
 Some data transformations require training data to calculate their parameters. For example: the <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> transformer calculates the mean and variance of the training data during the `Fit()` operation, and uses those parameters in the `Transform()` operation. 
 

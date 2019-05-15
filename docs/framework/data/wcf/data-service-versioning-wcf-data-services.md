@@ -54,7 +54,7 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 
  When an application uses the WCF Data Services client libraries to access a data service, the libraries automatically set these headers to the correct values, depending on the version of OData and the features that are used in your application. By default, WCF Data Services uses the lowest protocol version that supports the requested operation.
 
- The following table details the versions of [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] and [!INCLUDE[silverlight](../../../../includes/silverlight-md.md)] that include WCF Data Services support for specific versions of the OData protocol.
+ The following table details the versions of .NET Framework and [!INCLUDE[silverlight](../../../../includes/silverlight-md.md)] that include WCF Data Services support for specific versions of the OData protocol.
 
 |OData Protocol Version|Support introduced in…|
 |-----------------------------------------------------------------------------------|----------------------------|

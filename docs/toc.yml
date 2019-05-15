@@ -108,15 +108,15 @@
     items:
     - name: P/Invoke
       href: standard/native-interop/pinvoke.md
-    - name: Type marshalling
-      href: standard/native-interop/type-marshalling.md
-    - name: Customizing structure marshalling
-      href: standard/native-interop/customize-struct-marshalling.md
-    - name: Customizing parameter marshalling
-      href: standard/native-interop/customize-parameter-marshalling.md
+    - name: Type marshaling
+      href: standard/native-interop/type-marshaling.md
+    - name: Customizing structure marshaling
+      href: standard/native-interop/customize-struct-marshaling.md
+    - name: Customizing parameter marshaling
+      href: standard/native-interop/customize-parameter-marshaling.md
     - name: Interop guidance
       href: standard/native-interop/best-practices.md
-    - name: Charsets and marshalling
+    - name: Charsets and marshaling
       href: standard/native-interop/charset.md
   - name: Collections and Data Structures
     href: standard/collections/
@@ -164,6 +164,8 @@
       href: core/tutorials/with-visual-studio.md
     - name: Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017
       href: core/tutorials/vb-with-visual-studio.md
+    - name: Create a .NET Core application with plugins
+      href: core/tutorials/creating-app-with-plugin-support.md
     - name: Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
       href: core/tutorials/debugging-with-visual-studio.md
     - name: Publish your Hello World application with Visual Studio 2017
@@ -432,11 +434,6 @@
     href: framework/install/
   - name: Migration Guide
     href: framework/migration-guide/
-  - name: .NET Framework on Docker Guide
-    href: framework/docker/index.md
-    items:
-    - name: Running Console Apps in Containers
-      href: framework//docker/console.md
   - name: Development Guide
     href: framework/development-guide.md
     items:
@@ -533,6 +530,8 @@
       href: csharp/tutorials/exploration/interpolated-strings-local.md
     - name: Advanced scenarios for string Interpolation
       href: csharp/tutorials/string-interpolation.md
+    - name: Safely update interfaces with default interface members
+      href: csharp/tutorials/default-interface-members-versions.md
     - name: Explore indexes and ranges
       href: csharp/tutorials/ranges-indexes.md
     - name: Work with nullable reference types
@@ -557,7 +556,7 @@
     href: csharp/tour-of-csharp/
   - name: What's new in C#
     items:
-    - name: C# 8.0 - Preview 2
+    - name: C# 8.0 - Preview 5
       href: csharp/whats-new/csharp-8.md
     - name: C# 7.3
       href: csharp/whats-new/csharp-7-3.md
@@ -2377,5 +2376,7 @@
     href: visual-basic/walkthroughs.md
 - name: ML.NET Guide
   href: machine-learning/index.yml
+- name: .NET for Apache Spark Guide
+  href: spark/index.yml
 - name: Samples and Tutorials
   href: samples-and-tutorials/index.md

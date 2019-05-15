@@ -122,14 +122,6 @@ For Each s In queryNamesScores2
 Next
 ```
 
-## Compiling the code
-
-Create and compile a project that targets one of the following options:
-
-- .NET Framework version 3.5 with a reference to System.Core.dll.
-- .NET Framework version 4.0 or higher.
-- .NET Core version 1.0 or higher.
-
 ## See also
 
 - [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)

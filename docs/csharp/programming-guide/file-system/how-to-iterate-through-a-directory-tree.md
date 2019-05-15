@@ -11,7 +11,7 @@ ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
 The phrase "iterate a directory tree" means to access each file in each nested subdirectory under a specified root folder, to any depth. You do not necessarily have to open each file. You can just retrieve the name of the file or subdirectory as a `string`, or you can retrieve additional information in the form of a <xref:System.IO.FileInfo?displayProperty=nameWithType> or <xref:System.IO.DirectoryInfo?displayProperty=nameWithType> object.  
   
 > [!NOTE]
->  In Windows, the terms "directory" and "folder" are used interchangeably. Most documentation and user interface text uses the term "folder," but the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library uses the term "directory."  
+>  In Windows, the terms "directory" and "folder" are used interchangeably. Most documentation and user interface text uses the term "folder," but the .NET Framework class library uses the term "directory."  
   
  In the simplest case, in which you know for certain that you have access permissions for all directories under a specified root, you can use the `System.IO.SearchOption.AllDirectories` flag. This flag returns all the nested subdirectories that match the specified pattern. The following example shows how to use this flag.  
   

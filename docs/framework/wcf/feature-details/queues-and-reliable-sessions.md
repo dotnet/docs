@@ -25,7 +25,7 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
   
  Reliable sessions provide low-latency reliable message transfers. They provide for SOAP messages over any proxies or intermediaries, equivalent to what TCP provides for packets over IP bridges. For more information about reliable sessions, see [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
   
-### Queues  
+## Queues  
  Queues in WCF provide both reliable transfers of messages and separation between sources and destinations at the cost of high latency. WCF queued communication is built on top of Message Queuing (also known as MSMQ).  
   
  MSMQ is shipped as an option with Windows that runs as an NT service. It captures messages for transmission in a transmission queue on behalf of the source and delivers it to a target queue. The target queue accepts messages on behalf of the destination for later delivery whenever the destination requests for messages. The MSMQ queue managers implement a reliable message-transfer protocol so that messages are not lost in transmission. The protocol can be native or SOAP-based, such as Soap Reliable Messaging Protocol (SRMP).  

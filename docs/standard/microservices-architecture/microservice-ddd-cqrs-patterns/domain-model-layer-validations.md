@@ -1,8 +1,6 @@
 ---
 title: Designing validations in the domain model layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand key concepts of domain model validations.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 
@@ -76,7 +74,7 @@ There are various approaches to deal with deferred validations in the domain. In
 
 ### Two-step validation
 
-Also consider two-step validation. Use field-level validation on your command Data Transfer Objects (DTOs) and domain-level validation inside your entities. You can do this by returning a result object instead exceptions in order to make it easier to deal with the validation errors.
+Also consider two-step validation. Use field-level validation on your command Data Transfer Objects (DTOs) and domain-level validation inside your entities. You can do this by returning a result object instead of exceptions in order to make it easier to deal with the validation errors.
 
 Using field validation with data annotations, for example, you do not duplicate the validation definition. The execution, though, can be both server-side and client-side in the case of DTOs (commands and ViewModels, for instance).
 

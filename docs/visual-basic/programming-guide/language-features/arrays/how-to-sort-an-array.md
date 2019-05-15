@@ -26,7 +26,7 @@ End Sub
 ## Compiling the Code  
  This example requires:  
   
-- Access to Mscorlib.dll and the <xref:System> namespace.  
+- Access to the <xref:System> namespace.  
   
 ## Robust Programming  
  The following conditions may cause an exception:  

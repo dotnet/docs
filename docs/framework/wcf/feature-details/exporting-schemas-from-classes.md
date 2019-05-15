@@ -15,7 +15,7 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
 ## The Export Process  
  The schema export process starts with one or more types and produces an <xref:System.Xml.Schema.XmlSchemaSet> that describes the XML projection of these types.  
   
- The `XmlSchemaSet` is part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]’s Schema Object Model (SOM) that represents a set of XSD Schema documents. To create XSD documents from an `XmlSchemaSet`, use the collection of schemas from the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property of the `XmlSchemaSet` class. Then serialize each <xref:System.Xml.Schema.XmlSchema> object using the <xref:System.Xml.Serialization.XmlSerializer>.  
+ The `XmlSchemaSet` is part of the .NET Framework’s Schema Object Model (SOM) that represents a set of XSD Schema documents. To create XSD documents from an `XmlSchemaSet`, use the collection of schemas from the <xref:System.Xml.Schema.XmlSchemaSet.Schemas%2A> property of the `XmlSchemaSet` class. Then serialize each <xref:System.Xml.Schema.XmlSchema> object using the <xref:System.Xml.Serialization.XmlSerializer>.  
   
 #### To export schemas  
   

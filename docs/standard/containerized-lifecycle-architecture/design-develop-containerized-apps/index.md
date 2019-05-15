@@ -1,8 +1,6 @@
 ---
 title: Design and develop containerized apps using Docker and Microsoft Azure
 description: Let's get into the Develop/Design workload in the Docker applications life-cycle.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Implement background tasks in microservices with IHostedService and the BackgroundService class
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the new options to use IHostedService and BackgroundService to implement background tasks in microservices .NET Core.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 01/07/2019
 ---
 # Implement background tasks in microservices with IHostedService and the BackgroundService class
@@ -90,7 +88,7 @@ namespace Microsoft.Extensions.Hosting
 
 As you can imagine, you can create multiple implementations of IHostedService and register them at the `ConfigureService()` method into the DI container, as shown previously. All those hosted services will be started and stopped along with the application/microservice.
 
-As a developer, you are responsible for handling the stopping action or your services when `StopAsync()` method is triggered by the host.
+As a developer, you are responsible for handling the stopping action of your services when `StopAsync()` method is triggered by the host.
 
 ## Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class
 

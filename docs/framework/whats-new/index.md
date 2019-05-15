@@ -30,7 +30,8 @@ This article summarizes key new features and improvements in the following versi
 This article does not provide comprehensive information about each new feature and is subject to change. For general information about the .NET Framework, see [Getting Started](../get-started/index.md). For supported platforms, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For download links and installation instructions, see [Installation Guide](../install/guide-for-developers.md).
 
 > [!NOTE]
-> .NET Framework team also releases features out of band with NuGet to expand platform support and to introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [The .NET Framework and Out-of-Band Releases](~/docs/framework/get-started/the-net-framework-and-out-of-band-releases.md). See a [complete list of NuGet packages](https://blogs.msdn.microsoft.com/dotnet/p/nugetpackages/) for the .NET Framework, or subscribe to [our feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).
+> The .NET Framework team also releases features out of band with NuGet to expand platform support and to introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../additional-apis/index.md) and [The .NET Framework and Out-of-Band Releases](~/docs/framework/get-started/the-net-framework-and-out-of-band-releases.md). 
+> See a [complete list of NuGet packages](https://www.nuget.org/profiles/dotnetframework) for the .NET Framework.
 
 <a name="v48" />
 
@@ -110,6 +111,17 @@ There are two ways to expose the health endpoint and publish WCF service health 
      healthBehavior = new ServiceHealthBehavior();
   }
    host.Description.Behaviors.Add(healthBehavior);
+  ```
+
+  ```vb
+  Dim host As New ServiceHost(GetType(Service1),
+              New Uri("http://contoso:81/Service1"))
+  Dim healthBehavior As ServiceHealthBehavior = 
+     host.Description.Behaviors.Find(Of ServiceHealthBehavior)()
+  If healthBehavior Is Nothing Then
+     healthBehavior = New ServiceHealthBehavior()
+  End If
+  host.Description.Behaviors.Add(healthBehavior) 
   ```
 
 - By using a configuration file. For example:
@@ -546,6 +558,15 @@ public class StaticResourceResolvedEventArgs : EventArgs
 }
 ```
 
+```vb
+Public Class StaticResourceResolvedEvcentArgs : Inherits EventArgs
+   Public ReadOnly Property TargetObject As Object
+   Public ReadOnly Property TargetProperty As Object
+   Public ReadOnly Property ResourceDictionary As ResourceDictionary
+   Public ReadOnly Property ResourceKey As Object
+End Class
+```
+
 The event is not raised (and its `add` accessor is ignored) unless <xref:System.Windows.Diagnostics.VisualDiagnostics> is enabled and the [`ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO`](xref:System.Windows.Diagnostics.VisualDiagnostics.GetXamlSourceInfo%2A) environment variable is set.
 
 #### ClickOnce
@@ -835,6 +856,13 @@ public interface ISessionStateModule : IHttpModule {
     void ReleaseSessionState(HttpContext context);
     Task ReleaseSessionStateAsync(HttpContext context);
 }
+```
+
+```vb
+Public Interface ISessionStateModule : Inherits IHttpModule
+   Sub ReleaseSessionState(context As HttpContext)
+   Function ReleaseSessionStateAsync(context As HttpContext) As Task
+End Interface
 ```
 
  In addition, the <xref:System.Web.SessionState.SessionStateUtility> class includes two new methods, <xref:System.Web.SessionState.SessionStateUtility.IsSessionStateReadOnly%2A> and <xref:System.Web.SessionState.SessionStateUtility.IsSessionStateRequired%2A>, that can be used to support asynchronous operations.
@@ -1511,6 +1539,10 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
         AppContext.SetSwitch("Switch.AmazingLib.ThrowOnException", true);
         ```
 
+        ```vb
+        AppContext.SetSwitch("Switch.AmazingLib.ThrowOnException", True)
+        ```
+
          The library must check if a consumer has declared the value of the switch and then appropriately act on it.
 
         ```csharp
@@ -1522,15 +1554,31 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
            // A false value implies the latest behavior.
         }
 
-           // The library can use the value of shouldThrow to throw exceptions or not.
-           if (shouldThrow)
-           {
-              // old code
-           }
-           else {
-              // new code
-           }
+        // The library can use the value of shouldThrow to throw exceptions or not.
+        if (shouldThrow)
+        {
+           // old code
         }
+        else 
+        {
+           // new code
+        }
+        ```
+
+        ```vb
+        If Not AppContext.TryGetSwitch("Switch.AmazingLib.ThrowOnException", shouldThrow) Then
+           ' This is the case where the switch value was not set by the application.
+           ' The library can choose to get the value of shouldThrow by other means.
+           ' If no overrides nor default values are specified, the value should be 'false'.
+           ' A false value implies the latest behavior.
+        End If
+
+        ' The library can use the value of shouldThrow to throw exceptions or not.
+        If shouldThrow Then
+           ' old code
+        Else 
+           ' new code
+        End If
         ```
 
          It's beneficial to use a consistent format for switches, since they are a formal contract exposed by a library. The following are two obvious formats.
@@ -1777,6 +1825,14 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
                                               IPromotableSinglePhaseNotification promotableNotification,
                                               ISinglePhaseNotification enlistmentNotification,
                                               EnlistmentOptions enlistmentOptions)
+    ```
+
+    ```vb
+    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name:="FullTrust")>
+    public Function PromoteAndEnlistDurable(GresourceManagerIdentifier As Guid,
+                                            promotableNotification As IPromotableSinglePhaseNotification,
+                                            enlistmentNotification As ISinglePhaseNotification,
+                                            enlistmentOptions As EnlistmentOptions) As Enlistment
     ```
 
      The method may be used by an enlistment that was previously created by <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A?displayProperty=nameWithType> in response to the <xref:System.Transactions.ITransactionPromoter.Promote%2A?displayProperty=nameWithType> method. It asks `System.Transactions` to promote the transaction to an MSDTC transaction and to "convert" the promotable enlistment to a durable enlistment. After this method completes successfully, the <xref:System.Transactions.IPromotableSinglePhaseNotification> interface will no longer be referenced by `System.Transactions`, and any future notifications will arrive on the provided <xref:System.Transactions.ISinglePhaseNotification> interface. The enlistment in question must act as a durable enlistment, supporting transaction logging and recovery. Refer to <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=nameWithType> for details. In addition, the enlistment must support <xref:System.Transactions.ISinglePhaseNotification>.  This method can *only* be called while processing an <xref:System.Transactions.ITransactionPromoter.Promote%2A?displayProperty=nameWithType> call. If that is not the case, a <xref:System.Transactions.TransactionException> exception is thrown.

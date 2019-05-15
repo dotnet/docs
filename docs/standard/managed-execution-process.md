@@ -50,7 +50,7 @@ ms.author: "ronpet"
   
 <a name="compiling_msil_to_native_code"></a>   
 ## Compiling MSIL to Native Code  
- Before you can run Microsoft intermediate language (MSIL), it must be compiled against the common language runtime to native code for the target machine architecture. The [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] provides two ways to perform this conversion:  
+ Before you can run Microsoft intermediate language (MSIL), it must be compiled against the common language runtime to native code for the target machine architecture. The .NET Framework provides two ways to perform this conversion:  
   
 - A .NET Framework just-in-time (JIT) compiler.  
   

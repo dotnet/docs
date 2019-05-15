@@ -25,11 +25,11 @@ Using tools that ship with the Windows operating system, you can enable or disab
 |`EndToEndMonitoring`|Events used to support message flow tracing.|  
 |`Troubleshooting`|More granular events around the extensibility points of WCF.|  
   
- The second group of keywords define which component of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] emitted the event.  
+ The second group of keywords define which component of the .NET Framework emitted the event.  
   
 |Keyword|Description|  
 |-------------|-----------------|  
-|`UserEvents`|Events emitted by the user code and not the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)].|  
+|`UserEvents`|Events emitted by the user code and not the .NET Framework.|  
 |`ServiceModel`|Events emitted by the WCF runtime.|  
 |`ServiceHost`|Events emitted by the service host.|  
 |`WCFMessageLogging`|WCF message logging events.|  

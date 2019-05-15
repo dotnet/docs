@@ -173,7 +173,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      The following example illustrates the completed workflow.  
   
-     ![Completed state machine workflow from the Getting Started Tutorial](./media/how-to-create-a-state-machine-workflow/getting-started-tutorial-complete-state-machine-workflow.jpg)  
+     ![Illustration that shows the completed state machine workflow.](./media/how-to-create-a-state-machine-workflow/complete-state-machine-workflow.jpg)  
   
 ### To build the workflow  
   

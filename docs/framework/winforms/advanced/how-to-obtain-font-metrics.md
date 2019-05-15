@@ -29,7 +29,7 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
 ## Example  
  The following example displays the metrics for the regular style of the Arial font family. The code also creates a <xref:System.Drawing.Font> object (based on the Arial family) with size 16 pixels and displays the metrics (in pixels) for that particular <xref:System.Drawing.Font> object.  
   
- The following illustration shows the output of the example code.  
+ The following illustration shows the output of the example code:
   
  ![Example code output of Arial font](./media/how-to-obtain-font-metrics/example-output-code-arial-font.png "Example code output of Arial font")  
   

@@ -66,7 +66,7 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
  ![Shows gradient in the line and ellipse.](./media/how-to-create-a-linear-gradient/gradient-line-ellipse.png)  
   
-### To create diagonal linear gradients  
+## To create diagonal linear gradients  
   
 - Pass in the opaque blue and opaque green as the third and fourth argument, respectively.  
   

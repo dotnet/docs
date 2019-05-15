@@ -29,6 +29,6 @@ Text in brackets are placeholders; replace the text with the requested informati
 <!-- Do not modify anything below this line -->
 
 ---
-### Docs issue header
+#### Issue metadata
 
 * Issue type: breaking-change

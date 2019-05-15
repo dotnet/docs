@@ -27,7 +27,7 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
  ![Shows gradient in the line, ellipse, and rectangle.](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png)  
   
-### To use horizontal linear gradients  
+## To use horizontal linear gradients  
   
 - Pass in the opaque red and opaque blue as the third and fourth argument, respectively.  
   

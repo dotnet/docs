@@ -1,8 +1,6 @@
 ---
 title: General guidance
 description: .NET Microservices Architecture for Containerized .NET Applications | General guidance
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/11/2018
 ---
 # General guidance

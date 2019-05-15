@@ -1,8 +1,6 @@
 ---
 title: When to deploy Windows Containers to Azure Container Instances (ACI)
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Azure Container Instances (ACI)
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/29/2018
 ---
 

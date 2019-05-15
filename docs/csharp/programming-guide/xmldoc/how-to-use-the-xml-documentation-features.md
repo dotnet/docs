@@ -130,4 +130,4 @@ XML documentation starts with ///. When you create a new project, the wizards pu
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
-- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/index.md)

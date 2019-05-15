@@ -1,8 +1,6 @@
 ---
 title: Official .NET Docker images
 description: .NET Microservices Architecture for Containerized .NET Applications | Official .NET Docker images
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 01/07/2019
 ---
 

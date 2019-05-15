@@ -1,8 +1,6 @@
 ---
 title: What is Docker?
 description: .NET Microservices Architecture for Containerized .NET Applications | What is Docker?
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 08/31/2018
 ---
 # What is Docker?

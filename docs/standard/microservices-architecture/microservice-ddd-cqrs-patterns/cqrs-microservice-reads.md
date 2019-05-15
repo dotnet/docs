@@ -1,8 +1,6 @@
 ---
 title: Implementing reads/queries in a CQRS microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the implementation of the queries side of CQRS on the ordering microservice in eShopOnContainers using Dapper.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Implement reads/queries in a CQRS microservice

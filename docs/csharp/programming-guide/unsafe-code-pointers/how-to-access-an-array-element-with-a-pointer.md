@@ -38,8 +38,6 @@ Notice that the expression `charPointer[i]` is equivalent to the expression `*(c
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
-- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Types](../../../csharp/language-reference/keywords/types.md)
 - [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
 - [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)

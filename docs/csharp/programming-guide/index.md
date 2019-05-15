@@ -60,7 +60,7 @@ This section provides detailed information on key C# language features and featu
   
  [Unsafe Code and Pointers](../../csharp/programming-guide/unsafe-code-pointers/index.md)  
   
- [XML Documentation Comments](../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+ [XML Documentation Comments](../../csharp/programming-guide/xmldoc/index.md)  
   
 ## Platform Sections  
  [Application Domains](../../framework/app-domains/application-domains.md)  

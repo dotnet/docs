@@ -207,7 +207,7 @@ items:
 - title: New object initialization syntax
   durationInMinutes: 2
   content: |
-    Object initializer syntax now supports initializing *indexers* as well as properties and fields. This addition makes it easier to initialize dictionaries, and other types. Start with a dictionary. Run the following code in the interactive window:
+    Object initializer syntax now supports initializing *indexers* as well as properties and fields. This addition makes it easier to initialize dictionaries and other types. Start with a dictionary. Run the following code in the interactive window:
 
     ```csharp
     var messages = new Dictionary<int, string>
@@ -220,11 +220,11 @@ items:
     Console.WriteLine(messages[302]);
     ```
     
-    This syntax, setting a value in an indexer can be used for any type that has an accessible set accessor on an indexer.
+    This syntax, which sets a value in an indexer, can be used for any type that has an accessible set accessor on an indexer.
 
     A second change makes it easier to enable initializer syntax for types that represent sequences. Collection initializers can be used on any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method. That `Add` method can now be an extension method. 
     
-    The following example shows one scenario for this syntax. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. The `Extensions` class creates an additional `Add` method to add a new point from its three components. This sample does not currently run interactively due to restrictions in the environment.
+    The following example shows one scenario for this syntax. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that take three arguments. The `Extensions` class creates an additional `Add` method to add a new point from its three components. This sample does not currently run interactively due to restrictions in the environment.
 
     ```csharp
     public class Path : IEnumerable<Point3D>

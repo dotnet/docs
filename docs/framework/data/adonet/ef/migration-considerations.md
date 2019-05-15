@@ -63,7 +63,7 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   If the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not provide the functionality of DataSet needed by your application, you can still take advantage of the benefits of LINQ queries by using [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]. For more information, see [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md).  
   
 ## Considerations for Applications that Bind Data to Controls  
- The .NET Framework lets you encapsulate data in a data source, such as a DataSet or an [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source control, and then bind user interface elements to those data controls. The following list describes considerations for binding controls to Entity Framework data.  
+ The .NET Framework lets you encapsulate data in a data source, such as a DataSet or an ASP.NET data source control, and then bind user interface elements to those data controls. The following list describes considerations for binding controls to Entity Framework data.  
   
 - Binding data to controls.  
 
@@ -73,9 +73,9 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   
   For more information, see [Binding Objects to Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).  
   
-- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source controls.  
+- ASP.NET data source controls.  
 
-  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [EntityDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
+  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in ASP.NET Web applications. For more information, see [EntityDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
   
 ## Other Considerations  
  The following are considerations that may apply when you migrate specific types of applications to the Entity Framework.  
@@ -94,7 +94,7 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   
 - Applications that maintain state.  
 
-  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
+  ASP.NET Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
   
 ## See also
 

@@ -112,7 +112,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
 - Catch any exceptions that occur in the asynchronous operation and set the value of the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> property to that exception.  
   
 ### Threading and Contexts  
- For correct operation of your class, it is critical that the client's event handlers are invoked on the proper thread or context for the given application model, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] and Windows Forms applications. Two important helper classes are provided to ensure that your asynchronous class behaves correctly under any application model: <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager>.  
+ For correct operation of your class, it is critical that the client's event handlers are invoked on the proper thread or context for the given application model, including ASP.NET and Windows Forms applications. Two important helper classes are provided to ensure that your asynchronous class behaves correctly under any application model: <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager>.  
   
  <xref:System.ComponentModel.AsyncOperationManager> provides one method, <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A>, which returns an <xref:System.ComponentModel.AsyncOperation>. Your <em>MethodName</em>**Async** method calls <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A> and your class uses the returned <xref:System.ComponentModel.AsyncOperation> to track the lifetime of the asynchronous task.  
   

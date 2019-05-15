@@ -13,7 +13,7 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
   
 ### One-time setup procedure for WCF samples  
   
-1. Ensure that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] is set up. For more information about how to set up [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).  
+1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).  
   
 2. Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**  
   

@@ -6,7 +6,7 @@ ms.assetid: a5e57336-4290-41ea-936d-435593d97055
 # Corporate Purchase Process
 This sample shows how to create a very basic Request for Proposals (RFP) based purchase process with automatic best proposal selection. It combines <xref:System.Activities.Statements.Parallel>, <xref:System.Activities.Statements.ParallelForEach%601>, and <xref:System.Activities.Statements.ForEach%601> and a custom activity to create a workflow that represents the process.
 
- This sample contains an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client application that allows interacting with the process as different participants (as the original requester or a particular vendor).
+ This sample contains an ASP.NET client application that allows interacting with the process as different participants (as the original requester or a particular vendor).
 
 ## Requirements
 
@@ -30,7 +30,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 
 - Tracking.
 
-- Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients ([!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web applications and WinForms applications).
+- Hosting [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in different clients (ASP.NET Web applications and WinForms applications).
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -76,7 +76,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 |-------------|-----------------|  
 |Common|The entity objects used within the process (Request for Proposal, Vendor, and Vendor Proposal).|  
 |WfDefinition|The definition of the process (as a [!INCLUDE[wf1](../../../../includes/wf1-md.md)] program) and host (`PurchaseProcessHost`) used by client applications for creating and using instances of the purchase process workflow.|  
-|WebClient|An [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client application that allows the users to create and participate in instances of the purchase process. It uses a custom-created host to interact with the workflow engine.|  
+|WebClient|An ASP.NET client application that allows the users to create and participate in instances of the purchase process. It uses a custom-created host to interact with the workflow engine.|  
 |WinFormsClient|A Windows Forms client application that allows the users to create and participate in instances of the purchase process. It uses a custom-created host to interact with the workflow engine.|  
   
 ### WfDefinition  

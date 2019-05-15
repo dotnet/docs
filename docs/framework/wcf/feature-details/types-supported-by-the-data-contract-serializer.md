@@ -57,7 +57,7 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
   
 - Both structures and classes are supported.  
   
-- The <xref:System.Runtime.Serialization.DataContractSerializer> does not support the programming model used by the <xref:System.Xml.Serialization.XmlSerializer> and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services. In particular, it does not support attributes like <xref:System.Xml.Serialization.XmlElementAttribute> and <xref:System.Xml.Serialization.XmlAttributeAttribute>. To enable support for this programming model, WCF must be switched to use the <xref:System.Xml.Serialization.XmlSerializer> instead of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+- The <xref:System.Runtime.Serialization.DataContractSerializer> does not support the programming model used by the <xref:System.Xml.Serialization.XmlSerializer> and ASP.NET Web services. In particular, it does not support attributes like <xref:System.Xml.Serialization.XmlElementAttribute> and <xref:System.Xml.Serialization.XmlAttributeAttribute>. To enable support for this programming model, WCF must be switched to use the <xref:System.Xml.Serialization.XmlSerializer> instead of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 - The <xref:System.DBNull> type is treated in a special way. It is a singleton type, and upon deserialization the deserializer respects the singleton constraint and points all `DBNull` references to the singleton instance. Because `DBNull` is a serializable type, it demands <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> permission.  
   

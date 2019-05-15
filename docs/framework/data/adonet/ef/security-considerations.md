@@ -135,10 +135,10 @@ This topic describes security considerations that are specific to developing, de
  Access methods and properties of an <xref:System.Data.Objects.ObjectContext> within a try-catch block. Catching exceptions prevents unhandled exceptions from exposing entries in the <xref:System.Data.Objects.ObjectStateManager> or model information (such as table names) to users of your application.  
   
 ## Security Considerations for ASP.NET Applications  
- The following should be considered when you work with paths in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] applications.  
+ The following should be considered when you work with paths in ASP.NET applications.  
   
 #### Verify whether your host performs path checks.  
- When the `|DataDirectory|` (enclosed in pipe symbols) substitution string is used, [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] verifies that the resolved path is supported. For example, ".." is not allowed behind `DataDirectory`. That same check for resolving the Web application root operator (`~`) is performed by the process hosting [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)]. IIS performs this check; however, hosts other than IIS may not verify that the resolved path is supported. You should know the behavior of the host on which you deploy an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
+ When the `|DataDirectory|` (enclosed in pipe symbols) substitution string is used, [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] verifies that the resolved path is supported. For example, ".." is not allowed behind `DataDirectory`. That same check for resolving the Web application root operator (`~`) is performed by the process hosting ASP.NET. IIS performs this check; however, hosts other than IIS may not verify that the resolved path is supported. You should know the behavior of the host on which you deploy an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
   
 #### Do not make assumptions about resolved path names.  
  Although the values to which the root operator (`~`) and the `DataDirectory` substitution string resolve should remain constant during the application's runtime, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not restrict the host from modifying these values.  

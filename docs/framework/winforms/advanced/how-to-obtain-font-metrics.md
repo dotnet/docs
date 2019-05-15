@@ -31,7 +31,7 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
   
  The following illustration shows the output of the example code:
   
- ![Example code output of Arial font](./media/how-to-obtain-font-metrics/example-output-code-arial-font.png "Example code output of Arial font")  
+ ![Example code output of Arial font metrics.](./media/how-to-obtain-font-metrics/example-output-code-arial-font.png)  
   
  Note the first two lines of output in the preceding illustration. The <xref:System.Drawing.Font> object returns a size of 16, and the <xref:System.Drawing.FontFamily> object returns an em height of 2,048. These two numbers (16 and 2,048) are the key to converting between font design units and the units (in this case pixels) of the <xref:System.Drawing.Font> object.  
   

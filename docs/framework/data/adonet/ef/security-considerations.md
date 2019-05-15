@@ -135,22 +135,23 @@ This topic describes security considerations that are specific to developing, de
  Access methods and properties of an <xref:System.Data.Objects.ObjectContext> within a try-catch block. Catching exceptions prevents unhandled exceptions from exposing entries in the <xref:System.Data.Objects.ObjectStateManager> or model information (such as table names) to users of your application.  
   
 ## Security Considerations for ASP.NET Applications  
- The following should be considered when you work with paths in ASP.NET applications.  
+
+You should considered when you work with paths in ASP.NET applications.  
   
 #### Verify whether your host performs path checks.  
- When the `|DataDirectory|` (enclosed in pipe symbols) substitution string is used, [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] verifies that the resolved path is supported. For example, ".." is not allowed behind `DataDirectory`. That same check for resolving the Web application root operator (`~`) is performed by the process hosting ASP.NET. IIS performs this check; however, hosts other than IIS may not verify that the resolved path is supported. You should know the behavior of the host on which you deploy an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
+ When the `|DataDirectory|` (enclosed in pipe symbols) substitution string is used, ADO.NET verifies that the resolved path is supported. For example, ".." is not allowed behind `DataDirectory`. That same check for resolving the Web application root operator (`~`) is performed by the process hosting ASP.NET. IIS performs this check; however, hosts other than IIS may not verify that the resolved path is supported. You should know the behavior of the host on which you deploy an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.  
   
 #### Do not make assumptions about resolved path names.  
  Although the values to which the root operator (`~`) and the `DataDirectory` substitution string resolve should remain constant during the application's runtime, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not restrict the host from modifying these values.  
   
 #### Verify the path length before deployment.  
- Before deploying an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application, you should ensure that the values of the root operator (~) and `DataDirectory` substitution string do not exceed the limits of the path length in the operating system. [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data providers do not ensure that the path length is within valid limits.  
+ Before deploying an [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application, you should ensure that the values of the root operator (~) and `DataDirectory` substitution string do not exceed the limits of the path length in the operating system. ADO.NET data providers do not ensure that the path length is within valid limits.  
   
 ## Security Considerations for ADO.NET Metadata  
  The following security considerations apply when generating and working with model and mapping files.  
   
 #### Do not expose sensitive information through logging.  
- [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] metadata service components do not log any private information. If there are results that cannot be returned because of access restrictions, database management systems and file systems should return zero results instead of raising an exception that could contain sensitive information.  
+ADO.NET metadata service components do not log any private information. If there are results that cannot be returned because of access restrictions, database management systems and file systems should return zero results instead of raising an exception that could contain sensitive information.  
   
 #### Do not accept MetadataWorkspace objects from untrusted sources.  
  Applications should not accept instances of the <xref:System.Data.Metadata.Edm.MetadataWorkspace> class from untrusted sources. Instead, you should explicitly construct and populate a workspace from such a source.  

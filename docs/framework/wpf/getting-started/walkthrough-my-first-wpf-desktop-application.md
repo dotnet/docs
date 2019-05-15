@@ -54,17 +54,19 @@ The first step is to create the application infrastructure, which includes an ap
 
       The **Create a new project** dialog opens.
 
-      ![Create a new project dialog](./media/gettingstartedfigure0a.png)
+      ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
 
    2. In the **Language** dropdown, select either **C#** or **Visual Basic**.
 
+      ![New Project dialog with WPF app selected](./media/walkthrough-my-first-wpf-desktop-application/new-project-dialog-box.png)
+      
    3. Select the **WPF App (.NET Framework)** template and then select **Next**. 
     
    4. Select **Create a new project**.
 
       The **Configure a new project** dialog opens.
 
-      ![Configure a new project dialog](./media/gettingstartedfigure0c.png)
+      ![Configure a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/configure-new-project-dialog.png)
 
    5. Enter the project name **`ExpenseIt`** and then select **Create**.
 
@@ -219,7 +221,7 @@ In this section, you'll add two pages and an image to the application.
 
     The following illustration shows the application with the <xref:System.Windows.Navigation.NavigationWindow> buttons:
 
-    ![ExpenseIt sample screen shot](./media/gettingstartedfigure1.png)
+    ![Application after you build and run it.](./media/walkthrough-my-first-wpf-desktop-application/build-run-application.png)
 
 2. Close the application to return to Visual Studio.
 
@@ -285,9 +287,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
     The following illustration shows the controls you created:
 
-    ![ExpenseIt sample screen shot](./media/gettingstartedfigure2.png)
-
-3. Close the application to return to Visual Studio.
+![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png "Shows the controls you've added.")
 
 ## Add an image and a title
 
@@ -321,7 +321,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](./media/gettingstartedfigure3.png)
+![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png "Shows the image and title you just created.")
 
 ## Add code to handle events
 
@@ -356,7 +356,7 @@ The following illustration shows the results of what you just added:
 
 The following illustration shows the UI elements added to *ExpenseReportPage.xaml*.
 
-![ExpenseIt sample screen shot](./media/gettingstartedfigure4.png)
+![Shows the UI you just created for the ExpenseReportPage.](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
 
 ## Style controls
 
@@ -400,7 +400,7 @@ The appearance of various elements is often the same for all elements of the sam
 
 6. Build and run the application. The window appearance is the same as previously.
 
-    ![ExpenseIt sample screen shot](./media/gettingstartedfigure4.png)
+    ![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
 
 7. Close the application to return to Visual Studio.
 
@@ -468,7 +468,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
-![ExpenseIt sample screen shots](./media/gettingstartedfigure5.png)
+![Shows the elements and styles that you just applied.](./media/walkthrough-my-first-wpf-desktop-application/application-data-templates.png)
 
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET app development best practices, see the following topics:

@@ -139,4 +139,3 @@ Typically, C# programs have command line arguments. These articles teach you to 
 those command line arguments.
 
 - [Retrieve all command line arguments with `for`](../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md).
-- [Retrieve all command line arguments with `foreach`](../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md).

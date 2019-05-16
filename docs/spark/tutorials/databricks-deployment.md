@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Databricks
 description: Discover how to deploy a .NET for Apache Spark application to Databricks.
-ms.date: 05/14/2019
+ms.date: 05/17/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Databricks.
@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-Before you start, make sure you have the following:
+Before you start, do the following:
 
 * Download the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html).
 * Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
@@ -45,7 +45,7 @@ Before you start, make sure you have the following:
    You can run the following command on Linux.
 
    ```bash
-   foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
+   dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 
 3. Produce `<your app>.zip` for the published files.
@@ -53,7 +53,7 @@ Before you start, make sure you have the following:
    You can run the following command on Linux using `zip`.
 
    ```bash
-   foo@bar:~/path/to/app/bin/Release/netcoreapp2.1/ubuntu.16.04-x64/publish$ zip -r <your app>.zip .
+   zip -r <your app>.zip .
    ```
 
 4. Upload the following to a distributed file system (e.g., DBFS) that your cluster has access to:
@@ -96,15 +96,17 @@ This step is only required once for a cluster.
 
 7. After configuring the cluster appropriately, set the **Init Script** and create the cluster.
 
-   <img src="./media/databricks-deployment/deployment-databricks-init-script.png" alt="ScriptActionImage" width="600"/>
+   ![Script Action Image](./media/databricks-deployment/deployment-databricks-init-script.png)
 
 ## Run your app 
+
+You can use `set JAR` or `spark-submit` to submit your job to Databricks.
 
 ### Use Set JAR
 
 [Set JAR](https://docs.databricks.com/user-guide/jobs.html#create-a-job) allows you to submit a job to an existing active cluster.
 
-**One-time setup**
+#### One-time setup
 
 1. Go to your Databricks cluster and select **Jobs** from the left-side menu. Then select **Set JAR**.
 
@@ -119,7 +121,7 @@ This step is only required once for a cluster.
  
 4. Configure the **Cluster** to point to the existing cluster you created the **Init Script** for in the previous section.
 
-**Publish and run your app**
+#### Publish and run your app
 
 1. Use the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html) to upload your application to your Databricks cluster.
 

@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Azure HDInsight
 description: Discover how to deploy a .NET for Apache Spark application to HDInsight.
-ms.date: 05/14/2019
+ms.date: 05/17/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to HDInsight.
@@ -45,7 +45,7 @@ Before you start, make sure you have the following:
    You can run the following command on Linux.
 
    ```bash
-   foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
+   dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 
 3. Produce `<your app>.zip` for the published files.
@@ -53,7 +53,7 @@ Before you start, make sure you have the following:
    You can run the following command on Linux using `zip`.
 
    ```bash
-   foo@bar:~/path/to/app/bin/Release/netcoreapp2.1/ubuntu.16.04-x64/publish$ zip -r <your app>.zip .
+   zip -r <your app>.zip .
    ```
 
 4. Upload the following to a distributed file system (e.g., HDFS, WASB, ADLS) that your cluster has access to:
@@ -83,9 +83,11 @@ Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://
 |Node type(s)|Worker|
 |Parameters|Parameters to `install-worker.sh`. For example, if you uploaded `install-worker.sh` to Azure Data Lake then it would be `azure adl://<cluster name>.azuredatalakestore.net/<some dir>/Microsoft.Spark.Worker.<release>.tar.gz /usr/local/bin`.|
 
-<img src="./media/hdinsight-deployment/deployment-hdi-action-script.png" alt="ScriptActionImage" width="500"/>
+![Script Action Image](./media/hdinsight-deployment/deployment-hdi-action-script.png)
 
 ## Run your app
+
+You can submit your job to Azure HDInsight using `spark-submit` or Apache Livy.
 
 ### Use spark-submit
 
@@ -96,7 +98,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 1. Run `spark-submit`:
 
    ```bash
-   foo@bar:~$ $SPARK_HOME/bin/spark-submit \
+   spark-submit \
    --master yarn \
    --class org.apache.spark.deploy.DotnetRunner \
    --files <comma-separated list of assemblies that contain UDF definitions, if any> \
@@ -111,7 +113,7 @@ You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark 
 You can run the following command on Linux using `curl`:
 
 ```bash
-foo@bar:~$ curl -k -v -X POST "https://<your spark cluster>.azurehdinsight.net/livy/batches" \
+curl -k -v -X POST "https://<your spark cluster>.azurehdinsight.net/livy/batches" \
 -u "<hdinsight username>:<hdinsight password>" \
 -H "Content-Type: application/json" \
 -H "X-Requested-By: <hdinsight username>" \

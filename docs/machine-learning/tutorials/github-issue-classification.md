@@ -6,7 +6,7 @@ ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
 ---
-# Tutorial: Categorize support issues with multiclass classification in ML .NET
+# Tutorial: Categorize support issues with multiclass classification with ML .NET
 
 This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio.
 

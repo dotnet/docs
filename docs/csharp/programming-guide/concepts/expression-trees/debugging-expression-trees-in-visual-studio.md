@@ -8,11 +8,11 @@ You can analyze the structure and content of expression trees when you debug you
 
 ![DebugView of expression tree within the Visual Studio debugger](media/debugging-expression-trees-in-visual-studio/debugview.png)
 
-Since `DebugView` is a string, you can use the [built-in Text Visualizer](https://docs.microsoft.com/en-us/visualstudio/debugger/view-strings-visualizer?view=vs-2019#open-a-string-visualizer) to view it across multiple lines, by selecting **Text Visualizer** from the magnifying glass icon next to the `DebugView` label.
+Since `DebugView` is a string, you can use the [built-in Text Visualizer](https://docs.microsoft.com/visualstudio/debugger/view-strings-visualizer#open-a-string-visualizer) to view it across multiple lines, by selecting **Text Visualizer** from the magnifying glass icon next to the `DebugView` label.
 
  ![Text Visualizer applied to results of `DebugView`](media/debugging-expression-trees-in-visual-studio/string_visualizer.png)
 
-Alternatively, you can install and use [a custom visualizer](https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-visualizers-of-data) for expression trees:
+Alternatively, you can install and use [a custom visualizer](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data) for expression trees:
 
 * [Readable Expressions](https://github.com/agileobjects/ReadableExpressions), available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1232914.ReadableExpressionsVisualizers), which renders the expression tree as C# code:
 
@@ -32,7 +32,7 @@ Alternatively, you can install and use [a custom visualizer](https://docs.micros
 
 2. Click the visualizer you want to use.  
 
-# `DebugView` syntax 
+## `DebugView` syntax 
 
 Each expression type is displayed by the `DebugView` property as described in the following sections.  
   

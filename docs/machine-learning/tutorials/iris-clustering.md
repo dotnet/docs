@@ -1,14 +1,14 @@
 ---
-title: Categorize iris flowers using a clustering model 
+title: Categorize iris flowers - k-means clustering 
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.author: johalex
-ms.date: 05/02/2019
+ms.date: 05/16/2019
 ms.topic: tutorial
-ms.custom: mvc, seodec18
-#Customer intent: As a developer, I want to use ML.NET so that I can build a model to cluster iris flowers based on its parameters.
+ms.custom: mvc, seodec18, title-hack-0516
+#Customer intent: As a developer, I want to use ML.NET so that I can build a k-means cluterting model to categorize iris flowers based on its parameters.
 ---
-# Tutorial: Categorize iris flowers using a clustering model with ML.NET
+# Tutorial: Categorize iris flowers using k-means clustering with ML.NET
 
 This tutorial illustrates how to use ML.NET to build a [clustering model](../resources/tasks.md#clustering) for the [iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set).
 

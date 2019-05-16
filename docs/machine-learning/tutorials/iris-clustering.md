@@ -1,5 +1,5 @@
 ---
-title: Categorize iris flowers - k-means clustering 
+title: 'Tutorial: Categorize iris flowers - k-means clustering'
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.author: johalex

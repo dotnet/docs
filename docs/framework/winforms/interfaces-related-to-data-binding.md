@@ -15,7 +15,7 @@ ms.assetid: 14e49a2e-3e46-47ca-b491-70d546333277
 ---
 # Interfaces Related to Data Binding
 
-With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many different data structures to suit the binding needs of your application and the data you are working with. You may want to create your own classes that provide or consume data in Windows Forms. These objects can offer varying levels of functionality and complexity, from basic data binding, to providing design-time support, error checking, change notification, or even support for a structured rollback of the changes made to the data itself.
+With ADO.NET, you can create many different data structures to suit the binding needs of your application and the data you are working with. You may want to create your own classes that provide or consume data in Windows Forms. These objects can offer varying levels of functionality and complexity, from basic data binding, to providing design-time support, error checking, change notification, or even support for a structured rollback of the changes made to the data itself.
 
 ## Consumers of Data-Binding Interfaces
 

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Predict prices using a regression model'
+title: 'Tutorial: Predict prices using regression'
 description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
 author: jralexander
 ms.author: johalex
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.custom: mvc, seodec18, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
 ---
-# Tutorial: Predict prices using a regression model with ML.NET
+# Tutorial: Predict prices using regression with ML.NET
 
 This tutorial illustrates how to build a [regression model](../resources/glossary.md#regression) using ML.NET to predict prices, specifically, New York City taxi fares.
 

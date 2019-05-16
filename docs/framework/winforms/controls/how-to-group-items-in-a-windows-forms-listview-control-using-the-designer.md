@@ -8,7 +8,8 @@ helpviewer_keywords:
 ms.assetid: 8b615000-69d9-4c64-acaf-b54fa09b69e3
 ---
 # How to: Group Items in a Windows Forms ListView Control Using the Designer
-The grouping feature of the <xref:System.Windows.Forms.ListView> control enables you to display related sets of items in groups. These groups are separated on the screen by horizontal group headers that contain the group titles. You can use <xref:System.Windows.Forms.ListView> groups to make navigating large lists easier by grouping items alphabetically, by date, or by any other logical grouping. The following image shows some grouped items.  
+
+The grouping feature of the <xref:System.Windows.Forms.ListView> control enables you to display related sets of items in groups. These groups are separated on the screen by horizontal group headers that contain the group titles. You can use <xref:System.Windows.Forms.ListView> groups to make navigating large lists easier by grouping items alphabetically, by date, or by any other logical grouping. The following image shows some grouped items:
   
  ![Numbers separated into odd and even groups.](./media/how-to-group-items-in-a-windows-forms-listview-control-using-the-designer/odd-even-list-view-groups.gif)  
   

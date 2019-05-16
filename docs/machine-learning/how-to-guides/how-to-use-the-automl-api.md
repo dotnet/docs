@@ -99,15 +99,15 @@ Some examples include:
     ```
 
 The list of supported trainers per ML task can be found at the corresponding link below:
-* [Supported Binary Classification Algorithms](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.binaryclassificationtrainer?view=automl-dotnet)
-* [Supported Multiclass Classification Algorithms](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.multiclassclassificationtrainer?view=automl-dotnet)
-* [Supported Regression Algorithms](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.regressiontrainer?view=automl-dotnet)
+* [Supported Binary Classification Algorithms](xref:Microsoft.ML.AutoML.BinaryClassificationTrainer)
+* [Supported Multiclass Classification Algorithms](xref:Microsoft.ML.AutoML.MultiClassClassificationTrainer)
+* [Supported Regression Algorithms](xref:Microsoft.ML.AutoML.RegressionTrainer)
 
 ## Optimizing metric
 
 The optimizing metric, as shown in the example above, determines the metric to be optimized during model training. The optimizing metric you can select is determined by the task type you choose. Below is a list of available metrics.
 
-|[Binary Classification](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.binaryclassificationmetric?view=automl-dotnet) | [Multiclass Classification](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.multiclassclassificationmetric?view=automl-dotnet) | [Regression](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.regressionmetric?view=automl-dotnet)
+|[Binary Classification](xref:Microsoft.ML.AutoML.binaryclassificationmetric?view=automl-dotnet) | [Multiclass Classification](xref:Microsoft.ML.AutoML.MultiClassClassificationMetric) |[Regression](xref:Microsoft.ML.AutoML.RegressionMetric)
 |-- |-- |--
 |Accuracy| LogLoss | RSquared
 |AreaUnderPrecisionRecallCurve | LogLossReduction | MeanAbsoluteError
@@ -205,12 +205,9 @@ Console.WriteLine($"Root Mean Squared Error: {metrics.RootMeanSquaredError:0.##}
 ```
 
 The following are all the available metrics per ML task:
-* [Binary classification metrics](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.binaryclassificationmetric?view=automl-dotnet
-)
-* [Multiclass classification metrics](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.multiclassclassificationmetric?view=automl-dotnet
-)
-* [Regression metrics](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl.regressionmetric?view=automl-dotnet
-)
+* [Binary classification metrics](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)
+* [Multiclass classification metrics](xref:Microsoft.ML.AutoML.MultiClassClassificationMetric)
+* [Regression metrics](xref:Microsoft.ML.AutoML.RegressionMetric)
 
 ## See also
 

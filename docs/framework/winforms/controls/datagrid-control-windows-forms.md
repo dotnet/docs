@@ -13,7 +13,7 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the `DataGrid` control; however, the `DataGrid` control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
- The Windows Forms `DataGrid` control provides a user interface to [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] datasets, displaying tabular data and enabling updates to the data source.  
+ The Windows Forms `DataGrid` control provides a user interface to ADO.NET datasets, displaying tabular data and enabling updates to the data source.  
   
  When the `DataGrid` control is set to a valid data source, the control is automatically populated, creating columns and rows based on the shape of the data. The `DataGrid` control can be used to display either a single table or the hierarchical relationships between a set of tables.  
   
@@ -28,10 +28,10 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
  Describes how to add tables and columns to the `DataGrid` control programmatically.  
   
  [How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer](bind-wf-datagrid-control-to-a-data-source-using-the-designer.md)  
- Describes how to bind an [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] dataset to the `DataGrid` control using the designer.  
+ Describes how to bind an ADO.NET dataset to the `DataGrid` control using the designer.  
   
  [How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
- Describes how to bind an [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] dataset to the `DataGrid` control.  
+ Describes how to bind an ADO.NET dataset to the `DataGrid` control.  
   
  [How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](change-displayed-data-at-run-time-wf-datagrid-control.md)  
  Describes how to change data programmatically in the `DataGrid` control.  

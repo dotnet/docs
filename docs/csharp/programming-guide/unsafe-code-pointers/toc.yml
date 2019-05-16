@@ -4,12 +4,12 @@
   - name: Fixed Size Buffers
     href: fixed-size-buffers.md
   - name: Pointer types
-    href: pointer-types.md
     items:
+    - name: Overview
+      href: pointer-types.md
     - name: Pointer Conversions
       href: pointer-conversions.md
     - name: Pointer Expressions
-      href: pointer-expressions.md
       items:
       - name: "How to: Obtain the Value of a Pointer Variable"
         href: how-to-obtain-the-value-of-a-pointer-variable.md
@@ -20,7 +20,6 @@
       - name: "How to: Access an Array Element with a Pointer"
         href: how-to-access-an-array-element-with-a-pointer.md
       - name: Manipulating Pointers
-        href: manipulating-pointers.md
         items:
         - name: "How to: Increment and Decrement Pointers"
           href: how-to-increment-and-decrement-pointers.md

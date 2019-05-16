@@ -47,7 +47,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 2. In the **Model Browser**, right-click the model, click **Properties**, and then note the name of the entity container.
 
-3. In **Solution Explorer**, right-click the name of your [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project, and then click **Add** > **New Item**.
+3. In **Solution Explorer**, right-click the name of your ASP.NET project, and then click **Add** > **New Item**.
 
 4. In the **Add New Item** dialog box, select the **WCF Data Service** template in the **Web** category.
 

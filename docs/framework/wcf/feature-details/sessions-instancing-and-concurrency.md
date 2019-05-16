@@ -21,13 +21,13 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
 - There is no general data store associated with a WCF session.  
   
- If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
+ If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in ASP.NET applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
   
-- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are always server-initiated.  
+- ASP.NET sessions are always server-initiated.  
   
-- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions are implicitly unordered.  
+- ASP.NET sessions are implicitly unordered.  
   
-- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] sessions provide a general data storage mechanism across requests.  
+- ASP.NET sessions provide a general data storage mechanism across requests.  
   
  Client applications and service applications interact with sessions in different ways. Client applications initiate sessions and then receive and process the messages sent within the session. Service applications can use sessions as an extensibility point to add additional behavior. This is done by working directly with the <xref:System.ServiceModel.InstanceContext> or implementing a custom instance context provider.  
   

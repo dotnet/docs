@@ -1,8 +1,6 @@
 ---
 title: Implementing the microservice application layer using the Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the Dependency Injection and the Mediator patterns and their implementation details in the Web API application layer.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 

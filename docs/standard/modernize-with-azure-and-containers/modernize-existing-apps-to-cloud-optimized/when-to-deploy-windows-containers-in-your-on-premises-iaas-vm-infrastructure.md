@@ -1,8 +1,6 @@
 ---
 title: When to deploy Windows Containers in your on-premises IaaS VM infrastructure
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers in your on-premises IaaS VM infrastructure
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 # When to deploy Windows Containers in your on-premises IaaS VM infrastructure

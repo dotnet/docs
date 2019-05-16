@@ -42,9 +42,8 @@ p--;
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
 - [C# Operators](../../../csharp/language-reference/operators/index.md)
-- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)
+- [Manipulating Pointers](../../../csharp/programming-guide/unsafe-code-pointers/how-to-increment-and-decrement-pointers.md)
 - [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Types](../../../csharp/language-reference/keywords/types.md)
 - [unsafe](../../../csharp/language-reference/keywords/unsafe.md)

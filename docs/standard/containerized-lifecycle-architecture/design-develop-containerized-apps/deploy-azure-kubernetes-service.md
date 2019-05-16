@@ -1,8 +1,6 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Learn how to deploy an app using Azure Kubernetes Service.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Deploy to Azure Kubernetes Service (AKS)

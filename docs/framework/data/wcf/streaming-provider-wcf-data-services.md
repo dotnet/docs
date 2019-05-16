@@ -82,7 +82,7 @@ For general information about how to create a data service, see [Configuring the
 
 ## Enabling Large Binary Streams in the Hosting Environment
 
-When you create a data service in an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web application, Windows Communication Foundation (WCF) is used to provide the HTTP protocol implementation. By default, WCF limits the size of HTTP messages to only 65K bytes. To be able to stream large binary data to and from the data service, you must also configure the Web application to enable large binary files and to use streams for transfer. To do this, add the following in the `<configuration />` element of the application's Web.config file:
+When you create a data service in an ASP.NET Web application, Windows Communication Foundation (WCF) is used to provide the HTTP protocol implementation. By default, WCF limits the size of HTTP messages to only 65K bytes. To be able to stream large binary data to and from the data service, you must also configure the Web application to enable large binary files and to use streams for transfer. To do this, add the following in the `<configuration />` element of the application's Web.config file:
 
 > [!NOTE]
 > You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by WCF.
@@ -119,7 +119,7 @@ The following are things to consider when you implement a streaming provider and
 
 - When you implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>, or <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> methods, you must use the eTag and Content-Type values that are supplied as method parameters. Do not set eTag or Content-Type headers in your <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider implementation.
 
-- By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
+- By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the ASP.NET Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on ASP.NET Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
 
 <a name="versioning"></a>
 

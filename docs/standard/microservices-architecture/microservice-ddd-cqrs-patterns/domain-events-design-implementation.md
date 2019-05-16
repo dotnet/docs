@@ -1,8 +1,6 @@
 ---
 title: Domain events. design and implementation
 description: .NET Microservices Architecture for Containerized .NET Applications | Get an in-depth view of domain events, a key concept to establish communication between aggregates.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Domain events: design and implementation

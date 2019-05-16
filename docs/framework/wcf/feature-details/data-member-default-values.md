@@ -48,7 +48,7 @@ In the .NET Framework, types have a concept of *default values*. For example, fo
   
 - The actual default value to use is not present in the schema. It is up to the receiving endpoint to appropriately interpret a missing element.  
   
- On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services.  
+ On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming ASP.NET Web services.  
   
 ## See also
 

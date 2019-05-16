@@ -1,8 +1,6 @@
 ---
 title: Docker terminology
 description: Learn some basic terminology that's used everyday when working with Docker.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Docker terminology

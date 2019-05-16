@@ -1,8 +1,6 @@
 ---
 title: Choosing Azure compute platforms for container-based applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Choosing Azure compute platforms for container-based applications
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 05/04/2018
 ---
 # Choosing Azure compute platforms for container-based applications

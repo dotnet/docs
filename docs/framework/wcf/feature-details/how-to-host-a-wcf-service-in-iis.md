@@ -9,7 +9,7 @@ ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
 # How to: Host a WCF Service in IIS
 This topic outlines the basic steps required to create a Windows Communication Foundation (WCF) service that is hosted in Internet Information Services (IIS). This topic assumes you are familiar with IIS and understand how to use the IIS management tool to create and manage IIS applications. For more information about IIS see [Internet Information Services](https://go.microsoft.com/fwlink/?LinkId=132449). A WCF service that runs in the IIS environment takes full advantage of IIS features, such as process recycling, idle shutdown, process health monitoring, and message-based activation. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. You can use IIS hosting only with an HTTP transport.  
   
- For more information about how WCF and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] interact, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md). For more information about configuring security, see [Security](../../../../docs/framework/wcf/feature-details/security.md).  
+ For more information about how WCF and ASP.NET interact, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md). For more information about configuring security, see [Security](../../../../docs/framework/wcf/feature-details/security.md).  
   
  For the source copy of this example, see [IIS Hosting Using Inline Code](../../../../docs/framework/wcf/samples/iis-hosting-using-inline-code.md).  
   
@@ -17,7 +17,7 @@ This topic outlines the basic steps required to create a Windows Communication F
   
 1. Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](https://go.microsoft.com/fwlink/?LinkID=132128)  
   
-2. Create a new folder for your application files called "IISHostedCalcService", ensure that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] has access to the contents of the folder, and use the IIS management tool to create a new IIS application that is physically located in this application directory. When creating an alias for the application directory use "IISHostedCalc".  
+2. Create a new folder for your application files called "IISHostedCalcService", ensure that ASP.NET has access to the contents of the folder, and use the IIS management tool to create a new IIS application that is physically located in this application directory. When creating an alias for the application directory use "IISHostedCalc".  
   
 3. Create a new file named "service.svc" in the application directory. Edit this file by adding the following @ServiceHost element.  
   

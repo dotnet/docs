@@ -1,8 +1,6 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Real production applications have to be deployed and managed with orchestrators that handle the health, workload and life cycles of all containers.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability

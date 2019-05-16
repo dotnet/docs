@@ -60,7 +60,7 @@ The first step is to create a control that has a serializable collection as a pr
 
 8. Press **F5** to build the project and run your control in the **UserControl Test Container**.
 
-9. Find the `Strings` property in the <xref:System.Windows.Forms.PropertyGrid> of the **UserControl Test Container**. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.
+9. Find the `Strings` property in the <xref:System.Windows.Forms.PropertyGrid> of the **UserControl Test Container**. Click the `Strings` property, then click the ellipsis (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.
 
 10. Enter several strings in the **String Collection Editor**. Separate them by pressing the **Enter** key at the end of each string. Click **OK** when you are finished entering strings.
 
@@ -79,7 +79,7 @@ To test the serialization behavior of your control, you will place it on a form 
 
 3. Place a `SerializationDemoControl` on your form.
 
-4. Find the `Strings` property in the **Properties** window. Click the `Strings` property, then click the ellipsis (![Use the ellipsis button to access the CellStyle Builder dialog box.](./media/serializing-collections-designerserializationvisibilityattribute/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.
+4. Find the `Strings` property in the **Properties** window. Click the `Strings` property, then click the ellipsis (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) button to open the **String Collection Editor**.
 
 5. Type several strings in the **String Collection Editor**. Separate them by pressing the ENTER key at the end of each string. Click **OK** when you are finished entering strings.
 

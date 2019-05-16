@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the thickness of a frame around a rectangle. Four <see cref="T:System.Double" /> values describe the <see cref="P:Windows.UI.Xaml.Thickness.Left" />, <see cref="P:Windows.UI.Xaml.Thickness.Top" />, <see cref="P:Windows.UI.Xaml.Thickness.Right" />, and <see cref="P:Windows.UI.Xaml.Thickness.Bottom" /> sides of the rectangle, respectively. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
         <Parameter Name="uniformLength" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformLength">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uniformLength">The uniform length applied to all four sides of the bounding rectangle.</param>
+        <summary>Initializes a <see cref="T:Windows.UI.Xaml.Thickness" /> structure that has the specified uniform length on each side.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,11 +66,11 @@
         <Parameter Name="bottom" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="top">To be added.</param>
-        <param name="right">To be added.</param>
-        <param name="bottom">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="left">The thickness for the left side of the rectangle.</param>
+        <param name="top">The thickness for the upper side of the rectangle.</param>
+        <param name="right">The thickness for the right side of the rectangle</param>
+        <param name="bottom">The thickness for the lower side of the rectangle.</param>
+        <summary>Initializes a <see cref="T:Windows.UI.Xaml.Thickness" /> structure that has specific lengths (supplied as a <see cref="T:System.Double" />) applied to each side of the rectangle.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the width, in pixels, of the lower side of the bounding rectangle.</summary>
+        <value>The width, in pixels, of the lower side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,9 +121,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Compares this <see cref="T:Windows.UI.Xaml.Thickness" /> structure to another <see cref="T:System.Object" /> for equality.</summary>
+        <returns><see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,9 +146,9 @@
         <Parameter Name="thickness" Type="Windows.UI.Xaml.Thickness" />
       </Parameters>
       <Docs>
-        <param name="thickness">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="thickness">An instance of <see cref="T:Windows.UI.Xaml.Thickness" /> to compare for equality.</param>
+        <summary>Compares this <see cref="T:Windows.UI.Xaml.Thickness" /> structure to another <see cref="T:Windows.UI.Xaml.Thickness" /> structure for equality.</summary>
+        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code of the struct.</summary>
+        <returns>A hash code for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the width, in pixels, of the left side of the bounding rectangle.</summary>
+        <value>The width, in pixels, of the left side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +223,10 @@
         <Parameter Name="t2" Type="Windows.UI.Xaml.Thickness" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="t1">The first struct to compare.</param>
+        <param name="t2">The other struct to compare.</param>
+        <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.Thickness" /> structs for equality.</summary>
+        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,10 +251,10 @@
         <Parameter Name="t2" Type="Windows.UI.Xaml.Thickness" />
       </Parameters>
       <Docs>
-        <param name="t1">To be added.</param>
-        <param name="t2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="t1">The first struct to compare.</param>
+        <param name="t2">The other struct to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.Thickness" /> structs for inequality.</summary>
+        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,8 +275,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the width, in pixels, of the right side of the bounding rectangle.</summary>
+        <value>The width, in pixels, of the right side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,8 +297,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the width, in pixels, of the upper side of the bounding rectangle.</summary>
+        <value>The width, in pixels, of the upper side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,8 +325,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string representation of the <see cref="T:Windows.UI.Xaml.Thickness" /> structure.</summary>
+        <returns>A string that represents the <see cref="T:Windows.UI.Xaml.Thickness" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the kind of value that a <see cref="T:Windows.UI.Xaml.GridLength" /> object is holding. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The size is determined by the size properties of the content object.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -62,7 +62,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value is expressed in pixels.</summary>
       </Docs>
     </Member>
     <Member MemberName="Star">
@@ -83,7 +83,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value is expressed as a weighted proportion of available space.</summary>
       </Docs>
     </Member>
   </Members>

@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes the characteristics of a rounded corner, such as can be applied to a <see cref="T:Windows.UI.Xaml.Controls.Border" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,8 +41,8 @@
         <Parameter Name="uniformRadius" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="uniformRadius">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="uniformRadius">A uniform radius applied to all four <see cref="T:Windows.UI.Xaml.CornerRadius" /> properties (<see cref="P:Windows.UI.Xaml.CornerRadius.TopLeft" />, <see cref="P:Windows.UI.Xaml.CornerRadius.TopRight" />, <see cref="P:Windows.UI.Xaml.CornerRadius.BottomRight" />, <see cref="P:Windows.UI.Xaml.CornerRadius.BottomLeft" />).</param>
+        <summary>Initializes a new <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure, applying the same uniform radius to all its corners.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,11 +66,11 @@
         <Parameter Name="bottomLeft" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="topLeft">To be added.</param>
-        <param name="topRight">To be added.</param>
-        <param name="bottomRight">To be added.</param>
-        <param name="bottomLeft">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="topLeft">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.TopLeft" /> value.</param>
+        <param name="topRight">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.TopRight" /> value.</param>
+        <param name="bottomRight">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.BottomRight" /> value.</param>
+        <param name="bottomLeft">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.BottomLeft" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct, applying specific radius values to its corners.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
+        <value>The radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
+        <value>The radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,9 +143,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The object to compare.</param>
+        <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct to another object for equality.</summary>
+        <returns><see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,9 +168,9 @@
         <Parameter Name="cornerRadius" Type="Windows.UI.Xaml.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cornerRadius">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cornerRadius">An instance of <see cref="T:Windows.UI.Xaml.CornerRadius" /> to compare for equality.</param>
+        <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct to another <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure for equality.</summary>
+        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,8 +197,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code of the structure.</summary>
+        <returns>A hash code for this <see cref="T:Windows.UI.Xaml.CornerRadius" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +223,10 @@
         <Parameter Name="cr2" Type="Windows.UI.Xaml.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cr1">To be added.</param>
-        <param name="cr2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cr1">The first struct to compare.</param>
+        <param name="cr2">The other struct to compare.</param>
+        <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for equality.</summary>
+        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,10 +251,10 @@
         <Parameter Name="cr2" Type="Windows.UI.Xaml.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cr1">To be added.</param>
-        <param name="cr2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cr1">The first struct to compare.</param>
+        <param name="cr2">The other struct to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for inequality.</summary>
+        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,8 +275,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
+        <value>The radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,8 +297,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
+        <value>The radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,8 +325,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the string representation of the <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure.</summary>
+        <returns>A string that represents the <see cref="T:Windows.UI.Xaml.CornerRadius" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

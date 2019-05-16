@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies whether a <see cref="T:Windows.UI.Xaml.Duration" /> has a special value of Automatic or Forever, or has valid information in its <see cref="T:System.TimeSpan" /> component. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Has the "Automatic" special value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forever">
@@ -62,7 +62,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Has the "Forever" special value.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeSpan">
@@ -83,7 +83,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Has valid information in the <see cref="T:System.TimeSpan" /> component.</summary>
       </Docs>
     </Member>
   </Members>

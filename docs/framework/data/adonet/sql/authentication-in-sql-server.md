@@ -37,7 +37,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
   
 - Users connect from different, non-trusted domains.  
   
-- Internet applications, such as [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)].  
+- Internet applications, such as ASP.NET.  
   
 > [!NOTE]
 >  Specifying Windows authentication does not disable SQL Server logins. Use the ALTER LOGIN DISABLE [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statement to disable highly-privileged SQL Server logins.  

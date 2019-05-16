@@ -26,16 +26,16 @@ This section covers interoperability and integration with Windows Communication 
  Describes how to migrate a WSE 3.0 Web service to a WCF service.  
   
  [Interoperability with ASP.NET Web Services](../../../../docs/framework/wcf/feature-details/interop-with-aspnet-web-services.md)  
- Describes how WCF can interoperate with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services.  
+ Describes how WCF can interoperate with ASP.NET Web services.  
   
  [Migrating ASP.NET Web Services to WCF](../../../../docs/framework/wcf/feature-details/migrating-aspnet-web-services-to-wcf.md)  
- Describes how to migrate an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service to a WCF service.  
+ Describes how to migrate an ASP.NET Web service to a WCF service.  
   
  [Migrating ASP.NET Web Services to WCF](../../../../docs/framework/wcf/feature-details/migrating-aspnet-web-services-to-wcf.md)  
- Describes how to migrate an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service to a WCF service.  
+ Describes how to migrate an ASP.NET Web service to a WCF service.  
   
  [Migrating ASP.NET Web Services to WCF](../../../../docs/framework/wcf/feature-details/migrating-aspnet-web-services-to-wcf.md)  
- Describes how to migrate an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service to a WCF service.  
+ Describes how to migrate an ASP.NET Web service to a WCF service.  
   
  [Interoperability with POX Applications](../../../../docs/framework/wcf/feature-details/interoperability-with-pox-applications.md)  
  Describes how WCF provides both services and clients that use "Plain Old XML" (POX) messages.  

@@ -80,7 +80,7 @@ The sample demonstrates how to create a binding that is designed to support stre
   
 ### To set up, build, and run the sample  
   
-1. Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  

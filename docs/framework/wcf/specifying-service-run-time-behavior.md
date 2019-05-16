@@ -71,7 +71,7 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
 ### Service Behaviors  
  The following behaviors operate on services.  
   
-- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a WCF service to indicate whether that service can be run in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Compatibility Mode.  
+- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a WCF service to indicate whether that service can be run in ASP.NET Compatibility Mode.  
   
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>. Controls how the service authorizes client claims.  
   

@@ -188,7 +188,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BKMK_q10"></a>   
 ## What is the base address? How does it relate to an endpoint address?  
- A base address is the root address for a <xref:System.ServiceModel.ServiceHost> class. By default, if you add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class into your service configuration, the Web Services Description Language (WSDL) for all endpoints the host publishes are retrieved from the HTTP base address, plus any relative address provided to the metadata behavior, plus "?wsdl". If you are familiar with [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] and IIS, the base address is equivalent to the virtual directory.  
+ A base address is the root address for a <xref:System.ServiceModel.ServiceHost> class. By default, if you add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class into your service configuration, the Web Services Description Language (WSDL) for all endpoints the host publishes are retrieved from the HTTP base address, plus any relative address provided to the metadata behavior, plus "?wsdl". If you are familiar with ASP.NET and IIS, the base address is equivalent to the virtual directory.  
   
 ## Sharing a port between a service endpoint and a mex endpoint using the NetTcpBinding  
  If you specify the base address for a service as net.tcp://MyServer:8080/MyService and add the following endpoints:  

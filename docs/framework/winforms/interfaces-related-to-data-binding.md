@@ -76,7 +76,7 @@ The following interfaces are designed to be consumed by Windows Forms controls:
 
 - <xref:System.Collections.IEnumerable> interface
 
-  A class that implements the <xref:System.Collections.IEnumerable> interface is typically consumed by [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)]. Windows Forms support for this interface is only available through the <xref:System.Windows.Forms.BindingSource> component.
+  A class that implements the <xref:System.Collections.IEnumerable> interface is typically consumed by ASP.NET. Windows Forms support for this interface is only available through the <xref:System.Windows.Forms.BindingSource> component.
 
   > [!NOTE]
   > The <xref:System.Windows.Forms.BindingSource> component copies all <xref:System.Collections.IEnumerable> items into a separate list for binding purposes.

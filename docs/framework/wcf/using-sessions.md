@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
 ---
 # Using Sessions
-In Windows Communication Foundation (WCF) applications, a *session* correlates a group of messages into a conversation. WCF sessions are different than the session object available in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in WCF applications and how to use them.  
+In Windows Communication Foundation (WCF) applications, a *session* correlates a group of messages into a conversation. WCF sessions are different than the session object available in ASP.NET applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in WCF applications and how to use them.  
   
 ## Sessions in Windows Communication Foundation Applications  
  When a service contract specifies that it requires a session, that contract is specifying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not establish a session. If the session ends and a message is sent through the same channel an exception is thrown.  
@@ -24,13 +24,13 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
 - There is no general data store associated with a WCF session.  
   
- If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
+ If you are familiar with the <xref:System.Web.SessionState.HttpSessionState?displayProperty=nameWithType> class in ASP.NET applications and the functionality it provides, you might notice the following differences between that kind of session and WCF sessions:  
   
-- [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] sessions are always server-initiated.  
+- ASP.NET sessions are always server-initiated.  
   
-- [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] sessions are implicitly unordered.  
+- ASP.NET sessions are implicitly unordered.  
   
-- [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] sessions provide a general data storage mechanism across requests.  
+- ASP.NET sessions provide a general data storage mechanism across requests.  
   
  This topic describes:  
   

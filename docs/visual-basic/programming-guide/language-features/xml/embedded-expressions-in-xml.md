@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
 ---
 # Embedded Expressions in XML (Visual Basic)
-Embedded expressions enable you to create XML literals that contain expressions that are evaluated at run time. The syntax for an embedded expression is `<%=` `expression` `%>`, which is the same as the syntax used in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)].  
+Embedded expressions enable you to create XML literals that contain expressions that are evaluated at run time. The syntax for an embedded expression is `<%=` `expression` `%>`, which is the same as the syntax used in ASP.NET.  
   
  For example, you can create an XML element literal, combining embedded expressions with literal text content.  
   

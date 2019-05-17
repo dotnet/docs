@@ -68,7 +68,7 @@ using System.Data.SqlClient;
 ## .NET Framework Data Provider for OLE DB  
  The .NET Framework Data Provider for OLE DB (OleDb) uses native OLE DB through COM interop to enable data access. The .NET Framework Data Provider for OLE DB supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for OLE DB, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
   
- The following table shows the providers that have been tested with [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+ The following table shows the providers that have been tested with ADO.NET.  
   
 |Driver|Provider|  
 |------------|--------------|  
@@ -77,11 +77,11 @@ using System.Data.SqlClient;
 |Microsoft.Jet.OLEDB.4.0|OLE DB provider for Microsoft Jet|  
   
 > [!NOTE]
->  Using an Access (Jet) database as a data source for multithreaded applications, such as [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications, is not recommended. If you must use Jet as a data source for an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, realize that [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications connecting to an Access database can encounter connection problems.  
+>  Using an Access (Jet) database as a data source for multithreaded applications, such as ASP.NET applications, is not recommended. If you must use Jet as a data source for an ASP.NET application, realize that ASP.NET applications connecting to an Access database can encounter connection problems.  
   
  The .NET Framework Data Provider for OLE DB does not support OLE DB version 2.5 interfaces. OLE DB Providers that require support for OLE DB 2.5 interfaces will not function correctly with the .NET Framework Data Provider for OLE DB. This includes the Microsoft OLE DB provider for Exchange and the Microsoft OLE DB provider for Internet Publishing.  
   
- The .NET Framework Data Provider for OLE DB does not work with the OLE DB provider for ODBC (MSDASQL). To access an ODBC data source using [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)], use the .NET Framework Data Provider for ODBC.  
+ The .NET Framework Data Provider for OLE DB does not work with the OLE DB provider for ODBC (MSDASQL). To access an ODBC data source using ADO.NET, use the .NET Framework Data Provider for ODBC.  
   
  .NET Framework Data Provider for OLE DB classes are located in the <xref:System.Data.OleDb> namespace. The following code example shows how to include the `System.Data.OleDb` namespace in your applications.  
   
@@ -96,7 +96,7 @@ using System.Data.OleDb;
 ## .NET Framework Data Provider for ODBC  
  The .NET Framework Data Provider for ODBC (Odbc) uses the native ODBC Driver Manager (DM) to enable data access. The ODBC data provider supports both local and distributed transactions. For distributed transactions, the ODBC data provider, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
   
- The following table shows the ODBC drivers tested with [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+ The following table shows the ODBC drivers tested with ADO.NET.  
   
 |Driver|  
 |------------|  

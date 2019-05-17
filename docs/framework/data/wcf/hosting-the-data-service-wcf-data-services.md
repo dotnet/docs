@@ -22,9 +22,9 @@ By using WCF Data Services, you can create a service that exposes data as an [!I
 
 - Sends the response on behalf of the data service.
 
- To simplify hosting a data service, WCF Data Services is designed to integrate with Windows Communication Foundation (WCF). The data service provides a default WCF implementation that serves as the data service host in an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. Therefore, you can host a data service in one of the following ways:
+ To simplify hosting a data service, WCF Data Services is designed to integrate with Windows Communication Foundation (WCF). The data service provides a default WCF implementation that serves as the data service host in an ASP.NET application. Therefore, you can host a data service in one of the following ways:
 
-- In an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application.
+- In an ASP.NET application.
 
 - In a managed application that supports self-hosted WCF services.
 
@@ -49,12 +49,12 @@ When you use the **Add New Item** dialog in Visual Studio 2015 to define a data 
  [!code-csharp[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_quickstart_service/cs/northwind.svc.cs#servicedefinition)]
  [!code-vb[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_quickstart_service/vb/northwind.svc.vb#servicedefinition)]
 
- Because a data service behaves like a WCF service, the data service integrates with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and follows the WCF Web programming model. For more information, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md) and [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).
+ Because a data service behaves like a WCF service, the data service integrates with ASP.NET and follows the WCF Web programming model. For more information, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md) and [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md).
 
 ## Self-Hosted WCF Services
  Because it incorporates a WCF implementation, WCF Data Services support self-hosting a data service as a WCF service. A service can be self-hosted in any .NET Framework application, such as a console application. The <xref:System.Data.Services.DataServiceHost> class, which inherits from <xref:System.ServiceModel.Web.WebServiceHost>, is used to instantiate the data service at a specific address.
 
- Self-hosting can be used for development and testing because it can make it easier to deploy and troubleshoot the service. However, this kind of hosting does not provide the advanced hosting and management features provided by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] or by Internet Information Services (IIS). For more information, see [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md).
+ Self-hosting can be used for development and testing because it can make it easier to deploy and troubleshoot the service. However, this kind of hosting does not provide the advanced hosting and management features provided by ASP.NET or by Internet Information Services (IIS). For more information, see [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md).
 
 ## Defining a Custom Data Service Host
  For cases where the WCF host implementation is too restrictive, you can also define a custom host for a data service. Any class that implements <xref:System.Data.Services.IDataServiceHost> interface can be used as the network host for a data service. A custom host must implement the <xref:System.Data.Services.IDataServiceHost> interface and be able to handle the following basic responsibilities of the data service host:

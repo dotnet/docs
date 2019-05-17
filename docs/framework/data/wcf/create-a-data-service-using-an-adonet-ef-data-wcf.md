@@ -8,7 +8,7 @@ ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
 ---
 # How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)
 
-WCF Data Services exposes entity data as a data service. This entity data is provided by the [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)][!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] when the data source is a relational database. This topic shows you how to create an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]-based data model in a Visual Studio Web application that is based on an existing database and use this data model to create a new data service.
+WCF Data Services exposes entity data as a data service. This entity data is provided by the ADO.NET[!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] when the data source is a relational database. This topic shows you how to create an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)]-based data model in a Visual Studio Web application that is based on an existing database and use this data model to create a new data service.
 
 The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a command line tool that can generate an [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] model outside of a Visual Studio project. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
 
@@ -47,7 +47,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 2. In the **Model Browser**, right-click the model, click **Properties**, and then note the name of the entity container.
 
-3. In **Solution Explorer**, right-click the name of your [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project, and then click **Add** > **New Item**.
+3. In **Solution Explorer**, right-click the name of your ASP.NET project, and then click **Add** > **New Item**.
 
 4. In the **Add New Item** dialog box, select the **WCF Data Service** template in the **Web** category.
 

@@ -207,7 +207,7 @@ items:
 - title: New object initialization syntax
   durationInMinutes: 2
   content: |
-    New object initialization enables you to create methods that make it easier to initialize dictionaries, and other types. Start with a dictionary. Run the following code in the interactive window:
+    Object initializer syntax now supports initializing *indexers* as well as properties and fields. This addition makes it easier to initialize dictionaries and other types. Start with a dictionary. Run the following code in the interactive window:
 
     ```csharp
     var messages = new Dictionary<int, string>
@@ -219,12 +219,12 @@ items:
 
     Console.WriteLine(messages[302]);
     ```
+    
+    This syntax, which sets a value in an indexer, can be used for any type that has an accessible set accessor on an indexer.
 
-    You can extend this syntax to any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method.  Try the following sample in the interactive window. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. It also combines other techniques already demonstrated in this tutorial, such as expression-bodied members and string interpolation. 
-
-    In the `Main` method, you initialize a path by providing coordinates for the points. Those points are added to the collection through the `Add` method.
-
-    The `Add` method can also be an extension method. You could update the preceding sample as follows. This sample won't compile in the interactive experience because of sandbox limitations. You can try it on your own machine.
+    A second change makes it easier to enable initializer syntax for types that represent sequences. Collection initializers can be used on any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method. That `Add` method can now be an extension method. 
+    
+    The following example shows one scenario for this syntax. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that take three arguments. The `Extensions` class creates an additional `Add` method to add a new point from its three components. This sample does not currently run interactively due to restrictions in the environment.
 
     ```csharp
     public class Path : IEnumerable<Point3D>

@@ -47,7 +47,7 @@ ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
   
  If the data in the bound dataset is updated through any mechanism, the <xref:System.Windows.Forms.DataGrid> control reflects the changes. If the data grid and its table styles and column styles have the `ReadOnly` property set to `false`, the data in the dataset can be updated through the <xref:System.Windows.Forms.DataGrid> control.  
   
- Only one table can be shown in the <xref:System.Windows.Forms.DataGrid> at a time. If a parent-child relationship is defined between tables, the user can move between the related tables to select the table to be displayed in the <xref:System.Windows.Forms.DataGrid> control. For information about binding a <xref:System.Windows.Forms.DataGrid> control to an [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] data source at either design time or run time, see [How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).  
+ Only one table can be shown in the <xref:System.Windows.Forms.DataGrid> at a time. If a parent-child relationship is defined between tables, the user can move between the related tables to select the table to be displayed in the <xref:System.Windows.Forms.DataGrid> control. For information about binding a <xref:System.Windows.Forms.DataGrid> control to an ADO.NET data source at either design time or run time, see [How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).  
   
  Valid data sources for the <xref:System.Windows.Forms.DataGrid> include:  
   

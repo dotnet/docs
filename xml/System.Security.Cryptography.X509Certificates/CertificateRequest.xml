@@ -500,37 +500,39 @@ The type of signing key represented by <paramref name="issuerCertificate" /> cou
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-              When submitting a certificate signing request via a web browser, or other graphical or textual
-              interface, the input is frequently expected to be in the Privacy Enhanced Mail (PEM) format,
-              instead of the DER binary format. To convert the return value to PEM format, make a string
-              consisting of `-----BEGIN CERTIFICATE REQUEST-----`, a newline, the Base-64-encoded
-              representation of the request (by convention, linewrapped at 64 characters), a newline,
-              and `-----END CERTIFICATE REQUEST-----`.
+
+When submitting a certificate signing request via a web browser, or other graphical or textual
+interface, the input is frequently expected to be in the Privacy Enhanced Mail (PEM) format,
+instead of the DER binary format. To convert the return value to PEM format, make a string
+consisting of `-----BEGIN CERTIFICATE REQUEST-----`, a newline, the Base-64-encoded
+representation of the request (by convention, linewrapped at 64 characters), a newline,
+and `-----END CERTIFICATE REQUEST-----`.
             
-              ```csharp
-              public static string PemEncodeSigningRequest(CertificateRequest request, PkcsSignatureGenerator generator)
-              {
-                  byte[] pkcs10 = request.CreateSigningRequest(generator);
-                  StringBuilder builder = new StringBuilder();
+```csharp
+public static string PemEncodeSigningRequest(CertificateRequest request, PkcsSignatureGenerator generator)
+{
+    byte[] pkcs10 = request.CreateSigningRequest(generator);
+    StringBuilder builder = new StringBuilder();
+
+    builder.AppendLine("-----BEGIN CERTIFICATE REQUEST-----");
                 
-                  builder.AppendLine("-----BEGIN CERTIFICATE REQUEST-----");
+    string base64 = Convert.ToBase64String(pkcs10);
                 
-                  string base64 = Convert.ToBase64String(pkcs10);
+    int offset = 0;
+    const int LineLength = 64;
                 
-                  int offset = 0;
-                  const int LineLength = 64;
+    while (offset < base64.Length)
+    {
+        int lineEnd = Math.Min(offset + LineLength, base64.Length);
+        builder.AppendLine(base64.Substring(offset, lineEnd - offset));
+        offset = lineEnd;
+     }
                 
-                  while (offset < base64.Length)
-                  {
-                      int lineEnd = Math.Min(offset + LineLength, base64.Length);
-                      builder.AppendLine(base64.Substring(offset, lineEnd - offset));
-                      offset = lineEnd;
-                  }
-                
-                  builder.AppendLine("-----END CERTIFICATE REQUEST-----");
-                  return builder.ToString();
-                }
-                ```
+     builder.AppendLine("-----END CERTIFICATE REQUEST-----");
+     return builder.ToString();
+}
+```
+
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The current object was created using a constructor that doesn't accept a signing key.</exception>

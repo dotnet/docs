@@ -63,7 +63,7 @@ These are the highest precedence operators.
 
 [stackalloc](../keywords/stackalloc.md) - allocates a block of memory on the stack.
 
-[->](dereference-operator.md) – pointer dereferencing combined with member access.
+[->](pointer-related-operators.md#pointer-member-access-operator--) – pointer indirection combined with member access.
 
 ## Unary operators
 

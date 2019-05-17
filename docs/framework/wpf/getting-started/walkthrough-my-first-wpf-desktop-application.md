@@ -468,7 +468,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
-![Shows the elements and styles that you just applied.](./media/walkthrough-my-first-wpf-desktop-application/application-data-templates.png)
+![Both pages of the app showing the names list and an expense report.](./media/walkthrough-my-first-wpf-desktop-application/application-data-templates.png)
 
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET app development best practices, see the following topics:

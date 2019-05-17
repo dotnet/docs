@@ -922,7 +922,7 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
         <returns>A span that consists of all elements of the current span from <paramref name="index" /> to the end of the span.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index" /> is less than zero or greater than or equal to <see cref="T:System.Span`1.Length" />.</exception>
+          <paramref name="start" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Slice">

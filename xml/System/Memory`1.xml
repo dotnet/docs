@@ -619,7 +619,7 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <returns>An object that contains all elements of the current instance from <paramref name="start" /> to the end of the instance. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeExceptionException">
-          <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />. </exception>
+          <paramref name="start" /> is less than zero or greater than <see cref="P:System.Memory`1.Length" />. </exception>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -686,7 +686,7 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <returns>An object that contains <paramref name="length" /> elements from the current instance starting at <paramref name="start" />. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeExceptionException">
-          <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />.
+          <paramref name="start" /> is less than zero or greater than <see cref="P:System.Memory`1.Length" />.
 
 -or-
 

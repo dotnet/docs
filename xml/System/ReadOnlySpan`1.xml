@@ -783,7 +783,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <returns>A read-only span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="start" /> is less than zero or greater than or equal to <see cref="T:System.Span`1.Length" />.</exception>
+          <paramref name="start" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToArray">

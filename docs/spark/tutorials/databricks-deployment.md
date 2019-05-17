@@ -67,7 +67,7 @@ Before you start, do the following:
 [Databricks](http://databricks.com) is a platform that provides cloud-based big data processing using Apache Spark.
 
 > [!Note] 
-> [Azure Databricks](https://azure.microsoft.com/en-us/services/databricks/) and [AWS Databricks](https://databricks.com/aws) are Linux-based. Therefore, if you are interested in deploying your app to Databricks, make sure your app is .NET Standard compatible and that you use [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
+> [Azure Databricks](https://azure.microsoft.com/services/databricks/) and [AWS Databricks](https://databricks.com/aws) are Linux-based. Therefore, if you are interested in deploying your app to Databricks, make sure your app is .NET Standard compatible and that you use [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
 
 Databricks allows you to submit .NET for Apache Spark apps to an existing active cluster or create a new cluster every time you launch a job. This requires the **Microsoft.Spark.Worker** to be installed before you submit a .NET for Apache Spark app.
 

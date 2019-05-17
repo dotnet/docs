@@ -1,8 +1,6 @@
 ---
 title: When to deploy Windows Containers to Azure VMs (IaaS cloud)
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Azure VMs (IaaS cloud)
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 # When to deploy Windows Containers to Azure VMs (IaaS cloud)

@@ -9,15 +9,15 @@
   items:
   - name: Overview
     href: tutorials/index.md
-  - name: Sentiment analysis (binary classification)
+  - name: Analyze sentiment (binary classification)
     href: tutorials/sentiment-analysis.md
-  - name: Issue classification (multiclass classification)
+  - name: Categorize support issues (multiclass classification)
     href: tutorials/github-issue-classification.md
-  - name: Price prediction (regression)
+  - name: Predict prices (regression)
     href: tutorials/taxi-fare.md
-  - name: Iris flowers (clustering)
+  - name: Categorize iris flowers (k-means clustering)
     href: tutorials/iris-clustering.md
-  - name: Movie recommendation (recommendation)
+  - name: Movie recommender (matrix factorization)
     href: tutorials/movie-recommmendation.md
   - name: Image Classification (transfer learning)
     href: tutorials/image-classification.md

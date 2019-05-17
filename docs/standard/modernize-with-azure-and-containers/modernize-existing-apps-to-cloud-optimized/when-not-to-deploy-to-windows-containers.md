@@ -1,8 +1,6 @@
 ---
 title: When not to deploy to Windows Containers
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When not to deploy to Windows Containers
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 # When not to deploy to Windows Containers

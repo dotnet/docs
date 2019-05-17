@@ -16,7 +16,7 @@ The topics in this section pertain to concepts and procedures that extend beyond
   
 ## In This Section  
  [ADO.NET and LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/ado-net-and-linq-to-sql.md)  
- Describes the relationship of [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
+ Describes the relationship of ADO.NET and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [Analyzing LINQ to SQL Source Code](../../../../../../docs/framework/data/adonet/sql/linq/analyzing-linq-to-sql-source-code.md)  
  Describes how to analyze [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] mapping by generating and viewing source code from the Northwind sample database.  

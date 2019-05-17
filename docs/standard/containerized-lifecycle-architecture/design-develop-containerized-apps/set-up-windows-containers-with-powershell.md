@@ -1,8 +1,6 @@
 ---
 title: Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 description: Learn how to use PowerShell when working with Docker in Windows containers
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)

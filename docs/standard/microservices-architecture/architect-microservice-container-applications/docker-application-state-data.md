@@ -1,8 +1,6 @@
 ---
 title: State and data in Docker applications
 description: State and data management in Docker applications. Microservice instances are expendable, but DATA IS NOT, how to handle this with microservices.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # State and data in Docker applications

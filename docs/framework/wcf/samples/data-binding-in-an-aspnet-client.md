@@ -13,7 +13,7 @@ This sample demonstrates how to bind data returned by a typical Windows Communic
   
  The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `IWeatherService` interface, which exposes an operation named `GetWeatherData`. This operation accepts an array of cities and returns an array of `WeatherData` objects that represent the high and low forecasted temperature for a city.  
   
- On the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] client .aspx page, a DataGrid Web control is defined, which contains the graphical representation of the data returned by the service. Code on the .aspx page calls the WCF service for weather data and returns the data to an array of `WeatherData` objects. The DataGrid specifies where to get its data from by setting its `DataSource` property to that array. The data binding occurs with a call to the DataGrid's `DataBind` method. All of this code is contained inside the .`aspx` page's `Page_Load` method, so every time the user refreshes the browser page, the data is updated in the DataGrid.  
+ On the ASP.NET client .aspx page, a DataGrid Web control is defined, which contains the graphical representation of the data returned by the service. Code on the .aspx page calls the WCF service for weather data and returns the data to an array of `WeatherData` objects. The DataGrid specifies where to get its data from by setting its `DataSource` property to that array. The data binding occurs with a call to the DataGrid's `DataBind` method. All of this code is contained inside the .`aspx` page's `Page_Load` method, so every time the user refreshes the browser page, the data is updated in the DataGrid.  
   
 ### To set up, build, and run the sample  
   

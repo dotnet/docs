@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0d11a31c-e75f-4fcf-9cf4-b7f26e056bcd
 ---
 # Membership and Role Provider
-The Membership and Role Provider sample demonstrates how a service can use the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership and role providers to authenticate and authorize clients.  
+The Membership and Role Provider sample demonstrates how a service can use the ASP.NET membership and role providers to authenticate and authorize clients.  
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
@@ -15,11 +15,11 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
 - A client can authenticate by using the username-password combination.  
   
-- The server can validate the client credentials against the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider.  
+- The server can validate the client credentials against the ASP.NET membership provider.  
   
 - The server can be authenticated by using the server's X.509 certificate.  
   
-- The server can map the authenticated client to a role by using the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider.  
+- The server can map the authenticated client to a role by using the ASP.NET role provider.  
   
 - The server can use the `PrincipalPermissionAttribute` to control access to certain methods that are exposed by the service.  
   
@@ -63,7 +63,7 @@ The Membership and Role Provider sample demonstrates how a service can use the [
 </system.web>  
 ```  
   
- The service exposes a single endpoint for communicating with the service, which is defined by using the Web.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, which defaults to using Windows authentication. This sample sets the standard `wsHttpBinding` to use username authentication. The behavior specifies that the server certificate is to be used for service authentication. The server certificate must contain the same value for the `SubjectName` as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) configuration element. In addition the behavior specifies that authentication of username-password pairs is performed by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider and role mapping is performed by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider by specifying the names defined for the two providers.  
+ The service exposes a single endpoint for communicating with the service, which is defined by using the Web.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, which defaults to using Windows authentication. This sample sets the standard `wsHttpBinding` to use username authentication. The behavior specifies that the server certificate is to be used for service authentication. The server certificate must contain the same value for the `SubjectName` as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) configuration element. In addition the behavior specifies that authentication of username-password pairs is performed by the ASP.NET membership provider and role mapping is performed by the ASP.NET role provider by specifying the names defined for the two providers.  
   
 ```xml  
 <system.serviceModel>  
@@ -117,10 +117,10 @@ The Membership and Role Provider sample demonstrates how a service can use the [
 2. Ensure that you have configured the [ASP.NET Application Services Database](https://go.microsoft.com/fwlink/?LinkId=94997).  
   
     > [!NOTE]
-    >  If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Application Services Database as well as in the Web.config connection string.  
+    >  If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the ASP.NET Application Services Database as well as in the Web.config connection string.  
   
     > [!NOTE]
-    >  The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] worker process account must have permissions on the database that is created in this step. Use the sqlcmd utility or SQL Server Management Studio to do this.  
+    >  The ASP.NET worker process account must have permissions on the database that is created in this step. Use the sqlcmd utility or SQL Server Management Studio to do this.  
   
 3. To run the sample in a single- or cross-computer configuration, use the following instructions.  
   

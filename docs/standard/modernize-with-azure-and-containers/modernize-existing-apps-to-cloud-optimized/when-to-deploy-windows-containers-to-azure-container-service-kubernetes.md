@@ -1,8 +1,6 @@
 ---
 title: When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)

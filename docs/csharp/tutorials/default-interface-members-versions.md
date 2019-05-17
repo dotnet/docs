@@ -4,9 +4,9 @@ description: This advanced tutorial explores how you can safely add new capabili
 ms.date: 05/06/2019
 ms.custom: mvc
 ---
-# Tutorial: Update interfaces with default interface members in C# 8
+# Tutorial: Update interfaces with default interface members in C# 8.0
 
-Beginning in C# 8 on .NET Core 3.0 you can define an implementation when you declare a member of an interface. The most common scenario is to safely add members to an interface already released and used by innumerable clients.
+Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. The most common scenario is to safely add members to an interface already released and used by innumerable clients.
 
 In this tutorial, you'll learn how to:
 
@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available starting with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Default interface members are available beginning with .NET Core 3.0 preview 4.
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8.0 preview compiler is available starting with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Default interface members are available beginning with .NET Core 3.0 preview 4.
 
 ## Scenario overview
 

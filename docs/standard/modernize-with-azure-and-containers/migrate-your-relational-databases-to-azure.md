@@ -1,8 +1,6 @@
 ---
 title: Migrate your relational databases to azure
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | migrate your relational databases to azure
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 

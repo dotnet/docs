@@ -1,8 +1,6 @@
 ---
 title: Monolithic applications
 description: Understand the core concepts for containerizing monolithic applications.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Monolithic applications

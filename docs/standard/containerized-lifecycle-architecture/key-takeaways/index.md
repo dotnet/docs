@@ -1,8 +1,6 @@
 ---
 title: Key takeaways
 description: Review the key takeaways for the guide.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Key takeaways

@@ -1,8 +1,6 @@
 ---
 title: Domain events. design and implementation
 description: .NET Microservices Architecture for Containerized .NET Applications | Get an in-depth view of domain events, a key concept to establish communication between aggregates.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Domain events: design and implementation
@@ -341,7 +339,7 @@ As stated, use domain events to explicitly implement side effects of changes wit
 ## Additional resources
 
 - **Greg Young. What is a Domain Event?** \
-  <http://codebetter.com/gregyoung/2010/04/11/what-is-a-domain-event/>
+  <https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf#page=25>
 
 - **Jan Stenberg. Domain Events and Eventual Consistency** \
   <https://www.infoq.com/news/2015/09/domain-events-consistency>

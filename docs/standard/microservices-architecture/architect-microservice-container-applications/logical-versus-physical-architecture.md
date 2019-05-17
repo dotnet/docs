@@ -1,8 +1,6 @@
 ---
 title: Logical architecture versus physical architecture
 description: Understand the differences between Logical and physical architectures.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Logical architecture versus physical architecture

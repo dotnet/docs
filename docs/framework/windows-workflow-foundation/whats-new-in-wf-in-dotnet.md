@@ -113,7 +113,7 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], variables a
 
 The following screenshot shows the variable and argument designer context menu.
 
-![Variable and Argument Designer Context Menu](./media/designercontextmenu.png "DesignerContextMenu")
+![Variable and Argument Designer Context Menu](./media/whats-new-in-wf-in-dotnet/designer-context-menu.png)
 
 ### <a name="BKMK_AutoSurround"></a> Auto-surround with Sequence
 
@@ -121,11 +121,11 @@ Since a workflow or certain container activities (such as <xref:System.Activitie
 
 The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
-![Auto&#45;surround drop location](./media/autosurround1.png "AutoSurround1")
+![A WriteLine activity in the Body of a NoPersistScope activity.](./media/whats-new-in-wf-in-dotnet/auto-surround-write-line-activity.png)
 
 The following screenshot shows the automatically created `Sequence` activity in the `Body` when a second `WriteLine` is dropped below the first.
 
-![Automatically created sequence activity](./media/autosurround2.png "AutoSurround2")
+![An automatically created Sequence in the Body of a NoPersistScope.](./media/whats-new-in-wf-in-dotnet/auto-surround-sequence-activity.png)
 
 ### <a name="BKMK_PanMode"></a> Pan Mode
 
@@ -133,7 +133,7 @@ To more easily navigate a large workflow in the designer, pan mode can be enable
 
 The following screenshot shows the pan button which is located at the bottom right corner of the workflow designer.
 
-![Pan button in workflow designer](./media/panbutton.png "PanButton")
+![The pan button highlighted in the workflow designer.](./media/whats-new-in-wf-in-dotnet/pan-button-workflow-designer.png)
 
 The middle mouse button or space bar can also be used to pan the workflow designer.
 
@@ -149,7 +149,7 @@ In order to make hierarchical workflows easier to navigate, components of a work
 
 The following screenshot of the completed workflow from the [Getting Started Tutorial](getting-started-tutorial.md) shows the outline view with a sequential workflow.
 
-![Outline View in Workflow Designer](./media/outlineviewinworkflowdesigner.jpg "OutlineViewinWorkflowDesigner")
+![Screenshot of outline view with a sequential workflow in Visual Studio.](./media/whats-new-in-wf-in-dotnet/outline-view-in-workflow-designer.jpg)
 
 ### <a name="BKMK_CSharpExpressions"></a> C# Expressions
 
@@ -169,17 +169,17 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], connections
 
 The following screenshot shows the attachment points that become visible when an activity is dragged from the toolbox.
 
-![Flowchart start node showing autoconnect points](./media/autoconnect1.png "Autoconnect1")
+![Flowchart start node showing auto-connect points](./media/whats-new-in-wf-in-dotnet/auto-connect-points-start-node.png)
 
 Activities can also be dragged onto connections between flowchart nodes and states to auto-insert the node between two other nodes. The following screenshot shows the highlighted connecting line where activities can be dragged from the toolbox and dropped.
 
-![Auto&#45;insert handle for dropping activities](./media/autoinsert.png "Autoinsert")
+![Auto-insert handle for dropping activities](./media/whats-new-in-wf-in-dotnet/auto-insert-connecting-line.png)
 
 ### <a name="BKMK_Annotations"></a> Designer Annotations
 
 To facilitate developing larger workflows, the designer now supports adding annotations to help keep track of the design process. Annotation can be added to activities, states, flowchart nodes, variables and arguments. The following screenshot shows the context menu used to add annotations to the designer.
 
-![Annotation context menu](./media/annotationdialog.png "annotationdialog")
+![Screenshot showing a menu for adding annotations.](./media/whats-new-in-wf-in-dotnet/designer-annotations-context-menu.png)
 
 ### Debugging states
 
@@ -227,7 +227,7 @@ State machine workflows were introduced as part of the .NET Framework 4, version
 
 The following screenshot shows the completed state machine workflow from the [Getting Started Tutorial](getting-started-tutorial.md) step [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md).
 
-![Completed State Machine Workflow](./media/wfstatemachinegettingstartedtutorialcomplete.JPG "WFStateMachineGettingStartedTutorialComplete")
+![Illustration that shows the completed state machine workflow.](./media/whats-new-in-wf-in-dotnet/complete-state-machine-workflow.jpg)
 
 For more information on creating state machine workflows, see [State Machine Workflows](state-machine-workflows.md).
 

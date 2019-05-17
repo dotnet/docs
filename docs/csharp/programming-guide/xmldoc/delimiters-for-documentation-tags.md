@@ -75,6 +75,6 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/index.md)
 - [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
-- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/index.md)

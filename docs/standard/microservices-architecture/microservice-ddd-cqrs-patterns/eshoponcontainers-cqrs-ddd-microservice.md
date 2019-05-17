@@ -1,8 +1,6 @@
 ---
 title: Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the way CQRS is implemented in the ordering microservice in eShopOnContainers.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers
@@ -40,20 +38,11 @@ There is only one application architecture: the architecture of the system or en
 - **Martin Fowler. CQRS** \
   <https://martinfowler.com/bliki/CQRS.html>
 
-- **Greg Young. CQS vs. CQRS** \
-  <http://codebetter.com/gregyoung/2009/08/13/command-query-separation/>
-
 - **Greg Young. CQRS Documents** \
-  [https://cqrs.files.wordpress.com/2010/11/cqrs\_documents.pdf](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf)
-
-- **Greg Young. CQRS, Task Based UIs and Event Sourcing** \
-  <http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/>
+  <https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf>
 
 - **Udi Dahan. Clarified CQRS** \
   <http://udidahan.com/2009/12/09/clarified-cqrs/>
-
-- **Event-Sourcing (ES)** \
-  <http://codebetter.com/gregyoung/2010/02/20/why-use-event-sourcing/>
 
 >[!div class="step-by-step"]
 >[Previous](apply-simplified-microservice-cqrs-ddd-patterns.md)

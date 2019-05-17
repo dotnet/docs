@@ -26,7 +26,7 @@ The new language features in this release are:
 * [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
-Finally, the compiler has two options `/refout` and `/refonly` that
+Finally, the compiler has two options `-refout` and `-refonly` that
 control [reference assembly generation](#reference-assembly-generation).
 
 To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version.
@@ -120,6 +120,6 @@ Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pat
 ## Reference assembly generation
 
 There are two new compiler options that generate *reference-only assemblies*:
-[/refout](../language-reference/compiler-options/refout-compiler-option.md)
-and [/refonly](../language-reference/compiler-options/refonly-compiler-option.md).
+[-refout](../language-reference/compiler-options/refout-compiler-option.md)
+and [-refonly](../language-reference/compiler-options/refonly-compiler-option.md).
 The linked articles explain these options and reference assemblies in more detail.

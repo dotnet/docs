@@ -6,7 +6,7 @@ ms.assetid: 101cb624-8303-448a-a3af-933247c1e109
 # HttpCookieSession
 This sample demonstrates how to build a custom protocol channel to use HTTP cookies for session management. This channel enables communication between Windows Communication Foundation (WCF) services and ASMX clients or between WCF clients and ASMX services.  
   
- When a client calls a Web method in an ASMX Web service that is session-based, the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] engine does the following:  
+ When a client calls a Web method in an ASMX Web service that is session-based, the ASP.NET engine does the following:  
   
 - Generates a unique ID (session ID).  
   
@@ -152,7 +152,7 @@ Press <ENTER> to terminate client.
   
 #### To set up, build, and run the sample  
   
-1. Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  

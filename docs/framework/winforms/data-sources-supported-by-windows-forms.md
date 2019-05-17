@@ -38,12 +38,12 @@ Traditionally, data binding has been used within applications to take advantage 
  <xref:System.Collections.IEnumerable>  
  Windows Forms controls can be bound to data sources that only support the <xref:System.Collections.IEnumerable> interface if they are bound through a <xref:System.Windows.Forms.BindingSource> component.  
   
- [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] data objects  
- [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] provides a number of data structures suitable for binding to. Each varies in its sophistication and complexity.  
+ ADO.NET data objects  
+ ADO.NET provides a number of data structures suitable for binding to. Each varies in its sophistication and complexity.  
   
 - <xref:System.Data.DataColumn>. A <xref:System.Data.DataColumn> is the essential building block of a <xref:System.Data.DataTable>, in that a number of columns comprise a table. Each <xref:System.Data.DataColumn> has a <xref:System.Data.DataColumn.DataType%2A> property that determines the kind of data the column holds (for example, the make of an automobile in a table describing cars). You can simple-bind a control (such as a <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property) to a column within a data table.  
   
-- <xref:System.Data.DataTable>. A <xref:System.Data.DataTable> is the representation of a table, with rows and columns, in [!INCLUDE[vstecado](../../../includes/vstecado-md.md)]. A data table contains two collections: <xref:System.Data.DataColumn>, representing the columns of data in a given table (which ultimately determine the kinds of data that can be entered into that table), and <xref:System.Data.DataRow>, representing the rows of data in a given table. You can complex-bind a control to the information contained in a data table (such as binding the <xref:System.Windows.Forms.DataGridView> control to a data table). However, when you bind to a <xref:System.Data.DataTable>, you are a really binding to the table's default view.  
+- <xref:System.Data.DataTable>. A <xref:System.Data.DataTable> is the representation of a table, with rows and columns, in ADO.NET. A data table contains two collections: <xref:System.Data.DataColumn>, representing the columns of data in a given table (which ultimately determine the kinds of data that can be entered into that table), and <xref:System.Data.DataRow>, representing the rows of data in a given table. You can complex-bind a control to the information contained in a data table (such as binding the <xref:System.Windows.Forms.DataGridView> control to a data table). However, when you bind to a <xref:System.Data.DataTable>, you are a really binding to the table's default view.  
   
 - <xref:System.Data.DataView>. A <xref:System.Data.DataView> is a customized view of a single data table that may be filtered or sorted. A data view is the data "snapshot" used by complex-bound controls. You can simple-bind or complex-bind to the data within a data view, but be aware that you are binding to a fixed "picture" of the data rather than a clean, updating data source.  
   

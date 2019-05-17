@@ -168,7 +168,7 @@ Press <ENTER> to terminate client.
 
 - Granting permissions on the certificate's private key.
 
-     The following lines in the Setup.bat batch file make the server certificate stored in the LocalMachine store accessible to the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] worker process account.
+     The following lines in the Setup.bat batch file make the server certificate stored in the LocalMachine store accessible to the ASP.NET worker process account.
 
     ```bat
     echo ************

@@ -41,7 +41,7 @@ When you use a <xref:System.Windows.Forms.DataGridView> for editing data in your
 ## Sorting  
  In unbound mode, new records will always be added to the end of the <xref:System.Windows.Forms.DataGridView> even if the user has sorted the content of the <xref:System.Windows.Forms.DataGridView>. The user will need to apply the sort again in order to sort the row to the correct position; this behavior is similar to that of the <xref:System.Windows.Forms.ListView> control.  
   
- In data bound and virtual modes, the insertion behavior when a sort is applied will be dependent on the implementation of the data model. For [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)], the row is immediately sorted into the correct position.  
+ In data bound and virtual modes, the insertion behavior when a sort is applied will be dependent on the implementation of the data model. For ADO.NET, the row is immediately sorted into the correct position.  
   
 ## Other Notes on the Row for New Records  
  You cannot set the <xref:System.Windows.Forms.DataGridViewRow.Visible%2A> property of this row to `false`. An <xref:System.InvalidOperationException> is raised if this is attempted.  

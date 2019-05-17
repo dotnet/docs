@@ -1,6 +1,6 @@
 ---
 title: C# foreach statement
-ms.date: 06/29/2018
+ms.date: 05/17/2019
 f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -20,6 +20,8 @@ The `foreach` statement executes a statement or a block of statements for each e
 Beginning with C# 7.3, if the enumerator's `Current` property returns a [reference return value](ref.md#reference-return-values) (`ref T` where `T` is the type of the collection element), you can declare the iteration variable with the `ref` or `ref readonly` modifier.
 
 At any point within the `foreach` statement block, you can break out of the loop by using the [break](break.md) statement, or step to the next iteration in the loop by using the [continue](continue.md) statement. You also can exit a `foreach` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
+
+If the `foreach` statement is applied to `null`, a <xref:System.NullReferenceException> is thrown. If the source collection of the `foreach` statement is empty, the body of the `foreach` loop is not executed and skipped.
 
 ## Examples
 

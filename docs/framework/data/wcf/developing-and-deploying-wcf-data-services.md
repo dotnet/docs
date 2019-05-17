@@ -32,18 +32,18 @@ This topic covers primarily the development and deployment of data services by u
 
 ### Choose a Development Web Server
 
-When you develop a WCF Data Service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application or [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site by using Visual Studio 2015, you have a choice of Web servers on which to run the data service during development. The following Web servers integrate with Visual Studio to make it easier to test and debug your data services on the local computer.
+When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web site by using Visual Studio 2015, you have a choice of Web servers on which to run the data service during development. The following Web servers integrate with Visual Studio to make it easier to test and debug your data services on the local computer.
 
 1. **Local IIS Server**
 
-     When you create a data service that is an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application or [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, you must makes sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md).
+     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, you must makes sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md).
 
     > [!NOTE]
     > You must run Visual Studio with administrator rights to enable the develop environment to configure the local IIS server.
 
 2. **Visual Studio Development Server**
 
-     Visual Studio includes a built-in Web server, the Visual Studio Development Server, which is the default Web server for [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] projects. This Web server is designed to run [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] projects on the local computer during development. The [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) shows how to create a data service that runs in the Visual Studio Development Server.
+     Visual Studio includes a built-in Web server, the Visual Studio Development Server, which is the default Web server for ASP.NET projects. This Web server is designed to run ASP.NET projects on the local computer during development. The [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) shows how to create a data service that runs in the Visual Studio Development Server.
 
      You should be aware of the following limitations when you use the Visual Studio Development Server to develop the data service:
 
@@ -76,9 +76,9 @@ You should consider the following when you develop a data service:
 
 - When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=201868). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md).
 
-- A data service is usually developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application project, but you can also create you data service as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site project in Visual Studio. For information about the differences between the two types of projects, see [Web Application Projects versus Web Site Projects in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd547590(v=vs.110)).
+- A data service is usually developed as an ASP.NET application project, but you can also create you data service as an ASP.NET Web site project in Visual Studio. For information about the differences between the two types of projects, see [Web Application Projects versus Web Site Projects in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd547590(v=vs.110)).
 
-- When you create a data service by using the **Add New Item** dialog box in Visual Studio, the data service is hosted by [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] in IIS. While [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] and IIS is the default host for a data service, other hosting options are supported. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md).
+- When you create a data service by using the **Add New Item** dialog box in Visual Studio, the data service is hosted by ASP.NET in IIS. While ASP.NET and IIS is the default host for a data service, other hosting options are supported. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md).
 
 ## Deploy WCF Data Services
 
@@ -86,7 +86,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 - **IIS-Hosted Web Server**
 
-    When a data service is developed as an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project, it can be deployed to an IIS Web server by using the standard [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] deployment processes.  Visual Studio provides the following deployment technologies for [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], depending on the kind of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] project that hosts the data service that you are deploying.
+    When a data service is developed as an ASP.NET project, it can be deployed to an IIS Web server by using the standard ASP.NET deployment processes.  Visual Studio provides the following deployment technologies for ASP.NET, depending on the kind of ASP.NET project that hosts the data service that you are deploying.
 
   - **Deployment Technologies for ASP.NET Web Applications**
 
@@ -102,7 +102,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
     - [Walkthrough: Deploying an ASP.NET Web Application Using XCOPY](https://docs.microsoft.com/previous-versions/aspnet/f735abw9(v=vs.100))
 
-     For more information about the deployment options for an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, see [Web Deployment Overview for Visual Studio and ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/dd394698(v=vs.110)).
+     For more information about the deployment options for an ASP.NET application, see [Web Deployment Overview for Visual Studio and ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/dd394698(v=vs.110)).
 
     > [!TIP]
     > Before you attempt to deploy the data service to IIS, make sure that you have tested the deployment to a Web server that is running IIS. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md).
@@ -115,7 +115,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 You should consider the following when deploying a data service:
 
-- When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
+- When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an ASP.NET application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an ASP.NET Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
 
 - Because WCF Data Services includes a basic WCF implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. For more information about using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkID=202005).
 

@@ -58,14 +58,16 @@ Be sure to follow the proper Markdown syntax. For more information, see the [sty
 
 ### Example structure
 
-    docs
-      /about
-      /core
-        /porting
-          porting-overview.md
-          /media
-            /porting-overview
-                portability_report.png
+```
+docs
+  /about
+  /core
+    /porting
+      porting-overview.md
+      /media
+        /porting-overview
+            portability_report.png
+```
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 

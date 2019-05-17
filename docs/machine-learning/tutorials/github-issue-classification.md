@@ -1,12 +1,12 @@
 ---
-title: Classify GitHub issues - multiclass classification 
+title: 'Tutorial: Categorize support issues - multiclass classification' 
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 05/02/2019
+ms.date: 05/16/2019
 ms.topic: tutorial
-ms.custom: mvc
-#Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to classify GitHGub issues to assign them to a given area.
+ms.custom: mvc, title-hack-0516
+#Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
 ---
-# Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues
+# Tutorial: Categorize support issues using multiclass classification with ML .NET
 
 This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio.
 

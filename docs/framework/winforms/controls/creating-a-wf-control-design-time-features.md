@@ -53,7 +53,7 @@ Tasks illustrated in this walkthrough include:
 
 When you are finished, your custom control will look something like the following:
 
-![A possible MarqueeControl arrangement](./media/demomarqueecontrol.gif "DemoMarqueeControl")
+![The app showing a marquee saying Text and a Start and Stop buttons.](./media/creating-a-wf-control-design-time-features/demo-marquee-control.gif)
 
 For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 
@@ -172,7 +172,7 @@ When you are developing a custom design-time experience, it will be necessary to
 
 2. In the "MarqueeControlLibrary Property Pages" dialog box, select the **Debug** page.
 
-3. In the **Start Action** section, select **Start External Program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) button to browse for the Visual Studio IDE. The name of the executable file is devenv.exe, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
+3. In the **Start Action** section, select **Start External Program**. You will be debugging a separate instance of Visual Studio, so click the ellipsis (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) button to browse for the Visual Studio IDE. The name of the executable file is devenv.exe, and if you installed to the default location, its path is %programfiles%\Microsoft Visual Studio 9.0\Common7\IDE\devenv.exe.
 
 4. Click OK to close the dialog box.
 

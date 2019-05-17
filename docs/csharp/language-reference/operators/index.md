@@ -63,7 +63,7 @@ These are the highest precedence operators.
 
 [stackalloc](../keywords/stackalloc.md) - allocates a block of memory on the stack.
 
-[->](dereference-operator.md) – pointer dereferencing combined with member access.
+[->](pointer-related-operators.md#pointer-member-access-operator--) – pointer indirection combined with member access.
 
 ## Unary operators
 
@@ -85,9 +85,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [await](../keywords/await.md) – awaits a `Task`.
 
-[&x](and-operator.md) – address of.
+[&x](pointer-related-operators.md#address-of-operator-) – address of a variable.
 
-[*x](multiplication-operator.md) – dereferencing.
+[*x](pointer-related-operators.md#pointer-indirection-operator-) – pointer indirection, or dereference.
 
 [true operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
 

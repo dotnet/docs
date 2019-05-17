@@ -10,7 +10,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 05/06/2019
+  ms.date: 05/17/2019
   ms.author: mamccrea
   author: mamccrea
 abstract:
@@ -24,6 +24,9 @@ sections:
     style: unordered
     items:
     - html: <a href="/dotnet/spark/tutorials/get-started">Get started with .NET for Apache Spark</a>
+    - html: <a href="/dotnet/spark/tutorials/hdinsight-deployment">Deploy a .NET for Apache Spark application to Azure HDInsight</a>
+    - html: <a href="/dotnet/spark/tutorials/amazon-emr-spark-deployment">Deploy a .NET for Apache Spark application to Amazon EMR Spark</a>
+    - html: <a href="/dotnet/spark/tutorials/databricks-deployment">Deploy a .NET for Apache Spark application to Databricks</a>
 - title: Reference and Resources
   items:
   - type: list

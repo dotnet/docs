@@ -15,7 +15,7 @@ Windows Forms controls typically display some text that is related to the primar
   
      To create an underlined shortcut key, includes an ampersand (&) before the letter that will be the shortcut key.  
   
-2. In the Properties window, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.Control.Font%2A> property.  
+2.  In the Properties window, click the ellipsis button (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.Control.Font%2A> property.  
   
      In the standard font dialog box, select the font, font style, size, effects (such as strikeout or underline), and script that you want.  
   

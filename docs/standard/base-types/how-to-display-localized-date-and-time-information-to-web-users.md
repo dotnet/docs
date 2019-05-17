@@ -92,7 +92,7 @@ Because a Web page can be displayed anywhere in the world, operations that parse
  Your code can call either the <xref:System.DateTime.Parse%2A> or the <xref:System.DateTime.TryParse%2A> method to convert the user's string representation of a date and time to a <xref:System.DateTime> value. Repeated calls to a parse method may be required for a single parsing operation. As a result, the <xref:System.DateTime.TryParse%2A> method is better because it returns `false` if a parse operation fails. In contrast, handling the repeated exceptions that may be thrown by the <xref:System.DateTime.Parse%2A> method can be a very expensive proposition in a Web application.  
   
 ## Compiling the Code  
- To compile the code, create an [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Web page without a code-behind. Then copy the example into the Web page so that it replaces all the existing code. The [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Web page should contain the following controls:  
+ To compile the code, create an ASP.NET Web page without a code-behind. Then copy the example into the Web page so that it replaces all the existing code. The ASP.NET Web page should contain the following controls:  
   
 - A <xref:System.Web.UI.WebControls.Label> control, which is not referenced in code. Set its <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to "Enter a Number:".  
   

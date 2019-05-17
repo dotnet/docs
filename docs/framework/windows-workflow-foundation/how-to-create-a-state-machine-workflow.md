@@ -173,7 +173,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      The following example illustrates the completed workflow.  
   
-     ![Completed State Machine Workflow](./media/wfstatemachinegettingstartedtutorialcomplete.JPG "WFStateMachineGettingStartedTutorialComplete")  
+     ![Illustration that shows the completed state machine workflow.](./media/how-to-create-a-state-machine-workflow/complete-state-machine-workflow.jpg)  
   
 ### To build the workflow  
   

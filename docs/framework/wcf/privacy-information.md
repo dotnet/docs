@@ -23,7 +23,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
   
 ## Hosting  
- The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)].  
+ The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to ASP.NET.  
   
  Hosting does not expose any specific information on the network and it does not keep data on the machine.  
   
@@ -41,7 +41,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
 |Data|Storage|  
 |----------|-------------|  
 |Presentation credentials, such as username, X.509 certificates, Kerberos tokens, and references to credentials.|Standard Windows credential management mechanisms such as the Windows certificate store.|  
-|User membership information, such as usernames and passwords.|[!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] membership providers.|  
+|User membership information, such as usernames and passwords.|ASP.NET membership providers.|  
 |Identity information about the service used to authenticate the service to clients.|Endpoint address of the service.|  
 |Caller information.|Auditing logs.|  
   

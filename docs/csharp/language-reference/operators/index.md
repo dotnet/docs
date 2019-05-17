@@ -85,7 +85,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [await](../keywords/await.md) – awaits a `Task`.
 
-[&x](and-operator.md) – address of.
+[&x](pointer-related-operators.md#address-of-operator-) – address of a variable.
 
 [*x](pointer-related-operators.md#pointer-indirection-operator-) – pointer indirection, or dereference.
 

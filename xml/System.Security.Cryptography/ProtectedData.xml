@@ -28,15 +28,17 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This class provides access to the Data Protection API (DPAPI) available in Microsoft Windows 2000 and later operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides protection using the user or machine credentials to encrypt or decrypt data.  
+## Remarks
+
+This class provides access to the Data Protection API (DPAPI) available in Windows operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides protection using the user or machine credentials to encrypt or decrypt data.
+
+> [!IMPORTANT]
+> Because it depends on DPAPI, the `ProtectedData` class is supported on the Windows platform only. Its use on .NET Core on platforms other than Windows throws a <xref:System.PlatformNotSupportedException>.
   
- The class consists of two wrappers for the unmanaged DPAPI, <xref:System.Security.Cryptography.ProtectedData.Protect%2A> and <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A>. These two methods can be used to encrypt and decrypt data such as passwords, keys, and connection strings.  
+The class consists of two wrappers for the unmanaged DPAPI, <xref:System.Security.Cryptography.ProtectedData.Protect%2A> and <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A>. These two methods can be used to encrypt and decrypt data such as passwords, keys, and connection strings.  
   
- If you use these methods during impersonation, you may receive the following error: "Key not valid for use in specified state." This occurs because the DPAPI stores the key data in user profiles. If the profile is not loaded, DPAPI won't be able to perform the decryption. To prevent this error, load the profile of the user you want to impersonate before calling either method. Using DPAPI with impersonation can incur significant complication and requires careful design choices.  
-  
-   
-  
+If you use these methods during impersonation, you may receive the following error: "Key not valid for use in specified state." This occurs because the DPAPI stores the key data in user profiles. If the profile is not loaded, DPAPI won't be able to perform the decryption. To prevent this error, load the profile of the user you want to impersonate before calling either method. Using DPAPI with impersonation can incur significant complication and requires careful design choices.  
+
 ## Examples  
  The following example shows how to use data protection.  
   
@@ -113,6 +115,7 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The encryption failed.</exception>
         <exception cref="T:System.NotSupportedException">The operating system does not support this method.</exception>
         <exception cref="T:System.OutOfMemoryException">The system ran out of memory while encrypting the data.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: Calls to the <c>Protect</c> method are supported on Windows operating systems only.</exception>
         <permission cref="T:System.Security.Permissions.DataProtectionPermission">with the associated <see cref="P:System.Security.Permissions.DataProtectionPermissionAttribute.ProtectData" /> flag for permission to protect data.</permission>
       </Docs>
     </Member>
@@ -181,6 +184,7 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The decryption failed.</exception>
         <exception cref="T:System.NotSupportedException">The operating system does not support this method.</exception>
         <exception cref="T:System.OutOfMemoryException">Out of memory.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: Calls to the <c>Unprotect</c> method are supported on Windows operating systems only.</exception>
         <permission cref="T:System.Security.Permissions.DataProtectionPermission">with the associated <see cref="P:System.Security.Permissions.DataProtectionPermissionAttribute.UnprotectData" /> flag for permission to unprotect data.</permission>
       </Docs>
     </Member>

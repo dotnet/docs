@@ -287,7 +287,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
     The following illustration shows the controls you created:
 
-![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png "Shows the controls you've added.")
+![ExpenseIt sample screenshot displaying a list of names](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png)
 
 ## Add an image and a title
 
@@ -321,7 +321,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png "Shows the image and title you just created.")
+![ExpenseIt sample screenshot showing the new image background and page title](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png)
 
 ## Add code to handle events
 
@@ -356,7 +356,7 @@ The following illustration shows the results of what you just added:
 
 The following illustration shows the UI elements added to *ExpenseReportPage.xaml*.
 
-![Shows the UI you just created for the ExpenseReportPage.](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
+![ExpenseIt sample screenshot showing the UI just created for the ExpenseReportPage.](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
 
 ## Style controls
 
@@ -400,7 +400,7 @@ The appearance of various elements is often the same for all elements of the sam
 
 6. Build and run the application. The window appearance is the same as previously.
 
-    ![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
+    ![ExpenseIt sample screenshot with the same appearance as in the last section.](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
 
 7. Close the application to return to Visual Studio.
 
@@ -468,7 +468,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 The following illustration shows both pages of the `ExpenseIt` application with controls, layout, styles, data binding, and data templates applied:
 
-![Shows the elements and styles that you just applied.](./media/walkthrough-my-first-wpf-desktop-application/application-data-templates.png)
+![Both pages of the app showing the names list and an expense report.](./media/walkthrough-my-first-wpf-desktop-application/application-data-templates.png)
 
 > [!NOTE]
 > This sample demonstrates a specific feature of WPF and doesn't follow all best practices for things like security, localization, and accessibility. For comprehensive coverage of WPF and the .NET app development best practices, see the following topics:

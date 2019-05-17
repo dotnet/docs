@@ -257,7 +257,6 @@ The tables in this article list the type members that are obsolete in the .NET F
   
 |Type|Member|Message|  
 |----------|------------|-------------|  
-|<xref:System.Windows.>
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.BitmapEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.BitmapEffectInput%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.PersistId%2A>|<xref:System.Windows.UIElement.PersistId%2A> is an obsolete property and may be removed in a future release. The value of this property isn't defined.|  

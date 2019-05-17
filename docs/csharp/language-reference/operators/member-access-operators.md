@@ -25,7 +25,7 @@ helpviewer_keywords:
   - "delegate invocation [C#]"
   - "() operator [C#]"
 ---
-# Member access operators
+# Member access operators (C# Reference)
 
 You might use the following operators when you access a type member:
 
@@ -82,7 +82,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 ### Other usages of []
 
-For information about pointer element access, see [How to: access an array element with a pointer](../../programming-guide/unsafe-code-pointers/how-to-access-an-array-element-with-a-pointer.md).
+For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
 
 You also use square brackets to specify [attributes](../../programming-guide/concepts/attributes/index.md):
 

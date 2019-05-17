@@ -1,7 +1,6 @@
 ---
 title: "fixed Statement - C# Reference"
 ms.custom: seodec18
-
 ms.date: 05/10/2018
 f1_keywords: 
   - "fixed_CSharpKeyword"

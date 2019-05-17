@@ -7,8 +7,6 @@ ms.assetid: 59b61d77-84e5-457b-8da5-fb5f24ca6ed6
 
 # Introduction to Delegates
 
-[Previous](delegates-events.md)
-
 Delegates provide a *late binding* mechanism in .NET. Late Binding
 means that you create an algorithm where the caller also supplies
 at least one method that implements part of the algorithm.

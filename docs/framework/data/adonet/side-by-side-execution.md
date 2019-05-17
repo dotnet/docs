@@ -6,10 +6,10 @@ ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
 # Side-by-Side Execution in ADO.NET
 Side-by-side execution in the .NET Framework is the ability to execute an application on a computer that has multiple versions of the .NET Framework installed, exclusively using the version for which the application was compiled. For detailed information about configuring side-by-side execution, see [Side-by-Side Execution](../../../../docs/framework/deployment/side-by-side-execution.md).  
   
- An application compiled by using one version of the .NET Framework can run on a different version of the .NET Framework. However, we recommend that you compile a version of the application for each installed version of the .NET Framework, and run them separately. In either scenario, you should be aware of changes in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] between releases that can affect the forward compatibility or backward compatibility of your application.  
+ An application compiled by using one version of the .NET Framework can run on a different version of the .NET Framework. However, we recommend that you compile a version of the application for each installed version of the .NET Framework, and run them separately. In either scenario, you should be aware of changes in ADO.NET between releases that can affect the forward compatibility or backward compatibility of your application.  
   
 ## Forward Compatibility and Backward Compatibility  
- Forward compatibility means that an application can be compiled with an earlier version of the .NET Framework, but will still run successfully on a later version of the .NET Framework. [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] code written for the .NET Framework version 1.1 is forward compatible with later versions.  
+ Forward compatibility means that an application can be compiled with an earlier version of the .NET Framework, but will still run successfully on a later version of the .NET Framework. ADO.NET code written for the .NET Framework version 1.1 is forward compatible with later versions.  
   
  Backward compatibility means that an application is compiled for a newer version of the .NET Framework, but continues to run on earlier versions of the .NET Framework without any loss of functionality. Of course, this will not be the case for features introduced in a new version of the .NET Framework.  
   
@@ -30,7 +30,7 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
   
  However, starting with the .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in the .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md).  
   
- Because each installation of the .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] included in the .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
+ Because each installation of the .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in the .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
   
 ## SqlCommand Execution  
  Starting with the .NET Framework version 1.1, the way that <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> executes commands at the data source was changed.  

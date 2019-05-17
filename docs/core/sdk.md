@@ -7,9 +7,7 @@ ms.technology: dotnet-cli
 # .NET Core SDK overview
 
 .NET Core Software Development Kit (SDK) is a set of libraries and tools that allow developers to create .NET Core applications
-and libraries. This is the package that developers will most likely acquire. 
-
-It contains the following components that are used to build and run applications:
+and libraries. It contains the following components that are used to build and run applications:
 
 - The .NET Core CLI tools.
 - .NET Core libraries and runtime.

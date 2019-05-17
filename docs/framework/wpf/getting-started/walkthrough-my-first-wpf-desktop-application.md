@@ -287,7 +287,7 @@ Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by se
 
     The following illustration shows the controls you created:
 
-![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png "Shows the controls you've added.")
+![ExpenseIt sample screenshot displaying a list of names](./media/walkthrough-my-first-wpf-desktop-application/add-application-controls.png)
 
 ## Add an image and a title
 

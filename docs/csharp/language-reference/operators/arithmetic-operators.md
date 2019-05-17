@@ -87,7 +87,7 @@ The multiplication operator `*` computes the product of its operands:
 
 [!code-csharp-interactive[multiplication operator](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#Multiplication)]
 
-The unary `*` operator is the [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
+The unary `*` operator is the [pointer indirection operator](pointer-related-operators.md#pointer-indirection-operator-).
 
 ## Division operator /
 

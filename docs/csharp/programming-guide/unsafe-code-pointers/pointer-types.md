@@ -69,19 +69,21 @@ The following table lists the operators and statements that can operate on point
 
 |Operator/Statement|Use|
 |-------------------------|---------|
-|*|Performs pointer indirection.|
-|->|Accesses a member of a struct through a pointer.|
-|[]|Indexes a pointer.|
+|`*`|Performs pointer indirection.|
+|`->`|Accesses a member of a struct through a pointer.|
+|`[]`|Indexes a pointer.|
 |`&`|Obtains the address of a variable.|
-|++ and --|Increments and decrements pointers.|
-|+ and -|Performs pointer arithmetic.|
-|==, !=, \<, >, \<=, and >=|Compares pointers.|
-|`stackalloc`|Allocates memory on the stack.|
-|`fixed` statement|Temporarily fixes a variable so that its address may be found.|
+|`++` and `--`|Increments and decrements pointers.|
+|`+` and `-`|Performs pointer arithmetic.|
+|`==`, `!=`, `<`, `>`, `<=`, and `>=`|Compares pointers.|
+|[`stackalloc` operator](../../language-reference/keywords/stackalloc.md)|Allocates memory on the stack.|
+|[`fixed` statement](../../language-reference/keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
 
-## C# Language Specification
+For more information about pointer related operators, see [Pointer related operators](../../language-reference/operators/pointer-related-operators.md).
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+## C# language specification
+
+For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#pointer-types) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
@@ -90,6 +92,3 @@ The following table lists the operators and statements that can operate on point
 - [Pointer Conversions](pointer-conversions.md)
 - [Types](../../language-reference/keywords/types.md)
 - [unsafe](../../language-reference/keywords/unsafe.md)
-- [fixed Statement](../../language-reference/keywords/fixed-statement.md)
-- [stackalloc](../../language-reference/keywords/stackalloc.md)
-- [Boxing and Unboxing](../types/boxing-and-unboxing.md)

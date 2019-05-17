@@ -321,7 +321,7 @@ In this section, you'll update the home page UI with an image and a page title.
 
 The following illustration shows the results of what you just added:
 
-![ExpenseIt sample screen shot](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png "Shows the image and title you just created.")
+![ExpenseIt sample screenshot showing the new image background and page title](./media/walkthrough-my-first-wpf-desktop-application/add-application-image-title.png)
 
 ## Add code to handle events
 

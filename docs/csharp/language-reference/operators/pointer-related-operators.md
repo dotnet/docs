@@ -31,6 +31,8 @@ You can use the following operators to work with pointers:
 - Arithmetic operators [`+`, `-`, `++`, and `--`](#pointer-arithmetic-operators)
 - Comparison operators [`==`, `!=`, `<`, `>`, `<=`, and `>=`](#pointer-comparison-operators)
 
+For information about pointer types, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
+
 > [!NOTE]
 > Any operation with pointers requires [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
 
@@ -40,7 +42,7 @@ The unary `&` operator returns the address of its operand:
 
 [!code-csharp[address of local](~/samples/snippets/csharp/language-reference/operators/PointerOperators.cs#AddressOf)]
 
-The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is an example of a fixed variable. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with the [fixed](../keywords/fixed-statement.md) statement. The obtained address is valid only for the duration of the `fixed` statement block. The following example shows how to use the `fixed` statement and the `&` operator:
+The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with the [fixed](../keywords/fixed-statement.md) statement. The obtained address is valid only for the duration of the `fixed` statement block. The following example shows how to use the `fixed` statement and the `&` operator:
 
 [!code-csharp[address of fixed](~/samples/snippets/csharp/language-reference/operators/PointerOperators.cs#AddressOfFixed)]
 
@@ -82,7 +84,7 @@ You cannot apply the `->` operator to an expression of type `void*`.
 
 ## Pointer element access operator []
 
-For an expression `p` of a pointer type, a pointer element access of the form `p[n]` is evaluated as `*(p + n)`, where `n` must be of an [integral](../keywords/integral-types-table.md) type.
+For an expression `p` of a pointer type, a pointer element access of the form `p[n]` is evaluated as `*(p + n)`, where `n` must be of a type implicitly convertible to `int`, `uint`, `long`, or `ulong`. For information about the behavior of the `+` operator with pointers, see the [Addition or subtraction of an integral value to or from a pointer](#addition-or-subtraction-of-an-integral-value-to-or-from-a-pointer) section.
 
 The following example demonstrates how to access array elements with a pointer and the `[]` operator:
 
@@ -93,7 +95,7 @@ The example uses the [`stackalloc` operator](../keywords/stackalloc.md) to alloc
 > [!NOTE]
 > The pointer element access operator doesn't check for out-of-bounds errors.
 
-You cannot use `[]` for element access with an expression of type `void*`.
+You cannot use `[]` for pointer element access with an expression of type `void*`.
 
 You also can use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
 
@@ -111,9 +113,9 @@ For information about supported arithmetic operations with numeric types, see [A
 
 ### Addition or subtraction of an integral value to or from a pointer
 
-For a pointer `p` of type `T*` and an expression `n` of an [integral](../keywords/integral-types-table.md) type, addition and subtraction are defined as follows:
+For a pointer `p` of type `T*` and an expression `n` of a type implicitly convertible to `int`, `uint`, `long`, or `ulong`, addition and subtraction are defined as follows:
 
-- Both `p + n` and `n + p` produce a pointer of type `T*` that results from adding `n * sizeof(T)` to the address given by `p`.
+- Both `p + n` and `n + p` expressions produce a pointer of type `T*` that results from adding `n * sizeof(T)` to the address given by `p`.
 - The `p - n` expression produces a pointer of type `T*` that results from subtracting `n * sizeof(T)` from the address given by `p`.
 
 The [`sizeof` operator](../keywords/sizeof.md) obtains the size of a type in bytes.
@@ -124,7 +126,7 @@ The following example demonstrates the usage of the `+` operator with a pointer:
 
 ### Pointer subtraction
 
-For two pointers `p1` and `p2` of type `T*`, the expression `p1 - p2` produces the difference between the addresses given by `p1` and `p2` divided by `sizeof(T)`. The type of the result is always `long`. That is, `p1 - p2` is computed as `((long)(p1) - (long)(p2)) / sizeof(T)`.
+For two pointers `p1` and `p2` of type `T*`, the expression `p1 - p2` produces the difference between the addresses given by `p1` and `p2` divided by `sizeof(T)`. The type of the result is `long`. That is, `p1 - p2` is computed as `((long)(p1) - (long)(p2)) / sizeof(T)`.
 
 The following example demonstrates the pointer subtraction:
 

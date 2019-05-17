@@ -54,7 +54,7 @@ The binary `&` operator computes the [logical AND](boolean-logical-operators.md#
 
 ## Pointer indirection operator *
 
-The unary pointer indirection operator `*`, also known as the dereference operator, obtains the variable to which its operand of a pointer type points:
+The unary pointer indirection operator `*` obtains the variable to which its operand points. It's also known as the dereference operator. The operand of the `*` operator must be of a pointer type.
 
 [!code-csharp[pointer indirection](~/samples/snippets/csharp/language-reference/operators/PointerOperators.cs#PointerIndirection)]
 

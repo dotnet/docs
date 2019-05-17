@@ -64,6 +64,8 @@ The tables in this article list the type members that are obsolete in the .NET F
   
 - [Obsolete members in Microsoft assemblies](#MicrosoftMembers)  
   
+    - [accessibility.dll](#assembly-accessibility-dll)
+
     - [IEHost.dll and IEExec.exe](#IEHost)  
   
     - [ISymWrapper.dll](#isymwrapper)  
@@ -255,12 +257,18 @@ The tables in this article list the type members that are obsolete in the .NET F
   
 |Type|Member|Message|  
 |----------|------------|-------------|  
+|<xref:System.Windows.>
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.BitmapEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.BitmapEffectInput%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.UIElement?displayProperty=nameWithType>|<xref:System.Windows.UIElement.PersistId%2A>|<xref:System.Windows.UIElement.PersistId%2A> is an obsolete property and may be removed in a future release. The value of this property isn't defined.|  
 |<xref:System.Windows.Media.ContainerVisual?displayProperty=nameWithType>|<xref:System.Windows.Media.ContainerVisual.BitmapEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.Media.ContainerVisual?displayProperty=nameWithType>|<xref:System.Windows.Media.ContainerVisual.BitmapEffectInput%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.Media.DrawingContext?displayProperty=nameWithType>|<xref:System.Windows.Media.DrawingContext.PushEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
+|<xref:System.Windows.Media.FormattedText?displayProperty=nameWithType>|<xref:System.Windows.Media.FormattedText.%23ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush)?displayProperty=nameWithType>|Use the PixelsPerDip override.|
+|<xref:System.Windows.Media.FormattedText?displayProperty=nameWithType>|<xref:System.Windows.Media.FormattedText.%23ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Windows.Media.NumberSubstitution)>|Use the PixelsPerDip override.|
+|<xref:System.Windows.Media.FormattedText?displayProperty=nameWithType>|<xref:System.Windows.Media.FormattedText.%23ctor(System.String,System.Globalization.CultureInfo,System.Windows.FlowDirection,System.Windows.Media.Typeface,System.Double,System.Windows.Media.Brush,System.Windows.Media.NumberSubstitution,System.Windows.Media.TextFormattingMode)>|Use the PixelsPerDip override.|
+|<xref:System.Windows.Media.GlyphRun?displayProperty=nameWithType>|<xref:System.Windows.Media.GlyphRun.%23ctor>|Use the PixelsPerDip override.|
+|<xref:System.Windows.Media.GlyphRun?displayProperty=nameWithType>|<xref:System.Windows.Media.GlyphRun.#23ctor(System.Windows.Media.GlyphTypeface,System.Int32,System.Boolean,System.Double,System.Collections.Generic.IList`1[System.UInt16],System.Windows.Point,System.Collections.Generic.IList`1[System.Double],System.Collections.Generic.IList`1[System.Windows.Point],System.Collections.Generic.IList`1[System.Char,System.String,System.Collections.Generic.IList`1[System.UInt16],System.Collections.Generic.IList`1[System.Boolean],System.Windows.Markup.XmlLanguage)>|Use the PixelsPerDip override.|
 |<xref:System.Windows.Media.RenderCapability?displayProperty=nameWithType>|<xref:System.Windows.Media.RenderCapability.IsShaderEffectSoftwareRenderingSupported%2A>|This property is deprecated. Use the static <xref:System.Windows.Media.RenderCapability.IsPixelShaderVersionSupportedInSoftware%2A?displayProperty=nameWithType> method instead.|  
 |<xref:System.Windows.Media.Visual?displayProperty=nameWithType>|<xref:System.Windows.Media.Visual.VisualBitmapEffect%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
 |<xref:System.Windows.Media.Visual?displayProperty=nameWithType>|<xref:System.Windows.Media.Visual.VisualBitmapEffectInput%2A>|Bitmap effects are deprecated and no longer function. Consider using <xref:System.Windows.Media.Effects.Effect?displayProperty=nameWithType> where appropriate instead.|  
@@ -532,7 +540,6 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Diagnostics.Process?displayProperty=nameWithType>|<xref:System.Diagnostics.Process.PrivateMemorySize%2A>|This property has been deprecated. Use <xref:System.Diagnostics.Process.PrivateMemorySize64%2A?displayProperty=nameWithType> instead.|  
 |<xref:System.Diagnostics.Process?displayProperty=nameWithType>|<xref:System.Diagnostics.Process.VirtualMemorySize%2A>|This property has been deprecated. Use <xref:System.Diagnostics.Process.VirtualMemorySize64%2A?displayProperty=nameWithType> instead.|  
 |<xref:System.Diagnostics.Process?displayProperty=nameWithType>|<xref:System.Diagnostics.Process.WorkingSet%2A>|This property has been deprecated. Use <xref:System.Diagnostics.Process.WorkingSet64%2A?displayProperty=nameWithType> instead.|  
-|<xref:System.Net.FileWebResponse?displayProperty=nameWithType>|<xref:System.Net.FileWebResponse.%23ctor%2A>|Serialization is obsoleted for this type.|  
 |<xref:System.Net.Dns?displayProperty=nameWithType>|<xref:System.Net.Dns.BeginGetHostByName%2A>|<xref:System.Net.Dns.BeginGetHostByName%2A> is obsoleted for this type, Use <xref:System.Net.Dns.BeginGetHostEntry%28System.String%2CSystem.AsyncCallback%2CSystem.Object%29?displayProperty=nameWithType> instead.|  
 |<xref:System.Net.Dns?displayProperty=nameWithType>|<xref:System.Net.Dns.BeginResolve%28System.String%2CSystem.AsyncCallback%2CSystem.Object%29>|<xref:System.Net.Dns.BeginResolve%28System.String%2CSystem.AsyncCallback%2CSystem.Object%29> is obsoleted for this type, Use <xref:System.Net.Dns.BeginGetHostEntry%28System.String%2CSystem.AsyncCallback%2CSystem.Object%29?displayProperty=nameWithType> instead.|  
 |<xref:System.Net.Dns?displayProperty=nameWithType>|<xref:System.Net.Dns.EndGetHostByName%2A>|<xref:System.Net.Dns.EndGetHostByName%2A> is obsoleted for this type, Use <xref:System.Net.Dns.EndGetHostEntry%2A?displayProperty=nameWithType> instead.|  
@@ -542,6 +549,7 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:System.Net.Dns?displayProperty=nameWithType>|<xref:System.Net.Dns.GetHostByName%2A>|<xref:System.Net.Dns.GetHostByName%2A> is obsoleted for this type, Use <xref:System.Net.Dns.GetHostEntry%28System.String%29?displayProperty=nameWithType> instead.|  
 |<xref:System.Net.Dns?displayProperty=nameWithType>|<xref:System.Net.Dns.Resolve%2A>|<xref:System.Net.Dns.Resolve%2A> is obsoleted for this type, Use <xref:System.Net.Dns.GetHostEntry%28System.String%29?displayProperty=nameWithType> instead.|  
 |<xref:System.Net.FileWebRequest?displayProperty=nameWithType>|<xref:System.Net.FileWebRequest.%23ctor%2A>|Serialization is obsoleted for this type.|  
+|<xref:System.Net.FileWebResponse?displayProperty=nameWithType>|<xref:System.Net.FileWebResponse.%23ctor%2A>|Serialization is obsoleted for this type.|  
 |<xref:System.Net.HttpWebRequest?displayProperty=nameWithType>|<xref:System.Net.HttpWebRequest.%23ctor>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this member generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and isn't intended to be used directly from your code.|  
 |<xref:System.Net.HttpWebRequest?displayProperty=nameWithType>|<xref:System.Net.HttpWebRequest.%23ctor%28System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext%29>|Serialization is obsoleted for this type.|  
 |<xref:System.Net.HttpWebResponse?displayProperty=nameWithType>|<xref:System.Net.HttpWebResponse.%23ctor>|First deprecated in the .NET Framework 4.5.<br /><br /> Use of this member generates a compiler error.<br /><br /> This API supports the .NET Framework infrastructure and isn't intended to be used directly from your code.|  
@@ -725,7 +733,14 @@ The tables in this article list the type members that are obsolete in the .NET F
 ## Obsolete Members in Microsoft Assemblies  
  The following tables list the obsolete members in Microsoft assemblies. These are special-purpose assemblies and include assemblies that target an individual language (such as Microsoft.VisualBasic.dll) or a build system (such as Microsoft.Build.Engine.dll).  
   
-<a name="IEHost"></a>   
+### Assembly: accessibility.dll
+
+|Type|Member|Message|  
+|----------|------------|-------------|  
+|<xref:Accessibility.AnnoScope?displayProperty=nameWithType>|<xref:Accessibility.AnnoScope.ToString(System.IFormatProvider)>|The provider argument is not used. Please use ToString().|
+|<xref:Accessibility.AnnoScope?displayProperty=nameWithType>|<xref:Accessibility.AnnoScope.ToString(System.String,System.IFormatProvider)>|The provider argument is not used. Please use ToString(String).|
+
+<a name="IEHost"></a>
 ### Assembly: IEHost.dll and IEExec.exe  
  The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Alternatives to this technology include ClickOnce, XAML Browser Applications (XBAP), and Microsoft Silverlight.  
   

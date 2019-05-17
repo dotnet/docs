@@ -39,14 +39,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Supports all classes in the .NET Framework class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all classes in the .NET Framework; it is the root of the type hierarchy.</summary>
+    <summary>Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Languages typically do not require a class to declare inheritance from <xref:System.Object> because the inheritance is implicit.  
   
- Because all classes in the .NET Framework are derived from <xref:System.Object>, every method defined in the <xref:System.Object> class is available in all objects in the system. Derived classes can and do override some of these methods, including:  
+ Because all classes in .NET are derived from <xref:System.Object>, every method defined in the <xref:System.Object> class is available in all objects in the system. Derived classes can and do override some of these methods, including:  
   
 -   <xref:System.Object.Equals%2A> - Supports comparisons between objects.  
   
@@ -597,7 +597,7 @@ and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispos
 > [!NOTE]
 >  For information about how hash codes are used in hash tables and for some additional hash code algorithms, see the [Hash Function](https://en.wikipedia.org/wiki/Hash_function) entry in Wikipedia.  
   
- Two objects that are equal return hash codes that are equal. However, the reverse is not true: equal hash codes do not imply object equality, because different (unequal) objects can have identical hash codes. Furthermore, the .NET Framework does not guarantee the default implementation of the <xref:System.Object.GetHashCode%2A> method, and the value this method returns may differ between .NET Framework versions and platforms, such as 32-bit and 64-bit platforms. For these reasons, do not use the default implementation of this method as a unique object identifier for hashing purposes. Two consequences follow from this:  
+ Two objects that are equal return hash codes that are equal. However, the reverse is not true: equal hash codes do not imply object equality, because different (unequal) objects can have identical hash codes. Furthermore, .NET does not guarantee the default implementation of the <xref:System.Object.GetHashCode%2A> method, and the value this method returns may differ between .NET implementations, such as different versions of .NET Framework and .NET Core, and platforms, such as 32-bit and 64-bit platforms. For these reasons, do not use the default implementation of this method as a unique object identifier for hashing purposes. Two consequences follow from this:  
   
 -   You should not assume that equal hash codes imply object equality.  
   
@@ -747,7 +747,7 @@ and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispos
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because <xref:System.Object?displayProperty=nameWithType> is the base class for all types in the .NET Framework type system, the <xref:System.Object.GetType%2A> method can be used to return <xref:System.Type> objects that represent all .NET Framework types. The .NET Framework recognizes the following five categories of types:  
+ Because <xref:System.Object?displayProperty=nameWithType> is the base class for all types in the .NET type system, the <xref:System.Object.GetType%2A> method can be used to return <xref:System.Type> objects that represent all .NET types. .NET recognizes the following five categories of types:  
   
 -   Classes, which are derived from <xref:System.Object?displayProperty=nameWithType>,  
   
@@ -1024,12 +1024,12 @@ and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispos
  [!code-csharp[System.Object.ToString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.object.tostring/cs/tostring3.cs#3)]
  [!code-vb[System.Object.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.object.tostring/vb/tostring3.vb#3)]  
   
- The following table lists the type categories in the .NET Framework and indicates whether or not they override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method.  
+ The following table lists the type categories in .NET and indicates whether or not they override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method.  
   
 |Type category|Overrides Object.ToString()|Behavior|  
 |-------------------|-----------------------------------|--------------|  
 |Class|n/a|n/a|  
-|Structure|Yes (<xref:System.ValueType.ToString%2A?displayProperty=nameWithType>)|Same as Object.ToString()|  
+|Structure|Yes (<xref:System.ValueType.ToString%2A?displayProperty=nameWithType>)|Same as `Object.ToString()`|  
 |Enumeration|Yes (<xref:System.Enum.ToString?displayProperty=nameWithType>)|The member name|  
 |Interface|No|n/a|  
 |Delegate|No|n/a|  

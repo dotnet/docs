@@ -148,6 +148,20 @@ You can use the `==`, `!=`, `<`, `>`, `<=`, and `>=` operators to compare operan
 
 For information about the behavior of those operators for operands of other types, see the [Equality operators](equality-operators.md) and [Comparison operators](comparison-operators.md) articles.
 
+## Operator precedence
+
+The following list orders pointer related operators starting from the highest precedence to the lowest:
+
+- Postfix increment `x++` and decrement `x--` operators and the `->` and `[]` operators
+- Prefix increment `++x` and decrement `--x` operators and the `&` and `*` operators
+- Additive `+` and `-` operators
+- Comparison `<`, `>`, `<=`, and `>=` operators
+- Equality `==` and `!=` operators
+
+Use parentheses, `()`, to change the order of evaluation imposed by operator precedence.
+
+For the complete list of C# operators ordered by precedence level, see [C# operators](index.md).
+
 ## Operator overloadability
 
 A user-defined type cannot overload the pointer related operators `&`, `*`, `->`, and `[]`.

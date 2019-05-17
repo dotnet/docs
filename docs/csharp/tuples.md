@@ -170,7 +170,7 @@ Finally, tuples may contain nested tuples. Tuple equality compares the "shape" o
 
 [!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
 
-It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won' attempt any deconstruction of nested tuples in order to compare them.
+It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to compare them.
 
 ## Assignment and tuples
 

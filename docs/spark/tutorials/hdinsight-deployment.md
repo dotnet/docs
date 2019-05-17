@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-Before you start, make sure you have the following:
+Before you start, do the following:
 
 * Download [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 * Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
@@ -64,7 +64,7 @@ Before you start, make sure you have the following:
 
 ## Deploy to Azure HDInsight Spark
 
-[Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) is the Microsoft implementation of Apache Spark in the cloud that allows users to launch and configure Spark clusters in Azure. You can use HDInsight Spark clusters to process your data stored in [Azure Storage](https://azure.microsoft.com/services/storage/) or [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
+[Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) is the Microsoft implementation of Apache Spark in the cloud that allows users to launch and configure Spark clusters in Azure. You can use HDInsight Spark clusters to process your data stored in [Azure Storage](https://azure.microsoft.com/services/storage/) or [Azure Data Lake Storage](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-data-lake-storage-gen2).
 
 > [!NOTE]
 > Azure HDInsight Spark is Linux-based. If you are interested in deploying your app to Azure HDInsight Spark, make sure your app is .NET Standard compatible and that you use the [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
@@ -79,9 +79,9 @@ Run `install-worker.sh` on the cluster using [HDInsight Script Actions](https://
 |-------|-----|
 |Script type|Custom|
 |Name|Install Microsoft.Spark.Worker|
-|Bash script URI|The URI to which you uploaded `install-worker.sh`. For example, `adl://<cluster name>.azuredatalakestore.net/<some dir>/install-worker.sh`|
+|Bash script URI|The URI to which you uploaded `install-worker.sh`. For example, `abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/install-worker.sh`|
 |Node type(s)|Worker|
-|Parameters|Parameters to `install-worker.sh`. For example, if you uploaded `install-worker.sh` to Azure Data Lake then it would be `azure adl://<cluster name>.azuredatalakestore.net/<some dir>/Microsoft.Spark.Worker.<release>.tar.gz /usr/local/bin`.|
+|Parameters|Parameters to `install-worker.sh`. For example, if you uploaded `install-worker.sh` to Azure Data Lake Gen 2 then it would be `azure abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/Microsoft.Spark.Worker.<release>.tar.gz /usr/local/bin`.|
 
 ![Script Action Image](./media/hdinsight-deployment/deployment-hdi-action-script.png)
 
@@ -102,8 +102,8 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
    --master yarn \
    --class org.apache.spark.deploy.DotnetRunner \
    --files <comma-separated list of assemblies that contain UDF definitions, if any> \
-   adl://<cluster name>.azuredatalakestore.net/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar \
-   adl://<cluster name>.azuredatalakestore.net/<some dir>/<your app>.zip <your app> <app arg 1> <app arg 2> ... <app arg n>
+   abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar \
+   abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<your app>.zip <your app> <app arg 1> <app arg 2> ... <app arg n>
    ```
 
 ### Use Apache Livy
@@ -119,10 +119,10 @@ curl -k -v -X POST "https://<your spark cluster>.azurehdinsight.net/livy/batches
 -H "X-Requested-By: <hdinsight username>" \
 -d @- << EOF
 {
-    "file":"adl://<cluster name>.azuredatalakestore.net/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar",
+    "file":"abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar",
     "className":"org.apache.spark.deploy.DotnetRunner",
-    "files":["adl://<cluster name>.azuredatalakestore.net/<some dir>/<udf assembly>", "adl://<cluster name>.azuredatalakestore.net/<some dir>/<file>"],
-    "args":["adl://<cluster name>.azuredatalakestore.net/<some dir>/<your app>.zip","<your app>","<app arg 1>","<app arg 2>,"...","<app arg n>"]
+    "files":["abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<udf assembly>", "abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<file>"],
+    "args":["abfss://<your-file-system-name>@<your-storage-account-name>.dfs.core.windows.net/<some dir>/<your app>.zip","<your app>","<app arg 1>","<app arg 2>,"...","<app arg n>"]
 }
 EOF
 ```

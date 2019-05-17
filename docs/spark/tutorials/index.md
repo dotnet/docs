@@ -10,7 +10,7 @@ The following tutorials enable you to understand how to use [.NET for Apache Spa
 - [Get started](get-started.md): demonstrates build and run a simple .NET for Apache Spark application.
 - [Deploy a .NET for Apache Spark application to Azure HDInsight](hdinsight-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Azure HDInsight.
 - [Deploy a .NET for Apache Spark application to Amazon EMR Spark](azure-emr-spark-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Amazon EMR Spark.
-- [Deploy a .NET for Apache Spark application to Azure HDInsight](databricks-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Databricks.
+- [Deploy a .NET for Apache Spark application to Databricks](databricks-deployment.md): demonstrates how to deploy your .NET for Apache Spark application to Databricks.
 
 ## Next Steps
 

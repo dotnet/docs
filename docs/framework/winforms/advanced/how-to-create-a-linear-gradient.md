@@ -25,9 +25,9 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
  The following illustration shows the line, the ellipse, and the rectangle. Note that the color gradient repeats itself as the horizontal coordinate increases beyond 200.  
   
- ![Linear Gradient](./media/cslineargradient1.png "cslineargradient1")  
+ ![A line, an ellipse, and a rectangle filled with a color gradient.](./media/how-to-create-a-linear-gradient/gradient-line-ellipse-rectangle.png)  
   
-### To use horizontal linear gradients  
+## To use horizontal linear gradients  
   
 - Pass in the opaque red and opaque blue as the third and fourth argument, respectively.  
   
@@ -50,9 +50,9 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
  The following illustration shows the resulting ellipse and rectangle.  
   
- ![Linear Gradient](./media/cslineargradient2.png "cslineargradient2")  
+ ![An ellipse and a rectangle filled with a horizontal color gradient.](./media/how-to-create-a-linear-gradient/gradient-ellipse-rectangle.png)  
 
-### To customize linear gradients  
+## To customize linear gradients  
   
 - Pass in the opaque black and opaque red as the third and fourth argument, respectively.  
   
@@ -65,9 +65,9 @@ The <xref:System.Drawing.Drawing2D.LinearGradientBrush.%23ctor%2A> constructor r
   
  The following illustration shows the line and the ellipse. Note that the color in the ellipse changes gradually as you move along any line that is parallel to the line passing through (0, 0) and (200, 100).  
   
- ![Linear Gradient](./media/cslineargradient3.png "cslineargradient3")  
+ ![A line and an ellipse filled with a diagonal color gradient.](./media/how-to-create-a-linear-gradient/gradient-line-ellipse.png)  
   
-### To create diagonal linear gradients  
+## To create diagonal linear gradients  
   
 - Pass in the opaque blue and opaque green as the third and fourth argument, respectively.  
   

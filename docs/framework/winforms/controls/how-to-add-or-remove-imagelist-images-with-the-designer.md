@@ -17,7 +17,7 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
   
 1. Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.  
   
-2. In the Properties window, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.ImageList.Images%2A> property.  
+2.  In the Properties window, click the ellipsis button (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.ImageList.Images%2A> property.  
   
 3. In the **Image Collection Editor**, click **Add** or **Remove** to add or remove images from the list.  
   

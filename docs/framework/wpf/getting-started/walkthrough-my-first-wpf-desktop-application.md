@@ -356,7 +356,7 @@ The following illustration shows the results of what you just added:
 
 The following illustration shows the UI elements added to *ExpenseReportPage.xaml*.
 
-![Shows the UI you just created for the ExpenseReportPage.](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
+![ExpenseIt sample screenshot showing the UI just created for the ExpenseReportPage.](./media/walkthrough-my-first-wpf-desktop-application/create-application-ui.png)
 
 ## Style controls
 

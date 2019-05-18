@@ -72,8 +72,8 @@ Characters are abstract entities that can be represented in many different ways.
   
  These encodings enable you to work with Unicode characters as well as with encodings that are most commonly used in legacy applications. In addition, you can create a custom encoding by defining a class that derives from <xref:System.Text.Encoding> and overriding its members.  
   
-### Platform Notes: [!INCLUDE[net_core](../../../includes/net-core-md.md)]  
- By default, [!INCLUDE[net_core](../../../includes/net-core-md.md)] does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target .NET to your app. For complete information, see the <xref:System.Text.CodePagesEncodingProvider> topic.  
+### Platform Notes: .NET Core  
+ By default, .NET Core does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target .NET to your app. For complete information, see the <xref:System.Text.CodePagesEncodingProvider> topic.  
   
 <a name="Selecting"></a>   
 ## Selecting an Encoding Class  

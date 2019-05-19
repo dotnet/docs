@@ -55,7 +55,7 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
   
 5. The type of merge options.  
   
-     PLINQ can be configured to either buffer its output, and produce it in chunks or all at once after the entire result set is produced, or else to stream individual results as they are produced. The former result is decreased overall execution time and the latter results in decreased latency between yielded elements.  While the merge options do not always have a major impact on overall query performance, they can impact perceived performance because they control how long a user must wait to see results. For more information, see [Merge Options in PLINQ](../../../docs/standard/parallel-programming/merge-options-in-plinq.md).  
+     PLINQ can be configured to either buffer its output, and produce it in chunks or all at once after the entire result set is produced, or else to stream individual results as they are produced. The former results in decreased overall execution time and the latter results in decreased latency between yielded elements.  While the merge options do not always have a major impact on overall query performance, they can impact perceived performance because they control how long a user must wait to see results. For more information, see [Merge Options in PLINQ](../../../docs/standard/parallel-programming/merge-options-in-plinq.md).  
   
 6. The kind of partitioning.  
   

@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "indexer operator [C#]"
   - "[] operator [C#]"
   - "null-conditional operators [C#]"
+  - "Elvis operator [C#]"
   - "?. operator [C#]"
   - "?[] operator [C#]"
   - "invocation operator [C#]"

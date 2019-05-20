@@ -87,7 +87,6 @@ Authorization is the process of determining which entities have permission to ch
  ![Sets of claims within the hierarchy.](./media/managing-claims-and-authorization-with-the-identity-model/claims-sets-hierarchy.gif)  
   
  Multiple sets of claims may have the same issuing claim set, as illustrated in the following figure:
- 
   
  ![Multiple sets of claims with the same issuing claim set.](./media/managing-claims-and-authorization-with-the-identity-model/multiple-claim-sets-same-issuing-claim-set.gif)  
   

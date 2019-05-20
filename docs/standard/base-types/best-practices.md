@@ -63,7 +63,7 @@ ms.custom: serodec18
   
 - When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#Backtracking) section.  
   
-- Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](https://www.microsoft.com/research/project/rex-regular-expression-exploration/), which is a regular expression exploration tool from Microsoft Research.  
+- Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](https://www.microsoft.com/en-us/research/project/rex-regular-expression-exploration/), which is a regular expression exploration tool from Microsoft Research.  
   
  [Back to top](#top)  
   

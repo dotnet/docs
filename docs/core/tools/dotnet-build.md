@@ -138,7 +138,7 @@ The project or solution file to build. If a project or solution file isn't speci
   dotnet build --source c:\packages\mypackages
   ```
 
-* Build the project and set 1.2.3.4 version as a build parameter:
+* Build the project and set 1.2.3.4 version as a build parameter using the `-p` [MSBuild option](#msbuild):
 
   ```console
   dotnet build -p:Version=1.2.3.4

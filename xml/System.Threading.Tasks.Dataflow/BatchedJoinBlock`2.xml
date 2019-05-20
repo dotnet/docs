@@ -111,7 +111,10 @@
         <param name="dataflowBlockOptions">The options with which to configure this <see cref="T:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2" />.</param>
         <summary>Initializes a new <see cref="T:System.Threading.Tasks.Dataflow.BatchedJoinBlock`2" /> with the specified configuration.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="dataflowBlockOptions" /> is <see langword="null" />.</exception>
+         <exception cref="T:System.ArgumentNullException">
+           <paramref name="dataflowBlockOptions" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="batchSize" /> is less than one.</exception>
       </Docs>
     </Member>
     <Member MemberName="BatchSize">

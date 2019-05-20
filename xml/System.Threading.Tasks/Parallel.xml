@@ -1014,6 +1014,7 @@
   
  The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" /> method in the <paramref name="source" /> partitioner does not return the correct number of partitions.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
+        <exception cref="T:System.AggregateException">The exception that is thrown to contain an exception thrown from one of the specified delegates.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1086,6 +1087,7 @@
   
  The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" /> method in the <paramref name="source" /> partitioner does not return the correct number of partitions.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
+        <exception cref="T:System.AggregateException">The exception that is thrown to contain an exception thrown from one of the specified delegates.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1333,6 +1335,7 @@
   
  The exception that is thrown when any methods in the <paramref name="source" /> orderable partitioner return <see langword="null" />.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
+        <exception cref="T:System.AggregateException">The exception that is thrown to contain an exception thrown from one of the specified delegates.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1400,6 +1403,7 @@
   
  The exception that is thrown when any methods in the <paramref name="source" /> partitioner return <see langword="null" />.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
+        <exception cref="T:System.AggregateException">The exception that is thrown to contain an exception thrown from one of the specified delegates.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1467,6 +1471,7 @@
   
  The exception that is thrown when any methods in the <paramref name="source" /> partitioner return <see langword="null" />.</exception>
         <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
+        <exception cref="T:System.AggregateException">The exception that is thrown to contain an exception thrown from one of the specified delegates.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">

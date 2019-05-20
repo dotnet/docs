@@ -712,7 +712,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
         <summary>Forms a slice out of the current read-only span that begins at a specified index.</summary>
-        <returns>A span that consists of all elements of the current span from <paramref name="index" /> to the end of the span.</returns>
+        <returns>A span that consists of all elements of the current span from <paramref name="start" /> to the end of the span.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="start" /> is greater than the number of items in the read-only span.</exception>
@@ -780,7 +780,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <param name="start">The index at which to begin this slice.</param>
         <param name="length">The desired length for the slice.</param>
         <summary>Forms a slice out of the current read-only span starting at a specified index for a specified length.</summary>
-        <returns>A read-only span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="index" />.</returns>
+        <returns>A read-only span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="start" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>

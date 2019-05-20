@@ -919,7 +919,7 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
         <summary>Forms a slice out of the current span that begins at a specified index.</summary>
-        <returns>A span that consists of all elements of the current span from <paramref name="index" /> to the end of the span.</returns>
+        <returns>A span that consists of all elements of the current span from <paramref name="start" /> to the end of the span.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="start" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>
@@ -987,10 +987,10 @@ Two <xref:System.Span%601> objects are equal if they have different lengths or i
         <param name="start">The index at which to begin this slice.</param>
         <param name="length">The desired length for the slice.</param>
         <summary>Forms a slice out of the current span starting at a specified index for a specified length.</summary>
-        <returns>A span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="index" />.</returns>
+        <returns>A span that consists of <paramref name="length" /> elements from the current span starting at <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="start" /> or <paramref name="start" /> + <paramref name="index" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>
+          <paramref name="start" /> or <paramref name="start" /> + <paramref name="length" /> is less than zero or greater than <see cref="T:System.Span`1.Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToArray">

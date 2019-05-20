@@ -144,7 +144,7 @@ Select any versions you want to remove from your machine and click **Uninstall**
 There are more options to uninstall .NET Core (either SDK or runtime) on Linux. The best way for you to uninstall .NET Core is to mirror the action you used to install .NET Core. The specifics depend on your chosen distribution and the installation method.
 
 > [!IMPORTANT]
-> For Red Hat installations, consult the [Red Hat Getting Started Guide](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel) for information on installing and uninstalling .NET Core.
+> For Red Hat installations, consult the [Red Hat Getting Started Guide](https://access.redhat.com/documentation/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel) for information on installing and uninstalling .NET Core.
 
 Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version.
 

@@ -70,5 +70,5 @@ When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) 
 ## See also
 - [ML.NET CLI reference](../reference/ml-net-cli-reference.md)
 - [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula)
-- [Privacy at Microsoft](https://www.microsoft.com/en-us/trustcenter/privacy/)
-- [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
+- [Privacy at Microsoft](https://www.microsoft.com/trustcenter/privacy/)
+- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)

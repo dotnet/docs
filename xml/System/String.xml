@@ -254,7 +254,7 @@
 > [!TIP]
 >  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
 
-You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the sort weight table for Linux and macOS.
+You can download the [Sorting Weight Tables](https://www.microsoft.com/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the sort weight table for Linux and macOS.
 
 <a name="casing"></a>   
 ### Casing  
@@ -531,7 +531,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related>
+    <related type="ExternalDocumentation" href="https://www.microsoft.com/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related>
     <related type="ExternalDocumentation" href="https://www.unicode.org/Public/UCA/latest/allkeys.txt">Default Unicode Collation Element Table, for Linux and macOS</related>
     <threadsafe>This type is thread safe.</threadsafe>
     <altmember cref="T:System.IComparable" />

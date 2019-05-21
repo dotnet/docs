@@ -1022,7 +1022,7 @@
 ## Remarks  
  The <xref:System.DirectoryServices.ActiveDirectory.DomainMode> value can be raised but not lowered. This means that raising the functionality level of the domain is not reversible and the decision to do this should be made carefully.  
   
- For more information about domain operational modes, see [Domain and forest functionality](https://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
+ For more information about domain operational modes, see [Domain and forest functionality](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd894353(v%3dws.11)).  
   
  The following table defines the valid values for `domainMode` based on the current operating mode of the domain.  
   

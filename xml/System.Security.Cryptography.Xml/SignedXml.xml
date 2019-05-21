@@ -153,7 +153,7 @@
 ## The problem with external references  
  If an application does not verify that external references seem appropriate for the current context, they can be abused in ways that provide for many security vulnerabilities (including Denial of Service, Distributed Reflection Denial of Service, Information Disclosure, Signature Bypass, and Remote Code Execution). Even if an application were to validate the external reference URI, there would remain a problem of the resource being loaded twice: once when your application reads it, and once when <xref:System.Security.Cryptography.Xml.SignedXml> reads it. Since there's no guarantee that the application read and document verify steps have the same content, the signature does not provide trustworthiness.  
   
- Given the risks of external references, <xref:System.Security.Cryptography.Xml.SignedXml> will throw an exception when an external reference is encountered.  For more information about this issue, see [KB article 3148821](https://support.microsoft.com/en-us/kb/3148821).  
+ Given the risks of external references, <xref:System.Security.Cryptography.Xml.SignedXml> will throw an exception when an external reference is encountered.  For more information about this issue, see [KB article 3148821](https://support.microsoft.com/kb/3148821).  
   
    
   

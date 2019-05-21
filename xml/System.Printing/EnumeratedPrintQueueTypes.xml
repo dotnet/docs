@@ -26,7 +26,7 @@
 ## Remarks  
  Use these values with the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method to list subsets of available print queues.  
   
-`PushedMachineConnection` and `PushedUserConnection` refer to policies that enable automated connection of machines and users to printers. See the section ["Deploying Printers to Users or Computers by Using Group Policy"](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753109(v%3dws.10)#to-deploy-printers-to-users-or-computers-by-using-group-policy) in the [Step-by-Step Guide for Print Management](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753109(v%3dws.10)).  
+`PushedMachineConnection` and `PushedUserConnection` refer to policies that enable automated connection of machines and users to printers. See the section ["Deploying Printers to Users or Computers by Using Group Policy"](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753109(v%3dws.10)#to-deploy-printers-to-users-or-computers-by-using-group-policy) in the [Step-by-Step Guide for Print Management](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753109(v%3dws.10)).  
   
    
   
@@ -40,7 +40,7 @@
  ]]></format>
     </remarks>
     <altmember cref="M:System.Printing.PrintServer.GetPrintQueues(System.Printing.EnumeratedPrintQueueTypes[])" />
-    <related type="ExternalDocumentation" href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753109(v%3dws.10)">Step-by-Step Guide for Print Management</related>
+    <related type="ExternalDocumentation" href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc753109(v%3dws.10)">Step-by-Step Guide for Print Management</related>
   </Docs>
   <Members>
     <Member MemberName="Connections">

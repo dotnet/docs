@@ -71,7 +71,7 @@
  ]]></format>
     </remarks>
     <related type="Article" href="https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/assemblyloadcontext.md">AssemblyLoadContext CoreCLR design document</related>
-    <related type="Article" href="/en-us/dotnet/standard/assembly/unloadability-howto">How to use and debug assembly unloadability in .NET Core</related>
+    <related type="Article" href="~/docs/standard/assembly/unloadability-howto.md">How to use and debug assembly unloadability in .NET Core</related>
     <related type="Article" href="https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/unloadability.md">AssemblyLoadContext unloadability design document</related>
   </Docs>
   <Members>
@@ -381,7 +381,7 @@ This constructor is protected. It can only be called from the <xref:System.Runti
           <format type="text/markdown"><![CDATA[
 
 ## Remarks
- For more information see <see href="/en-us/dotnet/standard/assembly/unloadability-howto">How to use and debug assembly unloadability in .NET Core</see>.
+For more information, see [How to use and debug assembly unloadability in .NET Core](~/docs/standard/assembly/unloadability-howto.md).
 
  ]]></format>
         </remarks>

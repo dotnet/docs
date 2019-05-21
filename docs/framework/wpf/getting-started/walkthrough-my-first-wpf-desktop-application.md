@@ -50,17 +50,15 @@ The first step is to create the application infrastructure, which includes an ap
 
 1. Create a new WPF Application project in Visual Basic or Visual C# named **`ExpenseIt`**:
 
-   1. Open Visual Studio and select **File** > **New** > **Project**.
+   1. Open Visual Studio and select **Create a new project** under the **Get started** menu.
 
       The **Create a new project** dialog opens.
 
-      ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
-
    2. In the **Language** dropdown, select either **C#** or **Visual Basic**.
-
-      ![New Project dialog with WPF app selected](./media/walkthrough-my-first-wpf-desktop-application/new-project-dialog-box.png)
       
    3. Select the **WPF App (.NET Framework)** template and then select **Next**. 
+     
+      ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
     
    4. Select **Create a new project**.
 

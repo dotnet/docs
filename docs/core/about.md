@@ -97,7 +97,7 @@ The major differences between .NET Core and the .NET Framework:
 
 While .NET Core is unique and has significant differences to the .NET Framework and other .NET implementations, it is straightforward to share code between these implementations, using either source or binary sharing techniques.
 
-Because .NET Core supports side-by-side installation and its runtime is completely independent of the .NET Framework, it can be installed on machines that contain .NET Framework installed without any issues.
+Because .NET Core supports side-by-side installation and its runtime is completely independent of the .NET Framework, it can be installed on machines with .NET Framework installed without any issues.
 
 ### Comparison with Mono
 

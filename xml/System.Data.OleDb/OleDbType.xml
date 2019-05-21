@@ -415,15 +415,11 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>A pointer to an <see langword="IDispatch" /> interface (DBTYPE_IDISPATCH). This maps to <see cref="T:System.Object" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
-  
- ]]></format>
-        </remarks>
+        <summary>A pointer to an <see langword="IDispatch" /> interface (DBTYPE_IDISPATCH). This maps to <see cref="T:System.Object" />.
+        
+This data type is not currently supported by ADO.NET. Its usage may cause unpredictable results.        
+        </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Integer">
@@ -469,15 +465,10 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>A pointer to an <see langword="IUnknown" /> interface (DBTYPE_UNKNOWN). This maps to <see cref="T:System.Object" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This data type is not currently supported by ADO.NET. Usage may cause unpredictable results.  
-  
- ]]></format>
-        </remarks>
+        <summary>A pointer to an <see langword="IUnknown" /> interface (DBTYPE_UNKNOWN). This maps to <see cref="T:System.Object" />.         
+This data type is not currently supported by ADO.NET. Its usage may cause unpredictable results.        
+        </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LongVarBinary">

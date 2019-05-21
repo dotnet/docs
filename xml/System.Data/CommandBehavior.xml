@@ -38,15 +38,21 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.CommandBehavior> values are used by the <xref:System.Data.IDbCommand.ExecuteReader%2A> method of <xref:System.Data.IDbCommand> and any classes derived from it.  
+ The `CommandBehavior` values are used by the <xref:System.Data.IDbCommand.ExecuteReader%2A> method of <xref:System.Data.IDbCommand> and any implementing classes.  
   
  A bitwise combination of these values may be used.  
   
- <xref:System.Data.CommandBehavior> is ignored when used to define a <xref:System.Data.Sql.SqlNotificationRequest> or <xref:System.Data.SqlClient.SqlDependency> and should therefore not be used. Use the constructor that does not require a `CommandBehavior` parameter in these two cases.  
-  
+`CommandBehavior` is ignored when used to define a <xref:System.Data.Sql.SqlNotificationRequest> or <xref:System.Data.SqlClient.SqlDependency> and should therefore not be used. Use the constructor that does not require a `CommandBehavior` parameter in these two cases.  
+
+### Notes on individual enumeration members
+
+When using `KeyInfo`, the .NET Framework Data Provider for SQL Server precedes the statement being executed with `SET FMTONLY OFF` and `SET NO_BROWSETABLE ON`. The user should be aware of potential side effects, such as interference with the use of `SET FMTONLY ON` statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
+
 > [!NOTE]
->  Use SequentialAccess to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.  
-  
+>  Use `SequentialAccess` to retrieve large values and binary data. Otherwise, an <xref:System.OutOfMemoryException> might occur and the connection will be closed.  
+
+When you specify `SequentialAccess`, you are required to read from the columns in the order they are returned, although you are not required to read each column. Once you have read past a location in the returned stream of data, data at or before that location can no longer be read from the `DataReader`. When using the <xref:System.Data.OleDb.OleDbDataReader>, you can reread the current column value until reading past it. When using the <xref:System.Data.SqlClient.SqlDataReader>, you can read a column value only once.  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -153,17 +159,8 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The query returns column and primary key information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When KeyInfo is used for command execution, the provider will append extra columns to the result set for existing primary key and timestamp columns.  
-  
- When using KeyInfo, the .NET Framework Data Provider for SQL Server precedes the statement being executed with SET FMTONLY OFF and SET NO_BROWSETABLE ON. The user should be aware of potential side effects, such as interference with the use of SET FMTONLY ON statements. For more information, see [SET FMTONLY (Transact-SQL)](/sql/t-sql/statements/set-fmtonly-transact-sql).
-  
- ]]></format>
-        </remarks>
+        <summary>The query returns column and primary key information. The provider appends extra columns to the result set for existing primary key and timestamp columns.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SchemaOnly">
@@ -234,14 +231,7 @@
       <MemberValue>16</MemberValue>
       <Docs>
         <summary>Provides a way for the <see langword="DataReader" /> to handle rows that contain columns with large binary values. Rather than loading the entire row, <see langword="SequentialAccess" /> enables the <see langword="DataReader" /> to load data as a stream. You can then use the <see langword="GetBytes" /> or <see langword="GetChars" /> method to specify a byte location to start the read operation, and a limited buffer size for the data being returned.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you specify `SequentialAccess`, you are required to read from the columns in the order they are returned, although you are not required to read each column. Once you have read past a location in the returned stream of data, data at or before that location can no longer be read from the `DataReader`. When using the <xref:System.Data.OleDb.OleDbDataReader>, you can reread the current column value until reading past it. When using the <xref:System.Data.SqlClient.SqlDataReader>, you can read a column value only once.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SingleResult">

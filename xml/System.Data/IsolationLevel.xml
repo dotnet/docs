@@ -37,13 +37,14 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Data.IsolationLevel> values are used by a .NET Framework data provider when performing a transaction.  
+## Remarks
+
+The `IsolationLevel` values are used by a .NET data provider when performing a transaction.
+
+The `IsolationLevel` remains in effect until explicitly changed, but it can be changed at any time. The new value is used at execution time, not parse time. If changed during a transaction, the expected behavior of the server is to apply the new locking level to all statements remaining.  
   
- The <xref:System.Data.IsolationLevel> remains in effect until explicitly changed, but it can be changed at any time. The new value is used at execution time, not parse time. If changed during a transaction, the expected behavior of the server is to apply the new locking level to all statements remaining.  
-  
-   
-  
+When using <xref:System.Data.Odbc.OdbcTransaction>, if you do not set <xref:System.Data.Odbc.OdbcTransaction.IsolationLevel?displayProperty=nameWithType> or you set it to `Unspecified`, the transaction executes according to the isolation level determined by the driver in use.  
+
 ## Examples  
  This application demonstrates how to use <xref:System.Data.IsolationLevel> in <xref:System.Data.Common.DbTransaction>. The sample will demonstrate which of the following behaviors are allowed in the different isolation levels:  
   
@@ -388,14 +389,7 @@
       <MemberValue>-1</MemberValue>
       <Docs>
         <summary>A different isolation level than the one specified is being used, but the level cannot be determined.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using <xref:System.Data.Odbc.OdbcTransaction>, if you do not set <xref:System.Data.IsolationLevel> or you set <xref:System.Data.IsolationLevel> to `Unspecified`, the transaction executes according to the isolation level that is determined by the driver that is being used.  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -84,15 +84,8 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>No location data is available from any location provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the conditions for Disabled do not apply, <xref:System.Device.Location.GeoCoordinateWatcher> has this status before it has been started and after it has been stopped.  
-  
- ]]></format>
-        </remarks>
+        <summary>No location data is available from any location provider. If the conditions for <c>Disabled</c> do not apply, <see cref="T:System.Device.Location.GeoCoordinateWatcher" /> has the <c>NoData</c> status before it is started and after it is stopped.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Ready">

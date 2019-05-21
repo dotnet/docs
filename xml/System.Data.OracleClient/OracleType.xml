@@ -324,15 +324,11 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>An Oracle <see langword="LONGRAW" /> data type that contains variable-length binary data with a maximum size of 2 gigabytes. Use the .NET Framework <see langword="Byte[]" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleBinary" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you update a column with the `LONG RAW` data type, an exception is thrown when you enter a value of `NULL` in the column. The Oracle `LONG RAW` data type is a deprecated type in Oracle version 8.0. To avoid this error, use the `BLOB` data type instead of `LONG RAW`.  
-  
- ]]></format>
-        </remarks>
+        <summary>An Oracle <see langword="LONGRAW" /> data type that contains variable-length binary data with a maximum size of 2 gigabytes. Use the .NET Framework <see langword="Byte[]" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleBinary" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.
+
+ When you update a column with the <c>LONG RAW</c> data type, an exception is thrown when you enter a value of <c>NULL</c> in the column. The Oracle <c>LONG RAW</c> data type is a deprecated type in Oracle version 8.0. To avoid this error, use the <c>BLOB</c> data type instead of <c>LONG RAW</c>.  
+        </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LongVarChar">

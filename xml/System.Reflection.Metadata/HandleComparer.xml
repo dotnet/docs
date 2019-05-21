@@ -64,10 +64,10 @@
         <Parameter Name="y" Type="System.Reflection.Metadata.EntityHandle" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The first entity handle to compare.</param>
+        <param name="y">The second entity handle to compare.</param>
+        <summary>Compares two entity handles.</summary>
+        <returns>Zero if the two entity handles are equal, and a non-zero value of they are not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +99,10 @@
         <Parameter Name="y" Type="System.Reflection.Metadata.Handle" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">The first handle to compare.</param>
+        <param name="y">The second handle to compare.</param>
+        <summary>Compares two handles.</summary>
+        <returns>Zero if the two handles are equal, and a non-zero value if they are not.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

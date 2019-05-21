@@ -49,7 +49,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the <typeparamref name="TType" /> representation for <see cref="T:System.Type" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,10 +76,11 @@
         <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The serialized type name in so-called "reflection notation" format (as understood by the <see cref="M:System.Type.GetType(System.String)" /> method.)</param>
+        <summary>Gets the type symbol for the given serialized type name.</summary>
+        <returns>A <typeparamref name="TType" /> instance.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The name is malformed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUnderlyingEnumType">
@@ -104,10 +105,11 @@
         <Parameter Name="type" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">An enum type.</param>
+        <summary>Gets the underlying type of the given enum type symbol.</summary>
+        <returns>A type code that indicates the underlying type of the enumeration.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The given type symbol does not represent an enum.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsSystemType">
@@ -132,9 +134,9 @@
         <Parameter Name="type" Type="TType" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="type">The type to verify.</param>
+        <summary>Verifies if the given type represents <see cref="T:System.Type" />.</summary>
+        <returns><see langword="true" /> if the given type is a <see cref="T:System.Type" />, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

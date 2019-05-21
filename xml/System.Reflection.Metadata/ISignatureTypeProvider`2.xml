@@ -55,8 +55,8 @@
       </Parameters>
       <Docs>
         <param name="signature">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type symbol for the function pointer type of the given method <paramref name="signature" />.</summary>
+        <returns>The type symbol for the function pointer type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +84,8 @@
       <Docs>
         <param name="genericContext">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type symbol for the generic method parameter at the given zero-based <paramref name="index" />.</summary>
+        <returns>The type symbol for the generic method parameter at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +113,8 @@
       <Docs>
         <param name="genericContext">To be added.</param>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type symbol for the generic type parameter at the given zero-based <paramref name="index" />.</summary>
+        <returns>The type symbol for the generic type parameter at the given zero-based <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,11 +141,11 @@
         <Parameter Name="isRequired" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="modifier">To be added.</param>
-        <param name="unmodifiedType">To be added.</param>
-        <param name="isRequired">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="modifier">The modifier type applied.</param>
+        <param name="unmodifiedType">The type symbol of the underlying type without modifiers applied.</param>
+        <param name="isRequired"><see langword="true" /> if the modifier is required, <see langword="false" /> if it's optional.</param>
+        <summary>Gets the type symbol for a type with a custom modifier applied.</summary>
+        <returns>The type symbol.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,8 +171,8 @@
       </Parameters>
       <Docs>
         <param name="elementType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the type symbol for a local variable type that is marked as pinned.</summary>
+        <returns>The type symbol for the local variable type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,13 +200,19 @@
         <Parameter Name="rawTypeKind" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="genericContext">To be added.</param>
-        <param name="handle">To be added.</param>
-        <param name="rawTypeKind">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The metadata reader that was passed to the signature decoder. It may be <see langword="null" />.</param>
+        <param name="genericContext">The context that was passed to the signature decoder.</param>
+        <param name="handle">The type specification handle.</param>
+        <param name="rawTypeKind">The kind of the type, as specified in the signature. To interpret this value, use <see cref="M:System.Reflection.Metadata.Ecma335.MetadataReaderExtensions.ResolveSignatureTypeKind(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle,System.Byte)" />.</param>
+        <summary>Gets the type symbol for a type specification.</summary>
+        <returns>The type symbol for the type specification.</returns>
+        <remarks>
+          <format type="text/markdown">
+            <![CDATA[
+## Remarks
+When the signature comes from a WinMD file, additional processing is needed to determine whether the target type is a value type or a reference type.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

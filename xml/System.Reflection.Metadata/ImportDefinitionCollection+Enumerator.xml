@@ -87,6 +87,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">Invalid blob format.</exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">

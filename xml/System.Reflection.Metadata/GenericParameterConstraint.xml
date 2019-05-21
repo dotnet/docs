@@ -76,7 +76,7 @@
         <ReturnType>System.Reflection.Metadata.GenericParameterHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the constrained <see cref="T:System.Reflection.Metadata.GenericParameterHandle" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,8 +102,10 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle (<see cref="T:System.Reflection.Metadata.TypeDefinitionHandle" />, <see cref="T:System.Reflection.Metadata.TypeReferenceHandle" />, or <see cref="T:System.Reflection.Metadata.TypeSpecificationHandle" />) 
+            specifying from which type this generic parameter is constrained to derive,
+            or which interface this generic parameter is constrained to implement.</summary>
+        <value>An <see cref="T:System.Reflection.Metadata.EntityHandle" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

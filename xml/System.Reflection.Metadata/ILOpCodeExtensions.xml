@@ -43,10 +43,11 @@
         <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="opCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="opCode">The branch op-code.</param>
+        <summary>Calculates the size of the specified branch instruction operand.</summary>
+        <returns>1 if <paramref name="opCode" /> is a short branch, or 4 if it is a long branch.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The specified <paramref name="opCode" /> is not a branch op-code.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetLongBranch">
@@ -71,10 +72,11 @@
         <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="opCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="opCode">The branch op-code.</param>
+        <summary>Gets a long form of the specified branch op-code.</summary>
+        <returns>The long form of the branch op-code.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The specified <paramref name="opCode" /> is not a branch op-code.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetShortBranch">
@@ -99,10 +101,11 @@
         <Parameter Name="opCode" Type="System.Reflection.Metadata.ILOpCode" RefType="this" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="opCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="opCode">The branch op-code.</param>
+        <summary>Gets a short form of the specified branch op-code.</summary>
+        <returns>The short form of the branch op-code.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The specified <paramref name="opCode" /> is not a branch op-code.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsBranch">
@@ -128,8 +131,8 @@
       </Parameters>
       <Docs>
         <param name="opCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Verifies if the specified op-code is a branch to a label.</summary>
+        <returns><see langword="true" /> if the specified op-code is a branch to a label, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

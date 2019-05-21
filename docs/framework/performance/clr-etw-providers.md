@@ -13,7 +13,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
  The runtime provider raises events, depending on which keywords (categories of events) are enabled. For example, you can collect loader events by enabling the `LoaderKeyword` keyword.  
   
- Event tracking for Windows (ETW) events are logged into a file that has an .etl extension, which can later be post-processed in comma-separated value (.csv) files as needed. For information about how to convert the .etl file to a .csv file, see [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md).  
+ Event Tracing for Windows (ETW) events are logged into a file that has an .etl extension, which can later be post-processed in comma-separated value (.csv) files as needed. For information about how to convert the .etl file to a .csv file, see [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md).  
   
 ## The Runtime Provider  
  The runtime provider is the main CLR ETW provider.  

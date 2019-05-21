@@ -1287,7 +1287,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <param name="filter">The delegate that compares the interfaces against <paramref name="filterCriteria" />.</param>
         <param name="filterCriteria">The search criteria that determines whether an interface should be included in the returned array.</param>
         <summary>Returns an array of <see cref="T:System.Type" /> objects representing a filtered list of interfaces implemented or inherited by the current <see cref="T:System.Type" />.</summary>
-        <returns>An array of <see cref="T:System.Type" /> objects representing a filtered list of the interfaces implemented or inherited by the current <see cref="T:System.Type" />, or an empty array of type <see cref="T:System.Type" /> if no interfaces matching the filter are implemented or inherited by the current <see cref="T:System.Type" />.</returns>
+        <returns>An array of <see cref="T:System.Type" /> objects representing a filtered list of the interfaces implemented or inherited by the current <see cref="T:System.Type" />, or an empty array if no interfaces matching the filter are implemented or inherited by the current <see cref="T:System.Type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1363,13 +1363,13 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="filterCriteria" Type="System.Object" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="memberType">An object that indicates the type of member to search for.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="memberType">A bitwise combination of the enumeration values that indicates the type of member to search for.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
-        <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise. You can use the <see langword="FilterAttribute" />, <see langword="FilterName" />, and <see langword="FilterNameIgnoreCase" /> delegates supplied by this class. The first uses the fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> as search criteria, and the other two delegates use <see langword="String" /> objects as the search criteria.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
+        <param name="filter">The delegate that does the comparisons, returning <see langword="true" /> if the member currently being inspected matches the <paramref name="filterCriteria" /> and <see langword="false" /> otherwise. </param>
         <param name="filterCriteria">The search criteria that determines whether a member is returned in the array of <see langword="MemberInfo" /> objects.  
   
  The fields of <see langword="FieldAttributes" />, <see langword="MethodAttributes" />, and <see langword="MethodImplAttributes" /> can be used in conjunction with the <see langword="FilterAttribute" /> delegate supplied by this class.</param>
@@ -1378,18 +1378,19 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  -or-  
   
- An empty array of type <see cref="T:System.Reflection.MemberInfo" />, if the current <see cref="T:System.Type" /> does not have members of type <paramref name="memberType" /> that match the filter criteria.</returns>
+ An empty array if the current <see cref="T:System.Type" /> does not have members of type <paramref name="memberType" /> that match the filter criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This method can be overridden by a derived class.  
+## Remarks
+
+This method can be overridden by a derived class.  
   
- Members include properties, methods, fields, events, and so on.  
-  
+Members include properties, methods, fields, events, and so on.  
+
+For the `FindMembers` method to successfully retrieve member information, the `bindingAttr` argument must include at least one of <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, along with at least one of <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>. 
+
  The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which members to include in the search:  
-  
--   You must specify either `BindingFlags.Instance` or `BindingFlags.Static` in order to get a return.  
   
 -   Specify `BindingFlags.Instance` to include instance members in the search.  
   
@@ -1405,14 +1406,18 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- Valid values for <xref:System.Type.MemberType%2A> are defined in <xref:System.Reflection.MemberInfo>. If no such members are found, an empty array is returned.  
+To get the class initializer (static constructor) using this method, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
- To get the class initializer (.cctor) using this method, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
-  
- If the current <xref:System.Type> represents a type parameter of a generic type or generic method, <xref:System.Type.FindMembers%2A> processes any members declared by the class constraint and the interface constraints of the type parameter.  
-  
-   
-  
+If the current <xref:System.Type> represents a type parameter of a generic type or generic method, <xref:System.Type.FindMembers%2A> processes any members declared by the class constraint and the interface constraints of the type parameter.  
+
+The `filter` argument can be a custom delegate of type <xref:System.Reflection.MemberFilter>, or it can be one of the following  predefined delegates:
+
+- <xref:System.Type.FilterAttribute?displayProperty=nameWithType>, which uses a<xref:System.Reflection.FieldAttributes>, <xref:System.Reflection.MethodAttributes>, or <xref:System.Reflection.MethodImplAttributes> bitmask as the `filterCriteria` value.
+
+- <xref:System.Type.FilterName?displayProperty=nameWithType>, which performs a case-sensitive comparison of each member name with the string passed to `filterCriteria`.
+
+- <xref:System.Type.FilterNameIgnoreCase?displayProperty=nameWithType>, which performs a case-insensitive comparison of each member name with the string passed to `filterCriteria`.
+
 ## Examples  
  The following example finds all the members in a class that match the specified search criteria, and then displays the matched members.  
   
@@ -1797,7 +1802,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, implements the <see cref="P:System.Type.Attributes" /> property and gets a bitmask indicating the attributes associated with the <see cref="T:System.Type" />.</summary>
+        <summary>When overridden in a derived class, implements the <see cref="P:System.Type.Attributes" /> property and gets a bitwise combination of enumeration values that indicate the attributes associated with the <see cref="T:System.Type" />.</summary>
         <returns>A <see cref="T:System.Reflection.TypeAttributes" /> object representing the attribute set of the <see cref="T:System.Type" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Type.Attributes" />
@@ -1865,7 +1870,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method overload looks for public instance constructors and cannot be used to obtain a class initializer (.cctor). To get a class initializer, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload looks for public instance constructors and cannot be used to obtain a class initializer (static constructor). To get a class initializer, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the requested constructor is non-public, this method returns `null`.  
   
@@ -1941,11 +1946,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -1979,7 +1984,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (static constructor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
 > [!NOTE]
 >  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
@@ -2065,11 +2070,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -2102,7 +2107,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (static constructor) using this method, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  The following table shows what members of a base class are returned by the `Get` methods when reflecting on a type.  
   
@@ -2198,11 +2203,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="modifiers" Type="System.Reflection.ParameterModifier[]" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+<see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -2339,7 +2344,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
   
 3.  Custom attributes are not part of the common type system.  
   
- This method overload calls the <xref:System.Type.GetConstructors%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload calls the <xref:System.Type.GetConstructors%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (static constructor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.ConstructorInfo> objects with the type parameters replaced by the appropriate type arguments. For example, if class `C<T>` has a constructor `C(T t1)` (`Sub New(ByVal t1 As T)` in Visual Basic), calling <xref:System.Type.GetConstructors%2A> on `C<int>` returns a <xref:System.Reflection.ConstructorInfo> that represents `C(int t1)` in C# (`Sub New(ByVal t1 As Integer)` in Visual Basic).  
   
@@ -2426,43 +2431,37 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
- -or-  
+-or-  
   
- Zero, to return <see langword="null" />.</param>
+<see cref="F:System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>When overridden in a derived class, searches for the constructors defined for the current <see cref="T:System.Type" />, using the specified <see langword="BindingFlags" />.</summary>
         <returns>An array of <see cref="T:System.Reflection.ConstructorInfo" /> objects representing all constructors defined for the current <see cref="T:System.Type" /> that match the specified binding constraints, including the type initializer if it is defined. Returns an empty array of type <see cref="T:System.Reflection.ConstructorInfo" /> if no constructors are defined for the current <see cref="T:System.Type" />, if none of the defined constructors match the binding constraints, or if the current <see cref="T:System.Type" /> represents a type parameter in the definition of a generic type or generic method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Type.GetConstructors%2A> method does not return constructors in a particular order, such as declaration order. Your code must not depend on the order in which constructors are returned, because that order varies.  
+ 
+`bindingAttr` can be used to specify whether to return only public constructors or both public and non-public constructors.  
   
- `bindingAttr` can be used to specify whether to return only public constructors or both public and non-public constructors.  
+The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which constructors to include in the search:  
   
- If an exact match does not exist, the `binder` will attempt to coerce the parameter types specified in the `types` array in order to select a match. If the `binder` is unable to select a match, then `null` is returned.  
+- Specify `BindingFlags.Static` along with `BindingFlags.NonPublic` to retrieve the class initializer (static constructor). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.
+
+- Specify `BindingFlags.Instance` along with one or both of `BindingFlags.Public` and `BindingFlags.NonPublic` to retrieve instance constructors.   
   
- The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which constructors to include in the search:  
+See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
+
+The <xref:System.Type.GetConstructors%2A> method does not return constructors in a particular order, such as declaration order. Your code must not depend on the order in which constructors are returned, because that order varies.  
+
+If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.ConstructorInfo> objects with the type parameters replaced by the appropriate type arguments. For example, if class `C<T>` has a constructor `C(T t1)` (`Sub New(ByVal t1 As T)` in Visual Basic), calling <xref:System.Type.GetConstructors%2A> on `C<int>` returns a <xref:System.Reflection.ConstructorInfo> that represents `C(int t1)` in C# (`Sub New(ByVal t1 As Integer)` in Visual Basic).  
   
--   You must specify either `BindingFlags.Instance` or `BindingFlags.Static` in order to get a return.  
-  
--   Specify `BindingFlags.Public` to include public constructors in the search.  
-  
--   Specify `BindingFlags.NonPublic` to include non-public constructors (that is, private, internal, and protected constructors) in the search. Constructors of base classes are not returned.  
-  
- See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
-  
- To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
-  
- If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.ConstructorInfo> objects with the type parameters replaced by the appropriate type arguments. For example, if class `C<T>` has a constructor `C(T t1)` (`Sub New(ByVal t1 As T)` in Visual Basic), calling <xref:System.Type.GetConstructors%2A> on `C<int>` returns a <xref:System.Reflection.ConstructorInfo> that represents `C(int t1)` in C# (`Sub New(ByVal t1 As Integer)` in Visual Basic).  
-  
- If the current <xref:System.Type> represents a generic type parameter, the <xref:System.Type.GetConstructors%2A> method returns an empty array.  
-  
-   
+If the current <xref:System.Type> represents a generic type parameter, the <xref:System.Type.GetConstructors%2A> method returns an empty array.  
   
 ## Examples  
- This example shows the output of the <xref:System.Type.GetConstructors> overload from a class that has two instance constructors and one static constructor.  
+
+This example shows the output of the <xref:System.Type.GetConstructors> overload from a class that has two instance constructors and one static constructor.  
   
  [!code-cpp[Classic Type.GetConstructors Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Type.GetConstructors Example/CPP/source1.cpp#1)]
  [!code-csharp[Classic Type.GetConstructors Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Type.GetConstructors Example/CS/source1.cs#1)]
@@ -2950,11 +2949,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of an event which is declared or inherited by the current <see cref="T:System.Type" />.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <summary>When overridden in a derived class, returns the <see cref="T:System.Reflection.EventInfo" /> object representing the specified event, using the specified binding constraints.</summary>
         <returns>The object representing the specified event that is declared or inherited by the current <see cref="T:System.Type" />, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -3137,11 +3136,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
-  
- -or-  
-  
- Zero, to return <see langword="null" />.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.
+
+-or-
+
+ <see cref="F:System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>When overridden in a derived class, searches for events that are declared or inherited by the current <see cref="T:System.Type" />, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.EventInfo" /> objects representing all events that are declared or inherited by the current <see cref="T:System.Type" /> that match the specified binding constraints.  
   
@@ -3311,11 +3310,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the data field to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <summary>Searches for the specified field, using the specified binding constraints.</summary>
         <returns>An object representing the field that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -3508,11 +3507,11 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
-  
- -or-  
-  
- Zero, to return <see langword="null" />.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.
+
+-or-
+
+ <see cref="F:System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>When overridden in a derived class, searches for the fields defined for the current <see cref="T:System.Type" />, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.FieldInfo" /> objects representing all fields defined for the current <see cref="T:System.Type" /> that match the specified binding constraints.  
   
@@ -3523,29 +3522,34 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Type.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order varies.  
+
+For the `GetFields(BindingFlags)` overload to successfully retrieve property information, the `bindingAttr` argument must include at least one of <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, along with at least one of <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>. 
+
+The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which fields to include in the search:  
   
- The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which fields to include in the search:  
+- Specify `BindingFlags.Instance` to include instance methods. 
+
+- Specify `BindingFlags.Static` to include static methods. 
+    
+- Specify `BindingFlags.Public` to include public fields in the search.  
   
--   You must specify either `BindingFlags.Instance` or `BindingFlags.Static` in order to get a return.  
+- Specify `BindingFlags.NonPublic` to include non-public fields (that is, private, internal, and protected fields) in the search. Only protected and internal fields on base classes are returned; private fields on base classes are not returned.  
   
--   Specify `BindingFlags.Public` to include public fields in the search.  
+- Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+
+- Specify `BindingFlags.Default` alone to return an empty <xref:System.Reflection.PropertyInfo> array.
+
+The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
   
--   Specify `BindingFlags.NonPublic` to include non-public fields (that is, private, internal, and protected fields) in the search. Only protected and internal fields on base classes are returned; private fields on base classes are not returned.  
+- `BindingFlags.DeclaredOnly` to search only the fields declared on the <xref:System.Type>, not fields that were simply inherited.  
   
--   Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
-  
--   `BindingFlags.DeclaredOnly` to search only the fields declared on the <xref:System.Type>, not fields that were simply inherited.  
-  
- See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
-  
+The <xref:System.Type.GetFields%2A> method does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned, because that order varies.  
+
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.FieldInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the public fields of the class constraint.  
-  
-   
   
 ## Examples  
  The following example shows a use of the `GetFields(BindingFlags)` method.  
@@ -4185,7 +4189,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
  The <xref:System.Type.GetMember%2A> method does not return members in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which members are returned, because that order varies.  
   
- This method overload will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload will not find class initializers (static constructor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  The following table shows what members of a base class are returned by the `Get` methods when reflecting on a type.  
   
@@ -4270,11 +4274,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the members to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return an empty array.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>Searches for the specified members, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects representing the public members with the specified name, if found; otherwise, an empty array.</returns>
         <remarks>
@@ -4305,7 +4309,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify ".cctor" for `name`, and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (static constructor) using this method overload, you must specify "static constructor" for `name`, and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> with the type parameters replaced by the appropriate type arguments.  
   
@@ -4375,11 +4379,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       <Docs>
         <param name="name">The string containing the name of the members to get.</param>
         <param name="type">The value to search for.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return an empty array.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>Searches for the specified members of the specified member type, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects representing the public members with the specified name, if found; otherwise, an empty array.</returns>
         <remarks>
@@ -4408,7 +4412,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- To get the class initializer (.cctor) using this method overload, you must specify ".cctor" for `name`, <xref:System.Reflection.MemberTypes.Constructor?displayProperty=nameWithType> for `type`, and  <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ To get the class initializer (static constructor) using this method overload, you must specify "static constructor" for `name`, <xref:System.Reflection.MemberTypes.Constructor?displayProperty=nameWithType> for `type`, and  <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic) for `bindingAttr`. You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> with the type parameters replaced by the appropriate type arguments.  
   
@@ -4492,12 +4496,13 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Members include properties, methods, fields, events, and so on.  
+## Remarks
+
+Members include properties, methods, constructors, fields, events, and nested types.
   
  The <xref:System.Type.GetMembers%2A> method does not return members in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which members are returned, because that order varies.  
   
- This method overload calls the <xref:System.Type.GetMembers%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (.cctor). To find class initializers, use an overload that takes <xref:System.Reflection.BindingFlags>, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
+ This method overload calls the <xref:System.Type.GetMembers%28System.Reflection.BindingFlags%29> method overload, with <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> in Visual Basic). It will not find class initializers (static constructors). To find class initializers, call the <xref:System.Type.GetMembers(System.Reflection.BindingFlags)> overload, and specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
  The following table shows what members of a base class are returned by the `Get` methods when reflecting on a type.  
   
@@ -4518,9 +4523,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
  If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
- If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the members of the class constraint, or the members of <xref:System.Object> if there is no class constraint.  
-  
-   
+ If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the members of the class constraint, or the members of <xref:System.Object> if there is no class constraint. 
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Type.GetMembers> method overload to collect information about all public members of a specified class.  
@@ -4573,51 +4576,54 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero (<see cref="F:System.Reflection.BindingFlags.Default" />), to return an empty array.</param>
+ <see cref="F:System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>When overridden in a derived class, searches for the members defined for the current <see cref="T:System.Type" />, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects representing all members defined for the current <see cref="T:System.Type" /> that match the specified binding constraints.  
   
  -or-  
   
- An empty array of type <see cref="T:System.Reflection.MemberInfo" />, if no members are defined for the current <see cref="T:System.Type" />, or if none of the defined members match the binding constraints.</returns>
+ An empty array if no members are defined for the current <see cref="T:System.Type" />, or if none of the defined members match the binding constraints.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Members include properties, methods, fields, events, and so on.  
+## Remarks
+
+Members include properties, methods, constructors, fields, events, and nested types.
+
+For the `GetMethods(BindingFlags)` overload to successfully retrieve method information, the `bindingAttr` argument must include at least one of <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, along with at least one of <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>. The sole exception is a method call with <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType>, which returns member information about nested types.
+
+The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which members to include in the search: 
+
+- Specify `BindingFlags.Instance` to include instance methods. 
+
+- Specify `BindingFlags.Static` to include static methods. 
   
- The <xref:System.Type.GetMembers%2A> method does not return members in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which members are returned, because that order varies.  
+- Specify `BindingFlags.Public` to include public methods in the search.  
   
- The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which members to include in the search:  
+- Specify `BindingFlags.NonPublic` to include non-public methods (that is, private, internal, and protected methods) in the search. Only protected and internal methods on base classes are returned; private methods on base classes are not returned.  
   
--   You must specify either `BindingFlags.Instance` or `BindingFlags.Static` in order to get a return.  
+- Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+
+- Specify `BindingFlags.Default` alone to return an empty <xref:System.Reflection.MethodInfo> array.
+
+The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
   
--   Specify `BindingFlags.Public` to include public members in the search.  
+- `BindingFlags.DeclaredOnly` to search only the members declared on the <xref:System.Type>, not members that were simply inherited.  
   
--   Specify `BindingFlags.NonPublic` to include non-public members (that is, private, internal, and protected members) in the search. Only protected and internal members on base classes are returned; private members on base classes are not returned.  
+See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
+
+The <xref:System.Type.GetMembers%2A> method does not return members in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which members are returned, because that order varies.  
+
+ To get the class initializer (static constructor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
   
--   Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
-  
- The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
-  
--   `BindingFlags.DeclaredOnly` to search only the members declared on the <xref:System.Type>, not members that were simply inherited.  
-  
- Calling this method with only the `Public` flag or only the `NonPublic` flag will return the specified members and does not require any other flags.  
-  
- See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
-  
- To get the class initializer (.cctor) using this method overload, you must specify <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> (<xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>`Or`<xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> in Visual Basic). You can also get the class initializer using the <xref:System.Type.TypeInitializer%2A> property.  
-  
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> objects with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MemberInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the members of the class constraint, or the members of <xref:System.Object> if there is no class constraint.  
-  
-   
-  
+
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Type.GetMembers%28System.Reflection.BindingFlags%29> method overload to collect information about all public instance members of a specified class.  
   
@@ -4702,7 +4708,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
 -   Call the <xref:System.Type.GetMethods> method to retrieve an array containing all of the public methods belonging to a type. You can then iterate it to identify the duplicate methods named `name`.  
   
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint.  
   
@@ -4768,11 +4774,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the method to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <summary>Searches for the specified method, using the specified binding constraints.</summary>
         <returns>An object representing the method that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -5036,7 +5042,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
 > [!NOTE]
 >  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
   
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint.  
   
@@ -5148,11 +5154,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the method to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -5193,7 +5199,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
 > [!NOTE]
 >  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
   
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint.  
   
@@ -5322,11 +5328,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the method to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -5385,7 +5391,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
 > [!NOTE]
 >  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
   
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint.  
   
@@ -5514,11 +5520,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the method to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -5685,8 +5691,9 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Type.GetMethods%2A> method does not return methods in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which methods are returned, because that order varies.  
+## Remarks
+
+The <xref:System.Type.GetMethods%2A> method does not return methods in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which methods are returned, because that order varies.  
   
  Constructors are not included in the array of methods returned by this call. Make a separate call to `GetConstructors()` to get the constructor methods.  
   
@@ -5710,7 +5717,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
 > [!NOTE]
 >  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
   
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> objects with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint.  
   
@@ -5756,11 +5763,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
-  
- -or-  
-  
- Zero, to return <see langword="null" />.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.
+
+-or-
+
+ <see cref="F:System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>When overridden in a derived class, searches for the methods defined for the current <see cref="T:System.Type" />, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Reflection.MethodInfo" /> objects representing all methods defined for the current <see cref="T:System.Type" /> that match the specified binding constraints.  
   
@@ -5771,32 +5778,34 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Type.GetMethods%2A> method does not return methods in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which methods are returned, because that order varies.  
+
+For the `GetMethods(BindingFlags)` overload to successfully retrieve method information, the `bindingAttr` argument must include at least one of <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, along with at least one of <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>. 
   
  The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which methods to include in the search:  
   
--   You must specify either `BindingFlags.Instance` or `BindingFlags.Static` in order to get a return.  
+- Specify `BindingFlags.Instance` to include instance methods. 
+
+- Specify `BindingFlags.Static` to include static methods. 
   
--   Specify `BindingFlags.Public` to include public methods in the search.  
+- Specify `BindingFlags.Public` to include public methods in the search.  
   
--   Specify `BindingFlags.NonPublic` to include non-public methods (that is, private, internal, and protected methods) in the search. Only protected and internal methods on base classes are returned; private methods on base classes are not returned.  
+- Specify `BindingFlags.NonPublic` to include non-public methods (that is, private, internal, and protected methods) in the search. Only protected and internal methods on base classes are returned; private methods on base classes are not returned.  
   
--   Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+- Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+
+- Specify `BindingFlags.Default` alone to return an empty <xref:System.Reflection.MethodInfo> array.
   
  The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
   
--   `BindingFlags.DeclaredOnly` to search only the methods declared on the <xref:System.Type>, not methods that were simply inherited.  
+- `BindingFlags.DeclaredOnly` to search only the methods declared on the <xref:System.Type>, not methods that were simply inherited.  
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
+
+The <xref:System.Type.GetMethods%2A> method does not return methods in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which methods are returned, because that order varies.  
+
+If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
-> [!NOTE]
->  You cannot omit parameters when looking up constructors and methods. You can only omit parameters when invoking.  
-  
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.MethodInfo> objects with the type parameters replaced by the appropriate type arguments.  
-  
- If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint.  
-  
-   
+If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the methods of the class constraint, or the methods of <xref:System.Object> if there is no class constraint. 
   
 ## Examples  
  The following example creates a class with two public methods and one protected method, creates a `Type` object corresponding to `MyTypeClass`, gets all public and non-public methods, and displays their names.  
@@ -5941,11 +5950,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the nested type to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <summary>When overridden in a derived class, searches for the specified nested type, using the specified binding constraints.</summary>
         <returns>An object representing the nested type that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -6117,11 +6126,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <summary>When overridden in a derived class, searches for the types nested in the current <see cref="T:System.Type" />, using the specified binding constraints.</summary>
         <returns>An array of <see cref="T:System.Type" /> objects representing all the types nested in the current <see cref="T:System.Type" /> that match the specified binding constraints (the search is not recursive), or an empty array of type <see cref="T:System.Type" />, if no nested types are found that match the binding constraints.</returns>
         <remarks>
@@ -6249,7 +6258,7 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
   
 3.  Custom attributes are not part of the common type system.  
   
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.PropertyInfo> objects with the type parameters replaced by the appropriate type arguments.  
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.PropertyInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the properties of the class constraint.  
   
@@ -6304,13 +6313,13 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
         <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
-  
- -or-  
-  
- Zero, to return <see langword="null" />.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.
+
+-or-
+
+ <see cref="F:System.Reflection.BindingFlags.Default" /> to return an empty array.</param>
         <summary>When overridden in a derived class, searches for the properties of the current <see cref="T:System.Type" />, using the specified binding constraints.</summary>
-        <returns>An array of <see cref="T:System.Reflection.PropertyInfo" /> objects representing all properties of the current <see cref="T:System.Type" /> that match the specified binding constraints.  
+        <returns>An array of objects representing all properties of the current <see cref="T:System.Type" /> that match the specified binding constraints.  
   
  -or-  
   
@@ -6319,29 +6328,32 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
+
+For the `GetProperties(BindingFlags)` overload to successfully retrieve property information, the `bindingAttr` argument must include at least one of <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType>, along with at least one of <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> and <xref:System.Reflection.BindingFlags.Public?displayProperty=nameWithType>. 
+
+The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which properties to include in the search:  
   
- The <xref:System.Type.GetProperties%2A> method does not return properties in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which properties are returned, because that order varies.  
+- Specify `BindingFlags.Instance` to include instance methods. 
+
+- Specify `BindingFlags.Static` to include static methods. 
   
- The following <xref:System.Reflection.BindingFlags> filter flags can be used to define which nested types to include in the search:  
+- Specify `BindingFlags.Public` to include public properties in the search. A property is considered public to reflection if it has at least one accessor that is public. 
   
--   You must specify either `BindingFlags.Instance` or `BindingFlags.Static` in order to get a return.  
+- Specify `BindingFlags.NonPublic` to include non-public properties (that is, private, internal, and protected properties) in the search. Only protected and internal properties on base classes are returned; private properties on base classes are not returned.  
   
--   Specify `BindingFlags.Public` to include public properties in the search.  
-  
--   Specify `BindingFlags.NonPublic` to include non-public properties (that is, private, internal, and protected properties) in the search. Only protected and internal properties on base classes are returned; private properties on base classes are not returned.  
-  
--   Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
-  
+- Specify `BindingFlags.FlattenHierarchy` to include `public` and `protected` static members up the hierarchy; `private` static members in inherited classes are not included.  
+
+- Specify `BindingFlags.Default` alone to return an empty <xref:System.Reflection.PropertyInfo> array.
+
  The following <xref:System.Reflection.BindingFlags> modifier flags can be used to change how the search works:  
   
--   `BindingFlags.DeclaredOnly` to search only the properties declared on the <xref:System.Type>, not properties that were simply inherited.  
+- `BindingFlags.DeclaredOnly` to search only the properties declared on the <xref:System.Type>, not properties that were simply inherited.  
   
  See <xref:System.Reflection.BindingFlags?displayProperty=nameWithType> for more information.  
   
- A property is considered public to reflection if it has at least one accessor that is public. Otherwise the property is considered private, and you must use <xref:System.Reflection.BindingFlags.NonPublic?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Instance?displayProperty=nameWithType> &#124; <xref:System.Reflection.BindingFlags.Static?displayProperty=nameWithType> (in Visual Basic, combine the values using `Or`) to get it.  
-  
- If the current T:System.Type represents a constructed generic type, this method returns the <xref:System.Reflection.PropertyInfo> objects with the type parameters replaced by the appropriate type arguments.  
+The <xref:System.Type.GetProperties%2A> method does not return properties in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which properties are returned, because that order varies.  
+
+ If the current <xref:System.Type> represents a constructed generic type, this method returns the <xref:System.Reflection.PropertyInfo> objects with the type parameters replaced by the appropriate type arguments.  
   
  If the current <xref:System.Type> represents a type parameter in the definition of a generic type or generic method, this method searches the properties of the class constraint.  
   
@@ -6506,11 +6518,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the property to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+<see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <summary>Searches for the specified property, using the specified binding constraints.</summary>
         <returns>An object representing the property that matches the specified requirements, if found; otherwise, <see langword="null" />.</returns>
         <remarks>
@@ -6978,11 +6990,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the property to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -7118,11 +7130,11 @@ The current instance or <paramref name="interfaceType" /> argument is an open ge
       </Parameters>
       <Docs>
         <param name="name">The string containing the name of the property to get.</param>
-        <param name="bindingAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted.  
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify how the search is conducted.  
   
  -or-  
   
- Zero, to return <see langword="null" />.</param>
+ <see cref="System.Reflection.BindingFlags.Default" /> to return <see langword="null" />.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded member, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -9467,7 +9479,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  For <see langword="IDispatch" /> members, a string representing the DispID, for example "[DispID=3]".</param>
-        <param name="invokeAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted. The access can be one of the <see langword="BindingFlags" /> such as <see langword="Public" />, <see langword="NonPublic" />, <see langword="Private" />, <see langword="InvokeMethod" />, <see langword="GetField" />, and so on. The type of lookup need not be specified. If the type of lookup is omitted, <see langword="BindingFlags.Public" /> | <see langword="BindingFlags.Instance" /> | <see langword="BindingFlags.Static" /> are used.</param>
+        <param name="invokeAttr">A bitwise combination of the enumeration values that specify how the search is conducted. The access can be one of the <see langword="BindingFlags" /> such as <see langword="Public" />, <see langword="NonPublic" />, <see langword="Private" />, <see langword="InvokeMethod" />, <see langword="GetField" />, and so on. The type of lookup need not be specified. If the type of lookup is omitted, <see langword="BindingFlags.Public" /> | <see langword="BindingFlags.Instance" /> | <see langword="BindingFlags.Static" /> are used.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -9671,7 +9683,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  For <see langword="IDispatch" /> members, a string representing the DispID, for example "[DispID=3]".</param>
-        <param name="invokeAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted. The access can be one of the <see langword="BindingFlags" /> such as <see langword="Public" />, <see langword="NonPublic" />, <see langword="Private" />, <see langword="InvokeMethod" />, <see langword="GetField" />, and so on. The type of lookup need not be specified. If the type of lookup is omitted, <see langword="BindingFlags.Public" /> | <see langword="BindingFlags.Instance" /> | <see langword="BindingFlags.Static" /> are used.</param>
+        <param name="invokeAttr">A bitwise combination of the enumeration values that specify how the search is conducted. The access can be one of the <see langword="BindingFlags" /> such as <see langword="Public" />, <see langword="NonPublic" />, <see langword="Private" />, <see langword="InvokeMethod" />, <see langword="GetField" />, and so on. The type of lookup need not be specified. If the type of lookup is omitted, <see langword="BindingFlags.Public" /> | <see langword="BindingFlags.Instance" /> | <see langword="BindingFlags.Static" /> are used.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  
@@ -9869,7 +9881,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  -or-  
   
  For <see langword="IDispatch" /> members, a string representing the DispID, for example "[DispID=3]".</param>
-        <param name="invokeAttr">A bitmask comprised of one or more <see cref="T:System.Reflection.BindingFlags" /> that specify how the search is conducted. The access can be one of the <see langword="BindingFlags" /> such as <see langword="Public" />, <see langword="NonPublic" />, <see langword="Private" />, <see langword="InvokeMethod" />, <see langword="GetField" />, and so on. The type of lookup need not be specified. If the type of lookup is omitted, <see langword="BindingFlags.Public" /> | <see langword="BindingFlags.Instance" /> | <see langword="BindingFlags.Static" /> are used.</param>
+        <param name="invokeAttr">A bitwise combination of the enumeration values that specify how the search is conducted. The access can be one of the <see langword="BindingFlags" /> such as <see langword="Public" />, <see langword="NonPublic" />, <see langword="Private" />, <see langword="InvokeMethod" />, <see langword="GetField" />, and so on. The type of lookup need not be specified. If the type of lookup is omitted, <see langword="BindingFlags.Public" /> | <see langword="BindingFlags.Instance" /> | <see langword="BindingFlags.Static" /> are used.</param>
         <param name="binder">An object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.  
   
  -or-  

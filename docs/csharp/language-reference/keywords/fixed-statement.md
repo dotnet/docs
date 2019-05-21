@@ -57,13 +57,11 @@ fixed (byte* ps = srcarray, pd = dstarray)
 }
 ```
 
-You can allocate memory on the stack, where it is not subject to garbage collection and therefore does not need to be pinned. For more information, see [stackalloc](stackalloc.md).
+You can allocate memory on the stack, where it is not subject to garbage collection and therefore does not need to be pinned. To do that use the [`stackalloc` operator](stackalloc.md).
 
-[!code-csharp[Initializing multiple pointers](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#4)]
+## C# language specification
 
-## C# Language Specification
-
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The fixed statement](~/_csharplang/spec/unsafe-code.md#the-fixed-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

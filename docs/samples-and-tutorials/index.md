@@ -58,7 +58,7 @@ This series of samples demonstrate many of the features of Language Integrated Q
 
 **Managed COM server Sample**
 
-The [COM server](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) sample demonstrates the creation of a managed COM server and how it can be globally registered.
+The [COM server](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) sample demonstrates the creation of a managed COM server and how it can be globally registered or consumed via RegFree COM.
 
 **Microsoft Office PIA Sample**
 

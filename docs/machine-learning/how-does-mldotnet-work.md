@@ -61,7 +61,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
             // 2. Specify data preparation and model training pipeline
             var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
-                .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
+                .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
     
             // 3. Train model
             var model = pipeline.Fit(trainingData);
@@ -141,7 +141,7 @@ For our house price example, we used the **Regression** task. To evaluate the mo
             new HouseData() { Size = 3.4F, Price = 3.6F }
         };
 
-        var testHouseDataView = mlContext.Data.LoadFromEnumerable(houseData);
+        var testHouseDataView = mlContext.Data.LoadFromEnumerable(testHouseData);
         var testPriceDataView = model.Transform(testHouseDataView);
                 
         var metrics = mlContext.Regression.Evaluate(testPriceDataView, labelColumnName: "Price");
@@ -149,8 +149,8 @@ For our house price example, we used the **Regression** task. To evaluate the mo
         Console.WriteLine($"R^2: {metrics.RSquared:0.##}");
         Console.WriteLine($"RMS error: {metrics.RootMeanSquaredError:0.##}");
 
-        // R^2: 0.99
-        // RMS error: 0.09
+        // R^2: 0.96
+        // RMS error: 0.19
 ```
 
 The evaluation metrics tell you that the error is low-ish, and that correlation between the predicted output and the test output is high. That was easy! In real examples, it takes more tuning to achieve good model metrics.
@@ -183,7 +183,7 @@ Inside each catalog is a set of extension methods. Let's look at how extension m
 
 ```csharp
     var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
-        .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100);
+        .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
 ```
 
 In the snippet, `Concatenate` and `Sdca` are both methods in the catalog. They each create an [IEstimator](xref:Microsoft.ML.IEstimator%601) object that is appended to the pipeline.

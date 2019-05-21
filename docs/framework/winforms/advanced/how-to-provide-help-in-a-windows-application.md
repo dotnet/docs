@@ -11,7 +11,7 @@ ms.assetid: 7c4e5cec-2bd2-4f0b-8d75-c2b88929bd61
 ---
 # How to: Provide Help in a Windows Application
 
-You can use of the <xref:System.Windows.Forms.HelpProvider> component to attach Help topics within a Help file to specific controls on Windows Forms. The Help file can be either HTML or HTMLHelp 1.x or greater format.
+You can make use of the <xref:System.Windows.Forms.HelpProvider> component to attach Help topics within a Help file to specific controls on Windows Forms. The Help file can be either HTML or HTMLHelp 1.x or greater format.
 
 ## Provide Help
 

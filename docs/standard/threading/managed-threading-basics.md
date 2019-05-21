@@ -40,9 +40,6 @@ The first five topics of this section are designed to help you determine when to
  [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../../../docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md)  
  Describes thread-relative storage mechanisms.  
   
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)  
- Describes how asynchronous or long-running synchronous operations can be canceled by using a cancellation token.  
-  
 ## Reference
 
  <xref:System.Threading.Thread>  

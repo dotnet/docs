@@ -15,7 +15,7 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
  The <xref:System.IdentityModel.Tokens.SamlAssertion> class verifies the digital signature contained within a SAML token, and the default <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> requires that SAML tokens be signed by an X.509 certificate that is valid when the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> of the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> class is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>. `ChainTrust` mode alone is insufficient to determine whether the issuer of the SAML token is trusted. Services that require a more granular trust model can either use authorization and enforcement policies to check the issuer of the claim sets produced by issued token authentication or use the X.509 validation settings on <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> to restrict the set of allowed signing certificates. For more information, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md) and [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## Switching Identity Without a Security Context  
- The following applies only to [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
+ The following applies only to WinFX.  
   
  When a connection is established between a client and server, the identity of the client does not change, except in one situation: after the WCF client is opened, if all of the following conditions are true:  
   

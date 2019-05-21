@@ -7284,18 +7284,17 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
 ## Remarks  
  The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property associated with the current thread culture. The return value is identical to the value returned by specifying the "D" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
-> [!IMPORTANT]
->  The string returned by the <xref:System.DateTime.ToLongDateString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard long date pattern is "dddd, MMMMdd, yyyy"; for the de-DE culture, it is "dddd, d. MMMMyyyy"; for the ja-JP culture, it is "yyyy'?'M'?'d'?'". The specific format string on a particular computer can also be customized so that it differs from the standard long date format string.  
+> [!NOTE]
+>  The string returned by the <xref:System.DateTime.ToLongDateString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern?displayProperty=nameWithType> property. For example, for the en-US culture, the standard long date pattern is commonly "dddd, MMMM dd, yyyy"; for the de-DE culture, it is "dddd, d. MMMM yyyy"; for the ja-JP culture, it is "yyyy'年'M'月'd'日'". Note that its value can vary depending on the .NET implementation and its version, the operating system and its version, and user customization.
+
+[!INCLUDE[culture-sensitive formatting](~/includes/thread-formatting.md)]
   
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
+## Examples
+
+The following example demonstrates the <xref:System.DateTime.ToLongDateString%2A> method.  
   
-   
-  
-## Examples  
- The following example demonstrates the <xref:System.DateTime.ToLongDateString%2A> method.  
-  
- [!code-csharp[DateTime.ToShortLongString#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime.ToShortLongString/cs/sls.cs#1)]
- [!code-vb[DateTime.ToShortLongString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime.ToShortLongString/vb/sls.vb#1)]  
+[!code-csharp[DateTime.ToShortLongString#1](~/samples/snippets/csharp/VS_Snippets_CLR/DateTime.ToShortLongString/cs/sls.cs#1)]
+[!code-vb[DateTime.ToShortLongString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/DateTime.ToShortLongString/vb/sls.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -7348,14 +7347,13 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property associated with the current thread culture. The return value is identical to the value returned by specifying the "T" [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
+
+The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property associated with the current thread culture. The return value is identical to the value returned by specifying the "T" [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
-> [!IMPORTANT]
->  The string returned by the <xref:System.DateTime.ToLongTimeString%2A> method is culture-sensitive. It reflects the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> property of the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard long time pattern is "h:mm:ss tt"; for the de-DE culture, it is "HH:mm:ss"; for the ja-JP culture, it is "H:mm:ss". The specific format string on a particular computer can also be customized so that it differs from the standard long time format string.  
-  
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
-  
-   
+> [!NOTE]
+>  The string returned by the <xref:System.DateTime.ToLongTimeString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property. For example, for the en-US culture, the standard long time pattern is "h:mm:ss tt"; for the de-DE culture, it is "HH:mm:ss"; for the ja-JP culture, it is "H:mm:ss". Note that its value can vary depending on the .NET implementation and its version, the operating system and its version, and user customization.
+
+[!INCLUDE[culture-sensitive-formatting](~/includes/thread-formatting.md)]
   
 ## Examples  
  The following example demonstrates the <xref:System.DateTime.ToLongTimeString%2A> method.  
@@ -7467,13 +7465,11 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
 ## Remarks  
  The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A?displayProperty=nameWithType> property associated with the current thread culture. The return value is identical to the value returned by specifying the "d" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
-> [!IMPORTANT]
->  The string returned by the <xref:System.DateTime.ToShortDateString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard short date pattern is "M/d/yyyy"; for the de-DE culture, it is "dd.MM.yyyy"; for the ja-JP culture, it is "yyyy/M/d". The specific format string on a particular computer can also be customized so that it differs from the standard short date format string.  
-  
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
-  
-   
-  
+> [!NOTE]
+>  The string returned by the <xref:System.DateTime.ToShortDateString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern?displayProperty=nameWithType> property. For example, for the en-US culture, the standard short date pattern is "M/d/yyyy"; for the de-DE culture, it is "dd.MM.yyyy"; for the ja-JP culture, it is "yyyy/MM/dd". Note that its value can vary depending on the .NET implementation and its version, the operating system and its version, and user customization.
+
+[!INCLUDE[culture-sensitive formatting](~/includes/thread-formatting.md)]
+
 ## Examples  
  The following example demonstrates the <xref:System.DateTime.ToShortDateString%2A> method. It also shows that the result of calling the <xref:System.DateTime.ToShortDateString%2A> method is identical to calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method with "d" as the format parameter.  
   
@@ -7530,16 +7526,15 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property associated with the current thread culture. The return value is identical to the value returned by specifying the "t" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
+## Remarks
+
+The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property associated with the current thread culture. The return value is identical to the value returned by specifying the "t" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
-> [!IMPORTANT]
->  The string returned by the <xref:System.DateTime.ToShortTimeString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard short time pattern is "h:mm tt"; for the de-DE culture, it is "HH:mm"; for the ja-JP culture, it is "H:mm". The specific format string on a particular computer can also be customized so that it differs from the standard short time format string.  
-  
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
-  
-   
-  
+> [!NOTE]
+>  The string returned by the <xref:System.DateTime.ToShortTimeString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern?displayProperty=nameWithType> property. For example, for the en-US culture, the standard short time pattern is "h:mm tt"; for the de-DE culture, it is "HH:mm"; for the ja-JP culture, it is "H:mm". Note that its value can vary depending on the .NET implementation and its version, the operating system and its version, and user customization. 
+
+[!INCLUDE[culture-sensitive formatting](~/includes/thread-formatting.md)]
+
 ## Examples  
  The following example demonstrates the <xref:System.DateTime.ToShortTimeString%2A> method.  
   

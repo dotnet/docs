@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an x- and y-coordinate pair in two-dimensional space. Can also represent a logical point for certain property usages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,9 +46,9 @@
         <Parameter Name="y" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="x">The x-coordinate value of the <see cref="T:Windows.Foundation.Point" /> struct. </param>
+        <param name="y">The y-coordinate value of the <see cref="T:Windows.Foundation.Point" /> struct. </param>
+        <summary>Initializes a <see cref="T:Windows.Foundation.Point" /> struct that contains the specified values.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,9 +77,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The object to compare.</param>
+        <summary>Determines whether the specified object is a <see cref="T:Windows.Foundation.Point" /> and whether it contains the same values as this <see cref="T:Windows.Foundation.Point" />.</summary>
+        <returns><see langword="true" /> if <paramref name="obj" /> is a <see cref="T:Windows.Foundation.Point" /> and contains the same <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values as this <see cref="T:Windows.Foundation.Point" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,9 +103,9 @@
         <Parameter Name="value" Type="Windows.Foundation.Point" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The point to compare to this instance.</param>
+        <summary>Compares two <see cref="T:Windows.Foundation.Point" /> structs for equality.</summary>
+        <returns><see langword="true" /> if both <see cref="T:Windows.Foundation.Point" /> structs contain the same <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this <see cref="T:Windows.Foundation.Point" />.</summary>
+        <returns>The hash code for this <see cref="T:Windows.Foundation.Point" /> struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,10 +158,10 @@
         <Parameter Name="point2" Type="Windows.Foundation.Point" />
       </Parameters>
       <Docs>
-        <param name="point1">To be added.</param>
-        <param name="point2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point1">The first <see cref="T:Windows.Foundation.Point" /> struct to compare.</param>
+        <param name="point2">The second <see cref="T:Windows.Foundation.Point" /> struct to compare.</param>
+        <summary>Compares two <see cref="T:Windows.Foundation.Point" /> structs for equality.</summary>
+        <returns><see langword="true" /> if both the <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values of <paramref name="point1" /> and <paramref name="point2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,10 +186,10 @@
         <Parameter Name="point2" Type="Windows.Foundation.Point" />
       </Parameters>
       <Docs>
-        <param name="point1">To be added.</param>
-        <param name="point2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="point1">The first point to compare.</param>
+        <param name="point2">The second point to compare.</param>
+        <summary>Compares two <see cref="T:Windows.Foundation.Point" /> structs for inequality</summary>
+        <returns><see langword="true" /> if <paramref name="point1" /> and <paramref name="point2" /> have different <see cref="P:Windows.Foundation.Point.X" /> or <see cref="P:Windows.Foundation.Point.Y" /> values; false if <paramref name="point1" /> and <paramref name="point2" /> have the same <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,10 +221,10 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The string specifying the format to use, or <see langword="null" /> to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">An object that provides formatting information for the value, or <see langword="null" /> to obtain the numeric format information from the current culture.</param>
+        <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>A string containing the value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,8 +251,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:Windows.Foundation.Point" />.</summary>
+        <returns>A <see cref="T:System.String" /> containing the <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values of this <see cref="T:Windows.Foundation.Point" /> struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,9 +276,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">Culture-specific formatting information.</param>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:Windows.Foundation.Point" />.</summary>
+        <returns>A <see cref="T:System.String" /> containing the <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values of this <see cref="T:Windows.Foundation.Point" /> struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +299,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:Windows.Foundation.Point.X" />-coordinate value of this <see cref="T:Windows.Foundation.Point" /> struct.</summary>
+        <value>The <see cref="P:Windows.Foundation.Point.X" />-coordinate value of this <see cref="T:Windows.Foundation.Point" /> struct. The default value is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,8 +321,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="P:Windows.Foundation.Point.Y" />-coordinate value of this <see cref="T:Windows.Foundation.Point" />.</summary>
+        <value>The <see cref="P:Windows.Foundation.Point.Y" />-coordinate value of this <see cref="T:Windows.Foundation.Point" /> struct. The default value is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

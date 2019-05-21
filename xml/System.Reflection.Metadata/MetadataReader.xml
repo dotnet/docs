@@ -46,7 +46,7 @@
       <Docs>
         <param name="metadata">To be added.</param>
         <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MetadataReader" /> class from the metadata stored at the given memory location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +75,7 @@
         <param name="metadata">To be added.</param>
         <param name="length">To be added.</param>
         <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MetadataReader" /> class from the metadata stored at the given memory location.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,8 +106,13 @@
         <param name="length">To be added.</param>
         <param name="options">To be added.</param>
         <param name="utf8Decoder">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MetadataReader" /> class from the metadata stored at the given memory location.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="length" /> is not positive.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="metadata" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The encoding of <paramref name="utf8Decoder" /> is not <see cref="T:System.Text.UTF8Encoding" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
+        <exception cref="T:System.BadImageFormatException">Bad metadata header.</exception>
       </Docs>
     </Member>
     <Member MemberName="AssemblyFiles">
@@ -233,8 +238,8 @@
         <ReturnType>System.Reflection.Metadata.DebugMetadataHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the information decoded from #Pdb stream, or <see langword="null" /> if the stream is not present.</summary>
+        <value>The information decoded from #Pdb stream, or <see langword="null" /> if the stream is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1830,8 +1835,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the metadata represents an assembly.</summary>
+        <value><see langword="true" /> if the metadata represents an assembly; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1983,8 +1988,8 @@
         <ReturnType>System.Reflection.Metadata.MetadataKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the metadata kind.</summary>
+        <value>One of the enumeration values that specifies the metadata kind.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2007,8 +2012,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the length of the underlying data.</summary>
+        <value>The length of the underlying data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2030,8 +2035,8 @@
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the pointer to the underlying data.</summary>
+        <value>The pointer to the underlying data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2056,8 +2061,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the version string read from metadata header.</summary>
+        <value>The version string read from metadata header.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2133,8 +2138,8 @@
         <ReturnType>System.Reflection.Metadata.MetadataReaderOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="F:System.Reflection.Metadata.MetadataReaderOptions" /> passed to the constructor.</summary>
+        <value>A bitwise combination of the enumeration values that describes the <see cref="F:System.Reflection.Metadata.MetadataReaderOptions" /> enum value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2185,8 +2190,8 @@
         <ReturnType>System.Reflection.Metadata.MetadataStringComparer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the comparer used to compare strings stored in metadata.</summary>
+        <value>The comparer used to compare strings stored in metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2261,8 +2266,8 @@
         <ReturnType>System.Reflection.Metadata.MetadataStringDecoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the decoder used by the reader to produce string instances from UTF8-encoded byte sequences.</summary>
+        <value>The decoder used by the reader to produce string instances from UTF8-encoded byte sequences.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

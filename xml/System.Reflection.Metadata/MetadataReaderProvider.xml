@@ -50,7 +50,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disposes all memory allocated by the reader.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +77,11 @@
         <Parameter Name="image" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="image">Metadata image.</param>
+        <summary>Creates a provider over a byte array.</summary>
+        <returns>The new provider.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="image" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromMetadataImage">
@@ -106,11 +107,13 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">Pointer to the start of the metadata blob.</param>
+        <param name="size">The size of the metadata blob.</param>
+        <summary>Creates a metadata provider over an image stored in memory.</summary>
+        <returns>The new metadata provider.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="start" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="size" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromMetadataStream">
@@ -136,12 +139,28 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> instance.</param>
+        <param name="options">Options specifying how sections of the image are read from the stream.</param>
+        <param name="size">Size of the metadata blob in the stream. If not specified, the metadata blob is assumed to span to the end of the stream.</param>
+        <summary>Creates a provider for a stream of the specified size beginning at its current position.</summary>
+        <returns>The new provider.</returns>
+        <remarks>
+          <format type="text/markdown">
+            <![CDATA[
+
+Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is specified, ownership of the stream is transferred to the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>  upon successful argument validation. It will be disposed by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> and the caller must not manipulate it.
+            
+Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata> is specified no data is read from the stream during the construction of the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>. Furthermore, the stream must not be manipulated by caller while the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> is alive and undisposed.
+            
+If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> after construction.
+
+            ]]>
+          </format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="stream" /> doesn't support read and seek operations.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Size is negative or extends past the end of the stream.</exception>
+        <exception cref="T:System.IO.IOException">Error reading from the stream (only when <see cref="F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata" /> is specified).</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPortablePdbImage">
@@ -167,10 +186,11 @@
         <Parameter Name="image" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="image">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="image">A portable PDB image.</param>
+        <summary>Creates a portable PDB metadata provider over a byte array.</summary>
+        <returns>The new portable PDB metadata provider .</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="image" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPortablePdbImage">
@@ -196,11 +216,13 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">Pointer to the start of the portable PDB blob.</param>
+        <param name="size">The size of the portable PDB blob.</param>
+        <summary>Creates a portable PDB metadata provider over a blob stored in memory.</summary>
+        <returns>The new portable PDB metadata provider.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="start" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="size" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPortablePdbStream">
@@ -226,12 +248,27 @@
         <Parameter Name="size" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="stream">The stream.</param>
+        <param name="options">Options specifying how sections of the image are read from the stream.</param>
+        <param name="size">Size of the metadata blob in the stream. If not specified, the metadata blob is assumed to span to the end of the stream.</param>
+        <summary>Creates a provider for a stream of the specified size beginning at its current position.</summary>
+        <returns>A <see cref="T:System.Reflection.Metadata.MetadataReaderProvider" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown">
+            <![CDATA[
+            
+Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is specified, ownership of the stream is transferred to the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>  upon successful argument validation. It will be disposed by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> and the caller must not manipulate it.
+            
+Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata> is specified no data is read from the stream during the construction of the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>. Furthermore, the stream must not be manipulated by caller while the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> is alive and undisposed.
+            
+If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> after construction.
+
+            ]]>
+          </format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="stream" /> doesn't support read and seek operations.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Size is negative or extends past the end of the stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataReader">
@@ -257,11 +294,15 @@
         <Parameter Name="utf8Decoder" Type="System.Reflection.Metadata.MetadataStringDecoder" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="utf8Decoder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">A bitwise combination of the enumeration values that represent the configuration when reading the metadata.</param>
+        <param name="utf8Decoder">The encoding to use.</param>
+        <summary>Gets a <see cref="T:System.Reflection.Metadata.MetadataReader" /> from a <see cref="T:System.Reflection.Metadata.MetadataReaderProvider" />.</summary>
+        <returns>A <see cref="T:System.Reflection.Metadata.MetadataReader" /> instance..</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The encoding of <paramref name="utf8Decoder" /> is not <see cref="T:System.Text.UTF8Encoding" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
+        <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
+        <exception cref="T:System.ObjectDisposedException">Provider has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

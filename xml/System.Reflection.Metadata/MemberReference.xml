@@ -205,9 +205,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Determines if the member reference is to a method or field.</summary>
+        <returns>One of the enumeration values that indicates the kind of member reference.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The member reference signature is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -257,8 +258,8 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent entity handle.</summary>
+        <value>An entity handle instance. If the <see cref="P:System.Reflection.Metadata.EntityHandle.IsNil" /> property is <see langword="true" />, the returned handle will have default values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +284,8 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle to the signature blob.</summary>
+        <value>A handle to the signature blob.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

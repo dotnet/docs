@@ -47,7 +47,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>By default, the stream is disposed when <see cref="T:System.Reflection.Metadata.MetadataReaderProvider" /> is disposed and sections of the PE image are read lazily.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeaveOpen">
@@ -71,7 +71,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Keeps the stream open when the <see cref="T:System.Reflection.Metadata.MetadataReaderProvider" /> is disposed.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrefetchMetadata">
@@ -95,7 +95,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads PDB metadata into memory right away.</summary>
       </Docs>
     </Member>
   </Members>

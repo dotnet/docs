@@ -49,7 +49,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Windows Runtime projections are enabled (on by default).</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -74,7 +74,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The options that are used when a <see cref="T:System.Reflection.Metadata.MetadataReader" /> is obtained via an overload that does not take a <see cref="T:System.Reflection.Metadata.MetadataReaderOptions" /> argument.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -99,7 +99,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>All options are disabled.</summary>
       </Docs>
     </Member>
   </Members>

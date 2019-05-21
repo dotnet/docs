@@ -49,8 +49,8 @@
         <ReturnType>System.Reflection.ManifestResourceAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the manifest resource attributes.</summary>
+        <value>A bitwise combination of the enumeration values that specify the manifest resource atttributes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,10 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+          Gets the implementation entity handle.
+        </summary>
+        <value>An EntityHandle instance. If the <see cref="P:System.Reflection.Metadata.EntityHandle.IsNil" /> property is <see langword="true" />, the returned handle will have default values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,8 +130,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resource name.</summary>
+        <value>The resource name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +156,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the byte offset within the referenced file at which this resource record begins.</summary>
+        <value>The byte offset within the referenced file at which this resource record begins.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

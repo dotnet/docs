@@ -44,8 +44,8 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.ExportedTypeHandle&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all exported types that reside directly in a namespace.</summary>
+        <value>An immutable array of exported type handles.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,8 +70,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unqualified name of the namespace definition.</summary>
+        <value>The unqualified name of the namespace definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +96,20 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.NamespaceDefinitionHandle&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the namespace definitions that are direct children of the current namespace definition.</summary>
+        <value>An immutable array of namespace definitions that are direct children of the current namespace definition.</value>
+        <remarks>
+          <format type="text/markdown">
+  <![CDATA[
+## Remarks
+
+For example:
+
+* System.Collections and System.Linq are direct children of System. 
+* System.Collections.Generic is a direct child of System.Collections.
+* System.Collections.Generic is *not* a direct child of System.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -122,8 +133,8 @@
         <ReturnType>System.Reflection.Metadata.NamespaceDefinitionHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent namespace.</summary>
+        <value>The parent namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +159,8 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets all type definitions that reside directly in a namespace.</summary>
+        <value>An immutable array of type definition handles.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

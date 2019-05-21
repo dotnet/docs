@@ -75,8 +75,8 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the base type of the type definition: either <see cref="T:System.Reflection.Metadata.TypeSpecificationHandle" />, <see cref="T:System.Reflection.Metadata.TypeReferenceHandle" /> or <see cref="T:System.Reflection.Metadata.TypeDefinitionHandle" />.</summary>
+        <value>The base type of the type definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the enclosing type of a specified nested type. </summary>
+        <returns>The enclosing type of the specified nested type, or a handle a handle whose <see cref="P:System.Reflection.Metadata.TypeDefinitionHandle.IsNil" /> property is <see langword="true" /> if the type is not nested.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,8 +372,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an array of types nested in the specified type.</summary>
+        <returns>An immutable array of type definition handles that represent types nested in the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -421,8 +421,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this is a nested type.</summary>
+        <value><see langword="true" /> if it is a nested type, <see langword="false" /> otherwise.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -447,8 +447,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the type.</summary>
+        <value>The name of the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,8 +473,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full name of the namespace where the type is defined. </summary>
+        <value>The full name of the namespace where the type is defined, or a handle whose <see cref="P:System.Reflection.Metadata.StringHandle.IsNil" /> property is <see langword="true" /> if the type is nested or defined in a root namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,8 +499,8 @@
         <ReturnType>System.Reflection.Metadata.NamespaceDefinitionHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the definition handle of the namespace where the type is defined.</summary>
+        <value>The definition handle of the namespace where the type is defined, or a handle whose <see cref="P:System.Reflection.Metadata.NamespaceDefinitionHandle.IsNil" /> property is <see langword="true" />  if the type is nested or defined in a root namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -49,8 +49,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the target type.</summary>
+        <value>The name of the target type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,8 +75,8 @@
         <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the full name of the namespace where the target type is defined.</summary>
+        <value>The full name of the namespace where the target type is defined, or a handle whose the <see cref="P:System.Reflection.Metadata.StringHandle.IsNil" /> property is <see langword="true" /> if the type is nested or defined in a root namespace,</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the resolution scope in which the target type is defined and is uniquely identified by the specified <see cref="P:System.Reflection.Metadata.TypeReference.Namespace" /> and <see cref="P:System.Reflection.Metadata.TypeReference.Name" />.</summary>
+        <value>The resolution scope in which the target type is uniquely defined.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

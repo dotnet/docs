@@ -47,8 +47,8 @@
         <ReturnType>System.Reflection.Metadata.DocumentHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the handle of the single document containing all sequence points of the method. </summary>
+        <value>The handle of the single document containing all sequence points of the method, or a handle whose <see cref="P:System.Reflection.Metadata.DocumentHandle.IsNil" /> property is <see langword="true" /> if the method doesn't have sequence points or spans multiple documents. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,8 +73,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a collection of sequence points decoded from <see cref="P:System.Reflection.Metadata.MethodDebugInformation.SequencePointsBlob" />.</summary>
+        <returns>A collection of sequence points.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the kickoff method of the state machine.</summary>
+        <returns>The kickoff method of the state machine, if the method is a <c>MoveNext</c> method of a state machine. Otherwise, it returns a handle whose <see cref="P:System.Reflection.Metadata.MethodDefinitionHandle.IsNil" /> property is <see langword="true" />..</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +124,8 @@
         <ReturnType>System.Reflection.Metadata.StandaloneSignatureHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a local signature handle. </summary>
+        <value>A local signature handle, or a handle whose <see cref="P:System.Reflection.Metadata.StandaloneSignatureHandle.IsNil" /> property is <see langword="true" /> if the method doesn't define any local variables.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,9 +149,16 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Returns a blob encoding sequence points.
+</summary>
+        <value>A blob encoding sequence points, or a handle whose <see cref="P:System.Reflection.Metadata.BlobHandle.IsNil" /> property is <see langword="true" /> if the method doesn't have sequence points.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+ Use the <see cref="M:System.Reflection.Metadata.MethodDebugInformation.GetSequencePoints" /> method to decode the blob.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
   </Members>

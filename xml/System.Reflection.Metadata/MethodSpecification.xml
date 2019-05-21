@@ -140,8 +140,8 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see langword="MethodDef" /> or <see langword="MemberRef" /> handle specifying which generic method this instance refers to (that is, which generic method it is an instantiation of).</summary>
+        <value>A <see langword="MethodDef" /> or <see langword="MemberRef" /> handle specifying which generic method this instance refers to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,8 +166,8 @@
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a handle to the signature blob.</summary>
+        <value>A handle to the signature blob.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -80,8 +80,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a <see cref="T:System.Reflection.Metadata.BlobWriter" /> to be used to update the content.</summary>
+        <returns>A blob writer to be used to update the content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +104,8 @@
         <ReturnType>THandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the reserved blob handle.</summary>
+        <value>The reserved bloc handle.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

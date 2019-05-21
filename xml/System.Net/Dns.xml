@@ -708,7 +708,9 @@
  If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
  IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostAddresses%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPAddress> instance if only IPv6 results were available for the `hostNameOrAddress` parameter.  
-  
+ 
+ This method is implemented using the underlying operating system's name resolution APIs (such as the Win32 API getaddrinfo on Windows, and equivalent APIs on other platforms).  If a host is described in the `hosts` file, the IP address or addresses there will be returned without querying the DNS server.
+
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
@@ -1298,6 +1300,8 @@
  IPv6 addresses are filtered from the results of this method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPHostEntry> instance if only IPv6 results where available for the `hostNameOrAddress`.parameter.  
   
  The <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
+
+ This method is implemented using the underlying operating system's name resolution APIs (such as the Win32 API getaddrinfo on Windows, and equivalent APIs on other platforms).  If a host is described in the `hosts` file, the IP address or addresses there will be returned without querying the DNS server.
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  

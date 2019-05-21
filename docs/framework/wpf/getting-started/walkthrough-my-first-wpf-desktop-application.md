@@ -40,9 +40,9 @@ By the end of the walkthrough, you'll have built a standalone Windows applicatio
 
 ## Prerequisites
 
-- Visual Studio 2017 or later
+- Visual Studio 2017 or later (this article uses Visual Studio 2019)
 
-   For more information about installing the latest version of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). This article uses Visual Studio 2019.
+   For more information about installing the latest version of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
 ## Create the application project
 
@@ -62,11 +62,11 @@ The first step is to create the application infrastructure, which includes an ap
     
    4. Select **Create a new project**.
 
-      The **Configure a new project** dialog opens.
-
-      ![Configure a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/configure-new-project-dialog.png)
+      The **Configure your new project** dialog opens.
 
    5. Enter the project name **`ExpenseIt`** and then select **Create**.
+
+      ![Configure a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/configure-new-project-dialog.png)
 
       Visual Studio creates the project and opens the designer for the default application window named **MainWindow.xaml**.
 

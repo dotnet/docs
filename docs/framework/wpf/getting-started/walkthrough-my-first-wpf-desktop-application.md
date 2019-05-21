@@ -60,11 +60,9 @@ The first step is to create the application infrastructure, which includes an ap
      
       ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
     
-   4. Select **Create a new project**.
-
       The **Configure your new project** dialog opens.
 
-   5. Enter the project name **`ExpenseIt`** and then select **Create**.
+   4. Enter the project name **`ExpenseIt`** and then select **Create**.
 
       ![Configure a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/configure-new-project-dialog.png)
 

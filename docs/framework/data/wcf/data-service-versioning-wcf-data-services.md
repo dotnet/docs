@@ -54,12 +54,12 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 
  When an application uses the WCF Data Services client libraries to access a data service, the libraries automatically set these headers to the correct values, depending on the version of OData and the features that are used in your application. By default, WCF Data Services uses the lowest protocol version that supports the requested operation.
 
- The following table details the versions of .NET Framework and [!INCLUDE[silverlight](../../../../includes/silverlight-md.md)] that include WCF Data Services support for specific versions of the OData protocol.
+ The following table details the versions of .NET Framework and Silverlight that include WCF Data Services support for specific versions of the OData protocol.
 
 |OData Protocol Version|Support introduced in…|
 |-----------------------------------------------------------------------------------|----------------------------|
-|Version 1|-   [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Service Pack 1 (SP1)<br />-   [!INCLUDE[silverlight](../../../../includes/silverlight-md.md)] version 3|
-|Version 2|-   [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)]<br />-   An update to [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   [!INCLUDE[silverlight](../../../../includes/silverlight-md.md)] version 4|
+|Version 1|-   [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Service Pack 1 (SP1)<br />-   Silverlight version 3|
+|Version 2|-   [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)]<br />-   An update to [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   Silverlight version 4|
 |Version 3|-   You can download and install a pre-release version that supports OData version 3 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=203885).|
 
 ### Metadata Versions

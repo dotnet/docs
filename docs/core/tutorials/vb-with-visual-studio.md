@@ -57,7 +57,7 @@ Enhance your application to prompt the user for his or her name and to display i
 
    [!code-vb[GettingStarted#1](../../../samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
 
-   This code replaces the existing <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, <xref:System.Console.Write%2A?displayProperty=nameWithType>, and <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> statements.
+   This code replaces the contents of the `Main` method.
 
    ![Visual Studio Program file with updated Main method](./media/vb-with-visual-studio/visual-basic-code-window.png)
 

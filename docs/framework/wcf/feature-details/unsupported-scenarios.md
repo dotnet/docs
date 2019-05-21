@@ -44,7 +44,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ## Cryptography  
   
 ### SHA-256 Supported Only for Symmetric Key Usages  
- WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
+ WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the WinFX.  
   
 ### FIPS-Compliant SHA-256 Hashes not Supported  
  WCF does not support SHA-256 FIPS-compliant hashes, so algorithm suites that use SHA-256 are not supported by WCF on systems where use of FIPS compliant algorithms is required.  

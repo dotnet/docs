@@ -37,13 +37,12 @@ is evaluated as
 a ? b : (c ? d : e)
 ```
 
-A mnemonic device you can use to remember how this operator evaluates is to ask:
-
-```text
-is this condition true ? yes : no
-```
-
-with the ? part of the operator acting as a question mark for the previous statement, and the consequent acting as the logical response to this question.
+> [!TIP]
+> You can use the following mnemonic device to remember how the conditional operator is evaluated:
+>
+> ```text
+> is this condition true ? yes : no
+> ```
 
 The following example demonstrates the usage of the conditional operator:
 

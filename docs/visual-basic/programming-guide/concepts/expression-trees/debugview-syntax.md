@@ -5,7 +5,9 @@ author: zspitz
 ms.author: wiwagn
 ms.date: 05/22/2019
 ms.topic: reference
-helpviewer_keywords: expression-trees, debugview
+helpviewer_keywords:
+- "expression trees"
+- "debugview"
 ---
 
 # `DebugView` syntax 

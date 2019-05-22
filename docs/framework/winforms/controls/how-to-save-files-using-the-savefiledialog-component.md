@@ -155,7 +155,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button2.Click += new System.EventHandler(this.button2_Click);  

@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Describes a color in terms of alpha, red, green, and blue channels. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,8 +45,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sRGB alpha channel value of the color. </summary>
+        <value>The sRGB alpha channel value of the color, as a value between 0 and 255.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sRGB blue channel value of the color. </summary>
+        <value>The sRGB blue channel value, as a value between 0 and 255.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +97,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The object to compare to the current <see cref="T:Windows.UI.Color" /> struct.</param>
+        <summary>Tests whether the specified object is a <see cref="T:Windows.UI.Color" /> struct and is equivalent to the current color. </summary>
+        <returns><see langword="true" /> if the specified object is a <see cref="T:Windows.UI.Color" /> struct and is identical to the current <see cref="T:Windows.UI.Color" /> struct; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +122,9 @@
         <Parameter Name="color" Type="Windows.UI.Color" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">The <see cref="T:Windows.UI.Color" /> struct to compare to the current <see cref="T:Windows.UI.Color" /> struct.</param>
+        <summary>Tests whether the specified <see cref="T:Windows.UI.Color" /> struct is identical to the current color.</summary>
+        <returns><see langword="true" /> if the specified <see cref="T:Windows.UI.Color" /> struct is identical to the current <see cref="T:Windows.UI.Color" /> struct; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,12 +151,12 @@
         <Parameter Name="b" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="r">To be added.</param>
-        <param name="g">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="a">The alpha channel, <see cref="P:Windows.UI.Color.A" />, of the new color. The value must be between 0 and 255.</param>
+        <param name="r">The red channel, <see cref="P:Windows.UI.Color.R" />, of the new color. The value must be between 0 and 255.</param>
+        <param name="g">The green channel, <see cref="P:Windows.UI.Color.G" />, of the new color. The value must be between 0 and 255.</param>
+        <param name="b">The blue channel, <see cref="P:Windows.UI.Color.B" />, of the new color. The value must be between 0 and 255.</param>
+        <summary>Creates a new <see cref="T:Windows.UI.Color" /> struct by using the specified sRGB alpha channel and color channel values. </summary>
+        <returns>A <see cref="T:Windows.UI.Color" /> struct with the specified values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +177,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sRGB green channel value of the color. </summary>
+        <value>The sRGB green channel value, as a value between 0 and 255.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +205,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a hash code for the current <see cref="T:Windows.UI.Color" /> struct. </summary>
+        <returns>A hash code for the current <see cref="T:Windows.UI.Color" /> struct.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,10 +231,10 @@
         <Parameter Name="color2" Type="Windows.UI.Color" />
       </Parameters>
       <Docs>
-        <param name="color1">To be added.</param>
-        <param name="color2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color1">The first <see cref="T:Windows.UI.Color" /> struct to compare.</param>
+        <param name="color2">The second <see cref="T:Windows.UI.Color" /> struct to compare.</param>
+        <summary>Tests whether two <see cref="T:Windows.UI.Color" /> structs are identical. </summary>
+        <returns><see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are exactly identical; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,10 +259,10 @@
         <Parameter Name="color2" Type="Windows.UI.Color" />
       </Parameters>
       <Docs>
-        <param name="color1">To be added.</param>
-        <param name="color2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color1">The first <see cref="T:Windows.UI.Color" /> struct to compare.</param>
+        <param name="color2">The second <see cref="T:Windows.UI.Color" /> struct to compare.</param>
+        <summary>Tests whether two <see cref="T:Windows.UI.Color" /> structs are not identical. </summary>
+        <returns><see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +283,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sRGB red channel value of the color. </summary>
+        <value>The sRGB red channel value, as a value between 0 and 255.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,10 +316,10 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The string specifying the format to use. -or- null to use the default format defined for the type of the IFormattable implementation. </param>
+        <param name="provider">An object that provides information for formatting this instance, or <see langword="null" /> to obtain the numeric format information from the current culture.</param>
+        <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>A string containing the value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +346,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of the color using the ARGB channels in hex notation. </summary>
+        <returns>The string representation of the color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,9 +371,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An object that provides culture-specific formatting information.</param>
+        <summary>Creates a string representation of the color by using the ARGB channels and the specified format provider. </summary>
+        <returns>The string representation of the color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

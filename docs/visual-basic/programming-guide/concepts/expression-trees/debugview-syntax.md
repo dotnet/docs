@@ -16,7 +16,7 @@ Each example is followed by a comment block containing the `DebugView`.
 
 ## ParameterExpression
 
-<xref:System.Linq.Expressions.ParameterExpression> variable names are displayed with a "$" symbol at the beginning.
+<xref:System.Linq.Expressions.ParameterExpression?displayProperty=nameWithType> variable names are displayed with a "$" symbol at the beginning.
 
 If a parameter does not have a name, it is assigned an automatically generated name, such as `$var1` or `$var2`.
 
@@ -36,7 +36,7 @@ Dim numParam As ParameterExpression = Expression.Parameter(GetType(Integer))
 
 ## ConstantExpressions
 
-For <xref:System.Linq.Expressions.ConstantExpression> objects that represent integer values, strings, and `null`, the value of the constant is displayed.
+For <xref:System.Linq.Expressions.ConstantExpression?displayProperty=nameWithType> objects that represent integer values, strings, and `null`, the value of the constant is displayed.
 
 For some numeric types, a suffix is added to the value:
 
@@ -67,7 +67,7 @@ Dim expr As ConstantExpression = Expression.Constant(num)
 
 ## BlockExpression
 
-If the type of a <xref:System.Linq.Expressions.BlockExpression> object differs from the type of the last expression in the block, the type is displayed within angle brackets (`<` and `>`). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression> object is not displayed.
+If the type of a <xref:System.Linq.Expressions.BlockExpression?displayProperty=nameWithType> object differs from the type of the last expression in the block, the type is displayed within angle brackets (`<` and `>`). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression> object is not displayed.
 
 ### Examples
 
@@ -92,7 +92,7 @@ Dim block As BlockExpression = Expression.Block(
 
 ## LambdaExpression
 
-<xref:System.Linq.Expressions.LambdaExpression> objects are displayed together with their delegate types.
+<xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> objects are displayed together with their delegate types.
 
 If a lambda expression does not have a name, it is assigned an automatically generated name, such as `#Lambda1` or `#Lambda2`.
 
@@ -122,7 +122,7 @@ Dim lambda As LambdaExpression = Expression.Lambda(Of Func(Of Integer))(
 
 ## LabelExpression
 
-If you specify a default value for the <xref:System.Linq.Expressions.LabelExpression> object, this value is displayed before the <xref:System.Linq.Expressions.LabelTarget> object.
+If you specify a default value for the <xref:System.Linq.Expressions.LabelExpression?displayProperty=nameWithType> object, this value is displayed before the <xref:System.Linq.Expressions.LabelTarget?displayProperty=nameWithType> object.
 
 The `.Label` token indicates the start of the label. The `.LabelTarget` token indicates the destination of the target to jump to.
 

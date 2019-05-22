@@ -16,7 +16,7 @@ Each example is followed by a block comment, containing the `DebugView`.
 
 ## ParameterExpression 
 
-<xref:System.Linq.Expressions.ParameterExpression> variable names are displayed with a `$` symbol at the beginning.
+<xref:System.Linq.Expressions.ParameterExpression?displayProperty=nameWithType> variable names are displayed with a `$` symbol at the beginning.
   
 If a parameter does not have a name, it is assigned an automatically generated name, such as `$var1` or `$var2`.
   
@@ -36,18 +36,18 @@ ParameterExpression numParam =  Expression.Parameter(typeof(int));
 
 ## ConstantExpression  
 
-For <xref:System.Linq.Expressions.ConstantExpression> objects that represent integer values, strings, and `null`, the value of the constant is displayed.  
+For <xref:System.Linq.Expressions.ConstantExpression?displayProperty=nameWithType> objects that represent integer values, strings, and `null`, the value of the constant is displayed.  
   
 For numeric types that have standard suffixes as C# literals, the suffix is added to the value. The following table shows the suffixes associated with various numeric types.  
-  
-|Type|Suffix|  
-|----------|------------|  
-|<xref:System.UInt32>|U|  
-|<xref:System.Int64>|L|  
-|<xref:System.UInt64>|UL|  
-|<xref:System.Double>|D|  
-|<xref:System.Single>|F|  
-|<xref:System.Decimal>|M|  
+
+| Type | Keyword | Suffix |  
+|--|--|--|  
+| <xref:System.UInt32?displayProperty=nameWithType> | [uint](../../../language-reference/keywords/uint.md) | U |  
+| <xref:System.Int64?displayProperty=nameWithType> | [long](../../../language-reference/keywords/long.md) | L |  
+| <xref:System.UInt64?displayProperty=nameWithType> | [ulong](../../../language-reference/keywords/ulong.md) | UL |  
+| <xref:System.Double?displayProperty=nameWithType> | [double](../../../language-reference/keywords/double.md) | D |  
+| <xref:System.Single?displayProperty=nameWithType> | [float](../../../language-reference/keywords/float.md) | F |  
+| <xref:System.Decimal?displayProperty=nameWithType> | [decimal](../../../language-reference/keywords/decimal.md) | M |  
   
 ### Examples  
 
@@ -67,7 +67,7 @@ ConstantExpression expr = Expression.Constant(num);
 
 ## BlockExpression
  
-If the type of a <xref:System.Linq.Expressions.BlockExpression> object differs from the type of the last expression in the block, the type is displayed within angle brackets (`<` and `>`). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression> object is not displayed.  
+If the type of a <xref:System.Linq.Expressions.BlockExpression?displayProperty=nameWithType> object differs from the type of the last expression in the block, the type is displayed within angle brackets (`<` and `>`). Otherwise, the type of the <xref:System.Linq.Expressions.BlockExpression> object is not displayed.  
   
 ### Examples  
 
@@ -89,7 +89,7 @@ BlockExpression block =  Expression.Block(typeof(Object), Expression.Constant("t
 
 ## LambdaExpression
 
-<xref:System.Linq.Expressions.LambdaExpression> objects are displayed together with their delegate types.
+<xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> objects are displayed together with their delegate types.
   
 If a lambda expression does not have a name, it is assigned an automatically generated name, such as `#Lambda1` or `#Lambda2`.
   
@@ -113,7 +113,7 @@ LambdaExpression lambda =  Expression.Lambda<Func<int>>(Expression.Constant(1), 
   
 ## LabelExpression
 
-If you specify a default value for the <xref:System.Linq.Expressions.LabelExpression> object, this value is displayed before the <xref:System.Linq.Expressions.LabelTarget> object.
+If you specify a default value for the <xref:System.Linq.Expressions.LabelExpression?displayProperty=nameWithType> object, this value is displayed before the <xref:System.Linq.Expressions.LabelTarget?displayProperty=nameWithType> object.
   
 The `.Label` token indicates the start of the label. The `.LabelTarget` token indicates the destination of the target to jump to.
   

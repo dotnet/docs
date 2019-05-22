@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptResourceHandler" FullName="System.Web.Handlers.ScriptResourceHandler">
+<Type Name="ScriptResourceHandler" FullName="System.Web.Handlers.ScriptResourceHandler">
   <TypeSignature Language="C#" Value="public class ScriptResourceHandler : System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceHandler extends System.Object implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.Handlers.ScriptResourceHandler" />
@@ -24,12 +24,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Handlers.ScriptResourceHandler> class processes all requests for embedded script files that are referenced through the <xref:System.Web.UI.ScriptManager> class. The <xref:System.Web.Handlers.ScriptResourceHandler> object retrieves the embedded script library and any localized resources for the script library. If the <xref:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded%2A> property is set to `true`, the <xref:System.Web.Handlers.ScriptResourceHandler> object adds a call at the end of the script file to the  method of the  object.  
+ The <xref:System.Web.Handlers.ScriptResourceHandler> class processes all requests for embedded script files that are referenced through the <xref:System.Web.UI.ScriptManager> class. The <xref:System.Web.Handlers.ScriptResourceHandler> object retrieves the embedded script library and any localized resources for the script library. If the <xref:System.Web.UI.ScriptReferenceBase.NotifyScriptLoaded%2A> property is set to `true`, the <xref:System.Web.Handlers.ScriptResourceHandler> object adds a call at the end of the script file to the [notifyScriptLoaded](https://msdn.microsoft.com/library/dd95aa94-34bb-45b6-ac06-1cb4031469c6) method of the [Sys.Application](https://msdn.microsoft.com/library/cd901c0f-51e2-4c63-9963-158f4a88b008) object.  
   
  By default, the <xref:System.Web.Handlers.ScriptResourceHandler> class compresses and caches embedded script files for Internet Explorer 7. You can turn compression and caching off through the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> and <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> properties of the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection> class. You set these properties in the Web.config file.  
   
 > [!NOTE]
->  You can turn compression on for earlier versions of Internet Explorer by creating an alias for Internet Explorer 7 in the  section of the Web.config file. You then programmatically set the value of the <xref:System.Web.UI.Page.ClientTarget%2A> property to that alias. However, we do not recommend this approach because it will cause a decrease in performance and it introduces a high risk of errors.  
+>  You can turn compression on for earlier versions of Internet Explorer by creating an alias for Internet Explorer 7 in the [clientTarget](https://msdn.microsoft.com/library/17a0fa6e-a065-49cc-b900-ef73eda6a922) section of the Web.config file. You then programmatically set the value of the <xref:System.Web.UI.Page.ClientTarget%2A> property to that alias. However, we do not recommend this approach because it will cause a decrease in performance and it introduces a high risk of errors.  
   
  The default Web.config file for AJAX-enabled ASP.NET Web applications adds the <xref:System.Web.Handlers.ScriptResourceHandler> as a handler. You can manually add the handler to your application by including the following element in the Web.config file:  
   

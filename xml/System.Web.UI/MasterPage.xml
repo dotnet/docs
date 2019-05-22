@@ -1,4 +1,4 @@
-﻿<Type Name="MasterPage" FullName="System.Web.UI.MasterPage">
+<Type Name="MasterPage" FullName="System.Web.UI.MasterPage">
   <TypeSignature Language="C#" Value="public class MasterPage : System.Web.UI.UserControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MasterPage extends System.Web.UI.UserControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MasterPage" />
@@ -42,13 +42,13 @@
   
  A master page can contain direct markup and server controls, as well as container controls. Every element that is placed in the master page outside of a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control is rendered on all pages that result from merging the master page and content pages.  
   
- Each content page that is related to the master page must reference the master page in a `MasterPageFile` attribute of its  directive. Content pages can contain only a `@ Page` directive and one or more <xref:System.Web.UI.WebControls.Content> controls. All of your page text, markup, and server controls must be placed within <xref:System.Web.UI.WebControls.Content> controls. You identify the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control of a master page that a <xref:System.Web.UI.WebControls.Content> control is associated with by setting the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of the <xref:System.Web.UI.WebControls.Content> control.  
+ Each content page that is related to the master page must reference the master page in a `MasterPageFile` attribute of its [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive. Content pages can contain only a `@ Page` directive and one or more <xref:System.Web.UI.WebControls.Content> controls. All of your page text, markup, and server controls must be placed within <xref:System.Web.UI.WebControls.Content> controls. You identify the <xref:System.Web.UI.WebControls.ContentPlaceHolder> control of a master page that a <xref:System.Web.UI.WebControls.Content> control is associated with by setting the <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> property of the <xref:System.Web.UI.WebControls.Content> control.  
   
  At run time, the dynamic content from each <xref:System.Web.UI.WebControls.Content> control in the requested page is merged with the master page in the exact location of the related <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. Any other markup and controls in the master page are unaffected. Event handlers can be defined in both the master class and on the content page. For more information, see [Events in ASP.NET Master and Content Pages](https://msdn.microsoft.com/library/b3ab2d01-9e37-4788-82d0-c6065e3ff5bd).  
   
  The <xref:System.Web.UI.MasterPage> class is associated with files that have a .master extension. These files are compiled at run time as <xref:System.Web.UI.MasterPage> objects and are cached in server memory.  
   
- The master page is made available to the content page through the <xref:System.Web.UI.Page.Master%2A> property of the base <xref:System.Web.UI.Page> class. The <xref:System.Web.UI.Page.Master%2A> property returns the instance of the master page; however, it is typed as the base <xref:System.Web.UI.MasterPage> class. To access controls, properties, and functions of the master page, the <xref:System.Web.UI.Page.Master%2A> property can be cast to a <xref:System.Web.UI.MasterPage> object. The class name of the master page is defined using the `ClassName` attribute of the  directive.  
+ The master page is made available to the content page through the <xref:System.Web.UI.Page.Master%2A> property of the base <xref:System.Web.UI.Page> class. The <xref:System.Web.UI.Page.Master%2A> property returns the instance of the master page; however, it is typed as the base <xref:System.Web.UI.MasterPage> class. To access controls, properties, and functions of the master page, the <xref:System.Web.UI.Page.Master%2A> property can be cast to a <xref:System.Web.UI.MasterPage> object. The class name of the master page is defined using the `ClassName` attribute of the [@ Master](https://msdn.microsoft.com/library/3d263ecb-5169-4b28-8ad9-f5c82302ca99) directive.  
   
 > [!NOTE]
 >  Files with .master extensions are not served to a browser.  

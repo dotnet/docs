@@ -1,4 +1,4 @@
-﻿<Type Name="CustomErrorsSection" FullName="System.Web.Configuration.CustomErrorsSection">
+<Type Name="CustomErrorsSection" FullName="System.Web.Configuration.CustomErrorsSection">
   <TypeSignature Language="C#" Value="public sealed class CustomErrorsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomErrorsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsSection" />
@@ -28,7 +28,7 @@
    
   
 ## Examples  
- This example demonstrates how to specify values declaratively for several attributes of the  section, which can also be accessed as members of the <xref:System.Web.Configuration.CustomErrorsSection> class.  
+ This example demonstrates how to specify values declaratively for several attributes of the [customErrors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h0hfz6fc(v=vs.100)) section, which can also be accessed as members of the <xref:System.Web.Configuration.CustomErrorsSection> class.  
   
  The following configuration file example shows how to specify values declaratively for the `customErrors` section.  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="SortedDictionary&lt;TKey,TValue&gt;" FullName="System.Collections.Generic.SortedDictionary&lt;TKey,TValue&gt;">
+<Type Name="SortedDictionary&lt;TKey,TValue&gt;" FullName="System.Collections.Generic.SortedDictionary&lt;TKey,TValue&gt;">
   <TypeSignature Language="C#" Value="public class SortedDictionary&lt;TKey,TValue&gt; : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.Generic.IReadOnlyCollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;, System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SortedDictionary`2&lt;TKey, TValue&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;!TKey, !TValue&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IReadOnlyDictionary`2&lt;!TKey, !TValue&gt;, class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedDictionary`2" />
@@ -884,7 +884,7 @@
   
  A key cannot be `null`, but a value can be, if the value type `TValue` is a reference type.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.SortedDictionary%602.Item%2A> as a default property, which provides the same indexing functionality.  
   
  Getting the value of this property is an O(log `n`) operation; setting the property is also an O(log `n`) operation.  
   

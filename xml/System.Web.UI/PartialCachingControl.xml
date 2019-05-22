@@ -1,4 +1,4 @@
-﻿<Type Name="PartialCachingControl" FullName="System.Web.UI.PartialCachingControl">
+<Type Name="PartialCachingControl" FullName="System.Web.UI.PartialCachingControl">
   <TypeSignature Language="C#" Value="public class PartialCachingControl : System.Web.UI.BasePartialCachingControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartialCachingControl extends System.Web.UI.BasePartialCachingControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PartialCachingControl" />
@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Created when a user control (.ascx file) is specified for output caching, using either the  page directive or the <see cref="T:System.Web.UI.PartialCachingAttribute" /> attribute, and the user control is inserted into a page's control hierarchy by dynamically loading the user control with the <see cref="M:System.Web.UI.TemplateControl.LoadControl(System.String)" /> method.</summary>
+    <summary>Created when a user control (.ascx file) is specified for output caching, using either the [@ OutputCache](https://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) page directive or the <see cref="T:System.Web.UI.PartialCachingAttribute" /> attribute, and the user control is inserted into a page's control hierarchy by dynamically loading the user control with the <see cref="M:System.Web.UI.TemplateControl.LoadControl(System.String)" /> method.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="PagesSection" FullName="System.Web.Configuration.PagesSection">
+<Type Name="PagesSection" FullName="System.Web.Configuration.PagesSection">
   <TypeSignature Language="C#" Value="public sealed class PagesSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PagesSection" />
@@ -15,12 +15,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides programmatic access to the  section of the configuration file. This class cannot be inherited.</summary>
+    <summary>Provides programmatic access to the [pages](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) section of the configuration file. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.PagesSection> class provides a way to programmatically access and modify the content of the configuration file  section. This configuration section supports setting certain ASP.NET page and control directives globally for all pages and controls in the scope of the configuration file. This includes the `@ Page` directive, the `@ Import` directive through the <xref:System.Web.Configuration.PagesSection.Namespaces%2A> collection property, and the `@ Register` directive through the <xref:System.Web.Configuration.PagesSection.Controls%2A> collection property. It also provides support for mapping tag types to other tag types at run time through the <xref:System.Web.Configuration.PagesSection.TagMapping%2A> collection property.  
+ The <xref:System.Web.Configuration.PagesSection> class provides a way to programmatically access and modify the content of the configuration file [pages](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) section. This configuration section supports setting certain ASP.NET page and control directives globally for all pages and controls in the scope of the configuration file. This includes the `@ Page` directive, the `@ Import` directive through the <xref:System.Web.Configuration.PagesSection.Namespaces%2A> collection property, and the `@ Register` directive through the <xref:System.Web.Configuration.PagesSection.Controls%2A> collection property. It also provides support for mapping tag types to other tag types at run time through the <xref:System.Web.Configuration.PagesSection.TagMapping%2A> collection property.  
   
  Directives specify settings used by the page and user-control compilers when they process ASP.NET Web Forms page (.aspx) and user control (.ascx) files.  
   
@@ -29,7 +29,7 @@
 ## Examples  
  This example demonstrates how to specify values declaratively for several attributes of the `pages` section, which can also be accessed as members of the <xref:System.Web.Configuration.PagesSection> class.  
   
- The following configuration file example shows how to specify values declaratively for the  section.  
+ The following configuration file example shows how to specify values declaratively for the [pages](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) section.  
   
 ```  
 <system.web>  
@@ -220,7 +220,7 @@ public partial class AutoEventWireupExample : System.Web.UI.Page
   
  When <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `false`, you must explicitly bind event handlers to events, as shown in the preceding example. In that case, the method names do not have to follow a pattern.  
   
- The default value is `true` if <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is not specified in the `@ Page` directive. Visual Studio automatically includes the attribute when it creates code-behind files. For ASP.NET pages written in C#, Visual Studio sets the value to `true`. For Visual Basic, Visual Studio sets the value to `false` because handlers are bound to events by using the  keyword, which is inserted automatically by Visual Studio when it generates an event handler. If you set <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> to `true`, you can omit (or remove) the  keyword.  
+ The default value is `true` if <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is not specified in the `@ Page` directive. Visual Studio automatically includes the attribute when it creates code-behind files. For ASP.NET pages written in C#, Visual Studio sets the value to `true`. For Visual Basic, Visual Studio sets the value to `false` because handlers are bound to events by using the [Handles](~/docs/visual-basic/language-reference/statements/handles-clause.md) keyword, which is inserted automatically by Visual Studio when it generates an event handler. If you set <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> to `true`, you can omit (or remove) the [Handles](~/docs/visual-basic/language-reference/statements/handles-clause.md) keyword.  
   
  Do not set <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> to `true` if performance is a key consideration. When automatic event wireup is enabled, ASP.NET must make between 15 and 30 tries to match events with methods.  
   

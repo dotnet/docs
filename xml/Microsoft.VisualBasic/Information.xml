@@ -1,4 +1,4 @@
-﻿<Type Name="Information" FullName="Microsoft.VisualBasic.Information">
+<Type Name="Information" FullName="Microsoft.VisualBasic.Information">
   <TypeSignature Language="C#" Value="public sealed class Information" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Information extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Information" />
@@ -420,7 +420,7 @@ testVbName = VbTypeName(sysBadName)
 ## Remarks  
  `IsNothing` returns `True` if the expression represents an object variable that currently has no object assigned to it; otherwise, it returns `False`.  
   
- `IsNothing` is intended to work on reference types. A value type cannot hold a value of  and reverts to its default value if you assign `Nothing` to it. If you supply a value type in `Expression`, `IsNothing` always returns `False`.  
+ `IsNothing` is intended to work on reference types. A value type cannot hold a value of [Nothing](~/docs/visual-basic/language-reference/nothing.md) and reverts to its default value if you assign `Nothing` to it. If you supply a value type in `Expression`, `IsNothing` always returns `False`.  
   
    
   

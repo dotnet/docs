@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
+<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
   <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManager" />
@@ -83,7 +83,7 @@
   
 -   Provide access to ASP.NET authentication, role, and profile application services from client script by registering these services with the <xref:System.Web.UI.ScriptManager> control.  
   
--   Enable culture-specific display of ECMAScript (JavaScript) , , and  functions in the browser.  
+-   Enable culture-specific display of ECMAScript (JavaScript) , , and [String](https://msdn.microsoft.com/library/517a1992-3295-484e-9b9c-07ebfd8fe4db) functions in the browser.  
   
 -   Access localization resources for embedded script files or for stand-alone script files by using the <xref:System.Web.UI.ScriptReferenceBase.ResourceUICultures%2A> property of the <xref:System.Web.UI.ScriptReference> control.  
   
@@ -124,8 +124,8 @@
   
 |Method|Definition|  
 |------------|----------------|  
-|<xref:System.Web.UI.ScriptManager.RegisterScriptControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IScriptControl> interface that is used to define a  client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
-|<xref:System.Web.UI.ScriptManager.RegisterExtenderControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IExtenderControl> interface that is used to define a  client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
+|<xref:System.Web.UI.ScriptManager.RegisterScriptControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IScriptControl> interface that is used to define a [Sys.Component](https://msdn.microsoft.com/library/6fba3595-e425-4e48-b4e9-fc16a0272381) client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
+|<xref:System.Web.UI.ScriptManager.RegisterExtenderControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IExtenderControl> interface that is used to define a [Sys.Component](https://msdn.microsoft.com/library/6fba3595-e425-4e48-b4e9-fc16a0272381) client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
   
 ### Registering Partial-Page Update Compatible Scripts  
  You can use the following methods to register script files that are not dependent on the Microsoft Ajax Library but that are compatible with <xref:System.Web.UI.UpdatePanel> controls. These methods correspond to similar methods of the <xref:System.Web.UI.ClientScriptManager> control. If you are rendering script for use inside an <xref:System.Web.UI.UpdatePanel> control, make sure that you call the methods of the <xref:System.Web.UI.ScriptManager> control.  
@@ -260,7 +260,7 @@
   
  **Handling Partial-Page Update Errors and Registering Script**  
   
- The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a  element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/288c32e2-df1f-4548-abda-de6b4cb989a6).  
+ The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a [customErrors](https://msdn.microsoft.com/library/6c3b53ec-00df-4967-b0fb-351c02867650) element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/288c32e2-df1f-4548-abda-de6b4cb989a6).  
   
  [!code-aspx-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]
  [!code-aspx-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  

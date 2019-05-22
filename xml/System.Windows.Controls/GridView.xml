@@ -1,4 +1,4 @@
-﻿<Type Name="GridView" FullName="System.Windows.Controls.GridView">
+<Type Name="GridView" FullName="System.Windows.Controls.GridView">
   <TypeSignature Language="C#" Value="public class GridView : System.Windows.Controls.ViewBase, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridView extends System.Windows.Controls.ViewBase implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridView" />
@@ -378,7 +378,7 @@
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using [TemplateBinding](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md) or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_ColumnHeaderContainerStyle"></a>   
 ## Dependency Property Information  
@@ -603,7 +603,7 @@
  The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using [TemplateBinding](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md) or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_ColumnHeaderTemplate"></a>   
 ## Dependency Property Information  

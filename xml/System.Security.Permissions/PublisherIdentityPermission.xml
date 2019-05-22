@@ -1,4 +1,4 @@
-﻿<Type Name="PublisherIdentityPermission" FullName="System.Security.Permissions.PublisherIdentityPermission">
+<Type Name="PublisherIdentityPermission" FullName="System.Security.Permissions.PublisherIdentityPermission">
   <TypeSignature Language="C#" Value="public sealed class PublisherIdentityPermission : System.Security.CodeAccessPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PublisherIdentityPermission extends System.Security.CodeAccessPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PublisherIdentityPermission" />
@@ -45,7 +45,7 @@
 >  In the .NET Framework versions 1.0 and 1.1, demands on the identity permissions are effective, even when the calling assembly is fully trusted. That is, although the calling assembly has full trust, a demand for an identity permission fails if the assembly does not meet the demanded criteria. Starting with the .NET Framework version 2.0, demands for identity permissions are ineffective if the calling assembly has full trust. This assures consistency for all permissions, eliminating the treatment of identity permissions as a special case.  
   
 > [!NOTE]
->  By default, code access security does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for code access security. For more information about how to configure this option and which applications can use it, see the  element.  
+>  By default, code access security does not check for <xref:System.Security.Policy.Publisher> evidence. Unless your computer has a custom code group based on the <xref:System.Security.Policy.PublisherMembershipCondition> class, you can improve performance by bypassing Authenticode signature verification. This is accomplished by configuring the runtime to not provide <xref:System.Security.Policy.Publisher> evidence for code access security. For more information about how to configure this option and which applications can use it, see the [&lt;generatePublisherEvidence&gt;](~/docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md) element.  
   
  ]]></format>
     </remarks>

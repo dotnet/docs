@@ -1,4 +1,4 @@
-﻿<Type Name="Target" FullName="Microsoft.Build.BuildEngine.Target">
+<Type Name="Target" FullName="Microsoft.Build.BuildEngine.Target">
   <TypeSignature Language="C#" Value="public class Target : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Target extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Target" />
@@ -132,7 +132,7 @@
 ## Remarks  
  This method allows the caller to use the `foreach` statement of the C# language (`for each` in Visual Basic) to iterate through the individual <xref:Microsoft.Build.BuildEngine.BuildTask> objects in the <xref:Microsoft.Build.BuildEngine.Target>.  
   
- A <xref:Microsoft.Build.BuildEngine.BuildTask> object represents a child  element of the `Target` element.  
+ A <xref:Microsoft.Build.BuildEngine.BuildTask> object represents a child [Task](/visualstudio/msbuild/task-element-msbuild) element of the `Target` element.  
   
  ]]></format>
         </remarks>

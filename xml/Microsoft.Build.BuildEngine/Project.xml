@@ -1,4 +1,4 @@
-﻿<Type Name="Project" FullName="Microsoft.Build.BuildEngine.Project">
+<Type Name="Project" FullName="Microsoft.Build.BuildEngine.Project">
   <TypeSignature Language="C#" Value="public class Project" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Project extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.Project" />
@@ -694,7 +694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:Microsoft.Build.BuildEngine.BuildItemGroup> contains all items in the project after wildcard and property expansion, including those that were not used during the build process due to `Condition` attributes evaluating to `false`. This property value is only generated when certain changes occur, such as a new  element being added to the project. Adding or deleting items from this property does not impact the project.  
+ The returned <xref:Microsoft.Build.BuildEngine.BuildItemGroup> contains all items in the project after wildcard and property expansion, including those that were not used during the build process due to `Condition` attributes evaluating to `false`. This property value is only generated when certain changes occur, such as a new [Import](/visualstudio/msbuild/import-element-msbuild) element being added to the project. Adding or deleting items from this property does not impact the project.  
   
  ]]></format>
         </remarks>

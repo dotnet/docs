@@ -1,4 +1,4 @@
-﻿<Type Name="HttpCachePolicy" FullName="System.Web.HttpCachePolicy">
+<Type Name="HttpCachePolicy" FullName="System.Web.HttpCachePolicy">
   <TypeSignature Language="C#" Value="public sealed class HttpCachePolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpCachePolicy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCachePolicy" />
@@ -1425,14 +1425,14 @@
   
  For more information about the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property, see "RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1," which is available on the [World Wide Web Consortium (W3C) Web site](https://go.microsoft.com/fwlink/?linkid=37125). Information about content encodings is in section 14, "Header Field Definitions."  
   
- You can set the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property by using the `VaryByContentEncodings` attribute of the  directive. You can also add a cache profile to the  element in the Web.config file.  
+ You can set the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property by using the `VaryByContentEncodings` attribute of the [@ OutputCache](https://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive. You can also add a cache profile to the [outputCacheProfile](https://msdn.microsoft.com/library/6df16c27-207d-4b52-9a6e-b3a541222b3d) element in the Web.config file.  
   
  <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
 ## Examples  
- The following example shows how to enable a dynamically compressed response for a page to be served from the output cache. The encoding that is acceptable is "gzip" and is set by using the `VaryByContentEncodings` attribute of the  directive. If the Web server that is hosting the page does not have dynamic compression enabled, the output cache will not have a cached response that is based on the specified content encoding.  
+ The following example shows how to enable a dynamically compressed response for a page to be served from the output cache. The encoding that is acceptable is "gzip" and is set by using the `VaryByContentEncodings` attribute of the [@ OutputCache](https://msdn.microsoft.com/library/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive. If the Web server that is hosting the page does not have dynamic compression enabled, the output cache will not have a cached response that is based on the specified content encoding.  
   
  [!code-aspx-csharp[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/CS/default.aspx#1)]
  [!code-aspx-vb[System.Web.HttpCachePolicy.VaryByContentEncodings#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpCachePolicy.VaryByContentEncodings/VB/default.aspx#1)]  

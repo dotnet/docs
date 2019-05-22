@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
+<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
   <TypeSignature Language="C#" Value="public class ResourceManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourceManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceManager" />
@@ -89,7 +89,7 @@
   
  For example, suppose that an assembly has several resources in a resource file that has the base name MyResources. These resource files should have names such as MyResources.ja-JP.resources for the Japan (Japanese) culture, MyResources.de.resources for the German culture, MyResources.zh-CHS.resources for the simplified Chinese culture, and MyResources.fr-BE.resources for the French (Belgium) culture. The default resource file should be named MyResources.resources. The culture-specific resource files are commonly packaged in satellite assemblies for each culture. The default resource file should be embedded in the app's main assembly.  
   
- Note that  allows resources to be marked as private, but you should always mark them as public so they can be accessed by other assemblies. (Because a satellite assembly contains no code, resources that are marked as private are unavailable to your app through any mechanism.)  
+ Note that [Assembly Linker](~/docs/framework/tools/al-exe-assembly-linker.md) allows resources to be marked as private, but you should always mark them as public so they can be accessed by other assemblies. (Because a satellite assembly contains no code, resources that are marked as private are unavailable to your app through any mechanism.)  
   
  For more information about creating, packaging, and deploying resources, see the articles [Creating Resource Files](~/docs/framework/resources/creating-resource-files-for-desktop-apps.md), [Creating Satellite Assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md), and [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
@@ -613,7 +613,7 @@ al /out:ru-RU\Greet.resources.dll /culture:ru-RU /embed: GreetingResources.ru-RU
 Greeting=Hello  
 ```  
   
- The text file can be converted to a binary resource file by using the  at the command prompt as follows:  
+ The text file can be converted to a binary resource file by using the [Resource File Generator (ResGen.exe)](~/docs/framework/tools/resgen-exe-resource-file-generator.md) at the command prompt as follows:  
   
 ```  
 resgen ExampleResources.txt  

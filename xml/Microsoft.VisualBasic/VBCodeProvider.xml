@@ -1,4 +1,4 @@
-﻿<Type Name="VBCodeProvider" FullName="Microsoft.VisualBasic.VBCodeProvider">
+<Type Name="VBCodeProvider" FullName="Microsoft.VisualBasic.VBCodeProvider">
   <TypeSignature Language="C#" Value="public class VBCodeProvider : System.CodeDom.Compiler.CodeDomProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VBCodeProvider extends System.CodeDom.Compiler.CodeDomProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBCodeProvider" />
@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value for `providerOptions` is obtained from the  element in the configuration file. You can identify the version of the <xref:Microsoft.VisualBasic.VBCodeProvider> you want to use by specifying the `<providerOption>` element, supplying "CompilerVersion" as the option name, and supplying the version number (for example, "v3.5") as the option value. You must precede the version number with a lower case "v".  
+ The value for `providerOptions` is obtained from the [&lt;providerOption&gt;](~/docs/framework/configure-apps/file-schema/compiler/provideroption-element.md) element in the configuration file. You can identify the version of the <xref:Microsoft.VisualBasic.VBCodeProvider> you want to use by specifying the `<providerOption>` element, supplying "CompilerVersion" as the option name, and supplying the version number (for example, "v3.5") as the option value. You must precede the version number with a lower case "v".  
   
    
   

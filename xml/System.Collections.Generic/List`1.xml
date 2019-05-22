@@ -1,4 +1,4 @@
-﻿<Type Name="List&lt;T&gt;" FullName="System.Collections.Generic.List&lt;T&gt;">
+<Type Name="List&lt;T&gt;" FullName="System.Collections.Generic.List&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class List&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit List`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.List`1" />
@@ -2276,7 +2276,7 @@ Public Function StartsWith(e As Employee) As Boolean
  The following example demonstrates the use of the <xref:System.Action%601> delegate to print the contents of a <xref:System.Collections.Generic.List%601> object. In this example the `Print` method is used to display the contents of the list to the console.  
   
 > [!NOTE]
->  In addition to displaying the contents using the `Print` method, the C# example demonstrates the use of  to display the results to the console.  
+>  In addition to displaying the contents using the `Print` method, the C# example demonstrates the use of [anonymous methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) to display the results to the console.  
   
  [!code-csharp[System.Action_PrintExample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action_PrintExample/cs/action.cs#01)]
  [!code-vb[System.Action_PrintExample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action_PrintExample/vb/action.vb#01)]  

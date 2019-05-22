@@ -1,4 +1,4 @@
-﻿<Type Name="CompilationMode" FullName="System.Web.UI.CompilationMode">
+<Type Name="CompilationMode" FullName="System.Web.UI.CompilationMode">
   <TypeSignature Language="C#" Value="public enum CompilationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompilationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.CompilationMode" />
@@ -23,7 +23,7 @@
   
  `<%@ page compilationMode="never" %>`  
   
- The compilation mode can also be specified in configuration files. The <xref:System.Web.Configuration.PagesSection> configuration section object identifies page-specific configuration settings. The  configuration section element can be declared at the machine, site, application, and subdirectory levels of the configuration files.  
+ The compilation mode can also be specified in configuration files. The <xref:System.Web.Configuration.PagesSection> configuration section object identifies page-specific configuration settings. The [pages](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) configuration section element can be declared at the machine, site, application, and subdirectory levels of the configuration files.  
   
  If the <xref:System.Web.UI.CompilationMode> is set to Never and a page contains a script block or code construct that requires compilation, ASP.NET will return with an error and the page will not run.  
   

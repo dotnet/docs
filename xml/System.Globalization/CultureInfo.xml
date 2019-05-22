@@ -1,4 +1,4 @@
-﻿<Type Name="CultureInfo" FullName="System.Globalization.CultureInfo">
+<Type Name="CultureInfo" FullName="System.Globalization.CultureInfo">
   <TypeSignature Language="C#" Value="public class CultureInfo : ICloneable, IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit CultureInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureInfo" />
@@ -260,7 +260,7 @@ Some `CultureInfo` objects differ depending on the underlying platform. In parti
  [!code-csharp[System.Globalization.CultureInfo.Class.AppDomain#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.appdomain/cs/appdomainex1.cs#1)]
  [!code-vb[System.Globalization.CultureInfo.Class.AppDomain#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.appdomain/vb/appdomainex1.vb#1)]  
   
- For more information about cultures and application domains, see the "Application Domains and Threads" section in the  topic.  
+ For more information about cultures and application domains, see the "Application Domains and Threads" section in the [Application Domains](~/docs/framework/app-domains/application-domains.md) topic.  
   
 <a name="Async"></a>   
 ## Culture and task-based asynchronous operations  

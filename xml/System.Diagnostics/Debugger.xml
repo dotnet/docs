@@ -1,4 +1,4 @@
-﻿<Type Name="Debugger" FullName="System.Diagnostics.Debugger">
+<Type Name="Debugger" FullName="System.Diagnostics.Debugger">
   <TypeSignature Language="C#" Value="public sealed class Debugger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Debugger extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Debugger" />
@@ -415,7 +415,7 @@ Console.WriteLine("Hello, world.");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Debuggers must specifically enable callbacks that they wish to receive. A debugger that wants to receive cross-thread dependency callbacks must call the  method.  
+ Debuggers must specifically enable callbacks that they wish to receive. A debugger that wants to receive cross-thread dependency callbacks must call the [ICorDebugProcess3::SetEnableCustomNotification](~/docs/framework/unmanaged-api/debugging/icordebugprocess3-setenablecustomnotification-method.md) method.  
   
  A debugger that has selected <xref:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency%2A> can take appropriate action upon notification. For example, performing a function evaluation typically requires freezing all threads except for the thread that is performing the evaluation. If the function evaluation requires execution on more than one thread, as might occur in remoting scenarios, the evaluation will block. The <xref:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency%2A> notification informs the debugger that it has to release a thread or abort the function evaluation. The notification is subject to collection after this method returns.  
   

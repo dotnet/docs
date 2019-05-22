@@ -1,4 +1,4 @@
-﻿<Type Name="XElement" FullName="System.Xml.Linq.XElement">
+<Type Name="XElement" FullName="System.Xml.Linq.XElement">
   <TypeSignature Language="C#" Value="public class XElement : System.Xml.Linq.XContainer, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XElement extends System.Xml.Linq.XContainer implements class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XElement" />
@@ -51,7 +51,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](/dotnet/csharp/programming-guide/concepts/linq/xelement-class-overview) for other usage information.  
+ This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](~/docs/csharp/programming-guide/concepts/linq/xelement-class-overview.md) for other usage information.  
   
  An element has an <xref:System.Xml.Linq.XName>, optionally one or more attributes, and can optionally contain content (for more information, see <xref:System.Xml.Linq.XContainer.Nodes%2A>).  
   
@@ -1420,7 +1420,7 @@ Child
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Some  return collections of elements or attributes. This method returns only a single attribute. Sometimes this is referred to as a *singleton* (in contrast to a *collection*).  
+ Some [axis methods](https://msdn.microsoft.com/library/f25da2f0-6c42-4ae3-8939-88ed2110ea3f) return collections of elements or attributes. This method returns only a single attribute. Sometimes this is referred to as a *singleton* (in contrast to a *collection*).  
   
  Visual Basic users can use the integrated attribute axis to retrieve the value of an attribute with a specified name.  
   

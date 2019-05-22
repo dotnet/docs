@@ -1,4 +1,4 @@
-﻿<Type Name="Page" FullName="System.Web.UI.Page">
+<Type Name="Page" FullName="System.Web.UI.Page">
   <TypeSignature Language="C#" Value="public class Page : System.Web.UI.TemplateControl, System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Page extends System.Web.UI.TemplateControl implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Page" />
@@ -80,7 +80,7 @@
  [!code-aspx-csharp[System.Web.UI.Page_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Page_Overview/cs/pageexample.aspx#1)]
  [!code-aspx-vb[System.Web.UI.Page_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Page_Overview/vb/pageexample.aspx#1)]  
   
- You must use the  directive and use the `Inherits` and `CodeFile` attributes to link the code-behind file to the .aspx file. In this example, the `Inherits` attribute indicates the `MyCodeBehind` class and the `CodeFile` attribute indicates the path to the language-specific file that contains the class.  
+ You must use the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive and use the `Inherits` and `CodeFile` attributes to link the code-behind file to the .aspx file. In this example, the `Inherits` attribute indicates the `MyCodeBehind` class and the `CodeFile` attribute indicates the path to the language-specific file that contains the class.  
   
  The following code example demonstrates the single-file page model and how to access the <xref:System.Web.UI.Page.IsPostBack%2A> property and the <xref:System.Web.UI.Page.Response%2A> property of the <xref:System.Web.UI.Page>.  
   
@@ -495,7 +495,7 @@
 ## Remarks  
  When set to `true`, this property allows the page to be executed on a single-threaded apartment (STA) thread. This allows the page to call STA components, such as components developed with Visual Basic 6.0. Setting this property to `true` also allows the page to call COM+ components that require access to the unmanaged ASP built-in objects. These are accessible through the ASP `ObjectContext` object or the `OnStartPage` method.  
   
- In most circumstances, do not set this property in code. Set the `aspcompat` attribute to `true` using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `aspcompat` attribute to `true` using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -536,9 +536,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.AsyncMode%2A> property is set by the <xref:System.Web.UI.Page> parser when code for the page is generated. Use the `Async` attribute in  directive to set this value.  
+ The <xref:System.Web.UI.Page.AsyncMode%2A> property is set by the <xref:System.Web.UI.Page> parser when code for the page is generated. Use the `Async` attribute in [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive to set this value.  
   
- Asynchronous pages do not work when the `AspCompat` attribute is set to `true` or the `Transaction` attribute is set to a value other than `Disabled` in the  directive.  
+ Asynchronous pages do not work when the `AspCompat` attribute is set to `true` or the `Transaction` attribute is set to a value other than `Disabled` in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
  ]]></format>
         </remarks>
@@ -643,7 +643,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asynchronous time-out of the page represents the amount of time that the page will wait to perform asynchronous tasks. In most circumstances, do not set this property in code. Set the page asynchronous time-out interval using the  of the Web configuration file or in the  directive. Values set in the page configuration section are overwritten by the page directive.  
+ The asynchronous time-out of the page represents the amount of time that the page will wait to perform asynchronous tasks. In most circumstances, do not set this property in code. Set the page asynchronous time-out interval using the [pages element](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) of the Web configuration file or in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive. Values set in the page configuration section are overwritten by the page directive.  
   
  Define your asynchronous task using the <xref:System.Web.UI.PageAsyncTask> class and register a beginning, an ending, and a time-out handler. If the asynchronous task does not complete in the time interval specified, the time-out handler will be invoked.  
   
@@ -732,7 +732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the <xref:System.Web.UI.Page.Buffer%2A> attribute to `true` using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the <xref:System.Web.UI.Page.Buffer%2A> attribute to `true` using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.Page.Buffer%2A> property sets and gets the <xref:System.Web.HttpResponse.BufferOutput%2A> property.  
@@ -903,7 +903,7 @@
   
 -   `downlevel`, which specifies browser capabilities equivalent to older browsers that do not support client script. You can use this alias to determine how Web pages would work in a browser that has client script disabled.  
   
- You can set the alias programmatically using this property, or you can set it declaratively using the `ClientTarget` attribute of the  directive.  
+ You can set the alias programmatically using this property, or you can set it declaratively using the `ClientTarget` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
  You can define additional aliases in the `clientTarget` section of the application-level Web.config file. For more information, see [clientTarget Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/17a0fa6e-a065-49cc-b900-ef73eda6a922).  
   
@@ -966,7 +966,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `CodePage` attribute to the value you want using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `CodePage` attribute to the value you want using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -1008,7 +1008,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `ContentType` attribute using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `ContentType` attribute using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -1187,7 +1187,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the `Culture` attribute in the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the value of this property. In addition, you can also explicitly set the value of the <xref:System.Web.UI.Page.Culture%2A> property programmatically or in the  element of the Web.config file.  
+ Set the `Culture` attribute in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the value of this property. In addition, you can also explicitly set the value of the <xref:System.Web.UI.Page.Culture%2A> property programmatically or in the [globalization](https://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) element of the Web.config file.  
   
  The <xref:System.Web.UI.Page.Culture%2A> property is used to help localize page content. You can set it to any valid culture ID. For example, the `en-us` culture ID sets the page to American English, while the `fr` culture ID sets the page to French. You can also set the value to `auto` which will perform automatic detection of the browser's preferred language and set it. The automatic language detection can be qualified with a default value such as `auto:en-us`.  
   
@@ -1348,7 +1348,7 @@
 > [!IMPORTANT]
 >  This feature reduces the risk of unauthorized or malicious postback requests and callbacks. It is strongly recommended that you do not disable event validation.  
   
- You set the <xref:System.Web.UI.Page.EnableEventValidation%2A> property by setting the `enableEventValidation` attribute of the  directive or the `enableEventValidation` attribute of the  element in the Web.config file. If you set this property in code, you must set it before the page is initialized.  
+ You set the <xref:System.Web.UI.Page.EnableEventValidation%2A> property by setting the `enableEventValidation` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the `enableEventValidation` attribute of the [pages](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) element in the Web.config file. If you set this property in code, you must set it before the page is initialized.  
   
  ]]></format>
         </remarks>
@@ -1450,7 +1450,7 @@
 ## Remarks  
  A view-state MAC is an encrypted version of the hidden variable that a page's view state is persisted to when the page is sent to the browser. When this property is set to `true`, the encrypted view state is checked to verify that it has not been tampered with on the client.  
   
- Do not set this property in code. Set the `EnableViewStateMac` attribute using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ Do not set this property in code. Set the `EnableViewStateMac` attribute using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
 > [!IMPORTANT]
 >  This attribute should never be set to `false` in a production Web site, even if the application or page does not use view state. The view state MAC helps ensure the security of other ASP.NET functions in addition to view state.  
@@ -1591,7 +1591,7 @@
 ## Remarks  
  This property has been deprecated. Use the <xref:System.Web.HttpResponse.AddFileDependencies%2A> method or the <xref:System.Web.HttpResponse.AddFileDependency%2A> method of the <xref:System.Web.HttpResponse> class instead.  
   
- In most circumstances, do not set this property in code. Set the `FileDependencies` attribute to `true` using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `FileDependencies` attribute to `true` using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -2871,7 +2871,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. The `LCID` attribute can be set in the  directive of the .aspx file, however, the preferred method of setting the locale identifier is through the use of the <xref:System.Web.UI.Page.Culture%2A> and <xref:System.Web.UI.Page.UICulture%2A> properties.  
+ In most circumstances, do not set this property in code. The `LCID` attribute can be set in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive of the .aspx file, however, the preferred method of setting the locale identifier is through the use of the <xref:System.Web.UI.Page.Culture%2A> and <xref:System.Web.UI.Page.UICulture%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -3177,7 +3177,7 @@
   
  Setting the <xref:System.Web.UI.Page.MaxPageStateFieldLength%2A> property to a negative number (the default) indicates that the view-state field should not be separated into chunks. Setting the <xref:System.Web.UI.Page.MaxPageStateFieldLength%2A> to a small number may result in poor performance.  
   
- Set the value of the <xref:System.Web.UI.Page.MaxPageStateFieldLength%2A> property in the  of the Web.config file.  
+ Set the value of the <xref:System.Web.UI.Page.MaxPageStateFieldLength%2A> property in the [pages element](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) of the Web.config file.  
   
  ]]></format>
         </remarks>
@@ -3222,7 +3222,7 @@
   
  If there is no "description" `meta` element in the `head` element of the page markup, the `meta` element is added to the page when the page is rendered. If the page markup already has a "description" `meta` element, this property gets or sets the `content` attribute of the `meta` element.  
   
- You can also set this property in the  directive.  
+ You can also set this property in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
    
   
@@ -3274,7 +3274,7 @@
   
  If there is no "keywords" `meta` element in the `head` element of the page markup, the `meta` element is added to the page when the page is rendered. If the page markup already has a "keywords" `meta` element, this property gets or sets the `content` attribute of the `meta` element.  
   
- You can also set this property in the  directive.  
+ You can also set this property in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
    
   
@@ -4782,7 +4782,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `ResponseEncoding` attribute to the value you want using the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `ResponseEncoding` attribute to the value you want using the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -5219,7 +5219,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `SmartNavigation` attribute to `true` in the  directive in the .aspx file. When the page is requested, the dynamically generated class sets this property.  
+ In most circumstances, do not set this property in code. Set the `SmartNavigation` attribute to `true` in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets this property.  
   
 > [!NOTE]
 >  In ASP.NET version 2.0, the <xref:System.Web.UI.Page.SmartNavigation%2A> property is deprecated. Use the <xref:System.Web.UI.Page.SetFocus%2A> method and the <xref:System.Web.UI.Page.MaintainScrollPositionOnPostBack%2A> property instead.  
@@ -5434,7 +5434,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 ## Remarks  
  Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing at the page or application level.  
   
- Tracing on a page is disabled by default. To enable tracing for a page, use the  directive `<% @ Page trace="true" %>`. To enable tracing for an entire application, you must enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [ASP.NET Tracing Overview](https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
+ Tracing on a page is disabled by default. To enable tracing for a page, use the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive `<% @ Page trace="true" %>`. To enable tracing for an entire application, you must enable it in the application's configuration file, Web.config, which resides in the root directory of the application. For more information, see [ASP.NET Tracing Overview](https://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
   
    
   
@@ -5486,7 +5486,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `Trace` attribute to `true` in the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `Trace` attribute to `true` in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -5531,7 +5531,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `TraceMode` attribute in the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `TraceMode` attribute in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -5576,7 +5576,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In most circumstances, do not set this property in code. Set the `Transaction` attribute in the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
+ In most circumstances, do not set this property in code. Set the `Transaction` attribute in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the property.  
   
  ]]></format>
         </remarks>
@@ -5725,7 +5725,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 ## Remarks  
  This property is a shortcut for the <xref:System.Threading.Thread.CurrentThread%2A> property. The culture is a property of the executing thread  
   
- Set the `UICulture` attribute in the  directive in the .aspx file. When the page is requested, the dynamically generated class sets the value of this property. In addition, you can also explicitly set the value of the <xref:System.Web.UI.Page.UICulture%2A> property in the  of the Web.config file.  
+ Set the `UICulture` attribute in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in the .aspx file. When the page is requested, the dynamically generated class sets the value of this property. In addition, you can also explicitly set the value of the <xref:System.Web.UI.Page.UICulture%2A> property in the [globalization element](https://msdn.microsoft.com/library/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) of the Web.config file.  
   
  ]]></format>
         </remarks>
@@ -6270,9 +6270,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> property cannot be set in code. It can only be set in the  directive or in the < element of the configuration file. Values set in the  directive override any values set in the configuration file.  
+ The <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> property cannot be set in code. It can only be set in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or in the < element of the configuration file. Values set in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive override any values set in the configuration file.  
   
- The syntax for setting this property in the  directive is as follows:  
+ The syntax for setting this property in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive is as follows:  
   
 ```vb  
 <%@ Page Language="VB" ViewStateEncryptionMode="Always" %>  

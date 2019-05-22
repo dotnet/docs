@@ -1,4 +1,4 @@
-﻿<Type Name="DateTimeFormatInfo" FullName="System.Globalization.DateTimeFormatInfo">
+<Type Name="DateTimeFormatInfo" FullName="System.Globalization.DateTimeFormatInfo">
   <TypeSignature Language="C#" Value="public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTimeFormatInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.DateTimeFormatInfo" />
@@ -476,7 +476,7 @@
    
   
 ## Examples  
- The following example creates a read/write <xref:System.Globalization.CultureInfo> object that represents the English (United States) culture and assigns abbreviated day names to its <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> property. It then uses the "ddd" format specifier in a  to display the string representation of dates for one week beginning May 28, 2014.  
+ The following example creates a read/write <xref:System.Globalization.CultureInfo> object that represents the English (United States) culture and assigns abbreviated day names to its <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> property. It then uses the "ddd" format specifier in a [custom date and time format string](~/docs/standard/base-types/custom-date-and-time-format-strings.md) to display the string representation of dates for one week beginning May 28, 2014.  
   
  [!code-csharp[System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviateddaynames/cs/abbreviateddaynames1.cs#1)]
  [!code-vb[System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviateddaynames/vb/abbreviateddaynames1.vb#1)]  

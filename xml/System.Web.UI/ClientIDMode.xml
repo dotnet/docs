@@ -1,4 +1,4 @@
-﻿<Type Name="ClientIDMode" FullName="System.Web.UI.ClientIDMode">
+<Type Name="ClientIDMode" FullName="System.Web.UI.ClientIDMode">
   <TypeSignature Language="C#" Value="public enum ClientIDMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClientIDMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientIDMode" />
@@ -24,7 +24,7 @@
   
  Because the default for controls is Inherit, the default generation mode is Predictable. (However, if you use Visual Studio to convert a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the site default to AutoID in the Web.config file.)  
   
- You can set the `ClientIDMode` value for all pages in a Web site by setting the  element in the site's Web.config file. You can set the `ClientIDMode` value for a page in the  directive.  
+ You can set the `ClientIDMode` value for all pages in a Web site by setting the [pages](https://msdn.microsoft.com/library/4123bb66-3fe4-4d62-b70e-33758656b458) element in the site's Web.config file. You can set the `ClientIDMode` value for a page in the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive.  
   
  For more information, see [ASP.NET Web Server Control Identification](https://msdn.microsoft.com/library/45a8c3ef-5ac7-48f1-862a-0cd5073742e7).  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="UIElement" FullName="System.Windows.UIElement">
+<Type Name="UIElement" FullName="System.Windows.UIElement">
   <TypeSignature Language="C#" Value="public class UIElement : System.Windows.Media.Visual, System.Windows.IInputElement, System.Windows.Media.Animation.IAnimatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UIElement extends System.Windows.Media.Visual implements class System.Windows.IInputElement, class System.Windows.Media.Animation.IAnimatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.UIElement" />
@@ -5428,7 +5428,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.UIElement.MouseEnter> is a  that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.UIElement.MouseEnter> is a [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.UIElement.MouseEnter> tracks when the mouse pointer enters the bounds of an element, this event more literally reports that the <xref:System.Windows.UIElement.IsMouseOver%2A> property value has changed from `false` to `true` on this element.  
   
@@ -5506,7 +5506,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.UIElement.MouseLeave> is a  that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.UIElement.MouseLeave> is a [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.UIElement.MouseLeave> tracks when the mouse leaves an element, this event more literally reports that the <xref:System.Windows.UIElement.IsMouseOver%2A> property value has changed from `true` to `false` on this element.  
   
@@ -5582,7 +5582,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -5670,7 +5670,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -5825,7 +5825,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -5906,7 +5906,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -10593,7 +10593,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -10672,7 +10672,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -10826,7 +10826,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -10905,7 +10905,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this  seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
+ Although this [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.UIElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=nameWithType> event, which is an attached event that is processed by each element along an event route.  
   
@@ -13102,7 +13102,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.UIElement.StylusEnter> is a  that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.UIElement.StylusEnter> is a [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.UIElement.StylusEnter> tracks when the stylus enters the bounds of an element, this event more literally reports that the <xref:System.Windows.UIElement.IsStylusOver%2A> property value has changed from `false` to `true` on this element.  
   
@@ -13332,7 +13332,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.UIElement.StylusLeave> is a  that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.UIElement.StylusLeave> is a [routed event](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.UIElement.StylusLeave> tracks when the stylus leaves the bounds of an element, this event more literally reports that the <xref:System.Windows.UIElement.IsStylusOver%2A> property value has changed from `true` to `false` on this element.  
   

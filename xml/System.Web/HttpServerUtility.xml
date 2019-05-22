@@ -1,4 +1,4 @@
-﻿<Type Name="HttpServerUtility" FullName="System.Web.HttpServerUtility">
+<Type Name="HttpServerUtility" FullName="System.Web.HttpServerUtility">
   <TypeSignature Language="C#" Value="public sealed class HttpServerUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpServerUtility extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpServerUtility" />
@@ -872,10 +872,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpServerUtility.ScriptTimeout%2A> property can be set in the Web.config file by setting the `executionTimeout` attribute of the  element. Setting the time-out programmatically with the <xref:System.Web.HttpServerUtility.ScriptTimeout%2A> property takes precedence over the Web.config setting.  
+ The <xref:System.Web.HttpServerUtility.ScriptTimeout%2A> property can be set in the Web.config file by setting the `executionTimeout` attribute of the [httpRuntime](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element. Setting the time-out programmatically with the <xref:System.Web.HttpServerUtility.ScriptTimeout%2A> property takes precedence over the Web.config setting.  
   
 > [!NOTE]
->  If you set the `debug` attribute of the  element to `true` in the Web.config file, the value of <xref:System.Web.HttpServerUtility.ScriptTimeout%2A> will be ignored.  
+>  If you set the `debug` attribute of the [httpRuntime](https://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369) element to `true` in the Web.config file, the value of <xref:System.Web.HttpServerUtility.ScriptTimeout%2A> will be ignored.  
   
    
   

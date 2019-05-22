@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyInfo" FullName="System.Reflection.PropertyInfo">
+<Type Name="PropertyInfo" FullName="System.Reflection.PropertyInfo">
   <TypeSignature Language="C#" Value="public abstract class PropertyInfo : System.Reflection.MemberInfo, System.Runtime.InteropServices._PropertyInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit PropertyInfo extends System.Reflection.MemberInfo implements class System.Runtime.InteropServices._PropertyInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PropertyInfo" />
@@ -1683,7 +1683,7 @@ Console.WriteLine("CurrCult: " +
 ## Remarks  
  To determine the type of a particular property, do the following:  
   
-1.  Get a <xref:System.Type> object that represents the type (the class or structure) that contains the property. If you are working with an object (an instance of a type), you can call its <xref:System.Object.GetType%2A> method. Otherwise, you can use the C#  operator or the Visual Basic  operator, as the example illustrates.  
+1.  Get a <xref:System.Type> object that represents the type (the class or structure) that contains the property. If you are working with an object (an instance of a type), you can call its <xref:System.Object.GetType%2A> method. Otherwise, you can use the C#  operator or the Visual Basic [GetType](~/docs/visual-basic/language-reference/operators/gettype-operator.md) operator, as the example illustrates.  
   
 2.  Get a <xref:System.Reflection.PropertyInfo> object that represents the property in which you're interested. You can do this by getting an array of all properties from the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method and then iterating the elements in the array, or you can retrieve the <xref:System.Reflection.PropertyInfo> object that represents the property directly by calling the <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> method and specifying the property name.  
   

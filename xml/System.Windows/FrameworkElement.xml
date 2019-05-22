@@ -1,4 +1,4 @@
-﻿<Type Name="FrameworkElement" FullName="System.Windows.FrameworkElement">
+<Type Name="FrameworkElement" FullName="System.Windows.FrameworkElement">
   <TypeSignature Language="C#" Value="public class FrameworkElement : System.Windows.UIElement, System.ComponentModel.ISupportInitialize, System.Windows.IFrameworkInputElement, System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi FrameworkElement extends System.Windows.UIElement implements class System.ComponentModel.ISupportInitialize, class System.Windows.IFrameworkInputElement, class System.Windows.IInputElement, class System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkElement" />
@@ -1563,7 +1563,7 @@
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using [TemplateBinding](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md) or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_FocusVisualStyle"></a>   
 ## Dependency Property Information  
@@ -4041,7 +4041,7 @@
   
  Note that this property returns only the resource dictionary declared directly within that element. This is different than the actual resource lookup process, where a child element can access any of the resources defined in each parent element, searching recursively upwards.  
   
- Resources can also be referenced by code from within the collection, but be aware that resources created in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] will definitely not be accessible until after <xref:System.Windows.FrameworkElement.Loaded> is raised by the element that declares the dictionary. In fact, resources are parsed asynchronously and not even the <xref:System.Windows.FrameworkElement.Loaded> event is an assurance that you can reference a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] defined resource. For this reason you should generally only access [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] defined resources as part of run-time code, or through other [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] techniques such as styles or resource extension references for attribute values. When you access resources through code, it is essentially equivalent to a  reference made from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+ Resources can also be referenced by code from within the collection, but be aware that resources created in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] will definitely not be accessible until after <xref:System.Windows.FrameworkElement.Loaded> is raised by the element that declares the dictionary. In fact, resources are parsed asynchronously and not even the <xref:System.Windows.FrameworkElement.Loaded> event is an assurance that you can reference a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] defined resource. For this reason you should generally only access [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] defined resources as part of run-time code, or through other [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] techniques such as styles or resource extension references for attribute values. When you access resources through code, it is essentially equivalent to a [DynamicResource](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) reference made from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
   
  The underlying <xref:System.Windows.ResourceDictionary> supports the methods required to add, remove or query resources from within the collection by using code. The <xref:System.Windows.FrameworkElement.Resources%2A> property is settable to support the scenario of completely replacing the resources collection of an element to be a new or different <xref:System.Windows.ResourceDictionary>.  
   
@@ -4496,7 +4496,7 @@
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended for most style scenarios. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended for most style scenarios. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using [TemplateBinding](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md) or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_Style"></a>   
 ## Dependency Property Information  

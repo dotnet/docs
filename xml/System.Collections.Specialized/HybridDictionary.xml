@@ -1,4 +1,4 @@
-﻿<Type Name="HybridDictionary" FullName="System.Collections.Specialized.HybridDictionary">
+<Type Name="HybridDictionary" FullName="System.Collections.Specialized.HybridDictionary">
   <TypeSignature Language="C#" Value="public class HybridDictionary : System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HybridDictionary extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.HybridDictionary" />
@@ -935,7 +935,7 @@
   
  A key cannot be `null`, but a value can. To distinguish between `null` that is returned because the specified key is not found and `null` that is returned because the value of the specified key is `null`, use the <xref:System.Collections.Specialized.HybridDictionary.Contains%2A> method to determine if the key exists in the list.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.HybridDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.HybridDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.HybridDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.HybridDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
   
  Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
   

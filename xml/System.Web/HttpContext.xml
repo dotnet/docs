@@ -1,4 +1,4 @@
-﻿<Type Name="HttpContext" FullName="System.Web.HttpContext">
+<Type Name="HttpContext" FullName="System.Web.HttpContext">
   <TypeSignature Language="C#" Value="public sealed class HttpContext : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpContext extends System.Object implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpContext" />
@@ -1004,7 +1004,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
+ The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the [httpHandlers](https://msdn.microsoft.com/library/24ca01f3-7141-4fdc-acac-71c0733cf6c2) element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](https://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
   
  The reference to the <xref:System.Web.HttpContext.Handler%2A> property will remain the same even after the current page has been changed by a server-side method, such as the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method.  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
+<Type Name="ClientScriptManager" FullName="System.Web.UI.ClientScriptManager">
   <TypeSignature Language="C#" Value="public sealed class ClientScriptManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientScriptManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ClientScriptManager" />
@@ -664,7 +664,7 @@
  [!code-csharp[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/cs/resource.cs#2)]
  [!code-vb[System.Web.UI.ClientScriptManager4#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ClientScriptManager4/vb/resource.vb#2)]  
   
- This example requires a JavaScript file named `Script_include.js`. The .js file is an embedded resource in the assembly that contains the `ClientScriptResourceLabel` object. If you are using Visual Studio, in the Properties window of the class library project, set **Build Action** to **Embedded Resource** when the script file is selected. If you are compiling the library at the command line, use the  switch to embed the resource.  
+ This example requires a JavaScript file named `Script_include.js`. The .js file is an embedded resource in the assembly that contains the `ClientScriptResourceLabel` object. If you are using Visual Studio, in the Properties window of the class library project, set **Build Action** to **Embedded Resource** when the script file is selected. If you are compiling the library at the command line, use the [/resource](~/docs/csharp/language-reference/compiler-options/resource-compiler-option.md) switch to embed the resource.  
   
 ```  
 function DoClick() {Form1.Message.value='Text from resource script.'}  

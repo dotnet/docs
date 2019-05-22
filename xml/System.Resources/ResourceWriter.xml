@@ -1,4 +1,4 @@
-﻿<Type Name="ResourceWriter" FullName="System.Resources.ResourceWriter">
+<Type Name="ResourceWriter" FullName="System.Resources.ResourceWriter">
   <TypeSignature Language="C#" Value="public sealed class ResourceWriter : System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceWriter extends System.Object implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceWriter" />
@@ -572,7 +572,7 @@
   
  `typeName` is a string that represents the data type of the resource. It can be any of the following values:  
   
--   The string representation of a `ResourceTypeCode` enumeration member that indicates the data type of the resource. `ResourceTypeCode` is a private enumeration that is used by  to indicate that a special binary format is used to store one of 19 common data types. These include the .NET Framework primitive data types (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.Single>, <xref:System.SByte>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>), as well as <xref:System.String>, <xref:System.DateTime>, and <xref:System.TimeSpan>. In addition, the `ResourceTypeCode` enumeration includes the values shown in the following table.  
+-   The string representation of a `ResourceTypeCode` enumeration member that indicates the data type of the resource. `ResourceTypeCode` is a private enumeration that is used by [Resgen.exe](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to indicate that a special binary format is used to store one of 19 common data types. These include the .NET Framework primitive data types (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.Single>, <xref:System.SByte>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>), as well as <xref:System.String>, <xref:System.DateTime>, and <xref:System.TimeSpan>. In addition, the `ResourceTypeCode` enumeration includes the values shown in the following table.  
   
     |`ResourceTypeCode` value|Description|  
     |------------------------------|-----------------|  

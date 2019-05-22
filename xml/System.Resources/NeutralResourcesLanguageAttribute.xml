@@ -1,4 +1,4 @@
-﻿<Type Name="NeutralResourcesLanguageAttribute" FullName="System.Resources.NeutralResourcesLanguageAttribute">
+<Type Name="NeutralResourcesLanguageAttribute" FullName="System.Resources.NeutralResourcesLanguageAttribute">
   <TypeSignature Language="C#" Value="public sealed class NeutralResourcesLanguageAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NeutralResourcesLanguageAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Resources.NeutralResourcesLanguageAttribute" />
@@ -83,7 +83,7 @@
 Greeting=Hello  
 ```  
   
- To use the resource file in an app, you must use the  to convert the file from its text (.txt) format to a binary (.resources) format as follows:  
+ To use the resource file in an app, you must use the [Resource File Generator (Resgen.exe)](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the file from its text (.txt) format to a binary (.resources) format as follows:  
   
 ```  
 resgen ExampleResources.txt  
@@ -98,13 +98,13 @@ resgen ExampleResources.txt
 Greeting=Hi  
 ```  
   
- The text file can be converted to a binary resources file by using the  at the command line as follows:  
+ The text file can be converted to a binary resources file by using the [Resource File Generator (ResGen.exe)](~/docs/framework/tools/resgen-exe-resource-file-generator.md) at the command line as follows:  
   
 ```  
 resgen ExampleResources.en-US.txt ExampleResources.en-US.resources  
 ```  
   
- The binary resource file should then be compiled into an assembly by using  and placed in the en-US subdirectory of the app directory by issuing the following command:  
+ The binary resource file should then be compiled into an assembly by using [Assembly Linker (Al.exe)](~/docs/framework/tools/al-exe-assembly-linker.md) and placed in the en-US subdirectory of the app directory by issuing the following command:  
   
 ```  
 al /t:lib /embed:ExampleResources.en-US.resources /culture:en-US /out:en-us\Example.resources.dll  

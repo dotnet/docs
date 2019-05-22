@@ -423,7 +423,7 @@ A character class defines a set of characters, any one of which can occur in an 
 <a name="SupportedNamedBlocks"></a>   
 ## Supported named blocks
 
-.NET provides the named blocks listed in the following table. The set of supported named blocks is based on Unicode 4.0 and Perl 5.6. For a regular expression that uses named blocks, see the [Unicode category or Unicode block: \\p]{}](#unicode-category-or-unicode-block-p) section.  
+.NET provides the named blocks listed in the following table. The set of supported named blocks is based on Unicode 4.0 and Perl 5.6. For a regular expression that uses named blocks, see the [Unicode category or Unicode block: \\p{}](#unicode-category-or-unicode-block-p) section.  
   
 |Code point range|Block name|  
 |----------------------|----------------|  

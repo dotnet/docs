@@ -6,7 +6,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Measuring Startup Improvement with .NET Native
-[!INCLUDE[net_native](../../../includes/net-native-md.md)] significantly improves the launch time of apps. This improvement is particularly noticeable on portable, low-powered devices and with complex apps. This topic helps you get started with the basic instrumentation needed to measure this startup improvement.  
+.NET Native significantly improves the launch time of apps. This improvement is particularly noticeable on portable, low-powered devices and with complex apps. This topic helps you get started with the basic instrumentation needed to measure this startup improvement.  
   
  To facilitate performance investigations, the .NET Framework and Windows use an event framework called Event Tracing for Windows (ETW) that allows your app to notify tooling when events happen. You can then use a tool called PerfView to easily view and analyze of ETW events. This topic explains how to:  
   
@@ -89,7 +89,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  Select all the events listed in the left pane (Ctrl-A) and choose the **Enter** key. Now, you should be able to see the timestamps from each event. These timestamps are relative to the start of the trace, so you have to subtract the time of each event from the start time of the process to identify the elapsed time since startup. If you use Ctrl+Click to select two timestamps, you'll see the difference between them displayed in the status bar at the bottom of the page. This makes it easy to see the elapsed time between any two events in the display (including process start). You can open the shortcut menu for the view and select from a number of useful options, like exporting to CSV files or opening Microsoft Excel to save or process the data.  
   
- By repeating the procedure for both your original app and the version you built by using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, you can compare the difference in performance.   [!INCLUDE[net_native](../../../includes/net-native-md.md)] apps generally start faster than non-[!INCLUDE[net_native](../../../includes/net-native-md.md)] apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx).  
+ By repeating the procedure for both your original app and the version you built by using the .NET Native tool chain, you can compare the difference in performance.   .NET Native apps generally start faster than non-.NET Native apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx).  
   
 ## See also
 

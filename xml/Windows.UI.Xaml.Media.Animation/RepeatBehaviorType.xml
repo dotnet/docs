@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the repeat mode that a <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> raw value represents. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> represents a case where the timeline should repeat for a fixed number of complete runs. </summary>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -62,7 +62,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> represents a case where the timeline should repeat for a time duration, which might result in an animation terminating part way through. </summary>
       </Docs>
     </Member>
     <Member MemberName="Forever">
@@ -83,7 +83,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> represents a case where the timeline should repeat indefinitely. </summary>
       </Docs>
     </Member>
   </Members>

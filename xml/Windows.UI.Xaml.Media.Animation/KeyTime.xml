@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies when a particular key frame should take place during an animation. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,9 +49,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> to compare with this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</param>
+        <summary>Indicates whether a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
+        <returns><see langword="true" /> if <paramref name="value" /> is a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> that represents the same length of time as this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +75,9 @@
         <Parameter Name="value" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />  to compare with this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</param>
+        <summary>Indicates whether a specified <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
+        <returns><see langword="true" /> if <paramref name="value" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,10 +102,10 @@
         <Parameter Name="keyTime2" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="keyTime1">To be added.</param>
-        <param name="keyTime2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyTime1">The first value to compare.</param>
+        <param name="keyTime2">The second value to compare.</param>
+        <summary>Indicates whether two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values are equal.</summary>
+        <returns><see langword="true" /> if the values of <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,10 +128,11 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeSpan">The value of the new <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</param>
+        <summary>Creates a new <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />, using the supplied <see cref="T:System.TimeSpan" />.</summary>
+        <returns>A new <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />, initialized to the value of <paramref name="timeSpan" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="timeSpan" /> is outside the allowed range.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -157,8 +158,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a hash code representing this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
+        <returns>A hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,10 +184,10 @@
         <Parameter Name="keyTime2" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="keyTime1">To be added.</param>
-        <param name="keyTime2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyTime1">The first value to compare.</param>
+        <param name="keyTime2">The second value to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values for equality.</summary>
+        <returns><see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +210,9 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="timeSpan">The <see cref="P:Windows.UI.Xaml.Media.Animation.KeyTime.TimeSpan" /> value to convert.</param>
+        <summary>Implicitly converts a <see cref="P:Windows.UI.Xaml.Media.Animation.KeyTime.TimeSpan" /> to a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
+        <returns>The created <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,10 +237,10 @@
         <Parameter Name="keyTime2" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
       </Parameters>
       <Docs>
-        <param name="keyTime1">To be added.</param>
-        <param name="keyTime2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyTime1">The first value to compare.</param>
+        <param name="keyTime2">The second value to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values for inequality.</summary>
+        <returns><see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are not equal; otherwise, false. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,8 +261,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the time when the key frame ends, expressed as a time relative to the beginning of the animation.</summary>
+        <value>The time when the key frame ends, expressed as a time relative to the beginning of the animation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,8 +289,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />. </summary>
+        <returns>A string representation of this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

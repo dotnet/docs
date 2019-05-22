@@ -24,7 +24,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a 4 × 4 matrix that is used for transformations in a three-dimensional (3-D) space.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,23 +60,23 @@
         <Parameter Name="m44" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="m11">To be added.</param>
-        <param name="m12">To be added.</param>
-        <param name="m13">To be added.</param>
-        <param name="m14">To be added.</param>
-        <param name="m21">To be added.</param>
-        <param name="m22">To be added.</param>
-        <param name="m23">To be added.</param>
-        <param name="m24">To be added.</param>
-        <param name="m31">To be added.</param>
-        <param name="m32">To be added.</param>
-        <param name="m33">To be added.</param>
-        <param name="m34">To be added.</param>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <param name="offsetZ">To be added.</param>
-        <param name="m44">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="m11">The value of the (1,1) field of the new matrix.</param>
+        <param name="m12">The value of the (1,2) field of the new matrix.</param>
+        <param name="m13">The value of the (1,3) field of the new matrix.</param>
+        <param name="m14">The value of the (1,4) field of the new matrix.</param>
+        <param name="m21">The value of the (2,1) field of the new matrix.</param>
+        <param name="m22">The value of the (2,2) field of the new matrix.</param>
+        <param name="m23">The value of the (2,3) field of the new matrix.</param>
+        <param name="m24">The value of the (2,4) field of the new matrix.</param>
+        <param name="m31">The value of the (3,1) field of the new matrix.</param>
+        <param name="m32">The value of the (3,2) field of the new matrix.</param>
+        <param name="m33">The value of the (3,3) field of the new matrix.</param>
+        <param name="m34">The value of the (3,4) field of the new matrix.</param>
+        <param name="offsetX">The value of the X offset field of the new matrix.</param>
+        <param name="offsetY">The value of the Y offset field of the new matrix.</param>
+        <param name="offsetZ">The value of the Z offset field of the new matrix.</param>
+        <param name="m44">The value of the (4,4) field of the new matrix.</param>
+        <summary>Initializes a new instance of the <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> class. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +105,9 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="o">The object to test for equality with the current instance.</param>
+        <summary>Tests for equality between two matrices.</summary>
+        <returns><see langword="true" /> if the matrices are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +131,9 @@
         <Parameter Name="value" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> to compare to.</param>
+        <summary>Tests for equality between two matrices.</summary>
+        <returns><see langword="true" /> if the matrices are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this matrix.</summary>
+        <returns>The hash code for this matrix.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,8 +182,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> is invertible.</summary>
+        <value><see langword="true" /> if the <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> has an inverse; otherwise, false. The default value is true.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,8 +204,8 @@
         <ReturnType>Windows.UI.Xaml.Media.Media3D.Matrix3D</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Changes a <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> struct into an identity <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The identity <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,8 +227,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inverts this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> struct.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The matrix is not invertible.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsIdentity">
@@ -248,8 +249,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Determines whether this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> struct is an identity <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value><see langword="true" /> if the <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> is an identity <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />; otherwise, false. The default value is true.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,8 +271,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the first row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the first row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> struct.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,8 +293,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the first row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the first row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,8 +315,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the first row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the first row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +337,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the first row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the first row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,8 +359,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the second row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the second row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,8 +381,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the second row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the second row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,8 +403,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the second row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the second row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,8 +425,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the second row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the second row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +447,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the third row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the third row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,8 +469,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the third row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the third row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,8 +491,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the third row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the third row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -512,8 +513,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the third row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the third row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -534,8 +535,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the fourth row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the fourth row and fourth column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,8 +557,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the fourth row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the fourth row and first column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,8 +579,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the fourth row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the fourth row and second column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,8 +601,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the fourth row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <value>The value of the fourth row and third column of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -626,10 +627,10 @@
         <Parameter Name="matrix2" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
       </Parameters>
       <Docs>
-        <param name="matrix1">To be added.</param>
-        <param name="matrix2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="matrix1">The first matrix to compare.</param>
+        <param name="matrix2">The second matrix to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> instances for equality.</summary>
+        <returns><see langword="true" /> if the matrices are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,10 +655,10 @@
         <Parameter Name="matrix2" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
       </Parameters>
       <Docs>
-        <param name="matrix1">To be added.</param>
-        <param name="matrix2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="matrix1">The first matrix to compare.</param>
+        <param name="matrix2">The second matrix to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> instances for inequality.</summary>
+        <returns><see langword="true" /> if the matrices are different; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -682,10 +683,10 @@
         <Parameter Name="matrix2" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
       </Parameters>
       <Docs>
-        <param name="matrix1">To be added.</param>
-        <param name="matrix2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="matrix1">The matrix to multiply.</param>
+        <param name="matrix2">The matrix by which the first matrix is multiplied.</param>
+        <summary>Multiplies the specified matrices.</summary>
+        <returns>The <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> that is the result of multiplication.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,10 +718,10 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">The format to use.</param>
+        <param name="provider">The provider to use.</param>
+        <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,8 +748,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a string representation of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <returns>A string representation of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,9 +773,9 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="provider">An object that provides culture-specified formatting information.</param>
+        <summary>Creates a string representation of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
+        <returns>The string representation of this <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

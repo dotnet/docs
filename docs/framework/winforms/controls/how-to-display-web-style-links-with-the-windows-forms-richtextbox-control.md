@@ -68,13 +68,13 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
        }  
     ```  
   
-     ([!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) You must initialize process `p`, which you can do by including the following statement in the constructor of your form:  
+     (Visual C++) You must initialize process `p`, which you can do by including the following statement in the constructor of your form:  
   
     ```cpp  
     p = gcnew System::Diagnostics::Process();  
     ```  
   
-     (Visual C#, [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#, Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.richTextBox1.LinkClicked += new   

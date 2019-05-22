@@ -46,7 +46,7 @@ Frequently, you will want to print graphics in your Windows-based application. T
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.PrintPage += new  

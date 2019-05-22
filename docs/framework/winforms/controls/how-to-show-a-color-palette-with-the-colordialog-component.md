@@ -59,7 +59,7 @@ The [ColorDialog](colordialog-component-windows-forms.md) component displays a p
        }  
     ```  
   
-     (Visual C#, [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C#, Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  

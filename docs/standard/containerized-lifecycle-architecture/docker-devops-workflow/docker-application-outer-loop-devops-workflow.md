@@ -148,7 +148,7 @@ Let's look first at the less-complex scenario: deploying to simple Docker hosts 
 
 **Figure 5-6**. Deploying application containers to simple Docker host environments registry
 
-Figure 5-7 highlights how you can connect your build CI to QA/test environments via Azure DevOps Services by clicking Docker Compose in the Add Task dialog box. However, when deploying to staging or production environments, you would usually use Release Management features handling multiple environments (like QA, staging, and production). If you're deploying to single Docker hosts, it is using the Azure DevOps Services "Docker Compose" task (which is invoking the `docker-compose up` command under the hood). If you're deploying to Azure Container Service, it uses the Docker Deployment task, as explained in the section that follows.
+Figure 5-7 highlights how you can connect your build CI to QA/test environments via Azure DevOps Services by clicking Docker Compose in the Add Task dialog box. However, when deploying to staging or production environments, you would usually use Release Management features handling multiple environments (like QA, staging, and production). If you're deploying to single Docker hosts, it is using the Azure DevOps Services "Docker Compose" task (which is invoking the `docker-compose up` command under the hood). If you're deploying to Azure Kubernetes Service (AKS), it uses the Docker Deployment task, as explained in the section that follows.
 
 ![Browser view of adding a Docker Compose task.](./media/image7.png)
 
@@ -182,15 +182,15 @@ From a CD point of view, and Azure DevOps Services specifically, you can run spe
 
 Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific deployment scripts and mechanisms per each orchestrator (that is, Kubernetes and Service Fabric have different deployment mechanisms) instead of the simpler and easy-to-use `docker-compose` tool based on the `docker-compose.yml` definition file. However, thanks to the Azure DevOps Services Docker Deploy task, shown in Figure 5-10, you now also can deploy to the supported orchestrators by just using your familiar `docker-compose.yml` file because the tool performs that “translation” for you (from your `docker-compose.yml` file to the format needed by the orchestrator).
 
-![Browser view of the task catalog in Azure DevOps, showing the Docker deploy task.](./media/image10.png)
+![Browser view of the task catalog in Azure DevOps, showing the deploy to Kubernetes task.](./media/add-deploy-to-kubernetes-task.png)
 
-**Figure 5-10**. Adding the Docker Deploy task to your Environment RM
+**Figure 5-10**. Adding the Deploy to Kubernetes task to your Environment
 
-Figure 5-11 demonstrates how you can edit the Docker Deploy task and specify the Target Type (Azure Container Service DC/OS, in this case), your Docker Compose File, and the Docker Registry connection (like Azure Container Registry or Docker Hub). This is the task that will retrieve your ready-to-use custom Docker images to be deployed as containers in the cluster.
+Figure 5-11 demonstrates how you can edit the Deploy to Kubernetes task with the sections available for configuration. This is the task that will retrieve your ready-to-use custom Docker images to be deployed as containers in the cluster.
 
-![Browser view of Azure DevOps, deploy to orchestrator task definition.](./media/image11.png)
+![Browser view of Azure DevOps, deploy to Kubernetes task definition.](./media/edit-deploy-to-kubernetes-task.png)
 
-**Figure 5-11**. Docker Deploy task definition deploying to Azure Container Service DC/OS
+**Figure 5-11**. Docker Deploy task definition deploying to ACS DC/OS
 
 > [!INFORMATION]
 > To read more about the CD pipeline with Azure DevOps Services and Docker, visit <https://azure.microsoft.com/services/devops/pipelines>

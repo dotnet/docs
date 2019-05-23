@@ -406,6 +406,6 @@ Use the `docker images` command to see a list of images installed.
 ## Next steps
 
 * [Try the ASP.NET Core Microservice Tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
-* [Review the Azure services that support containers.](https://azure.microsoft.com/en-us/overview/containers/)
+* [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
 * [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)
 * [Explore the Container Tools for Visual Studio](/visualstudio/containers/overview)

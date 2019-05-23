@@ -86,7 +86,7 @@ using (Package wdPackage = Package.Open("SampleDoc.docx", FileMode.Open, FileAcc
  [Overview of WordprocessingML](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812%28v=office.11%29)  
  [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)  
  [Introduction to WordprocessingML](https://ericwhite.com/blog/introduction-to-wordprocessingml-series/)  
- [Office 2003: XML Reference Schemas Download page](https://www.microsoft.com/en-us/download/details.aspx?id=101)  
+ [Office 2003: XML Reference Schemas Download page](https://www.microsoft.com/download/details.aspx?id=101)  
   
 ## See also
 

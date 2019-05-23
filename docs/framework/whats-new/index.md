@@ -1855,7 +1855,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
      For more information about these changes, see [Portable Class Library](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
 
-- The .NET Framework content set now includes documentation for [!INCLUDE[net_native](../../../includes/net-native-md.md)], which is a precompilation technology for building and deploying Windows apps. [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiles your apps directly to native code, rather than to intermediate language (IL), for better performance. For details, see [Compiling Apps with .NET Native](../net-native/index.md).
+- The .NET Framework content set now includes documentation for .NET Native, which is a precompilation technology for building and deploying Windows apps. .NET Native compiles your apps directly to native code, rather than to intermediate language (IL), for better performance. For details, see [Compiling Apps with .NET Native](../net-native/index.md).
 
 - The [.NET Framework Reference Source](https://referencesource.microsoft.com/) provides a new browsing experience and enhanced functionality. You can now browse through the .NET Framework source code online, [download the reference](https://referencesource.microsoft.com/download.html) for offline viewing, and step through the sources (including patches and updates) during debugging. For more information, see the blog entry [A new look for .NET Reference Source](https://devblogs.microsoft.com/dotnet/a-new-look-for-net-reference-source/).
 

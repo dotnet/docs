@@ -9,14 +9,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # MissingInteropDataException Class (.NET Native)
-**.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**  
+**.NET for Windows apps for Windows 10, .NET Native only**  
   
  The exception that is thrown when a manual marshaling method is called, but metadata for a type isn't found by static analysis or in a runtime directives file.  
   
  **Namespace:** System.Runtime.CompilerServices  
   
 > [!IMPORTANT]
->  The `MissingInteropDataException` class is intended solely for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
+>  The `MissingInteropDataException` class is intended solely for internal use by the .NET Native tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
   
 ## Syntax  
  [!code-csharp[ProjectN#21](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missinginteropdataexception_syntax1.cs#21)]
@@ -28,7 +28,7 @@ ms.author: "ronpet"
   
 |Constructor|Description|  
 |-----------------|-----------------|  
-|`public MissingInteropDataException(String resourceId, Type pertinentType)`|Initializes a new instance of the `MissingInteropDataException` class by using the ID of a system-supplied message that describes the error and the type whose data is missing. This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|  
+|`public MissingInteropDataException(String resourceId, Type pertinentType)`|Initializes a new instance of the `MissingInteropDataException` class by using the ID of a system-supplied message that describes the error and the type whose data is missing. This constructor is for internal use by the .NET Native tool chain only.|  
   
 ## Properties  
   

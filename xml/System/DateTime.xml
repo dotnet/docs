@@ -7411,7 +7411,7 @@ The value of the current <xref:System.DateTime> object is formatted using the pa
   
  The base OLE Automation Date is midnight, 30 December 1899. The minimum OLE Automation date is midnight, 1 January 0100. The maximum OLE Automation Date is the same as <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, the last moment of 31 December 9999.  
   
- The <xref:System.DateTime.ToOADate%2A> method throws an <xref:System.OverflowException> if the current instance represents a date that is later than <xref:System.DateTime.MinValue> and earlier than midnight on January1, 0100. However, if the value of the current instance is <xref:System.DateTime.MinValue>, the method returns 0.  
+ The <xref:System.DateTime.ToOADate%2A> method throws an <xref:System.OverflowException> if the current instance represents a date that is later than <xref:System.DateTime.MaxValue> and earlier than midnight on January1, 0100. However, if the value of the current instance is <xref:System.DateTime.MinValue>, the method returns 0.  
   
  For more information about OLE Automation, see the [MSDN Library](https://go.microsoft.com/fwlink/?linkid=37118).  
   

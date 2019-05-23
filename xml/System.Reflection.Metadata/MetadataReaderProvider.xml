@@ -154,8 +154,7 @@ Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata
             
 If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> after construction.
 
-            ]]>
-          </format>
+            ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="stream" /> doesn't support read and seek operations.</exception>
@@ -263,8 +262,7 @@ Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata
             
 If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> after construction.
 
-            ]]>
-          </format>
+            ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="stream" /> doesn't support read and seek operations.</exception>

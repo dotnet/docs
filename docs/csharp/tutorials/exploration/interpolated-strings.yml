@@ -41,32 +41,19 @@ items:
   content: |
     In the previous step, you used string interpolation to insert one string inside of another. The result of an interpolated expression can be of any data type, though. Let's include values of various data types in an interpolated string.
 
-    In the following example, we first define a [class](../../programming-guide/classes-and-structs/classes.md) data type `Vegetable` that has a `Name` [property](../../properties.md) and a `ToString` [method](../../methods.md), which [overrides](../../language-reference/keywords/override.md) the behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The [`public` access modifier](../../language-reference/keywords/public.md) makes that method available to any client code to get the string representation of a `Vegetable` instance. In the example the `Vegetable.ToString` method returns the value of the `Name` property that is initialized at the `Vegetable` [constructor](../../programming-guide/classes-and-structs/constructors.md): `Vegetable(string name) => Name = name;`. Then we create an instance of the `Vegetable` class named `item` by using the [`new` keyword](../../language-reference/keywords/new-operator.md) and providing a name for the constructor `Vegetable`. Finally, we include that instance into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../../programming-guide/enumeration-types.md) value. Run the following code in the interactive window:
+    In the following example, we first define a [tuple](../../tuples.md) that has `Name`, `Price`, and `perPackage` members. Run the following code in the interactive window:
 
     ```csharp
-    public class Vegetable
-    {
-       public Vegetable(string name) => Name = name;
-
-       public string Name { get; }
-
-       public override string ToString() => Name;
-    }
-
-    public enum Unit { item, kilogram, gram, dozen };
-
-    var item = new Vegetable("eggplant");
+    var item = (Name: "eggplant", Price: 1.99m, perPackage: 3);
     var date = DateTime.Now;
-    var price = 1.99m;
-    var unit = Unit.item;
-    Console.WriteLine($"On {date}, the price of {item} was {price} per {unit}.");
+    Console.WriteLine($"On {date}, the price of {item.Name} was {item.Price} per {item.perPackage} items.");
     ```
 
-    Note that the interpolated expression `item` in the interpolated string resolves to the text "eggplant" in the result string. That's because, when the type of the expression result is not a string, the result is resolved to a string in the following way:
+    Note that the interpolated expression `item.Price` in the interpolated string resolves to the text "1.99" in the result string. That's because, when the type of the expression result is not a string, the result is resolved to a string in the following way:
 
     - If the interpolated expression evaluates to `null`, an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>) is used.
 
-    - If the interpolated expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called. You can test this by updating the implementation of the `Vegetable.ToString` method. You might not even need to implement the `ToString` method since every type has some implementation of this method. To test this, comment out the definition of the `Vegetable.ToString` method in the example (to do that, put a comment symbol, `//`, in front of it). In the output, the string "eggplant" is replaced by the fully qualified type name (the namespace defined by the C# REPL along with the type name), which is the default behavior of the <xref:System.Object.ToString?displayProperty=nameWithType> method. The default behavior of the `ToString` method for an enumeration value is to return the string representation of the value.
+    - If the interpolated expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called. 
 
     In the output from this example, the date is too precise (the price of eggplant doesn't change every second), and the price value doesn't indicate a unit of currency. In the next step, you'll learn how to fix those issues by controlling the format of string representations of the expression results.
 
@@ -79,7 +66,7 @@ items:
     In the previous step, two poorly formatted strings were inserted into the result string. One was a date and time value for which only the date was appropriate. The second was a price that didn't indicate its unit of currency. Both issues are easy to address. String interpolation lets you specify *format strings* that control the formatting of particular types. Modify the call to `Console.WriteLine` from the previous example to include the format strings for the date and price expressions as shown in the following line:
 
     ```csharp
-    Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
+    Console.WriteLine($"On {date:d}, the price of {item.Name} was {item.Price} per {item.perPackage} items");
     ```
 
     You specify a format string by following the interpolated expression with a colon (":") and the format string. "d" is a [standard date and time format string](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier) that represents the short date format. "C2" is a [standard numeric format string](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier) that represents a number as a currency value with two digits after the decimal point.

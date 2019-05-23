@@ -31,8 +31,10 @@
 `Utf8JsonWriter` writes the text sequentially with no caching and by default adheres to the [JSON RFC](https://tools.ietf.org/html/rfc8259), with the exception of writing comments.
 
 A method that attempts to write invalid JSON when validation is enabled throws a <xref:System.InvalidOperationException> with a context-specific error message.
+
 Since this type is a ref struct, it does not directly support async. However, it does provide support for reentrancy to write partial data and to continue writing in chunks.
-To be able to format the output with indentation and white space OR to skip validation, create an instance of <xref:System.Text.Json.JsonWriterState> and pass that in to the writer.
+
+To be able to format the output with indentation and white space OR to skip validation, create an instance of <xref:System.Text.Json.JsonWriterOptions> and pass it in to the writer.
 
  ]]></format>
     </remarks>

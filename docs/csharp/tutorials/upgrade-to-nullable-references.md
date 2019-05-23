@@ -45,6 +45,8 @@ A good next step is to turn on the nullable annotation context and see how many 
 ```xml
 <Nullable>enable</Nullable>
 ```
+> [!NOTE]
+> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
 Do a test build, and notice the warning list. In this small application, the compiler generates five warnings, so it's likely you'd leave the nullable annotation context enabled and start fixing warnings for the entire project.
 

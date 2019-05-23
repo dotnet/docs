@@ -37,7 +37,7 @@ Create a new console application either in Visual Studio or from the command lin
 <Nullable>enable</Nullable>
 ```
 
-> [!NOTE]
+> [!IMPORTANT]
 > The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
 > [!NOTE]

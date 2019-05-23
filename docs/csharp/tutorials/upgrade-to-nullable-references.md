@@ -43,7 +43,7 @@ Upgrading the language version selects C# 8.0, but does not enable the nullable 
 A good next step is to turn on the nullable annotation context and see how many warnings are generated. Add the following element to both csproj files in the solution, directly under the `LangVersion` element:
 
 ```xml
-<NullableContextOptions>enable</NullableContextOptions>
+<Nullable>enable</Nullable>
 ```
 
 Do a test build, and notice the warning list. In this small application, the compiler generates five warnings, so it's likely you'd leave the nullable annotation context enabled and start fixing warnings for the entire project.
@@ -52,7 +52,7 @@ That strategy works only for smaller projects. For any larger projects, the numb
 
 ## Warnings help discover original design intent
 
-There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `NullableContextOptions` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
+There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `Nullable` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
 
 ```csharp
 #nullable enable

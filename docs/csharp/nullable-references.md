@@ -65,6 +65,9 @@ The nullable annotation context and nullable warning context can be set for a pr
 - `safeonlywarnings`: The nullable annotation context is **disabled**. The nullable warning context is **safeonly**.
   - Variables of a reference type are oblivious. All safety nullability warnings are enabled.
 
+> [!IMPORTANT]
+> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
+
 You can also use directives to set these same contexts anywhere in your project:
 
 - `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enabled**.

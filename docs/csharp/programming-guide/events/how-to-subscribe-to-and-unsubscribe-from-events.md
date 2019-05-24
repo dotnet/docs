@@ -99,4 +99,4 @@ You subscribe to an event that is published by another class when you want to wr
 - [event](../../../csharp/language-reference/keywords/event.md)
 - [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
 - [-= Operator (C# Reference)](../../language-reference/operators/subtraction-assignment-operator.md)
-- [+= Operator](../../../csharp/language-reference/operators/addition-assignment-operator.md)
+- [+ and += operators](../../language-reference/operators/addition-operator.md)

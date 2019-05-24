@@ -27,7 +27,7 @@ ms.author: "ronpet"
 |`${` *name* `}`|Includes the last substring matched by the named group that is designated by `(?<`*name*`> )` in the replacement string. For more information, see [Substituting a Named Group](#Named).|  
 |`$$`|Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#DollarSign).|  
 |`$&`|Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#EntireMatch).|  
-|`$` `|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
+|`$``|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
 |`$'`|Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#AfterMatch).|  
 |`$+`|Includes the last group captured in the replacement string. For more information, see [Substituting the Last Captured Group](#LastGroup).|  
 |`$_`|Includes the entire input string in the replacement string. For more information, see [Substituting the Entire Input String](#EntireString).|  

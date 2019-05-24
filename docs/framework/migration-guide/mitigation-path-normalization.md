@@ -6,7 +6,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Mitigation: Path Normalization
-Starting with apps the target  the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], path normalization in the .NET Framework has changed.  
+Starting with apps the target  the .NET Framework 4.6.2, path normalization in the .NET Framework has changed.  
   
 ## What is path normalization?  
  Normalizing a path involves modifying the string that identifies a path or file so that it conforms to a valid path on the target operating system. Normalization typically involves:  
@@ -20,7 +20,7 @@ Starting with apps the target  the [!INCLUDE[net_v462](../../../includes/net-v46
 - Trimming specified characters.  
   
 ## The changes  
- Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], path normalization has changed in the following ways:  
+ Starting with apps that target the .NET Framework 4.6.2, path normalization has changed in the following ways:  
   
 - The runtime defers to the operating system's [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) function to normalize paths.  
   
@@ -33,12 +33,12 @@ Starting with apps the target  the [!INCLUDE[net_v462](../../../includes/net-v46
 - The use of device syntax to access alternate data streams is supported.  
   
 ## Impact  
- For apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later, these changes are on  by default. They should improve performance while allowing methods to access previously inaccessible paths.  
+ For apps that target the .NET Framework 4.6.2 or later, these changes are on  by default. They should improve performance while allowing methods to access previously inaccessible paths.  
   
- Apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier versions but are running under the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later are unaffected by this change.  
+ Apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier versions but are running under the .NET Framework 4.6.2 or later are unaffected by this change.  
   
 ## Mitigation  
- Apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later can opt out of this change and use legacy normalization by adding the following to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file:  
+ Apps that target the .NET Framework 4.6.2 or later can opt out of this change and use legacy normalization by adding the following to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file:  
   
 ```xml  
 <runtime>  
@@ -46,7 +46,7 @@ Starting with apps the target  the [!INCLUDE[net_v462](../../../includes/net-v46
 </runtime>  
 ```  
   
- Apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] or earlier but are running on the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later can enable the changes to path normalization by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application .configuration file:  
+ Apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] or earlier but are running on the .NET Framework 4.6.2 or later can enable the changes to path normalization by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application .configuration file:  
   
 ```xml  
 <runtime>  

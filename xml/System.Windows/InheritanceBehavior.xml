@@ -14,15 +14,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the current mode of lookup for both property value inheritance, a resource lookup, and a RelativeSource FindAncestor lookup.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode.FindAncestor?displayProperty=nameWithType> value.  
-  
- ]]></format>
-    </remarks>
+    <summary>Indicates the current mode of lookup for property value inheritance, resource lookup, and RelativeSource FindAncestor lookup. A RelativeSource FindAncestor lookup occurs when a binding uses a <see cref="T:System.Windows.Data.RelativeSource" /> that has its <see cref="P:System.Windows.Data.RelativeSource.Mode" /> property set to the <see cref="F:System.Windows.Data.RelativeSourceMode.FindAncestor" /> value.</summary>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -43,15 +35,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will query the current element and continue walking up the element tree to the page root.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will query through the current element and further.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup will query the current element and continue walking up the element tree to the page root. A resource lookup will query through the current element and further.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipAllNext">
@@ -72,15 +56,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will query the current element but not any further.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will query the current element but not any further.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup or resource lookup will query the current element but not any further. A resource lookup will query the current element but not any further. </summary>
       </Docs>
     </Member>
     <Member MemberName="SkipAllNow">
@@ -101,15 +77,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will not query the current element or any further.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will not query the current element or any further. A RelativeSource FindAncestor lookup will not query the current element or any further.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup, resource lookup, or RelativeSource FindAncestor lookup will not query the current element or any further.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipToAppNext">
@@ -130,15 +98,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will query the current element but not any further.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will query the current element and will then skip over to the application and theme dictionaries, rather than walking up the element tree toward the page root.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup will query the current element but not any further. A resource lookup will query the current element and will then skip over to the application and theme dictionaries, rather than walking up the element tree toward the page root.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipToAppNow">
@@ -159,15 +119,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will not query the current element or any further.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will not query the current element but will skip over to the application and then the theme dictionaries, rather than walking up the element tree toward the page root. A RelativeSource FindAncestor lookup will not query the current element or any further.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup will not query the current element or any further. A resource lookup will not query the current element but will skip over to the application and then the theme dictionaries, rather than walking up the element tree toward the page root. A RelativeSource FindAncestor lookup will not query the current element or any further.</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipToThemeNext">
@@ -188,15 +140,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will query the current element but not any further.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will query the current element and will then skip over to the theme dictionaries, rather than walking up the element tree toward the page root, or checking application dictionaries.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup will query the current element but not any further. A resource lookup will query the current element and will then skip over to the theme dictionaries, rather than walking up the element tree toward the page root, or checking application dictionaries</summary>
       </Docs>
     </Member>
     <Member MemberName="SkipToThemeNow">
@@ -217,15 +161,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Property value inheritance lookup will not query the current element or any further.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A resource lookup will not query the current element but will skip over to the theme dictionaries, rather than walking up the element tree toward the page root, or checking application dictionaries. A RelativeSource FindAncestor lookup will not query the current element or any further.  
-  
- ]]></format>
-        </remarks>
+        <summary>Property value inheritance lookup will not query the current element or any further. A resource lookup will not query the current element but will skip over to the theme dictionaries, rather than walking up the element tree toward the page root, or checking application dictionaries. A RelativeSource FindAncestor lookup will not query the current element or any further.</summary>
       </Docs>
     </Member>
   </Members>

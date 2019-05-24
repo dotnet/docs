@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A control must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: On, Off and if supported, Indeterminate.  
+ A control must cycle through its <xref:System.Windows.Automation.Provider.IToggleProvider.ToggleState?displayProperty=nameWithType> in this order: On, Off, and, if supported, Indeterminate.  
   
  ]]></format>
     </remarks>
@@ -51,17 +51,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The UI Automation element is in an indeterminate state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Indeterminate property can be used to indicate whether the user has acted on a control. For example, a check box can appear checked and dimmed, indicating an indeterminate state.  
-  
- Creating an indeterminate state is different from disabling the control. Consequently, a check box in the indeterminate state can still receive the focus. When the user clicks an indeterminate control the <xref:System.Windows.Automation.ToggleState.Indeterminate> cycles to its next value.  
-  
- ]]></format>
-        </remarks>
+        <summary>The UI Automation element is in an indeterminate state. <csee langword="Indeterminate" /> can be used to indicate whether the user has acted on a control. For example, a check box can appear checked and dimmed, indicating an indeterminate state. Creating an indeterminate state is different from disabling the control. Consequently, a check box in the indeterminate state can still receive the focus. When the user clicks an indeterminate control, the <see cref="P:System.Windows.Automation.Provider.IToggleProvider.ToggleState" /> cycles to its next value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Off">
@@ -82,7 +72,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The UI Automation element is not selected, checked, marked or otherwise activated.</summary>
+        <summary>The UI Automation element is not selected, checked, marked, or otherwise activated.</summary>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -103,7 +93,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The UI Automation element is selected, checked, marked or otherwise activated.</summary>
+        <summary>The UI Automation element is selected, checked, marked, or otherwise activated.</summary>
       </Docs>
     </Member>
   </Members>

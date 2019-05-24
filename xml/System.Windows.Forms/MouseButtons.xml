@@ -156,15 +156,7 @@
       </ReturnValue>
       <MemberValue>8388608</MemberValue>
       <Docs>
-        <summary>The first XButton was pressed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- With Windows 2000, Microsoft is introducing support for the Microsoft IntelliMouse Explorer, which is a mouse with five buttons. The two new mouse buttons (XBUTTON1 and XBUTTON2) provide backward/forward navigation.  
-  
- ]]></format>
-        </remarks>
+        <summary>The first XButton (XBUTTON1) on Microsoft IntelliMouse Explorer was pressed.</summary>
       </Docs>
     </Member>
     <Member MemberName="XButton2">
@@ -186,15 +178,7 @@
       </ReturnValue>
       <MemberValue>16777216</MemberValue>
       <Docs>
-        <summary>The second XButton was pressed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- With Windows 2000, Microsoft is introducing support for the Microsoft IntelliMouse Explorer, which is a mouse with five buttons. The two new mouse buttons (XBUTTON1 and XBUTTON2) provide backward/forward navigation.  
-  
- ]]></format>
-        </remarks>
+        <summary>The second XButton (XBUTTON2) on Microsoft IntelliMouse Explorer was pressed.</summary>
       </Docs>
     </Member>
   </Members>

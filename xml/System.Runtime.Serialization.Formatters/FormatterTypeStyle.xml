@@ -35,7 +35,15 @@
   </Attributes>
   <Docs>
     <summary>Indicates the format in which type descriptions are laid out in the serialized stream.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The `XsdString` and `TypesWhenNeeded` settings are meant for high performance serialization between services built on the same version of a particular.NET implementation. These two values do not support [VTS (Version Tolerant Serialization)](~/docs/standard/serialization/version-tolerant-serialization.md) because they intentionally omit type information that VTS uses to skip or add optional fields and properties. You should not use the `XsdString` or `TypesWhenNeeded` type formats when serializing and deserializing types on a computer running a different version of the .NET implementation than the computer on which the type was serialized. Serializing and deserializing on computers running different versions of a .NET implementation causes the formatter to skip serialization of type information, thus making it impossible for the deserializer to skip optional fields if they are not present in certain types that may exist in the other version of the .NET implementation. If you must use `XsdString` or `TypesWhenNeeded` in such a scenario, you must provide custom serialization for types that have changed from one version to the other.  
+  
+       ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="TypesAlways">
@@ -135,14 +143,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that strings can be given in the XSD format rather than SOAP. No string IDs are transmitted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `XsdString` and `TypesWhenNeeded` settings are meant for high performance serialization between services built on the same version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. These two values do not support VTS (Version Tolerant Serialization) because they intentionally omit type information that VTS uses to skip or add optional fields and properties. You should not use the `XsdString` or `TypesWhenNeeded` type formats when serializing and deserializing types on a computer running a different version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] than the computer on which the type was serialized. Serializing and deserializing on computers running different versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] causes the formatter to skip serialization of type information, thus making it impossible for the deserializer to skip optional fields if they are not present in certain types that may exist in the other version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. If you must use `XsdString` or `TypesWhenNeeded` in such a scenario, you must provide custom serialization for types that have changed from one version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to the other.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

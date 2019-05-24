@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Using Strings in .NET"
 description: Learn how to use strings effectively in .NET applications.
-ms.date: "09/13/2018"
+ms.date: "05/01/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -63,7 +63,7 @@ ms.custom: seodec18
   
 - Use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.CompareTo%2A?displayProperty=nameWithType> methods to sort strings, not to check for equality.  
   
-- Use culture-sensitive formatting to display non-string data, such as numbers and dates, in a user interface. Use formatting with the invariant culture to persist non-string data in string form.  
+- Use culture-sensitive formatting to display non-string data, such as numbers and dates, in a user interface. Use formatting with the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) to persist non-string data in string form.  
   
  Avoid the following practices when you use strings:  
   
@@ -121,7 +121,7 @@ ms.custom: seodec18
 > [!NOTE]
 > You can download the [Sorting Weight Tables](https://www.microsoft.com/download/details.aspx?id=10921), a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, and the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt), the latest version of the sort weight table for Linux and macOS. The specific version of the sort weight table on Linux and macOS depends on the version of the [International Components for Unicode](http://site.icu-project.org/) libraries installed on the system. For information on ICU versions and the Unicode versions that they implement, see [Downloading ICU](http://site.icu-project.org/download).
 
- However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.  
+ However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings. In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) (a locale-agnostic culture based on the English language) may produce different results.  
 
 In addition, string comparisons using different versions of .NET or using .NET on different operating systems or operating system versions may return different results. For more information, see [Strings and the Unicode Standard](xref:System.String#Unicode). 
 
@@ -342,10 +342,36 @@ In addition, string comparisons using different versions of .NET or using .NET o
  [Back to top](#top)  
   
 <a name="Formatted"></a>   
-## Displaying and Persisting Formatted Data  
- When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the <xref:System.String.Format%2A?displayProperty=nameWithType> method and the `ToString` methods of the numeric types and the date and time types use the current thread culture for formatting operations. To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a `provider` parameter, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property.  
-  
- You can persist non-string data either as binary data or as formatted data. If you choose to save it as formatted data, you should call a formatting method overload that includes a `provider` parameter and pass it the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture provides a consistent format for formatted data that is independent of culture and machine. In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:  
+## Displaying and Persisting Formatted Data
+
+When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the following all use the current thread culture in formatting operations:
+
+- Interpolated strings supported by the [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) compilers.
+
+- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
+
+- The <xref:System.String.Format%2A?displayProperty=nameWithType> method.
+
+- The `ToString` methods of the numeric types and the date and time types.
+
+To explicitly specify that a string should be formatted by using the conventions of a designated culture or the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture), you can do the following:
+
+- When using the <xref:System.String.Format%2A?displayProperty=nameWithType> and `ToString` methods, call an overload that has a `provider` parameter, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, a <xref:System.Globalization.CultureInfo> instance that represents the desired culture, or the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType> property.  
+
+- For string concatenation, do not allow the compiler to perform any implicit conversions. Instead, perform an explicit conversion by calling a `ToString` overload that has a `provider` parameter. For example, the compiler implicitly uses the current culture when converting a <xref:System.Double> value to a string in the following C# code:
+
+  [!code-csharp[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#1)]
+
+  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following C# code does:
+
+  [!code-csharp[Explicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#2)]
+
+- For string interpolation, rather than assigning an interpolated string to a <xref:System.String> instance, assign it to a <xref:System.FormattableString>. You can then call its <xref:System.FormattableString.ToString?displayProperty=nameWithType> method produce a result string that reflects the conventions of the current culture, or you can call the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to produce a result string that reflects the conventions of a specified culture. You can also pass the formattable string to the static <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> method to produce a result string that reflects the conventions of the invariant culture. The following example illustrates this approach. (The output from the example reflects a current culture of en-US.)
+
+  [!code-csharp[String interpolation](~/samples/snippets/standard/base-types/string-practices/cs/formattable.cs)]
+  [!code-vb[String interpolation](~/samples/snippets/standard/base-types/string-practices/vb/formattable.vb)]
+
+You can persist non-string data either as binary data or as formatted data. If you choose to save it as formatted data, you should call a formatting method overload that includes a `provider` parameter and pass it the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The invariant culture provides a consistent format for formatted data that is independent of culture and machine. In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:  
   
 - The data is likely to be unusable if it is retrieved on a system that has a different culture, or if the user of the current system changes the current culture and tries to retrieve the data.  
   
@@ -360,7 +386,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
   
  However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property with <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> in the calls to <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> and <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>,   the persisted date and time data is successfully restored, as the following output shows.  
   
-```  
+```console  
 06.05.1758 21:26  
 05.05.1818 07:19  
 22.04.1870 23:54  

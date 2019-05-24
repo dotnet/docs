@@ -64,7 +64,7 @@ In the development environment that [Docker announced in July 2018](https://blog
 
 ## Get started with Azure Kubernetes Service (AKS)
 
-To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying an Azure Container Service cluster, see [Deploy an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
+To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster to Azure, see [Deploy an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
 
 There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You're charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself.
 

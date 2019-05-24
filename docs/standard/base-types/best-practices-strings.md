@@ -348,7 +348,7 @@ When you display non-string data such as numbers and dates and times to users, f
 
 - Interpolated strings supported by the [C#](../../csharp/language-reference/tokens/interpolated.md) and [Visual Basic](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) compilers.
 
-- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
+- String concatenation operations that use the [C#](../../csharp/language-reference/operators/addition-operator.md#string-concatenation) or [Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md ) concatenation operators or that call the <xref:System.String.Concat%2A?displayProperty=nameWithType> method directly.
 
 - The <xref:System.String.Format%2A?displayProperty=nameWithType> method.
 
@@ -362,7 +362,7 @@ To explicitly specify that a string should be formatted by using the conventions
 
   [!code-csharp[Implicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#1)]
 
-  Instead, you an explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following C# code does:
+  Instead, you can explicitly specify the culture whose formatting conventions are used in the conversion by calling the <xref:System.Double.ToString(System.IFormatProvider)?displayProperty=nameWithType> method, as the following C# code does:
 
   [!code-csharp[Explicit String Conversion](~/samples/snippets/standard/base-types/string-practices/cs/tostring.cs#2)]
 

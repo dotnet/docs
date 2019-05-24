@@ -167,7 +167,7 @@ if (null != principal)
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-<xref:P:System.Security.Claims.Claim.Subject> will be set to `null`.
+<xref:System.Security.Claims.Claim.Subject> is set to `null`.
 
           ]]></format>
         </remarks>
@@ -249,7 +249,7 @@ if (null != principal)
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-<xref:P:System.Security.Claims.Claim.Subject> will be set to `subject`.
+<xref:System.Security.Claims.Claim.Subject> is set to `subject`.
 
           ]]></format>
         </remarks>

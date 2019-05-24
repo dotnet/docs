@@ -859,7 +859,12 @@ if (null != principal)
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-Each <xref:T:System.Security.Claims.ClaimsIdentity> is called. <see also cref="M:System.Security.Claims.ClaimsIdentity.FindFirst(System.String)" />.
+## Remarks
+
+Each <xref:T:System.Security.Claims.ClaimsIdentity> is called. 
+
+## See also
+<xref:System.Security.Claims.ClaimsIdentity.FindFirst(System.String)?displayProperty=nameWithType>
 
           ]]></format>
         </remarks>
@@ -905,7 +910,13 @@ Each <xref:T:System.Security.Claims.ClaimsIdentity> is called. <see also cref="M
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-Each <xref:T:System.Security.Claims.ClaimsIdentity> is called. <see also cref="M:System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})" />.
+## Remarks
+
+Each <xref:System.Security.Claims.ClaimsIdentity> is called.
+
+ ## See also
+ 
+  <xref:System.Security.Claims.ClaimsIdentity.FindFirst(System.Predicate{System.Security.Claims.Claim})?displayProperty=nameWithType>.
 
           ]]></format>
         </remarks>
@@ -1007,7 +1018,13 @@ Each <xref:T:System.Security.Claims.ClaimsIdentity> is called. <see also cref="M
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-Each <xref:T:System.Security.Claims.ClaimsIdentity> is called. <see also cref="M:System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)" />.
+## Remarks
+
+Each <xref:System.Security.Claims.ClaimsIdentity> is called. 
+
+## See also
+
+<xref:System.Security.Claims.ClaimsIdentity.HasClaim(System.String,System.String)?displayProperty=nameWithType>.
 
           ]]></format>
         </remarks>

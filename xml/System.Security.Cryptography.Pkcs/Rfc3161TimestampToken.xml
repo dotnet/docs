@@ -48,9 +48,9 @@
 
 Successive calls to this method return the same object.
 
-The SignedCms class is mutable, but changes to that object are not reflected in the <xref:T:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken> object which produced it.
+The <xref:System.Security.Cryptography.Pkcs.SignedCms> class is mutable, but changes to that object are not reflected in the <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken> object that produced it.
 
-The value from calling <xref:M:System.Security.Cryptography.Pkcs.SignedCms.Encode> can be interpreted again as an <xref:T:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken> via another call to <xref:M:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)>.
+The value from calling <xref:System.Security.Cryptography.Pkcs.SignedCms.Encode?displayProperty=nameWithType> can be interpreted again as an <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken> via another call to <xref:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken.TryDecode(System.ReadOnlyMemory{System.Byte},System.Security.Cryptography.Pkcs.Rfc3161TimestampToken@,System.Int32@)?displayProperty=nameWithType>.
 
           ]]></format>
         </remarks>

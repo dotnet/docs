@@ -14,7 +14,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ICorProfilerInfo7::ReadInMemorySymbols
-[Supported in the [!INCLUDE[net_v461](../../../../includes/net-v461-md.md)] and later versions]  
+[Supported in the .NET Framework 4.6.1 and later versions]  
   
  Reads bytes from an in-memory symbol stream.  
   

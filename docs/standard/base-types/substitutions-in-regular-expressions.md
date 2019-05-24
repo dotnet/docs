@@ -23,14 +23,14 @@ ms.author: "ronpet"
   
 |Substitution|Description|  
 |------------------|-----------------|  
-|`$` *number*|Includes the last substring matched by the capturing group that is identified by *number*, where *number* is a decimal value, in the replacement string. For more information, see [Substituting a Numbered Group](#Numbered).|  
-|`${` *name* `}`|Includes the last substring matched by the named group that is designated by `(?<`*name*`> )` in the replacement string. For more information, see [Substituting a Named Group](#Named).|  
-|`$$`|Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#DollarSign).|  
-|`$&`|Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#EntireMatch).|  
+|$ *number*|Includes the last substring matched by the capturing group that is identified by *number*, where *number* is a decimal value, in the replacement string. For more information, see [Substituting a Numbered Group](#Numbered).|  
+|${ *name* }|Includes the last substring matched by the named group that is designated by `(?<`*name*`> )` in the replacement string. For more information, see [Substituting a Named Group](#Named).|  
+|$$|Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#DollarSign).|  
+|$&|Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#EntireMatch).|  
 |$\`|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
-|`$'`|Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#AfterMatch).|  
-|`$+`|Includes the last group captured in the replacement string. For more information, see [Substituting the Last Captured Group](#LastGroup).|  
-|`$_`|Includes the entire input string in the replacement string. For more information, see [Substituting the Entire Input String](#EntireString).|  
+|$'|Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#AfterMatch).|  
+|$+|Includes the last group captured in the replacement string. For more information, see [Substituting the Last Captured Group](#LastGroup).|  
+|$_|Includes the entire input string in the replacement string. For more information, see [Substituting the Entire Input String](#EntireString).|  
   
 ## Substitution Elements and Replacement Patterns  
  Substitutions are the only special constructs recognized in a replacement pattern. None of the other regular expression language elements, including character escapes and the period (`.`), which matches any character, are supported. Similarly, substitution language elements are recognized only in replacement patterns and are never valid in regular expression patterns.  

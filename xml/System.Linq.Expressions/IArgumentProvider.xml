@@ -24,18 +24,28 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an internal interface for accessing the arguments of multiple tree nodes (DynamicExpression, ElementInit, MethodCallExpression, InvocationExpression, NewExpression, and IndexExpression).  You should not use this API.  It is only public due to DLL refactoring and exists only for internal performance optimizations.  
+    <summary>Provides an internal interface for accessing the arguments of multiple tree nodes (DynamicExpression, ElementInit, MethodCallExpression, InvocationExpression, NewExpression, and IndexExpression).  This API is for internal use only.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+      
+## Remarks
+
+You should not use this API.  It is public only due to assembly refactoring, and it exists only for internal performance optimizations. It enables two optimizations that reduce the size of the trees:
   
- This enables two optimizations which reduce the size of expression trees.  The first enables the tree nodes to hold onto an IList&lt;T&gt; instead of a ReadOnlyCollection.  IList&lt;T&gt; saves the cost of allocating the ReadOnlyCollection for each node.  The second enables creating specialized subclasses that hold onto a specific number of arguments (for example, Block2, Block3, Block4).  Therefore, these nodes avoid allocating both a ReadOnlyCollection and an array for storing their elements, saving 32 bytes per node.  
+1. It enables the nodes to hold onto an <xref:System.Collections.Generic.IList%601> instead of a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>.  This saves the cost of allocating the read-only collection for each node.
   
- The expression tree nodes continue to expose the original LINQ properties of ReadOnlyCollections.  The nodes do this by re-using a field for storing both the array or an element that would normally be stored in the array.  
-  
- For the array case, the collection is typed to IList&lt;T&gt; instead of ReadOnlyCollection&lt;T&gt;.  When the node is initially constructed it is an array.  When the compiler accesses the members it uses this interface.  Accessing array elements promotes the array to a ReadOnlyCollection.  
-  
- For the object case we store the first argument in a field typed to object.  When the node is initially constructed, the field holds the Expression.  The compiler accesses arguments through this interface, and the accessor for the first argument uses Expression.ReturnObject to return the object that handles the Expression or ReadOnlyCollection case.  When the user accesses the ReadOnlyCollection, then the object field is updated to hold directly onto the ReadOnlyCollection.  
-  
- It is important that the Expressions consistently return the same ReadOnlyCollection.  Otherwise, the re-writer tree walker will break.  It is a breaking change from LINQ v1 to return different ReadOnlyCollections form the same Expression node.  Currently users can rely on object identity to tell if the node has changed.  Storing the ReadOnlyCollection in an overloaded field both reduces memory usage and maintains compatibility for the public API.</summary>
-    <remarks>To be added.</remarks>
+2. It enables specialized subclasses to be created that hold on to a specific number of arguments (for example, `Block2`, `Block2`, `Block4`).  Therefore, these nodes avoid allocating both a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> and an array for storing their elements, thus saving 32 bytes per node.  This technique is used by various nodes, including <xref:System.Linq.Expressions.BlockExpression>, <xref:System.Linq.Expressions.InvocationExpression>, and <xref:System.Linq.Expressions.MethodCallExpression>.
+            
+The expression tree nodes continue to expose the original LINQ properties of <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> objects. They do this by reusing a field for storing both the array or an element that would normally be stored in the array.
+            
+For the array case, the collection is typed to <xref:System.Collections.Generic.IList%601> instead of <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>. When the node is initially constructed, it is an array.  The compiler or utilities in this library access the elements through this interface. Accessing array elements promotes the array to a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>.
+            
+For the object case, the first argument is stored in a field typed to <xref:System.Object>. When the node is initially constructed, this field holds the <xref:System.Linq.Expressions.Expression> of the first argument.  When the compiler and utilities in this library access the arguments, they again use this interface, and the accessor for the first argument uses the internal `Expression.ReturnObject<T>(System.Object)` helper method to return the object that handles the <xref:System.Linq.Expressions.Expression> or <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> case. When the user accesses the <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>, the object field is updated to hold directly onto the <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>.
+            
+It is important that <xref:System.Linq.Expressions.Expression> properties consistently return the same <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>. Otherwise, the rewriter tree walker used by expression visitors will break. It is a breaking change from LINQ v1 to return different <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> from the same <xref:System.Linq.Expressions.Expression> node. Currently, users can rely on object identity to tell if the node has changed.  Storing the <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> in an overloaded field both reduces memory usage and maintains compatibility for the public API.
+
+      ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ArgumentCount">
@@ -67,9 +77,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the number of arguments to the expression tree node.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
+        <summary>Returns the number of arguments to the expression tree node. This API is for internal use only.</summary>
         <value>The number of arguments to the expression tree node as <see cref="T:System.Int32" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>You should not use this API. It is public only due to assembly refactoring, and it is used internally for performance optimizations.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetArgument">
@@ -105,9 +115,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the argument.</param>
-        <summary>Returns the argument at index, throwing if index is out of bounds.  You should not use this type.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</summary>
-        <returns>The argument at index, throwing if index is out of bounds as <see cref="T:System.Linq.Expressions.Expression" />.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the argument at <paramref name="index" />, throwing if <paramref name="index" /> is out of bounds. This API is for internal use only.</summary>
+        <returns>The argument at index.</returns>
+        <remarks>You should not use this API.  It is only public due to assembly refactoring, and it is used internally for performance optimizations.</remarks>
       </Docs>
     </Member>
   </Members>

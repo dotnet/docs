@@ -302,6 +302,10 @@ The `PredictIssue` method executes the following tasks:
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
+Add the following code as the first line of the `PredictIssue` method:
+
+[!code-csharp[AddLoadModel](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddLoadModel)]
+
 Add a GitHub issue to test the trained model's prediction in the `Predict` method by creating an instance of `GitHubIssue`:
 
 [!code-csharp[AddTestIssue](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddTestIssue)]

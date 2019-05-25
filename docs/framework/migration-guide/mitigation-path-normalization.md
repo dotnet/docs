@@ -33,9 +33,10 @@ Starting with apps the target  the .NET Framework 4.6.2, path normalization in t
 - The use of device syntax to access alternate data streams is supported.  
   
 ## Impact  
- For apps that target the .NET Framework 4.6.2 or later, these changes are on  by default. They should improve performance while allowing methods to access previously inaccessible paths.  
+
+For apps that target the .NET Framework 4.6.2 or later, these changes are on  by default. They should improve performance while allowing methods to access previously inaccessible paths.  
   
- Apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier versions but are running under the .NET Framework 4.6.2 or later are unaffected by this change.  
+Apps that target the .NET Framework 4.6.1 and earlier versions but are running under the .NET Framework 4.6.2 or later are unaffected by this change.  
   
 ## Mitigation  
  Apps that target the .NET Framework 4.6.2 or later can opt out of this change and use legacy normalization by adding the following to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file:  
@@ -46,7 +47,7 @@ Starting with apps the target  the .NET Framework 4.6.2, path normalization in t
 </runtime>  
 ```  
   
- Apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] or earlier but are running on the .NET Framework 4.6.2 or later can enable the changes to path normalization by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application .configuration file:  
+Apps that target the .NET Framework 4.6.1 or earlier but are running on the .NET Framework 4.6.2 or later can enable the changes to path normalization by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application .configuration file:  
   
 ```xml  
 <runtime>  

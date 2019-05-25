@@ -89,9 +89,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [*x](pointer-related-operators.md#pointer-indirection-operator-) – pointer indirection, or dereference.
 
-[true operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
+[true operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
 
-[false operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
+[false operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
 
 ## Multiplicative operators
 

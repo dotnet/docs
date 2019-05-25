@@ -230,20 +230,6 @@
       href: sizeof.md
     - name: typeof
       href: typeof.md
-    - name: "true"
-      href: true.md
-      items:
-      - name: true Operator
-        href: true-false-operators.md
-      - name: true Literal
-        href: true-literal.md
-    - name: "false"
-      href: false.md
-      items:
-      - name: false Operator
-        href: true-false-operators.md
-      - name: false Literal
-        href: false-literal.md
     - name: stackalloc
       href: stackalloc.md
     - name: nameof
@@ -269,6 +255,10 @@
     items:
     - name: "null"
       href: null.md
+    - name: "true"
+      href: true-literal.md
+    - name: "false"
+      href: false-literal.md
     - name: default
       href: default.md
   - name: Contextual Keywords

@@ -125,7 +125,7 @@ Add the `App` project to the `FSNetCore` solution using the `dotnet sln add` com
 dotnet sln add src/App/App.fsproj
 ```
 
-Restore the NuGet dependencies, `dotnet restore` ([see note](#dotnet-restore-note)) and run `dotnet build` to build the project.
+Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build the project.
 
 Change directory to the `src/App` console project and run the project passing `Hello World` as arguments:
 

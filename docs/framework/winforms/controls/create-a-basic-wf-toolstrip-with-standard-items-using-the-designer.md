@@ -16,15 +16,16 @@ The following procedure demonstrates how to create a <xref:System.Windows.Forms.
   
 ### To add standard items in the designer  
   
-1.  Create a <xref:System.Windows.Forms.ToolStrip> control.  
+1. Create a <xref:System.Windows.Forms.ToolStrip> control.  
   
-2.  In the upper right corner of the <xref:System.Windows.Forms.ToolStrip>, click the smart task arrow to display the **ToolStrip Tasks** pane.  
+2. In the upper right corner of the <xref:System.Windows.Forms.ToolStrip>, click the smart task arrow to display the **ToolStrip Tasks** pane.  
   
-3.  In the **ToolStrip Tasks** pane, choose **Insert Standard Items**.  
+3. In the **ToolStrip Tasks** pane, choose **Insert Standard Items**.  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+## See also
+
+- <xref:System.Windows.Forms.ToolStrip>
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control](toolstrip-control-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

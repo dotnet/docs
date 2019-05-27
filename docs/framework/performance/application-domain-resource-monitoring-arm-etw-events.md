@@ -13,15 +13,15 @@ ms.author: "mairaw"
   
  This category consists of the following events:  
   
--   [ThreadCreated Event](#threadcreated_event)  
+- [ThreadCreated Event](#threadcreated_event)  
   
--   [AppDomainMemAllocated Event](#appdomainmemallocated_event)  
+- [AppDomainMemAllocated Event](#appdomainmemallocated_event)  
   
--   [AppDomainMemSurvived Event](#appdomainmemsurvived_event)  
+- [AppDomainMemSurvived Event](#appdomainmemsurvived_event)  
   
--   [ThreadAppDomainEnter Event](#threadappdomainenter_event)  
+- [ThreadAppDomainEnter Event](#threadappdomainenter_event)  
   
--   [ThreadTerminated Event](#threadterminated_event)  
+- [ThreadTerminated Event](#threadterminated_event)  
   
 <a name="threadcreated_event"></a>   
 ## ThreadCreated Event  
@@ -150,5 +150,6 @@ ms.author: "mairaw"
 |AppDomainID|win:UInt64|The application domain identifier.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+
+- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

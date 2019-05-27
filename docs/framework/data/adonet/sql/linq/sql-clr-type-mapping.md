@@ -10,23 +10,23 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
   
  This topic discusses the following points:  
   
--   [Default Type Mapping](#DefaultTypeMapping)  
+- [Default Type Mapping](#DefaultTypeMapping)  
   
--   [Type Mapping Run-time Behavior Matrix](#BehaviorMatrix)  
+- [Type Mapping Run-time Behavior Matrix](#BehaviorMatrix)  
   
--   [Behavior Differences Between CLR and SQL Execution](#BehaviorDiffs)  
+- [Behavior Differences Between CLR and SQL Execution](#BehaviorDiffs)  
   
--   [Enum Mapping](#EnumMapping)  
+- [Enum Mapping](#EnumMapping)  
   
--   [Numeric Mapping](#NumericMapping)  
+- [Numeric Mapping](#NumericMapping)  
   
--   [Text and XML Mapping](#TextMapping)  
+- [Text and XML Mapping](#TextMapping)  
   
--   [Date and Time Mapping](#DateMapping)  
+- [Date and Time Mapping](#DateMapping)  
   
--   [Binary Mapping](#BinaryMapping)  
+- [Binary Mapping](#BinaryMapping)  
   
--   [Miscellaneous Mapping](#MiscMapping)  
+- [Miscellaneous Mapping](#MiscMapping)  
   
 <a name="DefaultTypeMapping"></a>   
 ## Default Type Mapping  
@@ -52,21 +52,21 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
   
  For example, the following are some differences in behavior between the CLR and SQL Server:  
   
--   SQL Server orders some data types differently than data of equivalent type in the CLR. For example, SQL Server data of type `UNIQUEIDENTIFIER` is ordered differently than CLR data of type <xref:System.Guid?displayProperty=nameWithType>.  
+- SQL Server orders some data types differently than data of equivalent type in the CLR. For example, SQL Server data of type `UNIQUEIDENTIFIER` is ordered differently than CLR data of type <xref:System.Guid?displayProperty=nameWithType>.  
   
--   SQL Server handles some string comparison operations differently than the CLR. In SQL Server, string comparison behavior depends on the collation settings on the server. For more information, see [Working with Collations](https://go.microsoft.com/fwlink/?LinkId=115330) in the Microsoft SQL Server Books Online.  
+- SQL Server handles some string comparison operations differently than the CLR. In SQL Server, string comparison behavior depends on the collation settings on the server. For more information, see [Working with Collations](https://go.microsoft.com/fwlink/?LinkId=115330) in the Microsoft SQL Server Books Online.  
   
--   SQL Server may return different values for some mapped functions than the CLR. For example, equality functions will differ because SQL Server considers two strings to be equal if they only differ in trailing white space; whereas the CLR considers them to be not equal.  
+- SQL Server may return different values for some mapped functions than the CLR. For example, equality functions will differ because SQL Server considers two strings to be equal if they only differ in trailing white space; whereas the CLR considers them to be not equal.  
   
 <a name="EnumMapping"></a>   
 ## Enum Mapping  
  LINQ to SQL supports mapping the CLR <xref:System.Enum?displayProperty=nameWithType> type to SQL Server types in two ways:  
   
--   Mapping to SQL numeric types (`TINYINT`, `SMALLINT`, `INT`, `BIGINT`)  
+- Mapping to SQL numeric types (`TINYINT`, `SMALLINT`, `INT`, `BIGINT`)  
   
      When you map a CLR <xref:System.Enum?displayProperty=nameWithType> type to a SQL numeric type, you map the underlying integer value of the CLR <xref:System.Enum?displayProperty=nameWithType> to the value of the SQL Server database column. For example, if a <xref:System.Enum?displayProperty=nameWithType> named `DaysOfWeek` contains a member named `Tue` with an underlying integer value of 3, that member maps to a database value of 3.  
   
--   Mapping to SQL text types (`CHAR`, `NCHAR`, `VARCHAR`, `NVARCHAR`)  
+- Mapping to SQL text types (`CHAR`, `NCHAR`, `VARCHAR`, `NVARCHAR`)  
   
      When you map a CLR <xref:System.Enum?displayProperty=nameWithType> type to a SQL text type, the SQL database value is mapped to the names of the CLR <xref:System.Enum?displayProperty=nameWithType> members. For example, if a <xref:System.Enum?displayProperty=nameWithType> named `DaysOfWeek` contains a member named `Tue` with an underlying integer value of 3, that member maps to a database value of `Tue`.  
   
@@ -148,13 +148,13 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 ### XML Types  
  The SQL Server `XML` data type is available starting in Microsoft SQL Server 2005. You can map the SQL Server `XML` data type to <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or <xref:System.String>. If the column stores XML fragments that cannot be read into <xref:System.Xml.Linq.XElement>, the column must be mapped to <xref:System.String> to avoid run-time errors. XML fragments that must be mapped to <xref:System.String> include the following:  
   
--   A sequence of XML elements  
+- A sequence of XML elements  
   
--   Attributes  
+- Attributes  
   
--   Public Identifiers (PI)  
+- Public Identifiers (PI)  
   
--   Comments  
+- Comments  
   
  Although you can map <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> to SQL Server as shown in the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix), the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method has no default SQL Server type mapping for these types.  
   
@@ -250,8 +250,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
   
  LINQ to SQL does not support any other type mappings for these miscellaneous types.  For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
-## See Also  
- [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)  
- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)  
- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
+## See also
+
+- [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)
+- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)

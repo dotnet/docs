@@ -10,10 +10,10 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
   
 ## To correct this error  
   
-1.  Replace `FileGet` with `FileGetObject`.  
+1. Replace `FileGet` with `FileGetObject`.  
   
-2.  Cast the `Object` argument to a more specific type.  
+2. Cast the `Object` argument to a more specific type.  
   
-## See Also  
-   
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+## See also
+
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

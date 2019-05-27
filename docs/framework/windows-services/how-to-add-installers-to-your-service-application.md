@@ -27,17 +27,17 @@ Visual Studio ships installation components that can install resources associate
   
 ### To add installers to your service application  
   
-1.  In **Solution Explorer**, access **Design** view for the service for which you want to add an installation component.  
+1. In **Solution Explorer**, access **Design** view for the service for which you want to add an installation component.  
   
-2.  Click the background of the designer to select the service itself, rather than any of its contents.  
+2. Click the background of the designer to select the service itself, rather than any of its contents.  
   
-3.  With the designer in focus, right-click, and then click **Add Installer**.  
+3. With the designer in focus, right-click, and then click **Add Installer**.  
   
      A new class, `ProjectInstaller`, and two installation components, <xref:System.ServiceProcess.ServiceProcessInstaller> and <xref:System.ServiceProcess.ServiceInstaller>, are added to your project, and property values for the service are copied to the components.  
   
-4.  Click the <xref:System.ServiceProcess.ServiceInstaller> component and verify that the value of the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property is set to the same value as the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property on the service itself.  
+4. Click the <xref:System.ServiceProcess.ServiceInstaller> component and verify that the value of the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property is set to the same value as the <xref:System.ServiceProcess.ServiceInstaller.ServiceName%2A> property on the service itself.  
   
-5.  To determine how your service will be started, click the <xref:System.ServiceProcess.ServiceInstaller> component and set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to the appropriate value.  
+5. To determine how your service will be started, click the <xref:System.ServiceProcess.ServiceInstaller> component and set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to the appropriate value.  
   
     |Value|Result|  
     |-----------|------------|  
@@ -45,17 +45,18 @@ Visual Studio ships installation components that can install resources associate
     |<xref:System.ServiceProcess.ServiceStartMode.Automatic>|The service will start by itself whenever the computer reboots.|  
     |<xref:System.ServiceProcess.ServiceStartMode.Disabled>|The service cannot be started.|  
   
-6.  To determine the security context in which your service will run, click the <xref:System.ServiceProcess.ServiceProcessInstaller> component and set the appropriate property values. For more information, see [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md).  
+6. To determine the security context in which your service will run, click the <xref:System.ServiceProcess.ServiceProcessInstaller> component and set the appropriate property values. For more information, see [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md).  
   
-7.  Override any methods for which you need to perform custom processing.  
+7. Override any methods for which you need to perform custom processing.  
   
-8.  Perform steps 1 through 7 for each additional service in your project.  
+8. Perform steps 1 through 7 for each additional service in your project.  
   
     > [!NOTE]
     >  For each additional service in your project, you must add an additional <xref:System.ServiceProcess.ServiceInstaller> component to the project's `ProjectInstaller` class. The <xref:System.ServiceProcess.ServiceProcessInstaller> component added in step three works with all of the individual service installers in the project.  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)  
- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)  
- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)
+## See also
+
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
+- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)

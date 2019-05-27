@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 07/20/2018
+ms.date: 02/08/2019
 ---
 # Type extensions
 
@@ -95,6 +95,8 @@ Optional extensions do not appear on the extended type when examined by reflecti
 
 Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they're instance members or static members according to how they're declared.
 
+Optional extension members are also not visible to C# or VB consumers. They can only be consumed in other F# code.
+
 ## Generic limitation of intrinsic and optional type extensions
 
 It's possible to declare a type extension on a generic type where the type variable is constrained. The requirement is that the constraint of the extension declaration matches the constraint of the declared type.
@@ -115,7 +117,7 @@ There is no way to get this code to work with an optional type extension:
 
 * As is, the `Sum` member has a different constraint on `'T` (`static member get_Zero` and `static member (+)`) than what the type extension defines.
 * Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
-* Making changing the member to `member inline Sum` will give an error that type constraints are mismatched
+* Changing `member this.Sum` to `member inline this.Sum` will give an error that type constraints are mismatched.
 
 What is desired are static methods that "float in space" and can be presented as if they're extending a type. This is where extension methods become necessary.
 

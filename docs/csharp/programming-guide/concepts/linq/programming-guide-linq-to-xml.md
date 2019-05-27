@@ -7,7 +7,7 @@ ms.assetid: 4b1ffd10-ab81-4a0d-a0ca-e9876478d924
 This section provides conceptual and how-to information about programming with [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
   
 ## Who Should Read This Documentation  
- This documentation targets developers who already understand C# and some basic aspects of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
+ This documentation targets developers who already understand C# and some basic aspects of the .NET Framework.  
   
  The goal of this documentation is to make [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] easy to use for all kinds of developers. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] makes XML programming easier. You do not have to be an expert developer to use it.  
   
@@ -28,7 +28,7 @@ This section provides conceptual and how-to information about programming with [
 |[LINQ to XML Security (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-security.md)|Describes security issues associated with LINQ to XML and provides some guidance for mitigating security exposure.|  
 |[Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)|Contains the sample XML documents that are used by many examples in this documentation.|  
   
-## See Also
+## See also
 
-- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)  
+- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
 - [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)

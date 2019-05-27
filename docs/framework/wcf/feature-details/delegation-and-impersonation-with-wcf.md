@@ -31,27 +31,27 @@ ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
 ### Cached Token Impersonation  
  You can perform cached-token impersonation with the following:  
   
--   <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a Windows client credential.  
+- <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a Windows client credential.  
   
--   <xref:System.ServiceModel.BasicHttpBinding> with a <xref:System.ServiceModel.BasicHttpSecurityMode> set to the <xref:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential> credential, or any other standard binding where the client presents a user name credential that the service can map to a valid Windows account.  
+- <xref:System.ServiceModel.BasicHttpBinding> with a <xref:System.ServiceModel.BasicHttpSecurityMode> set to the <xref:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential> credential, or any other standard binding where the client presents a user name credential that the service can map to a valid Windows account.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` set to `true`. (The property is available on the following classes: <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>, <xref:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters>, and <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters>.) If a secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` set to `true`. (The property is available on the following classes: <xref:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters>, <xref:System.ServiceModel.Security.Tokens.SslSecurityTokenParameters>, and <xref:System.ServiceModel.Security.Tokens.SspiSecurityTokenParameters>.) If a secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> where the client presents a user name credential. If secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> where the client presents a user name credential. If secure conversation is used on the binding, it must also have the `requireCancellation` property set to `true`.  
   
 ### S4U-Based Impersonation  
  You can perform S4U-based impersonation with the following:  
   
--   <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a certificate client credential that the service can map to a valid Windows account.  
+- <xref:System.ServiceModel.WSHttpBinding>, <xref:System.ServiceModel.WSDualHttpBinding>, and <xref:System.ServiceModel.NetTcpBinding> with a certificate client credential that the service can map to a valid Windows account.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` property set to `false`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a Windows client credential with the `requireCancellation` property set to `false`.  
   
--   Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a user name or Windows client credential and secure conversation with the `requireCancellation` property set to `false`.  
+- Any <xref:System.ServiceModel.Channels.CustomBinding> that uses a user name or Windows client credential and secure conversation with the `requireCancellation` property set to `false`.  
   
  The extent to which the service can impersonate the client depends on the privileges the service account holds when it attempts impersonation, the type of impersonation used, and possibly the extent of impersonation the client permits.  
   
 > [!NOTE]
->  When the client and service are running on the same computer and the client is running under a system account (for example, `Local System` or `Network Service`), the client cannot be impersonated when a secure session is established with stateful Security Context tokens. A Windows Form or console application typically runs under the currently logged-in account, so that account can be impersonated by default. However, when the client is an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] page and that page is hosted in [!INCLUDE[iis601](../../../../includes/iis601-md.md)] or [!INCLUDE[iisver](../../../../includes/iisver-md.md)], then the client does run under the `Network Service` account by default. All of the system-provided bindings that support secure sessions use a stateless security context token (SCT) by default. However, if the client is an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] page, and secure sessions with stateful SCTs are used, the client cannot be impersonated. For more information about using stateful SCTs in a secure session, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+>  When the client and service are running on the same computer and the client is running under a system account (for example, `Local System` or `Network Service`), the client cannot be impersonated when a secure session is established with stateful Security Context tokens. A Windows Form or console application typically runs under the currently logged-in account, so that account can be impersonated by default. However, when the client is an ASP.NET page and that page is hosted in [!INCLUDE[iis601](../../../../includes/iis601-md.md)] or [!INCLUDE[iisver](../../../../includes/iisver-md.md)], then the client does run under the `Network Service` account by default. All of the system-provided bindings that support secure sessions use a stateless security context token (SCT) by default. However, if the client is an ASP.NET page, and secure sessions with stateful SCTs are used, the client cannot be impersonated. For more information about using stateful SCTs in a secure session, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
   
 ## Impersonation in a Service Method: Declarative Model  
  Most impersonation scenarios involve executing the service method in the caller context. WCF provides an impersonation feature that makes this easy to do by allowing the user to specify the impersonation requirement in the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. For example, in the following code, the WCF infrastructure impersonates the caller before executing the `Hello` method. Any attempt to access native resources inside the `Hello` method succeed only if the access control list (ACL) of the resource allows the caller access privileges. To enable impersonation, set the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property to one of the <xref:System.ServiceModel.ImpersonationOption> enumeration values, either <xref:System.ServiceModel.ImpersonationOption.Required?displayProperty=nameWithType> or <xref:System.ServiceModel.ImpersonationOption.Allowed?displayProperty=nameWithType>, as shown in the following example.  
@@ -185,35 +185,36 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
 ### How to Configure an Application to Use Constrained Delegation  
  Before you can use constrained delegation, the sender, receiver, and the domain controller must be configured to do so. The following procedure lists the steps that enable constrained delegation. For details about the differences between delegation and constrained delegation, see the portion of [Windows Server 2003 Kerberos Extensions](https://go.microsoft.com/fwlink/?LinkId=100194) that discusses constrained discussion.  
   
-1.  On the domain controller, clear the **Account is sensitive and cannot be delegated** check box for the account under which the client application is running.  
+1. On the domain controller, clear the **Account is sensitive and cannot be delegated** check box for the account under which the client application is running.  
   
-2.  On the domain controller, select the **Account is trusted for delegation** check box for the account under which the client application is running.  
+2. On the domain controller, select the **Account is trusted for delegation** check box for the account under which the client application is running.  
   
-3.  On the domain controller, configure the middle tier computer so that it is trusted for delegation, by clicking the **Trust computer for delegation** option.  
+3. On the domain controller, configure the middle tier computer so that it is trusted for delegation, by clicking the **Trust computer for delegation** option.  
   
-4.  On the domain controller, configure the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option.  
+4. On the domain controller, configure the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option.  
   
  For more detailed instructions about configuring constrained delegation, see the following topics on MSDN:  
   
--   [Troubleshooting Kerberos Delegation](https://go.microsoft.com/fwlink/?LinkId=36724)  
+- [Troubleshooting Kerberos Delegation](https://go.microsoft.com/fwlink/?LinkId=36724)  
   
--   [Kerberos Protocol Transition and Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=36725)  
+- [Kerberos Protocol Transition and Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=36725)  
   
-## See Also  
- <xref:System.ServiceModel.OperationBehaviorAttribute>  
- <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>  
- <xref:System.ServiceModel.ImpersonationOption>  
- <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A>  
- <xref:System.ServiceModel.ServiceSecurityContext>  
- <xref:System.Security.Principal.WindowsIdentity>  
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>  
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ImpersonateCallerForAllOperations%2A>  
- <xref:System.ServiceModel.ServiceHost>  
- <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A>  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- <xref:System.ServiceModel.ChannelFactory%601>  
- <xref:System.Security.Principal.TokenImpersonationLevel.Identification>  
- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)  
- [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md)  
- [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+## See also
+
+- <xref:System.ServiceModel.OperationBehaviorAttribute>
+- <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>
+- <xref:System.ServiceModel.ImpersonationOption>
+- <xref:System.ServiceModel.ServiceSecurityContext.WindowsIdentity%2A>
+- <xref:System.ServiceModel.ServiceSecurityContext>
+- <xref:System.Security.Principal.WindowsIdentity>
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ImpersonateCallerForAllOperations%2A>
+- <xref:System.ServiceModel.ServiceHost>
+- <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A>
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- <xref:System.ServiceModel.ChannelFactory%601>
+- <xref:System.Security.Principal.TokenImpersonationLevel.Identification>
+- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)
+- [Impersonating the Client](../../../../docs/framework/wcf/samples/impersonating-the-client.md)
+- [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

@@ -6,11 +6,11 @@ ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
 # Code Generation in LINQ to SQL
 You can generate code to represent a database by using either the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] or the SQLMetal command-line tool. In either case, end-to-end code generation occurs in three stages:  
   
-1.  The *DBML Extractor* extracts schema information from the database and reassembles the information into an XML-formatted DBML file.  
+1. The *DBML Extractor* extracts schema information from the database and reassembles the information into an XML-formatted DBML file.  
   
-2.  The DBML file is scanned by the *DBML Validator* for errors.  
+2. The DBML file is scanned by the *DBML Validator* for errors.  
   
-3.  If no validation errors appear, the file is passed to the Code Generator.  
+3. If no validation errors appear, the file is passed to the Code Generator.  
   
  For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). Developers using Visual Studio can also use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to generate code. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
@@ -263,9 +263,10 @@ elementFormDefault="qualified" >
 </Database>  
 ```  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
- [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+## See also
+
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

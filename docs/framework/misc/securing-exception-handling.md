@@ -154,5 +154,6 @@ YourObject.YourMethod()
 }  
 ```  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

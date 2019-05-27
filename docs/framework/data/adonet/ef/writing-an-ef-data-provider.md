@@ -11,17 +11,17 @@ This section discusses how to write an [!INCLUDE[adonet_ef](../../../../../inclu
   
  The Entity Framework data provider (built using the ADO.NET Data Provider model) performs the following functions:  
   
--   Maps Entity Data Model (EDM) primitive types to provider types.  
+- Maps Entity Data Model (EDM) primitive types to provider types.  
   
--   Exposes provider-specific functions.  
+- Exposes provider-specific functions.  
   
--   Generates provider-specific commands for a given DbQueryCommandTree to support [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] queries.  
+- Generates provider-specific commands for a given DbQueryCommandTree to support [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] queries.  
   
--   Generates provider-specific update commands for a given DbModificationCommandTree to support updates through the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
+- Generates provider-specific update commands for a given DbModificationCommandTree to support updates through the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].  
   
--   Exposes mapping files for the store schema definition, to support generation of a model based on a database.  
+- Exposes mapping files for the store schema definition, to support generation of a model based on a database.  
   
--   Exposes metadata (tables and views, for example) via a conceptual model.  
+- Exposes metadata (tables and views, for example) via a conceptual model.  
   
  ![b42a7a5c&#45;0ac0&#45;4911&#45;86be&#45;0460a78760ba](../../../../../docs/framework/data/adonet/ef/media/b42a7a5c-0ac0-4911-86be-0460a78760ba.gif "b42a7a5c-0ac0-4911-86be-0460a78760ba")  
   
@@ -35,5 +35,6 @@ This section discusses how to write an [!INCLUDE[adonet_ef](../../../../../inclu
   
  [Provider Manifest Specification](../../../../../docs/framework/data/adonet/ef/provider-manifest-specification.md)  
   
-## See Also  
- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
+## See also
+
+- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)

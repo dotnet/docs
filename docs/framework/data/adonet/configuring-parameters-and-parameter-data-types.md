@@ -27,7 +27,7 @@ When adding parameters, you must supply a <xref:System.Data.ParameterDirection> 
 
 ## Working with parameter placeholders
 
-The syntax for parameter placeholders depends on the data source. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers handle naming and specifying parameters and parameter placeholders differently. This syntax is customized to a specific data source, as described in the following table.
+The syntax for parameter placeholders depends on the data source. The .NET Framework data providers handle naming and specifying parameters and parameter placeholders differently. This syntax is customized to a specific data source, as described in the following table.
 
 |Data provider|Parameter naming syntax|
 |-------------------|-----------------------------|
@@ -38,9 +38,9 @@ The syntax for parameter placeholders depends on the data source. The [!INCLUDE[
 
 ## Specifying parameter data types
 
-The data type of a parameter is specific to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider. Specifying the type converts the value of the `Parameter` to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider type before passing the value to the data source. You may also specify the type of a `Parameter` in a generic manner by setting the `DbType` property of the `Parameter` object to a particular <xref:System.Data.DbType>.
+The data type of a parameter is specific to the .NET Framework data provider. Specifying the type converts the value of the `Parameter` to the .NET Framework data provider type before passing the value to the data source. You may also specify the type of a `Parameter` in a generic manner by setting the `DbType` property of the `Parameter` object to a particular <xref:System.Data.DbType>.
 
-The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider type of a `Parameter` object is inferred from the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type of the `Value` of the `Parameter` object, or from the `DbType` of the `Parameter` object. The following table shows the inferred `Parameter` type based on the object passed as the `Parameter` value or the specified `DbType`.
+The .NET Framework data provider type of a `Parameter` object is inferred from the .NET Framework type of the `Value` of the `Parameter` object, or from the `DbType` of the `Parameter` object. The following table shows the inferred `Parameter` type based on the object passed as the `Parameter` value or the specified `DbType`.
 
 |.NET Framework type|DbType|SqlDbType|OleDbType|OdbcType|OracleType|
 |-------------------------|------------|---------------|---------------|--------------|----------------|
@@ -90,12 +90,12 @@ For more information, see [Generating Commands with CommandBuilders](generating-
 
 ## Using parameters with a SqlCommand and a stored procedure
 
-Stored procedures offer many advantages in data-driven applications. By using stored procedures, database operations can be encapsulated in a single command, optimized for best performance, and enhanced with additional security. Although a stored procedure can be called by passing the stored procedure name followed by parameter arguments as an SQL statement, by using the <xref:System.Data.Common.DbCommand.Parameters%2A> collection of the [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] <xref:System.Data.Common.DbCommand> object enables you to more explicitly define stored procedure parameters, and to access output parameters and return values.
+Stored procedures offer many advantages in data-driven applications. By using stored procedures, database operations can be encapsulated in a single command, optimized for best performance, and enhanced with additional security. Although a stored procedure can be called by passing the stored procedure name followed by parameter arguments as an SQL statement, by using the <xref:System.Data.Common.DbCommand.Parameters%2A> collection of the ADO.NET <xref:System.Data.Common.DbCommand> object enables you to more explicitly define stored procedure parameters, and to access output parameters and return values.
 
 > [!NOTE]
 > Parameterized statements are executed on the server by using `sp_executesql,` which allows for query plan reuse. Local cursors or variables in the `sp_executesql` batch are not visible to the batch that calls `sp_executesql`. Changes in database context last only to the end of the `sp_executesql` statement. For more information, see [sp_executesql (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql).
 
-When using parameters with a <xref:System.Data.SqlClient.SqlCommand> to execute a SQL Server stored procedure, the names of the parameters added to the <xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection must match the names of the parameter markers in the stored procedure. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server does not support the question mark (?) placeholder for passing parameters to an SQL statement or a stored procedure. It treats parameters in the stored procedure as named parameters and searches for matching parameter markers. For example, the `CustOrderHist` stored procedure is defined by using a parameter named `@CustomerID`. When your code executes the stored procedure, it must also use a parameter named `@CustomerID`.
+When using parameters with a <xref:System.Data.SqlClient.SqlCommand> to execute a SQL Server stored procedure, the names of the parameters added to the <xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection must match the names of the parameter markers in the stored procedure. The .NET Framework Data Provider for SQL Server does not support the question mark (?) placeholder for passing parameters to an SQL statement or a stored procedure. It treats parameters in the stored procedure as named parameters and searches for matching parameter markers. For example, the `CustOrderHist` stored procedure is defined by using a parameter named `@CustomerID`. When your code executes the stored procedure, it must also use a parameter named `@CustomerID`.
 
 ```sql
 CREATE PROCEDURE dbo.CustOrderHist @CustomerID varchar(5)
@@ -113,9 +113,9 @@ This example demonstrates how to call a SQL Server stored procedure in the `Nort
 
 ## Using parameters with an OleDbCommand or OdbcCommand
 
-When using parameters with an <xref:System.Data.OleDb.OleDbCommand> or <xref:System.Data.Odbc.OdbcCommand>, the order of the parameters added to the `Parameters` collection must match the order of the parameters defined in your stored procedure. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB and [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC treat parameters in a stored procedure as placeholders and apply parameter values in order. In addition, return value parameters must be the first parameters added to the `Parameters` collection.
+When using parameters with an <xref:System.Data.OleDb.OleDbCommand> or <xref:System.Data.Odbc.OdbcCommand>, the order of the parameters added to the `Parameters` collection must match the order of the parameters defined in your stored procedure. The .NET Framework Data Provider for OLE DB and .NET Framework Data Provider for ODBC treat parameters in a stored procedure as placeholders and apply parameter values in order. In addition, return value parameters must be the first parameters added to the `Parameters` collection.
 
-The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB and [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC do not support named parameters for passing parameters to an SQL statement or a stored procedure. In this case, you must use the question mark (?) placeholder, as in the following example.
+The .NET Framework Data Provider for OLE DB and .NET Framework Data Provider for ODBC do not support named parameters for passing parameters to an SQL statement or a stored procedure. In this case, you must use the question mark (?) placeholder, as in the following example.
 
 ```sql
 SELECT * FROM Customers WHERE CustomerID = ?

@@ -1,7 +1,6 @@
 ---
 title: "unsafe keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords:
   - "unsafe_CSharpKeyword"
@@ -38,7 +37,7 @@ unsafe
 }
 ```
 
-To compile unsafe code, you must specify the [/unsafe](../compiler-options/unsafe-compiler-option.md) compiler option. Unsafe code is not verifiable by the common language runtime.
+To compile unsafe code, you must specify the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option. Unsafe code is not verifiable by the common language runtime.
 
 ## Example
 

@@ -6,13 +6,13 @@ ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
 # entity type
 The *entity type* is the fundamental building block for describing the structure of data with the Entity Data Model (EDM). In a conceptual model, an entity type represents the structure of top-level concepts, such as customers or orders. An entity type is a template for entity type instances. Each template contains the following information:  
   
--   A unique name. (Required.)  
+- A unique name. (Required.)  
   
--   An [entity key](../../../../docs/framework/data/adonet/entity-key.md) defined by one or more properties. (Required.)  
+- An [entity key](../../../../docs/framework/data/adonet/entity-key.md) defined by one or more properties. (Required.)  
   
--   Data in the form of [properties](../../../../docs/framework/data/adonet/property.md). (Optional.)  
+- Data in the form of [properties](../../../../docs/framework/data/adonet/property.md). (Optional.)  
   
--   [Navigation properties](../../../../docs/framework/data/adonet/navigation-property.md) that allow for navigation from one [end](../../../../docs/framework/data/adonet/association-end.md) of an [association](../../../../docs/framework/data/adonet/association-type.md) to the other end. (Optional)  
+- [Navigation properties](../../../../docs/framework/data/adonet/navigation-property.md) that allow for navigation from one [end](../../../../docs/framework/data/adonet/association-end.md) of an [association](../../../../docs/framework/data/adonet/association-type.md) to the other end. (Optional)  
   
  In an application, an instance of an entity type represents a specific object (such as a specific customer or order). Each instance of an entity type must have a unique [entity key](../../../../docs/framework/data/adonet/entity-key.md) within an [entity set](../../../../docs/framework/data/adonet/entity-set.md).  
   
@@ -21,7 +21,7 @@ The *entity type* is the fundamental building block for describing the structure
 ## Example  
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`:  
   
- ![Example Model](../../../../docs/framework/data/adonet/media/examplemodel.gif "ExampleModel")  
+ ![Example model with three entity types](./media/entity-type/example-model-three-entity-types.gif)  
   
  Note that the properties of each entity type that make up its entity key are denoted with "(Key)".  
   
@@ -29,7 +29,8 @@ The *entity type* is the fundamental building block for describing the structure
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
-## See Also  
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)  
- [facet](../../../../docs/framework/data/adonet/facet.md)
+## See also
+
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [facet](../../../../docs/framework/data/adonet/facet.md)

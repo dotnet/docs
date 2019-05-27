@@ -24,20 +24,20 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
 ## General  
  The following information pertains to these walkthroughs in general:  
   
--   Environment: Each [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthrough uses Visual Studio as its integrated development environment (IDE).  
+- Environment: Each [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthrough uses Visual Studio as its integrated development environment (IDE).  
   
--   SQL engines: These walkthroughs are written to be implemented by using SQL Server Express. If you do not have SQL Server Express, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+- SQL engines: These walkthroughs are written to be implemented by using SQL Server Express. If you do not have SQL Server Express, you can download it free of charge. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
     > [!NOTE]
     >  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs use a file name as a connection string. Simply specifying a file name is a convenience that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for SQL Server Express users. Always pay attention to security issues. For more information, see [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md).  
   
--   [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs typically require the Northwind sample database. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
+- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] walkthroughs typically require the Northwind sample database. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   
--   The dialog boxes and menu commands you see in walkthroughs might differ from those described in Help, depending on your active settings or Visual Studio edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
+- The dialog boxes and menu commands you see in walkthroughs might differ from those described in Help, depending on your active settings or Visual Studio edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
--   For walkthroughs that address multi-tier scenarios, a server must be located on a computer that is distinct from the development computer, and you must have appropriate permissions to access the server.  
+- For walkthroughs that address multi-tier scenarios, a server must be located on a computer that is distinct from the development computer, and you must have appropriate permissions to access the server.  
   
--   The name of the class that typically represents the Orders table in the Northwind sample database is `[Order]`. The escaping is required because `Order` is a keyword in Visual Basic.  
+- The name of the class that typically represents the Orders table in the Northwind sample database is `[Order]`. The escaping is required because `Order` is a keyword in Visual Basic.  
   
 ## Troubleshooting  
  Run-time errors can occur because you do not have sufficient permissions to access the databases used in these walkthroughs. See the following steps to help resolve the most common of these issues.  
@@ -47,13 +47,13 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 ##### To verify or change the database log on  
   
-1.  On the Windows **Start** menu, point to **All Programs**, **Microsoft SQL Server 2005**, point to **Configuration Tools**, and then click **SQL Server Configuration Manager**.  
+1. On the Windows **Start** menu, point to **All Programs**, **Microsoft SQL Server 2005**, point to **Configuration Tools**, and then click **SQL Server Configuration Manager**.  
   
-2.  In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
+2. In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
   
-3.  In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Properties**.  
+3. In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Properties**.  
   
-4.  Click the **Log On** tab and verify how you are trying to log on to the server.  
+4. Click the **Log On** tab and verify how you are trying to log on to the server.  
   
      In most cases, **Local System** works.  
   
@@ -64,9 +64,9 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 ##### To enable the Named Pipes protocol  
   
-1.  In the left pane of the **SQL Server Configuration Manager**, expand **SQL Server 2005 Network Configuration**, and then click **Protocols for SQLEXPRESS**.  
+1. In the left pane of the **SQL Server Configuration Manager**, expand **SQL Server 2005 Network Configuration**, and then click **Protocols for SQLEXPRESS**.  
   
-2.  In the right pane, make sure that the **Named Pipes** protocol is enabled. If it is not, right-click **Name Pipes** and then click **Enable**.  
+2. In the right pane, make sure that the **Named Pipes** protocol is enabled. If it is not, right-click **Name Pipes** and then click **Enable**.  
   
      You will have to stop and restart the service. Follow the steps in the next block.  
   
@@ -75,11 +75,12 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 ##### To stop and restart the service  
   
-1.  In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
+1. In the left pane of the **SQL Server Configuration Manager**, click **SQL Server 2005 Services**.  
   
-2.  In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Stop**.  
+2. In the right pane, right-click **SQL Server (SQLEXPRESS)**, and then click **Stop**.  
   
-3.  Right-click **SQL Server (SQLEXPRESS)**, and then click **Restart**.  
+3. Right-click **SQL Server (SQLEXPRESS)**, and then click **Restart**.  
   
-## See Also  
- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
+## See also
+
+- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

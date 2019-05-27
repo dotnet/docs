@@ -19,17 +19,17 @@ ms.custom: serodec18
   
  This topic outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance. It contains the following sections:  
   
--   [Consider the Input Source](#InputSource)  
+- [Consider the Input Source](#InputSource)  
   
--   [Handle Object Instantiation Appropriately](#ObjectInstantiation)  
+- [Handle Object Instantiation Appropriately](#ObjectInstantiation)  
   
--   [Take Charge of Backtracking](#Backtracking)  
+- [Take Charge of Backtracking](#Backtracking)  
   
--   [Use Time-out Values](#Timeouts)  
+- [Use Time-out Values](#Timeouts)  
   
--   [Capture Only When Necessary](#Capture)  
+- [Capture Only When Necessary](#Capture)  
   
--   [Related Topics](#RelatedTopics)  
+- [Related Topics](#RelatedTopics)  
   
 <a name="InputSource"></a>   
 ## Consider the Input Source  
@@ -39,11 +39,11 @@ ms.custom: serodec18
   
  To match unconstrained input, a regular expression must be able to efficiently handle three kinds of text:  
   
--   Text that matches the regular expression pattern.  
+- Text that matches the regular expression pattern.  
   
--   Text that does not match the regular expression pattern.  
+- Text that does not match the regular expression pattern.  
   
--   Text that nearly matches the regular expression pattern.  
+- Text that nearly matches the regular expression pattern.  
   
  The last text type is especially problematic for a regular expression that has been written to handle constrained input. If that regular expression also relies on extensive [backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md), the regular expression engine can spend an inordinate amount of time (in some cases, many hours or days) processing seemingly innocuous text.  
   
@@ -61,9 +61,9 @@ ms.custom: serodec18
   
  To solve this problem, you can do the following:  
   
--   When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#Backtracking) section.  
+- When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#Backtracking) section.  
   
--   Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](https://www.microsoft.com/en-us/research/project/rex-regular-expression-exploration/), which is a regular expression exploration tool from Microsoft Research.  
+- Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](https://www.microsoft.com/en-us/research/project/rex-regular-expression-exploration/), which is a regular expression exploration tool from Microsoft Research.  
   
  [Back to top](#top)  
   
@@ -76,13 +76,13 @@ ms.custom: serodec18
   
  You can couple the regular expression engine with a particular regular expression pattern and then use the engine to match text in several ways:  
   
--   You can call a static pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29?displayProperty=nameWithType>. This does not require instantiation of a regular expression object.  
+- You can call a static pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29?displayProperty=nameWithType>. This does not require instantiation of a regular expression object.  
   
--   You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of an interpreted regular expression. This is the default method for binding the regular expression engine to a regular expression pattern. It results when a <xref:System.Text.RegularExpressions.Regex> object is instantiated without an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.  
+- You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of an interpreted regular expression. This is the default method for binding the regular expression engine to a regular expression pattern. It results when a <xref:System.Text.RegularExpressions.Regex> object is instantiated without an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.  
   
--   You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of a compiled regular expression. Regular expression objects represent compiled patterns when a <xref:System.Text.RegularExpressions.Regex> object is instantiated with an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.  
+- You can instantiate a <xref:System.Text.RegularExpressions.Regex> object and call an instance pattern-matching method of a compiled regular expression. Regular expression objects represent compiled patterns when a <xref:System.Text.RegularExpressions.Regex> object is instantiated with an `options` argument that includes the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> flag.  
   
--   You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that is tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You do this by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.  
+- You can create a special-purpose <xref:System.Text.RegularExpressions.Regex> object that is tightly coupled with a particular regular expression pattern, compile it, and save it to a standalone assembly. You do this by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.  
   
  The particular way in which you call regular expression matching methods can have a significant impact on your application. The following sections discuss when to use static method calls, interpreted regular expressions, and compiled regular expressions to improve your application's performance.  
   
@@ -148,9 +148,9 @@ ms.custom: serodec18
   
  We recommend that you compile regular expressions to an assembly in the following situations:  
   
--   If you are a component developer who wants to create a library of reusable regular expressions.  
+- If you are a component developer who wants to create a library of reusable regular expressions.  
   
--   If you expect your regular expression's pattern-matching methods to be called an indeterminate number of times -- anywhere from once or twice to thousands or tens of thousands of times. Unlike compiled or interpreted regular expressions, regular expressions that are compiled to separate assemblies offer performance that is consistent regardless of the number of method calls.  
+- If you expect your regular expression's pattern-matching methods to be called an indeterminate number of times -- anywhere from once or twice to thousands or tens of thousands of times. Unlike compiled or interpreted regular expressions, regular expressions that are compiled to separate assemblies offer performance that is consistent regardless of the number of method calls.  
   
  If you are using compiled regular expressions to optimize performance, you should not use reflection to create the assembly, load the regular expression engine, and execute its pattern-matching methods. This requires that you avoid building regular expression patterns dynamically, and that you specify any pattern-matching options (such as case-insensitive pattern matching) at the time the assembly is created. It also requires that you separate the code that creates the assembly from the code that uses the regular expression.  
   
@@ -231,11 +231,11 @@ ms.custom: serodec18
   
  The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out. The default time-out interval is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType>, which means that the regular expression will not time out. You can override this value and define a time-out interval as follows:  
   
--   By providing a time-out value when you instantiate a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor.  
+- By providing a time-out value when you instantiate a <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> constructor.  
   
--   By calling a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, that includes a `matchTimeout` parameter.  
+- By calling a static pattern matching method, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=nameWithType>, that includes a `matchTimeout` parameter.  
   
--   For compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, by calling the constructor that has a parameter of type <xref:System.TimeSpan>.  
+- For compiled regular expressions that are created by calling the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, by calling the constructor that has a parameter of type <xref:System.TimeSpan>.  
   
  If you have defined a time-out interval and a match is not found at the end of that interval, the regular expression method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there is no match, or abandon the match attempt and log the exception information for future analysis.  
   
@@ -275,13 +275,13 @@ ms.custom: serodec18
   
  You can disable captures in one of the following ways:  
   
--   Use the `(?:subexpression)` language element. This element prevents the capture of matched substrings in the group to which it applies. It does not disable substring captures in any nested groups.  
+- Use the `(?:subexpression)` language element. This element prevents the capture of matched substrings in the group to which it applies. It does not disable substring captures in any nested groups.  
   
--   Use the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> option. It disables all unnamed or implicit captures in the regular expression pattern. When you use this option, only substrings that match named groups defined with the `(?<name>subexpression)` language element can be captured. The <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> flag can be passed to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> static matching method.  
+- Use the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> option. It disables all unnamed or implicit captures in the regular expression pattern. When you use this option, only substrings that match named groups defined with the `(?<name>subexpression)` language element can be captured. The <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture> flag can be passed to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> static matching method.  
   
--   Use the `n` option in the `(?imnsx)` language element. This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears. Captures are disabled either until the end of the pattern or until the `(-n)` option enables unnamed or implicit captures. For more information, see [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md).  
+- Use the `n` option in the `(?imnsx)` language element. This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears. Captures are disabled either until the end of the pattern or until the `(-n)` option enables unnamed or implicit captures. For more information, see [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md).  
   
--   Use the `n` option in the `(?imnsx:subexpression)` language element. This option disables all unnamed or implicit captures in `subexpression`. Captures by any unnamed or implicit nested capturing groups are disabled as well.  
+- Use the `n` option in the `(?imnsx:subexpression)` language element. This option disables all unnamed or implicit captures in `subexpression`. Captures by any unnamed or implicit nested capturing groups are disabled as well.  
   
  [Back to top](#top)  
   

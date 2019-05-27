@@ -10,16 +10,16 @@ ms.assetid: 314077c1-ac10-47e1-bed4-940b5462359d
 # Generating the Data Service Client Library (WCF Data Services)
 A data service that implements the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] can return a service metadata document that describes the data model exposed by the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed. For more information, see [OData: Service Metadata Document](https://go.microsoft.com/fwlink/?LinkId=186070). You can use the **Add Service Reference** dialog in Visual Studio to add a reference to an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-based service. When you use this tool to add a reference to the metadata returned by an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in a client project, it performs the following actions:  
   
--   Requests the service metadata document from the data service and interprets the returned metadata.  
+- Requests the service metadata document from the data service and interprets the returned metadata.  
   
     > [!NOTE]
     >  The returned metadata is stored in the client project as an .edmx file. This .edmx file cannot be opened by using the Entity Data Model designer because it does not have the same format an .edmx file used by the Entity Framework. You can view this metadata file by using the XML editor or any text editor. For more information, see the [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](https://go.microsoft.com/fwlink/?LinkID=178833) specification  
   
--   Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](https://msdn.microsoft.com/library/43014cf9-c9cb-4538-bfbb-197820b60038).  
+- Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](https://docs.microsoft.com/previous-versions/bb386871(v=vs.100)).  
   
--   Generates data classes for the data model types that it discovers in the service metadata.  
+- Generates data classes for the data model types that it discovers in the service metadata.  
   
--   Adds a reference to the `System.Data.Services.Client` assembly to the project.  
+- Adds a reference to the `System.Data.Services.Client` assembly to the project.  
   
  For more information, see [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md).  
   
@@ -46,6 +46,7 @@ A data service that implements the [!INCLUDE[ssODataFull](../../../../includes/s
   
  For more information, see [OData: Primitive Data Types](https://go.microsoft.com/fwlink/?LinkId=186072).  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+## See also
+
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

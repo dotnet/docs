@@ -50,5 +50,6 @@ class TransactionFlowBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>

@@ -25,13 +25,13 @@ Automatic proxy detection is a process by which a Web proxy server is identified
   
  When automatic proxy detection is enabled, the <xref:System.Net.WebProxy> class attempts to locate the proxy configuration script as follows:  
   
-1.  The WinINet `InternetQueryOption` function is used to locate the proxy configuration script most recently detected by Internet Explorer.  
+1. The WinINet `InternetQueryOption` function is used to locate the proxy configuration script most recently detected by Internet Explorer.  
   
-2.  If the script is not located, the <xref:System.Net.WebProxy> class uses the Dynamic Host Configuration Protocol (DHCP) to locate the script. The DHCP server can respond either with the location (host name) of the script or with the full URL for the script.  
+2. If the script is not located, the <xref:System.Net.WebProxy> class uses the Dynamic Host Configuration Protocol (DHCP) to locate the script. The DHCP server can respond either with the location (host name) of the script or with the full URL for the script.  
   
-3.  If DHCP does not identify the WPAD host, DNS is queried for a host with WPAD as its name or alias.  
+3. If DHCP does not identify the WPAD host, DNS is queried for a host with WPAD as its name or alias.  
   
-4.  If the host is not identified and the location of a proxy configuration script is specified by the Internet Explorer LAN settings or a configuration file, this location is used.  
+4. If the host is not identified and the location of a proxy configuration script is specified by the Internet Explorer LAN settings or a configuration file, this location is used.  
   
 > [!NOTE]
 >  Applications running as an NT Service or as part of ASP.NET use the Internet Explorer proxy server settings (if available) of the invoking user. These settings may not be available for all service applications.  
@@ -61,7 +61,8 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
   
  Requests that do not have a proxy use your application domain's default proxy, which is available in the <xref:System.Net.WebRequest.DefaultWebProxy%2A> property.  
   
-## See Also  
- <xref:System.Net.WebProxy>  
- <xref:System.Net.WebRequest>  
- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)
+## See also
+
+- <xref:System.Net.WebProxy>
+- <xref:System.Net.WebRequest>
+- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)

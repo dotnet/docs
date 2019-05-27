@@ -22,11 +22,11 @@ Retrieving a custom attribute is a simple process. First, declare an instance of
   
  This section describes the following ways to retrieve attributes:  
   
--   [Retrieving a single instance of an attribute](#cpconretrievingsingleinstanceofattribute)  
+- [Retrieving a single instance of an attribute](#cpconretrievingsingleinstanceofattribute)  
   
--   [Retrieving multiple instances of an attribute applied to the same scope](#cpconretrievingmultipleinstancesofattributeappliedtosamescope)  
+- [Retrieving multiple instances of an attribute applied to the same scope](#cpconretrievingmultipleinstancesofattributeappliedtosamescope)  
   
--   [Retrieving multiple instances of an attribute applied to different scopes](#cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes)  
+- [Retrieving multiple instances of an attribute applied to different scopes](#cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes)  
   
 <a name="cpconretrievingsingleinstanceofattribute"></a>   
 ## Retrieving a Single Instance of an Attribute  
@@ -80,7 +80,7 @@ The attribute was not found.
   
 ## See also
 
-- <xref:System.Type?displayProperty=nameWithType>  
-- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>  
-- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>  
+- <xref:System.Type?displayProperty=nameWithType>
+- <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>
+- <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>
 - [Attributes](../../../docs/standard/attributes/index.md)

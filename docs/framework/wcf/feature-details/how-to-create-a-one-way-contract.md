@@ -13,11 +13,11 @@ This topic shows the basic steps to create methods that use a one-way contract. 
   
 ### To create a one-way contract  
   
-1.  Create the service contract by applying the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface that defines the methods the service is to implement.  
+1. Create the service contract by applying the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface that defines the methods the service is to implement.  
   
-2.  Indicate which methods in the interface a client can invoked by applying the <xref:System.ServiceModel.OperationContractAttribute> class to them.  
+2. Indicate which methods in the interface a client can invoked by applying the <xref:System.ServiceModel.OperationContractAttribute> class to them.  
   
-3.  Designate operations that must have no output (no return value and no out or ref parameters) as one-way by setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true`. Note that the operations that carry the <xref:System.ServiceModel.OperationContractAttribute> class satisfy a request-reply contract by default because the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is `false` by default. So you must explicitly specify the value of the attribute property to be `true` if you want a one-way contract for the method.  
+3. Designate operations that must have no output (no return value and no out or ref parameters) as one-way by setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true`. Note that the operations that carry the <xref:System.ServiceModel.OperationContractAttribute> class satisfy a request-reply contract by default because the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is `false` by default. So you must explicitly specify the value of the attribute property to be `true` if you want a one-way contract for the method.  
   
 ## Example  
  The following code example defines a contract for a service that includes several one-way methods. All of the methods have one-way contracts except `Equals`, which defaults to request-reply and returns a result.  
@@ -25,10 +25,11 @@ This topic shows the basic steps to create methods that use a one-way contract. 
  [!code-csharp[S_Service_Session#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_service_session/cs/service.cs#1)]
  [!code-vb[S_Service_Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_service_session/vb/service.vb#1)]  
   
-## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute>  
- <xref:System.ServiceModel.OperationContractAttribute>  
- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)  
- [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)  
- [Session](../../../../docs/framework/wcf/samples/session.md)  
- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+## See also
+
+- <xref:System.ServiceModel.ServiceContractAttribute>
+- <xref:System.ServiceModel.OperationContractAttribute>
+- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)
+- [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)
+- [Session](../../../../docs/framework/wcf/samples/session.md)
+- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)

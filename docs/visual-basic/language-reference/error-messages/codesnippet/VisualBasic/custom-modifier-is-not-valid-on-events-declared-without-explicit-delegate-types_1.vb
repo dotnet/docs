@@ -1,1 +1,0 @@
-    Delegate Sub TestDelegate(ByVal sender As Object, ByVal i As Integer)

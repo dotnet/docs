@@ -12,9 +12,9 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
 
 ## To build the sample using a command prompt
 
-1.  Open Developer Command Prompt for Visual Studio and navigate to the language-specific subdirectory under the directory location where you installed the sample.
+1. Open Developer Command Prompt for Visual Studio and navigate to the language-specific subdirectory under the directory location where you installed the sample.
 
-2.  Type `msbuild` at the command line. The client program files are built to *client\bin* and the service program files are built to *service\bin*. If the service is hosted by Internet Information Services (IIS), the service program files are also copied to the *servicemodelsamples* directory and its *\bin* subdirectory.
+2. Type `msbuild` at the command line. The client program files are built to *client\bin* and the service program files are built to *service\bin*. If the service is hosted by Internet Information Services (IIS), the service program files are also copied to the *servicemodelsamples* directory and its *\bin* subdirectory.
 
 > [!NOTE]
 > You must set the ACLs on *%systemdrive%\inetpub\wwwroot* to grant modify permissions to the account under which you are running. Otherwise some post build events fail. Alternatively, you can leave the ACLs as they are and run the SDK command prompt as administrator.
@@ -44,9 +44,9 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
 
 ### To regenerate the client and configuration files
 
-1.  Open an SDK command prompt and navigate to the language-specific subdirectory under the directory location where you installed the sample.
+1. Open an SDK command prompt and navigate to the language-specific subdirectory under the directory location where you installed the sample.
 
-2.  If the service is a Web-hosted type, use the following command.
+2. If the service is a Web-hosted type, use the following command.
 
     ```
     svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost/servicemodelsamples/service.svc/mex /out:generatedClient.cs
@@ -75,7 +75,7 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
     > [!NOTE]
     > To skip the generation of client configuration add the **/noConfig** option.
 
-## See Also
+## See also
 
 - [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md)
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

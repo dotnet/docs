@@ -18,7 +18,7 @@ Microsoft exposes a variety of community resources for you to learn about, discu
 
 ## Forums
 
-The [WPF forum](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=wpf) is the primary community resource for discussing and resolving issues. Forums facilitate discussion and problem resolution by offering a comprehensive set of supporting features that include:
+The [WPF forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=wpf) is the primary community resource for discussing and resolving issues. Forums facilitate discussion and problem resolution by offering a comprehensive set of supporting features that include:
 
 - Searching.
 - Discussion tracking.
@@ -114,4 +114,4 @@ Ordinarily, crash and data loss scenarios are high impact and, therefore, the ea
 
 ## See also
 
-[How to report a problem with Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [How to report a problem with Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

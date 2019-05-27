@@ -293,5 +293,6 @@ static double Round(double value, short digits)
 }  
 ```  
   
-## See Also  
- [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)
+## See also
+
+- [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)

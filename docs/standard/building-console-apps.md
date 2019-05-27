@@ -28,5 +28,5 @@ Applications in the .NET Framework can use the <xref:System.Console?displayPrope
   
 ## See also
 
-- <xref:System.Console?displayProperty=nameWithType>  
+- <xref:System.Console?displayProperty=nameWithType>
 - [Formatting Types](../../docs/standard/base-types/formatting-types.md)

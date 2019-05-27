@@ -53,4 +53,4 @@ Lists the Global Tools from a specific Linux/macOS folder:
 
 ## See also
 
-* [.NET Core Global Tools](global-tools.md)
+- [.NET Core Global Tools](global-tools.md)

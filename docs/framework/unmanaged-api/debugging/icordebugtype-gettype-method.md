@@ -29,7 +29,7 @@ HRESULT GetType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ty`  
  [out] A pointer to a value of the `CorElementType` enumeration that indicates the CLR <xref:System.Type> that this `ICorDebugType` represents.  
   

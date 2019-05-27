@@ -1,1 +1,0 @@
-    Implements IEnumerator(Of String)

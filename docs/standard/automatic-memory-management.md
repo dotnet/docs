@@ -47,6 +47,6 @@ Automatic memory management is one of the services that the Common Language Runt
   
 ## See also
 
-- <xref:System.GC>  
-- [Garbage Collection](../../docs/standard/garbage-collection/index.md)  
+- <xref:System.GC>
+- [Garbage Collection](../../docs/standard/garbage-collection/index.md)
 - [Managed Execution Process](../../docs/standard/managed-execution-process.md)

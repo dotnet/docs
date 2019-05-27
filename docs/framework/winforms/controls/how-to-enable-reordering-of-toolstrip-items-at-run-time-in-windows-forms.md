@@ -16,7 +16,7 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
   
 ### To enable ToolStripItem rearrangement at run time  
   
--   Set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `true`. By default, <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> is `false`.  
+- Set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `true`. By default, <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> is `false`.  
   
      At run time, the user holds down the ALT key and the left mouse button to drag a <xref:System.Windows.Forms.ToolStripItem> to a different location on the <xref:System.Windows.Forms.ToolStrip>.  
   
@@ -28,9 +28,10 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
     toolStrip1.AllowItemReorder = true;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+## See also
+
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A>
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

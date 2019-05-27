@@ -73,11 +73,11 @@ Dim contacts = _
 ## Working Directly with XML Elements  
  When you program with XML, your primary focus is usually on XML elements and perhaps on attributes. In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], you can work directly with XML elements and attributes. For example, you can do the following:  
   
--   Create XML elements without using a document object at all. This simplifies programming when you have to work with fragments of XML trees.  
+- Create XML elements without using a document object at all. This simplifies programming when you have to work with fragments of XML trees.  
   
--   Load `T:System.Xml.Linq.XElement` objects directly from an XML file.  
+- Load `T:System.Xml.Linq.XElement` objects directly from an XML file.  
   
--   Serialize `T:System.Xml.Linq.XElement` objects to a file or a stream.  
+- Serialize `T:System.Xml.Linq.XElement` objects to a file or a stream.  
   
  Compare this to the W3C DOM, in which the XML document is used as a logical container for the XML tree. In DOM, XML nodes, including elements and attributes, must be created in the context of an XML document. Here is a fragment of the code to create a name element in DOM:  
   
@@ -124,5 +124,6 @@ doc.AppendChild(name)
 ## Support for Schema Information  
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides support for XSD validation through extension methods in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace. You can validate that an XML tree complies with an XSD. You can populate the XML tree with the post-schema-validation infoset (PSVI). For more information, see [How to: Validate Using XSD](../../../../visual-basic/programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md) and <xref:System.Xml.Schema.Extensions>.  
   
-## See Also  
- [Getting Started (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+## See also
+
+- [Getting Started (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

@@ -42,5 +42,6 @@ class AsymmetricSecurityBindingElement : SecurityBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>

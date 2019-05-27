@@ -21,7 +21,7 @@ ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
 # Implementing the Event-based Asynchronous Pattern
 If you are writing a class with some operations that may incur noticeable delays, consider giving it asynchronous functionality by implementing [Event-based Asynchronous Pattern Overview](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
- The Event-based Asynchronous Pattern provides a standardized way to package a class that has asynchronous features. If implemented with helper classes like <xref:System.ComponentModel.AsyncOperationManager>, your class will work correctly under any application model, including [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)], Console applications, and Windows Forms applications.  
+ The Event-based Asynchronous Pattern provides a standardized way to package a class that has asynchronous features. If implemented with helper classes like <xref:System.ComponentModel.AsyncOperationManager>, your class will work correctly under any application model, including ASP.NET, Console applications, and Windows Forms applications.  
   
  For an example that implements the Event-based Asynchronous Pattern, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md).  
   
@@ -29,26 +29,26 @@ If you are writing a class with some operations that may incur noticeable delays
   
  The following list describes the features of the Event-based Asynchronous Pattern discussed in this topic.  
   
--   Opportunities for Implementing the Event-based Asynchronous Pattern  
+- Opportunities for Implementing the Event-based Asynchronous Pattern  
   
--   Naming Asynchronous Methods  
+- Naming Asynchronous Methods  
   
--   Optionally Support Cancellation  
+- Optionally Support Cancellation  
   
--   Optionally Support the IsBusy Property  
+- Optionally Support the IsBusy Property  
   
--   Optionally Provide Support for Progress Reporting  
+- Optionally Provide Support for Progress Reporting  
   
--   Optionally Provide Support for Returning Incremental Results  
+- Optionally Provide Support for Returning Incremental Results  
   
--   Handling Out and Ref Parameters in Methods  
+- Handling Out and Ref Parameters in Methods  
   
 ## Opportunities for Implementing the Event-based Asynchronous Pattern  
  Consider implementing the Event-based Asynchronous Pattern when:  
   
--   Clients of your class do not need <xref:System.Threading.WaitHandle> and <xref:System.IAsyncResult> objects available for asynchronous operations, meaning that polling and <xref:System.Threading.WaitHandle.WaitAll%2A> or <xref:System.Threading.WaitHandle.WaitAny%2A> will need to be built up by the client.  
+- Clients of your class do not need <xref:System.Threading.WaitHandle> and <xref:System.IAsyncResult> objects available for asynchronous operations, meaning that polling and <xref:System.Threading.WaitHandle.WaitAll%2A> or <xref:System.Threading.WaitHandle.WaitAny%2A> will need to be built up by the client.  
   
--   You want asynchronous operations to be managed by the client with the familiar event/delegate model.  
+- You want asynchronous operations to be managed by the client with the familiar event/delegate model.  
   
  Any operation is a candidate for an asynchronous implementation, but those you expect to incur long latencies should be considered. Especially appropriate are operations in which clients call a method and are notified on completion, with no further intervention required. Also appropriate are operations which run continuously, periodically notifying clients of progress, incremental results, or state changes.  
   
@@ -59,17 +59,17 @@ If you are writing a class with some operations that may incur noticeable delays
   
  Define a _MethodName_**Async** method that:  
   
--   Returns `void`.  
+- Returns `void`.  
   
--   Takes the same parameters as the *MethodName* method.  
+- Takes the same parameters as the *MethodName* method.  
   
--   Accepts multiple invocations.  
+- Accepts multiple invocations.  
   
  Optionally define a _MethodName_**Async** overload, identical to _MethodName_**Async**, but with an additional object-valued parameter called `userState`. Do this if you're prepared to manage multiple concurrent invocations of your method, in which case the `userState` value will be delivered back to all event handlers to distinguish invocations of the method. You may also choose to do this simply as a place to store user state for later retrieval.  
   
  For each separate _MethodName_**Async** method signature:  
   
-1.  Define the following event in the same class as the method:  
+1. Define the following event in the same class as the method:  
   
     ```vb  
     Public Event MethodNameCompleted As MethodNameCompletedEventHandler  
@@ -79,7 +79,7 @@ If you are writing a class with some operations that may incur noticeable delays
     public event MethodNameCompletedEventHandler MethodNameCompleted;  
     ```  
   
-2.  Define the following delegate and <xref:System.ComponentModel.AsyncCompletedEventArgs>. These will likely be defined outside of the class itself, but in the same namespace.  
+2. Define the following delegate and <xref:System.ComponentModel.AsyncCompletedEventArgs>. These will likely be defined outside of the class itself, but in the same namespace.  
   
     ```vb  
     Public Delegate Sub MethodNameCompletedEventHandler( _  
@@ -102,9 +102,9 @@ If you are writing a class with some operations that may incur noticeable delays
     }  
     ```  
   
-    -   Ensure that the _MethodName_**CompletedEventArgs** class exposes its members as read-only properties, and not fields, as fields prevent data binding.  
+    - Ensure that the _MethodName_**CompletedEventArgs** class exposes its members as read-only properties, and not fields, as fields prevent data binding.  
   
-    -   Do not define any <xref:System.ComponentModel.AsyncCompletedEventArgs>-derived classes for methods that do not produce results. Simply use an instance of <xref:System.ComponentModel.AsyncCompletedEventArgs> itself.  
+    - Do not define any <xref:System.ComponentModel.AsyncCompletedEventArgs>-derived classes for methods that do not produce results. Simply use an instance of <xref:System.ComponentModel.AsyncCompletedEventArgs> itself.  
   
         > [!NOTE]
         >  It is perfectly acceptable, when feasible and appropriate, to reuse delegate and <xref:System.ComponentModel.AsyncCompletedEventArgs> types. In this case, the naming will not be as consistent with the method name, since a given delegate and <xref:System.ComponentModel.AsyncCompletedEventArgs> won't be tied to a single method.  
@@ -112,9 +112,9 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Optionally Support Cancellation  
  If your class will support canceling asynchronous operations, cancellation should be exposed to the client as described below. Note that there are two decision points that need to be reached before defining your cancellation support:  
   
--   Does your class, including future anticipated additions to it, have only one asynchronous operation that supports cancellation?  
+- Does your class, including future anticipated additions to it, have only one asynchronous operation that supports cancellation?  
   
--   Can the asynchronous operations that support cancellation support multiple pending operations? That is, does the _MethodName_**Async** method take a `userState` parameter, and does it allow multiple invocations before waiting for any to finish?  
+- Can the asynchronous operations that support cancellation support multiple pending operations? That is, does the _MethodName_**Async** method take a `userState` parameter, and does it allow multiple invocations before waiting for any to finish?  
   
  Use the answers to these two questions in the table below to determine what the signature for your cancellation method should be.  
   
@@ -125,7 +125,7 @@ If you are writing a class with some operations that may incur noticeable delays
 |One Async Operation in entire class|`Sub MethodNameAsyncCancel(ByVal userState As Object)`|`Sub MethodNameAsyncCancel()`|  
 |Multiple Async Operations in class|`Sub CancelAsync(ByVal userState As Object)`|`Sub CancelAsync()`|  
   
-### C#  
+### C\#
   
 ||Multiple Simultaneous Operations Supported|Only One Operation at a Time|  
 |------|------------------------------------------------|----------------------------------|  
@@ -150,13 +150,13 @@ If you are writing a class with some operations that may incur noticeable delays
 ## Optionally Provide Support for Progress Reporting  
  It is frequently desirable for an asynchronous operation to report progress during its operation. The Event-based Asynchronous Pattern provides a guideline for doing so.  
   
--   Optionally define an event to be raised by the asynchronous operation and invoked on the appropriate thread. The <xref:System.ComponentModel.ProgressChangedEventArgs> object carries an integer-valued progress indicator that is expected to be between 0 and 100.  
+- Optionally define an event to be raised by the asynchronous operation and invoked on the appropriate thread. The <xref:System.ComponentModel.ProgressChangedEventArgs> object carries an integer-valued progress indicator that is expected to be between 0 and 100.  
   
--   Name this event as follows:  
+- Name this event as follows:  
   
-    -   `ProgressChanged` if the class has multiple asynchronous operations (or is expected to grow to include multiple asynchronous operations in future versions);  
+    - `ProgressChanged` if the class has multiple asynchronous operations (or is expected to grow to include multiple asynchronous operations in future versions);  
   
-    -   _MethodName_**ProgressChanged** if the class has a single asynchronous operation.  
+    - _MethodName_**ProgressChanged** if the class has a single asynchronous operation.  
   
      This naming choice parallels that made for the cancellation method, as described in the Optionally Support Cancellation section.  
   
@@ -174,9 +174,9 @@ If you are writing a class with some operations that may incur noticeable delays
 ### Single-operation Class  
  If your class only supports a single asynchronous operation, and that operation is able to return incremental results, then:  
   
--   Extend the <xref:System.ComponentModel.ProgressChangedEventArgs> type to carry the incremental result data, and define a _MethodName_**ProgressChanged** event with this extended data.  
+- Extend the <xref:System.ComponentModel.ProgressChangedEventArgs> type to carry the incremental result data, and define a _MethodName_**ProgressChanged** event with this extended data.  
   
--   Raise this _MethodName_**ProgressChanged** event when there is an incremental result to report.  
+- Raise this _MethodName_**ProgressChanged** event when there is an incremental result to report.  
   
  This solution applies specifically to a single-async-operation class because there is no problem with the same event occurring to return incremental results on "all operations", as the _MethodName_**ProgressChanged** event does.  
   
@@ -188,9 +188,9 @@ If you are writing a class with some operations that may incur noticeable delays
 ### Multiple-operation Class with Heterogeneous Incremental Results  
  If your class supports multiple asynchronous methods, each returning a different type of data, you should:  
   
--   Separate your incremental result reporting from your progress reporting.  
+- Separate your incremental result reporting from your progress reporting.  
   
--   Define a separate _MethodName_**ProgressChanged** event with appropriate <xref:System.EventArgs> for each asynchronous method to handle that method's incremental result data.  
+- Define a separate _MethodName_**ProgressChanged** event with appropriate <xref:System.EventArgs> for each asynchronous method to handle that method's incremental result data.  
   
  Invoke that event handler on the appropriate thread as described in [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md).  
   
@@ -199,9 +199,9 @@ If you are writing a class with some operations that may incur noticeable delays
   
  Given a synchronous method *MethodName*:  
   
--   `out` parameters to *MethodName* should not be part of _MethodName_**Async**. Instead, they should be part of _MethodName_**CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
+- `out` parameters to *MethodName* should not be part of _MethodName_**Async**. Instead, they should be part of _MethodName_**CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
   
--   `ref` parameters to *MethodName* should appear as part of _MethodName_**Async**, and as part of _MethodName_**CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
+- `ref` parameters to *MethodName* should appear as part of _MethodName_**Async**, and as part of _MethodName_**CompletedEventArgs** with the same name as its parameter equivalent in *MethodName* (unless there is a more appropriate name).  
   
  For example, given:  
   
@@ -242,11 +242,11 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
   
 ## See also
 
-- <xref:System.ComponentModel.ProgressChangedEventArgs>  
-- <xref:System.ComponentModel.AsyncCompletedEventArgs>  
-- [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)  
-- [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)  
-- [How to: Implement a Form That Uses a Background Operation](../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
-- [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)  
-- [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)  
-- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
+- <xref:System.ComponentModel.ProgressChangedEventArgs>
+- <xref:System.ComponentModel.AsyncCompletedEventArgs>
+- [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/component-that-supports-the-event-based-asynchronous-pattern.md)
+- [How to: Run an Operation in the Background](../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [How to: Implement a Form That Uses a Background Operation](../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [Deciding When to Implement the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
+- [Best Practices for Implementing the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
+- [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

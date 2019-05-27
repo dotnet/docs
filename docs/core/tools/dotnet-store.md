@@ -77,4 +77,4 @@ Store the packages specified in the *packages.csproj* without optimization:
 
 ## See also
 
-* [Runtime package store](../deploying/runtime-store.md)
+- [Runtime package store](../deploying/runtime-store.md)

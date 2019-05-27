@@ -1,5 +1,5 @@
 ---
-title: "&lt;linkedConfiguration&gt; element"
+title: "<linkedConfiguration> element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/assemblyBinding/linkedConfiguration"
@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "linked configuration files"
   - "linkedConfiguration Element"
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # \<linkedConfiguration> element
@@ -80,5 +78,5 @@ The following example shows how to include configuration file from the local har
 
 ## See also
 
-[**\<assemblyBinding>** Element](~/docs/framework/configure-apps/file-schema/assemblybinding-element-for-configuration.md)   
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [**\<assemblyBinding>** Element](~/docs/framework/configure-apps/file-schema/assemblybinding-element-for-configuration.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

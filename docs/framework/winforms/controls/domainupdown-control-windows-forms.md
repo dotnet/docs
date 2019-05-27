@@ -14,16 +14,16 @@ The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control looks like a 
   
  The key properties of the control are <xref:System.Windows.Forms.DomainUpDown.Items%2A>, <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A>, and <xref:System.Windows.Forms.DomainUpDown.Wrap%2A>. The <xref:System.Windows.Forms.DomainUpDown.Items%2A> property contains the list of objects whose text values are displayed in the control. If <xref:System.Windows.Forms.UpDownBase.ReadOnly%2A> is set to `false`, the control automatically completes text that the user types and matches it to a value in the list. If <xref:System.Windows.Forms.DomainUpDown.Wrap%2A> is set to `true`, scrolling past the last item will take you to the first item in the list and vice versa. The key methods of the control are <xref:System.Windows.Forms.DomainUpDown.UpButton%2A> and <xref:System.Windows.Forms.DomainUpDown.DownButton%2A>.  
   
- This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md) .  
+ This control displays only text strings. If you want a control that displays numeric values, use the <xref:System.Windows.Forms.NumericUpDown> control. For more information, see [NumericUpDown Control](numericupdown-control-windows-forms.md) .  
   
 ## In This Section  
- [DomainUpDown Control Overview](../../../../docs/framework/winforms/controls/domainupdown-control-overview-windows-forms.md)  
+ [DomainUpDown Control Overview](domainupdown-control-overview-windows-forms.md)  
  Introduces the general concepts of the <xref:System.Windows.Forms.DomainUpDown> control, which allows users to browse through and select from a list of text strings.  
   
- [How to: Add Items to Windows Forms DomainUpDown Controls Programmatically](../../../../docs/framework/winforms/controls/how-to-add-items-to-windows-forms-domainupdown-controls-programmatically.md)  
+ [How to: Add Items to Windows Forms DomainUpDown Controls Programmatically](how-to-add-items-to-windows-forms-domainupdown-controls-programmatically.md)  
  Describes how to specify the text strings the <xref:System.Windows.Forms.DomainUpDown> control should display.  
   
- [How to: Remove Items from Windows Forms DomainUpDown Controls](../../../../docs/framework/winforms/controls/how-to-remove-items-from-windows-forms-domainupdown-controls.md)  
+ [How to: Remove Items from Windows Forms DomainUpDown Controls](how-to-remove-items-from-windows-forms-domainupdown-controls.md)  
  Describes how to delete items from the <xref:System.Windows.Forms.DomainUpDown> control in code.  
   
 ## Reference  
@@ -34,5 +34,5 @@ The Windows Forms <xref:System.Windows.Forms.DomainUpDown> control looks like a 
  Describes this class and has links to all its members..  
   
 ## Related Sections  
- [Controls You Can Use On Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
+ [Controls You Can Use On Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

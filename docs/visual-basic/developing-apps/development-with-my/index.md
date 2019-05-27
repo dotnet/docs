@@ -17,7 +17,7 @@ Visual Basic provides new features for rapid application development that improv
   
  This table shows the top-level `My` objects and their relationship to each other.  
   
- ![Object Model for My](../../../visual-basic/developing-apps/development-with-my/media/myobjmodel.gif "MyObjModel")  
+ ![Diagram shows the object model for My.](./media/index/my-object-model-relationships.gif)  
   
 ## In This Section  
  [Performing Tasks with My.Application, My.Computer, and My.User](../../../visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)  
@@ -35,10 +35,11 @@ Visual Basic provides new features for rapid application development that improv
  [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
  Gives details on which `My` features are available in different project types.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
- <xref:Microsoft.VisualBasic.Devices.Computer>  
- <xref:Microsoft.VisualBasic.ApplicationServices.User>  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)  
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)  
- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
+- <xref:Microsoft.VisualBasic.Devices.Computer>
+- <xref:Microsoft.VisualBasic.ApplicationServices.User>
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)

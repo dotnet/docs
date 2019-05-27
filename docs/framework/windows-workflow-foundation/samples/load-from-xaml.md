@@ -8,11 +8,11 @@ This sample demonstrates how to dynamically load a XAML workflow without having 
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the LoadFromXAML.sln solution file.
+1. Using Visual Studio 2010, open the LoadFromXAML.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press CTRL+F5.
+3. To run the solution, press CTRL+F5.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

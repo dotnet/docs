@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 2af86001-9d62-4154-87fb-66db2c3cd9fd
 ---
 # How to: Add Controls to Windows Forms
-Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input. For more information about controls, see [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md).  
+Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input. For more information about controls, see [Windows Forms Controls](index.md).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To draw a control on a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1. Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
   
-2.  In the **Toolbox**, click the control you want to add to your form.  
+2. In the **Toolbox**, click the control you want to add to your form.  
   
-3.  On the form, click where you want the upper-left corner of the control to be located, and drag to where you want the lower-right corner of the control to be located.  
+3. On the form, click where you want the upper-left corner of the control to be located, and drag to where you want the lower-right corner of the control to be located.  
   
      The control is added to the form with the specified location and size.  
   
@@ -31,9 +31,9 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To drag a control to a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1. Open the form. For more information, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
   
-2.  In the **Toolbox**, click the control you want and drag it to your form.  
+2. In the **Toolbox**, click the control you want and drag it to your form.  
   
      The control is added to the form at the specified location in its default size.  
   
@@ -47,7 +47,7 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To add a control to a form programmatically  
   
-1.  In the method that handles the button's `Click` event within your form's class, insert code similar to the following to add a reference to your control variable, set the control's `Location`, and add the control.  
+1. In the method that handles the button's `Click` event within your form's class, insert code similar to the following to add a reference to your control variable, set the control's `Location`, and add the control.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -83,9 +83,10 @@ Most forms are designed by adding controls to the surface of the form to define 
     > [!IMPORTANT]
     >  You might expose your local computer to a security risk through the network by referencing a malicious `UserControl`. This would only be a concern in the case of a malicious person creating a damaging custom control, followed by you mistakenly adding it to your project.  
   
-## See Also  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)  
- [How to: Resize Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-resize-controls-on-windows-forms.md)  
- [How to: Set the Text Displayed by a Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+
+- [Windows Forms Controls](index.md)
+- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
+- [How to: Resize Controls on Windows Forms](how-to-resize-controls-on-windows-forms.md)
+- [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

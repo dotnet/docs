@@ -57,8 +57,6 @@ Most list controls (such as the <xref:System.Windows.Forms.ListBox?displayProper
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
 * That the following namespaces be imported:
 
   <xref:System> (in C# code)
@@ -67,6 +65,6 @@ This example requires:
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
-* [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
+- [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)

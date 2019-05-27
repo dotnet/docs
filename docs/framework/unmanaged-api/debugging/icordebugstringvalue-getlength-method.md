@@ -29,7 +29,7 @@ HRESULT GetLength (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcchString`  
  [out] A pointer to a value that specifies the length of the string referenced by this `ICorDebugStringValue` object.  
   

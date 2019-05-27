@@ -4,11 +4,11 @@ description: Learn how to build a simple .NET Core console application with Visu
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-dev_langs: 
+dev_langs:
   - "vb"
 ms.custom: "vs-dotnet, seodec18"
 ---
-# Build a .NET Core Visual Basic Hello World application in Visual Studio 2017
+# Build a Visual Basic Hello World application with the .NET Core SDK in Visual Studio 2017
 
 This topic provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using Visual Basic in Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application doesn't have platform-specific dependencies, the application can run on any platform that .NET Core targets and on any system that has .NET Core installed.
 
@@ -25,7 +25,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual Basic** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
 
    ![New Project dialog with Console App selected](./media/vb-with-visual-studio/visual-studio-new-project.png)
-   
+
 1. Visual Studio uses the template to create your project. The Visual Basic Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
    ![Visual Studio and the new HelloWorld project](./media/vb-with-visual-studio/visual-studio-main-window.png)
@@ -38,6 +38,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
    Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
+
    This code prompts the user to press any key and then pauses the program until a key is pressed.
 
 1. On the menu bar, select **Build** > **Build Solution**. This compiles your program into an intermediate language (IL) that's converted into binary code by a just-in-time (JIT) compiler.
@@ -56,7 +57,7 @@ Enhance your application to prompt the user for his or her name and to display i
 
    [!code-vb[GettingStarted#1](../../../samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
 
-   This code replaces the existing <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, <xref:System.Console.Write%2A?displayProperty=nameWithType>, and <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> statements.
+   This code replaces the contents of the `Main` method.
 
    ![Visual Studio Program file with updated Main method](./media/vb-with-visual-studio/visual-basic-code-window.png)
 
@@ -72,13 +73,10 @@ Enhance your application to prompt the user for his or her name and to display i
 
 You've created and run your application. To develop a professional application, take some additional steps to make your application ready for release:
 
-- For information on debugging your application, see [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md).
+- To debug your application, see [Debug your .NET Core Hello World application using Visual Studio 2017](debugging-with-visual-studio.md).
 
-- For information on developing and publishing a distributable version of your application, see [Publishing your C# Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
+- To publish a distributable version of your application, see [Publish your .NET Core Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
 
-<!--
 ## Related topics
 
-Instead of a console application, you can also build a class library with .NET Core and Visual Studio 2017. For a step-by-step introduction, see [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md).
-
-You can also develop a .NET Core console app on Mac, Linux, and Windows by using [Visual Studio Code](https://code.visualstudio.com/), a downloadable code editor. For a step-by-step tutorial, see [Getting Started with Visual Studio Code](with-visual-studio-code.md). -->
+Instead of a console application, you can also build a .NET Standard class library with Visual Basic, .NET Core, and Visual Studio 2017. For a step-by-step introduction, see [Build a .NET Standard library with Visual Basic and .NET Core SDK in Visual Studio 2017](vb-library-with-visual-studio.md).

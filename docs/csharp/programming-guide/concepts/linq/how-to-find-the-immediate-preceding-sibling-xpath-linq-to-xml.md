@@ -46,6 +46,6 @@ Results are identical
 <Child3 />  
 ```  
   
-## See Also
+## See also
 
 - [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

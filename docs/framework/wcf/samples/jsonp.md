@@ -58,8 +58,8 @@ Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Wa
   
 #### To run the sample  
   
-1.  Open the solution for the JSONP Sample.  
+1. Open the solution for the JSONP Sample.  
   
-2.  Press F5 to launch `http://localhost:26648/JSONPClientPage.aspx` in the browser.  
+2. Press F5 to launch `http://localhost:26648/JSONPClientPage.aspx` in the browser.  
   
-3.  Notice that after the page loads, the text inputs for "Name" and "Address" are populated by values.  These values were supplied from a call to the WCF service after the browser finished rendering the page.
+3. Notice that after the page loads, the text inputs for "Name" and "Address" are populated by values.  These values were supplied from a call to the WCF service after the browser finished rendering the page.

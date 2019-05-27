@@ -45,5 +45,5 @@ author: "KrzysztofCwalina"
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

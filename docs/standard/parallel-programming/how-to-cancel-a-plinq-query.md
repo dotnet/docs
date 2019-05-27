@@ -28,9 +28,9 @@ The following examples show two ways to cancel a PLINQ query. The first example 
   
  The general guidance on cancellation is as follows:  
   
-1.  If you perform user-delegate cancellation you should inform PLINQ about the external <xref:System.Threading.CancellationToken> and throw an <xref:System.OperationCanceledException>(externalCT).  
+1. If you perform user-delegate cancellation you should inform PLINQ about the external <xref:System.Threading.CancellationToken> and throw an <xref:System.OperationCanceledException>(externalCT).  
   
-2.  If cancellation occurs and no other exceptions are thrown, then you should handle an <xref:System.OperationCanceledException> rather than an <xref:System.AggregateException>.  
+2. If cancellation occurs and no other exceptions are thrown, then you should handle an <xref:System.OperationCanceledException> rather than an <xref:System.AggregateException>.  
   
 ## Example  
  The following example shows how to handle cancellation when you have a computationally expensive function in user code.  
@@ -46,6 +46,6 @@ The following examples show two ways to cancel a PLINQ query. The first example 
   
 ## See also
 
-- <xref:System.Linq.ParallelEnumerable>  
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)  
+- <xref:System.Linq.ParallelEnumerable>
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
 - [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

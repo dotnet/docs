@@ -45,9 +45,9 @@ The **-define** option defines `name` as a symbol in all source code files your 
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  On the **Build** tab, type the symbol that is to be defined in the **Conditional compilation symbols** box. For example, if you are using the code example that follows, just type `xx` into the text box.  
+2. On the **Build** tab, type the symbol that is to be defined in the **Conditional compilation symbols** box. For example, if you are using the code example that follows, just type `xx` into the text box.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DefineConstants%2A>.  
   
@@ -72,7 +72,7 @@ public class Test
 }  
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

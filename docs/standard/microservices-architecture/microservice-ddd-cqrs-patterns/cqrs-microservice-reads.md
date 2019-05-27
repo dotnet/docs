@@ -1,8 +1,6 @@
 ---
 title: Implementing reads/queries in a CQRS microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the implementation of the queries side of CQRS on the ordering microservice in eShopOnContainers using Dapper.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Implement reads/queries in a CQRS microservice
@@ -182,13 +180,13 @@ You can see in the image above some example values based on the ViewModel types 
 ## Additional resources
 
 - **Dapper** \
-  [*https://github.com/StackExchange/dapper-dot-net*](https://github.com/StackExchange/dapper-dot-net)
+ <https://github.com/StackExchange/dapper-dot-net>
 
 - **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN Mag. article)** \
-  [*https://msdn.microsoft.com/magazine/mt703432.aspx*](https://msdn.microsoft.com/magazine/mt703432.aspx)
+  <https://msdn.microsoft.com/magazine/mt703432.aspx>
 
 - **ASP.NET Core Web API Help Pages using Swagger** \
-  [*https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio*](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
+  <https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio>
 
 >[!div class="step-by-step"]
 >[Previous](eshoponcontainers-cqrs-ddd-microservice.md)

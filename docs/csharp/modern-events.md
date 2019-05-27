@@ -28,9 +28,23 @@ The program will work exactly the same.
 
 You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
 
-[!code-csharp[SearchDir](../../samples/csharp/events/Program.cs#DeclareSearchEvent "Define search directory event")]
+```csharp
+internal struct SearchDirectoryArgs
+{
+    internal string CurrentSearchDirectory { get; }
+    internal int TotalDirs { get; }
+    internal int CompletedDirs { get; }
 
-The additional change is to call the default constructor before
+    internal SearchDirectoryArgs(string dir, int totalDirs, int completedDirs) : this()
+    {
+        CurrentSearchDirectory = dir;
+        TotalDirs = totalDirs;
+        CompletedDirs = completedDirs;
+    }
+}
+```
+
+The additional change is to call the parameterless constructor before
 entering the constructor that initializes all the fields. Without
 that addition, the rules of C# would report that the properties are
 being accessed before they have been assigned.

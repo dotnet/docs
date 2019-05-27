@@ -25,7 +25,7 @@ private static Hashtable s_ServicePointTable
 ```
 
 > [!WARNING]
-> The `ServicePointManager.s_ServicePointTable` field is private and not meant to be used directly in your code.
+> The `ServicePointManager.s_ServicePointTable` field is private and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

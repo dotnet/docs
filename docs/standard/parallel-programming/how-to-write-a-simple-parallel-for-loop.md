@@ -64,7 +64,7 @@ Synchronous calls to shared resources, like the Console or the File System, will
 
 Copy and paste this code into a Visual Studio project.
 
-## See Also
+## See also
 
 - <xref:System.Threading.Tasks.Parallel.For%2A>
 - <xref:System.Threading.Tasks.Parallel.ForEach%2A>

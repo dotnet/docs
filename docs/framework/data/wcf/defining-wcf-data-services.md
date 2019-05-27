@@ -51,7 +51,7 @@ This section describes how to create and configure WCF Data Services to expose d
 
  Describes optional functionalities of the OData protocol that are not currently implemented by WCF Data Services.
 
-## See Also
+## See also
 
 - [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
 - [Accessing Data Service Resources](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)

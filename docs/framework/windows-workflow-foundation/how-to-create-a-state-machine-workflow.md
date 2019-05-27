@@ -7,41 +7,41 @@ dev_langs:
 ms.assetid: 3ec60e8f-fad4-493e-a426-e7962d7aee8c
 ---
 # How to: Create a State Machine Workflow
-Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.StateMachine> activity, and the custom activities from the previous [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
+Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.StateMachine> activity, and the custom activities from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md).  
+>  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
   
 > [!NOTE]
 >  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### To create the workflow  
   
-1.  Right-click **NumberGuessWorkflowActivities** in **Solution Explorer** and select **Add**, **New Item**.  
+1. Right-click **NumberGuessWorkflowActivities** in **Solution Explorer** and select **Add**, **New Item**.  
   
-2.  In the **Installed**, **Common Items** node, select **Workflow**. Select **Activity** from the **Workflow** list.  
+2. In the **Installed**, **Common Items** node, select **Workflow**. Select **Activity** from the **Workflow** list.  
   
-3.  Type `StateMachineNumberGuessWorkflow` into the **Name** box and click **Add**.  
+3. Type `StateMachineNumberGuessWorkflow` into the **Name** box and click **Add**.  
   
-4.  Drag a **StateMachine** activity from the **State Machine** section of the **Toolbox** and drop it onto the **Drop activity here** label on the workflow design surface.  
+4. Drag a **StateMachine** activity from the **State Machine** section of the **Toolbox** and drop it onto the **Drop activity here** label on the workflow design surface.  
   
 ### To create the workflow variables and arguments  
   
-1.  Double-click **StateMachineNumberGuessWorkflow.xaml** in **Solution Explorer** to display the workflow in the designer, if it is not already displayed.  
+1. Double-click **StateMachineNumberGuessWorkflow.xaml** in **Solution Explorer** to display the workflow in the designer, if it is not already displayed.  
   
-2.  Click **Arguments** in the lower-left side of the workflow designer to display the **Arguments** pane.  
+2. Click **Arguments** in the lower-left side of the workflow designer to display the **Arguments** pane.  
   
-3.  Click **Create Argument**.  
+3. Click **Create Argument**.  
   
-4.  Type `MaxNumber` into the **Name** box, select **In** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER to save the argument.  
+4. Type `MaxNumber` into the **Name** box, select **In** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER to save the argument.  
   
-5.  Click **Create Argument**.  
+5. Click **Create Argument**.  
   
-6.  Type `Turns` into the **Name** box that is below the newly added `MaxNumber` argument, select **Out** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER.  
+6. Type `Turns` into the **Name** box that is below the newly added `MaxNumber` argument, select **Out** from the **Direction** drop-down list, select **Int32** from the **Argument type** drop-down list, and then press ENTER.  
   
-7.  Click **Arguments** in the lower-left side of the activity designer to close the **Arguments** pane.  
+7. Click **Arguments** in the lower-left side of the activity designer to close the **Arguments** pane.  
   
-8.  Click **Variables** in the lower-left side of the workflow designer to display the **Variables** pane.  
+8. Click **Variables** in the lower-left side of the workflow designer to display the **Variables** pane.  
   
 9. Click **Create Variable**.  
   
@@ -58,14 +58,14 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 ### To add the workflow activities  
   
-1.  Click **State1** to select it. In the **Properties Window**, change the **DisplayName** to `Initialize Target`.  
+1. Click **State1** to select it. In the **Properties Window**, change the **DisplayName** to `Initialize Target`.  
   
     > [!TIP]
     >  If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
   
-2.  Double-click the newly renamed **Initialize Target** state in the workflow designer to expand it.  
+2. Double-click the newly renamed **Initialize Target** state in the workflow designer to expand it.  
   
-3.  Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Entry** section of the state. Type `Target` into the **To** box and the following expression into the **Enter a C# expression** or **Enter a VB expression** box.  
+3. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Entry** section of the state. Type `Target` into the **To** box and the following expression into the **Enter a C# expression** or **Enter a VB expression** box.  
   
     ```vb  
     New System.Random().Next(1, MaxNumber + 1)  
@@ -78,15 +78,15 @@ Workflows can be constructed from built-in activities as well as from custom act
     > [!TIP]
     >  If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
   
-4.  Return to the overall state machine view in the workflow designer by clicking **StateMachine** in the breadcrumb display at the top of the workflow designer.  
+4. Return to the overall state machine view in the workflow designer by clicking **StateMachine** in the breadcrumb display at the top of the workflow designer.  
   
-5.  Drag a **State** activity from the **State Machine** section of the **Toolbox** onto the workflow designer and hover it over the **Initialize Target** state. Note that four triangles will appear around the **Initialize Target** state when the new state is over it. Drop the new state on the triangle that is immediately below the **Initialize Target** state. This places the new state onto the workflow and creates a transition from the **Initialize Target** state to the new state.  
+5. Drag a **State** activity from the **State Machine** section of the **Toolbox** onto the workflow designer and hover it over the **Initialize Target** state. Note that four triangles will appear around the **Initialize Target** state when the new state is over it. Drop the new state on the triangle that is immediately below the **Initialize Target** state. This places the new state onto the workflow and creates a transition from the **Initialize Target** state to the new state.  
   
-6.  Click **State1** to select it, change the **DisplayName** to `Enter Guess`, and then double-click the state in the workflow designer to expand it.  
+6. Click **State1** to select it, change the **DisplayName** to `Enter Guess`, and then double-click the state in the workflow designer to expand it.  
   
-7.  Drag a **WriteLine** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Entry** section of the state.  
+7. Drag a **WriteLine** activity from the **Primitives** section of the **Toolbox** and drop it onto the **Entry** section of the state.  
   
-8.  Type the following expression into the **Text** property box of the **WriteLine**.  
+8. Type the following expression into the **Text** property box of the **WriteLine**.  
   
     ```vb  
     "Please enter a number between 1 and " & MaxNumber  
@@ -173,19 +173,20 @@ Workflows can be constructed from built-in activities as well as from custom act
   
      The following example illustrates the completed workflow.  
   
-     ![Completed State Machine Workflow](../../../docs/framework/windows-workflow-foundation/media/wfstatemachinegettingstartedtutorialcomplete.JPG "WFStateMachineGettingStartedTutorialComplete")  
+     ![Illustration that shows the completed state machine workflow.](./media/how-to-create-a-state-machine-workflow/complete-state-machine-workflow.jpg)  
   
 ### To build the workflow  
   
-1.  Press CTRL+SHIFT+B to build the solution.  
+1. Press CTRL+SHIFT+B to build the solution.  
   
-     For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the state machine workflow from this step, skip ahead to the [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md).  
+     For instructions on how to run the workflow, please see the next topic, [How to: Run a Workflow](how-to-run-a-workflow.md). If you have already completed the [How to: Run a Workflow](how-to-run-a-workflow.md) step with a different style of workflow and wish to run it using the state machine workflow from this step, skip ahead to the [To build and run the application](how-to-run-a-workflow.md#BKMK_ToRunTheApplication) section of [How to: Run a Workflow](how-to-run-a-workflow.md).  
   
-## See Also  
- <xref:System.Activities.Statements.Flowchart>  
- <xref:System.Activities.Statements.FlowDecision>  
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)  
- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)  
- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)  
- [How to: Create an Activity](../../../docs/framework/windows-workflow-foundation/how-to-create-an-activity.md)  
- [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md)
+## See also
+
+- <xref:System.Activities.Statements.Flowchart>
+- <xref:System.Activities.Statements.FlowDecision>
+- [Windows Workflow Foundation Programming](programming.md)
+- [Designing Workflows](designing-workflows.md)
+- [Getting Started Tutorial](getting-started-tutorial.md)
+- [How to: Create an Activity](how-to-create-an-activity.md)
+- [How to: Run a Workflow](how-to-run-a-workflow.md)

@@ -1,29 +1,30 @@
 ---
-title: "&lt;namespaceTable&gt;"
+title: "<namespaceTable>"
 ms.date: "03/30/2017"
 ms.assetid: 64801766-01b7-4c65-9ce6-70ad5af67689
 ---
 
-# &lt;namespaceTable&gt;
+# \<namespaceTable>
 
 Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.
 
 **\<system.serviceModel>**   
 &nbsp;&nbsp;**\<routing>**   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<namespaceTable>**
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <system.serviceModel>
   <routing>
     <namespaceTable>
-      <add namespace="String" prefix="String" />
+      <add namespace="String"
+           prefix="String" />
     </namespaceTable>
   </routing>
 </system.serviceModel>
-``` 
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -46,4 +47,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.NamespaceElementCollection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.NamespaceElementCollection?displayProperty=nameWithType>

@@ -3,12 +3,12 @@ title: "Serverless apps: Architecture, patterns, and Azure implementation"
 description: Guide to serverless architecture. Learn when, why, and how to implement a serverless architecture (as opposed to Infrastructure as a Service [IaaS] or Platform as a Service [PaaS]) for your enterprise applications.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 6/26/2018
+ms.date: 06/26/2018
 ---
 
 # Serverless apps: Architecture, patterns, and Azure implementation
 
-![](./media/Cover.jpg)
+![Screenshot that shows the Serverless Apps ebook cover.](./media/index/serverless-apps-cover.jpg)
 
 > DOWNLOAD available at: <https://aka.ms/serverless-ebook>
 

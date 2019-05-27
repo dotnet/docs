@@ -101,29 +101,29 @@ new SendMail
   
  For more information about setting up a SMTP server, see the following links.  
   
--   [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
+- [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
   
--   [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
+- [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
   
--   [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
+- [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
   
--   [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
+- [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
   
  SMTP emulators provided by third parties are available for download.  
   
 ##### To run this sample  
   
-1.  Using Visual Studio 2010, open the SendMail.sln solution file.  
+1. Using Visual Studio 2010, open the SendMail.sln solution file.  
   
-2.  Ensure that you have access to a valid SMTP server. See the set-up instructions.  
+2. Ensure that you have access to a valid SMTP server. See the set-up instructions.  
   
-3.  Configure the program with your server address, and From and To email addresses.  
+3. Configure the program with your server address, and From and To email addresses.  
   
      To correctly run this sample, you may need to configure the value of From and To email addresses and the address of the SMTP server in  Program.cs and in Sequence.xaml. You will need to change the address in both locations since the program sends mail in two different ways  
   
-4.  To build the solution, press CTRL+SHIFT+B.  
+4. To build the solution, press CTRL+SHIFT+B.  
   
-5.  To run the solution, press CTRL+F5.  
+5. To run the solution, press CTRL+F5.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

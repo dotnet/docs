@@ -38,9 +38,9 @@ This topic provides an overview of generic interfaces that provide common functi
   
 ## See also
 
-- <xref:System.Collections.Generic?displayProperty=nameWithType>  
-- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
-- [Generics](../../../docs/standard/generics/index.md)  
-- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)  
-- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [Generics](../../../docs/standard/generics/index.md)
+- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)
+- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
 - [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)

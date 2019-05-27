@@ -27,11 +27,11 @@ Windows Forms controls usually display some text that is related to the primary 
   
 ### To set the text displayed by a control programmatically  
   
-1.  Set the <xref:System.Windows.Forms.Control.Text%2A> property to a string.  
+1. Set the <xref:System.Windows.Forms.Control.Text%2A> property to a string.  
   
      To create an underlined access key, includes an ampersand (&) before the letter that will be the access key.  
   
-2.  Set the <xref:System.Windows.Forms.Control.Font%2A> property to an object of type <xref:System.Drawing.Font>.  
+2. Set the <xref:System.Windows.Forms.Control.Font%2A> property to an object of type <xref:System.Drawing.Font>.  
   
     ```vb  
     Button1.Text = "Click here to save changes"  
@@ -65,7 +65,8 @@ Windows Forms controls usually display some text that is related to the primary 
     mpMenuItem->Text = "&& Now For Something Completely Different";  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>  
- [How to: Create Access Keys for Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md)  
- [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)
+## See also
+
+- <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>
+- [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys-for-windows-forms-controls.md)
+- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)

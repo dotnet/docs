@@ -9,9 +9,7 @@ ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
 ---
 # Document Serialization and Storage
 Microsoft .NET Framework provides a powerful environment for creating and displaying high quality documents.  Enhanced features that support both fixed-documents and flow-documents, advanced viewing controls, combined with powerful 2D and 3D graphic capabilities take .NET Framework applications to a new level of quality and user experience.  Being able to flexibly manage an in-memory representation of a document is a key feature of .NET Framework, and being able to efficiently save and load documents from a data store is a need of almost every application.  The process of converting a document from an internal in-memory representation to an external data store is termed serialization.  The reverse process of reading a data store and recreating the original in-memory instance is termed deserialization.  
-  
- 
-  
+
 <a name="AboutSerialization"></a>   
 ## About Document Serialization  
  Ideally the process of serializing and deserializing a document from and then back into memory is transparent to the application.  The application calls a serializer "write" method to save the document, while a deserializer "read" method accesses the data store and recreates the original instance in memory.  The specific format that the data is stored in is generally not a concern of the application as long as the serialize and deserialize process recreates the document back to its original form.  
@@ -20,22 +18,22 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
   
 ### Features of .NET Framework 3.0 Document Serializers  
   
--   Direct access to the high-level document objects (logical tree and visuals) enable efficient storage of paginated content, 2D/3D elements, images, media, hyperlinks, annotations, and other support content.  
+- Direct access to the high-level document objects (logical tree and visuals) enable efficient storage of paginated content, 2D/3D elements, images, media, hyperlinks, annotations, and other support content.  
   
--   Synchronous and asynchronous operation.  
+- Synchronous and asynchronous operation.  
   
--   Support for plug-in serializers with enhanced capabilities:  
+- Support for plug-in serializers with enhanced capabilities:  
   
-    -   System-wide access for use by all .NET Framework applications.  
+    - System-wide access for use by all .NET Framework applications.  
   
-    -   Simple application plug-in discoverability.  
+    - Simple application plug-in discoverability.  
   
-    -   Simple deployment, installation, and update for custom third-party plug-ins.  
+    - Simple deployment, installation, and update for custom third-party plug-ins.  
   
-    -   User interface support for custom run-time settings and options.  
+    - User interface support for custom run-time settings and options.  
   
 ### XPS Print Path  
- The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md) for additional information on print path output options and capabilities.  
+ The Microsoft .NET Framework [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] print path also provides an extensible mechanism for writing documents through print output.  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] documents can be sent directly to [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](printing-overview.md) for additional information on print path output options and capabilities.  
   
 <a name="PluginSerializers"></a>   
 ## Plug-in Serializers  
@@ -48,11 +46,11 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
   
  The following example illustrates an application that uses the <xref:System.Windows.Documents.Serialization.SerializerProvider> method in a "PlugInFileFilter" property.  PlugInFileFilter enumerates the installed plug-ins and builds a filter string with the available file options for a <xref:Microsoft.Win32.SaveFileDialog>.  
   
- [!code-csharp[DocumentSerialize#DocSerializeFileFilter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
+ [!code-csharp[DocumentSerialize#DocSerializeFileFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializefilefilter)]  
   
  After an output file name has been selected by the user, the following example illustrates use of the <xref:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter%2A> method to store a given document in a specified format.  
   
- [!code-csharp[DocumentSerialize#DocSerializePlugIn](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
+ [!code-csharp[DocumentSerialize#DocSerializePlugIn](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializeplugin)]  
   
 <a name="InstallingPluginSerializers"></a>   
 ### Installing Plug-in Serializers  
@@ -61,16 +59,17 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
 ### Creating a Plug-in Serializer  
  Both plug-in serializers and linked serializers use the same exposed public methods and events, and similarly can be designed to operate either synchronously or asynchronously.  There are three basic steps normally followed to create a plug-in serializer:  
   
-1.  Implement and debug the serializer first as a linked serializer.  Initially creating the serializer compiled and linked directly in a test application provides full access to breakpoints and other debug services helpful for testing.  
+1. Implement and debug the serializer first as a linked serializer.  Initially creating the serializer compiled and linked directly in a test application provides full access to breakpoints and other debug services helpful for testing.  
   
-2.  After the serializer is fully tested, an <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface is added to create a plug-in.  The <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface permits full access to all .NET Framework objects which includes the logical tree, <xref:System.Windows.UIElement> objects, <xref:System.Windows.Documents.IDocumentPaginatorSource>, and <xref:System.Windows.Media.Visual> elements.  Additionally <xref:System.Windows.Documents.Serialization.ISerializerFactory> provides the same synchronous and asynchronous methods and events used by linked serializers.  Since large documents can take time to output, asynchronous operations are recommended to maintain responsive user interaction and offer a "Cancel" option if some problem occurs with the data store.  
+2. After the serializer is fully tested, an <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface is added to create a plug-in.  The <xref:System.Windows.Documents.Serialization.ISerializerFactory> interface permits full access to all .NET Framework objects which includes the logical tree, <xref:System.Windows.UIElement> objects, <xref:System.Windows.Documents.IDocumentPaginatorSource>, and <xref:System.Windows.Media.Visual> elements.  Additionally <xref:System.Windows.Documents.Serialization.ISerializerFactory> provides the same synchronous and asynchronous methods and events used by linked serializers.  Since large documents can take time to output, asynchronous operations are recommended to maintain responsive user interaction and offer a "Cancel" option if some problem occurs with the data store.  
   
-3.  After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
+3. After the plug-in serializer is created, an installation script is implemented for distributing and installing (and uninstalling) the plug-in (see above, "[Installing Plug-in Serializers](#InstallingPluginSerializers)").  
   
-## See Also  
- <xref:System.Windows.Documents.Serialization>  
- <xref:System.Windows.Xps.XpsDocumentWriter>  
- <xref:System.Windows.Xps.Packaging.XpsDocument>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)
+## See also
+
+- <xref:System.Windows.Documents.Serialization>
+- <xref:System.Windows.Xps.XpsDocumentWriter>
+- <xref:System.Windows.Xps.Packaging.XpsDocument>
+- [Documents in WPF](documents-in-wpf.md)
+- [Printing Overview](printing-overview.md)
+- [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)

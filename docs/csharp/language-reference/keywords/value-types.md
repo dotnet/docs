@@ -29,7 +29,7 @@ Unlike with reference types, you cannot derive a new type from a value type. How
 
 Value type variables cannot be `null` by default. However, variables of the corresponding [nullable types](../../../csharp/programming-guide/nullable-types/index.md) can be `null`.
 
-Each value type has an implicit default constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
+Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
 
 ## Simple types
 
@@ -62,7 +62,7 @@ int myInt;
 You cannot use it before you initialize it. You can initialize it using the following statement:
 
 ```csharp
-myInt = new int();  // Invoke default constructor for int type.
+myInt = new int();  // Invoke parameterless constructor for int type.
 ```
 
 This statement is equivalent to the following statement:
@@ -83,12 +83,12 @@ int myInt = new int();
 int myInt = 0;
 ```
 
-Using the [new](new.md) operator calls the default constructor of the specific type and assigns the default value to the variable. In the preceding example, the default constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
+Using the [new](new.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
 
-With user-defined types, use [new](new.md) to invoke the default constructor. For example, the following statement invokes the default constructor of the `Point` struct:
+With user-defined types, use [new](new.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 
 ```csharp
-Point p = new Point(); // Invoke default constructor for the struct.
+Point p = new Point(); // Invoke parameterless constructor for the struct.
 ```
 
 After this call, the struct is considered to be definitely assigned; that is, all its members are initialized to their default values.

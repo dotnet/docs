@@ -24,26 +24,26 @@ When you compile an application, you can specify that it should run on a Windows
   
  Many assemblies run identically on both the 32-bit CLR and the 64-bit CLR. However, some programs may behave differently, depending on the CLR, if they contain one or more of the following:  
   
--   Structures that contain members that change size depending on the platform (for example, any pointer type).  
+- Structures that contain members that change size depending on the platform (for example, any pointer type).  
   
--   Pointer arithmetic that includes constant sizes.  
+- Pointer arithmetic that includes constant sizes.  
   
--   Incorrect platform invoke or COM declarations that use `Int32` for handles instead of `IntPtr`.  
+- Incorrect platform invoke or COM declarations that use `Int32` for handles instead of `IntPtr`.  
   
--   Code that casts `IntPtr` to `Int32`.  
+- Code that casts `IntPtr` to `Int32`.  
   
- For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](https://msdn.microsoft.com/library/ms973190.aspx).  
+ For more information about how to port a 32-bit application to run on the 64-bit CLR, see [Migrating 32-bit Managed Code to 64-bit](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973190(v=msdn.10)).  
   
 ## General 64-Bit Programming Information  
  For general information about 64-bit programming, see the following documents:  
   
--   For more information about the 64-bit version of the CLR on a 64-bit Windows computer, see the [.NET Framework Developer Center](https://go.microsoft.com/fwlink/?LinkId=37079) on the MSDN website.  
+- For more information about the 64-bit version of the CLR on a 64-bit Windows computer, see the [.NET Framework Developer Center](https://go.microsoft.com/fwlink/?LinkId=37079) on the MSDN website.  
   
--   In the [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] documentation, see [Programming Guide for 64-bit Windows](https://go.microsoft.com/fwlink/p/?LinkId=253512).  
+- In the [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] documentation, see [Programming Guide for 64-bit Windows](https://go.microsoft.com/fwlink/p/?LinkId=253512).  
   
--   For information about how to download a 64-bit version of the CLR, see [.NET Framework Developer Center Downloads](https://go.microsoft.com/fwlink/?LinkId=50953) on the MSDN website.  
+- For information about how to download a 64-bit version of the CLR, see [.NET Framework Developer Center Downloads](https://go.microsoft.com/fwlink/?LinkId=50953) on the MSDN website.  
   
--   For information about Visual Studio support for creating 64-bit applications, see [Visual Studio IDE 64-Bit Support](/visualstudio/ide/visual-studio-ide-64-bit-support).  
+- For information about Visual Studio support for creating 64-bit applications, see [Visual Studio IDE 64-Bit Support](/visualstudio/ide/visual-studio-ide-64-bit-support).  
   
 ## Compiler Support for Creating 64-Bit Applications  
  By default, when you use the .NET Framework to build an application on either a 32-bit or a 64-bit computer, the application will run on a 64-bit computer as a native application (that is, not under WOW64). The following table lists documents that explain how to use Visual Studio compilers to create 64-bit applications that will run as native, under WOW64, or both.  

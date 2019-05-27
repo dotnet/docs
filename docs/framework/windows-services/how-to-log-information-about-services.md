@@ -26,32 +26,32 @@ By default, all Windows Service projects have the ability to interact with the A
   
 ### To enable default event logging for your service  
   
--   Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `true`.  
+- Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `true`.  
   
     > [!NOTE]
     >  By default, this property is set to `true`. You do not need to set this explicitly unless you are building more complex processing, such as evaluating a condition and then setting the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property based on the result of that condition.  
   
 ### To disable event logging for your service  
   
--   Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `false`.  
+- Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property for your component to `false`.  
   
      [!code-csharp[VbRadconService#17](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#17)]
      [!code-vb[VbRadconService#17](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#17)]  
   
 ### To set up logging to a custom log  
   
-1.  Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`.  
+1. Set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`.  
   
     > [!NOTE]
     >  You must set <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> to false in order to use a custom log.  
   
-2.  Set up an instance of an <xref:System.Diagnostics.EventLog> component in your Windows Service application.  
+2. Set up an instance of an <xref:System.Diagnostics.EventLog> component in your Windows Service application.  
   
-3.  Create a custom log by calling the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method and specifying the source string and the name of the log file you want to create.  
+3. Create a custom log by calling the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method and specifying the source string and the name of the log file you want to create.  
   
-4.  Set the <xref:System.Diagnostics.EventLog.Source%2A> property on the <xref:System.Diagnostics.EventLog> component instance to the source string you created in step 3.  
+4. Set the <xref:System.Diagnostics.EventLog.Source%2A> property on the <xref:System.Diagnostics.EventLog> component instance to the source string you created in step 3.  
   
-5.  Write your entries by accessing the <xref:System.Diagnostics.EventLog.WriteEntry%2A> method on the <xref:System.Diagnostics.EventLog> component instance.  
+5. Write your entries by accessing the <xref:System.Diagnostics.EventLog.WriteEntry%2A> method on the <xref:System.Diagnostics.EventLog> component instance.  
   
      The following code shows how to set up logging to a custom log.  
   
@@ -63,5 +63,6 @@ By default, all Windows Service projects have the ability to interact with the A
     [!code-csharp[VbRadconService#15](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/VbRadconService/CS/MyNewService.cs#15)]
     [!code-vb[VbRadconService#15](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#15)]  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+## See also
+
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)

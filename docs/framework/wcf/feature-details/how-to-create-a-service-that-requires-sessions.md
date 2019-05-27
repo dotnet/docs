@@ -11,17 +11,17 @@ Sessions create a shared state between two or more endpoints that enables useful
   
 ### To specify that a contract require its binding to support sessions  
   
-1.  Create a service contract with at least one operation. For an example of how to create a service contract, see [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md).  
+1. Create a service contract with at least one operation. For an example of how to create a service contract, see [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md).  
   
-2.  Modify the <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType> that declares the contract by setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property to either:  
+2. Modify the <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType> that declares the contract by setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property to either:  
   
-    -   <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType> if this contract must be run within a session.  
+    - <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType> if this contract must be run within a session.  
   
-    -   <xref:System.ServiceModel.SessionMode.Allowed?displayProperty=nameWithType> if this contract can be run within a session.  
+    - <xref:System.ServiceModel.SessionMode.Allowed?displayProperty=nameWithType> if this contract can be run within a session.  
   
-    -   <xref:System.ServiceModel.SessionMode.NotAllowed?displayProperty=nameWithType> if this contract must not be run within a session.  
+    - <xref:System.ServiceModel.SessionMode.NotAllowed?displayProperty=nameWithType> if this contract must not be run within a session.  
   
-3.  Configure your service endpoint to use a binding that supports sessions. The following configuration example shows the use of the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>, which supports a WS`-`ReliableMessaging session.  
+3. Configure your service endpoint to use a binding that supports sessions. The following configuration example shows the use of the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType>, which supports a WS`-`ReliableMessaging session.  
   
      [!code-xml[SCA.Session#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/hostapplication.exe.config#2)]   
   
@@ -32,7 +32,8 @@ Sessions create a shared state between two or more endpoints that enables useful
  [!code-vb[SCA.Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/sca.session/vb/services.vb#1)]      
  [!code-xml[SCA.Session#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/hostapplication.exe.config#2)]     
   
-## See Also  
- <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>  
- <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType>
+## See also
+
+- <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType>

@@ -67,5 +67,5 @@ You can try these samples by looking at the code in our [GitHub repository](http
 
 ## See also
 
-- [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)  
-- [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)  
+- [.NET Framework Regular Expressions](../../standard/base-types/regular-expressions.md)
+- [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md)

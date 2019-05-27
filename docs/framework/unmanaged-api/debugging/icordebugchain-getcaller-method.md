@@ -29,7 +29,7 @@ HRESULT GetCaller (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the calling chain.  
   

@@ -18,29 +18,29 @@ You can create a multifile assembly from several code modules and resource files
 
 You have several options when grouping code modules and resources into assemblies, depending on the following factors:
 
--   Versioning
+- Versioning
 
      Group modules that should have the same version information.
 
--   Deployment
+- Deployment
 
      Group code modules and resources that support your model of deployment.
 
--   Reuse
+- Reuse
 
      Group modules if they can be logically used together for some purpose. For example, an assembly consisting of types and classes used infrequently for program maintenance can be put in the same assembly. In addition, types that you intend to share with multiple applications should be grouped into an assembly and the assembly should be signed with a strong name.
 
--   Security
+- Security
 
      Group modules containing types that require the same security permissions.
 
--   Scoping
+- Scoping
 
      Group modules containing types whose visibility should be restricted to the same assembly.
 
 Special considerations must be made when making common language runtime assemblies available to unmanaged COM applications. For more information about working with unmanaged code, see [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md).
 
-## See Also
+## See also
 
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md)

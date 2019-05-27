@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 6e98f7a9-38f4-4d74-b644-1ff1b23320fd
 ---
 # Recommended Tags for Documentation Comments (C# Programming Guide)
-The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](https://github.com/EWSoftware/SHFB).  
+The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).  
   
  Tags are processed on code constructs such as types and type members.  
   
@@ -30,15 +30,16 @@ The C# compiler processes documentation comments in your code and formats them a
   
  (* denotes that the compiler verifies syntax.)  
   
- If you want angle brackets to appear in the text of a documentation comment, use `<` and `>`, as shown in the following example.  
+ If you want angle brackets to appear in the text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. This encoding is shown in the following example:
   
-```xml  
-/// <summary cref="C < T >">  
-/// </summary>  
-```  
+```csharp  
+/// <summary>
+/// This property always returns a value &lt; 1.
+/// </summary>
+```
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
-- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/index.md)

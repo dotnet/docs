@@ -17,25 +17,25 @@ ms.assetid: eeed752c-0084-48e5-9dca-381353007a0d
   
  There are two required steps involved in signing a module:  
   
-1.  Create a certificate using the Transact-SQL `CREATE CERTIFICATE [certificateName]` statement. This statement has several options for setting a start and end date and a password. The default expiration date is one year.  
+1. Create a certificate using the Transact-SQL `CREATE CERTIFICATE [certificateName]` statement. This statement has several options for setting a start and end date and a password. The default expiration date is one year.  
   
-1.  Sign the procedure with the certificate using the Transact-SQL `ADD SIGNATURE TO [procedureName] BY CERTIFICATE [certificateName]` statement.  
+1. Sign the procedure with the certificate using the Transact-SQL `ADD SIGNATURE TO [procedureName] BY CERTIFICATE [certificateName]` statement.  
 
 Once the module has been signed, one or more principals needs to be created in order to hold the additional permissions that should be associated with the certificate.  
 
 If the module needs additional database-level permissions:  
   
-1.  Create a database user associated with that certificate using the Transact-SQL `CREATE USER [userName] FROM CERTIFICATE [certificateName]` statement. This user exists in the database only and is not associated with a login unless a login has also been created from that same certificate.  
+1. Create a database user associated with that certificate using the Transact-SQL `CREATE USER [userName] FROM CERTIFICATE [certificateName]` statement. This user exists in the database only and is not associated with a login unless a login has also been created from that same certificate.  
   
-1.  Grant the certificate user the required database-level permissions.  
+1. Grant the certificate user the required database-level permissions.  
   
 If the module needs additional server-level permissions:  
   
-1.  Copy the certificate to the `master` database.  
+1. Copy the certificate to the `master` database.  
  
-1.  Create a login associated with that certificate using the Transact-SQL `CREATE LOGIN [userName] FROM CERTIFICATE [certificateName]` statement.  
+1. Create a login associated with that certificate using the Transact-SQL `CREATE LOGIN [userName] FROM CERTIFICATE [certificateName]` statement.  
   
-1.  Grant the certificate login the required server-level permissions.  
+1. Grant the certificate login the required server-level permissions.  
   
 > [!NOTE]  
 >  A certificate cannot grant permissions to a user that has had permissions revoked using the DENY statement. DENY always takes precedence over GRANT, preventing the caller from inheriting permissions granted to the certificate user.  
@@ -48,12 +48,13 @@ If the module needs additional server-level permissions:
 |[Module Signing](https://go.microsoft.com/fwlink/?LinkId=98590) in SQL Server Books Online|Describes module signing, providing a sample scenario and links to the relevant Transact-SQL topics.|  
 |[Signing Stored Procedures with a Certificate](/sql/relational-databases/tutorial-signing-stored-procedures-with-a-certificate) in SQL Server Books Online|Provides a tutorial for signing a stored procedure with a certificate.|  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)  
- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
- [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)  
- [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
+- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)
+- [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)
+- [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

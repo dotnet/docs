@@ -20,7 +20,7 @@ The `in` keyword is used in four contexts:
 - [from clauses](from-clause.md) in LINQ query expressions.
 - [join clauses](join-clause.md) in LINQ query expressions.
   
-## See Also
+## See also
 
-- [C# Keywords](index.md)  
+- [C# Keywords](index.md)
 - [C# Reference](../index.md)

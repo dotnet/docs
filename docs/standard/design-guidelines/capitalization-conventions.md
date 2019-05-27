@@ -17,9 +17,9 @@ The guidelines in this chapter lay out a simple method for using case that, when
 ## Capitalization Rules for Identifiers  
  To differentiate words in an identifier, capitalize the first letter of each word in the identifier. Do not use underscores to differentiate words, or for that matter, anywhere in identifiers. There are two appropriate ways to capitalize identifiers, depending on the use of the identifier:  
   
--   PascalCasing  
+- PascalCasing  
   
--   camelCasing  
+- camelCasing  
   
  The PascalCasing convention, used for all identifiers except parameter names, capitalizes the first character of each word (including acronyms over two letters in length), as shown in the following examples:  
   
@@ -100,5 +100,5 @@ The guidelines in this chapter lay out a simple method for using case that, when
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

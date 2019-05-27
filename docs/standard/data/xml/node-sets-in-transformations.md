@@ -70,6 +70,6 @@ History of Trenton Vol 3
   
 ## See also
 
-- <xref:System.Xml.XPath.XPathNodeIterator>  
-- [XSLT Transformations with the XslTransform Class](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
+- <xref:System.Xml.XPath.XPathNodeIterator>
+- [XSLT Transformations with the XslTransform Class](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)
 - [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

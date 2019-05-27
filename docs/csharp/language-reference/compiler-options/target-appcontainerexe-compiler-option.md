@@ -21,9 +21,9 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
   
 ### To set this compiler option in the IDE  
   
-1.  In **Solution Explorer**, open the shortcut menu for your project, and then choose **Properties**.  
+1. In **Solution Explorer**, open the shortcut menu for your project, and then choose **Properties**.  
   
-2.  On the **Application** tab, in the **Output type** list, choose **Windows Store App**.  
+2. On the **Application** tab, in the **Output type** list, choose **Windows Store App**.  
   
      This option is available only for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app templates.  
   
@@ -36,8 +36,8 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
 csc -target:appcontainerexe filename.cs  
 ```  
   
-## See Also  
+## See also
 
-- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
-- [-target:winexe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md)  
+- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
+- [-target:winexe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md)
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

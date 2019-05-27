@@ -305,5 +305,5 @@ Note that you can only deploy a self-contained deployment with a third-party lib
 
 ## See also
 
-* [.NET Core Application Deployment](index.md)
-* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [.NET Core Application Deployment](index.md)
+- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

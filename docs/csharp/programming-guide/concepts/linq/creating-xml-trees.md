@@ -17,6 +17,6 @@ One of the most common XML tasks is constructing an XML tree. This section descr
 |[How to: Validate Using XSD (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md)|Shows how to validate an XML tree using XSD.|  
 |[Valid Content of XElement and XDocument Objects](../../../../csharp/programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects3.md)|Describes the valid arguments that can be passed to the constructors and methods that are used to add content to elements and documents.|  
   
-## See Also
+## See also
 
 - [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

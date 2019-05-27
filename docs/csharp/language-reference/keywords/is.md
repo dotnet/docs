@@ -2,7 +2,7 @@
 title: "is - C# Reference"
 ms.custom: seodec18
 
-ms.date: 02/17/2017
+ms.date: 04/09/2019
 f1_keywords: 
   - "is_CSharpKeyword"
   - "is"
@@ -10,11 +10,11 @@ helpviewer_keywords:
   - "is keyword [C#]"
 ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 ---
-# is (C# Reference) #
+# is (C# Reference)
 
 Checks if an object is compatible with a given type, or (starting with C# 7.0) tests an expression against a pattern.
 
-## Testing for type compatibility ##
+## Testing for type compatibility
 
 The `is` keyword evaluates type compatibility at runtime. It determines whether an object instance or the result of an expression can be converted to a specified type. It has the syntax
 
@@ -42,16 +42,16 @@ The following example shows that the `is` expression evaluates to `true` for eac
 
 [!code-csharp[is#3](../../../../samples/snippets/csharp/language-reference/keywords/is/is3.cs#3)]
 
-The `is` keyword generates a compile-time warning if the expression is known to always be either `true` or `false`. It only considers reference conversions, boxing conversions, and unboxing conversions; it does not consider user-defined conversions or conversions defined by a type's [implicit](implicit.md) and [explicit](explicit.md) operators. The following example generates warnings because the result of the conversion is known at compile-time. Note that the `is` expression for conversions from `int` to `long` and `double` return false, since these conversions are handled by the [implicit](implicit.md) operator.
+The `is` keyword generates a compile-time warning if the expression is known to always be either `true` or `false`. It only considers reference conversions, boxing conversions, and unboxing conversions; it does not consider user-defined conversions or conversions defined by a type's [implicit](implicit.md) and [explicit](explicit.md) operators. The following example generates warnings because the result of the conversion is known at compile time. The `is` expression for conversions from `int` to `long` and `double` return false, since these conversions are handled by the [implicit](implicit.md) operator.
 
 [!code-csharp[is#2](../../../../samples/snippets/csharp/language-reference/keywords/is/is2.cs#2)]
 
-`expr` can be any expression that returns a value, with the exception of anonymous methods and lambda expressions. The following example uses  `is` to evaluate the return value of a method call.   
+`expr` cannot be an anonymous method or lambda expression. It can be any other expression that returns a value. The following example uses  `is` to evaluate the return value of a method call.   
 [!code-csharp[is#4](../../../../samples/snippets/csharp/language-reference/keywords/is/is4.cs#4)]
 
 Starting with C# 7.0, you can use pattern matching with the [type pattern](#type) to write more concise code that uses the `is` statement.
 
-## Pattern matching with `is` ##
+## Pattern matching with `is`
 
 Starting with C# 7.0, the `is` and [switch](../../../csharp/language-reference/keywords/switch.md) statements support pattern matching. The `is` keyword supports the following patterns:
 
@@ -61,9 +61,9 @@ Starting with C# 7.0, the `is` and [switch](../../../csharp/language-reference/k
 
 - [var pattern](#var), a match that always succeeds and binds the value of an expression to a new local variable. 
 
-### <a name="type" /> Type pattern </a>
+### <a name="type" />Type pattern
 
-When using the type pattern to perform pattern matching, `is` tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type. It is a straightforward extension of the `is` statement that enables concise type evaluation and conversion. The general form of the `is` type pattern is:
+When using the type pattern to perform pattern matching, `is` tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type. It's a straightforward extension of the `is` statement that enables concise type evaluation and conversion. The general form of the `is` type pattern is:
 
 ```csharp
    expr is type varname 
@@ -71,7 +71,7 @@ When using the type pattern to perform pattern matching, `is` tests whether an e
 
 where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`. 
 
-The `is` expression is `true` if *expr* is not `null`, and any of the following is true:
+The `is` expression is `true` if *expr* isn't `null`, and any of the following is true:
 
 - *expr* is an instance of the same type as *type*.
 
@@ -81,7 +81,9 @@ The `is` expression is `true` if *expr* is not `null`, and any of the following 
 
 - *expr* is an instance of a type that implements the *type* interface.
 
-If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned and has local scope within the `if` statement only.
+Beginning with C# 7.1, *expr* may have a compile-time type defined by a generic type parameter and its constraints. 
+
+If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned within the `if` statement only. The scope of *varname* is from the `is` expression to the end of the block enclosing the `if` statement. Using *varname* in any other location generates a compile-time error for use of a variable that has not been assigned.
 
 The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=nameWithType> method.
 
@@ -99,9 +101,9 @@ The equivalent code without pattern matching requires a separate assignment that
 
 [!code-csharp[is#10](../../../../samples/snippets/csharp/language-reference/keywords/is/is-type-pattern10.cs#10)]
 
-### <a name="constant" /> Constant pattern ###
+### <a name="constant" /> Constant pattern
 
-When performing pattern matching with the constant pattern, `is` tests whether an expression equals a specified constant. In C# 6 and earlier versions, the constant pattern is supported by the [switch](switch.md) statement. Starting with C# 7.0, it is supported by the `is` statement as well. Its syntax is:
+When performing pattern matching with the constant pattern, `is` tests whether an expression equals a specified constant. In C# 6 and earlier versions, the constant pattern is supported by the [switch](switch.md) statement. Starting with C# 7.0, it's supported by the `is` statement as well. Its syntax is:
 
 ```csharp
    expr is constant
@@ -137,17 +139,15 @@ The following example shows a comparison of `null` checks:
  
 ### <a name="var" /> var pattern </a>
 
-A pattern match with the var pattern always succeeds. Its syntax is
+The `var` pattern is a catch-all for any type or value. The value of *expr* is always assigned to a local variable the same type as the compile time type of *expr*. The result of the `is` expression is always `true`. Its syntax is:
 
 ```csharp 
    expr is var varname
 ```
 
-where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a static variable of the same type as *expr*. The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
+The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
 
 [!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
-
-Note that if *expr* is `null`, the `is` expression still is true and assigns `null` to *varname*. 
 
 ## C# Language Specification
   
@@ -155,8 +155,8 @@ Note that if *expr* is `null`, the `is` expression still is true and assigns `nu
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
-- [as](../../../csharp/language-reference/keywords/as.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)
+- [as](../../../csharp/language-reference/keywords/as.md)
 - [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

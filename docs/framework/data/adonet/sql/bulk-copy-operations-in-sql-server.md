@@ -10,11 +10,11 @@ Microsoft SQL Server includes a popular command-line utility named **bcp** for q
   
  Using the <xref:System.Data.SqlClient.SqlBulkCopy> class, you can perform:  
   
--   A single bulk copy operation  
+- A single bulk copy operation  
   
--   Multiple bulk copy operations  
+- Multiple bulk copy operations  
   
--   A bulk copy operation within a transaction  
+- A bulk copy operation within a transaction  
   
 > [!NOTE]
 >  When using .NET Framework version 1.1 or earlier (which does not support the <xref:System.Data.SqlClient.SqlBulkCopy> class), you can execute the SQL Server Transact-SQL **BULK INSERT** statement using the <xref:System.Data.SqlClient.SqlCommand> object.  
@@ -32,6 +32,7 @@ Microsoft SQL Server includes a popular command-line utility named **bcp** for q
  [Transaction and Bulk Copy Operations](../../../../../docs/framework/data/adonet/sql/transaction-and-bulk-copy-operations.md)  
  Describes how to perform a bulk copy operation within a transaction, including how to commit or rollback the transaction.  
   
-## See Also  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

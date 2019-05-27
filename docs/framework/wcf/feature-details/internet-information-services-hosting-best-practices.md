@@ -34,7 +34,7 @@ This topic outlines some best practices for hosting Windows Communication Founda
  You can configure IIS Web site bindings by using the IIS Microsoft Management Console (MMC) snap-in.  
   
 ## Application Pools Running in Different User Contexts Overwrite Assemblies from Other Accounts in the Temporary Folder  
- To ensure that application pools running in different user contexts cannot overwrite assemblies from other accounts in the temporary [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] files folder, use different identities and temporary folders for different applications. For example, if you have two virtual applications /Application1 and / Application2, you can create two Application pools, A and B, with two different identities. Application pool A can run under one user identity (user1) while application pool B can run under another user identity (user2), and configure /Application1 to use A and /Application2 to use B.  
+ To ensure that application pools running in different user contexts cannot overwrite assemblies from other accounts in the temporary ASP.NET files folder, use different identities and temporary folders for different applications. For example, if you have two virtual applications /Application1 and / Application2, you can create two Application pools, A and B, with two different identities. Application pool A can run under one user identity (user1) while application pool B can run under another user identity (user2), and configure /Application1 to use A and /Application2 to use B.  
   
  In Web.config, you can configure the temporary folder using \<system.web/compilation/@tempFolder>. For /Application1, it can be "c:\tempForUser1" and for application2 it can be "c:\tempForUser2". Grant corresponding write permission to these folders for the two identities.  
   
@@ -75,6 +75,7 @@ This topic outlines some best practices for hosting Windows Communication Founda
   </system.webServer>  
 ```  
   
-## See Also  
- [Service Hosting Samples](https://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+
+- [Service Hosting Samples](../samples/hosting.md)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

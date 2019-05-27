@@ -6,11 +6,11 @@ ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 # PII Security Lockdown
 This sample demonstrates how to control several security-related features of a Windows Communication Foundation (WCF) service by:  
   
--   Encrypting sensitive information in a service's configuration file.  
+- Encrypting sensitive information in a service's configuration file.  
   
--   Locking elements in the configuration file so that nested service subdirectories cannot override settings.  
+- Locking elements in the configuration file so that nested service subdirectories cannot override settings.  
   
--   Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
+- Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -35,11 +35,11 @@ This sample demonstrates how to control several security-related features of a W
   
 #### To encrypt the values in the appSettings section in Web.config for the sample  
   
-1.  Open a command prompt by using Start->Run…. Type in `cmd` and click **OK**.  
+1. Open a command prompt by using Start->Run…. Type in `cmd` and click **OK**.  
   
-2.  Navigate to the current .NET Framework directory by issuing the following command: `cd %WINDIR%\Microsoft.NET\Framework\v4.0.20728`.  
+2. Navigate to the current .NET Framework directory by issuing the following command: `cd %WINDIR%\Microsoft.NET\Framework\v4.0.20728`.  
   
-3.  Encrypt the appSettings configuration settings in the Web.config folder by issuing the following command: `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"`.  
+3. Encrypt the appSettings configuration settings in the Web.config folder by issuing the following command: `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"`.  
   
  More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)).  
   
@@ -118,23 +118,24 @@ This sample demonstrates how to control several security-related features of a W
   
  It is also possible to encrypt configuration file elements using DPAPI and RSA. For more information, see the following links:  
   
--   [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
+- [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
   
--   [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
+- [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
   
 #### To set up, build and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  Edit Machine.config to set the `enableLoggingKnownPii` attribute to `true`, adding the parent nodes if necessary.  
+2. Edit Machine.config to set the `enableLoggingKnownPii` attribute to `true`, adding the parent nodes if necessary.  
   
-3.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 #### To clean up the sample  
   
-1.  Edit Machine.config to set the `enableLoggingKnownPii` attribute to `false`.  
+1. Edit Machine.config to set the `enableLoggingKnownPii` attribute to `false`.  
   
-## See Also  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

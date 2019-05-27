@@ -3,7 +3,7 @@ title: .NET API analyzer
 description: Learn how the .NET API Analyzer can help detect deprecated APIs and platform compatibility issues.
 author: oliag
 ms.author: mairaw
-ms.date: 05/31/2018
+ms.date: 04/26/2019
 ms.technology: dotnet-standard
 ---
 # .NET API analyzer
@@ -17,7 +17,7 @@ API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility]
 
 ## Prerequisites
 
-* Visual Studio 2017 or Visual Studio for Mac (all versions).
+* Visual Studio 2017 and later versions, or Visual Studio for Mac (all versions).
 
 ## Discovering deprecated APIs
 
@@ -38,7 +38,7 @@ When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, A
 
 The **Error List** window contains warnings with a unique ID per deprecated API, as shown in the following example (`DE004`): 
 
-!["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings.jpg)
+!["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings-id-and-descriptions.jpg "Error List window that includes warnings.")
 
 By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and suggestions regarding alternative APIs that can be used.
 
@@ -93,6 +93,7 @@ Currently, the analyzer handles the following cases:
 * Usage of a .NET Standard API that throws <xref:System.PlatformNotSupportedException> (PC001).
 * Usage of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
 * Usage of a native API that doesn’t exist in UWP (PC003).
+* Usage of Delegate.BeginInvoke and EndInvoke APIs (PC004).
 * Usage of an API that is marked as deprecated (DEXXXX).
 
 ## CI machine
@@ -107,5 +108,5 @@ The user decides how the diagnostics should be treated: as warnings, errors, sug
 
 ## See also
 
-* [Introducing API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) blog post.
-* [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.
+- [Introducing API Analyzer](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/) blog post.
+- [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.

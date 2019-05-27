@@ -12,23 +12,23 @@ ms.assetid: 5198df5e-dda0-4ddc-a275-e0a7a4693524
 # Building and Deploying WPF Applications
 The build and deployment model provides the capability to build and deploy applications locally and remotely, including the following:  
   
--   MSBuild: the .NET build system located in the Microsoft.Build.Tasks.Windows namespace.  
+- MSBuild: the .NET build system located in the Microsoft.Build.Tasks.Windows namespace.  
   
--   Resources: working with UI resources.  
+- Resources: working with UI resources.  
   
--   ClickOnce Deployment: the .NET publishing and deployment system.  
+- ClickOnce Deployment: the .NET publishing and deployment system.  
   
 ## In This Section  
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)  
- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)  
- [How-to Topics](../../../../docs/framework/wpf/app-development/build-and-deploy-how-to-topics.md)  
+ [Building a WPF Application](building-a-wpf-application-wpf.md)  
+ [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)  
+ [How-to Topics](build-and-deploy-how-to-topics.md)  
   
 ## Reference  
  MSBuild  
   
 ## Related Sections  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
-  [Windows in WPF](../../../../docs/framework/wpf/app-development/windows-in-wpf-applications.md)  
-  [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)  
-  [WPF XAML Browser Applications Overview](../../../../docs/framework/wpf/app-development/wpf-xaml-browser-applications-overview.md)  
-  [Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)
+ [Application Management Overview](application-management-overview.md)  
+  [Windows in WPF](windows-in-wpf-applications.md)  
+  [Navigation Overview](navigation-overview.md)  
+  [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md)  
+  [Hosting](hosting-wpf-applications.md)

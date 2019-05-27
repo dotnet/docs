@@ -28,15 +28,15 @@ EXECUTE AS USER = 'userName';
   
  There are three steps involved in using the EXECUTE AS clause in a procedure.  
   
-1.  Create a proxy user in the database that is not mapped to a login. This is not required, but it helps when managing permissions.  
+1. Create a proxy user in the database that is not mapped to a login. This is not required, but it helps when managing permissions.  
   
 ```  
 CREATE USER proxyUser WITHOUT LOGIN  
 ```  
   
-1.  Grant the proxy user the necessary permissions.  
+1. Grant the proxy user the necessary permissions.  
   
-2.  Add the EXECUTE AS clause to the stored procedure or user-defined function.  
+2. Add the EXECUTE AS clause to the stored procedure or user-defined function.  
   
 ```  
 CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...  
@@ -53,18 +53,19 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
 ### Specifying the Execution Context  
  In addition to specifying a user, you can also use EXECUTE AS with any of the following keywords.  
   
--   CALLER. Executing as CALLER is the default; if no other option is specified, then the procedure executes in the security context of the caller.  
+- CALLER. Executing as CALLER is the default; if no other option is specified, then the procedure executes in the security context of the caller.  
   
--   OWNER. Executing as OWNER executes the procedure in the context of the procedure owner. If the procedure is created in a schema owned by `dbo` or the database owner, the procedure will execute with unrestricted permissions.  
+- OWNER. Executing as OWNER executes the procedure in the context of the procedure owner. If the procedure is created in a schema owned by `dbo` or the database owner, the procedure will execute with unrestricted permissions.  
   
--   SELF. Executing as SELF executes in the security context of the creator of the stored procedure. This is equivalent to executing as a specified user, where the specified user is the person creating or altering the procedure.  
+- SELF. Executing as SELF executes in the security context of the creator of the stored procedure. This is equivalent to executing as a specified user, where the specified user is the person creating or altering the procedure.  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)  
- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
- [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)  
- [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
+- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)
+- [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)
+- [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

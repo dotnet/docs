@@ -23,8 +23,8 @@ public partial class Form1 : Form
 }  
 ```  
   
-## See Also
+## See also
 
-- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
-- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
 - [Language Integrated Query (LINQ))](../../../csharp/programming-guide/concepts/linq/index.md)

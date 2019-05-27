@@ -10,11 +10,11 @@ ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
 > [!NOTE]
 >  The types in <xref:System.Data.OracleClient> are deprecated. The types remain supported in the current version of.NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.  
   
- This section describes features and behaviors that are specific to the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle.  
+ This section describes features and behaviors that are specific to the .NET Framework Data Provider for Oracle.  
   
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle provides access to an Oracle database using the Oracle Call Interface (OCI) as provided by Oracle Client software. The functionality of the data provider is designed to be similar to that of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers for SQL Server, OLE DB, and ODBC.  
+ The .NET Framework Data Provider for Oracle provides access to an Oracle database using the Oracle Call Interface (OCI) as provided by Oracle Client software. The functionality of the data provider is designed to be similar to that of the .NET Framework data providers for SQL Server, OLE DB, and ODBC.  
   
- To use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle, an application must reference the <xref:System.Data.OracleClient> namespace as follows:  
+ To use the .NET Framework Data Provider for Oracle, an application must reference the <xref:System.Data.OracleClient> namespace as follows:  
   
 ```vb  
 Imports System.Data.OracleClient  
@@ -32,7 +32,7 @@ csc /r:System.Data.OracleClient.dll
   
 ## In This Section  
  [System Requirements](../../../../docs/framework/data/adonet/system-requirements-for-the-dotnet-data-provider-for-oracle.md)  
- Describes requirements for using the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle, and describes a number of issues to be aware when using it.  
+ Describes requirements for using the .NET Framework Data Provider for Oracle, and describes a number of issues to be aware when using it.  
   
  [Oracle BFILEs](../../../../docs/framework/data/adonet/oracle-bfiles.md)  
  Describes the <xref:System.Data.OracleClient.OracleBFile> class, which is used to work with the Oracle BFILE data type.  
@@ -57,7 +57,7 @@ csc /r:System.Data.OracleClient.dll
   
 ## Related Sections  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- Describes secure coding practices when using [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+ Describes secure coding practices when using ADO.NET.  
   
  [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  Describes how to create and use `DataSets`, typed `DataSets`, `DataTables`, and `DataViews`.  
@@ -69,8 +69,9 @@ csc /r:System.Data.OracleClient.dll
  Describes how to work with features and functionality that are specific to SQL Server.  
   
  [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
- Describes generic classes that allow you to write provider-independent code in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+ Describes generic classes that allow you to write provider-independent code in ADO.NET.  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

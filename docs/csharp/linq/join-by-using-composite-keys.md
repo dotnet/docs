@@ -1,7 +1,7 @@
 ---
 title: Join by using composite keys (LINQ in C#)
 description: Learn how to join by using composite keys in LINQ.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: da70b54d-3213-45eb-8437-fbe75cbcf935
 ---
 # Join by using composite keys
@@ -32,6 +32,6 @@ Composite keys can be also used in a `group` clause.
 
 ## See also
 
-- [Language Integrated Query (LINQ)](index.md)  
-- [join clause](../language-reference/keywords/join-clause.md)  
-- [group clause](../language-reference/keywords/group-clause.md)  
+- [Language Integrated Query (LINQ)](index.md)
+- [join clause](../language-reference/keywords/join-clause.md)
+- [group clause](../language-reference/keywords/group-clause.md)

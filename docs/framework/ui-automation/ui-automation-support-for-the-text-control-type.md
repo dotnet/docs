@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "UI Automation, Text control type"
   - "control types, Text"
 ms.assetid: ab0d0ada-8a71-4547-9c03-aadf675938f2
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Text Control Type
 > [!NOTE]
@@ -29,11 +27,11 @@ ms.author: "mhopkins"
   
  A text control can be used alone as a label or as static text on a form. It can also be contained within the structure of a:  
   
--   ListItem  
+- ListItem  
   
--   TreeItem  
+- TreeItem  
   
--   DataItem  
+- DataItem  
   
  Text controls may not be in the Content View of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree because text is often displayed through the `NameProperty` of another control. For example the text that is used to label a Combo Box control is exposed through the control's `NameProperty` value. Because the Combo Box control is in the content view of the UI Automation Tree, it is not necessary for the text control to be there. Text controls always have 0 children in the content view  
   
@@ -81,7 +79,8 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Text>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+
+- <xref:System.Windows.Automation.ControlType.Text>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

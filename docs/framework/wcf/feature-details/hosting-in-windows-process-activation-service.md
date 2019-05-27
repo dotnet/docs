@@ -12,13 +12,13 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
   
  The WAS process model provides several features that enable applications to be hosted in a way that is more robust, more manageable, and that uses resources efficiently:  
   
--   Message-based activation of applications and worker process applications start and stop dynamically in response to incoming work items that arrive using HTTP and non-HTTP network protocols.  
+- Message-based activation of applications and worker process applications start and stop dynamically in response to incoming work items that arrive using HTTP and non-HTTP network protocols.  
   
--   Robust application and worker process recycling to maintain the health of running applications.  
+- Robust application and worker process recycling to maintain the health of running applications.  
   
--   Centralized application configuration and management.  
+- Centralized application configuration and management.  
   
--   Allows applications to take advantage of the IIS process model without requiring the deployment footprint of a full IIS installation.  
+- Allows applications to take advantage of the IIS process model without requiring the deployment footprint of a full IIS installation.  
   
  For more information about WAS features, see [IIS 7.0 Beta: IIS 7.0 Web Administration](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).  
   
@@ -45,9 +45,10 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 ## The WAS Runtime  
  Applications are organized into sites for the purposes of addressing and management. At run time, applications are also grouped together into application pools. An application pool can house many different applications from many different sites. All of the applications inside an application pool share a common set of run-time characteristics. For example, they all run under the same version of the common language runtime (CLR) and they all share a common process identity. Each application pool corresponds to an instance of a worker process (w3wp.exe). Each managed application running inside of a shared application pool is isolated from other applications by means of a CLR AppDomain.  
   
-## See Also  
- [WAS Activation Architecture](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)  
- [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)  
- [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)  
- [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+
+- [WAS Activation Architecture](../../../../docs/framework/wcf/feature-details/was-activation-architecture.md)
+- [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)
+- [How to: Install and Configure WCF Activation Components](../../../../docs/framework/wcf/feature-details/how-to-install-and-configure-wcf-activation-components.md)
+- [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

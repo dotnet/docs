@@ -24,6 +24,6 @@ author: "KrzysztofCwalina"
   
 ## See also
 
-- <xref:System.Array>  
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- <xref:System.Array>
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

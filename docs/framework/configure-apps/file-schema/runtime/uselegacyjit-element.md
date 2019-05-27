@@ -1,12 +1,12 @@
 ---
-title: "&lt;useLegacyJit&gt; Element"
+title: "<useLegacyJit> Element"
 ms.date: "04/26/2017"
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
 
-# &lt;useLegacyJit&gt; Element
+# \<useLegacyJit> Element
 
 Determines whether the common language runtime uses the legacy 64-bit JIT compiler for just-in-time compilation.  
   
@@ -90,6 +90,6 @@ The following configuration file disables compilation with the new 64-bit JIT co
   
 ## See also
 
-- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)   
-- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)   
+- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
+- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)
 - [Mitigation: New 64-bit JIT Compiler](../../../../../docs/framework/migration-guide/mitigation-new-64-bit-jit-compiler.md)

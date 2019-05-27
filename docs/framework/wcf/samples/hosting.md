@@ -1,5 +1,5 @@
 ---
-title: "Hosting1"
+title: "WCF hosting samples"
 ms.date: "03/30/2017"
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4
 ---
@@ -14,7 +14,7 @@ This section contains samples that demonstrate hosting Windows Communication Fou
  Demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace.  
   
  [ASP.NET Compatibility](../../../../docs/framework/wcf/samples/aspnet-compatibility.md)  
- Demonstrates how to enable [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Compatibility mode in WCF.  
+ Demonstrates how to enable ASP.NET Compatibility mode in WCF.  
   
  [IIS Hosting Using Inline Code](../../../../docs/framework/wcf/samples/iis-hosting-using-inline-code.md)  
  Demonstrates how to implement a service hosted by Internet Information Services (IIS), where the service code is contained in-line in a .svc file and is compiled on demand.  

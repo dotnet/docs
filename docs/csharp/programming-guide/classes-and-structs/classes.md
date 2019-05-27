@@ -94,7 +94,7 @@ The following example defines a public class that contains an [auto-implemented 
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)
 - [Object-Oriented Programming](../concepts/object-oriented-programming.md)

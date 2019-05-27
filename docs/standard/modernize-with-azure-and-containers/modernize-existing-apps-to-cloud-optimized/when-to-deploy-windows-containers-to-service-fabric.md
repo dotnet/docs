@@ -1,8 +1,6 @@
 ---
 title: When to deploy Windows Containers to Service Fabric
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Service Fabric
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # When to deploy Windows Containers to Service Fabric
@@ -11,9 +9,9 @@ Applications that are based on Windows Containers will quickly need to use platf
 
 Many organizations are lifting and shifting existing monolithic applications to containers for two reasons:
 
--   Cost reductions, either due to consolidation and removal of existing hardware, or from running applications at a higher density.
+- Cost reductions, either due to consolidation and removal of existing hardware, or from running applications at a higher density.
 
--   A consistent deployment contract between development and operations.
+- A consistent deployment contract between development and operations.
 
 Pursuing cost reductions is understandable, and it's likely that all organizations are chasing that goal. Consistent deployment is harder to evaluate, but it's equally as important. A consistent deployment contract says that developers are free to choose to use the technology that suits them, and the operations team gets a single way to deploy and manage applications. This agreement alleviates the pain of having operations deal with the complexity of many different technologies, or forcing developers to work only with certain technologies. Essentially, each application is containerized in a self-contained deployment image.
 

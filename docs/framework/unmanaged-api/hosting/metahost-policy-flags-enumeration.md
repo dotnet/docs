@@ -45,7 +45,6 @@ typedef enum {
 |`METAHOST_POLICY_SHOW_ERROR_DIALOG`|An error dialog box is displayed if `GetRequestedRuntime` is unable to find a runtime that is compatible with the input parameters. Beginning with the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], this error dialog box can take the form of a Windows feature dialog box that asks whether the user would like to enable the appropriate feature.|  
 |`METAHOST_POLICY_USE_PROCESS_IMAGE_PATH`|`GetRequestedRuntime` uses the process image (and any corresponding configuration file) as additional input to the binding process. By default, `GetRequestedRuntime` does not fall back to the process image path (typically, the EXE that was used to launch the process) when determining the runtime to bind to.|  
 |`METAHOST_POLICY_ENSURE_SKU_SUPPORTED`|`GetRequestedRuntime` must check whether the appropriate SKU is installed when no information is available in the configuration file. This allows applications that do not have configuration files to fail gracefully on smaller SKUs than the default installation of the .NET Framework. By default, `GetRequestedRuntime` does not check whether the appropriate SKU is installed unless the SKU attribute is specified in the configuration file `<supportedRuntime />` element.|  
-|`METAHOST_POLICY_ENSURE_SKU_SUPPORTED`|`GetRequestedRuntime` must check whether the appropriate SKU is installed when no information is available in the configuration file. This allows applications that do not have configuration files to fail gracefully on smaller SKUs than the default installation of the .NET Framework. By default, `GetRequestedRuntime` does not check whether the appropriate SKU is installed unless the SKU attribute is specified in the configuration file `<supportedRuntime />` element.|  
 |`METAHOST_POLICY_IGNORE_ERROR_MODE`|`GetRequestedRuntime` should ignore SEM_FAILCRITICALERRORS (which is set by calling the [SetErrorMode](https://go.microsoft.com/fwlink/p/?LinkId=255242) function), and show the error dialog box. By default, SEM_FAILCRITICALERRORS suppresses the error dialog box. It may have been inherited from another process, and the silent error may be undesirable in your scenario.|  
   
 ## Remarks  
@@ -59,6 +58,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
- [GetRequestedRuntime Method](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md)
+## See also
+
+- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [GetRequestedRuntime Method](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md)

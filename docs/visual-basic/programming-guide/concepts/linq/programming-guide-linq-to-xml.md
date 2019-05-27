@@ -7,7 +7,7 @@ ms.assetid: f1f942bf-3404-4354-b4c5-4fe35e37a02b
 This section provides conceptual and how-to information about programming with [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
   
 ## Who Should Read This Documentation  
- This documentation targets developers who already understand Visual Basic and some basic aspects of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
+ This documentation targets developers who already understand Visual Basic and some basic aspects of the .NET Framework.  
   
  The goal of this documentation is to make [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] easy to use for all kinds of developers. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] makes XML programming easier. You do not have to be an expert developer to use it.  
   
@@ -28,6 +28,7 @@ This section provides conceptual and how-to information about programming with [
 |[LINQ to XML Security (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-security.md)|Describes security issues associated with LINQ to XML and provides some guidance for mitigating security exposure.|  
 |[Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)|Contains the sample XML documents that are used by many examples in this documentation.|  
   
-## See Also  
- [Getting Started (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)  
- [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)
+## See also
+
+- [Getting Started (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+- [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md)

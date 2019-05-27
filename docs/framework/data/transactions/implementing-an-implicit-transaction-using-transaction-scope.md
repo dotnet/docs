@@ -35,7 +35,7 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
 ## Rolling back a transaction  
  If you want to rollback a transaction, you should not call the <xref:System.Transactions.TransactionScope.Complete%2A> method within the transaction scope. For example, you can throw an exception within the scope. The transaction in which it participates in will be rolled back.  
   
-##  <a name="ManageTxFlow"></a> Managing transaction flow using TransactionScopeOption  
+## <a name="ManageTxFlow"></a> Managing transaction flow using TransactionScopeOption  
  Transaction scope can be nested by calling a method that uses a <xref:System.Transactions.TransactionScope> from within a method that uses its own scope, as is the case with the `RootMethod` method in the following example,  
   
 ```csharp  
@@ -65,11 +65,11 @@ void SomeMethod()
   
  A <xref:System.Transactions.TransactionScope> object has three options:  
   
--   Join the ambient transaction, or create a new one if one does not exist.  
+- Join the ambient transaction, or create a new one if one does not exist.  
   
--   Be a new root scope, that is, start a new transaction and have that transaction be the new ambient transaction inside its own scope.  
+- Be a new root scope, that is, start a new transaction and have that transaction be the new ambient transaction inside its own scope.  
   
--   Not take part in a transaction at all. There is no ambient transaction as a result.  
+- Not take part in a transaction at all. There is no ambient transaction as a result.  
   
  If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.Required>, and an ambient transaction is present, the scope joins that transaction. If, on the other hand, there is no ambient transaction, then the scope creates a new transaction, and become the root scope. This is the default value. When <xref:System.Transactions.TransactionScopeOption.Required> is used, the code inside the scope does not need to behave differently whether it is the root or just joining the ambient transaction. It should operate identically in both cases.  
   
@@ -162,6 +162,7 @@ using(TransactionScope scope1 = new TransactionScope())
 ## Interop with COM+  
  When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](../../../../docs/framework/data/transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
   
-## See Also  
- <xref:System.Transactions.Transaction.Clone%2A>  
- <xref:System.Transactions.TransactionScope>
+## See also
+
+- <xref:System.Transactions.Transaction.Clone%2A>
+- <xref:System.Transactions.TransactionScope>

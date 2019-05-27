@@ -20,5 +20,5 @@ This query is intentionally simple to enable you to experiment. For example, you
   
 ## See also
 
-- [Language Integrated Query (LINQ)](index.md)  
+- [Language Integrated Query (LINQ)](index.md)
 - [String interpolation](../language-reference/tokens/interpolated.md)

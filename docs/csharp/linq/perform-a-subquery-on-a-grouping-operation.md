@@ -1,7 +1,7 @@
 ---
 title: Perform a subquery on a grouping operation (LINQ in C#)
 description: How to perform a subquery on a grouping operation using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: d75a588e-9b6f-4f37-b195-f99ec8503855
 ---
 # Perform a subquery on a grouping operation

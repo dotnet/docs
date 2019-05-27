@@ -1,5 +1,5 @@
 ---
-title: Consuming a .NET Standard library in Visual Studio 2017
+title: Consume a .NET Standard library in Visual Studio 2017
 description: Build a .NET Core application that calls members of another class library with Visual Studio 2017.
 author: BillWagner
 ms.author: wiwagn
@@ -10,7 +10,7 @@ dev_langs:
 ms.custom: "vs-dotnet, seodec18"
 ---
 
-# Consuming a .NET Standard library in Visual Studio 2017
+# Consume a .NET Standard library in Visual Studio 2017
 
 Once you've created a .NET Standard class library by following the steps in [Building a C# class library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) or [Building a Visual Basic class library with .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md), tested it in [Testing a class library with .NET Core in Visual Studio 2017](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
 

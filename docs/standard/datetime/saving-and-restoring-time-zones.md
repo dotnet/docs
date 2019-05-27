@@ -70,4 +70,4 @@ For an example that uses an embedded resource to store serialized time zone data
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)

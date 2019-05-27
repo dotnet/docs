@@ -23,26 +23,26 @@ This topic describes how to implement a message loop for interoperation with [!I
 ## Writing Message Loops  
  The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you write your own message loop:  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A>: your message loop should call this to indicate that the thread is modal.  
+- <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A>: your message loop should call this to indicate that the thread is modal.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A>:your message loop should call this to indicate that the thread has reverted to nonmodal.  
+- <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A>:your message loop should call this to indicate that the thread has reverted to nonmodal.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.RaiseIdle%2A>: your message loop should call this to indicate that <xref:System.Windows.Interop.ComponentDispatcher> should raise the <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> event. <xref:System.Windows.Interop.ComponentDispatcher> will not raise <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> if <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A> is `true`, but message loops may choose to call <xref:System.Windows.Interop.ComponentDispatcher.RaiseIdle%2A> even if <xref:System.Windows.Interop.ComponentDispatcher> cannot respond to it while in modal state.  
+- <xref:System.Windows.Interop.ComponentDispatcher.RaiseIdle%2A>: your message loop should call this to indicate that <xref:System.Windows.Interop.ComponentDispatcher> should raise the <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> event. <xref:System.Windows.Interop.ComponentDispatcher> will not raise <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> if <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A> is `true`, but message loops may choose to call <xref:System.Windows.Interop.ComponentDispatcher.RaiseIdle%2A> even if <xref:System.Windows.Interop.ComponentDispatcher> cannot respond to it while in modal state.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A>: your message loop should call this to indicate that a new message is available. The return value indicates whether a listener to a <xref:System.Windows.Interop.ComponentDispatcher> event handled the message. If <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> returns `true` (handled), the dispatcher should do nothing further with the message. If the return value is `false`, the dispatcher is expected to call the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] function `TranslateMessage`, then call `DispatchMessage`.  
+- <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A>: your message loop should call this to indicate that a new message is available. The return value indicates whether a listener to a <xref:System.Windows.Interop.ComponentDispatcher> event handled the message. If <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> returns `true` (handled), the dispatcher should do nothing further with the message. If the return value is `false`, the dispatcher is expected to call the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] function `TranslateMessage`, then call `DispatchMessage`.  
   
 ## Using ComponentDispatcher and Existing Message Handling  
  The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you rely on the inherent [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] message loop.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A>: returns whether the application has gone modal (e.g., a modal message loop has been pushed). <xref:System.Windows.Interop.ComponentDispatcher> can track this state because the class maintains a count of <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A> and <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A> calls from the message loop.  
+- <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A>: returns whether the application has gone modal (e.g., a modal message loop has been pushed). <xref:System.Windows.Interop.ComponentDispatcher> can track this state because the class maintains a count of <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A> and <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A> calls from the message loop.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> and <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> events follow the standard rules for delegate invocations. Delegates are invoked in an unspecified order, and all delegates are invoked even if the first one marks the message as handled.  
+- <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> and <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> events follow the standard rules for delegate invocations. Delegates are invoked in an unspecified order, and all delegates are invoked even if the first one marks the message as handled.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle>: indicates an appropriate and efficient time to do idle processing (there are no other pending messages for the thread). <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> will not be raised if the thread is modal.  
+- <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle>: indicates an appropriate and efficient time to do idle processing (there are no other pending messages for the thread). <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> will not be raised if the thread is modal.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage>: raised for all messages that the message pump processes.  
+- <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage>: raised for all messages that the message pump processes.  
   
--   <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage>: raised for all messages that were not handled during <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage>.  
+- <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage>: raised for all messages that were not handled during <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage>.  
   
  A message is considered handled if after the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> event or <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> event, the `handled` parameter passed by reference in event data is `true`. Event handlers should ignore the message if `handled` is `true`, because that means the different handler handled the message first. Event handlers to both events may modify the message. The dispatcher should dispatch the modified message and not the original unchanged message. <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> is delivered to all listeners, but the architectural intention is that only the top-level window containing the HWND at which the messages targeted should invoke code in response to the message.  
   
@@ -55,9 +55,10 @@ This topic describes how to implement a message loop for interoperation with [!I
   
  A message that goes to the keyboard sink might not be sent to the HWND if you added hooks for that message by using the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method. The message might have been handled at the message pump level directly and not submitted to the `DispatchMessage` function.  
   
-## See Also  
- <xref:System.Windows.Interop.ComponentDispatcher>  
- <xref:System.Windows.Interop.IKeyboardInputSink>  
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
- [Threading Model](../../../../docs/framework/wpf/advanced/threading-model.md)  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+## See also
+
+- <xref:System.Windows.Interop.ComponentDispatcher>
+- <xref:System.Windows.Interop.IKeyboardInputSink>
+- [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
+- [Threading Model](threading-model.md)
+- [Input Overview](input-overview.md)

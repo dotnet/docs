@@ -14,15 +14,15 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framewor
   
  Because Svcutil.exe has a number of options that modify the generated type information, this topic does not discuss all scenarios. However, the following standard tasks involve locating generated code:  
   
--   Identifying service contract interfaces.  
+- Identifying service contract interfaces.  
   
--   Identifying the WCF client class.  
+- Identifying the WCF client class.  
   
--   Identifying data types.  
+- Identifying data types.  
   
--   Identifying callback contracts for duplex services.  
+- Identifying callback contracts for duplex services.  
   
--   Identifying the helper service contract channel interface.  
+- Identifying the helper service contract channel interface.  
   
 ### Finding Service Contract Interfaces  
  To locate the interfaces that model service contracts, search for interfaces that are marked with the <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType> attribute. Often this attribute can be difficult to locate with a quick read due to the presence of other attributes and the explicit properties set on the attribute itself. Remember that the service contract interface and the client contract interface are two different types. The following code example shows the original service contract.  
@@ -74,5 +74,6 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framewor
   
  [!code-csharp[C_GeneratedCodeFiles#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#13)]  
   
-## See Also  
- [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md)
+## See also
+
+- [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md)

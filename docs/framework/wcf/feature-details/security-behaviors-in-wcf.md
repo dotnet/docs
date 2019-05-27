@@ -6,15 +6,15 @@ ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
 # Security Behaviors in WCF
 In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  
   
--   [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
+- [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
--   [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md).  
+- [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md).  
   
--   [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md).  
+- [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md).  
   
--   [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
+- [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
   
--   [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md), which also enables you to specify a secure endpoint that clients can access for metadata.  
+- [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md), which also enables you to specify a secure endpoint that clients can access for metadata.  
   
 ## Setting Credentials with Behaviors  
  Use the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) and [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) to set credential values for a service or client. The underlying binding configuration determines whether a credential has to be set. For example, if the security mode is set to `None`, both clients and services do not authenticate each other and require no credentials of any type.  
@@ -72,9 +72,9 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
  You should use the [\<allowedAudienceUris>](../../../../docs/framework/configure-apps/file-schema/wcf/allowedaudienceuris.md) collection in a federated application that utilizes a *secure token service* (STS) that issues `SamlSecurityToken` security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a `SamlAudienceRestrictionCondition` to the security token. That allows the `SamlSecurityTokenAuthenticator` for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
   
--   Set the `audienceUriMode` attribute of [\<issuedTokenAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) to `Always` or `BearerKeyOnly`.  
+- Set the `audienceUriMode` attribute of [\<issuedTokenAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) to `Always` or `BearerKeyOnly`.  
   
--   Specify the set of valid URIs, by adding the URIs to this collection. To do this, insert an [\<add>](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md) for each URI  
+- Specify the set of valid URIs, by adding the URIs to this collection. To do this, insert an [\<add>](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-allowedaudienceuris.md) for each URI  
   
  For more information, see <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>.  
   
@@ -211,6 +211,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 </behaviors>  
 ```  
   
-## See Also  
- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

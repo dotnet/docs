@@ -13,18 +13,18 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
   
  This section describes:  
   
-1.  How to implement and use the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> interface, which exposes the WSDL generation data to you prior to publishing the WSDL.  
+1. How to implement and use the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> interface, which exposes the WSDL generation data to you prior to publishing the WSDL.  
   
-2.  How to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> interface, which exposes the policy data to you prior to exporting the policy assertions in WSDL data.  
+2. How to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> interface, which exposes the policy data to you prior to exporting the policy assertions in WSDL data.  
   
  For more information about importing custom WSDL and policy assertions, see [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md).  
   
 ## Exporting Custom WSDL Elements  
  Implement the <xref:System.ServiceModel.Description.IWsdlExportExtension> on an operation behavior, contract behavior, endpoint behavior or binding element (<xref:System.ServiceModel.Description.IOperationBehavior>, <xref:System.ServiceModel.Description.IContractBehavior>, <xref:System.ServiceModel.Description.IEndpointBehavior>, or <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType> respectively) and insert the behaviors or binding elements into the description of the service that you are trying to export. (For more information about inserting behaviors, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)). The <xref:System.ServiceModel.Description.IWsdlExportExtension> is called for each endpoint and each endpoint exports the contract first if it has not already been exported. You can participate in either export process, depending upon your needs:  
   
--   Use the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to modify the exported metadata in the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method.  
+- Use the <xref:System.ServiceModel.Description.WsdlContractConversionContext> to modify the exported metadata in the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method.  
   
--   Use the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext> to modify the exported metadata for the endpoint in the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method.  
+- Use the <xref:System.ServiceModel.Description.WsdlEndpointConversionContext> to modify the exported metadata for the endpoint in the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method.  
   
  The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method is called on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations within the <xref:System.ServiceModel.Description.ContractDescription?displayProperty=nameWithType> instance that is being exported.  The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method is called on all <xref:System.ServiceModel.Description.IWsdlExportExtension> implementations with the <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> instance that is being exported.  
   
@@ -35,7 +35,8 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
   
  For more information, see [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md).  
   
-## See Also  
- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)  
- [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md)  
- [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)
+## See also
+
+- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)
+- [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md)
+- [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)

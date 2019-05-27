@@ -44,17 +44,17 @@ XElement contacts =
   
  The `content` parameter is extremely flexible. It supports any type of object that is a valid child of an <xref:System.Xml.Linq.XElement>. The following rules apply to different types of objects passed in this parameter:  
   
--   A string is added as text content.  
+- A string is added as text content.  
   
--   An <xref:System.Xml.Linq.XElement> is added as a child element.  
+- An <xref:System.Xml.Linq.XElement> is added as a child element.  
   
--   An <xref:System.Xml.Linq.XAttribute> is added as an attribute.  
+- An <xref:System.Xml.Linq.XAttribute> is added as an attribute.  
   
--   An <xref:System.Xml.Linq.XProcessingInstruction>, <xref:System.Xml.Linq.XComment>, or <xref:System.Xml.Linq.XText> is added as child content.  
+- An <xref:System.Xml.Linq.XProcessingInstruction>, <xref:System.Xml.Linq.XComment>, or <xref:System.Xml.Linq.XText> is added as child content.  
   
--   An <xref:System.Collections.IEnumerable> is enumerated, and these rules are applied recursively to the results.  
+- An <xref:System.Collections.IEnumerable> is enumerated, and these rules are applied recursively to the results.  
   
--   For any other type, its `ToString` method is called and the result is added as text content.  
+- For any other type, its `ToString` method is called and the result is added as text content.  
   
 ### Creating an XElement with content  
  You can create an <xref:System.Xml.Linq.XElement> that contains simple content with a single method call. To do this, specify the content as the second parameter, as follows:  
@@ -228,6 +228,6 @@ Console.WriteLine("Child2 was {0}",
 //    Child2 was attached  
 ```
 
-## See Also
+## See also
 
 - [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)

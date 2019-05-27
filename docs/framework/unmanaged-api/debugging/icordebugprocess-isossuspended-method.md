@@ -29,7 +29,7 @@ HRESULT IsOSSuspended(
     [out] BOOL  *pbSuspended);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The ID of thread in question.  
   

@@ -37,5 +37,5 @@ To search for a directory in isolated storage, use the <xref:System.IO.IsolatedS
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

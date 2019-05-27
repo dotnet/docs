@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 44d2eadf-7eec-443c-a2ac-d601fd919e17
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Locate Assemblies by Using DEVPATH
 Developers might want to make sure that a shared assembly they are building works correctly with multiple applications. Instead of continually putting the assembly in the global assembly cache during the development cycle, the developer can create a DEVPATH environment variable that points to the build output directory for the assembly.  
@@ -39,5 +37,6 @@ Developers might want to make sure that a shared assembly they are building work
 > [!NOTE]
 >  Use this setting only at development time. The runtime does not check the versions on strong-named assemblies found in the DEVPATH. It simply uses the first assembly it finds.  
   
-## See Also  
- [Configuring .NET Framework Apps](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+## See also
+
+- [Configuring Apps by using Configuration Files](index.md)

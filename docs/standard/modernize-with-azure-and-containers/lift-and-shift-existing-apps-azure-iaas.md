@@ -1,8 +1,6 @@
 ---
 title: Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 # Lift and shift existing .NET apps to Azure IaaS (Cloud Infrastructure-Ready)
@@ -79,23 +77,27 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 - **Azure Migrate Datasheet**
 
-    [https://aka.ms/azuremigration\_datasheet](https://aka.ms/azuremigration\_datasheet)
+    <https://aka.ms/azuremigration\_datasheet>
 
 - **Azure Migrate**
 
-    [http://azuremigrationcenter.com/](http://azuremigrationcenter.com/)
+    <https://aka.ms/azuremigrate>
+
+- **Azure migration center**
+
+    <https://azure.microsoft.com/migration/>
 
 - **Migrate to Azure with Site Recovery**
 
-    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure)
+    <https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-to-azure>
 
 - **Azure Site Recovery service overview**
 
-    [https://docs.microsoft.com/azure/site-recovery/site-recovery-overview](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+    <https://docs.microsoft.com/azure/site-recovery/site-recovery-overview>
 
 - **Migrating VMs in AWS to Azure VMs**
 
-    [https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure)
+    <https://docs.microsoft.com/azure/site-recovery/site-recovery-migrate-aws-to-azure>
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

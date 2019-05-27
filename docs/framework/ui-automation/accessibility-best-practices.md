@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Accessibility Best Practices
 > [!NOTE]
@@ -74,9 +72,9 @@ ms.author: "mhopkins"
   
  Applications should provide the following keyboard interfaces:  
   
--   tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
+- tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
   
--   logical tab order  
+- logical tab order  
   
 <a name="Show_the_Keyboard_Focus"></a>   
 ### Show the Keyboard Focus  
@@ -86,11 +84,11 @@ ms.author: "mhopkins"
   
  Applications should do the following with keyboard focus:  
   
--   one item should always have keyboard focus  
+- one item should always have keyboard focus  
   
--   keyboard focus should be visible and obvious  
+- keyboard focus should be visible and obvious  
   
--   selections and/or focused items should be visually highlighted  
+- selections and/or focused items should be visually highlighted  
   
 <a name="Support_Navigation_Standards_and_Powerful_Navigation"></a>   
 ### Support Navigation Standards and Powerful Navigation Schemes  
@@ -98,11 +96,11 @@ ms.author: "mhopkins"
   
  Applications should provide the following keyboard interfaces:  
   
--   shortcut keys and underlined access keys for all commands, menus and controls  
+- shortcut keys and underlined access keys for all commands, menus and controls  
   
--   keyboard shortcuts to important links  
+- keyboard shortcuts to important links  
   
--   all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
+- all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
   
 <a name="Do_not_let_Mouse_Location_Interfere_with_Keyboard"></a>   
 ### Do Not Let Mouse Location Interfere with Keyboard Navigation  
@@ -126,7 +124,8 @@ ms.author: "mhopkins"
 ### Use Standard Input APIs with Device-Independent Calls  
  Device-independent calls ensure keyboard and mouse feature equality, while providing [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
-## See Also  
- <xref:System.Windows.Automation.Peers>  
- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
- [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+## See also
+
+- <xref:System.Windows.Automation.Peers>
+- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))
+- [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

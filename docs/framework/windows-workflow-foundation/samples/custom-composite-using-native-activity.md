@@ -23,9 +23,9 @@ This sample demonstrates how to write a <xref:System.Activities.NativeActivity> 
 
 #### To set up, build, and run the sample
 
-1.  Open the Composite.sln sample solution in Visual Studio 2010.
+1. Open the Composite.sln sample solution in Visual Studio 2010.
 
-2.  Build and run the solution.
+2. Build and run the solution.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

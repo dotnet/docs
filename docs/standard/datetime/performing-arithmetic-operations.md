@@ -81,5 +81,5 @@ For example, the following code is similar to the previous code that added two-a
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [How to: Use time zones in date and time arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [How to: Use time zones in date and time arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md)

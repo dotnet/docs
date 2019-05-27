@@ -119,7 +119,7 @@ The main way to do native interoperability is via "platform invoke" or P/Invoke 
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 
-Read more about it native interoperability in the [Native interoperability](native-interop.md) topic.
+For more information about native interoperability, see the [Native interoperability](native-interop/index.md) article.
 
 ## Unsafe code
 

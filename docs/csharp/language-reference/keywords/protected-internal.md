@@ -50,6 +50,7 @@ class DerivedClass : BaseClass
     }
 }
 ```
+
 This example contains two files, `Assembly1.cs` and `Assembly2.cs`.
 The first file contains a public base class, `BaseClass`, and another class, `TestAccess`. `BaseClass` owns a protected internal member, `myValue`, which is accessed by the `TestAccess` type.
 In the second file, an attempt to access `myValue` through an instance of `BaseClass` will produce an error, while an access to this member through an instance of a derived class, `DerivedClass` will succeed.

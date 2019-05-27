@@ -18,6 +18,6 @@ LINQ to XML provides an in-memory XML programming interface that leverages the .
  [Reference (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/reference-linq-to-xml.md)  
  Provides pointers to the LINQ to XML managed reference documentation.  
   
-## See Also
+## See also
 
 - [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

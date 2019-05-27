@@ -89,6 +89,6 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## See Also
+## See also
 
 - [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

@@ -46,6 +46,3 @@ HRESULT StrongNameErrorInfo ();
  **Library:** Included as a resource in MsCorEE.dll  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See Also  
- [Strong Naming Global Static Functions](https://msdn.microsoft.com/library/efa715df-e8cc-48f2-9ec4-26586f0dc8d0)

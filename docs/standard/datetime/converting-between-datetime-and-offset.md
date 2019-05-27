@@ -125,4 +125,4 @@ Note that this code makes two assumptions that, depending on the application and
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)

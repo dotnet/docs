@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "Tree control type"
   - "UI Automation, Tree control type"
 ms.assetid: 312dd04d-a86b-4072-8b12-2beeabdff5e3
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Support for the Tree Control Type
 > [!NOTE]
@@ -29,9 +27,9 @@ ms.author: "mhopkins"
   
  The control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree consists of:  
   
--   Zero to many items within the container (items can be based on the Tree Item, Data Item, or other control type).  
+- Zero to many items within the container (items can be based on the Tree Item, Data Item, or other control type).  
   
--   Zero, one or two scroll bars.  
+- Zero, one or two scroll bars.  
   
  The content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree consists of zero or many items within the container (items can be based on the Tree Item, Data Item, or other control type).  
   
@@ -82,7 +80,8 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent>|Required|None|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent>|Required|None|  
   
-## See Also  
- <xref:System.Windows.Automation.ControlType.Tree>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+## See also
+
+- <xref:System.Windows.Automation.ControlType.Tree>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

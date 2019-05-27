@@ -14,13 +14,13 @@ This sample shows how to use scopes to categorize discoverable endpoints as well
   
 #### To use this sample  
   
-1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. See [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is: `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1. This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. See [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is: `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2.  Build the solution.  
+2. Build the solution.  
   
-3.  Run the service executable from the build directory.  
+3. Run the service executable from the build directory.  
   
-4.  Run the client executable. Note that the client is able to locate the service.  
+4. Run the client executable. Note that the client is able to locate the service.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -30,5 +30,3 @@ This sample shows how to use scopes to categorize discoverable endpoints as well
 >  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\DiscoveryWithScopes`  
-  
-## See Also

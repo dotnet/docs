@@ -28,10 +28,10 @@ For more information about attributes, see [Attributes](../../../docs/standard/a
 
 ## See also
 
-- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
-- [How to: Serialize an Object as a SOAP-Encoded XML Stream](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
-- [How to: Override Encoded SOAP XML Serialization](how-to-override-encoded-soap-xml-serialization.md)  
-- [Attributes](../../../docs/standard/attributes/index.md)  
-- <xref:System.Xml.Serialization.XmlSerializer>  
-- [How to: Serialize an Object](how-to-serialize-an-object.md)  
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+- [How to: Serialize an Object as a SOAP-Encoded XML Stream](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)
+- [How to: Override Encoded SOAP XML Serialization](how-to-override-encoded-soap-xml-serialization.md)
+- [Attributes](../../../docs/standard/attributes/index.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](how-to-deserialize-an-object.md)

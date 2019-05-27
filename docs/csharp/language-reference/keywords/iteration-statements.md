@@ -24,7 +24,7 @@ The following keywords are used in iteration statements:
 
 ## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
 - [Statement Keywords](statement-keywords.md)

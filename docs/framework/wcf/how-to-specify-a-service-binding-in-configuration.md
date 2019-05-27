@@ -17,12 +17,12 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
   
 ### To specify the BasicHttpBinding to use to configure the service  
   
-1.  Define a service contract for the type of service.  
+1. Define a service contract for the type of service.  
   
      [!code-csharp[C_HowTo_ConfigureServiceBinding#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureservicebinding/cs/source.cs#1)]
      [!code-vb[C_HowTo_ConfigureServiceBinding#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_configureservicebinding/vb/source.vb#1)]  
   
-2.  Implement the service contract in a service class.  
+2. Implement the service contract in a service class.  
   
      [!code-csharp[C_HowTo_ConfigureServiceBinding#2](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureservicebinding/cs/source.cs#2)]
      [!code-vb[C_HowTo_ConfigureServiceBinding#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_configureservicebinding/vb/source.vb#2)]  
@@ -30,7 +30,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     > [!NOTE]
     >  Address or binding information is not specified inside the implementation of the service. Also, code does not have to be written to fetch that information from the configuration file.  
   
-3.  Create a Web.config file to configure an endpoint for the `CalculatorService` that uses the <xref:System.ServiceModel.WSHttpBinding>.  
+3. Create a Web.config file to configure an endpoint for the `CalculatorService` that uses the <xref:System.ServiceModel.WSHttpBinding>.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -39,18 +39,18 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
         <services>  
           <service name=" CalculatorService" >  
             <endpoint   
-            <-- Leave the address blank to be populated by default-->  
-            <--from the hosting environment,in this case IIS, so -->  
-            <-- the address will just be that of the IIS Virtual -->  
-            <--Directory.-->  
+            <!-- Leave the address blank to be populated by default -->  
+            <!-- from the hosting environment,in this case IIS, so -->  
+            <!-- the address will just be that of the IIS Virtual -->  
+            <!-- Directory. -->  
                 address=""   
-            <--Specify the binding type -->  
+            <!-- Specify the binding type -->  
                 binding="wsHttpBinding"  
-            <--Specify the binding configuration name for that -->  
-            <--binding type. This is optional but useful if you  -->  
-            <--want to modify the properties of the binding. -->  
-            <--The bindingConfiguration name Binding1 is defined  -->  
-            <--below in the bindings element.  -->  
+            <!-- Specify the binding configuration name for that -->  
+            <!-- binding type. This is optional but useful if you -->  
+            <!-- want to modify the properties of the binding. -->  
+            <!-- The bindingConfiguration name Binding1 is defined -->  
+            <!-- below in the bindings element. -->  
                 bindingConfiguration="Binding1"  
                 contract="ICalculator" />  
           </service>  
@@ -58,8 +58,8 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
         <bindings>  
           <wsHttpBinding>  
             <binding name="Binding1">  
-              <-- Binding property values can be modified here. -->  
-              <--See the next procedure. -->  
+              <!-- Binding property values can be modified here. -->  
+              <!-- See the next procedure. -->  
             </binding>  
           </wsHttpBinding>  
        </bindings>  
@@ -67,7 +67,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     </configuration>  
     ```  
   
-4.  Create a Service.svc file that contains the following line and place it in your Internet Information Services (IIS) virtual directory.  
+4. Create a Service.svc file that contains the following line and place it in your Internet Information Services (IIS) virtual directory.  
   
     ```  
     <%@ServiceHost language=c# Service="CalculatorService" %>   
@@ -75,7 +75,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
   
 ### To modify the default values of the binding properties  
   
-1.  To modify one of the default property values of the <xref:System.ServiceModel.WSHttpBinding>, create a new binding configuration name - `<binding name="Binding1">` - within the [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element and set the new values for the attributes of the binding in this binding element. For example, to change the default open and close timeout values of 1 minute to 2 minutes, add the following to the configuration file.  
+1. To modify one of the default property values of the <xref:System.ServiceModel.WSHttpBinding>, create a new binding configuration name - `<binding name="Binding1">` - within the [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element and set the new values for the attributes of the binding in this binding element. For example, to change the default open and close timeout values of 1 minute to 2 minutes, add the following to the configuration file.  
   
     ```xml  
     <wsHttpBinding>  
@@ -86,6 +86,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     </wsHttpBinding>  
     ```  
   
-## See Also  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)
+## See also
+
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)

@@ -44,5 +44,5 @@ This example shows how to add, retrieve, update, and remove items from a <xref:S
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

@@ -30,6 +30,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/docker/docker-basics-dotnet-core.md",
+            "redirect_url": "/dotnet/core/docker/build-container"
+        },
+        {
+            "source_path": "docs/core/docker/build-docker-netcore-container.md",
+            "redirect_url": "/dotnet/core/docker/build-container"
+        },
+        {
+            "source_path": "docs/core/docker/building-net-docker-images.md",
+            "redirect_url": "/aspnet/core/host-and-deploy/docker/building-net-docker-images"
+        },
+        {
             "source_path": "docs/core/getting-started.md",
             "redirect_url": "/dotnet/core/get-started",
             "redirect_document_id": true
@@ -241,6 +253,10 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/core/tutorials/using-on-windows-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
             "source_path": "docs/core/versions/install-management.md",
             "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
         },
@@ -279,8 +295,12 @@
             "redirect_url": "/dotnet/csharp"
         },
         {
+            "source_path": "docs/csharp/delegates-events.md",
+            "redirect_url": "/dotnet/csharp/delegates-overview"
+        },
+        {
             "source_path": "docs/csharp/features.md",
-            "redirect_url": "/dotnet/csharp/concepts"
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts"
         },
         {
             "source_path": "docs/csharp/generics.md",
@@ -296,7 +316,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/getting-started/consuming-library-with-visual-studio",
+            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio",
             "redirect_document_id": true
         },
         {
@@ -379,6 +399,10 @@
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
+            "source_path": "docs/csharp/lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
         },
@@ -395,16 +419,176 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
         },
         {
+            "source_path": "docs/csharp/language-reference/language-specification/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/introduction"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.1/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.1/async-main"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.2/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.2/readonly-ref"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-7.3/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-7.3/blittable"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/csharp-8.0/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/proposals/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/addition-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/and-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/and-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-and-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/bitwise-complement-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#bitwise-complement-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/conditional-and-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#conditional-logical-and-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/conditional-or-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#conditional-logical-or-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/decrement-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/dereference-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-member-access-operator--"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/division-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/division-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#division-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/equality-comparison-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/equality-operators#equality-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/greater-than-equal-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/comparison-operators#greater-than-or-equal-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/greater-than-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/comparison-operators#greater-than-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/increment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/index-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/member-access-operators#indexer-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/left-shift-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/left-shift-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#left-shift-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/less-than-equal-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/comparison-operators#less-than-or-equal-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/less-than-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/comparison-operators#less-than-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/logical-negation-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-negation-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/member-access-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/member-access-operators#member-access-operator-"
+        },
+        {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-assignment-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/modulus-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/multiplication-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/multiplication-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#multiplication-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/not-equal-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/equality-operators#inequality-operator-"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/null-conditional-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/null-coalescing-operator"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/null-conditional-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/or-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/or-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-or-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/remainder-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/remainder-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/right-shift-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/right-shift-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#right-shift-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/xor-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#compound-assignment"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/xor-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/boolean-logical-operators#logical-exclusive-or-operator-"
         },
         {
             "source_path": "docs/csharp/methods-lambda-expressions.md",
@@ -425,6 +609,20 @@
         {
             "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
@@ -560,6 +758,10 @@
             "redirect_url": "/dotnet/csharp/linq/query-expression-basics"
         },
         {
+            "source_path": "docs/csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md",
             "redirect_url": "/dotnet/csharp/programming-guide/main-and-command-args/index"
         },
@@ -616,6 +818,46 @@
             "redirect_url": "/dotnet/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators"
         },
         {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/arithmetic-operations-on-pointers.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-arithmetic-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-member-access-operator--"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-access-an-array-element-with-a-pointer.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-element-access-operator-"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-increment-and-decrement-pointers.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-increment-and-decrement"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-obtain-the-address-of-a-variable.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#address-of-operator-"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/how-to-obtain-the-value-of-a-pointer-variable.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-indirection-operator-"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/pointer-comparison.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators#pointer-comparison-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/pointer-related-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/xmldoc"
+        },
+        {
             "source_path": "docs/csharp/quick-starts/arrays-and-collections.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/arrays-and-collections",
             "redirect_document_id": true
@@ -642,12 +884,12 @@
         },
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings-local",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings",
             "redirect_document_id": true
         },
         {
@@ -688,6 +930,14 @@
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
         },
         {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/intro-to-csharp/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
+        },
+        {
             "source_path": "docs/csharp/tutorials/microservices.md",
             "redirect_url": "/dotnet/core/docker/",
             "redirect_document_id": false
@@ -712,6 +962,79 @@
         {
             "source_path": "docs/framework/add-ins/walkthrough-create-extensible-app.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384297(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/client-application-services-overview.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384339(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-game1-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248547(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-gamepiece-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248546(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248550(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/full-code-listings.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248551(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/how-to-configure-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384312(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384313(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/index.md",
+            "redirect_url": "/dotnet/framework/develop-client-apps"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/manipulations-and-inertia.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248545(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/manipulations-and-inertia-overview.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248549(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248548(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/walkthrough-using-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546195(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/udpannouncementendpoint",
+            "redirect_document_id": true
+        },        
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/msl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/msl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/ssdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec"
         },
         {
             "source_path": "docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
@@ -759,6 +1082,14 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/docker/console.md",
+            "redirect_url": "/dotnet/framework"
+        },
+        {
+            "source_path": "docs/framework/docker/index.md",
+            "redirect_url": "/dotnet/framework"
+        },
+        {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
         },
@@ -804,7 +1135,7 @@
         },
         {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-eventsource-writeevent-method-calls.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtimef/4.5-4.5.1"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
         },
         {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-grid-control.md",
@@ -837,6 +1168,11 @@
         {
             "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+
+        {
+            "source_path": "docs/framework/migration-guide/release-keys-and-os-versions.md",
+            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
@@ -885,6 +1221,10 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/misc/binding.md",
+            "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
@@ -1286,6 +1626,11 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-grid-extensibliity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/property-grid-extensibility",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff642473(v%3dvs.100)"
         },
@@ -1449,6 +1794,26 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/passwordbox-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/passwordbox-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/repeatbutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/repeatbutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
+            "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
             "redirect_url": "/dotnet/framework/xaml-services/escape-sequence-markup-extension",
             "redirect_document_id": true
@@ -1469,6 +1834,11 @@
         {
             "source_path": "docs/fsharp/language-reference/code-formatting-guidelines.md",
             "redirect_url": "/dotnet/fsharp/style-guide/formatting"
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/lazy-computations.md",
+            "redirect_url": "/dotnet/fsharp/language-reference/lazy-expressions",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/language-reference/primitive-types.md",
@@ -1495,12 +1865,12 @@
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studio",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-visual-studio",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-vscode.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-vscode",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-vscode",
             "redirect_document_id": true
         },
         {
@@ -1553,9 +1923,82 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/machine-learning/resources/basics.md",
-            "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
+            "source_path": "docs/machine-learning/tutorials/taxi-fare.md",
+            "redirect_url": "/dotnet/machine-learning/tutorials/predict-prices",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/consuming-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net",
+            "redirect_document_id": true
+        },
+        {
+      
+            "source_path": "docs/machine-learning/how-to-guides/determine-global-feature-importance-in-model.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net",
+            "redirect_document_id":true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-data-from-text-file-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/load-non-file-training-data-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/load-data-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/single-predict-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/machine-learning-model-predictions-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-cross-validation-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/train-machine-learning-model-cross-validation-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-model-categorical-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-model-textual-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/prepare-data-ml-net"
+        },
+        {
+            "source_path": "docs/machine-learning/how-to-guides/train-regression-model-ml-net.md",
+            "redirect_url": "/dotnet/machine-learning/how-to-guides/train-machine-learning-model-ml-net",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/resources/basics.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
+        },
+        {
+            "source_path": "docs/machine-learning/resources/what-is-mldotnet.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
+        },        
+        {
+            "source_path": "docs/machine-learning/basic-concepts-model-training-in-mldotnet.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/what-is-machine-learning.md",
+            "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
         },
         {
             "source_path": "docs/scenarios/index.md",
@@ -1572,6 +2015,11 @@
         {
             "source_path": "docs/standard/about.md",
             "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path": "docs/standard/assembly-format.md",
+            "redirect_url": "/dotnet/standard/assembly/file-format",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
@@ -1762,6 +2210,10 @@
             "redirect_url": "/dotnet/standard/"
         },
         {
+            "source_path": "docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md",
+            "redirect_url": "/dotnet/api/System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
+        },
+        {
             "source_path": "docs/standard/data/index.md",
             "redirect_url": "/dotnet/standard/data/xml/index"
         },
@@ -1894,6 +2346,26 @@
             "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
+            "source_path": "docs/standard/native-interop.md",
+            "redirect_url": "/dotnet/standard/native-interop/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/native-interop/customize-parameter-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/customize-parameter-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/native-interop/customize-struct-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/customize-struct-marshaling",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/native-interop/type-marshalling.md",
+            "redirect_url": "/dotnet/standard/native-interop/type-marshaling",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
             "redirect_url": "/dotnet/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables",
             "redirect_document_id": true
@@ -1909,23 +2381,43 @@
         },
         {
             "source_path": "docs/standard/serialization/marshal-by-value.md",
-            "redirect_url": "/dotnet/standard/serialization-concepts"
+            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
         },
         {
             "source_path": "docs/standard/serialization/persistent-storage.md",
-            "redirect_url": "/dotnet/standard/serialization-concepts"
+            "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
         },
         {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
         {
+            "source_path": "docs/standard/threading/autoresetevent.md",
+            "redirect_url": "/dotnet/api/system.threading.autoresetevent"
+        },
+        {
+            "source_path": "docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives#thread-interaction-or-signaling"
+        },
+        {
             "source_path": "docs/standard/threading/interlocked-operations.md",
             "redirect_url": "/dotnet/api/system.threading.interlocked"
         },
         {
+            "source_path": "docs/standard/threading/managed-thread-states.md",
+            "redirect_url": "/dotnet/api/system.threading.threadstate"
+        },
+        {
+            "source_path": "docs/standard/threading/manualresetevent-and-manualreseteventslim.md",
+            "redirect_url": "/dotnet/api/system.threading.manualresetevent"
+        },
+        {
             "source_path": "docs/standard/threading/reader-writer-locks.md",
             "redirect_url": "/dotnet/api/system.threading.readerwriterlockslim"
+        },
+        {
+            "source_path": "docs/standard/threading/thread-suspend-garbage-collection-and-safe-points.md",
+            "redirect_url": "/dotnet/api/system.threading.thread.suspend"
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
@@ -1949,9 +2441,40 @@
             "redirect_url": "/visualstudio/debugger/debugger-basics"
         },
         {
+            "source_path": "docs/visual-basic/developing-apps/printing/adding-printable-reports-to-visual-studio-applications.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233804(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/deploying-applications-that-reference-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882689(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629268(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-a-scrollable-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690944(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-client-and-non-client-areas-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629243(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb629256(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/index.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/printing/printform-component.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb690938(v=vs.100)"
+        },
+        {
             "source_path": "docs/visual-basic/developing-apps/printing/printing-and-reporting.md",
-            "redirect_url": "/dotnet/visual-basic/developing-apps/printing/index",
-            "redirect_document_id": true
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb882691(v=vs.100)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/programming/app-settings/accessing-application-settings.md",
@@ -1967,6 +2490,86 @@
             "source_path": "docs/visual-basic/developing-apps/programming/drives-directories-files/processing.md",
             "redirect_url": "/dotnet/visual-basic/developing-apps/programming/drives-directories-files/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488279(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/deploying-applications-that-reference-power-packs-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488314(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-change-the-appearance-of-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488194(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-change-the-layout-of-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488199(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-create-a-master-detail-form-by-using-two-datarepeater-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488313(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-disable-adding-and-deleting-datarepeater-items-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488185(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-bound-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488274(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-item-headers-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488200(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488315(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488281(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488183(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-enable-tabbing-between-shapes-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488184(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/how-to-search-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488282(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488280(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488275(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/line-and-shape-controls-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488190(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/power-packs-controls.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488277(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488312(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/virtual-mode-in-the-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488276(v=vs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/windows-forms/walkthrough-displaying-data-in-a-datarepeater-control-visual-studio.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488278(v=vs.120)"
         },
         {
             "source_path": "docs/visual-basic/developing-apps/using-ide/help-for-event-handlers.md",
@@ -2097,6 +2700,18 @@
         {
             "source_path": "docs/visual-basic/misc/next-control-variable-does-not-match-for-loop-control-variable.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/index.md",
+            "redirect_url": "/dotnet/standard/assembly"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend-assemblies"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

@@ -43,19 +43,19 @@ Dim objC As System.OperatingSystem
 ### Advantages of Early Binding  
  Declaring an object variable as a specific class gives you several advantages:  
   
--   Automatic type checking  
+- Automatic type checking  
   
--   Guaranteed access to all members of the specific class  
+- Guaranteed access to all members of the specific class  
   
--   Microsoft IntelliSense support in the Code Editor  
+- Microsoft IntelliSense support in the Code Editor  
   
--   Improved readability of your code  
+- Improved readability of your code  
   
--   Fewer errors in your code  
+- Fewer errors in your code  
   
--   Errors caught at compile time rather than run time  
+- Errors caught at compile time rather than run time  
   
--   Faster code execution  
+- Faster code execution  
   
 ## Access to Object Variable Members  
  When `Option Strict` is turned `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  
@@ -119,12 +119,13 @@ Dim anyForm As System.Windows.Forms.Form
   
  All the members of a base class are available to derived classes, but the additional members of a derived class are unavailable to the base class.  
   
-## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)  
- [How to: Access Members of an Object](../../../../visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
+- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
+- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
+- [How to: Access Members of an Object](../../../../visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

@@ -15,11 +15,11 @@ SOAP faults convey error condition information from a service to a client and, i
 ## Overview  
  Declared SOAP faults are those in which an operation has a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=nameWithType> that specifies a custom SOAP fault type. Undeclared SOAP faults are those that are not specified in the contract for an operation. This topic helps you identify those error conditions and create a fault contract for your service that clients can use to properly handle those error conditions when notified by custom SOAP faults. The basic tasks are, in order:  
   
-1.  Define the error conditions that a client of your service should know about.  
+1. Define the error conditions that a client of your service should know about.  
   
-2.  Define the custom content of the SOAP faults for those error conditions.  
+2. Define the custom content of the SOAP faults for those error conditions.  
   
-3.  Mark your operations so that the specific SOAP faults that they throw are exposed to clients in WSDL.  
+3. Mark your operations so that the specific SOAP faults that they throw are exposed to clients in WSDL.  
   
 ### Defining Error Conditions That Clients Should Know About  
  SOAP faults are publicly described messages that carry fault information for a particular operation. Because they are described along with other operation messages in WSDL, clients know and, therefore, expect to handle such faults when invoking an operation. But because WCF services are written in managed code, deciding which error conditions in managed code are to be converted into faults and returned to the client provides you the opportunity to separate error conditions and bugs in your service from the formal error conversation you have with a client.  
@@ -81,13 +81,14 @@ End Class
   
  When accessing non-services that generate faults, certain limitations exist. WCF supports only faults with detail types that the schema describes and that are compatible with data contracts. For example, as mentioned above, WCF does not support faults that use XML attributes in their detail types, or faults with more than one top-level element in the detail section.  
   
-## See Also  
- <xref:System.ServiceModel.FaultContractAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
- [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md)  
- [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md)  
- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)  
- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)  
- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+## See also
+
+- <xref:System.ServiceModel.FaultContractAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md)
+- [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md)
+- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)
+- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
+- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

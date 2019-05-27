@@ -46,11 +46,11 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   
  It is possible to extend the tracing that is provided by the ServiceModel by creating user-defined activity traces. User-defined activity tracing allows the user to create trace activities to:  
   
--   Group traces into logical units of work.  
+- Group traces into logical units of work.  
   
--   Correlate activities through transfers and propagation.  
+- Correlate activities through transfers and propagation.  
   
--   Lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
+- Lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
   
  For more information about user-defined activity trace, please see the [Extending Tracing](../../../../docs/framework/wcf/samples/extending-tracing.md) sample.  
   
@@ -109,13 +109,13 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  Before running the Tracing and Message Logging sample, create the directory C:\logs\ for the service to write the .svclog files to. The name of this directory is defined in the configuration file as the path for the traces and messages to be logged and can be changed. Give the user Network Service write access to the logs directory.  
+2. Before running the Tracing and Message Logging sample, create the directory C:\logs\ for the service to write the .svclog files to. The name of this directory is defined in the configuration file as the path for the traces and messages to be logged and can be changed. Give the user Network Service write access to the logs directory.  
   
-3.  To build the C#, C++, or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the C#, C++, or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
@@ -126,6 +126,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\TracingAndLogging`  
   
-## See Also  
- [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+
+- [Tracing](../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

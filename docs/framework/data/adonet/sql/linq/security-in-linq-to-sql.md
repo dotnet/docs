@@ -19,14 +19,15 @@ Security risks are always present when you connect to a database. Although LINQ 
   
  In the absence of integrated security, a clear-text password will be needed in the connection string. The best way to help secure your connection string, in increasing order of risk, is as follows:  
   
--   Use integrated security.  
+- Use integrated security.  
   
--   Secure connection strings with passwords and minimize passing around connection strings.  
+- Secure connection strings with passwords and minimize passing around connection strings.  
   
--   Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
+- Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
   
--   Minimize lifetimes and touch points for all connection strings.  
+- Minimize lifetimes and touch points for all connection strings.  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)
+## See also
+
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

@@ -66,7 +66,7 @@ Many different types of text files consist of a series of lines, often with simi
   
   Shows how to perform mathematical computations on text data in .csv files.
 
-## See Also
+## See also
 
 - [Language-Integrated Query (LINQ) (C#)](index.md)
 - [How to: Generate XML from CSV Files](how-to-generate-xml-from-csv-files.md)

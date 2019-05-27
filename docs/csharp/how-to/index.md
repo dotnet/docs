@@ -117,7 +117,7 @@ and work with different data sources.
 - [Sort elements of a data source](../programming-guide/concepts/linq/how-to-sort-elements.md).
 - [Sort elements on multiple keys](../programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md).
 - [Control the type of a projection](../programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md).
-- [Count occurences of a value in a source sequence](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
+- [Count occurrences of a value in a source sequence](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
 - [Calculate intermediate values](../programming-guide/concepts/linq/how-to-calculate-intermediate-values.md).
 - [Merge data from multiple sources](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
 - [Find the set difference between two sequences](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).
@@ -139,4 +139,3 @@ Typically, C# programs have command line arguments. These articles teach you to 
 those command line arguments.
 
 - [Retrieve all command line arguments with `for`](../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md).
-- [Retrieve all command line arguments with `foreach`](../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md).

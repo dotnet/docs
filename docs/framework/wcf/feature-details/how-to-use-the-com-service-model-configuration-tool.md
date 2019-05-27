@@ -13,11 +13,11 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
  When using ComSvcConfig.exe on a Windows 7 machine to configure a web service to use the latest service model version (currently v4.5), perform the following steps:  
   
-1.  Set the registry key  `[HKEY_LOCAL_COMPUTER\SOFTWARE\Microsoft\.NETFramework]\OnlyUseLatestCLR` to a DWORD value of 0x00000001  
+1. Set the registry key  `[HKEY_LOCAL_COMPUTER\SOFTWARE\Microsoft\.NETFramework]\OnlyUseLatestCLR` to a DWORD value of 0x00000001  
   
-2.  Run comsvcconfig.exe  
+2. Run comsvcconfig.exe  
   
-3.  Revert the registry key added in step 1 back to its original value, or delete it if did not exist.  
+3. Revert the registry key added in step 1 back to its original value, or delete it if did not exist.  
   
 > [!IMPORTANT]
 >  Reverting this registry key is important. This is a compatibility key. Not reverting this change may cause issues with other .NET applications running on the machine).  
@@ -27,7 +27,7 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To add an interface to the set of interfaces that are to be exposed as Web services, using the COM+ hosting mode  
   
--   Run ComSvcConfig using the `/install` and `/hosting:complus` options, as shown in the following example.  
+- Run ComSvcConfig using the `/install` and `/hosting:complus` options, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /install /application:OnlineStore /contract:ItemOrders.Financial,IFinances /hosting:complus /verbose  
@@ -43,7 +43,7 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To add only specific methods from an interface to the set of interfaces that are to be exposed as Web services, using the COM+ hosting mode  
   
--   Run ComSvcConfig using the `/install` and `/hosting:complus` options with explicit naming of the required methods, as shown in the following example.  
+- Run ComSvcConfig using the `/install` and `/hosting:complus` options with explicit naming of the required methods, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /install /application:OnlineStore /contract:ItemOrders.Financial,IFinances.{Credit,Debit} /hosting:complus /verbose  
@@ -53,7 +53,7 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To add an interface to the set of interfaces that are to be exposed as Web services, using the Web hosting mode  
   
--   Run ComSvcConfig using the `/install` option and the `/hosting:was` option, as shown in the following example.  
+- Run ComSvcConfig using the `/install` option and the `/hosting:was` option, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /install /application:OnlineWarehouse /contract:ItemInventory.Warehouse,IStockLevels /hosting:was /webDirectory:root/OnlineWarehouse /mex /verbose  
@@ -67,7 +67,7 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To remove a Web service for a specified interface  
   
--   Run ComSvcConfig using the `/uninstall` option, as shown in the following example.  
+- Run ComSvcConfig using the `/uninstall` option, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /uninstall /application:OnlineStore /contract:ItemOrders.Financial,IFinances /hosting:complus  
@@ -77,7 +77,7 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To list currently exposed interfaces  
   
--   Run ComSvcConfig using the `/list` option, as shown in the following example.  
+- Run ComSvcConfig using the `/list` option, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /list  
@@ -87,7 +87,7 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To list specific currently exposed interfaces  
   
--   Run ComSvcConfig using the `/list` option, as shown in the following example.  
+- Run ComSvcConfig using the `/list` option, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /list /application:OnlineStore /hosting:complus  
@@ -97,11 +97,12 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
 ### To display help on the options that can be used with the utility  
   
--   Run ComSvcConfig using the /? option, as shown in the following example.  
+- Run ComSvcConfig using the /? option, as shown in the following example.  
   
     ```  
     ComSvcConfig.exe /?  
     ```  
   
-## See Also  
- [Integrating with COM+ Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)
+## See also
+
+- [Integrating with COM+ Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)

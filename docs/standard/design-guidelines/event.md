@@ -66,5 +66,5 @@ Events are the most commonly used form of callbacks (constructs that allow the f
   
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
+- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

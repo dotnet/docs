@@ -47,12 +47,13 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
 ## Architecture Overview  
  The following diagram illustrates the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] architecture for exposing [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds and using these feeds in [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-enabled client libraries:  
   
- ![WCF Data Services architecture diagram](../../../../docs/framework/data/wcf/media/astoriaservicearch.gif "AstoriaServiceArch")  
+ ![Screenshot showing a WCF Data Services architecture diagram.](./media/wcf-data-services-overview/windows-communication-foundation-data-services-architecture.gif)  
   
-## See Also  
- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [Accessing a Data Service (WCF Data Services)](https://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)
+## See also
+
+- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
+- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [Accessing Data Service Resources (WCF Data Services)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd728283(v=vs.100))
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)

@@ -29,7 +29,7 @@ HRESULT GetAssembly(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssembly`  
  [out] A pointer to an ICorDebugAssembly object that represents the assembly containing this module.  
   

@@ -52,9 +52,9 @@ You have three primary options when targeting the .NET Standard, depending on yo
     ```
 
 2. You can use a lower or higher version of the .NET Standard by modifying the value in the `TargetFramework` node of your project file.
-    
+
     .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher. However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones. This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher. Select the Standard version that has the right mix of APIs and platform support for your needs. We recommend `netstandard1.4` for now.
-    
+
 3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
 
 ## How to target the .NET Framework
@@ -125,7 +125,7 @@ Your project file could look like this:
 You'll notice three major changes here:
 
 1. The `TargetFramework` node has been replaced by `TargetFrameworks`, and three TFMs are expressed inside.
-1. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework reference.
+1. There is an `<ItemGroup>` node for the `net40` target pulling in one .NET Framework reference.
 1. There is an `<ItemGroup>` node for the `net45` target pulling in two .NET Framework references.
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:
@@ -250,7 +250,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
    [!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]
 
 1. Verify that xUnit runs by executing the `dotnet test` command. If you chose to use MSTest, then the MSTest console runner should run instead.
-    
+
 And that's it! You can now test your library across all platforms using command line tools. To continue testing now that you have everything set up, testing your library is very simple:
 
 1. Make changes to your library.
@@ -315,7 +315,7 @@ This will add the three projects above and a solution file which links them toge
 The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```console
-$ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
+dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 
 The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** will now reference **AwesomeLibrary.Core** as a `ProjectReference` target.  You can verify this by inspecting the project files and seeing the following in them:

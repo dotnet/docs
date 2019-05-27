@@ -91,6 +91,6 @@ home
 work  
 ```  
   
-## See Also
+## See also
 
 - [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)

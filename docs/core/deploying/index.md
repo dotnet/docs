@@ -24,7 +24,7 @@ For an FDD, you deploy only your app and third-party dependencies. Your app will
 
 Deploying an FDD has a number of advantages:
 
-- You don't have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly-format.md).
+- You don't have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
 
 - The size of your deployment package is small. You only deploy your app and its dependencies, not .NET Core itself.
 
@@ -60,7 +60,7 @@ It also has a number of disadvantages:
 
 - The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
 
-  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](https://github.com/dotnet/docs/issues/http%22//icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](http://icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
 - Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 
@@ -88,16 +88,11 @@ There are also a few disadvantages:
 
 ## Step-by-step examples
 
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). Each article includes examples of the following deployments:
-
-- Framework-dependent deployment
-- Framework-dependent deployment with third-party dependencies
-- Self-contained deployment
-- Self-contained deployment with third-party dependencies
+For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
 
 ## See also
 
-* [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
-* [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
-* [Packages, Metapackages and Frameworks](../packages.md)
-* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
+- [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
+- [Packages, Metapackages and Frameworks](../packages.md)
+- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

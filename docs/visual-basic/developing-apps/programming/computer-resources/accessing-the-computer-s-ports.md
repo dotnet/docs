@@ -1,12 +1,12 @@
 ---
-title: "Accessing the Computer&#39;s Ports (Visual Basic)"
+title: "Accessing the Computer's Ports (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "serial ports"
   - "My.Computer.Ports object [Visual Basic], tasks"
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 ---
-# Accessing the Computer&#39;s Ports (Visual Basic)
+# Accessing the Computer's Ports (Visual Basic)
 The `My.Computer.Ports` object provides a property and a method for accessing the computer's serial ports.  
   
 ## In This Section  
@@ -23,7 +23,7 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Demonstrates how to receive a string from a computer's serial port.  
   
  [Port Operations in the .NET Framework](../../../../visual-basic/developing-apps/programming/computer-resources/port-operations-in-the-net-framework.md)  
- Describes how to use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] when performing port operations.  
+ Describes how to use the .NET Framework when performing port operations.  
   
 ## Reference  
  <xref:Microsoft.VisualBasic.Devices.Ports>  

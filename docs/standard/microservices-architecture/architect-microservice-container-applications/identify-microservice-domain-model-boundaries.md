@@ -1,8 +1,6 @@
 ---
 title: Identifying domain-model boundaries for each microservice
 description: Explore the essence of partitioning a large application into microservices to achieve a sound architecture.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Identify domain-model boundaries for each microservice

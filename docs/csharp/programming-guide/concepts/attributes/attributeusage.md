@@ -73,13 +73,13 @@ ThirdAttribute
 SecondAttribute
 ```
 
-## See Also
+## See also
 
-- <xref:System.Attribute>  
-- <xref:System.Reflection>  
-- [C# Programming Guide](../..//index.md)  
-- [Attributes](../../../..//standard/attributes/index.md)  
-- [Reflection (C#)](../reflection.md)  
-- [Attributes](index.md)  
-- [Creating Custom Attributes (C#)](creating-custom-attributes.md)  
+- <xref:System.Attribute>
+- <xref:System.Reflection>
+- [C# Programming Guide](../..//index.md)
+- [Attributes](../../../..//standard/attributes/index.md)
+- [Reflection (C#)](../reflection.md)
+- [Attributes](index.md)
+- [Creating Custom Attributes (C#)](creating-custom-attributes.md)
 - [Accessing Attributes by Using Reflection (C#)](accessing-attributes-by-using-reflection.md)

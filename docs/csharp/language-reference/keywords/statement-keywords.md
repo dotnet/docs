@@ -22,7 +22,7 @@ Statements are program instructions. Except as described in the topics reference
 [fixed statement](fixed-statement.md)|[fixed](fixed-statement.md)|
 |[lock statement](lock-statement.md)|[lock](lock-statement.md)|
 
-## See Also
+## See also
 
 - [C# Reference](../index.md)
 - [Statements](../../programming-guide/statements-expressions-operators/statements.md)

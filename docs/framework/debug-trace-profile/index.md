@@ -41,7 +41,7 @@ To debug a .NET Framework application, the compiler and runtime environment must
  Describes the counters that you can use to track the performance of an application.  
   
 ## Related Sections  
- [Debugging ASP.NET and AJAX Applications](https://msdn.microsoft.com/library/9d531913-541b-47b8-864d-138021fca0c6)  
+ [Debug ASP.NET or ASP.NET Core apps in Visual Studio](/visualstudio/debugger/debugging-aspnet-and-ajax-applications)  
  Provides prerequisites and instructions for how to debug an ASP.NET application during development or after deployment.  
   
  [Development Guide](../../../docs/framework/development-guide.md)  

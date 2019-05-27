@@ -19,16 +19,16 @@ The tab order is the order in which a user moves focus from one control to anoth
   
 ### To set the tab order of a control  
   
-1.  On the **View** menu, click **Tab Order**.  
+1. On the **View** menu, click **Tab Order**.  
   
      This activates the tab-order selection mode on the form. A number (representing the <xref:System.Windows.Forms.Control.TabIndex%2A> property) appears in the upper-left corner of each control.  
   
-2.  Click the controls sequentially to establish the tab order you want.  
+2. Click the controls sequentially to establish the tab order you want.  
   
     > [!NOTE]
-    >  A control's place within the tab order can be set to any value greater than or equal to 0. When duplicates occur, the z-order of the two controls is evaluated and the control on top is tabbed to first. (The z-order is the visual layering of controls on a form along the form's z-axis [depth]. The z-order determines which controls are in front of other controls.) For more information on z-order, see [Layering Objects on Windows Forms](../../../../docs/framework/winforms/controls/how-to-layer-objects-on-windows-forms.md).  
+    >  A control's place within the tab order can be set to any value greater than or equal to 0. When duplicates occur, the z-order of the two controls is evaluated and the control on top is tabbed to first. (The z-order is the visual layering of controls on a form along the form's z-axis [depth]. The z-order determines which controls are in front of other controls.) For more information on z-order, see [Layering Objects on Windows Forms](how-to-layer-objects-on-windows-forms.md).  
   
-3.  When you have finished, click **Tab Order** on the **View** menu again to leave tab order mode.  
+3. When you have finished, click **Tab Order** on the **View** menu again to leave tab order mode.  
   
     > [!NOTE]
     >  Controls that cannot get the focus, as well as disabled and invisible controls, do not have a <xref:System.Windows.Forms.Control.TabIndex%2A> property and are not included in the tab order. As a user presses the TAB key, these controls are skipped.  
@@ -41,15 +41,16 @@ The tab order is the order in which a user moves focus from one control to anoth
   
 #### To remove a control from the tab order  
   
-1.  Set the control's <xref:System.Windows.Forms.Control.TabStop%2A> property to `false` in the Properties window.  
+1. Set the control's <xref:System.Windows.Forms.Control.TabStop%2A> property to `false` in the Properties window.  
   
      A control whose <xref:System.Windows.Forms.Control.TabStop%2A> property has been set to `false` still maintains its position in the tab order, even though the control is skipped when you cycle through the controls with the TAB key.  
   
     > [!NOTE]
-    >  A radio button group has a single tab stop at run time. The selected button (that is, the button with its <xref:System.Windows.Forms.RadioButton.Checked%2A> property set to `true`) has its <xref:System.Windows.Forms.Control.TabStop%2A> property automatically set to `true`, while the other buttons have their <xref:System.Windows.Forms.Control.TabStop%2A> property set to `false`. For more information about grouping <xref:System.Windows.Forms.RadioButton> controls, see [Grouping Windows Forms RadioButton Controls to Function as a Set](../../../../docs/framework/winforms/controls/how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set.md).  
+    >  A radio button group has a single tab stop at run time. The selected button (that is, the button with its <xref:System.Windows.Forms.RadioButton.Checked%2A> property set to `true`) has its <xref:System.Windows.Forms.Control.TabStop%2A> property automatically set to `true`, while the other buttons have their <xref:System.Windows.Forms.Control.TabStop%2A> property set to `false`. For more information about grouping <xref:System.Windows.Forms.RadioButton> controls, see [Grouping Windows Forms RadioButton Controls to Function as a Set](how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set.md).  
   
-## See Also  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
- [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)
+## See also
+
+- [Windows Forms Controls](index.md)
+- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
+- [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

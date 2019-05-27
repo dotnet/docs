@@ -55,9 +55,9 @@ Neither <xref:System.Threading.ThreadStart> nor <xref:System.Threading.Parameter
   
 ## See also
 
-- <xref:System.Threading.Thread>  
-- <xref:System.Threading.ThreadStart>  
-- <xref:System.Threading.ParameterizedThreadStart>  
-- <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>  
-- [Threading](index.md)  
+- <xref:System.Threading.Thread>
+- <xref:System.Threading.ThreadStart>
+- <xref:System.Threading.ParameterizedThreadStart>
+- <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>
+- [Threading](index.md)
 - [Using Threads and Threading](using-threads-and-threading.md)

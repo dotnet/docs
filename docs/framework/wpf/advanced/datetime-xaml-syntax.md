@@ -12,8 +12,7 @@ ms.assetid: 5901710a-609b-40c8-9d65-f0016cd9090b
 ---
 # DateTime XAML Syntax
 Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.Windows.Controls.DatePicker>, have properties that use the <xref:System.DateTime> type. Although you typically specify an initial date or time for these controls in the code-behind at run time, you can specify an initial date or time in XAML. The WPF XAML parser handles parsing of <xref:System.DateTime> values using a built-in XAML text syntax. This topic describes the specifics of the <xref:System.DateTime> XAML text syntax.  
-  
-  
+
 <a name="where_datetime_xaml_syntax_is_used"></a>   
 ## When To Use DateTime XAML Syntax  
  Setting dates in XAML is not always necessary and may not even be desirable. For example, you could use the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property to initialize a date at run time, or you could do all your date adjustments for a calendar in the code-behind based on user input. However, there are scenarios where you may want to hard-code dates into a <xref:System.Windows.Controls.Calendar> and <xref:System.Windows.Controls.DatePicker> in a control template. The <xref:System.DateTime> XAML syntax must be used for these scenarios.  
@@ -68,5 +67,6 @@ Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.
 ### Other Formats and Patterns  
  As stated previously, a <xref:System.DateTime> in XAML can be specified as any string that is acceptable as input for <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>. This includes other formalized formats (for example <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A>), and formats that are not formalized as a particular <xref:System.Globalization.DateTimeFormatInfo> form. For example, the form `YYYY/mm/dd` is acceptable as input for <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>. This topic does not attempt to describe all possible formats that work, and instead recommends the short date pattern as a standard practice.  
   
-## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+## See also
+
+- [XAML Overview (WPF)](xaml-overview-wpf.md)

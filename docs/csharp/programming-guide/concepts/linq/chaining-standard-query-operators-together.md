@@ -80,6 +80,6 @@ AppendString: source >GHI<
 Main: str >GHI!!!<  
 ```  
   
-## See Also
+## See also
 
 - [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)

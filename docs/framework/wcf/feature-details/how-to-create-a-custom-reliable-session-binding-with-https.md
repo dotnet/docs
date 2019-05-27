@@ -66,4 +66,4 @@ Because the certificate used in this sample is a test certificate created with *
 
 ## See also
 
-[Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)

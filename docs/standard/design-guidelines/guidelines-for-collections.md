@@ -124,5 +124,5 @@ Any type designed specifically to manipulate a group of objects having some comm
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

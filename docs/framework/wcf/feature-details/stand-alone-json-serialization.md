@@ -36,20 +36,20 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
 ### Enumerations and JSON  
  Enumeration member values are treated as numbers in JSON, which is different from how they are treated in data contracts, where they are included as member names. For more information about the data contract treatment, see [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).  
   
--   For example, if you have `public enum Color {red, green, blue, yellow, pink}`, serializing `yellow` produces the number 3 and not the string "yellow".  
+- For example, if you have `public enum Color {red, green, blue, yellow, pink}`, serializing `yellow` produces the number 3 and not the string "yellow".  
   
--   All `enum` members are serializable. The <xref:System.Runtime.Serialization.EnumMemberAttribute> and the <xref:System.NonSerializedAttribute> attributes are ignored if used.  
+- All `enum` members are serializable. The <xref:System.Runtime.Serialization.EnumMemberAttribute> and the <xref:System.NonSerializedAttribute> attributes are ignored if used.  
   
--   It is possible to deserialize a nonexistent `enum` value - for example, the value 87 can be deserialized into the previous Color enum even though there is no corresponding color name defined.  
+- It is possible to deserialize a nonexistent `enum` value - for example, the value 87 can be deserialized into the previous Color enum even though there is no corresponding color name defined.  
   
--   A flags `enum` is not special and is treated the same as any other `enum`.  
+- A flags `enum` is not special and is treated the same as any other `enum`.  
   
 ### Dates/Times and JSON  
  The JSON format does not directly support dates and times. However, they are very commonly used and ASP.NET AJAX provides special support for these types. When using ASP.NET AJAX proxies, the <xref:System.DateTime> type in .NET fully corresponds to the `DateTime` type in JavaScript.  
   
--   When not using ASP.NET, a <xref:System.DateTime> type is represented in JSON as a string with a special format that is described in the Advanced Information section of this topic.  
+- When not using ASP.NET, a <xref:System.DateTime> type is represented in JSON as a string with a special format that is described in the Advanced Information section of this topic.  
   
--   <xref:System.DateTimeOffset> is represented in JSON as a complex type: {"DateTime":dateTime,"OffsetMinutes":offsetMinutes}. The `offsetMinutes` member is the local time offset from Greenwich Mean Time (GMT), also now referred to as Coordinated Universal Time (UTC), associated with the location of the event of interest. The `dateTime` member represents the instance in time when the event of interest occurred (again, it becomes a `DateTime` in JavaScript when ASP.NET AJAX is in use and a string when it is not). On serialization, the `dateTime` member is always serialized in GMT. So, if describing 3:00 AM New York time, `dateTime` has a time component of 8:00 AM and `offsetMinutes` are 300 (minus 300 minutes or 5 hours from GMT).  
+- <xref:System.DateTimeOffset> is represented in JSON as a complex type: {"DateTime":dateTime,"OffsetMinutes":offsetMinutes}. The `offsetMinutes` member is the local time offset from Greenwich Mean Time (GMT), also now referred to as Coordinated Universal Time (UTC), associated with the location of the event of interest. The `dateTime` member represents the instance in time when the event of interest occurred (again, it becomes a `DateTime` in JavaScript when ASP.NET AJAX is in use and a string when it is not). On serialization, the `dateTime` member is always serialized in GMT. So, if describing 3:00 AM New York time, `dateTime` has a time component of 8:00 AM and `offsetMinutes` are 300 (minus 300 minutes or 5 hours from GMT).  
   
     > [!NOTE]
     >  <xref:System.DateTime> and <xref:System.DateTimeOffset> objects, when serialized to JSON, only preserve information to millisecond precision. Sub-millisecond values (micro/nanoseconds) are lost during serialization.  
@@ -57,28 +57,28 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
 ### XML Types and JSON  
  XML types become JSON strings.  
   
--   For example, if a data member "q" of type XElement contains \<abc/>, the JSON is {"q":"\<abc/>"}.  
+- For example, if a data member "q" of type XElement contains \<abc/>, the JSON is {"q":"\<abc/>"}.  
   
--   There are some special rules that specify how XML is wrapped - for more information, see the Advanced Information section later in this topic.  
+- There are some special rules that specify how XML is wrapped - for more information, see the Advanced Information section later in this topic.  
   
--   If you are using ASP.NET AJAX and do not want to use strings in the JavaScript, but want the XML DOM instead, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> property to XML on <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to XML on the <xref:System.ServiceModel.Web.WebInvokeAttribute>.  
+- If you are using ASP.NET AJAX and do not want to use strings in the JavaScript, but want the XML DOM instead, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> property to XML on <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to XML on the <xref:System.ServiceModel.Web.WebInvokeAttribute>.  
   
 ### Collections, Dictionaries and Arrays  
  All collections, dictionaries, and arrays are represented in JSON as arrays.  
   
--   Any customization that uses the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is ignored in the JSON representation.  
+- Any customization that uses the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is ignored in the JSON representation.  
   
--   Dictionaries are not a way to work directly with JSON. Dictionary\<string,object> may not be supported in the same way in WCF as expected from working with other JSON technologies. For example, if "abc" is mapped to "xyz" and "def" is mapped to 42 in a dictionary, the JSON representation is not {"abc":"xyz","def":42} but is [{"Key":"abc","Value":"xyz"},{"Key":"def","Value":42}] instead.  
+- Dictionaries are not a way to work directly with JSON. Dictionary\<string,object> may not be supported in the same way in WCF as expected from working with other JSON technologies. For example, if "abc" is mapped to "xyz" and "def" is mapped to 42 in a dictionary, the JSON representation is not {"abc":"xyz","def":42} but is [{"Key":"abc","Value":"xyz"},{"Key":"def","Value":42}] instead.  
   
--   If you would like to work with JSON directly (accessing keys and values dynamically, without pre-defining a rigid contract), you have several options:  
+- If you would like to work with JSON directly (accessing keys and values dynamically, without pre-defining a rigid contract), you have several options:  
   
-    -   Consider using the [Weakly-typed JSON Serialization (AJAX)](../../../../docs/framework/wcf/samples/weakly-typed-json-serialization-sample.md) sample.  
+    - Consider using the [Weakly-typed JSON Serialization (AJAX)](../../../../docs/framework/wcf/samples/weakly-typed-json-serialization-sample.md) sample.  
   
-    -   Consider using the <xref:System.Runtime.Serialization.ISerializable> interface and deserialization constructors - these two mechanisms allow you to access JSON key/value pairs on serialization and deserialization respectively, but do not work in partial trust scenarios.  
+    - Consider using the <xref:System.Runtime.Serialization.ISerializable> interface and deserialization constructors - these two mechanisms allow you to access JSON key/value pairs on serialization and deserialization respectively, but do not work in partial trust scenarios.  
   
-    -   Consider working with the [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md) instead of using a serializer.  
+    - Consider working with the [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md) instead of using a serializer.  
   
-    -   *Polymorphism* in the context of serialization refers to the ability to serialize a derived type where its base type is expected. There are special JSON-specific rules when using collections polymorphically, when, for example, assigning a collection to an <xref:System.Object>. This issue is more fully discussed in the Advanced Information section later in this topic.  
+    - *Polymorphism* in the context of serialization refers to the ability to serialize a derived type where its base type is expected. There are special JSON-specific rules when using collections polymorphically, when, for example, assigning a collection to an <xref:System.Object>. This issue is more fully discussed in the Advanced Information section later in this topic.  
   
 ## Additional Details  
   
@@ -118,9 +118,9 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Supported and Unsupported ISerializable Types  
  In general, types that implement the <xref:System.Runtime.Serialization.ISerializable> interface are fully supported when serializing/deserializing JSON. However, some of these types (including some .NET Framework types) are implemented in such a way that the JSON-specific serialization aspects cause them to not deserialize correctly:  
   
--   With <xref:System.Runtime.Serialization.ISerializable>, the type of individual data members is never known in advance. This leads to a polymorphic situation similar to deserializing types into an object. As mentioned before, this may lead to loss of type information in JSON. For example, a type that serializes an `enum` in its <xref:System.Runtime.Serialization.ISerializable> implementation and attempts to deserialize back directly into an `enum` (without proper casts) fails, because an `enum` is serialized using numbers in JSON and JSON numbers deserialize into built-in .NET numeric types (Int32, Decimal or Double). So the fact that the number used to be an `enum` value is lost.  
+- With <xref:System.Runtime.Serialization.ISerializable>, the type of individual data members is never known in advance. This leads to a polymorphic situation similar to deserializing types into an object. As mentioned before, this may lead to loss of type information in JSON. For example, a type that serializes an `enum` in its <xref:System.Runtime.Serialization.ISerializable> implementation and attempts to deserialize back directly into an `enum` (without proper casts) fails, because an `enum` is serialized using numbers in JSON and JSON numbers deserialize into built-in .NET numeric types (Int32, Decimal or Double). So the fact that the number used to be an `enum` value is lost.  
   
--   An <xref:System.Runtime.Serialization.ISerializable> type that depends on a particular order of deserialization in its deserialization constructor may also fail to deserialize some JSON data, because most JSON serializers do not guarantee any specific order.  
+- An <xref:System.Runtime.Serialization.ISerializable> type that depends on a particular order of deserialization in its deserialization constructor may also fail to deserialize some JSON data, because most JSON serializers do not guarantee any specific order.  
   
 #### Factory Types  
  While the <xref:System.Runtime.Serialization.IObjectReference> interface is supported in JSON in general, any types that require the "factory type" feature (returning an instance of a different type from <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%28System.Runtime.Serialization.StreamingContext%29> than the type that implements the interface) are not supported.  
@@ -198,11 +198,11 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### When Are Type Hints Emitted  
  Type hints may increase message size significantly (one way to mitigate this is to use shorter data contract namespaces if possible). Therefore, the following rules govern whether type hints are emitted:  
   
--   When using ASP.NET AJAX, type hints are always emitted whenever possible, even if there is no base/derived assignment - for example, even if a Circle is assigned to a Circle. (This is required to fully enable the process of calling from the weakly-typed JSON environment into the strongly-typed .NET environment with no surprising loss of information.)  
+- When using ASP.NET AJAX, type hints are always emitted whenever possible, even if there is no base/derived assignment - for example, even if a Circle is assigned to a Circle. (This is required to fully enable the process of calling from the weakly-typed JSON environment into the strongly-typed .NET environment with no surprising loss of information.)  
   
--   When using AJAX services with no ASP.NET integration, type hints are only emitted when there is a base/derived assignment - that is, emitted when Circle is assigned to Shape or <xref:System.Object> but not when assigned to Circle. This provides the minimum information required to correctly implement a JavaScript client, thus improving performance, but does not protect against type information loss in incorrectly-designed clients. Avoid base/derived assignments altogether on the server if you want to avoid dealing with this issue on the client.  
+- When using AJAX services with no ASP.NET integration, type hints are only emitted when there is a base/derived assignment - that is, emitted when Circle is assigned to Shape or <xref:System.Object> but not when assigned to Circle. This provides the minimum information required to correctly implement a JavaScript client, thus improving performance, but does not protect against type information loss in incorrectly-designed clients. Avoid base/derived assignments altogether on the server if you want to avoid dealing with this issue on the client.  
   
--   When using the <xref:System.Runtime.Serialization.DataContractSerializer> type, the `alwaysEmitTypeInformation` constructor parameter allows you to choose between the preceding two modes, with the default being "`false`" (only emit type hints when required).  
+- When using the <xref:System.Runtime.Serialization.DataContractSerializer> type, the `alwaysEmitTypeInformation` constructor parameter allows you to choose between the preceding two modes, with the default being "`false`" (only emit type hints when required).  
   
 #### Duplicate Data Member Names  
  Derived type information is present in the same JSON object together with base type information, and can occur in any order. For example, `Shape` may be represented as follows.  
@@ -239,9 +239,9 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  When deserialized back into <xref:System.Object>:  
   
--   `Shape` must be in the Known Types list. Having <xref:System.Collections.Generic.List%601> of type `Shape` in known types has no effect. Note that you do not have to add `Shape` to known types on serialization in this case - this is done automatically.  
+- `Shape` must be in the Known Types list. Having <xref:System.Collections.Generic.List%601> of type `Shape` in known types has no effect. Note that you do not have to add `Shape` to known types on serialization in this case - this is done automatically.  
   
--   The collection is deserialized as an <xref:System.Array> of type <xref:System.Object> that contains `Shape` instances.  
+- The collection is deserialized as an <xref:System.Array> of type <xref:System.Object> that contains `Shape` instances.  
   
 #### Derived Collections Assigned to Base Collections  
  When a derived collection is assigned to a base collection, the collection is usually serialized as if it was a collection of the base type. However, if the item type of the derived collection cannot be assigned to the item type of the base collection, an exception is thrown.  
@@ -254,6 +254,6 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 ### Valid JSON Key Names  
  The serializer XML-encodes key names that are not valid XML names. For example, a data member with the name of "123" would have an encoded name such as "\_x0031\_\_x0032\_\_x0033\_" because "123" is an invalid XML element name (starts with a digit). A similar situation may arise with some international character sets not valid in XML names. For an explanation of this effect of XML on JSON processing, see [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  
   
-## See also  
+## See also
 
 - [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)

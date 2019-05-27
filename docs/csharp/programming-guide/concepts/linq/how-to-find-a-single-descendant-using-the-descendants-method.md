@@ -67,6 +67,6 @@ Console.WriteLine(grandChild3);
 GC3 Value  
 ```  
   
-## See Also
+## See also
 
 - [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

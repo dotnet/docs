@@ -6,7 +6,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
 
-So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application. 
 
 ## Debugging in Debug mode
 
@@ -33,7 +33,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
 
-   ![Visual Studio application window](./media/debugging-with-visual-studio/break.png)
+   ![Screenshot of a breakpoint in Visual Studio.](./media/debugging-with-visual-studio/breakpoint-console-window.png)
 
 1. You can change the value of the variables to see how it affects your program. If the **Immediate Window** is not visible, display it by choosing the **Debug** > **Windows** > **Immediate** menu item. The **Immediate Window** lets you interact with the application you're debugging.
 
@@ -148,6 +148,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```vb
    ? String.IsNullOrEmpty(name)
    ```
+
   ![Immediate Window returning a value of true after the statement is executed - Visual Basic](./media/debugging-with-visual-studio/vb-immediate-window-output.png)
 
 1. Select the **Continue** button on the toolbar to continue program execution.

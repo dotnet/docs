@@ -22,15 +22,15 @@ Classes can be marshaled only by COM interop and are always marshaled as interfa
 
  Although it is not necessary to register primary interop assemblies unless you plan to use Visual Studio, registration provides two advantages:
 
--   A registered primary interop assembly is clearly marked under the registry key of the original type library. Registration is the best way for you to locate a primary interop assembly on your computer.
+- A registered primary interop assembly is clearly marked under the registry key of the original type library. Registration is the best way for you to locate a primary interop assembly on your computer.
 
--   You can avoid accidentally generating and using a new interop assembly if, at some time in the future, you do use Visual Studio to reference a type for which you have an unregistered primary interop assembly.
+- You can avoid accidentally generating and using a new interop assembly if, at some time in the future, you do use Visual Studio to reference a type for which you have an unregistered primary interop assembly.
 
 Use the [Assembly Registration Tool (Regasm.exe)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md) to register a primary interop assembly.
 
 ## To register a primary interop assembly
 
-1.  At the command prompt, type:
+1. At the command prompt, type:
 
      **regasm** *assemblyname*
 
@@ -43,8 +43,8 @@ Use the [Assembly Registration Tool (Regasm.exe)](../../../docs/framework/tools/
 regasm CompanyA.UtilLib.dll
 ```
 
-## See Also
+## See also
 
-- [Programming with Primary Interop Assemblies](https://msdn.microsoft.com/library/306fa1d6-0703-4004-9e93-d0a57f1be81e(v=vs.100))
-- [Locating Primary Interop Assemblies](https://msdn.microsoft.com/library/d6768e4b-cd80-414d-a4f8-05d979eb393b(v=vs.100))
-- [Redistributing Primary Interop Assemblies](https://msdn.microsoft.com/library/e76384f0-d631-474c-bdbd-13884cba0265(v=vs.100))
+- [Programming with Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/baxfadst(v=vs.100))
+- [Locating Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y06sxw56(v=vs.100))
+- [Redistributing Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w0dt2w20(v=vs.100))

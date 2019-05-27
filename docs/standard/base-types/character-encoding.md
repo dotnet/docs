@@ -18,9 +18,9 @@ ms.custom: seodec18
 # Character Encoding in .NET
 Characters are abstract entities that can be represented in many different ways. A character encoding is a system that pairs each character in a supported character set with some value that represents that character. For example, Morse code is a character encoding that pairs each character in the Roman alphabet with a pattern of dots and dashes that are suitable for transmission over telegraph lines. A character encoding for computers pairs each character in a supported character set with a numeric value that represents that character. A character encoding has two distinct components:  
   
--   An encoder, which translates a sequence of characters into a sequence of numeric values (bytes).  
+- An encoder, which translates a sequence of characters into a sequence of numeric values (bytes).  
   
--   A decoder, which translates a sequence of bytes into a sequence of characters.  
+- A decoder, which translates a sequence of bytes into a sequence of characters.  
   
  Character encoding describes the rules by which an encoder and a decoder operate. For example, the <xref:System.Text.UTF8Encoding> class describes the rules for encoding to, and decoding from, 8-bit Unicode Transformation Format (UTF-8), which uses one to four bytes to represent a single Unicode character. Encoding and decoding can also include validation. For example, the <xref:System.Text.UnicodeEncoding> class checks all surrogates  to make sure they constitute valid surrogate pairs. (A surrogate pair consists of a character with a code point that ranges from U+D800 to U+DBFF followed by a character with a code point that ranges from U+DC00 to U+DFFF.)  A fallback strategy determines how an encoder handles invalid characters or how a decoder handles invalid bytes.  
   
@@ -31,27 +31,27 @@ Characters are abstract entities that can be represented in many different ways.
   
  This topic consists of the following sections:  
   
--   [Encodings in .NET](../../../docs/standard/base-types/character-encoding.md#Encodings)  
+- [Encodings in .NET](../../../docs/standard/base-types/character-encoding.md#Encodings)  
   
--   [Selecting an Encoding Class](../../../docs/standard/base-types/character-encoding.md#Selecting)  
+- [Selecting an Encoding Class](../../../docs/standard/base-types/character-encoding.md#Selecting)  
   
--   [Using an Encoding Object](../../../docs/standard/base-types/character-encoding.md#Using)  
+- [Using an Encoding Object](../../../docs/standard/base-types/character-encoding.md#Using)  
   
--   [Choosing a Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#FallbackStrategy)  
+- [Choosing a Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#FallbackStrategy)  
   
--   [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom)  
+- [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom)  
   
 <a name="Encodings"></a>   
 ## Encodings in .NET  
  All character encoding classes in .NET inherit from the <xref:System.Text.Encoding?displayProperty=nameWithType> class, which is an abstract class that defines the functionality common to all character encodings. To access the individual encoding objects implemented in .NET, do the following:  
   
--   Use the static properties of the <xref:System.Text.Encoding> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32). For example, the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property returns a <xref:System.Text.UnicodeEncoding> object. Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode. (For more information, see the [Replacement Fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) section.)  
+- Use the static properties of the <xref:System.Text.Encoding> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32). For example, the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property returns a <xref:System.Text.UnicodeEncoding> object. Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode. (For more information, see the [Replacement Fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) section.)  
   
--   Call the encoding's class constructor. Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way. By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead. (For more information, see the [Replacement Fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) and [Exception Fallback](../../../docs/standard/base-types/character-encoding.md#Exception) sections.)  
+- Call the encoding's class constructor. Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way. By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead. (For more information, see the [Replacement Fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) and [Exception Fallback](../../../docs/standard/base-types/character-encoding.md#Exception) sections.)  
   
--   Call the <xref:System.Text.Encoding.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor and pass it an integer that represents the encoding. Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode. (For more information, see the [Best-Fit Fallback](../../../docs/standard/base-types/character-encoding.md#BestFit) section.)  
+- Call the <xref:System.Text.Encoding.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor and pass it an integer that represents the encoding. Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode. (For more information, see the [Best-Fit Fallback](../../../docs/standard/base-types/character-encoding.md#BestFit) section.)  
   
--   Call the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method, which returns any standard, code page, or DBCS encoding available in .NET. Overloads let you specify a fallback object for both the encoder and the decoder.  
+- Call the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method, which returns any standard, code page, or DBCS encoding available in .NET. Overloads let you specify a fallback object for both the encoder and the decoder.  
   
 > [!NOTE]
 >  The Unicode Standard assigns a code point (a number) and a name to each character in every supported script. For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A". The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes. A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding. Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.  
@@ -72,8 +72,8 @@ Characters are abstract entities that can be represented in many different ways.
   
  These encodings enable you to work with Unicode characters as well as with encodings that are most commonly used in legacy applications. In addition, you can create a custom encoding by defining a class that derives from <xref:System.Text.Encoding> and overriding its members.  
   
-### Platform Notes: [!INCLUDE[net_core](../../../includes/net-core-md.md)]  
- By default, [!INCLUDE[net_core](../../../includes/net-core-md.md)] does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target .NET to your app. For complete information, see the <xref:System.Text.CodePagesEncodingProvider> topic.  
+### Platform Notes: .NET Core  
+ By default, .NET Core does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target .NET to your app. For complete information, see the <xref:System.Text.CodePagesEncodingProvider> topic.  
   
 <a name="Selecting"></a>   
 ## Selecting an Encoding Class  
@@ -81,17 +81,17 @@ Characters are abstract entities that can be represented in many different ways.
   
  If you are planning to use an ASCII encoding (<xref:System.Text.ASCIIEncoding>), choose <xref:System.Text.UTF8Encoding> instead. The two encodings are identical for the ASCII character set, but <xref:System.Text.UTF8Encoding> has the following advantages:  
   
--   It can represent every Unicode character, whereas <xref:System.Text.ASCIIEncoding> supports only the Unicode character values between U+0000 and U+007F.  
+- It can represent every Unicode character, whereas <xref:System.Text.ASCIIEncoding> supports only the Unicode character values between U+0000 and U+007F.  
   
--   It provides error detection and better security.  
+- It provides error detection and better security.  
   
--   It has been tuned to be as fast as possible and should be faster than any other encoding. Even for content that is entirely ASCII, operations performed with <xref:System.Text.UTF8Encoding> are faster than operations performed with <xref:System.Text.ASCIIEncoding>.  
+- It has been tuned to be as fast as possible and should be faster than any other encoding. Even for content that is entirely ASCII, operations performed with <xref:System.Text.UTF8Encoding> are faster than operations performed with <xref:System.Text.ASCIIEncoding>.  
   
  You should consider using <xref:System.Text.ASCIIEncoding> only for legacy applications. However, even for legacy applications, <xref:System.Text.UTF8Encoding> might be a better choice for the following reasons (assuming default settings):  
   
--   If your application has content that is not strictly ASCII and encodes it with <xref:System.Text.ASCIIEncoding>, each non-ASCII character encodes as a question mark (?). If the application then decodes this data, the information is lost.  
+- If your application has content that is not strictly ASCII and encodes it with <xref:System.Text.ASCIIEncoding>, each non-ASCII character encodes as a question mark (?). If the application then decodes this data, the information is lost.  
   
--   If your application has content that is not strictly ASCII and encodes it with <xref:System.Text.UTF8Encoding>, the result seems unintelligible if interpreted as ASCII. However, if the application then uses a UTF-8 decoder to decode this data, the data performs a round trip successfully.  
+- If your application has content that is not strictly ASCII and encodes it with <xref:System.Text.UTF8Encoding>, the result seems unintelligible if interpreted as ASCII. However, if the application then uses a UTF-8 decoder to decode this data, the data performs a round trip successfully.  
   
  In a web application, characters sent to the client in response to a web request should reflect the encoding used on the client. In most cases, you should set the <xref:System.Web.HttpResponse.ContentEncoding%2A?displayProperty=nameWithType> property to the value returned by the <xref:System.Web.HttpRequest.ContentEncoding%2A?displayProperty=nameWithType> property to display text in the encoding that the user expects.  
   
@@ -124,11 +124,11 @@ Characters are abstract entities that can be represented in many different ways.
 ## Choosing a Fallback Strategy  
  When a method tries to encode or decode a character but no mapping exists, it must implement a fallback strategy that determines how the failed mapping should be handled. There are three types of fallback strategies:  
   
--   Best-fit fallback  
+- Best-fit fallback  
   
--   Replacement fallback  
+- Replacement fallback  
   
--   Exception fallback  
+- Exception fallback  
   
 > [!IMPORTANT]
 >  The most common problems in encoding operations occur when a Unicode character cannot be mapped to a particular code page encoding. The most common problems in decoding operations occur when invalid byte sequences cannot be translated into valid Unicode characters. For these reasons, you should know which fallback strategy a particular encoding object uses. Whenever possible, you should specify the fallback strategy used by an encoding object when you instantiate the object.  
@@ -189,9 +189,9 @@ Characters are abstract entities that can be represented in many different ways.
   
  The <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> objects provide the following information about the condition that caused the exception:  
   
--   The <xref:System.Text.EncoderFallbackException> object includes an <xref:System.Text.EncoderFallbackException.IsUnknownSurrogate%2A> method, which indicates whether the character or characters that cannot be encoded represent an unknown surrogate pair (in which case, the method returns `true`) or an unknown single character (in which case, the method returns `false`). The characters in the surrogate pair are available from the <xref:System.Text.EncoderFallbackException.CharUnknownHigh%2A?displayProperty=nameWithType> and <xref:System.Text.EncoderFallbackException.CharUnknownLow%2A?displayProperty=nameWithType> properties. The unknown single character is available from the <xref:System.Text.EncoderFallbackException.CharUnknown%2A?displayProperty=nameWithType> property. The <xref:System.Text.EncoderFallbackException.Index%2A?displayProperty=nameWithType> property indicates the position in the string at which the first character that could not be encoded was found.  
+- The <xref:System.Text.EncoderFallbackException> object includes an <xref:System.Text.EncoderFallbackException.IsUnknownSurrogate%2A> method, which indicates whether the character or characters that cannot be encoded represent an unknown surrogate pair (in which case, the method returns `true`) or an unknown single character (in which case, the method returns `false`). The characters in the surrogate pair are available from the <xref:System.Text.EncoderFallbackException.CharUnknownHigh%2A?displayProperty=nameWithType> and <xref:System.Text.EncoderFallbackException.CharUnknownLow%2A?displayProperty=nameWithType> properties. The unknown single character is available from the <xref:System.Text.EncoderFallbackException.CharUnknown%2A?displayProperty=nameWithType> property. The <xref:System.Text.EncoderFallbackException.Index%2A?displayProperty=nameWithType> property indicates the position in the string at which the first character that could not be encoded was found.  
   
--   The <xref:System.Text.DecoderFallbackException> object includes a <xref:System.Text.DecoderFallbackException.BytesUnknown%2A> property that returns an array of bytes that cannot be decoded. The <xref:System.Text.DecoderFallbackException.Index%2A?displayProperty=nameWithType> property indicates the starting position of the unknown bytes.  
+- The <xref:System.Text.DecoderFallbackException> object includes a <xref:System.Text.DecoderFallbackException.BytesUnknown%2A> property that returns an array of bytes that cannot be decoded. The <xref:System.Text.DecoderFallbackException.Index%2A?displayProperty=nameWithType> property indicates the starting position of the unknown bytes.  
   
  Although the <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> objects provide adequate diagnostic information about the exception, they do not provide access to the encoding or decoding buffer. Therefore, they do not allow invalid data to be replaced or corrected within the encoding or decoding method.  
   
@@ -199,45 +199,45 @@ Characters are abstract entities that can be represented in many different ways.
 ## Implementing a Custom Fallback Strategy  
  In addition to the best-fit mapping that is implemented internally by code pages, .NET includes the following classes for implementing a fallback strategy:  
   
--   Use <xref:System.Text.EncoderReplacementFallback> and <xref:System.Text.EncoderReplacementFallbackBuffer> to replace characters in encoding operations.  
+- Use <xref:System.Text.EncoderReplacementFallback> and <xref:System.Text.EncoderReplacementFallbackBuffer> to replace characters in encoding operations.  
   
--   Use <xref:System.Text.DecoderReplacementFallback> and <xref:System.Text.DecoderReplacementFallbackBuffer> to replace characters in decoding operations.  
+- Use <xref:System.Text.DecoderReplacementFallback> and <xref:System.Text.DecoderReplacementFallbackBuffer> to replace characters in decoding operations.  
   
--   Use <xref:System.Text.EncoderExceptionFallback> and <xref:System.Text.EncoderExceptionFallbackBuffer> to throw an <xref:System.Text.EncoderFallbackException> when a character cannot be encoded.  
+- Use <xref:System.Text.EncoderExceptionFallback> and <xref:System.Text.EncoderExceptionFallbackBuffer> to throw an <xref:System.Text.EncoderFallbackException> when a character cannot be encoded.  
   
--   Use <xref:System.Text.DecoderExceptionFallback> and <xref:System.Text.DecoderExceptionFallbackBuffer> to throw a <xref:System.Text.DecoderFallbackException> when a character cannot be decoded.  
+- Use <xref:System.Text.DecoderExceptionFallback> and <xref:System.Text.DecoderExceptionFallbackBuffer> to throw a <xref:System.Text.DecoderFallbackException> when a character cannot be decoded.  
   
  In addition, you can implement a custom solution that uses best-fit fallback, replacement fallback, or exception fallback, by following these steps:  
   
-1.  Derive a class from <xref:System.Text.EncoderFallback> for encoding operations, and from <xref:System.Text.DecoderFallback> for decoding operations.  
+1. Derive a class from <xref:System.Text.EncoderFallback> for encoding operations, and from <xref:System.Text.DecoderFallback> for decoding operations.  
   
-2.  Derive a class from <xref:System.Text.EncoderFallbackBuffer> for encoding operations, and from <xref:System.Text.DecoderFallbackBuffer> for decoding operations.  
+2. Derive a class from <xref:System.Text.EncoderFallbackBuffer> for encoding operations, and from <xref:System.Text.DecoderFallbackBuffer> for decoding operations.  
   
-3.  For exception fallback, if the predefined <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> classes do not meet your needs, derive a class from an exception object such as <xref:System.Exception> or <xref:System.ArgumentException>.  
+3. For exception fallback, if the predefined <xref:System.Text.EncoderFallbackException> and <xref:System.Text.DecoderFallbackException> classes do not meet your needs, derive a class from an exception object such as <xref:System.Exception> or <xref:System.ArgumentException>.  
   
 ### Deriving from EncoderFallback or DecoderFallback  
  To implement a custom fallback solution, you must create a class that inherits from <xref:System.Text.EncoderFallback> for encoding operations, and from <xref:System.Text.DecoderFallback> for decoding operations. Instances of these classes are passed to the <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=nameWithType> method and serve as the intermediary between the encoding class and the fallback implementation.  
   
  When you create a custom fallback solution for an encoder or decoder, you must implement the following members:  
   
--   The <xref:System.Text.EncoderFallback.MaxCharCount%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallback.MaxCharCount%2A?displayProperty=nameWithType> property, which returns the maximum possible number of characters that the best-fit, replacement, or exception fallback can return to replace a single character. For a custom exception fallback, its value is zero.  
+- The <xref:System.Text.EncoderFallback.MaxCharCount%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallback.MaxCharCount%2A?displayProperty=nameWithType> property, which returns the maximum possible number of characters that the best-fit, replacement, or exception fallback can return to replace a single character. For a custom exception fallback, its value is zero.  
   
--   The <xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallback.CreateFallbackBuffer%2A?displayProperty=nameWithType> method, which returns your custom <xref:System.Text.EncoderFallbackBuffer> or <xref:System.Text.DecoderFallbackBuffer> implementation. The method is called by the encoder when it encounters the first character that it is unable to successfully encode, or by the decoder when it encounters the first byte that it is unable to successfully decode.  
+- The <xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallback.CreateFallbackBuffer%2A?displayProperty=nameWithType> method, which returns your custom <xref:System.Text.EncoderFallbackBuffer> or <xref:System.Text.DecoderFallbackBuffer> implementation. The method is called by the encoder when it encounters the first character that it is unable to successfully encode, or by the decoder when it encounters the first byte that it is unable to successfully decode.  
   
 ### Deriving from EncoderFallbackBuffer or DecoderFallbackBuffer  
  To implement a custom fallback solution, you must also create a class that inherits from <xref:System.Text.EncoderFallbackBuffer> for encoding operations, and from <xref:System.Text.DecoderFallbackBuffer> for decoding operations. Instances of these classes are returned by the <xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A> method  of the <xref:System.Text.EncoderFallback> and <xref:System.Text.DecoderFallback> classes. The <xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A?displayProperty=nameWithType> method is called by the encoder when it encounters the first character that it is not able to encode, and the <xref:System.Text.DecoderFallback.CreateFallbackBuffer%2A?displayProperty=nameWithType> method is called by the decoder when it encounters one or more bytes that it is not able to decode. The <xref:System.Text.EncoderFallbackBuffer> and <xref:System.Text.DecoderFallbackBuffer> classes provide the fallback implementation. Each instance represents a buffer that contains the fallback characters that will replace the character that cannot be encoded or the byte sequence that cannot be decoded.  
   
  When you create a custom fallback solution for an encoder or decoder, you must implement the following members:  
   
--   The <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> method. <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> is called by the encoder to provide the fallback buffer with information about the character that it cannot encode. Because the character to be encoded may be a surrogate pair, this method is overloaded. One overload is passed the character to be encoded and its index in the string. The second overload is passed the high and low surrogate along with its index in the string. The <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> method is called by the decoder to provide the fallback buffer with information about the bytes that it cannot decode. This method is passed an array of bytes that it cannot decode, along with the index of the first byte. The fallback method should return `true` if the fallback buffer can supply a best-fit or replacement character or characters; otherwise, it should return `false`. For an exception fallback, the fallback method should throw an exception.  
+- The <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> method. <xref:System.Text.EncoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> is called by the encoder to provide the fallback buffer with information about the character that it cannot encode. Because the character to be encoded may be a surrogate pair, this method is overloaded. One overload is passed the character to be encoded and its index in the string. The second overload is passed the high and low surrogate along with its index in the string. The <xref:System.Text.DecoderFallbackBuffer.Fallback%2A?displayProperty=nameWithType> method is called by the decoder to provide the fallback buffer with information about the bytes that it cannot decode. This method is passed an array of bytes that it cannot decode, along with the index of the first byte. The fallback method should return `true` if the fallback buffer can supply a best-fit or replacement character or characters; otherwise, it should return `false`. For an exception fallback, the fallback method should throw an exception.  
   
--   The <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.GetNextChar%2A?displayProperty=nameWithType> method, which is called repeatedly by the encoder or decoder to get the next character from the fallback buffer. When all fallback characters have been returned, the method should return U+0000.  
+- The <xref:System.Text.EncoderFallbackBuffer.GetNextChar%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.GetNextChar%2A?displayProperty=nameWithType> method, which is called repeatedly by the encoder or decoder to get the next character from the fallback buffer. When all fallback characters have been returned, the method should return U+0000.  
   
--   The <xref:System.Text.EncoderFallbackBuffer.Remaining%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.Remaining%2A?displayProperty=nameWithType> property, which returns the number of characters remaining in the fallback buffer.  
+- The <xref:System.Text.EncoderFallbackBuffer.Remaining%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.Remaining%2A?displayProperty=nameWithType> property, which returns the number of characters remaining in the fallback buffer.  
   
--   The <xref:System.Text.EncoderFallbackBuffer.MovePrevious%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.MovePrevious%2A?displayProperty=nameWithType> method, which moves the current position in the fallback buffer to the previous character.  
+- The <xref:System.Text.EncoderFallbackBuffer.MovePrevious%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.MovePrevious%2A?displayProperty=nameWithType> method, which moves the current position in the fallback buffer to the previous character.  
   
--   The <xref:System.Text.EncoderFallbackBuffer.Reset%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.Reset%2A?displayProperty=nameWithType> method, which reinitializes the fallback buffer.  
+- The <xref:System.Text.EncoderFallbackBuffer.Reset%2A?displayProperty=nameWithType> or <xref:System.Text.DecoderFallbackBuffer.Reset%2A?displayProperty=nameWithType> method, which reinitializes the fallback buffer.  
   
  If the fallback implementation is a best-fit fallback or a replacement fallback, the classes derived from <xref:System.Text.EncoderFallbackBuffer> and <xref:System.Text.DecoderFallbackBuffer> also maintain two private instance fields: the exact number of characters in the buffer; and the index of the next character in the buffer to return.  
   
@@ -261,9 +261,9 @@ Characters are abstract entities that can be represented in many different ways.
   
 ## See also
 
-- <xref:System.Text.Encoder>  
-- <xref:System.Text.Decoder>  
-- <xref:System.Text.DecoderFallback>  
-- <xref:System.Text.Encoding>  
-- <xref:System.Text.EncoderFallback>  
+- <xref:System.Text.Encoder>
+- <xref:System.Text.Decoder>
+- <xref:System.Text.DecoderFallback>
+- <xref:System.Text.Encoding>
+- <xref:System.Text.EncoderFallback>
 - [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)

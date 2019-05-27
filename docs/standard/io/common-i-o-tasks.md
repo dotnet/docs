@@ -49,6 +49,6 @@ The <xref:System.IO> namespace provides several classes that allow for various a
   
 ## See also
 
-- [File and Stream I/O](../../../docs/standard/io/index.md)  
-- [Composing Streams](../../../docs/standard/io/composing-streams.md)  
+- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [Composing Streams](../../../docs/standard/io/composing-streams.md)
 - [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

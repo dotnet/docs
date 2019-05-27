@@ -30,7 +30,7 @@ HRESULT GetStringLayout(
     [out] ULONG *pBufferOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBufferLengthOffset`  
  [out] A pointer to the offset of the location, relative to the `ObjectID` pointer, that stores the length of the string. The length is stored as a `DWORD`.  
   
@@ -46,11 +46,11 @@ HRESULT GetStringLayout(
 ## Remarks  
  The `GetStringLayout` method gets the offsets, relative to the `ObjectID` pointer, of the locations in which the following are stored:  
   
--   The length of the string's buffer.  
+- The length of the string's buffer.  
   
--   The length of the string itself.  
+- The length of the string itself.  
   
--   The buffer that contains the actual string of wide characters.  
+- The buffer that contains the actual string of wide characters.  
   
  Strings may be null-terminated.  
   
@@ -63,6 +63,7 @@ HRESULT GetStringLayout(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+## See also
+
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

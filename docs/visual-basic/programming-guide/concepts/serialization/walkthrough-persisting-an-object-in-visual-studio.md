@@ -25,11 +25,11 @@ Although you can set an object's properties to default values at design time, an
   
 ### To create the Loan class  
   
-1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
+1. Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
   
-2.  In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
+2. In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
   
-3.  Add the following public members to the class:  
+3. Add the following public members to the class:  
   
     ```vb  
     Public Class Loan  
@@ -71,21 +71,21 @@ Although you can set an object's properties to default values at design time, an
   
 ### To create a test application  
   
-1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
+1. To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
   
-2.  In the **Add New Project** dialog box, choose **Windows Forms Application**, and enter `LoanApp` as the name of the project, and then click **OK** to close the dialog box.  
+2. In the **Add New Project** dialog box, choose **Windows Forms Application**, and enter `LoanApp` as the name of the project, and then click **OK** to close the dialog box.  
   
-3.  In **Solution Explorer**, choose the LoanApp project.  
+3. In **Solution Explorer**, choose the LoanApp project.  
   
-4.  On the **Project** menu, choose **Set as StartUp Project**.  
+4. On the **Project** menu, choose **Set as StartUp Project**.  
   
-5.  On the **Project** menu, choose **Add Reference**.  
+5. On the **Project** menu, choose **Add Reference**.  
   
-6.  In the **Add Reference** dialog box, choose the **Projects** tab and then choose the LoanClass project.  
+6. In the **Add Reference** dialog box, choose the **Projects** tab and then choose the LoanClass project.  
   
-7.  Click **OK** to close the dialog box.  
+7. Click **OK** to close the dialog box.  
   
-8.  In the designer, add four <xref:System.Windows.Forms.TextBox> controls to the form.  
+8. In the designer, add four <xref:System.Windows.Forms.TextBox> controls to the form.  
   
 9. In the Code Editor, add the following code:  
   
@@ -121,7 +121,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To mark a class as serializable  
   
--   Change the class declaration for the Loan class as follows:  
+- Change the class declaration for the Loan class as follows:  
   
     ```vb  
     <Serializable()>  
@@ -132,7 +132,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To prevent a member from being serialized  
   
--   Change the declaration for the `PropertyChanged` event as follows:  
+- Change the declaration for the `PropertyChanged` event as follows:  
   
     ```vb  
     <NonSerialized()>  
@@ -144,7 +144,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To add references to namespaces  
   
--   Add the following statements to the top of the `Form1` class:  
+- Add the following statements to the top of the `Form1` class:  
   
     ```vb  
     Imports System.IO  
@@ -157,13 +157,13 @@ Although you can set an object's properties to default values at design time, an
   
 ### To deserialize an object  
   
-1.  Add a constant to the class for the serialized data's file name.  
+1. Add a constant to the class for the serialized data's file name.  
   
     ```vb  
     Const FileName As String = "..\..\SavedLoan.bin"  
     ```  
   
-2.  Modify the code in the `Form1_Load` event procedure as follows:  
+2. Modify the code in the `Form1_Load` event procedure as follows:  
   
     ```vb  
     Private WithEvents TestLoan As New LoanClass.Loan(10000.0, 0.075, 36, "Neil Black")  
@@ -191,7 +191,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To save the data and serialize the class  
   
--   Add the following code to the `Form1_FormClosing` event procedure:  
+- Add the following code to the `Form1_FormClosing` event procedure:  
   
     ```vb  
     Private Sub Form1_FormClosing() Handles MyBase.FormClosing  
@@ -209,6 +209,7 @@ Although you can set an object's properties to default values at design time, an
   
  At this point, you can again build and run the application. Initially, the default values appear in the text boxes. Try to change the values and enter a name in the fourth text box. Close the application and then run it again. Note that the new values now appear in the text boxes.  
   
-## See Also  
- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+## See also
+
+- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
+- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

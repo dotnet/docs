@@ -29,8 +29,8 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
   
  All query keywords introduced in C# 3.0 are also contextual. For more information, see [Query Keywords (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md).  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

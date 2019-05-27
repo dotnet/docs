@@ -14,17 +14,21 @@ ms.date: 12/04/2018
 ## Synopsis
 
 # [.NET Core 2.x](#tab/netcore2x)
+
 ```
 dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
 ```
 dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output]
     [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
+
 ---
 
 ## Description
@@ -36,6 +40,14 @@ NuGet dependencies of the packed project are added to the *.nuspec* file, so the
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This option is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
 You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild -p switch for a couple of different scenarios.
+
+Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
+
+```xml
+<PropertyGroup>
+   <IsPackable>true</IsPackable>
+</PropertyGroup>
+```
 
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
@@ -71,7 +83,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 * **`--no-build`**
 
-  Doesn't build the project before packing. It also implicit sets the `--no-restore` flag.
+  Doesn't build the project before packing. It also implicitly sets the `--no-restore` flag.
 
 * **`--no-dependencies`**
 
@@ -100,14 +112,6 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 * **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
-
-> [!NOTE]
-> Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:
-> ```xml
-> <PropertyGroup>
->    <IsPackable>true</IsPackable>
-> </PropertyGroup>
-> ```
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -199,8 +203,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   dotnet pack --runtime win10-x64
   ```
 
-* Pack the projec using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
+* Pack the project using a [.nuspec file](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec):
 
   ```console
-  dotnet pack  ~/projects/app1/project.csproj /p:NuspecFile=~/projects/app1/project.nuspec /p:NuspecBasePath=~/projects/app1/nuget
+  dotnet pack ~/projects/app1/project.csproj /p:NuspecFile=~/projects/app1/project.nuspec /p:NuspecBasePath=~/projects/app1/nuget
   ```

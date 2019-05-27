@@ -80,10 +80,10 @@ You have access to an extensive set of tools and infrastructure components that 
 
 ## See also
 
-- [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)   
-- [.NET Standard](net-standard.md)  
-- [.NET Core Guide](../core/index.md)  
-- [.NET Framework Guide](../framework/index.md)  
-- [C# Guide](../csharp/index.md)  
-- [F# Guide](../fsharp/index.md)  
-- [VB.NET Guide](../visual-basic/index.md)  
+- [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)
+- [.NET Standard](net-standard.md)
+- [.NET Core Guide](../core/index.md)
+- [.NET Framework Guide](../framework/index.md)
+- [C# Guide](../csharp/index.md)
+- [F# Guide](../fsharp/index.md)
+- [VB.NET Guide](../visual-basic/index.md)

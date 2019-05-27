@@ -4,7 +4,7 @@ description: Learn about enums, discrete named constants in C#
 ms.date: 08/10/2016
 ms.assetid: 7faba1cc-6ea9-4a19-adb9-0335e4b132e5
 ---
-	
+
 # Enums
 
 An ***enum type*** is a distinct value type with a set of named constants. You define enums when you need to define a type that can have a set of discrete values. They use one of the integral value types as their underlying storage. They provide semantic meaning to the discrete values.
@@ -29,6 +29,6 @@ The default value of any `enum` type is the integral value zero converted to the
 
 [!code-csharp[EnumZero](../../../samples/snippets/csharp/tour/enums/Program.cs#L58-L58)]
 
->[!div class="step-by-step"]
->[Previous](interfaces.md)
->[Next](delegates.md)
+> [!div class="step-by-step"]
+> [Previous](interfaces.md)
+> [Next](delegates.md)

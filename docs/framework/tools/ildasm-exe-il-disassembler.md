@@ -16,7 +16,7 @@ ms.author: "ronpet"
 
 The IL Disassembler is a companion tool to the IL Assembler (*Ilasm.exe*). *Ildasm.exe* takes a portable executable (PE) file that contains intermediate language (IL) code and creates a text file suitable as input to *Ilasm.exe*.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
@@ -26,7 +26,7 @@ At the command prompt, type the following:
 ildasm [options] [PEfilename] [options]
 ```
 
-#### Parameters
+## Parameters
 
 The following options are available for *.exe*, *.dll*, *.obj*, *.lib*, and *.winmd* files.
 
@@ -63,7 +63,7 @@ The following options are valid for *.exe*, *.dll*, and *.winmd* files for file 
 |**/classlist**|Includes a list of classes defined in the module.|
 |**/forward**|Uses forward class declaration.|
 |**/headers**|Includes file header information in the output.|
-|**/item:** `class`[**::** `member`[`(sig`]]|Disassembles the following depending upon the argument supplied:<br /><br /> -   Disassembles the specified `class`.<br />-   Disassembles the specified `member` of the `class`.<br />-   Disassembles the `member` of the `class` with the specified signature `sig`. The format of `sig` is:<br />     [`instance`] `returnType`(`parameterType1`, `parameterType2`, …, `parameterTypeN`)<br />     **Note** In the .NET Framework versions 1.0 and 1.1, `sig` must be followed by a closing parenthesis: `(sig)`. Starting with the Net Framework 2.0 the closing parenthesis must be omitted: (`sig`.|
+|**/item:** `class`[**::** `member`[`(sig`]]|Disassembles the following depending upon the argument supplied:<br /><br /> -   Disassembles the specified `class`.<br />-   Disassembles the specified `member` of the `class`.<br />-   Disassembles the `member` of the `class` with the specified signature `sig`. The format of `sig` is:<br />     [`instance`] `returnType`(`parameterType1`, `parameterType2`, …, `parameterTypeN`)<br />     **Note** In the .NET Framework versions 1.0 and 1.1, `sig` must be followed by a closing parenthesis: `(sig)`. Starting with the Net Framework 2.0 the closing parenthesis must be omitted: `(sig`.|
 |**/noil**|Suppresses IL assembly code output.|
 |**/stats**|Includes statistics on the image.|
 |**/typelist**|Produces the full list of types, to preserve type ordering in a round trip.|
@@ -180,7 +180,7 @@ A nested type must be preceded by its containing class, delimited by a forward s
 
 ## See also
 
-[Tools](../../../docs/framework/tools/index.md)  
-[Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)  
-[Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
-[Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)
+- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -42,5 +42,6 @@ class SymmetricSecurityBindingElement : SecurityBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>

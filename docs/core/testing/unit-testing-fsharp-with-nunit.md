@@ -39,7 +39,7 @@ Make *MathService* the current directory and run the following command to create
 dotnet new classlib -lang F#
 ```
 
-To use test-driven development (TDD), you create a failing implementation of the math service:
+You create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
@@ -110,7 +110,7 @@ dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Open *UnitTest1.fs* and add the following code:
+You write one failing test, make it pass, then repeat the process. Open *UnitTest1.fs* and add the following code:
 
 ```fsharp
 namespace MathService.Tests

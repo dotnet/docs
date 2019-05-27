@@ -42,6 +42,6 @@ If you do not specify **-nostdlib**, mscorlib.dll is imported into your program 
 
 For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.NoStdLib%2A>.
 
-## See Also
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

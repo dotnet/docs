@@ -298,5 +298,5 @@ For more information and examples on how to use selective unit test filtering, s
 
 ## See also
 
-* [Frameworks and Targets](../../standard/frameworks.md)  
-* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Frameworks and Targets](../../standard/frameworks.md)
+- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

@@ -16,18 +16,18 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 ## Overview  
  This walkthrough consists of three main tasks:  
   
--   Adding an entity class to represent the Orders table in the sample Northwind database.  
+- Adding an entity class to represent the Orders table in the sample Northwind database.  
   
--   Supplementing annotations to the `Customer` class to enhance the relationship between the `Customer` and `Order` classes.  
+- Supplementing annotations to the `Customer` class to enhance the relationship between the `Customer` and `Order` classes.  
   
--   Creating and running a query to test obtaining `Order` information by using the `Customer` class.  
+- Creating and running a query to test obtaining `Order` information by using the `Customer` class.  
   
 ## Mapping Relationships Across Tables  
  After the `Customer` class definition, create the `Order` entity class definition that includes the following code, which indicates that `Order.Customer` relates as a foreign key to `Customer.CustomerID`.  
   
 #### To add the Order entity class  
   
--   Type or paste the following code after the `Customer` class:  
+- Type or paste the following code after the `Customer` class:  
   
      [!code-csharp[DLinqWalk2CS#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs/Program.cs#1)]  
   
@@ -36,7 +36,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To annotate the Customer class  
   
--   Type or paste the following code into the `Customer` class:  
+- Type or paste the following code into the `Customer` class:  
   
      [!code-csharp[DLinqWalk2CS#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs/Program.cs#2)]  
   
@@ -45,16 +45,16 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To access Order objects by using Customer objects  
   
-1.  Modify the `Main` method by typing or pasting the following code into the method:  
+1. Modify the `Main` method by typing or pasting the following code into the method:  
   
      [!code-csharp[DLinqWalk2CS#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs/Program.cs#3)]  
   
-2.  Press F5 to debug your application.  
+2. Press F5 to debug your application.  
   
     > [!NOTE]
     >  You can eliminate the SQL code in the Console window by commenting out `db.Log = Console.Out;`.  
   
-3.  Press Enter in the Console window to stop debugging.  
+3. Press Enter in the Console window to stop debugging.  
   
 ## Creating a Strongly Typed View of Your Database  
  It is much easier to start with a strongly typed view of your database. By strongly typing the <xref:System.Data.Linq.DataContext> object, you do not need calls to <xref:System.Data.Linq.DataContext.GetTable%2A>. You can use strongly typed tables in all your queries when you use the strongly typed <xref:System.Data.Linq.DataContext> object.  
@@ -63,24 +63,25 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
   
 #### To strongly type the DataContext object  
   
-1.  Add the following code above the `Customer` class declaration.  
+1. Add the following code above the `Customer` class declaration.  
   
      [!code-csharp[DLinqWalk2CS#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs/Program.cs#4)]  
   
-2.  Modify the `Main` method to use the strongly typed <xref:System.Data.Linq.DataContext> as follows:  
+2. Modify the `Main` method to use the strongly typed <xref:System.Data.Linq.DataContext> as follows:  
   
      [!code-csharp[DLinqWalk2CS#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs/Program.cs#5)]  
   
-3.  Press F5 to debug your application.  
+3. Press F5 to debug your application.  
   
      The Console window output is:  
   
      `ID=WHITC`  
   
-4.  Press Enter in the console window to stop debugging.  
+4. Press Enter in the console window to stop debugging.  
   
 ## Next Steps  
  The next walkthrough ([Walkthrough: Manipulating Data (C#)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
   
-## See Also  
- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+## See also
+
+- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

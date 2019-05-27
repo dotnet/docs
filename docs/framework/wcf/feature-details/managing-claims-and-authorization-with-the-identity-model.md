@@ -84,11 +84,11 @@ Authorization is the process of determining which entities have permission to ch
   
  The following figure shows an example of three sets of claims where one set of claims has, as its issuer, another set of claims, which in turn has the System claim set as its issuer. Therefore, sets of claims form a hierarchy that may be arbitrarily deep.  
   
- ![Managing claims and authorization](../../../../docs/framework/wcf/feature-details/media/claimshierarchy.gif "claimshierarchy")  
+ ![Sets of claims within the hierarchy.](./media/managing-claims-and-authorization-with-the-identity-model/claims-sets-hierarchy.gif)  
   
- Multiple sets of claims may have the same issuing claim set, as illustrated in the following figure.  
+ Multiple sets of claims may have the same issuing claim set, as illustrated in the following figure:
   
- ![Managing claims and authorization](../../../../docs/framework/wcf/feature-details/media/multiplesetsofclaims.gif "multiplesetsofclaims")  
+ ![Multiple sets of claims with the same issuing claim set.](./media/managing-claims-and-authorization-with-the-identity-model/multiple-claim-sets-same-issuing-claim-set.gif)  
   
  With the exception of a claim set that is its own issuer, the Identity Model does not provide any support for claim sets to form a loop. Thus a situation where claim set A is issued by claim set B, which is itself issued by claim set A, can never arise. Also, the Identity Model does not provide any support for claim sets to have multiple issuers. If two or more issuers must issue a given set of claims, then you must use multiple claim sets, each containing the same claims, but having different issuers.  
   
@@ -153,23 +153,24 @@ Authorization is the process of determining which entities have permission to ch
 |<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ServiceAuthorizationManager%2A>|Returns the <xref:System.ServiceModel.ServiceAuthorizationManager> for the service. The <xref:System.ServiceModel.ServiceAuthorizationManager> is responsible for making authorization decisions.|  
 |<xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies%2A>|The collection of custom authorization policies specified for the service. These policies are evaluated in addition to those policies associated with credentials in incoming messages.|  
   
-## See Also  
- <xref:System.IdentityModel.Policy.AuthorizationContext>  
- <xref:System.IdentityModel.Claims.Claim>  
- <xref:System.IdentityModel.Policy.EvaluationContext>  
- <xref:System.IdentityModel.Policy.IAuthorizationComponent>  
- <xref:System.IdentityModel.Policy.IAuthorizationPolicy>  
- <xref:System.IdentityModel.Claims.Rights>  
- <xref:System.IdentityModel.Claims>  
- <xref:System.IdentityModel.Policy>  
- <xref:System.IdentityModel.Tokens>  
- <xref:System.IdentityModel.Selectors>  
- [Claims and Tokens](../../../../docs/framework/wcf/feature-details/claims-and-tokens.md)  
- [Claims and Denying Access to Resources](../../../../docs/framework/wcf/feature-details/claims-and-denying-access-to-resources.md)  
- [Claim Creation and Resource Values](../../../../docs/framework/wcf/feature-details/claim-creation-and-resource-values.md)  
- [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)  
- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)  
- [How to: Create a Custom Authorization Policy](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-policy.md)  
- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
+## See also
+
+- <xref:System.IdentityModel.Policy.AuthorizationContext>
+- <xref:System.IdentityModel.Claims.Claim>
+- <xref:System.IdentityModel.Policy.EvaluationContext>
+- <xref:System.IdentityModel.Policy.IAuthorizationComponent>
+- <xref:System.IdentityModel.Policy.IAuthorizationPolicy>
+- <xref:System.IdentityModel.Claims.Rights>
+- <xref:System.IdentityModel.Claims>
+- <xref:System.IdentityModel.Policy>
+- <xref:System.IdentityModel.Tokens>
+- <xref:System.IdentityModel.Selectors>
+- [Claims and Tokens](../../../../docs/framework/wcf/feature-details/claims-and-tokens.md)
+- [Claims and Denying Access to Resources](../../../../docs/framework/wcf/feature-details/claims-and-denying-access-to-resources.md)
+- [Claim Creation and Resource Values](../../../../docs/framework/wcf/feature-details/claim-creation-and-resource-values.md)
+- [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)
+- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)
+- [How to: Create a Custom Authorization Policy](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-policy.md)
+- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)

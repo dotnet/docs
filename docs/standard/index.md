@@ -43,7 +43,7 @@ If you're interested in some of the major concepts of .NET, check out:
 
 * [.NET Architectural Components](components.md)
 * [.NET Standard](net-standard.md)
-* [Native Interoperability](native-interop.md)
+* [Native Interoperability](native-interop/index.md)
 * [Garbage Collection](garbagecollection/index.md)
 * [Base Types in .NET](base-types/index.md)
 * [Collections](collections/index.md)

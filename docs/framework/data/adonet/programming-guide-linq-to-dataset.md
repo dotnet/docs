@@ -48,5 +48,5 @@ This section provides conceptual information and examples for programming with [
   
 ## See also
 
-- [LINQ and ADO.NET](linq-and-ado-net.md)  
+- [LINQ and ADO.NET](linq-and-ado-net.md)
 - [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)

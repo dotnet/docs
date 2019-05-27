@@ -10,7 +10,7 @@ A comma-separated value (CSV) file is a text file that is often used to store sp
   
 ### To create the data file  
   
-1.  Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.  
+1. Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.  
   
     ```  
     Adams,Terry,120  
@@ -68,10 +68,8 @@ End Class
 ' 122, Michael Tucker  
 ```  
   
-## Compiling the Code  
-  
 ## See also
 
-- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)  
-- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)  
+- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ and File Directories (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)
 - [How to: Generate XML from CSV Files](../../../../visual-basic/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)

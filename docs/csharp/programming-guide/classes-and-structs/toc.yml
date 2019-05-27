@@ -1,0 +1,121 @@
+- name: Classes and Structs
+  href: index.md
+  items:
+  - name: Classes
+    href: classes.md
+  - name: Objects
+    href: objects.md
+  - name: Structs
+    items:
+    - name: Overview
+      href: structs.md
+    - name: Using Structs
+      href: using-structs.md
+  - name: Inheritance
+    href: inheritance.md
+  - name: Polymorphism
+    items:
+    - name: Overview
+      href: polymorphism.md
+    - name: Versioning with the Override and New Keywords
+      href: versioning-with-the-override-and-new-keywords.md
+    - name: Knowing When to Use Override and New Keywords
+      href: knowing-when-to-use-override-and-new-keywords.md
+    - name: "How to: Override the ToString Method"
+      href: how-to-override-the-tostring-method.md
+  - name: Members
+    items:
+    - name: Members overview
+      href: members.md
+    - name: Abstract and Sealed Classes and Class Members
+      href: abstract-and-sealed-classes-and-class-members.md
+    - name: Static Classes and Static Class Members
+      href: static-classes-and-static-class-members.md
+    - name: Access Modifiers
+      href: access-modifiers.md
+    - name: Fields
+      href: fields.md
+    - name: Constants
+      href: constants.md
+    - name: "How to: Define Abstract Properties"
+      href: how-to-define-abstract-properties.md
+    - name: "How to: Define Constants in C#"
+      href: how-to-define-constants.md
+  - name: Properties
+    items:
+    - name: Properties overview
+      href: properties.md
+    - name: Using Properties
+      href: using-properties.md
+    - name: Interface Properties
+      href: interface-properties.md
+    - name: Restricting Accessor Accessibility
+      href: restricting-accessor-accessibility.md
+    - name: "How to: Declare and Use Read Write Properties"
+      href: how-to-declare-and-use-read-write-properties.md
+    - name: Auto-Implemented Properties
+      href: auto-implemented-properties.md
+    - name: "How to: Implement a Lightweight Class with Auto-Implemented Properties"
+      href: how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
+  - name: Methods
+    items:
+    - name: Methods overview
+      href: methods.md
+    - name: Local functions
+      href: local-functions.md
+    - name: Ref returns and ref locals
+      href: ref-returns.md
+    - name: Parameters
+      items:
+      - name: Passing parameters
+        href: passing-parameters.md
+      - name: Passing Value-Type Parameters
+        href: passing-value-type-parameters.md
+      - name: Passing Reference-Type Parameters
+        href: passing-reference-type-parameters.md
+      - name: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method"
+        href: how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
+    - name: Implicitly Typed Local Variables
+      href: implicitly-typed-local-variables.md
+    - name: "How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression"
+      href: how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+    - name: Extension Methods
+      href: extension-methods.md
+    - name: "How to: Implement and Call a Custom Extension Method"
+      href: how-to-implement-and-call-a-custom-extension-method.md
+    - name: "How to: Create a New Method for an Enumeration"
+      href: how-to-create-a-new-method-for-an-enumeration.md
+    - name: Named and Optional Arguments
+      href: named-and-optional-arguments.md
+    - name: "How to: Use Named and Optional Arguments in Office Programming"
+      href: how-to-use-named-and-optional-arguments-in-office-programming.md
+  - name: Constructors
+    items:
+    - name: Constructors overview
+      href: constructors.md
+    - name: Using Constructors
+      href: using-constructors.md
+    - name: Instance Constructors
+      href: instance-constructors.md
+    - name: Private Constructors
+      href: private-constructors.md
+    - name: Static Constructors
+      href: static-constructors.md
+    - name: "How to: Write a Copy Constructor"
+      href: how-to-write-a-copy-constructor.md
+  - name: Finalizers
+    href: destructors.md
+  - name: Object and Collection Initializers
+    href: object-and-collection-initializers.md
+  - name: "How to: Initialize Objects by Using an Object Initializer"
+    href: how-to-initialize-objects-by-using-an-object-initializer.md
+  - name: "How to: Initialize a Dictionary with a Collection Initializer"
+    href: how-to-initialize-a-dictionary-with-a-collection-initializer.md
+  - name: Nested Types
+    href: nested-types.md
+  - name: Partial Classes and Methods
+    href: partial-classes-and-methods.md
+  - name: Anonymous Types
+    href: anonymous-types.md
+  - name: "How to: Return Subsets of Element Properties in a Query"
+    href: how-to-return-subsets-of-element-properties-in-a-query.md

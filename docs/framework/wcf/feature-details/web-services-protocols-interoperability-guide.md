@@ -70,37 +70,38 @@ Windows Communication Foundation (WCF) implements a number of Web services proto
   
  The <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>, <xref:System.ServiceModel.Description.WsdlExporter>, <xref:System.ServiceModel.Description.WsdlImporter>, and <xref:System.ServiceModel.Description.MetadataResolver> classes provide support for the following metadata specifications:  
   
--   [XML Schema Part 1: Structures Second Edition](https://go.microsoft.com/fwlink/?LinkId=3536)  
+- [XML Schema Part 1: Structures Second Edition](https://go.microsoft.com/fwlink/?LinkId=3536)  
   
--   [XML Schema Part 2: Data types Second Edition](https://go.microsoft.com/fwlink/?LinkId=40138)  
+- [XML Schema Part 2: Data types Second Edition](https://go.microsoft.com/fwlink/?LinkId=40138)  
   
--   [WSDL 1.1](https://go.microsoft.com/fwlink/?LinkId=96160)  
+- [WSDL 1.1](https://go.microsoft.com/fwlink/?LinkId=96160)  
   
--   [WS-Policy 1.2](https://go.microsoft.com/fwlink/?LinkId=96705)  
+- [WS-Policy 1.2](https://go.microsoft.com/fwlink/?LinkId=96705)  
   
--   [WS-Policy 1.5](https://go.microsoft.com/fwlink/?LinkId=96706)  
+- [WS-Policy 1.5](https://go.microsoft.com/fwlink/?LinkId=96706)  
   
--   [WS-PolicyAttachment 1.2](https://go.microsoft.com/fwlink/?LinkId=96707)  
+- [WS-PolicyAttachment 1.2](https://go.microsoft.com/fwlink/?LinkId=96707)  
   
--   [WS-MetadataExchange 1.1](https://go.microsoft.com/fwlink/?LinkId=94868)  
+- [WS-MetadataExchange 1.1](https://go.microsoft.com/fwlink/?LinkId=94868)  
   
--   [WS-Transfer Get for metadata retrieval](https://go.microsoft.com/fwlink/?LinkId=96708)  
+- [WS-Transfer Get for metadata retrieval](https://go.microsoft.com/fwlink/?LinkId=96708)  
   
  In addition, the following Interoperability Profiles are implemented across WCF:  
   
--   [Basic Profile 1.1](https://go.microsoft.com/fwlink/?LinkId=69313)  
+- [Basic Profile 1.1](https://go.microsoft.com/fwlink/?LinkId=69313)  
   
--   [Simple SOAP Binding 1.0](https://go.microsoft.com/fwlink/?LinkId=96710)  
+- [Simple SOAP Binding 1.0](https://go.microsoft.com/fwlink/?LinkId=96710)  
   
--   [Basic Security Profile 1.0 Working Draft](https://go.microsoft.com/fwlink/?LinkId=96711)  
+- [Basic Security Profile 1.0 Working Draft](https://go.microsoft.com/fwlink/?LinkId=96711)  
   
-## See Also  
- [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)  
- [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)  
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
- [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)  
- [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md)  
- [Reliable Messaging Protocol version 1.0](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-0.md)  
- [Reliable Messaging Protocol version 1.1](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-1.md)  
- [Transaction Protocols](../../../../docs/framework/wcf/feature-details/transaction-protocols.md)  
- [Context Exchange Protocol](../../../../docs/framework/wcf/feature-details/context-exchange-protocol.md)
+## See also
+
+- [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)
+- [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)
+- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+- [WSDL and Policy](../../../../docs/framework/wcf/feature-details/wsdl-and-policy.md)
+- [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md)
+- [Reliable Messaging Protocol version 1.0](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-0.md)
+- [Reliable Messaging Protocol version 1.1](../../../../docs/framework/wcf/feature-details/reliable-messaging-protocol-version-1-1.md)
+- [Transaction Protocols](../../../../docs/framework/wcf/feature-details/transaction-protocols.md)
+- [Context Exchange Protocol](../../../../docs/framework/wcf/feature-details/context-exchange-protocol.md)

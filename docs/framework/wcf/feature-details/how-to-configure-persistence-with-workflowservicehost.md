@@ -8,7 +8,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
   
 ### To Configure the SQL Workflow Instance Store in Configuration  
   
-1.  The properties of the SQL workflow instance store can be configured through the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>, a service behavior that allows you to change the settings through XML configuration. The following configuration example shows how to configure the SQL workflow instance store by using the <`sqlWorkflowInstanceStore`> behavior element in a configuration file.  
+1. The properties of the SQL workflow instance store can be configured through the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>, a service behavior that allows you to change the settings through XML configuration. The following configuration example shows how to configure the SQL workflow instance store by using the <`sqlWorkflowInstanceStore`> behavior element in a configuration file.  
   
     ```xml  
     <serviceBehaviors>  
@@ -32,7 +32,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
   
 ### To Configure the SQL Workflow Instance Store in Code  
   
-1.  The properties of the SQL workflow instance store can be configured through the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>, a service behavior that allows you to change the settings through code. The following example shows how to configure the SQL workflow instance store by using the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior element in a code  
+1. The properties of the SQL workflow instance store can be configured through the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>, a service behavior that allows you to change the settings through code. The following example shows how to configure the SQL workflow instance store by using the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior element in a code  
   
     ```csharp  
     host.Description.Behaviors.Add(new SqlWorkflowInstanceStoreBehavior  
@@ -53,7 +53,8 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
   
      For an example of how to configure persistence programmatically see [How to: Enable Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md).  
   
-## See Also  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
- [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)  
- [Windows Server App Fabric Persistence](https://go.microsoft.com/fwlink/?LinkId=193121)
+## See also
+
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)
+- [Windows Server App Fabric Persistence](https://go.microsoft.com/fwlink/?LinkId=193121)

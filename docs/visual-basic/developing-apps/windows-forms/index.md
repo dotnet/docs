@@ -12,14 +12,14 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 ## Designing Windows Forms Applications  
  You can create Windows Forms and Windows service applications with Visual Studio. For more information, see the following topics:  
   
--   [Getting Started with Windows Forms](../../../framework/winforms/getting-started-with-windows-forms.md). Provides information on how to create and program Windows Forms.  
+- [Getting Started with Windows Forms](../../../framework/winforms/getting-started-with-windows-forms.md). Provides information on how to create and program Windows Forms.  
    
--   [Windows Forms Controls](../../../framework/winforms/controls/index.md). Collection of topics detailing the use of Windows Forms controls.  
+- [Windows Forms Controls](../../../framework/winforms/controls/index.md). Collection of topics detailing the use of Windows Forms controls.  
   
--   [Windows Service Applications](../../../framework/windows-services/index.md). Lists topics that explain how to create Windows services.  
+- [Windows Service Applications](../../../framework/windows-services/index.md). Lists topics that explain how to create Windows services.  
   
 ## Building Rich, Interactive User Interfaces  
- Windows Forms is the smart-client component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like Visual Studio, you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  
+ Windows Forms is the smart-client component of the .NET Framework, a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like Visual Studio, you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  
   
  In Windows Forms, a form is a visual surface on which you display information to the user. You commonly build Windows Forms applications by placing controls on forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete user interface (UI) element that displays data or accepts data input.  
   
@@ -40,7 +40,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
   
 |To|See|  
 |--------|---------|  
-|Create a new Windows Forms application with Visual Studio|[Walkthrough: Creating a Simple Windows Form](https://msdn.microsoft.com/library/2d9daec0-0543-41d0-acb1-964f685bddbb)|  
+|Create a new Windows Forms application with Visual Studio|[Tutorial 1: Create a picture viewer](/visualstudio/ide/tutorial-1-create-a-picture-viewer)|  
 |Use controls on forms|[How to: Add Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-controls-to-windows-forms.md)|   
 |Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](../../../framework/winforms/advanced/getting-started-with-graphics-programming.md)|  
 |Create custom controls|[How to: Inherit from the UserControl Class](../../../framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md)|  
@@ -61,7 +61,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |To|See|  
 |--------|---------|  
 |Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
-|Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
+|Work with ADO.NET data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## Deploying Applications to Client Computers  
@@ -80,7 +80,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |Manage security with [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|  
   
 ## Other Controls and Features  
- There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], enabling you to release more secure applications to your customers.  
+ There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the .NET Framework, enabling you to release more secure applications to your customers.  
   
  For step-by-step information about using these features, see the following Help topics:  
   
@@ -91,6 +91,6 @@ An important part of Visual Basic is the ability to create Windows Forms applica
   
 ## See also
 
-- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
-- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)  
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
+- [Windows Forms Overview](../../../framework/winforms/windows-forms-overview.md)
 - [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

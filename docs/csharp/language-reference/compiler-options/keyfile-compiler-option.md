@@ -39,15 +39,15 @@ Specifies the filename containing the cryptographic key.
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the **Properties** page for the project.  
+1. Open the **Properties** page for the project.  
   
-2.  Click the **Signing** property page.  
+2. Click the **Signing** property page.  
   
-3.  Modify the **Choose a strong name key file** property.  
+3. Modify the **Choose a strong name key file** property.  
   
  You can programmatically access this compiler option with <xref:VSLangProj.ProjectProperties.AssemblyOriginatorKeyFile%2A>.  
   
-## See Also
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

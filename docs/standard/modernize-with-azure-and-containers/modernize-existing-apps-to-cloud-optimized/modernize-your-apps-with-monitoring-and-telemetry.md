@@ -1,8 +1,6 @@
 ---
 title: Modernize your apps with monitoring and telemetry
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Modernize your apps with monitoring and telemetry
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # Modernize your apps with monitoring and telemetry
@@ -29,15 +27,15 @@ You can access Log Analytics through the OMS portal or the Azure portal, which r
 
 The [Container Monitoring solution](https://docs.microsoft.com/azure/log-analytics/log-analytics-containers) in Log Analytics helps you view and manage your Docker and Windows Container hosts in a single location. The solution shows which containers are running, what container image they're running, and where containers are running. You can view detailed audit information, including commands that are being used with containers. You also can troubleshoot containers by viewing and searching centralized logs, without needing to remotely view Docker or Windows hosts. You can find containers that might be noisy and consuming excess resources on a host. Additionally, you can view centralized CPU, memory, storage, and network usage, and performance information, for containers. On computers running Windows, you can centralize and compare logs from Windows Server, Hyper-V, and Docker containers. The solution supports the following container orchestrators:
 
--   Docker Swarm
+- Docker Swarm
 
--   DC/OS
+- DC/OS
 
--   Kubernetes
+- Kubernetes
 
--   Service Fabric
+- Service Fabric
 
--   Red Hat OpenShift
+- Red Hat OpenShift
 
 Figure 4-11 shows the relationships between various container hosts and agents and OMS.
 
@@ -47,47 +45,47 @@ Figure 4-11 shows the relationships between various container hosts and agents a
 
 You can use the Log Analytics Container Monitoring solution to:
 
--   See information about all container hosts in a single location.
+- See information about all container hosts in a single location.
 
--   Know which containers are running, what image they're running, and where they're running.
+- Know which containers are running, what image they're running, and where they're running.
 
--   See an audit trail for actions on containers.
+- See an audit trail for actions on containers.
 
--   Troubleshoot by viewing and searching centralized logs without remote login to the Docker hosts.
+- Troubleshoot by viewing and searching centralized logs without remote login to the Docker hosts.
 
--   Find containers that might be "noisy neighbors," and be consuming excess resources on a host.
+- Find containers that might be "noisy neighbors," and be consuming excess resources on a host.
 
--   View centralized CPU, memory, storage, and network usage, and performance information, for containers.
+- View centralized CPU, memory, storage, and network usage, and performance information, for containers.
 
 ### Additional resources
 
--   **Overview of monitoring in Microsoft Azure**
+- **Overview of monitoring in Microsoft Azure**
 
-[https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview)
+<https://docs.microsoft.com/azure/azure-monitor/overview>
 
--   **What is Application Insights?**
+- **What is Application Insights?**
 
-[https://docs.microsoft.com/azure/application-insights/app-insights-overview](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
+<https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview>
 
--   **What is Log Analytics?**
+- **What is Log Analytics?**
 
-[https://docs.microsoft.com/azure/log-analytics/log-analytics-overview](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview)
+<https://docs.microsoft.com/azure/log-analytics/log-analytics-overview>
 
--   **Container Monitoring solution in Log Analytics**
+- **Container Monitoring solution in Azure Monitor**
 
-[https://docs.microsoft.com/azure/log-analytics/log-analytics-containers](https://docs.microsoft.com/azure/log-analytics/log-analytics-containers)
+<https://docs.microsoft.com/azure/azure-monitor/insights/containers>
 
--   **Overview of Azure Monitor**
+- **Overview of Azure Monitor**
 
-[https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor)
+<https://docs.microsoft.com/azure/azure-monitor/overview>
 
--   **What is Operations Management Suite (OMS)?**
+- **What is Operations Management Suite (OMS)?**
 
-[https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview)
+<https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview>
 
--   **Monitoring Windows Server containers in Service Fabric with OMS**
+- **Monitoring Windows Server containers in Service Fabric with OMS**
 
-[https://docs.microsoft.com/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver](https://docs.microsoft.com/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver)
+<https://docs.microsoft.com/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver>
 
 >[!div class="step-by-step"]
 >[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

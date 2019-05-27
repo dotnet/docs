@@ -1,5 +1,5 @@
 ---
-title: "&lt;gcAllowVeryLargeObjects&gt; Element"
+title: "<gcAllowVeryLargeObjects> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "gcAllowVeryLargeObjects element"
@@ -8,7 +8,7 @@ ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;gcAllowVeryLargeObjects&gt; Element
+# \<gcAllowVeryLargeObjects> Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  
   
  \<configuration> Element  
@@ -51,11 +51,11 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 ## Remarks  
  Using this element in your application configuration file enables arrays that are larger than 2 GB in size, but does not change other limits on object size or array size:  
   
--   The maximum number of elements in an array is <xref:System.UInt32.MaxValue?displayProperty=nameWithType>.  
+- The maximum number of elements in an array is <xref:System.UInt32.MaxValue?displayProperty=nameWithType>.  
   
--   The maximum index in any single dimension is 2,147,483,591 (0x7FFFFFC7) for byte arrays and arrays of single-byte structures, and 2,146,435,071 (0X7FEFFFFF) for other types.  
+- The maximum index in any single dimension is 2,147,483,591 (0x7FFFFFC7) for byte arrays and arrays of single-byte structures, and 2,146,435,071 (0X7FEFFFFF) for other types.  
   
--   The maximum size for strings and other non-array objects is unchanged.  
+- The maximum size for strings and other non-array objects is unchanged.  
   
 > [!CAUTION]
 >  Before enabling this feature, ensure that your application does not include unsafe code that assumes that all arrays are smaller than 2 GB in size. For example, unsafe code that uses arrays as buffers might be susceptible to buffer overruns if it is written on the assumption that arrays will not exceed 2 GB.  
@@ -71,6 +71,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## See also
+
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

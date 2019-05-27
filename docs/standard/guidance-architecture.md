@@ -1,11 +1,12 @@
 ---
 title: .NET Architecture Guidance
-description: Learn about recoommended practices for architecting, designing and building .NET software.
+description: Learn about recommended practices for architecting, designing and building .NET software.
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.technology: dotnet
+ms.technology: dotnet-ebooks
 ---
+
 # .NET Architecture Guidance
 
 ## [Containerized Docker Application Lifecycle with the Microsoft Platform and Tools](./containerized-lifecycle-architecture/index.md)

@@ -1,7 +1,7 @@
 ---
 title: Dynamically specify predicate filters at runtime (LINQ in C#)
 description: Learn how to dynamically specify predicate filters at runtime using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 90238470-0767-497c-916c-52d0d16845e0
 ---
 # Dynamically specify predicate filters at runtime

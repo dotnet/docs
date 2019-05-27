@@ -1,1 +1,0 @@
-class TestClass : global::TestApp

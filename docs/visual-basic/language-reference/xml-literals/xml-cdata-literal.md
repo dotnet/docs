@@ -34,9 +34,9 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
 ## Remarks  
  XML CDATA sections contain raw text that should be included, but not parsed, with the XML that contains it. A XML CDATA section can contain any text. This includes reserved XML characters. The XML CDATA section ends with the sequence "]]>". This implies the following points:  
   
--   You cannot use an embedded expression in an XML CDATA literal because the embedded expression delimiters are valid XML CDATA content.  
+- You cannot use an embedded expression in an XML CDATA literal because the embedded expression delimiters are valid XML CDATA content.  
   
--   XML CDATA sections cannot be nested, because `content` cannot contain the value "]]>".  
+- XML CDATA sections cannot be nested, because `content` cannot contain the value "]]>".  
   
  You can assign an XML CDATA literal to a variable, or include it in an XML element literal.  
   
@@ -48,10 +48,11 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
 ## Example  
  The following example creates a CDATA section that contains the text "Can contain literal \<XML> tags".  
   
- [!code-vb[VbXMLSamples#23](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-cdata-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples11.vb#23)]  
   
-## See Also  
- <xref:System.Xml.Linq.XCData>  
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+## See also
+
+- <xref:System.Xml.Linq.XCData>
+- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)

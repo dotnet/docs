@@ -138,6 +138,6 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
 </PurchaseOrders>  
 ```  
   
-## See Also
+## See also
 
 - [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

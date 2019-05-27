@@ -20,15 +20,15 @@ This sample demonstrates how to create an application that uses Windows Presenta
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the WPFWFIntegration.sln solution file.
+1. Using Visual Studio 2010, open the WPFWFIntegration.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press F5.
+3. To run the solution, press F5.
 
-4.  Type your first and last name into the dialog.
+4. Type your first and last name into the dialog.
 
-5.  Close the dialog and the console echoes your name.
+5. Close the dialog and the console echoes your name.
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

@@ -318,7 +318,7 @@ public class Stack<T> : IEnumerable<T>
 
 An iterator can occur as a method or `get` accessor. An iterator cannot occur in an event, instance constructor, static constructor, or static finalizer.
 
-An implicit conversion must exist from the expression type in the `yield return` statement to the type argument for the IEnumerable<T> returned by the iterator.
+An implicit conversion must exist from the expression type in the `yield return` statement to the type argument for the IEnumerable\<T> returned by the iterator.
 
 In C#, an iterator method cannot have any `in`, `ref`, or `out` parameters.
 
@@ -348,7 +348,7 @@ Iterators enable you to maintain the simplicity of a `foreach` loop when you nee
 
 - Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.
 
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>
 - <xref:System.Collections.Generic.IEnumerable%601>

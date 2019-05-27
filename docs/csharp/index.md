@@ -33,7 +33,7 @@ There are several sections in the C# Guide. You can read them in order, or jump 
   * Introduction to C# tutorials presents interactive tutorials for brand-new developers to explore and learn the C# language in the browser using a Read-Eval-Print Loop (REPL) interface. After you finish the interactive lessons, you can improve your coding skills by practicing the same lessons on your machine.
 
 * [Tutorials](tutorials/index.md)
-  * This section provides a variety of end-to-end scenarios, including descriptions and code. It shows why certain idioms are preferred, what C# features work best in different situations, and reference implementations for common tasks. If you learn best by seeing code, start in this section. You can also download all the code and experiment in your own environment.
+  * This section provides a variety of end-to-end scenarios, including descriptions and code. It shows why certain idioms are preferred, what C# features work best in different situations, and reference implementations for common tasks. If you learn best by seeing the code, start in this section. You can also download all the code and experiment in your own environment.
 
 * [Tour of C#](tour-of-csharp/index.md)
   * This section provides an overview of the language. It covers the elements that make up C# programs and the capabilities of the language. It shows small samples of all the syntax elements of C# and discussions of the major C# language topics.
@@ -60,6 +60,6 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 
 ## See also
 
-* [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)  
-* [.NET Guide](../standard/index.md)  
-* [C# Samples](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)  
+- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+- [.NET Guide](../standard/index.md)
+- [C# Samples](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)

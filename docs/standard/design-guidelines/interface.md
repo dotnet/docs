@@ -44,5 +44,5 @@ Although most APIs are best modeled using classes and structs, there are cases i
   
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

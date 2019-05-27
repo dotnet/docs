@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 ---
 # .NET Framework Reference Information (Visual Basic)
-This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
+This topic provides links to information about how to work with the .NET Framework class library.  
   
 ## Related Sections  
  [Getting Started](../../framework/get-started/index.md)  
@@ -22,9 +22,6 @@ This topic provides links to information about how to work with the [!INCLUDE[dn
   
  [Tools](../../framework/tools/index.md)  
  Describes the tools that you can use to develop, configure, and deploy applications by using .NET Framework technologies.  
-  
- [.NET Framework Samples](https://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
- Provides links to sample applications that demonstrate .NET Framework technologies.  
   
  [.NET API Browser](../../../api/index.md)  
  Provides syntax, code examples, and related information for each class in the .NET Framework namespaces.

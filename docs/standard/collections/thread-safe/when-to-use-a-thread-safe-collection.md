@@ -58,6 +58,6 @@ The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
-- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
 - [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)

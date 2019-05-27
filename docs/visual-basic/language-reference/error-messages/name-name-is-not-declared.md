@@ -1,5 +1,5 @@
 ---
-title: "Name &#39;&lt;name&gt;&#39; is not declared"
+title: "Name '<name>' is not declared"
 ms.date: 10/10/2018
 f1_keywords: 
   - "bc30451"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30451"
 ms.assetid: 765f099b-e21e-47c6-a906-a065444e56b3
 ---
-# Name &#39;&lt;name&gt;&#39; is not declared
+# Name '\<name>' is not declared
 A statement refers to a programming element, but the compiler cannot find an element with that exact name.  
   
  **Error ID:** BC30451  
@@ -35,9 +35,9 @@ A statement refers to a programming element, but the compiler cannot find an ele
 
    [!code-vb[BC30451](~/samples/snippets/visualbasic/language-reference/error-messages/bc30451/vbruntime.vbproj?highlight=6)]
 
-## See also  
+## See also
 
-[Declarations and Constants Summary](../../../visual-basic/language-reference/keywords/declarations-and-constants-summary.md)  
- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Declarations and Constants Summary](../../../visual-basic/language-reference/keywords/declarations-and-constants-summary.md)
+- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

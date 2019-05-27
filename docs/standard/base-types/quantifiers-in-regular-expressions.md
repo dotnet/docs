@@ -43,7 +43,7 @@ Quantifiers specify how many instances of a character, group, or character class
 ### Match Zero or More Times: *  
  The `*` quantifier matches the preceding element zero or more times. It is equivalent to the `{0,}` quantifier. `*` is a greedy quantifier whose lazy equivalent is `*?`.  
   
- The following example illustrates this regular expression. Of the nine digits in the input string, five match the pattern and four (`95`, `929`, `9129`, and `9919`) do not.  
+ The following example illustrates this regular expression. Of the nine digits in the input string, five match the pattern and four (`95`, `929`, `9219`, and `9919`) do not.  
   
  [!code-csharp[RegularExpressions.Quantifiers#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Quantifiers/cs/Quantifiers1.cs#1)]
  [!code-vb[RegularExpressions.Quantifiers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#1)]  
@@ -222,11 +222,11 @@ Quantifiers specify how many instances of a character, group, or character class
 ## Greedy and Lazy Quantifiers  
  A number of the quantifiers have two versions:  
   
--   A greedy version.  
+- A greedy version.  
   
      A greedy quantifier tries to match an element as many times as possible.  
   
--   A non-greedy (or lazy) version.  
+- A non-greedy (or lazy) version.  
   
      A non-greedy quantifier tries to match an element as few times as possible. You can turn a greedy quantifier into a lazy quantifier by simply adding a `?`.  
   
@@ -267,5 +267,5 @@ Quantifiers specify how many instances of a character, group, or character class
   
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
 - [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

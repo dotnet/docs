@@ -7,13 +7,13 @@ ms.assetid: c412f0cf-ff0e-4993-ab3d-1b49e23f00f8
 
 There are various ways to extend [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to enable any data source to be queried in the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] pattern. The data source might be a data structure, a Web service, a file system, or a database, to name some. The [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] pattern makes it easy for clients to query a data source for which [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] querying is enabled, because the syntax and pattern of the query does not change. The ways in which [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] can be extended to these data sources include the following:
 
--   Implementing the <xref:System.Collections.Generic.IEnumerable%601> interface in a type to enable [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects querying of that type.
+- Implementing the <xref:System.Collections.Generic.IEnumerable%601> interface in a type to enable [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects querying of that type.
 
--   Creating standard query operator methods such as <xref:System.Linq.Enumerable.Where%2A> and <xref:System.Linq.Enumerable.Select%2A> that extend a type, to enable custom [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] querying of that type.
+- Creating standard query operator methods such as <xref:System.Linq.Enumerable.Where%2A> and <xref:System.Linq.Enumerable.Select%2A> that extend a type, to enable custom [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] querying of that type.
 
--   Creating a provider for your data source that implements the <xref:System.Linq.IQueryable%601> interface. A provider that implements this interface receives [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries in the form of expression trees, which it can execute in a custom way, for example remotely.
+- Creating a provider for your data source that implements the <xref:System.Linq.IQueryable%601> interface. A provider that implements this interface receives [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries in the form of expression trees, which it can execute in a custom way, for example remotely.
 
--   Creating a provider for your data source that takes advantage of an existing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] technology. Such a provider would enable not only querying, but also insert, update, and delete operations and mapping for user-defined types.
+- Creating a provider for your data source that takes advantage of an existing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] technology. Such a provider would enable not only querying, but also insert, update, and delete operations and mapping for user-defined types.
 
 This topic discusses these options.
 
@@ -34,7 +34,7 @@ This topic discusses these options.
 
  A complex `IQueryable` provider, such as the [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] provider, might translate complete [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries to an expressive query language, such as SQL. A complex provider is more general than a less complex provider, because it can handle a wider variety of questions in the query. It also has an open type system and therefore must contain extensive infrastructure to map user-defined types. Developing a complex provider requires a significant amount of effort.
 
-## See Also
+## See also
 
 - <xref:System.Linq.IQueryable%601>
 - <xref:System.Collections.Generic.IEnumerable%601>

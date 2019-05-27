@@ -74,5 +74,5 @@ A *child task* (or *nested task*) is a <xref:System.Threading.Tasks.Task?display
   
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
 - [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)

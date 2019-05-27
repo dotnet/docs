@@ -1,5 +1,5 @@
 ---
-title: "&lt;sectionGroup&gt; element for &lt;configSections&gt;"
+title: "<sectionGroup> element for <configSections>"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"
@@ -75,4 +75,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

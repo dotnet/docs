@@ -21,10 +21,10 @@ Today, many business developers must use two (or more) programming languages: a 
  The following sections provide more information about [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)], [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)], and [!INCLUDE[linq_entities](../../../../includes/linq-entities-md.md)].  
   
 ## LINQ to DataSet  
- The <xref:System.Data.DataSet> is a key element of the disconnected programming model that [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] is built on, and is widely used. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] enables developers to build richer query capabilities into <xref:System.Data.DataSet> by using the same query formulation mechanism that is available for many other data sources. For more information, see [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md).  
+ The <xref:System.Data.DataSet> is a key element of the disconnected programming model that ADO.NET is built on, and is widely used. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] enables developers to build richer query capabilities into <xref:System.Data.DataSet> by using the same query formulation mechanism that is available for many other data sources. For more information, see [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md).  
   
 ## LINQ to SQL  
- [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] is a useful tool for developers who do not require mapping to a conceptual model. By using [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)], you can use the [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] programming model directly over existing database schema. [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] enables developers to generate [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes that represent data. Rather than mapping to a conceptual data model, these generated classes map directly to database tables, views, stored procedures, and user-defined functions.  
+ [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] is a useful tool for developers who do not require mapping to a conceptual model. By using [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)], you can use the [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] programming model directly over existing database schema. [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] enables developers to generate .NET Framework classes that represent data. Rather than mapping to a conceptual data model, these generated classes map directly to database tables, views, stored procedures, and user-defined functions.  
   
  With [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)], developers can write code directly against the storage schema using the same [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] programming pattern as in-memory collections and the <xref:System.Data.DataSet>, in addition to other data sources such as XML. For more information, see [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md).  
   
@@ -35,8 +35,8 @@ Today, many business developers must use two (or more) programming languages: a 
   
 ## See also
 
-- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)  
-- [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)  
-- [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)  
+- [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md)
+- [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to Entities](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
 - [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)
 - [ADO.NET Overview](ado-net-overview.md)

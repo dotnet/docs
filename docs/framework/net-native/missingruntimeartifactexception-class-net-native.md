@@ -6,14 +6,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # MissingRuntimeArtifactException Class (.NET Native)
-**.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**  
+**.NET for Windows apps for Windows 10, .NET Native only**  
   
  The exception that is thrown when metadata for a type or type member is available but its implementation has been removed.  
   
  **Namespace:** System.Reflection  
   
 > [!IMPORTANT]
->  The `MissingRuntimeArtifactException` class is intended solely for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
+>  The `MissingRuntimeArtifactException` class is intended solely for internal use by the .NET Native tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
   
 ## Syntax  
  [!code-csharp[ProjectN#22](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missingruntimeartifactexception_syntax1.cs#22)]  
@@ -26,8 +26,8 @@ ms.author: "ronpet"
   
 |Constructor|Description|  
 |-----------------|-----------------|  
-|`public MissingRuntimeArtifactException()`|Initializes a new instance of the `MissingRuntimeArtifactException` class by using a system-supplied message that describes the error.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|  
-|`public MissingRuntimeArtifactException(String message)`|Initializes a new instance of the `MissingRuntimeArtifactException` class with a specified error message.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|  
+|`public MissingRuntimeArtifactException()`|Initializes a new instance of the `MissingRuntimeArtifactException` class by using a system-supplied message that describes the error.<br /><br /> This constructor is for internal use by the .NET Native tool chain only.|  
+|`public MissingRuntimeArtifactException(String message)`|Initializes a new instance of the `MissingRuntimeArtifactException` class with a specified error message.<br /><br /> This constructor is for internal use by the .NET Native tool chain only.|  
   
 ## Properties  
   
@@ -74,6 +74,7 @@ ms.author: "ronpet"
   
  The `MissingRuntimeArtifactException` class contains no unique members; all of its members are inherited from its base class, <xref:System.MemberAccessException>.  
   
-## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

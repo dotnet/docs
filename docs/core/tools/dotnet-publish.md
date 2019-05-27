@@ -14,23 +14,29 @@ ms.date: 05/29/2018
 ## Synopsis
 
 # [.NET Core 2.1](#tab/netcore21)
+
 ```
 dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
+
 # [.NET Core 2.0](#tab/netcore20)
+
 ```
 dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-dependencies]
     [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
 ```
 dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-r|--runtime] [-v|--verbosity]
     [--version-suffix]
 dotnet publish [-h|--help]
 ```
+
 ---
 
 ## Description
@@ -221,5 +227,5 @@ Publish the current application but don't restore project-to-project (P2P) refer
 
 ## See also
 
-* [Target frameworks](../../standard/frameworks.md)
-* [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Target frameworks](../../standard/frameworks.md)
+- [Runtime IDentifier (RID) catalog](../rid-catalog.md)

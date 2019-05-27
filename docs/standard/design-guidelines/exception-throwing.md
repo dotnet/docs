@@ -60,5 +60,5 @@ Exception-throwing guidelines described in this section require a good definitio
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Design Guidelines for Exceptions](../../../docs/standard/design-guidelines/exceptions.md)

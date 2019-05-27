@@ -8,32 +8,32 @@ This topic explains how to implement a discovery proxy. For more information abo
 
  Implementing a discovery proxy is broken down into three main parts in this topic:
 
--   Define a class that contains a data store and extends the abstract <xref:System.ServiceModel.Discovery.DiscoveryProxy> class.
+- Define a class that contains a data store and extends the abstract <xref:System.ServiceModel.Discovery.DiscoveryProxy> class.
 
--   Implement the helper `AsyncResult` class.
+- Implement the helper `AsyncResult` class.
 
--   Host the Discovery Proxy.
+- Host the Discovery Proxy.
 
 ### To create a new console application project
 
-1.  Start Visual Studio 2012.
+1. Start Visual Studio 2012.
 
-2.  Create a new console application project. Name the project `DiscoveryProxy` and the name the solution `DiscoveryProxyExample`.
+2. Create a new console application project. Name the project `DiscoveryProxy` and the name the solution `DiscoveryProxyExample`.
 
-3.  Add the following references to the project
+3. Add the following references to the project
 
-    1.  System.ServiceModel.dll
+    1. System.ServiceModel.dll
 
-    2.  System.Servicemodel.Discovery.dll
+    2. System.Servicemodel.Discovery.dll
 
     > [!CAUTION]
     >  Ensure that you reference version 4.0 or greater of these assemblies.
 
 ### To implement the ProxyDiscoveryService class
 
-1.  Add a new code file to your project and name it DiscoveryProxy.cs.
+1. Add a new code file to your project and name it DiscoveryProxy.cs.
 
-2.  Add the following `using` statements to DiscoveryProxy.cs.
+2. Add the following `using` statements to DiscoveryProxy.cs.
 
     ```
     using System;
@@ -43,7 +43,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     using System.Xml;
     ```
 
-3.  Derive the `DiscoveryProxyService` from <xref:System.ServiceModel.Discovery.DiscoveryProxy>. Apply the `ServiceBehavior` attribute to the class as shown in the following example.
+3. Derive the `DiscoveryProxyService` from <xref:System.ServiceModel.Discovery.DiscoveryProxy>. Apply the `ServiceBehavior` attribute to the class as shown in the following example.
 
     ```
     // Implement DiscoveryProxy by extending the DiscoveryProxy class and overriding the abstract methods
@@ -53,14 +53,14 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-4.  Inside the `DiscoveryProxy` class define a dictionary to hold the registered services.
+4. Inside the `DiscoveryProxy` class define a dictionary to hold the registered services.
 
     ```
     // Repository to store EndpointDiscoveryMetadata.
     Dictionary<EndpointAddress, EndpointDiscoveryMetadata> onlineServices;
     ```
 
-5.  Define a constructor that initializes the dictionary.
+5. Define a constructor that initializes the dictionary.
 
     ```
     public DiscoveryProxyService()
@@ -71,7 +71,7 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 ### To define the methods used to update the discovery proxy cache
 
-1.  Implement the `AddOnlineservice` method to add services to the cache. This is called every time the proxy receives an announcement message.
+1. Implement the `AddOnlineservice` method to add services to the cache. This is called every time the proxy receives an announcement message.
 
     ```
     void AddOnlineService(EndpointDiscoveryMetadata endpointDiscoveryMetadata)
@@ -85,7 +85,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-2.  Implement the `RemoveOnlineService` method that is used to remove services from the cache.
+2. Implement the `RemoveOnlineService` method that is used to remove services from the cache.
 
     ```
     void RemoveOnlineService(EndpointDiscoveryMetadata endpointDiscoveryMetadata)
@@ -102,7 +102,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-3.  Implement the `MatchFromOnlineService` methods that attempt to match a service with a service in the dictionary.
+3. Implement the `MatchFromOnlineService` methods that attempt to match a service with a service in the dictionary.
 
     ```
     void MatchFromOnlineService(FindRequestContext findRequestContext)
@@ -138,7 +138,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-4.  Implement the `PrintDiscoveryMetadata` method that provides the user with console text output of what the discovery proxy is doing.
+4. Implement the `PrintDiscoveryMetadata` method that provides the user with console text output of what the discovery proxy is doing.
 
     ```
     void PrintDiscoveryMetadata(EndpointDiscoveryMetadata endpointDiscoveryMetadata, string verb)
@@ -153,7 +153,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-5.  Add the following AsyncResult classes to the DiscoveryProxyService. These classes are used to differentiate between the different asynchronous operation results.
+5. Add the following AsyncResult classes to the DiscoveryProxyService. These classes are used to differentiate between the different asynchronous operation results.
 
     ```
     sealed class OnOnlineAnnouncementAsyncResult : AsyncResult
@@ -219,7 +219,7 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 ### To define the methods that implement the discovery proxy functionality
 
-1.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives an online announcement message.
+1. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives an online announcement message.
 
     ```
     // OnBeginOnlineAnnouncement method is called when a Hello message is received by the Proxy
@@ -230,7 +230,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-2.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an announcement message.
+2. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an announcement message.
 
     ```
     protected override void OnEndOnlineAnnouncement(IAsyncResult result)
@@ -239,7 +239,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-3.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called with the discovery proxy receives an offline announcement message.
+3. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called with the discovery proxy receives an offline announcement message.
 
     ```
     // OnBeginOfflineAnnouncement method is called when a Bye message is received by the Proxy
@@ -250,7 +250,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-4.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an offline announcement message.
+4. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing an offline announcement message.
 
     ```
     protected override void OnEndOfflineAnnouncement(IAsyncResult result)
@@ -259,7 +259,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-5.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a find request.
+5. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a find request.
 
     ```
     // OnBeginFind method is called when a Probe request message is received by the Proxy
@@ -278,7 +278,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-6.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a find request.
+6. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a find request.
 
     ```
     protected override void OnEndFind(IAsyncResult result)
@@ -287,7 +287,7 @@ This topic explains how to implement a discovery proxy. For more information abo
             }
     ```
 
-7.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a resolve message.
+7. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy receives a resolve message.
 
     ```
     // OnBeginFind method is called when a Resolve request message is received by the Proxy
@@ -304,7 +304,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     }
     ```
 
-8.  Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a resolve message.
+8. Override the <xref:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve%2A?displayProperty=nameWithType> method. This method is called when the discovery proxy finishes processing a resolve message.
 
     ```
     protected override EndpointDiscoveryMetadata OnEndResolve(IAsyncResult result)
@@ -317,18 +317,18 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 ### To implement the AsyncResult class
 
-1.  Define the abstract base class AsyncResult which is used to derive the various async result classes.
+1. Define the abstract base class AsyncResult which is used to derive the various async result classes.
 
-2.  Create a new code file called AsyncResult.cs.
+2. Create a new code file called AsyncResult.cs.
 
-3.  Add the following `using` statements to AsyncResult.cs.
+3. Add the following `using` statements to AsyncResult.cs.
 
     ```
     using System;
     using System.Threading;
     ```
 
-4.  Add the following AsyncResult class.
+4. Add the following AsyncResult class.
 
     ```
     abstract class AsyncResult : IAsyncResult
@@ -481,9 +481,9 @@ This topic explains how to implement a discovery proxy. For more information abo
 
 ### To host the DiscoveryProxy
 
-1.  Open the Program.cs file in the DiscoveryProxyExample project.
+1. Open the Program.cs file in the DiscoveryProxyExample project.
 
-2.  Add the following `using` statements.
+2. Add the following `using` statements.
 
     ```
     using System;
@@ -491,7 +491,7 @@ This topic explains how to implement a discovery proxy. For more information abo
     using System.ServiceModel.Discovery;
     ```
 
-3.  Within the `Main()` method, add the following code. This creates an instance of the `DiscoveryProxy` class.
+3. Within the `Main()` method, add the following code. This creates an instance of the `DiscoveryProxy` class.
 
     ```
     Uri probeEndpointAddress = new Uri("net.tcp://localhost:8001/Probe");
@@ -501,7 +501,7 @@ This topic explains how to implement a discovery proxy. For more information abo
                 ServiceHost proxyServiceHost = new ServiceHost(new DiscoveryProxyService());
     ```
 
-4.  Next add the following code to add a discovery endpoint and an announcement endpoint.
+4. Next add the following code to add a discovery endpoint and an announcement endpoint.
 
     ```
     try
@@ -971,7 +971,7 @@ namespace Microsoft.Samples.Discovery
 }
 ```
 
-## See Also
+## See also
 
 - [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
 - [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)

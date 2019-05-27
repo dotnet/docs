@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "UI Automation caching in clients"
   - "caching, UI Automation clients"
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]
@@ -60,9 +58,9 @@ ms.author: "mhopkins"
 ## Retrieving Cached Properties  
  You can retrieve the cached properties of an element through the following methods and properties.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.Cached%2A>  
+- <xref:System.Windows.Automation.AutomationElement.Cached%2A>  
   
  An exception is raised if the requested property is not in the cache.  
   
@@ -72,9 +70,9 @@ ms.author: "mhopkins"
 ## Retrieving Cached Control Patterns  
  You can retrieve the cached control patterns of an element through the following methods.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A>  
+- <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A>  
   
  If the pattern is not in the cache, <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> raises an exception, and <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A> returns `false`.  
   
@@ -97,7 +95,8 @@ ms.author: "mhopkins"
   
  Updating the cache does not alter the properties of any existing <xref:System.Windows.Automation.AutomationElement> references.  
   
-## See Also  
- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)  
- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [FetchTimer Sample](https://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)
+## See also
+
+- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
+- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [FetchTimer Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))

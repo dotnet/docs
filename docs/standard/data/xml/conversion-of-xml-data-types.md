@@ -62,5 +62,5 @@ writer.WriteElementString("TestInt32",XmlConvert.ToString(vInt32));
   
 ## See also
 
-- [Converting Strings to .NET Framework Data Types](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)  
+- [Converting Strings to .NET Framework Data Types](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)
 - [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)

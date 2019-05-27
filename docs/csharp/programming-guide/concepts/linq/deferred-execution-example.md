@@ -55,8 +55,8 @@ Main: str GHI
   
  The next topic in this tutorial illustrates chaining queries together:  
   
--   [Chaining Queries Example (C#)](../../../../csharp/programming-guide/concepts/linq/chaining-queries-example.md)  
+- [Chaining Queries Example (C#)](../../../../csharp/programming-guide/concepts/linq/chaining-queries-example.md)  
   
-## See Also
+## See also
 
 - [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)

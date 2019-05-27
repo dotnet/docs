@@ -48,11 +48,9 @@ In this example, all references to the local time zone are made through the <xre
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
 * That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [How to: Resolve ambiguous times](../../../docs/standard/datetime/resolve-ambiguous-times.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [How to: Resolve ambiguous times](../../../docs/standard/datetime/resolve-ambiguous-times.md)

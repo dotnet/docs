@@ -29,7 +29,7 @@ HRESULT GetObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppObject`  
  [out] A pointer to the address of an ICorDebugObjectValue object that represents the boxed value.  
   

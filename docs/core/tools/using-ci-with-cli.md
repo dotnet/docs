@@ -171,4 +171,4 @@ Two general approaches that you take in structuring the build process for .NET C
 
 ## See also
 
-* [.NET downloads - Linux](https://dotnet.microsoft.com/download?initial-os=linux)
+- [.NET downloads - Linux](https://dotnet.microsoft.com/download?initial-os=linux)

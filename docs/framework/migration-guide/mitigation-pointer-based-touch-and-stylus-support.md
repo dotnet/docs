@@ -50,4 +50,4 @@ Removing this entry or setting its value to `false` turns this optional stack of
 
 ## See also
 
-[Retargeting Changes in the .NET Framework 4.7](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md)
+- [Retargeting Changes in the .NET Framework 4.7](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md)

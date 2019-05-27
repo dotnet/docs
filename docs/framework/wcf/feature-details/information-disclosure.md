@@ -26,16 +26,16 @@ Information disclosure enables an attacker to gain valuable information about a 
   
  Mitigations include the following:  
   
--   Service references are assumed to be trustworthy. Take care whenever transferring service reference instances to ensure that they have not been tampered with.  
+- Service references are assumed to be trustworthy. Take care whenever transferring service reference instances to ensure that they have not been tampered with.  
   
--   Some applications can present a user experience that allows interactive establishment of trust based on data in the service reference and trust data proven by the remote host. WCF provides extensibility points for such a facility, but the user must implemented them.  
+- Some applications can present a user experience that allows interactive establishment of trust based on data in the service reference and trust data proven by the remote host. WCF provides extensibility points for such a facility, but the user must implemented them.  
   
 ## NTLM  
  By default, in the Windows domain environment, Windows authentication uses the Kerberos protocol to authenticate and authorize users. If the Kerberos protocol cannot be used for some reason, NT LAN Manager (NTLM) is used as a fallback. You can disable this behavior by setting the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property to `false`. Issues to be aware of when allowing NTLM include:  
   
--   NTLM exposes the client user name. If the user name needs to be kept confidential, then set the `AllowNTLM` property on the binding to `false`.  
+- NTLM exposes the client user name. If the user name needs to be kept confidential, then set the `AllowNTLM` property on the binding to `false`.  
   
--   NTLM does not provide server authentication. Therefore, the client cannot ensure that it is communicating with the right service when you use NTLM as an authentication protocol.  
+- NTLM does not provide server authentication. Therefore, the client cannot ensure that it is communicating with the right service when you use NTLM as an authentication protocol.  
   
 ### Specifying Client Credentials or Invalid Identity Forces NTLM Usage  
  When creating a client, specifying client credentials without a domain name, or specifying an invalid server identity, causes NTLM to be used instead of the Kerberos protocol (if the `AlllowNtlm` property is set to `true`). Because  NTLM does not do server authentication, information can potentially be disclosed.  
@@ -50,10 +50,11 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
   
  If the domain is specified, but an invalid service principal name is specified using the endpoint identity feature, then NTLM is used. For more information about how endpoint identity is specified, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
-## See Also  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)  
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+## See also
+
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
+- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
+- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
+- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)

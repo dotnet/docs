@@ -42,5 +42,6 @@ class XmlSerializerOperationBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior>

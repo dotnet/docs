@@ -80,5 +80,6 @@ GridView1.DataSource = ordersView;
 GridView1.DataBind();  
 ```  
   
-## See Also  
- [Data Binding and LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)
+## See also
+
+- [Data Binding and LINQ to DataSet](../../../../docs/framework/data/adonet/data-binding-and-linq-to-dataset.md)

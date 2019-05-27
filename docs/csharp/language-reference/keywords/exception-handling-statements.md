@@ -12,18 +12,18 @@ C# provides built-in support for handling anomalous situations, known as excepti
   
  The following exception handling topics are explained in this section:  
   
--   [throw](../../../csharp/language-reference/keywords/throw.md)  
+- [throw](../../../csharp/language-reference/keywords/throw.md)  
   
--   [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
   
--   [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
   
--   [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
   
-## See Also  
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Statement Keywords](../../../csharp/language-reference/keywords/statement-keywords.md)
 - [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)

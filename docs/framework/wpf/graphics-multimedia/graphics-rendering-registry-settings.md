@@ -11,9 +11,7 @@ ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 ---
 # Graphics Rendering Registry Settings
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics rendering registry settings that affect [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
-  
 
-  
 <a name="overview"></a>   
 ## When to Use Graphics Rendering Registry Settings  
  These registry settings are provided for troubleshooting, debugging, and product support purposes. Because changes to the registry affect all [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, your application should never alter these registry keys automatically, or during installation.  
@@ -44,7 +42,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The **disable hardware acceleration option** enables you to turn off hardware acceleration for debugging and test purposes. When you see rendering artifacts in an application, try turning off hardware acceleration. If the artifact disappears, the problem might be with your video driver.  
   
- The **disable hardware acceleration option** is a DWORD value that is either 0 or 1. A value of 1 disables hardware acceleration. A value of 0 enables hardware acceleration, provided the system meets hardware acceleration requirements; for more information, see [Graphics Rendering Tiers](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md).  
+ The **disable hardware acceleration option** is a DWORD value that is either 0 or 1. A value of 1 disables hardware acceleration. A value of 0 enables hardware acceleration, provided the system meets hardware acceleration requirements; for more information, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
   
 <a name="maxmultisample"></a>   
 ## Maximum Multisample Value  
@@ -91,6 +89,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The **use reference rasterizer option** takes a DWORD value. A value of 0 indicates that the reference rasterizer is not used. Any other non-zero value forces [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to use the reference rasterizer.  
   
-## See Also  
- [Graphics Rendering Tiers](../../../../docs/framework/wpf/advanced/graphics-rendering-tiers.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## See also
+
+- [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

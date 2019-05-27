@@ -13,7 +13,7 @@ ms.author: "mairaw"
 
 Discretionary behaviors are described as behaviors listed in the [World Wide Web Consortium (W3C) XSL Transformations (XSLT) Version 1.0 Recommendation](https://www.w3.org/TR/1999/REC-xslt-19991116), in which the implementation provider chooses one of several possible options as a way to handle a situation. For example, in section 7.3 Creating Processing Instructions, the W3C Recommendation says that it is an error if instantiating the content of `xsl:processing-instruction` creates nodes other than text nodes. For some problems, the W3C tells what decision should be made if the processor decides to recover from the error. For the problem given in section 7.3, the W3C says that the implementation can recover from this error by ignoring the nodes and their content.
 
-Therefore, for each of the discretionary behaviors allowed by the W3C, the table below lists the discretionary behaviors implemented for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] implementation of the <xref:System.Xml.Xsl.XslTransform> class, and what section in the W3C XSLT 1.0 Recommendation that this problem is discussed.
+Therefore, for each of the discretionary behaviors allowed by the W3C, the table below lists the discretionary behaviors implemented for the .NET Framework implementation of the <xref:System.Xml.Xsl.XslTransform> class, and what section in the W3C XSLT 1.0 Recommendation that this problem is discussed.
 
 |Problem|Behavior|Section|
 |-------------|--------------|-------------|
@@ -76,10 +76,10 @@ The following table shows the features that are optional for an XSLT processor t
 ## See also
 
 - <xref:System.Xml.Xsl.XslTransform>
-- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
-- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
-- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
-- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
-- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
-- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
-- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)
+- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)
+- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)
+- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)
+- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)
+- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)
+- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.runtime.caching&gt; Element (Cache Settings)"
+title: "<system.runtime.caching> Element (Cache Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<system.runtime.caching> element"
@@ -9,7 +9,7 @@ ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;system.runtime.caching&gt; Element (Cache Settings)
+# \<system.runtime.caching> Element (Cache Settings)
 Provides configuration for the default in-memory <xref:System.Runtime.Caching.ObjectCache> implementation through the `memoryCache` entry in the configuration file.  
   
  \<configuration>  
@@ -39,7 +39,7 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] applications.|  
+|[\<configuration>](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
   
 ## Remarks  
  The classes in this namespace provide a way to use caching facilities like those in ASP.NET, but without a dependency on the `System.Web` assembly. For more information, see [Caching in .NET Framework Applications](../../../../../docs/framework/performance/caching-in-net-framework-applications.md).  
@@ -67,5 +67,6 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
 </configuration>  
 ```  
   
-## See Also  
+## See also
+
 - [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

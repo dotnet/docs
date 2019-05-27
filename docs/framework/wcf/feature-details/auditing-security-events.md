@@ -15,9 +15,9 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 ## Audit Level and Behavior  
  Two levels of security audits exist:  
   
--   Service authorization level, in which a caller is authorized.  
+- Service authorization level, in which a caller is authorized.  
   
--   Message level, in which WCF checks for message validity and authenticates the caller.  
+- Message level, in which WCF checks for message validity and authenticates the caller.  
   
  You can check both audit levels for success or failure, which is known as the *audit behavior*.  
   
@@ -92,12 +92,13 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |Audit policy management|Not applicable.|Along with configuration, the Security log is also controlled by the local security authority (LSA) policy. The "Audit object access" category must also be enabled.|  
 |Default user experience|All authenticated users can write to the Application log, so no additional permission step is needed for application processes.|The application process (context) must have `SeAuditPrivilege`.|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
- <xref:System.ServiceModel.AuditLogLocation>  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)  
- [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
- [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)  
- [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- <xref:System.ServiceModel.AuditLogLocation>
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
+- [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
+- [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)
+- [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

@@ -5,7 +5,7 @@ author: kendrahavens
 ms.date: 12/05/2018
 ms.custom: "seodec18"
 ---
-# Get Started with C# and Visual Studio Code
+# Get started with C# and Visual Studio Code
 
 .NET Core gives you a fast and modular platform for creating applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
@@ -85,46 +85,48 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 ## Add a class
 
 1. To add a new class right-click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
-2. Name your file `Class1.cs`. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
+2. Name your file `MyClass.cs`. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
 3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your `Program.cs` file.
-``` csharp
-using System;
 
-namespace HelloWorld
-{
-    public class Class1
+    ``` csharp
+    using System;
+
+    namespace HelloWorld
     {
-        public string ReturnMessage()
+        public class MyClass
         {
-            return "Happy coding!";
+            public string ReturnMessage()
+            {
+                return "Happy coding!";
+            }
         }
     }
-}
-```
+    ```
 
 4. Call your new class from your main method in `Program.cs` by adding the code below.
 
-```csharp
-using System;
-
-namespace HelloWorld
-{
-    class Program
+    ```csharp
+    using System;
+    
+    namespace HelloWorld
     {
-        static void Main(string[] args)
+        class Program
         {
-            Class1 c1 = new Class1();
-            Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
+            static void Main(string[] args)
+            {
+                MyClass c1 = new MyClass();
+                Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
+            }
         }
     }
-}
-```
+    ```
 
 5. Save your changes and run your program again. The new message should appear with the appended string.
-```console
-> dotnet run
-Hello World! Happy coding!
-```
+
+    ```console
+    > dotnet run
+    Hello World! Happy coding!
+    ```
 
 ## FAQ
 
@@ -134,5 +136,5 @@ The Visual Studio Code C# extension can generate assets to build and debug for y
 
 ## See also
 
-* [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-* [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)
+- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

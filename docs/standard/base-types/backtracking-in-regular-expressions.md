@@ -29,13 +29,13 @@ ms.custom: seodec18
   
  This topic contains the following sections:  
   
--   [Linear Comparison Without Backtracking](#linear_comparison_without_backtracking)  
+- [Linear Comparison Without Backtracking](#linear_comparison_without_backtracking)  
   
--   [Backtracking with Optional Quantifiers or Alternation Constructs](#backtracking_with_optional_quantifiers_or_alternation_constructs)  
+- [Backtracking with Optional Quantifiers or Alternation Constructs](#backtracking_with_optional_quantifiers_or_alternation_constructs)  
   
--   [Backtracking with Nested Optional Quantifiers](#backtracking_with_nested_optional_quantifiers)  
+- [Backtracking with Nested Optional Quantifiers](#backtracking_with_nested_optional_quantifiers)  
   
--   [Controlling Backtracking](#controlling_backtracking)  
+- [Controlling Backtracking](#controlling_backtracking)  
   
 <a name="linear_comparison_without_backtracking"></a>   
 ## Linear Comparison Without Backtracking  
@@ -85,15 +85,15 @@ ms.custom: seodec18
   
  To do this, the regular expression engine uses backtracking as follows:  
   
--   It matches the `.*` (which matches zero, one, or more occurrences of any character) with the whole input string.  
+- It matches the `.*` (which matches zero, one, or more occurrences of any character) with the whole input string.  
   
--   It attempts to match "e" in the regular expression pattern. However, the input string has no remaining characters available to match.  
+- It attempts to match "e" in the regular expression pattern. However, the input string has no remaining characters available to match.  
   
--   It backtracks to its last successful match, "Essential services are provided by regular expressions", and attempts to match "e" with the period at the end of the sentence. The match fails.  
+- It backtracks to its last successful match, "Essential services are provided by regular expressions", and attempts to match "e" with the period at the end of the sentence. The match fails.  
   
--   It continues to backtrack to a previous successful match one character at a time until the tentatively matched substring is "Essential services are provided by regular expr". It then compares the "e" in the pattern to the second "e" in "expressions" and finds a match.  
+- It continues to backtrack to a previous successful match one character at a time until the tentatively matched substring is "Essential services are provided by regular expr". It then compares the "e" in the pattern to the second "e" in "expressions" and finds a match.  
   
--   It compares "s" in the pattern to the "s" that follows the matched "e" character (the first "s" in "expressions"). The match is successful.  
+- It compares "s" in the pattern to the "s" that follows the matched "e" character (the first "s" in "expressions"). The match is successful.  
   
  When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations. Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.  
   
@@ -108,11 +108,11 @@ ms.custom: seodec18
   
  As the output from the example shows, the regular expression engine took about twice as long to find that an input string did not match the pattern as it did to identify a matching string. This is because an unsuccessful match always represents a worst-case scenario. The regular expression engine must use the regular expression to follow all possible paths through the data before it can conclude that the match is unsuccessful, and the nested parentheses create many additional paths through the data. The regular expression engine concludes that the second string did not match the pattern by doing the following:  
   
--   It checks that it was at the beginning of the string, and then matches the first five characters in the string with the pattern `a+`. It then determines that there are no additional groups of "a" characters in the string. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 9 comparisons. The regular expression engine also saves state information from its matches of "a" (which we will call match 1), "aa" (match 2), "aaa" (match 3), and "aaaa" (match 4).  
+- It checks that it was at the beginning of the string, and then matches the first five characters in the string with the pattern `a+`. It then determines that there are no additional groups of "a" characters in the string. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 9 comparisons. The regular expression engine also saves state information from its matches of "a" (which we will call match 1), "aa" (match 2), "aaa" (match 3), and "aaaa" (match 4).  
   
--   It returns to the previously saved match 4. It determines that there is one additional "a" character to assign to an additional captured group. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 4 comparisons. So far, a total of 13 comparisons have been performed.  
+- It returns to the previously saved match 4. It determines that there is one additional "a" character to assign to an additional captured group. Finally, it tests for the end of the string. Because one additional character remains in the string, the match fails. This failed match requires 4 comparisons. So far, a total of 13 comparisons have been performed.  
   
--   It returns to the previously saved match 3. It determines that there are two additional "a" characters to assign to an additional captured group. However, the end-of-string test fails. It then returns to match3 and tries to match the two additional "a" characters in two additional captured groups. The end-of-string test still fails. These failed matches require 12 comparisons. So far, a total of 25 comparisons have been performed.  
+- It returns to the previously saved match 3. It determines that there are two additional "a" characters to assign to an additional captured group. However, the end-of-string test fails. It then returns to match3 and tries to match the two additional "a" characters in two additional captured groups. The end-of-string test still fails. These failed matches require 12 comparisons. So far, a total of 25 comparisons have been performed.  
   
  Comparison of the input string with the regular expression continues in this way until the regular expression engine has tried all possible combinations of matches, and then concludes that there is no match. Because of the nested quantifiers, this comparison is an O(2<sup>n</sup>) or an exponential operation, where *n* is the number of characters in the input string. This means that in the worst case, an input string of 30 characters requires approximately 1,073,741,824 comparisons, and an input string of 40 characters requires approximately 1,099,511,627,776 comparisons. If you use strings of these or even greater lengths, regular expression methods can take an extremely long time to complete when they process input that does not match the regular expression pattern.  
   
@@ -213,8 +213,8 @@ ms.custom: seodec18
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
-- [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)  
-- [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)  
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)
+- [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)
 - [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md)

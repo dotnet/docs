@@ -11,9 +11,9 @@ The .NET Framework Data Provider for Oracle includes several structures you can 
   
  The following C# examples:  
   
--   Create an Oracle table and load it with data.  
+- Create an Oracle table and load it with data.  
   
--   Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
+- Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
   
 ## Creating an Oracle Table  
  This example creates an Oracle table and loads it with data. You must run this example before running the next example.  
@@ -109,6 +109,7 @@ public void ReadOracleTypesExample(string connectionString)
 }  
 ```  
   
-## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

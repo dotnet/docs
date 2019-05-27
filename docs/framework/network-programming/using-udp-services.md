@@ -152,6 +152,7 @@ class Program
 }
 ```
 
-## See Also
- <xref:System.Net.Sockets.UdpClient>
- <xref:System.Net.IPAddress>
+## See also
+
+- <xref:System.Net.Sockets.UdpClient>
+- <xref:System.Net.IPAddress>

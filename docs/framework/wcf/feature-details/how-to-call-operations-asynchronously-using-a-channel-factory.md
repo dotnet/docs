@@ -15,7 +15,7 @@ This topic covers how a client can access a service operation asynchronously whe
   
 #### To call WCF service operations asynchronously  
   
-1.  Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool with the `/async` option as shown in the following command.  
+1. Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool with the `/async` option as shown in the following command.  
   
     ```  
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a  
@@ -23,12 +23,12 @@ This topic covers how a client can access a service operation asynchronously whe
   
      This generates an asynchronous client version of the service contract for the operation.  
   
-2.  Create a callback function to be called when the asynchronous operation is complete, as shown in the following sample code.  
+2. Create a callback function to be called when the asynchronous operation is complete, as shown in the following sample code.  
   
      [!code-csharp[C_How_To_CF_Async#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_how_to_cf_async/cs/client.cs#2)]
      [!code-vb[C_How_To_CF_Async#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_how_to_cf_async/vb/client.vb#2)]  
   
-3.  To access a service operation asynchronously, create the client and call the `Begin[Operation]` (for example, `BeginAdd`) and specify a callback function, as shown in the following sample code.  
+3. To access a service operation asynchronously, create the client and call the `Begin[Operation]` (for example, `BeginAdd`) and specify a callback function, as shown in the following sample code.  
   
      [!code-csharp[C_How_To_CF_Async#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_how_to_cf_async/cs/client.cs#3)]
      [!code-vb[C_How_To_CF_Async#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_how_to_cf_async/vb/client.vb#3)]  
@@ -36,10 +36,7 @@ This topic covers how a client can access a service operation asynchronously whe
      When the callback function executes, the client calls `End<operation>` (for example, `EndAdd`) to retrieve the result.  
   
 ## Example  
- The service that is used with the client code that is used in the preceding procedure implements the `ICalculator` interface as shown in the following code. On the service side, the `Add` and `Subtract` operations of the contract are invoked synchronously by the Windows Communication Foundation (WCF) run time, even though the preceding client steps are invoked asynchronously on the client. The `Multiply` and `Divide` operations are used to invoke the service asynchronously on the service side, even if the client invokes them synchronously. This example sets the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property to `true`. This property setting, in combination with the implementation of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] asynchronous pattern, tells the run time to invoke the operation asynchronously.  
+ The service that is used with the client code that is used in the preceding procedure implements the `ICalculator` interface as shown in the following code. On the service side, the `Add` and `Subtract` operations of the contract are invoked synchronously by the Windows Communication Foundation (WCF) run time, even though the preceding client steps are invoked asynchronously on the client. The `Multiply` and `Divide` operations are used to invoke the service asynchronously on the service side, even if the client invokes them synchronously. This example sets the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property to `true`. This property setting, in combination with the implementation of the .NET Framework asynchronous pattern, tells the run time to invoke the operation asynchronously.  
   
  [!code-csharp[C_How_To_CF_Async#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_how_to_cf_async/cs/service.cs#4)]
  [!code-vb[C_How_To_CF_Async#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_how_to_cf_async/vb/service.vb#4)]  
-  
-## See Also  
- [Service Contract: Asynchronous Sample](https://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7)

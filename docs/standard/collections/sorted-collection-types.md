@@ -15,16 +15,16 @@ ms.author: "mairaw"
 # Sorted Collection Types
 The <xref:System.Collections.SortedList?displayProperty=nameWithType> class, the <xref:System.Collections.Generic.SortedList%602?displayProperty=nameWithType> generic class, and the <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=nameWithType> generic class are similar to the <xref:System.Collections.Hashtable> class and the <xref:System.Collections.Generic.Dictionary%602> generic class in that they implement the <xref:System.Collections.IDictionary> interface, but they maintain their elements in sort order by key, and they do not have the O(1) insertion and retrieval characteristic of hash tables. The three classes have several features in common:  
   
--   All three classes implement the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The two generic classes also implement the <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType> generic interface.  
+- All three classes implement the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The two generic classes also implement the <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType> generic interface.  
   
--   Each element is a key/value pair for enumeration purposes.  
+- Each element is a key/value pair for enumeration purposes.  
   
     > [!NOTE]
     >  The nongeneric <xref:System.Collections.SortedList> class returns <xref:System.Collections.DictionaryEntry> objects when enumerated, although the two generic types return <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
--   Elements are sorted according to a <xref:System.Collections.IComparer?displayProperty=nameWithType> implementation (for nongeneric <xref:System.Collections.SortedList>) or a <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation (for the two generic classes).  
+- Elements are sorted according to a <xref:System.Collections.IComparer?displayProperty=nameWithType> implementation (for nongeneric <xref:System.Collections.SortedList>) or a <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> implementation (for the two generic classes).  
   
--   Each class provides properties that return collections containing only the keys or only the values.  
+- Each class provides properties that return collections containing only the keys or only the values.  
   
  The following table lists some of the differences between the two sorted list classes and the <xref:System.Collections.Generic.SortedDictionary%602> class.  
   
@@ -44,7 +44,7 @@ The <xref:System.Collections.SortedList?displayProperty=nameWithType> class, the
   
 ## See also
 
-- <xref:System.Collections.IDictionary?displayProperty=nameWithType>  
-- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
-- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>  
+- <xref:System.Collections.IDictionary?displayProperty=nameWithType>
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602>
 - [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)

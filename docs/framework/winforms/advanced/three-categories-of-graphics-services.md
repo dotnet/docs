@@ -12,11 +12,11 @@ ms.assetid: 068c0ef3-f6ee-4d58-a7b6-eb2531ead408
 # Three Categories of Graphics Services
 The graphics offerings in Windows Forms fall into the following three broad categories:  
   
--   Two-dimensional (2-D) vector graphics  
+- Two-dimensional (2-D) vector graphics  
   
--   Imaging  
+- Imaging  
   
--   Typography  
+- Typography  
   
 ## 2-D Vector Graphics  
  Two-dimensional vector graphics are primitives; such as lines, curves, and figures; that are specified by sets of points on a coordinate system. For example, a straight line is specified by its two endpoints, and a rectangle is specified by a point giving the location of its upper-left corner and a pair of numbers giving its width and height. A simple path is specified by an array of points that are connected by straight lines. A Bézier spline is a sophisticated curve specified by four control points.  
@@ -33,7 +33,8 @@ The graphics offerings in Windows Forms fall into the following three broad cate
   
  In addition, Windows Forms offers the option to draw text with [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] capabilities in its <xref:System.Windows.Forms.TextRenderer> class.  
   
-## See Also  
- [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)  
- [About GDI+ Managed Code](../../../../docs/framework/winforms/advanced/about-gdi-managed-code.md)  
- [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)
+## See also
+
+- [Graphics Overview](graphics-overview-windows-forms.md)
+- [About GDI+ Managed Code](about-gdi-managed-code.md)
+- [Using Managed Graphics Classes](using-managed-graphics-classes.md)

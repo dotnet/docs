@@ -22,13 +22,13 @@ This sample demonstrates the use of the channel extensibility model. In particul
   
  The sample describes the recommended procedure for creating a custom layered channel in Windows Communication Foundation (WCF), by using the channel framework and following WCF best practices. The steps to create a custom layered channel are as follows:  
   
-1.  Decide which of the channel shapes your channel factory and channel listener will support.  
+1. Decide which of the channel shapes your channel factory and channel listener will support.  
   
-2.  Create a channel factory and a channel listener that support your channel shapes.  
+2. Create a channel factory and a channel listener that support your channel shapes.  
   
-3.  Add a binding element that adds the custom layered channel to a channel stack.  
+3. Add a binding element that adds the custom layered channel to a channel stack.  
   
-4.  Add a binding element extension section to expose the new binding element to the configuration system.  
+4. Add a binding element extension section to expose the new binding element to the configuration system.  
   
 ## Channel Shapes  
  The first step in writing a custom layered channel is to decide which shapes are required for the channel. For our message inspector, we support any shape that the layer below us supports (for example, if the layer below us can build <xref:System.ServiceModel.Channels.IOutputChannel> and <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, then we also expose <xref:System.ServiceModel.Channels.IOutputChannel> and <xref:System.ServiceModel.Channels.IDuplexSessionChannel>).  
@@ -141,18 +141,16 @@ Dangerous wind detected! Reported speed (70) is greater than 64 kph.
   
 #### To set up, build, and run the sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-5.  Run Service.exe first then run Client.exe and watch both console windows for output.  
-  
-## See Also
+5. Run Service.exe first then run Client.exe and watch both console windows for output.  

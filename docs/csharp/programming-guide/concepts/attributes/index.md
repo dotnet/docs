@@ -51,7 +51,7 @@ The first parameter, the DLL name, is positional and always comes first; the oth
 
 ### Attribute targets
 
-The *target* of an attribute is the entity to which the attribute applies. For example, an attribute may apply to a class, a particular method, or an entire assembly. By default, an attribute applies to the element that it precedes. But you can also explicitly identify, for example, whether an attribute is applied to a method, or to its parameter, or to its return value.
+The *target* of an attribute is the entity which the attribute applies to. For example, an attribute may apply to a class, a particular method, or an entire assembly. By default, an attribute applies to the element that it precedes. But you can also explicitly identify, for example, whether an attribute is applied to a method, or to its parameter, or to its return value.
 
 To explicitly identify an attribute target, use the following syntax:
 
@@ -117,9 +117,9 @@ For more information, see:
 - [Common Attributes (C#)](common-attributes.md)  
 - [Caller Information (C#)](../caller-information.md)  
 
-## See Also
+## See also
 
-- [C# Programming Guide](../../index.md)  
-- [Reflection (C#)](../reflection.md)  
-- [Attributes](../../../../standard/attributes/index.md)  
-- [Using Attributes in C#](../../../tutorials/attributes.md)  
+- [C# Programming Guide](../../index.md)
+- [Reflection (C#)](../reflection.md)
+- [Attributes](../../../../standard/attributes/index.md)
+- [Using Attributes in C#](../../../tutorials/attributes.md)

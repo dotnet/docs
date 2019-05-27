@@ -29,5 +29,5 @@ This example shows how to use the <xref:System.Linq.ParallelEnumerable.Aggregate
   
 ## See also
 
-- <xref:System.Linq.ParallelEnumerable>  
+- <xref:System.Linq.ParallelEnumerable>
 - [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

@@ -57,6 +57,6 @@ You can follow this basic pattern if you choose to implement or must implement a
   
 ## See also
 
-* [Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)   
-* [using Statement (C# Reference)](~/docs/csharp/language-reference/keywords/using-statement.md)   
-* [Using Statement (Visual Basic)](~/docs/visual-basic/language-reference/statements/using-statement.md)
+- [Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)
+- [using Statement (C# Reference)](~/docs/csharp/language-reference/keywords/using-statement.md)
+- [Using Statement (Visual Basic)](~/docs/visual-basic/language-reference/statements/using-statement.md)

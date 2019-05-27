@@ -26,7 +26,7 @@ In addition to the rules, there are a number of identifier [naming conventions](
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)
 - [Inside a C# Program](../inside-a-program/index.md)

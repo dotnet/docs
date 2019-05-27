@@ -41,7 +41,7 @@ Named pipes provide interprocess communication between a pipe server and one or 
   
 ## See also
 
-- <xref:System.Security.Principal.TokenImpersonationLevel>  
-- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>  
-- [Pipes](../../../docs/standard/io/pipe-operations.md)  
+- <xref:System.Security.Principal.TokenImpersonationLevel>
+- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>
+- [Pipes](../../../docs/standard/io/pipe-operations.md)
 - [How to: Use Anonymous Pipes for Local Interprocess Communication](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md)

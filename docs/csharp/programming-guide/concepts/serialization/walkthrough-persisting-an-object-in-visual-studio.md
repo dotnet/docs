@@ -2,7 +2,7 @@
 title: "Walkthrough: Persisting an Object using C#"
 ms.date: 04/26/2018
 ---
-# Walkthrough: persisting an object using C# #
+# Walkthrough: persisting an object using C\#
 
 You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.
 
@@ -94,7 +94,7 @@ Next you must add code to serialize the class to a file. Add the following code 
 
 At this point, you can again build and run the application. The first time it runs, notice that the interest rates starts at 7.5, and then changes to 7.1. Close the application and then run it again. Now, the application prints the message that it has read the saved file, and the interest rate is 7.1 even before the code that changes it.
 
-## See Also
+## See also
 
-- [Serialization (C#)](index.md)  
-- [C# Programming Guide](../..//index.md)  
+- [Serialization (C#)](index.md)
+- [C# Programming Guide](../..//index.md)

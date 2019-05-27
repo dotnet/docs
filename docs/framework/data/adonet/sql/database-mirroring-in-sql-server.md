@@ -11,11 +11,11 @@ Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL 
   
  The following simplified sequence of events occurs for a <xref:System.Data.SqlClient.SqlConnection> object that targets a database configured for mirroring:  
   
-1.  The client application successfully connects to the principal database, and the server sends back the name of the partner server, which is then cached on the client.  
+1. The client application successfully connects to the principal database, and the server sends back the name of the partner server, which is then cached on the client.  
   
-2.  If the server containing the principal database fails or connectivity is interrupted, connection and transaction state is lost. The client application attempts to re-establish a connection to the principal database and fails.  
+2. If the server containing the principal database fails or connectivity is interrupted, connection and transaction state is lost. The client application attempts to re-establish a connection to the principal database and fails.  
   
-3.  The client application then transparently attempts to establish a connection to the mirror database on the partner server. If it succeeds, the connection is redirected to the mirror database, which then becomes the new principal database.  
+3. The client application then transparently attempts to establish a connection to the mirror database on the partner server. If it succeeds, the connection is redirected to the mirror database, which then becomes the new principal database.  
   
 ## Specifying the Failover Partner in the Connection String  
  If you supply the name of a failover partner server in the connection string, the client will transparently attempt a connection with the failover partner if the principal database is unavailable when the client application first connects.  
@@ -57,5 +57,6 @@ string activeServer = connection.DataSource;
 |--------------|-----------------|  
 |[Database Mirroring](/sql/database-engine/database-mirroring/database-mirroring-sql-server)|Describes how to set up and configure mirroring in SQL Server.|  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

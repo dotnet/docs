@@ -29,7 +29,7 @@ HRESULT IsManaged (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pManaged`  
  [out] `true` if this chain is running managed code; otherwise, `false`.  
   

@@ -15,7 +15,7 @@ Optional parameters must provide default values that can be used if no parameter
   
 ## To correct this error  
   
--   Specify default values for optional parameters; for example:  
+- Specify default values for optional parameters; for example:  
   
     ```  
     Sub Proc1(ByVal X As Integer,   
@@ -24,5 +24,6 @@ Optional parameters must provide default values that can be used if no parameter
     End Sub  
     ```  
   
-## See Also  
- [Optional](../../../visual-basic/language-reference/modifiers/optional.md)
+## See also
+
+- [Optional](../../../visual-basic/language-reference/modifiers/optional.md)

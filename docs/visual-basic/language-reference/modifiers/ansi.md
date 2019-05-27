@@ -26,7 +26,8 @@ Specifies that Visual Basic should marshal all strings to American National Stan
 ## Smart Device Developer Notes  
  This keyword is not supported.  
   
-## See Also  
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)  
- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)
+- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

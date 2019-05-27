@@ -28,7 +28,7 @@ Defines a custom interface attribute that specifies the managed namespace name f
 ]  
 ```  
   
-#### Parameters  
+## Parameters  
  `value`  
  The managed namespace name for the library.  
   

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "MultipleView control pattern"
   - "control patterns, MultipleView"
 ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation MultipleView Control Pattern
 > [!NOTE]
@@ -23,13 +21,13 @@ ms.author: "mhopkins"
 ## Implementation Guidelines and Conventions  
  When implementing the Multiple View control pattern, note the following guidelines and conventions:  
   
--   <xref:System.Windows.Automation.Provider.IMultipleViewProvider> should also be implemented on a container that manages the current view if it is different from a control that provides the current view. For example, Windows Explorer contains a List control for the current folder content while the view for the control is managed from the Windows Explorer application.  
+- <xref:System.Windows.Automation.Provider.IMultipleViewProvider> should also be implemented on a container that manages the current view if it is different from a control that provides the current view. For example, Windows Explorer contains a List control for the current folder content while the view for the control is managed from the Windows Explorer application.  
   
--   A control that is able to sort its content is not considered to support multiple views.  
+- A control that is able to sort its content is not considered to support multiple views.  
   
--   The collection of views must be identical across instances.  
+- The collection of views must be identical across instances.  
   
--   View names must be suitable for use in Text to Speech, Braille, and other human-readable applications.  
+- View names must be suitable for use in Text to Speech, Braille, and other human-readable applications.  
   
 <a name="Required_Members_for_IMultipleViewProvider"></a>   
 ## Required Members for IMultipleViewProvider  
@@ -52,9 +50,10 @@ ms.author: "mhopkins"
 |--------------------|---------------|  
 |<xref:System.ArgumentException>|When either <xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView%2A> or <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A> is called with a parameter that is not a member of the supported views collection.|  
   
-## See Also  
- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)  
- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+## See also
+
+- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
+- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)

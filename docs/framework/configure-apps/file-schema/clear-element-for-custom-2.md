@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; element for NameValueSectionHandler and DictionarySectionHandler"
+title: "<clear> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/clear"
@@ -79,4 +79,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

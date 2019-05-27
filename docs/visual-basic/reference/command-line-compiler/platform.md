@@ -32,39 +32,39 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
  In general, .NET Framework assemblies written in Visual Basic will run the same regardless of the platform. However, there are some cases that behave differently on different platforms. These common cases are:  
   
--   Structures that contain members that change size depending on the platform, such as any pointer type.  
+- Structures that contain members that change size depending on the platform, such as any pointer type.  
   
--   Pointer arithmetic that includes constant sizes.  
+- Pointer arithmetic that includes constant sizes.  
   
--   Incorrect platform invoke or COM declarations that use `Integer` for handles instead of <xref:System.IntPtr>.  
+- Incorrect platform invoke or COM declarations that use `Integer` for handles instead of <xref:System.IntPtr>.  
   
--   Casting <xref:System.IntPtr> to `Integer`.  
+- Casting <xref:System.IntPtr> to `Integer`.  
   
--   Using platform invoke or COM interop with components that do not exist on all platforms.  
+- Using platform invoke or COM interop with components that do not exist on all platforms.  
   
  The **-platform** option will mitigate some issues if you know you have made assumptions about the architecture your code will run on. Specifically:  
   
--   If you decide to target a 64-bit platform, and the application is run on a 32-bit machine, the error message comes much earlier and is more targeted at the problem than the error that occurs without using this switch.  
+- If you decide to target a 64-bit platform, and the application is run on a 32-bit machine, the error message comes much earlier and is more targeted at the problem than the error that occurs without using this switch.  
   
--   If you set the `x86` flag on the option and the application is subsequently run on a 64-bit machine, the application will run in the WOW subsystem instead of running natively.  
+- If you set the `x86` flag on the option and the application is subsequently run on a 64-bit machine, the application will run in the WOW subsystem instead of running natively.  
   
  On a 64-bit Windows operating system:  
   
--   Assemblies compiled with `-platform:x86` will execute on the 32-bit CLR running under WOW64.  
+- Assemblies compiled with `-platform:x86` will execute on the 32-bit CLR running under WOW64.  
   
--   Executables compiled with the `-platform:anycpu` will execute on the 64-bit CLR.  
+- Executables compiled with the `-platform:anycpu` will execute on the 64-bit CLR.  
   
--   A DLL compiled with the `-platform:anycpu` will execute on the same CLR as the process into which it loaded.  
+- A DLL compiled with the `-platform:anycpu` will execute on the same CLR as the process into which it loaded.  
   
--   Executables that are compiled with `-platform:anycpu32bitpreferred` will execute on the 32-bit CLR.  
+- Executables that are compiled with `-platform:anycpu32bitpreferred` will execute on the 32-bit CLR.  
   
  For more information about how to develop an application to run on a 64-bit version of Windows, see [64-bit Applications](../../../framework/64-bit-apps.md).  
   
 ### To set -platform in the Visual Studio IDE  
   
-1.  In **Solution Explorer**, choose the project, open the **Project** menu, and then click **Properties**.  
+1. In **Solution Explorer**, choose the project, open the **Project** menu, and then click **Properties**.  
   
-2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
+2. On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   
      For more information, see [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
@@ -75,7 +75,8 @@ Specifies which platform version of common language runtime (CLR) can run the ou
 vbc -platform:x86 myFile.vb  
 ```  
   
-## See Also  
- [/target (Visual Basic)](target.md)  
- [Visual Basic Command-Line Compiler](index.md)  
- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+## See also
+
+- [/target (Visual Basic)](target.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

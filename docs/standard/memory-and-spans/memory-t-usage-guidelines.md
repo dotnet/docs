@@ -1,5 +1,5 @@
 ---
-title: "Memory&lt;T&gt; and Span&lt;T&gt; usage guidelines"
+title: "Memory<T> and Span<T> usage guidelines"
 ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
@@ -40,12 +40,14 @@ class Program
     static void Main()
     {
         var buffer = CreateBuffer();
-        try {
+        try
+        {
             int value = Int32.Parse(Console.ReadLine());
             WriteInt32ToBuffer(value, buffer);
             DisplayBufferToConsole(buffer);
         }
-        finally {
+        finally
+        {
             buffer.Destroy();
         }
     }
@@ -78,7 +80,7 @@ In this code:
 
 - The `Main` method holds the reference to the <xref:System.Buffers.IMemoryOwner%601> instance, so the `Main` method is the owner of the buffer.
 
-- The `WriteInt32ToBuffer` and `DisplayBufferToConsole` methods accept xref:System.Memory%601> as a public API. Therefore, they are consumers of the buffer. And they only consume it one at a time.
+- The `WriteInt32ToBuffer` and `DisplayBufferToConsole` methods accept <xref:System.Memory%601> as a public API. Therefore, they are consumers of the buffer. And they only consume it one at a time.
 
 Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For additional information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2).
 
@@ -102,13 +104,13 @@ Because a memory block is owned but is intended to be passed to multiple compone
 
 - It is possible for a component to operate on a buffer at the same time that another component is operating on it, in the process corrupting the data in the buffer.
 
-- While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
+- While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions. It is important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
 
 The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Note that guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless we explicitly note otherwise.
 
 **Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible.**
 
-<xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion isn't possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
+<xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion isn't possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
 
 Using a parameter of type <xref:System.Span%601> instead of type <xref:System.Memory%601> also helps you write a correct consuming method implementation. You'll automatically get compile-time checks to ensure that you're not attempting to access the buffer beyond your method's lease (more on this later).
 
@@ -146,9 +148,11 @@ But imagine instead that `Log` has this implementation.
 static void Log(ReadOnlyMemory<char> message)
 {
     // Run in background so that we don't block the main thread while performing IO.
-    Task.Run(() => {
+    Task.Run(() =>
+    {
         StreamWriter sw = File.AppendText(@".\input-numbers.dat");
-        sw.WriteLine(message);    });
+        sw.WriteLine(message);
+    });
 }
 ```
 
@@ -179,7 +183,8 @@ This guidance applies to methods that return <xref:System.Threading.Tasks.Task>,
 Consider the following example:
 
 ```csharp
-class OddValueExtractor {
+class OddValueExtractor
+{
     public OddValueExtractor(ReadOnlyMemory<int> input);
     public bool TryReadNextOddValue(out int value);
 }
@@ -235,7 +240,7 @@ Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%
 
 **Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
 
-According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601><T> instances via the [`fixed`](~/docs/csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
+According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601> instances via the [`fixed`](~/docs/csharp/language-reference/keywords/fixed-statement.md) keyword, as in the following example.
 
 ```csharp
 using System.Runtime.InteropServices;
@@ -292,19 +297,23 @@ public unsafe Task<int> ManagedWrapperAsync(Memory<byte> data)
 {
     // setup
     var tcs = new TaskCompletionSource<int>();
-    var state = new MyCompletedCallbackState {
+    var state = new MyCompletedCallbackState
+    {
         Tcs = tcs
     };
-    var pState = (IntPtr)GCHandle.Alloc(state;
+    var pState = (IntPtr)GCHandle.Alloc(state);
 
     var memoryHandle = data.Pin();
     state.MemoryHandle = memoryHandle;
 
     // make the call
     int result;
-    try {
+    try
+    {
         result = ExportedAsyncMethod((byte*)memoryHandle.Pointer, data.Length, pState, _callbackPtr);
-    } catch {
+    }
+    catch
+    {
         ((GCHandle)pState).Free(); // cleanup since callback won't be invoked
         memoryHandle.Dispose();
         throw;
@@ -329,8 +338,14 @@ private static void MyCompletedCallbackImplementation(IntPtr state, int result)
 
     /* error checking result goes here */
 
-    if (error) { actualState.Tcs.SetException(...); }
-    else { actualState.Tcs.SetResult(result); }
+    if (error)
+    {
+        actualState.Tcs.SetException(...);
+    }
+    else
+    {
+        actualState.Tcs.SetResult(result);
+    }
 }
 
 private static IntPtr GetCompletionCallbackPointer()

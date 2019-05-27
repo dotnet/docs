@@ -1,16 +1,14 @@
 ---
 title: Design and develop containerized apps using Docker and Microsoft Azure
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-author: CESARDELATORRE
-ms.author: wiwagn
-ms.date: 09/21/2017
+description: Let's get into the Develop/Design workload in the Docker applications life-cycle.
+ms.date: 02/15/2019
 ---
 
 # Designing and developing containerized apps using Docker and Microsoft Azure
 
-Vision: Design and develop scalable solutions with Docker in mind.
+*Vision: Design and develop scalable solutions with Docker in mind.*
 
-There are many great-fit use cases for containers, not just for microservices-oriented architectures, but also when you simply have regular services or web applications to run and you want to reduce frictions between development and production environment deployments.
+*There are many great-fit use cases for containers, not just for microservices-oriented architectures, but also when you simply have regular services or web applications to run and you want to reduce frictions between development and production environment deployments.*
 
 >[!div class="step-by-step"]
 >[Previous](../Microsoft-platform-tools-containerized-apps/index.md)

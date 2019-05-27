@@ -1,5 +1,5 @@
 ---
-title: "&lt;schemaImporterExtensions&gt; Element"
+title: "<schemaImporterExtensions> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "<schemaImporterExtensions> element"
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
 ---
-# &lt;schemaImporterExtensions&gt; Element
+# \<schemaImporterExtensions> Element
 Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
 ## Syntax  
@@ -46,9 +46,9 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
   
 ## See also
 
-- <xref:System.Xml.Serialization.XmlSchemaImporter>  
-- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
-- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
-- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)
+- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
 - [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)

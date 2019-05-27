@@ -29,7 +29,7 @@ HRESULT GetFunction (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFunction`  
  [out] A pointer to the address of the function in which the breakpoint is set.  
   

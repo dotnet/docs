@@ -10,4 +10,4 @@ A value for the `VbStrConv` enumeration is not valid, possibly because it is les
   
 ## To correct this error  
   
-1.  Ensure that the value is greater than or equal to zero.
+1. Ensure that the value is greater than or equal to zero.

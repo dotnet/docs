@@ -24,7 +24,7 @@ At the command prompt, type the following:
 regasm assemblyFile [options]
 ```
 
-#### Parameters
+## Parameters
 
 |Parameter|Description|
 |---------------|-----------------|

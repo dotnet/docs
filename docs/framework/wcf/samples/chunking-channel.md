@@ -195,13 +195,13 @@ as the ChunkingStart message.
 ## Chunking Channel Architecture  
  The chunking channel is an `IDuplexSessionChannel` that, at a high level, follows the typical channel architecture. There is a `ChunkingBindingElement` that can build a `ChunkingChannelFactory` and a `ChunkingChannelListener`. The `ChunkingChannelFactory` creates instances of `ChunkingChannel` when it is asked to. The `ChunkingChannelListener` creates instances of `ChunkingChannel` when a new inner channel is accepted. The `ChunkingChannel` itself is responsible for sending and receiving messages.  
   
- At the next level down, `ChunkingChannel` relies on several components to implement the chunking protocol. On the send side, the channel uses a custom `XmlDictionaryWriter` called `ChunkingWriter` that does the actual chunking. `ChunkingWriter` uses the inner channel directly to send chunks. Using a custom `XmlDictionaryWriter` allows us to send out chunks as the large body of the original message is being written. This means we do not buffer the entire original message.  
+ At the next level down, `ChunkingChannel` relies on several components to implement the chunking protocol. On the send side, the channel uses a custom <xref:System.Xml.XmlDictionaryWriter> called `ChunkingWriter` that does the actual chunking. `ChunkingWriter` uses the inner channel directly to send chunks. Using a custom `XmlDictionaryWriter` allows us to send out chunks as the large body of the original message is being written. This means we do not buffer the entire original message.  
   
- ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel1.gif "ChunkingChannel1")  
+ ![Diagram that shows the chunking channel send architecture.](./media/chunking-channel/chunking-channel-send.gif)  
   
- On the receive side, `ChunkingChannel` pulls messages from the inner channel and hands them to a custom `XmlDictionaryReader` called `ChunkingReader`, which reconstitutes the original message from the incoming chunks. `ChunkingChannel` wraps this `ChunkingReader` in a custom `Message` implementation called `ChunkingMessage` and returns this message to the layer above. This combination of `ChunkingReader` and `ChunkingMessage` allows us to de-chunk the original message body as it is being read by the layer above instead of having to buffer the entire original message body. `ChunkingReader` has a queue where it buffers incoming chunks up to a maximum configurable number of buffered chunks. When this maximum limit is reached, the reader waits for messages to be drained from the queue by the layer above (that is, by just reading from the original message body) or until the maximum receive timeout is reached.  
+ On the receive side, `ChunkingChannel` pulls messages from the inner channel and hands them to a custom <xref:System.Xml.XmlDictionaryReader> called `ChunkingReader`, which reconstitutes the original message from the incoming chunks. `ChunkingChannel` wraps this `ChunkingReader` in a custom `Message` implementation called `ChunkingMessage` and returns this message to the layer above. This combination of `ChunkingReader` and `ChunkingMessage` allows us to de-chunk the original message body as it is being read by the layer above instead of having to buffer the entire original message body. `ChunkingReader` has a queue where it buffers incoming chunks up to a maximum configurable number of buffered chunks. When this maximum limit is reached, the reader waits for messages to be drained from the queue by the layer above (that is, by just reading from the original message body) or until the maximum receive timeout is reached.  
   
- ![Chunking Channel](../../../../docs/framework/wcf/samples/media/chunkingchannel2.gif "ChunkingChannel2")  
+ ![Diagram that shows the chunking channel receive architecture.](./media/chunking-channel/chunking-channel-receive.gif)  
   
 ## Chunking Programming Model  
  Service developers can specify which messages are to be chunked by applying the `ChunkingBehavior` attribute to operations within the contract. The attribute exposes an `AppliesTo` property that allows the developer to specify whether chunking applies to the input message, the output message or both. The following example shows the usage of `ChunkingBehavior` attribute:  
@@ -234,30 +234,30 @@ interface ITestService
   
  A few details worth noting:  
   
--   Send first calls `ThrowIfDisposedOrNotOpened` to ensure the `CommunicationState` is opened.  
+- Send first calls `ThrowIfDisposedOrNotOpened` to ensure the `CommunicationState` is opened.  
   
--   Sending is synchronized so that only one message can be sent at a time for each session. There is a `ManualResetEvent` named `sendingDone` that is reset when a chunked message is being sent. Once the end chunk message is sent, this event is set. The Send method waits for this event to be set before it tries to send the outgoing message.  
+- Sending is synchronized so that only one message can be sent at a time for each session. There is a `ManualResetEvent` named `sendingDone` that is reset when a chunked message is being sent. Once the end chunk message is sent, this event is set. The Send method waits for this event to be set before it tries to send the outgoing message.  
   
--   Send locks the `CommunicationObject.ThisLock` to prevent synchronized state changes while sending. See the <xref:System.ServiceModel.Channels.CommunicationObject> documentation for more information about <xref:System.ServiceModel.Channels.CommunicationObject> states and state machine.  
+- Send locks the `CommunicationObject.ThisLock` to prevent synchronized state changes while sending. See the <xref:System.ServiceModel.Channels.CommunicationObject> documentation for more information about <xref:System.ServiceModel.Channels.CommunicationObject> states and state machine.  
   
--   The timeout passed to Send is used as the timeout for the entire send operation which includes sending all of the chunks.  
+- The timeout passed to Send is used as the timeout for the entire send operation which includes sending all of the chunks.  
   
--   The custom `XmlDictionaryWriter` design was chosen to avoid buffering the entire original message body. If we were to get an `XmlDictionaryReader` on the body using `message.GetReaderAtBodyContents` the entire body would be buffered. Instead, we have a custom `XmlDictionaryWriter` that is passed to `message.WriteBodyContents`. As the message calls WriteBase64 on the writer, the writer packages up chunks into messages and sends them using the inner channel. WriteBase64 blocks until the chunk is sent.  
+- The custom <xref:System.Xml.XmlDictionaryWriter> design was chosen to avoid buffering the entire original message body. If we were to get an <xref:System.Xml.XmlDictionaryReader> on the body using `message.GetReaderAtBodyContents` the entire body would be buffered. Instead, we have a custom  <xref:System.Xml.XmlDictionaryWriter> that is passed to `message.WriteBodyContents`. As the message calls WriteBase64 on the writer, the writer packages up chunks into messages and sends them using the inner channel. WriteBase64 blocks until the chunk is sent.  
   
 ## Implementing the Receive Operation  
  At a high level, the Receive operation first checks that the incoming message is not `null` and that its action is the `ChunkingAction`. If it does not meet both criteria, the message is returned unchanged from Receive. Otherwise, Receive creates a new `ChunkingReader` and a new `ChunkingMessage` wrapped around it (by calling `GetNewChunkingMessage`). Before returning that new `ChunkingMessage`, Receive uses a threadpool thread to execute `ReceiveChunkLoop`, which calls `innerChannel.Receive` in a loop and hands off chunks to the `ChunkingReader` until the end chunk message is received or the receive timeout is hit.  
   
  A few details worth noting:  
   
--   Like Send, Receive first calls `ThrowIfDisposedOrNotOepned` to ensure the `CommunicationState` is Opened.  
+- Like Send, Receive first calls `ThrowIfDisposedOrNotOepned` to ensure the `CommunicationState` is Opened.  
   
--   Receive is also synchronized so that only one message can be received at a time from the session. This is especially important because once a start chunk message is received, all subsequent received messages are expected to be chunks within this new chunk sequence until an end chunk message is received. Receive cannot pull messages from the inner channel until all chunks that belong to the message currently being de-chunked are received. To accomplish this, Receive uses a `ManualResetEvent` named `currentMessageCompleted`, which is set when the end chunk message is received and reset when a new start chunk message is received.  
+- Receive is also synchronized so that only one message can be received at a time from the session. This is especially important because once a start chunk message is received, all subsequent received messages are expected to be chunks within this new chunk sequence until an end chunk message is received. Receive cannot pull messages from the inner channel until all chunks that belong to the message currently being de-chunked are received. To accomplish this, Receive uses a `ManualResetEvent` named `currentMessageCompleted`, which is set when the end chunk message is received and reset when a new start chunk message is received.  
   
--   Unlike Send, Receive does not prevent synchronized state transitions while receiving. For example, Close can be called while receiving and waits until the pending receive of the original message is completed or the specified timeout value is reached.  
+- Unlike Send, Receive does not prevent synchronized state transitions while receiving. For example, Close can be called while receiving and waits until the pending receive of the original message is completed or the specified timeout value is reached.  
   
--   The timeout passed to Receive is used as the timeout for the entire receive operation, which includes receiving all of the chunks.  
+- The timeout passed to Receive is used as the timeout for the entire receive operation, which includes receiving all of the chunks.  
   
--   If the layer that consumes the message is consuming the message body at a rate lower than the rate of incoming chunk messages, the `ChunkingReader` buffers those incoming chunks up to the limit specified by `ChunkingBindingElement.MaxBufferedChunks`. Once that limit is reached, no more chunks are pulled from the lower layer until either a buffered chunk is consumed or the receive timeout is reached.  
+- If the layer that consumes the message is consuming the message body at a rate lower than the rate of incoming chunk messages, the `ChunkingReader` buffers those incoming chunks up to the limit specified by `ChunkingBindingElement.MaxBufferedChunks`. Once that limit is reached, no more chunks are pulled from the lower layer until either a buffered chunk is consumed or the receive timeout is reached.  
   
 ## CommunicationObject Overrides  
   
@@ -265,7 +265,7 @@ interface ITestService
  `OnOpen` calls `innerChannel.Open` to open the inner channel.  
   
 ### OnClose  
- `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped``ManualResetEvent`, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
+ `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped` <xref:System.Threading.ManualResetEvent>, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
   
 ### OnAbort  
  `OnAbort` calls `innerChannel.Abort` to abort the inner channel. If there is a pending `ReceiveChunkLoop` it gets an exception from the pending `innerChannel.Receive` call.  
@@ -303,19 +303,19 @@ interface ITestService
   
 #### To set up, build, and run the sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-5.  Run Service.exe first, then run Client.exe and watch both console windows for output.  
+5. Run Service.exe first, then run Client.exe and watch both console windows for output.  
   
  When running the sample, the following output is expected.  
   
@@ -371,5 +371,3 @@ Service started, press enter to exit
  > Sent chunk 9 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
  > Sent chunk 10 of message 5b226ad5-c088-4988-b737-6a565e0563dd  
 ```  
-  
-## See Also

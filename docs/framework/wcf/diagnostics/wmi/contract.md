@@ -98,5 +98,6 @@ class Contract
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ContractDescription>
+## See also
+
+- <xref:System.ServiceModel.Description.ContractDescription>

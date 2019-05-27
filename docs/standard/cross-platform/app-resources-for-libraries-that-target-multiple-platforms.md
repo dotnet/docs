@@ -100,6 +100,6 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
   
 ## See also
 
-- <xref:System.Resources.ResourceManager>  
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
+- <xref:System.Resources.ResourceManager>
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
 - [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)

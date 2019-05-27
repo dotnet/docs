@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "side-by-side execution, assembly binding redirection"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Enable and Disable Automatic Binding Redirection
 

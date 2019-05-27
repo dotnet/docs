@@ -11,9 +11,9 @@ Windows Communication Foundation (WCF) provides an automatic mechanism for integ
 ## Integrating Enterprise Services with a Service Operation  
  The following code demonstrates an operation, with Allowed transaction flow, that creates a <xref:System.Transactions.TransactionScope> with the <xref:System.Transactions.EnterpriseServicesInteropOption.Full> option. The following conditions apply in this scenario:  
   
--   If the client flows a transaction, the operation, including the call to the Enterprise Services component, is executed within the scope of that transaction. Using <xref:System.Transactions.EnterpriseServicesInteropOption.Full> ensures that the transaction is synchronized with the <xref:System.EnterpriseServices> context, which means that the ambient transaction for <xref:System.Transactions> and the <xref:System.EnterpriseServices> is the same.  
+- If the client flows a transaction, the operation, including the call to the Enterprise Services component, is executed within the scope of that transaction. Using <xref:System.Transactions.EnterpriseServicesInteropOption.Full> ensures that the transaction is synchronized with the <xref:System.EnterpriseServices> context, which means that the ambient transaction for <xref:System.Transactions> and the <xref:System.EnterpriseServices> is the same.  
   
--   If the client does not flow a transaction, setting <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> to `true` creates a new transaction scope for the operation. Similarly, using <xref:System.Transactions.EnterpriseServicesInteropOption.Full> ensures that the operation’s transaction is the same as the transaction used inside the <xref:System.EnterpriseServices> component's context.  
+- If the client does not flow a transaction, setting <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> to `true` creates a new transaction scope for the operation. Similarly, using <xref:System.Transactions.EnterpriseServicesInteropOption.Full> ensures that the operation’s transaction is the same as the transaction used inside the <xref:System.EnterpriseServices> component's context.  
   
  Any additional method calls also occur within the scope of the same operation’s transaction.  
   
@@ -86,6 +86,7 @@ static void Main()
 }  
 ```  
   
-## See Also  
- [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [Integrating with COM Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)
+## See also
+
+- [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+- [Integrating with COM Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)

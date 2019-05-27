@@ -1,15 +1,13 @@
 ---
 title: .NET Microservices. Architecture for Containerized .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices are modular and independently deployable services. Docker containers (for Linux and Windows) simplify deployment and testing by bundling a service and its dependencies into a single unit, which is then run in an isolated environment.
-author: CESARDELATORRE
-ms.author: wiwagn
-ms.date: 08/31/2018
+ms.date: 01/07/2019
 ---
 # .NET Microservices: Architecture for Containerized .NET Applications
 
 ![Book cover](./media/cover-small.png)
 
-**EDITION v2.1.02** - Updated to ASP.NET Core 2.1
+**EDITION v2.2.00** - Updated to ASP.NET Core 2.2
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
 
@@ -27,7 +25,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 ## Introduction
 
-Enterprises are increasingly realizing cost savings, solving deployment problems, and improving DevOps and production operations by using containers. Microsoft has been releasing container innovations for Windows and Linux by creating products like Azure Container Service and Azure Service Fabric, and by partnering with industry leaders like Docker, Mesosphere, and Kubernetes. These products deliver container solutions that help companies build and deploy applications at cloud speed and scale, whatever their choice of platform or tools.
+Enterprises are increasingly realizing cost savings, solving deployment problems, and improving DevOps and production operations by using containers. Microsoft has been releasing container innovations for Windows and Linux by creating products like Azure Kubernetes Service and Azure Service Fabric, and by partnering with industry leaders like Docker, Mesosphere, and Kubernetes. These products deliver container solutions that help companies build and deploy applications at cloud speed and scale, whatever their choice of platform or tools.
 
 Docker is becoming the de facto standard in the container industry, supported by the most significant vendors in the Windows and Linux ecosystems. (Microsoft is one of the main cloud vendors supporting Docker.) In the future, Docker will probably be ubiquitous in any datacenter in the cloud or on-premises.
 
@@ -43,7 +41,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET Core 2.1** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.1. That’s why the book version has also been updated to version **2.1**. 
+This guide has been revised to cover **.NET Core 2.2** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.2. That’s why the book version has also been updated to version **2.2**. 
 
 ## What this guide does not cover
 
@@ -51,8 +49,8 @@ This guide does not focus on the application lifecycle, DevOps, CI/CD pipelines,
 
 ### Additional resources
 
--   **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book)  
-    [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
+- **Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book)  
+    <https://aka.ms/dockerlifecycleebook>
 
 ## Who should use this guide
 
@@ -118,6 +116,8 @@ Participants and reviewers:
 >
 > **Scott Hunter**, Partner Director PM, .NET team, Microsoft
 >
+> **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+>
 > **Dylan Reisenberger**, Architect and Dev Lead at Polly
 >
 > **Steve Smith**, Software Craftsman & Trainer at ASPSmith Ltd.
@@ -141,7 +141,6 @@ Participants and reviewers:
 > **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
 >
 > **Miguel Veloso**, Sr. Consultant at Turing Challenge
-
 
 ## Copyright
 

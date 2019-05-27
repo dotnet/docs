@@ -1,5 +1,5 @@
 ---
-title: "&lt;socket&gt; Element (Network Settings)"
+title: "<socket> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/socket"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "socket element"
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
 ---
-# &lt;socket&gt; Element (Network Settings)
+# \<socket> Element (Network Settings)
 Specifies whether socket operations use completion ports.  
   
  \<configuration>  
@@ -58,9 +58,9 @@ Specifies whether socket operations use completion ports.
   
  This `ipProtectionLevel` attribute setting affects only initial incoming traffic:  
   
--   A TCP server listening for incoming connections on a socket.  
+- A TCP server listening for incoming connections on a socket.  
   
--   A UDP application receiving a packet on a socket.  
+- A UDP application receiving a packet on a socket.  
   
  This configuration setting does not affect already established TCP connections (traffic is unrestricted in both directions) and does not affect an application sending UDP packets.  
   
@@ -97,10 +97,11 @@ Specifies whether socket operations use completion ports.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
-- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>  
+## See also
+
+- <xref:System.Net?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>
+- <xref:System.Net.Sockets?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

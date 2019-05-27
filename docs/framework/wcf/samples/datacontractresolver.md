@@ -146,9 +146,9 @@ class MyDataContractResolver : DataContractResolver
 
 #### To use this sample
 
-1.  Using Visual Studio 2012, open the DCRSample.sln solution file.
+1. Using Visual Studio 2012, open the DCRSample.sln solution file.
 
-2.  To run the solution, press F5
+2. To run the solution, press F5
 
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
@@ -159,5 +159,6 @@ class MyDataContractResolver : DataContractResolver
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\DataContractResolver`  
   
-## See Also  
- [Using a Data Contract Resolver](../../../../docs/framework/wcf/feature-details/using-a-data-contract-resolver.md)
+## See also
+
+- [Using a Data Contract Resolver](../../../../docs/framework/wcf/feature-details/using-a-data-contract-resolver.md)

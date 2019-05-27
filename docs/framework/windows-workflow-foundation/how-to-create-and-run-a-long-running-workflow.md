@@ -7,76 +7,76 @@ dev_langs:
 ms.assetid: c0043c89-2192-43c9-986d-3ecec4dd8c9c
 ---
 # How to: Create and Run a Long Running Workflow
-One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€™s ability to persist and unload idle workflows to a database. The steps in [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md) demonstrated the basics of workflow hosting using a console application. Examples were shown of starting workflows, workflow lifecycle handlers, and resuming bookmarks. In order to demonstrate workflow persistence effectively, a more complex workflow host is required that supports starting and resuming multiple workflow instances. This step in the tutorial demonstrates how to create a Windows form host application that supports starting and resuming multiple workflow instances, workflow persistence, and provides a basis for the advanced features such as tracking and versioning that are demonstrated in subsequent tutorial steps.  
+One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€™s ability to persist and unload idle workflows to a database. The steps in [How to: Run a Workflow](how-to-run-a-workflow.md) demonstrated the basics of workflow hosting using a console application. Examples were shown of starting workflows, workflow lifecycle handlers, and resuming bookmarks. In order to demonstrate workflow persistence effectively, a more complex workflow host is required that supports starting and resuming multiple workflow instances. This step in the tutorial demonstrates how to create a Windows form host application that supports starting and resuming multiple workflow instances, workflow persistence, and provides a basis for the advanced features such as tracking and versioning that are demonstrated in subsequent tutorial steps.  
   
 > [!NOTE]
->  This tutorial step and the subsequent steps use all three workflow types from [How to: Create a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow.md). If you did not complete all three types you can download a completed version of the steps from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+>  This tutorial step and the subsequent steps use all three workflow types from [How to: Create a Workflow](how-to-create-a-workflow.md). If you did not complete all three types you can download a completed version of the steps from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 > [!NOTE]
 >  To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ## In this topic  
   
--   [To create the persistence database](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_CreatePersistenceDatabase)  
+- [To create the persistence database](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreatePersistenceDatabase)  
   
--   [To add the reference to the DurableInstancing assemblies](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_AddReference)  
+- [To add the reference to the DurableInstancing assemblies](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddReference)  
   
--   [To create the workflow host form](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_CreateForm)  
+- [To create the workflow host form](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreateForm)  
   
--   [To add the properties and helper methods of the form](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods)  
+- [To add the properties and helper methods of the form](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods)  
   
--   [To configure the instance store, workflow lifecycle handlers, and extensions](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_ConfigureWorkflowApplication)  
+- [To configure the instance store, workflow lifecycle handlers, and extensions](how-to-create-and-run-a-long-running-workflow.md#BKMK_ConfigureWorkflowApplication)  
   
--   [To enable starting and resuming multiple workflow types](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_WorkflowVersionMap)  
+- [To enable starting and resuming multiple workflow types](how-to-create-and-run-a-long-running-workflow.md#BKMK_WorkflowVersionMap)  
   
--   [To start a new workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_StartWorkflow)  
+- [To start a new workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_StartWorkflow)  
   
--   [To resume a workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_ResumeWorkflow)  
+- [To resume a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_ResumeWorkflow)  
   
--   [To terminate a workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_TerminateWorkflow)  
+- [To terminate a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_TerminateWorkflow)  
   
--   [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_BuildAndRun)  
+- [To build and run the application](how-to-create-and-run-a-long-running-workflow.md#BKMK_BuildAndRun)  
   
-###  <a name="BKMK_CreatePersistenceDatabase"></a> To create the persistence database  
+### <a name="BKMK_CreatePersistenceDatabase"></a> To create the persistence database  
   
-1.  Open SQL Server Management Studio and connect to the local server, for example **.\SQLEXPRESS**. Right-click the **Databases** node on the local server, and select **New Database**. Name the new database **WF45GettingStartedTutorial**, accept all other values, and select **OK**.  
+1. Open SQL Server Management Studio and connect to the local server, for example **.\SQLEXPRESS**. Right-click the **Databases** node on the local server, and select **New Database**. Name the new database **WF45GettingStartedTutorial**, accept all other values, and select **OK**.  
   
     > [!NOTE]
     >  Ensure that you have **Create Database** permission on the local server before creating the database.  
   
-2.  Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`  
+2. Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`  
   
      Select the following two files and click **Open**.  
   
-    -   SqlWorkflowInstanceStoreLogic.sql  
+    - SqlWorkflowInstanceStoreLogic.sql  
   
-    -   SqlWorkflowInstanceStoreSchema.sql  
+    - SqlWorkflowInstanceStoreSchema.sql  
   
-3.  Choose **SqlWorkflowInstanceStoreSchema.sql** from the **Window** menu. Ensure that **WF45GettingStartedTutorial** is selected in the **Available Databases** drop-down and choose **Execute** from the **Query** menu.  
+3. Choose **SqlWorkflowInstanceStoreSchema.sql** from the **Window** menu. Ensure that **WF45GettingStartedTutorial** is selected in the **Available Databases** drop-down and choose **Execute** from the **Query** menu.  
   
-4.  Choose **SqlWorkflowInstanceStoreLogic.sql** from the **Window** menu. Ensure that **WF45GettingStartedTutorial** is selected in the **Available Databases** drop-down and choose **Execute** from the **Query** menu.  
+4. Choose **SqlWorkflowInstanceStoreLogic.sql** from the **Window** menu. Ensure that **WF45GettingStartedTutorial** is selected in the **Available Databases** drop-down and choose **Execute** from the **Query** menu.  
   
     > [!WARNING]
     >  It is important to perform the previous two steps in the correct order. If the queries are executed out of order, errors occur and the persistence database is not configured correctly.  
   
-###  <a name="BKMK_AddReference"></a> To add the reference to the DurableInstancing assemblies  
+### <a name="BKMK_AddReference"></a> To add the reference to the DurableInstancing assemblies  
   
-1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and select **Add Reference**.  
+1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and select **Add Reference**.  
   
-2.  Select **Assemblies** from the **Add Reference** list, and type `DurableInstancing` into the **Search Assemblies** box. This filters the assemblies and makes the desired references easier to select.  
+2. Select **Assemblies** from the **Add Reference** list, and type `DurableInstancing` into the **Search Assemblies** box. This filters the assemblies and makes the desired references easier to select.  
   
-3.  Check the checkbox beside **System.Activities.DurableInstancing** and **System.Runtime.DurableInstancing** from the **Search Results** list, and click **OK**.  
+3. Check the checkbox beside **System.Activities.DurableInstancing** and **System.Runtime.DurableInstancing** from the **Search Results** list, and click **OK**.  
   
-###  <a name="BKMK_CreateForm"></a> To create the workflow host form  
+### <a name="BKMK_CreateForm"></a> To create the workflow host form  
   
 > [!NOTE]
->  The steps in this procedure describe how to add and configure the form manually. If desired, you can download the solution files for the tutorial and add the completed form to the project. To download the tutorial files, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976). Once the files are downloaded, right-click **NumberGuessWorkflowHost** and choose **Add Reference**. Add a reference to **System.Windows.Forms** and **System.Drawing**. These references are added automatically if you add a new form from the **Add**, **New Item** menu, but must be added manually when importing a form. Once the references are added, right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Existing Item**. Browse to the `Form` folder in the project files, select **WorkflowHostForm.cs** (or **WorkflowHostForm.vb**), and click **Add**. If you choose to import the form, then you can skip down to the next section, [To add the properties and helper methods of the form](../../../docs/framework/windows-workflow-foundation/how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods).  
+>  The steps in this procedure describe how to add and configure the form manually. If desired, you can download the solution files for the tutorial and add the completed form to the project. To download the tutorial files, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976). Once the files are downloaded, right-click **NumberGuessWorkflowHost** and choose **Add Reference**. Add a reference to **System.Windows.Forms** and **System.Drawing**. These references are added automatically if you add a new form from the **Add**, **New Item** menu, but must be added manually when importing a form. Once the references are added, right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Existing Item**. Browse to the `Form` folder in the project files, select **WorkflowHostForm.cs** (or **WorkflowHostForm.vb**), and click **Add**. If you choose to import the form, then you can skip down to the next section, [To add the properties and helper methods of the form](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods).  
   
-1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **New Item**.  
+1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **New Item**.  
   
-2.  In the **Installed** templates list, choose **Windows Form**, type `WorkflowHostForm` in the **Name** box, and click **Add**.  
+2. In the **Installed** templates list, choose **Windows Form**, type `WorkflowHostForm` in the **Name** box, and click **Add**.  
   
-3.  Configure the following properties on the form.  
+3. Configure the following properties on the form.  
   
     |Property|Value|  
     |--------------|-----------|  
@@ -84,7 +84,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     |MaximizeBox|False|  
     |Size|400, 420|  
   
-4.  Add the following controls to the form in the order specified and configure the properties as directed.  
+4. Add the following controls to the form in the order specified and configure the properties as directed.  
   
     |Control|Property: Value|  
     |-------------|---------------------|  
@@ -109,18 +109,18 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     |**Button**|Name: QuitGame<br /><br /> Location: 274, 42<br /><br /> Size: 75, 23<br /><br /> Text: Quit|  
     |**TextBox**|Name: WorkflowStatus<br /><br /> Location: 10, 73<br /><br /> Multiline: True<br /><br /> ReadOnly: True<br /><br /> ScrollBars: Vertical<br /><br /> Size: 338, 208|  
   
-5.  Set the **AcceptButton** property of the form to **EnterGuess**.  
+5. Set the **AcceptButton** property of the form to **EnterGuess**.  
   
  The following example illustrates the completed form.  
   
- ![WF45 Getting Started Tutorial Workflow Host Form](../../../docs/framework/windows-workflow-foundation/media/wf45gettingstartedtutorialworkflowhostform.png "WF45GettingStartedTutorialWorkflowHostForm")  
+ ![Screenshot of a Windows Workflow Foundation Workflow Host Form.](./media/how-to-create-and-run-a-long-running-workflow/windows-workflow-foundation-workflowhostform.png)  
   
-###  <a name="BKMK_AddHelperMethods"></a> To add the properties and helper methods of the form  
+### <a name="BKMK_AddHelperMethods"></a> To add the properties and helper methods of the form  
  The steps in this section add properties and helper methods to the form class that configure the UI of the form to support running and resuming number guess workflows.  
   
-1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
+1. Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
-2.  Add the following `using` (or `Imports`) statements at the top of the file with the other `using` (or `Imports`) statements.  
+2. Add the following `using` (or `Imports`) statements at the top of the file with the other `using` (or `Imports`) statements.  
   
     ```vb  
     Imports System.Windows.Forms  
@@ -138,7 +138,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     using System.IO;  
     ```  
   
-3.  Add the following member declarations to the **WorkflowHostForm** class.  
+3. Add the following member declarations to the **WorkflowHostForm** class.  
   
     ```vb  
     Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI"  
@@ -155,7 +155,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     > [!NOTE]
     >  If your connection string is different, update `connectionString` to refer to your database.  
   
-4.  Add a `WorkflowInstanceId` property to the `WorkflowFormHost` class.  
+4. Add a `WorkflowInstanceId` property to the `WorkflowFormHost` class.  
   
     ```vb  
     Public ReadOnly Property WorkflowInstanceId() As Guid  
@@ -181,7 +181,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
      The `InstanceId` combo box displays a list of persisted workflow instance ids, and the `WorkflowInstanceId` property returns the currently selected workflow.  
   
-5.  Add a handler for the form `Load` event. To add the handler, switch to **Design View** for the form, click the **Events** icon at the top of the **Properties** window, and double-click **Load**.  
+5. Add a handler for the form `Load` event. To add the handler, switch to **Design View** for the form, click the **Events** icon at the top of the **Properties** window, and double-click **Load**.  
   
     ```vb  
     Private Sub WorkflowHostForm_Load(sender As Object, e As EventArgs) Handles Me.Load  
@@ -196,7 +196,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-6.  Add the following code to `WorkflowHostForm_Load`.  
+6. Add the following code to `WorkflowHostForm_Load`.  
   
     ```vb  
     'Initialize the store and configure it so that it can be used for  
@@ -226,7 +226,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
      When the form loads, the `SqlWorkflowInstanceStore` is configured, the range and workflow type combo boxes are set to default values, and the persisted workflow instances are added to the `InstanceId` combo box.  
   
-7.  Add a `SelectedIndexChanged` handler for `InstanceId`. To add the handler, switch to **Design View** for the form, select the `InstanceId` combo box, click the **Events** icon at the top of the **Properties** window, and double-click **SelectedIndexChanged**.  
+7. Add a `SelectedIndexChanged` handler for `InstanceId`. To add the handler, switch to **Design View** for the form, select the `InstanceId` combo box, click the **Events** icon at the top of the **Properties** window, and double-click **SelectedIndexChanged**.  
   
     ```vb  
     Private Sub InstanceId_SelectedIndexChanged(sender As Object, e As EventArgs) Handles InstanceId.SelectedIndexChanged  
@@ -241,7 +241,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-8.  Add the following code to `InstanceId_SelectedIndexChanged`. Whenever the user selects a workflow by using the combo box this handler updates the status window.  
+8. Add the following code to `InstanceId_SelectedIndexChanged`. Whenever the user selects a workflow by using the combo box this handler updates the status window.  
   
     ```vb  
     If InstanceId.SelectedIndex = -1 Then  
@@ -416,9 +416,9 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-###  <a name="BKMK_ConfigureWorkflowApplication"></a> To configure the instance store, workflow lifecycle handlers, and extensions  
+### <a name="BKMK_ConfigureWorkflowApplication"></a> To configure the instance store, workflow lifecycle handlers, and extensions  
   
-1.  Add a `ConfigureWorkflowApplication` method to the form class.  
+1. Add a `ConfigureWorkflowApplication` method to the form class.  
   
     ```vb  
     Private Sub ConfigureWorkflowApplication(wfApp As WorkflowApplication)  
@@ -434,7 +434,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
      This method configures the `WorkflowApplication`, adds the desired extensions, and adds handlers for the workflow lifecycle events.  
   
-2.  In `ConfigureWorkflowApplication`, specify the `SqlWorkflowInstanceStore` for the `WorkflowApplication`.  
+2. In `ConfigureWorkflowApplication`, specify the `SqlWorkflowInstanceStore` for the `WorkflowApplication`.  
   
     ```vb  
     'Configure the persistence store.  
@@ -446,7 +446,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     wfApp.InstanceStore = store;  
     ```  
   
-3.  Next, create a `StringWriter` instance and add it to the `Extensions` collection of the `WorkflowApplication`. When a `StringWriter` is added to the extensions it captures all `WriteLine` activity output. When the workflow becomes idle, the `WriteLine` output can be extracted from the `StringWriter` and displayed on the form.  
+3. Next, create a `StringWriter` instance and add it to the `Extensions` collection of the `WorkflowApplication`. When a `StringWriter` is added to the extensions it captures all `WriteLine` activity output. When the workflow becomes idle, the `WriteLine` output can be extracted from the `StringWriter` and displayed on the form.  
   
     ```vb  
     'Add a StringWriter to the extensions. This captures the output  
@@ -462,7 +462,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     wfApp.Extensions.Add(sw);  
     ```  
   
-4.  Add the following handler for the `Completed` event. When a workflow successfully completes, the number of turns taken to guess the number is displayed to the status window. If the workflow terminates, the exception information that caused the termination is displayed. At the end of the handler the `GameOver` method is called, which removes the completed workflow from the workflow list.  
+4. Add the following handler for the `Completed` event. When a workflow successfully completes, the number of turns taken to guess the number is displayed to the status window. If the workflow terminates, the exception information that caused the termination is displayed. At the end of the handler the `GameOver` method is called, which removes the completed workflow from the workflow list.  
   
     ```vb  
     wfApp.Completed = _  
@@ -503,7 +503,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     };  
     ```  
   
-5.  Add the following `Aborted` and `OnUnhandledException` handlers. The `GameOver` method is not called from the `Aborted` handler because when a workflow instance is aborted, it does not terminate, and it is possible to resume the instance at a later time.  
+5. Add the following `Aborted` and `OnUnhandledException` handlers. The `GameOver` method is not called from the `Aborted` handler because when a workflow instance is aborted, it does not terminate, and it is possible to resume the instance at a later time.  
   
     ```vb  
     wfApp.Aborted = _  
@@ -541,7 +541,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     };  
     ```  
   
-6.  Add the following `PersistableIdle` handler. This handler retrieves the `StringWriter` extension that was added, extracts the output from the `WriteLine` activities, and displays it in the status window.  
+6. Add the following `PersistableIdle` handler. This handler retrieves the `StringWriter` extension that was added, extracts the output from the `WriteLine` activities, and displays it in the status window.  
   
     ```vb  
     wfApp.PersistableIdle = _  
@@ -685,12 +685,12 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-###  <a name="BKMK_WorkflowVersionMap"></a> To enable starting and resuming multiple workflow types  
- In order to resume a workflow instance, the host has to provide the workflow definition. In this tutorial there are three workflow types, and subsequent tutorial steps introduce multiple versions of these types. `WorkflowIdentity` provides a way for a host application to associate identifying information with a persisted workflow instance. The steps in this section demonstrate how to create a utility class to assist with mapping the workflow identity from a persisted workflow instance to the corresponding workflow definition. For more information about `WorkflowIdentity` and versioning, see [Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
+### <a name="BKMK_WorkflowVersionMap"></a> To enable starting and resuming multiple workflow types  
+ In order to resume a workflow instance, the host has to provide the workflow definition. In this tutorial there are three workflow types, and subsequent tutorial steps introduce multiple versions of these types. `WorkflowIdentity` provides a way for a host application to associate identifying information with a persisted workflow instance. The steps in this section demonstrate how to create a utility class to assist with mapping the workflow identity from a persisted workflow instance to the corresponding workflow definition. For more information about `WorkflowIdentity` and versioning, see [Using WorkflowIdentity and Versioning](using-workflowidentity-and-versioning.md).  
   
-1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Class**. Type `WorkflowVersionMap` into the **Name** box and click **Add**.  
+1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Class**. Type `WorkflowVersionMap` into the **Name** box and click **Add**.  
   
-2.  Add the following `using` or `Imports` statements at the top of the file with the other `using` or `Imports` statements.  
+2. Add the following `using` or `Imports` statements at the top of the file with the other `using` or `Imports` statements.  
   
     ```vb  
     Imports NumberGuessWorkflowActivities  
@@ -702,7 +702,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     using System.Activities;  
     ```  
   
-3.  Replace the `WorkflowVersionMap` class declaration with the following declaration.  
+3. Replace the `WorkflowVersionMap` class declaration with the following declaration.  
   
     ```vb  
     Public Module WorkflowVersionMap  
@@ -802,9 +802,9 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
   
      `WorkflowVersionMap` contains three workflow identities that map to the three workflow definitions from this tutorial and is used in the following sections when workflows are started and resumed.  
   
-###  <a name="BKMK_StartWorkflow"></a> To start a new workflow  
+### <a name="BKMK_StartWorkflow"></a> To start a new workflow  
   
-1.  Add a `Click` handler for `NewGame`. To add the handler, switch to **Design View** for the form, and double-click `NewGame`. A `NewGame_Click` handler is added and the view switches to code view for the form. Whenever the user clicks this button a new workflow is started.  
+1. Add a `Click` handler for `NewGame`. To add the handler, switch to **Design View** for the form, and double-click `NewGame`. A `NewGame_Click` handler is added and the view switches to code view for the form. Whenever the user clicks this button a new workflow is started.  
   
     ```vb  
     Private Sub NewGame_Click(sender As Object, e As EventArgs) Handles NewGame.Click  
@@ -819,7 +819,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-2.  Add the following code to the click handler. This code creates a dictionary of input arguments for the workflow, keyed by argument name. This dictionary has one entry that contains the range of the randomly generated number retrieved from the range combo box.  
+2. Add the following code to the click handler. This code creates a dictionary of input arguments for the workflow, keyed by argument name. This dictionary has one entry that contains the range of the randomly generated number retrieved from the range combo box.  
   
     ```vb  
     Dim inputs As New Dictionary(Of String, Object)()  
@@ -831,7 +831,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     inputs.Add("MaxNumber", Convert.ToInt32(NumberRange.SelectedItem));  
     ```  
   
-3.  Next, add the following code that starts the workflow. The `WorkflowIdentity` and workflow definition corresponding to the type of workflow selected are retrieved using the `WorkflowVersionMap` helper class. Next, a new `WorkflowApplication` instance is created using the workflow definition, `WorkflowIdentity`, and dictionary of input arguments.  
+3. Next, add the following code that starts the workflow. The `WorkflowIdentity` and workflow definition corresponding to the type of workflow selected are retrieved using the `WorkflowVersionMap` helper class. Next, a new `WorkflowApplication` instance is created using the workflow definition, `WorkflowIdentity`, and dictionary of input arguments.  
   
     ```vb  
     Dim identity As WorkflowIdentity = Nothing  
@@ -873,7 +873,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     WorkflowApplication wfApp = new WorkflowApplication(wf, inputs, identity);  
     ```  
   
-4.  Next, add the following code which adds the workflow to the workflow list and displays the workflow's version information on the form.  
+4. Next, add the following code which adds the workflow to the workflow list and displays the workflow's version information on the form.  
   
     ```vb  
     'Add the workflow to the list and display the version information.  
@@ -891,7 +891,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     WorkflowStarting = false;  
     ```  
   
-5.  Call `ConfigureWorkflowApplication` to configure the instance store, extensions, and workflow lifecycle handlers for this `WorkflowApplication` instance.  
+5. Call `ConfigureWorkflowApplication` to configure the instance store, extensions, and workflow lifecycle handlers for this `WorkflowApplication` instance.  
   
     ```vb  
     'Configure the instance store, extensions, and   
@@ -905,7 +905,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     ConfigureWorkflowApplication(wfApp);  
     ```  
   
-6.  Finally, call `Run`.  
+6. Finally, call `Run`.  
   
     ```vb  
     'Start the workflow.  
@@ -997,9 +997,9 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-###  <a name="BKMK_ResumeWorkflow"></a> To resume a workflow  
+### <a name="BKMK_ResumeWorkflow"></a> To resume a workflow  
   
-1.  Add a `Click` handler for `EnterGuess`. To add the handler, switch to **Design View** for the form, and double-click `EnterGuess`. Whenever the user clicks this button a workflow is resumed.  
+1. Add a `Click` handler for `EnterGuess`. To add the handler, switch to **Design View** for the form, and double-click `EnterGuess`. Whenever the user clicks this button a workflow is resumed.  
   
     ```vb  
     Private Sub EnterGuess_Click(sender As Object, e As EventArgs) Handles EnterGuess.Click  
@@ -1014,7 +1014,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-2.  Add the following code to ensure that a workflow is selected in the workflow list, and that the user's guess is valid.  
+2. Add the following code to ensure that a workflow is selected in the workflow list, and that the user's guess is valid.  
   
     ```vb  
     If WorkflowInstanceId = Guid.Empty Then  
@@ -1048,7 +1048,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-3.  Next, retrieve the `WorkflowApplicationInstance` of the persisted workflow instance. A `WorkflowApplicationInstance` represents a persisted workflow instance that has not yet been associated with a workflow definition. The `DefinitionIdentity` of the `WorkflowApplicationInstance` contains the `WorkflowIdentity` of the persisted workflow instance. In this tutorial, the `WorkflowVersionMap` utility class is used to map the `WorkflowIdentity` to the correct workflow definition. Once the workflow definition is retrieved, a `WorkflowApplication` is created, using the correct workflow definition.  
+3. Next, retrieve the `WorkflowApplicationInstance` of the persisted workflow instance. A `WorkflowApplicationInstance` represents a persisted workflow instance that has not yet been associated with a workflow definition. The `DefinitionIdentity` of the `WorkflowApplicationInstance` contains the `WorkflowIdentity` of the persisted workflow instance. In this tutorial, the `WorkflowVersionMap` utility class is used to map the `WorkflowIdentity` to the correct workflow definition. Once the workflow definition is retrieved, a `WorkflowApplication` is created, using the correct workflow definition.  
   
     ```vb  
     Dim instance As WorkflowApplicationInstance = _  
@@ -1078,7 +1078,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
         new WorkflowApplication(wf, instance.DefinitionIdentity);  
     ```  
   
-4.  Once the `WorkflowApplication` is created, configure the instance store, workflow lifecycle handlers, and extensions by calling `ConfigureWorkflowApplication`. These steps must be done every time a new `WorkflowApplication` is created, and they must be done before the workflow instance is loaded into the `WorkflowApplication`. After the workflow is loaded, it is resumed with the user's guess.  
+4. Once the `WorkflowApplication` is created, configure the instance store, workflow lifecycle handlers, and extensions by calling `ConfigureWorkflowApplication`. These steps must be done every time a new `WorkflowApplication` is created, and they must be done before the workflow instance is loaded into the `WorkflowApplication`. After the workflow is loaded, it is resumed with the user's guess.  
   
     ```vb  
     'Configure the extensions and lifecycle handlers.  
@@ -1106,7 +1106,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     wfApp.ResumeBookmark("EnterGuess", guess);  
     ```  
   
-5.  Finally, clear the guess textbox and prepare the form to accept another guess.  
+5. Finally, clear the guess textbox and prepare the form to accept another guess.  
   
     ```vb  
     'Clear the Guess textbox.  
@@ -1213,9 +1213,9 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-###  <a name="BKMK_TerminateWorkflow"></a> To terminate a workflow  
+### <a name="BKMK_TerminateWorkflow"></a> To terminate a workflow  
   
-1.  Add a `Click` handler for `QuitGame`. To add the handler, switch to **Design View** for the form, and double-click `QuitGame`. Whenever the user clicks this button the currently selected workflow is terminated.  
+1. Add a `Click` handler for `QuitGame`. To add the handler, switch to **Design View** for the form, and double-click `QuitGame`. Whenever the user clicks this button the currently selected workflow is terminated.  
   
     ```vb  
     Private Sub QuitGame_Click(sender As Object, e As EventArgs) Handles QuitGame.Click  
@@ -1230,7 +1230,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-2.  Add the following code to the `QuitGame_Click` handler. This code first checks to ensure that a workflow is selected in the workflow list. Then it loads the persisted instance into a `WorkflowApplicationInstance`, uses the `DefinitionIdentity` to determine the correct workflow definition, and then initializes the `WorkflowApplication`. Next the extensions and workflow lifecycle handlers are configured with a call to `ConfigureWorkflowApplication`. Once the `WorkflowApplication` is configured, it is loaded, and then `Terminate` is called.  
+2. Add the following code to the `QuitGame_Click` handler. This code first checks to ensure that a workflow is selected in the workflow list. Then it loads the persisted instance into a `WorkflowApplicationInstance`, uses the `DefinitionIdentity` to determine the correct workflow definition, and then initializes the `WorkflowApplication`. Next the extensions and workflow lifecycle handlers are configured with a call to `ConfigureWorkflowApplication`. Once the `WorkflowApplication` is configured, it is loaded, and then `Terminate` is called.  
   
     ```vb  
     If WorkflowInstanceId = Guid.Empty Then  
@@ -1287,11 +1287,11 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     wfApp.Terminate("User resigns.");  
     ```  
   
-###  <a name="BKMK_BuildAndRun"></a> To build and run the application  
+### <a name="BKMK_BuildAndRun"></a> To build and run the application  
   
-1.  Double-click **Program.cs** (or **Module1.vb**) in **Solution Explorer** to display the code.  
+1. Double-click **Program.cs** (or **Module1.vb**) in **Solution Explorer** to display the code.  
   
-2.  Add the following `using` (or `Imports`) statement at the top of the file with the other `using` (or `Imports`) statements.  
+2. Add the following `using` (or `Imports`) statement at the top of the file with the other `using` (or `Imports`) statements.  
   
     ```vb  
     Imports System.Windows.Forms  
@@ -1301,7 +1301,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     using System.Windows.Forms;  
     ```  
   
-3.  Remove or comment out the existing workflow hosting code from [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md), and replace it with the following code.  
+3. Remove or comment out the existing workflow hosting code from [How to: Run a Workflow](how-to-run-a-workflow.md), and replace it with the following code.  
   
     ```vb  
     Sub Main()  
@@ -1318,14 +1318,14 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     }  
     ```  
   
-4.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Properties**. In the **Application** tab, specify **Windows Application** for the **Output type**. This step is optional, but if it is not followed the console window is displayed in addition to the form.  
+4. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Properties**. In the **Application** tab, specify **Windows Application** for the **Output type**. This step is optional, but if it is not followed the console window is displayed in addition to the form.  
   
-5.  Press Ctrl+Shift+B to build the application.  
+5. Press Ctrl+Shift+B to build the application.  
   
-6.  Ensure that **NumberGuessWorkflowHost** is set as the startup application, and press Ctrl+F5 to start the application.  
+6. Ensure that **NumberGuessWorkflowHost** is set as the startup application, and press Ctrl+F5 to start the application.  
   
-7.  Select a range for the guessing game and the type of workflow to start, and click **New Game**. Enter a guess in the **Guess** box and click **Go** to submit your guess. Note that the output from the `WriteLine` activities is displayed on the form.  
+7. Select a range for the guessing game and the type of workflow to start, and click **New Game**. Enter a guess in the **Guess** box and click **Go** to submit your guess. Note that the output from the `WriteLine` activities is displayed on the form.  
   
-8.  Start several workflows using different workflow types and number ranges, enter some guesses, and switch between the workflows by selecting from the **Workflow Instance Id** list.  
+8. Start several workflows using different workflow types and number ranges, enter some guesses, and switch between the workflows by selecting from the **Workflow Instance Id** list.  
   
-     Note that when you switch to a new workflow, the previous guesses and progress of the workflow are not displayed in the status window. The reason the status is not available is because it is not captured and saved anywhere. In the next step of the tutorial, [How to: Create a Custom Tracking Participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md), you create a custom tracking participant that saves this information.
+     Note that when you switch to a new workflow, the previous guesses and progress of the workflow are not displayed in the status window. The reason the status is not available is because it is not captured and saved anywhere. In the next step of the tutorial, [How to: Create a Custom Tracking Participant](how-to-create-a-custom-tracking-participant.md), you create a custom tracking participant that saves this information.

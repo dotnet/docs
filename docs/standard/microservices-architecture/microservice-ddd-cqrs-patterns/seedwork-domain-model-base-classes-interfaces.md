@@ -1,8 +1,6 @@
 ---
 title: Seedwork (reusable base classes and interfaces for your domain model)
 description: .NET Microservices Architecture for Containerized .NET Applications | Use the seedwork concept as a starting point to start implementation for a DDD-oriented domain model.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/08/2018
 ---
 # Seedwork (reusable base classes and interfaces for your domain model)
@@ -19,7 +17,7 @@ This is the type of copy and paste reuse that many developers share between proj
 
 ## The custom Entity base class
 
-The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/equality-comparison-operator), a domain event list per entity, etc.
+The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](~/docs/csharp/language-reference/operators/equality-operators.md), a domain event list per entity, etc.
 
 ```csharp
 // COMPATIBLE WITH ENTITY FRAMEWORK CORE (1.1 and later)
@@ -134,7 +132,7 @@ public interface IRepository<T> where T : IAggregateRoot
 ## Additional resources
 
 - **Martin Fowler. Separated Interface.** \
-  [*https://www.martinfowler.com/eaaCatalog/separatedInterface.html*](https://www.martinfowler.com/eaaCatalog/separatedInterface.html)
+  <https://www.martinfowler.com/eaaCatalog/separatedInterface.html>
 
 >[!div class="step-by-step"]
 >[Previous](net-core-microservice-domain-model.md)

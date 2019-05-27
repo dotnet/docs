@@ -1,8 +1,6 @@
 ---
 title: Communication in a microservice architecture
 description: Explore different ways of communication between microservices, understanding the implications of synchronous and asynchronous ways.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Communication in a microservice architecture
@@ -84,10 +82,10 @@ There's additional value when using HTTP REST services as your interface definit
 ### Additional resources
 
 - **Martin Fowler. Richardson Maturity Model** A description of the REST model. \
-  [*https://martinfowler.com/articles/richardsonMaturityModel.html*](https://martinfowler.com/articles/richardsonMaturityModel.html)
+  <https://martinfowler.com/articles/richardsonMaturityModel.html>
 
 - **Swagger** The official site. \
-  [*https://swagger.io/*](https://swagger.io/)
+  <https://swagger.io/>
 
 ### Push and real-time communication based on HTTP
 

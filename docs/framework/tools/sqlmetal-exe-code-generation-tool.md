@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
 ---
 # SqlMetal.exe (Code Generation Tool)
-The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
+The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the .NET Framework. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
   
--   From a database, generate source code and mapping attributes or a mapping file.  
+- From a database, generate source code and mapping attributes or a mapping file.  
   
--   From a database, generate an intermediate database markup language (.dbml) file for customization.  
+- From a database, generate an intermediate database markup language (.dbml) file for customization.  
   
--   From a .dbml file, generate code and mapping attributes or a mapping file.  
+- From a .dbml file, generate code and mapping attributes or a mapping file.  
   
  This tool is automatically installed with Visual Studio. By default, the file is located at `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. If you do not install Visual Studio, you can also get the SQLMetal file by downloading the [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
   
 > [!NOTE]
 >  Developers who use Visual Studio can also use the [!INCLUDE[vs_ordesigner_long](../../../includes/vs-ordesigner-long-md.md)] to generate entity classes. The command-line approach scales well for large databases. Because SqlMetal is a command-line tool, you can use it in a build process.  
   
- To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).At the command prompt, type the following:  
+ To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).At the command prompt, type the following:  
   
 ## Syntax  
   
@@ -82,9 +82,9 @@ sqlmetal [options] [<input file>]
 ## Remarks  
  SqlMetal functionality actually involves two steps:  
   
--   Extracting the metadata of the database into a .dbml file.  
+- Extracting the metadata of the database into a .dbml file.  
   
--   Generating a code output file.  
+- Generating a code output file.  
   
      By using the appropriate command-line options, you can produce Visual Basic or C# source code, or you can produce an XML mapping file.  
   
@@ -94,9 +94,9 @@ sqlmetal [options] [<input file>]
   
  [!INCLUDE[sqprsqext](../../../includes/sqprsqext-md.md)] throws an exception if one or more of the following conditions are true:  
   
--   SqlMetal tries to extract a stored procedure that calls itself.  
+- SqlMetal tries to extract a stored procedure that calls itself.  
   
--   The nesting level of a stored procedure, function, or view exceeds 32.  
+- The nesting level of a stored procedure, function, or view exceeds 32.  
   
      SqlMetal catches this exception and reports it as a warning.  
   
@@ -126,7 +126,8 @@ sqlmetal [options] [<input file>]
 > [!NOTE]
 >  When you use the **/pluralize** option with the Northwind sample database, note the following behavior. When SqlMetal makes row-type names for tables, the table names are singular. When it makes <xref:System.Data.Linq.DataContext> properties for tables, the table names are plural. Coincidentally, the tables in the Northwind sample database are already plural. Therefore, you do not see that part working. Although it is common practice to name database tables singular, it is also a common practice in .NET to name collections plural.  
   
-## See Also  
- [How to: Generate the Object Model in Visual Basic or C#](../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)  
- [Code Generation in LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
- [External Mapping](../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+## See also
+
+- [How to: Generate the Object Model in Visual Basic or C#](../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
+- [Code Generation in LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+- [External Mapping](../../../docs/framework/data/adonet/sql/linq/external-mapping.md)

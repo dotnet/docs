@@ -33,15 +33,15 @@ Enforces strict type semantics to restrict implicit type conversions.
   
 ### To set -optionstrict in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties.**   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties.**   
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Modify the value in the **Option Strict** box.  
+3. Modify the value in the **Option Strict** box.  
   
 ### To set -optionstrict programmatically  
   
--   See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).  
+- See [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).  
   
 ## Example  
  The following code compiles `Test.vb` using strict type semantics.  
@@ -50,13 +50,14 @@ Enforces strict type semantics to restrict implicit type conversions.
 vbc -optionstrict+ test.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md)  
- [-warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [-nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md)
+- [-warnaserror (Visual Basic)](../../../visual-basic/reference/command-line-compiler/warnaserror.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

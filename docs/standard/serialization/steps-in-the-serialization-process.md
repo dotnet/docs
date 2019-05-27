@@ -21,5 +21,5 @@ When the <xref:System.Runtime.Serialization.Formatter.Serialize*> method is call
   
 ## See also
 
-- [Binary Serialization](binary-serialization.md)  
+- [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)

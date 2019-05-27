@@ -18,7 +18,7 @@ ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
 
 The `-` operator is supported by the built-in numeric types and [delegate](../keywords/delegate.md) types.
 
-For information about the arithmetic `-` operator, see the [Unary plus and minus operators](arithmetic-operators.md#unary-plus-and-minus-operators) and [Subtraction operator -](arithmetic-operators.md#subtraction-operator-) sections of the [Arithmetic operators](arithmetic-operators.md) article.
+For information about the arithmetic `-` operator, see the [Unary plus and minus operators](arithmetic-operators.md#unary-plus-and-minus-operators) and [Subtraction operator -](arithmetic-operators.md#subtraction-operator--) sections of the [Arithmetic operators](arithmetic-operators.md) article.
 
 ## Delegate removal
 

@@ -250,7 +250,17 @@
       <Docs>
         <summary>This method is for a custom implementation specific to the file format. This method retrieves the actual parts from the underlying <see cref="T:System.IO.Packaging.ZipPackage" />.</summary>
         <returns>An array of <see cref="T:System.IO.Packaging.ZipPackagePart" /> objects.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+Some or all of the parts may be interleaved. The Part object for an interleaved part encapsulates the Uri of the proper part name and the ZipFileInfo of the initial piece. This function does not go through the extra work of checking piece naming validity throughout the package. 
+            
+This means that interleaved parts without an initial piece will be silently ignored. Other naming anomalies are caught at the stream level when an I/O operation involves an anomalous or missing piece.
+            
+This function reads directly from the underlying IO layer and is supposed to be called just once in the lifetime of a package (at initialization time).
+            
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

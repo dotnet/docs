@@ -208,10 +208,10 @@
         <Parameter Name="readerOptions" Type="System.IO.Pipelines.StreamPipeReaderOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="readerOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The stream that the pipe reader will wrap.</param>
+        <param name="readerOptions">The options to configure the pipe reader.</param>
+        <summary>Creates a <see cref="T:System.IO.Pipelines.PipeReader" /> wrapping the specified <see cref="T:System.IO.Stream" />.</summary>
+        <returns>A <see cref="T:System.IO.Pipelines.PipeReader" /> that wraps the <see cref="T:System.IO.Stream" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

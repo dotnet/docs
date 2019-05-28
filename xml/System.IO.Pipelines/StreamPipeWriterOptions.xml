@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a set of options for controlling the creation of the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,9 +34,9 @@
         <Parameter Name="minimumBufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pool">To be added.</param>
-        <param name="minimumBufferSize">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pool">A memory pool from which memory will be rented.</param>
+        <param name="minimumBufferSize">The desired minimum buffer size that will be used to rent memory from the pool.</param>
+        <summary>Creates a new instance of <see cref="T:System.IO.Pipelines.StreamPipeWriterOptions" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,8 +56,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the minimum buffer size to use when renting memory from the <see cref="P:System.IO.Pipelines.StreamPipeWriterOptions.Pool" />.</summary>
+        <value>An integer representing the minimum buffer size.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
         <ReturnType>System.Buffers.MemoryPool&lt;System.Byte&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Buffers.MemoryPool`1" /> to use when allocating memory.</summary>
+        <value>A memory pool instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

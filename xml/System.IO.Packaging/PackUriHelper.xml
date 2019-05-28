@@ -839,10 +839,16 @@
       </Parameters>
       <Docs>
         <param name="partUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to check for a <see cref="T:System.IO.Packaging.PackageRelationship" /> part.</param>
-        <summary>Returns a value that indicates whether a specified [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] is the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of a <see cref="T:System.IO.Packaging.PackageRelationship" /> part.</summary>
+        <summary>Returns a value that indicates whether a specified URI is the URI of a <see cref="T:System.IO.Packaging.PackageRelationship" /> part.</summary>
         <returns>
           <see langword="true" /> if <paramref name="partUri" /> identifies a <see cref="T:System.IO.Packaging.PackageRelationship" /> part; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+This method does not inspect the part contents; it is based solely on the name.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="partUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">

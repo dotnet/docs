@@ -64,16 +64,16 @@ Policy
 
 ## Additional resources
 
-- **Retry pattern**\
+- **Retry pattern**
   [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
-- **Polly and HttpClientFactory**\
+- **Polly and HttpClientFactory**
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>
 
-- **Polly (.NET resilience and transient-fault-handling library)**\
+- **Polly (.NET resilience and transient-fault-handling library)**
   <https://github.com/App-vNext/Polly>
 
-- **Marc Brooker. Jitter: Making Things Better With Randomness**\
+- **Marc Brooker. Jitter: Making Things Better With Randomness**
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]

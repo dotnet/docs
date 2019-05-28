@@ -1,7 +1,6 @@
 ---
 title: "Operator Keywords - C# Reference"
 ms.custom: seodec18
-
 ms.date: 12/10/2018
 helpviewer_keywords: 
   - "keywords [C#], operators"
@@ -31,18 +30,6 @@ Used to perform miscellaneous actions such as creating objects, checking the run
 - [sizeof](sizeof.md) Obtains the size of an unmanaged type.  
 
 - [typeof](typeof.md) Obtains the <xref:System.Type?displayProperty=nameWithType> object for a type.  
-
-- [true](true.md)  
-
-  - [true Operator](true-false-operators.md) Returns the [bool](bool.md) value `true` to indicate that the operand is definitely true.
-
-  - [true Literal](true-literal.md) Represents the [bool](bool.md) value `true`.
-
-- [false](false.md)  
-
-  - [false Operator](true-false-operators.md) Returns the [bool](bool.md) value `true` to indicate that the operand is definitely false.
-
-  - [false Literal](false-literal.md) Represents the [bool](bool.md) value `false`.
 
 - [stackalloc](stackalloc.md) Allocates a block of memory on the stack.  
 

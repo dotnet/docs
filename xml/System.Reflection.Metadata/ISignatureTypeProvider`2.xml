@@ -207,8 +207,7 @@
         <summary>Gets the type symbol for a type specification.</summary>
         <returns>The type symbol for the type specification.</returns>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[
+          <format type="text/markdown"><![CDATA[
 ## Remarks
 When the signature comes from a WinMD file, additional processing is needed to determine whether the target type is a value type or a reference type.
           ]]></format>

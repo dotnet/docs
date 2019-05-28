@@ -10,84 +10,98 @@ ms.custom: tutorial
 
 Intro para about scenario and using Model Builder to solve problem
 
-## What is the ML.NET Command-line Interface (CLI)?
+## Create Project
 
-You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) for generating good quality ML.NET models and source code based on your training dataset.
+- **File** > **New Project**
+- In New Project Prompt, **Visual C#** > **.NET Core** node and select *Console App*. In the *Name* field, type *MLModelBuilderTest*.
+- Download data to *Data* folder. Then, right-click data file, select *Properties*. Set the Copy to Output Directory option to *Copy if newer*.
+- Instructions to install **Microsoft.ML** NuGet package.
 
-As shown in the figure below, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model". 
+## Build Model
 
-![image](media/automate-training-with-cli/cli-high-level-process.png "AutoML engine working inside the ML.NET CLI")
+- Right-click *MLModelBuilderTest* project, then **Add** > **Machine Learning**.
 
-You can generate those assets from your own datasets without coding by yourself, so it also improves your productivity even if you already know ML.NET.
+## Select Scenario
 
-Currently, the ML Tasks supported by the ML.NET CLI are:
+This scenario will predict prices. Select *Price Prediction* scenario
 
-- `binary-classification`
-- `multiclass-classification` 
-- `regression`
-- Future: other machine learning tasks such as `recommendation`, `ranking`, `anomaly-detection`, `clustering`
+## Add Data
 
-Example of usage:
+- In the data source dropdown, select *File*.
+- Select the file in the *Data* directory
+- Select *fare_amount* as the Label or Column to Predict.
 
-```console
-> mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+## Train
+
+Depending on the data size, give it enough time to train. Use this chart as guidance:
+
+*Dataset Size  | Dataset Type       | Avg. Time to train*
+------------- | ------------------ | --------------
+0 - 10 Mb     | Numeric and Text   | 10 sec
+10 - 100 Mb   | Numeric and Text   | 10 min 
+100 - 500 Mb  | Numeric and Text   | 30 min 
+500 - 1 Gb    | Numeric and Text   | 60 min 
+1 Gb+         | Numeric and Text   | 3 hour+ 
+
+In this case, we'll use 10 seconds.
+
+Select *Start Training*.
+
+## Evaluate
+
+This step provides a summary of the training process.
+
+## Code
+
+Two projects will be created in `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
+
+1. ConsoleApp - The console app contains the training code
+1. Model - Contains the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
+
+- In this section, select **Added Projects** to add the projects to the solution.
+- Right-click `MLModelBuilderTest` project. Then, **Add > Existing Item**. For file type drop down, select `All Files` and navigate to the `MLModelBuilderTestML.Model` directory and select the `MLModel.zip` file. Then right-click the recently added `MLModel.zip` file and select *Properties*. For the Copy to Output Directory option, select *Copy if Newer* from the dropdown.
+- Right-click `MLModelBuilderTest` project. Then, **Add > Reference**. Select the **Projects > Solution** node and from the list, check the *MLModelBuilderTestML.Model* project.
+- Add the following usings to *Program.cs* in `MLModelBuilderTest` project.
+
+```csharp
+using System;
+using Microsoft.ML;
+using MLModelBuilderTestML.Model.DataModels;
 ```
 
-![image](media/automate-training-with-cli/cli-model-generation.gif)
+- Copy the `ConsumeModel` method into the *Program.cs* file in `MLModelBuilderTest` project.
 
-You can run it the same way on *Windows PowerShell*, *macOS/Linux bash, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
+```csharp
+static void ConsumeModel()
+{
+    // Load the model
+    MLContext mlContext = new MLContext();
+    ITransformer mlModel = mlContext.Model.Load("MLModel.zip", out var modelInputSchema);
+    var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
-## Output assets generated
+    // Use the code below to add input data
+    var input = new ModelInput()
+    {
+        Vendor_id = "CMT",
+        Rate_code = 1,
+        Passenger_count = 1,
+        Trip_time_in_secs = 1271,
+        Trip_distance = 3.8f,
+        Payment_type = "CRD"
+    };
+    // input.
 
-The CLI `auto-train` command generates the following assets in the output folder:
+    // Try model on sample data
+    ModelOutput result = predEngine.Predict(input);
 
-- A serialized model .zip ("best model") ready to use for running predictions. 
-- C# solution with:
-    - C# code to run/score that generated model (to make predictions in your end-user apps with that model).
-    - C# code with the training code used to generate that model (for learning purposes or model retraining).
-- Log file with information of all iterations/sweeps across the multiple algorithms evaluated, including their detailed configuration/pipeline.
+    // Print prediction
+    Console.WriteLine(result.Score);
+}
+```
 
-The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app, etc.) to make predictions with that generated ML model.
+Add the following code to the `Main` method:
 
-The third asset, the training code, shows you what ML.NET API code was used by the CLI to train the generated model, so you can retrain your model and investigate and iterate on which specific trainer/algorithm and hyperparameters were selected by the CLI and AutoML under the covers. 
-
-## Understanding the quality of the model
-
-When you generate a 'best model' with the CLI tool, you see quality metrics (such as accuracy, and R-Squared) as appropriate for the ML task you are targeting.
-
-Here we summarize those metrics grouped by ML task so you can understand the quality of your auto-generated 'best model'.
-
-### Metrics for Binary Classification models
-
- The following displays the binary classification ML task metrics list for the top five models found by the CLI: 
-
-![image](media/automate-training-with-cli/cli-binary-classification-metrics.png)
-
-Accuracy is a popular metric for classification problems, however accuracy is not always the best metric to select the best model from as explained in the references below. There are cases where you need to evaluate the quality of your model with additional metrics.
-
-To explore and understand the metrics that are output by the CLI, see [Metrics for binary classification](resources/metrics.md#metrics-for-binary-classification).
-
-### Metrics for Multi-class Classification models
-
- The following displays the multi-class classification ML task metrics list for the top five models found by the CLI: 
-
-![image](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
-
-To explore and understand the metrics that are output by the CLI, see [Metrics for multiclass classification](resources/metrics.md#metrics-for-multi-class-classification).
-
-### Metrics for Regression models
-
-A regression model fits the data well if the differences between the observed values and the model's predicted values are small and unbiased. Regression can be evaluated with certain metrics.
-
-You will see a similar list of metrics for the best top five quality models found by the CLI. In this particular case related to a regression ML task:
-
-![image](media/automate-training-with-cli/cli-regression-metrics.png)
-
-To explore and understand the metrics that are output by the CLI, see [Metrics for regression](resources/metrics.md#metrics-for-regression).
-
-## See also
-
-- [How to install the ML.NET CLI tool](how-to-guides/install-ml-net-cli.md)
-- [Tutorial: Auto generate a binary classifier using the ML.NET CLI](tutorials/mlnet-cli.md)
-- [ML.NET CLI command reference](reference/ml-net-cli-reference.md)
-- [Telemetry in ML.NET CLI](resources/ml-net-cli-telemetry.md)
+```csharp
+ConsumeModel();
+Console.ReadKey();
+```

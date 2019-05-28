@@ -193,7 +193,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x += y](arithmetic-operators.md#compound-assignment) – increment. Add the value of `y` to the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# adds as an event handler.
 
-[x -= y](subtraction-assignment-operator.md) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# removes as an event handler.
+[x -= y](arithmetic-operators.md#compound-assignment) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# removes as an event handler.
 
 [x *= y](arithmetic-operators.md#compound-assignment) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
 

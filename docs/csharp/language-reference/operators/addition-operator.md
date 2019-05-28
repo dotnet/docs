@@ -33,7 +33,7 @@ Starting with C# 6, [string interpolation](../tokens/interpolated.md) provides a
 
 ## Delegate combination
 
-For [delegate](../keywords/delegate.md) types, the `+` operator returns a new delegate instance that, when invoked, invokes the first operand and then invokes the second operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
+For operands of the same [delegate](../keywords/delegate.md) type, the `+` operator returns a new delegate instance that, when invoked, invokes the first operand and then invokes the second operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
 
 [!code-csharp-interactive[delegate combination](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddDelegates)]
 
@@ -80,3 +80,4 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 - [Events](../../programming-guide/events/index.md)
 - [Checked and unchecked](../keywords/checked-and-unchecked.md)
 - [Arithmetic operators](arithmetic-operators.md)
+- [- and -= operators](subtraction-operator.md)

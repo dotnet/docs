@@ -16,11 +16,42 @@ Video or animated gif of the model builder interface
 
 Talk about different scenarios, the problem being solved, the data they need, and map these onto the ML.NET task
 
-## Model builder process
+Visual rather than lots of text
 
-Scenario / task / data / train / evaluate
+Use icons from the product
 
-## Generated outputs
+Scenario descriptions with example inputs and outputs
+
+## Data
+
+Data examples illustrating the features and the labels
+
+Limitations
+
+Connect to different sources
+
+## Train
+
+What does training mean?
+
+Trying different algorithms / feature extraction / hyper-parameter tuning
+
+## Evaluate
+
+Re-spell out metrics
+
+Best model
+
+Top other models explored
+
+Improve the model performance
+- run for a longer time
+- more data
+- which metrics
+
+Trouble shooting
+
+## Generated Code + Model
 
 Model file
 

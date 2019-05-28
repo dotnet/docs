@@ -33,4 +33,3 @@ The `return` statement terminates execution of the method in which it appears an
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [return Statement](/cpp/cpp/return-statement-cpp)
-- [Jump Statements](jump-statements.md)

@@ -159,4 +159,3 @@ The following example uses the var pattern to assign an expression to a variable
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [typeof](../../../csharp/language-reference/keywords/typeof.md)
 - [as](../../../csharp/language-reference/keywords/as.md)
-- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

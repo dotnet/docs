@@ -61,6 +61,5 @@ Notice in the example that the default value of a string is `null`. Therefore, i
 - [C# Reference](../../language-reference/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Operator Keywords](operator-keywords.md)
 - [new](new.md)
 - [Anonymous Types](../../programming-guide/classes-and-structs/anonymous-types.md)

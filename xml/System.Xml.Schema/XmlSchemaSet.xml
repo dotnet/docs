@@ -51,7 +51,11 @@
    
   
 ## Examples  
- The following example validates an XML file using schemas stored in the <xref:System.Xml.Schema.XmlSchemaSet>. The namespace in the XML file, `urn:bookstore-schema`, identifies which schema in the <xref:System.Xml.Schema.XmlSchemaSet> to use for validation.  
+ The following example validates an XML file using schemas stored in the <xref:System.Xml.Schema.XmlSchemaSet>. The namespace in the XML file, `urn:bookstore-schema`, identifies which schema in the <xref:System.Xml.Schema.XmlSchemaSet> to use for validation. Output from the example shows that the XML file has two schema violations:
+
+ - The first \<book> element contains an \<author> element but no \<title> or \<price> element.
+
+ - The \<author> element in the last \<book> element is missing a \<first-name> and \<last-name> element and instead has an invalid \<name> element.   
   
  [!code-cpp[XmlReader_Validate_SchemaSet#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlReader_Validate_SchemaSet/CPP/XmlReader_Validate_SchemaSet.cpp#1)]
  [!code-csharp[XmlReader_Validate_SchemaSet#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReader_Validate_SchemaSet/CS/validschemaset.cs#1)]
@@ -67,11 +71,6 @@
  **books.xsd:**  
   
  [!code-xml[XmlReader_Validate_SchemaSet#3](~/samples/snippets/xml/VS_Snippets_Data/XmlReader_Validate_SchemaSet/XML/books.xsd#3)]  
-  
-## Output  
- Validation Error: The element 'book' in namespace 'urn:bookstore-schema' has invalid child element 'author' in namespace 'urn:bookstore-schema'. Expected 'title' in namespace 'urn:bookstore-schema'.  
-  
- Validation Error: The element 'author' in namespace 'urn:bookstore-schema' has invalid child element 'name' in namespace 'urn:bookstore-schema'. Expected 'first-name' in namespace 'urn:bookstore-schema'.  
   
  ]]></format>
     </remarks>

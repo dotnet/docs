@@ -485,7 +485,13 @@ NTLMDOMAIN:<domain name>
       <Docs>
         <summary>Sets the password for the specified user.</summary>
         <value>Returns a SecureString value used for the password in a connection to WMI.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+A blank <xref:System.Security.SecureString> ("") specifies a valid zero-length password.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Username">

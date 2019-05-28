@@ -17,7 +17,13 @@
   <Interfaces />
   <Docs>
     <summary>Represents a management query that returns instances or classes.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+      
+This class or its derivatives are used to specify a query in the <xref:System.Management.ManagementObjectSearcher>. Use a more specific query class whenever possible.
+
+      ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">

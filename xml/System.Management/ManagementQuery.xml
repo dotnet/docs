@@ -26,7 +26,13 @@
   </Attributes>
   <Docs>
     <summary>Provides an abstract base class for all management query objects.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+      
+This class is abstract; only derivatives of it are actually used in the API.
+
+      ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">

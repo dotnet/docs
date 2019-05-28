@@ -1162,7 +1162,7 @@
       <Docs>
         <param name="location">The field where the value is written.</param>
         <param name="value">The value to write. The value is written immediately so that it is visible to all processors in the computer.</param>
-        <summary>Writes the specified value to the specified field. On systems that require it, inserts a memory barrier that prevents the processor from reordering memory operations as follows: If a memory operation appears before this method in the code, the processor cannot move it after this method.</summary>
+        <summary>Writes the specified value to the specified field. On systems that require it, inserts a memory barrier that prevents the processor from reordering memory operations as follows: If a read or write appears before this method in the code, the processor cannot move it after this method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

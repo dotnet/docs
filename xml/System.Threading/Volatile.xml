@@ -46,10 +46,11 @@
     > [!NOTE]
     >  Calling one of these methods affects only a single memory access. To provide effective synchronization for a field, all access to the field must use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType>.  
   
--   In C#, using the `volatile` modifier on a field guarantees that every access to that field uses the <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> methods, but the `volatile` modifier cannot be applied to array elements. The <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> methods can be used on array elements.  
+-   In C#, using the `volatile` modifier on a field guarantees that every access to that field is a volatile memory operation, but the `volatile` modifier cannot be applied to array elements. The <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> methods can be used on array elements.  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="/dotnet/csharp/language-reference/keywords/volatile">volatile keyword (C# Reference)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Read">

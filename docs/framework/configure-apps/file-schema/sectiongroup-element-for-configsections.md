@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "sectionGroup Element"
   - "<sectionGroup> Element"
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

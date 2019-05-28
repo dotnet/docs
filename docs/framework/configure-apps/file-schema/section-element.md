@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "section Element"
   - "<section> Element"
 ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

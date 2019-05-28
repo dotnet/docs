@@ -13,7 +13,7 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

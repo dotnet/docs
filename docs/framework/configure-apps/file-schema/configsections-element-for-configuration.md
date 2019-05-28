@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "configSections Element"
   - "<configSections> Element"
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

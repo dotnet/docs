@@ -2,7 +2,7 @@
 title: Prerequisites for .NET Core on Mac
 description: Supported macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on macOS machines.
 keywords: .NET, .NET Core, macOS, Mac
-author: guardrex
+author: mairaw
 ms.author: mairaw
 ms.date: 09/27/2017
 ms.topic: article

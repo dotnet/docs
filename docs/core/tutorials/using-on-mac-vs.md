@@ -2,7 +2,7 @@
 title: Getting started with .NET Core on macOS using Visual Studio for Mac
 description: This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 keywords: .NET, .NET Core, macOS, Mac
-author: guardrex
+author: mairaw
 ms.author: mairaw
 ms.date: 06/12/2017
 ms.topic: get-started-article

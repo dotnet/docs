@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "configuration schema [.NET Framework], custom settings in configuration files"
   - "elements [.NET Framework], custom settings in configuration files"
 ms.assetid: 6e4cc793-c526-4007-b4e9-37d56295f2cb
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

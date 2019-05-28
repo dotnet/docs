@@ -5,7 +5,7 @@ ms.prod: ".net-framework"
 ms.topic: "article"
 ms.assetid: 1da7f5ff-5a67-44ba-b165-f3e5de008e4a
 caps.latest.revision: 7
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

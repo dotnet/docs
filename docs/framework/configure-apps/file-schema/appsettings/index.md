@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "Windows Forms, app settings schema"
   - "configuration schema [.NET Framework], app settings"
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

@@ -2,7 +2,7 @@
 title: Create a custom template for dotnet new
 description: Learn how to create a custom template for the dotnet new command in this fun tutorial.
 keywords: .NET, .NET Core, template, templating, tutorial, dotnet new
-author: guardrex
+author: mairaw
 ms.author: mairaw
 ms.date: 08/12/2017
 ms.topic: article

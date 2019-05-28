@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: 77f1d761-ff45-4001-8f36-3a3e5c41fa63
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

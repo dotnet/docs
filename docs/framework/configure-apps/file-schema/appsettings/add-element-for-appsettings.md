@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 manager: "wpickett"
 ms.workload: 

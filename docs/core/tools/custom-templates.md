@@ -2,7 +2,7 @@
 title: Custom templates for dotnet new
 description: Learn about custom templates for any type of .NET project or files.
 keywords: dotnet new,CLI,CLI command,.NET Core,template,templating
-author: guardrex
+author: mairaw
 ms.author: mairaw
 ms.date: 08/11/2017
 ms.topic: article

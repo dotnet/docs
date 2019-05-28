@@ -54,7 +54,15 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+The default contract name is the result of calling <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName(System.Type)?displayProperty=nameWithType> on the type itself that is marked with this attribute. 
+                    
+The contract name is compared using a case-sensitive, non-linguistic comparison using <xref:System.StringComparer.Ordinal?displayProperty=nameWithType>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -81,7 +89,15 @@
       <Docs>
         <param name="contractName">The name of the contract.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class with the specified contract name.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+The default contract name is the result of calling <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName(System.Type)?displayProperty=nameWithType> on the type itself that this is marked with this attribute.
+
+The contract name is compared using a case-sensitive, non-linguistic comparison using <xref:System.StringComparer.Ordinal?displayProperty=nameWithType>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,7 +124,17 @@
       <Docs>
         <param name="contractType">The type of the contract.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class with the specified contract type.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+The contract name is the result of calling <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName(System.Type)?displayProperty=nameWithType> on `contractType`.
+                
+The default contract name is the result of calling <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName(System.Type)?displayProperty=nameWithType> on the type itself that is marked with this attribute. 
+                
+The contract name is compared using a case-sensitive, non-linguistic comparison using <xref:System.StringComparer.Ordinal?displayProperty=nameWithType>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -137,7 +163,15 @@
         <param name="contractName">The name of the contract.</param>
         <param name="contractType">The type of the contract.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class with the specified contract name and type.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+The default contract name is the result of calling <xref:System.ComponentModel.Composition.AttributedModelServices.GetContractName(System.Type)?displayProperty=nameWithType> on the type itself that this is marked with this attribute. 
+                
+The contract name is compared using a case-sensitive, non-linguistic comparison using <xref:System.StringComparer.Ordinal?displayProperty=nameWithType>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

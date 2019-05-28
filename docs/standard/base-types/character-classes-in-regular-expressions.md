@@ -45,16 +45,18 @@ A character class defines a set of characters, any one of which can occur in an 
  .NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character Class Subtraction](#CharacterClassSubtraction).  
   
 > [!NOTE]
->  Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories.  Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], character categories are based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] through the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], they are based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).  
+>  Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories.  Starting with the .NET Framework 4.6.2, character categories are based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] through the .NET Framework 4.6.1, they are based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).  
   
 <a name="PositiveGroup"></a>   
 ## Positive character group: [ ]  
  A positive character group specifies a list of characters, any one of which may appear in an input string for a match to occur. This list of characters may be specified individually, as a range, or both.  
   
  The syntax for specifying a list of individual characters is as follows:  
-  
- [*character_group*]  
-  
+
+```  
+[*character_group*]  
+```
+
  where *character_group* is a list of the individual characters that can appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md), or character classes.  
   
  The syntax for specifying a range of characters is as follows:  
@@ -63,9 +65,12 @@ A character class defines a set of characters, any one of which can occur in an 
 [firstCharacter-lastCharacter]  
 ```  
   
- where *firstCharacter* is the character that begins the range and *lastCharacter* is the character that ends the range. A character range is a contiguous series of characters defined by specifying the first character in the series, a hyphen (-), and then the last character in the series. Two characters are contiguous if they have adjacent Unicode code points.  
-  
- Some common regular expression patterns that contain positive character classes are listed in the following table.  
+ where *firstCharacter* is the character that begins the range and *lastCharacter* is the character that ends the range. A character range is a contiguous series of characters defined by specifying the first character in the series, a hyphen (-), and then the last character in the series. Two characters are contiguous if they have adjacent Unicode code points. *firstCharacter* must be the character with the lower code point, and *lastCharacter* must be the character with the higher code point.
+
+> [!NOTE]
+> Because a positive character group can include both a set of characters and a character range, a hyphen character (`-`) is always interpreted as the range separator unless it is the first or last character of the group.
+
+Some common regular expression patterns that contain positive character classes are listed in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
@@ -106,17 +111,24 @@ A character class defines a set of characters, any one of which can occur in an 
 ## Negative character group: [^]  
  A negative character group specifies a list of characters that must not appear in an input string for a match to occur. The list of characters may be specified individually, as a range, or both.  
   
- The syntax for specifying a list of individual characters is as follows:  
-  
- [*^character_group*]  
-  
+The syntax for specifying a list of individual characters is as follows:  
+
+```
+[*^character_group*]  
+```
+
  where *character_group* is a list of the individual characters that cannot appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md), or character classes.  
   
  The syntax for specifying a range of characters is as follows:  
-  
- [^*firstCharacter*-*lastCharacter*]  
-  
- where *firstCharacter* is the character that begins the range, and *lastCharacter* is the character that ends the range. A character range is a contiguous series of characters defined by specifying the first character in the series, a hyphen (-), and then the last character in the series. Two characters are contiguous if they have adjacent Unicode code points.  
+
+```
+[^*firstCharacter*-*lastCharacter*]  
+```
+
+where *firstCharacter* is the character that begins the range and *lastCharacter* is the character that ends the range. A character range is a contiguous series of characters defined by specifying the first character in the series, a hyphen (-), and then the last character in the series. Two characters are contiguous if they have adjacent Unicode code points. *firstCharacter* must be the character with the lower code point, and *lastCharacter* must be the character with the higher code point.
+
+> [!NOTE]
+> Because a negative character group can include both a set of characters and a character range, a hyphen character (`-`) is always interpreted as the range separator unless it is the first or last character of the group.
   
  Two or more character ranges can be concatenated. For example, to specify the range of decimal digits from "0" through "9", the range of lowercase letters from "a" through "f", and the range of uppercase letters from "A" through "F", use `[0-9a-fA-F]`.  
   

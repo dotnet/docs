@@ -145,8 +145,7 @@
         <summary>Creates a provider for a stream of the specified size beginning at its current position.</summary>
         <returns>The new provider.</returns>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is specified, ownership of the stream is transferred to the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>  upon successful argument validation. It will be disposed by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> and the caller must not manipulate it.
             
@@ -253,8 +252,7 @@ If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, t
         <summary>Creates a provider for a stream of the specified size beginning at its current position.</summary>
         <returns>A <see cref="T:System.Reflection.Metadata.MetadataReaderProvider" /> instance.</returns>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[
+          <format type="text/markdown"><![CDATA[
             
 Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is specified, ownership of the stream is transferred to the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>  upon successful argument validation. It will be disposed by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> and the caller must not manipulate it.
             

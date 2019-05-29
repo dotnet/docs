@@ -20,8 +20,9 @@
     - name: "Walkthrough: Writing Queries in C# (LINQ)"
       href: walkthrough-writing-queries-linq.md
   - name: Standard Query Operators Overview
-    href: standard-query-operators-overview.md
     items:
+    - name: Overview
+      href: standard-query-operators-overview.md
     - name: Query Expression Syntax for Standard Query Operators
       href: query-expression-syntax-for-standard-query-operators.md
     - name: Classification of Standard Query Operators by Manner of Execution

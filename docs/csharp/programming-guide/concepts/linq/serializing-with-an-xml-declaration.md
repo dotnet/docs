@@ -57,4 +57,4 @@ Console.WriteLine(sb.ToString());
   
 ## See also
 
-- [Serializing XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)
+- [Serializing XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/preserving-white-space-while-serializing.md)

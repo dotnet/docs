@@ -143,7 +143,7 @@ ms.author: "ronpet"
   
      Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2.  
   
-     Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, starting with the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand.  
+     Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, starting with the .NET Framework 4.5.1, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand.  
   
  The garbage collector uses the following information to determine whether objects are live:  
   

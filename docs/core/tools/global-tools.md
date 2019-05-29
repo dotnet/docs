@@ -126,26 +126,38 @@ The .NET Core CLI tries to add the default locations to the PATH environment var
 * On macOS, if you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
 * On Linux, you need to edit the shell environment file to configure the PATH.
 
-## Other CLI commands
+## Global tools available in the .NET Core SDK
 
-The .NET Core SDK contains other commands that support .NET Core Global Tools. Use any of the `dotnet tool` commands with one of the following options:
+The .NET Core SDK contains global tools that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
+
+```console
+dotnet tool install --global dotnet-aspnet-codegenerator
+```
+
+`dotnet tool` commands support the following options:
 
 * `--global` or `-g` specifies that the command is applicable to user-wide Global Tools.
 * `--tool-path` specifies a custom location for Global Tools.
 
-To find out which commands are available for Global Tools:
+The following command shows which commands are available for Global Tools:
 
 ```console
 dotnet tool --help
 ```
 
-Updating a Global Tool involves uninstalling and reinstalling it with the latest stable version. To update a Global Tool, use the [dotnet tool update](dotnet-tool-update.md) command:
+The [dotnet tool update](dotnet-tool-update.md) command updates a global tool tool to the latest stable version available from the installed .NET Core SDKs:
 
 ```console
 dotnet tool update -g <packagename>
 ```
 
-Remove a Global Tool using the [dotnet tool uninstall](dotnet-tool-uninstall.md):
+For example, the following code updates the ASP.NET Core scaffolding tool to the latest stable version:
+
+```console
+dotnet tool install --g dotnet-aspnet-codegenerator
+```
+
+Global Tools are removed with the [dotnet tool uninstall](dotnet-tool-uninstall.md):
 
 ```console
 dotnet tool uninstall -g <packagename>

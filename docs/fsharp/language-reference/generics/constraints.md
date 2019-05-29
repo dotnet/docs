@@ -54,10 +54,6 @@ class end
 type Class3<'T when 'T : null> =
 class end
 
-// Member constraint with static member
-type Class4<'T when 'T : (static member staticMethod1 : unit -> 'T) > =
-class end
-
 // Member constraint with instance member
 type Class5<'T when 'T : (member Method1 : 'T -> int)> =
 class end

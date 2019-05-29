@@ -33,7 +33,7 @@ Generics provide the solution to a limitation in earlier versions of the common 
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
 - [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)
 - [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)
 - [Guidelines for Collections](../../../standard/design-guidelines/guidelines-for-collections.md)

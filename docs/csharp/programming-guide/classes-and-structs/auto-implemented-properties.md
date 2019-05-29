@@ -26,4 +26,3 @@ public string FirstName { get; set; } = "Jane";
 ## See also
 
 - [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
-- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)

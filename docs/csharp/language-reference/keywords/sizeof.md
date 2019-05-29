@@ -68,7 +68,6 @@ For all other types, including structs, the `sizeof` operator can be used only i
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Operator Keywords](operator-keywords.md)
 - [enum](enum.md)
 - [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md)
 - [Structs](../../programming-guide/classes-and-structs/structs.md)

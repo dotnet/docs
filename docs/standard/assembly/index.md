@@ -54,8 +54,6 @@ Compile your application by building it in Visual Studio, by building it from th
 - [.NET assembly file format](file-format.md)
 - [Assemblies in the Common Language Runtime](../../framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [Friend Assemblies](friend-assemblies.md)
-- [How to: Load and Unload Assemblies (C#)](../../csharp/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)
 - [How to: Load and Unload Assemblies (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)
 - [How to: Use and Debug Assembly Unloadability in .NET Core](unloadability-howto.md)
-- [How to: Determine If a File Is an Assembly (C#)](../../csharp/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md)
 - [How to: Determine If a File Is an Assembly (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md)

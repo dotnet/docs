@@ -43,9 +43,16 @@ this type can survive across async/await boundaries, and hence it's required to 
         <Parameter Name="options" Type="System.Text.Json.JsonReaderOptions" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="options">Defines the customized behavior of the <see cref="T:System.Text.Json.Utf8JsonReader" /> that is different from the JSON RFC (for example how to handle comments, or the maximum depth allowed when reading). By default, the <see cref="T:System.Text.Json.Utf8JsonReader" /> follows the JSON RFC strictly (comments within the JSON are invalid) and reads up to a maximum depth of 64.</param>
+        <summary>Constructs a new <see cref="T:System.Text.Json.JsonReaderState" /> instance.</summary>
+        <remarks>
+          <format><![CDATA[
+          
+An instance of this state must be passed to the <xref:System.Text.Json.Utf8JsonReader> constructor with the JSON data. Unlike the <xref:System.Text.Json.Utf8JsonReader>, which is a ref struct, the state can survive across async/await boundaries and hence this type is required to provide support for reading in more data asynchronously before continuing with a new instance of the <xref:System.Text.Json.Utf8JsonReader>.
+            
+            ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The maximum depth is set to a non-positive value (&lt; 0).</exception>
       </Docs>
     </Member>
     <Member MemberName="BytesConsumed">

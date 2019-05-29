@@ -13,7 +13,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the data type of a JSON value.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is a JSON array.</summary>
       </Docs>
     </Member>
     <Member MemberName="False">
@@ -54,7 +54,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is the JSON value <c>false</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Null">
@@ -74,7 +74,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is the JSON value <c>null</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -94,7 +94,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is a JSON number.</summary>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -114,7 +114,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is a JSON object.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -134,7 +134,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is a JSON string.</summary>
       </Docs>
     </Member>
     <Member MemberName="True">
@@ -154,7 +154,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a value is the JSON value <c>true</c>.</summary>
       </Docs>
     </Member>
     <Member MemberName="Undefined">
@@ -174,7 +174,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that there is no value (as distinct from <see cref="F:System.Text.Json.JsonValueType.Null" />).</summary>
       </Docs>
     </Member>
   </Members>

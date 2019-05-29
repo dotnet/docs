@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a single property for a JSON object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The name of this property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,8 +61,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Provides a string representation of the property for debugging purposes.</summary>
+        <returns>A string containing the uninterpreted value of the property, beginning at the declaring open-quote and ending at the last character that is part of the value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
         <ReturnType>System.Text.Json.JsonElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The value of this property.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

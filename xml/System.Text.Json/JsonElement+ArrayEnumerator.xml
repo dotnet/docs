@@ -30,7 +30,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an enumerator for the contents of a JSON array.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -99,8 +99,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An enumeratore that can be used to iterate through the array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

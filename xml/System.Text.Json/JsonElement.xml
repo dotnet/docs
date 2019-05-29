@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a specific JSON value within a <see cref="T:System.Text.Json.JsonDocument" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,9 +40,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a JsonElement that can be safely stored beyond the lifetime of the original <see cref="T:System.Text.Json.JsonDocument" />.</summary>
+        <returns>A JsonElement that can be safely stored beyond the lifetime of the original <see cref="T:System.Text.Json.JsonDocument" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+If this JsonElement is itself the output of a previous call to `Clone` or a value contained within another JsonElement which was the output of a previous call to `Clone`, this method results in no additional memory allocation.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnumerateArray">
@@ -62,9 +68,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator to enumerate the values in the JSON array represented by this JsonElement.</summary>
+        <returns>An enumerator to enumerate the values in the JSON array represented by this JsonElement.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Array" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="EnumerateObject">
@@ -84,9 +92,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an enumerator to enumerate the properties in the JSON object represented by this JsonElement.</summary>
+        <returns>An enumerator to enumerate the properties in the JSON object represented by this JsonElement.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetArrayLength">
@@ -106,9 +116,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the number of values contained within the current array value.</summary>
+        <returns>The number of values contained within the current array value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Array" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -128,9 +140,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the element as a <see cref="T:System.Boolean" />.</summary>
+        <returns>The value of the element as a <see cref="T:System.Boolean" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+          
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is neither <see cref="F:System.Text.Json.JsonValueType.True" /> nor <see cref="F:System.Text.Json.JsonValueType.False" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -150,9 +170,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the element as a <see cref="T:System.DateTime" />.</summary>
+        <returns>The value of the element as a <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a DateTime representation of values other than JSON strings.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.String" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.DateTime" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeOffset">
@@ -172,9 +201,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the element as a <see cref="T:System.DateTimeOffset" />.</summary>
+        <returns>The value of the element as a <see cref="T:System.DateTimeOffset" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a DateTimeOffset representation of values other than JSON strings.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.String" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.DateTimeOffset" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -194,9 +232,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current JSON number as a <see cref="T:System.Decimal" />.</summary>
+        <returns>The current JSON number as a <see cref="T:System.Decimal" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+          This method does not parse the contents of a JSON string value.
+          
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.Decimal" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetDouble">
@@ -216,9 +263,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current JSON number as a <see cref="T:System.Double" />.</summary>
+        <returns>The current JSON number as a <see cref="T:System.Double" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+               
+On .NET Core, this method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>  for values larger than <xref:System.Double.MaxValue?displayProperty=nameWithType>, and it returns <xref:System.Double.NegativeInfinity?displayProperty=nameWithType> for values smaller than <xref:System.Double.MinValue?displayProperty=nameWithType>.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.Double" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetGuid">
@@ -238,9 +296,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the element as a <see cref="T:System.Guid" />.</summary>
+        <returns>The value of the element as a <see cref="T:System.Guid" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a Guid representation of values other than JSON strings.
+    
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.String" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.Guid" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInt32">
@@ -260,9 +327,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the current JSON number as an <see cref="T:System.Int32" />.</summary>
+        <returns>The current JSON number as an <see cref="T:System.Int32" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as an <see cref="T:System.Int32" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetInt64">
@@ -282,9 +352,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current JSON number as an <see cref="T:System.Int64" />.</summary>
+        <returns>The current JSON number as an <see cref="T:System.Int64" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+          
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.Int64" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -306,10 +385,21 @@
         <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="utf8PropertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="utf8PropertyName">The UTF-8 representation (with no Byte-Order-Mark (BOM)) of the name of the property to return.</param>
+        <summary>Gets a <see cref="T:System.Text.Json.JsonElement" /> representing the value of a required property identified by <paramref name="utf8PropertyName" />.</summary>
+        <returns>A <see cref="T:System.Text.Json.JsonElement" /> representing the value of the requested property.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+Property name matching is performed as an ordinal, case-sensitive comparison.
+               
+If a property is defined multiple times for the same object, the method matches the last such definition.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">No property was found with the requested name.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -331,10 +421,21 @@
         <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyName">The name of the property whose value is to be returned.</param>
+        <summary>Gets a <see cref="T:System.Text.Json.JsonElement" /> representing the value of a required property identified by <paramref name="propertyName" />.</summary>
+        <returns>A <see cref="T:System.Text.Json.JsonElement" /> representing the value of the requested property.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+Property name matching is performed as an ordinal, case-sensitive comparison.
+               
+If a property is defined multiple times for the same object, the method matches the last such definition.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">No property was found with the requested name.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -356,10 +457,22 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyName">The name of the property whose value is to be returned.</param>
+        <summary>Gets a <see cref="T:System.Text.Json.JsonElement" /> representing the value of a required property identified by <paramref name="propertyName" />.</summary>
+        <returns>A <see cref="T:System.Text.Json.JsonElement" /> representing the value of the requested property.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+Property name matching is performed as an ordinal, case-sensitive comparison.
+            
+If a property is defined multiple times for the same object, the method matches the last such definition.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">No property was found with the requested name.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="propertyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRawText">
@@ -379,9 +492,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a string that represents the original input data backing this value.</summary>
+        <returns>The original input data backing this value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSingle">
@@ -401,9 +515,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current JSON number as a <see cref="T:System.Single" />.</summary>
+        <returns>The current JSON number as a <see cref="T:System.Single" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+               
+On .NET Core, this method returns <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> for values larger than <xref:System.Single.MaxValue?displayProperty=nameWithType> and <xref:System.Single.NegativeInfinity?displayProperty=nameWithType> for values smaller than <xref:System.Single.MinValue?displayProperty=nameWithType>.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.Single" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -423,9 +548,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the element as a <see cref="T:System.String" />.</summary>
+        <returns>The value of the element as a <see cref="T:System.String" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a string representation of values other than JSON strings.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is neither <see cref="F:System.Text.Json.JsonValueType.String" /> nor <see cref="F:System.Text.Json.JsonValueType.Null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUInt32">
@@ -450,9 +583,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current JSON number as a <see cref="T:System.UInt32" />.</summary>
+        <returns>The current JSON number as a <see cref="T:System.UInt32" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.UInt32" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetUInt64">
@@ -477,9 +619,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets the current JSON number as a <see cref="T:System.UInt64" />.</summary>
+        <returns>The current JSON number as a <see cref="T:System.UInt64" />.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.FormatException">The value cannot be represented as a <see cref="T:System.UInt64" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -502,9 +653,12 @@
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets the value at a specified index when the current value is an <see cref="F:System.Text.Json.JsonValueType.Array" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Array" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException"><paramref name="index" /> is not in the range [0, <see cref="M:System.Text.Json.JsonElement.GetArrayLength" />()).</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -524,9 +678,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a string representation for the current value appropriate to the value type.</summary>
+        <returns>A string representation for the current value appropriate to the value type.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+For <xref:System.Text.Json.JsonValueType.Null?displayProperty=nameWithType>, <xref:System.String.Empty?displayProperty=nameWithType> is returned.
+               
+For <xref:System.Text.Json.JsonValueType.True?displayProperty=nameWithType>, <xref:System.Boolean.TrueString?displayProperty=nameWithType> is returned.
+               
+For <xref:System.Text.Json.JsonValueType.False?displayProperty=nameWithType>, <xref:System.Boolean.FalseString?displayProperty=nameWithType> is returned.
+               
+For <xref:System.Text.Json.JsonValueType.String?displayProperty=nameWithType>, the value of <xref:System.Text.Json.JsonElement.GetString> is returned.
+               
+For other types, the value of <xref:System.Text.Json.JsonElement.GetRawText> is returned.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetDateTime">
@@ -548,10 +717,18 @@
         <Parameter Name="value" Type="System.DateTime" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the date and time value equivalent to the current JSON string.</param>
+        <summary>Attempts to represent the current JSON string as a <see cref="T:System.DateTime" />.</summary>
+        <returns><see langword="true" /> if the string can be represented as a <see cref="T:System.DateTime" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a DateTime representation of values other than JSON strings.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.String" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetDateTimeOffset">
@@ -573,10 +750,18 @@
         <Parameter Name="value" Type="System.DateTimeOffset" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the date and time equivalent to the current JSON string.</param>
+        <summary>Attempts to represent the current JSON string as a <see cref="T:System.DateTimeOffset" />.</summary>
+        <returns><see langword="true" /> if the string can be represented as a <see cref="T:System.DateTimeOffset" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a DateTimeOffset representation of values other than JSON strings.
+          
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.String" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetDecimal">
@@ -598,10 +783,18 @@
         <Parameter Name="value" Type="System.Decimal" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the decimal equivalent of the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as a <see cref="T:System.Decimal" />.</summary>
+        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.Decimal" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetDouble">
@@ -623,10 +816,20 @@
         <Parameter Name="value" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains a double-precision floating point value equivalent to the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as a <see cref="T:System.Double" />.</summary>
+        <returns> <see langword="true" /> if the number can be represented as a <see cref="T:System.Double" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+               
+On .NET Core, this method does not return `false` for values larger than <xref:System.Double.MaxValue?displayProperty=nameWithType> or smaller than <xref:System.Double.MinValue?displayProperty=nameWithType>. Instead, it returns <see langword="true> and assigns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType> to `value`.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetGuid">
@@ -648,10 +851,18 @@
         <Parameter Name="value" Type="System.Guid" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the GUID equivalent to the current JSON string.</param>
+        <summary>Attempts to represent the current JSON string as a <see cref="T:System.Guid" />.</summary>
+        <returns><see langword="true" /> if the string can be represented as a <see cref="T:System.Guid" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not create a Guid representation of values other than JSON strings.
+          
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.String" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetInt32">
@@ -673,10 +884,18 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the 32-biut integer value equivalent to the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as an <see cref="T:System.Int32" />.</summary>
+        <returns><see langword="true" /> if the number can be represented as an <see cref="T:System.Int32" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetInt64">
@@ -698,10 +917,18 @@
         <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the 64-bit integer value equivalent to the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as a <see cref="T:System.Int64" />.</summary>
+        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.Int64" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty">
@@ -724,11 +951,21 @@
         <Parameter Name="value" Type="System.Text.Json.JsonElement" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="utf8PropertyName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="utf8PropertyName">The UTF-8 (with no Byte-Order-Mark (BOM)) representation of the name of the property to return.</param>
+        <param name="value">Receives the value of the located property.</param>
+        <summary>Looks for a property named <paramref name="utf8PropertyName" /> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, the method assigns its value to the <paramref name="value" /> argument.</summary>
+        <returns> <see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+Property name matching is performed as an ordinal, case-sensitive comparison.
+               
+If a property is defined multiple times for the same object, the method matches the last such definition.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty">
@@ -751,11 +988,21 @@
         <Parameter Name="value" Type="System.Text.Json.JsonElement" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyName">The name of the property to find.</param>
+        <param name="value">When this method returns, contains the value of the specified property.</param>
+        <summary>Looks for a property named <paramref name="propertyName" /> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, the method assigns its value to the <paramref name="value" /> argument.</summary>
+        <returns><see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+Property name matching is performed as an ordinal, case-sensitive comparison.
+               
+If a property is defined multiple times for the same object, the method matches the last such definition.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetProperty">
@@ -778,11 +1025,22 @@
         <Parameter Name="value" Type="System.Text.Json.JsonElement" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyName">The name of the property to find.</param>
+        <param name="value">When this method returns, contains the value of the specified property.</param>
+        <summary>Looks for a property named <paramref name="propertyName" /> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, its value is assigned to the <paramref name="value" /> argument.</summary>
+        <returns><see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+Property name matching is performed as an ordinal, case-sensitive comparison.
+               
+If a property is defined multiple times for the same object, the method matches the last such definition.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="propertyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetSingle">
@@ -804,10 +1062,20 @@
         <Parameter Name="value" Type="System.Single" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains the single-precision floating point value equivalent to the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as a <see cref="T:System.Single" />.</summary>
+        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.Single" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+               
+On .NET Core, this method does not return `false` for values larger than <xref:System.Single.MaxValue?displayProperty=nameWithType> or smaller than <xref:System.Single.MinValue?displayProperty=nameWithType>). Instead, it returns `false` and assigns <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType> to the `value` argument.
+                 
+               ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetUInt32">
@@ -834,10 +1102,18 @@
         <Parameter Name="value" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains unsigned 32-bit integer value equivalent to the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as a <see cref="T:System.UInt32" />.</summary>
+        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.UInt32" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetUInt64">
@@ -864,10 +1140,18 @@
         <Parameter Name="value" Type="System.UInt64" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">When this method returns, contains unsigned 64-bit integer value equivalent to the current JSON number.</param>
+        <summary>Attempts to represent the current JSON number as a <see cref="T:System.UInt64" />.</summary>
+        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.UInt64" />, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format><![CDATA[
+          
+This method does not parse the contents of a JSON string value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Number" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -886,9 +1170,10 @@
         <ReturnType>System.Text.Json.JsonValueType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the type of the current JSON element.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAsProperty">
@@ -911,10 +1196,12 @@
         <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
       </Parameters>
       <Docs>
-        <param name="utf8PropertyName">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="utf8PropertyName">UTF8-encoded text that represents te name for this value within the JSON object.</param>
+        <param name="writer">The writer.</param>
+        <summary>Writes the element to the provided writer as an object property whose name is defined by UTF8-encoded text.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is <see cref="F:System.Text.Json.JsonValueType.Undefined" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAsProperty">
@@ -937,10 +1224,12 @@
         <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">A character span that specifies the name for this value within the JSON object.</param>
+        <param name="writer">The writer.</param>
+        <summary>Writes the element to the provided writer as an object property whose name is defined by the specified character span.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is <see cref="F:System.Text.Json.JsonValueType.Undefined" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAsValue">
@@ -962,9 +1251,11 @@
         <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="writer">The writer.</param>
+        <summary>Writes the element to the provided writer as a value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is <see cref="F:System.Text.Json.JsonValueType.Undefined" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
   </Members>

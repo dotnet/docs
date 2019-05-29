@@ -52,7 +52,7 @@
 ## Remarks  
  Each element is a key/value pair that is stored in a <xref:System.Collections.Generic.KeyValuePair%602> object.  
   
- Each pair must have a unique key. Implementations can vary in whether they allow you to specify a key that is `null`. The value can be `null` and does not have to be unique. The <xref:System.Collections.Generic.IDictionary%602> interface allows the contained keys and values to be enumerated, but it does not imply any particular sort order.  
+ Each pair must have a unique key. Implementations can vary in whether they allow you to specify a key that is `null`. The value can be `null` and does not have to be unique. The <xref:System.Collections.Generic.IReadOnlyDictionary%602> interface allows the contained keys and values to be enumerated, but it does not imply any particular sort order.  
   
  The `foreach` statement of the C# language (`For Each` in Visual Basic, `for each` in C++) requires the type of each element in the collection. Because each element of the <xref:System.Collections.Generic.IReadOnlyDictionary%602> interface is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.Generic.KeyValuePair%602>, as the following example illustrates.  
   

@@ -195,7 +195,7 @@ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflow va
 
 ### <a name="BKMK_DesignTimeValidation"></a> Design-time background validation
 
-In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflows were validated as a foreground process, which could potentially hang the UI during complex or time-consuming validation processes. Workflow validation now takes place on a background thread, so that the UI is not blocked.
+In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflows were validated as a foreground process, which could potentially block the UI during complex or time-consuming validation processes. Workflow validation now takes place on a background thread, so that the UI is not blocked.
 
 ### <a name="BKMK_ViewState"></a> View state located in a separate location in XAML files
 

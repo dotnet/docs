@@ -73,7 +73,7 @@ Published data is available quarterly and are listed at [.NET Core SDK Usage Dat
 
 &#8224;The *Occurrences* column displays the aggregate count of that command's use for that row's metrics that day.
 
-&#8225;Typically, the *Geography* column displays the name of a country. In some cases, the continent of Antarctica appears in this column, either due to researchers using .NET Core in Antarctica or incorrect location data.
+&#8225;Typically, the *Geography* column displays the name of a country/region. In some cases, the continent of Antarctica appears in this column, either due to researchers using .NET Core in Antarctica or incorrect location data.
 
 ### Example
 

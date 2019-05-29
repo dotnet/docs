@@ -1861,7 +1861,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 New features and enhancements in the base classes in .NET Framework 4.5.1 include:
 
-- Automatic binding redirection for assemblies. Starting with Visual Studio 2013, when you compile an app that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
+- Automatic binding redirection for assemblies. Starting with Visual Studio 2013, when you compile an app that targets the .NET Framework 4.5.1, binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
 
 - Ability to collect diagnostics information to help developers improve the performance of server and cloud applications. For more information, see the <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> and <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> methods in the <xref:System.Diagnostics.Tracing.EventSource> class.
 

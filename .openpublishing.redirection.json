@@ -407,16 +407,28 @@
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/false.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/false-literal"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/false-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/interpolated-strings.md",
             "redirect_url": "/dotnet/csharp/language-reference/tokens/interpolated"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/true.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-literal"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/true-false-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -581,6 +593,10 @@
         {
             "source_path": "docs/csharp/language-reference/operators/right-shift-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#right-shift-operator-"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/operators/subtraction-assignment-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/arithmetic-operators#compound-assignment"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/xor-assignment-operator.md",

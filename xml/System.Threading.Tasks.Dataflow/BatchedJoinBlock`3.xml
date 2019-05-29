@@ -522,7 +522,13 @@
       <Docs>
         <summary>Returns a string that represents the formatted name of this  <see cref="T:System.Threading.Tasks.Dataflow.IDataflowBlock" /> instance.</summary>
         <returns>A string that represents the formatted name of this  <see cref="T:System.Threading.Tasks.Dataflow.IDataflowBlock" /> instance.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+Inherited from <xref:System.Object>. Uses the <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.NameFormat?displayProperty=nameWithType> option.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryReceive">

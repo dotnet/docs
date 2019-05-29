@@ -81,10 +81,18 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cancellationToken">The cancellation token to use to cancel the enumeration.</param>
+        <summary>Creates an <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> that enables reading all of the data from the channel.</summary>
+        <returns>The created async enumerable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+Each <xref:System.Collections.Generic.IAsyncEnumerator%601.MoveNextAsync> call that returns `true` will read the next item out of the channel.
+
+<xref:System.Collections.Generic.IAsyncEnumerator%601.MoveNextAsync> returns `false` once no more data is or will ever be available to read.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">

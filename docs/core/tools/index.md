@@ -91,6 +91,10 @@ The following commands are installed by default:
 
 The CLI adopts an extensibility model that allows you to specify additional tools for your projects. For more information, see the [.NET Core CLI extensibility model](extensibility.md) topic.
 
+## Global commands
+
+For information on global commands such as `aspnet-codegenerator`, see [.NET Core Global Tools overview](global-tools.md).
+
 ## Command structure
 
 CLI command structure consists of [the driver ("dotnet")](#driver), [the command (or "verb")](#command-verb), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:

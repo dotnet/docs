@@ -1,8 +1,6 @@
 ---
 title: Microservices addressability and the service registry
 description: Understand the role of the container image registries in the microservices architecture.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Microservices addressability and the service registry

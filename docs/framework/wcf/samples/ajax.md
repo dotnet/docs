@@ -17,7 +17,7 @@ This section includes samples that demonstrate Asynchronous JavaScript and XML f
  Demonstrates how to use WCF to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service.  
   
  [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md)  
- Demonstrates how to use WCF to create an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Asynchronous JavaScript and XML (AJAX) service that uses HTTP POST.  
+ Demonstrates how to use WCF to create an ASP.NET Asynchronous JavaScript and XML (AJAX) service that uses HTTP POST.  
   
  [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md)  
  Demonstrates how to use WCF to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service.  

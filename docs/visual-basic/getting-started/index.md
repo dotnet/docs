@@ -31,7 +31,7 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
 - [Get Visual Basic](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)\
 Provides download links for Visual Studio versions that include Visual Basic support, including free versions.
 
-- [Visual Basic Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-US/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)\
+- [Visual Basic Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)\
 Microsoft Virtual Academy course that teaches the fundamentals of Visual Basic programming.
 
 - [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)\

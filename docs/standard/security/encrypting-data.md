@@ -240,8 +240,8 @@ class Class1
       RSAParameters rsaKeyInfo = new RSAParameters();  
   
       //Set rsaKeyInfo to the public key values.   
-      rsaKeyInfo.Modulus = PublicKey;  
-      rsaKeyInfo.Exponent = Exponent;  
+      rsaKeyInfo.Modulus = publicKey;  
+      rsaKeyInfo.Exponent = exponent;  
   
       //Import key parameters into RSA.  
       rsa.ImportParameters(rsaKeyInfo);  

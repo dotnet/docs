@@ -1,8 +1,6 @@
 ---
 title: Walkthroughs and technical get started overview
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | Walkthroughs and technical get started overview
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 

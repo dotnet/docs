@@ -30,7 +30,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 >  The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
 ### Possible ASP.NET Conflict  
- WCF and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] can both enable or disable impersonation. When [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] hosts an WCF application, a conflict may exist between the WCF and [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] impersonation setting takes precedence.  
+ WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts an WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.  
   
 ### Assembly Loads May Fail Under Impersonation  
  If the impersonated context does not have access rights to load an assembly and if it is the first time the common language runtime (CLR) is attempting to load the assembly for that AppDomain, the <xref:System.AppDomain> caches the failure. Subsequent attempts to load that assembly (or assemblies) fail, even after reverting the impersonation, and even if the reverted context has access rights to load the assembly. This is because the CLR does not re-attempt the load after the user context is changed. You must restart the application domain to recover from the failure.  
@@ -44,7 +44,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ## Cryptography  
   
 ### SHA-256 Supported Only for Symmetric Key Usages  
- WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
+ WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the WinFX.  
   
 ### FIPS-Compliant SHA-256 Hashes not Supported  
  WCF does not support SHA-256 FIPS-compliant hashes, so algorithm suites that use SHA-256 are not supported by WCF on systems where use of FIPS compliant algorithms is required.  
@@ -69,13 +69,13 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ## Message Security Fails if Using ASP.NET Impersonation and ASP.NET Compatibility Is Required  
  WCF does not support the following combination of settings because they can prevent client authentication from occurring:  
   
-- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
+- ASP.NET Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
   
-- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
+- ASP.NET compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
   
 - Message mode security is used.  
   
- The work-around is to turn off the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode. Or, if the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is required, disable the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] impersonation feature and use WCF-provided impersonation instead. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+ The work-around is to turn off the ASP.NET compatibility mode. Or, if the ASP.NET compatibility mode is required, disable the ASP.NET impersonation feature and use WCF-provided impersonation instead. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
 ## IPv6 Literal Address Failure  
  Security requests fail when the client and service are on the same machine, and IPv6 literal addresses are used for the service.  

@@ -61,7 +61,7 @@ An important part of Visual Basic is the ability to create Windows Forms applica
 |To|See|  
 |--------|---------|  
 |Use the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](../../../framework/winforms/controls/bind-wf-controls-with-the-bindingsource.md)|  
-|Work with [!INCLUDE[vstecado](~/includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
+|Work with ADO.NET data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |Use the Data Sources window|[Walkthrough: Displaying Data on a Windows Form](/visualstudio/data-tools/accessing-data-in-visual-studio)|  
   
 ## Deploying Applications to Client Computers  

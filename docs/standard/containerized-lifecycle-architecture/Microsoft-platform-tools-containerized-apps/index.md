@@ -1,8 +1,6 @@
 ---
 title: Introduction to the Microsoft platform and tools for containerized apps
 description: Get to know Microsoft's offerings to support Docker applications lifecycle.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # Introduction to the Microsoft platform and tools for containerized apps
@@ -23,8 +21,8 @@ Table 3-1 demonstrates that the intention of the Microsoft DevOps for containeri
 
 | Host | Microsoft technologies | Third-party—Azure pluggable |
 | ---------------------------| ----------------------------------------------------| --------------------------------------------------------------------------------|
-| Platform for Docker apps   | • Microsoft Visual Studio and Visual Studio Code<br /> • .NET<br /> • Microsoft Azure Container Service<br /> • Azure Service Fabric<br /> • Azure Container Registry<br /> | • Any code editor (for example, Sublime)<br /> • Any language (Node.js, Java, Go, etc.)<br /> • Any orchestrator and scheduler<br /> • Any Docker registry<br /> |
-| DevOps for Docker apps     | • Azure DevOps Services<br /> • Microsoft Team Foundation Server<br /> • Azure Container Service<br /> • Azure Service Fabric<br /> | • GitHub, Git, Subversion, etc.<br /> • Jenkins, Chef, Puppet, Velocity, CircleCI, TravisCI, etc.<br /> • On-premises Docker Datacenter, Docker Swarm, Mesos DC/OS, Kubernetes, etc.<br /> |
+| Platform for Docker apps   | • Microsoft Visual Studio and Visual Studio Code<br /> • .NET<br /> • Microsoft Azure Kubernetes Service (AKS)<br /> • Azure Service Fabric<br /> • Azure Container Registry<br /> | • Any code editor (for example, Sublime)<br /> • Any language (Node.js, Java, Go, etc.)<br /> • Any orchestrator and scheduler<br /> • Any Docker registry<br /> |
+| DevOps for Docker apps     | • Azure DevOps Services<br /> • Microsoft Team Foundation Server<br /> • Azure Kubernetes Service (AKS)<br /> • Azure Service Fabric<br /> | • GitHub, Git, Subversion, etc.<br /> • Jenkins, Chef, Puppet, Velocity, CircleCI, TravisCI, etc.<br /> • On-premises Docker Datacenter, Docker Swarm, Mesos DC/OS, Kubernetes, etc.<br /> |
 | Management and monitoring  | • Azure Monitor | • Marathon, Chronos, etc.<br />|
 
 The Microsoft platform and tools for containerized Docker apps, as defined in Table 3-1, comprise the following components:
@@ -33,7 +31,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
 - **DevOps for Docker Apps** Developers creating Docker applications can use [Azure DevOps Services](https://azure.microsoft.com/services/devops/) or any other third-party product, like Jenkins, to build out a comprehensive automated application life-cycle management (ALM).
 
-  With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter-container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Container Service, from development to staging and production environments.
+  With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter-container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Kubernetes Service (AKS), from development to staging and production environments.
 
 - **Management and Monitoring** IT can manage and monitor production applications and services in several ways, integrating both perspectives in a consolidated experience.
 

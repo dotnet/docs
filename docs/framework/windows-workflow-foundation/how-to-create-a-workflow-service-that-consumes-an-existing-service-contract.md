@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
 ---
 # How to: Create a workflow service that consumes an existing service contract
-[!INCLUDE[net_v45](../../../includes/net-v45-md.md)] features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract.  
+.NET Framework 4.5 features better integration between web services and workflows in the form of contract-first workflow development. The contract-first workflow development tool allows you to design the contract in code first. The tool then automatically generates an activity template in the toolbox for the operations in the contract.  
   
 > [!NOTE]
 >  This topic provides step-by-step guidance on creating a contract-first workflow service. For more information about contract-first workflow service development, see [Contract First Workflow Service Development](contract-first-workflow-service-development.md).  

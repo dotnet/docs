@@ -39,7 +39,7 @@ App Service Web Apps offers a fully managed platform optimized for hosting web a
 
 - Visual Studio integration.
 
-- Support for Linux and Windows containers via [Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/).
+- Support for Linux and Windows containers via [Web App for Containers](https://azure.microsoft.com/services/app-service/containers/).
 
 Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app.
 
@@ -89,7 +89,7 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
   <https://docs.microsoft.com/azure/app-service/app-service-web-overview>
 
 - Web App for Containers\
-  <https://azure.microsoft.com/en-us/services/app-service/containers/>
+  <https://azure.microsoft.com/services/app-service/containers/>
 
 - Introduction to Azure Kubernetes Service (AKS)\
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>

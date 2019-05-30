@@ -10,10 +10,10 @@ ms.author: "mairaw"
 ---
 # .NET Framework Deployment Guide for Administrators
 
-This step-by-step article describes how a system administrator can deploy the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its system dependencies across a network by using Microsoft System Center Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
+This step-by-step article describes how a system administrator can deploy the .NET Framework 4.5 and its system dependencies across a network by using Microsoft System Center Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the .NET Framework 4.5, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).
 
 > [!NOTE]
-> The software referenced in this document, including, without limitation, the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], System Center Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.
+> The software referenced in this document, including, without limitation, the .NET Framework 4.5, System Center Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.
 >
 > For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607) on the Microsoft Support website.
 
@@ -49,7 +49,7 @@ When you have the supporting infrastructure in place, you use System Center 2012
 
 ## Deploying the .NET Framework
 
-You can use System Center 2012 Configuration Manager to deploy a silent installation of the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], where the users do not interact with the installation process. Follow these steps:
+You can use System Center 2012 Configuration Manager to deploy a silent installation of the .NET Framework 4.5, where the users do not interact with the installation process. Follow these steps:
 
 1. [Create a collection](#creating_a_collection).
 
@@ -196,7 +196,7 @@ The package will now be deployed to the targeted collection and the silent insta
 
 ## Resources
 
-For more information about the infrastructure for testing the deployment of the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable package, see the following resources.
+For more information about the infrastructure for testing the deployment of the .NET Framework 4.5 redistributable package, see the following resources.
 
 **Active Directory, DNS, DHCP:**
 
@@ -243,7 +243,7 @@ You can use the [log collection tool](https://www.microsoft.com/download/details
 
 ### Return codes
 
-The following table lists the most common return codes from the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable installation program. The return codes are the same for all versions of the installer.
+The following table lists the most common return codes from the .NET Framework 4.5 redistributable installation program. The return codes are the same for all versions of the installer.
 
 For links to detailed information, see the next section, [Download error codes](#additional_error_codes).
 

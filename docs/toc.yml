@@ -434,11 +434,6 @@
     href: framework/install/
   - name: Migration Guide
     href: framework/migration-guide/
-  - name: .NET Framework on Docker Guide
-    href: framework/docker/index.md
-    items:
-    - name: Running Console Apps in Containers
-      href: framework//docker/console.md
   - name: Development Guide
     href: framework/development-guide.md
     items:
@@ -501,11 +496,13 @@
   - name: Get Started
     href: csharp/getting-started/
   - name: Tutorials
-    href: csharp/tutorials/index.md
     items:
-    - name: Introduction to C#
-      href: csharp/tutorials/intro-to-csharp/index.md
+    - name: Overview
+      href: csharp/tutorials/index.md
+    - name: Introduction to programming with C#
       items:
+      - name: Choose your first lesson
+        href: csharp/tutorials/intro-to-csharp/index.md
       - name: Hello world
         href: csharp/tutorials/intro-to-csharp/hello-world.yml
       - name: Numbers in C#
@@ -515,8 +512,9 @@
       - name: List collections
         href: csharp/tutorials/intro-to-csharp/list-collection.yml
       - name: Work in your local environment
-        href: csharp/tutorials/intro-to-csharp/local-environment.md
         items:
+        - name: Setup your environment
+          href: csharp/tutorials/intro-to-csharp/local-environment.md
         - name: Numbers in C#
           href: csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md
         - name: Branches and loops
@@ -614,7 +612,6 @@
     - name: Iterators
       href: csharp/iterators.md
     - name: Delegates & events
-      href: csharp/delegates-events.md
       items:
       - name: Introduction to Delegates
         href: csharp/delegates-overview.md
@@ -641,8 +638,9 @@
     - name: Write safe, efficient code
       href: csharp/write-safe-efficient-code.md
     - name: Expression Trees
-      href: csharp/expression-trees.md
       items:
+      - name: Introduction to expression trees
+        href: csharp/expression-trees.md
       - name: Expression Trees Explained
         href: csharp/expression-trees-explained.md
       - name: Framework Types Supporting Expression Trees
@@ -664,8 +662,9 @@
     - name: Versioning
       href: csharp/versioning.md
   - name: How To C# Topics
-    href: csharp/how-to/index.md
     items:
+    - name: Topic index
+      href: csharp/how-to/index.md
     - name: Parse strings using `String.Split`
       href: csharp/how-to/parse-strings-using-split.md
     - name: Concatenate strings

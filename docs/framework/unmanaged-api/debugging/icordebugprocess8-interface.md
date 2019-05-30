@@ -6,7 +6,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ICorDebugProcess8 Interface
-[Supported in the [!INCLUDE[net_v46](../../../../includes/net-v46-md.md)] and later versions]  
+[Supported in the .NET Framework 4.6 and later versions]  
   
  Logically extends the ICorDebugProcess interface to enable or disable certain types of [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) exception callbacks.  
   

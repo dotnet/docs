@@ -1,8 +1,6 @@
 ---
 title: Containerizing monolithic applications
 description: Containerizing monolithic applications, although doesn't get all the benefits from the microservices architecture, has important deployment benefits that can be delivered right away.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Containerizing monolithic applications

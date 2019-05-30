@@ -1,7 +1,7 @@
 ---
 title: dotnet vstest command
 description: The dotnet vstest command builds a project and all of its dependencies.
-author: guardrex
+author: mairaw
 ms.date: 05/30/2018
 ---
 # dotnet vstest

@@ -84,7 +84,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 * **`-v|--version <VERSION>`**
 
-  Version of the package.
+  Version of the package. See [NuGet package versioning](https://docs.microsoft.com/nuget/reference/package-versioning).
 
 ## Examples
 

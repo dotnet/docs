@@ -17,7 +17,7 @@ A workflow is a set of elemental units called *activities* that are stored as a 
   
  Each of these classes wraps the core activity runtime represented as a <xref:System.Activities.ActivityInstance> responsible for activity execution. There can be several <xref:System.Activities.ActivityInstance> objects within an application domain running concurrently.  
   
- Each of the preceding three host interaction objects is created from a tree of activities referred to as a workflow program. Using these types or a custom host that wraps <xref:System.Activities.ActivityInstance>, workflows can be executed inside any Windows process including console applications, forms-based applications, Windows Services, [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] Web sites, and Windows Communication Foundation (WCF) services.  
+ Each of the preceding three host interaction objects is created from a tree of activities referred to as a workflow program. Using these types or a custom host that wraps <xref:System.Activities.ActivityInstance>, workflows can be executed inside any Windows process including console applications, forms-based applications, Windows Services, ASP.NET Web sites, and Windows Communication Foundation (WCF) services.  
   
  ![Workflow components in the host process](./media/44c79d1d-178b-4487-87ed-3e33015a3842.gif "44c79d1d-178b-4487-87ed-3e33015a3842")  
 Workflow components in the host process  

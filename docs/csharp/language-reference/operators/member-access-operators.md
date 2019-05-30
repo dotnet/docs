@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "indexer operator [C#]"
   - "[] operator [C#]"
   - "null-conditional operators [C#]"
+  - "Elvis operator [C#]"
   - "?. operator [C#]"
   - "?[] operator [C#]"
   - "invocation operator [C#]"
@@ -25,7 +26,7 @@ helpviewer_keywords:
   - "delegate invocation [C#]"
   - "() operator [C#]"
 ---
-# Member access operators
+# Member access operators (C# Reference)
 
 You might use the following operators when you access a type member:
 
@@ -82,7 +83,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 ### Other usages of []
 
-For information about pointer element access, see [How to: access an array element with a pointer](../../programming-guide/unsafe-code-pointers/how-to-access-an-array-element-with-a-pointer.md).
+For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
 
 You also use square brackets to specify [attributes](../../programming-guide/concepts/attributes/index.md):
 
@@ -93,7 +94,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators ?. and ?[]
 
-Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`.
+Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`. The null-conditional member access operator `?.` is also known as the Elvis operator.
 
 The null-conditional operators are short-circuiting. That is, if one operation in a chain of conditional member or element access operations returns `null`, the rest of the chain doesn't execute. In the following example, `B` is not evaluated if `A` evaluates to `null` and `C` is not evaluated if `A` or `B` evaluates to `null`:
 

@@ -7,7 +7,7 @@ ms.assetid: f9714a64-d0ae-4a98-bca0-5d370fdbd631
 This topic discusses various issues specific to middle-tier client applications that use Windows Communication Foundation (WCF).  
   
 ## Increasing Middle-Tier Client Performance  
- Compared to previous communications technologies, such as Web services using [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], the creation of a WCF client instance can be more complex due to the rich feature set of WCF. For example, when a <xref:System.ServiceModel.ChannelFactory%601> object is opened it can establish a secure session with the service, a procedure that increases the startup time for the client instance. Typically, these additional feature capabilities do not affect client applications greatly since the WCF client makes several calls, and then closes.  
+ Compared to previous communications technologies, such as Web services using ASP.NET, the creation of a WCF client instance can be more complex due to the rich feature set of WCF. For example, when a <xref:System.ServiceModel.ChannelFactory%601> object is opened it can establish a secure session with the service, a procedure that increases the startup time for the client instance. Typically, these additional feature capabilities do not affect client applications greatly since the WCF client makes several calls, and then closes.  
   
  Middle-tier client applications, however, can create many WCF client objects quickly and, as a result, experience increased initialization requirements. There are two main approaches to increasing the performance of middle-tier applications when calling services:  
   

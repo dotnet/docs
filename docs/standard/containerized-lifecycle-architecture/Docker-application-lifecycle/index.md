@@ -1,8 +1,6 @@
 ---
 title: Introduction to the Docker application life cycle
 description: Begin here the journey of containerized application development.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 11/23/2018
 ---
 # Introduction to the Docker application life cycle

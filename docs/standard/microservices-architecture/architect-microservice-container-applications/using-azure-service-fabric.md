@@ -1,8 +1,6 @@
 ---
 title: Using Azure Service Fabric
 description: Understand what Azure Service Fabric application models you can use besides just using it for orchestrating containers.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 09/20/2018
 ---
 # Using Azure Service Fabric

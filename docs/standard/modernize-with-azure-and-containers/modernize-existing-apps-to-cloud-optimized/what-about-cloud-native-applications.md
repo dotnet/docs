@@ -1,8 +1,6 @@
 ---
 title: What about Cloud-Native applications?
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | What about Cloud-Native applications?
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 

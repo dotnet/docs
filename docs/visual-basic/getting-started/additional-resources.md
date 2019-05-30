@@ -33,7 +33,7 @@ The following web sites provide guidance and can help you find answers to common
 
 |Term|Definition|
 |----------|----------------|
-|[Visual Basic Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vbgeneral)|Discusses general Visual Basic issues.|
+|[Visual Basic Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral)|Discusses general Visual Basic issues.|
 
 ### Videos and webcasts
 

@@ -5,11 +5,11 @@ ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
 ---
 # What's New in ADO.NET
 
-The following features are new in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].
+The following features are new in ADO.NET in the .NET Framework 4.5.
 
 ## SqlClient Data Provider
 
-The following features are new in the .NET Framework Data Provider for SQL Server in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]:
+The following features are new in the .NET Framework Data Provider for SQL Server in .NET Framework 4.5:
 
 - The ConnectRetryCount and ConnectRetryInterval connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.
 
@@ -45,7 +45,7 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 ## ADO.NET Entity Framework
 
-The [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](https://go.microsoft.com/fwlink/?LinkId=234899).
+The .NET Framework 4.5 adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](https://go.microsoft.com/fwlink/?LinkId=234899).
 
 ## See also
 

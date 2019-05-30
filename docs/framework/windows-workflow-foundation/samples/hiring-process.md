@@ -120,7 +120,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Durable Timers|`ResumeRequestService` uses durable timers to define the duration of a Job Posting (once a time-out expires, the Job Posting is closed).|ResumeRequestService|  
 |Transactions|<xref:System.Activities.Statements.TransactionScope> is used to ensure consistency of data within the execution of several activities (when a new resume is received).|ResumeRequestService|  
 |Transactions|The custom persistence participant (`HiringRequestPersistenceParticipant`) and custom tracking participant (`HistoryFileTrackingParticipant`) use the same transaction.|HiringRequestService|  
-|Using [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications.|Workflows are accessed from two [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] applications.|InternalClient / CareersWebSite|  
+|Using [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in ASP.NET applications.|Workflows are accessed from two ASP.NET applications.|InternalClient / CareersWebSite|  
   
 ## Data Storage  
  Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] distribution).  

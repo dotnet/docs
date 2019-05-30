@@ -1,8 +1,6 @@
 ---
 title: Handling partial failure
 description: Learn how to handle partial failures gracefully. A microservice might not be fully functional but it might still be able to do some useful work.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/16/2018
 ---
 # Handle partial failure

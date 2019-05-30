@@ -1,8 +1,6 @@
 ---
 title: What is Docker?
 description: Get a little deeper in your understanding of Docker, a simple analogy here might help you.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 02/15/2019
 ---
 # What is Docker?

@@ -43,8 +43,11 @@ Upgrading the language version selects C# 8.0, but does not enable the nullable 
 A good next step is to turn on the nullable annotation context and see how many warnings are generated. Add the following element to both csproj files in the solution, directly under the `LangVersion` element:
 
 ```xml
-<NullableContextOptions>enable</NullableContextOptions>
+<Nullable>enable</Nullable>
 ```
+
+> [!IMPORTANT]
+> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
 Do a test build, and notice the warning list. In this small application, the compiler generates five warnings, so it's likely you'd leave the nullable annotation context enabled and start fixing warnings for the entire project.
 
@@ -52,7 +55,7 @@ That strategy works only for smaller projects. For any larger projects, the numb
 
 ## Warnings help discover original design intent
 
-There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `NullableContextOptions` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
+There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `Nullable` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
 
 ```csharp
 #nullable enable

@@ -1,8 +1,6 @@
 ---
 title: The API gateway pattern versus the direct client-to-microservice communication
 description: Understand the differences and the uses of the API gateway pattern and the direct client-to-microservice communication.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 01/07/2019
 ---
 # The API gateway pattern versus the Direct client-to-microservice communication

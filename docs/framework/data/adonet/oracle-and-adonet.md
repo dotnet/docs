@@ -57,7 +57,7 @@ csc /r:System.Data.OracleClient.dll
   
 ## Related Sections  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- Describes secure coding practices when using [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+ Describes secure coding practices when using ADO.NET.  
   
  [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  Describes how to create and use `DataSets`, typed `DataSets`, `DataTables`, and `DataViews`.  
@@ -69,7 +69,7 @@ csc /r:System.Data.OracleClient.dll
  Describes how to work with features and functionality that are specific to SQL Server.  
   
  [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
- Describes generic classes that allow you to write provider-independent code in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+ Describes generic classes that allow you to write provider-independent code in ADO.NET.  
   
 ## See also
 

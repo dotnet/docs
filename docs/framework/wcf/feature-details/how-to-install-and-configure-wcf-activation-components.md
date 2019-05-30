@@ -22,7 +22,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
 3. On the **Tasks** menu, click **Turn Windows features on or off**.  
   
-4. Find the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)] node, select and then expand it.  
+4. Find the WinFX node, select and then expand it.  
   
 5. Select the **WCF Non-Http Activation Components** box and save the setting.  
   

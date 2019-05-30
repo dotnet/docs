@@ -9,7 +9,7 @@ ms.author: "ronpet"
 > [!NOTE]
 >  This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
   
- Not all metadata lookup failures in apps developed using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain result in an exception.  Some can manifest in unpredictable ways in an app.  The following example shows an access violation caused by referencing a null object:  
+ Not all metadata lookup failures in apps developed using the .NET Native tool chain result in an exception.  Some can manifest in unpredictable ways in an app.  The following example shows an access violation caused by referencing a null object:  
   
 ```  
 Access violation - code c0000005 (first chance)  
@@ -46,7 +46,7 @@ AppViewModel.Current.LayoutVM.PageMap
   
  In this case, adding a runtime directive for `App.Core.ViewModels` resolved the issue. The root cause was an API call to the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method that returned **null**, and the app silently ignored the problem until a crash occurred.  
   
- In dynamic programming, a good practice when using reflection APIs under [!INCLUDE[net_native](../../../includes/net-native-md.md)] is to use the <xref:System.Type.GetType%2A?displayProperty=nameWithType> overloads that throw an exception on failure.  
+ In dynamic programming, a good practice when using reflection APIs under .NET Native is to use the <xref:System.Type.GetType%2A?displayProperty=nameWithType> overloads that throw an exception on failure.  
   
 ## Is this an isolated case?  
  Other issues might also arise when using `App.Core.ViewModels`.  You must decide whether it’s worth identifying and fixing each missing metadata exception, or saving time and adding directives for a larger class of types.  Here, adding `dynamic` metadata for `App.Core.ViewModels` might be the best approach if the resulting size increase of the output binary isn’t an issue.  

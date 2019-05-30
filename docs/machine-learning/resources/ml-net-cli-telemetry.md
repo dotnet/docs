@@ -37,15 +37,17 @@ Opt out of the telemetry feature by setting the `DOTNET_CLI_TELEMETRY_OPTOUT` en
 
 The feature collects the following data:
 
-- Which commands are invoked, such as `auto-train`
+- What command was invoked, such as `auto-train`
+- Command-line parameter names used (i.e. "dataset-name, label-column-name, ml-task, output-path, max-exploration-time, verbosity")
 - Hashed MAC address: a cryptographically (SHA256) anonymous and unique ID for a machine
 - Timestamp of an invocation
-- Three octet IP address used only to determine geographical location
+- Three octet IP address (not full IP address) used only to determine geographical location
 - Name of all arguments/parameters used. Not the customer's values, such as strings
+- Hashed dataset filename
+- Dataset file-size bucket
 - Operating system and version
-- Value of --ml-task parameter: Categorical values, such as `regression`, `binary-classification`, and `multiclass-classification`
-- [Logarithmic rounded](https://en.wikipedia.org/wiki/Rounding#Rounding_to_a_specified_power) dataset file size (nearest power of 2)
-- `ExitCode` of the command
+- Value of --task parameter: Categorical values, such as `regression`, `binary-classification`, and `multiclass-classification`
+- ML.NET CLI version (i.e. 0.3.27703.4)
 
 The data is sent securely to Microsoft servers using [Azure Application Insights](https://azure.microsoft.com/services/application-insights/) technology, held under restricted access, and used under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
@@ -68,5 +70,5 @@ When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) 
 ## See also
 - [ML.NET CLI reference](../reference/ml-net-cli-reference.md)
 - [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula)
-- [Privacy at Microsoft](https://www.microsoft.com/en-us/trustcenter/privacy/)
-- [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
+- [Privacy at Microsoft](https://www.microsoft.com/trustcenter/privacy/)
+- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)

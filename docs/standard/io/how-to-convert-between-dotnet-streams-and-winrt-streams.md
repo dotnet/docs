@@ -45,7 +45,7 @@ To convert from a .NET Framework stream to a Windows Runtime stream, use one of 
   
 - <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A?displayProperty=nameWithType> converts a managed stream in .NET for UWP apps to an output stream in the Windows Runtime.
   
-- [AsRandomAccessStream](../../../docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md) converts a managed stream in .NET for UWP apps to a random-access stream that the Windows Runtime can use for reading or writing.
+- <xref:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream%2A?displayProperty=nameWithType> converts a managed stream in .NET for UWP apps to a random-access stream that the Windows Runtime can use for reading or writing.
 
 When you convert a .NET Framework stream to a Windows Runtime stream, the capabilities of the converted stream depend on the original stream. For example, if the original stream supports both reading and writing, and you call <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A?displayProperty=nameWithType> to convert the stream, the returned type is an `IRandomAccessStream`. `IRandomAccessStream` implements `IInputStream` and `IOutputStream`, and supports reading and writing.
 
@@ -53,7 +53,7 @@ When you convert a .NET Framework stream to a Windows Runtime stream, the capabi
 
 ## Example: Convert .NET Framework to Windows Runtime random-access stream
 
-To convert from a .NET Framework stream to a Windows Runtime random-access stream, use the [AsRandomAccessStream](../../../docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md) method, as shown in the following example:
+To convert from a .NET Framework stream to a Windows Runtime random-access stream, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream%2A> method, as shown in the following example:
 
 > [!IMPORTANT]
 > Make sure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType> property to determine this.

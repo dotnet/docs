@@ -87,7 +87,7 @@ The multiplication operator `*` computes the product of its operands:
 
 [!code-csharp-interactive[multiplication operator](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#Multiplication)]
 
-The unary `*` operator is the [pointer indirection operator](multiplication-operator.md#pointer-indirection-operator).
+The unary `*` operator is the [pointer indirection operator](pointer-related-operators.md#pointer-indirection-operator-).
 
 ## Division operator /
 
@@ -147,7 +147,7 @@ The addition operator `+` computes the sum of its operands:
 
 [!code-csharp-interactive[addition operator](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#Addition)]
 
-You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` operator](addition-operator.md) article.
+You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` and `+=` operators](addition-operator.md) article.
 
 ## Subtraction operator -
 

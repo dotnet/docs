@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
 ---
 # How to: Use the ASP.NET Membership Provider
-The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider is a feature that enables [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] developers to create Web sites that allow users to create unique user name and password combinations. With this facility, any user can establish an account with the site, and sign in for exclusive access to the site and its services. This is in contrast to Windows security, which requires users to have accounts in a Windows domain. Instead, any user that supplies his or her credentials (the user name/password combination) can use the site and its services.  
+The ASP.NET membership provider is a feature that enables ASP.NET developers to create Web sites that allow users to create unique user name and password combinations. With this facility, any user can establish an account with the site, and sign in for exclusive access to the site and its services. This is in contrast to Windows security, which requires users to have accounts in a Windows domain. Instead, any user that supplies his or her credentials (the user name/password combination) can use the site and its services.  
   
- For a sample application, see [Membership and Role Provider](../../../../docs/framework/wcf/samples/membership-and-role-provider.md). For information about using the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider feature, see [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md).  
+ For a sample application, see [Membership and Role Provider](../../../../docs/framework/wcf/samples/membership-and-role-provider.md). For information about using the ASP.NET role provider feature, see [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md).  
   
  The membership feature requires using a SQL Server database to store the user information. The feature also includes methods for prompting with a question any users who have forgotten their password.  
   
- Windows Communication Foundation (WCF) developers can take advantage of these features for security purposes. When integrated into an WCF application, users must supply a user name/password combination to the WCF client application. To transfer the data to the WCF service, use a binding that supports user name/password credentials, such as the <xref:System.ServiceModel.WSHttpBinding> (in configuration, the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)) and set the client credential type to `UserName`. On the service, WCF security authenticates the user based on the user name and password, and also assigns the role specified by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role.  
+ Windows Communication Foundation (WCF) developers can take advantage of these features for security purposes. When integrated into an WCF application, users must supply a user name/password combination to the WCF client application. To transfer the data to the WCF service, use a binding that supports user name/password credentials, such as the <xref:System.ServiceModel.WSHttpBinding> (in configuration, the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)) and set the client credential type to `UserName`. On the service, WCF security authenticates the user based on the user name and password, and also assigns the role specified by the ASP.NET role.  
   
 > [!NOTE]
 >  WCF does not provide methods to populate the database with user name/password combinations or other user information.  
@@ -92,7 +92,7 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
 6. Set the `userNamePasswordValidationMode` attribute to `MembershipProvider`.  
   
     > [!IMPORTANT]
-    >  If the `userNamePasswordValidationMode` value is not set, WCF uses Windows authentication instead of the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider.  
+    >  If the `userNamePasswordValidationMode` value is not set, WCF uses Windows authentication instead of the ASP.NET membership provider.  
   
 7. Set the `membershipProviderName` attribute to the name of the provider (specified when adding the provider in the first procedure in this topic). The following example shows the `<serviceCredentials>` fragment to this point.  
   

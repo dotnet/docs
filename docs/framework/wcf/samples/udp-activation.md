@@ -69,7 +69,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 #### To set up this sample  
   
-1. Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  

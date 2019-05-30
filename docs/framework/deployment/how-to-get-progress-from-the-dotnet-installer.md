@@ -13,11 +13,11 @@ ms.author: "mairaw"
 
 # How to: Get Progress from the .NET Framework 4.5 Installer
 
-The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable runtime. If you develop apps for this version of the .NET Framework, you can include (chain) [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup as a prerequisite part of your app's setup. To present a customized or unified setup experience, you may want to silently launch [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup and track its progress while showing your app's setup progress. To enable silent tracking, [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup (which can be watched) defines a protocol by using a memory-mapped I/O (MMIO) segment to communicate with your setup (the watcher or chainer). This protocol defines a way for a chainer to obtain progress information, get detailed results, respond to messages, and cancel the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup.
+The .NET Framework 4.5 is a redistributable runtime. If you develop apps for this version of the .NET Framework, you can include (chain) .NET Framework 4.5 setup as a prerequisite part of your app's setup. To present a customized or unified setup experience, you may want to silently launch .NET Framework 4.5 setup and track its progress while showing your app's setup progress. To enable silent tracking, .NET Framework 4.5 setup (which can be watched) defines a protocol by using a memory-mapped I/O (MMIO) segment to communicate with your setup (the watcher or chainer). This protocol defines a way for a chainer to obtain progress information, get detailed results, respond to messages, and cancel the .NET Framework 4.5 setup.
 
-- **Invocation**. To call [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup and receive progress information from the MMIO section, your setup program must do the following:
+- **Invocation**. To call .NET Framework 4.5 setup and receive progress information from the MMIO section, your setup program must do the following:
 
-    1. Call the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]redistributable program:
+    1. Call the .NET Framework 4.5redistributable program:
 
         ```
         dotNetFx45_Full_x86_x64.exe /q /norestart /pipe section-name
@@ -31,9 +31,9 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 
         Please replace those names with names that are unique to your setup program.
 
-    2. Read from the MMIO section. In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the download and installation operations are simultaneous: One part of the .NET Framework might be installing while another part is downloading. As a result, progress is sent back (that is, written) to the MMIO section as two numbers (`m_downloadSoFar` and `m_installSoFar`) that increase from 0 to 255. When 255 is written and the .NET Framework exits, the installation is complete.
+    2. Read from the MMIO section. In the .NET Framework 4.5, the download and installation operations are simultaneous: One part of the .NET Framework might be installing while another part is downloading. As a result, progress is sent back (that is, written) to the MMIO section as two numbers (`m_downloadSoFar` and `m_installSoFar`) that increase from 0 to 255. When 255 is written and the .NET Framework exits, the installation is complete.
 
-- **Exit codes**. The following exit codes from the command to call the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable program indicate whether setup has succeeded or failed:
+- **Exit codes**. The following exit codes from the command to call the .NET Framework 4.5 redistributable program indicate whether setup has succeeded or failed:
 
   - 0 - Setup completed successfully.
 
@@ -47,7 +47,7 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 
 ## Chainer Sample
 
-The Chainer sample silently launches and tracks [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup while showing progress. This sample is similar to the Chainer sample provided for the .NET Framework 4. However, in addition, it can avoid system restarts by processing the message box for closing .NET Framework 4 apps. For information about this message box, see [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md). You can use this sample with the .NET Framework 4 installer; in that scenario, the message is simply not sent.
+The Chainer sample silently launches and tracks .NET Framework 4.5 setup while showing progress. This sample is similar to the Chainer sample provided for the .NET Framework 4. However, in addition, it can avoid system restarts by processing the message box for closing .NET Framework 4 apps. For information about this message box, see [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md). You can use this sample with the .NET Framework 4 installer; in that scenario, the message is simply not sent.
 
 > [!WARNING]
 > You must run the example as an administrator.
@@ -58,7 +58,7 @@ The following sections describe the significant files in this sample: MMIOChaine
 
 #### MMIOChainer.h
 
-- The MMIOChainer.h file (see [complete code](https://go.microsoft.com/fwlink/?LinkId=231369)) contains the data structure definition and the base class from which the chainer class should be derived. The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] extends the MMIO data structure to handle data that the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] installer needs. The changes to the MMIO structure are backward-compatible, so a .NET Framework 4 chainer can work with .NET Framework 4.5 setup without requiring recompilation. However, this scenario does not support the feature for reducing system restarts.
+- The MMIOChainer.h file (see [complete code](https://go.microsoft.com/fwlink/?LinkId=231369)) contains the data structure definition and the base class from which the chainer class should be derived. The .NET Framework 4.5 extends the MMIO data structure to handle data that the .NET Framework 4.5 installer needs. The changes to the MMIO structure are backward-compatible, so a .NET Framework 4 chainer can work with .NET Framework 4.5 setup without requiring recompilation. However, this scenario does not support the feature for reducing system restarts.
 
     A version field provides a means of identifying revisions to the structure and message format. The .NET Framework setup determines the version of the chainer interface by calling the `VirtualQuery` function to determine the size of the file mapping. If the size is large enough to accommodate the version field, .NET Framework setup uses the specified value. If the file mapping is too small to contain a version field, which is the case with the .NET Framework 4, the setup process assumes version 0 (4). If the chainer does not support the version of the message that .NET Framework setup wants to send, .NET Framework setup assumes an ignore response.
 
@@ -91,7 +91,7 @@ The following sections describe the significant files in this sample: MMIOChaine
         };
     ```
 
-- The `MmioDataStructure` data structure should not be used directly; use the `MmioChainer` class instead to implement your chainer. Derive from the `MmioChainer` class to chain the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable.
+- The `MmioDataStructure` data structure should not be used directly; use the `MmioChainer` class instead to implement your chainer. Derive from the `MmioChainer` class to chain the .NET Framework 4.5 redistributable.
 
 #### IProgressObserver.h
 
@@ -146,7 +146,7 @@ The following sections describe the significant files in this sample: MMIOChaine
     }
     ```
 
-- Before launching the installation, the chainer checks to see if the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is already installed by calling `IsNetFx4Present`:
+- Before launching the installation, the chainer checks to see if the .NET Framework 4.5 is already installed by calling `IsNetFx4Present`:
 
     ```cpp
     ///  Checks for presence of the .NET Framework 4.
@@ -302,7 +302,7 @@ The following sections describe the significant files in this sample: MMIOChaine
     ```
 
     > [!IMPORTANT]
-    > The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable typically writes many progress messages and a single message that indicates completion (on the chainer side). It also reads asynchronously, looking for `Abort` records. If it receives an `Abort` record, it cancels the installation, and writes a finished record with E_ABORT as its data after the installation has been aborted and setup operations have been rolled back.
+    > The .NET Framework 4.5 redistributable typically writes many progress messages and a single message that indicates completion (on the chainer side). It also reads asynchronously, looking for `Abort` records. If it receives an `Abort` record, it cancels the installation, and writes a finished record with E_ABORT as its data after the installation has been aborted and setup operations have been rolled back.
 
 A typical server creates a random MMIO file name, creates the file (as shown in the previous code example, in `Server::CreateSection`), and launches the redistributable by using the `CreateProcess` method and passing the pipe name with the `-pipe someFileSectionName` option. The server should implement `OnProgress`, `Send`, and `Finished` methods with application UI-specific code.
 

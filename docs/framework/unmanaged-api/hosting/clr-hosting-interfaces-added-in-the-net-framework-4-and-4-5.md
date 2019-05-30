@@ -12,7 +12,7 @@ ms.author: "ronpet"
 # CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5
 This section describes interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)], .NET Framework 4.5, and later versions into their applications. These interfaces provide methods for a host to configure and load the runtime into a process.  
   
- Starting with the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)], all hosting interfaces have the following characteristics:  
+ Starting with the .NET Framework 4, all hosting interfaces have the following characteristics:  
   
 - They use lifetime management (`AddRef` and `Release`), encapsulation (implicit context) and `QueryInterface` from COM.  
   

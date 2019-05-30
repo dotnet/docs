@@ -31,10 +31,10 @@ ms.author: "mairaw"
  To profile a CLR application, you must set the COR_ENABLE_PROFILING and COR_PROFILER environment variables before you run the application. You must also make sure that the profiler DLL is registered.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)], profilers do not have to be registered.  
+>  Starting with the .NET Framework 4, profilers do not have to be registered.  
   
 > [!NOTE]
->  To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] and later versions, you must set the COMPLUS_ProfAPI_ProfilerCompatibilitySetting environment variable.  
+>  To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the .NET Framework 4 and later versions, you must set the COMPLUS_ProfAPI_ProfilerCompatibilitySetting environment variable.  
   
 ## Environment Variable Scope  
  How you set the COR_ENABLE_PROFILING and COR_PROFILER environment variables will determine their scope of influence. You can set these variables in one of the following ways:  

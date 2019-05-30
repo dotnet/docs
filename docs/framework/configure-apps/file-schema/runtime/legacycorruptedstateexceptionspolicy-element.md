@@ -58,10 +58,10 @@ Specifies whether the common language runtime allows managed code to catch acces
   
 - Apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=nameWithType> attribute to the method that contains the exceptions `catch` block.  
   
- This configuration element is available only in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)] and later.  
+ This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
- The following example shows how to specify that the application should revert to the behavior before the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], and catch all corrupting state exception failures.  
+ The following example shows how to specify that the application should revert to the behavior before the .NET Framework 4, and catch all corrupting state exception failures.  
   
 ```xml  
 <configuration>  

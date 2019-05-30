@@ -34,7 +34,7 @@ Specifies whether shadow copying uses the default startup behavior introduced in
   
 |Value|Description|  
 |-----------|-----------------|  
-|true|At startup, copies only assemblies that have been updated since they were last copied to the shadow copy directory. This is the default for the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)].|  
+|true|At startup, copies only assemblies that have been updated since they were last copied to the shadow copy directory. This is the default for the .NET Framework 4.|  
 |false|Reverts to the startup behavior of previous versions of the .NET Framework, which was to copy all files at startup.|  
   
 ### Child Elements  
@@ -48,10 +48,10 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], assemblies are shadow copied only if their time stamps indicate that they have changed since they were last copied to the shadow copy directory. This improves startup times for many applications that use shadow copying, as described in [Shadow Copying Assemblies](../../../../../docs/framework/app-domains/shadow-copy-assemblies.md). Applications that have a high percentage and frequency of assembly updates might not benefit from this change in behavior. In that case, you can use this element to restore the behavior of previous versions of the .NET Framework.  
+ Starting with the .NET Framework 4, assemblies are shadow copied only if their time stamps indicate that they have changed since they were last copied to the shadow copy directory. This improves startup times for many applications that use shadow copying, as described in [Shadow Copying Assemblies](../../../../../docs/framework/app-domains/shadow-copy-assemblies.md). Applications that have a high percentage and frequency of assembly updates might not benefit from this change in behavior. In that case, you can use this element to restore the behavior of previous versions of the .NET Framework.  
   
 ## Example  
- The following example shows how to disable the default startup behavior of shadow copying in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], and revert to the startup behavior of previous versions of the .NET Framework.  
+ The following example shows how to disable the default startup behavior of shadow copying in the .NET Framework 4, and revert to the startup behavior of previous versions of the .NET Framework.  
   
 ```xml  
 <configuration>  

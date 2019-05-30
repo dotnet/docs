@@ -11,7 +11,7 @@ ms.date: 01/30/2019
 > "Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (aka SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner."  
 > _\- Daryl Plummer, Gartner analyst_
 
-Whatever your application's needs and architecture, Windows Azure can support it. Your hosting needs can be as simple as a static website to a sophisticated application made up of dozens of services. For ASP.NET Core monolithic web applications and supporting services, there are several well-known configurations that are recommended. The recommendations on this article are grouped based on the kind of resource to be hosted, whether full applications, individual processes, or data.
+Whatever your application's needs and architecture, Windows Azure can support it. Your hosting needs can be as simple as a static website or a sophisticated application made up of dozens of services. For ASP.NET Core monolithic web applications and supporting services, there are several well-known configurations that are recommended. The recommendations on this article are grouped based on the kind of resource to be hosted, whether full applications, individual processes, or data.
 
 ## Web applications
 
@@ -19,11 +19,11 @@ Web applications can be hosted with:
 
 - App Service Web Apps
 
-- Containers
+- Containers (several options)
 
 - Virtual Machines (VMs)
 
-Of these, App Service Web Apps is the recommended approach for most scenarios. For microservice architectures, consider a container-based approach. If you need more control over the machines running your application, consider Azure Virtual Machines.
+Of these, App Service Web Apps is the recommended approach for most scenarios, including simple container-based apps. For microservice architectures, consider a container-based approach. If you need more control over the machines running your application, consider Azure Virtual Machines.
 
 ### App Service Web Apps
 
@@ -39,9 +39,21 @@ App Service Web Apps offers a fully managed platform optimized for hosting web a
 
 - Visual Studio integration.
 
-- Support for Linux and Windows containers via [Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/).
+Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app. If you have an existing ASP.NET application hosted on-premises using a local database, there is a clear path to migrate the app to an App Service Web App with an Azure SQL Database (or alternately secure access to your on-premises database server).
 
-Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app.
+![](./media/image1-6.png)
+
+In most cases, moving from a locally-hosted ASP.NET app to an App Service Web App is a straightforward process. Little or no modification should be required of the app itself, and it can quickly start to take advantage of the many features that Azure App Service Web Apps offer.
+
+### App Service Web Apps for Containers
+
+In addition to support for hosting web apps directly, [App Service Web Apps for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/) can be used to run containerized applications on Windows and Linux. Using this product, you can easily deploy and run containerized applications that can scale with your business. The apps have all of the features of App Service Web Apps listed above. In addition, Web Apps for Containers support streamlined CI/CD with Docker Hub, Azure Container Registry, and GitHub. You can use Azure DevOps to define build and deployment pipelines that publish changes to a registry. These changes can then be tested in a staging environment and automatically deployed to production using deployment slots, allowing zero-downtime upgrades. Rolling back to previous versions can be done just as easily.
+
+There are a few scenarios where Web Apps for Containers make the most sense. If you have existing apps that you're able to containerize, whether in Windows or Linux containers, you'll be able to host these easily using this toolset. Simply publish your container and then configure Web Apps for Containers to pull the latest version of that image from your registry of choice. This is a "lift and shift" approach to migrating from classic app hosting models to a cloud-optimized model.
+
+![](./media/image1-7.png)
+
+I
 
 ### Azure Kubernetes Service
 

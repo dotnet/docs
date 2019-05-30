@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 93312eaf-07e0-4a55-b4f7-4cdbbc4dee2d
 ---
 # State Machine Activities in WF
-[!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides several system-provided activities and activity designers for creating state machine workflows.  
+.NET Framework 4.5 provides several system-provided activities and activity designers for creating state machine workflows.  
   
 |||  
 |-|-|  

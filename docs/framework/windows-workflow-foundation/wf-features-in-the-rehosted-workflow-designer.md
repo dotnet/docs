@@ -4,16 +4,16 @@ ms.date: "03/30/2017"
 ms.assetid: 1a4a4038-d8e6-41dd-99ea-93bd76286772
 ---
 # Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer
-Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] introduced many new features, including several enhancements to the workflow designer experience. This topic details which of these features are supported in the rehosted designer, and which ones are currently not supported.
+Windows Workflow Foundation (WF) in .NET Framework 4.5 introduced many new features, including several enhancements to the workflow designer experience. This topic details which of these features are supported in the rehosted designer, and which ones are currently not supported.
 
 > [!NOTE]
->  For a list of all of the new Windows Workflow Foundation (WF) features introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], including those that are unrelated to designer rehosting, see [What's New in Windows Workflow Foundation in .NET 4.5](whats-new-in-wf-in-dotnet.md).
+>  For a list of all of the new Windows Workflow Foundation (WF) features introduced in .NET Framework 4.5, including those that are unrelated to designer rehosting, see [What's New in Windows Workflow Foundation in .NET 4.5](whats-new-in-wf-in-dotnet.md).
 
 ## Activities
  The built-in activity library contains new activities and new features for existing activities. All of these new activities are supported in the rehosted designer. For more information on these new activities, see the [Activities](whats-new-in-wf-in-dotnet.md#BKMK_NewActivities) section of [What's New in Windows Workflow Foundation in .NET 4.5](whats-new-in-wf-in-dotnet.md).
 
 ## C# Expressions
- Prior to [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], all expressions in workflows could only be written in Visual Basic. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Visual Basic expressions are only used for projects created using Visual Basic. Visual C# projects now use C# for expressions. When authoring workflows in Visual Studio 2012, a fully functional C# expression editor is provided which capabilities such as grammar highlighting and intellisense. C# workflow projects created in previous versions that use Visual Basic expressions will continue to work.
+ Prior to .NET Framework 4.5, all expressions in workflows could only be written in Visual Basic. In .NET Framework 4.5, Visual Basic expressions are only used for projects created using Visual Basic. Visual C# projects now use C# for expressions. When authoring workflows in Visual Studio 2012, a fully functional C# expression editor is provided which capabilities such as grammar highlighting and intellisense. C# workflow projects created in previous versions that use Visual Basic expressions will continue to work.
 
 > [!WARNING]
 >  C# expressions are not supported in the rehosted designer.
@@ -21,20 +21,20 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
 ## New Designer Capabilities
 
 ### Designer Search
- The [Quick Find](whats-new-in-wf-in-dotnet.md#BKMK_QuickFind) and [Find in Files](whats-new-in-wf-in-dotnet.md#BKMK_FindInFiles) features introduced with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] are not supported in the rehosted designer. The `Toolbox` search is supported in the rehosted designer. For more information on these features, see [Designer Search](whats-new-in-wf-in-dotnet.md#BKMK_DesignerSearch).
+ The [Quick Find](whats-new-in-wf-in-dotnet.md#BKMK_QuickFind) and [Find in Files](whats-new-in-wf-in-dotnet.md#BKMK_FindInFiles) features introduced with .NET Framework 4.5 are not supported in the rehosted designer. The `Toolbox` search is supported in the rehosted designer. For more information on these features, see [Designer Search](whats-new-in-wf-in-dotnet.md#BKMK_DesignerSearch).
 
 > [!WARNING]
 >  [Quick Find](whats-new-in-wf-in-dotnet.md#BKMK_QuickFind) and [Find in Files](whats-new-in-wf-in-dotnet.md#BKMK_FindInFiles) are not supported in the rehosted designer.
 
 ### Delete context menu item in variable and argument designer
- In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], variables and arguments could only be deleted in the designer using the keyboard. Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], variables and arguments can be deleted using the context menu. This feature is supported in the rehosted designer.
+ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], variables and arguments could only be deleted in the designer using the keyboard. Starting with .NET Framework 4.5, variables and arguments can be deleted using the context menu. This feature is supported in the rehosted designer.
 
  The following screenshot shows the variable and argument designer context menu.
 
  ![Variable and Argument Designer Context Menu](./media/wf-features-in-the-rehosted-workflow-designer/designer-context-menu.png)
 
 ### Auto-surround with Sequence
- Since a workflow or certain container activities (such as <xref:System.Activities.Statements.NoPersistScope>) can only contain a single body activity, adding a second activity required the developer to delete the first activity, add a <xref:System.Activities.Statements.Sequence> activity, and then add both activities to the sequence activity. Starting with [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], when adding a second activity to the designer surface, a `Sequence` activity will be automatically created to wrap both activities. This feature is supported in the rehosted designer.
+ Since a workflow or certain container activities (such as <xref:System.Activities.Statements.NoPersistScope>) can only contain a single body activity, adding a second activity required the developer to delete the first activity, add a <xref:System.Activities.Statements.Sequence> activity, and then add both activities to the sequence activity. Starting with .NET Framework 4.5, when adding a second activity to the designer surface, a `Sequence` activity will be automatically created to wrap both activities. This feature is supported in the rehosted designer.
 
  The following screenshot shows a `WriteLine` activity in the `Body` of a `NoPersistScope`.
 
@@ -66,10 +66,10 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
  ![Screenshot of outline view with a sequential workflow in Visual Studio](./media/wf-features-in-the-rehosted-workflow-designer/outline-view-in-workflow-designer.jpg)
 
 ### More control of visibility of shell bar and header items
- In a rehosted designer, some of the standard UI controls may not have meaning for a given workflow, and may be turned off. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this customization is only supported by the shell bar at the bottom of the designer. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the visibility of shell header items at the top of the designer can be adjusted by setting <xref:System.Activities.Presentation.View.DesignerView.WorkflowShellHeaderItemsVisibility%2A> with the appropriate <xref:System.Activities.Presentation.View.ShellHeaderItemsVisibility> value.
+ In a rehosted designer, some of the standard UI controls may not have meaning for a given workflow, and may be turned off. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this customization is only supported by the shell bar at the bottom of the designer. In .NET Framework 4.5, the visibility of shell header items at the top of the designer can be adjusted by setting <xref:System.Activities.Presentation.View.DesignerView.WorkflowShellHeaderItemsVisibility%2A> with the appropriate <xref:System.Activities.Presentation.View.ShellHeaderItemsVisibility> value.
 
 ### Auto-connect and auto-insert in Flowchart and State Machine workflows
- In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], connections between nodes in a Flowchart workflow had to be added manually. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Flowchart and State Machine nodes have auto-connect points that become visible when an activity is dragged from the toolbox onto the designer surface. Dropping an activity on one of these points automatically adds the activity along with the necessary connection.
+ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], connections between nodes in a Flowchart workflow had to be added manually. In .NET Framework 4.5, Flowchart and State Machine nodes have auto-connect points that become visible when an activity is dragged from the toolbox onto the designer surface. Dropping an activity on one of these points automatically adds the activity along with the necessary connection.
 
  The following screenshot shows the attachment points that become visible when an activity is dragged from the toolbox.
 
@@ -94,7 +94,7 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
  Activity delegates are supported in the rehosted designer.
 
 ### Build-time validation
- In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflow validation errors weren’t counted as build errors during the build of a workflow project. This meant that building a workflow project could succeed even when there were workflow validation errors. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], workflow validation errors cause the build to fail.
+ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflow validation errors weren’t counted as build errors during the build of a workflow project. This meant that building a workflow project could succeed even when there were workflow validation errors. In .NET Framework 4.5, workflow validation errors cause the build to fail.
 
 > [!WARNING]
 >  Build-time validation is not supported in the rehosted designer.  
@@ -105,18 +105,18 @@ Windows Workflow Foundation (WF) in [!INCLUDE[net_v45](../../../includes/net-v45
  Design-time background validation is supported in the rehosted designer.  
   
 ### View state located in a separate location in XAML files  
- In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the view state information for a workflow is stored across the XAML file in many different locations. This is inconvenient for developers who want to read XAML directly, or write code to remove the view state information. In [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the view state information in the XAML file is serialized as a separate element in the XAML file.  Developers can easily locate and edit the view state information of an activity, or remove the view state altogether.  
+ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the view state information for a workflow is stored across the XAML file in many different locations. This is inconvenient for developers who want to read XAML directly, or write code to remove the view state information. In .NET Framework 4.5, the view state information in the XAML file is serialized as a separate element in the XAML file.  Developers can easily locate and edit the view state information of an activity, or remove the view state altogether.  
   
  This feature is supported in the rehosted workflow designer.  
   
 ### Opt-in for Workflow 4.5 features in rehosted designer  
- To preserve backward compatibility, some new features included in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] are not enabled by default in the rehosted designer. This is to ensure that existing applications that use the rehosted designer are not broken by updating to the latest version. To enable new features in the rehosted designer, either set <xref:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName%2A> to ".Net Framework 4.5", or set individual members of <xref:System.Activities.Presentation.DesignerConfigurationService> to enable individual features.  
+ To preserve backward compatibility, some new features included in .NET Framework 4.5 are not enabled by default in the rehosted designer. This is to ensure that existing applications that use the rehosted designer are not broken by updating to the latest version. To enable new features in the rehosted designer, either set <xref:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName%2A> to ".Net Framework 4.5", or set individual members of <xref:System.Activities.Presentation.DesignerConfigurationService> to enable individual features.  
   
 ## New Workflow Development Models  
  In addition to flowchart and sequential workflow development models, this release includes State Machine workflows, and contract-first workflow services.  
   
 ### State machine workflows  
- State machine workflows were introduced as part of the .NET Framework 4.0.1 in the [Microsoft .NET Framework 4 Platform Update 1](https://go.microsoft.com/fwlink/?LinkID=215092). This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. Updates include:  
+ State machine workflows were introduced as part of the .NET Framework 4.0.1 in the [Microsoft .NET Framework 4 Platform Update 1](https://go.microsoft.com/fwlink/?LinkID=215092). This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for .NET Framework 4.5. Updates include:  
   
 1. The ability to set breakpoints on states  
   

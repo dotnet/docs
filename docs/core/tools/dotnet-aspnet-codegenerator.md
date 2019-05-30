@@ -7,7 +7,7 @@ ms.date: 06/15/2019
 
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 ## Name
 
@@ -29,21 +29,10 @@ dotnet tool update -g aspnet-codegenerator
 
 ## Synopsis
 
-# [.NET Core 2.1](#tab/netcore21)
-
 ```
 dotnet aspnet-codegenerator [arguments] [-p|--project] [-n|--nuget-package-dir] [-c|--configuration] [-tfm|--target-framework] [-b|--build-base-path] [--no-build] 
 dotnet aspnet-codegenerator [-h|--help]
 ```
-
-# [.NET Core 2.2](#tab/netcore22)
-
-```
-dotnet aspnet-codegenerator [arguments] [-p|--project] [-n|--nuget-package-dir] [-c|--configuration] [-tfm|--target-framework] [-b|--build-base-path] [--no-build] 
-dotnet aspnet-codegenerator [-h|--help]
-```
-
----
 
 ## Description
 
@@ -57,33 +46,48 @@ The code generator to run. The following generators are available:
 
 | Generator | Operation |
 | ----------------- | ------------ | 
-| area      | Generates an MVC Area |
+| area      | Generates an [Area](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2) |
   controller| [Scaffolds a controller](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) |
   identity  | [Scaffolds Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-2.2&tabs=netcore-cli) |
   razorpage | [Scaffolds Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code) |
-  view      | Generates a view |
-
+  view      | Generates a [view](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/overview?view=aspnetcore-2.2) |
 
 ## Options
 
-# [.NET Core 2.1](#tab/netcore21)
+**`-n|--nuget-package-dir`**
 
-dotnet aspnet-codegenerator [arguments] [-p|--project] [-n|--nuget-package-dir] [-c|--configuration] [-tfm|--target-framework] [-b|--build-base-path] [--no-build] 
+Specifies the NuGet package directory.
 
-`-h|--help`
+**`-c|--configuration {Debug|Release}`**
+
+  Defines the build configuration. The default value is `Debug`.
+
+**`-tfm|--target-framework`**
+
+Target [Framework](../../standard/frameworks.md) to use. For example, `net46`.
+
+<!-- REVIEW: Is this specified on the command line or in the project file? -->
+
+**`-b|--build-base-path`**
+
+The build base path.
+
+**`-h|--help`**
 
 Prints out a short help for the command.
 
-`--no-build`
+**`--no-build`**
 
 Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
 
-`-p|--project <PATH>`
+**`-p|--project <PATH>`**
 
 Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
-# [.NET Core 2.0](#tab/netcore22)
+## Generator options
 
----
+### controller options
 
-## Examples
+The following table lists the `aspnet-codegenerator controller` options:
+
+[!INCLUDE [aspnet-codegenerator-args-md.md](../../../includes/aspnet-codegenerator-args-md.md)]

@@ -1,1 +1,1 @@
-**This article applies to: ✓** .NET Core 2.1 SDK
+**This article applies to: ✓** .NET Core 2.1 SDK and later

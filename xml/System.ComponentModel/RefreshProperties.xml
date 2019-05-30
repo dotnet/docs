@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The following code example demonstrates using the <xref:System.ComponentModel.RefreshPropertiesAttribute> class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
+ The following example uses the <xref:System.ComponentModel.RefreshPropertiesAttribute> class to specify the refresh mode for a `DataSource` property. For a full code listing, see [How to: Apply Attributes in Windows Forms Controls](~/docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md).  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
  [!code-vb[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#25)]  

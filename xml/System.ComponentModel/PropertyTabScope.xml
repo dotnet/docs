@@ -30,11 +30,10 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- <xref:System.ComponentModel.PropertyTabScope> indicates the persistence scope of a tab that is displayed in the Properties window when a component of a design document has an associated <xref:System.ComponentModel.PropertyTabAttribute>.  
-  
-   
-  
+## Remarks
+
+<xref:System.ComponentModel.PropertyTabScope> indicates the persistence scope of a tab that is displayed in the Properties window when a component of a design document has an associated <xref:System.ComponentModel.PropertyTabAttribute>.  
+
 ## Examples  
  The following code example demonstrates how to use <xref:System.ComponentModel.PropertyTabScope> to specify the scope of a property tab.  
   
@@ -112,18 +111,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>This tab is specific to the current document. This tab is added to the Properties window and is removed when the currently selected document changes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use <xref:System.ComponentModel.PropertyTabScope> to specify the scope of a property tab.  
-  
- [!code-cpp[PropertyTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/PropertyTabExample/CPP/class1.cpp#1)]
- [!code-csharp[PropertyTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/PropertyTabExample/CS/class1.cs#1)]
- [!code-vb[PropertyTabExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PropertyTabExample/VB/class1.vb#1)]  
-  
- ]]></format>
-        </remarks>
         <altmember cref="T:System.ComponentModel.PropertyTabAttribute" />
       </Docs>
     </Member>

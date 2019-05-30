@@ -175,15 +175,7 @@
       </ReturnValue>
       <MemberValue>32773</MemberValue>
       <Docs>
-        <summary>A negative arrival acknowledgment indicating that the original message's hop count (which indicates the number of intermediate servers) was exceeded.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The maximum hop count, 15, is set by Message Queuing and is immutable.  
-  
- ]]></format>
-        </remarks>
+        <summary>A negative arrival acknowledgment indicating that the original message's hop count (which indicates the number of intermediate servers) was exceeded. The maximum hop count, 15, is set by Message Queuing and is immutable.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">

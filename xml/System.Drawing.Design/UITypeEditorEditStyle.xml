@@ -58,17 +58,6 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>Displays a drop-down arrow button and hosts the user interface (UI) in a drop-down dialog box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example demonstrates how to use <xref:System.Drawing.Design.UITypeEditorEditStyle> to specify the style of a custom <xref:System.Drawing.Design.UITypeEditor>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Design.DocumentDesigner> class.  
-  
- [!code-csharp[System.Windows.Forms.Design.DocumentDesigner#93](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/CS/marqueeborder.cs#93)]
- [!code-vb[System.Windows.Forms.Design.DocumentDesigner#93](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/VB/marqueeborder.vb#93)]  
-  
- ]]></format>
-        </remarks>
         <altmember cref="T:System.Drawing.Design.UITypeEditor" />
       </Docs>
     </Member>

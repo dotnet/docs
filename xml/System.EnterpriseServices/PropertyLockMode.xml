@@ -46,17 +46,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Locks all the properties in the shared property group for exclusive use by the caller, as long as the caller's current method is executing.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!CAUTION]
->  Do not use <xref:System.EnterpriseServices.PropertyLockMode.Method> when creating a property group in a constructor because this can cause a deadlock.  
-  
- ]]></format>
-        </remarks>
+        <summary>Locks all the properties in the shared property group for exclusive use by the caller, as long as the caller's current method is executing.
+        
+<b>CAUTION:</b> Do not use <c>PropertyLockMode.Method</c> when creating a property group in a constructor because this can cause a deadlock.</summary>
       </Docs>
     </Member>
     <Member MemberName="SetGet">

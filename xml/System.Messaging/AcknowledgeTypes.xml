@@ -116,15 +116,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>A mask used to request a negative acknowledgment when the original message fails to be received from the queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using the <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=nameWithType> method does not remove a message from the queue, so this acknowledgment type could be returned even if you did peek the message. Only the <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=nameWithType> method (or the related asynchronous <xref:System.Messaging.MessageQueue.BeginReceive%2A?displayProperty=nameWithType> method) removes a message from the queue.  
-  
- ]]></format>
-        </remarks>
+        <summary>A mask used to request a negative acknowledgment when the original message fails to be received from the queue.
+        
+Using the <c>MessageQueue.Peek</c> method does not remove a message from the queue, so this acknowledgment type could be returned even if you did peek the message. Only the <c>MessageQueue.Receive</c> method (or the related asynchronous <c>MessageQueue.BeginReceive</c> method) removes a message from the queue.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">

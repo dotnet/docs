@@ -74,15 +74,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The data is encrypted by using Kerberos.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This flag can only be used with the Negotiate context option and is not available with the simple bind option.  
-  
- ]]></format>
-        </remarks>
+        <summary>The data is encrypted by using Kerberos. This flag can only be used with the Negotiate context option and is not available with the simple bind option.</summary>
       </Docs>
     </Member>
     <Member MemberName="SecureSocketLayer">
@@ -170,15 +162,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The client is authenticated by using the Basic authentication.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Caution** Communications may be sent over the Internet in clear text if the SecureSocketsLayer option is not specified with simple bind.  
-  
- ]]></format>
-        </remarks>
+        <summary>The client is authenticated by using the Basic authentication.
+        
+<b>Caution:</b> Communications may be sent over the Internet in clear text if the `SecureSocketsLayer` option is not specified with simple bind.  
+        </summary>
       </Docs>
     </Member>
   </Members>

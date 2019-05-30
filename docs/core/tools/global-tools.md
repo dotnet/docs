@@ -145,6 +145,12 @@ The following command shows which commands are available for Global Tools:
 dotnet tool --help
 ```
 
+To display all of the Global Tools currently installed on the machine, along with their version and commands, use the [dotnet tool list](dotnet-tool-list.md) command:
+
+```console
+dotnet tool list -g
+```
+
 The [dotnet tool update](dotnet-tool-update.md) command updates a global tool tool to the latest stable version available from the installed .NET Core SDKs:
 
 ```console
@@ -163,8 +169,4 @@ Global Tools are removed with the [dotnet tool uninstall](dotnet-tool-uninstall.
 dotnet tool uninstall -g <packagename>
 ```
 
-To display all of the Global Tools currently installed on the machine, along with their version and commands, use the [dotnet tool list](dotnet-tool-list.md) command:
-
-```console
-dotnet tool list -g
-```
+For more information on `aspnet-codegenerator`, see [dotnet aspnet-codegenerator](dotnet aspnet-codegenerator.md)

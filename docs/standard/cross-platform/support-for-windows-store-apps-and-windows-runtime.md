@@ -13,7 +13,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # .NET Framework Support for Windows Store Apps and Windows Runtime
-The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:
+The .NET Framework 4.5 supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:
 
 - Developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps with XAML controls, as described in [Roadmap for Windows Store apps using C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10)), [How tos (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10)), and [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)).
 
@@ -121,7 +121,7 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of so
 - The types in your component can derive from [!INCLUDE[wrt](../../../includes/wrt-md.md)] types. Controls can derive from the primitive control types in the <xref:Windows.UI.Xaml.Controls.Primitives> namespace or from more finished controls such as <xref:Windows.UI.Xaml.Controls.Button>.
 
     > [!IMPORTANT]
-    >  Starting with [!INCLUDE[win8](../../../includes/win8-md.md)] and the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], all public types in a managed [!INCLUDE[wrt](../../../includes/wrt-md.md)] component must be sealed. A type in another [!INCLUDE[wrt](../../../includes/wrt-md.md)] component can't derive from them. If you want to provide polymorphic behavior in your component, you can create an interface and implement it in the polymorphic types.
+    >  Starting with [!INCLUDE[win8](../../../includes/win8-md.md)] and the .NET Framework 4.5, all public types in a managed [!INCLUDE[wrt](../../../includes/wrt-md.md)] component must be sealed. A type in another [!INCLUDE[wrt](../../../includes/wrt-md.md)] component can't derive from them. If you want to provide polymorphic behavior in your component, you can create an interface and implement it in the polymorphic types.
 
 - All parameter and return types on the public types in your component must be [!INCLUDE[wrt](../../../includes/wrt-md.md)] types (including the [!INCLUDE[wrt](../../../includes/wrt-md.md)] types that your component defines).
 

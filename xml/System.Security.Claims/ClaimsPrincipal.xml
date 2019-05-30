@@ -72,8 +72,7 @@
 ## Examples  
  The following example extracts the claims presented by a user in an HTTP request and writes them to the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal>. The claims are then read from it and then are written to the response.  
   
-```  
-  
+```csharp
 ClaimsPrincipal principal = HttpContext.Current.User as ClaimsPrincipal;  
 if (null != principal)  
 {  

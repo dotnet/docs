@@ -8,56 +8,121 @@ ms.custom: overview
 ---
 # What is Model Builder & how does it work?
 
-Intro para
+Model Builder is a user interface that runs in Visual Studio, to automatically train custom ML.NET machine learning models that can be deployed in your application. 
 
-Video or animated gif of the model builder interface
+You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
+
+Model Builder leverages automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
+
+Once the optimal model is selected, Model Builder generates code to add the model to your application.
+
+**Video or animated gif of the model builder interface**
 
 ## Scenarios
 
-Talk about different scenarios, the problem being solved, the data they need, and map these onto the ML.NET task
+You can bring many different scenarios to Model Builder, for it to generate a machine learning model for your application.
 
-Visual rather than lots of text
+A scenario is a description of the type of prediction you want to make on your data. For example: predict future product sales volume based on historical sales data.
 
-Use icons from the product
+In Model Builder, you need to map your scenario onto an **ML.NET task**. Model Builder currently supports **regression** (predict numbers) and **classification** (predict categories) tasks.
 
-Scenario descriptions with example inputs and outputs
+Here are some example scenarios, with the corresponding task.
+
+|||
+|-|-|
+|Forecast sales|regression|
+|Predict prices|regression|
+|Predict time to failure|regression|
+|Detect email spam|classification|
+|Work out whether customer feedback is good or bad|classification|
+|Detect fraudulent credit card transactions|classification|
 
 ## Data
 
-Data examples illustrating the features and the labels
+Once you have mapped your scenario onto a task, Model Builder asks you to provide a training dataset. The data is used to train, evaluate, and choose the best model for your scenario. A training dataset is a table of rows of training examples, and columns of attributes. Each row has:
+- a **label** (the attribute that you want to predict)
+- **features** (attributes that are used as inputs to predict the label).
 
-Limitations
+In the case of predicting house prices, the features could be:
+- the square footage of the house
+- the number of bedrooms and bathrooms
+- the zip code.
 
-Connect to different sources
+The label is the the historical house price for that row of square footage, bedroom and bathroom values and zip code. 
+
+**Diagram**
+
+The data you provide must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
+
+Model Builder will make a best guess at the label in your dataset. If it is not correct, then you can select a different column.
+
+If you don't have your own data yet, try out these datasets:
+
+|Data|Label|Features|
+|-|-|-|
+|[taxi fare prediction](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance, and others|
+|[product sales forecasting](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
+|[website comment sentiment analysis](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year, ...|
+|[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Amount, V1-V28 (anonymized features|Class (1 when fraudulent, 0 otherwise)|
+|[issue classification](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
+
+Model Builder currently places the following limitations on the data that it imports:
+* There is a limit of 1GB on the training dataset.
+* SQL Server has a limit of 100K rows for training
+* Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported.
 
 ## Train
 
-What does training mean?
+Once you have provided the task, and the data, Model Builder trains the model.
 
-Trying different algorithms / feature extraction / hyper-parameter tuning
+Training in Model Builder is the process of trying different algorithms and settings, and evaluating how accurately they perform.
+
+You can provide a training time. In general, training for a longer time produces a more accurate model. More training time is also required as the size of the training dataset increases. The following table gives some training time guidelines for datasets of increasing size.
+
+Dataset Size  | Dataset Type       | Avg. Time to train
+------------- | ------------------ | --------------
+0 - 10 Mb     | Numeric and Text   | 10 sec
+10 - 100 Mb   | Numeric and Text   | 10 min 
+100 - 500 Mb  | Numeric and Text   | 30 min 
+500 - 1 Gb    | Numeric and Text   | 60 min 
+1 Gb+         | Numeric and Text   | 3 hour+ 
 
 ## Evaluate
 
-Re-spell out metrics
+Model Builder by splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is used to evaluate your model. 
 
-Best model
+### Regression (predicting numbers)
 
-Top other models explored
+The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer **RSquared** is to 1, the better your model is.
 
-Improve the model performance
-- run for a longer time
-- more data
-- which metrics
+Other metrics reported such as absolute-loss, squared-loss and RMS loss are additional metrics which can be used to understand your model is performing, and comparing it against other regression models. 
 
-Trouble shooting
+### Classification (predicting categories)
+
+The default metric for classification problems is **accuracy**. **Accuracy** defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**. 
+
+Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate should be greater than 0.50, for models to be acceptable. 
+
+Additional metrics such as F1 score can be used to control the balance between precision and recall. 
+
+When there are more than two categories, are two types of accuracy:
+- Micro-accuracy: the fraction of predictions that are correct across all instances.
+- Macro-accuracy: the average accuracy at the class level
+
+## Improve model performance
+
+* Train for a longer period of time. This provides time for the automated machine learning engine to try more algorithms and settings.
+
+* Add more data. Sometimes the amount of data is not sufficient to train a high quality machine learning model. 
+
+* Add better data. In case of classification tasks, make sure that the training set is balanced across the categories.
 
 ## Generated Code + Model
 
-Model file
+After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application.
 
-Model generation code
+In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. 
 
-Model deployment code
+## What's next?
 
-
-
+Try the [Predict prices with Model Builder tutorial](tutorials/predict-prices-with-model-builder.md)

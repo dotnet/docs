@@ -78,7 +78,7 @@ This class utilizes resources from pooled memory to minimize the impact of the g
         <remarks>
           <format><![CDATA[
           
-The <xref:T:System.Buffers.ReadOnlySequence`1> may be used for the entire lifetime of the JsonDocument object, and the caller must ensure that the data therein does not change during the object lifetime.
+The <xref:System.Buffers.ReadOnlySequence%601> may be used for the entire lifetime of the JsonDocument object, and the caller must ensure that the data therein does not change during the object lifetime.
                
 Because the input is considered to be text, a UTF-8 Byte-Order-Mark (BOM) must not be present.
 
@@ -150,7 +150,7 @@ Because the input is considered to be text, a UTF-8 Byte-Order-Mark (BOM) must n
         <remarks>
           <format><![CDATA[
 
-The <xref:T:System.ReadOnlyMemory`1> value will be used for the entire lifetime of the JsonDocument object, and the caller must ensure that the data therein does not change during the object lifetime.
+The <xref:System.ReadOnlyMemory%601> value will be used for the entire lifetime of the JsonDocument object, and the caller must ensure that the data therein does not change during the object lifetime.
 
 Because the input is considered to be text, a UTF-8 Byte-Order-Mark (BOM) must not be present.
                  
@@ -190,7 +190,7 @@ Because the input is considered to be text, a UTF-8 Byte-Order-Mark (BOM) must n
         <remarks>
           <format><![CDATA[
           
-The <xref:T:System.ReadOnlyMemory`1> value may be used for the entire lifetime of the JsonDocument object, and the caller must ensure that the data therein does not change during the object lifetime.
+The <xref:System.ReadOnlyMemory%601> value may be used for the entire lifetime of the JsonDocument object, and the caller must ensure that the data therein does not change during the object lifetime.
 
           ]]></format>
         </remarks>
@@ -292,7 +292,7 @@ The <xref:T:System.ReadOnlyMemory`1> value may be used for the entire lifetime o
         <remarks>
           <format><![CDATA[
 
-If the <xref:System.Text.Json.Utf8JsonReader.TokenType> property of `reader` is <xref:System.Text.Json.JsonTokenType.PropertyName> or <xref:System.Text.Json.JsonTokenType.None?displayProperty=nameWithType>, the reader will advance by one call to <xref:System.Text.Json.Utf8JsonReader.Read?displayProperty=nameWithType> to determine the start of the value.
+If the <xref:System.Text.Json.Utf8JsonReader.TokenType> property of `reader` is <xref:System.Text.Json.JsonTokenType.PropertyName?displayProperty=nameWithType> or <xref:System.Text.Json.JsonTokenType.None?displayProperty=nameWithType>, the reader will advance by one call to <xref:System.Text.Json.Utf8JsonReader.Read?displayProperty=nameWithType> to determine the start of the value.
                
 Upon completion of this method, `reader` is positioned at the final token in the JSON value. If an exception is thrown, the reader is reset to
 the state it was in when the method was called.

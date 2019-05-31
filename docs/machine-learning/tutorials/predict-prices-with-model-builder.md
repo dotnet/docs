@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 ## Pre-requisites
 
-For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](./install-model-builder.md).
+For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
 ## Create a console application
 

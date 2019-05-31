@@ -40,7 +40,15 @@
         <param name="certificateType">The Object Identifier (OID) for the certificate type.</param>
         <param name="encodedCertificate">The encoded certificate value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Pkcs.Pkcs12CertBag" /> class using the specified certificate type and encoding.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+No validation is done to ensure that the `encodedCertificate` value is correct for the indicated `certificateType`.
+
+Note that for X.509 public-key certificates, the correct encoding for a CertBag value is to wrap the DER-encoded certificate in an OCTET STRING.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EncodedCertificate">

@@ -8,11 +8,11 @@ ms.custom: overview
 ---
 # What is Model Builder & how does it work?
 
-Model Builder is a user interface that runs in Visual Studio, to automatically train custom ML.NET machine learning models that can be deployed in your application. 
+Model Builder is a user interface that runs in Visual Studio. Model Builder automatically trains custom ML.NET machine learning models that can be deployed in your application. 
 
 You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
 
-Model Builder leverages automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
+Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
 
 Once the optimal model is selected, Model Builder generates code to add the model to your application.
 
@@ -43,12 +43,12 @@ Once you have mapped your scenario onto a task, Model Builder asks you to provid
 - a **label** (the attribute that you want to predict)
 - **features** (attributes that are used as inputs to predict the label).
 
-In the case of predicting house prices, the features could be:
+For the house-price prediction scenario, the features could be:
 - the square footage of the house
 - the number of bedrooms and bathrooms
 - the zip code.
 
-The label is the the historical house price for that row of square footage, bedroom and bathroom values and zip code. 
+The label is the historical house price for that row of square footage, bedroom, and bathroom values and zip code. 
 
 **Diagram**
 
@@ -67,13 +67,13 @@ If you don't have your own data yet, try out these datasets:
 |[issue classification](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 
 Model Builder currently places the following limitations on the data that it imports:
-* There is a limit of 1GB on the training dataset.
-* SQL Server has a limit of 100K rows for training
-* Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported.
+* A limit of 1 GB on the training dataset.
+* SQL Server has a limit of 100-K rows for training
+* Microsoft SQL Server Data Tools for Visual Studio 2017 isn't supported.
 
 ## Train
 
-Once you have provided the task, and the data, Model Builder trains the model.
+Once you have provided the task and the data, Model Builder trains the model.
 
 Training in Model Builder is the process of trying different algorithms and settings, and evaluating how accurately they perform.
 
@@ -95,7 +95,7 @@ Model Builder by splits the training data into a training set and a test set. Th
 
 The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer **RSquared** is to 1, the better your model is.
 
-Other metrics reported such as absolute-loss, squared-loss and RMS loss are additional metrics which can be used to understand your model is performing, and comparing it against other regression models. 
+Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models. 
 
 ### Classification (predicting categories)
 
@@ -111,11 +111,11 @@ When there are more than two categories, are two types of accuracy:
 
 ## Improve model performance
 
-* Train for a longer period of time. This provides time for the automated machine learning engine to try more algorithms and settings.
+* Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
 
-* Add more data. Sometimes the amount of data is not sufficient to train a high quality machine learning model. 
+* Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model. 
 
-* Add better data. In case of classification tasks, make sure that the training set is balanced across the categories.
+* Add better data. For classification tasks, make sure that the training set is balanced across the categories.
 
 ## Generated Code + Model
 

@@ -25,7 +25,14 @@
     <summary>An array enumerator.  
   
  **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+      
+> [!IMPORTANT]
+> This enumerator should **not** implement <xref:System.IDisposable>. The iterator should inline in a `foreach` loop and not result in a `try/finally` frame in the client.
+
+      ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Current">

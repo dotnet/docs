@@ -2474,8 +2474,6 @@ Closes the current stream and releases any resources (such as sockets and file h
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you call the <xref:System.IO.FileStream.FlushAsync%2A> method, the operating system I/O buffer is also flushed.  
-  
  If the operation is canceled before it completes, the returned task contains the <xref:System.Threading.Tasks.TaskStatus.Canceled> value for the <xref:System.Threading.Tasks.Task.Status%2A> property. If the handle to the file is disposed, the returned task contains the <xref:System.ObjectDisposedException> exception in the <xref:System.Threading.Tasks.Task.Exception%2A> property.  
   
  ]]></format>

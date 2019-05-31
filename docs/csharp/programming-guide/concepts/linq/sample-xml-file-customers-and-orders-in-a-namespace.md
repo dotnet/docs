@@ -423,7 +423,3 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </Orders>  
 </Root>  
 ```  
-  
-## See also
-
-- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

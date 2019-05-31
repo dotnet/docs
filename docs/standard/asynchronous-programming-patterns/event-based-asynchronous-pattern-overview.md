@@ -26,13 +26,13 @@ Applications that perform many tasks simultaneously, yet remain responsive to us
   
 - Execute multiple operations simultaneously, receiving notifications when each completes.  
   
-- Wait for resources to become available without stopping ("hanging") your application.  
+- Wait for resources to become available without stopping ("blocking") your application.  
   
 - Communicate with pending asynchronous operations using the familiar events-and-delegates model. For more information on using event handlers and delegates, see [Events](../../../docs/standard/events/index.md).  
   
  A class that supports the Event-based Asynchronous Pattern will have one or more methods named _MethodName_**Async**. These methods may mirror synchronous versions, which perform the same operation on the current thread. The class may also have a _MethodName_**Completed** event and it may have a _MethodName_**AsyncCancel** (or simply **CancelAsync**) method.  
   
- <xref:System.Windows.Forms.PictureBox> is a typical component that supports the Event-based Asynchronous Pattern. You can download an image synchronously by calling its <xref:System.Windows.Forms.PictureBox.Load%2A> method, but if the image is large, or if the network connection is slow, your application will stop ("hang") until the download operation is completed and the call to <xref:System.Windows.Forms.PictureBox.Load%2A> returns.  
+ <xref:System.Windows.Forms.PictureBox> is a typical component that supports the Event-based Asynchronous Pattern. You can download an image synchronously by calling its <xref:System.Windows.Forms.PictureBox.Load%2A> method, but if the image is large, or if the network connection is slow, your application will stop responding until the download operation is completed and the call to <xref:System.Windows.Forms.PictureBox.Load%2A> returns.  
   
  If you want your application to keep running while the image is loading, you can call the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method and handle the <xref:System.Windows.Forms.PictureBox.LoadCompleted> event, just as you would handle any other event. When you call the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> method, your application will continue to run while the download proceeds on a separate thread ("in the background"). Your event handler will be called when the image-loading operation is complete, and your event handler can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter to determine if the download completed successfully.  
   

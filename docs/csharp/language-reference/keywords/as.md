@@ -48,4 +48,3 @@ For more information, see [The as operator](~/_csharplang/spec/expressions.md#th
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [is](../../../csharp/language-reference/keywords/is.md)
 - [?: Operator](../../../csharp/language-reference/operators/conditional-operator.md)
-- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

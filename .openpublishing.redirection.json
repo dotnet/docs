@@ -407,6 +407,18 @@
             "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/access-keywords.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/base"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/conversion-keywords.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/explicit"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/exception-handling-statements.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/false.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/false-literal"
         },
@@ -419,12 +431,48 @@
             "redirect_url": "/dotnet/csharp/language-reference/tokens/interpolated"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/iteration-statements.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/jump-statements.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/literal-keywords.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/null"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/modifiers.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/namespace-keywords.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/namespace"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/operator-keywords.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/as"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/reference-tables-for-types.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/selection-statements.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/true.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/true-literal"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-false-operators.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/types.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
@@ -685,12 +733,21 @@
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
         },
         {
+            "source_path": "docs/csharp/programming-guide/generics/benefits-of-generics.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/generics",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
             "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md",
+            "redirect_url": "/dotnet/standard/generics/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/generics/introduction-to-generics.md",
             "redirect_url": "/dotnet/standard/generics/index"
         },
         {

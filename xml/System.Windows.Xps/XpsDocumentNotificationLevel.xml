@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When notification is not enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When it is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target while it sends progress notifications for each page and document.  
+ When notification is not enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized XML Paper Specification (XPS) document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When it is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target while it sends progress notifications for each page and document.  
   
  ]]></format>
     </remarks>

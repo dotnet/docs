@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class also has methods for writing a <xref:System.Windows.Media.ColorContext> to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] package and reading a <xref:System.Windows.Media.ColorContext> from an [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] package that is given a string that represents the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Media.ColorContext>.  
+ This class also has methods for writing a <xref:System.Windows.Media.ColorContext> to an XML Paper Specification (XPS) package and reading a <xref:System.Windows.Media.ColorContext> from an XPS package that is given a string that represents the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Media.ColorContext>.  
   
  See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
   
@@ -303,7 +303,7 @@
       <Docs>
         <param name="context">An object that provides contextual information.</param>
         <param name="colorContext">The object to be serialized.</param>
-        <summary>Serializes a <see cref="T:System.Windows.Media.ColorContext" /> to the [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] package and returns its [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] as a string.</summary>
+        <summary>Serializes a <see cref="T:System.Windows.Media.ColorContext" /> to the XML Paper Specification (XPS) package and returns its [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] as a string.</summary>
         <returns>A <see cref="T:System.String" /> that represents the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the color context.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="colorContext" /> is <see langword="null" />.</exception>

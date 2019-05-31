@@ -373,9 +373,9 @@ This example has some limitations. For example, only 32-bits-per-pixel images ar
 ## Remarks  
  A class derived from <xref:System.Threading.Tasks.TaskScheduler> implements this method in order to support integration with debuggers. This method will only be invoked by the .NET Framework when the debugger requests access to the data. The enumerable returned will be traversed by debugging utilities to access the tasks currently queued to this scheduler, enabling the debugger to provide a representation of this information in the user interface.  
   
- It is important to note that, when this method is called, all other threads in the process will be frozen. Therefore, it's important to avoid synchronization with other threads that may lead to blocking. If synchronization is necessary, and you are unable to acquire the lock in this method, then you should throw an exception so that the debugger does not hang. The following example shows one possible approach in C#:  
+ It is important to note that, when this method is called, all other threads in the process will be frozen. Therefore, it's important to avoid synchronization with other threads that may lead to blocking. If synchronization is necessary, and you are unable to acquire the lock in this method, then you should throw an exception so that the debugger does not block. The following example shows one possible approach in C#:
   
-```  
+```csharp
 protected override IEnumerable<Task> GetScheduledTasks()  
 {  
     bool lockTaken = false;  

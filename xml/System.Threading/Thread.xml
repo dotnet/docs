@@ -2425,7 +2425,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
  If the thread has already terminated when <xref:System.Threading.Thread.Join%2A> is called, the method returns immediately.  
   
 > [!WARNING]
->  You should never call the <xref:System.Threading.Thread.Join%2A> method of the <xref:System.Threading.Thread> object that represents the current thread from the current thread. This causes your app to hang because the current thread waits upon itself indefinitely,  
+>  You should never call the <xref:System.Threading.Thread.Join%2A> method of the <xref:System.Threading.Thread> object that represents the current thread from the current thread. This causes your app to become unresponsive because the current thread waits upon itself indefinitely,  
   
  This method changes the state of the calling thread to include <xref:System.Threading.ThreadState.WaitSleepJoin?displayProperty=nameWithType>. You cannot invoke `Join` on a thread that is in the <xref:System.Threading.ThreadState.Unstarted?displayProperty=nameWithType> state.  
   

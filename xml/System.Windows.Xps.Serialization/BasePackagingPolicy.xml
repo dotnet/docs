@@ -134,7 +134,7 @@
       <Docs>
         <param name="resourceId">The resource ID of the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> resource stream to acquire.</param>
         <summary>When overridden in a derived class, acquires an <see cref="T:System.Windows.Xps.Serialization.XpsResourceStream" /> for an <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with a specified resource ID.</summary>
-        <returns>The [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with the specified <paramref name="resourceID" />.</returns>
+        <returns>The XML Paper Specification (XPS) resource stream for the <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> with the specified <paramref name="resourceID" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont(System.String)" />
       </Docs>

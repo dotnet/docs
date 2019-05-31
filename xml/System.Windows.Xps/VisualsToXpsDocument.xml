@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following example shows how to create a visuals collator and use it to write to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document.  
+ The following example shows how to create a visuals collator and use it to write to an XML Paper Specification (XPS) document.  
   
  [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
  [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
@@ -214,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use this method to write to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document.  
+ The following example shows how to use this method to write to an XML Paper Specification (XPS) document.  
   
  [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
  [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  

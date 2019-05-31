@@ -79,7 +79,7 @@
    
   
 ## Examples  
- The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object and then creates a public rule named `winnerRule`. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> that consists of the string "A nation that has won the world cup is:", and adds this item to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of the rule. The example then creates two more rules (`ruleEurope` and `ruleSAmerica`), each of which is an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object that contains three <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. After that, another <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is created that contains <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects that refer to `ruleEurope` and `ruleSAmerica`. The new <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is then added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of `winnerRule`. After this, all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) are added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>. Finally, the three rules are compiled into a binary representation of the grammar.  
+ The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object and then creates a public rule named `winnerRule`. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> that consists of the string "A nation that has won the World Cup is:", and adds this item to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of the rule. The example then creates two more rules (`ruleEurope` and `ruleSAmerica`), each of which is an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object that contains three <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. After that, another <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is created that contains <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects that refer to `ruleEurope` and `ruleSAmerica`. The new <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is then added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of `winnerRule`. After this, all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) are added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>. Finally, the three rules are compiled into a binary representation of the grammar.  
   
 ```csharp  
 public void WorldSoccerWinners ()  
@@ -92,7 +92,7 @@ public void WorldSoccerWinners ()
   winnerRule.Scope = SrgsRuleScope.Public;  
   
   // Add the introduction.  
-  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the World Cup is: "));  
   
   // Create the rule for the European nations.  
   SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
@@ -668,7 +668,7 @@ public void WorldSoccerWinners ()
   winnerRule.Scope = SrgsRuleScope.Public;  
   
   // Add the introduction.  
-  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the World Cup is: "));  
   
   // Create the rule for the European nations.  
   SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   
@@ -755,7 +755,7 @@ public void WorldSoccerWinners ()
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, and then creates a public rule named `winnerRule`. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> that consists of the string "A nation that has won the world cup is:", and adds this item to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of the rule. The example then creates two more rules (`ruleEurope` and `ruleSAmerica`), each of which is an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object that contains three <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. After that, another <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is created that contains <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects that refer to `ruleEurope` and `ruleSAmerica`. The new <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is then added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of `winnerRule`. After this, all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) are added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>. Finally, the example creates an empty XML file and an instance of <xref:System.Xml.XmlWriter>.  The <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.WriteSrgs%2A> method uses the <xref:System.Xml.XmlWriter> instance to write the contents of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> to the XML file.  
+ The following example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, and then creates a public rule named `winnerRule`. It then creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> that consists of the string "A nation that has won the World Cup is:", and adds this item to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of the rule. The example then creates two more rules (`ruleEurope` and `ruleSAmerica`), each of which is an <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object that contains three <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objects. After that, another <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is created that contains <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> objects that refer to `ruleEurope` and `ruleSAmerica`. The new <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object is then added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Elements%2A> property of `winnerRule`. After this, all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) are added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>. Finally, the example creates an empty XML file and an instance of <xref:System.Xml.XmlWriter>.  The <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.WriteSrgs%2A> method uses the <xref:System.Xml.XmlWriter> instance to write the contents of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> to the XML file.  
   
 ```csharp  
 public void WorldSoccerWinners ()  
@@ -768,7 +768,7 @@ public void WorldSoccerWinners ()
   winnerRule.Scope = SrgsRuleScope.Public;  
   
   // Add the introduction.  
-  winnerRule.Elements.Add(new SrgsItem("A nation that has won the world cup is: "));  
+  winnerRule.Elements.Add(new SrgsItem("A nation that has won the World Cup is: "));  
   
   // Create the rule for the European nations.  
   SrgsOneOf oneOfEurope = new SrgsOneOf(new SrgsItem[] {new SrgsItem("England"),   

@@ -92,8 +92,8 @@
         <Parameter Name="package" Type="System.IO.Packaging.Package" />
       </Parameters>
       <Docs>
-        <param name="package">The target [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] package for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class with access to a specified [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] <see cref="T:System.IO.Packaging.Package" /> and default interleaving, resource, and compression options.</summary>
+        <param name="package">The target XPS package for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class with access to a specified XML Paper Specification (XPS) <see cref="T:System.IO.Packaging.Package" /> and default interleaving, resource, and compression options.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -672,7 +672,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.XpsDigitalSignature&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] signatures that are associated with the package.</summary>
+        <summary>Gets a collection of XML Paper Specification (XPS) signatures that are associated with the package.</summary>
         <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> objects that represent the signatures that are associated with the package.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

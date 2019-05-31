@@ -27,7 +27,7 @@ The .NET Framework consists of two main components, which are versioned separate
 >
 > There is a difference between the .NET Framework version and the CLR version:
 > - The .NET Framework version is based on the set of assemblies that form the .NET Framework class library. For example, .NET Framework versions include 4.5, 4.6.1, and 4.7.2.
->- The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.0.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2 and CLR version 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6.
+>- The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.0.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2 - and for these versions *xxxxx* is less than 42000 - and CLR version 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6.
 >
 > For more information about versions, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
 
@@ -198,7 +198,7 @@ Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md)
 
     The returned `System.Version` object identifies the version of the runtime that's currently executing the code. It doesn't return assembly versions or other versions of the runtime that may have been installed on the computer.
 
-    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx*. For the .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
+    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx* where *xxxxx* is less than 42000. For the .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
 
 2. After you have the `Version` object, query it as follows:
 

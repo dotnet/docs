@@ -90,9 +90,16 @@ Specifies the path of the project file to run (folder name or full path). If not
 
 ### controller options
 
-The following table lists the `aspnet-codegenerator controller` options:
+The following table lists options for  `aspnet-codegenerator` `controller` and `razorpage`:
 
-[!INCLUDE [aspnet-codegenerator-args-md.md](../../../includes/aspnet-codegenerator-args-md.md)] | --controllerName or -name | Name of the controller. |
+[!INCLUDE [aspnet-codegenerator-args-md.md](../../../includes/aspnet-codegenerator-args-md.md)]
+
+The following table lists options unique to  `aspnet-codegenerator controller`:
+
+| Option               | Description|
+| ----------------- | ------------ |
+
+| --controllerName or -name | Name of the controller. |
 | --useAsyncActions or -async | Generate async controller actions. |
 | --noViews or -nv | Generate [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) views. |
 | --restWithNoViews or -api  | Generate a Controller with REST style API. `noViews` is assumed and any view related options are ignored. |
@@ -103,3 +110,5 @@ Use the `-h` switch for help on the `aspnet-codegenerator controller` command:
 ```console
 dotnet aspnet-codegenerator controller -h
 ```
+
+See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of using `aspnet-codegenerator controller`

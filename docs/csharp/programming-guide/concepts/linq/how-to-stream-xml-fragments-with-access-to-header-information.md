@@ -160,6 +160,3 @@ static void Main(string[] args)
 </Root>  
 ```  
   
-## See also
-
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

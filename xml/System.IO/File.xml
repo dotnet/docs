@@ -848,7 +848,11 @@
   
  -or-  
   
- <paramref name="destFileName" /> is read-only.</exception>
+ <paramref name="destFileName" /> is read-only.
+        
+ -or-  
+  
+<paramref name="overwrite" /> is <see langword="true" />, <paramref name="destFileName" /> exists and is hidden, but <paramref name="sourceFileName" /> is not hidden.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="sourceFileName" /> or <paramref name="destFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.  
   
@@ -961,7 +965,11 @@
   
  -or-  
   
- <paramref name="path" /> specified a file that is read-only.</exception>
+ <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1051,7 +1059,11 @@
   
  -or-  
   
- <paramref name="path" /> specified a file that is read-only.</exception>
+ <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1131,7 +1143,11 @@
   
  -or-  
   
- <paramref name="path" /> specified a file that is read-only.</exception>
+ <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1197,7 +1213,11 @@
   
  -or-  
   
- <paramref name="path" /> specified a file that is read-only.</exception>
+ <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1273,7 +1293,15 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.  
+  
+ -or-  
+  
+ <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -4757,7 +4785,11 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specified a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.
   
  -or-  
   
@@ -4894,7 +4926,11 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specifies a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.
   
  -or-  
   
@@ -4976,7 +5012,11 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specified a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.  
   
  -or-  
   
@@ -5063,7 +5103,11 @@
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specifies a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.  
   
  -or-  
   
@@ -5144,7 +5188,11 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specified a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.  
   
  -or-  
   
@@ -5313,7 +5361,11 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specified a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.  
   
  -or-  
   
@@ -5399,7 +5451,11 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
-          <paramref name="path" /> specified a file that is read-only.  
+          <paramref name="path" /> specified a file that is read-only.
+        
+ -or-  
+  
+ <paramref name="path" /> specified a file that is hidden.  
   
  -or-  
   

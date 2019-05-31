@@ -88,7 +88,15 @@ Specifies the path of the project file to run (folder name or full path). If not
 
 ## Generator options
 
-### controller options
+The following sections detail the options available for the supported generators:
+
+* Area
+* Controller
+* Identity  
+* Razorpage
+* View
+
+### Controller options
 
 The following table lists options for  `aspnet-codegenerator` `controller` and `razorpage`:
 
@@ -98,7 +106,6 @@ The following table lists options unique to  `aspnet-codegenerator controller`:
 
 | Option               | Description|
 | ----------------- | ------------ |
-
 | --controllerName or -name | Name of the controller. |
 | --useAsyncActions or -async | Generate async controller actions. |
 | --noViews or -nv | Generate [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) views. |

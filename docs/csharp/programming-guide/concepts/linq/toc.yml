@@ -340,8 +340,19 @@
               href: intermediate-materialization.md
             - name: Chaining Standard Query Operators Together
               href: chaining-standard-query-operators-together.md
+           - name: "Tutorial: Chaining Queries Together"
+            items:
+            - name: Deferred Execution and Lazy Evaluation in LINQ to XML
+              href: deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
+            - name: Deferred Execution Example
+              href: deferred-execution-example.md
+            - name: Chaining Queries Example
+              href: chaining-queries-example.md
+            - name: Intermediate Materialization
+              href: intermediate-materialization.md
+            - name: Chaining Standard Query Operators Together
+              href: chaining-standard-query-operators-together.md
           - name: "Tutorial: Manipulating Content in a WordprocessingML Document"
-            href: tutorial-manipulating-content-in-a-wordprocessingml-document.md
             items:
             - name: Shape of WordprocessingML Documents
               href: shape-of-wordprocessingml-documents.md
@@ -362,7 +373,6 @@
             - name: Finding Text in Word Documents
               href: finding-text-in-word-documents.md
             - name: Details of Office Open XML WordprocessingML Documents
-              href: details-of-office-open-xml-wordprocessingml-documents.md
               items:
               - name: WordprocessingML Document with Styles
                 href: wordprocessingml-document-with-styles.md
@@ -370,7 +380,7 @@
                 href: style-part-of-a-wordprocessingml-document.md
               - name: Example that Outputs Office Open XML Document Parts
                 href: example-that-outputs-office-open-xml-document-parts.md
-      - name: Modifying XML Trees (LINQ to XML)
+     - name: Modifying XML Trees (LINQ to XML)
         href: modifying-xml-trees-linq-to-xml.md
         items:
         - name: In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)

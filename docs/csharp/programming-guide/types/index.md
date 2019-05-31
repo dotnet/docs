@@ -58,7 +58,7 @@ For more information, see [Casting and Type Conversions](../../../csharp/program
 
 ## Built-in Types
 
-C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in `string` and `object` types. These are available for you to use in any C# program. For more information about the built-in types, see [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md).
+C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in `string` and `object` types. These are available for you to use in any C# program. For more information about the built-in types, see [Reference Tables for built-in Types](../../../csharp/language-reference/keywords/built-in-types-table.md).
 
 ## Custom Types
 

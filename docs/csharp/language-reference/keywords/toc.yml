@@ -2,11 +2,11 @@
   href: index.md
   items:
   - name: Types
-    href: types.md
     items:
     - name: Value Types
-      href: value-types.md
       items:
+      - name: Features of value types
+        href: value-types.md
       - name: bool
         href: bool.md
       - name: byte
@@ -38,8 +38,9 @@
       - name: ushort
         href: ushort.md
     - name: Reference Types
-      href: reference-types.md
       items:
+      - name: Features of reference types
+        href: reference-types.md
       - name: class
         href: class.md
       - name: delegate
@@ -57,7 +58,6 @@
     - name: var
       href: var.md
     - name: Reference tables for types
-      href: reference-tables-for-types.md
       items:
       - name: Built-in types table
         href: built-in-types-table.md
@@ -76,11 +76,11 @@
       - name: Formatting numeric results table
         href: formatting-numeric-results-table.md
   - name: Modifiers
-    href: modifiers.md
     items:
     - name: Access Modifiers
-      href: access-modifiers.md
       items:
+      - name: Quick reference
+        href: access-modifiers.md
       - name: Accessibility Levels
         href: accessibility-levels.md
       - name: Accessibility Domain
@@ -128,17 +128,16 @@
     - name: volatile
       href: volatile.md
   - name: Statement Keywords
-    href: statement-keywords.md
     items:
+    - name: Statement categories
+      href: statement-keywords.md
     - name: Selection Statements
-      href: selection-statements.md
       items:
       - name: if-else
         href: if-else.md
       - name: switch
         href: switch.md
     - name: Iteration Statements
-      href: iteration-statements.md
       items:
       - name: do
         href: do.md
@@ -149,7 +148,6 @@
       - name: while
         href: while.md
     - name: Jump Statements
-      href: jump-statements.md
       items:
       - name: break
         href: break.md
@@ -160,7 +158,6 @@
       - name: return
         href: return.md
     - name: Exception Handling Statements
-      href: exception-handling-statements.md
       items:
       - name: throw
         href: throw.md
@@ -171,8 +168,9 @@
       - name: try-catch-finally
         href: try-catch-finally.md
     - name: Checked and Unchecked
-      href: checked-and-unchecked.md
       items:
+      - name: Overview
+        href: checked-and-unchecked.md
       - name: checked
         href: checked.md
       - name: unchecked
@@ -182,8 +180,9 @@
     - name: lock Statement
       href: lock-statement.md
   - name: Method Parameters
-    href: method-parameters.md
     items:
+    - name: Passing parameters
+      href: method-parameters.md
     - name: params
       href: params.md
     - name: in (Parameter Modifier)
@@ -193,13 +192,13 @@
     - name: out (Parameter Modifier)
       href: out-parameter-modifier.md
   - name: Namespace Keywords
-    href: namespace-keywords.md
     items:
     - name: namespace
       href: namespace.md
     - name: using
-      href: using.md
       items:
+      - name: Contexts for using
+        href: using.md
       - name: using Directive
         href: using-directive.md
       - name: using static Directive
@@ -209,7 +208,6 @@
     - name: extern alias
       href: extern-alias.md
   - name: Operator Keywords
-    href: operator-keywords.md
     items:
     - name: as
       href: as.md
@@ -218,8 +216,9 @@
     - name: is
       href: is.md
     - name: new
-      href: new.md
       items:
+      - name: new operator, modifier and constraint
+        href: new.md
       - name: new Operator
         href: new-operator.md
       - name: new Modifier
@@ -235,7 +234,6 @@
     - name: nameof
       href: nameof.md
   - name: Conversion Keywords
-    href: conversion-keywords.md
     items:
     - name: explicit
       href: explicit.md
@@ -244,14 +242,12 @@
     - name: operator
       href: operator.md
   - name: Access Keywords
-    href: access-keywords.md
     items:
     - name: base
       href: base.md
     - name: this
       href: this.md
   - name: Literal Keywords
-    href: literal-keywords.md
     items:
     - name: "null"
       href: null.md
@@ -262,8 +258,9 @@
     - name: default
       href: default.md
   - name: Contextual Keywords
-    href: contextual-keywords.md
     items:
+    - name: Quick reference
+      href: contextual-keywords.md
     - name: add
       href: add.md
     - name: get
@@ -287,8 +284,9 @@
     - name: yield
       href: yield.md
   - name: Query Keywords
-    href: query-keywords.md
     items:
+    - name: Quick reference
+      href: query-keywords.md
     - name: from clause
       href: from-clause.md
     - name: where clause

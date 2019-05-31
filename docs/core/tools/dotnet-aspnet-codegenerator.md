@@ -92,12 +92,11 @@ Specifies the path of the project file to run (folder name or full path). If not
 
 The following table lists the `aspnet-codegenerator controller` options:
 
-[!INCLUDE [aspnet-codegenerator-args-md.md](../../../includes/aspnet-codegenerator-args-md.md)]
-|  --controllerName`|-`name | Name of the controller. |
-| --useAsyncActions`|-`async | Generate async controller actions. |
-| --noViews`|-`nv | Generate [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) views. |
-| --restWithNoViews`|-`api  | Generate a Controller with REST style API. `noViews` is assumed and any view related options are ignored. |
-  | --readWriteActions`|-`actions | Generate controller with read/write actions without a model. |
+[!INCLUDE [aspnet-codegenerator-args-md.md](../../../includes/aspnet-codegenerator-args-md.md)] | --controllerName or -name | Name of the controller. |
+| --useAsyncActions or -async | Generate async controller actions. |
+| --noViews or -nv | Generate [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) views. |
+| --restWithNoViews or -api  | Generate a Controller with REST style API. `noViews` is assumed and any view related options are ignored. |
+  | --readWriteActions or -actions | Generate controller with read/write actions without a model. |
 
 Use the `-h` switch for help on the `aspnet-codegenerator controller` command:
 

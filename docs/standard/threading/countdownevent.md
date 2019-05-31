@@ -34,7 +34,7 @@ ms.author: "ronpet"
  [!code-vb[CDS_CountdownEvent#01](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_countdownevent/vb/module1.vb#01)]  
   
 ## CountdownEvent With Cancellation  
- The following example shows how to cancel the wait operation on <xref:System.Threading.CountdownEvent> by using a cancellation token. The basic pattern follows the model for unified cancellation, which is introduced in [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. For more information, see [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md).  
+ The following example shows how to cancel the wait operation on <xref:System.Threading.CountdownEvent> by using a cancellation token. The basic pattern follows the model for unified cancellation, which is introduced in .NET Framework 4. For more information, see [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md).  
   
  [!code-csharp[CDS_CountdownEvent#02](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_countdownevent/cs/countdownevent.cs#02)]
  [!code-vb[CDS_CountdownEvent#02](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_countdownevent/vb/canceleventwait.vb#02)]  

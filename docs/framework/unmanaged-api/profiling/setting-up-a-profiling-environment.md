@@ -15,7 +15,7 @@ ms.author: "mairaw"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]
->  There have been substantial changes to profiling in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+>  There have been substantial changes to profiling in the .NET Framework 4.  
   
  When a managed process (application or service) starts, it loads the common language runtime (CLR). When the CLR is initialized, it evaluates the following two environmental variables to decide whether the process should connect to a profiler:  
   

@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # FLockClrVersionCallback Function Pointer
 Points to a function that the common language runtime (CLR) calls to indicate that initialization has either started or completed.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

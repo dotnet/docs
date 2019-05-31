@@ -34,7 +34,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
   
 |Value|Description|  
 |-----------|-----------------|  
-|`0`|The runtime uses the faster interop marshaling architecture introduced in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], which does not detect and fix incorrect platform invoke declarations. This is the default.|  
+|`0`|The runtime uses the faster interop marshaling architecture introduced in the .NET Framework 4, which does not detect and fix incorrect platform invoke declarations. This is the default.|  
 |`1`|The runtime uses slower transitions that detect and fix incorrect platform invoke declarations.|  
   
 ### Child Elements  

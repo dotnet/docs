@@ -163,10 +163,10 @@ For example, the following code updates the ASP.NET Core scaffolding tool to the
 dotnet tool install --g dotnet-aspnet-codegenerator
 ```
 
-Global Tools are removed with the [dotnet tool uninstall](dotnet-tool-uninstall.md):
+Uninstall Global Tools with [dotnet tool uninstall](dotnet-tool-uninstall.md):
 
 ```console
 dotnet tool uninstall -g <packagename>
 ```
 
-For more information on `aspnet-codegenerator`, see [dotnet aspnet-codegenerator](dotnet aspnet-codegenerator.md)
+For more information on `aspnet-codegenerator`, see [dotnet aspnet-codegenerator](dotnet-aspnet-codegenerator.md)

@@ -315,21 +315,19 @@
           - name: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML)"
             href: how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
         - name: Pure Functional Transformations of XML
-          href: pure-functional-transformations-of-xml.md
           items:
           - name: Introduction to Pure Functional Transformations
             href: introduction-to-pure-functional-transformations.md
-            items:
-            - name: Concepts and Terminology (Functional Transformation)
-              href: concepts-and-terminology-functional-transformation.md
-            - name: Functional Programming vs. Imperative Programming
-              href: functional-programming-vs-imperative-programming.md
-            - name: Refactoring Into Pure Functions
-              href: refactoring-into-pure-functions.md
-            - name: Applicability of Functional Transformation
-              href: applicability-of-functional-transformation.md
-            - name: Functional Transformation of XML
-              href: functional-transformation-of-xml.md
+          - name: Concepts and Terminology (Functional Transformation)
+            href: concepts-and-terminology-functional-transformation.md
+          - name: Functional Programming vs. Imperative Programming
+            href: functional-programming-vs-imperative-programming.md
+          - name: Refactoring Into Pure Functions
+            href: refactoring-into-pure-functions.md
+          - name: Applicability of Functional Transformation
+            href: applicability-of-functional-transformation.md
+          - name: Functional Transformation of XML
+            href: functional-transformation-of-xml.md
           - name: "Tutorial: Chaining Queries Together"
             href: tutorial-chaining-queries-together.md
             items:

@@ -100,7 +100,7 @@ Windows Workflow Foundation (WF) in .NET Framework 4.5 introduced many new featu
 >  Build-time validation is not supported in the rehosted designer.  
   
 ### Design-time background validation  
- In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflows were validated as a foreground process, which could potentially hang the UI during complex or time-consuming validation processes. Workflow validation now takes place on a background thread, so that the UI is not blocked.  
+ In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], workflows were validated as a foreground process, which could potentially block the UI during complex or time-consuming validation processes. Workflow validation now takes place on a background thread, so that the UI is not blocked.  
   
  Design-time background validation is supported in the rehosted designer.  
   

@@ -340,7 +340,7 @@
               href: intermediate-materialization.md
             - name: Chaining Standard Query Operators Together
               href: chaining-standard-query-operators-together.md
-           - name: "Tutorial: Chaining Queries Together"
+          - name: "Tutorial: Chaining Queries Together"
             items:
             - name: Deferred Execution and Lazy Evaluation in LINQ to XML
               href: deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
@@ -395,7 +395,6 @@
         - name: "How to: Change the Namespace for an Entire XML Tree"
           href: how-to-change-the-namespace-for-an-entire-xml-tree.md
       - name: Performance (LINQ to XML)
-        href: performance-linq-to-xml.md
         items:
         - name: Performance of Chained Queries (LINQ to XML)
           href: performance-of-chained-queries-linq-to-xml.md

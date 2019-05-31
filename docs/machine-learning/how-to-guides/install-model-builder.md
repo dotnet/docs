@@ -10,6 +10,8 @@ ms.custom: mvc, how-to
 
 # How to install ML.NET Model Builder
 
+Learn how to install ML.NET Model Builder to add machine learning to your .NET applications.
+
 > [!NOTE]
 > Model Builder is currently in Preview.
 

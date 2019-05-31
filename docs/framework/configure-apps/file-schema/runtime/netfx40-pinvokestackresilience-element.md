@@ -50,7 +50,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
 ## Remarks  
  This element enables you to trade faster interop marshaling for run-time resilience against incorrect platform invoke declarations.  
   
- Starting with the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], a streamlined interop marshaling architecture provides a significant performance improvement for transitions from managed code to unmanaged code. In earlier versions of the .NET Framework, the marshaling layer detected incorrect platform invoke declarations on 32-bit platforms and automatically fixed the stack. The new marshaling architecture eliminates this step. As a result, transitions are very fast, but an incorrect platform invoke declaration can cause a program failure.  
+ Starting with the .NET Framework 4, a streamlined interop marshaling architecture provides a significant performance improvement for transitions from managed code to unmanaged code. In earlier versions of the .NET Framework, the marshaling layer detected incorrect platform invoke declarations on 32-bit platforms and automatically fixed the stack. The new marshaling architecture eliminates this step. As a result, transitions are very fast, but an incorrect platform invoke declaration can cause a program failure.  
   
  To make it easy to detect incorrect declarations during development, the Visual Studio debugging experience has been improved. The [pInvokeStackImbalance](../../../../../docs/framework/debug-trace-profile/pinvokestackimbalance-mda.md) managed debugging assistant (MDA) notifies you of incorrect platform invoke declarations when your application is running with the debugger attached.  
   

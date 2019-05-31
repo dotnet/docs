@@ -18,7 +18,7 @@ ms.author: "mairaw"
  Transparency helps developers write more secure .NET Framework libraries that expose functionality to partially trusted code. Level 1 transparency was introduced in the .NET Framework version 2.0 and was primarily used only within Microsoft. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use [level 2 transparency](../../../docs/framework/misc/security-transparent-code-level-2.md). However, level 1 transparency has been retained so that you can identify legacy code that must run with the earlier security rules.  
   
 > [!IMPORTANT]
->  You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], always use level 2 transparency.  
+>  You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the .NET Framework 4, always use level 2 transparency.  
   
  This topic contains the following sections:  
   

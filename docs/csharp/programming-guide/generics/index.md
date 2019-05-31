@@ -47,8 +47,6 @@ Generic classes and methods combine reusability, type safety and efficiency in a
 ## Related Sections  
  For more information:  
   
-- [Benefits of Generics](../../../csharp/programming-guide/generics/benefits-of-generics.md)  
-  
 - [Generic Type Parameters](../../../csharp/programming-guide/generics/generic-type-parameters.md)  
   
 - [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)  

@@ -198,7 +198,7 @@ Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md)
 
     The returned `System.Version` object identifies the version of the runtime that's currently executing the code. It doesn't return assembly versions or other versions of the runtime that may have been installed on the computer.
 
-    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx* where *xxxxx* is less than 42000. For the .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
+    For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx*, where *xxxxx* is less than 42000. For the .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
 
 2. After you have the `Version` object, query it as follows:
 

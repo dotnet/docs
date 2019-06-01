@@ -5,7 +5,7 @@ ms.date: 06/15/2019
 ---
 # dotnet aspnet-codegenerator
 
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model
+/aspnet/core/tutorials/first-mvc-app/adding-model
 
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
@@ -46,11 +46,11 @@ The code generator to run. The following generators are available:
 
 | Generator | Operation |
 | ----------------- | ------------ | 
-| area      | Generates an [Area](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2) |
-  controller| [Scaffolds a controller](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) |
-  identity  | [Scaffolds Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-2.2&tabs=netcore-cli) |
-  razorpage | [Scaffolds Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code) |
-  view      | Generates a [view](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/overview?view=aspnetcore-2.2) |
+| area      | Generates an [Area](/aspnet/core/mvc/controllers/areas) |
+  controller| [Scaffolds a controller](/aspnet/core/tutorials/first-mvc-app/adding-model) |
+  identity  | [Scaffolds Identity](/aspnet/core/security/authentication/scaffold-identity) |
+  razorpage | [Scaffolds Razor Pages](/aspnet/core/tutorials/razor-pages/model) |
+  view      | Generates a [view](/aspnet/core/mvc/views/overview) |
 
 ## Options
 
@@ -139,11 +139,11 @@ Use the `-h` switch for help on the `aspnet-codegenerator controller` command:
 dotnet aspnet-codegenerator controller -h
 ```
 
-See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of `dotnet aspnet-codegenerator controller`.
+See [Scaffold the movie model](/aspnet/core/tutorials/razor-pages/model) for an example of `dotnet aspnet-codegenerator controller`.
 
 ### Razorpage
 
-See [Scaffold Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-2.2&tabs=netcore-cli)
+See [Scaffold Identity](/aspnet/core/security/authentication/scaffold-identity)
 
 <a name="rp"></a>
 
@@ -190,4 +190,4 @@ Use the `-h` switch for help on the `aspnet-codegenerator razorpage` command:
 dotnet aspnet-codegenerator razorpage -h
 ```
 
-See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of `dotnet aspnet-codegenerator razorpage`.
+See [Scaffold the movie model](/aspnet/core/tutorials/razor-pages/model) for an example of `dotnet aspnet-codegenerator razorpage`.

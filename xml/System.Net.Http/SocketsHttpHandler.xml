@@ -16,7 +16,7 @@
   <Docs>
     <summary>Provides the default message handler used by <see cref="T:System.Net.Http.HttpClient" /> in .NET Core 2.1 and later.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[
 
 Starting with .NET Core 2.1, the `SocketsHttpHandler` class provides the implementation used by higher-level HTTP networking classes such as <xref:System.Net.Http.HttpClient>. The use of `SocketsHttpHandler` offers a number of advantages:
 
@@ -31,22 +31,22 @@ If this change is undesirable, you can configure your application to use the old
 - By calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method as follows:
 
    ```csharp
-   AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", false);
+   AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
    ```
 
    ```vb
-   AppContext.SetSwitch("System.Net.Http.useSocketsHttpHandler", False)
-   ``` 
-- By defining the `System.Net.Http.useSocketsHttpHandler` switch in the *.netcore.runtimeconfig.json* configuration file:
+   AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", False)
+   ```
+- By defining the `System.Net.Http.UseSocketsHttpHandler` switch in the *.netcore.runtimeconfig.json* configuration file:
 
   ```json
   "runtimeOptions": {
     "configProperties": {
-        "System.Net.Http.useSocketsHttpHandler": false
+        "System.Net.Http.UseSocketsHttpHandler": false
     }
   }
   ```
-  
+
 - By defining an environment variable named `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` and setting it to either `false` or 0.
 
          ]]></format>

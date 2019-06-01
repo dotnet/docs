@@ -67,7 +67,7 @@
   
 <a name="Load"></a>   
 ## Load XML into the document object model  
- Start with an XML document like this one. it's just a few books in a collection. But it does contain the basic things that you'd find in any XML document; a namespace, elements that represent data and attributes that describe the data.  
+ Start with an XML document like this one that has a few books in a collection. It contains the basic things that you'd find in any XML document, including a namespace, elements that represent data, and attributes that describe the data.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -145,7 +145,7 @@
 ## Navigate the document tree  
  You can use properties to navigate around an XML document. But before you use any of them, let's quickly review a few terms. Your document is composed of nodes. Each node has as single *parent* node directly above it. The only node that does not have a parent node is the document root, as it is the top-level node. Most nodes can have *child* nodes, which are nodes directly below them. Nodes that are at the same level are *siblings*.  
   
- The following examples, show you how to obtain the root node, jump to the first child node of the root node, access any of its child nodes, get back out to the parent node, and then navigate across sibling nodes.  
+ The following examples show you how to obtain the root node, jump to the first child node of the root node, access any of its child nodes, get back out to the parent node, and then navigate across sibling nodes.  
   
  **Start with the root node**  
   
@@ -169,7 +169,7 @@
   
  **Refer to the last child node**  
   
- This example writes the price of a book to the console (which is the last child node of a book node).  
+ This example writes the price of a book to the console. The price node is the last child of a book node.  
   
  [!code-cpp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CPP/source.cpp#1)]
  [!code-csharp[Classic WebData XmlNode.LastChild Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlNode.LastChild Example/CS/source.cs#1)]

@@ -56,33 +56,33 @@ The code generator to run. The following generators are available:
 
 <!-- dotnet build to dotnet help use **bold** on options, most don't -->
 
-**`-n|--nuget-package-dir`**
+`-n|--nuget-package-dir`
 
 Specifies the NuGet package directory.
 
-**`-c|--configuration {Debug|Release}`**
+`-c|--configuration {Debug|Release}`
 
   Defines the build configuration. The default value is `Debug`.
 
-**`-tfm|--target-framework`**
+`-tfm|--target-framework`
 
 Target [Framework](../../standard/frameworks.md) to use. For example, `net46`.
 
 <!-- REVIEW: Is this specified on the command line or in the project file? -->
 
-**`-b|--build-base-path`**
+`-b|--build-base-path`
 
 The build base path.
 
-**`-h|--help`**
+`-h|--help`
 
 Prints out a short help for the command.
 
-**`--no-build`**
+`--no-build`
 
 Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
 
-**`-p|--project <PATH>`**
+`-p|--project <PATH>`
 
 Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
@@ -95,6 +95,27 @@ The following sections detail the options available for the supported generators
 * Identity  
 * Razorpage
 * View
+
+<a name="area"></a>
+
+### Area options
+
+<!-- Review: I ran the following command in a Razor Pages project
+I was expecting Areas\AreaNameToGenerate\Pages
+Should I say this is intended for MVC projects and not RP projects
+-->
+Usage: `dotnet aspnet-codegenerator area AreaNameToGenerate`
+
+The preceding command generates the following folders:
+
+* *Areas*
+  * *AreaNameToGenerate*
+    * *Controllers*
+    * *Data*
+    * *Models*
+    * *Views*
+
+<a name="ctl"></a>
 
 ### Controller options
 
@@ -118,11 +139,15 @@ Use the `-h` switch for help on the `aspnet-codegenerator controller` command:
 dotnet aspnet-codegenerator controller -h
 ```
 
-See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of using `dotnet aspnet-codegenerator controller`.
+See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of `dotnet aspnet-codegenerator controller`.
+
+### Razorpage
+
+See [Scaffold Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-2.2&tabs=netcore-cli)
+
+<a name="rp"></a>
 
 ### Razorpage options
-
-#### Razorpage generator arguments
 
 Razor Pages can be individually scaffolded by specifying the name of the new page and the template to use. The supported templates are:
 
@@ -165,4 +190,4 @@ Use the `-h` switch for help on the `aspnet-codegenerator razorpage` command:
 dotnet aspnet-codegenerator razorpage -h
 ```
 
-See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of using `dotnet aspnet-codegenerator razorpage`.
+See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of `dotnet aspnet-codegenerator razorpage`.

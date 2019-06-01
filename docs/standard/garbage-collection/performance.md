@@ -55,7 +55,7 @@ ms.author: "ronpet"
  Profilers can provide comprehensive information. However, complex profilers can potentially modify an application's behavior.  
   
 ### Application Domain Resource Monitoring  
- Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).  
+ Starting with the .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).  
   
  [Back to top](#top)  
   

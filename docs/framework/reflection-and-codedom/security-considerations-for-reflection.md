@@ -52,10 +52,10 @@ Reflection provides the ability to obtain information about types and members, a
   
  Application code that is run from the command line runs with full trust. As long as it is not marked as transparent, it can use reflection to access security-critical members. When the same code is run with partial trust (for example, in a sandboxed application domain) the assembly's trust level determines whether it can access security-critical code: If the assembly has a strong name and is installed in the global assembly cache, it is a trusted assembly and can call security-critical members. If it is not trusted, it becomes transparent even though it was not marked as transparent, and it cannot access security-critical members.  
   
- For more information about the security model in the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], see [Security Changes](../../../docs/framework/security/security-changes.md).  
+ For more information about the security model in the .NET Framework 4, see [Security Changes](../../../docs/framework/security/security-changes.md).  
   
 ## Reflection and Transparency  
- Beginning with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], the common language runtime determines the transparency level of a type or member from several factors, including the trust level of the assembly and the trust level of the application domain. Reflection provides the <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Type.IsSecuritySafeCritical%2A>, and <xref:System.Type.IsSecurityTransparent%2A> properties to enable you to discover the transparency level of a type. The following table shows the valid combinations of these properties.  
+ Beginning with the .NET Framework 4, the common language runtime determines the transparency level of a type or member from several factors, including the trust level of the assembly and the trust level of the application domain. Reflection provides the <xref:System.Type.IsSecurityCritical%2A>, <xref:System.Type.IsSecuritySafeCritical%2A>, and <xref:System.Type.IsSecurityTransparent%2A> properties to enable you to discover the transparency level of a type. The following table shows the valid combinations of these properties.  
   
 |Security level|IsSecurityCritical|IsSecuritySafeCritical|IsSecurityTransparent|  
 |--------------------|------------------------|----------------------------|---------------------------|  

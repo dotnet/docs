@@ -13,7 +13,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # .NET Framework Client Profile
-The .NET Client Profile is a subset of the .NET Framework, which was provided with [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] and earlier versions and was optimized for client applications. The .NET Framework is a development platform for Windows, Windows Phone and Microsoft Azure and provides a managed app execution environment and the .NET Framework class library. The [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] and earlier versions provided two deployment options: the full .NET Framework and the Client Profile. The Client Profile enabled faster deployment and smaller app installation packages than the full .NET Framework.  
+The .NET Client Profile is a subset of the .NET Framework, which was provided with .NET Framework 4 and earlier versions and was optimized for client applications. The .NET Framework is a development platform for Windows, Windows Phone and Microsoft Azure and provides a managed app execution environment and the .NET Framework class library. The .NET Framework 4 and earlier versions provided two deployment options: the full .NET Framework and the Client Profile. The Client Profile enabled faster deployment and smaller app installation packages than the full .NET Framework.  
   
  Starting with the .NET Framework 4.5, the Client Profile has been discontinued and only the full redistributable package is available. Optimizations provided by the .NET Framework 4.5, such as smaller download size and faster deployment, have eliminated the need for a separate deployment package. The single redistributable streamlines the installation process and simplifies your app's deployment options.  
   

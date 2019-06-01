@@ -582,7 +582,7 @@ ms.author: "ronpet"
 
 <a name="IEHost"></a>
 ### Assembly: IEHost.dll and IEExec.exe
- The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported as of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Recommended alternatives include ClickOnce, XAML browser applications (XBAP), and Microsoft Silverlight.
+ The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported as of the .NET Framework 4. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Recommended alternatives include ClickOnce, XAML browser applications (XBAP), and Microsoft Silverlight.
 
  [Back to top](#introduction)
 

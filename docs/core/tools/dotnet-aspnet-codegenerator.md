@@ -118,4 +118,51 @@ Use the `-h` switch for help on the `aspnet-codegenerator controller` command:
 dotnet aspnet-codegenerator controller -h
 ```
 
-See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of using `aspnet-codegenerator controller`
+See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of using `dotnet aspnet-codegenerator controller`.
+
+### Razorpage options
+
+#### Razorpage generator arguments
+
+Razor Pages can be individually scaffolded by specifying the name of the new page and the template to use. The supported templates are:
+
+* `Empty`
+* `Create`
+* `Edit`
+* `Delete`
+* `Details`
+* `List`
+
+For example, the following command uses the Edit template to generate *MyEdit.cshtml* and *MyEdit.cshtml.cs*:
+
+```console
+dotnet aspnet-codegenerator razorpage MyEdit Edit -m Movie -dc RazorPagesMovieContext -outDir Pages\Movies
+```
+
+Typically, the template and generated file name is not specified, and the following templates are created:
+
+* `Create`
+* `Edit`
+* `Delete`
+* `Details`
+* `List`
+
+The following table lists options for  `aspnet-codegenerator` `razorpage` and `controller`:
+
+[!INCLUDE [aspnet-codegenerator-args-md.md](../../../includes/aspnet-codegenerator-args-md.md)]
+
+The following table lists options unique to  `aspnet-codegenerator razorpage`:
+
+| Option               | Description|
+| ----------------- | ------------ |
+|   --namespaceName or -namespace | The name of the namespace to use for the generated PageModel |
+| --partialView or -partial | Generate a partial view. Layout options -l and -udl are ignored if this is specified. |
+| --noPageModel or -npm | Switch to not generate a PageModel class for Empty template |
+
+Use the `-h` switch for help on the `aspnet-codegenerator razorpage` command:
+
+```console
+dotnet aspnet-codegenerator razorpage -h
+```
+
+See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio-code#scaffold-the-movie-model) for an example of using `dotnet aspnet-codegenerator razorpage`.

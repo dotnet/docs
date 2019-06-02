@@ -73,7 +73,7 @@ This topic discusses SqlClient support (added in .NET Framework 4.5) for high-av
   
  The `ApplicationIntent` keyword does not work with legacy, read-only databases.  
   
- A database can allow or disallow read workloads on the targeted AlwaysOn database. (This is done with the `ALLOW_CONNECTIONS` clause of the `PRIMARY_ROLE` and `SECONDARY_ROLE`[!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statements.)  
+ A database can allow or disallow read workloads on the targeted AlwaysOn database. (This is done with the `ALLOW_CONNECTIONS` clause of the `PRIMARY_ROLE` and `SECONDARY_ROLE`Transact-SQL statements.)  
   
  The `ApplicationIntent` keyword is used to enable read-only routing.  
   

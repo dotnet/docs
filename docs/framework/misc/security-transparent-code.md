@@ -17,7 +17,7 @@ ms.author: "mairaw"
 Security involves three interacting pieces: sandboxing, permissions, and enforcement. Sandboxing refers to the practice of creating isolated domains where some code is treated as fully trusted and other code is restricted to the permissions in the grant set for the sandbox. The application code that runs within the grant set of the sandbox is considered to be transparent; that is, it cannot perform any operations that can affect security. The grant set for the sandbox is determined by evidence (<xref:System.Security.Policy.Evidence> class). Evidence identifies what specific permissions are required by sandboxes, and what kinds of sandboxes can be created. Enforcement refers to allowing transparent code to execute only within its grant set.
 
 > [!IMPORTANT]
-> Security policy was a key element in previous versions of the .NET Framework. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](../../../docs/framework/misc/code-access-security-policy-compatibility-and-migration.md).
+> Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](../../../docs/framework/misc/code-access-security-policy-compatibility-and-migration.md).
 
 This topic describes the transparency model in more detail. It contains the following sections:
 
@@ -64,7 +64,7 @@ The primary difference between the two transparency levels is that level 1 does 
 
 ### Level 2 Transparency
 
-Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
+Level 2 transparency was introduced in the .NET Framework 4. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
 
 - Transparent code, regardless of the permissions it is granted (including full trust), can call only other transparent code or security-safe-critical code. If the code is partially trusted, it can only perform actions that are allowed by the domain’s permission set. Transparent code cannot do the following:
 

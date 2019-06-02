@@ -180,7 +180,7 @@ Thread that triggers a garbage collection
   
      Workstation garbage collection can be concurrent or non-concurrent. Concurrent garbage collection enables managed threads to continue operations during a garbage collection.  
   
-     Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], background garbage collection replaces concurrent garbage collection.  
+     Starting with the .NET Framework 4, background garbage collection replaces concurrent garbage collection.  
   
 - Server garbage collection, which is intended for server applications that need high throughput and scalability. Server garbage collection can be non-concurrent or background.  
   

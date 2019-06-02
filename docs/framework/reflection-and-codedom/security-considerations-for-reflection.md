@@ -20,7 +20,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 - Enumerate and examine assemblies and modules.  
   
- Using reflection to access members, by contrast, is subject to restrictions. Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], only trusted code can use reflection to access security-critical members. Furthermore, only trusted code can use reflection to access nonpublic members that would not be directly accessible to compiled code. Finally, code that uses reflection to access a safe-critical member must have whatever permissions the safe-critical member demands, just as with compiled code.  
+ Using reflection to access members, by contrast, is subject to restrictions. Beginning with the .NET Framework 4, only trusted code can use reflection to access security-critical members. Furthermore, only trusted code can use reflection to access nonpublic members that would not be directly accessible to compiled code. Finally, code that uses reflection to access a safe-critical member must have whatever permissions the safe-critical member demands, just as with compiled code.  
   
  Subject to necessary permissions, code can use reflection to perform the following kinds of access:  
   
@@ -42,7 +42,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 <a name="accessingSecurityCritical"></a>   
 ## Accessing Security-Critical Members  
- A member is security-critical if it has the <xref:System.Security.SecurityCriticalAttribute>, if it belongs to a type that has the <xref:System.Security.SecurityCriticalAttribute>, or if it is in a security-critical assembly. Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the rules for accessing security-critical members are as follows:  
+ A member is security-critical if it has the <xref:System.Security.SecurityCriticalAttribute>, if it belongs to a type that has the <xref:System.Security.SecurityCriticalAttribute>, or if it is in a security-critical assembly. Beginning with the .NET Framework 4, the rules for accessing security-critical members are as follows:  
   
 - Transparent code cannot use reflection to access security-critical members, even if the code is fully trusted. A <xref:System.MethodAccessException>, <xref:System.FieldAccessException>, or <xref:System.TypeAccessException> is thrown.  
   
@@ -92,7 +92,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 ## Version Information  
   
-- Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], transparent code cannot use reflection to access security-critical members.  
+- Beginning with the .NET Framework 4, transparent code cannot use reflection to access security-critical members.  
   
 - The <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag is introduced in the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
   

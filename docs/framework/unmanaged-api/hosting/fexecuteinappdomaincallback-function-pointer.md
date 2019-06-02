@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # FExecuteInAppDomainCallback Function Pointer
 Points to a function that is called by the common language runtime (CLR) to execute managed code.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

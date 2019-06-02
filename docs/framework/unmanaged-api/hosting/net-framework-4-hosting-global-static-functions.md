@@ -10,7 +10,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # .NET Framework 4 Hosting Global Static Functions
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
+The .NET Framework 4 introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
   
 ## In This Section  
  [CLRCreateInstance Function](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md)  

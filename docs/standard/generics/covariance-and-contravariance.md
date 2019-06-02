@@ -53,7 +53,7 @@ ms.author: "mairaw"
   
  Covariance and contravariance are collectively referred to as *variance*. A generic type parameter that is not marked covariant or contravariant is referred to as *invariant*. A brief summary of facts about variance in the common language runtime:  
   
-- In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], variant type parameters are restricted to generic interface and generic delegate types.  
+- In the .NET Framework 4, variant type parameters are restricted to generic interface and generic delegate types.  
   
 - A generic interface or generic delegate type can have both covariant and contravariant type parameters.  
   

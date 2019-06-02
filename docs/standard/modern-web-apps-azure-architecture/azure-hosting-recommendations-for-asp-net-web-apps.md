@@ -27,7 +27,7 @@ Of these, App Service Web Apps is the recommended approach for most scenarios, i
 
 ### App Service Web Apps
 
-App Service Web Apps offers a fully managed platform optimized for hosting web applications. It's a platform as a service (PaaS) offering that lets you focus on your business logic, while Azure takes care of the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
+App Service Web Apps offers a fully-managed platform optimized for hosting web applications. It's a platform as a service (PaaS) offering that lets you focus on your business logic, while Azure takes care of the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
 
 - DevOps optimization (continuous integration and delivery, multiple environments, A/B testing, scripting support).
 
@@ -39,11 +39,17 @@ App Service Web Apps offers a fully managed platform optimized for hosting web a
 
 - Visual Studio integration.
 
-Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app. If you have an existing ASP.NET application hosted on-premises using a local database, there is a clear path to migrate the app to an App Service Web App with an Azure SQL Database (or alternately secure access to your on-premises database server).
+Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app. If you have an existing ASP.NET application hosted on-premises using a local database, there is a clear path to migrate the app to an App Service Web App with an Azure SQL Database (or secure access to your on-premises database server, if preferred).
 
 ![](./media/image1-6.png)
 
 In most cases, moving from a locally-hosted ASP.NET app to an App Service Web App is a straightforward process. Little or no modification should be required of the app itself, and it can quickly start to take advantage of the many features that Azure App Service Web Apps offer.
+
+In addition to apps that are not optimized for the cloud, Azure App Service Web Apps are an excellent solution for many simple monolithic (non-distributed) applications, such as many ASP.NET Core apps. In this approach, the architecture is basic and simple to understand and manage:
+
+![](./media/image1-5.png)
+
+A small number of resources in a single resource group is typically sufficient to manage such an app. Apps that are typically deployed as a single unit, rather than those which are made up of many separate processes, are good candidates for this [basic architectural approach](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/app-service-web-app/basic-web-app). Though architecturally simple, this approach still allows the hosted app to scale both up (more resources per node) and out (more hosted nodes) to meet any increase in demand. With autoscale, the app can be configured to automatically adjust the number of nodes hosting the app based on demand and average load across nodes.
 
 ### App Service Web Apps for Containers
 
@@ -51,9 +57,32 @@ In addition to support for hosting web apps directly, [App Service Web Apps for 
 
 There are a few scenarios where Web Apps for Containers make the most sense. If you have existing apps that you're able to containerize, whether in Windows or Linux containers, you'll be able to host these easily using this toolset. Simply publish your container and then configure Web Apps for Containers to pull the latest version of that image from your registry of choice. This is a "lift and shift" approach to migrating from classic app hosting models to a cloud-optimized model.
 
+![](./media/image1-8.png)
+
+This approach also works well if your development team is able to move to a container-based development process. The "inner loop" of developing apps with containers includes building the app with containers. Changes made to the code as well as to container configuration are pushed to source control, and an automated build is responsible for publishing new container images to a registry like Docker Hub or Azure Container Registry. These images are then used as the basis for additional development, as well as for deployments to production, as shown in the following diagram:
+
 ![](./media/image1-7.png)
 
-I
+Developing with containers offers numerous advantages, especially when containers are used in production. The same container configuration is used to host the app in each environment in which it runs, from local dev machine to build and test systems to production. This greatly reduces the likelihood of defects resulting from differences in machine configuration or software versions. Developers can also use whatever tools they're most productive with, including operating system, since containers can run on any OS. In some cases, distributed applications involving many containers may be very resource intensive to run on a single dev machine. In this scenario, developers can use Azure Dev Spaces to rapidly build container-based apps composed of many different containers in the cloud.
+
+Azure Dev Spaces helps teams to focus on the development and rapid iteration of their microservice application by allowing teams to work directly with their entire microservices architecture or application running in AKS. Azure Dev Spaces also provides a way to independently update portions of your microservices architecture in isolation without affecting the rest of the AKS cluster or other developers.
+
+![](./media/image1-9.gif)
+
+Azure Dev Spaces:
+
+- Minimize local machine setup time and resource requirements
+- Allow teams to iterate more rapidly
+- Reduce number of integration environments required by team
+- Remove need to mock certain services in distributed system when developing/testing
+
+[Learn more about Azure Dev Spaces](https://docs.microsoft.com/en-us/azure/dev-spaces/about)
+
+As portions of larger applications are broken up into their own smaller, independent *microservices*, additional design patterns can be used to improve app behavior. Instead of working directly with individual services, an *API gateway* can simplify access and decouple the client from its backend. Having separate service backends for different frontends also allows services to evolve in concert with their consumers. Common services can be accessed via a separate *sidecar* container, which might include common client connectivity libraries using the *ambassador* pattern.
+
+![](./media/image1-10.png)
+
+[Learn more about design patterns to consider when building microservice-based systems.](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/patterns)
 
 ### Azure Kubernetes Service
 
@@ -100,6 +129,12 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
 
 - Azure Solution Architectures\
   <https://azure.microsoft.com/solutions/architecture/>
+
+- Azure Basic Web Application Architecture\
+  <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/app-service-web-app/basic-web-app>
+
+- Design Patterns for Microservices\
+  <https://docs.microsoft.com/en-us/azure/architecture/microservices/design/patterns>
 
 - Azure Developer Guide\
   <https://azure.microsoft.com/campaigns/developer-guide/>

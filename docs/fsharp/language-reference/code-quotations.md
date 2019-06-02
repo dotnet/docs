@@ -33,9 +33,7 @@ But the following expressions are valid.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-3/snippet502.fs)]
 
-To use code quotations, you must add an import declaration (by using the `open` keyword) that opens the [Microsoft.FSharp.Quotations](https://msdn.microsoft.com/library/e9ce8a3a-e00c-4190-bad5-cce52ee089b2) namespace.
-
-The F# PowerPack provides support for evaluating and executing F# expression objects.
+To evalutate F# quotations, you must use the {F# Quotation Evaluator](https://github.com/fsprojects/FSharp.Quotations.Evaluator). It provides support for evaluating and executing F# expression objects.
 
 ## Expr Type
 

@@ -29,7 +29,7 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
   
      An example of the local service WSDL address is `http://localhost:65193/StockPriceService.xamlx?wsdl`.  
   
-8. Using [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], run the WCF test client (WcfTestClient.exe). It is located in the Microsoft Visual Studio 10.0\Common7\IDE directory.  
+8. Using File Explorer, run the WCF test client (WcfTestClient.exe). It is located in the Microsoft Visual Studio 10.0\Common7\IDE directory.  
   
 9. In the WCF test client, click the **File** menu and select **Add Service**. Paste the local service address in the textbox. Click **OK** to close the dialog.  
   

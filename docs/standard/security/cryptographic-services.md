@@ -261,7 +261,7 @@ The <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class is an imp
 
 ## ClickOnce Manifests
 
-In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], the following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):
+In the .NET Framework 3.5, the following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):
 
 - The <xref:System.Security.Cryptography.ManifestSignatureInformation> class obtains information about a manifest signature when you use its <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method overloads.
 
@@ -285,7 +285,7 @@ In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], the fol
 
 ## Suite B Support
 
-The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] supports the Suite B set of cryptographic algorithms published by the National Security Agency (NSA). For more information about Suite B, see the [NSA Suite B Cryptography Fact Sheet](https://www.nsa.gov/what-we-do/information-assurance/).
+The .NET Framework 3.5 supports the Suite B set of cryptographic algorithms published by the National Security Agency (NSA). For more information about Suite B, see the [NSA Suite B Cryptography Fact Sheet](https://www.nsa.gov/what-we-do/information-assurance/).
 
 The following algorithms are included:
 
@@ -309,7 +309,7 @@ The Cryptography Next Generation (CNG) classes provide a managed wrapper around 
 
 The <xref:System.Security.Cryptography.CngKey> class is used for a variety of additional operations, including opening, creating, deleting, and exporting keys. It also provides access to the underlying key handle to use when calling native functions directly.
 
-The [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] also includes a variety of supporting CNG classes, such as the following:
+The .NET Framework 3.5 also includes a variety of supporting CNG classes, such as the following:
 
 - <xref:System.Security.Cryptography.CngProvider> maintains a key storage provider.
 

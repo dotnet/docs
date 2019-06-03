@@ -5,8 +5,6 @@ ms.date: 06/15/2019
 ---
 # dotnet aspnet-codegenerator
 
-/aspnet/core/tutorials/first-mvc-app/adding-model
-
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 ## Name
@@ -62,7 +60,7 @@ Specifies the NuGet package directory.
 
 `-c|--configuration {Debug|Release}`
 
-  Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `-tfm|--target-framework`
 
@@ -131,7 +129,7 @@ The following table lists options unique to  `aspnet-codegenerator controller`:
 | --useAsyncActions or -async | Generate async controller actions. |
 | --noViews or -nv | Generate [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) views. |
 | --restWithNoViews or -api  | Generate a Controller with REST style API. `noViews` is assumed and any view related options are ignored. |
-  | --readWriteActions or -actions | Generate controller with read/write actions without a model. |
+| --readWriteActions or -actions | Generate controller with read/write actions without a model. |
 
 Use the `-h` switch for help on the `aspnet-codegenerator controller` command:
 

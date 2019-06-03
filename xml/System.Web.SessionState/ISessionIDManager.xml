@@ -279,7 +279,7 @@
    
   
 ## Examples  
- The following code example shows a partially implemented <xref:System.Web.SessionState.ISessionIDManager.GetSessionID%2A> method. If your custom session-ID manager supports cookieless session identifiers, you will need to implement a solution for sending and retrieving session identifiers in the URL, such as an ISAPI filter.  
+ The following code example shows a partially implemented <xref:System.Web.SessionState.ISessionIDManager.SaveSessionID%2A> method. If your custom session-ID manager supports cookieless session identifiers, you will need to implement a solution for sending and retrieving session identifiers in the URL, such as an ISAPI filter.  
   
  [!code-csharp[System.Web.SessionState.ISessionIDModule#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.SessionState.ISessionIDModule/CS/isessionidmodulesnippets.cs#5)]
  [!code-vb[System.Web.SessionState.ISessionIDModule#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.SessionState.ISessionIDModule/VB/isessionidmodulesnippets.vb#5)]  

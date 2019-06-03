@@ -976,7 +976,7 @@
 ## Remarks  
  The <xref:System.Net.WebRequest.CreateHttp%28System.String%29> method returns an instance of the <xref:System.Net.HttpWebRequest> class for the `requestUriString`.  
   
- When a URI that begins with `http://` or `http://` is passed in the `requestUriString` parameter, a <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.CreateHttp%28System.String%29>. Another other scheme will throw an <xref:System.NotSupportedException>.  
+ When a URI that begins with `http://` or `https://` is passed in the `requestUriString` parameter, a <xref:System.Net.HttpWebRequest> is returned by <xref:System.Net.WebRequest.CreateHttp%28System.String%29>. Any other scheme will throw a <xref:System.NotSupportedException>.  
   
  The <xref:System.Net.WebRequest.CreateHttp%28System.String%29> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.HttpWebRequest>. If the method is successful, the <xref:System.Net.HttpWebRequest.AllowReadStreamBuffering%2A> property on the returned <xref:System.Net.HttpWebRequest> instance is set to `false`.  
   

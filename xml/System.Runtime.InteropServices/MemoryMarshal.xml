@@ -204,11 +204,21 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the returned reference.</typeparam>
+        <param name="span">The read-only span to reinterpret.</param>
+        <summary>Reinterprets a read-only span of bytes as a read-only reference to the structure of type <paramref name="T" />.</summary>
+        <returns>The read-only reference to the structure of type <paramref name="T" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. It is checked at runtime in order to preserve type safety.  
+
+This method is supported only on platforms that support misaligned memory access or when the memory block is aligned by other means.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsRef&lt;T&gt;">
@@ -242,11 +252,21 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
         <Parameter Name="span" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the returned reference.</typeparam>
+        <param name="span">The span to reinterpret.</param>
+        <summary>Reinterprets a span of bytes as a reference to the structure of type <paramref name="T" />.</summary>
+        <returns>The reference to the structure of type <paramref name="T" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+`T` cannot contain pointers or references. It is checked at runtime in order to preserve type safety.  
+
+This method is supported only on platforms that support misaligned memory access or when the memory block is aligned by other means.
+
+       ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cast&lt;TFrom,TTo&gt;">
@@ -645,7 +665,7 @@ If the span is empty, this method returns a reference to the location where the 
   
 ## Remarks  
 
-`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+`T` cannot contain pointers or references. It is checked at runtime in order to preserve type safety.  
 
        ]]></format>
         </remarks>
@@ -910,7 +930,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
   
 ## Remarks  
 
-`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+`T` cannot contain pointers or references. It is checked at runtime in order to preserve type safety.  
 
        ]]></format>
         </remarks>
@@ -956,7 +976,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <typeparam name="T">The type of the structure.</typeparam>
         <param name="destination">The span of bytes to contain the structure.</param>
         <param name="value">The structure to be written to the span.</param>
-        <summary>Tries to writes a structure of type <paramref name="T" /> into a span of bytes.</summary>
+        <summary>Tries to write a structure of type <paramref name="T" /> into a span of bytes.</summary>
         <returns>
           <see langword="true" /> if the write operation succeeded; otherwise, <see langword="false" />. The method returns <see langword="false" /> if the span is too small to contain <paramref name="T" />. </returns>
         <remarks>
@@ -964,7 +984,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
   
 ## Remarks  
 
-`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+`T` cannot contain pointers or references. It is checked at runtime in order to preserve type safety.  
 
        ]]></format>
         </remarks>
@@ -1016,7 +1036,7 @@ This method allows a read-only memory buffer to be used in existing APIs that re
   
 ## Remarks  
 
-`T` cannot contain pointers or references. `It is checked at runtime in order to preserve type safety.  
+`T` cannot contain pointers or references. It is checked at runtime in order to preserve type safety.  
 
        ]]></format>
         </remarks>

@@ -58,7 +58,3 @@ To write queries effectively, you should understand how types of the variables i
  ![Diagram that shows the type flow with implicit typing.](./media/type-relationships-in-linq-query-operations/linq-type-flow-implicit-typing.png)  
   
  For more information about `var`, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
-  
-## See also
-
-- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/index.md)

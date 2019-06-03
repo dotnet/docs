@@ -117,4 +117,4 @@ custOrdDoc did not validate
 ## See also
 
 - <xref:System.Xml.Schema.Extensions.Validate%2A>
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)
+- [Creating XML Trees (C#)](creating-xml-trees-linq-to-xml-2.md)

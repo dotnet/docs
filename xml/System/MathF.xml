@@ -53,10 +53,19 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number that is greater than or equal to <see cref="F:System.Single.MinValue" />, but less than or equal to <see cref="F:System.Single.MaxValue" />.</param>
+        <summary>Returns the absolute value of a single-precision floating-point number.</summary>
+        <returns>A single-precision floating-point number, x, such that 0 ≤ x ≤ <see cref="F:System.Single.MaxValue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The absolute value of a <xref:System.Single> is its numeric value without its sign. For example, the absolute value of both 1.2e-03 and -1.2e03 is 1.2e03.  
+  
+ If `x` is equal to <xref:System.Single.NegativeInfinity> or <xref:System.Single.PositiveInfinity>, the return value is <xref:System.Single.PositiveInfinity>. If `x` is equal to <xref:System.Single.NaN>, the return value is <xref:System.Single.NaN>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Acos">
@@ -83,10 +92,21 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number representing a cosine, where <paramref name="x" /> must be greater than or equal to -1, but less than or equal to 1.</param>
+        <summary>Returns the angle whose cosine is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that 0 ≤ θ ≤ π.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> &lt; -1 or <paramref name="x" /> &gt; 1 or <paramref name="x" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.MathF.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Acosh">
@@ -112,10 +132,21 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number representing a hyperbolic cosine, where <paramref name="x" /> must be greater than or equal to 1, but less than or equal to <see cref="F:System.Single.PositiveInfinity" />.</param>
+        <summary>Returns the angle whose hyperbolic cosine is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that 0 ≤ θ ≤ ∞.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> &lt; 1 or <paramref name="x" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.MathF.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Asin">
@@ -142,10 +173,23 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number representing a sine, where <paramref name="x" /> must be greater than or equal to -1, but less than or equal to 1.</param>
+        <summary>Returns the angle whose sine is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that -π/2 ≤ θ ≤ π/2.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> &lt; -1 or <paramref name="x" /> &gt; 1 or <paramref name="x" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
+  
+ Multiply the return value by 180/<xref:System.MathF.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Asinh">
@@ -171,10 +215,21 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number representing a hyperbolic sine, where <paramref name="x" /> must be greater than or equal to <see cref="F:System.Single.NegativeInfinity" />, but less than or equal to <see cref="F:System.Single.PositiveInfinity" />.</param>
+        <summary>Returns the angle whose hyperbolic sine is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that -∞ &lt; θ ≤ -1, or 1 ≤ θ &lt; ∞. 
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.MathF.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -201,10 +256,23 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number representing a tangent.</param>
+        <summary>Returns the angle whose tangent is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that -π/2 ≤ θ ≤ π/2.  
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> equals <see cref="F:System.Single.NaN" />, -π/2 rounded to double precision (-1.5707963267949) if <paramref name="x" /> equals <see cref="F:System.Single.NegativeInfinity" />, or π/2 rounded to double precision (1.5707963267949) if <paramref name="x" /> equals <see cref="F:System.Single.PositiveInfinity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A positive return value represents a counterclockwise angle from the x-axis; a negative return value represents a clockwise angle.  
+  
+ Multiply the return value by 180/<xref:System.MathF.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan2">
@@ -232,11 +300,40 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="y">To be added.</param>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="y">The y coordinate of a point.</param>
+        <param name="x">The x coordinate of a point.</param>
+        <summary>Returns the angle whose tangent is the quotient of two specified numbers.</summary>
+        <returns>An angle, θ, measured in radians, such that -π ≤ θ ≤ π, and tan(θ) = <paramref name="y" /> / <paramref name="x" />, where (<paramref name="x" />, <paramref name="y" />) is a point in the Cartesian plane. Observe the following:  
+  
+-   For (<paramref name="x" />, <paramref name="y" />) in quadrant 1, 0 &lt; θ &lt; π/2.  
+  
+-   For (<paramref name="x" />, <paramref name="y" />) in quadrant 2, π/2 &lt; θ ≤ π.  
+  
+-   For (<paramref name="x" />, <paramref name="y" />) in quadrant 3, -π &lt; θ &lt; -π/2.  
+  
+-   For (<paramref name="x" />, <paramref name="y" />) in quadrant 4, -π/2 &lt; θ &lt; 0.  
+  
+ For points on the boundaries of the quadrants, the return value is the following:  
+  
+-   If y is 0 and x is not negative, θ = 0.  
+  
+-   If y is 0 and x is negative, θ = π.  
+  
+-   If y is positive and x is 0, θ = π/2.  
+  
+-   If y is negative and x is 0, θ = -π/2.  
+  
+-   If y is 0 and x is 0, θ = 0.  
+  
+ If <paramref name="x" /> or <paramref name="y" /> is <see cref="F:System.Single.NaN" />, or if <paramref name="x" /> and <paramref name="y" /> are either <see cref="F:System.Single.PositiveInfinity" /> or <see cref="F:System.Single.NegativeInfinity" />, the method returns <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is the angle in the Cartesian plane formed by the x-axis, and a vector starting from the origin, (0,0), and terminating at the point, (x,y).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atanh">
@@ -262,10 +359,21 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number representing a hyperbolic tangent, where <paramref name="x" /> must be greater than or equal to -1, but less than or equal to 1.</param>
+        <summary>Returns the angle whose hyperbolic tangent is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that -∞ &lt; θ &lt;-1, or 1 &lt; θ &lt; ∞.  
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> &lt; -1 or <paramref name="x" /> &gt; 1 or <paramref name="x" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.MathF.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BitDecrement">
@@ -290,10 +398,18 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The value to decrement.</param>
+        <summary>Returns the next smallest value that compares less than <paramref name="x" />.</summary>
+        <returns>The next smallest value that compares less than <paramref name="x" />.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NegativeInfinity" /> if <paramref name="x" /> is equals <see cref="F:System.Single.NegativeInfinity" />.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BitIncrement">
@@ -318,10 +434,18 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The value to increment.</param>
+        <summary>Returns the next largest value that is greater than <paramref name="x" />.</summary>
+        <returns>The next largest value that is greater than <paramref name="x" />.
+  
+ -or-  
+  
+ <see cref="F:System.Single.PositiveInfinity" /> if <paramref name="x" /> equals <see cref="F:System.Single.PositiveInfinity" />.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> is equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cbrt">
@@ -347,10 +471,15 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number whose cube root is to be found.</param>
+        <summary>Returns the cube root of a specified number.</summary>
+        <returns>The cube root of <paramref name="x" />.
+  
+ -or-  
+  
+ <see cref="F:System.Single.NaN" /> if <paramref name="x" /> is equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks></remarks>
+        <altmember cref="M:System.MathF.Pow(System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Ceiling">
@@ -377,10 +506,19 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number.</param>
+        <summary>Returns the smallest integral value that is greater than or equal to the specified single-precision floating-point number.</summary>
+        <returns>The smallest integral value that is greater than or equal to <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NegativeInfinity" />, or <see cref="F:System.Single.PositiveInfinity" />, that value is returned. Note that this method returns a <see cref="T:System.Single" /> instead of an integral type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `x` is positive, the presence of any fractional component causes `x` to be rounded to the next highest integer. If `x` is negative, the rounding operation causes any fractional component of `x` to be discarded. The operation of this method differs from the <xref:System.MathF.Floor%28System.Single%29> method, which supports rounding toward negative infinity.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="Overload:System.MathF.Round" />
+        <altmember cref="M:System.MathF.Floor(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="CopySign">
@@ -406,11 +544,11 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number whose magnitude is used in the result.</param>
+        <param name="y">A number whose sign is the used in the result.</param>
+        <summary>Returns a value with the magnitude of <paramref name="x" /> and the sign of <paramref name="y" />.</summary>
+        <returns>A value with the magnitude of <paramref name="x" /> and the sign of <paramref name="y" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cos">
@@ -437,10 +575,17 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An angle, measured in radians.</param>
+        <summary>Returns the cosine of the specified angle.</summary>
+        <returns>The cosine of <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NegativeInfinity" />, or <see cref="F:System.Single.PositiveInfinity" />, this method returns <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `x`, must be in radians. Multiply by <xref:System.MathF.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cosh">
@@ -467,10 +612,16 @@ The static fields and methods of the `MathF` class correspond to those of the <x
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An angle, measured in radians.</param>
+        <summary>Returns the hyperbolic cosine of the specified angle.</summary>
+        <returns>The hyperbolic cosine of <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NegativeInfinity" /> or <see cref="F:System.Single.PositiveInfinity" />, <see cref="F:System.Single.PositiveInfinity" /> is returned. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `x`, must be in radians. Multiply by <xref:System.MathF.PI?displayProperty=nameWithType>/180 to convert degrees to radians.    
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -529,10 +680,24 @@ The value of this constant is 2.71828175.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number specifying a power.</param>
+        <summary>Returns <see langword="e" /> raised to the specified power.</summary>
+        <returns>The number <see langword="e" /> raised to the power <paramref name="x" />. If <paramref name="x" /> equals <see cref="F:System.Single.NaN" /> or <see cref="F:System.Single.PositiveInfinity" />, that value is returned. If <paramref name="x" /> equals <see cref="F:System.Single.NegativeInfinity" />, 0 is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `e` is a mathematical constant whose value is approximately 2.71828.  
+  
+ Use the <xref:System.MathF.Pow%2A> method to calculate powers of other bases.  
+  
+ <xref:System.MathF.Exp%2A> is the inverse of <xref:System.MathF.Log%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="F:System.MathF.E" />
+        <altmember cref="M:System.MathF.Pow(System.Single,System.Single)" />
+        <altmember cref="M:System.MathF.Log(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Floor">
@@ -559,10 +724,19 @@ The value of this constant is 2.71828175.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number.</param>
+        <summary>Returns the largest integral value less than or equal to the specified single-precision floating-point number.</summary>
+        <returns>The largest integral value less than or equal to <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NegativeInfinity" />, or <see cref="F:System.Single.PositiveInfinity" />, that value is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `x` is positive, any fractional component is truncated. If `x` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.MathF.Ceiling%2A> method, which supports rounding toward positive infinity.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="Overload:System.MathF.Round" />
+        <altmember cref="M:System.MathF.Ceiling(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="FusedMultiplyAdd">
@@ -589,12 +763,21 @@ The value of this constant is 2.71828175.
         <Parameter Name="z" Type="System.Single" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="z">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number to be multiplied with <paramref name="y" />.</param>
+        <param name="y">The number to be multiplied with <paramref name="x" />.</param>
+        <param name="z">The number to be added to the result of <paramref name="x" /> multiplied by <paramref name="y" />.</param>
+        <summary>Returns (x * y) + z, rounded as one ternary operation.</summary>
+        <returns>(x * y) + z, rounded as one ternary operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This computes `(x * y)` as if to infinite precision, adds `z` to that result as if to infinite precision, and finally rounds to the nearest representable value.
+  
+ This differs from the non-fused sequence which would compute `(x * y)` as if to infinite preicision, round the result to the nearest representable value, add 'z' to the rounded result as if to infinite precision, and finally round to the nearest representable value.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IEEERemainder">
@@ -622,11 +805,36 @@ The value of this constant is 2.71828175.
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A dividend.</param>
+        <param name="y">A divisor.</param>
+        <summary>Returns the remainder resulting from the division of a specified number by another specified number.</summary>
+        <returns>A number equal to <paramref name="x" /> - (<paramref name="y" /> Q), where Q is the quotient of <paramref name="x" /> / <paramref name="y" /> rounded to the nearest integer (if <paramref name="x" /> / <paramref name="y" /> falls halfway between two integers, the even integer is returned).  
+  
+ If <paramref name="x" /> - (<paramref name="y" /> Q) is zero, the value +0 is returned if <paramref name="x" /> is positive, or -0 if <paramref name="x" /> is negative.  
+  
+ If <paramref name="y" /> = 0, <see cref="F:System.Single.NaN" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation complies with the remainder operation defined in Section 5.1 of ANSI/IEEE Std 754-1985; IEEE Standard for Binary Floating-Point Arithmetic; Institute of Electrical and Electronics Engineers, Inc; 1985.  
+  
+ The <xref:System.MathF.IEEERemainder%2A> method is not the same as the [remainder operator](~/docs/csharp/language-reference/operators/remainder-operator.md). Although both return the remainder after division, the formulas they use are different. The formula for the <xref:System.MathF.IEEERemainder%2A> method is:  
+  
+```  
+IEEERemainder = dividend - (divisor * MathF.Round(dividend / divisor))  
+```  
+  
+ In contrast, the formula for the remainder operator is:  
+  
+```  
+Remainder = (MathF.Abs(dividend) - (MathF.Abs(divisor) *   
+            (MathF.Floor(MathF.Abs(dividend) / MathF.Abs(divisor))))) *   
+            MathF.Sign(dividend)  
+```  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ILogB">
@@ -651,10 +859,35 @@ The value of this constant is 2.71828175.
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number whose logarithm is to be found.</param>
+        <summary>Returns the base 2 integer logarithm of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Default
+  
+ </term><description> The base 2 integer log of <paramref name="x" />; that is, (int)log2(<paramref name="x" />).  
+  
+ </description></item><item><term> Zero  
+  
+ </term><description> <see cref="F:System.Int32.MinValue" />
+  
+ </description></item><item><term> Equal to <see cref="F:System.Single.NaN" /> or <see cref="F:System.Single.PositiveInfinity" /> or <see cref="F:System.Single.NegativeInfinity" />
+  
+ </term><description> <see cref="F:System.Int32.MaxValue" />
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter `x` is specified as a base 10 number.   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -681,10 +914,31 @@ The value of this constant is 2.71828175.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number whose logarithm is to be found.</param>
+        <summary>Returns the natural (base <see langword="e" />) logarithm of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Positive  
+  
+ </term><description> The natural logarithm of <paramref name="x" />; that is, ln <paramref name="x" />, or log e <paramref name="x" /></description></item><item><term> Zero  
+  
+ </term><description><see cref="F:System.Single.NegativeInfinity" /></description></item><item><term> Negative  
+  
+ </term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equal to <see cref="F:System.Single.NaN" /></term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equal to <see cref="F:System.Single.PositiveInfinity" /></term><description><see cref="F:System.Single.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter `x` is specified as a base 10 number.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="F:System.MathF.E" />
+        <altmember cref="M:System.MathF.Exp(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -712,11 +966,99 @@ The value of this constant is 2.71828175.
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number whose logarithm is to be found.</param>
+        <param name="newBase">The base of the logarithm.</param>
+        <summary>Returns the logarithm of a specified number in a specified base.</summary>
+        <returns>One of the values in the following table. (+Infinity denotes <see cref="F:System.Single.PositiveInfinity" />, -Infinity denotes <see cref="F:System.Single.NegativeInfinity" />, and NaN denotes <see cref="F:System.Single.NaN" />.)  
+  
+ <list type="table"><listheader><term><paramref name="x" /></term><description><paramref name="newBase" /></description><description> Return value  
+  
+ </description></listheader><item><term><paramref name="x" />&gt; 0  
+  
+ </term><description> (0 &lt;<paramref name="newBase" />&lt; 1) -or-(<paramref name="newBase" />&gt; 1)  
+  
+ </description><description> lognewBase(a)  
+  
+ </description></item><item><term><paramref name="x" />&lt; 0  
+  
+ </term><description> (any value)  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term> (any value)  
+  
+ </term><description><paramref name="newBase" />&lt; 0  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term><paramref name="x" /> != 1  
+  
+ </term><description><paramref name="newBase" /> = 0  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term><paramref name="x" /> != 1  
+  
+ </term><description><paramref name="newBase" /> = +Infinity  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term><paramref name="x" /> = NaN  
+  
+ </term><description> (any value)  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term> (any value)  
+  
+ </term><description><paramref name="newBase" /> = NaN  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term> (any value)  
+  
+ </term><description><paramref name="newBase" /> = 1  
+  
+ </description><description> NaN  
+  
+ </description></item><item><term><paramref name="x" /> = 0  
+  
+ </term><description> 0 &lt;<paramref name="newBase" />&lt; 1  
+  
+ </description><description> +Infinity  
+  
+ </description></item><item><term><paramref name="x" /> = 0  
+  
+ </term><description><paramref name="newBase" />&gt; 1  
+  
+ </description><description> -Infinity  
+  
+ </description></item><item><term><paramref name="x" /> =  +Infinity  
+  
+ </term><description> 0 &lt;<paramref name="newBase" />&lt; 1  
+  
+ </description><description> -Infinity  
+  
+ </description></item><item><term><paramref name="x" /> =  +Infinity  
+  
+ </term><description><paramref name="newBase" />&gt; 1  
+  
+ </description><description> +Infinity  
+  
+ </description></item><item><term><paramref name="x" /> = 1  
+  
+ </term><description><paramref name="newBase" /> = 0  
+  
+ </description><description> 0  
+  
+ </description></item><item><term><paramref name="x" /> = 1  
+  
+ </term><description><paramref name="newBase" /> = +Infinity  
+  
+ </description><description> 0  
+  
+ </description></item></list></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Log10">
@@ -743,10 +1085,31 @@ The value of this constant is 2.71828175.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number whose logarithm is to be found.</param>
+        <summary>Returns the base 10 logarithm of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Positive  
+  
+ </term><description> The base 10 log of <paramref name="x" />; that is, log 10<paramref name="x" />.  
+  
+ </description></item><item><term> Zero  
+  
+ </term><description><see cref="F:System.Single.NegativeInfinity" /></description></item><item><term> Negative  
+  
+ </term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equal to <see cref="F:System.Single.NaN" /></term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equal to <see cref="F:System.Single.PositiveInfinity" /></term><description><see cref="F:System.Single.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter `x` is specified as a base 10 number.   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Log2">
@@ -771,10 +1134,31 @@ The value of this constant is 2.71828175.
         <Parameter Name="x" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number whose logarithm is to be found.</param>
+        <summary>Returns the base 2 logarithm of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Positive  
+  
+ </term><description> The base 2 log of <paramref name="x" />; that is, log 2<paramref name="x" />.  
+  
+ </description></item><item><term> Zero  
+  
+ </term><description><see cref="F:System.Single.NegativeInfinity" /></description></item><item><term> Negative  
+  
+ </term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equal to <see cref="F:System.Single.NaN" /></term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equal to <see cref="F:System.Single.PositiveInfinity" /></term><description><see cref="F:System.Single.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter `x` is specified as a base 10 number.   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -802,11 +1186,11 @@ The value of this constant is 2.71828175.
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first of two single-precision floating-point numbers to compare.</param>
+        <param name="y">The second of two single-precision floating-point numbers to compare.</param>
+        <summary>Returns the larger of two single-precision floating-point numbers.</summary>
+        <returns>Parameter <paramref name="x" /> or <paramref name="y" />, whichever is larger. If <paramref name="x" />, or <paramref name="y" />, or both <paramref name="x" /> and <paramref name="y" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxMagnitude">
@@ -832,11 +1216,11 @@ The value of this constant is 2.71828175.
         <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first of two single-precision floating-point numbers to compare.</param>
+        <param name="y">The second of two single-precision floating-point numbers to compare.</param>
+        <summary>Returns the larger magnitude of two single-precision floating-point numbers.</summary>
+        <returns>Parameter <paramref name="x" /> or <paramref name="y" />, whichever has the larger magnitude. If <paramref name="x" />, or <paramref name="y" />, or both <paramref name="x" /> and <paramref name="y" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -864,11 +1248,11 @@ The value of this constant is 2.71828175.
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first of two single-precision floating-point numbers to compare.</param>
+        <param name="y">The second of two single-precision floating-point numbers to compare.</param>
+        <summary>Returns the smaller of two single-precision floating-point numbers.</summary>
+        <returns>Parameter <paramref name="x" /> or <paramref name="y" />, whichever is smaller. If <paramref name="x" />, <paramref name="y" />, or both <paramref name="x" /> and <paramref name="y" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinMagnitude">
@@ -894,11 +1278,11 @@ The value of this constant is 2.71828175.
         <Parameter Name="y" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first of two single-precision floating-point numbers to compare.</param>
+        <param name="y">The second of two single-precision floating-point numbers to compare.</param>
+        <summary>Returns the smaller magnitude of two single-precision floating-point numbers.</summary>
+        <returns>Parameter <paramref name="x" /> or <paramref name="y" />, whichever has the smaller magnitude. If <paramref name="x" />, or <paramref name="y" />, or both <paramref name="x" /> and <paramref name="y" /> are equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NaN" /> is returned.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="PI">
@@ -958,11 +1342,38 @@ The value of this field is 3.14159274.
         <Parameter Name="y" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number to be raised to a power.</param>
+        <param name="y">A single-precision floating-point number that specifies a power.</param>
+        <summary>Returns a specified number raised to the specified power.</summary>
+        <returns>The number <paramref name="x" /> raised to the power <paramref name="y" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table indicates the return value when various values or ranges of values are specified for the `x` and `y` parameters. For more information, see <xref:System.Single.PositiveInfinity?displayProperty=nameWithType>, <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Single.NaN?displayProperty=nameWithType>.  
+  
+|Parameters|Return value|  
+|----------------|------------------|  
+|`x` or `y` = `NaN`.|`NaN`|  
+|`x` = Any value except `NaN`; `y` = 0.|1|  
+|`x` = `NegativeInfinity`; `y` < 0.|0|  
+|`x` = `NegativeInfinity`; `y` is a positive odd integer.|`NegativeInfinity`|  
+|`x` = `NegativeInfinity`; `y` is positive but not an odd integer.|`PositiveInfinity`|  
+|`x` < 0 but not `NegativeInfinity`; `y` is not an integer, `NegativeInfinity`, or `PositiveInfinity`.|`NaN`|  
+|`x` = -1; `y` = `NegativeInfinity` or `PositiveInfinity`.|`NaN`|  
+|-1 < `x` < 1; `y` = `NegativeInfinity`.|`PositiveInfinity`|  
+|-1 < `x` < 1; `y` = `PositiveInfinity`.|0|  
+|`x` < -1 or `x` > 1; `y` = `NegativeInfinity`.|0|  
+|`x` < -1 or `x` > 1; `y` = `PositiveInfinity`.|`PositiveInfinity`|  
+|`x` = 0; `y` < 0.|`PositiveInfinity`|  
+|`x` = 0; `y` > 0.|0|  
+|`x` = 1; `y` is any value except `NaN`.|1|  
+|`x` = `PositiveInfinity`; `y` < 0.|0|  
+|`x` = `PositiveInfinity`; `y` > 0.|`PositiveInfinity`|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.MathF.Sqrt(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -989,10 +1400,28 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number to be rounded.</param>
+        <summary>Rounds a single-precision floating-point value to the nearest integral value, and rounds midpoint values to the nearest even number.</summary>
+        <returns>The integer nearest <paramref name="x" />. If the fractional component of <paramref name="x" /> is halfway between two integers, one of which is even and the other odd, then the even number is returned. Note that this method returns a <see cref="T:System.Single" /> instead of an integral type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This method uses the default rounding convention of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `x` argument is <xref:System.Single.NaN?displayProperty=nameWithType>, the method returns <xref:System.Single.NaN?displayProperty=nameWithType>. If `x` is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.MathF.Round(System.Single)" /> method may not appear to round midpoint values to the nearest even integer.</para>  
+  
+        </block>
+        <altmember cref="M:System.MathF.Ceiling(System.Single)" />
+        <altmember cref="M:System.MathF.Floor(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -1020,11 +1449,29 @@ The value of this field is 3.14159274.
         <Parameter Name="digits" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="digits">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number to be rounded.</param>
+        <param name="digits">The number of fractional digits in the return value.</param>
+        <summary>Rounds a single-precision floating-point value to a specified number of fractional digits, and rounds midpoint values to the nearest even number.</summary>
+        <returns>The number nearest to <paramref name="x" /> that contains a number of fractional digits equal to <paramref name="digits" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+The value of the `digits` argument can range from 0 to 6. Note that 6 is the maximum number of integral and fractional digits supported by the <xref:System.Single> type.
+
+This method uses the default rounding convention of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>. 
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `x` argument is <xref:System.Single.NaN?displayProperty=nameWithType>, the method returns <xref:System.Single.NaN?displayProperty=nameWithType>. If `x` is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="digits" /> is less than 0 or greater than 6.</exception>
+        <altmember cref="M:System.MathF.Ceiling(System.Single)" />
+        <altmember cref="M:System.MathF.Floor(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -1052,11 +1499,26 @@ The value of this field is 3.14159274.
         <Parameter Name="mode" Type="System.MidpointRounding" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number to be rounded.</param>
+        <param name="mode">Specification for how to round <paramref name="x" /> if it is midway between two other numbers.</param>
+        <summary>Rounds a single-precision floating-point value to the nearest integer, and uses the specified rounding convention for midpoint values.</summary>
+        <returns>The integer nearest <paramref name="x" />. If <paramref name="x" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned. Note that this method returns a <see cref="T:System.Single" /> instead of an integral type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `x` argument is <xref:System.Single.NaN?displayProperty=nameWithType>, the method returns <xref:System.Single.NaN?displayProperty=nameWithType>. If `x` is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
+        <altmember cref="M:System.MathF.Ceiling(System.Single)" />
+        <altmember cref="M:System.MathF.Floor(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -1085,12 +1547,31 @@ The value of this field is 3.14159274.
         <Parameter Name="mode" Type="System.MidpointRounding" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="digits">To be added.</param>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number to be rounded.</param>
+        <param name="digits">The number of fractional digits in the return value.</param>
+        <param name="mode">Specification for how to round <paramref name="x" /> if it is midway between two other numbers.</param>
+        <summary>Rounds a single-precision floating-point value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values.</summary>
+        <returns>The number nearest to <paramref name="x" /> that has a number of fractional digits equal to <paramref name="digits" />. If <paramref name="x" /> has fewer fractional digits than <paramref name="digits" />, <paramref name="x" /> is returned unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The value of the `digits` argument can range from 0 to 6. Note that 6 is the maximum number of integral and fractional digits supported by the <xref:System.Single> type.
+
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `x` argument is <xref:System.Single.NaN?displayProperty=nameWithType>, the method returns <xref:System.Single.NaN?displayProperty=nameWithType>. If `x` is <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Single.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Single.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="digits" /> is less than 0 or greater than 6.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
+        <altmember cref="M:System.MathF.Ceiling(System.Single)" />
+        <altmember cref="M:System.MathF.Floor(System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="ScaleB">
@@ -1116,11 +1597,11 @@ The value of this field is 3.14159274.
         <Parameter Name="n" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="n">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number that specifies the base value.</param>
+        <param name="n">A single-precision floating-point number that specifies the power.</param>
+        <summary>Returns x * 2^n computed efficiently.</summary>
+        <returns>x * 2^n computed efficiently.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -1147,10 +1628,30 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of a single-precision floating-point number.</summary>
+        <returns>A number that indicates the sign of <paramref name="x" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="x" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="x" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="x" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks></remarks>
+        <exception cref="T:System.ArithmeticException">
+          <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sin">
@@ -1177,10 +1678,17 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An angle, measured in radians.</param>
+        <summary>Returns the sine of the specified angle.</summary>
+        <returns>The sine of <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NegativeInfinity" />, or <see cref="F:System.Single.PositiveInfinity" />, this method returns <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `x`, must be in radians. Multiply by <xref:System.MathF.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sinh">
@@ -1207,10 +1715,17 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An angle, measured in radians.</param>
+        <summary>Returns the hyperbolic sine of the specified angle.</summary>
+        <returns>The hyperbolic sine of <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NegativeInfinity" />, <see cref="F:System.Single.PositiveInfinity" />, or <see cref="F:System.Single.NaN" />, this method returns a <see cref="T:System.Single" /> equal to <paramref name="x" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `x`, must be in radians. Multiply by <xref:System.MathF.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sqrt">
@@ -1237,10 +1752,23 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number whose square root is to be found.</param>
+        <summary>Returns the square root of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Zero or positive  
+  
+ </term><description> The positive square root of <paramref name="x" />.  
+  
+ </description></item><item><term> Negative  
+  
+ </term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equals <see cref="F:System.Single.NaN" /></term><description><see cref="F:System.Single.NaN" /></description></item><item><term> Equals <see cref="F:System.Single.PositiveInfinity" /></term><description><see cref="F:System.Single.PositiveInfinity" /></description></item></list></returns>
+        <remarks></remarks>
+        <altmember cref="M:System.MathF.Pow(System.Single,System.Single)" />
       </Docs>
     </Member>
     <Member MemberName="Tan">
@@ -1267,10 +1795,17 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An angle, measured in radians.</param>
+        <summary>Returns the tangent of the specified angle.</summary>
+        <returns>The tangent of <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.NegativeInfinity" />, or <see cref="F:System.Single.PositiveInfinity" />, this method returns <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `x`, must be in radians. Multiply by <xref:System.MathF.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tanh">
@@ -1297,10 +1832,17 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">An angle, measured in radians.</param>
+        <summary>Returns the hyperbolic tangent of the specified angle.</summary>
+        <returns>The hyperbolic tangent of <paramref name="x" />. If <paramref name="x" /> is equal to <see cref="F:System.Single.NegativeInfinity" />, this method returns -1. If value is equal to <see cref="F:System.Single.PositiveInfinity" />, this method returns 1. If <paramref name="x" /> is equal to <see cref="F:System.Single.NaN" />, this method returns <see cref="F:System.Single.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `x`, must be in radians. Multiply by <xref:System.MathF.PI?displayProperty=nameWithType>/180 to convert degrees to radians.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Truncate">
@@ -1327,10 +1869,25 @@ The value of this field is 3.14159274.
         <Parameter Name="x" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number to truncate.</param>
+        <summary>Calculates the integral part of a specified single-precision floating-point number.</summary>
+        <returns>The integral part of <paramref name="x" />; that is, the number that remains after any fractional digits have been discarded, or one of the values listed in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /></term><description> Return value  
+  
+ </description></listheader><item><term><see cref="F:System.Single.NaN" /></term><description><see cref="F:System.Single.NaN" /></description></item><item><term><see cref="F:System.Single.NegativeInfinity" /></term><description><see cref="F:System.Single.NegativeInfinity" /></description></item><item><term><see cref="F:System.Single.PositiveInfinity" /></term><description><see cref="F:System.Single.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+<xref:System.MathF.Truncate%2A> rounds `x` to the nearest integer towards zero.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="Overload:System.MathF.Round" />
+        <altmember cref="M:System.MathF.Ceiling(System.Single)" />
+        <altmember cref="M:System.MathF.Floor(System.Single)" />
       </Docs>
     </Member>
   </Members>

@@ -591,10 +591,21 @@
         <Parameter Name="d" Type="System.Double" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="d">A number representing a hyperbolic cosine, where <paramref name="d" /> must be greater than or equal to 1, but less than or equal to <see cref="F:System.Double.PositiveInfinity" />.</param>
+        <summary>Returns the angle whose hyperbolic cosine is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that 0 ≤ θ ≤ ∞.  
+  
+ -or-  
+  
+ <see cref="F:System.Double.NaN" /> if <paramref name="d" /> &lt; 1 or <paramref name="d" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Asin">
@@ -691,10 +702,21 @@
         <Parameter Name="d" Type="System.Double" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="d">A number representing a hyperbolic sine, where <paramref name="d" /> must be greater than or equal to <see cref="F:System.Double.NegativeInfinity" />, but less than or equal to <see cref="F:System.Double.PositiveInfinity" />.</param>
+        <summary>Returns the angle whose hyperbolic sine is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that -∞ &lt; θ ≤-1, or 1 ≤ θ &lt; ∞. 
+  
+ -or-  
+  
+ <see cref="F:System.Double.NaN" /> if <paramref name="d" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan">
@@ -877,10 +899,21 @@
         <Parameter Name="d" Type="System.Double" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="d">A number representing a hyperbolic tangent, where <paramref name="d" /> must be greater than or equal to -1, but less than or equal to 1.</param>
+        <summary>Returns the angle whose hyperbolic tangent is the specified number.</summary>
+        <returns>An angle, θ, measured in radians, such that -∞ &lt; θ &lt; -1, or 1 &lt; θ &lt; ∞. 
+  
+ -or-  
+  
+ <see cref="F:System.Double.NaN" /> if <paramref name="d" /> &lt; -1 or <paramref name="d" /> &gt; 1 or <paramref name="d" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiply the return value by 180/<xref:System.Math.PI?displayProperty=nameWithType> to convert from radians to degrees.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BigMul">
@@ -964,10 +997,18 @@
         <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The value to decrement.</param>
+        <summary>Returns the next smallest value that compares less than <paramref name="x" />.</summary>
+        <returns>The next smallest value that compares less than <paramref name="x" />.  
+  
+ -or-  
+  
+ <see cref="F:System.Double.NegativeInfinity" /> if <paramref name="x" /> equals <see cref="F:System.Double.NegativeInfinity" />.
+  
+ -or-  
+  
+ <see cref="F:System.Double.NaN" /> if <paramref name="x" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="BitIncrement">
@@ -995,10 +1036,18 @@
         <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The value to increment.</param>
+        <summary>Returns the next largest value that compares greater than <paramref name="x" />.</summary>
+        <returns>The next largest value that compares greater than <paramref name="x" />.  
+  
+ -or-  
+  
+ <see cref="F:System.Double.PositiveInfinity" /> if <paramref name="x" /> equals <see cref="F:System.Double.PositiveInfinity" />.
+  
+ -or-  
+  
+ <see cref="F:System.Double.NaN" /> if <paramref name="x" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cbrt">
@@ -1027,10 +1076,15 @@
         <Parameter Name="d" Type="System.Double" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="d">The number whose cube root is to be found.</param>
+        <summary>Returns the cube root of a specified number.</summary>
+        <returns>The cube root of <paramref name="d" />.  
+  
+ -or-  
+  
+ <see cref="F:System.Double.NaN" /> if <paramref name="x" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks></remarks>
+        <altmember cref="M:System.Math.Pow(System.Double,System.Double)" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Ceiling">
@@ -1211,12 +1265,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Byte" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1248,12 +1310,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Decimal" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt;<paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1285,12 +1355,24 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Double" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.``
+  
+ -or-  
+  
+  <see cref="F:System.Double.NaN" /> if <paramref name="value" /> equals <see cref="F:System.Double.NaN" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1322,12 +1404,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Int16" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1359,12 +1449,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1396,12 +1494,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Int64" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1438,12 +1544,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.SByte" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1475,12 +1589,24 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.Single" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.
+  
+ -or-  
+  
+  <see cref="F:System.Single.NaN" /> if <paramref name="value" /> equals <see cref="F:System.Single.NaN" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1517,12 +1643,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.UInt16" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1559,12 +1693,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.UInt32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clamp">
@@ -1601,12 +1743,20 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="max" Type="System.UInt64" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to be clamped.</param>
+        <param name="min">The lower bound of the result.</param>
+        <param name="max">The upper bound of the result.</param>
+        <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
+        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+  
+ -or-  
+  
+ <paramref name="min" /> if <paramref name="value" /> &lt; <paramref name="min" />.
+  
+ -or-  
+  
+ <paramref name="max" /> if <paramref name="max" /> &lt; <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="CopySign">
@@ -1635,11 +1785,11 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <Parameter Name="y" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number whose magnitude is used in the result.</param>
+        <param name="y">A number whose sign is the used in the result.</param>
+        <summary>Returns a value with the magnitude of <paramref name="x" /> and the sign of <paramref name="y" />.</summary>
+        <returns>A value with the magnitude of <paramref name="x" /> and the sign of <paramref name="y" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cos">
@@ -2205,12 +2355,21 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
         <Parameter Name="z" Type="System.Double" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <param name="z">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number to be multiplied with <paramref name="y" />.</param>
+        <param name="y">The number to be multiplied with <paramref name="x" />.</param>
+        <param name="z">The number to be added to the result of <paramref name="x" /> multiplied by <paramref name="y" />.</param>
+        <summary>Returns (x * y) + z, rounded as one ternary operation.</summary>
+        <returns>(x * y) + z, rounded as one ternary operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This computes `(x * y)` as if to infinite precision, adds `z` to that result as if to infinite precision, and finally rounds to the nearest representable value.
+  
+ This differs from the non-fused sequence which would compute `(x * y)` as if to infinite preicision, round the result to the nearest representable value, add `z` to the rounded result as if to infinite precision, and finally round to the nearest representable value.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IEEERemainder">
@@ -2319,10 +2478,35 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The number whose logarithm is to be found.</param>
+        <summary>Returns the base 2 integer logarithm of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Default
+  
+ </term><description> The base 2 integer log of <paramref name="x" />; that is, (int)log2(<paramref name="x" />).  
+  
+ </description></item><item><term> Zero  
+  
+ </term><description> <see cref="F:System.Int32.MinValue" />
+  
+ </description></item><item><term> Equal to <see cref="F:System.Double.NaN" /> or <see cref="F:System.Double.PositiveInfinity" /> or <see cref="F:System.Double.NegativeInfinity" />
+  
+ </term><description> <see cref="F:System.Int32.MaxValue" />
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter `x` is specified as a base 10 number.   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Log">
@@ -2654,10 +2838,31 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A number whose logarithm is to be found.</param>
+        <summary>Returns the base 2 logarithm of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="x" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Positive  
+  
+ </term><description> The base 2 log of <paramref name="x" />; that is, log 2<paramref name="x" />.  
+  
+ </description></item><item><term> Zero  
+  
+ </term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term> Negative  
+  
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parameter `x` is specified as a base 10 number.   
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Max">
@@ -3392,11 +3597,11 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <Parameter Name="y" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first of two double-precision floating-point numbers to compare.</param>
+        <param name="y">The second of two double-precision floating-point numbers to compare.</param>
+        <summary>Returns the larger magnitude of two double-precision floating-point numbers.</summary>
+        <returns>Parameter <paramref name="x" /> or <paramref name="y" />, whichever has the larger magnitude. If <paramref name="x" />, or <paramref name="y" />, or both <paramref name="x" /> and <paramref name="y" /> are equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" /> is returned.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Min">
@@ -4131,11 +4336,11 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <Parameter Name="y" Type="System.Double" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">The first of two double-precision floating-point numbers to compare.</param>
+        <param name="y">The second of two double-precision floating-point numbers to compare.</param>
+        <summary>Returns the smaller magnitude of two double-precision floating-point numbers.</summary>
+        <returns>Parameter <paramref name="x" /> or <paramref name="y" />, whichever has the smaller magnitude. If <paramref name="x" />, or <paramref name="y" />, or both <paramref name="x" /> and <paramref name="y" /> are equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NaN" /> is returned.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="PI">
@@ -5033,11 +5238,11 @@ The following example demonstrates how to use the <xref:System.Math.Round%28Syst
         <Parameter Name="n" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="n">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="x">A single-precision floating-point number that specifies the base value.</param>
+        <param name="n">A single-precision floating-point number that specifies the power.</param>
+        <summary>Returns x * 2^n computed efficiently.</summary>
+        <returns>x * 2^n computed efficiently.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Sign">

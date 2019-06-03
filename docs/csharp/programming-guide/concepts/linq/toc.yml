@@ -1,6 +1,7 @@
 - name: Language-Integrated Query (LINQ)
-  href: index.md
   items:
+  - name: Overview
+    href: index.md
   - name: Getting Started with LINQ in C#
     items:
     - name: Introduction to LINQ Queries
@@ -114,10 +115,8 @@
     - name: "How to: Add Custom Methods for LINQ Queries"
       href: how-to-add-custom-methods-for-linq-queries.md
   - name: LINQ to XML
-    href: linq-to-xml.md
     items:
     - name: Getting Started (LINQ to XML)
-      href: getting-started-linq-to-xml.md
       items:
       - name: LINQ to XML Overview
         href: linq-to-xml-overview.md
@@ -126,10 +125,8 @@
       - name: LINQ to XML vs. Other XML Technologies
         href: linq-to-xml-vs-other-xml-technologies.md
     - name: Programming Guide (LINQ to XML)
-      href: programming-guide-linq-to-xml.md
       items:
       - name: LINQ to XML Programming Overview
-        href: linq-to-xml-programming-overview.md
         items:
         - name: Functional vs. Procedural Programming (LINQ to XML)
           href: functional-vs-procedural-programming-linq-to-xml.md
@@ -143,8 +140,7 @@
           href: xdocument-class-overview.md
         - name: "How to: Build LINQ to XML Examples"
           href: how-to-build-linq-to-xml-examples.md
-      - name: Creating XML Trees
-        href: creating-xml-trees.md
+      - name: XML Trees
         items:
         - name: Functional Construction (LINQ to XML)
           href: functional-construction-linq-to-xml.md

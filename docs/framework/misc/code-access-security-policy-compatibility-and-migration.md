@@ -13,7 +13,7 @@ ms.author: "mairaw"
 
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
-The policy portion of code access security (CAS) has been made obsolete in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. As a result, you may encounter compilation warnings and runtime exceptions if you call the obsolete policy types and members [explicitly](#explicit_use) or [implicitly](#implicit_use) (through other types and members).
+The policy portion of code access security (CAS) has been made obsolete in the .NET Framework 4. As a result, you may encounter compilation warnings and runtime exceptions if you call the obsolete policy types and members [explicitly](#explicit_use) or [implicitly](#implicit_use) (through other types and members).
 
 You can avoid the warnings and errors by either:
 

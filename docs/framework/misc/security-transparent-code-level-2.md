@@ -16,7 +16,7 @@ ms.author: "mairaw"
 
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
-Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
+Level 2 transparency was introduced in the .NET Framework 4. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
 
 - Transparent code, including code that is running as full trust, can call other transparent code or security-safe-critical code only. It can only perform actions allowed by the domain’s partial trust permission set (if one exists). Transparent code cannot do the following:
 

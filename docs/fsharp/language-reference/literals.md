@@ -22,6 +22,7 @@ The following table shows the literal types in F#. Characters that represent dig
 |uint16|unsigned 16-bit natural number|us|`86us`|
 |int<br /><br />int32|signed 32-bit integer|l or none|`86`<br /><br />`86l`|
 |uint<br /><br />uint32|unsigned 32-bit natural number|u or ul|`86u`<br /><br />`86ul`|
+|nativeint|native pointer to a signed natural number|n|`123n`|
 |unativeint|native pointer as an unsigned natural number|un|`0x00002D3Fun`|
 |int64|signed 64-bit integer|L|`86L`|
 |uint64|unsigned 64-bit natural number|UL|`86UL`|

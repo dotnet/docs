@@ -32,7 +32,7 @@ Specifies common language runtime startup information.
 
 |Attribute|Description|
 |---------------|-----------------|
-|`useLegacyV2RuntimeActivationPolicy`|Optional attribute.<br /><br /> Specifies whether to enable the [!INCLUDE[dnprdnext](../../../../../includes/dnprdnext-md.md)] runtime activation policy or to use the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] activation policy.|
+|`useLegacyV2RuntimeActivationPolicy`|Optional attribute.<br /><br /> Specifies whether to enable the [!INCLUDE[dnprdnext](../../../../../includes/dnprdnext-md.md)] runtime activation policy or to use the .NET Framework 4 activation policy.|
 
 ## useLegacyV2RuntimeActivationPolicy attribute
 

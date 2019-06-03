@@ -49,11 +49,11 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- In the .NET Framework version 3.5 and earlier versions, CAS policy is always in effect. In the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], CAS policy must be enabled.  
+ In the .NET Framework version 3.5 and earlier versions, CAS policy is always in effect. In the .NET Framework 4, CAS policy must be enabled.  
   
  CAS policy is version-specific. Custom CAS policies that exist in earlier versions of the .NET Framework must be respecified in the .NET Framework 4.  
   
- Applying the `<NetFx40_LegacySecurityPolicy>` element to a [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] assembly does not affect [security-transparent code](../../../../../docs/framework/misc/security-transparent-code.md); the transparency rules still apply.  
+ Applying the `<NetFx40_LegacySecurityPolicy>` element to a .NET Framework 4 assembly does not affect [security-transparent code](../../../../../docs/framework/misc/security-transparent-code.md); the transparency rules still apply.  
   
 > [!IMPORTANT]
 >  Applying the `<NetFx40_LegacySecurityPolicy>` element can result in significant performance penalties for native image assemblies created by the [Native Image Generator (Ngen.exe)](../../../../../docs/framework/tools/ngen-exe-native-image-generator.md) that are not installed in the [global assembly cache](../../../../../docs/framework/app-domains/gac.md). The performance degradation is caused by the inability of the runtime to load the assemblies as native images when the attribute is applied, resulting in their being loaded as just-in-time assemblies.  

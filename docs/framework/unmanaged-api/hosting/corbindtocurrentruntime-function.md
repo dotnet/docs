@@ -21,7 +21,7 @@ ms.author: "ronpet"
 # CorBindToCurrentRuntime Function
 Loads the common language runtime (CLR) into a process by using version information stored in an XML file. The format of the XML file is modeled after the standard application configuration file. For more information about configuration files, see [Configuration File Schema](../../../../docs/framework/configure-apps/file-schema/index.md).  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. See [Loading the Common Language Runtime into a Process](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/01918c6x(v=vs.100)).  
+ This function has been deprecated in the .NET Framework 4. See [Loading the Common Language Runtime into a Process](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/01918c6x(v=vs.100)).  
   
 ## Syntax  
   

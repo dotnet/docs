@@ -27,7 +27,7 @@ You must be familiar with the following code access security concepts in order t
 
 - **Secure class libraries**: A secure class library uses security demands to ensure that the library's callers have permission to access the resources that the library exposes. For example, a secure class library might have a method for creating files that would demand that its callers have permissions to create files. The .NET Framework consists of secure class libraries. You should be aware of the permissions required to access any library that your code uses. For more information, see the [Using Secure Class Libraries](#secure_library) section later in this topic.
 
-- **Transparent code**: Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], in addition to identifying specific permissions, you must also determine whether your code should run as security-transparent. Security-transparent code cannot call types or members that are identified as security-critical. This rule applies to full-trust applications as well as partially trusted applications. For more information, see [Security-Transparent Code](../../../docs/framework/misc/security-transparent-code.md).
+- **Transparent code**: Starting with the .NET Framework 4, in addition to identifying specific permissions, you must also determine whether your code should run as security-transparent. Security-transparent code cannot call types or members that are identified as security-critical. This rule applies to full-trust applications as well as partially trusted applications. For more information, see [Security-Transparent Code](../../../docs/framework/misc/security-transparent-code.md).
 
 <a name="typesafe_code"></a>
 
@@ -50,7 +50,7 @@ Code access security does not eliminate the possibility of human error in writin
 Declarative security syntax uses [attributes](../../../docs/standard/attributes/index.md) to place security information into the [metadata](../../../docs/standard/metadata-and-self-describing-components.md) of your code. Attributes can be placed at the assembly, class, or member level, to indicate the type of request, demand, or override you want to use. Requests are used in applications that target the common language runtime to inform the runtime security system about the permissions that your application needs or does not want. Demands and overrides are used in libraries to help protect resources from callers or to override default security behavior.
 
 > [!NOTE]
-> In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).
+> In the .NET Framework 4, there have been important changes to the .NET Framework security model and terminology. For more information about these changes, see [Security Changes](../../../docs/framework/security/security-changes.md).
 
 In order to use declarative security calls, you must initialize the state data of the permission object so that it represents the particular form of permission you need. Every built-in permission has an attribute that is passed a <xref:System.Security.Permissions.SecurityAction> enumeration to describe the type of security operation you want to perform. However, permissions also accept their own parameters that are exclusive to them.
 

@@ -56,10 +56,12 @@
     - name: Aggregation Operations
       href: aggregation-operations.md
   - name: LINQ to Objects
-    href: linq-to-objects.md
     items:
+    - name: Overview
+      href: linq-to-objects.md
     - name: LINQ and Strings
       href: linq-and-strings.md
+    - name: How to articles
       items:
       - name: "How to: Count Occurrences of a Word in a String (LINQ)"
         href: how-to-count-occurrences-of-a-word-in-a-string-linq.md
@@ -87,12 +89,12 @@
         href: how-to-compute-column-values-in-a-csv-text-file-linq.md
     - name: LINQ and Reflection
       href: linq-and-reflection.md
-      items:
-      - name: "How to: Query An Assembly's Metadata with Reflection (LINQ)"
-        href: how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+    - name: "How to: Query An Assembly's Metadata with Reflection (LINQ)"
+      href: how-to-query-an-assembly-s-metadata-with-reflection-linq.md
     - name: LINQ and File Directories
-      href: linq-and-file-directories.md
       items:
+      - name: Overview
+        href: linq-and-file-directories.md
       - name: "How to: Query for Files with a Specified Attribute or Name"
         href: how-to-query-for-files-with-a-specified-attribute-or-name.md
       - name: "How to: Group Files by Extension (LINQ)"

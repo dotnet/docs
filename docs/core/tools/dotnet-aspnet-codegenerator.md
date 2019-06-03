@@ -1,5 +1,7 @@
 ---
 title: dotnet aspnet-codegenerator command
+author: rick-anderson
+ms.author: riande
 description: The dotnet aspnet-codegenerator command scaffolds ASP.NET Core projects
 ms.date: 06/15/2019
 ---
@@ -13,7 +15,7 @@ ms.date: 06/15/2019
 
 ## Installing aspnet-codegenerator
 
-`aspnet-codegenerator` is a [global tool](global-tools.md) that must be installed. The following command installs the lastest stable version of the `aspnet-codegenerator` tool:
+`aspnet-codegenerator` is a [global tool](global-tools.md) that must be installed. The following command installs the latest stable version of the `aspnet-codegenerator` tool:
 
 ```console
 dotnet tool install --g dotnet-aspnet-codegenerator

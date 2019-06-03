@@ -128,7 +128,7 @@ The .NET Core CLI tries to add the default locations to the PATH environment var
 
 ## Global tools available in the .NET Core SDK
 
-The .NET Core SDK contains global tools that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
+The .NET Core SDK contains the `dotnet-aspnet-codegenerator` global tool that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
 
 ```console
 dotnet tool install --global dotnet-aspnet-codegenerator

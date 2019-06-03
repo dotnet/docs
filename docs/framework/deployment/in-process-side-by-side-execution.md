@@ -82,7 +82,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
 ## Example  
  The following example demonstrates an unmanaged COM host that is running a managed COM component by using the version of the .NET Framework that the component was compiled to use.  
   
- To run the following example, compile and register the following managed COM component using the [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)]. To register the component, on the **Project** menu, click **Properties**, click the **Build** tab, and then select the **Register for COM interop** check box.  
+ To run the following example, compile and register the following managed COM component using the .NET Framework 3.5. To register the component, on the **Project** menu, click **Properties**, click the **Build** tab, and then select the **Register for COM interop** check box.  
   
 ```csharp
 using System;  

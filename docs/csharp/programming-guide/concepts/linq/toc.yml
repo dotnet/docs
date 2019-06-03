@@ -1,6 +1,7 @@
 - name: Language-Integrated Query (LINQ)
-  href: index.md
   items:
+  - name: Overview
+    href: index.md
   - name: Getting Started with LINQ in C#
     items:
     - name: Introduction to LINQ Queries
@@ -139,7 +140,7 @@
           href: xdocument-class-overview.md
         - name: "How to: Build LINQ to XML Examples"
           href: how-to-build-linq-to-xml-examples.md
-      - name: Creating XML Trees
+      - name: XML Trees
         items:
         - name: Functional Construction (LINQ to XML)
           href: functional-construction-linq-to-xml.md

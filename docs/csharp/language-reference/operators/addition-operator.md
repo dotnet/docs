@@ -37,6 +37,8 @@ For operands of the same [delegate](../keywords/delegate.md) type, the `+` opera
 
 [!code-csharp-interactive[delegate combination](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddDelegates)]
 
+To perform delegate removal, use the [`-` operator](subtraction-operator.md#delegate-removal).
+
 For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
 
 ## Addition assignment operator +=

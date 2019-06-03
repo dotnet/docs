@@ -279,7 +279,6 @@
           - name: "How to: Populate an XML Tree from the File System"
             href: how-to-populate-an-xml-tree-from-the-file-system.md
         - name: LINQ to XML for XPath Users
-          href: linq-to-xml-for-xpath-users.md
           items:
           - name: Comparison of XPath and LINQ to XML
             href: comparison-of-xpath-and-linq-to-xml.md
@@ -316,23 +315,20 @@
           - name: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML)"
             href: how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
         - name: Pure Functional Transformations of XML
-          href: pure-functional-transformations-of-xml.md
           items:
           - name: Introduction to Pure Functional Transformations
             href: introduction-to-pure-functional-transformations.md
-            items:
-            - name: Concepts and Terminology (Functional Transformation)
-              href: concepts-and-terminology-functional-transformation.md
-            - name: Functional Programming vs. Imperative Programming
-              href: functional-programming-vs-imperative-programming.md
-            - name: Refactoring Into Pure Functions
-              href: refactoring-into-pure-functions.md
-            - name: Applicability of Functional Transformation
-              href: applicability-of-functional-transformation.md
-            - name: Functional Transformation of XML
-              href: functional-transformation-of-xml.md
+          - name: Concepts and Terminology (Functional Transformation)
+            href: concepts-and-terminology-functional-transformation.md
+          - name: Functional Programming vs. Imperative Programming
+            href: functional-programming-vs-imperative-programming.md
+          - name: Refactoring Into Pure Functions
+            href: refactoring-into-pure-functions.md
+          - name: Applicability of Functional Transformation
+            href: applicability-of-functional-transformation.md
+          - name: Functional Transformation of XML
+            href: functional-transformation-of-xml.md
           - name: "Tutorial: Chaining Queries Together"
-            href: tutorial-chaining-queries-together.md
             items:
             - name: Deferred Execution and Lazy Evaluation in LINQ to XML
               href: deferred-execution-and-lazy-evaluation-in-linq-to-xml.md

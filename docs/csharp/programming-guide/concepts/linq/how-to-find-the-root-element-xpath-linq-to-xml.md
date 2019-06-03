@@ -37,7 +37,3 @@ Console.WriteLine(el1.Name);
 Results are identical  
 PurchaseOrders  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

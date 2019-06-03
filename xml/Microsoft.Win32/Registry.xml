@@ -344,7 +344,7 @@
  The string `valueName` is not case-sensitive.  
   
 > [!NOTE]
->  A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either `null` or the empty string ("") for `valuName`.  
+>  A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either `null` or the empty string ("") for `valueName`.  
   
  Valid root names are HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_CLASSES_ROOT, HKEY_USERS, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA. For example, in Visual Basic the string "HKEY_CURRENT_USER\MyTestKey" accesses key/value pairs for the subkey "MyTestKey" in the HKEY_CURRENT_USER root.  
   

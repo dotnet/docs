@@ -81,7 +81,7 @@
         <summary>Exports a specified property with the specified configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -114,7 +114,7 @@
         <summary>Exports a specified property as a specified contract type.</summary>
         <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -207,7 +207,7 @@
         <summary>Imports a specified property by using the specified configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -274,7 +274,7 @@
         <summary>Imports a specified property with the specified contract type and configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="NotifyImportsSatisfied">
@@ -303,7 +303,7 @@
         <summary>Selects a method to be called when composition is complete.</summary>
         <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="methodSelector" /> expression must be a <see langword="void" /> method with no arguments.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="methodSelector" /> expression must be a <see langword="void" /> method with no arguments.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -332,7 +332,7 @@
         <summary>Selects a constructor to be used in composition.</summary>
         <returns>An object that can be used to further configure the part. </returns>
         <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="constructorSelector" /> expression must use the <see langword="new" /> operator.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="constructorSelector" /> expression must use the <see langword="new" /> operator.</exception>
       </Docs>
     </Member>
   </Members>

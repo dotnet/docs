@@ -71,6 +71,17 @@ As portions of larger applications are broken up into their own smaller, indepen
 
 [Learn more about design patterns to consider when building microservice-based systems.](https://docs.microsoft.com/azure/architecture/microservices/design/patterns)
 
+### Azure Kubernetes Service
+
+Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise. It also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
+
+AKS reduces the complexity and operational overhead of managing a Kubernetes cluster by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. Also, you pay only for the agent nodes within your clusters, not for the masters. As a managed Kubernetes service, AKS provides:
+
+- Automated Kubernetes version upgrades and patching.
+- Easy cluster scaling.
+- Self-healing hosted control plane (masters).
+- Cost savings - pay only for running agent pool nodes.
+
 With Azure handling the management of the nodes in your AKS cluster, you no longer need to perform many tasks manually, like cluster upgrades. Because Azure handles these critical maintenance tasks for you, AKS doesn't provide direct access (such as with SSH) to the cluster.
 
 #### Web App for Containers

@@ -22,6 +22,9 @@ In this tutorial, you learn how to:
 > * Evaluate the model
 > * Use the model for predictions
 
+> [!NOTE]
+> Model Builder is currently in Preview.
+
 ## Pre-requisites
 
 For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
@@ -36,15 +39,15 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
     In **Solution Explorer**, right-click the *TaxiFarePrediction* project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-## Prepare and Understand the Data
+## Prepare and understand the data
 
-1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) and data set and save it to the *Data* folder you've created at the previous step. THis data set will be used to train and evaluate the machine learning model. This data sets is originally from the [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
+1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) data set and save it to the *Data* folder you've created at the previous step. This data set is used to train and evaluate the machine learning model. This data set is originally from the [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
 
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
 1. Open the **taxi-fare-train.csv** data set and look at column headers in the first row. Take a look at each of the columns. Understand the data and decide which columns are **features** and which one is the **label**.
 
-The `label` is the column you want to predict. The identified `Features`are the inputs you give the model to predict the `Label`.
+The `label` is the column you want to predict. The identified `features`are the inputs you give the model to predict the `label`.
 
 The provided data set contains the following columns:
 

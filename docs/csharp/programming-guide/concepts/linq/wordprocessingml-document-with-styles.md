@@ -130,7 +130,4 @@ More complicated WordprocessingML documents have paragraphs that are formatted w
   </w:body>  
 </w:document>  
 ```  
-  
-## See also
-
-- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+ 

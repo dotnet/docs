@@ -28,7 +28,7 @@ Specifies which common language runtime version and, optionally, .NET Framework 
 
 |Attribute|Description|
 |---------------|-----------------|
-|**version**|Optional attribute.<br /><br /> A string value that specifies the version of the common language runtime (CLR) that this application supports. For valid values of the `version` attribute, see the ["runtime version" values](#version) section. **Note:**  Through the .NET Framework 3.5, the "*runtime version*" value takes the form *major*.*minor*.*build*. Beginning with the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], only the major and minor version numbers are required (that is, "v4.0" instead of "v4.0.30319"). The shorter string is recommended.|
+|**version**|Optional attribute.<br /><br /> A string value that specifies the version of the common language runtime (CLR) that this application supports. For valid values of the `version` attribute, see the ["runtime version" values](#version) section. **Note:**  Through the .NET Framework 3.5, the "*runtime version*" value takes the form *major*.*minor*.*build*. Beginning with the .NET Framework 4, only the major and minor version numbers are required (that is, "v4.0" instead of "v4.0.30319"). The shorter string is recommended.|
 |**sku**|Optional attribute.<br /><br /> A string value that specifies the stock-keeping unit (SKU), which in turn specifies which .NET Framework release this application supports.<br /><br /> Starting with the .NET Framework 4.0, the use of the `sku` attribute is recommended.  When present, it indicates the version of the .NET Framework that the app targets.<br /><br /> For valid values of the sku attribute, see the ["sku id" values](#sku) section.|
 
 ## Remarks

@@ -40,7 +40,7 @@ HRESULT IsStarted(
 |HRESULT|Description|  
 |-------------|-----------------|  
 |S_OK|The method completed successfully.|  
-|E_NOTIMPL|The common language runtime (CLR) version is earlier than the CLR version in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].|  
+|E_NOTIMPL|The common language runtime (CLR) version is earlier than the CLR version in the .NET Framework 4.|  
   
 ## Remarks  
  This method does not work with CLR versions earlier than the CLR version in the .NET Framework 4.  

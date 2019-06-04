@@ -35,7 +35,7 @@ END
  Returns the highest precedence type from the set of types in the `result_expression` and the optional `else_result_expression`.  
   
 ## Remarks  
- The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] case expression resembles the [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] case expression. You use the case expression to make a series of conditional tests to determine which expression will yield the appropriate result. This form of the case expression applies to a series of one or more `Boolean` expressions to determine the correct resulting expression.  
+ The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] case expression resembles the Transact-SQL case expression. You use the case expression to make a series of conditional tests to determine which expression will yield the appropriate result. This form of the case expression applies to a series of one or more `Boolean` expressions to determine the correct resulting expression.  
   
  The CASE function evaluates `Boolean_expression` for each WHEN clause in the order specified, and returns `result_expression` of the first `Boolean_expression` that evaluates to `true`. The remaining expressions are not evaluated. If no `Boolean_expression` evaluates to `true`, the Database Engine returns the `else_result_expression` if an ELSE clause is specified, or a null value if no ELSE clause is specified.  
   

@@ -73,7 +73,7 @@ The <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader>, and <xref:System.I
 
 ## Sample -- Streaming from SQL Server
 
-Use the following [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to create the sample database:
+Use the following Transact-SQL to create the sample database:
 
 ```sql
 CREATE DATABASE [Demo]
@@ -295,7 +295,7 @@ namespace StreamingFromServer {
 
 ## Sample -- Streaming to SQL Server
 
-Use the following [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to create the sample database:
+Use the following Transact-SQL to create the sample database:
 
 ```sql
 CREATE DATABASE [Demo2]

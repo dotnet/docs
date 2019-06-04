@@ -41,7 +41,7 @@ This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking
 
      By default, the service is listening on port 53797 (http://localhost:53797/SampleWorkflowService.xamlx).
 
-4. Using [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)], open the WCF test client.
+4. Using File Explorer, open the WCF test client.
 
      The WCF test client (WcfTestClient.exe) is located in the \<Visual Studio 2010 installation folder>\Common7\IDE\ folder.
 

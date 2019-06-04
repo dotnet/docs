@@ -45,7 +45,7 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
  The classes in this namespace provide a way to use caching facilities like those in ASP.NET, but without a dependency on the `System.Web` assembly. For more information, see [Caching in .NET Framework Applications](../../../../../docs/framework/performance/caching-in-net-framework-applications.md).  
   
 > [!NOTE]
->  The output caching functionality and types in the <xref:System.Runtime.Caching> namespace are new in [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)].  
+>  The output caching functionality and types in the <xref:System.Runtime.Caching> namespace are new in .NET Framework 4.  
   
 ## Example  
  The following example shows how to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class. The example shows how to configure an instance of the `namedCaches` entry for memory cache. The name of the cache is set to the default cache entry name by setting the `name` attribute to "default".  

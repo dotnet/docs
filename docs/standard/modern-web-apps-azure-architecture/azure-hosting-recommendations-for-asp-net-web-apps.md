@@ -43,18 +43,11 @@ App Service Web Apps offers a fully managed platform optimized for hosting web a
 
 Azure App Service is the best choice for most web apps. Deployment and management are integrated into the platform, sites can scale quickly to handle high traffic loads, and the built-in load balancing and traffic manager provide high availability. You can move existing sites to Azure App Service easily with an online migration tool, use an open-source app from the Web Application Gallery, or create a new site using the framework and tools of your choice. The WebJobs feature makes it easy to add background job processing to your App Service web app.
 
-### Azure Kubernetes Service
-
-Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized applications without container orchestration expertise. It also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
-
-AKS reduces the complexity and operational overhead of managing a Kubernetes cluster by offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical tasks like health monitoring and maintenance for you. Also, you pay only for the agent nodes within your clusters, not for the masters. As a managed Kubernetes service, AKS provides:
-
-- Automated Kubernetes version upgrades and patching.
-- Easy cluster scaling.
-- Self-healing hosted control plane (masters).
-- Cost savings - pay only for running agent pool nodes.
-
 With Azure handling the management of the nodes in your AKS cluster, you no longer need to perform many tasks manually, like cluster upgrades. Because Azure handles these critical maintenance tasks for you, AKS doesn't provide direct access (such as with SSH) to the cluster.
+
+#### Web App for Containers
+
+Web App for Containers from Azure App Service lets you bring your own Docker formatted container images and easily deploy and run them at scale with Azure. Web App for Containers supports both Linux and Windows containers and can scale to support large scale implementations.
 
 ### Azure Virtual Machines
 

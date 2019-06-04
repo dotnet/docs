@@ -120,7 +120,7 @@ Participants and reviewers:
 >
 > **Dylan Reisenberger**, Architect and Dev Lead at Polly
 >
-> **Steve Smith**, Software Craftsman & Trainer at ASPSmith Ltd.
+> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 >
 > **Ian Cooper**, Coding Architect at Brighter
 >

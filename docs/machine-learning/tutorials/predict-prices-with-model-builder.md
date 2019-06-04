@@ -91,7 +91,7 @@ Depending on the data size, give it enough time to train. Use this chart as guid
 
 ## Evaluate the model
 
-The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the *Best Model* entry along with metrics in *Best Model Quality (RSquared)*. Additionally, a summary table containing top five models and their metrics. Visit the following link to learn more about [evaluating model metrics](https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/metrics).
+The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the *Best Model* entry along with metrics in *Best Model Quality (RSquared)*. Additionally, a summary table containing top five models and their metrics. Visit the following link to learn more about [evaluating model metrics](https://docs.microsoft.com/dotnet/machine-learning/resources/metrics).
 
 If you're not satisfied with your accuracy metrics, an easy way to try and improve model accuracy is to increase the amount of time to train the model.
 

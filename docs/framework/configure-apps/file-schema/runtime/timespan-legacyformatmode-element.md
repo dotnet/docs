@@ -64,7 +64,7 @@ Determines whether the runtime preserves legacy behavior in formatting operation
  [!code-csharp[TimeSpan.BreakingChanges#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/timespan.breakingchanges/cs/legacyformatmode1.cs#1)]
  [!code-vb[TimeSpan.BreakingChanges#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/timespan.breakingchanges/vb/legacyformatmode1.vb#1)]  
   
- When you run the example on the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)] or on an earlier version, it displays the following output:  
+ When you run the example on the .NET Framework 3.5 or on an earlier version, it displays the following output:  
   
 ```  
 12:30:45  
@@ -76,7 +76,7 @@ Determines whether the runtime preserves legacy behavior in formatting operation
 Invalid Format  
 ```  
   
- However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4 or later version, the output is identical to that produced by the example when it is run on [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
+ However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4 or later version, the output is identical to that produced by the example when it is run on .NET Framework 3.5.  
   
 ```xml  
 <?xml version ="1.0"?>  

@@ -75,7 +75,7 @@ The amount of time that is required for a WPF application to start can vary grea
   
  Consider installing the CA certificate on the client computer, or avoid using Authenticode when it is possible. If you know that your application does not need the publisher evidence, you do not have to pay the cost of signature verification.  
   
- Starting in [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)], there is a configuration option that allows the Authenticode verification to be bypassed. To do this, add the following setting to the app.exe.config file:  
+ Starting in .NET Framework 3.5, there is a configuration option that allows the Authenticode verification to be bypassed. To do this, add the following setting to the app.exe.config file:  
   
 ```xml  
 <configuration>  

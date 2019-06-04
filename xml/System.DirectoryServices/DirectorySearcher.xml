@@ -546,19 +546,28 @@ SearchResultCollection res = src.FindAll();
  The following example shows how to use the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property with the member attribute to get the members of a group. It then prints out the first and last names of the members and their telephone numbers.  
   
 ```csharp  
+using System;
 using System.DirectoryServices;  
-DirectoryEntry group = new DirectoryEntry("LDAP://CN=MyGroup, …");  
-DirectorySearcher src = new DirectorySearcher(group "(&(objectClass=user)(objectCategory=Person))");  
-src.AttributeScopedQuery = "member";  
-src.PropertiesToLoad.Add("sn");  
-src.PropertiesToLoad.Add("givenName");  
-src.PropertiesToLoad.Add("telephoneNumber");  
-foreach(SearchResult res in src.FindAll())  
-{  
-    Console.WriteLine("…");  
-}  
-```  
-  
+
+public class Example
+{
+    public static void Main()
+    {
+        DirectoryEntry group = new DirectoryEntry("LDAP://CN=MyGroup", …);        
+        DirectorySearcher src = new DirectorySearcher("(&(objectClass=user)(objectCategory=Person))");          
+        src.AttributeScopeQuery = "member";  
+        src.PropertiesToLoad.Add("sn");
+        src.PropertiesToLoad.Add("givenName");  
+        src.PropertiesToLoad.Add("telephoneNumber");  
+
+        foreach(SearchResult res in src.FindAll())  
+        {  
+            Console.WriteLine("…");  
+        }
+    }
+}
+```
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="P:System.DirectoryServices.DirectorySearcher.SearchScope" /> property is set to a value other than <see cref="F:System.DirectoryServices.SearchScope.Base" />.</exception>

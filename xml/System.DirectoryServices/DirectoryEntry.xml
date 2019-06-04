@@ -172,7 +172,6 @@ Public Class PrintChildren
         Next objChildDE  
     End Sub 'Main  
 End Class 'PrintChildren  
-  
 ```  
   
 ```csharp  
@@ -190,10 +189,9 @@ public class PrintChildren{
         Console.WriteLine(objChildDE.Path);  
    }  
  }  
-  
 ```  
   
-```cpp#  
+```cpp  
 int main()  
 {  
     String^ args[] = Environment::GetCommandLineArgs();  
@@ -214,7 +212,6 @@ int main()
         Console::WriteLine(objChildDE->Path);  
     }  
 }  
-  
 ```  
   
  ]]></format>
@@ -680,7 +677,6 @@ If DirectoryEntry.Exists(myADSPath) Then
 Else  
    Console.WriteLine("The path {0} is invalid",myADSPath)  
 End If  
-  
 ```  
   
 ```csharp  
@@ -695,10 +691,9 @@ if (DirectoryEntry.Exists(myADSPath))
 {  
     Console.WriteLine("The path {0} is invalid",myADSPath);  
 }  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 // Determine whether the given path is correct for the DirectoryEntry.  
 if (DirectoryEntry::Exists(myADSPath))   
@@ -709,7 +704,6 @@ else
 {  
     Console::WriteLine("The path {0} is invalid", myADSPath);  
 }  
-  
 ```  
   
  ]]></format>
@@ -766,7 +760,6 @@ Dim myDirectoryEntry As New DirectoryEntry(myADSPath)
 ' Display the Guid and NativeGuid.  
 Console.WriteLine("The GUID of the ADS object:" + myDirectoryEntry.Guid.ToString)  
 Console.WriteLine("The Native GUID of the ADS" + "object:" + myDirectoryEntry.NativeGuid)  
-  
 ```  
   
 ```csharp  
@@ -778,10 +771,9 @@ Console.WriteLine("The GUID of the ADS object:"+
                   myDirectoryEntry.Guid);  
 Console.WriteLine("The Native GUID of the ADS"+  
                   "object:"+myDirectoryEntry.NativeGuid);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);  
   
@@ -789,7 +781,6 @@ DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);
 Console::WriteLine("The GUID of the ADS object: {0}", myDirectoryEntry->Guid);  
 Console::WriteLine("The Native GUID of the ADS object: {0}",  
                    myDirectoryEntry->NativeGuid);  
-  
 ```  
   
  ]]></format>
@@ -1091,10 +1082,9 @@ foreach(DirectoryEntry myDirectoryEntryChild in
 {  
    Console.WriteLine(myDirectoryEntryChild.Path);  
 }  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);  
   
@@ -1181,10 +1171,9 @@ Console.WriteLine("The GUID of the ADS object:"+
                   myDirectoryEntry.Guid);  
 Console.WriteLine("The Native GUID of the ADS"+  
                   "object:"+myDirectoryEntry.NativeGuid);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);  
   
@@ -1362,7 +1351,6 @@ Dim myADSPath As String = _
 Dim myDirectoryEntry As New DirectoryEntry(myADSPath, UserName, SecurelyStoredPassword)  
   
 Console.WriteLine("Parent is :" + myDirectoryEntry.Parent.Path)  
-  
 ```  
   
 ```csharp  
@@ -1372,12 +1360,11 @@ DirectoryEntry myDirectoryEntry=new DirectoryEntry(myADSPath, UserName, Securely
 Console.WriteLine("Parent is :"+myDirectoryEntry.Parent.Path);  
 ```  
   
-```cpp#  
+```cpp  
 String^ myADSPath = "LDAP://onecity/CN=user,CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath, UserName, SecurelyStoredPassword);  
   
 Console::WriteLine("Parent is :{0}", myDirectoryEntry->Parent->Path);  
-  
 ```  
   
  ]]></format>
@@ -1458,10 +1445,9 @@ myDirectoryEntry.Password = SecurelyStoredPassword;
 Console.WriteLine("The Child ADS objects are:");  
 foreach(DirectoryEntry myChildDirectoryEntry in myDirectoryEntry.Children)  
    Console.WriteLine(myChildDirectoryEntry.Path);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Create an Instance of DirectoryEntry.  
@@ -1478,7 +1464,6 @@ while (myEnum->MoveNext())
              (myEnum->Current);  
     Console::WriteLine(myChildDirectoryEntry->Path);  
 }  
-  
 ```  
   
  ]]></format>
@@ -1830,10 +1815,9 @@ if (string.Compare(mySchemaEntry.Name, "container") == 0)
    foreach(DirectoryEntry myChildDirectoryEntry in myDirectoryEntry.Children)  
       Console.WriteLine(myChildDirectoryEntry.Path);  
 }  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Creates an Instance of DirectoryEntry.  
@@ -1854,7 +1838,6 @@ if (!String::Compare(mySchemaEntry->Name, "container"))
         Console::WriteLine(myChildDirectoryEntry->Path);  
     }  
 }  
-  
 ```  
   
  ]]></format>
@@ -1947,7 +1930,7 @@ if (string.Compare(mySchemaEntry.Name,"container") == 0)
   
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Creates an Instance of DirectoryEntry.  
@@ -1968,7 +1951,6 @@ if (!String::Compare(mySchemaEntry->Name, S"container"))
         Console::WriteLine(myChildDirectoryEntry->Path);  
     }  
 }  
-  
 ```  
   
  ]]></format>
@@ -2108,10 +2090,9 @@ myDirectoryEntry.Password = SecurelyStoredPassword;
 Console.WriteLine("The Child ADS objects are:");  
 foreach(DirectoryEntry myChildDirectoryEntry in myDirectoryEntry.Children)  
    Console.WriteLine(myChildDirectoryEntry.Path);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Create an Instance of DirectoryEntry.  
@@ -2127,7 +2108,6 @@ while (myEnum->MoveNext())
     DirectoryEntry^ myChildDirectoryEntry = safe_cast<DirectoryEntry^>(myEnum->Current);  
     Console::WriteLine(myChildDirectoryEntry->Path);  
 }  
-  
 ```  
   
  ]]></format>

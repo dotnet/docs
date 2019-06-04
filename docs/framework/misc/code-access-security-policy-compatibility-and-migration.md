@@ -21,7 +21,7 @@ You can avoid the warnings and errors by either:
 
    \- or -
 
-- Using the [<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) to opt into the legacy CAS policy behavior.
+- Using the [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) to opt into the legacy CAS policy behavior.
 
 This topic contains the following sections:
 
@@ -137,7 +137,7 @@ If you want to sandbox an assembly, use the <xref:System.AppDomain.CreateDomain%
 
 ## Compatibility: Using the CAS Policy Legacy Option
 
-The [<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) lets you specify that a process or library uses legacy CAS policy. When you enable this element, the policy and evidence overloads will work as they did in previous versions of the framework.
+The [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) lets you specify that a process or library uses legacy CAS policy. When you enable this element, the policy and evidence overloads will work as they did in previous versions of the framework.
 
 > [!NOTE]
 > CAS policy behavior is specified on a runtime version basis, so modifying CAS policy for one runtime version does not affect the CAS policy of another version.

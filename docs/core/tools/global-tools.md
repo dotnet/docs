@@ -126,7 +126,7 @@ The .NET Core CLI tries to add the default locations to the PATH environment var
 * On macOS, if you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
 * On Linux, you need to edit the shell environment file to configure the PATH.
 
-## Global tools available in the .NET Core SDK
+## Global tools in the .NET Core SDK
 
 The .NET Core SDK contains the `dotnet-aspnet-codegenerator` global tool that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
 

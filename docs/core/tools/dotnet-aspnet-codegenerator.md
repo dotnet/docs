@@ -18,7 +18,7 @@ ms.date: 06/15/2019
 `aspnet-codegenerator` is a [global tool](global-tools.md) that must be installed. The following command installs the latest stable version of the `aspnet-codegenerator` tool:
 
 ```console
-dotnet tool install --g dotnet-aspnet-codegenerator
+dotnet tool install -g aspnet-codegenerator
 ```
 
 The following command updates `aspnet-codegenerator` to the latest stable version available from the installed .NET Core SDKs:

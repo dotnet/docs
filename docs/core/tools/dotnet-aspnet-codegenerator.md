@@ -7,11 +7,9 @@ ms.date: 06/15/2019
 ---
 # dotnet aspnet-codegenerator
 
-[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
-
-## Name
-
 `dotnet aspnet-codegenerator` - Runs the ASP.NET Core scaffolding engine.
+
+[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 ## Installing aspnet-codegenerator
 

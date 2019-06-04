@@ -49,11 +49,11 @@ In addition to apps that are not optimized for the cloud, Azure App Service Web 
 
 ![Basic Azure architecture](./media/image1-5.png)
 
-A small number of resources in a single resource group is typically sufficient to manage such an app. Apps that are typically deployed as a single unit, rather than those which are made up of many separate processes, are good candidates for this [basic architectural approach](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/app-service-web-app/basic-web-app). Though architecturally simple, this approach still allows the hosted app to scale both up (more resources per node) and out (more hosted nodes) to meet any increase in demand. With autoscale, the app can be configured to automatically adjust the number of nodes hosting the app based on demand and average load across nodes.
+A small number of resources in a single resource group is typically sufficient to manage such an app. Apps that are typically deployed as a single unit, rather than those which are made up of many separate processes, are good candidates for this [basic architectural approach](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app). Though architecturally simple, this approach still allows the hosted app to scale both up (more resources per node) and out (more hosted nodes) to meet any increase in demand. With autoscale, the app can be configured to automatically adjust the number of nodes hosting the app based on demand and average load across nodes.
 
 ### App Service Web Apps for Containers
 
-In addition to support for hosting web apps directly, [App Service Web Apps for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/) can be used to run containerized applications on Windows and Linux. Using this product, you can easily deploy and run containerized applications that can scale with your business. The apps have all of the features of App Service Web Apps listed above. In addition, Web Apps for Containers support streamlined CI/CD with Docker Hub, Azure Container Registry, and GitHub. You can use Azure DevOps to define build and deployment pipelines that publish changes to a registry. These changes can then be tested in a staging environment and automatically deployed to production using deployment slots, allowing zero-downtime upgrades. Rolling back to previous versions can be done just as easily.
+In addition to support for hosting web apps directly, [App Service Web Apps for Containers](https://azure.microsoft.com/services/app-service/containers/) can be used to run containerized applications on Windows and Linux. Using this product, you can easily deploy and run containerized applications that can scale with your business. The apps have all of the features of App Service Web Apps listed above. In addition, Web Apps for Containers support streamlined CI/CD with Docker Hub, Azure Container Registry, and GitHub. You can use Azure DevOps to define build and deployment pipelines that publish changes to a registry. These changes can then be tested in a staging environment and automatically deployed to production using deployment slots, allowing zero-downtime upgrades. Rolling back to previous versions can be done just as easily.
 
 There are a few scenarios where Web Apps for Containers make the most sense. If you have existing apps that you're able to containerize, whether in Windows or Linux containers, you'll be able to host these easily using this toolset. Simply publish your container and then configure Web Apps for Containers to pull the latest version of that image from your registry of choice. This is a "lift and shift" approach to migrating from classic app hosting models to a cloud-optimized model.
 
@@ -69,7 +69,7 @@ As portions of larger applications are broken up into their own smaller, indepen
 
 ![Microservices sample architecture with several common design patterns noted.](./media/image1-10.png)
 
-[Learn more about design patterns to consider when building microservice-based systems.](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/patterns)
+[Learn more about design patterns to consider when building microservice-based systems.](https://docs.microsoft.com/azure/architecture/microservices/design/patterns)
 
 ### Azure Kubernetes Service
 
@@ -95,7 +95,7 @@ Azure Dev Spaces:
 - Reduce number of integration environments required by team
 - Remove need to mock certain services in distributed system when developing/testing
 
-[Learn more about Azure Dev Spaces](https://docs.microsoft.com/en-us/azure/dev-spaces/about)
+[Learn more about Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/about)
 
 ### Azure Virtual Machines
 
@@ -131,10 +131,10 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
   <https://azure.microsoft.com/solutions/architecture/>
 
 - Azure Basic Web Application Architecture\
-  <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/app-service-web-app/basic-web-app>
+  <https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app>
 
 - Design Patterns for Microservices\
-  <https://docs.microsoft.com/en-us/azure/architecture/microservices/design/patterns>
+  <https://docs.microsoft.com/azure/architecture/microservices/design/patterns>
 
 - Azure Developer Guide\
   <https://azure.microsoft.com/campaigns/developer-guide/>
@@ -143,7 +143,7 @@ Figure 11-2 shows an example reference architecture. This diagram describes a re
   <https://docs.microsoft.com/azure/app-service/app-service-web-overview>
 
 - Web App for Containers\
-  <https://azure.microsoft.com/en-us/services/app-service/containers/>
+  <https://azure.microsoft.com/services/app-service/containers/>
 
 - Introduction to Azure Kubernetes Service (AKS)\
   <https://docs.microsoft.com/azure/aks/intro-kubernetes>

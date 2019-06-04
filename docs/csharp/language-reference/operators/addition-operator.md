@@ -1,30 +1,25 @@
 ---
-title: "+ Operator - C# Reference"
+title: "+ and += operators - C# Reference"
 ms.custom: seodec18
-ms.date: 10/22/2018
+ms.date: 05/24/2019
 f1_keywords: 
   - "+_CSharpKeyword"
+  - "+=_CSharpKeyword"
 helpviewer_keywords: 
-  - "+ operator [C#]"
-  - "concatenation operator [C#]"
   - "addition operator [C#]"
+  - "concatenation operator [C#]"
+  - "delegate combination [C#]"
+  - "+ operator [C#]"
+  - "addition assignment operator [C#]"
+  - "event subscription [C#]"
+  - "+= operator [C#]"
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
-# + Operator (C# Reference)
+# + and += operators (C# Reference)
 
-The `+` operator is supported in two forms: a unary plus operator or a binary addition operator.
+The `+` operator is supported by the built-in numeric types, [string](../keywords/string.md) type, and [delegate](../keywords/delegate.md) types.
 
-## Unary plus operator
-
-The unary `+` operator returns the value of its operand. It's supported by all numeric types.
-
-## Numeric addition
-
-For numeric types, the `+` operator computes the sum of its operands:
-
-[!code-csharp-interactive[numeric addition](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddNumerics)]
-
-For more information about arithmetic operators, see [Arithmetic operators](arithmetic-operators.md).
+For information about the arithmetic `+` operator, see the [Unary plus and minus operators](arithmetic-operators.md#unary-plus-and-minus-operators) and [Addition operator +](arithmetic-operators.md#addition-operator-) sections of the [Arithmetic operators](arithmetic-operators.md) article.
 
 ## String concatenation
 
@@ -38,15 +33,39 @@ Starting with C# 6, [string interpolation](../tokens/interpolated.md) provides a
 
 ## Delegate combination
 
-For [delegate](../keywords/delegate.md) types, the `+` operator returns a new delegate instance that, when invoked, invokes the first operand and then invokes the second operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
+For operands of the same [delegate](../keywords/delegate.md) type, the `+` operator returns a new delegate instance that, when invoked, invokes the first operand and then invokes the second operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
 
 [!code-csharp-interactive[delegate combination](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddDelegates)]
 
+To perform delegate removal, use the [`-` operator](subtraction-operator.md#delegate-removal).
+
 For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
+
+## Addition assignment operator +=
+
+An expression using the `+=` operator, such as
+
+```csharp
+x += y
+```
+
+is equivalent to
+
+```csharp
+x = x + y
+```
+
+except that `x` is only evaluated once.
+  
+The following example demonstrates the usage of the `+=` operator:
+
+[!code-csharp-interactive[+= examples](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddAndAssign)]
+
+You also use the `+=` operator to specify an event handler method when you subscribe to an [event](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Operator overloadability
 
-User-defined types can [overload](../keywords/operator.md) the unary and binary `+` operators. When a binary `+` operator is overloaded, the [addition assignment operator](addition-assignment-operator.md) `+=` is also implicitly overloaded.
+A user-defined type can [overload](../keywords/operator.md) the `+` operator. When a binary `+` operator is overloaded, the `+=` operator is also implicitly overloaded. A user-defined type cannot explicitly overload the `+=` operator.
 
 ## C# language specification
 
@@ -58,6 +77,9 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
 - [String interpolation](../tokens/interpolated.md)
-- [How to: Concatenate Multiple Strings](../../how-to/concatenate-multiple-strings.md)
+- [How to: concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
 - [Delegates](../../programming-guide/delegates/index.md)
+- [Events](../../programming-guide/events/index.md)
 - [Checked and unchecked](../keywords/checked-and-unchecked.md)
+- [Arithmetic operators](arithmetic-operators.md)
+- [- and -= operators](subtraction-operator.md)

@@ -9,9 +9,7 @@ Each microservice has a unique name (URL) that's used to resolve its location. Y
 
 The [service registry pattern](https://microservices.io/patterns/service-registry.html) is a key part of service discovery. The registry is a database containing the network locations of service instances. A service registry needs to be highly available and up-to-date. Clients could cache network locations obtained from the service registry. However, that information eventually goes out of date and clients can no longer discover service instances. Consequently, a service registry consists of a cluster of servers that use a replication protocol to maintain consistency.
 
-In some microservice deployment environments (called clusters, to be covered in a later section), service discovery is built-in. For example, an Azure Container Service with Kubernetes (AKS) environment can handle service instance registration and deregistration. It also runs a proxy on each cluster host that plays the role of server-side discovery router. Another example is Azure Service Fabric, which also provides a service registry through its out-of-the-box Naming Service.
-
-Note that there's certain overlap between the service registry and the API gateway pattern, which helps solve this problem as well. For example, the [Service Fabric Reverse Proxy](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy) is a type of implementation of an API Gateway that's based on the Service Fabric Naming Service and that helps resolve address resolution to the internal services.
+In some microservice deployment environments (called clusters, to be covered in a later section), service discovery is built-in. For example, an Azure Container Service with Kubernetes (AKS) environment can handle service instance registration and deregistration. It also runs a proxy on each cluster host that plays the role of server-side discovery router.
 
 ## Additional resources
 

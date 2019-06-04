@@ -131,7 +131,3 @@ static void Main(string[] args)
   <COUNTRY>USA</COUNTRY>  
 </PO>  
 ```  
-  
-## See also
-
-- [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

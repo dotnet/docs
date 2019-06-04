@@ -52,7 +52,7 @@ Specifies the type that serves as the application domain manager for the default
   
  The format of the type and namespace is the same format that is used for the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property.  
   
- This configuration element is available only in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] and later.  
+ This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
  The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  

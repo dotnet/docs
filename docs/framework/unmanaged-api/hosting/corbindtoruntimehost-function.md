@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # CorBindToRuntimeHost Function
 Enables hosts to load a specified version of the common language runtime (CLR) into a process.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

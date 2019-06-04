@@ -30,7 +30,7 @@ Most of the .NET Framework tools described in this section are automatically ins
  Converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.  
   
  [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)  
- Enables you to view and configure security policy for the machine policy level, the user policy level, and the enterprise policy level. In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] and later, this tool does not affect code access security (CAS) policy unless the [\<legacyCasPolicy> element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. For more information, see [Security Changes](../../../docs/framework/security/security-changes.md).  
+ Enables you to view and configure security policy for the machine policy level, the user policy level, and the enterprise policy level. In the .NET Framework 4 and later, this tool does not affect code access security (CAS) policy unless the [\<legacyCasPolicy> element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. For more information, see [Security Changes](../../../docs/framework/security/security-changes.md).  
   
  [Cert2spc.exe (Software Publisher Certificate Test Tool)](../../../docs/framework/tools/cert2spc-exe-software-publisher-certificate-test-tool.md)  
  Creates a Software Publisher's Certificate (SPC) from one or more X.509 certificates. This tool is for testing purposes only.  
@@ -57,10 +57,10 @@ Most of the .NET Framework tools described in this section are automatically ins
  Takes a portable executable (PE) file that contains intermediate language (IL) code and creates a text file that can be input to the IL Assembler (Ilasm.exe).  
   
  [Installutil.exe (Installer Tool)](../../../docs/framework/tools/installutil-exe-installer-tool.md)  
- Enables you to install and uninstall server resources by executing the installer components in a specified assembly. (Works with classes in the <xref:System.Configuration.Install> namespace.) Enables you to install and uninstall server resources by executing the installer components in a specified assembly. (Works with classes in the <xref:System.Configuration.Install> namespace.)  
+ Enables you to install and uninstall server resources by executing the installer components in a specified assembly. (Works with classes in the <xref:System.Configuration.Install> namespace.) 
   
  [Lc.exe (License Compiler)](../../../docs/framework/tools/lc-exe-license-compiler.md)  
- Reads text files that contain licensing information and produces a .licenses file that can be embedded in a common language runtime executable as a resource. Reads text files that contain licensing information and produces a .licenses file that can be embedded in a common language runtime executable as a resource.  
+ Reads text files that contain licensing information and produces a .licenses file that can be embedded in a common language runtime executable as a resource. 
   
  [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)  
  Lets you create, edit, and sign application and deployment manifests. As a command-line tool, Mage.exe can be run from both batch scripts and other Windows-based applications, including ASP.NET applications.  

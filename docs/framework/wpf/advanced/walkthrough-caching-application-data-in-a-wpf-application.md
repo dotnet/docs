@@ -16,7 +16,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The .NET Framework provides classes that enable you to use caching in .NET Framework applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
 
 > [!NOTE]
->  The <xref:System.Runtime.Caching> namespace is new in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]. This namespace makes caching is available to all .NET Framework applications. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
+>  The <xref:System.Runtime.Caching> namespace is new in the .NET Framework 4. This namespace makes caching is available to all .NET Framework applications. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
 
  This walkthrough shows you how to use the caching functionality that is available in the .NET Framework as part of a [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application. In the walkthrough, you cache the contents of a text file.
 
@@ -24,7 +24,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 - Creating a WPF application project.
 
-- Adding a reference to the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].
+- Adding a reference to the .NET Framework 4.
 
 - Initializing a cache.
 
@@ -61,7 +61,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 4. In the **New Project** dialog box, select **WPF Application**.
 
     > [!NOTE]
-    >  If you do not see the **WPF Application** template, make sure that you are targeting a version of the .NET Framework that supports WPF. In the **New Project** dialog box, select [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] from the list.
+    >  If you do not see the **WPF Application** template, make sure that you are targeting a version of the .NET Framework that supports WPF. In the **New Project** dialog box, select .NET Framework 4 from the list.
 
 5. In the **Name** text box, enter a name for your project. For example, you can enter **WPFCaching**.
 
@@ -72,7 +72,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
      The WPF Designer opens in **Design** view and displays the MainWindow.xaml file. Visual Studio creates the **My Project** folder, the Application.xaml file, and the MainWindow.xaml file.
 
 ## Targeting the .NET Framework and Adding a Reference to the Caching Assemblies
- By default, WPF applications target the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] (not the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]) and must include a reference to the namespace.
+ By default, WPF applications target the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the .NET Framework 4 (not the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]) and must include a reference to the namespace.
 
  Therefore, the next step is to change the .NET Framework target and add a reference to the <xref:System.Runtime.Caching> namespace.
 
@@ -91,7 +91,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
      The **Advanced Compiler Settings** dialog box is displayed.
 
-4. In the **Target framework (all configurations)** list, select [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]. (Do not select [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)].)
+4. In the **Target framework (all configurations)** list, select .NET Framework 4. (Do not select [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)].)
 
 5. Click **OK**.
 
@@ -115,7 +115,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 2. Click the **Application** tab.
 
-3. In the **Target framework** list, select [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)]. (Do not select **.NET Framework 4 Client Profile**.)
+3. In the **Target framework** list, select .NET Framework 4. (Do not select **.NET Framework 4 Client Profile**.)
 
 4. Add a reference to the caching assembly by following these steps:
 

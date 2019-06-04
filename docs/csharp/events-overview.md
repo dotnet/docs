@@ -93,7 +93,8 @@ You subscribe to an event by using the `+=` operator:
 ```csharp
 EventHandler<FileListArgs> onProgress = (sender, eventArgs) => 
     Console.WriteLine(eventArgs.FoundFile);
-lister.Progress += onProgress;
+
+fileLister.Progress += onProgress;
 ```
 
 The handler method typically is the prefix 'On' followed
@@ -102,7 +103,7 @@ by the event name, as shown above.
 You unsubscribe using the `-=` operator:
 
 ```csharp
-lister.Progress -= onProgress;
+fileLister.Progress -= onProgress;
 ```
 
 It's important to note that I declared a local variable for the expression that

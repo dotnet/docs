@@ -25,7 +25,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
 |`Itanium`|Compiles your assembly to be run by the 64-bit CLR on a computer with an Itanium processor.|  
 |`arm`|Compiles your assembly to be run on a computer with an ARM (Advanced RISC Machine) processor.|  
 |`anycpu`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on 32-bit versions of Windows and as a 64-bit application on 64-bit versions of Windows. This flag is the default value.|  
-|`anycpu32bitpreferred`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on both 32-bit and 64-bit versions of Windows. This flag is valid only for executables (.EXE) and requires [!INCLUDE[net_v45](~/includes/net-v45-md.md)].|  
+|`anycpu32bitpreferred`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on both 32-bit and 64-bit versions of Windows. This flag is valid only for executables (.EXE) and requires .NET Framework 4.5.|  
   
 ## Remarks  
  Use the `-platform` option to specify the type of processor targeted by the output file.  

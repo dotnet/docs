@@ -18,7 +18,7 @@ ms.assetid: 975abd20-2a1d-42db-aed3-e898025ccce7
   
 ### To build the sample using Visual Studio  
   
-1. Open [!INCLUDE[fileExplorer](../../../includes/fileexplorer-md.md)] and navigate to one of the language-specific subdirectories for the sample.  
+1. Open File Explorer and navigate to one of the language-specific subdirectories for the sample.  
   
 2. Double-click the icon for the CustomOrder.sln to open the file in Visual Studio.  
   

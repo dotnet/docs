@@ -19,7 +19,7 @@ Whether you prefer a full and powerful IDE or a lightweight and agile editor, Mi
 
 **Visual Studio Code and Docker CLI**. If you prefer a lightweight and cross-platform editor that supports any development language, you can use Microsoft Visual Studio Code (VS Code) and the Docker CLI. This is a cross-platform development approach for Mac, Linux, and Windows. Additionally, Visual Studio Code supports extensions for Docker such as IntelliSense for Dockerfiles and shortcut tasks to run Docker commands from the editor.
 
-By installing [Docker Community Edition (CE)](https://www.docker.com/community-edition) tools, you can use a single Docker CLI to build apps for both Windows and Linux.
+By installing [Docker Desktop Community Edition (CE)](https://hub.docker.com/search/?type=edition&offering=community), you can use a single Docker CLI to build apps for both Windows and Linux.
 
 ### Additional resources
 
@@ -29,13 +29,16 @@ By installing [Docker Community Edition (CE)](https://www.docker.com/community-e
 - **Visual Studio Code**. Official site. \
   <https://code.visualstudio.com/download>
 
-- **Docker Community Edition (CE) for Mac and Windows** \
-  [https://www.docker.com/community-editions](https://www.docker.com/community-edition)
+- **Docker Desktop for Windows Community Edition (CE)** \
+  [https://hub.docker.com/editions/community/docker-ce-desktop-windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+  
+- **Docker Desktop for Mac Community Edition (CE)** \
+  [https://hub.docker.com/editions/community/docker-ce-desktop-mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 
 ## .NET languages and frameworks for Docker containers
 
 As mentioned in earlier sections of this guide, you can use .NET Framework, .NET Core, or the open-source Mono project when developing Docker containerized .NET applications. You can develop in C\#, F\#, or Visual Basic when targeting Linux or Windows Containers, depending on which .NET framework is in use. For more details about.NET languages, see the blog post [The .NET Language Strategy](https://devblogs.microsoft.com/dotnet/the-net-language-strategy/).
 
 >[!div class="step-by-step"]
->[Previous](../architect-microservice-container-applications/using-azure-service-fabric.md)
+>[Previous](../architect-microservice-container-applications/scalable-available-multi-container-microservice-applications.md)
 >[Next](docker-app-development-workflow.md)

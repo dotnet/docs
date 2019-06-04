@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sales anomaly detection scenario
 description: Discover how to use ML.NET in a product sales anomaly detection scenario to understand how to analyze the data for anomaly spikes and change points to take the appropriate action.
-ms.date: 05/06/2019
+ms.date: 05/29/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
@@ -169,7 +169,7 @@ Use the [IidSpikeEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidSpikeEsti
 
 [!code-csharp[AddSpikeTrainer](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddSpikeTrainer)]
 
-Fit the model to the `productSales` data and return the trained model by adding the following as the next line of code in the `DetectSpike()` method:
+Fit the model to the `productSales` data by adding the following as the next line of code in the `DetectSpike()` method:
 
 [!code-csharp[TrainModel1](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#TrainModel1)]
 
@@ -279,7 +279,7 @@ The [iidChangePointEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidChangeP
 
 [!code-csharp[AddChangepointTrainer](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddChangepointTrainer)]
 
-As you did previously, fit the model to the `productSales` data and return the trained model by adding the following as the next line of code in the `DetectChangePoint()` method:
+As you did previously, fit the model to the `productSales` data by adding the following as the next line of code in the `DetectChangePoint()` method:
 
 [!code-csharp[TrainModel2](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#TrainModel2)]
 

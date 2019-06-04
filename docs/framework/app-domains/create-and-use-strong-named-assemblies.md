@@ -65,7 +65,7 @@ This feature can be disabled for individual applications or for a computer. See 
 |-----------|-----------------|
 |[How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
 |[How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)|Describes how to create a strong-named assembly.|
-|[Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md)|Describes enhancements to strong-names in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].|
+|[Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
 |[How to: Reference a Strong-Named Assembly](../../../docs/framework/app-domains/how-to-reference-a-strong-named-assembly.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
 |[How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
 |[Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)|Provides an overview of single-file and multifile assemblies.|

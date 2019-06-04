@@ -16,7 +16,7 @@ Figure 7-13 shows the Address value object within the Order aggregate.
 
 **Figure 7-13**. Address value object within the Order aggregate
 
-As shown in Figure 7-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex-value composed of country, street, city, etc. and has no identity in this domain, must be modeled and treated as a value object.
+As shown in Figure 7-13, an entity is usually composed of multiple attributes. For example, the `Order` entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex-value composed of country/region, street, city, etc. and has no identity in this domain, must be modeled and treated as a value object.
 
 ## Important characteristics of value objects
 

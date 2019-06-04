@@ -147,7 +147,7 @@ The addition operator `+` computes the sum of its operands:
 
 [!code-csharp-interactive[addition operator](~/samples/snippets/csharp/language-reference/operators/ArithmeticOperators.cs#Addition)]
 
-You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` operator](addition-operator.md) article.
+You also can use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` and `+=` operators](addition-operator.md) article.
 
 ## Subtraction operator -
 

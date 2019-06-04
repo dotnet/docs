@@ -21,7 +21,7 @@ ms.author: "ronpet"
 # LoadLibraryShim Function
 Loads a specified version of a DLL that is included in the .NET Framework redistributable package.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Use the [ICLRRuntimeInfo::LoadLibrary](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-loadlibrary-method.md) method instead.  
+ This function has been deprecated in the .NET Framework 4. Use the [ICLRRuntimeInfo::LoadLibrary](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-loadlibrary-method.md) method instead.  
   
 ## Syntax  
   
@@ -39,7 +39,7 @@ HRESULT LoadLibraryShim (
  [in] A zero-terminated string that represents the name of the DLL to be loaded from the .NET Framework library.  
   
  `szVersion`  
- [in] A zero-terminated string that represents the version of the DLL to be loaded. If `szVersion` is null, the version selected for loading is the latest version of the specified DLL that is less than version 4. That is, all versions equal to or greater than version 4 are ignored if `szVersion` is null, and if no version less than version 4 is installed, the DLL fails to load. This is to ensure that installation of the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not affect pre-existing applications or components. See the entry [In-Proc SxS and Migration Quick Start](https://go.microsoft.com/fwlink/?LinkId=200329) in the CLR team blog.  
+ [in] A zero-terminated string that represents the version of the DLL to be loaded. If `szVersion` is null, the version selected for loading is the latest version of the specified DLL that is less than version 4. That is, all versions equal to or greater than version 4 are ignored if `szVersion` is null, and if no version less than version 4 is installed, the DLL fails to load. This is to ensure that installation of the .NET Framework 4 does not affect pre-existing applications or components. See the entry [In-Proc SxS and Migration Quick Start](https://go.microsoft.com/fwlink/?LinkId=200329) in the CLR team blog.  
   
  `pvReserved`  
  Reserved for future use.  

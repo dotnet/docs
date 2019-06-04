@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "indexer operator [C#]"
   - "[] operator [C#]"
   - "null-conditional operators [C#]"
+  - "Elvis operator [C#]"
   - "?. operator [C#]"
   - "?[] operator [C#]"
   - "invocation operator [C#]"
@@ -93,7 +94,7 @@ void TraceMethod() {}
 
 ## Null-conditional operators ?. and ?[]
 
-Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`.
+Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`. The null-conditional member access operator `?.` is also known as the Elvis operator.
 
 The null-conditional operators are short-circuiting. That is, if one operation in a chain of conditional member or element access operations returns `null`, the rest of the chain doesn't execute. In the following example, `B` is not evaluated if `A` evaluates to `null` and `C` is not evaluated if `A` or `B` evaluates to `null`:
 

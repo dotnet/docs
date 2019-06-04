@@ -56,7 +56,6 @@ The keyword new is required on 'MyDerivedC.x' because it hides inherited member 
 - [C# Reference](../../language-reference/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Operator Keywords](operator-keywords.md)
 - [Modifiers](modifiers.md)
 - [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)
 - [Knowing When to Use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md)

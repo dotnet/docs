@@ -33,8 +33,6 @@ The [Container Monitoring solution](https://docs.microsoft.com/azure/log-analyti
 
 - Kubernetes
 
-- Service Fabric
-
 - Red Hat OpenShift
 
 Figure 4-11 shows the relationships between various container hosts and agents and OMS.
@@ -82,10 +80,6 @@ You can use the Log Analytics Container Monitoring solution to:
 - **What is Operations Management Suite (OMS)?**
 
 <https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview>
-
-- **Monitoring Windows Server containers in Service Fabric with OMS**
-
-<https://docs.microsoft.com/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver>
 
 >[!div class="step-by-step"]
 >[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)

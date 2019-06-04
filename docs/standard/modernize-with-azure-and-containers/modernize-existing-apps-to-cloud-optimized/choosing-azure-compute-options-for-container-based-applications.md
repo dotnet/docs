@@ -20,13 +20,9 @@ However, this recommendation should be taken with a pinch of salt, as the produc
 
 After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-In the next figure, you can analyze a more global while detailed decision table.
+In the next figure, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
 
 ![](./media/image8.5.png)
-
-Notice how the underlying OS (Windows vs. Linux) can also be a decision factor as some orchestrators are more mature on Linux containers and other on Windows containers. For instance, Linux containers are very mature in Kubernetes (AKS in Azure) but less mature on Service Fabric. On the other hand, Windows Containers are more mature in Service Fabric (released in May 2017) and less mature in AKS.
-
-However, those differences in OS maturity will fade in the future and multiple platforms will have comparable OS maturity and the decision will lay more on preferences based on specific features your application might need or based on each platform's ecosystem reasons.
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

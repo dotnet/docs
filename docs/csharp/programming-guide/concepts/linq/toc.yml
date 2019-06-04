@@ -340,8 +340,19 @@
               href: intermediate-materialization.md
             - name: Chaining Standard Query Operators Together
               href: chaining-standard-query-operators-together.md
+          - name: "Tutorial: Chaining Queries Together"
+            items:
+            - name: Deferred Execution and Lazy Evaluation in LINQ to XML
+              href: deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
+            - name: Deferred Execution Example
+              href: deferred-execution-example.md
+            - name: Chaining Queries Example
+              href: chaining-queries-example.md
+            - name: Intermediate Materialization
+              href: intermediate-materialization.md
+            - name: Chaining Standard Query Operators Together
+              href: chaining-standard-query-operators-together.md
           - name: "Tutorial: Manipulating Content in a WordprocessingML Document"
-            href: tutorial-manipulating-content-in-a-wordprocessingml-document.md
             items:
             - name: Shape of WordprocessingML Documents
               href: shape-of-wordprocessingml-documents.md
@@ -362,7 +373,6 @@
             - name: Finding Text in Word Documents
               href: finding-text-in-word-documents.md
             - name: Details of Office Open XML WordprocessingML Documents
-              href: details-of-office-open-xml-wordprocessingml-documents.md
               items:
               - name: WordprocessingML Document with Styles
                 href: wordprocessingml-document-with-styles.md
@@ -371,7 +381,6 @@
               - name: Example that Outputs Office Open XML Document Parts
                 href: example-that-outputs-office-open-xml-document-parts.md
       - name: Modifying XML Trees (LINQ to XML)
-        href: modifying-xml-trees-linq-to-xml.md
         items:
         - name: In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)
           href: in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml.md
@@ -386,7 +395,6 @@
         - name: "How to: Change the Namespace for an Entire XML Tree"
           href: how-to-change-the-namespace-for-an-entire-xml-tree.md
       - name: Performance (LINQ to XML)
-        href: performance-linq-to-xml.md
         items:
         - name: Performance of Chained Queries (LINQ to XML)
           href: performance-of-chained-queries-linq-to-xml.md
@@ -397,7 +405,6 @@
         - name: Statically Compiled Queries (LINQ to XML)
           href: statically-compiled-queries-linq-to-xml.md
       - name: Advanced LINQ to XML Programming
-        href: advanced-linq-to-xml-programming.md
         items:
         - name: LINQ to XML Annotations
           href: linq-to-xml-annotations.md
@@ -418,7 +425,6 @@
         - name: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style"
           href: how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style.md
         - name: Serializing Object Graphs that Contain XElement Objects
-          href: serializing-object-graphs-that-contain-xelement-objects.md
           items:
           - name: "How to: Serialize Using XmlSerializer"
             href: how-to-serialize-using-xmlserializer.md

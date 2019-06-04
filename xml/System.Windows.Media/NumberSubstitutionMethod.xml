@@ -74,7 +74,7 @@ Example of the appearance of digits in different cultures
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>If the number culture is an Arabic or Farsi culture, specifies that the digits depend on the context. Either traditional or Latin digits are used depending on the nearest preceding strong character, or, if there is none, the text direction of the paragraph.</summary>
+        <summary>If the number culture is an Arabic, Persian, or Dari culture, specifies that the digits depend on the context. Either traditional or Latin digits are used depending on the nearest preceding strong character, or, if there is none, the text direction of the paragraph.</summary>
       </Docs>
     </Member>
     <Member MemberName="European">

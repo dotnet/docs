@@ -65,7 +65,7 @@
       </ReturnValue>
       <MemberValue>18</MemberValue>
       <Docs>
-        <summary>The text input pattern for the name of a country.</summary>
+        <summary>The text input pattern for the name of a country/region.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressCountryShortName">
@@ -86,7 +86,7 @@
       </ReturnValue>
       <MemberValue>19</MemberValue>
       <Docs>
-        <summary>The text input pattern for the abbreviated name of a country.</summary>
+        <summary>The text input pattern for the abbreviated name of a country/region.</summary>
       </Docs>
     </Member>
     <Member MemberName="AddressStateOrProvince">
@@ -968,7 +968,7 @@
       </ReturnValue>
       <MemberValue>33</MemberValue>
       <Docs>
-        <summary>The text input pattern for a telephone country code.</summary>
+        <summary>The text input pattern for a telephone country/region code.</summary>
       </Docs>
     </Member>
     <Member MemberName="TelephoneLocalNumber">

@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example uses the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> element to build lists of <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> elements containing country names, any one of which may be used to recognize the containing phrase. The example then adds one of the resulting <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objects to their respective rules for European countries and South American countries. Further on, the example uses the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object to group rule references to `ruleEurope` and `ruleSAmerica` into a list of two alternatives, either one of which may be used to recognize spoken input.  
+ The following example uses the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> element to build lists of <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> elements containing country/region names, any one of which may be used to recognize the containing phrase. The example then adds one of the resulting <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objects to their respective rules for European countries and South American countries. Further on, the example uses the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> object to group rule references to `ruleEurope` and `ruleSAmerica` into a list of two alternatives, either one of which may be used to recognize spoken input.  
   
 ```  
 public void WorldSoccerWinners ()  

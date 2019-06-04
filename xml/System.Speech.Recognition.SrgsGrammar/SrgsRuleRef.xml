@@ -93,7 +93,7 @@
    
   
 ## Examples  
- The following example creates a grammar that recognizes the phrase "A nation that has won the World Cup is" followed by the name of a country that has won the World Cup. After creating the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object `winnerRule` and giving it the string identifier `WorldCupWinner`, the example appends the string  "A nation that has won the World Cup is" to the rule. Using <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objects, the example then builds a list of European countries and a list of South American countries, and adds each list to its respective rule, `ruleEurope` or `ruleSAmerica`. The example then creates rule references for `ruleEurope` and `ruleSAmerica` and adds them to the `WorldCupWinner` rule.  
+ The following example creates a grammar that recognizes the phrase "A nation that has won the World Cup is" followed by the name of a country that has won the World Cup. After creating the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object `winnerRule` and giving it the string identifier `WorldCupWinner`, the example appends the string  "A nation that has won the World Cup is" to the rule. Using <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objects, the example then builds a list of European countries/regions and a list of South American countries/regions, and adds each list to its respective rule, `ruleEurope` or `ruleSAmerica`. The example then creates rule references for `ruleEurope` and `ruleSAmerica` and adds them to the `WorldCupWinner` rule.  
   
 ```  
 public void WorldSoccerWinners ()  

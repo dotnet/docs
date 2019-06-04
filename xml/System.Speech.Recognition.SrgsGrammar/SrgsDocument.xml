@@ -655,7 +655,7 @@ document.Root = winnerRule;
    
   
 ## Examples  
- The following example creates a grammar that recognizes the phrase "A nation that has won the World Cup is" followed by the name of a country that has won the World Cup. The example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, and then creates a public rule named `winnerRule`. After adding a string to the rule `winnerRule`, the example creates two more rules (`ruleEurope` and `ruleSAmerica`), each containing a list of countries. Using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method, the example adds all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
+ The following example creates a grammar that recognizes the phrase "A nation that has won the World Cup is" followed by the name of a country that has won the World Cup. The example creates an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, and then creates a public rule named `winnerRule`. After adding a string to the rule `winnerRule`, the example creates two more rules (`ruleEurope` and `ruleSAmerica`), each containing a list of countries/regions. Using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method, the example adds all three rules (`winnerRule`, `ruleEurope`, and `ruleSAmerica`) to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> property of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
   
 ```csharp  
 public void WorldSoccerWinners ()  

@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # RunDll32ShimW Function
 Executes the specified command.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

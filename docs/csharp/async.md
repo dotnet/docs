@@ -150,7 +150,7 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
     NetworkProgressBar.Visibility = Visibility.Visible;
 
     // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
-    // This is what allows the app to be responsive and not hang on the UI thread.
+    // This is what allows the app to be responsive and not block the UI thread.
     var html = await getDotNetFoundationHtmlTask;
     int count = Regex.Matches(html, @"\.NET").Count;
 

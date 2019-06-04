@@ -12,9 +12,9 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Compiling Apps with .NET Native
-[!INCLUDE[net_native](../../../includes/net-native-md.md)] is a precompilation technology for building and deploying Windows apps that is included with Visual Studio 2015 and later versions. It automatically compiles the release version of apps that are written in managed code (C# or Visual Basic) and that target the .NET Framework and Windows 10 to native code.  
+.NET Native is a precompilation technology for building and deploying Windows apps that is included with Visual Studio 2015 and later versions. It automatically compiles the release version of apps that are written in managed code (C# or Visual Basic) and that target the .NET Framework and Windows 10 to native code.  
   
- Typically, apps that target the .NET Framework are compiled to intermediate language (IL). At run time, the just-in-time (JIT) compiler translates the IL to native code. In contrast, [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiles Windows apps directly to native code. For developers, this means:  
+ Typically, apps that target the .NET Framework are compiled to intermediate language (IL). At run time, the just-in-time (JIT) compiler translates the IL to native code. In contrast, .NET Native compiles Windows apps directly to native code. For developers, this means:  
   
 - Your apps feature the performance of native code. Usually, performance will be superior to code that is first compiled to IL and then compiled to native code by the JIT compiler. 
   
@@ -22,7 +22,7 @@ ms.author: "ronpet"
   
 - You can continue to take advantage of the resources provided by the .NET Framework, including its class library, automatic memory management and garbage collection, and exception handling.  
   
- For users of your apps, [!INCLUDE[net_native](../../../includes/net-native-md.md)] offers these advantages:  
+ For users of your apps, .NET Native offers these advantages:  
   
 - Faster execution times for the majority of apps and scenarios.
   
@@ -35,17 +35,17 @@ ms.author: "ronpet"
 > [!IMPORTANT]
 > For the vast majority of apps and scenarios, .NET Native offers significantly faster startup times and superior performance when compared to an app compiled to IL or to an NGEN image. However, your results may vary. To ensure that your app has benefited from the performance enhancements of .NET Native, you should compare its performance with that of the non-.NET Native version of your app. For more information, see [Performance Session Overview](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).
  
-But [!INCLUDE[net_native](../../../includes/net-native-md.md)] involves more than a compilation to native code. It transforms the way that .NET Framework apps are built and executed. In particular:  
+But .NET Native involves more than a compilation to native code. It transforms the way that .NET Framework apps are built and executed. In particular:  
   
 - During precompilation, required portions of the .NET Framework are statically linked into your app. This allows the app to run with app-local libraries of the .NET Framework, and the compiler to perform global analysis to deliver performance wins. As a result, apps launch consistently faster even after .NET Framework updates.  
   
-- The [!INCLUDE[net_native](../../../includes/net-native-md.md)] runtime is optimized for static precompilation and in the vast majority of cases offers superior performance. At the same time, it retains the core reflection features that developers find so productive.  
+- The .NET Native runtime is optimized for static precompilation and in the vast majority of cases offers superior performance. At the same time, it retains the core reflection features that developers find so productive.  
   
-- [!INCLUDE[net_native](../../../includes/net-native-md.md)] uses the same back end as the C++ compiler, which is optimized for static precompilation scenarios.  
+- .NET Native uses the same back end as the C++ compiler, which is optimized for static precompilation scenarios.  
   
- [!INCLUDE[net_native](../../../includes/net-native-md.md)] is able to bring the performance benefits of C++ to managed code developers because it uses the same or similar tools as C++ under the hood, as shown in this table.  
+ .NET Native is able to bring the performance benefits of C++ to managed code developers because it uses the same or similar tools as C++ under the hood, as shown in this table.  
   
-||[!INCLUDE[net_native](../../../includes/net-native-md.md)]|C++|  
+||.NET Native|C++|  
 |-|----------------------------------------------------------------|-----------|  
 |Libraries|The .NET Framework + Windows Runtime|Win32 + Windows Runtime|  
 |Compiler|UTC optimizing compiler|UTC optimizing compiler|  

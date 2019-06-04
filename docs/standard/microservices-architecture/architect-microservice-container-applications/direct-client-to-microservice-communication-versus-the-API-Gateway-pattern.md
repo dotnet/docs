@@ -140,7 +140,7 @@ In this guide and the reference sample application (eShopOnContainers), the arch
 
 [Ocelot](https://github.com/ThreeMammals/Ocelot) is a lightweight API Gateway, recommended for simpler approaches. Ocelot is an Open Source .NET Core based API Gateway especially made for microservices architecture that need unified points of entry into their system. It's lightweight, fast, scalable and provides routing and authentication among many other features.
 
-The main reason to choose Ocelot for the [eShopOnContainers reference application](https://github.com/dotnet-architecture/eShopOnContainers) is because Ocelot is a .NET Core lightweight API Gateway that you can deploy into the same application deployment environment where you're deploying your microservices/containers, such as a Docker Host, Kubernetes, Service Fabric, etc. And since it's based on .NET Core, it's cross-platform allowing you to deploy on Linux or Windows.
+The main reason to choose Ocelot for the [eShopOnContainers reference application](https://github.com/dotnet-architecture/eShopOnContainers) is because Ocelot is a .NET Core lightweight API Gateway that you can deploy into the same application deployment environment where you're deploying your microservices/containers, such as a Docker Host, Kubernetes, etc. And since it's based on .NET Core, it's cross-platform allowing you to deploy on Linux or Windows.
 
 The previous diagrams showing custom API Gateways running in containers are precisely how you can also run Ocelot in a container and microservice-based application.
 

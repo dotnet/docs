@@ -10,7 +10,7 @@ The recommended approach for retries with exponential backoff is to take advanta
 
 Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET 4.x and the .NET Standard Library 1.0 (which supports .NET Core).
 
-However, using Polly’s library with your own custom code with HttpClient can be significantly complex. In the original version of eShopOnContainers, there was a [ResilientHttpClient building-block](https://github.com/dotnet-architecture/eShopOnContainers/commit/0c317d56f3c8937f6823cf1b45f5683397274815#diff-e6532e623eb606a0f8568663403e3a10) based on Polly. But with the release of [HttpClientFactory](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests), resilient Http communication has become much simpler to implement, so that building-block was deprecated from eShopOnContainers. 
+However, using Polly’s library with your own custom code with HttpClient can be significantly complex. In the original version of eShopOnContainers, there was a [ResilientHttpClient building-block](https://github.com/dotnet-architecture/eShopOnContainers/commit/0c317d56f3c8937f6823cf1b45f5683397274815#diff-e6532e623eb606a0f8568663403e3a10) based on Polly. But with the release of [HttpClientFactory](use-httpclientfactory-to-implement-resilient-http-requests.md), resilient HTTP communication has become much simpler to implement, so that building-block was deprecated from eShopOnContainers. 
 
 The following steps show how you can use Http retries with Polly integrated into HttpClientFactory, which is explained in the previous section.
 
@@ -64,16 +64,16 @@ Policy
 
 ## Additional resources
 
-- **Retry pattern**\
+- **Retry pattern**  
   [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
-- **Polly and HttpClientFactory**\
+- **Polly and HttpClientFactory**  
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>
 
-- **Polly (.NET resilience and transient-fault-handling library)**\
+- **Polly (.NET resilience and transient-fault-handling library)**  
   <https://github.com/App-vNext/Polly>
 
-- **Marc Brooker. Jitter: Making Things Better With Randomness**\
+- **Marc Brooker. Jitter: Making Things Better With Randomness**  
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]

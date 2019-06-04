@@ -28,4 +28,4 @@ For examples, see the appropriate reference topic.
 
 ## See also
 
-- [Serializing XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)
+- [Serializing XML Trees (C#)](serializing-to-files-textwriters-and-xmlwriters.md)

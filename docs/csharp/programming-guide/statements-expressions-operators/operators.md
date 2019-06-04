@@ -81,4 +81,3 @@ You can define the behavior of certain operators for custom classes and structs.
 - [C# Programming Guide](../index.md)
 - [Statements, Expressions, and Operators](index.md)
 - [C# Operators](../../language-reference/operators/index.md)
-- [Operator Keywords](../../language-reference/keywords/operator-keywords.md)

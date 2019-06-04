@@ -172,11 +172,11 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  **Substitution**:  
   
- This property specifies the type of number substitution to perform. It takes one of the following <xref:System.Windows.Media.NumberSubstitutionMethod> enumeration values.  
+ This property specifies the type of number substitution to perform. It takes one of the following <xref:System.Windows.Media.NumberSubstitutionMethod> enumeration values:  
   
 - <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>: The substitution method is determined based on the number culture's <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=nameWithType> property. This is the default.  
   
-- <xref:System.Windows.Media.NumberSubstitutionMethod.Context>: If the number culture is an Arabic or Farsi culture, it specifies that the digits depend on the context.  
+- <xref:System.Windows.Media.NumberSubstitutionMethod.Context>: If the number culture is an Arabic or Persian culture, it specifies that the digits depend on the context.  
   
 - <xref:System.Windows.Media.NumberSubstitutionMethod.European>: Numbers are always rendered as European digits.  
   

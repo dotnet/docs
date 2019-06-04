@@ -30,7 +30,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
   
 <a name="Dynamic_Assemblies"></a>   
 ## Dynamic Assemblies  
- Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], because of the elimination of machine-wide security policy. (See [Security Changes](../../../docs/framework/security/security-changes.md).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.  
+ Dynamic assemblies are created by using overloads of the <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType> method. Most overloads of this method are deprecated in the .NET Framework 4, because of the elimination of machine-wide security policy. (See [Security Changes](../../../docs/framework/security/security-changes.md).) The remaining overloads can be executed by any code, regardless of trust level. These overloads fall into two groups: those that specify a list of attributes to apply to the dynamic assembly when it is created, and those that do not. If you do not specify the transparency model for the assembly, by applying the <xref:System.Security.SecurityRulesAttribute> attribute when you create it, the transparency model is inherited from the emitting assembly.  
   
 > [!NOTE]
 >  Attributes that you apply to the dynamic assembly after it is created, by using the <xref:System.Reflection.Emit.AssemblyBuilder.SetCustomAttribute%2A> method, do not take effect until the assembly has been saved to disk and loaded into memory again.  
@@ -72,7 +72,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
   
  As with any other emitted code, executing the dynamic method requires whatever permissions are demanded by the methods the dynamic method uses.  
   
- The system assembly that hosts anonymously-hosted dynamic methods uses the <xref:System.Security.SecurityRuleSet.Level1?displayProperty=nameWithType> transparency model, which is the transparency model that was used in the .NET Framework before the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
+ The system assembly that hosts anonymously-hosted dynamic methods uses the <xref:System.Security.SecurityRuleSet.Level1?displayProperty=nameWithType> transparency model, which is the transparency model that was used in the .NET Framework before the .NET Framework 4.  
   
  For more information, see the <xref:System.Reflection.Emit.DynamicMethod> class.  
   
@@ -133,7 +133,7 @@ The .NET Framework provides three ways to emit Microsoft intermediate language (
   
 <a name="Version_Information"></a>   
 ## Version Information  
- Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](../../../docs/framework/security/security-changes.md).  
+ Starting with the .NET Framework 4, machine-wide security policy is eliminated and security transparency becomes the default enforcement mechanism. See [Security Changes](../../../docs/framework/security/security-changes.md).  
   
  Starting with the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)], <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> flag is no longer required when emitting dynamic assemblies and dynamic methods. This flag is required in all earlier versions of the .NET Framework.  
   

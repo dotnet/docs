@@ -8,14 +8,14 @@ ms.author: "ronpet"
 
 # MissingMetadataException Class (.NET Native)
 
-**.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**
+**.NET for Windows apps for Windows 10, .NET Native only**
 
 The exception that is thrown when reflection is used to retrieve metadata that isn't present.
 
 **Namespace:** System.Reflection
 
 > [!IMPORTANT]
-> The `MissingMetadataException` class is intended solely for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.
+> The `MissingMetadataException` class is intended solely for internal use by the .NET Native tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.
 
 ## Syntax
 
@@ -29,8 +29,8 @@ The `MissingMetadataException` class has the following members:
 
 |Constructor|Description|
 |-----------------|-----------------|
-|`public MissingMetadataException()`|Initializes a new instance of the `MissingMetadataException` class by using a system-supplied message that describes the error.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|
-|`public MissingMetadataException(String message)`|Initializes a new instance of the `MissingMetadataException` class with a specified error message.<br /><br /> This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|
+|`public MissingMetadataException()`|Initializes a new instance of the `MissingMetadataException` class by using a system-supplied message that describes the error.<br /><br /> This constructor is for internal use by the .NET Native tool chain only.|
+|`public MissingMetadataException(String message)`|Initializes a new instance of the `MissingMetadataException` class with a specified error message.<br /><br /> This constructor is for internal use by the .NET Native tool chain only.|
 
 ## Properties
 

@@ -84,7 +84,7 @@ The .NET Framework, through configuration files, gives developers and administra
  Security configuration files contain information about the code group hierarchy and permission sets associated with a policy level. We strongly recommend that you use the [Code Access Security Policy tool (Caspol.exe)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md) to modify security policy to ensure that policy changes do not corrupt the security configuration files.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], the security configuration files are present only if security policy has been changed.  
+>  Starting with the .NET Framework 4, the security configuration files are present only if security policy has been changed.  
   
  The security configuration files are in the following locations:  
   

@@ -89,7 +89,7 @@ TAP uses a single method to represent the initiation and completion of an asynch
  If TAP implementations provide overloads that accept a `progress` parameter, they must allow the argument to be `null`, in which case no progress will be reported. TAP implementations should report the progress to the <xref:System.Progress%601> object synchronously, which enables the asynchronous method to quickly provide progress, and allow the consumer of the progress to determine how and where best to handle the information. For example, the progress instance could choose to marshal callbacks and raise events on a captured synchronization context.  
   
 ## IProgress\<T> implementations  
- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides a single <xref:System.IProgress%601> implementation: <xref:System.Progress%601>. The <xref:System.Progress%601> class is declared as follows:  
+ The .NET Framework 4.5 provides a single <xref:System.IProgress%601> implementation: <xref:System.Progress%601>. The <xref:System.Progress%601> class is declared as follows:  
   
 ```csharp  
 public class Progress<T> : IProgress<T>  

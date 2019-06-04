@@ -47,6 +47,5 @@ Namespaces have the following properties:
 - [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)
 - [How to: Use the My Namespace](how-to-use-the-my-namespace.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
-- [Namespace Keywords](../../language-reference/keywords/namespace-keywords.md)
 - [using Directive](../../language-reference/keywords/using-directive.md)
 - [:: Operator](../../language-reference/operators/namespace-alias-qualifer.md)

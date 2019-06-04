@@ -14,7 +14,7 @@ Cross-database ownership chaining occurs when a procedure in one database depend
 - Users with CREATE DATABASE permission can create new databases and attach existing databases. If cross-database ownership chaining is enabled, these users can access objects in other databases that they might not have privileges in from the newly created or attached databases that they create.  
   
 ## Enabling Cross-database Ownership Chaining  
- Cross-database ownership chaining should only be enabled in environments where you can fully trust highly-privileged users. It can be configured during setup for all databases, or selectively for specific databases using the [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] commands `sp_configure` and `ALTER DATABASE`.  
+ Cross-database ownership chaining should only be enabled in environments where you can fully trust highly-privileged users. It can be configured during setup for all databases, or selectively for specific databases using the Transact-SQL commands `sp_configure` and `ALTER DATABASE`.  
   
  To selectively configure cross-database ownership chaining, use `sp_configure` to turn it off for the server. Then use the ALTER DATABASE command with SET DB_CHAINING ON to configure cross-database ownership chaining for only the databases that require it.  
   

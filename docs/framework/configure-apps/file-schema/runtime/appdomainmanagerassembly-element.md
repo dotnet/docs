@@ -52,7 +52,7 @@ Specifies the assembly that provides the application domain manager for the defa
   
  For the format of the assembly display name, see the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property.  
   
- This configuration element is available only in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] and later.  
+ This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
  The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  

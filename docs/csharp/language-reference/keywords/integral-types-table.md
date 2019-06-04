@@ -37,7 +37,6 @@ Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Floating-point types table](floating-point-types-table.md)
 - [Default values table](default-values-table.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)

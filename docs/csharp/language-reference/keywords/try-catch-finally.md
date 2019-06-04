@@ -31,7 +31,6 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)
-- [Exception Handling Statements](exception-handling-statements.md)
 - [throw](throw.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
 - [using Statement](using-statement.md)

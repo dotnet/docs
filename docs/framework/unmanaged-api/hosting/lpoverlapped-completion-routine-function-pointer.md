@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer
 Points to a function that notifies the host when an overlapped (that is, asynchronous) I/O to a device has completed.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

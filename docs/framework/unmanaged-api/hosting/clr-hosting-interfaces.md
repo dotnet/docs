@@ -185,4 +185,4 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
  Contains topics that describe the hosting interfaces provided in the .NET Framework version 1.0 and 1.1.  
   
  [CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)  
- Contains topics that describe the hosting interfaces provided in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].
+ Contains topics that describe the hosting interfaces provided in the .NET Framework 4.

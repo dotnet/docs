@@ -237,7 +237,7 @@ Return the model at the end of the `BuildAndTrainModel` method.
 Now that you've created and trained the model, you need to evaluate it with a different dataset for quality assurance and validation. In the `Evaluate` method, the model created in `BuildAndTrainModel` is passed in to be evaluated. Create the `Evaluate` method, just after `BuildAndTrainModel`, as in the following code:
 
 ```csharp
-public static void Evaluate()
+public static void Evaluate(DataViewSchema trainingDataViewSchema)
 {
 
 }

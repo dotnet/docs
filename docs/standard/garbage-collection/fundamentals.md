@@ -143,7 +143,7 @@ ms.author: "ronpet"
   
      Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2.  
   
-     Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, starting with the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand.  
+     Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, starting with the .NET Framework 4.5.1, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand.  
   
  The garbage collector uses the following information to determine whether objects are live:  
   
@@ -180,7 +180,7 @@ Thread that triggers a garbage collection
   
      Workstation garbage collection can be concurrent or non-concurrent. Concurrent garbage collection enables managed threads to continue operations during a garbage collection.  
   
-     Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], background garbage collection replaces concurrent garbage collection.  
+     Starting with the .NET Framework 4, background garbage collection replaces concurrent garbage collection.  
   
 - Server garbage collection, which is intended for server applications that need high throughput and scalability. Server garbage collection can be non-concurrent or background.  
   
@@ -247,7 +247,7 @@ Concurrent garbage collection
  In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. There is no setting for background garbage collection; it is automatically enabled with concurrent garbage collection. Background garbage collection is a replacement for concurrent garbage collection. As with concurrent garbage collection, background garbage collection is performed on a dedicated thread and is applicable only to generation 2 collections.  
   
 > [!NOTE]
->  Background garbage collection is available only in the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] and later versions. In the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], it is supported only for workstation garbage collection. Starting with the .NET Framework 4.5, background garbage collection is available for both workstation and server garbage collection.  
+>  Background garbage collection is available only in the .NET Framework 4 and later versions. In the .NET Framework 4, it is supported only for workstation garbage collection. Starting with the .NET Framework 4.5, background garbage collection is available for both workstation and server garbage collection.  
   
  A collection on ephemeral generations during background garbage collection is known as foreground garbage collection. When foreground garbage collections occur, all managed threads are suspended.  
   

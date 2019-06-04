@@ -17,7 +17,7 @@ ms.author: "mairaw"
 Security involves three interacting pieces: sandboxing, permissions, and enforcement. Sandboxing refers to the practice of creating isolated domains where some code is treated as fully trusted and other code is restricted to the permissions in the grant set for the sandbox. The application code that runs within the grant set of the sandbox is considered to be transparent; that is, it cannot perform any operations that can affect security. The grant set for the sandbox is determined by evidence (<xref:System.Security.Policy.Evidence> class). Evidence identifies what specific permissions are required by sandboxes, and what kinds of sandboxes can be created. Enforcement refers to allowing transparent code to execute only within its grant set.
 
 > [!IMPORTANT]
-> Security policy was a key element in previous versions of the .NET Framework. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](../../../docs/framework/misc/code-access-security-policy-compatibility-and-migration.md).
+> Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](../../../docs/framework/misc/code-access-security-policy-compatibility-and-migration.md).
 
 This topic describes the transparency model in more detail. It contains the following sections:
 
@@ -53,18 +53,18 @@ The assembly-level <xref:System.Security.SecurityRulesAttribute> attribute expli
 
 The levels are as follows:
 
-- Level 2 (<xref:System.Security.SecurityRuleSet.Level2>) – the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] transparency rules.
+- Level 2 (<xref:System.Security.SecurityRuleSet.Level2>) – the .NET Framework 4 transparency rules.
 
 - Level 1 (<xref:System.Security.SecurityRuleSet.Level1>) – the .NET Framework 2.0 transparency rules.
 
 The primary difference between the two transparency levels is that level 1 does not enforce transparency rules for calls from outside the assembly and is intended only for compatibility.
 
 > [!IMPORTANT]
-> You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], always use level 2 transparency.
+> You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the .NET Framework 4, always use level 2 transparency.
 
 ### Level 2 Transparency
 
-Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
+Level 2 transparency was introduced in the .NET Framework 4. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
 
 - Transparent code, regardless of the permissions it is granted (including full trust), can call only other transparent code or security-safe-critical code. If the code is partially trusted, it can only perform actions that are allowed by the domain’s permission set. Transparent code cannot do the following:
 
@@ -108,7 +108,7 @@ The level 1 transparency model has the following limitations:
 
 ## Transparency Enforcement
 
-Transparency rules are not enforced until transparency is calculated. At that time, an <xref:System.InvalidOperationException> is thrown if a transparency rule is violated. The time that transparency is calculated depends on multiple factors and cannot be predicted. It is calculated as late as possible. In the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], assembly-level transparency calculation occurs sooner than it does in the .NET Framework 2.0. The only guarantee is that transparency calculation will occur by the time it is needed. This is similar to how the just-in-time (JIT) compiler can change the point when a method is compiled and any errors in that method are detected. Transparency calculation is invisible if your code does not have any transparency errors.
+Transparency rules are not enforced until transparency is calculated. At that time, an <xref:System.InvalidOperationException> is thrown if a transparency rule is violated. The time that transparency is calculated depends on multiple factors and cannot be predicted. It is calculated as late as possible. In the .NET Framework 4, assembly-level transparency calculation occurs sooner than it does in the .NET Framework 2.0. The only guarantee is that transparency calculation will occur by the time it is needed. This is similar to how the just-in-time (JIT) compiler can change the point when a method is compiled and any errors in that method are detected. Transparency calculation is invisible if your code does not have any transparency errors.
 
 ## See also
 

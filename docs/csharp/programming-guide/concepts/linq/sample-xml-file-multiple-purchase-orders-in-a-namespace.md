@@ -102,7 +102,4 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </aw:PurchaseOrder>  
 </aw:PurchaseOrders>  
 ```  
-  
-## See also
-
-- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+ 

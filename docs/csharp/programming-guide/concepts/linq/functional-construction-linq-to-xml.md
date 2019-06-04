@@ -64,6 +64,3 @@ Console.WriteLine(xmlTree);
 </Root>  
 ```  
   
-## See also
-
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)

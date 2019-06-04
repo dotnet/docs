@@ -1,5 +1,4 @@
-- name: C# Operators
-  href: index.md
+- name: C# operators
   items:
   - name: Arithmetic operators
     href: arithmetic-operators.md
@@ -18,27 +17,27 @@
     displayName: ">, <, >=, <=, greater, less"
   - name: Member access operators
     href: member-access-operators.md
-    displayName: "., [], ?., ?[], (), indexer, null-conditional, invocation"
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
   - name: Pointer related operators
     href: pointer-related-operators.md
     displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
-  - name: () Operator
+  - name: () operator
     href: invocation-operator.md
-  - name: ":: Operator"
+  - name: ":: operator"
     href: namespace-alias-qualifer.md
-  - name: + Operator
+  - name: + and += operators
     href: addition-operator.md
-  - name: "- Operator"
+    displayName: string concatenation, delegate combination, event subscription
+  - name: "- and -= operators"
     href: subtraction-operator.md
-  - name: = Operator
+    displayName: delegate removal, event unsubscription
+  - name: = operator
     href: assignment-operator.md
-  - name: "?: Operator"
+  - name: "?: operator"
     href: conditional-operator.md
-  - name: += Operator
-    href: addition-assignment-operator.md
-  - name: -= Operator
-    href: subtraction-assignment-operator.md
-  - name: "?? Operator"
+  - name: "?? operator"
     href: null-coalescing-operator.md
-  - name: => Operator
+  - name: => operator
     href: lambda-operator.md
+  - name: true and false operators
+    href: true-false-operators.md

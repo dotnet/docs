@@ -26,7 +26,7 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
 > [!NOTE]
 >  The following steps are required to build the sample.  
   
-1. Open [!INCLUDE[fileExplorer](../../../includes/fileexplorer-md.md)] and navigate to the \CS subdirectory.  
+1. Open File Explorer and navigate to the \CS subdirectory.  
   
 2. Right-click the icon for the GenericsService subdirectory, and select **Sharing and Security**.  
   

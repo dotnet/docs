@@ -121,6 +121,7 @@ The following table shows the order of precedence of operators and other express
 |`let`|Nonassociative|
 |`function`, `fun`, `match`, `try`|Nonassociative|
 |`if`|Nonassociative|
+|`not`|Right|
 |`->`|Right|
 |`:=`|Right|
 |`,`|Nonassociative|

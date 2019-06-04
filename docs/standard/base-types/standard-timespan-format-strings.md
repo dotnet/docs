@@ -58,7 +58,7 @@ ms.author: "ronpet"
 |*ss*|The number of seconds, which ranges from "0" to "59".|  
 |*fffffff*|The optional fractional portion of a second.  Its value can range from "0000001" (one tick, or one ten-millionth of a second)  to "9999999" (9,999,999 ten-millionths of a second, or one second less one tick).|  
   
- Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
+ Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
   
 > [!NOTE]
 >  <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  

@@ -128,4 +128,4 @@ For further information check the article on [Team Development with Azure Dev Sp
 
 >[!div class="step-by-step"]
 >[Previous](resilient-high-availability-microservices.md)
->[Next](docker-application-development-process.md)
+>[Next](using-azure-service-fabric.md)

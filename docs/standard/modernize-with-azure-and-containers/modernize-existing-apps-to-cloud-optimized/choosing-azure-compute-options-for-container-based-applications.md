@@ -10,9 +10,9 @@ As you have noticed after reading the previous sections, Azure is an open cloud 
 As a *by-default* recommendation, the following is the main criteria recommended in this guidance:
 
 - **Single monolithic app:** Choose Azure App Service
-- **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS), Service Fabric (SF) or App Service if you have a single or few back-end services
+- **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS)or App Service if you have a single or few back-end services
 - **Linux microservices:** Choose AKS/Kubernetes
-- **Windows microservices:** Choose Service Fabric
+- **Windows microservices:** Choose Azure Web Apps for Containers
 - **Serverless functions & event handlers:** Choose Azure Functions
 - **Large-scale Batch:** Choose Azure Batch
 

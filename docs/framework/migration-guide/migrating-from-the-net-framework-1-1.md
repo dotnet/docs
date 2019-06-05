@@ -10,11 +10,11 @@ ms.author: "ronpet"
 ---
 # Migrating from the .NET Framework 1.1
 
-[!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system do not support the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)]. As a result, applications that target the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] will not run without modification on [!INCLUDE[win7](../../../includes/win7-md.md)] or later operating system versions. This topic discusses the steps required to run an application that targets the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] under [!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system. For more information about the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)] and [!INCLUDE[win8](../../../includes/win8-md.md)], see [Running .NET Framework 1.1 Apps on Windows 8 and later versions](../../../docs/framework/install/run-net-framework-1-1-apps.md).
+[!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system do not support the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)]. As a result, applications that target the .NET Framework 1.1 will not run without modification on [!INCLUDE[win7](../../../includes/win7-md.md)] or later operating system versions. This topic discusses the steps required to run an application that targets the .NET Framework 1.1 under [!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system. For more information about the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)] and [!INCLUDE[win8](../../../includes/win8-md.md)], see [Running .NET Framework 1.1 Apps on Windows 8 and later versions](../../../docs/framework/install/run-net-framework-1-1-apps.md).
 
 ## Retargeting or Recompiling
 
-There are two ways to get an application that was compiled using the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] to run on [!INCLUDE[win7](../../../includes/win7-md.md)] or a later Windows operating system:
+There are two ways to get an application that was compiled using the .NET Framework 1.1 to run on [!INCLUDE[win7](../../../includes/win7-md.md)] or a later Windows operating system:
 
 - You can retarget the application to run under .NET Framework 4 and later versions. Retargeting requires that you add a [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element to the application's configuration file that allows it to run under .NET Framework 4 and later versions. Such a configuration file takes the following form:
 
@@ -30,15 +30,15 @@ There are two ways to get an application that was compiled using the [!INCLUDE[n
 
 Regardless of whether you prefer to recompile or retarget your application, you must determine whether your application is affected by any changes introduced in later versions of the .NET Framework. These changes are of two kinds:
 
-- Breaking changes that occurred between the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and later versions of the .NET Framework.
+- Breaking changes that occurred between the .NET Framework 1.1 and later versions of the .NET Framework.
 
-- Types and type members that have been marked as deprecated or obsolete between the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and later versions of the .NET Framework.
+- Types and type members that have been marked as deprecated or obsolete between the .NET Framework 1.1 and later versions of the .NET Framework.
 
-Whether you retarget your application or recompile it, you should review both the breaking changes and the obsolete types and members for each version of the .NET Framework that was released after [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].
+Whether you retarget your application or recompile it, you should review both the breaking changes and the obsolete types and members for each version of the .NET Framework that was released after .NET Framework 1.1.
 
 ## Breaking Changes
 
-When a breaking change occurs, depending on the specific change, a workaround may be available both for retargeted and recompiled applications. In some cases, you can add a child element to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element of your application's configuration file to restore the previous behavior. For example, the following configuration file restores the string sorting and comparison behavior used in the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and can be used either with a retargeted or a recompiled application.
+When a breaking change occurs, depending on the specific change, a workaround may be available both for retargeted and recompiled applications. In some cases, you can add a child element to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element of your application's configuration file to restore the previous behavior. For example, the following configuration file restores the string sorting and comparison behavior used in the .NET Framework 1.1 and can be used either with a retargeted or a recompiled application.
 
 ```xml
 <configuration>
@@ -52,7 +52,7 @@ However, in some cases, you may have to modify your source code and recompile yo
 
 To assess the impact of possible breaking changes on your application, you must review the following lists of changes:
 
-- [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)].
+- [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets .NET Framework 1.1.
 
 - [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the .NET Framework 3.5 and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].
 

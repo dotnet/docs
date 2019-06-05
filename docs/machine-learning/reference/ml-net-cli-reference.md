@@ -223,7 +223,7 @@ In order to use the `--label-column-name` argument, you need to have a header in
 
 `--max-exploration-time | -x` (string)
 
-By default, the maximum exploration time is 10 seconds.
+By default, the maximum exploration time is 30 minutes.
 
 This argument sets the maximum time (in seconds) for the process to explore multiple trainers and configurations. The configured time may be exceeded if the provided time is too short (say 2 seconds) for a single iteration. In this case, the actual time is the required time to produce one model configuration in a single iteration.
 

@@ -44,11 +44,11 @@ The code generator to run. The following generators are available:
 
 | Generator | Operation |
 | ----------------- | ------------ | 
-| area      | Generates an [Area](/aspnet/core/mvc/controllers/areas) |
+| area      | [Scaffolds an Area](/aspnet/core/mvc/controllers/areas) |
   controller| [Scaffolds a controller](/aspnet/core/tutorials/first-mvc-app/adding-model) |
   identity  | [Scaffolds Identity](/aspnet/core/security/authentication/scaffold-identity) |
   razorpage | [Scaffolds Razor Pages](/aspnet/core/tutorials/razor-pages/model) |
-  view      | Generates a [view](/aspnet/core/mvc/views/overview) |
+  view      | [Scaffolds a view](/aspnet/core/mvc/views/overview) |
 
 ## Options
 
@@ -127,7 +127,7 @@ The following table lists options unique to  `aspnet-codegenerator controller`:
 | ----------------- | ------------ |
 | --controllerName or -name | Name of the controller. |
 | --useAsyncActions or -async | Generate async controller actions. |
-| --noViews or -nv | Generate [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) views. |
+| --noViews or -nv | Generate **no** views. |
 | --restWithNoViews or -api  | Generate a Controller with REST style API. `noViews` is assumed and any view related options are ignored. |
 | --readWriteActions or -actions | Generate controller with read/write actions without a model. |
 
@@ -141,11 +141,7 @@ See [Scaffold the movie model](/aspnet/core/tutorials/razor-pages/model) for an 
 
 ### Razorpage
 
-See [Scaffold Identity](/aspnet/core/security/authentication/scaffold-identity)
-
 <a name="rp"></a>
-
-### Razorpage options
 
 Razor Pages can be individually scaffolded by specifying the name of the new page and the template to use. The supported templates are:
 
@@ -189,3 +185,7 @@ dotnet aspnet-codegenerator razorpage -h
 ```
 
 See [Scaffold the movie model](/aspnet/core/tutorials/razor-pages/model) for an example of `dotnet aspnet-codegenerator razorpage`.
+
+### Identity
+
+See [Scaffold Identity](/aspnet/core/security/authentication/scaffold-identity)

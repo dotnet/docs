@@ -7,6 +7,8 @@ ms.custom: "seodec18"
 ---
 # .NET Core Global Tools overview
 
+https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2#distributed-sql-server-cache
+
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 A .NET Core Global Tool is a special NuGet package that contains a console application. A Global Tool can be installed on your machine on a default location that is included in the PATH environment variable or on a custom location.
@@ -120,15 +122,28 @@ dotnet --list-runtimes
 
 Contact the author of the Global Tool and see if they can recompile and republish their tool package to NuGet with an updated version number. Once they have updated the package on NuGet, you can update your copy.
 
-The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, such as:
+The .NET Core CLI tries to add the default locations to the `PATH` environment variable on its first usage. `PATH` isn't updated on macOS if you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
 
-* If you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable.
+<!-- 
+However, there are a couple of scenarios where the location might not be added to PATH automatically, such as:
+
+* If you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable. 
 * On macOS, if you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
 * On Linux, you need to edit the shell environment file to configure the PATH.
+Linux is no longer a problem when installed on bash with .deb and .rpm - see https://dotnet.microsoft.com/download/linux-package-manager/ubuntu16-04/sdk-current
+-->
 
-## Global tools in the .NET Core SDK
+## Tools in the .NET Core SDK
 
-The .NET Core SDK contains the `dotnet-aspnet-codegenerator` global tool that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
+The .NET Core SDK contains the following tools:
+
+* [dev-certs](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.2&tabs=visual-studio#trust) : Must be installed.
+* [ef](https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet)
+* [sql-cache](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2#distributed-sql-server-cache)
+* [user-secrets](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-2.2&tabs=windows)
+* [dotnet-watch](https://docs.microsoft.com/en-us/aspnet/core/tutorials/dotnet-watch?view=aspnetcore-2.2)
+
+[dotnet-aspnet-codegenerator](dotnet-aspnet-codegenerator.md) is global tool that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
 
 ```console
 dotnet tool install --global dotnet-aspnet-codegenerator

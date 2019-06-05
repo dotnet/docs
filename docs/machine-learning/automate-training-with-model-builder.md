@@ -12,6 +12,9 @@ Model Builder automatically trains custom ML.NET machine learning models that ca
 
 Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
 
+> [!NOTE]
+> Model Builder is currently in Preview.
+
 Once the optimal model is selected, Model Builder generates code to add the model to your application.
 
 Model Builder is a graphical Visual Studio extension. 

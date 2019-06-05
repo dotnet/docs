@@ -7,8 +7,6 @@ ms.custom: "seodec18"
 ---
 # .NET Core Global Tools overview
 
-https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2#distributed-sql-server-cache
-
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
 A .NET Core Global Tool is a special NuGet package that contains a console application. A Global Tool can be installed on your machine on a default location that is included in the PATH environment variable or on a custom location.
@@ -137,11 +135,11 @@ Linux is no longer a problem when installed on bash with .deb and .rpm - see htt
 
 The .NET Core SDK contains the following tools:
 
-* [dev-certs](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.2&tabs=visual-studio#trust) : Must be installed.
-* [ef](https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet)
-* [sql-cache](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-2.2#distributed-sql-server-cache)
-* [user-secrets](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-2.2&tabs=windows)
-* [dotnet-watch](https://docs.microsoft.com/en-us/aspnet/core/tutorials/dotnet-watch?view=aspnetcore-2.2)
+* [dev-certs](/aspnet/core/security/enforcing-ssl#trust) : Must be installed.
+* [ef](/ef/core/miscellaneous/cli/dotnet)
+* [sql-cache](/aspnet/core/performance/caching/distributed#distributed-sql-server-cache)
+* [user-secrets](/aspnet/core/security/app-secrets)
+* [dotnet-watch](/aspnet/core/tutorials/dotnet-watch)
 
 [dotnet-aspnet-codegenerator](dotnet-aspnet-codegenerator.md) is global tool that can be installed. For example, the following command installs the ASP.NET Core scaffolding tool:
 

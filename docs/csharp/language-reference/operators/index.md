@@ -91,7 +91,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [true operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
 
-[false operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
+[false operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `false` to indicate that an operand is definitely false.
 
 ## Multiplicative operators
 

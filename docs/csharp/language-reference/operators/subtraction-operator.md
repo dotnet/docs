@@ -25,12 +25,22 @@ For information about the arithmetic `-` operator, see the [Unary plus and minus
 For operands of the same [delegate](../keywords/delegate.md) type, the `-` operator returns a delegate instance that is calculated as follows:
 
 - If both operands are non-null and the invocation list of the second operand is a proper contiguous sublist of the invocation list of the first operand, the result of the operation is a new invocation list that is obtained by removing the second operand's entries from the invocation list of the first operand. If the second operand's list matches multiple contiguous sublists in the first operand's list, only the right-most matching sublist is removed. If removal results in an empty list, the result is `null`.
-- If the invocation list of the second operand is not a proper contiguous sublist of the invocation list of the first operand, the result of the operation is the first operand.
+
+  [!code-csharp-interactive[delegate removal](~/samples/csharp/language-reference/operators/SubtractionOperator.cs#DelegateRemoval)]
+
+- If the invocation list of the second operand is not a proper contiguous sublist of the invocation list of the first operand, the result of the operation is the first operand. For example, removing a delegate that is not part of the multicast delegate does nothing and results in the unchanged multicast delegate.
+
+  [!code-csharp-interactive[delegate removal with no effect](~/samples/csharp/language-reference/operators/SubtractionOperator.cs#DelegateRemovalNoChange)]
+
+  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) are not equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharplang/spec/expressions.md#delegate-equality-operators) section of the [C# language specification](../language-specification/index.md).
+
 - If the first operand is `null`, the result of the operation is `null`. If the second operand is `null`, the result of the operation is the first operand.
 
-The following example shows how the `-` operation performs delegate removal:
+  [!code-csharp-interactive[delegate removal and null](~/samples/csharp/language-reference/operators/SubtractionOperator.cs#DelegateRemovalAndNull)]
 
-[!code-csharp-interactive[delegate removal](~/samples/csharp/language-reference/operators/SubtractionOperator.cs#DelegateRemoval)]
+To combine delegates, use the [`+` operator](addition-operator.md#delegate-combination).
+
+For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
 
 ## Subtraction assignment operator -=
 

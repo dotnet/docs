@@ -34,7 +34,7 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
   
  In WPF and targeting .NET Framework 4, you can use XAML 2009 features together with `x:TypeArguments`, but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features.  
   
- Custom workflows in Windows Workflow Foundation for [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] do not support generic XAML usage.  
+ Custom workflows in Windows Workflow Foundation for .NET Framework 3.5 do not support generic XAML usage.  
   
 ## See also
 

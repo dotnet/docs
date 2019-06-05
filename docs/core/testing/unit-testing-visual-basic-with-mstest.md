@@ -104,7 +104,7 @@ Namespace PrimeService.Tests
         Sub ReturnFalseGivenValueOf1()
             Dim result As Boolean = _primeService.IsPrime(1)
 
-            Assert.False(result, "1 should not be prime")
+            Assert.IsFalse(result, "1 should not be prime")
         End Sub
 
     End Class

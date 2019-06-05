@@ -8,19 +8,19 @@ ms.custom: overview
 ---
 # What is Model Builder & how does it work?
 
-Model Builder is a user interface that runs in Visual Studio. Model Builder automatically trains custom ML.NET machine learning models that can be deployed in your application. 
-
-You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
+Model Builder automatically trains custom ML.NET machine learning models that can be deployed in your .NET application. You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
 
 Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
 
 Once the optimal model is selected, Model Builder generates code to add the model to your application.
 
-**Video or animated gif of the model builder interface**
+Model Builder is a graphical Visual Studio extension. 
+
+![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
 
 ## Scenarios
 
-You can bring many different scenarios to Model Builder, for it to generate a machine learning model for your application.
+You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
 A scenario is a description of the type of prediction you want to make on your data. For example: predict future product sales volume based on historical sales data.
 
@@ -50,7 +50,7 @@ For the house-price prediction scenario, the features could be:
 
 The label is the historical house price for that row of square footage, bedroom, and bathroom values and zip code. 
 
-**Diagram**
+![Table showing rows and columns of house price data with features consisting of size rooms zip code and price label](media/model-builder-data.png)
 
 The data you provide must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
 

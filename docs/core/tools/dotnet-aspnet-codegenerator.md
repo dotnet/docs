@@ -78,7 +78,7 @@ Prints out a short help for the command.
 
 `--no-build`
 
-Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
+Doesn't build the project before running. It also implicitly sets the `--no-restore` flag.
 
 `-p|--project <PATH>`
 
@@ -98,10 +98,8 @@ The following sections detail the options available for the supported generators
 
 ### Area options
 
-<!-- Review: I ran the following command in a Razor Pages project
-I was expecting Areas\AreaNameToGenerate\Pages
-Should I say this is intended for MVC projects and not RP projects
--->
+This tool is intended for ASP.NET Core web projects with controllers and views. It's not intended for Razor Pages apps.
+
 Usage: `dotnet aspnet-codegenerator area AreaNameToGenerate`
 
 The preceding command generates the following folders:

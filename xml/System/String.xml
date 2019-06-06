@@ -4275,17 +4275,31 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/download/
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.String.Copy%2A> method returns a <xref:System.String> object that has the same value as the original string but represents a different object reference. It differs from an assignment operation, which assigns an existing string reference to an additional object variable. The example illustrates the difference.  
+## Remarks
+
+The `Copy` method returns a <xref:System.String> object that has the same value as the original string but represents a different object reference. It differs from an assignment operation, which assigns an existing string reference to an additional object variable.
+
+> [!IMPORTANT]
+>  Starting with .NET Core 3.0, this method is obsolete. However, we do not recommend its use in any .NET implementation. In particular, because of changes in string interning in .NET Core 3.0, in some cases the `Copy` method will not create a new string but will simply return a reference to an existing interned string.   
+
+Depending on Why you want to call the `Copy` method, there are a number of alternatives:
+
+- If you want a different string instance to use in an operation that modifies the string, use the original string instance. Because strings are immutable, the string operation creates a new string instance, and the original string remains unaffected. In this case, you should not assign the new string reference to the original string variable. The following example provides an illustration.
+
+  [!code-csharp[Performing a string operation](~/samples/snippets/csharp/api/system/string/copy/program.cs#1)]
+  [!code-vb[Performing a string operation](~/samples/snippets/visualbasic/api/system/string/copy/program.vb#1)]  
   
-   
-  
-## Examples  
- The following example creates two string objects with different values. When it calls the <xref:System.String.Copy%2A> method to assign the first value to the second string, the output indicates that the strings represent different object references although their values are now equal. On the other hand, when the first string is assigned to the second string, the two strings have identical values because they represent the same object reference.  
-  
- [!code-csharp[System.String.Copy#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.copy/cs/copy1.cs#1)]
- [!code-vb[System.String.Copy#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.copy/vb/copy1.vb#1)]  
-  
+   In this case, calling the `Copy` method to create a new string before calling the <xref:System.String.Substring%2A> method unnecessarily creates a new string instance. 
+
+- If you want to create a mutable buffer with the same contents as the original string, call the <xref:System.String.ToCharArray%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.%23ctor(System.String)?displayProperty=nameWithType> constructor. For example:
+
+  [!code-csharp[Performing a string operation](~/samples/snippets/csharp/api/system/string/copy/program.cs#2)]
+  [!code-vb[Performing a string operation](~/samples/snippets/visualbasic/api/system/string/copy/program.vb#2)]  
+
+- If you want to create a mutable copy of the string so that you can use unsafe code to modify the string contents, use <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A?displayProperty=nameWithType> method. The following example uses the <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A?displayProperty=nameWithType> method to get a pointer to the location of an copied string in unmanaged memory, increments the Unicode code point of each character in the string by one, and copies the resulting string back to a managed string.
+
+  [!code-csharp[Performing a string operation](~/samples/snippets/csharp/api/system/string/copy/program.cs#3)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">

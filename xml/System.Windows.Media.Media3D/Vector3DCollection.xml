@@ -69,7 +69,7 @@
  *oneOrMoreVector3Ds*  
  One or more <xref:System.Windows.Media.Media3D.Vector3D> objects, with each set of values delimited by commas and/or one or more spaces:  
   
- <xref:System.Windows.Media.Media3D.Vector3D> *[delimiter* <xref:System.Windows.Media.Media3D.Vector3D> *]\**  
+ <xref:System.Windows.Media.Media3D.Vector3D>_[delimiter_<xref:System.Windows.Media.Media3D.Vector3D>_]\*_  
   
  For example, `"0,0,5 100,100,150 200,100,75"` and `"0,0,5,100,100,150,200,100,75"` are both valid.  
   

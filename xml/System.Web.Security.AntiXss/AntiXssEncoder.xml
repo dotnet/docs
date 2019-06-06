@@ -142,32 +142,32 @@
 |Character(s)|Description|  
 |--------------------|-----------------|  
 |A-Z|Uppercase Latin alphabetic characters|  
-||a-z|Lowercase Latin alphabetic characters|  
+|a-z|Lowercase Latin alphabetic characters|  
 |0-9|Numbers|  
-|!|Exclamation mark|  
-|#|Number sign, hash|  
-|$|Dollar sign|  
-|%|Percent sign|  
+|\!|Exclamation mark|  
+|\#|Number sign, hash|  
+|\$|Dollar sign|  
+|\%|Percent sign|  
 |( )|Parentheses|  
-|*|Asterisk|  
-|+|Plus sign|  
-|,|Comma|  
-|-|Hyphen, minus|  
-|.|Period, dot, full stop|  
-|/|Slash|  
-|:|Colon|  
-|;|Semicolon|  
-|=|Equals sign|  
-|?|Question mark|  
-|@|Commercial at-sign|  
-|[ ]|Square brackets|  
-|&#92;|Backslash|  
-|^|Caret|  
-|_|Underscore|  
+|\*|Asterisk|  
+|\+|Plus sign|  
+|\,|Comma|  
+|\-|Hyphen, minus|  
+|\.|Period, dot, full stop|  
+|\/|Slash|  
+|\:|Colon|  
+|\;|Semicolon|  
+|\=|Equals sign|  
+|\?|Question mark|  
+|\@|Commercial at-sign|  
+|\[ \]|Square brackets|  
+|\\ |Backslash|  
+|\^|Caret|  
+|\_|Underscore|  
 |\`|Grave accent|  
-|{ }|Braces, curly brackets|  
-|&#124;|Vertical line|  
-|~|Tilde|  
+|\{ \}|Braces, curly brackets|  
+|\||Vertical line|  
+|\~|Tilde|  
 |0x00A1 - 0x00AC|Special characters between 0x00A1 (161 decimal) and 0x00AC (172 decimal) from the Unicode [C1 Controls and Latin-1 Supplement](https://www.unicode.org/charts/PDF/U0080.pdf) character range.|  
 |0x00AE - 0x00FF|Special characters between 0x00AE (174 decimal) and 0x00FF (255 decimal) from the Unicode [C1 Controls and Latin-1 Supplement](https://www.unicode.org/charts/PDF/U0080.pdf) character range.|  
 |0x0100 - 0x017F|Characters between 0x0100 (256 decimal) and 0x017F (383 decimal). (The Unicode [Latin-Extended-A](https://www.unicode.org/charts/PDF/U0100.pdf) character range.)|
@@ -178,7 +178,7 @@
   
  The following table lists examples of inputs and the corresponding encoded outputs.  
   
-|||  
+|Input examples| Encoded outputs|  
 |-|-|  
 |`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
 |`<script>alert('XSS Attack!');</script>`|`&lt;script&gt;alert(&#39;XSS Attack!&#39;);&lt;/script&gt;`|  

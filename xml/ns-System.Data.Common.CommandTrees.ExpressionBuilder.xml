@@ -5,16 +5,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Common.CommandTrees.ExpressionBuilder> API is used to create expressions, which are represented by <xref:System.Data.Common.CommandTrees.DbExpression> objects. The command tree API provided by the <xref:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder> class has the following characteristics:  
-  
--   Functional. <xref:System.Data.Common.CommandTrees.DbExpression> objects are constructed using functional patterns that provide a natural flow of construction.  
-  
--   Loosely-coupled. A <xref:System.Data.Common.CommandTrees.DbExpression> object is not bound to any specific command tree and can be used in any context where type agreement is satisfied.  
-  
--   Immutable. The API consists entirely of immutable types; mutability may be simulated by substituting new values while rebuilding an expression tree.  
-  
--  
-  
+
+The <xref:System.Data.Common.CommandTrees.ExpressionBuilder> API is used to create expressions, which are represented by <xref:System.Data.Common.CommandTrees.DbExpression> objects. The command tree API provided by the <xref:System.Data.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder> class has the following characteristics:  
+
+- Functional: <xref:System.Data.Common.CommandTrees.DbExpression> objects are constructed using functional patterns that provide a natural flow of construction.
+
+- Loosely-coupled: A <xref:System.Data.Common.CommandTrees.DbExpression> object is not bound to any specific command tree and can be used in any context where type agreement is satisfied.
+
+- Immutable: The API consists entirely of immutable types; mutability may be simulated by substituting new values while rebuilding an expression tree.
+
  ]]></format>
     </remarks>
   </Docs>

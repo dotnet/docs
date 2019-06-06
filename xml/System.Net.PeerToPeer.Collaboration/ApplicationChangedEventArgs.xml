@@ -32,8 +32,6 @@
   
 -   A peer moves to a different IP address on the network  
   
--  
-  
  Every class that uses the <xref:System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs> class requires a <xref:System.Security.Permissions.PermissionState> of Unrestricted. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> object is constructed.  
   
  ]]></format>

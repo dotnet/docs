@@ -46,11 +46,10 @@
   
 4.  Create an instance of <xref:System.ServiceModel.Channels.TransportSecurityBindingElement> and add it to the collection.  
   
-5.  Add any additional custom binding elements to the collection, such as <xref:System.ServiceModel.Channels.TcpTransportBindingElement>.  
+5.  Add any additional custom binding elements to the collection, such as <xref:System.ServiceModel.Channels.TcpTransportBindingElement>.
   
-6.  
-  
- **Note** Once an instance of this object is created, you should treat the properties of its base class, <xref:System.ServiceModel.Channels.SecurityBindingElement>, as immutable. Calling `set` on some properties may have unpredictable effects: the binding may behave as if the property retained its old value, with a run-time failure being the only indication of an issue. Two properties known to behave this way are <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> and <xref:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion%2A>. There may be other properties for which this is true.  
+> [!NOTE]
+> Once an instance of this object is created, you should treat the properties of its base class, <xref:System.ServiceModel.Channels.SecurityBindingElement>, as immutable. Calling `set` on some properties may have unpredictable effects: the binding may behave as if the property retained its old value, with a run-time failure being the only indication of an issue. Two properties known to behave this way are <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> and <xref:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion%2A>. There may be other properties for which this is true.  
   
  ]]></format>
     </remarks>

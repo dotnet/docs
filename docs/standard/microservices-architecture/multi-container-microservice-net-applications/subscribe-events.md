@@ -374,12 +374,6 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 - **Reliability Guide** (RabbitMQ documentation) \
     [https://www.rabbitmq.com/reliability.html\#consumer](https://www.rabbitmq.com/reliability.html#consumer)
 
-- **Azure Service Bus. Brokered Messaging: Duplicate Detection** \
-    <https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25>
-
-- **Reliability Guide** (RabbitMQ documentation) \
-    [https://www.rabbitmq.com/reliability.html\#consumer](https://www.rabbitmq.com/reliability.html%23consumer)
-
 > [!div class="step-by-step"]
 > [Previous](rabbitmq-event-bus-development-test-environment.md)
 > [Next](test-aspnet-core-services-web-apps.md)

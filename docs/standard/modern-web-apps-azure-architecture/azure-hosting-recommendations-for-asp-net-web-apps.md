@@ -43,7 +43,7 @@ Azure App Service is the best choice for most web apps. Deployment and managemen
 
 ![Recommended migration strategy for on-premises .NET apps to Azure App Service](./media/image1-6.png)
 
-In most cases, moving from a locally-hosted ASP.NET app to an App Service Web App is a straightforward process. Little or no modification should be required of the app itself, and it can quickly start to take advantage of the many features that Azure App Service Web Apps offer.
+In most cases, moving from a locally hosted ASP.NET app to an App Service Web App is a straightforward process. Little or no modification should be required of the app itself, and it can quickly start to take advantage of the many features that Azure App Service Web Apps offer.
 
 In addition to apps that are not optimized for the cloud, Azure App Service Web Apps are an excellent solution for many simple monolithic (non-distributed) applications, such as many ASP.NET Core apps. In this approach, the architecture is basic and simple to understand and manage:
 

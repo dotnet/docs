@@ -152,28 +152,7 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating what type of node change event is occurring.</summary>
-        <value>An <see langword="XmlNodeChangedAction" /> value describing the node change event.  
-  
- <list type="table"><listheader><term> XmlNodeChangedAction Value  
-  
- </term><description> Description  
-  
- </description></listheader><item><term> Insert  
-  
- </term><description> A node has been or will be inserted.  
-  
- </description></item><item><term> Remove  
-  
- </term><description> A node has been or will be removed.  
-  
- </description></item><item><term> Change  
-  
- </term><description> A node has been or will be changed.  
-  
- </description></item></list><block subset="none" type="note"><para>  
- The <see langword="Action" /> value does not differentiate between when the event occurred (before or after). You can create separate event handlers to handle both instances.  
-  
-</para></block></value>
+        <value>One of the enumeration values that describes the node change event. The <see langword="Action" /> value does not differentiate between when the event occurred (before or after). You can create separate event handlers to handle both instances.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

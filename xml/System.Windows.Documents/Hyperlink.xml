@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Documents.Hyperlink> implements the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property that you set with the <xref:System.Uri> of the content that should be navigated to when the Hyperlink is clicked. <xref:System.Windows.Documents.Hyperlink> navigation can only occur, however, if either the direct or indirect parent of a <xref:System.Windows.Documents.Hyperlink> is a navigation host, including <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** topic in [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
+ <xref:System.Windows.Documents.Hyperlink> implements the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property that you set with the <xref:System.Uri> of the content that should be navigated to when the Hyperlink is clicked. <xref:System.Windows.Documents.Hyperlink> navigation can only occur, however, if either the direct or indirect parent of a <xref:System.Windows.Documents.Hyperlink> is a navigation host, including <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or any browser that can host XBAPs (which includes Internet Explorer 6 and later versions, and Firefox 2.0+). For more information, see the **Navigation Hosts** topic in [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
   
  <xref:System.Windows.Documents.Hyperlink> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.Hyperlink> content model.  
   
@@ -569,10 +569,10 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to navigate to when the <see cref="T:System.Windows.Documents.Hyperlink" /> is activated.</summary>
-        <value>The <see cref="T:System.Uri" /> to navigate to when the <see cref="T:System.Windows.Documents.Hyperlink" /> is activated. The default is <see langword="null" />.  
+        <summary>Gets or sets a URI to navigate to when the <see cref="T:System.Windows.Documents.Hyperlink" /> is activated.</summary>
+        <value>The URI to navigate to when the <see cref="T:System.Windows.Documents.Hyperlink" /> is activated. The default is <see langword="null" />.  
   
- <block subset="none" type="note"><para><see cref="T:System.Windows.Documents.Hyperlink" /> can navigate to the value of the <see cref="P:System.Windows.Documents.Hyperlink.NavigateUri" /> property only if either the direct or indirect parent of a <see cref="T:System.Windows.Documents.Hyperlink" /> is a navigation host, including <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** section in [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
+ <block subset="none" type="note"><para><see cref="T:System.Windows.Documents.Hyperlink" /> can navigate to the value of the <see cref="P:System.Windows.Documents.Hyperlink.NavigateUri" /> property only if either the direct or indirect parent of a <see cref="T:System.Windows.Documents.Hyperlink" /> is a navigation host, including <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />, or any browser that can host XBAPs (which includes Internet Explorer 6 and later versions, and Firefox 2.0+). For more information, see the Navigation Hosts section in <see href="~/docs/framework/wpf/app-development/navigation-overview.md">Navigation Overview</see>.  
   
 </para></block></value>
         <remarks>

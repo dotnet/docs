@@ -258,18 +258,12 @@
   
 -   Class constructor - The class constructor is called every time a SOAP extension is instantiated and is typically used to initialize member variables.  
   
--   <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> - <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A>, however, is called just once, the first time a SOAP request is made to an XML Web services method. If a custom attribute is applied to the XML Web service method, the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> method is invoked. This allows the SOAP extension to interrogate the <xref:System.Web.Services.Protocols.LogicalMethodInfo> of an XML Web service method for prototype information or to access extension-specific data passed by a class deriving from <xref:System.Web.Services.Protocols.SoapExtensionAttribute>. The return value is cached by ASP.NET and passed into subsequent <xref:System.Web.Services.Protocols.SoapExtension.Initialize%2A> methods. Therefore, initialization done in <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> is encapsulated essentially into a one-time performance hit.  
+-   <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> - This method is called just once, the first time a SOAP request is made to an XML Web services method. If a custom attribute is applied to the XML Web service method, the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> method is invoked. This allows the SOAP extension to interrogate the <xref:System.Web.Services.Protocols.LogicalMethodInfo> of an XML Web service method for prototype information or to access extension-specific data passed by a class deriving from <xref:System.Web.Services.Protocols.SoapExtensionAttribute>. The return value is cached by ASP.NET and passed into subsequent <xref:System.Web.Services.Protocols.SoapExtension.Initialize%2A> methods. Therefore, initialization done in <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> is encapsulated essentially into a one-time performance hit.  
   
--   <xref:System.Web.Services.Protocols.SoapExtension.Initialize%2A> - <xref:System.Web.Services.Protocols.SoapExtension.Initialize%2A> is called every time a SOAP request is made to an XML Web service method, but has an advantage over the class constructor, in that the <xref:System.Object> initialized in <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> is passed to it.  
-  
--  
+-   <xref:System.Web.Services.Protocols.SoapExtension.Initialize%2A> - This method is called every time a SOAP request is made to an XML Web service method, but has an advantage over the class constructor, in that the <xref:System.Object> initialized in <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> is passed to it.
   
 > [!NOTE]
 >  You can also add a SOAP extension without deriving from <xref:System.Web.Services.Protocols.SoapExtensionAttribute> by using the [\<soapExtensionTypes> Element](https://msdn.microsoft.com/library/7a373a98-6d82-4f8d-a6fc-2996da3fd54c) in a configuration file. For details, see [\<soapExtensionTypes> Element](https://msdn.microsoft.com/library/7a373a98-6d82-4f8d-a6fc-2996da3fd54c) and [SOAP Message Modification Using SOAP Extensions](https://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
-  
--  
-  
-   
   
 ## Examples  
  The following example demonstrates how you can use the data cached during the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> method.  

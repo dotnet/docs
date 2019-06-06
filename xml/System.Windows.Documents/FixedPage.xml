@@ -364,18 +364,14 @@
 -   <xref:System.Windows.Documents.FixedPage.ContentBox%2A>.<xref:System.Windows.Rect.Bottom%2A> must be greater than or equal to (<xref:System.Windows.Documents.FixedPage.ContentBox%2A>.<xref:System.Windows.Rect.Top%2A>+1).  
   
 -   For rules about the relative sizes of the <xref:System.Windows.Documents.FixedPage.ContentBox%2A> and the <xref:System.Windows.Documents.FixedPage.BleedBox%2A>, see the topic <xref:System.Windows.Documents.FixedPage.BleedBox%2A?displayProperty=nameWithType>.  
-  
--  
-  
+ 
 <a name="dependencyPropertyInfo_ContentBox"></a>   
 ## Dependency Property Information  
   
 |||  
 |-|-|  
-|-   Identifier field|<xref:System.Windows.Documents.FixedPage.ContentBoxProperty>|  
-|Metadata properties set to `true`|-   None|  
-  
--  
+|Identifier field|<xref:System.Windows.Documents.FixedPage.ContentBoxProperty>|  
+|Metadata properties set to `true`|None|
   
  ]]></format>
         </remarks>

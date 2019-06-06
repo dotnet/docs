@@ -181,7 +181,7 @@ An automatically generated dual interface might be appropriate in rare cases; ho
 
 ### Ensure that all COM event notifications are late-bound.
 
-By default, COM type information is embedded directly into managed assemblies, which eliminates the need for primary interop assemblies (PIAs). However, one of the limitations of embedded type information is that it does not supported delivery of COM event notifications by early-bound vtable calls, but only supports late-bound `IDispatch::Invoke` calls.
+By default, COM type information is embedded directly into managed assemblies, which eliminates the need for primary interop assemblies (PIAs). However, one of the limitations of embedded type information is that it does not support delivery of COM event notifications by early-bound vtable calls, but only supports late-bound `IDispatch::Invoke` calls.
 
 If your application requires early-bound calls to COM event interface methods, you can set the **Embed Interop Types** property in Visual Studio to `true`, or include the following element in your project file:
 

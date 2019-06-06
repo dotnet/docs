@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET for Apache Spark
 description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows.
-ms.date: 05/06/2019
+ms.date: 06/07/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
@@ -27,13 +27,14 @@ Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` f
 2. Install [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with the latest updates. You can use Community, Professional, or Enterprise. The Community version is free.
 
    Choose the following minimum requirements during installation:
-       * .NET desktop development
-           * All required components
-           * .NET Framework 4.6.1 Development Tools
-       * .NET Core cross-platform development
-           * All required components
+      * .NET desktop development
+          * All required components
+          * .NET Framework 4.6.1 Development Tools
+      * .NET Core cross-platform development
+          * All required components
 
 3. Install [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+
     * Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine.
     * Use the PowerShell command `java -version` to verify the installation.
 
@@ -59,9 +60,9 @@ Double check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 ## Download the Microsoft.Spark.Worker release
 
-1. Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub Releases page to your local machine. For example, you might download it to the path,`c:\bin\Microsoft.Spark.Worker\`.
+1. Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub Releases page to your local machine. For example, you might download it to the path, `c:\bin\Microsoft.Spark.Worker\`.
 
-2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DotnetWorkerPath` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**, for example `c:\bin\Microsoft.Spark.Worker`.
+2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DotnetWorkerPath` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
 
 ## Clone the .NET for Apache Spark GitHub repo
 

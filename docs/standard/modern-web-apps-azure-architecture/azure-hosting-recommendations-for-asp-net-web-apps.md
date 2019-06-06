@@ -27,7 +27,7 @@ Of these, App Service Web Apps is the recommended approach for most scenarios, i
 
 ### App Service Web Apps
 
-App Service Web Apps offers a fully-managed platform optimized for hosting web applications. It's a platform as a service (PaaS) offering that lets you focus on your business logic, while Azure takes care of the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
+App Service Web Apps offers a fully managed platform optimized for hosting web applications. It's a platform as a service (PaaS) offering that lets you focus on your business logic, while Azure takes care of the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
 
 - DevOps optimization (continuous integration and delivery, multiple environments, A/B testing, scripting support).
 

@@ -64,7 +64,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
   
 - The inference derives from a complex expression.  
   
-    ```  
+    ```vb  
     Dim aString As String = "Act "  
     ' Not valid.  
     ' Dim label = New With {Key aString & "IV"}  

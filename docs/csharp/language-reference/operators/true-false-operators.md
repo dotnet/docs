@@ -20,7 +20,7 @@ A type with the defined `true` operator can be the type of a result of a control
 
 The following example presents the type that defines both `true` and `false` operators. Moreover, it overloads the logical AND operator `&` in such a way that the operator `&&` also can be evaluated for the operands of that type.
 
-[!code-csharp-interactive[true and false operators example](~/samples/snippets/csharp/keywords/TrueFalseOperatorsExample.cs)]
+[!code-csharp-interactive[true and false operators example](~/samples/csharp/language-reference/operators/TrueFalseOperators.cs)]
 
 Notice the short-circuiting behavior of the `&&` operator. When the `GetFuelLaunchStatus` method returns `LaunchStatus.Red`, the second operand of the `&&` operator is not evaluated. That is because `LaunchStatus.Red` is definitely false. Then the result of the logical AND doesn't depend on the value of the second operand. The output of the example is as follows:
 

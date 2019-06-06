@@ -35,25 +35,25 @@ The [`==` and `!=` operators](equality-operators.md) check if their operands are
 
 The `<` operator returns `true` if its first operand is less than its second operand, `false` otherwise:
 
-[!code-csharp-interactive[less than example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#Less)]
+[!code-csharp-interactive[less than example](~/samples/csharp/language-reference/operators/ComparisonOperators.cs#Less)]
 
 ## Greater than operator >
 
 The `>` operator returns `true` if its first operand is greater than its second operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#Greater)]
+[!code-csharp-interactive[greater than example](~/samples/csharp/language-reference/operators/ComparisonOperators.cs#Greater)]
 
 ## Less than or equal operator \<=
 
 The `<=` operator returns `true` if its first operand is less than or equal to its second operand, `false` otherwise:
 
-[!code-csharp-interactive[less than or equal example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#LessOrEqual)]
+[!code-csharp-interactive[less than or equal example](~/samples/csharp/language-reference/operators/ComparisonOperators.cs#LessOrEqual)]
 
 ## Greater than or equal operator >=
 
 The `>=` operator returns `true` if its first operand is greater than or equal to its second operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than or equal example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#GreaterOrEqual)]
+[!code-csharp-interactive[greater than or equal example](~/samples/csharp/language-reference/operators/ComparisonOperators.cs#GreaterOrEqual)]
 
 ## Operator overloadability
 

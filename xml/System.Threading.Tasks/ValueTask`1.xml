@@ -45,6 +45,17 @@
       <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
+A <xref:System.Threading.Tasks.ValueTask%601> instance may either be awaited or converted to a <xref:System.Threading.Tasks.Task%601> using <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A>. A <xref:System.Threading.Tasks.ValueTask%601> instance may only be awaited once, and consumers may not call <xref:System.Threading.Tasks.ValueTask%601.GetAwaiter> until the instance has completed. If these limitations are unacceptable, convert the <xref:System.Threading.Tasks.ValueTask%601> to a <xref:System.Threading.Tasks.Task%601> by calling <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A>.
+
+The following operations should never be performed on a <xref:System.Threading.Tasks.ValueTask%601> instance:
+
+  - Awaiting the instance multiple times.
+  - Calling <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A> multiple times.
+  - Using `.Result` or `.GetAwaiter().GetResult()` when the operation hasn't yet completed, or using them multiple times.
+  - Using more than one of these techniques to consume the instance.
+
+If you do any of the above, the results are undefined.
+
 A method may return an instance of this value type when it's likely that the result of its operation will be available synchronously, and when it's expected to be invoked so frequently that the cost of allocating a new <xref:System.Threading.Tasks.Task%601> for each call will be prohibitive.   
 
 There are tradeoffs to using a <xref:System.Threading.Tasks.ValueTask%601> instead of a <xref:System.Threading.Tasks.Task%601>. For example, while a <xref:System.Threading.Tasks.ValueTask%601> can help avoid an allocation in the case where the successful result is available synchronously, it also contains two fields, whereas a <xref:System.Threading.Tasks.Task%601> as a reference type is a single field. This means that a method call returns two fields worth of data instead of one, which is more data to copy. It also means, that if a method that returns a <xref:System.Threading.Tasks.ValueTask%601> is awaited within an async method, the state machine for that async method will be larger, because it must store a struct containing two fields instead of a single reference.   
@@ -661,11 +672,10 @@ As such, the default choice for any asynchronous method should be to return a <x
         <remarks>
           <format type="text/markdown"><![CDATA[  
 ## Remarks  
- If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property returns it directly.
+This property may only be accessed once, and only after this <xref:System.Threading.Tasks.ValueTask%601> has completed.
 
- If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has faulted or was cancelled, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
-  
- ]]></format>
+If this <xref:System.Threading.Tasks.ValueTask%601> has completed successfully, this property returns the resulting value. If this <xref:System.Threading.Tasks.ValueTask%601> has faulted, this property raises an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>.
+]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -39,10 +39,12 @@ Starting with .NET Core 2.1, the <xref:System.Net.Http.SocketsHttpHandler?displa
   ```csharp
   AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
   ```
+
   ```vb
   AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", False)
   ```
-By defining the `System.Net.Http.UseSocketsHttpHandler` switch in the *.netcore.runtimeconfig.json* configuration file:
+
+- By defining the `System.Net.Http.UseSocketsHttpHandler` switch in the *.netcore.runtimeconfig.json* configuration file:
 
   ```json
   "runtimeOptions": {

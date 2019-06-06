@@ -48,7 +48,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An              <xref:System.ArgumentOutOfRangeException> exception is thrown when a method is invoked and at least one of the arguments passed to the method is not `null` and contains an invalid value that is not a member of the set of values expected for the argument. The <xref:System.ArgumentException.ParamName%2A> property identifies the invalid argument, and the <xref:System.ArgumentOutOfRangeException.ActualValue%2A> property, if a value is present, identifies the invalid value.  
+ An <xref:System.ArgumentOutOfRangeException> exception is thrown when a method is invoked and at least one of the arguments passed to the method is not `null` and contains an invalid value that is not a member of the set of values expected for the argument. The <xref:System.ArgumentException.ParamName%2A> property identifies the invalid argument, and the <xref:System.ArgumentOutOfRangeException.ActualValue%2A> property, if a value is present, identifies the invalid value.  
   
  Typically, an <xref:System.ArgumentOutOfRangeException> results from developer error. Instead of handling the exception in a `try`/`catch` block, you should eliminate the cause of the exception or, if the argument is returned by a method call or input by the user before being passed to the method that throws the exception, you should validate arguments before passing them to the method.  
   
@@ -60,7 +60,7 @@
   
 -   String manipulation methods in the <xref:System.String> class.  
   
- The conditions in which an <xref:System.ArgumentOutOfRangeException> exception             is thrown include the following:  
+ The conditions in which an <xref:System.ArgumentOutOfRangeException> exception is thrown include the following:  
   
  You are retrieving the member of a collection by its index number, and the index number is invalid.  
  This is the most common cause of an <xref:System.ArgumentOutOfRangeException> exception.   Typically, the index number is invalid for one of three reasons:  
@@ -132,9 +132,7 @@
      [!code-csharp[System.ArgumentOutOfRangeException#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoFind2.cs#18)]
      [!code-vb[System.ArgumentOutOfRangeException#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoFind2.vb#18)]  
   
--  
-  
- You've attempted to extract a substring that is outside the range of the current string.  
+-   You've attempted to extract a substring that is outside the range of the current string.  
  The methods that extract substrings all require that you specify the starting position of the substring and, for substrings that do not continue to the end of the string, the number of characters in the substring. Note that this is not the *index* of the last character in the substring.  
   
  An <xref:System.ArgumentOutOfRangeException> exception is typically thrown in this case because you've incorrectly calculated the number of characters in the substring.  If you are using a search method like <xref:System.String.IndexOf%2A?displayProperty=nameWithType> to identify the starting and ending positions of a substring:  

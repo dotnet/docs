@@ -4555,7 +4555,7 @@ By default, the <xref:System.Math.Round%2A> method uses the rounding to nearest 
 |<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 
-## Rounding and precision  
+### Rounding and precision  
 
 In order to determine whether a rounding operation involves a midpoint value, the <xref:System.Math.Round%2A> method multiplies the original value to be rounded by 10<sup>n</sup>, where *n* is the desired number of fractional digits in the return value, and then determines whether the remaining fractional portion of the value is greater than or equal to .5. This is a slight variation on a test for equality, and as discussed in the "Testing for Equality" section of the <xref:System.Double> reference topic, tests for equality with floating-point values are problematic because of the floating-point format's issues with binary representation and precision. This means that any fractional portion of a number that is slightly less than .5 (because of a loss of precision) will not be rounded upward.  
 
@@ -4583,7 +4583,7 @@ Problems of precision in rounding midpoint values are most likely to arise in th
      [!code-csharp-interactive[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
      [!code-vb[System.Math.Round.Overload#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision2.vb#8)]  
   
-### Rounding and single-precision floating-point values  
+#### Rounding and single-precision floating-point values  
 
 The <xref:System.Math.Round%2A> method includes overloads that accept arguments of type <xref:System.Decimal> and <xref:System.Double>. There are no methods that round values of type <xref:System.Single>. If you pass a <xref:System.Single> value to one of the overloads of the <xref:System.Math.Round%2A> method, it is cast (in C#) or converted (in Visual Basic) to a <xref:System.Double>, and the corresponding <xref:System.Math.Round%2A> overload with a <xref:System.Double> parameter is called. Although this is a widening conversion, it often involves a loss of precision, as the following example illustrates. When a <xref:System.Single> value of 16.325 is passed to the <xref:System.Math.Round%2A> method and rounded to two decimal places using the rounding to nearest convention, the result is 16.33 and not the expected result of 16.32.  
   
@@ -4594,7 +4594,7 @@ This unexpected result is due to a loss of precision in the conversion of the <x
   
 In many cases, as the example illustrates, the loss of precision can be minimized or eliminated by casting or converting the <xref:System.Single> value to a <xref:System.Decimal>. Note that, because this is a narrowing conversion, it requires using a cast operator or calling a conversion method.  
   
-### Examples 
+## Examples 
 
 In addition to the examples in the [Remarks](#remarks-round) section, this article includes examples that illustrate the following overloads of the `Math.Round` method:
 

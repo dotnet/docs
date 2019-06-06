@@ -20,22 +20,22 @@
 ## Remarks  
  This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. For more information about workflow versioning, workflow identity, and dynamic update, see the following topics:  
   
--  [Workflow Versioning](~/docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md)  
+- [Workflow Versioning](~/docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md)  
     Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
   
- - [Dynamic Update](~/docs/framework/windows-workflow-foundation/dynamic-update.md)  
+- [Dynamic Update](~/docs/framework/windows-workflow-foundation/dynamic-update.md)  
     Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
   
- - [Using WorkflowApplication Identity and Versioning](~/docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md)  
+- [Using WorkflowApplication Identity and Versioning](~/docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md)  
     Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
   
- - [Side by Side Versioning in WorkflowServiceHost](~/docs/framework/wcf/feature-details/side-by-side-versioning-in-workflowservicehost.md)  
+- [Side by Side Versioning in WorkflowServiceHost](~/docs/framework/wcf/feature-details/side-by-side-versioning-in-workflowservicehost.md)  
     Describes how to host multiple versions of a workflow on a single endpoint.  
   
- - [How to: Host Multiple Versions of a Workflow Side-by-Side](~/docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md)  
+- [How to: Host Multiple Versions of a Workflow Side-by-Side](~/docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md)  
     This step in the [Getting Started Tutorial](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
   
- - [How to: Update the Definition of a Running Workflow Instance](~/docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md)  
+- [How to: Update the Definition of a Running Workflow Instance](~/docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md)  
     This step in the [Getting Started Tutorial](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md) demonstrates updating persisted workflow instances to use a new workflow definition.  
   
  ]]></format>

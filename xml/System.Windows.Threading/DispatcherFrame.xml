@@ -99,15 +99,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Threading.DispatcherFrame> typically fall into two categories:  
-  
--   Long running, general purpose frames, that exit only when instructed to.  These frames should exit when they are requested.  
-  
--   Short running, very specific frames that exit when an important criteria is met.  These frames may consider not exiting when they are requested in favor of waiting for their exit criteria to be met.  These frames should have a time-out associated with them.  
-  
--  
-  
--   At application shutdown, all frames are request to exit.  
+
+<xref:System.Windows.Threading.DispatcherFrame> typically fall into two categories:
+
+- Long running, general purpose frames, that exit only when instructed to. These frames should exit when they are requested.
+
+- Short running, very specific frames that exit when an important criteria is met. These frames may consider not exiting when they are requested in favor of waiting for their exit criteria to be met.  These frames should have a time-out associated with them.
+
+At application shutdown, all frames are requested to exit.  
   
  ]]></format>
         </remarks>

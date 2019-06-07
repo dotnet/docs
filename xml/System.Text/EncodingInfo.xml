@@ -322,7 +322,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name registered with the Internet Assigned Numbers Authority (IANA) for the encoding.</summary>
-        <value>The IANA name for the encoding. For more information about the IANA, see www.iana.org.</value>
+        <value>The IANA name for the encoding.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -331,7 +331,7 @@
   
  The <xref:System.Text.Encoding.GetEncodings%2A> method gets a complete list of supported encodings, uniquely distinguished by code page. If your application retrieves encodings using the <xref:System.Text.EncodingInfo.Name%2A> property, note that some duplicate encodings are retrieved. For more about handling these duplicates, see the description of <xref:System.Text.Encoding.GetEncodings%2A>.  
   
-   
+ For a list of supported names, see [Character Sets](https://www.iana.org/assignments/character-sets/character-sets.xhtml) on the [IANA website](https://www.iana.org).
   
 ## Examples  
  The following code example retrieves the different names for each encoding and compares them with the equivalent <xref:System.Text.Encoding> names.  

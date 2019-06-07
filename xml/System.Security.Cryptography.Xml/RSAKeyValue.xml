@@ -33,7 +33,7 @@
   
  If a key is not explicitly supplied to the constructor, a new <xref:System.Security.Cryptography.RSA> key pair is randomly generated.  
   
- For more information about the `<RSAKeyValue>` element, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<RSAKeyValue>` element, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -209,7 +209,7 @@ Based upon [The RSAKeyValue Element](https://www.w3.org/TR/2002/REC-xmldsig-core
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.RSAKeyValue.Key%2A> property represents the public key to add to an XML digital signature using the `<Modulus>` subelement and the `<Exponent>` subelement of the `<RSAKeyValue>` element.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).
 
           ]]></format>
         </remarks>

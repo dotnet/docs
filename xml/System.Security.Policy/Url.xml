@@ -43,9 +43,9 @@
 ## Remarks  
  The presence of <xref:System.Security.Policy.Url> evidence produces a <xref:System.Security.Permissions.UrlIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.UrlIdentityPermission>, the <xref:System.Security.Permissions.UrlIdentityPermission> that corresponds to the <xref:System.Security.Policy.Url> evidence is compared to the demanded permission.  
   
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
+ The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, `http://www.fourthcoffee.com/process/grind.htm` is a complete URL.  
   
- URLs can be matched exactly or by a wildcard in the final position. For example, http://www.fourthcoffee.com/process/* is a wildcard URL.  
+ URLs can be matched exactly or by a wildcard in the final position. For example, `http://www.fourthcoffee.com/process/*` is a wildcard URL.  
   
  ]]></format>
     </remarks>

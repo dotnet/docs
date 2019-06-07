@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Reference> object represents the <`reference`> element of an XML digital signature defined by the XML digital signature specification.  
+ The <xref:System.Security.Cryptography.Xml.Reference> object represents the `<reference>` element of an XML digital signature defined by the XML digital signature specification.  
   
  Use the <xref:System.Security.Cryptography.Xml.Reference> object to specify the following information:  
   
@@ -41,7 +41,7 @@
   
 -   A unique identifier used to reference the current `<reference>` element.  This value is optional.  
   
- For more information about the <`reference`> element, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<reference>` element, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -223,7 +223,7 @@
   
  Transforms are applied in the order in which they were added. If no transforms are specified, the minimum required transforms are added automatically.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -275,11 +275,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Reference.DigestMethod%2A> property uses a URI string to represent the <`DigestMethod`> element of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.Reference.DigestMethod%2A> property uses a URI string to represent the `<DigestMethod>` element of an XML digital signature.  
   
  The digest method is the algorithm used to hash the <xref:System.Security.Cryptography.Xml.Reference>. The default algorithm is <xref:System.Security.Cryptography.SHA1>.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -315,13 +315,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Reference.DigestValue%2A> property uses an array of bytes to represent the <`DigestValue`> element of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.Reference.DigestValue%2A> property uses an array of bytes to represent the `<DigestValue>` element of an XML digital signature.  
   
  The <xref:System.Security.Cryptography.Xml.Reference.DigestValue%2A> property contains the Base 64 encoded value of the digest of the object described by the <xref:System.Security.Cryptography.Xml.Reference.Uri%2A> property.  
   
  The <xref:System.Security.Cryptography.Xml.Reference.DigestValue%2A> property is automatically populated with the appropriate value whenever you make a call to <xref:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature%2A>.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -471,11 +471,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Reference.TransformChain%2A> property represents the <`Transform`> element and associated subelements of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.Reference.TransformChain%2A> property represents the `<Transform>` element and associated subelements of an XML digital signature.  
   
  The transform chain is an ordered list of transforms. The output of these transforms constitutes the input to the hash algorithm specified in the <xref:System.Security.Cryptography.Xml.Reference.DigestMethod%2A> property.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -540,7 +540,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Reference.Uri%2A> property uses a string Uniform Resource Identifier (URI) to represent the <`URI`> element of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.Reference.Uri%2A> property uses a string Uniform Resource Identifier (URI) to represent the `<URI>` element of an XML digital signature.  
   
  Use the <xref:System.Security.Cryptography.Xml.Reference.Uri%2A> property to specify the location of a document to sign, and to specify which element of the current XML document to sign or to indicate that the entire document should be signed.  
   

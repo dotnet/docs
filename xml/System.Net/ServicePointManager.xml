@@ -43,7 +43,7 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Net.ServicePoint> object for connections to the URI www.contoso.com.  
+ The following code example creates a <xref:System.Net.ServicePoint> object for connections to the URI `www.contoso.com`.  
   
  [!code-cpp[Classic ServicePoint Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic ServicePoint Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ServicePoint Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic ServicePoint Example/CS/source.cs#1)]
@@ -996,7 +996,7 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
 ## Remarks  
 An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
   
-When custom validation is not used, the certificate name is compared with the host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.html", the default behavior is for the client to check the certificate against www.contoso.com.  
+When custom validation is not used, the certificate name is compared with the host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of `"https://www.contoso.com/default.html"`, the default behavior is for the client to check the certificate against `www.contoso.com`.  
 
 Despite being a multicast delegate, only the value returned from the last-executed event handler is considered authoritative. 
 In other words, you can attach multiple delegates, and they all get a callback from <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A>. 

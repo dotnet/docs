@@ -27,13 +27,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.XmlDsigXPathTransform> class allows you to address an XML document using an XSLT transformation.  This class uses XSLT to transform XML nodes into other XML nodes that you want to sign or encrypt.  
+ The <xref:System.Security.Cryptography.Xml.XmlDsigXPathTransform> class allows you to address an XML document using an XSLT transformation. This class uses XSLT to transform XML nodes into other XML nodes that you want to sign or encrypt.  
   
  Use the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class to sign or encrypt specific parts of an XML document using an XSLT transformation.  
   
  The Uniform Resource Identifier (URI) that describes the <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform> class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigXsltTransformUrl> field.  
   
- For more information about the XSLT transform, see Section 6.6.5 of the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/.  
+ For more information about the XSLT transform, see Section 6.6.5 of the W3C [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   

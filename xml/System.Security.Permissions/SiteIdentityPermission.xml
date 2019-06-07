@@ -36,9 +36,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using this class, it is possible to ensure that callers are from a specific Web site. Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, www.fourthcoffee.com in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ Using this class, it is possible to ensure that callers are from a specific Web site. Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, `www.fourthcoffee.com` in the URL `http://www.fourthcoffee.com/process/grind.htm`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.  
   
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name string *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match. The site name string * will match any site, but will not match code that has no site evidence.  
+ Sites can be matched exactly, or by a wildcard ("\*") prefix at the dot delimiter. For example, the site name string `*.fourthcoffee.com` matches `fourthcoffee.com` as well as `www.fourthcoffee.com`. Without a wildcard, the site name must be a precise match. The site name string \* will match any site, but will not match code that has no site evidence.  
   
 > [!IMPORTANT]
 >  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], identity permissions are not used.  
@@ -142,9 +142,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, www.fourthcoffee.com in the URL http://www.fourthcoffee.com/process/grind.htm/. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, `www.fourthcoffee.com` in the URL `http://www.fourthcoffee.com/process/grind.htm/`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.  
   
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name string *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match.  
+ Sites can be matched exactly, or by a wildcard ("\*") prefix at the dot delimiter. For example, the site name string `*.fourthcoffee.com` matches `fourthcoffee.com` as well as `www.fourthcoffee.com`. Without a wildcard, the site name must be a precise match.  
   
  ]]></format>
         </remarks>
@@ -263,7 +263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The intersection of two permissions is a permission that describes the sites they both describe in common. Only a demand that passes both original permissions will pass the intersection. For example, the intersection of a permission that represents access to www.fourthcoffee.com and one that represents access to *.fourthcoffee.com is a permission that represents access to www.fourthcoffee.com.  
+ The intersection of two permissions is a permission that describes the sites they both describe in common. Only a demand that passes both original permissions will pass the intersection. For example, the intersection of a permission that represents access to `www.fourthcoffee.com` and one that represents access to `*.fourthcoffee.com` is a permission that represents access to `www.fourthcoffee.com`.  
   
  The intersection of two identical site identity permissions is the same permission. The intersection of two different (not wildcard) expressions is an empty permission. The intersection of a wildcard expression and a matching site is the site. The intersection of two wildcard expressions that match is the longer, more specific of the two expressions.  
   
@@ -314,14 +314,14 @@
   
 |Current Permission|Specified Permission|IsSubsetOf|  
 |------------------------|--------------------------|----------------|  
-|www.fourthcoffee.com|www.fourthcoffee.com|`true`|  
-|www.fourthcoffee.com|www.tailspintoys.com|`false`|  
-|www.fourthcoffee.com|*.fourthcoffee.com|`true`|  
-|www.fourthcoffee.com|*.com|`true`|  
-|*.fourthcoffee.com|www.fourthcoffee.com|`false`|  
-|*.fourthcoffee.com|*.fourthcoffee.com|`true`|  
-|*.fourthcoffee.com|*.com|`true`|  
-|Anything except `None`|*|`true`|  
+|`www.fourthcoffee.com`|`www.fourthcoffee.com`|`true`|  
+|`www.fourthcoffee.com`|`www.tailspintoys.com`|`false`|  
+|`www.fourthcoffee.com`|`*.fourthcoffee.com`|`true`|  
+|`www.fourthcoffee.com`|`*.com`|`true`|  
+|`*.fourthcoffee.com`|`www.fourthcoffee.com`|`false`|  
+|`*.fourthcoffee.com`|`*.fourthcoffee.com`|`true`|  
+|`*.fourthcoffee.com`|`*.com`|`true`|  
+|Anything except `None`|`*`|`true`|  
 |`None`|Anything|`true`|  
   
  ]]></format>
@@ -360,9 +360,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, www.fourthcoffee.com in the URL http://www.fourthcoffee.com/process/grind.htm/. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, `www.fourthcoffee.com` in the URL `http://www.fourthcoffee.com/process/grind.htm/`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.  
   
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name string *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match. The site name string * will match any site, but will not match code that has no site evidence.  
+ Sites can be matched exactly, or by a wildcard ("\*") prefix at the dot delimiter. For example, the site name string `*.fourthcoffee.com` matches `fourthcoffee.com` as well as `www.fourthcoffee.com`. Without a wildcard, the site name must be a precise match. The site name string \* will match any site, but will not match code that has no site evidence.  
   
  ]]></format>
         </remarks>
@@ -435,9 +435,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The result of a call to <xref:System.Security.Permissions.SiteIdentityPermission.Union%2A> is a permission that represents all the sites represented by both the current permission and the specified permission. Any demand that passes either permission passes their union. For example, the union of a permission that represents access to www.fourthcoffee.com and one that represents access to *.fourthcoffee.com is a permission that represents access to *.fourthcoffee.com.  
+ The result of a call to <xref:System.Security.Permissions.SiteIdentityPermission.Union%2A> is a permission that represents all the sites represented by both the current permission and the specified permission. Any demand that passes either permission passes their union. For example, the union of a permission that represents access to `www.fourthcoffee.com` and one that represents access to `*.fourthcoffee.com` is a permission that represents access to `*.fourthcoffee.com`.  
   
- The union of a permission and `null` is the permission that is not `null`. The union of a permission and a subset of that permission is the permission that contains the subset. Any other combination results in an <xref:System.ArgumentException> being thrown. For example, the union of the site identity www.fourthcoffee.com and the site identity www.tailspintoys.com results in an exception because neither is a subset of the other.  
+ The union of a permission and `null` is the permission that is not `null`. The union of a permission and a subset of that permission is the permission that contains the subset. Any other combination results in an <xref:System.ArgumentException> being thrown. For example, the union of the site identity `www.fourthcoffee.com` and the site identity `www.tailspintoys.com` results in an exception because neither is a subset of the other.  
   
  ]]></format>
         </remarks>

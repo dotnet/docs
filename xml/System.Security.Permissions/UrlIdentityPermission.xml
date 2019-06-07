@@ -36,9 +36,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, http://www.fourthcoffee.com/process/grind.htm is a complete URL.  
+ The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file. For example, `http://www.fourthcoffee.com/process/grind.htm` is a complete URL.  
   
- URLs can be matched exactly or by a wildcard in the final position, for example: http://www.fourthcoffee.com/process/*. URLs can also contain a wildcard ("\*") prefix at the dot delimiter. For example, the URL name string http://www.fourthcoffee.com/process/grind.htm/ is a subset of http://\*.fourthcoffee.com/process/grind.htm/ and http://\*.com/process/grind.htm/.  
+ URLs can be matched exactly or by a wildcard in the final position, for example: `http://www.fourthcoffee.com/process/*`. URLs can also contain a wildcard ("\*") prefix at the dot delimiter. For example, the URL name string `http://www.fourthcoffee.com/process/grind.htm/` is a subset of `http://*.fourthcoffee.com/process/grind.htm/` and `http://*.com/process/grind.htm/`.  
   
 > [!IMPORTANT]
 >  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], identity permissions are not used.  
@@ -151,9 +151,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file, for example: http://www.fourthcoffee.com/process/grind.htm/.  
+ The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file, for example: `http://www.fourthcoffee.com/process/grind.htm/`.  
   
- URLs can be matched exactly or by a wildcard in the final position, for example: http://www.fourthcoffee.com/process/*. URLs can also contain a wildcard ("\*") prefix at the dot delimiter. For example, the URL name string http://www.fourthcoffee.com/process/grind.htm/ is a subset of http://\*.fourthcoffee.com/process/grind.htm/ and http://\*.com/process/grind.htm/.  
+ URLs can be matched exactly or by a wildcard in the final position, for example: `http://www.fourthcoffee.com/process/*`. URLs can also contain a wildcard ("\*") prefix at the dot delimiter. For example, the URL name string `http://www.fourthcoffee.com/process/grind.htm/` is a subset of `http://*.fourthcoffee.com/process/grind.htm/` and `http://*.com/process/grind.htm/`.  
   
 > [!NOTE]
 >  Starting with the .NET Framework version 2.0, for performance reasons, an invalid URL does not cause an argument exception at the time the new class instance is created.  The argument exception will occur when one of the set operations (Union, Intersect, or IsSubsetOf) is executed.  A demand on the permission causes <xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A> to be called by the security infrastructure. The demand will fail because of the argument exception, resulting in a <xref:System.Security.SecurityException> being thrown. In this case, the original <xref:System.ArgumentException> exception will not be seen.  
@@ -286,9 +286,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The intersection of two permissions is a permission that describes access to the URLs they both describe in common. Only a demand that passes both original permissions will pass the intersection. For example, the intersection of a permission that represents access to http://www.fourthcoffee.com/process/grind.htm and a permission that represents access to http://www.fourthcoffee.com/* is a permission that represents access to http://www.fourthcoffee.com/process/grind.htm.  
+ The intersection of two permissions is a permission that describes access to the URLs they both describe in common. Only a demand that passes both original permissions will pass the intersection. For example, the intersection of a permission that represents access to `http://www.fourthcoffee.com/process/grind.htm` and a permission that represents access to `http://www.fourthcoffee.com/*` is a permission that represents access to `http://www.fourthcoffee.com/process/grind.htm`.  
   
- <xref:System.Security.Permissions.UrlIdentityPermission> supports set operations (<xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A>, <xref:System.Security.Permissions.UrlIdentityPermission.Intersect%2A>, and <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A>) only when the current permission is equal to the specified permission object or when one of the permissions uses the wildcard operator ("*").  
+ <xref:System.Security.Permissions.UrlIdentityPermission> supports set operations (<xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A>, <xref:System.Security.Permissions.UrlIdentityPermission.Intersect%2A>, and <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A>) only when the current permission is equal to the specified permission object or when one of the permissions uses the wildcard operator ("\*").  
   
  ]]></format>
         </remarks>
@@ -335,9 +335,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current permission is a subset of the specified permission if the current permission identifies access to a URL that is wholly contained by the specified permission. For example, a permission that represents access to http://www.fourthcoffee.com/process/grind.htm is a subset of a permission that represents access to http://www.fourthcoffee.com/*. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+ The current permission is a subset of the specified permission if the current permission identifies access to a URL that is wholly contained by the specified permission. For example, a permission that represents access to `http://www.fourthcoffee.com/process/grind.htm` is a subset of a permission that represents access to `http://www.fourthcoffee.com/*`. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
   
- <xref:System.Security.Permissions.UrlIdentityPermission> supports set operations (<xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A>, <xref:System.Security.Permissions.UrlIdentityPermission.Intersect%2A>, and <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A>) only when the current permission is equal to the specified permission or when one of the permissions uses the wildcard operator ("*").  
+ <xref:System.Security.Permissions.UrlIdentityPermission> supports set operations (<xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A>, <xref:System.Security.Permissions.UrlIdentityPermission.Intersect%2A>, and <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A>) only when the current permission is equal to the specified permission or when one of the permissions uses the wildcard operator ("\*").  
   
  ]]></format>
         </remarks>
@@ -416,7 +416,7 @@
 ## Remarks  
  The result of a call to the <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A> method is a permission that represents access to the URL as represented by the current permission, as well as access to the URL as represented by the specified permission.  
   
- The <xref:System.Security.Permissions.UrlIdentityPermission> class supports set operations <xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A>, <xref:System.Security.Permissions.UrlIdentityPermission.Intersect%2A>, and <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A>) only when the current permission is equal to the specified permission, or when one of the permissions uses the wildcard operator ("*") and one is a subset of the other.  
+ The <xref:System.Security.Permissions.UrlIdentityPermission> class supports set operations <xref:System.Security.Permissions.UrlIdentityPermission.IsSubsetOf%2A>, <xref:System.Security.Permissions.UrlIdentityPermission.Intersect%2A>, and <xref:System.Security.Permissions.UrlIdentityPermission.Union%2A>) only when the current permission is equal to the specified permission, or when one of the permissions uses the wildcard operator ("\*") and one is a subset of the other.  
   
  ]]></format>
         </remarks>
@@ -463,9 +463,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file, for example: http://www.fourthcoffee.com/process/grind.htm/.  
+ The complete URL is considered, including the protocol (HTTP, HTTPS, FTP) and the file, for example: `http://www.fourthcoffee.com/process/grind.htm/`.  
   
- URLs can be matched exactly or by a wildcard in the final position, for example: http://www.fourthcoffee.com/process/*.  
+ URLs can be matched exactly or by a wildcard in the final position, for example: `http://www.fourthcoffee.com/process/*`.  
   
  ]]></format>
         </remarks>

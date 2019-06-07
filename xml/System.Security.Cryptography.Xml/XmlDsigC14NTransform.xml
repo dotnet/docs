@@ -37,7 +37,7 @@
   
  You would only need to create a new instance of a canonicalization transform class for manually hashing an XML document or for using your own canonicalization algorithm.  
   
- For more information about the C14N transform, see Sections 6.5 and 6.6.1 of the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/. The canonicalization algorithm is defined in the W3C Canonical XML specification, which is available at www.w3.org/TR/xml-c14n.  
+ For more information about the C14N transform, see Sections 6.5 and 6.6.1 of the W3C [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/). The canonicalization algorithm is defined in the W3C [Canonical XML specification](https://www.w3.org/TR/xml-c14n).  
   
    
   

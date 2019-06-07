@@ -39,7 +39,7 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>Implement this interface when you are implementing custom evidence and need to determine if a store already exists. Serialized objects should not be used for comparisons in some instances, such as that of case sensitive strings. For example, www.MSN.com is equal to WWW.msn.com and will return a <see langword="true" /> when compared. To create an <see cref="T:System.IO.IsolatedStorage.INormalizeForIsolatedStorage" /> object, you need to implement the <see cref="M:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize" /> method.</para>
+      <para>Implement this interface when you are implementing custom evidence and need to determine if a store already exists. Serialized objects should not be used for comparisons in some instances, such as that of case sensitive strings. For example, `www.MSN.com` is equal to `WWW.msn.com` and will return a <see langword="true" /> when compared. To create an <see cref="T:System.IO.IsolatedStorage.INormalizeForIsolatedStorage" /> object, you need to implement the <see cref="M:System.IO.IsolatedStorage.INormalizeForIsolatedStorage.Normalize" /> method.</para>
     </block>
     <block subset="none" type="usage">
       <para>Call the methods of this interface to normalize the instance before making comparisons between an assembly's evidence and currently existing isolated stores.</para>

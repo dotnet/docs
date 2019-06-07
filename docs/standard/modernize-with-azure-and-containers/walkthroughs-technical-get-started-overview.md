@@ -284,7 +284,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-An simple containerized application using Windows Containers can easily be deployed to Azure App Service for Containers.
+A simple containerized application using Windows Containers can easily be deployed to Azure App Service for Containers. This is the recommended approach for most Windows Container-based applications.
 
 ### Goals
 

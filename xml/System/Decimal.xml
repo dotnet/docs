@@ -4444,8 +4444,8 @@
 |<xref:System.Globalization.NumberStyles.AllowThousands>|The *,* element.|  
 |<xref:System.Globalization.NumberStyles.AllowCurrencySymbol>|The *$* element.|  
 |<xref:System.Globalization.NumberStyles.Currency>|All. The `s` parameter cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the beginning or end of `s`, *sign* at the beginning of `s`, and the *.* symbol. The `s` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles.Number>|The `ws`, `sign`, *,*, and *.* elements.|  
+|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the beginning or end of `s`, *sign* at the beginning of `s`, and the `.` symbol. The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number>|The `ws`, `sign`, `,` and `.` elements.|  
 |<xref:System.Globalization.NumberStyles.Any>|All styles, except `s` cannot represent a hexadecimal number.|  
   
  The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>.  

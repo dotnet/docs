@@ -222,10 +222,6 @@
 > [!NOTE]
 >  For information about how to detect any of the non-character keys mentioned above, see the <xref:System.Windows.Forms.KeyEventArgs> class.  
   
--  
-  
-   
-  
 ## Examples  
  The following example creates a <xref:System.Windows.Forms.TextBox> control. The `keypressed` method uses the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property to check whether the ENTER key pressed. If the ENTER key is pressed, the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property is set to `true`, which indicates the event is handled.  
   

@@ -45,8 +45,7 @@
  You can use the <xref:System.Xml.XmlConvert.EncodeName%2A> method with the <xref:System.Xml.XmlWriter> class to ensure the names being written are valid XML names. The following C# code converts the name "Order Detail" into a valid XML name and writes the element `<Order_0x0020_Detail>My order</Order_0x0020_Detail>`.  
   
 ```csharp  
-writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");  
-  
+writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ```  
   
  The following <xref:System.Xml.XmlConvert> methods perform encoding and decoding.  
@@ -294,7 +293,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  The escape character is "\_". Any XML name character that does not conform to the [XML 1.0 spec (fourth edition) recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/) is escaped as \_xHHHH\_. The HHHH string stands for the four-digit hexadecimal UCS-2 code for the character in most significant bit first order. For example, the name Order Details is encoded as Order\_x0020\_Details.  
   
- The underscore character does not need to be escaped unless it is followed by a character sequence that together with the underscore can be misinterpreted as an escape sequence when decoding the name. For example, Order\_Details is not encoded, but Order\_x0020\_ is encoded as Order\_x005f\_x0020\_. No shortforms are allowed. For example, the forms _x20\_ and \_\_ are not generated.  
+ The underscore character does not need to be escaped unless it is followed by a character sequence that together with the underscore can be misinterpreted as an escape sequence when decoding the name. For example, Order\_Details is not encoded, but Order\_x0020\_ is encoded as Order\_x005f\_x0020\_. No shortforms are allowed. For example, the forms \_x20\_ and \_\_ are not generated.  
   
  This method guarantees the name is valid according to the XML specification. It allows colons in any position, which means the name may still be invalid according to the [W3C Namespace Specification](https://www.w3.org/TR/REC-xml-names/). To guarantee it is a valid namespace qualified name use <xref:System.Xml.XmlConvert.EncodeLocalName%2A> for the prefix and local name parts and join the result with a colon.  
   

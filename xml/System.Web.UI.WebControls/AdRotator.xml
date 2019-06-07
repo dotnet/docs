@@ -88,11 +88,11 @@
 |`Width`|The width of the image, in pixels (optional).|  
 |`AlternateText`|The text display in place of the image when the image specified by the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A> property is not available (optional).<br /><br /> In some browsers, this text also appears as a `ToolTip` for the advertisement.|  
 |`Keyword`|A category for the advertisement (for example, "computers") that you can filter by (optional).|  
-|`Impressions`|A number that indicates the importance of the ad in the schedule of rotation relative to the other ads in the file (optional).<br /><br /> The larger the number, the more often the ad is displayed. The total of all `<Impressions>` values in the XML file cannot exceed 2,047,999,999*.* If it does, the <xref:System.Web.UI.WebControls.AdRotator> control throws a run-time exception.|  
+|`Impressions`|A number that indicates the importance of the ad in the schedule of rotation relative to the other ads in the file (optional).<br /><br /> The larger the number, the more often the ad is displayed. The total of all `<Impressions>` values in the XML file cannot exceed 2,047,999,999. If it does, the <xref:System.Web.UI.WebControls.AdRotator> control throws a run-time exception.|  
   
  The following example shows the format for the XML advertisement file.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>  
@@ -172,7 +172,7 @@
   
  The following code example demonstrates the file format for an XML file that contains advertisement information for the previous example. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/image1.jpg</ImageUrl>  
@@ -292,7 +292,7 @@
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/image1.jpg</ImageUrl>  
@@ -418,7 +418,7 @@
   
  The following code example shows the file format of the XML advertisement file.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/image1.jpg</ImageUrl>  
@@ -489,7 +489,7 @@
   
  The following is the sample XML data for the previous example.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/ad1.gif</ImageUrl>  
@@ -620,7 +620,7 @@
   
  The following is the sample XML data for the previous example.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/ad1.gif</ImageUrl>  
@@ -708,7 +708,7 @@
   
  The following code example demonstrates how to specify a keyword for each advertisement in the XML advertisement file. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/image1.jpg</ImageUrl>  
@@ -778,7 +778,7 @@
   
  The following is the sample XML data for the previous example.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/ad1.gif</ImageUrl>  
@@ -854,7 +854,7 @@
   
  The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/image1.jpg</ImageUrl>  
@@ -1164,7 +1164,7 @@
   
  The following code example demonstrates the file format for an XML file that contains advertisement information. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
   
-```  
+```xml
 <Advertisements>  
   <Ad>  
     <ImageUrl>~/Images/image1.jpg</ImageUrl>  

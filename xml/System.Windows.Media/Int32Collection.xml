@@ -72,7 +72,7 @@
  *oneOrMoreKInt32Values*  
  One or more <xref:System.Int32> values, with each pair delimited by a single comma and/or one or more spaces:  
   
- <xref:System.Int32> *[delimiter* <xref:System.Int32> *]\**  
+ <xref:System.Int32>_[delimiter_<xref:System.Int32>_]\*_
   
  For example, `"5 10 43"` and `"5,10,43"` are both valid.  
   

@@ -3638,32 +3638,7 @@
       <Docs>
         <param name="PathName">Required. A string expression that specifies a file, directory, or folder name. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
         <summary>Returns a <see langword="FileAttribute" /> value that represents the attributes of a file, directory, or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileAttribute" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-        <returns>The value returned by <see langword="GetAttr" /> is the sum of the following enumeration values:  
-  
- <list type="table"><item><term> Value  
-  
- </term><description> Constant  
-  
- </description><description> Description  
-  
- </description></item><item><term><see langword="Normal" /></term><description><see langword="vbNormal" /></description><description> Normal.  
-  
- </description></item><item><term><see langword="ReadOnly" /></term><description><see langword="vbReadOnly" /></description><description> Read-only.  
-  
- </description></item><item><term><see langword="Hidden" /></term><description><see langword="vbHidden" /></description><description> Hidden.  
-  
- </description></item><item><term><see langword="System" /></term><description><see langword="vbSystem" /></description><description> System file.  
-  
- </description></item><item><term><see langword="Directory" /></term><description><see langword="vbDirectory" /></description><description> Directory or folder.  
-  
- </description></item><item><term><see langword="Archive" /></term><description><see langword="vbArchive" /></description><description> File has changed since last backup.  
-  
- </description></item><item><term><see langword="Alias" /></term><description><see langword="vbAlias" /></description><description> File has a different name.  
-  
- </description></item></list><block subset="none" type="note"><para>  
- These enumerations are specified by the Visual Basic language. The names can be used anywhere in your code in place of the actual values.  
-  
-</para></block></returns>
+        <returns>A bitwise combination of the enumeration values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

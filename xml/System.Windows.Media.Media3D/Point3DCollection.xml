@@ -80,7 +80,7 @@
  *oneOrMorePoint3Ds*  
  One or more <xref:System.Windows.Media.Media3D.Point3D> structures, with each set of values delimited by commas and/or one or more spaces.  
   
- <xref:System.Windows.Media.Media3D.Point3D>  *[delimiter* <xref:System.Windows.Media.Media3D.Point3D> *]\**  
+ <xref:System.Windows.Media.Media3D.Point3D>_[delimiter_<xref:System.Windows.Media.Media3D.Point3D>_]\*_
   
  For example, `"0,0,5 100,100,125 200,100,30"` and `"0,0,5,100,100,125,200,100,30"` are both valid.  
   

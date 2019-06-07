@@ -314,7 +314,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property determines whether an XML element name is qualified or unqualified. The <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property conforms to the 1999 World Wide Web Consortium (www.w3.org) document titled "Namespaces in XML."  
+ The <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property determines whether an XML element name is qualified or unqualified. The <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property conforms to the 1999 World Wide Web Consortium document titled [Namespaces in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/).
   
  If the <xref:System.Xml.Serialization.XmlAttributeAttribute.Namespace%2A> property is set to any value, attempting to set the <xref:System.Xml.Serialization.XmlElementAttribute.Form%2A> property to `XmlSchemaForm.Unqualified` throws an exception.  
   
@@ -395,7 +395,7 @@ attributeFormDefault="unqualified"... >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see the World Wide Web Consortium (www.w3.org) specification titled "XML Schema Part 1: Structures."  
+ The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see the World Wide Web Consortium specification titled [XML Schema Part 1: Structures](https://www.w3.org/TR/xmlschema-1/).
   
  If the <xref:System.Xml.Serialization.XmlArrayAttribute.IsNullable%2A> property is set to `true`, the `xsi:nil` attribute is generated for class members that have been set to `null`. For example, if you set a field named `MyStringArray` to `null`, the <xref:System.Xml.Serialization.XmlSerializer> generates the following XML code.  
   
@@ -468,7 +468,7 @@ attributeFormDefault="unqualified"... >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlArrayAttribute.Namespace%2A> property allows you to create qualified XML element names. The <xref:System.Xml.Serialization.XmlArrayAttribute.Namespace%2A> property conforms to the rules for creating an XML namespace as found in the 1999 World Wide Web Consortium (www.w3.org) document titled "Namespaces in XML."  
+ The <xref:System.Xml.Serialization.XmlArrayAttribute.Namespace%2A> property allows you to create qualified XML element names. The <xref:System.Xml.Serialization.XmlArrayAttribute.Namespace%2A> property conforms to the rules for creating an XML namespace as found in the 1999 World Wide Web Consortium document titled [Namespaces in XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/).
   
  To create namespaces that are associated with a prefix, you must create an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class that contains the namespaces and prefixes used in the XML document. As you set the namespace for each <xref:System.Xml.Serialization.XmlArrayAttribute>, it must match one of the namespaces in the <xref:System.Xml.Serialization.XmlSerializerNamespaces>. When the XML is generated, each array is correctly prefixed with the prefix associated with the specified namespace.  
   

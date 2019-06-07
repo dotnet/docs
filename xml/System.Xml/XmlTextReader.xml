@@ -2818,7 +2818,7 @@ abc<tag/>
 > [!NOTE]
 >  Starting with the .NET Framework 2.0, we recommend that you create <xref:System.Xml.XmlReader> instances by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method to take advantage of new functionality.  
   
- This property determines whether the reader supports the W3C Namespaces in XML recommendation located at www.w3.org/TR/REC-xml-names.  
+ This property determines whether the reader supports the W3C [Namespaces in XML](https://www.w3.org/TR/REC-xml-names) recommendation.  
   
  The `Namespaces` property cannot be set after a read operation has occurred.  
   

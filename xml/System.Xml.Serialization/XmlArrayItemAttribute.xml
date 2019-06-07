@@ -363,7 +363,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XML data type of the generated XML element.</summary>
-        <value>An XML schema definition (XSD) data type, as defined by the World Wide Web Consortium (www.w3.org) document "XML Schema Part 2: DataTypes".</value>
+        <value>An XML schema definition (XSD) data type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -380,7 +380,7 @@
 > [!NOTE]
 >  Passing binary data as an XML element is more efficient then passing it as an XML attribute.  
   
- For more information about XML Schema data types, see the World Wide Web Consortium (www.w3.org) document "XML Schema Part 2: Datatypes."  
+ For more information about XML Schema data types, see the World Wide Web Consortium document [XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/).  
   
 |XSD data type|.NET data type|  
 |-------------------|--------------------|  
@@ -550,7 +550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlAttributeAttribute.Form%2A> property determines whether an XML element name is qualified, based on the World Wide Web Consortium (www.w3.org) specification "Namespaces in XML."  
+ The <xref:System.Xml.Serialization.XmlAttributeAttribute.Form%2A> property determines whether an XML element name is qualified, based on the World Wide Web Consortium specification [Namespaces in XML](https://www.w3.org/TR/xml-names/).  
   
  If the <xref:System.Xml.Serialization.XmlAttributeAttribute.Namespace%2A> property is set to any value, attempting to set the <xref:System.Xml.Serialization.XmlElementAttribute.Form%2A> property to `XmlSchemaForm.Unqualified` throws an exception.  
   
@@ -623,7 +623,7 @@ attributeFormDefault="unqualified">
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see the World Wide Web Consortium (www.w3.org) specification titled "XML Schema Part 1: Structures."  
+ The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see the World Wide Web Consortium specification titled [XML Schema Part 1: Structures](https://www.w3.org/TR/xmlschema-1/).  
   
  If the <xref:System.Xml.Serialization.XmlArrayItemAttribute.IsNullable%2A> property is `true`, the `xsi:nil` attribute is generated for class members that have been set to `null`. For example, if you set a field named `MyStringArray` to `null`, the <xref:System.Xml.Serialization.XmlSerializer> generates the following XML code.  
   
@@ -696,7 +696,7 @@ attributeFormDefault="unqualified">
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlArrayItemAttribute.Namespace%2A> property conforms to the World Wide Web Consortium (www.w3.org) specification "Namespaces in XML."  
+ The <xref:System.Xml.Serialization.XmlArrayItemAttribute.Namespace%2A> property conforms to the World Wide Web Consortium specification [Namespaces in XML](https://www.w3.org/TR/xml-names/).  
   
  To create namespaces to use in the XML document and associated prefixes, you must create an <xref:System.Xml.Serialization.XmlSerializerNamespaces> that contains all the prefix and namespace pairs. The namespace you set for each <xref:System.Xml.Serialization.XmlArrayAttribute> must be contained in the <xref:System.Xml.Serialization.XmlSerializerNamespaces>. When the <xref:System.Xml.Serialization.XmlSerializer> generates the document, it correctly prefixes the element name for each array item.  
   

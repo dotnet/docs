@@ -53,7 +53,7 @@
   
  You can use the <xref:System.Xml.Serialization.XmlIncludeAttribute> to include derived classes in service description documents that are written in the Web Services Description Language (WSDL). For example, if a method returns an <xref:System.Object>, apply the <xref:System.Xml.Serialization.XmlIncludeAttribute> to the method and specify the actual types to return.  
   
- For more information on the WSDL, see "Web Services Description Language (WSDL) 1.1" at www.w3.org.  
+ For more information on the WSDL, see [Web Services Description Language (WSDL) 1.1](https://www.w3.org/TR/2001/NOTE-wsdl-20010315).  
   
    
   

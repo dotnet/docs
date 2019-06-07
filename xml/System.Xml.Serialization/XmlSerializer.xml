@@ -45,7 +45,7 @@
 ## Controlling Generated XML  
  To control the generated XML, you can apply special attributes to classes and members. For example, to specify a different XML element name, apply an <xref:System.Xml.Serialization.XmlElementAttribute> to a public field or property, and set the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> property. For a complete list of similar attributes, see [Attributes That Control XML Serialization](https://msdn.microsoft.com/library/414b820f-a696-4206-b576-2711d85490c7). You can also implement the <xref:System.Xml.Serialization.IXmlSerializable> interface to control the XML output.  
   
- If the XML generated must conform to section 5 of the World Wide Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1", you must construct the <xref:System.Xml.Serialization.XmlSerializer> with an <xref:System.Xml.Serialization.XmlTypeMapping>. To further control the encoded SOAP XML, use the attributes listed in [Attributes That Control Encoded SOAP Serialization](~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
+ If the XML generated must conform to section 5 of the World Wide Consortium document, [Simple Object Access Protocol (SOAP) 1.1](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/), you must construct the <xref:System.Xml.Serialization.XmlSerializer> with an <xref:System.Xml.Serialization.XmlTypeMapping>. To further control the encoded SOAP XML, use the attributes listed in [Attributes That Control Encoded SOAP Serialization](~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
  With the <xref:System.Xml.Serialization.XmlSerializer> you can take advantage of working with strongly typed classes and still have the flexibility of XML. Using fields or properties of type <xref:System.Xml.XmlElement>, <xref:System.Xml.XmlAttribute> or <xref:System.Xml.XmlNode> in your strongly typed classes, you can read parts of the XML document directly into XML objects.  
   
@@ -2757,7 +2757,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSerializer.UnreferencedObject> event only occurs when the <xref:System.Xml.Serialization.XmlSerializer> is used to deserialize an XML document that contains a SOAP message that conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1".  
+ The <xref:System.Xml.Serialization.XmlSerializer.UnreferencedObject> event only occurs when the <xref:System.Xml.Serialization.XmlSerializer> is used to deserialize an XML document that contains a SOAP message that conforms to section 5 of the World Wide Web Consortium document, [Simple Object Access Protocol (SOAP) 1.1](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/).  
   
  Documents that conform to section 5 are in a special format. At the very least, such a document includes the main body of the SOAP message. However, rather than having all types defined inline in the document, some type definitions can be encoded as references to top-level elements in the document. Thus, for every element found in the main body that is a reference, there must be a corresponding element that contains the type definition. To correlate the referencing element and the type definition, the type definition has an `id` attribute set to a unique string ID and the referencing element has an `href` attribute that references the same ID.  
   

@@ -41,7 +41,7 @@
 ## Remarks  
  The <xref:System.Xml.Serialization.XmlSerializerNamespaces> contains a collection of XML namespaces, each with an associated prefix. The <xref:System.Xml.Serialization.XmlSerializer> uses an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class to create qualified names in an XML document.  
   
- XML namespaces contained by the <xref:System.Xml.Serialization.XmlSerializerNamespaces> must conform to the www.w3.org specification named `Namespaces in XML`.  
+ XML namespaces contained by the <xref:System.Xml.Serialization.XmlSerializerNamespaces> must conform to the W3C specification named [Namespaces in XML](https://www.w3.org/TR/REC-xml-names/).  
   
  XML namespaces provide a way to qualify the names of XML elements and attributes in XML documents. A qualified name consists of a prefix and a local name, separated by a colon. The prefix functions only as a placeholder; it is mapped to a URI that specifies a namespace. The combination of the universally-managed URI namespace and the local name produces a name that is guaranteed to be universally unique.  
   
@@ -305,7 +305,7 @@ ns.Add("", "")
 ## Remarks  
  If you want the <xref:System.Xml.Serialization.XmlSerializer> to qualify the element and attribute names in an XML document, you must <xref:System.Xml.Serialization.XmlSerializerNamespaces.Add%2A> the prefix and namespace pairs to an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object.  
   
- Any namespaces that you add must conform to the www.w3.org specification `Namespaces in XML`.  
+ Any namespaces that you add must conform to the W3C [Namespaces in XML](https://www.w3.org/TR/REC-xml-names/) specification.  
   
    
   

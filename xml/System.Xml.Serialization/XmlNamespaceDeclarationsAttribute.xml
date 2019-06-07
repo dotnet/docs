@@ -55,9 +55,9 @@
 ## Remarks  
  The <xref:System.Xml.Serialization.XmlNamespaceDeclarationsAttribute> attribute can only be applied once in a class to a field or property that returns an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object.  
   
- The <xref:System.Xml.Serialization.XmlNamespaceDeclarationsAttribute> allows you to store the prefixes, and the associated namespaces, used in an XML document. For example, one common usage of the attribute is to store XPath data, as it is defined by the World Wide Web Consortium (www.w3.org) document named "XML Language (XPath) Version 1.0". In brief, an XPath is a string that contains many namespace prefixes and local names, along with some other syntax.  
+ The <xref:System.Xml.Serialization.XmlNamespaceDeclarationsAttribute> allows you to store the prefixes, and the associated namespaces, used in an XML document. For example, one common usage of the attribute is to store XPath data, as it is defined by the World Wide Web Consortium document named [XML Language (XPath) Version 1.0](https://www.w3.org/TR/1999/REC-xpath-19991116/). In brief, an XPath is a string that contains many namespace prefixes and local names, along with some other syntax.  
   
- The XPath language allows for the association of a prefix with a path, and using the prefix within the XML document. For example, the following XML document named "select" contains a prefix ("cal") associated with a specific URI (http://www.cohowinery.com/calendar/). The element contains an attribute named "path" that contains the XPath.  
+ The XPath language allows for the association of a prefix with a path, and using the prefix within the XML document. For example, the following XML document named "select" contains a prefix ("cal") associated with a specific URI (`http://www.cohowinery.com/calendar/`). The element contains an attribute named "path" that contains the XPath.  
   
 ```  
 <select xmlns:cal ="http://www.cohowinery.com/calendar/" path="cal:appointments/@startTime" />  

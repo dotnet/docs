@@ -93,6 +93,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      ```
   
 - The initial type and value of one property depends on another property that is not yet established. For example, `.IDName = .LastName` is not valid in an anonymous type declaration unless `.LastName` is already initialized.  
+
      ```vb
      ' Not valid.
      ' Dim anon8 = New With {Key .IDName = .LastName, Key .LastName = "Jones"}

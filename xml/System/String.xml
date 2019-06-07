@@ -5167,7 +5167,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  And you can control that value's formatting:  
   
  [!code-cpp[System.String.Format#36](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting2.cpp#36)]
- [!code-csharp-interactive[System.String.Format#36](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#36)]
+ [!code-csharp[System.String.Format#36](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting2.cs#36)]
  [!code-vb[System.String.Format#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting2.vb#36)]  
   
  Besides formatting, you can also control alignment and spacing.  
@@ -5205,7 +5205,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.  
   
  [!code-cpp[System.String.Format#33](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#33)]
- [!code-csharp-interactive[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting3.cs)]
+ [!code-csharp-interactive[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting3.cs#33)]
  [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
   
  ### Controlling alignment  
@@ -5250,7 +5250,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  For example, a format item to format a currency value might appear like this:  
   
  [!code-cpp[System.String.Format#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatsyntax1.cpp#12)]
- [!code-csharp-interactive[System.String.Format#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatsyntax1.cs#12)]  
+ [!code-csharp[System.String.Format#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatsyntax1.cs#12)]  
  [!code-vb[System.String.Format#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatsyntax1.vb#12)]  
 
  A format item has the following elements:  
@@ -5330,7 +5330,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  This example defines a format provider that formats an integer value as a customer account number in the form x-xxxxx-xx.  
   
  [!code-cpp[System.String.Format#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample2.cpp#2)]
- [!code-csharp-interactive[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
+ [!code-csharp[System.String.Format#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/FormatExample2.cs#2)]
  [!code-vb[System.String.Format#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/FormatExample2.vb#2)]  
   
 <a name="Format7_Example"></a>   
@@ -5342,7 +5342,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
 -   If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.  
   
  [!code-cpp[System.String.Format#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/interceptor2.cpp#11)]
- [!code-csharp-interactive[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
+ [!code-csharp[System.String.Format#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/interceptor2.cs#11)]
  [!code-vb[System.String.Format#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/interceptor2.vb#11)]  
   
 <a name="QA"></a>   
@@ -5358,12 +5358,12 @@ String interpolation is:
 
 A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of multiple string concatenation operations in the following example produces verbose and hard-to-read code.
 
-[!code-csharp-interactive[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs)]
+[!code-csharp-interactive[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs#QAInterpolated)]
 [!code-vb[non-interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb)]  
 
 In contrast, the use of interpolated strings in the following example produce much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
 
-[!code-csharp-interactive[interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated2.cs)]
+[!code-csharp-interactive[interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated2.cs#QAInterpolated2)]
 [!code-vb[interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb)]  
 
 ### Where can I find a list of the predefined format strings that can be used with format items?  
@@ -5639,7 +5639,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  You can also pass the objects to be formatted as an array rather than as an argument list.  
   
  [!code-cpp[System.String.Format#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format_paramarray1.cpp#10)]
- [!code-csharp-interactive[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
+ [!code-csharp[System.String.Format#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format_paramarray1.cs#10)]
  [!code-vb[System.String.Format#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format_paramarray1.vb#10)]  
 
  ]]></format>

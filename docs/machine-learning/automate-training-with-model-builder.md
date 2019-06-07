@@ -8,19 +8,20 @@ ms.custom: overview
 ---
 # What is Model Builder & how does it work?
 
-Model Builder is a user interface that runs in Visual Studio. Model Builder automatically trains custom ML.NET machine learning models that can be deployed in your application. 
+Model Builder automatically trains custom ML.NET machine learning models that can be deployed in your .NET application. You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
 
-You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
+Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning. Once the optimal model is selected, Model Builder generates code to add the model to your application.
 
-Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
+> [!NOTE]
+> Model Builder is currently in Preview.
 
-Once the optimal model is selected, Model Builder generates code to add the model to your application.
+Model Builder is a graphical Visual Studio extension. 
 
-**Video or animated gif of the model builder interface**
+![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
 
 ## Scenarios
 
-You can bring many different scenarios to Model Builder, for it to generate a machine learning model for your application.
+You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
 A scenario is a description of the type of prediction you want to make on your data. For example: predict future product sales volume based on historical sales data.
 
@@ -50,7 +51,7 @@ For the house-price prediction scenario, the features could be:
 
 The label is the historical house price for that row of square footage, bedroom, and bathroom values and zip code. 
 
-**Diagram**
+![Table showing rows and columns of house price data with features consisting of size rooms zip code and price label](media/model-builder-data.png)
 
 The data you provide must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
 
@@ -60,9 +61,9 @@ If you don't have your own data yet, try out these datasets:
 
 |Data|Label|Features|
 |-|-|-|
-|[taxi fare prediction](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance, and others|
+|[taxi fare prediction](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |[product sales forecasting](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
-|[website comment sentiment analysis](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year, ...|
+|[website comment sentiment analysis](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
 |[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Amount, V1-V28 (anonymized features|Class (1 when fraudulent, 0 otherwise)|
 |[issue classification](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 
@@ -99,11 +100,11 @@ Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be
 
 ### Classification (predicting categories)
 
-The default metric for classification problems is **accuracy**. **Accuracy** defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**. 
+The default metric for classification problems is **accuracy**. Accuracy defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**. 
 
 Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate should be greater than 0.50, for models to be acceptable. 
 
-Additional metrics such as F1 score can be used to control the balance between precision and recall. 
+Additional metrics such as F1 score can be used to control the balance between precision (ratio of correct predictions to the total predictions of that class) and recall (proportion of correct predictions to the total actual members of that class).
 
 When there are more than two categories, are two types of accuracy:
 - Micro-accuracy: the fraction of predictions that are correct across all instances.

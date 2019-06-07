@@ -10,9 +10,9 @@ As you have noticed after reading the previous sections, Azure is an open cloud 
 As a *by-default* recommendation, the following is the main criteria recommended in this guidance:
 
 - **Single monolithic app:** Choose Azure App Service
-- **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS), Service Fabric (SF) or App Service if you have a single or few back-end services
+- **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS)or App Service if you have a single or few back-end services
 - **Linux microservices:** Choose AKS/Kubernetes
-- **Windows microservices:** Choose Service Fabric
+- **Windows microservices:** Choose Azure Web Apps for Containers
 - **Serverless functions & event handlers:** Choose Azure Functions
 - **Large-scale Batch:** Choose Azure Batch
 
@@ -20,13 +20,9 @@ However, this recommendation should be taken with a pinch of salt, as the produc
 
 After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-In the next figure, you can analyze a more global while detailed decision table.
+In the next figure, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
 
 ![](./media/image8.5.png)
-
-Notice how the underlying OS (Windows vs. Linux) can also be a decision factor as some orchestrators are more mature on Linux containers and other on Windows containers. For instance, Linux containers are very mature in Kubernetes (AKS in Azure) but less mature on Service Fabric. On the other hand, Windows Containers are more mature in Service Fabric (released in May 2017) and less mature in AKS.
-
-However, those differences in OS maturity will fade in the future and multiple platforms will have comparable OS maturity and the decision will lay more on preferences based on specific features your application might need or based on each platform's ecosystem reasons.
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

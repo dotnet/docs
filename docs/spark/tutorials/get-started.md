@@ -26,7 +26,7 @@ Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` f
 
 2. Install [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with the latest updates. You can use Community, Professional, or Enterprise. The Community version is free.
 
-   Choose the following minimum requirements during installation:
+   Choose the following workloads during installation:
       * .NET desktop development
           * All required components
           * .NET Framework 4.6.1 Development Tools

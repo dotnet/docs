@@ -38,13 +38,16 @@ The following table shows the literal types in F#. Characters that represent dig
 |byte[]|ASCII string|B|`"text"B`|
 |String or byte[]|verbatim string|@ prefix|`@"\\server\share"` (Unicode)<br /><br />`@"\\server\share"B` (ASCII)|
 
-## Remarks
+## Named Literals
 
-Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents a Unicode surrogate pair.
+Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/library/465f36ce-d146-41c0-b425-679c509cd285) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
-As of F# 3.1, you can use the `+` sign to combine string literals. You can also use the bitwise or (`|||`) operator to combine enum flags. For example, the following code is legal in F# 3.1:
+In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
 ```fsharp
+[<Literal>]
+let SomeJson = """{"numbers":[1,2,3,4,5]}"""
+
 [<Literal>]
 let Literal1 = "a" + "b"
 
@@ -58,13 +61,11 @@ let Literal2 = 1 ||| 64
 let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
 
-The use of other bitwise operators isn't allowed.
+## Remarks
 
-## Named Literals
+Unicode strings can contain explicit encodings that you can specify by using `\u` followed by a 16-bit hexadecimal code or UTF-32 encodings that you can specify by using `\U` followed by a 32-bit hexadecimal code that represents a Unicode surrogate pair.
 
-Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/library/465f36ce-d146-41c0-b425-679c509cd285) attribute. This attribute has the effect of causing a value to be compiled as a constant.
-
-In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
+The use of other bitwise operators other than `|||` isn't allowed.
 
 ## Integers In Other Bases
 
@@ -77,7 +78,7 @@ let numbers = (0x9F, 0o77, 0b1010)
 
 ## Underscores in Numeric Literals
 
-Starting with F# 4.1, you can separate digits with the underscore character (`_`).
+You can separate digits with the underscore character (`_`).
 
 ```fsharp
 let value = 0xDEAD_BEEF

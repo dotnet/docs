@@ -160,7 +160,7 @@ When this code is executed, the value of `result` is 5.
 
 ## Members
 
-It is possible to define members on discriminated unions. The following example shows how to define a property and satisfy an interface:
+It is possible to define members on discriminated unions. The following example shows how to define a property and implement an interface:
 
 ```fsharp
 open System

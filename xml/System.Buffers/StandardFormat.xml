@@ -392,7 +392,7 @@ Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:Syst
         <param name="left">The first format to compare.</param>
         <param name="right">The second format to compare.</param>
         <summary>Determines whether two <see cref="T:System.Buffers.StandardFormat" /> instances are unequal.</summary>
-        <returns><see langword="true" /> if the two formats are unequal; otherwise, see <langword="false" />.</returns>
+        <returns><see langword="true" /> if the two formats are unequal; otherwise, <see langword="false" />.</returns>
        <remarks>  
           <format type="text/markdown"><![CDATA[  
 

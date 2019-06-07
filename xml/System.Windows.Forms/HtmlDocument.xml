@@ -536,7 +536,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, two Web pages in different frames are prevented from accessing each other's content using script; even www.microsoft.com and msdn.microsoft.com are, in this instance, considered different domains. To enable cross-frame scripting for pages from the same top-level domain, you can assign a new value to the <xref:System.Windows.Forms.HtmlDocument.Domain%2A> property. In the pervious URL example, setting <xref:System.Windows.Forms.HtmlDocument.Domain%2A> to microsoft.com would allow both pages to communicate with one another.  
+ By default, two Web pages in different frames are prevented from accessing each other's content using script; even `www.microsoft.com` and `docs.microsoft.com` are, in this instance, considered different domains. To enable cross-frame scripting for pages from the same top-level domain, you can assign a new value to the <xref:System.Windows.Forms.HtmlDocument.Domain%2A> property. In the previous URL example, setting <xref:System.Windows.Forms.HtmlDocument.Domain%2A> to microsoft.com would allow both pages to communicate with one another.  
   
  Strings assigned to the <xref:System.Windows.Forms.HtmlDocument.Domain%2A> property must be valid top-level domains. In the previous URL example, you can set <xref:System.Windows.Forms.HtmlDocument.Domain%2A> to microsoft.com, but not to .com, which would enable any page on the Internet to script a page's contents.  
   

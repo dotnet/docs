@@ -596,7 +596,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The qualified name of the attribute. If the name contains a colon, the <see cref="P:System.Xml.XmlNode.Prefix" /> property reflects the part of the name preceding the first colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property reflects the part of the name following the first colon. The <see cref="P:System.Xml.XmlNode.NamespaceURI" /> remains empty unless the prefix is a recognized built-in prefix such as xmlns. In this case <see langword="NamespaceURI" /> has a value of http://www.w3.org/2000/xmlns/.</param>
+        <param name="name">The qualified name of the attribute. If the name contains a colon, the <see cref="P:System.Xml.XmlNode.Prefix" /> property reflects the part of the name preceding the first colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property reflects the part of the name following the first colon. The <see cref="P:System.Xml.XmlNode.NamespaceURI" /> remains empty unless the prefix is a recognized built-in prefix such as xmlns. In this case <see langword="NamespaceURI" /> has a value of <c>http://www.w3.org/2000/xmlns/</c>.</param>
         <summary>Creates an <see cref="T:System.Xml.XmlAttribute" /> with the specified <see cref="P:System.Xml.XmlDocument.Name" />.</summary>
         <returns>The new <see langword="XmlAttribute" />.</returns>
         <remarks>
@@ -662,7 +662,7 @@
       </Parameters>
       <Docs>
         <param name="qualifiedName">The qualified name of the attribute. If the name contains a colon then the <see cref="P:System.Xml.XmlNode.Prefix" /> property will reflect the part of the name preceding the colon and the <see cref="P:System.Xml.XmlDocument.LocalName" /> property will reflect the part of the name after the colon.</param>
-        <param name="namespaceURI">The namespaceURI of the attribute. If the qualified name includes a prefix of xmlns, then this parameter must be http://www.w3.org/2000/xmlns/.</param>
+        <param name="namespaceURI">The namespaceURI of the attribute. If the qualified name includes a prefix of xmlns, then this parameter must be <c>http://www.w3.org/2000/xmlns/</c>.</param>
         <summary>Creates an <see cref="T:System.Xml.XmlAttribute" /> with the specified qualified name and <see cref="P:System.Xml.XmlNode.NamespaceURI" />.</summary>
         <returns>The new <see langword="XmlAttribute" />.</returns>
         <remarks>
@@ -716,7 +716,7 @@
       <Docs>
         <param name="prefix">The prefix of the attribute (if any). String.Empty and <see langword="null" /> are equivalent.</param>
         <param name="localName">The local name of the attribute.</param>
-        <param name="namespaceURI">The namespace URI of the attribute (if any). String.Empty and <see langword="null" /> are equivalent. If <paramref name="prefix" /> is xmlns, then this parameter must be http://www.w3.org/2000/xmlns/; otherwise an exception is thrown.</param>
+        <param name="namespaceURI">The namespace URI of the attribute (if any). String.Empty and <see langword="null" /> are equivalent. If <paramref name="prefix" /> is xmlns, then this parameter must be <c>http://www.w3.org/2000/xmlns/</c>; otherwise an exception is thrown.</param>
         <summary>Creates an <see cref="T:System.Xml.XmlAttribute" /> with the specified <see cref="P:System.Xml.XmlNode.Prefix" />, <see cref="P:System.Xml.XmlDocument.LocalName" />, and <see cref="P:System.Xml.XmlNode.NamespaceURI" />.</summary>
         <returns>The new <see langword="XmlAttribute" />.</returns>
         <remarks>
@@ -777,7 +777,7 @@
 ## Remarks  
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), CDataSection nodes are allowed within Element nodes and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), CDataSection nodes are allowed within Element nodes and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
   
    
   
@@ -838,7 +838,7 @@
 ## Remarks  
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Comment nodes are only allowed within Document, Element and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), Comment nodes are only allowed within Document, Element and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
   
    
   
@@ -1013,8 +1013,7 @@
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), DocumentType nodes are only allowed within Document nodes. Each <xref:System.Xml.XmlDocument> can have only one DocumentType node. The DocumentType node must also be inserted before the root element of the `XmlDocument` (if the document already has a root element, you cannot add a DocumentType node).  
-  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), DocumentType nodes are only allowed within Document nodes. Each <xref:System.Xml.XmlDocument> can have only one DocumentType node. The DocumentType node must also be inserted before the root element of the `XmlDocument` (if the document already has a root element, you cannot add a DocumentType node).    
  If the passed parameters do not combine to build a valid `XmlDocumentType`, an exception is thrown.  
   
    
@@ -1092,7 +1091,7 @@
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
   
    
   
@@ -1169,7 +1168,7 @@ elem=doc.CreateElement("xy:item", "urn:abc");
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference node is not a child of an Attribute node.  
   
  ]]></format>
         </remarks>
@@ -1238,7 +1237,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference is outside an Attribute node.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), Element nodes are allowed within Document and Element nodes, and in EntityReference nodes when the EntityReference is outside an Attribute node.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -1319,7 +1318,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), EntityReference nodes are only allowed within Element, Attribute and EntityReference nodes.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), EntityReference nodes are only allowed within Element, Attribute and EntityReference nodes.  
   
    
   
@@ -1528,7 +1527,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
+ The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210).  
   
 ||Document|DocumentType|XmlDeclaration|Element|Attribute|Text|CDATA|Markup|EntityReference|  
 |------|--------------|------------------|--------------------|-------------|---------------|----------|-----------|------------|---------------------|  
@@ -1621,7 +1620,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 ## Remarks  
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
+ The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210).  
   
 ||Document|DocumentType|XmlDeclaration|Element|Attribute|Text|CDATA|Markup|EntityReference|  
 |------|--------------|------------------|--------------------|-------------|---------------|----------|-----------|------------|---------------------|  
@@ -1711,7 +1710,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 ## Remarks  
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210).  
+ The following table shows you what NodeType[row] is allowed inside another NodeType[column] according to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210).  
   
 ||Document|DocumentType|XmlDeclaration|Element|Attribute|Text|CDATA|Markup|EntityReference|  
 |------|--------------|------------------|--------------------|-------------|---------------|----------|-----------|------------|---------------------|  
@@ -1797,7 +1796,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 ## Remarks  
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), ProcessingInstruction nodes are only allowed within Document, Element, and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), ProcessingInstruction nodes are only allowed within Document, Element, and EntityReference nodes, when the EntityReference node is not a child of an Attribute node.  
   
    
   
@@ -1919,7 +1918,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
 ## Remarks  
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), Text nodes are only allowed within Element, Attribute and EntityReference nodes.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), Text nodes are only allowed within Element, Attribute and EntityReference nodes.  
   
    
   
@@ -2049,7 +2048,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  Although this method creates the new object in the context of the document, it does not automatically add the new object to the document tree. To add the new object, you must explicitly call one of the node insert methods.  
   
- According to the W3C Extensible Markup Language (XML) 1.0 recommendation (www.w3.org/TR/1998/REC-xml-19980210), the `XmlDeclaration` node must be the first node in the document.  
+ According to the W3C [Extensible Markup Language (XML) 1.0 recommendation](https://www.w3.org/TR/1998/REC-xml-19980210), the `XmlDeclaration` node must be the first node in the document.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   

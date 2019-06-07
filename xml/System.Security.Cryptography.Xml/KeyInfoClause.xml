@@ -29,7 +29,7 @@
 ## Remarks  
  You can use <xref:System.Security.Cryptography.Xml.KeyInfoClause> objects to build a <xref:System.Security.Cryptography.Xml.KeyInfo> object for a specific digital signature or encrypted XML document. <xref:System.Security.Cryptography.Xml.KeyInfo> allows recipients of XML digital signatures and encrypted XML documents to determine which signing method and key values should be used for validation and decryption.  
   
- For more information about the <xref:System.Security.Cryptography.Xml.KeyInfo> element and its subelements, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ For more information about the <xref:System.Security.Cryptography.Xml.KeyInfo> element and its subelements, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/) or the [XML encryption specification](https://www.w3.org/TR/xmlenc-core/), which are available on the W3C website.
   
  ]]></format>
     </remarks>

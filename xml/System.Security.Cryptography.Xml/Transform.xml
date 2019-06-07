@@ -31,7 +31,7 @@
   
  Use a class that derives from the <xref:System.Security.Cryptography.Xml.Transform> class whenever you need to add one or more transform objects to an encrypted XML document or to a signed XML document.  
   
- For more information about the `<Transform>` element, see the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ For more information about the `<Transform>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/) or the [XML encryption specification](https://www.w3.org/TR/xmlenc-core/), which are available on the W3C website.  
   
  ]]></format>
     </remarks>
@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property corresponds to the <xref:System.Security.Cryptography.Xml.Transform.Algorithm%2A> attribute of a `<Transform>` element in an XMLDSIG signature. For example, the algorithm URI for the Base64 decoding transform is defined as http://www.w3.org/2000/09/xmldsig#base64 in the XMLDSIG specification (Section 6.6.2).  
+ This property corresponds to the <xref:System.Security.Cryptography.Xml.Transform.Algorithm%2A> attribute of a `<Transform>` element in an XMLDSIG signature. For example, the algorithm URI for the Base64 decoding transform is defined in the [XMLDSIG specification (Section 6.6.2)](https://www.w3.org/TR/xmldsig-core1/#sec-Base-64).  
   
  You can conveniently set this value using one of the static fields associated with the <xref:System.Security.Cryptography.Xml.SignedXml> class.  
   

@@ -40,7 +40,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapElementAttribute> class belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1". For a complete list of similar attributes, see [Attributes That Control Encoded SOAP Serialization](~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
+ The <xref:System.Xml.Serialization.SoapElementAttribute> class belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium document, [Simple Object Access Protocol (SOAP) 1.1](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/). For a complete list of similar attributes, see [Attributes That Control Encoded SOAP Serialization](~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
  To serialize an object as an encoded SOAP message, you must construct the <xref:System.Xml.Serialization.XmlSerializer> using an <xref:System.Xml.Serialization.XmlTypeMapping> created with the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapReflectionImporter> class.  
   
@@ -219,7 +219,7 @@
 > [!NOTE]
 >  Passing binary data as an XML element is more efficient than passing it as an XML attribute.  
   
- For more information about XML data types, see the World Wide Web Consortium (www.w3.org) document, "XML Schema Part 2: Datatypes".  
+ For more information about XML data types, see the World Wide Web Consortium document, [XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/).  
   
 |XSD data type|.NET data type|  
 |-------------------|--------------------|  
@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:null` set to "1". For more information, see the World Wide Web Consortium (www.w3.org) specification named "XML Schema Part 1: Structures".  
+ The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:null` set to "1". For more information, see the World Wide Web Consortium specification named [XML Schema Part 1: Structures](https://www.w3.org/TR/xmlschema-1/).  
   
  If the <xref:System.Xml.Serialization.SoapElementAttribute.IsNullable%2A> property is set to `true`, the `xsi:null` attribute is generated for class members that have been set to `null`. For example, if you set a field named `MyStringArray` to `null`, the <xref:System.Xml.Serialization.XmlSerializer> generates the following XML code.  
   

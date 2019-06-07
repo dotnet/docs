@@ -34,11 +34,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.SignedInfo> class represents the <`SignedInfo`> element of an XML signature defined by the XML digital signature specification. The <`SignedInfo`> element, which is a subelement of the <`Signature`> element, contains the canonicalization method used for signing, the algorithm used for signing and validation, and references that describe a digital signature.  
+ The <xref:System.Security.Cryptography.Xml.SignedInfo> class represents the `<SignedInfo>` element of an XML signature defined by the XML digital signature specification. The `<SignedInfo>` element, which is a subelement of the `<Signature>` element, contains the canonicalization method used for signing, the algorithm used for signing and validation, and references that describe a digital signature.  
   
  For most scenarios, you should use the <xref:System.Security.Cryptography.Xml.SignedInfo> class available from the <xref:System.Security.Cryptography.Xml.SignedXml.SignedInfo%2A> property to sign and verify XML digital signatures.  
   
- For more information about the <`SignedInfo`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<SignedInfo>` element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
     </remarks>
@@ -138,7 +138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A> property uses a string Uniform Resource Identifier (URI) to represent the <`Canonicalization`> element of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A> property uses a string Uniform Resource Identifier (URI) to represent the `<Canonicalization>` element of an XML digital signature.  
   
  Use the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A> property to specify the canonicalization algorithm applied to the XML output of the <xref:System.Security.Cryptography.Xml.SignedInfo> class before performing signature calculations.  
   
@@ -151,7 +151,7 @@
 |Exclusive Canonical XML|<https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/#WithComments><br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NTransformUrl>|  
 |Exclusive Canonical XML with comments|<https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/#WithComments><br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl>|  
   
- For more information about XML digital signatures, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -532,7 +532,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.SignedInfo.References%2A> property to describe the transforms, digest algorithms, and digest values of an XML digital signature.  
   
- For more information about XML digital signatures, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>

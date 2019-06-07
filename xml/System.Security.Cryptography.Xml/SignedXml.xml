@@ -355,7 +355,7 @@
   
  The <xref:System.Security.Cryptography.Xml.SignedXml.AddObject%2A> method internally calls the <xref:System.Security.Cryptography.Xml.Signature.AddObject%2A> method of the <xref:System.Security.Cryptography.Xml.Signature> object encapsulated by the <xref:System.Security.Cryptography.Xml.SignedXml> object.  You can also add a <xref:System.Security.Cryptography.Xml.DataObject> object by directly calling the <xref:System.Security.Cryptography.Xml.Signature.AddObject%2A> method from the <xref:System.Security.Cryptography.Xml.SignedXml.Signature%2A> property.  
   
- For more information about XML digital signatures, see the XMLDSIG specification available at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -406,7 +406,7 @@
   
  The <xref:System.Security.Cryptography.Xml.SignedXml.AddReference%2A> method internally calls the <xref:System.Security.Cryptography.Xml.SignedInfo.AddReference%2A> method of the <xref:System.Security.Cryptography.Xml.SignedInfo> object encapsulated by the <xref:System.Security.Cryptography.Xml.SignedXml> object.  You can also add a <xref:System.Security.Cryptography.Xml.Reference> object by directly calling the <xref:System.Security.Cryptography.Xml.SignedInfo.AddReference%2A> method from the <xref:System.Security.Cryptography.Xml.SignedXml.SignedInfo%2A> property.  
   
- For more information about XML digital signatures, see the XMLDSIG specification available at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -1076,7 +1076,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.KeyInfo%2A> property to embed key-related information intended to help identify the key necessary for validating an XML document.  
   
- For more information about the `<KeyInfo>` element, see the XMLDSIG specification, which is available at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<KeyInfo>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -1311,7 +1311,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.Signature%2A> property to retrieve the <xref:System.Security.Cryptography.Xml.Signature> object used by the <xref:System.Security.Cryptography.Xml.SignedXml> object.  
   
- For more information about the `<Signature>` element, see the XMLDSIG specification, which is available at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<Signature>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).
   
    
   
@@ -1436,7 +1436,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.SignatureMethod%2A> property to retrieve the <`SignatureMethod`> URI used by the <xref:System.Security.Cryptography.Xml.SignedXml> object. This property is read only. For more information about programmatically specifying a URI for the <`SignatureMethod`> element, see the <xref:System.Security.Cryptography.Xml.SignedInfo.SignatureMethod%2A> property.  
   
- For more information about the `<SignatureMethod>` element, see the XMLDSIG specification, which is available at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<SignatureMethod>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -1476,7 +1476,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.SignatureValue%2A> property to retrieve the value of the XML digital signature.  This property is automatically populated when you make a successful call to the <xref:System.Security.Cryptography.Xml.SignedXml.ComputeSignature%2A> method.  
   
- For more information about the `<SignatureValue>` element, see the XMLDSIG specification, which is available at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<SignatureValue>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -1516,7 +1516,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.SignedInfo%2A> property to retrieve the <xref:System.Security.Cryptography.Xml.SignedInfo> object that is used by the <xref:System.Security.Cryptography.Xml.SignedXml> object to create an XML digital signature.  
   
- For more information about the `<SignedInfo>` element, see the XMLDSIG specification, which is available at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<SignedInfo>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>

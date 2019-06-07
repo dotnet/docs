@@ -31,7 +31,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod> class to reference the same <xref:System.Security.Cryptography.Xml.KeyInfo> information in multiple XMLDSIG signatures or encrypted XML documents, especially when the referenced information is large. For example, a `<RetrievalMethod>` subelement can be used to reference a <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> object that contains an X.509v3 certificate chain, which validates the signing key.  
   
- For more information about the `<RetrievalMethod>` element, see Section 4.4.3 of the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or see the XML Encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ For more information about the `<RetrievalMethod>` element, see Section 4.4.3 of the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/) or the [XML Encryption specification](https://www.w3.org/TR/xmlenc-core/), which are available on the W3C website.  
   
  ]]></format>
     </remarks>

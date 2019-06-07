@@ -1167,7 +1167,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
    
   
 ## Examples  
- The following example writes the host name (www.contoso.com) and port number (8080) of the server to the console.  
+ The following example writes the host name (`www.contoso.com`) and port number (8080) of the server to the console.  
   
  [!code-cpp[Classic Uri.Authority Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Authority Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Authority Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Authority Example/CS/source.cs#1)]
@@ -2352,7 +2352,7 @@ If you used an escaped string to construct this instance (for example, "http://[
    
   
 ## Examples  
- The following example writes the host name (www.contoso.com) of the server to the console.  
+ The following example writes the host name (`www.contoso.com`) of the server to the console.  
   
  [!code-cpp[Classic Uri.Host Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Host Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Host Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Host Example/CS/source.cs#1)]

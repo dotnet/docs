@@ -35,7 +35,7 @@
   
  The <xref:System.Security.Cryptography.Xml.KeyInfo> class enables you to imbed key-related information intended to help identify the key necessary for validating or decrypting the XML document. Multiple types of key-related information can be included within a single <xref:System.Security.Cryptography.Xml.KeyInfo>; each type of key-related information has an associated class derived from <xref:System.Security.Cryptography.Xml.KeyInfoClause>.  
   
- For more information about the `<KeyInfo>` element, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ For more information about the `<KeyInfo>` element, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/) or the [XML encryption specification](https://www.w3.org/TR/xmlenc-core/), which are available on the W3C website.
   
    
   

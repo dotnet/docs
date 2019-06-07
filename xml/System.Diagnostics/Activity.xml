@@ -40,9 +40,17 @@
         <Parameter Name="operationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="operationName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="operationName">The name of the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Activity" /> class.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+Note that <xref:System.Diagnostics.Activity> has a "builder" pattern: you call the constructor, a number of `Set*` and `Add*` APIs, and then call <xref:System.Diagnostics.Activity.Start> to build the activity. You **must** call <xref:System.Diagnostics.Activity.Start> before using the new instance.
+
+ ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivityTraceFlags">
@@ -89,11 +97,21 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The baggage key.</param>
+        <param name="value">The baggage value.</param>
+        <summary>Updates the <see cref="T:System.Diagnostics.Activity" /> to have a new baggage item with the specified key and value.</summary>
+        <returns><see langword="this" /> for convenient chaining.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+This key/value pair is included in the collection returned by the <see cref="P:System.Diagnostics.Activity.Baggage" /> property, and can also be retrieved by the <xref:System.Diagnostics.Activity.GetBaggageItem%2A> method. 
+
+`Baggage` is meant for information that is needed for runtime control. For information that is useful to show up in the log with the <xref:System.Diagnostics.Activity>, use the <xref:System.Diagnostics.Activity.Tags> property.
+
+ ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTag">
@@ -119,11 +137,21 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The tag key.</param>
+        <param name="value">The tag value.</param>
+        <summary>Updates the <see cref="T:System.Diagnostics.Activity" /> to have a new tag with the provided <paramref name="key" /> and <paramref name="value" />. .</summary>
+        <returns><see langword="this" /> for convenient chaining.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This key/value pair is included in the collection returned by the <see cref="P:System.Diagnostics.Activity.Tags" /> property.
+
+<xref:System.Diagnostics.Activity.Tags> is meant for information that is useful to log with the <xref:System.Diagnostics.Activity>. For information that is needed for runtime control, use the <xref:System.Diagnostics.Activity.Baggage> property.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Baggage">
@@ -145,9 +173,17 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of key/value pairs that represents information that is passed to children of this <see cref="T:System.Diagnostics.Activity" />.</summary>
+        <value>An enumeration of string-string key-value pairs.</value>
+         <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+`Baggage` is serialized when requests leave the process (along with the ID). Typically, `Baggage` is used for fine-grained control over logging of the activity and any children.  In general, if you are not using the data at runtime, you should be using <xref:System.Diagnostics.Activity.Tags> instead.
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -169,8 +205,8 @@
         <ReturnType>System.Diagnostics.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the current operation (<see cref="T:System.Diagnostics.Activity" />) for the current thread.  This flows across async calls.</summary>
+        <value>The current operation for the current thread.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +250,8 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the duration of the operation.</summary>
+        <value>The delta between <see cref="P:System.Diagnostics.Activity.StartTimeUtc" /> and the end time if the <see cref="T:System.Diagnostics.Activity" /> has ended (<see cref="M:System.Diagnostics.Activity.Stop" /> or <see cref="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" /> was called), or <see cref="F:System.TimeSpan.Zero"/> if the <see cref="T:System.Diagnostics.Activity" /> has not ended and <see cref="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" /> was not called.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,9 +298,9 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The baggage key.</param>
+        <summary>Returns the value of a key-value pair added to the activity with <see cref="M:System.Diagnostics.Activity.AddBaggage(System.String,System.String)" />.</summary>
+        <returns>The value of the key-value-pair item if it exists, or <see langword="null" /> if it does not exist.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,9 +323,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an identifier that is specific to a particular request.</summary>
+        <value>The activity ID.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+An ID has a hierarchical structure: `root-id.id1_id2.id3_`. The ID is generated when <xref:System.Diagnostics.Activity.Start> is called by appending a suffix to the `Activity.Parent.Id` or the <xref:System.Diagnostics.Activity.ParentId>. An <xref:System.Diagnostics.Activity> has no ID until it starts. For more information, see [Id Format](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format).
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="IdFormat">
@@ -332,9 +376,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the operation name.</summary>
+        <value>The name of the operation.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+An operation name is the *coarsest* name that is useful for grouping/filtering. The name is typically a compile-time constant. Names of Rest APIs are reasonable, but arguments (such as specific accounts) should not be in the name but rather in the tags.
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -356,8 +408,8 @@
         <ReturnType>System.Diagnostics.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the parent <see cref="T:System.Diagnostics.Activity" /> that created this activity.</summary>
+        <value>The parent of this <see cref="T:System.Diagnostics.Activity" />, if it is from the same process, or <see langword="null" /> if this instance has no parent (it is a root activity) or if the parent is from outside the process.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -380,9 +432,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the ID of this activity's parent.</summary>
+        <value>The parent ID, if one exists, or <see langword="null" /> if it does not.</value>
+      <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+If the parent for this <xref:System.Diagnostics.Activity> comes from outside the process, the <xref:System.Diagnostics.Activity> does not have a parent but *may* have a parent ID (which was deserialized from the parent).  
+
+This property value can be `null` if this is a root <see cref="T:System.Diagnostics.Activity" /> (i.e. it has no <xref:System.Diagnostics.Activity.Parent>).  See [Id Format](href="https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format) for more details.
+
+]]></format>
+      </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentSpanId">
@@ -446,9 +508,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the root ID of this <see cref="T:System.Diagnostics.Activity" />.</summary>
+        <value>The root ID, or <see langword="null" /> if the current instance has either a <see cref="P:System.Diagnostics.Activity.ParentId" /> or an <see cref="P:System.Diagnostics.Activity.Id" />.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The root ID is a substring from the <xref:System.Diagnostics.Activity.Id> or the <xref:System.Diagnostics.Activity.ParentId>) between '|' (or the beginning) and the first `.`. Filtering by root ID allows you to find all activities involved in operation processing. For more information, see [ID Format](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format).
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEndTime">
@@ -473,9 +543,9 @@
         <Parameter Name="endTimeUtc" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="endTimeUtc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="endTimeUtc">The UTC stop time.</param>
+        <summary>Updates the <see cref="T:System.Diagnostics.Activity" /> to set its <see cref="P:System.Diagnostics.Activity.Duration" /> as the difference between <see cref="P:System.Diagnostics.Activity.StartTimeUtc" /> and the specified stop time.</summary>
+        <returns><see langword="this" /> for convenient chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,10 +571,18 @@
         <Parameter Name="parentId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parentId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="parentId">The ID of the parent operation.</param>
+        <summary>Updates this <see cref="T:System.Diagnostics.Activity" /> to indicate that the <see cref="T:System.Diagnostics.Activity" /> with an ID of <paramref name="parentId" /> caused this <see cref="T:System.Diagnostics.Activity" />.</summary>
+        <returns><see langword="this" /> for convenient chaining.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+This property should only be used in 'boundary' scenarios where an <see cref="T:System.Diagnostics.Activity" /> from another process logically started this <see cref="T:System.Diagnostics.Activity" />. The `parentId` brings up the <xref:System.Diagnostics.Activity.Tags> (as well as the <xref:System.Diagnostics.Activity.ParentId> property) and can be used to reconstruct the causal tree.
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParentId">
@@ -556,9 +634,9 @@
         <Parameter Name="startTimeUtc" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="startTimeUtc">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="startTimeUtc">The <see cref="T:System.Diagnostics.Activity" /> start time in UTC.</param>
+        <summary>Sets the start time of this <see cref="T:System.Diagnostics.Activity" />.</summary>
+        <returns><see langword="this" /> for convenient chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -603,9 +681,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Starts the activity.</summary>
+        <returns><see langword="this" /> for convenient chaining.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+Calling the `Start` method does the following:
+-   Sets <xref:System.Diagnostics.Activity.Parent> to hold <xref:System.Diagnostics.Activity.Current>.
+-   Sets <xref:System.Diagnostics.Activity.Current> to this <xref:System.Diagnostics.Activity>.
+-   If <xref:System.Diagnostics.Activity.StartTimeUtc> was not set previously, sets it to <xref:System.DateTime.UtcNow?displayProperty=nameWithType>.
+-   Generates a unique <xref:System.Diagnostics.Activity.Id> for this activity.</item>
+
+Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> to start the <see cref="T:System.Diagnostics.Activity" /> and write the start event.
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartTimeUtc">
@@ -627,9 +719,17 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the time when the operation started.</summary>
+        <value>The UTC time that the operation started.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `StartTimeUtc` property is typically initialized when <xref:System.Diagnostics.Activity.Start> is called, but it can be set at any time by calling <xref:System.Diagnostics.Activity.SetStartTime%2A>.
+
+]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -652,8 +752,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Stops the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This information is NOT passed on to the children of this <xref:System.Diagnostics.Activity>.
+Calling the `Stop` method:
+
+- Sets <xref:System.Diagnostics.Activity.Current> to <xref:System.Diagnostics.Activity.Parent>.
+- If the end time was not set previously, sets <xref:System.Diagnostics.Activity.Duration> as the difference between <xref:System.DateTime.UtcNow?displayProperty=nameWithType> and <xref:System.Diagnostics.Activity.StartTimeUtc>.
+
+Call <xref:System.Diagnostics.DiagnosticSource.StopActivity%2A?displayProperty=nameWithType> to stop the <xref:System.Diagnostics.Activity> and write the stop event.
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tags">
@@ -675,8 +789,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a collection of key/value pairs that represent information that will be logged along with the <see cref="T:System.Diagnostics.Activity" /> to the logging system.</summary>
+        <value>An enumeration of string-string key-value-pairs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

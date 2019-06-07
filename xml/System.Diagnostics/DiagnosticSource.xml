@@ -19,8 +19,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An abstract class that allows code to be instrumented for production-time logging of rich data payloads for consumption within the process that was instrumented.</summary>
+    <remarks>For more information, see [DiagnosticSource User's Guide](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,10 +69,16 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the event being written.</param>
+        <summary>Verifies if the notification event is enabled.</summary>
+        <returns><see langword="true" /> if the notification event is enabled, <see langword="false" /> otherwise.</returns>
+         <remarks>
+           <format type="text/markdown"><![CDATA[
+
+If there is expensive setup for the notification, you can call IsEnabled before performing this setup. Consumers should not assume that they only get notifications for which IsEnabled is true. However, it is optional for producers to call this API. The name should be the same as that passed to <see cref="M:System.Diagnostics.DiagnosticSource.Write(System.String,System.Object)" />.
+
+           ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -98,12 +104,18 @@
         <Parameter Name="arg2" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="arg1">To be added.</param>
-        <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the event being written.</param>
+        <param name="arg1">An object that represents the additional context for IsEnabled. Consumers should expect to receive <see langword="null" /> which may indicate that producer called pure IsEnabled(string) to check if consumer wants to get notifications for such events at all. Based on that, producer may call IsEnabled(string, object, object) again with non-<see langword="null" /> context.</param>
+        <param name="arg2">Optional. An object that represents the additional context for IsEnabled. <see langword="null" /> by default. Consumers should expect to receive <see langword="null" /> which may indicate that producer called pure IsEnabled(string) or producer passed all necessary context in <paramref name="arg1" />.</param>
+        <summary>Verifies it the notification event is enabled.</summary>
+        <returns><see langword="true" /> if the notification event is enabled, <see langword="false" /> otherwise.</returns>
+         <remarks>
+           <format type="text/markdown"><![CDATA[
+          
+If there is expensive setup for the notification, you can call this method and provide context before performing the setup.
+          
+           ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivityExport">
@@ -178,11 +190,22 @@
         <Parameter Name="args" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="activity">The <see cref="T:System.Diagnostics.Activity" /> to be started.</param>
+        <param name="args">An object that represent the value being passed as a payload for the event.</param>
+        <summary>Starts an <see cref="T:System.Diagnostics.Activity" /> and writes a start event.
+</summary>
+        <returns>The started activity for convenient chaining.</returns>
+         <remarks>
+           <format type="text/markdown"><![CDATA[
+           
+The <xref:System.Diagnostics.Activity> describes the logical operation, its context, and parent relation; the current <xref:System.Diagnostics.Activity> flows through the operation processing.
+
+This method starts the given <xref:System.Diagnostics.Activity>, maintains a global <xref:System.Diagnostics.Activity.Current?displayProperty=nameWithType> and <xref:System.Diagnostics.Activity.Parent?displayProperty=nameWithType> activity for the given <xref:System.Diagnostics.Activity>, and notifies consumers that a new <xref:System.Diagnostics.Activity> was started. Consumers can access <xref:System.Diagnostics.Activity.Current?displayProperty=nameWithType> to add context and/or augment telemetry.
+
+Producers may pass additional details to the consumer in the payload.
+
+           ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopActivity">
@@ -207,10 +230,21 @@
         <Parameter Name="args" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="activity">The activity to be stopped.</param>
+        <param name="args">An object that represents the value passed as a payload for the event.</param>
+        <summary>Stops the given <see cref="T:System.Diagnostics.Activity" />, maintains the global <see cref="P:System.Diagnostics.Activity.Current" /> activity, and notifies consumers that the <see cref="T:System.Diagnostics.Activity" /> was stopped. 
+            
+</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Producers may pass additional details to the consumer in the payload.
+
+Consumers can access <xref:System.Diagnostics.Activity.Current?displayProperty=nameWithType> to add context and/or augment telemetry.
+
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -238,10 +272,23 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the event being written.</param>
+        <param name="value">An object that represents the value being passed as a payload for the event. This is often an anonymous type which contains several sub-values.</param>
+        <summary>Provides a generic way of logging complex payloads. 
+</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Each notification is given a name that identifies it, as well as an object (typically an anonymous type) that provides arbitrary information to pass to the notification.  
+
+`name` should be short. Don't use a fully qualified name unless you have to to avoid ambiguity, since `name` must be globally unique. Typically, *componentName.eventName*, where *componentName* and *eventName* are strings less than 10 characters, are a good compromise.
+
+Notification names should not have `.` in them because component names have dots, and for them both to have dots leads to ambiguity. We suggest that you use `_` instead.
+
+Assume that listeners will use string prefixing to filter groups. Therefore, having a hierarchy of component names is a good practice.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
   </Members>

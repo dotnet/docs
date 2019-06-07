@@ -220,7 +220,7 @@ Explore this content more in-depth on the GitHub wiki:
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
-<https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-C-CD)>
+<https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
 ### Overview
 
@@ -269,6 +269,10 @@ With Kubernetes, developers can progress from thinking about physical and virtua
 - Distributing secrets
 
 - Application health checks
+
+## Next steps
+
+Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
 ## Walkthrough 6: Deploy your Windows Containers-based apps to Azure App Service for Containers
 

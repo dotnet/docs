@@ -57,6 +57,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
     ' Dim anon3 = New With {Key sc.someFunction(someArg)}
     ```
      Assignment to a new property name solves the problem.  
+
     ```vb
     ' Valid.
     Dim anon4 = New With {Key .FunResult = sc.someFunction(someArg)}

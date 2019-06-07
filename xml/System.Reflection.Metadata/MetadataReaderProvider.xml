@@ -147,11 +147,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[
 
-Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is specified, ownership of the stream is transferred to the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>  upon successful argument validation. It will be disposed by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> and the caller must not manipulate it.
+Unless <xref:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen?displayProperty=nameWithType> is specified, ownership of the stream is transferred to the <xref:System.Reflection.Metadata.MetadataReaderProvider> upon successful argument validation. It will be disposed by the <xref:System.Reflection.Metadata.MetadataReaderProvider>, and the caller must not manipulate it.
             
-Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata> is specified no data is read from the stream during the construction of the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>. Furthermore, the stream must not be manipulated by caller while the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> is alive and undisposed.
+Unless <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displayProperty=nameWithType> is specified, no data is read from the stream during construction of the <xref:System.Reflection.Metadata.MetadataReaderProvider>. Furthermore, the stream must not be manipulated by caller while the <xref:System.Reflection.Metadata.MetadataReaderProvider> is alive and undisposed.
             
-If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> after construction.
+If <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displayProperty=nameWithType>, the <xref:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen?displayProperty=nameWithType> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:System.Reflection.Metadata.MetadataReaderProvider> after construction.
 
             ]]></format>
         </remarks>
@@ -254,11 +254,11 @@ If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, t
         <remarks>
           <format type="text/markdown"><![CDATA[
             
-Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is specified, ownership of the stream is transferred to the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>  upon successful argument validation. It will be disposed by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> and the caller must not manipulate it.
+Unless <xref:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen?displayProperty=nameWithType> is specified, ownership of the stream is transferred to the <xref:System.Reflection.Metadata.MetadataReaderProvider> upon successful argument validation. It will be disposed by the <xref:System.Reflection.Metadata.MetadataReaderProvider>, and the caller must not manipulate it.
             
-Unless <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata> is specified no data is read from the stream during the construction of the <xref:T:System.Reflection.Metadata.MetadataReaderProvider>. Furthermore, the stream must not be manipulated by caller while the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> is alive and undisposed.
+Unless <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displayProperty=nameWithType> is specified, no data is read from the stream during the construction of the <xref:System.Reflection.Metadata.MetadataReaderProvider>. Furthermore, the stream must not be manipulated by caller while the <xref:System.Reflection.Metadata.MetadataReaderProvider> is alive and undisposed.
             
-If <xref:F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata>, the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:T:System.Reflection.Metadata.MetadataReaderProvider> after construction.
+If <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displayProperty=nameWithType>, the <xref:System.Reflection.Metadata.MetadataReaderProvider> will have read all of the data requested during construction. As such, if <xref:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen?displayProperty=nameWithType> is also specified, the caller retains full ownership of the stream and is assured that it will not be manipulated by the <xref:System.Reflection.Metadata.MetadataReaderProvider> after construction.
 
             ]]></format>
         </remarks>

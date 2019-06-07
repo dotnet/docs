@@ -75,6 +75,20 @@ Some types can only be marshaled as parameters and not as fields. These types ar
 
 If these defaults don't do exactly what you want, you can customize how parameters are marshaled. The [parameter marshaling](customize-parameter-marshaling.md) article walks you through how to customize how different parameter types are marshaled.
 
+## Default marshaling in COM scenarios
+
+When you are calling methods on COM objects in .NET, the .NET runtime changes the default marshaling rules to match common COM semantics. The table below contains the rules that the .NET runtimes uses in COM scenarios:
+
+| .NET Type | Native Type (COM method calls) |
+|-----------|--------------------------------|
+| `bool`    | `VARIANT_BOOL`                 |
+| `StringBuilder` | `LPWSTR`                 |
+| `string`  | `BSTR`                         |
+| Delegate types | `_Delegate*` in .NET Framework. Disallowed in .NET Core. |
+| `System.Drawing.Color` | `OLECOLOR`        |
+| .NET array | `SAFEARRAY`                   |
+| `string[]` | `SAFEARRAY` of `BSTR`s        |
+
 ## Marshaling classes and structs
 
 Another aspect of type marshaling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, you need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, you also need to instruct the marshaler how to map fields in the class to the unmanaged struct. Here the `StructLayout` attribute becomes useful.

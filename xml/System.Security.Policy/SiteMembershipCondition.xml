@@ -46,9 +46,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A code assembly satisfies a site membership condition if that code originates from the Web site specified by <xref:System.Security.Policy.SiteMembershipCondition.Site%2A>. Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+
+A code assembly satisfies a site membership condition if that code originates from the Web site specified by <xref:System.Security.Policy.SiteMembershipCondition.Site%2A>. Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, `www.fourthcoffee.com` is the site identity in the URL `http://www.fourthcoffee.com/process/grind.htm`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.  
   
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match. The site name * will match any site, but will not match code that has no site evidence.  
+Sites can be matched exactly, or by a wildcard ("\*") prefix at the dot delimiter. For example, the site name `*.fourthcoffee.com` matches `fourthcoffee.com` as well as `www.fourthcoffee.com`. Without a wildcard, the site name must be a precise match. The site name \* will match any site, but will not match code that has no site evidence.
   
  ]]></format>
     </remarks>

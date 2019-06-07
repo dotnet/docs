@@ -37,7 +37,7 @@
 ## Remarks  
  The default permissions allow all local and Intranet zone applications to access PNRP services. If the default permissions are not changed, all link-local and site-local applications have access to Peer-to-Peer services, but global (internet) applications have no access.  
   
- Instances of this type have two permission states: they either have no access to the resource(s) protected by the permission, or they have unrestricted full access to those resources.  
+ Instances of this type have two permission states: they either have no access to the resources protected by the permission, or they have unrestricted full access to those resources.  
   
  ]]></format>
     </remarks>
@@ -267,19 +267,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current <xref:System.Net.PeerToPeer.PnrpPermission> is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to "*C:\example.txt*" is a subset of a permission that represents access to "*C:\\*". If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+
+The current <xref:System.Net.PeerToPeer.PnrpPermission> is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission. For example, a permission that represents access to "*C:\example.txt*" is a subset of a permission that represents access to "*C:\\*". If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
   
- The following statements are required to be `true` for all implementations of the IsSubsetOf method. X, Y, and Z represent <xref:System.Security.IPermission> objects that are not a `null` reference (`Nothing` in Visual Basic).  
+The following statements are required to be `true` for all implementations of the IsSubsetOf method. X, Y, and Z represent <xref:System.Security.IPermission> objects that are not a `null` reference (`Nothing` in Visual Basic).
+
+- `X.IsSubsetOf(X)` returns `true`.
+
+- `X.IsSubsetOf(Y)` returns the same value as `Y.IsSubsetOf(X)` if and only if X and Y represent the same set of permissions.
+
+- If `X.IsSubsetOf(Y)` and `Y.IsSubsetOf(Z)` both return `true`, `X.IsSubsetOf(Z)` returns `true`.
   
--   X.IsSubsetOf(X) returns `true`.  
-  
--   X.IsSubsetOf(Y) returns the same value as Y.IsSubsetOf(X) if and only if X and Y represent the same set of permissions.  
-  
--   If X.IsSubsetOf(Y) and Y.IsSubsetOf(Z) both return `true`, X.IsSubsetOf(Z) returns `true`.  
-  
--  
-  
- If X represents an empty IPermission object with a permission state of *None* and Y represents an IPermission object that is a `null` reference (`Nothing` in Visual Basic), X.IsSubsetOf(Y) returns `true`. If Z is also an empty permission, the compound set operation X.Union(Z).IsSubsetOf(Y) also returns `true` because the <xref:System.Net.PeerToPeer.PnrpPermission.Union%2A> of two empty permissions is an empty permission.  
+If X represents an empty <xref:System.Security.IPermission> object with a permission state of *None*, and Y represents an <xref:System.Security.IPermission> object that is a `null` reference (`Nothing` in Visual Basic), `X.IsSubsetOf(Y)` returns `true`. If Z is also an empty permission, the compound set operation `X.Union(Z).IsSubsetOf(Y)` also returns `true` because the <xref:System.Net.PeerToPeer.PnrpPermission.Union%2A> of two empty permissions is an empty permission.
   
  ]]></format>
         </remarks>

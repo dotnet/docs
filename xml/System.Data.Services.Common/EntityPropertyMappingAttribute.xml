@@ -151,7 +151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A> is `true`, the feed is backward compatible with [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] client applications that use protocol version 1.0. When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>``is `false`, the protocol version used by the data service must be 2.0 or later versions. For more information, see [Data Service Versioning](~/docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
+ When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A> is `true`, the feed is backward compatible with [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] client applications that use protocol version 1.0. When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A> is `false`, the protocol version used by the data service must be 2.0 or later versions. For more information, see [Data Service Versioning](~/docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
  ]]></format>
         </remarks>

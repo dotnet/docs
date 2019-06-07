@@ -211,20 +211,16 @@
   
  When `disposing` is `true`, this method releases all resources held by any managed objects that this <xref:System.Web.UI.Design.TemplateEditingVerb> references. This method invokes the `Dispose` method of each referenced object.  
   
+## Notes to inheritors
+
+The <xref:System.Web.UI.Design.TemplateEditingVerb> class is obsolete. Expose templates through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups> property of a control designer. The design host creates a <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> for each <xref:System.Web.UI.Design.TemplateGroup> defined for a control designer.
+  
+`Dispose` can be called multiple times by other objects. When overriding `Dispose(Boolean)`, be careful not to reference objects that have been previously disposed of in an earlier call to `Dispose`. For more information about how to implement `Dispose(Boolean)`, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).
+  
+For more information about `Dispose` and <xref:System.Object.Finalize>, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).
+
  ]]></format>
         </remarks>
-        <block subset="none" type="overrides">
-          <para>
-            <block subset="none" type="note">
-              <para>  
- The <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> class is obsolete. Expose templates through the <see cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" /> property of a control designer. The design host creates a <see cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" /> for each <see cref="T:System.Web.UI.Design.TemplateGroup" /> defined for a control designer.  
-  
-</para>
-            </block>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
-        </block>
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.TemplateGroups" />
         <altmember cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
         <altmember cref="T:System.Web.UI.Design.TemplateGroup" />

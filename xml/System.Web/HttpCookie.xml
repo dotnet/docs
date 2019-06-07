@@ -373,9 +373,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpCookie.Path%2A> property extends the <xref:System.Web.HttpCookie.Domain%2A> property to completely describe the specific URL to which the cookie applies. For example, in the URL http:/www.microsoft.com/asp, the domain is www.microsoft.com and the path is /asp.  
-  
-   
+
+The <xref:System.Web.HttpCookie.Path%2A> property extends the <xref:System.Web.HttpCookie.Domain%2A> property to completely describe the specific URL to which the cookie applies. For example, in the URL `http:/www.microsoft.com/asp`, the domain is `www.microsoft.com` and the path is /asp.
   
 ## Examples  
  The following code example sets the <xref:System.Web.HttpCookie.Path%2A> property of a new cookie.  

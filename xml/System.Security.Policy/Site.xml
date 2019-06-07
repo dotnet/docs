@@ -41,9 +41,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The presence of <xref:System.Security.Policy.Site> evidence produces a <xref:System.Security.Permissions.SiteIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.SiteIdentityPermission>, the <xref:System.Security.Permissions.SiteIdentityPermission> that corresponds to the <xref:System.Security.Policy.Site> evidence will be compared with the demanded permission.  
+
+The presence of <xref:System.Security.Policy.Site> evidence produces a <xref:System.Security.Permissions.SiteIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.SiteIdentityPermission>, the <xref:System.Security.Permissions.SiteIdentityPermission> that corresponds to the <xref:System.Security.Policy.Site> evidence will be compared with the demanded permission.  
   
- Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, www.fourthcoffee.com is the site identity in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+Site identity is defined for code from URLs with any protocol except FILE. A site is the string between the "//" after the protocol of a URL and the following "/", if present. For example, `www.fourthcoffee.com` is the site identity in the URL `http://www.fourthcoffee.com/process/grind.htm`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.
   
  ]]></format>
     </remarks>

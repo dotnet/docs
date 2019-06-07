@@ -85,6 +85,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      [!code-vb[VbVbalrAnonymousTypes#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#36)]  
   
      Note that changes in case (changes between uppercase and lowercase letters) do not make two names distinct.  
+
      ```vb
      Dim price = 0
      ' Not valid, because Price and price are the same name.

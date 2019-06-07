@@ -51,6 +51,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
 #### Name inference will fail in many circumstances, including the following:  
   
 - The inference derives from the invocation of a method, a constructor, or a parameterized property that requires arguments. The previous declaration of `anon1` fails if `someFunction` has one or more arguments.  
+
     ```vb
     ' Not valid.
     ' Dim anon3 = New With {Key sc.someFunction(someArg)}

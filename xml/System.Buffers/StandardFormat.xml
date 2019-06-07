@@ -140,7 +140,7 @@ Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:Syst
       </Parameters>
       <Docs>
         <param name="obj">An object to compare to the current instance.</param>
-        <summary>Returns a value that indicates whether a specified object is a <see cref="T:System.Buffers.StandardFormat"> object that is equal to the current instance.</summary>
+        <summary>Returns a value that indicates whether a specified object is a <see cref="T:System.Buffers.StandardFormat" /> object that is equal to the current instance.</summary>
         <returns><see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
        <remarks>  
           <format type="text/markdown"><![CDATA[  
@@ -202,7 +202,7 @@ Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:Syst
       </ReturnValue>a
       <Docs>
         <summary>Gets a value that indicates whether a format has a defined precision.</summary>
-        <value><see langword="true" /> if the format has a precision other than <see cref="F:System.Buffers.StandardFormat.NoPrecision">; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the format has a precision other than <see cref="F:System.Buffers.StandardFormat.NoPrecision" ?>; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,9 +319,9 @@ A default format has a format specifier whose <xref:System.Byte> value is 0 and 
         <Parameter Name="right" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>Returns a value that indicates whether two <see cref="T:System.Buffers.StandardFormat"> instances are equal.</summary>
+        <param name="left">The first format to compare.</param>
+        <param name="right">The second format to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Buffers.StandardFormat" /> instances are equal.</summary>
         <returns><see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
        <remarks>  
           <format type="text/markdown"><![CDATA[  
@@ -357,7 +357,7 @@ Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:Syst
         <Parameter Name="symbol" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="symbol">To be added.</param>
+        <param name="symbol">The character to convert to a <see cref="T:System.Buffers.StandardFormat" /> value.</param>
         <summary>Converts a character to a <see cref="T:System.Buffers.StandardFormat" /> instance using <see cref="F:System.Buffers.StandardFormat.NoPrecision" /> precision.</summary>
         <returns>A format with a <see cref="P:System.Buffers.StandardFormat.Symbol" /> property equal to <paramref name="symbol" /> and a <see cref="P:System.Buffers.StandardFormat.Precision" /> property equal to <see cref="F:System.Buffers.StandardFormat.NoPrecision" />.</returns>
         <remarks>To be added.</remarks>
@@ -427,9 +427,9 @@ Two <xref:System.Buffers.StandardFormat> instances are unequal if their <xref:Sy
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
+        <param name="format">A read-only span that contains the character to parse.</param>
         <summary>Converts a <see cref="T:System.ReadOnlySpan{System.Char}" /> into a <see cref="T:System.Buffers.StandardFormat" /> instance using <see cref="F:System.Buffers.StandardFormat.NoPrecision" /> precision.</summary>
-        <returns>To be added.</returns>
+        <returns>A value whose <see cref="P:System.Buffers.StandardFormat.Symbol" /> property value is the character in <paramref name="format" /> and whose <see cref="P:System.Buffers.StandardFormat.Precision" /> property value is <see cref="F:System.Buffers.StandardFormat.NoPrecision" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

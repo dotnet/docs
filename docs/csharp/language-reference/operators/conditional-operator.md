@@ -46,7 +46,7 @@ a ? b : (c ? d : e)
 
 The following example demonstrates the usage of the conditional operator:
 
-[!code-csharp[non ref conditional](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalValue)]
+[!code-csharp-interactive[non ref conditional](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalValue)]
 
 ## Conditional ref expression
 
@@ -64,7 +64,7 @@ In the case of the conditional ref expression, the type of `consequent` and `alt
 
 The following example demonstrates the usage of the conditional ref expression:
 
-[!code-csharp[conditional ref](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalRef)]
+[!code-csharp-interactive[conditional ref](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalRef)]
 
 For more information, see the [feature proposal note](../../../../_csharplang/proposals/csharp-7.2/conditional-ref.md).
 
@@ -80,7 +80,7 @@ The conditional operator cannot be overloaded.
 
 ## C# language specification
 
-For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Conditional operator](~/_csharplang/spec/expressions.md#conditional-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
@@ -88,6 +88,6 @@ For more information, see the [Conditional operator](~/_csharplang/spec/expressi
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
 - [if-else statement](../keywords/if-else.md)
-- [?. and ?[] Operators](member-access-operators.md#null-conditional-operators--and-)
-- [?? Operator](null-coalescing-operator.md)
+- [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
+- [?? operator](null-coalescing-operator.md)
 - [ref keyword](../keywords/ref.md)

@@ -488,7 +488,7 @@ Two <xref:System.Buffers.StandardFormat> instances are unequal if their <xref:Sy
       </ReturnValue>
       <Docs>
         <summary>Gets the precision component of the format.</summary>
-        <value>The precision component, which can be <see cref="F:System.Buffers.StandardFormat.NoPrecision" ?>, or can range from 0 to 9.</value>
+        <value>The precision component, which can be <see cref="F:System.Buffers.StandardFormat.NoPrecision" />, or can range from 0 to 9.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

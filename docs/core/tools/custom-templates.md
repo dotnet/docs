@@ -4,6 +4,7 @@ description: Learn about custom templates for any type of .NET project or files.
 author: mairaw
 ms.date: 08/11/2017
 ---
+
 # Custom templates for dotnet new
 
 The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed to use with the [`dotnet new` command](dotnet-new.md). Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
@@ -45,24 +46,35 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | `name`            | string        | The name for the template that users should see. |
 | `shortName`       | string        | A default shorthand for selecting the template that applies to environments where the template name is specified by the user, not selected via a GUI. For example, the short name is useful when using templates from a command prompt with CLI commands. |
 
-#### Example:
+#### Example
 
 ```json
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Catalina Garcia",
+  "author": "Travis	Chau",
   "classifications": [ "Common", "Console" ],
-  "identity": "GarciaSoftware.ConsoleTemplate.CSharp",
-  "name": "Garcia Software Console Application",
-  "shortName": "garciaconsole"
+  "identity": "AdatumCorporation.ConsoleTemplate.CSharp",
+  "name": "Adatum Corporation Console Application",
+  "shortName": "adatumconsole"
 }
 ```
 
-The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template).
+The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+
+For example, here is a template folder that contains a *console.cs* file and a *readme.txt* file. Note that there is a *.template.config* folder that contains the *template.json* file.
+
+```text
+└──mytemplate
+    │   console.cs
+    │   readme.txt
+    │
+    └───.template.config
+            template.json
+```
 
 ## .NET default templates
 
-When you install the [.NET Core SDK](https://www.microsoft.com/net/download/core), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, execute the `dotnet new` command with the `-l|--list` option:
+When you install the [.NET Core SDK](https://www.microsoft.com/net/download/core), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
 
 ```console
 dotnet new -l
@@ -70,9 +82,9 @@ dotnet new -l
 
 ## Packing a template into a NuGet package (nupkg file)
 
-Currently, a custom template is packed on Windows with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet pack](dotnet-pack.md)). For cross-platform packaging, consider using [NuGetizer 3000](https://github.com/NuGet/Home/wiki/NuGetizer-3000).
+A custom template is packed with the [dotnet pack](dotnet-pack.md) command and a *csproj* file. Alternatively, [NuGet](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference) can be used with the [nuget pack](https://docs.microsoft.com/nuget/tools/cli-ref-pack) command. However, NuGet requires the .NET Framework on Windows and [Mono](https://www.mono-project.com/) on Linux and MacOS.
 
-The contents of the project folder, together with its *.template.config/template.json* file, are placed into a folder named *content*. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package. Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<packageType>** element with a `name` attribute value of `Template`. Both the *content* folder and the *nuspec* file should reside in the same directory. The table shows the minimum *nuspec* file elements required to produce a template as a NuGet package.
+The contents of the project folder, together with its */.template.config/template.json* file, are placed into a folder named *content*. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package. Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<packageType>** element with a `name` attribute value of `Template`. Both the *content* folder and the *nuspec* file should reside in the same directory. The table shows the minimum *nuspec* file elements required to produce a template as a NuGet package.
 
 | Element            | Type   | Description |
 | ------------------ | ------ | ----------- |

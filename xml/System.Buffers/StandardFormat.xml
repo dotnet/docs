@@ -69,7 +69,7 @@ A `StandardFormat` object consists of a single character standard format specifi
 
 -or-
 
-<paramref name="symbol" /> cannot be converted to a <xref:System.Byte>.
+<paramref name="symbol" /> cannot be converted to a <see cref="T:System.Byte" />.
 
         </exception>
       </Docs>
@@ -199,7 +199,7 @@ Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:Syst
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>a
+      </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether a format has a defined precision.</summary>
         <value><see langword="true" /> if the format has a precision other than <see cref="F:System.Buffers.StandardFormat.NoPrecision" ?>; otherwise, <see langword="false" />.</value>

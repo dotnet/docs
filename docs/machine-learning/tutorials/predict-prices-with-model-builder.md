@@ -57,7 +57,7 @@ The provided data set contains the following columns:
 * **payment_type:** The payment method (cash or credit card) is a feature.
 * **fare_amount:** The total taxi fare paid is the label.
 
-The `label` is the column you want to predict. When performing a regression task, the label is a numerical value. In this price prediction scenario, the amount of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns are used as features or inputs to predict the fare amount.
+The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns are used as features or inputs to predict the fare amount.
 
 ## Choose a scenario
 

@@ -16,17 +16,22 @@ A static constructor is used to initialize any [static](../../../csharp/language
   
 - A static constructor does not take access modifiers or have parameters.  
   
-- A static constructor is called automatically to initialize the [class](../../../csharp/language-reference/keywords/class.md) before the first instance is created or any static members are referenced. Note that a type's static constructor is called when a static method assigned to an event or a delegate is invoked and not when it is assigned.
+- A static constructor is called automatically to initialize the [class](../../../csharp/language-reference/keywords/class.md) before the first instance is created or any static members are referenced. A static constructor will run before an instance constructor. Note that a type's static constructor is called when a static method assigned to an event or a delegate is invoked and not when it is assigned.
+
+- If you don't provide a static constructor to initialize static fields, the C# compiler will supply a default static constructor that initializes static fields to their default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). 
+
+- A static constructor cannot be called directly and is only meant to be called by the common language runtime (CLR).  
   
-- A static constructor cannot be called directly.  
-  
-- The user has no control on when the static constructor is executed in the program.  
-  
+- If a static constructor throws an exception, the runtime will not invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain in which your program is running. Most commonly, a <xref:System.TypeInitializationException> exception is thrown when a static constructor is unable to instantiate a type or for an unhandled exception within a static constructor. For implicit static constructors that are not explicitly defined in source code, troubleshooting may require inspection of the intermediate language (IL) code.
+
+> [!Note]
+> Though not directly accessible, the presence of an explicit static constructor should be documented to assist with troubleshooting initialization exceptions.
+
+## Usage
+
 - A typical use of static constructors is when the class is using a log file and the constructor is used to write entries to this file.  
-  
 - Static constructors are also useful when creating wrapper classes for unmanaged code, when the constructor can call the `LoadLibrary` method.  
   
-- If a static constructor throws an exception, the runtime will not invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain in which your program is running.  
   
 ## Example  
  In this example, class `Bus` has a static constructor. When the first instance of `Bus` is created (`bus1`), the static constructor is invoked to initialize the class. The sample output verifies that the static constructor runs only one time, even though two instances of `Bus` are created, and that it runs before the instance constructor runs.  
@@ -40,3 +45,4 @@ A static constructor is used to initialize any [static](../../../csharp/language
 - [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
 - [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
 - [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+- [Security Warning - CA2121: Static constructors should be private](https://docs.microsoft.com/en-us/visualstudio/code-quality/ca2121-static-constructors-should-be-private)

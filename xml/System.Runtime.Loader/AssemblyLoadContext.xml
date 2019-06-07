@@ -124,9 +124,17 @@ This constructor is protected. It can only be called from the <xref:System.Runti
       </Parameters>
       <Docs>
         <param name="isCollectible">
-          <see langword="true" /> to enable garbage collection; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> class with a value that indicates whether garbage collection is enabled. </summary>
-        <remarks>To be added.</remarks>
+          <see langword="true" /> to enable <see cref="M:System.Runtime.Loader.AssemblyLoadContext.Unload" />; otherwise, <see langword="false" />. The default value is <see langword="false" /> because there is a performance cost associated with enabling unloading.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> class with a value that indicates whether unloading is enabled. </summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This constructor is protected. It can only be called from the <xref:System.Runtime.Loader.AssemblyLoadContext> class or its derived classes.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,9 +153,10 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <Parameter Name="isCollectible" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="isCollectible">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The value for <see cref="P:System.Runtime.Loader.AssemblyLoadContext.Name" /> in the new instance. Its value can be <see langword="null" />.</param>
+        <param name="isCollectible">
+          <see langword="true" /> to enable <see cref="M:System.Runtime.Loader.AssemblyLoadContext.Unload" />; otherwise, <see langword="false" />. The default value is <see langword="false" /> because there is a performance cost associated with enabling unloading.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> class with a name and a value that indicates whether unloading is enabled.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,8 +176,8 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Runtime.Loader.AssemblyLoadContext&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a collection of all <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> instances.</summary>
+        <value>A collection of all <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> instances.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,8 +197,8 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a collection of the <see cref="T:System.Reflection.Assembly" /> instances loaded in the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <value>A collection of the <see cref="T:System.Reflection.Assembly" /> instances loaded in the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +218,16 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <ReturnType>System.Runtime.Loader.AssemblyLoadContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> set by the most recent call to <see cref="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection" />.</summary>
+        <value>The <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> set by the most recent call to <see cref="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection" />. This value can be <see langword="null" />. The value is stored in an <see cref="T:System.Threading.AsyncLocal`1" />, so the value is unique per asynchronous context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+For more information, see [AssemblyLoadContext.CurrentContextualReflectionContext design doc in .NET Core](https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/AssemblyLoadContext.ContextualReflection.md).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -259,9 +275,16 @@ This constructor is protected. It can only be called from the <xref:System.Runti
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Sets <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" /> to <see langword="this" /> <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <returns>An object to restore the previous value of <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" />. It is intended to be used as an <see cref="T:System.IDisposable" /> in a <see langword="using" /> block.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+For more information, see [AssemblyLoadContext.CurrentContextualReflectionContext design doc in .NET Core](https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/AssemblyLoadContext.ContextualReflection.md).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnterContextualReflection">
@@ -283,10 +306,17 @@ This constructor is protected. It can only be called from the <xref:System.Runti
         <Parameter Name="activating" Type="System.Reflection.Assembly" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="activating">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="activating">The assembly that is used to determine the requested <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> instance.</param>
+        <summary>Sets <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" /> to the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" /> which loaded the assembly.</summary>
+        <returns>An object to restore the previous value of <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" />. It is intended to be used as an <see cref="T:System.IDisposable" /> in a <see langword="using" /> block.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+For more information, see [AssemblyLoadContext.CurrentContextualReflectionContext design doc in .NET Core](https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/AssemblyLoadContext.ContextualReflection.md).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAssemblyName">
@@ -744,8 +774,8 @@ Each <xref:System.Runtime.Loader.AssemblyLoadContext> can load only:
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Get the name of the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <value>The name of the <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />. Its value can be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

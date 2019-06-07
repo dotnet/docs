@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a return type used exclusively for <see cref="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection" />. It is intended to be used as an <see cref="T:System.IDisposable" /> in a <see langword="using" /> block.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +42,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" /> to the value preceding the call to <see cref="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection" /> which returned this instance.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

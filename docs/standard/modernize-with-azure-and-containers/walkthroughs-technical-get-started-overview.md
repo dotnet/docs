@@ -290,6 +290,10 @@ An simple containerized application using Windows Containers can easily be deplo
 
 The goal of this walkthrough is to learn how to deploy a Windows Container–based application to Azure App Service for Containers from a registry (Docker Hub or Azure Container Registry).
 
+### Scenario
+
+![Deploy Windows Container-based app to Azure App Service for Containers](./media/image5-11.png)
+
 ### Benefits
 
 Deploying to Azure App Service for Containers offers the benefits of containers paired with the PaaS benefits of Azure App Service. The app service can easily be scaled both vertically and horizontally, and can be configured to autoscale to meet changing demands. Updates can be performed with zero downtime and configuration of continuous deployment from a registry is easily configured as well.

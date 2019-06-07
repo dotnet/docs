@@ -74,6 +74,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      [!code-vb[VbVbalrAnonymousTypes#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#14)]  
   
 - Inference for multiple properties produces two or more properties that have the same name. Referring back to declarations in earlier examples, you cannot list both `product.Name` and `car1.Name` as properties of the same anonymous type. This is because the inferred identifier for each of these would be `Name`.  
+
      ```vb
      ' Not valid.
      ' Dim anon5 = New With {Key product.Name, Key car1.Name}

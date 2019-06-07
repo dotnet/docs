@@ -53,7 +53,7 @@
    
   
 ## Examples  
- The following example establishes a <xref:System.Net.Sockets.UdpClient> connection using the host name www.contoso.com on port 11000. A small string message is sent to two separate remote host machines. The <xref:System.Net.Sockets.UdpClient.Receive%2A> method blocks execution until a message is received. Using the <xref:System.Net.IPEndPoint> passed to <xref:System.Net.Sockets.UdpClient.Receive%2A>, the identity of the responding host is revealed.  
+ The following example establishes a <xref:System.Net.Sockets.UdpClient> connection using the host name `www.contoso.com` on port 11000. A small string message is sent to two separate remote host machines. The <xref:System.Net.Sockets.UdpClient.Receive%2A> method blocks execution until a message is received. Using the <xref:System.Net.IPEndPoint> passed to <xref:System.Net.Sockets.UdpClient.Receive%2A>, the identity of the responding host is revealed.  
   
  [!code-cpp[Classic UdpClientExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UdpClientExample/CPP/source.cpp#1)]
  [!code-csharp[Classic UdpClientExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UdpClientExample/CS/source.cs#1)]

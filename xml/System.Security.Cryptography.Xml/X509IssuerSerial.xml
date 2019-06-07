@@ -36,7 +36,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure to specify a certificate issuer's distinguished name and serial number pair when using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class.  You can add an <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure to the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property.  Alternatively, you can add string values that represent the X.509 certificate issuer's distinguished name and serial number pair using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method.  
   
- For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<X509IssuerSerial`> element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -85,7 +85,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName%2A> property represents an X.509 certificate issuer's distinguished name specified in the `<X509IssuerSerial`> element.  
   
- For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<X509IssuerSerial`> element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -134,7 +134,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber%2A> property represents an X.509 certificate issuer's serial number specified in the `<X509IssuerSerial`> element.  
   
- For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<X509IssuerSerial`> element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   

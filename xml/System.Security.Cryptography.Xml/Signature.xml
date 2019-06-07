@@ -29,7 +29,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.Signature> class represents the <`Signature`> element of an XML signature defined by the XML digital signature specification. The <`Signature`> element is the root element of an XML digital signature. The <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A>, <xref:System.Security.Cryptography.Xml.Signature.SignatureValue%2A>, <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A>, and <xref:System.Security.Cryptography.Xml.Signature.ObjectList%2A> properties encapsulate the subelements of the <`Signature`> element.  
   
- For more information about the <`Signature`> element, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the <`Signature`> element, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -238,7 +238,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A> property uses a <xref:System.Security.Cryptography.Xml.KeyInfo> object to represent the <`KeyInfo`> element of an XML digital signature.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -333,7 +333,7 @@
   
  You can also add a <xref:System.Security.Cryptography.Xml.DataObject> to this collection using the <xref:System.Security.Cryptography.Xml.Signature.AddObject%2A> method.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -372,7 +372,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.Signature.SignatureValue%2A> property uses a byte array to represent the <`SignatureValue`> element of an XML digital signature contained within.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -411,7 +411,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A> property uses the <xref:System.Security.Cryptography.Xml.SignedInfo> class to represent the <`SignedInfo`> element of an XML digital signature contained within.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   

@@ -35,7 +35,7 @@
   
  If you want to sign only a portion of an XML document, you can use a transform to identify the XML elements you intend to sign.  Note that the <xref:System.Security.Cryptography.Xml.Reference.Uri%2A> property and the <xref:System.Security.Cryptography.Xml.EncryptedReference.Uri%2A> property automatically create internal transforms that allow you to sign a portion of a document.  
   
- For more information about transforms, see the XMLDSIG specification, which is available from the W3C at www.w3.org/TR/xmldsig-core/, or see the XML encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ For more information about transforms, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/) or the [XML encryption specification](https://www.w3.org/TR/xmlenc-core/), which are available from the W3C website.  
   
  ]]></format>
     </remarks>

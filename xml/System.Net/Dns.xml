@@ -40,7 +40,7 @@
    
   
 ## Examples  
- The following example queries the DNS database for information on the host www.contoso.com.  
+ The following example queries the DNS database for information on the host `www.contoso.com`.  
   
  [!code-cpp[Classic Dns Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Dns Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Dns Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Dns Example/CS/source.cs#1)]

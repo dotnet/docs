@@ -346,7 +346,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlAnyElementAttribute.Namespace%2A> property allows you to set a unique name for the XML attribute. The <xref:System.Xml.Serialization.XmlAnyElementAttribute.Namespace%2A> property conforms to the rules for creating an XML namespace as found in the World Wide Web Consortium (www.w3.org) document, "Namespaces in XML."  
+ The <xref:System.Xml.Serialization.XmlAnyElementAttribute.Namespace%2A> property allows you to set a unique name for the XML attribute. The <xref:System.Xml.Serialization.XmlAnyElementAttribute.Namespace%2A> property conforms to the rules for creating an XML namespace as found in the [Namespaces in XML](https://www.w3.org/TR/xml-names/) document from the World Wide Web Consortium.
   
  To set the <xref:System.Xml.Serialization.XmlAnyElementAttribute.Namespace%2A> property to a prefixed name, create an <xref:System.Xml.Serialization.XmlSerializerNamespaces> that contains the namespaces and prefixes used in the XML document. Set the <xref:System.Xml.Serialization.XmlAnyElementAttribute.Namespace%2A> property to one of the namespaces in the <xref:System.Xml.Serialization.XmlSerializerNamespaces>. When the XML is generated, the attribute name is correctly prefixed with the prefix associated with the specified namespace.  
   

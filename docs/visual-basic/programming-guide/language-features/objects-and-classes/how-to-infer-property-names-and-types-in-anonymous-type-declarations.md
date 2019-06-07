@@ -37,6 +37,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      The resulting type for `anon` would have one property, `Book`, of type <xref:System.Collections.IEnumerable>(Of XElement).  
   
 - From a function that has no parameters, such as `SomeFunction` in the following example.  
+
   ```vb
      Dim sc As New SomeClass
      Dim anon1 = New With {Key sc.SomeFunction()}

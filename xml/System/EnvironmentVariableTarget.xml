@@ -34,29 +34,34 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.EnvironmentVariableTarget> enumeration is used by certain overloads of the <xref:System.Environment.SetEnvironmentVariable%2A?displayProperty=nameWithType>, <xref:System.Environment.GetEnvironmentVariable%2A?displayProperty=nameWithType>, and <xref:System.Environment.GetEnvironmentVariables%2A?displayProperty=nameWithType> methods to specify the location, or target, where the name and value of an environment variable is stored or retrieved.  
+## Remarks
+
+The <xref:System.EnvironmentVariableTarget> enumeration is used by certain overloads of the <xref:System.Environment.SetEnvironmentVariable%2A?displayProperty=nameWithType>, <xref:System.Environment.GetEnvironmentVariable%2A?displayProperty=nameWithType>, and <xref:System.Environment.GetEnvironmentVariables%2A?displayProperty=nameWithType> methods to specify the location, or target, where the name and value of an environment variable is stored or retrieved.  
   
- The target can be one of three locations: 
+The target can be one of three locations: 
  
- - The environment block associated with the current process (`EnvironmentVariableTarget.Process`).
+- The environment block associated with the current process (`EnvironmentVariableTarget.Process`).
 
-   The user creates the environment variable in a set operation. When the process terminates, the operating system destroys the environment variable in that process.
+  The user creates the environment variable in a set operation. When the process terminates, the operating system destroys the environment variable in that process.
 
- - The Windows operating system registry key reserved for environment variables associated with the current user (`EnvironmentVariableTarget.User`).
+- The Windows operating system registry key reserved for environment variables associated with the current user (`EnvironmentVariableTarget.User`).
  
-   When the user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If the user starts a new process, the operating system copies the environment variable from the registry to that process. When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until the user removes it programmatically or by means of an operating system tool.  
-   
- - The registry key reserved for environment variables associated with all users on the local machine (`EnvironmentVariableTarget.Machine`). 
+  On Windows systems, when the user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If the user starts a new process, the operating system copies the environment variable from the registry to that process. When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until the user removes it programmatically or by means of an operating system tool.  
 
-    When a user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If any user on the local machine starts a new process, the operating system copies the environment variable from the registry to that process. When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until a user removes it programmatically or by means of an operating system tool.
- 
+  On Unix-based systems, an attempt to create an enviroment variable with `EnvironmentVariable.User` has no effect, and an attempt to retrieve an enviroment variable using `EnvironmentVariable.User` returns `null` (in C#) or `Nothing` (in Visual Basic).
+
+- The registry key reserved for environment variables associated with all users on the local machine (`EnvironmentVariableTarget.Machine`). 
+
+  When a user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If any user on the local machine starts a new process, the operating system copies the environment variable from the registry to that process. When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until a user removes it programmatically or by means of an operating system tool.
+
+  On Unix-based systems, an attempt to create an enviroment variable with `EnvironmentVariable.Machine` has no effect, and an attempt to retrieve an enviroment variable using `EnvironmentVariable.Machine` returns `null` (in C#) or `Nothing` (in Visual Basic).
+
 ## Examples  
- The following code example demonstrates the <xref:System.EnvironmentVariableTarget> enumeration in methods that create, modify, and delete environment variables.  
+
+The following example uses the <xref:System.EnvironmentVariableTarget> enumeration in methods that create, retrieve, and delete environment variables. The output from the example shows that environmnent variables stored and retrieved without specifying a `EnvironmentVariableTarget` value are stored in the environment block associated with the current process (`EnvironmentVariableTarget.Process`). The example output from Unix-based systems also shows that attempts to define an environment variable with a value other than `EnvironmentVariableTarget.Process` is ignored.    
   
- [!code-cpp[environment.getsetenvar#1](~/samples/snippets/cpp/VS_Snippets_CLR/environment.getsetenvar/CPP/source.cpp#1)]
- [!code-csharp[environment.getsetenvar#1](~/samples/snippets/csharp/VS_Snippets_CLR/environment.getsetenvar/CS/gsev.cs#1)]
- [!code-vb[environment.getsetenvar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/environment.getsetenvar/VB/gsev.vb#1)]  
+[!code-csharp[environment.getsetenvar#1](~/samples/snippets/csharp/VS_Snippets_CLR/environment.getsetenvar/CS/gsev.cs)]
+[!code-vb[environment.getsetenvar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/environment.getsetenvar/VB/gsev.vb)]  
   
  ]]></format>
     </remarks>
@@ -91,7 +96,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The environment variable is stored or retrieved from the <see langword="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment" /> key in the Windows operating system registry.</summary>
+        <summary>The environment variable is stored or retrieved from the <see langword="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment" /> key in the Windows operating system registry. This value should be used on .NET implementations running on Windows systems only. </summary>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -155,7 +160,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The environment variable is stored or retrieved from the <see langword="HKEY_CURRENT_USER\Environment" /> key in the Windows operating system registry.</summary>
+        <summary>The environment variable is stored or retrieved from the <see langword="HKEY_CURRENT_USER\Environment" /> key in the Windows operating system registry. This value should be used on .NET implementations running on Windows systems only.</summary>
       </Docs>
     </Member>
   </Members>

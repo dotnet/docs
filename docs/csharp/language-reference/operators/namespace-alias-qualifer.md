@@ -39,8 +39,7 @@ For an example of how to use the `::` operator, see the following section:
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# reference](../index.md)
 - [C# operators](index.md)
 - [. operator](member-access-operators.md#member-access-operator-)
 - [extern alias](../keywords/extern-alias.md)

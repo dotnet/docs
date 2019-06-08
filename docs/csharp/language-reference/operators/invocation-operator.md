@@ -48,6 +48,5 @@ For more information, see the [Invocation expressions](~/_csharplang/spec/expres
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)

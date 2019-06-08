@@ -84,9 +84,8 @@ For more information, see the [Conditional operator](~/_csharplang/spec/expressi
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [if-else statement](../keywords/if-else.md)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?? operator](null-coalescing-operator.md)

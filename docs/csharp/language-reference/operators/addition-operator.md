@@ -73,13 +73,11 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [String interpolation](../tokens/interpolated.md)
 - [How to: concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
 - [Delegates](../../programming-guide/delegates/index.md)
 - [Events](../../programming-guide/events/index.md)
-- [Checked and unchecked](../keywords/checked-and-unchecked.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [- and -= operators](subtraction-operator.md)

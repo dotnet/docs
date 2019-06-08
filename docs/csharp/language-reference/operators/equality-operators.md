@@ -73,9 +73,8 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - <xref:System.IEquatable%601?displayProperty=nameWithType>
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>
 - <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>

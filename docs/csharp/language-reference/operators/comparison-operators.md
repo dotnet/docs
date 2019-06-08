@@ -67,8 +67,7 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - <xref:System.IComparable%601?displayProperty=nameWithType>
 - [Equality operators](equality-operators.md)

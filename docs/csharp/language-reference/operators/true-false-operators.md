@@ -31,8 +31,7 @@ Wait!
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
-- [`true` literal](../keywords/true-literal.md)
-- [`false` literal](../keywords/false-literal.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
+- [true literal](../keywords/true-literal.md)
+- [false literal](../keywords/false-literal.md)

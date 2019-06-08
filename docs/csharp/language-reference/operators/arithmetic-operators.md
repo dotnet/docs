@@ -258,9 +258,8 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - <xref:System.Math?displayProperty=nameWithType>
 - <xref:System.MathF?displayProperty=nameWithType>
 - [Numerics in .NET](../../../standard/numerics.md)

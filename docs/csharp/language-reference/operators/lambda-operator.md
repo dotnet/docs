@@ -70,8 +70,7 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)

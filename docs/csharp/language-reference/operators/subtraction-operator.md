@@ -74,11 +74,9 @@ For more information, see the [Unary minus operator](~/_csharplang/spec/expressi
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Delegates](../../programming-guide/delegates/index.md)
 - [Events](../../programming-guide/events/index.md)
-- [Checked and unchecked](../keywords/checked-and-unchecked.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [+ and += operators](addition-operator.md)

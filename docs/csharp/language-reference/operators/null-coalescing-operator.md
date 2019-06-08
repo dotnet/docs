@@ -53,8 +53,7 @@ For more information, see [The null coalescing operator](~/_csharplang/spec/expr
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# reference](../index.md)
 - [C# operators](index.md)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?: operator](conditional-operator.md)

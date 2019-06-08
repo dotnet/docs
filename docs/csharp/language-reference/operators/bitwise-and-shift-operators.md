@@ -188,7 +188,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Boolean logical operators](boolean-logical-operators.md)

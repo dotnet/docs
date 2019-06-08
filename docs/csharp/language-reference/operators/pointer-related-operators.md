@@ -181,11 +181,10 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [`unsafe` keyword](../keywords/unsafe.md)
-- [`fixed` keyword](../keywords/fixed-statement.md)
-- [`stackalloc` operator](../keywords/stackalloc.md)
-- [`sizeof` operator](../keywords/sizeof.md)
+- [unsafe keyword](../keywords/unsafe.md)
+- [fixed keyword](../keywords/fixed-statement.md)
+- [stackalloc operator](../keywords/stackalloc.md)
+- [sizeof operator](../keywords/sizeof.md)

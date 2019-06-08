@@ -215,8 +215,6 @@ These operators have higher precedence than the next section and lower precedenc
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C#](../../index.md)
+- [C# reference](../index.md)
+- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
 - [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
-- [C# Keywords](../keywords/index.md)

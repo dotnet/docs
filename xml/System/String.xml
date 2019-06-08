@@ -97,7 +97,7 @@
 -   By calling a <xref:System.String> class constructor. The following example instantiates strings by calling several class constructors. Note that some of the constructors include pointers to character arrays or signed byte arrays as parameters. Visual Basic does not support calls to these constructors. For detailed information about <xref:System.String> constructors, see the <xref:System.String.%23ctor%2A> constructor summary.  
   
      [!code-cpp[System.String.Class.Instantiate#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate2.cpp#2)]
-     [!code-csharp-interactive[System.String.Class.Instantiate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#2)]
+     [!code-csharp[System.String.Class.Instantiate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#2)]
      [!code-vb[System.String.Class.Instantiate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#2)]  
   
 -   By using the string concatenation operator (+ in C# and & or + in Visual Basic) to create a single string from any combination of <xref:System.String> instances and string literals. The following example illustrates the use of the string concatenation operator.  

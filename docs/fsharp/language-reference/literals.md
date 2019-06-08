@@ -1,7 +1,7 @@
 ---
 title: Literals
 description: Learn about the literal types in the F# programming language.
-ms.date: 02/08/2019
+ms.date: 06/08/2019
 ---
 # Literals
 

@@ -38,7 +38,7 @@ The following table shows the literal types in F#. Characters that represent dig
 |byte[]|ASCII string|B|`"text"B`|
 |String or byte[]|verbatim string|@ prefix|`@"\\server\share"` (Unicode)<br /><br />`@"\\server\share"B` (ASCII)|
 
-## Named Literals
+## Named literals
 
 Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/library/465f36ce-d146-41c0-b425-679c509cd285) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
@@ -67,7 +67,7 @@ Unicode strings can contain explicit encodings that you can specify by using `\u
 
 The use of other bitwise operators other than `|||` isn't allowed.
 
-## Integers In Other Bases
+## Integers in other bases
 
 Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
 
@@ -76,7 +76,7 @@ let numbers = (0x9F, 0o77, 0b1010)
 // Result: numbers : int * int * int = (159, 63, 10)
 ```
 
-## Underscores in Numeric Literals
+## Underscores in numeric literals
 
 You can separate digits with the underscore character (`_`).
 

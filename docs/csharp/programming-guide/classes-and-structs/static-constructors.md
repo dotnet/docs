@@ -39,7 +39,7 @@ A static constructor is used to initialize any [static](../../../csharp/language
  [!code-csharp[csProgGuideObjects#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#15)]
  
 ## C# language specification  
-For more information, see the [Static constructors](~/_csharplang/spec/classes.md#static-constructors) section of the [C# language specification](../../language-reference/language-specification/index.md).
+For more information, see the [Static constructors](~/_csharplang/spec/classes.md#static-constructors) section of the [C# language specification](~/_csharplang/spec/introduction.md).
   
 ## See also
 

@@ -21,6 +21,6 @@ ms.custom: mvc
 
 ## Use pre-trained ONNX model
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L59)]
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L59-L62)]
 
 ## Detect objects

@@ -288,7 +288,7 @@ F# inherits both the postfix ML style of naming generic types (for example, `int
 
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
-2. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
+3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
 4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
 5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
 

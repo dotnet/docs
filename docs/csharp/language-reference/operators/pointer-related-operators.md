@@ -34,7 +34,7 @@ You can use the following operators to work with pointers:
 For information about pointer types, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
 
 > [!NOTE]
-> Any operation with pointers requires [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
+> Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
 
 ## Address-of operator &amp;
 
@@ -90,7 +90,7 @@ The following example demonstrates how to access array elements with a pointer a
 
 [!code-csharp[pointer element access](~/samples/csharp/language-reference/operators/PointerOperators.cs#ElementAccess)]
 
-The example uses the [`stackalloc` operator](../keywords/stackalloc.md) to allocate a block of memory on the stack.
+The example uses the [`stackalloc` operator](stackalloc.md) to allocate a block of memory on the stack.
 
 > [!NOTE]
 > The pointer element access operator doesn't check for out-of-bounds errors.
@@ -187,5 +187,5 @@ For more information, see the following sections of the [C# language specificati
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [`unsafe` keyword](../keywords/unsafe.md)
 - [`fixed` keyword](../keywords/fixed-statement.md)
-- [`stackalloc` operator](../keywords/stackalloc.md)
+- [`stackalloc` operator](stackalloc.md)
 - [`sizeof` operator](../keywords/sizeof.md)

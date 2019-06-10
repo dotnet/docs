@@ -64,7 +64,7 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
   
 - [!INCLUDE[iisver](../../../../../includes/iisver-md.md)] is running in Integrated mode.  
   
-- The application is using the [!INCLUDE[net_v35SP1_short](../../../../../includes/net-v35sp1-short-md.md)] or a later version.  
+- The application is using the .NET Framework 3.5 SP1 or a later version.  
   
  The values in the example are the default values.  
   

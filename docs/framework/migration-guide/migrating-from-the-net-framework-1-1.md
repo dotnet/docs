@@ -54,9 +54,9 @@ To assess the impact of possible breaking changes on your application, you must 
 
 - [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in .NET Framework 2.0 SP1 that can affect an application that targets .NET Framework 1.1.
 
-- [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the .NET Framework 3.5 and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].
+- [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the .NET Framework 3.5 and the .NET Framework 3.5 SP1.
 
-- [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) documents changes between the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] and the .NET Framework 4.
+- [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) documents changes between the .NET Framework 3.5 SP1 and the .NET Framework 4.
 
 ## Obsolete Types and Members
 

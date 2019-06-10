@@ -15,6 +15,8 @@ ms.custom: mvc
 
 ## Pre-requisites
 
+- Visual Studio 2017 15.6+
+
 ## Understand the problem
 
 ## Create console application

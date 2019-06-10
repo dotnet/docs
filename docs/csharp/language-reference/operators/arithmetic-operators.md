@@ -1,5 +1,5 @@
 ---
-title: "Arithmetic operators - C# Reference"
+title: "Arithmetic operators - C# reference"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
 ms.date: 03/27/2019
 author: pkulikov
@@ -28,7 +28,7 @@ helpviewer_keywords:
   - "subtraction operator [C#]"
   - "- operator [C#]"
 ---
-# Arithmetic operators (C# Reference)
+# Arithmetic operators (C# reference)
 
 The following operators perform arithmetic operations with numeric types:
 

@@ -1,5 +1,5 @@
 ---
-title: "+ and += operators - C# Reference"
+title: "+ and += operators - C# reference"
 ms.custom: seodec18
 ms.date: 05/24/2019
 f1_keywords: 
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "+= operator [C#]"
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
-# + and += operators (C# Reference)
+# + and += operators (C# reference)
 
 The `+` operator is supported by the built-in numeric types, [string](../keywords/string.md) type, and [delegate](../keywords/delegate.md) types.
 

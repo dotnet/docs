@@ -1,5 +1,5 @@
 ---
-title: "?? operator - C# Reference"
+title: "?? operator - C# reference"
 ms.custom: seodec18
 ms.date: 06/07/2019
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "?? operator [C#]"
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
 ---
-# ?? operator (C# Reference)
+# ?? operator (C# reference)
 
 The null-coalescing operator `??` returns the value of its left-hand operand if it isn't `null`; otherwise, it evaluates the right-hand operand and returns its result. The `??` operator doesn't evaluate its right-hand operand if the left-hand operand evaluates to non-null.
 

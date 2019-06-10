@@ -1,5 +1,5 @@
 ---
-title: "stackalloc operator - C# Reference"
+title: "stackalloc operator - C# reference"
 ms.custom: seodec18
 ms.date: 06/10/2019
 f1_keywords: 
@@ -7,7 +7,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "stackalloc operator [C#]"
 ---
-# stackalloc operator (C# Reference)
+# stackalloc operator (C# reference)
 
 The `stackalloc` operator allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You cannot explicitly free memory allocated with the `stackalloc` operator. A stack allocated memory block is not subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with the [`fixed` statement](../keywords/fixed-statement.md).
 

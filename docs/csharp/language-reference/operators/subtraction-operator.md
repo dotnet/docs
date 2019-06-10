@@ -1,5 +1,5 @@
 ---
-title: "- and -= operators - C# Reference"
+title: "- and -= operators - C# reference"
 ms.custom: seodec18
 ms.date: 05/27/2019
 f1_keywords: 
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "-= operator [C#]"
 ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
 ---
-# - and -= operators (C# Reference)
+# - and -= operators (C# reference)
 
 The `-` operator is supported by the built-in numeric types and [delegate](../keywords/delegate.md) types.
 

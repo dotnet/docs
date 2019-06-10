@@ -11,8 +11,7 @@ As a *by-default* recommendation, the following is the main criteria recommended
 
 - **Single monolithic app:** Choose Azure App Service
 - **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS)or App Service if you have a single or few back-end services
-- **Linux microservices:** Choose AKS/Kubernetes
-- **Windows microservices:** Choose Azure Web Apps for Containers
+- **Microservices:** Choose AKS or Azure Web Apps for Containers
 - **Serverless functions & event handlers:** Choose Azure Functions
 - **Large-scale Batch:** Choose Azure Batch
 

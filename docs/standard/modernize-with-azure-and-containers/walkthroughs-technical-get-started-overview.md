@@ -128,7 +128,7 @@ Explore this content more in-depth on the GitHub wiki:
 ### Technical walkthrough availability
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
-<https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)>
+<https://github.com/dotnet-architecture/eShopModernizing/wiki/06.-Deploying-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)>
 
 ### Overview
 
@@ -174,7 +174,7 @@ Although Windows Containers can be deployed to on-premises Windows Server 2016 V
 
 Explore this content more in-depth on the GitHub wiki:
 
-<https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-How-to-deploy-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)>
+<https://github.com/dotnet-architecture/eShopModernizing/wiki/06.-Deploying-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD)>
 
 ## Walkthrough 4: Deploy your Windows Containers-based apps to Azure Container Instances (ACI)
 
@@ -212,7 +212,7 @@ As main conclusion, using Azure Container Instances is a very compelling option 
 
 Explore this content more in-depth on the GitHub wiki:
 
-[https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances)TBD)
+[https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances))
 
 ## Walkthrough 5: Deploy your Windows Containers-based apps to Kubernetes in Azure Container Service
 
@@ -220,7 +220,7 @@ Explore this content more in-depth on the GitHub wiki:
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
-<https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-C-CD)>
+<https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
 ### Overview
 
@@ -272,7 +272,35 @@ With Kubernetes, developers can progress from thinking about physical and virtua
 
 ## Next steps
 
-Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-C-CD)>
+Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
+
+## Walkthrough 6: Deploy your Windows Containers-based apps to Azure App Service for Containers
+
+### Technical walkthrough availability
+
+The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
+
+<https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service>
+
+### Overview
+
+A simple containerized application using Windows Containers can easily be deployed to Azure App Service for Containers. This is the recommended approach for most Windows Container-based applications.
+
+### Goals
+
+The goal of this walkthrough is to learn how to deploy a Windows Container–based application to Azure App Service for Containers from a registry (Docker Hub or Azure Container Registry).
+
+### Scenario
+
+![Deploy Windows Container-based app to Azure App Service for Containers](./media/image5-11.png)
+
+### Benefits
+
+Deploying to Azure App Service for Containers offers the benefits of containers paired with the PaaS benefits of Azure App Service. The app service can easily be scaled both vertically and horizontally, and can be configured to autoscale to meet changing demands. Updates can be performed with zero downtime and configuration of continuous deployment from a registry is easily configured as well.
+
+## Next steps
+
+Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service>
 
 > [!div class="step-by-step"]
 > [Previous](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)

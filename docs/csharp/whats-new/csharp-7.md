@@ -291,7 +291,7 @@ not an expression, there were C# constructs where you couldn't use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
-constructs, C# 7.0 introduces *throw expressions*.
+constructs, C# 7.0 introduces [*throw expressions*](../language-reference/keywords/throw.md#the-throw-expression).
 
 This addition makes it easier to write more expression-based code. You don't need additional statements for error checking.
 

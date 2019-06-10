@@ -10,7 +10,7 @@ ms.author: "ronpet"
 ---
 # Migrating from the .NET Framework 1.1
 
-[!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system do not support the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)]. As a result, applications that target the .NET Framework 1.1 will not run without modification on [!INCLUDE[win7](../../../includes/win7-md.md)] or later operating system versions. This topic discusses the steps required to run an application that targets the .NET Framework 1.1 under [!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system. For more information about the [!INCLUDE[net_v11_long](../../../includes/net-v11-long-md.md)] and [!INCLUDE[win8](../../../includes/win8-md.md)], see [Running .NET Framework 1.1 Apps on Windows 8 and later versions](../../../docs/framework/install/run-net-framework-1-1-apps.md).
+[!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system do not support the .NET Framework 1.1. As a result, applications that target the .NET Framework 1.1 will not run without modification on [!INCLUDE[win7](../../../includes/win7-md.md)] or later operating system versions. This topic discusses the steps required to run an application that targets the .NET Framework 1.1 under [!INCLUDE[win7](../../../includes/win7-md.md)] and later versions of the Windows operating system. For more information about the .NET Framework 1.1 and [!INCLUDE[win8](../../../includes/win8-md.md)], see [Running .NET Framework 1.1 Apps on Windows 8 and later versions](../../../docs/framework/install/run-net-framework-1-1-apps.md).
 
 ## Retargeting or Recompiling
 
@@ -52,7 +52,7 @@ However, in some cases, you may have to modify your source code and recompile yo
 
 To assess the impact of possible breaking changes on your application, you must review the following lists of changes:
 
-- [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)] that can affect an application that targets .NET Framework 1.1.
+- [Breaking Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkId=125263) documents changes in .NET Framework 2.0 SP1 that can affect an application that targets .NET Framework 1.1.
 
 - [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the .NET Framework 3.5 and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].
 
@@ -62,4 +62,4 @@ To assess the impact of possible breaking changes on your application, you must 
 
 The impact of deprecated types and members is somewhat different for retargeted applications and recompiled applications. The use of obsolete types and members will not affect a retargeted application unless the obsolete type or member has been physically removed from its assembly. Recompiling an application that uses obsolete types or members usually produces a compiler warning rather than a compiler error. However, in some cases, it produces a compiler error, and code that uses the obsolete type or member does not compile successfully. In this case, you must rewrite the source code that calls the obsolete type or member before you recompile your application. For more information about obsolete types and members, see [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md).
 
-To assess the impact of types and members that have been deprecated since the release of the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)], see [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md). Review the lists of obsolete types and member for the [!INCLUDE[net_v20SP1_short](../../../includes/net-v20sp1-short-md.md)], the .NET Framework 3.5, and the .NET Framework 4.
+To assess the impact of types and members that have been deprecated since the release of the .NET Framework 2.0 SP1, see [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md). Review the lists of obsolete types and member for the .NET Framework 2.0 SP1, the .NET Framework 3.5, and the .NET Framework 4.

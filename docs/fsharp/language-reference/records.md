@@ -1,11 +1,11 @@
 ---
 title: Records
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 05/16/2016
+ms.date: 06/09/2019
 ---
 # Records
 
-Records represent simple aggregates of named values, optionally with members.  Starting with F# 4.1, they can either be structs or reference types.  They are reference types by default.
+Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types.  They are reference types by default.
 
 ## Syntax
 

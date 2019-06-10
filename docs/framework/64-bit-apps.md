@@ -39,7 +39,7 @@ When you compile an application, you can specify that it should run on a Windows
   
 - For more information about the 64-bit version of the CLR on a 64-bit Windows computer, see the [.NET Framework Developer Center](https://go.microsoft.com/fwlink/?LinkId=37079) on the MSDN website.  
   
-- In the [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] documentation, see [Programming Guide for 64-bit Windows](https://go.microsoft.com/fwlink/p/?LinkId=253512).  
+- In the Windows SDK documentation, see [Programming Guide for 64-bit Windows](https://go.microsoft.com/fwlink/p/?LinkId=253512).  
   
 - For information about how to download a 64-bit version of the CLR, see [.NET Framework Developer Center Downloads](https://go.microsoft.com/fwlink/?LinkId=50953) on the MSDN website.  
   

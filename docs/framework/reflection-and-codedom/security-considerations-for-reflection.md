@@ -36,7 +36,7 @@ Reflection provides the ability to obtain information about types and members, a
   
  For example, code that is run in a sandboxed application domain is limited to the access described in this list, unless the application domain grants additional permissions.  
   
- Starting with the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)], attempting to access members that are normally inaccessible generates a demand for the grant set of the target object plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag. Code that is running with full trust (for example, code in an application that is launched from the command line) can always satisfy these permissions. (This is subject to limitations in accessing security-critical members, as described later in this article.)  
+ Starting with the .NET Framework 2.0 Service Pack 1, attempting to access members that are normally inaccessible generates a demand for the grant set of the target object plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag. Code that is running with full trust (for example, code in an application that is launched from the command line) can always satisfy these permissions. (This is subject to limitations in accessing security-critical members, as described later in this article.)  
   
  Optionally, a sandboxed application domain can grant <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag, as described in the section [Accessing Members That Are Normally Inaccessible](#accessingNormallyInaccessible), later in this article.  
   
@@ -94,7 +94,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 - Beginning with the .NET Framework 4, transparent code cannot use reflection to access security-critical members.  
   
-- The <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag is introduced in the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
+- The <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag is introduced in the .NET Framework 2.0 Service Pack 1. Earlier versions of the .NET Framework require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=nameWithType> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
   
 - Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag is required.  
   

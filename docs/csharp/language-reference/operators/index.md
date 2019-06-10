@@ -61,7 +61,7 @@ These are the highest precedence operators.
 
 [sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
 
-[stackalloc](../keywords/stackalloc.md) - allocates a block of memory on the stack.
+[stackalloc](stackalloc.md) - allocates a block of memory on the stack.
 
 [->](pointer-related-operators.md#pointer-member-access-operator--) – pointer indirection combined with member access.
 

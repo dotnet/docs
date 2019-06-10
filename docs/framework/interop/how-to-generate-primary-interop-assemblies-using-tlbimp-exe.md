@@ -12,7 +12,7 @@ ms.author: "ronpet"
 # How to: Generate Primary Interop Assemblies Using Tlbimp.exe
 There are two ways to generate a primary interop assembly:  
   
-- Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)].  
+- Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the Windows Software Development Kit (SDK).  
   
      The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:  
   

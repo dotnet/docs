@@ -13,12 +13,6 @@ The `stackalloc` operator allocates a block of memory on the stack. A stack allo
 
 You can assign the result of the `stackalloc` operator to a variable of one of the following types:
 
-- A [pointer type](../../programming-guide/unsafe-code-pointers/pointer-types.md), as the following example shows:
-
-  [!code-csharp[stackalloc pointer](~/samples/csharp/language-reference/operators/StackallocOperator.cs#AssignToPointer)]
-
-  As the preceding example shows, you must use an [unsafe](../keywords/unsafe.md) context when you work with pointer types.
-
 - Starting with C# 7.2, <xref:System.Span%601?displayName=nameWithType> or <xref:System.ReadOnlySpan%601?displayName=nameWithType>, as the following example shows:
 
   [!code-csharp[stackalloc span](~/samples/csharp/language-reference/operators/StackallocOperator.cs#AssignToSpan)]
@@ -31,6 +25,12 @@ You can assign the result of the `stackalloc` operator to a variable of one of t
 
   > [!NOTE]
   > We recommend using <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> types to work with stack allocated memory whenever possible.
+
+- A [pointer type](../../programming-guide/unsafe-code-pointers/pointer-types.md), as the following example shows:
+
+  [!code-csharp[stackalloc pointer](~/samples/csharp/language-reference/operators/StackallocOperator.cs#AssignToPointer)]
+
+  As the preceding example shows, you must use an [unsafe](../keywords/unsafe.md) context when you work with pointer types.
 
 The content of the newly allocated memory is undefined. Starting with C# 7.3, you can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
 

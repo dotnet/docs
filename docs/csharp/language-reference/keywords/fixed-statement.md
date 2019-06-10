@@ -57,7 +57,7 @@ fixed (byte* ps = srcarray, pd = dstarray)
 }
 ```
 
-You can allocate memory on the stack, where it is not subject to garbage collection and therefore does not need to be pinned. To do that use the [`stackalloc` operator](stackalloc.md).
+You can allocate memory on the stack, where it is not subject to garbage collection and therefore does not need to be pinned. To do that use the [`stackalloc` operator](../operators/stackalloc.md).
 
 ## C# language specification
 

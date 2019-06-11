@@ -43,7 +43,7 @@ Next [ element ]
 |Term|Definition|  
 |---|---|  
 |`element`|Required in the `For Each` statement. Optional in the `Next` statement. Variable. Used to iterate through the elements of the collection.|  
-|`datatype`|Required if `element` isn't already declared. Data type of `element`.|  
+|`datatype`|Optional. Data type of `element`.|  
 |`group`|Required. A variable with a type that's a collection type or Object. Refers to the collection over which the `statements` are to be repeated.|  
 |`statements`|Optional. One or more statements between `For Each` and `Next` that run on each item in `group`.|  
 |`Continue For`|Optional. Transfers control to the start of the `For Each` loop.|  

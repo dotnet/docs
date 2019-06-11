@@ -31,7 +31,9 @@ Static constructors have the following properties:
   
 - If a static constructor throws an exception, the runtime will not invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain in which your program is running. Most commonly, a <xref:System.TypeInitializationException> exception is thrown when a static constructor is unable to instantiate a type or for an unhandled exception occuring within a static constructor. For implicit static constructors that are not explicitly defined in source code, troubleshooting may require inspection of the intermediate language (IL) code.
 
-- The presence of a static constructor prevents the addition of the the <xref:System.Reflection.TypeAttributes.BeforeFieldInit> type attribute.
+- The presence of a static constructor prevents the addition of the the <xref:System.Reflection.TypeAttributes.BeforeFieldInit> type attribute. This limits runtime optimization.
+
+- A field declared as `static readonly` may only be assigned as part of its the declaration or in a static constructor. When an explicit static constructor is not required, initialize static fields inline, rather than through a static constructor for better runtime optimization.
 
 > [!Note]
 > Though not directly accessible, the presence of an explicit static constructor should be documented to assist with troubleshooting initialization exceptions.
@@ -42,8 +44,15 @@ Static constructors have the following properties:
 - Static constructors are also useful when creating wrapper classes for unmanaged code, when the constructor can call the `LoadLibrary` method.  
 
 - Static constructors are also a convenient place to enforce run-time checks on the type parameter that cannot be checked at compile-time via constraints (Type parameter constraints).
-  
-  
+
+### Explicit initialization
+
+> [!CAUTION]
+> Static constructors can be explicitly initiliazed once with <xref:System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(RuntimeTypeHandle)>. This is not recommended.
+>```csharp
+>System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typefof(myClass).TypeHandle);
+>```
+
 ## Example
  In this example, class `Bus` has a static constructor. When the first instance of `Bus` is created (`bus1`), the static constructor is invoked to initialize the class. The sample output verifies that the static constructor runs only one time, even though two instances of `Bus` are created, and that it runs before the instance constructor runs.  
   

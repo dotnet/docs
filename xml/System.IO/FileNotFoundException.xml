@@ -312,7 +312,7 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">A description of the error. The content of <paramref name="message" /> is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <param name="message">A description of the error, or <see langword="null" /> to use a system-supplied message with the given <paramref name="fileName" />. The content of <paramref name="message" /> should be understood by humans. The caller of this constructor must ensure that this string has been localized for the current system culture.</param>
         <param name="fileName">The full name of the file with the invalid image.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.FileNotFoundException" /> class with a specified error message, and the file name that cannot be found.</summary>
         <remarks>

@@ -141,7 +141,7 @@ A caller can then invoke the method in either of three ways:
 
 The following example defines a method named `GetVowels` that returns all the vowels from a parameter array. The `Main` method illustrates all three ways of invoking the method. Callers are not required to supply any arguments for parameters that include the `params` modifier. In that case, the parameter is `null`.
 
-[!code-csharp[csSnippets.Methods#75](../../samples/snippets/csharp/concepts/methods/params75.cs#75)]
+[!code-csharp[csSnippets.Methods#75](~/samples/snippets/csharp/concepts/methods/params75.cs#75)]
 
 <a name="optional"></a>
 

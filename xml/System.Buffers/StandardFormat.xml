@@ -29,8 +29,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a standard format string without using an actual string.</summary>
+    <remarks> 
+      <format type="text/markdown"><![CDATA[  
+
+A `StandardFormat` object consists of a single character standard format specifier (such as 'G', 'D', or 'X') and an optional precision specifier. The precision specifier can range from 0 to 9, or it can be the special <xref:System.Buffers.StandardFormat.NoPrecision?displayProperty=nameWithType> value.
+
+   ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,12 +61,41 @@
         <Parameter Name="precision" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="symbol">To be added.</param>
-        <param name="precision">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="symbol">A type-specific format specifier, such as 'G', 'D', or 'X'.</param>
+        <param name="precision">An optional precision ranging from 0 to 99, or the special value <see cref="F:System.Buffers.StandardFormat.NoPrecision" /> (the default).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Buffers.StandardFormat" /> structure.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="symbol" /> is not <see cref="F:System.Buffers.StandardFormat.NoPrecision" />, and its value is greater than <see cref="F:System.Buffers.StandardFormat.MaxPrecision" />.
+
+-or-
+
+<paramref name="symbol" /> cannot be converted to a <see cref="T:System.Byte" />.
+
+        </exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object or <see cref="T:System.Buffers.StandardFormat" />.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:System.Buffers.StandardFormat.Symbol> and <xref:System.Buffers.StandardFormat.Precision> properties are equal.
+
+         ]]></format>
+         </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Buffers.StandardFormat other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Buffers.StandardFormat other) cil managed" />
@@ -90,8 +125,8 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Buffers.StandardFormat" /> is equal to the current instance.</summary>
+        <returns><see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,10 +155,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">An object to compare to the current instance.</param>
+        <summary>Returns a value that indicates whether the specified object is a <see cref="T:System.Buffers.StandardFormat" /> object that is equal to the current instance.</summary>
+        <returns><see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
+       <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -149,8 +184,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +211,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether a format has a defined precision.</summary>
+        <value><see langword="true" /> if the format has a precision other than <see cref="F:System.Buffers.StandardFormat.NoPrecision" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +238,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the current instance is a default format.</summary>
+        <value><see langword="true" /> if the current instance is a default format; otherwise, <see langword="false" />.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+A default format has a format specifier whose <xref:System.Byte> value is 0 and whose precision is <xref:System.Buffers.StandardFormat.NoPrecision>.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPrecision">
@@ -231,8 +272,8 @@
       </ReturnValue>
       <MemberValue>99</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Defines the maximum valid precision value.</summary>
+        <remarks>The maximum valid precision is 99.</remarks>
       </Docs>
     </Member>
     <Member MemberName="NoPrecision">
@@ -258,7 +299,7 @@
       </ReturnValue>
       <MemberValue>255</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that a format doesn't use a precision or that the precision is unspecified.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,11 +329,17 @@
         <Parameter Name="right" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first format to compare.</param>
+        <param name="right">The second format to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Buffers.StandardFormat" /> instances are equal.</summary>
+        <returns><see langword="true" /> if the two instances are equal; otherwise, <see langword="false" />.</returns>
+       <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Two <xref:System.Buffers.StandardFormat> instances are equal if their <xref:System.Buffers.StandardFormat.Symbol> and <xref:System.Buffers.StandardFormat.Precision> properties are equal.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -320,9 +367,9 @@
         <Parameter Name="symbol" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="symbol">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="symbol">The character to convert to a <see cref="T:System.Buffers.StandardFormat" /> value.</param>
+        <summary>Converts a character to a <see cref="T:System.Buffers.StandardFormat" /> instance using <see cref="F:System.Buffers.StandardFormat.NoPrecision" /> precision.</summary>
+        <returns>A format with a <see cref="P:System.Buffers.StandardFormat.Symbol" /> property equal to <paramref name="symbol" /> and a <see cref="P:System.Buffers.StandardFormat.Precision" /> property equal to <see cref="F:System.Buffers.StandardFormat.NoPrecision" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,11 +399,17 @@
         <Parameter Name="right" Type="System.Buffers.StandardFormat" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first format to compare.</param>
+        <param name="right">The second format to compare.</param>
+        <summary>Determines whether two <see cref="T:System.Buffers.StandardFormat" /> instances are unequal.</summary>
+        <returns><see langword="true" /> if the two formats are unequal; otherwise, <see langword="false" />.</returns>
+       <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Two <xref:System.Buffers.StandardFormat> instances are unequal if their <xref:System.Buffers.StandardFormat.Symbol> and <xref:System.Buffers.StandardFormat.Precision> properties are not identical.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -384,9 +437,9 @@
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">A read-only span that contains the character to parse.</param>
+        <summary>Converts a <see langword="ReadOnlySpan&lt;System.Char&gt;" /> into a <see cref="T:System.Buffers.StandardFormat" /> instance using <see cref="F:System.Buffers.StandardFormat.NoPrecision" /> precision.</summary>
+        <returns>A value whose <see cref="P:System.Buffers.StandardFormat.Symbol" /> property value is the character in <paramref name="format" /> and whose <see cref="P:System.Buffers.StandardFormat.Precision" /> property value is <see cref="F:System.Buffers.StandardFormat.NoPrecision" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,10 +468,11 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">A classic .NET standard format string.</param>
+        <summary>Converts a classic .NET standard format string to a <see cref="T:System.Buffers.StandardFormat" /> instance.</summary>
+        <returns>A format.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException"><paramref name="format" /> is not a valid standard format string.</exception>
       </Docs>
     </Member>
     <Member MemberName="Precision">
@@ -443,8 +497,8 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the precision component of the format.</summary>
+        <value>The precision component, which can be <see cref="F:System.Buffers.StandardFormat.NoPrecision" />, or can range from 0 to 9.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,8 +524,8 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the character component of the format.</summary>
+        <value>The character component of the format.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -498,9 +552,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of this format.</summary>
+        <returns>The string representation of this format.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The string representation of a <xref:System.Buffers.StandardFormat> instance is a standard .NET format string.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -526,10 +586,10 @@
         <Parameter Name="result" Type="System.Buffers.StandardFormat" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">A read-only span that contains the character to convert.</param>
+        <param name="result">When the method returns, contains the parsed <see cref="T:System.Buffers.StandardFormat" /> instance if the operation was successful.</param>
+        <summary>Attempts to convert a <see langword="ReadOnlySpan&lt;Char&gt;" /> to a <see cref="T:System.Buffers.StandardFormat" /> instance and returns a value that indicates whether the parsing operation succeeded.</summary>
+        <returns><see langword="true" /> if the parsing operation was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

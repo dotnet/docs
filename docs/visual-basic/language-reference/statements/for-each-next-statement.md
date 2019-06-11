@@ -43,7 +43,7 @@ Next [ element ]
 |Term|Definition|  
 |---|---|  
 |`element`|Required in the `For Each` statement. Optional in the `Next` statement. Variable. Used to iterate through the elements of the collection.|  
-|`datatype`|Optional. Data type of `element`.|  
+|`datatype`|Optional if [`Option Infer`](option-infer-statement.md) is on (the default) or `element` is already declared; required if `Option Infer` is off and `element` isn't already declared. The data type of `element`.|  
 |`group`|Required. A variable with a type that's a collection type or Object. Refers to the collection over which the `statements` are to be repeated.|  
 |`statements`|Optional. One or more statements between `For Each` and `Next` that run on each item in `group`.|  
 |`Continue For`|Optional. Transfers control to the start of the `For Each` loop.|  

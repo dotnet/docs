@@ -173,6 +173,6 @@ In this tutorial, you learned how to:
 > * Use the model for predictions
 
 > [!div class="nextstepaction"]
-> [Deploy a model to Azure Functions](../how-to-guides/serve-model-serverless-azure-functions-ml-net)
+> [Deploy a model to Azure Functions](../how-to-guides/serve-model-serverless-azure-functions-ml-net.md)
 > [!div class="nextstepaction"]
-> [Deploy a model to a Web API](../how-to-guides/serve-model-web-api-ml-net)
+> [Deploy a model to a Web API](../how-to-guides/serve-model-web-api-ml-net.md)

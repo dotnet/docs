@@ -4563,7 +4563,7 @@ In order to determine whether a rounding operation involves a midpoint value, th
 
 The following example illustrates the problem. It repeatedly adds .1 to 11.0 and rounds the result to the nearest integer. Regardless of the rounding convention, 11.5 should round to 12. However, as the output from the example shows, it does not. The example uses the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to display the floating point value's full precision, and shows that the value to be rounded has lost precision during repeated additions, and its value is actually 11.499999999999998. Because .499999999999998 is less than .5, the value is not rounded to the next highest integer. As the example also shows, this problem does not occur if we simply assign the constant value 11.5 to a <xref:System.Double> variable.  
   
-[!code-csharp-interactive[System.Math.Round.Overload#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision1.cs#7)]
+[!code-csharp[System.Math.Round.Overload#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision1.cs#7)]
 [!code-vb[System.Math.Round.Overload#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision1.vb#7)]  
   
 Problems of precision in rounding midpoint values are most likely to arise in the following conditions:  
@@ -4580,14 +4580,14 @@ Problems of precision in rounding midpoint values are most likely to arise in th
   
 - Define a custom rounding algorithm that performs a "nearly equal" test to determine whether the value to be rounded is acceptably close to a midpoint value. The following example defines a `RoundApproximate` method that examines whether a fractional value is sufficiently near to a midpoint value to be subject to midpoint rounding. As the output from the example shows, it corrects the rounding problem shown in the previous example.  
   
-     [!code-csharp-interactive[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
+     [!code-csharp[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
      [!code-vb[System.Math.Round.Overload#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision2.vb#8)]  
   
 #### Rounding and single-precision floating-point values  
 
 The <xref:System.Math.Round%2A> method includes overloads that accept arguments of type <xref:System.Decimal> and <xref:System.Double>. There are no methods that round values of type <xref:System.Single>. If you pass a <xref:System.Single> value to one of the overloads of the <xref:System.Math.Round%2A> method, it is cast (in C#) or converted (in Visual Basic) to a <xref:System.Double>, and the corresponding <xref:System.Math.Round%2A> overload with a <xref:System.Double> parameter is called. Although this is a widening conversion, it often involves a loss of precision, as the following example illustrates. When a <xref:System.Single> value of 16.325 is passed to the <xref:System.Math.Round%2A> method and rounded to two decimal places using the rounding to nearest convention, the result is 16.33 and not the expected result of 16.32.  
   
-[!code-csharp-interactive[System.Math.Round.Overload#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/single1.cs#1)]
+[!code-csharp[System.Math.Round.Overload#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/single1.cs#1)]
 [!code-vb[System.Math.Round.Overload#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/single1.vb#1)]  
   
 This unexpected result is due to a loss of precision in the conversion of the <xref:System.Single> value to a <xref:System.Double>. Because the resulting <xref:System.Double> value of 16.325000762939453 is not a midpoint value and is greater than 16.325, it is always rounded upward.  
@@ -4965,7 +4965,7 @@ If the value of the `value` argument is <xref:System.Double.NaN?displayProperty=
 The following example rounds double values with two fractional digits to doubles that have a single fractional digit.  
   
 [!code-cpp[Classic Math.Round2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CPP/source.cpp#1)]
-[!code-csharp-interactive[Classic Math.Round2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CS/source.cs#1)]
+[!code-csharp[Classic Math.Round2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CS/source.cs#1)]
 [!code-vb[Classic Math.Round2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round2 Example/VB/source.vb#1)]  
   
        ]]></format>
@@ -4975,7 +4975,7 @@ The following example rounds double values with two fractional digits to doubles
         <block subset="none" type="usage">
           <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.Int32)" /> method may not appear to round midpoint values to the nearest even value in the <paramref name="digits" /> decimal position. This is illustrated in the following example, where 2.135 is rounded to 2.13 instead of 2.14. This occurs because internally the method multiplies <paramref name="value" /> by 10<sup>digits</sup>, and the multiplication operation in this case suffers from a loss of precision.  
   
- [!code-csharp-interactive[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
+ [!code-csharp[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
  [!code-vb[System.Math.Round#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round3.vb#2)]</para>
         </block>
         <altmember cref="M:System.Math.Ceiling(System.Double)" />
@@ -5047,7 +5047,7 @@ The following example displays values returned by the <xref:System.Math.Round%28
         <block subset="none" type="usage">
           <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.MidpointRounding)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
   
- [!code-csharp-interactive[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
+ [!code-csharp[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
  [!code-vb[System.Math.Round#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round5.vb#4)]</para>
         </block>
         <altmember cref="M:System.Math.Ceiling(System.Double)" />
@@ -5192,7 +5192,7 @@ If the value of the `value` argument is <xref:System.Double.NaN?displayProperty=
 
 The following example demonstrates how to use the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29> method with the <xref:System.MidpointRounding> enumeration.  
   
-[!code-csharp-interactive[System.Math.Round.Overload#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mpr.cs#4)]
+[!code-csharp[System.Math.Round.Overload#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mpr.cs#4)]
 [!code-vb[System.Math.Round.Overload#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mpr.vb#4)]  
   
        ]]></format>

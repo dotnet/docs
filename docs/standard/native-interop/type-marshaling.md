@@ -77,7 +77,7 @@ If these defaults don't do exactly what you want, you can customize how paramete
 
 ## Default marshaling in COM scenarios
 
-When you are calling methods on COM objects in .NET, the .NET runtime changes the default marshaling rules to match common COM semantics. The table below contains the rules that the .NET runtimes uses in COM scenarios:
+When you are calling methods on COM objects in .NET, the .NET runtime changes the default marshaling rules to match common COM semantics. The following table lists the rules that .NET runtimes uses in COM scenarios:
 
 | .NET Type | Native Type (COM method calls) |
 |-----------|--------------------------------|

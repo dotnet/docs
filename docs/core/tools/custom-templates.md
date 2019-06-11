@@ -25,7 +25,7 @@ dotnet new --list
 
 ## Configuration
 
-A template is composed of the following pieces:
+A template is composed of the following parts:
 
 - Source files and folders
 - A configuration file (*template.json*)

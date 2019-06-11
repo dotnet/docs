@@ -139,9 +139,9 @@ A caller can then invoke the method in either of three ways:
 - By passing a comma-separated list of individual arguments of the appropriate type to the method.
 - By not providing an argument to the parameter array.
 
-The following example defines a method named `DoStringOperation` that performs the string operation specified by its first parameter, a `StringOperation` enumeration member. The strings upon which it is to perform the operation are defined by a parameter array. The `Main` method illustrates all three ways of invoking the method. Note that the method tagged with the `params` keyword must be prepared to handle the case in which no argument is supplied for the parameter array, so that its value is `null`.
+The following example defines a method named `GetVowels` that returns all the vowels from a parameter array. The `Main` method illustrates all three ways of invoking the method. Note that the method tagged with the `params` keyword must be prepared to handle the case in which no argument is supplied for the parameter array, so that its value is `null`.
 
-[!code-csharp[csSnippets.Methods#106](../../samples/snippets/csharp/concepts/methods/byref108.cs#108)]
+[!code-csharp[csSnippets.Methods#75](../../samples/snippets/csharp/concepts/methods/params75.cs#75)]
 
 <a name="optional"></a>
 

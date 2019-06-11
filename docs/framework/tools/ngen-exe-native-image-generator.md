@@ -227,7 +227,7 @@ Precompiling assemblies with Ngen.exe can improve the startup time for some appl
 Hard binding can affect startup time, because all images that are hard bound to the main application assembly must be loaded at the same time.
 
 > [!NOTE]
-> Before the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], you should put shared, strong-named components in the global assembly cache, because the loader performs extra validation on strong-named assemblies that are not in the global assembly cache, effectively eliminating any improvement in startup time gained by using native images. Optimizations that were introduced in the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] removed the extra validation.
+> Before the .NET Framework 3.5 Service Pack 1, you should put shared, strong-named components in the global assembly cache, because the loader performs extra validation on strong-named assemblies that are not in the global assembly cache, effectively eliminating any improvement in startup time gained by using native images. Optimizations that were introduced in the .NET Framework 3.5 SP1 removed the extra validation.
 
 <a name="UsageSummary"></a>
 

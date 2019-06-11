@@ -76,7 +76,7 @@ The following table lists the operators and statements that can operate on point
 |`++` and `--`|Increments and decrements pointers.|
 |`+` and `-`|Performs pointer arithmetic.|
 |`==`, `!=`, `<`, `>`, `<=`, and `>=`|Compares pointers.|
-|[`stackalloc` operator](../../language-reference/keywords/stackalloc.md)|Allocates memory on the stack.|
+|[`stackalloc` operator](../../language-reference/operators/stackalloc.md)|Allocates memory on the stack.|
 |[`fixed` statement](../../language-reference/keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
 
 For more information about pointer related operators, see [Pointer related operators](../../language-reference/operators/pointer-related-operators.md).

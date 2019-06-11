@@ -106,7 +106,7 @@ int* pArr2 = stackalloc int[] {1, 2, 3};
 Span<int> arr = stackalloc [] {1, 2, 3};
 ```
 
-For more information, see the [`stackalloc` statement](../language-reference/keywords/stackalloc.md) article in the language reference.
+For more information, see the [`stackalloc` operator](../language-reference/operators/stackalloc.md) article.
 
 ### More types support the `fixed` statement
 

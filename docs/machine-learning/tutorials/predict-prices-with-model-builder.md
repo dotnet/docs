@@ -172,7 +172,7 @@ In this tutorial, you learned how to:
 > * Evaluate the model
 > * Use the model for predictions
 
-Advance to either of the following how-to articles to learn to deploy your model:
+Advance to either of the following how-to articles to learn to deploy your model.
 
 > [!div class="nextstepaction"]
 > [Deploy a model to Azure Functions](../how-to-guides/serve-model-serverless-azure-functions-ml-net.md)

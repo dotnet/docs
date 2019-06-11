@@ -1,5 +1,5 @@
 ---
-title: "Bitwise and shift operators - C# Reference"
+title: "Bitwise and shift operators - C# reference"
 description: "Learn about C# operators that perform bitwise logical or shift operations with operands of integral types."
 ms.date: 04/18/2019
 author: pkulikov
@@ -30,7 +30,7 @@ helpviewer_keywords:
   - "bitwise logical OR operator [C#]"
   - "| operator [C#]"
 ---
-# Bitwise and shift operators (C# Reference)
+# Bitwise and shift operators (C# reference)
 
 The following operators perform bitwise or shift operations with operands of the [integral types](../keywords/integral-types-table.md):
 
@@ -188,7 +188,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Boolean logical operators](boolean-logical-operators.md)

@@ -1,5 +1,5 @@
 ---
-title: "C# operators"
+title: "C# operators - C# reference"
 ms.date: 04/30/2019
 f1_keywords: 
   - "cs.operators"
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators
+# C# operators (C# reference)
 
 C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
 
@@ -215,8 +215,6 @@ These operators have higher precedence than the next section and lower precedenc
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C#](../../index.md)
+- [C# reference](../index.md)
+- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
 - [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
-- [C# Keywords](../keywords/index.md)

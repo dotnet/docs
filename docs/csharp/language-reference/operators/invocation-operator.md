@@ -1,5 +1,5 @@
 ---
-title: "() operator - C# Reference"
+title: "() operator - C# reference"
 ms.custom: seodec18
 ms.date: 01/15/2019
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "() operator [C#]"
 ms.assetid: 846e1f94-8a8c-42fc-a42c-fbd38e70d8cc
 ---
-# () operator (C# Reference)
+# () operator (C# reference)
 
 Parentheses, `()`, are typically used for method or delegate invocation or in cast expressions.
 
@@ -48,6 +48,5 @@ For more information, see the [Invocation expressions](~/_csharplang/spec/expres
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)

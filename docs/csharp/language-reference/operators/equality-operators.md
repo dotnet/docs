@@ -1,5 +1,5 @@
 ---
-title: "Equality operators - C# Reference"
+title: "Equality operators - C# reference"
 description: "Learn about C# equality comparison operators."
 ms.date: 03/28/2019
 author: pkulikov
@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "not equals operator [C#]"
   - "!= operator [C#]"
 ---
-# Equality operators (C# Reference)
+# Equality operators (C# reference)
 
 The [`==` (equality)](#equality-operator-) and [`!=` (inequality)](#inequality-operator-) operators check if their operands are equal or not.
 
@@ -73,9 +73,8 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - <xref:System.IEquatable%601?displayProperty=nameWithType>
 - <xref:System.Object.Equals%2A?displayProperty=nameWithType>
 - <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>

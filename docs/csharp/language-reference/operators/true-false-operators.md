@@ -1,5 +1,5 @@
 ---
-title: "true and false operators - C# Reference"
+title: "true and false operators - C# reference"
 ms.custom: seodec18
 ms.date: 12/10/2018
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "true operator [C#]"
 ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e
 ---
-# true and false operators (C# Reference)
+# true and false operators (C# reference)
 
 The `true` operator returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true. The `false` operator returns the `bool` value `true` to indicate that an operand is definitely false. The `true` and `false` operators are not guaranteed to complement each other. That is, both the `true` and `false` operator might return the `bool` value `false` for the same operand. If a type defines one of the two operators, it must also define another operator.
 
@@ -31,8 +31,7 @@ Wait!
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
-- [`true` literal](../keywords/true-literal.md)
-- [`false` literal](../keywords/false-literal.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
+- [true literal](../keywords/true-literal.md)
+- [false literal](../keywords/false-literal.md)

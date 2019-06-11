@@ -33,7 +33,7 @@ Static constructors have the following properties:
 
 - The presence of a static constructor prevents the addition of the the <xref:System.Reflection.TypeAttributes.BeforeFieldInit> type attribute. This limits runtime optimization.
 
-- A field declared as `static readonly` may only be assigned as part of its the declaration or in a static constructor. When an explicit static constructor is not required, initialize static fields inline, rather than through a static constructor for better runtime optimization.
+- A field declared as `static readonly` may only be assigned as part of its declaration or in a static constructor. When an explicit static constructor is not required, initialize static fields at declaration, rather than through a static constructor for better runtime optimization.
 
 > [!Note]
 > Though not directly accessible, the presence of an explicit static constructor should be documented to assist with troubleshooting initialization exceptions.

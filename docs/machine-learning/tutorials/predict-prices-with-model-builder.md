@@ -163,7 +163,7 @@ Two projects will be created in `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTool
 
 ## Next Steps
 
-In this tutorial, you learn how to:
+In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Prepare and understand the data
 > * Choose a scenario
@@ -172,5 +172,7 @@ In this tutorial, you learn how to:
 > * Evaluate the model
 > * Use the model for predictions
 
-- [Deploy a model to Azure Functions](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-serverless-azure-functions-ml-net)
-- [Deploy a model to a Web API](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-web-api-ml-net)
+> [!div class="nextstepaction"]
+> [Deploy a model to Azure Functions](../how-to-guides/serve-model-serverless-azure-functions-ml-net)
+> [!div class="nextstepaction"]
+> [Deploy a model to a Web API](../how-to-guides/serve-model-web-api-ml-net)

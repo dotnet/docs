@@ -546,7 +546,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property represents the `<X509IssuerSerial`> element of an XML digital signature using a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structures contained within.  The `<X509IssuerSerial`> element represents an issuer name and serial number pair, which identify a specific X.509v3 certificate.  
+ The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property represents the `<X509IssuerSerial>` element of an XML digital signature using a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structures contained within.  The `<X509IssuerSerial>` element represents an issuer name and serial number pair, which identify a specific X.509v3 certificate.  
   
  The issuer of an X.509 certificate is the name of the certification authority that issued the certificate. Certification authorities assign each certificate they issue a unique serial number.  
   

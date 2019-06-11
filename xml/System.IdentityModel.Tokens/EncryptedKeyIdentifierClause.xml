@@ -256,7 +256,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName%2A> property is serialized into XML, it is placed in the <`CarriedKeyName`> element. For encrypted keys, the <`CarriedKeyName`> element is an optional element that associates a user-readable name with a key value. This name can then be used to reference the key using the <`KeyName`> element within the <`KeyInfo`> element. The same <`CarriedKeyName`> element value, unlike an ID value, can occur multiple times within a single document. The value of the key must be the same in all <`EncryptedKey`> elements identified with the same <`CarriedKeyName`> name within an XML document.  
+ When the <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause.CarriedKeyName%2A> property is serialized into XML, it is placed in the `<CarriedKeyName>` element. For encrypted keys, the `<CarriedKeyName>` element is an optional element that associates a user-readable name with a key value. This name can then be used to reference the key using the `<KeyName>` element within the `<KeyInfo>` element. The same `<CarriedKeyName>` element value, unlike an ID value, can occur multiple times within a single document. The value of the key must be the same in all `<EncryptedKey>` elements identified with the same `<CarriedKeyName>` name within an XML document.  
   
  ]]></format>
         </remarks>

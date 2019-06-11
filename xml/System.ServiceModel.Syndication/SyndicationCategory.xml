@@ -379,7 +379,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is written to the `label` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is written to the `label` attribute of the `<category>` element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
   
    
   
@@ -434,7 +434,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Name%2A> is written to the `term` attribute of the <`category`> element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Name%2A> is written to the `term` attribute of the `<category>` element. <xref:System.ServiceModel.Syndication.SyndicationCategory.Label%2A> is not serialized to RSS 2.0.  
   
    
   
@@ -489,9 +489,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `scheme` attribute of the <`category`> element.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `scheme` attribute of the `<category>` element.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `domain` attribute of the <`category`> element.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationCategory.Scheme%2A> property is written to the `domain` attribute of the `<category>` element.  
   
    
   

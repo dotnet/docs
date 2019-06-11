@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When performing XML signing and verification, the <`Transform`> element describes how the signer transformed the data object that was signed.  The verifier of a document then uses the <`Transform`> element to transform the signed data in the same manner.  If the verifier cannot transform the signed data in the same manner, the document cannot be verified.  
+ When performing XML signing and verification, the `<Transform>` element describes how the signer transformed the data object that was signed.  The verifier of a document then uses the `<Transform>` element to transform the signed data in the same manner.  If the verifier cannot transform the signed data in the same manner, the document cannot be verified.  
   
  Use a class that derives from the <xref:System.Security.Cryptography.Xml.Transform> class whenever you need to add one or more transform objects to an encrypted XML document or to a signed XML document.  
   

@@ -345,11 +345,11 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
    
   
 ## Examples  
- The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
+ The following example demonstrates adding two specific UDTs to the `<userDefinedTypes>` section of the configuration file for this purpose.  
   
  [!code-xml[S_UEComContractElement#102](~/samples/snippets/csharp/VS_Snippets_CFX/s_uecomcontractelement/common/app3.config#102)]   
   
- The attributes of the <`userDefinedType`> element are defined as follows:  
+ The attributes of the `<userDefinedType>` element are defined as follows:  
   
 -   `typeName`: An optional attribute that provides the readable type name. This is not used by the runtime but helps a reader to distinguish the types.  
   

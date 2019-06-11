@@ -603,7 +603,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the [!INCLUDE[netfx35_short](~/includes/netfx35-short-md.md)], this property is emitted on the wire as an <`sc:Instance`> element. In prior versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], it was emitted as an <`sc:Generation`> element.  
+ Starting with the [!INCLUDE[netfx35_short](~/includes/netfx35-short-md.md)], this property is emitted on the wire as an `<sc:Instance>` element. In prior versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], it was emitted as an `<sc:Generation>` element.  
   
  ]]></format>
         </remarks>

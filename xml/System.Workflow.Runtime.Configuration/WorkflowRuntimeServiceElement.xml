@@ -29,7 +29,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- A <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> specifies a host service that should be initialized and activated by the workflow runtime engine. It corresponds to a host service specified in the <`Services`> element in a configuration file. Because the service specified in a WorkflowRuntimeServiceElement will be initialized by the workflow runtime engine it must have at least one constructor that matches one of the following four signatures (the workflow runtime engine will try to match these signatures in the order shown):  
+ A <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> specifies a host service that should be initialized and activated by the workflow runtime engine. It corresponds to a host service specified in the `<Services>` element in a configuration file. Because the service specified in a WorkflowRuntimeServiceElement will be initialized by the workflow runtime engine it must have at least one constructor that matches one of the following four signatures (the workflow runtime engine will try to match these signatures in the order shown):  
   
  Service(WorkflowRuntime runtime, NameValueCollection parameters)  
   
@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name-value pair specified by name and value is added to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection. Any attributes other than `type` that are specified in an <`add`> element to the <`Services`> element in the configuration file are added as a name-value pair to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection.  
+ The name-value pair specified by name and value is added to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection. Any attributes other than `type` that are specified in an `<add>` element to the `<Services>` element in the configuration file are added as a name-value pair to the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Parameters%2A> collection.  
   
  ]]></format>
         </remarks>

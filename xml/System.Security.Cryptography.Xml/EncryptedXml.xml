@@ -398,7 +398,7 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method to decrypt an <xref:System.Security.Cryptography.Xml.EncryptedData> element using a symmetric key.  
   
- Note that the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method only decrypts top-level <`EncryptedData`> tags. In cases where one or more <`EncryptedData`> tags have been encrypted and are contained within higher level <`EncryptedData`> tags, you can call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method separately for each one. See the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method for a code example.  
+ Note that the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method only decrypts top-level `<EncryptedData>` tags. In cases where one or more `<EncryptedData>` tags have been encrypted and are contained within higher level `<EncryptedData>` tags, you can call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method separately for each one. See the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method for a code example.  
   
    
   
@@ -471,7 +471,7 @@
  [!code-csharp[Cryptography.XML.XMLEncMapKeyX509#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKeyX509/CS/sample.cs#1)]
  [!code-vb[Cryptography.XML.XMLEncMapKeyX509#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XMLEncMapKeyX509/VB/sample.vb#1)]  
   
- The following code example demonstrates how to decrypt a high level <`EncryptedData`> tag that contains another encrypted <`EncryptedData`> tag.  
+ The following code example demonstrates how to decrypt a high level `<EncryptedData>` tag that contains another encrypted `<EncryptedData>` tag.  
   
  [!code-csharp[Cryptography.XML.EncryptedDocument.DecryptDocument-SuperEncryption#1](~/samples/snippets/csharp/VS_Snippets_Misc/Cryptography.XML.EncryptedDocument.DecryptDocument-SuperEncryption/CS/sample.cs#1)]
  [!code-vb[Cryptography.XML.EncryptedDocument.DecryptDocument-SuperEncryption#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/Cryptography.XML.EncryptedDocument.DecryptDocument-SuperEncryption/VB/sample.vb#1)]  

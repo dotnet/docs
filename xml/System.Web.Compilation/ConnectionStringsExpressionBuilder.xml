@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder> class provides access to values in the <`connectionStrings`> section of the Web.config file. The <`connectionStrings`> section of the Web.config file contains connection string values in name/value pairs.  
+ The <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder> class provides access to values in the `<connectionStrings>` section of the Web.config file. The `<connectionStrings>` section of the Web.config file contains connection string values in name/value pairs.  
   
  A connection string value is retrieved by assigning an expression of the form  
   
@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called when an expression of the form `<%$ ConnectionStrings: secureConnectionString %>` is encountered in a page that is not compiled. It retrieves the appropriate value from the <`connectionStrings`> section of the Web.config file. This method overrides the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method by calling the <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionString%2A> method if a connection string is included in the `parsedData` parameter, or by calling the <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName%2A> method if a connection string is not included in the `parsedData` parameter.  
+ This method is called when an expression of the form `<%$ ConnectionStrings: secureConnectionString %>` is encountered in a page that is not compiled. It retrieves the appropriate value from the `<connectionStrings>` section of the Web.config file. This method overrides the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method by calling the <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionString%2A> method if a connection string is included in the `parsedData` parameter, or by calling the <xref:System.Web.Compilation.ConnectionStringsExpressionBuilder.GetConnectionStringProviderName%2A> method if a connection string is not included in the `parsedData` parameter.  
   
  ]]></format>
         </remarks>

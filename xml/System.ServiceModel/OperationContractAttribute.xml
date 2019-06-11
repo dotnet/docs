@@ -654,7 +654,7 @@ public class InitializeAndTerminateService
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> property to override the <`operation`> element name in WSDL. The default operation name is the name of the implementing method.  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> property to override the `<operation>` element name in WSDL. The default operation name is the name of the implementing method.  
   
    
   

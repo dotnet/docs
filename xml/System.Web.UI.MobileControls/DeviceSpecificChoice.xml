@@ -227,7 +227,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The filter name must be the name of a method on the page, in the associated `.ascx` file, or the name of a valid device filter defined in the <`deviceFilters`> section of Web.config. If a method name is specified with the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, that method must match the following prototype.  
+ The filter name must be the name of a method on the page, in the associated `.ascx` file, or the name of a valid device filter defined in the `<deviceFilters>` section of Web.config. If a method name is specified with the <xref:System.Web.UI.MobileControls.DeviceSpecificChoice.Filter%2A> property, that method must match the following prototype.  
   
 ```  
 public bool methodName(System.Web.Mobile.MobileCapabilities   
@@ -241,7 +241,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
     capabilities, String optionalArgument);  
 ```  
   
- When evaluating the [\<Choice>](https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the <`deviceFilters`> section of Web.config.  
+ When evaluating the [\<Choice>](https://msdn.microsoft.com/library/c81bee77-bb45-4211-be0f-e13a040b3c2d) element, a check is made to determine whether a method of the appropriate signature exists on the page. If not, ASP.NET checks the `<deviceFilters>` section of Web.config.  
   
 > [!NOTE]
 >  Device filters are case-sensitive.  

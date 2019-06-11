@@ -317,7 +317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to the <xref:System.Web.UI.IAttributeAccessor> interface, the ASP.NET page framework provides a `CustomAttributes` dictionary that allows you to specify additional attributes, enable or disable custom attributing, or adjust a control's behavior or rendering. To enable or disable custom attributing, you can either set the <xref:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes%2A> property to `true`, or you can set the `allowCustomAttributes` attribute of the <`mobileControls`> section of Web.config to `true`.  
+ In addition to the <xref:System.Web.UI.IAttributeAccessor> interface, the ASP.NET page framework provides a `CustomAttributes` dictionary that allows you to specify additional attributes, enable or disable custom attributing, or adjust a control's behavior or rendering. To enable or disable custom attributing, you can either set the <xref:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes%2A> property to `true`, or you can set the `allowCustomAttributes` attribute of the `<mobileControls>` section of Web.config to `true`.  
   
 > [!NOTE]
 >  When custom attributes are enabled, typographic errors in property names can be interpreted as custom attributes. For example, if a developer incorrectly specifies the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property of a control as "Txet", the parser would save it as a custom attribute called "Txet" instead of raising an exception. For this reason, custom attributes are disabled by default.  

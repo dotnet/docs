@@ -40,7 +40,7 @@
   
 -   The control renders literal text on its own line with the appropriate style attributes applied.  
   
--   When nesting tags, the hyperlink tag (anchor tag: <`a`>) does not recognize nested tags. For example, nesting the <`b`> or <`i`> tag as literal text inside the <`a`> tag will not render a link as bold or italic. The control completely ignores all tags inside of the <`a`> tag.  
+-   When nesting tags, the hyperlink tag (anchor tag: `<a>`) does not recognize nested tags. For example, nesting the `<b>` or `<i>` tag as literal text inside the `<a>` tag will not render a link as bold or italic. The control completely ignores all tags inside of the `<a>` tag.  
   
 > [!NOTE]
 >  It is important for an adapter to use the <xref:System.Web.UI.MobileControls.TextView.Text%2A?displayProperty=nameWithType> property to dynamically set the text that you want to display on a form. Do not use this class to do so.  

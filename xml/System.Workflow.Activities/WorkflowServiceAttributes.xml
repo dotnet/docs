@@ -329,7 +329,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property corresponds to the <`wsdl:service`> element when exported.  The default value is null.  
+ This property corresponds to the `<wsdl:service>` element when exported.  The default value is null.  
   
    
   
@@ -371,7 +371,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value corresponds to the value of the `targetNamespace` attribute for the <`wsdl:definitions`> element that contains the <`wsdl:service`> element when exported.  The default value is null.  
+ This value corresponds to the value of the `targetNamespace` attribute for the `<wsdl:definitions>` element that contains the `<wsdl:service>` element when exported.  The default value is null.  
   
    
   

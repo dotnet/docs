@@ -856,7 +856,7 @@
  [!code-csharp[WebParts_WebPartManager_CloseWebPart#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_CloseWebPart/CS/textdisplaywebpart.cs#3)]
  [!code-vb[WebParts_WebPartManager_CloseWebPart#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_CloseWebPart/VB/textdisplaywebpart.vb#3)]  
   
- The third part of the code example is the Web page. The page contains a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> zone, with an <`asp:pagecatalogpart>` element declared within it. This is what will contain the closed <xref:System.Web.UI.WebControls.WebParts.WebPart> control and enable users to add it back to the page. The `Button1_Click` method directly calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart%2A> method to close the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, although a user can also close the control through the verbs menu.  
+ The third part of the code example is the Web page. The page contains a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> zone, with an `<asp:pagecatalogpart>` element declared within it. This is what will contain the closed <xref:System.Web.UI.WebControls.WebParts.WebPart> control and enable users to add it back to the page. The `Button1_Click` method directly calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart%2A> method to close the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, although a user can also close the control through the verbs menu.  
   
  [!code-aspx-csharp[WebParts_WebPartManager_CloseWebPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_CloseWebPart/CS/closeWebPartCS.aspx#1)]
  [!code-aspx-vb[WebParts_WebPartManager_CloseWebPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_CloseWebPart/VB/closeWebPartVB.aspx#1)]  
@@ -3895,7 +3895,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartAdded%2A> method is called during the process of adding a <xref:System.Web.UI.WebControls.WebParts.WebPart> control (or other server control that is added to a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone) to a page.  
   
- Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded> event by adding the `OnWebPartAdded` attribute to the <`asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
+ Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartAdded> event by adding the `OnWebPartAdded` attribute to the `<asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
   
  ]]></format>
         </remarks>
@@ -4052,7 +4052,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartDeleted%2A> method is called during the process of deleting a <xref:System.Web.UI.WebControls.WebParts.WebPart> control (or other server control that is added to a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone) from a page.  
   
- Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted> event by adding the `OnWebPartDeleted` attribute to the <`asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
+ Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartDeleted> event by adding the `OnWebPartDeleted` attribute to the `<asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
   
  ]]></format>
         </remarks>
@@ -4133,7 +4133,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event is raised when a control is moved within its current zone, or to another zone, and it does not matter whether the movement is done programmatically or by a user dragging the control.  
   
- Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event by adding the `OnWebPartMoved` attribute to the <`asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
+ Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event by adding the `OnWebPartMoved` attribute to the `<asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
   
  ]]></format>
         </remarks>
@@ -4212,7 +4212,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The method provides programmatic control over the process of creating connections, and the associated event is a convenient point at which to update the user interface (UI) or notify a user that a connection has been established.  
   
- Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event by adding the `OnWebPartsConnected` attribute to the <`asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
+ Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event by adding the `OnWebPartsConnected` attribute to the `<asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
   
  ]]></format>
         </remarks>
@@ -4291,7 +4291,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
   
  The method provides programmatic control over the process of ending a connection, so that developers can inform the user, make changes to the user interface (UI), or make other changes to the application.  
   
- Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event by adding the `OnWebPartsDisconnected` attribute to the <`asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
+ Page developers can create a custom handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event by adding the `OnWebPartsDisconnected` attribute to the `<asp:webpartmanager>` element, and assigning a custom method name to the attribute.  
   
  ]]></format>
         </remarks>
@@ -5301,7 +5301,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartClosing%2A> method when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is in the process of closing a control. If the removal of the control is successful, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosed> event.  
   
- Page developers can provide a custom handler for the event by adding the `OnWebPartClosed` attribute to the <`asp:webpartmanager>` element in a page, and assigning a custom method name to the attribute.  
+ Page developers can provide a custom handler for the event by adding the `OnWebPartClosed` attribute to the `<asp:webpartmanager>` element in a page, and assigning a custom method name to the attribute.  
   
  Normally, when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing> event is raised as a direct result of a user closing a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the event can be cancelled. However, there is a scenario in which the event cannot be cancelled. If a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control is deleted, the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls it contains must all be closed, otherwise they would be orphaned. In this case the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control closes the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, not the user. And when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is in the process of calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CloseWebPart%2A> method to close each control, and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartClosing> event is raised, the event cannot be cancelled (by design) because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> needs to complete the task of cleaning up all the zone's controls.  
   

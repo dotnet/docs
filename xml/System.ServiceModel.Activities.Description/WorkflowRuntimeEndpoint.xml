@@ -24,9 +24,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <`workflowInstanceControl`> sub-element in the SqlWorkflowInstanceStore element is an optional element that specifies parameters for a workflow instance control endpoint. The Workflow Management Service uses this endpoint to issue control commands to the service host.  
+ The `<workflowInstanceControl>` sub-element in the SqlWorkflowInstanceStore element is an optional element that specifies parameters for a workflow instance control endpoint. The Workflow Management Service uses this endpoint to issue control commands to the service host.  
   
- If the <`workflowInstanceControl`> sub-element in the SqlWorkflowInstanceStore element is omitted, the SqlWorkflowInstanceStore still adds a default control endpoint using the <xref:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint> class.  
+ If the `<workflowInstanceControl>` sub-element in the SqlWorkflowInstanceStore element is omitted, the SqlWorkflowInstanceStore still adds a default control endpoint using the <xref:System.ServiceModel.Activities.Description.WorkflowRuntimeEndpoint> class.  
   
  ]]></format>
     </remarks>

@@ -364,7 +364,7 @@
 ## Remarks  
  If the name is `null`, this property returns the name of the service type. If service type is also `null`, it returns the default service name.  
   
- When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> maps to the Web Service Development Language (WSDL) <`service`> element local name part of the (qualified) `name` attribute.  
+ When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> maps to the Web Service Development Language (WSDL) `<service>` element local name part of the (qualified) `name` attribute.  
   
    
   
@@ -407,7 +407,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A> maps to the Web Service Development Language (WSDL) <`service`> element namespace name part of the (qualified) `name` attribute.  
+ When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A> maps to the Web Service Development Language (WSDL) `<service>` element namespace name part of the (qualified) `name` attribute.  
   
    
   

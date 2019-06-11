@@ -22,7 +22,7 @@
 ## Remarks  
  You should derive from the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class to use a custom <xref:System.ServiceModel.Channels.BindingElement> implementation from a machine or application configuration file.  
   
- Once a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> instance has been created, a custom binding element is returned. You can use this in an application configuration file by using the <`add`> element and setting the type attribute to the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class, and the name attribute to the custom binding element.  
+ Once a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> instance has been created, a custom binding element is returned. You can use this in an application configuration file by using the `<add>` element and setting the type attribute to the <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> class, and the name attribute to the custom binding element.  
   
  ]]></format>
     </remarks>

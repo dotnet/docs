@@ -24,11 +24,11 @@
   
  To circumvent this problem, you can add the UDTs to the configuration file so that they can be included as known types on the appropriate service contract. In order to do so, you have to uniquely identify the UDT and the contract(s), that is, the original COM interface(s) that uses it.  
   
- The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
+ The following example demonstrates adding two specific UDTs to the `<userDefinedTypes>` section of the configuration file for this purpose.  
   
   
   
- The attributes of the <`userDefinedType`> element are defined as follows:  
+ The attributes of the `<userDefinedType>` element are defined as follows:  
   
 -   `typeName`: an optional attribute that provides the readable type name. This is not used by the runtime but helps a reader to distinguish the types.  
   
@@ -43,7 +43,7 @@
    
   
 ## Examples  
- The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
+ The following example demonstrates adding two specific UDTs to the `<userDefinedTypes>` section of the configuration file for this purpose.  
   
   
   

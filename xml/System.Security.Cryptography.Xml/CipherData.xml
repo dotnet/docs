@@ -36,7 +36,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Security.Cryptography.Xml.EncryptedData> class to create an <`EncryptedData`> element that contains a <`CipherData`> element, and then writes the XML to an XML file.  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.EncryptedData> class to create an `<EncryptedData>` element that contains a `<CipherData>` element, and then writes the XML to an XML file.  
   
  [!code-cpp[cryptgraphy.Xml.EncryptedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp#1)]
  [!code-csharp[cryptgraphy.Xml.EncryptedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/CS/encrypteddata.cs#1)]

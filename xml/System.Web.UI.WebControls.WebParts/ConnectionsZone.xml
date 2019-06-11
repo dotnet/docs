@@ -83,7 +83,7 @@
  [!code-csharp[WebParts_ConnectionZone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/ZipCodeComponent.cs#2)]
  [!code-vb[WebParts_ConnectionZone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/ZipCodeComponent.vb#2)]  
   
- The third part of the example code is the Web page. Near the top are `Register` directives for the user control and the custom controls used in the connection. An <`asp:connectionszone>` element is declared in the page as an example of using the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control declaratively. Within the element, a number of properties are set declaratively. Other properties on the connections zone are set programmatically in the `<script>` section of the page.  
+ The third part of the example code is the Web page. Near the top are `Register` directives for the user control and the custom controls used in the connection. An `<asp:connectionszone>` element is declared in the page as an example of using the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control declaratively. Within the element, a number of properties are set declaratively. Other properties on the connections zone are set programmatically in the `<script>` section of the page.  
   
  [!code-aspx-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]
  [!code-aspx-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  

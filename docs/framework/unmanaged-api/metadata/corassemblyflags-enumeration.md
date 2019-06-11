@@ -70,7 +70,7 @@ typedef enum CorAssemblyFlags {
 |`afRetargetable`|Indicates that the assembly can be retargeted at run time to an assembly from a different publisher.|  
 |`afContentType_Mask`|A mask that describes the content type.|  
 |`afContentType_Default`|Indicates the default content type.|  
-|`afContentType_WindowsRuntime`|Indicates the [!INCLUDE[wrt](../../../../includes/wrt-md.md)] content type.|  
+|`afContentType_WindowsRuntime`|Indicates the Windows Runtime content type.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -4491,7 +4491,7 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-<a name="remarks_round"></a> 
+<a name="remarks-round"></a> 
 ## Remarks 
 
 In this section:
@@ -4500,7 +4500,7 @@ In this section:
 - [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions)   
 - [Rounding and precision](#rounding-and-precision) 
 - [Rounding and single-precision floating point values](#rounding-and-single-precision-floating-point-values)
-- [Examples of individual overloads](#examples)
+- [Examples of individual overloads](#round-examples)
 
 ### Which method do I call?
 
@@ -4513,7 +4513,7 @@ You can use the following table to select an appropriate rounding method. In add
 |Round a number to a specified number of fractional digits by using the rounding to nearest convention.|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29><br /><br /> -or-<br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%29>|  
 |Round a number to a specified number of fractional digits by using a specified rounding convention.|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29><br /><br /> -or-<br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
 |Round a <xref:System.Single> value to a specified number of fractional digits by using a specified rounding convention and minimizing the loss of precision.|Convert the <xref:System.Single> to a <xref:System.Decimal> and call <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>.|  
-|Round a number to a specified number of fractional digits while minimizing problems of precision in rounding midpoint values.|Call a rounding method that implements a "greater than or approximately equal to" comparison. See [Rounding and precision](#Precision).|  
+|Round a number to a specified number of fractional digits while minimizing problems of precision in rounding midpoint values.|Call a rounding method that implements a "greater than or approximately equal to" comparison. See [Rounding and precision](#precision).|  
 |Round a fractional value to an integer that is greater than the fractional value. For example, round 3.1 to 4.|<xref:System.Math.Ceiling%2A>|  
 |Round a fractional value to an integer that is less than the fractional value. For example, round 3.9 to 3.|<xref:System.Math.Floor%2A>|  
 
@@ -4555,6 +4555,7 @@ By default, the <xref:System.Math.Round%2A> method uses the rounding to nearest 
 |<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 
+<a name="precision"></a>
 ### Rounding and precision  
 
 In order to determine whether a rounding operation involves a midpoint value, the <xref:System.Math.Round%2A> method multiplies the original value to be rounded by 10<sup>n</sup>, where *n* is the desired number of fractional digits in the return value, and then determines whether the remaining fractional portion of the value is greater than or equal to .5. This is a slight variation on a test for equality, and as discussed in the "Testing for Equality" section of the <xref:System.Double> reference topic, tests for equality with floating-point values are problematic because of the floating-point format's issues with binary representation and precision. This means that any fractional portion of a number that is slightly less than .5 (because of a loss of precision) will not be rounded upward.  
@@ -4572,7 +4573,7 @@ Problems of precision in rounding midpoint values are most likely to arise in th
   
 - When the value to be rounded is calculated from one or more floating-point operations.  
   
-- When the value to be rounded is a <xref:System.Single> rather than a <xref:System.Double> or <xref:System.Decimal>. For more information, see the next section, [Rounding and single-precision floating-point values](#Single).  
+- When the value to be rounded is a <xref:System.Single> rather than a <xref:System.Double> or <xref:System.Decimal>. For more information, see the next section, [Rounding and single-precision floating-point values](#rounding-and-single-precision-floating-point-values).  
   
  In cases where the lack of precision in rounding operations is problematic, you can do the following:  
   
@@ -4593,7 +4594,8 @@ The <xref:System.Math.Round%2A> method includes overloads that accept arguments 
 This unexpected result is due to a loss of precision in the conversion of the <xref:System.Single> value to a <xref:System.Double>. Because the resulting <xref:System.Double> value of 16.325000762939453 is not a midpoint value and is greater than 16.325, it is always rounded upward.  
   
 In many cases, as the example illustrates, the loss of precision can be minimized or eliminated by casting or converting the <xref:System.Single> value to a <xref:System.Decimal>. Note that, because this is a narrowing conversion, it requires using a cast operator or calling a conversion method.  
-  
+
+<a name="round-examples"></a>  
 ## Examples 
 
 In addition to the examples in the [Remarks](#remarks-round) section, this article includes examples that illustrate the following overloads of the `Math.Round` method:

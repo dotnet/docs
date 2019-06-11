@@ -58,7 +58,7 @@ To be able to format the output with indentation and white space OR to skip vali
       <Docs>
         <param name="bufferWriter">The destination for writing JSON text.</param>
         <param name="options">Defines the customized behavior of the <see cref="T:System.Text.Json.Utf8JsonWriter" /> By default, it writes minimized JSON (with no extra whitespace) and validates that the JSON being written is structurally valid according to the JSON RFC.</param>
-        <summary>Constructs a new <see cref="T:System.Text.Json.Utf8JsonWriter" /> instance with a specified <see cref="T:System.Buffers.IBufferWriter&lt;System.Byte&gt;" />.</summary>
+        <summary>Constructs a new <see cref="T:System.Text.Json.Utf8JsonWriter" /> instance with a specified <see langword="System.Buffers.IBufferWriter&lt;System.Byte&gt;" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="bufferWriter" />  is <see langword="null" />.</exception>
       </Docs>

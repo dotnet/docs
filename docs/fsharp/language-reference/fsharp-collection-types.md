@@ -83,7 +83,7 @@ This section compares the functions that are available on F# collection types. T
 |map2|O(N)|O(N)|O(1)|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the two collections pairwise. The two input arrays must have the same length.|
 |map3|-|O(N)|-|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the three collections simultaneously.|
 |mapi|O(N)|O(N)|O(N)|-|-|Builds an array whose elements are the results of applying the given function to each element of the array. The integer index that's passed to the function indicates the index of the element that's being transformed.|
-|mapi2|O(N)|O(N)|-|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the two collections pairwise, also passing the index of the elements. The two input arrays must have the same length|
+|mapi2|O(N)|O(N)|-|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the two collections pairwise, also passing the index of the elements. The two input arrays must have the same length.|
 |max|O(N)|O(N)|O(N)|-|-|Returns the greatest element in the collection, compared by using the [max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) operator.|
 |maxBy|O(N)|O(N)|O(N)|-|-|Returns the greatest element in the collection, compared by using [max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) on the function result.|
 |maxElement|-|-|-|-|O(log N)|Returns the greatest element in the set according to the ordering that's used for the set.|

@@ -15,10 +15,11 @@ This article describes what is new in .NET Core 3.0 (through preview 5). One of 
 
 .NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the latest release of Visual Studio 2019 Update 1 Preview or VSCode with the OmniSharp extension.
 
-[Download and get started with .NET Core 3.0 Preview 5](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
+[Download and get started with .NET Core 3.0 Preview 6](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
 
 For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 Preview 6 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-6/)
 - [.NET Core 3.0 Preview 5 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-5/)
 - [.NET Core 3.0 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-4/)
 - [.NET Core 3.0 Preview 3 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-3/)
@@ -126,6 +127,38 @@ To disable TC completely, use this setting in your project file:
 ```xml
 <TieredCompilation>false</TieredCompilation>
 ```
+
+## ReadyToRun images
+
+You can improve the startup time of your .NET Core application by compiling your application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation.
+
+R2R binaries improve startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. The binaries contain similar native code compared to what the JIT would produce.
+
+R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish a self-contained app that targets a specific runtime environments (RID) such as Linux x64 or Windows x64.
+
+To compile your app as R2R, add the `<PublishReadyToRun>` setting:
+
+```xml
+<PropertyGroup>
+  <PublishReadyToRun>true</PublishReadyToRun>
+</PropertyGroup>
+```
+
+Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
+
+```console
+dotnet publish -c Release -r win-x64 --self-contained true
+```
+
+### Cross platform/architecture restrictions
+
+The ReadyToRun compiler doesn't currently support cross-targeting. You must compile on a given target. For example, if you want R2R images for Windows x64, you need to run the publish command on that environment.
+
+Exceptions to cross-targetting:
+
+- Windows x64 can be used to compile Windows ARM32, ARM64, and x86 images.
+- Windows x86 can be used to compile Windows ARM32 images.
+- Linux x64 can be used to compile Linux ARM32 and ARM64 images.
 
 ## Build copies dependencies
 

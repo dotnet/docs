@@ -1,5 +1,5 @@
 ---
-title: "+ and += operators - C# Reference"
+title: "+ and += operators - C# reference"
 ms.custom: seodec18
 ms.date: 05/24/2019
 f1_keywords: 
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "+= operator [C#]"
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
-# + and += operators (C# Reference)
+# + and += operators (C# reference)
 
 The `+` operator is supported by the built-in numeric types, [string](../keywords/string.md) type, and [delegate](../keywords/delegate.md) types.
 
@@ -73,13 +73,11 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [String interpolation](../tokens/interpolated.md)
 - [How to: concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
 - [Delegates](../../programming-guide/delegates/index.md)
 - [Events](../../programming-guide/events/index.md)
-- [Checked and unchecked](../keywords/checked-and-unchecked.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [- and -= operators](subtraction-operator.md)

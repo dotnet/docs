@@ -1,5 +1,5 @@
 ---
-title: "Member access operators - C# Reference"
+title: "Member access operators - C# reference"
 description: "Learn about C# operators that you can use to access type members."
 ms.date: 05/09/2019
 author: pkulikov
@@ -26,7 +26,7 @@ helpviewer_keywords:
   - "delegate invocation [C#]"
   - "() operator [C#]"
 ---
-# Member access operators (C# Reference)
+# Member access operators (C# reference)
 
 You might use the following operators when you access a type member:
 
@@ -158,7 +158,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)

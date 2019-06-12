@@ -1,5 +1,5 @@
 ---
-title: ":: operator - C# Reference"
+title: ":: operator - C# reference"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "namespace alias qualifier operator (::) [C#]"
 ms.assetid: 698b5a73-85cf-4e0e-9e8e-6496887f8527
 ---
-# :: operator (C# Reference)
+# :: operator (C# reference)
 
 The namespace alias qualifier (`::`) is used to look up identifiers. It is always positioned between two identifiers, as in this example:
 
@@ -39,8 +39,7 @@ For an example of how to use the `::` operator, see the following section:
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# reference](../index.md)
 - [C# operators](index.md)
 - [. operator](member-access-operators.md#member-access-operator-)
 - [extern alias](../keywords/extern-alias.md)

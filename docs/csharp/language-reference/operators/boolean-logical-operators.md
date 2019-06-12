@@ -1,5 +1,5 @@
 ---
-title: "Boolean logical operators - C# Reference"
+title: "Boolean logical operators - C# reference"
 description: "Learn about C# operators that perform logical negation, conjunction (AND), and inclusive and exclusive disjunction (OR) operations with Boolean operands."
 ms.date: 04/08/2019
 author: pkulikov
@@ -33,7 +33,7 @@ helpviewer_keywords:
   - "short-circuiting OR operator [C#]"
   - "|| operator [C#]"
 ---
-# Boolean logical operators (C# Reference)
+# Boolean logical operators (C# reference)
 
 The following operators perform logical operations with the [bool](../keywords/bool.md) operands:
 
@@ -185,7 +185,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Bitwise and shift operators](bitwise-and-shift-operators.md)

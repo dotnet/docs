@@ -1,5 +1,5 @@
 ---
-title: "=> Operator - C# Reference"
+title: "=> operator - C# reference"
 ms.custom: seodec18
 ms.date: 01/22/2019
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
 ---
-# => operator (C# Reference)
+# => operator (C# reference)
 
 The `=>` token is supported in two forms: as the lambda operator and as a separator of a member name and the member implementation in an expression body definition.
 
@@ -70,8 +70,7 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)

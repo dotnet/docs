@@ -1,5 +1,5 @@
 ---
-title: "- and -= operators - C# Reference"
+title: "- and -= operators - C# reference"
 ms.custom: seodec18
 ms.date: 05/27/2019
 f1_keywords: 
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "-= operator [C#]"
 ms.assetid: 4de7a4fa-c69d-48e6-aff1-3130af970b2d
 ---
-# - and -= operators (C# Reference)
+# - and -= operators (C# reference)
 
 The `-` operator is supported by the built-in numeric types and [delegate](../keywords/delegate.md) types.
 
@@ -74,11 +74,9 @@ For more information, see the [Unary minus operator](~/_csharplang/spec/expressi
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Delegates](../../programming-guide/delegates/index.md)
 - [Events](../../programming-guide/events/index.md)
-- [Checked and unchecked](../keywords/checked-and-unchecked.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [+ and += operators](addition-operator.md)

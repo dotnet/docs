@@ -1,5 +1,5 @@
 ---
-title: "Pointer related operators - C# Reference"
+title: "Pointer related operators - C# reference"
 description: "Learn about C# operators that you can use when working with pointers."
 ms.date: 05/20/2019
 author: pkulikov
@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "pointer decrement [C#]"
   - "pointer comparison [C#]"
 ---
-# Pointer related operators (C# Reference)
+# Pointer related operators (C# reference)
 
 You can use the following operators to work with pointers:
 
@@ -181,11 +181,10 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [`unsafe` keyword](../keywords/unsafe.md)
-- [`fixed` keyword](../keywords/fixed-statement.md)
-- [`stackalloc` operator](stackalloc.md)
-- [`sizeof` operator](../keywords/sizeof.md)
+- [unsafe keyword](../keywords/unsafe.md)
+- [fixed keyword](../keywords/fixed-statement.md)
+- [stackalloc operator](stackalloc.md)
+- [sizeof operator](../keywords/sizeof.md)

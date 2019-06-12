@@ -1,5 +1,5 @@
 ---
-title: "Comparison operators - C# Reference"
+title: "Comparison operators - C# reference"
 description: "Learn about C# comparison operators that you can use to check the order of numeric values."
 ms.date: 04/25/2019
 author: pkulikov
@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "greater than or equal to operator [C#]"
   - ">= operator [C#]"
 ---
-# Comparison operators (C# Reference)
+# Comparison operators (C# reference)
 
 The [`<` (less than)](#less-than-operator-), [`>` (greater than)](#greater-than-operator-), [`<=` (less than or equal)](#less-than-or-equal-operator-), and [`>=` (greater than or equal)](#greater-than-or-equal-operator-) comparison, also known as relational, operators compare their operands. Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
 
@@ -67,8 +67,7 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - <xref:System.IComparable%601?displayProperty=nameWithType>
 - [Equality operators](equality-operators.md)

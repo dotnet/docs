@@ -61,7 +61,7 @@ In this section, you add a custom event log to the Windows service. The <xref:Sy
 
 1. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Designer**.
 
-2. In **Toolbox**, expand **Components**, and then drag the **EventLog** component to the **Service1.cs [Design]**, or **Service1.vb [Design]** tab.
+2. In **Toolbox**, expand **Components**, and then drag the **EventLog** component to the **MyNewService.cs [Design]**, or **MyNewService.vb [Design]** tab.
 
 3. In **Solution Explorer**, from the shortcut menu for **MyNewService.cs**, or **MyNewService.vb**, choose **View Code**.
 

@@ -69,7 +69,8 @@ For information about detecting the installed updates for each version of the .N
 
 The following table lists the value of the **Release** DWORD on individual operating systems for .NET Framework 4.5 and later versions.
 
-[!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
+> [!IMPORTANT]
+> The following table lists the keys of released versions of the .NET Framework only. It doesn't list the keys of preview or pre-release versions.
 
 <a name="version_table"></a>
 

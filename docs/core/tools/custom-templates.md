@@ -93,7 +93,7 @@ A custom template is packed with the [dotnet pack](dotnet-pack.md) command and a
 The *.csproj* file is slightly different from a traditional code-project *.csproj* file. Note the following settings:
 
 01. The `<PackageType>` setting is added and set to `Template`.
-01. The `<PackageVersion>` setting is added and set to a valid [NuGet version number](~/nuget/reference/package-versioning.md).
+01. The `<PackageVersion>` setting is added and set to a valid [NuGet version number](/nuget/reference/package-versioning).
 01. The `<PackageId>` setting is added and set to a unique identifier. This identifier is used to uninstall the template pack and is used by NuGet feeds to register your template pack.
 01. Generic metadata settings should be set: `<Title>`, `<Authors>`, `<Description>`, and `<Tags>`.
 01. The `<TargetFramework>` setting must still be set, even though the binary produced by the template process is not used. In the example below it is set to `netstandard2.0`.

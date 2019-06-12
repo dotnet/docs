@@ -1,5 +1,5 @@
 ---
-title: .Breaking change categories
+title: Breaking change categories
 description: Learn about the ways in which breaking changes are categorizeds.
 author: rpetrusha
 ms.author: ronpet

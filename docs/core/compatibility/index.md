@@ -1,11 +1,11 @@
 ---
-title: .NET Core application compatibility
+title: Evaluate breaking changes in .NET Core
 description: Learn about the ways in which .NET Core attempts to maintain compatibility for developers across .NET versions.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 06/10/2019
 ---
-# .NET Core application compatibility
+# Evaluate breaking changes in .NET Core
 
 Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true of .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
 

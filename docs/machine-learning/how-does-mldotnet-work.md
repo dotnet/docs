@@ -28,8 +28,6 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
  ```csharp
     using System;
-    using System.IO;
-    using Microsoft.Data.DataView;
     using Microsoft.ML;
     using Microsoft.ML.Data;
     

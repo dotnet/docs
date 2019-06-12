@@ -47,7 +47,7 @@ A popular approach to solve schema versioning is to never modify existing proper
 
 The sequence of changes ensures that legacy code continues to run "as is" while newer serverless functions can take advantage of the new field.
 
-For more information about data in serverless architectures, see [Challenges and solutions for distributed data management](../microservices-architecture/architect-microservice-container-applications/distributed-data-management.md).
+For more information about data in serverless architectures, see [Challenges and solutions for distributed data management](../microservices/architect-microservice-container-applications/distributed-data-management.md).
 
 ## Scaling
 
@@ -69,7 +69,7 @@ It's also important to consider the *circuit-breaker pattern*: If, for some reas
 
 To continue the circuit-breaker pattern, services need to be fault tolerant and resilient. Fault tolerance refers to the ability of your application to continue running even after unexpected exceptions or invalid states are encountered. Fault tolerance is typically a function of the code itself and how it's written to handle exceptions. Resiliency refers to how capable the app is at recovering from failures. Resiliency is often managed by the serverless platform. The platform should be able to spin up a new serverless function instance when the existing one fails. The platform should also be intelligent enough to stop spinning up new instances when every new instance fails.
 
-For more information, see [Implementing the Circuit Breaker pattern](../microservices-architecture/implement-resilient-applications/implement-circuit-breaker-pattern.md).
+For more information, see [Implementing the Circuit Breaker pattern](../microservices/implement-resilient-applications/implement-circuit-breaker-pattern.md).
 
 ## Versioning and green/blue deployments
 

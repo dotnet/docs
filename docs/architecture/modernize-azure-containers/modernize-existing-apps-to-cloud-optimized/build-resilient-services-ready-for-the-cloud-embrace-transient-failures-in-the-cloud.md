@@ -37,7 +37,7 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 - **Implementing resilient communication to handle partial failure**
 
-    [https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies](../../microservices-architecture/implement-resilient-applications/partial-failure-strategies.md)
+    [https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/partial-failure-strategies](../../microservices/implement-resilient-applications/partial-failure-strategies.md)
 
 - **Entity Framework connection resiliency and retry logic (version 6 and later)**
 

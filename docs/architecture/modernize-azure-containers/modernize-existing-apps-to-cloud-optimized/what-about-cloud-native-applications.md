@@ -50,7 +50,7 @@ However, microservices are not mandatory for any new or modern application. Micr
 
 The microservices architecture is becoming the preferred approach for distributed and large or complex mission-critical applications that are based on multiple, independent subsystems in the form of autonomous services. In a microservices-based architecture, an application is built as a collection of services that can be independently developed, tested, versioned, deployed, and scaled. This can include any related, autonomous database per microservice.
 
-For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF e-book [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](../../microservices-architecture/index.md).
+For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF e-book [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](../../microservices/index.md).
 
 But even in scenarios in which microservices offer powerful capabilities-independent deployment, strong subsystem boundaries, and technology diversity-they also raise many new challenges. The challenges are related to distributed application development, such as fragmented and independent data models; achieving resilient communication between microservices; the need for eventual consistency; and operational complexity. Microservices introduce a higher level of complexity compared to traditional monolithic applications.
 

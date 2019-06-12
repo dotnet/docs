@@ -45,14 +45,6 @@ Static constructors have the following properties:
 
 - Static constructors are also a convenient place to enforce run-time checks on the type parameter that cannot be checked at compile-time via constraints (Type parameter constraints).
 
-### Explicit initialization
-
-> [!CAUTION]
-> Static constructors can be explicitly initiliazed once with <xref:System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(RuntimeTypeHandle)>. This is not recommended.
->```csharp
->System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typefof(myClass).TypeHandle);
->```
-
 ## Example
  In this example, class `Bus` has a static constructor. When the first instance of `Bus` is created (`bus1`), the static constructor is invoked to initialize the class. The sample output verifies that the static constructor runs only one time, even though two instances of `Bus` are created, and that it runs before the instance constructor runs.  
   

@@ -36,7 +36,7 @@ Files that were migrated (*project.json*, *global.json*, *.xproj* and solution f
 A file named *UpgradeLog.htm* is also saved and automatically opened that contains a migration report.
 
 > [!IMPORTANT]
-> The new tooling is not available in Visual Studio 2015, so you cannot migrate your projects using that version of Visual Studio.
+> The above tooling is only available between Visual Studio 2017 (version 15.0) and Visual Studio 2019 (version 16.3). If you are using a version of Visual Studio outside of that range, you should either install a suitable version of Visual Studio or use the command line migration tool described below.
 
 ### dotnet migrate
 
@@ -46,17 +46,17 @@ When you migrate a project, the project and all its dependencies are migrated.
 Files that were migrated (*project.json*, *global.json* and *.xproj*) will be moved to a *backup* folder.
 
 > [!NOTE]
-> If you are using Visual Studio Code, the `dotnet migrate` command will not modify Visual Studio Code-specific files such as `tasks.json`. These files need to be changed manually.
-> This is also true if you are using Project Ryder or any editor or Integrated Development Environment (IDE) other than Visual Studio.
+> If you are using Visual Studio Code, the `dotnet migrate` command will not modify Visual Studio Code-specific files such as *tasks.json*. These files need to be changed manually.
+> This is also true if you are using an editor or Integrated Development Environment (IDE) other than Visual Studio.
 
-See [A mapping between project.json and csproj properties](../tools/project-json-to-csproj.md) for a comparison of project.json and csproj formats.
+See [A mapping between project.json and csproj properties](../tools/project-json-to-csproj.md) for a comparison of *project.json* and *.csproj* formats.
 
-### Common issues
+If you get an error:
 
-- If you get an error: "No executable found matching command dotnet-migrate":
+> No executable found matching command dotnet-migrate
 
-Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) requires .NET Core CLI RC3 or higher.
-You’ll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to an older version.
+Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) is only available between .NET Core CLI RC3 and 3.0.100.
+You'll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to a version outside this range.
 
 ## Migration from DNX to csproj
 

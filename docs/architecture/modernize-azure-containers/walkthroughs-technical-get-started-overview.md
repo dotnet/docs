@@ -303,5 +303,5 @@ Deploying to Azure App Service for Containers offers the benefits of containers 
 Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service>
 
 > [!div class="step-by-step"]
-> [Previous](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)
+> [Previous](modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios.md)
 > [Next](conclusions.md)

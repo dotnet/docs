@@ -66,7 +66,7 @@ let stats = getCircleStats r
 printCircleStats r stats
 ```
 
-As you would expect, calling `printCircleStats` with any anonymous record type that doesn't have the same "shape" as the input type will fail to compile:
+Calling `printCircleStats` with any anonymous record type that doesn't have the same "shape" as the input type will fail to compile:
 
 ```fsharp
 printCircleStats r {| Diameter = 2.0; Area = 4.0; MyCircumference = 12.566371 |}
@@ -101,7 +101,7 @@ printCircleStats r stats
 
 ### Structness inference
 
-Struct anonymous records also allow for "structness inference" where you do not need to specify the `struct` keyword at the call site. In this example, we elide the `struct` keyword when calling `printCircleStats` with an anonymous record declared on the fly:
+Struct anonymous records also allow for "structness inference" where you do not need to specify the `struct` keyword at the call site. In this example, you elide the `struct` keyword when calling `printCircleStats` with an anonymous record declared on the fly:
 
 ```fsharp
 
@@ -116,7 +116,7 @@ Note that the reverse pattern - specifying `struct` when the input type is not a
 
 ## Embedding anonymous records within other types
 
-It can often be desirable to have records as cases within [discriminated unions](discriminated-unions.md). But if the data in the records are also of the same type of the discriminated union, you're forced to define all types as mutually recursive. This is eased with anonymous records. What follows is an example type and function that patterns matches over it:
+It's useful to declare [discriminated unions](discriminated-unions.md) whose cases are records. But if the data in the records is the same type as the discriminated union, you must define all types as mutually recursive. Using anonymous records avoids this restriction. What follows is an example type and function that patterns matches over it:
 
 ```fsharp
 type FullName = { FirstName: string; LastName: string }
@@ -257,7 +257,7 @@ Anonymous records do not support pattern matching, unlike named records. This is
 2. Because of (1), there is no ability to have additional patterns in a pattern match expression, as each distinct pattern would imply a different anonymous record type.
 3. Because of (3), any anonymous record pattern would be more verbose than the use of “dot” notation.
 
-There is an open language suggestion to [allow mattern matching in limited contexts](https://github.com/fsharp/fslang-suggestions/issues/713).
+There is an open language suggestion to [allow pattern matching in limited contexts](https://github.com/fsharp/fslang-suggestions/issues/713).
 
 ### Limitations with mutability
 

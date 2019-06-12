@@ -108,6 +108,34 @@ dotnet publish -r win10-x64 /p:PublishSingleFile=true
 
 For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/single-file/design.md).
 
+## Assembly linking
+
+The .NET core 3.0 SDK comes with a tool that can reduce the size of apps by analyzing IL and trimming unused assemblies.
+
+Self-contained apps include everything needed to run your code, without requiring .NET to be installed on the host computer. However, many times the app only requires a small subset of the framework to function, and other unused libraries could be removed.
+
+.NET Core now includes a setting that will use the [IL linker](https://github.com/mono/linker) tool to scan the IL of your app. this tool detects what code is required, and then trims unused libraries. This tool can significantly reduce the deployment size of some apps.
+
+To enable this tool, `<PublishTrimmed>` setting in your project and publish a self-contained app:
+
+```xml
+<PropertyGroup>
+  <PublishTrimmed>true</PublishTrimmed>
+</PropertyGroup>
+```
+
+```console
+dotnet publish -r <rid> -c Release
+```
+
+As an example, the basic "hello world" new console project template that is included, when published, hits about 70 MB in size. By using `<PublishTrimmed>`, that size is reduced to about 30 MB.
+
+It's important to consider that applications or frameworks (including ASP.NET Core and WPF) that use reflection or related dynamic features, will often break when trimmed. This breakage occurs because the linker doesn't know about this dynamic behavior and can't determine which framework types are required for reflection. The IL Linker tool can be configured to be aware of this scenario.
+
+Above all else, be sure to test your app after trimming.
+
+For more information about the IL Linker tool, see the [documentation](https://aka.ms/dotnet-illink) or visit the [mono/linker]( https://github.com/mono/linker) repo.
+
 ## Tiered compilation
 
 [Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.

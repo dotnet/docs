@@ -136,7 +136,7 @@ let getFirstName e =
 
 ## Copy and update expressions
 
-Anonymous records support construction with [copy and update expressions](copy-and-update-expressions.md). For example, here's how you can construct a new instance of an anonymous record that copies an existing one's data:
+Anonymous records support construction with [copy and update expressions](copy-and-update-record-expressions.md). For example, here's how you can construct a new instance of an anonymous record that copies an existing one's data:
 
 ```fsharp
 let data = {| X = 1; Y = 2 |}

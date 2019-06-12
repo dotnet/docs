@@ -1,7 +1,7 @@
 ---
 title: Anonymous Records
 description: Learn how to use construct and use Anonymous Records, a language feature that helps with the manipulation of data.
-ms.date: 06/11/2019
+ms.date: 06/12/2019
 ---
 # Anonymous Records
 
@@ -37,7 +37,7 @@ let getCircleStats radius =
     let a = Math.PI * (radius ** 2.0)
     let c = 2.0 * Math.PI * radius
 
-    {| Diameter=d; Area=a; Circumference=c |}
+    {| Diameter = d; Area = a; Circumference = c |}
 
 let r = 2.0
 let stats = getCircleStats r
@@ -55,7 +55,7 @@ let getCircleStats radius =
     let a = Math.PI * (radius ** 2.0)
     let c = 2.0 * Math.PI * radius
 
-    {| Diameter=d; Area=a; Circumference=c |}
+    {| Diameter = d; Area = a; Circumference = c |}
 
 let printCircleStats r (stats: {| Area: float; Circumference: float; Diameter: float |}) =
     printfn "Circle with radius: %f has diameter %f, area %f, and circumference %f"
@@ -69,7 +69,7 @@ printCircleStats r stats
 As you would expect, calling `printCircleStats` with any anonymous record type that doesn't have the same "shape" as the input type will fail to compile:
 
 ```fsharp
-printCircleStats r {| Diameter=2.0; Area=4.0; MyCircumference=12.566371 |}
+printCircleStats r {| Diameter = 2.0; Area = 4.0; MyCircumference = 12.566371 |}
 // Two anonymous record types have mismatched sets of field names
 // '["Area"; "Circumference"; "Diameter"]' and '["Area"; "Diameter"; "MyCircumference"]'
 ```
@@ -87,7 +87,7 @@ let getCircleStats radius =
     let c = 2.0 * Math.PI * radius
 
     // Note that the keyword comes before the '{| |}' brace pair
-    struct {| Area=a; Circumference=c; Diameter=d |}
+    struct {| Area = a; Circumference = c; Diameter = d |}
 
 // the 'struct' keyword also comes before the '{| |}' brace pair when declaring the parameter type
 let printCircleStats r (stats: struct {| Area: float; Circumference: float; Diameter: float |}) =
@@ -109,7 +109,7 @@ let printCircleStats r (stats: struct {| Area: float; Circumference: float; Diam
     printfn "Circle with radius: %f has diameter %f, area %f, and circumference %f"
         r stats.Diameter stats.Area stats.Circumference
 
-printCircleStats r {| Area=4.0; Circumference=12.6; Diameter=12.6 |}
+printCircleStats r {| Area = 4.0; Circumference = 12.6; Diameter = 12.6 |}
 ```
 
 Note that the reverse pattern - specifying `struct` when the input type is not a struct anonymous record - will fail to compile.
@@ -134,7 +134,52 @@ let getFirstName e =
     | Executive ex -> ex.Name.FirstName
 ```
 
-## Anonymous records are nominal
+## Copy and update expressions
+
+Anonymous records support construction with [copy and update expressions](copy-and-update-expressions.md). For example, here's how you can construct a new instance of an anonymous record that copies an existing one's data:
+
+```fsharp
+let data = {| X = 1; Y = 2 |}
+let data' = {| data with Y = 3 |}
+```
+
+However, unlike named records, anonymous records allow you to construct entirely different forms with copy and update expressions. The follow example takes the same anonymous record from the previous example and expands it into a new anonymous record:
+
+```fsharp
+let data = {| X = 1; Y = 2 |}
+let expandedData = {| data with Z = 3 |} // Gives {| X=1; Y=2; Z=3 |}
+```
+
+It is also possible to do this with instances of named records:
+
+```fsharp
+type R = { X: int }
+let data = { X = 1 }
+let data' = {| data with Y = 2 |} // Gives {| X=1; Y=2 |}
+```
+
+You can also copy data to and from reference and struct anonymous records:
+
+```fsharp
+// Copy data from a reference record into a struct anonymous record
+type R1 = { X: int }
+let r1 = { X=1 }
+
+let data1 = struct {| r1 with Y=1 |}
+
+// Copy data from a struct record into a reference anonymous record
+[<Struct>]
+type R2 = { X: int }
+let r2 = { X=1 }
+
+let data2 = {| r1 with Y=1 |}
+```
+
+## Properties of anonymous records
+
+Anonymous records have a number of characteristics that are essential to fully understanding how they can be used.
+
+### Anonymous records are nominal
 
 Anonymous records are [nominal types](https://en.wikipedia.org/wiki/Nominal_type_system). They are best thought as named [record](records.md) types (which are also nominal) that do not require an up-front declaration.
 
@@ -157,7 +202,7 @@ let y = { Y = 1 }
 
 This means that there isn't anything inherently different about anonymous records when compared with their named record equivalents when concerning type equivalency or comparison.
 
-## Anonymous records use structural equality and comparison
+### Anonymous records use structural equality and comparison
 
 Like record types, anonymous records are structurally equatable and comparable. This is only true if all constituent types support equality and comparison, like with record types. To support equality or comparison, two anonymous records must have the same "shape".
 
@@ -166,10 +211,10 @@ Like record types, anonymous records are structurally equatable and comparable. 
 {| a = 1+1 |} > {| a = 1 |} // true
 
 // error FS0001: Two anonymous record types have mismatched sets of field names '["a"]' and '["a"; "b"]'
-{| a = 1+1 |} = {| a = 2;  b = 1|}
+{| a = 1 + 1 |} = {| a = 2;  b = 1|}
 ```
 
-## Anonymous records are serializable
+### Anonymous records are serializable
 
 You can serialize anonymous records just as you can with named records. Here is an example using [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/):
 
@@ -185,7 +230,7 @@ printfn "Name: %s Age: %d" phillip.name phillip.age
 
 This makes them handy for sending lightweight data over a network without the need to define a domain for your serialized/deserialized types up front.
 
-## Anonymous records interoperate with C# anonymous types
+### Anonymous records interoperate with C# anonymous types
 
 It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). These are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/programming-guide/concepts/linq/index.md) overload that requires an anonymous type:
 
@@ -193,14 +238,18 @@ It is possible to use a .NET API that requires the use of [C# anonymous types](.
 open System.Linq
 
 let names = [ "Ana"; "Felipe"; "Emillia"]
-let nameGrouping = names.Select(fun n -> {| Name=n; FirstLetter=n.[0] |})
+let nameGrouping = names.Select(fun n -> {| Name = n; FirstLetter = n.[0] |})
 for ng in nameGrouping do
     printfn "%s has first letter %c" ng.Name ng.FirstLetter
 ```
 
 There are a multitude of other APIs used throughout .NET that require this pattern. Anonymous records are your tool for working with them.
 
-## Limitations with pattern matching
+## Limitations
+
+Anonymous records have some restrictions in their usage. Some are inherent to their design, but others are amenable to change.
+
+### Limitations with pattern matching
 
 Anonymous records do not support pattern matching, unlike named records. This is for 3 reasons:
 
@@ -210,10 +259,10 @@ Anonymous records do not support pattern matching, unlike named records. This is
 
 There is an open language suggestion to [allow mattern matching in limited contexts](https://github.com/fsharp/fslang-suggestions/issues/713).
 
-## Limitations with mutability
+### Limitations with mutability
 
 It is not currently possible to define an anonymous record with `mutable` data. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/732) to allow for this.
 
-## Limitations with struct anonymous records
+### Limitations with struct anonymous records
 
 It is not possible to declare struct anonymous records as `IsByRefLike` or `IsReadOnly`. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/712) to allow for this.

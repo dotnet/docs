@@ -5,7 +5,7 @@ ms.date: 06/12/2019
 ---
 # Anonymous Records
 
-Anonymous records are simple aggregates of named values that do not need to be declared before use. They can either be structs or reference types. They are reference types by default.
+Anonymous records are simple aggregates of named values that don't need to be declared before use. You can declare them as either structs or reference types. They're reference types by default.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ let function-name (arg-name: [struct] {| Label1: Type1; Label2: Type2; ...|}) ..
 
 ## Basic usage
 
-Anonymous records are best thought of as F# record types that don’t have explicit names and can be declared in an ad-hoc fashion.
+Anonymous records are best thought of as F# record types that don't need to be declared before instantiation.
 
 For example, here how you can interact with a function that produces an anonymous record:
 
@@ -101,7 +101,7 @@ printCircleStats r stats
 
 ### Structness inference
 
-Struct anonymous records also allow for "structness inference" where you do not need to specify the `struct` keyword at the call site. In this example, you elide the `struct` keyword when calling `printCircleStats` with an anonymous record declared on the fly:
+Struct anonymous records also allow for "structness inference" where you do not need to specify the `struct` keyword at the call site. In this example, you elide the `struct` keyword when calling `printCircleStats`:
 
 ```fsharp
 
@@ -112,11 +112,11 @@ let printCircleStats r (stats: struct {| Area: float; Circumference: float; Diam
 printCircleStats r {| Area = 4.0; Circumference = 12.6; Diameter = 12.6 |}
 ```
 
-Note that the reverse pattern - specifying `struct` when the input type is not a struct anonymous record - will fail to compile.
+The reverse pattern - specifying `struct` when the input type is not a struct anonymous record - will fail to compile.
 
 ## Embedding anonymous records within other types
 
-It's useful to declare [discriminated unions](discriminated-unions.md) whose cases are records. But if the data in the records is the same type as the discriminated union, you must define all types as mutually recursive. Using anonymous records avoids this restriction. What follows is an example type and function that patterns matches over it:
+It's useful to declare [discriminated unions](discriminated-unions.md) whose cases are records. But if the data in the records is the same type as the discriminated union, you must define all types as mutually recursive. Using anonymous records avoids this restriction. What follows is an example type and function that pattern matches over it:
 
 ```fsharp
 type FullName = { FirstName: string; LastName: string }
@@ -150,7 +150,7 @@ let data = {| X = 1; Y = 2 |}
 let expandedData = {| data with Z = 3 |} // Gives {| X=1; Y=2; Z=3 |}
 ```
 
-It is also possible to do this with instances of named records:
+It is also possible to construct anonymous records from instances of named records:
 
 ```fsharp
 type R = { X: int }
@@ -186,14 +186,14 @@ Anonymous records have a number of characteristics that are essential to fully u
 
 Anonymous records are [nominal types](https://en.wikipedia.org/wiki/Nominal_type_system). They are best thought as named [record](records.md) types (which are also nominal) that do not require an up-front declaration.
 
-Consider the following two anonymous record declarations:
+Consider the following example with two anonymous record declarations:
 
 ```fsharp
 let x = {| X = 1 |}
 let y = {| Y = 1 |}
 ```
 
-The `x` and `y` values have distinctly different types and are not compatible with one another. They are neither equatable nor comparable. That is, the previous example is analogous to the following:
+The `x` and `y` values have different types and are not compatible with one another. They are not equatable and they are not comparable. To illustrate this, consider a named record equivalent:
 
 ```fsharp
 type X = { X: int }
@@ -203,7 +203,7 @@ let x = { X = 1 }
 let y = { Y = 1 }
 ```
 
-This means that there isn't anything inherently different about anonymous records when compared with their named record equivalents when concerning type equivalency or comparison.
+There isn't anything inherently different about anonymous records when compared with their named record equivalents when concerning type equivalency or comparison.
 
 ### Anonymous records use structural equality and comparison
 
@@ -231,11 +231,11 @@ let phillip = JsonConvert.DeserializeObject<{|name: string; age: int|}>(str)
 printfn "Name: %s Age: %d" phillip.name phillip.age
 ```
 
-This makes them handy for sending lightweight data over a network without the need to define a domain for your serialized/deserialized types up front.
+Anonymous records are useful for sending lightweight data over a network without the need to define a domain for your serialized/deserialized types up front.
 
 ### Anonymous records interoperate with C# anonymous types
 
-It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). These are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/programming-guide/concepts/linq/index.md) overload that requires an anonymous type:
+It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/programming-guide/concepts/linq/index.md) overload that requires an anonymous type:
 
 ```fsharp
 open System.Linq
@@ -246,7 +246,7 @@ for ng in nameGrouping do
     printfn "%s has first letter %c" ng.Name ng.FirstLetter
 ```
 
-There are a multitude of other APIs used throughout .NET that require this pattern. Anonymous records are your tool for working with them.
+There are a multitude of other APIs used throughout .NET that require the use of passing in an anonymous type. Anonymous records are your tool for working with them.
 
 ## Limitations
 
@@ -254,7 +254,7 @@ Anonymous records have some restrictions in their usage. Some are inherent to th
 
 ### Limitations with pattern matching
 
-Anonymous records do not support pattern matching, unlike named records. This is for 3 reasons:
+Anonymous records do not support pattern matching, unlike named records. There are three reasons:
 
 1. A pattern would have to account for every field of an anonymous record, unlike named record types. This is because anonymous records do not support structural subtyping – they are nominal types.
 2. Because of (1), there is no ability to have additional patterns in a pattern match expression, as each distinct pattern would imply a different anonymous record type.
@@ -264,8 +264,8 @@ There is an open language suggestion to [allow pattern matching in limited conte
 
 ### Limitations with mutability
 
-It is not currently possible to define an anonymous record with `mutable` data. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/732) to allow for this.
+It is not currently possible to define an anonymous record with `mutable` data. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/732) to allow mutable data.
 
 ### Limitations with struct anonymous records
 
-It is not possible to declare struct anonymous records as `IsByRefLike` or `IsReadOnly`. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/712) to allow for this.
+It is not possible to declare struct anonymous records as `IsByRefLike` or `IsReadOnly`. There is an [open language suggestion](https://github.com/fsharp/fslang-suggestions/issues/712) to for `IsByRefLike` and `IsReadOnly` anonymous records.

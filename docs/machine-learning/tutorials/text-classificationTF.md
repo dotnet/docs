@@ -41,7 +41,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Add the following additional `using` statements to the top of the *Program.cs* file:
 
-    [!code-csharp[AddUsings](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#AddUsings "Add necessary usings")]
+    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#AddUsings "Add necessary usings")]
 
 2. Create two global fields to hold the recently downloaded dataset file path and the saved model file path:
 
@@ -49,7 +49,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. Add the following code to the line right above the `Main` method to specify the maximum length:
 
-    [!code-csharp[Declare global variables](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
+    [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
 4. Next, create classes for your input data and predictions. Add a new class to your project:
 
@@ -59,11 +59,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 5. The *IMDBData.cs* file opens in the code editor. Add the following `using` statement to the top of *IMDBData.cs*:
 
-    [!code-csharp[AddUsings](~/samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#AddUsings "Add necessary usings")]
+    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#AddUsings "Add necessary usings")]
 
 6. Remove the existing class definition and add the following code, which has two classes `IMDBSentiment` and `IMDBPrediction`, to the *IMDBData.cs* file:
 
-    [!code-csharp[DeclareTypes](~/samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
+    [!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
 
 ### How the data was prepared
 

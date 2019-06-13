@@ -184,7 +184,7 @@ Templates can be installed by from a template folder, such as the *mytemplate1* 
 ```console
 dotnet new -i <FILE_SYSTEM_DIRECTORY>
 ```
-12002
+
 ## Get a list of installed templates
 
 The uninstall command, without any other parameters, will list all installed templates.

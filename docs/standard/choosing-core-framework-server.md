@@ -104,4 +104,4 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 - [Introduction to .NET and Docker](../core/docker/intro-net-docker.md)
 - [.NET Components Overview](components.md)
-- [.NET Microservices. Architecture for Containerized .NET Applications](microservices/index.md)
+- [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)

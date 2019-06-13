@@ -14,7 +14,9 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 
 The `readonly` keyword is a modifier that can be used in three contexts:
 
-- In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class.
+- In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor. 
+  - If the field is a value type, it is made immutable. 
+  - If the field is a reference type, the field is not made immutable. Though the reference cannot be reassigned, the object identified by the reference is mutable.
 - In a [`readonly struct` definition](#readonly-struct-example), `readonly` indicates that the `struct` is immutable.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes are not allowed to that reference.
 

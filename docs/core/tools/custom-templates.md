@@ -179,12 +179,12 @@ dotnet new -i <PATH_TO_NUPKG_FILE>
 
 ### To install a template from a file system directory
 
-Templates can be installed by from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder.
+Templates can be installed by from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute. However, an absolute path is required to uninstall a template that is installed from a folder.
 
 ```console
 dotnet new -i <FILE_SYSTEM_DIRECTORY>
 ```
-
+12002
 ## Get a list of installed templates
 
 The uninstall command, without any other parameters, will list all installed templates.
@@ -229,10 +229,10 @@ If the package was installed by either a NuGet feed or by a *.nupkg* file direct
 dotnet new -u <NUGET_PACKAGE_ID>
 ```
 
-If the package was installed by specifying a path to the *.template.config* folder, use that path to uninstall the package.
+If the package was installed by specifying a path to the *.template.config* folder, use that **absolute** path to uninstall the package. You can see the absolute path of the template in the output provided by the `dotnet new -u` command. For more information, see the [Get a list of installed templates](#get-a-list-of-installed-templates) section above.
 
 ```console
-dotnet new -u <FILE_SYSTEM_DIRECTORY>
+dotnet new -u <ABSOLUTE_FILE_SYSTEM_DIRECTORY>
 ```
 
 ## Create a project using a custom template

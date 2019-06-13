@@ -21,7 +21,7 @@ Provides a property and methods to write event and exception information to the 
   
  **Class:** <xref:Microsoft.VisualBasic.Logging.Log>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
 

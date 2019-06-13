@@ -17,24 +17,32 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- You can create a custom request validation type by implementing the <xref:System.Web.Util.RequestValidator> type. When ASP.NET calls the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method to validate a request, ASP.NET passes a `requestValidationSource` parameter to specify the source of the data being validated. The <xref:System.Web.Util.RequestValidationSource> enumeration is used to specify the source or kind of request data that is being validated. The enumeration indicates the type of HTTP input that is passed in the `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method. You can use the enumeration as a way to fall back to the base request validation implementation for HTTP inputs if you do not want to validate using custom logic.  
-  
-   
+## Remarks 
+
+You can create a custom request validation type by implementing the <xref:System.Web.Util.RequestValidator> type. When ASP.NET calls the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method to validate a request, ASP.NET passes a `requestValidationSource` parameter to specify the source of the data being validated. The <xref:System.Web.Util.RequestValidationSource> enumeration is used to specify the source or kind of request data that is being validated. The enumeration indicates the type of HTTP input that is passed in the `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method. You can use the enumeration as a way to fall back to the base request validation implementation for HTTP inputs if you do not want to validate using custom logic.  
+
+The following table shows how the value of the `collectionKey` and `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A?displayProperty=nameWithType> method are interpreted for each member of the `RequestValidationSource` enumeration.
+
+|Enumeration member|`collectionKey` parameter|`value` parameter|
+|--|--|--|
+|`Cookies`|The name of the cookie in the collection.|The value in the collection.|
+|`Files`|The name of the uploaded file in the collection.|The value of the uploaded file in the collection.|
+|`Form`|The name of the form parameter in the collection|The value of the form parameter in the collection.|
+|`Headers`|The name of an HTTP header in the collection.|The value of the HTTP header in the collection.|
+|`Path`|`null` (`Path` is not a collection of values).|The value of the Path field.|
+|`PathInfo`|`null` (`PathInfo` is not a collection of values).|The value of the PathInfo field.|
+|`QueryString`|The name of the query-string parameter in the collection.|The value of the query-string parameter in the collection.|
+|`RawUrl`|`null` (`RawUrl` is not a collection of values.)|The value of the RawUrl field.|
   
 ## Examples  
  The following example shows how to create a custom request validator class that allows only a specific string for query-string values.  
   
-```vb  
-Imports System  
+```vb
 Imports System.Web  
 Imports System.Web.Util  
   
 Public Class CustomRequestValidation  
     Inherits RequestValidator  
-  
-Public Sub New()  
-End Sub  
   
 Protected Overloads Overrides Function IsValidRequestString( _  
         ByVal context As HttpContext, _  
@@ -156,16 +164,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The request cookies.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the cookie in the collection.  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value in the collection.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -186,16 +184,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>The uploaded file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the uploaded file in the collection.  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the uploaded file in the collection.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Form">
@@ -216,16 +204,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The form values.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the form parameter in the collection.  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the form parameter in the collection.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -246,16 +224,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>7</MemberValue>
       <Docs>
         <summary>The request headers.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of an HTTP header in the collection.  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the HTTP header in the collection.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -276,16 +244,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>The virtual path.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to `null` (`Path` is not a collection of values).  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the Path field.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PathInfo">
@@ -306,16 +264,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>6</MemberValue>
       <Docs>
         <summary>An HTTP <see cref="P:System.Web.HttpRequest.PathInfo" /> string, which is an extension to a URL path.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to `null` (`PathInfo` is not a collection of values).  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the PathInfo field.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryString">
@@ -336,16 +284,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The query string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the name of the query string parameter in the collection.  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the query-string parameter in the collection.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RawUrl">
@@ -366,16 +304,6 @@ public class CustomRequestValidation : RequestValidator
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>The raw URL. (The part of a URL after the domain.)</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `collectionKey` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to `null`. (`RawUrl` is not a collection of values.)  
-  
- The `value` parameter of the <xref:System.Web.Util.RequestValidator.IsValidRequestString%2A> method is set to the value of the RawUrl field.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

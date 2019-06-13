@@ -40,7 +40,7 @@
  [!code-cpp[InputLanguageChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/InputLanguageChanged/CPP/form1.cpp#1)]
  [!code-csharp[InputLanguageChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/InputLanguageChanged/CS/form1.cs#1)]
  [!code-vb[InputLanguageChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/InputLanguageChanged/VB/form1.vb#1)]  
-  
+
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -267,18 +267,6 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>Katakana DBC. This setting is valid for the Japanese IME only.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to set the value of a control's <xref:System.Windows.Forms.Control.ImeMode%2A> property to Katakana.  
-  
- [!code-cpp[InputLanguageChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/InputLanguageChanged/CPP/form1.cpp#1)]
- [!code-csharp[InputLanguageChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/InputLanguageChanged/CS/form1.cs#1)]
- [!code-vb[InputLanguageChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/InputLanguageChanged/VB/form1.vb#1)]  
-  
- ]]></format>
-        </remarks>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />

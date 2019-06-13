@@ -145,15 +145,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The workflow instance has been terminated by a</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Workflow.ComponentModel.TerminateActivity> activity, by a call to <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A?displayProperty=nameWithType>, or by the workflow runtime engine.  
-  
- ]]></format>
-        </remarks>
+        <summary>The workflow instance has been terminated by a <see cref="T:System.Workflow.ComponentModel.TerminateActivity" /> activity, by a call to <see cref="M:System.Workflow.Runtime.WorkflowInstance.Terminate(System.String)" />, or by the workflow runtime engine.</summary>
       </Docs>
     </Member>
   </Members>

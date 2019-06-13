@@ -19,7 +19,30 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used to set the value of the <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A> property of a <xref:System.Windows.Controls.GridSplitter>.  
+
+This enumeration is used to set the value of the <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A?displayProperty=nameWithType> property.  
+
+The behavior of the <xref:System.Windows.Controls.GridSplitter.ResizeBehavior%2A> property with the `BasedOnAlignment` enumeration value is determined as follows:  
+
+- If the value of the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> property specifies that space is redistributed between rows, the redistribution follows these guidelines:  
+  
+  - When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Top?displayProperty=nameWithType>, space is redistributed between the row that is specified for the <xref:System.Windows.Controls.GridSplitter> and the row that is above that row.  
+  
+  - When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Bottom?displayProperty=nameWithType>, space is redistributed between the row that is specified for the <xref:System.Windows.Controls.GridSplitter> and the row that is below that row.  
+  
+  - When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Center?displayProperty=nameWithType>, space is redistributed between the row that is above and the row that is below the row that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
+  
+  - When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Stretch?displayProperty=nameWithType>, space is redistributed between the row that is above and the row that is below the row that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
+  
+- If the value of the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> property specifies that space is redistributed between columns, the redistribution follows these guidelines:  
+  
+  - When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.HorizontalAlignment.Left?displayProperty=nameWithType>, space is redistributed between the column that is specified for the <xref:System.Windows.Controls.GridSplitter> and the column that is to the left.  
+  
+  - When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.HorizontalAlignment.Right?displayProperty=nameWithType>, space is redistributed between the column that is specified for the <xref:System.Windows.Controls.GridSplitter> and the column that is to the right.  
+  
+  - When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.HorizontalAlignment.Center?displayProperty=nameWithType>, space is redistributed between the columns that are to the left and right of the column that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
+  
+  - When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Stretch?displayProperty=nameWithType>, space is redistributed between the columns that are to the left and right of the column that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
   
  ]]></format>
     </remarks>
@@ -48,32 +71,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Space is redistributed based on the value of the <see cref="P:System.Windows.FrameworkElement.HorizontalAlignment" /> and <see cref="P:System.Windows.FrameworkElement.VerticalAlignment" /> properties.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the value of the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> property specifies that space is redistributed between rows, the redistribution follows these guidelines:  
-  
--   When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Top>, space is redistributed between the row that is specified for the <xref:System.Windows.Controls.GridSplitter> and the row that is above that row.  
-  
--   When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Bottom>, space is redistributed between the row that is specified for the <xref:System.Windows.Controls.GridSplitter> and the row that is below that row.  
-  
--   When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Center>, space is redistributed between the row that is above and the row that is below the row that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
-  
--   When the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Stretch>, space is redistributed between the row that is above and the row that is below the row that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
-  
- If the value of the <xref:System.Windows.Controls.GridSplitter.ResizeDirection%2A> property specifies that space is redistributed between columns, the redistribution follows these guidelines:  
-  
--   When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.HorizontalAlignment.Left>, space is redistributed between the column that is specified for the <xref:System.Windows.Controls.GridSplitter> and the column that is to the left.  
-  
--   When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.HorizontalAlignment.Right>, space is redistributed between the column that is specified for the <xref:System.Windows.Controls.GridSplitter> and the column that is to the right.  
-  
--   When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.HorizontalAlignment.Center>, space is redistributed between the columns that are to the left and right of the column that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
-  
--   When the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property is set to <xref:System.Windows.VerticalAlignment.Stretch>, space is redistributed between the columns that are to the left and right of the column that is specified for the <xref:System.Windows.Controls.GridSplitter>.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentAndNext">

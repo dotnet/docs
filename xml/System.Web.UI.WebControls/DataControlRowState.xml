@@ -61,15 +61,8 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates that the data control row is an alternate row.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Alternate state can be combined with other states, such as Normal, Edit, or Insert, at any time. These rows might be affected by the `AlternateRowStyle` property of the data control, if set.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Indicates that the data control row is an alternate row.</para>
+        <para>The <see langword="Alternate" /> state can be combined with other states, such as <see langword="Normal" />, <see langword="Edit" />, or <see langword="Insert" />, at any time. These rows might be affected by the <see langword="AlternateRowStyle" /> property of the data control, if set.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Edit">

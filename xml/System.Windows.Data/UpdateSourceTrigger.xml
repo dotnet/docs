@@ -18,8 +18,11 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=nameWithType>.  
+## Remarks
+
+A programmatic way to determine the default `UpdateSourceTrigger` value of a dependency property is to get the property metadata of the property using <xref:System.Windows.DependencyProperty.GetMetadata%2A?displayProperty=nameWithType>, and then to check the value of the <xref:System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger%2A?displayProperty=nameWithType> property.  
+  
+For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A?displayProperty=nameWithType>.  
   
  ]]></format>
     </remarks>
@@ -46,14 +49,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default <see cref="T:System.Windows.Data.UpdateSourceTrigger" /> value of the binding target property. The default value for most dependency properties is <see cref="F:System.Windows.Data.UpdateSourceTrigger.PropertyChanged" />, while the <see cref="P:System.Windows.Controls.TextBox.Text" /> property has a default value of <see cref="F:System.Windows.Data.UpdateSourceTrigger.LostFocus" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A programmatic way to determine the default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of a dependency property is to get the property metadata of the property using <xref:System.Windows.DependencyProperty.GetMetadata%2A> and then check the value of the <xref:System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger%2A> property.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Explicit">

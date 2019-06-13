@@ -19,15 +19,106 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Web.UI.WebControls.RepeatLayout> enumeration represents the different layout options for a list control.  
+## Remarks
+
+The <xref:System.Web.UI.WebControls.RepeatLayout> enumeration represents the different layout options for a list control.  
   
-   
+## Examples
+
+The following example shows a list control whose layout is defined by the `Table` enumeration value.  
   
-## Examples  
- [!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
- [!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
+[!code-aspx-csharp[DataListLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataListLayout/CS/datalistlayoutcs.aspx#1)]
+[!code-aspx-vb[DataListLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataListLayout/VB/datalistlayoutvb.aspx#1)]  
+
+The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to `Flow`.  
   
+```xaml 
+<span id="ctl00_MainContent_CheckBoxList1">  
+  <input id="ctl00_MainContent_CheckBoxList1_0" type="checkbox"   
+    name="ctl00$MainContent$CheckBoxList1$0" value="Item 1" />  
+  <label for="ctl00_MainContent_CheckBoxList1_0">Item 1</label>  
+  <br />  
+  <input id="ctl00_MainContent_CheckBoxList1_1" type="checkbox"  
+    name="ctl00$MainContent$CheckBoxList1$1" value="Item 2"/>  
+  <label for="ctl00_MainContent_CheckBoxList1_1">Item 2</label>  
+  <br />  
+  <input id="ctl00_MainContent_CheckBoxList1_2" type="checkbox"  
+    name="ctl00$MainContent$CheckBoxList1$2" value="Item 2" />  
+  <label for="ctl00_MainContent_CheckBoxList1_2">Item 2</label>  
+</span>  
+```  
+
+The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to `OrderedList`.  
+  
+```xaml 
+<ol id="ctl00_MainContent_CheckBoxList3">  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList3_0" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList3$0" value="Item 1" />  
+    <label for="ctl00_MainContent_CheckBoxList3_0">Item 1</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList3_1" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList3$1" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList3_1">Item 2</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList3_2" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList3$2" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList3_2">Item 2</label>  
+  </li>  
+</ol>  
+```  
+
+The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to `Table`.  
+  
+```xaml
+<table id="ctl00_MainContent_CheckBoxList2">  
+  <tr>  
+    <td>  
+      <input id="ctl00_MainContent_CheckBoxList2_0" type="checkbox"  
+        name="ctl00$MainContent$CheckBoxList2$0" value="Item 1" />  
+      <label for="ctl00_MainContent_CheckBoxList2_0">Item 1</label>  
+    </td>  
+  </tr>  
+  <tr>  
+    <td>  
+      <input id="ctl00_MainContent_CheckBoxList2_1" type="checkbox"  
+        name="ctl00$MainContent$CheckBoxList2$1" value="Item 2" />  
+      <label for="ctl00_MainContent_CheckBoxList2_1">Item 2</label>  
+    </td>  
+  </tr>  
+  <tr>  
+    <td>  
+      <input id="ctl00_MainContent_CheckBoxList2_2" type="checkbox"  
+        name="ctl00$MainContent$CheckBoxList2$2" value="Item 3" />  
+      <label for="ctl00_MainContent_CheckBoxList2_2">Item 3</label>  
+    </td>  
+  </tr>  
+</table>  
+```  
+The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to `UnorderedList`.  
+
+```xaml  
+<ul id="ctl00_MainContent_CheckBoxList4">  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList4_0" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList4$0" value="Item 1" />  
+    <label for="ctl00_MainContent_CheckBoxList4_0">Item 1</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList4_1" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList4$1" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList4_1">Item 2</label>  
+  </li>  
+  <li>  
+    <input id="ctl00_MainContent_CheckBoxList4_2" type="checkbox"  
+      name="ctl00$MainContent$CheckBoxList4$2" value="Item 2" />  
+    <label for="ctl00_MainContent_CheckBoxList4_2">Item 2</label>  
+  </li>  
+</ul>  
+```
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
@@ -61,30 +152,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="span" /> element and items are separated by <see langword="br" /> elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to Flow.  
-  
-```  
-<span id="ctl00_MainContent_CheckBoxList1">  
-  <input id="ctl00_MainContent_CheckBoxList1_0" type="checkbox"   
-    name="ctl00$MainContent$CheckBoxList1$0" value="Item 1" />  
-  <label for="ctl00_MainContent_CheckBoxList1_0">Item 1</label>  
-  <br />  
-  <input id="ctl00_MainContent_CheckBoxList1_1" type="checkbox"  
-    name="ctl00$MainContent$CheckBoxList1$1" value="Item 2"/>  
-  <label for="ctl00_MainContent_CheckBoxList1_1">Item 2</label>  
-  <br />  
-  <input id="ctl00_MainContent_CheckBoxList1_2" type="checkbox"  
-    name="ctl00$MainContent$CheckBoxList1$2" value="Item 2" />  
-  <label for="ctl00_MainContent_CheckBoxList1_2">Item 2</label>  
-</span>  
-```  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrderedList">
@@ -104,38 +171,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Items are displayed without a table structure. Rendered markup consists of an <see langword="ol" /> element that contains <see langword="li" /> elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to OrderedList.  
-  
-```  
-<ol id="ctl00_MainContent_CheckBoxList3">  
-  <li>  
-    <input id="ctl00_MainContent_CheckBoxList3_0" type="checkbox"  
-      name="ctl00$MainContent$CheckBoxList3$0" value="Item 1" />  
-    <label for="ctl00_MainContent_CheckBoxList3_0">Item 1</label>  
-  </li>  
-  <li>  
-    <input id="ctl00_MainContent_CheckBoxList3_1" type="checkbox"  
-      name="ctl00$MainContent$CheckBoxList3$1" value="Item 2" />  
-    <label for="ctl00_MainContent_CheckBoxList3_1">Item 2</label>  
-  </li>  
-  <li>  
-    <input id="ctl00_MainContent_CheckBoxList3_2" type="checkbox"  
-      name="ctl00$MainContent$CheckBoxList3$2" value="Item 2" />  
-    <label for="ctl00_MainContent_CheckBoxList3_2">Item 2</label>  
-  </li>  
-</ol>  
-```  
-  
-> [!NOTE]
->  This field is new as of ASP.NET 4 and is a valid option only for the <xref:System.Web.UI.WebControls.CheckBoxList> and <xref:System.Web.UI.WebControls.RadioButtonList> controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>Items are displayed without a table structure. Rendered markup consists of an <see langword="ol" /> element that contains <see langword="li" /> elements.<br/>This value is new as of ASP.NET 4 and is a valid option only for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> and <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> controls.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -157,44 +193,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Items are displayed in a table.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to Table.  
-  
-> [!NOTE]
->  This option causes the control to render HTML that might not conform to accessibility standards. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
-  
-```  
-<table id="ctl00_MainContent_CheckBoxList2">  
-  <tr>  
-    <td>  
-      <input id="ctl00_MainContent_CheckBoxList2_0" type="checkbox"  
-        name="ctl00$MainContent$CheckBoxList2$0" value="Item 1" />  
-      <label for="ctl00_MainContent_CheckBoxList2_0">Item 1</label>  
-    </td>  
-  </tr>  
-  <tr>  
-    <td>  
-      <input id="ctl00_MainContent_CheckBoxList2_1" type="checkbox"  
-        name="ctl00$MainContent$CheckBoxList2$1" value="Item 2" />  
-      <label for="ctl00_MainContent_CheckBoxList2_1">Item 2</label>  
-    </td>  
-  </tr>  
-  <tr>  
-    <td>  
-      <input id="ctl00_MainContent_CheckBoxList2_2" type="checkbox"  
-        name="ctl00$MainContent$CheckBoxList2$2" value="Item 3" />  
-      <label for="ctl00_MainContent_CheckBoxList2_2">Item 3</label>  
-    </td>  
-  </tr>  
-</table>  
-```  
-  
- ]]></format>
-        </remarks>
+        <summary>Items are displayed in a table. <br/>This option causes the control to render HTML that might not conform to accessibility standards. For more information, see <see href="https://docs.microsoft.com/previous-versions/aspnet/ms228004(v%3dvs.100)">Accessibility in Visual Studio and ASP.NET</see>.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnorderedList">
@@ -214,38 +213,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="ul" /> element that contains <see langword="li" /> elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following example shows markup that is rendered for a <xref:System.Web.UI.WebControls.CheckBoxList> control whose <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property is set to UnorderedList.  
-  
-```  
-<ul id="ctl00_MainContent_CheckBoxList4">  
-  <li>  
-    <input id="ctl00_MainContent_CheckBoxList4_0" type="checkbox"  
-      name="ctl00$MainContent$CheckBoxList4$0" value="Item 1" />  
-    <label for="ctl00_MainContent_CheckBoxList4_0">Item 1</label>  
-  </li>  
-  <li>  
-    <input id="ctl00_MainContent_CheckBoxList4_1" type="checkbox"  
-      name="ctl00$MainContent$CheckBoxList4$1" value="Item 2" />  
-    <label for="ctl00_MainContent_CheckBoxList4_1">Item 2</label>  
-  </li>  
-  <li>  
-    <input id="ctl00_MainContent_CheckBoxList4_2" type="checkbox"  
-      name="ctl00$MainContent$CheckBoxList4$2" value="Item 2" />  
-    <label for="ctl00_MainContent_CheckBoxList4_2">Item 2</label>  
-  </li>  
-</ul>  
-```  
-  
-> [!NOTE]
->  This field is new as of ASP.NET 4 and is a valid option only for the <xref:System.Web.UI.WebControls.CheckBoxList> and <xref:System.Web.UI.WebControls.RadioButtonList> controls.  
-  
- ]]></format>
-        </remarks>
+        <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="ul" /> element that contains <see langword="li" /> elements.<br/>This field is new as of ASP.NET 4 and is a valid option only for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> and <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> controls.</summary>
       </Docs>
     </Member>
   </Members>

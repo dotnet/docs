@@ -56,15 +56,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>When referring to the scope on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, <see langword="Shared" /> scope means that personalization data applies to all users for all personalizable controls on a page and is also available to be saved on the page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When referring to the scope associated with a Web Parts control property, `Shared` scope indicates that the property normally only allows loading or saving of data associated with all users.  
-  
- ]]></format>
-        </remarks>
+        <summary>When referring to the scope on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, <see langword="Shared" /> scope means that personalization data applies to all users for all personalizable controls on a page and is also available to be saved on the page. <br/>When referring to the scope associated with a Web Parts control property, <see langword="Shared" /> scope indicates that the property normally only allows loading or saving of data associated with all users. </summary>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -85,15 +77,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>When referring to the scope on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, <see langword="User" /> scope means that personalization data that is user-specific, as well as personalization data that applies to all users, is loaded for all personalizable controls on a page. Only personalization data that is user-specific can be saved on the page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When referring to the scope associated with a Web Parts control property, `User` scope indicates that the property can only load and store data applicable to all users when running on a page in `Shared` scope. However, when the property's control is running on a page in `User` scope, the property's per-user and all-user data will be loaded and merged. In this case, though, only per-user data will be saved when a page is running in `User` scope.  
-  
- ]]></format>
-        </remarks>
+        <summary>When referring to the scope on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, <see langword="User" /> scope means that personalization data that is user-specific, as well as personalization data that applies to all users, is loaded for all personalizable controls on a page. Only personalization data that is user-specific can be saved on the page.<br/>When referring to the scope associated with a Web Parts control property, <see langword="User" /> scope indicates that the property can only load and store data applicable to all users when running on a page in <see langword="Shared" /> scope. However, when the property's control is running on a page in  <see langword="User" /> scope, the property's per-user and all-user data will be loaded and merged. In this case, though, only per-user data will be saved when a page is running in  <see langword="User" /> scope scope.</summary>
       </Docs>
     </Member>
   </Members>

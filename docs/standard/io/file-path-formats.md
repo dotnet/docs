@@ -76,6 +76,7 @@ The Windows operating system has a unified object model that points to all resou
 In addition to identifying a drive by its drive letter, you can identify a volume by using its volume GUID. This takes the form:
 
 `\\.\Volume{b75e2c83-0000-0000-0000-602f00000000}\Test\Foo.txt`
+`\\?\Volume{b75e2c83-0000-0000-0000-602f00000000}\Test\Foo.txt`
 
 > [!NOTE]
 > DOS device path syntax is supported on .NET implementations running on Windows starting with .NET Core 1.1 and .NET Framework 4.6.2.

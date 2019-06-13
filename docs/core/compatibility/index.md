@@ -137,7 +137,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
   
   - It breaks late-bound scenarios such as the late binding feature in Visual Basic and [dynamic](../../csharp/language-reference/keywords/dynamic.md) in C#.
   
-  - It breaks [source compatibility](categories#Source-compatibility) when developers use [named arguments](../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments#named-arguments.md).
+  - It breaks [source compatibility](categories.md#Source-compatibility) when developers use [named arguments](../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md#named-arguments.md).
 
 - **❌ Changing from a `ref` return value to a `ref readonly` return value**
 
@@ -150,7 +150,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
   While this often is not a breaking change because the C# compiler tends to emit [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) IL instructions to call non-virtual methods (`callvirt` performs a null check, while a normal call doesn't), this behavior is not invariable for several reasons:
   - C# is not the only language that .NET targets.
   
-  - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is provably not null (such as a method accessed through the[?. null propagation operator](./../csharp/language-reference/operators/null-conditional-operators.md)).
+  - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is provably not null (such as a method accessed through the[?. null propagation operator](./../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
   
   Making a method virtual means that consumer code would often end up calling it non-virtually.
 
@@ -174,7 +174,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **❌ Reducing the visibility of a member**
 
-   This includes reducing the visibility of a [protected](../../csharp/language-reference/keywords/protected.md) member when there are *accessible* (public or protected) constructors and the type is *not* [sealed](./../csharp/language-reference/keywords/sealed.md). If this is not the case, reducing the visibility of a protected member is allowed.
+   This includes reducing the visibility of a [protected](../../csharp/language-reference/keywords/protected.md) member when there are *accessible* (public or protected) constructors and the type is *not* [sealed](../../csharp/language-reference/keywords/sealed.md). If this is not the case, reducing the visibility of a protected member is allowed.
 
    Note that increasing the visibility of a member is allowed.
 
@@ -236,10 +236,10 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   Unrecoverable exceptions should not be caught, but should be handled by a high-level catch-all handler. Therefore, users are not expected to have code that catches these explicit exceptions. The unrecoverable exceptions are:
 
-  - <xref:System.StackOverflowException>
-  - <xref:System.SEHException>
-  - <xref:System.ExecutionEngineException>
   - <xref:System.AccessViolationException>
+  - <xref:System.ExecutionEngineException>
+  - <xref:System.Runtime.InteropServices.SEHException>
+  - <xref:System.StackOverflowException>
 
 - **✔️ Throwing a new exception in a new code path**
 

@@ -37,7 +37,7 @@ The statements in the *initializer* section are executed only once, before enter
 
 - Zero or more statement expressions from the following list, separated by commas:
 
-  - [assignment](../operators/assignment-operator.md) statement
+  - [assignment](../operators/type-testing-and-assignment-operators.md#assignment-operator-) statement
 
   - invocation of a method
 
@@ -69,7 +69,7 @@ i < 5
 
 The *iterator* section defines what happens after each iteration of the body of the loop. The *iterator* section contains zero or more of the following statement expressions, separated by commas:
 
-- [assignment](../operators/assignment-operator.md) statement
+- [assignment](../operators/type-testing-and-assignment-operators.md#assignment-operator-) statement
 
 - invocation of a method
 

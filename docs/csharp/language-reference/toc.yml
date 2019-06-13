@@ -342,6 +342,9 @@
     - name: Member access operators
       href: operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
+    - name: Type-testing and assignment operators
+      href: operators/type-testing-and-assignment-operators.md
+      displayName: "is, as, typeof, (), =, ref"
     - name: Pointer related operators
       href: operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
@@ -355,17 +358,16 @@
     - name: "- and -= operators"
       href: operators/subtraction-operator.md
       displayName: delegate removal, event unsubscription
-    - name: = operator
-      href: operators/assignment-operator.md
     - name: "?: operator"
       href: operators/conditional-operator.md
-      displayName: conditional, ternary
+      displayName: conditional, ternary, ref
     - name: "?? operator"
       href: operators/null-coalescing-operator.md
       displayName: null-coalescing
     - name: => operator
       href: operators/lambda-operator.md
-    - name: stackalloc
+      displayName: lambda
+    - name: stackalloc operator
       href: operators/stackalloc.md
     - name: true and false operators
       href: operators/true-false-operators.md

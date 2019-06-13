@@ -189,7 +189,7 @@ This operator has higher precedence than the next section and lower precedence t
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x = y](assignment-operator.md) – assignment.
+[x = y](type-testing-and-assignment-operators.md#assignment-operator-) – assignment.
 
 [x += y](arithmetic-operators.md#compound-assignment) – increment. Add the value of `y` to the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# adds as an event handler.
 

@@ -47,160 +47,165 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- An <xref:System.ArgumentOutOfRangeException> exception is thrown when a method is invoked and at least one of the arguments passed to the method is not `null` and contains an invalid value that is not a member of the set of values expected for the argument. The <xref:System.ArgumentException.ParamName%2A> property identifies the invalid argument, and the <xref:System.ArgumentOutOfRangeException.ActualValue%2A> property, if a value is present, identifies the invalid value.  
+## Remarks
+
+An <xref:System.ArgumentOutOfRangeException> exception is thrown when a method is invoked and at least one of the arguments passed to the method is not `null` and contains an invalid value that is not a member of the set of values expected for the argument. The <xref:System.ArgumentException.ParamName%2A> property identifies the invalid argument, and the <xref:System.ArgumentOutOfRangeException.ActualValue%2A> property, if a value is present, identifies the invalid value.  
   
- Typically, an <xref:System.ArgumentOutOfRangeException> results from developer error. Instead of handling the exception in a `try`/`catch` block, you should eliminate the cause of the exception or, if the argument is returned by a method call or input by the user before being passed to the method that throws the exception, you should validate arguments before passing them to the method.  
+Typically, an <xref:System.ArgumentOutOfRangeException> results from developer error. Instead of handling the exception in a `try`/`catch` block, you should eliminate the cause of the exception or, if the argument is returned by a method call or input by the user before being passed to the method that throws the exception, you should validate arguments before passing them to the method.  
   
- <xref:System.ArgumentOutOfRangeException> is used extensively by:  
+<xref:System.ArgumentOutOfRangeException> is used extensively by:  
   
--   Classes in the <xref:System.Collections> and <xref:System.IO> namespaces.  
+- Classes in the <xref:System.Collections> and <xref:System.IO> namespaces.  
   
--   The <xref:System.Array> class.  
+- The <xref:System.Array> class.  
   
--   String manipulation methods in the <xref:System.String> class.  
+- String manipulation methods in the <xref:System.String> class.  
   
- The conditions in which an <xref:System.ArgumentOutOfRangeException> exception is thrown include the following:  
+The conditions in which an <xref:System.ArgumentOutOfRangeException> exception is thrown include the following:  
   
- You are retrieving the member of a collection by its index number, and the index number is invalid.  
- This is the most common cause of an <xref:System.ArgumentOutOfRangeException> exception.   Typically, the index number is invalid for one of three reasons:  
+- You are retrieving the member of a collection by its index number, and the index number is invalid.  
+
+   This is the most common cause of an <xref:System.ArgumentOutOfRangeException> exception. Typically, the index number is invalid for one of four reasons:  
   
--   The collection has no members, and your code assumes that it does. The following example attempts to retrieve the first element of a collection that has no elements:  
+   1. The collection has no members, and your code assumes that it does. The following example attempts to retrieve the first element of a collection that has no elements:  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements.cs#4)]
-     [!code-vb[System.ArgumentOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements.vb#4)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements.cs#4)]
+      [!code-vb[System.ArgumentOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements.vb#4)]  
   
-     To prevent the exception, check whether the collection's `Count` property is greater than zero before attempting to retrieve any members, as the following code fragment does.  
+      To prevent the exception, check whether the collection's `Count` property is greater than zero before attempting to retrieve any members, as the following code fragment does.  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements.cs#5)]
-     [!code-vb[System.ArgumentOutOfRangeException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements.vb#5)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements.cs#5)]
+      [!code-vb[System.ArgumentOutOfRangeException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements.vb#5)]  
   
-     In some cases, this may occur because you are attempting to add a member to a collection by using an index that does not exist, rather than by calling the method, such as `Add`, that exists for this purpose.  The following example attempts to add an element to a collection by using a non-existent index rather than calling the <xref:System.Collections.Generic.List%601.Add%2A?displayProperty=nameWithType> method.  
+   2. In some cases, the exception may occur because you are attempting to add a member to a collection by using an index that does not exist, rather than by calling the method, such as `Add`, that exists for this purpose.  The following example attempts to add an element to a collection by using a non-existent index rather than calling the <xref:System.Collections.Generic.List%601.Add%2A?displayProperty=nameWithType> method.  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements2.cs#13)]
-     [!code-vb[System.ArgumentOutOfRangeException#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements2.vb#13)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements2.cs#13)]
+      [!code-vb[System.ArgumentOutOfRangeException#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements2.vb#13)]  
   
-     The following code fragment corrects this error:  
+      The following code fragment corrects this error:  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements2.cs#14)]
-     [!code-vb[System.ArgumentOutOfRangeException#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements2.vb#14)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoElements2.cs#14)]
+      [!code-vb[System.ArgumentOutOfRangeException#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoElements2.vb#14)]  
   
--   You're attempting to retrieve an item whose index is negative. This usually occurs because you've searched a collection for the index of a particular element and have erroneously assumed that the search is successful. In the following example, the call to the <xref:System.Collections.Generic.List%601.FindIndex%28System.Predicate%7B%600%7D%29?displayProperty=nameWithType> method fails  to find a string equal to "Z" and so returns -1. However, this is an invalid index value.  
+   3. You're attempting to retrieve an item whose index is negative. This usually occurs because you've searched a collection for the index of a particular element and have erroneously assumed that the search is successful. In the following example, the call to the <xref:System.Collections.Generic.List%601.FindIndex%28System.Predicate%7B%600%7D%29?displayProperty=nameWithType> method fails  to find a string equal to "Z" and so returns -1. However, this is an invalid index value.  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/BadSearch.cs#6)]
-     [!code-vb[System.ArgumentOutOfRangeException#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/BadSearch.vb#6)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/BadSearch.cs#6)]
+      [!code-vb[System.ArgumentOutOfRangeException#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/BadSearch.vb#6)]  
   
-     To prevent the exception, check that the search is successful by making sure that the returned index is greater than or equal to zero before attempting to retrieve the item from the collection, as the following code fragment does.  
+      To prevent the exception, check that the search is successful by making sure that the returned index is greater than or equal to zero before attempting to retrieve the item from the collection, as the following code fragment does.  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/BadSearch.cs#7)]
-     [!code-vb[System.ArgumentOutOfRangeException#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/BadSearch.vb#7)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/BadSearch.cs#7)]
+      [!code-vb[System.ArgumentOutOfRangeException#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/BadSearch.vb#7)]  
   
--   You're attempting to retrieve an element whose index is equal to the value of the collection's `Count` property, as the following example illustrates.  
+   4. You're attempting to retrieve an element whose index is equal to the value of the collection's `Count` property, as the following example illustrates.  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR2.cs#8)]
-     [!code-vb[System.ArgumentOutOfRangeException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR2.vb#8)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR2.cs#8)]
+      [!code-vb[System.ArgumentOutOfRangeException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR2.vb#8)]  
   
-     Because collections in the .NET Framework use zero-based indexing, the first element of the collection is at index 0, and the last element is at index `Count` - 1. You can eliminate the error by ensuring that you access the last element at index  `Count` - 1, as the following code does.  
+      Because collections in .NET use zero-based indexing, the first element of the collection is at index 0, and the last element is at index `Count` - 1. You can eliminate the error by ensuring that you access the last element at index  `Count` - 1, as the following code does.  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR2.cs#9)]
-     [!code-vb[System.ArgumentOutOfRangeException#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR2.vb#9)]  
+      [!code-csharp[System.ArgumentOutOfRangeException#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR2.cs#9)]
+      [!code-vb[System.ArgumentOutOfRangeException#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR2.vb#9)]  
   
- You are attempting to perform a string operation by calling a string manipulation method, and the starting index does not exist in the string.  
- Overloads of methods such as such as <xref:System.String.Compare%2A?displayProperty=nameWithType>, <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.IndexOfAny%2A>, <xref:System.String.Insert%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOfAny%2A?displayProperty=nameWithType>, <xref:System.String.Remove%2A>,  or <xref:System.String.Substring%2A?displayProperty=nameWithType> that allow you to specify the starting index of the operation require that the index be a valid position within the string. Valid indexes range from 0 to <xref:System.String.Length%2A?displayProperty=nameWithType> - 1.  
+- You are attempting to perform a string operation by calling a string manipulation method, and the starting index does not exist in the string.
+
+   Overloads of methods such as such as <xref:System.String.Compare%2A?displayProperty=nameWithType>, <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType>, <xref:System.String.IndexOf%2A?displayProperty=nameWithType>, <xref:System.String.IndexOfAny%2A>, <xref:System.String.Insert%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType>, <xref:System.String.LastIndexOfAny%2A?displayProperty=nameWithType>, <xref:System.String.Remove%2A>,  or <xref:System.String.Substring%2A?displayProperty=nameWithType> that allow you to specify the starting index of the operation require that the index be a valid position within the string. Valid indexes range from 0 to <xref:System.String.Length%2A?displayProperty=nameWithType> - 1.  
   
- There are four common causes of this <xref:System.ArgumentOutOfRangeException> exception:  
+   There are four common causes of this <xref:System.ArgumentOutOfRangeException> exception:
+
+   1. You are working with an empty string, or <xref:System.String.Empty?displayProperty=nameWithType>. Because its <xref:System.String.Length%2A?displayProperty=nameWithType> property returns 0, any attempt to manipulate it by index throws an <xref:System.ArgumentOutOfRangeException> exception. The following example, defines a `GetFirstCharacter` method that returns the first character of a string. If the string is empty, as the final string passed to the method is, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
   
--   You are working with an empty string, or <xref:System.String.Empty?displayProperty=nameWithType>. Because its <xref:System.String.Length%2A?displayProperty=nameWithType> property returns 0, any attempt to manipulate it by index throws an <xref:System.ArgumentOutOfRangeException> exception. The following example, defines a `GetFirstCharacter` method that returns the first character of a string. If the string is empty, as the final string passed to the method is, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
+      [!code-csharp[System.ArgumentOutOfRangeException#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/EmptyString1.cs#15)]
+      [!code-vb[System.ArgumentOutOfRangeException#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/EmptyString1.vb#15)]  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/EmptyString1.cs#15)]
-     [!code-vb[System.ArgumentOutOfRangeException#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/EmptyString1.vb#15)]  
+      You can eliminate the exception by testing whether the string's <xref:System.String.Length%2A?displayProperty=nameWithType> is greater than zero or by calling the <xref:System.String.IsNullOrEmpty%2A> method to ensure that the string is not `null` or empty. The following code fragment does the latter. In this case, if the string is `null` or empty, the `GetFirstCharacter` method returns U+0000.  
   
-     You can eliminate the exception by testing whether the string's <xref:System.String.Length%2A?displayProperty=nameWithType> is greater than zero or by calling the <xref:System.String.IsNullOrEmpty%2A> method to ensure that the string is not `null` or empty. The following code fragment does the latter. In this case, if the string is `null` or empty, the `GetFirstCharacter` method returns U+0000.  
+      [!code-csharp[System.ArgumentOutOfRangeException#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/EmptyString1.cs#16)]
+      [!code-vb[System.ArgumentOutOfRangeException#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/EmptyString1.vb#16)]  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/EmptyString1.cs#16)]
-     [!code-vb[System.ArgumentOutOfRangeException#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/EmptyString1.vb#16)]  
+   2. You're manipulating a string based on the position of a substring within that string, and you've failed to determine whether the substring was actually found.  
   
--   You're manipulating a string based on the position of a substring within that string, and you've failed to determine whether the substring was actually found.  
+      The following example extracts the second word of a two-word phrase. It throws an <xref:System.ArgumentOutOfRangeException> exception if the phrase consists of only one word, and therefore does not contain an embedded space character.  This occurs because the call to the <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> method returns -1 to indicate that the search failed, and this invalid value is then passed to the  <xref:System.String.Substring%28System.Int32%29?displayProperty=nameWithType> method.  
   
-     The following example extracts the second word of a two-word phrase. It throws  an <xref:System.ArgumentOutOfRangeException> exception if the phrase consists of only one word, and therefore does not contain an embedded space character.  This occurs because the call to the <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> method returns -1 to indicate that the search failed, and this invalid value is then passed to the  <xref:System.String.Substring%28System.Int32%29?displayProperty=nameWithType> method.  
+      [!code-csharp[System.ArgumentOutOfRangeException#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoFind1.cs#17)]
+      [!code-vb[System.ArgumentOutOfRangeException#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoFind1.vb#17)]  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoFind1.cs#17)]
-     [!code-vb[System.ArgumentOutOfRangeException#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoFind1.vb#17)]  
+      To eliminate the exception, validate the value returned by the string search method before calling the string manipulation method.  
   
-     To eliminate the exception, validate the value returned by the string search method before calling the string manipulation method.  
+      [!code-csharp[System.ArgumentOutOfRangeException#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoFind2.cs#18)]
+      [!code-vb[System.ArgumentOutOfRangeException#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoFind2.vb#18)]  
   
-     [!code-csharp[System.ArgumentOutOfRangeException#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/NoFind2.cs#18)]
-     [!code-vb[System.ArgumentOutOfRangeException#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/NoFind2.vb#18)]  
+   3. You've attempted to extract a substring that is outside the range of the current string.  
+ 
+      The methods that extract substrings all require that you specify the starting position of the substring and, for substrings that do not continue to the end of the string, the number of characters in the substring. Note that this is not the *index* of the last character in the substring.  
   
--   You've attempted to extract a substring that is outside the range of the current string.  
- The methods that extract substrings all require that you specify the starting position of the substring and, for substrings that do not continue to the end of the string, the number of characters in the substring. Note that this is not the *index* of the last character in the substring.  
+      An <xref:System.ArgumentOutOfRangeException> exception is typically thrown in this case because you've incorrectly calculated the number of characters in the substring.  If you are using a search method like <xref:System.String.IndexOf%2A?displayProperty=nameWithType> to identify the starting and ending positions of a substring:  
   
- An <xref:System.ArgumentOutOfRangeException> exception is typically thrown in this case because you've incorrectly calculated the number of characters in the substring.  If you are using a search method like <xref:System.String.IndexOf%2A?displayProperty=nameWithType> to identify the starting and ending positions of a substring:  
+      - If the character in the ending position returned by <xref:System.String.IndexOf%2A?displayProperty=nameWithType> is to be included in the substring, the ending position of the substring is given by the formula  
   
--   If the character in the ending position returned by <xref:System.String.IndexOf%2A?displayProperty=nameWithType> is to be included in the substring, the ending position of the substring is given by the formula  
+         ```  
+         endIndex - startIndex + 1  
+         ```  
   
-    ```  
-    endIndex - startIndex + 1  
-    ```  
+      - If the character in the ending position returned by <xref:System.String.IndexOf%2A?displayProperty=nameWithType> is to be excluded from the substring, the ending position of the substring is given by the formula  
   
--   If the character in the ending position returned by <xref:System.String.IndexOf%2A?displayProperty=nameWithType> is to be excluded from the substring, the ending position of the substring is given by the formula  
+         ```
+         endIndex - startIndex   
+         ```  
+
+         The following example defines a `FindWords` method that uses the <xref:System.String.IndexOfAny%28System.Char%5B%5D%2CSystem.Int32%29?displayProperty=nameWithType> method to identify space characters and punctuation marks in a string and returns an array that contains the words found in the string.  
   
-    ```  
-    endIndex - startIndex   
-    ```  
+         [!code-csharp[System.ArgumentOutOfRangeException#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/FindWords1.cs#19)]
+         [!code-vb[System.ArgumentOutOfRangeException#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/FindWords1.vb#19)]  
   
- The following example defines a `FindWords` method that uses the <xref:System.String.IndexOfAny%28System.Char%5B%5D%2CSystem.Int32%29?displayProperty=nameWithType> method to identify space characters and punctuation marks in a string and returns an array that contains the words found in the string.  
+- You have passed a negative number to a method with an argument that requires only positive numbers and zero, or you have passed either a negative number or zero to a method with an argument that requires only positive numbers.  
+ 
+   For example, the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method requires that you specify the number of elements in each dimension of a two-dimensional array; valid values for each dimension can range from 0 to <xref:System.Int32.MaxValue?displayProperty=nameWithType>. But because the dimension argument in the following example has a negative value, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
   
- [!code-csharp[System.ArgumentOutOfRangeException#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/FindWords1.cs#19)]
- [!code-vb[System.ArgumentOutOfRangeException#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/FindWords1.vb#19)]  
+   [!code-csharp[System.ArgumentOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR1.cs#1)]
+   [!code-vb[System.ArgumentOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR1.vb#1)]  
   
- You have passed a negative number to a method with an argument that requires only positive numbers and zero, or you have passed either a negative number or zero to a method with an argument that requires only positive numbers.  
- For example, the <xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method requires that you specify the number of elements in each dimension of a two-dimensional array; valid values for each dimension can range from 0 to <xref:System.Int32.MaxValue?displayProperty=nameWithType>. But because the dimension argument in the following example has a negative value, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
+   To correct the error, ensure that the value of the invalid argument is non-negative. You can do this by providing a valid value, as the following code fragment does.  
   
- [!code-csharp[System.ArgumentOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR1.cs#1)]
- [!code-vb[System.ArgumentOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR1.vb#1)]  
+   [!code-csharp[System.ArgumentOutOfRangeException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR1.cs#2)]
+   [!code-vb[System.ArgumentOutOfRangeException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR1.vb#2)]  
   
- To correct the error, ensure that the value of the invalid argument is non-negative. You can do this by providing a valid value, as the following code fragment does.  
+   You can also validate the input and, if it is invalid, take some action. The following code fragment displays an error message instead of calling the method.  
   
- [!code-csharp[System.ArgumentOutOfRangeException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR1.cs#2)]
- [!code-vb[System.ArgumentOutOfRangeException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR1.vb#2)]  
+   [!code-csharp[System.ArgumentOutOfRangeException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR1.cs#3)] 
+   [!code-vb[System.ArgumentOutOfRangeException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR1.vb#3)]  
   
- You can also validate the input and, if it is invalid, take some action. The following code fragment displays an error message instead of calling the method.  
+- A race condition exists in an app that is multithreaded or has tasks that  execute asynchronously and that updates an array or collection.  
+
+  The following example uses a <xref:System.Collections.Generic.List%601> object to populate a collection of `Continent` objects. It throws an <xref:System.ArgumentOutOfRangeException> if the example attempts to display the seven items in the collection before the collection is fully populated.  
   
- [!code-csharp[System.ArgumentOutOfRangeException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/OOR1.cs#3)]
- [!code-vb[System.ArgumentOutOfRangeException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/OOR1.vb#3)]  
+  [!code-csharp[System.ArgumentOutOfRangeException#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/Race1.cs#11)]
+  [!code-vb[System.ArgumentOutOfRangeException#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/Race1.vb#11)]  
   
- A race condition exists in an app that is multithreaded or has tasks that  execute asynchronously and that updates an array or collection.  
- The following example uses a <xref:System.Collections.Generic.List%601> object to populate a collection of `Continent` objects. It throws an  <xref:System.ArgumentOutOfRangeException> exception if the example attempts to display the seven items in the collection before the collection is fully populated.  
+  In this case, two resources are accessed from multiple threads:  
   
- [!code-csharp[System.ArgumentOutOfRangeException#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/Race1.cs#11)]
- [!code-vb[System.ArgumentOutOfRangeException#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/Race1.vb#11)]  
+  - The `continents` collection. Its <xref:System.Collections.Generic.List%601.Add%2A?displayProperty=nameWithType> method is called from multiple threads. In addition, the main or primary thread assumes the collection is fully populated with seven elements when it iterates its members.  
   
- In this case, two resources are accessed from multiple threads:  
+  - The `msg` string, which is concatenated from multiple threads.  
   
--   The `continents` collection. Its <xref:System.Collections.Generic.List%601.Add%2A?displayProperty=nameWithType> method is called from multiple threads. In addition, the main or primary thread assumes the collection is fully populated with seven elements when it iterates its members.  
+  To correct the error, ensure that shared state is accessed in a thread-safe way, as follows.  
+
+  - if your app uses an array or collection object, consider using a thread-safe collection class, such as the types in the <xref:System.Collections.Concurrent> namespace or the <xref:System.Collections.Immutable> out-of-band release.  
   
--   The `msg` string, which is concatenated from multiple threads.  
+  - Ensure that shared state (that is, resources that can be accessed by multiple threads) is accessed in a thread-safe way, so that only one thread at a time has exclusive access to the resources. A large number of classes, such as <xref:System.Threading.CountdownEvent>, <xref:System.Threading.Interlocked>, <xref:System.Threading.Monitor>, and <xref:System.Threading.Mutex>, are available to synchronize access to resources. For more information, see [Threading](~/docs/standard/threading/index.md). In addition, language support is available through the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) construct in Visual Basic.  
   
- To correct the error, ensure that shared state is accessed in a thread-safe way, as follows.  
+  The following example addresses the <xref:System.ArgumentOutOfRangeException> and the other issues from the previous example. It replaces the <xref:System.Collections.Generic.List%601> object with a   <xref:System.Collections.Concurrent.ConcurrentBag%601> object to ensure that access to the collection is thread-safe, uses a <xref:System.Threading.CountdownEvent> object to ensure that the application thread continues only after other threads have executed, and uses a lock to ensure that only one thread can  access the `msg` variable at a time.  
   
--   if your app uses an array or collection object, consider using a thread-safe collection class, such as the types in the <xref:System.Collections.Concurrent> namespace or the <xref:System.Collections.Immutable> out-of-band release.  
+  [!code-csharp[System.ArgumentOutOfRangeException#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/Race2.cs#12)]
+  [!code-vb[System.ArgumentOutOfRangeException#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/Race2.vb#12)]  
   
--   Ensure that shared state (that is, resources that can be accessed by multiple threads) is accessed in a thread-safe way, so that only one thread at a time has exclusive access to the resources. A large number of classes, such as <xref:System.Threading.CountdownEvent>, <xref:System.Threading.Interlocked>, <xref:System.Threading.Monitor>, and <xref:System.Threading.Mutex>, are available to synchronize access to resources. For more information, see [Threading](~/docs/standard/threading/index.md). In addition, language support is available through the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) construct in Visual Basic.  
+<xref:System.ArgumentOutOfRangeException> uses the HRESULT COR_E_ARGUMENTOUTOFRANGE, which has the value 0x80131502.  
   
- The following example addresses the <xref:System.ArgumentOutOfRangeException> exception and the other issues from the previous example. It replaces the <xref:System.Collections.Generic.List%601> object with a   <xref:System.Collections.Concurrent.ConcurrentBag%601> object to ensure that access to the collection is thread-safe, uses a <xref:System.Threading.CountdownEvent> object to ensure that the application thread continues only after other threads have executed, and uses a lock to ensure that only one thread can  access the `msg` variable at a time.  
+For a list of initial property values for an instance of <xref:System.ArgumentOutOfRangeException>, see the <xref:System.ArgumentOutOfRangeException> constructors.  
   
- [!code-csharp[System.ArgumentOutOfRangeException#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/Race2.cs#12)]
- [!code-vb[System.ArgumentOutOfRangeException#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/Race2.vb#12)]  
-  
- <xref:System.ArgumentOutOfRangeException> uses the HRESULT COR_E_ARGUMENTOUTOFRANGE, which has the value 0x80131502.  
-  
- For a list of initial property values for an instance of <xref:System.ArgumentOutOfRangeException>, see the <xref:System.ArgumentOutOfRangeException> constructors.  
-  
-   
-  
-## Examples  
- The following example defines a class to contain information about an invited guest. If the guest is younger than 21, an <xref:System.ArgumentOutOfRangeException> exception is thrown.  
+## Examples
+
+The following example defines a class to contain information about an invited guest. If the guest is younger than 21, an <xref:System.ArgumentOutOfRangeException> exception is thrown.  
   
  [!code-csharp[ArgumentOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR/ArgumentOutOfRangeException/CS/program.cs#1)]
  [!code-vb[ArgumentOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ArgumentOutOfRangeException/VB/program.vb#1)]  

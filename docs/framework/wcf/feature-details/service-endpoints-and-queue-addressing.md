@@ -15,7 +15,7 @@ This topic discusses how clients address services that read from queues and how 
   
  Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
   
- For more information about MSMQ path and format names, see [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
+ For more information about MSMQ path and format names, see [About Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94837).  
   
 ## NetMsmqBinding and Service Addressing  
  When addressing a message to a service, the scheme in the URI is chosen based on the transport used for communication. Each transport in WCF has a unique scheme. The scheme must reflect the nature of transport used for communication. For example, net.tcp, net.pipe, HTTP, and so on.  
@@ -28,11 +28,11 @@ This topic discusses how clients address services that read from queues and how 
   
  where:  
   
--   \<*host-name*> is the name of the machine that hosts the Target Queue.  
+- \<*host-name*> is the name of the machine that hosts the Target Queue.  
   
--   [private] is optional. It is used when addressing a Target Queue that is a private queue. To address a public queue, you must not specify private. Note that, unlike MSMQ paths, there is no "$" in the WCF URI form.  
+- [private] is optional. It is used when addressing a Target Queue that is a private queue. To address a public queue, you must not specify private. Note that, unlike MSMQ paths, there is no "$" in the WCF URI form.  
   
--   \<*queue-name*> is the name of the queue. The queue name can also refer to a subqueue. Thus, \<*queue-name*> = \<*name-of-queue*>[;*sub-queue-name*].  
+- \<*queue-name*> is the name of the queue. The queue name can also refer to a subqueue. Thus, \<*queue-name*> = \<*name-of-queue*>[;*sub-queue-name*].  
   
  Example1: To address a private queue PurchaseOrders hosted on computer abc atadatum.com, the URI would be net.msmq://abc.adatum.com/private/PurchaseOrders.  
   
@@ -40,14 +40,14 @@ This topic discusses how clients address services that read from queues and how 
   
  The queue address is used as the Listen URI by the Listener to read messages from. In other words, the queue address is equivalent to the listen port of TCP socket.  
   
- An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md) and [Message Queuing Integration Binding Samples](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a).  
+ An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md).  
   
 ### Multiple Contracts in a Queue  
  Messages in a queue can implement different contracts. In this case, it is essential that one of the following is true to successfully read and process all messages:  
   
--   Specify an endpoint for a service that implements all the contracts. This is the recommended approach.  
+- Specify an endpoint for a service that implements all the contracts. This is the recommended approach.  
   
--   Specify multiple endpoints with different contracts, but ensure that all the endpoints use the same `NetMsmqBinding` object. The dispatching logic in ServiceModel uses a message pump that reads messages out of the transport channel for dispatch, which eventually de-multiplexes messages based on the contract to different endpoints. A message pump is created for a listen URI/Binding pair. The queue address is used as the Listen URI by the queued listener. Having all the endpoints use the same binding object ensures that a single message pump is used to read the message and de-multiplex to relevant endpoints based on the contract.  
+- Specify multiple endpoints with different contracts, but ensure that all the endpoints use the same `NetMsmqBinding` object. The dispatching logic in ServiceModel uses a message pump that reads messages out of the transport channel for dispatch, which eventually de-multiplexes messages based on the contract to different endpoints. A message pump is created for a listen URI/Binding pair. The queue address is used as the Listen URI by the queued listener. Having all the endpoints use the same binding object ensures that a single message pump is used to read the message and de-multiplex to relevant endpoints based on the contract.  
   
 ### SRMP Messaging  
  As previously discussed, you can use the SRMP protocol for queue-to-queue transfers. This is commonly used when an HTTP transport transmits messages between the Transmission Queue and the Target Queue.  
@@ -90,7 +90,7 @@ This topic discusses how clients address services that read from queues and how 
   
  msmq.formatname:\<*MSMQ-format-name*>>  
   
- The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
+ The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94837).  
   
  Note that you can only use direct format names, and public and private format names (requires Active Directory integration) when receiving messages from a queue using `MsmqIntegrationBinding`. However, it is advised that you use direct format names. For example, on [!INCLUDE[wv](../../../../includes/wv-md.md)], using any other format name causes an error because the system attempts to open a subqueue, which can only be opened with direct format names.  
   
@@ -98,5 +98,6 @@ This topic discusses how clients address services that read from queues and how 
   
  Note that you cannot use net.msmq:// addressing with `MsmqIntegrationBinding`. Because `MsmqIntegrationBinding` supports free-form MSMQ format name addressing, you can use a WCF service that uses this binding to use multicast and distribution list features in MSMQ. One exception is specifying `CustomDeadLetterQueue` when using the `MsmqIntegrationBinding`. It must be of the form net.msmq://, similar to how it is specified using the `NetMsmqBinding`.  
   
-## See Also  
- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)
+## See also
+
+- [Web Hosting a Queued Application](../../../../docs/framework/wcf/feature-details/web-hosting-a-queued-application.md)

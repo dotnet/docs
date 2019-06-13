@@ -1,0 +1,42 @@
+- name: Introduction
+  href: index.md
+  items:
+  - name: Lift and shift existing apps to Azure IaaS
+    href: lift-and-shift-existing-apps-azure-iaas.md
+  - name: Migrate your relational databases to Azure
+    href: migrate-your-relational-databases-to-azure.md
+  - name: Modernize existing .NET apps to Cloud-Optimized
+    href: ./modernize-existing-apps-to-cloud-optimized/index.md
+    items:
+    - name: Reasons to modernize existing .NET apps to Cloud-Optimized apps
+      href: ./modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications.md
+    - name: Microsoft technologies in Cloud-Optimized apps
+      href: ./modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications.md
+    - name: What about Cloud-Native applications?
+      href: ./modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications.md
+    - name: Deploy existing .NET apps as Windows containers
+      href: ./modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers.md
+    - name: When not to deploy to Windows Containers
+      href: ./modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers.md
+    - name: When to deploy Windows Containers in your on-premises IaaS VM infrastructure
+      href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md
+    - name: When to deploy Windows Containers to Azure VMs (IaaS cloud)
+      href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md
+    - name: When to deploy Windows Containers to Windows Container Instances (ACI)
+      href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI.md
+    - name: When to deploy Windows Containers to Azure Container Service (ACS-Kubernetes)
+      href: ./modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md
+    - name: Choosing Azure compute platforms for container-based applications
+      href: ./modernize-existing-apps-to-cloud-optimized/choosing-azure-compute-options-for-container-based-applications.md
+    - name: "Build resilient services ready for the cloud: Embrace transient failures in the cloud"
+      href: ./modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md
+    - name: Modernize your apps with monitoring and telemetry
+      href: ./modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry.md
+    - name: Modernize your app's lifecycle with CI/CD pipelines and DevOps tools in the cloud
+      href: ./modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md
+    - name: Migrate to hybrid cloud scenarios
+      href: ./modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios.md
+  - name: Walkthroughs and technical get started overview
+    href: walkthroughs-technical-get-started-overview.md
+  - name: Conclusions
+    href: conclusions.md

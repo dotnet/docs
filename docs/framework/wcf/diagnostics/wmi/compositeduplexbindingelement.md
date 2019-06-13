@@ -8,7 +8,7 @@ CompositeDuplexBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class CompositeDuplexBindingElement : BindingElement  
 {  
   string ClientBaseAddress;  
@@ -34,5 +34,6 @@ class CompositeDuplexBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>

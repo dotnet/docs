@@ -22,8 +22,9 @@ Provides methods for manipulating the Clipboard.
   
  **Class:** <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy> (provides access to <xref:System.Windows.Forms.Clipboard>)  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

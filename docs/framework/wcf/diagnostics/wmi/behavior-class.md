@@ -6,7 +6,7 @@ ms.assetid: 75d117f5-87f9-40fb-84c6-9e2fef6da6af
 # Behavior class
 ## Syntax  
   
-```  
+```csharp
 class Behavior  
 {  
   string Type;  
@@ -32,5 +32,6 @@ class Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>

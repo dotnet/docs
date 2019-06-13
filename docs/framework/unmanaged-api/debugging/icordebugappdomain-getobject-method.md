@@ -29,7 +29,7 @@ HRESULT GetObject (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppObject`  
  [out] A pointer to the address of an ICorDebugValue interface object that represents the CLR application domain.  
   

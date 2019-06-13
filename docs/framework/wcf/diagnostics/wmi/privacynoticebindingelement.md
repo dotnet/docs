@@ -8,7 +8,7 @@ PrivacyNoticeBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class PrivacyNoticeBindingElement : BindingElement  
 {  
   sint32 PrivacyNoticeVersion;  
@@ -42,5 +42,6 @@ class PrivacyNoticeBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>

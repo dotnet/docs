@@ -2,7 +2,7 @@
 title: "Walkthrough: Persisting an Object using C#"
 ms.date: 04/26/2018
 ---
-# Walkthrough: persisting an object using C# #
+# Walkthrough: persisting an object using C\#
 
 You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.
 
@@ -22,6 +22,8 @@ In this walkthrough, you will create a basic `Loan` object and persist its data 
 
 > [!TIP]
 > Need to install a code editor? Try [Visual Studio](https://visualstudio.com/downloads)!
+
+* The example requires C# 7.3. See [Select the C# language version](../../../language-reference/configure-language-version.md) 
 
 You can examine the sample code online [at the .NET samples GitHub repository](https://github.com/dotnet/samples/tree/master/csharp/serialization).
 
@@ -94,5 +96,5 @@ At this point, you can again build and run the application. The first time it ru
 
 ## See also
 
- [Serialization (C# )](index.md)  
- [C# Programming Guide](../..//index.md)  
+- [Serialization (C#)](index.md)
+- [C# Programming Guide](../..//index.md)

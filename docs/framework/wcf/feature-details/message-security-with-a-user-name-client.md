@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Message Security with a User Name Client
 The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
@@ -29,9 +27,9 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code shows how to create a service endpoint that uses message security.  
@@ -121,9 +119,10 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 </configuration>  
 ```  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [\<identity>](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)
+- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [\<identity>](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

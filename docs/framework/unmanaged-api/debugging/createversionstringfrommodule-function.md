@@ -35,7 +35,7 @@ HRESULT CreateVersionStringFromModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pidDebuggee`  
  [in] Identifier of the process in which the target CLR is loaded.  
   

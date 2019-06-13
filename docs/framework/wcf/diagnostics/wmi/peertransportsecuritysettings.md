@@ -2,15 +2,13 @@
 title: "PeerTransportSecuritySettings"
 ms.date: "03/30/2017"
 ms.assetid: 1df08cbb-68c5-4d36-9f88-a776a8117de8
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # PeerTransportSecuritySettings
 PeerTransportSecuritySettings  
   
 ## Syntax  
   
-```  
+```csharp
 class PeerTransportSecuritySettings  
 {  
   string CredentialType;  
@@ -36,5 +34,6 @@ class PeerTransportSecuritySettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.PeerTransportSecuritySettings>
+## See also
+
+- <xref:System.ServiceModel.PeerTransportSecuritySettings>

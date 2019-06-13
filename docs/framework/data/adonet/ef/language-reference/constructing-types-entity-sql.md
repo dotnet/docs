@@ -15,9 +15,9 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  The following rules apply to expression aliasing in a row constructor:  
   
--   Expressions in a row constructor cannot refer to other aliases in the same constructor.  
+- Expressions in a row constructor cannot refer to other aliases in the same constructor.  
   
--   Two expressions in the same row constructor cannot have the same alias.  
+- Two expressions in the same row constructor cannot have the same alias.  
   
  For more information about row constructors, see [ROW](../../../../../../docs/framework/data/adonet/ef/language-reference/row-entity-sql.md).  
   
@@ -57,7 +57,8 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  For more information, see [Named Type Constructor](../../../../../../docs/framework/data/adonet/ef/language-reference/named-type-constructor-entity-sql.md).  
   
-## See Also  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [Type System](../../../../../../docs/framework/data/adonet/ef/language-reference/type-system-entity-sql.md)
+## See also
+
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Type System](../../../../../../docs/framework/data/adonet/ef/language-reference/type-system-entity-sql.md)

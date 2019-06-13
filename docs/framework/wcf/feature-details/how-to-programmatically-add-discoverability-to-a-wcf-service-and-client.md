@@ -4,21 +4,21 @@ ms.date: "03/30/2017"
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
 ---
 # How to: Programmatically Add Discoverability to a WCF Service and Client
-This topic explains how to make a Windows Communication Foundation (WCF) service discoverable. It is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample.  
+This topic explains how to make a Windows Communication Foundation (WCF) service discoverable. It is based on the [Self-Host](https://go.microsoft.com/fwlink/?LinkId=145523) sample.  
   
 ### To configure the existing Self-Host service sample for Discovery  
   
-1.  Open the Self-Host solution in [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]. The sample is located in the TechnologySamples\Basic\Service\Hosting\SelfHost directory.  
+1. Open the Self-Host solution in Visual Studio 2012. The sample is located in the TechnologySamples\Basic\Service\Hosting\SelfHost directory.  
   
-2.  Add a reference to `System.ServiceModel.Discovery.dll` to the service project. You may see an error message saying "System. ServiceModel.Discovery.dll or one of its dependencies requires a later version of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] than the one specified in the project …" If you see this message, right-click the project in the Solution Explorer and choose **Properties**. In the **Project Properties** window, make sure that the **Target Framework** is [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
+2. Add a reference to `System.ServiceModel.Discovery.dll` to the service project. You may see an error message saying "System. ServiceModel.Discovery.dll or one of its dependencies requires a later version of the .NET Framework than the one specified in the project …" If you see this message, right-click the project in the Solution Explorer and choose **Properties**. In the **Project Properties** window, make sure that the **Target Framework** is [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
   
-3.  Open the Service.cs file and add the following `using` statement.  
+3. Open the Service.cs file and add the following `using` statement.  
   
     ```csharp  
     using System.ServiceModel.Discovery;  
     ```  
   
-4.  In the `Main()` method, inside the `using` statement, add a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> instance to the service host.  
+4. In the `Main()` method, inside the `using` statement, add a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> instance to the service host.  
   
     ```csharp  
     public static void Main()  
@@ -36,7 +36,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
      The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> specifies that the service it is applied to is discoverable.  
   
-5.  Add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> to the service host right after the code that adds the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>.  
+5. Add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> to the service host right after the code that adds the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>.  
   
     ```csharp  
     // Add ServiceDiscoveryBehavior  
@@ -50,15 +50,15 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
 ### To create a client application that uses discovery to call the service  
   
-1.  Add a new console application to the solution called `DiscoveryClientApp`.  
+1. Add a new console application to the solution called `DiscoveryClientApp`.  
   
-2.  Add a reference to `System.ServiceModel.dll` and `System.ServiceModel.Discovery.dll`  
+2. Add a reference to `System.ServiceModel.dll` and `System.ServiceModel.Discovery.dll`  
   
-3.  Copy the GeneratedClient.cs and App.config files from the existing client project to the new DiscoveryClientApp project. To do this, right-click the files in the **Solution Explorer**, select **Copy**, and then select the **DiscoveryClientApp** project, right-click and select **Paste**.  
+3. Copy the GeneratedClient.cs and App.config files from the existing client project to the new DiscoveryClientApp project. To do this, right-click the files in the **Solution Explorer**, select **Copy**, and then select the **DiscoveryClientApp** project, right-click and select **Paste**.  
   
-4.  Open Program.cs.  
+4. Open Program.cs.  
   
-5.  Add the following `using` statements.  
+5. Add the following `using` statements.  
   
     ```csharp  
     using System.ServiceModel;  
@@ -66,7 +66,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
     using Microsoft.ServiceModel.Samples;  
     ```  
   
-6.  Add a static method called `FindCalculatorServiceAddress()` to the `Program` class.  
+6. Add a static method called `FindCalculatorServiceAddress()` to the `Program` class.  
   
     ```csharp  
     static EndpointAddress FindCalculatorServiceAddress()  
@@ -76,7 +76,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
      This method uses discovery to search for the `CalculatorService` service.  
   
-7.  Inside the `FindCalculatorServiceAddress` method, create a new <xref:System.ServiceModel.Discovery.DiscoveryClient> instance, passing in a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> to the constructor.  
+7. Inside the `FindCalculatorServiceAddress` method, create a new <xref:System.ServiceModel.Discovery.DiscoveryClient> instance, passing in a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> to the constructor.  
   
     ```csharp  
     static EndpointAddress FindCalculatorServiceAddress()  
@@ -88,7 +88,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
      This tells WCF that the <xref:System.ServiceModel.Discovery.DiscoveryClient> class should use the standard UDP discovery endpoint to send and receive discovery messages.  
   
-8.  On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.  
+8. On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.  
   
     ```csharp  
     // Find ICalculatorService endpoints              
@@ -118,7 +118,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
      This method uses the endpoint address returned from `FindCalculatorServiceAddress` to call the calculator service.  
   
-11. Inside the `InvokeCalculatorService` method, create an instance of the `CalculatorServiceClient` class. This class is defined by the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample. It was generated using Svcutil.exe.  
+11. Inside the `InvokeCalculatorService` method, create an instance of the `CalculatorServiceClient` class. This class is defined by the [Self-Host](https://go.microsoft.com/fwlink/?LinkId=145523) sample. It was generated using Svcutil.exe.  
   
     ```csharp  
     // Create a client  
@@ -184,11 +184,11 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
 ### To test the application  
   
-1.  Open an elevated command prompt and run Service.exe.  
+1. Open an elevated command prompt and run Service.exe.  
   
-2.  Open a command prompt and run Discoveryclientapp.exe.  
+2. Open a command prompt and run Discoveryclientapp.exe.  
   
-3.  The output from service.exe should look like the following output.  
+3. The output from service.exe should look like the following output.  
   
     ```Output  
     Received Add(100,15.99)  
@@ -201,7 +201,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
     Return: 6.25390869293308  
     ```  
   
-4.  The output from Discoveryclientapp.exe should look like the following output.  
+4. The output from Discoveryclientapp.exe should look like the following output.  
   
     ```Output  
     Invoking CalculatorService at http://localhost:8000/ServiceModelSamples/service  
@@ -214,7 +214,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
     ```  
   
 ## Example  
- The following is a listing of the code for this sample. Because this code is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. For more information about the Self-Host sample, see [Setup Instructions](http://go.microsoft.com/fwlink/?LinkId=145522).  
+ The following is a listing of the code for this sample. Because this code is based on the [Self-Host](https://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. For more information about the Self-Host sample, see [Setup Instructions](https://go.microsoft.com/fwlink/?LinkId=145522).  
   
 ```csharp  
 // Service.cs  
@@ -334,6 +334,7 @@ namespace DiscoveryClientApp
 }  
 ```  
 
-## See Also  
- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
- [WCF Discovery Object Model](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)
+## See also
+
+- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
+- [WCF Discovery Object Model](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)

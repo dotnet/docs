@@ -17,7 +17,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
   
 ### To save a file using the SaveFileDialog component  
   
--   Display the **Save File** dialog box and call a method to save the file selected by the user.  
+- Display the **Save File** dialog box and call a method to save the file selected by the user.  
   
      Use the <xref:System.Windows.Forms.SaveFileDialog> component's <xref:System.Windows.Forms.SaveFileDialog.OpenFile%2A> method to save the file. This method gives you a <xref:System.IO.Stream> object you can write to.  
   
@@ -26,7 +26,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
      In the example below, there is a <xref:System.Windows.Forms.Button> control with an image assigned to it. When you click the button, a <xref:System.Windows.Forms.SaveFileDialog> component is instantiated with a filter that allows files of type .gif, .jpeg, and .bmp. If a file of this type is selected in the Save File dialog box, the button's image is saved.  
   
     > [!IMPORTANT]
-    >  To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../docs/framework/misc/code-access-security-basics.md).  
+    >  To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../misc/code-access-security-basics.md).  
   
      The example assumes your form has a <xref:System.Windows.Forms.Button> control with its <xref:System.Windows.Forms.ButtonBase.Image%2A> property set to a file of type .gif, .jpeg, or .bmp.  
   
@@ -155,7 +155,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button2.Click += new System.EventHandler(this.button2_Click);  
@@ -169,8 +169,9 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
      For more information about writing file streams, see <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.Write%2A>.  
   
     > [!NOTE]
-    >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](http://go.microsoft.com/fwlink/?LinkID=102575).  
+    >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575).  
   
-## See Also  
- <xref:System.Windows.Forms.SaveFileDialog>  
- [SaveFileDialog Component](../../../../docs/framework/winforms/controls/savefiledialog-component-windows-forms.md)
+## See also
+
+- <xref:System.Windows.Forms.SaveFileDialog>
+- [SaveFileDialog Component](savefiledialog-component-windows-forms.md)

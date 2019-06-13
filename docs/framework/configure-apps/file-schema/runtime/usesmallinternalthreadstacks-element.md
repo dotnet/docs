@@ -1,5 +1,5 @@
 ---
-title: "&lt;UseSmallInternalThreadStacks&gt; Element"
+title: "<UseSmallInternalThreadStacks> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UseSmallInternalThreadStacks element"
@@ -8,7 +8,7 @@ ms.assetid: 1e3f6ec0-1cac-4e1c-9c81-17d948ae5874
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;UseSmallInternalThreadStacks&gt; Element
+# \<UseSmallInternalThreadStacks> Element
 Requests that the common language runtime (CLR) reduce memory use by specifying explicit stack sizes when it creates certain threads that it uses internally, instead of using the default stack size for those threads.  
   
  \<configuration> Element  
@@ -35,7 +35,7 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
 |Value|Description|  
 |-----------|-----------------|  
 |true|Request explicit stack sizes.|  
-|false|Use the default stack size. This is the default for the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)].|  
+|false|Use the default stack size. This is the default for the .NET Framework 4.|  
   
 ### Child Elements  
  None.  
@@ -51,7 +51,7 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
  This configuration element is used to request reduced virtual memory use in a process, because the explicit thread sizes that the CLR uses for its internal threads, if the request is honored, are smaller than the default size.  
   
 > [!IMPORTANT]
->  This configuration element is a request to the CLR rather than an absolute requirement. In the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], the request is honored only for the x86 architecture. This element might be ignored completely in future versions of the CLR, or replaced by explicit stack sizes that are always used for selected internal threads.  
+>  This configuration element is a request to the CLR rather than an absolute requirement. In the .NET Framework 4, the request is honored only for the x86 architecture. This element might be ignored completely in future versions of the CLR, or replaced by explicit stack sizes that are always used for selected internal threads.  
   
  Specifying this configuration element trades reliability for smaller virtual memory use if the CLR honors the request, because smaller stack sizes could potentially make stack overflows more likely.  
   
@@ -66,6 +66,7 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

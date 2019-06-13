@@ -1,5 +1,7 @@
 ---
-title: "Built-in types table (C# Reference)"
+title: "Built-in types table - C# Reference"
+ms.custom: seodec18
+
 description: "Keywords for built-in C# types"
 ms.date: 08/17/2018
 helpviewer_keywords: 
@@ -59,7 +61,6 @@ Console.WriteLine(doubleType.FullName);
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Value types](value-types.md)
 - [Reference types](reference-types.md)
 - [Default values table](default-values-table.md)

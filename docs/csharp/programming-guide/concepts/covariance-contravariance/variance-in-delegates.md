@@ -106,15 +106,15 @@ public static void Test()
 ### Generic Delegates That Have Variant Type Parameters in the .NET Framework  
  .NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:  
   
--   `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>  
+- `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>  
   
--   `Func` delegates from the <xref:System> namespace, for example, <xref:System.Func%601> and <xref:System.Func%602>  
+- `Func` delegates from the <xref:System> namespace, for example, <xref:System.Func%601> and <xref:System.Func%602>  
   
--   The <xref:System.Predicate%601> delegate  
+- The <xref:System.Predicate%601> delegate  
   
--   The <xref:System.Comparison%601> delegate  
+- The <xref:System.Comparison%601> delegate  
   
--   The <xref:System.Converter%602> delegate  
+- The <xref:System.Converter%602> delegate  
   
  For more information and examples, see [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
   
@@ -190,7 +190,8 @@ public static void Test()
 }  
 ```  
   
-## See Also  
- [Generics](~/docs/standard/generics/index.md)  
- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)  
- [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+## See also
+
+- [Generics](~/docs/standard/generics/index.md)
+- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+- [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

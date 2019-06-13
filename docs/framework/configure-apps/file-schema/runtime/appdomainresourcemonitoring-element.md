@@ -1,5 +1,5 @@
 ---
-title: "&lt;appDomainResourceMonitoring&gt; Element"
+title: "<appDomainResourceMonitoring> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "appDomainResourceMonitoring element"
@@ -8,7 +8,7 @@ ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;appDomainResourceMonitoring&gt; Element
+# \<appDomainResourceMonitoring> Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  
   
  \<configuration>  
@@ -53,7 +53,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
   
  To enable monitoring from managed code, use the <xref:System.AppDomain.MonitoringIsEnabled%2A> property.  
   
- This configuration element is available only in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] and later.  
+ This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
  The following example shows how to enable application domain resource monitoring.  
@@ -66,7 +66,8 @@ Instructs the runtime to collect statistics on all application domains in the pr
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+
+- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

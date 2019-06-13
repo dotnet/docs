@@ -30,21 +30,21 @@ For more information about value types in the .NET Framework, see [Common Type S
     
 Structs share most of the same syntax as classes, although structs are more limited than classes:  
   
--   Within a struct declaration, fields cannot be initialized unless they are declared as `const` or `static`.  
+- Within a struct declaration, fields cannot be initialized unless they are declared as `const` or `static`.  
   
--   A struct cannot declare a default constructor (a constructor without parameters) or a finalizer.  
+- A struct cannot declare a parameterless constructor (a constructor without parameters) or a finalizer.  
   
--   Structs are copied on assignment. When a struct is assigned to a new variable, all the data is copied, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with collections of value types such as Dictionary<string, myStruct>.  
+- Structs are copied on assignment. When a struct is assigned to a new variable, all the data is copied, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with collections of value types such as Dictionary<string, myStruct>.  
   
--   Structs are value types and classes are reference types.  
+- Structs are value types and classes are reference types.  
   
--   Unlike classes, structs can be instantiated without using a `new` operator.  
+- Unlike classes, structs can be instantiated without using a `new` operator.  
   
--   Structs can declare constructors that have parameters.  
+- Structs can declare constructors that have parameters.  
   
--   A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.  
+- A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.  
   
--   A struct can implement interfaces.
+- A struct can implement interfaces.
 
 ## Literal values  
 In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer the `double` type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](./language-reference/keywords/value-types.md).  
@@ -61,6 +61,6 @@ The second demonstrates *binary literals*, which allow you to specify bit patter
 Ordinary value types cannot have a value of [null](./language-reference/keywords/null.md). However, you can create nullable value types by affixing a **?** after the type. For example, **int?** is an **int** type that can also have the value [null](./language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type <xref:System.Nullable%601>. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types (C# Programming Guide)](./programming-guide/nullable-types/index.md).
 
 ## See also
-[Classes](classes.md)
 
-[Basic Types](basic-types.md)
+- [Classes](classes.md)
+- [Basic Types](basic-types.md)

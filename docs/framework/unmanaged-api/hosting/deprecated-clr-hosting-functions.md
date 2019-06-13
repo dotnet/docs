@@ -13,7 +13,7 @@ ms.author: "ronpet"
 # Deprecated CLR Hosting Functions
 This section describes the unmanaged global static functions that earlier versions of the hosting API used.  
   
- With the exception of the infrastructure functions (`_Cor*` functions), which are used only by the .NET Framework, these functions have been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ With the exception of the infrastructure functions (`_Cor*` functions), which are used only by the .NET Framework, these functions have been deprecated in the .NET Framework 4.  
   
 ## Activation functions  
  [ClrCreateManagedInstance Function](../../../../docs/framework/unmanaged-api/hosting/clrcreatemanagedinstance-function.md)  
@@ -152,5 +152,6 @@ This section describes the unmanaged global static functions that earlier versio
  [_CorValidateImage Function](../../../../docs/framework/unmanaged-api/hosting/corvalidateimage-function.md)  
  Validates managed module images, and notifies the operating system loader after they have been loaded.  
   
-## See Also  
- [.NET Framework 4 Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/net-framework-4-hosting-global-static-functions.md) 
+## See also
+
+- [.NET Framework 4 Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/net-framework-4-hosting-global-static-functions.md)

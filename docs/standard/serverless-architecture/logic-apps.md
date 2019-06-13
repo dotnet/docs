@@ -28,5 +28,5 @@ The Logic Apps dashboard shows the history of running your workflows and whether
 To learn more, see [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps).
 
 >[!div class="step-by-step"]
-[Previous](application-insights.md)
-[Next](event-grid.md)
+>[Previous](application-insights.md)
+>[Next](event-grid.md)

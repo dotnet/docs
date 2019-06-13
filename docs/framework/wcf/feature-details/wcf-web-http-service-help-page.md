@@ -4,13 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
 ---
 # WCF Web HTTP Service Help Page
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides an automatic help page for WCF WEB HTTP services. This help page lists a description of each operation, request and response formats, and schemas. This functionality is turned off by default. When a user browses to a WCF WEB HTTP service and appends "/Help" on to the end of the URL, for example http://localhost:8000/Customers/Help, a help page like the following is displayed.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides an automatic help page for WCF WEB HTTP services. This help page lists a description of each operation, request and response formats, and schemas. This functionality is turned off by default. When a user browses to a WCF WEB HTTP service and appends "/Help" on to the end of the URL, for example `http://localhost:8000/Customers/Help`, a help page like the following is displayed.  
   
- ![WCF REST Help Page](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagemain.gif "WCFRESTHELPPAGEMAIN")  
+ ![A browser with the WCF REST Help page open.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page.gif)  
   
  The user can then click any method listed in the help page and detailed page for that operation is displayed showing more information about the method, including message formats and example responses. The following image is an example of a help page for a method.  
   
- ![WCF REST Help Page Details](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagedetail2.gif "WCFRESTHELPPAGEDETAIL2")  
+ ![A browser with the WCF REST Help page details for the GetCustomers method open.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page-detail.gif)  
   
 ## Using the WCF Web HTTP Help Page  
  The WCF WEB HTTP Help page displays a short description for each operation provided that you specify one using the <xref:System.ComponentModel.DescriptionAttribute>. This attribute takes a string that contains a short description of the operation it is applied to. For example, the following code shows how to use the <xref:System.ComponentModel.DescriptionAttribute> to provide a short description.  
@@ -39,12 +39,12 @@ SyndicationFeedFormatter GetTemplate1();
 </services>  
 ```  
   
- To enable the WCF Web HTTP Help page in code, add a service endpoint and add a <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint setting <!--zz <xref:System.ServiceModel.Description.WebHttpBehavior.EnableHelp%2A>--> `EnableHelp` to `true`. The following code shows how to do this.  
+ To enable the WCF Web HTTP Help page in code, add a service endpoint and add a <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint setting <xref:System.ServiceModel.Description.WebHttpBehavior.HelpEnabled%2A> to `true`. The following code shows how to do this.  
   
 ```  
 using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http://localhost:8000/Customers")))  
 {  
-   host.AddServiceEndpoint(typeof(ICustomerCollection), new WebHttpBinding(), "");               
+   host.AddServiceEndpoint(typeof(ICustomerCollection), new WebHttpBinding(), "");
    host.Description.Endpoints[0].Behaviors.Add(new WebHttpBehavior { EnableHelp = true });  
    // ...  
 }  

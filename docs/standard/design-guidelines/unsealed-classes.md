@@ -1,14 +1,13 @@
 ---
 title: "Unsealed Classes"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "classes [.NET Framework], unsealed"
   - "unsealed classes"
   - "inheritance, classes"
 ms.assetid: 9a3bd505-90f5-4053-9f0d-3cf5fa3d3ebf
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Unsealed Classes
 Sealed classes cannot be inherited from, and they prevent extensibility. In contrast, classes that can be inherited from are called unsealed classes.  
@@ -23,7 +22,8 @@ Sealed classes cannot be inherited from, and they prevent extensibility. In cont
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
- [Sealing](../../../docs/standard/design-guidelines/sealing.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
+- [Sealing](../../../docs/standard/design-guidelines/sealing.md)

@@ -23,15 +23,15 @@ The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files 
   
  Resgen.exe is a general-purpose resource conversion utility that performs the following tasks:  
   
--   Converts .txt or .restext files to .resources or .resx files. (The format of .restext files is identical to the format of .txt files. However, the .restext extension helps you identify text files that contain resource definitions more easily.)  
+- Converts .txt or .restext files to .resources or .resx files. (The format of .restext files is identical to the format of .txt files. However, the .restext extension helps you identify text files that contain resource definitions more easily.)  
   
--   Converts .resources files to text or .resx files.  
+- Converts .resources files to text or .resx files.  
   
--   Converts .resx files to text or .resources files.  
+- Converts .resx files to text or .resources files.  
   
--   Extracts the string resources from an assembly into a .resw file that is suitable for use in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.  
+- Extracts the string resources from an assembly into a .resw file that is suitable for use in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.  
   
--   Creates a strongly typed class that provides access to individual named resources and to the <xref:System.Resources.ResourceManager> instance.  
+- Creates a strongly typed class that provides access to individual named resources and to the <xref:System.Resources.ResourceManager> instance.  
   
  If Resgen.exe fails for any reason, the return value is –1.  
   
@@ -49,7 +49,7 @@ resgen /?
   
  If you use Resgen,exe to generate binary .resources files, you can use a language compiler to embed the binary files into executable assemblies, or you can use the [Assembly Linker (Al.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md) to compile them into satellite assemblies.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -63,11 +63,11 @@ resgen  [/define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /
 resgen filename.extension [outputDirectory]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter or switch|Description|  
 |-------------------------|-----------------|  
-|`/define:` *symbol1*[, *symbol2*,...]|Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], supports conditional compilation in text-based (.txt or .restext) resource files. If *symbol* corresponds to a symbol included in the input text file within a `#ifdef` construct, the associated string resource is included in the .resources file. If the input text file includes an `#if !` statement with a symbol that is not defined by the `/define` switch, the associated string resource is included in the resources file.<br /><br /> `/define` is ignored if it is used with non-text files. Symbols are case-sensitive.<br /><br /> For more information about this option, see [Conditionally Compiling Resources](#Conditional) later in this topic.|  
+|`/define:` *symbol1*[, *symbol2*,...]|Starting with the .NET Framework 4.5, supports conditional compilation in text-based (.txt or .restext) resource files. If *symbol* corresponds to a symbol included in the input text file within a `#ifdef` construct, the associated string resource is included in the .resources file. If the input text file includes an `#if !` statement with a symbol that is not defined by the `/define` switch, the associated string resource is included in the resources file.<br /><br /> `/define` is ignored if it is used with non-text files. Symbols are case-sensitive.<br /><br /> For more information about this option, see [Conditionally Compiling Resources](#Conditional) later in this topic.|  
 |`useSourcePath`|Specifies that the input file's current directory is to be used to resolve relative file paths.|  
 |`/compile`|Enables you to specify multiple .resx or text files to convert to multiple .resources files in a single bulk operation. If you do not specify this option, you can specify only one input file argument. Output files are named *filename*.resources.<br /><br /> This option cannot be used with the `/str:` option.<br /><br /> For more information about this option, see [Compiling or Converting Multiple Files](#Multiple) later in this topic.|  
 |`/r:` `assembly`|References metadata from the specified assembly. It is used when converting .resx files and allows Resgen.exe to serialize or deserialize object resources. It is similar to the `/reference:` or `/r:` options for the C# and Visual Basic compilers.|  
@@ -110,17 +110,17 @@ resgen filename.extension [outputDirectory]
 ## Performing Specific Resgen.exe Tasks  
  You can use Resgen.exe in diverse ways: to compile a text-based or XML-based resource file into a binary file, to convert between resource file formats, and to generate a class that wraps <xref:System.Resources.ResourceManager> functionality and provides access to resources. This section provides detailed information about each task:  
   
--   [Compiling Resources into a Binary File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Compiling)  
+- [Compiling Resources into a Binary File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Compiling)  
   
--   [Converting Between Resource File Types](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Convert)  
+- [Converting Between Resource File Types](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Convert)  
   
--   [Compiling or Converting Multiple Files](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Multiple)  
+- [Compiling or Converting Multiple Files](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Multiple)  
   
--   [Exporting Resources to a .resw File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Exporting)  
+- [Exporting Resources to a .resw File](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Exporting)  
   
--   [Conditionally Compiling Resources](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Conditional)  
+- [Conditionally Compiling Resources](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Conditional)  
   
--   [Generating a Strongly Typed Resource Class](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Strong)  
+- [Generating a Strongly Typed Resource Class](../../../docs/framework/tools/resgen-exe-resource-file-generator.md#Strong)  
   
 <a name="Compiling"></a>   
 ### Compiling Resources into a Binary File  
@@ -164,13 +164,13 @@ resgen Resources.resx Resources.resources
 ### Converting Between Resource File Types  
  In addition to compiling text-based or XML-based resource files into binary .resources files, Resgen.exe can convert any supported file type to any other supported file type. This means that it can perform the following conversions:  
   
--   .txt and .restext files to .resx files.  
+- .txt and .restext files to .resx files.  
   
--   .resx files to .txt and .restext files.  
+- .resx files to .txt and .restext files.  
   
--   .resources files to .txt and .restext files.  
+- .resources files to .txt and .restext files.  
   
--   .resources files to .resx files.  
+- .resources files to .resx files.  
   
  The syntax is the same as that shown in the previous section.  
   
@@ -238,7 +238,7 @@ resgen MyApp.exe Win8Resources
   
 <a name="Conditional"></a>   
 ### Conditionally Compiling Resources  
- Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Resgen.exe supports conditional compilation of string resources in text (.txt and .restext) files. This enables you to use a single text-based resource file in multiple build configurations.  
+ Starting with the .NET Framework 4.5, Resgen.exe supports conditional compilation of string resources in text (.txt and .restext) files. This enables you to use a single text-based resource file in multiple build configurations.  
   
  In a .txt or .restext file, you use the `#ifdef`…`#endif` construct to include a resource in the binary .resources file if a symbol is defined, and you use the `#if !`... `#endif` construct to include a resource if a symbol is not defined. At compile time, you then define symbols by using the `/define:` option followed by a comma-delimited list of symbols. The comparison is cased-sensitive; the case of symbols defined by `/define` must match the case of symbols in the text files to be compiled.  
   
@@ -309,13 +309,13 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
   
  The strongly typed resource class has the following members:  
   
--   A parameterless constructor, which can be used to instantiate the strongly typed resource class..  
+- A parameterless constructor, which can be used to instantiate the strongly typed resource class..  
   
--   A `static` (C#) or `Shared` (Visual Basic) and read-only `ResourceManager` property, which returns the <xref:System.Resources.ResourceManager> instance that manages the strongly typed resource.  
+- A `static` (C#) or `Shared` (Visual Basic) and read-only `ResourceManager` property, which returns the <xref:System.Resources.ResourceManager> instance that manages the strongly typed resource.  
   
--   A static `Culture` property, which allows you to set the culture used for resource retrieval. By default, its value is `null`, which means that that the current UI culture is used.  
+- A static `Culture` property, which allows you to set the culture used for resource retrieval. By default, its value is `null`, which means that the current UI culture is used.  
   
--   One `static` (C#) or `Shared` (Visual Basic) and read-only property for each resource in the .resources file. The name of the property is the name of the resource.-  
+- One `static` (C#) or `Shared` (Visual Basic) and read-only property for each resource in the .resources file. The name of the property is the name of the resource.-  
   
  For example, the following command compiles a resource file named StringResources.txt into StringResources.resources and generates a class named `StringResources` in a Visual Basic source code file named StringResources.vb that can be used to access the Resource Manager.  
   
@@ -323,9 +323,10 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
 resgen StringResources.txt /str:vb,,StringResources   
 ```  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+
+- [Tools](../../../docs/framework/tools/index.md)
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
+- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

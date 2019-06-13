@@ -18,17 +18,17 @@ Although you can use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Rec
 
  This document demonstrates a dataflow pipeline that downloads the book *The Iliad of Homer* from a website and searches the text to match individual words with words that reverse the first word's characters. The formation of the dataflow pipeline in this document consists of the following steps:  
   
-1.  Create the dataflow blocks that participate in the pipeline.  
+1. Create the dataflow blocks that participate in the pipeline.  
   
-2.  Connect each dataflow block to the next block in the pipeline. Each block receives as input the output of the previous block in the pipeline.  
+2. Connect each dataflow block to the next block in the pipeline. Each block receives as input the output of the previous block in the pipeline.  
   
-3.  For each dataflow block, create a continuation task that sets the next block to the completed state after the previous block finishes.  
+3. For each dataflow block, create a continuation task that sets the next block to the completed state after the previous block finishes.  
   
-4.  Post data to the head of the pipeline.  
+4. Post data to the head of the pipeline.  
   
-5.  Mark the head of the pipeline as completed.  
+5. Mark the head of the pipeline as completed.  
   
-6.  Wait for the pipeline to complete all work.  
+6. Wait for the pipeline to complete all work.  
   
 ## Prerequisites  
  Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you start this walkthrough.  
@@ -104,5 +104,6 @@ Although you can use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Rec
   
  You can also connect a source dataflow block to multiple target blocks to create a *dataflow network*. The overloaded version of the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo%2A> method takes a <xref:System.Predicate%601> object that defines whether the target block accepts each message based on its value. Most dataflow block types that act as sources offer messages to all connected target blocks, in the order in which they were connected, until one of the blocks accepts that message. By using this filtering mechanism, you can create systems of connected dataflow blocks that direct certain data through one path and other data through another path. For an example that uses filtering to create a dataflow network, see [Walkthrough: Using Dataflow in a Windows Forms Application](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md).  
   
-## See Also  
- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+## See also
+
+- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

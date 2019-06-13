@@ -52,7 +52,7 @@ When serializing a user-defined type to a given wire format, or deserializing a 
   
  This can be cumbersome, especially if the client has to handle more than one type of JSON object.  
   
- The `JsonObject` type provided by this sample introduces a weakly-typed representation of the deserialized JSON object. `JsonObject` relies on the natural mapping between JSON objects and [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] dictionaries, and the mapping between JSON arrays and [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] arrays. The following code shows the `JsonObject` type.  
+ The `JsonObject` type provided by this sample introduces a weakly-typed representation of the deserialized JSON object. `JsonObject` relies on the natural mapping between JSON objects and .NET Framework dictionaries, and the mapping between JSON arrays and .NET Framework arrays. The following code shows the `JsonObject` type.  
   
 ```  
 // Instantiation of JsonObject json omitted  
@@ -119,19 +119,17 @@ My favorite bands are Band ABC and Band XYZ.
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  Build the solution WeaklyTypedJson.sln as described in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. Build the solution WeaklyTypedJson.sln as described in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  Run the solution.  
+3. Run the solution.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Ajax\WeaklyTypedJson`  
-  
-## See Also

@@ -48,21 +48,21 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
 ### Creating and Exporting Certificates  
  This procedure requires the MMC Certificates snap-in. The snap-in can be accessed by opening the Start/Run menu, typing "mmc" in the input box and pressing OK. Then, in the **Console1** window, navigate to **the File/Add-Remove** Snap-in, click Add, and choose **Certificates** from the **Available Standalone Snapins** list. Finally, select **Computer Account** to manage and click **OK**. The **Certificates** node appears in the snap-in console.  
   
- You must already possess the required certificates to establish trust. To learn how to create and install new certificates prior to the following steps, see [How to: Create and Install Temporary Client Certificates in WCF During Development](http://go.microsoft.com/fwlink/?LinkId=158925).  
+ You must already possess the required certificates to establish trust. To learn how to create and install new certificates prior to the following steps, see [How to: Create and Install Temporary Client Certificates in WCF During Development](https://go.microsoft.com/fwlink/?LinkId=158925).  
   
-1.  On machine A, using the MMC Certificates snap-in, import the existing certificate (certA) into the LocalMachine\MY (Personal Node) and LocalMachine\ROOT store (trusted root certification authority node). To import a certificate to a specific node, right-click the node and choose **All Tasks/Import**.  
+1. On machine A, using the MMC Certificates snap-in, import the existing certificate (certA) into the LocalMachine\MY (Personal Node) and LocalMachine\ROOT store (trusted root certification authority node). To import a certificate to a specific node, right-click the node and choose **All Tasks/Import**.  
   
-2.  On machine B, using the MMC Certificates snap-in, create or obtain a certificate certB with a private key and import it into the LocalMachine\MY (Personal Node) and LocalMachine\ROOT store (trusted root certification authority node).  
+2. On machine B, using the MMC Certificates snap-in, create or obtain a certificate certB with a private key and import it into the LocalMachine\MY (Personal Node) and LocalMachine\ROOT store (trusted root certification authority node).  
   
-3.  Export certA's public key to a file if this has not been done already.  
+3. Export certA's public key to a file if this has not been done already.  
   
-4.  Export certB's public key to a file if this has not been done already.  
+4. Export certB's public key to a file if this has not been done already.  
   
 ### Establishing Mutual Trust Between Machines  
   
-1.  On machine A, import the file representation of certB into the LocalMachine\MY and LocalMachine\ROOT stores. This declares that machine A trusts certB to communicate with it.  
+1. On machine A, import the file representation of certB into the LocalMachine\MY and LocalMachine\ROOT stores. This declares that machine A trusts certB to communicate with it.  
   
-2.  On machine B, import certA’s file into the LocalMachine\MY and LocalMachine\ROOT stores. This implies that machine B trusts certA to communicate with it.  
+2. On machine B, import certA’s file into the LocalMachine\MY and LocalMachine\ROOT stores. This implies that machine B trusts certA to communicate with it.  
   
  After completing these steps, trust is established between the two machines, and they can be configured to communicate with each other using WS-AT.  
   
@@ -71,9 +71,9 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
   
  You can configure this by using the MMC WS-AT snap-in. For more information about this tool, see the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md) topic. The following steps describe how to establish trust between two computers running MSDTC.  
   
-1.  Configure machine A's settings. For "Endpoint Certificate", select certA. For "Authorized Certificates", select the certB.  
+1. Configure machine A's settings. For "Endpoint Certificate", select certA. For "Authorized Certificates", select the certB.  
   
-2.  Configure machine B's settings. For "Endpoint Certificate", select certB. For "Authorized Certificates", select the certA.  
+2. Configure machine B's settings. For "Endpoint Certificate", select certB. For "Authorized Certificates", select the certA.  
   
 > [!NOTE]
 >  When one machine sends a message to the other machine, the sender attempts to verify that the subject name of the recipient’s certificate and the name of the recipient’s machine match. If they do not match, certificate verification fails and the two machines cannot communicate.  
@@ -92,26 +92,27 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
   
  The WS-AT protocol service also supports integrated ServiceModel tracing through the ETW trace session. This provides more detailed, communication-specific traces in addition to the existing transaction traces.  To enable these additional traces, follow these steps  
   
-1.  Open the **Start/Run** menu, type "regedit" in the input box and select **OK**.  
+1. Open the **Start/Run** menu, type "regedit" in the input box and select **OK**.  
   
-2.  In the **Registry Editor**, navigate to the following folder on the left pane, Hkey_Local_Machine\SOFTWARE\Microsoft\WSAT\3.0\  
+2. In the **Registry Editor**, navigate to the following folder on the left pane, Hkey_Local_Machine\SOFTWARE\Microsoft\WSAT\3.0\  
   
-3.  Right click the `ServiceModelDiagnosticTracing` value in the right pane and select **Modify**.  
+3. Right click the `ServiceModelDiagnosticTracing` value in the right pane and select **Modify**.  
   
-4.  In the **Value data** input box, enter one of the following valid values to specify the trace level you want to enable.  
+4. In the **Value data** input box, enter one of the following valid values to specify the trace level you want to enable.  
   
--   0: off  
+- 0: off  
   
--   1: critical  
+- 1: critical  
   
--   3: error. This is the default value  
+- 3: error. This is the default value  
   
--   7: warning  
+- 7: warning  
   
--   15: information  
+- 15: information  
   
--   31: verbose  
+- 31: verbose  
   
-## See Also  
- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)  
- [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md)
+## See also
+
+- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+- [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md)

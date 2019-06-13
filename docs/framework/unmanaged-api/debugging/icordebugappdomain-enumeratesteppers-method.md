@@ -29,7 +29,7 @@ HRESULT EnumerateSteppers (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppSteppers`  
  [out] A pointer to the address of an ICorDebugStepperEnum object that is the enumerator for all active steppers in the application domain.  
   

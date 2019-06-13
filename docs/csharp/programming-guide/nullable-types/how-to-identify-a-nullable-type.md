@@ -1,14 +1,15 @@
 ---
-title: "How to: Identify a nullable type (C# Programming Guide)"
+title: "How to: Identify a nullable type - C# Programming Guide"
+ms.custom: seodec18
 description: "Learn how to determine whether a type is a nullable type or an instance is of a nullable type"
-ms.date: 08/06/2018
+ms.date: 09/24/2018
 helpviewer_keywords: 
   - "nullable types [C#], identifying"
 ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387
 ---
 # How to: Identify a nullable type (C# Programming Guide)
 
-The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a nullable type:
+The following example shows how to determine whether a <xref:System.Type?displayProperty=nameWithType> instance represents a closed generic nullable type, that is, the <xref:System.Nullable%601?displayProperty=nameWithType> type with a specified type parameter `T`:
 
 [!code-csharp-interactive[whether Type is nullable](../../../../samples/snippets/csharp/programming-guide/nullable-types/IdentifyNullableType.cs#1)]
 
@@ -28,6 +29,6 @@ You can use the code presented in the following example to determine whether an 
   
 ## See also
 
-[Nullable types](index.md)  
-[Using nullable types](using-nullable-types.md)  
-<xref:System.Nullable.GetUnderlyingType%2A>  
+- [Nullable types](index.md)
+- [Using nullable types](using-nullable-types.md)
+- <xref:System.Nullable.GetUnderlyingType%2A>

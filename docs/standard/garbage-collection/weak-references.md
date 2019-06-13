@@ -27,11 +27,11 @@ The garbage collector cannot collect an object in use by an application while th
 ## Short and Long Weak References  
  You can create a short weak reference or a long weak reference:  
   
--   Short  
+- Short  
   
      The target of a short weak reference becomes `null` when the object is reclaimed by garbage collection. The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.  A short weak reference is the default constructor for <xref:System.WeakReference>.  
   
--   Long  
+- Long  
   
      A long weak reference is retained after the object's <xref:System.Object.Finalize%2A> method has been called. This allows the object to be recreated, but the state of the object remains unpredictable. To use a long reference, specify `true` in the <xref:System.WeakReference> constructor.  
   
@@ -46,5 +46,6 @@ The garbage collector cannot collect an object in use by an application while th
   
  Avoid using weak references as an automatic solution to memory management problems. Instead, develop an effective caching policy for handling your application's objects.  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

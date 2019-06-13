@@ -12,9 +12,9 @@ ms.assetid: 49dfef1a-dddf-4fc6-a511-6d5f925a4781
 The topics in this section show you how to use a <xref:System.Windows.Controls.ListView> control.  
   
 ## In This Section  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
- [GridView Column Header Styles and Templates Overview](../../../../docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md)  
+ [ListView Overview](listview-overview.md)  
+ [GridView Overview](gridview-overview.md)  
+ [GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.ListView>  
@@ -22,4 +22,4 @@ The topics in this section show you how to use a <xref:System.Windows.Controls.L
  <xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+ [How-to Topics](listview-how-to-topics.md)

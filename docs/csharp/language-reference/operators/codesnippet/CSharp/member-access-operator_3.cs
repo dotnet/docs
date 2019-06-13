@@ -1,1 +1,0 @@
-            Simple s = new Simple();

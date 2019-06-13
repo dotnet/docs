@@ -4,6 +4,7 @@ description: Learn unit test concepts in C# and .NET Core through an interactive
 author: ardalis
 ms.author: wiwagn
 ms.date: 11/29/2017
+ms.custom: "seodec18"
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit
 
@@ -22,7 +23,7 @@ Inside the solution directory, create a *PrimeService* directory. The directory 
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you first create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. You first create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -44,7 +45,7 @@ Change the directory back to the *unit-testing-using-dotnet-test* directory.
 Run the [dotnet sln](../tools/dotnet-sln.md) command to add the class library project to the solution:
 
 ```
-dotnet sln add .\PrimeService\PrimeService.csproj
+dotnet sln add ./PrimeService/PrimeService.csproj
 ```
 
 ## Creating the test project
@@ -60,7 +61,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses [xUnit](https://xunit.github.io/) as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
 
 ```xml
 <ItemGroup>
@@ -94,12 +95,12 @@ The following shows the final solution layout:
 To add the test project to the solution, run the [dotnet sln](../tools/dotnet-sln.md) command in the *unit-testing-using-dotnet-test* directory:
 
 ```
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Creating the first test
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
+You write one failing test, make it pass, then repeat the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
 
 ```csharp
 using Xunit;
@@ -166,4 +167,5 @@ Continue to iterate by adding more tests, more theories, and more code in the ma
 
 ### Additional resources
 
+- [xUnit.net official site](https://xunit.github.io)
 - [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)

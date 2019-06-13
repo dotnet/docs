@@ -8,7 +8,7 @@ NamedPipeConnectionPoolSettings
   
 ## Syntax  
   
-```  
+```csharp
 class NamedPipeConnectionPoolSettings  
 {  
   string GroupName;  
@@ -50,5 +50,6 @@ class NamedPipeConnectionPoolSettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>
+## See also
+
+- <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>

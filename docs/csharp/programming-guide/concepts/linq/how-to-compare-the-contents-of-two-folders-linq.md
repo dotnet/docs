@@ -6,11 +6,11 @@ ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
 # How to: Compare the Contents of Two Folders (LINQ) (C#)
 This example demonstrates three ways to compare two file listings:  
   
--   By querying for a Boolean value that specifies whether the two file lists are identical.  
+- By querying for a Boolean value that specifies whether the two file lists are identical.  
   
--   By querying for the intersection to retrieve the files that are in both folders.  
+- By querying for the intersection to retrieve the files that are in both folders.  
   
--   By querying for the set difference to retrieve the files that are in one folder but not the other.  
+- By querying for the set difference to retrieve the files that are in one folder but not the other.  
   
     > [!NOTE]
     >  The techniques shown here can be adapted to compare sequences of objects of any type.  
@@ -112,7 +112,7 @@ namespace QueryCompareTwoDirs
         // hash code.  
         public int GetHashCode(System.IO.FileInfo fi)  
         {  
-            string s = String.Format("{0}{1}", fi.Name, fi.Length);  
+            string s = $"{fi.Name}{fi.Length}";
             return s.GetHashCode();  
         }  
     }  
@@ -120,8 +120,9 @@ namespace QueryCompareTwoDirs
 ```  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+ Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also  
- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+## See also
+
+- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)

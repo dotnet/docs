@@ -34,16 +34,16 @@ BOOLEAN StrongNameKeyGenEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must be a non-empty string, or null to generate a temporary name.  
   
  `dwFlags`  
  [in] Specifies whether to leave the key registered. The following values are supported:  
   
--   0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
+- 0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
   
--   0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
+- 0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
   
  `dwKeySize`  
  [in] The requested size of the key, in bits.  
@@ -73,7 +73,8 @@ BOOLEAN StrongNameKeyGenEx (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [StrongNameKeyGenEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygenex-method.md)  
- [StrongNameKeyGen Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+
+- [StrongNameKeyGenEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygenex-method.md)
+- [StrongNameKeyGen Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "distributed application security [WCF]"
   - "security [WCF], transfer"
 ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Distributed Application Security
 Windows Communication Foundation (WCF) security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  
@@ -16,11 +14,11 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 ## Transfer Security Scenarios  
  Common scenarios that employ WCF transfer security include the following:  
   
--   Secure transfer using Windows. A WCF client and service are deployed in a Windows domain (or a Windows forest). The messages contain personal data, so requirements include mutual authentication of the client and service, message integrity, and message confidentiality. In addition, proof is required that a particular transaction occurred, for example, the receiver of the message should record the signature information.  
+- Secure transfer using Windows. A WCF client and service are deployed in a Windows domain (or a Windows forest). The messages contain personal data, so requirements include mutual authentication of the client and service, message integrity, and message confidentiality. In addition, proof is required that a particular transaction occurred, for example, the receiver of the message should record the signature information.  
   
--   Secure transfer using `UserName` and HTTPS. A WCF client and service need to be developed to work across the Internet. The client credentials authenticate against a database of user name/password pairs. The service is deployed at an HTTPS address using a trusted Secure Sockets Layer (SSL) certificate. Because the messages travel over the Internet, the client and service need to be mutually authenticated, and the messages' confidentiality and integrity must be preserved during transfer.  
+- Secure transfer using `UserName` and HTTPS. A WCF client and service need to be developed to work across the Internet. The client credentials authenticate against a database of user name/password pairs. The service is deployed at an HTTPS address using a trusted Secure Sockets Layer (SSL) certificate. Because the messages travel over the Internet, the client and service need to be mutually authenticated, and the messages' confidentiality and integrity must be preserved during transfer.  
   
--   Secure transfer using certificates. A WCF client and service need to be developed to work over the public internet. The client and service both have certificates that can be used to secure the messages. The client and service use the Internet to communicate with each other and to perform high-value transactions that require message integrity, confidentiality, and mutual authentication.  
+- Secure transfer using certificates. A WCF client and service need to be developed to work over the public internet. The client and service both have certificates that can be used to secure the messages. The client and service use the Internet to communicate with each other and to perform high-value transactions that require message integrity, confidentiality, and mutual authentication.  
   
 ## Integrity, Confidentiality, and Authentication  
  Three functions—integrity, confidentiality and authentication—are together called transfer security. Transfer security provides the functions that help to mitigate the threats to a distributed application. The following table briefly describes the three functions that make up transfer security.  
@@ -61,8 +59,8 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 |Setting|Description|  
 |-------------|-----------------|  
 |None|Specifies that the client does not need to present any credential. This translates to an anonymous client.|  
-|Basic|Specifies basic authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88313)."|  
-|Digest|Specifies digest authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=88313)."|  
+|Basic|Specifies basic authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=88313)."|  
+|Digest|Specifies digest authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=88313)."|  
 |Ntlm|Specifies Windows authentication using SSPI negotiation on a Windows domain.<br /><br /> SSPI negotiation results in using either the Kerberos protocol or NT LanMan (NTLM).|  
 |Windows|Specifies Windows authentication using SSPI on a Windows domain. SSPI picks from either the Kerberos protocol or NTLM as authentication service.<br /><br /> SSPI tries Kerberos protocol first; if that fails, it then uses NTLM.|  
 |Certificate|Performs client authentication using a certificate, typically X.509.|  
@@ -90,8 +88,9 @@ Windows Communication Foundation (WCF) security is broken into three major funct
   
  The message security mode also allows you to perform transfer security so that the service credential is exchanged with the client as part of an initial negotiation. To enable negotiation, set the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property to `true`.  
   
-## See Also  
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

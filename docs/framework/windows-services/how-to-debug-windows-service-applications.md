@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "services, debugging"
 ms.assetid: 63ab0800-0f05-4f1e-88e6-94c73fd920a2
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Debug Windows Service Applications
 A service must be run from within the context of the Services Control Manager rather than from within Visual Studio. For this reason, debugging a service is not as straightforward as debugging other Visual Studio application types. To debug a service, you must start the service and then attach a debugger to the process in which it is running. You can then debug your application by using all of the standard debugging functionality of Visual Studio.  
@@ -27,27 +26,27 @@ A service must be run from within the context of the Services Control Manager ra
 >  Debugging the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method can be difficult because the Services Control Manager imposes a 30-second limit on all attempts to start a service. For more information, see [Troubleshooting: Debugging Windows Services](../../../docs/framework/windows-services/troubleshooting-debugging-windows-services.md).  
   
 > [!WARNING]
->  To get meaningful information for debugging, the Visual Studio debugger needs to find symbol files for the binaries that are being debugged. If you are debugging a service that you built in Visual Studio, the symbol files (.pdb files) are in the same folder as the executable or library, and the debugger loads them automatically. If you are debugging a service that you didn't build, you should first find symbols for the service and make sure they can be found by the debugger. See [Specify Symbol (.pdb) and Source Files](http://msdn.microsoft.com/library/1105e169-5272-4e7c-b3e7-cda1b7798a6b). If you're debugging a system process or want to have symbols for system calls in your services, you should add the Microsoft Symbol Servers. See [Debugging Symbols](/windows/desktop/DxTechArts/debugging-with-symbols).  
+>  To get meaningful information for debugging, the Visual Studio debugger needs to find symbol files for the binaries that are being debugged. If you are debugging a service that you built in Visual Studio, the symbol files (.pdb files) are in the same folder as the executable or library, and the debugger loads them automatically. If you are debugging a service that you didn't build, you should first find symbols for the service and make sure they can be found by the debugger. See [Specify Symbol (.pdb) and Source Files in the Visual Studio Debugger](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger). If you're debugging a system process or want to have symbols for system calls in your services, you should add the Microsoft Symbol Servers. See [Debugging Symbols](/windows/desktop/DxTechArts/debugging-with-symbols).  
   
 ### To debug a service  
   
-1.  Build your service in the Debug configuration.  
+1. Build your service in the Debug configuration.  
   
-2.  Install your service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
+2. Install your service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
-3.  Start your service, either from **Services Control Manager**, **Server Explorer**, or from code. For more information, see [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md).  
+3. Start your service, either from **Services Control Manager**, **Server Explorer**, or from code. For more information, see [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md).  
   
-4.  Start Visual Studio with administrative credentials so you can attach to system processes.  
+4. Start Visual Studio with administrative credentials so you can attach to system processes.  
   
-5.  (Optional) On the Visual Studio menu bar, choose **Tools**, **Options**. In the **Options** dialog box, choose **Debugging**, **Symbols**, select the **Microsoft Symbol Servers** check box, and then choose the **OK** button.  
+5. (Optional) On the Visual Studio menu bar, choose **Tools**, **Options**. In the **Options** dialog box, choose **Debugging**, **Symbols**, select the **Microsoft Symbol Servers** check box, and then choose the **OK** button.  
   
-6.  On the menu bar, choose **Attach to Process** from the **Debug** or **Tools** menu. (Keyboard: Ctrl+Alt+P)  
+6. On the menu bar, choose **Attach to Process** from the **Debug** or **Tools** menu. (Keyboard: Ctrl+Alt+P)  
   
      The **Processes** dialog box appears.  
   
-7.  Select the **Show processes from all users** check box.  
+7. Select the **Show processes from all users** check box.  
   
-8.  In the **Available Processes** section, choose the process for your service, and then choose **Attach**.  
+8. In the **Available Processes** section, choose the process for your service, and then choose **Attach**.  
   
     > [!TIP]
     >  The process will have the same name as the executable file for your service.  
@@ -72,7 +71,7 @@ A service must be run from within the context of the Services Control Manager ra
   
 #### How to: Run a Windows Service as a console application  
   
-1.  Add a method to your service that runs the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> methods:  
+1. Add a method to your service that runs the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> and <xref:System.ServiceProcess.ServiceBase.OnStop%2A> methods:  
   
     ```csharp  
     internal void TestStartupAndStop(string[] args)  
@@ -83,7 +82,7 @@ A service must be run from within the context of the Services Control Manager ra
     }  
     ```  
   
-2.  Rewrite the `Main` method as follows:  
+2. Rewrite the `Main` method as follows:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -100,16 +99,17 @@ A service must be run from within the context of the Services Control Manager ra
     }
     ```  
   
-3.  In the **Application** tab of the project's properties, set the **Output type** to **Console Application**.  
+3. In the **Application** tab of the project's properties, set the **Output type** to **Console Application**.  
   
-4.  Choose **Start Debugging** (F5).  
+4. Choose **Start Debugging** (F5).  
   
-5.  To run the program as a Windows Service again, install it and start it as usual for a Windows Service. It's not necessary to reverse these changes.  
+5. To run the program as a Windows Service again, install it and start it as usual for a Windows Service. It's not necessary to reverse these changes.  
   
- In some cases, such as when you want to debug an issue that occurs only on system startup, you have to use the Windows debugger. Install [Debugging Tools for Windows](http://msdn.microsoft.com/windows/hardware/hh852365) and see [How to debug Windows Services](http://support.microsoft.com/kb/824344).  
+ In some cases, such as when you want to debug an issue that occurs only on system startup, you have to use the Windows debugger. [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk) and see [How to debug Windows Services](https://support.microsoft.com/kb/824344).  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)  
- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)  
- [Debugging a Service](/windows/desktop/Services/debugging-a-service)
+## See also
+
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
+- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
+- [Debugging a Service](/windows/desktop/Services/debugging-a-service)

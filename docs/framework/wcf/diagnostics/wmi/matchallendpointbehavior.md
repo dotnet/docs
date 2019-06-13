@@ -8,7 +8,7 @@ MatchAllEndpointBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class MatchAllEndpointBehavior : Behavior  
 {  
 };  

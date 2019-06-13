@@ -91,5 +91,5 @@ Microservices come with their own challenges, including:
 Ultimately there are solutions to address all of these challenges, including tapping into the benefits of serverless that are discussed later.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](architecture-deployment-approaches.md)
+>[Previous](index.md)
+>[Next](architecture-deployment-approaches.md)

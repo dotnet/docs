@@ -1,5 +1,7 @@
 ---
-title: "new constraint (C# Reference)"
+title: "new constraint - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "new constraint keyword [C#]"
@@ -33,5 +35,4 @@ For more information, see [Constraints on Type Parameters](../../programming-gui
 - [C# Reference](../../language-reference/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Operator Keywords](operator-keywords.md)
 - [Generics](../../programming-guide/generics/index.md)

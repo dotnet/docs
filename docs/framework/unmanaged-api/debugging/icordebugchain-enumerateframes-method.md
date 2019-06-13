@@ -29,7 +29,7 @@ HRESULT EnumerateFrames (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrames`  
  [out] A pointer to the address of an ICorDebugFrameEnum object that is the enumerator for the stack frames.  
   

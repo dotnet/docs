@@ -17,33 +17,33 @@ After you have added controls to your form and determined the user interface for
  To complete the procedure, it is assumed that you will bind to a data source derived from a database. For more information on creating data sources from other stores of data, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### To bind a control at design time  
   
-1.  Drag a <xref:System.Windows.Forms.TextBox> control on to the form.  
+1. Drag a <xref:System.Windows.Forms.TextBox> control on to the form.  
   
-2.  In the **Properties** window:  
+2. In the **Properties** window:  
   
-    1.  Expand the **(DataBindings)** node.  
+    1. Expand the **(DataBindings)** node.  
   
-    2.  Click the arrow next to the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
+    2. Click the arrow next to the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
   
          The **DataSource** UI type editor opens.  
   
          If a data source has previously been configured for the project or form, it will appear.  
   
-3.  Click **Add Project Data Source** to connect to data and create a data source.  
+3. Click **Add Project Data Source** to connect to data and create a data source.  
   
-4.  On the **Data Source Configuration Wizard** welcome page, click **Next**.  
+4. On the **Data Source Configuration Wizard** welcome page, click **Next**.  
   
-5.  On the **Choose a Data Source Type** page, select **Database**.  
+5. On the **Choose a Data Source Type** page, select **Database**.  
   
-6.  On the **Choose Your Data Connection** page, select a data connection from the list of available connections. If your desired data connection is not available select **New Connection** to create a new data connection.  
+6. On the **Choose Your Data Connection** page, select a data connection from the list of available connections. If your desired data connection is not available select **New Connection** to create a new data connection.  
   
-7.  Select **Yes, save the connection** to save the connection string in the application configuration file.  
+7. Select **Yes, save the connection** to save the connection string in the application configuration file.  
   
-8.  Select the database objects to bring into your application. In this case, select a field in a table that you would like the <xref:System.Windows.Forms.TextBox> to display.  
+8. Select the database objects to bring into your application. In this case, select a field in a table that you would like the <xref:System.Windows.Forms.TextBox> to display.  
   
 9. Replace the default dataset name if you want.  
   
@@ -53,8 +53,9 @@ After you have added controls to your form and determined the user interface for
   
      The **DataSource** UI type editor closes and the data set, <xref:System.Windows.Forms.BindingSource> and table adapter specific to that data connection are added to your form.  
   
-## See Also  
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.BindingNavigator>  
- [Add new data sources](/visualstudio/data-tools/add-new-data-sources)  
- [Data Sources Window](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)
+## See also
+
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.BindingNavigator>
+- [Add new data sources](/visualstudio/data-tools/add-new-data-sources)
+- [Data Sources Window](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/6ckyxa83(v=vs.120))

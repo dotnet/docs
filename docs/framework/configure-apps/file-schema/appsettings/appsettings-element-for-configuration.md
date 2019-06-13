@@ -1,5 +1,5 @@
 ---
-title: "&lt;appSettings&gt; element for &lt;configuration&gt;"
+title: "<appSettings> element for <configuration>"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "appSettings Element"
   - "<appSettings> Element"
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -81,4 +81,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

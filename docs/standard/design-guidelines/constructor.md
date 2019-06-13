@@ -1,6 +1,6 @@
 ---
 title: "Constructor Design"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "member design guidelines, constructors"
@@ -12,8 +12,7 @@ helpviewer_keywords:
   - "default constructors"
   - "static constructors"
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Constructor Design
 There are two kinds of constructors: type constructors and instance constructors.  
@@ -73,6 +72,7 @@ There are two kinds of constructors: type constructors and instance constructors
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

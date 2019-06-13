@@ -1,5 +1,6 @@
 ---
-title: "Properties (C# Programming Guide)"
+title: "Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 03/10/2017
 f1_keywords: 
   - "cs.properties"
@@ -27,7 +28,7 @@ A property is a member that provides a flexible mechanism to read, write, or com
 
 One basic pattern for implementing a property involves using a private backing field for setting and retrieving the property value. The `get` accessor returns the value of the private field, and the `set` accessor may perform some data validation before assigning a value to the private field. Both accessors may also perform some conversion or computation on the data before it is stored or returned.
 
-The following example illustrates this pattern. In this example, the `TimePeriod` class represents an interval of time. Internally, the class stores the time interval in seconds in a private field named `seconds`. A read-write property named `Hours` allows the customer to specify the time interval in hours. Both the `get` and the `set` accessors perform the necessary conversion between hours and seconds. In addition, the `set` accessor validates the data and throws an <xref:System.ArgumentOutOfRangeException> if the number of hours is invalid. 
+The following example illustrates this pattern. In this example, the `TimePeriod` class represents an interval of time. Internally, the class stores the time interval in seconds in a private field named `_seconds`. A read-write property named `Hours` allows the customer to specify the time interval in hours. Both the `get` and the `set` accessors perform the necessary conversion between hours and seconds. In addition, the `set` accessor validates the data and throws an <xref:System.ArgumentOutOfRangeException> if the number of hours is invalid. 
    
  [!code-csharp[Properties#1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-1.cs)]  
   
@@ -47,28 +48,30 @@ The following example illustrates this pattern. In this example, the `TimePeriod
 
 In some cases, property `get` and `set` accessors just assign a value to or retrieve a value from a backing field without including any additional logic. By using auto-implemented properties, you can simplify your code while having the C# compiler transparently provide the backing field for you. 
 
-If a property has both a `get` and a `set` accessor, both must be auto-implemented. You define an auto-implemented property by using the `get` and `set` keywords without providing any implementation. The following example repeats the previous one, except that `Name` and `Price` are auto-implemented properties. Note that the example also removes the parameterized constructor, so that `SaleItem` objects are now initialized with a call to the default constructor and an [object initializer](object-and-collection-initializers.md).
+If a property has both a `get` and a `set` accessor, both must be auto-implemented. You define an auto-implemented property by using the `get` and `set` keywords without providing any implementation. The following example repeats the previous one, except that `Name` and `Price` are auto-implemented properties. Note that the example also removes the parameterized constructor, so that `SaleItem` objects are now initialized with a call to the parameterless constructor and an [object initializer](object-and-collection-initializers.md).
 
   [!code-csharp[Properties#4](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/properties-4.cs)]  
 
 ## Related sections  
   
--   [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
   
--   [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
+- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
   
--   [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
   
--   [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
+- [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
   
--   [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
+- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Properties](~/_csharplang/spec/classes.md#properties) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
- [get keyword](../../../csharp/language-reference/keywords/get.md)    
- [set keyword](../../../csharp/language-reference/keywords/set.md)    
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
+- [get keyword](../../../csharp/language-reference/keywords/get.md)
+- [set keyword](../../../csharp/language-reference/keywords/set.md)

@@ -1,5 +1,5 @@
 ---
-title: Flexible Types (F#)
+title: Flexible Types
 description: Learn how to use F# flexible type annotation, which indicates that a parameter, variable, or value has a type that is compatible with a specified type.
 ms.date: 05/16/2016
 ---
@@ -61,8 +61,7 @@ seq [1; 2; 3; 4; ...]
 
 In F#, as in other object-oriented languages, there are contexts in which derived types or types that implement interfaces are automatically converted to a base type or interface type. These automatic conversions occur in direct arguments, but not when the type is in a subordinate position, as part of a more complex type such as a return type of a function type, or as a type argument. Thus, the flexible type notation is primarily useful when the type you are applying it to is part of a more complex type.
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
-
-[Generics](generics/index.md)
+- [F# Language Reference](index.md)
+- [Generics](generics/index.md)

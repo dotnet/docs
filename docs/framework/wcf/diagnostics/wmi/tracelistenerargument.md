@@ -8,7 +8,7 @@ TraceListenerArgument
   
 ## Syntax  
   
-```  
+```csharp
 class TraceListenerArgument  
 {  
   string Name;  

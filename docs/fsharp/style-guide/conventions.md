@@ -53,7 +53,6 @@ module MyAPI =
         let helper1 x y z =
             ...
 
-
     let myFunction1 x =
         let y = ...
         let z = ...
@@ -414,7 +413,7 @@ This technique should not be universally applied to your entire codebase, but it
 
 F# has multiple options for [Access control](../language-reference/access-control.md), inherited from what is available in the .NET runtime. These are not just usable for types - you can use them for functions, too.
 
-* Prefer non-`public` types and members until you need them to be publicly consumable. This also minimizes what consumers couple to
+* Prefer non-`public` types and members until you need them to be publicly consumable. This also minimizes what consumers couple to.
 * Strive to keep all helper functionality `private`.
 * Consider the use of `[<AutoOpen>]` on a private module of helper functions if they become numerous.
 
@@ -606,7 +605,7 @@ Because there is no need for a class when interacting with the Visual Studio Cod
 
 ## Type Abbreviations
 
-[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://www.microsoft.com/cognitive-toolkit/), a deep learning library:
+[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://docs.microsoft.com/cognitive-toolkit/), a deep learning library:
 
 ```fsharp
 open CNTK

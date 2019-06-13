@@ -9,7 +9,7 @@ ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 ---
 # Get Started
 
-There are a number of ways to get started with .NET.  Because .NET is a massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.
+There are a number of ways to get started with .NET. Because .NET is a massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.
 
 ## Get started using .NET languages
 
@@ -25,6 +25,6 @@ There are a number of ways to get started with .NET.  Because .NET is a massive 
 
 * The [.NET Core Tutorials](../core/tutorials/index.md) detail a number of ways you can get started with .NET Core using your operating system and tooling of choice.
 
-## Get started using Docker on .NET Framework
+## Get started using .NET Core on Docker
 
-[Docker on .NET Framework](../framework/docker/index.md) shows how you can use .NET Framework on Windows Docker containers.
+[Introduction to .NET and Docker](../core/docker/intro-net-docker.md) shows how you can use .NET Core on Windows Docker containers.

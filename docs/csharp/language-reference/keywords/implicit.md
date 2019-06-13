@@ -1,5 +1,7 @@
 ---
-title: "implicit (C# Reference)"
+title: "implicit - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "implicit"
@@ -24,9 +26,9 @@ By eliminating unnecessary casts, implicit conversions can improve source code r
 
 ## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [explicit](explicit.md)  
-- [operator (C# Reference)](operator.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [explicit](explicit.md)
+- [operator (C# Reference)](operator.md)
 - [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)

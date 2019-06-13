@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: e9ca2723-0107-4540-bb21-4f5ffb4a9906
 ---
 # Overriding the OnPaint Method
-The basic steps for overriding any event defined in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] are identical and are summarized in the following list.  
+The basic steps for overriding any event defined in the .NET Framework are identical and are summarized in the following list.  
   
 #### To override an inherited event  
   
-1.  Override the protected `On`*EventName* method.  
+1. Override the protected `On`*EventName* method.  
   
-2.  Call the `On`*EventName* method of the base class from the overridden `On`*EventName* method, so that registered delegates receive the event.  
+2. Call the `On`*EventName* method of the base class from the overridden `On`*EventName* method, so that registered delegates receive the event.  
   
  The <xref:System.Windows.Forms.Control.Paint> event is discussed in detail here because every Windows Forms control must override the <xref:System.Windows.Forms.Control.Paint> event that it inherits from <xref:System.Windows.Forms.Control>. The base <xref:System.Windows.Forms.Control> class does not know how a derived control needs to be drawn and does not provide any painting logic in the <xref:System.Windows.Forms.Control.OnPaint%2A> method. The <xref:System.Windows.Forms.Control.OnPaint%2A> method of <xref:System.Windows.Forms.Control> simply dispatches the <xref:System.Windows.Forms.Control.Paint> event to registered event receivers.  
   
- If you worked through the sample in [How to: Develop a Simple Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md), you have seen an example of overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. The following code fragment is taken from that sample.  
+ If you worked through the sample in [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md), you have seen an example of overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. The following code fragment is taken from that sample.  
   
 ```vb  
 Public Class FirstControl  
@@ -80,7 +80,8 @@ public class PaintEventArgs : EventArgs {
   
  A control invokes its <xref:System.Windows.Forms.Control.OnPaint%2A> method whenever it needs to change its visual display. This method in turn raises the <xref:System.Windows.Forms.Control.Paint> event.  
   
-## See Also  
- [Events](../../../../docs/standard/events/index.md)  
- [Rendering a Windows Forms Control](../../../../docs/framework/winforms/controls/rendering-a-windows-forms-control.md)  
- [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)
+## See also
+
+- [Events](../../../standard/events/index.md)
+- [Rendering a Windows Forms Control](rendering-a-windows-forms-control.md)
+- [Defining an Event](defining-an-event-in-windows-forms-controls.md)

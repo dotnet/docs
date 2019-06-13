@@ -45,16 +45,16 @@ This option provides a convenient way to report a C# internal compiler error to 
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1. Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Click the **Advanced** button.  
+3. Click the **Advanced** button.  
   
-4.  Modify the **Internal Compiler Error Reporting** property.  
+4. Modify the **Internal Compiler Error Reporting** property.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.ErrorReport%2A>.  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

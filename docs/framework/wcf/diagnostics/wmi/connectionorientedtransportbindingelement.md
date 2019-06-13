@@ -8,7 +8,7 @@ ConnectionOrientedTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class ConnectionOrientedTransportBindingElement : TransportBindingElement  
 {  
   datetime ChannelInitializationTimeout;  
@@ -90,5 +90,6 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>

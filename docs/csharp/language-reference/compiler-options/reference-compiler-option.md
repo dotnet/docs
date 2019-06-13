@@ -42,9 +42,9 @@ The **-reference** option causes the compiler to import [public](../../../csharp
   
  If you reference an assembly (Assembly A) that references another assembly (Assembly B), you will need to reference Assembly B if:  
   
--   A type you use from Assembly A inherits from a type or implements an interface from Assembly B.  
+- A type you use from Assembly A inherits from a type or implements an interface from Assembly B.  
   
--   You invoke a field, property, event, or method that has a return type or parameter type from Assembly B.  
+- You invoke a field, property, event, or method that has a return type or parameter type from Assembly B.  
   
  Use [-lib](../../../csharp/language-reference/compiler-options/lib-compiler-option.md) to specify the directory in which one or more of your assembly references is located. The **-lib** topic also discusses the directories in which the compiler searches for assemblies.  
   
@@ -60,11 +60,13 @@ The **-reference** option causes the compiler to import [public](../../../csharp
 ## Example  
  This example shows how to use the [extern alias](../../../csharp/language-reference/keywords/extern-alias.md) feature.  
   
- You compile the source file and import metadata from `grid.dll` and `grid20.dll`,which have been compiled previously. The two DLLs contain separate versions of the same component, and you use two **-reference** with alias options to compile the source file. The options look like this:  
+ You compile the source file and import metadata from `grid.dll` and `grid20.dll`, which have been compiled previously. The two DLLs contain separate versions of the same component, and you use two **-reference** with alias options to compile the source file. The options look like this:  
+
+```console
+-reference:GridV1=grid.dll -reference:GridV2=grid20.dll  
+```
   
- -reference:GridV1=grid.dll and -reference:GridV2=grid20.dll  
-  
- This sets up the external aliases "GridV1" and "GridV2," which you use in your program by means of an extern statement:  
+ This sets up the external aliases `GridV1` and `GridV2`, which you use in your program by means of an `extern` statement:  
   
 ```csharp  
 extern alias GridV1;  
@@ -72,19 +74,19 @@ extern alias GridV2;
 // Using statements go here.  
 ```  
   
- Once this is done, you can refer to the grid control from grid.dll by prefixing the control name with GridV1, like this:  
+ Once this is done, you can refer to the grid control from `grid.dll` by prefixing the control name with `GridV1`, like this:  
   
 ```csharp  
 GridV1::Grid  
 ```  
   
- In addition, you can refer to the grid control from grid20.dll by prefixing the control name with GridV2 like this:  
+ In addition, you can refer to the grid control from `grid20.dll` by prefixing the control name with `GridV2` like this:  
   
 ```csharp  
 GridV2::Grid   
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

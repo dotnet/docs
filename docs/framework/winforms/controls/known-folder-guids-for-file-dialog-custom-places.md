@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
 ---
 # Known Folder GUIDs for File Dialog Custom Places
-You use a <xref:System.Guid> to specify a [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] Known Folder when you add folders to a <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection. Known Folder GUIDs are not case sensitive and are defined in the KnownFolders.h file in the [!INCLUDE[winSDK](../../../../includes/winsdk-md.md)].  
+You use a <xref:System.Guid> to specify a [!INCLUDE[wiprlhext](../../../../includes/wiprlhext-md.md)] Known Folder when you add folders to a <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection. Known Folder GUIDs are not case sensitive and are defined in the KnownFolders.h file in the Windows SDK.  
   
 > [!NOTE]
 >  In some cases, a Known Folder added to the <xref:System.Windows.Forms.FileDialogCustomPlacesCollection> will not be shown in the **Favorite Links** area. For example, if the specified Known Folder is not present on the computer that is running the application, the Known Folder is not shown.  
@@ -280,6 +280,7 @@ You use a <xref:System.Guid> to specify a [!INCLUDE[wiprlhext](../../../../inclu
  Windows  
  F38BF404-1D43-42F2-9305-67DE0B28FC23  
   
-## See Also  
- <xref:System.Windows.Forms.FileDialogCustomPlace>  
- [How To: Add a Custom Place to a File Dialog Box](../../../../docs/framework/winforms/controls/how-to-add-a-custom-place-to-a-file-dialog-box.md)
+## See also
+
+- <xref:System.Windows.Forms.FileDialogCustomPlace>
+- [How To: Add a Custom Place to a File Dialog Box](how-to-add-a-custom-place-to-a-file-dialog-box.md)

@@ -41,9 +41,9 @@ SOAP faults convey error condition information from a service to a client and in
 ## Handling Faults  
  In WCF clients, SOAP faults that occur during communication that are of interest to client applications are raised as managed exceptions. While there are many exceptions that can occur during the execution of any program, applications using the WCF client programming model can expect to handle exceptions of the following two types as a result of communication.  
   
--   <xref:System.TimeoutException>  
+- <xref:System.TimeoutException>  
   
--   <xref:System.ServiceModel.CommunicationException>  
+- <xref:System.ServiceModel.CommunicationException>  
   
  <xref:System.TimeoutException> objects are thrown when an operation exceeds the specified timeout period.  
   
@@ -75,13 +75,13 @@ SOAP faults convey error condition information from a service to a client and in
   
  Typically, client object channels are closed in one of the following ways:  
   
--   When the WCF client object is recycled.  
+- When the WCF client object is recycled.  
   
--   When the client application calls <xref:System.ServiceModel.ClientBase%601.Close%2A?displayProperty=nameWithType>.  
+- When the client application calls <xref:System.ServiceModel.ClientBase%601.Close%2A?displayProperty=nameWithType>.  
   
--   When the client application calls <xref:System.ServiceModel.ICommunicationObject.Close%2A?displayProperty=nameWithType>.  
+- When the client application calls <xref:System.ServiceModel.ICommunicationObject.Close%2A?displayProperty=nameWithType>.  
   
--   When the client application calls an operation that is a terminating operation for a session.  
+- When the client application calls an operation that is a terminating operation for a session.  
   
  In all cases, closing the channel instructs the channel to begin closing any underlying channels that may be sending messages to support complex functionality at the application level. For example, when a contract requires sessions a binding attempts to establish a session by exchanging messages with the service channel until a session is established. When the channel is closed, the underlying session channel notifies the service that the session is terminated. In this case, if the channel has already aborted, closed, or is otherwise unusable (for example, when a network cable is unplugged), the client channel cannot inform the service channel that the session is terminated and an exception can result.  
   
@@ -93,14 +93,15 @@ SOAP faults convey error condition information from a service to a client and in
  The following code example shows how to handle SOAP fault exceptions in a basic client application, including a declared fault and an undeclared fault.  
   
 > [!NOTE]
->  This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md) and [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+>  This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md) and [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
  [!code-csharp[FaultContractAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
  [!code-vb[FaultContractAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
   
-## See Also  
- <xref:System.ServiceModel.FaultException>  
- <xref:System.ServiceModel.FaultException%601>  
- <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>  
- [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md)  
- [Avoiding Problems with the Using Statement](../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)
+## See also
+
+- <xref:System.ServiceModel.FaultException>
+- <xref:System.ServiceModel.FaultException%601>
+- <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>
+- [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md)
+- [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)

@@ -1,8 +1,6 @@
 ---
 title: Conclusions
 description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | conclusions
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 10/26/2017
 ---
 # Conclusions
@@ -11,7 +9,7 @@ ms.date: 10/26/2017
 
 - A Docker container is becoming the standard unit of deployment for any server-based application or service.
 
-- For production environments, you should use an orchestrator (like Service Fabric or Kubernetes) to host scalable Windows Containers­­–based applications.
+- For production environments, you should use an orchestrator (like Kubernetes) to host scalable containers­­–based applications.
 
 - Azure VMs hosting containers are a fast and simple way to create small Dev/Test environments in the cloud.
 
@@ -19,9 +17,9 @@ ms.date: 10/26/2017
 
 - Visual Studio 2017 and Image2Docker are basic tools for you to start modernizing your existing .NET applications with Windows Containers by accelerating the getting started learning curve.
 
-- When placing containerized applications in production you will always create or adopt a DevOps culture and DevOps tools for CI/CD pipelines, like Visual Studio Team Services or Jenkins.
+- When placing containerized applications in production you will always create or adopt a DevOps culture and DevOps tools for CI/CD pipelines, like Azure DevOps Services or Jenkins.
 
 - Microsoft Azure provides the most comprehensive and complete environment to modernize your existing .NET Framework applications with Windows Containers, cloud infrastructure and PaaS services.
 
 >[!div class="step-by-step"]
-[Previous](walkthroughs-technical-get-started-overview.md)
+>[Previous](walkthroughs-technical-get-started-overview.md)

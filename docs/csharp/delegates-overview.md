@@ -7,8 +7,6 @@ ms.assetid: 59b61d77-84e5-457b-8da5-fb5f24ca6ed6
 
 # Introduction to Delegates
 
-[Previous](delegates-events.md)
-
 Delegates provide a *late binding* mechanism in .NET. Late Binding
 means that you create an algorithm where the caller also supplies
 at least one method that implements part of the algorithm.
@@ -39,16 +37,16 @@ any late binding algorithms. That enables developers to learn one
 concept, and use that same concept across many different software
 problems.
 
-Second, the team wanted to support both single and multi-cast method
-calls. (Multicast delegates are delegates where multiple methods have
-been chained together. You'll see examples
-[later in this series](delegate-class.md). 
+Second, the team wanted to support both single and multicast method
+calls. (Multicast delegates are delegates that chain together multiple method calls. 
+You'll see examples
+[later in this series](delegate-class.md).) 
 
 The team wanted delegates to support the same type safety that developers
 expect from all C# constructs. 
 
 Finally, the team recognized that an event pattern is one specific pattern
-where delegates, or any late binding algorithm) is very useful. The team
+where delegates, or any late binding algorithm, is very useful. The team
 wanted to ensure that the code for delegates could provide the basis for
 the .NET event pattern.
 

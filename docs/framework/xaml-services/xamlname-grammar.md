@@ -49,7 +49,7 @@ Nl
 Number, Letter  
 ```  
   
- XAML defines a second grammar, DottedXamlName, that is used for property and event qualified references, and also for attached members. For more information, see <xref:System.Windows.DependencyProperty> and [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ XAML defines a second grammar, DottedXamlName, that is used for property and event qualified references, and also for attached members. For more information, see <xref:System.Windows.DependencyProperty> and [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md).  
   
  String values that are of type DottedXamlName must conform to the following grammar:  
   
@@ -58,4 +58,4 @@ DottedXamlName ::= XamlName '.' XamlName
 ```  
   
 ## Remarks  
- For the complete specification, see [\[MS-XAML\]](http://go.microsoft.com/fwlink/?LinkId=114525).
+ For the complete specification, see [\[MS-XAML\]](https://go.microsoft.com/fwlink/?LinkId=114525).

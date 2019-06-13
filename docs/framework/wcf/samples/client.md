@@ -22,7 +22,7 @@ This section contains samples that demonstrate Windows Communication Foundation 
  [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)  
  Demonstrates how to implement a client that dynamically retrieves metadata from a service to choose an endpoint with which to communicate.  
   
- [Avoiding Problems with the Using Statement](../../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md)  
+ [Use Close and Abort to release WCF client resources](../../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)  
  Demonstrates how you should not use the C# "using" statement to automatically clean up resources when using a typed client.  
   
  [Typed Client](../../../../docs/framework/wcf/samples/typed-client.md)  

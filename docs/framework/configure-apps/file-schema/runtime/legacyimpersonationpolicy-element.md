@@ -1,5 +1,5 @@
 ---
-title: "&lt;legacyImpersonationPolicy&gt; Element"
+title: "<legacyImpersonationPolicy> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#legacyImpersonationPolicy"
@@ -11,7 +11,7 @@ ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;legacyImpersonationPolicy&gt; Element
+# \<legacyImpersonationPolicy> Element
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
   
  \<configuration>  
@@ -61,11 +61,11 @@ Specifies that the Windows identity does not flow across asynchronous points, re
   
  You can alter this default behavior in two other ways:  
   
-1.  In managed code on a per-thread basis.  
+1. In managed code on a per-thread basis.  
   
      You can suppress the flow on a per-thread basis by modifying the <xref:System.Threading.ExecutionContext> and <xref:System.Security.SecurityContext> settings by using the <xref:System.Threading.ExecutionContext.SuppressFlow%2A?displayProperty=nameWithType>, <xref:System.Security.SecurityContext.SuppressFlowWindowsIdentity%2A?displayProperty=nameWithType> or <xref:System.Security.SecurityContext.SuppressFlow%2A?displayProperty=nameWithType> method.  
   
-2.  In the call to the unmanaged hosting interface to load the common language runtime (CLR).  
+2. In the call to the unmanaged hosting interface to load the common language runtime (CLR).  
   
      If an unmanaged hosting interface (instead of a simple managed executable) is used to load the CLR, you can specify a special flag in the call to the [CorBindToRuntimeEx Function](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) function. To enable the compatibility mode for the entire process, set the `flags` parameter for [CorBindToRuntimeEx Function](../../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) to STARTUP_LEGACY_IMPERSONATION.  
   
@@ -109,7 +109,8 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<alwaysFlowImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/alwaysflowimpersonationpolicy-element.md)
+## See also
+
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<alwaysFlowImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/alwaysflowimpersonationpolicy-element.md)

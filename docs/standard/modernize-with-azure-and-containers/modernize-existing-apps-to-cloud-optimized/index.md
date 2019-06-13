@@ -1,8 +1,6 @@
 ---
 title: Modernize existing .NET apps to Cloud-Optimized applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers.
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/28/2018
 ---
 # Modernize existing .NET apps to Cloud-Optimized applications
@@ -18,5 +16,5 @@ Partially modernizing an app doesn’t necessarily mean a full migration and rea
 > **Figure 4-1.** Positioning Cloud-Optimized applications
 
 >[!div class="step-by-step"]
-[Previous](../migrate-your-relational-databases-to-azure.md)
-[Next](reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications.md)
+>[Previous](../migrate-your-relational-databases-to-azure.md)
+>[Next](reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications.md)

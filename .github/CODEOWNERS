@@ -31,14 +31,15 @@
 /docs/fsharp/** @cartermp
 
 # The Visual Basic Guide:
-/docs/visual-basic/** @rpetrusha
+/docs/visual-basic/** @KathleenDollard
 
 # The ML.NET Guide:
 /docs/machine-learning/** @JRAlexander
 
+# The .NET for Apache Spark Guide:
+/docs/spark/** @mamccrea
+
 ############### .NET Core ########################
-# Docker
-/docs/core/docker/** @JRAlexander
 # What's New
 /docs/core/whats-new/** @rpetrusha
 # Deployment
@@ -54,7 +55,14 @@
 # What's New
 /docs/framework/whats-new/** @rpetrusha
 # ADO.NET
-/docs/framework/data/adonet/** @douglaslMS
+/docs/framework/data/adonet/** @stevestein
+# NCL
+/docs/framework/configure-apps/file-schema/network/** @karelz
+/docs/framework/network-programming/** @karelz
+# WCF
+/docs/framework/configure-apps/file-schema/wcf/** @HongGit
+/docs/framework/data/wcf/** @HongGit
+/docs/framework/wcf/** @HongGit
 
 ################## .NET STANDARD ##################
 # Analyzers:
@@ -65,3 +73,12 @@
 /docs/standard/io/** @mairaw
 # .NET base types - Formatting
 /docs/standard/base-types/formatting-types/** @rpetrusha
+# .NET threading
+/docs/standard/threading/** @rpetrusha
+
+################## .NET E-BOOKS ##################
+/docs/standard/containerized-lifecycle-architecture/** @nishanil
+/docs/standard/microservices-architecture/** @nishanil
+/docs/standard/modern-web-apps-azure-architecture/** @nishanil
+/docs/standard/modernize-with-azure-and-containers/** @nishanil
+/docs/standard/serverless-architecture/** @nishanil

@@ -29,7 +29,7 @@ HRESULT SetInterceptMask (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mask`  
  [in] A combination of values of the CorDebugIntercept enumeration that specifies the types of code.  
   

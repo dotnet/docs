@@ -13,7 +13,7 @@ You store a value in a variable by putting the variable name on the left side of
   
 #### To store a value in a variable  
   
--   Use the variable name on the left side of an assignment statement.  
+- Use the variable name on the left side of an assignment statement.  
   
      The following example sets the value of the variable `alpha`.  
   
@@ -28,11 +28,11 @@ You store a value in a variable by putting the variable name on the left side of
   
 #### To retrieve a value from a variable  
   
--   Use the variable name in an expression. You can use a variable anywhere you can use a constant or a literal, except in an expression that defines the value of a constant.  
+- Use the variable name in an expression. You can use a variable anywhere you can use a constant or a literal, except in an expression that defines the value of a constant.  
   
      -or-  
   
--   Use the variable name following the equal (`=`) sign in an assignment statement.  
+- Use the variable name following the equal (`=`) sign in an assignment statement.  
   
      The following example reads the value of the variable `startValue` and then uses the value of the variable `counter` in an expression.  
   
@@ -43,7 +43,8 @@ You store a value in a variable by putting the variable name on the left side of
   
      The value of the variable participates in the expression just as a constant would, and then it is stored in the variable or property on the left side of the assignment statement.  
   
-## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+## See also
+
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)

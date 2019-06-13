@@ -1,5 +1,5 @@
 ---
-title: "&lt;UseRandomizedStringHashAlgorithm&gt; Element"
+title: "<UseRandomizedStringHashAlgorithm> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;UseRandomizedStringHashAlgorithm&gt; Element
+# \<UseRandomizedStringHashAlgorithm> Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
   
  \<configuration>  
@@ -52,7 +52,7 @@ Determines whether the common language runtime calculates hash codes for strings
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- By default, the <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method use a single hashing algorithm that produces a consistent hash code across application domains. This is equivalent to setting the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `0`. This is the hashing algorithm used in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)].  
+ By default, the <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method use a single hashing algorithm that produces a consistent hash code across application domains. This is equivalent to setting the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `0`. This is the hashing algorithm used in the .NET Framework 4.  
   
  The <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method can also use a different hashing algorithm that computes hash codes on a per application domain basis. As a result, hash codes for equivalent strings will differ across application domains. This is an opt-in feature; to take advantage of it, you must set the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `1`.  
   
@@ -89,7 +89,8 @@ String 'This is a string.' in domain 'PerDomain.exe': 5435776D
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
 ```  
   
-## See Also  
- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>  
- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>
+## See also
+
+- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>

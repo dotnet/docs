@@ -1,5 +1,7 @@
 ---
-title: "private protected (C# Reference)"
+title: "private protected - C# Reference"
+ms.custom: seodec18
+
 ms.date: 11/15/2017
 author: "sputier"
 ---

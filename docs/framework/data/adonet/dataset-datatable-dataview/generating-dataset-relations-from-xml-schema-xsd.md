@@ -6,11 +6,11 @@ ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
 # Generating DataSet Relations from XML Schema (XSD)
 In a <xref:System.Data.DataSet>, you form an association between two or more columns by creating a parent-child relation. There are three ways to represent a **DataSet** relation within an XML Schema definition language (XSD) schema:  
   
--   Specify nested complex types.  
+- Specify nested complex types.  
   
--   Use the **msdata:Relationship** annotation.  
+- Use the **msdata:Relationship** annotation.  
   
--   Specify an **xs:keyref** without the **msdata:ConstraintOnly** annotation.  
+- Specify an **xs:keyref** without the **msdata:ConstraintOnly** annotation.  
   
 ## Nested Complex Types  
  Nested complex type definitions in a schema indicate the parent-child relationships of the elements. The following XML Schema fragment shows that **OrderDetail** is a child element of the **Order** element.  
@@ -91,5 +91,6 @@ msdata:childkey="" />
  [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a **DataSet**.  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

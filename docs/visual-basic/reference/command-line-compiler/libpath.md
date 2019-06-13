@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "/libpath compiler option [Visual Basic]"
   - "-libpath compiler option [Visual Basic]"
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
-author: rpetrusha
-ms.author: ronpet
 ---
 # -libpath
 Specifies the location of referenced assemblies.  
@@ -29,13 +27,13 @@ Specifies the location of referenced assemblies.
   
  The compiler searches for assembly references that are not fully qualified in the following order:  
   
-1.  Current working directory. This is the directory from which the compiler is invoked.  
+1. Current working directory. This is the directory from which the compiler is invoked.  
   
-2.  The common language runtime system directory.  
+2. The common language runtime system directory.  
   
-3.  Directories specified by `/libpath`.  
+3. Directories specified by `/libpath`.  
   
-4.  Directories specified by the LIB environment variable.  
+4. Directories specified by the LIB environment variable.  
   
  The `-libpath` option is additive; specifying it more than once appends to any prior values.  
   
@@ -52,7 +50,8 @@ Specifies the location of referenced assemblies.
 vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb  
 ```  
   
-## See Also  
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Assemblies in .NET](../../../standard/assembly/index.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

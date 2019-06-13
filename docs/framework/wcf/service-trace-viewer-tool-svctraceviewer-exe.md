@@ -44,23 +44,29 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 |ActivityTracing|Flow events between processing activities and components.<br /><br /> This level allows administrators and developers to correlate applications in the same application domain.<br /><br /> -   Traces for activity boundaries: start/stop.<br />-   Traces for transfers.|  
   
  You can use `add` to specify the name and type of the trace listener you want to use. In the example configuration, the Listener is named `sdt` and the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) is added as the type. Use `initializeData` to set the name of the log file for that Listener. In addition, you can substitute a fully-qualified path for a simple file name.  
-  
+
+Starting in .NET Framework 4.8, ComboBox controls in some high contrast themes are displayed in the correct color. You can disable this change by removing the following setting from the *svcTraceViewer.exe.config* file:
+
+```xml
+<AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false" />
+```
+
 ## Using the Service Trace Viewer Tool  
   
 ### Opening and Viewing WCF Trace Files  
  The Service Trace Viewer supports three file types:  
   
--   WCF Tracing File (.svcLog)  
+- WCF Tracing File (.svcLog)  
   
--   Event Tracing File (.etl)  
+- Event Tracing File (.etl)  
   
--   Crimson Tracing File  
+- Crimson Tracing File  
   
  Service Trace Viewer enables you to open any supported trace file, add and integrate additional trace files, or open and merge a group of trace files simultaneously.  
   
 ##### To open a trace file  
   
-1.  Start Service Trace Viewer by using a command window to navigate to your WCF installation location (C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin), and then type `SvcTraceViewer.exe`.  
+1. Start Service Trace Viewer by using a command window to navigate to your WCF installation location (C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin), and then type `SvcTraceViewer.exe`.  
   
 > [!NOTE]
 >  The Service Trace Viewer tool can associate with two file types: .svclog and .stvproj. You can use two parameters in command line to register and unregister the file extensions.  
@@ -69,14 +75,14 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 >   
 >  /unregister: unregister the association of file extensions ".svclog" and ".stvproj" with SvcTraceViewer.exe  
   
-1.  When Service Trace Viewer starts, click **File** and then point to **Open**. Navigate to the location where your trace files are stored.  
+1. When Service Trace Viewer starts, click **File** and then point to **Open**. Navigate to the location where your trace files are stored.  
   
-2.  Double-click the trace file that you want to open.  
+2. Double-click the trace file that you want to open.  
   
     > [!NOTE]
     >  Press SHIFT while clicking multiple trace files to select and open them simultaneously. Service Trace Viewer merges the content of all files and presents one view. For example, you can open trace files of both client and service. This is useful when you have enabled message logging and activity propagation in configuration. In this way, you can examine message exchange between client and service. You can also drag multiple files into the viewer, or use the **Project** tab. See the Managing Project section for more details.  
   
-3.  To add additional trace files to the collection that is open, click **File** and then point to **Add**. In the window that opens, navigate to the location of the trace files and double-click the file you want to add.  
+3. To add additional trace files to the collection that is open, click **File** and then point to **Add**. In the window that opens, navigate to the location of the trace files and double-click the file you want to add.  
   
 > [!CAUTION]
 >  It is not recommended that you load a trace log file bigger than 200MB. If you attempt to load a file larger than this limit, the loading process may take a long time, depending on your computer resource. The Service Trace Viewer tool may not be responsive for a long time, or it may exhaust your machine's memory. It is recommended that you configure partial loading to avoid this. For more information on how to do this, see "Loading Large Trace Files" section.  
@@ -94,9 +100,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
  There are two ways to manage projects:  
   
--   In the **File** menu, you can open, save and close projects.  
+- In the **File** menu, you can open, save and close projects.  
   
--   In the **Project** tab, you can add files to a project.  
+- In the **Project** tab, you can add files to a project.  
   
 ### Viewing WCF Traces  
  WCF emits traces using the activity tracing format. In the activity tracing model, individual traces are grouped in activities according to their purpose. Logical control flow is transferred between activities. For example, during the lifetime of an application, many "message send activities" appear and disappear. For more information on viewing traces and activities, and the user interface of the Service Trace Viewer too, see [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
@@ -104,13 +110,13 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 #### Switching to Different Views  
  The Service Trace Viewer provides the following different views. They are displayed as tabs on the left pane of the Viewer, and can also be accessed from the **View** menu.  
   
--   Activity View  
+- Activity View  
   
--   Project View  
+- Project View  
   
--   Message View  
+- Message View  
   
--   Graph View  
+- Graph View  
   
 ##### Activity view  
  Once the trace files are opened, you can see the traces grouped into activities and displayed in the **Activity** view in the left-hand pane.  
@@ -132,9 +138,12 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
 ##### Project View  
  This view enables you to manage trace files in the current project. See the Managing Project section for more details.  
-  
+
+##### Message View
+ This view enables you to view all message log traces, including Action, Date/Time, Process, Acivity and From/To, and navigate to the details of the associated message log trace. You can group the message log traces by Activity Boundary, Process/Thread, or Send & Receive for easier navigation of the message flow.
+ 
 ##### Graph View  
- One of the most powerful features of Service Trace Viewer is the **Graph** view, which displays the trace data for a given activity in chart form. The chart form enables you to see the stepwise execution of events and the interrelationships between multiple activities as data moves between them.  
+ This view displays the trace data for a given activity in chart form. The chart form enables you to see the stepwise execution of events and the interrelationships between multiple activities as data moves between them.  
   
  To switch to **Graph** view, select an activity in the **Activity** view and click the **Activity** tab, or a message log trace in the **Message** View. If multiple trace files are loaded and the activity involves traces from more than one file, all of the relevant traces appear in the graph view. Double-clicking on the activities and message log traces also leads you to the **Graph** view.  
   
@@ -142,24 +151,24 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
 ###### Selecting Traces in the Graph  
   
-1.  Click a block in the graph.  
+1. Click a block in the graph.  
   
-2.  Use the up and down keys to select its neighboring traces.  
+2. Use the up and down keys to select its neighboring traces.  
   
-3.  Observe the trace information in the Trace Pane and Detail Pane.  
+3. Observe the trace information in the Trace Pane and Detail Pane.  
   
 ###### Expanding or Collapsing Activity Transfers  
  You can expand activity transfers when the activity in selection transfers out to another activity. It enables you to follow the transfers.  
   
  To expand or collapse activity transfers,  
   
-1.  Locate the transfer trace with a "+" sign on the left of the transfer icon.  
+1. Locate the transfer trace with a "+" sign on the left of the transfer icon.  
   
-2.  Click the "+", or press **Ctrl** and "+" using the keyboard.  
+2. Click the "+", or press **Ctrl** and "+" using the keyboard.  
   
-3.  The next activity appears in the graph.  
+3. The next activity appears in the graph.  
   
-4.  A "-" appears on the left of the transfer icon. Click the "-" sign or press Ctrl and "-", the activity transfer collapses.  
+4. A "-" appears on the left of the transfer icon. Click the "-" sign or press Ctrl and "-", the activity transfer collapses.  
   
 > [!NOTE]
 >  When an activity has multiple transfers into it and you expand one of the transfers, activities that lead up to the new activity from the root activity are displayed. These new activities appear in collapsed form. If you want to see the details of these activities, expand them vertically by clicking the expand icon in the header of the graph.  
@@ -169,20 +178,20 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
  To expand or collapse activities vertically,  
   
-1.  Click the "+" icon in the activity header to expand the activity vertically.  
+1. Click the "+" icon in the activity header to expand the activity vertically.  
   
-2.  Notice that all traces are displayed in the graph.  
+2. Notice that all traces are displayed in the graph.  
   
-3.  Click the "-" icon in the activity header to collapse the activity vertically.  
+3. Click the "-" icon in the activity header to collapse the activity vertically.  
   
-4.  Notice that only important transfers, message logs, warning and exception traces are shown in the activity.  
+4. Notice that only important transfers, message logs, warning and exception traces are shown in the activity.  
   
 ###### Options  
  You can select two options from the **Option** menu in Graph view.  
   
--   Show Activity Boundary Traces, which when unchecked ignore the activity boundary traces in the graph.  
+- Show Activity Boundary Traces, which when unchecked ignore the activity boundary traces in the graph.  
   
--   Show Non-message Verbose Traces, which when unchecked ignore verbose level traces, except for message traces. In most cases, verbose level traces are less important for analysis. This option is helpful when you do not want to analyze verbose level traces and only want to focus on more important traces.  
+- Show Non-message Verbose Traces, which when unchecked ignore verbose level traces, except for message traces. In most cases, verbose level traces are less important for analysis. This option is helpful when you do not want to analyze verbose level traces and only want to focus on more important traces.  
   
 ###### Layout Mode  
  The viewer has two Layout Modes: **Process** and **Thread**. This setting defines the largest unit of organization. The default Layout Mode is **Process**, which means that activities are grouped by processes in the graph.  
@@ -210,22 +219,22 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 ### Filtering WCF Traces  
  To make the analysis of trace easier, you can filter them in the following ways:  
   
--   The filter toolbar provides access to pre-defined and custom filters. It can be enabled through the **View** menu.  
+- The filter toolbar provides access to pre-defined and custom filters. It can be enabled through the **View** menu.  
   
--   The pre-defined filter of the viewer can be used to selectively filter parts of the WCF traces. By default, it is set to allow all infrastructure traces to pass through. The settings of this filter are defined in the **Filter Options** sub-menu under **View** menu.  
+- The pre-defined filter of the viewer can be used to selectively filter parts of the WCF traces. By default, it is set to allow all infrastructure traces to pass through. The settings of this filter are defined in the **Filter Options** sub-menu under **View** menu.  
   
--   Custom XPath filters give users full control over filtering. They can be defined in the **Custom Filter** under **View** menu.  
+- Custom XPath filters give users full control over filtering. They can be defined in the **Custom Filter** under **View** menu.  
   
  Only traces that passes through all filters is displayed.  
   
 #### Using the Filter Toolbar  
  The filter toolbar appears across the top of the tool. If it is not present, you can activate it in the **View** menu. The bar has three components:  
   
--   Look for: **Look for** defines the subject to look for in the filter operation. For example, if you want to find all traces that were emitted in the context of process X, set this field to X and the **Search In** field to ‘Process Name’. This field changes to a DateTime selector control when a time-based filter is selected.  
+- Look for: **Look for** defines the subject to look for in the filter operation. For example, if you want to find all traces that were emitted in the context of process X, set this field to X and the **Search In** field to ‘Process Name’. This field changes to a DateTime selector control when a time-based filter is selected.  
   
--   Search in: This field defines the type of filter to apply.  
+- Search in: This field defines the type of filter to apply.  
   
--   Level: The level setting defines the minimum trace level allowed by the filter. For example, if the level is set to Error and Up, only traces at the Error and critical level are displayed. This filter combines with the criteria specified by Look For and Search In.  
+- Level: The level setting defines the minimum trace level allowed by the filter. For example, if the level is set to Error and Up, only traces at the Error and critical level are displayed. This filter combines with the criteria specified by Look For and Search In.  
   
  The **Filter Now** button starts the filter operation. Some filters, especially when they are applied to a large data set, take a long time to complete. You can cancel the filter operation by pressing the **Stop** button that appears in the status bar under the **Operations** menu.  
   
@@ -247,17 +256,17 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 ###### Creating a Custom Filter using the Template Wizard  
  You can click an existing trace and create a filter based on the structure of the trace. This example creates a custom filter based on thread ID.  
   
-1.  In the trace pane in the top right area of the viewer, select a trace that includes the element you want to filter for.  
+1. In the trace pane in the top right area of the viewer, select a trace that includes the element you want to filter for.  
   
-2.  Click the **Create Custom Filter** button located at the top of the trace pane.  
+2. Click the **Create Custom Filter** button located at the top of the trace pane.  
   
-3.  In the dialog box that appears, enter a name for your filter. In this example, enter `Thread ID`. You can also provide a description of your filter.  
+3. In the dialog box that appears, enter a name for your filter. In this example, enter `Thread ID`. You can also provide a description of your filter.  
   
-4.  The tree view on the left displays the structure of the trace record you selected in step 1. Browse to the element you want to create a condition for. In this example, browse to the ThreadID to be located in the XPath: /E2ETraceEvent/System/Execution/@ThreadID node. Double-click the ThreadID attribute in the tree view. This creates an expression for the attribute on the right of the dialog.  
+4. The tree view on the left displays the structure of the trace record you selected in step 1. Browse to the element you want to create a condition for. In this example, browse to the ThreadID to be located in the XPath: /E2ETraceEvent/System/Execution/@ThreadID node. Double-click the ThreadID attribute in the tree view. This creates an expression for the attribute on the right of the dialog.  
   
-5.  Change the parameter field for the ThreadID condition from None to ‘{0}’. This step enables the ThreadID value to be configured when the filter is applied. (See the How to Apply a Filter section) You can define up to four parameters. Conditions are combined using the OR operator.  
+5. Change the parameter field for the ThreadID condition from None to ‘{0}’. This step enables the ThreadID value to be configured when the filter is applied. (See the How to Apply a Filter section) You can define up to four parameters. Conditions are combined using the OR operator.  
   
-6.  Click **Ok** to create the filter.  
+6. Click **Ok** to create the filter.  
   
 > [!NOTE]
 >  Once a filter has been created using the template wizard, it can only be edited manually. It is not possible to activate the wizard for a filter that has been created previously. In addition, the conditions of an XPath filter created in the template wizard are combined using the OR operator. If you require an AND operation, you can edit the filter expression after it has been created.  
@@ -265,20 +274,20 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 ###### Creating a Custom Filter Manually  
  The Custom Filters menu allows you to enter XPath filters manually.  
   
-1.  In the View menu, click the **Custom Filters** menu item.  
+1. In the View menu, click the **Custom Filters** menu item.  
   
-2.  In the dialog that appears, click **New.**  
+2. In the dialog that appears, click **New.**  
   
-3.  At the minimum, specify a Filter Name and XPath expression.  
+3. At the minimum, specify a Filter Name and XPath expression.  
   
-4.  Click **OK**.  
+4. Click **OK**.  
   
 ###### Applying a Custom Filter  
  Once a custom filter has been created, it is accessible though the filter toolbar. Select the filter you want to apply in the **Search In** field of the filter toolbar. For the previous example, select ‘Thread ID’.  
   
-1.  Specify the value you are looking for in the **Find What** field. In our example, enter the ID of the thread you want to search for.  
+1. Specify the value you are looking for in the **Find What** field. In our example, enter the ID of the thread you want to search for.  
   
-2.  Click **Filter Now**, and observe the result of the operation.  
+2. Click **Filter Now**, and observe the result of the operation.  
   
  If your filter uses multiple parameters, enter them using ‘;’ as a separator in the **Find What** field. For example, the following string defines 3 parameters: ‘1;findValue;text’. The viewer applies ‘1’ to the {0} parameter of the filter. ‘findValue’ and ‘text’ are applied to {1} and {2} respectively.  
   
@@ -287,21 +296,21 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
  To import a custom filter:  
   
-1.  In the **View** menu, click **Custom Filters**.  
+1. In the **View** menu, click **Custom Filters**.  
   
-2.  In the dialog box that opens, click the **Import** button.  
+2. In the dialog box that opens, click the **Import** button.  
   
-3.  Navigate to the custom filter file (.stvcf), click the file, and click the **Open** button.  
+3. Navigate to the custom filter file (.stvcf), click the file, and click the **Open** button.  
   
  To export a custom filter:  
   
-1.  In the View menu, click **Custom Filters**.  
+1. In the View menu, click **Custom Filters**.  
   
-2.  In the dialog box that opens, select the filter you want to export.  
+2. In the dialog box that opens, select the filter you want to export.  
   
-3.  Click the **Export** button.  
+3. Click the **Export** button.  
   
-4.  Specify the name and location of the custom filter definition file (.stvcf), and click the **Save** button.  
+4. Specify the name and location of the custom filter definition file (.stvcf), and click the **Save** button.  
   
 > [!NOTE]
 >  These custom filters can only be imported and exported from Service Trace Viewer. They cannot be read by other tools.  
@@ -309,27 +318,27 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 ### Finding Data  
  The viewer provides the following ways to find data:  
   
--   The Find toolbar provides a quick access to the most common find options.  
+- The Find toolbar provides a quick access to the most common find options.  
   
--   The Find dialog provides more find options. It is accessible through the **Edit** menu, or by the short key Ctrl + F.  
+- The Find dialog provides more find options. It is accessible through the **Edit** menu, or by the short key Ctrl + F.  
   
  The find toolbar appears at the top of the viewer. If it is not present, you can activate it in the **View** menu. The bar has two components:  
   
--   Find What: Allows you to enter search keyword.  
+- Find What: Allows you to enter search keyword.  
   
--   Look In: Allows you to enter the search scope. You can select whether to search in all activities or in the current activity only.  
+- Look In: Allows you to enter the search scope. You can select whether to search in all activities or in the current activity only.  
   
  The find dialog provides two additional options:  
   
--   Find target:  
+- Find target:  
   
-    -   The "Raw log data" option searches the keyword in all raw data.  
+    - The "Raw log data" option searches the keyword in all raw data.  
   
-    -   The "XML Text" and "XML Attribute" options only search in XML elements.  
+    - The "XML Text" and "XML Attribute" options only search in XML elements.  
   
-    -   The "Logged Message" option searches the keyword only in messages.  
+    - The "Logged Message" option searches the keyword only in messages.  
   
--   Ignore root activity: The search ignores the traces in the "000000000000" activity. This improves performance in large trace files when the root activity has thousands of traces, most of which are transfers.  
+- Ignore root activity: The search ignores the traces in the "000000000000" activity. This improves performance in large trace files when the root activity has thousands of traces, most of which are transfers.  
   
 ### Navigating Traces  
  Because traces are recorded step by step during application runtime, navigating traces can help you to debug your application. The Service Trace Viewer provides various ways to navigate in traces.  
@@ -337,9 +346,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 #### Step Forward or Backward  
  If you consider each trace as a line of code in the program, stepping forward is very similar to "Step over" in the Visual Studio Integrated Development Environment (IDE). The difference is that you can also step backward in the traces. Stepping forward means moving to the next trace in the activity.  
   
--   Step Forward: Use the **Activity** menu, or press "F10". You can also use arrow key "down" in the trace pane.  
+- Step Forward: Use the **Activity** menu, or press "F10". You can also use arrow key "down" in the trace pane.  
   
--   Step Backward: Use the **Activity** menu, or press "F9". You can also use arrow key "up" in the trace pane.  
+- Step Backward: Use the **Activity** menu, or press "F9". You can also use arrow key "up" in the trace pane.  
   
 > [!NOTE]
 >  This can take you to an activity occurring in a different process or even on a different computer, because WCF messages can carry activity IDs that span machines.  
@@ -351,9 +360,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
  There are two ways to follow a transfer: by mouse or by keyboard:  
   
--   By Mouse: Double-click the transfer trace in the trace pane.  
+- By Mouse: Double-click the transfer trace in the trace pane.  
   
--   By Keyboard: Select a transfer trace, and use "Follow Transfer" in the **Activity** menu, or press "F11"  
+- By Keyboard: Select a transfer trace, and use "Follow Transfer" in the **Activity** menu, or press "F11"  
   
 > [!NOTE]
 >  In many cases, when Activity A transfers to Activity B, Activity A waits until Activity B transfers back to Activity A. This means that Activity A has no trace logged during the period when Activity B is actively tracing. However, it is also possible that Activity A does not wait, and continues to log traces. It is also possible that Activity B does not transfer back to Activity A. Therefore, activity transfers are still different from function calls in this sense. You can understand activity transfers better in Graph view.  
@@ -361,9 +370,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 #### Jump to Next or Previous Transfer  
  When you are analyzing the current activity, or selected activities when multiple activities are selected, you may want to quickly find the activities it transfers to. "Jump to next transfer" allows you to locate the next transfer trace in the activity. Once you find the transfer trace, you can use "Follow transfer" to step into the next activity.  
   
--   Jump to Next Transfer: Use the **Activity** menu, or press "Ctrl + F10".  
+- Jump to Next Transfer: Use the **Activity** menu, or press "Ctrl + F10".  
   
--   Jump to Previous Transfer: Use the **Activity** menu, or press "Ctrl + F9".  
+- Jump to Previous Transfer: Use the **Activity** menu, or press "Ctrl + F9".  
   
 #### Navigate in Graph View  
  Although navigating in the activity pane and trace pane is similar to debugging, using **Graph** view provides a much better experience in navigation. See "Graph View" section for more information.  
@@ -384,9 +393,9 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
 #### Adjusting Partial Loading  
  After you have partially loaded the trace file, you may want to change the data set being loaded. You can do so by adjusting the Partial Loading toolbar at the top of the viewer.  
   
-1.  Move the toolbar by mouse, or input the Begin and End time.  
+1. Move the toolbar by mouse, or input the Begin and End time.  
   
-2.  Click the **Adjust** button.  
+2. Click the **Adjust** button.  
   
 ## Understanding Trace Icons  
  The following is a list of icons that the Service Trace Viewer tool uses in the **Activity** view, **Graph** view and **Trace** pane to represent different items.  
@@ -443,7 +452,8 @@ Windows Communication Foundation (WCF) Service Trace Viewer Tool helps you analy
   
  If you open a trace log created using an Arabic operating system, you may notice that the time filter does not work. For example, year 2005 corresponds to year 1427 in Arabic calendar. However, the time range supported by the Service Trace Viewer tool filter does not support a date earlier than 1752. This can imply that you are not able to select a correct date in the filter. To resolve this problem, you can create a custom filter (**View/Custom Filters**) using an XPath expression to include a specific time range.  
   
-## See Also  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Activity Tracing and Propagation for End-To-End Trace Correlation](http://msdn.microsoft.com/library/2c11a905-64f8-47b5-bae5-a74fc666137e)
+## See also
+
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [End-to-End Tracing](./diagnostics/tracing/end-to-end-tracing.md)

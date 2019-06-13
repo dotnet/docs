@@ -29,64 +29,76 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
 ## Example of Transfers  
  The following lists two transfer examples.  
   
--   When you create a service host, the constructor gains control from the calling code, or the calling code transfers to the constructor. When the constructor has finished executing, it returns control to the calling code, or the constructor transfers back to the calling code. This is the case of a nested relationship.  
+- When you create a service host, the constructor gains control from the calling code, or the calling code transfers to the constructor. When the constructor has finished executing, it returns control to the calling code, or the constructor transfers back to the calling code. This is the case of a nested relationship.  
   
--   When a listener starts processing transport data, it creates a new thread and hands to the Receive Bytes activity the appropriate context for processing, passing control and data. When that thread has finished processing the request, the Receive Bytes activity passes nothing back to the listener. In this case, we have a transfer in but no transfer out of the new thread activity. The two activities are related but not nested.  
+- When a listener starts processing transport data, it creates a new thread and hands to the Receive Bytes activity the appropriate context for processing, passing control and data. When that thread has finished processing the request, the Receive Bytes activity passes nothing back to the listener. In this case, we have a transfer in but no transfer out of the new thread activity. The two activities are related but not nested.  
   
 ## Activity Transfer Sequence  
  A well-formed activity transfer sequence includes the following steps.  
   
-1.  Begin a new activity, which consists of selecting a new gAId.  
+1. Begin a new activity, which consists of selecting a new gAId.  
   
-2.  Emit a transfer trace to that new gAId from the current activity ID  
+2. Emit a transfer trace to that new gAId from the current activity ID  
   
-3.  Set the new ID in TLS  
+3. Set the new ID in TLS  
   
-4.  Emit a start trace to indicate the beginning of the new activity by.  
+4. Emit a start trace to indicate the beginning of the new activity by.  
   
-5.  Return to the original activity consists of the following:  
+5. Return to the original activity consists of the following:  
   
-6.  Emit a transfer trace to the original gAId  
+6. Emit a transfer trace to the original gAId  
   
-7.  Emit a Stop trace to indicate the end of the new activity  
+7. Emit a Stop trace to indicate the end of the new activity  
   
-8.  Set TLS to the old gAId.  
+8. Set TLS to the old gAId.  
   
  The following code example demonstrates how to do this. This sample assumes a blocking call is made when transferring to the new activity, and includes suspend/resume traces.  
   
-```  
+```csharp
 // 0. Create a trace source  
 TraceSource ts = new TraceSource("myTS");  
+
 // 1. remember existing ("ambient") activity for clean up  
 Guid oldGuid = Trace.CorrelationManager.ActivityId;  
 // this will be our new activity  
 Guid newGuid = Guid.NewGuid();   
+
 // 2. call transfer, indicating that we are switching to the new AID  
 ts.TraceTransfer(667, "Transferring.", newGuid);  
+
 // 3. Suspend the current activity.  
 ts.TraceEvent(TraceEventType.Suspend, 667, "Suspend: Activity " + i-1);  
+
 // 4. set the new AID in TLS  
 Trace.CorrelationManager.ActivityId = newGuid;  
+
 // 5. Emit the start trace  
 ts.TraceEvent(TraceEventType.Start, 667, "Boundary: Activity " + i);  
+
 // trace something  
 ts.TraceEvent(TraceEventType.Information, 667, "Hello from activity " + i);  
+
 // Perform Work  
 // some work.  
 // Return  
 ts.TraceEvent(TraceEventType.Information, 667, "Work complete on activity " + i);   
+
 // 6. Emit the transfer returning to the original activity  
 ts.TraceTransfer(667, "Transferring Back.", oldGuid);  
+
 // 7. Emit the End trace  
 ts.TraceEvent(TraceEventType.Stop, 667, "Boundary: Activity " + i);  
+
 // 8. Change the tls variable to the original AID  
 Trace.CorrelationManager.ActivityId = oldGuid;    
+
 // 9. Resume the old activity  
 ts.TraceEvent(TraceEventType.Resume, 667, "Resume: Activity " + i-1);  
 ```  
   
-## See Also  
- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)
+## See also
+
+- [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)
+- [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
+- [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)
+- [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)

@@ -8,17 +8,17 @@ A file is an assembly if and only if it is managed, and contains an assembly ent
   
 ## How to manually determine if a file is an assembly  
   
-1.  Start the [Ildasm.exe (IL Disassembler)](https://msdn.microsoft.com/library/f7dy01k1).  
+1. Start the [Ildasm.exe (IL Disassembler)](../../../../framework/tools/ildasm-exe-il-disassembler.md).  
   
-2.  Load the file you wish to test.  
+2. Load the file you wish to test.  
   
-3.  If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../../../../framework/app-domains/how-to-view-assembly-contents.md).  
+3. If **ILDASM** reports that the file is not a portable executable (PE) file, then it is not an assembly. For more information, see the topic [How to: View Assembly Contents](../../../../framework/app-domains/how-to-view-assembly-contents.md).  
   
 ## How to programmatically determine if a file is an assembly  
   
-1.  Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method, passing the full file path and name of the file you are testing.  
+1. Call the <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method, passing the full file path and name of the file you are testing.  
   
-2.  If a <xref:System.BadImageFormatException> exception is thrown, the file is not an assembly.  
+2. If a <xref:System.BadImageFormatException> exception is thrown, the file is not an assembly.  
   
 ## Example  
  This example tests a DLL to see if it is an assembly.  
@@ -46,7 +46,8 @@ End Module
   
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
-## See Also  
- <xref:System.Reflection.AssemblyName>  
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
- [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)
+## See also
+
+- <xref:System.Reflection.AssemblyName>
+- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+- [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)

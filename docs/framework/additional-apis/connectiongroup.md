@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 25c08217-fdeb-44b9-9cd6-1b4955d6e602
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -25,7 +25,7 @@ internal class ConnectionGroup
 ```
 
 > [!WARNING]
-> The `ConnectionGroup` class is internal and not meant to be used directly in your code.
+> The `ConnectionGroup` class is internal and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this class in a production application under any circumstance.
 

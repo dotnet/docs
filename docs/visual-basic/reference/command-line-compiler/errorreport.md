@@ -1,13 +1,11 @@
 ---
 title: "-errorreport"
 ms.date: 08/14/2018
-helpviewer_keywords:
+helpviewer_keywords: 
   - "-errorreport compiler option [Visual Basic]"
   - "/errorreport compiler option [Visual Basic]"
   - "errorreport compiler option [Visual Basic]"
 ms.assetid: a7fe83a2-a6d8-460c-8dad-79a8f433f501
-author: rpetrusha
-ms.author: ronpet
 ---
 # -errorreport
 

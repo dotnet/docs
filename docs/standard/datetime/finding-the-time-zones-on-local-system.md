@@ -33,7 +33,7 @@ The time zone identifier is a key field that uniquely identifies the time zone. 
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[How to: Access the predefined UTC and local time zone objects](../../../docs/standard/datetime/access-utc-and-local.md)
-[How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md)
-[Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [How to: Access the predefined UTC and local time zone objects](../../../docs/standard/datetime/access-utc-and-local.md)
+- [How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md)
+- [Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md)

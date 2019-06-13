@@ -11,29 +11,28 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables you t
   
 ### To embed model and mapping files  
   
-1.  In **Solution Explorer**, select the conceptual (.csdl) file.  
+1. In **Solution Explorer**, select the conceptual (.csdl) file.  
   
-2.  In the **Properties** pane, set **Build Action** to **Embedded Resource**.  
+2. In the **Properties** pane, set **Build Action** to **Embedded Resource**.  
   
-3.  Repeat steps 1 and 2 for the storage (.ssdl) file and the mapping (.msl) file.  
+3. Repeat steps 1 and 2 for the storage (.ssdl) file and the mapping (.msl) file.  
   
-4.  In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:  
+4. In **Solution Explorer**, double-click the App.config file and then modify the `Metadata` parameter in the `connectionString` attribute based on one of the following formats:  
   
-    -   `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
+    - `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
   
-    -   `Metadata=` `res://*/<resourceName>;`  
+    - `Metadata=` `res://*/<resourceName>;`  
   
-    -   `Metadata=res://*;`  
+    - `Metadata=res://*;`  
   
      For more information, see [Connection Strings](../../../../../docs/framework/data/adonet/ef/connection-strings.md).  
   
 ## Example  
- The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](http://msdn.microsoft.com/library/f16cd988-673f-4376-b034-129ca93c7832). This connection string is stored in the project's App.config file.  
-  
-  
-  
-## See Also  
- [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)  
- [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)  
- [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+ The following connection string references embedded model and mapping files for the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). This connection string is stored in the project's App.config file.  
+
+## See also
+
+- [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)
+- [How to: Define the Connection String](../../../../../docs/framework/data/adonet/ef/how-to-define-the-connection-string.md)
+- [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)
+- [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))

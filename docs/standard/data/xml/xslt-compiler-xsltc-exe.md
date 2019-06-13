@@ -43,7 +43,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 > [!NOTE]
 >  You must also include the compiled assembly as a reference in your application.  
   
- The xsltc.exe tool does not validate the class (`/class:``name`) or assembly (`/out:``assemblyName`) names. Errors are thrown by the common language runtime if the names are not valid.  
+ The xsltc.exe tool does not validate the class (`/class:`*name*) or assembly (`/out:`*assemblyName*) names. Errors are thrown by the common language runtime if the names are not valid.  
   
 ## Examples  
  The following command compiles the style sheet and creates an assembly named booksort.dll.  
@@ -76,7 +76,8 @@ xsltc /settings:DTD+,script+ /out:myTest calc.xsl
 xsltc booksort.xsl output.xsl  
 ```  
   
-## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>
+- [How to: Perform an XSLT Transformation by Using an Assembly](../../../../docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md)
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

@@ -14,11 +14,11 @@ After you create a service, the next step is to create a WCF client proxy. A cli
 
  The basic steps for creating a WCF client include the following:
 
-1.  Compile the service code.
+1. Compile the service code.
 
-2.  Generate the WCF client proxy.
+2. Generate the WCF client proxy.
 
-3.  Instantiate the WCF client proxy.
+3. Instantiate the WCF client proxy.
 
 The WCF client proxy can be generated manually by using the Service Model Metadata Utility Tool (SvcUtil.exe) for more information see, [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). The WCF client proxy can also be generated within Visual Studio using the **Add Service Reference**  feature. To generate the WCF client proxy using either method the service must be running. If the service is self-hosted you must run the host. If the service is hosted in IIS/WAS you do not need to do anything else.
 
@@ -172,15 +172,15 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 
 Many exceptions thrown by a WCF client are caused by an exception on the service. Some examples of this are:
 
--   <xref:System.Net.Sockets.SocketException>: An existing connection was forcibly closed by the remote host.
+- <xref:System.Net.Sockets.SocketException>: An existing connection was forcibly closed by the remote host.
 
--   <xref:System.ServiceModel.CommunicationException>: The underlying connection was closed unexpectedly.
+- <xref:System.ServiceModel.CommunicationException>: The underlying connection was closed unexpectedly.
 
--   <xref:System.ServiceModel.CommunicationObjectAbortedException>: The socket connection was aborted. This could be caused by an error processing your message, a receive time-out being exceeded by the remote host, or an underlying network resource issue.
+- <xref:System.ServiceModel.CommunicationObjectAbortedException>: The socket connection was aborted. This could be caused by an error processing your message, a receive time-out being exceeded by the remote host, or an underlying network resource issue.
 
 When these types of exceptions occur, the best way to solve the problem is to turn on tracing on the service side and determine what exception occurred there. For more information about tracing, see [Tracing](../../../docs/framework/wcf/diagnostics/tracing/index.md) and [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).
 
-## See Also
+## See also
 
 - [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
 - [How to: Access Services with a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)

@@ -19,7 +19,7 @@ The following code example makes the splitter that divides the <xref:System.Wind
   
 ### To split a window horizontally  
   
-1.  Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
+1. Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
     ```vb  
     Sub ShowSplitContainer()  
@@ -49,6 +49,7 @@ The following code example makes the splitter that divides the <xref:System.Wind
     }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.SplitContainer>  
- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)
+## See also
+
+- <xref:System.Windows.Forms.SplitContainer>
+- [SplitContainer Control](splitcontainer-control-windows-forms.md)

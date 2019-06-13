@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "-optioncompare compiler option [Visual Basic]"
   - "/optioncompare compiler option [Visual Basic]"
 ms.assetid: 7237b766-b44d-4cc5-9a3c-885348a7d9e4
-author: rpetrusha
-ms.author: ronpet
 ---
 # -optioncompare
 Specifies how string comparisons are made.  
@@ -34,15 +32,15 @@ Specifies how string comparisons are made.
   
 ### To set -optioncompare in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Modify the value in the **Option Compare** box.  
+3. Modify the value in the **Option Compare** box.  
   
 ### To set -optioncompare programmatically  
   
--   See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
+- See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
   
 ## Example  
  The following code compiles `ProjFile.vb` and uses binary string comparisons.  
@@ -51,11 +49,12 @@ Specifies how string comparisons are made.
 vbc -optioncompare:binary projFile.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

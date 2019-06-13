@@ -1,5 +1,5 @@
 ---
-title: Caller information (F#)
+title: Caller information
 description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
 ms.date: 04/25/2017
 ---
@@ -22,24 +22,22 @@ The following example shows how you might use these attributes to trace a caller
 ```fsharp
 open System.Diagnostics
 open System.Runtime.CompilerServices
+open System.Runtime.InteropServices
 
 type Tracer() =
-    member __.DoTrace(msg: string,
-                      [<CallerMemberName>] ?memberName: string,
-                      [<CallerFilePath>] ?path: string
-                      [<CallerLineNumber>] ?line: int) =
+    member __.DoTrace(message: string,
+                      [<CallerMemberName; Optional; DefaultParameterValue("")>] memberName: string,
+                      [<CallerFilePath; Optional; DefaultParameterValue("")>] path: string,
+                      [<CallerLineNumber; Optional; DefaultParameterValue(0)>] line: int) =
         Trace.WriteLine(sprintf "Message: %s" message)
-        match (memberName, path, line) with
-        | Some m, Some p, Some l ->
-            Trace.WriteLine(sprintf "Member name: %s" m)
-            Trace.WriteLine(sprintf "Source file path: %s" p)
-            Trace.WriteLine(sprintf "Source line number: %d" l)
-        | _,_,_ -> ()
+        Trace.WriteLine(sprintf "Member name: %s" memberName)
+        Trace.WriteLine(sprintf "Source file path: %s" path)
+        Trace.WriteLine(sprintf "Source line number: %d" line)
 ```
 
 ## Remarks
 
-Caller Info attributes can only be applied to optional parameters. You must supply an explicit value for each optional parameter. The Caller Info attributes cause the compiler to write the proper value for each optional parameter decorated with a Caller Info attribute.
+Caller Info attributes can only be applied to optional parameters. The Caller Info attributes cause the compiler to write the proper value for each optional parameter decorated with a Caller Info attribute.
 
 Caller Info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the [StackTrace](/dotnet/api/system.diagnostics.stacktrace) property for exceptions, the results aren't affected by obfuscation.
 
@@ -65,6 +63,7 @@ The following chart shows the member names that are returned when you use the Ca
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|
 
 ## See also
- [Attributes](attributes.md)  
- [Named arguments](parameters-and-arguments.md#named-arguments)  
- [Optional parameters](parameters-and-arguments.md#optional-parameters)  
+
+- [Attributes](attributes.md)
+- [Named arguments](parameters-and-arguments.md#named-arguments)
+- [Optional parameters](parameters-and-arguments.md#optional-parameters)

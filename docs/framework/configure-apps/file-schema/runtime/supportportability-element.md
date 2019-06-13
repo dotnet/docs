@@ -1,5 +1,5 @@
 ---
-title: "&lt;supportPortability&gt; Element"
+title: "<supportPortability> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "supportPortability element"
@@ -8,7 +8,7 @@ ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;supportPortability&gt; Element
+# \<supportPortability> Element
 Specifies that an application can reference the same assembly in two different implementations of the .NET Framework, by disabling the default behavior that treats the assemblies as equivalent for application portability purposes.  
   
  \<configuration> Element  
@@ -51,7 +51,7 @@ Specifies that an application can reference the same assembly in two different i
 |`assemblyBinding`|Contains information about assembly version redirection and the locations of assemblies.|  
   
 ## Remarks  
- Beginning with the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], support is automatically provided for applications that can use either of two implementations of the .NET Framework, for example either the .NET Framework implementation or the .NET Framework for Silverlight implementation. The two implementations of a particular .NET Framework assembly are seen as equivalent by the assembly binder. In a few scenarios, this application portability feature causes problems. In those scenarios, the `<supportPortability>` element can be used to disable the feature.  
+ Beginning with the .NET Framework 4, support is automatically provided for applications that can use either of two implementations of the .NET Framework, for example either the .NET Framework implementation or the .NET Framework for Silverlight implementation. The two implementations of a particular .NET Framework assembly are seen as equivalent by the assembly binder. In a few scenarios, this application portability feature causes problems. In those scenarios, the `<supportPortability>` element can be used to disable the feature.  
   
  One such scenario is an assembly that has to reference both the .NET Framework implementation and the .NET Framework for Silverlight implementation of a particular reference assembly. For example, a XAML designer written in Windows Presentation Foundation (WPF) might need to reference both the WPF Desktop implementation, for the designer's user interface, and the subset of WPF that is included in the Silverlight implementation. By default, the separate references cause a compiler error, because assembly binding sees the two assemblies as equivalent. This element disables the default behavior, and allows compilation to succeed.  
   
@@ -72,6 +72,7 @@ Specifies that an application can reference the same assembly in two different i
 </configuration>  
 ```  
   
-## See Also  
- [/appconfig (C# Compiler Options)](http://msdn.microsoft.com/library/ee523958.aspx)  
- [.NET Framework Assembly Unification Overview](http://msdn.microsoft.com/library/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)
+## See also
+
+- [/appconfig (C# Compiler Options)](../../../../../docs/csharp/language-reference/compiler-options/appconfig-compiler-option.md)
+- [.NET Framework Assembly Unification Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))

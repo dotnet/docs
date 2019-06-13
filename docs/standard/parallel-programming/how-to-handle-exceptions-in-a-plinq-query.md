@@ -37,11 +37,12 @@ The first example in this topic shows how to handle the <xref:System.AggregateEx
   
 ## Compiling the Code  
   
--   To compile and run these examples, copy them into the PLINQ Data Sample example and call the method from Main.  
+- To compile and run these examples, copy them into the PLINQ Data Sample example and call the method from Main.  
   
 ## Robust Programming  
  Do not catch an exception unless you know how to handle it so that you do not corrupt the state of your program.  
   
-## See Also  
- <xref:System.Linq.ParallelEnumerable>  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- <xref:System.Linq.ParallelEnumerable>
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

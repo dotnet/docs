@@ -13,7 +13,7 @@ If you use the **Developer Command Prompt for Visual Studio** window, all the ne
 
 If you use a standard Command Prompt window, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *vsvars32.bat* to set the appropriate environment variables to support command-line builds. For more information about *vsvars32.bat*, including instructions for how to find and run it, see [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md).
 
-If you're working on a computer that has only the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)], you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
+If you're working on a computer that has only the Windows Software Development Kit (SDK), you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
 
 You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](/visualstudio/msbuild/msbuild).
 
@@ -24,7 +24,7 @@ The *csc.exe* executable file usually is located in the Microsoft.NET\Framework\
 
  **In this topic**
 
-- [Rules for command-line syntax](#-rules-for-command-line-syntax-for-the-c-compiler)
+- [Rules for command-line syntax](#rules-for-command-line-syntax-for-the-c-compiler)
 
 - [Sample command lines](#sample-command-lines-for-the-c-compiler)
 
@@ -91,11 +91,10 @@ There are no object (*.obj*) files created as a result of invoking the C# compil
 
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
-- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)  
-- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)  
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
-- [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)  
-- [How to: Display Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
-- [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)
+- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)
+- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
+- [Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/command-line-arguments.md)
+- [How to: Display Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
 - [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

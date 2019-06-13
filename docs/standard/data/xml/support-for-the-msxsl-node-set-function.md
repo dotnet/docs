@@ -32,7 +32,7 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
     <xsl:template match="/">  
         <authors>  
             <xsl:for-each select="msxsl:node-set($books)/book">   
-                <author><xsl:value-of select="@author"/)</author>  
+                <author><xsl:value-of select="@author"/></author>  
             </xsl:for-each>  
         </authors>  
     </xsl:template>  
@@ -47,5 +47,6 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
 <authors><author>Michael Howard</author><author>Michael Kay</author></authors>  
 ```  
   
-## See Also  
- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+## See also
+
+- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)

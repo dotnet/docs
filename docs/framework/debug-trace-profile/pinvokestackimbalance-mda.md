@@ -54,7 +54,7 @@ The MDA message gives the name of the platform invoke method call that is causin
 </mdaConfig>
 ```
 
-## See Also
+## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

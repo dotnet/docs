@@ -29,11 +29,11 @@ The **-win32icon** option inserts an .ico file in the output file, which gives t
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** pages.  
+1. Open the project's **Properties** pages.  
   
-2.  Click the **Application** property page.  
+2. Click the **Application** property page.  
   
-3.  Modify the **Application icon** property.  
+3. Modify the **Application icon** property.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.ApplicationIcon%2A>.  
   
@@ -44,7 +44,7 @@ The **-win32icon** option inserts an .ico file in the output file, which gives t
 csc -win32icon:rf.ico in.cs  
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

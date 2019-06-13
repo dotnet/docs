@@ -71,7 +71,7 @@ public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement docume
 
 Writing code to manually traverse the XML document to perform this task would be far more challenging.
 
-Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../docs/framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://msdn.microsoft.com/library/Bb546158.aspx)!
+Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../docs/framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## Why Use the Query Syntax?
 
@@ -91,21 +91,21 @@ var filteredItems = from item in myItems
 
 Isn’t the API syntax just a more concise way to do the query syntax?
 
-No. The query syntax allows for the use the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code which is hard to read.
+No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code which is hard to read.
 
 So this begs the question, **should you just use the query syntax?**
 
 The answer to this question is **yes** if...
 
-*   Your existing codebase already uses the query syntax
-*   You need to scope variables within your queries due to complexity
-*   You prefer the query syntax and it won’t distract from your codebase
+* Your existing codebase already uses the query syntax
+* You need to scope variables within your queries due to complexity
+* You prefer the query syntax and it won’t distract from your codebase
 
 The answer to this question is **no** if...
 
-*   Your existing codebase already uses the API syntax
-*   You have no need to scope variables within your queries
-*   You prefer the API syntax and it won’t distract from your codebase
+* Your existing codebase already uses the API syntax
+* You have no need to scope variables within your queries
+* You prefer the API syntax and it won’t distract from your codebase
 
 ## Essential Samples
 
@@ -113,7 +113,7 @@ For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https:/
 
 The following is a quick demonstration of some of the essential pieces of LINQ. This is in no way comprehensive, as LINQ provides significantly more functionality than what is showcased here.
 
-*   The bread and butter - `Where`, `Select`, and `Aggregate`:
+* The bread and butter - `Where`, `Select`, and `Aggregate`:
 
 ```csharp
 // Filtering a list
@@ -136,14 +136,14 @@ int seed = 0;
 int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 ```
 
-*   Flattening a list of lists:
+* Flattening a list of lists:
 
 ```csharp
 // Transforms the list of kennels into a list of all their dogs.
 var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 ```
 
-*   Union between two sets (with custom comparator):
+* Union between two sets (with custom comparator):
 
 ```csharp
 public class DogHairLengthComparer : IEqualityComparer<Dog>
@@ -178,7 +178,7 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
 var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthComparer());
 ```
 
-*   Intersection between two sets:
+* Intersection between two sets:
 
 ```csharp
 // Gets the volunteers who spend share time with two humane societies.
@@ -186,7 +186,7 @@ var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
                                                      new VolunteerTimeComparer());
 ```
 
-*   Ordering:
+* Ordering:
 
 ```csharp
 // Get driving directions, ordering by if it's toll-free before estimated driving time.
@@ -195,7 +195,7 @@ var results = DirectionsProcessor.GetDirections(start, end)
               .ThenBy(direction => direction.EstimatedTime);
 ```
 
-*   Finally, a more advanced sample: determining if the values of the properties of two instances of the same type are equal (Borrowed and modified from [this StackOverflow post](http://stackoverflow.com/a/844855)):
+* Finally, a more advanced sample: determining if the values of the properties of two instances of the same type are equal (Borrowed and modified from [this StackOverflow post](https://stackoverflow.com/a/844855)):
 
 ```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
@@ -218,7 +218,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 
 ## PLINQ
 
-PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expressions can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
+PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expression can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
 
 Consider the following:
 
@@ -246,6 +246,6 @@ Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other w
 
 ## Further Resources:
 
-*   [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
-*   [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/VB
-*   [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented
+* [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
+* [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/VB
+* [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented

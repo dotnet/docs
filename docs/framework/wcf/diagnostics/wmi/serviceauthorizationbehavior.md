@@ -8,7 +8,7 @@ ServiceAuthorizationBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceAuthorizationBehavior : Behavior  
 {  
   boolean ImpersonateCallerForAllOperations;  
@@ -58,5 +58,6 @@ class ServiceAuthorizationBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>

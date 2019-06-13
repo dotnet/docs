@@ -15,46 +15,47 @@ Use the <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> method t
   
 ### To copy a directory to another directory  
   
--   Use the `CopyDirectory` method, specifying source and destination directory names. The following example copies the directory named `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
+- Use the `CopyDirectory` method, specifying source and destination directory names. The following example copies the directory named `TestDirectory1` into `TestDirectory2`, overwriting existing files.  
   
-     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-copy-a-directory-to-another-directory_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#16)]  
   
      This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **File system - Processing Drives, Folders, and Files**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The new name specified for the directory contains a colon (:) or slash (\ or /) (<xref:System.ArgumentException>).  
+- The new name specified for the directory contains a colon (:) or slash (\ or /) (<xref:System.ArgumentException>).  
   
--   The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
+- The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
   
--   The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
+- The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   `destinationDirectoryName` is `Nothing` or an empty string (<xref:System.ArgumentNullException>)  
+- `destinationDirectoryName` is `Nothing` or an empty string (<xref:System.ArgumentNullException>)  
   
--   The source directory does not exist (<xref:System.IO.DirectoryNotFoundException>).  
+- The source directory does not exist (<xref:System.IO.DirectoryNotFoundException>).  
   
--   The source directory is a root directory (<xref:System.IO.IOException>).  
+- The source directory is a root directory (<xref:System.IO.IOException>).  
   
--   The combined path points to an existing file (<xref:System.IO.IOException>).  
+- The combined path points to an existing file (<xref:System.IO.IOException>).  
   
--   The source path and target path are the same (<xref:System.IO.IOException>).  
+- The source path and target path are the same (<xref:System.IO.IOException>).  
   
--   `ShowUI` is set to `UIOption.AllDialogs` and the user cancels the operation, or one or more files in the directory cannot be copied (<xref:System.OperationCanceledException>).  
+- `ShowUI` is set to `UIOption.AllDialogs` and the user cancels the operation, or one or more files in the directory cannot be copied (<xref:System.OperationCanceledException>).  
   
--   The operation is cyclic (<xref:System.InvalidOperationException>).  
+- The operation is cyclic (<xref:System.InvalidOperationException>).  
   
--   The path contains a colon (:) (<xref:System.NotSupportedException>).  
+- The path contains a colon (:) (<xref:System.NotSupportedException>).  
   
--   The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
+- The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
   
--   A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
+- A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
   
--   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
+- The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
--   A destination file exists but cannot be accessed (<xref:System.UnauthorizedAccessException>).  
+- A destination file exists but cannot be accessed (<xref:System.UnauthorizedAccessException>).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>  
- [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)  
- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>
+- [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)
+- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)

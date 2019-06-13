@@ -2,15 +2,13 @@
 title: "PeerSecuritySettings"
 ms.date: "03/30/2017"
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # PeerSecuritySettings
 PeerSecuritySettings  
   
 ## Syntax  
   
-```  
+```csharp
 class PeerSecuritySettings  
 {  
   string Mode;  
@@ -44,5 +42,6 @@ class PeerSecuritySettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.PeerSecuritySettings>
+## See also
+
+- <xref:System.ServiceModel.PeerSecuritySettings>

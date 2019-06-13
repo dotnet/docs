@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode Interface1"
+title: "ICorDebugCode Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugCode"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugCode Interface1
+# ICorDebugCode Interface
+
 Represents a segment of either Microsoft intermediate language (MSIL) code or native code.  
   
 ## Methods  
@@ -49,7 +50,7 @@ Represents a segment of either Microsoft intermediate language (MSIL) code or na
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

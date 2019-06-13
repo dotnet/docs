@@ -6,15 +6,15 @@ ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
 # Aggregate Queries
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the `Average`, `Count`, `Max`, `Min`, and `Sum` aggregate operators. Note the following characteristics of aggregate operators in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]:  
   
--   Aggregate queries are executed immediately.  
+- Aggregate queries are executed immediately.  
   
      For more information, see [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
--   Aggregate queries typically return a number instead of a collection.  
+- Aggregate queries typically return a number instead of a collection.  
   
-     For more information, see [Aggregation Operations](http://msdn.microsoft.com/library/36d97c83-5de5-457d-971d-10a69365e7c4).  
+     For more information, see [Aggregation Operations](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb546138(v=vs.120)).  
   
--   You cannot call aggregates against anonymous types.  
+- You cannot call aggregates against anonymous types.  
   
  The examples in the following topics derive from the Northwind sample database. For more information, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md).  
   

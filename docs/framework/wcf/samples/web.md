@@ -6,24 +6,10 @@ ms.assetid: 88794df1-8e2d-431e-b377-2fd3dc7942ab
 # Web
 This section contains Web-hosted samples.  
   
-## In This Section  
- [Advanced Format Selection](../../../../docs/framework/wcf/samples/advanced-format-selection.md)  
- Demonstrates how to extend the WCF Web HTTP programming model to support new outgoing response formats.  
-  
- [Automatic Format Selection](../../../../docs/framework/wcf/samples/automatic-format-selection.md)  
- Demonstrates how to enable automatic format selection (XML or JSON) with the WCF Web HTTP programming model, as well as how to explicitly set the format in the operation code.  
+## In This Section
   
  [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md)  
- Demonstrates how to implement an HTTP-based, RPC-based service - popularly referred to as "POX" (Plain Old XML) service – using the WCF Web HTTP programming model.  
-  
- [Basic Resource Service](../../../../docs/framework/wcf/samples/basic-resource-service.md)  
- Demonstrates how to implement a HTTP-based service using the WCF Web HTTP programming model that exposes a collection of customers that supports the retrieve, add, delete and replace operations.  
-  
- [AspNetRouteIntegration](../../../../docs/framework/wcf/samples/aspnetrouteintegration.md)  
- Demonstrates how to host a WCF Web HTTP service using ASP.NET routes.  
-  
- [Conditional Get and Put](../../../../docs/framework/wcf/samples/conditional-get-and-put.md)  
- Demonstrates how to use the new conditional retrieve and update APIs for the WCF Web HTTP programming model.  
+ Demonstrates how to implement an HTTP-based, RPC-based service - popularly referred to as "POX" (Plain Old XML) service – using the WCF Web HTTP programming model.
   
  [SOAP and HTTP Endpoints](../../../../docs/framework/wcf/samples/soap-and-http-endpoints.md)  
  Demonstrates how to implement an RPC-based service and expose it in the SOAP format and the "Plain Old XML" (POX) format using the WCF Web HTTP programming model.  

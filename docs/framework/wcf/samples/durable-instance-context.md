@@ -17,9 +17,9 @@ This sample demonstrates how to customize the Windows Communication Foundation (
   
  By the previous description, two steps can easily be distinguished to achieve the goal:  
   
-1.  Change the message that goes on the wire to carry the context ID.  
+1. Change the message that goes on the wire to carry the context ID.  
   
-2.  Change the service local behavior to implement custom instancing logic.  
+2. Change the service local behavior to implement custom instancing logic.  
   
  Because the first one in the list affects the messages on the wire it should be implemented as a custom channel and be hooked up to the channel layer. The latter only affects the service local behavior and therefore can be implemented by extending several service extensibility points. In the next few sections, each of these extensions are discussed.  
   
@@ -227,11 +227,11 @@ else
   
  WCF allows extending its InstanceContext runtime component by adding a new state and behavior using its extensible object pattern. The extensible object pattern is used in WCF to either extend existing runtime classes with new functionality or to add new state features to an object. There are three interfaces in the extensible object pattern - IExtensibleObject\<T>, IExtension\<T>, and IExtensionCollection\<T>:  
   
--   The IExtensibleObject\<T> interface is implemented by objects that allow extensions that customize their functionality.  
+- The IExtensibleObject\<T> interface is implemented by objects that allow extensions that customize their functionality.  
   
--   The IExtension\<T> interface is implemented by objects that are extensions of classes of type T.  
+- The IExtension\<T> interface is implemented by objects that are extensions of classes of type T.  
   
--   The IExtensionCollection\<T> interface is a collection of IExtensions that allows for retrieving IExtensions by their type.  
+- The IExtensionCollection\<T> interface is a collection of IExtensions that allows for retrieving IExtensions by their type.  
   
  Therefore an InstanceContextExtension class should be created that implements the IExtension interface and defines the required state to save the context ID. This class also provides the state to hold the storage manager being used. Once the new state is saved, it should not be possible to modify it. Therefore the state is provided and saved to the instance at the time it is being constructed and then only accessible using read-only properties.  
   
@@ -436,11 +436,11 @@ Press ENTER to shut down client
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!NOTE]
 >  You must be running SQL Server 2005 or SQL Express 2005 to run this sample. If you are running SQL Server 2005, you must modify the configuration of the service's connection string. When running cross-machine, SQL Server is only required on the server machine.  
@@ -450,8 +450,6 @@ Press ENTER to shut down client
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`  
-  
-## See Also

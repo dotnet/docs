@@ -8,7 +8,7 @@ TransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class TransportBindingElement : BindingElement  
 {  
   boolean ManualAddressing;  
@@ -58,5 +58,6 @@ class TransportBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.TransportBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.TransportBindingElement>

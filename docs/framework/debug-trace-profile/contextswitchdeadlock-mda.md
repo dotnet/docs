@@ -33,11 +33,11 @@ By default, the threading model for the main thread of Visual Basic console appl
 
 It is possible for this MDA to be falsely activated when all of the following conditions are met:
 
--   An application creates COM components from STA threads either directly or indirectly through libraries.
+- An application creates COM components from STA threads either directly or indirectly through libraries.
 
--   The application was stopped in the debugger and the user either continued the application or performed a step operation.
+- The application was stopped in the debugger and the user either continued the application or performed a step operation.
 
--   Unmanaged debugging is not enabled.
+- Unmanaged debugging is not enabled.
 
 To determine if the MDA is being falsely activated, disable all breakpoints, restart the application, and allow it to run without stopping. If the MDA is not activated, it is likely the initial activation was false. In this case, disable the MDA to avoid interference with the debugging session.
 
@@ -66,7 +66,7 @@ A message describing the current context and the target context.
 </mdaConfig>
 ```
 
-## See Also
+## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

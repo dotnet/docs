@@ -12,23 +12,23 @@ Application roles provide a way to assign permissions to an application instead 
 ## Application Role Features  
  Application roles have the following features:  
   
--   Unlike database roles, application roles contain no members.  
+- Unlike database roles, application roles contain no members.  
   
--   Application roles are activated when an application supplies the application role name and a password to the `sp_setapprole` system stored procedure.  
+- Application roles are activated when an application supplies the application role name and a password to the `sp_setapprole` system stored procedure.  
   
--   The password must be stored on the client computer and supplied at run time; an application role cannot be activated from inside of SQL Server.  
+- The password must be stored on the client computer and supplied at run time; an application role cannot be activated from inside of SQL Server.  
   
--   The password is not encrypted. The parameter password is stored as a one-way hash.  
+- The password is not encrypted. The parameter password is stored as a one-way hash.  
   
--   Once activated, permissions acquired through the application role remain in effect for the duration of the connection.  
+- Once activated, permissions acquired through the application role remain in effect for the duration of the connection.  
   
--   The application role inherits permissions granted to the `public` role.  
+- The application role inherits permissions granted to the `public` role.  
   
--   If a member of the `sysadmin` fixed server role activates an application role, the security context switches to that of the application role for the duration of the connection.  
+- If a member of the `sysadmin` fixed server role activates an application role, the security context switches to that of the application role for the duration of the connection.  
   
--   If you create a `guest` account in a database that has an application role, you do not need to create a database user account for the application role or for any of the logins that invoke it. Application roles can directly access another database only if a `guest` account exists in the second database  
+- If you create a `guest` account in a database that has an application role, you do not need to create a database user account for the application role or for any of the logins that invoke it. Application roles can directly access another database only if a `guest` account exists in the second database  
   
--   Built-in functions that return login names, such as SYSTEM_USER, return the name of the login that invoked the application role. Built-in functions that return database user names return the name of the application role.  
+- Built-in functions that return login names, such as SYSTEM_USER, return the name of the login that invoked the application role. Built-in functions that return database user names return the name of the application role.  
   
 ### The Principle of Least Privilege  
  Application roles should be granted only required permissions in case the password is compromised. Permissions to the `public` role should be revoked in any database using an application role. Disable the `guest` account in any database you do not want callers of the application role to have access to.  
@@ -41,9 +41,9 @@ Application roles provide a way to assign permissions to an application instead 
   
  You may want to consider the following alternatives.  
   
--   Use context switching with the EXECUTE AS statement with its NO REVERT and WITH COOKIE clauses. You can create a user account in a database that is not mapped to a login. You then assign permissions to this account. Using EXECUTE AS with a login-less user is more secure because it is permission-based, not password-based. For more information, see [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md).  
+- Use context switching with the EXECUTE AS statement with its NO REVERT and WITH COOKIE clauses. You can create a user account in a database that is not mapped to a login. You then assign permissions to this account. Using EXECUTE AS with a login-less user is more secure because it is permission-based, not password-based. For more information, see [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md).  
   
--   Sign stored procedures with certificates, granting only permission to execute the procedures. For more information, see [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md).  
+- Sign stored procedures with certificates, granting only permission to execute the procedures. For more information, see [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md).  
   
 ## External Resources  
  For more information, see the following resources.  
@@ -52,8 +52,9 @@ Application roles provide a way to assign permissions to an application instead 
 |--------------|-----------------|  
 |[Application Roles](/sql/relational-databases/security/authentication-access/application-roles)|Describes how to create and use application roles in SQL Server 2008.|  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

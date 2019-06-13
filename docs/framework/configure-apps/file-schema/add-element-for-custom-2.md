@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; element for NameValueSectionHandler and DictionarySectionHandler"
+title: "<add> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/add"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ms.assetid: 0d4ddb53-eb2b-49c0-9c33-a8dec5c39b46
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -63,4 +63,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

@@ -25,5 +25,6 @@ The following example shows how to register a delegate that will be invoked when
   
  If cancellation has already been requested when the callback is registered, the callback is still guaranteed to be called. In this particular case, the <xref:System.Net.WebClient.CancelAsync%2A> method will do nothing if no asynchronous operation is in progress, so it is always safe to call the method.  
   
-## See Also  
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
+## See also
+
+- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

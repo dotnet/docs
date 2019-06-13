@@ -1,5 +1,7 @@
 ---
-title: "let clause (C# Reference)"
+title: "let clause - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "let_CSharpKeyword"

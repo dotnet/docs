@@ -1,16 +1,18 @@
 ---
-title: "Default values table (C# Reference)"
+title: "Default values table - C# Reference"
+ms.custom: seodec18
+
 description: Learn what are the default values of C# value types.
 ms.date: 08/23/2018
 helpviewer_keywords: 
   - "constructors [C#], return values"
   - "keywords [C#], new"
-  - "default constructor [C#]"
+  - "parameterless constructor [C#]"
   - "defaults [C#]"
   - "value types [C#], initializing"
   - "variables [C#], value types"
-  - "constructors [C#], default constructor"
-  - "types [C#], default constructor return values"
+  - "constructors [C#], parameterless constructor"
+  - "types [C#], parameterless constructor return values"
 ---
 # Default values table (C# Reference)
 
@@ -50,7 +52,7 @@ Beginning with C# 7.1, you can use the [`default` literal](../../programming-gui
 int a = default;
 ```
 
-You also can use the default constructor or the implicit default constructor to produce the default value of a value type, as the following example shows. For more information about constructors, see the [Constructors](../../programming-guide/classes-and-structs/constructors.md) article.
+You also can use the parameterless constructor or the implicit parameterless constructor to produce the default value of a value type, as the following example shows. For more information about constructors, see the [Constructors](../../programming-guide/classes-and-structs/constructors.md) article.
 
 ```csharp
 int a = new int();
@@ -63,7 +65,6 @@ The default value of any [reference type](reference-types.md) is `null`. The def
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Value types](value-types.md)
 - [Value types table](value-types-table.md)
 - [Built-in types table](built-in-types-table.md)

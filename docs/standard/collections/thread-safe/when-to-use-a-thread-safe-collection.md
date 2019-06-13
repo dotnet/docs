@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # When to Use a Thread-Safe Collection
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces five new collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
+The .NET Framework 4 introduces five new collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
   
  In some scenarios, synchronization overhead is negligible and enables the multi-threaded type to perform significantly faster and scale far better than its non-thread-safe equivalent when protected by an external lock. In other scenarios, the overhead can cause the thread-safe type to perform and scale about the same or even more slowly than the externally-locked, non-thread-safe version of the type.  
   
@@ -56,7 +56,8 @@ The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces
 ## BlockingCollection  
  When bounding and blocking semantics are required, <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> will probably perform faster than any custom implementation. It also supports rich cancellation, enumeration, and exception handling.  
   
-## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)  
- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)

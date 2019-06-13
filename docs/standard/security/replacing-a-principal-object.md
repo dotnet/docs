@@ -18,9 +18,9 @@ Applications that provide authentication services must be able to replace the **
   
  The current **Principal** object can be replaced by performing the following tasks:  
   
-1.  Create the replacement **Principal** object and associated **Identity** object.  
+1. Create the replacement **Principal** object and associated **Identity** object.  
   
-2.  Attach the new **Principal** object to the call context.  
+2. Attach the new **Principal** object to the call context.  
   
 ## Example  
  The following example shows how to create a generic principal object and use it to set the principal of a thread.  
@@ -28,6 +28,7 @@ Applications that provide authentication services must be able to replace the **
  [!code-csharp[SetCurrentPrincipal#1](../../../samples/snippets/csharp/VS_Snippets_CLR/SetCurrentPrincipal/CS/program.cs#1)]
  [!code-vb[SetCurrentPrincipal#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/SetCurrentPrincipal/VB/program.vb#1)]  
   
-## See Also  
- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>  
- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+## See also
+
+- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>
+- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)

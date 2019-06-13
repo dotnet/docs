@@ -1,8 +1,6 @@
 ---
 title: When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
-author: CESARDELATORRE
-ms.author: wiwagn
 ms.date: 04/30/2018
 ---
 # When to deploy Windows Containers to Azure Container Service (that is, Kubernetes)
@@ -18,5 +16,5 @@ For example, in Kubernetes, support for containers is native (first-class citize
 Important note: The evolved and “more PaaS” version of ACS (Azure Container Service) for Kubernetes is AKS (Azure Kubernetes Service), however, Windows Containers are still not supported as of Q2 2018, but it will be supported soon.
 
 >[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-to-service-fabric.md)
-[Next](choosing-azure-compute-options-for-container-based-applications.md)
+>[Previous](when-to-deploy-windows-containers-to-azure-container-instances-ACI.md)
+>[Next](choosing-azure-compute-options-for-container-based-applications.md)

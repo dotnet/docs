@@ -29,7 +29,7 @@ HRESULT EnumerateBreakpoints (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppBreakpoints`  
  [out] A pointer to the address of an ICorDebugBreakpointEnum object that is the enumerator for all active breakpoints in the application domain.  
   

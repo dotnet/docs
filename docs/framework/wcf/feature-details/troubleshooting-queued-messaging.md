@@ -23,11 +23,11 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** The following features are available in MSMQ 4.0 but not in MSMQ 3.0:  
   
--   Custom dead-letter queue is supported only on MSMQ 4.0.  
+- Custom dead-letter queue is supported only on MSMQ 4.0.  
   
--   MSMQ 3.0 and 4.0 handle poison messages differently.  
+- MSMQ 3.0 and 4.0 handle poison messages differently.  
   
--   Only MSMQ 4.0 supports remote transacted read.  
+- Only MSMQ 4.0 supports remote transacted read.  
   
  For more information, see [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md).  
   
@@ -54,19 +54,19 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** To determine the answer, work through the following check list:  
   
--   Check that the transactional queue requirements are compatible with the assurances specified. Note the following principles:  
+- Check that the transactional queue requirements are compatible with the assurances specified. Note the following principles:  
   
-    -   You can send durable messages (datagrams and sessions) with "exactly once" assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `true`) only to a transactional queue.  
+    - You can send durable messages (datagrams and sessions) with "exactly once" assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `true`) only to a transactional queue.  
   
-    -   You can send sessions only with "exactly once" assurances.  
+    - You can send sessions only with "exactly once" assurances.  
   
-    -   A transaction is required to receive messages in a session from a transactional queue.  
+    - A transaction is required to receive messages in a session from a transactional queue.  
   
-    -   You can send or receive volatile or durable messages (datagrams only) with no assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`) only to a non-transactional queue.  
+    - You can send or receive volatile or durable messages (datagrams only) with no assurances (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`) only to a non-transactional queue.  
   
--   Check the dead-letter queue. If you find the messages there, determine why they were not delivered.  
+- Check the dead-letter queue. If you find the messages there, determine why they were not delivered.  
   
--   Check the outgoing queues for connectivity or addressing problems.  
+- Check the outgoing queues for connectivity or addressing problems.  
   
  **Q:** I have specified a custom dead-letter queue, but when I start the sender application, I get an exception that either the dead-letter queue is not found, or the sending application has no permission to the dead-letter queue. Why is this happening?  
   
@@ -90,9 +90,9 @@ This section contains common questions and troubleshooting help for using queues
   
  **A:** The most common reason is permissions.  
   
-1.  Ensure that the `NetMsmqActivator` process is running and the identity of the `NetMsmqActivator` process is given read and seek permission on the queue.  
+1. Ensure that the `NetMsmqActivator` process is running and the identity of the `NetMsmqActivator` process is given read and seek permission on the queue.  
   
-2.  If the `NetMsmqActivator` is monitoring queues on a remote machine, ensure that `NetMsmqActivator` does not run under a restricted token. To run the `NetMsmqActivator` with an unrestricted token:  
+2. If the `NetMsmqActivator` is monitoring queues on a remote machine, ensure that `NetMsmqActivator` does not run under a restricted token. To run the `NetMsmqActivator` with an unrestricted token:  
   
     ```  
     sc sidtype NetMsmqActivator unrestricted  
@@ -106,7 +106,7 @@ This section contains common questions and troubleshooting help for using queues
   
  **Q:** Where can I find answers to common questions on MSMQ?  
   
- **A:** For more information about MSMQ, see [Microsoft Message Queuing](http://go.microsoft.com/fwlink/?LinkId=87810).  
+ **A:** For more information about MSMQ, see [Microsoft Message Queuing](https://go.microsoft.com/fwlink/?LinkId=87810).  
   
  **Q:** Why does my service throw a `ProtocolException` when reading from a queue that contains both queued session messages and queued datagram messages?  
   
@@ -151,19 +151,19 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **A:** You cannot use a local machine certificate store with certificate mode. You have to copy the certificate from the machine certificate store to the current user store using the Certificate snap-in. To get the Certificate snap-in:  
   
-1.  Click **Start**, select **Run**, type `mmc`, and click **OK**.  
+1. Click **Start**, select **Run**, type `mmc`, and click **OK**.  
   
-2.  In the **Microsoft Management Console**, open the **File** menu and select **Add/Remove Snap-in**.  
+2. In the **Microsoft Management Console**, open the **File** menu and select **Add/Remove Snap-in**.  
   
-3.  In the **Add/Remove Snap-in** dialog box, click the **Add** button.  
+3. In the **Add/Remove Snap-in** dialog box, click the **Add** button.  
   
-4.  In the **Add Standalone Snap-in** dialog box, select Certificates and click **Add**.  
+4. In the **Add Standalone Snap-in** dialog box, select Certificates and click **Add**.  
   
-5.  In the **Certificates** snap-in dialog box, select **My user account,** and click **Finish**.  
+5. In the **Certificates** snap-in dialog box, select **My user account,** and click **Finish**.  
   
-6.  Next, add a second Certificates snap-in using the previous steps, but this time select **Computer account** and click **Next**.  
+6. Next, add a second Certificates snap-in using the previous steps, but this time select **Computer account** and click **Next**.  
   
-7.  Select **Local Computer** and click **Finish**. You can now drag and drop certificates from the machine certificate store to the current user store.  
+7. Select **Local Computer** and click **Finish**. You can now drag and drop certificates from the machine certificate store to the current user store.  
   
  **Q:** When my service reads from a queue on another computer in workgroup mode, I get an "access denied" exception.  
   
@@ -178,17 +178,17 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **A:** There are three possible reasons for this:  
   
--   If you are in domain mode, remote transacted receive requires Microsoft Distributed Transaction Coordinator (MSDTC) network access. You can enable this using **Add/Remove Components**.  
+- If you are in domain mode, remote transacted receive requires Microsoft Distributed Transaction Coordinator (MSDTC) network access. You can enable this using **Add/Remove Components**.  
   
-     ![Enabling network DTC access](../../../../docs/framework/wcf/feature-details/media/applicationserveraddcomps.jpg "ApplicationServerAddComps")  
+     ![Screenshot that shows enabling network DTC access.](./media/troubleshooting-queued-messaging/enable-distributed-transaction-coordinator-access.jpg)  
   
--   Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.  
+- Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.  
   
      ![Enabling XA transactions](../../../../docs/framework/wcf/feature-details/media/4f3695e0-fb0b-4c5b-afac-75f8860d2bb0.jpg "4f3695e0-fb0b-4c5b-afac-75f8860d2bb0")  
   
--   Make sure that MSDTC is in the list of exceptions in the **Internet Connection Firewall** settings.  
+- Make sure that MSDTC is in the list of exceptions in the **Internet Connection Firewall** settings.  
   
--   Ensure that you are using [!INCLUDE[wv](../../../../includes/wv-md.md)]. MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transacted read. MSMQ on earlier Windows releases does not support remote transacted read.  
+- Ensure that you are using [!INCLUDE[wv](../../../../includes/wv-md.md)]. MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transacted read. MSMQ on earlier Windows releases does not support remote transacted read.  
   
  **Q:** When the service reading from the queue is a network service, for example, in a Web host, why do I get an access-denied exception is raised when reading from the queue?  
   

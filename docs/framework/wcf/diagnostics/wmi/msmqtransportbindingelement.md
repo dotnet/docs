@@ -8,7 +8,7 @@ MsmqTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class MsmqTransportBindingElement : MsmqBindingElementBase  
 {  
   sint32 MaxPoolSize;  
@@ -50,5 +50,6 @@ class MsmqTransportBindingElement : MsmqBindingElementBase
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>

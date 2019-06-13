@@ -29,13 +29,13 @@ The **-checked** option specifies whether an integer arithmetic statement that r
  
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1. Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Click the **Advanced** button.  
+3. Click the **Advanced** button.  
   
-4.  Modify the **Check for arithmetic overflow/underflow** property.  
+4. Modify the **Check for arithmetic overflow/underflow** property.  
   
  To access this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.CheckForOverflowUnderflow%2A>.  
   
@@ -46,7 +46,7 @@ The **-checked** option specifies whether an integer arithmetic statement that r
 csc t2.cs -checked  
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
-- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

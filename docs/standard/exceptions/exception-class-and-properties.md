@@ -35,5 +35,6 @@ Most of the classes that inherit from <xref:System.Exception> do not implement a
 
 We recommend that you throw and catch only objects that derive from <xref:System.Exception>, but you can throw any object that derives from the <xref:System.Object> class as an exception. Note that not all languages support throwing and catching objects that do not derive from <xref:System.Exception>.
   
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

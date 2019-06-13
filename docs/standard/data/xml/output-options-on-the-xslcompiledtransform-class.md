@@ -49,7 +49,8 @@ This topic discusses the available XSLT output options. You can specify output o
   
 ## Notes  
   
--   When writing out empty tags, a space is written between the last character of the element name and the backslash, `<myElement />` for example. This lets older browsers display the generated HTML pages correctly.  
+- When writing out empty tags, a space is written between the last character of the element name and the backslash, `<myElement />` for example. This lets older browsers display the generated HTML pages correctly.  
   
-## See Also  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

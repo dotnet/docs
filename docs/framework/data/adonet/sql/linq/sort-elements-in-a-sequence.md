@@ -37,7 +37,7 @@ Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence acc
  [!code-vb[DLinqQueryExamples#24](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#24)]  
   
 ## Example  
- The following example sorts Orders from `EmployeeID 1` by ship-to country, and then by highest to lowest freight.  
+ The following example sorts Orders from `EmployeeID 1` by `ShipCountry`, and then by highest to lowest freight.  
   
  [!code-csharp[DLinqQueryExamples#25](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#25)]
  [!code-vb[DLinqQueryExamples#25](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#25)]  
@@ -82,6 +82,7 @@ Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence acc
   
  `Carnarvon Tigers`  
   
-## See Also  
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+## See also
+
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

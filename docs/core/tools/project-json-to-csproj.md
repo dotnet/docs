@@ -1,9 +1,9 @@
 ---
-title: project.json and csproj comparison - .NET Core
+title: project.json and csproj comparison
 description: See a mapping between project.json and csproj elements.
 author: natemcmaster
-ms.author: mairaw
 ms.date: 03/13/2017
+ms.custom: "seodec18"
 ---
 # A mapping between project.json and csproj properties
 
@@ -33,7 +33,7 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 }
 ```
 
-No longer supported. In csproj, this is determined by the project filename, which is defined by the directory name. For example, `MyProjectName.csproj`.
+No longer supported. In csproj, this is determined by the project filename, which usually matches the directory name. For example, `MyProjectName.csproj`.
 
 By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties.
 
@@ -484,7 +484,7 @@ See also [Files](#files).
 ```
 
 There is no equivalent for the `owners` element in MSBuild.
-For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#-other-common-root-level-options) element.
+For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#other-common-root-level-options) element.
 
 ## scripts
 
@@ -672,6 +672,6 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 </ItemGroup>
 ```
 
-## See Also
+## See also
 
-* [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)
+- [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

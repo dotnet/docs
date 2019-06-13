@@ -13,14 +13,14 @@ ms.author: "mairaw"
 The <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method accepts three input types for the source document: an object that implements the <xref:System.Xml.XPath.IXPathNavigable> interface, an <xref:System.Xml.XmlReader> object that reads the source document, or a string URI.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslCompiledTransform> class preserves white space by default. This is in accordance with section 3.4 of the W3C XSLT 1.0 recommendation (section 3.4, http://www.w3.org/TR/xslt.html#strip).  
+>  The <xref:System.Xml.Xsl.XslCompiledTransform> class preserves white space by default. This is in accordance with [section 3.4 of the W3C XSLT 1.0 recommendation](https://www.w3.org/TR/xslt.html#strip).  
   
 ## IXPathNavigable Interface  
  The <xref:System.Xml.XPath.IXPathNavigable> interface is implemented in the <xref:System.Xml.XmlNode> and <xref:System.Xml.XPath.XPathDocument> classes. These classes represent an in-memory cache of XML data.  
   
--   The <xref:System.Xml.XmlNode> class is based on the W3C Document Object Model (DOM) and includes editing capabilities.  
+- The <xref:System.Xml.XmlNode> class is based on the W3C Document Object Model (DOM) and includes editing capabilities.  
   
--   The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
+- The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
   
 > [!NOTE]
 >  Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](../../../../docs/standard/data/xml/how-to-transform-a-node-fragment.md).  
@@ -48,5 +48,6 @@ The <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method accepts three
   
  For more information, see [Resolving External Resources During XSLT Processing](../../../../docs/standard/data/xml/resolving-external-resources-during-xslt-processing.md).  
   
-## See Also  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+## See also
+
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)

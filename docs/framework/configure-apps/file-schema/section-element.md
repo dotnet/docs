@@ -1,5 +1,5 @@
 ---
-title: "&lt;section&gt; element"
+title: "<section> element"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/section"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "section Element"
   - "<section> Element"
 ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -93,4 +93,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

@@ -1,1 +1,0 @@
-    Const conPi2 = conPi * 2

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "win32manifest compiler option [Visual Basic]"
   - "-win32manifest compiler option [Visual Basic]"
 ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
-author: rpetrusha
-ms.author: ronpet
 ---
 # -win32manifest (Visual Basic)
 Identifies a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  
@@ -34,9 +32,9 @@ Identifies a user-defined Win32 application manifest file to be embedded into a 
   
  Your application will be subject to virtualization if either of the following conditions is true:  
   
-1.  You use the `-nowin32manifest` option and you do not provide a manifest in a later build step or as part of a Windows Resource (.res) file by using the `-win32resource` option.  
+1. You use the `-nowin32manifest` option and you do not provide a manifest in a later build step or as part of a Windows Resource (.res) file by using the `-win32resource` option.  
   
-2.  You provide a custom manifest that does not specify a requested execution level.  
+2. You provide a custom manifest that does not specify a requested execution level.  
   
  Visual Studio creates a default .manifest file and stores it in the debug and release directories alongside the executable file. You can view or edit the default app.manifest file by clicking **View UAC Settings** on the **Application** tab in the Project Designer. For more information, see [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
@@ -62,6 +60,7 @@ Identifies a user-defined Win32 application manifest file to be embedded into a 
 </assembly>  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-nowin32manifest (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nowin32manifest.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-nowin32manifest (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nowin32manifest.md)

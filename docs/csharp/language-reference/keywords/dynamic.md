@@ -1,5 +1,7 @@
 ---
-title: "dynamic (C# Reference)"
+title: "dynamic - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "dynamic_CSharpKeyword"
@@ -59,12 +61,12 @@ For more information and examples, see [Using Type dynamic](../../../csharp/prog
 
 ## See also
 
-- <xref:System.Dynamic.ExpandoObject?displayProperty=nameWithType>  
-- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  
-- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
-- [object](../../../csharp/language-reference/keywords/object.md)  
-- [is](../../../csharp/language-reference/keywords/is.md)  
-- [as](../../../csharp/language-reference/keywords/as.md)  
-- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
-- [How to: Safely Cast by Using as and is Operators](../../../csharp/programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md)  
+- <xref:System.Dynamic.ExpandoObject?displayProperty=nameWithType>
+- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>
+- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [object](../../../csharp/language-reference/keywords/object.md)
+- [is](../../../csharp/language-reference/keywords/is.md)
+- [as](../../../csharp/language-reference/keywords/as.md)
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)
+- [How to: Safely cast Using pattern matching, as, and is Operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
 - [Walkthrough: Creating and Using Dynamic Objects](../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

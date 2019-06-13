@@ -25,9 +25,6 @@ ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
  [Out-of-Order Message Processing](../../../../docs/framework/wcf/feature-details/out-of-order-message-processing.md)  
  Describes configuring a service to accept out of order messages.  
   
- [How to: Create a Workflow Service That Calls Another Workflow Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md)  
- Describes how to synchronously call a workflow service from within another workflow service.  
-  
  [Contract First Workflow Service Development](../../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md)  
  Describes creating a workflow service based on an existing service contract.  
   

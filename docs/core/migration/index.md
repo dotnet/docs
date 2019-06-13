@@ -1,17 +1,18 @@
 ---
-title: .NET Core migration to the csproj format
-description: .NET Core project.json to csproj migration
-author: blackdwarf
-ms.author: mairaw
+title: .NET Core migration from project.json
+description: Learn how to migrate an older .NET Core project using project.json
 ms.date: 07/19/2017
+ms.custom: "seodec18"
 ---
-# Migrating .NET Core projects to the .csproj format
+# Migrating .NET Core projects from project.json
 
 This document will cover migration scenarios for .NET Core projects and will go over the following three migration scenarios:
 
 1. [Migration from a valid latest schema of *project.json* to *csproj*](#migration-from-projectjson-to-csproj)
 2. [Migration from DNX to csproj](#migration-from-dnx-to-csproj)
 3. [Migration from RC3 and previous .NET Core csproj projects to the final format](#migration-from-earlier-net-core-csproj-formats-to-rtm-csproj)
+
+This document is only applicable to older .NET Core projects that still use project.json. It is not applicable for migrating from .NET Framework to .NET Core.
 
 ## Migration from project.json to csproj
 
@@ -81,7 +82,7 @@ The .NET Core csproj format has been changing and evolving with each new pre-rel
 
 After these steps your project should be fully compatible with the RTM .NET Core csproj format.
 
-For examples of before and after the migration from old csproj format to the new one, see the [Updating Visual Studio 2017 RC – .NET Core Tooling improvements](https://blogs.msdn.microsoft.com/dotnet/2016/12/12/updating-visual-studio-2017-rc-net-core-tooling-improvements/) article on the .NET blog.
+For examples of before and after the migration from old csproj format to the new one, see the [Updating Visual Studio 2017 RC – .NET Core Tooling improvements](https://devblogs.microsoft.com/dotnet/updating-visual-studio-2017-rc-net-core-tooling-improvements/) article on the .NET blog.
 
 ## See also
 

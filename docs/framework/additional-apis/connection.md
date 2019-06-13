@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -25,7 +25,7 @@ internal class Connection : PooledStream
 ```
 
 > [!WARNING]
-> The `Connection` class is internal and not meant to be used directly in your code.
+> The `Connection` class is internal and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this class in a production application under any circumstance.
 

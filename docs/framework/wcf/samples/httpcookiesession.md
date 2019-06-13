@@ -6,15 +6,15 @@ ms.assetid: 101cb624-8303-448a-a3af-933247c1e109
 # HttpCookieSession
 This sample demonstrates how to build a custom protocol channel to use HTTP cookies for session management. This channel enables communication between Windows Communication Foundation (WCF) services and ASMX clients or between WCF clients and ASMX services.  
   
- When a client calls a Web method in an ASMX Web service that is session-based, the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] engine does the following:  
+ When a client calls a Web method in an ASMX Web service that is session-based, the ASP.NET engine does the following:  
   
--   Generates a unique ID (session ID).  
+- Generates a unique ID (session ID).  
   
--   Generates the session object and associates it with the unique ID.  
+- Generates the session object and associates it with the unique ID.  
   
--   Adds the unique ID to a Set-Cookie HTTP response header and sends it to the client.  
+- Adds the unique ID to a Set-Cookie HTTP response header and sends it to the client.  
   
--   Identifies the client on subsequent calls based on the session ID it sends to it.  
+- Identifies the client on subsequent calls based on the session ID it sends to it.  
   
  The client includes this session ID in its subsequent requests to the server. The server uses the session ID from the client to load the appropriate session object for the current HTTP context.  
   
@@ -23,7 +23,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\HttpCookieSession`  
   
@@ -33,7 +33,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
 ## Service Channel  
  The sample provides a service channel in the `HttpCookieReplySessionChannelListener` class. This class implements the <xref:System.ServiceModel.Channels.IChannelListener> interface and converts the <xref:System.ServiceModel.Channels.IReplyChannel> channel from lower in the channel stack to a <xref:System.ServiceModel.Channels.IReplySessionChannel>. This process can be divided into the following parts:  
   
--   When the channel listener is opened, it accepts an inner channel from its inner listener. Because the inner listener is a datagram listener and the lifetime of an accepted channel is decoupled from the lifetime of the listener, we can close the inner listener and only hold on to the inner channel  
+- When the channel listener is opened, it accepts an inner channel from its inner listener. Because the inner listener is a datagram listener and the lifetime of an accepted channel is decoupled from the lifetime of the listener, we can close the inner listener and only hold on to the inner channel  
   
     ```  
                 this.innerChannelListener.Open(timeoutHelper.RemainingTime());  
@@ -42,7 +42,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
     this.innerChannelListener.Close(timeoutHelper.RemainingTime());  
     ```  
   
--   When the open process completes, we set up a message loop to receive messages from the inner channel.  
+- When the open process completes, we set up a message loop to receive messages from the inner channel.  
   
     ```  
     IAsyncResult result = BeginInnerReceiveRequest();  
@@ -57,7 +57,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
     }  
     ```  
   
--   When a message arrives, the service channel examines the session identifier and de-multiplexes to the appropriate session channel. The channel listener maintains a dictionary that maps the session identifiers to the session channel instances.  
+- When a message arrives, the service channel examines the session identifier and de-multiplexes to the appropriate session channel. The channel listener maintains a dictionary that maps the session identifiers to the session channel instances.  
   
     ```  
     Dictionary<string, IReplySessionChannel> channelMapping;  
@@ -152,16 +152,14 @@ Press <ENTER> to terminate client.
   
 #### To set up, build, and run the sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
-  
-## See Also
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  

@@ -13,7 +13,7 @@ ms.assetid: cf2cc94c-bbc2-4e54-a601-605038ab63fe
 The <xref:System.Windows.Controls.Grid> element is used to precisely position content in rows and columns.  
   
 ## In This Section  
- [How-to Topics](../../../../docs/framework/wpf/controls/grid-how-to-topics.md)  
+ [How-to Topics](grid-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Panel>  
@@ -31,8 +31,8 @@ The <xref:System.Windows.Controls.Grid> element is used to precisely position co
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+ [ScrollViewer Overview](scrollviewer-overview.md)

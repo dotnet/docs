@@ -8,7 +8,7 @@ ServiceCredentials
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceCredentials : Behavior  
 {  
   string ClientCertificate;  
@@ -82,5 +82,6 @@ class ServiceCredentials : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceCredentials>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceCredentials>

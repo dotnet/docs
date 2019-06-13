@@ -2,8 +2,6 @@
 title: "Securing Messages Using Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Securing Messages Using Transport Security
 This section discusses Message Queuing (MSMQ) transport security that you can use to secure messages sent to a queue.  
@@ -21,11 +19,11 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
   
  Transport security using <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> impacts how MSMQ messages are secured in-transit between the transmission queue and the target queue where secured implies:  
   
--   Signing the message to ensure it is not tampered with.  
+- Signing the message to ensure it is not tampered with.  
   
--   Encrypting the message to ensure that it cannot be seen or tampered with. This is recommended but optional.  
+- Encrypting the message to ensure that it cannot be seen or tampered with. This is recommended but optional.  
   
--   The target queue manager that identifies the sender of the message for non-repudiation.  
+- The target queue manager that identifies the sender of the message for non-repudiation.  
   
  In MSMQ, independent of authentication, the target queue has an access control list (ACL) to check whether the client has permission to send the message to the target queue. The receiving application is also checked for permission to receive the message from the target queue.  
   
@@ -92,7 +90,8 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
   
  The supported algorithms are `MD5`, `SHA1`, `SHA256`, and `SHA512`. The default is `SHA1`.  
   
-## See Also  
- [Message Queuing](http://msdn.microsoft.com/library/ff917e87-05d5-478f-9430-0f560675ece1)  
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+
+- [Queues Overview](queues-overview.md)
+- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

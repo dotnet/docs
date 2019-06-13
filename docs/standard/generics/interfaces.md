@@ -18,7 +18,7 @@ This topic provides an overview of generic interfaces that provide common functi
  Generic interfaces provide type-safe counterparts to nongeneric interfaces for ordering and equality comparisons and for functionality that is shared by generic collection types.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. See [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
+>  Starting with the .NET Framework 4, the type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. See [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
   
 ### Equality and Ordering Comparisons  
  In the <xref:System> namespace, the <xref:System.IComparable%601?displayProperty=nameWithType> and <xref:System.IEquatable%601?displayProperty=nameWithType> generic interfaces, like their nongeneric counterparts, define methods for ordering comparisons and equality comparisons, respectively. Types implement these interfaces to provide the ability to perform such comparisons.  
@@ -36,10 +36,11 @@ This topic provides an overview of generic interfaces that provide common functi
   
  The <xref:System.Collections.Generic.IEnumerable%601> generic interface provides a generic enumerator structure. The <xref:System.Collections.Generic.IEnumerator%601> generic interface implemented by generic enumerators inherits the nongeneric <xref:System.Collections.IEnumerator> interface; the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> members, which do not depend on the type parameter `T`, appear only on the nongeneric interface. This means that any consumer of the nongeneric interface can also consume the generic interface.  
   
-## See Also  
- <xref:System.Collections.Generic?displayProperty=nameWithType>  
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
- [Generics](../../../docs/standard/generics/index.md)  
- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)  
- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)
+## See also
+
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [Generics](../../../docs/standard/generics/index.md)
+- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)
+- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
+- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)

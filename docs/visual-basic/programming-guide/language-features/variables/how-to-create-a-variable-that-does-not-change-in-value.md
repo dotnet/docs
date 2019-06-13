@@ -11,15 +11,15 @@ The notion of a variable that does not change its value might appear to be contr
   
  You cannot use the [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md) to declare and assign a constant value in the following circumstances:  
   
--   The `Const` statement does not accept the data type you want to use  
+- The `Const` statement does not accept the data type you want to use  
   
--   You do not know the value at compile time  
+- You do not know the value at compile time  
   
--   You are unable to compute the constant value at compile time  
+- You are unable to compute the constant value at compile time  
   
 ### To create a variable that does not change in value  
   
-1.  At module level, declare a member variable with the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md), and include the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
+1. At module level, declare a member variable with the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md), and include the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
   
     ```  
     Dim ReadOnly timeStarted  
@@ -27,7 +27,7 @@ The notion of a variable that does not change its value might appear to be contr
   
      You can specify `ReadOnly` only on a member variable. This means you must define the variable at module level, outside of any procedure.  
   
-2.  If you can compute the value in a single statement at compile time, use an initialization clause in the `Dim` statement. Follow the [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause with an equal sign (`=`), followed by an expression. Be sure the compiler can evaluate this expression to a constant value.  
+2. If you can compute the value in a single statement at compile time, use an initialization clause in the `Dim` statement. Follow the [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause with an equal sign (`=`), followed by an expression. Be sure the compiler can evaluate this expression to a constant value.  
   
     ```  
     Dim ReadOnly timeStarted As Date = Now  
@@ -37,6 +37,7 @@ The notion of a variable that does not change its value might appear to be contr
   
      If you do not know the value at compile time, or cannot compute it at compile time in a single statement, you can still assign it at run time in a constructor. To do this, you must declare the `ReadOnly` variable at class or structure level. In the constructor for that class or structure, compute the variable's fixed value, and assign it to the variable before returning from the constructor.  
   
-## See Also  
- [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)  
- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)
+## See also
+
+- [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)
+- [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)

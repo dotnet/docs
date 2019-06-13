@@ -26,30 +26,7 @@
       "build_output_subfolder": ".",
       "locale": "en-us",
       "xref_query_tags": ["/uwp/api"],
-      "monikers": [
-        "netframework-4.5.1",
-        "netframework-4.5.2",
-        "netframework-4.5",
-        "netframework-4.6",
-        "netframework-4.6.1",
-        "netframework-4.6.2",
-        "netframework-4.7",
-        "netframework-4.7.1",
-        "netcore-1.0",
-        "netcore-1.1",
-        "netcore-2.0",
-        "netstandard-1.0",
-        "netstandard-1.1",
-        "netstandard-1.2",
-        "netstandard-1.3",
-        "netstandard-1.4",
-        "netstandard-1.5",
-        "netstandard-1.6",
-        "netstandard-2.0",
-        "xamarinios-10.8",
-        "xamarinandroid-7.1",
-        "xamarinmac-3.0"
-      ],
+      "monikers": [],
       "filemap_share_depots": ["VS.dotnet-api-docs"],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -93,6 +70,11 @@
       "branch_mapping": {
         "live": "live"
       }
+    },
+    {
+      "path_to_root": "machinelearning-samples",
+      "url": "https://github.com/dotnet/machinelearning-samples",
+      "branch": "master"
     }
   ]
 }

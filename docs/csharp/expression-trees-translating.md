@@ -89,7 +89,7 @@ same node can be reused whenever its needed.
 
 Let's verify this by building a second visitor that walks the tree
 of addition nodes and computes the result. You can do this by
-making a couple modifications to the vistor that you've seen so
+making a couple modifications to the visitor that you've seen so
 far. In this new version, the visitor will return the partial sum
 of the addition operation up to this point. For a constant expression,
 that is simply the value of the constant expression. For an addition
@@ -105,7 +105,7 @@ var addition = Expression.Add(one, two);
 var add2 = Expression.Add(three, four);
 var sum = Expression.Add(addition, add2);
 
-// Declare the delegate, so we can call it 
+// Declare the delegate, so we can call it
 // from itself recursively:
 Func<Expression, int> aggregate = null;
 // Aggregate, return constants, or the sum of the left and right operand.
@@ -129,7 +129,7 @@ will have been computed. You can trace the execution by running the sample
 in the debugger and tracing the execution.
 
 Let's make it easier to trace how the nodes are analyzed and how the sum
-is computed by travsersing the tree. Here's an updated version of the
+is computed by traversing the tree. Here's an updated version of the
 Aggregate method that includes quite a bit of tracing information:
 
 ```csharp
@@ -236,7 +236,7 @@ This sample shows a small subset of the code you would build to traverse
 and interpret the algorithms represented by an expression tree. For a complete
 discussion of all the work necessary to build a general purpose library that
 translates expression trees into another language, please read
-[this series](http://blogs.msdn.com/b/mattwar/archive/2008/11/18/linq-links.aspx)
+[this series](https://blogs.msdn.com/b/mattwar/archive/2008/11/18/linq-links.aspx)
 by Matt Warren. It goes into great detail on how to translate any of the code
 you might find in an expression tree.
 

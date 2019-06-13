@@ -8,7 +8,7 @@ CallbackBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class CallbackBehavior : Behavior  
 {  
   boolean AutomaticSessionShutdown;  
@@ -81,5 +81,6 @@ Access type: Read-only
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.CallbackBehaviorAttribute>
+## See also
+
+- <xref:System.ServiceModel.CallbackBehaviorAttribute>

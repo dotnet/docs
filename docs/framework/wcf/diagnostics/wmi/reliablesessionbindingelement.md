@@ -8,7 +8,7 @@ ReliableSessionBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class ReliableSessionBindingElement : BindingElement  
 {  
   datetime AcknowledgementInterval;  
@@ -90,5 +90,6 @@ class ReliableSessionBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>

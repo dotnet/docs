@@ -16,5 +16,6 @@ The **CreateEntityReference** method creates a new **XmlEntityReference** node. 
   
  Even though the **XmlDataDocument** is a derived class of the **XmlDocument**, the **XmlDataDocument** does not support the creation of entity references. This is because **EntityReference** children are read-only. The children of an **EntityReference** node can span more than one region. In this case, part of a row associated with the region that contains a part of an **EntityReference** will be read-only.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

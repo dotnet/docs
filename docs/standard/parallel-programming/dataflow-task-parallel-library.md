@@ -21,13 +21,13 @@ ms.author: "ronpet"
   
  This document contains the following sections:  
   
--   [Programming Model](#model)  
+- [Programming Model](#model)  
   
--   [Predefined Dataflow Block Types](#predefined_types)  
+- [Predefined Dataflow Block Types](#predefined_types)  
   
--   [Configuring Dataflow Block Behavior](#behavior)  
+- [Configuring Dataflow Block Behavior](#behavior)  
   
--   [Custom Dataflow Blocks](#custom)  
+- [Custom Dataflow Blocks](#custom)  
   
 <a name="model"></a>   
 ## Programming Model  
@@ -66,14 +66,14 @@ ms.author: "ronpet"
   
  This example demonstrates the case in which an exception goes unhandled in the delegate of an execution dataflow block. We recommend that you handle exceptions in the bodies of such blocks. However, if you are unable to do so, the block behaves as though it was canceled and does not process incoming messages.  
   
- When a dataflow block is canceled explicitly, the <xref:System.AggregateException> object contains <xref:System.OperationCanceledException> in the <xref:System.AggregateException.InnerExceptions%2A> property. For more information about dataflow cancellation, see Enabling Cancellation later in this document.  
+ When a dataflow block is canceled explicitly, the <xref:System.AggregateException> object contains <xref:System.OperationCanceledException> in the <xref:System.AggregateException.InnerExceptions%2A> property. For more information about dataflow cancellation, see [Enabling Cancellation](#enabling-cancellation) section.  
   
- The second way to determine the completion status of a dataflow block is to use a continuation off of the completion task, or to use the asynchronous language features of C# and Visual Basic to asynchronously wait for the completion task. The delegate that you provide to the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method takes a <xref:System.Threading.Tasks.Task> object that represents the antecedent task. In the case of the <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> property, the delegate for the continuation takes the completion task itself. The following example resembles the previous one, except that it also uses the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method to create a completion task that prints the status of the overall dataflow operation.  
+ The second way to determine the completion status of a dataflow block is to use a continuation of the completion task, or to use the asynchronous language features of C# and Visual Basic to asynchronously wait for the completion task. The delegate that you provide to the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method takes a <xref:System.Threading.Tasks.Task> object that represents the antecedent task. In the case of the <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> property, the delegate for the continuation takes the completion task itself. The following example resembles the previous one, except that it also uses the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method to create a continuation task that prints the status of the overall dataflow operation.  
   
  [!code-csharp[TPLDataflow_Overview#11](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_overview/cs/program.cs#11)]
  [!code-vb[TPLDataflow_Overview#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_overview/vb/program.vb#11)]  
   
- You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md), and [NIB: How to: Handle Exceptions Thrown by Tasks](https://msdn.microsoft.com/library/d6c47ec8-9de9-4880-beb3-ff19ae51565d).  
+ You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), and [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  [[go to top](#top)]  
   
@@ -229,7 +229,7 @@ ms.author: "ronpet"
  The default value of <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> is 1, which guarantees that the dataflow block processes one message at a time. Setting this property to a value that is larger than 1 enables the dataflow block to process multiple messages concurrently. Setting this property to <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.Unbounded?displayProperty=nameWithType> enables the underlying task scheduler to manage the maximum degree of concurrency.  
   
 > [!IMPORTANT]
->  When you specify a maximum degree of parallelism that is larger than 1, multiple messages are processed simultaneously, and therefore, messages might not be processed in the order in which they are received. The order in which the messages are output from the block will, however, be correctly ordered.  
+>  When you specify a maximum degree of parallelism that is larger than 1, multiple messages are processed simultaneously, and therefore messages might not be processed in the order in which they are received. The order in which the messages are output from the block is, however, the same one in which they are received.  
   
  Because the <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> property represents the maximum degree of parallelism, the dataflow block might execute with a lesser degree of parallelism than you specify. The dataflow block might use a lesser degree of parallelism to meet its functional requirements or because there is a lack of available system resources. A dataflow block never chooses more parallelism than you specify.  
   
@@ -276,4 +276,4 @@ ms.author: "ronpet"
 |[How to: Specify a Task Scheduler in a Dataflow Block](../../../docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md)|Demonstrates how to associate a specific task scheduler when you use dataflow in your application.|  
 |[Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency](../../../docs/standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md)|Describes how to use the <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> class to improve the efficiency of database insert operations, and how to use the <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> class to capture both the results and any exceptions that occur while the program reads from a database.|  
 |[Walkthrough: Creating a Custom Dataflow Block Type](../../../docs/standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md)|Demonstrates two ways to create a dataflow block type that implements custom behavior.|  
-|[Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)|Introduces the TPL, a library that simplifies parallel and concurrent programming in [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] applications.|
+|[Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)|Introduces the TPL, a library that simplifies parallel and concurrent programming in .NET Framework applications.|

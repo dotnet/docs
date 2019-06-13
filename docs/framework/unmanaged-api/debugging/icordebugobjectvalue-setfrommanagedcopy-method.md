@@ -32,6 +32,4 @@ HRESULT SetFromManagedCopy (
 ## Requirements  
  **Header:** CorDebug.idl, CorDebug.h  
   
-## See Also  
-    
- 
+## See also

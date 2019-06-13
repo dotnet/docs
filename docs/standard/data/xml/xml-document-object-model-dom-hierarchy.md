@@ -14,13 +14,13 @@ XML Document Object Model (DOM) hierarchy
   
  The following classes do not inherit from the **XmlNode**:  
   
--   **XmlImplementation**  
+- **XmlImplementation**  
   
--   **XmlNamedNodeMap**  
+- **XmlNamedNodeMap**  
   
--   **XmlNodeList**  
+- **XmlNodeList**  
   
--   **XmlNodeChangedEventArgs**  
+- **XmlNodeChangedEventArgs**  
   
  The **XmlImplementation** class is used to create an XML document. For more information, see [XML Document Creation](../../../../docs/standard/data/xml/xml-document-creation.md).  
   
@@ -32,5 +32,6 @@ XML Document Object Model (DOM) hierarchy
   
  The **XmlLinkedNode** class inherits from **XmlNode**. Its purpose is to override two methods from **XmlNode**: the **PreviousSibling** and **NextSibling** methods. These overridden methods are then inherited and used by **XmlCharacterData**, **XmlDeclaration**, **XmlDocumentType**, **XmlElement**, **XmlEntityReference**, and **XmlProcessingInstruction**, which are classes that have previous and next siblings.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

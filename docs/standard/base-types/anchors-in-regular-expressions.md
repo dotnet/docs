@@ -1,5 +1,6 @@
 ---
-title: "Anchors in Regular Expressions"
+title: "Anchors in .NET Regular Expressions"
+description: Learn how to use anchors in regular expression patterns.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -17,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Anchors in Regular Expressions
 <a name="top"></a> Anchors, or atomic zero-width assertions, specify a position in the string where a match must occur. When you use an anchor in your search expression, the regular expression engine does not advance through the string or consume characters; it looks for a match in the specified position only. For example, `^` specifies that the match must start at the beginning of a line or string. Therefore, the regular expression `^http:` matches "http:" only when it occurs at the beginning of a line. The following table lists the anchors supported by the regular expressions in .NET.  
@@ -38,9 +40,9 @@ ms.author: "ronpet"
   
  The following example uses the `^` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The example calls two overloads of the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method:  
   
--   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> overload finds only the first substring in the input string that matches the regular expression pattern.  
+- The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> overload finds only the first substring in the input string that matches the regular expression pattern.  
   
--   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> overload with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> finds all five substrings.  
+- The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> overload with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> finds all five substrings.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/startofstring1.cs#1)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring1.vb#1)]  
@@ -168,6 +170,7 @@ ms.author: "ronpet"
 |`qu`|Match the substring "qu".|  
 |`\w+`|Match one or more word characters.|  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)

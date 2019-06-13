@@ -8,7 +8,7 @@ TransactedBatchingBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class TransactedBatchingBehavior : Behavior  
 {  
   sint32 MaxBatchSize;  
@@ -34,5 +34,6 @@ class TransactedBatchingBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.TransactedBatchingBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.TransactedBatchingBehavior>

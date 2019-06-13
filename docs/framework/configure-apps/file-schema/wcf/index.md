@@ -8,13 +8,13 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
   
  The WCF configuration system is based on the <xref:System.Configuration> namespace. Therefore, you can use all the standard features provided by the <xref:System.Configuration> namespace, such as configuration locking, encryption and merging to increase the security of your application and its configuration. For more information on these concepts, see the following topics.  
   
- [Encrypting Configuration Information](http://go.microsoft.com/fwlink/?LinkId=95337)  
+ [Encrypting Configuration Information](https://go.microsoft.com/fwlink/?LinkId=95337)  
   
- [Locking Configuration Settings](http://go.microsoft.com/fwlink/?LinkId=95338)  
+ [Locking Configuration Settings](https://go.microsoft.com/fwlink/?LinkId=95338)  
   
- This section describes all possible values of each configuration item, and how it interacts with other WCF configuration elements. The following map illustrates the WCF configuration schema.  
+ This section describes all possible values of each configuration item, and how it interacts with other WCF configuration elements. The following map illustrates the WCF configuration schema:  
   
- ![WCF Configuration Schema](../../../../../docs/framework/configure-apps/file-schema/wcf/media/orcasconfigschema.gif "OrcasConfigSchema")  
+ ![Diagram that shows the WCF configuration schema.](./media/index/windows-communication-foundation-configuration-schema.gif)  
   
 > [!CAUTION]
 >  You should protect WCF configuration sections in your application configuration files (app.config) with appropriate Access Control Lists (ACL) to prevent any potential security threats.  For example, you should make sure that only the appropriate people can access or modify the security settings on application bindings, or the service model section of the configuration file for a service.  
@@ -30,5 +30,5 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
  The top-level element for setting options when using serializers such as the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Related Sections  
- [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
+ [Configuring Windows Communication Foundation Applications](../../../wcf/configuring-services.md)  
  Describes how to configure WCF services and clients.

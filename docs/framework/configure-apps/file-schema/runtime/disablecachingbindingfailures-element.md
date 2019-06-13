@@ -1,5 +1,5 @@
 ---
-title: "&lt;disableCachingBindingFailures&gt; Element"
+title: "<disableCachingBindingFailures> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCachingBindingFailures"
@@ -13,7 +13,7 @@ ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;disableCachingBindingFailures&gt; Element
+# \<disableCachingBindingFailures> Element
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  
   
  \<configuration> Element  
@@ -57,11 +57,11 @@ Specifies whether to disable the caching of binding failures that occur because 
   
  Some binding and loading failures are not affected by this element, and are always cached. These failures occur because the assembly was found but could not be loaded. They throw <xref:System.BadImageFormatException> or <xref:System.IO.FileLoadException>. The following list includes some examples of such failures.  
   
--   If you attempt to load a file is not a valid assembly, subsequent attempts to load the assembly will fail even if the bad file is replaced with the correct assembly.  
+- If you attempt to load a file is not a valid assembly, subsequent attempts to load the assembly will fail even if the bad file is replaced with the correct assembly.  
   
--   If you attempt to load an assembly that is locked by the file system, subsequent attempts to load the assembly will fail even after the assembly is released by the file system.  
+- If you attempt to load an assembly that is locked by the file system, subsequent attempts to load the assembly will fail even after the assembly is released by the file system.  
   
--   If one or more versions of the assembly that you are attempting to load is in the probing path, but the specific version you are requesting is not among them, subsequent attempts to load that version will fail even if the correct version is moved into the probing path.  
+- If one or more versions of the assembly that you are attempting to load is in the probing path, but the specific version you are requesting is not among them, subsequent attempts to load that version will fail even if the correct version is moved into the probing path.  
   
 ## Example  
  The following example shows how to disable the caching of assembly binding failures that occur because the assembly was not found by probing.  
@@ -74,7 +74,8 @@ Specifies whether to disable the caching of binding failures that occur because 
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+## See also
+
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

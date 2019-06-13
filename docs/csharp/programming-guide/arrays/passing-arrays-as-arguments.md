@@ -1,5 +1,6 @@
 ---
-title: "Passing arrays as arguments (C# Programming Guide)"
+title: "Passing arrays as arguments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/05/2018
 helpviewer_keywords: 
   - "arrays [C#], passing as arguments"
@@ -51,8 +52,8 @@ In the following example, a two-dimensional array of integers is initialized and
 
 ## See also
 
-[C# Programming Guide](../index.md)  
-[Arrays](index.md)  
-[Single-Dimensional Arrays](single-dimensional-arrays.md)  
-[Multidimensional Arrays](multidimensional-arrays.md)  
-[Jagged Arrays](jagged-arrays.md)  
+- [C# Programming Guide](../index.md)
+- [Arrays](index.md)
+- [Single-Dimensional Arrays](single-dimensional-arrays.md)
+- [Multidimensional Arrays](multidimensional-arrays.md)
+- [Jagged Arrays](jagged-arrays.md)

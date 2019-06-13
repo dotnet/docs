@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # RunDll32ShimW Function
 Executes the specified command.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
@@ -33,7 +33,7 @@ HRESULT RunDll32ShimW (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hwnd`  
  [in] A handle to a window in which the command output will be displayed.  
   
@@ -55,5 +55,6 @@ HRESULT RunDll32ShimW (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

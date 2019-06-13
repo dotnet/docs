@@ -19,13 +19,13 @@ Specifies that a procedure argument can be omitted when the procedure is called.
   
  The `Optional` modifier can be used in these contexts:  
   
--   [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
   
--   [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
   
--   [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
--   [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 > [!NOTE]
 >  When calling a procedure with or without optional parameters, you can pass arguments by position or by name. For more information, see [Passing Arguments by Position and by Name](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md).  
@@ -58,9 +58,10 @@ End Function
 ## Example  
  The following example demonstrates how to call a procedure with arguments passed by position and with arguments passed by name. The procedure has two optional parameters.  
   
- [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/VisualBasic/optional_1.vb)]  
+ [!code-vb[VbVbalrKeywords#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class8.vb#21)]  
   
-## See Also  
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

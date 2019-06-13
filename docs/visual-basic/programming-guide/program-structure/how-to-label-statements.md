@@ -22,13 +22,14 @@ Statement blocks are made up of lines of code delimited by colons. Lines of code
   
 ### To label a line of code  
   
--   Place an identifier, followed by a colon, at the beginning of the line of source code.  
+- Place an identifier, followed by a colon, at the beginning of the line of source code.  
   
      For example, the following lines of code are labeled with `Jump` and `120`, respectively:  
   
-     [!code-vb[VbVbalrStatements#708](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/how-to-label-statements_1.vb)]  
+     [!code-vb[VbVbalrStatements#708](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#708)]  
   
-## See Also  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+## See also
+
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)

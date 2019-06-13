@@ -1,5 +1,6 @@
 ---
-title: "How to: Implement Custom Event Accessors (C# Programming Guide)"
+title: "How to: Implement Custom Event Accessors - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "accessors [C#], event accessors"
@@ -15,8 +16,9 @@ An event is a special kind of multicast delegate that can only be invoked from w
 ## Example  
  The following example shows how to implement custom add and remove event accessors. Although you can substitute any code inside the accessors, we recommend that you lock the event before you add or remove a new event handler method.  
   
-[!code-csharp[IDrawingObject.OnDraw](codesnippet/CSharp/how-to-implement-interface-events_1.cs#IDrawingObjectOnDraw)]  
+[!code-csharp[IDrawingObject.OnDraw](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#IDrawingObjectOnDraw)]  
   
-## See Also  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [event](../../../csharp/language-reference/keywords/event.md)
+## See also
+
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [event](../../../csharp/language-reference/keywords/event.md)

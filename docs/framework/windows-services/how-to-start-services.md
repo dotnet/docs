@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "services, starting"
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Start Services
 After a service is installed, it must be started. Starting calls the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method on the service class. Usually, the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method defines the useful work the service will perform. After a service starts, it remains active until it is manually paused or stopped.  
@@ -22,11 +21,11 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
   
 ### To specify how a service should start  
   
-1.  After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
   
-2.  In the designer, click the service installer for the service you are working with.  
+2. In the designer, click the service installer for the service you are working with.  
   
-3.  In the **Properties** window, set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to one of the following:  
+3. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to one of the following:  
   
     |To have your service install|Set this value|  
     |----------------------------------|--------------------|  
@@ -43,36 +42,37 @@ After a service is installed, it must be started. Starting calls the <xref:Syste
   
 ### To manually start a service from Server Explorer  
   
-1.  In **Server Explorer**, add the server you want if it is not already listed. For more information, see How to: Access and Initialize Server Explorer-Database Explorer.  
+1. In **Server Explorer**, add the server you want if it is not already listed. For more information, see How to: Access and Initialize Server Explorer-Database Explorer.  
   
-2.  Expand the **Services** node, and then locate the service you want to start.  
+2. Expand the **Services** node, and then locate the service you want to start.  
   
-3.  Right-click the name of the service, and click **Start**.  
+3. Right-click the name of the service, and click **Start**.  
   
 ### To manually start a service from Services Control Manager  
   
-1.  Open the **Services Control Manager** by doing one of the following:  
+1. Open the **Services Control Manager** by doing one of the following:  
   
-    -   In Windows XP and 2000 Professional, right-click **My Computer** on the desktop, and then click **Manage**. In the dialog box that appears, expand the **Services and Applications** node.  
+    - In Windows XP and 2000 Professional, right-click **My Computer** on the desktop, and then click **Manage**. In the dialog box that appears, expand the **Services and Applications** node.  
   
          \- or -  
   
-    -   In Windows Server 2003 and Windows 2000 Server, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Services**.  
+    - In Windows Server 2003 and Windows 2000 Server, click **Start**, point to **Programs**, click **Administrative Tools**, and then click **Services**.  
   
         > [!NOTE]
         >  In Windows NT version 4.0, you can open this dialog box from **Control Panel**.  
   
      You should now see your service listed in the **Services** section of the window.  
   
-2.  Select your service in the list, right-click it, and then click **Start**.  
+2. Select your service in the list, right-click it, and then click **Start**.  
   
 ### To manually start a service from code  
   
-1.  Create an instance of the <xref:System.ServiceProcess.ServiceController> class, and configure it to interact with the service you want to administer.  
+1. Create an instance of the <xref:System.ServiceProcess.ServiceController> class, and configure it to interact with the service you want to administer.  
   
-2.  Call the <xref:System.ServiceProcess.ServiceController.Start%2A> method to start the service.  
+2. Call the <xref:System.ServiceProcess.ServiceController.Start%2A> method to start the service.  
   
-## See Also  
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+## See also
+
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)

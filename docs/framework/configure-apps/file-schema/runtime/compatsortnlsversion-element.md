@@ -1,5 +1,5 @@
 ---
-title: "&lt;CompatSortNLSVersion&gt; Element"
+title: "<CompatSortNLSVersion> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;CompatSortNLSVersion&gt; Element
+# \<CompatSortNLSVersion> Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  
   
  \<configuration>  
@@ -38,7 +38,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
   
 |Value|Description|  
 |-----------|-----------------|  
-|4096|The locale ID that represents an alternate sort order. In this case, 4096 represents the sort order of the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)] and earlier versions.|  
+|4096|The locale ID that represents an alternate sort order. In this case, 4096 represents the sort order of the .NET Framework 3.5 and earlier versions.|  
   
 ### Child Elements  
  None.  
@@ -51,7 +51,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)] conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)] and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
+ Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the .NET Framework 4 conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the .NET Framework 3.5 and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
   
 > [!IMPORTANT]
 >  Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.  
@@ -64,19 +64,19 @@ Specifies that the runtime should use legacy sort orders when performing string 
  [!code-csharp[String.BreakingChanges#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/string.breakingchanges/cs/example1.cs#1)]
  [!code-vb[String.BreakingChanges#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/string.breakingchanges/vb/example1.vb#1)]  
   
- When you run the example on the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], it displays the following output.  
+ When you run the example on the .NET Framework 4, it displays the following output.  
   
 ```  
 sta follows a in the sort order.  
 ```  
   
- This is completely different from the output that is displayed when you run the example on the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
+ This is completely different from the output that is displayed when you run the example on the .NET Framework 3.5.  
   
 ```  
 sta equals a in the sort order.  
 ```  
   
- However, if you add the following configuration file to the example's directory and then run the example on the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], the output is identical to that produced by the example when it is run on the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
+ However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4, the output is identical to that produced by the example when it is run on the .NET Framework 3.5.  
   
 ```xml  
 <?xml version ="1.0"?>  
@@ -87,6 +87,7 @@ sta equals a in the sort order.
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+## See also
+
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

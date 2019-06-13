@@ -8,7 +8,7 @@ ServiceThrottlingBehavior
   
 ## Syntax  
   
-```  
+```csharp  
 class ServiceThrottlingBehavior : Behavior  
 {  
   sint32 MaxConcurrentCalls;  
@@ -50,5 +50,6 @@ class ServiceThrottlingBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>

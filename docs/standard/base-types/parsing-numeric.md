@@ -22,9 +22,9 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
   
  A format provider is represented by an <xref:System.IFormatProvider> implementation. This interface has a single member, the <xref:System.IFormatProvider.GetFormat%2A> method, whose single parameter is a <xref:System.Type> object that represents the type to be formatted. This method returns the object that provides formatting information. .NET supports the following two <xref:System.IFormatProvider> implementations for parsing numeric strings:  
   
--   A <xref:System.Globalization.CultureInfo> object whose <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information.  
+- A <xref:System.Globalization.CultureInfo> object whose <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information.  
   
--   A <xref:System.Globalization.NumberFormatInfo> object whose <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=nameWithType> method returns itself.  
+- A <xref:System.Globalization.NumberFormatInfo> object whose <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=nameWithType> method returns itself.  
   
  The following example tries to convert each string in an array to a <xref:System.Double> value. It first tries to parse the string by using a format provider that reflects the conventions of the English (United States) culture. If this operation throws a <xref:System.FormatException>, it tries to parse the string by using a format provider that reflects the conventions of the French (France) culture.  
   
@@ -77,7 +77,8 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
  [!code-csharp[Parsing.Numbers#3](../../../samples/snippets/csharp/VS_Snippets_CLR/parsing.numbers/cs/unicode1.cs#3)]
  [!code-vb[Parsing.Numbers#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/unicode1.vb#3)]  
   
-## See Also  
- <xref:System.Globalization.NumberStyles>  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+## See also
+
+- <xref:System.Globalization.NumberStyles>
+- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)

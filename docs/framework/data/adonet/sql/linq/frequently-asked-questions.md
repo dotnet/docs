@@ -28,18 +28,18 @@ The following sections answer some common issues that you might encounter when y
   
  The exact details of connection usage depend on the following:  
   
--   Connection status if the <xref:System.Data.Linq.DataContext> is constructed with a connection object.  
+- Connection status if the <xref:System.Data.Linq.DataContext> is constructed with a connection object.  
   
--   Connection string settings (for example, enabling Multiple Active Result Sets (MARS). For more information, see [Multiple Active Result Sets (MARS)](../../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md).  
+- Connection string settings (for example, enabling Multiple Active Result Sets (MARS). For more information, see [Multiple Active Result Sets (MARS)](../../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md).  
   
 ## Updating Without Querying  
  Q. Can I update table data without first querying the database?  
   
  A. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not have set-based update commands, you can use either of the following techniques to update without first querying:  
   
--   Use <xref:System.Data.Linq.DataContext.ExecuteCommand%2A> to send SQL code.  
+- Use <xref:System.Data.Linq.DataContext.ExecuteCommand%2A> to send SQL code.  
   
--   Create a new instance of the object and initialize all the current values (fields) that affect the update. Then attach the object to the <xref:System.Data.Linq.DataContext> by using <xref:System.Data.Linq.Table%601.Attach%2A> and modify the field you want to change.  
+- Create a new instance of the object and initialize all the current values (fields) that affect the update. Then attach the object to the <xref:System.Data.Linq.DataContext> by using <xref:System.Data.Linq.Table%601.Attach%2A> and modify the field you want to change.  
   
 ## Unexpected Query Results  
  Q. My query is returning unexpected results. How can I inspect what is occurring?  
@@ -51,9 +51,9 @@ The following sections answer some common issues that you might encounter when y
   
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides two ways to return database-generated values by way of stored procedures:  
   
--   By naming the output result.  
+- By naming the output result.  
   
--   By explicitly specifying an output parameter.  
+- By explicitly specifying an output parameter.  
   
  The following is an example of incorrect output. Because [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] cannot map the results, it always returns 0:  
   
@@ -150,11 +150,11 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
   
  A. Take the following steps for this advanced scenario:  
   
-1.  In the .dbml file, modify the property by changing the <xref:System.Data.Linq.ITable.IsReadOnly%2A> flag to `True`.  
+1. In the .dbml file, modify the property by changing the <xref:System.Data.Linq.ITable.IsReadOnly%2A> flag to `True`.  
   
-2.  Add a partial class. Create a constructor with parameters for the read-only members.  
+2. Add a partial class. Create a constructor with parameters for the read-only members.  
   
-3.  Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
+3. Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
   
     > [!CAUTION]
     >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in Visual Studio, your changes might be overwritten.  
@@ -162,7 +162,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ## APTCA  
  Q. Is System.Data.Linq marked for use by partially trusted code?  
   
- A. Yes, the System.Data.Linq.dll assembly is among those [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Without this marking, assemblies in the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort-md.md)] are intended for use only by fully trusted code.  
+ A. Yes, the System.Data.Linq.dll assembly is among those .NET Framework assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute. Without this marking, assemblies in the .NET Framework are intended for use only by fully trusted code.  
   
  The principal scenario in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] for allowing partially trusted callers is to enable the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] assembly to be accessed from Web applications, where the *trust* configuration is Medium.  
   
@@ -179,7 +179,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
   
  A. Do not try to reuse instances of <xref:System.Data.Linq.DataContext>. Each <xref:System.Data.Linq.DataContext> maintains state (including an identity cache) for one particular edit/query session. To obtain new instances based on the current state of the database, use a new <xref:System.Data.Linq.DataContext>.  
   
- You can still use underlying [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] connection pooling. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
+ You can still use underlying ADO.NET connection pooling. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
   
 ## Second DataContext Is Not Updated  
  Q. I used one instance of <xref:System.Data.Linq.DataContext> to store values in the database. However, a second <xref:System.Data.Linq.DataContext> on the same database does not reflect the updated values. The second <xref:System.Data.Linq.DataContext> instance seems to return cached values.  
@@ -193,7 +193,8 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
   
  A. Read-only mode turns off the ability of the context to track changes.  
   
-## See Also  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
- [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)  
- [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md)
+## See also
+
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md)
+- [Security in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/security-in-linq-to-sql.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "WCF security"
   - "WCF, security"
 ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Securing Services
 Security of a Windows Communication Foundation (WCF) service consists of two primary requirements: transfer security and authorization. (A third requirement, auditing of security events, is described in [Auditing](../../../docs/framework/wcf/feature-details/auditing-security-events.md).) In brief, transfer security includes authentication (verifying the identity of both the service and the client), confidentiality (message encryption), and integrity (digital signing to detect tampering). Authorization is the control of access to resources, for example, allowing only privileged users to read a file. Using features of WCF, the two primary requirements are easily implemented.  
@@ -46,7 +44,7 @@ Security of a Windows Communication Foundation (WCF) service consists of two pri
  Security on the Internet consists of the same requirements as security on an intranet. A service needs to present its credentials to prove its authenticity, and clients need to prove their identity to the service. Once a client's identity is proven, the service can control how much access the client has to resources. However, due to the heterogeneous nature of the Internet, the credentials presented differ from those used on a Windows domain. Whereas a Kerberos controller handles the authentication of users on a domain with tickets for credentials, on the Internet, services and clients rely on any one of several different ways to present credentials. The objective of this topic, however, is to present a common approach that enables you to create a WCF service that is accessible on the Internet.  
   
 ### Using IIS and ASP.NET  
- The requirements of Internet security, and the mechanisms to solve those problems, are not new. IIS is Microsoft's Web server for the Internet and has many security features that address those problems; in addition, [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] includes security features that WCF services can use. To take advantage of these security features, host an WCF service on IIS.  
+ The requirements of Internet security, and the mechanisms to solve those problems, are not new. IIS is Microsoft's Web server for the Internet and has many security features that address those problems; in addition, ASP.NET includes security features that WCF services can use. To take advantage of these security features, host an WCF service on IIS.  
   
 #### Using ASP.NET Membership and Role Providers  
  ASP.NET includes a membership and role provider. The provider is a database of user name/password pairs for authenticating callers that also allows you to specify each caller's access privileges. With WCF, you can easily use a pre-existing membership and role provider through configuration. For a sample application that demonstrates this, see the [Membership and Role Provider](../../../docs/framework/wcf/samples/membership-and-role-provider.md) sample.  
@@ -94,21 +92,22 @@ Security of a Windows Communication Foundation (WCF) service consists of two pri
 ## Protection Levels  
  The `ProtectionLevel` property occurs on several attribute classes (such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes). The protection level is a value that specifies whether the messages (or message parts) that support a service are signed, signed and encrypted, or sent without signatures or encryption. For more information about the property, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md), and for programming examples, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md). For more information about designing a service contract with the `ProtectionLevel` in context, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md).  
   
-## See Also  
- <xref:System.ServiceModel>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- <xref:System.ServiceModel.ServiceContractAttribute>  
- <xref:System.ServiceModel.OperationContractAttribute>  
- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)  
- [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)  
- [Security](../../../docs/framework/wcf/feature-details/security.md)  
- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)  
- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)  
- [How to: Secure a Service with Windows Credentials](../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)  
- [How to: Set the Security Mode](../../../docs/framework/wcf/how-to-set-the-security-mode.md)  
- [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)  
- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- [How to: Impersonate a Client on a Service](../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)  
- [How to: Examine the Security Context](../../../docs/framework/wcf/how-to-examine-the-security-context.md)
+## See also
+
+- <xref:System.ServiceModel>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- <xref:System.ServiceModel.ServiceContractAttribute>
+- <xref:System.ServiceModel.OperationContractAttribute>
+- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)
+- [Delegation and Impersonation](../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)
+- [Security](../../../docs/framework/wcf/feature-details/security.md)
+- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)
+- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
+- [How to: Secure a Service with Windows Credentials](../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)
+- [How to: Set the Security Mode](../../../docs/framework/wcf/how-to-set-the-security-mode.md)
+- [How to: Specify the Client Credential Type](../../../docs/framework/wcf/how-to-specify-the-client-credential-type.md)
+- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [How to: Impersonate a Client on a Service](../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)
+- [How to: Examine the Security Context](../../../docs/framework/wcf/how-to-examine-the-security-context.md)

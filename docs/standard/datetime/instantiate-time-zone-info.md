@@ -39,6 +39,6 @@ If your application relies on a time zone that must be present, you should first
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
-[How to: Access the predefined UTC and local time zone objects](../../../docs/standard/datetime/access-utc-and-local.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
+- [How to: Access the predefined UTC and local time zone objects](../../../docs/standard/datetime/access-utc-and-local.md)

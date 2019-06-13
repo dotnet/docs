@@ -54,11 +54,9 @@ Note that if this addition is simply performed on the <xref:System.DateTimeOffse
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
 * That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[Performing arithmetic operations with dates and times](../../../docs/standard/datetime/performing-arithmetic-operations.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Performing arithmetic operations with dates and times](../../../docs/standard/datetime/performing-arithmetic-operations.md)

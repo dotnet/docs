@@ -20,5 +20,6 @@ This example shows how to use a concurrent bag to implement an object pool. Obje
  [!code-csharp[CDS#04](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/objectpool.cs#04)]
  [!code-vb[CDS#04](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/objectpool04.vb#04)]  
   
-## See Also  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+## See also
+
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

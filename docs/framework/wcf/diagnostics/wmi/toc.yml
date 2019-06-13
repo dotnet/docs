@@ -1,0 +1,157 @@
+- name: Using Windows Management Instrumentation for Diagnostics
+  href: index.md
+  items:
+  - name: WMI Class Reference
+    href: wmi-class-reference.md
+    items:
+    - name: ActivityTransfer
+      href: activitytransfer.md
+    - name: AppDomainInfo
+      href: appdomaininfo.md
+    - name: AspNetCompatibilityRequirementsAttribute
+      href: aspnetcompatibilityrequirementsattribute.md
+    - name: AsymmetricSecurityBindingElement
+      href: asymmetricsecuritybindingelement.md
+    - name: Behavior class
+      href: behavior-class.md
+    - name: BinaryMessageEncodingBindingElement
+      href: binarymessageencodingbindingelement.md
+    - name: Binding
+      href: binding.md
+    - name: BindingElement
+      href: bindingelement.md
+    - name: CallbackBehavior
+      href: callbackbehavior.md
+    - name: Channel class
+      href: channel-class.md
+    - name: ChannelPoolSettings
+      href: channelpoolsettings.md
+    - name: ClientCredentials
+      href: clientcredentials.md
+    - name: ClientViaBehavior
+      href: clientviabehavior.md
+    - name: CompositeDuplexBindingElement
+      href: compositeduplexbindingelement.md
+    - name: ConnectionOrientedTransportBindingElement
+      href: connectionorientedtransportbindingelement.md
+    - name: Contract
+      href: contract.md
+    - name: CustomBindingElement
+      href: custombindingelement.md
+    - name: DeliveryRequirementsAttribute
+      href: deliveryrequirementsattribute.md
+    - name: Endpoint
+      href: endpoint.md
+      items:
+      - name: GetOperationCounterInstanceName
+        href: getoperationcounterinstancename.md
+    - name: HttpsTransportBindingElement
+      href: httpstransportbindingelement.md
+    - name: HttpTransportBindingElement
+      href: httptransportbindingelement.md
+    - name: LocalServiceSecuritySettings
+      href: localservicesecuritysettings.md
+    - name: MatchAllEndpointBehavior
+      href: matchallendpointbehavior.md
+    - name: MessageEncodingBindingElement
+      href: messageencodingbindingelement.md
+    - name: MsmqBindingElementBase
+      href: msmqbindingelementbase.md
+    - name: MsmqIntegrationBindingElement
+      href: msmqintegrationbindingelement.md
+    - name: MsmqTransportBindingElement
+      href: msmqtransportbindingelement.md
+    - name: MtomMessageEncodingBindingElement
+      href: mtommessageencodingbindingelement.md
+    - name: MustUnderstandBehavior
+      href: mustunderstandbehavior.md
+    - name: NamedPipeConnectionPoolSettings
+      href: namedpipeconnectionpoolsettings.md
+    - name: NamedPipeTransportBindingElement
+      href: namedpipetransportbindingelement.md
+    - name: OneWayBindingElement
+      href: onewaybindingelement.md
+    - name: Operation class
+      href: operation-class.md
+    - name: OperationBehaviorAttribute
+      href: operationbehaviorattribute.md
+    - name: PeerCustomResolverBindingElement
+      href: peercustomresolverbindingelement.md
+    - name: PeerResolverBindingElement
+      href: peerresolverbindingelement.md
+    - name: PeerSecuritySettings
+      href: peersecuritysettings.md
+    - name: PeerTransportBindingElement
+      href: peertransportbindingelement.md
+    - name: PeerTransportSecuritySettings
+      href: peertransportsecuritysettings.md
+    - name: PnrpPeerResolverBindingElement
+      href: pnrppeerresolverbindingelement.md
+    - name: PrivacyNoticeBindingElement
+      href: privacynoticebindingelement.md
+    - name: ReliableSessionBindingElement
+      href: reliablesessionbindingelement.md
+    - name: SecurityBindingElement
+      href: securitybindingelement.md
+    - name: Service
+      href: service.md
+    - name: ServiceAppDomain
+      href: serviceappdomain.md
+    - name: ServiceAuthorizationBehavior
+      href: serviceauthorizationbehavior.md
+    - name: ServiceBehaviorAttribute
+      href: servicebehaviorattribute.md
+    - name: ServiceCredentials
+      href: servicecredentials.md
+    - name: ServiceDebugBehavior
+      href: servicedebugbehavior.md
+    - name: ServiceMetadataBehavior
+      href: servicemetadatabehavior.md
+    - name: ServiceSecurityAuditBehavior
+      href: servicesecurityauditbehavior.md
+    - name: ServiceThrottlingBehavior
+      href: servicethrottlingbehavior.md
+    - name: ServiceTimeoutsBehavior
+      href: servicetimeoutsbehavior.md
+    - name: ServiceToEndpointAssociation
+      href: servicetoendpointassociation.md
+    - name: SslStreamSecurityBindingElement
+      href: sslstreamsecuritybindingelement.md
+    - name: SymmetricSecurityBindingElement
+      href: symmetricsecuritybindingelement.md
+    - name: SynchronousReceiveBehavior
+      href: synchronousreceivebehavior.md
+    - name: TcpConnectionPoolSettings
+      href: tcpconnectionpoolsettings.md
+    - name: TcpTransportBindingElement
+      href: tcptransportbindingelement.md
+    - name: TextMessageEncodingBindingElement
+      href: textmessageencodingbindingelement.md
+    - name: TraceListener
+      href: tracelistener.md
+    - name: TraceListenerArgument
+      href: tracelistenerargument.md
+    - name: TransactedBatchingBehavior
+      href: transactedbatchingbehavior.md
+    - name: TransactionFlowAttribute
+      href: transactionflowattribute.md
+    - name: TransactionFlowBindingElement
+      href: transactionflowbindingelement.md
+    - name: TransportBindingElement
+      href: transportbindingelement.md
+    - name: TransportSecurityBindingElement
+      href: transportsecuritybindingelement.md
+    - name: UseManagedPresentationBindingElement
+      href: usemanagedpresentationbindingelement.md
+    - name: WindowsStreamSecurityBindingElement
+      href: windowsstreamsecuritybindingelement.md
+    - name: WSAT_TraceEvent
+      href: wsat-traceevent.md
+    - name: WSAT_TraceProvider
+      href: wsat-traceprovider.md
+    - name: WSAT_TraceRecord
+      href: wsat-tracerecord.md
+    - name: XmlDictionaryReaderQuotas
+      href: xmldictionaryreaderquotas.md
+    - name: XmlSerializerOperationBehavior
+      href: xmlserializeroperationbehavior.md

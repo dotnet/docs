@@ -5,18 +5,14 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # How to: Assign User Information to Group Connections
 
-  
  The following example demonstrates how to assign user information to group connections, assuming that the application sets the variables *UserName*, *SecurelyStoredPassword*, and *Domain* before this section of code is called and that *UserName* is unique.  
   
 ### To assign user information to a group connection  
   
-1.  Create a connection group name.  
+1. Create a connection group name.  
   
     ```csharp  
     SHA1Managed Sha1 = new SHA1Managed();  
@@ -30,7 +26,7 @@ manager: "markl"
     Dim secureGroupName As [String] = Encoding.Default.GetString(updHash)  
     ```  
   
-2.  Create a request for a specific URL. For example, the following code creates a request for the URL `http://www.contoso.com.`  
+2. Create a request for a specific URL. For example, the following code creates a request for the URL `http://www.contoso.com.`  
   
     ```csharp  
     WebRequest myWebRequest=WebRequest.Create("http://www.contoso.com");  
@@ -40,7 +36,7 @@ manager: "markl"
     Dim myWebRequest As WebRequest = WebRequest.Create("http://www.contoso.com")  
     ```  
   
-3.  Set the credentials and Connection GroupName for the Web request, and call **GetResponse** to retrieve a **WebResponse** object.  
+3. Set the credentials and Connection GroupName for the Web request, and call **GetResponse** to retrieve a **WebResponse** object.  
   
     ```csharp  
     myWebRequest.Credentials = new NetworkCredential(UserName, SecurelyStoredPassword, Domain);   
@@ -56,7 +52,7 @@ manager: "markl"
     Dim myWebResponse As WebResponse = myWebRequest.GetResponse()  
     ```  
   
-4.  Close the response stream after using the WebRespose object.  
+4. Close the response stream after using the WebRespose object.  
   
     ```csharp  
     MyWebResponse.Close();  
@@ -105,6 +101,7 @@ Dim myWebResponse As WebResponse = myWebRequest.GetResponse()
 MyWebResponse.Close()  
 ```  
   
-## See Also  
- [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)  
- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)
+## See also
+
+- [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)
+- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)

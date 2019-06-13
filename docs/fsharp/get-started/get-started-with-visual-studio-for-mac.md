@@ -13,7 +13,7 @@ One of the most basic projects in Visual Studio for Mac is the Console Applicati
 
 1. On the **File** menu, point to **New Solution**.
 
-2.  In the New Project dialog, there are 2 different templates for Console Application.  There is one under Other -> .NET which targets the .NET Framework.  The other template is under .NET Core -> App which targets .NET Core.  Either template should work for the purpose of this article.
+2. In the New Project dialog, there are 2 different templates for Console Application.  There is one under Other -> .NET which targets the .NET Framework.  The other template is under .NET Core -> App which targets .NET Core.  Either template should work for the purpose of this article.
 
 3. Under console app, change C# to F# if needed.  Choose the **Next** button to move forward!  
 
@@ -108,8 +108,9 @@ This is only a glimpse into what you can do with F# Interactive.  To learn more,
 If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio for Mac and run.  There are also some great external resources you can use, showcased in the [F# Guide](../index.md).
 
 ## See also
- [Visual F#](../index.md)  
- [Tour of F#](../tour.md)  
- [F# language reference](../language-reference/index.md)  
- [Type inference](../language-reference/type-inference.md)  
- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)  
+
+- [Visual F#](../index.md)
+- [Tour of F#](../tour.md)
+- [F# language reference](../language-reference/index.md)
+- [Type inference](../language-reference/type-inference.md)
+- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

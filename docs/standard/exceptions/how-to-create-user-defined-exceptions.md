@@ -27,5 +27,6 @@ When creating your own exceptions, end the class name of the user-defined except
 > [!NOTE]
 > In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller). For more information, see [Best practices for exceptions](best-practices-for-exceptions.md).
 
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

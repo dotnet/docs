@@ -5,13 +5,10 @@ helpviewer_keywords:
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "markl"
 ---
 # Accessibility Best Practices
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](http://go.microsoft.com/fwlink/?LinkID=156746).  
+>  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  Implementing the following best practices in controls or applications will improve their accessibility for people who use [!INCLUDE[TLA#tla_at](../../../includes/tlasharptla-at-md.md)] devices. Many of these best practices focus on good [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] design. Each best practice includes implementation information for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls or applications. In many cases, the work to meet these best practices is already included in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls.  
   
@@ -75,9 +72,9 @@ manager: "markl"
   
  Applications should provide the following keyboard interfaces:  
   
--   tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
+- tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
   
--   logical tab order  
+- logical tab order  
   
 <a name="Show_the_Keyboard_Focus"></a>   
 ### Show the Keyboard Focus  
@@ -87,11 +84,11 @@ manager: "markl"
   
  Applications should do the following with keyboard focus:  
   
--   one item should always have keyboard focus  
+- one item should always have keyboard focus  
   
--   keyboard focus should be visible and obvious  
+- keyboard focus should be visible and obvious  
   
--   selections and/or focused items should be visually highlighted  
+- selections and/or focused items should be visually highlighted  
   
 <a name="Support_Navigation_Standards_and_Powerful_Navigation"></a>   
 ### Support Navigation Standards and Powerful Navigation Schemes  
@@ -99,11 +96,11 @@ manager: "markl"
   
  Applications should provide the following keyboard interfaces:  
   
--   shortcut keys and underlined access keys for all commands, menus and controls  
+- shortcut keys and underlined access keys for all commands, menus and controls  
   
--   keyboard shortcuts to important links  
+- keyboard shortcuts to important links  
   
--   all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
+- all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
   
 <a name="Do_not_let_Mouse_Location_Interfere_with_Keyboard"></a>   
 ### Do Not Let Mouse Location Interfere with Keyboard Navigation  
@@ -127,7 +124,8 @@ manager: "markl"
 ### Use Standard Input APIs with Device-Independent Calls  
  Device-independent calls ensure keyboard and mouse feature equality, while providing [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
-## See Also  
- <xref:System.Windows.Automation.Peers>  
- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
- [Guidelines for Keyboard User Interface Design](http://msdn2.microsoft.com/library/ms971323.aspx)
+## See also
+
+- <xref:System.Windows.Automation.Peers>
+- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))
+- [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

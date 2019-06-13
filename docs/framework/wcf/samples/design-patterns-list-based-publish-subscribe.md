@@ -9,7 +9,7 @@ This sample illustrates the List-based Publish-Subscribe pattern implemented as 
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The List-based Publish-Subscribe design pattern is described in the Microsoft Patterns & Practices publication, [Integration Patterns](http://go.microsoft.com/fwlink/?LinkId=95894). The Publish-Subscribe pattern passes information to a collection of recipients who have subscribed to an information topic. List-based publish-subscribe maintains a list of subscribers. When there is information to share, a copy is sent to each subscriber on the list. This sample demonstrates a dynamic list-based publish-subscribe pattern, where clients can subscribe or unsubscribe as often as required.  
+ The List-based Publish-Subscribe design pattern is described in the Microsoft Patterns & Practices publication, [Integration Patterns](https://go.microsoft.com/fwlink/?LinkId=95894). The Publish-Subscribe pattern passes information to a collection of recipients who have subscribed to an information topic. List-based publish-subscribe maintains a list of subscribers. When there is information to share, a copy is sent to each subscriber on the list. This sample demonstrates a dynamic list-based publish-subscribe pattern, where clients can subscribe or unsubscribe as often as required.  
   
  The List-based Publish-Subscribe sample consists of a client, a service, and a data source program. There can be more than one client and more than one data source program running. Clients subscribe to the service, receive notifications, and unsubscribe. Data source programs send information to the service to be shared with all current subscribers.  
   
@@ -106,53 +106,51 @@ public class PriceChangeEventArgs : EventArgs
   
 ### To set up and build the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
 ### To run the sample on the same machine  
   
-1.  Test that you can access the service using a browser by entering the following address: http://localhost/servicemodelsamples/service.svc. A confirmation page should be displayed in response.  
+1. Test that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response.  
   
-2.  Run Client.exe from \client\bin\\, from under the language-specific folder. Client activity is displayed on the client console window. Launch several clients.  
+2. Run Client.exe from \client\bin\\, from under the language-specific folder. Client activity is displayed on the client console window. Launch several clients.  
   
-3.  Run Datasource.exe from \datasource\bin\\, from under the language-specific folder. Data source activity is displayed on the console window. Once the data source sends information to the service, it should be passed on to each client.  
+3. Run Datasource.exe from \datasource\bin\\, from under the language-specific folder. Data source activity is displayed on the console window. Once the data source sends information to the service, it should be passed on to each client.  
   
-4.  If the client, data source, and service programs are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4. If the client, data source, and service programs are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across machines  
   
-1.  Set up the service machine:  
+1. Set up the service machine:  
   
-    1.  On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
+    1. On the service machine, create a virtual directory named ServiceModelSamples. The batch file Setupvroot.bat from the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md) can be used to create the disk directory and virtual directory.  
   
-    2.  Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service machine. Be sure to include the files in the \bin directory.  
+    2. Copy the service program files from %SystemDrive%\Inetpub\wwwroot\servicemodelsamples to the ServiceModelSamples virtual directory on the service machine. Be sure to include the files in the \bin directory.  
   
-    3.  Test that you can access the service from the client machine using a browser.  
+    3. Test that you can access the service from the client machine using a browser.  
   
-2.  Set up the client machines:  
+2. Set up the client machines:  
   
-    1.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machines.  
+    1. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client machines.  
   
-    2.  In each client configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
+    2. In each client configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
   
-3.  Set up the data source machine:  
+3. Set up the data source machine:  
   
-    1.  Copy the data source program files from the \datasource\bin\ folder, under the language-specific folder, to the data source machine.  
+    1. Copy the data source program files from the \datasource\bin\ folder, under the language-specific folder, to the data source machine.  
   
-    2.  In the data source configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
+    2. In the data source configuration file, change the address value of the endpoint definition to match the new address of your service. Replace any references to "localhost" with a fully-qualified domain name in the address.  
   
-4.  On the client machines, launch Client.exe from a command prompt.  
+4. On the client machines, launch Client.exe from a command prompt.  
   
-5.  On the data source machine, launch Datasource.exe from a command prompt.  
+5. On the data source machine, launch Datasource.exe from a command prompt.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DesignPatterns/ListBasedPublishSubscribe`  
-  
-## See Also

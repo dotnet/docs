@@ -1,5 +1,5 @@
 ---
-title: "&lt;disableFusionUpdatesFromADManager&gt; Element"
+title: "<disableFusionUpdatesFromADManager> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "disableFusionUpdatesFromADManager element"
@@ -8,7 +8,7 @@ ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;disableFusionUpdatesFromADManager&gt; Element
+# \<disableFusionUpdatesFromADManager> Element
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.  
   
  \<configuration> Element  
@@ -34,7 +34,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
   
 |Value|Description|  
 |-----------|-----------------|  
-|0|Do not disable the ability to override Fusion settings. This is the default behavior, starting with the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)].|  
+|0|Do not disable the ability to override Fusion settings. This is the default behavior, starting with the .NET Framework 4.|  
 |1|Disable the ability to override Fusion settings. This reverts to the behavior of earlier versions of the .NET Framework.|  
   
 ### Child Elements  
@@ -48,7 +48,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)], the default behavior is to allow the <xref:System.AppDomainManager> object to override configuration settings by using the <xref:System.AppDomainSetup.ConfigurationFile%2A> property or the <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method of the <xref:System.AppDomainSetup> object that is passed to your implementation of the <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> method, in your subclass of <xref:System.AppDomainManager>. For the default application domain, the settings you change override the settings that were specified by the application configuration file. For other application domains, they override the configuration settings that were passed to the <xref:System.AppDomainManager.CreateDomain%2A?displayProperty=nameWithType> or <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> method.  
+ Starting with the .NET Framework 4, the default behavior is to allow the <xref:System.AppDomainManager> object to override configuration settings by using the <xref:System.AppDomainSetup.ConfigurationFile%2A> property or the <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method of the <xref:System.AppDomainSetup> object that is passed to your implementation of the <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> method, in your subclass of <xref:System.AppDomainManager>. For the default application domain, the settings you change override the settings that were specified by the application configuration file. For other application domains, they override the configuration settings that were passed to the <xref:System.AppDomainManager.CreateDomain%2A?displayProperty=nameWithType> or <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> method.  
   
  You can either pass new configuration information, or pass null (`Nothing` in Visual Basic) to eliminate configuration information that was passed in.  
   
@@ -69,7 +69,8 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+## See also
+
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

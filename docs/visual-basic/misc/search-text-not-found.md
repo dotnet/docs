@@ -10,7 +10,8 @@ The text you specified was not found.
   
 ## To correct this error  
   
-1.  Check that the specified text is spelled correctly.  
+1. Check that the specified text is spelled correctly.  
   
-## See Also  
- [How to: Search Interactively](http://msdn.microsoft.com/library/e9fdbfab-bd59-401a-92d3-7ce1652b243c)
+## See also
+
+- [Find and replace text](/visualstudio/ide/finding-and-replacing-text)

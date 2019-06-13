@@ -35,22 +35,23 @@ The BCL provides the most foundational types and utility functionality and are t
 
 .NET includes a set of data structures that are the workhorses of almost any .NET apps. These are mostly collections, but also include other types.
 
-*   <xref:System.Array> - Represents an array of strongly types objects that can be accessed by index. Has a fixed size, per its construction.
-*   <xref:System.Collections.Generic.List%601> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
-*   <xref:System.Collections.Generic.Dictionary%602> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
-*   <xref:System.Uri> - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
-*   <xref:System.DateTime> - Represents an instant in time, typically expressed as a date and time of day.
+* <xref:System.Array> - Represents an array of strongly types objects that can be accessed by index. Has a fixed size, per its construction.
+* <xref:System.Collections.Generic.List%601> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
+* <xref:System.Collections.Generic.Dictionary%602> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
+* <xref:System.Uri> - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
+* <xref:System.DateTime> - Represents an instant in time, typically expressed as a date and time of day.
 
 ## Utility APIs
 
 .NET includes a set of utility APIs that provide functionality for many important tasks.
 
-*   <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
-*   <xref:System.Xml.Linq.XDocument> - An API for loading, and querying XML documents with LINQ.
-*   <xref:System.IO.StreamReader> - An API for reading files (<xref:System.IO.StringWriter>) Can be used to write files.
+* <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
+* <xref:System.Xml.Linq.XDocument> - An API for loading, and querying XML documents with LINQ.
+* <xref:System.IO.StreamReader> - An API for reading files. 
+* <xref:System.IO.StreamWriter> - An API for writing files.
 
 ## App-Model APIs
 
 There are many app-models that can be used with .NET, provided by several companies.
 
-*   [ASP.NET](http://asp.net) - Provides a web framework for building Web sites and services. Supported on Windows, Linux and macOS (depends on ASP.NET version).
+* [ASP.NET](https://www.asp.net) - Provides a web framework for building Web sites and services. Supported on Windows, Linux and macOS (depends on ASP.NET version).

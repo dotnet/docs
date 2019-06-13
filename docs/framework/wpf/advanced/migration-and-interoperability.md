@@ -18,9 +18,9 @@ ms.assetid: d655de05-bf63-4814-bc64-6b3be01c70a2
 This page contains links to documents that discuss how to implement interoperation between [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications and other types of [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] applications.  
   
 ## In This Section  
- [WPF and Windows Forms Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-windows-forms-interoperation.md)  
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
- [WPF and Direct3D9 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-direct3d9-interoperation.md)  
+ [WPF and Windows Forms Interoperation](wpf-and-windows-forms-interoperation.md)  
+ [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)  
+ [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md)  
   
 ## Reference  
   

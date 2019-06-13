@@ -41,25 +41,25 @@ ms.author: "mairaw"
   
  This overview consists of the following sections:  
   
--   [The Profiling API](#profiling_api)  
+- [The Profiling API](#profiling_api)  
   
--   [Supported Features](#support)  
+- [Supported Features](#support)  
   
--   [Notification Threads](#notification_threads)  
+- [Notification Threads](#notification_threads)  
   
--   [Security](#security)  
+- [Security](#security)  
   
--   [Combining Managed and Unmanaged Code in a Code Profiler](#combining_managed_unmanaged)  
+- [Combining Managed and Unmanaged Code in a Code Profiler](#combining_managed_unmanaged)  
   
--   [Profiling Unmanaged Code](#unmanaged)  
+- [Profiling Unmanaged Code](#unmanaged)  
   
--   [Using COM](#com)  
+- [Using COM](#com)  
   
--   [Call stacks](#call_stacks)  
+- [Call stacks](#call_stacks)  
   
--   [Callbacks and Stack Depth](#callbacks)  
+- [Callbacks and Stack Depth](#callbacks)  
   
--   [Related Topics](#related_topics)  
+- [Related Topics](#related_topics)  
   
 <a name="profiling_api"></a>   
 ## The Profiling API  
@@ -72,8 +72,7 @@ ms.author: "mairaw"
   
  The following illustration shows how the profiler DLL interacts with the application that is being profiled and the CLR.  
   
- ![Profiling Architecture](../../../../docs/framework/unmanaged-api/profiling/media/profilingarch.png "ProfilingArch")  
-Profiling architecture  
+ ![Screenshot that shows the profiling architecture.](./media/profiling-overview/profiling-architecture.png)  
   
 ### The Notification Interfaces  
  [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md) and [ICorProfilerCallback2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md) can be considered notification interfaces. These interfaces consist of methods such as [ClassLoadStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md), [ClassLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md), and [JITCompilationStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md). Each time the CLR loads or unloads a class, compiles a function, and so on, it calls the corresponding method in the profiler's `ICorProfilerCallback` or `ICorProfilerCallback2` interface.  
@@ -91,33 +90,33 @@ Profiling architecture
   
  The profiling API retrieves information about the following actions and events that occur in the CLR:  
   
--   CLR startup and shutdown events.  
+- CLR startup and shutdown events.  
   
--   Application domain creation and shutdown events.  
+- Application domain creation and shutdown events.  
   
--   Assembly loading and unloading events.  
+- Assembly loading and unloading events.  
   
--   Module loading and unloading events.  
+- Module loading and unloading events.  
   
--   COM vtable creation and destruction events.  
+- COM vtable creation and destruction events.  
   
--   Just-in-time (JIT) compilation and code-pitching events.  
+- Just-in-time (JIT) compilation and code-pitching events.  
   
--   Class loading and unloading events.  
+- Class loading and unloading events.  
   
--   Thread creation and destruction events.  
+- Thread creation and destruction events.  
   
--   Function entry and exit events.  
+- Function entry and exit events.  
   
--   Exceptions.  
+- Exceptions.  
   
--   Transitions between managed and unmanaged code execution.  
+- Transitions between managed and unmanaged code execution.  
   
--   Transitions between different runtime contexts.  
+- Transitions between different runtime contexts.  
   
--   Information about runtime suspensions.  
+- Information about runtime suspensions.  
   
--   Information about the runtime memory heap and garbage collection activity.  
+- Information about the runtime memory heap and garbage collection activity.  
   
  The profiling API can be called from any (non-managed) COM-compatible language.  
   
@@ -128,19 +127,19 @@ Profiling architecture
 ### Unsupported Functionality  
  The profiling API does not support the following functionality:  
   
--   Unmanaged code, which must be profiled using conventional Win32 methods. However, the CLR profiler includes transition events to determine the boundaries between managed and unmanaged code.  
+- Unmanaged code, which must be profiled using conventional Win32 methods. However, the CLR profiler includes transition events to determine the boundaries between managed and unmanaged code.  
   
--   Self-modifying applications that modify their own code for purposes such as aspect-oriented programming.  
+- Self-modifying applications that modify their own code for purposes such as aspect-oriented programming.  
   
--   Bounds checking, because the profiling API does not provide this information. The CLR provides intrinsic support for bounds checking of all managed code.  
+- Bounds checking, because the profiling API does not provide this information. The CLR provides intrinsic support for bounds checking of all managed code.  
   
--   Remote profiling, which is not supported for the following reasons:  
+- Remote profiling, which is not supported for the following reasons:  
   
-    -   Remote profiling extends execution time. When you use the profiling interfaces, you must minimize execution time so that profiling results will not be unduly affected. This is especially true when execution performance is being monitored. However, remote profiling is not a limitation when the profiling interfaces are used to monitor memory usage or to obtain run-time information about stack frames, objects, and so on.  
+    - Remote profiling extends execution time. When you use the profiling interfaces, you must minimize execution time so that profiling results will not be unduly affected. This is especially true when execution performance is being monitored. However, remote profiling is not a limitation when the profiling interfaces are used to monitor memory usage or to obtain run-time information about stack frames, objects, and so on.  
   
-    -   The CLR code profiler must register one or more callback interfaces with the runtime on the local computer on which the profiled application is running. This limits the ability to create a remote code profiler.  
+    - The CLR code profiler must register one or more callback interfaces with the runtime on the local computer on which the profiled application is running. This limits the ability to create a remote code profiler.  
   
--   Profiling in production environments with high-availability requirements. The profiling API was created to support development-time diagnostics. It has not undergone the rigorous testing required to support production environments.  
+- Profiling in production environments with high-availability requirements. The profiling API was created to support development-time diagnostics. It has not undergone the rigorous testing required to support production environments.  
   
  [Back to top](#top)  
   
@@ -180,9 +179,9 @@ Profiling architecture
 ## Profiling Unmanaged Code  
  The common language runtime (CLR) profiling API provides minimal support for profiling unmanaged code. The following functionality is provided:  
   
--   Enumeration of stack chains. This feature enables a code profiler to determine the boundary between managed code and unmanaged code.  
+- Enumeration of stack chains. This feature enables a code profiler to determine the boundary between managed code and unmanaged code.  
   
--   Determination whether a stack chain corresponds to managed code or native code.  
+- Determination whether a stack chain corresponds to managed code or native code.  
   
  In the .NET Framework versions 1.0 and 1.1, these methods are available through the in-process subset of the CLR debugging API. They are defined in the CorDebug.idl file.  
   
@@ -203,7 +202,7 @@ Profiling architecture
 ### Stack Snapshot  
  A stack snapshot is a trace of the stack of a thread at an instant in time. The profiling API supports the tracing of managed functions on the stack, but it leaves the tracing of unmanaged functions to the profiler's own stack walker.  
   
- For more information about how to program the profiler to walk managed stacks, see the [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) method in this documentation set, and [Profiler Stack Walking in the .NET Framework 2.0: Basics and Beyond](http://go.microsoft.com/fwlink/?LinkId=73638).
+ For more information about how to program the profiler to walk managed stacks, see the [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) method in this documentation set, and [Profiler Stack Walking in the .NET Framework 2.0: Basics and Beyond](https://go.microsoft.com/fwlink/?LinkId=73638).
   
 ### Shadow Stack  
  Using the snapshot method too frequently can quickly create a performance issue. If you want to take stack traces frequently, your profiler should instead build a shadow stack by using the [FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md), [FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md), [FunctionTailcall2](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md), and [ICorProfilerCallback2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md) exception callbacks. The shadow stack is always current and can quickly be copied to storage whenever a stack snapshot is needed.  

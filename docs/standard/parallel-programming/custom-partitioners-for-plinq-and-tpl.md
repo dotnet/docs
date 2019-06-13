@@ -94,27 +94,28 @@ To parallelize an operation on a data source, one of the essential steps is to *
 ### Contract for Partitioners  
  When you implement a custom partitioner, follow these guidelines to help ensure correct interaction with PLINQ and <xref:System.Threading.Tasks.Parallel.ForEach%2A> in the TPL:  
   
--   If <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A> is called with an argument of zero or less for `partitionsCount`, throw <xref:System.ArgumentOutOfRangeException>. Although PLINQ and TPL will never pass in a `partitionCount` equal to 0, we nevertheless recommend that you guard against the possibility.  
+- If <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A> is called with an argument of zero or less for `partitionsCount`, throw <xref:System.ArgumentOutOfRangeException>. Although PLINQ and TPL will never pass in a `partitionCount` equal to 0, we nevertheless recommend that you guard against the possibility.  
   
--   <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A> and <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A> should always return `partitionsCount` number of partitions. If the partitioner runs out of data and cannot create as many partitions as requested, then the method should return an empty enumerator for each of the remaining partitions. Otherwise, both PLINQ and TPL will throw an <xref:System.InvalidOperationException>.  
+- <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A> and <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A> should always return `partitionsCount` number of partitions. If the partitioner runs out of data and cannot create as many partitions as requested, then the method should return an empty enumerator for each of the remaining partitions. Otherwise, both PLINQ and TPL will throw an <xref:System.InvalidOperationException>.  
   
--   <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A>, <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A>, <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, and <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> should never return `null` (`Nothing` in Visual Basic). If they do, PLINQ / TPL will throw an <xref:System.InvalidOperationException>.  
+- <xref:System.Collections.Concurrent.Partitioner%601.GetPartitions%2A>, <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderablePartitions%2A>, <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, and <xref:System.Collections.Concurrent.OrderablePartitioner%601.GetOrderableDynamicPartitions%2A> should never return `null` (`Nothing` in Visual Basic). If they do, PLINQ / TPL will throw an <xref:System.InvalidOperationException>.  
   
--   Methods that return partitions should always return partitions that can fully and uniquely enumerate the data source. There should be no duplication in the data source or skipped items unless specifically required by the design of the partitioner. If this rule is not followed, then the output order may be scrambled.  
+- Methods that return partitions should always return partitions that can fully and uniquely enumerate the data source. There should be no duplication in the data source or skipped items unless specifically required by the design of the partitioner. If this rule is not followed, then the output order may be scrambled.  
   
--   The following Boolean getters must always accurately return the following values so that the output order is not scrambled:  
+- The following Boolean getters must always accurately return the following values so that the output order is not scrambled:  
   
-    -   `KeysOrderedInEachPartition`: Each partition returns elements with increasing key indices.  
+    - `KeysOrderedInEachPartition`: Each partition returns elements with increasing key indices.  
   
-    -   `KeysOrderedAcrossPartitions`: For all partitions that are returned, the key indices in partition *i* are higher than the key indices in partition *i*-1.  
+    - `KeysOrderedAcrossPartitions`: For all partitions that are returned, the key indices in partition *i* are higher than the key indices in partition *i*-1.  
   
-    -   `KeysNormalized`: All key indices are monotonically increasing without gaps, starting from zero.  
+    - `KeysNormalized`: All key indices are monotonically increasing without gaps, starting from zero.  
   
--   All indices must be unique. There may not be duplicate indices. If this rule is not followed, then the output order may be scrambled.  
+- All indices must be unique. There may not be duplicate indices. If this rule is not followed, then the output order may be scrambled.  
   
--   All indices must be nonnegative. If this rule is not followed, then PLINQ/TPL may throw exceptions.  
+- All indices must be nonnegative. If this rule is not followed, then PLINQ/TPL may throw exceptions.  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
- [How to: Implement Dynamic Partitions](../../../docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md)  
- [How to: Implement a Partitioner for Static Partitioning](../../../docs/standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+- [How to: Implement Dynamic Partitions](../../../docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md)
+- [How to: Implement a Partitioner for Static Partitioning](../../../docs/standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md)

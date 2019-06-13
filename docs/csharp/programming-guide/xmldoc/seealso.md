@@ -1,5 +1,6 @@
 ---
-title: "&lt;seealso&gt; (C# Programming Guide)"
+title: "<seealso> - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "cref"
@@ -13,14 +14,14 @@ helpviewer_keywords:
   - "<seealso> C# XML tag"
 ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 ---
-# &lt;seealso&gt; (C# Programming Guide)
+# \<seealso> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
 <seealso cref="member"/>  
 ```  
   
-#### Parameters  
+## Parameters  
  cref = " `member`"  
  A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.`member` must appear within double quotation marks (" ").  
   
@@ -34,6 +35,7 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 ## Example  
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<seealso>.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

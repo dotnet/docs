@@ -1,5 +1,7 @@
 ---
-title: "null keyword (C# Reference)"
+title: "null keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "null"
@@ -25,6 +27,5 @@ The following example demonstrates some behaviors of the null keyword:
 - [C# Reference](../../language-reference/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Literal Keywords](literal-keywords.md)
 - [Default Values Table](default-values-table.md)
 - [Nothing](../../../visual-basic/language-reference/nothing.md)

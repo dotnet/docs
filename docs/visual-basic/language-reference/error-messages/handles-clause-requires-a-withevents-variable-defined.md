@@ -15,7 +15,8 @@ You did not supply a `WithEvents` variable in your `Handles` clause. The `Handle
   
 ## To correct this error  
   
--   Supply the necessary `WithEvents` variable.  
+- Supply the necessary `WithEvents` variable.  
   
-## See Also  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+## See also
+
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)

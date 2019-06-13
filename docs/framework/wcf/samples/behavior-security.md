@@ -2,8 +2,6 @@
 title: "Behavior Security"
 ms.date: "03/30/2017"
 ms.assetid: 19710ae3-f197-4d28-ba9d-52e465006819
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Behavior Security
 This section includes samples that demonstrate configuring security for service behaviors.  
@@ -13,7 +11,7 @@ This section includes samples that demonstrate configuring security for service 
  This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations.  
   
  [Membership and Role Provider](../../../../docs/framework/wcf/samples/membership-and-role-provider.md)  
- This sample demonstrates how a service can use the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership and role providers to authenticate and authorize clients.  
+ This sample demonstrates how a service can use the ASP.NET membership and role providers to authenticate and authorize clients.  
   
  [Authorizing Access to Service Operations](../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)  
  This sample demonstrates how to use the [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to enable use of the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to authorize access to service operations.  

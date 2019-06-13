@@ -19,41 +19,41 @@ Specifies that a property or procedure redeclares one or more existing propertie
   
 ## Rules  
   
--   **Declaration Context.** You can use `Overloads` only in a property or procedure declaration statement.  
+- **Declaration Context.** You can use `Overloads` only in a property or procedure declaration statement.  
   
--   **Combined Modifiers.** You cannot specify `Overloads` together with [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) in the same procedure declaration.  
+- **Combined Modifiers.** You cannot specify `Overloads` together with [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) in the same procedure declaration.  
   
--   **Required Differences.** The *signature* in this declaration must be different from the signature of every property or procedure that it overloads. The signature comprises the property or procedure name together with the following:  
+- **Required Differences.** The *signature* in this declaration must be different from the signature of every property or procedure that it overloads. The signature comprises the property or procedure name together with the following:  
   
-    -   the number of parameters  
+    - the number of parameters  
   
-    -   the order of the parameters  
+    - the order of the parameters  
   
-    -   the data types of the parameters  
+    - the data types of the parameters  
   
-    -   the number of type parameters (for a generic procedure)  
+    - the number of type parameters (for a generic procedure)  
   
-    -   the return type (only for a conversion operator procedure)  
+    - the return type (only for a conversion operator procedure)  
   
      All overloads must have the same name, but each must differ from all the others in one or more of the preceding respects. This allows the compiler to distinguish which version to use when code calls the property or procedure.  
   
--   **Disallowed Differences.** Changing one or more of the following is not valid for overloading a property or procedure, because they are not part of the signature:  
+- **Disallowed Differences.** Changing one or more of the following is not valid for overloading a property or procedure, because they are not part of the signature:  
   
-    -   whether or not it returns a value (for a procedure)  
+    - whether or not it returns a value (for a procedure)  
   
-    -   the data type of the return value (except for a conversion operator)  
+    - the data type of the return value (except for a conversion operator)  
   
-    -   the names of the parameters or type parameters  
+    - the names of the parameters or type parameters  
   
-    -   the constraints on the type parameters (for a generic procedure)  
+    - the constraints on the type parameters (for a generic procedure)  
   
-    -   parameter modifier keywords (such as `ByRef` or `Optional`)  
+    - parameter modifier keywords (such as `ByRef` or `Optional`)  
   
-    -   property or procedure modifier keywords (such as `Public` or `Shared`)  
+    - property or procedure modifier keywords (such as `Public` or `Shared`)  
   
--   **Optional Modifier.** You do not have to use the `Overloads` modifier when you are defining multiple overloaded properties or procedures in the same class. However, if you use `Overloads` in one of the declarations, you must use it in all of them.  
+- **Optional Modifier.** You do not have to use the `Overloads` modifier when you are defining multiple overloaded properties or procedures in the same class. However, if you use `Overloads` in one of the declarations, you must use it in all of them.  
   
--   **Shadowing and Overloading.** `Overloads` can also be used to shadow an existing member, or set of overloaded members, in a base class. When you use `Overloads` in this way, you declare the property or method with the same name and the same parameter list as the base class member, and you do not supply the `Shadows` keyword.  
+- **Shadowing and Overloading.** `Overloads` can also be used to shadow an existing member, or set of overloaded members, in a base class. When you use `Overloads` in this way, you declare the property or method with the same name and the same parameter list as the base class member, and you do not supply the `Shadows` keyword.  
   
  If you use `Overrides`, the compiler implicitly adds `Overloads` so that your library APIs work with C# more easily.  
   
@@ -67,9 +67,10 @@ Specifies that a property or procedure redeclares one or more existing propertie
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+## See also
+
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
+- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

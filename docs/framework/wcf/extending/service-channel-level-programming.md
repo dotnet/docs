@@ -12,15 +12,15 @@ This topic describes how to write a Windows Communication Foundation (WCF) servi
 ## Receiving Messages  
  To be ready to receive and process messages, the following steps are required:  
   
-1.  Create a binding.  
+1. Create a binding.  
   
-2.  Build a channel listener.  
+2. Build a channel listener.  
   
-3.  Open the channel listener.  
+3. Open the channel listener.  
   
-4.  Read the request and send a reply.  
+4. Read the request and send a reply.  
   
-5.  Close all channel objects.  
+5. Close all channel objects.  
   
 #### Creating a Binding  
  The first step in listening for and receiving messages is creating a binding. WCF ships with several built-in or system-provided bindings that can be used directly by instantiating one of them. In addition, you can also create your own custom binding by instantiating a CustomBinding class which is what the code in listing 1 does.  
@@ -28,7 +28,7 @@ This topic describes how to write a Windows Communication Foundation (WCF) servi
  The code example below creates an instance of <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> and adds an <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType> to its Elements collection which is a collection of binding elements that are used to build the channel stack. In this example, because the elements collection has only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement>, the resulting channel stack has only the HTTP transport channel.  
   
 #### Building a ChannelListener  
- After creating a binding, we call <!--zz<xref:System.ServiceModel.Channels.Binding.BuildChannelListener%601%2A?displayProperty=nameWithType>--> `System.ServiceModel.Channels.Binding.BuildChannelListener` to build the channel listener where the type parameter is the channel shape to create. In this example we are using <xref:System.ServiceModel.Channels.IReplyChannel?displayProperty=nameWithType> because we want to listen for incoming messages in a request/reply message exchange pattern.  
+ After creating a binding, we call <xref:System.ServiceModel.Channels.Binding.BuildChannelListener%2A?displayProperty=nameWithType> to build the channel listener where the type parameter is the channel shape to create. In this example we are using <xref:System.ServiceModel.Channels.IReplyChannel?displayProperty=nameWithType> because we want to listen for incoming messages in a request/reply message exchange pattern.  
   
  <xref:System.ServiceModel.Channels.IReplyChannel> is used for receiving request messages and sending back reply messages. Calling <xref:System.ServiceModel.Channels.IReplyChannel.ReceiveRequest%2A?displayProperty=nameWithType> returns an <xref:System.ServiceModel.Channels.IRequestChannel?displayProperty=nameWithType>, which can be used to receive the request message and to send back a reply message.  
   

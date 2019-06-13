@@ -1,16 +1,17 @@
 ---
-title: Arrays (F#)
+title: Arrays
 description: Learn how to create and use arrays in the F# programming language.
 ms.date: 05/16/2016
 ---
 # Arrays
 
 > [!NOTE]
-The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 
 ## Creating Arrays
+
 You can create arrays in several ways. You can create a small array by listing consecutive values between `[|` and `|]` and separated by semicolons, as shown in the following examples.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet1.fs)]
@@ -33,7 +34,7 @@ You can also use sequence expressions to create arrays. Following is an example 
 To create an array in which all the elements are initialized to zero, use `Array.zeroCreate`.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet4.fs)]
-    
+
 ## Accessing Elements
 
 You can access array elements by using a dot operator (`.`) and brackets (`[` and `]`).
@@ -48,13 +49,14 @@ You can also access array elements by using slice notation, which enables you to
 
 When slice notation is used, a new copy of the array is created.
 
-
 ## Array Types and Modules
+
 The type of all F# arrays is the .NET Framework type <xref:System.Array?displayProperty=nameWithType>. Therefore, F# arrays support all the functionality available in <xref:System.Array?displayProperty=nameWithType>.
 
 The library module [`Microsoft.FSharp.Collections.Array`](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1) supports operations on one-dimensional arrays. The modules `Array2D`, `Array3D`, and `Array4D` contain functions that support operations on arrays of two, three, and four dimensions, respectively. You can create arrays of rank greater than four by using <xref:System.Array?displayProperty=nameWithType>.
 
 ### Simple Functions
+
 [`Array.get`](https://msdn.microsoft.com/library/dd93e85d-7e80-4d76-8de0-b6d45bcf07bc) gets an element. [`Array.length`](https://msdn.microsoft.com/library/0d775b6a-4a8f-4bd1-83e5-843b3251725f) gives the length of an array. [`Array.set`](https://msdn.microsoft.com/library/847edc0d-4dc5-4a39-98c7-d4320c60e790) sets an element to a specified value. The following code example illustrates the use of these functions.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet9.fs)]
@@ -101,6 +103,7 @@ The output shows that the subarray starts at element 5 and contains 10 elements.
 ```
 [|5; 6; 7; 8; 9; 10; 11; 12; 13; 14|]
 ```
+
 [`Array.append`](https://msdn.microsoft.com/library/08836310-5036-4474-b9a2-2c73e2293911) creates a new array by combining two existing arrays.
 
 The following code demonstrates **Array.append**.
@@ -156,7 +159,7 @@ The output of the preceding code is as follows.
 
 [`Array.rev`](https://msdn.microsoft.com/library/1bbf822c-763b-4794-af21-97d2e48ef709) generates a new array by reversing the order of an existing array. The following code demonstrates `Array.rev`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet18.fs)]  
+[!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet18.fs)]
 
 The output of the preceding code is as follows.
 
@@ -187,7 +190,7 @@ You can also use the function [`Array2D.init`](https://msdn.microsoft.com/librar
 Array indexing and slicing syntax is supported for arrays up to rank 4. When you specify an index in multiple dimensions, you use commas to separate the indexes, as illustrated in the following code example.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/arrays/snippet22.fs)]
-    
+
 The type of a two-dimensional array is written out as `<type>[,]` (for example, `int[,]`, `double[,]`), and the type of a three-dimensional array is written as `<type>[,,]`, and so on for arrays of higher dimensions.
 
 Only a subset of the functions available for one-dimensional arrays is also available for multidimensional arrays. For more information, see [`Collections.Array Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d), [`Collections.Array2D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array2d-module-%5bfsharp%5d), [`Collections.Array3D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array3d-module-%5bfsharp%5d), and [`Collections.Array4D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array4d-module-%5bfsharp%5d).
@@ -197,7 +200,7 @@ Only a subset of the functions available for one-dimensional arrays is also avai
 In a two-dimensional array (a matrix), you can extract a sub-matrix by specifying ranges and using a wildcard (`*`) character to specify whole rows or columns.
 
 ```fsharp
-/ Get rows 1 to N from an NxM matrix (returns a matrix):
+// Get rows 1 to N from an NxM matrix (returns a matrix):
 matrix.[1.., *]
 
 // Get rows 1 to 3 from a matrix (returns a matrix):
@@ -231,7 +234,7 @@ type Matrix<'T>(N: int, M: int) =
         and set(a: int, b: int) (value:'T) = internalArray.[a, b] <- value
 
     member this.GetSlice(rowStart: int option, rowFinish : int option, colStart: int option, colFinish : int option) =
-        let rowStart = 
+        let rowStart =
             match rowStart with
             | Some(v) -> v
             | None -> 0
@@ -239,33 +242,33 @@ type Matrix<'T>(N: int, M: int) =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
-        let colStart = 
+        let colStart =
             match colStart with
             | Some(v) -> v
             | None -> 0
-        let colFinish = 
+        let colFinish =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
         internalArray.[rowStart..rowFinish, colStart..colFinish]
 
     member this.GetSlice(row: int, colStart: int option, colFinish: int option) =
-        let colStart = 
+        let colStart =
             match colStart with
             | Some(v) -> v
             | None -> 0
-        let colFinish = 
+        let colFinish =
             match colFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(1) - 1
         internalArray.[row, colStart..colFinish]
 
     member this.GetSlice(rowStart: int option, rowFinish: int option, col: int) =
-        let rowStart = 
+        let rowStart =
             match rowStart with
             | Some(v) -> v
             | None -> 0
-        let rowFinish = 
+        let rowFinish =
             match rowFinish with
             | Some(v) -> v
             | None -> internalArray.GetLength(0) - 1
@@ -407,7 +410,7 @@ The functions [`Array.zip`](https://msdn.microsoft.com/library/23e086b8-b266-4db
 
 The module [`Array.Parallel`](https://msdn.microsoft.com/library/60f30b77-5af4-4050-9a5c-bcdb3f5cbb09) contains functions for performing parallel computations on arrays. This module is not available in applications that target versions of the .NET Framework prior to version 4.
 
-## See Also
-[F# Language Reference](index.md)
+## See also
 
-[F#; Types](fsharp-types.md)
+- [F# Language Reference](index.md)
+- [F# Types](fsharp-types.md)

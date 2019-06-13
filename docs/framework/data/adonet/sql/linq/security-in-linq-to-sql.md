@@ -10,7 +10,7 @@ Security risks are always present when you connect to a database. Although LINQ 
  LINQ to SQL does not have its own user model or authentication mechanisms. Use SQL Server Security to control access to the database, database tables, views, and stored procedures that are mapped to your object model. Grant the minimally required access to users and require strong passwords for user authentication.  
   
 ## Mapping and Schema Information  
- SQL-CLR type mapping and database schema information in your object model or external mapping file is available for all with access to those files in the file system. Assume that schema information will be available to all who can access the object model or external mapping file.To prevent more widespread access to schema information, use file security mechanisms to secure source files and mapping files.  
+ SQL-CLR type mapping and database schema information in your object model or external mapping file is available for all with access to those files in the file system. Assume that schema information will be available to all who can access the object model or external mapping file. To prevent more widespread access to schema information, use file security mechanisms to secure source files and mapping files.  
   
 ## Connection Strings  
  Using passwords in connection strings should be avoided whenever possible. Not only is a connection string a security risk in its own right, but the connection string may also be added in clear text to the object model or external mapping file when using the Object Relational Designer or SQLMetal command-line tool. Anyone with access to the object model or external mapping file via the file system could see the connection password (if it is included in the connection string).  
@@ -19,14 +19,15 @@ Security risks are always present when you connect to a database. Although LINQ 
   
  In the absence of integrated security, a clear-text password will be needed in the connection string. The best way to help secure your connection string, in increasing order of risk, is as follows:  
   
--   Use integrated security.  
+- Use integrated security.  
   
--   Secure connection strings with passwords and minimize passing around connection strings.  
+- Secure connection strings with passwords and minimize passing around connection strings.  
   
--   Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
+- Use a <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class instead of a connection string since it limits the duration of exposure. The LINQ to SQL <xref:System.Data.Linq.DataContext?displayProperty=nameWithType> class can be instantiated using a <xref:System.Data.SqlClient.SqlConnection>.  
   
--   Minimize lifetimes and touch points for all connection strings.  
+- Minimize lifetimes and touch points for all connection strings.  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)
+## See also
+
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

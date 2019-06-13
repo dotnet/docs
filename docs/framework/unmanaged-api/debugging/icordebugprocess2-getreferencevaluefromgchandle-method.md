@@ -30,7 +30,7 @@ HRESULT GetReferenceValueFromGCHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `handle`  
  [in] A pointer to a managed object that has a garbage collection handle. This value is a <xref:System.IntPtr> object and can be retrieved from the <xref:System.Runtime.InteropServices.GCHandle> for the managed object.  
   

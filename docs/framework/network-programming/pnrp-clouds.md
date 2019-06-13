@@ -2,9 +2,6 @@
 title: "PNRP Clouds"
 ms.date: "03/30/2017"
 ms.assetid: a82e2bf1-62ab-4c2d-83f3-3217a6aead2e
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # PNRP Clouds
 A PNRP "cloud" represents a set of nodes that can communicate with each other through the network. The term "cloud" is synonymous with "peer mesh" and "peer-to-peer graph".  
@@ -15,9 +12,9 @@ A PNRP "cloud" represents a set of nodes that can communicate with each other th
   
  PNRP uses three cloud "scopes", in which a scope is a grouping of computers that are able to find each other:  
   
--   The global cloud corresponds to the global IPv6 address scope and global addresses and represents all the computers on the entire IPv6 Internet. There is only a single global cloud.  
+- The global cloud corresponds to the global IPv6 address scope and global addresses and represents all the computers on the entire IPv6 Internet. There is only a single global cloud.  
   
--   The link-local cloud corresponds to the link-local IPv6 address scope and link-local addresses. A link-local cloud is for a specific link, which is typically the same as the locally attached subnet. There can be multiple link-local clouds.  
+- The link-local cloud corresponds to the link-local IPv6 address scope and link-local addresses. A link-local cloud is for a specific link, which is typically the same as the locally attached subnet. There can be multiple link-local clouds.  
   
  A third cloud, the site-specific cloud, corresponds to the site IPv6 address scope and site-local addresses. This cloud has been deprecated, although it is still supported in PNRP.  
   
@@ -28,6 +25,7 @@ A PNRP "cloud" represents a set of nodes that can communicate with each other th
   
  Once a Cloud instance is created or obtained, peer names can be registered with it to create a mesh of known peers.  
   
-## See Also  
- <xref:System.Net.PeerToPeer.Cloud>  
- [Peer Name Resolution Protocol](../../../docs/framework/network-programming/peer-name-resolution-protocol.md)
+## See also
+
+- <xref:System.Net.PeerToPeer.Cloud>
+- [Peer Name Resolution Protocol](../../../docs/framework/network-programming/peer-name-resolution-protocol.md)

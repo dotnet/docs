@@ -2,8 +2,8 @@
 title: Build .NET Core from source
 description: Learn how to build .NET Core and the .NET Core CLI from the source code.
 author: bleroy
-ms.author: mairaw
 ms.date: 06/28/2017
+ms.custom: "seodec18"
 ---
 
 # Build .NET Core from source
@@ -88,7 +88,7 @@ In order to build the .NET Core CLI, you need the following installed on your ma
   * Xcode
   * OpenSSL
 
-In order to build, run `build.cmd` on Windows, or `build.sh` on Linux and macOS from the root. If you don't want to execute tests, run `build.cmd /t:Compile` or `./build.sh /t:Compile`. To build the CLI in macOS Sierra, you need to set the DOTNET_RUNTIME_ID environment variable by running `export DOTNET_RUNTIME_ID=osx.10.11-x64`.
+In order to build, run `build.cmd` on Windows, or `build.sh` on Linux and macOS from the root. If you don't want to execute tests, run `build.cmd -t:Compile` or `./build.sh -t:Compile`. To build the CLI in macOS Sierra, you need to set the DOTNET_RUNTIME_ID environment variable by running `export DOTNET_RUNTIME_ID=osx.10.11-x64`.
 
 ### Using your build
 
@@ -96,6 +96,6 @@ Use the `dotnet` executable from *artifacts/{os}-{arch}/stage2* to try out the n
 
 ## See also
 
-* [.NET Core Common Language Runtime (CoreCLR)](https://github.com/dotnet/coreclr/blob/master/README.md)
-* [.NET Core CLI Developer Guide](https://github.com/dotnet/cli/blob/master/Documentation/project-docs/developer-guide.md)
-* [.NET Core distribution packaging](./distribution-packaging.md)
+- [.NET Core Common Language Runtime (CoreCLR)](https://github.com/dotnet/coreclr/blob/master/README.md)
+- [.NET Core CLI Developer Guide](https://github.com/dotnet/cli/blob/master/Documentation/project-docs/developer-guide.md)
+- [.NET Core distribution packaging](./distribution-packaging.md)

@@ -30,7 +30,7 @@ HRESULT CreateHandle (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `type`  
  [in] A value of the CorDebugHandleType enumeration that specifies the type of handle to be created.  
   

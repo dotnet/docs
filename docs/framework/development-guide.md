@@ -42,7 +42,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Explains how you can use configuration files to change settings without having to recompile your .NET Framework apps.  
   
  [Compiling Apps with .NET Native](../../docs/framework/net-native/index.md)  
- Explains how you can use the [!INCLUDE[net_native](../../includes/net-native-md.md)] precompilation technology to build and deploy Windows Store apps. [!INCLUDE[net_native](../../includes/net-native-md.md)] compiles apps that are written in managed code (C#) and that target the .NET Framework to native code.  
+ Explains how you can use the .NET Native precompilation technology to build and deploy Windows Store apps. .NET Native compiles apps that are written in managed code (C#) and that target the .NET Framework to native code.  
   
  [Security](../../docs/standard/security/index.md)  
  Provides information about the classes and services in the .NET Framework that facilitate secure app development.  
@@ -58,13 +58,10 @@ This section explains how to create, configure, debug, secure, and deploy your .
   
  [Performance](../../docs/framework/performance/index.md)  
  Provides information about caching, lazy initialization, reliability, and ETW events.  
-  
- <!--zz [Advanced Reading for the .NET Framework](http://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)  
- Provides information about advanced development tasks and techniques in the .NET Framework, including extensibility, interoperability, and reflection. Also includes the reference topics for unmanaged APIs that can be used by managed apps, such as runtime hosts, compilers, disassemblers, debuggers, and profilers.  --> 
-  
+ 
 ## Reference  
  [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  
- Supplies syntax, code examples, and usage information for each class that is contained in the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] namespaces.  
+ Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  
   
 ## Related Sections  
  [Getting Started](../../docs/framework/get-started/index.md)  
@@ -76,5 +73,5 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Tools](../../docs/framework/tools/index.md)  
  Describes the tools that help you develop, configure, and deploy apps by using .NET Framework technologies.  
   
- [.NET Framework Samples](http://msdn.microsoft.com/library/177055f8-4a1f-43e7-aee6-995c196079b1)  
- Provides links to the MSDN Code Samples Gallery for sample apps that demonstrate .NET Framework technologies.
+ [.NET samples and tutorials](../samples-and-tutorials/index.md)  
+ Provides links to samples and tutorials that help you learn about .NET.

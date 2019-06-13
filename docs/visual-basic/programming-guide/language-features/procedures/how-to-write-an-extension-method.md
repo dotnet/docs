@@ -12,21 +12,21 @@ Extension methods enable you to add methods to an existing class. The extension 
   
 ### To define an extension method  
   
-1.  Open a new or existing Visual Basic application in Visual Studio.  
+1. Open a new or existing Visual Basic application in Visual Studio.  
   
-2.  At the top of the file in which you want to define an extension method, include the following import statement:  
+2. At the top of the file in which you want to define an extension method, include the following import statement:  
   
     ```  
     Imports System.Runtime.CompilerServices  
     ```  
   
-3.  Within a module in your new or existing application, begin the method definition with the extension attribute:  
+3. Within a module in your new or existing application, begin the method definition with the extension attribute:  
   
     ```  
     <Extension()>  
     ```  
   
-4.  Declare your method in the ordinary way, except that the type of the first parameter must be the data type you want to extend.  
+4. Declare your method in the ordinary way, except that the type of the first parameter must be the data type you want to extend.  
   
     ```  
     <Extension()>   
@@ -75,9 +75,10 @@ End Module
   
  `Hello!!!!`  
   
-## See Also  
- <xref:System.Runtime.CompilerServices.ExtensionAttribute>  
- [Extension Methods](./extension-methods.md)  
- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+## See also
+
+- <xref:System.Runtime.CompilerServices.ExtensionAttribute>
+- [Extension Methods](./extension-methods.md)
+- [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

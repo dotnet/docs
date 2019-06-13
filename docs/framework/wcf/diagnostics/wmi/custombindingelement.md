@@ -8,7 +8,7 @@ CustomBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class CustomBindingElement : BindingElement  
 {  
   string Name;  
@@ -34,5 +34,6 @@ class CustomBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.CustomBinding>
+## See also
+
+- <xref:System.ServiceModel.Channels.CustomBinding>

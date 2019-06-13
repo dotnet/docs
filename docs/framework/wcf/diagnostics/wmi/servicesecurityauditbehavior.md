@@ -2,15 +2,13 @@
 title: "ServiceSecurityAuditBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 2c5809e7-5364-44ce-bc71-848be4672e2a
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # ServiceSecurityAuditBehavior
 ServiceSecurityAuditBehavior  
   
 ## Syntax  
   
-```  
+```csharp  
 class ServiceSecurityAuditBehavior : Behavior  
 {  
   string AuditLogLocation;  
@@ -60,5 +58,6 @@ class ServiceSecurityAuditBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>

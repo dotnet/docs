@@ -23,15 +23,15 @@ The <xref:System.Xml.XmlDocument> class does not validate the XML in the Documen
 ### Creating an XML Schema-Validating XmlReader  
  To create an XML schema-validating <xref:System.Xml.XmlReader>, follow these steps.  
   
-1.  Construct a new <xref:System.Xml.XmlReaderSettings> instance.  
+1. Construct a new <xref:System.Xml.XmlReaderSettings> instance.  
   
-2.  Add an XML schema to the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property of the <xref:System.Xml.XmlReaderSettings> instance.  
+2. Add an XML schema to the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property of the <xref:System.Xml.XmlReaderSettings> instance.  
   
-3.  Specify `Schema` as the <xref:System.Xml.XmlReaderSettings.ValidationType%2A>.  
+3. Specify `Schema` as the <xref:System.Xml.XmlReaderSettings.ValidationType%2A>.  
   
-4.  Optionally specify <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> and a <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> to handle schema validation errors and warnings encountered during validation.  
+4. Optionally specify <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> and a <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> to handle schema validation errors and warnings encountered during validation.  
   
-5.  Finally, pass the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class along with the XML document, creating a schema-validating <xref:System.Xml.XmlReader>.  
+5. Finally, pass the <xref:System.Xml.XmlReaderSettings> object to the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class along with the XML document, creating a schema-validating <xref:System.Xml.XmlReader>.  
   
 ### Example  
  In the code example that follows, a schema-validating <xref:System.Xml.XmlReader> validates the XML data loaded into the DOM. Invalid modifications are made to the XML document and the document is then revalidated, causing schema validation errors. Finally, one of the errors is corrected, and then part of the XML document is partially validated.  
@@ -50,9 +50,9 @@ The <xref:System.Xml.XmlDocument> class does not validate the XML in the Documen
   
  Consider the following when validating XML data as it is loaded into the DOM.  
   
--   In the above example, the <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is called whenever an invalid type is encountered. If a <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is not set on the validating <xref:System.Xml.XmlReader>,an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown when <xref:System.Xml.XmlDocument.Load%2A> is called if any attribute or element type does not match the corresponding type specified in the validating schema.  
+- In the above example, the <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is called whenever an invalid type is encountered. If a <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> is not set on the validating <xref:System.Xml.XmlReader>,an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown when <xref:System.Xml.XmlDocument.Load%2A> is called if any attribute or element type does not match the corresponding type specified in the validating schema.  
   
--   When an XML document is loaded into an <xref:System.Xml.XmlDocument> object with an associated schema that defines default values, the <xref:System.Xml.XmlDocument> treats these defaults as if they appeared in the XML document. This means that the <xref:System.Xml.XmlReader.IsEmptyElement%2A> property always returns `false` for an element that was defaulted from the schema. Even if in the XML document, it was written as an empty element.  
+- When an XML document is loaded into an <xref:System.Xml.XmlDocument> object with an associated schema that defines default values, the <xref:System.Xml.XmlDocument> treats these defaults as if they appeared in the XML document. This means that the <xref:System.Xml.XmlReader.IsEmptyElement%2A> property always returns `false` for an element that was defaulted from the schema. Even if in the XML document, it was written as an empty element.  
   
 ## Validating an XML Document in the DOM  
  The <xref:System.Xml.XmlDocument.Validate%2A> method of the <xref:System.Xml.XmlDocument> class validates the XML data loaded in the DOM against the schemas in the <xref:System.Xml.XmlDocument> object's <xref:System.Xml.XmlDocument.Schemas%2A> property. After successful validation, schema defaults are applied, text values are converted to atomic values as necessary, and type information is associated with validated information items. As a result, typed XML data replaces previously untyped XML data.  
@@ -76,10 +76,11 @@ The <xref:System.Xml.XmlDocument> class does not validate the XML in the Documen
   
  For examples illustrating the <xref:System.Xml.Schema.ValidationEventHandler>, see "Validating an XML Document As It Is Loaded into the DOM" and "Validating an XML Document in the DOM" above.  
   
-## See Also  
- <xref:System.Xml.XmlDocument>  
- <xref:System.Xml.XmlReader>  
- <xref:System.Xml.Schema.ValidationEventHandler>  
- <xref:System.Xml.XmlReaderSettings>  
- [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)  
- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)
+## See also
+
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XmlReader>
+- <xref:System.Xml.Schema.ValidationEventHandler>
+- <xref:System.Xml.XmlReaderSettings>
+- [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)
+- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)

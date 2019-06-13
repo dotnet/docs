@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [WCF], protocols"
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Security Protocols
 The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  
@@ -30,11 +28,11 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:  
   
--   Credentials used to authenticate client and service.  
+- Credentials used to authenticate client and service.  
   
--   Message or transport security protection mechanisms.  
+- Message or transport security protection mechanisms.  
   
--   Message exchange patterns.  
+- Message exchange patterns.  
   
 |Authentication Mode|Client Authentication|Server Authentication|Mode|  
 |-------------------------|---------------------------|---------------------------|----------|  

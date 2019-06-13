@@ -8,7 +8,7 @@ Application domain information
   
 ## Syntax  
   
-```  
+```csharp
 class AppDomainInfo  
 {  
   sint32 AppDomainId;  

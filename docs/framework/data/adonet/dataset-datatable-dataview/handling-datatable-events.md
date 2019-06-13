@@ -41,21 +41,21 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 ## Sequence of Operations  
  Here is the sequence of operations that occur when a `DataRow` is added, modified, or deleted:  
   
-1.  Create the proposed record and apply any changes.  
+1. Create the proposed record and apply any changes.  
   
-2.  Check constraints for non-expression columns.  
+2. Check constraints for non-expression columns.  
   
-3.  Raise the `RowChanging` or `RowDeleting` events as applicable.  
+3. Raise the `RowChanging` or `RowDeleting` events as applicable.  
   
-4.  Set the proposed record to be the current record.  
+4. Set the proposed record to be the current record.  
   
-5.  Update any associated indexes.  
+5. Update any associated indexes.  
   
-6.  Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects.  
+6. Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects.  
   
-7.  Evaluate all expression columns, but delay checking any constraints on these columns.  
+7. Evaluate all expression columns, but delay checking any constraints on these columns.  
   
-8.  Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects affected by the expression column evaluations.  
+8. Raise `ListChanged` events for associated `DataView` objects and `PropertyChanged` events for associated `DataRowView` objects affected by the expression column evaluations.  
   
 9. Raise `RowChanged` or `RowDeleted` events as applicable.  
   
@@ -73,8 +73,9 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
  [!code-csharp[DataWorks DataTable.Events#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.Events/CS/source.cs#1)]
  [!code-vb[DataWorks DataTable.Events#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.Events/VB/source.vb#1)]  
   
-## See Also  
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [Handling DataAdapter Events](../../../../../docs/framework/data/adonet/handling-dataadapter-events.md)  
- [Handling DataSet Events](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
+- [Handling DataAdapter Events](../../../../../docs/framework/data/adonet/handling-dataadapter-events.md)
+- [Handling DataSet Events](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

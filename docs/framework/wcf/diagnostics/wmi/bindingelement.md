@@ -8,7 +8,7 @@ BindingElement
   
 ## Syntax  
   
-```  
+```csharp  
 class BindingElement  
 {  
 };  
@@ -23,5 +23,6 @@ class BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.Binding>
+## See also
+
+- <xref:System.ServiceModel.Channels.Binding>

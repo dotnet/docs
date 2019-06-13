@@ -12,3 +12,6 @@ This section contains samples that demonstrate service activation through networ
   
  [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)  
  Demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.tcp protocol.
+
+ [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)  
+ Demonstrates hosting a service that uses Windows Process Activation Services (WAS) to activate a service that communicates over the net.msmq protocol.

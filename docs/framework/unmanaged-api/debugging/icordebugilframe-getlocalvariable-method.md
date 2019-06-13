@@ -30,7 +30,7 @@ HRESULT GetLocalVariable (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The index of the local variable in this MSIL stack frame.  
   

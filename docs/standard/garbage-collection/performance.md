@@ -14,13 +14,13 @@ ms.author: "ronpet"
   
  This topic contains the following sections:  
   
--   [Performance Analysis Tools](#performance_analysis_tools)  
+- [Performance Analysis Tools](#performance_analysis_tools)  
   
--   [Troubleshooting Performance Issues](#troubleshooting_performance_issues)  
+- [Troubleshooting Performance Issues](#troubleshooting_performance_issues)  
   
--   [Troubleshooting Guidelines](#troubleshooting_guidelines)  
+- [Troubleshooting Guidelines](#troubleshooting_guidelines)  
   
--   [Performance Check Procedures](#performance_check_procedures)  
+- [Performance Check Procedures](#performance_check_procedures)  
   
 <a name="performance_analysis_tools"></a>   
 ## Performance Analysis Tools  
@@ -38,13 +38,13 @@ ms.author: "ronpet"
   
 <a name="etw"></a>   
 ### Garbage Collection ETW Events  
- Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by the .NET Framework. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:  
+ Event tracing for Windows (ETW) is a tracing system that supplements the profiling and debugging support provided by the .NET Framework. Starting with the .NET Framework 4, [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md) capture useful information for analyzing the managed heap from a statistical point of view. For example, the `GCStart_V1` event, which is raised when a garbage collection is about to occur, provides the following information:  
   
--   Which generation of objects is being collected.  
+- Which generation of objects is being collected.  
   
--   What triggered the garbage collection.  
+- What triggered the garbage collection.  
   
--   Type of garbage collection (concurrent or not concurrent).  
+- Type of garbage collection (concurrent or not concurrent).  
   
  ETW event logging is efficient and will not mask any performance problems associated with garbage collection. A process can provide its own events in conjunction with ETW events. When logged, both the application's events and the garbage collection events can be correlated to determine how and when heap problems occur. For example, a server application could provide events at the start and end of a client request.  
   
@@ -55,7 +55,7 @@ ms.author: "ronpet"
  Profilers can provide comprehensive information. However, complex profilers can potentially modify an application's behavior.  
   
 ### Application Domain Resource Monitoring  
- Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).  
+ Starting with the .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).  
   
  [Back to top](#top)  
   
@@ -63,29 +63,29 @@ ms.author: "ronpet"
 ## Troubleshooting Performance Issues  
  The first step is to [determine whether the issue is actually garbage collection](#IsGC). If you determine that it is, select from the following list to troubleshoot the problem.  
   
--   [An out-of-memory exception is thrown](#Issue_OOM)  
+- [An out-of-memory exception is thrown](#Issue_OOM)  
   
--   [The process uses too much memory](#Issue_TooMuchMemory)  
+- [The process uses too much memory](#Issue_TooMuchMemory)  
   
--   [The garbage collector does not reclaim objects fast enough](#Issue_NotFastEnough)  
+- [The garbage collector does not reclaim objects fast enough](#Issue_NotFastEnough)  
   
--   [The managed heap is too fragmented](#Issue_Fragmentation)  
+- [The managed heap is too fragmented](#Issue_Fragmentation)  
   
--   [Garbage collection pauses are too long](#Issue_LongPauses)  
+- [Garbage collection pauses are too long](#Issue_LongPauses)  
   
--   [Generation 0 is too big](#Issue_Gen0)  
+- [Generation 0 is too big](#Issue_Gen0)  
   
--   [CPU usage during a garbage collection is too high](#Issue_HighCPU)  
+- [CPU usage during a garbage collection is too high](#Issue_HighCPU)  
   
 <a name="Issue_OOM"></a>   
 ### Issue: An Out-of-Memory Exception Is Thrown  
  There are two legitimate cases for a managed <xref:System.OutOfMemoryException> to be thrown:  
   
--   Running out of virtual memory.  
+- Running out of virtual memory.  
   
      The garbage collector allocates memory from the system in segments of a pre-determined size. If an allocation requires an additional segment, but there is no contiguous free block left in the process's virtual memory space, the allocation for the managed heap will fail.  
   
--   Not having enough physical memory to allocate.  
+- Not having enough physical memory to allocate.  
   
 |Performance checks|  
 |------------------------|  
@@ -93,11 +93,11 @@ ms.author: "ronpet"
   
  If you determine that the exception is not legitimate, contact Microsoft Customer Service and Support with the following information:  
   
--   The stack with the managed out-of-memory exception.  
+- The stack with the managed out-of-memory exception.  
   
--   Full memory dump.  
+- Full memory dump.  
   
--   Data that proves that it is not a legitimate out-of-memory exception, including data that shows that virtual or physical memory is not an issue.  
+- Data that proves that it is not a legitimate out-of-memory exception, including data that shows that virtual or physical memory is not an issue.  
   
 <a name="Issue_TooMuchMemory"></a>   
 ### Issue: The Process Uses Too Much Memory  
@@ -135,11 +135,11 @@ ms.author: "ronpet"
   
  If fragmentation of virtual memory is preventing the garbage collector from adding segments, the causes could be one of the following:  
   
--   Frequent loading and unloading of many small assemblies.  
+- Frequent loading and unloading of many small assemblies.  
   
--   Holding too many references to COM objects when interoperating with unmanaged code.  
+- Holding too many references to COM objects when interoperating with unmanaged code.  
   
--   Creation of large transient objects, which causes the large object heap to allocate and free heap segments frequently.  
+- Creation of large transient objects, which causes the large object heap to allocate and free heap segments frequently.  
   
      When hosting the CLR, an application can request that the garbage collector retain its segments. This reduces the frequency of segment allocations. This is accomplished by using the STARTUP_HOARD_GC_VM flag in the [STARTUP_FLAGS Enumeration](../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md).  
   
@@ -195,24 +195,24 @@ ms.author: "ronpet"
 ### When to Measure the Managed Heap Size  
  Unless you are using a profiler, you will have to establish a consistent measuring pattern to effectively diagnose performance issues. Consider the following points to establish a schedule:  
   
--   If you measure after a generation 2 garbage collection, the entire managed heap will be free of garbage (dead objects).  
+- If you measure after a generation 2 garbage collection, the entire managed heap will be free of garbage (dead objects).  
   
--   If you measure immediately after a generation 0 garbage collection, the objects in generations 1 and 2 will not be collected yet.  
+- If you measure immediately after a generation 0 garbage collection, the objects in generations 1 and 2 will not be collected yet.  
   
--   If you measure immediately before a garbage collection, you will measure as much allocation as possible before the garbage collection starts.  
+- If you measure immediately before a garbage collection, you will measure as much allocation as possible before the garbage collection starts.  
   
--   Measuring during a garbage collection is problematic, because the garbage collector data structures are not in a valid state for traversal and may not be able to give you the complete results. This is by design.  
+- Measuring during a garbage collection is problematic, because the garbage collector data structures are not in a valid state for traversal and may not be able to give you the complete results. This is by design.  
   
--   When you are using workstation garbage collection with concurrent garbage collection, the reclaimed objects are not compacted, so the heap size can be the same or larger (fragmentation can make it appear to be larger).  
+- When you are using workstation garbage collection with concurrent garbage collection, the reclaimed objects are not compacted, so the heap size can be the same or larger (fragmentation can make it appear to be larger).  
   
--   Concurrent garbage collection on generation 2 is delayed when the physical memory load is too high.  
+- Concurrent garbage collection on generation 2 is delayed when the physical memory load is too high.  
   
  The following procedure describes how to set a breakpoint so that you can measure the managed heap.  
   
 <a name="GenBreak"></a>   
 ##### To set a breakpoint at the end of garbage collection  
   
--   In WinDbg with the SOS debugger extension loaded, type the following command:  
+- In WinDbg with the SOS debugger extension loaded, type the following command:  
   
      **bp mscorwks!WKS::GCHeap::RestartEE "j (dwo(mscorwks!WKS::GCHeap::GcCondemnedGeneration)==2) 'kb';'g'"**  
   
@@ -228,51 +228,51 @@ ms.author: "ronpet"
 ## Performance Check Procedures  
  This section describes the following procedures to isolate the cause of your performance issue:  
   
--   [Determine whether the problem is caused by garbage collection.](#IsGC)  
+- [Determine whether the problem is caused by garbage collection.](#IsGC)  
   
--   [Determine whether the out-of-memory exception is managed.](#OOMIsManaged)  
+- [Determine whether the out-of-memory exception is managed.](#OOMIsManaged)  
   
--   [Determine how much virtual memory can be reserved.](#GetVM)  
+- [Determine how much virtual memory can be reserved.](#GetVM)  
   
--   [Determine whether there is enough physical memory.](#Physical)  
+- [Determine whether there is enough physical memory.](#Physical)  
   
--   [Determine how much memory the managed heap is committing.](#ManagedHeapCommit)  
+- [Determine how much memory the managed heap is committing.](#ManagedHeapCommit)  
   
--   [Determine how much memory the managed heap reserves.](#ManagedHeapReserve)  
+- [Determine how much memory the managed heap reserves.](#ManagedHeapReserve)  
   
--   [Determine large objects in generation 2.](#ExamineGen2)  
+- [Determine large objects in generation 2.](#ExamineGen2)  
   
--   [Determine references to objects.](#ObjRef)  
+- [Determine references to objects.](#ObjRef)  
   
--   [Determine whether a finalizer has been run.](#Induce)  
+- [Determine whether a finalizer has been run.](#Induce)  
   
--   [Determine whether there are objects waiting to be finalized.](#Finalize)  
+- [Determine whether there are objects waiting to be finalized.](#Finalize)  
   
--   [Determine the amount of free space in the managed heap.](#Fragmented)  
+- [Determine the amount of free space in the managed heap.](#Fragmented)  
   
--   [Determine the number of pinned objects.](#Pinned)  
+- [Determine the number of pinned objects.](#Pinned)  
   
--   [Determine the length of time in a garbage collection.](#TimeInGC)  
+- [Determine the length of time in a garbage collection.](#TimeInGC)  
   
--   [Determine what triggered a garbage collection.](#Triggered)  
+- [Determine what triggered a garbage collection.](#Triggered)  
   
--   [Determine whether high CPU usage is caused by garbage collection.](#HighCPU)  
+- [Determine whether high CPU usage is caused by garbage collection.](#HighCPU)  
   
 <a name="IsGC"></a>   
 ##### To determine whether the problem is caused by garbage collection  
   
--   Examine the following two memory performance counters:  
+- Examine the following two memory performance counters:  
   
-    -   **% Time in GC**. Displays the percentage of elapsed time that was spent performing a garbage collection after the last garbage collection cycle. Use this counter to determine whether the garbage collector is spending too much time to make managed heap space available. If the time spent in garbage collection is relatively low, that could indicate a resource problem outside the managed heap. This counter may not be accurate when concurrent or background garbage collection is involved.  
+    - **% Time in GC**. Displays the percentage of elapsed time that was spent performing a garbage collection after the last garbage collection cycle. Use this counter to determine whether the garbage collector is spending too much time to make managed heap space available. If the time spent in garbage collection is relatively low, that could indicate a resource problem outside the managed heap. This counter may not be accurate when concurrent or background garbage collection is involved.  
   
-    -   **# Total committed Bytes**. Displays the amount of virtual memory currently committed by the garbage collector. Use this counter to determine whether the memory consumed by the garbage collector is an excessive portion of the memory that your application uses.  
+    - **# Total committed Bytes**. Displays the amount of virtual memory currently committed by the garbage collector. Use this counter to determine whether the memory consumed by the garbage collector is an excessive portion of the memory that your application uses.  
   
      Most of the memory performance counters are updated at the end of each garbage collection. Therefore, they may not reflect the current conditions that you want information about.  
   
 <a name="OOMIsManaged"></a>   
 ##### To determine whether the out-of-memory exception is managed  
   
-1.  In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the print exception (**pe**) command:  
+1. In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the print exception (**pe**) command:  
   
      **!pe**  
   
@@ -286,7 +286,7 @@ ms.author: "ronpet"
     StackTrace (generated):  
     ```  
   
-2.  If the output does not specify an exception, you have to determine which thread the out-of-memory exception is from. Type the following command in the debugger to show all the threads with their call stacks:  
+2. If the output does not specify an exception, you have to determine which thread the out-of-memory exception is from. Type the following command in the debugger to show all the threads with their call stacks:  
   
      **~\*kb**  
   
@@ -296,7 +296,7 @@ ms.author: "ronpet"
     28adfb44 7923918f 5b61f2b4 00000000 5b61f2b4 mscorwks!RaiseTheException+0xa0   
     ```  
   
-3.  You can use the following command to dump nested exceptions.  
+3. You can use the following command to dump nested exceptions.  
   
      **!pe -nested**  
   
@@ -305,7 +305,7 @@ ms.author: "ronpet"
 <a name="GetVM"></a>   
 ##### To determine how much virtual memory can be reserved  
   
--   In WinDbg with the SOS debugger extension loaded, type the following command to get the largest free region:  
+- In WinDbg with the SOS debugger extension loaded, type the following command to get the largest free region:  
   
      **!address -summary**  
   
@@ -319,7 +319,7 @@ ms.author: "ronpet"
   
      -or-  
   
--   Use the **vmstat** command:  
+- Use the **vmstat** command:  
   
      **!vmstat**  
   
@@ -338,16 +338,16 @@ ms.author: "ronpet"
 <a name="Physical"></a>   
 ##### To determine whether there is enough physical memory  
   
-1.  Start Windows Task Manager.  
+1. Start Windows Task Manager.  
   
-2.  On the **Performance** tab, look at the committed value. (In Windows 7, look at **Commit (KB)** in the **System group**.)  
+2. On the **Performance** tab, look at the committed value. (In Windows 7, look at **Commit (KB)** in the **System group**.)  
   
      If the **Total** is close to the **Limit**, you are running low on physical memory.  
   
 <a name="ManagedHeapCommit"></a>   
 ##### To determine how much memory the managed heap is committing  
   
--   Use the `# Total committed bytes` memory performance counter to get the number of bytes that the managed heap is committing. The garbage collector commits chunks on a segment as needed, not all at the same time.  
+- Use the `# Total committed bytes` memory performance counter to get the number of bytes that the managed heap is committing. The garbage collector commits chunks on a segment as needed, not all at the same time.  
   
     > [!NOTE]
     >  Do not use the `# Bytes in all Heaps` performance counter, because it does not represent actual memory usage by the managed heap. The size of a generation is included in this value and is actually its threshold size, that is, the size that induces a garbage collection if the generation is filled with objects. Therefore, this value is usually zero.  
@@ -355,14 +355,14 @@ ms.author: "ronpet"
 <a name="ManagedHeapReserve"></a>   
 ##### To determine how much memory the managed heap reserves  
   
--   Use the `# Total reserved bytes` memory performance counter.  
+- Use the `# Total reserved bytes` memory performance counter.  
   
      The garbage collector reserves memory in segments, and you can determine where a segment starts by using the **eeheap** command.  
   
     > [!IMPORTANT]
     >  Although you can determine the amount of memory the garbage collector allocates for each segment, segment size is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.  
   
--   In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
+- In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
   
      **!eeheap -gc**  
   
@@ -403,7 +403,7 @@ ms.author: "ronpet"
 <a name="ExamineGen2"></a>   
 ##### To determine large objects in generation 2  
   
--   In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
+- In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
   
      **!dumpheap –stat**  
   
@@ -442,13 +442,13 @@ ms.author: "ronpet"
 <a name="ObjRef"></a>   
 ##### To determine references to objects  
   
--   In WinDbg with the SOS debugger extension loaded, type the following command to list references to objects:  
+- In WinDbg with the SOS debugger extension loaded, type the following command to list references to objects:  
   
      **!gcroot**  
   
      `-or-`  
   
--   To determine the references for a specific object, include the address:  
+- To determine the references for a specific object, include the address:  
   
      **!gcroot 1c37b2ac**  
   
@@ -475,7 +475,7 @@ ms.author: "ronpet"
 <a name="Induce"></a>   
 ##### To determine whether a finalizer has been run  
   
--   Run a test program that contains the following code:  
+- Run a test program that contains the following code:  
   
     ```  
     GC.Collect();  
@@ -488,13 +488,13 @@ ms.author: "ronpet"
 <a name="Finalize"></a>   
 ##### To determine whether there are objects waiting to be finalized  
   
-1.  In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
+1. In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
   
      **!finalizequeue**  
   
      Look at the number of objects that are ready for finalization. If the number is high, you must examine why these finalizers cannot progress at all or cannot progress fast enough.  
   
-2.  To get an output of threads, type the following command:  
+2. To get an output of threads, type the following command:  
   
      **threads -special**  
   
@@ -512,7 +512,7 @@ ms.author: "ronpet"
 <a name="Fragmented"></a>   
 ##### To determine the amount of free space in the managed heap  
   
--   In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
+- In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
   
      **!dumpheap -type Free -stat**  
   
@@ -526,7 +526,7 @@ ms.author: "ronpet"
     Total 230 objects  
     ```  
   
--   To determine the free space in generation 0, type the following command for memory consumption information by generation:  
+- To determine the free space in generation 0, type the following command for memory consumption information by generation:  
   
      **!eeheap -gc**  
   
@@ -546,7 +546,7 @@ ms.author: "ronpet"
     46120000 46120038  49e05d04   0x03ce5ccc(63855820)  
     ```  
   
--   Calculate the space used by generation 0:  
+- Calculate the space used by generation 0:  
   
      **? 49e05d04-0x49521f8c**  
   
@@ -556,7 +556,7 @@ ms.author: "ronpet"
     Evaluate expression: 9321848 = 008e3d78  
     ```  
   
--   The following command dumps the free space within the generation 0 range:  
+- The following command dumps the free space within the generation 0 range:  
   
      **!dumpheap -type Free -stat 0x49521f8c 49e05d04**  
   
@@ -588,7 +588,7 @@ ms.author: "ronpet"
 <a name="Pinned"></a>   
 ##### To determine the number of pinned objects  
   
--   In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
+- In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command:  
   
      **!gchandles**  
   
@@ -603,7 +603,7 @@ ms.author: "ronpet"
 <a name="TimeInGC"></a>   
 ##### To determine the length of time in a garbage collection  
   
--   Examine the `% Time in GC` memory performance counter.  
+- Examine the `% Time in GC` memory performance counter.  
   
      The value is calculated by using a sample interval time. Because the counters are updated at the end of each garbage collection, the current sample will have the same value as the previous sample if no collections occurred during the interval.  
   
@@ -634,7 +634,7 @@ ms.author: "ronpet"
   
      The second generation 2 garbage collection started during the third interval and finished at the fifth interval. Assuming the worst case, the last garbage collection was for a generation 0 collection that finished at the start of the second interval, and the generation 2 garbage collection finished at the end of the fifth interval. Therefore, the time between the end of the generation 0 garbage collection and the end of the generation 2 garbage collection is 4 seconds. Because the `% Time in GC` counter is 20%, the maximum amount of time the generation 2 garbage collection could have taken is (4 seconds * 20% = 800ms).  
   
--   Alternatively, you can determine the length of a garbage collection by using [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md), and analyze the information to determine the duration of garbage collection.  
+- Alternatively, you can determine the length of a garbage collection by using [garbage collection ETW events](../../../docs/framework/performance/garbage-collection-etw-events.md), and analyze the information to determine the duration of garbage collection.  
   
      For example, the following data shows an event sequence that occurred during a non-concurrent garbage collection.  
   
@@ -690,7 +690,7 @@ ms.author: "ronpet"
 <a name="Triggered"></a>   
 ##### To determine what triggered a garbage collection  
   
--   In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command to show all the threads with their call stacks:  
+- In the WinDbg or Visual Studio debugger with the SOS debugger extension loaded, type the following command to show all the threads with their call stacks:  
   
      **~\*kb**  
   
@@ -768,9 +768,10 @@ ms.author: "ronpet"
 <a name="HighCPU"></a>   
 ##### To determine whether high CPU usage is caused by garbage collection  
   
--   Correlate the `% Time in GC` memory performance counter value with the process time.  
+- Correlate the `% Time in GC` memory performance counter value with the process time.  
   
      If the `% Time in GC` value spikes at the same time as process time, garbage collection is causing a high CPU usage. Otherwise, profile the application to find where the high usage is occurring.  
   
-## See Also  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

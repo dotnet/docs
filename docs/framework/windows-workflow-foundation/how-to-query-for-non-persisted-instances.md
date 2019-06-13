@@ -10,15 +10,15 @@ When a new instance of a service is created and the service has the SQL Workflow
   
  Durable service instances that are not yet persisted remain in a non-persisted state in the following scenarios:  
   
--   The service host crashes before the instance persisted for the first time. The initial entry for the instance remains in the instance store. The instance is not recoverable. If a correlated message arrives, the instance becomes active again.  
+- The service host crashes before the instance persisted for the first time. The initial entry for the instance remains in the instance store. The instance is not recoverable. If a correlated message arrives, the instance becomes active again.  
   
--   The instance experiences an unhandled exception before it persisted for the first time. The following scenarios arise  
+- The instance experiences an unhandled exception before it persisted for the first time. The following scenarios arise  
   
-    -   If the value of the **UnhandledExceptionAction** property is set to **Abandon**, the service deployment information is written to the instance store and the instance is unloaded from memory. The instance remains in non-persisted state in the persistence database.  
+    - If the value of the **UnhandledExceptionAction** property is set to **Abandon**, the service deployment information is written to the instance store and the instance is unloaded from memory. The instance remains in non-persisted state in the persistence database.  
   
-    -   If the value of the **UnhandledExceptionAction** property is set to **AbandonAndSuspsend**, the service deployment information is written to the persistence database and the instance state is set to **Suspended**. The instance cannot be resumed, canceled, or terminated. The service host cannot load the instance because the instance hasn't persisted yet and, hence the database entry for the instance is not complete.  
+    - If the value of the **UnhandledExceptionAction** property is set to **AbandonAndSuspsend**, the service deployment information is written to the persistence database and the instance state is set to **Suspended**. The instance cannot be resumed, canceled, or terminated. The service host cannot load the instance because the instance hasn't persisted yet and, hence the database entry for the instance is not complete.  
   
-    -   If the value of the **UnhandledExceptionAction** property is set to **Cancel** or **Terminate**, the service deployment information is written to the instance store and the instance state is set to **Completed**.  
+    - If the value of the **UnhandledExceptionAction** property is set to **Cancel** or **Terminate**, the service deployment information is written to the instance store and the instance state is set to **Completed**.  
   
  The following sections provide sample queries to find non-persisted instances in the SQL persistence database and to delete these instances from the database.  
   

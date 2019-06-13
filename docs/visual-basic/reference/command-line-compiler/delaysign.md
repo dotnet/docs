@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-delaysign compiler option [Visual Basic]"
   - "-delaysign compiler option [Visual Basic]"
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
-author: rpetrusha
-ms.author: ronpet
 ---
 # -delaysign
 Specifies whether the assembly will be fully or partially signed.  
@@ -33,14 +31,15 @@ Specifies whether the assembly will be fully or partially signed.
   
 ### To set -delaysign in the Visual Studio integrated development environment  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
-2.  Click the **Signing** tab.  
+2. Click the **Signing** tab.  
   
-3.  Set the value in the **Delay sign only** box.  
+3. Set the value in the **Delay sign only** box.  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)  
- [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)
+- [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

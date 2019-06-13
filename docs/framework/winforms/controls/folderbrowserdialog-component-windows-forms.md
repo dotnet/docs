@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: d71a0c5e-898a-4eea-be74-93bdf50d1852
 ---
 # FolderBrowserDialog Component (Windows Forms)
-The Windows Forms `FolderBrowserDialog` component displays an interface with which users can browse and select a folder or create a new one. It is a complement to the [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md) component, which is used for browsing and selecting files.  
+The Windows Forms `FolderBrowserDialog` component displays an interface with which users can browse and select a folder or create a new one. It is a complement to the [OpenFileDialog Component](openfiledialog-component-windows-forms.md) component, which is used for browsing and selecting files.  
   
 ## In This Section  
- [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
+ [FolderBrowserDialog Component Overview (Windows Forms)](folderbrowserdialog-component-overview-windows-forms.md)  
  Explains what this control is and its key features and properties.  
   
- [How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)  
+ [How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)  
  Explains how to programmatically extract the selected folder from the dialog box, as well as work with some of the other, optional properties of the component.  
   
 ## Reference  
@@ -23,8 +23,8 @@ The Windows Forms `FolderBrowserDialog` component displays an interface with whi
  Describes this class and has links to all its members.  
   
 ## Related Sections  
- [Dialog Boxes in Windows Forms](../../../../docs/framework/winforms/dialog-boxes-in-windows-forms.md)  
+ [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Provides a list of tasks for dialog boxes, which often display tabs.  
   
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
+ [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

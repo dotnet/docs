@@ -8,7 +8,7 @@ ClientViaBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ClientViaBehavior : Behavior  
 {  
   string Uri;  
@@ -34,5 +34,6 @@ class ClientViaBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ClientViaBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.ClientViaBehavior>

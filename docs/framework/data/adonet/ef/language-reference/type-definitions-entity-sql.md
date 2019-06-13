@@ -13,25 +13,25 @@ A type definition is used in the declaration statement of an [!INCLUDE[esql](../
   
  The type definitions can be either:  
   
--   The type of the identifier (for example, "Int32" or "AdventureWorks.Order").  
+- The type of the identifier (for example, "Int32" or "AdventureWorks.Order").  
   
--   The keyword `COLLECTION` followed by another type definition in parenthesis (for example, "Collection(AdventureWorks.Order)").  
+- The keyword `COLLECTION` followed by another type definition in parenthesis (for example, "Collection(AdventureWorks.Order)").  
   
--   The keyword ROW followed by a list of property definitions in parenthesis (for example, "Row(x AdventureWorks.Order)"). Property definitions have a format such as "`identifier type_definition`, `identifier type_definition`, ...".  
+- The keyword ROW followed by a list of property definitions in parenthesis (for example, "Row(x AdventureWorks.Order)"). Property definitions have a format such as "`identifier type_definition`, `identifier type_definition`, ...".  
   
--   The keyword REF followed by the type of the identifier in parenthesis (for example, "Ref(AdventureWorks.Order)"). The REF type definition operator requires an entity type as the argument. You cannot specify a primitive type as the argument.  
+- The keyword REF followed by the type of the identifier in parenthesis (for example, "Ref(AdventureWorks.Order)"). The REF type definition operator requires an entity type as the argument. You cannot specify a primitive type as the argument.  
   
  You can also nest type definitions (for example, "Collection(Row(x Ref(AdventureWorks.Order)))").  
   
  The type definition options are:  
   
--   `IdentifierName supported_type`, or  
+- `IdentifierName supported_type`, or  
   
--   `IdentifierName` COLLECTION(`type_definition`), or  
+- `IdentifierName` COLLECTION(`type_definition`), or  
   
--   `IdentifierName` ROW(`property_definition`), or  
+- `IdentifierName` ROW(`property_definition`), or  
   
--   `IdentifierName` REF(`supported_entity_type`)  
+- `IdentifierName` REF(`supported_entity_type`)  
   
  The property definition option is `IdentifierName type_definition`.  
   
@@ -80,6 +80,7 @@ Function UnReference(p1 Ref(AdventureWorks.Order)) AS (
 select Ref(x) from AdventureWorksEntities.SalesOrderHeaders as x  
 ```  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## See also
+
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

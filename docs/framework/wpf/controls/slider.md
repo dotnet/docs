@@ -13,10 +13,10 @@ The <xref:System.Windows.Controls.Slider> allows you select from a range of valu
   
  The following illustration shows an example of a horizontal <xref:System.Windows.Controls.Slider> control.  
   
- ![Horizontal slider with tick marks](../../../../docs/framework/wpf/controls/media/ss-ctl-hslider-ticks.png "SS_CTL_hslider_ticks")  
+ ![Horizontal slider with tick marks](./media/ss-ctl-hslider-ticks.png "SS_CTL_hslider_ticks")  
   
 ## In This Section  
- [Customize the Ticks on a Slider](../../../../docs/framework/wpf/controls/how-to-customize-the-ticks-on-a-slider.md)  
+ [Customize the Ticks on a Slider](how-to-customize-the-ticks-on-a-slider.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Slider>  

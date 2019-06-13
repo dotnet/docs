@@ -49,5 +49,5 @@ Visual Basic includes several new features to assist in developing applications 
  [ADO.NET](../../framework/data/adonet/index.md)  
  Describes the ADO.NET classes, which expose data-access services to the .NET Framework programmer.
 
- [Data in Office Solutions](https://msdn.microsoft.com/library/xx069ybh)  
+ [Data in Office Solutions](/visualstudio/vsto/data-in-office-solutions)
  Contains links to pages that explain how data works in Office solutions, including information about schema-oriented programming, data caching, and server-side data access.

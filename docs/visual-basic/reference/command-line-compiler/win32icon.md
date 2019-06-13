@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-win32icon compiler option [Visual Basic]"
   - "/win32icon compiler option [Visual Basic]"
 ms.assetid: aecaab01-9353-46c5-941c-6edabd4eff92
-author: rpetrusha
-ms.author: ronpet
 ---
 # -win32icon
 Inserts an .ico file in the output file. This .ico file represents the output file in **File Explorer**.  
@@ -27,7 +25,7 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
 ## Remarks  
  You can create an .ico file with the Microsoft Windows Resource Compiler (RC). The resource compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file. The `-win32icon` and `-win32resource` options are mutually exclusive.  
   
- See [-linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file, or [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file. See [-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) to import a .res file.  
+ See [-linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a .NET Framework resource file, or [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a .NET Framework resource file. See [-win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) to import a .res file.  
   
 |To set -win32icon in the Visual Studio IDE|  
 |---|  
@@ -40,6 +38,7 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
 vbc -win32icon:rf.ico in.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

@@ -40,9 +40,7 @@ After the garbage collector performs its first collection of generation 0 and pr
 
 For the majority of the objects that your application creates, you can rely on the garbage collector to automatically perform the necessary memory management tasks. However, unmanaged resources require explicit cleanup. The most common type of unmanaged resource is an object that wraps an operating system resource, such as a file handle, window handle, or network connection. Although the garbage collector is able to track the lifetime of a managed object that encapsulates an unmanaged resource, it does not have specific knowledge about how to clean up the resource. When you create an object that encapsulates an unmanaged resource, it is recommended that you provide the necessary code to clean up the unmanaged resource in a public `Dispose` method. By providing a `Dispose` method, you enable users of your object to explicitly free its memory when they are finished with the object. When you use an object that encapsulates an unmanaged resource, you should be aware of `Dispose` and call it as necessary. For more information about cleaning up unmanaged resources and an example of a design pattern for implementing `Dispose`, see [Garbage Collection in .NET](index.md).
 
-## See Also
+## See also
 
-[System.GC](xref:System.GC)
-
-[Garbage collection in .NET](index.md)
-
+- [System.GC](xref:System.GC)
+- [Garbage collection in .NET](index.md)

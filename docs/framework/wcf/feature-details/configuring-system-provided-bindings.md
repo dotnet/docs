@@ -10,11 +10,11 @@ ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
 # Configuring System-Provided Bindings
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. Bindings consist of elements that define how the Windows Communication Foundation (WCF) channels are layered up to provide the required communication features. A binding contains three types of elements:  
   
--   Protocol channel binding elements, which determine the security, reliability, context flow settings, or user-defined protocols to use with messages that are sent to the endpoint.  
+- Protocol channel binding elements, which determine the security, reliability, context flow settings, or user-defined protocols to use with messages that are sent to the endpoint.  
   
--   Transport channel binding elements, which determine the underlying transport protocol to use when sending messages to the endpoint, for example, TCP or HTTP.  
+- Transport channel binding elements, which determine the underlying transport protocol to use when sending messages to the endpoint, for example, TCP or HTTP.  
   
--   Message encoding binding elements, which determine the wire encoding to use for messages that are sent to the endpoint, for example, text/XML, binary, or Message Transmission Optimization Mechanism (MTOM).  
+- Message encoding binding elements, which determine the wire encoding to use for messages that are sent to the endpoint, for example, text/XML, binary, or Message Transmission Optimization Mechanism (MTOM).  
   
  This topic presents all of the system-provided Windows Communication Foundation (WCF) bindings. If none of these meets the exact requirements for your application, you can create a binding using the <xref:System.ServiceModel.Channels.CustomBinding> class. For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
@@ -57,6 +57,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |<xref:System.ServiceModel.NetNamedPipeBinding>|.NET|None,<br /><br /> (Transport)|None, (Transport)|(None), Yes|Yes|  
 |<xref:System.ServiceModel.NetMsmqBinding>|.NET|None, Message, (Transport), Both|(None)|(None), Yes|No|  
 |<xref:System.ServiceModel.NetPeerTcpBinding>|Peer|None, Message, (Transport), Mixed|(None)|(None)|Yes|  
+|<xref:System.ServiceModel.WebHttpBinding>|.Net|None, Transport, TransportCredentialOnly|(None)|(None)|n/a|  
 |<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|MSMQ|None, (Transport)|(None)|(None), Yes|n/a|  
   
  The following table explains the features found in the previous table.  
@@ -70,7 +71,8 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |Duplex|Specifies whether duplex contracts are supported. Note this feature requires support for Sessions in the binding.|  
 |Streaming|Specifies whether the message streaming is supported.|  
   
-## See Also  
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
+## See also
+
+- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)

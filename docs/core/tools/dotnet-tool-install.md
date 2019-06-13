@@ -1,8 +1,6 @@
 ---
-title: dotnet tool install command - .NET Core CLI
+title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET Core Global Tool on your machine.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet tool install
@@ -92,4 +90,4 @@ Installs version 2.0.0 of the [dotnetsay](https://www.nuget.org/packages/dotnets
 
 ## See also
 
-* [.NET Core Global Tools](global-tools.md)
+- [.NET Core Global Tools](global-tools.md)

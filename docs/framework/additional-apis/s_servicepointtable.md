@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 
@@ -25,7 +25,7 @@ private static Hashtable s_ServicePointTable
 ```
 
 > [!WARNING]
-> The `ServicePointManager.s_ServicePointTable` field is private and not meant to be used directly in your code.
+> The `ServicePointManager.s_ServicePointTable` field is private and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

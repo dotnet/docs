@@ -8,7 +8,7 @@ HttpsTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp  
 class HttpsTransportBindingElement : HttpTransportBindingElement  
 {  
   boolean RequireClientCertificate;  
@@ -34,5 +34,6 @@ class HttpsTransportBindingElement : HttpTransportBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>

@@ -11,9 +11,6 @@ helpviewer_keywords:
   - "network, proxy configuration"
   - "proxies, configuring"
 ms.assetid: 353c0a8b-4cee-44f6-8e65-60e286743df9
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Proxy Configuration
 A proxy server handles client requests for resources. A proxy can return a requested resource from its cache or forward the request to the server where the resource resides. Proxies can improve network performance by reducing the number of requests sent to remote servers. Proxies can also be used to restrict access to resources.  
@@ -42,11 +39,11 @@ A proxy server handles client requests for resources. A proxy can return a reque
   
  Several options control how a static proxy operates. You can specify the following:  
   
--   The address of the proxy.  
+- The address of the proxy.  
   
--   Whether the proxy should be bypassed for local addresses.  
+- Whether the proxy should be bypassed for local addresses.  
   
--   Whether the proxy should be bypassed for a set of addresses.  
+- Whether the proxy should be bypassed for a set of addresses.  
   
  The following table shows the configuration options for a static proxy.  
   
@@ -72,7 +69,8 @@ A proxy server handles client requests for resources. A proxy can return a reque
 </system.net>  
 ```  
   
-## See Also  
- <xref:System.Net.WebProxy>  
- <xref:System.Net.GlobalProxySelection>  
- [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)
+## See also
+
+- <xref:System.Net.WebProxy>
+- <xref:System.Net.GlobalProxySelection>
+- [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)

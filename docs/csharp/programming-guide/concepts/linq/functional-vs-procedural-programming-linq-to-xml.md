@@ -6,21 +6,21 @@ ms.assetid: fc64e39c-a487-4882-9169-da4de97917d9
 # Functional vs. Procedural Programming (LINQ to XML) (C#)
 There are various types of XML applications:  
   
--   Some applications take source XML documents, and produce new XML documents that are in a different shape than the source documents.  
+- Some applications take source XML documents, and produce new XML documents that are in a different shape than the source documents.  
   
--   Some applications take source XML documents, and produce result documents in an entirely different form, such as HTML or CSV text files.  
+- Some applications take source XML documents, and produce result documents in an entirely different form, such as HTML or CSV text files.  
   
--   Some applications take source XML documents, and insert records into a database.  
+- Some applications take source XML documents, and insert records into a database.  
   
--   Some applications take data from another source, such as a database, and create XML documents from it.  
+- Some applications take data from another source, such as a database, and create XML documents from it.  
   
  These are not all of the types of XML applications, but these are a representative set of the types of functionality that an XML programmer has to implement.  
   
  With all of these types of applications, there are two contrasting approaches that a developer can take:  
   
--   Functional construction using a declarative approach.  
+- Functional construction using a declarative approach.  
   
--   In-memory XML tree modification using procedural code.  
+- In-memory XML tree modification using procedural code.  
   
  LINQ to XML supports both approaches.  
   
@@ -32,7 +32,8 @@ There are various types of XML applications:
   
  To see the two approaches contrasted, see [In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml.md).  
   
- For a tutorial on writing functional transformations, see [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md).  
+ For a tutorial on writing functional transformations, see [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md).  
   
-## See Also  
- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)
+## See also
+
+- [LINQ to XML Programming Overview (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)

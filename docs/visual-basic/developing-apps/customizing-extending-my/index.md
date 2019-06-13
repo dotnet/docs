@@ -21,7 +21,7 @@ You can customize project templates to provide additional `My` objects. This mak
  Describes how to specify your own extensions to the application model by overriding members of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class.  
   
  [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)  
- Describes how to control which `My` objects are enabled by setting your project's _MYTYPE conditional-compilation constant.  
+ Describes how to control which `My` objects are enabled by setting your project's \_MYTYPE conditional-compilation constant.  
   
 ## Related Sections  
  [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md)  
@@ -39,5 +39,6 @@ You can customize project templates to provide additional `My` objects. This mak
  <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
  Describes the `My` object that provides properties, methods, and events related to the current application.  
   
-## See Also  
- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)
+## See also
+
+- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

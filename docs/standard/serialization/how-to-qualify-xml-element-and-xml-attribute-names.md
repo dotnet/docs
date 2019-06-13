@@ -1,10 +1,10 @@
 ---
 title: "How to: Qualify XML Element and XML Attribute Names"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "qualifying XML names"
   - "qualifying XML elements"
   - "XML namespaces, qualifying elements and names in"
@@ -26,7 +26,7 @@ By creating an instance of `XmlSerializerNamespaces` and adding the namespace pa
 
 3. Apply the appropriate `System.Xml.Serialization` attribute to each member or class that the <xref:System.Xml.Serialization.XmlSerializer> is to serialize into an XML document.
 
-  The available attributes are: <xref:System.Xml.Serialization.XmlAnyElementAttribute>, <xref:System.Xml.Serialization.XmlArrayAttribute>, <xref:System.Xml.Serialization.XmlArrayItemAttribute>, <xref:System.Xml.Serialization.XmlAttributeAttribute>, <xref:System.Xml.Serialization.XmlElementAttribute>, <xref:System.Xml.Serialization.XmlRootAttribute>, and <xref:System.Xml.Serialization.XmlTypeAttribute>.
+    The available attributes are: <xref:System.Xml.Serialization.XmlAnyElementAttribute>, <xref:System.Xml.Serialization.XmlArrayAttribute>, <xref:System.Xml.Serialization.XmlArrayItemAttribute>, <xref:System.Xml.Serialization.XmlAttributeAttribute>, <xref:System.Xml.Serialization.XmlElementAttribute>, <xref:System.Xml.Serialization.XmlRootAttribute>, and <xref:System.Xml.Serialization.XmlTypeAttribute>.
 
 4. Set the `Namespace` property of each attribute to one of the namespace values from the `XmlSerializerNamespaces`.
 
@@ -163,13 +163,13 @@ public class Book
 }
 ```
 
-## See Also
+## See also
 
-<xref:System.Xml.Serialization.XmlSerializer>
-[The XML Schema Definition Tool and XML Serialization](the-xml-schema-definition-tool-and-xml-serialization.md)
-[Introducing XML Serialization](introducing-xml-serialization.md)
-[XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
-[Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
-[How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
-[How to: Serialize an Object](how-to-serialize-an-object.md)
-[How to: Deserialize an Object](how-to-deserialize-an-object.md)
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [The XML Schema Definition Tool and XML Serialization](the-xml-schema-definition-tool-and-xml-serialization.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
+- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
+- [How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

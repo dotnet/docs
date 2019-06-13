@@ -32,9 +32,9 @@ Enables the use of local type inference in variable declarations.
   
 ### To set -optioninfer in the Visual Studio IDE  
   
-1.  Select a project in **Solution Explorer**. On the **Project** menu, click **Properties**.  
+1. Select a project in **Solution Explorer**. On the **Project** menu, click **Properties**.  
   
-2.  On the **Compile** tab, modify the value in the **Option infer** box.  
+2. On the **Compile** tab, modify the value in the **Option infer** box.  
   
 ## Example  
  The following code compiles `test.vb` with local type inference enabled.  
@@ -43,15 +43,16 @@ Enables the use of local type inference in variable declarations.
 vbc -optioninfer+ test.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)  
- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)  
- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
- [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
+- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)

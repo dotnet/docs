@@ -12,18 +12,18 @@ ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
 # Debugging Windows Authentication Errors
 When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   
- For an overview of the Kerberos protocol, see [Kerberos Explained](http://go.microsoft.com/fwlink/?LinkID=86946); for an overview of SSPI, see [SSPI](http://go.microsoft.com/fwlink/?LinkId=88941).  
+ For an overview of the Kerberos protocol, see [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkID=86946); for an overview of SSPI, see [SSPI](https://go.microsoft.com/fwlink/?LinkId=88941).  
   
  For Windows authentication, WCF typically uses the *Negotiate* Security Support Provider (SSP), which performs Kerberos mutual authentication between the client and service. If the Kerberos protocol is not available, by default WCF falls back to NT LAN Manager (NTLM). However, you can configure WCF to use only the Kerberos protocol (and to throw an exception if Kerberos is not available). You can also configure WCF to use restricted forms of the Kerberos protocol.  
   
 ## Debugging Methodology  
  The basic method is as follows:  
   
-1.  Determine whether you are using Windows authentication. If you are using any other scheme, this topic does not apply.  
+1. Determine whether you are using Windows authentication. If you are using any other scheme, this topic does not apply.  
   
-2.  If you are sure you are using Windows authentication, determine whether your WCF configuration uses Kerberos direct or Negotiate.  
+2. If you are sure you are using Windows authentication, determine whether your WCF configuration uses Kerberos direct or Negotiate.  
   
-3.  Once you have determined whether your configuration is using the Kerberos protocol or NTLM, you can understand error messages in the correct context.  
+3. Once you have determined whether your configuration is using the Kerberos protocol or NTLM, you can understand error messages in the correct context.  
   
 ### Availability of the Kerberos Protocol and NTLM  
  The Kerberos SSP requires a domain controller to act as the Kerberos Key Distribution Center (KDC). The Kerberos protocol is available only when both the client and service are using domain identities. In other account combinations, NTLM is used, as summarized in the following table.  
@@ -39,13 +39,13 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  Specifically, the four account types include:  
   
--   Local User: Machine-only user profile. For example: `MachineName\Administrator` or `MachineName\ProfileName`.  
+- Local User: Machine-only user profile. For example: `MachineName\Administrator` or `MachineName\ProfileName`.  
   
--   Local System: The built-in account SYSTEM on a machine that is not joined to a domain.  
+- Local System: The built-in account SYSTEM on a machine that is not joined to a domain.  
   
--   Domain User: A user account on a Windows domain. For example: `DomainName\ProfileName`.  
+- Domain User: A user account on a Windows domain. For example: `DomainName\ProfileName`.  
   
--   Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
+- Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
   
 > [!NOTE]
 >  The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  
@@ -60,7 +60,7 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  In load-balancing scenarios, such as Web farms or Web gardens, a common practice is to define a unique account for each application, assign an SPN to that account, and ensure that all of the application's services run in that account.  
   
- To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](http://go.microsoft.com/fwlink/?LinkID=88330).  
+ To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](https://go.microsoft.com/fwlink/?LinkID=88330).  
   
 #### Kerberos Protocol Direct Requires the Service to Run Under a Domain Machine Account  
  This occurs when the `ClientCredentialType` property is set to `Windows` and the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property is set to `false`, as shown in the following code.  
@@ -75,19 +75,19 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  To implement Kerberos with credential negotiation, do the following steps:  
   
-1.  Implement delegation by setting <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> to <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>.  
+1. Implement delegation by setting <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> to <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>.  
   
-2.  Require SSPI negotiation:  
+2. Require SSPI negotiation:  
   
-    1.  If you are using standard bindings, set the `NegotiateServiceCredential` property to `true`.  
+    1. If you are using standard bindings, set the `NegotiateServiceCredential` property to `true`.  
   
-    2.  If you are using custom bindings, set the `AuthenticationMode` attribute of the `Security` element to `SspiNegotiated`.  
+    2. If you are using custom bindings, set the `AuthenticationMode` attribute of the `Security` element to `SspiNegotiated`.  
   
-3.  Require the SSPI negotiation to use Kerberos by disallowing the use of NTLM:  
+3. Require the SSPI negotiation to use Kerberos by disallowing the use of NTLM:  
   
-    1.  Do this in code, with the following statement: `ChannelFactory.Credentials.Windows.AllowNtlm = false`  
+    1. Do this in code, with the following statement: `ChannelFactory.Credentials.Windows.AllowNtlm = false`  
   
-    2.  Or you can do this in the configuration file by setting the `allowNtlm` attribute to `false`. This attribute is contained in the [\<windows>](../../../../docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
+    2. Or you can do this in the configuration file by setting the `allowNtlm` attribute to `false`. This attribute is contained in the [\<windows>](../../../../docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
   
 ### NTLM Protocol  
   
@@ -138,10 +138,11 @@ When using Windows authentication as a security mechanism, the Security Support 
 #### Developing and Deploying with Different Identities  
  If you develop your application on one machine, and deploy on another, and use different account types to authenticate on each machine, you may experience different behavior. For example, suppose you develop your application on a Windows XP Pro machine using the `SSPI Negotiated` authentication mode. If you use a local user account to authenticate with, then NTLM protocol will be used. Once the application is developed, you deploy the service to a Windows Server 2003 machine where it runs under a domain account. At this point the client will not be able to authenticate the service because it will be using Kerberos and a domain controller.  
   
-## See Also  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- <xref:System.ServiceModel.Security.WindowsServiceCredential>  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- <xref:System.ServiceModel.ClientBase%601>  
- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+## See also
+
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- <xref:System.ServiceModel.Security.WindowsServiceCredential>
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- <xref:System.ServiceModel.ClientBase%601>
+- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

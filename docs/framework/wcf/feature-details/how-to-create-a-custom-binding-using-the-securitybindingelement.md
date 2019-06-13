@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "security [WCF], creating custom bindings"
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # How to: Create a Custom Binding Using the SecurityBindingElement
 Windows Communication Foundation (WCF) includes several system-provided bindings that can be configured but do not provide full flexibility when configuring all the security options that WCF supports. This topic demonstrates how to create a custom binding directly from individual binding elements and highlights some of the security settings that can be specified when creating such a binding. For more information about creating custom bindings, see [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md).  
@@ -28,22 +26,22 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
   
  Additional classes are used when transport level security is provided:  
   
--   <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
+- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
   
--   <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  
   
--   <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
+- <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
   
 ## Required Binding Elements  
  There are a large number of possible binding elements that can be combined into a binding. Not all of these combinations are valid. This section describes the required elements that must be present in a security binding.  
   
  Valid security bindings depend on many factors, including the following:  
   
--   Security mode.  
+- Security mode.  
   
--   Transport protocol.  
+- Transport protocol.  
   
--   The message exchange pattern (MEP) specified in the contract.  
+- The message exchange pattern (MEP) specified in the contract.  
   
  The following table shows the valid binding element stack configurations for each combination of the preceding factors. Note that these are minimal requirements. You can add additional binding elements to the binding, such as message encoding binding elements, transaction binding elements, and other binding elements.  
   
@@ -79,19 +77,19 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
   
 #### To create a custom binding that uses a SymmetricSecurityBindingElement  
   
-1.  Create an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class with the name `outputBec`.  
+1. Create an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class with the name `outputBec`.  
   
-2.  Call the static method `M:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement(true)`, which returns an instance of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.  
+2. Call the static method `M:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement(true)`, which returns an instance of the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> class.  
   
-3.  Add the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> to the collection (`outputBec`) by calling the `Add` method of the <xref:System.Collections.ObjectModel.Collection%601> of <xref:System.ServiceModel.Channels.BindingElement> class.  
+3. Add the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> to the collection (`outputBec`) by calling the `Add` method of the <xref:System.Collections.ObjectModel.Collection%601> of <xref:System.ServiceModel.Channels.BindingElement> class.  
   
-4.  Create an instance of the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> class and add it to the collection (`outputBec`). This specifies the encoding used by the binding.  
+4. Create an instance of the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> class and add it to the collection (`outputBec`). This specifies the encoding used by the binding.  
   
-5.  Create a <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and add it to the collection (`outputBec`). This specifies that the binding uses the HTTP transport.  
+5. Create a <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and add it to the collection (`outputBec`). This specifies that the binding uses the HTTP transport.  
   
-6.  Create a new custom binding by creating an instance of the <xref:System.ServiceModel.Channels.CustomBinding> class and passing the collection `outputBec` to the constructor.  
+6. Create a new custom binding by creating an instance of the <xref:System.ServiceModel.Channels.CustomBinding> class and passing the collection `outputBec` to the constructor.  
   
-7.  The resulting custom binding shares many of the same characteristics as the standard <xref:System.ServiceModel.WSHttpBinding>. It specifies message-level security and Windows credentials but disables secure sessions, requires that the service credential be specified out-of-band, and does not encrypt signatures. The last can be controlled only by setting the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A> property as shown in step 4. The other two can be controlled using settings on the standard binding.  
+7. The resulting custom binding shares many of the same characteristics as the standard <xref:System.ServiceModel.WSHttpBinding>. It specifies message-level security and Windows credentials but disables secure sessions, requires that the service credential be specified out-of-band, and does not encrypt signatures. The last can be controlled only by setting the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A> property as shown in step 4. The other two can be controlled using settings on the standard binding.  
   
 ## Example  
   
@@ -102,10 +100,11 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
  [!code-csharp[c_CustomBinding#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#20)]
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   
-## See Also  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>  
- <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>  
- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+## See also
+
+- <xref:System.ServiceModel.Channels.SecurityBindingElement>
+- <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>
+- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)

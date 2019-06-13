@@ -15,7 +15,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
   
 ## To configure a WCF service to authenticate using Windows domain username and password
   
-1.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding>, set the security mode of the binding to `SecurityMode.Message`, set the `ClientCredentialType` of the binding to `MessageCredentialType.UserName`, and add a service endpoint using the configured binding to the service host as shown in the following code:  
+1. Create an instance of the <xref:System.ServiceModel.WSHttpBinding>, set the security mode of the binding to <xref:System.ServiceModel.WSHttpSecurity.Message?displayProperty=nameWithType>, set the `ClientCredentialType` of the binding to <xref:System.ServiceModel.MessageCredentialType.UserName?displayProperty=nameWithType>, and add a service endpoint using the configured binding to the service host as shown in the following code:  
   
     ```  
     // ...  
@@ -26,7 +26,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
     // ...  
     ```  
   
-2.  Specify the server certificate used to encrypt the username and password information sent over the wire. This code should immediately follow the code above. The following example uses the certificate that is created by the setup.bat file from the [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md) sample:  
+2. Specify the server certificate used to encrypt the username and password information sent over the wire. This code should immediately follow the code above. The following example uses the certificate that is created by the setup.bat file from the [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md) sample:  
   
     ```  
     // ...  
@@ -38,7 +38,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
   
 ## To call the service passing username and password  
   
-1.  The client application must prompt the user for their username and password. The following code asks the user for username and password.  
+1. The client application must prompt the user for their username and password. The following code asks the user for username and password.  
   
     > [!WARNING]
     >  This code should not be used in production as the password is displayed while being entered.  
@@ -55,7 +55,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
             }  
     ```  
   
-2.  Create an instance of the client proxy specifying the client’s credentials as shown in the following code:  
+2. Create an instance of the client proxy specifying the client’s credentials as shown in the following code:  
   
     ```  
     string username;  
@@ -76,15 +76,16 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
     // Call the service operation using the proxy  
     ```  
   
-## See Also  
- <xref:System.ServiceModel.WSHttpBinding>  
- <xref:System.ServiceModel.WSHttpSecurity>  
- <xref:System.ServiceModel.SecurityMode>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>  
- <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>  
- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>  
- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)  
- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)
+## See also
+
+- <xref:System.ServiceModel.WSHttpBinding>
+- <xref:System.ServiceModel.WSHttpSecurity>
+- <xref:System.ServiceModel.SecurityMode>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
+- <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>
+- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>
+- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)
+- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)
+- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

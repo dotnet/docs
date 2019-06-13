@@ -38,10 +38,9 @@ MsgBox(result)
   
 ## Compiling the Code  
   
--   Add a project reference to System.Core.dll if it is not already referenced.  
+- Include the System.Linq.Expressions namespace.  
   
--   Include the System.Linq.Expressions namespace.  
-  
-## See Also  
- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)  
- [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)
+## See also
+
+- [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
+- [How to: Modify Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md)

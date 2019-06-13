@@ -15,16 +15,16 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  **SQL Server Books Online**  
   
-1.  [Using Large-Value Data Types](http://go.microsoft.com/fwlink/?LinkId=120498)  
+1. [Using Large-Value Data Types](https://go.microsoft.com/fwlink/?LinkId=120498)  
   
 ## Large-Value Type Restrictions  
  The following restrictions apply to the `max` data types, which do not exist for smaller data types:  
   
--   A `sql_variant` cannot contain a large `varchar` data type.  
+- A `sql_variant` cannot contain a large `varchar` data type.  
   
--   Large `varchar` columns cannot be specified as a key column in an index. They are allowed in an included column in a non-clustered index.  
+- Large `varchar` columns cannot be specified as a key column in an index. They are allowed in an included column in a non-clustered index.  
   
--   Large `varchar` columns cannot be used as partitioning key columns.  
+- Large `varchar` columns cannot be used as partitioning key columns.  
   
 ## Working with Large-Value Types in Transact-SQL  
  The Transact-SQL `OPENROWSET` function is a one-time method of connecting and accessing remote data. It includes all of the connection information necessary to access remote data from an OLE DB data source. `OPENROWSET` can be referenced in the FROM clause of a query as though it were a table name. It can also be referenced as the target table of an INSERT, UPDATE, or DELETE statement, subject to the capabilities of the OLE DB provider.  
@@ -243,8 +243,9 @@ WHERE   DocumentID=@DocumentID
  [!code-csharp[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS/source.cs#1)]
  [!code-vb[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/VB/source.vb#1)]  
   
-## See Also  
- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
+- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
+- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

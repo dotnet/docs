@@ -27,14 +27,14 @@ When writing your code, you might at times create lengthy statements that necess
   
 ### To break a single statement into multiple lines  
   
--   Use the line-continuation character, which is an underscore (`_`), at the point at which you want the line to break. The underscore must be immediately preceded by a space and immediately followed by a line terminator (carriage return).  
+- Use the line-continuation character, which is an underscore (`_`), at the point at which you want the line to break. The underscore must be immediately preceded by a space and immediately followed by a line terminator (carriage return).  
   
     > [!NOTE]
     >  In some cases, if you omit the line-continuation character, the Visual Basic compiler will implicitly continue the statement on the next line of code. For a list of syntax elements for which you can omit the line-continuation character, see "Implicit Line Continuation" in [Statements](../../../visual-basic/programming-guide/language-features/statements.md).  
   
      In the following example, the statement is broken into four lines with line-continuation characters terminating all but the last line.  
   
-     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_1.vb)]  
+     [!code-vb[VbVbcnConventions#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#20)]  
   
      Using this sequence makes your code easier to read, both online and when printed.  
   
@@ -48,10 +48,11 @@ When writing your code, you might at times create lengthy statements that necess
   
 ### To place multiple statements on the same line  
   
--   Separate the statements with a colon (`:`), as in the following example.  
+- Separate the statements with a colon (`:`), as in the following example.  
   
-     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
+     [!code-vb[VbVbcnConventions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#10)]  
   
-## See Also  
- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+
+- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

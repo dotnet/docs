@@ -22,7 +22,8 @@ Provides a property and a method for accessing the computer's serial ports.
   
  **Class:** <xref:Microsoft.VisualBasic.Devices.Ports>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -1,0 +1,18 @@
+- name: Events
+  href: index.md
+  items:
+  - name: "How to: Raise and Consume Events"
+    href: how-to-raise-and-consume-events.md
+  - name: "How to: Handle Multiple Events Using Event Properties"
+    href: how-to-handle-multiple-events-using-event-properties.md
+  - name: "How to: Consume Events in a Web Forms Application"
+    href: how-to-consume-events-in-a-web-forms-application.md
+  - name: Observer Design Pattern
+    href: observer-design-pattern.md
+    items:
+    - name: Observer Design Pattern Best Practices
+      href: observer-design-pattern-best-practices.md
+    - name: "How to: Implement a Provider"
+      href: how-to-implement-a-provider.md
+    - name: "How to: Implement an Observer"
+      href: how-to-implement-an-observer.md

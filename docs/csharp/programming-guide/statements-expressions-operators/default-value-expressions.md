@@ -1,5 +1,6 @@
 ---
-title: "Default value expressions (C# Programming Guide)"
+title: "Default value expressions - C# Programming Guide"
+ms.custom: seodec18
 description: "Default value expressions produce the default value for any reference type or value type"
 ms.date: 04/25/2018
 helpviewer_keywords: 
@@ -55,9 +56,9 @@ The following example shows many usages of the `default` literal in a default va
 
 ## See also
 
- <xref:System.Collections.Generic>  
- [C# Programming Guide](../index.md)  
- [Generics (C# Programming Guide)](../generics/index.md)  
- [Generic Methods](../generics/generic-methods.md)  
- [Generics in .NET](~/docs/standard/generics/index.md)  
- [Default values table](../../language-reference/keywords/default-values-table.md)
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../index.md)
+- [Generics (C# Programming Guide)](../generics/index.md)
+- [Generic Methods](../generics/generic-methods.md)
+- [Generics in .NET](~/docs/standard/generics/index.md)
+- [Default values table](../../language-reference/keywords/default-values-table.md)

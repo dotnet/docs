@@ -16,9 +16,9 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ## Enabling Tracing  
  Windows Communication Foundation (WCF) outputs the following data for diagnostic tracing:  
   
--   Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events.  
+- Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events.  
   
--   Windows error events when the tracing feature malfunctions. See [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
+- Windows error events when the tracing feature malfunctions. See [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
   
  WCF tracing is built on top of <xref:System.Diagnostics>. To use tracing, you should define trace sources in the configuration file or in code. WCF defines a trace source for each WCF assembly. The `System.ServiceModel` trace source is the most general WCF trace source, and records processing milestones across the WCF communication stack, from entering/leaving transport to entering/leaving user code. The `System.ServiceModel.MessageLogging` trace source records all messages that flow through the system.  
   
@@ -52,19 +52,19 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ## Configuring Trace Sources to Emit Traces  
  WCF defines a trace source for each assembly. Traces generated within an assembly are accessed by the listeners defined for that source. The following trace sources are defined:  
   
--   System.ServiceModel: Logs all stages of WCF processing, whenever configuration is read, a message is processed in transport, security processing, a message is dispatched in user code, and so on.  
+- System.ServiceModel: Logs all stages of WCF processing, whenever configuration is read, a message is processed in transport, security processing, a message is dispatched in user code, and so on.  
   
--   System.ServiceModel.MessageLogging: Logs all messages that flow through the system.  
+- System.ServiceModel.MessageLogging: Logs all messages that flow through the system.  
   
--   System.IdentityModel.  
+- System.IdentityModel.  
   
--   System.ServiceModel.Activation.  
+- System.ServiceModel.Activation.  
   
--   System.IO.Log: Logging for the .NET Framework interface to the Common Log File System (CLFS).  
+- System.IO.Log: Logging for the .NET Framework interface to the Common Log File System (CLFS).  
   
--   System.Runtime.Serialization: Logs when objects are read or written.  
+- System.Runtime.Serialization: Logs when objects are read or written.  
   
--   CardSpace.  
+- CardSpace.  
   
  You can configure each trace source to use the same (shared) listener, as indicated in the following configuration example.  
   
@@ -136,7 +136,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You can configure a custom trace listener to send traces on the wire, for example, to a remote database. As an application deployer, you should enforce proper access control on the trace logs in the remote machine.  
   
- You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239).  
+ You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239).  
   
 > [!CAUTION]
 >  Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
@@ -174,8 +174,9 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You cannot use the `propagateActivity` attribute with user-defined trace sources. For user code activity ID propagation, make sure you do not set ServiceModel `ActivityTracing`, while still having ServiceModel `propagateActivity` attribute set to `true`.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
- [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648)  
- [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239)
+## See also
+
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648)
+- [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239)

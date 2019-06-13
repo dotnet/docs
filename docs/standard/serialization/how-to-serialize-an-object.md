@@ -17,11 +17,11 @@ To serialize an object, first create the object that is to be serialized and set
   
 ### To serialize an object  
   
-1.  Create the object and set its public fields and properties.  
+1. Create the object and set its public fields and properties.  
   
-2.  Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object. For more information, see the <xref:System.Xml.Serialization.XmlSerializer> class constructors.  
+2. Construct a <xref:System.Xml.Serialization.XmlSerializer> using the type of the object. For more information, see the <xref:System.Xml.Serialization.XmlSerializer> class constructors.  
   
-3.  Call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method to generate either an XML stream or a file representation of the object's public properties and fields. The following example creates a file.  
+3. Call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method to generate either an XML stream or a file representation of the object's public properties and fields. The following example creates a file.  
   
     ```vb  
     Dim myObject As MySerializableClass = New MySerializableClass()  
@@ -44,6 +44,7 @@ To serialize an object, first create the object that is to be serialized and set
     myWriter.Close();  
     ```  
   
-## See Also  
- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+## See also
+
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

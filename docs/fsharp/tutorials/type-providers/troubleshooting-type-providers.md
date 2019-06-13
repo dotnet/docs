@@ -7,11 +7,9 @@ ms.date: 05/16/2016
 
 This topic describes and provides potential solutions for the problems that you are most likely to encounter when you use type providers.
 
-
 ## Possible Problems with Type Providers
+
 If you encounter a problem when you work with type providers, you can review the following table for the most common solutions.
-
-
 
 |Problem|Suggested Actions|
 |-------|-----------------|
@@ -20,5 +18,6 @@ If you encounter a problem when you work with type providers, you can review the
 |**Not Valid Credentials**. You must have valid permissions for the data source or web service.|For a SQL connection, the username and the password that are specified in the connection string or configuration file must be valid for the database. If you are using Windows Authentication, you must have access to the database. The database administrator can identify what permissions you need for access to each database and each element within a database.<br /><br />For a web service or a data service, you must have appropriate credentials. Most type providers provide a DataContext object, which contains a Credentials property that you can set with the appropriate username and access key.|
 |**Not Valid Path**. A path to a file was not valid.|Verify whether the path is correct and the file exists. In addition, you must either quote any backlashes in the path appropriately or use a verbatim string or triple-quoted string.|
 
-## See Also
-[Type Providers](index.md)
+## See also
+
+- [Type Providers](index.md)

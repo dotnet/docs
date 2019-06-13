@@ -1,5 +1,5 @@
 ---
-title: External Functions (F#)
+title: External Functions
 description: Learn about the F# language support for calling functions in native code.
 ms.date: 05/16/2016
 ---
@@ -42,7 +42,6 @@ InteropWithNative.HelloWorld()
 
 Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md). The information in that section is applicable to F#.
 
+## See also
 
-## See Also
-
-[Functions](index.md)
+- [Functions](index.md)

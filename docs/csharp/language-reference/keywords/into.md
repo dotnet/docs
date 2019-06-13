@@ -1,5 +1,7 @@
 ---
-title: "into (C# Reference)"
+title: "into - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "into_CSharpKeyword"
@@ -24,6 +26,6 @@ For an example of the use of `into` in a `join` clause, see [join clause](join-c
 
 ## See also
 
-- [Query Keywords (LINQ)](query-keywords.md)  
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  
-- [group clause](group-clause.md)  
+- [Query Keywords (LINQ)](query-keywords.md)
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [group clause](group-clause.md)

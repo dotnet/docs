@@ -9,13 +9,13 @@ ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
 # SQL Server Connection Pooling (ADO.NET)
 Connecting to a database server typically consists of several time-consuming steps. A physical channel such as a socket or a named pipe must be established, the initial handshake with the server must occur, the connection string information must be parsed, the connection must be authenticated by the server, checks must be run for enlisting in the current transaction, and so on.  
   
- In practice, most applications use only one or a few different configurations for connections. This means that during application execution, many identical connections will be repeatedly opened and closed. To minimize the cost of opening connections, [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] uses an optimization technique called *connection pooling*.  
+ In practice, most applications use only one or a few different configurations for connections. This means that during application execution, many identical connections will be repeatedly opened and closed. To minimize the cost of opening connections, ADO.NET uses an optimization technique called *connection pooling*.  
   
  Connection pooling reduces the number of times that new connections must be opened. The *pooler* maintains ownership of the physical connection. It manages connections by keeping alive a set of active connections for each given connection configuration. Whenever a user calls `Open` on a connection, the pooler looks for an available connection in the pool. If a pooled connection is available, it returns it to the caller instead of opening a new connection. When the application calls `Close` on the connection, the pooler returns it to the pooled set of active connections instead of closing it. Once the connection is returned to the pool, it is ready to be reused on the next `Open` call.  
   
- Only connections with the same configuration can be pooled. [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] keeps several pools at the same time, one for each configuration. Connections are separated into pools by connection string, and by Windows identity when integrated security is used. Connections are also pooled based on whether they are enlisted in a transaction. When using <xref:System.Data.SqlClient.SqlConnection.ChangePassword%2A>, the <xref:System.Data.SqlClient.SqlCredential> instance affects the connection pool. Different instances of <xref:System.Data.SqlClient.SqlCredential> will use different connection pools, even if the user ID and password are the same.  
+ Only connections with the same configuration can be pooled. ADO.NET keeps several pools at the same time, one for each configuration. Connections are separated into pools by connection string, and by Windows identity when integrated security is used. Connections are also pooled based on whether they are enlisted in a transaction. When using <xref:System.Data.SqlClient.SqlConnection.ChangePassword%2A>, the <xref:System.Data.SqlClient.SqlCredential> instance affects the connection pool. Different instances of <xref:System.Data.SqlClient.SqlCredential> will use different connection pools, even if the user ID and password are the same.  
   
- Pooling connections can significantly enhance the performance and scalability of your application. By default, connection pooling is enabled in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)]. Unless you explicitly disable it, the pooler optimizes the connections as they are opened and closed in your application. You can also supply several connection string modifiers to control connection pooling behavior. For more information, see "Controlling Connection Pooling with Connection String Keywords" later in this topic.  
+ Pooling connections can significantly enhance the performance and scalability of your application. By default, connection pooling is enabled in ADO.NET. Unless you explicitly disable it, the pooler optimizes the connections as they are opened and closed in your application. You can also supply several connection string modifiers to control connection pooling behavior. For more information, see "Controlling Connection Pooling with Connection String Keywords" later in this topic.  
   
 > [!NOTE]
 >  When connection pooling is enabled, and if a timeout error or other login error occurs, an exception will be thrown and subsequent connection attempts will fail for the next five seconds, the "blocking period". If the application attempts to connect within the blocking period, the first exception will be thrown again. Subsequent failures after a blocking period ends will result in a new blocking periods that is twice as long as the previous blocking period, up to a maximum of one minute.  
@@ -25,7 +25,7 @@ Connecting to a database server typically consists of several time-consuming ste
   
  In the following C# example, three new <xref:System.Data.SqlClient.SqlConnection> objects are created, but only two connection pools are required to manage them. Note that the first and second connection strings differ by the value assigned for `Initial Catalog`.  
   
-```  
+```csharp
 using (SqlConnection connection = new SqlConnection(  
   "Integrated Security=SSPI;Initial Catalog=Northwind"))  
     {  
@@ -74,7 +74,7 @@ For more info about the events associated with opening and closing connections, 
  If a connection exists to a server that has disappeared, this connection can be drawn from the pool even if the connection pooler has not detected the severed connection and marked it as invalid. This is the case because the overhead of checking that the connection is still valid would eliminate the benefits of having a pooler by causing another round trip to the server to occur. When this occurs, the first attempt to use the connection will detect that the connection has been severed, and an exception is thrown.  
   
 ## Clearing the Pool  
- [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 2.0 introduced two new methods to clear the pool: <xref:System.Data.SqlClient.SqlConnection.ClearAllPools%2A> and <xref:System.Data.SqlClient.SqlConnection.ClearPool%2A>. `ClearAllPools` clears the connection pools for a given provider, and `ClearPool` clears the connection pool that is associated with a specific connection. If there are connections being used at the time of the call, they are marked appropriately. When they are closed, they are discarded instead of being returned to the pool.  
+ ADO.NET 2.0 introduced two new methods to clear the pool: <xref:System.Data.SqlClient.SqlConnection.ClearAllPools%2A> and <xref:System.Data.SqlClient.SqlConnection.ClearPool%2A>. `ClearAllPools` clears the connection pools for a given provider, and `ClearPool` clears the connection pool that is associated with a specific connection. If there are connections being used at the time of the call, they are marked appropriately. When they are closed, they are discarded instead of being returned to the pool.  
   
 ## Transaction Support  
  Connections are drawn from the pool and assigned based on transaction context. Unless `Enlist=false` is specified in the connection string, the connection pool makes sure that the connection is enlisted in the <xref:System.Transactions.Transaction.Current%2A> context. When a connection is closed and returned to the pool with an enlisted `System.Transactions` transaction, it is set aside in such a way that the next request for that connection pool with the same `System.Transactions` transaction will return the same connection if it is available. If such a request is issued, and there are no pooled connections available, a connection is drawn from the non-transacted part of the pool and enlisted. If no connections are available in either area of the pool, a new connection is created and enlisted.  
@@ -93,7 +93,7 @@ For more info about the events associated with opening and closing connections, 
 ### Pool Fragmentation Due to Many Databases  
  Many Internet service providers host several Web sites on a single server. They may use a single database to confirm a Forms authentication login and then open a connection to a specific database for that user or group of users. The connection to the authentication database is pooled and used by everyone. However, there is a separate pool of connections to each database, which increase the number of connections to the server.  
   
- This is also a side-effect of the application design. There is a relatively simple way to avoid this side effect without compromising security when you connect to SQL Server. Instead of connecting to a separate database for each user or group, connect to the same database on the server and then execute the [!INCLUDE[tsql](../../../../includes/tsql-md.md)] USE statement to change to the desired database. The following code fragment demonstrates creating an initial connection to the `master` database and then switching to the desired database specified in the `databaseName` string variable.  
+ This is also a side-effect of the application design. There is a relatively simple way to avoid this side effect without compromising security when you connect to SQL Server. Instead of connecting to a separate database for each user or group, connect to the same database on the server and then execute the Transact-SQL USE statement to change to the desired database. The following code fragment demonstrates creating an initial connection to the `master` database and then switching to the desired database specified in the `databaseName` string variable.  
   
 ```vb  
 ' Assumes that command is a valid SqlCommand object and that  
@@ -118,13 +118,14 @@ using (SqlConnection connection = new SqlConnection(
 ```  
   
 ## Application Roles and Connection Pooling  
- After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
+ After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](https://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### Application Role Alternatives  
  We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
   
-## See Also  
- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)
+- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
+- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

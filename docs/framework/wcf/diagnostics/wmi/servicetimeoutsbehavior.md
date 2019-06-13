@@ -8,7 +8,7 @@ ServiceTimeoutsBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceTimeoutsBehavior : Behavior  
 {  
   datetime TransactionTimeout;  
@@ -34,5 +34,6 @@ class ServiceTimeoutsBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>
+## See also
+
+- <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>

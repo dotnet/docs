@@ -80,6 +80,6 @@ class Program
 </Root>  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XStreamingElement>  
- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- <xref:System.Xml.Linq.XStreamingElement>

@@ -30,18 +30,18 @@ HRESULT LoadTypeLibWithResolver(
     [out] ITypeLib          **pptlib);  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file path of the type library.  
   
  `regkind`  
  [in] A [REGKIND enumeration](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/ne-oleauto-tagregkind) flag that controls how the type library is registered. Its possible values are:  
   
--   `REGKIND_DEFAULT`: Use default registration behavior.  
+- `REGKIND_DEFAULT`: Use default registration behavior.  
   
--   `REGKIND_REGISTER`: Register this type library.  
+- `REGKIND_REGISTER`: Register this type library.  
   
--   `REGKIND_NONE`: Do not register this type library.  
+- `REGKIND_NONE`: Do not register this type library.  
   
  `pTlbResolver`  
  [in] A pointer to the implementation of the [ITypeLibResolver interface](../../../../docs/framework/unmanaged-api/tlbexp/itypelibresolver-interface.md).  
@@ -87,6 +87,7 @@ HRESULT LoadTypeLibWithResolver(
   
  **.NET Framework Version:** 3.5, 3.0, 2.0  
   
-## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+## See also
+
+- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

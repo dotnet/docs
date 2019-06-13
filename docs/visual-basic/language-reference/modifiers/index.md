@@ -57,7 +57,11 @@ The topics in this section document Visual Basic run-time modifiers.
   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
+ [Private Protected](../../../visual-basic/language-reference/modifiers/private-protected.md)  
+  
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+
+ [Protected Friend](../../../visual-basic/language-reference/modifiers/protected-friend.md)  
   
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  
   

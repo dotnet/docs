@@ -8,7 +8,7 @@ OneWayBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class OneWayBindingElement : BindingElement  
 {  
   ChannelPoolSettings ChannelPoolSettings;  
@@ -50,5 +50,6 @@ class OneWayBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.OneWayBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.OneWayBindingElement>

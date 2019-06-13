@@ -3,7 +3,7 @@ title: Common client side web technologies
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
 author: ardalis
 ms.author: wiwagn
-ms.date: 6/28/2018
+ms.date: 01/30/2019
 ---
 # Common client side web technologies
 
@@ -159,5 +159,5 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 > <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282>
 
 >[!div class="step-by-step"]
-[Previous](common-web-application-architectures.md)
-[Next](develop-asp-net-core-mvc-apps.md)
+>[Previous](common-web-application-architectures.md)
+>[Next](develop-asp-net-core-mvc-apps.md)

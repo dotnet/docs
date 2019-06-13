@@ -18,11 +18,11 @@ It is important to test the release builds of your Universal Windows Platform ap
   
  When you debug release builds that are compiled by using .NET Native:  
   
--   You use the .NET Native debug engine, which is different from the normal .NET debugging tools.  
+- You use the .NET Native debug engine, which is different from the normal .NET debugging tools.  
   
--   The size of your executable is reduced as much as possible. One of the ways that .NET Native reduces the size of an executable is by significantly trimming runtime exception messages, a topic discussed in greater detail in the [Runtime exception messages](#Messages) section.  
+- The size of your executable is reduced as much as possible. One of the ways that .NET Native reduces the size of an executable is by significantly trimming runtime exception messages, a topic discussed in greater detail in the [Runtime exception messages](#Messages) section.  
   
--   Your code is heavily optimized. This means that inlining is used whenever possible. (Inlining moves code from external routines into the calling routine.)   The fact that .NET Native provides a specialized runtime and implements aggressive inlining  affects the call stack that is displayed when debugging.  For more information, see the [Runtime call stack](#CallStack) section.  
+- Your code is heavily optimized. This means that inlining is used whenever possible. (Inlining moves code from external routines into the calling routine.)   The fact that .NET Native provides a specialized runtime and implements aggressive inlining  affects the call stack that is displayed when debugging.  For more information, see the [Runtime call stack](#CallStack) section.  
   
 > [!NOTE]
 >  You can control whether the debug and release builds are compiled with the .NET Native tool chain by checking or unchecking the **Compile with .NET Native tool chain** box.   Note, however, that the Windows Store will always compile the production version of your app with the .NET Native tool chain.  
@@ -53,6 +53,7 @@ Additional information: Value does not fall within the expected range.
   
  To get the full stack, run the debug build instead.  
   
-## See Also  
- [Debugging .NET Native Windows Universal Apps](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/29/debugging-net-native-windows-universal-apps.aspx)  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
+## See also
+
+- [Debugging .NET Native Windows Universal Apps](https://devblogs.microsoft.com/devops/debugging-net-native-windows-universal-apps/)
+- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)

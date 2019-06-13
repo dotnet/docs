@@ -13,10 +13,10 @@ ms.assetid: 8f57e879-180b-421f-b3d0-ac007ff2ce80
 WPF programming elements often exist in some form of tree relationship to each other. For instance, an application UI created in XAML can be conceptualized as an object tree. The element tree can be further divided into two discrete yet sometimes parallel trees: the logical tree and the visual tree. Serialization in WPF involves saving the state of these two trees as well as application state and writing it to a file, potentially as XAML.  
   
 ## In This Section  
- [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)  
- [Serialization Limitations of XamlWriter.Save](../../../../docs/framework/wpf/advanced/serialization-limitations-of-xamlwriter-save.md)  
- [Initialization for Object Elements Not in an Object Tree](../../../../docs/framework/wpf/advanced/initialization-for-object-elements-not-in-an-object-tree.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/element-tree-and-serialization-how-to-topics.md)  
+ [Trees in WPF](trees-in-wpf.md)  
+ [Serialization Limitations of XamlWriter.Save](serialization-limitations-of-xamlwriter-save.md)  
+ [Initialization for Object Elements Not in an Object Tree](initialization-for-object-elements-not-in-an-object-tree.md)  
+ [How-to Topics](element-tree-and-serialization-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Markup>  
@@ -26,12 +26,12 @@ WPF programming elements often exist in some form of tree relationship to each o
  <xref:System.Windows.Media.VisualTreeHelper>  
   
 ## Related Sections  
- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)  
-  [XAML in WPF](../../../../docs/framework/wpf/advanced/xaml-in-wpf.md)  
-  [Base Elements](../../../../docs/framework/wpf/advanced/base-elements.md)  
-  [Properties](../../../../docs/framework/wpf/advanced/properties-wpf.md)  
-  [Events](../../../../docs/framework/wpf/advanced/events-wpf.md)  
-  [Input](../../../../docs/framework/wpf/advanced/input-wpf.md)  
-  [Resources](../../../../docs/framework/wpf/advanced/resources-wpf.md)  
-  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
-  [Threading Model](../../../../docs/framework/wpf/advanced/threading-model.md)
+ [WPF Architecture](wpf-architecture.md)  
+  [XAML in WPF](xaml-in-wpf.md)  
+  [Base Elements](base-elements.md)  
+  [Properties](properties-wpf.md)  
+  [Events](events-wpf.md)  
+  [Input](input-wpf.md)  
+  [Resources](resources-wpf.md)  
+  [Styling and Templating](../controls/styling-and-templating.md)  
+  [Threading Model](threading-model.md)

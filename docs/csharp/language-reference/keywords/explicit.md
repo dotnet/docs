@@ -1,5 +1,7 @@
 ---
-title: "explicit keyword (C# Reference)"
+title: "explicit keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 08/24/2018
 f1_keywords: 
   - "explicit_CSharpKeyword"
@@ -44,10 +46,10 @@ The following example defines a struct, `Digit`, that represents a single decima
 
 ## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [implicit](implicit.md)  
-- [operator (C# Reference)](operator.md)  
-- [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
-- [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [implicit](implicit.md)
+- [operator (C# Reference)](operator.md)
+- [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)
+- [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)

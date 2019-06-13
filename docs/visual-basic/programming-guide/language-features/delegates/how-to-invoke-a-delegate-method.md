@@ -8,13 +8,13 @@ This example shows how to associate a method with a delegate and then invoke tha
   
 ### Create the delegate and matching procedures  
   
-1.  Create a delegate named `MySubDelegate`.  
+1. Create a delegate named `MySubDelegate`.  
   
     ```  
     Delegate Sub MySubDelegate(ByVal x As Integer)  
     ```  
   
-2.  Declare a class that contains a method with the same signature as the delegate.  
+2. Declare a class that contains a method with the same signature as the delegate.  
   
     ```  
     Class class1  
@@ -24,7 +24,7 @@ This example shows how to associate a method with a delegate and then invoke tha
     End Class  
     ```  
   
-3.  Define a method that creates an instance of the delegate and invokes the method associated with the delegate by calling the built-in `Invoke` method.  
+3. Define a method that creates an instance of the delegate and invokes the method associated with the delegate by calling the built-in `Invoke` method.  
   
     ```  
     Protected Sub DelegateTest()  
@@ -36,8 +36,9 @@ This example shows how to associate a method with a delegate and then invoke tha
     End Sub  
     ```  
   
-## See Also  
- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
- [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6)
+## See also
+
+- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Multithreaded Applications](../../../../standard/threading/using-threads-and-threading.md)

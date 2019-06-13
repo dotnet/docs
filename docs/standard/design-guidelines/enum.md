@@ -1,6 +1,6 @@
 ---
 title: "Enum Design"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "type design guidelines, enumerations"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], enumerations"
   - "flags enumerations"
 ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Enum Design
 Enums are a special kind of value type. There are two kinds of enums: simple enums and flag enums.  
@@ -43,17 +42,17 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
   
  **✓ CONSIDER** using <xref:System.Int32> (the default in most programming languages) as the underlying type of an enum unless any of the following is true:  
   
--   The enum is a flags enum and you have more than 32 flags, or expect to have more in the future.  
+- The enum is a flags enum and you have more than 32 flags, or expect to have more in the future.  
   
--   The underlying type needs to be different than <xref:System.Int32> for easier interoperability with unmanaged code expecting different-size enums.  
+- The underlying type needs to be different than <xref:System.Int32> for easier interoperability with unmanaged code expecting different-size enums.  
   
--   A smaller underlying type would result in substantial savings in space. If you expect the enum to be used mainly as an argument for flow of control, the size makes little difference. The size savings might be significant if:  
+- A smaller underlying type would result in substantial savings in space. If you expect the enum to be used mainly as an argument for flow of control, the size makes little difference. The size savings might be significant if:  
   
-    -   You expect the enum to be used as a field in a very frequently instantiated structure or class.  
+    - You expect the enum to be used as a field in a very frequently instantiated structure or class.  
   
-    -   You expect users to create large arrays or collections of the enum instances.  
+    - You expect users to create large arrays or collections of the enum instances.  
   
-    -   You expect a large number of instances of the enum to be serialized.  
+    - You expect a large number of instances of the enum to be serialized.  
   
  For in-memory usage, be aware that managed objects are always `DWORD`-aligned, so you effectively need multiple enums or other small structures in an instance to pack a smaller enum with in order to make a difference, because the total instance size is always going to be rounded up to a `DWORD`.  
   
@@ -91,6 +90,7 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

@@ -22,7 +22,7 @@ ms.author: "ronpet"
 # DestroyICeeFileGen Function
 Destroys an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
@@ -32,7 +32,7 @@ HRESULT DestroyICeeFileGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ceeFileGen`  
  [in] The `ICeeFileGen` object to destroy.  
   
@@ -51,5 +51,6 @@ HRESULT DestroyICeeFileGen (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

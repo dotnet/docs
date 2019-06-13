@@ -4,7 +4,7 @@ description: Store structured data in the cloud using Azure Table storage or Azu
 author: sylvanc
 ms.date: 03/26/2018
 ---
-# Get started with Azure Table storage and the Azure Cosmos DB Table API using F# # 
+# Get started with Azure Table storage and the Azure Cosmos DB Table API using F\#
 
 Azure Table storage is a service that stores structured NoSQL data in the cloud. Table storage is a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve. Access to data is fast and cost-effective for all kinds of applications. Table storage is typically significantly lower in cost than traditional SQL for similar volumes of data.
 
@@ -29,7 +29,6 @@ This tutorial shows how to write F# code to do some common tasks using Azure Tab
 ## Prerequisites
 
 To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account) or [Azure Cosmos DB account](https://azure.microsoft.com/try/cosmosdb/).
-
 
 ## Create an F# Script and Start F# Interactive
 
@@ -122,7 +121,6 @@ You now print the results:
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L84-L85)]
 
-
 ### Retrieve a range of entities in a partition
 
 If you don't want to query all the entities in a partition, you can specify a range by combining the partition key filter with a row key filter. Here, you use two filters to get all entities in the "Smith" partition where the row key (first name) starts with a letter earlier than "M" in the alphabet.
@@ -142,7 +140,6 @@ You can write a query to retrieve a single, specific entity. Here, you use a `Ta
 You now print the results:
 
 [!code-fsharp[TableStorage](../../../samples/snippets/fsharp/azure/table-storage.fsx#L113-L115)]
-
 
 ### Replace an entity
 
@@ -191,7 +188,7 @@ to learn about more complex storage tasks and the Azure Cosmos DB Table API.
 
 - [Introduction to Azure Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
 - [Storage Client Library for .NET reference](https://docs.microsoft.com/dotnet/api/overview/azure/storage?view=azure-dotnet)
-- [Azure Storage Type Provider](http://fsprojects.github.io/AzureStorageTypeProvider/)
-- [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)
+- [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
+- [Azure Storage Team Blog](https://blogs.msdn.com/b/windowsazurestorage/)
 - [Configuring Connection Strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 - [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/)

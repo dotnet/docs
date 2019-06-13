@@ -29,7 +29,7 @@ HRESULT GetAppDomain (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAppDomain`  
  [out] A pointer to an ICorDebugAppDomain object that represents the application domain in which this thread is currently executing.  
   

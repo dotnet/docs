@@ -22,12 +22,12 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
   
 ### To create a custom authorization manager  
   
-1.  Derive a class from the <xref:System.ServiceModel.ServiceAuthorizationManager> class.  
+1. Derive a class from the <xref:System.ServiceModel.ServiceAuthorizationManager> class.  
   
      [!code-csharp[c_CustomAuthMgr#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthmgr/cs/c_customauthmgr.cs#5)]
      [!code-vb[c_CustomAuthMgr#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthmgr/vb/c_customauthmgr.vb#5)]  
   
-2.  Override the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%28System.ServiceModel.OperationContext%29> method.  
+2. Override the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%28System.ServiceModel.OperationContext%29> method.  
   
      Use the <xref:System.ServiceModel.OperationContext> that is passed to the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%28System.ServiceModel.OperationContext%29> method to make authorization decisions.  
   
@@ -38,7 +38,7 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
   
 ### To register a custom authorization manager using code  
   
-1.  Create an instance of the custom authorization manager and assign it to the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ServiceAuthorizationManager%2A> property.  
+1. Create an instance of the custom authorization manager and assign it to the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ServiceAuthorizationManager%2A> property.  
   
      The <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> can be accessed using <xref:System.ServiceModel.ServiceHostBase.Authorization%2A> property.  
   
@@ -49,17 +49,17 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
   
 ### To register a custom authorization manager using configuration  
   
-1.  Open the configuration file for the service.  
+1. Open the configuration file for the service.  
   
-2.  Add a [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md).  
+2. Add a [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md).  
   
      To the [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md), add a `serviceAuthorizationManagerType` attribute and set its value to the type that represents the custom authorization manager.  
   
-3.  Add a binding that secures the communication between the client and service.  
+3. Add a binding that secures the communication between the client and service.  
   
      The binding that is chosen for this communication determines the claims that are added to the <xref:System.IdentityModel.Policy.AuthorizationContext>, which the custom authorization manager uses to make authorization decisions. For more details about the system-provided bindings, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).  
   
-4.  Associate the behavior to a service endpoint, by adding a [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) element and set the value of the `behaviorConfiguration` attribute to the value of the name attribute for the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element.  
+4. Associate the behavior to a service endpoint, by adding a [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) element and set the value of the `behaviorConfiguration` attribute to the value of the name attribute for the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element.  
   
      For more information about configuring a service endpoint, see [How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md).  
   
@@ -111,7 +111,7 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
  [!code-csharp[c_CustomAuthMgr#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthmgr/cs/c_customauthmgr.cs#2)]
  [!code-vb[c_CustomAuthMgr#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthmgr/vb/c_customauthmgr.vb#2)]  
   
-## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)  
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)
+## See also
+
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

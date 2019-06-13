@@ -11,13 +11,13 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
   
 ### To create a new variable  
   
-1.  Declare the variable in a `Dim` statement.  
+1. Declare the variable in a `Dim` statement.  
   
     ```  
     Dim newCustomer  
     ```  
   
-2.  Include specifications for the variable's characteristics, such as [Private](../../../../visual-basic/language-reference/modifiers/private.md), [Static](../../../../visual-basic/language-reference/modifiers/static.md), [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md), or [WithEvents](../../../../visual-basic/language-reference/modifiers/withevents.md). For more information, see [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md).  
+2. Include specifications for the variable's characteristics, such as [Private](../../../../visual-basic/language-reference/modifiers/private.md), [Static](../../../../visual-basic/language-reference/modifiers/static.md), [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md), or [WithEvents](../../../../visual-basic/language-reference/modifiers/withevents.md). For more information, see [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md).  
   
     ```  
     Public Static newCustomer  
@@ -25,13 +25,13 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
   
      You do not need the `Dim` keyword if you use other keywords in the declaration.  
   
-3.  Follow the specifications with the variable's name, which must follow Visual Basic rules and conventions. For more information, see [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
+3. Follow the specifications with the variable's name, which must follow Visual Basic rules and conventions. For more information, see [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
   
     ```  
     Public Static newCustomer  
     ```  
   
-4.  Follow the name with the [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause to specify the variable's data type.  
+4. Follow the name with the [As](../../../../visual-basic/language-reference/statements/as-clause.md) clause to specify the variable's data type.  
   
     ```  
     Public Static newCustomer As Customer  
@@ -39,7 +39,7 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
   
      If you do not specify the data type, it uses the default: `Object`.  
   
-5.  Follow the `As` clause with an equal sign (`=`) and follow the equal sign with the variable's initial value.  
+5. Follow the `As` clause with an equal sign (`=`) and follow the equal sign with the variable's initial value.  
   
      Visual Basic assigns the specified value to the variable every time it runs the `Dim` statement. If you do not specify an initial value, Visual Basic assigns the default initial value for the variable's data type when it first enters the code that contains the `Dim` statement.  
   
@@ -49,12 +49,13 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
     Public Static newCustomer As New Customer  
     ```  
   
-## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Statements](../../../../visual-basic/language-reference/statements/index.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
+## See also
+
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Statements](../../../../visual-basic/language-reference/statements/index.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)

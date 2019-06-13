@@ -1,6 +1,6 @@
 ---
 title: "Naming Resources"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "names [.NET Framework], localized resources"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "global applications, naming guidelines"
   - "international applications, naming guidelines"
 ms.assetid: 8b0e97f3-7877-44fd-bc76-e05d36d5d79c
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Naming Resources
 Because localizable resources can be referenced via certain objects as if they were properties, the naming guidelines for resources are similar to property guidelines.  
@@ -35,6 +34,7 @@ Because localizable resources can be referenced via certain objects as if they w
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

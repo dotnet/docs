@@ -11,7 +11,7 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
   
 ### To configure WorkflowIdleBehavior  
   
-1.  Add a <`workflowIdle`> element to the <`behavior`> element within the <`serviceBehaviors`> element as shown in the following example.  
+1. Add a <`workflowIdle`> element to the <`behavior`> element within the <`serviceBehaviors`> element as shown in the following example.  
   
     ```xml  
     <behaviors>  
@@ -30,12 +30,13 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
   
 ### To change idle behavior in code  
   
--   The following example changes the time to wait before persisting and unloading programmatically.  
+- The following example changes the time to wait before persisting and unloading programmatically.  
   
      [!code-csharp[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/wf_svchost_idle_persist/cs/source.cs#1)]
      [!code-vb[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/wf_svchost_idle_persist/vb/source.vb#1)]  
   
-## See Also  
- [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+## See also
+
+- [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)
+- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)

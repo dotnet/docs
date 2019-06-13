@@ -104,7 +104,7 @@ In the `CreateServiceEndpoint` function, a `CustomEndpoint` object is created. I
 ```csharp
 public class CustomEndpoint : ServiceEndpoint
 {
-    public CustomEndpoint() 
+    public CustomEndpoint()
         : this(string.Empty)
     {
     }
@@ -133,21 +133,21 @@ public class CustomEndpoint : ServiceEndpoint
 
 #### To use this sample
 
-1.  Using [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], open the StandardEndpoints.sln file.
+1. Using Visual Studio 2012, open the StandardEndpoints.sln file.
 
-2.  Enable multiple projects to start up.
+2. Enable multiple projects to start up.
 
-    1.  In **Solution Explorer**, right-click the Standard Endpoints solution and then select **Properties**.
+    1. In **Solution Explorer**, right-click the Standard Endpoints solution and then select **Properties**.
 
-    2.  In **Common Properties**, select **Startup Project**, and then click **Multiple Startup Projects**.
+    2. In **Common Properties**, select **Startup Project**, and then click **Multiple Startup Projects**.
 
-    3.  Move the Service project to the beginning of the list, with the **Action** set to **Start**.
+    3. Move the Service project to the beginning of the list, with the **Action** set to **Start**.
 
-    4.  Move the Client project after the Service project, also with the **Action** set to **Start**.
+    4. Move the Client project after the Service project, also with the **Action** set to **Start**.
 
          This specifies that the Client project is executed after the Service project.
 
-3.  To run the solution, press F5.
+3. To run the solution, press F5.
 
 > [!NOTE]
 > If these steps don't work, then make sure that your environment has been properly set up, using the following steps:
@@ -161,6 +161,6 @@ public class CustomEndpoint : ServiceEndpoint
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory doesn't exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory doesn't exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\StandardEndpoints`

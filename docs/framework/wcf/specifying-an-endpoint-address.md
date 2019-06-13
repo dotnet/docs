@@ -16,13 +16,13 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
  The address URI for most transports has four parts. For example, this URI, `http://www.fabrikam.com:322/mathservice.svc/secureEndpoint` has the following four parts:  
   
--   Scheme: http:  
+- Scheme: http:  
   
--   Machine: `www.fabrikam.com`  
+- Machine: `www.fabrikam.com`  
   
--   (Optional) Port: 322  
+- (Optional) Port: 322  
   
--   Path: /mathservice.svc/secureEndpoint  
+- Path: /mathservice.svc/secureEndpoint  
   
  Part of the EPR model is that each endpoint reference can carry some reference parameters that add extra identifying information. In WCF, these reference parameters are modeled as instances of the <xref:System.ServiceModel.Channels.AddressHeader> class.  
   
@@ -33,7 +33,7 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
  When hosting with IIS, you do not manage the <xref:System.ServiceModel.ServiceHost> instance yourself. The base address is always the address specified in the .svc file for the service when hosting in IIS. So you must use relative endpoint addresses for IIS-hosted service endpoints. Supplying a fully-qualified endpoint address can lead to errors in the deployment of the service. For more information, see [Deploying an Internet Information Services-Hosted WCF Service](../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md).  
   
 ## Defining Endpoint Addresses in Configuration  
- To define an endpoint in a configuration file, use the [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+ To define an endpoint in a configuration file, use the [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md) element.  
   
  [!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  
   
@@ -50,9 +50,7 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
 ## Endpoint Address in Metadata  
  An endpoint address is represented in Web Services Description Language (WSDL) as a WS-Addressing `EndpointReference` (EPR) element inside the corresponding endpoint's `wsdl:port` element. The EPR contains the endpoint's address as well as any address properties. Note that the EPR inside `wsdl:port` replaces `soap:Address` as seen in the following example.  
-  
-  
-  
+
 ## Defining Endpoint Addresses in Code  
  An endpoint address can be created in code with the <xref:System.ServiceModel.EndpointAddress> class. The URI specified for the endpoint address can be a fully-qualified path or a path that is relative to the service's base address. The following code illustrates how to create an instance of the <xref:System.ServiceModel.EndpointAddress> class and add it to the <xref:System.ServiceModel.ServiceHost> instance that is hosting the service.  
   
@@ -76,8 +74,9 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
  If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-## See Also  
- <xref:System.ServiceModel.EndpointAddress>  
- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+
+- <xref:System.ServiceModel.EndpointAddress>
+- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)

@@ -3,7 +3,7 @@ title: What is F#
 description: Learn about what the F# programming language is and what F# programming is like. Learn about rich data types, functions, and how they fit together.
 ms.date: 08/03/2018
 ---
-# What is F# #
+# What is F\#
 
 F# is a functional programming language that makes it easy to write correct and maintainable code.
 

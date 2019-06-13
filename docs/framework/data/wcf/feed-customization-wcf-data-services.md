@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ---
 # Feed Customization (WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose data as a feed. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports both Atom and JavaScript Object Notation (JSON) formats for data feeds. When you use an Atom feed, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] provides a standard method to serialize data, such as entities and relationships, into an XML format that can be included in the body of HTTP message. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a default entity-property mapping between the data that is contained in entities and Atom elements. For more information, see [OData: Atom Format](http://go.microsoft.com/fwlink/?LinkID=185794).  
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose data as a feed. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports both Atom and JavaScript Object Notation (JSON) formats for data feeds. When you use an Atom feed, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] provides a standard method to serialize data, such as entities and relationships, into an XML format that can be included in the body of HTTP message. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a default entity-property mapping between the data that is contained in entities and Atom elements. For more information, see [OData: Atom Format](https://go.microsoft.com/fwlink/?LinkID=185794).  
   
  You may have an application scenario that requires that the property data returned by the data service be serialized in a customized manner rather than in the standard feed format. With [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)], you can customize the serialization in a data feed so that properties of an entity may be mapped to unused elements and attributes of an entry or to custom elements of an entry in the feed.  
   
@@ -25,18 +25,18 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 >  When you define custom feeds, you must guarantee that all entity properties that have custom mappings defined are included in the projection. When a mapped entity property is not included in the projection, data loss might occur. For more information, see [Query Projections](../../../../docs/framework/data/wcf/query-projections-wcf-data-services.md).  
   
 ## Customizing Feeds with the Entity Framework Provider  
- The data model used with the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider is represented as XML in the .edmx file. In this case, the attributes that define custom feeds are added to the `EntityType` and `Property` elements that represent entity types and properties in the data model. These feed customization attributes are not defined in [\[MC-CSDL\]: Conceptual Schema Definition File Format](http://go.microsoft.com/fwlink/?LinkId=159072), which is the format that the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider uses to define the data model. Therefore, you must declare feed customization attributes in a specific schema namespace, which is defined as `m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"`. The following XML fragment shows feed customization attributes applied to `Property` elements of the `Products` entity type that define the `ProductName`, `ReorderLevel`, and `UnitsInStock` properties.  
+ The data model used with the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider is represented as XML in the .edmx file. In this case, the attributes that define custom feeds are added to the `EntityType` and `Property` elements that represent entity types and properties in the data model. These feed customization attributes are not defined in [\[MC-CSDL\]: Conceptual Schema Definition File Format](https://go.microsoft.com/fwlink/?LinkId=159072), which is the format that the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider uses to define the data model. Therefore, you must declare feed customization attributes in a specific schema namespace, which is defined as `m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"`. The following XML fragment shows feed customization attributes applied to `Property` elements of the `Products` entity type that define the `ProductName`, `ReorderLevel`, and `UnitsInStock` properties.  
   
- [!code-xml[Astoria Custom Feeds#EdmFeedAttributes](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedattributes)]  
+ [!code-xml[Astoria Custom Feeds#EdmFeedAttributes](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/northwind.csdl#edmfeedattributes)]  
   
  These attributes produce the following customized data feed for the `Products` entity set. In the customized data feed, the `ProductName` property value is displayed in both in the `author` element and as the `ProductName` property element, and the `UnitsInStock` property is displayed in a custom element that has its own unique namespace and with the `ReorderLevel` property as an attribute:  
   
- [!code-xml[Astoria Custom Feeds#EdmFeedResultProduct](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/edmfeedresult.xml#edmfeedresultproduct)]  
+ [!code-xml[Astoria Custom Feeds#EdmFeedResultProduct](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/edmfeedresult.xml#edmfeedresultproduct)]  
   
  For more information, see [How to: Customize Feeds with the Entity Framework Provider](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-ef-provider-wcf-data-services.md).  
   
 > [!NOTE]
->  Because extensions to the data model are not supported by the Entity Designer, you must manually modify the XML file that contains the data model. For more information about the .edmx file that is generated by the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools, see [.edmx File Overview](http://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4).  
+>  Because extensions to the data model are not supported by the Entity Designer, you must manually modify the XML file that contains the data model. For more information about the .edmx file that is generated by the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools, see [.edmx File Overview (Entity Framework)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100)).  
   
 ### Custom Feed Attributes  
  The following table shows the XML attributes that customize feeds that you can add to the conceptual schema definition language (CSDL) that defines the data model. These attributes are equivalent to the properties of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> used with the reflection provider.  
@@ -59,12 +59,12 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 > [!NOTE]
 >  The data model for this example is defined in the topic [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md).  
   
- [!code-csharp[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria custom feeds/cs/orderitems.svc.cs#customorderfeed)]
- [!code-vb[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria custom feeds/vb/orderitems.svc.vb#customorderfeed)]  
+ [!code-csharp[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_custom_feeds/cs/orderitems.svc.cs#customorderfeed)]
+ [!code-vb[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_custom_feeds/vb/orderitems.svc.vb#customorderfeed)]  
   
  These attributes produce the following customized data feed for the `Orders` entity set. In this customized feed, the `OrderId` property value displays only in the `title` element of the `entry` and the `Customer` property value displays both in the `author` element and as the `Customer` property element:  
   
- [!code-xml[Astoria Custom Feeds#IQueryableFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/iqueryablefeedresult.xml#iqueryablefeedresult)]  
+ [!code-xml[Astoria Custom Feeds#IQueryableFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/iqueryablefeedresult.xml#iqueryablefeedresult)]  
   
  For more information, see [How to: Customize Feeds with the Reflection Provider](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-the-reflection-provider-wcf-data-services.md).  
   
@@ -77,15 +77,16 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
 ## Feed Customization Considerations  
  You should consider the following when defining custom feed mappings.  
   
--   The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
+- The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only white space. Because of this, mapped elements that contain only white space are not materialized on the client with the same white space. To preserve this white space on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
   
 ## Versioning Requirements  
  Feed customization has the following [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol versioning requirements:  
   
--   Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
+- Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
-## See Also  
- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)  
- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
+## See also
+
+- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)
+- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

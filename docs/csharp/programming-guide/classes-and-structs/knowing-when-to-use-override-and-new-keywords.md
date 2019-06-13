@@ -1,5 +1,6 @@
 ---
-title: "Knowing When to Use Override and New Keywords (C# Programming Guide)"
+title: "Knowing When to Use Override and New Keywords - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "override keyword [C#]"
@@ -32,11 +33,11 @@ class DerivedClass : BaseClass
   
  In the `Main` method, declare variables `bc`, `dc`, and `bcdc`.  
   
--   `bc` is of type `BaseClass`, and its value is of type `BaseClass`.  
+- `bc` is of type `BaseClass`, and its value is of type `BaseClass`.  
   
--   `dc` is of type `DerivedClass`, and its value is of type `DerivedClass`.  
+- `dc` is of type `DerivedClass`, and its value is of type `DerivedClass`.  
   
--   `bcdc` is of type `BaseClass`, and its value is of type `DerivedClass`. This is the variable to pay attention to.  
+- `bcdc` is of type `BaseClass`, and its value is of type `DerivedClass`. This is the variable to pay attention to.  
   
  Because `bc` and `bcdc` have type `BaseClass`, they can only directly access `Method1`, unless you use casting. Variable `dc` can access both `Method1` and `Method2`. These relationships are shown in the following code.  
   
@@ -535,9 +536,10 @@ namespace OverrideAndNew2
 }  
 ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)  
- [base](../../../csharp/language-reference/keywords/base.md)  
- [abstract](../../../csharp/language-reference/keywords/abstract.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)
+- [base](../../../csharp/language-reference/keywords/base.md)
+- [abstract](../../../csharp/language-reference/keywords/abstract.md)

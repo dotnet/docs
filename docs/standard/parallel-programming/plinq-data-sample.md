@@ -21,13 +21,13 @@ This sample contains example data in .csv format, together with methods that tra
   
 ### To set up this sample  
   
-1.  Create a Visual Basic or Visual C# console application project.  
+1. Create a Visual Basic or Visual C# console application project.  
   
-2.  Replace the contents of Module1.vb or Program.cs by using the code that follows these steps.  
+2. Replace the contents of Module1.vb or Program.cs by using the code that follows these steps.  
   
-3.  On the **Project** menu, click **Add New Item**. Select **Text File** and then click **OK**. Copy the data in this topic and then paste it in the new text file. On the **File** menu, click **Save**, name the file Plinqdata.csv, and then save it in the folder that contains your source code files.  
+3. On the **Project** menu, click **Add New Item**. Select **Text File** and then click **OK**. Copy the data in this topic and then paste it in the new text file. On the **File** menu, click **Save**, name the file Plinqdata.csv, and then save it in the folder that contains your source code files.  
   
-4.  Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
+4. Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
   
     ```  
     Customer count: 50  
@@ -856,5 +856,6 @@ PRODUCTS
 END PRODUCTS  
 ```  
   
-## See Also  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

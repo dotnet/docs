@@ -15,18 +15,18 @@ ms.author: "mairaw"
 # Security-Transparent Code, Level 1
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
- Transparency helps developers write more secure .NET Framework libraries that expose functionality to partially trusted code. Level 1 transparency was introduced in the .NET Framework version 2.0 and was primarily used only within Microsoft. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use [level 2 transparency](../../../docs/framework/misc/security-transparent-code-level-2.md). However, level 1 transparency has been retained so that you can identify legacy code that must run with the earlier security rules.  
+ Transparency helps developers write more secure .NET Framework libraries that expose functionality to partially trusted code. Level 1 transparency was introduced in the .NET Framework version 2.0 and was primarily used only within Microsoft. Starting with the .NET Framework 4, you can use [level 2 transparency](../../../docs/framework/misc/security-transparent-code-level-2.md). However, level 1 transparency has been retained so that you can identify legacy code that must run with the earlier security rules.  
   
 > [!IMPORTANT]
->  You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], always use level 2 transparency.  
+>  You should specify level 1 transparency for compatibility only; that is, specify level 1 only for code that was developed with the .NET Framework 3.5 or earlier that uses the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> or does not use the transparency model. For example, use level 1 transparency for .NET Framework 2.0 assemblies that allow calls from partially trusted callers (APTCA). For code that is developed for the .NET Framework 4, always use level 2 transparency.  
   
  This topic contains the following sections:  
   
--   [The Level 1 Transparency Model](#the_level_1_transparency_model)  
+- [The Level 1 Transparency Model](#the_level_1_transparency_model)  
   
--   [Transparency Attributes](#transparency_attributes)  
+- [Transparency Attributes](#transparency_attributes)  
   
--   [Security Transparency Examples](#security_transparency_examples)  
+- [Security Transparency Examples](#security_transparency_examples)  
   
 <a name="the_level_1_transparency_model"></a>   
 ## The Level 1 Transparency Model  
@@ -34,11 +34,11 @@ ms.author: "mairaw"
   
  You can mark a whole assembly, some classes in an assembly, or some methods in a class as security-transparent. Security-transparent code cannot elevate privileges. This restriction has three consequences:  
   
--   Security-transparent code cannot perform <xref:System.Security.Permissions.SecurityAction.Assert> actions.  
+- Security-transparent code cannot perform <xref:System.Security.Permissions.SecurityAction.Assert> actions.  
   
--   Any link demand that would be satisfied by security-transparent code becomes a full demand.  
+- Any link demand that would be satisfied by security-transparent code becomes a full demand.  
   
--   Any unsafe (unverifiable) code that must execute in security-transparent code causes a full demand for the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> security permission.  
+- Any unsafe (unverifiable) code that must execute in security-transparent code causes a full demand for the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> security permission.  
   
  These rules are enforced during execution by the common language runtime (CLR). Security-transparent code passes all the security requirements of the code it calls back to its callers. Demands that flow through the security-transparent code cannot elevate privileges. If a low-trust application calls security-transparent code and causes a demand for high privilege, the demand will flow back to the low-trust code and fail. The security-transparent code cannot stop the demand because it cannot perform assert actions. The same security-transparent code called from full-trust code results in a successful demand.  
   
@@ -124,6 +124,7 @@ public class B
   
  The previous code is transparent except for the `Critical` method, which is explicitly marked as security-critical. Transparency is the default setting, even with the assembly-level <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
-## See Also  
- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)  
- [Security Changes](../../../docs/framework/security/security-changes.md)
+## See also
+
+- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)
+- [Security Changes](../../../docs/framework/security/security-changes.md)

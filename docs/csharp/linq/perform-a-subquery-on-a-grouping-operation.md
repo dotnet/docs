@@ -1,7 +1,7 @@
 ---
 title: Perform a subquery on a grouping operation (LINQ in C#)
 description: How to perform a subquery on a grouping operation using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: d75a588e-9b6f-4f37-b195-f99ec8503855
 ---
 # Perform a subquery on a grouping operation
@@ -17,7 +17,11 @@ For more information about continuations, see [into](../language-reference/keywo
 > [!NOTE]
 > This example contains references to objects that are defined in the sample code in [Query a collection of objects](query-a-collection-of-objects.md).
 
-[!code-csharp[csProgGuideLINQ#23](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_1.cs)]  
+[!code-csharp[csProgGuideLINQ#23](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_1.cs)] 
+
+The query in the snippet above can also be written using method syntax. The following code snippet has a semantically equivalent query written using method syntax.
+
+[!code-csharp[csProgGuideLINQ#86](~/samples/snippets/csharp/concepts/linq/how-to-perform-a-subquery-on-a-grouping-operation_2.cs)]
 
 ## See also
 

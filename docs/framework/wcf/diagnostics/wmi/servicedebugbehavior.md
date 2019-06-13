@@ -8,7 +8,7 @@ ServiceDebugBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceDebugBehavior : Behavior  
 {  
   boolean HttpHelpPageEnabled;  
@@ -66,5 +66,6 @@ class ServiceDebugBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceDebugBehavior>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceDebugBehavior>

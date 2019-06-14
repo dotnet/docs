@@ -179,7 +179,7 @@ dotnet new -i <PATH_TO_NUPKG_FILE>
 
 ### To install a template from a file system directory
 
-Templates can be installed by from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute. However, an absolute path is required to uninstall a template that is installed from a folder.
+Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute. However, an absolute path is required to uninstall a template that is installed from a folder.
 
 ```console
 dotnet new -i <FILE_SYSTEM_DIRECTORY>

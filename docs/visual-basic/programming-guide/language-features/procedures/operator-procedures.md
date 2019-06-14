@@ -39,7 +39,7 @@ An operator procedure is a series of Visual Basic statements that define the beh
  The syntax for declaring an operator procedure is as follows:  
  
  ```vb 
- Public Shared [Widening | Narrowing] Operator *operatorsymbol* ( *operand1* [,  *operand2* ]) As *datatype*  
+ Public Shared [Widening | Narrowing] Operator operatorsymbol ( operand1 [,  operand2 ]) As datatype  
   
  ' Statements of the operator procedure.
   

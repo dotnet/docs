@@ -153,7 +153,7 @@ You call any of the overloads of the <xref:System.DateTime> constructor that spe
 
 <a name="initialization-01"></a>
 [!code-vb[System.DateTime.Instantiation#1](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#1)]  
-[!code-csharp-interactive[System.DateTime.Instantiation#1](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#1)]
+[!code-csharp[System.DateTime.Instantiation#1](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#1)]
 
 You invoke the `DateTime` structure's implicit default constructor when you want a `DateTime` initialized to its default value. (For details on the implicit default constructor of a value type, see [Value Types](~/docs/csharp/language-reference/keywords/value-types.md).) Some compilers also support declaring a <xref:System.DateTime> value without explicitly assigning a value to it. Creating a value without an explicit initialization also results in the default value. The following example illustrates the <xref:System.DateTime> implicit default constructor in C# and Visual Basic, as well as a <xref:System.DateTime> declaration without assignment in Visual Basic.  
 
@@ -193,7 +193,7 @@ Internally, all <xref:System.DateTime> values are represented as the number of t
 The appearance of date and time values is dependent on culture, international standards, application requirements, and personal preference. The <xref:System.DateTime> structure offers flexibility in formatting date and time values through overloads of  <xref:System.DateTime.ToString%2A>. The default <xref:System.DateTime.ToString?displayProperty=nameWithType> method returns the string representation of a date and time value using the current culture's short date and long time pattern. The following example uses the default <xref:System.DateTime.ToString?displayProperty=nameWithType> method. It displays the date and time using the short date and long time pattern for the current culture. The en-US culture is the current culture on the computer on which the example was run.  
   
 <a name="formatting-01"></a>
-[!code-csharp-interactive[System.DateTime.Formatting#1](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#1)]
+[!code-csharp[System.DateTime.Formatting#1](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#1)]
 [!code-vb[System.DateTime.Formatting#1](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#1)]  
 
 You may need to format dates in a specific culture to support web scenarios where the server may be in a different culture from the client. You specify the culture using the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to create the short date and long time representation in a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-FR culture.  
@@ -205,7 +205,7 @@ You may need to format dates in a specific culture to support web scenarios wher
  Other applications may require different string representations of a date. The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method returns the string representation defined by a standard or custom format specifier using the formatting conventions of the current culture. The following example uses the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method to display the full date and time pattern for the en-US culture, the current culture on the computer on which the example was run.  
   
 <a name="formatting-03"></a>
-[!code-csharp-interactive[System.DateTime.Formatting#3](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#3)]
+[!code-csharp[System.DateTime.Formatting#3](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#3)]
 [!code-vb[System.DateTime.Formatting#3](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#3)]  
 
  Finally, you can specify both the culture and the format using the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-FR culture.  
@@ -239,7 +239,7 @@ You use the <xref:System.DateTime.Parse%2A> or <xref:System.DateTime.TryParse%2A
 You use the <xref:System.DateTime.ParseExact%2A> and <xref:System.DateTime.TryParseExact%2A> methods to convert a string that must match a particular format or formats to a <xref:System.DateTime> value. You specify one or more date and time format strings as a parameter to the parsing method. The following example uses the <xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> method to convert strings that must be either in a "yyyyMMdd" format or a "HHmmss" format to <xref:System.DateTime> values.  
   
 <a name="parsing-02"></a>
-[!code-csharp-interactive[System.DateTime.Parsing#2](~/samples/snippets/csharp/System.DateTime/Parsing.cs#2)]
+[!code-csharp[System.DateTime.Parsing#2](~/samples/snippets/csharp/System.DateTime/Parsing.cs#2)]
 [!code-vb[System.DateTime.Parsing#2](~/samples/snippets/visualbasic/System.DateTime/Parsing.vb#2)]  
 
 One common use for <xref:System.DateTime.ParseExact%2A> is to convert a string representation from a web service, usually in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format. The following code shows the correct format string to use:
@@ -316,19 +316,19 @@ Each culture uses a default calendar defined by its read-only <xref:System.Globa
 A culture's current calendar is used in all formatting operations for that culture. For example, the default calendar of the Thai Buddhist culture is the Thai Buddhist Era calendar, which is represented by the <xref:System.Globalization.ThaiBuddhistCalendar> class.  When a <xref:System.Globalization.CultureInfo> object that represents the Thai Buddhist culture is used in a date and time formatting operation, the Thai Buddhist Era calendar is used by default. The Gregorian calendar is used only if the culture's <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property is changed, as the following example shows:  
 
 <a name="calendars-01"></a>
-[!code-csharp-interactive[System.DateTime.Calendar#1](~/samples/snippets/csharp/System.DateTime/Calendar.cs#1)]
+[!code-csharp[System.DateTime.Calendar#1](~/samples/snippets/csharp/System.DateTime/Calendar.cs#1)]
 [!code-vb[System.DateTime.Calendar#1](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#1)]  
 
 A culture's current calendar is also used in all parsing operations for that culture, as the following example shows.  
   
 <a name="calendars-02"></a>
-[!code-csharp-interactive[System.DateTime.Calendar#2](~/samples/snippets/csharp/System.DateTime/Calendar.cs#2)]
+[!code-csharp[System.DateTime.Calendar#2](~/samples/snippets/csharp/System.DateTime/Calendar.cs#2)]
 [!code-vb[System.DateTime.Calendar#2](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#2)]  
 
 You instantiate a <xref:System.DateTime> value using the date and time elements (number of the year, month, and day) of a specific calendar by calling a [DateTime constructor](xref:System.DateTime.%23ctor%2A) that includes a `calendar` parameter and passing it a <xref:System.Globalization.CultureInfo.Calendar%2A> object that represents that calendar. The following example uses the date and time elements from the <xref:System.Globalization.ThaiBuddhistCalendar> calendar.  
   
 <a name="calendars-03"></a>
-[!code-csharp-interactive[System.DateTime.Calendar#3](~/samples/snippets/csharp/System.DateTime/Calendar.cs#3)]
+[!code-csharp[System.DateTime.Calendar#3](~/samples/snippets/csharp/System.DateTime/Calendar.cs#3)]
 [!code-vb[System.DateTime.Calendar#3](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#3)]  
 
 <xref:System.DateTime> constructors that do not include a `calendar` parameter assume that the date and time elements are expressed as units in the Gregorian calendar.  
@@ -336,13 +336,13 @@ You instantiate a <xref:System.DateTime> value using the date and time elements 
 All other <xref:System.DateTime> properties and methods use the Gregorian calendar. For example, the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> property returns the year in the Gregorian calendar, and the <xref:System.DateTime.IsLeapYear%28System.Int32%29?displayProperty=nameWithType> method assumes that the `year` parameter is a year in the Gregorian calendar.  Each <xref:System.DateTime> member that uses the Gregorian calendar has a corresponding member of the <xref:System.Globalization.CultureInfo.Calendar%2A> class that uses a specific calendar. For example, the <xref:System.Globalization.Calendar.GetYear%2A?displayProperty=nameWithType> method returns the year in a specific calendar, and the <xref:System.Globalization.Calendar.IsLeapYear%2A?displayProperty=nameWithType> method interprets the `year` parameter as a year number in a specific calendar. The following example uses both the <xref:System.DateTime> and the corresponding members of the  <xref:System.Globalization.ThaiBuddhistCalendar> class.  
   
 <a name="calendars-04"></a>
-[!code-csharp-interactive[System.DateTime.Calendar#4](~/samples/snippets/csharp/System.DateTime/Calendar.cs#4)]
+[!code-csharp[System.DateTime.Calendar#4](~/samples/snippets/csharp/System.DateTime/Calendar.cs#4)]
 [!code-vb[System.DateTime.Calendar#4](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#4)]  
 
 The <xref:System.DateTime> structure includes a <xref:System.DateTime.DayOfWeek%2A> property that returns the day of the week in the Gregorian calendar. It does not include a member that allows you to retrieve the week number of the year. To retrieve the week of the year, call the individual calendar's <xref:System.Globalization.Calendar.GetWeekOfYear%2A?displayProperty=nameWithType> method. The following example provides an illustration.  
   
 <a name="calendars-05"></a>
-[!code-csharp-interactive[System.DateTime.Calendar#5](~/samples/snippets/csharp/System.DateTime/Calendar.cs#5)]
+[!code-csharp[System.DateTime.Calendar#5](~/samples/snippets/csharp/System.DateTime/Calendar.cs#5)]
 [!code-vb[System.DateTime.Calendar#5](~/samples/snippets/visualbasic/System.DateTime/Calendar.vb#5)]  
 
 For more information on dates and calendars, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
@@ -4872,7 +4872,7 @@ juillet 2009
 
 The following example parses strings in each of these formats by using the formatting conventions of the current culture, which in this case is the en-US culture:
 
-[!code-csharp-interactive[Default parsing](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse6.cs)]
+[!code-csharp[Default parsing](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse6.cs)]
 [!code-vb[Default parsing](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse6.vb)]  
   
  If the input string represents a leap day in a leap year in the calendar used by the parsing method (see [Parsing and cultural conventions](#Culture)), the <xref:System.DateTime.Parse%2A> method parses the string successfully. If the input string represents a leap day in a non-leap year, the method throws a <xref:System.FormatException>.  
@@ -4945,12 +4945,12 @@ The `DateTime.Parse` overloads return a <xref:System.DateTime> value whose <xref
   
  The following example converts date strings that contain time zone information to the time in the local time zone:  
   
- [!code-csharp-interactive[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
+ [!code-csharp[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
  [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
 
   You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
   
- [!code-csharp-interactive[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
+ [!code-csharp[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
  [!code-vb[System.DateTime.Parse#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse5.vb#5)]  
   
 ## Examples
@@ -5032,7 +5032,7 @@ The following example parses the string representation of several date and time 
 
 It handles the <xref:System.FormatException> exception that is thrown when the method tries to parse the string representation of a date and time by using some other culture's formatting conventions. It also shows how to successfully parse a date and time value that does not use the formatting conventions of the current thread culture.  
   
- [!code-csharp-interactive[System.DateTime.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse1.cs#1)]
+ [!code-csharp[System.DateTime.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse1.cs#1)]
  [!code-vb[System.DateTime.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse1.vb#1)]  
 
  ]]></format>
@@ -5108,7 +5108,7 @@ This overload attempts to parse `s` by using the <xref:System.Globalization.Date
 
 The following example parses an array of date strings by using the conventions of the en-US, fr-FR, and de-DE cultures. It demonstrates that the string representations of a single date can be interpreted differently across different cultures.  
   
-[!code-csharp-interactive[System.DateTime.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse3.cs#3)]
+[!code-csharp[System.DateTime.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse3.cs#3)]
 [!code-vb[System.DateTime.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse3.vb#3)]  
   
  ]]></format>
@@ -5230,7 +5230,7 @@ This method overload converts the date and time in `s` and sets the <xref:System
 
 The following example demonstrates the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method and displays the value of the <xref:System.DateTime.Kind%2A> property of the resulting <xref:System.DateTime> values.  
   
-[!code-csharp-interactive[System.DateTime.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse4.cs#4)]
+[!code-csharp[System.DateTime.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse4.cs#4)]
 [!code-vb[System.DateTime.Parse#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse4.vb#4)]  
   
  ]]></format>

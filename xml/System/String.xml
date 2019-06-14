@@ -115,7 +115,7 @@
 -   By calling a formatting method to convert a value or object to its string representation. The following example uses the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.  
   
      [!code-cpp[System.String.Class.Instantiate#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate3.cpp#5)]
-     [!code-csharp-interactive[System.String.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#5)]
+     [!code-csharp[System.String.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#5)]
      [!code-vb[System.String.Class.Instantiate#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#5)]  
   
 <a name="Characters"></a>   
@@ -5185,7 +5185,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  Here's another example that uses two format items and two objects in the object list:  
   
  [!code-cpp[System.String.Format#31](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#31)]
- [!code-csharp-interactive[System.String.Format#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#31)]
+ [!code-csharp[System.String.Format#31](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#31)]
  [!code-vb[System.String.Format#31](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#31)]  
   
  You can have as many format items and as many objects in the object list as you want, as long as the index of every format item has a matching object in the object list. You also don't have to worry about which overload you call; the compiler will select the appropriate one for you.  
@@ -5194,7 +5194,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  You can follow the index in a format item with a format string to control how an object is formatted. For example, `{0:d}` applies the "d" format string to the first object in the object list. Here is an example with a single object and two format items:  
   
  [!code-cpp[System.String.Format#32](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#32)]
- [!code-csharp-interactive[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
+ [!code-csharp[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
  [!code-vb[System.String.Format#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#32)]  
   
  A number of types support format strings, including all numeric types (both [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
@@ -5205,7 +5205,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.  
   
  [!code-cpp[System.String.Format#33](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#33)]
- [!code-csharp-interactive[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting3.cs#33)]
+ [!code-csharp[System.String.Format#33](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting3.cs#33)]
  [!code-vb[System.String.Format#33](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#33)]  
   
  ### Controlling alignment  
@@ -5214,7 +5214,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  The following example is similar to the previous one, except that it left-aligns both labels and data.  
   
  [!code-cpp[System.String.Format#34](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/starting1.cpp#34)]
- [!code-csharp-interactive[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
+ [!code-csharp[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
  [!code-vb[System.String.Format#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#34)]  
   
  <xref:System.String.Format%2A?displayProperty=nameWithType> makes use of the composite formatting feature. For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
@@ -5234,7 +5234,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called *format items*, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=nameWithType>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
   
  [!code-cpp[System.String.Format#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload1.cpp#8)]
- [!code-csharp-interactive[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
+ [!code-csharp[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
  [!code-vb[System.String.Format#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload1.vb#8)]  
   
 <a name="FormatItem"></a>   
@@ -5281,7 +5281,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  The following example uses the `alignment` and `formatString` arguments to produce formatted output.  
   
  [!code-cpp[System.String.Format#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload2.cpp#9)]
- [!code-csharp-interactive[System.String.Format#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload2.cs#9)]
+ [!code-csharp[System.String.Format#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload2.cs#9)]
  [!code-vb[System.String.Format#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatoverload2.vb#9)]  
   
 <a name="HowFormatted"></a>   
@@ -5358,12 +5358,12 @@ String interpolation is:
 
 A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of multiple string concatenation operations in the following example produces verbose and hard-to-read code.
 
-[!code-csharp-interactive[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs#QAInterpolated)]
+[!code-csharp[non-interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated1.cs#QAInterpolated)]
 [!code-vb[non-interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated1.vb)]  
 
 In contrast, the use of interpolated strings in the following example produce much clearer, more concise code than the string concatenation statement and the call to the <xref:System.String.Format%2A> method in the previous example.
 
-[!code-csharp-interactive[interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated2.cs#QAInterpolated2)]
+[!code-csharp[interpolated string operations](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa-interpolated2.cs#QAInterpolated2)]
 [!code-vb[interpolated string operations](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa-interpolated2.vb)]  
 
 ### Where can I find a list of the predefined format strings that can be used with format items?  
@@ -5390,7 +5390,7 @@ In contrast, the use of interpolated strings in the following example produce mu
 ### How do I control the number of digits after the decimal separator?  
  All [standard numeric format strings](~/docs/standard/base-types/standard-numeric-format-strings.md) except "D" (which is used with integers only), "G", "R", and "X" allow a precision specifier that defines the number of decimal digits in the result string. The following example uses standard numeric format strings to control the number of decimal digits in the result string.  
   
- [!code-csharp-interactive[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
+ [!code-csharp[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
  [!code-vb[System.String.Format#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa26.vb#26)]  
   
  If you're using a [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.  
@@ -5449,7 +5449,7 @@ In contrast, the use of interpolated strings in the following example produce mu
 
 Numerous examples that call the <xref:System.String.Format%2A> method are interspersed through the [Remarks](#remarks-top) section of this article.  
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+[!INCLUDE[interactive-note](~/includes/csharp-interactive-note-some.md)]
 
 You can also download a complete set of `String.Format` examples, which are included a [.NET Core 2.0 project for C#](https://github.com/dotnet/samples/raw/master/snippets/csharp/downloads/api/System/String.Format.zip) and a [.NET Core 2.0 project for Visual Basic](https://github.com/dotnet/samples/raw/master/snippets/visualbasic/downloads/api/System/String.Format.zip), from the [dotnet/samples GitHub repository](https://github.com/dotnet/samples).
 
@@ -5633,7 +5633,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  This example creates a string that contains data on the high and low temperature on a particular date. The composite format string has five format items in the C# example and six in the Visual Basic example. Two of the format items define the width of their corresponding value's string representation, and the first format item also includes a standard date and time format string.  
   
  [!code-cpp[System.String.Format#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/format5.cpp#5)]
- [!code-csharp-interactive[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
+ [!code-csharp[System.String.Format#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/format5.cs#5)]
  [!code-vb[System.String.Format#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/format5.vb#5)]  
   
  You can also pass the objects to be formatted as an array rather than as an argument list.  
@@ -5879,7 +5879,7 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
  This example uses the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%29> method to display time and temperature data stored in a generic <xref:System.Collections.Generic.Dictionary%602> object. Note that the format string has three format items, although there are only two objects to format. This is because the first object in the list (a date and time value) is used by two format items: The first format item displays the time, and the second displays the date.  
   
  [!code-cpp[System.String.Format#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatexample4.cpp#6)]
- [!code-csharp-interactive[System.String.Format#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatexample4.cs#6)]
+ [!code-csharp[System.String.Format#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatexample4.cs#6)]
  [!code-vb[System.String.Format#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/formatexample4.vb#6)]  
     
  ]]></format>

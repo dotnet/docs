@@ -212,7 +212,7 @@ You can transform input data into predictions in bulk, or one input at a time. I
 
 ```csharp
     var size = new HouseData() { Size = 2.5F };
-    var predEngine = model.CreatePredictionEngine<HouseData, Prediction>(model);
+    var predEngine = mlContext.CreatePredictionEngine<HouseData, Prediction>(model);
     var price = predEngine.Predict(size);
 ```
  

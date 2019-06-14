@@ -7,8 +7,6 @@ ms.date: 06/10/2019
 ---
 # Breaking change categories
 
-## Definitions of compatibility
-
 A particular change can affect compatiiblity in a number of ways. These fall into five categories:
 
 ## Behavioral change

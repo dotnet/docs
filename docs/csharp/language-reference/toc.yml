@@ -344,12 +344,10 @@
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
     - name: Type-testing and assignment operators
       href: operators/type-testing-and-assignment-operators.md
-      displayName: "is, as, typeof, (), =, ref"
+      displayName: "is, as, typeof, (), cast, =, ref"
     - name: Pointer related operators
       href: operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
-    - name: () operator
-      href: operators/invocation-operator.md
     - name: ":: operator"
       href: operators/namespace-alias-qualifer.md
     - name: + and += operators

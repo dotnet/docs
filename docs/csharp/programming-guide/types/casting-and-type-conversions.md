@@ -87,7 +87,7 @@ Giraffe g2 = (Giraffe) a;
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Types](../../../csharp/programming-guide/types/index.md)
-- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)
+- [() Operator](../../../csharp/language-reference/operators/type-testing-and-assignment-operators.md#cast-operator-)
 - [explicit](../../../csharp/language-reference/keywords/explicit.md)
 - [implicit](../../../csharp/language-reference/keywords/implicit.md)
 - [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)

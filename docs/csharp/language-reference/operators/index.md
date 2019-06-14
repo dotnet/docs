@@ -81,7 +81,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[(T)x](invocation-operator.md) – type casting.
+[(T)x](type-testing-and-assignment-operators.md#cast-operator-) – type casting.
 
 [await](../keywords/await.md) – awaits a `Task`.
 

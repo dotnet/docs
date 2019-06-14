@@ -61,10 +61,9 @@ The following table shows the predefined explicit conversions between .NET numer
   
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# reference](../index.md)
 - [Casting and type conversions](../../programming-guide/types/casting-and-type-conversions.md)
-- [() Operator](../operators/invocation-operator.md)
+- [() operator](../operators/type-testing-and-assignment-operators.md#cast-operator-)
 - [Integral types table](integral-types-table.md)
 - [Floating-point types table](floating-point-types-table.md)
 - [Built-in types table](built-in-types-table.md)

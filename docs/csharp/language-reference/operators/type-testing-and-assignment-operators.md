@@ -1,15 +1,20 @@
 ---
 title: "Type-testing and assignment operators - C# reference"
 description: "Learn about C# operators that you can use to check the type of an expression and assign an expression result to a variable, a property, or an indexer element."
-ms.date: 06/18/2019
+ms.date: 06/21/2019
 author: pkulikov
 f1_keywords: 
   - "=_CSharpKeyword"
+  - "()_CSharpKeyword"
 helpviewer_keywords: 
   - "type-testing operators [C#]"
   - "assignment operator [C#]"
   - "ref assignment operator [C#]"
   - "= operator [C#]"
+  - "type conversion [C#]"
+  - "cast operator [C#]"
+  - "cast expression [C#]"
+  - "() operator [C#]"
 ---
 # Type-testing and assignment operators (C# reference)
 
@@ -19,17 +24,29 @@ Introduction.
 
 Text.
 
-## typeof operator
-
-Text.
-
 ## as operator
 
 Text.
 
-## Cast expression with ()
+## typeof operator
 
 Text.
+
+## Cast operator ()
+
+A cast expression of the form `(T)E` performs an explicit conversion of the value of expression `E` to type `T`. If no explicit conversion exists from the type of `E` to type `T`, a compile-time error occurs. At run time, an explicit conversion might not succeed and a cast expression might throw an exception.
+
+The following example demonstrates explicit numeric and reference conversions:
+
+[!code-csharp-interactive[cast expression](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#Cast)]
+
+For information about supported explicit conversions, see the [Explicit conversions](~/_csharplang/spec/conversions.md#explicit-conversions) section of the [C# language specification](~/_csharplang/spec/introduction.md). For information about how to define a custom explicit or implicit type conversion, see the [explicit](../keywords/explicit.md) or [implicit](../keywords/implicit.md) keyword article, respectively.
+
+### Other usages of ()
+
+You also use parentheses to [call a method or invoke a delegate](member-access-operators.md#invocation-operator-).
+
+Other use of parentheses is to specify the order in which to evaluate operations in an expression. For more information, see the [Adding parentheses](../../programming-guide/statements-expressions-operators/operators.md#adding-parentheses) section of the [Operators](../../programming-guide/statements-expressions-operators/operators.md) article. For the list of operators ordered by precedence level, see [C# operators](index.md).
 
 ## Assignment operator =
 
@@ -83,6 +100,8 @@ Compound assignment is supported by [arithmetic](arithmetic-operators.md#compoun
 
 The `is`, `as`, and `typeof` operators are not overloadable.
 
+A user-defined type cannot overload the `()` operator, but can define custom type conversions which can be performed by a cast expression. For more information, see the [explicit](../keywords/explicit.md) and [implicit](../keywords/implicit.md) keyword articles.
+
 A user-defined type cannot overload the assignment operator `=`. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see the [implicit](../keywords/implicit.md) keyword article.
 
 ## C# language specification
@@ -90,6 +109,7 @@ A user-defined type cannot overload the assignment operator `=`. However, a user
 For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
 
 - [Assignment operators](~/_csharplang/spec/expressions.md#assignment-operators)
+- [Cast expressions](~/_csharplang/spec/expressions.md#cast-expressions)
 
 ## See also
 

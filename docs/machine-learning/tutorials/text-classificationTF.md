@@ -39,9 +39,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ### Create classes and define paths
 
+   [!code-csharp[LoadData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#LoadData "loading dataset")]
+
 1. Add the following additional `using` statements to the top of the *Program.cs* file:
 
-    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#AddUsings "Add necessary usings")]
+   [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#AddUsings "Add necessary usings")]
 
 2. Create two global fields to hold the recently downloaded dataset file path and the saved model file path:
 
@@ -49,7 +51,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. Add the following code to the line right above the `Main` method to specify the maximum length:
 
-    [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
+   [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
 4. Next, create classes for your input data and predictions. Add a new class to your project:
 
@@ -59,11 +61,11 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 5. The *IMDBData.cs* file opens in the code editor. Add the following `using` statement to the top of *IMDBData.cs*:
 
-    [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#AddUsings "Add necessary usings")]
+   [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#AddUsings "Add necessary usings")]
 
 6. Remove the existing class definition and add the following code, which has two classes `IMDBSentiment` and `IMDBPrediction`, to the *IMDBData.cs* file:
 
-    [!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
+   [!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/TextClassificationTF/IMDBData.cs#DeclareTypes "Declare data record types")]
 
 ### How the data was prepared
 
@@ -81,11 +83,11 @@ You prepare the application, and then load data:
 
 1. Replace the `Console.WriteLine("Hello World!")` line in the `Main` method with the following code to declare and initialize the mlContext variable:
 
-    [!code-csharp[CreateMLContext](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateMLContext "Create the ML Context")]
+   [!code-csharp[CreateMLContext](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateMLContext "Create the ML Context")]
 
 2. Add the following as the next line of code in the `Main()` method:
 
-    [!code-csharp[CallReuseAndTuneSentimentModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CallReuseAndTuneSentimentModel)]
+   [!code-csharp[CallReuseAndTuneSentimentModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CallReuseAndTuneSentimentModel)]
 
 3. Create the `ReuseAndTuneSentimentModel()` method, just after the `Main()` method, using the following code:
 
@@ -104,33 +106,34 @@ You prepare the application, and then load data:
     * Tunes (retrains) the model.
     * Returns the model.
 
-    [!code-csharp[DownloadModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadModel)]
 
-    [!code-csharp[CreateTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTrainData)]
+[!code-csharp[DownloadModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadModel)]
 
-    [!code-csharp[LoadTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTrainData)]
+[!code-csharp[CreateTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTrainData)]
 
-    [!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
+[!code-csharp[LoadTrainData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTrainData)]
 
-    [!code-csharp[LoadTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTensorFlowModel)]
+[!code-csharp[CreateLookupMap](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateLookupMap)]
 
-    [!code-csharp[GetModelSchema](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#GetModelSchema)]
+[!code-csharp[LoadTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#LoadTensorFlowModel)]
 
-    [!code-csharp[ResizeFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ResizeFeatures)]
+[!code-csharp[GetModelSchema](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#GetModelSchema)]
 
-    [!code-csharp[TokenizeIntoWords](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#TokenizeIntoWords)]
+[!code-csharp[ResizeFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ResizeFeatures)]
 
-    [!code-csharp[MapValue](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#MapValue)]
+[!code-csharp[TokenizeIntoWords](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#TokenizeIntoWords)]
 
-    [!code-csharp[CustomMapping](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CustomMapping)]
+[!code-csharp[MapValue](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#MapValue)]
 
-    [!code-csharp[ScoreTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ScoreTensorFlowModel)]
+[!code-csharp[CustomMapping](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CustomMapping)]
 
-    [!code-csharp[CopyColumns](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CopyColumns)]
+[!code-csharp[ScoreTensorFlowModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ScoreTensorFlowModel)]
 
-    [!code-csharp[TrainModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#TrainModel)]
+[!code-csharp[CopyColumns](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CopyColumns)]
 
-    [!code-csharp[ReturnModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ReturnModel)]
+[!code-csharp[TrainModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#TrainModel)]
+
+[!code-csharp[ReturnModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ReturnModel)]
 
 ```csharp
     public static string DownloadTensorFlowSentimentModel()
@@ -139,15 +142,15 @@ You prepare the application, and then load data:
     }
 ```
 
-    [!code-csharp[DeclareDownloadPath](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareDownloadPath)]
+[!code-csharp[DeclareDownloadPath](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareDownloadPath)]
 
-    [!code-csharp[CheckModelDir](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CheckModelDir)]
+[!code-csharp[CheckModelDir](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CheckModelDir)]
 
-    [!code-csharp[CheckVariableDir](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CheckVariableDir)]
+[!code-csharp[CheckVariableDir](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CheckVariableDir)]
 
-    [!code-csharp[DownloadModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadModel)]
+[!code-csharp[DownloadModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadModel)]
 
-    [!code-csharp[ReturnModelPath](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ReturnModelPath)]
+[!code-csharp[ReturnModelPath](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#ReturnModelPath)]
 
 ```csharp
     private static string Download(string baseGitPath, string dataFile)
@@ -156,7 +159,7 @@ You prepare the application, and then load data:
     }
 ```
 
-    [!code-csharp[DownloadDataFile](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadDataFile)]
+[!code-csharp[DownloadDataFile](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DownloadDataFile)]
 
 ```csharp
     public static void PredictSentiment(MLContext mlContext, ITransformer model)
@@ -165,15 +168,15 @@ You prepare the application, and then load data:
     }
 ```
 
-    [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreatePredictionEngine)]
+[!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreatePredictionEngine)]
 
-    [!code-csharp[CreateTestData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTestData)]
+[!code-csharp[CreateTestData](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#CreateTestData)]
 
-    [!code-csharp[Predict](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Predict)]
+[!code-csharp[Predict](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Predict)]
 
-    [!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DisplayPredictions)]
+[!code-csharp[DisplayPredictions](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DisplayPredictions)]
 
-    [!code-csharp[DeclareIntermediateFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareIntermediateFeatures)]
+[!code-csharp[DeclareIntermediateFeatures](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#DeclareIntermediateFeatures)]
 
 ## Results
 

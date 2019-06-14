@@ -7,7 +7,7 @@ ms.date: 08/11/2017
 
 # Custom templates for dotnet new
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn'tonly the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *.nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files, and execute custom processing operations when your template is used.
 

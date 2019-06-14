@@ -1,5 +1,5 @@
 ---
-title: Evaluate breaking changes in .NET Core
+title: Evaluate breaking changes - .NET Core
 description: Learn about the ways in which .NET Core attempts to maintain compatibility for developers across .NET versions.
 author: rpetrusha
 ms.author: ronpet
@@ -15,7 +15,7 @@ Throughout its history, .NET has attempted to maintain a high level of compatibi
 
 Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
 
-This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. An understanding of the how the .NET team approaches possible breaking changes is particularly helpful for developers who are opening pull requests in the GitHub [dotnet/corefx](https://github.com/dotnet/corefx) repository that modify the behavior of existing APIs.
+This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. An understanding of the how the .NET team approaches possible breaking changes is particularly helpful for developers who are opening pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
 
 > [!NOTE]
 > For a definition of compatibility categories, such as binary compatibility and backward compatibility, see [Breaking change categories](categories.md).
@@ -85,7 +85,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 ### Members
 
-- **✔️ Expanding the visibility of a member that is not [virtual]((../../csharp/language-reference/keywords/sealed.md)**
+- **✔️ Expanding the visibility of a member that is not [virtual](../../csharp/language-reference/keywords/sealed.md)**
 
 - **✔️ Adding an abstract member to a public type that has no *accessible* (public or protected) constructors, or the type is [sealed](../../csharp/language-reference/keywords/sealed.md)**
 
@@ -194,8 +194,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **✔️ Making an assembly portable when the same platforms are still supported**
 
-- **❌ Changing the name of an assembly
-**
+- **❌ Changing the name of an assembly**
 - **❌ Changing the public key of an assembly**
 
 ### Properties, fields, parameters, and return values
@@ -228,13 +227,13 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **✔️ Throwing a more derived exception than an existing exception**
 
-  Because the new exception is a subclass of an existing exception, previous exception handling code continues to handle the exception. For example, in .NET Framework 4, culture creation and retrieval methods began to throw an <xref:System.Globalization.CultureNotFoundException> instead of an <xref:System.ArgumentException> if the culture could not be found. Because  <xref:System.Globalization.CultureNotFoundException> derives from <xref:System.ArgumentException>, this is an acceptable change.
+  Because the new exception is a subclass of an existing exception, previous exception handling code continues to handle the exception. For example, in .NET Framework 4, culture creation and retrieval methods began to throw an <xref:System.Globalization.CultureNotFoundException> instead of an <xref:System.ArgumentException> if the culture could not be found. Because <xref:System.Globalization.CultureNotFoundException> derives from <xref:System.ArgumentException>, this is an acceptable change.
 
 - **✔️ Throwing a more specific exception than <xref:System.NotSupportedException>, <xref:System.NotImplementedException>, <xref:System.NullReferenceException>**
 
 - **✔️ Throwing an exception that is considered unrecoverable**
 
-  Unrecoverable exceptions should not be caught, but should be handled by a high-level catch-all handler. Therefore, users are not expected to have code that catches these explicit exceptions. The unrecoverable exceptions are:
+  Unrecoverable exceptions should not be caught but instead should be handled by a high-level catch-all handler. Therefore, users are not expected to have code that catches these explicit exceptions. The unrecoverable exceptions are:
 
   - <xref:System.AccessViolationException>
   - <xref:System.ExecutionEngineException>
@@ -291,7 +290,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   Assuming that the change in question is not categorized as breaking for some other reason, this is acceptable. Often, actions need to be taken that may include extra operations or that add new functionality. This will almost always affect performance but may be essential to make the API in question function as expected.
 
-- **❌ Changing a synchronous API to asynchronous (and vice versa)
+- **❌ Changing a synchronous API to asynchronous (and vice versa)**
 
 ## Code changes
 

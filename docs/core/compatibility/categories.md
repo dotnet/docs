@@ -1,13 +1,13 @@
 ---
-title: Breaking change categories
-description: Learn about the ways in which breaking changes are categorizeds.
+title: Breaking change categories - .NET Core
+description: Learn about the ways in which breaking changes are categorized.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 06/10/2019
 ---
 # Breaking change categories
 
-A particular change can affect compatiiblity in a number of ways. These fall into five categories:
+A particular change can affect compatibility in a number of ways. These fall into five categories:
 
 ## Behavioral change
 
@@ -19,7 +19,6 @@ When behavioral changes are externally visible and modify a type's public contra
 
 Binary compatibility refers to the ability of a consumer of an API to use the API on a newer version without recompilation. Such changes as adding methods or adding a new interface implementation to a type do not affect binary compatibility. However, removing or altering an assembly's public signatures so that consumers can no longer access the same interface exposed by the assembly does affect binary compatibility. A change of this kind is termed a *binary incompatible change*.
 
-
 ## Source compatibility
 
 Source compatibility refers to the ability of existing consumers of an API to recompile against a newer version without nay source changes. A *source incompatible change* occurs when a consumer needs to modify source code for it to build successfully against a newer version of an API.
@@ -30,7 +29,7 @@ Design-time compatibility refers to preserving the design-time experience across
 
 ## Backwards compatibility
 
-Backwards compatibility refers to the ability of an existing consumer of an API to run against a new version while behaving in the same way. Both behavioral changes and changes in binary compatibility affect backwards compatibility. If a consumer is not able to run or behaves differently when running against the newer version of the API, the API is **backwards incompatible*.
+Backwards compatibility refers to the ability of an existing consumer of an API to run against a new version while behaving in the same way. Both behavioral changes and changes in binary compatibility affect backwards compatibility. If a consumer is not able to run or behaves differently when running against the newer version of the API, the API is *backwards incompatible*.
 
 Changes that affect backwards compatibility are strongly discouraged since developers by default expect backwards compatibility in newer versions of an API.
 

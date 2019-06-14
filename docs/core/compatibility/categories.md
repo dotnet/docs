@@ -21,7 +21,7 @@ Binary compatibility refers to the ability of a consumer of an API to use the AP
 
 ## Source compatibility
 
-Source compatibility refers to the ability of existing consumers of an API to recompile against a newer version without nay source changes. A *source incompatible change* occurs when a consumer needs to modify source code for it to build successfully against a newer version of an API.
+Source compatibility refers to the ability of existing consumers of an API to recompile against a newer version without any source changes. A *source incompatible change* occurs when a consumer needs to modify source code for it to build successfully against a newer version of an API.
 
 ## Design-time compatibility
 

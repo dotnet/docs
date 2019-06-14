@@ -378,7 +378,9 @@ HelloWorld2
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The app's default culture is defined by the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute. For a list of culture names, see the [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+
+ The app's default culture is defined by the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute. For a list of culture names available on Windows systems, see the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).
+  
   
  ]]></format>
         </remarks>

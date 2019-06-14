@@ -511,10 +511,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=nameWithType> namespace, as well as the Windows API. The detailed culture information is defined in the [National Language Support (NLS) API Reference topic at the Go Global Developer Center](https://msdn.microsoft.com/goglobal/bb896001.aspx).  
-  
- The <xref:System.Globalization.TextInfo.LCID%2A> property always reflects a specific culture identifier instead of a neutral culture identifier. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> is set to a neutral culture identifier, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> has as its value an arbitrary specific culture identifier that uses the same language. For example, the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> property returns 0x0009 for the English neutral culture, named "en". However, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> property might return 0x0409 for the English (United States) culture, named en-US.  
+## Remarks
+
+Certain predefined culture names and identifiers are used by this and other classes in the <xref:System.Globalization?displayProperty=nameWithType> namespace. For detailed culture information for Windows systems, see the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).
+
+The <xref:System.Globalization.TextInfo.LCID%2A> property always reflects a specific culture identifier instead of a neutral culture identifier. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> is set to a neutral culture identifier, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> has as its value an arbitrary specific culture identifier that uses the same language. For example, the <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> property returns 0x0009 for the English neutral culture, named "en". However, the corresponding <xref:System.Globalization.TextInfo.LCID%2A> property might return 0x0409 for the English (United States) culture, named en-US.  
   
  Similarly, the <xref:System.Globalization.TextInfo.LCID%2A> property always corresponds to a default sort order, and never reflects a specific sort order. For example, the default sort order for Spanish (Spain) is the international sort order. If <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType> is set to "0x040A" (Spanish with the traditional sort order), the corresponding <xref:System.Globalization.TextInfo.LCID%2A> value is "0x0C0A" (Spanish with the default international sort order).  
   

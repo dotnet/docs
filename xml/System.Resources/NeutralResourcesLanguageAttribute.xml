@@ -198,8 +198,9 @@ csc Example.cs /resource:ExampleResources.resources
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- For a detailed list of culture names, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+## Remarks
+
+For a detailed list of culture names available on Windows systems, see the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).  
   
  ]]></format>
         </remarks>
@@ -245,7 +246,7 @@ csc Example.cs /resource:ExampleResources.resources
 ## Remarks  
  Use the <xref:System.Resources.NeutralResourcesLanguageAttribute> constructor with the <xref:System.Resources.UltimateResourceFallbackLocation> enumeration to specify whether the <xref:System.Resources.ResourceManager> class is to retrieve neutral fallback resources from the main app assembly (the default), or from a satellite assembly specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> and the <xref:System.Resources.ResourceManager.FallbackLocation%2A> properties.  
   
- For a detailed list of culture names, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+ For a detailed list of culture names available on Windows systems, see the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).  
   
  ]]></format>
         </remarks>
@@ -293,8 +294,9 @@ csc Example.cs /resource:ExampleResources.resources
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- For a detailed list of culture names, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=200048) at the Go Global Developer Center.  
+## Remarks
+ 
+For a detailed list of culture names available on Windows systems, see the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).
   
  ]]></format>
         </remarks>

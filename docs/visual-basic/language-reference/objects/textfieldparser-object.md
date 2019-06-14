@@ -26,4 +26,4 @@ Public Class TextFieldParser
   
  **Class:** <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)

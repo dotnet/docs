@@ -1,5 +1,5 @@
 ---
-title: "C# operators"
+title: "C# operators - C# reference"
 ms.date: 04/30/2019
 f1_keywords: 
   - "cs.operators"
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators
+# C# operators (C# reference)
 
 C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
 
@@ -61,7 +61,7 @@ These are the highest precedence operators.
 
 [sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
 
-[stackalloc](../keywords/stackalloc.md) - allocates a block of memory on the stack.
+[stackalloc](stackalloc.md) - allocates a block of memory on the stack.
 
 [->](pointer-related-operators.md#pointer-member-access-operator--) – pointer indirection combined with member access.
 
@@ -89,9 +89,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [*x](pointer-related-operators.md#pointer-indirection-operator-) – pointer indirection, or dereference.
 
-[true operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
+[true operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely true.
 
-[false operator](../keywords/true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
+[false operator](true-false-operators.md) - returns the [bool](../keywords/bool.md) value `true` to indicate that an operand is definitely false.
 
 ## Multiplicative operators
 
@@ -193,7 +193,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x += y](arithmetic-operators.md#compound-assignment) – increment. Add the value of `y` to the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# adds as an event handler.
 
-[x -= y](subtraction-assignment-operator.md) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# removes as an event handler.
+[x -= y](arithmetic-operators.md#compound-assignment) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# removes as an event handler.
 
 [x *= y](arithmetic-operators.md#compound-assignment) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
 
@@ -215,8 +215,6 @@ These operators have higher precedence than the next section and lower precedenc
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C#](../../index.md)
+- [C# reference](../index.md)
+- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
 - [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
-- [C# Keywords](../keywords/index.md)

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
 ---
 # Generating Data Type Classes from XML
-[!INCLUDE[net_v45](../../../includes/net-v45-md.md)] includes a new feature to generate data type classes from XML. This topic describes how to automatically generate data types for the .NET Blog RSS feed.  
+.NET Framework 4.5 includes a new feature to generate data type classes from XML. This topic describes how to automatically generate data types for the .NET Blog RSS feed.  
   
 ### Obtaining the XML from the .NET Blog RSS feed  
   
@@ -16,7 +16,7 @@ ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
   
 ### Creating the data types  
   
-1. Open a code file where the proxy is to be used. This file should be part of a [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] project.  
+1. Open a code file where the proxy is to be used. This file should be part of a .NET Framework 4.5 project.  
   
 2. Place the cursor in a location in the file outside any existing classes.  
   

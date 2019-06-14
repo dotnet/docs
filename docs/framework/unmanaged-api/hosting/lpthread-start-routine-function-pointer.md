@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # LPTHREAD_START_ROUTINE Function Pointer
 Points to a function that notifies the host that a thread has started to execute.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

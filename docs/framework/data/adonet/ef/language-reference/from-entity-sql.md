@@ -40,7 +40,7 @@ LOB.Customers
  If no alias is specified, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] attempts to generate an alias based on the collection expression.  
   
 ### JOIN FROM Clause Item  
- A `JOIN FROM` clause item represents a join between two `FROM` clause items. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports cross joins, inner joins, left and right outer joins, and full outer joins. All these joins are supported similar to the way that they are supported in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]. As in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], the two `FROM` clause items involved in the `JOIN` must be independent. That is, they cannot be correlated. A `CROSS APPLY` or `OUTER APPLY` can be used for these cases.  
+ A `JOIN FROM` clause item represents a join between two `FROM` clause items. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports cross joins, inner joins, left and right outer joins, and full outer joins. All these joins are supported similar to the way that they are supported in Transact-SQL. As in Transact-SQL, the two `FROM` clause items involved in the `JOIN` must be independent. That is, they cannot be correlated. A `CROSS APPLY` or `OUTER APPLY` can be used for these cases.  
   
 #### Cross Joins  
  A `CROSS JOIN` query expression produces the Cartesian product of the two collections, as illustrated in the following example:  
@@ -71,7 +71,7 @@ LOB.Customers
  The previous query expression processes a combination of every element of the collection on the left paired against every element of the collection on the right, where the `ON` condition is true. If the `ON` condition is false, the expression still processes one instance of the element on the left paired against the element on the right, with the value null. It also processes one instance of the element on the right paired against the element on the left, with the value null.  
   
 > [!NOTE]
->  To preserve compatibility with SQL-92, in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] the OUTER keyword is optional. Therefore, `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN` are synonyms for `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`, and `FULL OUTER JOIN`.  
+>  To preserve compatibility with SQL-92, in Transact-SQL the OUTER keyword is optional. Therefore, `LEFT JOIN`, `RIGHT JOIN`, and `FULL JOIN` are synonyms for `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`, and `FULL OUTER JOIN`.  
   
 ### APPLY Clause Item  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports two kinds of `APPLY`: `CROSS APPLY` and `OUTER APPLY`.  
@@ -87,7 +87,7 @@ LOB.Customers
  `SELECT c, f FROM C AS c OUTER APPLY c.Assoc AS f`  
   
 > [!NOTE]
->  Unlike in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], there is no need for an explicit unnest step in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
+>  Unlike in Transact-SQL, there is no need for an explicit unnest step in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
 > [!NOTE]
 >  `CROSS` and `OUTER APPLY` operators were introduced in [!INCLUDE[ssVersion2005](../../../../../../includes/ssversion2005-md.md)]. In some cases, the query pipeline might produce Transact-SQL that contains `CROSS APPLY` and/or `OUTER APPLY` operators. Because some backend providers, including versions of SQL Server earlier than [!INCLUDE[ssVersion2005](../../../../../../includes/ssversion2005-md.md)], do not support these operators, such queries cannot be executed on these backend providers.  
@@ -131,7 +131,7 @@ from (C as c join D as d) cross apply c.Names as e
 from (C as c join D as d) cross apply c.Names as e  
 ```  
   
- In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (unlike [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]), the `FROM` clause only introduces the aliases into scope. Any references to columns (properties) of these collections must be qualified with the alias.  
+ In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] (unlike Transact-SQL), the `FROM` clause only introduces the aliases into scope. Any references to columns (properties) of these collections must be qualified with the alias.  
   
 ## Pulling Up Keys from Nested Queries  
  Certain types of queries that require pulling up keys from a nested query are not supported. For example, the following query is valid:  

@@ -1,5 +1,5 @@
 ---
-title: "() operator - C# Reference"
+title: "() operator - C# reference"
 ms.custom: seodec18
 ms.date: 01/15/2019
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "() operator [C#]"
 ms.assetid: 846e1f94-8a8c-42fc-a42c-fbd38e70d8cc
 ---
-# () operator (C# Reference)
+# () operator (C# reference)
 
 Parentheses, `()`, are typically used for method or delegate invocation or in cast expressions.
 
@@ -20,7 +20,7 @@ You also use parentheses to specify the order in which to evaluate operations in
 
 The following example demonstrates how to invoke a method, with or without arguments, and a delegate:
 
-[!code-csharp-interactive[use for invocation](~/samples/snippets/csharp/language-reference/operators/InvocationOperatorExamples.cs#Invocation)]
+[!code-csharp-interactive[use for invocation](~/samples/csharp/language-reference/operators/InvocationOperatorExamples.cs#Invocation)]
 
 You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with a [`new`](../keywords/new-operator.md) operator.
 
@@ -32,7 +32,7 @@ A cast expression of the form `(T)E` invokes a conversion operator to convert th
 
 The following example demonstrates type conversion between numeric types:
 
-[!code-csharp-interactive[use for cast](~/samples/snippets/csharp/language-reference/operators/InvocationOperatorExamples.cs#Cast)]
+[!code-csharp-interactive[use for cast](~/samples/csharp/language-reference/operators/InvocationOperatorExamples.cs#Cast)]
 
 For more information about predefined explicit conversions between numeric types, see [Explicit numeric conversions table](../keywords/explicit-numeric-conversions-table.md).
 
@@ -48,6 +48,5 @@ For more information, see the [Invocation expressions](~/_csharplang/spec/expres
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)

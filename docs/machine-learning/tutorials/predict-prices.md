@@ -154,6 +154,10 @@ Fit the model to the training `dataview` and return the trained model by adding 
 
 The [Fit()](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer.Fit%28Microsoft.ML.IDataView,Microsoft.ML.IDataView%29) method trains your model by transforming the dataset and applying the training.
 
+Return the trained model with the following line of code in the `Train()` method:
+
+[!code-csharp[ReturnModel](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#12 "Return the model")]
+
 ## Evaluate the model
 
 Next, evaluate your model performance with your test data for quality assurance and validation. Create the `Evaluate()` method, just after `Train()`, with the following code:

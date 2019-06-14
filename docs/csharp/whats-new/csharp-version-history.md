@@ -40,7 +40,6 @@ The major features of C# 1.0 included:
 - [Expressions](../programming-guide/statements-expressions-operators/expressions.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
 - [Attributes](../programming-guide/concepts/attributes/index.md)
-- [Literals](../language-reference/keywords/literal-keywords.md)
 
 ## C# version 1.2
 

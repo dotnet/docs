@@ -20,7 +20,7 @@ ms.author: "ronpet"
 # LoadStringRCEx Function
 Translates an HRESULT value to an appropriate error message for the specified culture.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   

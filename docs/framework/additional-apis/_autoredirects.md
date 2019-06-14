@@ -10,7 +10,7 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: bd58e91c-4e35-4866-9d55-75ff58c3ed73
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 

@@ -103,6 +103,5 @@ For information about formatting the output of numeric types, see [Formatting nu
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Types](types.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Reference Types](reference-types.md)
 - [Nullable types](../../programming-guide/nullable-types/index.md)

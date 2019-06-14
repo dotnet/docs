@@ -28,7 +28,7 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
   
 - Like ASP.NET, WCF services hosted in ASP.NET can take advantage of the ASP.NET shared hosting model where multiple applications reside in a common worker process for improved server density and scalability.  
   
-- WCF services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)], which simplifies development and deployment of hosted services.  
+- WCF services hosted in IIS use the same dynamic compilation model as ASP.NET 2.0, which simplifies development and deployment of hosted services.  
   
  When deciding to host WCF services in IIS, it is important to remember that IIS 5.1 and [!INCLUDE[iis601](../../../../includes/iis601-md.md)] are limited to HTTP communication only. For more information about choosing a hosting environment, see [Hosting Services](../../../../docs/framework/wcf/hosting-services.md).  
   

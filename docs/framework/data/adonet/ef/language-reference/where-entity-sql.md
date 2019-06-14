@@ -17,7 +17,7 @@ The WHERE clause is applied directly after the [FROM](../../../../../../docs/fra
  A Boolean type.  
   
 ## Remarks  
- The WHERE clause has the same semantics as described for [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)]. It restricts the objects produced by the query expression by limiting the elements of the source collections to those that pass the condition.  
+ The WHERE clause has the same semantics as described for Transact-SQL. It restricts the objects produced by the query expression by limiting the elements of the source collections to those that pass the condition.  
   
 ```  
 select c from cs as c where e  

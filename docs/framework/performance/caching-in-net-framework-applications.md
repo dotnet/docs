@@ -13,7 +13,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The .NET Framework provides caching functionality that you can use to improve the performance and scalability of both Windows client and server applications, including ASP.NET.  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and earlier versions, ASP.NET provided an in-memory cache implementation in the <xref:System.Web.Caching> namespace. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes. In the .NET Framework 4, the <xref:System.Runtime.Caching> namespace contains APIs that are designed for both Web and non-Web applications.  
+>  In the .NET Framework 3.5 and earlier versions, ASP.NET provided an in-memory cache implementation in the <xref:System.Web.Caching> namespace. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes. In the .NET Framework 4, the <xref:System.Runtime.Caching> namespace contains APIs that are designed for both Web and non-Web applications.  
   
 ## Caching Data  
  You can cache information by using classes in the <xref:System.Runtime.Caching> namespace. The caching classes in this namespace provide the following features:  
@@ -41,7 +41,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The caching classes in the <xref:System.Runtime.Caching> namespace provide functionality for caching data in ASP.NET.  
   
 > [!NOTE]
->  If your application targets the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] or earlier, you must use the caching classes that are defined in the <xref:System.Web.Caching> namespace. For more information, see [ASP.NET Caching Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178597(v=vs.100)).  
+>  If your application targets the .NET Framework 3.5 or earlier, you must use the caching classes that are defined in the <xref:System.Web.Caching> namespace. For more information, see [ASP.NET Caching Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178597(v=vs.100)).  
   
 > [!NOTE]
 >  When you develop new applications, we recommend that you use the <xref:System.Runtime.Caching.MemoryCache> class. The API that is provided in the <xref:System.Runtime.Caching> namespace is like the API that is provided in the <xref:System.Web.Caching.Cache> namespace. Therefore, the API will be familiar if you used caching in earlier versions of ASP.NET. For an example of how to use caching in ASP.NET applications, see [Walkthrough: Caching Application Data in ASP.NET](https://docs.microsoft.com/previous-versions/ff477235(v=vs.100)).  

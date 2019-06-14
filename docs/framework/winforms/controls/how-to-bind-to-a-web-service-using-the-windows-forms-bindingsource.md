@@ -22,7 +22,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
   
 2. Add a <xref:System.Windows.Forms.BindingSource> component to the form.  
   
-3. Open the [!INCLUDE[winsdklong](../../../../includes/winsdklong-md.md)] command prompt, and navigate to the same directory that your form is located in.  
+3. Open the Windows Software Development Kit (SDK) command prompt, and navigate to the same directory that your form is located in.  
   
 4. Using the WSDL tool, enter `wsdl` and the URL for the .asmx or WSDL file for the Web service, followed by the namespace of your application, and optionally the language you are working in.  
   

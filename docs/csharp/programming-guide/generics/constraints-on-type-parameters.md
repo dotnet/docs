@@ -108,6 +108,6 @@ You could use it as shown in the following sample to create an enum and build a 
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
 - [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
 - [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)

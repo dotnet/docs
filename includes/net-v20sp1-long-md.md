@@ -1,1 +1,0 @@
-.NET Framework 2.0 Service Pack 1

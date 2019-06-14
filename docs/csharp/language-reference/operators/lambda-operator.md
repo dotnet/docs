@@ -1,5 +1,5 @@
 ---
-title: "=> Operator - C# Reference"
+title: "=> operator - C# reference"
 ms.custom: seodec18
 ms.date: 01/22/2019
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
 ---
-# => operator (C# Reference)
+# => operator (C# reference)
 
 The `=>` token is supported in two forms: as the lambda operator and as a separator of a member name and the member implementation in an expression body definition.
 
@@ -19,15 +19,15 @@ In [lambda expressions](../../programming-guide/statements-expressions-operators
 
 The following example uses the [LINQ](../../programming-guide/concepts/linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
 
-[!code-csharp-interactive[infer types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#InferredTypes)]
+[!code-csharp-interactive[infer types of input variables](~/samples/csharp/language-reference/operators/LambdaOperator.cs#InferredTypes)]
 
 Input variables of lambda expressions are strongly typed at compile time. When the compiler can infer the types of input variables, like in the preceding example, you may omit type declarations. If you need to specify the type of input variables, you must do that for each variable, as the following example shows:
 
-[!code-csharp-interactive[specify types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#ExplicitTypes)]
+[!code-csharp-interactive[specify types of input variables](~/samples/csharp/language-reference/operators/LambdaOperator.cs#ExplicitTypes)]
 
 The following example shows how to define a lambda expression without input variables:
 
-[!code-csharp-interactive[without input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#WithoutInput)]
+[!code-csharp-interactive[without input variables](~/samples/csharp/language-reference/operators/LambdaOperator.cs#WithoutInput)]
 
 For more information, see [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md).
 
@@ -70,8 +70,7 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md)

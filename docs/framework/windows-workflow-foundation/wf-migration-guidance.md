@@ -2,7 +2,7 @@
 title: "Windows Workflow Foundation (WF) Migration Guidance"
 ms.date: "06/19/2017"
 ms.assetid: 1da7f5ff-5a67-44ba-b165-f3e5de008e4a
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 # Windows Workflow Foundation (WF) Migration Guidance

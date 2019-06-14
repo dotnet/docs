@@ -133,7 +133,3 @@ This topic shows an example of the style part of the Office Open XML Wordprocess
   </w:style>  
 </w:styles>  
 ```  
-  
-## See also
-
-- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

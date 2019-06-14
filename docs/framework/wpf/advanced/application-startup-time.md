@@ -18,7 +18,7 @@ The amount of time that is required for a WPF application to start can vary grea
  Warm startup occurs when most of the pages for the main common language runtime (CLR) components are already loaded in memory, which saves expensive disk access time. That is why a managed application starts faster when it runs a second time.  
   
 ## Implement a Splash Screen  
- In cases where there is a significant, unavoidable delay between starting an application and displaying the first UI, optimize the perceived startup time by using a *splash screen*. This approach displays an image almost immediately after the user starts the application. When the application is ready to display its first UI, the splash screen fades. Starting in the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], you can use the <xref:System.Windows.SplashScreen> class to implement a splash screen. For more information, see [Add a Splash Screen to a WPF Application](../app-development/how-to-add-a-splash-screen-to-a-wpf-application.md).  
+ In cases where there is a significant, unavoidable delay between starting an application and displaying the first UI, optimize the perceived startup time by using a *splash screen*. This approach displays an image almost immediately after the user starts the application. When the application is ready to display its first UI, the splash screen fades. Starting in the .NET Framework 3.5 SP1, you can use the <xref:System.Windows.SplashScreen> class to implement a splash screen. For more information, see [Add a Splash Screen to a WPF Application](../app-development/how-to-add-a-splash-screen-to-a-wpf-application.md).  
   
  You can also implement your own splash screen by using native Win32 graphics. Display your implementation before the <xref:System.Windows.Application.Run%2A> method is called.  
   
@@ -75,7 +75,7 @@ The amount of time that is required for a WPF application to start can vary grea
   
  Consider installing the CA certificate on the client computer, or avoid using Authenticode when it is possible. If you know that your application does not need the publisher evidence, you do not have to pay the cost of signature verification.  
   
- Starting in [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)], there is a configuration option that allows the Authenticode verification to be bypassed. To do this, add the following setting to the app.exe.config file:  
+ Starting in .NET Framework 3.5, there is a configuration option that allows the Authenticode verification to be bypassed. To do this, add the following setting to the app.exe.config file:  
   
 ```xml  
 <configuration>  

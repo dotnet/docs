@@ -43,7 +43,7 @@ match [NOT] LIKE pattern [ESCAPE escape]
 > [!NOTE]
 >  The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] LIKE operator and ESCAPE clause cannot be applied to `System.DateTime` or `System.Guid` values.  
   
- LIKE supports ASCII pattern matching and Unicode pattern matching. When all parameters are ASCII characters, ASCII pattern matching is performed. If one or more of the arguments are Unicode, all arguments are converted to Unicode and Unicode pattern matching is performed. When you use Unicode with LIKE, trailing blanks are significant; however, for non-Unicode, trailing blanks are not significant. The pattern string syntax of [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is the same as that of [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)].  
+ LIKE supports ASCII pattern matching and Unicode pattern matching. When all parameters are ASCII characters, ASCII pattern matching is performed. If one or more of the arguments are Unicode, all arguments are converted to Unicode and Unicode pattern matching is performed. When you use Unicode with LIKE, trailing blanks are significant; however, for non-Unicode, trailing blanks are not significant. The pattern string syntax of [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is the same as that of Transact-SQL.  
   
  A pattern can include regular characters and wildcard characters. During pattern matching, regular characters must exactly match the characters specified in the character `string`. However, wildcard characters can be matched with arbitrary fragments of the character string. When it is used with wildcard characters, the LIKE operator is more flexible than the = and != string comparison operators.  
   

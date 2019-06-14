@@ -25,7 +25,7 @@ ms.author: "ronpet"
 
 The Native Image Generator (Ngen.exe) is a tool that improves the performance of managed applications. Ngen.exe creates native images, which are files containing compiled processor-specific machine code, and installs them into the native image cache on the local computer. The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
-Changes to Ngen.exe in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]:
+Changes to Ngen.exe in the .NET Framework 4:
 
 - Ngen.exe now compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
@@ -71,7 +71,7 @@ The following table shows the syntax of each `action`. For descriptions of the i
 |Action|Description|
 |------------|-----------------|
 |`install` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`] [`/queue`[`:`{`1`&#124;`2`&#124;`3`}]]|Generate native images for an assembly and its dependencies and install the images in the native image cache.<br /><br /> If `/queue` is specified, the action is queued for the native image service. The default priority is 3. See the [Priority Levels](#PriorityTable) table.|
-|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the action `uninstall` * is no longer supported.|
+|`uninstall` [`assemblyName` &#124; `assemblyPath`] [`scenarios`] [`config`]|Delete the native images of an assembly and its dependencies from the native image cache.<br /><br /> To uninstall a single image and its dependencies, use the same command-line arguments that were used to install the image. **Note:**  Starting with the .NET Framework 4, the action `uninstall` * is no longer supported.|
 |`update` [`/queue`]|Update native images that have become invalid.<br /><br /> If `/queue` is specified, the updates are queued for the native image service. Updates are always scheduled at priority 3, so they run when the computer is idle.|
 |`display` [`assemblyName` &#124; `assemblyPath`]|Display the state of the native images for an assembly and its dependencies.<br /><br /> If no argument is supplied, everything in the native image cache is displayed.|
 |`executeQueuedItems` [<code>1&#124;2&#124;3</code>]<br /><br /> -or-<br /><br /> `eqi` [1&#124;2&#124;3]|Execute queued compilation jobs.<br /><br /> If a priority is specified, compilation jobs with greater or equal priority are executed. If no priority is specified, all queued compilation jobs are executed.|
@@ -131,9 +131,9 @@ The following table shows the syntax of each `action`. For descriptions of the i
 To run Ngen.exe, you must have administrative privileges.
 
 > [!CAUTION]
-> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
+> Do not run Ngen.exe on assemblies that are not fully trusted. Starting with the .NET Framework 4, Ngen.exe compiles assemblies with full trust, and code access security (CAS) policy is no longer evaluated.
 
-Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
+Starting with the .NET Framework 4, the native images that are generated with Ngen.exe can no longer be loaded into applications that are running in partial trust. Instead, the just-in-time (JIT) compiler is invoked.
 
 Ngen.exe generates native images for the assembly specified by the `assemblyname` argument to the `install` action and all its dependencies. Dependencies are determined from references in the assembly manifest. The only scenario in which you need to install a dependency separately is when the application loads it using reflection, for example by calling the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.
 
@@ -227,7 +227,7 @@ Precompiling assemblies with Ngen.exe can improve the startup time for some appl
 Hard binding can affect startup time, because all images that are hard bound to the main application assembly must be loaded at the same time.
 
 > [!NOTE]
-> Before the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], you should put shared, strong-named components in the global assembly cache, because the loader performs extra validation on strong-named assemblies that are not in the global assembly cache, effectively eliminating any improvement in startup time gained by using native images. Optimizations that were introduced in the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] removed the extra validation.
+> Before the .NET Framework 3.5 Service Pack 1, you should put shared, strong-named components in the global assembly cache, because the loader performs extra validation on strong-named assemblies that are not in the global assembly cache, effectively eliminating any improvement in startup time gained by using native images. Optimizations that were introduced in the .NET Framework 3.5 SP1 removed the extra validation.
 
 <a name="UsageSummary"></a>
 

@@ -105,7 +105,7 @@ let someFunctionUsingShaderProgram (ShaderProgram id) =
 
 ## Struct Discriminated Unions
 
-Starting with F# 4.1, you can also represent Discriminated Unions as structs.  This is done with the `[<Struct>]` attribute.
+You can also represent Discriminated Unions as structs.  This is done with the `[<Struct>]` attribute.
 
 ```fsharp
 [<Struct>]
@@ -158,14 +158,46 @@ Discriminated unions work well if the nodes in the tree are heterogeneous. In th
 
 When this code is executed, the value of `result` is 5.
 
-## Common Attributes
+## Members
+
+It is possible to define members on discriminated unions. The following example shows how to define a property and implement an interface:
+
+```fsharp
+open System
+
+type IPrintable =
+    abstract Print: unit -> unit
+
+type Shape =
+    | Circle of float
+    | EquilateralTriangle of float
+    | Square of float
+    | Rectangle of float * float
+
+    member this.Area =
+        match this with
+        | Circle r -> 2.0 * Math.PI * r
+        | EquilateralTriangle s -> s * s * sqrt 3.0 / 4.0
+        | Square s -> s * s
+        | Rectangle(l, w) -> l * w
+
+    interface IPrintable with
+        member this.Print () =
+            match this with
+            | Circle r -> printfn "Circle with radius %f" r
+            | EquilateralTriangle s -> printfn "Equilateral Triangle of side %f" s
+            | Square s -> printfn "Square with side %f" s
+            | Rectangle(l, w) -> printfn "Rectangle with length %f and width %f" l w
+```
+
+## Common attributes
 
 The following attributes are commonly seen in discriminated unions:
 
-* `[RequireQualifiedAccess]`
-* `[NoEquality]`
-* `[NoComparison]`
-* `[Struct]`
+* `[<RequireQualifiedAccess>]`
+* `[<NoEquality>]`
+* `[<NoComparison>]`
+* `[<Struct>]`
 
 ## See also
 

@@ -45,7 +45,7 @@ The following scenario outlines the process of signing an assembly with a strong
 
 ## Bypass signature verification of trusted assemblies
 
-Starting with the [!INCLUDE[net_v35SP1_long](../../../includes/net-v35sp1-long-md.md)], strong-name signatures are not validated when an assembly is loaded into a full-trust application domain, such as the default application domain for the `MyComputer` zone. This is referred to as the strong-name bypass feature. In a full-trust environment, demands for <xref:System.Security.Permissions.StrongNameIdentityPermission> always succeed for signed, full-trust assemblies, regardless of their signature. The strong-name bypass feature avoids the unnecessary overhead of strong-name signature verification of full-trust assemblies in this situation, allowing the assemblies to load faster.
+Starting with the .NET Framework 3.5 Service Pack 1, strong-name signatures are not validated when an assembly is loaded into a full-trust application domain, such as the default application domain for the `MyComputer` zone. This is referred to as the strong-name bypass feature. In a full-trust environment, demands for <xref:System.Security.Permissions.StrongNameIdentityPermission> always succeed for signed, full-trust assemblies, regardless of their signature. The strong-name bypass feature avoids the unnecessary overhead of strong-name signature verification of full-trust assemblies in this situation, allowing the assemblies to load faster.
 
 The bypass feature applies to any assembly that is signed with a strong name and that has the following characteristics:
 
@@ -65,7 +65,7 @@ This feature can be disabled for individual applications or for a computer. See 
 |-----------|-----------------|
 |[How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)|Describes how to create a cryptographic key pair for signing an assembly.|
 |[How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)|Describes how to create a strong-named assembly.|
-|[Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md)|Describes enhancements to strong-names in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].|
+|[Enhanced Strong Naming](../../../docs/framework/app-domains/enhanced-strong-naming.md)|Describes enhancements to strong-names in the .NET Framework 4.5.|
 |[How to: Reference a Strong-Named Assembly](../../../docs/framework/app-domains/how-to-reference-a-strong-named-assembly.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|
 |[How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|
 |[Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)|Provides an overview of single-file and multifile assemblies.|

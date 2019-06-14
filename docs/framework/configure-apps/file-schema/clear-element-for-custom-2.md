@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 

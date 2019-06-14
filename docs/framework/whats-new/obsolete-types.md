@@ -10,7 +10,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Obsolete Types in the .NET Framework
-<a name="introduction"></a> The tables in this article list the types that are obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
+<a name="introduction"></a> The tables in this article list the types that are obsolete in the .NET Framework 4.5 and the .NET Framework 4.6, organized by assembly. Use the following links to see a list of the obsolete types and the recommended alternatives in each assembly. Because these types are obsolete, all their members are also obsolete. For a list of additional obsolete members in the .NET Framework class library, see [Obsolete Members](obsolete-members.md).
 
 - [Obsolete types in system assemblies](#obsolete_types_in_system_assemblies)
 
@@ -582,7 +582,7 @@ ms.author: "ronpet"
 
 <a name="IEHost"></a>
 ### Assembly: IEHost.dll and IEExec.exe
- The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported as of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Recommended alternatives include ClickOnce, XAML browser applications (XBAP), and Microsoft Silverlight.
+ The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported as of the .NET Framework 4. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Recommended alternatives include ClickOnce, XAML browser applications (XBAP), and Microsoft Silverlight.
 
  [Back to top](#introduction)
 

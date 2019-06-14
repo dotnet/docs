@@ -48,7 +48,7 @@ The Managed Extensibility Framework or MEF is a library for creating lightweight
 
 <a name="where_is_mef_available"></a>
 ## Where Is MEF Available?
- MEF is an integral part of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], and is available wherever the .NET Framework is used. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
+ MEF is an integral part of the .NET Framework 4, and is available wherever the .NET Framework is used. You can use MEF in your client applications, whether they use Windows Forms, WPF, or any other technology, or in server applications that use ASP.NET.
 
 <a name="mef_and_maf"></a>
 ## MEF and MAF

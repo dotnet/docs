@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
 ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
-author: "guardrex"
+author: "rpetrusha"
 ms.author: "mairaw"
 ---
 

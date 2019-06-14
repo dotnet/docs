@@ -42,13 +42,13 @@ The types of method parameters and return values are specified in the method sig
   
 [!code-csharp[Method Signature](../../samples/snippets/csharp/concepts/basic-types/method-signature.cs)]  
   
-After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](language-reference/keywords/int.md) and then assign it a Boolean value of [true](language-reference/keywords/true.md). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
+After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](language-reference/keywords/int.md) and then assign it a Boolean value of [true](language-reference/keywords/true-literal.md). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
 
 For more information, see [Casting and type conversions](programming-guide/types/casting-and-type-conversions.md).
 
 ## Built-in types
 
-C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For a more information about the built-in types, see [Reference table for types](language-reference/keywords/reference-tables-for-types.md).  
+C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For a more information about the built-in types, see [Reference table for built-in types](language-reference/keywords/built-in-types-table.md).  
   
 ## Custom types
 

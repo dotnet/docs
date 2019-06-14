@@ -60,4 +60,3 @@ For more information, see [The typeof operator](~/_csharplang/spec/expressions.m
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [is](../../../csharp/language-reference/keywords/is.md)
-- [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

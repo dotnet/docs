@@ -76,7 +76,7 @@ The *template.json* file looks like the following:
 ```json
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Travis	Chau",
+  "author": "Travis Chau",
   "classifications": [ "Common", "Console" ],
   "identity": "AdatumCorporation.ConsoleTemplate.CSharp",
   "name": "Adatum Corporation Console Application",

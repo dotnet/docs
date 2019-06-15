@@ -53,7 +53,9 @@ These constructor contexts are also the only contexts in which it is valid to pa
 
 In the preceding example, if you use a statement like the following example:
 
-`p2.y = 66;        // Error`
+```csharp
+p2.y = 66;        // Error
+```
 
 you will get the compiler error message:
 
@@ -86,7 +88,7 @@ Adding a field not marked `readonly` generates compiler error `CS8340`: "Instanc
 The `readonly` modifier on a `ref return` indicates that the returned reference cannot be modified. The following example returns a reference to the origin. It uses the `readonly` modifier to indicate that callers cannot modify the origin:
 
 [!code-csharp[readonly struct example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyReturn)]
-The type returned doesn't need to be a `readonly struct`. Any type that can be returned by `ref` can be returned by `ref readonly`
+The type returned doesn't need to be a `readonly struct`. Any type that can be returned by `ref` can be returned by `ref readonly`.
 
 ## C# language specification
 

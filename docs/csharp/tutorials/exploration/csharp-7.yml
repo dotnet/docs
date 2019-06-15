@@ -204,7 +204,7 @@ items:
 
     In order to modify the returned reference, you need to add the `ref` modifier to the local variable declaration and before the call to `Find` to make the variable a reference when the return value is a reference. Modify the test code in your browser to match the following:
 
-    [!code-csharp[EverythingByValue](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByValue "test code for return object by reference")]
+    [!code-csharp[EverythingByRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#TestByRef "test code for return object by reference")]
 
     Now, the second `WriteLine` statement in the example above prints out the value `24`, indicating that the storage in the matrix has been modified. The local variable has been declared with the `ref` modifier, and it will take a `ref` return. You must initialize a `ref` variable when it is declared; you cannot split the declaration and the initialization.
 

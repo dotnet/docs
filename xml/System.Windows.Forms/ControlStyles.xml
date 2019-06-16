@@ -27,7 +27,7 @@
 ## Remarks  
  Controls use this enumeration in various properties and methods to specify functionality. A control can enable a style by calling the <xref:System.Windows.Forms.Control.SetStyle%2A> method and passing in the appropriate <xref:System.Windows.Forms.ControlStyles> bit (or bits) and the Boolean value to set the bit(s) to. For example, the following line of Visual Basic code would enable double-buffering.  
   
-```  
+```vb
 myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)  
 ```  
   

@@ -958,7 +958,7 @@
 |*.txt|All files with a "txt" extension.|  
 |*recipe.doc|All files ending in "recipe" with a "doc" extension.|  
 |win*.xml|All files beginning with "win" with an "xml" extension.|  
-|Sales*200?.xls|Matches the following:<br /><br /> Sales July 2001.xlsSales Aug 2002.xlsSales March 2004.xls<br /><br /> but does not match:<br /><br /> Sales Nov 1999.xls|  
+|Sales*200?.xls|Matches the following:<br /><br />- Sales July 2001.xls <br/>- Sales Aug 2002.xls <br/>- Sales March 2004.xls<br /><br /> but does not match:<br /><br />- Sales Nov 1999.xls|  
 |MyReport.Doc|Watches only MyReport.doc|  
   
    

@@ -386,7 +386,7 @@ After NuGet package v4.3.2, the default value of <xref:System.Net.DecompressionM
  The <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A> property addresses this limitation. The delegate returned by the <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A> property can be assigned to the <xref:System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback%2A> property, as the following example does:
 
 ```cs
-handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 ```
 
  This gives <xref:System.Net.Http.HttpClientHandler> implementations a known object reference identity that expresses the developer's intention. If the object stored in the <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A> property is reference equals to <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A>, the runtime is able to entirely disable validation on a platform that would otherwise throw a <xref:System.PlatformNotSupportedException>.

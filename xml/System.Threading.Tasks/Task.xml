@@ -4444,11 +4444,7 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
         <exception cref="T:System.ObjectDisposedException">One or more of the <see cref="T:System.Threading.Tasks.Task" /> objects in <paramref name="tasks" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> argument is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.  
-  
- -or-  
-  
- The <paramref name="tasks" /> argument is an empty array.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.</exception>
         <exception cref="T:System.AggregateException">At least one of the <see cref="T:System.Threading.Tasks.Task" /> instances was canceled. If a task was canceled, the <see cref="T:System.AggregateException" /> exception contains an <see cref="T:System.OperationCanceledException" /> exception in its <see cref="P:System.AggregateException.InnerExceptions" /> collection.  
   
  -or-  
@@ -4507,11 +4503,7 @@ Task t Status: RanToCompletion, Result: 42
  An exception was thrown during the execution of at least one of the <see cref="T:System.Threading.Tasks.Task" /> instances.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.  
-  
- -or-  
-  
- The <paramref name="tasks" /> argument is an empty array.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
@@ -4567,11 +4559,7 @@ Task t Status: RanToCompletion, Result: 42
  -or-  
   
  An exception was thrown during the execution of at least one of the <see cref="T:System.Threading.Tasks.Task" /> instances.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.  
-  
- -or-  
-  
- The <paramref name="tasks" /> argument is an empty array.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.</exception>
         <exception cref="T:System.ObjectDisposedException">One or more of the <see cref="T:System.Threading.Tasks.Task" /> objects in <paramref name="tasks" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -4630,11 +4618,7 @@ Task t Status: RanToCompletion, Result: 42
  -or-  
   
  <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.  
-  
- -or-  
-  
- The <paramref name="tasks" /> argument is an empty array.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
@@ -4696,11 +4680,7 @@ Task t Status: RanToCompletion, Result: 42
  An exception was thrown during the execution of at least one of the <see cref="T:System.Threading.Tasks.Task" /> instances.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.  
-  
- -or-  
-  
- The <paramref name="tasks" /> argument is an empty array.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> argument contains a null element.</exception>
         <exception cref="T:System.OperationCanceledException">The <paramref name="cancellationToken" /> was canceled.</exception>
       </Docs>
     </Member>

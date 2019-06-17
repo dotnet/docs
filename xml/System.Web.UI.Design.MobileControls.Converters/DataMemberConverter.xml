@@ -148,7 +148,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">
+        <exception cref="T:System.NotSupportedException">
           <paramref name="value" /> is not <see langword="null" /> and not a string.</exception>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
         <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />

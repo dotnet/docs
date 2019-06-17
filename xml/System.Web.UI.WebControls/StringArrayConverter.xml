@@ -148,7 +148,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">The conversion cannot be performed because <paramref name="value" /> is not a string.</exception>
+        <exception cref="T:System.NotSupportedException">The conversion cannot be performed because <paramref name="value" /> is not a string.</exception>
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>
@@ -194,7 +194,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="M:System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)">
+        <exception cref="T:System.NotSupportedException">
           <paramref name="destinationType" /> is not of type <see cref="T:System.String" />.</exception>
         <altmember cref="M:System.Web.UI.WebControls.StringArrayConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ayybcxe5(v=vs.120)">How to: Implement a Type Converter</related>

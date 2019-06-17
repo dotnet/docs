@@ -18,7 +18,7 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
   
  To add data to the Clipboard in one or multiple formats, use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> method. You can pass any object to this method, but to add data in multiple formats, you must first add the data to a separate object designed to work with multiple formats. Typically, you will add your data to a <xref:System.Windows.Forms.DataObject>, but you can use any type that implements the <xref:System.Windows.Forms.IDataObject> interface.  
   
- In [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)], you can add data directly to the Clipboard by using new methods designed to make basic Clipboard tasks easier. Use these methods when you work with data in a single, common format such as text.  
+ In .NET Framework 2.0, you can add data directly to the Clipboard by using new methods designed to make basic Clipboard tasks easier. Use these methods when you work with data in a single, common format such as text.  
   
 > [!NOTE]
 >  All Windows-based applications share the Clipboard. Therefore, the contents are subject to change when you switch to another application.  
@@ -29,14 +29,14 @@ The <xref:System.Windows.Forms.Clipboard> class provides methods that you can us
   
 ### To add data to the Clipboard in a single, common format  
   
-1. Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A>, <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.SetImage%2A>, or <xref:System.Windows.Forms.Clipboard.SetText%2A> method. These methods are available only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)].  
+1. Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A>, <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.SetImage%2A>, or <xref:System.Windows.Forms.Clipboard.SetText%2A> method. These methods are available only in .NET Framework 2.0.  
   
      [!code-csharp[System.Windows.Forms.Clipboard#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#2)]
      [!code-vb[System.Windows.Forms.Clipboard#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#2)]  
   
 ### To add data to the Clipboard in a custom format  
   
-1. Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method with a custom format name. This method is available only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)].  
+1. Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method with a custom format name. This method is available only in .NET Framework 2.0.  
   
      You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.  
   

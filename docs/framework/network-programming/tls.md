@@ -290,14 +290,14 @@ This table shows the OS update you'll need to support TLS 1.2 with .NET Framewor
 
 If you are using [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) Web and Worker roles to host and run your application, there are some considerations that you need to take into account to support TLS 1.2.
 
-### .NET Framework 4.7 is not installed on Azure Guest OS by default
+### .NET Framework 4.7 is not installed in all Azure Guest OS families by default
 
-The latest version installed in the latest Azure Guest OS Family 5 release (Windows Server 2016) is 4.6.2. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](https://docs.microsoft.com/azure/cloud-services/cloud-services-guestos-update-matrix).
+Azure Guest OS Family 6 release (Windows Server 2019) has .NET Framework 4.7.2 installed by default, but other Azure Guest OS family versions don't. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](https://docs.microsoft.com/azure/cloud-services/cloud-services-guestos-update-matrix).
 
 If your app targets a .NET Framework version that is not available on the Azure Guest OS version, then you need to install it yourself. See [Install .NET on Azure Cloud Service Roles](https://docs.microsoft.com/azure/cloud-services/cloud-services-dotnet-install-dotnet). If the framework installation requires a restart, the service roles might also restart before entering the Ready state.
 
 ### Azure Guest OS registry settings
 
-The Azure Guest OS Family 5 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
+The Azure Guest OS Family 6 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information about this registry key, see [SchUseStrongCrypto](#schusestrongcrypto).
 
 Set the [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry key to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry).

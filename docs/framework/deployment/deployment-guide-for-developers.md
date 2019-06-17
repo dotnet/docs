@@ -261,6 +261,8 @@ The .NET Framework installer writes registry keys when installation is successfu
 > [!IMPORTANT]
 > You should check for a value  **greater than or equal to** the release keyword value when attempting to detect whether a specific version is present.
 
+[!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
+
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
 |.NET Framework 4.8 installed on Windows 10 May 2019 Update|528040|

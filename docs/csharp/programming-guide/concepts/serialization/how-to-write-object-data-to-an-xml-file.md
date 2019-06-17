@@ -39,7 +39,7 @@ public class XMLWrite
 ```  
   
 ## Compiling the Code  
- The class must have a public constructor without parameters.  
+ The class being serialized must have a public constructor without parameters.  
   
 ## Robust Programming  
  The following conditions may cause an exception:  

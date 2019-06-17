@@ -1,8 +1,8 @@
 ---
 title: Custom templates for dotnet new
 description: Learn about custom templates for any type of .NET project or files.
-author: mairaw
-ms.date: 08/11/2017
+author: thraka
+ms.date: 06/14/2019
 ---
 
 # Custom templates for dotnet new

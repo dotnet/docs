@@ -290,7 +290,7 @@ This table shows the OS update you'll need to support TLS 1.2 with .NET Framewor
 
 If you are using [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) Web and Worker roles to host and run your application, there are some considerations that you need to take into account to support TLS 1.2.
 
-### .NET Framework 4.7 is not installed in all Azure Guest OS families by default
+### .NET Framework 4.7 is not installed on all Azure Guest OS families by default
 
 Azure Guest OS Family 6 release (Windows Server 2019) has .NET Framework 4.7.2 installed by default, but other Azure Guest OS family versions don't. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](https://docs.microsoft.com/azure/cloud-services/cloud-services-guestos-update-matrix).
 

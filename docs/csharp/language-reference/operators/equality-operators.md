@@ -51,7 +51,7 @@ That is case-sensitive ordinal comparison. For more information about string com
 
 Two other than `string` reference type operands are equal when they refer to the same object:
 
-[!code-csharp-interactive[reference type equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#ReferenceTypesEquality)]
+[!code-csharp[reference type equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#ReferenceTypesEquality)]
 
 As the example shows, user-defined reference types support the `==` operator by default. However, a user-defined reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 

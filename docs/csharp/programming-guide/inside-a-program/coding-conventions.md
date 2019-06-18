@@ -93,7 +93,7 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
      The following example uses implicit typing in a `for` statement.  
   
-     [!code-csharp[csProgGuideCodingConventions#7](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#11)]  
+     [!code-csharp[csProgGuideCodingConventions#7](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#7)]  
   
      The following example uses implicit typing in a `foreach` statement.  
   

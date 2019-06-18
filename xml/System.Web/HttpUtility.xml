@@ -206,7 +206,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method converts only quotation marks ("), ampersands (&), and left angle brackets (<) to equivalent character entities. It is considerably faster than the <xref:System.Web.HttpUtility.HtmlEncode%2A> method.  
+ The <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method converts only double quotation marks ("), single quotation marks ('), ampersands (&), and left angle brackets (<) to equivalent character entities. It is considerably faster than the <xref:System.Web.HttpUtility.HtmlEncode%2A> method.  
   
  The string result from the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method should be used only for double-quoted attributes. Security issues might arise when using the <xref:System.Web.HttpUtility.HtmlAttributeEncode%2A> method with single-quoted attributes.  
   

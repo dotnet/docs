@@ -7,7 +7,7 @@ ms.assetid: fcd45b99-ae8f-45ab-8b97-d887beda734e
 Data processing has traditionally relied primarily on a connection-based, two-tier model. As data processing increasingly uses multi-tier architectures, programmers are switching to a disconnected approach to provide better scalability for their applications.  
   
 ## ADO.NET Components  
- The two main components of [!INCLUDE[ado_orcas_long](../../../../includes/ado-orcas-long-md.md)] for accessing and manipulating data are the .NET Framework data providers and the <xref:System.Data.DataSet>.  
+ The two main components of ADO.NET 3.0 for accessing and manipulating data are the .NET Framework data providers and the <xref:System.Data.DataSet>.  
   
 ### .NET Framework Data Providers  
  The .NET Framework Data Providers are components that have been explicitly designed for data manipulation and fast, forward-only, read-only access to data. The `Connection` object provides connectivity to a data source. The `Command` object enables access to database commands to return data, modify data, run stored procedures, and send or retrieve parameter information. The `DataReader` provides a high-performance stream of data from the data source. Finally, the `DataAdapter` provides the bridge between the `DataSet` object and the data source. The `DataAdapter` uses `Command` objects to execute SQL commands at the data source to both load the `DataSet` with data and reconcile changes that were made to the data in the `DataSet` back to the data source. For more information, see [.NET Framework Data Providers](../../../../docs/framework/data/adonet/data-providers.md) and [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md).  

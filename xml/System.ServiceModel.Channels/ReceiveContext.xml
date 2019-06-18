@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> may hang when there is an ambient transaction and <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> is called and afterwards the transaction is rolled back. If <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> is called prior to the transaction rollback completing, a race condition will exist, causing the call to <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to hang. This can be illustrated by the following pseudo-code example  
+ <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> may stop responding when there is an ambient transaction and <xref:System.ServiceModel.Channels.ReceiveContext.Complete%2A> is called and afterwards the transaction is rolled back. If <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> is called prior to the transaction rollback completing, a race condition will exist, causing the call to <xref:System.ServiceModel.Channels.ReceiveContext.Abandon%2A> to stop responding. This can be illustrated by the following pseudo-code example  
   
 ```  
 using (TransactionScope ts = new TransactionScope())   

@@ -124,7 +124,7 @@ The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://
 
 Azure DevOps works with most Git providers, including GitHub, and can generate deployment pipelines for Linux, macOS and Windows. It works with just about any language or project type, including .NET Languages, such as C#, F#, Visual Basic, along with Java, JavaScript, Python, .NET, PHP, Go, XCode, and C++.
 
-To use Azure Pipelines, an organization creates an account (called an Organization) in [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/pipelines/) service and stores its source code in a version control system. Interestingly, if your project is stored in a public repository, such as GitHub, Azure Pipelines is free to use. For private projects, there is a charge.
+To use Azure Pipelines, an organization creates an account (called an Organization) in [Azure DevOps](https://azure.microsoft.com/services/devops/pipelines/) service and stores its source code in a version control system. Interestingly, if your project is stored in a public repository, such as GitHub, Azure Pipelines is free to use. For private projects, there is a charge.
 
 Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to consistently test and build your code and ship it to any target.
 

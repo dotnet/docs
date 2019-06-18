@@ -6,6 +6,7 @@ author: pkulikov
 f1_keywords: 
   - "=_CSharpKeyword"
   - "()_CSharpKeyword"
+  - "is_CSharpKeyword"
 helpviewer_keywords: 
   - "type-testing operators [C#]"
   - "assignment operator [C#]"
@@ -15,6 +16,7 @@ helpviewer_keywords:
   - "cast operator [C#]"
   - "cast expression [C#]"
   - "() operator [C#]"
+  - "is operator [C#]"
 ---
 # Type-testing and assignment operators (C# reference)
 
@@ -22,7 +24,43 @@ Introduction.
 
 ## is operator
 
-Text.
+The `is` operator checks if the runtime type of the expression result is compatible with a given type. Starting with C# 7.0, the `is` operator also tests the expression result against a pattern.
+
+The expression with the type-testing `is` operator has the following form
+
+```csharp
+E is T
+```
+
+where `E` is an expression that returns a value and `T` is a name of a type or a type argument. `E` cannot be an anonymous method or a lambda expression.
+
+The `E is T` expression returns `true` if the result of `E` is non-null and can be converted to type `T` by a reference conversion, a boxing conversion, or an unboxing conversion; otherwise, it returns `false`. In particular, the `is` operator doesn't consider user-defined conversions and numeric conversions.
+
+The following example demonstrates that the `is` operator returns `true` if the runtime type of the expression result derives from a given type, that is, there exists a reference conversion:
+
+[!code-csharp[is with reference conversion](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsWithReferenceConversion)]
+
+The next example shows that the `is` operator doesn't consider numeric conversions but takes into account boxing and unboxing conversions:
+
+[!code-csharp-interactive[is with int](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsWithInt)]
+
+For information about C# conversions, see the [Conversions](~/_csharplang/spec/conversions.md) chapter of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+### Type-testing with pattern matching
+
+Starting with C# 7.0, the `is` operator also tests the expression result against a pattern. In particular, it supports the type pattern in the following form:
+
+```csharp
+E is T v
+```
+
+where `E` is an expression that returns a value, `T` is a name of a type or a type argument, and `v` is a new local variable of type `T`. If the result of `E` is non-null and can be converted to `T` by a reference, boxing, or unboxing conversion, the `E is T v` expression returns `true` and the converted value of the result of `E` is assigned to variable `v`.
+
+The following example demonstrates the usage of the `is` operator with the type pattern:
+
+[!code-csharp-interactive[is with type pattern](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsTypePattern)]
+
+For more information about the type pattern and other supported patterns, see [Pattern matching with is](../keywords/is.md#pattern-matching-with-is).
 
 ## as operator
 
@@ -108,10 +146,12 @@ A user-defined type cannot overload the assignment operator `=`. However, a user
 
 For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
 
-- [Assignment operators](~/_csharplang/spec/expressions.md#assignment-operators)
+- [The is operator](~/_csharplang/spec/expressions.md#the-is-operator)
 - [Cast expressions](~/_csharplang/spec/expressions.md#cast-expressions)
+- [Assignment operators](~/_csharplang/spec/expressions.md#assignment-operators)
 
 ## See also
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
+- [How to: safely cast by using pattern matching and the is and as operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)

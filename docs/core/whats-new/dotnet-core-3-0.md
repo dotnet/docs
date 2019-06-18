@@ -6,14 +6,14 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 05/06/2019
+ms.date: 06/14/2019
 ---
 
-# What's new in .NET Core 3.0 (Preview 5)
+# What's new in .NET Core 3.0 (Preview 6)
 
-This article describes what is new in .NET Core 3.0 (through preview 5). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
+This article describes what is new in .NET Core 3.0 (through preview 6). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
-.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the latest release of Visual Studio 2019 Update 1 Preview or VSCode with the OmniSharp extension.
+.NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the latest release of Visual Studio 2019 or Visual Studio Code with the OmniSharp extension.
 
 [Download and get started with .NET Core 3.0 Preview 6](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
 
@@ -50,7 +50,7 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 </Project>
 ```
 
-If you're using Visual Studio, you need Visual Studio 2019, as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**. We highly recommend that you use [Visual Studio 2019 Update 1 Preview](https://visualstudio.microsoft.com/vs/preview/).
+If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
 
 ## Improved .NET Core Version APIs
 

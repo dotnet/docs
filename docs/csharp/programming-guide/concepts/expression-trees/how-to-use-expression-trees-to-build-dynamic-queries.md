@@ -13,7 +13,10 @@ In LINQ, expression trees are used to represent structured queries that target s
 ## Example  
  The following example shows you how to use expression trees to construct a query against an `IQueryable` data source and then execute it. The code builds an expression tree to represent the following query:  
   
- `companies.Where(company => (company.ToLower() == "coho winery" || company.Length > 16)).OrderBy(company => company)`  
+ ```csharp
+ companies.Where(company => (company.ToLower() == "coho winery" || company.Length > 16))
+          .OrderBy(company => company)
+ ```
   
  The factory methods in the <xref:System.Linq.Expressions> namespace are used to create expression trees that represent the expressions that make up the overall query. The expressions that represent calls to the standard query operator methods refer to the <xref:System.Linq.Queryable> implementations of these methods. The final expression tree is passed to the <xref:System.Linq.IQueryProvider.CreateQuery%60%601%28System.Linq.Expressions.Expression%29> implementation of the provider of the `IQueryable` data source to create an executable query of type `IQueryable`. The results are obtained by enumerating that query variable.  
   

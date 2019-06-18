@@ -51,64 +51,66 @@ Some image files contain metadata that you can read to determine features of the
  The following code example reads and displays the seven pieces of metadata in the file `FakePhoto.jpg`. The second (index 1) property item in the list has <xref:System.Drawing.Imaging.PropertyItem.Id%2A> 0x010F (equipment manufacturer) and <xref:System.Drawing.Imaging.PropertyItem.Type%2A> 2 (ASCII-encoded byte array). The code example displays the value of that property item.  
   
  The code produces output similar to the following:  
+ 
+```
+ Property Item 0
   
- `Property Item 0`  
+ id: 0x320
   
- `id: 0x320`  
+ type: 2
+ 
+ length: 16 bytes 
   
- `type: 2`  
+ Property Item 1
   
- `length: 16 bytes`  
+ id: 0x10f
   
- `Property Item 1`  
+ type: 2 
   
- `id: 0x10f`  
+ length: 17 bytes
   
- `type: 2`  
+ Property Item 2
   
- `length: 17 bytes`  
+ id: 0x110
   
- `Property Item 2`  
+ type: 2
   
- `id: 0x110`  
+ length: 7 bytes
   
- `type: 2`  
+ Property Item 3
   
- `length: 7 bytes`  
+ id: 0x9003
   
- `Property Item 3`  
+ type: 2
   
- `id: 0x9003`  
+ length: 20 bytes
   
- `type: 2`  
+ Property Item 4
   
- `length: 20 bytes`  
+ id: 0x829a
   
- `Property Item 4`  
+ type: 5
   
- `id: 0x829a`  
+ length: 8 bytes
   
- `type: 5`  
+ Property Item 5
   
- `length: 8 bytes`  
+ id: 0x5090
   
- `Property Item 5`  
+ type: 3
   
- `id: 0x5090`  
+ length: 128 bytes
   
- `type: 3`  
+ Property Item 6
   
- `length: 128 bytes`  
+ id: 0x5091
   
- `Property Item 6`  
+ type: 3
   
- `id: 0x5091`  
+ length: 128 bytes
   
- `type: 3`  
-  
- `length: 128 bytes`  
-  
- `The equipment make is Northwind Camera.`  
+ The equipment make is Northwind Camera.
+ ```
   
 ### Code  
  [!code-csharp[System.Drawing.WorkingWithImages#51](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#51)]

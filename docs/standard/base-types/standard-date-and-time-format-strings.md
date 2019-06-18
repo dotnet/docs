@@ -86,7 +86,7 @@ Standard date and time format strings can be used with both <xref:System.DateTim
   
  Standard format strings can also be used in parsing operations with the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType> methods, which require an input string to exactly conform to a particular pattern for the parse operation to succeed. Many standard format strings map to multiple custom format strings, so a date and time value can be represented in a variety of formats and the parse operation will still succeed. You can determine the custom format string or strings that correspond to a standard format string by calling the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%28System.Char%29?displayProperty=nameWithType> method. The following example displays the custom format strings that map to the "d" (short date pattern) standard format string.  
   
- [!code-csharp-interactive[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#17)]
+ [!code-csharp[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#17)]
  [!code-vb[Formatting.DateAndTime.Standard#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/stdandparsing1.vb#17)]  
   
  The following sections describe the standard format specifiers for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
@@ -255,7 +255,7 @@ Standard date and time format strings can be used with both <xref:System.DateTim
   
  The following example uses the "o" format specifier to display a series of <xref:System.DateTime> values and a <xref:System.DateTimeOffset> value on a system in the U.S. Pacific Time zone.  
   
- [!code-csharp-interactive[Formatting.DateAndTime.Standard#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/o1.cs#8)]
+ [!code-csharp[Formatting.DateAndTime.Standard#8](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/o1.cs#8)]
  [!code-vb[Formatting.DateAndTime.Standard#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/o1.vb#8)]  
   
  The following example uses the "o" format specifier to create a formatted string, and then restores the original date and time value by calling a date and time `Parse` method.  

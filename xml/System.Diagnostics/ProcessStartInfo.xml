@@ -237,7 +237,24 @@
         <summary>Gets a collection of command-line arguments to use when starting the application.</summary>
         <value>A collection of command-line arguments.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[If you use this property to set command-line arguments, <xref:System.Diagnostics.ProcessStartInfo.Arguments> must be set to an empty string.
+          <format type="text/markdown"><![CDATA[
+          
+`ArgumentList`, which is supported starting with .NET Core 2.1 and .NET Standard 2.1, and the <xref:System.Diagnostics.ProcessStartInfo.Arguments> property are independent of one another. That is, the strings assigned to the `ArgumentList` collection are not used to populate the <xref:System.Diagnostics.ProcessStartInfo.Arguments> property, and the string assigned to the <xref:System.Diagnostics.ProcessStartInfo.Arguments> property is not parsed into individual strings that are assigned to `ArgumentList` collection. 
+
+`ArgumentList` is easier to use than the <xref:System.Diagnostics.ProcessStartInfo.Arguments> property. Because each string is assigned to a member of the collection, you can single- rather than triple-escape strings that are delimited by quotation marks. For example, the following example include `-full "Mary Smith"` as a member of the `ArgumentList` collection:
+
+```csharp
+info.ArgumentList.Add("-full \"Mary Smith\"";
+```
+
+The corresponding assignment to the <xref:System.Diagnostics.ProcessStartInfo.Arguments> property is:
+
+```csharp
+info.Arguments = "-full \"\"\"Mary Smith\"\"\""
+```
+
+If you use this property to set command-line arguments, <xref:System.Diagnostics.ProcessStartInfo.Arguments> must be set to an empty string.
+
 ## Examples
 
 This example adds two arguments to the process start info.
@@ -322,14 +339,20 @@ info.ArgumentList.Add("-last Smith")
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the set of command-line arguments to use when starting the application.</summary>
-        <value>A single string containing the arguments to pass to the target application specified in the <see cref="P:System.Diagnostics.ProcessStartInfo.FileName" /> property. The default is an empty string (""). On Windows Vista and earlier versions of the Windows operating system, the length of the arguments added to the length of the full path to the process must be less than 2080. On Windows 7 and later versions, the length must be less than 32699.  
-  
- Arguments are parsed and interpreted by the target application, so must align with the expectations of that application. For.NET applications as demonstrated in the Examples below, spaces are interpreted as a separator between multiple arguments. A single argument that includes spaces must be surrounded by quotation marks, but those quotation marks are not carried through to the target application. In include quotation marks in the final parsed argument, triple-escape each mark.</value>
+        <value>A single string containing the arguments to pass to the target application specified in the <see cref="P:System.Diagnostics.ProcessStartInfo.FileName" /> property. The default is an empty string ("").   
+</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[If you use this property to set command-line arguments, <xref:System.Diagnostics.ProcessStartInfo.ArgumentList*> must not contain any elements.
+          <format type="text/markdown"><![CDATA[
+
+The length of the string assigned to the `Arguments` property must be less than 32,699.
   
+Arguments are parsed and interpreted by the target application, so must align with the expectations of that application. For .NET applications as demonstrated in the Examples below, spaces are interpreted as a separator between multiple arguments. A single argument that includes spaces must be surrounded by quotation marks, but those quotation marks are not carried through to the target application. To include quotation marks in the final parsed argument, triple-escape each mark.
+If you use this property to set command-line arguments, <xref:System.Diagnostics.ProcessStartInfo.ArgumentList> must not contain any elements.
+  
+`Arguments` and <xref:System.Diagnostics.ProcessStartInfo.ArgumentList>, which is supported starting with .NET Core 2.1 and .NET Standard 2.1, are independent of one another. That is, the string assigned to the `Arguments` property does not populate the <xref:System.Diagnostics.ProcessStartInfo.ArgumentList> collection, and the members of the <xref:System.Diagnostics.ProcessStartInfo.ArgumentList> collection are not assigned to the `Arguments` property.
+
 ## Examples  
- The first example below creates a small application (argsecho.exe) that echos its arguments to the console. The second example creates an application that invokes argsecho.exe to demonstrate different variations for the Arguments property.  
+ The first example creates a small application (argsecho.exe) that echos its arguments to the console. The second example creates an application that invokes argsecho.exe to demonstrate different variations for the `Arguments` property.  
   
  [!code-cpp[Process.Start_static#3](~/samples/snippets/cpp/VS_Snippets_CLR/Process.Start_static/CPP/processstartstatic.cpp#3)]
  [!code-csharp[Process.Start_static#3](~/samples/snippets/csharp/VS_Snippets_CLR/Process.Start_static/CS/processstartstatic.cs#3)]

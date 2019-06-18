@@ -110,7 +110,7 @@ new XElement("Contacts",
 );
 ```
 
-For more information, see [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md).
+For more information, see [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md).
 
 ## See also
 

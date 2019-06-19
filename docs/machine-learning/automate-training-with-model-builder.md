@@ -8,7 +8,7 @@ ms.custom: overview
 ---
 # What is Model Builder & how does it work?
 
-Model Builder is visual interface to automatically train custom ML.NET machine learning models.  You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder also generate the code to add the model your .NET application.
+Model Builder is visual interface to automatically train custom ML.NET machine learning models.  You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder also generates the code to add the model your .NET application.
 
 Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning. Once the optimal model is selected, Model Builder generates code to add the model to your application.
 

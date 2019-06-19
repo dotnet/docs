@@ -8,7 +8,7 @@ ms.custom: overview
 ---
 # What is Model Builder & how does it work?
 
-Model Builder automatically trains custom ML.NET machine learning models that can be deployed in your .NET application. You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
+Model Builder is visual interface to automatically train custom ML.NET machine learning models that can be deployed in your .NET application. You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve.
 
 Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning. Once the optimal model is selected, Model Builder generates code to add the model to your application.
 
@@ -27,37 +27,84 @@ A scenario is a description of the type of prediction you want to make on your d
 
 In Model Builder, you need to map your scenario onto an **ML.NET task**. Model Builder currently supports **regression** (predict numbers) and **classification** (predict categories) tasks.
 
-Here are some example scenarios, with the corresponding task.
+### Which machine learning scenario is right for me?
 
-|||
-|-|-|
-|Forecast sales|regression|
-|Predict prices|regression|
-|Predict time to failure|regression|
-|Detect email spam|classification|
-|Work out whether customer feedback is good or bad|classification|
-|Detect fraudulent credit card transactions|classification|
+Model Builder comes with templates for sentiment analysis, issue classification, price prediction, and custom scenarios. These templates can be used as a starting point for your specific ML.NET scenario.
+
+#### Sentiment analysis (binary classification)
+
+Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of the binary classification task.
+
+Binary classification is used to categorize data into 2 classes (yes/no; pass/fail; true/false; positive/negative). It can be used to answer questions such as:
+
+- Is this email spam?
+- Which applicants may be eligible for membership?
+- Which accounts may not pay their invoices on time?
+- Is this a fraudulent credit card transaction?
+
+If your scenario requires classification into two categories, you can use this template.
+
+#### Issue classification (multiclass classification)
+
+Issue classification can be used to categorize customer feedback issues using the issue title and description. It is an example of the multi-class classification task.
+
+Multiclass classification can be used to categorize data into 3 or more classes. It can be used to answer questions such as:
+
+- To which department should I route this support ticket?
+- What category of financial transaction was this?
+- What is the priority of this issue?
+
+You can use this template for your scenario if you want to categorize data into 3 or more categories.
+
+#### Price prediction (regression)
+
+Price prediction can be used to predict house prices using location, size, and features of the house such as number of bedrooms and bathrooms. It is an example of the regression task.
+
+Regression is used to predict numbers. It can be used to answer questions such as:
+
+- What price will this house sell for?
+- After how much time will this part require maintenance?
+- What is the moisture content in this dryer?
+- What will the total annual sales for this region be?
+
+#### Custom scenario (choose your task)
+
+Using the custom scenario allows you to choose your own task. Pick the scenario which makes the most sense for your problem.
 
 ## Data
 
-Once you have mapped your scenario onto a task, Model Builder asks you to provide a training dataset. The data is used to train, evaluate, and choose the best model for your scenario. A training dataset is a table of rows of training examples, and columns of attributes. Each row has:
+### Choose the 
+
+Once you have mapped your scenario onto a task, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario. You also need to choose the output you want to predict.
+
+#### Choose the output to predict (label)
+
+A dataset is a table of rows of training examples, and columns of attributes. Each row has:
 - a **label** (the attribute that you want to predict)
 - **features** (attributes that are used as inputs to predict the label).
 
 For the house-price prediction scenario, the features could be:
 - the square footage of the house
 - the number of bedrooms and bathrooms
-- the zip code.
+- the zip code
 
-The label is the historical house price for that row of square footage, bedroom, and bathroom values and zip code. 
+The label is the historical house price for that row of square footage, bedroom, and bathroom values and zip code.
 
 ![Table showing rows and columns of house price data with features consisting of size rooms zip code and price label](media/model-builder-data.png)
 
-The data you provide must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
+#### Data formats
 
-Model Builder will make a best guess at the label in your dataset. If it is not correct, then you can select a different column.
+Model Builder places the following limitations on the data:
 
-If you don't have your own data yet, try out these datasets:
+- Data must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
+- There is a limit of 1GB on the training dataset
+- SQL server has a limit of 100,000 rows for training
+- Data from SQL server is copied from the server to your local machine before training
+- Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
+
+#### Example datasets
+
+If you don't have your own data yet, try out one of these datasets:
 
 |Data|Label|Features|
 |-|-|-|
@@ -74,9 +121,15 @@ Model Builder currently places the following limitations on the data that it imp
 
 ## Train
 
-Once you have provided the task and the data, Model Builder trains the model.
+Once you selected your scenario, data and label, Model Builder trains the model.
 
-Training in Model Builder is the process of trying different algorithms and settings, and evaluating how accurately they perform.
+### What is training?
+
+Training is an automatic process by which Model Builder teaches your model how to answer questions for your scenario. Once trained, your model can make predictions with input data that is has not seen before. For example, if you are predicting house prices and a new house comes on the market, you can predict its sale price.
+
+Model Builder uses automated machine learning (AutoML), which automatically explores different machine learning algorithms and settings to find the one that best suits your scenario. This does not require any input or tuning from you.
+
+### How long should I train for?
 
 You can provide a training time. In general, training for a longer time produces a more accurate model. More training time is also required as the size of the training dataset increases. The following table gives some training time guidelines for datasets of increasing size.
 
@@ -88,41 +141,55 @@ Dataset Size  | Dataset Type       | Avg. Time to train
 500 - 1 Gb    | Numeric and Text   | 60 min 
 1 Gb+         | Numeric and Text   | 3 hour+ 
 
+The exact time to train also depends on:
+
+- the type of columns i.e. text vs numeric
+- the type of machine learning task (regression or classification)
+- the number of rows used for training
+- the number of feature columns used for training
+
 ## Evaluate
 
-Model Builder by splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is used to evaluate your model. 
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Evaluation is the process of using the trained model to make predictions with the new test data, and then measuring how good the predictions are. The metrics used for evaluation depend on the ML task. Refer to the [model evaluation metrics](resources/metrics.md) guide for more information.  
 
-### Regression (predicting numbers)
+### Sentiment analysis (binary classification)
 
-The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer **RSquared** is to 1, the better your model is.
-
-Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models. 
-
-### Classification (predicting categories)
-
-The default metric for classification problems is **accuracy**. Accuracy defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**. 
+The default metric for binary classification problems is **accuracy**. Accuracy defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**. 
 
 Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate should be greater than 0.50, for models to be acceptable. 
 
 Additional metrics such as F1 score can be used to control the balance between precision (ratio of correct predictions to the total predictions of that class) and recall (proportion of correct predictions to the total actual members of that class).
 
-When there are more than two categories, are two types of accuracy:
-- Micro-accuracy: the fraction of predictions that are correct across all instances.
-- Macro-accuracy: the average accuracy at the class level
+### Issue classification (multiclass classification)
+
+For problems where data is categorized into multiple classes there are two types of accuracy:
+
+- Micro-accuracy: the fraction of predictions that are correct across all instances. In the issue classification scenario, this is the proportion of incoming issues that get assigned to the correct category. 
+- Macro-accuracy: the average accuracy at the class level. In the issue classification scenario, the accuracy is measured for each category, and then these are averaged. For this metric, all classes are given equal weight. For perfectly balanced datasets (where there are an equal number of examples of each category), micro-accuracy and macro-accuracy are the same.
+
+The default metric for multiclass classification problems is **micro accuracy**. The **closer to 100%, the better it is**. 
+
+### Price prediction (regression)
+
+The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer **RSquared** is to 1, the better your model is.
+
+Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models. 
 
 ## Improve model performance
+
+If your model performance score is not as good as you want it to be, you can:
 
 * Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
 
 * Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model. 
 
-* Add better data. For classification tasks, make sure that the training set is balanced across the categories.
+* Balance your data. For classification tasks, make sure that the training set is balanced across the categories.
 
 ## Generated Code + Model
 
-After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application.
+After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 
-In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. 
+In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. You can also use the model training code to re-train your model with new data.
 
 ## What's next?
 

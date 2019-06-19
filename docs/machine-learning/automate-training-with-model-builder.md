@@ -58,7 +58,7 @@ You can use the issue classification template for your scenario if you want to c
 
 #### Price prediction (regression)
 
-Price prediction can be used to predict house prices using location, size, and features of the house such as number of bedrooms and bathrooms. It is an example of the regression task.
+Price prediction can be used to predict house prices using location, size, and features of the house, such as number of bedrooms and bathrooms. It is an example of the regression task.
 
 Regression is used to predict numbers. It can be used to answer questions such as:
 
@@ -164,7 +164,7 @@ The default metric for multiclass classification problems is **micro accuracy**.
 
 ### Price prediction (regression)
 
-The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer **RSquared** is to 1, the better your model is.
+The default metric for regression problems is **RSquared**. 1 is the best possible value. The closer RSquared is to 1, the better your model is.
 
 Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models. 
 

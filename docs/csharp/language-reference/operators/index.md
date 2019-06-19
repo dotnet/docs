@@ -47,7 +47,7 @@ These are the highest precedence operators.
 
 [new](../keywords/new-operator.md) – type instantiation.
 
-[typeof](../keywords/typeof.md) – returns the <xref:System.Type> object representing the operand.
+[typeof](type-testing-and-conversion-operators.md#typeof-operator) – returns the <xref:System.Type> object representing the operand.
 
 [checked](../keywords/checked.md) – enables overflow checking for integer operations.
 

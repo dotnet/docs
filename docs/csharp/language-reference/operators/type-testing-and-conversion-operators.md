@@ -4,18 +4,20 @@ description: "Learn about C# operators that you can use to check the type of an 
 ms.date: 06/21/2019
 author: pkulikov
 f1_keywords: 
-  - "()_CSharpKeyword"
   - "is_CSharpKeyword"
   - "as_CSharpKeyword"
+  - "()_CSharpKeyword"
+  - "typeof_CSharpKeyword"
 helpviewer_keywords: 
   - "type-testing operators [C#]"
   - "conversion operators [C#]"
   - "type conversion [C#]"
+  - "is operator [C#]"
+  - "as operator [C#]"
   - "cast operator [C#]"
   - "cast expression [C#]"
   - "() operator [C#]"
-  - "is operator [C#]"
-  - "as operator [C#]"
+  - "typeof operator [C#]"
 ---
 # Type-testing and conversion operators (C# reference)
 
@@ -23,7 +25,7 @@ Introduction.
 
 ## is operator
 
-The `is` operator checks if a runtime type of an expression result is compatible with a given type. Starting with C# 7.0, the `is` operator also tests an expression result against a pattern.
+The `is` operator checks if the runtime type of an expression result is compatible with a given type. Starting with C# 7.0, the `is` operator also tests an expression result against a pattern.
 
 The expression with the type-testing `is` operator has the following form
 
@@ -35,7 +37,7 @@ where `E` is an expression that returns a value and `T` is a name of a type or a
 
 The `E is T` expression returns `true` if the result of `E` is non-null and can be converted to type `T` by a reference conversion, a boxing conversion, or an unboxing conversion; otherwise, it returns `false`. In particular, the `is` operator doesn't consider user-defined conversions and numeric conversions.
 
-The following example demonstrates that the `is` operator returns `true` if a runtime type of an expression result derives from a given type, that is, there exists a reference conversion:
+The following example demonstrates that the `is` operator returns `true` if the runtime type of an expression result derives from a given type, that is, there exists a reference conversion:
 
 [!code-csharp[is with reference conversion](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#IsWithReferenceConversion)]
 
@@ -45,7 +47,7 @@ The next example shows that the `is` operator doesn't consider numeric conversio
 
 For information about C# conversions, see the [Conversions](~/_csharplang/spec/conversions.md) chapter of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-### Type-testing with pattern matching
+### Type testing with pattern matching
 
 Starting with C# 7.0, the `is` operator also tests an expression result against a pattern. In particular, it supports the type pattern in the following form:
 
@@ -106,13 +108,27 @@ Other use of parentheses is to specify the order in which to evaluate operations
 
 ## typeof operator
 
-Text.
+The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. An argument of the `typeof` operator is a name of a type or a type parameter, as the following example shows:
+
+[!code-csharp-interactive[typeof operator](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#TypeOf)]
+
+You also can use the `typeof` operator with unbound generic types. The name of an unbound generic type must contain the appropriate number of commas, which is one less than the number of type parameters. The following example shows the usage of the `typeof` operator with an unbound generic type:
+
+[!code-csharp-interactive[typeof unbound generic](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#TypeOfUnboundGeneric)]
+
+An expression cannot be an argument of the `typeof` operator. To get the <xref:System.Type?displayProperty=nameWithType> instance for the runtime type of the expression result, use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method.
+
+### Type testing with the `typeof` operator
+
+Use the `typeof` operator to check if the runtime type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking performed with the `typeof` operator and the [is operator](#is-operator):
+
+[!code-csharp[typeof vs is](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#TypeCheckWithTypeOf)]
 
 ## Operator overloadability
 
 The `is`, `as`, and `typeof` operators are not overloadable.
 
-A user-defined type cannot overload the `()` operator, but can define custom type conversions which can be performed by a cast expression. For more information, see the [explicit](../keywords/explicit.md) and [implicit](../keywords/implicit.md) keyword articles.
+A user-defined type cannot overload the `()` operator, but can define custom type conversions that can be performed by a cast expression. For more information, see the [explicit](../keywords/explicit.md) and [implicit](../keywords/implicit.md) keyword articles.
 
 ## C# language specification
 
@@ -121,6 +137,7 @@ For more information, see the following sections of the [C# language specificati
 - [The is operator](~/_csharplang/spec/expressions.md#the-is-operator)
 - [The as operator](~/_csharplang/spec/expressions.md#the-as-operator)
 - [Cast expressions](~/_csharplang/spec/expressions.md#cast-expressions)
+- [The typeof operator](~/_csharplang/spec/expressions.md#the-typeof-operator)
 
 ## See also
 

@@ -7,6 +7,7 @@ f1_keywords:
   - "=_CSharpKeyword"
   - "()_CSharpKeyword"
   - "is_CSharpKeyword"
+  - "as_CSharpKeyword"
 helpviewer_keywords: 
   - "type-testing operators [C#]"
   - "assignment operator [C#]"
@@ -17,6 +18,7 @@ helpviewer_keywords:
   - "cast expression [C#]"
   - "() operator [C#]"
   - "is operator [C#]"
+  - "as operator [C#]"
 ---
 # Type-testing and assignment operators (C# reference)
 
@@ -24,7 +26,7 @@ Introduction.
 
 ## is operator
 
-The `is` operator checks if the runtime type of the expression result is compatible with a given type. Starting with C# 7.0, the `is` operator also tests the expression result against a pattern.
+The `is` operator checks if a runtime type of an expression result is compatible with a given type. Starting with C# 7.0, the `is` operator also tests an expression result against a pattern.
 
 The expression with the type-testing `is` operator has the following form
 
@@ -36,7 +38,7 @@ where `E` is an expression that returns a value and `T` is a name of a type or a
 
 The `E is T` expression returns `true` if the result of `E` is non-null and can be converted to type `T` by a reference conversion, a boxing conversion, or an unboxing conversion; otherwise, it returns `false`. In particular, the `is` operator doesn't consider user-defined conversions and numeric conversions.
 
-The following example demonstrates that the `is` operator returns `true` if the runtime type of the expression result derives from a given type, that is, there exists a reference conversion:
+The following example demonstrates that the `is` operator returns `true` if a runtime type of an expression result derives from a given type, that is, there exists a reference conversion:
 
 [!code-csharp[is with reference conversion](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsWithReferenceConversion)]
 
@@ -48,7 +50,7 @@ For information about C# conversions, see the [Conversions](~/_csharplang/spec/c
 
 ### Type-testing with pattern matching
 
-Starting with C# 7.0, the `is` operator also tests the expression result against a pattern. In particular, it supports the type pattern in the following form:
+Starting with C# 7.0, the `is` operator also tests an expression result against a pattern. In particular, it supports the type pattern in the following form:
 
 ```csharp
 E is T v
@@ -64,11 +66,30 @@ For more information about the type pattern and other supported patterns, see [P
 
 ## as operator
 
-Text.
+The `as` operator explicitly converts the result of an expression to a given reference or nullable value type. If the conversion is not possible, the `as` operator returns `null`. Unlike the [cast operator ()](#cast-operator-), the `as` operator never throws an exception.
 
-## typeof operator
+The expression of the form
 
-Text.
+```csharp
+E as T
+```
+
+where `E` is an expression that returns a value and `T` is a name of a type or a type argument, produces the same result as
+
+```csharp
+E is T ? (T)(E) : (T)null
+```
+
+except that `E` is only evaluated once.
+
+The `as` operator considers only reference, nullable, boxing, and unboxing conversions. In particular, you cannot use the `as` operator to perform a user-defined conversion. To do that, use the [cast operator ()](#cast-operator-).
+
+The following example demonstrates the usage of the `as` operator:
+
+[!code-csharp-interactive[as operator](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#AsOperator)]
+
+> [!NOTE]
+> As the preceding example shows, you need to compare the result of the `as` expression with `null` to check if the conversion is successful. Starting with C# 7.0, you can use the [is operator](#type-testing-with-pattern-matching) both to test if the conversion succeeds and, if it succeeds, assign its result to a new variable.
 
 ## Cast operator ()
 
@@ -85,6 +106,10 @@ For information about supported explicit conversions, see the [Explicit conversi
 You also use parentheses to [call a method or invoke a delegate](member-access-operators.md#invocation-operator-).
 
 Other use of parentheses is to specify the order in which to evaluate operations in an expression. For more information, see the [Adding parentheses](../../programming-guide/statements-expressions-operators/operators.md#adding-parentheses) section of the [Operators](../../programming-guide/statements-expressions-operators/operators.md) article. For the list of operators ordered by precedence level, see [C# operators](index.md).
+
+## typeof operator
+
+Text.
 
 ## Assignment operator =
 
@@ -147,6 +172,7 @@ A user-defined type cannot overload the assignment operator `=`. However, a user
 For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
 
 - [The is operator](~/_csharplang/spec/expressions.md#the-is-operator)
+- [The as operator](~/_csharplang/spec/expressions.md#the-as-operator)
 - [Cast expressions](~/_csharplang/spec/expressions.md#cast-expressions)
 - [Assignment operators](~/_csharplang/spec/expressions.md#assignment-operators)
 

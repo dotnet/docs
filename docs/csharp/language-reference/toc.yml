@@ -214,14 +214,14 @@
           href: keywords/using-statement.md
       - name: extern alias
         href: keywords/extern-alias.md
+    - name: Type-testing Keywords
+      items:
+        - name: is
+          href: keywords/is.md
     - name: Operator Keywords
       items:
-      - name: as
-        href: keywords/as.md
       - name: await
         href: keywords/await.md
-      - name: is
-        href: keywords/is.md
       - name: new
         items:
         - name: new operator, modifier and constraint

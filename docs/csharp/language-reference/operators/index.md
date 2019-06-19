@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x >= y](comparison-operators.md#greater-than-or-equal-operator-) – greater than or equal to.
 
-[is](../keywords/is.md) – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
+[is](type-testing-and-assignment-operators.md#is-operator) – type compatibility. Returns `true` if the evaluated left operand can be cast to the type specified by the right operand.
 
-[as](../keywords/as.md) – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.
+[as](type-testing-and-assignment-operators.md#as-operator) – type conversion. Returns the left operand cast to the type specified by the right operand, but `as` returns `null` where `(T)x` would throw an exception.
 
 ## Equality operators
 

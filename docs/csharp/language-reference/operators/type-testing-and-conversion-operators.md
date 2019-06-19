@@ -21,7 +21,12 @@ helpviewer_keywords:
 ---
 # Type-testing and conversion operators (C# reference)
 
-Introduction.
+You can use the following operators to do type checking or type conversion:
+
+- [is operator](#is-operator): to check if the runtime type of an expression is compatible with a given type
+- [as operator](#as-operator): to explicitly convert an expression to a given type if its runtime type is compatible with a given type
+- [cast operator ()](#cast-operator-): to perform an explicit conversion
+- [typeof operator](#typeof-operator): to obtain the <xref:System.Type?displayProperty=nameWithType> instance for a type
 
 ## is operator
 

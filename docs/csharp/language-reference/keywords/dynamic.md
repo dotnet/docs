@@ -65,7 +65,7 @@ For more information and examples, see [Using Type dynamic](../../../csharp/prog
 - [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)
 - [object](object.md)
 - [is](is.md)
-- [as](../operators/type-testing-and-assignment-operators.md#as-operator)
+- [as](../operators/type-testing-and-conversion-operators.md#as-operator)
 - [typeof](typeof.md)
 - [How to: safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
 - [Walkthrough: creating and using dynamic objects](../../programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

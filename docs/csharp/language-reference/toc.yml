@@ -342,14 +342,15 @@
     - name: Member access operators
       href: operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
-    - name: Type-testing and assignment operators
-      href: operators/type-testing-and-assignment-operators.md
-      displayName: "is, as, typeof, (), cast, =, ref"
+    - name: Type-testing and conversion operators
+      href: operators/type-testing-and-conversion-operators.md
+      displayName: "is, as, typeof, (), cast"
     - name: Pointer related operators
       href: operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
-    - name: ":: operator"
-      href: operators/namespace-alias-qualifer.md
+    - name: "= operator"
+      href: operators/assignment-operator.md
+      displayName: "assignment, ref"
     - name: + and += operators
       href: operators/addition-operator.md
       displayName: string concatenation, delegate combination, event subscription
@@ -365,6 +366,9 @@
     - name: => operator
       href: operators/lambda-operator.md
       displayName: lambda
+    - name: ":: operator"
+      href: operators/namespace-alias-qualifer.md
+      displayName: "namespace alias qualifier"
     - name: stackalloc operator
       href: operators/stackalloc.md
     - name: true and false operators

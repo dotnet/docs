@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # How to: safely cast by using pattern matching is and as operators
 
-Because objects are polymorphic, it's possible for a variable of a base class type to hold a derived [type](../programming-guide/types/index.md). To access the derived type's instance members, it's necessary to [cast](../programming-guide/types/casting-and-type-conversions.md) the value back to the derived type. However, a cast creates the risk of throwing an <xref:System.InvalidCastException>. C# provides [pattern matching](../pattern-matching.md) statements that perform a cast conditionally only when it will succeed. C# also provides the [is](../language-reference/operators/type-testing-and-assignment-operators.md#is-operator) and [as](../language-reference/operators/type-testing-and-assignment-operators.md#as-operator) operators to test if a value is of a certain type.
+Because objects are polymorphic, it's possible for a variable of a base class type to hold a derived [type](../programming-guide/types/index.md). To access the derived type's instance members, it's necessary to [cast](../programming-guide/types/casting-and-type-conversions.md) the value back to the derived type. However, a cast creates the risk of throwing an <xref:System.InvalidCastException>. C# provides [pattern matching](../pattern-matching.md) statements that perform a cast conditionally only when it will succeed. C# also provides the [is](../language-reference/operators/type-testing-and-conversion-operators.md#is-operator) and [as](../language-reference/operators/type-testing-and-conversion-operators.md#as-operator) operators to test if a value is of a certain type.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 

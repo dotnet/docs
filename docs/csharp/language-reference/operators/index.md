@@ -81,7 +81,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[(T)x](type-testing-and-assignment-operators.md#cast-operator-) – type casting.
+[(T)x](type-testing-and-conversion-operators.md#cast-operator-) – type casting.
 
 [await](../keywords/await.md) – awaits a `Task`.
 
@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x >= y](comparison-operators.md#greater-than-or-equal-operator-) – greater than or equal to.
 
-[is](type-testing-and-assignment-operators.md#is-operator) – type compatibility. Returns `true` if the evaluated left operand can be cast to the type specified by the right operand.
+[is](type-testing-and-conversion-operators.md#is-operator) – type compatibility. Returns `true` if the evaluated left operand can be cast to the type specified by the right operand.
 
-[as](type-testing-and-assignment-operators.md#as-operator) – type conversion. Returns the left operand cast to the type specified by the right operand, but `as` returns `null` where `(T)x` would throw an exception.
+[as](type-testing-and-conversion-operators.md#as-operator) – type conversion. Returns the left operand cast to the type specified by the right operand, but `as` returns `null` where `(T)x` would throw an exception.
 
 ## Equality operators
 
@@ -189,7 +189,7 @@ This operator has higher precedence than the next section and lower precedence t
 
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
-[x = y](type-testing-and-assignment-operators.md#assignment-operator-) – assignment.
+[x = y](assignment-operator.md) – assignment.
 
 [x += y](arithmetic-operators.md#compound-assignment) – increment. Add the value of `y` to the value of `x`, store the result in `x`, and return the new value. If `x` designates an [event](../keywords/event.md), then `y` must be an appropriate method that C# adds as an event handler.
 

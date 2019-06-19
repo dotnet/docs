@@ -12,7 +12,8 @@ This example shows how to create an immutable lightweight class that serves only
   
  You can make an immutable property in two ways:
   - You can declare the [set](../../../csharp/language-reference/keywords/set.md) accessor to be [private](../../../csharp/language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.  
-    -  When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.  
+    
+    When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.  
   - You can declare only the [get](../../../csharp/language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.  
   
 ## Example  

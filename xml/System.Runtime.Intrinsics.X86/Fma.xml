@@ -13,6 +13,11 @@
     <BaseTypeName>System.Runtime.Intrinsics.X86.Avx</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             This class provides access to Intel FMA hardware instructions via intrinsics

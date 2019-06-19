@@ -60,7 +60,8 @@ To be able to format the output with indentation and white space OR to skip vali
         <param name="options">Defines the customized behavior of the <see cref="T:System.Text.Json.Utf8JsonWriter" /> By default, it writes minimized JSON (with no extra whitespace) and validates that the JSON being written is structurally valid according to the JSON RFC.</param>
         <summary>Constructs a new <see cref="T:System.Text.Json.Utf8JsonWriter" /> instance with a specified <see langword="System.Buffers.IBufferWriter&lt;System.Byte&gt;" />.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="bufferWriter" />  is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bufferWriter" />  is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,7 +84,8 @@ To be able to format the output with indentation and white space OR to skip vali
         <param name="options">Defines the customized behavior of the <see cref="T:System.Text.Json.Utf8JsonWriter" /> By default, it writes minimized JSON (with no extra whitespace) and validates that the JSON being written is structurally valid according to the JSON RFC.</param>
         <summary>Constructs a new <see cref="T:System.Text.Json.Utf8JsonWriter" /> instance with a specified <paramref name="utf8Json" />.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="utf8Json" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="utf8Json" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BytesCommitted">
@@ -369,7 +371,8 @@ The <xref:System.Text.Json.Utf8JsonWriter> will continue to use the original wri
 
           ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="bufferWriter" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bufferWriter" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">This instance has been disposed.</exception>
       </Docs>
     </Member>
@@ -401,8 +404,137 @@ The <xref:System.Text.Json.Utf8JsonWriter> will continue to use the original wri
 
           ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="utf8Json" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="utf8Json" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">This instance has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBase64String">
+      <MemberSignature Language="C#" Value="public void WriteBase64String (ReadOnlySpan&lt;byte&gt; utf8PropertyName, ReadOnlySpan&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBase64String(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBase64String(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBase64String (utf8PropertyName As ReadOnlySpan(Of Byte), bytes As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBase64String(ReadOnlySpan&lt;System::Byte&gt; utf8PropertyName, ReadOnlySpan&lt;System::Byte&gt; bytes);" />
+      <MemberSignature Language="F#" Value="member this.WriteBase64String : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="utf8JsonWriter.WriteBase64String (utf8PropertyName, bytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBase64String">
+      <MemberSignature Language="C#" Value="public void WriteBase64String (ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBase64String(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBase64String(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBase64String (propertyName As ReadOnlySpan(Of Char), bytes As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBase64String(ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;System::Byte&gt; bytes);" />
+      <MemberSignature Language="F#" Value="member this.WriteBase64String : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="utf8JsonWriter.WriteBase64String (propertyName, bytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBase64String">
+      <MemberSignature Language="C#" Value="public void WriteBase64String (string propertyName, ReadOnlySpan&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBase64String(string propertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBase64String(System.String,System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBase64String (propertyName As String, bytes As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBase64String(System::String ^ propertyName, ReadOnlySpan&lt;System::Byte&gt; bytes);" />
+      <MemberSignature Language="F#" Value="member this.WriteBase64String : string * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="utf8JsonWriter.WriteBase64String (propertyName, bytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBase64String">
+      <MemberSignature Language="C#" Value="public void WriteBase64String (System.Text.Json.JsonEncodedText propertyName, ReadOnlySpan&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBase64String(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBase64String(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBase64String (propertyName As JsonEncodedText, bytes As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBase64String(System::Text::Json::JsonEncodedText propertyName, ReadOnlySpan&lt;System::Byte&gt; bytes);" />
+      <MemberSignature Language="F#" Value="member this.WriteBase64String : System.Text.Json.JsonEncodedText * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="utf8JsonWriter.WriteBase64String (propertyName, bytes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBase64StringValue">
+      <MemberSignature Language="C#" Value="public void WriteBase64StringValue (ReadOnlySpan&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBase64StringValue(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBase64StringValue(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBase64StringValue (bytes As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBase64StringValue(ReadOnlySpan&lt;System::Byte&gt; bytes);" />
+      <MemberSignature Language="F#" Value="member this.WriteBase64StringValue : ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="utf8JsonWriter.WriteBase64StringValue bytes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteBoolean">
@@ -505,6 +637,32 @@ The property name is escaped before writing.
         </remarks>
         <exception cref="T:System.ArgumentException">The specified property name is too large.</exception>
         <exception cref="T:System.InvalidOperationException">Validation is enabled, and the operation would result in writing invalid JSON.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBoolean">
+      <MemberSignature Language="C#" Value="public void WriteBoolean (System.Text.Json.JsonEncodedText propertyName, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBoolean(valuetype System.Text.Json.JsonEncodedText propertyName, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteBoolean(System.Text.Json.JsonEncodedText,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBoolean (propertyName As JsonEncodedText, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBoolean(System::Text::Json::JsonEncodedText propertyName, bool value);" />
+      <MemberSignature Language="F#" Value="member this.WriteBoolean : System.Text.Json.JsonEncodedText * bool -&gt; unit" Usage="utf8JsonWriter.WriteBoolean (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteBooleanValue">
@@ -775,6 +933,30 @@ The property name is escaped before writing.
         </remarks>
         <exception cref="T:System.ArgumentException">The specified property name is too large.</exception>
         <exception cref="T:System.InvalidOperationException">Validation is enabled, and the write operation would produce invalid JSON.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNull">
+      <MemberSignature Language="C#" Value="public void WriteNull (System.Text.Json.JsonEncodedText propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNull(valuetype System.Text.Json.JsonEncodedText propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNull(System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNull (propertyName As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNull(System::Text::Json::JsonEncodedText propertyName);" />
+      <MemberSignature Language="F#" Value="member this.WriteNull : System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteNull propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteNullValue">
@@ -1543,6 +1725,198 @@ The property name is escaped before writing.
         <exception cref="T:System.InvalidOperationException">Validation is enabled, and the write operation would produce invalid JSON.</exception>
       </Docs>
     </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As Decimal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, System::Decimal value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * decimal -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, double value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * double -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, int value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * int -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, long value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * int64 -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, float value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * single -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * uint32 -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNumber">
+      <MemberSignature Language="C#" Value="public void WriteNumber (System.Text.Json.JsonEncodedText propertyName, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumber(valuetype System.Text.Json.JsonEncodedText propertyName, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteNumber (propertyName As JsonEncodedText, value As ULong)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteNumber(System::Text::Json::JsonEncodedText propertyName, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="member this.WriteNumber : System.Text.Json.JsonEncodedText * uint64 -&gt; unit" Usage="utf8JsonWriter.WriteNumber (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteNumberValue">
       <MemberSignature Language="C#" Value="public void WriteNumberValue (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteNumberValue(valuetype System.Decimal value) cil managed" />
@@ -1876,6 +2250,30 @@ The property name is escaped before writing.
 Validation is enabled, and this write operation would produce invalid JSON.</exception>
       </Docs>
     </Member>
+    <Member MemberName="WriteStartArray">
+      <MemberSignature Language="C#" Value="public void WriteStartArray (System.Text.Json.JsonEncodedText propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartArray(valuetype System.Text.Json.JsonEncodedText propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartArray(System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartArray (propertyName As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartArray(System::Text::Json::JsonEncodedText propertyName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartArray : System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteStartArray propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteStartObject">
       <MemberSignature Language="C#" Value="public void WriteStartObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartObject() cil managed" />
@@ -2008,6 +2406,30 @@ The property name is escaped before writing.
 -or-
        
 Validation is enabled, and this write operation would produce invalid JSON.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public void WriteStartObject (System.Text.Json.JsonEncodedText propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartObject(valuetype System.Text.Json.JsonEncodedText propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStartObject(System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStartObject (propertyName As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartObject(System::Text::Json::JsonEncodedText propertyName);" />
+      <MemberSignature Language="F#" Value="member this.WriteStartObject : System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteStartObject propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteString">
@@ -2215,6 +2637,32 @@ The property name and value is escaped before writing.
       </Docs>
     </Member>
     <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;byte&gt; utf8PropertyName, System.Text.Json.JsonEncodedText value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8PropertyName, valuetype System.Text.Json.JsonEncodedText value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (utf8PropertyName As ReadOnlySpan(Of Byte), value As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(ReadOnlySpan&lt;System::Byte&gt; utf8PropertyName, System::Text::Json::JsonEncodedText value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;byte&gt; * System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteString (utf8PropertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8PropertyName" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="utf8PropertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
       <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.DateTime)" />
@@ -2416,6 +2864,32 @@ The property name and value is escaped before writing.
         </remarks>
         <exception cref="T:System.ArgumentException">The specified property name or value is too large.</exception>
         <exception cref="T:System.InvalidOperationException">Validation is enabled, and the write operation would produce invalid JSON.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (ReadOnlySpan&lt;char&gt; propertyName, System.Text.Json.JsonEncodedText value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.ReadOnlySpan`1&lt;char&gt; propertyName, valuetype System.Text.Json.JsonEncodedText value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As ReadOnlySpan(Of Char), value As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(ReadOnlySpan&lt;char&gt; propertyName, System::Text::Json::JsonEncodedText value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : ReadOnlySpan&lt;char&gt; * System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteString">
@@ -2622,6 +3096,214 @@ The property name and value is escaped before writing.
         <exception cref="T:System.InvalidOperationException">Validation is enabled, and the write operation would produce invalid JSON.</exception>
       </Docs>
     </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (string propertyName, System.Text.Json.JsonEncodedText value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(string propertyName, valuetype System.Text.Json.JsonEncodedText value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As String, value As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::String ^ propertyName, System::Text::Json::JsonEncodedText value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : string * System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, value As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, DateTime value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * DateTime -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, DateTimeOffset value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.DateTimeOffset value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, value As DateTimeOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, DateTimeOffset value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * DateTimeOffset -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.Guid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, value As Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, Guid value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * Guid -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, ReadOnlySpan&lt;byte&gt; utf8Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, utf8Value As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, ReadOnlySpan&lt;System::Byte&gt; utf8Value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, utf8Value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="utf8Value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.ReadOnlySpan`1&lt;char&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, value As ReadOnlySpan(Of Char))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * string -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteString">
+      <MemberSignature Language="C#" Value="public void WriteString (System.Text.Json.JsonEncodedText propertyName, System.Text.Json.JsonEncodedText value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteString(valuetype System.Text.Json.JsonEncodedText propertyName, valuetype System.Text.Json.JsonEncodedText value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteString (propertyName As JsonEncodedText, value As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteString(System::Text::Json::JsonEncodedText propertyName, System::Text::Json::JsonEncodedText value);" />
+      <MemberSignature Language="F#" Value="member this.WriteString : System.Text.Json.JsonEncodedText * System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteString (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.Text.Json.JsonEncodedText" />
+        <Parameter Name="value" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteStringValue">
       <MemberSignature Language="C#" Value="public void WriteStringValue (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.DateTime value) cil managed" />
@@ -2797,6 +3479,30 @@ The value is escaped before writing.
         </remarks>
         <exception cref="T:System.ArgumentException">The specified value is too large.</exception>
         <exception cref="T:System.InvalidOperationException">Validation is enabled, and the write operation would produce invalid JSON.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStringValue">
+      <MemberSignature Language="C#" Value="public void WriteStringValue (System.Text.Json.JsonEncodedText value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStringValue(valuetype System.Text.Json.JsonEncodedText value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteStringValue (value As JsonEncodedText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStringValue(System::Text::Json::JsonEncodedText value);" />
+      <MemberSignature Language="F#" Value="member this.WriteStringValue : System.Text.Json.JsonEncodedText -&gt; unit" Usage="utf8JsonWriter.WriteStringValue value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

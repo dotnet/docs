@@ -149,7 +149,8 @@
       <Docs>
         <param name="value">Object to check for equality.</param>
         <summary>Determines whether a specified object is equal to a <see cref="T:Windows.UI.Xaml.Duration" />.</summary>
-        <returns><see langword="true" /> if value is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if value is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +175,8 @@
       <Docs>
         <param name="duration">The <see cref="T:Windows.UI.Xaml.Duration" /> to check for equality.</param>
         <summary>Determines whether a specified <see cref="T:Windows.UI.Xaml.Duration" /> is equal to this <see cref="T:Windows.UI.Xaml.Duration" />.</summary>
-        <returns><see langword="true" /> if <paramref name="duration" /> is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="duration" /> is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +204,8 @@
         <param name="t1">First <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">Second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines whether two <see cref="T:Windows.UI.Xaml.Duration" /> values are equal.</summary>
-        <returns><see langword="true" /> if <paramref name="t1" /> is equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="t1" /> is equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +277,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates if this <see cref="T:Windows.UI.Xaml.Duration" /> represents a <see cref="T:System.TimeSpan" /> value.</summary>
-        <value><see langword="true" /> if this <see cref="T:Windows.UI.Xaml.Duration" /> is a <see cref="T:System.TimeSpan" /> value; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this <see cref="T:Windows.UI.Xaml.Duration" /> is a <see cref="T:System.TimeSpan" /> value; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +334,8 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines whether two <see cref="T:Windows.UI.Xaml.Duration" /> cases are equal.</summary>
-        <returns><see langword="true" /> if both <see cref="T:Windows.UI.Xaml.Duration" /> values have equal property values, or if all <see cref="T:Windows.UI.Xaml.Duration" /> values are <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both <see cref="T:Windows.UI.Xaml.Duration" /> values have equal property values, or if all <see cref="T:Windows.UI.Xaml.Duration" /> values are <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,7 +363,8 @@
         <param name="t1">The <see cref="T:Windows.UI.Xaml.Duration" /> value to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> value to compare.</param>
         <summary>Determines if one <see cref="T:Windows.UI.Xaml.Duration" /> is greater than another.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,7 +392,8 @@
         <param name="t1">The first instance of <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second instance of <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines whether a <see cref="T:Windows.UI.Xaml.Duration" /> is greater than or equal to another.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,7 +416,8 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan"><see cref="T:System.TimeSpan" /> from which a <see cref="T:Windows.UI.Xaml.Duration" /> is implicitly created.</param>
+        <param name="timeSpan">
+          <see cref="T:System.TimeSpan" /> from which a <see cref="T:Windows.UI.Xaml.Duration" /> is implicitly created.</param>
         <summary>Implicitly creates a <see cref="T:Windows.UI.Xaml.Duration" /> from a given <see cref="T:System.TimeSpan" />.</summary>
         <returns>A created <see cref="T:Windows.UI.Xaml.Duration" />.</returns>
         <remarks>To be added.</remarks>
@@ -441,7 +449,8 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines if two <see cref="T:Windows.UI.Xaml.Duration" /> cases are not equal.</summary>
-        <returns><see langword="true" /> if exactly one of <paramref name="t1" /> or <paramref name="t2" /> represent a value, or if they both represent values that are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if exactly one of <paramref name="t1" /> or <paramref name="t2" /> represent a value, or if they both represent values that are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,7 +478,8 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines if a <see cref="T:Windows.UI.Xaml.Duration" /> is less than the value of another instance.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,7 +507,8 @@
         <param name="t1">The <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines if a <see cref="T:Windows.UI.Xaml.Duration" /> is less than or equal to another.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

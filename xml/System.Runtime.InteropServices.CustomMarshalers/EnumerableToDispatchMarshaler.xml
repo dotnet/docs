@@ -32,10 +32,10 @@
   </Docs>
   <Members>
     <Member MemberName=".cctor">
-      <MemberSignature Language="C#" Value="public static EnumerableToDispatchMarshaler ();" />
+      <MemberSignature Language="C#" Value="public EnumerableToDispatchMarshaler ();" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname rtspecialname void .cctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.#cctor" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub New ()" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumerableToDispatchMarshaler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

@@ -18,6 +18,11 @@
     <BaseTypeName FrameworkAlternate="netcore-3.0">System.Runtime.Intrinsics.X86.Sse</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-3.0">
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             This class provides access to Intel SSE2 hardware instructions via intrinsics

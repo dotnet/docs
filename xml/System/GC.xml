@@ -748,6 +748,34 @@ This method is most useful in monitoring scenarios for measuring the difference 
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetGCMemoryInfo">
+      <MemberSignature Language="C#" Value="public static GCMemoryInfo GetGCMemoryInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.GCMemoryInfo GetGCMemoryInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetGCMemoryInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetGCMemoryInfo () As GCMemoryInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static GCMemoryInfo GetGCMemoryInfo();" />
+      <MemberSignature Language="F#" Value="static member GetGCMemoryInfo : unit -&gt; GCMemoryInfo" Usage="System.GC.GetGCMemoryInfo " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.GCMemoryInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="GetGeneration">
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -875,6 +903,36 @@ This method is most useful in monitoring scenarios for measuring the difference 
         </remarks>
         <exception cref="T:System.ArgumentException">Garbage collection has already been performed on <paramref name="wo" />.</exception>
         <altmember cref="P:System.GC.MaxGeneration" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalAllocatedBytes">
+      <MemberSignature Language="C#" Value="public static long GetTotalAllocatedBytes (bool precise = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetTotalAllocatedBytes(bool precise) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetTotalAllocatedBytes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTotalAllocatedBytes (Optional precise As Boolean = false) As Long" />
+      <MemberSignature Language="F#" Value="static member GetTotalAllocatedBytes : bool -&gt; int64" Usage="System.GC.GetTotalAllocatedBytes precise" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="precise" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="precise">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalMemory">

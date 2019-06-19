@@ -81,7 +81,8 @@
         <summary>Creates a provider over a byte array.</summary>
         <returns>The new provider.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="image" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="image" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromMetadataImage">
@@ -112,8 +113,10 @@
         <summary>Creates a metadata provider over an image stored in memory.</summary>
         <returns>The new metadata provider.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="start" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="size" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="start" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="size" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromMetadataStream">
@@ -155,8 +158,10 @@ If <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displ
 
             ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="stream" /> doesn't support read and seek operations.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="stream" /> doesn't support read and seek operations.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Size is negative or extends past the end of the stream.</exception>
         <exception cref="T:System.IO.IOException">Error reading from the stream (only when <see cref="F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata" /> is specified).</exception>
       </Docs>
@@ -188,7 +193,8 @@ If <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displ
         <summary>Creates a portable PDB metadata provider over a byte array.</summary>
         <returns>The new portable PDB metadata provider .</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="image" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="image" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPortablePdbImage">
@@ -219,8 +225,10 @@ If <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displ
         <summary>Creates a portable PDB metadata provider over a blob stored in memory.</summary>
         <returns>The new portable PDB metadata provider.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="start" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="size" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="start" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="size" /> is negative.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPortablePdbStream">
@@ -262,8 +270,10 @@ If <xref:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata?displ
 
             ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="stream" /> doesn't support read and seek operations.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="stream" /> doesn't support read and seek operations.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Size is negative or extends past the end of the stream.</exception>
       </Docs>
     </Member>

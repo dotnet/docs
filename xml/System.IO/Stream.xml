@@ -899,7 +899,8 @@
         <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
         <summary>Asynchronously reads the bytes from the current stream and writes them to another stream, using a specified cancellation token.</summary>
         <returns>A task that represents the asynchronous copy operation.</returns>
-        <remarks><format type="text/markdown"><![CDATA[  
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.IO.Stream.CopyToAsync%2A> method enables you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
@@ -910,7 +911,8 @@
   
  For an example of copying between two streams, see the <xref:System.IO.Stream.CopyToAsync%28System.IO.Stream%29> overload.  
   
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyToAsync">

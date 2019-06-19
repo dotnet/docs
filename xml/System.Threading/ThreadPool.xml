@@ -212,6 +212,33 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <Member MemberName="CompletedWorkItemCount">
+      <MemberSignature Language="C#" Value="public static long CompletedWorkItemCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 CompletedWorkItemCount" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.ThreadPool.CompletedWorkItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CompletedWorkItemCount As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property long CompletedWorkItemCount { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompletedWorkItemCount : int64" Usage="System.Threading.ThreadPool.CompletedWorkItemCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetAvailableThreads">
       <MemberSignature Language="C#" Value="public static void GetAvailableThreads (out int workerThreads, out int completionPortThreads);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetAvailableThreads([out] int32&amp; workerThreads, [out] int32&amp; completionPortThreads) cil managed" />
@@ -411,6 +438,33 @@
         <altmember cref="M:System.Threading.ThreadPool.SetMinThreads(System.Int32,System.Int32)" />
         <altmember cref="M:System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)" />
         <altmember cref="M:System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)" />
+      </Docs>
+    </Member>
+    <Member MemberName="PendingWorkItemCount">
+      <MemberSignature Language="C#" Value="public static long PendingWorkItemCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 PendingWorkItemCount" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.ThreadPool.PendingWorkItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PendingWorkItemCount As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property long PendingWorkItemCount { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.PendingWorkItemCount : int64" Usage="System.Threading.ThreadPool.PendingWorkItemCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="QueueUserWorkItem">
@@ -1102,6 +1156,33 @@
         <altmember cref="M:System.Threading.ThreadPool.GetMinThreads(System.Int32@,System.Int32@)" />
         <altmember cref="M:System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)" />
         <altmember cref="M:System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadCount">
+      <MemberSignature Language="C#" Value="public static int ThreadCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 ThreadCount" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.ThreadPool.ThreadCount" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ThreadCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ThreadCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreadCount : int" Usage="System.Threading.ThreadPool.ThreadCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnsafeQueueNativeOverlapped">

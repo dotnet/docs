@@ -152,13 +152,13 @@
         <summary>Returns a blob encoding sequence points.
 </summary>
         <value>A blob encoding sequence points, or a handle whose <see cref="P:System.Reflection.Metadata.BlobHandle.IsNil" /> property is <see langword="true" /> if the method doesn't have sequence points.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
  Use the <see cref="M:System.Reflection.Metadata.MethodDebugInformation.GetSequencePoints" /> method to decode the blob.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

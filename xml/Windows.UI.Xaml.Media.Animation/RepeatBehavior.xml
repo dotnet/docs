@@ -149,7 +149,8 @@
       <Docs>
         <param name="value">The object to compare with this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />.</param>
         <summary>Indicates whether the specified object is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />.</summary>
-        <returns><see langword="true" /> if <paramref name="value" /> is a <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> that represents the same repeat behavior as this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is a <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> that represents the same repeat behavior as this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +175,8 @@
       <Docs>
         <param name="repeatBehavior">The value to compare to this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />.</param>
         <summary>Returns a value that indicates whether the specified <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />.</summary>
-        <returns><see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior" /> are equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior" /> are equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +204,8 @@
         <param name="repeatBehavior1">The first value to compare.</param>
         <param name="repeatBehavior2">The second value to compare.</param>
         <summary>Indicates whether the two specified <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> values are equal.</summary>
-        <returns><see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +277,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the repeat behavior has a specified iteration count.</summary>
-        <value><see langword="true" /> if the instance represents an iteration count; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the instance represents an iteration count; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,7 +300,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the repeat behavior has a specified repeat duration.</summary>
-        <value><see langword="true" /> if the instance represents a repeat duration; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the instance represents a repeat duration; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,7 +329,8 @@
         <param name="repeatBehavior1">The first value to compare.</param>
         <param name="repeatBehavior2">The second value to compare.</param>
         <summary>Indicates whether the two specified <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> values are equal.</summary>
-        <returns><see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,7 +358,8 @@
         <param name="repeatBehavior1">The first value to compare.</param>
         <param name="repeatBehavior2">The second value to compare.</param>
         <summary>Indicates whether the two specified <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> values are not equal.</summary>
-        <returns><see langword="true" /> if <paramref name="repeatBehavior1" /> and <paramref name="repeatBehavior2" /> are different types or the repeat behavior properties are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="repeatBehavior1" /> and <paramref name="repeatBehavior2" /> are different types or the repeat behavior properties are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

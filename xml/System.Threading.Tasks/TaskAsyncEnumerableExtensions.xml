@@ -1,0 +1,122 @@
+﻿<Type Name="TaskAsyncEnumerableExtensions" FullName="System.Threading.Tasks.TaskAsyncEnumerableExtensions">
+  <TypeSignature Language="C#" Value="public static class TaskAsyncEnumerableExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TaskAsyncEnumerableExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskAsyncEnumerableExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TaskAsyncEnumerableExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TaskAsyncEnumerableExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type TaskAsyncEnumerableExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigureAwait">
+      <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.ConfiguredAsyncDisposable ConfigureAwait (this IAsyncDisposable source, bool continueOnCapturedContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.CompilerServices.ConfiguredAsyncDisposable ConfigureAwait(class System.IAsyncDisposable source, bool continueOnCapturedContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait(System.IAsyncDisposable,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ConfigureAwait (source As IAsyncDisposable, continueOnCapturedContext As Boolean) As ConfiguredAsyncDisposable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Runtime::CompilerServices::ConfiguredAsyncDisposable ConfigureAwait(IAsyncDisposable ^ source, bool continueOnCapturedContext);" />
+      <MemberSignature Language="F#" Value="static member ConfigureAwait : IAsyncDisposable * bool -&gt; System.Runtime.CompilerServices.ConfiguredAsyncDisposable" Usage="System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait (source, continueOnCapturedContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredAsyncDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.IAsyncDisposable" RefType="this" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="continueOnCapturedContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureAwait&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt; ConfigureAwait&lt;T&gt; (this System.Collections.Generic.IAsyncEnumerable&lt;T&gt; source, bool continueOnCapturedContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1&lt;!!T&gt; ConfigureAwait&lt;T&gt;(class System.Collections.Generic.IAsyncEnumerable`1&lt;!!T&gt; source, bool continueOnCapturedContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ConfigureAwait(Of T) (source As IAsyncEnumerable(Of T), continueOnCapturedContext As Boolean) As ConfiguredCancelableAsyncEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Runtime::CompilerServices::ConfiguredCancelableAsyncEnumerable&lt;T&gt; ConfigureAwait(System::Collections::Generic::IAsyncEnumerable&lt;T&gt; ^ source, bool continueOnCapturedContext);" />
+      <MemberSignature Language="F#" Value="static member ConfigureAwait : System.Collections.Generic.IAsyncEnumerable&lt;'T&gt; * bool -&gt; System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;" Usage="System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait (source, continueOnCapturedContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="continueOnCapturedContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithCancellation&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt; WithCancellation&lt;T&gt; (this System.Collections.Generic.IAsyncEnumerable&lt;T&gt; source, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1&lt;!!T&gt; WithCancellation&lt;T&gt;(class System.Collections.Generic.IAsyncEnumerable`1&lt;!!T&gt; source, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation``1(System.Collections.Generic.IAsyncEnumerable{``0},System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Runtime::CompilerServices::ConfiguredCancelableAsyncEnumerable&lt;T&gt; WithCancellation(System::Collections::Generic::IAsyncEnumerable&lt;T&gt; ^ source, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member WithCancellation : System.Collections.Generic.IAsyncEnumerable&lt;'T&gt; * System.Threading.CancellationToken -&gt; System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;" Usage="System.Threading.Tasks.TaskAsyncEnumerableExtensions.WithCancellation (source, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IAsyncEnumerable&lt;T&gt;" RefType="this" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

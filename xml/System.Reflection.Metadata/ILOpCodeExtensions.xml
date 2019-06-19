@@ -132,7 +132,8 @@
       <Docs>
         <param name="opCode">To be added.</param>
         <summary>Verifies if the specified op-code is a branch to a label.</summary>
-        <returns><see langword="true" /> if the specified op-code is a branch to a label, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the specified op-code is a branch to a label, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

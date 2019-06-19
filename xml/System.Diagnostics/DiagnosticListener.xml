@@ -28,13 +28,11 @@
   <Docs>
     <summary>Provides an implementation of the abstract <see cref="T:System.Diagnostics.DiagnosticSource" /> class that represents a named place to which a source sends its information (events).</summary>
     <remarks>
-      <format type="text/markdown">
-        <![CDATA[
+      <format type="text/markdown"><![CDATA[
         
 For more information on the <xref:System.Diagnostics.DiagnosticSource> and <xref:System.Diagnostics.DiagnosticListener> classes, see [DiagnosticSource User's Guide](https://github.com/dotnet/corefx/blob/d3942d4671919edb0cca6ddc1840190f524a809d/src/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
 
-        ]]>
-      </format>
+        ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -61,13 +59,13 @@ For more information on the <xref:System.Diagnostics.DiagnosticSource> and <xref
       <Docs>
         <param name="name">The name of this <see cref="T:System.Diagnostics.DiagnosticListener" />.</param>
         <summary>Creates a new <see cref="T:System.Diagnostics.DiagnosticListener" />.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 `DiagnosticListener` is a NotificationSource, which means the returned result can be used to  log notifications, but it also has a <xref:System.Diagnostics.DiagnosticListener.Subscribe%2A> method so notifications can be forwarded arbitrarily. Thus, its job is to forward things from the producer to all the listeners (multi-casting). Generally, you should not be making your own <see cref="T:System.Diagnostics.DiagnosticListener" /> but use the default, so that notifications are as public as possible.
  
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllListeners">
@@ -93,7 +91,8 @@ For more information on the <xref:System.Diagnostics.DiagnosticSource> and <xref
       <Docs>
         <summary>Gets the collection of listeners for this <see cref="T:System.Diagnostics.DiagnosticListener" />.</summary>
         <value>To be added.</value>
-        <remarks><format type="text/markdown"><![CDATA[
+        <remarks>
+          <format type="text/markdown"><![CDATA[
 
 When you subscribe to this, you get callbacks for all NotificationListeners in the appdomain, as well as those that occurred in the past, and all future Listeners created in the future.
 
@@ -151,7 +150,8 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
       <Parameters />
       <Docs>
         <summary>Determines whether there are any registered subscribers.</summary>
-        <returns><see langword="true" /> if there are any registered subscribers, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if there are any registered subscribers, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,7 +181,8 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
       <Docs>
         <param name="name">To be added.</param>
         <summary>Checks whether the <see cref="T:System.Diagnostics.DiagnosticListener" /> is enabled.</summary>
-        <returns><see langword="true" /> if notifications are enabled; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if notifications are enabled; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +213,8 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
         <param name="arg1">To be added.</param>
         <param name="arg2">To be added.</param>
         <summary>Checks if the DiagnosticListener is enabled.</summary>
-        <returns><see langword="true" /> if it is enabled, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if it is enabled, <see langword="false" /> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,8 +355,7 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
         <summary>Adds a subscriber. If the <paramref name="isEnabled" /> parameter is not <see langword="null" />, it indicates that some events are uninteresting can be skipped for efficiency.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 A particular instrumentation site has the option of calling one or more <xref:System.Diagnostics.DiagnosticListener.IsEnabled%2A> overloads  in which it passes the name of the event and up to two other (instrumentation site specific) objects as arguments. If any of these <xref:System.Diagnostics.DiagnosticListener.IsEnabled%2A> calls are made then this `isEnabled` predicate is invoked with passed values (if shorter overloads are used, `null` is passed for missing context objects).
 
@@ -400,8 +401,7 @@ If this parameter is `null`, no filtering is done (all overloads of <xref:System
         <summary>Add a subscriber (Observer). If the <paramref name="isEnabled" /> parameter is not <see langword="null" />, it indicates that some events are uninteresting and can be skipped for efficiency.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format type="text/markdown">
-            <![CDATA[
+          <format type="text/markdown"><![CDATA[
             
 Note that the `isEnabled` predicate is an optional optimization to allow the instrumentation site to avoid setting up the payload and calling <xref:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)> when no subscriber cares about it. In particular the instrumentation site has the option of ignoring the <xref:System.Diagnostics.DiagnosticListener.IsEnabled> predicate (not calling it) and simply calling <xref:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)>. Thus if the subscriber requires the filtering, it needs to do it itself.
 

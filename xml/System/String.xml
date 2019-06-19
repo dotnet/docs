@@ -3176,14 +3176,14 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/download/
       </AssemblyInfo>
       <Docs>
         <summary>Concatenates one or more instances of <see cref="T:System.String" />, or the <see cref="T:System.String" /> representations of the values of one or more instances of <see cref="T:System.Object" />.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 > [!NOTE]
 >  You can also use your language's string concatenation operator, such as `+` in C#, or `&` and `+` in Visual Basic, to concatenate strings. Both compilers translate the concatenation operator into a call to one of the overloads of `String.Concat`. 
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Concat">

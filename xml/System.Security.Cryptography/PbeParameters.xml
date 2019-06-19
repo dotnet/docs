@@ -9,6 +9,9 @@
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -29,6 +32,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encryptionAlgorithm" Type="System.Security.Cryptography.PbeEncryptionAlgorithm" />
@@ -55,6 +61,9 @@
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.PbeEncryptionAlgorithm</ReturnType>
       </ReturnValue>
@@ -76,6 +85,9 @@
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.HashAlgorithmName</ReturnType>
       </ReturnValue>
@@ -96,6 +108,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

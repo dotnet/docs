@@ -58,7 +58,8 @@
         <summary>Gets a <see cref="T:System.Reflection.Metadata.MetadataReader" /> from a <see cref="T:System.Reflection.PortableExecutable.PEReader" />.</summary>
         <returns>A metdata reader.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
         <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
       </Docs>
@@ -92,7 +93,8 @@
         <summary>Gets a  metadata reader with the specified metadata reading configuration from a <see cref="T:System.Reflection.PortableExecutable.PEReader" />.</summary>
         <returns>A  metadata reader with the specified metadata reading configuration.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
         <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
       </Docs>
@@ -126,9 +128,10 @@
         <param name="options">An enumeration value indicating the metadata reading configuration.</param>
         <param name="utf8Decoder">A metadata string decoder with the encoding configuration.</param>
         <summary>Gets a metadata reader with the specified metadata reading configuration and encoding configuration from a <see cref="T:System.Reflection.PortableExecutable.PEReader" />.</summary>
-        <returns>>A metadata reader with the specified metadata reading configuration and encoding configuration.</returns>
+        <returns>&gt;A metadata reader with the specified metadata reading configuration and encoding configuration.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The encoding of <paramref name="utf8Decoder" /> is not <see cref="T:System.Text.UTF8Encoding" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
         <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
@@ -163,7 +166,8 @@
         <summary>Returns a body block of a method with the specified Relative Virtual Address (RVA);</summary>
         <returns>A method block body instance.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.BadImageFormatException">The body is not found in the metadata or is invalid.</exception>
         <exception cref="T:System.InvalidOperationException">The section where the method is stored is not available.</exception>
         <exception cref="T:System.IO.IOException">IO error occurred while reading from the underlying stream.</exception>

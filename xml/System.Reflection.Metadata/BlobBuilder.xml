@@ -177,7 +177,8 @@
       <Docs>
         <param name="other">A <see cref="T:System.Reflection.Metadata.BlobBuilder" /> instance to compare with this one.</param>
         <summary>Compares the current content of this writer with another one.</summary>
-        <returns><see langword="true" /> if equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Content is not available; the builder has been linked with another one.</exception>
       </Docs>
@@ -329,7 +330,8 @@
         <param name="prefix">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="prefix" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="prefix" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -358,7 +360,8 @@
         <param name="suffix">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="suffix" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="suffix" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -416,7 +419,8 @@
         <summary>Reserves a contiguous block of bytes.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteCount" /> is negative.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -564,8 +568,10 @@
         <summary>Attempts to write a sequence of bytes to the builder. A return value indicates the number of bytes successfully written.</summary>
         <returns>The number of bytes successfully written from <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteCount" /> is negative.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -650,7 +656,8 @@
         <param name="buffer">The byte array to write.</param>
         <summary>Writes the contents of a byte array to the builder.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -679,7 +686,8 @@
         <param name="buffer">The array to write.</param>
         <summary>Writes the contents of an immutable byte array to the builder.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -710,7 +718,8 @@
         <param name="byteCount">The number of occurences of <paramref name="value" /> to write.</param>
         <summary>Writes a specified number of occurrences of a byte value to the builder.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteCount" /> is negative.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable, it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -740,8 +749,10 @@
         <param name="byteCount">The number of bytes to write.</param>
         <summary>Writes a specified number of bytes from a buffer to the builder.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteCount" /> is negative.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable, it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -774,7 +785,8 @@
         <param name="byteCount">The number of bytes to write.</param>
         <summary>Writes a specified number of bytes starting at a specified index in a byte array to the builder.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The range specified by <paramref name="start" /> and <paramref name="byteCount" /> falls outside of the bounds of <paramref name="buffer" />.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
@@ -808,7 +820,8 @@
         <param name="byteCount">The number of bytes to write.</param>
         <summary>Writes a specified number of bytes starting at a specified index of an immutable array to the builder.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The range specified by <paramref name="start" /> and <paramref name="byteCount" /> falls outside of the bounds of the <paramref name="buffer" />.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
@@ -838,7 +851,8 @@
         <param name="value">The value to write.</param>
         <summary>Implements compressed unsigned integer encoding as defined by ECMA-335-II chapter 23.2: Blobs and signatures.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> can't be represented as a compressed unsigned integer.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="value" /> can't be represented as a compressed unsigned integer.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -867,7 +881,8 @@
         <param name="value">The value to write.</param>
         <summary>Implements compressed signed integer encoding as defined by ECMA-335-II chapter 23.2: Blobs and signatures.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> can't be represented as a compressed signed integer.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="value" /> can't be represented as a compressed signed integer.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -896,7 +911,8 @@
         <param name="value">The constant value to write.</param>
         <summary>Writes a constant value (see ECMA-335 Partition II section 22.9) at the current position.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="value" /> is not of a constant type.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not of a constant type.</exception>
         <exception cref="T:System.InvalidOperationException">The builder is not writable; it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -925,7 +941,8 @@
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Content is not available, the builder has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -954,7 +971,8 @@
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Content is not available, the builder has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -983,7 +1001,8 @@
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> is default (<see cref="T:System.Reflection.Metadata.BlobWriter" />).</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is default (<see cref="T:System.Reflection.Metadata.BlobWriter" />).</exception>
         <exception cref="T:System.InvalidOperationException">Content is not available, the builder has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -1263,7 +1282,8 @@
       </Parameters>
       <Docs>
         <param name="reference">Heap offset or table row number.</param>
-        <param name="isSmall"><see langword="true" /> to encode the reference as a 16-bit integer; <see langword="false" /> to encode it as a 32-bit integer.</param>
+        <param name="isSmall">
+          <see langword="true" /> to encode the reference as a 16-bit integer; <see langword="false" /> to encode it as a 32-bit integer.</param>
         <summary>Writes a reference to a heap (heap offset) or a table (row number).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Builder is not writable, it has been linked with another one.</exception>
@@ -1546,7 +1566,8 @@
         <param name="value">To be added.</param>
         <summary>Writes a UTF16 (little-endian) encoded character array at the current position.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Builder is not writable, it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -1575,7 +1596,8 @@
         <param name="value">To be added.</param>
         <summary>Writes UTF16 (little-endian) encoded string at the current position.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Builder is not writable, it has been linked with another one.</exception>
       </Docs>
     </Member>
@@ -1602,10 +1624,12 @@
       </Parameters>
       <Docs>
         <param name="value">Constant value.</param>
-        <param name="allowUnpairedSurrogates"><see langword="true" /> to encode unpaired surrogates as specified; <see langword="false" /> to replace them with a U+FFFD character.</param>
+        <param name="allowUnpairedSurrogates">
+          <see langword="true" /> to encode unpaired surrogates as specified; <see langword="false" /> to replace them with a U+FFFD character.</param>
         <summary>Writes a UTF8 encoded string at the current position.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Builder is not writable, it has been linked with another one.</exception>
       </Docs>
     </Member>

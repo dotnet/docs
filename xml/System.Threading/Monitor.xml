@@ -449,6 +449,33 @@
           <paramref name="obj" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="LockContentionCount">
+      <MemberSignature Language="C#" Value="public static long LockContentionCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 LockContentionCount" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Monitor.LockContentionCount" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LockContentionCount As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property long LockContentionCount { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.LockContentionCount : int64" Usage="System.Threading.Monitor.LockContentionCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Pulse">
       <MemberSignature Language="C#" Value="public static void Pulse (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Pulse(object obj) cil managed" />

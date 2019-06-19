@@ -74,6 +74,60 @@
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
+    <Member MemberName="CanCreateCommandBuilder">
+      <MemberSignature Language="C#" Value="public virtual bool CanCreateCommandBuilder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateCommandBuilder" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbProviderFactory.CanCreateCommandBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanCreateCommandBuilder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateCommandBuilder { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateCommandBuilder : bool" Usage="System.Data.Common.DbProviderFactory.CanCreateCommandBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateDataAdapter">
+      <MemberSignature Language="C#" Value="public virtual bool CanCreateDataAdapter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateDataAdapter" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbProviderFactory.CanCreateDataAdapter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanCreateDataAdapter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCreateDataAdapter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanCreateDataAdapter : bool" Usage="System.Data.Common.DbProviderFactory.CanCreateDataAdapter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CanCreateDataSourceEnumerator">
       <MemberSignature Language="C#" Value="public virtual bool CanCreateDataSourceEnumerator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateDataSourceEnumerator" />

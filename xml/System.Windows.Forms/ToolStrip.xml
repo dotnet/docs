@@ -4028,8 +4028,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="deviceDpiOld">The old DPI value.</param>

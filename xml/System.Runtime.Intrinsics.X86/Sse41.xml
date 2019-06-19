@@ -18,6 +18,11 @@
     <BaseTypeName FrameworkAlternate="netcore-3.0">System.Runtime.Intrinsics.X86.Ssse3</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-3.0">
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             This class provides access to Intel SSE4.1 hardware instructions via intrinsics
@@ -3948,7 +3953,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -3977,7 +3982,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4006,7 +4011,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4035,7 +4040,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4064,7 +4069,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4097,7 +4102,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4126,7 +4131,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4155,7 +4160,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -4184,8 +4189,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4215,8 +4220,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4246,8 +4251,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4277,8 +4282,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4308,8 +4313,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4342,8 +4347,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4373,8 +4378,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4404,8 +4409,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4686,8 +4691,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4717,8 +4722,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int16&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4748,8 +4753,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int32&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4779,8 +4784,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Int64&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4810,8 +4815,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4844,8 +4849,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt16&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4875,8 +4880,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -4906,8 +4911,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>

@@ -42,7 +42,7 @@
       <Docs>
         <param name="operationName">The name of the operation.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Activity" /> class.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -50,7 +50,7 @@
 Note that <xref:System.Diagnostics.Activity> has a "builder" pattern: you call the constructor, a number of `Set*` and `Add*` APIs, and then call <xref:System.Diagnostics.Activity.Start> to build the activity. You **must** call <xref:System.Diagnostics.Activity.Start> before using the new instance.
 
  ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivityTraceFlags">
@@ -100,8 +100,9 @@ Note that <xref:System.Diagnostics.Activity> has a "builder" pattern: you call t
         <param name="key">The baggage key.</param>
         <param name="value">The baggage value.</param>
         <summary>Updates the <see cref="T:System.Diagnostics.Activity" /> to have a new baggage item with the specified key and value.</summary>
-        <returns><see langword="this" /> for convenient chaining.</returns>
-        <remarks>  
+        <returns>
+          <see langword="this" /> for convenient chaining.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -111,7 +112,7 @@ This key/value pair is included in the collection returned by the <see cref="P:S
 `Baggage` is meant for information that is needed for runtime control. For information that is useful to show up in the log with the <xref:System.Diagnostics.Activity>, use the <xref:System.Diagnostics.Activity.Tags> property.
 
  ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTag">
@@ -140,7 +141,8 @@ This key/value pair is included in the collection returned by the <see cref="P:S
         <param name="key">The tag key.</param>
         <param name="value">The tag value.</param>
         <summary>Updates the <see cref="T:System.Diagnostics.Activity" /> to have a new tag with the provided <paramref name="key" /> and <paramref name="value" />. .</summary>
-        <returns><see langword="this" /> for convenient chaining.</returns>
+        <returns>
+          <see langword="this" /> for convenient chaining.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -175,7 +177,7 @@ This key/value pair is included in the collection returned by the <see cref="P:S
       <Docs>
         <summary>Gets a collection of key/value pairs that represents information that is passed to children of this <see cref="T:System.Diagnostics.Activity" />.</summary>
         <value>An enumeration of string-string key-value pairs.</value>
-         <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -183,7 +185,7 @@ This key/value pair is included in the collection returned by the <see cref="P:S
 `Baggage` is serialized when requests leave the process (along with the ID). Typically, `Baggage` is used for fine-grained control over logging of the activity and any children.  In general, if you are not using the data at runtime, you should be using <xref:System.Diagnostics.Activity.Tags> instead.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -251,7 +253,7 @@ This key/value pair is included in the collection returned by the <see cref="P:S
       </ReturnValue>
       <Docs>
         <summary>Gets the duration of the operation.</summary>
-        <value>The delta between <see cref="P:System.Diagnostics.Activity.StartTimeUtc" /> and the end time if the <see cref="T:System.Diagnostics.Activity" /> has ended (<see cref="M:System.Diagnostics.Activity.Stop" /> or <see cref="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" /> was called), or <see cref="F:System.TimeSpan.Zero"/> if the <see cref="T:System.Diagnostics.Activity" /> has not ended and <see cref="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" /> was not called.</value>
+        <value>The delta between <see cref="P:System.Diagnostics.Activity.StartTimeUtc" /> and the end time if the <see cref="T:System.Diagnostics.Activity" /> has ended (<see cref="M:System.Diagnostics.Activity.Stop" /> or <see cref="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" /> was called), or <see cref="F:System.TimeSpan.Zero" /> if the <see cref="T:System.Diagnostics.Activity" /> has not ended and <see cref="M:System.Diagnostics.Activity.SetEndTime(System.DateTime)" /> was not called.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,7 +327,7 @@ This key/value pair is included in the collection returned by the <see cref="P:S
       <Docs>
         <summary>Gets an identifier that is specific to a particular request.</summary>
         <value>The activity ID.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -333,7 +335,7 @@ This key/value pair is included in the collection returned by the <see cref="P:S
 An ID has a hierarchical structure: `root-id.id1_id2.id3_`. The ID is generated when <xref:System.Diagnostics.Activity.Start> is called by appending a suffix to the `Activity.Parent.Id` or the <xref:System.Diagnostics.Activity.ParentId>. An <xref:System.Diagnostics.Activity> has no ID until it starts. For more information, see [Id Format](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format).
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IdFormat">
@@ -378,7 +380,7 @@ An ID has a hierarchical structure: `root-id.id1_id2.id3_`. The ID is generated 
       <Docs>
         <summary>Gets the operation name.</summary>
         <value>The name of the operation.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -386,7 +388,7 @@ An ID has a hierarchical structure: `root-id.id1_id2.id3_`. The ID is generated 
 An operation name is the *coarsest* name that is useful for grouping/filtering. The name is typically a compile-time constant. Names of Rest APIs are reasonable, but arguments (such as specific accounts) should not be in the name but rather in the tags.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -434,7 +436,7 @@ An operation name is the *coarsest* name that is useful for grouping/filtering. 
       <Docs>
         <summary>Gets the ID of this activity's parent.</summary>
         <value>The parent ID, if one exists, or <see langword="null" /> if it does not.</value>
-      <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -444,7 +446,7 @@ If the parent for this <xref:System.Diagnostics.Activity> comes from outside the
 This property value can be `null` if this is a root <see cref="T:System.Diagnostics.Activity" /> (i.e. it has no <xref:System.Diagnostics.Activity.Parent>).  See [Id Format](href="https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format) for more details.
 
 ]]></format>
-      </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentSpanId">
@@ -510,7 +512,7 @@ This property value can be `null` if this is a root <see cref="T:System.Diagnost
       <Docs>
         <summary>Gets the root ID of this <see cref="T:System.Diagnostics.Activity" />.</summary>
         <value>The root ID, or <see langword="null" /> if the current instance has either a <see cref="P:System.Diagnostics.Activity.ParentId" /> or an <see cref="P:System.Diagnostics.Activity.Id" />.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -518,7 +520,7 @@ This property value can be `null` if this is a root <see cref="T:System.Diagnost
 The root ID is a substring from the <xref:System.Diagnostics.Activity.Id> or the <xref:System.Diagnostics.Activity.ParentId>) between '|' (or the beginning) and the first `.`. Filtering by root ID allows you to find all activities involved in operation processing. For more information, see [ID Format](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format).
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEndTime">
@@ -545,7 +547,8 @@ The root ID is a substring from the <xref:System.Diagnostics.Activity.Id> or the
       <Docs>
         <param name="endTimeUtc">The UTC stop time.</param>
         <summary>Updates the <see cref="T:System.Diagnostics.Activity" /> to set its <see cref="P:System.Diagnostics.Activity.Duration" /> as the difference between <see cref="P:System.Diagnostics.Activity.StartTimeUtc" /> and the specified stop time.</summary>
-        <returns><see langword="this" /> for convenient chaining.</returns>
+        <returns>
+          <see langword="this" /> for convenient chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,8 +576,9 @@ The root ID is a substring from the <xref:System.Diagnostics.Activity.Id> or the
       <Docs>
         <param name="parentId">The ID of the parent operation.</param>
         <summary>Updates this <see cref="T:System.Diagnostics.Activity" /> to indicate that the <see cref="T:System.Diagnostics.Activity" /> with an ID of <paramref name="parentId" /> caused this <see cref="T:System.Diagnostics.Activity" />.</summary>
-        <returns><see langword="this" /> for convenient chaining.</returns>
-        <remarks>  
+        <returns>
+          <see langword="this" /> for convenient chaining.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -582,7 +586,7 @@ The root ID is a substring from the <xref:System.Diagnostics.Activity.Id> or the
 This property should only be used in 'boundary' scenarios where an <see cref="T:System.Diagnostics.Activity" /> from another process logically started this <see cref="T:System.Diagnostics.Activity" />. The `parentId` brings up the <xref:System.Diagnostics.Activity.Tags> (as well as the <xref:System.Diagnostics.Activity.ParentId> property) and can be used to reconstruct the causal tree.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParentId">
@@ -636,7 +640,8 @@ This property should only be used in 'boundary' scenarios where an <see cref="T:
       <Docs>
         <param name="startTimeUtc">The <see cref="T:System.Diagnostics.Activity" /> start time in UTC.</param>
         <summary>Sets the start time of this <see cref="T:System.Diagnostics.Activity" />.</summary>
-        <returns><see langword="this" /> for convenient chaining.</returns>
+        <returns>
+          <see langword="this" /> for convenient chaining.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -682,8 +687,9 @@ This property should only be used in 'boundary' scenarios where an <see cref="T:
       <Parameters />
       <Docs>
         <summary>Starts the activity.</summary>
-        <returns><see langword="this" /> for convenient chaining.</returns>
-        <remarks>  
+        <returns>
+          <see langword="this" /> for convenient chaining.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -697,7 +703,7 @@ Calling the `Start` method does the following:
 Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> to start the <see cref="T:System.Diagnostics.Activity" /> and write the start event.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartTimeUtc">
@@ -721,7 +727,7 @@ Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=n
       <Docs>
         <summary>Gets the time when the operation started.</summary>
         <value>The UTC time that the operation started.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -729,7 +735,7 @@ Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=n
 The `StartTimeUtc` property is typically initialized when <xref:System.Diagnostics.Activity.Start> is called, but it can be set at any time by calling <xref:System.Diagnostics.Activity.SetStartTime%2A>.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">

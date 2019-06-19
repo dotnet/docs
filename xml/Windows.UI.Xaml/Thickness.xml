@@ -123,7 +123,8 @@
       <Docs>
         <param name="obj">The object to compare.</param>
         <summary>Compares this <see cref="T:Windows.UI.Xaml.Thickness" /> structure to another <see cref="T:System.Object" /> for equality.</summary>
-        <returns><see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +149,8 @@
       <Docs>
         <param name="thickness">An instance of <see cref="T:Windows.UI.Xaml.Thickness" /> to compare for equality.</param>
         <summary>Compares this <see cref="T:Windows.UI.Xaml.Thickness" /> structure to another <see cref="T:Windows.UI.Xaml.Thickness" /> structure for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +228,8 @@
         <param name="t1">The first struct to compare.</param>
         <param name="t2">The other struct to compare.</param>
         <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.Thickness" /> structs for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +257,8 @@
         <param name="t1">The first struct to compare.</param>
         <param name="t2">The other struct to compare.</param>
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Thickness" /> structs for inequality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -171,7 +171,7 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Items are displayed without a table structure. Rendered markup consists of an <see langword="ol" /> element that contains <see langword="li" /> elements.<br/>This value is new as of ASP.NET 4 and is a valid option only for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> and <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> controls.</summary>
+        <summary>Items are displayed without a table structure. Rendered markup consists of an <see langword="ol" /> element that contains <see langword="li" /> elements.<br />This value is new as of ASP.NET 4 and is a valid option only for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> and <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> controls.</summary>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -193,7 +193,7 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Items are displayed in a table. <br/>This option causes the control to render HTML that might not conform to accessibility standards. For more information, see <see href="https://docs.microsoft.com/previous-versions/aspnet/ms228004(v%3dvs.100)">Accessibility in Visual Studio and ASP.NET</see>.</summary>
+        <summary>Items are displayed in a table. <br />This option causes the control to render HTML that might not conform to accessibility standards. For more information, see <see href="https://docs.microsoft.com/previous-versions/aspnet/ms228004(v%3dvs.100)">Accessibility in Visual Studio and ASP.NET</see>.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnorderedList">
@@ -213,7 +213,7 @@ The following example shows markup that is rendered for a <xref:System.Web.UI.We
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="ul" /> element that contains <see langword="li" /> elements.<br/>This field is new as of ASP.NET 4 and is a valid option only for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> and <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> controls.</summary>
+        <summary>Items are displayed without a table structure. Rendered markup consists of a <see langword="ul" /> element that contains <see langword="li" /> elements.<br />This field is new as of ASP.NET 4 and is a valid option only for the <see cref="T:System.Web.UI.WebControls.CheckBoxList" /> and <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> controls.</summary>
       </Docs>
     </Member>
   </Members>

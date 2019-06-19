@@ -211,10 +211,55 @@ in more data asynchronously before continuing with a new instance of the <xref:S
       <Parameters />
       <Docs>
         <summary>Reads the next JSON token value from the source as a <see cref="T:System.Boolean" />.</summary>
-        <returns><see langword="true" /> if the <see cref="P:System.Text.Json.Utf8JsonReader.TokenType" /> is <see cref="F:System.Text.Json.JsonTokenType.True" />; <see langword="false" /> if the <see cref="P:System.Text.Json.Utf8JsonReader.TokenType" /> is <see cref="F:System.Text.Json.JsonTokenType.False" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Text.Json.Utf8JsonReader.TokenType" /> is <see cref="F:System.Text.Json.JsonTokenType.True" />; <see langword="false" /> if the <see cref="P:System.Text.Json.Utf8JsonReader.TokenType" /> is <see cref="F:System.Text.Json.JsonTokenType.False" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The value of the JSON token isn't a boolean value (that is, <see cref="F:System.Text.Json.JsonTokenType.True" /> or <see cref="F:System.Text.Json.JsonTokenType.False" />).</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytesFromBase64">
+      <MemberSignature Language="C#" Value="public byte[] GetBytesFromBase64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetBytesFromBase64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonReader.GetBytesFromBase64" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBytesFromBase64 () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetBytesFromBase64();" />
+      <MemberSignature Language="F#" Value="member this.GetBytesFromBase64 : unit -&gt; byte[]" Usage="utf8JsonReader.GetBytesFromBase64 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComment">
+      <MemberSignature Language="C#" Value="public string GetComment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetComment() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonReader.GetComment" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetComment () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetComment();" />
+      <MemberSignature Language="F#" Value="member this.GetComment : unit -&gt; string" Usage="utf8JsonReader.GetComment " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -590,6 +635,27 @@ For input data within a `ReadOnlySpan<byte>`, this always returns `false`. For i
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsFinalBlock">
+      <MemberSignature Language="C#" Value="public bool IsFinalBlock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFinalBlock" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Utf8JsonReader.IsFinalBlock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFinalBlock As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFinalBlock { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFinalBlock : bool" Usage="System.Text.Json.Utf8JsonReader.IsFinalBlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Position">
       <MemberSignature Language="C#" Value="public SequencePosition Position { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition Position" />
@@ -629,7 +695,8 @@ For input data within a `ReadOnlySpan<byte>`, this always returns `false`. For i
       <Parameters />
       <Docs>
         <summary>Read the next JSON token from the input source.</summary>
-        <returns><see langword="true" /> if the token was read successfully; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the token was read successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Text.Json.JsonReaderException">An invalid JSON token was encountered.
             
@@ -641,6 +708,27 @@ The current depth exceeds the recursive limit set by the maximum depth.</excepti
 -or-
 
 The current depth exceeds the recursive limit set by the maximum depth.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip">
+      <MemberSignature Language="C#" Value="public void Skip ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Skip() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonReader.Skip" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Skip ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Skip();" />
+      <MemberSignature Language="F#" Value="member this.Skip : unit -&gt; unit" Usage="utf8JsonReader.Skip " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TextEquals">
@@ -664,7 +752,8 @@ The current depth exceeds the recursive limit set by the maximum depth.</excepti
       <Docs>
         <param name="otherUtf8Text">The UTF-8 encoded text to compare against.</param>
         <summary>Compares the UTF-8 encoded text to the unescaped JSON token value in the source and returns <see langword="true" /> if they match.</summary>
-        <returns><see langword="true" /> if the JSON token value in the source matches the UTF-8 encoded look up text; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the JSON token value in the source matches the UTF-8 encoded look up text; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -696,7 +785,8 @@ If the look up text is invalid UTF-8 text, the method will return `false` since 
       <Docs>
         <param name="otherText">The UTF-16 encoded text to compare against.</param>
         <summary>Compares the UTF-16 encoded text to the unescaped JSON token value in the source and returns true if they match.</summary>
-        <returns><see langword="true" /> if the JSON token value in the source matches the UTF-16 encoded look up text; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the JSON token value in the source matches the UTF-16 encoded look up text; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -705,6 +795,27 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
             ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The JSON text isn't a string (its type is not <see cref="F:System.Text.Json.JsonTokenType.String" /> or <see cref="F:System.Text.Json.JsonTokenType.PropertyName" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenStartIndex">
+      <MemberSignature Language="C#" Value="public long TokenStartIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 TokenStartIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.Utf8JsonReader.TokenStartIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TokenStartIndex As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long TokenStartIndex { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.TokenStartIndex : int64" Usage="System.Text.Json.Utf8JsonReader.TokenStartIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TokenType">
@@ -725,6 +836,31 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
       <Docs>
         <summary>Gets the type of the last processed JSON token in the UTF-8 encoded JSON text.</summary>
         <value>The type of the last processed JSON token.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetBytesFromBase64">
+      <MemberSignature Language="C#" Value="public bool TryGetBytesFromBase64 (out byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetBytesFromBase64([out] unsigned int8[]&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonReader.TryGetBytesFromBase64(System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetBytesFromBase64 (ByRef value As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetBytesFromBase64([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetBytesFromBase64 :  -&gt; bool" Usage="utf8JsonReader.TryGetBytesFromBase64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,7 +885,8 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.DateTime" />. </summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.DateTime" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.DateTime" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The value of the JSON token isn't a <see cref="F:System.Text.Json.JsonTokenType.String" />.</exception>
       </Docs>
@@ -775,7 +912,8 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.DateTimeOffset" />. </summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.DateTimeOffset" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.DateTimeOffset" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The value of the JSON token isn't a <see cref="F:System.Text.Json.JsonTokenType.String" />.</exception>
       </Docs>
@@ -801,7 +939,8 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.Decimal" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.Decimal" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.Decimal" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
@@ -828,7 +967,8 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.Double" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.Double" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.Double" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
@@ -855,15 +995,16 @@ If the look up text is invalid or incomplete UTF-16 text (such as unpaired surro
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.Guid" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.Guid" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.Guid" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
 This method only parses <xref:System.Guid> values with hyphens and without any surrounding decorations. 
 
          ]]></format>
-         </remarks>
-         <exception cref="T:System.InvalidOperationException">The value of the JSON token isn't a <see cref="F:System.Text.Json.JsonTokenType.String" />.</exception>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The value of the JSON token isn't a <see cref="F:System.Text.Json.JsonTokenType.String" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetInt32">
@@ -887,7 +1028,8 @@ This method only parses <xref:System.Guid> values with hyphens and without any s
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to an <see cref="T:System.Int32" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to an <see cref="T:System.Int32" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to an <see cref="T:System.Int32" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
@@ -914,7 +1056,8 @@ This method only parses <xref:System.Guid> values with hyphens and without any s
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to an <see cref="T:System.Int64" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to an <see cref="T:System.Int64" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to an <see cref="T:System.Int64" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
@@ -941,7 +1084,8 @@ This method only parses <xref:System.Guid> values with hyphens and without any s
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.Single" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to an <see cref="T:System.Single" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to an <see cref="T:System.Single" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
@@ -973,7 +1117,8 @@ This method only parses <xref:System.Guid> values with hyphens and without any s
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.UInt32" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.UInt32" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.UInt32" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
@@ -1005,10 +1150,33 @@ This method only parses <xref:System.Guid> values with hyphens and without any s
       <Docs>
         <param name="value">When this method returns, contains the parsed value.</param>
         <summary>Reads the next JSON token value from the source and parses it to a <see cref="T:System.UInt64" />.</summary>
-        <returns><see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.UInt64" /> value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the entire UTF-8 encoded token value can be successfully parsed to a <see cref="T:System.UInt64" /> value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The JSON token value isn't a <see cref="F:System.Text.Json.JsonTokenType.Number" />.</exception>
         <altmember cref="P:System.Text.Json.Utf8JsonReader.TokenType" />
+      </Docs>
+    </Member>
+    <Member MemberName="TrySkip">
+      <MemberSignature Language="C#" Value="public bool TrySkip ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySkip() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.Utf8JsonReader.TrySkip" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySkip () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySkip();" />
+      <MemberSignature Language="F#" Value="member this.TrySkip : unit -&gt; bool" Usage="utf8JsonReader.TrySkip " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueSequence">

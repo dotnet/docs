@@ -1597,6 +1597,33 @@ t.InvokeMember ("MyArray", BindingFlags.SetField, null, this, new
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsCollectible">
+      <MemberSignature Language="C#" Value="public override bool IsCollectible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCollectible" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.TypeDelegator.IsCollectible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsCollectible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCollectible { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCollectible : bool" Usage="System.Reflection.TypeDelegator.IsCollectible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsCOMObjectImpl">
       <MemberSignature Language="C#" Value="protected override bool IsCOMObjectImpl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsCOMObjectImpl() cil managed" />

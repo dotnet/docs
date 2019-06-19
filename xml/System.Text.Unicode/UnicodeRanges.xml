@@ -1130,6 +1130,27 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CyrillicExtendedC">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CyrillicExtendedC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CyrillicExtendedC" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedC" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CyrillicExtendedC As UnicodeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CyrillicExtendedC { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CyrillicExtendedC : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CyrillicExtendedC" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CyrillicSupplement">
       <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CyrillicSupplement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CyrillicSupplement" />
@@ -1452,6 +1473,27 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Georgian Unicode block (U+10A0-U+10FF).</summary>
         <value>The Georgian Unicode block (U+10A0-U+10FF).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeorgianExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GeorgianExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GeorgianExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeorgianExtended" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GeorgianExtended As UnicodeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GeorgianExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeorgianExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GeorgianExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3477,6 +3519,27 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Syriac Unicode block (U+0700-U+074F).</summary>
         <value>The Syriac Unicode block (U+0700-U+074F).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyriacSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SyriacSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SyriacSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SyriacSupplement" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SyriacSupplement As UnicodeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SyriacSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyriacSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SyriacSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

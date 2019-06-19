@@ -622,6 +622,68 @@ The following example displays <xref:System.IO.Path> field values on Windows and
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
+    <Member MemberName="EndsInDirectorySeparator">
+      <MemberSignature Language="C#" Value="public static bool EndsInDirectorySeparator (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool EndsInDirectorySeparator(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.EndsInDirectorySeparator(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndsInDirectorySeparator (path As ReadOnlySpan(Of Char)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool EndsInDirectorySeparator(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="F#" Value="static member EndsInDirectorySeparator : ReadOnlySpan&lt;char&gt; -&gt; bool" Usage="System.IO.Path.EndsInDirectorySeparator path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndsInDirectorySeparator">
+      <MemberSignature Language="C#" Value="public static bool EndsInDirectorySeparator (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool EndsInDirectorySeparator(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.EndsInDirectorySeparator(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndsInDirectorySeparator (path As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool EndsInDirectorySeparator(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member EndsInDirectorySeparator : string -&gt; bool" Usage="System.IO.Path.EndsInDirectorySeparator path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetDirectoryName">
       <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; GetDirectoryName (ReadOnlySpan&lt;char&gt; path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; GetDirectoryName(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
@@ -2047,6 +2109,43 @@ Note that rooted paths can be either absolute (that is, fully qualified) or rela
       </Docs>
     </Member>
     <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (params string[] paths);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string[] paths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.Join(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (ParamArray paths As String()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(... cli::array &lt;System::String ^&gt; ^ paths);" />
+      <MemberSignature Language="F#" Value="static member Join : string[] -&gt; string" Usage="System.IO.Path.Join paths" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paths" Type="System.String[]" Index="0" FrameworkAlternate="netcore-3.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="netcore-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="paths">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
       <MemberSignature Language="C#" Value="public static string Join (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Path.Join(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
@@ -2237,6 +2336,80 @@ The following example illustrates the difference in the paths returned by the <x
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, ReadOnlySpan&lt;char&gt; path3, ReadOnlySpan&lt;char&gt; path4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(valuetype System.ReadOnlySpan`1&lt;char&gt; path1, valuetype System.ReadOnlySpan`1&lt;char&gt; path2, valuetype System.ReadOnlySpan`1&lt;char&gt; path3, valuetype System.ReadOnlySpan`1&lt;char&gt; path4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.Join(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (path1 As ReadOnlySpan(Of Char), path2 As ReadOnlySpan(Of Char), path3 As ReadOnlySpan(Of Char), path4 As ReadOnlySpan(Of Char)) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(ReadOnlySpan&lt;char&gt; path1, ReadOnlySpan&lt;char&gt; path2, ReadOnlySpan&lt;char&gt; path3, ReadOnlySpan&lt;char&gt; path4);" />
+      <MemberSignature Language="F#" Value="static member Join : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; -&gt; string" Usage="System.IO.Path.Join (path1, path2, path3, path4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path2" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path3" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path4" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="path1">To be added.</param>
+        <param name="path2">To be added.</param>
+        <param name="path3">To be added.</param>
+        <param name="path4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (string path1, string path2, string path3, string path4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Join(string path1, string path2, string path3, string path4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.Join(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Join (path1 As String, path2 As String, path3 As String, path4 As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Join(System::String ^ path1, System::String ^ path2, System::String ^ path3, System::String ^ path4);" />
+      <MemberSignature Language="F#" Value="static member Join : string * string * string * string -&gt; string" Usage="System.IO.Path.Join (path1, path2, path3, path4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path2" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path3" Type="System.String" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="path4" Type="System.String" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="path1">To be added.</param>
+        <param name="path2">To be added.</param>
+        <param name="path3">To be added.</param>
+        <param name="path4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PathSeparator">
       <MemberSignature Language="C#" Value="public static readonly char PathSeparator;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char PathSeparator" />
@@ -2289,6 +2462,68 @@ The following example illustrates the difference in the paths returned by the <x
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEndingDirectorySeparator">
+      <MemberSignature Language="C#" Value="public static ReadOnlySpan&lt;char&gt; TrimEndingDirectorySeparator (ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlySpan`1&lt;char&gt; TrimEndingDirectorySeparator(valuetype System.ReadOnlySpan`1&lt;char&gt; path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.TrimEndingDirectorySeparator(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrimEndingDirectorySeparator (path As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ReadOnlySpan&lt;char&gt; TrimEndingDirectorySeparator(ReadOnlySpan&lt;char&gt; path);" />
+      <MemberSignature Language="F#" Value="static member TrimEndingDirectorySeparator : ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.IO.Path.TrimEndingDirectorySeparator path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEndingDirectorySeparator">
+      <MemberSignature Language="C#" Value="public static string TrimEndingDirectorySeparator (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrimEndingDirectorySeparator(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Path.TrimEndingDirectorySeparator(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrimEndingDirectorySeparator (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TrimEndingDirectorySeparator(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member TrimEndingDirectorySeparator : string -&gt; string" Usage="System.IO.Path.TrimEndingDirectorySeparator path" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryJoin">

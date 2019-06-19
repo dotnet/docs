@@ -14,6 +14,7 @@
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
     <AssemblyVersion>4.1.3.0</AssemblyVersion>
     <AssemblyVersion>4.1.4.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
@@ -71,6 +72,54 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector (ReadOnlySpan&lt;byte&gt; values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (values As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(ReadOnlySpan&lt;System::Byte&gt; values);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; : ReadOnlySpan&lt;byte&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; values" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector (ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;!T&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(System.ReadOnlySpan{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (values As ReadOnlySpan(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector(ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; : ReadOnlySpan&lt;'T (requires 'T : struct)&gt; -&gt; System.Numerics.Vector&lt;'T (requires 'T : struct)&gt;" Usage="new System.Numerics.Vector&lt;'T (requires 'T : struct)&gt; values" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="values">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Vector (Span&lt;T&gt; values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Span`1&lt;!T&gt; values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.#ctor(System.Span{`0})" />
@@ -82,6 +131,7 @@
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -113,6 +163,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -152,6 +203,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -193,6 +245,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -226,6 +279,70 @@
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.CopyTo(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Span(Of Byte))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Span&lt;System::Byte&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Span&lt;byte&gt; -&gt; unit" Usage="vector.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Span&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.Span`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.CopyTo(System.Span{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Span(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Span&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Span&lt;'T (requires 'T : struct)&gt; -&gt; unit" Usage="vector.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (T[] destination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.CopyTo(`0[])" />
@@ -242,12 +359,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -287,12 +410,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -336,6 +465,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -372,12 +502,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -416,12 +552,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -460,12 +602,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -493,12 +641,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -535,6 +689,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -567,6 +722,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -612,6 +768,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -657,6 +814,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -702,6 +860,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -747,6 +906,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -793,6 +953,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -838,6 +999,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -881,6 +1043,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -924,6 +1087,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -967,6 +1131,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1010,6 +1175,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1053,6 +1219,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1101,6 +1268,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1144,6 +1312,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1192,6 +1361,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1240,6 +1410,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1288,6 +1459,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1327,6 +1499,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1372,6 +1545,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1417,6 +1591,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1462,6 +1637,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1498,6 +1674,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1543,6 +1720,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -1586,12 +1764,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1626,12 +1810,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1672,12 +1862,18 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1700,6 +1896,72 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.TryCopyTo(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Span(Of Byte)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryCopyTo(Span&lt;System::Byte&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Span&lt;byte&gt; -&gt; bool" Usage="vector.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Span&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype System.Span`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.TryCopyTo(System.Span{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Span(Of T)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryCopyTo(Span&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Span&lt;'T (requires 'T : struct)&gt; -&gt; bool" Usage="vector.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0">
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Zero">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; Zero { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Vector`1&lt;!T&gt; Zero" />
@@ -1717,6 +1979,7 @@
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>

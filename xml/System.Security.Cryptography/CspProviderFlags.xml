@@ -39,8 +39,8 @@
   </Attributes>
   <Docs>
     <summary>Specifies flags that modify the behavior of the cryptographic service providers (CSP).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -48,7 +48,7 @@
 >  The `CreateEphemeralKey` flag provides temporary keys with more reliable cleanup. If this flag is not used, the common language runtime (CLR) generates a randomly named key when an RSA object is created. When the object is finalized or disposed of, the key is deleted. When impersonation is in effect, not explicitly calling `Dispose` can potentially create a problem. For example, if you use impersonation, create an RSA object, and do not dispose of it, the finalizer thread (which is not impersonating) can fail to delete the key, and then throws an exception. This exception is unhandled and can terminate the process. The resources allocated to the key are not recovered, resulting in a memory leak. The <xref:System.Security.Permissions.KeyContainerPermission> demand is suppressed by this flag.  
   
  ]]></format>
-        </remarks>
+    </remarks>
     <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
   </Docs>
   <Members>

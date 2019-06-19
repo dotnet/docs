@@ -238,6 +238,32 @@
         <summary>Microsoft Cluster products protocol.</summary>
       </Docs>
     </Member>
+    <Member MemberName="ControllerAreaNetwork">
+      <MemberSignature Language="C#" Value="ControllerAreaNetwork" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.ProtocolFamily ControllerAreaNetwork = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.ControllerAreaNetwork" />
+      <MemberSignature Language="VB.NET" Value="ControllerAreaNetwork" />
+      <MemberSignature Language="C++ CLI" Value="ControllerAreaNetwork" />
+      <MemberSignature Language="F#" Value="ControllerAreaNetwork = 32" Usage="System.Net.Sockets.ProtocolFamily.ControllerAreaNetwork" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.ProtocolFamily</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="DataKit">
       <MemberSignature Language="C#" Value="DataKit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.ProtocolFamily DataKit = int32(9)" />
@@ -766,6 +792,32 @@
         <summary>NetBIOS protocol.</summary>
       </Docs>
     </Member>
+    <Member MemberName="Netlink">
+      <MemberSignature Language="C#" Value="Netlink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.ProtocolFamily Netlink = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Netlink" />
+      <MemberSignature Language="VB.NET" Value="Netlink" />
+      <MemberSignature Language="C++ CLI" Value="Netlink" />
+      <MemberSignature Language="F#" Value="Netlink = 30" Usage="System.Net.Sockets.ProtocolFamily.Netlink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.ProtocolFamily</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="NetworkDesigners">
       <MemberSignature Language="C#" Value="NetworkDesigners" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.ProtocolFamily NetworkDesigners = int32(28)" />
@@ -863,6 +915,32 @@
       <MemberValue>7</MemberValue>
       <Docs>
         <summary>OSI protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Packet">
+      <MemberSignature Language="C#" Value="Packet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.ProtocolFamily Packet = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.ProtocolFamily.Packet" />
+      <MemberSignature Language="VB.NET" Value="Packet" />
+      <MemberSignature Language="C++ CLI" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 31" Usage="System.Net.Sockets.ProtocolFamily.Packet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.ProtocolFamily</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pup">

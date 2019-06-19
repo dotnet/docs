@@ -390,6 +390,65 @@
         <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
     </Member>
+    <Member MemberName="GetCustomAttributesData">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt; GetCustomAttributesData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;class System.Reflection.CustomAttributeData&gt; GetCustomAttributesData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetCustomAttributesData" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributesData () As IList(Of CustomAttributeData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Reflection::CustomAttributeData ^&gt; ^ GetCustomAttributesData();" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributesData : unit -&gt; System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt;" Usage="comAwareEventInfo.GetCustomAttributesData " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Reflection.CustomAttributeData&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOtherMethods">
+      <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo[] GetOtherMethods (bool nonPublic);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo[] GetOtherMethods(bool nonPublic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetOtherMethods(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOtherMethods (nonPublic As Boolean) As MethodInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetOtherMethods(bool nonPublic);" />
+      <MemberSignature Language="F#" Value="override this.GetOtherMethods : bool -&gt; System.Reflection.MethodInfo[]" Usage="comAwareEventInfo.GetOtherMethods nonPublic" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nonPublic" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="nonPublic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetRaiseMethod">
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo GetRaiseMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo GetRaiseMethod(bool nonPublic) cil managed" />
@@ -520,6 +579,60 @@
         <altmember cref="T:System.Object" />
         <altmember cref="T:System.Delegate" />
         <altmember cref="T:System.EventHandler" />
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataToken">
+      <MemberSignature Language="C#" Value="public override int MetadataToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MetadataToken" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAwareEventInfo.MetadataToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MetadataToken As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MetadataToken { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MetadataToken : int" Usage="System.Runtime.InteropServices.ComAwareEventInfo.MetadataToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Module">
+      <MemberSignature Language="C#" Value="public override System.Reflection.Module Module { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Module Module" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAwareEventInfo.Module" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Runtime.InteropServices.ComAwareEventInfo.Module" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Module</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">

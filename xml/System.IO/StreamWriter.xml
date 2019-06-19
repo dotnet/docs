@@ -1524,6 +1524,82 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       </Docs>
     </Member>
     <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="streamWriter.Write (format, arg0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj[] -&gt; unit" Usage="streamWriter.Write (format, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="netcore-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)" />
@@ -1606,6 +1682,82 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj * obj -&gt; unit" Usage="streamWriter.Write (format, arg0, arg1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1, object arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1, object arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj * obj * obj -&gt; unit" Usage="streamWriter.Write (format, arg0, arg1, arg2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAsync">
@@ -1903,6 +2055,158 @@ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj[] -&gt; unit" Usage="streamWriter.WriteLine (format, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="netcore-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0, arg1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1, object arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1, object arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0, arg1, arg2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

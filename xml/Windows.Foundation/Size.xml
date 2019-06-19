@@ -99,7 +99,8 @@
       <Docs>
         <param name="o">The object to compare.</param>
         <summary>Compares an object to an instance of <see cref="T:Windows.Foundation.Size" /> for equality.</summary>
-        <returns><see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.Foundation.Size" /> value and the sizes of the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.Foundation.Size" /> value and the sizes of the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +126,8 @@
       <Docs>
         <param name="value">The size to compare to this current instance of <see cref="T:Windows.Foundation.Size" />.</param>
         <summary>Compares a value to an instance of <see cref="T:Windows.Foundation.Size" /> for equality.</summary>
-        <returns><see langword="true" /> if the instances of <see cref="T:Windows.Foundation.Size" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the instances of <see cref="T:Windows.Foundation.Size" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +200,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this instance of <see cref="T:Windows.Foundation.Size" /> is <see cref="P:Windows.Foundation.Size.Empty" />.</summary>
-        <value><see langword="true" /> if this instance of size is <see cref="P:Windows.Foundation.Size.Empty" />; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this instance of size is <see cref="P:Windows.Foundation.Size.Empty" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +229,8 @@
         <param name="size1">The first instance of <see cref="T:Windows.Foundation.Size" /> to compare.</param>
         <param name="size2">The second instance of <see cref="T:Windows.Foundation.Size" /> to compare.</param>
         <summary>Compares two instances of <see cref="T:Windows.Foundation.Size" /> for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.Foundation.Size" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.Foundation.Size" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +258,8 @@
         <param name="size1">The first instance of <see cref="T:Windows.Foundation.Size" /> to compare.</param>
         <param name="size2">The second instance of <see cref="T:Windows.Foundation.Size" /> to compare.</param>
         <summary>Compares two instances of <see cref="T:Windows.Foundation.Size" /> for inequality.</summary>
-        <returns><see langword="true" /> if the instances of <see cref="T:Windows.Foundation.Size" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the instances of <see cref="T:Windows.Foundation.Size" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

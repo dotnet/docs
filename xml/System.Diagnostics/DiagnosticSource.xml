@@ -71,14 +71,15 @@
       <Docs>
         <param name="name">The name of the event being written.</param>
         <summary>Verifies if the notification event is enabled.</summary>
-        <returns><see langword="true" /> if the notification event is enabled, <see langword="false" /> otherwise.</returns>
-         <remarks>
-           <format type="text/markdown"><![CDATA[
+        <returns>
+          <see langword="true" /> if the notification event is enabled, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
 
 If there is expensive setup for the notification, you can call IsEnabled before performing this setup. Consumers should not assume that they only get notifications for which IsEnabled is true. However, it is optional for producers to call this API. The name should be the same as that passed to <see cref="M:System.Diagnostics.DiagnosticSource.Write(System.String,System.Object)" />.
 
            ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -108,14 +109,15 @@ If there is expensive setup for the notification, you can call IsEnabled before 
         <param name="arg1">An object that represents the additional context for IsEnabled. Consumers should expect to receive <see langword="null" /> which may indicate that producer called pure IsEnabled(string) to check if consumer wants to get notifications for such events at all. Based on that, producer may call IsEnabled(string, object, object) again with non-<see langword="null" /> context.</param>
         <param name="arg2">Optional. An object that represents the additional context for IsEnabled. <see langword="null" /> by default. Consumers should expect to receive <see langword="null" /> which may indicate that producer called pure IsEnabled(string) or producer passed all necessary context in <paramref name="arg1" />.</param>
         <summary>Verifies it the notification event is enabled.</summary>
-        <returns><see langword="true" /> if the notification event is enabled, <see langword="false" /> otherwise.</returns>
-         <remarks>
-           <format type="text/markdown"><![CDATA[
+        <returns>
+          <see langword="true" /> if the notification event is enabled, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
           
 If there is expensive setup for the notification, you can call this method and provide context before performing the setup.
           
            ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivityExport">
@@ -195,8 +197,8 @@ If there is expensive setup for the notification, you can call this method and p
         <summary>Starts an <see cref="T:System.Diagnostics.Activity" /> and writes a start event.
 </summary>
         <returns>The started activity for convenient chaining.</returns>
-         <remarks>
-           <format type="text/markdown"><![CDATA[
+        <remarks>
+          <format type="text/markdown"><![CDATA[
            
 The <xref:System.Diagnostics.Activity> describes the logical operation, its context, and parent relation; the current <xref:System.Diagnostics.Activity> flows through the operation processing.
 
@@ -205,7 +207,7 @@ This method starts the given <xref:System.Diagnostics.Activity>, maintains a glo
 Producers may pass additional details to the consumer in the payload.
 
            ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopActivity">
@@ -235,7 +237,7 @@ Producers may pass additional details to the consumer in the payload.
         <summary>Stops the given <see cref="T:System.Diagnostics.Activity" />, maintains the global <see cref="P:System.Diagnostics.Activity.Current" /> activity, and notifies consumers that the <see cref="T:System.Diagnostics.Activity" /> was stopped. 
             
 </summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Producers may pass additional details to the consumer in the payload.
@@ -244,7 +246,7 @@ Consumers can access <xref:System.Diagnostics.Activity.Current?displayProperty=n
 
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -276,7 +278,7 @@ Consumers can access <xref:System.Diagnostics.Activity.Current?displayProperty=n
         <param name="value">An object that represents the value being passed as a payload for the event. This is often an anonymous type which contains several sub-values.</param>
         <summary>Provides a generic way of logging complex payloads. 
 </summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Each notification is given a name that identifies it, as well as an object (typically an anonymous type) that provides arbitrary information to pass to the notification.  
@@ -288,7 +290,7 @@ Notification names should not have `.` in them because component names have dots
 Assume that listeners will use string prefixing to filter groups. Therefore, having a hierarchy of component names is a good practice.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

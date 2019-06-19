@@ -87,7 +87,8 @@
       <Docs>
         <param name="o">The <see cref="T:System.Object" /> to compare.</param>
         <summary>Determines whether the specified <see cref="T:System.Object" /> is a <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct that is identical to this <see cref="T:Windows.UI.Xaml.Media.Matrix" />.</summary>
-        <returns><see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct that is identical to this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct that is identical to this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +114,8 @@
       <Docs>
         <param name="value">The instance of <see cref="T:Windows.UI.Xaml.Media.Matrix" /> to compare to this instance.</param>
         <summary>Determines whether the specified <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct is identical to this instance.</summary>
-        <returns><see langword="true" /> if instances are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,7 +187,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct is an identity matrix.</summary>
-        <value><see langword="true" /> if the <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct is an identity matrix; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct is an identity matrix; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,7 +348,8 @@
         <param name="matrix1">The first <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct to compare.</param>
         <param name="matrix2">The second <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct to compare.</param>
         <summary>Determines whether the two specified <see cref="T:Windows.UI.Xaml.Media.Matrix" /> structs are identical.</summary>
-        <returns><see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are identical; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are identical; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,7 +377,8 @@
         <param name="matrix1">The first <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct to compare.</param>
         <param name="matrix2">The second <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct to compare.</param>
         <summary>Determines whether the two specified <see cref="T:Windows.UI.Xaml.Media.Matrix" /> structs are not identical.</summary>
-        <returns><see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are not identical; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are not identical; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -968,11 +968,16 @@
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
-      <MemberSignature Language="C#" Value="bool IList.Contains (object subItem);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object subItem) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.System#Collections#IList#Contains(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Function Contains (subItem As Object) As Boolean Implements IList.Contains" />
-      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ subItem) = System::Collections::IList::Contains;" />
+      <MemberSignature Language="C#" Value="bool IList.Contains (object item);" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object item) cil managed" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.System#Collections#IList#Contains(System.Object)" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (item As Object) As Boolean Implements IList.Contains" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ item) = System::Collections::IList::Contains;" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="C#" Value="bool IList.Contains (object subItem);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object subItem) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.System#Collections#IList#Contains(System.Object)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (subItem As Object) As Boolean Implements IList.Contains" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ subItem) = System::Collections::IList::Contains;" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -987,10 +992,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subItem" Type="System.Object" />
+        <Parameter Name="item" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="subItem" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="subItem">An object that represents the subitem to locate in the collection.</param>
+        <param name="item">To be added.</param>
         <summary>Determines whether the specified subitem is located in the collection.</summary>
         <returns>
           <see langword="true" /> if the subitem is contained in the collection; otherwise, <see langword="false" />.</returns>

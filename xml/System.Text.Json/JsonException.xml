@@ -1,0 +1,190 @@
+﻿<Type Name="JsonException" FullName="System.Text.Json.JsonException">
+  <TypeSignature Language="C#" Value="public class JsonException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JsonException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonException" />
+  <TypeSignature Language="VB.NET" Value="Public Class JsonException&#xA;Inherits Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonException : Exception" />
+  <TypeSignature Language="F#" Value="type JsonException = class&#xA;    inherit Exception" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JsonException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; JsonException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Text.Json.JsonException" Usage="new System.Text.Json.JsonException (info, context)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonException (string message, string path, Nullable&lt;long&gt; lineNumber, Nullable&lt;long&gt; bytePositionInLine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string path, valuetype System.Nullable`1&lt;int64&gt; lineNumber, valuetype System.Nullable`1&lt;int64&gt; bytePositionInLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, path As String, lineNumber As Nullable(Of Long), bytePositionInLine As Nullable(Of Long))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonException(System::String ^ message, System::String ^ path, Nullable&lt;long&gt; lineNumber, Nullable&lt;long&gt; bytePositionInLine);" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonException : string * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; -&gt; System.Text.Json.JsonException" Usage="new System.Text.Json.JsonException (message, path, lineNumber, bytePositionInLine)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="lineNumber" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="bytePositionInLine" Type="System.Nullable&lt;System.Int64&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="bytePositionInLine">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonException (string message, string path, Nullable&lt;long&gt; lineNumber, Nullable&lt;long&gt; bytePositionInLine, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string path, valuetype System.Nullable`1&lt;int64&gt; lineNumber, valuetype System.Nullable`1&lt;int64&gt; bytePositionInLine, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonException.#ctor(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, path As String, lineNumber As Nullable(Of Long), bytePositionInLine As Nullable(Of Long), innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonException(System::String ^ message, System::String ^ path, Nullable&lt;long&gt; lineNumber, Nullable&lt;long&gt; bytePositionInLine, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonException : string * string * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Exception -&gt; System.Text.Json.JsonException" Usage="new System.Text.Json.JsonException (message, path, lineNumber, bytePositionInLine, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="lineNumber" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="bytePositionInLine" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="path">To be added.</param>
+        <param name="lineNumber">To be added.</param>
+        <param name="bytePositionInLine">To be added.</param>
+        <param name="innerException">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytePositionInLine">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; BytePositionInLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; BytePositionInLine" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonException.BytePositionInLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BytePositionInLine As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; BytePositionInLine { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.BytePositionInLine : Nullable&lt;int64&gt;" Usage="System.Text.Json.JsonException.BytePositionInLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="jsonException.GetObjectData (info, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineNumber">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; LineNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; LineNumber" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonException.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Nullable(Of Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; LineNumber { Nullable&lt;long&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : Nullable&lt;int64&gt;" Usage="System.Text.Json.JsonException.LineNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonException.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Text.Json.JsonException.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

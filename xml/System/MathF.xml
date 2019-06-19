@@ -873,13 +873,7 @@ Remainder = (MathF.Abs(dividend) - (MathF.Abs(divisor) *
   
  </description></item><item><term> Zero  
   
- </term><description> <see cref="F:System.Int32.MinValue" />
-  
- </description></item><item><term> Equal to <see cref="F:System.Single.NaN" /> or <see cref="F:System.Single.PositiveInfinity" /> or <see cref="F:System.Single.NegativeInfinity" />
-  
- </term><description> <see cref="F:System.Int32.MaxValue" />
-  
- </description></item></list></returns>
+ </term><description><see cref="F:System.Int32.MinValue" /></description></item><item><term> Equal to <see cref="F:System.Single.NaN" /> or <see cref="F:System.Single.PositiveInfinity" /> or <see cref="F:System.Single.NegativeInfinity" /></term><description><see cref="F:System.Int32.MaxValue" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -967,7 +961,7 @@ Remainder = (MathF.Abs(dividend) - (MathF.Abs(divisor) *
       </Parameters>
       <Docs>
         <param name="x">The number whose logarithm is to be found.</param>
-        <param name="newBase">The base of the logarithm.</param>
+        <param name="y">To be added.</param>
         <summary>Returns the logarithm of a specified number in a specified base.</summary>
         <returns>One of the values in the following table. (+Infinity denotes <see cref="F:System.Single.PositiveInfinity" />, -Infinity denotes <see cref="F:System.Single.NegativeInfinity" />, and NaN denotes <see cref="F:System.Single.NaN" />.)  
   
@@ -1417,8 +1411,7 @@ If the value of the `x` argument is <xref:System.Single.NaN?displayProperty=name
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.MathF.Round(System.Single)" /> method may not appear to round midpoint values to the nearest even integer.</para>  
-  
+          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.MathF.Round(System.Single)" /> method may not appear to round midpoint values to the nearest even integer.</para>
         </block>
         <altmember cref="M:System.MathF.Ceiling(System.Single)" />
         <altmember cref="M:System.MathF.Floor(System.Single)" />

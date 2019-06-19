@@ -275,7 +275,7 @@ For more information, see [AssemblyLoadContext.CurrentContextualReflectionContex
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" /> to <see langword="this" /> <see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
+        <summary>Sets <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" /> to <see langword="this" /><see cref="T:System.Runtime.Loader.AssemblyLoadContext" />.</summary>
         <returns>An object to restore the previous value of <see cref="P:System.Runtime.Loader.AssemblyLoadContext.CurrentContextualReflectionContext" />. It is intended to be used as an <see cref="T:System.IDisposable" /> in a <see langword="using" /> block.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[

@@ -172,6 +172,134 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="raise_WritingCancelled">
+      <MemberSignature Language="C#" Value="public virtual void raise_WritingCancelled (object sender, System.Windows.Documents.Serialization.WritingCancelledEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname newslot virtual instance void raise_WritingCancelled(object sender, class System.Windows.Documents.Serialization.WritingCancelledEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.raise_WritingCancelled(System.Object,System.Windows.Documents.Serialization.WritingCancelledEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub raise_WritingCancelled (sender As Object, args As WritingCancelledEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void raise_WritingCancelled(System::Object ^ sender, System::Windows::Documents::Serialization::WritingCancelledEventArgs ^ args);" />
+      <MemberSignature Language="F#" Value="abstract member raise_WritingCancelled : obj * System.Windows.Documents.Serialization.WritingCancelledEventArgs -&gt; unit&#xA;override this.raise_WritingCancelled : obj * System.Windows.Documents.Serialization.WritingCancelledEventArgs -&gt; unit" Usage="xpsDocumentWriter.raise_WritingCancelled (sender, args)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="args" Type="System.Windows.Documents.Serialization.WritingCancelledEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="raise_WritingCompleted">
+      <MemberSignature Language="C#" Value="public virtual void raise_WritingCompleted (object sender, System.Windows.Documents.Serialization.WritingCompletedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname newslot virtual instance void raise_WritingCompleted(object sender, class System.Windows.Documents.Serialization.WritingCompletedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.raise_WritingCompleted(System.Object,System.Windows.Documents.Serialization.WritingCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub raise_WritingCompleted (sender As Object, e As WritingCompletedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void raise_WritingCompleted(System::Object ^ sender, System::Windows::Documents::Serialization::WritingCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member raise_WritingCompleted : obj * System.Windows.Documents.Serialization.WritingCompletedEventArgs -&gt; unit&#xA;override this.raise_WritingCompleted : obj * System.Windows.Documents.Serialization.WritingCompletedEventArgs -&gt; unit" Usage="xpsDocumentWriter.raise_WritingCompleted (sender, e)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Windows.Documents.Serialization.WritingCompletedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="raise_WritingPrintTicketRequired">
+      <MemberSignature Language="C#" Value="public virtual void raise_WritingPrintTicketRequired (object sender, System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname newslot virtual instance void raise_WritingPrintTicketRequired(object sender, class System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.raise_WritingPrintTicketRequired(System.Object,System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub raise_WritingPrintTicketRequired (sender As Object, e As WritingPrintTicketRequiredEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void raise_WritingPrintTicketRequired(System::Object ^ sender, System::Windows::Documents::Serialization::WritingPrintTicketRequiredEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member raise_WritingPrintTicketRequired : obj * System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs -&gt; unit&#xA;override this.raise_WritingPrintTicketRequired : obj * System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs -&gt; unit" Usage="xpsDocumentWriter.raise_WritingPrintTicketRequired (sender, e)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="raise_WritingProgressChanged">
+      <MemberSignature Language="C#" Value="public virtual void raise_WritingProgressChanged (object sender, System.Windows.Documents.Serialization.WritingProgressChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname newslot virtual instance void raise_WritingProgressChanged(object sender, class System.Windows.Documents.Serialization.WritingProgressChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.XpsDocumentWriter.raise_WritingProgressChanged(System.Object,System.Windows.Documents.Serialization.WritingProgressChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub raise_WritingProgressChanged (sender As Object, e As WritingProgressChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void raise_WritingProgressChanged(System::Object ^ sender, System::Windows::Documents::Serialization::WritingProgressChangedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member raise_WritingProgressChanged : obj * System.Windows.Documents.Serialization.WritingProgressChangedEventArgs -&gt; unit&#xA;override this.raise_WritingProgressChanged : obj * System.Windows.Documents.Serialization.WritingProgressChangedEventArgs -&gt; unit" Usage="xpsDocumentWriter.raise_WritingProgressChanged (sender, e)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (string documentPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string documentPath) cil managed" />

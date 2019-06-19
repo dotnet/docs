@@ -1,0 +1,224 @@
+﻿<Type Name="JsonEncodedText" FullName="System.Text.Json.JsonEncodedText">
+  <TypeSignature Language="C#" Value="public struct JsonEncodedText : IEquatable&lt;System.Text.Json.JsonEncodedText&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit JsonEncodedText extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Text.Json.JsonEncodedText&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Json.JsonEncodedText" />
+  <TypeSignature Language="VB.NET" Value="Public Structure JsonEncodedText&#xA;Implements IEquatable(Of JsonEncodedText)" />
+  <TypeSignature Language="C++ CLI" Value="public value class JsonEncodedText : IEquatable&lt;System::Text::Json::JsonEncodedText&gt;" />
+  <TypeSignature Language="F#" Value="type JsonEncodedText = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Json</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Text.Json.JsonEncodedText&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonEncodedText Encode (ReadOnlySpan&lt;byte&gt; utf8Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Json.JsonEncodedText Encode(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; utf8Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (utf8Value As ReadOnlySpan(Of Byte)) As JsonEncodedText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Json::JsonEncodedText Encode(ReadOnlySpan&lt;System::Byte&gt; utf8Value);" />
+      <MemberSignature Language="F#" Value="static member Encode : ReadOnlySpan&lt;byte&gt; -&gt; System.Text.Json.JsonEncodedText" Usage="System.Text.Json.JsonEncodedText.Encode utf8Value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonEncodedText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utf8Value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="utf8Value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonEncodedText Encode (ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Json.JsonEncodedText Encode(valuetype System.ReadOnlySpan`1&lt;char&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.Encode(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (value As ReadOnlySpan(Of Char)) As JsonEncodedText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Json::JsonEncodedText Encode(ReadOnlySpan&lt;char&gt; value);" />
+      <MemberSignature Language="F#" Value="static member Encode : ReadOnlySpan&lt;char&gt; -&gt; System.Text.Json.JsonEncodedText" Usage="System.Text.Json.JsonEncodedText.Encode value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonEncodedText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public static System.Text.Json.JsonEncodedText Encode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Text.Json.JsonEncodedText Encode(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.Encode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encode (value As String) As JsonEncodedText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Json::JsonEncodedText Encode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Encode : string -&gt; System.Text.Json.JsonEncodedText" Usage="System.Text.Json.JsonEncodedText.Encode value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonEncodedText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedUtf8Bytes">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;byte&gt; EncodedUtf8Bytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; EncodedUtf8Bytes" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonEncodedText.EncodedUtf8Bytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EncodedUtf8Bytes As ReadOnlySpan(Of Byte)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;System::Byte&gt; EncodedUtf8Bytes { ReadOnlySpan&lt;System::Byte&gt; get(); };" />
+      <MemberSignature Language="F#" Value="member this.EncodedUtf8Bytes : ReadOnlySpan&lt;byte&gt;" Usage="System.Text.Json.JsonEncodedText.EncodedUtf8Bytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="jsonEncodedText.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Text.Json.JsonEncodedText other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Text.Json.JsonEncodedText other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.Equals(System.Text.Json.JsonEncodedText)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As JsonEncodedText) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Text::Json::JsonEncodedText other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Text.Json.JsonEncodedText -&gt; bool" Usage="jsonEncodedText.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Text.Json.JsonEncodedText" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="jsonEncodedText.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonEncodedText.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="jsonEncodedText.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

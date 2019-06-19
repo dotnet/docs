@@ -99,7 +99,8 @@
       <Docs>
         <param name="o">The object to compare to the current <see cref="T:Windows.UI.Color" /> struct.</param>
         <summary>Tests whether the specified object is a <see cref="T:Windows.UI.Color" /> struct and is equivalent to the current color. </summary>
-        <returns><see langword="true" /> if the specified object is a <see cref="T:Windows.UI.Color" /> struct and is identical to the current <see cref="T:Windows.UI.Color" /> struct; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the specified object is a <see cref="T:Windows.UI.Color" /> struct and is identical to the current <see cref="T:Windows.UI.Color" /> struct; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +125,8 @@
       <Docs>
         <param name="color">The <see cref="T:Windows.UI.Color" /> struct to compare to the current <see cref="T:Windows.UI.Color" /> struct.</param>
         <summary>Tests whether the specified <see cref="T:Windows.UI.Color" /> struct is identical to the current color.</summary>
-        <returns><see langword="true" /> if the specified <see cref="T:Windows.UI.Color" /> struct is identical to the current <see cref="T:Windows.UI.Color" /> struct; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:Windows.UI.Color" /> struct is identical to the current <see cref="T:Windows.UI.Color" /> struct; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,7 +236,8 @@
         <param name="color1">The first <see cref="T:Windows.UI.Color" /> struct to compare.</param>
         <param name="color2">The second <see cref="T:Windows.UI.Color" /> struct to compare.</param>
         <summary>Tests whether two <see cref="T:Windows.UI.Color" /> structs are identical. </summary>
-        <returns><see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are exactly identical; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are exactly identical; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,7 +265,8 @@
         <param name="color1">The first <see cref="T:Windows.UI.Color" /> struct to compare.</param>
         <param name="color2">The second <see cref="T:Windows.UI.Color" /> struct to compare.</param>
         <summary>Tests whether two <see cref="T:Windows.UI.Color" /> structs are not identical. </summary>
-        <returns><see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

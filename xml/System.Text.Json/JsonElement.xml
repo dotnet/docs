@@ -153,6 +153,28 @@ This method does not parse the contents of a JSON string value.
         <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
+    <Member MemberName="GetBytesFromBase64">
+      <MemberSignature Language="C#" Value="public byte[] GetBytesFromBase64 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetBytesFromBase64() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.GetBytesFromBase64" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBytesFromBase64 () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetBytesFromBase64();" />
+      <MemberSignature Language="F#" Value="member this.GetBytesFromBase64 : unit -&gt; byte[]" Usage="jsonElement.GetBytesFromBase64 " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetDateTime">
       <MemberSignature Language="C#" Value="public DateTime GetDateTime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDateTime() cil managed" />
@@ -471,7 +493,8 @@ If a property is defined multiple times for the same object, the method matches 
         </remarks>
         <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">No property was found with the requested name.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="propertyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -657,7 +680,8 @@ This method does not parse the contents of a JSON string value.
         <value>To be added.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Array" />.</exception>
-        <exception cref="T:System.IndexOutOfRangeException"><paramref name="index" /> is not in the range [0, <see cref="M:System.Text.Json.JsonElement.GetArrayLength" />()).</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is not in the range [0, <see cref="M:System.Text.Json.JsonElement.GetArrayLength" />()).</exception>
         <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -698,6 +722,31 @@ For other types, the value of <xref:System.Text.Json.JsonElement.GetRawText> is 
         <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
+    <Member MemberName="TryGetBytesFromBase64">
+      <MemberSignature Language="C#" Value="public bool TryGetBytesFromBase64 (out byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetBytesFromBase64([out] unsigned int8[]&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.TryGetBytesFromBase64(System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetBytesFromBase64 (ByRef value As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetBytesFromBase64([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % value);" />
+      <MemberSignature Language="F#" Value="member this.TryGetBytesFromBase64 :  -&gt; bool" Usage="jsonElement.TryGetBytesFromBase64 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TryGetDateTime">
       <MemberSignature Language="C#" Value="public bool TryGetDateTime (out DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetDateTime([out] valuetype System.DateTime&amp; value) cil managed" />
@@ -719,7 +768,8 @@ For other types, the value of <xref:System.Text.Json.JsonElement.GetRawText> is 
       <Docs>
         <param name="value">When this method returns, contains the date and time value equivalent to the current JSON string.</param>
         <summary>Attempts to represent the current JSON string as a <see cref="T:System.DateTime" />.</summary>
-        <returns><see langword="true" /> if the string can be represented as a <see cref="T:System.DateTime" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the string can be represented as a <see cref="T:System.DateTime" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -752,7 +802,8 @@ This method does not create a DateTime representation of values other than JSON 
       <Docs>
         <param name="value">When this method returns, contains the date and time equivalent to the current JSON string.</param>
         <summary>Attempts to represent the current JSON string as a <see cref="T:System.DateTimeOffset" />.</summary>
-        <returns><see langword="true" /> if the string can be represented as a <see cref="T:System.DateTimeOffset" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the string can be represented as a <see cref="T:System.DateTimeOffset" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -785,7 +836,8 @@ This method does not create a DateTimeOffset representation of values other than
       <Docs>
         <param name="value">When this method returns, contains the decimal equivalent of the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as a <see cref="T:System.Decimal" />.</summary>
-        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.Decimal" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as a <see cref="T:System.Decimal" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -818,7 +870,8 @@ This method does not parse the contents of a JSON string value.
       <Docs>
         <param name="value">When this method returns, contains a double-precision floating point value equivalent to the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as a <see cref="T:System.Double" />.</summary>
-        <returns> <see langword="true" /> if the number can be represented as a <see cref="T:System.Double" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as a <see cref="T:System.Double" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -853,7 +906,8 @@ On .NET Core, this method does not return `false` for values larger than <xref:S
       <Docs>
         <param name="value">When this method returns, contains the GUID equivalent to the current JSON string.</param>
         <summary>Attempts to represent the current JSON string as a <see cref="T:System.Guid" />.</summary>
-        <returns><see langword="true" /> if the string can be represented as a <see cref="T:System.Guid" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the string can be represented as a <see cref="T:System.Guid" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -886,7 +940,8 @@ This method does not create a Guid representation of values other than JSON stri
       <Docs>
         <param name="value">When this method returns, contains the 32-biut integer value equivalent to the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as an <see cref="T:System.Int32" />.</summary>
-        <returns><see langword="true" /> if the number can be represented as an <see cref="T:System.Int32" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as an <see cref="T:System.Int32" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -919,7 +974,8 @@ This method does not parse the contents of a JSON string value.
       <Docs>
         <param name="value">When this method returns, contains the 64-bit integer value equivalent to the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as a <see cref="T:System.Int64" />.</summary>
-        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.Int64" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as a <see cref="T:System.Int64" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -954,7 +1010,8 @@ This method does not parse the contents of a JSON string value.
         <param name="utf8PropertyName">The UTF-8 (with no Byte-Order-Mark (BOM)) representation of the name of the property to return.</param>
         <param name="value">Receives the value of the located property.</param>
         <summary>Looks for a property named <paramref name="utf8PropertyName" /> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, the method assigns its value to the <paramref name="value" /> argument.</summary>
-        <returns> <see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -991,7 +1048,8 @@ If a property is defined multiple times for the same object, the method matches 
         <param name="propertyName">The name of the property to find.</param>
         <param name="value">When this method returns, contains the value of the specified property.</param>
         <summary>Looks for a property named <paramref name="propertyName" /> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, the method assigns its value to the <paramref name="value" /> argument.</summary>
-        <returns><see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -1028,7 +1086,8 @@ If a property is defined multiple times for the same object, the method matches 
         <param name="propertyName">The name of the property to find.</param>
         <param name="value">When this method returns, contains the value of the specified property.</param>
         <summary>Looks for a property named <paramref name="propertyName" /> in the current object, returning a value that indicates whether or not such a property exists. When the property exists, its value is assigned to the <paramref name="value" /> argument.</summary>
-        <returns><see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the property was found, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -1039,7 +1098,8 @@ If a property is defined multiple times for the same object, the method matches 
                ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is not <see cref="F:System.Text.Json.JsonValueType.Object" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="propertyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -1064,7 +1124,8 @@ If a property is defined multiple times for the same object, the method matches 
       <Docs>
         <param name="value">When this method returns, contains the single-precision floating point value equivalent to the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as a <see cref="T:System.Single" />.</summary>
-        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.Single" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as a <see cref="T:System.Single" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -1104,7 +1165,8 @@ On .NET Core, this method does not return `false` for values larger than <xref:S
       <Docs>
         <param name="value">When this method returns, contains unsigned 32-bit integer value equivalent to the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as a <see cref="T:System.UInt32" />.</summary>
-        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.UInt32" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as a <see cref="T:System.UInt32" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -1142,7 +1204,8 @@ This method does not parse the contents of a JSON string value.
       <Docs>
         <param name="value">When this method returns, contains unsigned 64-bit integer value equivalent to the current JSON number.</param>
         <summary>Attempts to represent the current JSON number as a <see cref="T:System.UInt64" />.</summary>
-        <returns><see langword="true" /> if the number can be represented as a <see cref="T:System.UInt64" />, <see langword="false" /> otherwise.</returns>
+        <returns>
+          <see langword="true" /> if the number can be represented as a <see cref="T:System.UInt64" />, <see langword="false" /> otherwise.</returns>
         <remarks>
           <format><![CDATA[
           
@@ -1230,6 +1293,32 @@ This method does not parse the contents of a JSON string value.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This value's <see cref="P:System.Text.Json.JsonElement.Type" /> is <see cref="F:System.Text.Json.JsonValueType.Undefined" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The parent <see cref="T:System.Text.Json.JsonDocument" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsProperty">
+      <MemberSignature Language="C#" Value="public void WriteAsProperty (string propertyName, System.Text.Json.Utf8JsonWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsProperty(string propertyName, class System.Text.Json.Utf8JsonWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonElement.WriteAsProperty(System.String,System.Text.Json.Utf8JsonWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteAsProperty (propertyName As String, writer As Utf8JsonWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteAsProperty(System::String ^ propertyName, System::Text::Json::Utf8JsonWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.WriteAsProperty : string * System.Text.Json.Utf8JsonWriter -&gt; unit" Usage="jsonElement.WriteAsProperty (propertyName, writer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="writer" Type="System.Text.Json.Utf8JsonWriter" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="writer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsValue">

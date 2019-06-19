@@ -11,6 +11,10 @@
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+    <AssemblyVersion>10.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -59,6 +63,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -130,6 +138,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -177,6 +189,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -235,6 +251,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -273,6 +293,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -325,6 +349,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -376,30 +404,26 @@
       </Docs>
     </Member>
     <Member MemberName="Dir">
-      <MemberSignature Language="C#" Value="public static string Dir (string Pathname, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Dir(string Pathname, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Function Dir (Pathname As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Function Dir (PathName As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-2.0" />
-      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dir (PathName As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" />
+      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Pathname" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
         <Parameter Name="PathName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" Index="1" />
+        <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="PathName">Optional. A string expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
@@ -412,16 +436,11 @@
   
 ## Remarks  
  The `Dir` function supports the use of multiple-character (`*`) and single-character (`?`) wildcards to specify multiple files.  
-  
  `VbVolume` returns the volume label for the drive instead of a specific file name.  
-  
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function with no parameters.  
-  
 > [!IMPORTANT]
 >  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
-  
  The `Attributes` argument enumeration values are as follows:  
-  
 |Value|Constant|Description|  
 |-|-|-|  
 |`Normal`|`vbnormal`|Default. Specifies files that have no attributes.|  
@@ -432,17 +451,11 @@
 |`Directory`|`vbDirectory`|Specifies directories or folders, in addition to files that have no attributes.|  
 |`Archive`|`vbArchive`|File has changed since last backup.|  
 |`Alias`|`vbAlias`|File has a different name.|  
-  
 > [!NOTE]
 >  These enumerations are specified by the Visual Basic language and can be used anywhere in your code in place of the actual values.  
-  
-   
-  
 ## Examples  
  This example uses the `Dir` function to check if certain files and directories exist.  
-  
  [!code-vb[VbVbalrCatRef#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#3)]  
-  
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
@@ -463,6 +476,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -514,6 +531,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenMode</ReturnType>
@@ -577,13 +598,17 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileNumbers" Type="System.Int32[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netframework-1.1">
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -635,6 +660,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -691,6 +720,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
@@ -743,6 +776,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -831,6 +868,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -917,6 +958,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1005,6 +1050,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1091,6 +1140,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1179,6 +1232,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1265,6 +1322,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1353,6 +1414,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1439,6 +1504,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1527,6 +1596,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1614,6 +1687,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1700,6 +1777,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1789,6 +1870,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1881,6 +1966,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1968,6 +2057,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -2016,6 +2109,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2109,6 +2206,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2206,6 +2307,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2301,6 +2406,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2398,6 +2507,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2493,6 +2606,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2590,6 +2707,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2685,6 +2806,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2782,6 +2907,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2877,6 +3006,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2974,6 +3107,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3070,6 +3207,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3159,6 +3300,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Object, Value As Object, Optional RecordNumber As Object = -1)" />
       <MemberSignature Language="F#" Value="static member FilePut : obj * obj * obj -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FilePut(System::Object ^ FileNumber, System::Object ^ Value, System::Object ^ RecordNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3166,8 +3308,12 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Obsolete("This member has been deprecated. Please use FilePutObject to write Object types, or coerce FileNumber and RecordNumber to Integer for writing non-Object types. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -3270,6 +3416,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3367,6 +3517,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3468,6 +3622,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3544,6 +3702,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3587,6 +3749,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -3628,6 +3794,10 @@
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
@@ -3694,6 +3864,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3770,6 +3944,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3844,6 +4022,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3920,6 +4102,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3994,6 +4180,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4070,6 +4260,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4144,6 +4338,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4220,6 +4418,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4294,6 +4496,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4370,6 +4576,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4444,6 +4654,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4520,6 +4734,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4595,6 +4813,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4655,6 +4877,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4702,6 +4928,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -4762,6 +4992,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -4828,6 +5062,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4877,6 +5115,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4929,6 +5171,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4984,6 +5230,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -5032,6 +5282,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5083,6 +5337,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5090,7 +5348,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="FileNumber" Type="System.Int32" />
         <Parameter Name="Output" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netframework-1.1">
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -5164,6 +5422,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5171,7 +5433,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="FileNumber" Type="System.Int32" />
         <Parameter Name="Output" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netframework-1.1">
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -5245,6 +5507,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5301,6 +5567,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5340,6 +5610,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5400,6 +5674,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -5470,6 +5748,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5542,6 +5824,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5607,6 +5893,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.SpcInfo</ReturnType>
       </ReturnValue>
@@ -5670,6 +5960,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TabInfo</ReturnType>
       </ReturnValue>
@@ -5724,6 +6018,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TabInfo</ReturnType>
@@ -5792,6 +6090,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5841,6 +6143,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5893,6 +6199,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5948,6 +6258,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5955,7 +6269,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="FileNumber" Type="System.Int32" />
         <Parameter Name="Output" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netframework-1.1">
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -6029,6 +6343,10 @@ Result = GetAttr(FName) And vbArchive
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -6036,7 +6354,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="FileNumber" Type="System.Int32" />
         <Parameter Name="Output" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netframework-1.1">
+            <Attribute FrameworkAlternate="netcore-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

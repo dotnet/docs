@@ -344,6 +344,30 @@ public class GoodController : ApiController
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefaultProxy">
+      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy DefaultProxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Net.IWebProxy DefaultProxy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClient.DefaultProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultProxy As IWebProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ DefaultProxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProxy : System.Net.IWebProxy with get, set" Usage="System.Net.Http.HttpClient.DefaultProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefaultRequestHeaders">
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpRequestHeaders DefaultRequestHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpRequestHeaders DefaultRequestHeaders" />
@@ -379,6 +403,30 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRequestVersion">
+      <MemberSignature Language="C#" Value="public Version DefaultRequestVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version DefaultRequestVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClient.DefaultRequestVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRequestVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ DefaultRequestVersion { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultRequestVersion : Version with get, set" Usage="System.Net.Http.HttpClient.DefaultRequestVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteAsync">

@@ -53,8 +53,10 @@
         <param name="length">Length in bytes of the memory block.</param>
         <summary>Creates a reader of the specified memory block.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" /> and <paramref name="length" /> is greater than zero.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="length" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" /> and <paramref name="length" /> is greater than zero.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is negative.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current platform is not little-endian.</exception>
       </Docs>
     </Member>
@@ -296,7 +298,8 @@
         <summary>Reads bytes starting at the current position.</summary>
         <returns>The byte array.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytes">
@@ -328,7 +331,8 @@
         <param name="bufferOffset">The offset in the destination buffer where the bytes read will be written.</param>
         <summary>Reads bytes starting at the current position and writes them to the specified buffer starting at the specified offset.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadChar">
@@ -442,7 +446,8 @@
         <returns>A boxed constant value. To avoid allocating the object use Read* methods directly.</returns>
         <remarks>Constants of type <see cref="F:System.Reflection.Metadata.ConstantTypeCode.String" /> are encoded as UTF16 strings, use <see cref="M:System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)" /> to read them.</remarks>
         <exception cref="T:System.BadImageFormatException">Error while reading from the blob.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="typeCode" /> is not a valid <see cref="T:System.Reflection.Metadata.ConstantTypeCode" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="typeCode" /> is not a valid <see cref="T:System.Reflection.Metadata.ConstantTypeCode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadDateTime">
@@ -682,7 +687,8 @@
       <Parameters />
       <Docs>
         <summary>Reads a type code encoded in a serialized custom attribute value.</summary>
-        <returns><see cref="F:System.Reflection.Metadata.SerializationTypeCode.Invalid" /> if the encoding is invalid.</returns>
+        <returns>
+          <see cref="F:System.Reflection.Metadata.SerializationTypeCode.Invalid" /> if the encoding is invalid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -931,7 +937,8 @@
         <summary>Reads a UTF16 (little-endian) encoded string starting at the current position.</summary>
         <returns>The string.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadUTF8">
@@ -962,7 +969,8 @@
         <summary>Reads a UTF8 encoded string starting at the current position.</summary>
         <returns>The string.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemainingBytes">
@@ -1114,7 +1122,8 @@
       <Docs>
         <param name="value">The value of the compressed integer that was read.</param>
         <summary>Reads an unsigned compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
-        <returns><see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
+        <returns>
+          <see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1144,7 +1153,8 @@
       <Docs>
         <param name="value">The value of the compressed integer that was read.</param>
         <summary>Reads a signed compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
-        <returns><see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
+        <returns>
+          <see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

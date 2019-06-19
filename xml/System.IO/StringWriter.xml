@@ -995,6 +995,39 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (System.Text.StringBuilder value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.Text.StringBuilder value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Write(System.Text.StringBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (value As StringBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Text::StringBuilder ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Write : System.Text.StringBuilder -&gt; unit" Usage="stringWriter.Write value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.StringBuilder" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.Write(System.Char[],System.Int32,System.Int32)" />
@@ -1248,6 +1281,40 @@
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (System.Text.StringBuilder value, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(class System.Text.StringBuilder value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteAsync(System.Text.StringBuilder,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : System.Text.StringBuilder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteAsync (value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.StringBuilder" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
@@ -1345,6 +1412,39 @@
       </Parameters>
       <Docs>
         <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (System.Text.StringBuilder value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(class System.Text.StringBuilder value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLine(System.Text.StringBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (value As StringBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Text::StringBuilder ^ value);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : System.Text.StringBuilder -&gt; unit" Usage="stringWriter.WriteLine value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.StringBuilder" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1517,6 +1617,40 @@
       </Parameters>
       <Docs>
         <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteLineAsync (System.Text.StringBuilder value, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteLineAsync(class System.Text.StringBuilder value, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringWriter.WriteLineAsync(System.Text.StringBuilder,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteLineAsync : System.Text.StringBuilder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stringWriter.WriteLineAsync (value, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Text.StringBuilder" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
         <param name="cancellationToken">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

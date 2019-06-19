@@ -75,7 +75,8 @@
       <Docs>
         <param name="o">The <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> instance to compare.</param>
         <summary>Compares the specified instance and the current instance of <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> for value equality.</summary>
-        <returns><see langword="true" /> if <paramref name="o" /> and this instance of <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> have the same values.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> and this instance of <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> have the same values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +176,8 @@
         <param name="gp1">The first instance to compare.</param>
         <param name="gp2">The second instance to compare.</param>
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> objects for value equality.</summary>
-        <returns><see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +205,8 @@
         <param name="gp1">The first instance to compare.</param>
         <param name="gp2">The second instance to compare.</param>
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> objects for value inequality.</summary>
-        <returns><see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

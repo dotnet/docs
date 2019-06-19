@@ -147,7 +147,8 @@
       <Docs>
         <param name="point">The point to check.</param>
         <summary>Indicates whether the rectangle described by the <see cref="T:Windows.Foundation.Rect" /> contains the specified point.</summary>
-        <returns><see langword="true" /> if the rectangle described by the <see cref="T:Windows.Foundation.Rect" /> contains the specified point; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the rectangle described by the <see cref="T:Windows.Foundation.Rect" /> contains the specified point; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +201,8 @@
       <Docs>
         <param name="o">The object to compare to the current rectangle.</param>
         <summary>Indicates whether the specified object is equal to the current <see cref="T:Windows.Foundation.Rect" />.</summary>
-        <returns><see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.Foundation.Rect" /> and has the same x, y, width, and height values as the current <see cref="T:Windows.Foundation.Rect" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.Foundation.Rect" /> and has the same x, y, width, and height values as the current <see cref="T:Windows.Foundation.Rect" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +228,8 @@
       <Docs>
         <param name="value">The rectangle to compare to the current rectangle.</param>
         <summary>Indicates whether the specified <see cref="T:Windows.Foundation.Rect" /> is equal to the current <see cref="T:Windows.Foundation.Rect" />.</summary>
-        <returns><see langword="true" /> if the specified <see cref="T:Windows.Foundation.Rect" /> has the same x, y, width, and height property values as the current <see cref="T:Windows.Foundation.Rect" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:Windows.Foundation.Rect" /> has the same x, y, width, and height property values as the current <see cref="T:Windows.Foundation.Rect" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +325,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the rectangle is the <see cref="P:Windows.Foundation.Rect.Empty" /> rectangle.</summary>
-        <value><see langword="true" /> if the rectangle is the <see cref="P:Windows.Foundation.Rect.Empty" /> rectangle; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the rectangle is the <see cref="P:Windows.Foundation.Rect.Empty" /> rectangle; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,7 +376,8 @@
         <param name="rect1">The first rectangle to compare.</param>
         <param name="rect2">The second rectangle to compare.</param>
         <summary>Compares two <see cref="T:Windows.Foundation.Rect" /> structs for equality.</summary>
-        <returns><see langword="true" /> if the <see cref="T:Windows.Foundation.Rect" /> structs have the same x, y, width, and height property values; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Windows.Foundation.Rect" /> structs have the same x, y, width, and height property values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,7 +405,8 @@
         <param name="rect1">The first rectangle to compare.</param>
         <param name="rect2">The second rectangle to compare.</param>
         <summary>Compares two <see cref="T:Windows.Foundation.Rect" /> structs for inequality.  </summary>
-        <returns><see langword="true" /> if the <see cref="T:Windows.Foundation.Rect" /> structs do not have the same x, y, width, and height property values; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Windows.Foundation.Rect" /> structs do not have the same x, y, width, and height property values; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

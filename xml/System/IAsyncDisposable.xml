@@ -42,7 +42,7 @@ You might implement `IAsyncDisposable` in the following situations:
 Use the <xref:System.IAsyncDisposable.DisposeAsync%2A> method to perform whatever cleanup is necessary after using the unmanaged resources, such as freeing, releasing, or resetting the unmanaged resources. For more information about unmanaged resources in .NET, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged).
  
  ]]></format>
-</remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DisposeAsync">
@@ -69,7 +69,7 @@ Use the <xref:System.IAsyncDisposable.DisposeAsync%2A> method to perform whateve
         <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources asynchronously.</summary>
         <returns>A task that represents the asynchronous dispose operation.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
 
 ## Remarks
 
@@ -83,7 +83,7 @@ When implementing this method, ensure that all held resources are freed by propa
 If an object's `DisposeAsync` method is called more than once, the object must ignore all calls after the first one and synchronously return a successfully completed <xref:System.Threading.Tasks.ValueTask>. The object must not throw an exception if its `DisposeAsync` method is called multiple times. Instance methods other than `DisposeAsync` can throw an <xref:System.ObjectDisposedException> when resources are already disposed.
  
  ]]></format>
-</remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

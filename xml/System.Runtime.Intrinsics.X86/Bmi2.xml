@@ -13,6 +13,11 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             This class provides access to Intel BMI2 hardware instructions via intrinsics

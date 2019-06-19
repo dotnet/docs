@@ -145,7 +145,8 @@
       <Docs>
         <param name="obj">The object to compare.</param>
         <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct to another object for equality.</summary>
-        <returns><see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +171,8 @@
       <Docs>
         <param name="cornerRadius">An instance of <see cref="T:Windows.UI.Xaml.CornerRadius" /> to compare for equality.</param>
         <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct to another <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +228,8 @@
         <param name="cr1">The first struct to compare.</param>
         <param name="cr2">The other struct to compare.</param>
         <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,7 +257,8 @@
         <param name="cr1">The first struct to compare.</param>
         <param name="cr2">The other struct to compare.</param>
         <summary>Compares two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for inequality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

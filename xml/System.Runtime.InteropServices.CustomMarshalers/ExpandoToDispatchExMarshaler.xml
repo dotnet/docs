@@ -36,10 +36,10 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
   </Docs>
   <Members>
     <Member MemberName=".cctor">
-      <MemberSignature Language="C#" Value="public static ExpandoToDispatchExMarshaler ();" />
+      <MemberSignature Language="C#" Value="public ExpandoToDispatchExMarshaler ();" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname rtspecialname void .cctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.ExpandoToDispatchExMarshaler.#cctor" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub New ()" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandoToDispatchExMarshaler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>

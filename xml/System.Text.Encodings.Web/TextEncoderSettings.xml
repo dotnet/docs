@@ -426,7 +426,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;int&gt; GetAllowedCodePoints ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;int32&gt; GetAllowedCodePoints() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.TextEncoderSettings.GetAllowedCodePoints" />
-      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable Function GetAllowedCodePoints () As IEnumerable(Of Integer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAllowedCodePoints () As IEnumerable(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;int&gt; ^ GetAllowedCodePoints();" />
       <MemberSignature Language="F#" Value="abstract member GetAllowedCodePoints : unit -&gt; seq&lt;int&gt;&#xA;override this.GetAllowedCodePoints : unit -&gt; seq&lt;int&gt;" Usage="textEncoderSettings.GetAllowedCodePoints " />
       <MemberType>Method</MemberType>

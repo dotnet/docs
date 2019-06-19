@@ -87,7 +87,7 @@
       </ReturnValue>
       <MemberValue>-1072824267</MemberValue>
       <Docs>
-        <summary>Message text: Bad security context.<br/>The security context has become corrupted.</summary>
+        <summary>Message text: Bad security context.<br />The security context has become corrupted.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
       </ReturnValue>
       <MemberValue>-1072824209</MemberValue>
       <Docs>
-        <summary>Message text: Unable to create a certificate store for the internal certificate.<br/>Message Queuing returns this error if you do not have permission to manipulate your own profile.</summary>
+        <summary>Message text: Unable to create a certificate store for the internal certificate.<br />Message Queuing returns this error if you do not have permission to manipulate your own profile.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -179,7 +179,7 @@
       </ReturnValue>
       <MemberValue>-1072824191</MemberValue>
       <Docs>
-        <summary>Message text: Unable to create a hash object for an authenticated message.<br/>See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.HashAlgorithm" /> property for more information about hash algorithms.</summary>
+        <summary>Message text: Unable to create a hash object for an authenticated message.<br />See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.HashAlgorithm" /> property for more information about hash algorithms.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -294,7 +294,7 @@
       </ReturnValue>
       <MemberValue>-1072824284</MemberValue>
       <Docs>
-        <summary>Message text: The RPC server cannot impersonate the client application, hence security credentials could not be verified.<br/>Message Queuing returns this error if the directory service server cannot impersonate the client application. This is necessary to verify the security credentials.</summary>
+        <summary>Message text: The RPC server cannot impersonate the client application, hence security credentials could not be verified.<br />Message Queuing returns this error if the directory service server cannot impersonate the client application. This is necessary to verify the security credentials.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -363,7 +363,7 @@
       </ReturnValue>
       <MemberValue>-1072824208</MemberValue>
       <Docs>
-        <summary>Message text: Unable to open the certificates store for the internal certificate.<br/>Message Queuing returns this error if you do not have permission to manipulate your own profile.</summary>
+        <summary>Message text: Unable to open the certificates store for the internal certificate.<br />Message Queuing returns this error if you do not have permission to manipulate your own profile.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -386,7 +386,7 @@
       </ReturnValue>
       <MemberValue>-1072824212</MemberValue>
       <Docs>
-        <summary>Message text: Unable to set the security descriptor for the cryptographic keys.<br/>For information about cryptographic providers, see <see cref="T:System.Messaging.CryptographicProviderType" /> and <see cref="P:System.Messaging.Message.AuthenticationProviderType" />.</summary>
+        <summary>Message text: Unable to set the security descriptor for the cryptographic keys.<br />For information about cryptographic providers, see <see cref="T:System.Messaging.CryptographicProviderType" /> and <see cref="P:System.Messaging.Message.AuthenticationProviderType" />.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -409,7 +409,7 @@
       </ReturnValue>
       <MemberValue>-1072824192</MemberValue>
       <Docs>
-        <summary>Message text: Unable to sign data before sending an authenticated message.<br/>See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.DigitalSignature" /> property for more information about signing data.</summary>
+        <summary>Message text: Unable to sign data before sending an authenticated message.<br />See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.DigitalSignature" /> property for more information about signing data.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -432,7 +432,7 @@
       </ReturnValue>
       <MemberValue>-1072824211</MemberValue>
       <Docs>
-        <summary>Message text: A user attempted to send an authenticated message without a certificate.<br/> Message Queuing returns this error if the sending application attempts to use security context information to authenticate a message, and the security context does not include a certificate. For more information about certificates, see the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderCertificate" /> property.</summary>
+        <summary>Message text: A user attempted to send an authenticated message without a certificate.<br /> Message Queuing returns this error if the sending application attempts to use security context information to authenticate a message, and the security context does not include a certificate. For more information about certificates, see the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderCertificate" /> property.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -455,7 +455,7 @@
       </ReturnValue>
       <MemberValue>-1072824269</MemberValue>
       <Docs>
-        <summary>Message text: The computer does not support encryption operations. <br/>Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see <see cref="P:System.Messaging.MessageQueue.EncryptionRequired" /> and <see cref="P:System.Messaging.Message.EncryptionAlgorithm"/>.</summary>
+        <summary>Message text: The computer does not support encryption operations. <br />Message Queuing returns this error when the application requests encryption and the computer (source or destination) does not support encryption operations. When this error is returned, the encryption operation fails. For more information about using encryption, see <see cref="P:System.Messaging.MessageQueue.EncryptionRequired" /> and <see cref="P:System.Messaging.Message.EncryptionAlgorithm" />.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -478,7 +478,7 @@
       </ReturnValue>
       <MemberValue>-1072824275</MemberValue>
       <Docs>
-        <summary>Message text: The internal Message Queuing certificate is corrupted.<br/>This error applies only to Message Queuing 1.0.</summary>
+        <summary>Message text: The internal Message Queuing certificate is corrupted.<br />This error applies only to Message Queuing 1.0.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -501,7 +501,7 @@
       </ReturnValue>
       <MemberValue>-1072824271</MemberValue>
       <Docs>
-        <summary>Message text: The personal certificate store is corrupted.<br/>Message Queuing returns this error when the Microsoft Internet Explorer personal certificate store is corrupted. </summary>
+        <summary>Message text: The personal certificate store is corrupted.<br />Message Queuing returns this error when the Microsoft Internet Explorer personal certificate store is corrupted. </summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -593,7 +593,7 @@
       </ReturnValue>
       <MemberValue>-1072824266</MemberValue>
       <Docs>
-        <summary>Message text: Could not get the SID information out of the thread token.<br/>For more information about sender identifiers, see the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderId" /> property.</summary>
+        <summary>Message text: Could not get the SID information out of the thread token.<br />For more information about sender identifiers, see the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderId" /> property.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -616,7 +616,7 @@
       </ReturnValue>
       <MemberValue>-1072824248</MemberValue>
       <Docs>
-        <summary>Message text: The connected network cannot be deleted; it is in use.<br/>Message Queuing returns this error if it cannot delete the specified connected network because the network is defined in at least one other computer. Remove the connected network from all connected network lists and try again to delete it. </summary>
+        <summary>Message text: The connected network cannot be deleted; it is in use.<br />Message Queuing returns this error if it cannot delete the specified connected network because the network is defined in at least one other computer. Remove the connected network from all connected network lists and try again to delete it. </summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -685,7 +685,7 @@
       </ReturnValue>
       <MemberValue>-1072824254</MemberValue>
       <Docs>
-        <summary>Message text: Directory service is full.<br/>Message Queuing returns this error if the information store is full. This error applies only to Message Queuing 1.0. </summary>
+        <summary>Message text: Directory service is full.<br />Message Queuing returns this error if the information store is full. This error applies only to Message Queuing 1.0. </summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -708,7 +708,7 @@
       </ReturnValue>
       <MemberValue>-1072824244</MemberValue>
       <Docs>
-        <summary>Message text: Cannot connect to MS DTC.<br/>Message Queuing returns this error if it is unable to connect to the Microsoft Distributed Transaction Coordinator.</summary>
+        <summary>Message text: Cannot connect to MS DTC.<br />Message Queuing returns this error if it is unable to connect to the Microsoft Distributed Transaction Coordinator.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -800,7 +800,7 @@
       </ReturnValue>
       <MemberValue>-1072824319</MemberValue>
       <Docs>
-        <summary>Message text: Generic Error.<br/>Message Queuing returns this error if it cannot identify a more specific source.</summary>
+        <summary>Message text: Generic Error.<br />Message Queuing returns this error if it cannot identify a more specific source.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -869,7 +869,7 @@
       </ReturnValue>
       <MemberValue>-1072824264</MemberValue>
       <Docs>
-        <summary>Message text: Invalid MQCOLUMNS parameter.<br/>Message Queuing returns this error if you are using the <see cref="T:System.Messaging.MessagePropertyFilter" /> class and have selected <c>false</c> for all Boolean values and zero (0) for all integer values.</summary>
+        <summary>Message text: Invalid MQCOLUMNS parameter.<br />Message Queuing returns this error if you are using the <see cref="T:System.Messaging.MessagePropertyFilter" /> class and have selected <c>false</c> for all Boolean values and zero (0) for all integer values.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -892,7 +892,7 @@
       </ReturnValue>
       <MemberValue>-1072824292</MemberValue>
       <Docs>
-        <summary>Message text: MQ_ACTION_PEEK_NEXT specified to MQReceiveMessage can not be used with the current cursor position.<br/><see cref="Overload:System.Messaging.MessageEnumerator.MoveNext" /> cannot be used with the current cursor position.</summary>
+        <summary>Message text: MQ_ACTION_PEEK_NEXT specified to MQReceiveMessage can not be used with the current cursor position.<br /><see cref="Overload:System.Messaging.MessageEnumerator.MoveNext" /> cannot be used with the current cursor position.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -961,7 +961,7 @@
       </ReturnValue>
       <MemberValue>-1072824255</MemberValue>
       <Docs>
-        <summary>Message text: Illegal MQQMPROPS parameter, either null or with zero properties.<br/>Illegal message properties, either <c>null</c> or with zero properties.</summary>
+        <summary>Message text: Illegal MQQMPROPS parameter, either null or with zero properties.<br />Illegal message properties, either <c>null</c> or with zero properties.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1053,7 +1053,7 @@
       </ReturnValue>
       <MemberValue>-1072824261</MemberValue>
       <Docs>
-        <summary>Message text: Illegal property buffer size.<br/>Message Queuing returns this error if the specified buffer for the message identifier or correlation identifier is not the correct size. See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.Id" /> and <see cref="P:System.Messaging.Message.CorrelationId" /> properties for more information about message identifiers.</summary>
+        <summary>Message text: Illegal property buffer size.<br />Message Queuing returns this error if the specified buffer for the message identifier or correlation identifier is not the correct size. See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.Id" /> and <see cref="P:System.Messaging.Message.CorrelationId" /> properties for more information about message identifiers.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1122,7 +1122,7 @@
       </ReturnValue>
       <MemberValue>-1072824300</MemberValue>
       <Docs>
-        <summary>Message text: Invalid queue path name.<br/>See the <see cref="T:System.Messaging.MessageQueue" /> class's <see cref="P:System.Messaging.MessageQueue.Path" /> property for valid path syntax options.</summary>
+        <summary>Message text: Invalid queue path name.<br />See the <see cref="T:System.Messaging.MessageQueue" /> class's <see cref="P:System.Messaging.MessageQueue.Path" /> property for valid path syntax options.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1145,7 +1145,7 @@
       </ReturnValue>
       <MemberValue>-1072824259</MemberValue>
       <Docs>
-        <summary>Message text: Illegal MQQUEUEPROPS parameter, either null or with zero properties.<br/>Message Queuing returns this error if you are using the <see cref="T:System.Messaging.MessageQueueCriteria" /> class and have called <see cref="M:System.Messaging.MessageQueueCriteria.ClearAll" /> or have not specified any criteria to use when filtering queues. See the <see cref="T:System.Messaging.MessageQueueCriteria" /> class or <see cref="Overload:System.Messaging.MessageQueue.GetPublicQueues" /> for more information about filtering queue search criteria.</summary>
+        <summary>Message text: Illegal MQQUEUEPROPS parameter, either null or with zero properties.<br />Message Queuing returns this error if you are using the <see cref="T:System.Messaging.MessageQueueCriteria" /> class and have called <see cref="M:System.Messaging.MessageQueueCriteria.ClearAll" /> or have not specified any criteria to use when filtering queues. See the <see cref="T:System.Messaging.MessageQueueCriteria" /> class or <see cref="Overload:System.Messaging.MessageQueue.GetPublicQueues" /> for more information about filtering queue search criteria.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1191,7 +1191,7 @@
       </ReturnValue>
       <MemberValue>-1072824260</MemberValue>
       <Docs>
-        <summary>Message text: Invalid propid value in MQRESTRICTION parameter.<br/>Invalid property identifier value for restriction.</summary>
+        <summary>Message text: Invalid propid value in MQRESTRICTION parameter.<br />Invalid property identifier value for restriction.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1260,7 +1260,7 @@
       </ReturnValue>
       <MemberValue>-1072824228</MemberValue>
       <Docs>
-        <summary>Message text: Invalid propid value in MQSORTSET.<br/>Invalid property identifier value in for sort.</summary>
+        <summary>Message text: Invalid propid value in MQSORTSET.<br />Invalid property identifier value in for sort.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1283,7 +1283,7 @@
       </ReturnValue>
       <MemberValue>-1072824303</MemberValue>
       <Docs>
-        <summary>Message text: The user has an invalid user name.<br/>Message Queuing returns this error if your application is connecting to it through an invalid user name.</summary>
+        <summary>Message text: The user has an invalid user name.<br />Message Queuing returns this error if your application is connecting to it through an invalid user name.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1329,7 +1329,7 @@
       </ReturnValue>
       <MemberValue>-1072824281</MemberValue>
       <Docs>
-        <summary>Message text: Insufficient resources to perform operation.<br/>Message Queuing returns this error, for example, if there is not enough memory to complete the operation. When this error is returned, the operation fails.</summary>
+        <summary>Message text: Insufficient resources to perform operation.<br />Message Queuing returns this error, for example, if there is not enough memory to complete the operation. When this error is returned, the operation fails.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1352,7 +1352,7 @@
       </ReturnValue>
       <MemberValue>-1072824276</MemberValue>
       <Docs>
-        <summary>Message text: The user certificate is not valid.<br/>Message Queuing returns this error if the security certificate specified in the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderCertificate" /> property is invalid, or if the certificate is not correctly placed in the Microsoft Internet Explorer personal certificate store.</summary>
+        <summary>Message text: The user certificate is not valid.<br />Message Queuing returns this error if the security certificate specified in the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderCertificate" /> property is invalid, or if the certificate is not correctly placed in the Microsoft Internet Explorer personal certificate store.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1375,7 +1375,7 @@
       </ReturnValue>
       <MemberValue>-1072824313</MemberValue>
       <Docs>
-        <summary>Message text: An invalid handle passed to a function.<br/>Message Queuing returns this error if the specified queue handle is not valid.</summary>
+        <summary>Message text: An invalid handle passed to a function.<br />Message Queuing returns this error if the specified queue handle is not valid.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1398,7 +1398,7 @@
       </ReturnValue>
       <MemberValue>-1072824252</MemberValue>
       <Docs>
-        <summary>Message text: Invalid object owner. For example `CreateQueue` failed because the Queue Manager object is invalid.<br/>Message Queuing returns this error, for example, if your application attempts to create a queue on a computer on which Message Queuing is not installed.</summary>
+        <summary>Message text: Invalid object owner. For example `CreateQueue` failed because the Queue Manager object is invalid.<br />Message Queuing returns this error, for example, if your application attempts to create a queue on a computer on which Message Queuing is not installed.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1421,7 +1421,7 @@
       </ReturnValue>
       <MemberValue>-1072824314</MemberValue>
       <Docs>
-        <summary>Message text: An invalid parameter passed to a function.<br/>Message Queuing returns this error if one of the parameters supplied by the operation is not valid.</summary>
+        <summary>Message text: An invalid parameter passed to a function.<br />Message Queuing returns this error if one of the parameters supplied by the operation is not valid.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1444,7 +1444,7 @@
       </ReturnValue>
       <MemberValue>-1072824293</MemberValue>
       <Docs>
-        <summary>Message text: The receive or peek message time-out has expired.<br/>Message Queuing returns this error if the time-out specified in a call to <see cref="Overload:System.Messaging.MessageQueue.Receive" /> or <see cref="Overload:System.Messaging.MessageQueue.Peek" /> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.</summary>
+        <summary>Message text: The receive or peek message time-out has expired.<br />Message Queuing returns this error if the time-out specified in a call to <see cref="Overload:System.Messaging.MessageQueue.Receive" /> or <see cref="Overload:System.Messaging.MessageQueue.Peek" /> expires before a new message arrives in the queue. This can only happen if there was no message already in the queue; both methods would return immediately if a message exists.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1513,7 +1513,7 @@
       </ReturnValue>
       <MemberValue>-1072824307</MemberValue>
       <Docs>
-        <summary>Message text: The specified computer could not be found.<br/>Message Queuing returns this error if it cannot find the queue's computer in the directory service.</summary>
+        <summary>Message text: The specified computer could not be found.<br />Message Queuing returns this error if it cannot find the queue's computer in the directory service.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1536,7 +1536,7 @@
       </ReturnValue>
       <MemberValue>-1072824291</MemberValue>
       <Docs>
-        <summary>Message text: A message that is currently pointed at by the cursor has been removed from the queue by another process or by another call to receive the message without the use of this cursor.<br/>Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <see cref="T:System.Messaging.MessageEnumerator" /> class, such as the instance returned through a call to <see cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" /> or <see cref="M:System.Messaging.MessageQueue.GetEnumerator" />.</summary>
+        <summary>Message text: A message that is currently pointed at by the cursor has been removed from the queue by another process or by another call to receive the message without the use of this cursor.<br />Message Queuing returns this error when some other cursor, application, or the system administrator has already removed the message from the queue. This error is most likely to occur when using the <see cref="T:System.Messaging.MessageEnumerator" /> class, such as the instance returned through a call to <see cref="M:System.Messaging.MessageQueue.GetMessageEnumerator2" /> or <see cref="M:System.Messaging.MessageQueue.GetEnumerator" />.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1558,7 +1558,7 @@
       </ReturnValue>
       <MemberValue>-1072824184</MemberValue>
       <Docs>
-        <summary>Message text: The specified message could not be found.<br/>Message Queuing returns this error if it cannot find the specified message in the queue.</summary>
+        <summary>Message text: The specified message could not be found.<br />Message Queuing returns this error if it cannot find the specified message in the queue.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1581,7 +1581,7 @@
       </ReturnValue>
       <MemberValue>-1072824278</MemberValue>
       <Docs>
-        <summary>Message text: Could not store a recoverable or journal message. Message was not sent.<br/>Message Queuing returns this error if the local computer cannot store a recoverable message (one whose delivery is guaranteed in the case of a network problem) or a journal message. See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.Recoverable" /> and <see cref="P:System.Messaging.Message.UseJournalQueue" /> properties for more information about these message sending options.</summary>
+        <summary>Message text: Could not store a recoverable or journal message. Message was not sent.<br />Message Queuing returns this error if the local computer cannot store a recoverable message (one whose delivery is guaranteed in the case of a network problem) or a journal message. See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.Recoverable" /> and <see cref="P:System.Messaging.Message.UseJournalQueue" /> properties for more information about these message sending options.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1604,7 +1604,7 @@
       </ReturnValue>
       <MemberValue>-1072824235</MemberValue>
       <Docs>
-        <summary>Message text: Connector Type is mandatory when sending an Acknowledgment or secure message.<br/>Message Queuing returns this error when the application sets a property typically set by Message Queuing, but does not specify the connector to use. For more information about connector types, see the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.ConnectorType" /> property.</summary>
+        <summary>Message text: Connector Type is mandatory when sending an Acknowledgment or secure message.<br />Message Queuing returns this error when the application sets a property typically set by Message Queuing, but does not specify the connector to use. For more information about connector types, see the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.ConnectorType" /> property.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1673,7 +1673,7 @@
       </ReturnValue>
       <MemberValue>-1072824301</MemberValue>
       <Docs>
-        <summary>Message text: No connection with this site's controller(s).<br/>Message Queuing returns this error if the application cannot access the directory service. If this error is returned, verify permissions for accessing the directory service.</summary>
+        <summary>Message text: No connection with this site's controller(s).<br />Message Queuing returns this error if the application cannot access the directory service. If this error is returned, verify permissions for accessing the directory service.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1742,7 +1742,7 @@
       </ReturnValue>
       <MemberValue>-1072824273</MemberValue>
       <Docs>
-        <summary>Message text: The internal Message Queuing certificate for the user does not exist.<br/>Message Queuing returns this error if no internal certificate is registered or the registered certificate is corrupted.</summary>
+        <summary>Message text: The internal Message Queuing certificate for the user does not exist.<br />Message Queuing returns this error if no internal certificate is registered or the registered certificate is corrupted.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1811,7 +1811,7 @@
       </ReturnValue>
       <MemberValue>-1072824247</MemberValue>
       <Docs>
-        <summary>Message text: No response from object owner.<br/>Message Queuing returns this error if there is no response from the directory service server. When this error is returned, the status of the operation is unknown. </summary>
+        <summary>Message text: No response from object owner.<br />Message Queuing returns this error if there is no response from the directory service server. When this error is returned, the status of the operation is unknown. </summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1834,7 +1834,7 @@
       </ReturnValue>
       <MemberValue>-1072824246</MemberValue>
       <Docs>
-        <summary>Message text: Object owner is not reachable.<br/>Message Queuing returns this error if the directory service server for the object is not available. When this error is returned, the operation fails.</summary>
+        <summary>Message text: Object owner is not reachable.<br />Message Queuing returns this error if the directory service server for the object is not available. When this error is returned, the operation fails.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1949,7 +1949,7 @@
       </ReturnValue>
       <MemberValue>-1072824221</MemberValue>
       <Docs>
-        <summary>Message text: The passed buffer for the Provider name property is too small.<br/>See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.AuthenticationProviderName" /> property for more information about provider names. </summary>
+        <summary>Message text: The passed buffer for the Provider name property is too small.<br />See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.AuthenticationProviderName" /> property for more information about provider names. </summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1972,7 +1972,7 @@
       </ReturnValue>
       <MemberValue>-1072824198</MemberValue>
       <Docs>
-        <summary>Message text: The public key for the computer does not exist.<br/>Message Queuing returns this error if it was able to query the directory service, but the enhanced key was not found. This error applies only to Message Queuing 2.0.</summary>
+        <summary>Message text: The public key for the computer does not exist.<br />Message Queuing returns this error if it was able to query the directory service, but the enhanced key was not found. This error applies only to Message Queuing 2.0.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -1995,7 +1995,7 @@
       </ReturnValue>
       <MemberValue>-1072824199</MemberValue>
       <Docs>
-        <summary>Message text: Unable to find the public key for computer.<br/>Message Queuing returns this error, for example, if you are trying to retrieve the computer properties of a computer running Message Queuing 1.0 or if you are trying to get remote computer properties while working offline. This error applies only to Message Queuing 2.0.</summary>
+        <summary>Message text: Unable to find the public key for computer.<br />Message Queuing returns this error, for example, if you are trying to retrieve the computer properties of a computer running Message Queuing 1.0 or if you are trying to get remote computer properties while working offline. This error applies only to Message Queuing 2.0.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2018,7 +2018,7 @@
       </ReturnValue>
       <MemberValue>-1072824210</MemberValue>
       <Docs>
-        <summary>DNS property is not supported as criteria to locate queues.<br/>You cannot retrieve the DNS path name of a queue.</summary>
+        <summary>DNS property is not supported as criteria to locate queues.<br />You cannot retrieve the DNS path name of a queue.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2064,7 +2064,7 @@
       </ReturnValue>
       <MemberValue>-1072824315</MemberValue>
       <Docs>
-        <summary>Message text: A queue with the same pathname is already registered.<br/>Message Queuing registers public queues in the directory service, and registers private queues on the local computer.</summary>
+        <summary>Message text: A queue with the same pathname is already registered.<br />Message Queuing registers public queues in the directory service, and registers private queues on the local computer.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2110,7 +2110,7 @@
       </ReturnValue>
       <MemberValue>-1072824317</MemberValue>
       <Docs>
-        <summary>Message text: The queue is not registered in the directory service.<br/>Message Queuing returns this error if it cannot find the queue. This includes public queues not registered in the directory service and Internet queues that do not exist in the Message Queuing namespace.</summary>
+        <summary>Message text: The queue is not registered in the directory service.<br />Message Queuing returns this error if it cannot find the queue. This includes public queues not registered in the directory service and Internet queues that do not exist in the Message Queuing namespace.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2179,7 +2179,7 @@
       </ReturnValue>
       <MemberValue>-1072824285</MemberValue>
       <Docs>
-        <summary>Message text: The size of the buffer passed to `MQGetQueueSecurity` is too small.<br/>Message Queuing returns this error if the supplied security buffer is too small for the security descriptor.</summary>
+        <summary>Message text: The size of the buffer passed to `MQGetQueueSecurity` is too small.<br />Message Queuing returns this error if the supplied security buffer is too small for the security descriptor.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2202,7 +2202,7 @@
       </ReturnValue>
       <MemberValue>-1072824277</MemberValue>
       <Docs>
-        <summary>Message text: The passed buffer for the user certificate property is too small.<br/>See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderCertificate" /> property for more information about user certificates.</summary>
+        <summary>Message text: The passed buffer for the user certificate property is too small.<br />See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderCertificate" /> property for more information about user certificates.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2225,7 +2225,7 @@
       </ReturnValue>
       <MemberValue>-1072824286</MemberValue>
       <Docs>
-        <summary>Message text: The passed buffer for the user identifier property is too small.<br/>Message Queuing returns this error when the supplied sender identification buffer is too small. See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderId" /> property for more information about sender identifiers.</summary>
+        <summary>Message text: The passed buffer for the user identifier property is too small.<br />Message Queuing returns this error when the supplied sender identification buffer is too small. See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.SenderId" /> property for more information about sender identifiers.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2248,7 +2248,7 @@
       </ReturnValue>
       <MemberValue>-1072824309</MemberValue>
       <Docs>
-        <summary>Message text: The Message Queues service is not available.<br/> Message Queuing returns this error if the application is unable to connect to the Queue Manager.</summary>
+        <summary>Message text: The Message Queues service is not available.<br /> Message Queuing returns this error if the application is unable to connect to the Queue Manager.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2271,7 +2271,7 @@
       </ReturnValue>
       <MemberValue>-1072824311</MemberValue>
       <Docs>
-        <summary>Message text: Sharing violation. The queue is already opened for exclusive receive.<br/>Message Queuing returns this error if an application is trying to open an already opened queue that has exclusive read rights. For more information about receiving messages exclusively from a queue, see the <see cref="T:System.Messaging.MessageQueue" /> class's <see cref="P:System.Messaging.MessageQueue.DenySharedReceive" /> property.</summary>
+        <summary>Message text: Sharing violation. The queue is already opened for exclusive receive.<br />Message Queuing returns this error if an application is trying to open an already opened queue that has exclusive read rights. For more information about receiving messages exclusively from a queue, see the <see cref="T:System.Messaging.MessageQueue" /> class's <see cref="P:System.Messaging.MessageQueue.DenySharedReceive" /> property.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2294,7 +2294,7 @@
       </ReturnValue>
       <MemberValue>-1072824222</MemberValue>
       <Docs>
-        <summary>Message text: The passed buffer for the Signature property is too small.<br/>See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.DigitalSignature" /> property for more information about signatures.</summary>
+        <summary>Message text: The passed buffer for the Signature property is too small.<br />See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.DigitalSignature" /> property for more information about signatures.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2317,7 +2317,7 @@
       </ReturnValue>
       <MemberValue>-1072824234</MemberValue>
       <Docs>
-        <summary>Message text: The Queue Manager service has been restarted. The queue handle is stale and should be closed.<br/>Message Queuing returns this error if the specified handle was obtained in a previous session of the Queue Manager service.</summary>
+        <summary>Message text: The Queue Manager service has been restarted. The queue handle is stale and should be closed.<br />Message Queuing returns this error if the specified handle was obtained in a previous session of the Queue Manager service.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2340,7 +2340,7 @@
       </ReturnValue>
       <MemberValue>-1072824223</MemberValue>
       <Docs>
-        <summary>Message text: The passed buffer for the Symmetric key property is too small.<br/>See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.DestinationSymmetricKey" /> property for more information about symmetric keys.</summary>
+        <summary>Message text: The passed buffer for the Symmetric key property is too small.<br />See the <see cref="T:System.Messaging.Message" /> class's <see cref="P:System.Messaging.Message.DestinationSymmetricKey" /> property for more information about symmetric keys.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2432,7 +2432,7 @@
       </ReturnValue>
       <MemberValue>-1072824240</MemberValue>
       <Docs>
-        <summary>Message text: Wrong transaction usage.<br/>Message Queuing returns this error if an attempt was made to open a remote queue for read access from within a transaction, or an attempt was made to read a message from a non-transactional queue from within a transaction.</summary>
+        <summary>Message text: Wrong transaction usage.<br />Message Queuing returns this error if an attempt was made to open a remote queue for read access from within a transaction, or an attempt was made to read a message from a non-transactional queue from within a transaction.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2455,7 +2455,7 @@
       </ReturnValue>
       <MemberValue>-1072824251</MemberValue>
       <Docs>
-        <summary>Message text: The specified access mode is not supported.<br/>Message Queuing returns this error if the access mode specified when opening the queue is set to an invalid value, or the access mode and the share mode specified are not compatible.</summary>
+        <summary>Message text: The specified access mode is not supported.<br />Message Queuing returns this error if the access mode specified when opening the queue is set to an invalid value, or the access mode and the share mode specified are not compatible.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -2478,7 +2478,7 @@
       </ReturnValue>
       <MemberValue>-1072824288</MemberValue>
       <Docs>
-        <summary>Message text: The requested operation for the specified format name is not supported.<br/>Message Queuing returns this error when the requested operation is not supported for the specified format name. Operations include trying to open a queue to receive messages by specifying a direct format name.</summary>
+        <summary>Message text: The requested operation for the specified format name is not supported.<br />Message Queuing returns this error when the requested operation is not supported for the specified format name. Operations include trying to open a queue to receive messages by specifying a direct format name.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>

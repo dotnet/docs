@@ -373,7 +373,7 @@
       <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Turns off processing of prefix characters. Typically, the ampersand (&amp;) mnemonic-prefix character is interpreted as a directive to underscore the character that follows, and the double-ampersand (&amp;&amp;) mnemonic-prefix characters as a directive to print a single ampersand. By specifying <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />, this processing is turned off. For example, an input string of "A&amp;bc&amp;&amp;d" with <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" /> applied would result in output of "A&amp;bc&amp;&amp;d". Compare with <c>PrefixOnly</c>. </summary>
-       </Docs>
+      </Docs>
     </Member>
     <Member MemberName="PathEllipsis">
       <MemberSignature Language="C#" Value="PathEllipsis" />

@@ -51,7 +51,8 @@
       <Docs>
         <param name="value">The <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> to compare with this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</param>
         <summary>Indicates whether a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
-        <returns><see langword="true" /> if <paramref name="value" /> is a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> that represents the same length of time as this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> that represents the same length of time as this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +78,8 @@
       <Docs>
         <param name="value">The <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />  to compare with this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</param>
         <summary>Indicates whether a specified <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
-        <returns><see langword="true" /> if <paramref name="value" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is equal to this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +107,8 @@
         <param name="keyTime1">The first value to compare.</param>
         <param name="keyTime2">The second value to compare.</param>
         <summary>Indicates whether two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values are equal.</summary>
-        <returns><see langword="true" /> if the values of <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,7 +190,8 @@
         <param name="keyTime1">The first value to compare.</param>
         <param name="keyTime2">The second value to compare.</param>
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values for equality.</summary>
-        <returns><see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +244,8 @@
         <param name="keyTime1">The first value to compare.</param>
         <param name="keyTime2">The second value to compare.</param>
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values for inequality.</summary>
-        <returns><see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are not equal; otherwise, false. </returns>
+        <returns>
+          <see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are not equal; otherwise, false. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

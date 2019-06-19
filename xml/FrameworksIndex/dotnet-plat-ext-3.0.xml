@@ -14,6 +14,7 @@
     <Assembly Name="System.Composition.TypedParts" Version="1.0.34.0" />
     <Assembly Name="System.Configuration.ConfigurationManager" Version="4.0.2.0" />
     <Assembly Name="System.Data.Odbc" Version="4.0.1.0" />
+    <Assembly Name="System.Data.OleDb" Version="4.0.0.0" />
     <Assembly Name="System.Data.SqlClient" Version="4.6.0.0" />
     <Assembly Name="System.Diagnostics.EventLog" Version="4.0.1.0" />
     <Assembly Name="System.Diagnostics.PerformanceCounter" Version="4.0.1.0" />
@@ -33,6 +34,7 @@
     <Assembly Name="System.Numerics.Tensors" Version="0.2.0.0" />
     <Assembly Name="System.Reflection.Context" Version="4.0.0.0" />
     <Assembly Name="System.Reflection.MetadataLoadContext" Version="4.0.0.0" />
+    <Assembly Name="System.Resources.Extensions" Version="4.0.0.0" />
     <Assembly Name="System.Runtime.Caching" Version="4.0.0.0" />
     <Assembly Name="System.Runtime.Intrinsics.Experimental" Version="4.0.0.0" />
     <Assembly Name="System.Runtime.WindowsRuntime" Version="4.0.14.0" />
@@ -54,7 +56,6 @@
     <Assembly Name="System.ServiceModel.Syndication" Version="4.0.1.0" />
     <Assembly Name="System.ServiceProcess.ServiceController" Version="4.2.2.0" />
     <Assembly Name="System.Text.Encoding.CodePages" Version="4.1.2.0" />
-    <Assembly Name="System.Text.Encodings.Web" Version="4.0.4.0" />
     <Assembly Name="System.Threading.AccessControl" Version="4.0.4.0" />
     <Assembly Name="System.Threading.Channels" Version="4.0.1.0" />
     <Assembly Name="System.Utf8String.Experimental" Version="4.0.0.0" />
@@ -4278,6 +4279,319 @@
     </Type>
   </Namespace>
   <Namespace Name="System.Data.OleDb">
+    <Type Name="System.Data.OleDb.OleDbCommand" Id="T:System.Data.OleDb.OleDbCommand">
+      <Member Id="M:System.Data.OleDb.OleDbCommand.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.#ctor(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.#ctor(System.String,System.Data.OleDb.OleDbConnection,System.Data.OleDb.OleDbTransaction)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.Cancel" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.Clone" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.CreateDbParameter" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.CreateParameter" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.Dispose(System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.ExecuteNonQuery" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.ExecuteReader" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.ExecuteReader(System.Data.CommandBehavior)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.ExecuteScalar" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.Prepare" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.ResetCommandTimeout" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommand.System#ICloneable#Clone" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.CommandText" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.CommandTimeout" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.CommandType" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.Connection" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.DbConnection" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.DbParameterCollection" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.DbTransaction" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.DesignTimeVisible" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.Parameters" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.Transaction" />
+      <Member Id="P:System.Data.OleDb.OleDbCommand.UpdatedRowSource" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbCommandBuilder" Id="T:System.Data.OleDb.OleDbCommandBuilder">
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.#ctor(System.Data.OleDb.OleDbDataAdapter)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.ApplyParameterInfo(System.Data.Common.DbParameter,System.Data.DataRow,System.Data.StatementType,System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.DeriveParameters(System.Data.OleDb.OleDbCommand)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand(System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand(System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetParameterName(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetParameterName(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetParameterPlaceholder(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand(System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.QuoteIdentifier(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.QuoteIdentifier(System.String,System.Data.OleDb.OleDbConnection)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.SetRowUpdatingHandler(System.Data.Common.DbDataAdapter)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.UnquoteIdentifier(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbCommandBuilder.UnquoteIdentifier(System.String,System.Data.OleDb.OleDbConnection)" />
+      <Member Id="P:System.Data.OleDb.OleDbCommandBuilder.DataAdapter" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbConnection" Id="T:System.Data.OleDb.OleDbConnection">
+      <Member Id="E:System.Data.OleDb.OleDbConnection.InfoMessage" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.#ctor(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.BeginTransaction" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.BeginTransaction(System.Data.IsolationLevel)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.ChangeDatabase(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.Close" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.CreateCommand" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.CreateDbCommand" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.Dispose(System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.EnlistTransaction(System.Transactions.Transaction)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable(System.Guid,System.Object[])" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.GetSchema" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.GetSchema(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.GetSchema(System.String,System.String[])" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.Open" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.ReleaseObjectPool" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.ResetState" />
+      <Member Id="M:System.Data.OleDb.OleDbConnection.System#ICloneable#Clone" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.ConnectionString" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.ConnectionTimeout" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.Database" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.DataSource" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.Provider" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.ServerVersion" />
+      <Member Id="P:System.Data.OleDb.OleDbConnection.State" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbConnectionStringBuilder" Id="T:System.Data.OleDb.OleDbConnectionStringBuilder">
+      <Member Id="M:System.Data.OleDb.OleDbConnectionStringBuilder.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbConnectionStringBuilder.#ctor(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnectionStringBuilder.Clear" />
+      <Member Id="M:System.Data.OleDb.OleDbConnectionStringBuilder.ContainsKey(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnectionStringBuilder.Remove(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.DataSource" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.FileName" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.Item(System.String)" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.Keys" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.OleDbServices" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.PersistSecurityInfo" />
+      <Member Id="P:System.Data.OleDb.OleDbConnectionStringBuilder.Provider" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbDataAdapter" Id="T:System.Data.OleDb.OleDbDataAdapter">
+      <Member Id="E:System.Data.OleDb.OleDbDataAdapter.RowUpdated" />
+      <Member Id="E:System.Data.OleDb.OleDbDataAdapter.RowUpdating" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.#ctor(System.Data.OleDb.OleDbCommand)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.#ctor(System.String,System.Data.OleDb.OleDbConnection)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.#ctor(System.String,System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.CreateRowUpdatedEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.Fill(System.Data.DataSet,System.Object,System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.Fill(System.Data.DataTable,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataAdapter.System#ICloneable#Clone" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.DeleteCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.InsertCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.SelectCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.System#Data#IDbDataAdapter#DeleteCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.System#Data#IDbDataAdapter#InsertCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.System#Data#IDbDataAdapter#SelectCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.System#Data#IDbDataAdapter#UpdateCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbDataAdapter.UpdateCommand" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbDataReader" Id="T:System.Data.OleDb.OleDbDataReader">
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.Close" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetBoolean(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetByte(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetChar(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetData(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetDataTypeName(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetDateTime(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetDbDataReader(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetDecimal(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetDouble(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetEnumerator" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetFieldType(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetFloat(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetGuid(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetInt16(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetInt32(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetInt64(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetName(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetOrdinal(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetSchemaTable" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetString(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetTimeSpan(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetValue(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.GetValues(System.Object[])" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.IsDBNull(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.NextResult" />
+      <Member Id="M:System.Data.OleDb.OleDbDataReader.Read" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.Depth" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.FieldCount" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.HasRows" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.IsClosed" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.Item(System.Int32)" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.Item(System.String)" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.RecordsAffected" />
+      <Member Id="P:System.Data.OleDb.OleDbDataReader.VisibleFieldCount" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbEnumerator" Id="T:System.Data.OleDb.OleDbEnumerator">
+      <Member Id="M:System.Data.OleDb.OleDbEnumerator.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbEnumerator.GetElements" />
+      <Member Id="M:System.Data.OleDb.OleDbEnumerator.GetEnumerator(System.Type)" />
+      <Member Id="M:System.Data.OleDb.OleDbEnumerator.GetRootEnumerator" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbError" Id="T:System.Data.OleDb.OleDbError">
+      <Member Id="M:System.Data.OleDb.OleDbError.ToString" />
+      <Member Id="P:System.Data.OleDb.OleDbError.Message" />
+      <Member Id="P:System.Data.OleDb.OleDbError.NativeError" />
+      <Member Id="P:System.Data.OleDb.OleDbError.Source" />
+      <Member Id="P:System.Data.OleDb.OleDbError.SQLState" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbErrorCollection" Id="T:System.Data.OleDb.OleDbErrorCollection">
+      <Member Id="M:System.Data.OleDb.OleDbErrorCollection.CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbErrorCollection.CopyTo(System.Data.OleDb.OleDbError[],System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbErrorCollection.GetEnumerator" />
+      <Member Id="P:System.Data.OleDb.OleDbErrorCollection.Count" />
+      <Member Id="P:System.Data.OleDb.OleDbErrorCollection.Item(System.Int32)" />
+      <Member Id="P:System.Data.OleDb.OleDbErrorCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Data.OleDb.OleDbErrorCollection.System#Collections#ICollection#SyncRoot" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbException" Id="T:System.Data.OleDb.OleDbException">
+      <Member Id="M:System.Data.OleDb.OleDbException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="P:System.Data.OleDb.OleDbException.ErrorCode" />
+      <Member Id="P:System.Data.OleDb.OleDbException.Errors" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbFactory" Id="T:System.Data.OleDb.OleDbFactory">
+      <Member Id="F:System.Data.OleDb.OleDbFactory.Instance" />
+      <Member Id="M:System.Data.OleDb.OleDbFactory.CreateCommand" />
+      <Member Id="M:System.Data.OleDb.OleDbFactory.CreateCommandBuilder" />
+      <Member Id="M:System.Data.OleDb.OleDbFactory.CreateConnection" />
+      <Member Id="M:System.Data.OleDb.OleDbFactory.CreateConnectionStringBuilder" />
+      <Member Id="M:System.Data.OleDb.OleDbFactory.CreateDataAdapter" />
+      <Member Id="M:System.Data.OleDb.OleDbFactory.CreateParameter" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbInfoMessageEventArgs" Id="T:System.Data.OleDb.OleDbInfoMessageEventArgs">
+      <Member Id="M:System.Data.OleDb.OleDbInfoMessageEventArgs.ToString" />
+      <Member Id="P:System.Data.OleDb.OleDbInfoMessageEventArgs.ErrorCode" />
+      <Member Id="P:System.Data.OleDb.OleDbInfoMessageEventArgs.Errors" />
+      <Member Id="P:System.Data.OleDb.OleDbInfoMessageEventArgs.Message" />
+      <Member Id="P:System.Data.OleDb.OleDbInfoMessageEventArgs.Source" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbInfoMessageEventHandler" Id="T:System.Data.OleDb.OleDbInfoMessageEventHandler" />
+    <Type Name="System.Data.OleDb.OleDbLiteral" Id="T:System.Data.OleDb.OleDbLiteral">
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Binary_Literal" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Catalog_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Catalog_Separator" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Char_Literal" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Column_Alias" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Column_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Correlation_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Cube_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Cursor_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Dimension_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Escape_Percent_Prefix" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Escape_Percent_Suffix" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Escape_Underscore_Prefix" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Escape_Underscore_Suffix" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Hierarchy_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Index_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Invalid" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Level_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Like_Percent" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Like_Underscore" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Member_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Procedure_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Property_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Quote_Prefix" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Quote_Suffix" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Schema_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Schema_Separator" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Table_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.Text_Command" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.User_Name" />
+      <Member Id="F:System.Data.OleDb.OleDbLiteral.View_Name" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbMetaDataCollectionNames" Id="T:System.Data.OleDb.OleDbMetaDataCollectionNames">
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Catalogs" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Collations" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Columns" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Indexes" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.ProcedureColumns" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.ProcedureParameters" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Procedures" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Tables" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataCollectionNames.Views" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbMetaDataColumnNames" Id="T:System.Data.OleDb.OleDbMetaDataColumnNames">
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataColumnNames.BooleanFalseLiteral" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataColumnNames.BooleanTrueLiteral" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataColumnNames.DateTimeDigits" />
+      <Member Id="F:System.Data.OleDb.OleDbMetaDataColumnNames.NativeDataType" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbParameter" Id="T:System.Data.OleDb.OleDbParameter">
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32,System.Data.ParameterDirection,System.Byte,System.Byte,System.String,System.Data.DataRowVersion,System.Boolean,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Data.OleDb.OleDbType,System.Int32,System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.#ctor(System.String,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.ResetDbType" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.ResetOleDbType" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.System#ICloneable#Clone" />
+      <Member Id="M:System.Data.OleDb.OleDbParameter.ToString" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.DbType" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.Direction" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.IsNullable" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.OleDbType" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.ParameterName" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.Precision" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.Scale" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.Size" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.SourceColumn" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.SourceColumnNullMapping" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.SourceVersion" />
+      <Member Id="P:System.Data.OleDb.OleDbParameter.Value" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbParameterCollection" Id="T:System.Data.OleDb.OleDbParameterCollection">
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Add(System.Data.OleDb.OleDbParameter)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Add(System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Add(System.String,System.Data.OleDb.OleDbType)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Add(System.String,System.Data.OleDb.OleDbType,System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Add(System.String,System.Data.OleDb.OleDbType,System.Int32,System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Add(System.String,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.AddRange(System.Array)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.AddRange(System.Data.OleDb.OleDbParameter[])" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.AddWithValue(System.String,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Clear" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Contains(System.Data.OleDb.OleDbParameter)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Contains(System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Contains(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.CopyTo(System.Data.OleDb.OleDbParameter[],System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.GetEnumerator" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.GetParameter(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.GetParameter(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.IndexOf(System.Data.OleDb.OleDbParameter)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.IndexOf(System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.IndexOf(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Insert(System.Int32,System.Data.OleDb.OleDbParameter)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Insert(System.Int32,System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Remove(System.Data.OleDb.OleDbParameter)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.Remove(System.Object)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.RemoveAt(System.Int32)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.RemoveAt(System.String)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.SetParameter(System.Int32,System.Data.Common.DbParameter)" />
+      <Member Id="M:System.Data.OleDb.OleDbParameterCollection.SetParameter(System.String,System.Data.Common.DbParameter)" />
+      <Member Id="P:System.Data.OleDb.OleDbParameterCollection.Count" />
+      <Member Id="P:System.Data.OleDb.OleDbParameterCollection.Item(System.Int32)" />
+      <Member Id="P:System.Data.OleDb.OleDbParameterCollection.Item(System.String)" />
+      <Member Id="P:System.Data.OleDb.OleDbParameterCollection.SyncRoot" />
+    </Type>
     <Type Name="System.Data.OleDb.OleDbPermission" Id="T:System.Data.OleDb.OleDbPermission">
       <Member Id="M:System.Data.OleDb.OleDbPermission.#ctor" />
       <Member Id="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState)" />
@@ -4289,6 +4603,106 @@
       <Member Id="M:System.Data.OleDb.OleDbPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
       <Member Id="M:System.Data.OleDb.OleDbPermissionAttribute.CreatePermission" />
       <Member Id="P:System.Data.OleDb.OleDbPermissionAttribute.Provider" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbRowUpdatedEventArgs" Id="T:System.Data.OleDb.OleDbRowUpdatedEventArgs">
+      <Member Id="M:System.Data.OleDb.OleDbRowUpdatedEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <Member Id="P:System.Data.OleDb.OleDbRowUpdatedEventArgs.Command" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbRowUpdatedEventHandler" Id="T:System.Data.OleDb.OleDbRowUpdatedEventHandler" />
+    <Type Name="System.Data.OleDb.OleDbRowUpdatingEventArgs" Id="T:System.Data.OleDb.OleDbRowUpdatingEventArgs">
+      <Member Id="M:System.Data.OleDb.OleDbRowUpdatingEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <Member Id="P:System.Data.OleDb.OleDbRowUpdatingEventArgs.BaseCommand" />
+      <Member Id="P:System.Data.OleDb.OleDbRowUpdatingEventArgs.Command" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbRowUpdatingEventHandler" Id="T:System.Data.OleDb.OleDbRowUpdatingEventHandler" />
+    <Type Name="System.Data.OleDb.OleDbSchemaGuid" Id="T:System.Data.OleDb.OleDbSchemaGuid">
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Assertions" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Catalogs" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Character_Sets" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints_By_Table" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Collations" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Column_Domain_Usage" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Column_Privileges" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Columns" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Constraint_Column_Usage" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Constraint_Table_Usage" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoKeywords" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Foreign_Keys" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Indexes" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Key_Column_Usage" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Primary_Keys" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Procedure_Parameters" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Procedures" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Provider_Types" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Referential_Constraints" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.SchemaGuids" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Schemata" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Sql_Languages" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Statistics" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Table_Constraints" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Table_Privileges" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Table_Statistics" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Tables" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Tables_Info" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Translations" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Trustee" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Usage_Privileges" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.View_Column_Usage" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.View_Table_Usage" />
+      <Member Id="F:System.Data.OleDb.OleDbSchemaGuid.Views" />
+      <Member Id="M:System.Data.OleDb.OleDbSchemaGuid.#ctor" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbTransaction" Id="T:System.Data.OleDb.OleDbTransaction">
+      <Member Id="M:System.Data.OleDb.OleDbTransaction.Begin" />
+      <Member Id="M:System.Data.OleDb.OleDbTransaction.Begin(System.Data.IsolationLevel)" />
+      <Member Id="M:System.Data.OleDb.OleDbTransaction.Commit" />
+      <Member Id="M:System.Data.OleDb.OleDbTransaction.Dispose(System.Boolean)" />
+      <Member Id="M:System.Data.OleDb.OleDbTransaction.Rollback" />
+      <Member Id="P:System.Data.OleDb.OleDbTransaction.Connection" />
+      <Member Id="P:System.Data.OleDb.OleDbTransaction.DbConnection" />
+      <Member Id="P:System.Data.OleDb.OleDbTransaction.IsolationLevel" />
+    </Type>
+    <Type Name="System.Data.OleDb.OleDbType" Id="T:System.Data.OleDb.OleDbType">
+      <Member Id="F:System.Data.OleDb.OleDbType.BigInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Binary" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Boolean" />
+      <Member Id="F:System.Data.OleDb.OleDbType.BSTR" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Char" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Currency" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Date" />
+      <Member Id="F:System.Data.OleDb.OleDbType.DBDate" />
+      <Member Id="F:System.Data.OleDb.OleDbType.DBTime" />
+      <Member Id="F:System.Data.OleDb.OleDbType.DBTimeStamp" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Decimal" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Double" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Empty" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Error" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Filetime" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Guid" />
+      <Member Id="F:System.Data.OleDb.OleDbType.IDispatch" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Integer" />
+      <Member Id="F:System.Data.OleDb.OleDbType.IUnknown" />
+      <Member Id="F:System.Data.OleDb.OleDbType.LongVarBinary" />
+      <Member Id="F:System.Data.OleDb.OleDbType.LongVarChar" />
+      <Member Id="F:System.Data.OleDb.OleDbType.LongVarWChar" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Numeric" />
+      <Member Id="F:System.Data.OleDb.OleDbType.PropVariant" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Single" />
+      <Member Id="F:System.Data.OleDb.OleDbType.SmallInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.TinyInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.UnsignedBigInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.UnsignedInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.UnsignedSmallInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.UnsignedTinyInt" />
+      <Member Id="F:System.Data.OleDb.OleDbType.VarBinary" />
+      <Member Id="F:System.Data.OleDb.OleDbType.VarChar" />
+      <Member Id="F:System.Data.OleDb.OleDbType.Variant" />
+      <Member Id="F:System.Data.OleDb.OleDbType.VarNumeric" />
+      <Member Id="F:System.Data.OleDb.OleDbType.VarWChar" />
+      <Member Id="F:System.Data.OleDb.OleDbType.WChar" />
     </Type>
   </Namespace>
   <Namespace Name="System.Data">
@@ -13610,6 +14024,31 @@
       <Member Id="M:System.Reflection.PathAssemblyResolver.Resolve(System.Reflection.MetadataLoadContext,System.Reflection.AssemblyName)" />
     </Type>
   </Namespace>
+  <Namespace Name="System.Resources.Extensions">
+    <Type Name="System.Resources.Extensions.DeserializingResourceReader" Id="T:System.Resources.Extensions.DeserializingResourceReader">
+      <Member Id="M:System.Resources.Extensions.DeserializingResourceReader.#ctor(System.IO.Stream)" />
+      <Member Id="M:System.Resources.Extensions.DeserializingResourceReader.#ctor(System.String)" />
+      <Member Id="M:System.Resources.Extensions.DeserializingResourceReader.Close" />
+      <Member Id="M:System.Resources.Extensions.DeserializingResourceReader.Dispose" />
+      <Member Id="M:System.Resources.Extensions.DeserializingResourceReader.GetEnumerator" />
+      <Member Id="M:System.Resources.Extensions.DeserializingResourceReader.System#Collections#IEnumerable#GetEnumerator" />
+    </Type>
+    <Type Name="System.Resources.Extensions.PreserializedResourceWriter" Id="T:System.Resources.Extensions.PreserializedResourceWriter">
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.#ctor(System.IO.Stream)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.#ctor(System.String)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddActivatorResource(System.String,System.String,System.IO.Stream,System.Boolean)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddBinaryFormattedResource(System.String,System.String,System.Byte[])" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddResource(System.String,System.Byte[])" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddResource(System.String,System.IO.Stream,System.Boolean)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddResource(System.String,System.Object)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddResource(System.String,System.String)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddTypeConverterResource(System.String,System.String,System.Byte[])" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.AddTypeConverterResource(System.String,System.String,System.String)" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.Close" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.Dispose" />
+      <Member Id="M:System.Resources.Extensions.PreserializedResourceWriter.Generate" />
+    </Type>
+  </Namespace>
   <Namespace Name="System.Runtime.Caching">
     <Type Name="System.Runtime.Caching.CacheEntryChangeMonitor" Id="T:System.Runtime.Caching.CacheEntryChangeMonitor">
       <Member Id="M:System.Runtime.Caching.CacheEntryChangeMonitor.#ctor" />
@@ -14352,7 +14791,6 @@
       <Member Id="P:System.Security.AccessControl.GenericAcl.SyncRoot" />
     </Type>
     <Type Name="System.Security.AccessControl.GenericSecurityDescriptor" Id="T:System.Security.AccessControl.GenericSecurityDescriptor">
-      <Member Id="M:System.Security.AccessControl.GenericSecurityDescriptor.#ctor" />
       <Member Id="M:System.Security.AccessControl.GenericSecurityDescriptor.GetBinaryForm(System.Byte[],System.Int32)" />
       <Member Id="M:System.Security.AccessControl.GenericSecurityDescriptor.GetSddlForm(System.Security.AccessControl.AccessControlSections)" />
       <Member Id="M:System.Security.AccessControl.GenericSecurityDescriptor.IsSddlConversionSupported" />
@@ -15339,9 +15777,12 @@
     </Type>
     <Type Name="System.Security.Cryptography.Pkcs.CmsRecipient" Id="T:System.Security.Cryptography.Pkcs.CmsRecipient">
       <Member Id="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <Member Id="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSAEncryptionPadding)" />
       <Member Id="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <Member Id="M:System.Security.Cryptography.Pkcs.CmsRecipient.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSAEncryptionPadding)" />
       <Member Id="P:System.Security.Cryptography.Pkcs.CmsRecipient.Certificate" />
       <Member Id="P:System.Security.Cryptography.Pkcs.CmsRecipient.RecipientIdentifierType" />
+      <Member Id="P:System.Security.Cryptography.Pkcs.CmsRecipient.RSAEncryptionPadding" />
     </Type>
     <Type Name="System.Security.Cryptography.Pkcs.CmsRecipientCollection" Id="T:System.Security.Cryptography.Pkcs.CmsRecipientCollection">
       <Member Id="M:System.Security.Cryptography.Pkcs.CmsRecipientCollection.#ctor" />
@@ -20083,221 +20524,6 @@
       <Member Id="M:System.Text.CodePagesEncodingProvider.GetEncoding(System.Int32)" />
       <Member Id="M:System.Text.CodePagesEncodingProvider.GetEncoding(System.String)" />
       <Member Id="P:System.Text.CodePagesEncodingProvider.Instance" />
-    </Type>
-  </Namespace>
-  <Namespace Name="System.Text.Encodings.Web">
-    <Type Name="System.Text.Encodings.Web.HtmlEncoder" Id="T:System.Text.Encodings.Web.HtmlEncoder">
-      <Member Id="M:System.Text.Encodings.Web.HtmlEncoder.#ctor" />
-      <Member Id="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)" />
-      <Member Id="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
-      <Member Id="P:System.Text.Encodings.Web.HtmlEncoder.Default" />
-    </Type>
-    <Type Name="System.Text.Encodings.Web.JavaScriptEncoder" Id="T:System.Text.Encodings.Web.JavaScriptEncoder">
-      <Member Id="M:System.Text.Encodings.Web.JavaScriptEncoder.#ctor" />
-      <Member Id="M:System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)" />
-      <Member Id="M:System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
-      <Member Id="P:System.Text.Encodings.Web.JavaScriptEncoder.Default" />
-    </Type>
-    <Type Name="System.Text.Encodings.Web.TextEncoder" Id="T:System.Text.Encodings.Web.TextEncoder">
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.#ctor" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.Encode(System.String)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.FindFirstCharacterToEncode(System.Char*,System.Int32)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoder.WillEncode(System.Int32)" />
-      <Member Id="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter" />
-    </Type>
-    <Type Name="System.Text.Encodings.Web.TextEncoderSettings" Id="T:System.Text.Encodings.Web.TextEncoderSettings">
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.#ctor" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Encodings.Web.TextEncoderSettings)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.#ctor(System.Text.Unicode.UnicodeRange[])" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCharacter(System.Char)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCharacters(System.Char[])" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.AllowCodePoints(System.Collections.Generic.IEnumerable{System.Int32})" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.AllowRange(System.Text.Unicode.UnicodeRange)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.AllowRanges(System.Text.Unicode.UnicodeRange[])" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.Clear" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacter(System.Char)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidCharacters(System.Char[])" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidRange(System.Text.Unicode.UnicodeRange)" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.ForbidRanges(System.Text.Unicode.UnicodeRange[])" />
-      <Member Id="M:System.Text.Encodings.Web.TextEncoderSettings.GetAllowedCodePoints" />
-    </Type>
-    <Type Name="System.Text.Encodings.Web.UrlEncoder" Id="T:System.Text.Encodings.Web.UrlEncoder">
-      <Member Id="M:System.Text.Encodings.Web.UrlEncoder.#ctor" />
-      <Member Id="M:System.Text.Encodings.Web.UrlEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)" />
-      <Member Id="M:System.Text.Encodings.Web.UrlEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
-      <Member Id="P:System.Text.Encodings.Web.UrlEncoder.Default" />
-    </Type>
-  </Namespace>
-  <Namespace Name="System.Text.Unicode">
-    <Type Name="System.Text.Unicode.UnicodeRange" Id="T:System.Text.Unicode.UnicodeRange">
-      <Member Id="M:System.Text.Unicode.UnicodeRange.#ctor(System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.Unicode.UnicodeRange.Create(System.Char,System.Char)" />
-      <Member Id="P:System.Text.Unicode.UnicodeRange.FirstCodePoint" />
-      <Member Id="P:System.Text.Unicode.UnicodeRange.Length" />
-    </Type>
-    <Type Name="System.Text.Unicode.UnicodeRanges" Id="T:System.Text.Unicode.UnicodeRanges">
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.All" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.AlphabeticPresentationForms" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Arabic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.ArabicExtendedA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.ArabicSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Armenian" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Arrows" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Balinese" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Bamum" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.BasicLatin" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Batak" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Bengali" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.BlockElements" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Bopomofo" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.BopomofoExtended" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.BoxDrawing" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.BraillePatterns" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Buginese" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Buhid" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Cham" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Cherokee" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CherokeeSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkCompatibility" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkCompatibilityForms" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkCompatibilityIdeographs" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkRadicalsSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkStrokes" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographs" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographsExtensionA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarks" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksExtended" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksforSymbols" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CombiningHalfMarks" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CommonIndicNumberForms" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.ControlPictures" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Coptic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CurrencySymbols" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Cyrillic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.CyrillicSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Devanagari" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.DevanagariExtended" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Dingbats" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.EnclosedAlphanumerics" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.EnclosedCjkLettersandMonths" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Ethiopic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.EthiopicExtended" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.EthiopicExtendedA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.EthiopicSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.GeneralPunctuation" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.GeometricShapes" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Georgian" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.GeorgianSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Glagolitic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.GreekandCoptic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.GreekExtended" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Gujarati" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Gurmukhi" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.HalfwidthandFullwidthForms" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.HangulCompatibilityJamo" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.HangulJamo" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.HangulJamoExtendedA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.HangulJamoExtendedB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.HangulSyllables" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Hanunoo" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Hebrew" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Hiragana" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.IdeographicDescriptionCharacters" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.IpaExtensions" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Javanese" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Kanbun" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.KangxiRadicals" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Kannada" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Katakana" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.KatakanaPhoneticExtensions" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.KayahLi" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Khmer" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.KhmerSymbols" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Lao" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Latin1Supplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LatinExtendedA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LatinExtendedAdditional" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LatinExtendedB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LatinExtendedC" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LatinExtendedD" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LatinExtendedE" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Lepcha" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.LetterlikeSymbols" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Limbu" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Lisu" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Malayalam" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Mandaic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MathematicalOperators" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MeeteiMayek" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MeeteiMayekExtensions" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MiscellaneousSymbols" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MiscellaneousSymbolsandArrows" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MiscellaneousTechnical" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.ModifierToneLetters" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Mongolian" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Myanmar" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MyanmarExtendedA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.MyanmarExtendedB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.NewTaiLue" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.NKo" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.None" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.NumberForms" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Ogham" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.OlChiki" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.OpticalCharacterRecognition" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Oriya" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Phagspa" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.PhoneticExtensions" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.PhoneticExtensionsSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Rejang" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Runic" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Samaritan" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Saurashtra" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Sinhala" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SmallFormVariants" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SpacingModifierLetters" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Specials" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Sundanese" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SundaneseSupplement" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SuperscriptsandSubscripts" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SupplementalArrowsA" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SupplementalArrowsB" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SupplementalMathematicalOperators" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SupplementalPunctuation" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.SylotiNagri" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Syriac" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Tagalog" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Tagbanwa" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.TaiLe" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.TaiTham" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.TaiViet" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Tamil" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Telugu" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Thaana" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Thai" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Tibetan" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Tifinagh" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabics" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabicsExtended" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.Vai" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.VariationSelectors" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.VedicExtensions" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.VerticalForms" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.YijingHexagramSymbols" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.YiRadicals" />
-      <Member Id="P:System.Text.Unicode.UnicodeRanges.YiSyllables" />
     </Type>
   </Namespace>
   <Namespace Name="System.Threading.Channels">

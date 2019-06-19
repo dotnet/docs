@@ -228,6 +228,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -249,6 +254,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -270,6 +280,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -291,6 +306,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -364,6 +384,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -385,6 +410,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
       </ReturnValue>
@@ -406,6 +436,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -451,6 +486,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -524,6 +564,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -549,6 +594,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -799,6 +849,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>

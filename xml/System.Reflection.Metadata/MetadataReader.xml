@@ -108,8 +108,10 @@
         <param name="utf8Decoder">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MetadataReader" /> class from the metadata stored at the given memory location.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="length" /> is not positive.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="metadata" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is not positive.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="metadata" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The encoding of <paramref name="utf8Decoder" /> is not <see cref="T:System.Text.UTF8Encoding" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
         <exception cref="T:System.BadImageFormatException">Bad metadata header.</exception>
@@ -1836,7 +1838,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the metadata represents an assembly.</summary>
-        <value><see langword="true" /> if the metadata represents an assembly; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the metadata represents an assembly; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

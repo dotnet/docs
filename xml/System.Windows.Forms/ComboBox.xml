@@ -3008,6 +3008,33 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ProcessCmdKey">
+      <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="comboBox.ProcessCmdKey (msg, keyData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="msg">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProcessKeyEventArgs">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyEventArgs (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyEventArgs(valuetype System.Windows.Forms.Message&amp; m) cil managed" />

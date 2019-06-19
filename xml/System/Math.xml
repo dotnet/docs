@@ -1269,7 +1269,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
   
  -or-  
   
@@ -1314,7 +1315,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -1359,7 +1361,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -1408,7 +1411,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -1453,7 +1457,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -1498,7 +1503,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -1548,7 +1554,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -1593,7 +1600,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
   
  -or-  
   
@@ -1647,7 +1655,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
   
  -or-  
   
@@ -1697,7 +1706,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.  
   
  -or-  
   
@@ -1747,7 +1757,8 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
         <param name="min">The lower bound of the result.</param>
         <param name="max">The upper bound of the result.</param>
         <summary>Returns <paramref name="value" /> clamped to the inclusive range of <paramref name="min" /> and <paramref name="max" />.</summary>
-        <returns><paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
+        <returns>
+          <paramref name="value" /> if <paramref name="min" /> ≤ <paramref name="value" /> ≤ <paramref name="max" />.
   
  -or-  
   
@@ -2492,13 +2503,7 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
   
  </description></item><item><term> Zero  
   
- </term><description> <see cref="F:System.Int32.MinValue" />
-  
- </description></item><item><term> Equal to <see cref="F:System.Double.NaN" /> or <see cref="F:System.Double.PositiveInfinity" /> or <see cref="F:System.Double.NegativeInfinity" />
-  
- </term><description> <see cref="F:System.Int32.MaxValue" />
-  
- </description></item></list></returns>
+ </term><description><see cref="F:System.Int32.MinValue" /></description></item><item><term> Equal to <see cref="F:System.Double.NaN" /> or <see cref="F:System.Double.PositiveInfinity" /> or <see cref="F:System.Double.NegativeInfinity" /></term><description><see cref="F:System.Int32.MaxValue" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

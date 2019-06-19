@@ -178,7 +178,7 @@ If your model performance score is not as good as you want it to be, you can:
 
 * Balance your data. For classification tasks, make sure that the training set is balanced across the categories.
 
-## Generate code & ML model
+## Outputs
 
 After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 

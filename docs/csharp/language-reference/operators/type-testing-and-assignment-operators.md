@@ -40,11 +40,11 @@ The `E is T` expression returns `true` if the result of `E` is non-null and can 
 
 The following example demonstrates that the `is` operator returns `true` if a runtime type of an expression result derives from a given type, that is, there exists a reference conversion:
 
-[!code-csharp[is with reference conversion](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsWithReferenceConversion)]
+[!code-csharp[is with reference conversion](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#IsWithReferenceConversion)]
 
 The next example shows that the `is` operator doesn't consider numeric conversions but takes into account boxing and unboxing conversions:
 
-[!code-csharp-interactive[is with int](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsWithInt)]
+[!code-csharp-interactive[is with int](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#IsWithInt)]
 
 For information about C# conversions, see the [Conversions](~/_csharplang/spec/conversions.md) chapter of the [C# language specification](~/_csharplang/spec/introduction.md).
 
@@ -60,7 +60,7 @@ where `E` is an expression that returns a value, `T` is a name of a type or a ty
 
 The following example demonstrates the usage of the `is` operator with the type pattern:
 
-[!code-csharp-interactive[is with type pattern](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#IsTypePattern)]
+[!code-csharp-interactive[is with type pattern](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#IsTypePattern)]
 
 For more information about the type pattern and other supported patterns, see [Pattern matching with is](../keywords/is.md#pattern-matching-with-is).
 
@@ -86,7 +86,7 @@ The `as` operator considers only reference, nullable, boxing, and unboxing conve
 
 The following example demonstrates the usage of the `as` operator:
 
-[!code-csharp-interactive[as operator](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#AsOperator)]
+[!code-csharp-interactive[as operator](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#AsOperator)]
 
 > [!NOTE]
 > As the preceding example shows, you need to compare the result of the `as` expression with `null` to check if the conversion is successful. Starting with C# 7.0, you can use the [is operator](#type-testing-with-pattern-matching) both to test if the conversion succeeds and, if it succeeds, assign its result to a new variable.
@@ -97,7 +97,7 @@ A cast expression of the form `(T)E` performs an explicit conversion of the valu
 
 The following example demonstrates explicit numeric and reference conversions:
 
-[!code-csharp-interactive[cast expression](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#Cast)]
+[!code-csharp-interactive[cast expression](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#Cast)]
 
 For information about supported explicit conversions, see the [Explicit conversions](~/_csharplang/spec/conversions.md#explicit-conversions) section of the [C# language specification](~/_csharplang/spec/introduction.md). For information about how to define a custom explicit or implicit type conversion, see the [explicit](../keywords/explicit.md) or [implicit](../keywords/implicit.md) keyword article, respectively.
 
@@ -129,13 +129,13 @@ a = (b = c)
 
 The following example demonstrates the usage of the assignment operator with a local variable, a property, and an indexer element as its left-hand operand:
 
-[!code-csharp-interactive[= operator](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#Assignment)]
+[!code-csharp-interactive[simple assignment](~/samples/csharp/language-reference/operators/AssignmentOperator.cs#Simple)]
 
 ## ref assignment operator
 
 Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassign a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable. The following example demonstrates the usage of the ref assignment operator:
 
-[!code-csharp[ref assignment operator](~/samples/csharp/language-reference/operators/TypeTestingAndAssignmentOperators.cs#RefAssignment)]
+[!code-csharp[ref assignment operator](~/samples/csharp/language-reference/operators/AssignmentOperator.cs#RefAssignment)]
 
 In the case of the ref assignment operator, the type of its both operands must be the same.
 

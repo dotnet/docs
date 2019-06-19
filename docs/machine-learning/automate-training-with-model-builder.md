@@ -73,11 +73,9 @@ Using the custom scenario allows you to choose your own task. Pick the scenario 
 
 ## Data
 
-### Choose the 
-
 Once you have mapped your scenario onto a task, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario. You also need to choose the output you want to predict.
 
-#### Choose the output to predict (label)
+### Choose the output to predict (label)
 
 A dataset is a table of rows of training examples, and columns of attributes. Each row has:
 - a **label** (the attribute that you want to predict)
@@ -92,7 +90,7 @@ The label is the historical house price for that row of square footage, bedroom,
 
 ![Table showing rows and columns of house price data with features consisting of size rooms zip code and price label](media/model-builder-data.png)
 
-#### Data formats
+### Data formats
 
 Model Builder places the following limitations on the data:
 
@@ -102,7 +100,7 @@ Model Builder places the following limitations on the data:
 - Data from SQL server is copied from the server to your local machine before training
 - Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
 
-#### Example datasets
+### Example datasets
 
 If you don't have your own data yet, try out one of these datasets:
 
@@ -113,11 +111,6 @@ If you don't have your own data yet, try out one of these datasets:
 |[website comment sentiment analysis](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
 |[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Amount, V1-V28 (anonymized features|Class (1 when fraudulent, 0 otherwise)|
 |[issue classification](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
-
-Model Builder currently places the following limitations on the data that it imports:
-* A limit of 1 GB on the training dataset.
-* SQL Server has a limit of 100-K rows for training
-* Microsoft SQL Server Data Tools for Visual Studio 2017 isn't supported.
 
 ## Train
 
@@ -175,7 +168,7 @@ The default metric for regression problems is **RSquared**. 1 is the best possib
 
 Other metrics reported, such as absolute-loss, squared-loss, and RMS loss can be used to understand your model, and compare it with other regression models. 
 
-## Improve model performance
+## Improve
 
 If your model performance score is not as good as you want it to be, you can:
 
@@ -185,7 +178,7 @@ If your model performance score is not as good as you want it to be, you can:
 
 * Balance your data. For classification tasks, make sure that the training set is balanced across the categories.
 
-## Generated Code + Model
+## Generate code & ML model
 
 After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 

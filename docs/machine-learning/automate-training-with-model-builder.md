@@ -35,12 +35,12 @@ Model Builder comes with templates for sentiment analysis, issue classification,
 
 Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of the binary classification task.
 
-Binary classification is used to categorize data into 2 classes (yes/no; pass/fail; true/false; positive/negative). It can be used to answer questions such as:
+Binary classification is used to categorize data into two classes (yes/no; pass/fail; true/false; positive/negative). It can be used to answer questions such as:
 
 - Is this email spam?
 - Which applicants may be eligible for membership?
 - Which accounts may not pay their invoices on time?
-- Is this a fraudulent credit card transaction?
+- Is this credit card transaction fraudulent?
 
 If your scenario requires classification into two categories, you can use this template.
 
@@ -48,13 +48,13 @@ If your scenario requires classification into two categories, you can use this t
 
 Issue classification can be used to categorize customer feedback issues using the issue title and description. It is an example of the multi-class classification task.
 
-Multiclass classification can be used to categorize data into 3 or more classes. It can be used to answer questions such as:
+Multiclass classification can be used to categorize data into three or more classes. It can be used to answer questions such as:
 
-- To which department should I route this support ticket?
-- What category of financial transaction was this?
-- What is the priority of this issue?
+- To which department should I route a support ticket?
+- What category does a financial transaction belong in?
+- What is the priority of a customer issue?
 
-You can use this template for your scenario if you want to categorize data into 3 or more categories.
+You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
 
 #### Price prediction (regression)
 
@@ -62,14 +62,14 @@ Price prediction can be used to predict house prices using location, size, and f
 
 Regression is used to predict numbers. It can be used to answer questions such as:
 
-- What price will this house sell for?
-- After how much time will this part require maintenance?
+- What price will a house sell for?
+- After how much time will a mechanical part require maintenance?
 - What is the moisture content in this dryer?
 - What will the total annual sales for this region be?
 
 #### Custom scenario (choose your task)
 
-Using the custom scenario allows you to choose your own task. Pick the scenario which makes the most sense for your problem.
+Using the custom scenario allows you to choose your own task. Pick the scenario that makes the most sense for your problem.
 
 ## Data
 
@@ -95,7 +95,7 @@ The label is the historical house price for that row of square footage, bedroom,
 Model Builder places the following limitations on the data:
 
 - Data must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
-- There is a limit of 1GB on the training dataset
+- There is a limit of 1 GB on the training dataset
 - SQL server has a limit of 100,000 rows for training
 - Data from SQL server is copied from the server to your local machine before training
 - Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
@@ -109,18 +109,18 @@ If you don't have your own data yet, try out one of these datasets:
 |[taxi fare prediction](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |[product sales forecasting](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
 |[website comment sentiment analysis](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
-|[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Amount, V1-V28 (anonymized features|Class (1 when fraudulent, 0 otherwise)|
+|[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Amount, V1-V28 (anonymized features)|Class (1 when fraudulent, 0 otherwise)|
 |[issue classification](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 
 ## Train
 
-Once you selected your scenario, data and label, Model Builder trains the model.
+Once you select your scenario, data, and label, Model Builder trains the model.
 
 ### What is training?
 
-Training is an automatic process by which Model Builder teaches your model how to answer questions for your scenario. Once trained, your model can make predictions with input data that is has not seen before. For example, if you are predicting house prices and a new house comes on the market, you can predict its sale price.
+Training is an automatic process by which Model Builder teaches your model how to answer questions for your scenario. Once trained, your model can make predictions with input data that it has not seen before. For example, if you are predicting house prices and a new house comes on the market, you can predict its sale price.
 
-Model Builder uses automated machine learning (AutoML), which automatically explores different machine learning algorithms and settings to find the one that best suits your scenario. This does not require any input or tuning from you.
+Model Builder uses automated machine learning (AutoML), which automatically explores different machine learning algorithms and settings to find the one that best suits your scenario. Model Builder does not require any input or tuning from you.
 
 ### How long should I train for?
 
@@ -136,14 +136,14 @@ Dataset Size  | Dataset Type       | Avg. Time to train
 
 The exact time to train also depends on:
 
-- the type of columns i.e. text vs numeric
+- the type of columns that is, text vs numeric
 - the type of machine learning task (regression or classification)
 - the number of rows used for training
 - the number of feature columns used for training
 
 ## Evaluate
 
-Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Evaluation is the process of using the trained model to make predictions with the new test data, and then measuring how good the predictions are. The metrics used for evaluation depend on the ML task. Refer to the [model evaluation metrics](resources/metrics.md) guide for more information.  
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Evaluation is the process of using the trained model to make predictions with the new test data, and then measuring how good the predictions are. The metrics used for evaluation depend on the ML task. For more information, see [model evaluation metrics](resources/metrics.md).  
 
 ### Sentiment analysis (binary classification)
 
@@ -157,8 +157,8 @@ Additional metrics such as F1 score can be used to control the balance between p
 
 For problems where data is categorized into multiple classes there are two types of accuracy:
 
-- Micro-accuracy: the fraction of predictions that are correct across all instances. In the issue classification scenario, this is the proportion of incoming issues that get assigned to the correct category. 
-- Macro-accuracy: the average accuracy at the class level. In the issue classification scenario, the accuracy is measured for each category, and then these are averaged. For this metric, all classes are given equal weight. For perfectly balanced datasets (where there are an equal number of examples of each category), micro-accuracy and macro-accuracy are the same.
+- Micro-accuracy: the fraction of predictions that are correct across all instances. In the issue classification scenario, micro-accuracy is the proportion of incoming issues that get assigned to the correct category. 
+- Macro-accuracy: the average accuracy at the class level. In the issue classification scenario, the accuracy is measured for each category, and then the category accuracies are averaged. For this metric, all classes are given equal weight. For perfectly balanced datasets (where there are an equal number of examples of each category), micro-accuracy and macro-accuracy are the same.
 
 The default metric for multiclass classification problems is **micro accuracy**. The **closer to 100%, the better it is**. 
 
@@ -182,7 +182,7 @@ If your model performance score is not as good as you want it to be, you can:
 
 After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 
-In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. You can also use the model training code to re-train your model with new data.
+In addition, Model Builder outputs the code that generated the model, so that you can understand the steps used to generate the model. You can also use the model training code to retrain your model with new data.
 
 ## What's next?
 

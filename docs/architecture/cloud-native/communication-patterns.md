@@ -9,7 +9,7 @@ In a traditional monolithic application, functionality is implemented as modules
 
 When constructing cloud native systems, we implement a microservice-based architecture which consists of a large number of small, independent, self-contained services, each running in its own separate process, typically deployed inside a container to a *cluster*.
 
-A cluster represents a pool of virtual machines that federated together form a highly-available environment. Clusters are typically managed by an orchestrator which is responsible for deploying and managing the various containerized microservices. Figure 4-1, shown below, depicts a Kubernetes cluster as deployed in the Azure cloud with the fully-managed [Azure Kubernetes Services](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes).
+A cluster represents a pool of virtual machines that federated together form a highly-available environment. Clusters are typically managed by an orchestrator which is responsible for deploying and managing the various containerized microservices. Figure 4-1, shown below, depicts a Kubernetes cluster as deployed in the Azure cloud with the fully-managed [Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes).
 
 ![A Kubernetes cluster in Azure](media/kubernetes-cluster-in-azure.png)
 **Figure 4-1**. A Kubernetes cluster in Azure

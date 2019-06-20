@@ -34,7 +34,7 @@ If the cardinality of the to end is 1, the return value will be `Ref<T>`. If the
 
 ## Remarks
 
-Relationships are first-class constructs in the [!INCLUDE[adonet_edm](../../../../../../includes/adonet-edm-md.md)] (EDM). Relationships can be established between two or more entity types, and users can navigate over the relationship from one end (entity) to another. `from` and `to` are conditionally optional when there is no ambiguity in name resolution within the relationship.
+Relationships are first-class constructs in the Entity Data Model (EDM). Relationships can be established between two or more entity types, and users can navigate over the relationship from one end (entity) to another. `from` and `to` are conditionally optional when there is no ambiguity in name resolution within the relationship.
 
 NAVIGATE is valid in O and C space.
 

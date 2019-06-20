@@ -21,10 +21,10 @@ helpviewer_keywords:
 ---
 # Type-testing and conversion operators (C# reference)
 
-You can use the following operators to do type checking or type conversion:
+You can use the following operators to perform type checking or type conversion:
 
 - [is operator](#is-operator): to check if the runtime type of an expression is compatible with a given type
-- [as operator](#as-operator): to explicitly convert an expression to a given type if its runtime type is compatible with a given type
+- [as operator](#as-operator): to explicitly convert an expression to a given type if its runtime type is compatible with that type
 - [cast operator ()](#cast-operator-): to perform an explicit conversion
 - [typeof operator](#typeof-operator): to obtain the <xref:System.Type?displayProperty=nameWithType> instance for a type
 
@@ -38,15 +38,15 @@ The expression with the type-testing `is` operator has the following form
 E is T
 ```
 
-where `E` is an expression that returns a value and `T` is a name of a type or a type argument. `E` cannot be an anonymous method or a lambda expression.
+where `E` is an expression that returns a value and `T` is the name of a type or a type parameter. `E` cannot be an anonymous method or a lambda expression.
 
-The `E is T` expression returns `true` if the result of `E` is non-null and can be converted to type `T` by a reference conversion, a boxing conversion, or an unboxing conversion; otherwise, it returns `false`. In particular, the `is` operator doesn't consider user-defined conversions and numeric conversions.
+The `E is T` expression returns `true` if the result of `E` is non-null and can be converted to type `T` by a reference conversion, a boxing conversion, or an unboxing conversion; otherwise, it returns `false`. The `is` operator doesn't consider user-defined conversions.
 
-The following example demonstrates that the `is` operator returns `true` if the runtime type of an expression result derives from a given type, that is, there exists a reference conversion:
+The following example demonstrates that the `is` operator returns `true` if the runtime type of an expression result derives from a given type, that is, there exists a reference conversion between types:
 
 [!code-csharp[is with reference conversion](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#IsWithReferenceConversion)]
 
-The next example shows that the `is` operator doesn't consider numeric conversions but takes into account boxing and unboxing conversions:
+The next example shows that the `is` operator takes into account boxing and unboxing conversions but doesn't consider numeric conversions:
 
 [!code-csharp-interactive[is with int](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#IsWithInt)]
 
@@ -60,7 +60,7 @@ Starting with C# 7.0, the `is` operator also tests an expression result against 
 E is T v
 ```
 
-where `E` is an expression that returns a value, `T` is a name of a type or a type argument, and `v` is a new local variable of type `T`. If the result of `E` is non-null and can be converted to `T` by a reference, boxing, or unboxing conversion, the `E is T v` expression returns `true` and the converted value of the result of `E` is assigned to variable `v`.
+where `E` is an expression that returns a value, `T` is the name of a type or a type parameter, and `v` is a new local variable of type `T`. If the result of `E` is non-null and can be converted to `T` by a reference, boxing, or unboxing conversion, the `E is T v` expression returns `true` and the converted value of the result of `E` is assigned to variable `v`.
 
 The following example demonstrates the usage of the `is` operator with the type pattern:
 
@@ -78,7 +78,7 @@ The expression of the form
 E as T
 ```
 
-where `E` is an expression that returns a value and `T` is a name of a type or a type argument, produces the same result as
+where `E` is an expression that returns a value and `T` is the name of a type or a type parameter, produces the same result as
 
 ```csharp
 E is T ? (T)(E) : (T)null
@@ -86,7 +86,7 @@ E is T ? (T)(E) : (T)null
 
 except that `E` is only evaluated once.
 
-The `as` operator considers only reference, nullable, boxing, and unboxing conversions. In particular, you cannot use the `as` operator to perform a user-defined conversion. To do that, use the [cast operator ()](#cast-operator-).
+The `as` operator considers only reference, nullable, boxing, and unboxing conversions. You cannot use the `as` operator to perform a user-defined conversion. To do that, use the [cast operator ()](#cast-operator-).
 
 The following example demonstrates the usage of the `as` operator:
 
@@ -97,7 +97,7 @@ The following example demonstrates the usage of the `as` operator:
 
 ## Cast operator ()
 
-A cast expression of the form `(T)E` performs an explicit conversion of the value of expression `E` to type `T`. If no explicit conversion exists from the type of `E` to type `T`, a compile-time error occurs. At run time, an explicit conversion might not succeed and a cast expression might throw an exception.
+A cast expression of the form `(T)E` performs an explicit conversion of the result of expression `E` to type `T`. If no explicit conversion exists from the type of `E` to type `T`, a compile-time error occurs. At run time, an explicit conversion might not succeed and a cast expression might throw an exception.
 
 The following example demonstrates explicit numeric and reference conversions:
 
@@ -113,7 +113,7 @@ Other use of parentheses is to specify the order in which to evaluate operations
 
 ## typeof operator
 
-The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. An argument of the `typeof` operator is a name of a type or a type parameter, as the following example shows:
+The `typeof` operator obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type. An argument of the `typeof` operator must be the name of a type or a type parameter, as the following example shows:
 
 [!code-csharp-interactive[typeof operator](~/samples/csharp/language-reference/operators/TypeTestingAndConversionOperators.cs#TypeOf)]
 

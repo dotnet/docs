@@ -8,5 +8,5 @@ ms.date: 06/30/2019
 (Container Registries, Container Orchestration, Azure Dev Spaces.)
 
 >[!div class="step-by-step"]
->[Previous](combining-containers-and-serverless-approaches.md)
+>[Previous](combine-containers-serverless-approaches.md)
 >[Next](other-deployment-options.md)

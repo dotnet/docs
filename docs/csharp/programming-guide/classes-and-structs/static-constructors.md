@@ -31,7 +31,7 @@ Static constructors have the following properties:
   
 - If a static constructor throws an exception, the runtime will not invoke it a second time, and the type will remain uninitialized for the lifetime of the application domain in which your program is running. Most commonly, a <xref:System.TypeInitializationException> exception is thrown when a static constructor is unable to instantiate a type or for an unhandled exception occuring within a static constructor. For implicit static constructors that are not explicitly defined in source code, troubleshooting may require inspection of the intermediate language (IL) code.
 
-- The presence of a static constructor prevents the addition of the the <xref:System.Reflection.TypeAttributes.BeforeFieldInit> type attribute. This limits runtime optimization.
+- The presence of a static constructor prevents the addition of the <xref:System.Reflection.TypeAttributes.BeforeFieldInit> type attribute. This limits runtime optimization.
 
 - A field declared as `static readonly` may only be assigned as part of its declaration or in a static constructor. When an explicit static constructor is not required, initialize static fields at declaration, rather than through a static constructor for better runtime optimization.
 

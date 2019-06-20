@@ -59,9 +59,11 @@ The runtime delegate is called to load the managed assembly and get a function p
 [!code-cpp[HostFxrHost#LoadAndGet](~/samples/core/hosting/HostWithHostFxr/src/NativeHost/nativehost.cpp#LoadAndGet)]
 
 By passing `nullptr` as the delegate type name when calling the runtime delegate, the sample uses a default signature for the managed method:
-```C#
+
+```csharp
 public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 ```
+
 A different signature can be used by specifying the delegate type name when calling the runtime delegate.
 
 ### Step 4 - Run managed code!

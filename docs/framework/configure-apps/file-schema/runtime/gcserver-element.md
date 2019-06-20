@@ -54,13 +54,21 @@ Specifies whether the common language runtime runs server garbage collection.
 ## Remarks  
  The common language runtime (CLR) supports two types of garbage collection: workstation garbage collection, which is available on all systems, and server garbage collection, which is available on multiprocessor systems. You use the `<gcServer>` element to control the type of garbage collection the CLR performs. Use the <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType> property to determine if server garbage collection is enabled.  
   
- For single-processor computers, the default workstation garbage collection should be the fastest option. Either workstation or server can be used for two-processor computers. Server garbage collection should be the fastest option for more than two processors.  
+ For single-processor computers, the default workstation garbage collection should be the fastest option. Either workstation or server can be used for two-processor computers. Server garbage collection should be the fastest option for more than two processors. Most commonly, multiprocessor server systems disable server GC and use workstation GC instead when many instances of a server app run on the same machine.  
   
  This element can be used only in the application configuration file; it is ignored if it is in the machine configuration file.  
   
 > [!NOTE]
 >  In the .NET Framework 4 and earlier versions, concurrent garbage collection is not available when server garbage collection is enabled. Starting with the .NET Framework 4.5, server garbage collection is concurrent. To use non-concurrent server garbage collection, set the `<gcServer>` element to `true` and the [\<gcConcurrent> element](../../../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) to `false`.  
-  
+
+Starting with .NET Framework 4.6.2, you can also use the following elements to configure server GC:
+
+- [GCNoAffinitize](gcnoaffinitize-element.md), which specifies whether there is an affinity between server GC heaps and processors. By default, there is one server GC heap for each processor.
+
+- [GCHeapCount](gcheapcount-element.md), which limits the number of heaps used by a process.
+
+- [GCHeapAffinitizeMask](gcheapaffinitizemask-element.md), which defines the affinity between the available server GC heaps and individual processors.
+
 ## Example  
  The following example enables server garbage collection.  
   

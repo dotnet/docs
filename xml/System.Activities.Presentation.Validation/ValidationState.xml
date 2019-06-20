@@ -43,14 +43,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>A value that represents that validation found a child activity to be invalid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The numeric values of each of the enumeration values indicate the severity of the error. The value associated with the invalid child activity is 1.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -71,14 +63,6 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>A value that indicates that an error occurred during the validation of an activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The numeric values of each of the enumeration values indicate the severity of the error. The value associated with the error state is 3.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -99,14 +83,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>A value that indicates that an activity is valid.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The numeric values of each of the enumeration values indicate the severity of the error. The value associated with the valid state is 0.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -127,14 +103,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>A value that indicates that a warning occurred during the validation of an activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The numeric values of each of the enumeration values indicate the severity of the error. The value associated with the warning state is 2.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

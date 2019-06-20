@@ -34,15 +34,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is aborted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The workflow instance will be in this state after <xref:System.Activities.WorkflowApplication.Abort%2A> has been called. A workflow in this state is capable of being resumed using <xref:System.Activities.WorkflowApplication.Run%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is aborted. The workflow instance will be in this state after <see cref="Overload:System.Activities.WorkflowApplication.Abort" /> has been called. A workflow in this state is capable of being resumed using <see cref="Overload:System.Activities.WorkflowApplication.Run" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -62,15 +54,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A workflow in this state has exited, and its <xref:System.Activities.WorkflowApplication.Completed%2A> or <xref:System.Activities.WorkflowInvoker.InvokeCompleted> event has executed.  
-  
- ]]></format>
-        </remarks>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is complete. A workflow in this state has exited, and its <see cref="P:System.Activities.WorkflowApplication.Completed" /> delegate or <see cref="E:System.Activities.WorkflowInvoker.InvokeCompleted" /> event has executed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idle">
@@ -90,15 +74,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is idle.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A workflow in this state is waiting on an incoming event, such as when executing a <xref:System.Activities.Statements.Pick> activity, or is waiting for the expiration of a timeout, such as when executing a <xref:System.Activities.Statements.Delay> activity.  
-  
- ]]></format>
-        </remarks>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is idle. A workflow in this state is waiting on an incoming event, such as when executing a <see cref="T:System.Activities.Statements.Pick" /> activity, or is waiting for the expiration of a timeout, such as when executing a <see cref="T:System.Activities.Statements.Delay" /> activity.</summary>
       </Docs>
     </Member>
     <Member MemberName="Runnable">
@@ -118,15 +94,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> can be run.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A workflow in this state has been created, but <xref:System.Activities.WorkflowApplication.Run%2A> has not been called.  
-  
- ]]></format>
-        </remarks>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> can be run. A workflow in this state has been created but <see cref="Overload:System.Activities.WorkflowApplication.Run" /> has not been called.</summary>
       </Docs>
     </Member>
   </Members>

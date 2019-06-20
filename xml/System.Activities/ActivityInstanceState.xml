@@ -44,15 +44,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that the activity is in a canceled state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Canceled is a terminal state for an activity instance. A Canceled activity completed without performing the function it was designed to perform.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Specifies that the activity is in a canceled state.</para><para>Canceled is a terminal state for an activity instance. A Canceled activity completes without performing the function it was designed to perform.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Closed">
@@ -77,15 +69,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the activity is in a closed state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Closed is a terminal state for an activity instance. A Closed activity completed successfully and performed the function it was designed to perform.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Specifies that the activity is in a closed state.</para><para>Closed is a terminal state for an activity instance. A Closed activity completed successfully and performed the function it was designed to perform.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Executing">

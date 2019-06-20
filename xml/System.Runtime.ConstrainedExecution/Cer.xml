@@ -34,18 +34,28 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Runtime.ConstrainedExecution.Cer> enumeration specifies the behavior of a method, type, or assembly within a constrained execution region (CER). Use one of the three available values to indicate that the entity will succeed, has no knowledge of a CER, or might (deterministically) be able to report success or failure.  
+## Remarks
+ 
+The <xref:System.Runtime.ConstrainedExecution.Cer> enumeration specifies the behavior of a method, type, or assembly within a constrained execution region (CER). Use one of the three available values to indicate that the entity will succeed, has no knowledge of a CER, or might (deterministically) be able to report success or failure.  
   
- A CER provides guarantees that the region of code will execute uninterrupted even if an asynchronous exception such as an aborted thread out-of-memory exception, or stack overflow is raised.  
+A CER provides guarantees that the region of code will execute uninterrupted even if an asynchronous exception such as an aborted thread out-of-memory exception, or stack overflow is raised.  
   
-   
+However, the `Cer.None` enumeration value indicates that the method, type, or assembly has no concept of a CER. It does not take advantage of CER guarantees. This implies the following:
+
+- In the face of exceptional conditions the method might fail.  
   
-## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.ConstrainedExecution.Cer> enumeration when specifying a constrained execution region for a method. This code example is part of a larger example provided for the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.%23ctor%2A> constructor.  
+- The method might or might not report that it failed (it is non-deterministic).  
   
- [!code-csharp[System.Runtime.ConstrainedExecution#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/cs/program.cs#3)]
- [!code-vb[System.Runtime.ConstrainedExecution#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/vb/program.vb#3)]  
+- The method is not written with CERs in mind (which is the most likely scenario).  
+  
+If a method, type, or assembly is not explicitly marked to succeed, it is implicitly marked as `Cer.None`.  
+
+## Examples
+
+The following code example demonstrates the use of the <xref:System.Runtime.ConstrainedExecution.Cer> enumeration when specifying a constrained execution region for a method. This code example is part of a larger example provided for the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.%23ctor%2A> constructor.  
+  
+[!code-csharp[System.Runtime.ConstrainedExecution#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/cs/program.cs#3)]
+[!code-vb[System.Runtime.ConstrainedExecution#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/vb/program.vb#3)]  
   
  ]]></format>
     </remarks>
@@ -116,22 +126,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The method, type, or assembly has no concept of a CER. It does not take advantage of CER guarantees. This implies the following:</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
--   In the face of exceptional conditions the method might fail.  
-  
--   The method might or might not report that it failed (it is non-deterministic).  
-  
--   The method is not written with CERs in mind (which is the most likely scenario).  
-  
- If a method, type, or assembly is not explicitly marked to succeed, it is implicitly marked as `Cer.None`.  
-  
- ]]></format>
-        </remarks>
+        <summary>The method, type, or assembly has no concept of a CER. It does not take advantage of CER guarantees.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">

@@ -80,16 +80,12 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Use the host security level to give the add-in the same permissions currently granted to the hosting code.</summary>
+        <summary><para>Use the host security level to give the add-in the same permissions currently granted to the hosting code. This setting has two purposes:</para><para>- It represents the maximum permission set a host can grant to its add-ins.<para></para>- It allows a ClickOnce or an Extensible Application Markup Language (XAML) Browser Application (XBAP) host to propagate its site of origin to its add-ins, which enables them to contact the server.</para></summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This setting has two purposes:  
-  
--   It represents the maximum permission set a host can grant to its add-ins.  
-  
--   It allows a ClickOnce or an Extensible Application Markup Language (XAML) Browser Application (XBAP) host to propagate its site of origin to its add-ins, which enables them to contact the server.  
+ 
   
  ]]></format>
         </remarks>

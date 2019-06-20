@@ -22,11 +22,20 @@
   
    
   
-## Examples  
- The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
+## Examples
+
+The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#6)]  
+[!code-csharp[CFX_WorkflowApplicationExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#6)]  
+
+The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is aborted.  
   
+[!code-csharp[CFX_WorkflowApplicationExample#7](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#7)]  
+
+The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is cancelled.  
+  
+ [!code-csharp[CFX_WorkflowApplicationExample#8](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#8)]  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -48,22 +57,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should abort the workflow.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This results in <xref:System.Activities.WorkflowApplication.Aborted%2A> being called when the abort process is complete. The unhandled exception is used as the abort reason.  
-  
-   
-  
-## Examples  
- The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is aborted.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#7](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should abort the workflow. This results in the calling the delegate returned by the <see cref="P:System.Activities.WorkflowApplication.Aborted" /> bwhen the abort process is complete. The unhandled exception is used as the abort reason.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -83,22 +77,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should schedule the cancellation of the root activity and resume execution.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This results in <xref:System.Activities.WorkflowApplication.Completed%2A> being called when the cancellation process is complete.  
-  
-   
-  
-## Examples  
- The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is cancelled.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#8](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should schedule the cancellation of the root activity and resume execution. This results in a cakk ti the delegate returned by the <see cref="P:System.Activities.WorkflowApplication.Completed" /> property when the cancellation process is complete.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminate">
@@ -118,22 +97,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should schedule termination of the root activity and resume execution.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This results in <xref:System.Activities.WorkflowApplication.Completed%2A> being called when the termination process is complete. The unhandled exception is used as the termination reason. Terminate is the default action if no <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is specified.  
-  
-   
-  
-## Examples  
- The following example invokes a workflow that throws an exception. The exception is unhandled by the workflow and the <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> handler is invoked. The <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> are inspected to provide information about the exception, and the workflow is terminated.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should schedule termination of the root activity and resume execution. This results in a call to the delegate assigned to the <see cref="P:System.Activities.WorkflowApplication.Completed" />property when the termination process is complete. The unhandled exception is used as the termination reason. <see langword="Terminate" /> is the default action if no <see cref="P:System.Activities.WorkflowApplication.OnUnhandledException" /> handler is specified.</summary>
       </Docs>
     </Member>
   </Members>

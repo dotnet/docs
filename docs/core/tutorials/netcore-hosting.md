@@ -60,7 +60,7 @@ The runtime delegate is called to load the managed assembly and get a function p
 
 By passing `nullptr` as the delegate type name when calling the runtime delegate, the sample uses a default signature for the managed method:
 
-```C#
+```csharp
 public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 ```
 

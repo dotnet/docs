@@ -10,5 +10,5 @@ Although not required, Azure is very well-suited to supporting the eShopOnContai
 (expand on mapping)
 
 >[!div class="step-by-step"]
->[Previous](introducing-eshoponcontainers-reference-app.md)
->[Next](hosting-the-eshoponcontainers-application.md)
+>[Previous](introduce-eshoponcontainers-reference-app.md)
+>[Next](host-eshoponcontainers-application.md)

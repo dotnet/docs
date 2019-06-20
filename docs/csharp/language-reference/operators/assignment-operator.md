@@ -34,7 +34,7 @@ Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassi
 
 [!code-csharp[ref assignment operator](~/samples/csharp/language-reference/operators/AssignmentOperator.cs#RefAssignment)]
 
-In the case of the ref assignment operator, the type of its both operands must be the same.
+In the case of the ref assignment operator, the type of both its operands must be the same.
 
 For more information, see the [feature proposal note](~/_csharplang/proposals/csharp-7.3/ref-local-reassignment.md).
 

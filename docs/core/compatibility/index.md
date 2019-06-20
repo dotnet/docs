@@ -7,7 +7,7 @@ ms.date: 06/10/2019
 ---
 # Evaluate breaking changes in .NET Core
 
-Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true of .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
+Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true for .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
 
 - A large number of developers either originally developed or continue to develop .NET Framework applications. They expect consistent behavior across .NET implementations.
 
@@ -15,12 +15,12 @@ Throughout its history, .NET has attempted to maintain a high level of compatibi
 
 Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
 
-This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. An understanding of the how the .NET team approaches possible breaking changes is particularly helpful for developers who are opening pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
+This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who are opening pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
 
 > [!NOTE]
 > For a definition of compatibility categories, such as binary compatibility and backward compatibility, see [Breaking change categories](categories.md).
 
-The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. The ✔️ icon indicates that a particular kind of change is allowed, ❌ indicates that it is disallowed, and  ❓ indicates an change that may or may not be allowed. Changes in this last category require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was.
+The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. The ✔️ icon indicates that a particular kind of change is allowed, ❌ indicates that it is disallowed, and  ❓ indicates a change that may or may not be allowed. Changes in this last category require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was.
 
 > [!NOTE]
 > In addition to serving as a guide to how changes to .NET Core libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
@@ -91,7 +91,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   However, adding an abstract member to a type that has accessible (public or protected) constructors and is not `sealed` is not allowed.
 
-- **✔️ Restricting the visibility of a [protected](../../csharp/language-reference/keywords/protected.md) member when the type has no accessible ((public or protected) constructors, or the type is [sealed](../../csharp/language-reference/keywords/sealed.md)**
+- **✔️ Restricting the visibility of a [protected](../../csharp/language-reference/keywords/protected.md) member when the type has no accessible (public or protected) constructors, or the type is [sealed](../../csharp/language-reference/keywords/sealed.md)**
 
 - **✔️ Moving a member into a class higher in the hierarchy than the type from which it was removed**
 
@@ -99,7 +99,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   Note that introducing an override might cause previous consumers to skip over the override when calling [base](../../csharp/language-reference/keywords/base.md).
 
-- **✔️ Adding a constructor to a class, along with a default (parameterless) constructor if they class previously had no constructors**
+- **✔️ Adding a constructor to a class, along with a default (parameterless) constructor if the class previously had no constructors**
 
    However, adding a constructor to a class that previously had no constructors *without* adding the default constructor is not allowed.
 
@@ -147,12 +147,12 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **❌ Removing the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword from a member**
 
-  While this often is not a breaking change because the C# compiler tends to emit [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) IL instructions to call non-virtual methods (`callvirt` performs a null check, while a normal call doesn't), this behavior is not invariable for several reasons:
+  While this often is not a breaking change because the C# compiler tends to emit [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) Intermediate Language (IL) instructions to call non-virtual methods (`callvirt` performs a null check, while a normal call doesn't), this behavior is not invariable for several reasons:
   - C# is not the only language that .NET targets.
   
-  - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is provably not null (such as a method accessed through the[?. null propagation operator](../../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
+  - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is probably not null (such as a method accessed through the [?. null propagation operator](../../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
   
-  Making a method virtual means that consumer code would often end up calling it non-virtually.
+  Making a method virtual means that the consumer code would often end up calling it non-virtually.
 
 - **❌ Adding the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword to a member**
 
@@ -201,7 +201,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **✔️ Changing the value of a property, field, return value, or [out](../../csharp/language-reference/keywords/out-parameter-modifier.md) parameter to a more derived type**
 
-  For example, a method that returns an type of <xref:System.Object> can return a <xref:System.String> instance. (However, the method signature cannot change.)
+  For example, a method that returns a type of <xref:System.Object> can return a <xref:System.String> instance. (However, the method signature cannot change.)
 
 - **✔️ Increasing the range of accepted values for a property or parameter if the member is not [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
@@ -227,7 +227,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **✔️ Throwing a more derived exception than an existing exception**
 
-  Because the new exception is a subclass of an existing exception, previous exception handling code continues to handle the exception. For example, in .NET Framework 4, culture creation and retrieval methods began to throw an <xref:System.Globalization.CultureNotFoundException> instead of an <xref:System.ArgumentException> if the culture could not be found. Because <xref:System.Globalization.CultureNotFoundException> derives from <xref:System.ArgumentException>, this is an acceptable change.
+  Because the new exception is a subclass of an existing exception, previous exception handling code continues to handle the exception. For example, in .NET Framework 4, culture creation and retrieval methods began to throw a <xref:System.Globalization.CultureNotFoundException> instead of an <xref:System.ArgumentException> if the culture could not be found. Because <xref:System.Globalization.CultureNotFoundException> derives from <xref:System.ArgumentException>, this is an acceptable change.
 
 - **✔️ Throwing a more specific exception than <xref:System.NotSupportedException>, <xref:System.NotImplementedException>, <xref:System.NullReferenceException>**
 
@@ -284,11 +284,11 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **✔️ Improving the performance of an operation**
 
-   The ability to modify the performance of an operation is essential, but such changes can break code that relies upon the current speed of an operation. This is particularly true of code that depends on the timing of asynchronous operations. Note that the performance change should have no affect on other behavior of the API in question; otherwise, the change will be breaking.
+   The ability to modify the performance of an operation is essential, but such changes can break code that relies upon the current speed of an operation. This is particularly true of code that depends on the timing of asynchronous operations. Note that the performance change should have no effect on other behavior of the API in question; otherwise, the change will be breaking.
 
 - **✔️ Indirectly (and often adversely) changing the performance of an operation**
 
-  Assuming that the change in question is not categorized as breaking for some other reason, this is acceptable. Often, actions need to be taken that may include extra operations or that add new functionality. This will almost always affect performance but may be essential to make the API in question function as expected.
+  If the change in question is not categorized as breaking for some other reason, this is acceptable. Often, actions need to be taken that may include extra operations or that add new functionality. This will almost always affect performance but may be essential to make the API in question function as expected.
 
 - **❌ Changing a synchronous API to asynchronous (and vice versa)**
 

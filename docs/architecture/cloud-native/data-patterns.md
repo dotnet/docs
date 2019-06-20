@@ -19,7 +19,7 @@ We see such a scenario in Figure 5-4 shown below.
 
 **Figure 5-4**. Cross-Service query
 
-In the figure above we see a Shopping Basket microservice that exposes a public endpoint that adds an item to a user�s shopping basket. While the Shopping Basket�s data store contains a Basket and LineItem table, it does not contain Product or Price information. Instead those data items are found in the Product and Price microservices, respectfully. In order to add an item, Shopping Basket needs product data and pricing data. So how exactly does it obtain Product and Price data?
+In the figure above we see a Shopping Basket microservice that exposes a public endpoint that adds an item to a user's shopping basket. While the Shopping Basket's data store contains a Basket and LineItem table, it does not contain Product or Price information. Instead those data items are found in the Product and Price microservices, respectfully. In order to add an item, Shopping Basket needs product data and pricing data. So how exactly does it obtain Product and Price data?
 
 The Shopping Basket microservice could make a direct HTTP call to both the Product Catalog and Pricing Microservices as show below in Figure 5-5.
 
@@ -43,7 +43,7 @@ A more commonly accepted approach for executing cross-service queries across in 
 
 **Figure5-7**. Materialized View Pattern
 
-The pattern here is simple. In the data store for the Shopping Basket microservice, you include a local table, called a *read model*, that contains a denormalized copy of the data that is needed from Product and Pricing microservices. Directly placing the data inside the Shopping Basket microservice eliminates the need for making expensive cross-service calls and provides *locality* of data � improving response time and reliability while removing coupling and reducing architectural complexity.
+The pattern here is simple. In the data store for the Shopping Basket microservice, you include a local table, called a *read model*, that contains a denormalized copy of the data that is needed from Product and Pricing microservices. Directly placing the data inside the Shopping Basket microservice eliminates the need for making expensive cross-service calls and provides *locality* of data - improving response time and reliability while removing coupling and reducing architectural complexity.
 
 The catch is that we now have duplicate data in our system. The good news is duplicate data is not considered an anti-pattern in distributed systems. However, one and only one system can be the owner of any dataset, and you will need to set up a publish/subscribe mechanism that will enable the system of record to update all of the read models when a change to the underlying data occurs.
 
@@ -105,11 +105,11 @@ A way to understand the differences between these types of databases can be foun
 
 The theorem states that any distributed data system will offer a trade-off between consistency, availability and partition tolerance and that any database can only guarantee two of the three properties:
 
--   *Consistency* � Every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated
+-   *Consistency* - Every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated
 
--   *Availability* � Every node will return a response in a reasonable amount of time, even if that response is not the most recent data
+-   *Availability* - Every node will return a response in a reasonable amount of time, even if that response is not the most recent data
 
--   *Partition Tolerance* � Guarantees that the system will operate if a node fails or loses connectivity with another
+-   *Partition Tolerance* - Guarantees that the system will operate if a node fails or loses connectivity with another
 
 Relational databases exhibit consistency and availability, but not so much partition tolerance. Partitioning for a relational database, such as sharding, is difficult and can impact performance.
 
@@ -117,19 +117,19 @@ On the other hand, NoSQL databases typically exhibit partition tolerance (horizo
 
 NoSQL databases are often distributed and commonly scaled out across commodity servers. Doing so can provide great availability, both within and across geographical regions at a reduced cost. Data can be partitioned and replicated across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query, even if the data that it is presenting is stale and has not been updated yet.
 
-This is called [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency), a characteristic of distributed data systems where ACID transactions are not supported. It is a (brief) delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. So, if you update a product item in a NoSQL database in the United States, but at same time query another that data item from a replica node in Europe, you might retrieve the earlier product information � that is, until the European node has updated. Again, the trade-off here is that by giving up [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency), (i.e., waiting for all nodes to update before returning a query result), you are able to support enormous scale and traffic volume, but with the possibility of presenting older data.
+This is called [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency), a characteristic of distributed data systems where ACID transactions are not supported. It is a (brief) delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. So, if you update a product item in a NoSQL database in the United States, but at same time query another that data item from a replica node in Europe, you might retrieve the earlier product information - that is, until the European node has updated. Again, the trade-off here is that by giving up [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency), (i.e., waiting for all nodes to update before returning a query result), you are able to support enormous scale and traffic volume, but with the possibility of presenting older data.
 
 NoSQL databases can be categorized by one of the following four models: 
 
 -   *Document Store* (mongodb, couchdb, couchbase) - Data (and corresponding metadata) is stored non-relationally in denormalized JSON-based documents inside the database
 
--   *Key/Value Store* (redis, riak, memcached) � Data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data
+-   *Key/Value Store* (redis, riak, memcached) - Data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data
 
--   *Wide-Column Store* (hbase, Cassandra) � Related data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together
+-   *Wide-Column Store* (hbase, Cassandra) - Related data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together
 
--   *Graph stores* (neo4j, titan) � Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes
+-   *Graph stores* (neo4j, titan) - Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes
 
-NoSQL databases can be optimized to deal with large scale data needs, especially when the data is relatively simple. Consider a NoSQL database when� 
+NoSQL databases can be optimized to deal with large scale data needs, especially when the data is relatively simple. Consider a NoSQL database when:
 
 -   Your workload requires large-scale and high-concurrency
 
@@ -139,15 +139,15 @@ NoSQL databases can be optimized to deal with large scale data needs, especially
 
 -   You need to geographically distribute your data
 
--   You don�t need ACID guarantees
+-   You don't need ACID guarantees
 
 -   Will be deployed to commodity hardware
 
-Then, consider a SQL database when�
+Then, consider a SQL database when:
 
 -   Your workloads require medium to large-scale
 
--   Concurrency isn�t a major concern
+-   Concurrency isn't a major concern
 
 -   ACID guarantees are needed
 

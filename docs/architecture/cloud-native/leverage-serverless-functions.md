@@ -13,9 +13,9 @@ func init ProjectName --docker
 
 When creating an Azure Function, you must choose the programming language you want to use from these options:
 
-- dotnet (C#)
-- node (JavaScript)
-- python
+- `dotnet` (C#)
+- `node` (JavaScript)
+- `python`
 
 When the project is created, it will include a Dockerfile. Next, you can create and test your function locally. For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
 

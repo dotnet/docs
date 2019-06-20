@@ -8,6 +8,6 @@ ms.date: 06/30/2019
 Architecting complex microservices apps deployed in K8s and extended by Azure Functions
 Note how to wrap a function in a container.
 
-> [!div class="step-by-step"]
-> [Previous](leveraging-serverless-functions.md)
-> [Next](deploying-containers-in-azure.md)
+>[!div class="step-by-step"]
+>[Previous](leveraging-serverless-functions.md)
+>[Next](deploying-containers-in-azure.md)

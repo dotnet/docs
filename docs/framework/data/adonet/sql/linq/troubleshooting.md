@@ -36,7 +36,7 @@ The following information exposes some issues you might encounter in your [!INCL
 ## Expression Not Queryable  
  If you get the "Expression [expression] is not queryable; are you missing an assembly reference?" error, make sure of the following:  
   
-- Your application is targeting [!INCLUDE[compact_v35_short](../../../../../../includes/compact-v35-short-md.md)].  
+- Your application is targeting .NET Compact Framework 3.5.  
   
 - You have a reference to `System.Core.dll` and `System.Data.Linq.dll`.  
   

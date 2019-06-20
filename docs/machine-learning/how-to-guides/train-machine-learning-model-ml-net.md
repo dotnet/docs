@@ -155,7 +155,7 @@ var trainedModelParameters = trainedModel.Model as LinearRegressionModelParamete
 To help choose the best performing model, it is essential to evaluate its performance on test data. Use the [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*) method, to measure various metrics for the trained model.
 
 > [!NOTE]
-> The `Evaluate` method produces different metrics depending on which machine learning task was was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name. 
+> The `Evaluate` method produces different metrics depending on which machine learning task was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name. 
 
 ```csharp
 // Measure trained model performance

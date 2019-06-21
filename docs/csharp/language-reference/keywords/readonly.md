@@ -20,7 +20,7 @@ A `readonly` field cannot be assigned after the constructor exits. That has diff
 - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object is not immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier does not prevent the instance data of the field from being modified through the read-only field.
 
 > [!WARNING]
-> An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md) : "Do not declare read only mutable reference types."
+> An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104-do-not-declare-read-only-mutable-reference-types) : "Do not declare read only mutable reference types."
 
 - In a [`readonly struct` definition](#readonly-struct-example), `readonly` indicates that the `struct` is immutable.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes are not allowed to that reference.

@@ -384,7 +384,9 @@ C:\working> dotnet new -u C:\working\templates\consoleasync
 
 ## Template packs
 
-A template pack is a group of templates that can be installed at the same time. When you uninstall the pack, all templates are removed. The previous sections of this tutorial only installed individual templates. Sharing a template through a directory is also troublesome. Template packs 
+A template pack is a group of templates that can be installed at the same time. When you uninstall a pack, all templates contained in the pack are removed. The previous sections of this tutorial only installed individual templates. Sharing a template through a directory is also troublesome and a template pack makes distribution easy.
+
+Template packs are NuGet package (_.nupkg_) files.
 
 
 

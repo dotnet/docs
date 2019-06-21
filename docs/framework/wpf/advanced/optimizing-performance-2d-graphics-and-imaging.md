@@ -46,7 +46,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
 <a name="StreamGeometry_Objects"></a>   
 ## StreamGeometry Objects  
- The <xref:System.Windows.Media.StreamGeometry> object is a light-weight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
+ The <xref:System.Windows.Media.StreamGeometry> object is a lightweight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
   
  The following example uses attribute syntax to create a triangular <xref:System.Windows.Media.StreamGeometry> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   

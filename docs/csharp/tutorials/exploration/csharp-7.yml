@@ -46,7 +46,7 @@ items:
     Console.WriteLine(result);
     ```
 
-- title: Tuples create light-weight data structures
+- title: Tuples create lightweight data structures
   durationInMinutes: 1
   content: |
     Tuples are lightweight data structures that contain multiple fields to represent the data members. The fields are not validated, and you cannot define your own methods.

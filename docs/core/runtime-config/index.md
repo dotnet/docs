@@ -45,11 +45,14 @@ ms.author: "ronpet"
    }
    ```
 
-   The *runtimeconfig.json* file is automatically created in the build directory by the [dotnet build](..\tools\dotnet-build.md) command.
+   The *runtimeconfig.json* file is automatically created in the build directory by the [dotnet build](..\tools\dotnet-build.md) command as well as by selecting the **Build** menu option in Visual Studio. You can then edit he file once it is created.
+
+   Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
    See [Runtime configuration with runtimeconfig.json](runtimeconfig.md) for information on the available configuration options in *runtimeconfig.json*.
 
 - Environment variables.
 
-   You can define an environment variable to supply runtime configuration information. See [Runtime configuration with environment variables](envvars.md) for more information.
+   You can define an environment variable to supply runtime configuration information. Environment variables can be defined at the command line either interactively or by using a script. They can also be defined programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 
+   See [Runtime configuration with environment variables](envvars.md) for a selection of the environment variables supported by .NET Core.

@@ -26,8 +26,8 @@ In the common language runtime (CLR), the garbage collector serves as an automat
   
 - Provides memory safety by making sure that an object cannot use the content of another object.  
   
- This topic describes the core concepts of garbage collection. 
- 
+ This topic describes the core concepts of garbage collection.
+
 <a name="fundamentals_of_memory"></a>   
 ## Fundamentals of memory  
  The following list summarizes important CLR memory concepts.  
@@ -52,11 +52,12 @@ In the common language runtime (CLR), the garbage collector serves as an automat
   
 - You can run out of memory if you run out of virtual address space to reserve or physical space to commit.  
   
- Your page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low. 
- 
+ Your page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low.
+
 <a name="conditions_for_a_garbage_collection"></a>   
 ## Conditions for a garbage collection  
- Garbage collection occurs when one of the following conditions is true:  
+
+Garbage collection occurs when one of the following conditions is true:  
   
 - The system has low physical memory. This is detected by either the low memory notification from the OS or low memory indicated by the host.
   
@@ -64,9 +65,10 @@ In the common language runtime (CLR), the garbage collector serves as an automat
   
 - The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing.  
   
-<a name="the_managed_heap"></a>   
-## The managed heap  
- After the garbage collector is initialized by the CLR, it allocates a segment of memory to store and manage objects. This memory is called the managed heap, as opposed to a native heap in the operating system.  
+<a name="the_managed_heap"></a>
+## The managed heap
+
+After the garbage collector is initialized by the CLR, it allocates a segment of memory to store and manage objects. This memory is called the managed heap, as opposed to a native heap in the operating system.  
   
  There is a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.  
   
@@ -153,17 +155,21 @@ In the common language runtime (CLR), the garbage collector serves as an automat
  ![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "GC_Triggered")  
 Thread that triggers a garbage collection  
   
-<a name="manipulating_unmanaged_resources"></a>   
-## Manipulating unmanaged resources  
- If your managed objects reference unmanaged objects by using their native file handles, you have to explicitly free the unmanaged objects, because the garbage collector tracks memory only on the managed heap.  
+<a name="manipulating_unmanaged_resources"></a>
+## Manipulating unmanaged resources
+
+If your managed objects reference unmanaged objects by using their native file handles, you have to explicitly free the unmanaged objects, because the garbage collector tracks memory only on the managed heap.  
   
  Users of your managed object may not dispose the native resources used by the object. To perform the cleanup, you can make your managed object finalizable. Finalization consists of cleanup actions that you execute when the object is no longer in use. When your managed object dies, it performs cleanup actions that are specified in its finalizer method.  
   
  When a finalizable object is discovered to be dead, its finalizer is put in a queue so that its cleanup actions are executed, but the object itself is promoted to the next generation. Therefore, you have to wait until the next garbage collection that occurs on that generation (which is not necessarily the next garbage collection) to determine whether the object has been reclaimed.  
-  
-<a name="workstation_and_server_garbage_collection"></a>   
-## Workstation and server garbage collection  
- The garbage collector is self-tuning and can work in a wide variety of scenarios. You can use a configuration file setting to set the type of garbage collection based on the characteristics of the workload. The CLR provides the following types of garbage collection:  
+
+For more information on finalization, see <xref:System.Object.Finalize?displayProperty=nameWithType>.
+
+<a name="workstation_and_server_garbage_collection"></a>
+## Workstation and server garbage collection
+
+The garbage collector is self-tuning and can work in a wide variety of scenarios. You can use a configuration file setting to set the type of garbage collection based on the characteristics of the workload. The CLR provides the following types of garbage collection:  
   
 - Workstation garbage collection, which is for all client workstations and stand-alone PCs. This is the default setting for the [\<gcServer> element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) in the runtime configuration schema.  
   
@@ -188,19 +194,19 @@ Server garbage collection
   
 ### Configuring garbage collection
 
-You can use the [\<gcServer> element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) of the runtime configuration schema to specify the type of garbage collection you want the CLR to perform. When this element's `enabled` attribute is set to `false` (the default), the CLR performs workstation garbage collection. When you set the `enabled` attribute to `true`, the CLR performs server garbage collection. Most commonly, the `GCServer` element is used to configure workstation garbage collection on a system that by default uses server garbage collection. This is typically done when multiple instances of a server app run on the same system.
+You can use the [\<gcServer> element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) of the runtime configuration schema in the .NET Framework or the ["System.GC.Server"](../../core/runtime-config/runtimeconfig.md) configuration setting in the *runtimeconfig.json* file in .NET Core to specify the type of garbage collection you want the CLR to perform. When the `enabled` attribute of the \<gcServer> element is set to `false` or the value of "System.GC.Server" is `false`, the CLR performs workstation garbage collection. This is the default value. When you set the \<gcServer>'s `enabled` attribute to `true` or set the "System.GC.Server" setting to `true`, the CLR performs server garbage collection. 
   
- In the .NET Framework, concurrent garbage collection and background garbage collection, which replaces concurrent garbage collection in .NET Framework 4 and later versions, is specified with the [\<gcConcurrent> element](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) of the runtime configuration schema. The default setting is `enabled`. In .NET Core, background garbage collection is configured by    
+ In the .NET Framework, concurrent garbage collection and background garbage collection, which replaces concurrent garbage collection in .NET Framework 4 and later versions, is specified with the [\<gcConcurrent> element](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) of the runtime configuration schema. The default setting is `enabled`. In .NET Core, background garbage collection is configured with the ["System.GC.Concurrent"](../../core/runtime-config/runtimeconfig.md) configuration setting in the *runtimeconfig.json* file.
   
  You can also specify server garbage collection with unmanaged hosting interfaces. Note that ASP.NET and SQL Server enable server garbage collection automatically if your application is hosted inside one of these environments.  
 
-Starting with .NET Framework 4.6.2, some additional configuration options are available for server garbage collection. 
+Starting with .NET Framework 4.6.2, some additional configuration options are available for server garbage collection.
 
-- By default, there is an affinity between the server GC heap and a CPU. That is, in server GC, the garbage collector assumes that a process owns the machine on which it is running, so it uses all available CPUs for garbage collection. It creates a dedicated heap, as well as a GC thread and, if background garbage collection is enabled, a background GC thread for each processor. Particularly on systems with multiple running instances of a server application, this can result in poor performance. You can use the [\<GCNoAffinitize>](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) configuration setting to not affinitize server GC threads with CPUs. 
+- By default, there is an affinity between the server GC heap and a CPU. That is, in server GC, the garbage collector assumes that a process owns the machine on which it is running, so it uses all available CPUs for garbage collection. It creates a dedicated heap, as well as a GC thread and, if background garbage collection is enabled, a background GC thread for each processor. Particularly on systems with multiple running instances of a server application, this can result in poor performance. You can use the [\<GCNoAffinitize>](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) configuration setting in .NET Framework applications to not affinitize server GC threads with CPUs.
 
-- You can limit the number of heaps created by the garbage collector by using the [\<GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) configuration setting. If GC thread/processor affinity is disabled, this limits the number of GC heaps. If GC thread/processor affinity is enabled, this limits the number of GC heaps to the processors 0 to one less than the value specified by the configuration setting, 
+- You can limit the number of heaps created by the garbage collector by using the [\<GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) configuration setting in .NET Framework applications. If GC thread/processor affinity is disabled, this limits the number of GC heaps. If GC thread/processor affinity is enabled, this limits the number of GC heaps to the processors 0 to one less than the value specified by the configuration setting,
 
-- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapoaffinitizemask-element.md) configuration element to control the specific processors for which a GC heap and threads are created. You supply a decimal value that is a mask defining the processors that are available to the process.
+- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapoaffinitizemask-element.md) configuration element in .NET Framework applications to control the specific processors for which a GC heap and threads are created. You supply a decimal value that is a mask defining the processors that are available to the process.
 
 ### Comparing workstation and server garbage collection  
  The following are threading and performance considerations for workstation garbage collection:  
@@ -209,7 +215,7 @@ Starting with .NET Framework 4.6.2, some additional configuration options are av
   
      Threads that are running native code are not suspended.  
   
-- Workstation garbage collection is always used on a computer that has only one processor, regardless of the [\<gcServer>](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) setting. If you specify server garbage collection, the CLR uses workstation garbage collection with concurrency disabled.  
+- Workstation garbage collection is always used on a computer that has only one processor, regardless of the [\<gcServer>](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) setting in .NET Framework applications or the ["System.GC.Server"](../../core/runtime-config/runtimeconfig.md) setting in .NET Core applications. If you specify server garbage collection, the CLR uses workstation garbage collection with concurrency disabled.  
   
  The following are threading and performance considerations for server garbage collection:  
   
@@ -227,7 +233,7 @@ Starting with .NET Framework 4.6.2, some additional configuration options are av
   
 ## Concurrent garbage collection
 
-In workstation garbage collection (until to .NET Framework 3.5) or server garbage collection (until .NET Framework 4), you can enable concurrent garbage collection, which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish very fast. Concurrent workstation garbage collection is replaced by [background workstation garbage collection](#background-workstation-garbage-collection) in .NET Framework 4, and concurrent server garbage collection is replaced by [background server garbage collection](#background-server-garbage-collection) in .NET Framework 4.5. 
+In workstation garbage collection (until .NET Framework 3.5) or server garbage collection (until .NET Framework 4), you can enable concurrent garbage collection, which allows threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish very fast. Concurrent workstation garbage collection is replaced by [background workstation garbage collection](#background-workstation-garbage-collection) in .NET Framework 4, and concurrent server garbage collection is replaced by [background server garbage collection](#background-server-garbage-collection) in .NET Framework 4.5. 
   
 Concurrent garbage collection enables interactive applications to be more responsive by minimizing pauses for a collection. Managed threads can continue to run most of the time while the concurrent garbage collection thread is running. This results in shorter pauses while a garbage collection is occurring.  
   

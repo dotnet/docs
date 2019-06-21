@@ -1,7 +1,7 @@
 ---
 title: Make predictions with a trained model
 description: Learn to make predictions using a trained model
-ms.date: 05/03/2019
+ms.date: 06/20/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
@@ -88,7 +88,7 @@ If you access the `Score` property of the `prediction` object, you should get a 
 
 ## Batch prediction
 
-Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). Because `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.
+Given the following data, load it into an [`IDataView`](xref:Microsoft.ML.IDataView). In this case, the name of the [`IDataView`](xref:Microsoft.ML.IDataView) is `inputData`. Because `CurrentPrice` is the target or label you're trying to predict using new data, it's assumed there is no value for it at the moment.
 
 ```csharp
 // Actual data

@@ -18,7 +18,7 @@ These instructions will help you install the .NET Framework versions you need. T
 ## .NET Framework 4.8
 
 > [!div class="button"]
-> [Download .NET Framework 4.8]https://dotnet.microsoft.com/download/dotnet-framework/net48)
+> [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 The [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/releases/net48) can be used to run applications built for .NET Framework 4.0 or later.
 

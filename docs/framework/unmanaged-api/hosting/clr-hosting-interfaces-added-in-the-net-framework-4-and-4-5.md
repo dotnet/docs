@@ -10,13 +10,13 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5
-This section describes interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)], .NET Framework 4.5, and later versions into their applications. These interfaces provide methods for a host to configure and load the runtime into a process.  
+This section describes interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) in the .NET Framework 4, .NET Framework 4.5, and later versions into their applications. These interfaces provide methods for a host to configure and load the runtime into a process.  
   
  Starting with the .NET Framework 4, all hosting interfaces have the following characteristics:  
   
 - They use lifetime management (`AddRef` and `Release`), encapsulation (implicit context) and `QueryInterface` from COM.  
   
-- There do not use COM types such as `BSTR`, `SAFEARRAY`, or `VARIANT`.  
+- They do not use COM types such as `BSTR`, `SAFEARRAY`, or `VARIANT`.  
   
 - There are no apartment models, aggregation, or registry activation that use the [CoCreateInstance function](https://go.microsoft.com/fwlink/?LinkId=142894).  
   

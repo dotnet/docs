@@ -115,7 +115,7 @@ Discards are supported in the following scenarios:
 * In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
 * As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 
-The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains a data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
+The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
 
 [!code-csharp[Tuple-discard](~/samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
@@ -291,7 +291,7 @@ not an expression, there were C# constructs where you couldn't use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
-constructs, C# 7.0 introduces *throw expressions*.
+constructs, C# 7.0 introduces [*throw expressions*](../language-reference/keywords/throw.md#the-throw-expression).
 
 This addition makes it easier to write more expression-based code. You don't need additional statements for error checking.
 

@@ -38,7 +38,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
   
 |Value|Description|  
 |-----------|-----------------|  
-|4096|The locale ID that represents an alternate sort order. In this case, 4096 represents the sort order of the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)] and earlier versions.|  
+|4096|The locale ID that represents an alternate sort order. In this case, 4096 represents the sort order of the .NET Framework 3.5 and earlier versions.|  
   
 ### Child Elements  
  None.  
@@ -51,7 +51,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the .NET Framework 4 conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)] and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
+ Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the .NET Framework 4 conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the .NET Framework 3.5 and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
   
 > [!IMPORTANT]
 >  Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.  
@@ -70,13 +70,13 @@ Specifies that the runtime should use legacy sort orders when performing string 
 sta follows a in the sort order.  
 ```  
   
- This is completely different from the output that is displayed when you run the example on the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
+ This is completely different from the output that is displayed when you run the example on the .NET Framework 3.5.  
   
 ```  
 sta equals a in the sort order.  
 ```  
   
- However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4, the output is identical to that produced by the example when it is run on the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
+ However, if you add the following configuration file to the example's directory and then run the example on the .NET Framework 4, the output is identical to that produced by the example when it is run on the .NET Framework 3.5.  
   
 ```xml  
 <?xml version ="1.0"?>  

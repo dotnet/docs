@@ -23,7 +23,7 @@ CAST ( expression AS data_type )
  Returns the same value as `data_type`.  
   
 ## Remarks  
- The cast expression has similar semantics to the [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] CONVERT expression. The cast expression is used to convert a value of one type into a value of another type.  
+ The cast expression has similar semantics to the Transact-SQL CONVERT expression. The cast expression is used to convert a value of one type into a value of another type.  
   
 ```  
 CAST( e as T )  

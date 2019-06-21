@@ -36,7 +36,7 @@ The `ClientConnectionID` is available for a <xref:System.Data.SqlClient.SqlConne
 
 ADO.NET also sends a thread-specific activity ID. The activity ID is captured in the extended events sessions if the sessions are started with the TRACK_CAUSALITY option enabled. For performance issues with an active connection, you can get the activity ID from the client's data access trace (`ActivityID` field) and then locate the activity ID in the extended events output. The activity ID in extended events is a 16-byte GUID (not the same as the GUID for the client connection ID) appended with a four-byte sequence number. The sequence number represents the order of a request within a thread and indicates the relative ordering of batch and RPC statements for the thread. The `ActivityID` is currently optionally sent for SQL batch statements and RPC requests when data access tracing is enabled on and the 18th bit in the data access tracing configuration word is turned ON.
 
-The following is a sample that uses [!INCLUDE[tsql](../../../../includes/tsql-md.md)] to start an extended events session that will be stored in a ring buffer and will record the activity ID sent from a client on RPC and batch operations.
+The following is a sample that uses Transact-SQL to start an extended events session that will be stored in a ring buffer and will record the activity ID sent from a client on RPC and batch operations.
 
 ```sql
 create event session MySession on server

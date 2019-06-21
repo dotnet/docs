@@ -35,7 +35,7 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
 |Value|Description|  
 |-----------|-----------------|  
 |true|Request explicit stack sizes.|  
-|false|Use the default stack size. This is the default for the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)].|  
+|false|Use the default stack size. This is the default for the .NET Framework 4.|  
   
 ### Child Elements  
  None.  

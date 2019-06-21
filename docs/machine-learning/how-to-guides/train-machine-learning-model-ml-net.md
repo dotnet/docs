@@ -1,10 +1,10 @@
 ---
 title: Train and evaluate a model
-description: Learn how to train and evaluate machine learning models in ML.NET
-ms.date: 05/03/2019
+description: Learn how to build machine learning models, extract learned parameters and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
+ms.date: 06/11/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc, how-to
+ms.custom: mvc, how-to, title-hack-0612
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---
 
@@ -111,7 +111,7 @@ IEstimator<ITransformer> dataPrepEstimator =
 // Create data prep transformer
 ITransformer dataPrepTransformer = dataPrepEstimator.Fit(trainData);
 
-// Apply tranforms to training data
+// Apply transforms to training data
 IDataView transformedTrainingData = dataPrepTransformer.Transform(trainData);
 ```
 
@@ -132,7 +132,7 @@ var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelCol
 Once the data is pre-processed, use the [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase`2.Fit*) method to train the machine learning model with the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm.
 
 ```csharp
-// Define StochasticDualCoodrinateAscent regression algorithm estimator
+// Define StochasticDualCoordinateAscent regression algorithm estimator
 var sdcaEstimator = mlContext.Regression.Trainers.Sdca();
 
 // Build machine learning model
@@ -155,7 +155,7 @@ var trainedModelParameters = trainedModel.Model as LinearRegressionModelParamete
 To help choose the best performing model, it is essential to evaluate its performance on test data. Use the [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*) method, to measure various metrics for the trained model.
 
 > [!NOTE]
-> The `Evaluate` method produces different metrics depending on which machine learning task was was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name. 
+> The `Evaluate` method produces different metrics depending on which machine learning task was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name. 
 
 ```csharp
 // Measure trained model performance

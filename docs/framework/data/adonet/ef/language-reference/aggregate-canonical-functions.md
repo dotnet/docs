@@ -219,7 +219,7 @@ select avg(ol.Quantity) from LOB.OrderLines as ol group by 1
 
 Expressions inside the group-based aggregate are evaluated within the name-resolution scope that would be visible to the WHERE clause expression.
 
-As in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], group-based aggregates can also specify an ALL or DISTINCT modifier. If the DISTINCT modifier is specified, duplicates are eliminated from the aggregate input collection, before the aggregate is computed. If the ALL modifier is specified (or if no modifier is specified), no duplicate elimination is performed.
+As in Transact-SQL, group-based aggregates can also specify an ALL or DISTINCT modifier. If the DISTINCT modifier is specified, duplicates are eliminated from the aggregate input collection, before the aggregate is computed. If the ALL modifier is specified (or if no modifier is specified), no duplicate elimination is performed.
 
 ## See also
 

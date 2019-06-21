@@ -22,7 +22,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CoEEShutDownCOM Function
-Forces the common language runtime (CLR) to release all interface pointers it holds inside runtime callable wrappers (RCW). This has the effect of releasing all RCW caches. This global function is deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Instead, use the entry point for a specific runtime.  
+Forces the common language runtime (CLR) to release all interface pointers it holds inside runtime callable wrappers (RCW). This has the effect of releasing all RCW caches. This global function is deprecated in the .NET Framework 4. Instead, use the entry point for a specific runtime.  
   
 ## Syntax  
   

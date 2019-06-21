@@ -65,7 +65,7 @@ In applications, it is possible that handlers that are attached to event sources
      Similarly, if your code uses the following pattern to unsubscribe from an event:  
   
     ```  
-    source.SomeEvent -= new SomeEventEventHandler(OnSome);  
+    source.SomeEvent -= new SomeEventEventHandler(OnSomeEvent);  
     ```  
   
      Change it to the following pattern:  

@@ -18,7 +18,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Shows how to create an asynchronous solution by using [async](../csharp/language-reference/keywords/async.md) and [await](../csharp/language-reference/keywords/await.md).  
   
  [Creating a Windows Runtime Component in C# or Visual Basic and Calling it from JavaScript](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)  
- Shows how to create a [!INCLUDE[wrt](~/includes/wrt-md.md)] type, package it in a [!INCLUDE[wrt](~/includes/wrt-md.md)] component, and then call the component from a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app that's built for Windows by using JavaScript.  
+ Shows how to create a Windows Runtime type, package it in a Windows Runtime component, and then call the component from a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app that's built for Windows by using JavaScript.  
   
  [Office Programming (C# and Visual Basic)](../csharp/programming-guide/interop/walkthrough-office-programming.md)  
  Shows how to create an Excel workbook and a Word document by using C# and Visual Basic.  

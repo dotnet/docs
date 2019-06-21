@@ -1,16 +1,14 @@
 ---
-title: 'Tutorial: Build an ML.NET custom image classifier with TensorFlow'
-description: Discover how to build an ML.NET custom image classifier in a TensorFlow transfer learning scenario to classify images by reusing a pre-trained TensorFlow model.
-ms.date: 05/06/2019
+title: 'Tutorial: Retrain TensorFlow image classifier - transfer learning'
+description: Learn how to retrain an image classification TensorFlow model with transfer learning and ML.NET. The original model was trained to classify individual images. After retraining, the new model organizes the images into broad categories.
+ms.date: 06/12/2019
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
-# Tutorial: Build an ML.NET custom image classifier with TensorFlow
+# Tutorial: Retrain a TensorFlow image classifier with transfer learning and ML.NET
 
-This sample tutorial illustrates how you can use an already trained Image Classifier `TensorFlow` model to build a new custom model to classify images into a few categories.
-
-What if you could reuse a model that's already been pre trained to solve a similar problem and retrain either all or some of the layers of that model to make it solve your problem? This technique of reusing part of an already trained model to build a new model is known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning).
+Learn how to retrain an image classificaton TensorFlow model with transfer learning and ML.NET. The original model was trained to classify individual images. After retraining, the new model organizes the images into broad categories. 
 
 Training an [Image Classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, transfer learning allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU).
 
@@ -19,6 +17,10 @@ In this tutorial, you learn how to:
 > * Understand the problem
 > * Reuse and tune the pre-trained model
 > * Classify Images
+
+## What is transfer learning?
+
+What if you could reuse a model that's already been pre trained to solve a similar problem and retrain either all or some of the layers of that model to make it solve your problem? This technique of reusing part of an already trained model to build a new model is known as [transfer learning](https://en.wikipedia.org/wiki/Transfer_learning).
 
 ## Image classification sample overview
 

@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
 ---
 # Named and Optional Arguments (C# Programming Guide)
-[!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] introduces named and optional arguments. *Named arguments* enable you to specify an argument for a particular parameter by associating the argument with the parameter's name rather than with the parameter's position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.  
+C# 4 introduces named and optional arguments. *Named arguments* enable you to specify an argument for a particular parameter by associating the argument with the parameter's name rather than with the parameter's position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.  
   
  When you use named and optional arguments, the arguments are evaluated in the order in which they appear in the argument list, not the parameter list.  
   

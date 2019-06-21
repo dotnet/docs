@@ -51,10 +51,6 @@ The result is an error message:
 
 `'MyDerivedC': cannot derive from sealed type 'SealedClass'`
 
-## C# language specification
-
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-
 ## Remarks
 
 To determine whether to seal a class, method, or property, you should generally consider the following two points:
@@ -62,6 +58,10 @@ To determine whether to seal a class, method, or property, you should generally 
 - The potential benefits that deriving classes might gain through the ability to customize your class.
 
 - The potential that deriving classes could modify your classes in such a way that they would no longer work correctly or as expected.
+
+## C# language specification
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
 

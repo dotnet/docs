@@ -40,7 +40,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 - <xref:System.Windows.Forms.TabControl>  
   
- The following controls support owner drawing only in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]:  
+ The following controls support owner drawing only in .NET Framework 2.0:  
   
 - <xref:System.Windows.Forms.ToolTip>  
   
@@ -48,7 +48,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
 - <xref:System.Windows.Forms.TreeView>  
   
- The following controls support owner drawing and are new in [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]:  
+ The following controls support owner drawing and are new in .NET Framework 2.0:  
   
 - <xref:System.Windows.Forms.DataGridView>  
   

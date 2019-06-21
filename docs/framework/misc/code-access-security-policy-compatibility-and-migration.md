@@ -13,7 +13,7 @@ ms.author: "mairaw"
 
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
-The policy portion of code access security (CAS) has been made obsolete in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. As a result, you may encounter compilation warnings and runtime exceptions if you call the obsolete policy types and members [explicitly](#explicit_use) or [implicitly](#implicit_use) (through other types and members).
+The policy portion of code access security (CAS) has been made obsolete in the .NET Framework 4. As a result, you may encounter compilation warnings and runtime exceptions if you call the obsolete policy types and members [explicitly](#explicit_use) or [implicitly](#implicit_use) (through other types and members).
 
 You can avoid the warnings and errors by either:
 
@@ -21,7 +21,7 @@ You can avoid the warnings and errors by either:
 
    \- or -
 
-- Using the [<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) to opt into the legacy CAS policy behavior.
+- Using the [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) to opt into the legacy CAS policy behavior.
 
 This topic contains the following sections:
 
@@ -137,7 +137,7 @@ If you want to sandbox an assembly, use the <xref:System.AppDomain.CreateDomain%
 
 ## Compatibility: Using the CAS Policy Legacy Option
 
-The [<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) lets you specify that a process or library uses legacy CAS policy. When you enable this element, the policy and evidence overloads will work as they did in previous versions of the framework.
+The [\<NetFx40_LegacySecurityPolicy> configuration element](../../../docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) lets you specify that a process or library uses legacy CAS policy. When you enable this element, the policy and evidence overloads will work as they did in previous versions of the framework.
 
 > [!NOTE]
 > CAS policy behavior is specified on a runtime version basis, so modifying CAS policy for one runtime version does not affect the CAS policy of another version.

@@ -1,31 +1,403 @@
 ---
 title: Create a custom template for dotnet new
 description: Learn how to create a custom template for the dotnet new command in this fun tutorial.
-author: mairaw
-ms.date: 08/12/2017
+author: thraka
+ms.date: 06/21/2019
 ms.custom: seodec18
 ---
+
 # Create a custom template for dotnet new
 
-This tutorial shows you how to:
+With .NET Core, you can create and deploy templates that generate projects, files, even resources. This tutorial teaches you how to build different .NET Core templates. You'll also learn how to create a template pack to easily distribute one or more templates. This tutorial shows you how to:
 
-- Create a basic template from an existing project or a new console app project.
-- Pack the template for distribution at nuget.org or from a local *nupkg* file.
-- Install the template from nuget.org, a local *nupkg* file, or the local file system.
-- Uninstall the template.
-
-If you prefer to proceed through the tutorial with a complete sample, download the [sample project template](https://github.com/dotnet/dotnet-template-samples/tree/master/16-nuget-package). The sample template is configured for NuGet distribution.
-
-If you wish to use the downloaded sample with file system distribution, do the following:
-
-- Move the contents of the *content* folder of the sample up one level into the *GarciaSoftware.ConsoleTemplate.CSharp* folder.
-- Delete the empty *content* folder.
-- Delete the *nuspec* file.
+- Create an item template that generates a code file.
+- Create a project template that generates a .NET Core Project.
+- Create a _.csporj_ project file used for building a _.nupkg_ template pack.
+- Install, test, and uninstall a template pack.
 
 ## Prerequisites
 
-- Install the [.NET Core 2.0 SDK](https://www.microsoft.com/net/core) or later versions.
-- Read the reference topic [Custom templates for dotnet new](../tools/custom-templates.md).
+- Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later versions.
+- The "working folder" structure used by this tutorial.
+
+  Create a new working folder to contain your work during this tutorial. This tutorial will refer to that folder as the _working_ folder. This folder should have a single subfolder named _templates_.
+
+  ```console
+  working
+  └───templates
+  ```
+
+  Open a terminal and navigate to the _working\templates_ folder.
+
+- Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
+
+  The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
+
+## Create an item template
+
+An item template is a specific type of template that produces one or more files, but doesn't produce a complete project. These types of templates are useful when you want to generate something like a config file, a code file, or a solution file. In this example you'll create a class that adds an extension method to the string type, of which you can deploy through the template system.
+
+Open a terminal and navigate to the _working\templates_ folder and create a new subfolder named _extensions_. Enter the folder.
+
+```console
+working
+└───templates
+    └───extensions
+```
+
+Create a new file named _CommonExtensions.cs_ and open it with your favorite text editor. This class will provide an extension method named `Reverse` that reverses the contents of a string. Paste in the following code and save the file:
+
+```csharp
+using System;
+
+namespace System
+{
+    public static class StringExtensions
+    {
+        public static string Reverse(this string value)
+        {
+            var tempArray = value.ToCharArray();
+            Array.Reverse(tempArray);
+            return new string(tempArray);
+        }
+    }
+}
+```
+
+Now that you have the content of the template created, you need to create the template config. Because we'll designate the _extensions_ folder as the folder that contains our template, any file or folder inside of this folder will automatically be part of template, except for the _.template.config_ folder.
+
+### Create the template config
+
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this example, your template folder is located at _working\templates\extensions_. The _extensions_ folder needs to have this special folder and config file created.
+
+First, create a new subfolder named _.template.config_, enter it. Then, create a new file named _template.json_. Your folder structure should look like this:
+
+```console
+working
+└───templates
+    └───extensions
+        └───.template.config
+                template.json
+```
+
+Open the _template.json_ with your favorite text editor and paste in the following json code and save it:
+
+```json
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "Common", "Code" ],
+  "identity": "ExampleTemplate.StringExtensions",
+  "name": "Example templates: string extensions",
+  "shortName": "stringext",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}
+```
+
+This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `item`. This designates your template as an item template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core suggests users filter on if they want to, for example, list all item templates.
+
+The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They are two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Open your terminal and from the _extensions_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./` 
+
+This command outputs the list of templates installed, which should include yours.
+
+```console
+C:\working\templates\extensions> dotnet new -i .\
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+
+... cut to save space ...
+
+Templates                                         Short Name            Language          Tags
+-------------------------------------------------------------------------------------------------------------------------------
+Example templates: string extensions              stringext             [C#]              Common/Code
+Console Application                               console               [C#], F#, VB      Common/Console
+Class library                                     classlib              [C#], F#, VB      Common/Library
+WPF Application                                   wpf                   [C#], VB          Common/WPF
+Windows Forms (WinForms) Application              winforms              [C#], VB          Common/WinForms
+Worker Service                                    worker                [C#]              Common/Worker/Web
+```
+
+### Test the item template
+
+Now that you have an item template installed, test it. Navigate to the _working/_ folder and create a new folder named _test_. Enter _test_ and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+
+```console
+C:\working\temp> dotnet new console
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on C:\working\temp\temp.csproj...
+  Restore completed in 54.82 ms for C:\working\temp\temp.csproj.
+
+Restore succeeded.
+```
+
+```console
+C:\working\temp> dotnet run
+Hello World!
+```
+
+Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from your template.
+
+```console
+C:\working\temp> dotnet new stringext
+The template "Example templates: string extensions" was created successfully.
+```
+
+Change the code in _program.cs_ reverse the `"Hello World"` string with the extension method provided by your template.
+
+```csharp
+Console.WriteLine("Hello World!".Reverse());
+```
+
+Run the program again and you'll see that the result is reversed.
+
+```console
+C:\working\temp> dotnet run
+!dlroW olleH
+```
+
+Congratulations! You just created and deployed an item template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete the _temp_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
+
+### Uninstall the template
+
+Because you installed the template by using a file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
+
+```console
+C:\working> dotnet new -u
+Template Instantiation Commands for .NET Core CLI
+
+Currently installed items:
+  Microsoft.DotNet.Common.ItemTemplates
+    Templates:
+      dotnet gitignore file (gitignore)
+      global.json file (globaljson)
+      NuGet Config (nugetconfig)
+      Solution File (sln)
+      Dotnet local tool manifest file (tool-manifest)
+      Web Config (webconfig)
+
+... cut to save space ...
+
+  NUnit3.DotNetNew.Template
+    Templates:
+      NUnit 3 Test Project (nunit) C#
+      NUnit 3 Test Item (nunit-test) C#
+      NUnit 3 Test Project (nunit) F#
+      NUnit 3 Test Item (nunit-test) F#
+      NUnit 3 Test Project (nunit) VB
+      NUnit 3 Test Item (nunit-test) VB
+  C:\working\templates\extensions
+    Templates:
+      Example templates: string extensions (stringext) C#
+```
+
+```console
+C:\working> dotnet new -u C:\working\templates\extensions
+```
+
+## Create a project template
+
+Project templates produce ready-to-run projects which make it easy for users to start with a working set of code. .NET Core includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 8.0 and produces an `async main` entry point.
+
+Starting in the `working\templates\` folder you created in the [prerequisites](#prerequisites) section, create a new folder named `consoleasync` and enter it. Create a new console project with `dotnet new console`.
+
+Open a terminal and navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template. .NET Core also created an _obj_ folder, delete that folder, you do not need it.
+
+```console
+working
+└───templates
+    └───consoleasync
+            consoleasync.csproj
+            Program.cs
+```
+
+### Edit Program.cs
+
+Open up the _program.cs_ file. The console project doesn't use an asynchronous entry point, so let's add that. Change your code to the following and save the file:
+
+```csharp
+using System;
+using System.Threading.Tasks;
+
+namespace consoleasync
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            await Console.Out.WriteAsync("Hello World with C# 8.0!");
+        }
+    }
+}
+```
+
+### Edit consoleasync.csproj
+
+Let's update the C# language version the project uses to version 8.0. Edit the _consoleasync.csproj_ file and add the `<LangVersion>` setting to a `<PropertyGroup>` node.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <LangVersion>8.0</LangVersion>
+
+  </PropertyGroup>
+  
+</Project>
+```
+
+### Test the project
+
+Before you finalize a project template, you should test it to make sure it compiles and runs without issue. In your terminal, run the `dotnet run` command and you should see the the new output:
+
+```console
+C:\working\templates\consoleasync>dotnet run
+Hello World with C# 8.0!
+```
+
+### Create the template config
+
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this example, your template folder is located at _working\templates\consoleasync_. The _consoleasync_ folder needs to have this special folder and config file created.
+
+First, create a new subfolder named _.template.config_, enter it. Then, create a new file named _template.json_. Your folder structure should look like this:
+
+```console
+working
+└───templates
+    └───consoleasync
+        └───.template.config
+                template.json
+```
+
+> [!NOTE]
+> If you followed along in the [Create an item template](#create-an-item-template) section, you can copy and paste the _.template.config_ folder from the _extensions_ folder to the _consoleasync_ folder. But remember to change the _.template.config_ file.
+
+Open the _template.json_ with your favorite text editor and paste in the following json code and save it:
+
+```json
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "Common", "Console", "C#8" ],
+  "identity": "ExampleTemplate.AsyncProject",
+  "name": "Example templates: async project",
+  "shortName": "consoleasync",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
+```
+
+This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `project`. This designates your template as a project template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core suggests users filter on if they want to, for example, list all item templates.
+
+The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They are two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Prior to installing, make sure that you delete any extra files folders and files you do not want included in your template, such as the _bin_ and _obj_ folders. Open your terminal and from the _consoleasync_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./` 
+
+This command outputs the list of templates installed, which should include yours.
+
+```console
+C:\working\templates\consoleasync> dotnet new -i .\
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+
+... cut to save space ...
+
+Templates                                         Short Name            Language          Tags
+-------------------------------------------------------------------------------------------------------------------------------
+Console Application                               console               [C#], F#, VB      Common/Console
+Example templates: async project                  consoleasync          [C#]              Common/Console/C#8
+Class library                                     classlib              [C#], F#, VB      Common/Library
+WPF Application                                   wpf                   [C#], VB          Common/WPF
+Windows Forms (WinForms) Application              winforms              [C#], VB          Common/WinForms
+Worker Service                                    worker                [C#]              Common/Worker/Web
+```
+
+### Test the item template
+
+Now that you have an item template installed, test it. Navigate to the _working/_ folder and create a new folder named _test_. Enter _test_ and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+
+```console
+C:\working\temp> dotnet new consoleasync
+The template "Example templates: async project" was created successfully.
+```
+
+```console
+C:\working\temp> dotnet run
+Hello World with C# 8.0!
+```
+
+Congratulations! You just created and deployed a project template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete the _temp_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
+
+### Uninstall the template
+
+Because you installed the template by using a file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
+
+```console
+C:\working> dotnet new -u
+Template Instantiation Commands for .NET Core CLI
+
+Currently installed items:
+  Microsoft.DotNet.Common.ItemTemplates
+    Templates:
+      dotnet gitignore file (gitignore)
+      global.json file (globaljson)
+      NuGet Config (nugetconfig)
+      Solution File (sln)
+      Dotnet local tool manifest file (tool-manifest)
+      Web Config (webconfig)
+
+... cut to save space ...
+
+  NUnit3.DotNetNew.Template
+    Templates:
+      NUnit 3 Test Project (nunit) C#
+      NUnit 3 Test Item (nunit-test) C#
+      NUnit 3 Test Project (nunit) F#
+      NUnit 3 Test Item (nunit-test) F#
+      NUnit 3 Test Project (nunit) VB
+      NUnit 3 Test Item (nunit-test) VB
+  C:\working\templates\consoleasync
+    Templates:
+      Example templates: async project (consoleasync) C#
+```
+
+```console
+C:\working> dotnet new -u C:\working\templates\consoleasync
+```
+
+## Template packs
+
+A template pack is a group of templates that can be installed at the same time. When you uninstall the pack, all templates are removed. The previous sections of this tutorial only installed individual templates. Sharing a template through a directory is also troublesome. Template packs 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Create a template from a project
 

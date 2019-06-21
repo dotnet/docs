@@ -121,7 +121,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Normalize the data using min-max normalization using the [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) method.
+Normalization can be applied to columns with single numerical values as well as vectors. Normalize the data in the `Price` column using min-max normalization with the [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) method.
 
 ```csharp
 // Define min-max estimator

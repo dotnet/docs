@@ -7,12 +7,12 @@ ms.date: 06/30/2019
 
 Throughout this book, we've evangelized the merits of moving beyond traditional monolithic application design and embracing a microservice-based architecture where a set of distributed, self-contained services run independently and communicate with each other using standard communication protocols such as HTTP and HTTPS. While such an architecture buys you many important benefits, it also presents many challenges. Consider for example the following concerns:
 
-- *Out-of-process network communication* Each service communicates over a network protocol which introduces network congestion, latency and transient faults 
+- *Out-of-process network communication* - Each service communicates over a network protocol which introduces network congestion, latency and transient faults.
 - *Service discovery* - With each service running across a cluster of machines with its own IP address and port, how do services discover and communicate with each other?
-- *Resiliency and failover* How do we manage short-lived failures and keep the system stable?
-- *Load balancing* How does inbound traffic get distributed across multiple instances of a service?
-- *Security* How are security concerns such as transport-level encryption and certificate management enforced?
-- *Distributed Monitoring* How do you correlate and capture traceability and monitoring for a single request across multiple consuming services?
+- *Resiliency and failover* - How do we manage short-lived failures and keep the system stable?
+- *Load balancing* - How does inbound traffic get distributed across multiple instances of a service?
+- *Security* - How are security concerns such as transport-level encryption and certificate management enforced?
+- *Distributed Monitoring* - How do you correlate and capture traceability and monitoring for a single request across multiple consuming services?
 
 While these concerns can be addressed with various libraries and frameworks, implementing them inside your codebase can be expensive, complex and time-consuming. Moreover, you end up with a solution where infrastructure concerns are coupled to business logic.
 

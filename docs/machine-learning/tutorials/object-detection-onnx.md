@@ -101,11 +101,11 @@ The Open Neural Network Exchange (ONNX) is an open source format for AI models. 
 
     Add the following using statements.
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetPrediction.cs#L1)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetPrediction.cs#L1)]
 
     Then, add the following code to define your `ImageNetPrediction` class.
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L5-L9)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L5-L9)]
 
 ## Use pre-trained ONNX model
 
@@ -136,7 +136,7 @@ In order to score using the pre-trained ONNX model, create a helper class called
 
 1. Next, inside the `OnnxModelScorer` class, define global variables that will be used during scoring. 
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L13-L18)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L13-L18)]
 
     - *imagesFolder* is the path where the images are stored.
     - *modelLocation* is the path where the pre-trained ONNX model is stored.
@@ -144,8 +144,8 @@ In order to score using the pre-trained ONNX model, create a helper class called
     - *_boundingBoxes* stores the post-processed data output by the `YoloWinMlParser`.
     - *_parser* is an instance of another helper class `YoloWinMlParser` that post-processes the scored data output by the `ApplyOnnxTransform`.
 
-1. Add a constructor to the OnnxModelScorer
+1. Initialize the `imagesFolder`, `modelLocation` and `mlContext` variables inside the constructor
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L13-L18)]
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L20-L25)]
 
 ## Detect objects

@@ -21,7 +21,7 @@ ms.assetid: 1883365f-9d6c-4ccb-9187-df309f47706d
   
  Note that the data type specified in the generic parameter `T` of the <xref:System.Data.DataRowExtensions.Field%2A> method and the <xref:System.Data.DataRowExtensions.SetField%2A> method must match the type of the underlying value. Otherwise, an <xref:System.InvalidCastException> exception will be thrown. The specified column name must also match the name of a column in the <xref:System.Data.DataSet>, or an <xref:System.ArgumentException> will be thrown. In both cases, the exception is thrown at run time during the enumeration of the data when the query is executed.  
   
- The <xref:System.Data.DataRowExtensions.SetField%2A> method itself does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the [!INCLUDE[ado_whidbey_long](../../../../includes/ado-whidbey-long-md.md)] behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the <xref:System.Data.DataRow> object.  
+ The <xref:System.Data.DataRowExtensions.SetField%2A> method itself does not perform any type conversions. This does not mean, however, that a type conversion will not occur. The <xref:System.Data.DataRowExtensions.SetField%2A> method exposes the ADO.NET behavior of the <xref:System.Data.DataRow> class. A type conversion could be performed by the <xref:System.Data.DataRow> object and the converted value would then be saved to the <xref:System.Data.DataRow> object.  
   
 ## See also
 

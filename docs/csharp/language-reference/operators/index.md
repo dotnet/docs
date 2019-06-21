@@ -47,7 +47,7 @@ These are the highest precedence operators.
 
 [new](../keywords/new-operator.md) – type instantiation.
 
-[typeof](../keywords/typeof.md) – returns the <xref:System.Type> object representing the operand.
+[typeof](type-testing-and-conversion-operators.md#typeof-operator) – returns the <xref:System.Type> object representing the operand.
 
 [checked](../keywords/checked.md) – enables overflow checking for integer operations.
 
@@ -81,7 +81,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[(T)x](invocation-operator.md) – type casting.
+[(T)x](type-testing-and-conversion-operators.md#cast-operator-) – type casting.
 
 [await](../keywords/await.md) – awaits a `Task`.
 
@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x >= y](comparison-operators.md#greater-than-or-equal-operator-) – greater than or equal to.
 
-[is](../keywords/is.md) – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
+[is](type-testing-and-conversion-operators.md#is-operator) – type compatibility. Returns `true` if the evaluated left operand can be cast to the type specified by the right operand.
 
-[as](../keywords/as.md) – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.
+[as](type-testing-and-conversion-operators.md#as-operator) – type conversion. Returns the left operand cast to the type specified by the right operand, but `as` returns `null` where `(T)x` would throw an exception.
 
 ## Equality operators
 

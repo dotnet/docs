@@ -84,13 +84,28 @@ The Open Neural Network Exchange (ONNX) is an open source format for AI models. 
 
 1. Create a `DataStructures` directory in your *DeepLearning_ObjectDetection_Onnx* project.
 1. Create a class called `ImageNetData`.
-1.
 
+    Add the following using statements.
 
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L1)]
+
+    Then, add the following code to define your `ImageNetData` class.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L5-L12)]
+
+    Finally, add the following code to define your `ImageNetProbability` class.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L14-L18)]
 
 1. Create a class called `ImageNetPrediction`
 
-~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L59-L62
+    Add the following using statements.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetPrediction.cs#L1)]
+
+    Then, add the following code to define your `ImageNetPrediction` class.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L5-L9)]
 
 ## Use pre-trained ONNX model
 
@@ -106,15 +121,31 @@ Tiny YOLOv2 can detect 20 different classes of objects.
 
 ### Inspecting the model
 
-1. Open the Tiny
+**PLACEHOLDER**
+Explain in this section how to use Netron to inspect models 
 
+### Scoring the model
 
-Using line numbers: 
+In order to score using the pre-trained ONNX model, create a helper class called `OnnxModelScorer`
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L59-L62)]
+1. In Solution Explorer, right-click the project, and then select Add > New Item.
+1. In the Add New Item dialog box, select Class and change the Name field to *OnnxModelScorer.cs*. Then, select the Add button.
+1. When the *OnnxModelScorer.cs* file opens in the code editor. Add the following using statement to the top of *OnnxModelScorer.cs*:
 
-Using code comment snippets:
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L1-L7)]
 
-[!code-csharp [](~/machinelearning-samples/blob/fbb1e81629936c089535568d668137ef138acc95/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#ImageNetDataUsings)]
+1. Next, inside the `OnnxModelScorer` class, define global variables that will be used during scoring. 
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L13-L18)]
+
+    - *imagesFolder* is the path where the images are stored.
+    - *modelLocation* is the path where the pre-trained ONNX model is stored.
+    - *mlContext* is the `MLContext` object to be used in the application.
+    - *_boundingBoxes* stores the post-processed data output by the `YoloWinMlParser`.
+    - *_parser* is an instance of another helper class `YoloWinMlParser` that post-processes the scored data output by the `ApplyOnnxTransform`.
+
+1. Add a constructor to the OnnxModelScorer
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L13-L18)]
 
 ## Detect objects

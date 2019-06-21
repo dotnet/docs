@@ -57,7 +57,7 @@ Run the program again to see that you've build the tree for the code to add.
 
 ### Create a modified tree
 
-You've built a small syntax tree that contains one statement. The APIs to create new nodes are the right choice to create single statements or other small code blocks. However, to build larger blocks of code, you should use methods that replace nodes or insert nodes into an existing tree. Remember that syntax trees are immutable. The **Syntax API** doesn't provide any mechanism for modifying an existing syntax tree after construction. Instead, it provides methods that produce new trees based on changes to existing ones. `With*` methods are defined in concrete classes that derive from <xref:Microsoft.CodeAnalysis.SyntaxNode> or in extension methods declared in the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions> class. These methods create a new node by applying changes to an existing node's child properties. Additionally, the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension method can be used to replace a descendent node in a subtree. This method also updates the parent to point to the newly created child and repeats this process up the entire tree - a process known as _re-spining_ the tree.
+You've built a small syntax tree that contains one statement. The APIs to create new nodes are the right choice to create single statements or other small code blocks. However, to build larger blocks of code, you should use methods that replace nodes or insert nodes into an existing tree. Remember that syntax trees are immutable. The **Syntax API** doesn't provide any mechanism for modifying an existing syntax tree after construction. Instead, it provides methods that produce new trees based on changes to existing ones. `With*` methods are defined in concrete classes that derive from <xref:Microsoft.CodeAnalysis.SyntaxNode> or in extension methods declared in the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions> class. These methods create a new node by applying changes to an existing node's child properties. Additionally, the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension method can be used to replace a descendent node in a subtree. This method also updates the parent to point to the newly created child and repeats this process up the entire tree - a process known as _re-spinning_ the tree.
 
 The next step is to create a tree that represents an entire (small) program and then modify it. Add the following code to the beginning of the `Program` class:
 
@@ -106,7 +106,7 @@ Add the following code to declare a private read-only field to hold a <xref:Micr
 
 Override the <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxRewriter.VisitLocalDeclarationStatement(Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax)> method:
 
-```C#
+```csharp
 public override SyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatementSyntax node)
 {
 

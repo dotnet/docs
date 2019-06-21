@@ -1,7 +1,7 @@
 ---
 title: "= operator - C# reference"
 ms.custom: seodec18
-ms.date: 11/26/2018
+ms.date: 06/21/2019
 f1_keywords: 
   - "=_CSharpKeyword"
 helpviewer_keywords: 
@@ -24,19 +24,37 @@ is evaluated as
 a = (b = c)
 ```
 
-The following example demonstrates the usage of the assignment operator to assign values to a local variable, a property, and an indexer element:
+The following example demonstrates the usage of the assignment operator with a local variable, a property, and an indexer element as its left-hand operand:
 
-[!code-csharp-interactive[assignment operator](~/samples/csharp/language-reference/operators/AssignmentExamples.cs#Assignments)]
+[!code-csharp-interactive[simple assignment](~/samples/csharp/language-reference/operators/AssignmentOperator.cs#Simple)]
 
 ## ref assignment operator
 
 Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassign a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable. The following example demonstrates the usage of the ref assignment operator:
 
-[!code-csharp[ref assignment operator](~/samples/csharp/language-reference/operators/AssignmentExamples.cs#RefAssignment)]
+[!code-csharp[ref assignment operator](~/samples/csharp/language-reference/operators/AssignmentOperator.cs#RefAssignment)]
 
-In the case of the ref assignment operator, the type of the left operand and the right operand must be the same.
+In the case of the ref assignment operator, the type of both its operands must be the same.
 
-For more information, see the [feature proposal note](../../../../_csharplang/proposals/csharp-7.3/ref-local-reassignment.md).
+For more information, see the [feature proposal note](~/_csharplang/proposals/csharp-7.3/ref-local-reassignment.md).
+
+## Compound assignment
+
+For a binary operator `op`, a compound assignment expression of the form
+
+```csharp
+x op= y
+```
+
+is equivalent to
+
+```csharp
+x = x op y
+```
+
+except that `x` is only evaluated once.
+
+Compound assignment is supported by [arithmetic](arithmetic-operators.md#compound-assignment), [Boolean logical](boolean-logical-operators.md#compound-assignment), and [bitwise logical and shift](bitwise-and-shift-operators.md#compound-assignment) operators.
 
 ## Operator overloadability
 
@@ -44,7 +62,7 @@ A user-defined type cannot overload the assignment operator. However, a user-def
 
 ## C# language specification
 
-For more information, see the [Simple assignment](~/_csharplang/spec/expressions.md#simple-assignment) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Assignment operators](~/_csharplang/spec/expressions.md#assignment-operators) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 

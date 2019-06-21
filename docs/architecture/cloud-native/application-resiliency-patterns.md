@@ -1,9 +1,9 @@
 ---
-title: Application Resiliency Patterns
+title: Application resiliency patterns
 description: Architecting Cloud Native .NET Apps for Azure | Application Resiliency Patterns
 ms.date: 06/30/2019
 ---
-# Application Resiliency Patterns
+# Application resiliency patterns
 
 The first line of defense is software-enabled application resiliency. 
 
@@ -19,7 +19,7 @@ Note how in the previous figure the various resiliency policies apply to operati
 
 ![HTTP Status Code to Retry](media/http-status-codes.png)
 
-**Figure 6-3**. HTTP Status Code to Retry
+**Figure 6-3**. HTTP status code to retry
 
 Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. In that case, the system is functioning properly and telling you aren't authorized to perform the operation that you're requesting. Care must be taken in selecting appropriate operations to retry.
 
@@ -29,11 +29,11 @@ As recommended in Chapter 1, Microsoft developers targeting cloud native applica
 
 Next, let's expand on retry and circuit breaker patterns.
 
-### Retry Pattern
+### Retry pattern
 
 In a distributed cloud native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which typically correct themselves after a short period of time. Implementing a retry strategy helps a cloud native system handle these scenarios.
 
-The [Retry Pattern](https://docs.microsoft.com/azure/architecture/patterns/retry) enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time. Figure 6-4 shows a retry in action:
+The [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry) enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time. Figure 6-4 shows a retry in action:
 
 ![Retry Pattern in Action](media/retry-pattern.png)
 
@@ -60,11 +60,11 @@ In these situations, it would be preferable for the operation to fail immediatel
 The [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 can prevent an application from repeatedly trying to execute an operation that's likely to fail. It also monitors the application with periodic trial call to determine whether the fault has resolved. Figure 6-5 shows the Circuit Breaker pattern in action:
 
-![Circuit Breaker Pattern in Action](media/circuit-breaker-pattern.png)
+![Circuit Breaker pattern in action](media/circuit-breaker-pattern.png)
 
-Figure 6-5. Circuit Breaker Pattern in Action
+Figure 6-5. Circuit Breaker pattern in action
 
-In the previous figure, a circuit breaker pattern has been added to the original retry pattern. Note how after 10 failed requests, the circuit breakers opens and no longer allows calls to the service. The CheckCircuit value, set at 30 seconds, specifies how often the framework allows one request to proceed to the service. If that call succeeds, the circuit closes and the service is once again available to traffic.
+In the previous figure, a Circuit Breaker pattern has been added to the original retry pattern. Note how after 10 failed requests, the circuit breakers opens and no longer allows calls to the service. The `CheckCircuit` value, set at 30 seconds, specifies how often the framework allows one request to proceed to the service. If that call succeeds, the circuit closes and the service is once again available to traffic.
 
 Keep in mind that the intent of the Circuit Breaker pattern is *different* than the Retry pattern. The Retry pattern enables an application to retry an operation in the expectation that it will succeed. The Circuit Breaker pattern prevents an application from doing an operation that is likely to fail. An application can *combine* these two patterns by using the Retry pattern to invoke an operation through a circuit breaker. However, the retry logic should be sensitive to any exceptions returned by the circuit breaker and abandon retry attempts if the circuit breaker indicates that a fault isn't transient.
 

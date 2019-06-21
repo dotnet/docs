@@ -16,7 +16,7 @@ items:
 - title: Out variable declarations at the assignment location
   durationInMinutes: 2
   content: |
-    The existing syntax that supports `out` parameters has been improved in this version. Click the *Enter Focus Mode* button at the bottom of this page, then try the following code in the interactive window: 
+    The existing syntax that supports `out` parameters has been improved in this version. Select the **Enter focus mode** button on this page, then try the following code in the interactive window: 
 
     [!code-csharp[OutVariableOldStyle](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableOldStyle "classic out variable declaration")]
 

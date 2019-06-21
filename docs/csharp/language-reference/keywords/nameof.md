@@ -145,4 +145,4 @@ For more information, see [Nameof expressions](~/_csharplang/spec/expressions.md
 
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [typeof](../../../csharp/language-reference/keywords/typeof.md)
+- [typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator)

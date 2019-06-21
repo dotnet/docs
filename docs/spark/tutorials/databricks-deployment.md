@@ -92,7 +92,7 @@ This step is only required once for a cluster.
    databricks fs cp install-worker.sh dbfs:/spark-dotnet/install-worker.sh
    ```
 
-6. Go to to your Databricks workspace. Select **Clusters** from the left-side menu, and then select **Create Cluster**.
+6. Go to your Databricks workspace. Select **Clusters** from the left-side menu, and then select **Create Cluster**.
 
 7. After configuring the cluster appropriately, set the **Init Script** and create the cluster.
 

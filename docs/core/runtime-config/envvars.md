@@ -1,6 +1,6 @@
 ---
-title: "Runtime configuration with runtimeconfig.json"
-description: "Use the runtime.config.json file to configure the runtime behavior of .NET Core applications."
+title: "Runtime configuration with environment variables"
+description: "Use environment variables to configure the runtime behavior of .NET Core applications."
 ms.date: "06/19/2019"
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -59,6 +59,13 @@ The following sections list selected supported environment variables by category
 |`AllowDComReflection`|0 or 1|Enables (1) or disables (0, the default value) the ability to marshal blocked reflection types by out-of-process DCOM clients.|
 |`InteropLogArguments`|Enables (1) or disables (0, the default value) logging of all pinned arguments passed to an interop call.|
 |`PreferComInsteadOfManagedRemoting`|0 or 1|Determines whether COM (1) or managed remoting (0, the default value) is used to communicate with a cross-app domain COM callable wrapper.|
+
+## JIT compiler
+
+|Variable name|Variable value|Description|
+|--|--|--|
+|`COMPLUS_JitDump`|*string-method*|Dumps trees for the method named *string-method*.|
+|`COMPLUS_JitNoRngChks`|0 or 1|Enables (0) or disables (1) range checks.|
 
 ## Loader
 

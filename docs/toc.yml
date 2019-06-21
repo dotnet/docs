@@ -200,6 +200,14 @@
       href: core/compatibility/index.md
     - name: Breaking change categories
       href: core/compatibility/categories.md    
+  - name: Runtime configuration
+    items:
+      - name: Runtime configuration settings
+      - href: core/runtime-config/index.md 
+      - name: Runtime configuration with runtimeconfig.json
+      - href: core/runtime-config/runtimeconfig.md
+      - name: Runtime configuration with environment variables
+      - href: core/runtime-cofnig/envvars.md   
   - name: Tutorials
     href: core/tutorials/index.md
     items:

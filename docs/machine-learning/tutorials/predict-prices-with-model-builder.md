@@ -3,7 +3,7 @@ title: 'Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 06/04/2019
+ms.date: 06/21/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder. 
@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Predict prices using regression with Model Builder
 
-This tutorial illustrates how to build a [regression model](../resources/glossary.md#regression) using ML.NET Model Builder to predict prices, specifically, New York City taxi fares. The regression machine learning task can be utilized in various scenarios where the target or label to predict is numerical.
+This tutorial illustrates how to build a [regression model](../resources/glossary.md#regression) using ML.NET Model Builder to predict prices, specifically, New York City taxi fares. The regression machine learning task can be utilized in scenarios where the target or label to predict is numerical.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -172,7 +172,7 @@ In this tutorial, you learned how to:
 > * Evaluate the model
 > * Use the model for predictions
 
-Advance to either of the following how-to articles to learn to deploy your model.
+Advance to either of the following how-to articles to learn how to deploy your model.
 
 > [!div class="nextstepaction"]
 > [Deploy a model to Azure Functions](../how-to-guides/serve-model-serverless-azure-functions-ml-net.md)

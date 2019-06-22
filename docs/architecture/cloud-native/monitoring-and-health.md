@@ -11,7 +11,7 @@ Microservices and cloud native applications go hand in hand with good DevOps pra
 DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
 ```
 
-Unfortunately, with terse definitions there is always room to say more things. One of the key components of DevOps is ensuring that the applications running in production are functioning properly and efficiently. They gauge the health of the application in production it is necessary to monitor the various logs and metrics being produced from the servers, hosts and the application proper. 
+Unfortunately, with terse definitions there's always room to say more things. One of the key components of DevOps is ensuring that the applications running in production are functioning properly and efficiently. They gauge the health of the application in production it's necessary to monitor the various logs and metrics being produced from the servers, hosts, and the application proper. 
 
 >[!div class="step-by-step"]
 >[Previous](observability-patterns.md)

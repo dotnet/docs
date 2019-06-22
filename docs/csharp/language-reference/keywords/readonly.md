@@ -1,7 +1,6 @@
 ---
 title: "readonly keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 06/21/2018
 f1_keywords: 
   - "readonly_CSharpKeyword"
@@ -15,12 +14,14 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 The `readonly` keyword is a modifier that can be used in three contexts:
 
 - In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor. 
-A `readonly` field cannot be assigned after the constructor exits. That has different implications for value types and reference types:
-- Because value types directly contain their data, a field that is a  `readonly` value type is immutable. 
-- Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object is not immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier does not prevent the instance data of the field from being modified through the read-only field.
+  
+  A `readonly` field cannot be assigned after the constructor exits. That has different implications for value types and reference types:
+  
+  - Because value types directly contain their data, a field that is a  `readonly` value type is immutable. 
+  - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object is not immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier does not prevent the instance data of the field from being modified through the read-only field.
 
-> [!WARNING]
-> An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104-do-not-declare-read-only-mutable-reference-types) : "Do not declare read only mutable reference types."
+  > [!WARNING]
+  > An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104-do-not-declare-read-only-mutable-reference-types) : "Do not declare read only mutable reference types."
 
 - In a [`readonly struct` definition](#readonly-struct-example), `readonly` indicates that the `struct` is immutable.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes are not allowed to that reference.
@@ -37,9 +38,9 @@ You can assign a value to a `readonly` field only in the following contexts:
 
 - When the variable is initialized in the declaration, for example:
 
-```csharp
-public readonly int y = 5;
-```
+  ```csharp
+  public readonly int y = 5;
+  ```
 
 - In an instance constructor of the class that contains the instance field declaration.
 - In the static constructor of the class that contains the static field declaration.

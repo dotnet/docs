@@ -118,7 +118,9 @@ using(TransactionScope scope1 = new TransactionScope())
  The example shows a code block without any ambient transaction creating a new scope (`scope1`) with <xref:System.Transactions.TransactionScopeOption.Required>. The scope `scope1` is a root scope as it creates a new transaction (Transaction A) and makes Transaction A the ambient transaction. `Scope1` then creates three more objects, each with a different <xref:System.Transactions.TransactionScopeOption> value. For example, `scope2` is created with <xref:System.Transactions.TransactionScopeOption.Required>, and since there is an ambient transaction, it joins the first transaction created by `scope1`. Note that `scope3` is the root scope of a new transaction, and that `scope4` has no ambient transaction.  
   
  Although the default and most commonly used value of <xref:System.Transactions.TransactionScopeOption> is <xref:System.Transactions.TransactionScopeOption.Required>, each of the other values has its unique purpose.  
-  
+
+### Non-transactional code inside a transaction scope
+
  <xref:System.Transactions.TransactionScopeOption.Suppress> is useful when you want to preserve the operations performed by the code section, and do not want to abort the ambient transaction if the operations fail. For example, when you want to perform logging or audit operations, or when you want to publish events to subscribers regardless of whether your ambient transaction commits or aborts. This value allows you to have a non-transactional code section inside a transaction scope, as shown in the following example.  
   
 ```csharp  

@@ -153,7 +153,7 @@ Add the following call to the `DetectSpike()`method as the next line of code in 
 The `DetectSpike()` method executes the following tasks:
 
 * Trains the model.
-* Detects spikes based on on historical sales data.
+* Detects spikes based on historical sales data.
 * Displays the results.
 
 Create the `DetectSpike()` method, just after the `Main()` method, using the following code:

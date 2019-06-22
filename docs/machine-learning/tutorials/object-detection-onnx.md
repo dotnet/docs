@@ -124,7 +124,7 @@ Tiny YOLOv2 can detect 20 different classes of objects.
 **PLACEHOLDER**
 Explain in this section how to use Netron to inspect models 
 
-### Scoring the model
+## Use Model For Scoring
 
 In order to score using the pre-trained ONNX model, create a helper class called `OnnxModelScorer`
 
@@ -132,7 +132,7 @@ In order to score using the pre-trained ONNX model, create a helper class called
 1. In the Add New Item dialog box, select Class and change the Name field to *OnnxModelScorer.cs*. Then, select the Add button.
 1. When the *OnnxModelScorer.cs* file opens in the code editor. Add the following using statement to the top of *OnnxModelScorer.cs*:
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L1-L7)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L1-L7)]
 
 1. Next, inside the `OnnxModelScorer` class, define global variables that will be used during scoring. 
 
@@ -146,6 +146,36 @@ In order to score using the pre-trained ONNX model, create a helper class called
 
 1. Initialize the `imagesFolder`, `modelLocation` and `mlContext` variables inside the constructor
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L20-L25)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L20-L25)]
 
-## Detect objects
+1. Create a struct called `ImageNetSettings` to contain the size and height of the images expected by the model.
+
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L27-L31)]
+
+1. Additionally, create a struct called `TinyYoloModelSettings` to contain the name of the name of the input and output layers of the model.
+
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L33-44)]
+
+1. Add the `Score` method below the most recently created structs.
+
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L46-51)]
+
+    The `Score` method loads the model for predictions using the `LoadModel` method and then uses it to make predictions with the `PredictDataUsingModel` method.
+
+### Create Scoring Pipeline
+
+The next set of methods consolidate the pipeline creation and scoring logic. 
+
+1. Below the `Score` method, create the `LoadModel` method.
+
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L53-71)]
+
+    The `LoadModel` method creates the model pipeline and returns a `PredictionEngine`. The pipeline contains the following steps.  
+
+    1. Uses the [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*) transform to load the images in the `imagesFolder`. 
+    1. Resizes the image to the expected input size of 416 x 416 using the [`ResizeImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages*) transform.
+    1. Convert image into pixels to be input into the model using the [`ExtractPixels`](xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels*) transform.
+    1. Uses the ONNX pre-trained model to detect objects in the image using the [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel*) transform.
+
+### Make Predictions
+

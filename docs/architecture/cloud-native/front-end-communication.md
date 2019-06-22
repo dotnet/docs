@@ -116,7 +116,7 @@ Each Ocelot gateway instance includes a simple JSON configuration file that spec
 
 In Figure 4-8, the client sends an HTTP request to the Ocelot gateway. Once received, Ocelot manipulates the HttpRequest object into a state specified by its configuration. At the end of pipeline, Ocelot creates a new HttpRequestMessage that is passed to the downstream service. In reverse, Ocelot receives the HTTP response and sends it back to the client.
 
-Ocelot is extensible and can support many modern platforms, including Azure Kubernetes Services and Service Fabric, as well as integration with open-source packages like Consul, GrapQL, Netflix’s Eureka, web sockets, and SignalR.
+Ocelot is extensible and can support many modern platforms, including Azure Kubernetes Services and Service Fabric, as well as integration with open-source packages like Consul, GraphQL, Netflix’s Eureka, web sockets, and SignalR.
 
 >[!div class="step-by-step"]
 >[Previous](communication-considerations.md)

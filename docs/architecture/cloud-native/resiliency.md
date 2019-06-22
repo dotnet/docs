@@ -11,7 +11,7 @@ Unlike traditional monolithic applications, where everything runs together in a 
 
 ![Distributed cloud native environment](media/distributed-cloud-native-environment.png)
 
-**Figure 6-1.** Distributed Cloud Native Environment
+**Figure 6-1.** Distributed cloud native environment
 
 In previous figure, note how each client, microservice, and cloud-based [backing service](https://12factor.net/backing-services) executes as a separate process, running across different servers, all communicating via network-based calls.
 

@@ -11,7 +11,7 @@ No other cloud provider has as mature of a cloud application monitoring solution
 ![Figure 8-3 Azure Monitor, a collection to tools to provide insight into how a cloud native application is functioning.](media/azure_monitor.png)
 
 
-## Gathering Logs and Metrics
+## Gathering logs and metrics
 
 The first step in any monitoring solution is to gather as much data as possible. The more data that can be gathered, the deeper the insights that can be obtained. Instrumenting systems has traditionally been difficult. SNMP (Simple Network Management Protocol) was the gold standard protocol for collecting machine level information but it required a great deal of knowledge and configuring. Fortunately, much of this hard work has been eliminated as the most common metrics are gathered automatically by Azure Monitor.
 

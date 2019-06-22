@@ -26,44 +26,44 @@ A better approach is to consider a new and rapidly evolving technology entitled 
 
 In the prevous figure, note how the proxy intercepts and manages communication among the microservices and the cluster.
 
-A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 6-10 depicts these components and their responsibilities.
+A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 6-10 shows these components and their responsibilities.
 
 ![Service mesh control and data plane](media/istio-control-and-data-plane.png)
 
 **Figure 6-10.** Service mesh control and data plane
 
-Once configured, a service mesh is highly functional. It can retrieve a corresponding pool of instances from a service discovery endpoint. It can then send a request to specific instance, recording the latency and response type of the result. A mesh can choose the instance most likely to return a fast response based on a variety of factors, including its observed latency for recent requests.
+Once configured, a service mesh is highly functional. It can retrieve a corresponding pool of instances from a service discovery endpoint. It can then send a request to a specific instance, recording the latency and response type of the result. A mesh can choose the instance most likely to return a fast response based on a variety of factors, including its observed latency for recent requests.
 
-If an instance is unresponsive or fails, the mesh can retry the request on another instance. If a pool consistently returns errors, a mesh can evict it from the load balancing pool to be retried periodically later after it heals. If a request times out, a mesh can fail and then retry the request. A mesh captures behavior in the form of metrics and distributed tracing which then can emitted to a centralized metrics system.
+If an instance is unresponsive or fails, the mesh can retry the request on another instance. If a pool consistently returns errors, a mesh can evict it from the load balancing pool to be retried periodically later after it heals. If a request times out, a mesh can fail and then retry the request. A mesh captures behavior in the form of metrics and distributed tracing which then can be emitted to a centralized metrics system.
 
 ## Istio and Envoy
 
-While a few service mesh options currently exist, [Istio](https://istio.io/docs/concepts/what-is-istio/) is the most popular as of the time of this writing. A joint venture from IBM, Google and Lyft, it is an open source offering that can be integrated into a new or existing distributed application. It provides a consistent and complete solution to secure, connect and monitor microservices. Its features include:
+While a few service mesh options currently exist, [Istio](https://istio.io/docs/concepts/what-is-istio/) is the most popular as of the time of this writing. A joint venture from IBM, Google and Lyft, it is an open source offering that can be integrated into a new or existing distributed applications. It provides a consistent and complete solution to secure, connect and monitor microservices. Its features include:
 
-- Secure service-to-service communication in a cluster with strong identity-based authentication and authorization
-- Automatic load balancing for HTTP, [gRPC](https://grpc.io/), WebSocket, and TCP traffic
-- Fine-grained control of traffic behavior with rich routing rules, retries, failovers, and fault injection
-- A pluggable policy layer and configuration API supporting access controls, rate limits and quotas
-- Automatic metrics, logs, and traces for all traffic within a cluster, including cluster ingress and egress
+- Secure service-to-service communication in a cluster with strong identity-based authentication and authorization.
+- Automatic load balancing for HTTP, [gRPC](https://grpc.io/), WebSocket, and TCP traffic.
+- Fine-grained control of traffic behavior with rich routing rules, retries, failovers, and fault injection.
+- A pluggable policy layer and configuration API supporting access controls, rate limits and quotas.
+- Automatic metrics, logs, and traces for all traffic within a cluster, including cluster ingress and egress.
 
-A key component for an Istio implementation is a proxy service entitled the [Envoy Proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy). Originating from Lyft and subsequently contributed to the [Cloud Native Computing Foundation](https://www.cncf.io/) (discussed in chapter 1), the Envoy proxy runs alongside each service and provides a platform-agnostic foundation for the following features:
+A key component for an Istio implementation is a proxy service entitled the [Envoy proxy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy). Originating from Lyft and subsequently contributed to the [Cloud Native Computing Foundation](https://www.cncf.io/) (discussed in chapter 1), the Envoy proxy runs alongside each service and provides a platform-agnostic foundation for the following features:
 
-- Dynamic service discovery
-- Load balancing
-- TLS termination
-- HTTP and gRPC proxies
-- Circuit breaker resiliency
-- Health checks
-- Rolling updates with canary
+- Dynamic service discovery.
+- Load balancing.
+- TLS termination.
+- HTTP and gRPC proxies.
+- Circuit breaker resiliency.
+- Health checks.
+- Rolling updates with [canary](https://martinfowler.com/bliki/CanaryRelease.html) deployments
 
-As discussed earlier, Envoy is deployed as a sidecar to each microservice in the cluster.
+As previously discussed, Envoy is deployed as a sidecar to each microservice in the cluster.
 
 ## Integration with azure kubernetes services
 
 The Azure cloud embraces Istio and provides direct support for it in Azure Kubernetes Services. The following links can help you get started:
 
-- [Installing Istio in AKS](https://docs.microsoft.com/en-us/azure/aks/istio-install)
-- [Using AKS and Istio](https://docs.microsoft.com/en-us/azure/aks/istio-scenario-routing)
+- [Installing Istio in AKS](https://docs.microsoft.com/azure/aks/istio-install)
+- [Using AKS and Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)
 
 >[!div class="step-by-step"]
 >[Previous](azure-platform-resiliency.md)

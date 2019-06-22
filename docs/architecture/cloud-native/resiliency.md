@@ -5,33 +5,33 @@ ms.date: 06/30/2019
 ---
 # Cloud native resiliency
 
-Resiliency is the ability of a system to react to failure and still remain functional. It isn't about avoiding failure but accepting the fact failure is inevitable in cloud-based systems and building your applications to respond to it. The end-goal of resiliency is to return the application to a fully functioning state after a failure.
+Resiliency is the ability of your system to react to failure and still remain functional. It isn't about avoiding failure but accepting that failure is inevitable in cloud-based systems and building your application to respond to it. The end-goal of resiliency is to return the application to a fully functioning state after a failure.
 
-Unlike traditional monolithic applications, where everything runs together in a single process, cloud native systems embrace distributed architecture as depicted below in Figure 6-1.
+Unlike traditional monolithic applications, where everything runs together in a single process, cloud native systems embrace distributed architecture as shown below in Figure 6-1:
 
 ![Distributed cloud native environment](media/distributed-cloud-native-environment.png)
 
 **Figure 6-1.** Distributed Cloud Native Environment
 
-In the figure above, note how each client, microservice and cloud-based [backing service](https://12factor.net/backing-services) executes as a separate process, running across different servers, all communicating via network-based calls.
+In previous figure, note how each client, microservice, and cloud-based [backing service](https://12factor.net/backing-services) executes as a separate process, running across different servers, all communicating via network-based calls.
 
 So, what could go wrong?
 
-- Unexpected [network latency](https://www.techopedia.com/definition/8553/network-latency)
+- Unexpected [network latency](https://www.techopedia.com/definition/8553/network-latency).
 - [Transient faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)
-    (temporary network connectivity errors)
-- Blocking by a long-running synchronous operation
-- A host process that crashes and needs to be restarted or moved
-- An overloaded microservice that cannot respond for a short time
-- An in-flight DevOps operation such as an update or scaling operation
-- An Orchestrator operation such as moving a service from one node to another
-- Hardware failures from commodity hardware
+    (temporary network connectivity errors).
+- Blocking by a long-running synchronous operation.
+- A host process that crashes and needs to be restarted or moved.
+- An overloaded microservice that cannot respond for a short time.
+- An in-flight DevOps operation such as an update or scaling operation.
+- An Orchestrator operation such as moving a service from one node to another.
+- Hardware failures from commodity hardware.
 
-When deploying distributed services into cloud-based infrastructure, the factors listed above become very real and you need to architect and develop defensively to deal with them.
+When deploying distributed services into cloud-based infrastructure, the factors from the previous list become very real and you must architect and develop defensively to deal with them.
 
-In a small-scale distributed system, failure will be less frequent, but as a system scales up and out, you can expect to experience more and more of these issues up to the point where partial failure becomes normal operation.
+In a small-scale distributed system, failure will be less frequent, but as a system scales up and out, you can expect to experience more of these issues to a point where partial failure becomes normal operation.
 
-Therefore, your application and infrastructure must be resilient. In the following sections we'll explore defensive technqiues for your application and built-in cloud features that you can use to help bullet-proof your user's experience.
+Therefore, your application and infrastructure must be resilient. In the following sections, we'll explore defensive technqiues that you can add to your application and built-in cloud features that you can leverage to help bullet-proof your user's experience.
 
 >[!div class="step-by-step"]
 >[Previous](azure-data-storage.md)

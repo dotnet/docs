@@ -65,6 +65,14 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 - [Installing Istio in AKS](https://docs.microsoft.com/azure/aks/istio-install)
 - [Using AKS and Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)
 
+## Summary
+
+(add summary here)
+
+## Additional resources
+
+(add references here)
+
 >[!div class="step-by-step"]
 >[Previous](azure-platform-resiliency.md)
 >[Next](monitoring-health.md) <!-- Next Chapter -->

@@ -7,7 +7,7 @@ ms.date: 06/30/2019
 
 The first line of defense is software-enabled application resiliency. 
 
-While you could invest time writing your own resiliency framework, such products already exist. For example, [Polly](http://www.thepollyproject.org/) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications build with both the full .NET Framework and .NET Core. Figure 6-2 shows the resiliency policies (that is, functionality) available in the Polly Library. These policies can be applied individually or combined together.
+While you could invest considerable time writing your own resiliency framework, such products already exist. For example, [Polly](http://www.thepollyproject.org/) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the full .NET Framework or .NET Core. Figure 6-2 shows the resiliency policies (that is, functionality) available from the Polly Library. These policies can be applied individually or combined together.
 
 ![Polly framework](media/polly-resiliency-framework.png)
 
@@ -21,7 +21,7 @@ Note how in the previous figure the resiliency policies apply to request message
 
 Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. Here, the system is functioning properly, but informing the caller that he or she isn't authorized to perform the requested operation. Care must be taken to retry only those operations caused by failures.
 
-As recommended in Chapter 1, Microsoft developers targeting cloud native applications should be building on the .NET Core framework. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly) with the Polly resiliency framework. With it, you can easily define resiliency policies in the application Startup class to to handle partial failures and connectivity issues.
+As recommended in Chapter 1, Microsoft developers constructing cloud native applications should be targeting  the .NET Core framework. Version 2.1 introduced the [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is [tight integration](https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly) with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to to handle partial failures and connectivity issues.
 
 Next, let's expand on retry and circuit breaker patterns.
 
@@ -52,8 +52,7 @@ To make things worse, executing continual retry operations on a non-responsive s
 
 In these situations, it would be preferable for the operation to fail immediately and only attempt to invoke the service if it's likely to succeed.
 
-The [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
-can prevent an application from repeatedly trying to execute an operation that's likely to fail. It also monitors the application with a periodic trial call to determine whether the fault has resolved. Figure 6-5 shows the Circuit Breaker pattern in action.
+The [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker) can prevent an application from repeatedly trying to execute an operation that's likely to fail. It also monitors the application with a periodic trial call to determine whether the fault has resolved. Figure 6-5 shows the Circuit Breaker pattern in action.
 
 ![Circuit breaker pattern in action](media/circuit-breaker-pattern.png)
 

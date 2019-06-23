@@ -24,7 +24,7 @@ A better approach is to consider a new and rapidly evolving technology entitled 
 
 **Figure 6-9**. Service mesh with a side car
 
-In the prevous figure, note how the proxy intercepts and manages communication among the microservices and the cluster.
+In the previous figure, note how the proxy intercepts and manages communication among the microservices and the cluster.
 
 A service mesh is logically split into two disparate components: A [data plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc) and [control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc). Figure 6-10 shows these components and their responsibilities.
 
@@ -54,13 +54,13 @@ A key component for an Istio implementation is a proxy service entitled the [Env
 - HTTP and gRPC proxies.
 - Circuit breaker resiliency.
 - Health checks.
-- Rolling updates with [canary](https://martinfowler.com/bliki/CanaryRelease.html) deployments
+- Rolling updates with [canary](https://martinfowler.com/bliki/CanaryRelease.html) deployments.
 
 As previously discussed, Envoy is deployed as a sidecar to each microservice in the cluster.
 
-## Integration with azure kubernetes services
+## Integration with Azure Kubernetes Services
 
-The Azure cloud embraces Istio and provides direct support for it in Azure Kubernetes Services. The following links can help you get started:
+The Azure cloud embraces Istio and provides direct support for it within Azure Kubernetes Services. The following links can help you get started:
 
 - [Installing Istio in AKS](https://docs.microsoft.com/azure/aks/istio-install)
 - [Using AKS and Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)

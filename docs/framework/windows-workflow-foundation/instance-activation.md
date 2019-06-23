@@ -29,7 +29,7 @@ The SQL Workflow Instance Store runs an internal task that periodically wakes up
 ## Generic Hosts  
  A generic host is a host with the value of the metadata property **WorkflowServiceType** for generic hosts is set to **WorkflowServiceType.Any** to indicate that it can handle any workflow type. A generic host has an XName parameter named **ActivationType**.  
   
- Currently, the SQL Workflow Instance Store supports generic hosts with value of the ActivationType parameter set to **WAS**. If the ActivationType is not set to WAS, the SQL Workflow Instance Store throws an <xref:System.Runtime.DurableInstancing.InstancePersistenceException>. The Workflow Management Service that ships with the [!INCLUDE[dublin](../../../includes/dublin-md.md)] is a generic host that has the activation type set to **WAS**.  
+ Currently, the SQL Workflow Instance Store supports generic hosts with value of the ActivationType parameter set to **WAS**. If the ActivationType is not set to WAS, the SQL Workflow Instance Store throws an <xref:System.Runtime.DurableInstancing.InstancePersistenceException>. The Workflow Management Service that ships with the hosting features of Windows Server AppFabric is a generic host that has the activation type set to **WAS**.  
   
  For WAS activation, a generic host requires a set of activation parameters to derive the endpoint address at which new hosts can be activated. The activation parameters for WAS activation are name of the site, path to the application relative to the site, and path to the service relative to the application. The SQL Workflow Instance Store stores these activation parameters during the execution of the <xref:System.Activities.DurableInstancing.SaveWorkflowCommand>.  
   

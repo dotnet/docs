@@ -21,7 +21,7 @@ So, what could go wrong?
 - [Transient faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)
     (temporary network connectivity errors).
 - Blocking by a long-running synchronous operation.
-- A host process that crashes and needs to be restarted or moved.
+- A host process that has crashed and is being restarted or moved.
 - An overloaded microservice that cannot respond for a short time.
 - An in-flight DevOps operation such as an update or scaling operation.
 - An Orchestrator operation such as moving a service from one node to another.
@@ -34,5 +34,5 @@ In a small-scale distributed system, failure will be less frequent, but as a sys
 Therefore, your application and infrastructure must be resilient. In the following sections, we'll explore defensive technqiues that you can add to your application and built-in cloud features that you can leverage to help bullet-proof your user's experience.
 
 >[!div class="step-by-step"]
->[Previous](azure-data-storage.md)
+>[Previous]()
 >[Next](application-resiliency-patterns.md)

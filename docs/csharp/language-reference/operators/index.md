@@ -45,7 +45,7 @@ These are the highest precedence operators.
 
 [x--](arithmetic-operators.md#decrement-operator---) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[new](../keywords/new-operator.md) – type instantiation.
+[new](new-operator.md) – type instantiation.
 
 [typeof](type-testing-and-conversion-operators.md#typeof-operator) – returns the <xref:System.Type> object representing the operand.
 

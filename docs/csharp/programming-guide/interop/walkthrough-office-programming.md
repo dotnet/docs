@@ -21,7 +21,7 @@ This walkthrough demonstrates these features in the context of Office programmin
 
 You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.  
   
- If you are using an operating system that is older than [!INCLUDE[windowsver](~/includes/windowsver-md.md)], make sure that [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] is installed.  
+ If you are using an operating system that is older than [!INCLUDE[windowsver](~/includes/windowsver-md.md)], make sure that .NET Framework 2.0 is installed.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

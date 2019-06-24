@@ -1,25 +1,27 @@
 ---
-title: Distributed Data
+title: Distributed data
 description: Architecting Cloud Native .NET Apps for Azure | Distributed Data for Cloud Native Apps
 ms.date: 06/30/2019
 ---
-# Distributed Data for Cloud Native Apps
+# Distributed data for cloud native apps
 
-When constructing a cloud native system, consisting of many independent, decoupled services, the way you think about data storage radically changes.
+When constructing a cloud native system that consists of many independent, decoupled microservices, the way you think about data storage changes.
 
-The traditional monolthic apps that we've built for years favor a centralized data store, typically, a relational database as shown below in Figure 5-1. ![Single monolithic database](media/single-monolithic-database.png)
+Traditional monolthic applicaitons favor a centralized data store, typically  shown in Figure 5-1. 
+
+![Single monolithic database](media/single-monolithic-database.png)
 
 **Figure 5-1**. Single monolithic database
 
-In figure above, all application components consume a large relational enterprise database.
+In the above figure, all of the application components consume a single relational database.
 
-There are several key benefits to this approach. It's straightforward to query data across multiple tables and straightforward to implement [ACID transactions](https://docs.microsoft.com/windows/desktop/cossdk/acid-properties), i,e, basic properties that ensure consistency across database transactions. You end up with *immediate consistency*: Either all your data updates or nothing updates.
+There are many benefits to this approach. It's straightforward to query data spread across  multiple tables, and it's straightforward to implement [ACID transactions](https://docs.microsoft.com/windows/desktop/cossdk/acid-properties) that ensure data consistency. You always end up with *immediate consistency*: Either all your data updates or none of it updates.
 
-On the contrary, cloud native systems favor a data architecture where, by design, each microservice owns and encapsulates its own data as shown below in Figure 5-2.
+Cloud native systems favor a data architecture where each microservice owns and encapsulates its own data as shown in Figure 5-2.
 
-![Data across microservices](media/data-across-microservices.png)
+![Multiple databases across microservices](media/data-across-microservices.png)
 
-**Figure 5-2**. Data across microservices
+**Figure 5-2**. Multiple databases across microservices
 
 In the figure above, note how each data store is encapsulated within the [bounded context](https://martinfowler.com/bliki/BoundedContext.html) of its encompassing microservice exposing external access only via the microservice's public API.
  

@@ -9,13 +9,13 @@ Most software applications need to have some knowledge of the user or process th
 
 (insert figure showing Windows AD auth model)
 
-While this solution is very effective within corporate networks, it is not designed for use by users or applications that reside outside of the AD domain. With the growth of Internet-based applications and the rise of cloud native apps, security models have evolved.
+While this solution is effective within corporate networks, it isn't designed for use by users or applications that are outside of the AD domain. With the growth of Internet-based applications and the rise of cloud native apps, security models have evolved.
 
-In today's cloud native identity model, architecture is assumed to be distributed. Apps can be deployed anywhere and may communicate with others apps anywhere. Clients may communicate with these apps from anywhere, and in fact, clients may consist of any combination of platforms and devices. Cloud native identity solutions leverage open standards to achieve secure application access from clients ranging from human users on PCs or phones to other apps hosted anywhere online to set-top boxes and IOT devices running any software platform anywhere in the world.
+In today's cloud native identity model, architecture is assumed to be distributed. Apps can be deployed anywhere and may communicate with others apps anywhere. Clients may communicate with these apps from anywhere, and in fact, clients may consist of any combination of platforms and devices. Cloud native identity solutions leverage open standards to achieve secure application access from clients. These clients range from human users on PCs or phones, to other apps hosted anywhere online, to set-top boxes and IOT devices running any software platform anywhere in the world.
 
-Modern cloud native identity solutions typically leverage access tokens issued by a secure token service/server (STS) to a security principal once their identity has been determined. The access token, typically a JSON Web Token (JWT), includes *claims* about the security principal. These claims will minimally include the user's identity but may also include additional claims that can be used by applications to determine the level of access to grant the principal.
+Modern cloud native identity solutions typically leverage access tokens issued by a secure token service/server (STS) to a security principal once their identity is determined. The access token, typically a JSON Web Token (JWT), includes *claims* about the security principal. These claims will minimally include the user's identity but may also include additional claims that can be used by applications to determine the level of access to grant the principal.
 
-(insert figure showing basic handshake involve a principal, an STS, and an app)
+(insert figure showing basic handshake involving a principal, an STS, and an app)
 
 Typically, the STS is only responsible for authenticating the principal. Determining their level of access to resources is left to other parts of the application.
 

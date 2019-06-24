@@ -138,5 +138,5 @@ In this chapter, we flew over cloud native computing at 5,000 feet, providing a 
 - [Lift and Shift with Containers Book](https://aka.ms/liftandshiftwithcontainersebook)
 
 >[!div class="step-by-step"]
->[Previous](candidate-apps-for-cloud-native.md)
->[Next](scaling-cloud-native-dotnet-applications.md) <!-- Next Chapter -->
+>[Previous](candidate-apps.md)
+>[Next](scale-dotnet-applications.md)

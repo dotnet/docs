@@ -11,11 +11,11 @@ IdentityServer is an open-source authentication server that implements OpenID Co
 
 Typically, applications need to support some or all of the following scenarios:
 
-- Human users accessing web applications with a browser
-- Human users accessing back-end Web APIs from browser-based apps
-- Human users on mobile/native clients accessing back-end Web APIs
-- Other applications accessing back-end Web APIs (without an active user or user interface)
-- Any application may need to interact with other Web APIs, using its own identity or delegating to the user's identity
+- Human users accessing web applications with a browser.
+- Human users accessing back-end Web APIs from browser-based apps.
+- Human users on mobile/native clients accessing back-end Web APIs.
+- Other applications accessing back-end Web APIs (without an active user or user interface).
+- Any application may need to interact with other Web APIs, using its own identity or delegating to the user's identity.
 
 ![Application types and scenarios](media/application-types.png)
 **Figure 8-1**. Application types and scenarios.
@@ -33,13 +33,13 @@ IdentityServer provides middleware that runs within an ASP.NET Core application 
 - Revocation (token revocation)
 - End Session (trigger single sign-out across all apps)
 
-## Getting Started
+## Getting started
 
-IdentityServer 4 is open-source and free to use. You can add it to your applications using its NuGet packages. The main package is [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/) that has been downloaded over four million times. The base package doesn't include any user interface code and only supports in memory configuration. To use it with a database you'll also want a data provider like [IdentityServer4.EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework) which uses EF Core to store configuration and operational data for IdentityServer. For user interface, you can copy files from the [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign out using IdentityServer middleware.
+IdentityServer4 is open-source and free to use. You can add it to your applications using its NuGet packages. The main package is [IdentityServer4](https://www.nuget.org/packages/IdentityServer4/) that has been downloaded over four million times. The base package doesn't include any user interface code and only supports in memory configuration. To use it with a database, you'll also want a data provider like [IdentityServer4.EntityFramework](https://www.nuget.org/packages/IdentityServer4.EntityFramework) that uses Entity Framework Core to store configuration and operational data for IdentityServer. For user interface, you can copy files from the [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign out using IdentityServer middleware.
 
 ## Configuration
 
-IdentityServer supports a variety of protocols and social authentication providers that can be configured as part of each custom installation. This is typically done in the ASP.NET Core application's `Startup` class in the `ConfigureServices` method. The configuration involves specifying the supported protocols and the paths to the servers and endpoints that will be used. Figure 8-X shows an example configuration taken from the IdentityServer4 Quickstart UI project:
+IdentityServer supports different kinds of protocols and social authentication providers that can be configured as part of each custom installation. This is typically done in the ASP.NET Core application's `Startup` class in the `ConfigureServices` method. The configuration involves specifying the supported protocols and the paths to the servers and endpoints that will be used. Figure 8-X shows an example configuration taken from the IdentityServer4 Quickstart UI project:
 
 ```c#
 public class Startup
@@ -84,7 +84,7 @@ public class Startup
 
 **Figure 8-X**. Configuring IdentityServer.
 
-IdentityServer also hosts a public demo site that can be used to test various protocols and configurations. It's located at [https://demo.identityserver.io/](https://demo.identityserver.io/) and includes information on how configure its behavior based on the `client_id` provided to it.
+IdentityServer also hosts a public demo site that can be used to test various protocols and configurations. It's located at [https://demo.identityserver.io/](https://demo.identityserver.io/) and includes information on how to configure its behavior based on the `client_id` provided to it.
 
 ## JavaScript clients
 
@@ -92,10 +92,10 @@ Many cloud native applications leverage server-side APIs and rich client single 
 
 ## References
 
-- [IdentityServer Documentation](http://docs.identityserver.io/)
-- [Application Types](https://docs.microsoft.com/azure/active-directory/develop/app-types)
-- [JavaScript OIDC Client](http://docs.identityserver.io/en/latest/quickstarts/6_javascript_client.html)
+- [IdentityServer documentation](http://docs.identityserver.io/)
+- [Application types](https://docs.microsoft.com/azure/active-directory/develop/app-types)
+- [JavaScript OIDC client](http://docs.identityserver.io/en/latest/quickstarts/6_javascript_client.html)
 
 >[!div class="step-by-step"]
 >[Previous](azure-active-directory.md)
->[Next](security.md) <!-- Next Chapter -->
+>[Next](security.md)

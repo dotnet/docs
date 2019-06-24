@@ -70,7 +70,7 @@ Azure is designed to balance usability and security for the majority of users. D
 
 Within the Azure portal the [Azure Advisor](https://azure.microsoft.com/services/advisor/) is a system that is constantly scanning an environment and making recommendations. Some of these recommendations are designed to save users money but others are designed to pick out potentially insecure configurations such as having a storage container open to the world and not protected by a Virtual Network.
 
-# Azure Network Infrastructure
+## Azure Network Infrastructure
 
 In an on-premises deployment environment a great deal of energy is dedicated to setting up networking. Setting up routers, switches, and the such is complicated work. Networks allow certain resources to talk to other resources and prevent access in some cases. A frequent network rule is to restrict access to the production environment from the development environment on the off chance that a half-developed piece of code runs awry and deletes a swath of data.
 

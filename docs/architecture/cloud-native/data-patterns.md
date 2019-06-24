@@ -13,7 +13,7 @@ We discuss these challenges now.
 
 How does an application query data that is spread across multiple, independent microservices?
 
-We see this scenario in Figure 5-4.
+Figure 5-4 shows this sceanrio.
 
 ![Querying across microservices](media/cross-service-query.png)
 
@@ -21,7 +21,7 @@ We see this scenario in Figure 5-4.
 
 Note how in the previous figure we see a shopping basket microservice that adds an item to a user's shopping basket. While the shopping basket's data store contains a basket and lineItem table, it does not contain product or pricing information. Instead those data items are found in the product and price microservices, respectfully. In order to add an item, the shopping basket microservice needs product data and pricing data. What are options to obtain the product and pricing data?
 
-The Shopping Basket microservice could make a direct HTTP call to both the product catalog and pricing Microservices show in Figure 5-5.
+Figure 5-4 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
 
 ![Direct http communication](media/direct-http-communication.png)
 
@@ -37,7 +37,7 @@ We could implement an aggregator microservice shown in Figure 5-6.
 
 While this approach encapsulates the business operation workflow inside of an individual microservice, it adds complexity and still results in direct HTTP calls.
 
-A common approach for executing cross-service queries utilizes the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), show in Figure 5-7.
+A common approach for executing cross-service queries utilizes the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-7.
 
 ![Materialized view pattern](media/materialized-view-pattern.png)
 
@@ -71,19 +71,19 @@ Saga patterns are typically choreographed as a series of related events or orche
 
 ## CQRS pattern
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability and security.
+CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability, and security.
 
-In normal data access scenarios, you implement a single set of entity and repository objects that perform *both* read and write data operations.
+In normal data access scenarios, you implement a single model (entity and repository object) that perform *both* read and write data operations.
 
-However, a more advanced data access scenario might warrant separate models (i.e. data entity classes) and even separate tables for reads and writes. To improve performance, the read operation, known as a *query*, might go against a highly denormalized representation of the data to avoid expensive repetitive table joins. Whereas the *write* operation, known as a *command*, goes against a fully normalized representation of the data. You would then need to implement a mechanism that kept both representations in sync. Typically, whenever the write table is modified, it raises an event that replicates that data modification to the read table.
+However, a more advanced data access scenario might benefit from separate models and data tables for reads and writes. To improve performance, the read operation, known as a *query*, might query against a highly denormalized representation of the data to avoid expensive repetitive table joins. Whereas the *write* operation, known as a *command*, might update against a fully normalized representation of the data. You would then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it raises an event that replicates the data modification to the read table.
 
-Figure 5-10, shown below, depicts a CQRS pattern.
+Figure 5-10 shows an implementation of the CQRS pattern.
 
 ![CQRS implementation](media/cqrs-implementation.png)
 
-**Figure 5-10**. CQRS Implementation
+**Figure 5-10**. CQRS implementation
 
-Note in the figure above how separate command and query models are implemented. Moreover, each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the propagation process experiences the principle of eventual consistency, whereas the read model eventually synchronizes with the write model, but there may be some lag in the process.
+Note how in the previous figure separate command and query models are implemented. Moreover, each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the propagation process operates on the principle of [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), whereas the read model eventually synchronizes with the write model, but there may be some lag in the process.
 
 By implementing separation, you have the ability to scale reads and writes separately. As well, you might impose tighter security on write operations than those concerning reads.
 
@@ -93,69 +93,69 @@ Typically, CQRS patterns are applied to limited sections of your system based up
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud native systems. The proliferation of new data technologies in this space has disrupted solutions that were once exclusively solved with relational databases.
 
-On the one side, relational databases have been a prevalent technology for decades. They are mature, proven and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (Atomicity, Consistency, Isolation and Durability) guarantees.
+On the one side, relational databases have been a prevalent technology for decades. They are mature, proven, and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (also known as Atomicity, Consistency, Isolation, and Durability) guarantees.
 
-No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joing tables of normalized data, NoSQL stores self-describing (schemaless) data and is typically stored in JSON documents. They do not offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
+No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joing tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. They do not offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
-A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 below depicts the three properties of the CAP theorem.
+A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 shows the three properties of the CAP theorem.
 
 ![CAP theorem](media/cap-theorem.png)
 
-**Figure 5-11**. The CAP Theorem
+**Figure 5-11**. The CAP theorem
 
 The theorem states that any distributed data system will offer a trade-off between consistency, availability and partition tolerance and that any database can only guarantee two of the three properties:
 
--   *Consistency* - Every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated
+- *Consistency.* Every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated.
 
--   *Availability* - Every node will return a response in a reasonable amount of time, even if that response is not the most recent data
+- *Availability.* Every node will return a response in a reasonable amount of time, even if that response is not the most recent data.
 
--   *Partition Tolerance* - Guarantees that the system will operate if a node fails or loses connectivity with another
+- *Partition Tolerance.* Guarantees that the system will continue operating if a node fails or loses connectivity with another.
 
-Relational databases exhibit consistency and availability, but not so much partition tolerance. Partitioning for a relational database, such as sharding, is difficult and can impact performance.
+Relational databases exhibit consistency and availability, but not partition tolerance. Partitioning a relational database, such as sharding, is difficult and can impact performance.
 
-On the other hand, NoSQL databases typically exhibit partition tolerance (horizontal scalability) and high availability. As the CAP theorem specifies, you can only have two of the three principles, and you therefore lose the consistency property.
+On the other hand, NoSQL databases typically exhibit partition tolerance, known as horizontal scalability, and high availability. As the CAP theorem specifies, you can only have two of the three principles, and you lose the  consistency property.
 
-NoSQL databases are often distributed and commonly scaled out across commodity servers. Doing so can provide great availability, both within and across geographical regions at a reduced cost. Data can be partitioned and replicated across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query, even if the data that it is presenting is stale and has not been updated yet.
+NoSQL databases are distributed and commonly scaled out across commodity servers. Doing so can provide great availability, both within and across geographical regions at a reduced cost. Data can be partitioned and replicated across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query, even if the data that it is presenting is stale and has not been updated yet.
 
-This is called [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency), a characteristic of distributed data systems where ACID transactions are not supported. It is a (brief) delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. So, if you update a product item in a NoSQL database in the United States, but at same time query another that data item from a replica node in Europe, you might retrieve the earlier product information - that is, until the European node has updated. Again, the trade-off here is that by giving up [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency), (i.e., waiting for all nodes to update before returning a query result), you are able to support enormous scale and traffic volume, but with the possibility of presenting older data.
+This is known [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), a characteristic of distributed data systems where ACID transactions are not supported. It is a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. If you update a product item in a NoSQL database in the United States, but at same time query that same data item from a replica node in Europe, you might retrieve the earlier product information - until the European node has been updated with product change. The trade-off is that by giving up [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency),  waiting for all replica nodes to update before returning a query result, you are able to support enormous scale and traffic volume, but with the possibility of presenting older data.
 
-NoSQL databases can be categorized by one of the following four models: 
+NoSQL databases can be categorized by the following four models: 
 
--   *Document Store* (mongodb, couchdb, couchbase) - Data (and corresponding metadata) is stored non-relationally in denormalized JSON-based documents inside the database
+- *Document Store.* (mongodb, couchdb, couchbase) Data (and corresponding metadata) is stored non-relationally in denormalized JSON-based documents inside the database.
 
--   *Key/Value Store* (redis, riak, memcached) - Data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data
+- *Key/Value Store.* (redis, riak, memcached) Data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data.
 
--   *Wide-Column Store* (hbase, Cassandra) - Related data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together
+- *Wide-Column Store.* (hbase, Cassandra) Related Data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together.
 
--   *Graph stores* (neo4j, titan) - Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes
+-   *Graph stores.* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes.
 
 NoSQL databases can be optimized to deal with large scale data needs, especially when the data is relatively simple. Consider a NoSQL database when:
 
--   Your workload requires large-scale and high-concurrency
+-   Your workload requires large-scale and high-concurrency.
 
--   You have large numbers of users
+-   You have large numbers of users.
 
--   Your data can be expressed simply without relationships
+-   Your data can be expressed simply without relationships.
 
--   You need to geographically distribute your data
+-   You need to geographically distribute your data.
 
--   You don't need ACID guarantees
+-   You don't need ACID guarantees.
 
--   Will be deployed to commodity hardware
+-   Will be deployed to commodity hardware.
 
-Then, consider a SQL database when:
+Then, consider a relational database when:
 
--   Your workloads require medium to large-scale
+-   Your workloads require medium to large-scale.
 
--   Concurrency isn't a major concern
+-   Concurrency isn't a major concern.
 
--   ACID guarantees are needed
+-   ACID guarantees are needed.
 
--   Data is best expressed relationally
+-   Data is best expressed relationally.
 
--   Will be deployed to large, high-end hardware
+-   Will be deployed to large, high-end hardware.
 
-Next, we visit data storage in the Azure cloud.
+Next, we look at data storage in the Azure cloud.
 
 >[!div class="step-by-step"]
 >[Previous](distributed-data.md)

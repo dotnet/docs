@@ -1,25 +1,25 @@
 ---
-title: Cloud Native Data Patterns
+title: Cloud native data patterns
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Data Patterns
 ms.date: 06/30/2019
 ---
-# Cloud Native Data Patterns
+# Cloud native data patterns
 
-While decentralized data can lead to improved performance, scalability and cost savings, it also presents distinct challenges. For example, querying for data across multiple services becomes tricky and complex. Then, there is no support for a distributed transaction. A transaction that spans microservices must be managed by your code, while including a mechanism to roll back changes in the event of a partial transactional failure. Even if successful, a transaction across multiple services will result in *eventual consistency.*
+While decentralized data can lead to improved performance, scalability and cost savings, it also presents many challenges. Querying for data across multiple microservices is complex. A transaction that spans mulitple microservices must be managed by your code as distributed transactions are not supported. We move from a world of *immediate consistetncy* to *eventual consistency*.
 
 We discuss these challenges now.
 
-## Cross-Service Queries
+## Cross-service queries
 
-To start, how does an application query data that is spread across multiple, isolated microservices?
+How does an application query data that is spread across multiple, independent microservices?
 
-We see such a scenario in Figure 5-4 shown below.
+We see this scenario in Figure 5-4.
 
-![Cross service query](media/cross-service-query.png)
+![Querying across microservices](media/cross-service-query.png)
 
-**Figure 5-4**. Cross-Service query
+**Figure 5-4**. Querying across microservices
 
-In the figure above we see a Shopping Basket microservice that exposes a public endpoint that adds an item to a user's shopping basket. While the Shopping Basket's data store contains a Basket and LineItem table, it does not contain Product or Price information. Instead those data items are found in the Product and Price microservices, respectfully. In order to add an item, Shopping Basket needs product data and pricing data. So how exactly does it obtain Product and Price data?
+Note how in the previous figure we see a shopping basket microservice that exposes a public endpoint that adds an item to a user's shopping basket. While the Shopping Basket's data store contains a Basket and LineItem table, it does not contain Product or Price information. Instead those data items are found in the Product and Price microservices, respectfully. In order to add an item, Shopping Basket needs product data and pricing data. So how exactly does it obtain Product and Price data?
 
 The Shopping Basket microservice could make a direct HTTP call to both the Product Catalog and Pricing Microservices as show below in Figure 5-5.
 

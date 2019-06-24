@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Place your custom `HttpHandler` code in the <xref:System.Web.IHttpHandler.ProcessRequest%2A> virtual method, as shown in the following example.  
+ Place your custom `HttpHandler` code in the <xref:System.Web.IHttpHandler.ProcessRequest%2A> virtual method, as shown in the [Examples](#examples) section.
   
    
   

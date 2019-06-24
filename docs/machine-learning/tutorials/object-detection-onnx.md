@@ -179,3 +179,11 @@ The next set of methods consolidate the pipeline creation and scoring logic.
 
 ### Make Predictions
 
+The logic to make predictions is contained within the `PredictDataUsingModel` method.
+
+Below the `LoadModel` method definition, add a new method called `PredictDataUsingModel`
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L73-L74)]
+```csharp
+}
+```

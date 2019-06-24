@@ -114,7 +114,7 @@ The security principal can be applied to most any resource. This means that it's
 
 ## Roles
 
-A security principal can take on many roles or, using a more sartorial analogy, wear many hats. Each role defines a series of permissions such as "Read messages from Azure Service Bus endpoint". The effective permissions of a security principal is the combination of all the permissions assigned to all the roles that security principal has. Azure has a large number of built-in roles and users can define their own roles.
+A security principal can take on many roles or, using a more sartorial analogy, wear many hats. Each role defines a series of permissions such as "Read messages from Azure Service Bus endpoint". The effective permission set of a security principal is the combination of all the permissions assigned to all the roles that security principal has. Azure has a large number of built-in roles and users can define their own roles.
 
 ![Figure 10-2 RBAC role definitions](media/rbac-role-definition.png)
 
@@ -188,7 +188,7 @@ Finally, this file can be loaded into Kubernetes by running the following comman
 kubectl apply -f ./secret.yaml
 ```
 
-These secrets can then be mounted into volumes or exposed to container processes through environmental variables. The [12 factor app](https://12factor.net/), covered in [Chapter 1](introduction-to-cloud-native-applications.md), approach to building applications suggests using the lowest common denominator to transmit settings to an application. This is environmental variables as they're supported no matter the operating system or application.
+These secrets can then be mounted into volumes or exposed to container processes through environment variables. The [Twelve-factor app](https://12factor.net/) approach to building applications suggests using the lowest common denominator to transmit settings to an application. Environment variables are the lowest common denominator, because they're supported no matter the operating system or application.
 
 An alternative to use the built-in Kubernetes secrets is to access the secrets in Azure Key Vault from within Kubernetes. The simplest way to do this is to assign an RBAC role to the container looking to load secrets. The application can then use the Azure Key Vault APIs to access the secrets. However, this approach requires modifications to the code and doesn't follow the pattern of using environment variables. Instead, it's possible to inject values into a container through the use of the [Azure Key Vault Injector](https://mrdevops.io/introducing-azure-key-vault-to-kubernetes-931f82364354). This approach is actually more secure than using the Kubernetes secrets directly, as they can be accessed by users on the cluster.
 
@@ -250,7 +250,7 @@ While Cosmos DB doesn't provide for supplying customer encryption keys, there ha
 
 ## Keeping secure
 
-Azure has all the tools necessary to release a highly secure product. However, a ladder is only as strong as its weakest rung. If the applications deployed on top of Azure aren't developed with a proper security mindset and good security audits, then they become the weak rung, the weak link in the chain, the unlocked door. There are many great [static analysis tools](https://www.whitesourcesoftware.com/), [encryption libraries](https://www.libressl.org/), and [security practices](https://azure.microsoft.com/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/) that can be used to ensure that the software installed on Azure is as secure as Azure itself.  
+Azure has all the tools necessary to release a highly secure product. However, a chain is only as strong as its weakest link. If the applications deployed on top of Azure aren't developed with a proper security mindset and good security audits, then they become the weak link in the chain. There are many great static analysis tools, encryption libraries, and security practices that can be used to ensure that the software installed on Azure is as secure as Azure itself. [WhiteSource]([static analysis tools](https://www.whitesourcesoftware.com/), [encryption libraries](https://www.libressl.org/), and [security practices](https://azure.microsoft.com/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/), LibreSSL(https://www.libressl.org/) and [Red vs. Blue - Internal security penetration testing of Microsoft Azure](https://azure.microsoft.com/en-us/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/) are examples of that, respectively. 
 
 >[!div class="step-by-step"]
 >[Previous](security.md)

@@ -45,7 +45,7 @@ ms.author: "ronpet"
    }
    ```
 
-   The *runtimeconfig.json* file is automatically created in the build directory by the [dotnet build](..\tools\dotnet-build.md) command as well as by selecting the **Build** menu option in Visual Studio. You can then edit he file once it is created.
+   The *runtimeconfig.json* file is automatically created in the build directory by the [dotnet build](../tools/dotnet-build.md) command as well as by selecting the **Build** menu option in Visual Studio. You can then edit he file once it is created.
 
    Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 

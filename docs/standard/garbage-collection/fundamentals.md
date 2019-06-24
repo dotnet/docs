@@ -206,7 +206,7 @@ Starting with .NET Framework 4.6.2, some additional configuration options are av
 
 - You can limit the number of heaps created by the garbage collector by using the [\<GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) configuration setting in .NET Framework applications. If GC thread/processor affinity is disabled, this limits the number of GC heaps. If GC thread/processor affinity is enabled, this limits the number of GC heaps to the processors 0 to one less than the value specified by the configuration setting,
 
-- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapoaffinitizemask-element.md) configuration element in .NET Framework applications to control the specific processors for which a GC heap and threads are created. You supply a decimal value that is a mask defining the processors that are available to the process.
+- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) configuration element in .NET Framework applications to control the specific processors for which a GC heap and threads are created. You supply a decimal value that is a mask defining the processors that are available to the process.
 
 ### Comparing workstation and server garbage collection  
  The following are threading and performance considerations for workstation garbage collection:  

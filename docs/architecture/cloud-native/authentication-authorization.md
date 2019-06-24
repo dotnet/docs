@@ -9,15 +9,15 @@ ms.date: 06/30/2019
 
 Many organizations still rely on local authentication services like Active Directory Federation Services (ADFS). While this has traditionally served organizations well for on premises authentication needs, cloud native applications benefit from systems designed specifically for the cloud. A recent 2019 United Kingdom NCSC advisory states that "organizations using Azure AD as their primary authentication source will actually lower their risk compared to ADFS." Some reasons outlined in [this analysis](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/) include:
 
-- Access to full set of Microsoft credential protection technologies
-- Most organizations are already relying on Azure AD to some extent
-- Double-hashing of NTLM hashes ensures compromise won't allow credentials that work in local Active Directory
+- Access to full set of Microsoft credential protection technologies.
+- Most organizations are already relying on Azure AD to some extent.
+- Double hashing of NTLM hashes ensures compromise won't allow credentials that work in local Active Directory.
 
 ## References
 
 - [Authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
-- [Access Tokens and Claims](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
-- [It may be time to ditch your on premises auth services](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
+- [Access tokens and claims](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
+- [It may be time to ditch your on premises authentication services](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
 
 >[!div class="step-by-step"]
 >[Previous](identity.md)

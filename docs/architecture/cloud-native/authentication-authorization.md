@@ -1,5 +1,5 @@
 ---
-title: Authentication and Authorization in Cloud Native Apps
+title: Authentication and Authorization in cloud native apps
 description: Architecting Cloud Native .NET Apps for Azure | Authentication and Authorization in Cloud Native Apps
 ms.date: 06/30/2019
 ---

@@ -18,7 +18,6 @@ Visual C# has features that simplify access to Office API objects. The new featu
   
  To complete this walkthrough, you must have Microsoft Office Excel 2007 and Microsoft Office Word 2007, or later versions, installed on your computer.  
   
- If you are using an operating system that is older than [!INCLUDE[windowsver](~/includes/windowsver-md.md)], make sure that [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] is installed.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

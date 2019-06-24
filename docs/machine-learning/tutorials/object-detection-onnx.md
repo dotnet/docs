@@ -154,11 +154,11 @@ In order to score using the pre-trained ONNX model, create a helper class called
 
 1. Additionally, create a struct called `TinyYoloModelSettings` to contain the name of the name of the input and output layers of the model.
 
-    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L33-44)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L33-L44)]
 
 1. Add the `Score` method below the most recently created structs.
 
-    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L46-51)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L46-L51)]
 
     The `Score` method loads the model for predictions using the `LoadModel` method and then uses it to make predictions with the `PredictDataUsingModel` method.
 
@@ -168,9 +168,9 @@ The next set of methods consolidate the pipeline creation and scoring logic.
 
 1. Below the `Score` method, create the `LoadModel` method.
 
-    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L53-71)]
+    [!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L53-L71)]
 
-    The `LoadModel` method creates the model pipeline and returns a `PredictionEngine`. The pipeline contains the following steps.  
+    The `LoadModel` method creates the model pipeline and returns a `PredictionEngine`. The training pipeline contains the following steps:  
 
     1. Uses the [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*) transform to load the images in the `imagesFolder`. 
     1. Resizes the image to the expected input size of 416 x 416 using the [`ResizeImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages*) transform.

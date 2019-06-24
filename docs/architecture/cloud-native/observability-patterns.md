@@ -48,11 +48,11 @@ Queries can be constructed in the log aggregation tools to look for certain stat
 
 ## Alerts
 
-The next logical step to improve reactions to live site incidents, is to craft queries against the monitoring tools to look for known failure conditions. For instance, queries could search through the incoming logs for indications of status code 500, which indicates a problem on a web server. As soon as one of these is detected, then an e-mail or an SMS could be sent to the owner of the originating service who can begin to investigate.
+The next logical step to improve reactions to live site incidents is to craft queries against the monitoring tools to look for known failure conditions. For instance, queries could search through the incoming logs for indications of status code 500, which indicates a problem on a web server. As soon as one of these is detected, then an e-mail or an SMS could be sent to the owner of the originating service who can begin to investigate.
 
 Typically though, a single 500 error is not sufficient to determine that a problem has occurred. It could simply mean that a user mistyped their password or entered some malformed data. The alert queries can be crafted to only fire when a larger than average number of 500 errors are detected.
 
-One of the most damaging patterns in alerting is to fire too many alerts for humans to investigate. Service owners will rapidly become desensitized to errors which they’ve previously investigated and found to be benign. When true errors occur then they will be lost in the noise of hundreds of false positives. The parable of the [Boy Who Cried Wolf](https://en.wikipedia.org/wiki/The_Boy_Who_Cried_Wolf) is frequently told to children to warn them of this very danger. It's important to ensure that the alerts which do fire are indicative of a real problem.
+One of the most damaging patterns in alerting is to fire too many alerts for humans to investigate. Service owners will rapidly become desensitized to errors which they’ve previously investigated and found to be benign. When true errors occur then they will be lost in the noise of hundreds of false positives. The parable of the [Boy Who Cried Wolf](https://en.wikipedia.org/wiki/The_Boy_Who_Cried_Wolf) is frequently told to children to warn them of this very danger. It's important to ensure that the alerts that do fire are indicative of a real problem.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

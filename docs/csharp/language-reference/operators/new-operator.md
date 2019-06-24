@@ -8,36 +8,43 @@ ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8
 ---
 # new operator (C# reference)
 
-Introduction.
-
-Both value-type objects such as structs and reference-type objects such as classes are destroyed automatically, but value-type objects are destroyed when their containing context is destroyed, whereas reference-type objects are destroyed by the garbage collector at an unspecified time after the last reference to them is removed. For types that contain resources such as file handles, or network connections, it is desirable to employ deterministic cleanup to ensure that the resources they contain are released as soon as possible. For more information, see [using Statement](using-statement.md).
+Use the `new` operator to create a new instance of a type.
 
 You can also use the `new` keyword as a [member declaration modifier](../keywords/new-modifier.md) or a [generic type constraint](../keywords/new-constraint.md).
 
 ## Constructor invocation
 
-Text.
+Typically you invoke one of the [constructors](../../programming-guide/classes-and-structs/constructors.md) of a type to create a new instance of that type:
 
-Used to create objects and invoke constructors. For example:
+[!code-csharp-interactive[invoke constructor](~/samples/csharp/language-reference/operators/NewOperator.cs#Constructor)]
 
-```csharp
-Class1 obj  = new Class1();
-```
+You can use an [object or collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) to perform instantiation of an object and its initialization in one statement. The following example creates an instance with the same content as the preceding example:
+
+[!code-csharp-interactive[constructor with initializer](~/samples/csharp/language-reference/operators/NewOperator.cs#ConstructorWithInitializer)]
 
 ## Array instantiation
 
-Text.
+You also use the `new` operator to create an array instance, as the following example shows:
+
+[!code-csharp-interactive[create array](~/samples/csharp/language-reference/operators/NewOperator.cs#Array)]
+
+Use array initialization syntax to create an array instance and populate it with elements in one statement. The following example demonstrates various forms of array initialization syntax:
+
+[!code-csharp-interactive[initialize array](~/samples/csharp/language-reference/operators/NewOperator.cs#ArrayInitialization)]
+
+For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
 
 ## Instantiation of anonymous types
 
-Text.
+To create an instance of an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md), use the `new` operator and object initializer syntax:
 
-It is also used to create instances of anonymous types:
+[!code-csharp-interactive[anonymous type](~/samples/csharp/language-reference/operators/NewOperator.cs#AnonymousType)]
 
-```csharp
-var query = from cust in customers
-            select new { Name = cust.Name, Address = cust.PrimaryAddress };
-```
+## Destruction of type instances
+
+You don't have to destroy earlier created type instances. Instances of both reference and value types are destroyed automatically. Instances of value types are destroyed as soon as the context that contains them is destroyed. Instances of reference types are destroyed by the [garbage collector](../../../standard/garbage-collection/index.md) at unspecified time after the last reference to them is removed.
+
+For types that contain unmanaged resources, for example, a file handle, it's recommended to employ deterministic clean-up to ensure that the resources they contain are released as soon as possible. For more information, see the <xref:System.IDisposable?displayProperty=nameWithType> API reference and the [using statement](../keywords/using-statement.md) article.
 
 ## Operator overloadability
 
@@ -51,3 +58,4 @@ For more information, see [The new operator](~/_csharplang/spec/expressions.md#t
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
+- [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)

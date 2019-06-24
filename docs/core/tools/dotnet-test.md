@@ -114,7 +114,7 @@ The directory where the test results are going to be placed. If the specified di
 
 `-s|--settings <SETTINGS_FILE>`
 
-The `.runsettings` file to use for running the tests. [Configure unit tests by using a .runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
+The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
 
 `-t|--list-tests`
 

@@ -234,7 +234,7 @@ Directory in which to find the binaries to run.
 
 `-s|--settings <SETTINGS_FILE>`
 
-The `.runsettings` file to use for running the tests. [Configure unit tests by using a .runsettings file](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
+The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](https://docs.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
 
 `-t|--list-tests`
 

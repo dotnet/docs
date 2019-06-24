@@ -28,7 +28,13 @@ The new compiler options are:
 - `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
 - `-pathmap` to provide a mapping for source directories.
 
-The remainder of this article provides details and links to learn more about each of the improvements.
+The remainder of this article provides details and links to learn more about each of the improvements. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
+
 
 ## Enabling more efficient safe code
 

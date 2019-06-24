@@ -12,7 +12,7 @@ The traditional monolithic apps that we've built for years favor a centralized d
 ![Single monolithic database](media/single-monolithic-database.png)
 **Figure 5-1**. Single monolithic database
 
-In Figure 5-1, all application components consume a large relational enterprise database. There are several key benefits to this approach. It's straightforward to query data across multiple tables and straightforward to implement [ACID transactions](https://docs.microsoft.com/en-us/windows/desktop/cossdk/acid-properties), i,e, basic properties that ensure consistency across database transactions. You end up with *immediate consistency*: Either all your data updates or nothing updates.
+In Figure 5-1, all application components consume a large relational enterprise database. There are several key benefits to this approach. It's straightforward to query data across multiple tables and straightforward to implement [ACID transactions](/windows/desktop/cossdk/acid-properties), i,e, basic properties that ensure consistency across database transactions. You end up with *immediate consistency*: Either all your data updates or nothing updates.
 
 On the contrary, cloud native systems favor a data architecture where, by design, each microservice owns and encapsulates its own data, as shown in Figure 5-2.
 

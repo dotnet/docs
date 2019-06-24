@@ -214,14 +214,14 @@
           href: keywords/using-statement.md
       - name: extern alias
         href: keywords/extern-alias.md
+    - name: Type-testing Keywords
+      items:
+        - name: is
+          href: keywords/is.md
     - name: Operator Keywords
       items:
-      - name: as
-        href: keywords/as.md
       - name: await
         href: keywords/await.md
-      - name: is
-        href: keywords/is.md
       - name: new
         items:
         - name: new operator, modifier and constraint
@@ -234,8 +234,6 @@
           href: keywords/new-constraint.md
       - name: sizeof
         href: keywords/sizeof.md
-      - name: typeof
-        href: keywords/typeof.md
       - name: nameof
         href: keywords/nameof.md
     - name: Conversion Keywords
@@ -342,30 +340,34 @@
     - name: Member access operators
       href: operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
+    - name: Type-testing and conversion operators
+      href: operators/type-testing-and-conversion-operators.md
+      displayName: "is, as, typeof, (), cast"
     - name: Pointer related operators
       href: operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
-    - name: () operator
-      href: operators/invocation-operator.md
-    - name: ":: operator"
-      href: operators/namespace-alias-qualifer.md
+    - name: "= operator"
+      href: operators/assignment-operator.md
+      displayName: "assignment, ref"
     - name: + and += operators
       href: operators/addition-operator.md
       displayName: string concatenation, delegate combination, event subscription
     - name: "- and -= operators"
       href: operators/subtraction-operator.md
       displayName: delegate removal, event unsubscription
-    - name: = operator
-      href: operators/assignment-operator.md
     - name: "?: operator"
       href: operators/conditional-operator.md
-      displayName: conditional, ternary
+      displayName: conditional, ternary, ref
     - name: "?? operator"
       href: operators/null-coalescing-operator.md
       displayName: null-coalescing
     - name: => operator
       href: operators/lambda-operator.md
-    - name: stackalloc
+      displayName: lambda
+    - name: ":: operator"
+      href: operators/namespace-alias-qualifer.md
+      displayName: "namespace alias qualifier"
+    - name: stackalloc operator
       href: operators/stackalloc.md
     - name: true and false operators
       href: operators/true-false-operators.md

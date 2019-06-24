@@ -7,7 +7,7 @@ ms.date: 06/30/2019
 
 When constructing a cloud native system consisting of many independent, decoupled services, the way you think about data storage radically changes.
 
-The traditional monolthic apps that we've built for years favor a centralized data store, typically a relational database as shown in Figure 5-1.
+The traditional monolithic apps that we've built for years favor a centralized data store, typically a relational database as shown in Figure 5-1.
 
 ![Single monolithic database](media/single-monolithic-database.png)
 **Figure 5-1**. Single monolithic database

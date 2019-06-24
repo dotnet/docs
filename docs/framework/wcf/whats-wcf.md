@@ -86,7 +86,7 @@ Microsoft BizTalk Server R2 also utilizes WCF as a communication technology. Biz
 
 Microsoft Silverlight is a platform for creating interoperable, rich Web applications that allow developers to create media-intensive Web sites (such as streaming video). Beginning with version 2, Silverlight has incorporated WCF as a communication technology to connect Silverlight applications to WCF endpoints.
 
-The hosting features of Windows Server AppFabric application server are specifically designed for deploying and managing applications that use WCF for communication. The hosting features includes rich tooling and configuration options specifically designed for WCF-enabled applications.
+The hosting features of Windows Server AppFabric application server are specifically designed for deploying and managing applications that use WCF for communication. The hosting features include rich tooling and configuration options specifically designed for WCF-enabled applications.
 
 ## See also
 

@@ -24,9 +24,9 @@ There are many enhancements to the C# language that you can try out already.
 > [!NOTE]
 > This article was last updated for C# 8.0 preview 5.
 
-The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. TYou can explore these features in your environemnt using the `dotnet try` global tool:
+The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
-1. Install [dotnet-try](https://github.com/dotnet/try/README.md#setup)
+1. Install [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup)
 1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples)
 1. Set the current directory to the *csharp8* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.

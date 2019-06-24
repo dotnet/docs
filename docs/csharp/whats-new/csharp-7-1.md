@@ -32,10 +32,10 @@ control [reference assembly generation](#reference-assembly-generation).
 To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version.
 
 The remainder of this article provides an overview of each feature. For each feature,
-you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environemnt using the `dotnet try` global tool:
+you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environment using the `dotnet try` global tool:
 
-1. Install [dotnet-try](https://github.com/dotnet/try/README.md#setup)
-1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples)
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
 1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.
 

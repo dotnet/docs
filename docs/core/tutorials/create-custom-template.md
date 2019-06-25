@@ -27,11 +27,20 @@ With .NET Core, you can create and deploy templates that generate projects, file
   └───templates
   ```
 
-  Open a terminal and navigate to the _working\templates_ folder.
+- Additionally, create a temporary folder where you can test your templates. This tutorial will refer to that folder as the _test_ folder. This folder **shouldn't** be under the _working_ folder in any way. As an example, you can create the _test_ folder as a sibling of the _working_ folder.
+
+  ```console
+  parent_folder
+  ├───test
+  └───working
+      └───templates
+  ```
 
 - Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
+
+- Open a terminal and navigate to the _working\templates_ folder.
 
 ## Create an item template
 
@@ -97,7 +106,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 }
 ```
 
-This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `item`. This designates your template as an item template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core suggests users filter on if they want to, for example, list all item templates.
+This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `item`. This designates your template as an item template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they are searching for.
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They are two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
@@ -127,28 +136,28 @@ Worker Service                                    worker                [C#]    
 
 ### Test the item template
 
-Now that you have an item template installed, test it. Navigate to the _working/_ folder and create a new folder named _test_. Enter _test_ and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+Now that you have an item template installed, test it. Navigate to the _test/_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
 
 ```console
-C:\working\temp> dotnet new console
+C:\test> dotnet new console
 The template "Console Application" was created successfully.
 
 Processing post-creation actions...
-Running 'dotnet restore' on C:\working\temp\temp.csproj...
-  Restore completed in 54.82 ms for C:\working\temp\temp.csproj.
+Running 'dotnet restore' on C:\test\test.csproj...
+  Restore completed in 54.82 ms for C:\test\test.csproj.
 
 Restore succeeded.
 ```
 
 ```console
-C:\working\temp> dotnet run
+C:\test> dotnet run
 Hello World!
 ```
 
 Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from your template.
 
 ```console
-C:\working\temp> dotnet new stringext
+C:\test> dotnet new stringext
 The template "Example templates: string extensions" was created successfully.
 ```
 
@@ -161,11 +170,11 @@ Console.WriteLine("Hello World!".Reverse());
 Run the program again and you'll see that the result is reversed.
 
 ```console
-C:\working\temp> dotnet run
+C:\test> dotnet run
 !dlroW olleH
 ```
 
-Congratulations! You just created and deployed an item template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete the _temp_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
+Congratulations! You just created and deployed an item template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete all files from the _test_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
 
 ### Uninstall the template
 
@@ -207,8 +216,6 @@ C:\working> dotnet new -u C:\working\templates\extensions
 ## Create a project template
 
 Project templates produce ready-to-run projects which make it easy for users to start with a working set of code. .NET Core includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 8.0 and produces an `async main` entry point.
-
-Starting in the `working\templates\` folder you created in the [prerequisites](#prerequisites) section, create a new folder named `consoleasync` and enter it. Create a new console project with `dotnet new console`.
 
 Open a terminal and navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template. .NET Core also created an _obj_ folder, delete that folder, you do not need it.
 
@@ -267,6 +274,8 @@ C:\working\templates\consoleasync>dotnet run
 Hello World with C# 8.0!
 ```
 
+You can delete the _obj/_ and _bin/_ folders created by using `dotnet run`.
+
 ### Create the template config
 
 Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this example, your template folder is located at _working\templates\consoleasync_. The _consoleasync_ folder needs to have this special folder and config file created.
@@ -301,7 +310,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 }
 ```
 
-This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `project`. This designates your template as a project template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core suggests users filter on if they want to, for example, list all item templates.
+This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `project`. This designates your template as a project template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they are searching for.
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They are two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
@@ -329,21 +338,23 @@ Windows Forms (WinForms) Application              winforms              [C#], VB
 Worker Service                                    worker                [C#]              Common/Worker/Web
 ```
 
-### Test the item template
+### Test the project template
 
-Now that you have an item template installed, test it. Navigate to the _working/_ folder and create a new folder named _test_. Enter _test_ and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+Now that you have a project template installed, test it. Navigate to the _working/_ folder and create a new folder named _test_. Enter _test_ and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+
+Now that you have an item template installed, test it. Navigate to the _test/_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
 
 ```console
-C:\working\temp> dotnet new consoleasync
+C:\test> dotnet new consoleasync
 The template "Example templates: async project" was created successfully.
 ```
 
 ```console
-C:\working\temp> dotnet run
+C:\test> dotnet run
 Hello World with C# 8.0!
 ```
 
-Congratulations! You just created and deployed a project template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete the _temp_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
+Congratulations! You just created and deployed a project template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete the _test_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
 
 ### Uninstall the template
 
@@ -384,9 +395,153 @@ C:\working> dotnet new -u C:\working\templates\consoleasync
 
 ## Template packs
 
-A template pack is a group of templates that can be installed at the same time. When you uninstall a pack, all templates contained in the pack are removed. The previous sections of this tutorial only installed individual templates. Sharing a template through a directory is also troublesome and a template pack makes distribution easy.
+A template pack is one or more templates packaged into a single redistributable file. When you install or uninstall a pack, all templates contained in the pack are added or removed, respectively. The previous sections of this tutorial only worked with individual templates, and sharing individual templates is difficult without creating a template pack. The install and uninstall process of a pack is simpler than an individual template stored in a directory.
 
-Template packs are NuGet package (_.nupkg_) files.
+Template packs are represented by a NuGet package (_.nupkg_) file. And like any NuGet package, you can upload the template pack to a NuGet feed. The `dotnet new -i` command supports installing template pack from a NuGet package feed. Additionally, you can install a template pack from a _.nupkg_ file directly.
+
+### Create a template pack
+
+Normally you use a C# project file to compile code and produce a binary, but, it can also be used to generate a template pack. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template pack NuGet package.
+
+The pack you'll create will include the [item template](#create-an-item-template) and [package template](#create-a-project-template) previously created. Because we grouped the two templates into the _working/templates/_ folder, we can use the _working/_ folder for the _.csproj_ file.
+
+Open your terminal and navigate to the _working/_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
+
+```console
+dotnet new console -n templatepack -o .
+```
+
+The `-n` parameter sets the _.csproj_ filename to _templatepack.csproj_ and the `-o` parameters creates the files in the current directory. You should see a result similar to the following output.
+
+```console
+C:\working> dotnet new console -n templatepack -o .
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on .\templatepack.csproj...
+  Restore completed in 52.38 ms for C:\working\templatepack.csproj.
+
+Restore succeeded.
+```
+
+Next, open the _templatepack.csproj_ file in your favorite editor and replace the XML with the following:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>AdatumCorporation.Utility.Templates</PackageId>
+    <Title>AdatumCorporation Templates</Title>
+    <Authors>Me</Authors>
+    <Description>Templates to use when creating an application for Adatum Corporation.</Description>
+    <PackageTags>dotnet-new;templates;contoso</PackageTags>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
+```
+
+The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PacakgeId>` value is used to uninstall the template pack with a single name instead of a directory path. It can also be used to install the template pack from a NuGet feed. The remaining settings such as `<Title>` and `<Tags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
+
+The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
+
+The last three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it is created.
+
+The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates/_ folder as content. It is also set to exclude any _bin/_ folder or _obj/_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they are located. This prevents the project being used to create a template pack from trying to compile the code in the _templates/_ folder heiarchy.
+
+Save this file and then run the pack command
+
+```console
+dotnet pack
+```
+
+This command will build your project and create a NuGet package in This should be the _working/bin/Debug_ folder.
+
+```console
+C:\working> dotnet pack
+Microsoft (R) Build Engine version 16.2.0-preview-19278-01+d635043bd for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 123.86 ms for C:\working\templatepack.csproj.
+
+  templatepack -> C:\working\bin\Debug\netstandard2.0\templatepack.dll
+  Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
+```
+
+
+
+
+
+
+
+AFTER INSTALL
+
+```console
+C:\workingdir\working>dotnet new -i C:\workingdir\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o, --output        Location to place the generated output.
+  -i, --install       Installs a source or a template pack.
+  -u, --uninstall     Uninstalls a source or a template pack.
+  --nuget-source      Specifies a NuGet source to use during install.
+  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
+  --dry-run           Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force             Forces content to be generated even if it would change existing files.
+  -lang, --language   Filters templates based on language and specifies the language of the template to create.
+
+
+Templates                                         Short Name            Language          Tags
+-------------------------------------------------------------------------------------------------------------------------------
+Example templates: string extensions              stringext             [C#]              Common/Code
+Console Application                               console               [C#], F#, VB      Common/Console
+Example templates: async project                  consoleasync          [C#]              Common/Console/C#8
+Class library                                     classlib              [C#], F#, VB      Common/Library
+```
+
+```console
+  AdatumCorporation.Utility.Templates
+    Templates:
+      Example templates: async project (consoleasync) C#
+      Example templates: string extensions (stringext) C#
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

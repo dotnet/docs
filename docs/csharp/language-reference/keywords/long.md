@@ -87,7 +87,7 @@ int x = 8L;        // Error: no implicit conversion from long to int
 int y = (int)8L;   // OK: explicit conversion to int
 ```
 
-There is a predefined implicit conversion from [sbyte](../builtin-types/integral-numeric-types.md), [byte](../builtin-types/integral-numeric-types.md), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), or [char](../../../csharp/language-reference/keywords/char.md) to `long`.
+There is a predefined implicit conversion from [sbyte](../builtin-types/integral-numeric-types.md), [byte](../builtin-types/integral-numeric-types.md), [short](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), or [char](../../../csharp/language-reference/keywords/char.md) to `long`.
 
 Notice also that there is no implicit conversion from floating-point types to `long`. For example, the following statement generates a compiler error unless an explicit cast is used:
 

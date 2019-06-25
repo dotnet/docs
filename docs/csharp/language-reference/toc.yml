@@ -17,7 +17,7 @@
         - name: bool
           href: keywords/bool.md
         - name: Integral numeric types
-          displayName: sbyte, byte
+          displayName: sbyte, byte, short
           href: builtin-types/integral-numeric-types.md
         - name: Floating point numeric types
           href: keywords/floating-point-numeric-types.md
@@ -35,8 +35,6 @@
           href: keywords/int.md
         - name: long
           href: keywords/long.md
-        - name: short
-          href: keywords/short.md
         - name: struct
           href: keywords/struct.md
         - name: uint

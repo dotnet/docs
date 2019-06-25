@@ -36,7 +36,7 @@ Every enumeration type has an underlying type, which can be any integral type ex
 enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 ```
 
-The approved types for an enum are [byte](../builtin-types/integral-numeric-types.md), [sbyte](../builtin-types/integral-numeric-types.md), [short](short.md), [ushort](ushort.md), [int](int.md), [uint](uint.md), [long](long.md), or [ulong](ulong.md).
+The approved types for an enum are [byte](../builtin-types/integral-numeric-types.md), [sbyte](../builtin-types/integral-numeric-types.md), [short](../builtin-types/integral-numeric-types.md), [ushort](ushort.md), [int](int.md), [uint](uint.md), [long](long.md), or [ulong](ulong.md).
 
 A variable of an enumeration type can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
 

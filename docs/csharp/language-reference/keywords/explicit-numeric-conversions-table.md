@@ -20,7 +20,7 @@ The following table shows the predefined explicit conversions between .NET numer
 |----------|--------|  
 |[sbyte](../builtin-types/integral-numeric-types.md)|`byte`, `ushort`, `uint`, `ulong`, or `char`|  
 |[byte](../builtin-types/integral-numeric-types.md)|`sbyte` or `char`|  
-|[short](short.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `char`|  
+|[short](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `char`|  
 |[ushort](ushort.md)|`sbyte`, `byte`, `short`, or `char`|  
 |[int](int.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`,or `char`|  
 |[uint](uint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `char`|  

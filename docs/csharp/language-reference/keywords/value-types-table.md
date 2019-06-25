@@ -25,7 +25,7 @@ The following table shows the C# value types:
 |[int](int.md)|Signed, numeric, [integral](integral-types-table.md)||
 |[long](long.md)|Signed, numeric, [integral](integral-types-table.md)|L or l|
 |[sbyte](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
-|[short](short.md)|Signed, numeric, [integral](integral-types-table.md)||
+|[short](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
 |[struct](struct.md)|User-defined structure||
 |[uint](uint.md)|Unsigned, numeric, [integral](integral-types-table.md)|U or u|
 |[ulong](ulong.md)|Unsigned, numeric, [integral](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|

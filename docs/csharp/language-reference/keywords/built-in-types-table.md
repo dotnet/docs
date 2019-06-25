@@ -27,7 +27,7 @@ The following table shows the keywords for built-in C# types, which are aliases 
 |[long](long.md)|<xref:System.Int64?displayProperty=nameWithType>|  
 |[ulong](ulong.md)|<xref:System.UInt64?displayProperty=nameWithType>|  
 |[object](object.md)|<xref:System.Object?displayProperty=nameWithType>|  
-|[short](short.md)|<xref:System.Int16?displayProperty=nameWithType>|  
+|[short](../builtin-types/integral-numeric-types.md)|<xref:System.Int16?displayProperty=nameWithType>|  
 |[ushort](ushort.md)|<xref:System.UInt16?displayProperty=nameWithType>|  
 |[string](string.md)|<xref:System.String?displayProperty=nameWithType>|  
   

@@ -53,7 +53,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new mstest`](../tools/dotnet-new.md). The dotnet new command creates a test project that uses MStest as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new mstest`](../tools/dotnet-new.md). The dotnet new command creates a test project that uses MSTest as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
 
 ```xml
 <ItemGroup>

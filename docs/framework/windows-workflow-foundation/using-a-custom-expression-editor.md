@@ -216,7 +216,7 @@ namespace MyExpressionEditorService
 ```  
   
 ### Publishing a Custom Expression Editor in a WPF Project  
- Here is the code that shows how to rehost the designer in a [!INCLUDE[avalon2](../../../includes/avalon2-md.md)] application and how to create and publish the `MyEditorService` service. Before using this code, add a reference to the MyExpressionEditorService library project from the project that contains the avalon2 application.  
+ Here is the code that shows how to rehost the designer in a WPF application and how to create and publish the `MyEditorService` service. Before using this code, add a reference to the MyExpressionEditorService library project from the project that contains the avalon2 application.  
   
 ```  
 using System.Windows;  

@@ -139,7 +139,7 @@ You're starting to see how patterns can help you create algorithms where the cod
 The toll authority wants to encourage vehicles to travel at maximum capacity. They've decided to charge more when vehicles have fewer passengers, and encourage full vehicles by offering lower pricing:
 
 - Cars and taxis with no passengers pay an extra $0.50.
-- Cars and taxis with two passengers get a 0.50 discount.
+- Cars and taxis with two passengers get a $0.50 discount.
 - Cars and taxis with three or more passengers get a $1.00 discount.
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
@@ -193,7 +193,12 @@ vehicle switch
 };
 ```
 
-The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks under 3000 lbs are given a $2.00 discount. That rule is implemented with the following code:
+The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they adjust the toll amount based on the weight class of the trucks as follows:
+
+- Trucks over 5000 lbs are charged an extra $5.00.
+- Light trucks under 3000 lbs are given a $2.00 discount.
+
+That rule is implemented with the following code:
 
 ```csharp
 vehicle switch

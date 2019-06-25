@@ -45,9 +45,9 @@ These are the highest precedence operators.
 
 [x--](arithmetic-operators.md#decrement-operator---) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[new](../keywords/new-operator.md) – type instantiation.
+[new](new-operator.md) – type instantiation.
 
-[typeof](../keywords/typeof.md) – returns the <xref:System.Type> object representing the operand.
+[typeof](type-testing-and-conversion-operators.md#typeof-operator) – returns the <xref:System.Type> object representing the operand.
 
 [checked](../keywords/checked.md) – enables overflow checking for integer operations.
 
@@ -81,7 +81,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[(T)x](invocation-operator.md) – type casting.
+[(T)x](type-testing-and-conversion-operators.md#cast-operator-) – type casting.
 
 [await](../keywords/await.md) – awaits a `Task`.
 
@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x >= y](comparison-operators.md#greater-than-or-equal-operator-) – greater than or equal to.
 
-[is](../keywords/is.md) – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
+[is](type-testing-and-conversion-operators.md#is-operator) – type compatibility. Returns `true` if the evaluated left operand can be cast to the type specified by the right operand.
 
-[as](../keywords/as.md) – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.
+[as](type-testing-and-conversion-operators.md#as-operator) – type conversion. Returns the left operand cast to the type specified by the right operand, but `as` returns `null` where `(T)x` would throw an exception.
 
 ## Equality operators
 
@@ -165,13 +165,13 @@ This operator has higher precedence than the next section and lower precedence t
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
+[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If `x` evaluates to `false`, then `y` is not evaluated.
 
 ## Conditional OR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
+[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If `x` evaluates to `true`, then `y` is not evaluated.
 
 ## Null-coalescing operator
 

@@ -1,7 +1,6 @@
 ---
 title: "Value types - C# Reference"
 ms.custom: seodec18
-
 ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"
@@ -83,9 +82,9 @@ int myInt = new int();
 int myInt = 0;
 ```
 
-Using the [new](new.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
+Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
 
-With user-defined types, use [new](new.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
+With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 
 ```csharp
 Point p = new Point(); // Invoke parameterless constructor for the struct.
@@ -93,7 +92,7 @@ Point p = new Point(); // Invoke parameterless constructor for the struct.
 
 After this call, the struct is considered to be definitely assigned; that is, all its members are initialized to their default values.
 
-For more information about the `new` operator, see [new](new.md).
+For more information about the `new` operator, see [new](../operators/new-operator.md).
 
 For information about formatting the output of numeric types, see [Formatting numeric results table](formatting-numeric-results-table.md).
 

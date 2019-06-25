@@ -194,6 +194,12 @@
       href: core/whats-new/dotnet-core-2-1.md
     - name: What's new in .NET Core 2.0
       href: core/whats-new/dotnet-core-2-0.md
+  - name: Application Compatibility
+    items:
+    - name: Evaluate breaking changes
+      href: core/compatibility/index.md
+    - name: Breaking change categories
+      href: core/compatibility/categories.md    
   - name: Tutorials
     href: core/tutorials/index.md
     items:
@@ -530,8 +536,6 @@
           href: csharp/tutorials/intro-to-csharp/introduction-to-classes.md
     - name: Explore C# 6
       href: csharp/tutorials/exploration/csharp-6.yml
-    - name: Explore C# 7.0
-      href: csharp/tutorials/exploration/csharp-7.yml
     - name: Explore string interpolation - interactive
       href: csharp/tutorials/exploration/interpolated-strings.yml
     - name: Explore string interpolation - in your environment

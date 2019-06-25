@@ -18,7 +18,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
   
 |||||  
 |---|---|---|---|  
-|[abstract](abstract.md)|[as](as.md)|[base](base.md)|[bool](bool.md)|  
+|[abstract](abstract.md)|[as](../operators/type-testing-and-conversion-operators.md#as-operator)|[base](base.md)|[bool](bool.md)|  
 |[break](break.md)|[byte](byte.md)|[case](switch.md)|[catch](try-catch.md)|  
 |[char](char.md)|[checked](checked.md)|[class](class.md)|[const](const.md)|  
 |[continue](continue.md)|[decimal](decimal.md)|[default](default.md)|[delegate](delegate.md)|  
@@ -28,13 +28,13 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[foreach](foreach-in.md)|[goto](goto.md)|[if](if-else.md)|[implicit](implicit.md)|  
 |[in](in.md)|[int](int.md)|[interface](interface.md)|[internal](internal.md)|
 |[is](is.md)|[lock](lock-statement.md)|[long](long.md)|[namespace](namespace.md)|
-|[new](new.md)|[null](null.md)|[object](object.md)|[operator](operator.md)|
+|[new](../operators/new-operator.md)|[null](null.md)|[object](object.md)|[operator](operator.md)|
 |[out](out.md)|[override](override.md)|[params](params.md)|[private](private.md)|
 |[protected](protected.md)|[public](public.md)|[readonly](readonly.md)|[ref](ref.md)|
 |[return](return.md)|[sbyte](sbyte.md)|[sealed](sealed.md)|[short](short.md)||
 [sizeof](sizeof.md)|[stackalloc](../operators/stackalloc.md)|[static](static.md)|[string](string.md)|
 |[struct](struct.md)|[switch](switch.md)|[this](this.md)|[throw](throw.md)|
-|[true](true-literal.md)|[try](try-catch.md)|[typeof](typeof.md)|[uint](uint.md)|
+|[true](true-literal.md)|[try](try-catch.md)|[typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator)|[uint](uint.md)|
 |[ulong](ulong.md)|[unchecked](unchecked.md)|[unsafe](unsafe.md)|[ushort](ushort.md)|
 |[using](using.md)|[using static](using-static.md)|[virtual](virtual.md)|[void](void.md)|
 |[volatile](volatile.md)|[while](while.md)|

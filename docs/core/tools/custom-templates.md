@@ -1,8 +1,8 @@
 ---
 title: Custom templates for dotnet new
 description: Learn about custom templates for any type of .NET project or files.
-author: mairaw
-ms.date: 08/11/2017
+author: thraka
+ms.date: 06/14/2019
 ---
 
 # Custom templates for dotnet new
@@ -76,7 +76,7 @@ The *template.json* file looks like the following:
 ```json
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Travis	Chau",
+  "author": "Travis Chau",
   "classifications": [ "Common", "Console" ],
   "identity": "AdatumCorporation.ConsoleTemplate.CSharp",
   "name": "Adatum Corporation Console Application",

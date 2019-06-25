@@ -20,7 +20,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 3. Enter the model name and then click **Add**.
 
-     The first page of the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] Wizard is displayed.
+     The first page of the Entity Data Model Wizard is displayed.
 
 4. In the **Choose Model Contents** dialog box, select **Generate from database**. Then click **Next**.
 

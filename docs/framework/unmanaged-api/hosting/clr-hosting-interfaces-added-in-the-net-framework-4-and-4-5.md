@@ -16,7 +16,7 @@ This section describes interfaces that unmanaged hosts can use to integrate the 
   
 - They use lifetime management (`AddRef` and `Release`), encapsulation (implicit context) and `QueryInterface` from COM.  
   
-- There do not use COM types such as `BSTR`, `SAFEARRAY`, or `VARIANT`.  
+- They do not use COM types such as `BSTR`, `SAFEARRAY`, or `VARIANT`.  
   
 - There are no apartment models, aggregation, or registry activation that use the [CoCreateInstance function](https://go.microsoft.com/fwlink/?LinkId=142894).  
   

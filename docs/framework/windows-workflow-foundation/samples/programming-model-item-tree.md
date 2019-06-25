@@ -27,7 +27,7 @@ justAdded.Properties["DisplayName"].SetValue("new name");
 
 2. Build the solution by selecting **Build Solution** from the **Build** menu.
 
-3. Press F5 to run the application. The [!INCLUDE[avalon2](../../../../includes/avalon2-md.md)] form is then displayed.
+3. Press F5 to run the application. The WPF form is then displayed.
 
 4. Click the **Load WF** button to load the <xref:System.Activities.Presentation.Model.ModelItem> and bind it to the tree view.
 

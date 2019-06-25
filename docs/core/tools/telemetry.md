@@ -96,7 +96,7 @@ Additional datasets are posted using a standard URL format. Replace `<YEAR>` wit
 
 ## License
 
-The Microsoft distribution of .NET Core is licensed with the [Microsoft Software License Terms: Mirosoft .NET Library](https://aka.ms/dotnet-core-eula). For details on data collection and processing, see the section entitled "Data."
+The Microsoft distribution of .NET Core is licensed with the [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula). For details on data collection and processing, see the section entitled "Data."
 
 [.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use the same license but don't enable telemetry (see [Scope](#scope)).
 

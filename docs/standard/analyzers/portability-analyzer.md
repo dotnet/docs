@@ -38,6 +38,7 @@ If you want to use [ApiPort console app](https://github.com/Microsoft/dotnet-api
 * Run `\...\ApiPort.exe -?` to get more help
 
 ### View and interpret portability result
+
 Only APIs that are unsupported by a Target Platform appear in the report. 
 After running the analysis in Visual Studio, you'll see your .NET Portability report pops up. 
 

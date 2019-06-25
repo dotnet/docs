@@ -86,7 +86,7 @@ The high-order empty bit positions are set based on the type of the left-hand op
 
 For information about how the right-hand operand of the `>>` operator defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
-## Logical AND operator &amp;
+## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
 The `&` operator computes the bitwise logical AND of its operands:
 

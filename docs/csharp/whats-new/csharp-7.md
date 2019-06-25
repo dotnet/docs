@@ -30,7 +30,12 @@ C# 7.0 adds a number of new features to the C# language:
   - New tokens improve readability for numeric constants.
 
 The remainder of this article provides an overview of each feature. For each feature,
-you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in our [interactive exploration](../tutorials/exploration/csharp-7.yml) of these features.
+you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## `out` variables
 

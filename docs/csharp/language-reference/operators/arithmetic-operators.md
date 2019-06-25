@@ -91,7 +91,7 @@ The unary `*` operator is the [pointer indirection operator](pointer-related-ope
 
 ## Division operator /
 
-The division operator `/` divides its first operand by its second operand.
+The division operator `/` divides its left-hand operand by its right-hand operand.
 
 ### Integer division
 
@@ -113,11 +113,11 @@ If one of the operands is `decimal`, another operand can be neither `float` nor 
 
 ## Remainder operator %
 
-The remainder operator `%` computes the remainder after dividing its first operand by its second operand.
+The remainder operator `%` computes the remainder after dividing its left-hand operand by its right-hand operand.
 
 ### Integer remainder
   
-For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as that of the first operand, as the following example shows:
+For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as that of the left-hand operand, as the following example shows:
 
 [!code-csharp-interactive[integer remainder](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#IntegerRemainder)]
 
@@ -151,7 +151,7 @@ You also can use the `+` operator for string concatenation and delegate combinat
 
 ## Subtraction operator -
 
-The subtraction operator `-` subtracts its second operand from its first operand:
+The subtraction operator `-` subtracts its right-hand operand from its left-hand operand:
 
 [!code-csharp-interactive[subtraction operator](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#Subtraction)]
 

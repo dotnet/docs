@@ -36,7 +36,7 @@ For information about pointer types, see [Pointer types](../../programming-guide
 > [!NOTE]
 > Any operation with pointers requires an [unsafe](../keywords/unsafe.md) context. The code that contains unsafe blocks must be compiled with the [`-unsafe`](../compiler-options/unsafe-compiler-option.md) compiler option.
 
-## Address-of operator &amp;
+## <a name="address-of-operator-amp"></a> Address-of operator &amp;
 
 The unary `&` operator returns the address of its operand:
 

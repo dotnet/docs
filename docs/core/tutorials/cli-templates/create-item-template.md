@@ -48,7 +48,7 @@ In this part of the series you'll learn how to:
 
 ## Create an item template
 
-An item template is a specific type of template that produces one or more files, but doesn't produce a complete project. These types of templates are useful when you want to generate something like a config file, a code file, or a solution file. In this example you'll create a class that adds an extension method to the string type, of which you can deploy through the template system.
+An item template is a specific type of template that produces one or more files. These types of templates are useful when you want to generate something like a config, code, or solution file. In this example, you'll create a class that adds an extension method to the string type.
 
 Open a terminal and navigate to the _working\templates_ folder and create a new subfolder named _extensions_. Enter the folder.
 
@@ -77,7 +77,7 @@ namespace System
 }
 ```
 
-Now that you have the content of the template created, you need to create the template config. Because we'll designate the _extensions_ folder as the folder that contains our template, any file or folder inside of this folder will automatically be part of template, except for the _.template.config_ folder.
+Now that you have the content of the template created, you need to create the template config at the root folder of the template. The _extensions_ folder is the template folder that contains our template content. Any file or folder in the template folder is automatically included as part of the template. However, this excludes the template config folder you'll create in the next section.
 
 ## Create the template config
 
@@ -110,9 +110,9 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 }
 ```
 
-This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there is a `tags/type` value that is set to `item`. This designates your template as an item template. There is no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they are searching for.
+This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there's a `tags/type` value that is set to `item`. This categorizes your template as an item template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they're searching for.
 
-The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They are two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
 Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Open your terminal and from the _extensions_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./` 
 
@@ -178,11 +178,11 @@ C:\test> dotnet run
 !dlroW olleH
 ```
 
-Congratulations! You just created and deployed an item template with .NET Core. In preparation for the rest of this tutorial, uninstall the template you created and delete all files from the _test_ folder you just used. This will get you back to a clean state ready for the next major section of this tutorial.
+Congratulations! You created and deployed an item template with .NET Core. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.
 
 ## Uninstall the template
 
-Because you installed the template by using a file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
+Because you installed the template by file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
 
 ```console
 C:\working> dotnet new -u
@@ -219,7 +219,7 @@ C:\working> dotnet new -u C:\working\templates\extensions
 
 ## Next steps
 
-In this tutorial you created an item template. To learn how to create a project template, continue this tutorial series.
+In this tutorial, you created an item template. To learn how to create a project template, continue this tutorial series.
 
 > [!div class="nextstepaction"]
 > [Create a project template](./create-project-template.md)

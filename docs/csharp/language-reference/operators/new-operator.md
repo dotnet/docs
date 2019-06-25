@@ -8,27 +8,27 @@ ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8
 ---
 # new operator (C# reference)
 
-Use the `new` operator to create a new instance of a type.
+The `new` operator creates a new instance of a type.
 
 You can also use the `new` keyword as a [member declaration modifier](../keywords/new-modifier.md) or a [generic type constraint](../keywords/new-constraint.md).
 
 ## Constructor invocation
 
-Typically you invoke one of the [constructors](../../programming-guide/classes-and-structs/constructors.md) of a type to create a new instance of that type:
+To create a new instance of a type, you typically invoke one of the [constructors](../../programming-guide/classes-and-structs/constructors.md) of that type using the `new` operator:
 
 [!code-csharp-interactive[invoke constructor](~/samples/csharp/language-reference/operators/NewOperator.cs#Constructor)]
 
-You can use an [object or collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) to perform instantiation of an object and its initialization in one statement. The following example creates an instance with the same content as the preceding example:
+You can use an [object or collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) with the `new` operator to instantiate and initialize an object in one statement, as the following example shows:
 
 [!code-csharp-interactive[constructor with initializer](~/samples/csharp/language-reference/operators/NewOperator.cs#ConstructorWithInitializer)]
 
-## Array instantiation
+## Array creation
 
 You also use the `new` operator to create an array instance, as the following example shows:
 
 [!code-csharp-interactive[create array](~/samples/csharp/language-reference/operators/NewOperator.cs#Array)]
 
-Use array initialization syntax to create an array instance and populate it with elements in one statement. The following example demonstrates various forms of array initialization syntax:
+Use array initialization syntax to create an array instance and populate it with elements in one statement. The following example shows various ways how you can do that:
 
 [!code-csharp-interactive[initialize array](~/samples/csharp/language-reference/operators/NewOperator.cs#ArrayInitialization)]
 

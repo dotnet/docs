@@ -18,7 +18,7 @@ The following table shows the predefined explicit conversions between .NET numer
 
 |From|To|  
 |----------|--------|  
-|[sbyte](sbyte.md)|`byte`, `ushort`, `uint`, `ulong`, or `char`|  
+|[sbyte](../builtin-types/integral-numeric-types.md)|`byte`, `ushort`, `uint`, `ulong`, or `char`|  
 |[byte](byte.md)|`sbyte` or `char`|  
 |[short](short.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `char`|  
 |[ushort](ushort.md)|`sbyte`, `byte`, `short`, or `char`|  

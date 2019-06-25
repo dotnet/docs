@@ -29,7 +29,7 @@ The following table shows the default values of [value types](value-types.md).
 |[float](float.md)|0.0F|
 |[int](int.md)|0|
 |[long](long.md)|0L|
-|[sbyte](sbyte.md)|0|
+|[sbyte](../builtin-types/integral-numeric-types.md)|0|
 |[short](short.md)|0|
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
 |[uint](uint.md)|0|

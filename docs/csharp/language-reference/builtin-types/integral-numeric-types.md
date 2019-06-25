@@ -41,8 +41,6 @@ The **integral types** are a subset of the **numeric types**. The **numeric type
 
 The following table shows the sizes and ranges of the integral types:
 
-<<< TODO:  CHANGE LINKS TO THE SPEC AND RETIRE THESE ARTICLES >>>  
-
 |Type|Range|Size|  
 |----------|-----------|----------|  
 |`sbyte`|-128 to 127|Signed 8-bit integer|  

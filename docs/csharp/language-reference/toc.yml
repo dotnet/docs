@@ -8,7 +8,7 @@
     items:
     - name: Overview
       href: keywords/index.md
-    - name: Types
+    - name: Builtin types
       items:
       - name: Value Types
         items:
@@ -17,7 +17,8 @@
         - name: bool
           href: keywords/bool.md
         - name: Integral numeric types
-          href: keywords/integral-numeric-types.md
+          displayName: sbyte, 
+          href: builtin-types/integral-numeric-types.md
         - name: Floating point numeric types
           href: keywords/floating-point-numeric-types.md
         - name: byte
@@ -36,8 +37,6 @@
           href: keywords/int.md
         - name: long
           href: keywords/long.md
-        - name: sbyte
-          href: keywords/sbyte.md
         - name: short
           href: keywords/short.md
         - name: struct

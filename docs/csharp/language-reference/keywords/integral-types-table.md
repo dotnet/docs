@@ -16,7 +16,7 @@ The following table shows the sizes and ranges of the integral types, which cons
   
 |Type|Range|Size|  
 |----------|-----------|----------|  
-|[sbyte](sbyte.md)|-128 to 127|Signed 8-bit integer|  
+|[sbyte](../builtin-types/integral-numeric-types.md)|-128 to 127|Signed 8-bit integer|  
 |[byte](byte.md)|0 to 255|Unsigned 8-bit integer|  
 |[char](char.md)|U+0000 to U+ffff|Unicode 16-bit character|  
 |[short](short.md)|-32,768 to 32,767|Signed 16-bit integer|  

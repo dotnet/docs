@@ -11,4 +11,4 @@ As discussed in [Chapter 1](introduction.md), the 12 Factor App recommendations 
 
 >[!div class="step-by-step"]
 >[Previous](host-eshoponcontainers-application.md)
->[Next](communication-patterns.md)
+>[Next](communication-patterns.md) <!-- Next Chapter -->

@@ -77,11 +77,13 @@ namespace System
 }
 ```
 
-Now that you have the content of the template created, you need to create the template config at the root folder of the template. The _extensions_ folder is the template folder that contains our template content. Any file or folder in the template folder is automatically included as part of the template. However, this excludes the template config folder you'll create in the next section.
+Now that you have the content of the template created, you need to create the template config at the root folder of the template.
 
 ## Create the template config
 
-Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this example, your template folder is located at _working\templates\extensions_. The _extensions_ folder needs to have this special folder and config file created.
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions_.
+
+When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 
 First, create a new subfolder named _.template.config_, enter it. Then, create a new file named _template.json_. Your folder structure should look like this:
 

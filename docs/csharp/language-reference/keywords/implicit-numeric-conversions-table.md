@@ -19,7 +19,7 @@ The following table shows the predefined implicit conversions between .NET numer
 |[byte](../builtin-types/integral-numeric-types.md)|`short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
 |[char](char.md)|`ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
 |[short](../builtin-types/integral-numeric-types.md)|`int`, `long`, `float`, `double`, or `decimal`|  
-|[ushort](ushort.md)|`int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
+|[ushort](../builtin-types/integral-numeric-types.md)|`int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
 |[int](int.md)|`long`, `float`, `double`, or `decimal`|  
 |[uint](uint.md)|`long`, `ulong`, `float`, `double`, or `decimal`|  
 |[long](long.md)|`float`, `double`, or `decimal`|  

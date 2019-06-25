@@ -35,7 +35,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 [sizeof](sizeof.md)|[stackalloc](../operators/stackalloc.md)|[static](static.md)|[string](string.md)|
 |[struct](struct.md)|[switch](switch.md)|[this](this.md)|[throw](throw.md)|
 |[true](true-literal.md)|[try](try-catch.md)|[typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator)|[uint](uint.md)|
-|[ulong](ulong.md)|[unchecked](unchecked.md)|[unsafe](unsafe.md)|[ushort](ushort.md)|
+|[ulong](ulong.md)|[unchecked](unchecked.md)|[unsafe](unsafe.md)|[ushort](../builtin-types/integral-numeric-types.md)|
 |[using](using.md)|[using static](using-static.md)|[virtual](virtual.md)|[void](void.md)|
 |[volatile](volatile.md)|[while](while.md)|
 

@@ -29,7 +29,7 @@ The following table shows the C# value types:
 |[struct](struct.md)|User-defined structure||
 |[uint](uint.md)|Unsigned, numeric, [integral](integral-types-table.md)|U or u|
 |[ulong](ulong.md)|Unsigned, numeric, [integral](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|
-|[ushort](ushort.md)|Unsigned, numeric, [integral](integral-types-table.md)||
+|[ushort](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](integral-types-table.md)||
 
 ## Remarks
 

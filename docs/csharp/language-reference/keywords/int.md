@@ -54,7 +54,7 @@ There is a predefined implicit conversion from `int` to [long](../../../csharp/l
 float f = 123;
 ```
 
-There is a predefined implicit conversion from [sbyte](../builtin-types/integral-numeric-types.md), [byte](../builtin-types/integral-numeric-types.mdd), [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), or [char](../../../csharp/language-reference/keywords/char.md) to `int`. For example, the following assignment statement will produce a compilation error without a cast:
+There is a predefined implicit conversion from [sbyte](../builtin-types/integral-numeric-types.md), [byte](../builtin-types/integral-numeric-types.mdd), [short](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [ushort](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), or [char](../../../csharp/language-reference/keywords/char.md) to `int`. For example, the following assignment statement will produce a compilation error without a cast:
 
 ```csharp
 long aLong = 22;

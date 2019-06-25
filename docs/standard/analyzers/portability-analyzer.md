@@ -44,7 +44,7 @@ After running the analysis in Visual Studio, you'll see your .NET Portability re
 
 ![Portability Report](./media/portability-analyzer/portability-report.png)
 
-If you used [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases), your .NET Portability report is saved as a file in your specified format, default is in an Excel file (*.xlsx*) in your current directory. 
+If you used [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
 
 #### Portability Summary 
 This session of the report gives the assembly level overall view of the portability percentage.  As in above report example, it means that 89.74% of .NET Framework APIs the ConsoleAppFramework app used are available in .NET Core + Platform Extensions v2.2. If you run .NET Portability Analyzer tool against multiple assemblies, each of the assembly should have a row in the Portability Summary report.

@@ -20,7 +20,7 @@ When you use the `new()` constraint with other constraints, it must be specified
 
 For more information, see [Constraints on Type Parameters](../../programming-guide/generics/constraints-on-type-parameters.md).
 
-You can also use the `new` keyword to [instantiate an instance of a type](../operators/new-operator.md) or as a [member declaration modifier](new-modifier.md).
+You can also use the `new` keyword to [create an instance of a type](../operators/new-operator.md) or as a [member declaration modifier](new-modifier.md).
 
 ## C# language specification
 

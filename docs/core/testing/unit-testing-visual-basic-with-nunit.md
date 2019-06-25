@@ -52,7 +52,7 @@ Namespace Prime.Services
 End Namespace
 ```
 
-Change the directory back to the *unit-testing-vb-using-stest* directory. Run the following command to add the class library project to the solution:
+Change the directory back to the *unit-testing-vb-using-mstest* directory. Run the following command to add the class library project to the solution:
 
 ```console
 dotnet sln add .\PrimeService\PrimeService.vbproj

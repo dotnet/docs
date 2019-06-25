@@ -24,7 +24,7 @@ To begin using the .NET Portability Analyzer in Visual Studio, you first need to
 
 ![Portability screenshot](./media/portability-analyzer/portability-screenshot.png)
 
-To use ApiPort console app, you need to download it from [ApiPort repository](https://github.com/microsoft/dotnet-apiport). It comes with both .NET Core version and .NET Framework version. You can  use "listTargets" command option to display the available target list, then pick target platforms by specifying -t or --target command option.
+To use the ApiPort console app, download it from [ApiPort repository](https://github.com/microsoft/dotnet-apiport). It comes with both .NET Core version and .NET Framework version. You can  use "listTargets" command option to display the available target list, then pick target platforms by specifying -t or --target command option.
 
 ### Analyze portability
 In Visual Studio to analyze your entire project, right-click on your project in **Solution Explorer** and select **Analyze Assembly Portability**. Otherwise, go to the **Analyze** menu and select **Analyze Assembly Portability**. From there, select your project’s executable or DLL.

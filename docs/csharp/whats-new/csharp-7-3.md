@@ -35,7 +35,6 @@ The remainder of this article provides details and links to learn more about eac
 1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.
 
-
 ## Enabling more efficient safe code
 
 You should be able to write C# code safely that performs as well as unsafe code. Safe code avoids classes of errors, such as buffer overruns, stray pointers, and other memory access errors. These new features expand the capabilities of verifiable safe code. Strive to write more of your code using safe constructs. These features make that easier.

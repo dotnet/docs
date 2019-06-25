@@ -33,8 +33,16 @@ This is the process we recommend you take when porting your project to .NET Core
 
 The following list shows tools you might find helpful to use during the porting process:
 
-* .NET Portability Analyzer - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues. For more information, see [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md).
-* .NET API analyzer - A Roslyn analyzer that discovers potential compatibility risks for C# APIs on different platforms and detects calls to deprecated APIs. For more information, see [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
+* .NET Portability Analyzer - [command line tool](https://github.com/Microsoft/dotnet-apiport/releases) or [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), a tool that can generate a report of how portable your code is between .NET Framework and your target .NET Core platform. The report contains an assembly-by-assembly breakdown of the Type and APIs missing on the target .NET Core platform . For more information, see [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md). You may want to run .NET Portability Analyzer before your porting starts to evaluate the missing APIs gap  
+* .NET API analyzer - A Roslyn analyzer that discovers potential compatibility risks for C# APIs on different platforms and detects calls to deprecated APIs. For more information, see [.NET API analyzer](../../standard/analyzers/api-analyzer.md).  This analyzer is helpful after you already created your .NET Core project to identify runtime behavior differences on different platforms. Currently, the .NET API Analyzer reports the following cases.
+
+	-   Usage of a .NET Standard API that throws [PlatformNotSupportedException](https://docs.microsoft.com/en-us/dotnet/api/system.platformnotsupportedexception) (PC001).
+	-   Usage of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
+	-   Usage of a native API that doesn’t exist in UWP (PC003).
+	-   Usage of Delegate.BeginInvoke and EndInvoke APIs (PC004).
+	-   Usage of an API that is marked as deprecated (DEXXXX).
+	
+
 * Reverse Package Search - A [useful web service](https://packagesearch.azurewebsites.net) that allows you to search for a type and find packages containing that type.
 
 Additionally, you can attempt to port smaller solutions or individual projects to the .NET Core project file format with the [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017) tool.

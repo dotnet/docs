@@ -21,7 +21,7 @@ In this part of the series you'll learn how to:
 
 ## Prerequisites
 
-If you have already completed [part 1](create-item-template.md) of this tutorial series, you can skip this section. Just remember to open a terminal and navigate to the _working\templates_ folder.
+If you have already completed [part 1](create-item-template.md) of this tutorial series, you can skip this section. Just remember to open a terminal and navigate to the _working\templates\\_ folder.
 
 * Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later.
 
@@ -43,17 +43,17 @@ If you have already completed [part 1](create-item-template.md) of this tutorial
       └───templates
   ```
 
-* Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
+* Read the reference article [Custom templates for dotnet new](../../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
-* Open a terminal and navigate to the _working\templates_ folder.
+* Open a terminal and navigate to the _working\templates\\_ folder.
 
 ## Create a project template
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET Core includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 8.0 and produces an `async main` entry point.
 
-Open a terminal and navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
+Open a terminal and navigate to the _working\templates\\_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
 
 ```console
 working
@@ -110,13 +110,13 @@ C:\working\templates\consoleasync> dotnet run
 Hello World with C# 8.0!
 ```
 
-You can delete the _obj/_ and _bin/_ folders created by using `dotnet run`. Deleting these files ensures your template only includes the files related to your template and not any files that result of a build action.
+You can delete the _obj_ and _bin_ folders created by using `dotnet run`. Deleting these files ensures your template only includes the files related to your template and not any files that result of a build action.
 
 Now that you have the content of the template created, you need to create the template config at the root folder of the template.
 
 ## Create the template config
 
-Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\consoleasync_.
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\consoleasync\\_.
 
 When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 
@@ -151,7 +151,7 @@ This config file contains all of the settings for your template. You can see the
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. Open your terminal and from the _consoleasync_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./` 
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. Open your terminal and from the _consoleasync_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./`.
 
 This command outputs the list of templates installed, which should include yours.
 
@@ -177,9 +177,7 @@ Worker Service                                    worker                [C#]    
 
 ### Test the project template
 
-Now that you have a project template installed, test it. Navigate to the _working/_ folder and create a new folder named _test_. Enter _test_ and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
-
-Now that you have an item template installed, test it. Navigate to the _test/_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+Now that you have an item template installed, test it. Navigate to the _test_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
 
 ```console
 C:\test> dotnet new consoleasync

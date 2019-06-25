@@ -44,11 +44,11 @@ In this part of the series you'll learn how to:
       └───templates
   ```
 
-* Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
+* Read the reference article [Custom templates for dotnet new](../../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
-* Open a terminal and navigate to the _working\templates_ folder.
+* Open a terminal and navigate to the _working\templates\\_ folder.
 
 ## Create a template pack
 
@@ -58,9 +58,9 @@ Template packs are represented by a NuGet package (_.nupkg_) file. And, like any
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template pack. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template pack NuGet package.
 
-The pack you'll create will include the [item template](#create-an-item-template) and [package template](#create-a-project-template) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working\\_ folder for the _.csproj_ file.
+The pack you'll create will include the [item template](#create-an-item-template) and [package template](#create-a-project-template) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
 
-Open your terminal and navigate to the _working\\_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
+Open your terminal and navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
 
 ```console
 dotnet new console -n templatepack -o .
@@ -114,7 +114,7 @@ The `<TargetFramework>` setting must be set so that MSBuild will run properly wh
 
 The last three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
 
-The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates\\_ folder as content. It's also set to exclude any _bin\\_ folder or _obj\\_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template pack from trying to compile the code in the _templates\\_ folder hierarchy.
+The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template pack from trying to compile the code in the _templates_ folder hierarchy.
 
 Save this file and then run the pack command
 

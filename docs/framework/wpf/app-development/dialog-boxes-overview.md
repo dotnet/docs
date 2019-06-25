@@ -113,35 +113,36 @@ Standalone applications typically have a main window that both displays the main
   
  ![A Margins dialog box with fields to define left margin, top margin, right margin, and bottom margin.](./media/dialog-boxes-overview/margin-size-dialog-box.png)  
   
-#### Configuring a Modal Dialog Box  
- The user interface for a typical dialog box includes the following:  
+#### Configuring a Modal Dialog Box
+
+The user interface for a typical dialog box includes the following:  
   
 - The various controls that are required to gather the desired data.  
   
-- Showing an **OK** button that users click to close the dialog box, return to the function, and continue processing.  
+- An **OK** button that users click to close the dialog box, return to the function, and continue processing.  
   
-- Showing a **Cancel** button that users click to close the dialog box and stop the function from further processing.  
+- A **Cancel** button that users click to close the dialog box and stop the function from further processing.  
   
-- Showing a **Close** button in the title bar.  
+- A **Close** button in the title bar.  
   
-- Showing an icon.  
+- An icon.  
   
-- Showing **Minimize**, **Maximize**, and **Restore** buttons.  
+- **Minimize**, **Maximize**, and **Restore** buttons.  
   
-- Showing a **System** menu to minimize, maximize, restore, and close the dialog box.  
+- A **System** menu to minimize, maximize, restore, and close the dialog box.  
   
-- Opening above and in the center of the window that opened the dialog box.  
+- A position above and in the center of the window that opened the dialog box.  
   
-- Dialog boxes should be resizable where possible so, to prevent the dialog box from being too small, and to provide the user with a useful default size, you need to set both default and a minimum dimensions respectively.  
+- The ability to be resized where possible to prevent the dialog box from being too small, and to provide the user with a useful default size. This requires that you set both the default and a minimum dimensions.  
   
-- Pressing the ESC key should be configured as a keyboard shortcut that causes the **Cancel** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsCancel%2A> property of the **Cancel** button to `true`.  
+- The ESC key as a keyboard shortcut that causes the **Cancel** button to be pressed. You do this by setting the <xref:System.Windows.Controls.Button.IsCancel%2A> property of the **Cancel** button to `true`.  
   
-- Pressing the ENTER (or RETURN) key should be configured as a keyboard shortcut that causes the **OK** button to be pressed. This is achieved by setting the <xref:System.Windows.Controls.Button.IsDefault%2A> property of the **OK** button `true`.  
+- The ENTER (or RETURN) key as a keyboard shortcut that causes the **OK** button to be pressed. You do this by setting the <xref:System.Windows.Controls.Button.IsDefault%2A> property of the **OK** button `true`.  
   
- The following code demonstrates this configuration.  
+The following code demonstrates this configuration.  
   
- [!code-xaml[DialogBoxSample#MarginsDialogBoxMainBitsMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MarginsDialogBox.xaml#marginsdialogboxmainbitsmarkup1)]  
-[!code-xaml[DialogBoxSample#MarginsDialogBoxMainBitsMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MarginsDialogBox.xaml#marginsdialogboxmainbitsmarkup2)]  
+[!code-xaml[DialogBoxSample#MarginsDialogBoxMainBitsMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MarginsDialogBox.xaml?range=1-16,106-115)]  
+
   
  [!code-csharp[DialogBoxSample#MarginsDialogBoxMainBitsCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxSample/CSharp/MarginsDialogBox.xaml.cs#marginsdialogboxmainbitscodebehind1)]
  [!code-vb[DialogBoxSample#MarginsDialogBoxMainBitsCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxSample/VisualBasic/MarginsDialogBox.xaml.vb#marginsdialogboxmainbitscodebehind1)]  

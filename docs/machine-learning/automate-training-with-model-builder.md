@@ -2,15 +2,17 @@
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
 author: natke
-ms.date: 05/29/2019
+ms.date: 06/26/2019
 ms.custom: overview
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface. 
 ---
 # What is Model Builder & how does it work?
 
-Model Builder is visual interface to automatically train custom ML.NET machine learning models.  You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder also generates the code to add the model your .NET application.
+ML.NET Model Builder is an easy-to-understand visual interface to build, train, and deploy custom machine learning models. 
 
-Model Builder uses automated machine learning (AutoML) to evaluate different models. It chooses the best model for your scenario, without any manual tuning.
+Model Builder uses automated machine learning (AutoML) to explore different machine learning algorithms and settings to help you find the one that best suits your scenario.
+
+You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model your .NET application.
 
 Model Builder is a graphical Visual Studio extension. 
 
@@ -23,9 +25,11 @@ Model Builder is a graphical Visual Studio extension.
 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
-A scenario is a description of the type of prediction you want to make on your data. For example: predict future product sales volume based on historical sales data.
+A scenario is a description of the type of prediction you want to make on your data. For example
+- predict future product sales volume based on historical sales data
+- classify sentiments as positive or negative based on customer reviews
 
-In Model Builder, you need to map your scenario onto an [ML.NET task](resources/tasks.md). Model Builder currently supports **regression** (predict numbers) and **classification** (predict categories) tasks.
+In Model Builder, you need to map your scenario onto an [ML.NET task](resources/tasks.md). You can use Model Builder for **regression** (predicting numbers) and **classification** (predicting categories).
 
 ### Which machine learning scenario is right for me?
 
@@ -37,39 +41,46 @@ Sentiment analysis can be used to predict positive or negative sentiment of cust
 
 Binary classification is used to categorize data into two classes (yes/no; pass/fail; true/false; positive/negative). It can be used to answer questions such as:
 
-- Is this email spam?
-- Which applicants may be eligible for membership?
-- Which accounts may not pay their invoices on time?
-- Is this credit card transaction fraudulent?
+- Is this email spam? (spam detection)
+- Which applicants may be eligible for membership? (application screening)
+- Which accounts may not pay their invoices on time? (risk mitigation)
+- Is this credit card transaction fraudulent? (fraud detection)
 
-If your scenario requires classification into two categories, you can use this template.
-
+If your scenario requires classification into two categories, you can use this template with your own dataset.
+ 
 #### Issue classification (multiclass classification)
 
-Issue classification can be used to categorize customer feedback issues using the issue title and description. It is an example of the multi-class classification task.
+Issue classification can be used to categorize customer feedback (e.g. on GitHub) issues using the issue title and description. It is an example of the multi-class classification task.
 
 Multiclass classification can be used to categorize data into three or more classes. It can be used to answer questions such as:
 
-- To which department should I route a support ticket?
-- What category does a financial transaction belong in?
-- What is the priority of a customer issue?
+- To which department should I route a support ticket? (support ticket routing)
+- What is the priority of a customer issue? (customer issue prioritization)
+- What category does a product belong to? (product classification)
+- What type of document is this? (document/email classification)
 
 You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
 
 #### Price prediction (regression)
 
-Price prediction can be used to predict house prices using location, size, and features of the house, such as number of bedrooms and bathrooms. It is an example of the regression task.
+Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of the regression task.
+
+Price prediction can be used to predict house prices using location, size, 
 
 Regression is used to predict numbers. It can be used to answer questions such as:
 
-- What price will a house sell for?
-- After how much time will a mechanical part require maintenance?
-- What is the moisture content in this dryer?
-- What will the total annual sales for this region be?
+- What price will a house sell for? (price prediction)
+- After how much time will a mechanical part require maintenance? (predictive maintenance)
+- What is the moisture content in this dryer? (machine monitoring)
+- What will the total annual sales for this region be? (sales forecasting)
+
+You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset
 
 #### Custom scenario (choose your task)
 
-Using the custom scenario allows you to choose your own task. Pick the scenario that makes the most sense for your problem.
+The custom scenario allows you to choose your own task. Pick the scenario that makes the most sense for your problem.
+
+The custom scenario allows you to choose your own machine learning task. In the previous templates, the machine learning task was fixed to the scenario: binary classification, multi-class classification, or regression. In this template, you can choose the ML task you want to use on your data.
 
 ## Data
 
@@ -98,7 +109,6 @@ Model Builder places the following limitations on the data:
 - There is a limit of 1 GB on the training dataset
 - SQL server has a limit of 100,000 rows for training
 - Data from SQL server is copied from the server to your local machine before training
-- Microsoft SQL Server Data Tools for Visual Studio 2017 is not supported
 
 ### Example datasets
 
@@ -109,7 +119,7 @@ If you don't have your own data yet, try out one of these datasets:
 |[taxi fare prediction](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |[product sales forecasting](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
 |[website comment sentiment analysis](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
-|[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Amount, V1-V28 (anonymized features)|Class (1 when fraudulent, 0 otherwise)|
+|[credit card fraud detection](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
 |[issue classification](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 
 ## Train
@@ -120,7 +130,7 @@ Once you select your scenario, data, and label, Model Builder trains the model.
 
 Training is an automatic process by which Model Builder teaches your model how to answer questions for your scenario. Once trained, your model can make predictions with input data that it has not seen before. For example, if you are predicting house prices and a new house comes on the market, you can predict its sale price.
 
-Model Builder uses automated machine learning (AutoML), which automatically explores different machine learning algorithms and settings to find the one that best suits your scenario. Model Builder does not require any input or tuning from you.
+Model Builder uses automated machine learning (AutoML), which automatically explores different machine learning algorithms and settings to find the one that best suits your scenario. Model Builder does not require any input or tuning from you. No prior expertise for ML is required.
 
 ### How long should I train for?
 
@@ -141,9 +151,13 @@ The exact time to train also depends on:
 - the number of rows used for training
 - the number of feature columns used for training
 
+Model Builder has been tested for scale with a 1TB dataset, but building a high-quality model for that size of dataset can take up to four days!
+
 ## Evaluate
 
-Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Evaluation is the process of using the trained model to make predictions with the new test data, and then measuring how good the predictions are. The metrics used for evaluation depend on the ML task. For more information, see [model evaluation metrics](resources/metrics.md).  
+Evaluation is the process of using the trained model to make predictions with new test data, and then measuring how good the predictions are.
+
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model.  The metrics used for evaluation depend on the ML task. For more information, see [model evaluation metrics](resources/metrics.md).  
 
 ### Sentiment analysis (binary classification)
 
@@ -176,9 +190,9 @@ If your model performance score is not as good as you want it to be, you can:
 
 * Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model. 
 
-* Balance your data. For classification tasks, make sure that the training set is balanced across the categories.
+* Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have 4 classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 
-## Outputs
+## Code
 
 After the evaluation phase, Model Builder outputs a model file, and code that you can use to add the model to your application. ML.NET models are saved as a zip file. The code to load and use your model is added as a new project in your solution. Model Builder also adds a sample console app that you can run to see your model in action.
 
@@ -186,4 +200,4 @@ In addition, Model Builder outputs the code that generated the model, so that yo
 
 ## What's next?
 
-Try the [Predict prices with Model Builder tutorial](tutorials/predict-prices-with-model-builder.md)
+Try [price prediction or any regression scenario](tutorials/predict-prices-with-model-builder.md)

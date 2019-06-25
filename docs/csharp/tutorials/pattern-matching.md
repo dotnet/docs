@@ -193,8 +193,12 @@ vehicle switch
 };
 ```
 
-The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. 
-Light trucks under 3000 lbs are given a $2.00 discount. That rule is implemented with the following code:
+The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they adjust the toll amount based on the weight class of the trucks as follows:
+
+- Trucks over 5000 lbs are charged an extra $5.00.
+- Light trucks under 3000 lbs are given a $2.00 discount.
+
+That rule is implemented with the following code:
 
 ```csharp
 vehicle switch

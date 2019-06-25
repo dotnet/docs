@@ -181,9 +181,80 @@ The next set of methods consolidate the pipeline creation and scoring logic.
 
 The logic to make predictions is contained within the `PredictDataUsingModel` method.
 
-Below the `LoadModel` method definition, add a new method called `PredictDataUsingModel`
+Below the `LoadModel` method definition, add a new method called `PredictDataUsingModel` with the following signature.
 
-[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L73-L74)]
-```csharp
-}
-```
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L73)]
+
+Inside the `PredictDataUsingModel` method, add the following content for logging purposes.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L75-L78)]
+
+Then, load the images that will be scored using the `GetImagesData` method which creates a list of `ImageNetData` objects by loading the files in the specified `imagesFolder` Directory. Add the `GetImagesData` method after the `PredictDataUsingModel` method.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L103-L113)]
+
+Once all of the images are loaded, use the model's `PredictionEngine` to execute the steps in the pipeline for each of the loaded images.
+
+Start off by creating a for-loop to iterate over each of the loaded images.
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L82)]
+
+Inside the for-loop, use the `PredictionEngine.Predict` method to have the model process the image and detect objects. 
+
+[!code-csharp [](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/ONNXModelScorer.cs#L84)]
+
+Once the model generates results for the respective image, it needs to be post-processed. Post-processing will be done by the `_parser`. The first step in the post-processing phase is to map the model outputs to the image. This is done by the `ParseOutputs` method of the `YoloWinMLParser`. 
+
+## Post-Processing Model Outputs
+
+The shape of the output is a 1-dimensional vector of x elements. However, the data is structured in 13 x 13 x 125. As a result, the model output needs to be processed to extract the information stored in the output. 
+
+To do so, create a new directory called `YoloParser`.
+
+When the model is applied to images, it looks throughout different blocks in the image, detects objects and tries to pinpoint where int he image the object was detected. This data is stored as part of the model output. 
+
+### Build domain classes
+
+1. Create a new class called `DimensionsBase.cs`.
+2. When `DimensionsBase.cs` opens in the text editor, add the following code:
+
+[!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/DimensionsBase.cs#L1-L10)]
+
+The dimensions in the model output correspond to bounding boxes. Bounding boxes can be thought of as rectangular regions containing cartesian coordinates, height and width within a plane. In this case, it's relative to the section of the image that was analyzed by the model. 
+
+1. To define a bounding box, create a new class called `YoloBoundingBox.cs`.
+1. When `YoloBoundingBox.cs` opens in the editor, add the following usings:
+
+[!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L1-L2)]
+
+1. Add the following class definition 
+
+    [!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L6-L20)]
+
+    Below the definition for `YoloBoundingBox` class, create another class called `BondingBoxDimensions` which inherits from `DimensionsBase` class.
+
+### Build Parser
+
+Once the classes used by the parser are set up, it's time to set up the parser.
+
+Inside the `YoloParser` directory, create a new class called `YoloWinMlParser.cs`.
+
+When `YoloWinMlParser.cs` opens in the editor, add the following usings:
+
+[!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloWinMlParser.cs#L1-L5)]
+
+When the image is being processed, it is divided into 13 x 13 cells or regions. These regions each are of 32px x 32px dimensions. As part of post-processing, the dimensions of the bounding boxes extracted from each of the cells has to be mapped into the grid. Therefore, you need to know what the dimensions of the respective cell being analyzed are respective to the image itself.
+
+Inside the `YoloWinMlParser` class, create a new class called `CellDimensions` which inherits from `DimensionsBase`.
+
+[!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloWinMlParser.cs#L12)]
+
+Next, create constants to be used by the parser during post-processing.
+
+[!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloWinMlParser.cs#L14-L21)]
+
+As mentioned previously, the 416 x 416 image is divided into 13 x 13 regions. The height and width of each of these regions is 32 x 32, each of which 5 bounding boxes. Each bounding box contains 5 features (x,y,height,width and confidence). Additionally, the probabilities for each of the 20 classes. As a result, a total of 125 values need to be extracted from each of the image regions. 
+
+Although the regions can be thought of as 13 x 13, the original output of the models is one-dimensional. Therefore, they need to 
+
+[!code-csharp [](~/machinelearning-samples/blob/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloWinMlParser.cs#L23)]

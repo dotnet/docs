@@ -38,10 +38,10 @@ Although there are multiple versions of the .NET Core and ASP.NET Core images, t
 
 When you explore the .NET image repositories at Docker Hub, you will find multiple image versions classified or marked with tags. These tags help to decide which one to use, depending on the version you need, like those in the following table:
 
-| Image                                       | Comments                                                                                          |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Image | Comments |
+|-------|----------|
 | mcr.microsoft.com/dotnet/core/aspnet:**2.2** | ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch) |
-| mcr.microsoft.com/dotnet/core/sdk:**2.2**    | .NET Core, with SDKs included, on Linux and Windows (multi-arch)                                  |
+| mcr.microsoft.com/dotnet/core/sdk:**2.2** | .NET Core, with SDKs included, on Linux and Windows (multi-arch) |
 
 > [!div class="step-by-step"]
 > [Previous](net-container-os-targets.md)

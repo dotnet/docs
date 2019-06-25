@@ -57,7 +57,7 @@ Header for assembly name entries: the .NET Framework assembly that the missing A
 Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not supported on this Target Platform.
 Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep this up. We are looking at alternate solutions to provide helpful information to customer.
 
-In Visual Studio,  under the **Messages** tab in the **Error List**, it displays missing APIs with caller file and line number. You can jump to problem areas directly from the **Messages** tab.
+In Visual Studio, under the **Messages** tab in the **Error List**, it displays missing APIs with caller file and line number. You can jump to problem areas directly from the **Messages** tab.
 
 #### Missing assemblies
 You may have a list of the assemblies in "Header for assembly name entries" column. It normally are the assemblies that your analyzed assembly reference to and they are not .NET Framework assemblies. If it's an assembly that you own, include it in the portability analyze run. If it's third party library, looks for if they have newer version supporting .NET Core or .NET Standard. If so, consider moving to the newer version.  

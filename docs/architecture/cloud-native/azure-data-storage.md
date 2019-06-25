@@ -105,19 +105,19 @@ Azure Database for PostgreSQL is available as two deployment options: Single Ser
 
 ## Cosmos DB
 
-Azure Cosmos DB is a fully-managed, globally distributed NoSQL database service that's designed to provide low latency, elastic scalability, managed data consistency, and high availability. In short, if your application needs guaranteed fast response time anywhere in the world, if it's required to be always online, and needs unlimited and elastic scalability of throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows a high-level overview of Cosmos DB.
+Azure Cosmos DB is a fully-managed, globally distributed NoSQL database service that's designed to provide low latency, elastic scalability, managed data consistency, and high availability. In short, if your application needs guaranteed fast response time anywhere in the world, if it's required to be always online and needs unlimited and elastic scalability of throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows a high-level overview of Cosmos DB.
 
 ![Overview of Cosmos DB](media/cosmos-db-overview.png)
 
 **Figure 5-13**: Overview of Cosmos DB
 
-Note in the previous figure how Cosmos DB is a robust and highly-versatile database service with many built-in cloud-native capabilities. In this section, we’ll take a closer look.
+Note in the Figure 5-13 how Cosmos DB is a robust and highly-versatile database service with many built-in cloud-native capabilities. In this section, we’ll take a closer look at them.
 
 ### Global Support
 
-You can globally distribute Cosmos databases across any and all Azure regions across the world, placing data close to your users, improving response time, and reducing latency. You can add or remove a database from a region without pausing or redeploying your application. In the background, Cosmos DB transparently replicates the data to all of the configured regions.
+You can globally distribute Cosmos databases across all Azure regions across the world, placing data close to your users, improving response time, and reducing latency. You can add or remove a database from a region without pausing or redeploying your application. In the background, Cosmos DB transparently replicates the data to all of the configured regions.
 
-Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any or all your database region to support both writes and reads.
+Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any or all your database regions to support both writes and reads.
 
 The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/how-to-multi-master) protocol feature in Cosmos DB enables the following functionality:
 
@@ -129,7 +129,7 @@ The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/how-to-multi-maste
 
 Internally, Cosmos DB handles data replication between regions with consistency level guarantees and financially backed service level agreements.
 
-With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally), your application can automatically become aware of the nearest Azure region and send requests to it. The nearest region is identified by Cosmos DB without any configuration changes. Should a region become unavailable, Cosmos DB supports automatic failover and the Multi-Homing feature will automatically route your request to the next nearest available region.
+With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally), your application can automatically become aware of the nearest Azure region and send requests to it. The nearest region is identified by Cosmos DB without any configuration changes. Should a region become unavailable, Cosmos DB supports automatic failover, and the Multi-Homing feature will automatically route your request to the next nearest available region.
 
 ### Multi-Model Support
 
@@ -139,7 +139,7 @@ Cosmos DB is a *multi-model data platform* enabling you to interact with your da
 
 **Figure 5-14**: Cosmos DB providers
 
-Note in the previous figure how Cosmos DB supports [Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-15.
+Note in Figure 5-14 how Cosmos DB supports [Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-15.
 
 ![Azure Table API](media/azure-table-api.png)
 
@@ -151,17 +151,15 @@ In [Brownfield}(https://en.wikipedia.org/wiki/Brownfield_(software_development) 
 
 ### Consistency Models
 
-Earlier in the *Relational vs. NoSQL* section, we discussed the subject of data consistency which is a term that refers to the integrity of your data. Distributed databases that rely on replication for high availability, low latency, or both, must make a fundamental tradeoff between read consistency, availability and latency.
+Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*, which is a term that refers to the integrity of your data. Distributed databases that rely on replication for high availability, low latency, or both, must make a fundamental tradeoff between read consistency, availability, and latency.
 
-Most distributed databases allow developers to choose between two consistency models: [Strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query result will always return the most current data, even if it the system must incur latency waiting for an update to replicate across all database copies. On the other hand, a system configured for *eventual consistency* will return data immediately, even if that data is not most current copy. This option enables higher availability, greater scale, and increased performance.
+Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query result will always return the most current data, even if it the system must incur latency waiting for an update to replicate across all database copies. On the other hand, a system configured for *eventual consistency* will return data immediately, even if that data is not the most current copy. This option enables higher availability, greater scale, and increased performance.
 
-Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. 
+Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs with respect to availability and performance based on the needs of your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs). 
 
 ![Cosmos DB consistency levels](media/cosmos-db-consistency-levels.png)
 
 **Figure 5-16**: Cosmos DB Consistency Levels
-
-These options enable you to make precise choices and granular tradeoffs with respect to availability and performance based on the needs of your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs). 
 
 ### Partitioning
 
@@ -173,7 +171,7 @@ You manage data in Cosmos DB data by creating [databases, containers and items](
 
 **Figure 5-17**: Hierarchy of Cosmos DB entities
 
-Note in the previous figure how you start by creating a Cosmos DB database inside of an Azure account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items that can be expressed as a collection, table or graph, based on your selected API provider (discussed in the prior section). Items are the data that you add to the container and are represented as documents, rows, nodes, or edges. By default, all items that you add to a container are automatically indexed without requiring explicit index or schema management.
+Note in Figure 5-17 how you start by creating a Cosmos DB database inside of an Azure account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items that can be expressed as a collection, table or graph, based on your selected API provider (discussed in the prior section). Items are the data that you add to the container and are represented as documents, rows, nodes, or edges. By default, all items that you add to a container are automatically indexed without requiring explicit index or schema management.
 
 To partition the container, items are divided into distinct subsets called [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data). Logical partitions are created based on the value of a partition key that is associated with each item in a container. Figure 5-18 shows how all items in a logical partition have the same partition key value.
 
@@ -181,7 +179,7 @@ To partition the container, items are divided into distinct subsets called [log
 
 **Figure 5-18**: Cosmos DB partitioning mechanics
 
-Note in the previous figure how each item includes a partition key of either ‘city’ or ‘airport’. This partition key determines the item’s logical partition. Each city code is assigned to a logical partition in the container on the left-side and those with an airport code to the container on the right. Combining the partition key value with an item's ID value creates the item's index, which uniquely identifies the item.
+Note in Figure 5-18 how each item includes a partition key of either ‘city’ or ‘airport’. This partition key determines the item’s logical partition. Each city code is assigned to a logical partition in the container on the left-side and those with an airport code to the container on the right. Combining the partition key value with an item's ID value creates the item's index, which uniquely identifies the item.
 
 Internally, Cosmos DB automatically manages the placement of [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on [physical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) to efficiently satisfy the scalability and performance needs of the container. As the throughput and storage requirements of an application increase, Azure Cosmos DB moves logical partitions to redistribute the load across a greater number of servers. These redistribution operations are managed by Cosmos DB and are performed without any interruption or downtime.
 
@@ -195,15 +193,15 @@ For a cloud native application, a common location to add caching is inside the A
 
 **Figure 5-19**: Caching in a cloud native app
 
-A common caching pattern is the [cache-aside pattern](https://docs.microsoft.com/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache for the response, shown in step #1 in the previous figure. If found, the data is returned immediately. If the data does not exist in the cache (known as a [cache miss](https://www.techopedia.com/definition/6308/cache-miss)), it is retrieved from the local database or downstream service (step #2), written to the cache for future requests (step #3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains consistent and accurate.
+A common caching pattern is the [cache-aside pattern](https://docs.microsoft.com/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache for the response, shown in step #1 in Figure 5-19. If found, the data is returned immediately. If the data does not exist in the cache (known as a [cache miss](https://www.techopedia.com/definition/6308/cache-miss)), it is retrieved from the local database or downstream service (step #2), written to the cache for future requests (step #3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains consistent and accurate.
 
-Additionally, note in the previous figure how the cache is not implemented locally within the boundaries of the service, but instead consumed as a cloud-based backing service, as discussed in Chapter 1.
+Additionally, note in Figure 5-19 how the cache is not implemented locally within the boundaries of the service, but instead is consumed as a cloud-based backing service, as discussed in Chapter 1.
 
 [Azure Redis Cache](https://azure.microsoft.com/services/cache/) is a data caching and messaging broker service. It provides high throughput and low-latency access to data for applications. It is fully-managed by Microsoft, hosted within Azure, and accessible to any application within or outside of Azure.
 
 Internally, Azure Cache for Redis is backed by the open-source [Redis server](https://redis.io/) and natively supports data structures such as [strings](http://redis.io/topics/data-types#strings), [hashes](http://redis.io/topics/data-types#hashes), [lists](http://redis.io/topics/data-types#sets), [sets](http://redis.io/topics/data-types#sets), and [sorted sets](http://redis.io/topics/data-types#sorted-sets). If your application uses Redis, it’ll work as-is with Azure Cache for Redis.
 
-Azure Cache for Redis can also be used as an in-memory data cache, a distributed non-relational database, and a message broker. It is available in 3 different pricing tiers. The Premium tier features many enterprise-level features such as clustering, data persistence, geo-replication and Virtual-network security and isolation.
+Azure Cache for Redis can also be used as an in-memory data cache, a distributed non-relational database, and a message broker. It is available in 3 different pricing tiers. The Premium tier features many enterprise-level features such as clustering, data persistence, geo-replication, and Virtual-network security and isolation.
 
 ## Summary
 

@@ -9,7 +9,7 @@ ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 
 Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer) and as a [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases).
 
-## New Targets
+## New targets
 
 * [.NET Core](../../core/index.md): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps.
 * [ASP.NET Core](/aspnet/core): is a modern web-framework built on .NET Core thus giving developers the same benefits.

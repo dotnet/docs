@@ -108,10 +108,15 @@ Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure
 
 OTHER TASKS:
 
-1. remove other files.
-1. remove TOC entries.
-1. update TOC with display names
-1. redirections
+1. byte
+1. short
+1. ushort
+1. int
+1. uint
+1. long
+1. ulong
+1. incorporate implicit and explicit conversion tables.
+
 
 ## See also
 

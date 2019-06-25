@@ -59,7 +59,7 @@ SampleMethod((ushort)5);
 
 There is a predefined implicit conversion from `ushort` to [int](int.md), [uint](uint.md), [long](long.md), [ulong](ulong.md), [float](float.md), [double](double.md), or [decimal](decimal.md).
 
-There is a predefined implicit conversion from [byte](byte.md) or [char](char.md) to `ushort`. Otherwise a cast must be used to perform an explicit conversion. Consider, for example, the following two `ushort` variables `x` and `y`:
+There is a predefined implicit conversion from [byte](../builtin-types/integral-numeric-types.md) or [char](char.md) to `ushort`. Otherwise a cast must be used to perform an explicit conversion. Consider, for example, the following two `ushort` variables `x` and `y`:
 
 ```csharp
 ushort x = 5, y = 12;

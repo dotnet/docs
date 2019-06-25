@@ -115,7 +115,7 @@ The constant pattern tests whether the match expression equals a specified const
 where *constant* is the value to test for. *constant* can be any of the following constant expressions:
 
 - A [bool](bool.md) literal, either `true` or `false`.
-- Any integral constant, such as an [int](int.md), a [long](long.md), or a [byte](byte.md).
+- Any integral constant, such as an [int](int.md), a [long](long.md), or a [byte](../builtin-types/integral-numeric-types.md).
 - The name of a declared `const` variable.
 - An enumeration constant.
 - A [char](char.md) literal.

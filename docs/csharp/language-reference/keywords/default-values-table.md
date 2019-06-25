@@ -21,7 +21,7 @@ The following table shows the default values of [value types](value-types.md).
 |Value type|Default value|
 |----------------|-------------------|
 |[bool](bool.md)|`false`|
-|[byte](byte.md)|0|
+|[byte](../builtin-types/integral-numeric-types.md)|0|
 |[char](char.md)|'\0'|
 |[decimal](decimal.md)|0M|
 |[double](double.md)|0.0D|

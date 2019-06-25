@@ -75,7 +75,7 @@ There is no implicit conversion from `ulong` to any integral type. For example, 
 long long1 = 8UL;   // Error: no implicit conversion from ulong
 ```
 
-There is a predefined implicit conversion from [byte](byte.md), [ushort](ushort.md), [uint](uint.md), or [char](char.md) to `ulong`.
+There is a predefined implicit conversion from [byte](../builtin-types/integral-numeric-types.md), [ushort](ushort.md), [uint](uint.md), or [char](char.md) to `ulong`.
 
 Also, there is no implicit conversion from floating-point types to `ulong`. For example, the following statement generates a compiler error unless an explicit cast is used:
 

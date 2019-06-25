@@ -58,7 +58,7 @@ There is a predefined implicit conversion from `uint` to [long](long.md), [ulong
 float myFloat = 4294967290;   // OK: implicit conversion to float
 ```
 
-There is a predefined implicit conversion from [byte](byte.md), [ushort](ushort.md), or [char](char.md) to `uint`. Otherwise you must use a cast. For example, the following assignment statement will produce a compilation error without a cast:
+There is a predefined implicit conversion from [byte](../builtin-types/integral-numeric-types.md), [ushort](ushort.md), or [char](char.md) to `uint`. Otherwise you must use a cast. For example, the following assignment statement will produce a compilation error without a cast:
 
 ```csharp
 long aLong = 22;

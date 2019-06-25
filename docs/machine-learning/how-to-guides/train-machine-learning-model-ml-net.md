@@ -1,16 +1,16 @@
 ---
 title: Train and evaluate a model
-description: Learn how to build machine learning models, extract learned parameters and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
-ms.date: 06/11/2019
+description: Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. A machine learning model identifies patterns within training data to make predictions using new data.
+ms.date: 06/25/2019
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: mvc, how-to, title-hack-0612
+ms.custom: mvc, how-to, title-hack-0625
 #Customer intent: As a developer I want to know how to train and evaluate a machine learning model with ML.NET
 ---
 
 # Train and evaluate a model
 
-Learn how to build machine learning models, extract learned parameters and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
+Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
 
 ## Split data for training and testing
 

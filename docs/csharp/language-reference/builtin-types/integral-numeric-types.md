@@ -108,8 +108,6 @@ Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure
 
 OTHER TASKS:
 
-1. ushort
-1. uint
 1. int
 1. ulong
 1. long

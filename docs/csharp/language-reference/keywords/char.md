@@ -28,7 +28,7 @@ Constants of the `char` type can be written as character literals, hexadecimal e
 
 ## Conversions
 
-A `char` can be implicitly converted to [ushort](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). However, there are no implicit conversions from other types to the `char` type.
+A `char` can be implicitly converted to [ushort](../builtin-types/integral-numeric-types.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../builtin-types/integral-numeric-types.md/csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md). However, there are no implicit conversions from other types to the `char` type.
 
 The <xref:System.Char?displayProperty=nameWithType> type provides several static methods for working with `char` values.
 

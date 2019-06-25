@@ -45,7 +45,7 @@ Integer literals can also include a suffix that denotes the type. The suffix `UL
 If an integer literal has no suffix, its type is the first of the following types in which its value can be represented:
 
 1. [int](int.md)
-2. [uint](uint.md)
+2. [uint](../builtin-types/integral-numeric-types.md)
 3. [long](long.md)
 4. `ulong`
 
@@ -75,7 +75,7 @@ There is no implicit conversion from `ulong` to any integral type. For example, 
 long long1 = 8UL;   // Error: no implicit conversion from ulong
 ```
 
-There is a predefined implicit conversion from [byte](../builtin-types/integral-numeric-types.md), [ushort](../builtin-types/integral-numeric-types.md), [uint](uint.md), or [char](char.md) to `ulong`.
+There is a predefined implicit conversion from [byte](../builtin-types/integral-numeric-types.md), [ushort](../builtin-types/integral-numeric-types.md), [uint](../builtin-types/integral-numeric-types.md), or [char](char.md) to `ulong`.
 
 Also, there is no implicit conversion from floating-point types to `ulong`. For example, the following statement generates a compiler error unless an explicit cast is used:
 

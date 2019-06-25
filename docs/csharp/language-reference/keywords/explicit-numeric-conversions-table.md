@@ -23,7 +23,7 @@ The following table shows the predefined explicit conversions between .NET numer
 |[short](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `ushort`, `uint`, `ulong`, or `char`|  
 |[ushort](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, or `char`|  
 |[int](int.md)|`sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`,or `char`|  
-|[uint](uint.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `char`|  
+|[uint](../builtin-types/integral-numeric-types.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, or `char`|  
 |[long](long.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `ulong`, or `char`|  
 |[ulong](ulong.md)|`sbyte`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, or `char`|  
 |[char](char.md)|`sbyte`, `byte`, or `short`|  

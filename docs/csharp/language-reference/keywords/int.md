@@ -39,7 +39,7 @@ Some examples are shown below.
 Integer literals can also include a suffix that denotes the type, although there is no suffix that denotes the `int` type. If an integer literal has no suffix, its type is the first of the following types in which its value can be represented:
 
 1. `int`
-2. [uint](../../../csharp/language-reference/keywords/uint.md)
+2. [uint](../builtin-types/integral-numeric-types.md)
 3. [long](../../../csharp/language-reference/keywords/long.md)
 4. [ulong](../../../csharp/language-reference/keywords/ulong.md)
 

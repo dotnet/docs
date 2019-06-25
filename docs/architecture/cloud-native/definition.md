@@ -246,5 +246,5 @@ What exactly do containers orchestrators do? Figure 1-10, shown below, provides 
 We will dig deep into containers orchestrators and Azure Kubernetes Services throughout this book.
 
 >[!div class="step-by-step"]
->[Previous](introduction-to-cloud-native-applications.md)
-<[Next](candidate-apps-for-cloud-native.md)
+>[Previous](introduction.md)
+<[Next](candidate-apps.md)

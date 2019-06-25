@@ -200,3 +200,7 @@ Congratulations! you've installed and uninstalled a template pack.
 ## Next steps
 
 To learn more about templates, most of which you've already learned, see the [Custom templates for dotnet new](../../tools/custom-templates.md) article.
+
+* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
+* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+* [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

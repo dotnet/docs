@@ -127,33 +127,33 @@ NoSQL databases can be categorized by the following four models:
 
 - *Wide-Column Store.* (hbase, Cassandra) Related Data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together.
 
--   *Graph stores.* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes.
+- *Graph stores.* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes.
 
 NoSQL databases can be optimized to deal with large scale data needs, especially when the data is relatively simple. Consider a NoSQL database when:
 
--   Your workload requires large-scale and high-concurrency.
+- Your workload requires large-scale and high-concurrency.
 
--   You have large numbers of users.
+- You have large numbers of users.
 
--   Your data can be expressed simply without relationships.
+- Your data can be expressed simply without relationships.
 
--   You need to geographically distribute your data.
+- You need to geographically distribute your data.
 
--   You don't need ACID guarantees.
+- You don't need ACID guarantees.
 
--   Will be deployed to commodity hardware.
+- Will be deployed to commodity hardware.
 
 Then, consider a relational database when:
 
--   Your workloads require medium to large-scale.
+- Your workloads require medium to large-scale.
 
--   Concurrency isn't a major concern.
+- Concurrency isn't a major concern.
 
--   ACID guarantees are needed.
+- ACID guarantees are needed.
 
--   Data is best expressed relationally.
+- Data is best expressed relationally.
 
--   Will be deployed to large, high-end hardware.
+- Will be deployed to large, high-end hardware.
 
 Next, we look at data storage in the Azure cloud.
 

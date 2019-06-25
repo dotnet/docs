@@ -77,17 +77,17 @@ MariaDB has a strong following and is used by many large enterprises. While Orac
 
 [Azure Database for MariaDB](https://azure.microsoft.com/services/mariadb/) is a fully-managed database as a service in the Azure cloud. It is based on the [MariaDB community edition](https://mariadb.org/download/) server engine. It can handle mission-critical workloads with predictable performance and dynamic scalability. Similar to the other Azure Database platforms, it includes many Platform-as-a-Service capabilities at no additional cost:
 
--   Built-in [high availability](https://docs.microsoft.com/azure/mariadb/concepts-high-availability).
+- Built-in [high availability](https://docs.microsoft.com/azure/mariadb/concepts-high-availability).
 
--   Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mariadb/concepts-pricing-tiers). 
+- Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mariadb/concepts-pricing-tiers). 
  
--   [Scaling](https://docs.microsoft.com/azure/mariadb/concepts-high-availability) as needed within seconds.
+- [Scaling](https://docs.microsoft.com/azure/mariadb/concepts-high-availability) as needed within seconds.
 
--   Secured protection of sensitive data at rest and in-motion.
+- Secured protection of sensitive data at rest and in-motion.
 
--   [Automatic backups](https://docs.microsoft.com/azure/mariadb/concepts-backup) and [point-in-time-restore](https://docs.microsoft.com/azure/mariadb/concepts-backup) for up to 35 days.
+- [Automatic backups](https://docs.microsoft.com/azure/mariadb/concepts-backup) and [point-in-time-restore](https://docs.microsoft.com/azure/mariadb/concepts-backup) for up to 35 days.
 
--   Enterprise-grade security and compliance.
+- Enterprise-grade security and compliance.
 
 ## Azure Database for PostgreSQL 
 

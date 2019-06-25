@@ -2,7 +2,7 @@
 title: ML.NET metrics
 description: Understand the metrics that are used to evaluate the performance of an ML.NET model
 ms.date: 04/29/2019
-author: 
+author: natke
 ---
 # Model evaluation metrics in ML.NET
 

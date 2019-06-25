@@ -182,7 +182,7 @@ dotnet publish -c Release -r win-x64 --self-contained true
 
 The ReadyToRun compiler doesn't currently support cross-targeting. You must compile on a given target. For example, if you want R2R images for Windows x64, you need to run the publish command on that environment.
 
-Exceptions to cross-targetting:
+Exceptions to cross-targeting:
 
 - Windows x64 can be used to compile Windows ARM32, ARM64, and x86 images.
 - Windows x86 can be used to compile Windows ARM32 images.

@@ -15,12 +15,14 @@ In this part of the series you'll learn how to:
 > [!div class="checklist"]
 > * Create a _.csproj* project to build a template pack
 > * Configure the project file for packing
-> * Install a template from a NuGet package
+> * Install a template from a NuGet package file
 > * Uninstall a template by package ID
 
 ## Prerequisites
 
-If you have already completed [part 2](create-item-template.md) of this tutorial series, you can skip this section. Just remember to open a terminal and navigate to the _working\\_ folder.
+* Complete [part 1](create-item-template.md) and [part 2](create-project-template.md) of this tutorial series.
+
+  This tutorial uses the two templates created in the first two parts of this tutorial. It is possible you can use a different template as long as you copy the template as a folder into the _working\templates\\_ folder.
 
 * Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later.
 
@@ -47,3 +49,132 @@ If you have already completed [part 2](create-item-template.md) of this tutorial
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
 * Open a terminal and navigate to the _working\templates_ folder.
+
+## Create a template pack
+
+A template pack is one or more templates packaged into a single distributable file. When you install or uninstall a pack, all templates contained in the pack are added or removed, respectively. The previous parts of this tutorial series only worked with individual templates. To share a non-packed template, you have to copy the template folder and install via that folder. Sharing a template pack makes this easier as you can bundle one or more templates together in a single file.
+
+Template packs are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template pack to a NuGet feed. The `dotnet new -i` command supports installing template pack from a NuGet package feed. Additionally, you can install a template pack from a _.nupkg_ file directly.
+
+Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template pack. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template pack NuGet package.
+
+The pack you'll create will include the [item template](#create-an-item-template) and [package template](#create-a-project-template) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working\\_ folder for the _.csproj_ file.
+
+Open your terminal and navigate to the _working\\_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
+
+```console
+dotnet new console -n templatepack -o .
+```
+
+The `-n` parameter sets the _.csproj_ filename to _templatepack.csproj_ and the `-o` parameters creates the files in the current directory. You should see a result similar to the following output.
+
+```console
+C:\working> dotnet new console -n templatepack -o .
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on .\templatepack.csproj...
+  Restore completed in 52.38 ms for C:\working\templatepack.csproj.
+
+Restore succeeded.
+```
+
+Next, open the _templatepack.csproj_ file in your favorite editor and replace the XML with the following:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>AdatumCorporation.Utility.Templates</PackageId>
+    <Title>AdatumCorporation Templates</Title>
+    <Authors>Me</Authors>
+    <Description>Templates to use when creating an application for Adatum Corporation.</Description>
+    <PackageTags>dotnet-new;templates;contoso</PackageTags>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
+```
+
+The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PacakgeId>` value is used to uninstall the template pack with a single name instead of a directory path. It can also be used to install the template pack from a NuGet feed. The remaining settings such as `<Title>` and `<Tags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
+
+The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
+
+The last three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
+
+The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates\\_ folder as content. It's also set to exclude any _bin\\_ folder or _obj\\_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template pack from trying to compile the code in the _templates\\_ folder hierarchy.
+
+Save this file and then run the pack command
+
+```console
+dotnet pack
+```
+
+This command will build your project and create a NuGet package in This should be the _working\bin\Debug_ folder.
+
+```console
+C:\working> dotnet pack
+Microsoft (R) Build Engine version 16.2.0-preview-19278-01+d635043bd for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 123.86 ms for C:\working\templatepack.csproj.
+
+  templatepack -> C:\working\bin\Debug\netstandard2.0\templatepack.dll
+  Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
+```
+
+
+
+
+
+
+
+AFTER INSTALL
+
+```console
+C:\workingdir\working>dotnet new -i C:\workingdir\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o, --output        Location to place the generated output.
+  -i, --install       Installs a source or a template pack.
+  -u, --uninstall     Uninstalls a source or a template pack.
+  --nuget-source      Specifies a NuGet source to use during install.
+  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
+  --dry-run           Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force             Forces content to be generated even if it would change existing files.
+  -lang, --language   Filters templates based on language and specifies the language of the template to create.
+
+
+Templates                                         Short Name            Language          Tags
+-------------------------------------------------------------------------------------------------------------------------------
+Example templates: string extensions              stringext             [C#]              Common/Code
+Console Application                               console               [C#], F#, VB      Common/Console
+Example templates: async project                  consoleasync          [C#]              Common/Console/C#8
+Class library                                     classlib              [C#], F#, VB      Common/Library
+```
+
+```console
+  AdatumCorporation.Utility.Templates
+    Templates:
+      Example templates: async project (consoleasync) C#
+      Example templates: string extensions (stringext) C#
+```
+
+
+

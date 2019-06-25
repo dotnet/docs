@@ -22,7 +22,7 @@ In this part of the series you'll learn how to:
 
 * Complete [part 1](create-item-template.md) and [part 2](create-project-template.md) of this tutorial series.
 
-  This tutorial uses the two templates created in the first two parts of this tutorial. It is possible you can use a different template as long as you copy the template as a folder into the _working\templates\\_ folder.
+  This tutorial uses the two templates created in the first two parts of this tutorial. It's possible you can use a different template as long as you copy the template as a folder into the _working\templates\\_ folder.
 
 * Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later.
 
@@ -50,9 +50,9 @@ In this part of the series you'll learn how to:
 
 * Open a terminal and navigate to the _working\templates\\_ folder.
 
-## Create a template pack
+## Create a template pack project
 
-A template pack is one or more templates packaged into a single distributable file. When you install or uninstall a pack, all templates contained in the pack are added or removed, respectively. The previous parts of this tutorial series only worked with individual templates. To share a non-packed template, you have to copy the template folder and install via that folder. Sharing a template pack makes this easier as you can bundle one or more templates together in a single file.
+A template pack is one or more templates packaged into a file. When you install or uninstall a pack, all templates contained in the pack are added or removed, respectively. The previous parts of this tutorial series only worked with individual templates. To share a non-packed template, you have to copy the template folder and install via that folder. Because a template pack can have more than one template in it, and is a single file, sharing is easier.
 
 Template packs are represented by a NuGet package (_.nupkg_) file. And, like any NuGet package, you can upload the template pack to a NuGet feed. The `dotnet new -i` command supports installing template pack from a NuGet package feed. Additionally, you can install a template pack from a _.nupkg_ file directly.
 
@@ -79,7 +79,7 @@ Running 'dotnet restore' on .\templatepack.csproj...
 Restore succeeded.
 ```
 
-Next, open the _templatepack.csproj_ file in your favorite editor and replace the XML with the following:
+Next, open the _templatepack.csproj_ file in your favorite editor and replace the content with the following XML:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -116,6 +116,8 @@ The last three settings have to do with configuring the project correctly to inc
 
 The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template pack from trying to compile the code in the _templates_ folder hierarchy.
 
+## Build and install
+
 Save this file and then run the pack command
 
 ```console
@@ -135,31 +137,17 @@ Copyright (C) Microsoft Corporation. All rights reserved.
   Successfully created package 'C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg'.
 ```
 
-
-
-
-
-
-
-AFTER INSTALL
+Next, install the template pack file with the `dotnet new -i PATH_TO_NUPKG_FILE` command.
 
 ```console
-C:\workingdir\working>dotnet new -i C:\workingdir\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
+C:\working> dotnet new -i C:\working\bin\Debug\AdatumCorporation.Utility.Templates.1.0.0.nupkg
 Usage: new [options]
 
 Options:
   -h, --help          Displays help for this command.
   -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
-  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
-  -o, --output        Location to place the generated output.
-  -i, --install       Installs a source or a template pack.
-  -u, --uninstall     Uninstalls a source or a template pack.
-  --nuget-source      Specifies a NuGet source to use during install.
-  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
-  --dry-run           Displays a summary of what would happen if the given command line were run if it would result in a template creation.
-  --force             Forces content to be generated even if it would change existing files.
-  -lang, --language   Filters templates based on language and specifies the language of the template to create.
 
+... cut to save space ...
 
 Templates                                         Short Name            Language          Tags
 -------------------------------------------------------------------------------------------------------------------------------
@@ -169,12 +157,46 @@ Example templates: async project                  consoleasync          [C#]    
 Class library                                     classlib              [C#], F#, VB      Common/Library
 ```
 
+If you uploaded the NuGet package to a NuGet feed, you can use the `dotnet new -i PACKAGEID` command where `PACKAGEID` is the same as the `<PackageId>` setting from the _.csproj_ file. This package ID is the same as the NuGet package identifier.
+
+## Uninstall the template pack
+
+No matter how you installed the template pack, either with the _.nupkg_ file directly or by NuGet feed, removing a template pack is the same. Use the `<PackageId>` of the template you want to uninstall. You can get a list of templates that are installed by running the `dotnet new -u` command.
+
 ```console
+C:\working> dotnet new -u
+Template Instantiation Commands for .NET Core CLI
+
+Currently installed items:
+  Microsoft.DotNet.Common.ItemTemplates
+    Templates:
+      dotnet gitignore file (gitignore)
+      global.json file (globaljson)
+      NuGet Config (nugetconfig)
+      Solution File (sln)
+      Dotnet local tool manifest file (tool-manifest)
+      Web Config (webconfig)
+
+... cut to save space ...
+
+  NUnit3.DotNetNew.Template
+    Templates:
+      NUnit 3 Test Project (nunit) C#
+      NUnit 3 Test Item (nunit-test) C#
+      NUnit 3 Test Project (nunit) F#
+      NUnit 3 Test Item (nunit-test) F#
+      NUnit 3 Test Project (nunit) VB
+      NUnit 3 Test Item (nunit-test) VB
   AdatumCorporation.Utility.Templates
     Templates:
       Example templates: async project (consoleasync) C#
       Example templates: string extensions (stringext) C#
 ```
 
+Run `dotnet new -u AdatumCorporation.Utility.Templates` to uninstall the template. The `dotnet new` command will output help information that should omit the templates you previously installed.
 
+Congratulations! you've installed and uninstalled a template pack. 
 
+## Next steps
+
+To learn more about templates, most of which you've already learned, see the [Custom templates for dotnet new](../../tools/custom-templates.md) article.

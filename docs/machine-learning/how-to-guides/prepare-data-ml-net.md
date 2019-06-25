@@ -1,14 +1,14 @@
 ---
-title: Prepare Data
+title: Prepare data for building a model
 description: Learn how to use transforms in ML.NET to manipulate and prepare data for additional processing or model building.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 05/03/2019
-ms.custom: mvc, how-to
-#Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET using transforms
+ms.date: 06/25/2019
+ms.custom: mvc, how-to, title-hack-0625
+#Customer intent: As a developer, I want to know how I can transform and prepare data with ML.NET
 ---
 
-# Prepare Data
+# Prepare data for building a model
 
 Learn how to use ML.NET to prepare data for additional processing or building a model.
 

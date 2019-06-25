@@ -424,7 +424,7 @@ The following examples create ranges that are open ended for the start, end, or 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".
 var firstPhrase = words[..4]; // contains "The" through "fox"
-var lastPhrase = words[6..]; // contains "the, "lazy" and "dog"
+var lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
 ```
 
 You can also declare ranges as variables:

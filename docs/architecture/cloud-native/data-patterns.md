@@ -21,7 +21,7 @@ Figure 5-4 shows this scenario.
 
 Note how in the previous figure we see a shopping basket microservice that adds an item to a user's shopping cart. While the shopping basket's data store contains a basket and lineItem table, it does not contain product or pricing data as those items are found in the product and price microservices. In order to add an item, the shopping basket microservice needs product data and pricing data. What are options to obtain the product and pricing data?
 
-Figure 5-4 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
+Figure 5-5 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
 
 ![Direct http communication](media/direct-http-communication.png)
 
@@ -41,7 +41,7 @@ A common approach for executing cross-service queries utilizes the [Materialized
 
 ![Materialized view pattern](media/materialized-view-pattern.png)
 
-**Figure5-7**. Materialized view pattern
+**Figure5-7**. Materialized View Pattern
 
 With this pattern, you directly place a local table (known as a *read model*) in the shopping basket service that contains a denormalized copy of the data that is needed from the product and pricing microservices. Placing that data inside the shopping basket microservice eliminates the need for invoking expensive cross-service calls. With the data local to the service, you improve response time and reliability.
 
@@ -59,7 +59,7 @@ Note how in the previous figure five independent microservices all participate i
 
 Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to progammatically construct a distributed transaction.
 
-A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It is implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed Saga.
+A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It is implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
 
 ![Rollback in saga pattern](media/saga-rollback-operation.png)
 
@@ -91,7 +91,7 @@ Typically, CQRS patterns are applied to limited sections of your system based up
 
 ## Relational vs NoSQL
 
-The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud native systems. The proliferation of new data technologies in this space has disrupted solutions that were once exclusively solved with relational databases.
+The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud native systems. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
 On the one side, relational databases have been a prevalent technology for decades. They are mature, proven, and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (also known as Atomicity, Consistency, Isolation, and Durability) guarantees.
 
@@ -103,7 +103,7 @@ A way to understand the differences between these types of databases can be foun
 
 **Figure 5-11**. The CAP theorem
 
-The theorem states that any distributed data system will offer a trade-off between consistency, availability and partition tolerance and that any database can only guarantee two of the three properties:
+The theorem states that any distributed data system will offer a trade-off between consistency, availability, and partition tolerance, and that any database can only guarantee two of the three properties:
 
 - *Consistency.* Every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated.
 
@@ -129,7 +129,7 @@ NoSQL databases can be categorized by the following four models:
 
 - *Graph stores.* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes.
 
-NoSQL databases can be optimized to deal with large scale data needs, especially when the data is relatively simple. Consider a NoSQL database when:
+NoSQL databases can be optimized to deal with large-scale data, especially when the data is relatively simple. Consider a NoSQL database when:
 
 - Your workload requires large-scale and high-concurrency.
 
@@ -153,7 +153,7 @@ Then, consider a relational database when:
 
 - Data is best expressed relationally.
 
-- Will be deployed to large, high-end hardware.
+- Your application will be deployed to large, high-end hardware.
 
 Next, we look at data storage in the Azure cloud.
 

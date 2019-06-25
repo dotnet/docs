@@ -49,7 +49,7 @@ The `!` operator computes logical negation of its operand. That is, it produces 
 
 [!code-csharp-interactive[logical negation](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#Negation)]
 
-## Logical AND operator &amp;
+## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
 The `&` operator computes the logical AND of its operands. The result of `x & y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`.
 
@@ -85,7 +85,7 @@ The [conditional logical OR operator](#conditional-logical-or-operator-) `||` al
 
 For the operands of the integral types, the `|` operator computes the [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) of its operands.
 
-## Conditional logical AND operator &amp;&amp;
+## <a name="conditional-logical-and-operator-"></a> Conditional logical AND operator &amp;&amp;
 
 The conditional logical AND operator `&&`, also known as the "short-circuiting" logical AND operator, computes the logical AND of its operands. The result of `x && y` is `true` if both `x` and `y` evaluate to `true`. Otherwise, the result is `false`. If `x` evaluates to `false`, `y` is not evaluated.
 

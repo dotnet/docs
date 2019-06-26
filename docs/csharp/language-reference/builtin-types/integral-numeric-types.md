@@ -64,7 +64,7 @@ var hexLiteral = 0x2A;
 var binaryLiteral = 0b_0010_1010;
 ```
 
-Decimal literals do not require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declarations of `binaryLiteral` demonstrates the use of `_` as a digit separator.
+Decimal literals do not require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declarations of `binaryLiteral` demonstrates the use of `_` as a digit separator. Binary literals, and the `_` separator are features available starting in C# 7.0.
 
 ## Type of an integral literal
 

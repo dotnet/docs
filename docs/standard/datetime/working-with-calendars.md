@@ -236,10 +236,10 @@ If relaxed range checks are undesirable, you can restore strict range checks in 
 
    |  |  |
    |--|--|
-   |Key | HKEY_LOCAL_MACHINE\Software\Microsoft.NETFramework\AppContext |
+   |Key | HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\AppContext |
    |Name | Switch.System.Globalization.EnforceJapaneseEraYearRanges |
    |Type | REG_SZ |
-   |Value | 1 |
+   |Value | true |
 
 With strict range checks enabled, the previous example throws an <xref:System.ArgumentOutOfRangeException> and displays the following output:
 
@@ -311,10 +311,10 @@ If this behavior is undesirable in formatting operations, you can restore the pr
 
    |  |  |
    |--|--|
-   |Key | HKEY_LOCAL_MACHINE\Software\Microsoft.NETFramework\AppContext |
+   |Key | HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\AppContext |
    |Name | Switch.System.Globalization.FormatJapaneseFirstYearAsANumber |
    |Type | REG_SZ |
-   |Value | 1 |
+   |Value | true |
 
 With gannen support in formatting operations disabled, the previous example displays the following output:
 
@@ -349,10 +349,10 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 
    |  |  |
    |--|--|  
-   |Key | HKEY_LOCAL_MACHINE\Software\Microsoft.NETFramework\AppContext |
+   |Key | HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\AppContext |
    |Name | Switch.System.Globalization.EnforceLegacyJapaneseDateParsing |
    |Type | REG_SZ |
-   |Value | 1 | 
+   |Value | true | 
 
 ## See also
 

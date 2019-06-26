@@ -25,7 +25,7 @@ Model Builder is a graphical Visual Studio extension.
 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
-A scenario is a description of the type of prediction you want to make on your data. For example
+A scenario is a description of the type of prediction you want to make on your data. For example:
 - predict future product sales volume based on historical sales data
 - classify sentiments as positive or negative based on customer reviews
 - detect whether a banking transaction is fraudulent

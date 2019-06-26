@@ -11,7 +11,9 @@ ms.custom: mvc
 
 # Predict prices using regression with Model Builder
 
-This tutorial illustrates how to build a [regression model](../resources/glossary.md#regression) using ML.NET Model Builder to predict prices, specifically, New York City taxi fares. The regression machine learning task can be utilized in scenarios where the target or label to predict is numerical.
+Learn how to use ML.NET Model Builder to build a [regression model](../resources/glossary.md#regression) to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
+
+The Model Builder price prediction template can be used for any scenario requiring a numerical prediction value. Example scenarios include: house price prediction, demand prediction, and sales forecasting.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

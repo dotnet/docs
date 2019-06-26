@@ -3,7 +3,7 @@ title: 'Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 06/21/2019
+ms.date: 06/26/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder. 
@@ -45,6 +45,8 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
+Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi. 
+
 1. Open the **taxi-fare-train.csv** data set and look at column headers in the first row. Take a look at each of the columns. 
 
 The provided data set contains the following columns:
@@ -61,10 +63,14 @@ The `label` is the column you want to predict. When performing a regression task
 
 ## Choose a scenario
 
+To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Price Prediction`. For a more extensive list visit the [Model Builder overview article](https://review.docs.microsoft.com/en-us/dotnet/machine-learning/automate-training-with-model-builder?branch=pr-en-us-12557#scenarios).
+
 1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning**.
 1. In the scenario step of the Model Builder tool, select *Price Prediction* scenario.
 
 ## Load the data
+
+Model Builder accepts data from two sources, a SQL Server database or a local file csv or tsv file. For more information on data format requirements, visit the [Model Builder overview article](https://review.docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/install-model-builder?branch=pr-en-us-12557#limitations).
 
 1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
 1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
@@ -74,7 +80,7 @@ The `label` is the column you want to predict. When performing a regression task
 
 The machine learning task used to train the price prediction model in this tutorial is regression. ML.NET supports various regression algorithms. During the model training process, Model Builder will train separate models using different regression algorithms and hyper-parameters to try and train the best performing model for your dataset.
 
-Depending on the data size, give it enough time to train. Use this chart as guidance:
+The time required for the model to train is proportionate to the amount of data. Use this chart as guidance to select an adequate value for the `Time to train (seconds)` field:
 
 *Dataset Size  | Dataset Type       | Avg. Time to train*
 ------------- | ------------------ | --------------
@@ -87,18 +93,27 @@ Depending on the data size, give it enough time to train. Use this chart as guid
 1. Because the training data file is more than 10MB, use 600 seconds (10 minutes) as the value for *Time to train (seconds)*.
 2. Select *Start Training*.
 
+Throughout the training process, progress data is displayed in the `Progress` section of the train step.
+
+- Status displays the completion status of the training process.
+- Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data. 
+- Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
+- Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
+
+Once training is complete, navigate to the evaluate step.
+
 ## Evaluate the model
 
 The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the *Best Model* entry along with metrics in *Best Model Quality (RSquared)*. Additionally, a summary table containing top five models and their metrics. Visit the following link to learn more about [evaluating model metrics](https://docs.microsoft.com/dotnet/machine-learning/resources/metrics).
 
-If you're not satisfied with your accuracy metrics, an easy way to try and improve model accuracy is to increase the amount of time to train the model.
+If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data.
 
 ## Use the model for predictions
 
 Two projects will be created in `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
 
-- TaxiFarePredictionML.ConsoleApp: The console application containing the model training code.
-- TaxiFarePredictionML.Model: A class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
+- TaxiFarePredictionML.ConsoleApp: A .NET Console application that contains the model training and consumption code.
+- TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
 
 1. In the code section of the Model Builder tool, select **Added Projects** to add the projects to the solution.
 2. In solution explorer, right-click the *TaxiFarePrediction* project. Then, select **Add > Existing Item**. For file type drop down, select `All Files`, navigate to the *TaxiFarePredictionML.Model* project directory and select the `MLModel.zip` file. Then right-click the recently added `MLModel.zip` file and select *Properties*. For the Copy to Output Directory option, select *Copy if Newer* from the dropdown.

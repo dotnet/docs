@@ -14,8 +14,6 @@ Model Builder uses automated machine learning (AutoML) to explore different mach
 
 You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model to your .NET application.
 
-Model Builder is a graphical Visual Studio extension. 
-
 ![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
 
 > [!NOTE]
@@ -74,7 +72,7 @@ Regression is used to predict numbers. It can be used to answer questions such a
 - What is the moisture content in this dryer? (machine monitoring)
 - What will the total annual sales for this region be? (sales forecasting)
 
-You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset
+You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset.
 
 #### Custom scenario (choose your task)
 

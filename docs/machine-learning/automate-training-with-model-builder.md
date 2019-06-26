@@ -16,10 +16,10 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 
 Model Builder is a graphical Visual Studio extension. 
 
+![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
+
 > [!NOTE]
 > Model Builder is currently in Preview.
-
-![Model Builder Visual Studio extension user interface animation](media/ml-dotnet-model-builder.gif)
 
 ## Scenarios
 
@@ -28,6 +28,8 @@ You can bring many different scenarios to Model Builder, to generate a machine l
 A scenario is a description of the type of prediction you want to make on your data. For example
 - predict future product sales volume based on historical sales data
 - classify sentiments as positive or negative based on customer reviews
+- detect whether a banking transaction is fraudulent
+- route customer feedback issues to the correct team in your company
 
 In Model Builder, you need to map your scenario onto an [ML.NET task](resources/tasks.md). You can use Model Builder for **regression** (predicting numbers) and **classification** (predicting categories).
 
@@ -50,14 +52,14 @@ If your scenario requires classification into two categories, you can use this t
  
 #### Issue classification (multiclass classification)
 
-Issue classification can be used to categorize customer feedback (e.g. on GitHub) issues using the issue title and description. It is an example of the multi-class classification task.
+Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification task.
 
 Multiclass classification can be used to categorize data into three or more classes. It can be used to answer questions such as:
 
 - To which department should I route a support ticket? (support ticket routing)
 - What is the priority of a customer issue? (customer issue prioritization)
 - What category does a product belong to? (product classification)
-- What type of document is this? (document/email classification)
+- What type of document? (document/email classification)
 
 You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
 
@@ -106,7 +108,7 @@ The label is the historical house price for that row of square footage, bedroom,
 Model Builder places the following limitations on the data:
 
 - Data must be stored in a file (.csv or .tsv with a header row), or in a SQL server database.
-- There is a limit of 1 GB on the training dataset
+- A limit of 1 GB on the training dataset
 - SQL server has a limit of 100,000 rows for training
 - Data from SQL server is copied from the server to your local machine before training
 
@@ -118,9 +120,9 @@ If you don't have your own data yet, try out one of these datasets:
 |-|-|-|-|-|
 |Price prediction|regression|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |Anomaly detection|binary classification|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
-|Sentiment Analysis|binary classification|[website comment data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
+|Sentiment analysis|binary classification|[website comment data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/Data/wikiDetoxAnnotated40kRows.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
 |Fraud detection|binary classification|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
-|Customer feedback analysis|multiclass classification|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
+|Text classification|multiclass classification|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 
 ## Train
 
@@ -151,7 +153,7 @@ The exact time to train also depends on:
 - the number of rows used for training
 - the number of feature columns used for training
 
-Model Builder has been tested for scale with a 1TB dataset, but building a high-quality model for that size of dataset can take up to four days!
+Model Builder has been tested for scale with a 1-TB dataset, but building a high-quality model for that size of dataset can take up to four days!
 
 ## Evaluate
 
@@ -190,7 +192,7 @@ If your model performance score is not as good as you want it to be, you can:
 
 * Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model. 
 
-* Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have 4 classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
+* Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 
 ## Code
 

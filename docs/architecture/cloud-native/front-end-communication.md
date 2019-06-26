@@ -8,7 +8,7 @@ ms.date: 06/30/2019
 
 Cloud native applications expose channels to enable communication with front-end client applications, including mobile, web, or desktop applications.
 
-To keep things simple, a front-end client could directly communicate with back-end microservices as shown in Figure 4-2:
+To keep things simple, a front-end client could directly communicate with back-end microservices, shown in Figure 4-2:
 
 ![Direct client to service communication](media/direct-client-to-service-communication.png)
 **Figure 4-2**. Direct client to service communication
@@ -23,10 +23,10 @@ While relatively simple to implement, direct front-end communication is rarely a
 
 - Overly complex client code.
 
-Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services, as shown in Figure 4-3:
+Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](https://docs.microsoft.com/dotnet/standard/microservices-architecture/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern) between the frontend applications and backend services, shown in Figure 4-3:
 
 ![API Gateway Pattern](media/api-gateway-pattern.png)
-**Figure 4-3.** API Gateway Pattern
+**Figure 4-3.** API gateway pattern
 
 This pattern exposes a single point of entry (the API gateway) to enable front-end clients to communicate with backend services, insulating the front end from internal service partitioning and refactoring. Not only does the gateway act as a reverse proxy appropriately rerouting inbound traffic but also allows many of the cross-cutting concerns, such as identity, caching, resiliency, metering, and throttling, to be offloaded from the backend core services to the gateway.
 
@@ -36,7 +36,7 @@ Without much effort, you could build your own API Gateway service. In fact, a qu
 
 ## Azure API Management
 
-Azure hosts a cloud-based, fully managed and full-featured API Gateway solution that is a great candidate for many medium to large-scale cloud native systems. The service provides built-in gateway management functionality along with a developer and publisher portal, as shown in Figure 4-4.
+Azure hosts a cloud-based, fully managed and full-featured API Gateway solution that is a great candidate for many medium to large-scale cloud native systems. The service provides built-in gateway management functionality along with a developer and publisher portal, shown in Figure 4-4.
 
 ![Azure API Management](media/azure-api-management.png)
 **Figure 4-4**. Azure API Management
@@ -63,10 +63,10 @@ API Management provides an extension, the Publisher Portal, where administrators
 
 Additionally, API Management also provides a Developer Portal, as previously shown in Figure x, which enables access to the API, its documentation, and sample code to invoke the API across a number of different programming languages.
 
-The Azure API Management service provides a tremendous amount of functionality as shown in Figure 4-5:
+The Azure API Management service provides a tremendous amount of functionality, shown in Figure 4-5.
 
-![Azure API Management Functionality](media/azure-api-management-functionality.png)
-**Figure 4-5**. Azure API Management Functionality
+![Azure API Management functionality](media/azure-api-management-functionality.png)
+**Figure 4-5**. Azure API Management functionality
 
 Azure API Management is available across [four different pricing tiers](https://azure.microsoft.com/pricing/details/api-management/):
 
@@ -90,7 +90,7 @@ Manually implementing real-time connectivity can quickly become complex, requiri
 
 Under the hood, SignalR abstracts the transport technologies that create real-time connectivity, including WebSockets, Server-Side Events, and Long Polling, depending on the capabilities of the client. Developers focus on sending messages to all or specific subsets of connected clients.
 
-Figure 4-6 shows a set of HTTP Clients connecting to a Cloud App with Azure SignalR enabled:
+Figure 4-6 shows a set of HTTP Clients connecting to a Cloud App with Azure SignalR enabled.
 
 ![Azure SignalR](media/azure-signalr-service.png)
 
@@ -104,14 +104,15 @@ For less complex cloud native applications, you might consider the open-source [
 
 Available as a NuGet package, it targets NET Standard 2.0, making it compatible with both .NET Core 2.0+ and the .NET Framework 4.6.1+ runtimes. However, Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. It can be hosted in Azure and other public clouds.
 
-Its primary functionality is to forward incoming HTTP requests to downstream services. But, it also supports a variety of configurable gateway capabilities as shown in Figure 4-7:
+Its primary functionality is to forward incoming HTTP requests to downstream services. But, it also supports a variety of configurable gateway capabilities, shown in Figure 4-7.
 
 ![Ocelot Features](media/ocelot-features.png)
 **Figure 4-7**. Ocelot Features
 
-Each Ocelot gateway instance includes a simple JSON configuration file that specifies the upstream and downstream addresses and configurable features as shown in Figure 4-8:
+Each Ocelot gateway instance includes a simple JSON configuration file that specifies the upstream and downstream addresses and configurable features, shown in Figure 4-8.
 
 ![Basic Ocelot implementation](media/basic-ocelot-implementation.png)
+
 **Figure 4-8**. Basic Ocelot implementation
 
 In Figure 4-8, the client sends an HTTP request to the Ocelot gateway. Once received, Ocelot manipulates the HttpRequest object into a state specified by its configuration. At the end of pipeline, Ocelot creates a new HttpRequestMessage that is passed to the downstream service. In reverse, Ocelot receives the HTTP response and sends it back to the client.
@@ -119,5 +120,5 @@ In Figure 4-8, the client sends an HTTP request to the Ocelot gateway. Once rece
 Ocelot is extensible and can support many modern platforms, including Azure Kubernetes Services and Service Fabric, as well as integration with open-source packages like Consul, GraphQL, Netflix’s Eureka, web sockets, and SignalR.
 
 >[!div class="step-by-step"]
->[Previous](communication-considerations.md)
+>[Previous](communication-patterns.md)
 >[Next](cross-service-communication.md)

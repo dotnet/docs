@@ -113,7 +113,7 @@ OTHER TASKS:
 
 ## See also
 
-- [C# Language Specification - Integral types](~/_csharplang/spec/types.md#integral-types.md)
+- [C# Language Specification - Integral types](~/_csharplang/spec/types.md#integral-types)
 - [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Floating-point types table](floating-point-types-table.md)

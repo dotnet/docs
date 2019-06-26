@@ -51,7 +51,7 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
 
 1. Open the **taxi-fare-train.csv** data set
 
-The provided data set contains the following columns:
+    The provided data set contains the following columns:
 
 * **vendor_id:** The ID of the taxi vendor is a feature.
 * **rate_code:** The rate type of the taxi trip is a feature.

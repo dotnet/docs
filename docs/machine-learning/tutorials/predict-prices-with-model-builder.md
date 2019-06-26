@@ -80,7 +80,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 ## Train the model
 
-The machine learning task used to train the price prediction model in this tutorial is regression. ML.NET supports various regression algorithms. During the model training process, Model Builder will train separate models using different regression algorithms and hyper-parameters to try and train the best performing model for your dataset.
+The machine learning task used to train the price prediction model in this tutorial is regression. During the model training process, Model Builder trains separate models using different regression algorithms and settings to find the best performing model for your dataset.
 
 The time required for the model to train is proportionate to the amount of data. Use this chart as guidance to select an adequate value for the `Time to train (seconds)` field:
 

@@ -15,7 +15,7 @@ The following commands can be run elevated:
 
 We don't recommend running other commands elevated. In particular, we don't recommend elevation with commands that use MSBuild, such as [dotnet restore](dotnet-restore.md), [dotnet build](dotnet-build.md), and [dotnet run](dotnet-run.md). The primary issue is permission management problems when a user transitions back and forth between root and a restricted account after issuing dotnet commands. You may find as a restricted user that you don't have access to the file built by a root user. There are ways to resolve this situation, but they're unnecessary to get into in the first place.
 
-You can run commands as root, as long as you don’t transition back and forth between root and a restricted account. For example, Docker containers run as root by default, so they have this characteristic.
+You can run commands as root as long as you don’t transition back and forth between root and a restricted account. For example, Docker containers run as root by default, so they have this characteristic.
 
 ## Global tool installation
 
@@ -75,17 +75,17 @@ Package assets should be installed in a protected location using the `--tool-pat
 sudo dotnet tool install PACKAGEID --tool-path /usr/local/share/dotnet-tools
 ```
 
-`/usr/local/share/dotnet-tools` will be created with permission `drwxr-xr-x`. If the directory already exists, use the `ls -l` command to verify the restricted user doesn't have permission to edit the directory. If so, use `sudo chmod o-w -R /usr/share/dotnet-tools` command to remove the access.
+`/usr/local/share/dotnet-tools` will be created with permission `drwxr-xr-x`. If the directory already exists, use the `ls -l` command to verify the restricted user doesn't have permission to edit the directory. If so, use the `sudo chmod o-w -R /usr/share/dotnet-tools` command to remove the access.
 
 ### Run the global tool
 
-**Option 1** Use full path with sudo:
+**Option 1** Use the full path with sudo:
 
 ```bash
 sudo /usr/local/share/dotnet-tools/TOOLCOMMAND
 ```
 
-**Option 2** Add symbol link of the tool, once per tool:
+**Option 2** Add the symbol link of the tool, once per tool:
 
 ```bash
 sudo ln -s /usr/local/share/dotnet-tools/TOOLCOMMAND /usr/local/bin/TOOLCOMMAND
@@ -119,17 +119,17 @@ Package assets should be installed in a protected location using the `--tool-pat
 sudo dotnet tool install PACKAGEID --tool-path /usr/local/share/dotnet-tools
 ```
 
-`/usr/local/share/dotnet-tools` will be created with permission `drwxr-xr-x`. If the directory already exists, use the `ls -l` command to verify the restricted user doesn't have permission to edit the directory. If so, use `sudo chmod o-w -R /usr/share/dotnet-tools` command to remove the access.
+`/usr/local/share/dotnet-tools` will be created with permission `drwxr-xr-x`. If the directory already exists, use the `ls -l` command to verify the restricted user doesn't have permission to edit the directory. If so, use the `sudo chmod o-w -R /usr/share/dotnet-tools` command to remove the access.
 
 ### Run the global tool
 
-**Option 1** Use full path with sudo:
+**Option 1** Use the full path with sudo:
 
 ```bash
 sudo /usr/local/share/dotnet-tools/TOOLCOMMAND
 ```
 
-**Option 2** Add symbol link of the tool, once per tool:
+**Option 2** Add the symbol link of the tool, once per tool:
 
 ```bash
 sudo ln -s /usr/local/share/dotnet-tools/TOOLCOMMAND /usr/local/bin/TOOLCOMMAND
@@ -157,7 +157,7 @@ sudo rm /usr/local/bin/TOOLCOMMAND
 
 ## Local tools
 
-Local tools are scoped per subdirectory tree, per user. When run elevated, local tools share a restricted user environment to the elevated environment. In Linux and macOS, it results in files being set with root user only access. If the user switch back to a restricted account, the user can no longer access or write to the files. So, installing tools that require elevation as local tools isn't recommended. Instead, use the `--tool-path` option and the previous guidelines for global tools.
+Local tools are scoped per subdirectory tree, per user. When run elevated, local tools share a restricted user environment to the elevated environment. In Linux and macOS, this results in files being set with root user-only access. If the user switches back to a restricted account, the user can no longer access or write to the files. So installing tools that require elevation as local tools isn't recommended. Instead, use the `--tool-path` option and the previous guidelines for global tools.
 
 ## Elevation during development
 

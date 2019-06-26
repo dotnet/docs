@@ -275,7 +275,13 @@
         <param name="key">A unique identifier for the item.</param>
         <summary>Gets the <see cref="T:System.Runtime.Caching.Configuration.MemoryCacheElement" /> item that has the specified key.</summary>
         <value>The item that is specified by the key.</value>
-        <remarks>To be added.</remarks>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The comparison of `key` with <xref:System.Runtime.Caching.Configuration.MemoryCacheElement> key names is case-sensitive.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Properties">

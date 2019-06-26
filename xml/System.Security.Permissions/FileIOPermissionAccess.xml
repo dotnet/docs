@@ -37,17 +37,18 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This enumeration is used with the <xref:System.Security.Permissions.FileIOPermission> class.  
-  
+## Remarks
+
+This enumeration is used with the <xref:System.Security.Permissions.FileIOPermission> class.
+
 > [!NOTE]
->  Although NoAccess and AllAccess are members of <xref:System.Security.Permissions.FileIOPermissionAccess.NoAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> because they describe no file access types or all file access types, respectively, and <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> expects a single file access type.  
-  
-> [!NOTE]
->  Giving Write access to an assembly is similar to granting it Full Trust. If an application should not write to the file system it should not have Write access.  
-  
+>  Giving `Write` access to an assembly is similar to granting it Full Trust. If an application should not write to the file system, it should not have Write access.  
+
+Although `NoAccess` and `AllAccess` are members of `FileIOPermissionAccess`, they are not valid for use as the parameter for <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A?displayProperty=nameWithtype> because they describe no file access types or all file access types, respectively. <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A?displayProperty=nameWithType> expects a single file access type.
+
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.FileMode" />
     <altmember cref="T:System.Security.Permissions.FileIOPermission" />
     <altmember cref="T:System.Security.Permissions.FileIOPermissionAttribute" />
   </Docs>
@@ -108,17 +109,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Access to append material to a file or directory. <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /> access includes the ability to create a new file or directory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  To create files, code must also be granted both Append and either Write or Read access. For more detail see <xref:System.IO.FileMode>.  
-  
- ]]></format>
-        </remarks>
+        <summary>Access to append material to a file or directory. <see langword="FileIOPermissionAccess.Append" /> access includes the ability to create a new file or directory. To create files, code must also be granted both<see langword="Append" /> and either <see langword="Write" /> or <see langword="Read" /> access. </summary>
       </Docs>
     </Member>
     <Member MemberName="NoAccess">
@@ -176,17 +167,8 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Access to the information in the path itself. This helps protect sensitive information in the path, such as user names, as well as information about the directory structure revealed in the path. This value does not grant access to files or folders represented by the path.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For performance reasons, `PathDiscovery` should only be granted to directories, not to files. For example, `PathDiscovery` permission should be granted to paths such as C:\test and C:\test\\, not C:\test\example.txt.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Access to the information in the path itself. This helps protect sensitive information in the path, such as user names, as well as information about the directory structure revealed in the path. This value does not grant access to files or folders represented by the path.</para>
+        <para>For performance reasons, <see langword="PathDiscovery" /> should only be granted to directories, not to files. For example, <see langword="PathDiscovery" /> permission should be granted to paths such as C:\test and C:\test\\, not C:\test\example.txt.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Read">

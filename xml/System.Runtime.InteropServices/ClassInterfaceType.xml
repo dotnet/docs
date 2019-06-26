@@ -106,15 +106,8 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates that the class only supports late binding for COM clients. A <see langword="dispinterface" /> for the class is automatically exposed to COM clients on request. The type library produced by [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) does not contain type information for the <see langword="dispinterface" /> in order to prevent clients from caching the DISPIDs of the interface. The <see langword="dispinterface" /> does not exhibit the versioning problems described in <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> because clients can only late-bind to the interface.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default setting for <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Indicates that the class only supports late binding for COM clients. A <see langword="dispinterface" /> for the class is automatically exposed to COM clients on request. The type library produced by <see href="~/docs/framework/tools/tlbexp-exe-type-library-exporter.md">Tlbexp.exe (Type Library Exporter)</see> does not contain type information for the <see langword="dispinterface" /> in order to prevent clients from caching the DISPIDs of the interface. The <see langword="dispinterface" /> does not exhibit the versioning problems described in <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> because clients can only late-bind to the interface.</para>
+        <para>This is the default setting for <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />. </para></summary>
       </Docs>
     </Member>
     <Member MemberName="AutoDual">

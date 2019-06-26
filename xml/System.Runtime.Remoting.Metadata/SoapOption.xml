@@ -31,9 +31,44 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Runtime.Remoting.Metadata.SoapOption> enumeration is used to specify instructions to the .NET Framework on how it will generate the SOAP.  
+## Remarks
+
+The `SoapOption` enumeration is used to specify instructions to the .NET Framework on how it will generate the SOAP.  
+
+For example, while a class by default (with the `SoapOptions.None` enumeration value) might be remoted in the SOAP format as:  
   
+```xml
+<member1>10</member1>  
+<member2 id="ref-3">hello</member2>  
+<member3 href="#ref-3"/>  
+<member4 href="#ref-4"/>  
+<member4shared href="#ref-4"/>  
+<member5 href="#ref-5"/>  
+<member6 id="ref-6" xsi:type="SOAP-ENC:string">Hello World</member6>  
+<str1 id="ref-7">hello &#60; world</str1>  
+<str2 id="ref-8">&#60;</str2>  
+<str3 id="ref-9">&#60; world</str3>  
+<str4 href="#ref-7"/>  
+```
+
+Remoting serialization with the `SoapOptions.XsdString` option produces the following XML:
+
+```xml
+<member1 xsi:type="xsd:int">10</member1>  
+<member2 xsi:type="xsd:string">hello</member2>  
+<member3 xsi:type="xsd:string">hello</member3>  
+<member4 href="#ref-3"/>  
+<member4shared href="#ref-3"/>  
+<member5 href="#ref-4"/>  
+<member6 xsi:type="xsd:string">Hello World</member6>  
+<str1 xsi:type="xsd:string">hello &#60; world</str1>  
+<str2 xsi:type="xsd:string">&#60;</str2>  
+<str3 xsi:type="xsd:string">&#60; world</str3>  
+<str4 xsi:type="xsd:string">hello &#60; world</str4>  
+```  
+
+For more information about SOAP envelopes, see [www.w3.org/tr/soap/#_Toc478383494](https://www.w3.org/TR/soap/#_Toc478383494).
+    
  ]]></format>
     </remarks>
     <forInternalUseOnly />
@@ -179,47 +214,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates that the output SOAP string type in a SOAP Envelope is using the <see langword="XSD" /> prefix, and that the resulting XML does not have an ID attribute for the string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For example, while a class by default might be remoted in the SOAP format as  
-  
-```  
-<member1>10</member1>  
-<member2 id="ref-3">hello</member2>  
-<member3 href="#ref-3"/>  
-<member4 href="#ref-4"/>  
-<member4shared href="#ref-4"/>  
-<member5 href="#ref-5"/>  
-<member6 id="ref-6" xsi:type="SOAP-ENC:string">Hello World</member6>  
-<str1 id="ref-7">hello &#60; world</str1>  
-<str2 id="ref-8">&#60;</str2>  
-<str3 id="ref-9">&#60; world</str3>  
-<str4 href="#ref-7"/>  
-```  
-  
- remoting serialization with the `XsdString` option would produce the following XML.  
-  
-```  
-<member1 xsi:type="xsd:int">10</member1>  
-<member2 xsi:type="xsd:string">hello</member2>  
-<member3 xsi:type="xsd:string">hello</member3>  
-<member4 href="#ref-3"/>  
-<member4shared href="#ref-3"/>  
-<member5 href="#ref-4"/>  
-<member6 xsi:type="xsd:string">Hello World</member6>  
-<str1 xsi:type="xsd:string">hello &#60; world</str1>  
-<str2 xsi:type="xsd:string">&#60;</str2>  
-<str3 xsi:type="xsd:string">&#60; world</str3>  
-<str4 xsi:type="xsd:string">hello &#60; world</str4>  
-```  
-  
- For more information about SOAP envelopes, see www.w3.org/tr/soap/#_Toc478383494.  
-  
- ]]></format>
-        </remarks>
+        <summary>Indicates that the output SOAP string type in a SOAP Envelope uses the <see langword="XSD" /> prefix, and that the resulting XML does not have an ID attribute for the string.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>

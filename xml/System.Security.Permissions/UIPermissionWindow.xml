@@ -34,8 +34,45 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This enumeration is used by <xref:System.Security.Permissions.UIPermission>.  
+## Remarks
+
+This enumeration is used by <xref:System.Security.Permissions.UIPermission>.  
+
+When an application runs under the `SafeTopLevelWindows` permission, it:  
+
+- Shows the DNS name or IP address of the Web site from which the application was loaded in its title bar.  
+  
+- Displays Balloon tooltip when it first displays, informing the user that it is running under a restricted trust level.  
+  
+- Must display its title bar at all times.  
+  
+- Must display window controls on its forms.  
+  
+- Cannot minimize its main window on startup.  
+  
+- Cannot move its windows off-screen.  
+  
+- Cannot use the <xref:System.Windows.Forms.Form.Opacity%2A?displayProperty=nameWithType> property to make its windows less than 50% transparent.  
+
+- Must use only rectangular windows, and must include the window frame. Windows Forms will not honor setting <xref:System.Windows.Forms.Form.FormBorderStyle%2A?displayProperty=nameWithType> to <xref:System.Windows.Forms.FormBorderStyle.None?displayProperty=nameWithType>.  
+ 
+- Cannot make windows invisible. Any attempt by the application to set the <xref:System.Windows.Forms.Control.Visible%2A?displayProperty=nameWithType> property to `False` will be ignored.  
+  
+- Must have an entry in the Task Bar.  
+  
+- Has its controls prohibited from accessing the <xref:System.Windows.Forms.Control.Parent%2A> property. By implication, controls will also be barred from accessing siblings - that is, other controls at the same level of nesting.  
+  
+- Cannot control focus using the <xref:System.Windows.Forms.Control.Focus%2A?displayProperty=nameWithType> method.  
+  
+- Has restricted keyboard input access, so that a form or control can only access keyboard events for itself and its children.  
+  
+- Has restricted mouse coordinate access, so that a form or control can only read mouse coordinates if the mouse is over its visible area.  
+  
+- Cannot set the <xref:System.Windows.Forms.Form.TopMost%2A?displayProperty=nameWithType> property.  
+  
+- Cannot control the z-order of controls on the form using the <xref:System.Windows.Forms.Control.BringToFront%2A?displayProperty=nameWithType> and <xref:System.Windows.Forms.Control.SendToBack%2A?displayProperty=nameWithType> methods.  
+  
+ These restrictions help prevent potentially harmful code from spoofing attacks, such as imitating trusted system dialogs.  
   
  ]]></format>
     </remarks>
@@ -157,47 +194,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Users can only use <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /> and <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /> for drawing, and can only use user input events for the user interface within those top-level windows and subwindows.</summary>
+        <summary>Users can only use <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /> and <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /> for drawing, and can only use user input events for the user interface within those top-level windows and subwindows. See the Remarks section for more information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When it runs under SafeTopLevelWindows permission, your application:  
-  
--   Will show the DNS name or IP address of the Web site from which the application was loaded in its title bar.  
-  
--   Will display Balloon tool-tip when it first displays, informing the user that it is running under a restricted trust level.  
-  
--   Must display its title bar at all times.  
-  
--   Must display window controls on its forms.  
-  
--   Cannot minimize its main window on startup.  
-  
--   Cannot move its windows off-screen.  
-  
--   Cannot use the <xref:System.Windows.Forms.Form.Opacity%2A> property on <xref:System.Windows.Forms.Form.Opacity%2A> to make its windows less than 50% transparent.  
-  
--   Must use only rectangular windows, and must include the window frame. Windows Forms will not honor setting <xref:System.Windows.Forms.Form.FormBorderStyle%2A> to `None`.  
-  
--   Cannot make windows invisible. Any attempt by the application to set the <xref:System.Windows.Forms.Control.Visible%2A> property on its <xref:System.Windows.Forms.Form> objects to `False` will be ignored.  
-  
--   Must have an entry in the Task Bar.  
-  
--   Will have its controls prohibited from accessing the <xref:System.Windows.Forms.Control.Parent%2A> property. By implication, controls will also be barred from accessing siblings - that is, other controls at the same level of nesting.  
-  
--   Cannot control focus using the <xref:System.Windows.Forms.Control.Focus%2A> method.  
-  
--   Will have restricted keyboard input access, so that a form or control can only access keyboard events for itself and its children.  
-  
--   Will have restricted mouse coordinate access, so that a form or control can only read mouse coordinates if the mouse is over its visible area.  
-  
--   Cannot set the <xref:System.Windows.Forms.Form.TopMost%2A> property.  
-  
--   Cannot control the z-order of controls on the form using the <xref:System.Windows.Forms.Control.BringToFront%2A> and <xref:System.Windows.Forms.Control.SendToBack%2A> methods.  
-  
- These restrictions help prevent potentially harmful code from spoofing attacks, such as imitating trusted system dialogs.  
-  
  ]]></format>
         </remarks>
       </Docs>

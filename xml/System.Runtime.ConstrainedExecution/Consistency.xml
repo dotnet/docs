@@ -177,17 +177,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>In the face of exceptional conditions, the method is guaranteed not to corrupt state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This does not guarantee that the method will never fail; however, it does guarantee that such a failure will never corrupt state.  
-  
- ]]></format>
-        </remarks>
+        <summary>In the face of exceptional conditions, the method is guaranteed not to corrupt state. (This does not guarantee that the method will never fail; however, it does guarantee that such a failure will never corrupt state.)</summary>
       </Docs>
     </Member>
   </Members>

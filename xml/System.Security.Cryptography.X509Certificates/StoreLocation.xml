@@ -31,17 +31,19 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This enumeration is used with the <xref:System.Security.Cryptography.X509Certificates.X509Store> constructor.  
+## Remarks
+
+This enumeration is used with the <xref:System.Security.Cryptography.X509Certificates.X509Store> constructor.  
   
    
   
-## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+## Examples
+
+The following example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
+ 
+[!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+[!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+[!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
   
  ]]></format>
     </remarks>
@@ -79,18 +81,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The X.509 certificate store used by the current user.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalMachine">
@@ -125,18 +115,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The X.509 certificate store assigned to the local machine.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes you have three certificates to add to and remove from a local store.  
-  
- [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
- [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
- [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

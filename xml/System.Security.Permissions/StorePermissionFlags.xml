@@ -32,10 +32,9 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Many of these access permissions pose potential security and privacy threats. Great care should be taken in granting access to stores. A brief description of the type of threat exposed by an access can be found in the summary for the access.  
-  
-   
+## Remarks
+
+Many of these access permissions pose potential security and privacy threats. Great care should be taken in granting access to stores. A brief description of the type of threat exposed by an access can be found in the summary for the individual enumeration member.   
   
 ## Examples  
  The following code example shows the use of the <xref:System.Security.Permissions.StorePermissionFlags> enumeration.  
@@ -72,15 +71,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The ability to add a certificate to a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For security reasons, this ability should be granted only to highly trusted code.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to add a certificate to a store.</para><para>For security reasons, this ability should be granted only to highly trusted code.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="AllFlags">
@@ -134,15 +125,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The ability to create a new store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- New stores are created by calling the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A?displayProperty=nameWithType> method.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to create a new store.</para><para>New stores are created by calling the <see cref="M:System.Security.Cryptography.X509Certificates.X509Store.Open(System.Security.Cryptography.X509Certificates.OpenFlags)" /> method.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteStore">
@@ -169,15 +152,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The ability to delete a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is not exposed by the <xref:System.Security.Cryptography.X509Certificates.X509Store> class.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to delete a store.</para><para>This functionality is not exposed by the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="EnumerateCertificates">
@@ -204,15 +179,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>The ability to enumerate the certificates in a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For privacy reasons, this ability should be granted only to fully trusted code.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to enumerate the certificates in a store.</para><para>For privacy reasons, this ability should be granted only to fully trusted code.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="EnumerateStores">
@@ -239,15 +206,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The ability to enumerate the stores on a computer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is not exposed by the <xref:System.Security.Cryptography.X509Certificates.X509Store> class.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to enumerate the stores on a computer.</para><para>This functionality is not exposed by the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class. </para></summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -301,15 +260,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The ability to open a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The ability to open a store does not include the ability to enumerate certificates (which raises privacy concerns) or to add or remove certificates (which raises security concerns).  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to open a store.</para><para>The ability to open a store does not include the ability to enumerate certificates (which raises privacy concerns) or to add or remove certificates (which raises security concerns).</para></summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveFromStore">
@@ -336,15 +287,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>The ability to remove a certificate from a store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This ability should be granted only to highly trusted code because removing a certificate can result in a denial of service.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>The ability to remove a certificate from a store.</para><para>This ability should be granted only to highly trusted code because removing a certificate can result in a denial of service.</para></summary>
       </Docs>
     </Member>
   </Members>

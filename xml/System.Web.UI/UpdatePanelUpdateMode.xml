@@ -18,15 +18,22 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Web.UI.UpdatePanelUpdateMode> enumeration defines the possible update modes for the content of an <xref:System.Web.UI.UpdatePanel> control. The <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property must be set to one of the values of the <xref:System.Web.UI.UpdatePanelUpdateMode> enumeration. The <xref:System.Web.UI.UpdatePanel> control requires that the <xref:System.Web.UI.ScriptManager.EnablePartialRendering%2A> property of the <xref:System.Web.UI.ScriptManager> control be `true` for partial-page rendering to occur.  
+## Remarks
+
+The `UpdatePanelUpdateMode` enumeration is used by the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A?displayProperty=nameWithType> property and defines the possible update modes for the content of an <xref:System.Web.UI.UpdatePanel> control. The <xref:System.Web.UI.UpdatePanel> control requires that the <xref:System.Web.UI.ScriptManager.EnablePartialRendering%2A?displayProperty=nameWithType> property be `true` for partial-page rendering to occur.  
   
- The default value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is Always.  
+The default value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A?displayProperty=nameWithType> property is `Always`.  
   
- If the <xref:System.Web.UI.UpdatePanelUpdateMode.Always> control is inside another <xref:System.Web.UI.UpdatePanel> control and the parent panel is updated, the nested panel will also be updated regardless of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property value.  
+If the <xref:System.Web.UI.UpdatePanel> control is inside another <xref:System.Web.UI.UpdatePanel> control and the parent panel is updated, the nested panel will also be updated regardless of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property value.  
   
-   
+The `Conditional` value updates the content of the <xref:System.Web.UI.UpdatePanel> control under the following conditions:
+
+- The <xref:System.Web.UI.UpdatePanel.Update%2A?displayProperty=nameWithType> method is called explicitly.  
   
+- A control is defined as a trigger by using the <xref:System.Web.UI.UpdatePanel.Triggers?displayProperty=nameWithType> property and causes a postback. In this scenario, the control is an explicit trigger for updating the panel content. The trigger control can be either inside or outside the <xref:System.Web.UI.UpdatePanel> control that defines the trigger.  
+  
+- The <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A?displayProperty=nameWithType> property is set to `true` and a child control of the <xref:System.Web.UI.UpdatePanel> control causes a postback. In this scenario, child controls of the <xref:System.Web.UI.UpdatePanel> control are implicit triggers for updating the panel. Child controls of nested <xref:System.Web.UI.UpdatePanel> controls do not cause the outer <xref:System.Web.UI.UpdatePanel> control to be updated unless they are explicitly defined as triggers. 
+
 ## Examples  
  The following example declares two <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> controls. The first panel sets the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property of an <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> control to Conditional. The second panel has <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> set to Always by default. A button outside both panels is registered as an asynchronous postback control by using the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control. In the button's click event handler, the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the first panel is called if more than five seconds have elapsed since its last update. In this scenario, the panel's content is updated only if the last panel update was more than five seconds ago. The second panel's content is always updated.  
   
@@ -78,18 +85,13 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The content of the <see cref="T:System.Web.UI.UpdatePanel" /> control is updated under the following conditions:</summary>
+        <summary>Specifies a number of conditions under which the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control is updated;  see the Remarks section for more information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
--   If the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the <xref:System.Web.UI.UpdatePanel> control is called explicitly.  
-  
--   If a control is defined as a trigger by using the Triggers property of the <xref:System.Web.UI.UpdatePanel> control and causes a postback. In this scenario, the control is an explicit trigger for updating the panel content. The trigger control can be either inside or outside the <xref:System.Web.UI.UpdatePanel> control that defines the trigger.  
-  
--   If the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is set to `true` and a child control of the <xref:System.Web.UI.UpdatePanel> control causes a postback. In this scenario, child controls of the <xref:System.Web.UI.UpdatePanel> control are implicit triggers for updating the panel. Child controls of nested <xref:System.Web.UI.UpdatePanel> controls do not cause the outer <xref:System.Web.UI.UpdatePanel> control to be updated unless they are explicitly defined as triggers.  
-  
+
  ]]></format>
         </remarks>
       </Docs>

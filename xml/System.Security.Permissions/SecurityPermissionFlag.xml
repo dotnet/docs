@@ -48,7 +48,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration has a <xref:System.FlagsAttribute> attribute that allows a bitwise combination of its member values.  
   
  This enumeration is used by <xref:System.Security.Permissions.SecurityPermission>.  
   
@@ -58,7 +57,8 @@
    
   
 ## Examples  
- The following code example shows the use of the <xref:System.Security.Permissions.SecurityPermissionFlag> enumeration to deny and demand security permissions.  
+
+The following example shows the use of the <xref:System.Security.Permissions.SecurityPermissionFlag> enumeration to deny and demand security permissions:
   
  [!code-cpp[System.Security.Permissions.SecurityPermissionAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CPP/securitypermissionattribute.cpp#1)]
  [!code-csharp[System.Security.Permissions.SecurityPermissionAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CS/securitypermissionattribute.cs#1)]
@@ -283,15 +283,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Ability to provide evidence, including the ability to alter the evidence provided by the common language runtime.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a powerful permission that should only be granted to highly trusted code.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Ability to provide evidence, including the ability to alter the evidence provided by the common language runtime.</para><para>This is a powerful permission that should only be granted to highly trusted code.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="ControlPolicy">
@@ -327,15 +319,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>Ability to view and modify policy.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a powerful permission that should only be granted to highly trusted code.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Ability to view and modify policy.</para><para>This is a powerful permission that should only be granted to highly trusted code.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="ControlPrincipal">
@@ -443,15 +427,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Permission for the code to run. Without this permission, managed code will not be executed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This flag has no effect when used dynamically with stack modifiers such as <xref:System.Security.CodeAccessPermission.Deny%2A>, <xref:System.Security.CodeAccessPermission.Assert%2A>, and <xref:System.Security.CodeAccessPermission.PermitOnly%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Permission for the code to run. Without this permission, managed code will not be executed.</para><para>This flag has no effect when used dynamically with stack modifiers such as <see cref="M:System.Security.CodeAccessPermission.Deny" />, <see cref="M:System.Security.CodeAccessPermission.Assert" />, and <see cref="M:System.Security.CodeAccessPermission.PermitOnly" />.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Infrastructure">
@@ -631,17 +607,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Ability to skip verification of code in this assembly. Code that is unverifiable can be run if this permission is granted.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is a powerful permission that should be granted only to highly trusted code.  
-  
- This flag has no effect when used dynamically with stack modifiers such as <xref:System.Security.CodeAccessPermission.Deny%2A>, <xref:System.Security.CodeAccessPermission.Assert%2A>, and <xref:System.Security.CodeAccessPermission.PermitOnly%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Ability to skip verification of code in this assembly. Code that is unverifiable can be run if this permission is granted.</para><para>This is a powerful permission that should be granted only to highly trusted code.</para><para>This flag has no effect when used dynamically with stack modifiers such as <see cref="M:System.Security.CodeAccessPermission.Deny" />, <see cref="M:System.Security.CodeAccessPermission.Assert" />, and <see cref="M:System.Security.CodeAccessPermission.PermitOnly" />.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="UnmanagedCode">
@@ -677,15 +643,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Ability to call unmanaged code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Since unmanaged code potentially allows other permissions to be bypassed, this is a dangerous permission that should only be granted to highly trusted code. It is used for such applications as calling native code using PInvoke or using COM interop.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Ability to call unmanaged code.</para><para> Since unmanaged code potentially allows other permissions to be bypassed, this is a dangerous permission that should only be granted to highly trusted code. It is used for such applications as calling native code using PInvoke or using COM interop.</para></summary>
       </Docs>
     </Member>
   </Members>

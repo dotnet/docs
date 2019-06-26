@@ -76,7 +76,7 @@ The result is the following error:
 
 `Operator '+' cannot be applied to operands of type 'double' and 'decimal'`
 
-In this example, a `decimal` and an [int](../../../csharp/language-reference/keywords/int.md) are mixed in the same expression. The result evaluates to the `decimal` type.
+In this example, a `decimal` and an [int](../../../csharp/language-reference/builtin-types/integral-numeric-types.md) are mixed in the same expression. The result evaluates to the `decimal` type.
 
 [!code-csharp[csrefKeywordsTypes#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#6)]
 

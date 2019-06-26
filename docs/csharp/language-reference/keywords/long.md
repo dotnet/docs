@@ -47,7 +47,7 @@ long value = 4294967296L;
 
 When you use the suffix `L`, the type of the literal integer is determined to be either `long` or [ulong](../../../csharp/language-reference/keywords/ulong.md), depending on its size. In this case, it is `long` because it less than the range of [ulong](../../../csharp/language-reference/keywords/ulong.md).
 
-A common use of the suffix is to call overloaded methods. For example, the following overloaded methods have parameters of type `long` and [int](../../../csharp/language-reference/keywords/int.md):
+A common use of the suffix is to call overloaded methods. For example, the following overloaded methods have parameters of type `long` and [int](../builtin-types/integral-numeric-types.md):
 
 ```csharp
 public static void SampleMethod(int i) {}
@@ -63,7 +63,7 @@ SampleMethod(5L);   // Calls the method with the long parameter
 
 If an integer literal has no suffix, its type is the first of the following types in which its value can be represented:
 
-1. [int](int.md)
+1. [int](../builtin-types/integral-numeric-types.md)
 2. [uint](../builtin-types/integral-numeric-types.md)
 3. `long`
 4. [ulong](../../../csharp/language-reference/keywords/ulong.md)
@@ -87,7 +87,7 @@ int x = 8L;        // Error: no implicit conversion from long to int
 int y = (int)8L;   // OK: explicit conversion to int
 ```
 
-There is a predefined implicit conversion from [sbyte](../builtin-types/integral-numeric-types.md), [byte](../builtin-types/integral-numeric-types.md), [short](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [ushort](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../builtin-types/integral-numeric-types.md), or [char](../../../csharp/language-reference/keywords/char.md) to `long`.
+There is a predefined implicit conversion from [sbyte](../builtin-types/integral-numeric-types.md), [byte](../builtin-types/integral-numeric-types.md), [short](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [ushort](../../../csharp/language-reference/builtin-types/integral-numeric-types.md), [int](../builtin-types/integral-numeric-types.md), [uint](../builtin-types/integral-numeric-types.md), or [char](../../../csharp/language-reference/keywords/char.md) to `long`.
 
 Notice also that there is no implicit conversion from floating-point types to `long`. For example, the following statement generates a compiler error unless an explicit cast is used:
 

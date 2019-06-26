@@ -44,14 +44,14 @@ Integer literals can also include a suffix that denotes the type. The suffix `UL
 
 If an integer literal has no suffix, its type is the first of the following types in which its value can be represented:
 
-1. [int](int.md)
+1. [int](../builtin-types/integral-numeric-types.md)
 2. [uint](../builtin-types/integral-numeric-types.md)
 3. [long](long.md)
 4. `ulong`
 
 ## Compiler overload resolution
 
-A common use of the suffix is with calling overloaded methods. Consider, for example, the following overloaded methods that use `ulong` and [int](int.md) parameters:
+A common use of the suffix is with calling overloaded methods. Consider, for example, the following overloaded methods that use `ulong` and [int](../builtin-types/integral-numeric-types.md) parameters:
 
 ```csharp
 public static void SampleMethod(int i) {}

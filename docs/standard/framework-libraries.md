@@ -23,7 +23,7 @@ The BCL provides the most foundational types and utility functionality and are t
 
 * <xref:System.Object?displayProperty=nameWithType> ([object](../csharp/language-reference/keywords/object.md)) - The ultimate base class in the CLR type system. It is the root of the type hierarchy.
 * <xref:System.Int16?displayProperty=nameWithType> ([short](../csharp/language-reference/builtin-types/integral-numeric-types.md)) - A 16-bit signed integer type. The unsigned <xref:System.UInt16> also exists.
-* <xref:System.Int32?displayProperty=nameWithType> ([int](../csharp/language-reference/keywords/int.md)) - A 32-bit signed integer type. The unsigned [UInt32](../csharp/language-reference/builtin-types/integral-numeric-types.md) also exists.
+* <xref:System.Int32?displayProperty=nameWithType> ([int](../csharp/language-reference/builtin-types/integral-numeric-types.md)) - A 32-bit signed integer type. The unsigned [UInt32](../csharp/language-reference/builtin-types/integral-numeric-types.md) also exists.
 * <xref:System.Single?displayProperty=nameWithType> ([float](../csharp/language-reference/keywords/float.md)) - A 32-bit floating-point type.
 * <xref:System.Decimal?displayProperty=nameWithType> ([decimal](../csharp/language-reference/keywords/decimal.md)) - A 128-bit decimal type.
 * <xref:System.Byte?displayProperty=nameWithType> ([byte](../csharp/language-reference/builtin-types/integral-numeric-types.md)) - An unsigned 8-bit integer that represents a byte of memory.

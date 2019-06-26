@@ -26,7 +26,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[event](event.md)|[explicit](explicit.md)|[extern](extern.md)|[false](false-literal.md)|  
 |[finally](try-finally.md)|[fixed](fixed-statement.md)|[float](float.md)|[for](for.md)|  
 |[foreach](foreach-in.md)|[goto](goto.md)|[if](if-else.md)|[implicit](implicit.md)|  
-|[in](in.md)|[int](int.md)|[interface](interface.md)|[internal](internal.md)|
+|[in](in.md)|[int](../builtin-types/integral-numeric-types.md)|[interface](interface.md)|[internal](internal.md)|
 |[is](is.md)|[lock](lock-statement.md)|[long](long.md)|[namespace](namespace.md)|
 |[new](../operators/new-operator.md)|[null](null.md)|[object](object.md)|[operator](operator.md)|
 |[out](out.md)|[override](override.md)|[params](params.md)|[private](private.md)|

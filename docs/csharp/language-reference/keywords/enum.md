@@ -30,13 +30,13 @@ enum Day {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 
 In this enumeration, the sequence of elements is forced to start from `1` instead of `0`. However, including a constant that has the value of 0 is recommended. For more information, see [Enumeration Types](../../programming-guide/enumeration-types.md).
 
-Every enumeration type has an underlying type, which can be any integral type except [char](char.md). The default underlying type of enumeration elements is [int](int.md). To declare an enum of another integral type, such as [byte](../builtin-types/integral-numeric-types.md), use a colon after the identifier followed by the type, as shown in the following example.
+Every enumeration type has an underlying type, which can be any integral type except [char](char.md). The default underlying type of enumeration elements is [int](../builtin-types/integral-numeric-types.md). To declare an enum of another integral type, such as [byte](../builtin-types/integral-numeric-types.md), use a colon after the identifier followed by the type, as shown in the following example.
 
 ```csharp
 enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 ```
 
-The approved types for an enum are [byte](../builtin-types/integral-numeric-types.md), [sbyte](../builtin-types/integral-numeric-types.md), [short](../builtin-types/integral-numeric-types.md), [ushort](../builtin-types/integral-numeric-types.md), [int](int.md), [uint](../builtin-types/integral-numeric-types.md), [long](long.md), or [ulong](ulong.md).
+The approved types for an enum are [byte](../builtin-types/integral-numeric-types.md), [sbyte](../builtin-types/integral-numeric-types.md), [short](../builtin-types/integral-numeric-types.md), [ushort](../builtin-types/integral-numeric-types.md), [int](../builtin-types/integral-numeric-types.md), [uint](../builtin-types/integral-numeric-types.md), [long](long.md), or [ulong](ulong.md).
 
 A variable of an enumeration type can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
 
@@ -45,7 +45,7 @@ The default value of an `enum E` is the value produced by the expression `(E)0`.
 > [!NOTE]
 > An enumerator cannot contain white space in its name.
 
-The underlying type specifies how much storage is allocated for each enumerator. However, an explicit cast is necessary to convert from `enum` type to an integral type. For example, the following statement assigns the enumerator `Sun` to a variable of the type [int](int.md) by using a cast to convert from `enum` to `int`.
+The underlying type specifies how much storage is allocated for each enumerator. However, an explicit cast is necessary to convert from `enum` type to an integral type. For example, the following statement assigns the enumerator `Sun` to a variable of the type [int](../builtin-types/integral-numeric-types.md) by using a cast to convert from `enum` to `int`.
 
 ```csharp
 int x = (int)Day.Sun;

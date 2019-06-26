@@ -22,7 +22,7 @@ The following table shows the C# value types:
 |[double](double.md)|Numeric, [floating-point](floating-point-types-table.md)|D or d|
 |[enum](enum.md)|Enumeration||
 |[float](float.md)|Numeric, [floating-point](floating-point-types-table.md)|F or f|
-|[int](int.md)|Signed, numeric, [integral](integral-types-table.md)||
+|[int](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
 |[long](long.md)|Signed, numeric, [integral](integral-types-table.md)|L or l|
 |[sbyte](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
 |[short](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||

@@ -27,7 +27,7 @@ The following table shows the default values of [value types](value-types.md).
 |[double](double.md)|0.0D|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
 |[float](float.md)|0.0F|
-|[int](int.md)|0|
+|[int](../builtin-types/integral-numeric-types.md)|0|
 |[long](long.md)|0L|
 |[sbyte](../builtin-types/integral-numeric-types.md)|0|
 |[short](../builtin-types/integral-numeric-types.md)|0|

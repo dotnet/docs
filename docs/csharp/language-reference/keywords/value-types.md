@@ -38,7 +38,7 @@ The *simple types* are a set of predefined struct types provided by C# and compr
 - [Floating-point types](floating-point-types-table.md)
 - [bool](bool.md)
 
-The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](int.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
+The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-types.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
 
 The simple types differ from other struct types in that they permit certain additional operations:
 

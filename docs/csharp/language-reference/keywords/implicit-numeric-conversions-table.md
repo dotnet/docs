@@ -28,7 +28,7 @@ The following table shows the predefined implicit conversions between .NET numer
   
 ## Remarks  
 
-- Any [integral type](integral-types-table.md) is implicitly convertible to any [floating-point type](floating-point-types-table.md).
+- Any [integral type](../builtin-types/integral-numeric-types.md) is implicitly convertible to any [floating-point type](floating-point-types-table.md).
 
 - Precision but not magnitude might be lost in the conversions from `int`, `uint`, `long`, or `ulong` to `float` and from `long` or `ulong` to `double`.  
   
@@ -51,7 +51,7 @@ For more information about implicit conversions, see the [Implicit conversions](
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Integral types table](integral-types-table.md)
+- [Integral types](../builtin-types/integral-numeric-types.md)
 - [Floating-point types table](floating-point-types-table.md)
 - [Built-in types table](built-in-types-table.md)
 - [Explicit numeric conversions table](explicit-numeric-conversions-table.md)

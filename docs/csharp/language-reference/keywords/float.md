@@ -66,7 +66,7 @@ In the following example, an [int](../builtin-types/integral-numeric-types.md), 
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)
 - [C# Keywords](index.md)
-- [Integral Types Table](integral-types-table.md)
+- [Integral types](../../../csharp/language-reference/builtin-types/integral-numeric-types.md)
 - [Built-In Types Table](built-in-types-table.md)
 - [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)

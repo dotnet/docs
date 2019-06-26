@@ -34,7 +34,7 @@ Each value type has an implicit parameterless constructor that initializes the d
 
 The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
 
-- [Integral types](integral-types-table.md): integer numeric types and the [char](char.md) type
+- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](char.md) type
 - [Floating-point types](floating-point-types-table.md)
 - [bool](bool.md)
 

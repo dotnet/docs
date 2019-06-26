@@ -199,4 +199,4 @@ For more information, see the following topics:
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
-- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)
+- [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)

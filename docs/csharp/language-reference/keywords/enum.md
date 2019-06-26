@@ -96,7 +96,7 @@ If you remove `Flags`, the example displays the following values:
 - [C# Reference](../index.md)
 - [Enumeration Types](../../programming-guide/enumeration-types.md)
 - [C# Keywords](index.md)
-- [Integral Types Table](integral-types-table.md)
+- [Integral types](../../../csharp/language-reference/builtin-types/integral-numeric-types.md)
 - [Built-In Types Table](built-in-types-table.md)
 - [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)

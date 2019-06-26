@@ -47,19 +47,20 @@ After running the analysis in Visual Studio, you'll see your .NET Portability re
 If you used [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
 
 #### Portability Summary 
-This session of the report shows the the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
+The Portability Summary section of the report shows the the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
 
 #### Details
-List the APIs missing from one of the Target Platforms. 
-Target type: the type has missing API from a Target Platform
-Target member: the method is missing from a Target Platform
-Header for assembly name entries: the .NET Framework assembly that the missing API lives in.
-Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not supported on this Target Platform.
-Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep this up. We are looking at alternate solutions to provide helpful information to customer.
+The Details section of the report lists the APIs missing from one of the Target Platforms. 
 
-In Visual Studio, under the **Messages** tab in the **Error List**, it displays missing APIs with caller file and line number. You can jump to problem areas directly from the **Messages** tab.
+ - Target type: the type has missing API from a Target Platform 
+ - Target member: the method is missing from a Target Platform 
+ - Header for assembly name entries: the .NET Framework assembly that the missing
+   API lives in. 
+ - Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
+   supported on this Target Platform. 
+ - Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
 
-#### Missing assemblies
-You may have a list of the assemblies in "Header for assembly name entries" column. It normally are the assemblies that your analyzed assembly reference to and they are not .NET Framework assemblies. If it's an assembly that you own, include it in the portability analyze run. If it's third party library, looks for if they have newer version supporting .NET Core or .NET Standard. If so, consider moving to the newer version.  
+#### Missing Assemblies
+You may find a Missing Assemblies section in your report. It has a list of the assemblies in "Header for assembly name entries" column. It normally are the assemblies that your analyzed assembly reference to and they are not .NET Framework assemblies. If it's an assembly that you own, include it in the portability analyze run. If it's third party library, looks for if they have newer version supporting .NET Core or .NET Standard. If so, consider moving to the newer version.  
 
 For more information on the .NET Portability Analyzer, visit the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.

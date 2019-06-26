@@ -115,10 +115,9 @@ OTHER TASKS:
 
 - [C# Language Specification - Integral types](~/_csharplang/spec/types.md#integral-types)
 - [C# Reference](../index.md)
-- [C# Keywords](index.md)
-- [Floating-point types table](floating-point-types-table.md)
+- [Floating-point types table](../keywords/floating-point-types-table.md)
 - [Default values table](default-values-table.md)
-- [Formatting numeric results table](formatting-numeric-results-table.md)
-- [Built-in types table](built-in-types-table.md)
+- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
+- [Built-in types table](../keywords/built-in-types-table.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Numerics in .NET](../../../standard/numerics.md)

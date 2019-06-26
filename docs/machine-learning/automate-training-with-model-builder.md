@@ -67,8 +67,6 @@ You can use the issue classification template for your scenario if you want to c
 
 Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of the regression task.
 
-Price prediction can be used to predict house prices using location, size, 
-
 Regression is used to predict numbers. It can be used to answer questions such as:
 
 - What price will a house sell for? (price prediction)
@@ -132,7 +130,7 @@ Once you select your scenario, data, and label, Model Builder trains the model.
 
 Training is an automatic process by which Model Builder teaches your model how to answer questions for your scenario. Once trained, your model can make predictions with input data that it has not seen before. For example, if you are predicting house prices and a new house comes on the market, you can predict its sale price.
 
-Model Builder uses automated machine learning (AutoML), which automatically explores different machine learning algorithms and settings to find the one that best suits your scenario. Model Builder does not require any input or tuning from you. No prior expertise for ML is required.
+Because Model Builder uses automated machine learning (AutoML), it does not require any input or tuning from you during training.
 
 ### How long should I train for?
 
@@ -163,7 +161,7 @@ Model Builder splits the training data into a training set and a test set. The t
 
 ### Sentiment analysis (binary classification)
 
-The default metric for binary classification problems is **accuracy**. Accuracy defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**. 
+The default metric for binary classification problems is **accuracy**. Accuracy defines the proportion of correct predictions your model makes over the test dataset. The **closer to 100%, the better it is**.
 
 Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate, should be greater than 0.50 for models to be acceptable. 
 
@@ -171,12 +169,13 @@ Additional metrics such as F1 score can be used to control the balance between p
 
 ### Issue classification (multiclass classification)
 
+The default metric for multiclass classification problems is **micro accuracy**. The **closer to 100%, the better it is**.
+
 For problems where data is categorized into multiple classes there are two types of accuracy:
 
 - Micro-accuracy: the fraction of predictions that are correct across all instances. In the issue classification scenario, micro-accuracy is the proportion of incoming issues that get assigned to the correct category. 
 - Macro-accuracy: the average accuracy at the class level. In the issue classification scenario, the accuracy is measured for each category, and then the category accuracies are averaged. For this metric, all classes are given equal weight. For perfectly balanced datasets (where there are an equal number of examples of each category), micro-accuracy and macro-accuracy are the same.
 
-The default metric for multiclass classification problems is **micro accuracy**. The **closer to 100%, the better it is**. 
 
 ### Price prediction (regression)
 

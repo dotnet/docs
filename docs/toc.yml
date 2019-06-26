@@ -302,8 +302,9 @@
   - name: .NET Core SDK Overview
     href: core/sdk.md
   - name: .NET Core CLI Tools
-    href: core/tools/index.md
     items:
+    - name: .NET Core CLI Overview
+      href: core/tools/index.md
     - name: Telemetry
       href: core/tools/telemetry.md
     - name: Global Tools
@@ -311,6 +312,8 @@
       items:
       - name: Create a Global Tool
         href: core/tools/global-tools-how-to-create.md
+    - name: Elevated access
+      href: core/tools/elevated-access.md
     - name: Extensibility Model
       href: core/tools/extensibility.md
     - name: Continuous Integration

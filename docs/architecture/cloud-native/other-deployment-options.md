@@ -23,7 +23,7 @@ Creating a container instance from the registry just requires specifying the usu
 ![ACR Run Instance Create container instance](./media/acr-create-deeplink.png)
 **Figure 2-X**. ACR Run Instance Create container instance
 
-Once the deployment completes, you can find the newly-deployed container's IP address and communicate with it over the port you specified.
+Once the deployment completes, you can find the newly deployed container's IP address and communicate with it over the port you specified.
 
 Azure Container Instances offers the fastest, simplest way to run a container in Azure. There's no need to configure an app service or an orchestrator or to deal with virtual machines. However, because of its simplicity, ACI should primarily be used for testing purposes. If your application requires automatic scalability, multiple containers configured to work together, or any additional complex features, there are other better-suited Azure services available to host your app.
 

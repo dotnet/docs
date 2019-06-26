@@ -1458,7 +1458,7 @@ The following example defines a variable, `basePath`, to represent an applicatio
   
 - "\\\ComputerName\SharedFolder" (a UNC path).  
   
-- "\\?\C:" (a DOS device path, supported in .NET Core 1.1 and later versions and in .NET Framework 4.6.2 and later versions)
+- "\\\\\?\C:" (a DOS device path, supported in .NET Core 1.1 and later versions and in .NET Framework 4.6.2 and later versions)
    
  For more information on file paths on Windows, see [File path formats on Windows systems](~/docs/standard/io/file-path-formats.md). For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   

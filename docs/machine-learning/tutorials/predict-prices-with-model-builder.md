@@ -47,7 +47,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi. 
 
-1. Open the **taxi-fare-train.csv** data set and look at column headers in the first row. Take a look at each of the columns. 
+1. Open the **taxi-fare-train.csv** data set
 
 The provided data set contains the following columns:
 

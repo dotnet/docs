@@ -9,7 +9,7 @@ In addition to deploying to AKS, you can also deploy containers to Azure App Ser
 
 ## App Service for Containers
 
-**Note**: Do we need to cover deployment to App Service for Containers here or is that covered elsewhere?
+To deploy to [Azure App Service for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/), you need to have configured an Azure Container Registry (ACR) and credentials for accessing it. Push the container you intend to host to the registry so it's available to pull into your Azure App Service. Once created, you can configure the app for Continuous Deployment, which will automatically deploy updates to the app whenever you update its corresponding image in ACR.
 
 ## Azure Container Instances
 

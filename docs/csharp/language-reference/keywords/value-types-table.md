@@ -23,12 +23,12 @@ The following table shows the C# value types:
 |[enum](enum.md)|Enumeration||
 |[float](float.md)|Numeric, [floating-point](floating-point-types-table.md)|F or f|
 |[int](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
-|[long](long.md)|Signed, numeric, [integral](integral-types-table.md)|L or l|
+|[long](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)|L or l|
 |[sbyte](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
 |[short](../builtin-types/integral-numeric-types.md)|Signed, numeric, [integral](integral-types-table.md)||
 |[struct](struct.md)|User-defined structure||
 |[uint](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](integral-types-table.md)|U or u|
-|[ulong](ulong.md)|Unsigned, numeric, [integral](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|
+|[ulong](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](integral-types-table.md)|UL, Ul, uL, ul, LU, Lu, lU, or lu|
 |[ushort](../builtin-types/integral-numeric-types.md)|Unsigned, numeric, [integral](integral-types-table.md)||
 
 ## Remarks

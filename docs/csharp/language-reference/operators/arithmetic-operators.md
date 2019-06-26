@@ -79,7 +79,7 @@ The unary `+` operator returns the value of its operand. The unary `-` operator 
 
 [!code-csharp-interactive[unary plus and minus](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#UnaryPlusAndMinus)]
 
-The unary `-` operator doesn't support the [ulong](../keywords/ulong.md) type.
+The unary `-` operator doesn't support the [ulong](../builtin-types/integral-numeric-types.md) type.
 
 ## Multiplication operator *
 

@@ -17,7 +17,7 @@
         - name: bool
           href: keywords/bool.md
         - name: Integral numeric types
-          displayName: sbyte, byte, short, ushort, int, uint
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong
           href: builtin-types/integral-numeric-types.md
         - name: Floating point numeric types
           href: keywords/floating-point-numeric-types.md
@@ -31,12 +31,8 @@
           href: keywords/enum.md
         - name: float
           href: keywords/float.md
-        - name: long
-          href: keywords/long.md
         - name: struct
           href: keywords/struct.md
-        - name: ulong
-          href: keywords/ulong.md
       - name: Reference Types
         items:
         - name: Features of reference types

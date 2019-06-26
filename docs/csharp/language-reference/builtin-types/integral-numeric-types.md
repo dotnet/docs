@@ -108,9 +108,6 @@ Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure
 
 OTHER TASKS:
 
-1. int (up to removing the references)
-1. ulong
-1. long
 1. incorporate implicit and explicit conversion tables.
 1. Consider related "table" consolidation.
 

@@ -22,8 +22,8 @@ The following table shows the predefined implicit conversions between .NET numer
 |[ushort](../builtin-types/integral-numeric-types.md)|`int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
 |[int](../builtin-types/integral-numeric-types.md)|`long`, `float`, `double`, or `decimal`|  
 |[uint](../builtin-types/integral-numeric-types.md)|`long`, `ulong`, `float`, `double`, or `decimal`|  
-|[long](long.md)|`float`, `double`, or `decimal`|  
-|[ulong](ulong.md)|`float`, `double`, or `decimal`|  
+|[long](../builtin-types/integral-numeric-types.md)|`float`, `double`, or `decimal`|  
+|[ulong](../builtin-types/integral-numeric-types.md)|`float`, `double`, or `decimal`|  
 |[float](float.md)|`double`|  
   
 ## Remarks  

@@ -84,7 +84,6 @@ The Open Neural Network Exchange (ONNX) is an open source format for AI models. 
     ```
 
 1. Copy the extracted `model.onnx` file from the directory just unzipped into your *ObjectDetection* project `assets\Model` directory and rename it to `TinyYolo2_model.onnx`. This directory contains the model needed for this tutorial.
-1. 
 1. In Solution Explorer, right-click each of the files in the asset directory and subdirectories and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
 ### Create classes and define paths
@@ -452,7 +451,7 @@ private int channelStride = ROW_COUNT * COL_COUNT;
 - CLASS_COUNT is the number of class predictions contained in each bounding box.
 - CELL_WIDTH is the width of one cell in the image grid.
 - CELL_HEIGHT is the height of one cell in the image grid.
-- channelStride is the total size of the grid.
+- channelStride is the starting position of the current cell in the grid.
 
 Anchors are pre-defined widths and heights of bounding boxes. Define them below `channelStride`:
 

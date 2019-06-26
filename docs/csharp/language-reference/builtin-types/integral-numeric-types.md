@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Integral numeric types  (C# reference)
 
-The **integral types** are a subset of the **numeric types**. The **numeric types** are a subset of the **simple types**. All integral types are value types and can be initialized with *literals*, for example "24". All integral types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md) and [equality](../operators/equality-operators.md) operators.
+The **integral types** are a subset of the **numeric types**. The **numeric types** are a subset of the **simple types**. All integral types are value types and can be initialized with *literals*, for example "24". All integral types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison, and [equality](../operators/equality-operators.md) operators.
 
 ## Sizes and ranges
 
@@ -64,7 +64,7 @@ var hexLiteral = 0x2A;
 var binaryLiteral = 0b_0010_1010;
 ```
 
-Decimal literals do not require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declarations of `binaryLiteral` demonstrates the use of `_` as a digit separator. Binary literals, and the `_` separator are features available starting in C# 7.0.
+Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a digit separator. Binary literals, and the `_` separator are features available starting in C# 7.0.
 
 ## Type of an integral literal
 
@@ -98,9 +98,9 @@ The `l` or `L` suffix specifies that the integral literal should be of the `long
 
 ## Conversions
 
-There is an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there is an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There is no implicit conversion from any signed integral type to any unsigned integral type. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There is also an implicit conversion from any integral type to any floating-point type.
+There's an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there's an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There's no implicit conversion from any signed integral type to any unsigned integral type. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There's also an implicit conversion from any integral type to any floating-point type.
 
-You must use an explict cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type.
+You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type.
 
 If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
 

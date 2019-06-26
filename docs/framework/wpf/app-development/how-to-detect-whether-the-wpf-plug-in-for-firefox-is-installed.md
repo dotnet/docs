@@ -19,7 +19,7 @@ The Windows Presentation Foundation (WPF) plug-in for Firefox enables [!INCLUDE[
 
 ## Example
 
-When the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] is installed, the client computer is configured with a WPF plug-in for Firefox. The following example script checks for the WPF plug-in for Firefox and then displays an appropriate status message.
+When the .NET Framework 3.5 is installed, the client computer is configured with a WPF plug-in for Firefox. The following example script checks for the WPF plug-in for Firefox and then displays an appropriate status message.
 
 ```html
 <HTML>

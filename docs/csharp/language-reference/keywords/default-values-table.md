@@ -65,7 +65,6 @@ The default value of any [reference type](reference-types.md) is `null`. The def
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Value types](value-types.md)
 - [Value types table](value-types-table.md)
 - [Built-in types table](built-in-types-table.md)

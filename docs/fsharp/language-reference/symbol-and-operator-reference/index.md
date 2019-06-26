@@ -41,7 +41,7 @@ The following table describes symbols used in the F# language, provides links to
 |`+?`|[Nullable Operators](nullable-operators.md)|<ul><li>Adds the left and right sides, when the right side is a nullable type.<br /></li></ul>|
 |`,`|[Tuples](../tuples.md)|<ul><li>Separates the elements of a tuple, or type parameters.<br /></li></ul>|
 |`-`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>When used as a binary operator, subtracts the right side from the left side.<br /></li><li>When used as a unary operator, performs a negation operation.<br /></li></ul>|
-|`-`|[Nullable Operators](nullable-operators.md)|<ul><li>Subtracts the right side from the left side, when the right side is a nullable type.<br /></li></ul>|
+|`-?`|[Nullable Operators](nullable-operators.md)|<ul><li>Subtracts the right side from the left side, when the right side is a nullable type.<br /></li></ul>|
 |`->`|[Functions](../functions/index.md)<br /><br />[Match Expressions](../match-expressions.md)|<ul><li>In function types, delimits arguments and return values.<br /></li><li>Yields an expression (in sequence expressions); equivalent to the `yield` keyword.<br /></li><li>Used in match expressions<br /></li></ul>|
 |`.`|[Members](../members/index.md)<br /><br />[Primitive Types](../primitive-types.md)|<ul><li>Accesses a member, and separates individual names in a fully qualified name.<br /></li><li>Specifies a decimal point in floating point numbers.<br /></li></ul>|
 |`..`|[Loops: `for...in` Expression](../loops-for-in-expression.md)|<ul><li>Specifies a range.<br /></li></ul>|
@@ -121,6 +121,7 @@ The following table shows the order of precedence of operators and other express
 |`let`|Nonassociative|
 |`function`, `fun`, `match`, `try`|Nonassociative|
 |`if`|Nonassociative|
+|`not`|Right|
 |`->`|Right|
 |`:=`|Right|
 |`,`|Nonassociative|

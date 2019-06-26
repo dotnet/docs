@@ -36,7 +36,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the the license terms for the package you choose. Do the same for the **Microsoft.ML.FastTree** NuGet package.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the license terms for the package you choose. Do the same for the **Microsoft.ML.FastTree** NuGet package.
 
 ## Prepare your data
 
@@ -271,13 +271,13 @@ Use the following code to display the metrics:
 
     [!code-csharp[CallUseModelWithSingleItem](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CallUseModelWithSingleItem "Call the UseModelWithSingleItem method")]
 
-3. Add the following code to create as the first line in the `Predict()` Method:
+3. Add the following code to create as the first line in the `UseModelWithSingleItem()` Method:
 
     [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreatePredictionEngine1 "Create the PredictionEngine")]
 
     The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data.
 
-4. Add a comment to test the trained model's prediction in the `Predict()` method by creating an instance of `SentimentData`:
+4. Add a comment to test the trained model's prediction in the `UseModelWithSingleItem()` method by creating an instance of `SentimentData`:
 
     [!code-csharp[PredictionData](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#CreateTestIssue1 "Create test data for single prediction")]
 

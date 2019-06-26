@@ -20,7 +20,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CorDebugGuidToTypeMapping Structure
-Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding ICorDebugType object.  
+Maps a Windows Runtime GUID to its corresponding ICorDebugType object.  
   
 ## Syntax  
   
@@ -35,11 +35,11 @@ typedef struct CorDebugGuidToTypeMapping {
   
 |Member|Description|  
 |------------|-----------------|  
-|`iid`|The GUID of the cached [!INCLUDE[wrt](../../../../includes/wrt-md.md)] type.|  
+|`iid`|The GUID of the cached Windows Runtime type.|  
 |`pType`|A pointer to an ICorDebugType object that provides information about the cached type.|  
   
 ## Requirements  
- **Platforms:** [!INCLUDE[wrt](../../../../includes/wrt-md.md)].  
+ **Platforms:** Windows Runtime.  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

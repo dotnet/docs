@@ -88,7 +88,3 @@ Console.WriteLine(newTree);
   </aw:PurchaseOrder>  
 </Root>  
 ```  
-  
-## See also
-
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

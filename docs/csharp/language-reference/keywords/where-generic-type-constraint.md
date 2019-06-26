@@ -62,6 +62,6 @@ For details on the syntax and use of constraints, see [Constraints on Type Param
 
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
 - [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md)
 - [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md)

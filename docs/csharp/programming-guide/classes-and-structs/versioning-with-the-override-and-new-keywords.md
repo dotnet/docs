@@ -14,7 +14,7 @@ The C# language is designed so that versioning between [base](../../../csharp/la
   
 - The base class method must be defined [virtual](../../../csharp/language-reference/keywords/virtual.md).  
   
-- If the method in the derived class is not preceded by [new](../../../csharp/language-reference/keywords/new.md) or [override](../../../csharp/language-reference/keywords/override.md) keywords, the compiler will issue a warning and the method will behave as if the `new` keyword were present.  
+- If the method in the derived class is not preceded by [new](../../../csharp/language-reference/keywords/new-modifier.md) or [override](../../../csharp/language-reference/keywords/override.md) keywords, the compiler will issue a warning and the method will behave as if the `new` keyword were present.  
   
 - If the method in the derived class is preceded with the `new` keyword, the method is defined as being independent of the method in the base class.  
   

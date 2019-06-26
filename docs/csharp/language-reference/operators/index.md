@@ -1,5 +1,5 @@
 ---
-title: "C# operators"
+title: "C# operators - C# reference"
 ms.date: 04/30/2019
 f1_keywords: 
   - "cs.operators"
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators
+# C# operators (C# reference)
 
 C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
 
@@ -45,9 +45,9 @@ These are the highest precedence operators.
 
 [x--](arithmetic-operators.md#decrement-operator---) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[new](../keywords/new-operator.md) – type instantiation.
+[new](new-operator.md) – type instantiation.
 
-[typeof](../keywords/typeof.md) – returns the <xref:System.Type> object representing the operand.
+[typeof](type-testing-and-conversion-operators.md#typeof-operator) – returns the <xref:System.Type> object representing the operand.
 
 [checked](../keywords/checked.md) – enables overflow checking for integer operations.
 
@@ -61,7 +61,7 @@ These are the highest precedence operators.
 
 [sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
 
-[stackalloc](../keywords/stackalloc.md) - allocates a block of memory on the stack.
+[stackalloc](stackalloc.md) - allocates a block of memory on the stack.
 
 [->](pointer-related-operators.md#pointer-member-access-operator--) – pointer indirection combined with member access.
 
@@ -81,7 +81,7 @@ These operators have higher precedence than the next section and lower precedenc
 
 [--x](arithmetic-operators.md#decrement-operator---) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
 
-[(T)x](invocation-operator.md) – type casting.
+[(T)x](type-testing-and-conversion-operators.md#cast-operator-) – type casting.
 
 [await](../keywords/await.md) – awaits a `Task`.
 
@@ -131,9 +131,9 @@ These operators have higher precedence than the next section and lower precedenc
 
 [x >= y](comparison-operators.md#greater-than-or-equal-operator-) – greater than or equal to.
 
-[is](../keywords/is.md) – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
+[is](type-testing-and-conversion-operators.md#is-operator) – type compatibility. Returns `true` if the evaluated left operand can be cast to the type specified by the right operand.
 
-[as](../keywords/as.md) – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.
+[as](type-testing-and-conversion-operators.md#as-operator) – type conversion. Returns the left operand cast to the type specified by the right operand, but `as` returns `null` where `(T)x` would throw an exception.
 
 ## Equality operators
 
@@ -165,13 +165,13 @@ This operator has higher precedence than the next section and lower precedence t
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
+[x && y](boolean-logical-operators.md#conditional-logical-and-operator-) – logical AND. If `x` evaluates to `false`, then `y` is not evaluated.
 
 ## Conditional OR operator
 
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
-[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
+[x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) – logical OR. If `x` evaluates to `true`, then `y` is not evaluated.
 
 ## Null-coalescing operator
 
@@ -215,8 +215,6 @@ These operators have higher precedence than the next section and lower precedenc
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C#](../../index.md)
+- [C# reference](../index.md)
+- [Operators](../../programming-guide/statements-expressions-operators/operators.md)
 - [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
-- [C# Keywords](../keywords/index.md)

@@ -370,9 +370,17 @@ function fancyAlert(arg) {
 
 ### Static Image or Animated gif
 
+```markdown
+![this is the alt text](../images/Logo_DotNet.png)
+```
+
 ![this is the alt text](../images/Logo_DotNet.png)
 
 ### Linked Image
+
+```markdown
+[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
+```
 
 [![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
 

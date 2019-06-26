@@ -185,7 +185,6 @@
   - name: Linux Prerequisites
     href: core/linux-prerequisites.md
   - name: What's new in .NET Core
-    href: core/whats-new/index.md
     items:
     - name: What's new in .NET Core 3.0
       href: core/whats-new/dotnet-core-3-0.md
@@ -195,6 +194,12 @@
       href: core/whats-new/dotnet-core-2-1.md
     - name: What's new in .NET Core 2.0
       href: core/whats-new/dotnet-core-2-0.md
+  - name: Application Compatibility
+    items:
+    - name: Evaluate breaking changes
+      href: core/compatibility/index.md
+    - name: Breaking change categories
+      href: core/compatibility/categories.md    
   - name: Tutorials
     href: core/tutorials/index.md
     items:
@@ -525,8 +530,6 @@
           href: csharp/tutorials/intro-to-csharp/introduction-to-classes.md
     - name: Explore C# 6
       href: csharp/tutorials/exploration/csharp-6.yml
-    - name: Explore C# 7.0
-      href: csharp/tutorials/exploration/csharp-7.yml
     - name: Explore string interpolation - interactive
       href: csharp/tutorials/exploration/interpolated-strings.yml
     - name: Explore string interpolation - in your environment
@@ -808,6 +811,10 @@
         href: fsharp/language-reference/generics/statically-resolved-type-parameters.md
     - name: Records
       href: fsharp/language-reference/records.md
+    - name: Anonymous Records
+      href: fsharp/language-reference/anonymous-records.md
+    - name: Copy and Update Record Expressions
+      href: fsharp/language-reference/copy-and-update-record-expressions.md
     - name: Discriminated Unions
       href: fsharp/language-reference/discriminated-unions.md
     - name: Enumerations
@@ -855,8 +862,6 @@
       href: fsharp/language-reference/delegates.md
     - name: Object Expressions
       href: fsharp/language-reference/object-expressions.md
-    - name: Copy and Update Record Expressions
-      href: fsharp/language-reference/copy-and-update-record-expressions.md
     - name: Casting and Conversions
       href: fsharp/language-reference/casting-and-conversions.md
     - name: Access Control

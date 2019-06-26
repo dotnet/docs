@@ -1,5 +1,5 @@
 ---
-title: "Member access operators - C# Reference"
+title: "Member access operators - C# reference"
 description: "Learn about C# operators that you can use to access type members."
 ms.date: 05/09/2019
 author: pkulikov
@@ -26,7 +26,7 @@ helpviewer_keywords:
   - "delegate invocation [C#]"
   - "() operator [C#]"
 ---
-# Member access operators (C# Reference)
+# Member access operators (C# reference)
 
 You might use the following operators when you access a type member:
 
@@ -41,17 +41,17 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
 - Use `.` to access a nested namespace within a namespace, as the following example of a [`using` directive](../keywords/using-directive.md) shows:
 
-  [!code-csharp[nested namespaces](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#NestedNamespace)]
+  [!code-csharp[nested namespaces](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#NestedNamespace)]
 
 - Use `.` to form a *qualified name* to access a type within a namespace, as the following code shows:
 
-  [!code-csharp[qualified name](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#QualifiedName)]
+  [!code-csharp[qualified name](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#QualifiedName)]
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
 - Use `.` to access [type members](../../programming-guide/classes-and-structs/index.md#members), static and non-static, as the following code shows:
 
-  [!code-csharp-interactive[type members](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#TypeMemberAccess)]
+  [!code-csharp-interactive[type members](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#TypeMemberAccess)]
 
 You can also use `.` to access an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 
@@ -63,7 +63,7 @@ Square brackets, `[]`, are typically used for array, indexer, or pointer element
 
 The following example demonstrates how to access array elements:
 
-[!code-csharp-interactive[array access](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#Arrays)]
+[!code-csharp-interactive[array access](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Arrays)]
 
 If an array index is outside the bounds of the corresponding dimension of an array, an <xref:System.IndexOutOfRangeException> is thrown.
 
@@ -75,7 +75,7 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 The following example uses .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
-[!code-csharp-interactive[indexer access](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#Indexers)]
+[!code-csharp-interactive[indexer access](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Indexers)]
 
 Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer arguments can be declared to be of any type.
 
@@ -105,7 +105,7 @@ A?.B?[C];
 
 The following example demonstrates the usage of the `?.` and `?[]` operators:
 
-[!code-csharp-interactive[null-conditional operators](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#NullConditional)]
+[!code-csharp-interactive[null-conditional operators](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#NullConditional)]
 
 The preceding example also shows the usage of the [null-coalescing operator](null-coalescing-operator.md). You might use the null-coalescing operator to provide an alternative expression to evaluate in case the result of the null-conditional operation is `null`.
 
@@ -133,15 +133,15 @@ Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-st
 
 The following example demonstrates how to call a method, with or without arguments, and invoke a delegate:
 
-[!code-csharp-interactive[invocation with ()](~/samples/snippets/csharp/language-reference/operators/MemberAccessOperators.cs#Invocation)]
+[!code-csharp-interactive[invocation with ()](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Invocation)]
 
-You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with a [`new`](../keywords/new-operator.md) operator.
+You also use parentheses when you invoke a [constructor](../../programming-guide/classes-and-structs/constructors.md) with the [`new`](new-operator.md) operator.
 
 ### Other usages of ()
 
 You also use parentheses to specify the order in which to evaluate operations in an expression. For more information, see the [Adding parentheses](../../programming-guide/statements-expressions-operators/operators.md#adding-parentheses) section of the [Operators](../../programming-guide/statements-expressions-operators/operators.md) article. For the list of operators ordered by precedence level, see [C# operators](index.md).
 
-[Cast expressions](invocation-operator.md#cast-expression), which invoke a conversion operator, also use parentheses.
+[Cast expressions](type-testing-and-conversion-operators.md#cast-operator-), which perform explicit type conversions, also use parentheses.
 
 ## Operator overloadability
 
@@ -158,7 +158,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)

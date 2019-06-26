@@ -132,7 +132,7 @@ In fact, if we combine this rule and Rule #1, we can do even better and rewrite 
 void DisplayBufferToConsole(ReadOnlySpan<char> buffer);
 ```
 
-The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](~/docs/csharp/language-reference/keywords/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
+The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](~/docs/csharp/language-reference/operators/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it!
 
 **Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns.**
 

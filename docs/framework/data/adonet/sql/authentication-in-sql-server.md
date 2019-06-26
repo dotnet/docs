@@ -40,7 +40,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 - Internet applications, such as ASP.NET.  
   
 > [!NOTE]
->  Specifying Windows authentication does not disable SQL Server logins. Use the ALTER LOGIN DISABLE [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] statement to disable highly-privileged SQL Server logins.  
+>  Specifying Windows authentication does not disable SQL Server logins. Use the ALTER LOGIN DISABLE Transact-SQL statement to disable highly-privileged SQL Server logins.  
   
 ## Login Types  
  SQL Server supports three types of logins:  

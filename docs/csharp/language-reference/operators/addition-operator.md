@@ -1,5 +1,5 @@
 ---
-title: "+ and += operators - C# Reference"
+title: "+ and += operators - C# reference"
 ms.custom: seodec18
 ms.date: 05/24/2019
 f1_keywords: 
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "+= operator [C#]"
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
-# + and += operators (C# Reference)
+# + and += operators (C# reference)
 
 The `+` operator is supported by the built-in numeric types, [string](../keywords/string.md) type, and [delegate](../keywords/delegate.md) types.
 
@@ -25,17 +25,19 @@ For information about the arithmetic `+` operator, see the [Unary plus and minus
 
 When one or both operands are of type [string](../keywords/string.md), the `+` operator concatenates the string representations of its operands:
 
-[!code-csharp-interactive[string concatenation](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddStrings)]
+[!code-csharp-interactive[string concatenation](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddStrings)]
 
 Starting with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
-[!code-csharp-interactive[string interpolation](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#UseStringInterpolation)]
+[!code-csharp-interactive[string interpolation](~/samples/csharp/language-reference/operators/AdditionOperator.cs#UseStringInterpolation)]
 
 ## Delegate combination
 
-For operands of the same [delegate](../keywords/delegate.md) type, the `+` operator returns a new delegate instance that, when invoked, invokes the first operand and then invokes the second operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
+For operands of the same [delegate](../keywords/delegate.md) type, the `+` operator returns a new delegate instance that, when invoked, invokes the left-hand operand and then invokes the right-hand operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
 
-[!code-csharp-interactive[delegate combination](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddDelegates)]
+[!code-csharp-interactive[delegate combination](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddDelegates)]
+
+To perform delegate removal, use the [`-` operator](subtraction-operator.md#delegate-removal).
 
 For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
 
@@ -57,7 +59,7 @@ except that `x` is only evaluated once.
   
 The following example demonstrates the usage of the `+=` operator:
 
-[!code-csharp-interactive[+= examples](~/samples/snippets/csharp/language-reference/operators/AdditionExamples.cs#AddAndAssign)]
+[!code-csharp-interactive[+= examples](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddAndAssign)]
 
 You also use the `+=` operator to specify an event handler method when you subscribe to an [event](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -67,17 +69,15 @@ A user-defined type can [overload](../keywords/operator.md) the `+` operator. Wh
 
 ## C# language specification
 
-For more information, see the [Unary plus operator](~/_csharplang/spec/expressions.md#unary-plus-operator) and [Addition operator](~/_csharplang/spec/expressions.md#addition-operator) sections of the [C# language specification](../language-specification/index.md).
+For more information, see the [Unary plus operator](~/_csharplang/spec/expressions.md#unary-plus-operator) and [Addition operator](~/_csharplang/spec/expressions.md#addition-operator) sections of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Operators](index.md)
+- [C# reference](../index.md)
+- [C# operators](index.md)
 - [String interpolation](../tokens/interpolated.md)
 - [How to: concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
 - [Delegates](../../programming-guide/delegates/index.md)
 - [Events](../../programming-guide/events/index.md)
-- [Checked and unchecked](../keywords/checked-and-unchecked.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [- and -= operators](subtraction-operator.md)

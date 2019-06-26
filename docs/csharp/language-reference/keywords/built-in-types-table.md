@@ -42,7 +42,7 @@ int x = 123;
 System.Int32 y = 123;
 ```
 
-Use the [typeof](typeof.md) operator to get the <xref:System.Type?displayProperty=nameWithType> instance that represents the specified type:
+Use the [typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator) operator to get the <xref:System.Type?displayProperty=nameWithType> instance that represents the specified type:
 
 ```csharp
 Type stringType = typeof(string);
@@ -61,7 +61,6 @@ Console.WriteLine(doubleType.FullName);
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Value types](value-types.md)
 - [Reference types](reference-types.md)
 - [Default values table](default-values-table.md)

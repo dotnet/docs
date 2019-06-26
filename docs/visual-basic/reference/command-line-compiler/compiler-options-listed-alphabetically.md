@@ -39,7 +39,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-main](../../../visual-basic/reference/command-line-compiler/main.md)|Specifies the class that contains the `Sub Main` procedure to use at startup.|  
 |[-moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)|Specifies the name of the assembly that a module will be a part of.|  
 |`-modulename:<string>`|Specify the name of the source module|  
-|[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].|  
+|[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the .NET Compact Framework.|  
 |[-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)|Do not compile with Vbc.rsp.|  
 |[-nologo](../../../visual-basic/reference/command-line-compiler/nologo.md)|Suppresses compiler banner information.|  
 |[-nostdlib](../../../visual-basic/reference/command-line-compiler/nostdlib.md)|Causes the compiler not to reference the standard libraries.|  

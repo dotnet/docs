@@ -20,7 +20,7 @@ The <xref:System.Drawing.FontFamily> class provides the following methods that r
   
 - <xref:System.Drawing.FontFamily.GetLineSpacing%2A>(FontStyle)  
   
- The numbers returned by these methods are in font design units, so they are independent of the size and units of a particular <xref:System.Drawing.Font> object.  
+ The values returned by these methods are in font design units, so they are independent of the size and units of a particular <xref:System.Drawing.Font> object.  
   
  The following illustration shows the various metrics:
   

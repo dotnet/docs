@@ -1,14 +1,14 @@
 ---
-title: Use ML.NET in a sales anomaly detection scenario
-description: Discover how to use ML.NET in a product sales anomaly detection scenario to understand how to analyze the data for anomaly spikes and change points to take the appropriate action.
-ms.date: 05/06/2019
+title: 'Tutorial: Detect anomalies in product sales'
+description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+ms.date: 06/11/2019
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
 ---
-# Tutorial: Use ML.NET for product sales anomaly detection 
+# Tutorial: Detect anomalies in product sales with ML.NET
 
-This sample tutorial illustrates using ML.NET to detect anomalies in product sales data to take the appropriate action via a .NET Core console application using C# in Visual Studio 2019. 
+Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -153,7 +153,7 @@ Add the following call to the `DetectSpike()`method as the next line of code in 
 The `DetectSpike()` method executes the following tasks:
 
 * Trains the model.
-* Detects spikes based on on historical sales data.
+* Detects spikes based on historical sales data.
 * Displays the results.
 
 Create the `DetectSpike()` method, just after the `Main()` method, using the following code:
@@ -169,7 +169,7 @@ Use the [IidSpikeEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidSpikeEsti
 
 [!code-csharp[AddSpikeTrainer](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddSpikeTrainer)]
 
-Fit the model to the `productSales` data and return the trained model by adding the following as the next line of code in the `DetectSpike()` method:
+Fit the model to the `productSales` data by adding the following as the next line of code in the `DetectSpike()` method:
 
 [!code-csharp[TrainModel1](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#TrainModel1)]
 
@@ -279,7 +279,7 @@ The [iidChangePointEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidChangeP
 
 [!code-csharp[AddChangepointTrainer](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddChangepointTrainer)]
 
-As you did previously, fit the model to the `productSales` data and return the trained model by adding the following as the next line of code in the `DetectChangePoint()` method:
+As you did previously, fit the model to the `productSales` data by adding the following as the next line of code in the `DetectChangePoint()` method:
 
 [!code-csharp[TrainModel2](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#TrainModel2)]
 
@@ -369,4 +369,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore a Power Consumption Anomaly Detection sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/TimeSeries_PowerAnomalyDetection)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)

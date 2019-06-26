@@ -79,7 +79,7 @@ SELECT VALUE ROW(1 AS a, "abc" AS b) FROM C
 SELECT * FROM T1, T2  
 ```  
   
- The previous [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)] query expression is expressed in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] in the following way.  
+ The previous Transact-SQL query expression is expressed in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] in the following way.  
   
 ```  
 SELECT a1, a2 FROM T1 AS a1, T2 AS a2  

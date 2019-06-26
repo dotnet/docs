@@ -32,7 +32,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/index.md)
 - [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)
 - [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
 - [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)

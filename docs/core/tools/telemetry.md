@@ -73,7 +73,7 @@ Published data is available quarterly and are listed at [.NET Core SDK Usage Dat
 
 &#8224;The *Occurrences* column displays the aggregate count of that command's use for that row's metrics that day.
 
-&#8225;Typically, the *Geography* column displays the name of a country. In some cases, the continent of Antarctica appears in this column, either due to researchers using .NET Core in Antarctica or incorrect location data.
+&#8225;Typically, the *Geography* column displays the name of a country/region. In some cases, the continent of Antarctica appears in this column, either due to researchers using .NET Core in Antarctica or incorrect location data.
 
 ### Example
 
@@ -96,7 +96,7 @@ Additional datasets are posted using a standard URL format. Replace `<YEAR>` wit
 
 ## License
 
-The Microsoft distribution of .NET Core is licensed with the [Microsoft Software License Terms: Mirosoft .NET Library](https://aka.ms/dotnet-core-eula). For details on data collection and processing, see the section entitled "Data."
+The Microsoft distribution of .NET Core is licensed with the [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula). For details on data collection and processing, see the section entitled "Data."
 
 [.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use the same license but don't enable telemetry (see [Scope](#scope)).
 

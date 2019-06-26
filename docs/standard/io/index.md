@@ -141,7 +141,7 @@ The [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] conta
 
 Some important differences to note when using I/O operations in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps:
 
-- Types specifically related to file operations, such as <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> and <xref:System.IO.DirectoryInfo>, are not included in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]. Instead, use the types in the <xref:Windows.Storage?displayProperty=nameWithType> namespace of the [!INCLUDE[wrt](../../../includes/wrt-md.md)], such as <xref:Windows.Storage.StorageFile> and <xref:Windows.Storage.StorageFolder>.
+- Types specifically related to file operations, such as <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> and <xref:System.IO.DirectoryInfo>, are not included in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]. Instead, use the types in the <xref:Windows.Storage?displayProperty=nameWithType> namespace of the Windows Runtime, such as <xref:Windows.Storage.StorageFile> and <xref:Windows.Storage.StorageFolder>.
 
 - Isolated storage is not available; instead, use [application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)).
 

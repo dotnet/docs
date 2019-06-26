@@ -6,25 +6,25 @@ ms.date: 10/17/2018
 
 # Indexed Properties
 
-When defining a class that abstracts over ordered data, it can sometimes be helpful to provide indexed access to that data without exposing the underlying implementation. This is done with the `Index` member.
+When defining a class that abstracts over ordered data, it can sometimes be helpful to provide indexed access to that data without exposing the underlying implementation. This is done with the `Item` member.
 
 ## Syntax
 
 ```fsharp
-// Indexed property that has both get and set defined.
-member self-identifier.Index
+// Indexed property that can be read and written to
+member self-identifier.Item
     with get(index-values) =
         get-member-body
     and set index-values values-to-set =
         set-member-body
 
-// Indexed property with get only
-member self-identifier.Index
+// Indexed property can only be read
+member self-identifier.Item
     with get(index-values) =
         get-member-body
 
-// Indexed property that has set only.
-member self-identifier.Index
+// Indexed property that can only be set
+member self-identifier.Item
     with set index-values values-to-set =
         set-member-body
 ```

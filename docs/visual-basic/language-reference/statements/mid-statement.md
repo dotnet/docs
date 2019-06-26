@@ -61,7 +61,7 @@ Mid( _
   
  **Module:** `Strings`  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
 

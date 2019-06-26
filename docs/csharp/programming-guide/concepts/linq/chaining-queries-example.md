@@ -82,4 +82,4 @@ Main: str >GHI!!!<
   
 ## See also
 
-- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)
+- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

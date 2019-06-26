@@ -732,7 +732,7 @@ The tables in this article list the type members that are obsolete in the .NET F
   
 <a name="IEHost"></a>
 ### Assembly: IEHost.dll and IEExec.exe  
- The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Alternatives to this technology include ClickOnce, XAML Browser Applications (XBAP), and Microsoft Silverlight.  
+ The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framework. All of their types and their members are obsolete and are not supported in the .NET Framework 4.5. These assemblies were used to host Windows Forms controls and to run executables in Internet Explorer. Alternatives to this technology include ClickOnce, XAML Browser Applications (XBAP), and Microsoft Silverlight.  
   
 <a name="isymwrapper"></a>   
 ### Assembly: ISymWrapper.dll  

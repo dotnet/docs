@@ -147,7 +147,6 @@ The products in Azure supporting containers that are at the same time positioned
 
 - **Azure App Service**
 - **Azure Kubernetes Service (AKS and ACS)**
-- **Azure Service Fabric** 
 - **Azure Batch** 
 
 Then, Azure Container Registry is a high scalable container registry hosted in Azure that you can use from all the previous products when registering and deploying your custom container images.

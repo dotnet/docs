@@ -118,7 +118,7 @@ The following links refer to namespaces that contain [!INCLUDE[TLA#tla_winclient
 - <xref:UIAutomationClientsideProviders>  
   
 ## XAML Support in .NET 4  
- The following namespaces contain types from the System.Xaml assembly. System.Xaml provides common XAML language support for frameworks such as WPF that are built on [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)].  
+ The following namespaces contain types from the System.Xaml assembly. System.Xaml provides common XAML language support for frameworks such as WPF that are built on .NET Framework 4.  
   
 - <xref:System.Windows.Markup> (shared)  
   

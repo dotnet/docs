@@ -40,4 +40,4 @@ The following table shows the predefined implicit pointer conversions. Implicit 
 - [Types](../../../csharp/language-reference/keywords/types.md)
 - [unsafe](../../../csharp/language-reference/keywords/unsafe.md)
 - [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)
-- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+- [stackalloc](../../../csharp/language-reference/operators/stackalloc.md)

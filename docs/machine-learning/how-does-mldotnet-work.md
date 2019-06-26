@@ -28,8 +28,6 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
  ```csharp
     using System;
-    using System.IO;
-    using Microsoft.Data.DataView;
     using Microsoft.ML;
     using Microsoft.ML.Data;
     
@@ -214,7 +212,7 @@ You can transform input data into predictions in bulk, or one input at a time. I
 
 ```csharp
     var size = new HouseData() { Size = 2.5F };
-    var predEngine = model.CreatePredictionEngine<HouseData, Prediction>(mlContext);
+    var predEngine = mlContext.CreatePredictionEngine<HouseData, Prediction>(model);
     var price = predEngine.Predict(size);
 ```
  

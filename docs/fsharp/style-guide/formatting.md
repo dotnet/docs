@@ -284,12 +284,13 @@ x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 
 ### Use prefix syntax for generics (`Foo<T>`) in preference to postfix syntax (`T Foo`)
 
-F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for four specific types:
+F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for five specific types:
 
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
-3. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
-4. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
+4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
 
 For all other types, use the prefix form.
 
@@ -830,14 +831,14 @@ When applied to a parameter, they must be on the same line and separated by a `;
 
 ## Formatting literals
 
-[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use camelCase naming:
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use PascalCase naming:
 
 ```fsharp
 [<Literal>]
-let path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let Path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let myUrl = "www.mywebsitethatiamworkingwith.com"
+let MyUrl = "www.mywebsitethatiamworkingwith.com"
 ```
 
 Avoid placing the attribute on the same line as the value.

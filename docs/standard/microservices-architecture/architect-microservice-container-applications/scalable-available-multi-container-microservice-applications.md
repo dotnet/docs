@@ -21,7 +21,7 @@ To go beyond the management of individual containers or very simple composed app
 
 From an architecture and development point of view, if you're building large enterprise composed of microservices-based applications, it's important to understand the following platforms and products that support advanced scenarios:
 
-**Clusters and orchestrators.** When you need to scale out applications across many Docker hosts, as when a large microservice-based application, it's critical to be able to manage all those hosts as a single cluster by abstracting the complexity of the underlying platform. That's what the container clusters and orchestrators provide. Examples of orchestrators are Azure Service Fabric and Kubernetes. Kubernetes is available in Azure through Azure Kubernetes Service.
+**Clusters and orchestrators.** When you need to scale out applications across many Docker hosts, as when a large microservice-based application, it's critical to be able to manage all those hosts as a single cluster by abstracting the complexity of the underlying platform. That's what the container clusters and orchestrators provide. Kubernetes is an example of an orchestrator, and is available in Azure through Azure Kubernetes Service.
 
 **Schedulers.** *Scheduling* means to have the capability for an administrator to launch containers in a cluster so they also provide a UI. A cluster scheduler has several responsibilities: to use the cluster's resources efficiently, to set the constraints provided by the user, to efficiently load-balance containers across nodes or hosts, and to be robust against errors while providing high availability.
 
@@ -45,31 +45,9 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 
 > [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster’s management, deployment, and operations.
 
-### Azure Service Fabric
-
-![Azure Service Fabric logo](./media/image27.png)
-
-> [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It's an [orchestrator](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. Service Fabric can deploy services as containers or as plain processes. It can even mix services in processes with services in containers within the same application and cluster.
->
-> *Service Fabric* clusters can be deployed in Azure, on-premises or in any cloud. However, deployment in Azure is simplified with a managed approach.
->
-> *Service Fabric* provides additional and optional prescriptive [Service Fabric programming models](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework) like [stateful services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
->
-> *Service Fabric* is mature in Windows (years evolving in Windows), less mature in Linux.
->
-> Both Linux and Windows containers are supported in Service Fabric since 2017.
-
-### Azure Service Fabric Mesh
-
-![Azure Service Fabric Mesh logo](./media/image35.png)
-
-> [*Azure Service Fabric Mesh*](https://docs.microsoft.com/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale than Service Fabric, but offering a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development.
->
-> *Service Fabric Mesh* supports both Windows and Linux containers allowing you to develop with any programming language and framework of your choice.
-
 ## Using container-based orchestrators in Microsoft Azure
 
-Several cloud vendors offer Docker containers support plus Docker clusters and orchestration support, including Microsoft Azure, Amazon EC2 Container Service, and Google Container Engine. Microsoft Azure provides Docker cluster and orchestrator support through Azure Kubernetes Service (AKS) and Azure Service Fabric and Azure Service Fabric Mesh.
+Several cloud vendors offer Docker containers support plus Docker clusters and orchestration support, including Microsoft Azure, Amazon EC2 Container Service, and Google Container Engine. Microsoft Azure provides Docker cluster and orchestrator support through Azure Kubernetes Service (AKS).
 
 ## Using Azure Kubernetes Service
 
@@ -150,4 +128,4 @@ For further information check the article on [Team Development with Azure Dev Sp
 
 >[!div class="step-by-step"]
 >[Previous](resilient-high-availability-microservices.md)
->[Next](using-azure-service-fabric.md)
+>[Next](../docker-application-development-process/index.md)

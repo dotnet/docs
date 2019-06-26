@@ -77,7 +77,7 @@ Giraffe g2 = (Giraffe) a;
   
  [!code-csharp[csProgGuideTypes#41](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#41)]  
   
- C# provides the [is](../../../csharp/language-reference/keywords/is.md) and [as](../../../csharp/language-reference/keywords/as.md) operators to enable you to test for compatibility before actually performing a cast. For more information, see [How to: Safely cast using pattern matching, as and is Operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).  
+ C# provides the [is](../../language-reference/operators/type-testing-and-conversion-operators.md#is-operator) operator to enable you to test for compatibility before actually performing a cast. For more information, see [How to: safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).  
   
 ## C# language specification
 
@@ -87,7 +87,7 @@ Giraffe g2 = (Giraffe) a;
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Types](../../../csharp/programming-guide/types/index.md)
-- [() Operator](../../../csharp/language-reference/operators/invocation-operator.md)
+- [() Operator](../../../csharp/language-reference/operators/type-testing-and-conversion-operators.md#cast-operator-)
 - [explicit](../../../csharp/language-reference/keywords/explicit.md)
 - [implicit](../../../csharp/language-reference/keywords/implicit.md)
 - [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)

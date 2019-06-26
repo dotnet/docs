@@ -24,7 +24,6 @@ The following table shows the precision and approximate ranges for the floating-
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Reference tables for types](reference-tables-for-types.md)
 - [Integral types table](integral-types-table.md)
 - [Default values table](default-values-table.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)

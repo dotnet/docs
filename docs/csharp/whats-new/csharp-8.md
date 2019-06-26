@@ -24,7 +24,12 @@ There are many enhancements to the C# language that you can try out already.
 > [!NOTE]
 > This article was last updated for C# 8.0 preview 5.
 
-The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
+The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp8* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## Readonly members
 
@@ -375,7 +380,7 @@ This language support relies on two new types, and two new operators.
 
 Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
-A range specifies the *start* and *end* of a range. Ranges are exclusive, meaning the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
+A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
@@ -419,7 +424,7 @@ The following examples create ranges that are open ended for the start, end, or 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".
 var firstPhrase = words[..4]; // contains "The" through "fox"
-var lastPhrase = words[6..]; // contains "the, "lazy" and "dog"
+var lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
 ```
 
 You can also declare ranges as variables:

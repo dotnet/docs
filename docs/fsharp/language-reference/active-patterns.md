@@ -10,10 +10,16 @@ ms.date: 05/16/2016
 ## Syntax
 
 ```fsharp
-// Complete active pattern definition.
-let (|identifer1|identifier2|...|) [ arguments ] = expression
+// Active pattern of one choice.
+let (|identifier|) [arguments] valueToMatch= expression
+
+// Active Pattern with multiple choices.
+// Uses a FSharp.Core.Choice<_,...,_> based on the number of case names. In F#, the limitation n <= 7 applies.
+let (|identifer1|identifier2|...|) valueToMatch = expression
+
 // Partial active pattern definition.
-let (|identifier|_|) [ arguments ] = expression
+// Uses a FSharp.Core.option<_> to represent if the type is satisfied at the call site.
+let (|identifier|_|) [arguments ] valueToMatch = expression
 ```
 
 ## Remarks

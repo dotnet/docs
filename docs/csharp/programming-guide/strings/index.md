@@ -18,7 +18,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
  [!code-csharp[csProgGuideStrings#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#1)]  
   
- Note that you do not use the [new](../../../csharp/language-reference/keywords/new-operator.md) operator to create a string object except when initializing the string with an array of chars.  
+ Note that you do not use the [new](../../../csharp/language-reference/operators/new-operator.md) operator to create a string object except when initializing the string with an array of chars.  
   
  Initialize a string with the <xref:System.String.Empty> constant value to create a new <xref:System.String> object whose string is of zero length. The string literal representation of a zero-length string is "". By initializing strings with the <xref:System.String.Empty> value instead of [null](../../../csharp/language-reference/keywords/null.md), you can reduce the chances of a <xref:System.NullReferenceException> occurring. Use the static <xref:System.String.IsNullOrEmpty%28System.String%29> method to verify the value of a string before you try to access it.  
   

@@ -15,10 +15,11 @@ This article describes what is new in .NET Core 3.0 (through preview 5). One of 
 
 .NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the latest release of Visual Studio 2019 Update 1 Preview or VSCode with the OmniSharp extension.
 
-[Download and get started with .NET Core 3.0 Preview 5](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
+[Download and get started with .NET Core 3.0 Preview 6](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
 
 For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 Preview 6 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-6/)
 - [.NET Core 3.0 Preview 5 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-5/)
 - [.NET Core 3.0 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-4/)
 - [.NET Core 3.0 Preview 3 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-3/)
@@ -107,6 +108,34 @@ dotnet publish -r win10-x64 /p:PublishSingleFile=true
 
 For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/single-file/design.md).
 
+## Assembly linking
+
+The .NET core 3.0 SDK comes with a tool that can reduce the size of apps by analyzing IL and trimming unused assemblies.
+
+Self-contained apps include everything needed to run your code, without requiring .NET to be installed on the host computer. However, many times the app only requires a small subset of the framework to function, and other unused libraries could be removed.
+
+.NET Core now includes a setting that will use the [IL linker](https://github.com/mono/linker) tool to scan the IL of your app. this tool detects what code is required, and then trims unused libraries. This tool can significantly reduce the deployment size of some apps.
+
+To enable this tool, `<PublishTrimmed>` setting in your project and publish a self-contained app:
+
+```xml
+<PropertyGroup>
+  <PublishTrimmed>true</PublishTrimmed>
+</PropertyGroup>
+```
+
+```console
+dotnet publish -r <rid> -c Release
+```
+
+As an example, the basic "hello world" new console project template that is included, when published, hits about 70 MB in size. By using `<PublishTrimmed>`, that size is reduced to about 30 MB.
+
+It's important to consider that applications or frameworks (including ASP.NET Core and WPF) that use reflection or related dynamic features, will often break when trimmed. This breakage occurs because the linker doesn't know about this dynamic behavior and can't determine which framework types are required for reflection. The IL Linker tool can be configured to be aware of this scenario.
+
+Above all else, be sure to test your app after trimming.
+
+For more information about the IL Linker tool, see the [documentation](https://aka.ms/dotnet-illink) or visit the [mono/linker]( https://github.com/mono/linker) repo.
+
 ## Tiered compilation
 
 [Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) (TC) is on by default with .NET Core 3.0. This feature enables the runtime to more adaptively use the Just-In-Time (JIT) compiler to get better performance.
@@ -126,6 +155,38 @@ To disable TC completely, use this setting in your project file:
 ```xml
 <TieredCompilation>false</TieredCompilation>
 ```
+
+## ReadyToRun images
+
+You can improve the startup time of your .NET Core application by compiling your application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation.
+
+R2R binaries improve startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. The binaries contain similar native code compared to what the JIT would produce.
+
+R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish a self-contained app that targets a specific runtime environments (RID) such as Linux x64 or Windows x64.
+
+To compile your app as R2R, add the `<PublishReadyToRun>` setting:
+
+```xml
+<PropertyGroup>
+  <PublishReadyToRun>true</PublishReadyToRun>
+</PropertyGroup>
+```
+
+Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
+
+```console
+dotnet publish -c Release -r win-x64 --self-contained true
+```
+
+### Cross platform/architecture restrictions
+
+The ReadyToRun compiler doesn't currently support cross-targeting. You must compile on a given target. For example, if you want R2R images for Windows x64, you need to run the publish command on that environment.
+
+Exceptions to cross-targeting:
+
+- Windows x64 can be used to compile Windows ARM32, ARM64, and x86 images.
+- Windows x86 can be used to compile Windows ARM32 images.
+- Linux x64 can be used to compile Linux ARM32 and ARM64 images.
 
 ## Build copies dependencies
 
@@ -357,9 +418,19 @@ Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. Whi
 
 ## HTTP/2 support
 
-The <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> type supports the HTTP/2 protocol. Support is currently disabled but can be turned on by calling `AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2Support", true);` before you use <xref:System.Net.Http.HttpClient>. You can also enable HTTP/2 support by setting the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` environment variable to `true` before you run your app.
+The <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> type supports the HTTP/2 protocol. If HTTP/2 is enabled, the HTTP protocol version is negotiated via TLS/ALPN, and HTTP/2 is used if the server elects to use it.
 
-If HTTP/2 is enabled, the HTTP protocol version will be negotiated via TLS/ALPN, and HTTP/2 will only be used if the server selects to use it.
+The default protocol remains HTTP/1.1, but HTTP/2 can be enabled in two different ways. First, you can set the HTTP request message to use HTTP/2:
+
+[!CODE-csharp[Http2Request](~/samples/snippets/core/whats-new/whats-new-in-30/cs/http.cs#Request)]
+
+Second, you can change <xref:System.Net.Http.HttpClient> to use HTTP/2 by default:
+
+[!CODE-csharp[Http2Client](~/samples/snippets/core/whats-new/whats-new-in-30/cs/http.cs#Client)]
+
+Many times when you're developing an application, you want to use an unencrypted connection. If you know the target endpoint will be using HTTP/2, you can turn on unencrypted connections for HTTP/2. You can turn it on by setting the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2UNENCRYPTEDSUPPORT` environment variable to `1` or by enabling it in the app context:
+
+[!CODE-csharp[Http2Context](~/samples/snippets/core/whats-new/whats-new-in-30/cs/http.cs#AppContext)]
 
 ## TLS 1.3 & OpenSSL 1.1.1 on Linux
 

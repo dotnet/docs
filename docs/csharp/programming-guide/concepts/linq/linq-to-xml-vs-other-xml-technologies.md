@@ -48,4 +48,4 @@ This topic compares [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the
   
 ## See also
 
-- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)

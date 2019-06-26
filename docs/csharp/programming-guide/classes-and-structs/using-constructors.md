@@ -7,9 +7,10 @@ helpviewer_keywords:
 ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
 ---
 # Using Constructors (C# Programming Guide)
+
 When a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is created, its constructor is called. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.  
   
- In the following example, a class named `Taxi` is defined by using a simple constructor. This class is then instantiated with the [new](../../../csharp/language-reference/keywords/new.md) operator. The `Taxi` constructor is invoked by the `new` operator immediately after memory is allocated for the new object.  
+ In the following example, a class named `Taxi` is defined by using a simple constructor. This class is then instantiated with the [new](../../../csharp/language-reference/operators/new-operator.md) operator. The `Taxi` constructor is invoked by the `new` operator immediately after memory is allocated for the new object.  
   
  [!code-csharp[csProgGuideObjects#53](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#53)]  
   

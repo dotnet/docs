@@ -35,15 +35,6 @@ In this part of the series you'll learn how to:
   └───templates
   ```
 
-* Additionally, create a temporary folder where you can test your templates. This tutorial will refer to that folder as the _test_ folder. This folder **shouldn't** be under the _working_ folder. As an example, you can create the _test_ folder as a sibling of the _working_ folder.
-
-  ```console
-  parent_folder
-  ├───test
-  └───working
-      └───templates
-  ```
-
 * Read the reference article [Custom templates for dotnet new](../../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
@@ -58,7 +49,7 @@ Template packs are represented by a NuGet package (_.nupkg_) file. And, like any
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template pack. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template pack NuGet package.
 
-The pack you'll create will include the [item template](#create-an-item-template) and [package template](#create-a-project-template) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
+The pack you'll create will include the [item template](create-item-template.md) and [package template](create-project-template.md) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
 
 Open your terminal and navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
 

@@ -8,7 +8,7 @@
     items:
     - name: Overview
       href: keywords/index.md
-    - name: Builtin types
+    - name: Built-in types
       items:
       - name: Value Types
         items:
@@ -17,7 +17,7 @@
         - name: bool
           href: keywords/bool.md
         - name: Integral numeric types
-          displayName: sbyte, byte, short, ushort, int, uint, long, ulong
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer
           href: builtin-types/integral-numeric-types.md
         - name: char
           href: keywords/char.md

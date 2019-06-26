@@ -30,13 +30,12 @@ enum Day {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 
 In this enumeration, the sequence of elements is forced to start from `1` instead of `0`. However, including a constant that has the value of 0 is recommended. For more information, see [Enumeration Types](../../programming-guide/enumeration-types.md).
 
-Every enumeration type has an underlying type, which can be any integral type except [char](char.md). The default underlying type of enumeration elements is [int](../builtin-types/integral-numeric-types.md). To declare an enum of another integral type, such as [byte](../builtin-types/integral-numeric-types.md), use a colon after the identifier followed by the type, as shown in the following example.
+Every enumeration type has an underlying type, which can be any [integral numeric type](../builtin-types/integral-numeric-types.md). The [char](char.md) type cannot be an underlying type of an enum. The default underlying type of enumeration elements is [int](../builtin-types/integral-numeric-types.md). To declare an enum of another integral type, such as [byte](../builtin-types/integral-numeric-types.md), use a colon after the identifier followed by the type, as shown in the following example.
 
 ```csharp
 enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 ```
 
-The approved types for an enum are [byte](../builtin-types/integral-numeric-types.md), [sbyte](../builtin-types/integral-numeric-types.md), [short](../builtin-types/integral-numeric-types.md), [ushort](../builtin-types/integral-numeric-types.md), [int](../builtin-types/integral-numeric-types.md), [uint](../builtin-types/integral-numeric-types.md), [long](../builtin-types/integral-numeric-types.md), or [ulong](../builtin-types/integral-numeric-types.md).
 
 A variable of an enumeration type can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
 

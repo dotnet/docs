@@ -12,7 +12,7 @@ ML.NET Model Builder is an easy-to-understand visual interface to build, train, 
 
 Model Builder uses automated machine learning (AutoML) to explore different machine learning algorithms and settings to help you find the one that best suits your scenario.
 
-You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model your .NET application.
+You don't need machine learning expertise to use Model Builder. All you need is some data, and a problem to solve. Model Builder generates the code to add the model to your .NET application.
 
 Model Builder is a graphical Visual Studio extension. 
 

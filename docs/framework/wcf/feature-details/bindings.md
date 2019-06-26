@@ -1,5 +1,5 @@
 ---
-title: "Windows Communcation Foundation Bindings"
+title: "Windows Communication Foundation Bindings"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WCF [WCF], bindings"

@@ -372,7 +372,7 @@ type Transactor(ctx, currentBalance) =
         ...
 ```
 
-Unit testing `Transactions.doTransaction` in `ImplementationLogic.Tests.fspoj` is easy:
+Unit testing `Transactions.doTransaction` in `ImplementationLogic.Tests.fsproj` is easy:
 
 ```fsharp
 namespace TransactionsTestingUtil

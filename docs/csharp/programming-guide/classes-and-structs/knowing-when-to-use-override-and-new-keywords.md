@@ -9,7 +9,8 @@ helpviewer_keywords:
 ms.assetid: 323db184-b136-46fc-8839-007886e7e8b0
 ---
 # Knowing When to Use Override and New Keywords (C# Programming Guide)
-In C#, a method in a derived class can have the same name as a method in the base class. You can specify how the methods interact by using the [new](../../../csharp/language-reference/keywords/new.md) and [override](../../../csharp/language-reference/keywords/override.md) keywords. The `override` modifier *extends* the base class method, and the `new` modifier *hides* it. The difference is illustrated in the examples in this topic.  
+
+In C#, a method in a derived class can have the same name as a method in the base class. You can specify how the methods interact by using the [new](../../../csharp/language-reference/keywords/new-modifier.md) and [override](../../../csharp/language-reference/keywords/override.md) keywords. The `override` modifier *extends* the base class `virtual` method, and the `new` modifier *hides* an accessible base class method. The difference is illustrated in the examples in this topic.  
   
  In a console application, declare the following two classes, `BaseClass` and `DerivedClass`. `DerivedClass` inherits from `BaseClass`.  
   

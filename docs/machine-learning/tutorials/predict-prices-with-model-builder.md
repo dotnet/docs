@@ -35,13 +35,13 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Create a **.NET Core Console Application** called "TaxiFarePrediction".
 
-1. Create a directory named *Data* in your project to store the data set files.
-
 1. Install the **Microsoft.ML** NuGet Package:
 
     In **Solution Explorer**, right-click the *TaxiFarePrediction* project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ## Prepare and understand the data
+
+1. Create a directory named *Data* in your project to store the data set files.
 
 1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) data set and save it to the *Data* folder you created at the previous step. This data set is used to train and evaluate the machine learning model. This data set is originally from the [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
 
@@ -53,13 +53,13 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
 
     The provided data set contains the following columns:
 
-* **vendor_id:** The ID of the taxi vendor is a feature.
-* **rate_code:** The rate type of the taxi trip is a feature.
-* **passenger_count:** The number of passengers on the trip is a feature.
-* **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
-* **trip_distance:** The distance of the trip is a feature.
-* **payment_type:** The payment method (cash or credit card) is a feature.
-* **fare_amount:** The total taxi fare paid is the label.
+    * **vendor_id:** The ID of the taxi vendor is a feature.
+    * **rate_code:** The rate type of the taxi trip is a feature.
+    * **passenger_count:** The number of passengers on the trip is a feature.
+    * **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
+    * **trip_distance:** The distance of the trip is a feature.
+    * **payment_type:** The payment method (cash or credit card) is a feature.
+    * **fare_amount:** The total taxi fare paid is the label.
 
 The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns are used as features or inputs to predict the fare amount.
 
@@ -112,7 +112,7 @@ If you're not satisfied with your accuracy metrics, some easy ways to try and im
 
 ## Use the model for predictions
 
-Two projects will be created in `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
+Two projects will be created as a result of the training process.
 
 - TaxiFarePredictionML.ConsoleApp: A .NET Console application that contains the model training and consumption code.
 - TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.

@@ -114,7 +114,7 @@ The directory where the test results are going to be placed. If the specified di
 
 `-s|--settings <SETTINGS_FILE>`
 
-Settings to use when running tests.
+The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
 
 `-t|--list-tests`
 
@@ -184,7 +184,7 @@ The directory where the test results are going to be placed. If the specified di
 
 `-s|--settings <SETTINGS_FILE>`
 
-Settings to use when running tests.
+The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
 
 `-t|--list-tests`
 
@@ -234,7 +234,7 @@ Directory in which to find the binaries to run.
 
 `-s|--settings <SETTINGS_FILE>`
 
-Settings to use when running tests.
+The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2019)
 
 `-t|--list-tests`
 

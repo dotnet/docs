@@ -50,5 +50,5 @@ The right strategy for you depends on your organization's needs and priorities, 
 
 
 >[!div class="step-by-step"]
->[Previous](defining-cloud-native.md)
->[Next](azure-cloud-native-development-stack.md)
+>[Previous](definition.md)
+>[Next](azure-development-stack.md)

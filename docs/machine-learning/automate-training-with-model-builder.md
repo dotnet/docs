@@ -6,7 +6,7 @@ ms.date: 06/26/2019
 ms.custom: overview
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface. 
 ---
-# What is Model Builder & how does it work?
+# What is Model Builder and how does it work?
 
 ML.NET Model Builder is an easy-to-understand graphical Visual Studio extension to build, train, and deploy custom machine learning models. 
 

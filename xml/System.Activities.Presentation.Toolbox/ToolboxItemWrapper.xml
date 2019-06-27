@@ -385,7 +385,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OperationException">The name of the tool cannot be changed after the corresponding <see cref="T:System.Drawing.Design.ToolboxItem" /> has been initialized.</exception>
+        <exception cref="T:System.InvalidOperationException">The name of the tool cannot be changed after the corresponding <see cref="T:System.Drawing.Design.ToolboxItem" /> has been initialized.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">

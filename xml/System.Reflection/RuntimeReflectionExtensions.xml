@@ -437,7 +437,7 @@ The invoked method is not supported in the base class. Derived classes must prov
 
 <paramref name="name" /> is <see langword="null" />.
         </exception>
-        <exception cref="T:System.AmbiguousMatchException">More than one method is found with the specified name.</exception>
+        <exception cref="T:System.Reflection.AmbiguousMatchException">More than one method is found with the specified name.</exception>
         <altmember cref="M:System.Type.GetMethod(System.String,System.Type[])" />
       </Docs>
     </Member>

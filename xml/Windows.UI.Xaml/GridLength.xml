@@ -21,9 +21,36 @@
   </Attributes>
   <Docs>
     <summary>Represents the length of elements that explicitly support <see cref="F:Windows.UI.Xaml.GridUnitType.Star" /> unit types.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength">GridLength (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.gridlength">System.Windows.GridLength (.NET)</related>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GridLength (double pixels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
@@ -95,9 +122,34 @@
       <Docs>
         <summary>Gets an instance of <see cref="T:Windows.UI.Xaml.GridLength" /> that holds a value whose size is determined by the size properties of the content object.</summary>
         <value>An instance of <see cref="T:Windows.UI.Xaml.GridLength" /> whose <see cref="P:Windows.UI.Xaml.GridLength.GridUnitType" /> property is set to <see cref="F:Windows.UI.Xaml.GridUnitType.Auto" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.    
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
@@ -153,7 +205,14 @@
         <summary>Determines whether the specified <see cref="T:Windows.UI.Xaml.GridLength" /> is equal to the current <see cref="T:Windows.UI.Xaml.GridLength" />.</summary>
         <returns>
           <see langword="true" /> if the specified <see cref="T:Windows.UI.Xaml.GridLength" /> has the same value and <see cref="P:Windows.UI.Xaml.GridLength.GridUnitType" /> as the current instance; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -181,7 +240,14 @@
       <Docs>
         <summary>Gets a hash code for the <see cref="T:Windows.UI.Xaml.GridLength" />.</summary>
         <returns>A hash code for the <see cref="T:Windows.UI.Xaml.GridLength" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GridUnitType">
@@ -203,7 +269,14 @@
       <Docs>
         <summary>Gets the associated <see cref="T:Windows.UI.Xaml.GridUnitType" /> for the <see cref="T:Windows.UI.Xaml.GridLength" />.</summary>
         <value>One of the enumeration values. The default is <see cref="F:Windows.UI.Xaml.GridUnitType.Auto" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAbsolute">
@@ -226,7 +299,14 @@
         <summary>Gets a value that indicates whether the <see cref="T:Windows.UI.Xaml.GridLength" /> holds a value that is expressed in pixels.</summary>
         <value>
           <see langword="true" /> if the <see cref="P:Windows.UI.Xaml.GridLength.GridUnitType" /> property is <see cref="F:Windows.UI.Xaml.GridUnitType.Pixel" />; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAuto">
@@ -249,7 +329,14 @@
         <summary>Gets a value that indicates whether the <see cref="T:Windows.UI.Xaml.GridLength" /> holds a value whose size is determined by the size properties of the content object.</summary>
         <value>
           <see langword="true" /> if the <see cref="P:Windows.UI.Xaml.GridLength.GridUnitType" /> property is <see cref="F:Windows.UI.Xaml.GridUnitType.Auto" />; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsStar">
@@ -272,7 +359,14 @@
         <summary>Gets a value that indicates whether the <see cref="T:Windows.UI.Xaml.GridLength" /> holds a value that is expressed as a weighted proportion of available space.</summary>
         <value>
           <see langword="true" /> if the <see cref="P:Windows.UI.Xaml.GridLength.GridUnitType" /> property is <see cref="F:Windows.UI.Xaml.GridUnitType.Star" />; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -301,7 +395,14 @@
         <summary>Compares two <see cref="T:Windows.UI.Xaml.GridLength" /> structures for equality.</summary>
         <returns>
           <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.GridLength" /> have the same value and <see cref="T:Windows.UI.Xaml.GridUnitType" />; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -330,7 +431,14 @@
         <summary>Compares two <see cref="T:Windows.UI.Xaml.GridLength" /> structures to determine if they are not equal.</summary>
         <returns>
           <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.GridLength" /> do not have the same value and <see cref="T:Windows.UI.Xaml.GridUnitType" />; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -358,7 +466,14 @@
       <Docs>
         <summary>Returns a <see cref="T:System.String" /> representation of the <see cref="T:Windows.UI.Xaml.GridLength" />.</summary>
         <returns>A <see cref="T:System.String" /> representation of the current <see cref="T:Windows.UI.Xaml.GridLength" /> struct.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -380,7 +495,14 @@
       <Docs>
         <summary>Gets a <see cref="T:System.Double" /> that represents the value of the <see cref="T:Windows.UI.Xaml.GridLength" />.</summary>
         <value>The value of the current instance.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `GridLength` struct. For more information, see [GridLength](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridlength) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

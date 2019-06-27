@@ -20,7 +20,14 @@
   </Attributes>
   <Docs>
     <summary>Describes the kind of value that a <see cref="T:Windows.UI.Xaml.GridLength" /> object is holding. </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration represents the .NET projection of the Windows Runtime (WinRT) `GridUnitType` enum. For more information, see [GridUnitType](https://docs.microsoft.com/uwp/api/windows.ui.xaml.gridunittype) in the UWP API reference.  
+
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Auto">

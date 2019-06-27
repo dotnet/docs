@@ -25,9 +25,36 @@
   </Attributes>
   <Docs>
     <summary>Describes how a <see cref="T:Windows.UI.Xaml.Media.Animation.Timeline" /> repeats its simple duration.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior">RepeatBehavior (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.media.animation.repeatbehavior">System.Windows.Media.Animation.RepeatBehavior (.NET)</related>    
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RepeatBehavior (double count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 count) cil managed" />
@@ -95,7 +122,14 @@
       <Docs>
         <summary>Gets the number of times a Windows.UI.Xaml.Media.Animation.Timeline should repeat.</summary>
         <value>The number of iterations to repeat.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> describes a repeat duration, not an iteration count.</exception>
       </Docs>
     </Member>
@@ -118,10 +152,35 @@
       <Docs>
         <summary>Gets the total length of time a Windows.UI.Xaml.Media.Animation.Timeline should play.</summary>
         <value>The total length of time a timeline should play.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> describes an iteration count, not a repeat duration.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
@@ -228,7 +287,14 @@
       <Docs>
         <summary>Gets a <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> that specifies an infinite number of repetitions.  </summary>
         <value>A <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> that specifies an infinite number of repetitions.   </value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -256,7 +322,14 @@
       <Docs>
         <summary>Returns the hash code of this instance.</summary>
         <returns>A hash code.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasCount">
@@ -279,7 +352,14 @@
         <summary>Gets a value that indicates whether the repeat behavior has a specified iteration count.</summary>
         <value>
           <see langword="true" /> if the instance represents an iteration count; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDuration">
@@ -302,7 +382,14 @@
         <summary>Gets a value that indicates whether the repeat behavior has a specified repeat duration.</summary>
         <value>
           <see langword="true" /> if the instance represents a repeat duration; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -331,7 +418,14 @@
         <summary>Indicates whether the two specified <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> values are equal.</summary>
         <returns>
           <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -360,7 +454,14 @@
         <summary>Indicates whether the two specified <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> values are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="repeatBehavior1" /> and <paramref name="repeatBehavior2" /> are different types or the repeat behavior properties are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -395,9 +496,34 @@
         <param name="formatProvider">An object that provides formatting information for value, or <see langword="null" /> to obtain the numeric format information from the current culture.</param>
         <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>A string containing the value of the current instance in the specified format.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.    
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
@@ -471,7 +597,14 @@
       <Docs>
         <summary>Gets or sets one of the <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehaviorType" /> values that describes the way behavior repeats.</summary>
         <value>The type of repeat behavior.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehavior` struct. For more information, see [RepeatBehavior](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehavior) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

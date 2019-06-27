@@ -20,7 +20,14 @@
   </Attributes>
   <Docs>
     <summary>Specifies whether a <see cref="T:Windows.UI.Xaml.Duration" /> has a special value of Automatic or Forever, or has valid information in its <see cref="T:System.TimeSpan" /> component. </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration represents the .NET projection of the Windows Runtime (WinRT) `DurationType` enum. For more information, see [DurationType](https://docs.microsoft.com/uwp/api/windows.ui.xaml.durationtype) in the UWP API reference.  
+
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">

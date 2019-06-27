@@ -21,9 +21,36 @@
   </Attributes>
   <Docs>
     <summary>Specifies when a particular key frame should take place during an animation. </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime">KeyTime (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.media.animation.keytime">System.Windows.Media.Animation.KeyTime (.NET)</related>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
@@ -134,7 +161,14 @@
         <param name="timeSpan">The value of the new <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</param>
         <summary>Creates a new <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />, using the supplied <see cref="T:System.TimeSpan" />.</summary>
         <returns>A new <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />, initialized to the value of <paramref name="timeSpan" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="timeSpan" /> is outside the allowed range.</exception>
       </Docs>
     </Member>
@@ -163,7 +197,14 @@
       <Docs>
         <summary>Returns a hash code representing this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
         <returns>A hash code.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -192,7 +233,14 @@
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values for equality.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -217,7 +265,14 @@
         <param name="timeSpan">The <see cref="P:Windows.UI.Xaml.Media.Animation.KeyTime.TimeSpan" /> value to convert.</param>
         <summary>Implicitly converts a <see cref="P:Windows.UI.Xaml.Media.Animation.KeyTime.TimeSpan" /> to a <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</summary>
         <returns>The created <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -246,7 +301,14 @@
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" /> values for inequality.</summary>
         <returns>
           <see langword="true" /> if <paramref name="keyTime1" /> and <paramref name="keyTime2" /> are not equal; otherwise, false. </returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeSpan">
@@ -268,7 +330,14 @@
       <Docs>
         <summary>Gets the time when the key frame ends, expressed as a time relative to the beginning of the animation.</summary>
         <value>The time when the key frame ends, expressed as a time relative to the beginning of the animation.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -296,7 +365,14 @@
       <Docs>
         <summary>Returns a string representation of this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />. </summary>
         <returns>A string representation of this <see cref="T:Windows.UI.Xaml.Media.Animation.KeyTime" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `KeyTime` struct. For more information, see [KeyTime](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.keytime) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -21,9 +21,36 @@
   </Attributes>
   <Docs>
     <summary>Describes the characteristics of a rounded corner, such as can be applied to a <see cref="T:Windows.UI.Xaml.Controls.Border" />.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius">CornerRadius (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.cornerradius">System.Windows.CornerRadius (.NET)</related>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CornerRadius (double uniformRadius);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 uniformRadius) cil managed" />
@@ -93,7 +120,14 @@
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
         <value>The radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -115,9 +149,34 @@
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
         <value>The radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
@@ -201,7 +260,14 @@
       <Docs>
         <summary>Returns the hash code of the structure.</summary>
         <returns>A hash code for this <see cref="T:Windows.UI.Xaml.CornerRadius" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -230,7 +296,14 @@
         <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for equality.</summary>
         <returns>
           <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -259,7 +332,14 @@
         <summary>Compares two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for inequality.</summary>
         <returns>
           <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -281,7 +361,14 @@
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
         <value>The radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -303,7 +390,14 @@
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
         <value>The radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -331,7 +425,14 @@
       <Docs>
         <summary>Returns the string representation of the <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure.</summary>
         <returns>A string that represents the <see cref="T:Windows.UI.Xaml.CornerRadius" /> value.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `CornerRadius` struct. For more information, see [CornerRadius](https://docs.microsoft.com/uwp/api/windows.ui.xaml.cornerradius) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

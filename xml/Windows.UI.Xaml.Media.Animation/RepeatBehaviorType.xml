@@ -20,7 +20,14 @@
   </Attributes>
   <Docs>
     <summary>Specifies the repeat mode that a <see cref="T:Windows.UI.Xaml.Media.Animation.RepeatBehavior" /> raw value represents. </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration represents the .NET projection of the Windows Runtime (WinRT) `RepeatBehaviorType` enum. For more information, see [RepeatBehaviorType](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation.repeatbehaviortype) in the UWP API reference.  
+
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Count">

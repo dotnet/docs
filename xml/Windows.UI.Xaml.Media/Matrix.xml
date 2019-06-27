@@ -25,7 +25,16 @@
   </Attributes>
   <Docs>
     <summary>Represents a 3x3 affine transformation matrix used for transformations in two-dimensional space.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix">Matrix (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.media.matrix">System.Windows.Media.Matrix (.NET)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,9 +66,34 @@
         <param name="offsetX">The <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct's <see cref="P:Windows.UI.Xaml.Media.Matrix.OffsetX" /> coefficient.</param>
         <param name="offsetY">The <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct's <see cref="P:Windows.UI.Xaml.Media.Matrix.OffsetY" /> coefficient.</param>
         <summary>Initializes a <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
@@ -144,7 +178,14 @@
       <Docs>
         <summary>Returns the hash code for this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <returns>The hash code for this instance.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -166,7 +207,16 @@
       <Docs>
         <summary>Gets an identity matrix.</summary>
         <value>An identity matrix.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ For more information and examples of this member, see <xref:System.Windows.Media.Matrix.Identity?displayProperty=nameWithType> in the .NET Framework API reference.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIdentity">
@@ -189,7 +239,14 @@
         <summary>Gets a value that indicates whether this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct is an identity matrix.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct is an identity matrix; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M11">
@@ -211,7 +268,14 @@
       <Docs>
         <summary>Gets or sets the value of the first row and first column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <value>The value of the first row and first column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" />. The default value is 1.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M12">
@@ -233,7 +297,14 @@
       <Docs>
         <summary>Gets or sets the value of the first row and second column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <value>The value of the first row and second column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" />. The default value is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M21">
@@ -255,7 +326,14 @@
       <Docs>
         <summary>Gets or sets the value of the second row and first column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <value>The value of the second row and first column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" />. The default value is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M22">
@@ -277,7 +355,14 @@
       <Docs>
         <summary>Gets or sets the value of the second row and second column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <value>The value of the second row and second column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct. The default value is 1.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetX">
@@ -299,7 +384,14 @@
       <Docs>
         <summary>Gets or sets the value of the third row and first column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <value>The value of the third row and first column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct. The default value is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -321,7 +413,14 @@
       <Docs>
         <summary>Gets or sets the value of the third row and second column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct.</summary>
         <value>The value of the third row and second column of this <see cref="T:Windows.UI.Xaml.Media.Matrix" /> struct. The default value is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -350,7 +449,16 @@
         <summary>Determines whether the two specified <see cref="T:Windows.UI.Xaml.Media.Matrix" /> structs are identical.</summary>
         <returns>
           <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are identical; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ For more information and examples of this member, see <xref:System.Windows.Media.Matrix.op_Equality%2A?displayProperty=nameWithType> in the .NET Framework API reference.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -379,7 +487,16 @@
         <summary>Determines whether the two specified <see cref="T:Windows.UI.Xaml.Media.Matrix" /> structs are not identical.</summary>
         <returns>
           <see langword="true" /> if <paramref name="matrix1" /> and <paramref name="matrix2" /> are not identical; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ For more information and examples of this member, see <xref:System.Windows.Media.Matrix.op_Inequality%2A?displayProperty=nameWithType> in the .NET Framework API reference.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -414,9 +531,34 @@
         <param name="provider">An object that provides formatting information, or <see langword="null" /> to obtain the numeric format information from the current culture.</param>
         <summary>For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>A string containing the value of the current instance in the specified format.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
@@ -493,7 +635,14 @@
         <param name="point">The point to transform.</param>
         <summary>Transforms the specified point by the <see cref="T:Windows.UI.Xaml.Media.Matrix" /> and returns the result.</summary>
         <returns>The result of transforming <paramref name="point" /> by this <see cref="T:Windows.UI.Xaml.Media.Matrix" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Matrix` struct. For more information, see [Matrix](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrix) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

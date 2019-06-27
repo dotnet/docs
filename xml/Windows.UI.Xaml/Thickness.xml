@@ -21,9 +21,36 @@
   </Attributes>
   <Docs>
     <summary>Describes the thickness of a frame around a rectangle. Four <see cref="T:System.Double" /> values describe the <see cref="P:Windows.UI.Xaml.Thickness.Left" />, <see cref="P:Windows.UI.Xaml.Thickness.Top" />, <see cref="P:Windows.UI.Xaml.Thickness.Right" />, and <see cref="P:Windows.UI.Xaml.Thickness.Bottom" /> sides of the rectangle, respectively. </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness">Thickness (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.thickness">System.Windows.Thickness (.NET)</related>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Thickness (double uniformLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 uniformLength) cil managed" />
@@ -93,9 +120,34 @@
       <Docs>
         <summary>Gets or sets the width, in pixels, of the lower side of the bounding rectangle.</summary>
         <value>The width, in pixels, of the lower side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.    
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
@@ -179,7 +231,14 @@
       <Docs>
         <summary>Returns the hash code of the struct.</summary>
         <returns>A hash code for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -201,7 +260,14 @@
       <Docs>
         <summary>Gets or sets the width, in pixels, of the left side of the bounding rectangle.</summary>
         <value>The width, in pixels, of the left side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -230,7 +296,14 @@
         <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.Thickness" /> structs for equality.</summary>
         <returns>
           <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -259,7 +332,14 @@
         <summary>Compares two <see cref="T:Windows.UI.Xaml.Thickness" /> structs for inequality.</summary>
         <returns>
           <see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.Thickness" /> are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -281,7 +361,14 @@
       <Docs>
         <summary>Gets or sets the width, in pixels, of the right side of the bounding rectangle.</summary>
         <value>The width, in pixels, of the right side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -303,7 +390,14 @@
       <Docs>
         <summary>Gets or sets the width, in pixels, of the upper side of the bounding rectangle.</summary>
         <value>The width, in pixels, of the upper side of the bounding rectangle for this instance of <see cref="T:Windows.UI.Xaml.Thickness" />. The default is 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -331,7 +425,14 @@
       <Docs>
         <summary>Returns the string representation of the <see cref="T:Windows.UI.Xaml.Thickness" /> structure.</summary>
         <returns>A string that represents the <see cref="T:Windows.UI.Xaml.Thickness" /> value.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This struct represents the .NET projection of the Windows Runtime (WinRT) `Thickness` struct. For more information, see [Thickness](https://docs.microsoft.com/uwp/api/windows.ui.xaml.thickness) in the UWP API reference.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

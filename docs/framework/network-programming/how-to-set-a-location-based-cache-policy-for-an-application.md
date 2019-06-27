@@ -5,7 +5,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "expliciting defining cache behavior"
+  - "explicitly defining cache behavior"
   - "location-based cache policies"
   - "local cache"
   - "request cache policies"

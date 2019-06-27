@@ -48,7 +48,7 @@ This topic describes the activities and transfers for different asynchronous req
 ### Asynchronous client with Callback  
  This scenario adds activities G and A’, for the callback and `endCall`, and their transfers in/out.  
   
- This section only demonstrates using HTTP with `propragateActivity`=`true`. However, the additional activities and transfers also apply to the other cases (that is, `propagateActivity`=`false`, using TCP or Named-Pipe).  
+ This section only demonstrates using HTTP with `propagateActivity`=`true`. However, the additional activities and transfers also apply to the other cases (that is, `propagateActivity`=`false`, using TCP or Named-Pipe).  
   
  The callback creates a new activity (G) when the client calls user code to notify that results are ready. User code then calls `endCall` within the callback (as shown in Figure 5) or outside the callback (Figure 6). Because it is not known which user activity `endCall` is being called from, this activity is labeled `A’`. It is possible that A’ can be identical to or different from A.  
   

@@ -108,7 +108,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  </endpointBehaviors>  
 ```  
   
-#### \<clientCertifictate> Element  
+#### \<clientCertificate> Element  
  Set the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  

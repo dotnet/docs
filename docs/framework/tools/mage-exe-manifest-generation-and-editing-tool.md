@@ -208,7 +208,7 @@ mage -Sign deploy.application -CertFile cert.pfx -Password <passwd>
 The following example signs an existing deployment manifest using a digital certificate and private key in the current working directory.
 
 ```console
-mage -Sign deploy.application -CertFile cert.pfx -KeyContainer keyfile.snk -CryptoProvider "Microsoft Enghanced Cryptographic Provider v1.0"
+mage -Sign deploy.application -CertFile cert.pfx -KeyContainer keyfile.snk -CryptoProvider "Microsoft Enhanced Cryptographic Provider v1.0"
 ```
 
 ## See also

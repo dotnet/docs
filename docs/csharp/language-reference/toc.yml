@@ -8,7 +8,7 @@
     items:
     - name: Overview
       href: keywords/index.md
-    - name: Types
+    - name: Built-in types
       items:
       - name: Value Types
         items:
@@ -16,8 +16,9 @@
           href: keywords/value-types.md
         - name: bool
           href: keywords/bool.md
-        - name: byte
-          href: keywords/byte.md
+        - name: Integral numeric types
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer
+          href: builtin-types/integral-numeric-types.md
         - name: char
           href: keywords/char.md
         - name: decimal
@@ -28,22 +29,8 @@
           href: keywords/enum.md
         - name: float
           href: keywords/float.md
-        - name: int
-          href: keywords/int.md
-        - name: long
-          href: keywords/long.md
-        - name: sbyte
-          href: keywords/sbyte.md
-        - name: short
-          href: keywords/short.md
         - name: struct
           href: keywords/struct.md
-        - name: uint
-          href: keywords/uint.md
-        - name: ulong
-          href: keywords/ulong.md
-        - name: ushort
-          href: keywords/ushort.md
       - name: Reference Types
         items:
         - name: Features of reference types
@@ -68,8 +55,6 @@
         items:
         - name: Built-in types table
           href: keywords/built-in-types-table.md
-        - name: Integral types table
-          href: keywords/integral-types-table.md
         - name: Floating-point types table
           href: keywords/floating-point-types-table.md
         - name: Value types table

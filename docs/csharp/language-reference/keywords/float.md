@@ -51,7 +51,7 @@ For more information about these values, see IEEE Standard for Binary Floating-P
 
 ## Example
 
-In the following example, an [int](int.md), a [short](short.md), and a `float` are included in a mathematical expression giving a `float` result. (Remember that `float` is an alias for the <xref:System.Single?displayProperty=nameWithType> type.) Notice that there is no [double](double.md) in the expression.
+In the following example, an [int](../builtin-types/integral-numeric-types.md), a [short](../builtin-types/integral-numeric-types.md), and a `float` are included in a mathematical expression giving a `float` result. (Remember that `float` is an alias for the <xref:System.Single?displayProperty=nameWithType> type.) Notice that there is no [double](double.md) in the expression.
 
 [!code-csharp[csrefKeywordsTypes#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#13)]
 
@@ -66,7 +66,7 @@ In the following example, an [int](int.md), a [short](short.md), and a `float` a
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)
 - [C# Keywords](index.md)
-- [Integral Types Table](integral-types-table.md)
+- [Integral types](../../../csharp/language-reference/builtin-types/integral-numeric-types.md)
 - [Built-In Types Table](built-in-types-table.md)
 - [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)

@@ -34,7 +34,7 @@ HRESULT COMClassicVTableDestroyed(
 ```  
   
 ## Parameters  
- `wrappedClasId`  
+ `wrappedClassId`  
  [in] The ID of the class for which this vtable was created.  
   
  `implementedIID`  

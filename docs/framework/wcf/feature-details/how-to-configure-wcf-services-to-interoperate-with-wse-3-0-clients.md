@@ -18,7 +18,7 @@ Windows Communication Foundation (WCF) services are wire-level compatible with W
   
     3. Specify an authentication mode and the version of the WS-Security specifications that are used to secure messages that are compatible with WSE 3.0, by adding a child [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) to the [\<binding>](../../../../docs/framework/misc/binding.md).  
   
-         To set the authentication mode, set the `authenicationMode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md). An authentication mode is roughly equivalent to a turnkey security assertion in WSE 3.0. The following table maps authentication modes in WCF to turnkey security assertions in WSE 3.0.  
+         To set the authentication mode, set the `authenticationMode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md). An authentication mode is roughly equivalent to a turnkey security assertion in WSE 3.0. The following table maps authentication modes in WCF to turnkey security assertions in WSE 3.0.  
   
         |WCF Authentication Mode|WSE 3.0 turnkey security assertion|  
         |-----------------------------|----------------------------------------|  

@@ -426,7 +426,7 @@ The reason the second collapse is performed is because inefficiencies were intro
 DbIsEmptyExpression is translated as:
 
 ```
-IsEmpty(inut) = Not Exists(input)
+IsEmpty(input) = Not Exists(input)
 ```
 
 ## Second Phase of SQL Generation: Generating the String Command

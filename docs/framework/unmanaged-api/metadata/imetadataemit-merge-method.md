@@ -38,7 +38,7 @@ HRESULT Merge (
  `pIMap`  
  [in] A pointer to an [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) object that specifies the token re-map.  
   
- `pHandleer`  
+ `pHandler`  
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) object that specifies the errors.  
   
 ## Remarks  

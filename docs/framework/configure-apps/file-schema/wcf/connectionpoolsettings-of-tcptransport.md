@@ -19,7 +19,7 @@ Specifies additional connection pool settings for a TCP transport.
 <connectionPoolSettings groupName="String"
                         idleTimeout="TimeSpan"
                         leaseTimeout="TimeSpan"
-                        maxOutboundConnectionsPerEndpopint="Integer" />
+                        maxOutboundConnectionsPerEndpoint="Integer" />
 ```  
   
 ## Attributes and Elements  

@@ -44,7 +44,7 @@ typedef enum CorDebugThreadState {
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
- **Header:** CorDebug.idl, CorDegug.h  
+ **Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
   

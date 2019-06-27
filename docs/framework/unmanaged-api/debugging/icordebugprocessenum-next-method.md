@@ -36,7 +36,7 @@ HRESULT Next (
  `celt`  
  [in] The number of `ICorDebugProcess` instances to be retrieved.  
   
- `processess`  
+ `processes`  
  [out] An array of pointers, each of which points to an `ICorDebugProcess` object that represents a process.  
   
  `pceltFetched`  

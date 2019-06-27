@@ -10,7 +10,7 @@ The WS-AT protocol service received a Replay message from a durable participant,
  Traced if a Replay message is received while a Durable participant is still Preparing. This is an illegal message for this state and the transaction is going to be aborted.  
   
 ## Troubleshooting  
- Receiving this error can indiate that a Durable participant (including Subordinate TransactionManagers) has recovered from failure, however it is unsure of the transaction outcome and request its status.  
+ Receiving this error can indicate that a Durable participant (including Subordinate TransactionManagers) has recovered from failure, however it is unsure of the transaction outcome and request its status.  
   
 ## See also
 

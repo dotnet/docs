@@ -1,7 +1,7 @@
 ---
 title: "Equality operators - C# reference"
-description: "Learn about C# equality comparison operators."
-ms.date: 03/28/2019
+description: "Learn about C# equality comparison operators and C# type equality."
+ms.date: 06/26/2019
 author: pkulikov
 f1_keywords: 
   - "==_CSharpKeyword"
@@ -54,6 +54,18 @@ Two other than `string` reference type operands are equal when they refer to the
 [!code-csharp[reference type equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#ReferenceTypesEquality)]
 
 As the example shows, user-defined reference types support the `==` operator by default. However, a user-defined reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+
+## Delegate equality
+
+Two [delegate](../../programming-guide/delegates/index.md) operands of the same runtime type are equal when both of them are `null` or their invocation lists are of the same length and have equal entries in each position:
+
+[!code-csharp-interactive[delegate equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#DelegateEquality)]
+
+For more information, see the [Delegate equality operators](~/_csharplang/spec/expressions.md#delegate-equality-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+Delegates that are produced from evaluation of semantically identical [lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) are not equal, as the following example shows:
+
+[!code-csharp-interactive[from identical lambdas](~/samples/csharp/language-reference/operators/EqualityOperators.cs#IdenticalLambdas)]
 
 ## Inequality operator !=
 

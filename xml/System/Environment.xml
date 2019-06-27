@@ -506,15 +506,15 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method terminates a process without running any active `try`/`finally` blocks or finalizers.  
+ This method terminates a process without running any active `try`/`finally` blocks or finalizers.
   
- The <xref:System.Environment.FailFast%2A> method writes the `message` string to the Windows Application event log, creates a dump of your application, and then terminates the current process. The `message` string is also included in error reporting to Microsoft.  
+ The `Environment.FailFast` method writes the `message` string to the Windows Application event log, creates a dump of your application, and then terminates the current process. The `message` string is also included in error reporting to Microsoft.  
   
- Use the <xref:System.Environment.FailFast%2A> method instead of the <xref:System.Environment.Exit%2A> method to terminate your application if the state of your application is damaged beyond repair, and executing your application's `try`/`finally` blocks and finalizers will corrupt program resources.  
+ Use the `Environment.FailFast` method instead of the <xref:System.Environment.Exit%2A> method to terminate your application if the state of your application is damaged beyond repair, and executing your application's `try`/`finally` blocks and finalizers will corrupt program resources.  
   
  Information is reported to Microsoft by using Windows Error Reporting. For more information, see [Windows Error Reporting: Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn641144.aspx).  
-  
-   
+
+Calling the `Environment.FailFast` method to terminate execution of an application running in the Visual Studio debugger throws an <xref:System.ExecutionEngineException> and automatically triggers the [fatalExecutionEngineError managed debugging assistant (MDA)](https://github.com/dotnet/docs/blob/master/docs/framework/debug-trace-profile/fatalexecutionengineerror-mda.md).
   
 ## Examples  
  The following example writes a log entry to the Windows Application event log and terminates the current process.  
@@ -574,13 +574,15 @@ goto :EOF
 ## Remarks  
  This method terminates the process without running any active `try`/`finally` blocks or finalizers.  
   
- The <xref:System.Environment.FailFast%2A> method writes the `message` string to the Windows Application event log, creates a dump of your application, and then terminates the current process.  
+ The `Environment.FailFast` method writes the `message` string to the Windows Application event log, creates a dump of your application, and then terminates the current process.  
   
  Information is reported to Microsoft by using Windows Error Reporting. For more information, see [Windows Error Reporting: Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn641144.aspx). Error reporting to Microsoft includes `message` and `exception` information, which provides details used to classify the error. Although `exception` is not handled because the process is terminated, the contextual information that raised the exception is still obtained.  
   
  If `exception` is `null`, or if `exception` is not thrown, this method operates the same as the <xref:System.Environment.FailFast%28System.String%29> method overload.  
   
- Use the <xref:System.Environment.FailFast%2A> method instead of the <xref:System.Environment.Exit%2A> method to terminate your application if the state of your application is damaged beyond repair, and executing your application's `try`/`finally` blocks and finalizers will corrupt program resources.  
+ Use the `Environment.FailFast` method instead of the <xref:System.Environment.Exit%2A> method to terminate your application if the state of your application is damaged beyond repair, and executing your application's `try`/`finally` blocks and finalizers will corrupt program resources.  
+
+Calling the `Environment.FailFast` method to terminate execution of an application running in the Visual Studio debugger throws an <xref:System.ExecutionEngineException> and automatically triggers the [fatalExecutionEngineError managed debugging assistant (MDA)](https://github.com/dotnet/docs/blob/master/docs/framework/debug-trace-profile/fatalexecutionengineerror-mda.md).
   
  ]]></format>
         </remarks>

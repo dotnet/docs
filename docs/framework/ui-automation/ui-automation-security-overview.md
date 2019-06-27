@@ -35,7 +35,7 @@ To be trusted to communicate with applications running at a higher privilege lev
 
 ## Manifest Files
 
-To gain access to the protected system [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], applications must be built with a manifest file that includes a special attribute in the manifest file. This `uiAccess` attribute is included in the `requestedExecutionLevel` tag, as follows:
+To gain access to the protected system UI, applications must be built with a manifest file that includes the a manifest file with the `uiAccess` attribute in the `requestedExecutionLevel` tag, as follows:
 
 ```xml
 <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
@@ -43,7 +43,7 @@ To gain access to the protected system [!INCLUDE[TLA2#tla_ui](../../../includes/
     <requestedPrivileges>
       <requestedExecutionLevel
         level="highestAvailable"
-        UIAccess="true" />
+        uiAccess="true" />
     </requestedPrivileges>
   </security>
 </trustInfo>
@@ -51,6 +51,6 @@ To gain access to the protected system [!INCLUDE[TLA2#tla_ui](../../../includes/
 
 The value of the `level` attribute in this code is an example only.
 
-`UIAccess` is "false" by default; that is, if the attribute is omitted, or if there is no manifest for the assembly, the application will not be able to gain access to protected [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].
+`uiAccess` is "false" by default; that is, if the attribute is omitted, or if there is no manifest for the assembly, the application will not be able to gain access to protected UI.
 
 For more information on [!INCLUDE[TLA#tla_longhorn2](../../../includes/tlasharptla-longhorn2-md.md)] security, on signing applications, and on creating assembly manifests, see [Developer Best Practices and Guidelines for Applications in a Least Privileged Environment](https://docs.microsoft.com/previous-versions/dotnet/articles/aa480150(v=msdn.10)).

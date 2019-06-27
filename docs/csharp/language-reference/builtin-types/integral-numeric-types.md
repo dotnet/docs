@@ -35,7 +35,9 @@ helpviewer_keywords:
 ---
 # Integral numeric types  (C# reference)
 
-The **integral types** are a subset of the **numeric types**. The **numeric types** are a subset of the **simple types**. All integral types are value types and can be initialized with *literals*, for example "24". All integral types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison, and [equality](../operators/equality-operators.md) operators.
+The **integral numeric types** are a subset of the **simple types** and can be initialized with [*literals*](#integral-literals). All integral types are also value types.
+
+All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison, and equality](../operators/equality-operators.md) operators.
 
 ## Sizes and ranges
 
@@ -64,7 +66,7 @@ var hexLiteral = 0x2A;
 var binaryLiteral = 0b_0010_1010;
 ```
 
-Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a digit separator. Binary literals, and the `_` separator are features available starting in C# 7.0.
+Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a digit separator. Binary literals and the digit separator `_` are supported starting with C# 7.0.
 
 ## Type of an integral literal
 
@@ -113,7 +115,7 @@ OTHER TASKS:
 
 ## See also
 
-- [C# Language Specification - Integral types](~/_csharplang/spec/types.md#integral-types)
+- [C# language specification - Integral types](~/_csharplang/spec/types.md#integral-types)
 - [C# reference](../index.md)
 - [Floating-point types table](../keywords/floating-point-types-table.md)
 - [Default values table](../keywords/default-values-table.md)

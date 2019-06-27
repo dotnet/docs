@@ -59,7 +59,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
                name="ServiceModel.Calculator">  
         <endpoint address="http://localhost/Calculator"   
                   binding="wsHttpBinding"  
-                  bindingConfiguration="MessageAndCerficiateClient"   
+                  bindingConfiguration="MessageAndCertificateClient"   
                   name="SecuredByClientCertificate"  
                   contract="ServiceModel.ICalculator" />  
       </service>  

@@ -28,6 +28,13 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 <!-- Do not modify anything below this line -->
 
+## Affected APIs
+
+<!-- Provide the fully qualified name of any specific APIs affected by the change. In the case
+     of overloaded methods, if all overloads are affected, specify the method name as
+     Overload:*fully-qualified-name*. (For example, Overload:System.String.IndexOf.) Otherwise, 
+     specify the individual overloads affected by including their parameters.  ->
+
 ---
 #### Issue metadata
 

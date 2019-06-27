@@ -698,7 +698,7 @@ class Class1 {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }
@@ -815,7 +815,7 @@ class Program {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }

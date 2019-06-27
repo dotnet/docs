@@ -22,7 +22,7 @@ This configuration section contains all the workflow configuration elements.
      </sendMessageChannelCache>  
       <sqlWorkflowInstanceStore   
           connectionStringName="String"   
-          honstLockRenewalPeriod="TimeSpan"  
+          hostLockRenewalPeriod="TimeSpan"  
           instanceCompletionAction="DeleteNothing/DeleteAll"  
           instanceEncodingAction="None/GZip"  
           instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry"  

@@ -278,7 +278,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 ### Client at Organization A  
  The following illustration shows the client at organization A, along with the steps involved in making a `MyService` service call. The other functional components are also included for completeness.  
   
- ![Diagram showwing the steps in a MyService service call.](./media/federation/federation-myservice-service-call-process.gif)  
+ ![Diagram showing the steps in a MyService service call.](./media/federation/federation-myservice-service-call-process.gif)  
   
 ## Summary  
  Federated security provides a clean division of responsibility and helps to build secure, scalable service architectures. As a platform for building and deploying distributed applications, WCF provides native support for implementing federated security.  

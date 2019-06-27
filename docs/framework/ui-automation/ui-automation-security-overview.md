@@ -35,7 +35,7 @@ To be trusted to communicate with applications running at a higher privilege lev
 
 ## Manifest Files
 
-To gain access to the protected system UI, applications must be built with a manifest file that includes the a manifest file with the `uiAccess` attribute in the `requestedExecutionLevel` tag, as follows:
+To gain access to the protected system UI, applications must be built with a manifest file that includes the `uiAccess` attribute in the `requestedExecutionLevel` tag, as follows:
 
 ```xml
 <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">

@@ -18,30 +18,30 @@ This topic describes the activities and transfers for different asynchronous req
 #### Propagation is Enabled on Both Sides, using HTTP  
  ![Asynchronous client with no callback where propagateActivity is set to true on both sides.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-no-callback.gif)   
   
- If `propagateActivity`=`true`, ProcessMessage indicates which ProcessAction activity to transfer to.  
+ If `propagateActivity=true`, ProcessMessage indicates which ProcessAction activity to transfer to.  
   
  For HTTP-based scenarios, ReceiveBytes is invoked on the first message to send, and exists for the lifetime of the request.  
   
 #### Propagation is Disabled on Either Sides, using HTTP  
- If `propagateActivity`=`false` on either side, ProcessMessage does not indicate which ProcessAction activity to transfer to. Therefore, a new temporary ProcessAction activity with a new ID is invoked. When the asynchronous response is matched to the request in ServiceModel code, the Activity ID can be retrieved from the local context. The actual ProcessAction activity can be transferred to with that ID.  
+ If `propagateActivity=false` on either side, ProcessMessage does not indicate which ProcessAction activity to transfer to. Therefore, a new temporary ProcessAction activity with a new ID is invoked. When the asynchronous response is matched to the request in ServiceModel code, the Activity ID can be retrieved from the local context. The actual ProcessAction activity can be transferred to with that ID.  
   
  ![Asynchronous client with no callback where propagateActivity is set to false on either side.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-disabled-either-side.gif)  
     
  For HTTP-based scenarios, ReceiveBytes is invoked on the first message to send, and exists for the lifetime of the request.  
   
- A Process Action activity is created on an asynchronous client when `propagateActivity`=`false` at the caller or callee, and when the response message does not include an Action header.  
+ A Process Action activity is created on an asynchronous client when `propagateActivity=false` at the caller or callee, and when the response message does not include an Action header.  
   
 #### Propagation is Enabled on Both Sides, using TCP or Named Pipe  
  ![Asynchronous client with no callback where propagateActivity is set to true on both sides and named pipe/TCP.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-enabled-using-tcp.gif)  
   
  For a Named-Pipe or TCP-based scenario, ReceiveBytes is invoked when the client is opened, and exists for the lifetime of the connection.  
   
- Similar to the first image, if `propagateActivity`=`true`, ProcessMessage indicates which ProcessAction activity to transfer to.  
+ Similar to the first image, if `propagateActivity=true`, ProcessMessage indicates which ProcessAction activity to transfer to.  
   
 #### Propagation is Disabled on Either Sides, using TCP or Named Pipe  
  For a Named-Pipe or TCP-based scenario, ReceiveBytes is invoked when the client is opened, and exists for the lifetime of the connection.  
   
- Similar to the second image, if `propagateActivity`=`false` on either side, ProcessMessage does not indicate which ProcessAction activity to transfer to. Therefore, a new temporary ProcessAction activity with a new ID is invoked. When the asynchronous response is matched to the request in ServiceModel code, the Activity ID can be retrieved from the local context. The actual ProcessAction activity can be transferred to with that ID.  
+ Similar to the second image, if `propagateActivity=false` on either side, ProcessMessage does not indicate which ProcessAction activity to transfer to. Therefore, a new temporary ProcessAction activity with a new ID is invoked. When the asynchronous response is matched to the request in ServiceModel code, the Activity ID can be retrieved from the local context. The actual ProcessAction activity can be transferred to with that ID.  
   
  ![Asynchronous client with no callback where propagateActivity is set to false on either side and named pipe/TCP.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-disabled-using-tcp.gif)  
     

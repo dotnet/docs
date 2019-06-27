@@ -204,7 +204,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |NTLM|NT LAN Manager (NTLM) authentication.|  
 |Windows|Windows authentication.|  
 |Certificate|Authentication performed using a certificate.|  
-|IssuedToken|Allows the service to require that the client be authenticated using a token issued by a security token service or by [!INCLUDE[infocard](../../../../includes/infocard-md.md)]. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|IssuedToken|Allows the service to require that the client be authenticated using a token issued by a security token service or by CardSpace. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
   
 ### Message Client Credentials in Bindings  
  The following table lists the client credential types available when using a binding in Message security mode.  

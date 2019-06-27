@@ -77,7 +77,7 @@ This section discusses how a data store provider can support the types and funct
  The provider manifest is loaded by the Store Metadata loader (StoreItemCollection), either by using a data store connection or a provider manifest token.  
   
 #### Using a Data Store Connection  
- When the data store connection is available, call DbProvderServices.GetProviderManifestToken to return the token that is passed to the GetProviderManifest method, which returns DbProviderManifest. This method delegates to the provider's implementation of GetDbProviderManifestToken.  
+ When the data store connection is available, call DbProviderServices.GetProviderManifestToken to return the token that is passed to the GetProviderManifest method, which returns DbProviderManifest. This method delegates to the provider's implementation of GetDbProviderManifestToken.  
   
 ```  
 public string GetProviderManifestToken(DbConnection connection);  

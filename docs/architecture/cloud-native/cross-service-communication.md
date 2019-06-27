@@ -28,14 +28,14 @@ Often, one microservice might need to *query* another, requiring an immediate re
 
 ### Request/Response Messaging
 
-One option for implementing this scenario is direct HTTP calls from the calling microservice to those it needs to query as shown in Figure 4-9.
+One option for implementing this scenario is direct HTTP calls from the calling microservice to those it needs to query, shown in Figure 4-9.
 
 ![Direct HTTP communication](media/direct-http-communication.png)
 **Figure 4-9**. Direct HTTP communication
 
 While direct HTTP calls between microservices are relatively simple to implement, care should be taken to minimize this practice. Because what were once self-contained, independent services, able to evolve independently and deploy frequently, now become coupled to each other. As coupling among microservices increase, their architectural benefits diminish.
 
-While performing a request that executes infrequently and makes a single synchronous HTTP network call might be acceptable, high-volume calls that invoke multiple services can increase latency and negatively impact the performance, scalability, and availability of your system. Even worse, a long series of direct HTTP communication can lead to deep, complex chains of synchronous microservices calls, as shown in Figure 4-10:
+While performing a request that executes infrequently and makes a single synchronous HTTP network call might be acceptable, high-volume calls that invoke multiple services can increase latency and negatively impact the performance, scalability, and availability of your system. Even worse, a long series of direct HTTP communication can lead to deep, complex chains of synchronous microservices calls, shown in Figure 4-10:
 
 ![Chaining HTTP queries](media/chaining-http-queries.png)
 **Figure 4-10**. Chaining HTTP queries
@@ -50,7 +50,7 @@ One option for reducing such coupling is implementing the [Materialized View pat
 
 ### Service Aggregator Pattern
 
-Another option for such a workflow orchestration might be an [Aggregator Service](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), as shown in purple in Figure 4-11:
+Another option for such a workflow orchestration might be an [Aggregator Service](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-11.
 
 ![Aggregator service](media/aggregator-service.png)
 **Figure 4-11**. Aggregator service
@@ -59,7 +59,7 @@ The Aggregator service isolates an operation that makes calls to multiple backen
 
 ### Request/Reply Pattern
 
-Another approach to decouple synchronous HTTP messages is to implement a [Request-Reply Pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html) using queuing functionality from a message broker. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented as shown in Figure 4-12:
+Another approach to decouple synchronous HTTP messages is to implement a [Request-Reply Pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReply.html) using queuing functionality from a message broker. Communication using a queue is always a one-way channel, with a producer sending the message and consumer receiving it. With this pattern, both a request queue and response queue are implemented, shown in Figure 4-12.
 
 ![Request-reply pattern](media/request-reply-pattern.png)
 **Figure 4-12**. Request-reply pattern
@@ -68,7 +68,7 @@ Here, the message producer creates a query-based message that contains a unique 
 
 ## Commands
 
-Sometimes, a microservice may require another microservice to perform an action. For example, the Ordering microservice may need the Shipping microservice to create a shipment for an approved order. Often called a *command message*, the microservice invoking the action, called a Producer, makes a command to another service, the Consumer, by sending it a message as shown in Figure 4-13:
+Sometimes, a microservice may require another microservice to perform an action. For example, the Ordering microservice may need the Shipping microservice to create a shipment for an approved order. Often called a *command message*, the microservice invoking the action, called a Producer, makes a command to another service, the Consumer, by sending it a message, shown in Figure 4-13.
 
 ![Command interaction with a queue](media/command-interaction-with-queue.png)
 **Figure 4-13**. Command interaction with a queue
@@ -95,7 +95,7 @@ That said, there are limitations with the service:
 
 - Support for state management, duplicate detection, or transactions isn't available.
 
-Figure 4-14 shows the hierarchy of an Azure Storage Queue:
+Figure 4-14 shows the hierarchy of an Azure Storage Queue.
 
 ![Storage queue hierarchy](media/storage-queue-hierarchy.png)
 **Figure 4-14**. Storage queue hierarchy
@@ -122,7 +122,7 @@ Another enterprise feature is sessions and partitioning. [Sessions](https://codi
 
 However, there are some important caveats: Service Bus queues size is limited to 80 GB, which is much smaller than what's available from store queues. Additionally, Service Bus queues are more expensive with a base cost and charge per operation.
 
-Figure 4-15 outlines the high-level architecture of a Service Bus queue:
+Figure 4-15 outlines the high-level architecture of a Service Bus queue.
 
 ![Service Bus queue](media/service-bus-queue.png)
 **Figure 4-15**. Service Bus queue
@@ -140,7 +140,7 @@ Eventing is a two-step process. To start, a microservice can raise an event and 
 
 In the previous scenario, Microservices \#2 and \#3 independently receive and operate on an event with no knowledge of each other, nor of Microservice \#1. They simply wait for a registered event to be published to the event bus and then act upon it.
 
-Typically, with eventing, we move from queuing technology to *topics*. A [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue but supports a one-to-many messaging pattern where multiple subscribers can choose to receive a message that is sent by a publisher. Figure 4-17 shows a topic architecture:
+Typically, with eventing, we move from queuing technology to *topics*. A [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue but supports a one-to-many messaging pattern where multiple subscribers can choose to receive a message that is sent by a publisher. Figure 4-17 shows a topic architecture.
 
 ![Topic architecture](media/top-architecture.png)
 **Figure 4-17**. Topic architecture
@@ -184,9 +184,10 @@ EventGrid, however, is different. It implements a *push model* in which events a
 
 While Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events (that is, a new document has been inserted into the underlying Cosmos DB), what is the best way to process a *stream of related events*? [Event streams](https://msdn.microsoft.com/magazine/dn904671.aspx?f=255&MSPPError=-2147217396) are more complex as they're typically time-ordered, interrelated and must be processed as a group.
 
-Azure Event Hub is a data streaming platform and event ingestion service that collects, transforms, and stores events. Fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context, it's highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). It typically plays the role of the front door for an event pipeline, decoupling the ingest of the event stream from the consumption of those events, as shown in Figure 4-19:
+Azure Event Hub is a data streaming platform and event ingestion service that collects, transforms, and stores events. Fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context, it's highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). It typically plays the role of the front door for an event pipeline, decoupling the ingest of the event stream from the consumption of those events, shown in Figure 4-19.
 
 ![Azure Event Hub](media/azure-event-hub.png)
+
 **Figure 4-19**. Azure Event Hub
 
 Event Hub supports low latency and configurable time retention. Differing from queues and topics, Event Hubs keep event data after it's been read by a consumer. This feature enables other data analytic services, both internal and external, to replay the data for further analysis. Events stored in event hub are only deleted upon expiration of the retention period, which is one day by default, but configurable.
@@ -195,20 +196,18 @@ Event Hub support a number of protocols for publishing events including HTTPS, A
 
 Event Hubs implement message streaming through a [partitioned consumer model](https://docs.microsoft.com/azure/event-hubs/event-hubs-features) in which each consumer only reads a specific subset, or partition, of the message stream. This pattern enables tremendous horizontal scale for event processing and provides other stream-focused features that are unavailable in queues and topics. A partition is an ordered sequence of events that is held in an event hub. As newer events arrive, they're added to the end of this sequence. Figure 4-20 shows partitioning in an Event Hub.
 
-Instead of reading from the same resource, each consumer group reads across a subset, or partition, of the message stream. 
-
 ![Event Hub partitioning](media/event-hub-partitioning.png)
+
 **Figure 4-20**. Event Hub partitioning
+
+Instead of reading from the same resource, each consumer group reads across a subset, or partition, of the message stream. 
 
 For applications that must stream numbers of events, Azure Event Hub can be a robust and affordable solution.
 
 ## Summary
 
-Blah, blah, blah
-
 ## Additional resources
 
--   **Blah**  
     https://aka.ms/liftandshiftwithcontainersebook
 
 >[!div class="step-by-step"]

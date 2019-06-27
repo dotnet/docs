@@ -488,7 +488,7 @@ namespace SqlBulkCopyAsyncCodeSample {
          }
       }
 
-      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchornous calls)
+      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchronous calls)
       private static async Task MixSyncAsyncSqlBulkCopy() {
          using (OdbcConnection odbcconn = new OdbcConnection(odbcConnectionString)) {
             odbcconn.Open();

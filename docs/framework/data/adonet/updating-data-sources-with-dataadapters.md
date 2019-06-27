@@ -71,7 +71,7 @@ adapter.Update(table.Select(Nothing, Nothing, _
   DataViewRowState.ModifiedCurrent))  
   
 ' Finally, process inserts.  
-dataAdapater.Update(table.Select(Nothing, Nothing, _  
+dataAdapter.Update(table.Select(Nothing, Nothing, _  
   DataViewRowState.Added))  
 ```  
   

@@ -42,6 +42,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      Dim sc As New SomeClass
      Dim anon1 = New With {Key sc.SomeFunction()}
   ```
+  
      The variable `anon2` in the following code is an anonymous type that has one property, a character named `First`. This code will display a letter "E," the letter that is returned by function <xref:System.Linq.Enumerable.First%2A>.  
   
      [!code-vb[VbVbalrAnonymousTypes#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#13)]  
@@ -56,12 +57,14 @@ Anonymous types provide no mechanism for directly specifying the data types of p
     ' Not valid.
     ' Dim anon3 = New With {Key sc.someFunction(someArg)}
     ```
+    
      Assignment to a new property name solves the problem.  
 
     ```vb
     ' Valid.
     Dim anon4 = New With {Key .FunResult = sc.someFunction(someArg)}
     ```
+
 - The inference derives from a complex expression.  
   
     ```vb  
@@ -80,6 +83,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      ' Not valid.
      ' Dim anon5 = New With {Key product.Name, Key car1.Name}
      ```
+     
      The problem can be solved by assigning the values to distinct property names.  
   
      [!code-vb[VbVbalrAnonymousTypes#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#36)]  
@@ -98,6 +102,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      ' Not valid.
      ' Dim anon8 = New With {Key .IDName = .LastName, Key .LastName = "Jones"}
      ```
+     
      In this example, you can fix the problem by reversing the order in which the properties are declared.  
   
      [!code-vb[VbVbalrAnonymousTypes#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#15)]  
@@ -109,6 +114,7 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      ' Dim relationsLabels1 = New With {Key .Equals = "equals", Key .Greater = _
      '                       "greater than", Key .Less = "less than"}
      ```
+     
      You can fix the problem by changing the property name:  
   
      [!code-vb[VbVbalrAnonymousTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#16)]  

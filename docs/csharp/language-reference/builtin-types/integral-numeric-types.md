@@ -56,7 +56,7 @@ The following table shows the sizes and ranges of the integral types:
 
 The default value for all integral types is `0`. Each of the integral types has constants named `MinValue` and `MaxValue` for the minimum and maximum value for that type.
 
-Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent an arbitrarily large signed integer.
+Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 
 ## Integral literals
 
@@ -68,7 +68,14 @@ var hexLiteral = 0x2A;
 var binaryLiteral = 0b_0010_1010;
 ```
 
-Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a digit separator. Binary literals and the digit separator `_` are supported starting with C# 7.0.
+Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a *digit separator*. The digit separator can be used with all numeric literals. Binary literals and the digit separator `_` are supported starting with C# 7.0.
+
+## Literal suffixes 
+
+The `l` or `L` suffix specifies that the integral literal should be of the `long` type. The `ul` or `UL` suffix specifies the `ulong` type. If the `L` suffix is used on a literal that is greater than 9,223,372,036,854,775,807 (the maximum value of `long`), the value is converted to the `ulong` type. If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs. 
+
+> [!NOTE]
+> You can use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.
 
 ## Type of an integral literal
 
@@ -95,16 +102,11 @@ ulong anotherUnsignedLong = 42;
 var anotherLong = (long)42;
 ```
 
-The `l` or `L` suffix specifies that the integral literal should be of the `long` type. The `ul` or `UL` suffix specifies the `ulong` type. If the `L` suffix is used on a literal that is greater than 9,223,372,036,854,775,807 (the maximum value of `long`), the value is converted to the `ulong` type. If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs. 
-
-> [!NOTE]
-> You can use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.
-
 ## Conversions
 
 There's an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there's an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There's also an implicit conversion from any integral type to any floating-point type.  There's no implicit conversion from any signed integral type to any unsigned integral type.
 
-You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type.
+You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss.
 
 ## See also
 

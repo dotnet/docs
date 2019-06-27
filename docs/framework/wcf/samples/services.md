@@ -24,7 +24,7 @@ Demonstrates WCF service security.
 - [Simplified Configuration for WCF Services](simplified-configuration-for-wcf-services.md)\
 Demonstrates how to implement and configure a typical service and client using WCF.
 
-- [Usage of Standard Endoints](usage-of-standard-endpoints.md)\
+- [Usage of Standard Endpoints](usage-of-standard-endpoints.md)\
 Demonstrates how to use standard endpoints in service configuration files.
 
 - [Extended Protection Policy](extended-protection-policy.md)\

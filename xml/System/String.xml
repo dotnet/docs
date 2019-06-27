@@ -5043,7 +5043,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
  [!code-csharp[System.String.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/eqcmp.cs#1)]
  [!code-vb[System.String.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/eqcmp.vb#1)]  
   
- The following example compares four sets of words by using each member of the <xref:System.StringComparison> enumeration.  The comparisons use the conventions of the English (United States) and Sami (Upper Sweden) cultures. Note that the strings "encyclopædia" and "encyclopedia" are considered equivalent in the en-US culture but not in the Sami (Northern Sweden) culture.  
+ The following example compares four sets of words by using each member of the <xref:System.StringComparison> enumeration.  The comparisons use the conventions of the English (United States) and Sami (Upper Sweden) cultures. Note that the strings "encyclopædia" and "encyclopaedia" are considered equivalent in the en-US culture but not in the Sami (Northern Sweden) culture.  
   
  [!code-csharp[System.String.Equals#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/equals_ex4.cs#4)]
  [!code-vb[System.String.Equals#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/equals_ex4.vb#4)]  
@@ -5112,7 +5112,7 @@ Depending on Why you want to call the `Copy` method, there are a number of alter
    
   
 ## Examples  
- The following example compares four sets of words by using each member of the <xref:System.StringComparison> enumeration.  The comparisons use the conventions of the English (United States) and Sami (Upper Sweden) cultures. Note that the strings "encyclopædia" and "encyclopedia" are considered equivalent in the en-US culture but not in the Sami (Northern Sweden) culture.  
+ The following example compares four sets of words by using each member of the <xref:System.StringComparison> enumeration.  The comparisons use the conventions of the English (United States) and Sami (Upper Sweden) cultures. Note that the strings "encyclopædia" and "encyclopaedia" are considered equivalent in the en-US culture but not in the Sami (Northern Sweden) culture.  
   
  [!code-csharp[System.String.Equals#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/equals_ex3.cs#3)]
  [!code-vb[System.String.Equals#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/equals_ex3.vb#3)]  

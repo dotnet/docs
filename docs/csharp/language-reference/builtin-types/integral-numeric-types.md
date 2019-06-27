@@ -102,7 +102,7 @@ The `l` or `L` suffix specifies that the integral literal should be of the `long
 
 ## Conversions
 
-There's an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there's an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There's no implicit conversion from any signed integral type to any unsigned integral type. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There's also an implicit conversion from any integral type to any floating-point type.
+There's an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there's an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There's also an implicit conversion from any integral type to any floating-point type.  There's no implicit conversion from any signed integral type to any unsigned integral type.
 
 You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type.
 

@@ -33,8 +33,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an awaitable result of an asynchronous operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+A `ValueTask` instance may either be awaited or converted to a <xref:System.Threading.Tasks.Task> using <xref:System.Threading.Tasks.ValueTask.AsTask%2A>. A `ValueTask` instance may only be awaited once, and consumers may not call <xref:System.Threading.Tasks.ValueTask.GetAwaiter> until the instance has completed. If these limitations are unacceptable, convert the `ValueTask` to a <xref:System.Threading.Tasks.Task> by calling <xref:System.Threading.Tasks.ValueTask.AsTask%2A>.
+
+The following operations should never be performed on a `ValueTask` instance:
+
+- Awaiting the instance multiple times.
+- Calling <xref:System.Threading.Tasks.ValueTask.AsTask%2A> multiple times.
+- Using more than one of these techniques to consume the instance.
+
+If you do any of the above, the results are undefined.
+
+A `ValueTask` is a structure that can wrap either a <xref:System.Threading.Tasks.Task> or a <xref:System.Threading.Tasks.Sources.IValueTaskSource> instance. Returning a `ValueTask` that wraps a <xref:System.Threading.Tasks.Sources.IValueTaskSource> instance from an asynchronous method enables high-throughput applications to avoid allocations by using a pool of reusable <xref:System.Threading.Tasks.Sources.IValueTaskSource> objects. For more information, see [Understanding the Whys, Whats, and Whens of ValueTask](https://devblogs.microsoft.com/dotnet/understanding-the-whys-whats-and-whens-of-valuetask/).
+
+Using a `ValueTask` instead of a <xref:System.Threading.Tasks.Task> introduces some overhead. Because `ValueTask` is a structure with multiple fields, returning it from the method results in copying more data compared to returning a single <xref:System.Threading.Tasks.Task> reference. As such, the default choice for any asynchronous method that does not return a result should be to return a <xref:System.Threading.Tasks.Task>. Only if performance analysis proves it worthwhile should a `ValueTask` be used instead of a <xref:System.Threading.Tasks.Task>. The <xref:System.Threading.Tasks.Task.CompletedTask?displayProperty=nameWithType> property should be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.
+
+> [!NOTE]
+> The use of the `ValueTask` type is supported starting with C# 7.0 and is not supported by any version of Visual Basic.
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -59,8 +80,8 @@
         <Parameter Name="task" Type="System.Threading.Tasks.Task" />
       </Parameters>
       <Docs>
-        <param name="task">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="task">The task that represents the operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask" /> class using the supplied task that represents the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,9 +109,9 @@
         <Parameter Name="token" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">An object that represents the operation.</param>
+        <param name="token">An opaque value that is passed through to the <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource"/></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask" /> class using the supplied <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" /> object that represents the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +139,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask" />.</summary>        
+        <returns>The <see cref="T:System.Threading.Tasks.Task" /> object that is wrapped in this <see cref="T:System.Threading.Tasks.ValueTask" /> if one exists, or a new <see cref="T:System.Threading.Tasks.Task" /> object that represents the result.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,9 +170,10 @@
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="continueOnCapturedContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="continueOnCapturedContext">
+		  <see langword="true" /> to attempt to marshal the continuation back to the captured context; otherwise, <see langword="false" />.</param>
+        <summary>Configures an awaiter for this value.</summary>
+        <returns>The configured awaiter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,10 +203,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Threading.Tasks.ValueTask" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -216,10 +246,18 @@
         <Parameter Name="other" Type="System.Threading.Tasks.ValueTask" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The object to compare with the current object.</param>
+        <summary>Determines whether the specified <see cref="T:System.Threading.Tasks.ValueTask" /> object is equal to the current <see cref="T:System.Threading.Tasks.ValueTask" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -246,8 +284,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an awaiter for this value.</summary>
+        <returns>The awaiter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,8 +313,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for the current object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,8 +341,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this object represents a canceled operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a canceled operation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,8 +370,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this object represents a completed operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a completed operation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,8 +399,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this object represents a successfully completed operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a successfully completed operation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -387,8 +428,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this object represents a failed operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a failed operation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,11 +461,19 @@
         <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first value to compare.</param>
+        <param name="right">The second value to compare.</param>
+        <summary>Compares two <see cref="T:System.Threading.Tasks.ValueTask" /> values for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask" /> values are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -453,11 +503,19 @@
         <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first value to compare.</param>
+        <param name="right">The second value to compare.</param>
+        <summary>Determines whether two <see cref="T:System.Threading.Tasks.ValueTask" /> values are unequal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask" /> values are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Preserve">
@@ -484,8 +542,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.Threading.Tasks.ValueTask"/> that may be used at any point in the future.</summary>
+        <returns>The preserved <see cref="T:System.Threading.Tasks.ValueTask"/>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

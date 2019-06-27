@@ -16,19 +16,19 @@ The following table shows the keywords for built-in C# types, which are aliases 
 |C# type|.NET type|  
 |--------------|-------------------------|  
 |[bool](bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
-|[byte](byte.md)|<xref:System.Byte?displayProperty=nameWithType>|  
-|[sbyte](sbyte.md)|<xref:System.SByte?displayProperty=nameWithType>|  
+|[byte](../builtin-types/integral-numeric-types.md)|<xref:System.Byte?displayProperty=nameWithType>|  
+|[sbyte](../builtin-types/integral-numeric-types.md)|<xref:System.SByte?displayProperty=nameWithType>|  
 |[char](char.md)|<xref:System.Char?displayProperty=nameWithType>|  
 |[decimal](decimal.md)|<xref:System.Decimal?displayProperty=nameWithType>|  
 |[double](double.md)|<xref:System.Double?displayProperty=nameWithType>|  
 |[float](float.md)|<xref:System.Single?displayProperty=nameWithType>|  
-|[int](int.md)|<xref:System.Int32?displayProperty=nameWithType>|  
-|[uint](uint.md)|<xref:System.UInt32?displayProperty=nameWithType>|  
-|[long](long.md)|<xref:System.Int64?displayProperty=nameWithType>|  
-|[ulong](ulong.md)|<xref:System.UInt64?displayProperty=nameWithType>|  
+|[int](../builtin-types/integral-numeric-types.md)|<xref:System.Int32?displayProperty=nameWithType>|  
+|[uint](../builtin-types/integral-numeric-types.md)|<xref:System.UInt32?displayProperty=nameWithType>|  
+|[long](../builtin-types/integral-numeric-types.md)|<xref:System.Int64?displayProperty=nameWithType>|  
+|[ulong](../builtin-types/integral-numeric-types.md)|<xref:System.UInt64?displayProperty=nameWithType>|  
 |[object](object.md)|<xref:System.Object?displayProperty=nameWithType>|  
-|[short](short.md)|<xref:System.Int16?displayProperty=nameWithType>|  
-|[ushort](ushort.md)|<xref:System.UInt16?displayProperty=nameWithType>|  
+|[short](../builtin-types/integral-numeric-types.md)|<xref:System.Int16?displayProperty=nameWithType>|  
+|[ushort](../builtin-types/integral-numeric-types.md)|<xref:System.UInt16?displayProperty=nameWithType>|  
 |[string](string.md)|<xref:System.String?displayProperty=nameWithType>|  
   
 ## Remarks

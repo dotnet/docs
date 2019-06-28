@@ -110,7 +110,7 @@ If you're not satisfied with your accuracy metrics, some easy ways to try and im
 
 Two projects will be created as a result of the training process.
 
-- TaxiFarePredictionML.ConsoleApp: A .NET Console application that contains the model training and consumption code.
+- TaxiFarePredictionML.ConsoleApp: A .NET Core Console application that contains the model training and consumption code.
 - TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
 
 1. In the code step of the Model Builder tool, select **Add Projects** to add the auto-generated projects to the solution.

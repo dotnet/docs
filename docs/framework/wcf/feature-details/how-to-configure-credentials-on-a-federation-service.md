@@ -41,7 +41,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
   
 1. Create an `<issuedTokenAuthentication>` element as a child of a <`serviceCredentials`> element.  
   
-2. Set the `allowUntrustedRsaIssuers` attribute of the `<issuedTokenAuthentication>` element to `true` if authenticating a self-issued token, such as an CardSpace card.  
+2. Set the `allowUntrustedRsaIssuers` attribute of the `<issuedTokenAuthentication>` element to `true` if authenticating a self-issued token, such as a CardSpace card.  
   
 3. Create a `<knownCertificates>` element as a child of the `<issuedTokenAuthentication>` element.  
   

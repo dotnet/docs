@@ -121,7 +121,7 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
 
       ]]></format>
         </remarks>
-        <exception cref="T:System.TypeMismatchException">
+        <exception cref="T:System.ArrayTypeMismatchException">
           <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception>
       </Docs>
     </Member>
@@ -212,7 +212,7 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
 
 <paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
         </exception>
-        <exception cref="T:System.TypeMismatchException">
+        <exception cref="T:System.ArrayTypeMismatchException">
           <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception>
       </Docs>
     </Member>

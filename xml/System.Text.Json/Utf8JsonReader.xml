@@ -698,11 +698,6 @@ For input data within a `ReadOnlySpan<byte>`, this always returns `false`. For i
         <returns>
           <see langword="true" /> if the token was read successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Text.Json.JsonReaderException">An invalid JSON token was encountered.
-            
--or-
-
-The current depth exceeds the recursive limit set by the maximum depth.</exception>
         <exception cref="T:System.Text.Json.JsonException">An invalid JSON token according to the JSON RFC is encountered.
         
 -or-

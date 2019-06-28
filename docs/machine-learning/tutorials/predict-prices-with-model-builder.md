@@ -3,7 +3,7 @@ title: 'Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 06/26/2019
+ms.date: 06/28/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder. 
@@ -56,7 +56,7 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
     * **vendor_id:** The ID of the taxi vendor is a feature.
     * **rate_code:** The rate type of the taxi trip is a feature.
     * **passenger_count:** The number of passengers on the trip is a feature.
-    * **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
+    * **trip_time_in_secs:** The amount of time the trip took. 
     * **trip_distance:** The distance of the trip is a feature.
     * **payment_type:** The payment method (cash or credit card) is a feature.
     * **fare_amount:** The total taxi fare paid is the label.
@@ -110,6 +110,8 @@ The result of the training step will be one model which had the best performance
 
 If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data.
 
+Navigate to the code step. 
+
 ## Use the model for predictions
 
 Two projects will be created as a result of the training process.
@@ -117,8 +119,8 @@ Two projects will be created as a result of the training process.
 - TaxiFarePredictionML.ConsoleApp: A .NET Console application that contains the model training and consumption code.
 - TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
 
-1. In the code section of the Model Builder tool, select **Added Projects** to add the projects to the solution.
-1. In solution explorer, right-click the *TaxiFarePrediction* project. Then, select **Add > Existing Item**. For file type drop down, select `All Files`, navigate to the *TaxiFarePredictionML.Model* project directory and select the `MLModel.zip` file. Then right-click the recently added `MLModel.zip` file and select *Properties*. For the Copy to Output Directory option, select *Copy if Newer* from the dropdown.
+1. In the code step of the Model Builder tool, select **Add Projects** to add the projects to the solution.
+1. In solution explorer, right-click the *TaxiFarePrediction* project. Then, select **Add > Existing Item**. For file type drop down, select `All Files`, navigate to the *TaxiFarePredictionML.Model* project directory and select the `MLModel.zip` file. Then right-click the recently added `MLModel.zip` file in the *TaxiFarePrediction* project and select **Properties**. For the **Copy to Output Directory** option, select **Copy if Newer** from the dropdown.
 1. Right-click *TaxiFarePrediction* project. Then, **Add > Reference**. Choose the **Projects > Solution** node and from the list, check the *TaxiFarePredictionML.Model* project and select OK.
 
 4. Open the *Program.cs* file in the *TaxiFarePrediction* project.
@@ -190,10 +192,3 @@ In this tutorial, you learned how to:
 > * Train the model
 > * Evaluate the model
 > * Use the model for predictions
-
-Advance to either of the following how-to articles to learn how to deploy your model.
-
-> [!div class="nextstepaction"]
-> [Deploy a model to Azure Functions](../how-to-guides/serve-model-serverless-azure-functions-ml-net.md)
-> [!div class="nextstepaction"]
-> [Deploy a model to a Web API](../how-to-guides/serve-model-web-api-ml-net.md)

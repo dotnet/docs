@@ -37,7 +37,7 @@ The following list shows tools you might find helpful to use during the porting 
 * .NET API analyzer - A Roslyn analyzer that discovers potential compatibility risks for C# APIs on different platforms and detects calls to deprecated APIs. For more information, see [.NET API analyzer](../../standard/analyzers/api-analyzer.md).  This analyzer is helpful after you already created your .NET Core project to identify runtime behavior differences on different platforms. Currently, the .NET API Analyzer reports the following cases:
 
 	-   Usage of a .NET Standard API that throws [PlatformNotSupportedException](https://docs.microsoft.com/en-us/dotnet/api/system.platformnotsupportedexception) (PC001).
-	-   Usage of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
+	-   Use of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
 	-   Usage of a native API that doesn’t exist in UWP (PC003).
 	-   Usage of Delegate.BeginInvoke and EndInvoke APIs (PC004).
 	-   Usage of an API that is marked as deprecated (DEXXXX).

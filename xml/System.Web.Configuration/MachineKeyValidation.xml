@@ -21,9 +21,7 @@
 ## Remarks  
  ASP.NET uses a hash-based message authentication code (HMAC) to help detect whether data that is used for forms authentication or view state has been tampered with. The HMAC is generated when view state content is created, and the HMAC is checked on subsequent requests. The HMAC helps ASP.NET determine whether someone has changed data that is sent between the server and the client, but the data can be read by anyone as it travels through the Internet unless it is also encrypted. By default, view state is validated but not encrypted. For more information, see <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> and <xref:System.Web.UI.Page.RegisterRequiresViewStateEncryption%2A>.  
   
- The <xref:System.Web.Configuration.MachineKeyValidation> enumeration lets you specify the algorithm that ASP.NET uses to create the HMAC. The default value is HMACSHA256. ASP.NET uses the value of the <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> property with the selected algorithm to generate the HMAC.  
-  
-   
+ The `MachineKeyValidation` enumeration lets you specify the algorithm that ASP.NET uses to create the HMAC. The default value is `HMACSHA256`. ASP.NET uses the value of the <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> property with the selected algorithm to generate the HMAC.  
   
 ## Examples  
  The following code example shows how to use the <xref:System.Web.Configuration.MachineKeyValidation> enumeration. In the example, `configSection` is an instance of <xref:System.Web.Configuration.MachineKeySection>.This code example is part of a larger example provided for the <xref:System.Web.Configuration.MachineKeySection> class.  
@@ -59,15 +57,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the <see langword="AES" /> (Rijndael) encryption algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Choose this option if you want to encrypt view state in your Web application. If you choose this option, the <xref:System.Web.Configuration.MachineKeySection.DecryptionKey%2A> property will be used for encryption and decryption, and the `HMACSHA1` hash algorithm will be used with the <xref:System.Web.Configuration.MachineKeySection.ValidationKey%2A> property for validation.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Specifies that ASP.NET uses the <see langword="AES" /> (Rijndael) encryption algorithm. Choose this option if you want to encrypt view state in your Web application.</para><para>If you choose this option, the <see cref="P:System.Web.Configuration.MachineKeySection.DecryptionKey" /> property will be used for encryption and decryption, and the <see langword="HMACSHA1" /> hash algorithm will be used with the <see cref="P:System.Web.Configuration.MachineKeySection.ValidationKey" /> property for validation.</para></summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -88,17 +78,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses a custom hashing algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The custom hashing algorithm can be implemented in any class that derives from <xref:System.Security.Cryptography.KeyedHashAlgorithm>.  
-  
- The custom algorithm is typically specified declaratively in the validation attribute of the  element, in the format `alg:`*algorithm_name*. For information about how to specify a custom algorithm in code, see the <xref:System.Web.Configuration.MachineKeySection.ValidationAlgorithm%2A?displayProperty=nameWithType> property.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Specifies that ASP.NET uses a custom hashing algorithm. The custom hashing algorithm can be implemented in any class that derives from <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" />.</para><para>The custom algorithm is typically specified declaratively in the <c>validation</c> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v=vs.100)">machineKey</see> element, in the format <c>alg:`*algorithm_name*</c>. For information about how to specify a custom algorithm in code, see the <see cref="P:System.Web.Configuration.MachineKeySection.ValidationAlgorithm" /> property.</para></summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -119,15 +99,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA256" /> hashing algorithm.  This is the default value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `HMACSHA256` is an SHA2 hashing algorithm that generates a 256-bit hash code.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA256" /> hashing algorithm, which is an SHA2 hashing algorithm that generates a 256-bit hash code. This is the default value.</summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -148,15 +120,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA384" /> hashing algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `HMACSHA384` is an SHA2 hashing algorithm that generates a 384-bit hash code. This option is available for applications that require stronger security than is provided by the `HMACSHA256` algorithm.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA384" /> hashing algorithm, which is an SHA2 hashing algorithm that generates a 384-bit hash code. This option is available for applications that require stronger security than provided by the <see langword="HMACSHA256" /> algorithm..</summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -177,15 +141,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA512" /> hashing algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `HMACSHA512` is an SHA2 hashing algorithm that generates a 512-bit hash code. This option is available for applications that require stronger security than is provided by the `HMACSHA384` algorithm.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA512" /> hashing algorithm, which is an SHA2 hashing algorithm that generates a 512-bit hash code. This option is available for applications that require stronger security than provided by the <see langword=">HMACSHA384" /> algorithm.</summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -207,15 +163,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the Message Digest 5 (<see langword="MD5" />) hashing algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `MD5` is a hashing algorithm that generates a 128-bit hash value. This option is included for legacy purposes and should be selected only if compatibility with earlier versions of ASP.NET is required.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that ASP.NET uses the Message Digest 5 (<see langword="MD5" />) hashing algorithm, which is a hashing algorithm that generates a 128-bit hash value. This is a legacy value that should be selected only if compatibility with earlier versions of ASP.NET is required.</summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -237,15 +185,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA1" /> hash algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `HMACSHA1` is a hashing algorithm that generates a 160-bit hash value. This option is included for legacy purposes and should be selected only if compatibility with earlier versions of ASP.NET is required.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that ASP.NET uses the <see langword="HMACSHA1" /> hash algorithm, which is a hashing algorithm that generates a 160-bit hash value. This is a legacy value that should be selected only if compatibility with earlier versions of ASP.NET is required.</summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>
@@ -267,15 +207,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that ASP.NET uses the TripleDES (<see langword="3DES" />) encryption algorithm.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- TripleDES is an encryption algorithm that is used only if you specify that view state is encrypted. This option is included for legacy purposes and should be selected only if compatibility with earlier versions of ASP.NET is required.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that ASP.NET uses the TripleDES (<see langword="3DES" />) encryption algorithm, which is an encryption algorithm that is used only if you specify that view state is encrypted. This is a legacy value that should be selected only if compatibility with earlier versions of ASP.NET is required..</summary>
         <altmember cref="T:System.Web.Configuration.MachineKeyValidation" />
       </Docs>
     </Member>

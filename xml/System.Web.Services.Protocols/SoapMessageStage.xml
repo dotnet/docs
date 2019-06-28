@@ -20,13 +20,22 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- ASP.NET provides an extensibility mechanism for calling Web Services using SOAP. The extensibility mechanism revolves around a <xref:System.Web.Services.Protocols.SoapExtension> that can inspect or modify a message at specific stages in message processing on either the client or the server. This enumeration specifies the processing stage of the <xref:System.Web.Services.Protocols.SoapMessage>.  
-  
-   
-  
+## Remarks
+
+ASP.NET provides an extensibility mechanism for calling Web Services using SOAP. The extensibility mechanism revolves around a <xref:System.Web.Services.Protocols.SoapExtension> that can inspect or modify a message at specific stages in message processing on either the client or the server. This enumeration specifies the processing stage of the <xref:System.Web.Services.Protocols.SoapMessage>.
+
+The following table shows when each stage occurs during SOAP client and server processing.
+
+|`SoapMessageStage`|During <xref:System.Web.Services.Protocols.SoapClientMessage> processing|During <xref:System.Web.Services.Protocols.SoapServerMessage> processing|
+|---|---|---|
+|`AfterDeserialize`|Occurs after the SOAP message containing the response from an XML Web service method invocation has been deserialized into an object, but prior to the client receiving the deserialized results.|Occurs after a network request containing a SOAP message representing an XML Web service method invocation is deserialized into an object, but prior to the method on that object representing the XML Web service method is called.|
+|`AfterSerialize`|Occurs after a client invokes an XML Web service method and the parameters are serialized into XML, but prior to the SOAP message containing that XML is sent over the network.|Occurs after an XML Web service method returns and any return values are serialized into XML, but prior to the SOAP message containing that XML is sent over the network.|
+|`BeforeDeserialize`|Occurs after the network response from an XML Web service method invocation has been received, but just before the response containing the SOAP message is deserialized into an object.|Occurs after a network request containing the SOAP message for an XML Web service method invocation is received by the Web server, but prior to the SOAP message being deserialized into an object.| 
+|`BeforeSerialize`|Occurs after a client invokes an XML Web service method, but prior to the invocation being serialized.|Occurs after the invocation to the XML Web service method returns, but prior to the return values being serialized and sent over the wire back to the client.|
+
 ## Examples  
- The following code example is a fragment of a SOAP extension, which implements the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A> method. Within the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A> method, processing of a <xref:System.Web.Services.Protocols.SoapMessage> is handled specific to the <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+
+The following example is a fragment of a SOAP extension, which implements the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A> method. Within the <xref:System.Web.Services.Protocols.SoapExtension.ProcessMessage%2A> method, processing of a <xref:System.Web.Services.Protocols.SoapMessage> is handled specific to the <xref:System.Web.Services.Protocols.SoapMessageStage>.  
   
  [!code-cpp[SoapMessageState#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapMessageState/CPP/SoapMessageState.cpp#1)]
  [!code-csharp[SoapMessageState#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapMessageState/CS/soapmessagestate.cs#1)]
@@ -59,16 +68,6 @@
       <MemberValue>8</MemberValue>
       <Docs>
         <summary>The stage just after a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is deserialized from a SOAP message into an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the AfterDeserialize stage occurs after the SOAP message containing the response from an XML Web service method invocation has been deserialized into an object, but prior to the client receiving the deserialized results.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the AfterDeserialize stage occurs after a network request containing a SOAP message representing an XML Web service method invocation is deserialized into an object, but prior to the method on that object representing the XML Web service method is called.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AfterSerialize">
@@ -92,16 +91,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The stage just after a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is serialized, but before the SOAP message is sent over the wire.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the AfterSerialize stage occurs after a client invokes an XML Web service method and the parameters are serialized into XML, but prior to the SOAP message containing that XML is sent over the network.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the AfterSerialize stage occurs after an XML Web service method returns and any return values are serialized into XML, but prior to the SOAP message containing that XML is sent over the network.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeDeserialize">
@@ -125,16 +114,6 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>The stage just before a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is deserialized from the SOAP message sent across the network into an object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the BeforeDeserialize stage occurs after the network response from an XML Web service method invocation has been received, but just before the response containing the SOAP message is deserialized into an object.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the BeforeDeserialize stage occurs after a network request containing the SOAP message for an XML Web service method invocation is received by the Web server, but prior to the SOAP message being deserialized into an object.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeSerialize">
@@ -158,16 +137,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The stage just prior to a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> being serialized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- During <xref:System.Web.Services.Protocols.SoapClientMessage> processing, the BeforeSerialize stage occurs after a client invokes an XML Web service method, but prior to the invocation being serialized.  
-  
- During <xref:System.Web.Services.Protocols.SoapServerMessage> processing, the BeforeSerialize stage occurs after the invocation to the XML Web service method returns, but prior to the return values being serialized and sent over the wire back to the client.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -219,29 +219,7 @@
       </ReturnValue>
       <MemberValue>127</MemberValue>
       <Docs>
-        <summary>The code charts that are marked as safe on initialization.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Default enumeration member is a bitwise combination of the following <xref:System.Web.Security.AntiXss.LowerCodeCharts.Default> enumeration members:  
-  
--   BasicLatin  
-  
--   C1ControlsAndLatin1Supplement  
-  
--   LatinExtendedA  
-  
--   LatinExtendedB  
-  
--   IpaExtensions  
-  
--   SpacingModifierLetters  
-  
--   CombiningDiacriticalMarks  
-  
- ]]></format>
-        </remarks>
+        <summary>The code charts that are marked as safe on initialization. <see langword="Default" /> is a bitwise combination of the following <see langword="LowerCodeCharts" />. members: <see langword="Default" />, <see langword="BasicLatin" />, <see langword="C1ControlsAndLatin1Supplement" />, <see langword="LatinExtendedA" />, <see langword="LatinExtendedB" />, <see langword="IpaExtensions" />, <see langword="SpacingModifierLetters" />, and <see langword="CombiningDiacriticalMarks" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Devanagari">

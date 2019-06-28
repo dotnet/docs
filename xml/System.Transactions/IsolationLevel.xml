@@ -34,7 +34,7 @@
   
  The lowest isolation level, `ReadUncommitted`, allows many transactions to operate on a data store simultaneously and provides no protection against data corruption due to interruptive transactions. The highest isolation level, `Serializable`, provides a high degree of protection against interruptive transactions, but requires that each transaction complete before any other transactions are allowed to operate on the data.  
   
- The isolation level of a transaction is determined when the transaction is created. By default, the <xref:System.Transactions> infrastructure creates `Serializable` transactions. You can determine the isolation level of an existing transaction using the <xref:System.Transactions.Transaction.IsolationLevel%2A> property of a transaction.  
+ The isolation level of a transaction is determined when the transaction is created. By default, the <xref:System.Transactions> infrastructure creates `Serializable` transactions. You can determine the isolation level of an existing transaction by using the <xref:System.Transactions.Transaction.IsolationLevel%2A?displayProperty=nameWithType> property of a transaction.  
   
  ]]></format>
     </remarks>
@@ -229,15 +229,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Volatile data can be read. Before a transaction modifies data, it verifies if another transaction has changed the data after it was initially read. If the data has been updated, an error is raised. This allows a transaction to get to the previously committed value of the data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you try to promote a transaction that was created with this isolation level, an <xref:System.InvalidOperationException> is thrown with the error message "Transactions with IsolationLevel Snapshot cannot be promoted".  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Volatile data can be read. Before a transaction modifies data, it verifies if another transaction has changed the data after it was initially read. If the data has been updated, an error is raised. This allows a transaction to get to the previously committed value of the data.</para><para>When you try to promote a transaction that was created with the <see langword="Snapshot" /> isolation level, an <see cref="T:System.InvalidOperationException" /> is thrown with the error message "Transactions with IsolationLevel Snapshot cannot be promoted".</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Unspecified">

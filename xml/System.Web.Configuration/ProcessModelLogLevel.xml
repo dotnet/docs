@@ -18,15 +18,15 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- The <xref:System.Web.Configuration.ProcessModelLogLevel> enumeration contains the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.LogLevel%2A> property.  
-  
- The default value is Errors.  
-  
-   
-  
-## Examples  
- The following code example shows how to set the <xref:System.Web.Configuration.ProcessModelSection.LogLevel%2A> property.  
+## Remarks
+
+The `ProcessModelLogLevel` enumeration contains the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.LogLevel%2A?displayProperty=nameWithType> property.  
+
+The default value is `Errors`.
+
+## Examples
+
+The following example shows how to set the <xref:System.Web.Configuration.ProcessModelSection.LogLevel%2A?displayProperty=nameWithType> property.  
   
  [!code-csharp[System.Web.Configuration.ProcessModelSection#23](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProcessModelSection/CS/processmodelsection.cs#23)]
  [!code-vb[System.Web.Configuration.ProcessModelSection#23](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProcessModelSection/VB/processmodelsection.vb#23)]  
@@ -55,15 +55,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that all process events are logged. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this option when you want to explore the possible errors an application might issue, without any filtering. This option is useful during the building and debugging phase.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that all process events are logged. Use this option when you want to explore the possible errors an application might issue, without any filtering. This option is useful during the building and debugging phase.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -85,15 +77,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that only unexpected shutdowns, memory-limit shutdowns, and deadlock shutdowns are logged. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default value.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that only unexpected shutdowns, memory-limit shutdowns, and deadlock shutdowns are logged. This is the default value.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>
@@ -115,15 +99,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that no events are logged. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You might want to use this option for tested and deployed applications.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that no events are logged. You might want to use this option for tested and deployed applications.</summary>
         <forInternalUseOnly />
       </Docs>
     </Member>

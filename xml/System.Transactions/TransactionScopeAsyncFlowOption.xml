@@ -94,15 +94,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that transaction flow across thread continuations is suppressed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption> is specified in the <xref:System.Transactions.TransactionScope.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that transaction flow across thread continuations is suppressed. This is the default setting if no <see langword="TransactionScopeAsyncFlowOption" /> is specified in the <see cref="Overload:System.Transactions.TransactionScope.#ctor" /> constructor.</summary>
       </Docs>
     </Member>
   </Members>

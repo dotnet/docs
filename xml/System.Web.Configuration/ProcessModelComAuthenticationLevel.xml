@@ -19,9 +19,10 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.ProcessModelComAuthenticationLevel> enumerates the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel%2A> property.  
+
+`ProcessModelComAuthenticationLevel` defines the values to use when you set the <xref:System.Web.Configuration.ProcessModelSection.ComAuthenticationLevel%2A?displayProperty=nameWithType> property.  
   
- The default is Connect.  
+The default is `Connect`.  
   
 > [!NOTE]
 >  The <xref:System.Web.Configuration.ProcessModelComAuthenticationLevel.Connect> settings are relevant only when you use the ASP.NET process model (Internet Information Services [IIS] 5.n or compatible mode on IIS 6 only).  
@@ -57,15 +58,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates the credentials of the client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM authenticates the credentials of the client when the server receives the request at the beginning of each remote procedure call.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that DCOM authenticates the credentials of the client when the server receives the request at the beginning of each remote procedure call.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -86,17 +79,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates the credentials of the client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM authenticates the credentials of the client only when the client establishes a relationship with the server.  
-  
- This is the default value.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that DCOM authenticates the credentials of the client only when the client establishes a relationship with the server. This is the default value. </summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -117,15 +100,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Specifies that DCOM determines the authentication level. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM determines the authentication level using its normal security-negotiation algorithm.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that DCOM determines the authentication level using its normal security-negotiation algorithm.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -167,15 +142,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Specifies that DCOM verifies that all data received is from the expected client. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The datagram transports always use Pkt authentication.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that DCOM verifies that all data received is from the expected client. The datagram transports always use Pkt authentication.</summary>
       </Docs>
     </Member>
     <Member MemberName="PktIntegrity">
@@ -196,15 +163,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates and verifies the data transferred. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM verifies that none of the data transferred between the client and the server has been modified.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that DCOM authenticates and verifies that none of the data transferred between the client and the server has been modified.</summary>
       </Docs>
     </Member>
     <Member MemberName="PktPrivacy">
@@ -225,15 +184,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Specifies that DCOM authenticates all previous levels and does encryption. This field is constant.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- DCOM authenticates all previous levels and encrypts the argument value of each remote procedure call.  
-  
- ]]></format>
-        </remarks>
+        <summary>Specifies that DCOM authenticates all previous levels and encrypts the argument value of each remote procedure call.</summary>
       </Docs>
     </Member>
   </Members>

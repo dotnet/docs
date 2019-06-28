@@ -39,7 +39,7 @@ The following list shows tools you might find helpful to use during the porting 
 	-   Usage of a .NET Standard API that throws [PlatformNotSupportedException](https://docs.microsoft.com/en-us/dotnet/api/system.platformnotsupportedexception) (PC001).
 	-   Use of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
 	-   Use of a native API that doesn’t exist in UWP (PC003).
-	-   Usage of Delegate.BeginInvoke and EndInvoke APIs (PC004).
+	-   Use of <xref:system.windows.forms.control.begininvoke> and <xref:system.windows.forms.control.endinvoke> APIs (PC004).
 	-   Use of an API that is marked as deprecated (DEXXXX).
 	
 

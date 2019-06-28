@@ -112,8 +112,16 @@ You must use an explicit cast to convert one integral type to another integral t
 
 - [C# language specification - Integral types](~/_csharplang/spec/types.md#integral-types)
 - [C# reference](../index.md)
-- [Floating-point types table](../keywords/floating-point-types-table.md)
+- [Floating-point types](floating-point-numeric-types.md)
 - [Default values table](../keywords/default-values-table.md)
 - [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
 - [Numerics in .NET](../../../standard/numerics.md)
+- <xref:System.Byte?displayProperty=nameWithType>
+- <xref:System.SByte?displayProperty=nameWithType>
+- <xref:System.Short?displayProperty=nameWithType>
+- <xref:System.UShort?displayProperty=nameWithType>
+- <xref:System.Int32?displayProperty=nameWithType>
+- <xref:System.UInt32?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.Uint64?displayProperty=nameWithType>

@@ -35,10 +35,6 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Create a **.NET Core Console Application** called "TaxiFarePrediction".
 
-1. Install the **Microsoft.ML** NuGet Package:
-
-    In **Solution Explorer**, right-click the *TaxiFarePrediction* project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-
 ## Prepare and understand the data
 
 1. Create a directory named *Data* in your project to store the data set files.

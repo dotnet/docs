@@ -19,7 +19,7 @@ You can find additional Microsoft e-books related to Docker containers in the li
   [https://docs.microsoft.com/dotnet/architecture/microservices/](../microservices/index.md)
 
 - **Modernize existing .NET applications with Azure cloud and Windows Containers** \
-  [https://docs.microsoft.com/dotnet/architecture/modernize-azure-containers/](../modernize-azure-containers/index.md)
+  [https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/](../modernize-with-azure-containers/index.md)
 
 >[!div class="step-by-step"]
 >[Previous](docker-containers-images-and-registries.md)

@@ -218,7 +218,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
   
  ![Federation](../../../../docs/framework/wcf/feature-details/media/sts-b.gif "STS_B")  
   
- Similar to the STS B, the STS A is also a Web service that issues security tokens and exposes a single endpoint for this purpose. However, it uses a different binding (`wsHttpBinding`) and requires users to present a valid [!INCLUDE[infocard](../../../../includes/infocard-md.md)] with an `emailAddress` claim. In response, it issues SAML tokens with the `userAuthenticated` claim. This is declaratively specified in the service configuration.  
+ Similar to the STS B, the STS A is also a Web service that issues security tokens and exposes a single endpoint for this purpose. However, it uses a different binding (`wsHttpBinding`) and requires users to present a valid CardSpace with an `emailAddress` claim. In response, it issues SAML tokens with the `userAuthenticated` claim. This is declaratively specified in the service configuration.  
   
 ```xml  
 <system.serviceModel>  

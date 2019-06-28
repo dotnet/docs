@@ -131,7 +131,7 @@
       <Docs>
         <param name="targetMethod">The method the caller invoked.</param>
         <param name="args">The arguments the caller passed to the method.</param>
-        <summary>Whenever any method on the generated proxy type is called. Rhis method will be invoked to dispatch control.</summary>
+        <summary>Whenever any method on the generated proxy type is called, this method is invoked to dispatch control.</summary>
         <returns>The object to return to the caller, or <see langword="null" /> for void methods.</returns>
         <remarks>To be added.</remarks>
       </Docs>

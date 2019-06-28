@@ -7,7 +7,7 @@ ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 ---
 # The .NET Portability Analyzer
 
-Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer) and as a [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases).
+Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer) and as a [ApiPort console app](https://aka.ms/apiportdownload).
 
 ## New targets
 
@@ -24,14 +24,14 @@ To begin using the .NET Portability Analyzer in Visual Studio, you first need to
 
 ![Portability screenshot](./media/portability-analyzer/portability-screenshot.png)
 
-To use the ApiPort console app, download it from [ApiPort repository](https://github.com/microsoft/dotnet-apiport). It comes with both .NET Core version and .NET Framework version. You can  use "listTargets" command option to display the available target list, then pick target platforms by specifying -t or --target command option.
+To use the ApiPort console app, download it from [ApiPort repository](http://aka.ms/apiportdownload). It comes with both .NET Core version and .NET Framework version. You can  use "listTargets" command option to display the available target list, then pick target platforms by specifying -t or --target command option.
 
 ### Analyze portability
 To analyze your entire project in Visual Studio, right-click on your project in **Solution Explorer** and select **Analyze Assembly Portability**. Otherwise, go to the **Analyze** menu and select **Analyze Assembly Portability**. From there, select your project’s executable or DLL.
 
 ![Portability Analyzer from Solution Explorer](./media/portability-analyzer/portability-solution-explorer.png)
 
-If you want to use [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases).
+If you want to use [ApiPort console app](https://aka.ms/apiportdownload).
 
 * Type the following command to analyze the current directory: `\...\ApiPort.exe analyze -f .`
 * To analyze a specific list of .dll files, type the following command: `\...\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`
@@ -44,7 +44,7 @@ After running the analysis in Visual Studio, you'll see your .NET Portability re
 
 ![Portability Report](./media/portability-analyzer/portability-report.png)
 
-If you used [ApiPort console app](https://github.com/Microsoft/dotnet-apiport/releases), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
+If you used [ApiPort console app](https://aka.ms/apiportdownload), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
 
 #### Portability Summary 
 The Portability Summary section of the report shows the the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.

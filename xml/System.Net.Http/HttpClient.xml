@@ -194,8 +194,13 @@ public class GoodController : ApiController
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class using a <see cref="T:System.Net.Http.HttpClientHandler" /> that is disposed when this instance is disposed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[    
+## Remarks  
+Using this constructor is equivalent to calling the [`HttpClient(new HttpClientHandler(), true)`](xref:System.Net.Http.HttpClient.%23ctor(System.Net.Http.HttpMessageHandler,System.Boolean)) constructor.
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -224,14 +229,14 @@ public class GoodController : ApiController
       </Parameters>
       <Docs>
         <param name="handler">The HTTP handler stack to use for sending requests.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with a specific handler.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with the specified handler. The handler is disposed when this instance is disposed.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
+          <format type="text/markdown"><![CDATA[    
 ## Remarks  
- `handler` will be disposed of by calling [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose).  
-  
- ]]></format>
+Using this constructor is equivalent to calling the [`HttpClient(handler, true)`](xref:System.Net.Http.HttpClient.%23ctor(System.Net.Http.HttpMessageHandler,System.Boolean)) constructor.
+
+The specified `handler` will be disposed of by calling [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose).  
+]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>
@@ -264,8 +269,8 @@ public class GoodController : ApiController
       <Docs>
         <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler" /> responsible for processing the HTTP response messages.</param>
         <param name="disposeHandler">
-          <see langword="true" /> if the inner handler should be disposed of by [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose), <see langword="false" /> if you intend to reuse the inner handler.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with a specific handler.</summary>
+          <see langword="true" /> if the inner handler should be disposed of by [HttpClient.Dispose](xref:System.Net.Http.HttpMessageInvoker.Dispose); <see langword="false" /> if you intend to reuse the inner handler.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with the provided handler, and specifies whether that handler should be disposed when this instance is disposed.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="handler" /> is <see langword="null" />.</exception>
       </Docs>

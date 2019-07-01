@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an implementation of the Windows Runtime IBuffer interface (Windows.Storage.Streams.IBuffer), and all additional required interfaces. </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,10 +49,12 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="capacity">The maximum number of bytes the buffer can hold. </param>
+        <summary>Returns an empty Windows.Storage.Streams.IBuffer interface that has the specified maximum capacity. </summary>
+        <returns>A Windows.Storage.Streams.IBuffer interface that has the specified capacity and a Length property equal to 0 (zero). </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="capacity" /> is less than 0 (zero). </exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -83,13 +85,18 @@
         <Parameter Name="capacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="capacity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="data">The byte array to copy from. </param>
+        <param name="offset">The offset in <paramref name="data" /> from which copying begins. </param>
+        <param name="length">The number of bytes to copy. </param>
+        <param name="capacity">The maximum number of bytes the buffer can hold; if this is greater than <paramref name="length" />, the rest of the bytes in the buffer are initialized to 0 (zero).</param>
+        <summary>Returns a Windows.Storage.Streams.IBuffer interface that contains a specified range of bytes copied from a byte array. If the specified capacity is greater than the number of bytes copied, the rest of the buffer is zero-filled. </summary>
+        <returns>A Windows.Storage.Streams.IBuffer interface that contains the specified range of bytes. If <paramref name="capacity" /> is greater than <paramref name="length" />, the rest of the buffer is zero-filled. </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="capacity" />, <paramref name="offset" />, or <paramref name="length" /> is less than 0 (zero). </exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is null. </exception>
+        <exception cref="T:System.ArgumentException">Starting at <paramref name="offset" />, <paramref name="data" /> does not contain <paramref name="length" /> elements. -or-Starting at <paramref name="offset" />, <paramref name="data" /> does not contain <paramref name="capacity" /> elements. </exception>
       </Docs>
     </Member>
   </Members>

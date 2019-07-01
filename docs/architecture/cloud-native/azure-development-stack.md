@@ -96,7 +96,7 @@ GitHub offers plans for enterprise, team, professional and free accounts and is 
 
 ### Continuous Integration
 
-[Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) works to establish a consistent, simplified, and automated *pipeline* approach to building, testing, and packaging applications. The process is typically invoked from a commit to your source code repository and composed of a series of steps to verify the commit, as shown in Figure 1-13.
+[Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) works to establish a consistent, simplified, and automated *pipeline* approach to building, testing, and packaging applications. The process is typically invoked from a commit to your source code repository and composed of a series of steps to verify the commit shown in Figure 1-13.
 
 ![ Steps in the CI Pipeline](media/steps-in-the-ci-pipeline.png)
 **Figure 1-13**. Steps in the CI Pipeline
@@ -107,7 +107,7 @@ The goal is to catch problems early in the development cycle when they're less e
 
 ### Continuous Deployment
 
-[Continuous Delivery(CD)](https://martinfowler.com/bliki/ContinuousDelivery.html), closely related to CI, picks up where CI ends. It automatically picks up the package built by CI process and deploys it to a specified environment, such as QA, Staging, or Production, as shown in Figure 1-14.
+[Continuous Delivery(CD)](https://martinfowler.com/bliki/ContinuousDelivery.html), closely related to CI, picks up where CI ends. It automatically picks up the package built by CI process and deploys it to a specified environment, such as QA, Staging, or Production shown in Figure 1-14.
 
 It can invoke additional steps such as integration and performance tests.
 
@@ -118,7 +118,7 @@ The goal is an automated, predictable deployment that can be performed on demand
 
 ### Azure Pipelines
 
-The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering, as shown in Figure 1-15.
+The Azure cloud includes a new CI/CD service entitled [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/), which is part of the [Azure DevOps](https://azure.microsoft.com/services/devops/) offering shown in Figure 1-15.
 
 ![Azure Pipelines in DevOps](media/azure-pipelines-in-azure-devops.png)
 **Figure 1-15**. Azure Pipelines in DevOps

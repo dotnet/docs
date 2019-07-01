@@ -17,14 +17,14 @@ Consider the [definition](https://github.com/cncf/foundation/blob/master/charter
 
 Applications and their underlying systems have become increasingly complex with users demanding more and more. The new expectation is instantaneous responsiveness, up-to-the-minute features, and absolutely no downtime. Performance problems, recurring errors and the inability to move fast are no longer acceptable to your business and customers.
 
-Among many things, cloud native is about *speed* and *agility*. Business critical systems are evolving from an enabler of business capability to a weapon of strategic transformation, accelerating business velocity and growth. Now, it’s imperative to get ideas to market immediately. In Figure 1-1, shown below, consider three pioneers who have implemented these techniques and ponder the speed, agility and scalability they have achieved.
+Among many things, cloud native is about *speed* and *agility*. Business critical systems are evolving from an enabler of business capability to a weapon of strategic transformation, accelerating business velocity and growth. Now, it’s imperative to get ideas to market immediately. Figure 1-1 presents three pioneers who have implemented these techniques. Think about the speed, agility and scalability they have achieved.
 
 ![Companies embracing cloud native agility](media/companies-embracing-cloud-native.png)
 **Figure 1-1**. Companies embracing cloud native agility
 
 As you can see, eBay, Netflix and Uber expose systems that consist of hundreds of self-contained isolated microservices. Impressively, they can rapidly respond to market conditions by instantaneously updating specific functionality without having to fully deploy the entire system.
 
-At its core, this agility derives from the architecture and infrastructure upon which the system is constructed, which include the following six capabilities, as shown below in Figure 1-2.
+At its core, this agility derives from the architecture and infrastructure upon which the system is constructed, which include the following six capabilities shown in Figure 1-2.
 
 ![Capabilities of cloud native apps](media/capabilities-of-cloud-native-apps.png)
 **Figure 1-2**. Capabilities of cloud native apps
@@ -37,7 +37,7 @@ Cloud native systems are *all about the cloud*: Born, designed, developed and de
 
 The focus moves to “*how”* the application is created and deployed, not so much “*where*.” Cloud native apps make extensive use of PaaS (Platform as a Service) infrastructure and managed services. 
 
-Figure 1-3, shown below depicts the range of the full-featured compute services available in Azure. As you move from the top of the hierarchy to the bottom, your focus shifts away infrastructure plumbing to business functionality. Cloud native systems typically reside at the lower levels of the stack leveraging containers, PaaS and Serverless environments.
+Figure 1-3 depicts the range of the full-featured compute services available in Azure. As you move from the top of the hierarchy to the bottom, your focus shifts away infrastructure plumbing to business functionality. Cloud native systems typically reside at the lower levels of the stack leveraging containers, PaaS and Serverless environments.
 
 ![Azure compute stack](media/azure-compute-stack.png)
 **Figure 1-3**. Azure compute stack
@@ -76,7 +76,7 @@ Why a microservices architecture? In short, it provides agility. You construct a
 
 An additional benefit is that a microservice can scale in and out independently. Instead of scaling the entire application as a single unit, you scale out specific microservices that require more processing power or network bandwidth at some specific moment. Such fine-grained scalability provides control and equates to cost savings because you need less hardware.
 
-Figure 1-4, shown below, contrasts a monolithic and microservices approach.
+Figure 1-4 contrasts a monolithic and microservices approach.
 
 ![Monolithic deployment versus microservices](media/monolithic-deployment-vs-microservices.jpg)
 **Figure 1-4.** Monolithic deployment versus microservices
@@ -93,7 +93,7 @@ Containers provide portability and guarantee consistency across environments. By
 
 Each [container](https://docs.docker.com/glossary/?term=container) runs on top of a container host (typically, [Docker](https://opensource.com/resources/what-docker)) that in turn runs on top of an OS (either Linux or Windows). As containers share a single operating system instance, they have a significantly smaller footprint than virtual machine (VM) images. This increases the number of services that can run on a given VM, helping reduce overall cost.
 
-Each microservice typically runs in its own container, as shown below in Figure 1-5. In this example, we are running a Docker host on a single virtual machine, with four microservices running upon it.
+Each microservice typically runs in its own container, shown in Figure 1-5. In this example, we are running a Docker host on a single virtual machine, with four microservices running upon it.
 
 ![Multiple containers running on a container host](media/multiple-containers-running-on-a-host.png)
 **Figure 1-5**. Multiple containers running on a container host
@@ -108,7 +108,7 @@ Many organizations already deploy their releases inside of containers. When code
 
 More development teams are writing code locally inside Docker containers. Instead of managing an  entire set of source code on their local machine, which could consist of hundreds of services, they “pull” container images of the service dependencies they need from a container repository. By including a docker compose manifest, they define how each service inter-operates. When local development is finished, they “push” an image of thier completed service to a container repository for others to consume.
 
-Azure now features [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/), an offering that enables teams to test and iteratively develop an entire microservices application running in Azure Kubernetes Service (AKS) without the need to replicate or mock dependencies. It is shown in Figure 1-6.
+Azure now features [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/), an offering that enables teams to test and iteratively develop an entire microservices application running in Azure Kubernetes Service (AKS) without the need to replicate or mock dependencies. Azure Dev Spaces is shown in Figure 1-6.
 
 ![Azure Dev Spaces](media/azure-dev-spaces-site-example.png)
 **Figure 1-6**. Azure Dev Spaces

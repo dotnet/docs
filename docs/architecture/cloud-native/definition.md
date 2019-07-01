@@ -15,7 +15,7 @@ Consider the [definition](https://github.com/cncf/foundation/blob/master/charter
 
 - These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.
 
-Applications and their underlying systems have become increasingly complex with users demanding more and more. The new expectation is up-to-the-minute functionality, instant scalability and absolutely no downtime. Performance problems, long-standing errors and the inability to move fast are no longer acceptable to your business and customers.
+Applications and their underlying systems have become increasingly complex with users demanding more and more. The new expectation is instantaneous responsiveness, up-to-the-minute features, and absolutely no downtime. Performance problems, recurring errors and the inability to move fast are no longer acceptable to your business and customers.
 
 Among many things, cloud native is about *speed* and *agility*. Business critical systems are evolving from an enabler of business capability to a weapon of strategic transformation, accelerating business velocity and growth. Now, it’s imperative to get ideas to market immediately. In Figure 1-1, shown below, consider three pioneers who have implemented these techniques and ponder the speed, agility and scalability they have achieved.
 
@@ -33,7 +33,7 @@ As each of these capabilities are key to a cloud native system, let’s take som
 
 ## Thinking in terms of the cloud…
 
-Cloud native systems are *all about the cloud*: Born, developed and deployed in the cloud – specifically designed to thrive in a cloud environment. Development teams design these systems from the ground-up in a highly-dynamic, virtualized environment. They are built to exploit the platform and infrastructure capabilities of the cloud delivery model: Elasticity, resilience, redundancy, orchestration and on-demand features. 
+Cloud native systems are *all about the cloud*: Born, designed, developed and deployed to thrive in a cloud environment. Development teams design these systems from the ground-up in a highly-dynamic, virtualized environment. They are built to exploit the platform and infrastructure capabilities of the cloud delivery model: Elasticity, resilience, redundancy, orchestration and on-demand features. 
 
 The focus moves to “*how”* the application is created and deployed, not so much “*where*.” Cloud native apps make extensive use of PaaS (Platform as a Service) infrastructure and managed services. 
 
@@ -85,7 +85,7 @@ Cloud native systems are built as a set of independent microservices and microse
 
 ## Thinking in terms of containers…
 
-The use of microservices go hand-in-hand with containerization, as approach to software deployment in which a service, its dependencies, configuration ([typically, a key-value pair file](https://docs.docker.com/compose/compose-file/)) and runtime are packaged together as a single unit, called an [image](https://docs.docker.com/glossary/?term=image). Images are stored in a container registry, which can reside on your laptop, your data center or the public cloud. When needed, you can instantly transform the image into a running instance (i.e., container) and deploy it on any computer (development laptop, QA, Staging, Production, etc.) that has the Docker software engine.
+The use of microservices go hand-in-hand with containerization, an approach to software deployment in which a service, its dependencies, configuration ([typically, a text-based .yaml file](https://docs.docker.com/compose/compose-file/)) and runtime are packaged together as a single unit, called an [image](https://docs.docker.com/glossary/?term=image). Images are stored in a container registry, which can reside on your laptop, your data center or the public cloud. When needed, you can instantly transform the image into a running instance (i.e., container) and deploy it on any computer (development laptop, QA, Staging, Production, etc.) that has the Docker software engine.
 
 ### Benefits of containers
 
@@ -106,14 +106,14 @@ Another direct benefit of containers is scalability. You can rapidly scale-out w
 
 Many organizations already deploy their releases inside of containers. When code is complete, developers package it and its environment into an image which is stored and *pushed* into next environment. But what about integrating containers into the *overall development process*?
 
-Some development teams are exploring writing and running code locally (on their development machines) all inside Docker containers. Each service is defined with a dockerfile specifying the base OS along and configuration steps. They can then “pull” images to fulfill various service dependencies without having to manage the entire set of source code on their machines. Building a docker compose deployment manifest, they define how each service inter-operates. As they complete their local development, they “push” their application code plus the Docker configuration files to the code repository of their choice (i.e. Git repos) for others to consume.
+More development teams are writing code locally inside Docker containers. Instead of managing an  entire set of source code on their local machine, which could consist of hundreds of services, they “pull” container images of the service dependencies they need from a container repository. By including a docker compose manifest, they define how each service inter-operates. When local development is finished, they “push” an image of thier completed service to a container repository for others to consume.
 
-Looking forward, the Azure cloud platform is previewing a service entitled [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/), shown below, in Figure 1-6.
+Azure now features [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/), an offering that enables teams to test and iteratively develop an entire microservices application running in Azure Kubernetes Service (AKS) without the need to replicate or mock dependencies. It is shown in Figure 1-6.
 
 ![Azure Dev Spaces](media/azure-dev-spaces-site-example.png)
 **Figure 1-6**. Azure Dev Spaces
 
-Here Developer Susie Walker and her team share a development instance of their entire system in an [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster (shown above in blue). Leveraging Azure Dev Spaces, Susie creates a personal space on her development machine with a local copy of her Hotel Service. With that, she can work locally with the hotel service and seamlessly run against the entire system residing on the cluster without having to mock or replicate dependencies. Until Susie deploys the Hotel Service to the cluster, other team members will run against the older version in the cluster. We discuss this upcoming product, Azure Dev Spaces, in the container chapter.
+In the previous figure, Developer Susie Walker and her team share a development instance of their entire system in an [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster (in blue). Leveraging Azure Dev Spaces, Susie creates a personal space on her development machine with a local copy of her Hotel Service. She can then work locally with the hotel service and seamlessly run against the entire system residing on the cluster without having to mock or replicate dependencies on her computer. Until Susie deploys the Hotel Service to the cluster, other team members will run against the older version in the cluster. We discuss this upcoming product, Azure Dev Spaces, in the container chapter.
 
 Containers offer immense benefits in terms of packaging, deploying and managing cloud native applications.
 
@@ -121,9 +121,8 @@ Containers offer immense benefits in terms of packaging, deploying and managing 
 
 Beyond cloud compute infrastructure, cloud native systems depend upon many different ancillary resources to operate: Data stores, message brokers, monitoring and identity services - to name just a few.
 
-A backing service is any external resource on which an application relies for functionality. While they can be local or cloud-based, cloud native apps by definition always favor cloud-based services.
+A backing service is any external resource on which an application relies for functionality. Figure 1-7 shows many common backing services consumed by cloud native systems.
 
-Figure 1-7, shown below, depicts common backing services found in cloud native systems.
 
 ![Cloud native backing services](media/cloud-native-backing-services.png)
 **Figure 1-7**. Cloud native backing services
@@ -136,16 +135,16 @@ All that said, cloud native systems are best built leveraging managed backing se
 
 As they are built on top of existing cloud technologies, these services are infinitely more agile and flexible than traditional offerings. The inherent benefits of scalability and resiliency make them an attractive proposition for developers. And like everything in the cloud, they are constantly tuned and optimized for speed, security and performance.
 
-Not only do cloud-hosted backing services reduce cost, complexity and risk, but these services are fully-supported by the cloud provider. If you have an issue, open a support ticket and the provider fixes it. It makes little sense for you distract your focus scouring the web for a blog post that mentions error code that you’re seeing from your open-source service.
+Not only do cloud-hosted backing services reduce cost, complexity and risk, but these services are fully-supported by the cloud provider. If you have an issue, open a support ticket and the provider fixes it. It makes little sense for you to distract your focus scouring the web for a blog post that mentions error code that you’re seeing from your open-source service.
 
-Figure 1-8, show below, depicts many of the managed services available on the Azure platform.
+Figure 1-8 shows managed services available on the Azure platform.
 
 ![Managed services in Azure](media/managed-services-in-azure.png)
 **Figure 1-8**. Managed services in Azure
 
-You may understandably have a concern with vendor lock-in. However, you must weigh this concern against that of bearing the full responsibility for hosting your own backing services. A smart approach might be to wrap proven cloud-managed services inside of an abstraction shim, using a strategy pattern and externalized configuration, giving you the ability to register and unregister the backing service dynamically without a full redeployment of the system.
+Understandably, you may have a concern with vendor lock-in. However, you must weigh this concern against that of bearing the full responsibility for hosting your own backing services. A smart approach might be to wrap proven cloud-managed services inside of an abstraction shim, using a strategy pattern and externalized configuration, giving you the ability to dynamically swap-out a backing service without a full redeployment of the system.
 
-Throughout this book, we will explore many of cloud-managed backing services by mapping the eShop for Containers reference architecture application.
+Throughout this book, we will explore various types of cloud-managed backing services.
 
 ## Thinking in terms of modern system design…
 
@@ -157,7 +156,7 @@ We’ll start with a widely accepted foundation for service design and then high
 
 A widely-accepted methodology often cited for constructing cloud native systems is the [Twelve-Factor Application](https://12factor.net/) Design Principles. Presented as a manifesto, it describes rules, guidelines and best practices for building applications that are decoupled from their underlying platform, embrace continuous deployment and leverage managed backing services. Although created in 2011, many practitioners consider these principles (or, some proximity to them) to be a solid foundation for building modern cloud native apps.
 
-In Figure 1-9, shown below, we fly you over the 12-Factor methodology at 5,000 feet – low enough to appreciate the principles, but high enough as to not get caught in the weeds.
+In Figure 1-9, we fly you over the 12-Factor methodology at 5,000 feet – low enough to appreciate the principles, but high enough as to not get caught in the weeds.
 
 ![The 12-Factor app](media/the-twelve-factor-app.png)
 **Figure 1-9.** The 12-Factor app
@@ -190,13 +189,13 @@ We introduce these critical considerations topics here in detail throughout the 
 
 “Cloud native thinking” goes beyond microservices, containers and modern system design. DevOps engagement is crucial. Large distributed systems require rapid provisioning, decentralized deployment and close adherence to widely-accepted DevOps processes. A mandatory requirement for cloud native is *automation* – automation of the underlying infrastructure, the code and the environment.
 
-Fortunately, the Azure platform, along with wide variety of tooling from Microsoft, is rich with automation as we will describe throughout this book.
+Fortunately, the Azure platform, along with wide variety of tooling from Microsoft, is rich with automation as we will describe in this section and throughout the book.
 
 ### Automating Infrastructure
 
-Cloud native apps play well to the practice of [Infrastructure as Code (IaC)](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code).
+Cloud native apps favor [Infrastructure as Code (IaC)](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code).
 
-With IaC, you use tooling, such as [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/) or [Terraform](https://www.terraform.io/), to declaratively specify the exact infrastructure that you desire. The script itself is flexible as it parameterizes the resource names,  locations, capacities and secrets. That script becomes an artifact of your project and is versioned and checked into source control. At any time, you can run the IaC script to provision your desired infrastructure. Moving forward, you can modify and rerun the script to update your environment. As the script is parameterized, you can run the same script across your different system environments (i.e., Dev, Test, Staging, Production) providing an identical blueprint of resources.
+With IaC, you use tooling, such as [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/) or [Terraform](https://www.terraform.io/), to declaratively specify the infrastructure you desire. The script itself is flexible as it parameterizes the resource names, locations, capacities and secrets. That script becomes an artifact of your project, is versioned, and checked into source control. At any time, you can run the IaC script to provision your desired infrastructure. Later you can modify and rerun the script to update your environment. As the script is parameterized, you can run the same script across your different system environments (i.e., Dev, Test, Staging, Production) providing an identical blueprint of resources.
 
 We cover infrastructure automation in detail in the Cloud Native DevOps chapter of this book.
 
@@ -234,11 +233,11 @@ Blah
 
 If you have a handful of microservices, your DevOps might be able to manually manage the workload. They would need to pay close attention to the performance and traffic patterns, so they could manually scale accordingly. If, on the other hand, you have 10, 100 or even 1,000 services, all bets are off.
 
-When you’re operating at scale, [container orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/), i.e., automating the deployment, management, scaling, networking, and availability of your containers – is mandatory.
+When you’re operating at scale, [container orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/), is mandatory. Orchestration includes deployment, management, scaling, networking, and availability of your containers.
 
-Container orchestration is done with a special software program called (you guessed it) a container orchestrator. While many are available, [Kubernetes](https://kubernetes.io/) has become the de facto standard in the cloud native world. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/), which means that you are not responsible for provisioning or maintaining the Kubernetes infrastructure – a career path in and of itself.
+Container orchestration is done with a special software program called (you guessed it) a container orchestrator. While serveral are available, [Kubernetes](https://kubernetes.io/) has become the de facto standard for the cloud native world. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/), which means that you are not responsible for provisioning or maintaining the Kubernetes infrastructure – a career path in and of itself.
 
-What exactly do containers orchestrators do? Figure 1-10, shown below, provides some insight.
+What exactly do containers orchestrators do? Figure 1-10 provides some insight.
 
 ![What container orchestrators do](media/what-container-orchestrators-do.png)
 **Figure 1-10**. What container orchestrators do

@@ -102,6 +102,15 @@ The `dotnet publish` command supports packaging your app into a platform-specifi
 
 To publish a single-file executable, set the `PublishSingleFile` in your project or on the command line with the `dotnet publish` command:
 
+```xml
+<PropertyGroup>
+  <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+  <PublishSingleFile>true</PublishSingleFile>
+</PropertyGroup>
+```
+
+-or-
+
 ```console
 dotnet publish -r win10-x64 /p:PublishSingleFile=true
 ```
@@ -116,7 +125,7 @@ Self-contained apps include everything needed to run your code, without requirin
 
 .NET Core now includes a setting that will use the [IL linker](https://github.com/mono/linker) tool to scan the IL of your app. this tool detects what code is required, and then trims unused libraries. This tool can significantly reduce the deployment size of some apps.
 
-To enable this tool, `<PublishTrimmed>` setting in your project and publish a self-contained app:
+To enable this tool, add the `<PublishTrimmed>` setting in your project and publish a self-contained app:
 
 ```xml
 <PropertyGroup>

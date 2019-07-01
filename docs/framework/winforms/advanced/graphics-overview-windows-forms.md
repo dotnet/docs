@@ -39,4 +39,4 @@ ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c
  Provides print-related services.  
   
  <xref:System.Windows.Forms.TextRenderer>  
- Provides [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] text drawing and measuring functionality.
+ Provides GDI text drawing and measuring functionality.

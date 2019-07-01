@@ -31,7 +31,7 @@ The graphics offerings in Windows Forms fall into the following three broad cate
 ## Typography  
  Typography is the display of text in a variety of fonts, sizes, and styles. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides extensive support for this complex task. One of the new features in [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is subpixel antialiasing, which gives text rendered on an LCD screen a smoother appearance.  
   
- In addition, Windows Forms offers the option to draw text with [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)] capabilities in its <xref:System.Windows.Forms.TextRenderer> class.  
+ In addition, Windows Forms offers the option to draw text with GDI capabilities in its <xref:System.Windows.Forms.TextRenderer> class.  
   
 ## See also
 

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
 ---
 # Overview of Graphics
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is an application programming interface (API) that forms the subsystem of the Microsoft Windows operating system. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is responsible for displaying information on screens and printers. As its name suggests, [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is the successor to [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)], the Graphics Device Interface included with earlier versions of Windows.  
+[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is an application programming interface (API) that forms the subsystem of the Microsoft Windows operating system. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is responsible for displaying information on screens and printers. As its name suggests, [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is the successor to GDI, the Graphics Device Interface included with earlier versions of Windows.  
   
 ## Managed Class Interface  
  The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]. The following namespaces make up the managed class interface:  

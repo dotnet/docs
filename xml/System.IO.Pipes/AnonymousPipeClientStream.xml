@@ -36,23 +36,19 @@
   
  Anonymous pipes are unnamed, one-way pipes that typically transfer data between parent and child processes. Anonymous pipes are always local; they cannot be used over a network. A <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.InOut> is not supported because anonymous pipes are defined to be one-way.  
   
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message> read modes.  
+ Anonymous pipes do not support the <xref:System.IO.Pipes.PipeTransmissionMode.Message?displayProperty=nameWithType> read mode.  
   
  The client side of an anonymous pipe must be created from a pipe handle provided by the server side by calling the <xref:System.IO.Pipes.AnonymousPipeServerStream.GetClientHandleAsString%2A> method. The string is then passed as a parameter when creating the client process. From the client process, it is passed to the <xref:System.IO.Pipes.AnonymousPipeClientStream> constructor as the `pipeHandleAsString` parameter.  
   
-> [!NOTE]
->  For [!INCLUDE[winxppro](~/includes/winxppro-md.md)] and [!INCLUDE[win2kserver](~/includes/win2kserver-md.md)], a maximum of 10 pipes can simultaneously connect over the network.  
-  
-   
-  
 ## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process by using anonymous pipes. This example creates an <xref:System.IO.Pipes.AnonymousPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>. It also creates an <xref:System.IO.Pipes.AnonymousPipeClientStream> object in a child process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
+
+The following example sends a string from a parent process to a child process by using anonymous pipes. This example creates an <xref:System.IO.Pipes.AnonymousPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>. It also creates an <xref:System.IO.Pipes.AnonymousPipeClientStream> object in a child process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
   
  This example is for the client process, which is started by the server process. Name the resulting executable from the client code `pipeClient.exe` and copy it to the same directory as the server executable when you run this example. For the entire code example, including the code for both the pipe client and server, see [How to: Use Anonymous Pipes for Local Interprocess Communication](~/docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md).  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb)]  
   
  ]]></format>
     </remarks>
@@ -248,9 +244,9 @@
 ## Examples  
  The following example demonstrates a way to send a string from a parent process to a child process by using anonymous pipes. In this example, an <xref:System.IO.Pipes.AnonymousPipeClientStream> object is created in a child process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>
@@ -334,17 +330,19 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message> read mode.  
+## Remarks
+
+Anonymous pipes do not support the <xref:System.IO.Pipes.PipeTransmissionMode.Message?displayProperty=nameWithType> read mode.  
   
    
   
-## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process by using anonymous pipes. In this example, an <xref:System.IO.Pipes.AnonymousPipeClientStream> object is created in a child process. The <xref:System.NotSupportedException> is caught when the <xref:System.IO.Pipes.AnonymousPipeClientStream.ReadMode%2A> property is set to <xref:System.IO.Pipes.PipeTransmissionMode.Message>.  
+## Examples
+
+The following example sends a string from a parent process to a child process by using anonymous pipes. In this example, an <xref:System.IO.Pipes.AnonymousPipeClientStream> object is created in a child process.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>
@@ -393,17 +391,17 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message> read mode.  
-  
-   
+## Remarks
+
+Anonymous pipes do not support <xref:System.IO.Pipes.PipeTransmissionMode.Message?displayProperty=nameWithType> read mode. Because the default value of this property is <xref:System.IO.Pipes.PipeTransmissionMode.Byte?displayProperty=nameWithType>, there is never a reason to set this property in your code. 
   
 ## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process by using anonymous pipes. In this example, an <xref:System.IO.Pipes.AnonymousPipeClientStream> object is created in a child process and the <xref:System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode%2A> is displayed to the console.  
+
+The following example sends a string from a parent process to a child process by using anonymous pipes. In this example, an <xref:System.IO.Pipes.AnonymousPipeClientStream> object is created in a child process and the <xref:System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode%2A> is displayed to the console.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeClientStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeClientStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>

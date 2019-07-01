@@ -30,7 +30,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 ## Software platforms for container clustering, orchestration, and scheduling
 
 |     |   |
-|:---:|---|
+|-----|---|
 | **Kubernetes** \
 ![Kubernetes logo](./media/image24.png) | [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts. \
  \

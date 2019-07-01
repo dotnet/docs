@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: ec7637a9-01d5-4a95-8bb0-478311cd263b
 ---
 # Comparison Expressions
-A comparison expression checks whether a constant value, property value, or method result is equal, not equal, greater than, or less than another value. If a particular comparison is not valid for [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)], an exception will be thrown. All comparisons, both implicit and explicit, require that all components are comparable in the data source. Comparison expressions are frequently used in `Where` clauses for restricting the query results.  
+A comparison expression checks whether a constant value, property value, or method result is equal, not equal, greater than, or less than another value. If a particular comparison is not valid for LINQ to Entities, an exception will be thrown. All comparisons, both implicit and explicit, require that all components are comparable in the data source. Comparison expressions are frequently used in `Where` clauses for restricting the query results.  
   
  The following example in query expression syntax shows a query that returns results where the sales order number is equal to "SO43663":  
   
@@ -34,7 +34,7 @@ A comparison expression checks whether a constant value, property value, or meth
  [!code-csharp[DP L2E Conceptual Examples#ConstantExpression](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#constantexpression)]
  [!code-vb[DP L2E Conceptual Examples#ConstantExpression](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#constantexpression)]  
   
- [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] does not support using a user class as a constant. However, a property reference on a user class is considered a constant, and will be converted to a command tree constant expression and executed on the data source.  
+ LINQ to Entities does not support using a user class as a constant. However, a property reference on a user class is considered a constant, and will be converted to a command tree constant expression and executed on the data source.  
   
  [!code-csharp[DP L2E Conceptual Examples#MyClass](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#myclass)]
  [!code-vb[DP L2E Conceptual Examples#MyClass](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#myclass)]  

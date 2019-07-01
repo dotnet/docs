@@ -18,7 +18,7 @@ Windows Communication Foundation (WCF) traces internal events in the Windows eve
   
 - Shared Listener: The WCF TCP Port Sharing Service logs an event when it fails to start.  
   
-- [!INCLUDE[infocard](../../../../../includes/infocard-md.md)]: Logs events when the service fails to start.  
+- CardSpace: Logs events when the service fails to start.  
   
 - Critical and error events, such as startup failures or crashes  
   

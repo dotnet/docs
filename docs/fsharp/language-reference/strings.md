@@ -1,7 +1,7 @@
 ---
 title: Strings
 description: Learn how the F# 'string' type represents immutable text as a sequence of Unicode characters.
-ms.date: 05/16/2016
+ms.date: 06/28/2019
 ---
 # Strings
 
@@ -23,7 +23,7 @@ String literals are delimited by the quotation mark (") character. The backslash
 |Backslash|`\\`|
 |Quotation mark|`\"`|
 |Apostrophe|`\'`|
-|Unicode character|`\uXXXX` or `\UXXXX` (where `X` indicates a hexadecimal digit)|
+|Unicode character|`\uXXXX` (UTF-16) or `\U00XXXXXX` (UTF-32) (where `X` indicates a hexadecimal digit)|
 
 If preceded by the @ symbol, the literal is a verbatim string. This means that any escape sequences are ignored, except that two quotation mark characters are interpreted as one quotation mark character.
 

@@ -68,7 +68,7 @@ To train your model, you need to select from the list of available machine learn
 
 ## Load the data
 
-Model Builder accepts data from two sources, a SQL Server database or a local file in csv or tsv format. For more information on data format requirements, visit the [Model Builder overview guide](../automate-training-with-model-builder.md#scenarios#data-formats).
+Model Builder accepts data from two sources, a SQL Server database or a local file in csv or tsv format. For more information on data format requirements, visit the [Model Builder overview guide](../automate-training-with-model-builder.md#data-formats).
 
 1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
 1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory

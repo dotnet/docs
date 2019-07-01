@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
 ---
 # How to: Fill Open Figures
-You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> object to the <xref:System.Drawing.Graphics.FillPath%2A> method. The <xref:System.Drawing.Graphics.FillPath%2A> method fills the path according to the fill mode (alternate or winding) currently set for the path. If the path has any open figures, the path is filled as if those figures were closed. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] closes a figure by drawing a straight line from its ending point to its starting point.  
+You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> object to the <xref:System.Drawing.Graphics.FillPath%2A> method. The <xref:System.Drawing.Graphics.FillPath%2A> method fills the path according to the fill mode (alternate or winding) currently set for the path. If the path has any open figures, the path is filled as if those figures were closed. GDI+ closes a figure by drawing a straight line from its ending point to its starting point.  
   
 ## Example  
  The following example creates a path that has one open figure (an arc) and one closed figure (an ellipse). The <xref:System.Drawing.Graphics.FillPath%2A> method fills the path according to the default fill mode, which is <xref:System.Drawing.Drawing2D.FillMode.Alternate>.  

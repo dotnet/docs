@@ -29,7 +29,7 @@ A scaling transformation multiplies one or more of the four color components by 
   
  ![Screenshot that compares the original and scaled colors.](./media/using-transformations-to-scale-colors/four-bar-scale-one-color.png)  
   
- The following table lists the color vectors for the four bars before and after the blue scaling. Note that the blue component in the fourth color bar went from 0.8 to 0.6. That is because [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] retains only the fractional part of the result. For example, (2)(0.8) = 1.6, and the fractional part of 1.6 is 0.6. Retaining only the fractional part ensures that the result is always in the interval [0, 1].  
+ The following table lists the color vectors for the four bars before and after the blue scaling. Note that the blue component in the fourth color bar went from 0.8 to 0.6. That is because GDI+ retains only the fractional part of the result. For example, (2)(0.8) = 1.6, and the fractional part of 1.6 is 0.6. Retaining only the fractional part ensures that the result is always in the interval [0, 1].  
   
 |Original|Scaled|  
 |--------------|------------|  

@@ -210,4 +210,4 @@ Azure Cache for Redis can also be used as an in-memory data cache, a distributed
 
 >[!div class="step-by-step"]
 >[Previous](data-patterns.md)
->[Next](resiliency.md)
+>[Next](resiliency.md) <!-- Next Chapter -->

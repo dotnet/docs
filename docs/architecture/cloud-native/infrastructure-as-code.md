@@ -93,4 +93,4 @@ In the event that the Terraform or Resource Manager template outputs interesting
 
 >[!div class="step-by-step"]
 >[Previous](cloud-native-devops.md)
->[Next](cloud-native-application-bundles.md)
+>[Next](application-bundles.md)

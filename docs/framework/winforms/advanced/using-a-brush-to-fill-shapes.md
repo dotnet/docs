@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: bf8f7fff-5a90-41e8-9051-494449fb2844
 ---
 # Using a Brush to Fill Shapes
-A [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] <xref:System.Drawing.Brush> object is used to fill the interior of a closed shape. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] defines several fill styles: solid color, hatch pattern, image texture, and color gradient.  
+A GDI+ <xref:System.Drawing.Brush> object is used to fill the interior of a closed shape. GDI+ defines several fill styles: solid color, hatch pattern, image texture, and color gradient.  
   
 ## In This Section  
  [How to: Fill a Shape with a Solid Color](how-to-fill-a-shape-with-a-solid-color.md)  

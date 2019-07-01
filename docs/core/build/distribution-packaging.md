@@ -27,11 +27,22 @@ When installed, .NET Core consists of several components that are laid out as fo
 ├── sdk
 │   ├── <sdk version>            (3)
 │   └── NuGetFallbackFolder      (4)
+├── packs
+│   ├── Microsoft.AspNetCore.App.Ref
+│   │   └── <aspnetcore ref version>     (11)
+│   ├── Microsoft.NETCore.App.Ref
+│   │   └── <netcore ref version>        (11)
+│   ├── Microsoft.NETCore.App.Host.<rid>
+│   │   └── <apphost version>            (12)
+│   ├── Microsoft.WindowsDesktop.App.Ref
+│   │   └── <desktop ref version>        (13)
+│   └── NETStandard.Library.Ref
+│       └── <netstandard version>        (14)
 └── shared
     ├── Microsoft.NETCore.App
     │   └── <runtime version>    (5)
-    └── Microsoft.AspNetCore.App
-        └── <aspnetcore version> (6)
+    ├── Microsoft.AspNetCore.App
+    │   └── <aspnetcore version> (6)
     └── Microsoft.AspNetCore.All
         └── <aspnetcore version> (7)
 /
@@ -61,6 +72,14 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well known locations for system integration.
 
+- (11) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of a `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
+
+- (12) **Microsoft.NETCore.App.Host.<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
+
+- (13) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target.
+
+- (14) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
+
 ## Recommended packages
 
 .NET Core versioning is based on the runtime component `[major].[minor]` version numbers.
@@ -72,19 +91,20 @@ The rest of the version isn't included in the version name. This allows the OS p
 
 The following table shows the recommended packages:
 
-| Name                                    | Example                | Use case: Install ...           | Contains           | Dependencies                                   | Version            |
-|-----------------------------------------|------------------------|---------------------------------|--------------------|------------------------------------------------|--------------------|
-| dotnet-sdk-[major]                      | dotnet-sdk-2           | Latest sdk for runtime major    |                    | dotnet-sdk-[major].[latestminor]               | \<sdk version>     |
-| dotnet-sdk-[major].[minor]              | dotnet-sdk-2.1         | Latest sdk for specific runtime |                    | dotnet-sdk-[major].[minor].[latest sdk feat]xx | \<sdk version>     |
-| dotnet-sdk-[major].[minor].[sdk feat]xx | dotnet-sdk-2.1.3xx     | Specific sdk feature release    | (3),(4)            | aspnetcore-runtime-[major].[minor]             | \<sdk version>     |
-| aspnetcore-runtime-[major].[minor]      | aspnetcore-runtime-2.1 | Specific ASP.NET Core runtime   | (6),[(7)]          | dotnet-runtime-[major].[minor]                 | \<runtime version> |
-| dotnet-runtime-[major].[minor]          | dotnet-runtime-2.1     | Specific runtime                | (5)                | host-fxr:\<runtime version>+                   | \<runtime version> |
-| dotnet-host-fxr                         | dotnet-host-fxr        | _dependency_                    | (2)                | host:\<runtime version>+                       | \<runtime version> |
-| dotnet-host                             | dotnet-host            | _dependency_                    | (1),(8),(9),(10)   |                                                | \<runtime version> |
+| Name                              | Example            | Use case: Install ...           | Contains           | Dependencies                                   | Version            |
+|-----------------------------------|--------------------|---------------------------------|--------------------|------------------------------------------------|--------------------|
+| dotnet-sdk-[major]                | dotnet-sdk-2       | Latest sdk for runtime major    |                    | dotnet-sdk-[major].[latestminor]               | \<sdk version>     |
+| dotnet-sdk-[major].[minor]        | dotnet-sdk-2.1     | Latest sdk for specific runtime | (3),(4),(11),(12)  | aspnet-runtime-[major].[minor], dotnet-netstd-pack-[netstd_major].[netstd_minor] | \<sdk version>     |
+| aspnet-runtime-[major].[minor]    | aspnet-runtime-2.1 | Specific ASP.NET Core runtime   | (6),[(7)]          | dotnet-runtime-[major].[minor]                 | \<runtime version> |
+| dotnet-runtime-[major].[minor]    | dotnet-runtime-2.1 | Specific runtime                | (5)                | host-fxr:\<runtime version>+                   | \<runtime version> |
+| dotnet-host-fxr                   | dotnet-host-fxr    | _dependency_                    | (2)                | host:\<runtime version>+                       | \<runtime version> |
+| dotnet-host                       | dotnet-host        | _dependency_                    | (1),(8),(9),(10)   |                                                | \<runtime version> |
+| dotnet-desktop-pack-[major.minor] |                    | _dependency_                    | (12)               |                                                | \<desktop version>  |
+| dotnet-netstd-pack-[major.minor]  |                    | _dependency_                    | (13)               |                                                | \<netstd version>  |
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 
-- The third-party libraries under `shared/Microsoft.AspNetCore.All` can't be easily built from source. So that folder is omitted from the `aspnetcore-runtime` package.
+- The third-party libraries under `shared/Microsoft.AspNetCore.All` can't be easily built from source. So that folder is omitted from the `aspnet-runtime` package.
 
 - The `NuGetFallbackFolder` is populated using binary artifacts from `nuget.org`. It should remain empty.
 
@@ -92,28 +112,7 @@ Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallback
 
 ### Preview versions
 
-Package maintainers may decide to provide preview versions of the shared framework and SDK. Preview releases may be provided using the `dotnet-sdk-[major].[minor].[sdk feat]xx`, `aspnetcore-runtime-[major].[minor]`, or `dotnet-runtime-[major].[minor]` packages. For preview releases, the package version major must be set to zero. This way, the final release is installed as an upgrade of the package.
-
-### Patch packages
-
-Since a patch version of a package may cause a breaking change, a package maintainer may want to provide _patch packages_. These packages allow you to install a specific patch version that isn't automatically upgraded. Only use patch packages in rare circumstances as they aren't upgraded with (security) fixes.
-
-The following table shows the recommended packages and **patch packages**:
-
-| Name                                           | Example                  | Contains         | Dependencies                                              |
-|------------------------------------------------|--------------------------|------------------|-----------------------------------------------------------|
-| dotnet-sdk-[major]                             | dotnet-sdk-2             |                  | dotnet-sdk-[major].[latest sdk minor]                     |
-| dotnet-sdk-[major].[minor]                     | dotnet-sdk-2.1           |                  | dotnet-sdk-[major].[minor].[latest sdk feat]xx            |
-| dotnet-sdk-[major].[minor].[sdk feat]xx        | dotnet-sdk-2.1.3xx       |                  | dotnet-sdk-[major].[minor].[latest sdk patch]             |
-| **dotnet-sdk-[major].[minor].[patch]**         | dotnet-sdk-2.1.300       | (3),(4)          | aspnetcore-runtime-[major].[minor].[sdk runtime patch]    |
-| aspnetcore-runtime-[major].[minor]             | aspnetcore-runtime-2.1   |                  | aspnetcore-runtime-[major].[minor].[latest runtime patch] |
-| **aspnetcore-runtime-[major].[minor].[patch]** | aspnetcore-runtime-2.1.0 | (6),[(7)]        | dotnet-runtime-[major].[minor].[patch]                    |
-| dotnet-runtime-[major].[minor]                 | dotnet-runtime-2.1       |                  | dotnet-runtime-[major].[minor].[latest runtime patch]     |
-| **dotnet-runtime-[major].[minor].[patch]**     | dotnet-runtime-2.1.0     | (5)              | host-fxr:\<runtime version>+                              |
-| dotnet-host-fxr                                | dotnet-host-fxr          | (2)              | host:\<runtime version>+                                  |
-| dotnet-host                                    | dotnet-host              | (1),(8),(9),(10) |                                                           |
-
-An alternative to using patch packages is _pinning_ the packages to a specific version using the package manager. To avoid affecting other applications/users, such applications can be built and deployed in a container.
+Package maintainers may decide to provide preview versions of the shared framework and SDK. Preview releases may be provided using the `dotnet-sdk-[major].[minor]`, `aspnet-runtime-[major].[minor]`, or `dotnet-runtime-[major].[minor]` packages. For preview releases, the package version major must be set to zero. This way, the final release is installed as an upgrade of the package.
 
 ## Building packages
 

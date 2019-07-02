@@ -161,6 +161,8 @@
         <summary>Attempts to convert a string to a <see cref="T:System.Windows.Media.Color" />.</summary>
         <returns>A <see cref="T:System.Windows.Media.Color" /> that represents the converted text.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="value" /> does not correspond to the string representation of a color.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">

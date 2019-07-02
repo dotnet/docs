@@ -48,6 +48,8 @@ A floating-point expression can contain the following sets of values:
 
 For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](https://www.ieee.org) website.
 
+You can use either [standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md) or [custom numeric format strings](../../../standard/base-types/custom-numeric-format-strings.md)
+
 ## Floating-point literals
 
 By default, a floating-point numeric literal on the right side of the assignment operator is treated as `double`. You can use suffixes to convert a literal to a specific type. 
@@ -69,17 +71,13 @@ myMoney = 400.75M;
 
 ## Conversions
 
-There's an implicit conversion (called a *widening conversion*) between any two floating-point types where the destination type can store all values of the source type. For example, there's an implicit conversion from `float` to `double` because the range of `float` values is a proper subset of `double`. 
+There's an implicit conversion (called a *widening conversion*) from `float` to `double` because the range of `float` values is a proper subset of `double` and there is no loss of precision from `float` to `double`. 
 
 You must use an explicit cast to convert one floating-point type to another floating-point type when an implicit conversion isn't defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss. There's no implicit conversion between other floating-point types and the `decimal` type because the `decimal` type has greater precision than either `float` or `double`.
 
 For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../keywords/implicit-numeric-conversions-table.md).
 
 For more information about explicit numeric conversions, see [Explicit Numeric Conversions Table](../keywords/explicit-numeric-conversions-table.md).
-
-## Formatting decimal output
-
-You can format the results by using the `String.Format` method, or through the <xref:System.Console.Write%2A?displayProperty=nameWithType> method, which calls `String.Format()`. The currency format is specified by using the standard currency format string "C" or "c,". For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=nameWithType>.
 
 ## See also
 

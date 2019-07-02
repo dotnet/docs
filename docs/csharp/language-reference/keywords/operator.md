@@ -22,8 +22,6 @@ To overload an operator on a custom class or struct, you create an operator decl
 
 For information about how to define conversion operators, see the [explicit](explicit.md) and [implicit](implicit.md) keyword articles.
 
-For an overview of the C# operators that can be overloaded, see the [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md) article.
-
 ## Example
 
 The following example defines a `Fraction` type that represents fractional numbers. It overloads the `+` and `*` operators to perform fractional addition and multiplication, and also provides a conversion operator that converts a `Fraction` type to a `double` type.
@@ -41,5 +39,4 @@ The following example defines a `Fraction` type that represents fractional numbe
 - [C# Keywords](index.md)
 - [implicit](implicit.md)
 - [explicit](explicit.md)
-- [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
 - [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)

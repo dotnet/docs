@@ -1,0 +1,46 @@
+---
+title: "Operator overloading - C# reference"
+description: "Learn how to overload a C# operator and get known with the set of C# overloadable operators."
+ms.date: 07/03/2019
+author: pkulikov
+f1_keywords: 
+  - "operator_CSharpKeyword"
+helpviewer_keywords: 
+  - "operator keyword [C#]"
+  - "operator overloading [C#]"
+---
+# Operator overloading (C# reference)
+
+Text.
+
+## Overloadable operators
+
+The following table provides information about overloadability of C# operators:
+
+| Operators | Overloadability |
+| --------- | --------------- |
+|[+](arithmetic-operators.md#unary-plus-and-minus-operators), [-](arithmetic-operators.md#unary-plus-and-minus-operators), [!](boolean-logical-operators.md#logical-negation-operator-), [~](bitwise-and-shift-operators.md#bitwise-complement-operator-), [++](arithmetic-operators.md#increment-operator-), [--](arithmetic-operators.md#decrement-operator---), [true](true-false-operators.md), [false](true-false-operators.md)|These unary operators can be overloaded.|
+|[+](addition-operator.md), [-](subtraction-operator.md), [\*](arithmetic-operators.md#multiplication-operator-), [/](arithmetic-operators.md#division-operator-), [%](arithmetic-operators.md#remainder-operator-), [&](boolean-logical-operators.md#logical-and-operator-), [&#124;](boolean-logical-operators.md#logical-or-operator-), [^](boolean-logical-operators.md#logical-exclusive-or-operator-), [\<\<](bitwise-and-shift-operators.md#left-shift-operator-), [>>](bitwise-and-shift-operators.md#right-shift-operator-)|These binary operators can be overloaded.|
+|[==](equality-operators.md#equality-operator-), [!=](equality-operators.md#inequality-operator-), [\<](comparison-operators.md#less-than-operator-), [>](comparison-operators.md#greater-than-operator-), [\<=](comparison-operators.md#less-than-or-equal-operator-), [>=](comparison-operators.md#greater-than-or-equal-operator-)|The comparison operators can be overloaded (but see the note that follows this table).|
+|[&&](boolean-logical-operators.md#conditional-logical-and-operator-), [&#124;&#124;](boolean-logical-operators.md#conditional-logical-or-operator-)|Conditional logical operators cannot be overloaded. However, if a type with the overloaded [`true` and `false` operators](true-false-operators.md) also overloads the `&` or <code>&#124;</code> operator in a certain way, the `&&` or <code>&#124;&#124;</code> operator, respectively, can be evaluated for the operands of that type. For more information, see the [User-defined conditional logical operators](~/_csharplang/spec/expressions.md#user-defined-conditional-logical-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).|
+|[&#91;&#93;](member-access-operators.md#indexer-operator-)|Element access is not considered an overloadable operator, but you can define [indexers](../../programming-guide/indexers/index.md).|
+|[(T)x](type-testing-and-conversion-operators.md#cast-operator-)|The cast operator cannot be overloaded, but you can define new conversion operators (see [explicit](../keywords/explicit.md) and [implicit](../keywords/implicit.md)).|
+|[+=](arithmetic-operators.md#compound-assignment), [-=](arithmetic-operators.md#compound-assignment), [\*=](arithmetic-operators.md#compound-assignment), [/=](arithmetic-operators.md#compound-assignment), [%=](arithmetic-operators.md#compound-assignment), [&=](boolean-logical-operators.md#compound-assignment), [&#124;=](boolean-logical-operators.md#compound-assignment), [^=](boolean-logical-operators.md#compound-assignment), [\<\<=](bitwise-and-shift-operators.md#compound-assignment), [>>=](bitwise-and-shift-operators.md#compound-assignment)|Compound assignment operators cannot be explicitly overloaded. However, when you overload a binary operator, the corresponding compound assignment operator, if any, is also implicitly overloaded. For example, `+=` is evaluated using `+`, which can be overloaded.|
+|[=](assignment-operator.md), [.](member-access-operators.md#member-access-operator-), [?:](conditional-operator.md), [??](null-coalescing-operator.md), [->](pointer-related-operators.md#pointer-member-access-operator--), [=>](lambda-operator.md), [f(x)](member-access-operators.md#invocation-operator-), [as](type-testing-and-conversion-operators.md#as-operator), [checked](../keywords/checked.md), [unchecked](../keywords/unchecked.md), [default](../../programming-guide/statements-expressions-operators/default-value-expressions.md), [delegate](../../programming-guide/statements-expressions-operators/anonymous-methods.md), [is](type-testing-and-conversion-operators.md#is-operator), [nameof](../keywords/nameof.md), [new](new-operator.md), [sizeof](../keywords/sizeof.md), [typeof](type-testing-and-conversion-operators.md#typeof-operator)|These operators cannot be overloaded.|
+
+> [!NOTE]
+> The comparison operators, if overloaded, must be overloaded in pairs. That is, if one of the two operators is overloaded, another operator must be overloaded as well. Such pairs are as follows:
+>
+> - `==` and `!=` operators
+> - `<` and `>` operators
+> - `<=` and `>=` operators
+
+## C# language specification
+
+For more information, see the [Operator overloading](~/_csharplang/spec/expressions.md#operator-overloading) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+## See also
+
+- [C# reference](../index.md)
+- [C# operators](index.md)
+- [Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)

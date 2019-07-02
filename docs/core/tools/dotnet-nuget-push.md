@@ -115,5 +115,10 @@ Prints out a short help for the command.
 * Pushes all *.nupkg* files in the current directory to the default push source:
 
   ```console
-  dotnet nuget push **/*.nupkg
+  dotnet nuget push *.nupkg
   ```
+  
+  > [!NOTE]
+  > If this command doesn't work, it might be due to a bug that existed in older versions of the SDK (.NET Core 2.1 SDK and earlier versions).
+  > To fix this, upgrade your SDK version or run the following command instead:
+  > `dotnet nuget push **/*.nupkg`

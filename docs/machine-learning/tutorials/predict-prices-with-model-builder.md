@@ -6,7 +6,7 @@ ms.author: luquinta
 ms.date: 06/26/2019
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder. 
+#Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
 ---
 
 # Predict prices using regression with Model Builder
@@ -47,7 +47,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi. 
+Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi.
 
 1. Open the **taxi-fare-train.csv** data set
 
@@ -98,7 +98,7 @@ The time required for the model to train is proportionate to the amount of data.
 Throughout the training process, progress data is displayed in the `Progress` section of the train step.
 
 - Status displays the completion status of the training process.
-- Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data. 
+- Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
 - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
 - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
 
@@ -118,8 +118,8 @@ Two projects will be created as a result of the training process.
 - TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
 
 1. In the code section of the Model Builder tool, select **Added Projects** to add the projects to the solution.
-1. In solution explorer, right-click the *TaxiFarePrediction* project. Then, select **Add > Existing Item**. For file type drop down, select `All Files`, navigate to the *TaxiFarePredictionML.Model* project directory and select the `MLModel.zip` file. Then right-click the recently added `MLModel.zip` file and select *Properties*. For the Copy to Output Directory option, select *Copy if Newer* from the dropdown.
-1. Right-click *TaxiFarePrediction* project. Then, **Add > Reference**. Choose the **Projects > Solution** node and from the list, check the *TaxiFarePredictionML.Model* project and select OK.
+2. In solution explorer, right-click the *TaxiFarePrediction* project. Then, select **Add > Existing Item**. For file type drop down, select `All Files`, navigate to the *TaxiFarePredictionML.Model* project directory and select the `MLModel.zip` file. Then right-click the recently added `MLModel.zip` file and select *Properties*. For the Copy to Output Directory option, select *Copy if Newer* from the dropdown.
+3. Right-click *TaxiFarePrediction* project. Then, **Add > Reference**. Choose the **Projects > Solution** node and from the list, check the *TaxiFarePredictionML.Model* project and select OK.
 
 4. Open the *Program.cs* file in the *TaxiFarePrediction* project.
 5. Add the following using statements:

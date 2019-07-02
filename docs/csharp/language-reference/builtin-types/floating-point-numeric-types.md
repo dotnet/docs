@@ -20,7 +20,7 @@ helpviewer_keywords:
 ---
 # Floating-point types
 
-The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#floating-point-literals). All floating-point types are also value types. All integral numeric types support [arithmetic](../operators/arithmetic-operators.md) [comparison, and equality](../operators/equality-operators.md) operators.
+The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#floating-point-literals). All floating-point types are also value types. All floating point numeric types support [arithmetic](../operators/arithmetic-operators.md) [comparison, and equality](../operators/equality-operators.md) operators.
 
 The following table shows the precision and approximate ranges for the floating-point types.  
   
@@ -30,7 +30,7 @@ The following table shows the precision and approximate ranges for the floating-
 |`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|  
 |`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
 
-The default value for all floating-point types is `0`. Each of the floating-point types has constants named `MinValue` and `MaxValue` for the minimum and maximum value for that type. In addition, the `float` and `double` types have constants for `PositiveInfinity`, `NegativeInfinity` and `NaN` (for "Not a Number"). The `decimal` type includes constants for `Zero`, `One` and `MinusOne`.
+The default value for all floating-point types is `0`. Each of the floating-point types has constants named `MinValue` and `MaxValue` for the minimum and maximum value for that type. The `float` and `double` types have additional constants for `PositiveInfinity`, `NegativeInfinity`, and `NaN` (for "Not a Number"). The `decimal` type includes constants for `Zero`, `One`, and `MinusOne`.
 
 The `decimal` type has more precision and a smaller range than both `float` and `double`, which makes it appropriate for financial and monetary calculations.
 
@@ -48,79 +48,38 @@ A floating-point expression can contain the following sets of values:
 
 For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](https://www.ieee.org) website.
 
-The following example causes a compiler error by trying to add [double](../builtin-types/floating-point-numeric-types.md) and `decimal` variables.
-
-```csharp
-decimal dec = 0m;
-double dub = 9;
-// The following line causes an error that reads "Operator '+' cannot be applied to
-// operands of type 'double' and 'decimal'"
-Console.WriteLine(dec + dub);
-
-// You can fix the error by using explicit casting of either operand.
-Console.WriteLine(dec + (decimal)dub);
-Console.WriteLine((double)dec + dub);
-```
-
-The result is the following error:
-
-`Operator '+' cannot be applied to operands of type 'double' and 'decimal'`
-
-In this example, a `decimal` and an [int](../../../csharp/language-reference/builtin-types/integral-numeric-types.md) are mixed in the same expression. The result evaluates to the `decimal` type.
-
-In this example, the output is formatted by using the currency format string. Notice that `x` is rounded because the decimal places exceed $0.99. The variable `y`, which represents the maximum exact digits, is displayed exactly in the correct format.
-
 ## floating point literals
 
-By default, a real numeric literal on the right side of the assignment operator is treated as `double`. However, if you want an integer number to be treated as `double`, use the suffix d or D, for example:
+By default, a real numeric literal on the right side of the assignment operator is treated as `double`. You can use suffixes to convert a literal to a specific type. 
+
+- The `d` or `D` suffix converts an integral literal to a `double`.
+- The `f` or `F` suffix converts a real or integral literal to a `float`.
+- The `m` or `M` suffix converts a real or integral literal to a `decimal`.
+
+The following examples show each suffix:
 
 ```csharp
-double x = 3D;
-```
-
-By default, a real numeric literal on the right side of the assignment operator is treated as `double`. Therefore, to initialize a float variable, use the suffix `f` or `F`, as in the following example:
-
-```csharp
-float x = 3.5F;
-```
-
-If you do not use the suffix in the previous declaration, you will get a compilation error because you are trying to store a `double` value into a `float` variable.
-
-If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:
-
-```csharp
+double d = 3D;
+d = 4d;
+float f = 3.5F;
+f = 5.4f;
 decimal myMoney = 300.5m;
+myMoney = 400.75M;
 ```
-
-Without the suffix m, the number is treated as a [double](../builtin-types/floating-point-numeric-types.md) and generates a compiler error.
 
 ## Conversions
 
-There's an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there's an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There's also an implicit conversion from any integral type to any floating-point type.  There's no implicit conversion from any signed integral type to any unsigned integral type.
+There's an implicit conversion (called a *widening conversion*) between any two floating-point types where the destination type can store all values of the source type. For example, there's an implicit conversion from `float` to `double` because the range of `float` values is a proper subset of `double`. 
 
-You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss.
+You must use an explicit cast to convert one floating-point type to another floating-point type when an implicit conversion isn't defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss. There's no implicit conversion between other floating-point types and the `decimal` type because the `decimal` type has greater precision than either `float` or `double`.
 
-The integral types are implicitly converted to `decimal` and the result evaluates to `decimal`. Therefore you can initialize a decimal variable using an integer literal, without the suffix, as follows:
+For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../keywords/implicit-numeric-conversions-table.md).
 
-```csharp
-decimal myMoney = 300;
-```
-
-There is no implicit conversion between other floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:
-
-```csharp
-decimal myMoney = 99.9m;
-double x = (double)myMoney;
-myMoney = (decimal)x;
-```
-
-For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).
-
-For more information about explicit numeric conversions, see [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md).
+For more information about explicit numeric conversions, see [Explicit Numeric Conversions Table](../keywords/explicit-numeric-conversions-table.md).
 
 ## Formatting decimal output
 
-You can format the results by using the `String.Format` method, or through the <xref:System.Console.Write%2A?displayProperty=nameWithType> method, which calls `String.Format()`. The currency format is specified by using the standard currency format string "C" or "c," as shown in the second example later in this article. For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=nameWithType>.
+You can format the results by using the `String.Format` method, or through the <xref:System.Console.Write%2A?displayProperty=nameWithType> method, which calls `String.Format()`. The currency format is specified by using the standard currency format string "C" or "c,". For more information about the `String.Format` method, see <xref:System.String.Format%2A?displayProperty=nameWithType>.
 
 ## See also
 

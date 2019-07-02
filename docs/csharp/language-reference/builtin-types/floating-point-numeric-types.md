@@ -1,5 +1,5 @@
 ---
-title: "Floating-point numeric types - C# Reference"
+title: "Floating-point numeric types - C# reference"
 description: "Overview of the built-in C# floating-point types"
 ms.date: 06/30/2019
 f1_keywords: 
@@ -18,11 +18,11 @@ helpviewer_keywords:
   - "double data type [C#]"
   - "decimal keyword [C#]"
 ---
-# Floating-point types
+# Floating-point numeric types (C# reference)
 
-The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#floating-point-literals). All floating-point types are also value types. All floating point numeric types support [arithmetic](../operators/arithmetic-operators.md) [comparison, and equality](../operators/equality-operators.md) operators.
+The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#floating-point-literals). All floating-point types are also value types. All floating-point numeric types support [arithmetic](../operators/arithmetic-operators.md) [comparison, and equality](../operators/equality-operators.md) operators.
 
-The following table shows the precision and approximate ranges for the floating-point types.  
+The following table shows the precision and approximate ranges for the floating-point types:
   
 |Type|Approximate range|Precision|  
 |----------|-----------------------|---------------|  
@@ -34,7 +34,7 @@ The default value for all floating-point types is `0`. Each of the floating-poin
 
 The `decimal` type has more precision and a smaller range than both `float` and `double`, which makes it appropriate for financial and monetary calculations.
 
-You can mix numeric integral types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
+You can mix integral types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
 
 - If one of the floating-point types is `double`, the expression evaluates to `double`, or to [bool](../keywords/bool.md) in relational comparisons or comparisons for equality.
 - If there is no `double` type in the expression, the expression evaluates to `float`, or to [bool](../keywords/bool.md) in relational comparisons or comparisons for equality.
@@ -48,9 +48,9 @@ A floating-point expression can contain the following sets of values:
 
 For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](https://www.ieee.org) website.
 
-## floating point literals
+## Floating-point literals
 
-By default, a real numeric literal on the right side of the assignment operator is treated as `double`. You can use suffixes to convert a literal to a specific type. 
+By default, a floating-point numeric literal on the right side of the assignment operator is treated as `double`. You can use suffixes to convert a literal to a specific type. 
 
 - The `d` or `D` suffix converts an integral literal to a `double`.
 - The `f` or `F` suffix converts a real or integral literal to a `float`.

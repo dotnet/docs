@@ -119,9 +119,9 @@ You must use an explicit cast to convert one integral type to another integral t
 - [Numerics in .NET](../../../standard/numerics.md)
 - <xref:System.Byte?displayProperty=nameWithType>
 - <xref:System.SByte?displayProperty=nameWithType>
-- <xref:System.Short?displayProperty=nameWithType>
-- <xref:System.UShort?displayProperty=nameWithType>
+- <xref:System.Int16?displayProperty=nameWithType>
+- <xref:System.UInt16?displayProperty=nameWithType>
 - <xref:System.Int32?displayProperty=nameWithType>
 - <xref:System.UInt32?displayProperty=nameWithType>
 - <xref:System.Int64?displayProperty=nameWithType>
-- <xref:System.Uint64?displayProperty=nameWithType>
+- <xref:System.UInt64?displayProperty=nameWithType>

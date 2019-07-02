@@ -31,13 +31,13 @@ When installed, .NET Core consists of several components that are laid out as fo
 │   ├── Microsoft.AspNetCore.App.Ref
 │   │   └── <aspnetcore ref version>     (11)
 │   ├── Microsoft.NETCore.App.Ref
-│   │   └── <netcore ref version>        (11)
+│   │   └── <netcore ref version>        (12)
 │   ├── Microsoft.NETCore.App.Host.<rid>
-│   │   └── <apphost version>            (12)
+│   │   └── <apphost version>            (13)
 │   ├── Microsoft.WindowsDesktop.App.Ref
-│   │   └── <desktop ref version>        (13)
+│   │   └── <desktop ref version>        (14)
 │   └── NETStandard.Library.Ref
-│       └── <netstandard version>        (14)
+│       └── <netstandard version>        (15)
 └── shared
     ├── Microsoft.NETCore.App
     │   └── <runtime version>    (5)
@@ -60,7 +60,7 @@ While there's a single host, most of the other components are in versioned direc
 
 - (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET Core libraries and applications. The SDK includes the .NET Core Command-line interface (CLI), the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
-- (4) **sdk/NuGetFallbackFolder** contains a cache of NuGet packages used by an SDK during the restore operation, such as when running `dotnet restore` or `dotnet build /t:Restore`.
+- (4) **sdk/NuGetFallbackFolder** contains a cache of NuGet packages used by an SDK during the restore operation, such as when running `dotnet restore` or `dotnet build /t:Restore`. This folder is no longer used with .NET Core 3.0+. For earlier versions, it could not be built from source.
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 
@@ -72,13 +72,13 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well known locations for system integration.
 
-- (11) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of a `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
+- (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of a `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
-- (12) **Microsoft.NETCore.App.Host.<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
+- (13) **Microsoft.NETCore.App.Host.<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
 
-- (13) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target.
+- (14) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target. This isn't provided on non-Windows platforms.
 
-- (14) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
+- (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
 ## Recommended packages
 
@@ -91,16 +91,17 @@ The rest of the version isn't included in the version name. This allows the OS p
 
 The following table shows the recommended packages:
 
-| Name                              | Example            | Use case: Install ...           | Contains           | Dependencies                                   | Version            |
-|-----------------------------------|--------------------|---------------------------------|--------------------|------------------------------------------------|--------------------|
-| dotnet-sdk-[major]                | dotnet-sdk-2       | Latest sdk for runtime major    |                    | dotnet-sdk-[major].[latestminor]               | \<sdk version>     |
-| dotnet-sdk-[major].[minor]        | dotnet-sdk-2.1     | Latest sdk for specific runtime | (3),(4),(11),(12)  | aspnet-runtime-[major].[minor], dotnet-netstd-pack-[netstd_major].[netstd_minor] | \<sdk version>     |
-| aspnet-runtime-[major].[minor]    | aspnet-runtime-2.1 | Specific ASP.NET Core runtime   | (6),[(7)]          | dotnet-runtime-[major].[minor]                 | \<runtime version> |
-| dotnet-runtime-[major].[minor]    | dotnet-runtime-2.1 | Specific runtime                | (5)                | host-fxr:\<runtime version>+                   | \<runtime version> |
-| dotnet-host-fxr                   | dotnet-host-fxr    | _dependency_                    | (2)                | host:\<runtime version>+                       | \<runtime version> |
-| dotnet-host                       | dotnet-host        | _dependency_                    | (1),(8),(9),(10)   |                                                | \<runtime version> |
-| dotnet-desktop-pack-[major.minor] |                    | _dependency_                    | (12)               |                                                | \<desktop version>  |
-| dotnet-netstd-pack-[major.minor]  |                    | _dependency_                    | (13)               |                                                | \<netstd version>  |
+| Name                              | Example            | Use case: Install ...           | Contains         | Dependencies                      | Version            |
+|-----------------------------------|--------------------|---------------------------------|------------------|-----------------------------------|--------------------|
+| dotnet-sdk-[major]                | dotnet-sdk-2       | Latest sdk for runtime major    |                  | dotnet-sdk-[major].[latestminor]  | \<sdk version>     |
+| dotnet-sdk-[major].[minor]        | dotnet-sdk-2.1     | Latest sdk for specific runtime | (3),(4),(13)     | aspnet-runtime-[major].[minor], dotnet-netcoreapp-targeting-pack[major].[minor], dotnet-aspnet-targeting-pack[major].[minor], dotnet-netstandard-targeting-pack-[netst_major].[netstd_minor] | \<sdk version>     |
+| aspnet-runtime-[major].[minor]    | aspnet-runtime-2.1 | Specific ASP.NET Core runtime   | (6),[(7)]        | dotnet-runtime-[major].[minor]    | \<runtime version> |
+| dotnet-runtime-[major].[minor]    | dotnet-runtime-2.1 | Specific runtime                | (5)              | host-fxr:\<runtime version>+      | \<runtime version> |
+| dotnet-host-fxr                   | dotnet-host-fxr    | _dependency_                    | (2)              | host:\<runtime version>+          | \<runtime version> |
+| dotnet-host                       | dotnet-host        | _dependency_                    | (1),(8),(9),(10) |                                   | \<runtime version> |
+| dotnet-netcoreapp-targeting-pack-[major].[minor]    |  | _dependency_                    | (12)             |                                   | \<pack version>    |
+| dotnet-aspnet-targeting-pack-[major].[minor]        |  | _dependency_                    | (11)             |                                   | \<pack version>    |
+| dotnet-netstandard-targeting-pack-[netst_major].[netst_minor] || _dependency_            | (15)             |                                   | \<pack version>    |
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

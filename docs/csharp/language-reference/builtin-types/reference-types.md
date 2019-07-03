@@ -45,41 +45,6 @@ The following sample shows how variables of type `object` can accept values of a
 - [Reference Types](reference-types.md)
 - [Value Types](value-types.md)
 
-## delegate (C# Reference)
-
-The declaration of a delegate type is similar to a method signature. It has a return value and any number of parameters of any type:
-
-```csharp
-public delegate void TestDelegate(string message);
-public delegate int TestDelegate(MyType m, long num);
-```
-
-A `delegate` is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../../csharp/programming-guide/delegates/index.md) and [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md).
-
-### Remarks
-
-Delegates are the basis for [Events](../../../csharp/programming-guide/events/index.md).
-
-A delegate can be instantiated by associating it either with a named or anonymous method. For more information, see [Named Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md) and [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).
-
-The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together. Both ways of instantiating delegates are discussed in this section.
-
-### Example
-
-[!code-csharp[csrefKeywordsTypes#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#8)]
-
-### See also
-
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
-- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)
-- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
-- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
-
 ## dynamic (C# Reference)
 
 The `dynamic` type enables the operations in which it occurs to bypass compile-time type checking. Instead, these operations are resolved at run time. The `dynamic` type simplifies access to COM APIs such as the Office Automation APIs, and also to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).
@@ -246,6 +211,41 @@ For more information about strings in C#, see [Strings](../../programming-guide/
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
 - [Formatting Numeric Results Table](formatting-numeric-results-table.md)
+
+## delegate (C# Reference)
+
+The declaration of a delegate type is similar to a method signature. It has a return value and any number of parameters of any type:
+
+```csharp
+public delegate void TestDelegate(string message);
+public delegate int TestDelegate(MyType m, long num);
+```
+
+A `delegate` is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../../csharp/programming-guide/delegates/index.md) and [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md).
+
+### Remarks
+
+Delegates are the basis for [Events](../../../csharp/programming-guide/events/index.md).
+
+A delegate can be instantiated by associating it either with a named or anonymous method. For more information, see [Named Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md) and [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).
+
+The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together. Both ways of instantiating delegates are discussed in this section.
+
+### Example
+
+[!code-csharp[csrefKeywordsTypes#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#8)]
+
+### See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
 
 ## A new page for arrays that doesn't seem to be here.
 

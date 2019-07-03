@@ -94,9 +94,9 @@ This topic describes security considerations that are specific to developing, de
   
      [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries accept parameters everywhere that literals are accepted. You should use parameterized queries instead of injecting literals from an external agent directly into the query. You should also consider using [query builder methods](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896238(v=vs.100)) to safely construct Entity SQL.  
   
-- [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] injection attacks:  
+- LINQ to Entities injection attacks:  
   
-     Although query composition is possible in [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)], it is performed through the object model API. Unlike [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries, [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] queries are not composed by using string manipulation or concatenation, and they are not susceptible to traditional SQL injection attacks.  
+     Although query composition is possible in LINQ to Entities, it is performed through the object model API. Unlike [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries, LINQ to Entities queries are not composed by using string manipulation or concatenation, and they are not susceptible to traditional SQL injection attacks.  
   
 #### Prevent very large result sets.  
  A very large result set could cause the client system to shut down if the client is performing operations that consume resources proportional to the size of the result set. Unexpectedly large result sets can occur under the following conditions:  
@@ -107,7 +107,7 @@ This topic describes security considerations that are specific to developing, de
   
 - In nested [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries.  
   
- When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take%2A> method in [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] or the [LIMIT](../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) operator in [!INCLUDE[esql](../../../../../includes/esql-md.md)] to limit the size of the result set.  
+ When accepting user input, you must make sure that the input cannot cause result sets to become larger than what the system can handle. You can also use the <xref:System.Linq.Queryable.Take%2A> method in LINQ to Entities or the [LIMIT](../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) operator in [!INCLUDE[esql](../../../../../includes/esql-md.md)] to limit the size of the result set.  
   
 #### Avoid Returning IQueryable Results When Exposing Methods to Potentially Untrusted Callers.  
  Avoid returning <xref:System.Linq.IQueryable%601> types from methods that are exposed to potentially untrusted callers for the following reasons:  

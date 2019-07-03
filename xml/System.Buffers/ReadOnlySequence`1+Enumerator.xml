@@ -83,7 +83,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the current <see cref="T:System.ReadOnlyMemory`1" />.</summary>
-        <value>To be added.</value>
+        <value>The current <see cref="T:System.ReadOnlyMemory`1" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +111,7 @@
       <Parameters />
       <Docs>
         <summary>Moves to the next <see cref="T:System.ReadOnlyMemory`1" /> in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
-        <returns>To be added.</returns>
+        <returns><see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the sequence has been reached.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

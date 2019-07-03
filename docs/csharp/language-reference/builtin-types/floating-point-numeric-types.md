@@ -48,15 +48,15 @@ A floating-point expression can contain the following sets of values:
 
 For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](https://www.ieee.org) website.
 
-You can use either [standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md) or [custom numeric format strings](../../../standard/base-types/custom-numeric-format-strings.md)
+You can use either [standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md) or [custom numeric format strings](../../../standard/base-types/custom-numeric-format-strings.md) to format a floating-point value.
 
 ## Floating-point literals
 
-By default, a floating-point numeric literal on the right side of the assignment operator is treated as `double`. You can use suffixes to convert a literal to a specific type. 
+By default, a floating-point numeric literal on the right side of the assignment operator is treated as `double`. You can use suffixes to convert a floating-point or integral literal to a specific type:
 
-- The `d` or `D` suffix converts an integral literal to a `double`.
-- The `f` or `F` suffix converts a real or integral literal to a `float`.
-- The `m` or `M` suffix converts a real or integral literal to a `decimal`.
+- The `d` or `D` suffix converts a literal to a `double`.
+- The `f` or `F` suffix converts a literal to a `float`.
+- The `m` or `M` suffix converts a literal to a `decimal`.
 
 The following examples show each suffix:
 

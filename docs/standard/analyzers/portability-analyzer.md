@@ -1,7 +1,7 @@
 ---
 title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, UWP, and Xamarin.
-ms.date: 04/26/2019
+ms.date: 07/3/2019
 ms.technology: dotnet-standard
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 ---
@@ -24,18 +24,20 @@ To begin using the .NET Portability Analyzer in Visual Studio, you first need to
 
 ![Portability screenshot](./media/portability-analyzer/portability-screenshot.png)
 
-To use the ApiPort console app, download it from [ApiPort repository](http://aka.ms/apiportdownload). It comes with both .NET Core version and .NET Framework version. You can  use "listTargets" command option to display the available target list, then pick target platforms by specifying -t or --target command option.
+To use the ApiPort console app, download it from [ApiPort repository](http://aka.ms/apiportdownload). You can  use "listTargets" command option to display the available target list, then pick target platforms by specifying -t or --target command option. 
 
 ### Analyze portability
 To analyze your entire project in Visual Studio, right-click on your project in **Solution Explorer** and select **Analyze Assembly Portability**. Otherwise, go to the **Analyze** menu and select **Analyze Assembly Portability**. From there, select your project’s executable or DLL.
 
 ![Portability Analyzer from Solution Explorer](./media/portability-analyzer/portability-solution-explorer.png)
 
-If you want to use [ApiPort console app](https://aka.ms/apiportdownload).
+If you want to use [ApiPort console app](https://aka.ms/apiportdownload). 
 
 * Type the following command to analyze the current directory: `\...\ApiPort.exe analyze -f .`
 * To analyze a specific list of .dll files, type the following command: `\...\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll`
 * Run `\...\ApiPort.exe -?` to get more help
+
+It is recommended that you include all the related exe and dll files that you own and want to port, and exclude the files that your app depends on, but you don't own and can't port. This will give you most relevant portability report.  
 
 ### View and interpret portability result
 
@@ -56,7 +58,7 @@ The Details section of the report lists the APIs missing from one of the Target 
 
  - Target type: the type has missing API from a Target Platform 
  - Target member: the method is missing from a Target Platform 
- - Header for assembly name entries: the .NET Framework assembly that the missing
+ - Assembly name: the .NET Framework assembly that the missing
    API lives in. 
  - Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
    supported on this Target Platform. 
@@ -66,7 +68,7 @@ The Details section of the report lists the APIs missing from one of the Target 
 
 ![Portability Details](./media/portability-analyzer/MissingAssemblies.PNG)
 
-You may find a Missing Assemblies section in your report. It has a list of the assemblies in "Header for assembly name entries" column. It normally are the assemblies that your analyzed assembly reference to and they are not .NET Framework assemblies. If it's an assembly that you own, include it in the portability analyze run. If it's third party library, looks for if they have newer version supporting .NET Core or .NET Standard. If so, consider moving to the newer version.  
+You may find a Missing Assemblies section in your report. It has a list of the assemblies in "Assembly name" column. It normally are the dependency assemblies that your analyzed assembly reference to. If it's an assembly that you own, include it in the portability analyze run. If it's third party library, looks for if they have newer version supporting .NET Core or .NET Standard. If so, consider moving to the newer version.  
 
 For more information on the .NET Portability Analyzer, visit the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.
 

@@ -263,6 +263,14 @@ In your `Extensions.cs` file, type in or copy the method below. This extension m
 
 [!CODE-csharp[LogQuery](../../../samples/csharp/getting-started/console-linq/extensions.cs?name=snippet3)]
 
+You will see a red squiggle under `File`, meaning it doesn't exist. It won't compile, since the compiler doesn't know what `File` is. To solve this problem, make sure to add the following line of code under the very first line in `Extensions.cs`:
+
+```csharp
+using System.IO;
+```
+
+This should solve the issue and the red error disappears.
+
 Next, instrument the definition of each query with a log message:
 
 ```csharp

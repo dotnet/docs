@@ -115,7 +115,7 @@
       <Docs>
         <param name="o">The object to compare.</param>
         <summary>Determines whether the specified object is a <see cref="T:Windows.Foundation.Point" /> and whether it contains the same values as this <see cref="T:Windows.Foundation.Point" />.</summary>
-        <returns><see langword="true" /> if <paramref name="obj" /> is a <see cref="T:Windows.Foundation.Point" /> and contains the same <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values as this <see cref="T:Windows.Foundation.Point" />; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="o" /> is a <see cref="T:Windows.Foundation.Point" /> and contains the same <see cref="P:Windows.Foundation.Point.X" /> and <see cref="P:Windows.Foundation.Point.Y" /> values as this <see cref="T:Windows.Foundation.Point" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

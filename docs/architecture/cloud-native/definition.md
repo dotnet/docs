@@ -24,7 +24,7 @@ Among many things, cloud native is about *speed* and *agility*. Business critica
 
 As you can see, eBay, Netflix and Uber expose systems that consist of hundreds of self-contained isolated microservices. Impressively, they can rapidly respond to market conditions by instantaneously updating specific functionality without having to fully deploy the entire system.
 
-At its core, this agility derives from the architecture and infrastructure upon which the system is constructed, which include the following six capabilities shown in Figure 1-2.
+At its core, this agility derives from the architecture and infrastructure upon which the system is constructed and include the following six capabilities shown in Figure 1-2.
 
 ![Capabilities of cloud native apps](media/capabilities-of-cloud-native-apps.png)
 **Figure 1-2**. Capabilities of cloud native apps
@@ -142,7 +142,7 @@ Figure 1-8 shows managed services available on the Azure platform.
 ![Managed services in Azure](media/managed-services-in-azure.png)
 **Figure 1-8**. Managed services in Azure
 
-Understandably, you may have a concern with vendor lock-in. However, you must weigh this concern against that of bearing the full responsibility for hosting your own backing services. A smart approach might be to wrap proven cloud-managed services inside of an abstraction shim, using a strategy pattern and externalized configuration, giving you the ability to dynamically swap-out a backing service without a full redeployment of the system.
+Understandably, you may have a concern with vendor lock-in. However, you must weigh this concern against that of bearing the full responsibility for hosting your own backing services. A smart approach might be to wrap each backing service inside of an abstraction shim, using a strategy pattern and externalized configuration. This way your code is decoupled from infrastructure concerns, giving you the ability to dynamically swap-out one backing service for another without a full redeployment of the system.
 
 Throughout this book, we will explore various types of cloud-managed backing services.
 

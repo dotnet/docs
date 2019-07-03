@@ -200,33 +200,33 @@ And these are the details, line by line:
 
 - **Line #1:** Begin a stage with a "small" runtime-only base image, call it **base** for reference.
 
-- **Line #2:** Create **/app** directory in the image.
+- **Line #2:** Create the **/app** directory in the image.
 
 - **Line #3:** Expose port **80**.
 
-- **Line #5:** Begin a new stage with "large" image for building/publishing, call it **build** for reference.
+- **Line #5:** Begin a new stage with the "large" image for building/publishing. Call it **build** for reference.
 
 - **Line #6:** Create directory **/src** in the image.
 
-- **Line #7:** Up to line 16, copy referenced projects **.csproj** files, to be able to restore packages later.
+- **Line #7:** Up to line 16, copy referenced **.csproj** project files to be able to restore packages later.
 
 - **Line #17:** Restore packages for the **Catalog.API** project and the referenced projects.
 
-- **Line #18:** Copy **all directory tree for the solution** (except the files/directories included in the **.dockerignore** file) from to the **/src** directory in the image.
+- **Line #18:** Copy **all directory tree for the solution** (except the files/directories included in the **.dockerignore** file) to the **/src** directory in the image.
 
-- **Line #19:** Change current folder to **Catalog.API** project.
+- **Line #19:** Change the current folder to the **Catalog.API** project.
 
-- **Line #20:** Build project (and other project dependencies) and output to **/app** directory in the image.
+- **Line #20:** Build the project (and other project dependencies) and output to the **/app** directory in the image.
 
-- **Line #22:** Begin a new stage continuing from build, call it **publish** for reference.
+- **Line #22:** Begin a new stage continuing from the build. Call it **publish** for reference.
 
-- **Line #23:** Publish project (and dependencies) and output to **/app** directory in the image.
+- **Line #23:** Publish the project (and dependencies) and output to the **/app** directory in the image.
 
-- **Line #25:** Begin a new stage continuing from **base** and call it **final**
+- **Line #25:** Begin a new stage continuing from **base** and call it **final**.
 
-- **Line #26:** Change current directory to **/app**
+- **Line #26:** Change the current directory to **/app**.
 
-- **Line #27:** Copy the **/app** directory from stage **publish** to the current directory
+- **Line #27:** Copy the **/app** directory from stage **publish** to the current directory.
 
 - **Line #28:** Define the command to run when the container is started.
 

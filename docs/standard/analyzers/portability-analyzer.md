@@ -9,7 +9,7 @@ ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 
 Want to make your libraries multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer) and as a [ApiPort console app](https://aka.ms/apiportdownload).
 
-## New targets
+## Common targets
 
 * [.NET Core](../../core/index.md): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps.
 * [ASP.NET Core](/aspnet/core): is a modern web-framework built on .NET Core thus giving developers the same benefits.
@@ -40,16 +40,18 @@ If you want to use [ApiPort console app](https://aka.ms/apiportdownload).
 ### View and interpret portability result
 
 Only APIs that are unsupported by a Target Platform appear in the report. 
-After running the analysis in Visual Studio, you'll see your .NET Portability report pops up. 
-
-![Portability Report](./media/portability-analyzer/portability-report.png)
-
-If you used [ApiPort console app](https://aka.ms/apiportdownload), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
+After running the analysis in Visual Studio, you'll see your .NET Portability report file link pops up. If you used [ApiPort console app](https://aka.ms/apiportdownload), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
 
 #### Portability Summary 
+
+![Portability Summary](./media/portability-analyzer/PortabilitySummary.PNG)
+
 The Portability Summary section of the report shows the the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
 
 #### Details
+
+![Portability Details](./media/portability-analyzer/PortabilityDetails.PNG)
+
 The Details section of the report lists the APIs missing from one of the Target Platforms. 
 
  - Target type: the type has missing API from a Target Platform 
@@ -61,6 +63,10 @@ The Details section of the report lists the APIs missing from one of the Target 
  - Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
 
 #### Missing Assemblies
+
+![Portability Details](./media/portability-analyzer/MissingAssemblies.PNG)
+
 You may find a Missing Assemblies section in your report. It has a list of the assemblies in "Header for assembly name entries" column. It normally are the assemblies that your analyzed assembly reference to and they are not .NET Framework assemblies. If it's an assembly that you own, include it in the portability analyze run. If it's third party library, looks for if they have newer version supporting .NET Core or .NET Standard. If so, consider moving to the newer version.  
 
 For more information on the .NET Portability Analyzer, visit the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.
+

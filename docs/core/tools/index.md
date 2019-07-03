@@ -130,7 +130,7 @@ First, the driver determines the version of the SDK to use. If there is no ['glo
 
 ### Command
 
-The command is a command that performs an action. For example, `dotnet build` builds code. `dotnet publish` publishes code. The commands are implemented as a console application using a `dotnet {command}` convention.
+The command performs an action. For example, `dotnet build` builds code. `dotnet publish` publishes code. The commands are implemented as a console application using a `dotnet {command}` convention.
 
 ### Arguments
 

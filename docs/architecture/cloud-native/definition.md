@@ -102,7 +102,7 @@ Even though each container shares the OS on the underlying VM, each is isolated 
 
 Another direct benefit of containers is scalability. You can rapidly scale-out with additional containers for short-term tasks and quickly scale-in when no longer needed. From an application point of view, running an image (creating a container) is like instantiating a process such as a service or web app. For availability, however, when running multiple container instances of the same image, you typically strive for running each container on a different host VM inside of a cluster. This way, if one VM were to be unavailable, you could route requests to another VM that was operational. We’ll cover availability later in this book.
 
-### They’re not just for deployment
+### Developing in containers
 
 Many organizations already deploy their releases inside of containers. When code is complete, developers package it and its environment into an image which is stored and *pushed* into next environment. But what about integrating containers into the *overall development process*?
 

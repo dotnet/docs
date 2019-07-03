@@ -92,7 +92,7 @@ sqlmetal [options] [<input file>]
   
  If no **/server** is specified, **localhost/sqlexpress** is assumed.  
   
- [!INCLUDE[sqprsqext](../../../includes/sqprsqext-md.md)] throws an exception if one or more of the following conditions are true:  
+ Microsoft SQL Server 2005 throws an exception if one or more of the following conditions are true:  
   
 - SqlMetal tries to extract a stored procedure that calls itself.  
   

@@ -192,7 +192,7 @@ For more information about mapping to these SQL Server date and time types, see 
 
 ## SQL Server 2000 Support
 
-The following [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] limitations (compared to [!INCLUDE[sqprsqext](../../../../../../includes/sqprsqext-md.md)]) affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.
+The following [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] limitations (compared to Microsoft SQL Server 2005) affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.
 
 ### Cross Apply and Outer Apply Operators
 
@@ -202,7 +202,7 @@ These operators are not available in [!INCLUDE[ss2k](../../../../../../includes/
 
 ### text / ntext
 
-Data types `text` / `ntext` cannot be used in certain query operations against `varchar(max)` / `nvarchar(max)`, which are supported by [!INCLUDE[sqprsqext](../../../../../../includes/sqprsqext-md.md)].
+Data types `text` / `ntext` cannot be used in certain query operations against `varchar(max)` / `nvarchar(max)`, which are supported by Microsoft SQL Server 2005.
 
 No resolution is available for this limitation. Specifically, you cannot use `Distinct()` on any result that contains members that are mapped to `text` or `ntext` columns.
 

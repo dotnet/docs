@@ -126,7 +126,7 @@
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.Name%2A> property is the name of the service type, without namespace or assembly information.  
   
--   The <xref:System.ServiceModel.ServiceBehaviorAttribute.Namespace%2A> property is "http://tempuri.org".  
+-   The <xref:System.ServiceModel.ServiceBehaviorAttribute.Namespace%2A> property is `"http://tempuri.org"`.  
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property is `true`.  
   

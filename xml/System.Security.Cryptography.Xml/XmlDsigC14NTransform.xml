@@ -42,7 +42,7 @@
    
   
 ## Examples  
- This section contains two code examples. The first example demonstrates how to sign non-XML data using a detached signature.  Example #1 creates a signature of www.microsoft.com in an XML file and then verifies the file.  The second example demonstrates how to call members of the <xref:System.Security.Cryptography.Xml.XmlDsigC14NTransform> class.  
+ This section contains two code examples. The first example demonstrates how to sign non-XML data using a detached signature. Example #1 creates a signature of `www.microsoft.com` in an XML file and then verifies the file. The second example demonstrates how to call members of the <xref:System.Security.Cryptography.Xml.XmlDsigC14NTransform> class.  
   
  **Example #1**  
   

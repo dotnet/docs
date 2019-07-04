@@ -42,9 +42,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, www.fourthcoffee.com in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, `www.fourthcoffee.com` in the URL `http://www.fourthcoffee.com/process/grind.htm`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.  
   
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name string *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match. The site name string * will match any site, but will not match code that has no site evidence.  
+ Sites can be matched exactly, or by a wildcard ("\*") prefix at the dot delimiter. For example, the site name string `*.fourthcoffee.com` matches `fourthcoffee.com` as well as `www.fourthcoffee.com`. Without a wildcard, the site name must be a precise match. The site name string \* will match any site, but will not match code that has no site evidence.  
   
 > [!IMPORTANT]
 >  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], identity permissions are not used.  
@@ -164,9 +164,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, www.fourthcoffee.com in the URL http://www.fourthcoffee.com/process/grind.htm. This excludes port numbers. If a given URL is http://www.fourthcoffee.com:8000/, the site is www.fourthcoffee.com, not www.fourthcoffee.com:8000.  
+ Site identity is only defined for code from URLs with the protocols of HTTP, HTTPS, and FTP. A site is the string between the "//" after the protocol of a URL and the following "/", if present, for example, `www.fourthcoffee.com` in the URL `http://www.fourthcoffee.com/process/grind.htm`. This excludes port numbers. If a given URL is `http://www.fourthcoffee.com:8000/`, the site is `www.fourthcoffee.com`, not `www.fourthcoffee.com:8000`.  
   
- Sites can be matched exactly, or by a wildcard ("*") prefix at the dot delimiter. For example, the site name string *.fourthcoffee.com matches fourthcoffee.com as well as www.fourthcoffee.com. Without a wildcard, the site name must be a precise match.  
+ Sites can be matched exactly, or by a wildcard ("\*") prefix at the dot delimiter. For example, the site name string `*.fourthcoffee.com` matches `fourthcoffee.com` as well as `www.fourthcoffee.com`. Without a wildcard, the site name must be a precise match.  
   
  ]]></format>
         </remarks>

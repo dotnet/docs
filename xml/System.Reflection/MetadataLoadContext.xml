@@ -95,14 +95,14 @@ The core assembly is not loaded until necessary. The following APIs do not trigg
 * <xref:System.Reflection.MetadataLoadContext.LoadFromStream%2A?displayProperty=nameWithType>
 * <xref:System.Reflection.MetadataLoadContext.LoadFromAssemblyPath%2A?displayProperty=nameWithType>
 * <xref:System.Reflection.MetadataLoadContext.LoadFromByteArray%2A?displayProperty=nameWithType>
-* <System.Reflection.Assembly.GetName%2A?displayProperty=nameWithType>
-* <System.Reflection.Assembly.FullName?displayProperty=nameWithType>
-* <System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType>
-* <System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>
-* <System.Reflection.Assembly.DefinedTypes?displayProperty=nameWithType>
-* <System.Reflection.Assembly.GetExportedTypes%2A?displayProperty=nameWithType>
-* <System.Reflection.Assembly.GetForwardedTypes%2A?displayProperty=nameWithType>
-* <System.Reflection.Assembly.GetType(System.String,System.Boolean,System.Boolean)?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.GetName%2A?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.FullName?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.GetReferencedAssemblies%2A?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.DefinedTypes?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.GetExportedTypes%2A?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.GetForwardedTypes%2A?displayProperty=nameWithType>
+* <xref:System.Reflection.Assembly.GetType(System.String,System.Boolean,System.Boolean)?displayProperty=nameWithType>
 * <xref:System.Type.Name?displayProperty=nameWithType>
 * <xref:System.Type.FullName?displayProperty=nameWithType>
 * <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>
@@ -111,11 +111,11 @@ If a core assembly cannot be found or if the core assembly is missing types, thi
             
 * APIs that need to parse signatures or typespecs and return the results as <xref:System.Type> objects will throw an exception. For example:
 
- * <xref:System.Reflection.MethodInfo.ReturnType?displayProperty=nameWithType>
- * System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>
- * <xref:System.Type.BaseType?displayProperty-nameWithType>
- * <xref:System.Type.GetInterfaces%2A?displayProperty=nameWithType>
-            
+  * <xref:System.Reflection.MethodInfo.ReturnType?displayProperty=nameWithType>
+  * <xref:System.Reflection.MethodBase.GetParameters%2A?displayProperty=nameWithType>
+  * <xref:System.Type.BaseType?displayProperty-nameWithType>
+  * <xref:System.Type.GetInterfaces%2A?displayProperty=nameWithType>
+
 * APIs that need to compare types to well-known core types will not throw an exception, and the comparison will evaluate to `false`. For example, if you do not specify a core assembly, <xref:System.Type.IsPrimitive> will return `false` for everything, even types named <xref:System.Int32>. Similarly, <xref:System.Type.GetTypeCode%2A?displayProperty=nameWithType> will return <xref:System.TypeCode.Object> for everything.
             
 * If a metadata entity sets flags that surface as a pseudo-custom attribute, and the core assembly does not contain the pseudo-custom attribute type, the necessary constructor or any of the parameter types of the constructor, the <xref:System.Reflection.MetadataLoadContext> will not throw. It will omit the pseudo-custom attribute from the list of returned attributes.
@@ -233,7 +233,9 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
         <remarks>
           <format type="text/markdown"><![CDATA[
 ## Remarks
-Note that the behavior of this method matches the behavior of <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName%2A?displayProperty=nameWithType> resolve event but does not match the behavior of <xxref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType>. (The latter gives up without raising its resolve event.)
+
+Note that the behavior of this method matches the behavior of the <xref:System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyName%2A?displayProperty=nameWithType> resolve event but does not match the behavior of <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType>. (The latter gives up without raising its resolve event.)
+
 ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">The resolver returns <see langword="null" />.</exception>

@@ -377,7 +377,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the namespace of the <see langword="&lt;portType&gt;" /> element in Web Services Description Language (WSDL).</summary>
-        <value>The WSDL namespace of the <see langword="&lt;portType&gt;" /> element. The default value is "http://tempuri.org".</value>
+        <value>The WSDL namespace of the <see langword="&lt;portType&gt;" /> element. The default value is <c>"http://tempuri.org"</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

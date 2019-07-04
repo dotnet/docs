@@ -30,5 +30,5 @@ By eliminating unnecessary casts, implicit conversions can improve source code r
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [explicit](explicit.md)
-- [operator (C# Reference)](operator.md)
+- [Operator overloading](../operators/operator-overloading.md)
 - [How to: Implement User-Defined Conversions Between Structs](../../programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)

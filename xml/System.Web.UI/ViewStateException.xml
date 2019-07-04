@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns the same value as the `PATH_INFO` variable in the <xref:System.Web.HttpRequest.ServerVariables%2A> property. It returns the portion of the path after the host name. For example, in the URL http://www.contoso.com/virdir/page.html, <xref:System.Web.UI.ViewStateException.Path%2A> would return /virdir/page.html.  
+ This property returns the same value as the `PATH_INFO` variable in the <xref:System.Web.HttpRequest.ServerVariables%2A> property. It returns the portion of the path after the host name. For example, in the URL `http://www.contoso.com/virdir/page.html`, <xref:System.Web.UI.ViewStateException.Path%2A> would return /virdir/page.html.  
   
    
   

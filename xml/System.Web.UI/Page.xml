@@ -814,7 +814,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Page.ClientQueryString%2A> property contains the query string portion of the URL requested by the browser. For example, if the requested URL is "http://www.contoso.com/default.aspx?id=100", the <xref:System.Web.UI.Page.ClientQueryString%2A> property will contain "id=100". The <xref:System.Web.UI.Page.ClientQueryString%2A> property is encoded; use the <xref:System.Web.HttpServerUtility.UrlDecode%2A?displayProperty=nameWithType> method to decode the query string.  
+ The <xref:System.Web.UI.Page.ClientQueryString%2A> property contains the query string portion of the URL requested by the browser. For example, if the requested URL is `http://www.contoso.com/default.aspx?id=100`, the <xref:System.Web.UI.Page.ClientQueryString%2A> property will contain "id=100". The <xref:System.Web.UI.Page.ClientQueryString%2A> property is encoded; use the <xref:System.Web.HttpServerUtility.UrlDecode%2A?displayProperty=nameWithType> method to decode the query string.  
   
  ]]></format>
         </remarks>

@@ -341,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property contains the application-relative path to the page or user control that contains the current control. For example, if the Web page resides at http://www.contoso.com/application/subdirectory, the <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property returns "~/subdirectory".  
+ The <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property contains the application-relative path to the page or user control that contains the current control. For example, if the Web page resides at `http://www.contoso.com/application/subdirectory`, the <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property returns "~/subdirectory".  
   
  To return the virtual path ("application/subdirectory"), use the <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property.  
   
@@ -4418,7 +4418,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property specifies the path to the page or user control that contains the current control. For example, if the Web page resides at http://www.contoso.com/application/subdirectory, the <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property returns "application/subdirectory".  
+ The <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property specifies the path to the page or user control that contains the current control. For example, if the Web page resides at `http://www.contoso.com/application/subdirectory`, the <xref:System.Web.UI.Control.TemplateSourceDirectory%2A> property returns "application/subdirectory".  
   
  To return the application-relative virtual path ("~/subdirectory"), use the <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property.  
   

@@ -60,7 +60,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- On all devices, the link is rendered in such a way that the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property displays on the device to the user. When the user invokes the link, the browser navigates to the specified <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property. The application must contain code that verifies that a link is browsable on a particular device. For example, the link http://www.microsoft.com is not browsable on a WML-capable device.  
+ On all devices, the link is rendered in such a way that the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property displays on the device to the user. When the user invokes the link, the browser navigates to the specified <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property. The application must contain code that verifies that a link is browsable on a particular device. For example, the link <http://www.microsoft.com> is not browsable on a WML-capable device.  
   
  If the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property is empty, the value in the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property is also used for the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property. Specifically, when the text writer renders a link, it first checks the <xref:System.Web.UI.MobileControls.TextControl.Text%2A> property for the text to display; if that property is empty, it displays the value of the <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> property.  
   

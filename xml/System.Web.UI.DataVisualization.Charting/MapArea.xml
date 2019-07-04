@@ -403,7 +403,10 @@
 ## Remarks  
  If you set this property, a client-side image map will be automatically created, and a map area will be created with the attribute string appended to the \<MAP> tag that corresponds to the <xref:System.Web.UI.DataVisualization.Charting.Chart> object that this property is being set for. For example, setting the Target attribute using this property and setting the `Url` property of the first data point will result in HTML code that is similar to the following:  
   
- \<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />...\<MAP NAME="Chart1ImageMap">\<AREA SHAPE="rect" HREF="http://www.SomeDomain.ca" COORDS="69,120,106,309" Target\=_Blank>\</MAP>  
+```html
+<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />...
+<MAP NAME="Chart1ImageMap"><AREA SHAPE="rect" HREF="http://www.SomeDomain.ca" COORDS="69,120,106,309" Target=_Blank></MAP>
+```
   
  Because the entire string is appended to the \<MAP> tag, multiple attributes should be separated with a space.  
   
@@ -665,9 +668,12 @@
   
 ## Remarks  
  When you set this property, a client-side image map will automatically be created, and a map area will be created with the HREF attribute set to the specified anchor or URL. This map area will also use the dimensions that correspond to the relevant chart element. For example, if the HREF property is set for a data point, then HTML code similar to the following will be generated at run time:  
-  
- &lt;img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" /&gt;\<BR>...\<BR>&lt;MAP NAME="Chart1ImageMap"&gt;\<BR>&lt;AREA SHAPE="rect" HREF="http://www.healthquotes.ca" COORDS= "69,120,106,309"&gt;\<BR>&lt;/MAP&gt;  
-  
+
+```html 
+<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />
+<BR>...<BR><MAP NAME="Chart1ImageMap"><BR><AREA SHAPE="rect" HREF="http://www.healthquotes.ca" COORDS= "69,120,106,309"><BR></MAP>  
+```
+
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
  > [!IMPORTANT] 

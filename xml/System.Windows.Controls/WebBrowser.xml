@@ -71,7 +71,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
     // Only absolute URIs can be navigated to  
     if (!uri.IsAbsoluteUri)  
     {  
-        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        MessageBox.Show("The Address URI must be absolute. For example, 'http://www.microsoft.com'");  
         return;  
     }  
   
@@ -714,7 +714,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
     // Only absolute URIs can be navigated to  
     if (!uri.IsAbsoluteUri)  
     {  
-        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        MessageBox.Show("The Address URI must be absolute. For example, 'http://www.microsoft.com'");  
         return;  
     }  
   
@@ -825,7 +825,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
     // Only absolute URIs can be navigated to  
     if (!uri.IsAbsoluteUri)  
     {  
-        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        MessageBox.Show("The Address URI must be absolute. For example, 'http://www.microsoft.com'");  
         return;  
     }  
   

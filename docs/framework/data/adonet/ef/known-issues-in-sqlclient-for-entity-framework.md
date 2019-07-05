@@ -30,7 +30,7 @@ This section describes known issues related to the .NET Framework Data Provider 
 - A query that has a DEREF construct over a REF construct.  
   
 ## SKIP Operator  
- If you are using [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)], using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)]. For example, in the following query, more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:  
+ If you are using SQL Server 2000, using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for SQL Server 2000. For example, in the following query, more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:  
   
 ```  
 SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L  

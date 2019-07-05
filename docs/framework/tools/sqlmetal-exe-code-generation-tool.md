@@ -77,7 +77,7 @@ sqlmetal [options] [<input file>]
   
 |Option|Description|  
 |------------|-----------------|  
-|**\<input file>**|Specifies a SQL Server Express .mdf file, a [!INCLUDE[ssEW](../../../includes/ssew-md.md)] .sdf file, or a .dbml intermediate file.|  
+|**\<input file>**|Specifies a SQL Server Express .mdf file, a SQL Server Compact 3.5 .sdf file, or a .dbml intermediate file.|  
   
 ## Remarks  
  SqlMetal functionality actually involves two steps:  

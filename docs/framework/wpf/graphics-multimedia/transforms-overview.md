@@ -55,7 +55,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
 |<xref:System.Windows.Media.TransformGroup>|Groups multiple <xref:System.Windows.Media.TransformGroup> objects into a single <xref:System.Windows.Media.Transform> that you can then apply to transform properties.|[Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)|  
 |<xref:System.Windows.Media.MatrixTransform>|Creates custom transformations that are not provided by the other <xref:System.Windows.Media.Transform> classes. When you use a <xref:System.Windows.Media.MatrixTransform>, you manipulate a Matrix directly.|[Use a MatrixTransform to Create Custom Transforms](how-to-use-a-matrixtransform-to-create-custom-transforms.md)|  
   
- Windows Presentation Foundation (WPF) also provides [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
+ Windows Presentation Foundation (WPF) also provides 3-D transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
   
 <a name="transformationproperties"></a>   
 ## Common Transformation Properties  

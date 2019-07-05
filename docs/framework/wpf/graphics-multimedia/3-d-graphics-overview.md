@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 ---
 # 3-D Graphics Overview
-<a name="introduction"></a> The 3-D functionality in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enables developers to draw, transform, and animate 3-D graphics in both markup and procedural code. Developers can combine 2-D and 3-D graphics to create rich controls, provide complex illustrations of data, or enhance the user experience of an application's interface. 3-D support in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is not designed to provide a full-featured game-development platform. This topic provides an overview of [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] functionality in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics system.  
+<a name="introduction"></a> The 3-D functionality in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enables developers to draw, transform, and animate 3-D graphics in both markup and procedural code. Developers can combine 2-D and 3-D graphics to create rich controls, provide complex illustrations of data, or enhance the user experience of an application's interface. 3-D support in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is not designed to provide a full-featured game-development platform. This topic provides an overview of 3-D functionality in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics system.  
 
 <a name="threed_in_2d"></a>   
 ## 3-D in a 2-D Container  

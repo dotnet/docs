@@ -5791,7 +5791,9 @@ This method uses the [composite formatting feature](~/docs/standard/base-types/c
 [!INCLUDE[provider-string-format](~/includes/provider-string-format.md)]
 
 <a name="culture-sensitive-formatting" /> 
-## Example: Culture-sensitive formatting  
+
+### Example: Culture-sensitive formatting
+
  This example uses the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> method to display the string representation of some date and time values and numeric values by using several different cultures.  
   
  [!code-csharp-interactive[System.String.Format2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format2/cs/Example2.cs#2)]

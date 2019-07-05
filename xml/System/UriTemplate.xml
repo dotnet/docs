@@ -142,15 +142,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the `ignoreTrailingSlash` is set to `true`, trailing slashes on the end of template are ignored when matching a candidate URI. For example, a template such as "http://www.microsoft.com/customer/" would match the following candidate URIs:  
+ When the `ignoreTrailingSlash` is set to `true`, trailing slashes on the end of template are ignored when matching a candidate URI. For example, a template such as `http://www.microsoft.com/customer/` would match the following candidate URIs:  
   
--   "http://www.microsoft.com/customer/"  
-  
--   "http://www.microsoft.com/customer"  
-  
--   "http://www.microsoft.com/customer/?wsdl"  
-  
--   "http://www.microsoft.com/customer?wsdl"  
+- `http://www.microsoft.com/customer/`  
+- `http://www.microsoft.com/customer`  
+- `http://www.microsoft.com/customer/?wsdl`  
+- `http://www.microsoft.com/customer?wsdl`
   
  ]]></format>
         </remarks>

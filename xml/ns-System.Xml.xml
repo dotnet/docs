@@ -159,7 +159,7 @@
 </xs:schema>  
 ```  
   
- If you try to validate the following XML against the schema above, the validation will fail with the following exception: "Unhandled Exception: System.Xml.Schema.XmlSchemaValidationException: The 'e2' el element is invalid - The value 'abc' is invalid according to its datatype 'http://www.w3.org/2001/XMLSchema:int' - The string 'abc' is not a valid Int32 value."
+ If you try to validate the following XML against the schema above, the validation will fail with the following exception: "Unhandled Exception: System.Xml.Schema.XmlSchemaValidationException: The 'e2' el element is invalid - The value 'abc' is invalid according to its datatype `'http://www.w3.org/2001/XMLSchema:int'` - The string 'abc' is not a valid Int32 value."
   
 ```xml  
 <e3><e2>abc</e2></e3>  

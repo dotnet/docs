@@ -861,7 +861,7 @@
 ## Remarks  
  The setting of the <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> property determines whether <xref:System.Net.WebRequest> instances use the proxy server when accessing local Internet resources.  
   
- If <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> is `true`, requests to local Internet resources do not use the proxy server. Local requests are identified by the lack of a period (.) in the URI, as in http://webserver/, or access the local server, including http://localhost, http://loopback, or http://127.0.0.1. When <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> is `false`, all Internet requests are made through the proxy server.  
+ If <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> is `true`, requests to local Internet resources do not use the proxy server. Local requests are identified by the lack of a period (.) in the URI, as in `http://webserver/`, or access the local server, including `http://localhost`, `http://loopback`, or `http://127.0.0.1`. When <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> is `false`, all Internet requests are made through the proxy server.  
   
 > [!NOTE]
 >  Requests to a local host with a URI that contain a period use the proxy. To avoid using a proxy in these cases, create an entry for the host in the <xref:System.Net.WebProxy.BypassList%2A>.  
@@ -1183,7 +1183,7 @@
   
  <xref:System.Net.WebProxy.IsBypassed%2A> returns `true` under any of the following conditions:  
   
--   If <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> is `true` and `host` is a local URI. Local requests are identified by the lack of a period (.) in the URI, as in "http://webserver/".  
+-   If <xref:System.Net.WebProxy.BypassProxyOnLocal%2A> is `true` and `host` is a local URI. Local requests are identified by the lack of a period (.) in the URI, as in `http://webserver/`.  
   
 -   If `host` matches a regular expression in <xref:System.Net.WebProxy.BypassList%2A>.  
   

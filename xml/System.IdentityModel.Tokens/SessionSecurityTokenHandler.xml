@@ -482,7 +482,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following type URIs are supported: "http://schemas.microsoft.com/ws/2006/05/servicemodel/tokens/SecureConversation", "http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/sct", and "http://schemas.xmlsoap.org/ws/2005/02/sc/sct".  
+ The following type URIs are supported: 
+ 
+ - `http://schemas.microsoft.com/ws/2006/05/servicemodel/tokens/SecureConversation`
+ - `http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/sct`
+ - `http://schemas.xmlsoap.org/ws/2005/02/sc/sct`.  
   
  ]]></format>
         </remarks>

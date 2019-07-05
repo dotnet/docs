@@ -477,7 +477,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
    
   
 ## Examples  
- The following example creates a <xref:System.Uri> instance for the URI http://www.contoso.com/Hello%20World.htm. Because the contained URI is completely escaped and is in canonical form, the `dontEscape` parameter can be set to `true`.  
+ The following example creates a <xref:System.Uri> instance for the URI `http://www.contoso.com/Hello%20World.htm`. Because the contained URI is completely escaped and is in canonical form, the `dontEscape` parameter can be set to `true`.  
   
  [!code-cpp[Classic Uri.Uri1 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri1 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri1 Example/CS/source.cs#1)]
@@ -701,7 +701,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
    
   
 ## Examples  
- The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and catalog/shownew.htm to form the absolute URI http://www.contoso.com/catalog/shownew.htm.  
+ The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs `http://www.contoso.com` and `catalog/shownew.htm` to form the absolute URI `http://www.contoso.com/catalog/shownew.htm`.  
   
  [!code-cpp[Classic Uri.Uri3 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri3 Example/CS/source.cs#1)]
@@ -1112,7 +1112,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
    
   
 ## Examples  
- The following example writes the complete contents of the <xref:System.Uri> instance to the console. In the example shown, http://www.contoso.com/catalog/shownew.htm?date=today is written to the console.  
+ The following example writes the complete contents of the <xref:System.Uri> instance to the console. In the example shown, `http://www.contoso.com/catalog/shownew.htm?date=today` is written to the console.  
   
  [!code-cpp[Classic Uri.AbsoluteUri Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.AbsoluteUri Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.AbsoluteUri Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.AbsoluteUri Example/CS/source.cs#1)]
@@ -1609,7 +1609,7 @@ If you used an escaped string to construct this instance (for example, "http://[
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Uri.Equals%2A> method compares the two instances without regard to user information (<xref:System.Uri.UserInfo%2A>) and fragment (<xref:System.Uri.Fragment%2A>) parts that they might contain. For example, given the URIs http://www.contoso.com/index.htm#search and http://user:password@www.contoso.com/index.htm, the <xref:System.Uri.Equals%2A> method would return `true`.  
+ The <xref:System.Uri.Equals%2A> method compares the two instances without regard to user information (<xref:System.Uri.UserInfo%2A>) and fragment (<xref:System.Uri.Fragment%2A>) parts that they might contain. For example, given the URIs `http://www.contoso.com/index.htm#search` and `http://user:password@www.contoso.com/index.htm`, the <xref:System.Uri.Equals%2A> method would return `true`.  
   
  If one <xref:System.Uri> instance is formed with a Unicode host name and `comparand` parameter contains a <xref:System.Uri> instance or identifier that is formed with a host name that has the equivalent Punycode host name, then <xref:System.Uri.Equals%2A> returns `true` only if International Resource Identifier (IRI) and Internationalized Domain Name (IDN) support are enabled. Punycode names contain only ASCII characters and always start with the xn-- prefix.  
   
@@ -1900,7 +1900,7 @@ If you used an escaped string to construct this instance (for example, "http://[
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Uri.Fragment%2A> property gets any text following a fragment marker (#) in the URI, including the fragment marker itself. Given the URI http://www.contoso.com/index.htm#main, the <xref:System.Uri.Fragment%2A> property would return #main.  
+ The <xref:System.Uri.Fragment%2A> property gets any text following a fragment marker (#) in the URI, including the fragment marker itself. Given the URI `http://www.contoso.com/index.htm#main`, the <xref:System.Uri.Fragment%2A> property would return #main.  
   
  The <xref:System.Uri.Fragment%2A> property is not considered in any <xref:System.Uri.Equals%2A> comparison.  
   
@@ -3841,7 +3841,7 @@ If you used an escaped string to construct this instance (for example, "http://[
    
   
 ## Examples  
- The following example writes the scheme name (http) to the console for the http://www.contoso.com/ URI.  
+ The following example writes the scheme name (http) to the console for the `http://www.contoso.com/` URI.  
   
  [!code-cpp[Classic Uri.Scheme Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Scheme Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Scheme Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Scheme Example/CS/source.cs#1)]
@@ -3940,7 +3940,7 @@ If you used an escaped string to construct this instance (for example, "http://[
  The following example shows the absolute path and segments for two URIs. The second example illustrates that the fragment and query are not part of the absolute path and therefore are not segments.  
   
  Absolute URI:  
- http://www.contoso.com/Chapters/Chapter1/Sections/Section1.htm  
+ `http://www.contoso.com/Chapters/Chapter1/Sections/Section1.htm`
   
  Absolute path:  
  /Chapters/Chapter1/Sections/Section1.htm  
@@ -3953,7 +3953,7 @@ If you used an escaped string to construct this instance (for example, "http://[
  - Section1.htm  
   
  Absolute URI:  
- http://www.contoso.com/Chapters/Chapter1/Sections/Section1.htm#page1?answer=NO  
+ `http://www.contoso.com/Chapters/Chapter1/Sections/Section1.htm#page1?answer=NO`
   
  Absolute path:  
  /Chapters/Chapter1/Sections/Section1.htm  

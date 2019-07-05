@@ -15,7 +15,7 @@ A user-defined type can overload a predefined C# operator. That is, a type can p
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 
 - It includes both a `public` and a `static` modifier.
-- Unary operator takes one parameter. Binary operator takes two parameters. In each case, at least one parameter must have type `T` or `T?` where `T` is the type that contains the operator declaration.
+- A unary operator takes one parameter. A binary operator takes two parameters. In each case, at least one parameter must have type `T` or `T?` where `T` is the type that contains the operator declaration.
 
 The following example defines a simplified structure to represent a rational number. The structure overloads some of the [arithmetic operators](arithmetic-operators.md):
 

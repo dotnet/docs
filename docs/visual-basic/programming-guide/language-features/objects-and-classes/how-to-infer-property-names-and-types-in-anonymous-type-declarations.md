@@ -37,10 +37,11 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      The resulting type for `anon` would have one property, `Book`, of type <xref:System.Collections.IEnumerable>(Of XElement).  
   
 - From a function that has no parameters, such as `SomeFunction` in the following example.  
-  
-     `Dim sc As New SomeClass`  
-  
-     `Dim anon1 = New With {Key sc.SomeFunction()}`  
+
+  ```vb
+     Dim sc As New SomeClass
+     Dim anon1 = New With {Key sc.SomeFunction()}
+  ```
   
      The variable `anon2` in the following code is an anonymous type that has one property, a character named `First`. This code will display a letter "E," the letter that is returned by function <xref:System.Linq.Enumerable.First%2A>.  
   
@@ -51,20 +52,22 @@ Anonymous types provide no mechanism for directly specifying the data types of p
 #### Name inference will fail in many circumstances, including the following:  
   
 - The inference derives from the invocation of a method, a constructor, or a parameterized property that requires arguments. The previous declaration of `anon1` fails if `someFunction` has one or more arguments.  
-  
-     `' Not valid.`  
-  
-     `' Dim anon3 = New With {Key sc.someFunction(someArg)}`  
-  
+
+    ```vb
+    ' Not valid.
+    ' Dim anon3 = New With {Key sc.someFunction(someArg)}
+    ```
+    
      Assignment to a new property name solves the problem.  
-  
-     `' Valid.`  
-  
-     `Dim anon4 = New With {Key .FunResult = sc.someFunction(someArg)}`  
-  
+
+    ```vb
+    ' Valid.
+    Dim anon4 = New With {Key .FunResult = sc.someFunction(someArg)}
+    ```
+
 - The inference derives from a complex expression.  
   
-    ```  
+    ```vb  
     Dim aString As String = "Act "  
     ' Not valid.  
     ' Dim label = New With {Key aString & "IV"}  
@@ -75,41 +78,43 @@ Anonymous types provide no mechanism for directly specifying the data types of p
      [!code-vb[VbVbalrAnonymousTypes#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#14)]  
   
 - Inference for multiple properties produces two or more properties that have the same name. Referring back to declarations in earlier examples, you cannot list both `product.Name` and `car1.Name` as properties of the same anonymous type. This is because the inferred identifier for each of these would be `Name`.  
-  
-     `' Not valid.`  
-  
-     `' Dim anon5 = New With {Key product.Name, Key car1.Name}`  
-  
+
+     ```vb
+     ' Not valid.
+     ' Dim anon5 = New With {Key product.Name, Key car1.Name}
+     ```
+     
      The problem can be solved by assigning the values to distinct property names.  
   
      [!code-vb[VbVbalrAnonymousTypes#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#36)]  
   
      Note that changes in case (changes between uppercase and lowercase letters) do not make two names distinct.  
-  
-     `Dim price = 0`  
-  
-     `' Not valid, because Price and price are the same name.`  
-  
-     `' Dim anon7 = New With {Key product.Price, Key price}`  
+
+     ```vb
+     Dim price = 0
+     ' Not valid, because Price and price are the same name.
+     ' Dim anon7 = New With {Key product.Price, Key price}
+     ```
   
 - The initial type and value of one property depends on another property that is not yet established. For example, `.IDName = .LastName` is not valid in an anonymous type declaration unless `.LastName` is already initialized.  
-  
-     `' Not valid.`  
-  
-     `' Dim anon8 = New With {Key .IDName = .LastName, Key .LastName = "Jones"}`  
-  
+
+     ```vb
+     ' Not valid.
+     ' Dim anon8 = New With {Key .IDName = .LastName, Key .LastName = "Jones"}
+     ```
+     
      In this example, you can fix the problem by reversing the order in which the properties are declared.  
   
      [!code-vb[VbVbalrAnonymousTypes#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#15)]  
   
 - A property name of the anonymous type is the same as the name of a member of <xref:System.Object>. For example, the following declaration fails because `Equals` is a method of <xref:System.Object>.  
   
-     `' Not valid.`  
-  
-     `' Dim relationsLabels1 = New With {Key .Equals = "equals", Key .Greater = _`  
-  
-     `'                       "greater than", Key .Less = "less than"}`  
-  
+     ```vb
+     ' Not valid.
+     ' Dim relationsLabels1 = New With {Key .Equals = "equals", Key .Greater = _
+     '                       "greater than", Key .Less = "less than"}
+     ```
+     
      You can fix the problem by changing the property name:  
   
      [!code-vb[VbVbalrAnonymousTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#16)]  

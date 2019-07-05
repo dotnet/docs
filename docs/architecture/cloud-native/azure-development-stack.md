@@ -1,7 +1,7 @@
 ---
 title: The Azure Cloud Native Development Stack
 description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud Native Development Stack
-author: ardalis
+author: vettor
 ms.date: 06/30/2019
 ---
 
@@ -9,7 +9,7 @@ ms.date: 06/30/2019
 
 Microsoft offers organizations seeking to build cloud native systems a compelling value proposition: A tightly integrated, but open, end-to-end stack for constructing and managing cloud native workloads.
 
-Moreover, Microsoft is [making tremendous investments in open source](https://www.zdnet.com/article/why-microsoft-is-turning-into-an-open-source-company/) and cross-platform development tools to reach a wider range of developers - these tools are easy to acquire and free in many cases. It behooves CIOs to think differently about Microsoft development tools and investments in the Azure cloud as both provide comprehensive support for Linux and open-source initiatives.
+Moreover, Microsoft is [making tremendous investments in open source](https://www.zdnet.com/article/why-microsoft-is-turning-into-an-open-source-company/) and cross-platform development tools to reach a wider range of developers - these tools are easy to acquire and free in many cases. It behooves IT leaders to think differently about Microsoft development tools and investments in the Azure cloud as both provide comprehensive support for Linux and open-source initiatives.
 
 We'll examine key considerations of the stack.
 
@@ -23,7 +23,7 @@ Interestingly, with the growth of modern development platforms and container orc
 
 Why is that?
 
-To start, most modern development platforms natively support cross-platform portability. Developers write an application in a preferred language, deploy it to the operating system of choice and the platform runtime engine automatically handles the environment-specific dependencies. Later, that same application package can be redeployed to a different operating system and ran just the same with the appropriate runtime engine and configuration changes.
+To start, most modern development platforms natively support cross-platform portability. Developers write an application in a preferred language, deploy it to the operating system of choice, and the platform runtime engine automatically handles the environment-specific dependencies. Later, that same application package can be redeployed to a different operating system and ran just the same with the appropriate runtime engine and configuration changes.
 
 Even further clouding operating system concerns is the explosive growth of containers. Containers allow applications to run independently of the operating system. "If you take a look at the way that containers have evolved, it's basically an evolution of the OS model we've had to this point," says Microsoft Azure CTO [Mark Russinovich](https://www.google.com/search?q=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&rlz=1C1GCEU_enFR819US820&oq=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&aqs=chrome..69i57.915j0j9&sourceid=chrome&ie=UTF-8). The operating system still exists, but its role has become further abstracted. Instead, the container orchestrator, which will we cover in detail later in the book, has become the *de-facto operating system* of choice. Developers and cloud administrators are less concerned about the operating system on which the container runs provided that the services exposed by container are reliable and can be quickly deployed.
 
@@ -39,7 +39,7 @@ As cloud native architecture and container orchestrators evolve, expect to see l
 
 The Microsoft's .NET development platform originated in 2002 and is among the most loved technologies, according to a [Stack Overflow survey](http://dontcodetired.com/blog/post/Stack-Overflow-Developer-Survey-2018-Overview-for-NET-Developers).
 
-Fast-forward to 2019 and the [Microsoft .NET Core platform](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet), a modernized rewrite of .NET. A free, open source and cross-platform development stack for building applications. It is a feature-rich platform that can be used to build services, devices and IoT applications, among others. It is maintained by Microsoft and the .NET community on GitHub. Cross-platform, applications built with .NET Core can run on Windows, macOS, and several flavors of Linux.
+Fast-forward to 2019 and the [Microsoft .NET Core platform](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet), a modernized rewrite of .NET. A free, open source and cross-platform development stack for building applications. It is a feature-rich platform that can be used to build services, devices and IoT applications, among others. It is maintained by Microsoft and the .NET community on GitHub. Cross-platform, applications built with .NET Core can run on Windows, macOS, and most flavors of Linux.
 
 .NET Core supports multiple programming languages, editors, and libraries. It fully supports the C# programming language, which is a widely used and mature language that is frequently updated and continually modernized.
 
@@ -71,7 +71,7 @@ Both Visual Studio and Visual Studio Code have tight integration with the Azure 
 
 ### Other Open Source Editors
 
-But it doesn't stop there. Not only does .NET Core embrace cross-platform support, but it can be written across cross-platform. Figure 1-12 presents open-source development tools that can be used to construct .NET Core cloud native applications across multiple environments.
+But it doesn't stop there. Not only does .NET Core embrace cross-platform support, but it can be developed across cross-platform. Figure 1-12 presents open-source development tools that can be used to construct .NET Core cloud native applications across multiple environments.
 
 ![Cross-platform editors for .NET Core](media/cross-platform-editors-for-dotnet-core.png)
 **Figure 1-12**. Cross-platform editors for .NET Core
@@ -82,11 +82,11 @@ But it doesn't stop there. Not only does .NET Core embrace cross-platform suppor
 
 Fortunately, development teams have many available options when selecting a repository.
 
-One of them is [GitHub](https://github.com/). Founded in 2009, GitHub is an extremely popular web-based repository for hosting projects, documentation, and code. Apple, Amazon, Google, and many other large tech companies use GitHub. Using the open-source, distributed version control system named [Git](https://en.wikipedia.org/wiki/Git) as its foundation, GitHub adds its own features, including defect tracking, feature and pull requests, tasks management and wikis for each code base.
+One of them is [GitHub](https://github.com/). Founded in 2009, GitHub is an extremely popular web-based repository for hosting projects, documentation, and code. Apple, Amazon, Google, and many other large tech companies use GitHub. Using the open-source, distributed version control system named [Git](https://en.wikipedia.org/wiki/Git) as its foundation, GitHub adds its own features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
 
 As of June 2018, GitHub had over 28 million users, making it the largest host of source code in the world. In October of 2018, Microsoft purchased GitHub. Microsoft has pledged that GitHub will remain an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company.
 
-GitHub offers plans for enterprise, team, professional and free accounts and is an excellent location on which to store your source code.
+GitHub offers plans for enterprise, team, professional, and free accounts and is an excellent location on which to store your source code.
 
 ## CI/CD in Azure DevOps
 
@@ -101,7 +101,7 @@ GitHub offers plans for enterprise, team, professional and free accounts and is 
 ![ Steps in the CI Pipeline](media/steps-in-the-ci-pipeline.png)
 **Figure 1-13**. Steps in the CI Pipeline
 
-The beauty of the pipeline approach is that additional steps and checks can be inserted to map the process to the exact deployment requirements for your organization.
+The beauty of the pipeline approach is that additional steps and checks can be inserted to map the process to the deployment requirements of your organization.
 
 The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve. The CI process outputs project artifact items that are used by the CD pipeline to drive automatic deployments. With consistency in the integration process, teams can commit code changes more frequently, which leads to better collaboration and software quality.
 
@@ -131,7 +131,7 @@ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD
 
 ## Summary
 
-In this chapter, we flew over cloud native computing at 5,000 feet, providing a definition along with the key characteristics of a cloud native application. We looked at the type of applications that might justify this type of investment and effort. Lastly, we looked cloud native development stack available in the Azure Cloud <https://deloitte.wsj.com/cio/2018/08/27/3-reasons-to-go-cloud-native/> working toward a [cloud-native](https://deloitte.wsj.com/cio/2016/12/12/making-the-leap-to-a-cloud-native-world/) mindset reorganizing people and processes and reworking applications with the cloud in mind organizations can maximize the benefits of their cloud efforts.
+In this chapter, we flew over cloud native computing at 5,000 feet, providing a definition along with the key characteristics of a cloud native application. We looked at the type of applications that might justify this investment and effort. Lastly, we looked cloud native development stack available in the Azure Cloud <https://deloitte.wsj.com/cio/2018/08/27/3-reasons-to-go-cloud-native/> working toward a [cloud-native](https://deloitte.wsj.com/cio/2016/12/12/making-the-leap-to-a-cloud-native-world/) mindset reorganizing people and processes and reworking applications with the cloud in mind organizations can maximize the benefits of their cloud efforts.
 
 ### References
 

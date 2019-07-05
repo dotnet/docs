@@ -1,6 +1,7 @@
 ---
 title: Candidate Apps for Cloud Native
 description: Architecting Cloud Native .NET Apps for Azure | Candidate Apps for Cloud Native
+author: vettor
 ms.date: 06/30/2019
 ---
 # Candidate Apps for Cloud Native
@@ -28,23 +29,27 @@ The free Microsoft e-book [Modernize existing .NET applications with Azure cloud
 ![Strategies for migrating legacy workloads](media/strategies-for-migrating-legacy-workloads.png)
 **Figure 1-11**. Strategies for migrating legacy workloads
 
-Non-critical monolithic apps might benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-azure-iaas)) effort where an on-premises workload is re-hosted in the cloud, as-is, typically to a cloud-based VM leveraging the IaaS (Infrastructure as a Service) model. Azure includes several tools such as ([AzureMigrate](https://aka.ms/azuremigrate), [Azure SiteRecovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/)) to make such a move easier.
+Non-critical monolithic apps might benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-azure-iaas)) effort where an on-premises workload is re-hosted in the cloud, as-is, typically to a cloud-based VM, leveraging the IaaS (Infrastructure as a Service) model. Azure includes several tools such as ([AzureMigrate](https://aka.ms/azuremigrate), [Azure SiteRecovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/)) to make such a move easier.
 
 Business critical systems may warrant an enhanced lift-and-shift (*Cloud Optimized*) that include deployment optimizations to leverage key cloud services - without changing the core architecture of the application. You might [containerize](https://docs.microsoft.com/virtualization/windowscontainers/about/) the application to capture the code, runtime, and dependencies - without changing code - to increase deployment agility and embrace many cloud-based features.
 
-Finally, strategic enterprise-critical applications might best benefit from a *Cloud-Native* approach, the subject of this book. This approach provides for increased long-term agility and more efficient application maintenance but comes at a cost of rearchitecting and rewriting code.
+Finally, strategic enterprise-critical applications might best benefit from a *Cloud-Native* approach, the subject of this book. This approach provides for increased long-term agility and more efficient application maintenance, but comes at a cost of re-platforming, re-architecting, and rewriting code.
 
 If you and your team believe that a cloud native approach might be justified, it behooves you to rationalize the decision with the business needs of your organization. What exactly is the business problem that a cloud native approach will solve? How would it align with business needs?
 
-- Rapid releases of features?
+- Rapid releases of features with increased confidence?
 
-- Release with confidence
+- Fine-grained scalability - more efficient usage of resources?
 
 - Improve system resiliency?
+
+- Improve system performance?
 
 - Provide more visibility into operations?
 
 - Blend platforms and data stores to arrive at the best tool for the job?
+
+- Future-proofing application investment?
 
 The right strategy for you depends on your organization's needs and priorities, and the system that you're targeting. In many cases, you may find it more cost effective to create a simpler monolithic application, or add coarse-grained services to an N-Tier app. In these cases, you can still make full use of cloud PaaS capabilities like the ones offered by Azure App Service.
 

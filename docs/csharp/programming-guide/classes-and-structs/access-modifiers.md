@@ -49,7 +49,7 @@ All types and type members have an accessibility level, which controls whether t
   
  The type of any member that is a field, property, or event must be at least as accessible as the member itself. Similarly, the return type and the parameter types of any member that is a method, indexer, or delegate must be at least as accessible as the member itself. For example, you cannot have a public method `M` that returns a class `C` unless `C` is also public. Likewise, you cannot have a protected property of type `A` if `A` is declared as private.  
   
- User-defined operators must always be declared as public. For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).  
+ User-defined operators must always be declared as public and static. For more information, see [Operator overloading](../../../csharp/language-reference/operators/operator-overloading.md).  
   
  Finalizers cannot have accessibility modifiers.  
   

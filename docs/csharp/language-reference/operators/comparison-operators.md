@@ -57,7 +57,7 @@ The `>=` operator returns `true` if its left-hand operand is greater than or equ
 
 ## Operator overloadability
 
-A user-defined type can [overload](../keywords/operator.md) the `<`, `>`, `<=`, and `>=` operators.
+A user-defined type can [overload](operator-overloading.md) the `<`, `>`, `<=`, and `>=` operators.
 
 If a type overloads one of the `<` or `>` operators, it must overload both `<` and `>`. If a type overloads one of the `<=` or `>=` operators, it must overload both `<=` and `>=`.
 

@@ -99,5 +99,6 @@ The example below demonstrates adding long arrays elements using <xref:System.Nu
         }
 ```
 
-# Dont's of SIMD
+# Remarks
 
+SIMD is more likely to remove one bottleneck and expose the next, for example memory throughput. In general the performance benefit of using SIMD varies depending on the specific scenario, and in some cases it can even perform worse than simpler non-SIMD equivalent code. 

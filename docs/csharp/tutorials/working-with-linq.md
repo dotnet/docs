@@ -348,4 +348,3 @@ For more information on LINQ, see:
   - [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
   - [Query Syntax and Method Syntax in LINQ (C#)](../programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md)
   - [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)
-    

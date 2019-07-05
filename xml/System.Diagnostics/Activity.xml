@@ -443,7 +443,7 @@ An operation name is the *coarsest* name that is useful for grouping/filtering. 
 
 If the parent for this <xref:System.Diagnostics.Activity> comes from outside the process, the <xref:System.Diagnostics.Activity> does not have a parent but *may* have a parent ID (which was deserialized from the parent).  
 
-This property value can be `null` if this is a root <see cref="T:System.Diagnostics.Activity" /> (i.e. it has no <xref:System.Diagnostics.Activity.Parent>).  See [Id Format](href="https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format) for more details.
+This property value can be `null` if this is a root <see cref="T:System.Diagnostics.Activity" /> (i.e. it has no <xref:System.Diagnostics.Activity.Parent>).  See [Id Format](href="https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format") for more details.
 
 ]]></format>
         </remarks>

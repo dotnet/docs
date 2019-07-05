@@ -6,7 +6,7 @@ ms.assetid: f2a95ead-c845-4e97-9fb3-04b444f7ed81
 # SqlClient for Entity FrameworkTypes
 The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest file includes the list of the provider primitive types, facets for each type, the mappings between the conceptual and storage model primitive types, and the promotion and conversion rules between the conceptual and storage model primitive types.  
   
- The following table describes types for SQL Server 2008, [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)], and SQL Server 2000 databases and how these types map to conceptual model types. Some new types were introduced in later versions of SQL Server are not supported in the older versions of SQL Server. These types are noted in the table below.  
+ The following table describes types for SQL Server 2008, SQL Server 2005, and SQL Server 2000 databases and how these types map to conceptual model types. Some new types were introduced in later versions of SQL Server are not supported in the older versions of SQL Server. These types are noted in the table below.  
   
 |Provider type<br /><br /> name|Provider type<br /><br /> attributes|`EDMSimpleType`<br /><br /> name|Facets|  
 |----------------------------|----------------------------------|------------------------------|------------|  

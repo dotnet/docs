@@ -36,7 +36,7 @@ var linqExperts = programmers.Where(p => p.IsNewToLINQ)
 
 ```vb
 Dim linqExperts = programmers.Where(Function(p) p.IsNewToLINQ).
-                             Select(Function(p) new LINQExpert(p))
+                             Select(Function(p) New LINQExpert(p))
 ```
 
 ## LINQ is Expressive
@@ -55,7 +55,7 @@ foreach (var pet in pets)
 ```
 
 ```vb
-Dim petLookup = New Dictionary(Of Integer, Pet)();
+Dim petLookup = New Dictionary(Of Integer, Pet)()
 
 For Each pet in pets
     petLookup.Add(pet.RFID, pet)
@@ -94,7 +94,7 @@ public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement docume
 
 ```vb
 Public Shared Function FindAllElementsWithAttribute(documentRoot As XElement, elementName As String,
-                                           attributeName As String, value As String) As IEnumerable<XElement>
+                                           attributeName As String, value As String) As IEnumerable(Of XElement)
     Return From el In documentRoot.Elements(elementName)
            Where el.Element(attributeName).ToString() = value
            Select el
@@ -209,7 +209,7 @@ var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 
 ```vb
 ' Transforms the list of kennels into a list of all their dogs.
-Dim allDogsFromKennels = kennels.SelectMany(Function(kennel) kennel.Dogs);
+Dim allDogsFromKennels = kennels.SelectMany(Function(kennel) kennel.Dogs)
 ```
 
 * Union between two sets (with custom comparator):
@@ -246,6 +246,7 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
 // Gets all the short-haired dogs between two different kennels.
 var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthComparer());
 ```
+
 ```vb
 Public Class DogHairLengthComparer 
   Inherits IEqualityComparer(Of Dog)

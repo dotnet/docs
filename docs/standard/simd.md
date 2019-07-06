@@ -13,7 +13,7 @@ ms.technology: dotnet-standard
 
 SIMD (Single instruction, multiple data) provides the functionality to do multiple processes on a single core to achieve peak performance. In .NET there is set of SIMD-enabled types under <xref:System.Numerics> namespace. SIMD operations can be parallelized at the hardware level. That increases the throughput of the vectorized computations, which are common in mathematical, scientific, and graphics apps.
 
-# .NET SIMD-enabled types
+## .NET SIMD-enabled types
 
 The .NET SIMD-enabled types include the following:
 
@@ -31,7 +31,7 @@ The .NET SIMD-enabled types include the following:
   
 The SIMD-enabled types are implemented in such a way that they can be used with non-SIMD-enabled hardware or JIT compilers. To take advantage of SIMD instructions, your 64-bit apps must be run by the runtime that uses the RyuJIT compiler, which is included in .NET Core and in the .NET Framework 4.6 and later versions. It adds SIMD support when targeting 64-bit processors.
 
-# How to use SIMD?
+## How to use SIMD?
 
  Before executing custom SIMD algorithms, it is possible to check if the host machine supports SIMD using <xref:System.Numerics.Vector.IsHardwareAccelerated?displayProperty=nameWithType>, which returns a <xref:System.Boolean>.
 
@@ -99,6 +99,6 @@ The example below demonstrates adding long arrays elements using <xref:System.Nu
         }
 ```
 
-# Remarks
+## Remarks
 
 SIMD is more likely to remove one bottleneck and expose the next, for example memory throughput. In general the performance benefit of using SIMD varies depending on the specific scenario, and in some cases it can even perform worse than simpler non-SIMD equivalent code. 

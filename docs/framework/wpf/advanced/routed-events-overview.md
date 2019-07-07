@@ -92,7 +92,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
   
  Where routed events become powerful is if you use any of the suggested scenarios: defining common handlers at a common root, compositing your own control, or defining your own custom control class.  
   
- Routed event listeners and routed event sources do not need to share a common event in their hierarchy. Any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> can be an event listener for any routed event. Therefore, you can use the full set of routed events available throughout the working [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] set as a conceptual "interface" whereby disparate elements in the application can exchange event information. This "interface" concept for routed events is particularly applicable for input events.  
+ Routed event listeners and routed event sources do not need to share a common event in their hierarchy. Any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> can be an event listener for any routed event. Therefore, you can use the full set of routed events available throughout the working API set as a conceptual "interface" whereby disparate elements in the application can exchange event information. This "interface" concept for routed events is particularly applicable for input events.  
   
  Routed events can also be used to communicate through the element tree, because the event data for the event is perpetuated to each element in the route. One element could change something in the event data, and that change would be available to the next element in the route.  
   

@@ -126,9 +126,9 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ```  
   
 ## Errors Using SQL Compact 3.5  
- Q. I get an error when I drag tables out of a [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] database.  
+ Q. I get an error when I drag tables out of a SQL Server Compact 3.5 database.  
   
- A. The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)], although the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime does. In this situation, you must create your own entity classes and add the appropriate attributes.  
+ A. The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support SQL Server Compact 3.5, although the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime does. In this situation, you must create your own entity classes and add the appropriate attributes.  
   
 ## Errors in Inheritance Relationships  
  Q. I used the toolbox inheritance shape in the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to connect two entities, but I get errors.  
@@ -138,7 +138,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
 ## Provider Model  
  Q. Is a public provider model available?  
   
- A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and [!INCLUDE[ssEW](../../../../../../includes/ssew-md.md)] only.  
+ A. No public provider model is available. At this time, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports SQL Server and SQL Server Compact 3.5 only.  
   
 ## SQL-Injection Attacks  
  Q. How is [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] protected from SQL-injection attacks?  

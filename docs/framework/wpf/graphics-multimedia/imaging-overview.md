@@ -27,9 +27,9 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
 
 <a name="_wpfImaging"></a>   
 ## WPF Imaging Component  
- [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] provides significant enhancements in imaging capabilities within [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the [!INCLUDE[TLA#tla_gdi](../../../../includes/tlasharptla-gdi-md.md)] or [!INCLUDE[TLA#tla_gdiplus](../../../../includes/tlasharptla-gdiplus-md.md)] libraries. These [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is designed to overcome the shortcomings of [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] and [!INCLUDE[TLA2#tla_gdiplus](../../../../includes/tla2sharptla-gdiplus-md.md)] and provide a new set of [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] to display and use images within your applications.  
+ [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] provides significant enhancements in imaging capabilities within [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the [!INCLUDE[TLA#tla_gdi](../../../../includes/tlasharptla-gdi-md.md)] or [!INCLUDE[TLA#tla_gdiplus](../../../../includes/tlasharptla-gdiplus-md.md)] libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is designed to overcome the shortcomings of [!INCLUDE[TLA2#tla_gdi](../../../../includes/tla2sharptla-gdi-md.md)] and [!INCLUDE[TLA2#tla_gdiplus](../../../../includes/tla2sharptla-gdiplus-md.md)] and provide a new set of API to display and use images within your applications.  
   
- There are two ways to access the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], a managed component and an unmanaged component. The unmanaged component provides the following features.  
+ There are two ways to access the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] API, a managed component and an unmanaged component. The unmanaged component provides the following features.  
   
 - Extensibility model for new or proprietary image formats.  
   
@@ -45,9 +45,9 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 - The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features such as [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
- The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
+ The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] API reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
- This topic provides additional information about the managed component. For more information on the unmanaged [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
+ This topic provides additional information about the managed component. For more information on the unmanaged API see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  
@@ -177,7 +177,7 @@ Image brushes can fill shapes, controls, text, and more
 ## Codec Extensibility  
  A core feature of [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] so new image formats can automatically be used by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
- For a sample of the extensibility [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
+ For a sample of the extensibility API, see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
 >  The codec must be digitally signed for the system to recognize it.  

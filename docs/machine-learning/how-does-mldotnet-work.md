@@ -160,16 +160,19 @@ In this section, we go through the architectural patterns of ML.NET. If you are 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs**. A catalog is a factory for data loading and saving, transforms, trainers, and model operation components. Each catalog object has methods to create the different types of components:
 
 ||||
-|-|-|-|
-|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>|
-|Data preparation||<xref:Microsoft.ML.TransformsCatalog>|
-|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>|
-||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>|
-||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>|
-||Ranking|<xref:Microsoft.ML.RankingCatalog>|
-||Regression|<xref:Microsoft.ML.RegressionCatalog>|
-||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|
-|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>|
+|-|-|-|-|
+|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>||
+|Data preparation||<xref:Microsoft.ML.TransformsCatalog>||
+|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||
+||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>||
+||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>||
+||Clustering|<xref:Microsoft.ML.ClusteringCatalog>||
+||Forecasting|<xref:Microsoft.ML.Forecasting>||
+||Ranking|<xref:Microsoft.ML.RankingCatalog>||
+||Regression|<xref:Microsoft.ML.RegressionCatalog>||
+||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|add Microsoft.ML.Recommender|
+||TimeSeries|<xref:Microsoft.ML.TimeSeriesCatalog>|add Microsoft.ML.TimeSeries|
+|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>||
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 

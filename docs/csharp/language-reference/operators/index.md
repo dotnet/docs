@@ -23,7 +23,7 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 
 C# provides a number of predefined operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with operands of built-in numeric types and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands.
 
-A user-defined type can overload certain operators to define the corresponding behavior for the operands of that type. For more information, see the [operator](../keywords/operator.md) keyword article.
+A user-defined type can overload certain operators to define the corresponding behavior for the operands of that type. For more information, see [Operator overloading](operator-overloading.md).
 
 The following sections list the C# operators starting with the highest precedence to the lowest. The operators within each section share the same precedence level.
 
@@ -217,4 +217,3 @@ These operators have higher precedence than the next section and lower precedenc
 
 - [C# reference](../index.md)
 - [Operators](../../programming-guide/statements-expressions-operators/operators.md)
-- [Overloadable operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)

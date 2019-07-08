@@ -3,10 +3,10 @@ title: 'Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder. 
+#Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
 ---
 
 # Predict prices using regression with Model Builder
@@ -43,7 +43,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi. 
+Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi.
 
 1. Open the **taxi-fare-train.csv** data set
 
@@ -94,7 +94,7 @@ The time required for the model to train is proportionate to the amount of data.
 Throughout the training process, progress data is displayed in the `Progress` section of the train step.
 
 - Status displays the completion status of the training process.
-- Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data. 
+- Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
 - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
 - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
 
@@ -113,10 +113,12 @@ Two projects will be created as a result of the training process.
 - TaxiFarePredictionML.ConsoleApp: A .NET Core Console application that contains the model training and consumption code.
 - TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
 
+
 1. In the code step of the Model Builder tool, select **Add Projects** to add the auto-generated projects to the solution.
 1. Right-click *TaxiFarePrediction* project. Then, **Add > Reference**. Choose the **Projects > Solution** node and from the list, check the *TaxiFarePredictionML.Model* project and select OK.
 1. Open the *Program.cs* file in the *TaxiFarePrediction* project.
 1. Add the following using statements to reference the *Microsoft.ML* NuGet package and *TaxiFarePredictionML.Model* project:
+
 
     ```csharp
     using System;

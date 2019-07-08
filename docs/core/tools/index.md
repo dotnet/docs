@@ -93,7 +93,7 @@ The CLI adopts an extensibility model that allows you to specify additional tool
 
 ## Command structure
 
-CLI command structure consists of [the driver ("dotnet")](#driver), [the command (or "verb")](#command-verb), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
 
 # [.NET Core 2.x](#tab/netcore2x)
 
@@ -128,9 +128,9 @@ When you supply a command to the driver, `dotnet.exe` starts the CLI command exe
 
 First, the driver determines the version of the SDK to use. If there is no ['global.json'](global-json.md), the latest version of the SDK available is used. This might be either a preview or stable version, depending on what is latest on the machine.  Once the SDK version is determined, it executes the command.
 
-### Command ("verb")
+### Command
 
-The command (or "verb") is simply a command that performs an action. For example, `dotnet build` builds your code. `dotnet publish` publishes your code. The commands are implemented as a console application using a `dotnet {verb}` convention.
+The command performs an action. For example, `dotnet build` builds code. `dotnet publish` publishes code. The commands are implemented as a console application using a `dotnet {command}` convention.
 
 ### Arguments
 

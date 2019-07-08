@@ -27,8 +27,6 @@ The C# code that comprises an application consists of statements made up of keyw
 
 - [Anonymous Functions](anonymous-functions.md)
 
-- [Overloadable Operators](overloadable-operators.md)
-
 - [Conversion Operators](conversion-operators.md)
 
   - [Using Conversion Operators](using-conversion-operators.md)

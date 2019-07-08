@@ -262,7 +262,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
    
   
 ## Examples  
- The following example creates a <xref:System.Uri> instance with the URI "http://www.contoso.com/".  
+ The following example creates a <xref:System.Uri> instance with the URI `http://www.contoso.com/`.  
   
  [!code-cpp[Classic Uri.Uri Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri Example/CS/source.cs#1)]
@@ -945,7 +945,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
    
   
 ## Examples  
- The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs http://www.contoso.com and Hello%20World.htm to form an absolute URI.  
+ The following example creates a new instance of the <xref:System.Uri> class by combining the relative URIs `http://www.contoso.com` and `Hello%20World.htm` to form an absolute URI.  
   
  [!code-cpp[Classic Uri.Uri4 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic Uri.Uri4 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic Uri.Uri4 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic Uri.Uri4 Example/CS/source.cs#1)]
@@ -1505,7 +1505,7 @@ Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
 ## Remarks  
  For IPv6 addresses, the brackets ([]) are removed and the <xref:System.Net.IPAddress.ScopeId%2A> property is set, if one was specified when this instance was constructed.
 
-If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then DnsSafeHost returns an escaped string. Unescape any escaped string returned from `DnsSafeHost` before using that string for DNS resolution (see the Example). If you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then DnsSafeHost returns an unescaped string.
+If you used an escaped string to construct this instance (for example, `"http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"`), then DnsSafeHost returns an escaped string. Unescape any escaped string returned from `DnsSafeHost` before using that string for DNS resolution (see the Example). If you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then DnsSafeHost returns an unescaped string.
   
  The <xref:System.Uri.DnsSafeHost%2A> property is dependent on configuration settings, as discussed later in this topic. Configuration settings cannot be changed by Windows Store applications, which can lead to inconsistent results when using <xref:System.Uri.DnsSafeHost%2A>. The <xref:System.Uri.IdnHost%2A> property is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current *app.config* settings might be.  
   
@@ -2141,12 +2141,12 @@ If you used an escaped string to construct this instance (for example, "http://[
   
 |URI|Scheme|Authority|Path|Query|  
 |---------|------------|---------------|----------|-----------|  
-|http://www.contoso.com/index.htm?date=today|http://|http://www.contoso.com|http://www.contoso.com/index.htm|http://www.contoso.com/index.htm?date=today|  
-|http://www.contoso.com/index.htm#main|http://|http://www.contoso.com|http://www.contoso.com/index.htm|http://www.contoso.com/index.htm|  
-|mailto:user@contoso.com?subject=uri|mailto:|mailto:user@contoso.com|mailto:user@contoso.com?subject=uri|\<none>|  
-|nntp://news.contoso.com/123456@contoso.com|nntp://|nntp://news.contoso.com|nntp://news.contoso.com/123456@contoso.com|nntp://news.contoso.com/123456@contoso.com|  
-|news:123456@contoso.com|news:|news:123456@contoso.com|news:123456@contoso.com|\<none>|  
-|file://server/filename.ext|file://|file://server|file://server/filename.ext|file://server/filename.ext|  
+|`http://www.contoso.com/index.htm?date=today`|`http://`|`http://www.contoso.com`|`http://www.contoso.com/index.htm`|`http://www.contoso.com/index.htm?date=today`|  
+|`http://www.contoso.com/index.htm#main`|`http://`|`http://www.contoso.com`|`http://www.contoso.com/index.htm`|`http://www.contoso.com/index.htm`|  
+|`mailto:user@contoso.com?subject=uri`|`mailto:`|`mailto:user@contoso.com`|`mailto:user@contoso.com?subject=uri`|`<none>`|  
+|`nntp://news.contoso.com/123456@contoso.com`|`nntp://`|`nntp://news.contoso.com`|`nntp://news.contoso.com/123456@contoso.com`|`nntp://news.contoso.com/123456@contoso.com`|  
+|`news:123456@contoso.com`|`news:`|`news:123456@contoso.com`|`news:123456@contoso.com`|`<none>`|  
+|`file://server/filename.ext`|`file://`|`file://server`|`file://server/filename.ext`|`file://server/filename.ext`|  
   
    
   
@@ -2452,7 +2452,7 @@ If you used an escaped string to construct this instance (for example, "http://[
   
  The deprecated <xref:System.Uri.DnsSafeHost%2A> property is dependent on *app.config* settings, which cannot be changed by Windows Store applications. IdnHost is provided as the preferred alternative to using <xref:System.Uri.DnsSafeHost%2A>, because <xref:System.Uri.IdnHost%2A> is guaranteed to always be DNS safe, no matter what the current *app.config* settings might be.  
 
- If you used an escaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"), then IdnHost returns an escaped string. You should unescape any escaped string returned from IdnHost before using that string for DNS resolution. Be aware that if you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then IdnHost returns an unescaped string.
+ If you used an escaped string to construct this instance (for example, `"http://[fe80::200:39ff:fe36:1a2d%254]/temp/example.htm"`), then IdnHost returns an escaped string. You should unescape any escaped string returned from IdnHost before using that string for DNS resolution. Be aware that if you used an invalid unescaped string to construct this instance (for example, "http://[fe80::200:39ff:fe36:1a2d%4]/temp/example.htm"), then IdnHost returns an unescaped string.
 
 
  ]]></format>
@@ -3095,11 +3095,11 @@ If you used an escaped string to construct this instance (for example, "http://[
   
 |Error|Example|  
 |-----------|-------------|  
-|The string is not correctly escaped.|[http://www.contoso.com/path???/file](http://www.contoso.com/path???/file) name|  
-|The string is an absolute <xref:System.Uri> that represents an implicit file <xref:System.Uri>.|c:\\\directory\filename|  
-|The string is an absolute URI that is missing a slash before the path.|file://c:/directory/filename|  
-|The string contains unescaped backslashes even if they are treated as forward slashes.|http:\\\host/path/file|  
-|The string represents a hierarchical absolute <xref:System.Uri> and does not contain "://".|www.contoso.com/path/file|  
+|The string is not correctly escaped.|`http://www.contoso.com/path???/file name`|  
+|The string is an absolute <xref:System.Uri> that represents an implicit file <xref:System.Uri>.|`c:\\directory\filename`|  
+|The string is an absolute URI that is missing a slash before the path.|`file://c:/directory/filename`|  
+|The string contains unescaped backslashes even if they are treated as forward slashes.|`http:\\\host/path/file`|  
+|The string represents a hierarchical absolute <xref:System.Uri> and does not contain "://".|`www.contoso.com/path/file`|  
 |The parser for the <xref:System.Uri.Scheme%2A?displayProperty=nameWithType> indicates that the original string was not well-formed.|The example depends on the scheme of the URI.|  
   
  By default, the string used to construct this <xref:System.Uri> are considered well-formed in accordance with RFC 2396 and RFC 2732.  
@@ -3165,13 +3165,13 @@ If you used an escaped string to construct this instance (for example, "http://[
   
 |Error|Example|  
 |-----------|-------------|  
-|The string is not correctly escaped.|[http://www.contoso.com/path???/file](http://www.contoso.com/path???/file) name|  
-|The string is an absolute <xref:System.Uri> that represents an implicit file <xref:System.Uri>.|c:\\\directory\filename|  
-|The string is an absolute URI that is missing a slash before the path.|file://c:/directory/filename|  
-|The string contains unescaped backslashes even if they will be treated as forward slashes|http:\\\host/path/file|  
-|The string represents a hierarchical absolute <xref:System.Uri> and does not contain "://"|www.contoso.com/path/file|  
+|The string is not correctly escaped.|`http://www.contoso.com/path???/file name`|  
+|The string is an absolute <xref:System.Uri> that represents an implicit file <xref:System.Uri>.|`c:\\directory\filename`|  
+|The string is an absolute URI that is missing a slash before the path.|`file://c:/directory/filename`|  
+|The string contains unescaped backslashes even if they will be treated as forward slashes|`http:\\\host/path/file`|  
+|The string represents a hierarchical absolute <xref:System.Uri> and does not contain "://"|`www.contoso.com/path/file`|  
 |The parser for the <xref:System.Uri.Scheme%2A> indicates that the original string was not well-formed.|The example depends on the scheme of the URI.|  
-|Beginning with .NET 4.5, relative URIs with a colon (':') in their first segment are not considered well-formed.|2013.05.29_14:33:41|  
+|Beginning with .NET 4.5, relative URIs with a colon (':') in their first segment are not considered well-formed.|`2013.05.29_14:33:41`|  
   
  For more information on IRI support, see the Remarks section for the <xref:System.Uri> class.  
   
@@ -3290,10 +3290,10 @@ If you used an escaped string to construct this instance (for example, "http://[
   
 |Current URI instance|`toUri`|Return value|  
 |--------------------------|-------------|------------------|  
-|http://www.contoso.com/|http://www.contoso.com/test/test.htm|test/test.htm|  
-|http://www.contoso.com/test1/|http://www.contoso.com/|../|  
-|http://www.contoso.com:8000/|http://www.contoso.com/test/test.htm|http://www.contoso.com/test/test.htm|  
-|http://username@www.contoso.com/|http://www.contoso.com/test1/test1.txt|test1/test1.txt|  
+|`http://www.contoso.com/`|`http://www.contoso.com/test/test.htm`|`test/test.htm`|  
+|`http://www.contoso.com/test1/`|`http://www.contoso.com/`|`../`|  
+|`http://www.contoso.com:8000/`|`http://www.contoso.com/test/test.htm`|`http://www.contoso.com/test/test.htm`|  
+|`http://username@www.contoso.com/`|`http://www.contoso.com/test1/test1.txt`|`test1/test1.txt`|  
   
  User information, if present in the URI, is ignored.  
   
@@ -3360,10 +3360,10 @@ If you used an escaped string to construct this instance (for example, "http://[
   
 |Current URI instance|`toUri`|Return value|  
 |--------------------------|-------------|------------------|  
-|http://www.contoso.com/|http://www.contoso.com/test/test.htm|test/test.htm|  
-|http://www.contoso.com/test1/|http://www.contoso.com/|../|  
-|http://www.contoso.com:8000/|http://www.contoso.com/test/test.htm|http://www.contoso.com/test/test.htm|  
-|http://username@www.contoso.com/|http://www.contoso.com/test1/test1.txt|test1/test1.txt|  
+|`http://www.contoso.com/`|`http://www.contoso.com/test/test.htm`|`test/test.htm`|  
+|`http://www.contoso.com/test1/`|`http://www.contoso.com/`|`../`|  
+|`http://www.contoso.com:8000/`|`http://www.contoso.com/test/test.htm`|`http://www.contoso.com/test/test.htm`|  
+|`http://username@www.contoso.com/`|`http://www.contoso.com/test1/test1.txt`|`test1/test1.txt`|  
   
  User information, if present in the URI, is ignored.  
   

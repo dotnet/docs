@@ -31,7 +31,7 @@
  The <xref:System.Configuration.RsaProtectedConfigurationProvider> object uses the cryptography functions provided by <xref:System.Security.Cryptography.RSA> class to encrypt and decrypt configuration sections.  
   
 > [!NOTE]
->  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/previous-versions/dtkwfdky(v=vs.140).
+>  Before ASP.NET can decrypt encrypted information in your configuration file, the identity of your ASP.NET application must have read access to the encryption key used to encrypt and decrypt the configuration data. For more information, see [Walkthrough: Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/previous-versions/dtkwfdky(v=vs.140)).
 
 ## Examples  
 

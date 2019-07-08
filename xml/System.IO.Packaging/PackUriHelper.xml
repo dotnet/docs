@@ -167,16 +167,16 @@
   
 |`packageUri`|`partUri`|`fragment`|Returned pack URI|  
 |------------------|---------------|----------------|-----------------------|  
-|http://www.proseware.com/mypackage.pkg|/page1.xaml|#intro|pack://http:,,www.proseware.com,mypackage.pkg/page1.xaml#intro|  
-|http://www.proseware.com/mypackage.pkg|/page2.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
-|http://www.proseware.com/mypackage.pkg|/a/page4.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
-|http://www.proseware.com/mypackage.pkg|/%41/%61.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
-|http://www.proseware.com/mypackage.pkg|/%25XY.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
-|http://www.proseware.com/mypackage.pkg|/a/page5.xaml|#summary|pack://http:,,www.proseware.com,mypackage.pkg/a/page5.xaml#summary|  
-|http://www.proseware.com/packages.aspx?pkg04|/page1.xaml|#intro|pack://http:,,www.proseware.com,packages.aspx%3fpkg04/page1.xaml#intro|  
-|http://www.proseware.com/mypackage.pkg|**null**|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
-|ftp://ftp.proseware.com/packages/mypackage1.abc|/a/mydoc.xaml|**null**|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
-|file:///d:/packages/mypackage2.pkg|/a/bar.xaml|#xref|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml#xref|  
+|`http://www.proseware.com/mypackage.pkg`|/page1.xaml|#intro|pack://http:,,www.proseware.com,mypackage.pkg/page1.xaml#intro|  
+|`http://www.proseware.com/mypackage.pkg`|/page2.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
+|`http://www.proseware.com/mypackage.pkg`|/a/page4.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
+|`http://www.proseware.com/mypackage.pkg`|/%41/%61.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
+|`http://www.proseware.com/mypackage.pkg`|/%25XY.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
+|`http://www.proseware.com/mypackage.pkg`|/a/page5.xaml|#summary|pack://http:,,www.proseware.com,mypackage.pkg/a/page5.xaml#summary|  
+|`http://www.proseware.com/packages.aspx?pkg04`|/page1.xaml|#intro|pack://http:,,www.proseware.com,packages.aspx%3fpkg04/page1.xaml#intro|  
+|`http://www.proseware.com/mypackage.pkg`|**null**|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
+|`ftp://ftp.proseware.com/packages/mypackage1.abc`|/a/mydoc.xaml|**null**|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
+|`file:///d:/packages/mypackage2.pkg`|/a/bar.xaml|#xref|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml#xref|  
   
  Composing a pack URI is a multi-step process.  For example, one step in forming a pack URI is to replace the forward slash (/) characters of the `packageUri` with commas (,).  
   
@@ -229,7 +229,7 @@
   
 |`packageUri`|Returned pack URI|  
 |------------------|-----------------------|  
-|http://www.proseware.com/mypackage.pkg|pack://http:,,www.proseware.com,mypackage.pkg|  
+|`http://www.proseware.com/mypackage.pkg`|pack://http:,,www.proseware.com,mypackage.pkg|  
 |ftp://ftp.proseware.com/packages/mypackage1.abc|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc|  
 |file:///d:/packages/mypackage2.pkg|pack://file:,,,d:,packages,mypackage2.pkg|  
   
@@ -300,11 +300,11 @@
   
 |`packageUri`|`partUri`|Returned pack URI|  
 |------------------|---------------|-----------------------|  
-|http://www.proseware.com/mypackage.pkg|/page2.xaml|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
-|http://www.proseware.com/mypackage.pkg|/a/page4.xaml|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
-|http://www.proseware.com/mypackage.pkg|/%41/%61.xml|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
-|http://www.proseware.com/mypackage.pkg|/%25XY.xml|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
-|http://www.proseware.com/mypackage.pkg|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
+|`http://www.proseware.com/mypackage.pkg`|/page2.xaml|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
+|`http://www.proseware.com/mypackage.pkg`|/a/page4.xaml|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
+|`http://www.proseware.com/mypackage.pkg`|/%41/%61.xml|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
+|`http://www.proseware.com/mypackage.pkg`|/%25XY.xml|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
+|`http://www.proseware.com/mypackage.pkg`|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
 |ftp://ftp.proseware.com/packages/mypackage1.abc|/a/mydoc.xaml|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
 |file:///d:/packages/mypackage2.pkg|/a/bar.xaml|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml|  
   
@@ -378,16 +378,16 @@
   
 |`packageUri`|`partUri`|`fragment`|Returned pack URI|  
 |------------------|---------------|----------------|-----------------------|  
-|http://www.proseware.com/mypackage.pkg|/page1.xaml|#intro|pack://http:,,www.proseware.com,mypackage.pkg/page1.xaml#intro|  
-|http://www.proseware.com/mypackage.pkg|/page2.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
-|http://www.proseware.com/mypackage.pkg|/a/page4.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
-|http://www.proseware.com/mypackage.pkg|/%41/%61.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
-|http://www.proseware.com/mypackage.pkg|/%25XY.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
-|http://www.proseware.com/mypackage.pkg|/a/page5.xaml|#summary|pack://http:,,www.proseware.com,mypackage.pkg/a/page5.xaml#summary|  
-|http://www.proseware.com/packages.aspx?pkg04|/page1.xaml|#intro|pack://http:,,www.proseware.com,packages.aspx%3fpkg04/page1.xaml#intro|  
-|http://www.proseware.com/mypackage.pkg|**null**|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
-|ftp://ftp.proseware.com/packages/mypackage1.abc|/a/mydoc.xaml|**null**|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
-|file:///d:/packages/mypackage2.pkg|/a/bar.xaml|#xref|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml#xref|  
+|`http://www.proseware.com/mypackage.pkg`|/page1.xaml|#intro|pack://http:,,www.proseware.com,mypackage.pkg/page1.xaml#intro|  
+|`http://www.proseware.com/mypackage.pkg`|/page2.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/page2.xaml|  
+|`http://www.proseware.com/mypackage.pkg`|/a/page4.xaml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/a/page4.xaml|  
+|`http://www.proseware.com/mypackage.pkg`|/%41/%61.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/A/a.xml|  
+|`http://www.proseware.com/mypackage.pkg`|/%25XY.xml|**null**|pack://http:,,www.proseware.com,mypackage.pkg/%25XY.xml|  
+|`http://www.proseware.com/mypackage.pkg`|/a/page5.xaml|#summary|pack://http:,,www.proseware.com,mypackage.pkg/a/page5.xaml#summary|  
+|`http://www.proseware.com/packages.aspx?pkg04`|/page1.xaml|#intro|pack://http:,,www.proseware.com,packages.aspx%3fpkg04/page1.xaml#intro|  
+|`http://www.proseware.com/mypackage.pkg`|**null**|**null**|pack://http:,,www.proseware.com,mypackage.pkg|  
+|`ftp://ftp.proseware.com/packages/mypackage1.abc`|/a/mydoc.xaml|**null**|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/mydoc.xaml|  
+|`file:///d:/packages/mypackage2.pkg`|/a/bar.xaml|#xref|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml#xref|  
   
  Composing a pack URI is a multi-step process.  For example, one step in forming a pack URI is to replace the forward slash (/) characters of the `packageUri` with commas (,).  
   
@@ -570,11 +570,11 @@
   
 |`packUri`|Returned Package URI|  
 |---------------|--------------------------|  
-|pack://http:,,www.proseware.com,mypackage.xyz/a/mydoc.xaml|http://www.proseware.com/mypackage.xyz|  
-|pack://http:,,www.proseware.com,packages.aspx%3fmypackage/a/bar.xaml|http://www.proseware.com/packages.aspx?mypackage|  
-|pack://http:,,www.proseware.com,mypackage.pkg|http://www.proseware.com/mypackage.pkg|  
-|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/picture.jpg|ftp://ftp.proseware.com/packages/mypackage1.abc|  
-|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml|file:///d:/packages/mypackage2.pkg|  
+|pack://http:,,www.proseware.com,mypackage.xyz/a/mydoc.xaml|`http://www.proseware.com/mypackage.xyz`|  
+|pack://http:,,www.proseware.com,packages.aspx%3fmypackage/a/bar.xaml|`http://www.proseware.com/packages.aspx?mypackage`|  
+|pack://http:,,www.proseware.com,mypackage.pkg|`http://www.proseware.com/mypackage.pkg`|  
+|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/picture.jpg|`ftp://ftp.proseware.com/packages/mypackage1.abc`|  
+|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml|`file:///d:/packages/mypackage2.pkg`|  
   
  ]]></format>
         </remarks>

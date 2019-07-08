@@ -4,6 +4,7 @@ description: Learn how to create a csproj file that will build a template pack f
 author: thraka
 ms.date: 06/25/2019
 ms.topic: tutorial
+ms.author: adegeo
 ---
 
 # Tutorial: Create a template pack

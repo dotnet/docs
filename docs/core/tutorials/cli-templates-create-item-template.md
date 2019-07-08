@@ -4,6 +4,7 @@ description: Learn how to create an item template for the dotnet new command. It
 author: thraka
 ms.date: 06/25/2019
 ms.topic: tutorial
+ms.author: adegeo
 ---
 
 # Tutorial: Create an item template

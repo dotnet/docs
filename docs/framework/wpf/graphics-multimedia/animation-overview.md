@@ -53,7 +53,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 ## Example: Make an Element Fade In and Out of View  
  This example shows how to use a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation to animate the value of a dependency property. It uses a <xref:System.Windows.Media.Animation.DoubleAnimation>, which is a type of animation that generates <xref:System.Double> values, to animate the <xref:System.Windows.UIElement.Opacity%2A> property of a <xref:System.Windows.Shapes.Rectangle>. As a result, the <xref:System.Windows.Shapes.Rectangle> fades in and out of view.  
   
- The first part of the example creates a <xref:System.Windows.Shapes.Rectangle> element. The steps that follow show how to create an animation and apply it to the rectangle's <xref:System.Windows.UIElement.Opacity%2A> property    .
+ The first part of the example creates a <xref:System.Windows.Shapes.Rectangle> element. The steps that follow show how to create an animation and apply it to the rectangle's <xref:System.Windows.UIElement.Opacity%2A> property.
   
  The following shows how to create a <xref:System.Windows.Shapes.Rectangle> element in a <xref:System.Windows.Controls.StackPanel> in XAML.  
   
@@ -86,7 +86,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
      [!code-csharp[animation_ovws2#RectangleOpacityFadeExampleCode_3](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Class1.cs#rectangleopacityfadeexamplecode_3)]
      [!code-vb[animation_ovws2#RectangleOpacityFadeExampleCode_3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws2/VisualBasic/Class1.vb#rectangleopacityfadeexamplecode_3)]  
   
-3. The previous code showed an animation that transitions from `1.0` to `0.0`, which causes the target element to fade from completely opaque to completely invisible. To make the element fade back into view after it vanishes, set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of the animation to `true`. To make the animation repeat indefinitely, set its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>.The following shows how to set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> and <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> properties in XAML.  
+3. The previous code showed an animation that transitions from `1.0` to `0.0`, which causes the target element to fade from completely opaque to completely invisible. To make the element fade back into view after it vanishes, set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of the animation to `true`. To make the animation repeat indefinitely, set its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>. The following shows how to set the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> and <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> properties in XAML.  
   
      [!code-xaml[animation_ovws2#RectangleOpacityFadeExampleXaml_4](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws2/CSharp/Window1.xaml#rectangleopacityfadeexamplexaml_4)]  
   
@@ -216,7 +216,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 ### Animations Are Timelines  
  All the animation types inherit from the <xref:System.Windows.Media.Animation.Timeline> class; therefore, all animations are specialized types of timelines. A <xref:System.Windows.Media.Animation.Timeline> defines a segment of time. You can specify the *timing behaviors* of a timeline: its <xref:System.Windows.Media.Animation.Timeline.Duration%2A>, how many times it is repeated, and even how fast time progresses for it.  
   
- Because an animation is a <xref:System.Windows.Media.Animation.Timeline>, it also represents a segment of time. An animation also calculates output values as it progresses though its specified segment of time (or <xref:System.Windows.Media.Animation.Timeline.Duration%2A>). As the animation progresses, or "plays," it updates the property that it is associated with.  
+ Because an animation is a <xref:System.Windows.Media.Animation.Timeline>, it also represents a segment of time. An animation also calculates output values as it progresses through its specified segment of time (or <xref:System.Windows.Media.Animation.Timeline.Duration%2A>). As the animation progresses, or "plays," it updates the property that it is associated with.  
   
  Three frequently used timing properties are <xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, and <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A>.  
   
@@ -284,7 +284,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
  [!code-csharp[animation_ovws_procedural_snip#FillBehaviorExampleRectangleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_procedural_snip/CSharp/FillBehaviorExample.cs#fillbehaviorexamplerectangleinline)]
  [!code-vb[animation_ovws_procedural_snip#FillBehaviorExampleRectangleInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws_procedural_snip/visualbasic/fillbehaviorexample.vb#fillbehaviorexamplerectangleinline)]  
   
- Because its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> was not changed from its default value, which is <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the animation holds it final value, 0, when it ends. Therefore, the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle remains at 0 after the animation ends. If you set the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle to another value, your code appears to have no effect, because the animation is still affecting the <xref:System.Windows.UIElement.Opacity%2A> property.  
+ Because its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> was not changed from its default value, which is <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the animation holds its final value, 0, when it ends. Therefore, the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle remains at 0 after the animation ends. If you set the <xref:System.Windows.UIElement.Opacity%2A> of the rectangle to another value, your code appears to have no effect, because the animation is still affecting the <xref:System.Windows.UIElement.Opacity%2A> property.  
   
  One way to regain control of an animated property in code is to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method and specify null for the <xref:System.Windows.Media.Animation.AnimationTimeline> parameter. For more information and an example, see [Set a Property After Animating It with a Storyboard](how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
   
@@ -328,7 +328,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 |[Animation and Timing System Overview](animation-and-timing-system-overview.md)|Describes how the timing system uses the <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> classes, which allow you to create animations.|  
 |[Animation Tips and Tricks](animation-tips-and-tricks.md)|Lists helpful tips for solving issues with animations, such as performance.|  
 |[Custom Animations Overview](custom-animations-overview.md)|Describes how to extend the animation system with key frames, animation classes, or per-frame callbacks.|  
-|From/To/By Animations Overview|Describes how to create an animation that transitions between two values.|  
+|[From/To/By Animations Overview](from-to-by-animations-overview.md)|Describes how to create an animation that transitions between two values.|  
 |[Key-Frame Animations Overview](key-frame-animations-overview.md)|Describes how to create an animation with multiple target values, including the ability to control the interpolation method.|  
 |[Easing Functions](easing-functions.md)|Explains how to apply mathematical formulas to your animations to get realistic behavior, such as bouncing.|  
 |[Path Animations Overview](path-animations-overview.md)|Describes how to move or rotate an object along a complex path.|  

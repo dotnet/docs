@@ -87,7 +87,7 @@ Using the [new](../operators/new-operator.md) operator calls the parameterless c
 With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 
 ```csharp
-Point p = new Point(); // Invoke parameterless constructor for the struct.
+var p = new Point(); // Invoke parameterless constructor for the struct.
 ```
 
 After this call, the struct is considered to be definitely assigned; that is, all its members are initialized to their default values.

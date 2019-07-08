@@ -21,11 +21,11 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 
 - [To update the workflows](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflows)
 
-    - [To update the StateMachine workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateStateMachine)
+  - [To update the StateMachine workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateStateMachine)
 
-    - [To update the Flowchart workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateFlowchart)
+  - [To update the Flowchart workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateFlowchart)
 
-    - [To update the Sequential workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)
+  - [To update the Sequential workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)
 
 - [To update WorkflowVersionMap to include the previous workflow versions](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflowVersionMap)
 
@@ -62,7 +62,7 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 
 ### <a name="BKMK_UpdateWorkflows"></a> To update the workflows
 
- In this section, the workflow definitions are updated. The two `WriteLine` activities that give feedback on the user's guess are updated, and a new `WriteLine` activity is added that provides additional information about the game once the number is guessed.
+In this section, the workflow definitions are updated. The two `WriteLine` activities that give feedback on the user's guess are updated, and a new `WriteLine` activity is added that provides additional information about the game once the number is guessed.
 
 #### <a name="BKMK_UpdateStateMachine"></a> To update the StateMachine workflow
 

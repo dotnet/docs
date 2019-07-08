@@ -30,7 +30,7 @@
   
 3.  WeakWildcard  
   
- The first value, StrongWildcard, ignores the host name when matching and it takes the highest precedence of the three different matching modes. It is the default value for a WCF system-provided binding or binding element. This indicates that a service endpoint can be reached using any valid host name. For example, if MyService is hosted using http://localhost/MyService, it is still reachable using http://www.adatum.com/MyService because the (presumably valid) host name, "adatum.com", is ignored. Note that the port is a wildcard here as well.  
+ The first value, StrongWildcard, ignores the host name when matching and it takes the highest precedence of the three different matching modes. It is the default value for a WCF system-provided binding or binding element. This indicates that a service endpoint can be reached using any valid host name. For example, if MyService is hosted using `http://localhost/MyService`, it is still reachable using http://www.adatum.com/MyService because the (presumably valid) host name, "adatum.com", is ignored. Note that the port is a wildcard here as well.  
   
  The second value, Exact, requires that an exact match is found with the URI specified, including the hostname, if no strong match is found. This mode, for example, does not perform equivalence between short hostnames and fully-qualified domain names. This allows hostnames to be used as match criteria in the scenarios where multiple hosts are assigned a single IP address and it enables different services to be hosted on the same machine with distinct endpoints. Note that the port is a wildcard here as well.  
   

@@ -216,9 +216,7 @@
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see langword="MemberInfo" /> objects via reflection. If <paramref name="binder" /> is <see langword="null" />, the default binder is used.</param>
         <param name="args">An array of type <see langword="Object" /> containing the arguments to be passed to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to be invoked. If the default constructor is desired, <paramref name="args" /> must be an empty array or <see langword="null" />.</param>
         <param name="culture">An instance of <see langword="CultureInfo" /> used to govern the coercion of types. If this is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used. (This is necessary to convert a <see langword="String" /> that represents 1000 to a <see langword="Double" /> value, for example, since 1000 is represented differently by different cultures.)</param>
-        <param name="activationAttributes">An array of type <see langword="Object" /> containing one or more activation attributes that can participate in the activation. An example of an activation attribute is:  
-  
- URLAttribute(http://hostname/appname/objectURI)</param>
+        <param name="activationAttributes">An array of type <see langword="Object" /> containing one or more activation attributes that can participate in the activation.</param>
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.Assembly.CreateInstance(System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" /> method.</summary>
         <returns>An instance of <see langword="Object" /> representing the type and matching the specified criteria, or <see langword="null" /> if <paramref name="typeName" /> is not found.</returns>
         <remarks>
@@ -228,6 +226,8 @@
  This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
   
  The <xref:System.Reflection.Assembly.CreateInstance%2A> method locates the specified type from this assembly and creates an instance of it using the system activator, with optional case-sensitive search and having the specified culture, arguments, and binding and activation attributes.  
+
+ An example of an activation attribute for the `activationAttributes` parameter is: `URLAttribute(http://hostname/appname/objectURI)`.
   
  ]]></format>
         </remarks>

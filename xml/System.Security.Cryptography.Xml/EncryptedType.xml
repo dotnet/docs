@@ -194,7 +194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property describes the encoding of the encrypted data. For example, if the encrypted data is a base64-encoded PNG, the encoding could be specified as 'http://www.w3.org/2000/09/xmldsig#base64'.  
+ This property describes the encoding of the encrypted data. For example, if the encrypted data is a base64-encoded PNG, the encoding could be specified as '<http://www.w3.org/2000/09/xmldsig#base64>'.  
   
    
   
@@ -492,7 +492,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `MimeType` attribute is an optional attribute that describes the media type of the encrypted data. The value of this attribute is a string with values defined by [RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies](https://www.ietf.org/rfc/rfc2045.txt). For example, if the data that is encrypted is a base64-encoded PNG, the `Encoding` attribute would be 'http://www.w3.org/2000/09/xmldsig#base64' and the `MimeType` would be 'image/png'. This attribute is optional and no validation of the `MimeType` information is required. The attribute does not indicate that the encryption application must do any additional processing. Note that this information may not be necessary if it is already bound to the identifier in the `Type` attribute.  
+ The `MimeType` attribute is an optional attribute that describes the media type of the encrypted data. The value of this attribute is a string with values defined by [RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies](https://www.ietf.org/rfc/rfc2045.txt). For example, if the data that is encrypted is a base64-encoded PNG, the `Encoding` attribute would be '<http://www.w3.org/2000/09/xmldsig#base64>' and the `MimeType` would be 'image/png'. This attribute is optional and no validation of the `MimeType` information is required. The attribute does not indicate that the encryption application must do any additional processing. Note that this information may not be necessary if it is already bound to the identifier in the `Type` attribute.  
   
    
   

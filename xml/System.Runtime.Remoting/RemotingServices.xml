@@ -1208,7 +1208,7 @@
   
  After marshaling, the URI of the specified object is set to the string in the `uri` parameter appended onto the <xref:System.Guid> of the current <xref:System.AppDomain>.  
   
- If the current application is listening on an HTTP port, then both the string specified in the `uri` parameter and the `uri` string appended onto the <xref:System.Guid> of the current <xref:System.AppDomain> route to the specified object. For example, if the application is listening on HTTP port 9000, then both http://localhost:9000/objectUri, and http://localhost:9000/\<appdomainguid>/objectUri route to the object specified in the `obj` parameter.  
+ If the current application is listening on an HTTP port, then both the string specified in the `uri` parameter and the `uri` string appended onto the <xref:System.Guid> of the current <xref:System.AppDomain> route to the specified object. For example, if the application is listening on HTTP port 9000, then both `http://localhost:9000/objectUri`, and `http://localhost:9000/<appdomainguid>/objectUri` route to the object specified in the `obj` parameter.  
   
    
   

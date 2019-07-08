@@ -88,7 +88,7 @@
         <Parameter Name="mcm" Type="System.Runtime.Remoting.Messaging.IMethodCallMessage" />
       </Parameters>
       <Docs>
-        <param name="h1">An array of remoting headers that contains key/value pairs. This array is used to initialize <see cref="T:System.Runtime.Remoting.Messaging.MethodResponse" /> fields for headers that belong to the namespace "http://schemas.microsoft.com/clr/soap/messageProperties".</param>
+        <param name="h1">An array of remoting headers that contains key/value pairs. This array is used to initialize <see cref="T:System.Runtime.Remoting.Messaging.MethodResponse" /> fields for headers that belong to the namespace <c>"http://schemas.microsoft.com/clr/soap/messageProperties"</c>.</param>
         <param name="mcm">A request message that acts as a method call on a remote object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Messaging.MethodResponse" /> class from an array of remoting headers and a request message.</summary>
         <remarks>
@@ -542,7 +542,7 @@
         <Parameter Name="h" Type="System.Runtime.Remoting.Messaging.Header[]" />
       </Parameters>
       <Docs>
-        <param name="h">An array of remoting headers that contain key/value pairs. This array is used to initialize <see cref="T:System.Runtime.Remoting.Messaging.MethodResponse" /> fields for headers that belong to the namespace "http://schemas.microsoft.com/clr/soap/messageProperties".</param>
+        <param name="h">An array of remoting headers that contain key/value pairs. This array is used to initialize <see cref="T:System.Runtime.Remoting.Messaging.MethodResponse" /> fields for headers that belong to the namespace <c>"http://schemas.microsoft.com/clr/soap/messageProperties"</c>.</param>
         <summary>Initializes an internal serialization handler from an array of remoting headers that are applied to a method.</summary>
         <returns>An internal serialization handler.</returns>
         <remarks>

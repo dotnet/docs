@@ -49,7 +49,7 @@ In this part of the series, you'll learn how to:
 
 ## Create an item template
 
-An item template is a specific type of template that produces one or more files. These types of templates are useful when you want to generate something like a config, code, or solution file. In this example, you'll create a class that adds an extension method to the string type.
+An item template is a specific type of template that contains one or more files. These types of templates are useful when you want to generate something like a config, code, or solution file. In this example, you'll create a class that adds an extension method to the string type.
 
 Open a terminal and navigate to the _working\templates\\_ folder and create a new subfolder named _extensions_. Enter the folder.
 

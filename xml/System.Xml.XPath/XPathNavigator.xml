@@ -726,7 +726,7 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
 ## Remarks  
  A networked XML document is comprised of chunks of data, aggregated using various W3C standard inclusion mechanisms, and therefore contains nodes that come from different places. DTD entities are an example of this aggregated data, but it is not limited to DTDs. The <xref:System.Xml.XPath.XPathNavigator.BaseURI%2A> property tells you where these nodes originate from.  
   
- For example, if the XML data is loaded from http://server/mydata.xml, the <xref:System.Xml.XPath.XPathNavigator.BaseURI%2A> property returns http://server/mydata.xml.  
+ For example, if the XML data is loaded from `http://server/mydata.xml`, the <xref:System.Xml.XPath.XPathNavigator.BaseURI%2A> property returns `http://server/mydata.xml`.  
   
 > [!NOTE]
 >  Nodes created using the <xref:System.Xml.XPath.XPathNavigator> class have the same <xref:System.Xml.XPath.XPathNavigator.BaseURI%2A> as the XML document the <xref:System.Xml.XPath.XPathNavigator> was created from.  

@@ -1314,7 +1314,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
   
  Before deserializing, an <xref:System.Xml.Serialization.XmlSerializer> must be constructed using the type of the object that is being deserialized.  
   
- Set the `encodingStyle` parameter to "http://schemas.xmlsoap.org/soap/encoding/ " for SOAP version 1.1 encoding; otherwise, set it to "http://www.w3.org/2001/12/soap-encoding" for SOAP version 1.2 encoding.  
+ Set the `encodingStyle` parameter to "<http://schemas.xmlsoap.org/soap/encoding/>" for SOAP version 1.1 encoding; otherwise, set it to "<http://www.w3.org/2001/12/soap-encoding>" for SOAP version 1.2 encoding.  
   
  **Note** The <xref:System.Xml.Serialization.XmlSerializer> cannot deserialize the following: arrays of <xref:System.Collections.ArrayList> and arrays of <xref:System.Collections.Generic.List%601>.  
   

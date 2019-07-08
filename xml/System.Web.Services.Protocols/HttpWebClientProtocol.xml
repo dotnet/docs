@@ -479,7 +479,7 @@
    
   
 ## Examples  
- The following example sets the following proxy settings prior to invoking the `Math` XML Web service: the proxy server to http://proxyserver, the proxy port to 80 and the bypass to the proxy server for local addresses.  
+ The following example sets the following proxy settings prior to invoking the `Math` XML Web service: the proxy server to `http://proxyserver`, the proxy port to 80 and the bypass to the proxy server for local addresses.  
   
  [!code-cpp[Classic HttpWebClientProtocol.Proxy Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic HttpWebClientProtocol.Proxy Example/CPP/source.cpp#1)]
  [!code-csharp[Classic HttpWebClientProtocol.Proxy Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic HttpWebClientProtocol.Proxy Example/CS/source.cs#1)]

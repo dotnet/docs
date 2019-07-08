@@ -1172,7 +1172,7 @@
 ## Remarks  
  The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
   
- The <xref:System.Xml.Serialization.XmlSerializationReader.GetArrayLength%2A> method applies to the `arrayType` attribute that is used with SOAP encoding and specified with the namespace "http://schemas.xmlsoap.org/soap/encoding/".  
+ The <xref:System.Xml.Serialization.XmlSerializationReader.GetArrayLength%2A> method applies to the `arrayType` attribute that is used with SOAP encoding and specified with the namespace "<http://schemas.xmlsoap.org/soap/encoding/>".  
   
  ]]></format>
         </remarks>
@@ -1547,7 +1547,7 @@
 ## Remarks  
  The protected members of <xref:System.Xml.Serialization.XmlSerializationReader> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
   
- WSDL uses the namespace "http://schemas.xmlsoap.org/wsdl/".  
+ WSDL uses the namespace "<http://schemas.xmlsoap.org/wsdl/>".  
   
  ]]></format>
         </remarks>

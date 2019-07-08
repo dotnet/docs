@@ -857,7 +857,7 @@
  The <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property allows you to perform a cross-page post using the <xref:System.Web.UI.WebControls.Button> control.  
   
 > [!NOTE]
->  Only correctly specified paths work with this property. For example, relative paths (Test/default.aspx), absolute paths (https://localhost/WebApp/default.aspx) and virtual (~\Test\default.aspx) work correctly. Incorrectly formed paths such as "/Test/default.aspx" or "\Test\default.aspx" do not work. See [ASP.NET Web Project Paths](https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd) for a discussion on creating correct paths.  
+>  Only correctly specified paths work with this property. For example, relative paths (`Test/default.aspx`), absolute paths (`https://localhost/WebApp/default.aspx`) and virtual (`~\Test\default.aspx`) work correctly. Incorrectly formed paths such as "/Test/default.aspx" or "\Test\default.aspx" do not work. See [ASP.NET Web Project Paths](https://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd) for a discussion on creating correct paths.  
   
  Set the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property to the URL of the Web page to post to when the <xref:System.Web.UI.WebControls.Button> control is clicked. For example, specifying `Page2.aspx` causes the page that contains the <xref:System.Web.UI.WebControls.Button> control to post to `Page2.aspx`. If you do not specify a value for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property, the page posts back to itself.  
   

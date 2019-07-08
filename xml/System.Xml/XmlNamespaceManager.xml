@@ -72,7 +72,7 @@
   
  Because the namespace manager provides a string comparison with the prefix and namespaces as objects, there is a performance improvement when using the namespace manager over the direct comparison of a string.  
   
- The following code example shows how to bind the prefix `xsd` with the namespace URI of `http://www.w3.org/2001/XMLSchema` and add it to the namespace manager:  
+ The following code example shows how to bind the prefix `xsd` with the namespace URI of <http://www.w3.org/2001/XMLSchema> and add it to the namespace manager:  
   
 ```vb  
 nsmgr.AddNamespace("xsd", "http://www.w3.org/2001/XMLSchema")  
@@ -244,8 +244,8 @@ while (reader.Read())
   
 |Prefix|Namespace|  
 |------------|---------------|  
-|xmlns|http://www.w3.org/2000/xmlns/ (the xmlns prefix namespace)|  
-|xml|http://www.w3.org/XML/1998/namespace (the XML namespace)|  
+|xmlns|<http://www.w3.org/2000/xmlns/> (the xmlns prefix namespace)|  
+|xml|<http://www.w3.org/XML/1998/namespace> (the XML namespace)|  
 |String.Empty|String.Empty (the empty namespace). This value can be reassigned a different prefix. For example, xmlns="" defines the default namespace to be the empty namespace|  
   
    

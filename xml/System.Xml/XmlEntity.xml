@@ -86,18 +86,18 @@
   
  where the external entity `a/b.xml` contains the XML text `<test>123</test>`.  
   
- If the document is loaded from http://server/mydata.xml, `BaseURI` returns the following:  
+ If the document is loaded from `http://server/mydata.xml`, `BaseURI` returns the following:  
   
 |NodeType|Name|BaseURI|  
 |--------------|----------|-------------|  
-|Attribute|num|http://server/mydata.xml|  
-|Document|#document|http://server/mydata.xml|  
-|DocumentType|item|http://server/mydata.xml|  
-|Entity|xyz|http://server/mydata.xml|  
-|Element|item|http://server/mydata.xml|  
-|EntityReference|xyz|http://server/mydata.xml|  
-|Element|test|http://server/a/b.xml|  
-|Text|#text|http://server/a/b.xml|  
+|Attribute|num|`http://server/mydata.xml`|  
+|Document|#document|`http://server/mydata.xml`|  
+|DocumentType|item|`http://server/mydata.xml`|  
+|Entity|xyz|`http://server/mydata.xml`|  
+|Element|item|`http://server/mydata.xml`|  
+|EntityReference|xyz|`http://server/mydata.xml`|  
+|Element|test|`http://server/a/b.xml`|  
+|Text|#text|`http://server/a/b.xml`|  
   
  `BaseURI` looks for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the `XmlDocument` object in all cases.  
   

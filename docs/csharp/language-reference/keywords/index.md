@@ -23,9 +23,9 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[char](char.md)|[checked](checked.md)|[class](class.md)|[const](const.md)|  
 |[continue](continue.md)|[decimal](decimal.md)|[default](default.md)|[delegate](delegate.md)|  
 |[do](do.md)|[double](double.md)|[else](if-else.md)|[enum](enum.md)|  
-|[event](event.md)|[explicit](explicit.md)|[extern](extern.md)|[false](false-literal.md)|  
+|[event](event.md)|[explicit](../operators/user-defined-conversion-operators.md)|[extern](extern.md)|[false](false-literal.md)|  
 |[finally](try-finally.md)|[fixed](fixed-statement.md)|[float](float.md)|[for](for.md)|  
-|[foreach](foreach-in.md)|[goto](goto.md)|[if](if-else.md)|[implicit](implicit.md)|  
+|[foreach](foreach-in.md)|[goto](goto.md)|[if](if-else.md)|[implicit](../operators/user-defined-conversion-operators.md)|  
 |[in](in.md)|[int](../builtin-types/integral-numeric-types.md)|[interface](interface.md)|[internal](internal.md)|
 |[is](is.md)|[lock](lock-statement.md)|[long](../builtin-types/integral-numeric-types.md)|[namespace](namespace.md)|
 |[new](../operators/new-operator.md)|[null](null.md)|[object](object.md)|[operator](../operators/operator-overloading.md)|

@@ -830,7 +830,7 @@ public void WorldSoccerWinners ()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A> property gets a value that is used to resolve relative URIs in a <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object. Suppose the value for <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A> is "http://www.contoso.com/" and the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> contains a relative rule reference to another document, for example `SrgsRuleRef("ExternalGrammar.grxml")`. This creates the following absolute path to the external document: `http://www.contoso.com/ExternalGrammar.grxml`.  
+ <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A> property gets a value that is used to resolve relative URIs in a <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object. Suppose the value for <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A> is `http://www.contoso.com/` and the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> contains a relative rule reference to another document, for example `SrgsRuleRef("ExternalGrammar.grxml")`. This creates the following absolute path to the external document: `http://www.contoso.com/ExternalGrammar.grxml`.  
   
  ]]></format>
         </remarks>

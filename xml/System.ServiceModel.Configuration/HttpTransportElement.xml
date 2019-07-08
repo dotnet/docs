@@ -186,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A local address is one that is on the local LAN or intranet. Always ignores the proxy if the service address begins with http://localhost. You should use the host name rather than localhost if you want clients to go through a proxy when communicating with services on the same machine.  
+ A local address is one that is on the local LAN or intranet. Always ignores the proxy if the service address begins with `http://localhost`. You should use the host name rather than localhost if you want clients to go through a proxy when communicating with services on the same machine.  
   
  ]]></format>
         </remarks>

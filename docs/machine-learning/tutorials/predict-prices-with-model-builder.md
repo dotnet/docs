@@ -106,7 +106,7 @@ The result of the training step will be one model which had the best performance
 
 If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, navigate to the code step. 
 
-## Use the model for predictions
+## Add the code to make predictions
 
 Two projects will be created as a result of the training process.
 

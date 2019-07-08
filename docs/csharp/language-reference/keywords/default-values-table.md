@@ -23,7 +23,7 @@ The following table shows the default values of [value types](value-types.md).
 |[bool](bool.md)|`false`|
 |[byte](../builtin-types/integral-numeric-types.md)|0|
 |[char](char.md)|'\0'|
-|[decimal](decimal.md)|0M|
+|[decimal](../builtin-types/floating-point-numeric-types.md)|0M|
 |[double](../builtin-types/floating-point-numeric-types.md)|0.0D|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
 |[float](../builtin-types/floating-point-numeric-types.md)|0.0F|

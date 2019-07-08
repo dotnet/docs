@@ -21,7 +21,7 @@ The type specified before the `*` in a pointer type is called the **referent typ
 - Any floating-point type: [float](../../language-reference/builtin-types/floating-point-numeric-types.md), [double](../../language-reference/builtin-types/floating-point-numeric-types.md).
 - [char](../../language-reference/keywords/char.md).
 - [bool](../../language-reference/keywords/bool.md).
-- [decimal](../../language-reference/keywords/decimal.md).
+- [decimal](../../language-reference/builtin-types/floating-point-numeric-types.md).
 - Any [enum](../../language-reference/keywords/enum.md) type.
 - Any pointer type. This allows expressions such as `void**`.
 - Any user-defined struct type that contains fields of unmanaged types only.

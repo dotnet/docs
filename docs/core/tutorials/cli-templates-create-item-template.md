@@ -1,5 +1,5 @@
 ---
-title: Create an item template for dotnet new
+title: Create an item template for dotnet new - .NET Core CLI
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
 author: thraka
 ms.date: 06/25/2019
@@ -11,7 +11,7 @@ ms.author: adegeo
 
 With .NET Core, you can create and deploy templates that generate projects, files, even resources. This tutorial is part one of a series that teaches you how to create, install, and uninstall, templates for use with the `dotnet new` command.
 
-In this part of the series you'll learn how to:
+In this part of the series, you'll learn how to:
 
 > [!div class="checklist"]
 > * Create a class for an item template
@@ -22,7 +22,7 @@ In this part of the series you'll learn how to:
 
 ## Prerequisites
 
-* Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later.
+* [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later versions.
 * Create the "working folder" structure used by this tutorial.
 
   Create a new working folder to contain your work during this tutorial. This tutorial will refer to that folder as the _working_ folder. This folder should have a single subfolder named _templates_.
@@ -96,7 +96,7 @@ working
                 template.json
 ```
 
-Open the _template.json_ with your favorite text editor and paste in the following json code and save it:
+Open the _template.json_ with your favorite text editor and paste in the following JSON code and save it:
 
 ```json
 {
@@ -113,11 +113,14 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 }
 ```
 
-This config file contains all of the settings for your template. You can see the basic settings such as `name` and `shortName` but also there's a `tags/type` value that is set to `item`. This categorizes your template as an item template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they're searching for.
+This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that is set to `item`. This categorizes your template as an item template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they're searching for.
 
-The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
+The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Open your terminal and from the _extensions_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./` 
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Open your terminal and from the _extensions_ folder, run the following command to install the template located at the current folder:
+
+- **On Windows**: `dotnet new -i .\`
+- **On Linux or macOS**: `dotnet new -i ./` 
 
 This command outputs the list of templates installed, which should include yours.
 

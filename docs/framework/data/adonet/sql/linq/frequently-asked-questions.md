@@ -47,7 +47,7 @@ The following sections answer some common issues that you might encounter when y
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides several tools for inspecting the SQL code it generates. One of the most important is <xref:System.Data.Linq.DataContext.Log%2A>. For more information, see [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md).  
   
 ## Unexpected Stored Procedure Results  
- Q. I have a stored procedure whose return value is calculated by `MAX()`. When I drag the stored procedure to the [!INCLUDE[vs_ordesigner_short](../../../../../../includes/vs-ordesigner-short-md.md)] surface, the return value is not correct.  
+ Q. I have a stored procedure whose return value is calculated by `MAX()`. When I drag the stored procedure to the O/R Designer surface, the return value is not correct.  
   
  A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides two ways to return database-generated values by way of stored procedures:  
   

@@ -6,7 +6,7 @@ ms.assetid: 9a88bd51-bd74-48f7-a9b1-f650e8d55a3e
 # Typical Steps for Using LINQ to SQL
 To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] application, you follow the steps described later in this topic. Note that many steps are optional. It is very possible that you can use your object model in its default state.  
   
- For a really fast start, use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to create your object model and start coding your queries.  
+ For a really fast start, use the Object Relational Designer to create your object model and start coding your queries.  
   
 ## Creating the Object Model  
  The first step is to create an object model from the metadata of an existing relational database. The object model represents the database according to the programming language of the developer. For more information, see [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md).  
@@ -14,7 +14,7 @@ To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
 ### 1. Select a tool to create the model.  
  Three tools are available for creating the model.  
   
-- The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)]  
+- The Object Relational Designer  
   
      This designer provides a rich user interface for creating an object model from an existing database. This tool is part of the Visual Studio IDE, and is best suited to small or medium databases.  
   

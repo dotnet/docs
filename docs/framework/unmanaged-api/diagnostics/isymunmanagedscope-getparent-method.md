@@ -23,7 +23,7 @@ Gets the parent scope of this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParent(  
     [out, retval] ISymUnmanagedScope** pRetVal);  
 ```  

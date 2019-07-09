@@ -23,7 +23,7 @@ Determines whether a specified [IAssemblyName](../../../../docs/framework/unmana
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsEqual (  
     [in] IAssemblyName  *pName,  
     [in] DWORD          dwCmpFlags  

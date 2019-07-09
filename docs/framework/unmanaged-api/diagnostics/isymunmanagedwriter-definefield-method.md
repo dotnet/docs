@@ -23,7 +23,7 @@ Defines a single variable that is not within a method. This method is used for c
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineField(  
     [in] mdTypeDef    parent,  
     [in] const WCHAR  *name,  

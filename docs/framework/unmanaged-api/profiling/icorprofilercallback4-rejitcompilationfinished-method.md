@@ -23,7 +23,7 @@ Notifies the profiler that the just-in-time (JIT) compiler has finished recompil
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReJITCompilationFinished(  
     [in] FunctionID functionId,    [in] ReJITID rejitId,  
     [in] HRESULT    hrStatus,  

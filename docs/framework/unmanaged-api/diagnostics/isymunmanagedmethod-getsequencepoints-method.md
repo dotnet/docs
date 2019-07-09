@@ -23,7 +23,7 @@ Gets all the sequence points within this method.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSequencePoints(  
     [in]  ULONG32  cPoints,  
     [out] ULONG32  *pcPoints,  

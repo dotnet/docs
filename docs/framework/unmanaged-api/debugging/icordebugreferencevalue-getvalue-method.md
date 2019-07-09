@@ -23,7 +23,7 @@ Gets the current memory address of the referenced object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] CORDB_ADDRESS   *pValue  
 );  

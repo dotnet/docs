@@ -23,7 +23,7 @@ Assigns a notification filter for use with this source.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetNotifyFilter  
 (  
     [in]  NOTIFY_FILTER   in_NotifyFilter,  

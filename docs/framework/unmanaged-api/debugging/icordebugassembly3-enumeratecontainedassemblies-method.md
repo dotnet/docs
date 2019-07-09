@@ -10,7 +10,7 @@ Gets an enumerator for the assemblies contained in this assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateContainedAssemblies(  
     ICorDebugAssemblyEnum **ppAssemblies  
 );  

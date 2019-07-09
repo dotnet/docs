@@ -23,7 +23,7 @@ Sets the size of a garbage collection segment and the maximum size of the garbag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCStartupLimitsEx (  
     [in] SIZE_T SegmentSize,   
     [in] SIZE_T MaxGen0Size  

@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) is about to take the ac
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnFailure(  
     [in] EClrFailure   failure,  
     [in] EPolicyAction action  

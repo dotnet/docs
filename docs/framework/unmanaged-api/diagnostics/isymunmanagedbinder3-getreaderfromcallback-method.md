@@ -23,7 +23,7 @@ Allows the user to implement or supply via callback either an `IID_IDiaReadExeAt
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderFromCallback(  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *fileName,  

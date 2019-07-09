@@ -22,7 +22,7 @@ Adds a type forwarder for a nested type to the type table of the given assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportNestedTypeForwarder(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  

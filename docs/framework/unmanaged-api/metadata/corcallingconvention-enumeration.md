@@ -22,7 +22,7 @@ Contains values that describe the types of calling conventions that are made in 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorCallingConvention  
 {  
     IMAGE_CEE_CS_CALLCONV_DEFAULT       = 0x0,  

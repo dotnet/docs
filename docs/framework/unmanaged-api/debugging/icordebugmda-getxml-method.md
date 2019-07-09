@@ -23,7 +23,7 @@ Gets the full XML stream associated with the managed debugging assistant (MDA) r
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetXML (  
     [in] ULONG32   cchName,  
     [out] ULONG32  *pcchName,  

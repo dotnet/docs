@@ -10,7 +10,7 @@ Gets the base address of the loaded module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseAddress(  
    [out] CORDB_ADDRESS *pAddress  
 );  

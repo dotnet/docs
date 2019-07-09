@@ -23,7 +23,7 @@ Gets metadata information for the event represented by the specified event token
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEventProps (  
    [in]  mdEvent       ev,  
    [out] mdTypeDef     *pClass,   

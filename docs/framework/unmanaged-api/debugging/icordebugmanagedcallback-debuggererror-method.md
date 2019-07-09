@@ -23,7 +23,7 @@ Notifies the debugger that an error has occurred while attempting to handle an e
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebuggerError (  
     [in] ICorDebugProcess *pProcess,  
     [in] HRESULT           errorHR,  

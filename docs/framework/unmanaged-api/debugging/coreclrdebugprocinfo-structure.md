@@ -24,7 +24,7 @@ Represents a process that is running on a remote machine.
   
 ## Syntax  
   
-```  
+```cpp  
 struct  CoreClrDebugProcInfo {  
     DWORD m_dwPID;  
     DWORD m_dwInternalID;  

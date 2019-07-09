@@ -22,7 +22,7 @@ Indicates the visibility of resources encoded in an assembly manifest.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorManifestResourceFlags {  
   
     mrVisibilityMask        =   0x0007,  

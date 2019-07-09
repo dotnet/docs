@@ -22,7 +22,7 @@ Contains values that indicate the underlying cause of a stack overflow event.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     SO_Managed,  
     SO_ClrEngine,  

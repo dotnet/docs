@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) has finished using the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleasedVirtualAddressSpace(  
     [in] LPVOID startAddress  
 );  

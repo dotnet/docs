@@ -23,7 +23,7 @@ Closes the enumerator that is identified by the specified handle.
   
 ## Syntax  
   
-```  
+```cpp  
 void CloseEnum (  
    [in] HCORENUM hEnum  
 );  

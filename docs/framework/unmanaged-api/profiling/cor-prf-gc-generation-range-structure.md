@@ -22,7 +22,7 @@ Describes a range (that is, block) of memory that is undergoing garbage collecti
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_PRF_GC_GENERATION_RANGE {  
     COR_PRF_GC_GENERATION generation;  
     ObjectID rangeStart;  

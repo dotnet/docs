@@ -23,7 +23,7 @@ Sets or changes features of a method's PInvoke signature, as defined by a prior 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPinvokeMap (   
     [in]  mdToken      tk,   
     [in]  DWORD        dwMappingFlags,  

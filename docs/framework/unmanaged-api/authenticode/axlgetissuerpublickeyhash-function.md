@@ -16,7 +16,7 @@ Retrieves the SHA-1 hash of the public key associated with the private key that 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _AxlGetIssuerPublicKeyHash (  
     [in]  IN PCRYPT_DATA_BLOB   pChainContext,  
     [out] LPWSTR                *ppwszPublicKeyHash  

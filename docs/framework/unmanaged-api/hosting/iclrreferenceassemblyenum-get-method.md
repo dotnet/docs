@@ -23,7 +23,7 @@ Gets the assembly identity at the supplied index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Get (  
     [in] DWORD dwIndex,  
     [out, size_is(*pcchBufferSize)] LPWSTR pwzBuffer,  

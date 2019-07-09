@@ -23,7 +23,7 @@ Notifies the profiler that a class has finished unloading.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassUnloadFinished(  
     [in] ClassID classId,  
     [in] HRESULT hrStatus);  

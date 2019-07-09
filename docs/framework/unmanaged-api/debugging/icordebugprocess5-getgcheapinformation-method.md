@@ -23,7 +23,7 @@ Provides general information about the garbage collection heap, including whethe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGCHeapInformation(  
     [out] COR_HEAPINFO *pHeapInfo  
 );  

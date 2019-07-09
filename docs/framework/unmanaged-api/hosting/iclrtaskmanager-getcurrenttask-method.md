@@ -23,7 +23,7 @@ Gets the [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTask (  
     [out] ICLRTask **ppTask  
 );  

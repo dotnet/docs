@@ -23,7 +23,7 @@ Validates the specified portable executable (PE) or Microsoft intermediate langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Validate (  
     [in] IVEHandler            *veh,  
     [in] IUnknown              *pAppDomain,  

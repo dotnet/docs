@@ -23,7 +23,7 @@ Specifies the event handler object for managed events.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetManagedHandler (  
     [in] ICorDebugManagedCallback     *pCallback  
 );  

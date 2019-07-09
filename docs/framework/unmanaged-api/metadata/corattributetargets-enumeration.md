@@ -22,7 +22,7 @@ Specifies the application elements on which it is valid to apply an attribute.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorAttributeTargets  
 {  
     catAssembly            = 0x0001,  

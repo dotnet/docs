@@ -23,7 +23,7 @@ Gets the specified number of [COR_HEAPOBJECT](../../../../docs/framework/unmanag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
     [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] COR_HEAPOBJECT  objects[],   
     [out] ULONG *pceltFetched  

@@ -10,7 +10,7 @@ Returns information about method properties, such as the method's metadata token
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodProps(  
    [in]  ULONG32 codeRva,  
    [out] mdToken *pMethodToken,  

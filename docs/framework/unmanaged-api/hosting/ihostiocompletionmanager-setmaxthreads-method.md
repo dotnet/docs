@@ -23,7 +23,7 @@ Sets the maximum number of threads that the host allots to service I/O requests.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMaxThreads (  
     [in] DWORD dwMaxIoCompletionThreads  
 );  

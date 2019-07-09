@@ -22,7 +22,7 @@ Executes the entry point in the specified memory-mapped code. This function is c
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain2 (  
    [in] PBYTE           pUnmappedPE,  
    [in] DWORD           cUnmappedPE,  

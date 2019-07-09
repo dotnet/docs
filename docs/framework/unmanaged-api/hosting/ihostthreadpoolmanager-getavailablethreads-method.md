@@ -23,7 +23,7 @@ Gets the number of threads in the thread pool that are not currently processing 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAvailableThreads (  
     [out] DWORD *pdwAvailableWorkerThreads  
 );  

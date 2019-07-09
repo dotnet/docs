@@ -24,7 +24,7 @@ Terminates an enumeration sequence started with a call to the [BeginMethodEnumer
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndMethodEnumeration (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr 

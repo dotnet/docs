@@ -22,7 +22,7 @@ Indicates whether a field is static and, if so, the static quality that applies 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_FIELD_NOT_A_STATIC = 0x0,  
     COR_PRF_FIELD_APP_DOMAIN_STATIC = 0x1,  

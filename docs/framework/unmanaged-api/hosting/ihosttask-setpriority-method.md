@@ -23,7 +23,7 @@ Requests that the host adjust the thread priority level for the task represented
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPriority (  
     [in] int newPriority  
 );  

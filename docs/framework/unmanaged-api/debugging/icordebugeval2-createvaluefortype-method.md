@@ -23,7 +23,7 @@ Gets a pointer to a new ICorDebugValue of the specified type, with an initial va
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateValueForType (  
     [in] ICorDebugType         *pType,  
     [out] ICorDebugValue       **ppValue  

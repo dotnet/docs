@@ -16,7 +16,7 @@ Computes the strong name public key token from a CSP PUBLICKEYBLOB format.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _AxlPublicKeyBlobToPublicKeyToken (  
     [in]  PCCERT_CHAIN_CONTEXT   pCspPublicKeyBlob,  
     [out] LPWSTR                 *ppwszPublicKeyToken  

@@ -22,7 +22,7 @@ Contains information about the functions that are currently active in a thread's
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct  _COR_ACTIVE_FUNCTION {  
     ICorDebugAppDomain   *pAppDomain;  
     ICorDebugModule      *pModule;  

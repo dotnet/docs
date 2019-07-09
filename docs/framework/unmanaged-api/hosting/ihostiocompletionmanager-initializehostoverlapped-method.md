@@ -23,7 +23,7 @@ Provides the host with an opportunity to initialize any custom data to append to
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeHostOverlapped (  
     [in] void* pvOverlapped  
 );  

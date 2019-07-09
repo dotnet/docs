@@ -22,7 +22,7 @@ Creates a history reader for the specified file.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateHistoryReader (  
     [in]  LPCWSTR        wzFilePath,  
     [out] IHistoryReader **ppHistoryReader  

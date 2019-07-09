@@ -23,7 +23,7 @@ Indicates whether the runtime associated with this interface can be loaded into 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsLoadable(  
         [out, retval] BOOL *pbLoadable);  
 ```  

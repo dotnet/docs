@@ -23,7 +23,7 @@ Provides notification of errors that occur during the metadata merge.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnError (  
     [in] HRESULT   hrError,   
     [in] mdToken   token  

@@ -23,7 +23,7 @@ Gets invoked when exiting a call.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnSyncCallExit  
 (  
     [in]  CALL_ID   in_CallID,  

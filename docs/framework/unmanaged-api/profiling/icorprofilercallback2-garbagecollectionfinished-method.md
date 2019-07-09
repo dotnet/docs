@@ -23,7 +23,7 @@ Notifies the profiler that garbage collection has completed and all garbage coll
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GarbageCollectionFinished();  
 ```  
   

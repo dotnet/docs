@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugClass that represents the uninstantiate
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClass (  
     [out] ICorDebugClass   **ppClass  
 );  

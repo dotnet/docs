@@ -23,7 +23,7 @@ Notifies the common language runtime (CLR) that the host has modified the value 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetLocale (  
     [in] LCID lcid  
 );  

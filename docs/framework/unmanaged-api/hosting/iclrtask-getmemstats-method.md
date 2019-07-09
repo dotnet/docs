@@ -23,7 +23,7 @@ Gets statistical memory usage information related to the task that the current [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemStats (  
     [out] COR_GC_THREAD_STATS *pMemUsage  
 );  

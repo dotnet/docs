@@ -23,7 +23,7 @@ Notifies the debugger that code execution has switched to a new version of an ed
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FunctionRemapComplete (  
     [in] ICorDebugAppDomain   *pAppDomain,  
     [in] ICorDebugThread      *pThread,  

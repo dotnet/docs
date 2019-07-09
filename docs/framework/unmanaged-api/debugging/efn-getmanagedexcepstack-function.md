@@ -22,7 +22,7 @@ Given a managed exception object address, returns a string version of the stack 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedExcepStack(  
     [in]  PDEBUG_CLIENT Client,  
     [in]  ULONG64       StackObjAddr,  

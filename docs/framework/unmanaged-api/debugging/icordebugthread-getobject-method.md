@@ -23,7 +23,7 @@ Gets an interface pointer to the common language runtime (CLR) thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject (  
     [out] ICorDebugValue   **ppObject  
 );  

@@ -23,7 +23,7 @@ Gets a CorElementType value that describes the native type of the common languag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetType (  
     [out] CorElementType   *ty  
 );  

@@ -23,7 +23,7 @@ Gets a pointer to the metadata tokens for the <xref:System.Type> that implements
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInterfaceImplProps (  
    [in]  mdInterfaceImpl        iiImpl,  
    [out] mdTypeDef              *pClass,  

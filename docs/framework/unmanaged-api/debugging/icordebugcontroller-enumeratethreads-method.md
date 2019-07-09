@@ -23,7 +23,7 @@ Gets an enumerator for the active managed threads in the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateThreads (  
     [out] ICorDebugThreadEnum **ppThreads  
 );  

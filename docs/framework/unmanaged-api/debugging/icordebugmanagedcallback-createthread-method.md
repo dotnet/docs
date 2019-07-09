@@ -23,7 +23,7 @@ Notifies the debugger that a thread has started executing managed code.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateThread (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *thread  

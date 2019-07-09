@@ -23,7 +23,7 @@ Gets the native code for the function that is represented by this ICorDebugFunct
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNativeCode (  
     [out] ICorDebugCode **ppCode  
 );  

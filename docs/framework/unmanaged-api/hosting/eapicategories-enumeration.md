@@ -22,7 +22,7 @@ Describes the categories of capabilities that the host can block from running in
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eNoCategory               = 0,  
     eSynchronization          = 0x1,  

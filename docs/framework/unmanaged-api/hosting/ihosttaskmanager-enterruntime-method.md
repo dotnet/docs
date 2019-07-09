@@ -23,7 +23,7 @@ Notifies the host that a call to an unmanaged method, such as a platform invoke 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnterRuntime ();  
 ```  
   

@@ -23,7 +23,7 @@ Reserved for internal use by the fusion technology.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyScavenger (  
     [out] IUnknown **ppUnkReserved  
 );  

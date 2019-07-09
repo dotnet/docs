@@ -22,7 +22,7 @@ Contains values that describe metadata about a field.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorFieldAttr {  
   
     fdFieldAccessMask           =   0x0007,  

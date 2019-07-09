@@ -23,7 +23,7 @@ This method is not implemented in the current version of the .NET Framework.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRelocBreakpoint (  
     [out] ICorDebugValueBreakpoint **ppBreakpoint  
 );  

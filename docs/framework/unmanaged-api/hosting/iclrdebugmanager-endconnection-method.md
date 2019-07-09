@@ -23,7 +23,7 @@ Removes the association between a list of tasks and an identifier and a friendly
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndConnection (  
     [in] CONNID dwConnectionId  
 );  

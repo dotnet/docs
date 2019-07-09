@@ -10,7 +10,7 @@ Gets a method's local symbols given the relative virtual address (RVA) of that m
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodLocalSymbols(  
    [in] ULONG32 nativeRVA,  
    [in] ULONG32 cRequestedSymbols,  

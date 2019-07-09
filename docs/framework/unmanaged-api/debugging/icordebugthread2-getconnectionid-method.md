@@ -23,7 +23,7 @@ Gets the connection identifier for this ICorDebugThread2 object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConnectionID (  
     [out] CONNID *pdwConnectionId  
 );  

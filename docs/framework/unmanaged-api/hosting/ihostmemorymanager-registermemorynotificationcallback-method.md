@@ -23,7 +23,7 @@ Registers a pointer to a callback function that the host invokes to notify the c
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterMemoryNotificationCallback (  
     [in] ICLRMemoryNotificationCallback* pCallback  
 );  

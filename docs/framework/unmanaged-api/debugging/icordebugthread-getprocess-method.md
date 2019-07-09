@@ -23,7 +23,7 @@ Gets an interface pointer to the process of which this ICorDebugThread forms a p
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [out] ICorDebugProcess   **ppProcess  
 );  

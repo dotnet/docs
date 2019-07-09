@@ -22,7 +22,7 @@ Indicates whether the context is from the active (or leaf) frame on the stack or
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugSetContextFlag  
 {  
    SET_CONTEXT_FLAG_ACTIVE_FRAME = 1  

@@ -23,7 +23,7 @@ Gets an HRESULT that indicates whether it is safe to set the instruction pointer
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CanSetIP (  
     [in] ULONG32            nOffset  
 );  

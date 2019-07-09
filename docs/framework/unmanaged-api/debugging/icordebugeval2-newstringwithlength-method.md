@@ -23,7 +23,7 @@ Creates a string of the specified length, with the specified contents.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewStringWithLength (  
     [in] LPCWSTR               string,  
     [in] UINT                  uiLength  

@@ -23,7 +23,7 @@ Releases a reference to the specified enumeration instance.
   
 ## Syntax  
   
-```  
+```cpp  
 void CloseEnum (  
     [in] HCORENUM     hEnum  
 );  

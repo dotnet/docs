@@ -22,7 +22,7 @@ Provides a text representation of a managed stack trace and an array of `CONTEXT
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CALLBACK _EFN_StackTrace(  
     [in]  PDEBUG_CLIENT  Client,  
     [out] WCHAR          wszTextOut[],  

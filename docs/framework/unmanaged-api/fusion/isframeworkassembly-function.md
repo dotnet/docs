@@ -22,7 +22,7 @@ Gets a value that indicates whether the specified assembly is managed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsFrameworkAssembly (  
     [in]  LPCWSTR pwzAssemblyReference,  
     [out] LPBOOL  pbIsFrameworkAssembly,  

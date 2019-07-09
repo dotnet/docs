@@ -23,7 +23,7 @@ Generates a hash over the contents of the specified file.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromFile (  
     [in]  LPCSTR   szFilePath,  
     [in, out] unsigned int   *piHashAlg,   

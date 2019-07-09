@@ -22,7 +22,7 @@ Provides target platform values that are used by the [ICorDebugDataTarget::GetPl
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugPlatform  
 {  
     CORDB_PLATFORM_WINDOWS_X86,    // Windows on Intel x86  

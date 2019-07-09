@@ -22,7 +22,7 @@ Gets the name of a type using the provided managed object pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedObjectName(  
     [in]  PDEBUG_CLIENT  Client,  
     [in]  ULONG64        objAddr,  

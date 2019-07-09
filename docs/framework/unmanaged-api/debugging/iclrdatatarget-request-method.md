@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to request an o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Request (  
     [in] ULONG32            reqCode,  
     [in] ULONG32            inBufferSize,  

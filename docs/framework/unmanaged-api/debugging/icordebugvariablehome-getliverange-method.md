@@ -23,7 +23,7 @@ Gets the native range over which this variable is live.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLiveRange(  
     [out] ULONG32* pStartOffset,  
     [out] ULONG32 *pEndOffset  

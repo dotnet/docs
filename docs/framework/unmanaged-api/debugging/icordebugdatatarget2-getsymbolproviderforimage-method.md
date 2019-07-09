@@ -10,7 +10,7 @@ Returns the symbol-provider for a module from the base address of that module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolProviderForImage(  
     [in] CORDB_ADDRESS imageBaseAddress,   
     [out] ICorDebugSymbolProvider **ppSymProvider  

@@ -23,7 +23,7 @@ Gets an object that allows the host to specify the callback configuration of the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConfiguration(  
     [out] ICorConfiguration** pConfiguration  
 );  

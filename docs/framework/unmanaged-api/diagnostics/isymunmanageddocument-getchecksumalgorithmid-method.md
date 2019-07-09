@@ -23,7 +23,7 @@ Gets the checksum algorithm identifier, or returns a GUID of all zeros if there 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCheckSumAlgorithmId(  
     [out, retval] GUID*  pRetVal);  
 ```  

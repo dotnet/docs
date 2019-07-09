@@ -23,7 +23,7 @@ Enumerates all interfaces implemented by the specified `TypeDef`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumInterfaceImpls (  
    [in, out]  HCORENUM       *phEnum,   
    [in]   mdTypeDef          td,  

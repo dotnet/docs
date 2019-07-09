@@ -23,7 +23,7 @@ Gets the total number of frozen objects in the collection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG   *pcelt  
 );  

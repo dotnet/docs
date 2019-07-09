@@ -23,7 +23,7 @@ Gets a set of current statistics about the common language runtime's garbage col
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStats (  
     [in, out] COR_GC_STATS *pStats  
 );  
@@ -51,7 +51,7 @@ HRESULT GetStats (
   
  An example of the usage is as follows:  
   
-```  
+```cpp  
 COR_GC_STATS GCStats;  
 GCStats.Flags = COR_GC_COUNTS | COR_GC_MEMORYUSAGE;  
 pCLRGCManager->GetStats(&GCStats);  

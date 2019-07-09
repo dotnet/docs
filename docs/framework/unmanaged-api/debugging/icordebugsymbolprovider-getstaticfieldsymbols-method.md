@@ -10,7 +10,7 @@ Gets the static field symbols that correspond to a typespec signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  

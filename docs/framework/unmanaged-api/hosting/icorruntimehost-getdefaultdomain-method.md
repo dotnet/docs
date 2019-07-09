@@ -23,7 +23,7 @@ Gets an interface pointer of type <xref:System._AppDomain?displayProperty=nameWi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDefaultDomain (  
     [out] IUnknown** pAppDomain  
 );  

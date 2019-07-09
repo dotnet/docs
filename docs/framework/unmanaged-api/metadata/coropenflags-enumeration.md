@@ -22,7 +22,7 @@ Contains flag values that control metadata behavior upon opening manifest files.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorOpenFlags  
 {  
     ofRead              =   0x00000000,  

@@ -24,7 +24,7 @@ Gets the required common language runtime (CLR) version number.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCORRequiredVersion (  
     [out] LPWSTR   pbuffer,  
     [in]  DWORD    cchBuffer,  

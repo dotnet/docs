@@ -23,7 +23,7 @@ Sets the callback interface to be used by the garbage collector to request the h
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCHostControl (  
     [in] IGCHostControl* pGCHostControl  
 );  

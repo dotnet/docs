@@ -23,7 +23,7 @@ Gets the identity of this managed object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectIdentity (  
     [out] BSTR*   pBSTRGUID,  
     [out] int*    AppDomainID,  

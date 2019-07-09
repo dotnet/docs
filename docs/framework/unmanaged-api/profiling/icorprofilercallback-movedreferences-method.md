@@ -23,7 +23,7 @@ Called to report the new layout of objects in the heap as a result of a compacti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MovedReferences(  
     [in]  ULONG  cMovedObjectIDRanges,  
     [in, size_is(cMovedObjectIDRanges)] ObjectID oldObjectIDRangeStart[] ,  

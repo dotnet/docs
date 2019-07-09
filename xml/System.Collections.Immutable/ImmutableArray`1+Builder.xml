@@ -403,8 +403,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets and sets the length of the internal array. When set, the internal array is reallocated to the given capacity if it is not already the specified length.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the length of the internal array. When set, the internal array is reallocated to the given capacity if it is not already the specified length.</summary>
+        <value>The length of the internal array.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -807,7 +807,7 @@
       <Docs>
         <param name="index">The item index.</param>
         <summary>Gets a read-only reference to the element at the specified index.</summary>
-        <returns>To be added.</returns>
+        <returns>The read-only reference to the element at the specified index.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">
           <paramref name="index" /> is greater or equal to the array count.</exception>

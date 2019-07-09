@@ -112,10 +112,6 @@ Most distributions require all artifacts to be built from source. This has some 
 
 Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallbackFolder`. To avoid issues with the package manager, these files should be identical (checksum, modification date, and so on).
 
-### Preview versions
-
-Package maintainers may decide to provide preview versions of the shared framework and SDK. Preview releases may be provided using the `dotnet-sdk-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, or `dotnet-runtime-[major].[minor]` packages. For preview releases, the package version major must be set to zero. This way, the final release is installed as an upgrade of the package.
-
 ## Building packages
 
 The [dotnet/source-build](https://github.com/dotnet/source-build) repository provides instructions on how to build a source tarball of the .NET Core SDK and all its components. The output of the source-build repository matches the layout described in the first section of this article.

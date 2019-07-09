@@ -19,7 +19,17 @@
   </Interfaces>
   <Docs>
     <summary>Provides a return type used exclusively for <see cref="M:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection" />. It is intended to be used as an <see cref="T:System.IDisposable" /> in a <see langword="using" /> block.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown">
+        <![CDATA[
+
+### Remarks
+
+This is an implementation detail of the <xref:System.Runtime.Loader.AssemblyLoadContext.EnterContextualReflection%2A> APIs. It is a struct, to avoid heap allocation. It is required to be public to avoid boxing. 
+
+          ]]>
+      </format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Dispose">

@@ -1111,7 +1111,7 @@ The `Unbox<T>` method is simply a wrapper for the IL [unbox](xref:System.Reflect
 The `Unbox<T>` method has an important usage constraint that is not enforced by language compilers and that is the responsibility of the caller. The IL `unbox` instruction returns a controlled-mutability managed pointer. Because .NET and .NET language compilers cannot represent this constraint, the `Unbox<T>` method returns a normal mutable `ref T`. However developers **must not** mutate the returned reference unless they are certain that `T` is a mutable struct type. For example, because the numeric primitives such as <xref:System.Int32> are not mutable struct types, the following code is not suppported:
 
 ```csharp
-Unsafe.Box<int>(obj) = 30;
+Unsafe.Unbox<int>(obj) = 30;
 ```
 
 In contrast, a type such as <xref:System.Drawing.Point?<displayProperty=nameWithType> is a mutable struct with public property setters, so the following code is supported:

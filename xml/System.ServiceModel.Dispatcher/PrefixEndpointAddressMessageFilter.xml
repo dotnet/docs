@@ -24,7 +24,7 @@
   
  This filter performs the same query as <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>, except that the test for whether a message matches an endpoint address is done by a *Longest-Prefix Match*. This means that the URI specified in the filter does not have to match the message's URI exactly, but must be contained in that URI as a prefix. For example, if a filter specifies the address "www.foo.com", and a message is addressed to "www.foo.com/customerA", then the URI part of the filter query condition will be met. However, the header portion of the filter query still has to be done.  
   
- Internet Information Services (IIS) and the underlying file system (NTFS or FAT) are case-insensitive. URI comparisons done by this class are also case-insensitive. So, for example, http://www.microsoft.com is evaluated as equal to http://WWW.microsoft.com.  
+ Internet Information Services (IIS) and the underlying file system (NTFS or FAT) are case-insensitive. URI comparisons done by this class are also case-insensitive. So, for example, `http://www.microsoft.com` is evaluated as equal to `http://WWW.microsoft.com`.  
   
  ]]></format>
     </remarks>
@@ -94,15 +94,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you have a web service installed on your local machine, there are many equivalent ways to reference it, including the following:  
-  
--   http://localhost/foo.svc  
-  
--   http://192.168.1.100/foo.svc  
-  
--   http://[my-machine-name]/foo.svc  
-  
--   http://[my-machine-name].[my-company].com/foo.svc.  
+
+If you have a web service installed on your local machine, there are many equivalent ways to reference it, including the following:  
+
+- `http://localhost/foo.svc`
+- `http://192.168.1.100/foo.svc`
+- `http://[my-machine-name]/foo.svc`
+- `http://[my-machine-name].[my-company].com/foo.svc`
   
  If the value of the `includeHostNameInComparison` parameter is `false`, the above URIs all resolve to the same endpoint.  
   
@@ -199,15 +197,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you have a web service installed on your local machine, there are many equivalent ways to reference it, including the following:  
-  
--   http://localhost/foo.svc  
-  
--   http://192.168.1.100/foo.svc  
-  
--   http://[my-machine-name]/foo.svc  
-  
--   http://[my-machine-name].[my-company].com/foo.svc.  
+
+If you have a web service installed on your local machine, there are many equivalent ways to reference it, including the following:  
+
+- `http://localhost/foo.svc`
+- `http://192.168.1.100/foo.svc`
+- `http://[my-machine-name]/foo.svc`
+- `http://[my-machine-name].[my-company].com/foo.svc`
   
  The default value of this property is `false`, so the above URIs all resolve to the same endpoint, unless you change this property.  
   

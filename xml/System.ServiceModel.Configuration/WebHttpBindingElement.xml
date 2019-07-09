@@ -177,7 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An Internet resource is local if it has a local address. A local address is one that is on same computer, the local LAN or intranet and is identified, syntactically, by the lack of a period (.) as in the URIs "http://webserver/" and "http://localhost/".  
+ An Internet resource is local if it has a local address. A local address is one that is on same computer, the local LAN or intranet and is identified, syntactically, by the lack of a period (.) as in the URIs `http://webserver/` and `http://localhost/`.  
   
  Setting the <xref:System.ServiceModel.Configuration.WebHttpBindingElement.BypassProxyOnLocal%2A> property determines whether endpoints configured with the <xref:System.ServiceModel.Configuration.WebHttpBindingElement> use the proxy server when accessing local resources.  
   

@@ -1317,7 +1317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpRuntimeSection.UseFullyQualifiedRedirectUrl%2A> property indicates whether client-side redirects are fully qualified (in the form http://server/path) or whether relative redirects are instead sent to the client.  
+ The <xref:System.Web.Configuration.HttpRuntimeSection.UseFullyQualifiedRedirectUrl%2A> property indicates whether client-side redirects are fully qualified (in the form `http://server/path`) or whether relative redirects are instead sent to the client.  
   
 > [!NOTE]
 >  Some browsers might have problems loading pages in cookieless sessions when this value is `false`.  

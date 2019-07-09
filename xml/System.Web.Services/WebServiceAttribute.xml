@@ -44,9 +44,10 @@
    
   
 ## Examples  
- The following example sets the <xref:System.Web.Services.WebServiceAttribute.Description%2A> property of the <xref:System.Web.Services.WebServiceAttribute> to " `Common Server Variables` " and sets the XML namespace to http://www.microsoft.com/.  
-  
-  
+ The following example sets the <xref:System.Web.Services.WebServiceAttribute.Description%2A> property of the <xref:System.Web.Services.WebServiceAttribute> to `"Common Server Variables"` and sets the XML namespace to `http://www.microsoft.com/`.
+
+[!code-aspx-csharp[Classic WebServiceAttribute Example](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceAttribute Example/CS/sourcecs.asmx)]
+[!code-aspx-vb[Classic WebServiceAttribute Example](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceAttribute Example/VB/sourcevb.asmx)]    
   
  ]]></format>
     </remarks>
@@ -131,9 +132,10 @@
    
   
 ## Examples  
- The following example sets the <xref:System.Web.Services.WebServiceAttribute.Description%2A> property to " `Common Server Variables` ".  
+ The following example sets the <xref:System.Web.Services.WebServiceAttribute.Description%2A> property to `"Common Server Variables"`.
   
-  
+[!code-aspx-csharp[Classic WebServiceAttribute Example](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceAttribute Example/CS/sourcecs.asmx)]
+[!code-aspx-vb[Classic WebServiceAttribute Example](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceAttribute Example/VB/sourcevb.asmx)]    
   
  ]]></format>
         </remarks>
@@ -178,6 +180,8 @@
 ## Examples  
  The following example sets <xref:System.Web.Services.WebServiceAttribute.Name%2A> of the XML Web service to `MyName`.  
   
+[!code-aspx-csharp[Classic WebServiceAttribute.Name Example](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceAttribute.Name Example/CS/sourcecs.asmx)]
+[!code-aspx-vb[Classic WebServiceAttribute.Name Example](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceAttribute.Name Example/VB/sourcevb.asmx)]    
   
   
  ]]></format>
@@ -224,7 +228,8 @@
 ## Examples  
  The following example sets <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> to `http://www.contoso.com` and overrides that namespace for the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> property by adding a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to the `Time` XML Web service method.  
   
-  
+[!code-aspx-csharp[Classic WebServiceAttribute.Namespace Example](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceAttribute.Namespace Example/CS/sourcecs.asmx)]
+[!code-aspx-vb[Classic WebServiceAttribute.Namespace Example](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceAttribute.Namespace Example/VB/sourcevb.asmx)]    
   
  ]]></format>
         </remarks>

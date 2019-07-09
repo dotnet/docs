@@ -1178,7 +1178,7 @@ No <see cref="T:System.Web.HttpContext" /> object is defined for the request.</e
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For the URL Http://www.contoso.com/virdir/page.html/tail, the <xref:System.Web.HttpRequestWrapper.PathInfo%2A> value is /tail.  
+ For the URL `http://www.contoso.com/virdir/page.html/tail`, the <xref:System.Web.HttpRequestWrapper.PathInfo%2A> value is /tail.  
   
  ]]></format>
         </remarks>

@@ -2008,7 +2008,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An absolute URL (for example, http://www.contoso.com/default.aspx) or a relative URL (for example, Default.aspx) can be specified for the target location but some browsers may reject a relative URL.  
+ An absolute URL (for example, `http://www.contoso.com/default.aspx`) or a relative URL (for example, Default.aspx) can be specified for the target location but some browsers may reject a relative URL.  
   
  When you use this method in a page handler to terminate a request for one page and start a new request for another page, set `endResponse` to `false` and then call the <xref:System.Web.HttpApplication.CompleteRequest%2A> method. If you specify `true` for the `endResponse` parameter, this method calls the <xref:System.Web.HttpResponse.End%2A> method for the original request, which throws a <xref:System.Threading.ThreadAbortException> exception when it completes. This exception has a detrimental effect on Web application performance, which is why passing `false` for the `endResponse` parameter is recommended. For more information, see the <xref:System.Web.HttpResponse.End%2A> method.  
   

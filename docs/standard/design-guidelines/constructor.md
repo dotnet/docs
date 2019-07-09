@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "type constructors"
   - "virtual members"
   - "constructors, types"
-  - "default constructors"
+  - "parameterless constructors"
   - "static constructors"
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
 author: "KrzysztofCwalina"
@@ -19,7 +19,7 @@ There are two kinds of constructors: type constructors and instance constructors
   
  Type constructors are static and are run by the CLR before the type is used. Instance constructors run when an instance of a type is created.  
   
- Type constructors cannot take any parameters. Instance constructors can. Instance constructors that don’t take any parameters are often called default constructors.  
+ Type constructors cannot take any parameters. Instance constructors can. Instance constructors that don’t take any parameters are often called parameterless constructors.  
   
  Constructors are the most natural way to create instances of a type. Most developers will search and try to use a constructor before they consider alternative ways of creating instances (such as factory methods).  
   
@@ -43,15 +43,15 @@ There are two kinds of constructors: type constructors and instance constructors
   
  **✓ DO** throw exceptions from instance constructors, if appropriate.  
   
- **✓ DO** explicitly declare the public default constructor in classes, if such a constructor is required.  
+ **✓ DO** explicitly declare the public parameterless constructor in classes, if such a constructor is required.  
   
- If you don’t explicitly declare any constructors on a type, many languages (such as C#) will automatically add a public default constructor. (Abstract classes get a protected constructor.)  
+ If you don’t explicitly declare any constructors on a type, many languages (such as C#) will automatically add a public parameterless constructor. (Abstract classes get a protected constructor.)  
   
- Adding a parameterized constructor to a class prevents the compiler from adding the default constructor. This often causes accidental breaking changes.  
+ Adding a parameterized constructor to a class prevents the compiler from adding the parameterless constructor. This often causes accidental breaking changes.  
   
- **X AVOID** explicitly defining default constructors on structs.  
+ **X AVOID** explicitly defining parameterless constructors on structs.  
   
- This makes array creation faster, because if the default constructor is not defined, it does not have to be run on every slot in the array. Note that many compilers, including C#, don’t allow structs to have parameterless constructors for this reason.  
+ This makes array creation faster, because if the parameterless constructor is not defined, it does not have to be run on every slot in the array. Note that many compilers, including C#, don’t allow structs to have parameterless constructors for this reason.  
   
  **X AVOID** calling virtual members on an object inside its constructor.  
   

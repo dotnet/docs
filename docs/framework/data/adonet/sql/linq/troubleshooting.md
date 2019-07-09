@@ -20,7 +20,7 @@ The following information exposes some issues you might encounter in your [!INCL
  To specify an input file name, add the name to the command line as the input file. Including the file name in the connection string (using the **/conn** option) is not supported. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Class Library Projects  
- The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] creates a connection string in the `app.config` file of the project. In class library projects, the `app.config` file is not used. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses the Connection String provided in the design-time files. Changing the value in `app.config` does not change the database to which your application connects.  
+ The Object Relational Designer creates a connection string in the `app.config` file of the project. In class library projects, the `app.config` file is not used. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses the Connection String provided in the design-time files. Changing the value in `app.config` does not change the database to which your application connects.  
   
 ## Cascade Delete  
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support or recognize cascade-delete operations. If you want to delete a row in a table that has constraints against it, you must do either of the following:  

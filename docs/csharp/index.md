@@ -29,7 +29,7 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 * [Get Started](getting-started/index.md)
   * This section covers what you need to install for a C# development environment on your preferred platform. The different topics under this section explain how to create your first C# program in different supported environments.
 
-* [Introduction to C# tutorials](tutorials/intro-to-csharp/index.md):
+* [Introduction to C# tutorials](tutorials/intro-to-csharp/index.md)
   * Introduction to C# tutorials presents interactive tutorials for brand-new developers to explore and learn the C# language in the browser using a Read-Eval-Print Loop (REPL) interface. After you finish the interactive lessons, you can improve your coding skills by practicing the same lessons on your machine.
 
 * [Tutorials](tutorials/index.md)

@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _EFN_GetManagedObjectName Function
+# \_EFN\_GetManagedObjectName Function
 Gets the name of a type using the provided managed object pointer.  
   
 ## Syntax  

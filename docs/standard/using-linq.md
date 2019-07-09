@@ -4,6 +4,9 @@ description: Learn how LINQ provides language-level querying capabilities and an
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.technology: dotnet-standard
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 ---

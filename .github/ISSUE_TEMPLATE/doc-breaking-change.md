@@ -29,8 +29,9 @@ Text in brackets are placeholders; replace the text with the requested informati
 ### Recommended action
 
 [ Suggested steps if user is affected go here:
+- Possible workarounds
 - Example of code changes to handle change
-- How to opt out of change ]
+]
 
 ### Affected APIs
 

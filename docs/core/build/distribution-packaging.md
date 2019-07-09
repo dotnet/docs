@@ -99,7 +99,7 @@ The following table shows the recommended packages:
 | dotnet-runtime-[major].[minor]    | dotnet-runtime-2.1 | Specific runtime                | (5)              | host-fxr:\<runtime version>+      | \<runtime version> |
 | dotnet-host-fxr                   | dotnet-host-fxr    | _dependency_                    | (2)              | host:\<runtime version>+          | \<runtime version> |
 | dotnet-host                       | dotnet-host        | _dependency_                    | (1),(8),(9),(10) |                                   | \<runtime version> |
-| dotnet-netcoreapp-targeting-pack-[major].[minor]    |  | _dependency_                    | (12)             |                                   | \<pack version>    |
+| dotnet-targeting-pack-[major].[minor]    |  | _dependency_                    | (12)             |                                   | \<pack version>    |
 | dotnet-aspnet-targeting-pack-[major].[minor]        |  | _dependency_                    | (11)             |                                   | \<pack version>    |
 | dotnet-netstandard-targeting-pack-[netst_major].[netst_minor] || _dependency_            | (15)             |                                   | \<pack version>    |
 

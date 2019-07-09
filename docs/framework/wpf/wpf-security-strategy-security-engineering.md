@@ -65,13 +65,13 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
 - **Prefix/Prefast**: Finds security vulnerabilities and common security issues in unmanaged code such as buffer overruns, format string issues, and error checking.  
   
-- **Banned APIs**: Searches source code to identify accidental usage of functions that are well-known for causing security issues, such as `strcpy`. Once identified, these functions are replaced with alternatives that are more security.  
+- **Banned APIs**: Searches source code to identify accidental usage of functions that are well-known for causing security issues, such as `strcpy`. Once identified, these functions are replaced with alternatives that are more secure.  
   
 <a name="techniques"></a>   
 ### Testing Techniques  
  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses a variety of security testing techniques that include:  
   
-- **Whitebox Testing**: Testers view source code, and then build exploit tests  
+- **Whitebox Testing**: Testers view source code, and then build exploit tests.
   
 - **Blackbox Testing**: Testers try to find security exploits by examining the API and features, and then try to attack the product.  
   

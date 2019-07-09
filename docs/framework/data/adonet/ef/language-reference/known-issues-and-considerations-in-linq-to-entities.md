@@ -29,7 +29,7 @@ This section provides information about known issues with LINQ to Entities queri
   
 <a name="OrderingInfoLost"></a>   
 ## Ordering Information Lost  
- Projecting columns into an anonymous type will cause ordering information to be lost in some queries that are executed against a [!INCLUDE[ssVersion2005](../../../../../../includes/ssversion2005-md.md)] database set to a compatibility level of "80".  This occurs when a column name in the order-by list matches a column name in the selector, as shown in the following example:  
+ Projecting columns into an anonymous type will cause ordering information to be lost in some queries that are executed against a SQL Server 2005 database set to a compatibility level of "80".  This occurs when a column name in the order-by list matches a column name in the selector, as shown in the following example:  
   
  [!code-csharp[DP L2E Conceptual Examples#SBUDT543840](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#sbudt543840)]
  [!code-vb[DP L2E Conceptual Examples#SBUDT543840](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#sbudt543840)]  

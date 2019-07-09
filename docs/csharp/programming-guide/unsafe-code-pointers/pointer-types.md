@@ -18,10 +18,10 @@ void* identifier; //allowed but not recommended
 The type specified before the `*` in a pointer type is called the **referent type**. Any of the following types may be a referent type:
 
 - Any integral type: [sbyte](../../language-reference/builtin-types/integral-numeric-types.md), [byte](../../language-reference/builtin-types/integral-numeric-types.md), [short](../../language-reference/builtin-types/integral-numeric-types.md), [ushort](../../language-reference/builtin-types/integral-numeric-types.md), [int](../../language-reference/builtin-types/integral-numeric-types.md), [uint](../../language-reference/builtin-types/integral-numeric-types.md), [long](../../language-reference/builtin-types/integral-numeric-types.md), [ulong](../../language-reference/builtin-types/integral-numeric-types.md).
-- Any floating-point type: [float](../../language-reference/keywords/float.md), [double](../../language-reference/keywords/double.md).
+- Any floating-point type: [float](../../language-reference/builtin-types/floating-point-numeric-types.md), [double](../../language-reference/builtin-types/floating-point-numeric-types.md).
 - [char](../../language-reference/keywords/char.md).
 - [bool](../../language-reference/keywords/bool.md).
-- [decimal](../../language-reference/keywords/decimal.md).
+- [decimal](../../language-reference/builtin-types/floating-point-numeric-types.md).
 - Any [enum](../../language-reference/keywords/enum.md) type.
 - Any pointer type. This allows expressions such as `void**`.
 - Any user-defined struct type that contains fields of unmanaged types only.

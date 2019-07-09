@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 A user-defined type can define a custom implicit or explicit conversion from or to another type.
 
-Implicit conversions don't require special syntax to be invoked and can occur in a variety of situations, for example, in assignments and methods invocations. Predefined C# implicit conversions always succeed and never throw an exception or lose information. User-defined implicit conversions should behave that way as well. If a custom conversion can throw an exception or lose information, define it as an explicit conversion.
+Implicit conversions don't require special syntax to be invoked and can occur in a variety of situations, for example, in assignments and methods invocations. Predefined C# implicit conversions always succeed and never throw an exception or lose information. User-defined implicit conversions should behave in that way as well. If a custom conversion can throw an exception or lose information, define it as an explicit conversion.
 
 User-defined conversions are not considered by the [is](type-testing-and-conversion-operators.md#is-operator) and [as](type-testing-and-conversion-operators.md#as-operator) operators. Use the [cast operator ()](type-testing-and-conversion-operators.md#cast-operator-) to invoke a user-defined explicit conversion.
 
@@ -40,6 +40,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
+- [Operator overloading](operator-overloading.md)
 - [Type-testing and conversion operators](type-testing-and-conversion-operators.md)
 - [Casting and type conversion](../../programming-guide/types/casting-and-type-conversions.md)
 - [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)

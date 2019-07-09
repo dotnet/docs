@@ -21,7 +21,9 @@ The following example defines a simplified structure to represent a rational num
 
 [!code-csharp[fraction example](~/samples/csharp/language-reference/operators/OperatorOverloading.cs)]
 
-You also use the `operator` keyword to define a custom type conversion. For example, you could extend the preceding example by defining an implicit conversion from the `int` type to the `Fraction` type. Then, overloaded operators would support arguments of those two types. That is, it would become possible to add an integer value to a fraction and obtain a fraction as a result. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
+You could extend the preceding example by defining an implicit conversion from `int` to `Fraction`. Then, overloaded operators would support arguments of those two types. That is, it would become possible to add an integer to a fraction and obtain a fraction as a result.
+
+You also use the `operator` keyword to define a custom type conversion. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ## Overloadable operators
 
@@ -55,4 +57,5 @@ For more information, see the following sections of the [C# language specificati
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
+- [User-defined conversion operators](user-defined-conversion-operators.md)
 - [Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)

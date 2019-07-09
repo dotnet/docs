@@ -58,7 +58,7 @@ Compound assignment is supported by [arithmetic](arithmetic-operators.md#compoun
 
 ## Operator overloadability
 
-A user-defined type cannot overload the assignment operator. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see the [implicit](../keywords/implicit.md) keyword article.
+A user-defined type cannot overload the assignment operator. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
 ## C# language specification
 

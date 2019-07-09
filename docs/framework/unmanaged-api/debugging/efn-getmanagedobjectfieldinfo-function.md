@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _EFN_GetManagedObjectFieldInfo Function
+# \_EFN\_GetManagedObjectFieldInfo Function
 Gets the offset from the start of an object to a field and the field's value, using the provided object pointer and field name.  
   
 ## Syntax  

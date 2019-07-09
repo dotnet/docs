@@ -26,10 +26,10 @@ String literals are delimited by the quotation mark (") character. The backslash
 |Backslash|`\\`|
 |Quotation mark|`\"`|
 |Apostrophe|`\'`|
-|Unicode character|`\DDD` (where `D` indicates a decimal digit; range of 000 - 255; e.g. `\231` = "ç")|
-|Unicode character|`\xHH` (where `H` indicates a hexadecimal digit; range of 00 - FF; e.g. `\xE7` = "ç")|
-|Unicode character|`\uHHHH` (UTF-16) (where `H` indicates a hexadecimal digit; range of 0000 - FFFF;  e.g. `\u00E7` = "ç")|
-|Unicode character|`\U00HHHHHH` (UTF-32) (where `H` indicates a hexadecimal digit; range of 000000 - 10FFFF;  e.g. `\U0001F47D` = "👽")|
+|Unicode character|`\DDD` (where `D` indicates a decimal digit; range of 000 - 255; for example, `\231` = "ç")|
+|Unicode character|`\xHH` (where `H` indicates a hexadecimal digit; range of 00 - FF; for example, `\xE7` = "ç")|
+|Unicode character|`\uHHHH` (UTF-16) (where `H` indicates a hexadecimal digit; range of 0000 - FFFF;  for example, `\u00E7` = "ç")|
+|Unicode character|`\U00HHHHHH` (UTF-32) (where `H` indicates a hexadecimal digit; range of 000000 - 10FFFF;  for example, `\U0001F47D` = "👽")|
 
 > [!IMPORTANT]
 > The `\DDD` escape sequence is decimal notation, not octal notation like in most other languages. Therefore, digits `8` and `9` are valid, and a sequence of `\032` represents a space (U+0020), whereas that same code point in octal notation would be `\040`.

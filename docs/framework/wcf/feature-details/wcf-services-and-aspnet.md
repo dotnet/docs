@@ -23,15 +23,15 @@ The results of the side-by-side model are as follows:
 
 - Within an AppDomain, features implemented by the HTTP runtime apply to ASP.NET content but not to WCF. Many HTTP-specific features of the ASP.NET application platform do not apply to WCF Services hosted inside of an AppDomain that contains ASP.NET content. Examples of these features include the following:
 
-    - HttpContext: <xref:System.Web.HttpContext.Current%2A> is always `null` when accessed from within a WCF service. Use <xref:System.ServiceModel.Channels.RequestContext> instead.
+  - HttpContext: <xref:System.Web.HttpContext.Current%2A> is always `null` when accessed from within a WCF service. Use <xref:System.ServiceModel.Channels.RequestContext> instead.
 
-    - File-based authorization: The WCF security model does not allow for the access control list (ACL) applied to the .svc file of the service when deciding if a service request is authorized.
+  - File-based authorization: The WCF security model does not allow for the access control list (ACL) applied to the .svc file of the service when deciding if a service request is authorized.
 
-    - Configuration-based URL Authorization: Similarly, the WCF security model does not adhere to any URL-based authorization rules specified in System.Web’s \<authorization> configuration element. These settings are ignored for WCF requests if a service resides in a URL space secured by ASP.NET’s URL authorization rules.
+  - Configuration-based URL Authorization: Similarly, the WCF security model does not adhere to any URL-based authorization rules specified in System.Web’s \<authorization> configuration element. These settings are ignored for WCF requests if a service resides in a URL space secured by ASP.NET’s URL authorization rules.
 
-    - HttpModule extensibility: The WCF hosting infrastructure intercepts WCF requests when the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event is raised and does not return processing to the ASP.NET HTTP pipeline. Modules that are coded to intercept requests at later stages of the pipeline do not intercept WCF requests.
+  - HttpModule extensibility: The WCF hosting infrastructure intercepts WCF requests when the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event is raised and does not return processing to the ASP.NET HTTP pipeline. Modules that are coded to intercept requests at later stages of the pipeline do not intercept WCF requests.
 
-    - ASP.NET impersonation: By default, WCF requests always runs as the IIS process identity, even if ASP.NET is set to enable impersonation using System.Web’s \<identity impersonate="true" /> configuration option.
+  - ASP.NET impersonation: By default, WCF requests always runs as the IIS process identity, even if ASP.NET is set to enable impersonation using System.Web’s \<identity impersonate="true" /> configuration option.
 
 These restrictions apply only to WCF services hosted in IIS application. The behavior of ASP.NET content is not affected by the presence of WCF.
 

@@ -20,8 +20,8 @@ Internal types or members are accessible only within files in the same assembly,
 ```csharp  
 public class BaseClass   
 {  
-    // Only accessible within the same assembly  
-    internal static int x = 0;  
+    // Only accessible within the same assembly.
+    internal static int x = 0;
 }  
 ```  
 
@@ -52,13 +52,13 @@ class TestAccess
 {  
    static void Main()   
    {  
-      BaseClass myBase = new BaseClass();   // CS0122  
+      var myBase = new BaseClass();   // CS0122  
    }  
 }  
 ```  
   
 ## Example  
- In this example, use the same files you used in example 1, and change the accessibility level of `BaseClass` to `public`. Also change the accessibility level of the member `IntM` to `internal`. In this case, you can instantiate the class, but you cannot access the internal member.  
+ In this example, use the same files you used in example 1, and change the accessibility level of `BaseClass` to `public`. Also change the accessibility level of the member `intM` to `internal`. In this case, you can instantiate the class, but you cannot access the internal member.  
   
 ```csharp  
 // Assembly2.cs  
@@ -76,7 +76,7 @@ public class TestAccess
 {  
    static void Main()   
    {  
-      BaseClass myBase = new BaseClass();   // Ok.  
+      var myBase = new BaseClass();   // Ok.  
       BaseClass.intM = 444;    // CS0117  
    }  
 }  

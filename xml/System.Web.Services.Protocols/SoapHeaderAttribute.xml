@@ -47,7 +47,8 @@
 ## Examples  
  The following `MyWebService` XML Web service defines one <xref:System.Web.Services.Protocols.SoapHeader> of type `MyHeader`. The `Hello` XML Web service method requires the client to invoke the XML Web service method with this <xref:System.Web.Services.Protocols.SoapHeader>. The `Hello` XML Web service also catches any SOAP headers other than `MyHeader`.  
   
-  
+ [!code-aspx-csharp[Classic SoapHeaderAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeaderAttribute Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHeaderAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeaderAttribute Example/VB/sourcevb.asmx)]  
   
  ]]></format>
     </remarks>

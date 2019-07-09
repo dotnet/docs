@@ -38,7 +38,13 @@
   
  For more details, see [Customizing SOAP Message Formatting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)).  
   
- This attribute can be applied to a class implementing an XML Web service.  
+ This attribute can be applied to a class implementing an XML Web service.
+
+
+## Examples
+
+ [!code-aspx-csharp[SoapDocumentServiceAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapDocumentServiceAttribute/CS/sourcecs.asmx)]
+ [!code-aspx-vb[SoapDocumentServiceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapDocumentServiceAttribute/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -148,7 +154,16 @@
       <Docs>
         <summary>Gets or sets the default setting that controls whether parameters are encapsulated within a single element following the <see langword="&lt;Body&gt;" /> element in the XML portion of a SOAP message for XML Web service methods of the XML Web service.</summary>
         <value>The default <see cref="T:System.Web.Services.Protocols.SoapParameterStyle" /> for SOAP requests and SOAP responses to and from XML Web service methods within the XML Web service. If not set, the default is <see cref="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+ [!code-aspx-csharp[SoapDocumentServiceAttribute_UseParameterStyle#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapDocumentServiceAttribute_UseParameterStyle/CS/sourcecs.asmx)]
+ [!code-aspx-vb[SoapDocumentServiceAttribute_UseParameterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapDocumentServiceAttribute_UseParameterStyle/VB/sourcevb.asmx)]
+  
+ ]]></format>
+        </remarks>
         <altmember cref="T:System.Web.Services.Protocols.SoapParameterStyle" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)">Customizing SOAP Message Formatting</related>
       </Docs>
@@ -174,7 +189,16 @@
       <Docs>
         <summary>Gets or sets how SOAP messages are routed to the XML Web service.</summary>
         <value>A <see cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" /> that represents how SOAP messages are routed to the XML Web service. The default value is <see cref="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+ [!code-aspx-csharp[SoapDocumentServiceAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapDocumentServiceAttribute/CS/sourcecs.asmx)]
+ [!code-aspx-vb[SoapDocumentServiceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapDocumentServiceAttribute/VB/sourcevb.asmx)]
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Use">
@@ -206,6 +230,11 @@
   
  For more details, see [Customizing SOAP Message Formatting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)).  
   
+## Examples
+
+ [!code-aspx-csharp[SoapDocumentServiceAttribute_UseParameterStyle#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapDocumentServiceAttribute_UseParameterStyle/CS/sourcecs.asmx)]
+ [!code-aspx-vb[SoapDocumentServiceAttribute_UseParameterStyle#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapDocumentServiceAttribute_UseParameterStyle/VB/sourcevb.asmx)]
+
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />

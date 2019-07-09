@@ -43,7 +43,8 @@
 ## Examples  
  The following example throws a <xref:System.Web.Services.Protocols.SoapException> where the XML Web service method sets the <xref:System.Web.Services.Protocols.SoapException.Detail%2A> property.  
   
-  
+ [!code-aspx-csharp[Classic SoapException Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapException Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException Example/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -450,7 +451,8 @@
   
  In order for the preceding Web Form to use the following `Math` Web Service example, a namespace of `MyMath` was specified during the creation of the proxy class.  
   
-  
+ [!code-aspx-csharp[Classic SoapException.Actor Example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapException.Actor Example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -483,7 +485,10 @@
   
 ## Remarks  
  An example of when a <xref:System.Web.Services.Protocols.SoapException.ClientFaultCode> can be generated, is when a client call does not have proper authentication or payment information. It is generally an indication that the client call must be changed before it is resent.  
-  
+
+ [!code-aspx-csharp[Classic SoapException.Detail Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Detail Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapException.Detail Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Detail Example/VB/sourcevb.asmx)]  
+
  ]]></format>
         </remarks>
       </Docs>
@@ -536,7 +541,8 @@
   
  In order for the preceding Web Form to use the following `Math` XML Web service example, a namespace of `MyMath` was specified during the creation of the proxy class.  
   
-  
+ [!code-aspx-csharp[classic soapexception.actor example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Actor Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[classic soapexception.actor example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Actor Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -584,7 +590,8 @@
 ## Examples  
  The following example throws a <xref:System.Web.Services.Protocols.SoapException>, where the XML Web service method sets the <xref:System.Web.Services.Protocols.SoapException.Detail%2A> property.  
   
-  
+ [!code-aspx-csharp[Classic SoapException.Detail#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.Detail Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapException.Detail#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.Detail Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -623,7 +630,8 @@
 ## Examples  
  The following example sets the <xref:System.Web.Services.Protocols.SoapException.Detail%2A> property using the <xref:System.Web.Services.Protocols.SoapException.DetailElementName> field and then throws a <xref:System.Web.Services.Protocols.SoapException>.  
   
-  
+ [!code-aspx-csharp[Classic SoapException.DetailElementName#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapException.DetailElementName Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapException.DetailElementName#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapException.DetailElementName Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>

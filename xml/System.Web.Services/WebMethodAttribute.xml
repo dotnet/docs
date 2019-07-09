@@ -37,7 +37,8 @@
 ## Examples  
  In the example below the method `GetMachineName` can be remotely called across the Web, because it has a <xref:System.Web.Services.WebMethodAttribute>. `GetUserName` cannot be called remotely, because it does not have a <xref:System.Web.Services.WebMethodAttribute>, even though it is `public`.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute Example/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -348,7 +349,8 @@
 ## Examples  
  The following code example sets the <xref:System.Web.Services.WebMethodAttribute.BufferResponse%2A> property to `false` and handles the streaming of a text file back to the client. The code example demonstrates how to stream a large piece of data back to the client using a class that implements the <xref:System.Collections.IEnumerable> interface.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.BufferResponse Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.BufferResponse Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.BufferResponse Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.BufferResponse Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -392,7 +394,8 @@
 ## Examples  
  The following example places the result of the call to the `ServiceUsage` XML Web service method in the cache for 60 seconds. Any time an XML Web service client executes the `ServiceUsage` XML Web service method during that time, the same result is returned.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.CacheDuration Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.CacheDuration Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.CacheDuration Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.CacheDuration Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -430,7 +433,8 @@
 ## Examples  
  In the example below, the string `Obtains the Server Computer Name` is used to describe the XML Web service method in the Service Description and Service help page for the XML Web service.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.Description Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.Description Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.Description Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.Description Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -472,7 +476,8 @@
 ## Examples  
  The example below uses session state to determine how many times a particular session accesses the XML Web service method `SessionHitCounter`.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.EnableSession Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.EnableSession Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.EnableSession Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.EnableSession Example/VB/sourcevb.asmx)]    
   
  The following code example is a Web Forms client of an XML Web service that uses session state. The client persists the HTTP cookie that uniquely identifies the session by storing it in the client's session state.  
   
@@ -522,7 +527,8 @@
 ## Examples  
  In the example below, <xref:System.Web.Services.WebMethodAttribute.MessageName%2A> is used to disambiguate the two `Add` methods.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.MessageName Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.MessageName Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.MessageName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.MessageName Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -571,7 +577,8 @@
 ## Examples  
  The example below begins a new transaction when the `Transfer` method is called.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.TransactionOption Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.TransactionOption Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.TransactionOption Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.TransactionOption Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>

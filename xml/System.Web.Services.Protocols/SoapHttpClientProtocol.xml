@@ -45,6 +45,8 @@
 > [!IMPORTANT]
 >  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
+ [!code-aspx-csharp[Classic SoapHttpClientProtocol Example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHttpClientProtocol Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHttpClientProtocol Example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHttpClientProtocol Example/VB/sourcevb.asmx)]  
   
   
  ]]></format>
@@ -132,7 +134,8 @@
   
  The following code example is the `Math` XML Web service, from which the preceding proxy class was created.  
   
-  
+ [!code-aspx-csharp[Classic SoapHttpClientProtocol.BeginInvoke Example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHttpClientProtocol.BeginInvoke Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHttpClientProtocol.BeginInvoke Example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHttpClientProtocol.BeginInvoke Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -250,7 +253,8 @@ The proxy class does not have a binding defined.</exception>
   
  The following code example is the `Math` XML Web service, from which the preceding proxy class was created.  
   
-  
+ [!code-aspx-csharp[Classic SoapHttpClientProtocol.EndInvoke Example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHttpClientProtocol.EndInvoke Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHttpClientProtocol.EndInvoke Example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHttpClientProtocol.EndInvoke Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -418,7 +422,8 @@ The proxy class does not have a binding defined.</exception>
   
  The following code example is the `Math` XML Web service, from which the preceding proxy class was created.  
   
-  
+ [!code-aspx-csharp[Classic SoapHttpClientProtocol.Invoke Example#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHttpClientProtocol.Invoke Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHttpClientProtocol.Invoke Example#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHttpClientProtocol.Invoke Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>

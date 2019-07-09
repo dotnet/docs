@@ -29,7 +29,8 @@
 ## Examples  
  The `MyWebService` XML Web service accepts and processes the `MyHeader` SOAP header sent with any calls to the `MyWebMethod` XML Web service method. Additionally, `MyWebMethod` receives any SOAP headers other than the `MyHeader` SOAP header.  
   
-  
+ [!code-aspx-csharp[Classic SoapUnknownHeader.Element Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapUnknownHeader.Element Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapUnknownHeader.Element Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapUnknownHeader.Element Example/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -94,7 +95,8 @@
 ## Examples  
  The following `MyWebService` XML Web service receives all SOAP headers, including ones other than the `MyHeader` SOAP header it knows about. The `MyWebMethod` XML Web service method returns to the client the XML attributes of the last unknown SOAP header passed to it as a string.  
   
-  
+ [!code-aspx-csharp[Classic SoapUnknownHeader.Element Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapUnknownHeader.Element Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapUnknownHeader.Element Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapUnknownHeader.Element Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>

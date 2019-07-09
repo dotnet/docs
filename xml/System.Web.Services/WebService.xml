@@ -32,7 +32,8 @@
 ## Examples  
  The example below creates an XML Web service, deriving from <xref:System.Web.Services.WebService>, in order to use the <xref:System.Web.Services.WebService.Context%2A> property to obtain the time of the request on the server.  
   
-  
+ [!code-aspx-csharp[Classic WebService Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebService Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebService Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebService Example/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -99,7 +100,8 @@
 ## Examples  
  The example below demonstrates a hit counter, incrementing the count every time a browser calls the XML Web service method.  
   
-  
+ [!code-aspx-csharp[Classic WebService.Application Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebService.Application Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebService.Application Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebService.Application Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -145,7 +147,8 @@
 ## Examples  
  The Example below uses the <xref:System.Web.Services.WebService.Context%2A> property to obtain the time of the request on the server.  
   
-  
+ [!code-aspx-csharp[Classic WebService Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebService Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebService Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebService Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -193,7 +196,8 @@
 ## Examples  
  The example below returns the computer name of the Web server using the <xref:System.Web.Services.WebService.Server%2A> property.  
   
-  
+ [!code-aspx-csharp[Classic WebService.Server Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebService.Server Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebService.Server Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebService.Server Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -235,7 +239,8 @@
 ## Examples  
  The example below uses session state to determine how many times a particular session accesses the XML Web service method `SessionHitCounter`. In this example, the <xref:System.Web.Services.WebMethodAttribute.EnableSession%2A> property of the <xref:System.Web.Services.WebMethodAttribute> is set to `true` in order to gain access to session state.  
   
-  
+ [!code-aspx-csharp[Classic WebMethodAttribute.EnableSession Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebMethodAttribute.EnableSession Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebMethodAttribute.EnableSession Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebMethodAttribute.EnableSession Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -322,7 +327,7 @@
   
  The following example demonstrates the entries you place in the web.config file to enable Windows authentication.  
   
-```  
+```xml
 <security>  
  <authentication mode="Windows"> <!-- Mode Options are Windows, Cookie, Passport and None or Empty String -->  
  </authentication>  
@@ -336,7 +341,8 @@
 ## Examples  
  The example below looks up the authenticated user name and returns that name.  
   
-  
+ [!code-aspx-csharp[Classic WebService.User Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebService.User Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebService.User Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebService.User Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>

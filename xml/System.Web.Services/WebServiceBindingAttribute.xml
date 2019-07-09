@@ -44,7 +44,8 @@
   
  To specify which binding an XML Web service method is implementing an operation for, a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> is applied to each of the XML Web service methods, except `DefaultBindingMethod`. By not specifying a binding for `DefaultBindingMethod`, it is implementing an operation on the default binding for the XML Web service.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute Example/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -114,7 +115,8 @@
 ## Examples  
  The following example specifies a binding named `LocalBinding` that is defined in the `BindingSample` XML Web service.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Name Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Name Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -157,7 +159,8 @@
 ## Examples  
  The following example specifies a binding named `LocalBindingNonDefaultNamespace` that is a member of the `http://www.contoso.com/MyBinding` namespace and defined in the `BindingSample` XML Web service.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute.Namespace Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Namespace Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute.Namespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Namespace Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -203,7 +206,8 @@
 ## Examples  
  The following example specifies a binding named `RemoteBinding` that is a member of the `http://www.contoso.com/MyBinding` namespace and defined at `http://www.contoso.com/MyService.asmx?wsdl`.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute.WebServiceBindingAttribute3 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.WebServiceBindingAttribute3 Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute.WebServiceBindingAttribute3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.WebServiceBindingAttribute3 Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>
@@ -305,7 +309,8 @@
 ## Examples  
  The following example specifies a binding named `RemoteBinding` that is a member of the `http://www.contoso.com/MyBinding` namespace and defined at `http://www.contoso.com/MyService.asmx?wsdl`.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute.Location Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Location Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute.Location Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Location Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -339,7 +344,8 @@
 ## Examples  
  The following example specifies a binding named `LocalBinding` that is defined in the `BindingSample` XML Web service.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Name Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Name Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>
@@ -372,7 +378,8 @@
 ## Examples  
  The following example specifies a binding named `LocalBindingNonDefaultNamespace` that is a member of the `http://www.contoso.com/MyBinding` namespace and defined in the `BindingSample` XML Web service.  
   
-  
+ [!code-aspx-csharp[Classic WebServiceBindingAttribute.Namespace Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Namespace Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic WebServiceBindingAttribute.Namespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic WebServiceBindingAttribute.Namespace Example/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>

@@ -47,7 +47,8 @@
 ## Examples  
  The following `MyWebService` XML Web service defines the `MyHeader` SOAP header and requires it to be sent with any calls to the `MyWebMethod` XML Web service method. Additionally, `MyWebMethod` receives any SOAP headers other than the `MyHeader` SOAP header.  
   
-  
+ [!code-aspx-csharp[Classic SoapHeader.DidUnderstand Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeader.DidUnderstand Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHeader.DidUnderstand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeader.DidUnderstand Example/VB/sourcevb.asmx)]  
   
  ]]></format>
     </remarks>
@@ -175,7 +176,8 @@
 ## Examples  
  The following `MyWebService` XML Web service defines the `MyHeader` SOAP header and requires it to be sent with any calls to the `MyWebMethod` XML Web service method. Additionally, the `MyWebMethod` receives any SOAP headers other than the `MyHeader` SOAP header. For SOAP headers that `MyWebMethod` can process, <xref:System.Web.Services.Protocols.SoapHeader.DidUnderstand%2A> is set to `true`.  
   
-  
+ [!code-aspx-csharp[Classic SoapHeader.DidUnderstand Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeader.DidUnderstand Example/CS/sourcecs.asmx)]
+ [!code-aspx-vb[Classic SoapHeader.DidUnderstand Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic SoapHeader.DidUnderstand Example/VB/sourcevb.asmx)]  
   
  ]]></format>
         </remarks>

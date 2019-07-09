@@ -45,7 +45,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
   
-  
+ [!code-aspx-csharp[SoapRpcServiceAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapRpcServiceAttribute/CS/sourcecs.asmx)]
+ [!code-aspx-vb[SoapRpcServiceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapRpcServiceAttribute/VB/sourcevb.asmx)]
   
  ]]></format>
     </remarks>
@@ -78,7 +79,8 @@
 ## Examples  
  The following example shows how to create an instance of the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
   
-  
+ [!code-aspx-csharp[SoapRpcServiceAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapRpcServiceAttribute/CS/sourcecs.asmx)]
+ [!code-aspx-vb[SoapRpcServiceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapRpcServiceAttribute/VB/sourcevb.asmx)]
   
  ]]></format>
         </remarks>

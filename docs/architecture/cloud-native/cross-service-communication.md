@@ -212,4 +212,4 @@ For applications that must stream numbers of events, Azure Event Hub can be a ro
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)
->[Next](distributed-data.md)
+>[Next](distributed-data.md) <!-- Next Chapter -->

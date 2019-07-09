@@ -327,6 +327,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
     return !unequalProperties.Any();
 }
 ```
+
 ```vb
 <System.Runtime.CompilerServices.Extension()> 
 Public Shared Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As T, ParamArray ignore As String()) As Boolean
@@ -334,6 +335,7 @@ Public Shared Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [
         Return self Is [to]
     End If
 
+    ' Selects the properties which have unequal values into a sequence of those properties.
     Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance) 
 							Where Not ignore.Contains([property].Name)
 							Let selfValue = [property].GetValue(self, Nothing)

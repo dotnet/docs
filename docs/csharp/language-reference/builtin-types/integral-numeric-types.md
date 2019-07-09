@@ -70,14 +70,14 @@ var binaryLiteral = 0b_0010_1010;
 
 Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a *digit separator*. The digit separator can be used with all numeric literals. Binary literals and the digit separator `_` are supported starting with C# 7.0.
 
-## Literal suffixes 
+### Literal suffixes 
 
-The `l` or `L` suffix specifies that the integral literal should be of the `long` type. The `ul` or `UL` suffix specifies the `ulong` type. If the `L` suffix is used on a literal that is greater than 9,223,372,036,854,775,807 (the maximum value of `long`), the value is converted to the `ulong` type. If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs. 
+The `l` or `L` suffix specifies that the integral literal should be of the `long` type. The `ul` or `UL` suffix specifies the `ulong` type. If the `L` suffix is used on a literal that is greater than 9,223,372,036,854,775,807 (the maximum value of `long`), the value is converted to the `ulong` type. If the value represented by an integral literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs. 
 
 > [!NOTE]
 > You can use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.
 
-## Type of an integral literal
+### Type of an integral literal
 
 If an integral literal has no suffix, its type is the first of the following types in which its value can be represented:
 

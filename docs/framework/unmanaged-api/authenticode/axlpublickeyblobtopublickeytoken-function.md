@@ -11,7 +11,7 @@ ms.assetid: 2d92a746-d68c-4f53-a16e-727f071a2d80
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _AxlPublicKeyBlobToPublicKeyToken Function
+# \_AxlPublicKeyBlobToPublicKeyToken Function
 Computes the strong name public key token from a CSP PUBLICKEYBLOB format.  
   
 ## Syntax  

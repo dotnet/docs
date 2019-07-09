@@ -22,7 +22,7 @@ Provides the profiler with information about each managed frame and each run of 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT __stdcall StackSnapshotCallback (  
     [in] FunctionID funcId,  
     [in] UINT_PTR ip,  

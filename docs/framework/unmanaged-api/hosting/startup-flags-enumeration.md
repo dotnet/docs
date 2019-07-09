@@ -22,7 +22,7 @@ Contains values that indicate the startup behavior of the common language runtim
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     STARTUP_CONCURRENT_GC                         = 0x1,  
     STARTUP_LOADER_OPTIMIZATION_MASK              = 0x3<<1,  

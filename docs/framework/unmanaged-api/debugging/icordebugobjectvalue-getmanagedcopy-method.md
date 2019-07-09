@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetManagedCopy (  
     [out] IUnknown           **ppObject  
 );  

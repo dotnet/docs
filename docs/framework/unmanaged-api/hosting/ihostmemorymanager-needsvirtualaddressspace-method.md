@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) is going to attempt to 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NeedsVirtualAddressSpace (  
     [in] LPVOID  startAddress,  
     [in] SIZE_T  size  

@@ -22,7 +22,7 @@ Contains metadata attribute information about an [IDefinitionIdentity](../../../
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _IDENTITY_ATTRIBUTE {  
     LPCWSTR  pszNamespace;  
     LPCWSTR  pszName;  

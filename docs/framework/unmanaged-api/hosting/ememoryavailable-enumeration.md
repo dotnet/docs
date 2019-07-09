@@ -22,7 +22,7 @@ Contains values that indicate the amount of free physical memory on the computer
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eMemoryAvailableLow     = 1,  
     eMemoryAvailableNeutral = 2,  

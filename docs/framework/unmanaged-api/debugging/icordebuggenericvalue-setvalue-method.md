@@ -23,7 +23,7 @@ Copies a new value from the specified buffer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetValue (  
     [in] void      *pFrom  
 );  

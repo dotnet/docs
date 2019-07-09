@@ -22,7 +22,7 @@ Represents one contiguous block of native code stored in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_PRF_CODE_INFO {  
     UINT_PTR startAddress;  
     SIZE_T size;  

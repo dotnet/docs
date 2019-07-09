@@ -23,7 +23,7 @@ Destroys the class layout metadata signature for the type represented by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteClassLayout (  
     [in]  mdTypeDef   td  
 );  

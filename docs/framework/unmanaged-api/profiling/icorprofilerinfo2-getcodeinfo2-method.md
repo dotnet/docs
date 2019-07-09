@@ -23,7 +23,7 @@ Gets the extents of native code associated with the specified `FunctionID`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo2(  
     [in]  FunctionID functionID,  
     [in]  ULONG32 cCodeInfos,  

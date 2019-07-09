@@ -23,7 +23,7 @@ Resets the edit-and-continue log and starts a new session.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResetENCLog ();  
 ```  
   

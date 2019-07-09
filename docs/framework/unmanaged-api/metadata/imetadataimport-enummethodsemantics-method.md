@@ -23,7 +23,7 @@ Enumerates the properties and the property-change events to which the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethodSemantics (  
    [in, out] HCORENUM    *phEnum,  
    [in]  mdMethodDef     mb,   

@@ -23,7 +23,7 @@ Call to set assembly-level custom attributes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitAssemblyCustomAttribute(  
     mdAssembly   AssemblyID,  
     mdToken      FileToken,  

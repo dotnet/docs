@@ -23,7 +23,7 @@ Gets a pointer to the ICorDebugFrame object in the current chain that called thi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCaller (  
     [out] ICorDebugFrame     **ppFrame  
 );  

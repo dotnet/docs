@@ -22,7 +22,7 @@ Allows the host to specify the type of redirection the common language runtime (
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _hostBindingPolicyModifyFlags {  
     HOST_BINDING_POLICY_MODIFY_DEFAULT  = 0,  
     HOST_BINDING_POLICY_MODIFY_CHAIN    = 1,  

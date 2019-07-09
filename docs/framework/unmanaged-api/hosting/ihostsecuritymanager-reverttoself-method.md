@@ -23,7 +23,7 @@ Terminates impersonation of the current user identity and returns the original t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RevertToSelf ();  
 ```  
   

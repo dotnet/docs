@@ -23,7 +23,7 @@ Creates an auto-reset event object for the implementation of a writer lock.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockWriterEvent (  
     [in]  SIZE_T cookie,  
     [out] IHostAutoEvent **ppEvent  

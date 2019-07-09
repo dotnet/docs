@@ -24,7 +24,7 @@ Retrieves either a subset or all of the names of the properties of an object.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNames (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 

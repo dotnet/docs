@@ -23,7 +23,7 @@ Opens an existing, on-disk file and maps its metadata into memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScope (  
     [in]  LPCWSTR     szScope,   
     [in]  DWORD       dwOpenFlags,   

@@ -23,7 +23,7 @@ Allows a debugger to intercept the current exception on this thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InterceptCurrentException (  
     [in] ICorDebugFrame  *pFrame  
 );  

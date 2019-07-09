@@ -23,7 +23,7 @@ Resets the current [IHostManualEvent](../../../../docs/framework/unmanaged-api/h
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   

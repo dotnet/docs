@@ -25,7 +25,7 @@ Emits the specified string into the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitString (  
     [in]  LPWSTR    lpString,  
     [out] ULONG     *RVA  

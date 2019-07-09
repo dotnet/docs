@@ -25,7 +25,7 @@ Gets the length of the specified section.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionDataLen (  
     [in]  HCEESECTION  section,  
     [out] ULONG        *dataLen  

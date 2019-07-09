@@ -23,7 +23,7 @@ Notifies the symbol writer that a metadata token has been remapped as the metada
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemapToken(  
     [in] mdToken  oldToken,  
     [in] mdToken  newToken);  

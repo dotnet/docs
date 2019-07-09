@@ -23,7 +23,7 @@ Gets a binary representation of the assembly image at the specified memory addre
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetBlobFromImage (  
     [in]  BYTE        *pbBase,  
     [in]  DWORD       dwLength,  

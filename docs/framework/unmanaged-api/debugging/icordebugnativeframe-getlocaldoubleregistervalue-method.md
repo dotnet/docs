@@ -23,7 +23,7 @@ Gets the value of an argument or local variable that is stored in the two specif
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalDoubleRegisterValue (  
     [in] CorDebugRegister   highWordReg,  
     [in] CorDebugRegister   lowWordReg,  

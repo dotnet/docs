@@ -10,7 +10,7 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyImageBytes(  
    [in] CORDB_ADDRESS rva,   
    [in] ULONG32 length,   

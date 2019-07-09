@@ -23,7 +23,7 @@ Gets an interface pointer to a copy of this [ICorProfilerThreadEnum](../../../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (    [out] ICorProfilerThreadEnum **ppEnum  
 );  
 ```  

@@ -23,7 +23,7 @@ Enumerates all the application domains in this process.
   
 ## Syntax  
   
-```  
+``` cpp 
 HRESULT EnumerateAppDomains(  
     [out] ICorDebugAppDomainEnum **ppAppDomains);  
 ```  

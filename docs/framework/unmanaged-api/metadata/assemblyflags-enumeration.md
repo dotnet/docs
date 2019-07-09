@@ -22,7 +22,7 @@ Contains values that describe run-time features of an assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     afImplicitExportedTypes = 0x0001,  
     afImplicitResources = 0x0002,  

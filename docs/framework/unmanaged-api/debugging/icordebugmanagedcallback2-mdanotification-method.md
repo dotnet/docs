@@ -23,7 +23,7 @@ Provides notification that code execution has encountered a managed debugging as
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MDANotification(  
     [in] ICorDebugController  *pController,  
     [in] ICorDebugThread      *pThread,  

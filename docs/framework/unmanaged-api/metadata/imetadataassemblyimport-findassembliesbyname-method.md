@@ -23,7 +23,7 @@ Gets an array of assemblies with the specified `szAssemblyName` parameter, using
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindAssembliesByName (  
     [in]  LPCWSTR     szAppBase,   
     [in]  LPCWSTR     szPrivateBin,   

@@ -22,7 +22,7 @@ Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](../../.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CLR_DEBUGGING_PROCESS_FLAGS  
 {  
    CLR_DEBUGGING_MANAGED_EVENT_PENDING = 1,  

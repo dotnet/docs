@@ -23,7 +23,7 @@ Creates a `File` metadata structure containing metadata for assembly referenced 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineFile (  
     [in]  LPCWSTR        szName,   
     [in]  const void     *pbHashValue,   

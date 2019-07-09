@@ -23,7 +23,7 @@ Compares two assembly identities to determine whether they are equivalent.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI CompareAssemblyIdentity (  
     [in]  LPCWSTR                  pwzAssemblyIdentity1,  
     [in]  BOOL                     fUnified1,  

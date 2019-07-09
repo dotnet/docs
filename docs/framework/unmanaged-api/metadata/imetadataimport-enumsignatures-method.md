@@ -23,7 +23,7 @@ Enumerates Signature tokens representing stand-alone signatures in the current s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumSignatures (  
    [in, out] HCORENUM     *phEnum,  
    [out]     mdSignature  rSignatures[],  

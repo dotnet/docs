@@ -23,7 +23,7 @@ Gets an array of the specified type, or a pointer or reference to the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayOrPointerType (  
     [in]  CorElementType    elementType,  
     [in]  ULONG32           nRank,  

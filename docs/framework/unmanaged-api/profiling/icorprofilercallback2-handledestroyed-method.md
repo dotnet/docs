@@ -23,7 +23,7 @@ Notifies the code profiler that a garbage collection handle has been destroyed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HandleDestroyed(  
     [in] GCHandleID handleId);  
 ```  

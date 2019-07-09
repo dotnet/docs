@@ -22,7 +22,7 @@ Creates a symbol reader for a dynamic module.
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugModule3 : IUnknown  
 {  
     HRESULT CreateReaderForInMemorySymbols  

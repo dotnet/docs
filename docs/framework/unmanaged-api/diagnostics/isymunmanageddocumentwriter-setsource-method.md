@@ -23,7 +23,7 @@ Sets embedded source for a document that is being written.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSource(  
     [in]  ULONG32  sourceSize,  
     [in, size_is(sourceSize)] BYTE  source[]);  

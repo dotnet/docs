@@ -23,7 +23,7 @@ Gets an array of "COR_DEBUG_IL_TO_NATIVE_MAP" instances that represent mappings 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILToNativeMapping (  
     [in]  ULONG32    cMap,  
     [out] ULONG32    *pcMap,  

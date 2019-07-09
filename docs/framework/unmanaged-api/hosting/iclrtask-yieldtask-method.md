@@ -23,7 +23,7 @@ Requests that the common language runtime (CLR) put aside the task that the curr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT YieldTask ();  
 ```  
   

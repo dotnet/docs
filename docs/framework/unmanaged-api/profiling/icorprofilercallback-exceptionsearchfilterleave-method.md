@@ -23,7 +23,7 @@ Notifies the profiler that a user filter has just finished executing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionSearchFilterLeave();  
 ```  
   

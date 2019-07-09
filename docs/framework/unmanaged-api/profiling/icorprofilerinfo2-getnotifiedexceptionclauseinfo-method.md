@@ -23,7 +23,7 @@ Gets the native address and frame information for the exception clause (`catch`/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNotifiedExceptionClauseInfo(  
     [out] COR_PRF_EX_CLAUSE_INFO *pinfo);  
 ```  

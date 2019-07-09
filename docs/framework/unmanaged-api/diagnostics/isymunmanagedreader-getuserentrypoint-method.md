@@ -23,7 +23,7 @@ Returns the method that was specified as the user entry point for the module, if
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserEntryPoint (  
     [out, retval]  mdMethodDef  *pToken);  
 ```  

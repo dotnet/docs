@@ -23,7 +23,7 @@ Enables and disables custom debugger notifications of the specified type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetEnableCustomNotification(ICorDebugClass * pClass,  
                                     BOOL fEnable);  
 ```  

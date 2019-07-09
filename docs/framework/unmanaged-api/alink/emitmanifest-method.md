@@ -23,7 +23,7 @@ Emits the final manifest. Call this method after importing all other files and s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitManifest(  
     mdAssembly   AssemblyID,  
     DWORD*       pdwReserveSize,  

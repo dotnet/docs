@@ -24,7 +24,7 @@ Generates a hash over the contents of the file that has the specified file handl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromHandle (  
     [in]  HANDLE   hFile,  
     [in, out] unsigned int   *piHashAlg,  

@@ -23,7 +23,7 @@ Notifies the profiler that a module has finished loading.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleLoadFinished(  
     [in] ModuleID moduleId,  
     [in] HRESULT  hrStatus);  

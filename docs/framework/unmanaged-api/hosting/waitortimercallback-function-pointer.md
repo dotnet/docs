@@ -24,7 +24,7 @@ Points to a function that notifies the host that a wait handle (<xref:System.Thr
   
 ## Syntax  
   
-```  
+```cpp  
 typedef VOID (__stdcall *WAITORTIMERCALLBACK) (  
     [in] PVOID lpParameter,  
     [in] BOOL  TimerOrWaitFired  

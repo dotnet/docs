@@ -23,7 +23,7 @@ Notifies the host that the debugging services are about to start blocking all th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StartBlockingForDebugger (  
     [in] DWORD dwUnused  
 );  

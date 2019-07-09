@@ -23,7 +23,7 @@ Binds the specified handle to an I/O completion port that has been created by an
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Bind (  
     [in] HANDLE hPort,  
     [in] HANDLE hHandle  

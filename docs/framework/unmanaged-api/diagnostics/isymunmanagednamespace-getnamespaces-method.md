@@ -23,7 +23,7 @@ Gets the children of this namespace.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespaces(  
     [in]  ULONG32  cNameSpaces,  
     [out] ULONG32  *pcNameSpaces,  

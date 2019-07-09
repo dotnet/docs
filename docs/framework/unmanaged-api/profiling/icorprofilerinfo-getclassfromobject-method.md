@@ -23,7 +23,7 @@ Gets the `ClassID` of an object, given its `ObjectID`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromObject(  
     [in]  ObjectID objectId,  
     [out] ClassID *pClassId);  

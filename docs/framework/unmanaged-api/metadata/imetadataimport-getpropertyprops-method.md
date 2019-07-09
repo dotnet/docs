@@ -23,7 +23,7 @@ Gets the metadata for the property represented by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPropertyProps (  
    [in]  mdProperty        prop,  
    [out] mdTypeDef         *pClass,   

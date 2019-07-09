@@ -22,7 +22,7 @@ Contains values that describe the metadata applied to an assembly compilation.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorAssemblyFlags {  
   
     afPublicKey             =   0x0001,  

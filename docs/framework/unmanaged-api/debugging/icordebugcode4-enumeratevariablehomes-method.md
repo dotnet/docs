@@ -23,7 +23,7 @@ Gets an enumerator to the local variables and arguments in a function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateVariableHomes(  
     [out] ICorDebugVariableHomeEnum **ppEnum  
 );  

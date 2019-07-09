@@ -23,7 +23,7 @@ Gets a value from the thread local storage (TLS) of the specified thread in the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTLSValue (  
     [in] ULONG32            threadID,  
     [in] ULONG32            index,  

@@ -26,7 +26,7 @@ Notifies the profiler that an exception has been thrown.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionThrown(  
     [in] ObjectID thrownObjectId);  
 ```  

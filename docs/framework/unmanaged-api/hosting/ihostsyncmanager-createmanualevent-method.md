@@ -23,7 +23,7 @@ Creates a manual-reset event object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateManualEvent (  
     [in]  BOOL bInitialState,  
     [out] IHostManualEvent **ppEvent  

@@ -23,7 +23,7 @@ Notifies the debugger that a process has exited.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitProcess (  
     [in] ICorDebugProcess *pProcess  
 );  

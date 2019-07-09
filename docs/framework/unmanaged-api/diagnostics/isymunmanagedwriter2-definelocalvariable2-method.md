@@ -23,7 +23,7 @@ Defines a single variable in the current lexical scope. This method can be calle
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineLocalVariable2(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  

@@ -22,7 +22,7 @@ Specifies the statistics to be recorded for a garbage collection.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_GC_COUNTS                 = 0x00000001  
     COR_GC_MEMORYUSAGE            = 0x00000002  

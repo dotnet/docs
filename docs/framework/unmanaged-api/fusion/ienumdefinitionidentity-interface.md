@@ -22,7 +22,7 @@ Serves as the enumerator for a collection of `IDefinitionIdentity` objects.
   
 ## Syntax  
   
-```  
+```cpp  
 IEnumDefinitionIdentity : IUnknown {  
   
     HRESULT Clone (  

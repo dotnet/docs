@@ -23,7 +23,7 @@ Performs server-invoked debugger auto attach.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AutoAttach  
 (  
     [in]  REFGUID   guidPort,  

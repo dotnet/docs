@@ -23,7 +23,7 @@ Gets the value of the specified global variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGlobalVariableValue(  
     [in]  mdFieldDef      fieldDef,  
     [out] ICorDebugValue  **ppValue  

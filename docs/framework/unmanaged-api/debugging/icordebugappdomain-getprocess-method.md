@@ -23,7 +23,7 @@ Gets the process containing the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [out] ICorDebugProcess   **ppProcess  
 );  

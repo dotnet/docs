@@ -23,7 +23,7 @@ Gets a pointer to the body of a method in Microsoft intermediate language (MSIL)
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILFunctionBody(  
     [in]  ModuleID    moduleId,  
     [in]  mdMethodDef methodId,  

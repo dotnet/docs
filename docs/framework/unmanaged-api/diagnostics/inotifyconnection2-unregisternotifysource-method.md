@@ -23,7 +23,7 @@ Removes a specified notification source object from the connection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnregisterNotifySource  
 (  
     [in]  INotifySource2*  in_pNotifySource  

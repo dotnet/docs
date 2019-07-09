@@ -22,7 +22,7 @@ Sets the name of and options for a new assembly. Do not call this method when yo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyFile2(  
     LPCWSTR pszFilename,  
     IMetaDataEmit2* pEmitter,  

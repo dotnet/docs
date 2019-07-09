@@ -23,7 +23,7 @@ Enumerates FieldDef tokens for the type referenced by the specified TypeDef toke
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumFields (   
    [in, out] HCORENUM    *phEnum,   
    [in]      mdTypeDef   cl,   

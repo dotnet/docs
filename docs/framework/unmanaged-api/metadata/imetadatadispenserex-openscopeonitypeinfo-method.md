@@ -23,7 +23,7 @@ This method is not implemented. If called, it returns E_NOTIMPL.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScopeOnITypeInfo (  
     [in]  ITypeInfo   *pITI,  
     [in]  DWORD       dwOpenFlags,  

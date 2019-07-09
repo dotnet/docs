@@ -23,7 +23,7 @@ Gets a count of the local variables defined within this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalCount(  
     [out, retval] ULONG32 *pRetVal);  
 ```  

@@ -23,7 +23,7 @@ Gets the size of any custom data the host intends to append to I/O requests.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostOverlappedSize (  
     [out] DWORD *pcbSize  
 );  

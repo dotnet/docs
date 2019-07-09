@@ -23,7 +23,7 @@ Gets a value that indicates whether this module exists only in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsInMemory(  
     [out] BOOL *pInMemory  
 );  

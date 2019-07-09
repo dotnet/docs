@@ -23,7 +23,7 @@ Specifies the configuration of custom heap dumps for error reporting.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginCustomDump (  
     [in] ECustomDumpFlavor dwFlavor,  
     [in] DWORD dwNumItems,  

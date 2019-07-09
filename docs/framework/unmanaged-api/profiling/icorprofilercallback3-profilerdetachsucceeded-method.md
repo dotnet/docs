@@ -23,7 +23,7 @@ Notifies the profiler that the common language runtime (CLR) is about to unload 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProfilerDetachSucceeded();  
 ```  
   

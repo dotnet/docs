@@ -23,7 +23,7 @@ Gets information about the layout of a string object. This method is deprecated 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringLayout(  
     [out] ULONG *pBufferLengthOffset,  
     [out] ULONG *pStringLengthOffset,  

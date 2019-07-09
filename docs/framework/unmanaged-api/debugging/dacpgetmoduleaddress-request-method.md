@@ -24,7 +24,7 @@ Performs a request to populate the structure from the given runtime structure.
 
 ## Syntax
 
-```
+```cpp
 HRESULT Request(
     [in] IXCLRDataModule* pDataModule
 );

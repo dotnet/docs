@@ -23,7 +23,7 @@ Enables and disables the transmission of log messages to the debugger.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableLogMessages([in]BOOL fOnOff);  
 ```  
   

@@ -23,7 +23,7 @@ Creates an `AssemblyRef` structure containing metadata for the assembly that thi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineAssemblyRef (  
     [in]  void                *pbPublicKeyOrToken,  
     [in]  ULONG               cbPublicKeyOrToken,  

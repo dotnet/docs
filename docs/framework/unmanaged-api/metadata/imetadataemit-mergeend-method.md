@@ -24,7 +24,7 @@ Merges into the current scope all the metadata scopes specified by one or more p
 
 ## Syntax
 
-```cpp
+```cppcpp
 HRESULT MergeEnd ();
 ```
 

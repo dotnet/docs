@@ -24,7 +24,7 @@ Deletes the common language runtime (CLR) download cache.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NukeDownloadedCache();  
 ```  
   

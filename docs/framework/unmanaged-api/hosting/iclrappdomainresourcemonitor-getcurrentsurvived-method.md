@@ -23,7 +23,7 @@ Gets the number of bytes that survived the last full, blocking garbage collectio
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT STDMETHODCALLTYPE GetCurrentSurvived(  
              [in]  DWORD dwAppDomainId,  
              [out] ULONGLONG *pAppDomainBytesSurvived,  

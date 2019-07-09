@@ -23,7 +23,7 @@ Opens a new namespace. Call this method before defining methods or variables tha
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenNamespace(  
     [in] const WCHAR *name);  
 ```  

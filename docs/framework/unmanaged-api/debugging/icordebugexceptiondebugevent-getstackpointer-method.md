@@ -10,7 +10,7 @@ Gets the stack pointer for this exception debug event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackPointer(  
    [out]CORDB_ADDRESS *pStackPointer  
 );  

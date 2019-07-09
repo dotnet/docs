@@ -23,7 +23,7 @@ Notifies the profiler about objects in memory that are being referenced by the s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectReferences(  
     [in]  ObjectID objectId,  
     [in]  ClassID  classId,  

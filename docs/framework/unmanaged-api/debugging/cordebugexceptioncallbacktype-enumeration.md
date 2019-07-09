@@ -22,7 +22,7 @@ Indicates the type of callback that is made from an [ICorDebugManagedCallback2::
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugExceptionCallbackType {  
     DEBUG_EXCEPTION_FIRST_CHANCE         = 1,  
     DEBUG_EXCEPTION_USER_FIRST_CHANCE    = 2,  

@@ -23,7 +23,7 @@ Gets the relative virtual address (RVA) and the implementation flags of the meth
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRVA (  
    [in]  mdToken     tk,   
    [out] ULONG       *pulCodeRVA,   

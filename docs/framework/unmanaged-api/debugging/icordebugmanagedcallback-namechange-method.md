@@ -23,7 +23,7 @@ Notifies the debugger that the name of either an application domain or a thread 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NameChange (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread  

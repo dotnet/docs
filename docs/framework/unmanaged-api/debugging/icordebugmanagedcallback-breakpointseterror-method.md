@@ -23,7 +23,7 @@ Notifies the debugger that the common language runtime was unable to accurately 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BreakpointSetError (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  

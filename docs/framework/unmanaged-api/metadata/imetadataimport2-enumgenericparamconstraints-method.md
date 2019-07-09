@@ -23,7 +23,7 @@ Gets an enumerator for an array of generic parameter constraints associated with
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumGenericParamConstraints (  
     [in, out] HCORENUM                *phEnum,  
     [in]  mdGenericParam              tk,  

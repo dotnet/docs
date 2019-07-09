@@ -22,7 +22,7 @@ Provides interfaces for publishing information about application domains and pro
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CorpubPublish {  
     [default] interface ICorPublish;  
     interface           ICorPublishProcess;  

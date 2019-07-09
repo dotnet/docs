@@ -23,7 +23,7 @@ Sets the [ICLRSyncManager](../../../../docs/framework/unmanaged-api/hosting/iclr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRSyncManager (  
     [in] ICLRSyncManager *pManager  
 );  

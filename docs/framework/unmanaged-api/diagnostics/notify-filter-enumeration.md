@@ -22,7 +22,7 @@ Identifies callbacks for debugger functions. For more information, see the [INot
   
 ## Syntax  
   
-```  
+```cpp  
 enum tagNOTIFY_FILTER  
 {  
     NOTIFY_FILTER_ONSYNCCALLOUT    = 0x1,  

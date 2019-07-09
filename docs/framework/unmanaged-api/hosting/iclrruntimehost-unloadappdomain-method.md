@@ -23,7 +23,7 @@ Unloads the managed <xref:System.AppDomain> that corresponds to the specified nu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadAppDomain(  
     [in] DWORD dwAppDomainId  
     [in] BOOL  fWaitUntilDone  

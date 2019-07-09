@@ -23,7 +23,7 @@ Gets a value that indicates whether this object value is a value type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsValueClass (  
     [out] BOOL               *pbIsValueClass  
 );  

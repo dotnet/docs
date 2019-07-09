@@ -23,7 +23,7 @@ Gets the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRuntime (  
     [in] LPCWSTR pwzVersion,  
     [in] REFIID riid,  

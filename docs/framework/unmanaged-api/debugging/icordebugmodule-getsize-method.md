@@ -23,7 +23,7 @@ Gets the size, in bytes, of the module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
     [out] ULONG32 *pcBytes  
 );  

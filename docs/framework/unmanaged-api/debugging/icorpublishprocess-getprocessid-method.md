@@ -23,7 +23,7 @@ Gets the operating system identifier for this process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcessID (  
     [out] unsigned   *pid  
 );  

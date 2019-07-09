@@ -23,7 +23,7 @@ Sets a value that specifies the type of unmapped code in which execution will ha
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmappedStopMask (  
     [in] CorDebugUnmappedStop   mask  
 );  

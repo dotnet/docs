@@ -23,7 +23,7 @@ Notifies the profiler that control is being passed to the appropriate `catch` bl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionCatcherEnter(  
     [in] FunctionID functionId,  
     [in] ObjectID   objectId);  

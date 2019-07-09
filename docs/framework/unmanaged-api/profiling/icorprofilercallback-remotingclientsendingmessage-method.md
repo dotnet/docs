@@ -23,7 +23,7 @@ Notifies the profiler that the client is sending a request to the server.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientSendingMessage(  
     [in] GUID *pCookie,  
     [in] BOOL fIsAsync);  

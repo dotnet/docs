@@ -23,7 +23,7 @@ Gets an enumerator for all active steppers in the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateSteppers (  
     [out] ICorDebugStepperEnum   **ppSteppers  
 );  

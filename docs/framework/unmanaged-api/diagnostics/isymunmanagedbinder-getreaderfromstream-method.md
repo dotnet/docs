@@ -23,7 +23,7 @@ Given a metadata interface and a stream that contains the symbol store, returns 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderFromStream(  
     [in]  IUnknown  *importer,  
     [in]  IStream   *pstream,  

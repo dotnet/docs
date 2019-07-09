@@ -22,7 +22,7 @@ Indicates a property of a garbage collection root.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_GC_ROOT_PINNING = 0x1,  
     COR_PRF_GC_ROOT_WEAKREF = 0x2,  

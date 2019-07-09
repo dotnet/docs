@@ -23,7 +23,7 @@ Defines a group of sequence points within the current method. Each starting line
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineSequencePoints(  
     [in] ISymUnmanagedDocumentWriter*  document,  
     [in] ULONG32 spCount,  

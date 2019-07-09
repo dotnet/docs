@@ -23,7 +23,7 @@ Creates a property definition for the specified type, with the specified `get` a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineProperty (   
     [in]  mdTypeDef          td,   
     [in]  LPCWSTR            szProperty,   

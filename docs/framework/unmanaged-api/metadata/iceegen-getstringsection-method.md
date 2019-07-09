@@ -25,7 +25,7 @@ Gets a string representation of the code section referenced by the specified han
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringSection (  
     [in, out] HCEESECTION     *section  
 );  

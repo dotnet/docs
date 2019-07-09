@@ -24,7 +24,7 @@ Gets the common language runtime (CLR) version information of the specified file
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileVersion (  
     [in]  LPCWSTR      szFilename,   
     [in, out] LPWSTR   szBuffer,   

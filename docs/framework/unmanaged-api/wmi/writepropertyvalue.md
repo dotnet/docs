@@ -24,7 +24,7 @@ Writes a specified number of bytes to a property identified by a property handle
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WritePropertyValue (
    [in] int                  vFunc, 
    [in] IWbemObjectAccess*   ptr, 

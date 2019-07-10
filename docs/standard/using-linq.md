@@ -330,7 +330,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 
 ```vb
 <System.Runtime.CompilerServices.Extension()> 
-Public Shared Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As T, ParamArray ignore As String()) As Boolean
+Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As T, ParamArray ignore As String()) As Boolean
     If self Is Nothing OrElse [to] Is Nothing Then
         Return self Is [to]
     End If

@@ -67,7 +67,14 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Note to inheritors
+
+This constructor chooses a very generic validation error message. Developers subclassing ValidationAttribute should use other constructors or supply a better message.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -334,6 +341,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">The current attribute is malformed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValidationResult">
@@ -375,6 +383,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.DataAnnotations.ValidationResult" />
+        <exception cref="T:System.InvalidOperationException">The current attribute is malformed.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="validationContext" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotImplementedException"><see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" /> has not been implemented by a derived class.
+            </exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsValid">
@@ -426,6 +438,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">The current attribute is malformed.</exception>
+        <exception cref="T:System.NotImplementedException">Neither overload of <see langword="IsValid" /> has been implemented by a derived class.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -460,6 +474,8 @@
         <returns>An instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.DataAnnotations.ValidationResult" />
+        <exception cref="T:System.InvalidOperationException">The current attribute is malformed.</exception>
+        <exception cref="T:System.NotImplementedException"><see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" /> has not been implemented by a derived class.</exception>
       </Docs>
     </Member>
     <Member MemberName="RequiresValidationContext">
@@ -539,6 +555,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">Validation failed.</exception>
+        <exception cref="T:System.InvalidOperationException">The current attribute is malformed.</exception>
+        <exception cref="T:System.NotImplementedException"><see cref="M:System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" /> has not been implemented by a derived class.</exception>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -582,6 +600,7 @@
         </remarks>
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">
           <paramref name="value" /> is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">The current attribute is malformed.</exception>
       </Docs>
     </Member>
   </Members>

@@ -521,6 +521,7 @@
         <param name="export">An indirect reference to the export to remove.</param>
         <summary>Removes the specified export from composition and releases its resources if possible.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="export" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseExports">
@@ -586,6 +587,12 @@
         <param name="exports">A collection of indirect references to the exports to be removed.</param>
         <summary>Removes a collection of exports from composition and releases their resources if possible.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exports" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="exports" /> contains an element that is <see langword="null" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseExports&lt;T,TMetadataView&gt;">
@@ -617,6 +624,12 @@
         <param name="exports">A collection of indirect references to the exports to be removed and their metadata.</param>
         <summary>Removes a collection of exports from composition and releases their resources if possible.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exports" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="exports" /> contains an element that is <see langword="null" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="SatisfyImportsOnce">

@@ -211,7 +211,19 @@
         <param name="definition">The import to match.</param>
         <summary>Gets the exported parts from this catalog that match the specified import.</summary>
         <returns>A collection of matching parts.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Notes to inheritors
+
+Overriders of this property should never return `null` if no Mxref:System.ComponentModel.Composition.Primitives.ExportDefinition> matches the conditions defined by `definition`; instead, return an empty <xref:System.Collections.Generic.IEnumerable%601>.
+            ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="definition" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="IncludeDependencies">

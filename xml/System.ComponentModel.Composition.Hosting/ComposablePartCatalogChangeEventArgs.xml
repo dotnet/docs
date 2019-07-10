@@ -42,6 +42,7 @@
         <param name="atomicComposition">The composition transaction to use, or <see langword="null" /> to disable transactional composition.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" /> class with the specified changes.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="addedDefinitions" /> or <paramref name="removedDefinitions" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddedDefinitions">

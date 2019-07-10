@@ -270,7 +270,19 @@ For more information, see [Implementing a Dispose method](~/docs/standard/garbag
         <param name="definition">Conditions that specify which exports to match.</param>
         <summary>Gets a collection of exports that match the conditions specified by the import definition.</summary>
         <returns>A collection of exports that match the specified conditions.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Note to inheritors
+
+Overriders of this property should never return `null`. If there is no <xref:System.ComponentModel.Composition.Primitives.ExportDefinition> that matches the conditions defined by `definition`, return an empty <xref:System.Collections.Generic.IEnumerable%601>.
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="definition" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+            The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="OnChanged">
@@ -342,7 +354,11 @@ For more information, see [Implementing a Dispose method](~/docs/standard/garbag
       <Docs>
         <summary>Gets a collection of parts visible to the parent scope of this catalog.</summary>
         <value>A collection of parts visible to the parent scope of this catalog.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+Overriders of this property must not return `null`.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

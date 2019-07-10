@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+      <para>Provides a type converter to convert <see cref="T:System.Version" /> objects to and from various other representations.</para>
+    </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,10 +57,12 @@
         <Parameter Name="sourceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="sourceType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="sourceType">The type of the object to be converted.</param>
+        <summary>
+          <para>Gets a value indicating whether this converter can convert an object in the given source type to a <see cref="T:System.Version" />.</para>
+        </summary>
+        <returns><see langword="true" /> if this converter can convert `sourceType` to a <see cref="T:System.Version" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,10 +86,12 @@
         <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="destinationType">The target type for the conversion.</param>
+        <summary>
+          <para>Gets a value indicating whether this converter can convert an object to the given destination type using the context.</para>
+        </summary>
+        <returns><see langword="true" /> if the converter can convert an object to the given destination type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,12 +116,13 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="culture">The culture to use for the conversion.</param>
+        <param name="value">The value to convert to a <see cref="T:System.Version" />.</param>
+        <summary>Converts the specified object to a <see cref="T:System.Version" />.</summary>
+        <returns><paramref name="value" /> converted to a <see cref="T:System.Version" /> value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException"><paramref name="value" /> is not a valid <see cref="T:System.Version" /> string.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -141,10 +148,12 @@
       </Parameters>
       <Docs>
         <param name="context">To be added.</param>
-        <param name="culture">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="culture">The culture that supplies formatting information for the conversion..</param>
+        <param name="value">The value to be converted..</param>
         <param name="destinationType">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>Converts the specified value to the specified destination type using the specified context and arguments.</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

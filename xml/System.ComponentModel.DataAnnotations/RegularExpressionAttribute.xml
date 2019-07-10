@@ -135,6 +135,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.Pattern" /> is not a valid regular expression.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -168,8 +170,14 @@
         <summary>Checks whether the value entered by the user matches the regular expression pattern.</summary>
         <returns>
           <see langword="true" /> if validation is successful; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This override performs the specific regular expression matching of `value` field.
+          ]]></format>
+        </remarks>
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The data field value did not match the regular expression pattern.</exception>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
+        <exception cref="T:System.ArgumentException"><see cref="P:System.ComponentModel.DataAnnotations.RegularExpressionAttribute.Pattern" /> is not a valid regular expression.</exception>
       </Docs>
     </Member>
     <Member MemberName="MatchTimeoutInMilliseconds">

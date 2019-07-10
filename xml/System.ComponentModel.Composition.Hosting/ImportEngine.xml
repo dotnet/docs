@@ -218,6 +218,10 @@
         <param name="atomicComposition">The composition transaction to use, or <see langword="null" /> for no composition transaction.</param>
         <summary>Previews all the required imports for the specified part to make sure that they can be satisfied, without actually setting them.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">
+                An error occurred during previewing, and <paramref name="atomicComposition" /> is <see langword="null" />. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will contain a collection of errors that occurred. The pre-existing composition is in an unknown state, depending on the errors that occurred.</exception>
+        <exception cref="T:System.ComponentModel.Composition.ChangeRejectedException">An error occurred during previewing, and <paramref name="atomicComposition" /> is not <see langword="null" />. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will contain a collection of errors that occurred. The pre-existing composition remains in valid state.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseImports">
@@ -269,6 +273,16 @@
         <param name="part">The part to satisfy the imports of.</param>
         <summary>Satisfies the imports of the specified part.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="part" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">
+                An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will
+                contain a collection of errors that occurred.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+                The <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="SatisfyImportsOnce">
@@ -297,6 +311,16 @@
         <param name="part">The part to satisfy the imports of.</param>
         <summary>Satisfies the imports of the specified part without registering them for recomposition.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="part" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">
+                An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will
+                contain a collection of errors that occurred.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+                The <see cref="T:System.ComponentModel.Composition.ICompositionService" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
   </Members>

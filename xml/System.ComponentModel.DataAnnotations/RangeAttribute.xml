@@ -218,9 +218,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that determines whether any conversions of the value being validated to <see cref="P:System.ComponentModel.DataAnnotations.RangeAttribute.OperandType" /> as set by the <c>type</c> parameter of the <see cref="M:System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Type,System.String,System.String)" /> constructor use the invariant culture or the current culture.</summary>
+        <value><see langword="true" /> to use the invariant culture for any conversions; <see langword="false" /> to use the culture that is current at the time of the validation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This property has no effect on the constructors with <xref:System.Int32> or <xref:System.Double> parameters, which always use the invariant culture for any conversions of the validated value.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormatErrorMessage">
@@ -261,6 +265,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -296,6 +301,7 @@
           <see langword="true" /> if the specified value is in the range; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The data field value was outside the allowed range.</exception>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Maximum">
@@ -433,7 +439,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that determines whether string values for <see cref="P:System.ComponentModel.DataAnnotations.RangeAttribute.Minimum" /> and <see cref="P:System.ComponentModel.DataAnnotations.RangeAttribute.Maximum" /> are parsed using the invariant culture rather than the current culture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -72,6 +72,7 @@
         <param name="instance">The object instance to validate. It cannot be <see langword="null" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> class using the specified object instance</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="instance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -109,6 +110,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="instance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -150,6 +152,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="instance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">

@@ -44,7 +44,18 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Note to inheritors
+
+Derived types calling this constructor can optionally override the 
+<xref:System.ComponentModel.Composition.Primitives.ImportDefinition.ContractName>, <xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredTypeIdentity>,
+<xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredMetadata>, <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality>, 
+<xref:System.ComponentModel.Composition.Primitives.ImportDefinition.IsPrerequisite>, <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.IsRecomposable> 
+and <xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredCreationPolicy> properties.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,7 +175,14 @@
       <Docs>
         <summary>Gets an expression that defines conditions that must be matched to satisfy the import described by this import definition.</summary>
         <value>An expression that contains a <see cref="T:System.Func`2" /> object that defines the conditions that must be matched for the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> to be satisfied by an <see cref="T:System.ComponentModel.Composition.Primitives.Export" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This property returns an expression that defines conditions based on the 
+<xref:System.ComponentModel.Composition.Primitives.ImportDefinition.ContractName>, <xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredTypeIdentity>, 
+<xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredMetadata>, and <xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.RequiredCreationPolicy>
+properties. 
+                ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConstraintSatisfiedBy">
@@ -190,7 +208,16 @@
         <summary>Returns a value indicating whether the constraint represented by this object is satisfied by the export represented by the given export definition.</summary>
         <returns>
           <see langword="true" /> if the constraint is satisfied; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Note to inheritors
+
+Overrides of this method can provide a more optimized execution of the <xref:System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.Constraint> property, but the result should remain consistent.
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exportDefinition" /> is <see langword="null" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="RequiredCreationPolicy">

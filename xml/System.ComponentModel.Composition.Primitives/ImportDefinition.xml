@@ -231,7 +231,16 @@
         <summary>Gets a value that indicates whether the export represented by the specified definition satisfies the constraints of this import definition.</summary>
         <returns>
           <see langword="true" /> if the constraints are satisfied; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Note to inheritors
+
+Overrides of this method can provide a more optimized execution of the <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Constraint> property, but the result should remain consistent.
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exportDefinition" /> is <see langword="null" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="IsPrerequisite">

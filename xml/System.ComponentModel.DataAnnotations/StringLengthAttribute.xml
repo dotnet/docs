@@ -157,6 +157,7 @@ End Class
  -or-  
   
  <paramref name="maximumLength" /> is less than <paramref name="minimumLength" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsValid">
@@ -204,6 +205,7 @@ End Class
  -or-  
   
  <paramref name="maximumLength" /> is less than <see cref="P:System.ComponentModel.DataAnnotations.StringLengthAttribute.MinimumLength" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaximumLength">

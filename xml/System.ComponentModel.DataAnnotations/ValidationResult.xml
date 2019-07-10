@@ -67,6 +67,7 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="validationResult" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -239,7 +240,11 @@
       </ReturnValue>
       <Docs>
         <summary>Represents the success of the validation (<see langword="true" /> if validation was successful; otherwise, <see langword="false" />).</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+The `null` value is used to indicate success. Consumers of <xref:System.ComponentModel.DataAnnotations.ValidationResult> should compare the values to <xref:System.ComponentModel.DataAnnotations.ValidationResult.Success> rather than checking for `null`.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -268,7 +273,11 @@
       <Docs>
         <summary>Returns a string representation of the current validation result.</summary>
         <returns>The current validation result.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+If <xref:System.ComponentModel.DataAnnotations.ValidationResult.ErrorMessage> is empty, it still qualifies as specified and is therefore returned by <xref:System.ComponentModel.DataAnnotations.ValidationResult.ToString>.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

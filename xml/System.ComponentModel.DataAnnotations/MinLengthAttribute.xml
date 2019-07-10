@@ -123,7 +123,12 @@
         <summary>Determines whether a specified object is valid.</summary>
         <returns>
           <see langword="true" /> if the specified object is valid; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method returns `true` if `value` is `null`. It assumes the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> is used if the value may not be `null`.
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Length is less than zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Length">

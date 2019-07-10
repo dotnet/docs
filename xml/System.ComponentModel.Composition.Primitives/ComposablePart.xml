@@ -69,6 +69,9 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> has been disposed of.</exception>
+        <exception cref="T:System.ComponentModel.Composition.Primitives.ComposablePartException">An error occurred activating the <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportDefinitions">

@@ -109,6 +109,9 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="providers" /> contains an element that is <see langword="null" />.
+            </exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">

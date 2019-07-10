@@ -238,6 +238,7 @@ End Class
         <summary>Gets the name/value pairs that are used as parameters in the control's constructor.</summary>
         <value>The name/value pairs that are used as parameters in the control's constructor.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The current attribute is ill-formed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">

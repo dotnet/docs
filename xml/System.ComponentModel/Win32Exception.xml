@@ -428,8 +428,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that contains the <see cref="P:System.ComponentModel.Win32Exception.NativeErrorCode" />, or <see cref="P:System.Exception.HResult" />, or both.</summary>
+        <returns>A string that represents the <see cref="P:System.ComponentModel.Win32Exception.NativeErrorCode" />, or <see cref="P:System.Exception.HResult" />, or both.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

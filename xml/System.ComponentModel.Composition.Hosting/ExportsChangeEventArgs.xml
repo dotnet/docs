@@ -42,6 +42,7 @@
         <param name="atomicComposition">The composition transaction that contains the change.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.ExportsChangeEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="addedExports" /> or <paramref name="removedExports" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddedExports">

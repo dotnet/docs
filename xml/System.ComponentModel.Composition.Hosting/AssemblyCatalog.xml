@@ -223,7 +223,11 @@
         <param name="codeBase">A string that specifies the code base of the assembly (that is, the path to the assembly file) that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
         <param name="definitionOrigin">The element used by diagnostics to identify the sources of parts.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+The assembly referenced by `codeBase` is loaded into the Load context.
+          ]]></format>
+        </remarks>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="codeBase" /> is not a valid assembly.  
   
@@ -266,7 +270,9 @@
         <param name="codeBase">A string that specifies the code base of the assembly (that is, the path to the assembly file) that contains the attributed <see cref="T:System.Type" /> objects to add to the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> object.</param>
         <param name="reflectionContext">The context used by the catalog to interpret types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base and reflection context.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The assembly referenced by`codebase` is loaded into the Load context.]]></format>
+        </remarks>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="codeBase" /> is not a valid assembly.  
   
@@ -342,7 +348,9 @@
         <param name="reflectionContext">The context used by the catalog to interpret types.</param>
         <param name="definitionOrigin">The element used by diagnostics to identify the sources of parts.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AssemblyCatalog" /> class with the specified code base and reflection context.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The assembly referenced by `codebase` is loaded into the Load context.]]></format>
+        </remarks>
         <exception cref="T:System.BadImageFormatException">
           <paramref name="codeBase" /> is not a valid assembly.  
   
@@ -459,7 +467,20 @@
         <param name="definition">Conditions that specify which exports to match.</param>
         <summary>Gets a collection of exports that match the conditions specified by the import definition.</summary>
         <returns>A collection of exports that match the conditions specified by <paramref name="definition" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+ ## Notes to inheritors
+ Overriders of this property should never return `null` if no  
+<xref:System.ComponentModel.Composition.Primitives.ExportDefinition> matches the conditions defined by 
+`definition`; instead, return an empty <xref:System.Collections.Generic.IEnumerable%601>.
+                ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="definition" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+                The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartCatalog" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Parts">

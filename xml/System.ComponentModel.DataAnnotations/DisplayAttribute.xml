@@ -386,6 +386,7 @@ End Class
         <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> property.</summary>
         <returns>A value that will be used for grouping fields in the UI, if <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> has been initialized; otherwise, <see langword="null" />. If the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> property represents a resource key, a localized string is returned; otherwise, a non-localized string is returned.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Both the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> properties were set, but a public static property with a name matching the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> value couldn't be found on the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -495,6 +496,7 @@ End Class
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">Both the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> properties were set, but a public static property with a name matching the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> value couldn't be found on the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetShortName">
@@ -531,6 +533,11 @@ End Class
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">
+                Both the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> properties were set,
+                but a public static property with a name matching the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> value couldn't be found
+                on the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="GroupName">
@@ -712,6 +719,7 @@ End Class
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">The getter of this property has been invoked but its value has not been explicitly set using the setter.</exception>
       </Docs>
     </Member>
     <Member MemberName="Prompt">

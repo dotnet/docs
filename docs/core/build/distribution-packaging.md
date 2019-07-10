@@ -46,9 +46,11 @@ When installed, .NET Core consists of several components that are laid out as fo
     └── Microsoft.AspNetCore.All
         └── <aspnetcore version> (7)
 /
-├─usr/share/man/man1
+├── etc/dotnet
+│       └── install_location     (16)
+├── usr/share/man/man1
 │       └── dotnet.1.gz          (9)
-└─usr/bin
+└── usr/bin
         └── dotnet               (10)
 ```
 
@@ -79,6 +81,8 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 - (14) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target. This isn't provided on non-Windows platforms.
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
+
+- (16) **/etc/dotnet/install_location** file that contains the full path to the folder that contains the `dotnet` host binary. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
 
 ## Recommended packages
 
@@ -123,7 +127,7 @@ The following lists the recommended packages:
 * `dotnet-host` - dependency
   * **Version:** \<runtime version>
   * **Example:** dotnet-host
-  * **Contains:** (1),(8),(9),(10)
+  * **Contains:** (1),(8),(9),(10),(16)
 
 * `dotnet-apphost-pack-[major].[minor]` - dependency
   * **Version:** \<runtime version>

@@ -130,7 +130,7 @@ ms.assetid: 3770ea8a-2655-4add-9c59-fe0610ad5084
 |VscrollBar|  
 |WebBrowser|  
   
- The following controls are exposed to [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] only through their support for [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)]. Some functionality may not be available.  
+ The following controls are exposed to [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] only through their support for Microsoft Active Accessibility. Some functionality may not be available.  
   
 |Control Name|  
 |------------------|  

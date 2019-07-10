@@ -8,3 +8,4 @@
 |Version|4.6.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Security.Cryptography.Xml.SignedXml.CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm@)?displayProperty=nameWithType></li></ul>|
+

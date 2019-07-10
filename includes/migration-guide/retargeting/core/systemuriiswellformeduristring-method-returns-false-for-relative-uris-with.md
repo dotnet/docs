@@ -8,3 +8,4 @@
 |Version|4.5|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Uri.IsWellFormedUriString(System.String,System.UriKind)?displayProperty=nameWithType></li></ul>|
+

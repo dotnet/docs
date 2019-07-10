@@ -8,3 +8,4 @@
 |Version|4.8|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Web.UI.WebControls.CheckBox?displayProperty=nameWithType></li></ul>|
+

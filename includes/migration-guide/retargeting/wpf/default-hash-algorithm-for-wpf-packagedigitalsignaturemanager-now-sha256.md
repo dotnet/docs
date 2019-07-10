@@ -8,3 +8,4 @@
 |Version|4.7.1|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.IO.Packaging.PackageDigitalSignatureManager.DefaultHashAlgorithm?displayProperty=nameWithType></li></ul>|
+

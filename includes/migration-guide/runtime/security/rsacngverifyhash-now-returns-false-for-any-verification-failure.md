@@ -8,3 +8,4 @@
 |Version|4.6.2|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Security.Cryptography.RSACng.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)?displayProperty=nameWithType></li></ul>|
+

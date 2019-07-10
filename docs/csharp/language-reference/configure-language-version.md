@@ -57,10 +57,6 @@ You can create a **Directory.Build.props** file that contains the `<LangVersion>
 
 Now, builds in every subdirectory of the directory containing that file will use the preview C# version. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
 
-### Set the langversion compiler option
-
-You can use the `-langversion` command-line option. For more information, see the article on the [-langversion](../language-reference/compiler-options/langversion-compiler-option.md) compiler option. You can see a list of the valid values by typing  `csc -langversion:?`.
-
 ## C# language version reference
 
 The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it is older. If you install .NET Core 3.0, then you will have access to everything listed.

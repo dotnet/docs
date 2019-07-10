@@ -13,7 +13,7 @@ ms.custom: mvc
 
 Learn how to use a pre-trained ONNX model in ML.NET to detect objects. The pre-trained model was trained to localize and classify objects in an image.
 
-Training an object detection model from scratch requires setting millions of parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pre-trained model allows you to shortcut the training process to simply 
+Training an object detection model from scratch requires setting millions of parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pre-trained model allows you to shortcut the training process.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

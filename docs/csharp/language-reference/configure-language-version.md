@@ -55,7 +55,7 @@ You can create a **Directory.Build.props** file that contains the `<LangVersion>
 </Project>
 ```
 
-Now, builds in every subdirectory of the directory containing that file will use C# version 7.3 syntax. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
+Now, builds in every subdirectory of the directory containing that file will use the preview C# version. For more information, see the article on [Customize your build](/visualstudio/msbuild/customize-your-build).
 
 ### Set the langversion compiler option
 

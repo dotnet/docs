@@ -311,7 +311,7 @@ This functional test exercises the full ASP.NET Core MVC / Razor Pages applicati
 > - **Unit Test Naming Convention**  
 >   <https://ardalis.com/unit-test-naming-convention>
 > - **Testing EF Core**  
->   <https://docs.microsoft.com/en-us/ef/core/miscellaneous/testing/>
+>   <https://docs.microsoft.com/ef/core/miscellaneous/testing/>
 
 >[!div class="step-by-step"]
 >[Previous](work-with-data-in-asp-net-core-apps.md)

@@ -194,7 +194,7 @@ catch (Exception ex)
 ```
 
 ```vb
-Catch ex As Exception ex
+Catch ex As Exception
     from.RollbackTransaction(withdrawalTrxID)
     Throw New TransferFundsException("Withdrawal failed.", innerException:=ex) With
     {

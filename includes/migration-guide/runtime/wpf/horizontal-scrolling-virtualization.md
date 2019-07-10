@@ -8,3 +8,4 @@
 |Version|4.6.2|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Windows.Controls.Primitives.IScrollInfo?displayProperty=nameWithType></li></ul>|
+

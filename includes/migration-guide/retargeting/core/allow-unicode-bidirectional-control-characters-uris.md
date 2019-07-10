@@ -8,3 +8,4 @@
 |Version|4.7.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Uri?displayProperty=nameWithType></li></ul>|
+

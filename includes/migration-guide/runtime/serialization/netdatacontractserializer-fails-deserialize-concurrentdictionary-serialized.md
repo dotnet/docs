@@ -8,3 +8,4 @@
 |Version|4.5.1|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType></li></ul>|
+

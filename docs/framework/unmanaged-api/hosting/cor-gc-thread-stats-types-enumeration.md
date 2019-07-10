@@ -22,7 +22,7 @@ Indicates the garbage collection statistics for a thread.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_GC_THREAD_HAS_PROMOTED_BYTES  = 0x00000001  
 } COR_GC_THREAD_STATS_TYPES;  

@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugValue object that represents an excepti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentException (  
     [out] ICorDebugValue **ppExceptionObject  
 );  

@@ -23,7 +23,7 @@ Gets the metadata token and a metadata interface instance that can be used again
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTokenAndMetaDataFromFunction(  
     [in]  FunctionID functionId,  
     [in]  REFIID     riid,  

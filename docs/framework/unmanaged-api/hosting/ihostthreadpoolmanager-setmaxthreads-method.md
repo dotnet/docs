@@ -23,7 +23,7 @@ Sets the maximum number of threads that the host can maintain in the thread pool
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMaxThreads (  
     [in] DWORD MaxThreads  
 );  

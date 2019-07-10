@@ -23,7 +23,7 @@ Uninstalls the specified assembly from the global assembly cache.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UninstallAssembly (  
     [in] DWORD dwFlags,  
     [in] LPCWSTR pszAssemblyName,  

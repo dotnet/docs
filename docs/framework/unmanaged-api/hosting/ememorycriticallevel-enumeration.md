@@ -22,7 +22,7 @@ Contains values that indicate the impact of a failure when a specific memory all
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eTaskCritical      = 0,  
     eAppDomainCritical = 1,  

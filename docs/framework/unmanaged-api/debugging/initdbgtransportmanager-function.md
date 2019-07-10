@@ -24,7 +24,7 @@ Initializes the transport manager to connect to a remote target for process and 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitDbgTransportManager ();  
 ```  
   

@@ -22,7 +22,7 @@ Sets flags that are not assembly-specific.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetNonAssemblyFlags(  
     AssemblyFlags afFlags  
 ) PURE;  

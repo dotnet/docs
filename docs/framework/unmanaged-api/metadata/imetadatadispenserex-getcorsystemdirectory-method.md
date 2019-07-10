@@ -23,7 +23,7 @@ Gets the directory that holds the current common language runtime (CLR). This me
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCORSystemDirectory (  
     [out] LPWSTR      szBuffer,   
     [in]  DWORD       cchBuffer,   

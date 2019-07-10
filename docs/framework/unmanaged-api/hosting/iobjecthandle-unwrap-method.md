@@ -23,7 +23,7 @@ Unwraps a marshal-by-value object from indirection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Unwrap (  
     [out, retval] VARIANT *ppv  
 );  

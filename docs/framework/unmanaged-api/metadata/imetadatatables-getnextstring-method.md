@@ -23,7 +23,7 @@ Gets the index of the next string in the current table column.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextString (   
     [in]  ULONG   ixString,  
     [out] ULONG   *pNext  

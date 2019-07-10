@@ -23,7 +23,7 @@ Gets the binary metadata signature of the type specification represented by the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeSpecFromToken (   
    [in]  mdTypeSpec            typespec,   
    [out] PCCOR_SIGNATURE       *ppvSig,   

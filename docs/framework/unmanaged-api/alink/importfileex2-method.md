@@ -22,7 +22,7 @@ Imports assemblies and unbound modules. This method is like [ImportFile Method](
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportFileEx2(  
     LPCWSTR pszFilename,  
     LPCWSTR pszTargetName,  

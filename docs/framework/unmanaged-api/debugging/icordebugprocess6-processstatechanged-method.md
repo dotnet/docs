@@ -10,7 +10,7 @@ Notifies [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);  
 ```  
   

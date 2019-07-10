@@ -10,7 +10,7 @@ Gets the size of a variable in bytes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
    [out] ULONG32 *pcbValue  
 );  

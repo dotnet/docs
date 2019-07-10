@@ -23,7 +23,7 @@ Gets an enumerator for an array of MethodSpec tokens associated with the specifi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethodSpecs (  
     [in, out] HCORENUM      *phEnum,   
     [in]      mdToken       tk,  

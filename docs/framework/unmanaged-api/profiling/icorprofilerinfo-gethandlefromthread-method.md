@@ -23,7 +23,7 @@ Maps the ID of a thread to a Win32 thread handle.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandleFromThread(  
     [in]  ThreadID threadId,  
     [out] HANDLE  *phThread);  

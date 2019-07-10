@@ -23,7 +23,7 @@ Creates a definition for a field with the specified metadata signature, and gets
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineField (   
     [in]  mdTypeDef   td,   
     [in]  LPCWSTR     szName,   

@@ -23,7 +23,7 @@ Gets a value that indicates whether the process referenced by this [ICorPublishP
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsManaged (  
     [out] BOOL   *pbManaged  
 );  

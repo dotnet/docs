@@ -24,7 +24,7 @@ Makes a call to the function that has the specified name and parameters in the s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CallFunctionShim (  
     [in] LPCWSTR     szDllName,  
     [in] LPCSTR      szFunctionName,  

@@ -23,7 +23,7 @@ Returns the fully qualified domain name or IPv4 address of the remote debugging 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostName (  
     [in] ULONG32      cchHostName,  
     [out] ULONG32*    pcchHostName,  

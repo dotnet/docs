@@ -23,7 +23,7 @@ Gets a pointer to an [ICLRReferenceAssemblyEnum](../../../../docs/framework/unma
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferencedAssembliesFromStream (  
     [in]  IStream *pStream,  
     [in]  DWORD    dwFlags,  

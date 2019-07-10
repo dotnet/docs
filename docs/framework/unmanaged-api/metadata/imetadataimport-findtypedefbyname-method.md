@@ -23,7 +23,7 @@ Gets a pointer to the TypeDef metadata token for the <xref:System.Type> with the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindTypeDefByName  
    [in]  LPCWSTR       szTypeDef,  
    [in]  mdToken       tkEnclosingClass,  

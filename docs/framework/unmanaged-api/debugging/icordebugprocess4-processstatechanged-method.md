@@ -22,7 +22,7 @@ Notifies the ICorDebug pipeline that the out of process debugger is continuing t
 
 ## Syntax
 
-```
+```cpp
 HRESULT ProcessStateChanged(
     [in] CorDebugStateChange change
 );

@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugChainEnum enumerator that contains all 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateChains (  
     [out] ICorDebugChainEnum **ppChains  
 );  

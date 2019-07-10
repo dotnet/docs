@@ -23,7 +23,7 @@ Creates a shallow copy of this [IAssemblyEnum](../../../../docs/framework/unmana
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] IAssemblyEnum   **ppEnum  
 );  

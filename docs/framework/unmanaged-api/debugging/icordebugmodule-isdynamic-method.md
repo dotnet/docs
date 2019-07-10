@@ -23,7 +23,7 @@ Gets a value that indicates whether this module is dynamic.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsDynamic(  
     [out] BOOL *pDynamic  
 );  

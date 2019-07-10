@@ -23,7 +23,7 @@ Gets the method that contains this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethod(  
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  

@@ -23,7 +23,7 @@ Gets the set of properties of the exported type with the specified metadata sign
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExportedTypeProps (  
     [in]  mdExportedType    mdct,   
     [out] LPWSTR            szName,   

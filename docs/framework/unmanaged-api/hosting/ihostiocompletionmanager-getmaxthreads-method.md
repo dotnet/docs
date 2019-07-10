@@ -23,7 +23,7 @@ Gets the maximum number of threads that the host can allot to service I/O reques
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMaxThreads (  
     [out] DWORD *pdwMaxIoCompletionThreads  
 );  

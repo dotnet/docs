@@ -23,7 +23,7 @@ Gets the name of the assembly that this `ICorDebugAssembly` instance represents.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in] ULONG32  cchName,  
     [out] ULONG32 *pcchName,  

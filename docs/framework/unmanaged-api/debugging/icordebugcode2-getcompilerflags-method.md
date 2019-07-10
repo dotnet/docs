@@ -23,7 +23,7 @@ Gets the flags that specify the conditions under which this code object was eith
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCompilerFlags (  
     [out] DWORD *pdwFlags  
 );  

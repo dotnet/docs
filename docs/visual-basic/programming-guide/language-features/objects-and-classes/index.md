@@ -22,7 +22,7 @@ To understand the relationship between an object and its class, think of cookie 
 
 You must create an object before you can access its members.
 
-#### To create an object from a class
+### To create an object from a class
 
 1. Determine from which class you want to create an object.
 
@@ -129,7 +129,7 @@ Members declared with the `Shared` keyword are *shared members*, which belong to
 
 #### Accessing nonshared members
 
-###### To access a nonshared member of an object
+##### To access a nonshared member of an object
 
 1. Make sure the object has been created from its class and assigned to an object variable.
 
@@ -145,7 +145,7 @@ Members declared with the `Shared` keyword are *shared members*, which belong to
 
 #### Accessing shared members
 
-###### To access a shared member of an object
+##### To access a shared member of an object
 
 - Follow the class name with the *member-access operator* (`.`) and then the member name. You should always access a `Shared` member of the object directly through the class name.
 
@@ -198,7 +198,7 @@ When classes are derived from more fundamental classes, they are said to have a 
 
 In the following example, suppose you want to define a special kind of <xref:System.Windows.Forms.Button> that acts like a normal <xref:System.Windows.Forms.Button> but also exposes a method that reverses the foreground and background colors.
 
-##### To define a class is derived from an already existing class
+#### To define a class is derived from an already existing class
 
 1. Use a [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md) to define a class from which to create the object you need.
 
@@ -233,7 +233,7 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
 Derived classes inherit members from the class they are based on, allowing you to add complexity as you progress in a class hierarchy. For more information, see [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).
 
-#### Compiling the code
+### Compiling the code
 
 Be sure the compiler can access the class from which you intend to derive your new class. This might mean fully qualifying its name, as in the preceding example, or identifying its namespace in an [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md). If the class is in a different project, you might need to add a reference to that project. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
 

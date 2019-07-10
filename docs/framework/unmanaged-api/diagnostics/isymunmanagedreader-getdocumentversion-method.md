@@ -23,7 +23,7 @@ Gets the specified version of the specified document. The document version start
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentVersion (  
     [in]  ISymUnmanagedDocument *pDoc,  
     [out] int* version,  

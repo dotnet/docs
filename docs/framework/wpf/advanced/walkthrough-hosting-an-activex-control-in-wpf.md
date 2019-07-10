@@ -31,7 +31,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
 ## Creating the Project
 
-#### To create and set up the project
+### To create and set up the project
 
 1. Create a WPF Application project named `HostingAxInWpf`.
 
@@ -56,7 +56,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 ## Creating the ActiveX Control
  [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a [!INCLUDE[TLA#tla_actx](../../../../includes/tlasharptla-actx-md.md)] control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
 
-#### To create the ActiveX control
+### To create the ActiveX control
 
 1. Open WmpAxControl.vb or WmpAxControl.cs in the Windows Forms Designer.
 
@@ -68,7 +68,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
 ## Hosting the ActiveX Control on a WPF Page
 
-#### To host the ActiveX control
+### To host the ActiveX control
 
 1. In the HostingAxInWpf project, add a reference to the generated [!INCLUDE[TLA2#tla_actx](../../../../includes/tla2sharptla-actx-md.md)] interoperability assembly.
 

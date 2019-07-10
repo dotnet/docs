@@ -23,7 +23,7 @@ Creates the assembly. Call this method after all other files are closed except f
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitAssembly(  
     mdAssembly AssemblyID  
 ) PURE;  

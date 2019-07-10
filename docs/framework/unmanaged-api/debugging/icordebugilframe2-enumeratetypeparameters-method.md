@@ -23,7 +23,7 @@ Gets an ICorDebugTypeEnum object that contains the <xref:System.Type> parameters
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateTypeParameters (  
     [out] ICorDebugTypeEnum    **ppTyParEnum  
 );  

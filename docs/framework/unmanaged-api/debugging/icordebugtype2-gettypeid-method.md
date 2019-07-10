@@ -23,7 +23,7 @@ Gets a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typei
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeID(  
     ([out] COR_TYPEID *id  
 );  

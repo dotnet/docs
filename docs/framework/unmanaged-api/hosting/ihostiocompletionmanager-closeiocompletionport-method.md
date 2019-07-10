@@ -23,7 +23,7 @@ Requests that the host close a port that was opened through an earlier call to [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseIoCompletionPort (  
     [in] HANDLE hPort  
 );  

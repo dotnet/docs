@@ -22,7 +22,7 @@ Indicates how to modify an [IHostAssemblyManager](../../../../docs/framework/unm
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _HostApplicationPolicy {  
     HOST_APPLICATION_BINDING_POLICY = 1  
 } EHostApplicationPolicy;  

@@ -23,7 +23,7 @@ This method has not been implemented in the current version of the .NET Framewor
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint(  
     [out] ICorDebugModuleBreakpoint **ppBreakpoint  
 );  

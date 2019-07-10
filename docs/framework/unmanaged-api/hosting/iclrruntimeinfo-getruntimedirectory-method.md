@@ -25,7 +25,7 @@ Gets the installation directory of the common language runtime (CLR) associated 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRuntimeDirectory(  
 [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  
 [in, out]  DWORD *pcchBuffer);  

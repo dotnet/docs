@@ -22,7 +22,7 @@ Describes the possible flags returned in the `pdwConfigFlags` parameter of the [
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_UNSET  = 0x00,  
     METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_TRUE   = 0x01,  

@@ -23,7 +23,7 @@ Gets the type of this internal frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFrameType (  
     [out] CorDebugInternalFrameType  *pType  
 );  

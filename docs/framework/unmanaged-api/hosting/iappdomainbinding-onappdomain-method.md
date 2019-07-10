@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) to notify the host that an applicati
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnAppDomain (  
     [in] IUnknown* pAppdomain  
 );  

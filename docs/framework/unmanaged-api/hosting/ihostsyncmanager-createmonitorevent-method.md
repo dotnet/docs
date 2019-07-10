@@ -23,7 +23,7 @@ Creates a monitored auto-reset event object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateMonitorEvent (  
     [in]  SIZE_T cookie,  
     [out] IHostAutoEvent **ppEvent  

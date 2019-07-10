@@ -24,7 +24,7 @@ Determines whether two assemblies differ only by their strong name signatures.
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameCompareAssemblies (  
     [in]  LPCWSTR   wszAssembly1,  
     [in]  LPCWSTR   wszAssembly2,  

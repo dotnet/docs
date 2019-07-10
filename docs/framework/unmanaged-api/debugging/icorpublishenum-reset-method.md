@@ -23,7 +23,7 @@ Moves the cursor of to the beginning of the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   

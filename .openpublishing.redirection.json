@@ -420,7 +420,7 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/conversion-keywords.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/explicit"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/decimal.md",
@@ -433,6 +433,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/exception-handling-statements.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/statement-keywords"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/explicit.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/false.md",
@@ -449,6 +453,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/floating-point-types-table.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/implicit.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/int.md",
@@ -1011,12 +1019,24 @@
             "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
         },
         {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/conversion-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/overloadable-operators.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading#overloadable-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/programming-guide/strings/how-to-compare-strings.md",

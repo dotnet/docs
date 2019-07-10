@@ -23,7 +23,7 @@ Releases the handle referenced by this ICorDebugHandleValue object without expli
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Dispose ();  
 ```  
   

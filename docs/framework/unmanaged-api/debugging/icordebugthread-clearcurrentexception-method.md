@@ -23,7 +23,7 @@ This method is not implemented. Do not use it.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClearCurrentException();  
 ```  
   

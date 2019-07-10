@@ -23,7 +23,7 @@ Closes the current lexical scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseScope(  
     [in] ULONG32 endOffset);  
 ```  

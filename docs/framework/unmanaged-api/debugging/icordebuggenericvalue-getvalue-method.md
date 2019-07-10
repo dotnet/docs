@@ -23,7 +23,7 @@ Copies the value of this generic into the specified buffer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] void     *pTo  
 );  

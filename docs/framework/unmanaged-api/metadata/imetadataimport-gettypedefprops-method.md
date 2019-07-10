@@ -23,7 +23,7 @@ Returns metadata information for the <xref:System.Type> represented by the speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeDefProps (  
    [in]  mdTypeDef   td,  
    [out] LPWSTR      szTypeDef,  

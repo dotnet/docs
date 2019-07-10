@@ -23,7 +23,7 @@ Indicates whether the common language runtime (CLR) associated with the [ICLRRun
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsLoaded(  
 [in]  HANDLE hndProcess,  
 [out, retval] BOOL *pbLoaded);  

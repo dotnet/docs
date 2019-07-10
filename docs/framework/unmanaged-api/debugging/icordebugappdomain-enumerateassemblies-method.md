@@ -23,7 +23,7 @@ Gets an enumerator for the assemblies in the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateAssemblies (  
     [out] ICorDebugAssemblyEnum  **ppAssemblies  
 );  

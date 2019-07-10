@@ -25,7 +25,7 @@ Notifies the profiler that a function is about to return to the caller.
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave (  
     [in] FunctionID funcID  
 );  

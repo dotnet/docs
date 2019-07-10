@@ -23,7 +23,7 @@ Creates a reference to the specified type that is defined outside the current sc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineImportType (   
     [in]  IMetaDataAssemblyImport  *pAssemImport,   
     [in]  const void               *pbHashValue,   

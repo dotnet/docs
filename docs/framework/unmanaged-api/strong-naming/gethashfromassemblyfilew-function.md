@@ -24,7 +24,7 @@ Gets a hash of the specified assembly file, using the specified hash algorithm. 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromAssemblyFileW (  
     [in]  LPCWSTR   wszFilePath,  
     [in, out] unsigned int   *piHashAlg,  

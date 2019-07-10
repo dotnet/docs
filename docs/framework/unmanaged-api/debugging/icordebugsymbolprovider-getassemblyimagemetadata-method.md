@@ -10,7 +10,7 @@ Returns the metadata from a merged assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyImageMetadata(  
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  

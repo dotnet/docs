@@ -22,7 +22,7 @@ Notifies the profiler that control is being returned from a function, and provid
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave3WithInfo(  
                [in] FunctionIDOrClientID functionIDOrClientID,  
                [in] COR_PRF_ELT_INFO eltInfo);  

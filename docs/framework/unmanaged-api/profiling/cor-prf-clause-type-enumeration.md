@@ -22,7 +22,7 @@ Indicates the type of exception clause that the code has just entered or left.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_CLAUSE_NONE = 0,  
     COR_PRF_CLAUSE_FILTER = 1,  

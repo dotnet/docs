@@ -101,7 +101,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
 - **✔️ Adding a constructor to a class, along with a default (parameterless) constructor if the class previously had no constructors**
 
-   However, adding a constructor to a class that previously had no constructors *without* adding the default constructor is not allowed.
+   However, adding a constructor to a class that previously had no constructors *without* adding the parameterless constructor is not allowed.
 
 - **✔️ Changing a member from [abstract](../../csharp/language-reference/keywords/abstract.md) to [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
@@ -168,7 +168,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   This breaks existing clients that were bound to the previous overload. For example, if a class has a single version of a method that accepts a <xref:System.UInt32>, an existing consumer will successfully bind to that overload when passing a <xref:System.Int32> value. However, if you add an overload that accepts an <xref:System.Int32>, when recompiling or using late-binding, the compiler now binds to the new overload. If different behavior results, this is a breaking change.
 
-- **❌ Adding a constructor to a class that previously had no constructor without adding the default constructor**
+- **❌ Adding a constructor to a class that previously had no constructor without adding the parameterless constructor**
 
 - **❌️ Adding [readonly](../../csharp/language-reference/keywords/readonly.md) to a field**
 

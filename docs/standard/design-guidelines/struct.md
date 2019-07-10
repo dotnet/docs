@@ -16,9 +16,9 @@ author: "KrzysztofCwalina"
 # Struct Design
 The general-purpose value type is most often referred to as a struct, its C# keyword. This section provides guidelines for general struct design.  
   
- **X DO NOT** provide a default constructor for a struct.  
+ **X DO NOT** provide a parameterless constructor for a struct.  
   
- Following this guideline allows arrays of structs to be created without having to run the constructor on each item of the array. Notice that C# does not allow structs to have default constructors.  
+ Following this guideline allows arrays of structs to be created without having to run the constructor on each item of the array. Notice that C# does not allow structs to have parameterless constructors.  
   
  **X DO NOT** define mutable value types.  
   

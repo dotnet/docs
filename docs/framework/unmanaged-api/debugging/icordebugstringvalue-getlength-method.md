@@ -23,7 +23,7 @@ Gets the number of characters in the string referenced by this ICorDebugStringVa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLength (  
     [out] ULONG32   *pcchString  
 );  

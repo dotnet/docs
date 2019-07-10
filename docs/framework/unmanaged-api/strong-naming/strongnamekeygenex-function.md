@@ -24,7 +24,7 @@ Generates a new public/private key pair with the specified key size, for strong 
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameKeyGenEx (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  

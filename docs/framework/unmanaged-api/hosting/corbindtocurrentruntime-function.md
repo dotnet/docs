@@ -25,7 +25,7 @@ Loads the common language runtime (CLR) into a process by using version informat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToCurrentRuntime (  
     [in]  LPCWSTR   pwszFileName,  
     [in]  REFCLSID  rclsid,  

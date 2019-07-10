@@ -23,7 +23,7 @@ Opens the discretionary access token associated with the currently executing thr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenThreadToken (  
     [in]  DWORD    dwDesiredAccess,   
     [in]  BOOL     bOpenAsSelf,   

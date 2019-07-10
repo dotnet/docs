@@ -23,7 +23,7 @@ Returns a non-local variable, given its parent and name.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVariables (  
     [in]  mdToken  parent,  
     [in]  ULONG32  cVars,  

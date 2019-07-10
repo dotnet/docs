@@ -23,7 +23,7 @@ Gets the start and end document positions for the source of this method. The fir
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceStartEnd(  
     [in]  ISymUnmanagedDocument  *docs[2],  
     [in]  ULONG32                lines[2],  

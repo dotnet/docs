@@ -23,7 +23,7 @@ Enumerates MemberRef tokens representing members of the specified type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemberRefs (  
    [in, out] HCORENUM    *phEnum,   
    [in]   mdToken        tkParent,   

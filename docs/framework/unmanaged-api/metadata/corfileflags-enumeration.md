@@ -22,7 +22,7 @@ Contains values that describe the type of file defined in a call to [IMetaDataAs
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorFileFlags {  
   
     ffContainsMetaData      =   0x0000,  

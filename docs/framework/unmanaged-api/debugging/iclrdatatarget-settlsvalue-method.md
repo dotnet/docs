@@ -23,7 +23,7 @@ Sets a value in the thread local storage (TLS) of the specified thread in the ta
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTLSValue (  
     [in] ULONG32            threadID,  
     [in] ULONG32            index,  

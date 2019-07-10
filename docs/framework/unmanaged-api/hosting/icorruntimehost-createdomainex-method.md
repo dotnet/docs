@@ -23,7 +23,7 @@ Creates an application domain. The caller receives an interface pointer, of type
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainEx (  
     [in] LPCWSTR     pwzFriendlyName,  
     [in] IUnknown*   pSetup,  

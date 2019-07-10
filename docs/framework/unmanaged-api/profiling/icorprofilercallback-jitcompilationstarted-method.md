@@ -23,7 +23,7 @@ Notifies the profiler that the just-in-time (JIT) compiler has started to compil
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCompilationStarted(  
     [in] FunctionID functionId,  
     [in] BOOL       fIsSafeToBlock);  

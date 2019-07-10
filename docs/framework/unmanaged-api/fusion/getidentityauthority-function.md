@@ -23,7 +23,7 @@ Gets a pointer to an [IIdentityAuthority](../../../../docs/framework/unmanaged-a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIdentityAuthority (  
     [out] IIdentityAuthority   **ppIIdentityAuthority  
  );  

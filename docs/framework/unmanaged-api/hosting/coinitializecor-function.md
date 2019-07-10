@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI CoInitializeCor (  
     DWORD fFlags  
 );  

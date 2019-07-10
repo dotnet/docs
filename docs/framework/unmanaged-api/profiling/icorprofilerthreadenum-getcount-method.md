@@ -23,7 +23,7 @@ Gets the number of threads that are used by the application.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (    [out] ULONG * pcelt  
 );  
 ```  

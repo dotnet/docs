@@ -23,7 +23,7 @@ Provides the host with an interface pointer to the [ICLRIoCompletionManager](../
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRIoCompletionManager (  
     [in] ICLRIoCompletionManager *pManager  
 );  

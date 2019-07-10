@@ -16,7 +16,7 @@ Entity Framework (EF) Core is a lightweight, extensible, and cross-platform vers
 
 Since an introduction to EF Core is already available in Microsoft documentation, here we simply provide links to that information.
 
-#### Additional resources
+### Additional resources
 
 - **Entity Framework Core** \
   [https://docs.microsoft.com/ef/core/](/ef/core/)
@@ -225,7 +225,7 @@ builder.RegisterType<OrderRepository>()
 
 Note that using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext).
 
-#### Additional resources
+### Additional resources
 
 - **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application** \
   <https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application>
@@ -442,7 +442,7 @@ In addition to encapsulating filtering logic, the specification can specify the 
 
 Although we don’t recommend to return IQueryable from a repository, it’s perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query’s list of includes before executing the query with the specification’s criteria on the last line.
 
-#### Additional resources
+### Additional resources
 
 - **Table Mapping** \
   [https://docs.microsoft.com/ef/core/modeling/relational/tables](/ef/core/modeling/relational/tables)

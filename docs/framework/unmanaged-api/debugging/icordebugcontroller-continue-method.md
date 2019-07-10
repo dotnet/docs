@@ -23,7 +23,7 @@ Resumes execution of managed threads after a call to [Stop Method](../../../../d
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Continue (  
     [in] BOOL fIsOutOfBand  
 );  

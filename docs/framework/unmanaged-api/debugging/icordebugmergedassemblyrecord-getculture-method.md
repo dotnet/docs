@@ -10,7 +10,7 @@ Gets the culture name string of the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCulture(  
    [in] ULONG32 cchCulture,   
    [out] ULONG32 *pcchCulture,   

@@ -23,7 +23,7 @@ Declares an embedded resource. This method does not actually embed the resource.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmbedResource(  
     mdAssembly  AssemblyID,  
     mdToken     FileToken,  

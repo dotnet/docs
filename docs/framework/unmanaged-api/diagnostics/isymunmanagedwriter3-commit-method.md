@@ -23,7 +23,7 @@ Commits the changes written so far to the stream.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Commit();  
 ```  
   

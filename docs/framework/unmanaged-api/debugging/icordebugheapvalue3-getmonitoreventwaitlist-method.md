@@ -23,7 +23,7 @@ Provides an ordered list of threads that are queued on the event that is associa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMonitorEventWaitList (  
     [out] ICorDebugThreadEnum **ppThreadEnum  
 );  

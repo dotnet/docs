@@ -22,7 +22,7 @@ Describes the available options for managing exceptions that are unhandled in us
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eRuntimeDeterminedPolicy,  
     eHostDeterminedPolicy  

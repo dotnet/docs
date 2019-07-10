@@ -23,7 +23,7 @@ Sets the relative virtual address of the specified method.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRVA (  
     [in]  mdMethodDef  md,   
     [in]  ULONG        ulRVA   

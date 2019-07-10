@@ -23,7 +23,7 @@ Specifies the policy action the common language runtime (CLR) should take when t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetActionOnFailure (  
     [in] EClrFailure   failure,  
     [in] EPolicyAction action  

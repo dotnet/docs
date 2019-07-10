@@ -10,7 +10,7 @@ Gets the value of a variable as a byte array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
    [in] ULONG32 offset,  
    [in] ULONG32 cbContext,  

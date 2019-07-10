@@ -23,7 +23,7 @@ Reverts all instances of the specified functions to their original versions.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestRevert (  
    [in] ULONG    cFunctions,  
    [in, size_is(cFunctions)]  ModuleID    moduleIds[],  

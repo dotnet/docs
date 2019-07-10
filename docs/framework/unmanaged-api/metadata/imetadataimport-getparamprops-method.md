@@ -23,7 +23,7 @@ Gets metadata values for the parameter referenced by the specified ParamDef toke
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParamProps (  
    [in]  mdParamDef      tk,  
    [out] mdMethodDef     *pmd,  

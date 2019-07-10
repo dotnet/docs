@@ -23,7 +23,7 @@ Gets a pointer to an [IAppIdAuthority](../../../../docs/framework/unmanaged-api/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppIdAuthority (  
     [out] IAppIdAuthority **ppIAppIdAuthority  
  );  

@@ -23,7 +23,7 @@ Notifies the code profiler that a garbage collection handle has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HandleCreated(  
     [in] GCHandleID handleId,  
     [in] ObjectID initialObjectId);  

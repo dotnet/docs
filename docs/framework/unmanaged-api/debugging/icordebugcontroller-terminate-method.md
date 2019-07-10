@@ -26,7 +26,7 @@ Terminates the process with the specified exit code.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Terminate (  
     [in] UINT exitCode  
 );  

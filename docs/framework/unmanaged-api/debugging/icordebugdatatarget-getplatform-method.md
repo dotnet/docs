@@ -23,7 +23,7 @@ Provides information about the platform, including processor architecture and op
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);  
 ```  
   

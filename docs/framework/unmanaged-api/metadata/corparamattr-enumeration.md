@@ -22,7 +22,7 @@ Contains values that describe the metadata of a method parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorParamAttr {  
   
     pdIn                        =   0x0001,  

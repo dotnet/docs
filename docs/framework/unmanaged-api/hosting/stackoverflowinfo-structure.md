@@ -22,7 +22,7 @@ Stores the type of overflow that occurred and information on the exception that 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _StackOverflowInfo {  
     StackOverflowType   soType;  
     EXCEPTION_POINTERS  *pExceptionInfo;  

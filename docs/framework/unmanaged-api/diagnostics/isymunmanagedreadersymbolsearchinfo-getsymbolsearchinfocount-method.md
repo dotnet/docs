@@ -23,7 +23,7 @@ Gets a count of symbol search information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolSearchInfoCount(  
     [out] ULONG32 *pcSearchInfo);  
 ```  

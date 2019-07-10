@@ -23,7 +23,7 @@ Allows new or pending thread abort requests to result in thread aborts on the cu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndPreventAsyncAbort();  
 ```  
   

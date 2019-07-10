@@ -26,7 +26,7 @@ Updates the existing symbol store with a delta symbol store. This method is used
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateSymbolStore (  
     [in] const WCHAR *filename,  
     [in] IStream *pIStream);  

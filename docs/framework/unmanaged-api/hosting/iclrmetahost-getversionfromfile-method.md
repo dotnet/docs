@@ -23,7 +23,7 @@ Gets an assembly's original .NET Framework compilation version (stored in the me
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionFromFile (  
     [in] LPCWSTR pwzFilePath,  
     [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  

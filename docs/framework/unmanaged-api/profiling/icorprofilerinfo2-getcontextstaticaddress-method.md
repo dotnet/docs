@@ -23,7 +23,7 @@ Gets the address for the specified context-static field that is in the scope of 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContextStaticAddress(  
     [in] ClassID classId,  
     [in] mdFieldDef fieldToken,  

@@ -23,7 +23,7 @@ Returns an array of methods, each of which contains the breakpoint at the given 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodsFromDocumentPosition (  
     [in]  ISymUnmanagedDocument* document,  
     [in]  ULONG32 line,  

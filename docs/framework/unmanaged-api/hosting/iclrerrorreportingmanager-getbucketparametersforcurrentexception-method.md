@@ -25,7 +25,7 @@ Gets the Watson bucket for the current exception on the calling thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBucketParametersForCurrentException(  
     [out] BucketParameters *pParams  
 );  

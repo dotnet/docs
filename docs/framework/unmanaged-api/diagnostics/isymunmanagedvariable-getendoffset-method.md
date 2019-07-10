@@ -23,7 +23,7 @@ Gets the end offset of this variable within its parent. If this is a local varia
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEndOffset(  
     [out, retval] ULONG32* pRetVal);  
 ```  

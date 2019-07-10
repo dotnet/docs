@@ -23,7 +23,7 @@ Gets detailed information about an array object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayObjectInfo(  
     [in] ObjectID objectId,  
     [in] ULONG32 cDimensions,  

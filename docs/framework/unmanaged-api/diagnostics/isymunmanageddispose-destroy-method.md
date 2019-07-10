@@ -23,7 +23,7 @@ Causes the underlying object to release all internal references and return failu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Destroy();  
 ```  
   

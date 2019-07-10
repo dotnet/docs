@@ -23,7 +23,7 @@ Notifies the common language runtime (CLR) that the task represented by the curr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitTask ();  
 ```  
   

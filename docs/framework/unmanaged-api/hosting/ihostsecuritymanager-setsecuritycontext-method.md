@@ -23,7 +23,7 @@ Sets the security context of the currently executing thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSecurityContext (  
     [in]  EContextType eContextType,  
     [out] IHostSecurityContext** ppSecurityContext  

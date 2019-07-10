@@ -10,7 +10,7 @@ Gets the merged module that was just loaded or unloaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule(  
    [out]ICorDebugModule **ppModule  
 );  

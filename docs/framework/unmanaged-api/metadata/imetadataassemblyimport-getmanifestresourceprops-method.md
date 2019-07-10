@@ -23,7 +23,7 @@ Gets the set of properties of the manifest resource with the specified metadata 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetManifestResourceProps (  
     [in]  mdManifestResource   mdmr,   
     [out] LPWSTR               szName,   

@@ -29,7 +29,7 @@ Although it's a good idea to encapsulate your code that interacts with infrastru
 
 Integration tests will often have more complex setup and teardown procedures than unit tests. For example, an integration test that goes against an actual database will need a way to return the database to a known state before each test run. As new tests are added and the production database schema evolves, these test scripts will tend to grow in size and complexity. In many large systems, it is impractical to run full suites of integration tests on developer workstations before checking in changes to shared source control. In these cases, integration tests may be run on a build server.
 
-The LocalFileImageService implementation class implements the logic for fetching and returning the bytes of an image file from a particular folder given an id:
+The `LocalFileImageService` implementation class implements the logic for fetching and returning the bytes of an image file from a particular folder given an id:
 
 ```csharp
 public class LocalFileImageService : IImageService
@@ -142,7 +142,7 @@ public IActionResult GetImage(int id)
 }
 ```
 
-Unit testing this method is made difficult by its direct dependency on System.IO.File, which it uses to read from the file system. You can test this behavior to ensure it works as expected, but doing so with real files is an integration test. It's worth noting you can't unit test this method's route – you'll see how to do this with a functional test shortly.
+Unit testing this method is made difficult by its direct dependency on `System.IO.File`, which it uses to read from the file system. You can test this behavior to ensure it works as expected, but doing so with real files is an integration test. It's worth noting you can't unit test this method's route – you'll see how to do this with a functional test shortly.
 
 If you can't unit test the file system behavior directly, and you can't test the route, what is there to test? Well, after refactoring to make unit testing possible, you may discover some test cases and missing behavior, such as error handling. What does the method do when a file isn't found? What should it do? In this example, the refactored method looks like this:
 
@@ -170,7 +170,7 @@ In most cases, you’ll want to use global exception handlers in your controller
 
 ## Integration testing ASP.NET Core apps
 
-Most of the integration tests in your ASP.NET Core apps should be testing services and other implementation types defined in your Infrastructure project. The best way to test that your ASP.NET Core MVC project is behaving correctly is with functional tests that run against your app running in a test host. An example of an integration test of a data access class is shown in the Integration Testing section earlier in this chapter.
+Most of the integration tests in your ASP.NET Core apps should be testing services and other implementation types defined in your Infrastructure project. For example, you could [test that EF Core was successfully updating and retrieving the data that you expect](https://docs.microsoft.com/ef/core/miscellaneous/testing/) from your data access classes residing in the Infrastructure project. The best way to test that your ASP.NET Core MVC project is behaving correctly is with functional tests that run against your app running in a test host.
 
 ## Functional testing ASP.NET Core apps
 
@@ -303,6 +303,15 @@ namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages
 ```
 
 This functional test exercises the full ASP.NET Core MVC / Razor Pages application stack, including all middleware, filters, binders, etc. that may be in place. It verifies that a given route ("/") returns the expected success status code and HTML output. It does so without setting up a real web server, and so avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server. You should use functional tests to ensure your application's front-end stack is working as expected. These tests are especially useful when you find duplication in your controllers or pages and you address the duplication by adding filters. Ideally, this refactoring won't change the behavior of the application, and a suite of functional tests will verify this is the case.
+
+> ### References – Test ASP.NET Core MVC apps
+>
+> - **Testing in ASP.NET Core**  
+>   <https://docs.microsoft.com/aspnet/core/testing/>
+> - **Unit Test Naming Convention**  
+>   <https://ardalis.com/unit-test-naming-convention>
+> - **Testing EF Core**  
+>   <https://docs.microsoft.com/ef/core/miscellaneous/testing/>
 
 >[!div class="step-by-step"]
 >[Previous](work-with-data-in-asp-net-core-apps.md)

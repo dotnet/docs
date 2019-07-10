@@ -19,7 +19,6 @@ Want to make your libraries multi-platform? Want to see how much work is require
 
 ## How to use the .NET Portability Analyzer
 
-### Pick Target Platforms
 To begin using the .NET Portability Analyzer in Visual Studio, you first need to download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer). It works on Visual Studio 2017 and later versions. You can configure it in Visual Studio via **Analyze** > **Portability Analyzer Settings** and select your Target Platforms, which is the .NET platforms/versions that you want to evaluate the portability gaps comparing with the platform/version that your current assembly is built with.
 
 ![Portability screenshot](./media/portability-analyzer/portability-screenshot.png)

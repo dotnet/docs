@@ -42,7 +42,7 @@ It is recommended that you include all the related exe and dll files that you ow
 ### View and interpret portability result
 
 Only APIs that are unsupported by a Target Platform appear in the report. 
-After running the analysis in Visual Studio, you'll see your .NET Portability report file link pops up. If you used [ApiPort console app](https://aka.ms/apiportdownload), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory. 
+After running the analysis in Visual Studio, you'll see your .NET Portability report file link pops up. If you used the [ApiPort console app](https://aka.ms/apiportdownload), your .NET Portability report is saved as a file in the format you specified. The default is in an Excel file (*.xlsx*) in your current directory.
 
 #### Portability Summary 
 

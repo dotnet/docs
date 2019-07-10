@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides APIs for managing native libraries.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,8 +37,8 @@
         <Parameter Name="handle" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handle">The native library handle to be freed.</param>
+        <summary>Frees a given a loaded library handle, or takes no action if the input handle is <see cref="F:System.IntPtr.Zero" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,11 +62,19 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="handle">The native library handle.</param>
+        <param name="name">The name of the exported symbol.</param>
+        <summary>Gets the address of an exported symbol.</summary>
+        <returns>The address of the symbol.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+This is a simple wrapper around OS calls and does not perform any name mangling.
+
+         ]]></format>
+         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="handle" /> or <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.EntryPointNotFoundException">The symbol is not found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -88,10 +96,13 @@
         <Parameter Name="libraryPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="libraryPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="libraryPath">The name of the native library to be loaded.</param>
+        <summary>Provides a simple API for loading a native library that wraps the OS loader and uses default flags.</summary>
+        <returns>The handle for the loaded native library.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="libraryPath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.DllNotFoundException">The library can't be found.</exception>
+        <exception cref="T:System.BadImageFormatException">The library is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -114,12 +125,26 @@
         <Parameter Name="searchPath" Type="System.Nullable&lt;System.Runtime.InteropServices.DllImportSearchPath&gt;" />
       </Parameters>
       <Docs>
-        <param name="libraryName">To be added.</param>
-        <param name="assembly">To be added.</param>
-        <param name="searchPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="libraryName">The name of the native library to be loaded.</param>
+        <param name="assembly">The assembly loading the native library.</param>
+        <param name="searchPath">The search path.</param>
+        <summary>Provides a high-level API for loading a native library.</summary>
+        <returns>The handle for the loaded library.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Given a library name, this method searches specific paths based on the  runtime configuration, input parameters, and attributes of the calling assembly. If the `searchPath` parameter is non-null, the flags in this enumeration are used. Otherwise, the flags specified by the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute> on the calling assembly, if any are present, are used. This method does not invoke the following managed callbacks for native library resolution: 
+
+- The per-assembly registered callback.
+- <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll%2A?displayProperty=nameWithType>.
+- <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDllEvent?displayProperty=nameWithType>.
+
+         ]]></format>
+         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="libraryName" /> or <paramref name="assembly" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="assembly" /> is not a <see langword="RuntimeAssembly" />.</exception>
+        <exception cref="T:System.DllNotFoundException">The library can't be found.</exception>
+        <exception cref="T:System.BadImageFormatException">The library is not valid.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetDllImportResolver">
@@ -141,10 +166,20 @@
         <Parameter Name="resolver" Type="System.Runtime.InteropServices.DllImportResolver" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="resolver">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assembly">The assembly for which the resolver is registered.</param>
+        <param name="resolver">The resolver callback to register.</param>
+        <summary>Sets a callback for resolving native library imports from an assembly.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+This per-assembly resolver is the first attempt to resolve native library loads initiated by this assembly. 
+
+Only one resolver can be registered per assembly. Trying to register a second resolver fails with an <xref:System.InvalidOperationException>.
+
+         ]]></format>
+         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="assembly" /> or paramref name="resolver" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">A resolver is already set for this assembly.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -168,12 +203,13 @@
         <Parameter Name="address" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="handle">To be added.</param>
-        <param name="name">To be added.</param>
-        <param name="address">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="handle">The  native library handle.</param>
+        <param name="name">The name of the exported symbol.</param>
+        <param name="address">When the method returns, contains the symbol address, if it exists.</param>
+        <summary>Gets the address of an exported symbol and returns a value that indicates whether the method call succeeded.</summary>
+        <returns><see langword="true" /> if the method returned successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="handle" /> or <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryLoad">
@@ -196,11 +232,12 @@
         <Parameter Name="handle" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="libraryPath">To be added.</param>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="libraryPath">The name of the native library to be loaded.</param>
+        <param name="handle">When the method returns, the handle of the loaded native library.</param>
+        <summary>Provides a simple API for loading a native library and returns a value that indicates whether the operation succeeded.</summary>
+        <returns><see langword="true" /> if the native library was loaded successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="libraryPath" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryLoad">
@@ -224,13 +261,15 @@
         <Parameter Name="handle" Type="System.IntPtr" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="libraryName">To be added.</param>
-        <param name="assembly">To be added.</param>
-        <param name="searchPath">To be added.</param>
-        <param name="handle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="libraryName">The name of the native library to be loaded.</param>
+        <param name="assembly">The assembly loading the native library.</param>
+        <param name="searchPath">The search path.</param>
+        <param name="handle">When the method returns, the handle of the loaded native library.</param>
+        <summary>Provides a high-level API that loads a native library and returns a value that indicates whether the operation succeeded.</summary>
+        <returns><see langword="true" /> if the load operation was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="libraryPath" /> or <paramref name="assembly" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="assembly" /> is not a <see langword="RuntimeAssembly" />.</exception>
       </Docs>
     </Member>
   </Members>

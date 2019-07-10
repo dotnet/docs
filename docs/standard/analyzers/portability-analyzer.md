@@ -15,7 +15,7 @@ Want to make your libraries multi-platform? Want to see how much work is require
 * .[NET Standard](../../standard/net-standard.md): Includes the .NET Standard APIs available on all .NET implementations. If your goal is to make your library to run on all .NET supported platforms, this is recommended target.  
 * [ASP.NET Core](/aspnet/core): A modern web-framework built on .NET Core. If your goal is to port your web app to .NET Core to support multiple platforms, this is the recommended target.
 * .NET Core + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Core APIs in addition to the Windows Compatibility Pack, which provides many of .NET Framework available technologies, so it's much easier to build .NET Core applications and .NET Core libraries. If your first step porting goal is porting your app from .NET Framework to .NET Core on Windows, this is recommended target.  
-* .NET Standard + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Standard APIs in addition to the Windows Compatibility Pack, which provides many of .NET Framework available technologies, so it's much easier to build .NET Standard libraries. If your first step porting goal is porting your library from .NET Framework to .NET Core on Windows, this is recommended target.  
+* .NET Standard + [Platform Extensions](../../core/porting/windows-compat-pack.md): Includes the .NET Standard APIs in addition to the Windows Compatibility Pack, which provides many of the .NET Framework available technologies. This is a recommended target for porting your library from .NET Framework to .NET Core on Windows.
 
 ## How to use the .NET Portability Analyzer
 

@@ -8,3 +8,4 @@
 |Version|4.5.1|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Windows.Data.BindingMode.TwoWay?displayProperty=nameWithType></li></ul>|
+

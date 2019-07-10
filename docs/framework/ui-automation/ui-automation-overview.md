@@ -22,7 +22,7 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] provides full functionality in [!INCLUDE[TLA#tla_longhorn](../../../includes/tlasharptla-longhorn-md.md)], [!INCLUDE[TLA#tla_winxp](../../../includes/tlasharptla-winxp-md.md)], and [!INCLUDE[TLA2#tla_winnetsvrfam](../../../includes/tla2sharptla-winnetsvrfam-md.md)].  
   
- UI Automation providers offer some support for [!INCLUDE[TLA#tla_aa](../../../includes/tlasharptla-aa-md.md)] client applications, through a built-in bridging service.  
+ UI Automation providers offer some support for Microsoft Active Accessibility client applications, through a built-in bridging service.  
   
 <a name="Providers_and_Clients"></a>   
 ## Providers and Clients  

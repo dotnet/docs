@@ -8,3 +8,4 @@
 |Version|4.6.1|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Windows.Controls.VirtualizingStackPanel?displayProperty=nameWithType></li></ul>|
+

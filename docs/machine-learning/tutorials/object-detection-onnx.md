@@ -440,31 +440,31 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
 
 1. Define constant and fields.
 
-```csharp
-public const int ROW_COUNT = 13;
-public const int COL_COUNT = 13;
-public const int CHANNEL_COUNT = 125;
-public const int BOXES_PER_CELL = 5;
-public const int BOX_INFO_FEATURE_COUNT = 5;
-public const int CLASS_COUNT = 20;
-public const float CELL_WIDTH = 32;
-public const float CELL_HEIGHT = 32;
+    ```csharp
+    public const int ROW_COUNT = 13;
+    public const int COL_COUNT = 13;
+    public const int CHANNEL_COUNT = 125;
+    public const int BOXES_PER_CELL = 5;
+    public const int BOX_INFO_FEATURE_COUNT = 5;
+    public const int CLASS_COUNT = 20;
+    public const float CELL_WIDTH = 32;
+    public const float CELL_HEIGHT = 32;
 
-private int channelStride = ROW_COUNT * COL_COUNT;
-```
+    private int channelStride = ROW_COUNT * COL_COUNT;
+    ```
 
-- `ROW_COUNT` is the number of rows in the grid the image is divided into.
-- `COL_COUNT` is the number of columns in the grid the image is divided into.
-- `CHANNEL_COUNT` is the total number of values contained in one cell of the grid.
-- `BOXES_PER_CELL` is the number of bounding boxes in a cell,
-- `BOX_INFO_FEATURE_COUNT` is the number of features contained within a box (x,y,height,width,confidence).
-- `CLASS_COUNT` is the number of class predictions contained in each bounding box.
-- `CELL_WIDTH` is the width of one cell in the image grid.
-- `CELL_HEIGHT` is the height of one cell in the image grid.
-- `channelStride` is the starting position of the current cell in the grid.
+    - `ROW_COUNT` is the number of rows in the grid the image is divided into.
+    - `COL_COUNT` is the number of columns in the grid the image is divided into.
+    - `CHANNEL_COUNT` is the total number of values contained in one cell of the grid.
+    - `BOXES_PER_CELL` is the number of bounding boxes in a cell,
+    - `BOX_INFO_FEATURE_COUNT` is the number of features contained within a box (x,y,height,width,confidence).
+    - `CLASS_COUNT` is the number of class predictions contained in each bounding box.
+    - `CELL_WIDTH` is the width of one cell in the image grid.
+    - `CELL_HEIGHT` is the height of one cell in the image grid.
+    - `channelStride` is the starting position of the current cell in the grid.
 
 
-When the model scores an image, it divides the `416px x 416px`input into a grid of cells the size of `13 x 13`. Each cell contains is `32px x 32px`. Within each cell, there are 5 bounding boxes each containing 5 features (x, y, width, height, confidence). In addition, each bounding box contains the probability of each of the classes which in this case is 20. Therefore, each cell contains 125 pieces of information (5 features + 20 class probabilities). 
+    When the model scores an image, it divides the `416px x 416px`input into a grid of cells the size of `13 x 13`. Each cell contains is `32px x 32px`. Within each cell, there are 5 bounding boxes each containing 5 features (x, y, width, height, confidence). In addition, each bounding box contains the probability of each of the classes which in this case is 20. Therefore, each cell contains 125 pieces of information (5 features + 20 class probabilities). 
 
 Create a list of anchors below `channelStride` for all 5 bounding boxes:
 

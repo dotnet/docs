@@ -45,7 +45,7 @@ In many technologies, elements and components are organized in a tree structure 
   
 <a name="override_logical_tree"></a>   
 ### Overriding the Logical Tree  
- Advanced control authors can override the logical tree by overriding several [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] that define how a general object or content model adds or removes objects within the logical tree. For an example of how to override the logical tree, see [Override the Logical Tree](how-to-override-the-logical-tree.md).  
+ Advanced control authors can override the logical tree by overriding several APIs that define how a general object or content model adds or removes objects within the logical tree. For an example of how to override the logical tree, see [Override the Logical Tree](how-to-override-the-logical-tree.md).  
   
 <a name="pvi"></a>   
 ### Property Value Inheritance  

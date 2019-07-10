@@ -70,7 +70,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
 
 ### To host the ActiveX control
 
-1. In the HostingAxInWpf project, add a reference to the generated [!INCLUDE[TLA2#tla_actx](../../../../includes/tla2sharptla-actx-md.md)] interoperability assembly.
+1. In the HostingAxInWpf project, add a reference to the generated ActiveX interoperability assembly.
 
      This assembly is named AxInterop.WMPLib.dll and was added to the Debug folder of the WmpAxLib project when you imported the Windows Media Player control.
 

@@ -89,20 +89,57 @@ For example: SDK version 2.2.302 is the second patch release of the third featur
 Some of the packages include part of the version number in their name. This allows you to install a specific version.
 The rest of the version isn't included in the version name. This allows the OS package manager to update the packages (for example, automatically installing security fixes). Supported package managers are Linux specific.
 
-The following table shows the recommended packages:
+The following lists the recommended packages:
 
-| Name                               | Example            | Use case: Install ...           | Contains         | Dependencies                       | Version            |
-|------------------------------------|--------------------|---------------------------------|------------------|------------------------------------|--------------------|
-| dotnet-sdk-[major]                 | dotnet-sdk-2       | Latest sdk for runtime major    |                  | dotnet-sdk-[major].[latestminor]   | \<sdk version>     |
-| dotnet-sdk-[major].[minor]         | dotnet-sdk-2.1     | Latest sdk for specific runtime | (3),(4)          | aspnetcore-runtime-[major].[minor], dotnet-netcoreapp-targeting-pack[major].[minor], dotnet-aspnetcore-targeting-pack[major].[minor], dotnet-netstandard-targeting-pack-[netst_major].[netstd_minor], dotnet-apphost-pack-[major].[minor] | \<sdk version>     |
-| aspnetcore-runtime-[major].[minor] | aspnetcore-runtime-2.1 | Specific ASP.NET Core runtime | (6),[(7)]      | dotnet-runtime-[major].[minor]     | \<runtime version> |
-| dotnet-runtime-[major].[minor]     | dotnet-runtime-2.1 | Specific runtime                | (5)              | dotnet-hostfxr:\<runtime version>+ | \<runtime version> |
-| dotnet-hostfxr                     | dotnet-hostfxr     | _dependency_                    | (2)              | host:\<runtime version>+           | \<runtime version> |
-| dotnet-host                        | dotnet-host        | _dependency_                    | (1),(8),(9),(10) |                                    | \<runtime version> |
-| dotnet-apphost-pack-[major].[minor]|                    | _dependency_                    | (13)             |                                    | \<pack version>    |
-| dotnet-targeting-pack-[major].[minor]     |             | _dependency_                    | (12)             |                                    | \<pack version>    |
-| aspnetcore-targeting-pack-[major].[minor] |             | _dependency_                    | (11)             |                                    | \<pack version>    |
-| netstandard-targeting-pack-[netst_major].[netst_minor] || _dependency_                    | (15)             |                                    | \<pack version>    |
+* `dotnet-sdk-[major]` - Installs latest sdk for runtime major
+  * **Version:** \<sdk version>
+  * **Example:** dotnet-sdk-2
+  * **Dependencies:** `dotnet-sdk-[major].[latestminor]`
+
+* `dotnet-sdk-[major].[minor]` - Installs latest sdk for specific runtime
+  * **Version:** \<runtime version>
+  * **Example:** dotnet-sdk-2.1
+  * **Contains:** (3),(4)
+  * **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-netcoreapp-targeting-pack[major].[minor]`, `dotnet-aspnetcore-targeting-pack[major].[minor]`, `dotnet-netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`
+
+* `aspnetcore-runtime-[major].[minor]` - Installs specific ASP.NET Core runtime
+  * **Version:** \<aspnetcore runtime version>
+  * **Example:** aspnetcore-runtime-2.1
+  * **Contains:** (6),(7)
+  * **Dependencies:** `dotnet-runtime-[major].[minor]`
+
+* `dotnet-runtime-[major].[minor]` - Installs specific runtime
+  * **Version:** \<runtime version>
+  * **Example:** dotnet-runtime-2.1
+  * **Contains:** (5)
+  * **Dependencies:** `dotnet-hostfxr:<runtime version>+`
+
+* `dotnet-hostfxr` - dependency
+  * **Version:** \<runtime version>
+  * **Example:** dotnet-hostfxr
+  * **Contains:** (2)
+  * **Dependencies:** `host:<runtime version>+`
+
+* `dotnet-host` - dependency
+  * **Version:** \<runtime version>
+  * **Example:** dotnet-host
+  * **Contains:** (1),(8),(9),(10)
+
+* `dotnet-apphost-pack-[major].[minor]` - dependency
+  * **Version:** \<runtime version>
+  * **Contains:** (13)
+
+* `dotnet-targeting-pack-[major].[minor]` - allows targeting a non-latest runtime
+  * **Version:** \<runtime version>
+  * **Contains:** (12)
+
+* `aspnetcore-targeting-pack-[major].[minor]` - allows targeting a non-latest runtime
+  * **Version:** \<aspnetcore runtime version>
+  * **Contains:** (11)
+
+* `netstandard-targeting-pack-[major].[minor]` - allows targeting a netstandard version
+  * **Version:** \<netstandard version>
+  * **Contains:** (15)
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

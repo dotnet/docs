@@ -139,7 +139,7 @@ public void TransferFunds(Account from, Account to, decimal amount)
 ```
 
 ```vb
-Public Sub TransferFunds(from As Account, to As Account, amount As Decimal)
+Public Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
     from.Withdrawal(amount)
     ' If the deposit fails, the withdrawal shouldn't remain in effect.
     [to].Deposit(amount)

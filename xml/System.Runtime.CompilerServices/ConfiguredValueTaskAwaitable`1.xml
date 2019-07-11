@@ -32,8 +32,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the produced result.</typeparam>
+    <summary>Provides an awaitable type that enables configured awaits on a <see cref="T:System.Threading.Tasks.ValueTask`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -64,8 +64,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an awaiter for this <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" /> instance.</summary>
+        <returns>The awaiter for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

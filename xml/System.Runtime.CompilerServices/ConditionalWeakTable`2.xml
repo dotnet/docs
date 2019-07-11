@@ -232,10 +232,11 @@
         <Parameter Name="value" Type="TValue" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The key to add or update. May not be <see langword="null" />.</param>
+        <param name="value">The value to associate with <paramref name="key" />.</param>
+        <summary>Adds the key and value if the key doesn't exist, or updates the existing key's value if it does exist.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -266,7 +267,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all the key/value pairs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

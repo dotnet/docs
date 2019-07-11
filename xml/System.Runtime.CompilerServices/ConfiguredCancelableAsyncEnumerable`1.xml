@@ -27,7 +27,7 @@
   </Attributes>
   <Docs>
     <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <summary>Provides an awaitable async enumerable that enables cancelable iteration and configured awaits.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,10 +54,14 @@
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="continueOnCapturedContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="continueOnCapturedContext"><see langword="true" /> to capture and marshal back to the current context; otherwise, <see langword="false" />.</param>
+        <summary>Configures how awaits on the tasks returned from an async iteration will be performed.</summary>
+        <returns>The configured enumerable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This will replace any previous value set by <xref:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.ConfigureAwait(System.Boolean)> for this iteration.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAsyncEnumerator">
@@ -108,10 +112,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="cancellationToken">The cancellation token to use.</param>
+        <summary>Sets the <see cref="T:System.Threading.CancellationToken" /> to be passed to <see cref="M:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)" /> when iterating.</summary>
+        <returns>The configured enumerable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This will replace any previous <xref:System.Threading.CancellationToken> set by <xref:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.WithCancellation(System.Threading.CancellationToken)> for this iteration.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

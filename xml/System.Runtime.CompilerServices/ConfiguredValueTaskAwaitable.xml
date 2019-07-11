@@ -26,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an awaitable type that enables configured awaits on a <see cref="T:System.Threading.Tasks.ValueTask" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,8 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an awaiter for this <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable" /> instance.</summary>
+        <returns>The awaiter for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

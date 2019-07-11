@@ -39,7 +39,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides an awaiter for a <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,8 +70,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the result of the <see cref="T:System.Threading.Tasks.ValueTask`1" />.</summary>
+        <returns>The result of the <see cref="T:System.Threading.Tasks.ValueTask`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +101,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" /> has completed.</summary>
+        <value><see langword="true" /> if the <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" /> has completed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +138,8 @@
         <Parameter Name="continuation" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="continuation">The continuation action for the <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" />.</param>
+        <summary>Schedules the continuation action for the <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +175,8 @@
         <Parameter Name="continuation" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="continuation">The continuation action for the <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" />.</param>
+        <summary>Schedules the continuation action for the <see cref="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

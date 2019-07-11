@@ -22,39 +22,14 @@ In this part of the series you'll learn how to:
 
 ## Prerequisites
 
-If you have already completed [part 1](cli-templates-create-item-template.md) of this tutorial series, you can skip this section. Just remember to open a terminal and navigate to the _working\templates\\_ folder.
-
-* Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later.
-
-* Create the "working folder" structure used by this tutorial.
-
-  Create a new working folder to contain your work during this tutorial. This tutorial will refer to that folder as the _working_ folder. This folder should have a single subfolder named _templates_.
-
-  ```console
-  working
-  └───templates
-  ```
-
-* Additionally, create a temporary folder where you can test your templates. This tutorial will refer to that folder as the _test_ folder. This folder **shouldn't** be under the _working_ folder. As an example, you can create the _test_ folder as a sibling of the _working_ folder.
-
-  ```console
-  parent_folder
-  ├───test
-  └───working
-      └───templates
-  ```
-
-* Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
-
-  The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
-
+* Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
 * Open a terminal and navigate to the _working\templates\\_ folder.
 
 ## Create a project template
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET Core includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 8.0 and produces an `async main` entry point.
 
-Open a terminal and navigate to the _working\templates\\_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
+In your terminal, navigate to the _working\templates\\_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
 
 ```console
 working
@@ -152,7 +127,7 @@ This config file contains all of the settings for your template. You can see the
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. Open your terminal and from the _consoleasync_ folder, run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./`.
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./`.
 
 This command outputs the list of templates installed, which should include yours.
 

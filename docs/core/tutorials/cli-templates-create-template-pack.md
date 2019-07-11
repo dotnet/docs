@@ -25,21 +25,6 @@ In this part of the series you'll learn how to:
 
   This tutorial uses the two templates created in the first two parts of this tutorial. It's possible you can use a different template as long as you copy the template as a folder into the _working\templates\\_ folder.
 
-* Install the [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later.
-
-* Create the "working folder" structure used by this tutorial.
-
-  Create a new working folder to contain your work during this tutorial. This tutorial will refer to that folder as the _working_ folder. This folder should have a single subfolder named _templates_.
-
-  ```console
-  working
-  └───templates
-  ```
-
-* Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
-
-  The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
-
 * Open a terminal and navigate to the _working\templates\\_ folder.
 
 ## Create a template pack project
@@ -52,7 +37,7 @@ Normally you use a C# project file to compile code and produce a binary. However
 
 The pack you'll create will include the [item template](cli-templates-create-item-template.md) and [package template](cli-templates-create-project-template.md) previously created. Because we grouped the two templates into the _working\templates\\_ folder, we can use the _working_ folder for the _.csproj_ file.
 
-Open your terminal and navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
+In your terminal, navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
 
 ```console
 dotnet new console -n templatepack -o .

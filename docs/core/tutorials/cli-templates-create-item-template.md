@@ -23,35 +23,32 @@ In this part of the series, you'll learn how to:
 ## Prerequisites
 
 * [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later versions.
-* Create the "working folder" structure used by this tutorial.
-
-  Create a new working folder to contain your work during this tutorial. This tutorial will refer to that folder as the _working_ folder. This folder should have a single subfolder named _templates_.
-
-  ```console
-  working
-  └───templates
-  ```
-
-* Additionally, create a temporary folder where you can test your templates. This tutorial will refer to that folder as the _test_ folder. This folder **shouldn't** be under the _working_ folder. As an example, you can create the _test_ folder as a sibling of the _working_ folder.
-
-  ```console
-  parent_folder
-  ├───test
-  └───working
-      └───templates
-  ```
-
 * Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
 * Open a terminal and navigate to the _working\templates\\_ folder.
 
+## Create the required folders
+
+This series uses a "working folder" where your template source is contained and a "testing folder" used to test your templates. The working folder and testing folder should be under the same parent folder.
+
+First, create the parent folder, the name does not matter. Then, create a subfolder named _working_. Inside of the _working_ folder, create a subfolder named _templates_.
+
+Next, create a folder under the parent folder named _test_. The folder structure should look like the following:
+
+```console
+parent_folder
+├───test
+└───working
+    └───templates
+```
+
 ## Create an item template
 
 An item template is a specific type of template that contains one or more files. These types of templates are useful when you want to generate something like a config, code, or solution file. In this example, you'll create a class that adds an extension method to the string type.
 
-Open a terminal and navigate to the _working\templates\\_ folder and create a new subfolder named _extensions_. Enter the folder.
+In your terminal, navigate to the _working\templates\\_ folder and create a new subfolder named _extensions_. Enter the folder.
 
 ```console
 working
@@ -117,10 +114,10 @@ This config file contains all the settings for your template. You can see the ba
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Open your terminal and from the _extensions_ folder, run the following command to install the template located at the current folder:
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. In your terminal, navigate to the  _extensions_ folder and run the following command to install the template located at the current folder:
 
-- **On Windows**: `dotnet new -i .\`
-- **On Linux or macOS**: `dotnet new -i ./` 
+* **On Windows**: `dotnet new -i .\`
+* **On Linux or macOS**: `dotnet new -i ./`
 
 This command outputs the list of templates installed, which should include yours.
 

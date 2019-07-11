@@ -7,7 +7,6 @@ f1_keywords:
   - "object"
   - "delegate_CSharpKeyword"
   - "delegate"
-  - "CS0123"
   - "dynamic_CSharpKeyword"
   - "string"
   - "string_CSharpKeyword"
@@ -22,18 +21,17 @@ helpviewer_keywords:
   - "string literals [C#]"
   - "string keyword [C#]"
 ---
+# Built-in reference types (C# reference)
 
-# Built-in reference types
-
-A number of reference types are built-in in C#. They have keywords or operators that are synonyms for a type in the .NET library. 
+C# has a number of built-in reference types. They have keywords or operators that are synonyms for a type in the .NET library. 
 
 ## The object type
 
-The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type to variables of type `object`. When a variable of a value type is converted to object, it is said to be *boxed*. When a variable of type object is converted to a value type, it is said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md). Any `object` variable can be assigned to its default value using the literal `null`.
+The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it is said to be *boxed*. When a variable of type object is converted to a value type, it is said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md). 
 
 ## The dynamic type
 
-The `dynamic` type enables the operations in which it occurs to bypass compile-time type checking. Instead, these operations are resolved at run time. The `dynamic` type simplifies access to COM APIs such as the Office Automation APIs, and also to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).
+The `dynamic` type enables the operations in which it occurs to bypass compile-time type checking. Instead, these operations are resolved at run time. The `dynamic` type simplifies access to COM APIs such as the Office Automation APIs, to dynamic APIs such as IronPython libraries, and to the HTML Document Object Model (DOM).
 
 Type `dynamic` behaves like type `object` in most circumstances. In particular, any non-null expression can be converted to the `dynamic` type. The `dynamic` type differs from `object` in that operations that contain expressions of type `dynamic` are not resolved or type checked by the compiler. The compiler packages together information about the operation, and that information is later used to evaluate the operation at run time. As part of the process, variables of type `dynamic` are compiled into variables of type `object`. Therefore, type `dynamic` exists only at compile time, not at run time.
 
@@ -65,7 +63,7 @@ The following example uses `dynamic` in several declarations. The `Main` method 
 
 The `string` type represents a sequence of zero or more Unicode characters. `string` is an alias for <xref:System.String?displayProperty=nameWithType> in .NET.
 
-Although `string` is a reference type, the equality operators (`==` and `!=`) are defined to compare the values of `string` objects, not references. This makes testing for string equality more intuitive. For example:
+Although `string` is a reference type, the [equality operators `==` and `!=`](../operators/equality-operators.md#string-equality) are defined to compare the values of `string` objects, not references. This makes testing for string equality more intuitive. For example:
 
 ```csharp
 string a = "hello";
@@ -73,12 +71,12 @@ string b = "h";
 // Append to contents of 'b'
 b += "ello";
 Console.WriteLine(a == b);
-Console.WriteLine((object)a == (object)b);
+Console.WriteLine(object.ReferenceEquals(a, b));
 ```
 
-This displays "true" and then "false" because the content of the strings are equivalent, but `a` and `b` do not refer to the same string instance.
+This displays "True" and then "False" because the content of the strings are equivalent, but `a` and `b` do not refer to the same string instance.
 
-The + operator concatenates strings:
+The [+ operator](../operators/addition-operator.md#string-concatenation) concatenates strings:
 
 ```csharp
 string a = "good " + "morning";
@@ -93,7 +91,7 @@ string b = "h";
 b += "ello";
 ```
 
-The `[]` [operator](../operators/member-access-operators#indexer-operator-) can be used for readonly access to individual characters of a `string`:
+The `[]` [operator](../operators/member-access-operators.md#indexer-operator-) can be used for readonly access to individual characters of a `string`:
 
 ```csharp
 string str = "test";
@@ -122,7 +120,7 @@ String literals can contain any character literal. Escape sequences are included
 
 ```csharp
 string a = "\\\u0066\n";
-Console.WriteLine(a);
+Console.WriteLine(a);        \\ output: \f
 ```
 
 > [!NOTE]
@@ -168,9 +166,7 @@ The delegate must be instantiated with a method or lambda expression that has a 
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
-- [is](../operators/type-testing-and-conversion-operators.md#is-operator)
-- [as](../operators/type-testing-and-conversion-operators.md#as-operator)
-- [typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator)
+- [Type-testing and conversion operators](../operators/type-testing-and-conversion-operators.md)
 - [How to: safely cast using pattern matching and the as and is operators](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md)
 - [Walkthrough: creating and using dynamic objects](../../programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)
 - <xref:System.Object?displayProperty=nameWithType>

@@ -51,7 +51,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 ## Remarks  
  Using this element in your application configuration file enables arrays that are larger than 2 GB in size, but does not change other limits on object size or array size:  
   
-- The maximum number of elements in an array is <xref:System.UInt32.MaxValue?displayProperty=nameWithType>.  
+- The maximum number of elements in an array is <xref:System.Int32.MaxValue?displayProperty=nameWithType>.  
   
 - The maximum index in any single dimension is 2,147,483,591 (0x7FFFFFC7) for byte arrays and arrays of single-byte structures, and 2,146,435,071 (0X7FEFFFFF) for other types.  
   
@@ -71,6 +71,10 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 </configuration>  
 ```  
   
+## Supported in
+
+.NET Framework 4.5 and later versions
+
 ## See also
 
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)

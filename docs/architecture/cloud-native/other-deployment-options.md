@@ -20,7 +20,7 @@ To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/
 
 Creating a container instance from the registry just requires specifying the usual Azure settings (name, subscription, resource group, and location) as well as how much memory to allocate to the container and which port it should listen on. Figure 2-18 shows the Azure Portal form used to create the new instance.
 
-![ACR Run Instance Create container instance](./media/acr-create-deeplink.png)
+![ACR Run Instance Create container instance](./media/acr-create-deeplink.png) \
 **Figure 2-18**. ACR Run Instance Create container instance
 
 Once the deployment completes, you can find the newly deployed container's IP address and communicate with it over the port you specified.

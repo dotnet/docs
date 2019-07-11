@@ -11,7 +11,7 @@ Containers provide many benefits, one of which is portability. You can easily ta
 
 Azure Container Registry lets you build, store, and manage images for all of your container deployments. You can [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 2-13 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
 
-![Create container registry](media/create-container-registry.png)
+![Create container registry](media/create-container-registry.png) \
 **Figure 2-13**. Create container registry
 
 Once you've created a registry, you'll need to authenticate with it before you can use it. Typically, you'll log into the registry using the Azure CLI command:

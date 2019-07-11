@@ -100,7 +100,6 @@ Events provide a mechanism to publish or subscribe to notifications.
 - [Implement events declared in interfaces](../programming-guide/events/how-to-implement-interface-events.md).
 - [Conform to .NET Framework guidelines when your code publishes events](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
 - [Raise events defined in base classes from derived classes](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
-- [Store event instances in a dictionary](../programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md).
 - [Implement custom event accessors](../programming-guide/events/how-to-implement-custom-event-accessors.md).
 
 ## LINQ practices

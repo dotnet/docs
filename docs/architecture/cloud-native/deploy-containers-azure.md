@@ -70,7 +70,7 @@ This information is sufficient to get started. As part of the creation process i
 
 Figure 2-15 shows the basic form requirements in the Azure Portal to create a new Kubernetes cluster.
 
-![Create Kubernetes cluster](media/create-kubernetes-cluster.png)
+![Create Kubernetes cluster](media/create-kubernetes-cluster.png) \
 **Figure 2-15**. Create Kubernetes cluster
 
 ## Azure Dev Spaces

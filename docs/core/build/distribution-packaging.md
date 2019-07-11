@@ -112,11 +112,16 @@ The following lists the recommended packages:
   * **Contains:** (6),(7)
   * **Dependencies:** `dotnet-runtime-[major].[minor]`
 
+* `dotnet-runtime-deps-[major].[minor]` - Installs dependencies for running self-contained applications
+  * **Version:** \<runtime version>
+  * **Example:** dotnet-runtime-deps-2.1
+  * **Dependencies:** _distro specific dependencies_
+
 * `dotnet-runtime-[major].[minor]` - Installs specific runtime
   * **Version:** \<runtime version>
   * **Example:** dotnet-runtime-2.1
   * **Contains:** (5)
-  * **Dependencies:** `dotnet-hostfxr:<runtime version>+`
+  * **Dependencies:** `dotnet-hostfxr:<runtime version>+`, `dotnet-runtime-deps-[major].[minor]`
 
 * `dotnet-hostfxr` - dependency
   * **Version:** \<runtime version>

@@ -3842,9 +3842,10 @@ When you call the `Suspend` method on a thread, the system notes that a thread s
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET Core only: This member is not supported on the macOS and Linux platforms.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="state" /> is not a valid apartment state.</exception>
-        <exception cref="T:System.Threading.ThreadStateException">The thread has already been started.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The thread was started and has terminated, or the call is not being made from the thread's context while the thread is running.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="VolatileRead">

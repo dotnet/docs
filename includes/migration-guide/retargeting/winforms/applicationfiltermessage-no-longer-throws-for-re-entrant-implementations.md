@@ -8,3 +8,4 @@
 |Version|4.6.1|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Windows.Forms.Application.FilterMessage(System.Windows.Forms.Message@)?displayProperty=nameWithType></li></ul>|
+

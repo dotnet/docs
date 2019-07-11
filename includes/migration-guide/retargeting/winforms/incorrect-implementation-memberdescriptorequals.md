@@ -8,3 +8,4 @@
 |Version|4.6.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.ComponentModel.MemberDescriptor.Equals(System.Object)?displayProperty=nameWithType></li></ul>|
+

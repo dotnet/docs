@@ -8,3 +8,4 @@
 |Version|4.6|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=nameWithType></li></ul>|
+

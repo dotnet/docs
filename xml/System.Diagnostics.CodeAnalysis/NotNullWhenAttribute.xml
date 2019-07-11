@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies that when a method returns <see cref="P:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue" />, the parameter will not be <see langword="null" /> even if the corresponding type allows it.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,8 +39,8 @@
         <Parameter Name="returnValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="returnValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="returnValue">The return value condition. If the method returns this value, the associated parameter will not be <see langword="null" />.</param>
+        <summary>Initializes the attribute with the specified return value condition.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the return value condition.</summary>
+        <value>The return value condition. If the method returns this value, the associated parameter will not be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

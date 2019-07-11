@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies that the method will not return if the associated <see cref="T:System.Boolean" /> parameter is passed the specified value.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,8 +39,8 @@
         <Parameter Name="parameterValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="parameterValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterValue">The condition parameter value. Code after the method is considered unreachable by diagnostics if the argument to the associated parameter matches this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute" /> class with the specified parameter value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the condition parameter value.</summary>
+        <value>The condition parameter value. Code after the method is considered unreachable by diagnostics if the argument to the associated parameter matches this value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

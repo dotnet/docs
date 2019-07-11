@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies that the output will be non-null if the named parameter is non-null.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,8 +39,8 @@
         <Parameter Name="parameterName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="parameterName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterName">The associated parameter name.  The output will be non-null if the argument to the parameter specified is non-null.</param>
+        <summary>Initializes the attribute with the associated parameter name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the associated parameter name.</summary>
+        <value>The associated parameter name. The output will be non-null if the argument to the parameter specified is non-null.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

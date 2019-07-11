@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides static methods that convert chunked data between UTF-8 and UTF-16 encodings.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,15 +41,29 @@
         <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="destination">To be added.</param>
-        <param name="charsRead">To be added.</param>
-        <param name="bytesWritten">To be added.</param>
-        <param name="replaceInvalidSequences">To be added.</param>
-        <param name="isFinalBlock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">A UTF-16 encoded read-only character span.</param>
+        <param name="destination">A UTF-8 encoded byte span.</param>
+        <param name="charsRead">When the method returns, the number of characters read from <paramref name="source" />.</param>
+        <param name="bytesWritten">When the method returns, the number of characters written to <paramref name="destination" />.</param>
+        <param name="replaceInvalidSequences"><see langword="true" /> to replace invalid UTF-16 sequences in <paramref name="source" /> with U+FFFD; <see langword="false" /> to return <see cref="F:System.Buffers.OperationStatus.InvalidData" /> if invalid characters are found in <paramref name="source" />.</param>
+        <param name="isFinalBlock"><see langword="true" /> if the method should not return <see cref="F:System.Buffers.OperationStatus.InvalidData" />; otherwise, <see langword="false" />.</param>
+        <summary>Converts a UTF-16 character span to a UTF-8 encoded byte span.</summary>
+        <returns>A value that indicates that status of the conversion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+### Remarks
+
+This method corresponds to the [UTFEncoding.GetBytes](xref:System.Text.UTF8Encoding.GetBytes%2A) method, except that it has a different calling convention, different error handling mechanisms, and different performance characteristics. 
+
+If 'replaceInvalidSequences' is `true`, the method replaces any ill-formed subsequences in `source` with U+FFFD in `destination` and continues processing the remainder of the buffer. Otherwise, the method returns <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType> if it encounters any ill-formed sequences.
+
+If the method returns an error code, the out parameters indicate how much of the data was successfully transcoded, and the location of the ill-formed subsequence can be deduced from these values.
+
+If 'replaceInvalidSequences' is `true`, the method never returns <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType>. If 'isFinalBlock' is `true`, the method is never returns <xref:System.Buffers.OperationStatus.NeedMoreData?displayProperty=nameWithType>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToUtf16">
@@ -75,15 +89,29 @@
         <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="destination">To be added.</param>
-        <param name="bytesRead">To be added.</param>
-        <param name="charsWritten">To be added.</param>
-        <param name="replaceInvalidSequences">To be added.</param>
-        <param name="isFinalBlock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="source">A UTF-8 encoded read-only character span.</param>
+        <param name="destination">A UTF-8 encoded byte span..</param>
+        <param name="bytesRead">When the method returns, the number of bytes read from <paramref name="source" />.</param>
+        <param name="charsWritten">When the method returns, the number of characters written to <paramref name="destination" />.</param>
+        <param name="replaceInvalidSequences"><see langword="true" /> to replace invalid UTF-8 sequences in <paramref name="source" /> with U+FFFD; <see langword="false" /> to return <see cref="F:System.Buffers.OperationStatus.InvalidData" /> if invalid characters are found in <paramref name="source" />.</param>
+        <param name="isFinalBlock"><see langword="true" /> if the method should not return <see cref="F:System.Buffers.OperationStatus.InvalidData" />; otherwise, <see langword="false" />.</param>
+        <summary>Converts a UTF-8 encoded read-only byte span to a UTF-16 encoded character span.</summary>
+        <returns>A value that indicates the status of the conversion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+### Remarks
+
+This method corresponds to the [UTFEncoding.GetChars](xref:System.Text.UTF8Encoding.GetChars%2A) method, except that it has a different calling convention, different error handling mechanisms, and different performance characteristics. 
+
+If 'replaceInvalidSequences' is `true`, the method replaces any ill-formed subsequences in `source` with U+FFFD in `destination` and continues processing the remainder of the buffer. Otherwise, the method returns <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType> if it encounters any ill-formed sequences.
+
+If the method returns an error code, the out parameters indicate how much of the data was successfully transcoded, and the location of the ill-formed subsequence can be deduced from these values.
+
+If 'replaceInvalidSequences' is `true`, the method never returns <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType>. If 'isFinalBlock' is `true`, the method is never returns <xref:System.Buffers.OperationStatus.NeedMoreData?displayProperty=nameWithType>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

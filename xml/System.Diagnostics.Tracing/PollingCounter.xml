@@ -14,9 +14,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
-  </Docs>
+    <summary>Provides a variant of <see cref="T:System.Diagnostics.Tracing.EventCounter" /> that collects and calculates similar statistics as <see cref="T:System.Diagnostics.Tracing.EventCounter" />.</summary>
+      <remarks>  
+        <format type="text/markdown"><![CDATA[  
+
+`PollingCounter` differs from <see cref="T:System.Diagnostics.Tracing.EventCounter" /> in that it takes a callback function to collect metrics on its own rather than requiring the user to call <see cref="M:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Double)" /> every time.
+
+      ]]></format>
+      </remarks>
+    </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PollingCounter (string name, System.Diagnostics.Tracing.EventSource eventSource, Func&lt;double&gt; metricProvider);" />
@@ -35,11 +41,17 @@
         <Parameter Name="metricProvider" Type="System.Func&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="eventSource">To be added.</param>
+        <param name="name">The name for this <see cref="T:System.Diagnostics.Tracing.PollingCounter" /> instance.</param>
+        <param name="eventSource">The event source.</param>
         <param name="metricProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.PollingCounter" /> class.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Polling counters live as long as the <see cref="T:System.Diagnostics.Tracing.EventSource" /> that they are attached to unless they are explicitly disposed.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

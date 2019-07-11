@@ -14,8 +14,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a variant of <see cref="T:System.Diagnostics.Tracing.EventCounter" /> for variables that are ever-increasing, such as the number of exceptions in the runtime.</summary>
+    <remarks>  
+      <format type="text/markdown"><![CDATA[  
+
+`IncrementingEventCounter` does not calculate statistics like mean or standard deviation because it only accumulates the counter value.
+
+    ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,10 +40,16 @@
         <Parameter Name="eventSource" Type="System.Diagnostics.Tracing.EventSource" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="eventSource">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name for this <see cref="T:System.Diagnostics.Tracing.IncrementingEventCounter" /> instance.</param>
+        <param name="eventSource">The event source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.IncrementingEventCounter" /> class.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Incrementing event counters live as long as the <see cref="T:System.Diagnostics.Tracing.EventSource" /> that they are attached to unless they are explicitly disposed.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRateTimeScale">
@@ -79,8 +91,8 @@
         <Parameter Name="increment" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="increment">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="increment">The value to increment the running total by.</param>
+        <summary>Adds a value to a running total that will be published by the counter at the next timer interval.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

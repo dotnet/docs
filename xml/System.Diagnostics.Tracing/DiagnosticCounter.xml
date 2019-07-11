@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary><see cref="T:System.Diagnostics.Tracing.DiagnosticCounter" /> is an abstract class that serves as the parent class for various Counter* classes, namely <see cref="T:System.Diagnostics.Tracing.EventCounter" />, <see cref="T:System.Diagnostics.Tracing.PollingCounter" />, <see cref="T:System.Diagnostics.Tracing.IncrementingEventCounter" />, and <see cref="T:System.Diagnostics.Tracing.IncrementingPollingCounter" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,9 +42,9 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The metadata key.</param>
+        <param name="value">The metadata value.</param>
+        <summary>Adds key-value metadata to the counter that will be included as a part of the payload</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,8 +89,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes the counter from the set that the <see cref="T:System.Diagnostics.Tracing.EventSource" /> will report on.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+After being disposed, this counter will do nothing, and its resources will be reclaimed when all references to it are removed. If an <see cref="T:System.Diagnostics.Tracing.EventCounter" /> is not explicitly disposed, it will be cleaned up automatically when the <see cref="T:System.Diagnostics.Tracing.EventSource" /> it is attached to dies.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="EventSource">

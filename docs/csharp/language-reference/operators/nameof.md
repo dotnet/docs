@@ -1,13 +1,13 @@
 ---
-title: "nameof  - C# Reference"
+title: "nameof operator - C# reference"
 ms.custom: seodec18
-ms.date: 06/16/2017
+ms.date: 07/12/2019
 f1_keywords:
   - "nameof_CSharpKeyword"
   - "nameof"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 ---
-# nameof (C# Reference)
+# nameof operator (C# reference)
 
 Used to obtain the simple (unqualified) string name of a variable, type, or member.
 
@@ -30,30 +30,6 @@ Validate parameters:
 void f(string s) {
     if (s == null) throw new ArgumentNullException(nameof(s));
 }
-```
-
-MVC Action links:
-
-```html
-<%= Html.ActionLink("Sign up",
-             @typeof(UserController),
-             @nameof(UserController.SignUp))
-%>
-```
-
-INotifyPropertyChanged:
-
-```csharp
-int p {
-    get { return this.p; }
-    set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too
-}
-```
-
-XAML dependency property:
-
-```csharp
-public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));
 ```
 
 Logging:
@@ -133,16 +109,11 @@ class C {
 
 In the examples you see that you can use a type name and access an instance method name.  You do not need to have an instance of the type, as required in evaluated expressions.  Using the type name can be very convenient in some situations, and since you are just referring to the name and not using instance data, you do not need to contrive an instance variable or expression.
 
-You can reference the members of a class in attribute expressions on the class.
+## C# language specification
 
-There is no way to get a signatures information such as "`Method1 (str, str)`".  One way to do that is to use an Expression, `Expression e = () => A.B.Method1("s1", "s2")`, and pull the MemberInfo from the resulting expression tree.
-
-## Language Specifications
-
-For more information, see [Nameof expressions](~/_csharplang/spec/expressions.md#nameof-expressions) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see the [Nameof expressions](~/_csharplang/spec/expressions.md#nameof-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [typeof](../operators/type-testing-and-conversion-operators.md#typeof-operator)
+- [C# reference](../index.md)
+- [C# operators](index.md)

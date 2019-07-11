@@ -212,8 +212,6 @@
         href: keywords/await.md
       - name: sizeof
         href: keywords/sizeof.md
-      - name: nameof
-        href: keywords/nameof.md
     - name: Access Keywords
       items:
       - name: base
@@ -338,6 +336,8 @@
     - name: ":: operator"
       href: operators/namespace-alias-qualifer.md
       displayName: "namespace alias qualifier"
+    - name: nameof operator
+      href: operators/nameof.md
     - name: new operator
       href: operators/new-operator.md
     - name: stackalloc operator

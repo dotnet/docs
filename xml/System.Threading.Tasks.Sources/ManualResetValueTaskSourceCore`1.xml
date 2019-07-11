@@ -21,8 +21,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the result of this manual-reset <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource`1" />.</typeparam>
+    <summary>Provides the core logic for implementing a manual-reset <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" /> or <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,9 +49,9 @@
         <Parameter Name="token" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="token">An opaque value that was provided to the <see cref="T:System.Threading.Tasks.ValueTask" /> constructor.</param>
+        <summary>Returns the result of the operation.</summary>
+        <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +78,9 @@
         <Parameter Name="token" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="token">An opaque value that was provided to the <see cref="T:System.Threading.Tasks.ValueTask" /> constructor.</param>
+        <summary>Gets the status of the operation.</summary>
+        <returns>A value that indicates the status of the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,11 +110,11 @@
         <Parameter Name="flags" Type="System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="token">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="continuation">The continuation to invoke when the operation has completed.</param>
+        <param name="state">The state object to pass to <paramref name="continuation" /> when it's invoked.</param>
+        <param name="token">An opaque value that was provided to the <see cref="T:System.Threading.Tasks.ValueTask" /> constructor.</param>
+        <param name="flags">The flags describing the behavior of the continuation.</param>
+        <summary>Schedules the continuation action for this operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Resets to prepare for the next operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,9 +163,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether to force continuations to run asynchronously.</summary>
+        <value><see langword="true" /> to force continuations to run asynchronously; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+Continuations may run asynchronously if this value is `false`, but they'll never run synchronously if it is `true`.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetException">
@@ -191,8 +197,8 @@
         <Parameter Name="error" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="error">The exception.</param>
+        <summary>Completes with an error.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +225,8 @@
         <Parameter Name="result" Type="TResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="result">The result.</param>
+        <summary>Completes with a successful result.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,8 +250,8 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the operation version.</summary>
+        <value>The operation version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

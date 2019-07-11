@@ -25,8 +25,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides flags passed from <see cref="T:System.Threading.Tasks.ValueTask" /> and <see cref="T:System.Threading.Tasks.ValueTask`1" /> to the <see langword="OnCompleted" /> method to control the behavior of a continuation.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+This value is passed from a <xref:System.Threading.Tasks.ValueTask> to the <xref:System.Threading.Tasks.Sources.IValueTaskSource.OnCompleted%2A> method, and from a <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> to the <xref:System.Threading.Tasks.Sources.IValueTaskSource`1.OnCompleted%2A?displayProperty=nameWithType> method.
+
+         ]]></format>
+         </remarks>
   </Docs>
   <Members>
     <Member MemberName="FlowExecutionContext">
@@ -53,7 +59,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary><see langword="OnCompleted" /> should capture the current <see cref="T:System.Threading.ExecutionContext" /> and use it to run the continuation.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -80,7 +86,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No requirements are placed on how the continuation is invoked.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseSchedulingContext">
@@ -107,7 +113,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary><see langword="OnCompleted" /> should capture the current scheduling context (the <see cref="T:System.Threading.SynchronizationContext" />)
+            and use it when queueing the continuation for execution.  If this glag is not set, the implementation
+            may choose to execute the continuation in an arbitrary location.</summary>
       </Docs>
     </Member>
   </Members>

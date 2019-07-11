@@ -20,7 +20,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the status of an <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" /> or <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation completed due to cancellation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Faulted">
@@ -75,7 +75,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation completed with an error.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -102,7 +102,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation has not yet completed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
@@ -129,7 +129,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The operation completed successfully.</summary>
       </Docs>
     </Member>
   </Members>

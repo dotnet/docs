@@ -18,7 +18,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an object that can be wrapped by a <see cref="T:System.Threading.Tasks.ValueTask" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,8 +48,8 @@
         <Parameter Name="token" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="token">An opaque value that was provided to the <see cref="T:System.Threading.Tasks.ValueTask" /> constructor.</param>
+        <summary>Gets the result of the <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +79,9 @@
         <Parameter Name="token" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="token">Opaque value that was provided to the <see cref="T:System.Threading.Tasks.ValueTask" />'s constructor.</param>
+        <summary>Gets the status of the current operation.</summary>
+        <returns>The status of the current operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,11 +114,11 @@
         <Parameter Name="flags" Type="System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags" />
       </Parameters>
       <Docs>
-        <param name="continuation">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="token">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="continuation">The continuation to invoke when the operation has completed.</param>
+        <param name="state">The state object to pass to <paramref name="continuation" /> when it's invoked.</param>
+        <param name="token">An opaque value that was provided to the <see cref="T:System.Threading.Tasks.ValueTask" />'s constructor.</param>
+        <param name="flags">The flags describing the behavior of the continuation.</param>
+        <summary>Schedules the continuation action for this <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

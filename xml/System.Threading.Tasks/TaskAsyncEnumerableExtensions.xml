@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of static methods for configuring task-related behaviors on asynchronous enumerables and disposables.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,10 +44,10 @@
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="continueOnCapturedContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The source async disposable.</param>
+        <param name="continueOnCapturedContext"><see langword="true" /> to capture and marshal back to the current context; otherwise, <see langword="false" />.</param>
+        <summary>Configures how awaits on the tasks returned from an async disposable are performed.</summary>
+        <returns>The configured async disposable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,11 +77,11 @@
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="continueOnCapturedContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the objects to iterate.</typeparam>
+        <param name="source">The source enumerable to iterate.</param>
+        <param name="continueOnCapturedContext"><see langword="true" /> to capture and marshal back to the current context; otherwise, <see langword="false" />.</param>
+        <summary>Configures how awaits on the tasks returned from an async iteration are performed.</summary>
+        <returns>The configured enumerable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,11 +110,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the objects to iterate.</typeparam>
+        <param name="source">The source enumerable to iterate.</param>
+        <param name="cancellationToken">The cancellation token to use.</param>
+        <summary>Sets the <see cref="T:System.Threading.CancellationToken" /> to be passed to <see cref="M:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)" /> when iterating.</summary>
+        <returns>The configured enumerable.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

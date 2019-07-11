@@ -110,7 +110,7 @@ Using a `ValueTask` instead of a <xref:System.Threading.Tasks.Task> introduces s
       </Parameters>
       <Docs>
         <param name="source">An object that represents the operation.</param>
-        <param name="token">An opaque value that is passed through to the <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource"/></param>
+        <param name="token">An opaque value that is passed through to the <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" /></param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask" /> class using the supplied <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" /> object that represents the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,9 +139,13 @@ Using a `ValueTask` instead of a <xref:System.Threading.Tasks.Task> introduces s
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask" />.</summary>        
+        <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask" />.</summary>
         <returns>The <see cref="T:System.Threading.Tasks.Task" /> object that is wrapped in this <see cref="T:System.Threading.Tasks.ValueTask" /> if one exists, or a new <see cref="T:System.Threading.Tasks.Task" /> object that represents the result.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method either returns the wrapped task object, if one exists, or it manufactures a new task object to represent the result.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -171,7 +175,7 @@ Using a `ValueTask` instead of a <xref:System.Threading.Tasks.Task> introduces s
       </Parameters>
       <Docs>
         <param name="continueOnCapturedContext">
-		  <see langword="true" /> to attempt to marshal the continuation back to the captured context; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to attempt to marshal the continuation back to the captured context; otherwise, <see langword="false" />.</param>
         <summary>Configures an awaiter for this value.</summary>
         <returns>The configured awaiter.</returns>
         <remarks>To be added.</remarks>
@@ -208,13 +212,13 @@ Using a `ValueTask` instead of a <xref:System.Threading.Tasks.Task> introduces s
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
 Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
 
  ]]></format>
-    </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -251,13 +255,13 @@ Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap t
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
 Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
 
  ]]></format>
-    </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -344,7 +348,11 @@ Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap t
         <summary>Gets a value that indicates whether this object represents a canceled operation.</summary>
         <value>
           <see langword="true" /> if this object represents a canceled operation; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+If the <xref:System.Threading.Tasks.ValueTask> is backed by a result or by a <xref:System.Threading.Tasks.Sources.IValueTaskSource>, this will always return `false`.  If it's backed by a <xref:System.Threading.Tasks.Task>, it'll return the value of the task's <xref:System.Threading.Tasks.Task.IsCanceled> property.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -467,13 +475,13 @@ Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap t
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask" /> values are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
 Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
 
  ]]></format>
-    </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -509,13 +517,13 @@ Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap t
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask" /> values are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
 Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap the same <xref:System.Threading.Tasks.Task> or the same pair of the <xref:System.Threading.Tasks.Sources.IValueTaskSource> object and the token.
 
  ]]></format>
-    </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Preserve">
@@ -542,8 +550,8 @@ Two <xref:System.Threading.Tasks.ValueTask> instances are equal when they wrap t
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a <see cref="T:System.Threading.Tasks.ValueTask"/> that may be used at any point in the future.</summary>
-        <returns>The preserved <see cref="T:System.Threading.Tasks.ValueTask"/>.</returns>
+        <summary>Gets a <see cref="T:System.Threading.Tasks.ValueTask" /> that may be used at any point in the future.</summary>
+        <returns>The preserved <see cref="T:System.Threading.Tasks.ValueTask" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

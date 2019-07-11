@@ -157,9 +157,9 @@ As such, the default choice for any asynchronous method should be to return a <x
         <Parameter Name="token" Type="System.Int16" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source.</param>
+        <param name="token">An opaque value that is passed to the <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class with a <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource`1" /> object that represents the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +192,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task`1" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask`1" />.</summary>
         <returns>The <see cref="T:System.Threading.Tasks.Task`1" /> object that is wrapped in this <see cref="T:System.Threading.Tasks.ValueTask`1" /> if one exists, or a new <see cref="T:System.Threading.Tasks.Task`1" /> object that represents the result.</returns>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method either returns the wrapped task object, if one exists, or it manufactures a new task object to represent the result.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -437,7 +441,11 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a canceled operation.</summary>
         <value>
           <see langword="true" /> if this object represents a canceled operation; otherwise, <see langword="false" />.</value>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+If the <xref:System.Threading.Tasks.ValueTask`1> is backed by a result or by a <xref:System.Threading.Tasks.Sources.IValueTaskSource`1>, this will always return `false`.  If it's backed by a <xref:System.Threading.Tasks.Task>, it'll return the value of the task's <xref:System.Threading.Tasks.Task.IsCanceled> property.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -636,8 +644,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.Threading.Tasks.ValueTask`1" /> that may be used at any point in the future.</summary>
+        <returns>A task object for future use.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

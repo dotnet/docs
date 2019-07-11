@@ -254,6 +254,7 @@
         <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
         <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
         <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetException">
@@ -303,7 +304,7 @@
         <summary>Transitions the underlying <see cref="T:System.Threading.Tasks.Task`1" /> into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state and binds a collection of exception objects to it.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="exceptions" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="exceptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">There are one or more null elements in <paramref name="exceptions" />.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
@@ -345,7 +346,7 @@
         <summary>Transitions the underlying <see cref="T:System.Threading.Tasks.Task`1" /> into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state and binds it to a specified exception.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
         <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
@@ -493,6 +494,7 @@
         </remarks>
         <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
         <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="TrySetCanceled">
@@ -602,7 +604,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="exceptions" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="exceptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">There are one or more null elements in <paramref name="exceptions" />.  
   
  -or-  
@@ -655,7 +657,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is <see langword="null" />.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
         <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
@@ -707,6 +709,7 @@
         </remarks>
         <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
         <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
       </Docs>
     </Member>
   </Members>

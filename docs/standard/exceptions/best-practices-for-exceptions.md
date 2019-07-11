@@ -167,7 +167,7 @@ private static void TransferFunds(Account from, Account to, decimal amount)
 ```
 
 ```vb
-Private Shared Sub TransferFunds(from As Account, to As Account, amount As Decimal)
+Private Shared Sub TransferFunds(from As Account, [to] As Account, amount As Decimal)
     Dim withdrawalTrxID As String = from.Withdrawal(amount)
     Try
         [to].Deposit(amount)

@@ -2883,8 +2883,8 @@
         <Parameter Name="newOut" Type="System.IO.TextWriter" />
       </Parameters>
       <Docs>
-        <param name="newOut">A stream that is the new standard output.</param>
-        <summary>Sets the <see cref="P:System.Console.Out" /> property to the specified <see cref="T:System.IO.TextWriter" /> object.</summary>
+        <param name="newOut">A text writer to be used as the new standard output.</param>
+        <summary>Sets the <see cref="P:System.Console.Out" /> property to target the <see cref="T:System.IO.TextWriter" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2897,7 +2897,7 @@
  [!code-csharp[System.Console.SetOut#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.setout/cs/source.cs#1)]
  [!code-vb[System.Console.SetOut#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.setout/vb/source.vb#1)]  
   
-   
+ The actual object returned by <xref:System.Console.Out%2A> may be a synchronized wrapper around the provided text writer.
   
 ## Examples  
  The following example illustrates the use of the <xref:System.Console.SetOut%2A> method. It replaces four consecutive space characters in a string with a tab character. To run it, you must supply two command line arguments. The first is the name of an existing text file to redirect the standard input stream to. The second is the name of a file to redirect the standard output stream to. This file need not exist. If it does, its contents will be overwritten.  

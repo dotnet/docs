@@ -18,8 +18,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a <see cref="P:System.Diagnostics.Activity.TraceId" /> whose format is based on a W3C standard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+
+The `ActivityTraceId` structure reflects the format that the W3C standard requires for the ID of the entire trace. It consists of 16 bytes, typically represented as 32 hexadecimal characters. An `ActivityTraceId` is returned by the <xref:System.Diagnostics.Activity.TraceId?displayProperty=nameWithtype> property.
+
+Because an `ActivityTraceId` is a structure that contains 16 bytes, it can be passed easily by reference. `ActivityTraceId` contains methods for converting to and from its hexadecimal string representation, tries to avoid changing formats until it has to, and caches its string representation after it is created. It is mostly useful as an exchange type.
+
+    ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CopyTo">
@@ -41,8 +49,8 @@
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="destination">The span to which the 16 bytes of the trace ID are to be copied.</param>
+        <summary>Copies the 16 bytes of the current <see cref="T:System.Diagnostics.ActivityTraceId" /> to a specified span.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,10 +73,11 @@
         <Parameter Name="idData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="idData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="idData">A read-only span of 16 bytes.</param>
+        <summary>Creates a new <see cref="T:System.Diagnostics.ActivityTraceId" /> value from a read-only span of 16 bytes.</summary>
+        <returns>The new trace ID.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="idData" /> does not contain eight bytes.</exception>        
       </Docs>
     </Member>
     <Member MemberName="CreateFromString">
@@ -90,10 +99,23 @@
         <Parameter Name="idData" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="idData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="idData">A span that contains 32 hexadecimal characters.</param>
+        <summary>Creates a new <see cref="T:System.Diagnostics.ActivityTraceId" /> value from a read-only span of 32 hexadecimal characters.</summary>
+        <returns>The new trace ID.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+`idData` can consist either of numbers and lower-case hexadecimal characters or of all zeros.
+
+         ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="idData" /> does not contain 16 hexadecimal characters.
+
+-or-
+
+The characters in <paramref name="idData" /> are not all lower-case hexadecimal characters or all zeros.
+
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFromUtf8String">
@@ -115,9 +137,9 @@
         <Parameter Name="idData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="idData">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="idData">A read-only span of UTF8-encoded bytes.</param>
+        <summary>Creates a new <see cref="T:System.Diagnostics.ActivityTraceId" /> value from a read-only span of UTF8-encoded bytes.</summary>
+        <returns>The new trace ID.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +160,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates a new <see cref="T:System.Diagnostics.ActivitySpanId" /> based on a random number (that is very likely to be unique).</summary>
+        <returns>The new span ID.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +311,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a 16-character hexadecimal string that represents this span ID.</summary>
+        <returns>The 32-character hecxadecimal string representation of this trace ID.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,8 +333,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a 32-aracter hexadecimal string that represents this trace ID.</summary>
+        <returns>The 32-character hecxadecimal string representation of this trace ID.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

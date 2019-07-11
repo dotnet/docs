@@ -141,8 +141,24 @@ If there is expensive setup for the notification, you can call this method and p
       <Docs>
         <param name="activity">To be added.</param>
         <param name="payload">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Transfers state from an activity to some event or operation, such as an outgoing HTTP request, that will occur outside the process.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+If an instumentation site is at a location where activities leave the process (such as outgoing HTTP requests), that site will want to transfer state from the activity to the outgoing request.
+
+To the extent possible, this should be done by the instrumenation site, because there is a contract between an <xref:System.Diagnostics.Activity> and the ougoing request logic at the instrumentation site.   However, the instrumenation site can't handle policy (for example, whether activity information should be disabled or written in an older format for compatibility reasons).
+For this, the instrumentation site needs to call back out to the logging system and ask it to resolve policy. This is the purpose of the `OnActivityExport` method.
+
+The `OnActivityExport` method is given the <xref:System.Diagnostics.Activity> as well as a payload object that represents the outgoing request. A <xref:System.Diagnostics.DiagnosticSource> subscriber then has the ability to update the outgoing request before it is sent.
+ 
+Note that this method is rarely used at instrumentation sites (only those sites that are on an outgoing boundary of the process).   Moreover, typically the default policy that the instrumenation site performs (for example, to transfer all activity state in a 
+particular outgoing convention) is likely to be fine. This method is only for cases where that is a problem. Thus, this method should be used very rarely and is mostly here for symetry with `OnActivityImport` and future-proofing.
+
+Note that `payload` is typed as an <xref:System.Object> here, but any particular instrumentation site and subscriber should know the type of the payload and thus cast and decode it if necessary.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivityImport">
@@ -164,10 +180,22 @@ If there is expensive setup for the notification, you can call this method and p
         <Parameter Name="payload" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="activity">To be added.</param>
-        <param name="payload">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="activity">The activity affected by an external event.</param>
+        <param name="payload">A payload that represents the incoming request.</param>
+        <summary>Transfers state to an activity from some event or operation, such as an incoming request, that occurred outside the process.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+If an instumentation site creates a new activity in response to some event outside the process, such as an incomming HTTP request), the `OnActivityImport` method allows that site will want to create a new activity and transfer state from the incoming request to the activity. 
+
+To the extent possible, this should be done by the instrumentation site, because there is a contract between the <xref:System.Diagnostics.Activity> and the incomming request logic at the instrumentation site.   However, the instrumentation site can't handle policy. (For example, if sampling is done, exactly which requests should be sampled?) In these cases, the instrumentation site needs to call back out to the logging system and ask it to resolve policy (for example, to decide if the activity's "sampling" bit should be set). This is the purpose of the `OnActivityImport` method. It is given the activity as well as a payload object that represents the incomming request. The subscribers to the <xref:System.Diagnostics.DiagnosticSource> then have the opportunity to update this activity as desired. 
+
+This method is rarely used at instrumentation sites (only those sites that are on the boundary of the process), and the instrumetation site implements some default policy (it sets the activity in *some* way), and so it is not necessary to override this method if that default policy is fine. In other words, this method should be overridden in very rare (but often important) cases.
+
+Note that `payload` is typed as <xref:System.Object> here, but any particular instrumentation site and subscriber will know the type of the payload and thus cast and decode it if necessary.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartActivity">

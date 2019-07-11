@@ -13,7 +13,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the format of the <see cref="P:System.Diagnostics.Activity.Id" /> property.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The hierarchical format.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -54,7 +54,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An unknown format.</summary>
       </Docs>
     </Member>
     <Member MemberName="W3C">
@@ -74,7 +74,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The W3C format.</summary>
       </Docs>
     </Member>
   </Members>

@@ -18,8 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies flags defined by the W3C standard that are associated with an activity.</summary>
+    <remarks>  
+      <format type="text/markdown"><![CDATA[  
+
+An `ActivityTraceFflags` value is returned by the <xref:System.Diagnostics.Activity.ActivityTraceFlags?displayProperty=nameWithtype> property.
+
+     ]]></format>
+     </remarks>
   </Docs>
   <Members>
     <Member MemberName="None">

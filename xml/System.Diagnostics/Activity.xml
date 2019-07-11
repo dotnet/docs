@@ -17,8 +17,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an operation with context to be used for logging.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+An `Activity` has an operation name, an ID, a start time and duration, tags, and baggage.
+             
+The current activity can be accessed with the static <xref:System.Diagnostics.Activity.Current?displayProperty=nameWithType> property.
+
+Activities should be created by calling the constructor, configured as necessary, and then started with the <xref:System.Diagnostics.Activity.Start%2A> method, which maintains parent-child relationships for the activities and sets <xref:System.Diagnostics.Activity.Current?displayProperty=nameWithType>.
+            
+When an activity is finished, it should be stopped with the <xref:System.Diagnostics.Activity.Stop?displayProperty=nameWithType> method.
+            
+No `Activity` methods allow exceptions to escape as a response to bad inputs. They are thrown and caught (which allows debuggers and monitors to see the error), but the exception is suppressed, and the operation does something reasonable (typically it does nothing).
+
+         ]]></format>
+         </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,8 +83,8 @@ Note that <xref:System.Diagnostics.Activity> has a "builder" pattern: you call t
         <ReturnType>System.Diagnostics.ActivityTraceFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the flags (defined by the W3C ID specification) associated with the activity.</summary>
+        <value>the flags associated with the activity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,9 +242,15 @@ This key/value pair is included in the collection returned by the <see cref="P:S
         <ReturnType>System.Diagnostics.ActivityIdFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the default ID format for the <see cref="T:System.Diagnostics.Activity" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `Activity` instance tries to use the same format for IDs as its parent. If the activity has no parent, this property determines the default format to use.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -273,9 +293,15 @@ This key/value pair is included in the collection returned by the <see cref="P:S
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a valud that detrmines if the <see cref="P:System.Diagnostics.Activity.DefaultIdFormat" /> is always used to define the default ID format. </summary>
+        <value><see langword="true" /> to always use the <see cref="P:System.Diagnostics.Activity.DefaultIdFormat" />; otherwise, <see langword= "false" />.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+Normally if the <xref:System.Diagnostics.Activity.ParentId> is defined, its format determines the format used by the current <xref:System.Diagnostics.Activity>. However, if `ForceDefaultFormat` is set to `true`, the ID format is always defined by the <xref:System.Diagnostics.Activity.DefaultIdFormat> property even if the <xref:System.Diagnostics.Activity.ParentID> is defined and the parent has a different format.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetBaggageItem">
@@ -354,8 +380,8 @@ An ID has a hierarchical structure: `root-id.id1_id2.id3_`. The ID is generated 
         <ReturnType>System.Diagnostics.ActivityIdFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the format for the <see cref="P:System.Diagnostics.Activity.Id" />.</summary>
+        <value>The format for the <see cref="P:System.Diagnostics.Activity.Id" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,9 +491,15 @@ This property value can be `null` if this is a root <see cref="T:System.Diagnost
         <ReturnType>System.Diagnostics.ActivitySpanId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the parent's <see cref="P:System.Diagnostics.Activity.SpanId" />.</summary>
+        <value>The parent's <see cref="P:System.Diagnostics.Activity.SpanId" />.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+If the <xref:System.Diagnostics.Activity.ParentId?displayProperty=nameWithType> is in the W3C format, this property returns the <xref:System.Diagnostics.Activity.SpanId> part of the ParentId.  Otherwise it returns a zero <xref:System.Diagnostics.Activity.SpanId>.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Recorded">
@@ -486,8 +518,8 @@ This property value can be `null` if this is a root <see cref="T:System.Diagnost
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the W3CIdFlags.Recorded flag is set.</summary>
+        <value><see langword="true" /> if the W3CIdFlags.Recorded flag is set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,8 +693,8 @@ This property should only be used in 'boundary' scenarios where an <see cref="T:
         <ReturnType>System.Diagnostics.ActivitySpanId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the SPAN part of the <see cref="P:System.Diagnostics.Activity.Id" />.</summary>
+        <value>The ID for the SPAN part of <see cref="P:System.Diagnostics.Activity.Id" />, if the <see cref="T:System.Diagnostics.Activity" /> has the W3C format; otherwise, a zero <see langword="SpanId" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -816,8 +848,8 @@ Call <xref:System.Diagnostics.DiagnosticSource.StopActivity%2A?displayProperty=n
         <ReturnType>System.Diagnostics.ActivityTraceId</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the TraceId part of the <see cref="P:System.Diagnostics.Activity.Id" />.</summary>
+        <value>The ID for the TraceId part of the <see cref="P:System.Diagnostics.Activity.Id" />, if the ID has the W3C format; otherwise, a zero TraceId.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -837,9 +869,17 @@ Call <xref:System.Diagnostics.DiagnosticSource.StopActivity%2A?displayProperty=n
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the W3C <see langword="tracestate" /> header.</summary>
+        <value>The W3C <see langword="tracestate" /> header.</value>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `tracestate` header is intended to carry supplemental information to trace identity contained in the trace parent. `tracestate` consists of a list of key/value pairs that convey information about the request position in multiple distributed tracing graphs. This information is typically used by distributed tracing systems and should not be used for general purpose baggage, since this may break the correlation of a distributed trace.
+            
+Logically `TraceStateString` is just a kind of baggage (if flows just like baggage), but because it is expected to be special-cased (it has its own HTTP header), it is more convenient/efficient if it is not lumped in with other baggage.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
   </Members>

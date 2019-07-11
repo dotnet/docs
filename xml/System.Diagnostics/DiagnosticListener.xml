@@ -152,7 +152,13 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
         <summary>Determines whether there are any registered subscribers.</summary>
         <returns>
           <see langword="true" /> if there are any registered subscribers, <see langword="false" /> otherwise.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+If setup for the notification is expensive, you can call `IsEnabled` before performing this setup. Producers may optionally call `IsEnabled` before calling <xref:System.Diagnostics.DiagnosticListener.IsEnabled(System.String) in performance-critical parts of the application to determine whether there are any listeners to the <xref:System.Diagnostics.DiagnosticListener>.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -321,9 +327,9 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
         <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="observer">A subscriber.</param>
+        <summary>Adds a subscriber.</summary>
+        <returns>A reference to an interface that allows the listener to stop receiving notifications before the <see cref="T:System.Diagnostics.DiagnosticSource" /> has finished sending them.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,11 +357,13 @@ When you subscribe to this, you get callbacks for all NotificationListeners in t
       </Parameters>
       <Docs>
         <param name="observer">A subscriber.</param>
-        <param name="isEnabled">A delegate that filters events based on their name and up to two context object (which can be <see langword="null" />).</param>
-        <summary>Adds a subscriber. If the <paramref name="isEnabled" /> parameter is not <see langword="null" />, it indicates that some events are uninteresting can be skipped for efficiency.</summary>
-        <returns>To be added.</returns>
+        <param name="isEnabled">A delegate that filters events based on their name and up to two context objects (which can be <see langword="null" />), or <see langword="null" /> to if an event filter is not desirable.</param>
+        <summary>Adds a subscriber, and optionally filters events based on their name and up to two context objects.</summary>
+        <returns>A reference to an interface that allows the listener to stop receiving notifications before the <see cref="T:System.Diagnostics.DiagnosticSource" /> has finished sending them.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
+
+If `isEnabled` is not `null`, it indicates that some events are uninteresting can be skipped for efficiency.
 
 A particular instrumentation site has the option of calling one or more <xref:System.Diagnostics.DiagnosticListener.IsEnabled%2A> overloads  in which it passes the name of the event and up to two other (instrumentation site specific) objects as arguments. If any of these <xref:System.Diagnostics.DiagnosticListener.IsEnabled%2A> calls are made then this `isEnabled` predicate is invoked with passed values (if shorter overloads are used, `null` is passed for missing context objects).
 
@@ -398,14 +406,14 @@ If this parameter is `null`, no filtering is done (all overloads of <xref:System
       <Docs>
         <param name="observer">A subscriber.</param>
         <param name="isEnabled">A delegate that filters events based on their name (<see cref="T:System.String" />). The delegate should return <see langword="true" /> if the event is enabled.</param>
-        <summary>Add a subscriber (Observer). If the <paramref name="isEnabled" /> parameter is not <see langword="null" />, it indicates that some events are uninteresting and can be skipped for efficiency.</summary>
-        <returns>To be added.</returns>
+        <summary>Adds a subscriber, and optionally filters events based on their name.</summary>
+        <returns>A reference to an interface that allows the listener to stop receiving notifications before the <see cref="T:System.Diagnostics.DiagnosticSource" /> has finished sending them.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
-            
-Note that the `isEnabled` predicate is an optional optimization to allow the instrumentation site to avoid setting up the payload and calling <xref:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)> when no subscriber cares about it. In particular the instrumentation site has the option of ignoring the <xref:System.Diagnostics.DiagnosticListener.IsEnabled> predicate (not calling it) and simply calling <xref:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)>. Thus if the subscriber requires the filtering, it needs to do it itself.
 
-If this parameter is `null`, no filtering is done (all overloads of <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A> return `true`).
+If `isEnabled` is not `null`, some events are uninteresting and can be skipped for efficiency. The `isEnabled` predicate is an optional optimization to allow the instrumentation site to avoid setting up the payload and calling <xref:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)> when no subscriber cares about it. In particular the instrumentation site has the option of ignoring the <xref:System.Diagnostics.DiagnosticListener.IsEnabled> predicate (not calling it) and simply calling <xref:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)>. Thus if the subscriber requires the filtering, it needs to do it itself.
+
+If `isEnabled` is `null`, no filtering is done (all overloads of <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A> return `true`).
 
           ]]></format>
         </remarks>
@@ -436,9 +444,17 @@ If this parameter is `null`, no filtering is done (all overloads of <xref:System
         <param name="isEnabled">To be added.</param>
         <param name="onActivityImport">To be added.</param>
         <param name="onActivityExport">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Adds a subscriber, optionally filters events based on their name and up to two context objects, and specifies methods to call when providers import or export activites from outside the process.</summary>
+        <returns>A reference to an interface that allows the listener to stop receiving notifications before the <see cref="T:System.Diagnostics.DiagnosticSource" /> has finished sending them.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+If `isEnabled` is non-null, some events are uninteresting can be skipped for efficiency.  
+
+You can also supply 'onActivityImport' and 'onActivityExport' methods that are called when providers importing or export activities from outside the process (for example, from HTTP requests). These methods are called after importing or exporting the activity and can be used to modify the activity or the outgoing request to add policy.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -496,11 +512,18 @@ If this parameter is `null`, no filtering is done (all overloads of <xref:System
         <Parameter Name="parameters" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the event to log.</param>
+        <param name="value">An object that represents the payload for the event.</param>
+        <param name="parameters">An object that represents the payload for the event.</param>
+        <summary>Logs a notification.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+For more information, see the <xref:System.Diagnostics.DiagnosticSource.Write%2A?displayProperty=nameWithType> method.
+
+         ]]></format>
+         </remarks>
+
       </Docs>
     </Member>
   </Members>

@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a builder for asynchronous iterators.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,11 +58,11 @@
         <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TAwaiter">To be added.</typeparam>
-        <typeparam name="TStateMachine">To be added.</typeparam>
-        <param name="awaiter">To be added.</param>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
+        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+        <param name="awaiter">The awaiter.</param>
+        <param name="stateMachine">The state machine.</param>
+        <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,11 +102,11 @@
         <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TAwaiter">To be added.</typeparam>
-        <typeparam name="TStateMachine">To be added.</typeparam>
-        <param name="awaiter">To be added.</param>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
+        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+        <param name="awaiter">The awaiter.</param>
+        <param name="stateMachine">The state machine.</param>
+        <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +131,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks iteration as being completed, whether successfully or otherwise.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +156,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an instance of the <see cref="T:System.Runtime.CompilerServices.AsyncIteratorMethodBuilder" /> struct.</summary>
+        <returns>The initialized instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,9 +191,9 @@
         <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TStateMachine">To be added.</typeparam>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+        <param name="stateMachine">The state machine instance, passed by reference.</param>
+        <summary>Invokes <see cref="M:System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" /> on the state machine while guarding the <see cref="T:System.Threading.ExecutionContext" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

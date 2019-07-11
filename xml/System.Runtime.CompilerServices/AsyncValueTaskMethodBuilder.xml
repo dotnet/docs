@@ -21,7 +21,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a builder for asynchronous methods that return a <see cref="T:System.Threading.Tasks.ValueTask" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -64,11 +64,11 @@
         <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TAwaiter">To be added.</typeparam>
-        <typeparam name="TStateMachine">To be added.</typeparam>
-        <param name="awaiter">To be added.</param>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
+        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+        <param name="awaiter">The awaiter.</param>
+        <param name="stateMachine">The state machine.</param>
+        <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,11 +111,11 @@
         <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TAwaiter">To be added.</typeparam>
-        <typeparam name="TStateMachine">To be added.</typeparam>
-        <param name="awaiter">To be added.</param>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TAwaiter">The type of the awaiter.</typeparam>
+        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+        <param name="awaiter">The awaiter.</param>
+        <param name="stateMachine">The state machine.</param>
+        <summary>Schedules the state machine to proceed to the next action when the specified awaiter completes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,8 +143,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Creates an instance of the <see cref="T:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder" /> struct.</summary>
+        <returns>The initialized instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,8 +173,8 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="exception">The exception to bind to the task.</param>
+        <summary>Marks the task as failed and binds the specified exception to the task.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +202,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Marks the task as successfully completed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +232,8 @@
         <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
       </Parameters>
       <Docs>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stateMachine">The state machine instance to associate with the builder.</param>
+        <summary>Associates the builder with the specified state machine.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +270,9 @@
         <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
       </Parameters>
       <Docs>
-        <typeparam name="TStateMachine">To be added.</typeparam>
-        <param name="stateMachine">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TStateMachine">The type of the state machine.</typeparam>
+        <param name="stateMachine">The state machine instance, passed by reference.</param>
+        <summary>Begins running the builder with the associated state machine.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,8 +299,8 @@
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the task for this builder.</summary>
+        <value>The task for this builder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

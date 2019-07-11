@@ -31,7 +31,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates the type of the async method builder that should be used by a language compiler to build the attributed type when used as the return type of an async method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -60,8 +60,8 @@
         <Parameter Name="builderType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="builderType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builderType">The type of the associated builder.</param>
+        <summary>Initializes a new instance of the the <see cref="T:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the associated builder.</summary>
+        <value>The type of the associated builder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

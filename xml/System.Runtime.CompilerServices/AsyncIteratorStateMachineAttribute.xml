@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates whether a method is an asynchronous iterator.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +47,8 @@
         <Parameter Name="stateMachineType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="stateMachineType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stateMachineType">The type object for the underlying state machine type that's used to implement a state machine method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.AsyncIteratorStateMachineAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

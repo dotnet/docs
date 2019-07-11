@@ -170,7 +170,7 @@ private static void TransferFunds(Account from, Account to, decimal amount)
 Private Shared Sub TransferFunds(from As Account, to As Account, amount As Decimal)
     Dim withdrawalTrxID As String = from.Withdrawal(amount)
     Try
-        to.Deposit(amount)
+        [to].Deposit(amount)
     Catch
         from.RollbackTransaction(withdrawalTrxID)
         Throw

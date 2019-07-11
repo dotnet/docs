@@ -422,8 +422,8 @@
         <Parameter Name="value" Type="System.SByte" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The default signed byte value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DefaultValueAttribute" /> class using a <see cref="T:System.SByte" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -537,8 +537,8 @@
         <Parameter Name="value" Type="System.UInt16" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The default unsigned 16-bit integer value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DefaultValueAttribute" /> class using a <see cref="T:System.UInt16" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,8 +571,8 @@
         <Parameter Name="value" Type="System.UInt32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The default unsigned integer value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DefaultValueAttribute" /> class using a <see cref="T:System.UInt32" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,8 +605,8 @@
         <Parameter Name="value" Type="System.UInt64" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The default unsigned long integer value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DefaultValueAttribute" /> class using a <see cref="T:System.UInt64" /> value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

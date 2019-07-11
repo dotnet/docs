@@ -199,7 +199,7 @@ Catch ex As Exception
     Throw New TransferFundsException("Withdrawal failed.", innerException:=ex) With
     {
         .From = from,
-        .To = to,
+        .[To] = [to],
         .Amount = amount
     }
 End Try

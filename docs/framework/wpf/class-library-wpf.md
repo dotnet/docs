@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: dcb35927-00ad-4141-a1ab-a7a524dd3f10
 ---
 # Class Library (WPF)
-The following links refer to namespaces that contain [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] [!INCLUDE[TLA#tla_api#plural](../../../includes/tlasharptla-apisharpplural-md.md)].  
+The following links refer to namespaces that contain [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] APIs.  
   
 ## In This Section  
   

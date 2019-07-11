@@ -2498,6 +2498,8 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="millisecondsTimeout" /> is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> in milliseconds.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread has not been started.</exception>
         <altmember cref="T:System.Threading.ThreadState" />
+        <exception cref="T:System.ArgumentException"><paramref name="millisecondsTimeout" /> is less than -1 (Timeout.Infinite).</exception>
+        <exception cref="T:System.Threading.ThreadInterruptedException">The thread was interrupted while waiting.</exception>
       </Docs>
     </Member>
     <Member MemberName="Join">

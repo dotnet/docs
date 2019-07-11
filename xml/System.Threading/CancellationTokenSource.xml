@@ -442,7 +442,16 @@
       <Docs>
         <param name="delay">The time span to wait before canceling this <see cref="T:System.Threading.CancellationTokenSource" />.</param>
         <summary>Schedules a cancel operation on this <see cref="T:System.Threading.CancellationTokenSource" /> after the specified time span.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+            The countdown for the delay starts during this call.  When the delay expires, 
+            this <xref:System.Threading.CancellationTokenSource> is canceled, if it has
+            not been canceled already.
+            
+            Subsequent calls to `CancelAfter` will reset the delay for this <xref:System.Threading.CancellationTokenSource>, if it has not been canceled already.
+
+            ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">The exception thrown when this <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The exception that is thrown when <paramref name="delay" /> is less than -1 or greater than Int32.MaxValue.</exception>
       </Docs>

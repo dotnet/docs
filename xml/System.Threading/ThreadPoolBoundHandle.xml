@@ -155,7 +155,18 @@
         <param name="pinData">An object or array of objects that represent the input or output buffer for the operation, or <see langword="null" />. Each object represents a buffer, such an array of bytes.</param>
         <summary>Returns an unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure, specifying a delegate that is invoked when the asynchronous I/O operation is complete, a user-provided object that supplies context, and managed objects that serve as buffers.</summary>
         <returns>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+The unmanaged pointer returned by this method can be passed to the operating system in overlapped I/O operations. The <xref:System.Threading.NativeOverlapped> structure is fixed in physical memory until <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A?displayProperty=nameWithType> is called.
+
+> [!NOTE]
+> The buffers specified in <paramref name="pinData" /> are pinned for the duration of the I/O operation.
+
+The buffer or buffers specified in <paramref name="pinData" /> must be the same as those passed to the unmanaged operating system function that performs the asynchronous I/O. 
+
+        ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="callback" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">This method was called after the <see cref="T:System.Threading.ThreadPoolBoundHandle" /> object was disposed.</exception>

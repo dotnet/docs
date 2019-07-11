@@ -11,7 +11,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a work item that can be executed by the <see cref="T:System.Threading.ThreadPool" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Executes the work item on the thread pool.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

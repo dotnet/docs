@@ -140,9 +140,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Disposes of the registration and unregisters the target callback from the associated 
+            <see cref="T:System.Threading.CancellationToken" />.</summary>
+        <returns>A task that represents the asynchronous dispose operation.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The returned <xref:System.Threading.Tasks.ValueTask> completes once the associated callback is unregistered without having executed or once it's finished executing, except in the degenerate case where the callback is unregistering itself.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -409,8 +416,11 @@
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Threading.CancellationToken" /> with which this registration is associated.  If the
+            registration isn't associated with a token (such as after the registration has been disposed),
+            this will return a default token.</summary>
+        <value>The cancellation token with which this registration is associated, or a default token if the
+            registration isn't associated with a token (such as after the registration has been disposed).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,8 +450,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Disposes of the registration and unregisters the target callback from the associated 
+            <see cref="T:System.Threading.CancellationToken" />.</summary>
+        <returns><see langword="true" /> if the method succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

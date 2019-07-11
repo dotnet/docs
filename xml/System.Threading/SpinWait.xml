@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is typically called in a loop, and may change in behavior based on the number of times a <xref:System.Threading.SpinWait.SpinOnce%2A> has been called thus far on this instance. Each spin results in the <xref:System.Threading.Thread.SpinWait%2A> method being called. A count is kept of the number of times <xref:System.Threading.SpinWait.SpinOnce%2A> is called, and after a threshold count is reached, the <xref:System.Threading.Thread.Yield%2A> method is called.  
+ This method is typically called in a loop and may change in behavior based on the number of times <xref:System.Threading.SpinWait.SpinOnce%2A> has been called so far on this instance. Each spin results in the <xref:System.Threading.Thread.SpinWait%2A> method being called. A count is kept of the number of times <xref:System.Threading.SpinWait.SpinOnce%2A> is called, and after a threshold count is reached, the <xref:System.Threading.Thread.Yield%2A> method is called.  
   
  ]]></format>
         </remarks>
@@ -249,9 +249,17 @@
         <Parameter Name="sleep1Threshold" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="sleep1Threshold">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sleep1Threshold">A minimum spin count after which <see langword="Thread.Sleep(1)" /> may be used. A value of -1 disables the use of <see langword="Thread.Sleep(1)" />.</param>
+        <summary>Performs a single spin and calls <see cref="M:System.Threading.Thread.Sleep(System.Int32)" /> after a minimum spin count.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+This method is typically called in a loop and may change in behavior based on the number of times <xref:System.Threading.SpinWait.SpinOnce> has been called so far on this instance.
+
+        ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="sleep1Threshold" /> is less than -1.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="SpinUntil">

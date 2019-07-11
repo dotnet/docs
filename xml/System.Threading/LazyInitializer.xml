@@ -49,11 +49,12 @@ Dim name = LazyInitializer.EnsureInitialized(_data, _dataInitialized, _dataLock)
   
 ```csharp  
 ExpensiveData _data = null;  
-                     bool _dataInitialized = false;  
-                     object _dataLock = new object();  
-                  //  ...  
+bool _dataInitialized = false;  
+object _dataLock = new object();  
+
+//  ...  
   
-                    ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _dataInitialized, ref _dataLock);  
+ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _dataInitialized, ref _dataLock);  
 ```  
   
  ]]></format>
@@ -113,14 +114,14 @@ ExpensiveData _data = null;
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the reference to be initialized.</typeparam>
-        <param name="target">A reference of type <c>T</c> to initialize if it has not already been initialized.</param>
+        <param name="target">A reference to initialize if it has not already been initialized.</param>
         <summary>Initializes a target reference type with the type's default constructor if it hasn't already been initialized.</summary>
-        <returns>The initialized reference of type <paramref name="T" />.</returns>
+        <returns>The initialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method may only be used on reference types. To ensure initialization of value types, see other overloads of EnsureInitialized.  
+ This method may only be used on reference types. To ensure initialization of value types, see other overloads of `EnsureInitialized`.  
   
  This method may be used concurrently by multiple threads to initialize `target`.  
   
@@ -173,11 +174,11 @@ ExpensiveData _data = null;
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The reference type of the reference to be initialized.</typeparam>
-        <param name="target">The reference of type <c>T</c> to initialize if it hasn't already been initialized.</param>
+        <typeparam name="T">The type of the reference to be initialized.</typeparam>
+        <param name="target">The reference to initialize if it hasn't already been initialized.</param>
         <param name="valueFactory">The function that is called to initialize the reference.</param>
         <summary>Initializes a target reference type by using a specified function if it hasn't already been initialized.</summary>
-        <returns>The initialized value of type <paramref name="T" />.</returns>
+        <returns>The initialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -238,7 +239,7 @@ ExpensiveData _data = null;
         <param name="initialized">A reference to a Boolean value that determines whether the target has already been initialized.</param>
         <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <paramref name="target" />. If <paramref name="syncLock" /> is <see langword="null" />, a new object will be instantiated.</param>
         <summary>Initializes a target reference or value type with its default constructor if it hasn't already been initialized.</summary>
-        <returns>The initialized value of type <paramref name="T" />.</returns>
+        <returns>The initialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -288,12 +289,13 @@ ExpensiveData _data = null;
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <param name="syncLock">To be added.</param>
-        <param name="valueFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the reference to be initialized.</typeparam>
+        <param name="target">A reference to initialize if it has not already been initialized.</param>
+        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing
+            <paramref name="target" />. If <paramref name="syncLock" /> is <see langword="null" />, a new object will be instantiated.</param>
+        <param name="valueFactory">The method to invoke to initialize <paramref name="target" />.</param>
+        <summary>Initializes a target reference type with a specified function if it has not already been initialized.</summary>
+        <returns>The initialized object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,7 +343,7 @@ ExpensiveData _data = null;
         <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <paramref name="target" />. If <paramref name="syncLock" /> is <see langword="null" />, a new object will be instantiated.</param>
         <param name="valueFactory">The function that is called to initialize the reference or value.</param>
         <summary>Initializes a target reference or value type by using a specified function if it hasn't already been initialized.</summary>
-        <returns>The initialized value of type <paramref name="T" />.</returns>
+        <returns>The initialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

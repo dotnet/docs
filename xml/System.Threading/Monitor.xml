@@ -471,8 +471,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of times there was contention when trying to take the monitor's lock.</summary>
+        <value>The number of times there was contention when trying to take the monitor's lock.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

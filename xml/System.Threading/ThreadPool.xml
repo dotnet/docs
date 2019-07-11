@@ -234,9 +234,15 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of work items that have been processed so far.</summary>
+        <value>The number of work items that have been processed so far.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+If a thread pool implementation may have different types of work items, the count includes all types.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableThreads">
@@ -462,9 +468,15 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of work items that are currently queued to be processed.</summary>
+        <value>The number of work items that are currently queued to be processed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+If a thread pool implementation may have different types of work items, the count includes all types that can be tracked, which may only be the user work items, including tasks. Some implementations may also include queued timer and wait callbacks in the count. On Windows, the count is unlikely to include the number of pending IO completions, because they are posted directly to an IO completion port.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="QueueUserWorkItem">
@@ -1180,9 +1192,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of thread pool threads that currently exist.</summary>
+        <value>The number of thread pool threads that currently exist.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+If a thread pool implementation may have different types of threads, the count includes all types.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnsafeQueueNativeOverlapped">

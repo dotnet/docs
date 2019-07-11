@@ -913,11 +913,22 @@ End If
         <Parameter Name="state" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The delegate to execute when the <see cref="T:System.Threading.CancellationToken" /> is canceled.</param>
+        <param name="state">The state to pass to the <paramref name="callback" /> when the delegate is invoked.  This may be <see langword="null" />.</param>
+        <summary>Registers a delegate that is called when this <see cref="T:System.Threading.CancellationToken" /> is canceled.</summary>
+        <returns>An object that can 
+            be used to unregister the callback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+            If this token is already in the canceled state, the delegate is run immediately and synchronously.
+            Any exception the delegate generates is propagated out of this method call.
+            
+The  <xref:System.Threading.ExecutionContext> is not captured nor flowed
+            to the callback's invocation.
+            ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitHandle">

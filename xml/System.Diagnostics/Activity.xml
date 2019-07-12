@@ -298,7 +298,7 @@ The `Activity` instance tries to use the same format for IDs as its parent. If t
         <remarks>  
           <format type="text/markdown"><![CDATA[  
 
-Normally if the <xref:System.Diagnostics.Activity.ParentId> is defined, its format determines the format used by the current <xref:System.Diagnostics.Activity>. However, if `ForceDefaultFormat` is set to `true`, the ID format is always defined by the <xref:System.Diagnostics.Activity.DefaultIdFormat> property even if the <xref:System.Diagnostics.Activity.ParentID> is defined and the parent has a different format.
+Normally if the <xref:System.Diagnostics.Activity.ParentId> is defined, its format determines the format used by the current <xref:System.Diagnostics.Activity>. However, if `ForceDefaultFormat` is set to `true`, the ID format is always defined by the <xref:System.Diagnostics.Activity.DefaultIdFormat> property even if the <xref:System.Diagnostics.Activity.ParentId> is defined and the parent has a different format.
 
          ]]></format>
          </remarks>

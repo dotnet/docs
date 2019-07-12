@@ -142,7 +142,7 @@ The following lists the recommended packages:
   * **Version:** \<runtime version>
   * **Contains:** (12)
 
-* `aspnetcore-targeting-pack-[major].[minor]` - allows targeting a non-latest runtime
+* `aspnetcore-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
   * **Version:** \<aspnetcore runtime version>
   * **Contains:** (11)
 

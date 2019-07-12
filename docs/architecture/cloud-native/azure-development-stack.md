@@ -2,7 +2,7 @@
 title: The Azure Cloud Native Development Stack
 description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud Native Development Stack
 author: vettor
-ms.date: 06/30/2019
+ms.date: 07/11/2019
 ---
 
 # The Azure Cloud-Native Development Stack
@@ -131,7 +131,9 @@ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD
 
 ## Summary
 
-In this chapter, we flew over cloud native computing at 5,000 feet, providing a definition along with the key characteristics of a cloud native application. We looked at the type of applications that might justify this investment and effort. Lastly, we looked cloud native development stack available in the Azure Cloud <https://deloitte.wsj.com/cio/2018/08/27/3-reasons-to-go-cloud-native/> working toward a [cloud-native](https://deloitte.wsj.com/cio/2016/12/12/making-the-leap-to-a-cloud-native-world/) mindset reorganizing people and processes and reworking applications with the cloud in mind organizations can maximize the benefits of their cloud efforts.
+In this chapter, we flew over cloud native computing, providing a definition along with the key characteristics of a cloud native application. We looked at what types of applications that might justify this investment and effort. Lastly, we looked cloud native development stack available in the Azure Cloud <https://deloitte.wsj.com/cio/2018/08/27/3-reasons-to-go-cloud-native/> working toward a [cloud-native](https://deloitte.wsj.com/cio/2016/12/12/making-the-leap-to-a-cloud-native-world/) mindset reorganizing people and processes and reworking applications with the cloud in mind organizations can maximize the benefits of their cloud efforts.
+
+In this chapter, we flew over cloud native computing at 5,000 feet, providing a definition and the key characteristics of a cloud native application. We looked at the type of applications that might justify this investment and effort. Lastly, we looked at the cloud native development stack available in the Azure Cloud. 
 
 ### References
 

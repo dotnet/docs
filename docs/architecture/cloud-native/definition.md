@@ -2,7 +2,7 @@
 title: Defining Cloud Native
 description: Architecting Cloud Native .NET Apps for Azure | Defining Cloud Native
 author: vettor
-ms.date: 06/30/2019
+ms.date: 07/11/2019
 ---
 # Defining Cloud Native
 
@@ -45,7 +45,7 @@ Figure 1-3 depicts the range of the full-featured compute services available in 
 
 Cloud native systems typically view the underlying infrastructure as *disposable* - provisioned in minutes and resized, scaled, moved, or destroyed whenever necessary – all done through automation.
 
-Consider the argument of [Cattle vs. Pets](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). In a traditional data center, servers are treated as *Pets*. They are typically a physical machine, given a meaningful name, and cared for. You scale by adding more resources to the same machine (scaling up). If one becomes sick, it is nursed back to health. When one becomes unavailable, everyone notices.
+Consider the argument of [Pets vs. Cattle](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). In a traditional data center, servers are treated as *Pets*. They are typically a physical machine, given a meaningful name, and cared for. You scale by adding more resources to the same machine (scaling up). If one becomes sick, it is nursed back to health. When one becomes unavailable, everyone notices.
 
 On the other hand, the *Cattle* service model is quite different. Provisioned as a virtual machine or container, each virtual instance is identical and assigned an identifier such as Service-01, Service-02, and so on. When one has a problem, you automatically replace it with another, Service-03. When scaling, you *scale out* by creating more of them. When one become unavailable, nobody notices.
 
@@ -130,7 +130,7 @@ A backing service is any external resource on which an application relies for fu
 
 Your operations team could accept the responsibility for owning these ancillary services. It wouldn’t be hard to provision a VM and install an instance of the open source RabbitMQ message broker. While feasible, does that make sense - from a business perspective?
 
-Chances are you’re not in the message broker, database or identity server business. So, then, why incur the cost and complexity of owning these items when someone else can do it better and for less? No matter how skilled you may be, it is unlikely that you will be able to match the reliability and performance, say, of the fully-managed [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) service in Azure. That Microsoft team that owns it lives and breathes databases, 24/7 - that’s their business. While you, on the other hand, sell consumer items, provide medical services, or deliver packages. Do what you're good at and let others help you with the rest. Focus your effort on building outstanding customer functionality, not becoming experts in 3rd party/open-source backing services.
+Chances are you’re not in the message broker, database or identity server business. So, then, why incur the cost and complexity of owning these items when someone else can do it better and for less? No matter how skilled you may be, it is unlikely that you will be able to match the reliability and performance, say, of the fully-managed [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) service in Azure. That Microsoft team that owns it lives and breathes databases - that’s their business. While you, on the other hand, sell consumer items, provide medical services, or deliver packages. Do what you're good at and let others help you with the rest. Focus your effort on building outstanding customer functionality, not becoming experts in open-source backing services.
 
 With all that said, cloud native systems are best built leveraging managed backing services from a cloud provider. Cloud providers manage these resources at scale and bear the responsibility for security, scalability, and maintenance. You can also count on comprehensive monitoring, configurable redundancy, and availability – built into the service. They are battle-tested, performant, and ready to go!
 

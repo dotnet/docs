@@ -2,7 +2,7 @@
 title: Introduction to Cloud Native .NET Applications
 description: Architecting Cloud Native .NET Apps for Azure | Introduction to Cloud Native .NET Applications
 author: vettor
-ms.date: 06/30/2019
+ms.date: 07/11/2019
 ---
 # Introduction to Cloud Native .NET Applications
 

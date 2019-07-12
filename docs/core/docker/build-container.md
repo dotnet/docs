@@ -201,7 +201,13 @@ docker-working
     └───obj
 ```
 
-From your terminal, run `docker build -t myimage -f Dockerfile .` and Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
+From your terminal, run the following command:
+
+```console
+docker build -t myimage -f Dockerfile .
+```
+
+Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
 ```console
 > docker images

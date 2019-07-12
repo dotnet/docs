@@ -207,7 +207,7 @@ From your terminal, run the following command:
 docker build -t myimage -f Dockerfile .
 ```
 
-Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
+Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells Docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **myimage** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
 ```console
 > docker images
@@ -226,7 +226,7 @@ ENTRYPOINT ["dotnet", "app/myapp.dll"]
 
 The `COPY` command tells Docker to copy the specified folder on your computer to a folder in the container. In this example, the **publish** folder is copied to a folder named **app** in the container.
 
-The next command, `ENTRYPOINT`, tells docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
+The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
 From your terminal, run `docker build -t myimage -f Dockerfile .` and when that command finishes, run `docker images`.
 

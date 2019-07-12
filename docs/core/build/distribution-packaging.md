@@ -138,7 +138,7 @@ The following lists the recommended packages:
   * **Version:** \<runtime version>
   * **Contains:** (13)
 
-* `dotnet-targeting-pack-[major].[minor]` - allows targeting a non-latest runtime
+* `dotnet-targeting-pack-[major].[minor]` - Allows targeting a non-latest runtime
   * **Version:** \<runtime version>
   * **Contains:** (12)
 

@@ -108,7 +108,7 @@
         <param name="dictionary">The dictionary to wrap.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ReadOnlyDictionary`2" /> class that is a wrapper around the specified dictionary.</summary>
         <remarks>To be added.</remarks>
-      </Docs>
+        <exception cref="T:System.ArgumentNullException"><paramref name="dictionary" /> is <see langword="null" />.</exception>      </Docs>
     </Member>
     <Member MemberName="ContainsKey">
       <MemberSignature Language="C#" Value="public bool ContainsKey (TKey key);" />

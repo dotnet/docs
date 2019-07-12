@@ -1,4 +1,4 @@
-﻿<Type Name="File" FullName="System.IO.File">
+<Type Name="File" FullName="System.IO.File">
   <TypeSignature Language="C#" Value="public static class File" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit File extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.File" />
@@ -62,13 +62,13 @@
   
  In members that accept a path, the path can refer to a file or just a directory. The specified path can also refer to a relative path or a Universal Naming Convention (UNC) path for a server and share name. For example, all the following are acceptable paths:  
   
--   "c:\\\MyDir\\\MyFile.txt" in C#, or "c:\MyDir\MyFile.txt" in Visual Basic.  
+-   `"c:\\\MyDir\\\MyFile.txt"` in C#, or `"c:\MyDir\MyFile.txt"` in Visual Basic.  
   
--   "c:\\\MyDir" in C#, or "c:\MyDir" in Visual Basic.  
+-   `"c:\\\MyDir"` in C#, or `"c:\MyDir"` in Visual Basic.
   
--   "MyDir\\\MySubdir" in C#, or "MyDir\MySubDir" in Visual Basic.  
+-   `"MyDir\\\MySubdir"` in C#, or `"MyDir\MySubDir"` in Visual Basic.
   
--   "\\\\\\\MyServer\\\MyShare" in C#, or "\\\MyServer\MyShare" in Visual Basic.  
+-   `"\\\\\\\MyServer\\\MyShare"` in C#, or `"\\\MyServer\MyShare"` in Visual Basic.
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -979,7 +979,7 @@
         <exception cref="T:System.IO.IOException">An I/O error occurred while creating the file.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to read and write to the file described by the <paramref name="path" /> parameter. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /> . Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to read and write to the file described by the <paramref name="path" /> parameter. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Reading Text From A File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>

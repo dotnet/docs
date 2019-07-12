@@ -117,7 +117,7 @@ The following lists the recommended packages:
   * **Example:** dotnet-runtime-deps-2.1
   * **Dependencies:** _distro specific dependencies_
 
-* `dotnet-runtime-[major].[minor]` - Installs specific runtime
+* `dotnet-runtime-[major].[minor]` - Installs a specific runtime
   * **Version:** \<runtime version>
   * **Example:** dotnet-runtime-2.1
   * **Contains:** (5)

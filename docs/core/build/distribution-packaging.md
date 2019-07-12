@@ -146,7 +146,7 @@ The following lists the recommended packages:
   * **Version:** \<aspnetcore runtime version>
   * **Contains:** (11)
 
-* `netstandard-targeting-pack-[major].[minor]` - allows targeting a netstandard version
+* `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
   * **Version:** \<netstandard version>
   * **Contains:** (15)
 

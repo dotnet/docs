@@ -6,7 +6,7 @@ ms.date: 06/30/2019
 ---
 # Defining Cloud Native
 
-Stop what you’re doing, and ping 10 of your colleagues. Ask them to define the term “Cloud Native.” Good chance you’ll get about 8 different answers. What’s even more interesting is that 6 months from now, as cloud native technologies and practices evolve, so will their definition.
+Stop what you’re doing and ping 10 of your colleagues. Ask them to define the term “Cloud Native.” Good chance you’ll get about 8 different answers. What’s even more interesting is that six months from now, as cloud native technologies and practices evolve, so will their definition.
 
 Cloud native is about thinking differently on how we construct and evolve critical business systems.
 
@@ -16,16 +16,16 @@ Consider the [definition](https://github.com/cncf/foundation/blob/master/charter
 
 - These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil.
 
-Applications and their underlying systems have become increasingly complex with users demanding more and more. The new expectation is instantaneous responsiveness, up-to-the-minute features, and absolutely no downtime. Performance problems, recurring errors and the inability to move fast are no longer acceptable to your business and customers.
+Applications and their underlying systems have become increasingly complex with users demanding more and more. The new expectation is instantaneous responsiveness, up-to-the-minute features, and absolutely no downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable to your business and customers.
 
-Among many things, cloud native is about *speed* and *agility*. Business critical systems are evolving from an enabler of business capability to a weapon of strategic transformation, accelerating business velocity and growth. Now, it’s imperative to get ideas to market immediately. Figure 1-1 presents three pioneers who have implemented these techniques. Think about the speed, agility and scalability they have achieved.
+Among many things, cloud native is about *speed* and *agility*. Business critical systems are evolving from enablers of business capability to weapons of strategic transformation, accelerating business velocity and growth. Now, it’s imperative to get ideas to market immediately. Figure 1-1 presents three pioneers who have implemented these techniques. Think about the speed, agility, and scalability they have achieved.
 
 ![Companies embracing cloud native agility](media/companies-embracing-cloud-native.png)
 **Figure 1-1**. Companies embracing cloud native agility
 
 As you can see, eBay, Netflix and Uber expose systems that consist of hundreds of self-contained isolated microservices. Impressively, they can rapidly respond to market conditions by instantaneously updating specific functionality without having to fully deploy the entire system.
 
-At its core, this agility derives from the architecture and infrastructure upon which the system is constructed and is composed of six capabilities shown in Figure 1-2.
+At its core, this agility derives from the architecture and infrastructure upon which the system is built and is composed of six capabilities, as shown in Figure 1-2.
 
 ![Capabilities of cloud native apps](media/capabilities-of-cloud-native-apps.png)
 **Figure 1-2**. Capabilities of cloud native apps
@@ -34,9 +34,9 @@ As these capabilities are key to a cloud native system, let’s take some time t
 
 ## Thinking in terms of the cloud…
 
-Cloud native systems are *all about the cloud*: Designed, developed, and deployed to thrive in a cloud environment. Development teams design these systems from the ground-up in a highly-dynamic, virtualized environment. They are built to exploit the platform and infrastructure capabilities of the cloud delivery model: Elasticity, resilience, redundancy, orchestration, and on-demand features. 
+Cloud native systems are *all about the cloud*: designed, developed, and deployed to thrive in a cloud environment. Development teams design these systems from the ground-up in a highly-dynamic, virtualized environment. They are built to exploit the platform and infrastructure capabilities of the cloud delivery model: elasticity, resilience, redundancy, orchestration, and on-demand features. 
 
-The focus moves to *how* the application is created and deployed, not so much *where*. Cloud native apps make extensive use of PaaS (Platform as a Service) infrastructure and managed services. 
+The focus moves to *how* the application is created and deployed, not so much *where*. Cloud native apps make extensive use of Platform as a Service (PaaS) infrastructure and managed services. 
 
 Figure 1-3 depicts the range of the full-featured compute services available in Azure. Moving from the top of the hierarchy to the bottom, your focus shifts from infrastructure plumbing to business functionality. Cloud native systems typically reside at the lower levels of the stack leveraging containers, PaaS, and Serverless environments.
 
@@ -47,7 +47,7 @@ Cloud native systems typically view the underlying infrastructure as *disposable
 
 Consider the argument of [Cattle vs. Pets](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). In a traditional data center, servers are treated as *Pets*. They are typically a physical machine, given a meaningful name, and cared for. You scale by adding more resources to the same machine (scaling up). If one becomes sick, it is nursed back to health. When one becomes unavailable, everyone notices.
 
-On the other hand, the *Cattle* service model is quite different. Provisioned as a virtual machine or container, each virtual instance is identical and assigned an identifier such as Service-01, Service-02, etc. When one has a problem, you automatically replace it with another, Service-03. When scaling, you *scale out* by creating more of them. When one become unavailable, nobody notices.
+On the other hand, the *Cattle* service model is quite different. Provisioned as a virtual machine or container, each virtual instance is identical and assigned an identifier such as Service-01, Service-02, and so on. When one has a problem, you automatically replace it with another, Service-03. When scaling, you *scale out* by creating more of them. When one become unavailable, nobody notices.
 
 The cattle model moves toward *immutable infrastructure* in which servers are not repaired or modified. If a server fails or requires updating it is destroyed and a new one provisioned – all done via automation.
 
@@ -69,11 +69,11 @@ Cloud native systems embrace microservices. Moving beyond the popular monolithic
 
 - Each service is developed autonomously and can be deployed independently
 
-- Each service is self-contained: Encapsulates its domain, data, logic, and state, enabling it to embrace the data storage technology (SQL, NoSQL) and programming platform of choice.
+- Each service is self-contained: encapsulates its domain, data, logic, and state, enabling it to embrace the data storage technology (SQL, NoSQL) and programming platform of choice.
 
 ### Why microservices?
 
-Why a microservices architecture? In short, it provides agility. You construct a system of related, but independent services, each having a granular and autonomous lifecycle. Each service can evolve independently and deploy frequently. You don’t wait for a quarterly release to deploy new features or updates. Deploying individual services upon demand enables agility and rapid iteration. You can update small areas of a large complex application with less risk of disrupting the entire system.
+Why a microservices architecture? In short, it provides agility. You build a system of related, but independent services, each having a granular and autonomous lifecycle. Each service can evolve independently and deploy frequently. You don’t wait for a quarterly release to deploy new features or updates. Deploying individual services upon demand enables agility and rapid iteration. You can update small areas of a large complex application with less risk of disrupting the entire system.
 
 An additional benefit is that each microservice can scale in and out independently. Instead of scaling the entire application as a single unit, you scale out specific microservices that require more processing power or network bandwidth. This kind of fine-grained scalability provides greater control of your system and helps to reduce overall costs as you scale portions of your system, not everything.
 
@@ -86,7 +86,7 @@ Cloud native systems are built as a set of independent microservices that can si
 
 ## Thinking in terms of containers…
 
-The use of microservices go hand-in-hand with containerization, an approach to software deployment in which a service, its dependencies, configuration, and runtime are packaged together as a single unit, called an [image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://azure.microsoft.com/services/container-registry/), which can reside on your laptop, your data center, or in the public cloud. When needed, you can easily *pull* the image from the registry and transform it into a running container instance on any computer (development laptop, QA, Staging, Production, etc.) that has the Docker software engine.
+The use of microservices go hand in hand with containerization, an approach to software deployment in which a service, its dependencies, configuration, and runtime are packaged together as a single unit, called an [image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://azure.microsoft.com/services/container-registry/), which can reside on your laptop, your data center, or in the public cloud. When needed, you can easily *pull* the image from the registry and transform it into a running container instance on any computer (development laptop, QA, Staging, Production, etc.) that has the Docker software engine.
 
 ### Benefits of containers
 
@@ -94,14 +94,14 @@ Containers provide portability and guarantee consistency across environments. By
 
 Each [container](https://docs.docker.com/glossary/?term=container) runs on top of a container host (typically, [Docker](https://opensource.com/resources/what-docker)) that in turn runs on top of an OS (either Linux or Windows). Each running container shares the host operating system of the machine upon which it is running, resulting in a significantly smaller footprint than a full virtual machine (VM) instance. This smaller size increases the number of services that can run on a given VM, helping reduce overall cost.
 
-Each microservice typically runs in its own container, shown in Figure 1-5. In this example, we are running a Docker host on a single virtual machine, with four microservices running upon it.
+Each microservice typically runs in its own container, as shown in Figure 1-5. In this example, there's a Docker host running on a single virtual machine, with four microservices running on it.
 
-![Multiple containers running on a container host](media/multiple-containers-running-on-a-host.png)
+![Multiple containers running on a container host](media/multiple-containers-running-on-a-host.png)  
 **Figure 1-5**. Multiple containers running on a container host
 
-Even though each container shares the OS on the underlying VM, each is isolated from one another. Both Linux and Windows container provide a high-degree of process isolation across running containers. However, Windows containers offer an even higher degree of isolation using its [Hype-V Container](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container) option.
+Even though each container shares the OS of the underlying VM, each container is isolated from one another. Both Linux and Windows containers provide a high-degree of process isolation across running containers. However, Windows containers offer an even higher degree of isolation using its [Hyper-V Container](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container) option.
 
-Another benefit of containers is scalability. You can rapidly scale-out containers for spikes in traffic volume and quickly scale-in when no longer needed. When running multiple instances of the same container image, you typically deploy each to a different host VM inside of a cluster. This way, if one VM were to be unavailable, you could route requests to another VM that was operational. We’ll cover availability later in this book. 
+Another benefit of containers is scalability. You can rapidly scale out containers for spikes in traffic volume and quickly scale in when no longer needed. When running multiple instances of the same container image, you typically deploy each to a different host VM inside of a cluster. This way, if one VM were to be unavailable, you could route requests to another VM that was operational. We’ll cover availability later in this book. 
 
 ### Developing in containers
 
@@ -132,7 +132,7 @@ Your operations team could accept the responsibility for owning these ancillary 
 
 Chances are you’re not in the message broker, database or identity server business. So, then, why incur the cost and complexity of owning these items when someone else can do it better and for less? No matter how skilled you may be, it is unlikely that you will be able to match the reliability and performance, say, of the fully-managed [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) service in Azure. That Microsoft team that owns it lives and breathes databases, 24/7 - that’s their business. While you, on the other hand, sell consumer items, provide medical services, or deliver packages. Do what you're good at and let others help you with the rest. Focus your effort on building outstanding customer functionality, not becoming experts in 3rd party/open-source backing services.
 
-All that said, cloud native systems are best built leveraging managed backing services from a cloud provider. Cloud providers manage these resources at scale and bear the responsibility for security, scalability, and maintenance. You can also count on comprehensive monitoring, configurable redundancy, and availability – built into the service. They are battle-tested, performant and ready to go!
+With all that said, cloud native systems are best built leveraging managed backing services from a cloud provider. Cloud providers manage these resources at scale and bear the responsibility for security, scalability, and maintenance. You can also count on comprehensive monitoring, configurable redundancy, and availability – built into the service. They are battle-tested, performant, and ready to go!
 
 As they are built on top of existing cloud technologies, these services are infinitely more agile and flexible than traditional offerings. The inherent benefits of scalability and resiliency make them an attractive proposition for developers. And like everything in the cloud, they are constantly tuned and optimized for speed, security, and performance.
 
@@ -145,7 +145,7 @@ Figure 1-8 shows managed services available on the Azure platform.
 
 Understandably, you may have a concern with vendor lock-in. However, you must weigh this concern against that of bearing the full responsibility for hosting your own backing services. A smart approach might be to wrap each backing service inside of an abstraction shim, using a strategy pattern and externalized configuration. This way your code is decoupled from infrastructure concerns, giving you the ability to dynamically swap-out one backing service for another without a full redeployment of the system.
 
-Throughout this book, we will explore various types of cloud-managed backing services.
+Throughout this book, we'll explore various types of cloud-managed backing services.
 
 ## Thinking in terms of modern system design…
 
@@ -220,7 +220,7 @@ We discuss monitoring, scaling, resiliency, and self-healing in this book
 
 If you had only a handful of microservices, your DevOps *might* be able to manually manage the workload. They would need to pay close attention to the performance and traffic patterns, so they could manually scale accordingly. If, on the other hand, you have 10, 100 or even 1,000 services, all bets are off.
 
-When you’re operating at scale, [container orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/), is mandatory. Orchestration includes deployment, management, scaling, networking, and availability of your containers.
+When you’re operating at scale, [container orchestration](https://blog.newrelic.com/engineering/container-orchestration-explained/) is mandatory. Orchestration includes deployment, management, scaling, networking, and availability of your containers.
 
 Container orchestration is done with a special software program called (you guessed it) a container orchestrator. While several are available, [Kubernetes](https://kubernetes.io/) has become the de facto standard for the cloud native world. The Azure cloud features Kubernetes as a managed service, [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/), which means that Kubernetes is provided to you as a service (Platform as a Service). You are not responsible for provisioning or maintaining the Kubernetes infrastructure – a career path in and of itself.
 

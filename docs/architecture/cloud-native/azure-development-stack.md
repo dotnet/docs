@@ -98,7 +98,7 @@ GitHub offers plans for enterprise, team, professional, and free accounts and is
 
 [Continuous Integration (CI)](https://martinfowler.com/articles/continuousIntegration.html) works to establish a consistent, simplified, and automated *pipeline* approach to building, testing, and packaging applications. The process is typically invoked from a commit to your source code repository and composed of a series of steps to verify the commit shown in Figure 1-13.
 
-![ Steps in the CI Pipeline](media/steps-in-the-ci-pipeline.png)
+![ Steps in the CI Pipeline](media/steps-in-the-ci-pipeline.png)  
 **Figure 1-13**. Steps in the CI Pipeline
 
 The beauty of the pipeline approach is that additional steps and checks can be inserted to map the process to the deployment requirements of your organization.

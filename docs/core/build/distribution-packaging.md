@@ -95,7 +95,7 @@ The rest of the version isn't included in the version name. This allows the OS p
 
 The following lists the recommended packages:
 
-* `dotnet-sdk-[major]` - Installs latest sdk for runtime major
+* `dotnet-sdk-[major]` - Installs the latest sdk for runtime major
   * **Version:** \<sdk version>
   * **Example:** dotnet-sdk-2
   * **Dependencies:** `dotnet-sdk-[major].[latestminor]`

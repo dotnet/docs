@@ -74,7 +74,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well known locations for system integration.
 
-- (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of a `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
+- (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
 - (13) **Microsoft.NETCore.App.Host.<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
 

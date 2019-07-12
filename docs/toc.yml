@@ -314,8 +314,10 @@
     - name: Overview
       href: core/tools/index.md
     - name: Global Tools
-      href: core/tools/global-tools.md
+      expanded: true
       items:
+      - name: Overview
+        href: core/tools/global-tools.md
       - name: Create a Global Tool
         href: core/tools/global-tools-how-to-create.md
     - name: Elevated access

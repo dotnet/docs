@@ -76,7 +76,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
-- (13) **Microsoft.NETCore.App.Host.<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
+- (13) **Microsoft.NETCore.App.Host.\<rid>** contains a native binary for platform `rid`. This binary as a template when compiling a .NET Core application into a native binary for that platform.
 
 - (14) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target. This isn't provided on non-Windows platforms.
 

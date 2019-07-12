@@ -24,7 +24,7 @@ The runtime creates exactly one CCW for a managed object, regardless of the numb
 
 ![Multiple COM clients holding a reference to the CCW that exposes INew.](./media/com-callable-wrapper/com-callable-wrapper-clients.gif)
 
-COM callable wrappers are invisible to other classes running within the .NET Framework. Their primary purpose is to marshal calls between managed and unmanaged code; however, CCWs also manage the object identity and object lifetime of the managed objects they wrap.
+COM callable wrappers are invisible to other classes running within the .NET runtime. Their primary purpose is to marshal calls between managed and unmanaged code; however, CCWs also manage the object identity and object lifetime of the managed objects they wrap.
 
 ## Object Identity
 
@@ -36,21 +36,21 @@ Unlike the .NET client it wraps, the CCW is reference-counted in traditional COM
 
 ## Simulating COM interfaces
 
-CCW exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET Framework object is identical to invoking methods on a COM object.
+CCW exposes all public, COM-visible interfaces, data types, and return values to COM clients in a manner that is consistent with COM's enforcement of interface-based interaction. For a COM client, invoking methods on a .NET object is identical to invoking methods on a COM object.
 
 To create this seamless approach, the CCW manufactures traditional COM interfaces, such as **IUnknown** and **IDispatch**. As the following illustration shows, the CCW maintains a single reference on the .NET object that it wraps. Both the COM client and the .NET object interact with each other through the proxy and stub construction of the CCW.
 
 ![Diagram that shows how CCW manufactures COM interfaces.](./media/com-callable-wrapper/com-callable-wrapper-interfaces.gif)
 
-In addition to exposing the interfaces that are explicitly implemented by a class in the managed environment, the .NET Framework supplies implementations of the COM interfaces listed in the following table on behalf of the object. A .NET class can override the default behavior by providing its own implementation of these interfaces. However, the runtime always provides the implementation for the **IUnknown** and **IDispatch** interfaces.
+In addition to exposing the interfaces that are explicitly implemented by a class in the managed environment, the .NET runtime supplies implementations of the COM interfaces listed in the following table on behalf of the object. A .NET class can override the default behavior by providing its own implementation of these interfaces. However, the runtime always provides the implementation for the **IUnknown** and **IDispatch** interfaces.
 
 |Interface|Description|
 |---------------|-----------------|
 |**IDispatch**|Provides a mechanism for late binding to type.|
 |**IErrorInfo**|Provides a textual description of the error, its source, a Help file, Help context, and the GUID of the interface that defined the error (always **GUID_NULL** for .NET classes).|
-|**IProvideClassInfo**|Enables COM clients to gain access to the **ITypeInfo** interface implemented by a managed class.|
+|**IProvideClassInfo**|Enables COM clients to gain access to the **ITypeInfo** interface implemented by a managed class. Returns `COR_E_NOTSUPPORTED` on .NET Core for types not imported from COM. |
 |**ISupportErrorInfo**|Enables a COM client to determine whether the managed object supports the **IErrorInfo** interface. If so, enables the client to obtain a pointer to the latest exception object. All managed types support the **IErrorInfo** interface.|
-|**ITypeInfo**|Provides type information for a class that is exactly the same as the type information produced by Tlbexp.exe.|
+|**ITypeInfo** (.NET Framework Only)|Provides type information for a class that is exactly the same as the type information produced by Tlbexp.exe.|
 |**IUnknown**|Provides the standard implementation of the **IUnknown** interface with which the COM client manages the lifetime of the CCW and provides type coercion.|
 
  A managed class can also provide the COM interfaces described in the following table.
@@ -59,7 +59,7 @@ In addition to exposing the interfaces that are explicitly implemented by a clas
 |---------------|-----------------|
 |The (\_*classname*) class interface|Interface, exposed by the runtime and not explicitly defined, that exposes all public interfaces, methods, properties, and fields that are explicitly exposed on a managed object.|
 |**IConnectionPoint** and **IConnectionPointContainer**|Interface for objects that source delegate-based events (an interface for registering event subscribers).|
-|**IDispatchEx**|Interface supplied by the runtime if the class implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|
+|**IDispatchEx** (.NET Framework Only)|Interface supplied by the runtime if the class implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|
 |**IEnumVARIANT**|Interface for collection-type classes, which enumerates the objects in the collection if the class implements **IEnumerable**.|
 
 ## Introducing the class interface
@@ -93,7 +93,7 @@ public class Mammal
 }
 ```
 
-The COM client can obtain a pointer to a class interface named `_Mammal`, which is described in the type library that the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md) tool generates. If the `Mammal` class implemented one or more interfaces, the interfaces would appear under the coclass.
+The COM client can obtain a pointer to a class interface named `_Mammal`. On .NET Framework, you can use the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md) tool to generate a type library containing the `_Mammal` interface definition. The Type Library Exporter is not supported on .NET Core. If the `Mammal` class implemented one or more interfaces, the interfaces would appear under the coclass.
 
 ```
 [odl, uuid(…), hidden, dual, nonextensible, oleautomation]
@@ -193,6 +193,7 @@ If your application requires early-bound calls to COM event interface methods, y
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
 - [COM Wrappers](com-wrappers.md)
-- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
+- [Exposing .NET Framework Components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Exposing .NET Core Components to COM](../../core/native-interop/exposing-dotnet-components-to-com.md)
 - [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)
 - [Runtime Callable Wrapper](runtime-callable-wrapper.md)

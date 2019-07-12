@@ -183,7 +183,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all objects from the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -778,7 +778,15 @@
         <summary>Tries to return an object from the beginning of the <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1" /> without removing it.</summary>
         <returns>
           <see langword="true" /> if an object was returned successfully; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For determining whether the collection contains any items, use of the <xref:System.Collections.Concurrent.ConcurrentQueue`1.IsEmpty> property is recommended rather than peeking.
+
+          ]]></format>
+        </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
       </Docs>
     </Member>

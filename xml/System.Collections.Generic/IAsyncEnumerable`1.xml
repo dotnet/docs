@@ -23,7 +23,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <summary>Exposes an enumerator that provides asynchronous iteration over values of a specified type.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,9 +48,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> that may be used to cancel the asynchronous iteration.</param>
+        <summary>Returns an enumerator that iterates asynchronously through the collection.</summary>
+        <returns>An enumerator that can be used to iterate asynchronously through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -9,15 +9,19 @@ ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 ---
 # nameof operator (C# reference)
 
-The `nameof` operator obtains the simple name of a variable, type, or member as the string constant:
+The `nameof` operator obtains the name of a variable, type, or member as the string constant:
 
 [!code-csharp-interactive[nameof operator](~/samples/csharp/language-reference/operators/NameOfOperator.cs#Examples)]
+
+As the preceding example shows, in the case of a type and a namespace, the produced name is not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
 
 The `nameof` operator is evaluated at compile time, and has no effect at run time.
 
 You can use the `nameof` operator to make the argument-checking code more maintainable:
 
 [!code-csharp[nameof and argument check](~/samples/csharp/language-reference/operators/NameOfOperator.cs#ExceptionMessage)]
+
+The `nameof` operator is available in C# 6 and later.
 
 ## C# language specification
 

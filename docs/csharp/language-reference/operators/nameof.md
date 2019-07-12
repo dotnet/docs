@@ -17,7 +17,7 @@ The `nameof` operator is evaluated at compile time, and has no effect at run tim
 
 You can use the `nameof` operator to make the argument-checking code more maintainable:
 
-[!code-csharp-interactive[nameof and argument check](~/samples/csharp/language-reference/operators/NameOfOperator.cs#ExceptionMessage)]
+[!code-csharp[nameof and argument check](~/samples/csharp/language-reference/operators/NameOfOperator.cs#ExceptionMessage)]
 
 ## C# language specification
 

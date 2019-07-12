@@ -40,8 +40,8 @@
       <Docs>
         <param name="reader">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a big-endian <see cref="T:System.Int16" />.</summary>
+        <returns><see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int16" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,8 +67,8 @@
       <Docs>
         <param name="reader">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a big-endian <see cref="T:System.Int32" />.</summary>
+        <returns><see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int32" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
       <Docs>
         <param name="reader">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a little-endian <see cref="T:System.Int16" />.</summary>
+        <returns><see langword="true" /> if the read operation is successful; <see langword="false" /> if there isn't enough data for an <see cref="T:System.Int16" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

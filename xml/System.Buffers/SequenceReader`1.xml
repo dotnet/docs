@@ -50,8 +50,8 @@
         <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sequence">The read-only sequence over which to create the <see cref="T:System.Buffers.SequenceReader`1" />.</param>
+        <summary>Creates a <see cref="T:System.Buffers.SequenceReader`1" /> over a given <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
         <Parameter Name="count" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="count">The number of items to advance.</param>
+        <summary>Moves the reader ahead a specified number of items.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,9 +98,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value past which the reader is to advance.</param>
+        <summary>Advances past consecutive instances of the given <paramref name="value" />.</summary>
+        <returns>The number of positions the reader has advanced.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +123,9 @@
         <Parameter Name="values" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="values">The values to be skipped.</param>
+        <summary>Skips consecutive instances of any of the specified <paramref name="values" />.</summary>
+        <returns>The number of positions the reader has advanced.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,10 +149,10 @@
         <Parameter Name="value1" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value0">To be added.</param>
-        <param name="value1">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value0">The first value to skip.</param>
+        <param name="value1">The second value to skip.</param>
+        <summary>Advances past consecutive instances of either of two specified values.</summary>
+        <returns>The number of positions the reader has advanced.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,11 +177,11 @@
         <Parameter Name="value2" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value0">To be added.</param>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value0">The first value to skip.</param>
+        <param name="value1">The second value to skip.</param>
+        <param name="value2">The third value to skip.</param>
+        <summary>Advances past consecutive instances of any of three specified values.</summary>
+        <returns>The number of positions the reader has advanced.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,11 +208,11 @@
       </Parameters>
       <Docs>
         <param name="value0">To be added.</param>
-        <param name="value1">To be added.</param>
-        <param name="value2">To be added.</param>
-        <param name="value3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value1">The second value to skip.</param>
+        <param name="value2">The third value to skip.</param>
+        <param name="value3">The fourth value to skip.</param>
+        <summary>Advances past consecutive instances of any of four specified values.</summary>
+        <returns>The number of positions the reader has advanced.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,8 +237,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total number of <typeparamref name="T" /> values processed by the reader.</summary>
+        <value>The total number of values processed by the reader.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,8 +263,8 @@
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Span`1" /> that contains the current segment in the <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</summary>
+        <value>A span that contains the current segment in the sequence.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,8 +289,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the index in the <see cref="P:System.Buffers.SequenceReader`1.CurrentSpan" />.</summary>
+        <value>The index in the <see cref="P:System.Buffers.SequenceReader`1.CurrentSpan" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,8 +315,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether there is no more data in the <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</summary>
+        <value><see langword="true" /> when there is no more data in the <see cref="P:System.Buffers.SequenceReader`1.Sequence" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,9 +339,9 @@
         <Parameter Name="advancePast" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="next">To be added.</param>
-        <param name="advancePast">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="next">The span to compare the next items to.</param>
+        <param name="advancePast"><see langword="true" /> to move past the <paramref name="next" /> values if they are found, or <see langword="false" /> to not move past them. </param>
+        <summary>Checks whether the values specified in a read-only span are next in the sequence.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -365,9 +365,9 @@
         <Parameter Name="advancePast" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="next">To be added.</param>
-        <param name="advancePast">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="next">The value to compare the next items to.</param>
+        <param name="advancePast"><see langword="true" /> to move past the <paramref name="next" /> values if they are found, or <see langword="false" /> to not move past them. </param>
+        <summary>Checks whether a specified value is next in the sequence.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,8 +393,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the count of items in the reader's <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</summary>
+        <value>The count of items in the reader's <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -419,8 +419,8 @@
         <ReturnType>System.SequencePosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current position in the <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</summary>
+        <value>The current position in the <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,8 +445,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets  the remaining items in the reader's <see cref="P:System.Buffers.SequenceReader`1.Sequence" />.</summary>
+        <value>The remaining items in the reader's <see cref="P:System.Buffers.SequenceReader`1.Sequence" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,9 +469,12 @@
         <Parameter Name="count" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="count">The number of items.</param>
+        <summary>Moves the reader back the specified number of items.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="count" /> is negative or greater than <see cref="P:System.Buffers.SequenceReader`1.Consumed" />.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Sequence">
@@ -495,8 +498,8 @@
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the underlying <see cref="T:System.Buffers.ReadOnlySequence`1" /> for the reader.</summary>
+        <value>The underlying read-only sequence for the reader.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,10 +522,10 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="delimiter">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delimiter">The delimiter to search for.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the <paramref name="delimiter" /> if it is found; otherwise, <see langword="false" />.</param>
+        <summary>Searches for a specified delimiter and optionally advances past it if it is found.</summary>
+        <returns><see langword="true" /> if the given <paramref name="delimiter" /> was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -545,10 +548,10 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="delimiters">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="delimiters">The delimiters to search for.</param>
+        <param name="advancePastDelimiter">>see langword="true" /> to move past the first instance of any of the given <paramref name="delimiters" />; <see lanword="false" /> to not move past the delimiter.</param>
+        <summary>Searches for any of a number of specified delimiters and optionally advances past the first one to be found.</summary>
+        <returns><see langword="true" /> if any of the given <paramref name="delimiters" /> was found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,10 +579,15 @@
         <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="destination">Destination span to copy to.</param>
+        <summary>Copies data from the current position to the given destination span if there
+            is enough data to fill it.</summary>
+        <returns><see langword="true" /> if there is enough data to completely fill the <paramref name="destination" /> span; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method copies a fixed amount of data out of the sequence if possible. It does not advance the reader. To look ahead for a specific stream of data, use  <xref:System.Buffers.SequenceReader`1.IsNext(System.ReadOnlySpan{`0},System.Boolean)>.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryPeek">
@@ -606,9 +614,9 @@
         <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The next value, or the default value if at the end of the reader.</param>
+        <summary>Peeks at the next value without advancing the reader.</summary>
+        <returns><see langword="true" /> if the reader is not at its end and the peek operation succeeded; <see langword="false" /> if at the end of the reader.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,9 +639,9 @@
         <Parameter Name="value" Type="T" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The next value, or the default value if at the end of the reader.</param>
+        <summary>Reads the next value and advance the reader.</summary>
+        <returns><see langword="true" /> if the reader is not at its end and the read operation succeeded; <see langword="false" /> if at the end of the reader.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,11 +665,11 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <param name="delimiter">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sequence">When the method returns, contains the data read, if any.</param>
+        <param name="delimiter">A read-only span that contains one or more delimiters.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the <paramref name="delimiter" /> if found.</param>
+        <summary>Tries to read data until the entire delimiter specified as a read-only span matches.</summary>
+        <returns><see langword="true" /> if the <paramref name="delimiter" /> was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -685,11 +693,11 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <param name="delimiter">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sequence">When the method returns, contains the data read, if any.</param>
+        <param name="delimiter">The delimiter to look for.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the <paramref name="delimiter" /> if found.</param>
+        <summary>Tries to read everything up to the given <paramref name="delimiter" />.</summary>
+        <returns><see langword="true" /> if the <paramref name="delimiter" /> was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,11 +721,11 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="span">To be added.</param>
-        <param name="delimiter">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="span">When the method returns, contains the data read, if any.</param>
+        <param name="delimiter">The delimiter to look for.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the <paramref name="delimiter" /> if found.</param>
+        <summary>Tries to read everything up to the given <paramref name="delimiter" />.</summary>
+        <returns><see langword="true" /> if the <paramref name="delimiter" /> was found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -742,12 +750,12 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <param name="delimiter">To be added.</param>
-        <param name="delimiterEscape">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sequence">When the method returns, contains the data read, if any.</param>
+        <param name="delimiter">The delimiter to look for.</param>
+        <param name="delimiterEscape">A value that indicates that an immediately following <paramref name="delimiter" /> is to be skipped.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the <paramref name="delimiter" /> if found.</param>
+        <summary>Tries to read everything up to the given <paramref name="delimiter" />, ignoring delimiters that are preceded by <paramref name="delimiterEscape" />.</summary>
+        <returns><see langword="true" /> if the <paramref name="delimiter" /> was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,12 +780,12 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="span">To be added.</param>
-        <param name="delimiter">To be added.</param>
-        <param name="delimiterEscape">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="span">When the method returns, contains the data read, if any.</param>
+        <param name="delimiter">The delimiter to look for.</param>
+        <param name="delimiterEscape">>A value that indicates that an immediately following <paramref name="delimiter" /> is to be skipped.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the <paramref name="delimiter" /> if found.</param>
+        <summary>Tries to read everything up to the given <paramref name="delimiter" />, ignoring delimiters that are preceded by <paramref name="delimiterEscape" />.</summary>
+        <returns><see langword="true" /> if the <paramref name="delimiter" /> was found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -801,11 +809,11 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <param name="delimiters">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sequence">When the method returns, contains the data read, if any.</param>
+        <param name="delimiters">The delimiters to look for.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the first found instance of any of the given <paramref name="delimiters" />.</param>
+        <summary>Tries to read everything up to any of the specified <paramref name="delimiters" />.</summary>
+        <returns><see langword="true" /> if any of the <paramref name="delimiters" /> were found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -829,11 +837,11 @@
         <Parameter Name="advancePastDelimiter" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="span">To be added.</param>
-        <param name="delimiters">To be added.</param>
-        <param name="advancePastDelimiter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="span">When the method returns, contains the data read, if any.</param>
+        <param name="delimiters">The delimiters to look for.</param>
+        <param name="advancePastDelimiter"><see langword="true" /> to move past the first found instance of any of the given <paramref name="delimiters" />.</param>
+        <summary>Tries to read everything up to any of the specified <paramref name="delimiters" />.</summary>
+        <returns><see langword="true" /> if any of the <paramref name="delimiters" /> were found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -858,7 +866,7 @@
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the unread portion of the <see cref="P:System.Buffers.SequenceReader`1.CurrentSpan" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

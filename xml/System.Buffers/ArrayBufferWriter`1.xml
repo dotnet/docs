@@ -21,8 +21,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the items in this <see cref="T:System.Buffers.ArrayBufferWriter`1" /> instance.</typeparam>
+    <summary>Represents a heap-based, array-backed output sink into which <typeparam name="T" /> data can be written.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates an instance of an <see cref="T:System.Buffers.ArrayBufferWriter`1" /> to which data can be written, with the default initial capacity.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,9 +59,12 @@
         <Parameter Name="initialCapacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="initialCapacity">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="initialCapacity">The minimum capacity with which to initialize the underlying buffer.</param>
+        <summary>Creates an instance of an <see cref="T:System.Buffers.ArrayBufferWriter`1" /> to which data can be written, with a specified initial capacity.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            <paramref name="initialCapacity" /> is less than or equal to 0.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Advance">
@@ -86,9 +89,20 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="count">The number of items written.</param>
+        <summary>Notifies the <see cref="T:System.Buffers.IBufferWriter`1" /> that <paramref name="count" /> items were written to the output <see cref="T:System.Span`1" />/<see cref="T:System.Memory`1" /></summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+You must request a new buffer after calling `Advance` to continue writing more data and cannot write to a previously acquired buffer.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+            <paramref name="count" /> is negative.
+            </exception>
+        <exception cref="T:System.InvalidOperationException">
+            The method call attempts to advance past the end of the underlying buffer.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -107,8 +121,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the total amount of space within the underlying buffer.</summary>
+        <value>The total capacity of the underlying buffer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +143,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the data written to the underlying buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+You must clear the <xref:System.Buffers.ArrayBufferWriter`1> before trying to reuse it.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FreeCapacity">
@@ -149,8 +167,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the amount of available space that can be written to without forcing the underlying buffer to grow.</summary>
+        <value>The space available for writing without forcing the underlying buffer to grow.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,10 +193,17 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sizeHint">The minimum requested length of the <see cref="T:System.Memory`1" />.</param>
+        <summary>Returns a <see cref="T:System.Memory`1" /> to write to that is at least the length specified by <paramref name="sizeHint" />.</summary> 
+        <returns>A <see cref="T:System.Memory`1" /> whose length is at least <paramref name="sizeHint" />.  If <paramref name="sizeHint" /> is not provided or is equal to 0, some non-empty buffer is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method never returns <xref:System.Memory%601.Empty?displayProperty=nameWithType>.
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+            <paramref name="sizeHint" /> is negative.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="GetSpan">
@@ -203,9 +228,17 @@
       </Parameters>
       <Docs>
         <param name="sizeHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a <see cref="T:System.Span`1" /> to write to that is at least a specified length.
+            </summary>
+        <returns>A span of at least <paramref name="sizeHint" /> in length. If <paramref name="sizeHint" /> is not provided or is equal to 0, some non-empty buffer is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method never returns <xref:System.Memory%601.Empty?displayProperty=nameWithType>.
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+            <paramref name="sizeHint" /> is negative.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WrittenCount">
@@ -224,8 +257,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the amount of data written to the underlying buffer.</summary>
+        <value>The amount of data written to the underlying buffer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,8 +278,8 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.ReadOnlyMemory`1" /> that contains the data written to the underlying buffer so far.</summary>
+        <value>The data written to the underlying buffer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +299,7 @@
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a <see cref="T:System.ReadOnlySpan`1" /> that contains the data written to the underlying buffer so far.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

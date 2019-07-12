@@ -173,6 +173,9 @@
         <param name="value">The read-only span to be written to <paramref name="writer" />.</param>
         <summary>Writes the contents of <paramref name="value" /> to <paramref name="writer" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            <paramref name="writer" /> is shorter than <paramref name="value" />.
+            </exception>
       </Docs>
     </Member>
   </Members>

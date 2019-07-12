@@ -13,7 +13,7 @@ The `nameof` operator obtains the name of a variable, type, or member as the str
 
 [!code-csharp-interactive[nameof operator](~/samples/csharp/language-reference/operators/NameOfOperator.cs#Examples)]
 
-As the preceding example shows, in the case of a type and a namespace, the produced name is not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
+As the preceding example shows, in the case of a type and a namespace, the produced name is usually not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
 
 The `nameof` operator is evaluated at compile time, and has no effect at run time.
 

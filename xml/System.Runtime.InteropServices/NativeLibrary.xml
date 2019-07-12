@@ -136,8 +136,8 @@ This is a simple wrapper around OS calls and does not perform any name mangling.
 Given a library name, this method searches specific paths based on the  runtime configuration, input parameters, and attributes of the calling assembly. If the `searchPath` parameter is non-null, the flags in this enumeration are used. Otherwise, the flags specified by the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute> on the calling assembly, if any are present, are used. This method does not invoke the following managed callbacks for native library resolution: 
 
 - The per-assembly registered callback.
-- <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll%2A?displayProperty=nameWithType>.
-- <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDllEvent?displayProperty=nameWithType>.
+- The <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll%2A?displayProperty=nameWithType> method.
+- The <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> event.
 
          ]]></format>
          </remarks>

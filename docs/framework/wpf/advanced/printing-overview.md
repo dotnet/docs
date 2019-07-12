@@ -63,7 +63,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
  ![Screenshot shows the XPS print system.](./media/printing-overview/xml-paper-specification-print-system.png)  
   
 ### Basic XPS Printing  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] defines both a basic and advanced [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)]. For those applications that do not require extensive print customization or access to the complete XPS feature set, basic print support is available. Basic print support is exposed through a print dialog control that requires minimal configuration and features a familiar [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. Many XPS features are available using this simplified print model.  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] defines both a basic and advanced API. For those applications that do not require extensive print customization or access to the complete XPS feature set, basic print support is available. Basic print support is exposed through a print dialog control that requires minimal configuration and features a familiar [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. Many XPS features are available using this simplified print model.  
   
 #### PrintDialog  
  The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control provides a single entry point for [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], configuration, and XPS job submission. For information about how to instantiate and use the control, see [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  

@@ -26,7 +26,7 @@ helpviewer_keywords:
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 ---
 # Input Overview
-<a name="introduction"></a> The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] subsystem provides a powerful [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] for obtaining input from a variety of devices, including the mouse, keyboard, touch, and stylus. This topic describes the services provided by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and explains the architecture of the input systems.
+<a name="introduction"></a> The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] subsystem provides a powerful API for obtaining input from a variety of devices, including the mouse, keyboard, touch, and stylus. This topic describes the services provided by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and explains the architecture of the input systems.
 
 <a name="input_api"></a>
 ## Input API

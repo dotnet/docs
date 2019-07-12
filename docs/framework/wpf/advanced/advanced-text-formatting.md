@@ -32,7 +32,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of APIs for incl
 ## Using the Text Formatter  
  <xref:System.Windows.Media.TextFormatting.TextFormatter> is the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] text formatting engine and provides services for formatting and breaking text lines. The text formatter can handle different text character formats and paragraph styles, and includes support for international text layout.  
   
- Unlike a traditional text [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
+ Unlike a traditional text API, the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   
  ![Diagram of text layout client and TextFormatter](./media/advanced-text-formatting/text-layout-textformatter-interaction.png)  
   

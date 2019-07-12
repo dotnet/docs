@@ -136,7 +136,7 @@ RadialGradientBrushes with different GradientOrigin, Center, RadiusX, and Radius
   
 <a name="specifyinggradientcolors"></a>   
 ## Specifying Transparent or Partially-Transparent Gradient Stops  
- Because gradient stops do not provide an opacity property, you must specify the alpha channel of colors using  [!INCLUDE[TLA#tla_argb](../../../../includes/tlasharptla-argb-md.md)] hexadecimal notation in markup or use the <xref:System.Windows.Media.Color.FromScRgb%2A?displayProperty=nameWithType> method to create gradient stops that are transparent or partially transparent. The following sections explain how to create partially transparent gradient stops in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code.  
+ Because gradient stops do not provide an opacity property, you must specify the alpha channel of colors using  ARGB hexadecimal notation in markup or use the <xref:System.Windows.Media.Color.FromScRgb%2A?displayProperty=nameWithType> method to create gradient stops that are transparent or partially transparent. The following sections explain how to create partially transparent gradient stops in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code.  
   
 <a name="argbsyntax"></a>   
 ### Specifying Color Opacity in "XAML"  

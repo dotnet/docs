@@ -71,7 +71,7 @@ Both Visual Studio and Visual Studio Code have tight integration with the Azure 
 
 ### Other Open Source Editors
 
-But it doesn't stop there. Not only does .NET Core embrace cross-platform support, but it can be developed across cross-platform. Figure 1-12 presents open-source development tools that can be used to construct .NET Core cloud native applications across multiple environments.
+Developers can use other open-source development tools to build .NET Core cloud native applications. Figure 1-12 presents many of them.
 
 ![Cross-platform editors for .NET Core](media/cross-platform-editors-for-dotnet-core.png)
 **Figure 1-12**. Cross-platform editors for .NET Core

@@ -100,7 +100,7 @@ The following lists the recommended packages:
   * **Example:** dotnet-sdk-2
   * **Dependencies:** `dotnet-sdk-[major].[latestminor]`
 
-* `dotnet-sdk-[major].[minor]` - Installs latest sdk for specific runtime
+* `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
   * **Version:** \<runtime version>
   * **Example:** dotnet-sdk-2.1
   * **Contains:** (3),(4)

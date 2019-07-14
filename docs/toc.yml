@@ -203,6 +203,14 @@
   - name: Tutorials
     href: core/tutorials/index.md
     items:
+    - name: Templates for the CLI
+      items:
+      - name: 1 - Create an item template
+        href: core/tutorials/cli-templates-create-item-template.md
+      - name: 2 - Create a project template
+        href: core/tutorials/cli-templates-create-project-template.md
+      - name: 3 - Create a template pack
+        href: core/tutorials/cli-templates-create-template-pack.md
     - name: Get started with .NET Core on macOS
       href: core/tutorials/using-on-macos.md
     - name: Get started with .NET Core on macOS using Visual Studio for Mac
@@ -219,8 +227,6 @@
       href: core/tutorials/aspnet-core.md
     - name: Hosting .NET Core from native code
       href: core/tutorials/netcore-hosting.md
-    - name: Create a custom template for dotnet new
-      href: core/tutorials/create-custom-template.md
   - name: Packages, Metapackages and Frameworks
     href: core/packages.md
   - name: Changes in CLI overview

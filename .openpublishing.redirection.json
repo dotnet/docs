@@ -241,6 +241,10 @@
             "redirect_url": "/dotnet/core/tutorials"
         },
         {
+            "source_path": "docs/core/tutorials/create-custom-template.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-item-template"
+        },
+        {
             "source_path": "docs/core/tutorials/libraries-with-vs.md",
             "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
         },
@@ -427,8 +431,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/delegate.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/double.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/dynamic.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/exception-handling-statements.md",
@@ -503,6 +515,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/new-operator"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/object.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading"
         },
@@ -529,6 +545,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/stackalloc.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/stackalloc"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/string.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true.md",

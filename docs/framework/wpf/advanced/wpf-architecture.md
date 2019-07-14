@@ -58,7 +58,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
 ## System.Windows.Media.Visual  
  With a system defined, the next step is getting pixels drawn to the screen. The <xref:System.Windows.Media.Visual> class provides for building a tree of visual objects, each optionally containing drawing instructions and metadata about how to render those instructions (clipping, transformation, etc.). <xref:System.Windows.Media.Visual> is designed to be extremely lightweight and flexible, so most of the features have no public API exposure and rely heavily on protected callback functions.  
   
- <xref:System.Windows.Media.Visual> is really the entry point to the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] composition system. <xref:System.Windows.Media.Visual> is the point of connection between these two subsystems, the managed [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] and the unmanaged milcore.  
+ <xref:System.Windows.Media.Visual> is really the entry point to the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] composition system. <xref:System.Windows.Media.Visual> is the point of connection between these two subsystems, the managed API and the unmanaged milcore.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] displays data by traversing the unmanaged data structures managed by the milcore. These structures, called composition nodes, represent a hierarchical display tree with rendering instructions at each node. This tree, illustrated on the right hand side of the figure below, is only accessible through a messaging protocol.  
   

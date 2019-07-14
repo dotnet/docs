@@ -337,10 +337,10 @@ Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As 
 
     ' Selects the properties which have unequal values into a sequence of those properties.
     Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance) 
-							Where Not ignore.Contains([property].Name)
-							Let selfValue = [property].GetValue(self, Nothing)
-							Let toValue = [property].GetValue([to], Nothing)
-							Where Not Equals(selfValue, toValue) Select [property]
+                            Where Not ignore.Contains([property].Name)
+                            Let selfValue = [property].GetValue(self, Nothing)
+                            Let toValue = [property].GetValue([to], Nothing)
+                            Where Not Equals(selfValue, toValue) Select [property]
     Return Not unequalProperties.Any()
 End Function
 ```

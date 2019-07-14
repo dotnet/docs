@@ -8,4 +8,3 @@
 |Version|4.7.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Windows.Forms.ContextMenuStrip.SourceControl?displayProperty=nameWithType></li></ul>|
-

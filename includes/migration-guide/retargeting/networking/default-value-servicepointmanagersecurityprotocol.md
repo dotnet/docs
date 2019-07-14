@@ -8,4 +8,3 @@
 |Version|4.7|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Net.ServicePointManager.SecurityProtocol?displayProperty=nameWithType></li></ul>|
-

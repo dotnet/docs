@@ -276,7 +276,6 @@ End Class
 Dim allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, New DogHairLengthComparer())
 ```
 
-
 * Intersection between two sets:
 
 ```csharp

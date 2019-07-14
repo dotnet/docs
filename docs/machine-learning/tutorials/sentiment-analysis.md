@@ -357,7 +357,6 @@ F1Score: 84.04%
 Sentiment: This was a very bad steak | Prediction: Negative | Probability: 0.1027377
 =============== End of Predictions ===============
 
-
 =============== Prediction Test of loaded model with a multiple samples ===============
 
 Sentiment: This was a horrible meal | Prediction: Negative | Probability: 0.1369192

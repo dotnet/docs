@@ -8,4 +8,3 @@
 |Version|4.7.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType></li><li><xref:System.Windows.Forms.DomainUpDown.DownButton?displayProperty=nameWithType></li></ul>|
-

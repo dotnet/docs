@@ -48,7 +48,7 @@ After running the analysis in Visual Studio, you'll see your .NET Portability re
 
 ![Portability Summary](./media/portability-analyzer/portabilitysummary.png)
 
-The Portability Summary section of the report shows the the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
+The Portability Summary section of the report shows the portability percentage for each assembly included in the run. In the previous example, 89.74% of the .NET Framework APIs used in the `ConsoleAppFramework` app are available in .NET Core + Platform Extensions v2.2. If you run the .NET Portability Analyzer tool against multiple assemblies, each assembly should have a row in the Portability Summary report.
 
 #### Details
 

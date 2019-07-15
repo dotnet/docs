@@ -191,7 +191,7 @@ In this tutorial, you learned how to:
 
 ### Additional Resources
 
-To learn more about topics mentioned in this tutorial, visit any of the following resources.
+To learn more about topics mentioned in this tutorial, visit the following resources:
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Model Builder Data Formats](../automate-training-with-model-builder.md#data-formats)

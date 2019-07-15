@@ -57,4 +57,4 @@ The following image shows the process for accessing COM objects through the runt
 - [COM Wrappers](com-wrappers.md)
 - [COM Callable Wrapper](com-callable-wrapper.md)
 - [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
-- [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
+- [Importing a Type Library as an Assembly](../../framework/interop/importing-a-type-library-as-an-assembly.md)

@@ -43,7 +43,7 @@ aximp [options]{file.dll | file.ocx}
 |`/nologo`|Suppresses the Microsoft startup banner display.|  
 |`/out:` *filename*|Specifies the name of the assembly to create.|  
 |`/publickey:` *filename*|Signs the resulting control with a strong name using the public key found in the file specified by *filename*.|  
-|`/rcw:` *filename*|Uses the specified runtime callable wrapper instead of generating a new one. You may specify multiple instances. The current directory is used for relative paths. For more information, see [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md).|  
+|`/rcw:` *filename*|Uses the specified runtime callable wrapper instead of generating a new one. You may specify multiple instances. The current directory is used for relative paths. For more information, see [Runtime Callable Wrapper](../../../docs/standard/native-interop/runtime-callable-wrapper.md).|  
 |`/silent`|Suppresses the display of success messages.|  
 |`/source`|Generates C# source code for the Windows Forms wrapper.|  
 |`/verbose`|Specifies verbose mode; displays additional progress information.|  

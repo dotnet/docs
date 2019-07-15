@@ -118,6 +118,20 @@
       href: standard/native-interop/best-practices.md
     - name: Charsets and marshaling
       href: standard/native-interop/charset.md
+    - name: COM Interop
+      href: standard/native-interop/cominterop.md
+      items:
+        - name: COM Wrappers
+          href: standard/native-interop/com-wrappers.md
+          items:
+            - name: Runtime Callable Wrapper
+              href: standard/native-interop/runtime-callable-wrapper.md
+            - name: COM Callable Wrapper
+              href: standard/native-interop/com-callable-wrapper.md
+        - name: Qualifying .NET types for COM interoperation
+          href: standard/native-interop/qualifying-net-types-for-interoperation.md
+    - name: Applying Interop Attributes
+      href: standard/native-interop/applying-interop-attributes.md
   - name: Collections and Data Structures
     href: standard/collections/
   - name: Numerics in .NET

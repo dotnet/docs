@@ -49,7 +49,7 @@ The following image shows the process for accessing COM objects through the runt
 |Interface|Description|  
 |---------------|-----------------|  
 |**IConnectionPoint** and **IConnectionPointContainer**|The RCW converts objects that expose the connection-point event style to delegate-based events.|  
-|**IDispatchEx**|If the class implements **IDispatchEx**, the RCW implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|  
+|**IDispatchEx** (.NET Framework Only) |If the class implements **IDispatchEx**, the RCW implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|  
 |**IEnumVARIANT**|Enables COM types that support enumerations to be treated as collections.|  
   
 ## See also

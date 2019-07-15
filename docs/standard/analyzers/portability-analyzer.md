@@ -56,13 +56,13 @@ The Portability Summary section of the report shows the portability percentage f
 
 The Details section of the report lists the APIs missing from one of the Target Platforms. 
 
- - Target type: the type has missing API from a Target Platform 
- - Target member: the method is missing from a Target Platform 
- - Assembly name: the .NET Framework assembly that the missing
-   API lives in. 
- - Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
-   supported on this Target Platform. 
- - Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
+- Target type: the type has missing API from a Target Platform 
+- Target member: the method is missing from a Target Platform 
+- Assembly name: the .NET Framework assembly that the missing
+  API lives in. 
+- Each of the selected Target Platforms is one column, such as ".NET Core": "Not supported" value means the API is not
+  supported on this Target Platform. 
+- Recommended Changes: recommended API or technology to change to. Currently, this field is empty or out of date for a lot of APIs. Due to the large number of APIs, we have big challenge to keep it up. We are looking at alternate solutions to provide helpful information to customers.
 
 #### Missing Assemblies
 
@@ -71,5 +71,3 @@ The Details section of the report lists the APIs missing from one of the Target 
 You may find a Missing Assemblies section in your report. It tells you that this list of assemblies are referenced by your analyzed assemblies and were not analyzed. If it's an assembly that you own, include it in the Api portability analyzer run so that you can get API level detailed portability report for it. If it's third party library, looks for if they have newer version supporting your target platform. If so, consider moving to the newer version. Eventually, you would expect this list includes all the third party assemblies that your app depends on and confirmed that they have a version supporting your target platform.  
 
 For more information on the .NET Portability Analyzer, visit the [GitHub documentation](https://github.com/Microsoft/dotnet-apiport#documentation) and [A Brief Look at the .NET Portability Analyzer](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer) Channel 9 video.
-
-

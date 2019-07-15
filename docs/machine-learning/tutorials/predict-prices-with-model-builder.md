@@ -202,5 +202,5 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Model Builder Data Formats](../automate-training-with-model-builder.md#data-formats)
 - [Regression](../resources/glossary.md#regression)
-- [Regression Model Metrics](../resources/metrics#metrics-for-regression)
+- [Regression Model Metrics](../resources/metrics.md#metrics-for-regression)
 - [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml)

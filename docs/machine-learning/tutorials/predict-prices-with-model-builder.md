@@ -39,7 +39,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Create a directory named *Data* in your project to store the data set files.
 
-1. The data set used to train and evaluate the machine learning model is originally from the NYC TLC Taxi Trip data set. To download the data set, navigate to the [taxi-fare-train.csv download link](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv). When the page loads, right-click anywhere on the page and select **Save as**. Use the **Save As Dialog** to save the file in the *Data* folder you created at the previous step. 
+1. The data set used to train and evaluate the machine learning model is originally from the NYC TLC Taxi Trip data set. To download the data set, navigate to the [taxi-fare-train.csv download link](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/taxi-fare-train.csv). When the page loads, right-click anywhere on the page and select **Save as**. Use the **Save As Dialog** to save the file in the *Data* folder you created at the previous step. 
     
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 

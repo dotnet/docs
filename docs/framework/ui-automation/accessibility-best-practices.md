@@ -44,7 +44,7 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Visual_UI_Design"></a>   
 ## Visual UI Design  
- Best Practices in this section ensure that controls or applications use color and images effectively and are able to be used by [!INCLUDE[TLA2#tla_at#plural](../../../includes/tla2sharptla-atsharpplural-md.md)].  
+ Best Practices in this section ensure that controls or applications use color and images effectively and are able to be used by Assistive technologies.  
   
 <a name="Don_t_Hard_Code_Colors"></a>   
 ### Don't Hard-Code Colors  

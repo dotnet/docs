@@ -3,7 +3,7 @@ title: 'Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/08/2019
+ms.date: 07/15/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Predict prices using regression with Model Builder
 
-Learn how to use ML.NET Model Builder to build a [regression model](../resources/glossary.md#regression) to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
+Learn how to use ML.NET Model Builder to build a regression model() to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
 
 The Model Builder price prediction template can be used for any scenario requiring a numerical prediction value. Example scenarios include: house price prediction, demand prediction, and sales forecasting.
 
@@ -39,8 +39,8 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Create a directory named *Data* in your project to store the data set files.
 
-1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) data set and save it to the *Data* folder you created at the previous step. This data set is used to train and evaluate the machine learning model. This data set is originally from the [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
-
+1. The data set used to train and evaluate the machine learning model is originally from the NYC TLC Taxi Trip data set. To download the data set, navigate to the [taxi-fare-train.csv download link](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv). When the page loads, right-click anywhere on the page and select **Save as**. Use the **Save As Dialog** to save the file in the *Data* folder you created at the previous step. 
+    
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
 Each row in the `taxi-fare-train.csv` data set contains details of trips made by a taxi.
@@ -61,14 +61,14 @@ The `label` is the column you want to predict. When performing a regression task
 
 ## Choose a scenario
 
-To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Price Prediction`. For a more extensive list of scenarios visit the [Model Builder overview article](../automate-training-with-model-builder.md#scenarios).
+To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Price Prediction`. 
 
 1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning**.
 1. In the scenario step of the Model Builder tool, select *Price Prediction* scenario.
 
 ## Load the data
 
-Model Builder accepts data from two sources, a SQL Server database or a local file in csv or tsv format. For more information on data format requirements, visit the [Model Builder overview guide](../automate-training-with-model-builder.md#data-formats).
+Model Builder accepts data from two sources, a SQL Server database or a local file in csv or tsv format. 
 
 1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
 1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
@@ -102,7 +102,7 @@ Once training is complete, navigate to the evaluate step.
 
 ## Evaluate the model
 
-The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the *Best Model* entry along with metrics in *Best Model Quality (RSquared)*. Additionally, a summary table containing top five models and their metrics. Visit the following link to learn more about [evaluating model metrics](https://docs.microsoft.com/dotnet/machine-learning/resources/metrics#metrics-for-regression).
+The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the *Best Model* entry along with metrics in *Best Model Quality (RSquared)*. Additionally, a summary table containing top five models and their metrics. 
 
 If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, navigate to the code step. 
 
@@ -188,3 +188,13 @@ In this tutorial, you learned how to:
 > * Train the model
 > * Evaluate the model
 > * Use the model for predictions
+
+### Additional Resources
+
+To learn more about topics mentioned in this tutorial, visit any of the following resources.
+
+- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
+- [Model Builder Data Formats](../automate-training-with-model-builder.md#data-formats)
+- [Regression](../resources/glossary.md#regression)
+- [Regression Model Metrics](../resources/metrics#metrics-for-regression)
+- [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml)

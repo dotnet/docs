@@ -12,7 +12,7 @@ ms.author: "jekoritz"
 
 # Exposing .NET Core Components to COM
 
-In .NET Core, the process for exposing your .NET objects to COM has been significantly streamlined. The following process will walk you through how to expose a class to COM. This tutorial shows you how to:
+In .NET Core, the process for exposing your .NET objects to COM has been significantly streamlined in comparison to .NET Framework. The following process will walk you through how to expose a class to COM. This tutorial shows you how to:
 
 - Expose a class to COM from .NET Core.
 - Generate a COM server as part of building your .NET Core library.
@@ -35,7 +35,7 @@ The first step is to create the library.
 7. Add the `[Guid("<CLSID>")]` attribute to the class, with the class identifier GUID for the COM class you're implementing. For example, `[Guid("9f35b6f5-2c05-4e7f-93aa-ee087f6e7ab6")]`. As with the interface GUID, this GUID must be unique since it is the only identifier of this interface to COM.
 8. Add the `[ComVisible(true)]` attribute to both the interface and the class.
 
-> [!WARNING]
+> [!IMPORTANT]
 > Unlike in .NET Framework, .NET Core requires you to specify the CLSID of any class you want to be activatable via COM.
 
 ## Generate the COM host

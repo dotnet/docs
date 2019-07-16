@@ -20,21 +20,30 @@ helpviewer_keywords:
 ---
 # Floating-point numeric types (C# reference)
 
-The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#floating-point-literals). All floating-point types are also value types. All floating-point numeric types support [arithmetic](../operators/arithmetic-operators.md) [comparison, and equality](../operators/equality-operators.md) operators.
+The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#floating-point-literals). All floating-point types are also value types. All floating-point numeric types support [arithmetic](../operators/arithmetic-operators.md), [comparison, and equality](../operators/equality-operators.md) operators.
 
-The following table shows the precision and approximate ranges for the floating-point types:
+## Characteristics of the floating-point types
+
+C# supports the following predefined floating-point types:
   
-|Type|Approximate range|Precision|  
-|----------|-----------------------|---------------|  
-|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|  
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|  
-|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|  
+|C# type/keyword|Approximate range|Precision|.NET type|
+|----------|-----------------------|---------------|--------------|
+|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|<xref:System.Single?displayProperty=nameWithType>|
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|<xref:System.Double?displayProperty=nameWithType>|
+|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|<xref:System.Decimal?displayProperty=nameWithType>|
 
-The default value for all floating-point types is `0`. Each of the floating-point types has constants named `MinValue` and `MaxValue` for the minimum and maximum value for that type. The `float` and `double` types have additional constants for `PositiveInfinity`, `NegativeInfinity`, and `NaN` (for "Not a Number"). The `decimal` type includes constants for `Zero`, `One`, and `MinusOne`.
+In the preceding table, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
 
-The `decimal` type has more precision and a smaller range than both `float` and `double`, which makes it appropriate for financial and monetary calculations.
+```csharp
+double a = 12.3;
+System.Double b = 12.3;
+```
 
-You can mix integral types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
+The default value of each floating-point type is zero, `0`. Each of the floating-point types has the `MinValue` and `MaxValue` constants that provide the minimum and maximum finite value of that type. The `float` and `double` types also provide constants that represent not-a-number and infinity values. For example, the `double` type provides the following constants: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.
+
+Because the `decimal` type has more precision and a smaller range than both `float` and `double`, it's appropriate for financial and monetary calculations.
+
+You can mix [integral](integral-numeric-types.md) types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
 
 - If one of the floating-point types is `double`, the expression evaluates to `double`, or to [bool](../keywords/bool.md) in relational comparisons or comparisons for equality.
 - If there is no `double` type in the expression, the expression evaluates to `float`, or to [bool](../keywords/bool.md) in relational comparisons or comparisons for equality.
@@ -71,7 +80,7 @@ myMoney = 400.75M;
 
 ## Conversions
 
-There's an implicit conversion (called a *widening conversion*) from `float` to `double` because the range of `float` values is a proper subset of `double` and there is no loss of precision from `float` to `double`. 
+There's an implicit conversion (called a *widening conversion*) from `float` to `double` because the range of `float` values is a proper subset of `double` and there is no loss of precision from `float` to `double`.
 
 You must use an explicit cast to convert one floating-point type to another floating-point type when an implicit conversion isn't defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss. There's no implicit conversion between other floating-point types and the `decimal` type because the `decimal` type has greater precision than either `float` or `double`.
 
@@ -83,15 +92,11 @@ For more information about explicit numeric conversions, see [Explicit Numeric C
 
 - [C# Reference](../index.md)
 - [Integral types](integral-numeric-types.md)
-- [Default values table](../keywords/default-values-table.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
 - [Numerics in .NET](../../../standard/numerics.md)
 - [Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)
 - [Implicit Numeric Conversions Table](../keywords/implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](../keywords/explicit-numeric-conversions-table.md)
-- <xref:System.Single?displayProperty=nameWithType>
-- <xref:System.Double?displayProperty=nameWithType>
-- <xref:System.Decimal?displayProperty=nameWithType>
 - <xref:System.Numerics.Complex?displayProperty=nameWithType>
+- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

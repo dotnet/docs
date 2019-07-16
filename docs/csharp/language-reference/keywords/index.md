@@ -50,7 +50,7 @@ Keywords are predefined, reserved identifiers that have special meanings to the 
 |[descending](descending.md)|[dynamic](dynamic.md)|[equals](equals.md)|
 |[from](from-clause.md)|[get](get.md)|[global](global.md)|
 |[group](group-clause.md)|[into](into.md)|[join](join-clause.md)|
-|[let](let-clause.md)|[nameof](nameof.md)|[on](on.md)|
+|[let](let-clause.md)|[nameof](../operators/nameof.md)|[on](on.md)|
 |[orderby](orderby-clause.md)|[partial (type)](partial-type.md)|[partial (method)](partial-method.md)|
 |[remove](remove.md)|[select](select-clause.md)|[set](set.md)|
 |[value](value.md)|[var](var.md)|[when (filter condition)](when.md)|

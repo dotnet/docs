@@ -8,4 +8,3 @@
 |Version|4.7.2|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)?displayProperty=nameWithType></li><li><xref:System.Drawing.Text.FontCollection.Dispose?displayProperty=nameWithType></li></ul>|
-

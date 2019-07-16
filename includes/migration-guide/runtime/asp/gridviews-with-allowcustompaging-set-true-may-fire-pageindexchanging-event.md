@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Web.UI.WebControls.GridView.AllowCustomPaging?displayProperty=nameWithType></li></ul>|
-

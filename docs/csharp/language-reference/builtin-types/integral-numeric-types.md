@@ -35,26 +35,31 @@ helpviewer_keywords:
 ---
 # Integral numeric types  (C# reference)
 
-The **integral numeric types** are a subset of the **simple types** and can be initialized with [*literals*](#integral-literals). All integral types are also value types.
+The **integral numeric types** are a subset of the **simple types** and can be initialized with [*literals*](#integral-literals). All integral types are also value types. All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison, and equality](../operators/equality-operators.md) operators.
 
-All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison, and equality](../operators/equality-operators.md) operators.
+## Characteristics of the integral types
 
-## Sizes and ranges
+C# supports the following predefined integral types:
 
-The following table shows the sizes and ranges of the integral types:
+|C# type/keyword|Range|Size|.NET type|
+|----------|-----------|----------|-------------|
+|`sbyte`|-128 to 127|Signed 8-bit integer|<xref:System.SByte?displayProperty=nameWithType>|
+|`byte`|0 to 255|Unsigned 8-bit integer|<xref:System.Byte?displayProperty=nameWithType>|
+|`short`|-32,768 to 32,767|Signed 16-bit integer|<xref:System.Int16?displayProperty=nameWithType>|
+|`ushort`|0 to 65,535|Unsigned 16-bit integer|<xref:System.UInt16?displayProperty=nameWithType>|
+|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|<xref:System.Int32?displayProperty=nameWithType>|
+|`uint`|0 to 4,294,967,295|Unsigned 32-bit integer|<xref:System.UInt32?displayProperty=nameWithType>|
+|`long`|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|<xref:System.Int64?displayProperty=nameWithType>|
+|`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|<xref:System.UInt64?displayProperty=nameWithType>|
 
-|Type|Range|Size|  
-|----------|-----------|----------|  
-|`sbyte`|-128 to 127|Signed 8-bit integer|  
-|`byte`|0 to 255|Unsigned 8-bit integer|  
-|`short`|-32,768 to 32,767|Signed 16-bit integer|  
-|`ushort`|0 to 65,535|Unsigned 16-bit integer|  
-|`int`|-2,147,483,648 to 2,147,483,647|Signed 32-bit integer|  
-|`uint`|0 to 4,294,967,295|Unsigned 32-bit integer|  
-|`long`|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|  
-|`ulong`|0 to 18,446,744,073,709,551,615|Unsigned 64-bit integer|  
+In the preceding table, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
 
-The default value for all integral types is `0`. Each of the integral types has constants named `MinValue` and `MaxValue` for the minimum and maximum value for that type.
+```csharp
+int a = 123;
+System.Int32 b = 123;
+```
+
+The default value of each integral type is zero, `0`. Each of the integral types has the `MinValue` and `MaxValue` constants that provide the minimum and maximum value of that type.
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 
@@ -70,7 +75,7 @@ var binaryLiteral = 0b_0010_1010;
 
 Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a *digit separator*. The digit separator can be used with all numeric literals. Binary literals and the digit separator `_` are supported starting with C# 7.0.
 
-### Literal suffixes 
+### Literal suffixes
 
 The `l` or `L` suffix specifies that the integral literal should be of the `long` type. The `ul` or `UL` suffix specifies the `ulong` type. If the `L` suffix is used on a literal that is greater than 9,223,372,036,854,775,807 (the maximum value of `long`), the value is converted to the `ulong` type. If the value represented by an integral literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs. 
 
@@ -117,11 +122,3 @@ You must use an explicit cast to convert one integral type to another integral t
 - [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
 - [Numerics in .NET](../../../standard/numerics.md)
-- <xref:System.Byte?displayProperty=nameWithType>
-- <xref:System.SByte?displayProperty=nameWithType>
-- <xref:System.Int16?displayProperty=nameWithType>
-- <xref:System.UInt16?displayProperty=nameWithType>
-- <xref:System.Int32?displayProperty=nameWithType>
-- <xref:System.UInt32?displayProperty=nameWithType>
-- <xref:System.Int64?displayProperty=nameWithType>
-- <xref:System.UInt64?displayProperty=nameWithType>

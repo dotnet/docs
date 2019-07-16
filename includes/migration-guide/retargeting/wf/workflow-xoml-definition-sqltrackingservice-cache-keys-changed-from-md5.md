@@ -7,4 +7,3 @@
 |Scope|Minor|
 |Version|4.8|
 |Type|Retargeting|
-

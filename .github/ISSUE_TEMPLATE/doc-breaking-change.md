@@ -25,7 +25,6 @@ Text in brackets are placeholders; replace the text with the requested informati
 
 #### Reason for change
 
-
 ### Recommended action
 
 [ Suggested steps if user is affected go here:

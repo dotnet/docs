@@ -244,7 +244,6 @@ Removing intermediate container f34da5c18e7c
 Successfully built ddcc6646461b
 Successfully tagged myimage:latest
 
-
 > docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 myimage                                 latest              ddcc6646461b        10 seconds ago      314MB

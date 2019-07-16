@@ -75,7 +75,7 @@ application inside, the actual tool binary, has to conform to the convention of 
 to be able to invoke it.
 
 > [!NOTE]
-> In pre-RC3 versions of the .NET Core command-line tools, the `dotnet pack` command had a bug that caused the `runtime.config.json` to not be packed with the tool. Lacking that file results in errors at runtime. If you encounter this behavior, be sure to update to the latest tooling and try the `dotnet pack` again.
+> In pre-RC3 versions of the .NET Core command-line tools, the `dotnet pack` command had a bug that caused the *.runtimeconfig.json* to not be packed with the tool. Lacking that file results in errors at runtime. If you encounter this behavior, be sure to update to the latest tooling and try the `dotnet pack` again.
 
 Since tools are portable applications, the user consuming the tool must have the version of the .NET Core libraries
 that the tool was built against in order to run the tool. Any other dependency that the tool uses and that is not

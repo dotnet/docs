@@ -66,11 +66,11 @@
     > [!CAUTION]
     >  Making the <xref:System.Lazy%601> object thread safe does not protect the lazily initialized object. If multiple threads can access the lazily initialized object, you must make its properties and methods safe for multithreaded access.  
   
--   Does lazy initialization require a lot of code, or does the lazily initialized object have a default constructor that does everything you need and doesn't throw exceptions? If you need to write initialization code or if exceptions need to be handled, use one of the constructors that takes a factory method. Write your initialization code in the factory method.  
+-   Does lazy initialization require a lot of code, or does the lazily initialized object have a parameterless constructor that does everything you need and doesn't throw exceptions? If you need to write initialization code or if exceptions need to be handled, use one of the constructors that takes a factory method. Write your initialization code in the factory method.  
   
  The following table shows which constructor to choose, based on these two factors:  
   
-|Object will be accessed by|If no initialization code is required (default constructor), use|If initialization code is required, use|  
+|Object will be accessed by|If no initialization code is required (parameterless constructor), use|If initialization code is required, use|  
 |--------------------------------|------------------------------------------------------------------------|---------------------------------------------|  
 |Multiple threads|<xref:System.Lazy%601.%23ctor>|<xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%29>|  
 |One thread|<xref:System.Lazy%601.%23ctor%28System.Boolean%29> with `isThreadSafe` set to `false`.|<xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%2CSystem.Boolean%29> with `isThreadSafe` set to `false`.|  
@@ -186,7 +186,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class. When lazy initialization occurs, the default constructor of the target type is used.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class. When lazy initialization occurs, the parameterless constructor of the target type is used.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -261,7 +261,7 @@
       <Docs>
         <param name="isThreadSafe">
           <see langword="true" /> to make this instance usable concurrently by multiple threads; <see langword="false" /> to make the instance usable by only one thread at a time.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class. When lazy initialization occurs, the default constructor of the target type and the specified initialization mode are used.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class. When lazy initialization occurs, the parameterless constructor of the target type and the specified initialization mode are used.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -407,7 +407,7 @@
       </Parameters>
       <Docs>
         <param name="mode">One of the enumeration values that specifies the thread safety mode.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class that uses the default constructor of <paramref name="T" /> and the specified thread-safety mode.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class that uses the parameterless constructor of <paramref name="T" /> and the specified thread-safety mode.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -628,7 +628,7 @@ An instance created with this constructor is usable by multiple threads concurre
    
   
 ## Examples  
- The following example demonstrates the use of this constructor to create a lazy initializer that enables multiple threads to race to create an object lazily. Multiple threads might succeed in creating instances, but all threads use the instance that was created first. In addition, the example demonstrates that exceptions are never cached when you specify <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType>, even if initialization is performed by a function instead of by the default constructor of the lazily created type.  
+ The following example demonstrates the use of this constructor to create a lazy initializer that enables multiple threads to race to create an object lazily. Multiple threads might succeed in creating instances, but all threads use the instance that was created first. In addition, the example demonstrates that exceptions are never cached when you specify <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType>, even if initialization is performed by a function instead of by the parameterless constructor of the lazily created type.  
   
 > [!NOTE]
 >  For an example that demonstrates how to use this constructor in single-threaded scenarios (specifying <xref:System.Threading.LazyThreadSafetyMode.None?displayProperty=nameWithType> for `mode`), see the <xref:System.Lazy%601.%23ctor%28System.Boolean%29> constructor. For an example that demonstrates how to use this constructor to provide locking instead of race conditions in multithreaded scenarios (specifying <xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication?displayProperty=nameWithType> for `mode`), see the <xref:System.Lazy%601.%23ctor> constructor.  
@@ -638,7 +638,7 @@ An instance created with this constructor is usable by multiple threads concurre
  [!code-csharp[System.Lazy\`1.ctorFuncLTSM#NewLazy](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.lazy`1.ctorfuncltsm/cs/example.cs#newlazy)]
  [!code-vb[System.Lazy\`1.ctorFuncLTSM#NewLazy](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.lazy`1.ctorfuncltsm/vb/example.vb#newlazy)]  
   
- The lazy initializer uses a function to perform the initialization. In this case, a function is required because there is no default constructor for the `LargeObject` class.  
+ The lazy initializer uses a function to perform the initialization. In this case, a function is required because there is no parameterless constructor for the `LargeObject` class.  
   
  The example creates and starts three threads that block on a <xref:System.Threading.ManualResetEvent> object, so that the example can release the threads all at once. In the `ThreadProc` method that's used by all three threads, calling the <xref:System.Lazy%601.Value%2A> property creates the `LargeObject` instance:  
   
@@ -727,7 +727,7 @@ An instance created with this constructor is usable by multiple threads concurre
   
 -   If the mode is <xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication?displayProperty=nameWithType> or <xref:System.Threading.LazyThreadSafetyMode.None?displayProperty=nameWithType>, there is no second chance to initialize the <xref:System.Lazy%601> instance. If an exception occurs and is unhandled in the initialization function, that exception is cached and rethrown on subsequent accesses of the <xref:System.Lazy%601.Value%2A?displayProperty=nameWithType> property. No value is created if an exception is thrown, so in such cases <xref:System.Lazy%601.IsValueCreated%2A> returns `false`.  
   
--   If the mode is <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType>, the first thread that succeeds in running the initialization function (or the default constructor) creates the value for the <xref:System.Lazy%601> instance. If the initialization function throws an exception on one thread, other threads can still try to initialize the <xref:System.Lazy%601> instance. Until the value is created, the <xref:System.Lazy%601.IsValueCreated%2A> property returns `false`.  
+-   If the mode is <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType>, the first thread that succeeds in running the initialization function (or the parameterless constructor) creates the value for the <xref:System.Lazy%601> instance. If the initialization function throws an exception on one thread, other threads can still try to initialize the <xref:System.Lazy%601> instance. Until the value is created, the <xref:System.Lazy%601.IsValueCreated%2A> property returns `false`.  
   
  ]]></format>
         </remarks>
@@ -836,8 +836,8 @@ An instance created with this constructor is usable by multiple threads concurre
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.MemberAccessException">The <see cref="T:System.Lazy`1" /> instance is initialized to use the default constructor of the type that is being lazily initialized, and permissions to access the constructor are missing.</exception>
-        <exception cref="T:System.MissingMemberException">The <see cref="T:System.Lazy`1" /> instance is initialized to use the default constructor of the type that is being lazily initialized, and that type does not have a public, parameterless constructor.</exception>
+        <exception cref="T:System.MemberAccessException">The <see cref="T:System.Lazy`1" /> instance is initialized to use the parameterless constructor of the type that is being lazily initialized, and permissions to access the constructor are missing.</exception>
+        <exception cref="T:System.MissingMemberException">The <see cref="T:System.Lazy`1" /> instance is initialized to use the parameterless constructor of the type that is being lazily initialized, and that type does not have a public, parameterless constructor.</exception>
         <exception cref="T:System.InvalidOperationException">The initialization function tries to access <see cref="P:System.Lazy`1.Value" /> on this instance.</exception>
         <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>

@@ -72,7 +72,7 @@ This article includes several examples that use the `DateTime` type:
 
 **Initialization Examples**      
 - [Invoke a constructor](#initialization-01)
-- [Invoke the implicit default constructor](#initialization-02)
+- [Invoke the implicit parameterless constructor](#initialization-02)
 - [Assignment from return value](#initialization-03)
 - [Parsing a string that represents a date and time](#initialization-04)
 - [Visual Basic syntax to initialize a date and time](#initialization-05)
@@ -140,7 +140,7 @@ You can view the source for the entire set of examples from this article in eith
 
 You can assign an initial value to a new `DateTime` value in many different ways:
 
-- Calling a constructor, either one where you specify arguments for values, or use the implicit default constructor.
+- Calling a constructor, either one where you specify arguments for values, or use the implicit parameterless constructor.
 - Assigning a `DateTime` to the return value of a property or method.
 - Parsing a `DateTime` value from its string representation.
 - Using Visual Basic-specific language features to instantiate a `DateTime`. 
@@ -155,7 +155,7 @@ You call any of the overloads of the <xref:System.DateTime> constructor that spe
 [!code-vb[System.DateTime.Instantiation#1](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#1)]  
 [!code-csharp[System.DateTime.Instantiation#1](~/samples/snippets/csharp/System.DateTime/Instantiation.cs#1)]
 
-You invoke the `DateTime` structure's implicit default constructor when you want a `DateTime` initialized to its default value. (For details on the implicit default constructor of a value type, see [Value Types](~/docs/csharp/language-reference/keywords/value-types.md).) Some compilers also support declaring a <xref:System.DateTime> value without explicitly assigning a value to it. Creating a value without an explicit initialization also results in the default value. The following example illustrates the <xref:System.DateTime> implicit default constructor in C# and Visual Basic, as well as a <xref:System.DateTime> declaration without assignment in Visual Basic.  
+You invoke the `DateTime` structure's implicit parameterless constructor when you want a `DateTime` initialized to its default value. (For details on the implicit parameterless constructor of a value type, see [Value Types](~/docs/csharp/language-reference/keywords/value-types.md).) Some compilers also support declaring a <xref:System.DateTime> value without explicitly assigning a value to it. Creating a value without an explicit initialization also results in the default value. The following example illustrates the <xref:System.DateTime> implicit parameterless constructor in C# and Visual Basic, as well as a <xref:System.DateTime> declaration without assignment in Visual Basic.  
 
 <a name="initialization-02"></a>
 [!code-vb[System.DateTime.Instantiation#5](~/samples/snippets/visualbasic/System.DateTime/Instantiation.vb#5)]  

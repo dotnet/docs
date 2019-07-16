@@ -241,7 +241,7 @@
    
   
 ## Examples  
- In the following pseudocode example, `MySubClass` anticipates that additional derived classes might change the default value of the `MyCustom` dependency property. The class implements a default constructor that can determine the actual derived class by taking advantage of polymorphism on the <xref:System.Windows.DependencyObjectType> value whenever that constructor is used as a derived class instantiator.  
+ In the following pseudocode example, `MySubClass` anticipates that additional derived classes might change the default value of the `MyCustom` dependency property. The class implements a parameterless constructor that can determine the actual derived class by taking advantage of polymorphism on the <xref:System.Windows.DependencyObjectType> value whenever that constructor is used as a derived class instantiator.  
   
  `public DOClass() : base()`  
   

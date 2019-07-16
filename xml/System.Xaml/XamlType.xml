@@ -1591,7 +1591,7 @@
 ## Remarks  
  This method can be invoked when a caller gets a value from <xref:System.Xaml.XamlType.ConstructionRequiresArguments%2A>.  
   
- The default implementation returns `false` for types considered value types in the CLR type system. For other than value types, CLR reflection <xref:System.Reflection.ConstructorInfo> is used to determine whether a default constructor exists.  
+ The default implementation returns `false` for types considered value types in the CLR type system. For other than value types, CLR reflection <xref:System.Reflection.ConstructorInfo> is used to determine whether a parameterless constructor exists.  
   
  Override this method if you are not relying on default internal CLR reflection and are using metadata or other techniques for reporting the XAML type system information or schema information of a type.  
   

@@ -77,7 +77,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Applications should not use the default constructor without parameters-the default constructor does not fully initialize the instance. To create a new <xref:System.Windows.Annotations.Annotation> applications should use one of the parameter-based constructors.  
+>  Applications should not use the parameterless constructor without parameters-the parameterless constructor does not fully initialize the instance. To create a new <xref:System.Windows.Annotations.Annotation> applications should use one of the parameter-based constructors.  
   
  ]]></format>
         </remarks>
@@ -238,7 +238,7 @@
  The returned annotation type is the <xref:System.Xml.XmlQualifiedName> name passed as a parameter to the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor.  
   
 > [!NOTE]
->  <xref:System.Windows.Annotations.Annotation.AnnotationType%2A> returns `null` if the annotation was incorrectly constructed by using a default constructor without parameters.  (The default constructor without parameters does not fully initialize the instance and is used only internally in combination with XML serialization.)  To create a new annotation, applications should use the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor that takes an <xref:System.Xml.XmlQualifiedName> as a parameter.  
+>  <xref:System.Windows.Annotations.Annotation.AnnotationType%2A> returns `null` if the annotation was incorrectly constructed by using a parameterless constructor without parameters.  (The parameterless constructor without parameters does not fully initialize the instance and is used only internally in combination with XML serialization.)  To create a new annotation, applications should use the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor that takes an <xref:System.Xml.XmlQualifiedName> as a parameter.  
   
  ]]></format>
         </remarks>

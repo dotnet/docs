@@ -1297,7 +1297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the default constructor for `typeName`.  
+ This method calls the parameterless constructor for `typeName`.  
   
  See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`.  
   
@@ -1378,7 +1378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the default constructor for `typeName`.  
+ This method calls the parameterless constructor for `typeName`.  
   
  See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`.  
   
@@ -1454,7 +1454,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
@@ -1550,7 +1550,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
@@ -1650,7 +1650,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the parameterless constructor for `typeName`.  
   
  See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property for the format of `typeName`.  
   
@@ -1739,7 +1739,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstance%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the parameterless constructor for `typeName`.  
   
  See <xref:System.Reflection.AssemblyName> for the format of `assemblyName`. See the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property for the format of `typeName`.  
   
@@ -1822,7 +1822,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">A culture-specific object used to govern the coercion of types. If <paramref name="culture" /> is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. that specifies the URL that is required to activate a remote object.  
   
@@ -1926,7 +1926,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects using reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">A culture-specific object used to govern the coercion of types. If <paramref name="culture" /> is <see langword="null" />, the <see langword="CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
@@ -2036,7 +2036,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor for `typeName` is invoked.  
+ The parameterless constructor for `typeName` is invoked.  
   
  For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
@@ -2148,7 +2148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor for `typeName` is invoked.  
+ The parameterless constructor for `typeName` is invoked.  
   
  For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
@@ -2226,7 +2226,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
@@ -2328,7 +2328,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
@@ -2441,7 +2441,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the parameterless constructor for `typeName`.  
   
  For more information, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
@@ -2525,7 +2525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the default constructor for `typeName`.  
+ This is a convenience method that combines <xref:System.AppDomain.CreateInstanceFrom%2A> and <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=nameWithType>. This method calls the parameterless constructor for `typeName`.  
   
  For more information about this method, see the <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType> method.  
   
@@ -2600,7 +2600,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   
@@ -2694,7 +2694,7 @@
         <param name="ignoreCase">A Boolean value specifying whether to perform a case-sensitive search or not.</param>
         <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <paramref name="typeName" /> constructor. If <paramref name="bindingAttr" /> is zero, a case-sensitive search for public constructors is conducted.</param>
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see cref="T:System.Reflection.MemberInfo" /> objects through reflection. If <paramref name="binder" /> is null, the default binder is used.</param>
-        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the default constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
+        <param name="args">The arguments to pass to the constructor. This array of arguments must match in number, order, and type the parameters of the constructor to invoke. If the parameterless constructor is preferred, <paramref name="args" /> must be an empty array or null.</param>
         <param name="culture">Culture-specific information that governs the coercion of <paramref name="args" /> to the formal types declared for the <paramref name="typeName" /> constructor. If <paramref name="culture" /> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
         <param name="activationAttributes">An array of one or more attributes that can participate in activation. Typically, an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
   

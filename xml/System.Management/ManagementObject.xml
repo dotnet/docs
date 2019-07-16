@@ -53,7 +53,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementObject" /> class. This is the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +65,7 @@
    
   
 ## Examples  
- The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the default constructor.  
+ The following example initializes a new instance of the <xref:System.Management.ManagementObject> class with the parameterless constructor.  
   
  [!code-csharp[wminet_ManagementObject#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObject/cs/ManagementObject.cs#1)]
  [!code-vb[wminet_ManagementObject#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObject/vb/ManagementObject.vb#1)]  

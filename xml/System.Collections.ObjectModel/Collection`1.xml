@@ -492,7 +492,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Collections.ObjectModel.Collection%601> object is created using the default constructor, this method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list. If type `T` does not implement the <xref:System.IEquatable%601> interface, the <xref:System.Object.Equals%2A> method is used.  
+ If the <xref:System.Collections.ObjectModel.Collection%601> object is created using the parameterless constructor, this method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> for `T`, the type of values in the list. If type `T` does not implement the <xref:System.IEquatable%601> interface, the <xref:System.Object.Equals%2A> method is used.  
   
  If the Collection object is created by passing an <xref:System.Collections.Generic.IList%601> object to the constructor, the <xref:System.Collections.ObjectModel.Collection%601.Contains%2A> method will be determined by the <xref:System.Collections.Generic.IEqualityComparer%601> interface used by that <xref:System.Collections.Generic.IList%601> object.  
   

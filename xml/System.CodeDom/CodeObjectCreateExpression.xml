@@ -45,7 +45,7 @@
    
   
 ## Examples  
- The following example demonstrates use of <xref:System.CodeDom.CodeObjectCreateExpression> to create a new instance of the System.DateTime class using the default constructor.  
+ The following example demonstrates use of <xref:System.CodeDom.CodeObjectCreateExpression> to create a new instance of the System.DateTime class using the parameterless constructor.  
   
  [!code-cpp[CodeMultiExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMultiExample/CPP/codemultiexample.cpp#5)]
  [!code-csharp[CodeMultiExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMultiExample/CS/codemultiexample.cs#5)]

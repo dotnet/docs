@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the default constructor supplied by the compiler.  
+ This is the parameterless constructor supplied by the compiler.  
   
  Typically, you do not directly create an instance of an <xref:System.Windows.Forms.OpacityConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the code examples in the <xref:System.ComponentModel.TypeConverter> base class.  
   

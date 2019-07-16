@@ -123,7 +123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor was designed to work under the assumption that there is no component associated with the current settings wrapper class, which derives from <xref:System.Configuration.ApplicationSettingsBase>.  
+ The parameterless constructor was designed to work under the assumption that there is no component associated with the current settings wrapper class, which derives from <xref:System.Configuration.ApplicationSettingsBase>.  
   
  When an instance of a wrapper class is created, inherited code will automatically perform the following actions:  
   

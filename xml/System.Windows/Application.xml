@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Only one instance of the <xref:System.Windows.Application> class can be created per <xref:System.AppDomain>, to ensure shared access to a single set of application-scope window, property, and resource data. Consequently, the default constructor of the <xref:System.Windows.Application> class detects whether the instance being initialized is the first instance in an <xref:System.AppDomain>; if it is not, an <xref:System.InvalidOperationException> is thrown.  
+ Only one instance of the <xref:System.Windows.Application> class can be created per <xref:System.AppDomain>, to ensure shared access to a single set of application-scope window, property, and resource data. Consequently, the parameterless constructor of the <xref:System.Windows.Application> class detects whether the instance being initialized is the first instance in an <xref:System.AppDomain>; if it is not, an <xref:System.InvalidOperationException> is thrown.  
   
  The <xref:System.Windows.Application> object for the current <xref:System.AppDomain> is exposed from the static <xref:System.Windows.Application.Current%2A> property.  
   

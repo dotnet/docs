@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor calls the default constructor, and then adds the current <xref:System.Windows.Forms.BindingSource> to the specified container. It is not typically used by the solutions programmer, but instead by authors of design-time environments.  
+ This constructor calls the parameterless constructor, and then adds the current <xref:System.Windows.Forms.BindingSource> to the specified container. It is not typically used by the solutions programmer, but instead by authors of design-time environments.  
   
  ]]></format>
         </remarks>
@@ -341,7 +341,7 @@
   
 2.  The <xref:System.Windows.Forms.BindingSource.AddingNew> event is automatically raised. This event can be programmatically handled to construct the new item. This is accomplished in the event handler by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs?displayProperty=nameWithType> parameter to the new item. The new object created in the <xref:System.Windows.Forms.BindingSource.AddingNew> event must be of the same type as the type contained in the list or an exception will occur.  
   
-     If the <xref:System.Windows.Forms.BindingSource.AddingNew> event is not handled, and the underlying list is an <xref:System.ComponentModel.IBindingList>, then the request is passed to the list's <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=nameWithType> method. If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the item is automatically created through its public default constructor. In either case, the new item is added to the end of the list.  
+     If the <xref:System.Windows.Forms.BindingSource.AddingNew> event is not handled, and the underlying list is an <xref:System.ComponentModel.IBindingList>, then the request is passed to the list's <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=nameWithType> method. If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the item is automatically created through its public parameterless constructor. In either case, the new item is added to the end of the list.  
   
 3.  The new item is added immediately to the internal list unless the data source implements the <xref:System.ComponentModel.IEditableObject> interface. In this case, the new item is not committed until an explicit call to <xref:System.Windows.Forms.BindingSource.System%23ComponentModel%23ICancelAddNew%23EndNew%2A> is made or until a new list operation is initiated. Before it is committed, the new item can be rolled back by calling <xref:System.Windows.Forms.BindingSource.CancelEdit%2A>, in which case the new item is discarded.  
   
@@ -362,7 +362,7 @@
   
  -or-  
   
- A public default constructor could not be found for the current item type.</exception>
+ A public parameterless constructor could not be found for the current item type.</exception>
         <altmember cref="M:System.Windows.Forms.BindingSource.AddNew" />
         <altmember cref="T:System.ComponentModel.AddingNewEventArgs" />
         <altmember cref="E:System.Windows.Forms.BindingSource.AddingNew" />
@@ -443,14 +443,14 @@
   
 -   It is read-only, as determined by the <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=nameWithType> property.  
   
--   The item's type does not have a default constructor.  
+-   The item's type does not have a parameterless constructor.  
   
 > [!NOTE]
 >  Once the value of this property is set, the getter no longer refers the call to the underlying list. Instead, it simply returns the value that was previously set until the <xref:System.Windows.Forms.BindingSource.ResetAllowNew%2A> method is called.  
   
  Setting this property raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=nameWithType> set to <xref:System.ComponentModel.ListChangedType.Reset?displayProperty=nameWithType>.  
   
- If you set the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property to `true` and the underlying list type does not have a default constructor, you must handle the <xref:System.Windows.Forms.BindingSource.AddingNew> event and create the appropriate type.  
+ If you set the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property to `true` and the underlying list type does not have a parameterless constructor, you must handle the <xref:System.Windows.Forms.BindingSource.AddingNew> event and create the appropriate type.  
   
    
   
@@ -464,7 +464,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property is set to <see langword="true" /> when the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property has a fixed size or is read-only.</exception>
-        <exception cref="T:System.MissingMethodException">The property is set to <see langword="true" /> and the <see cref="E:System.Windows.Forms.BindingSource.AddingNew" /> event is not handled when the underlying list type does not have a default constructor.</exception>
+        <exception cref="T:System.MissingMethodException">The property is set to <see langword="true" /> and the <see cref="E:System.Windows.Forms.BindingSource.AddingNew" /> event is not handled when the underlying list type does not have a parameterless constructor.</exception>
         <altmember cref="P:System.ComponentModel.AddingNewEventArgs.NewObject" />
         <altmember cref="M:System.Windows.Forms.BindingSource.ResetAllowNew" />
         <altmember cref="P:System.Windows.Forms.BindingSource.List" />
@@ -1184,7 +1184,7 @@
 |<xref:System.Collections.IEnumerable> instance|An <xref:System.ComponentModel.IBindingList> containing the <xref:System.Collections.IEnumerable> items.|  
 |List instance containing type "T"|<xref:System.ComponentModel.IBindingList> instance containing type "T".|  
   
- In addition, <xref:System.Windows.Forms.BindingSource.DataSource%2A> can be set to other list types such as <xref:System.ComponentModel.IListSource> and <xref:System.ComponentModel.ITypedList> and the <xref:System.Windows.Forms.BindingSource> will handle them appropriately. In this case, the type contained in the list should have a default constructor.  
+ In addition, <xref:System.Windows.Forms.BindingSource.DataSource%2A> can be set to other list types such as <xref:System.ComponentModel.IListSource> and <xref:System.ComponentModel.ITypedList> and the <xref:System.Windows.Forms.BindingSource> will handle them appropriately. In this case, the type contained in the list should have a parameterless constructor.  
   
  When setting a data source, if the supplied reference contains more than one list or table, you must set the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property to a string that specifies the list to bind to. Setting this property raises the <xref:System.Windows.Forms.BindingSource.DataSourceChanged> event.  
   

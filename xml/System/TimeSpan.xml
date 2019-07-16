@@ -72,7 +72,7 @@
 ## Instantiating a TimeSpan Value  
  You can instantiate a <xref:System.TimeSpan> value in a number of ways:  
   
--   By calling its implicit default constructor. This creates an object whose value is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, as the following example shows.  
+-   By calling its implicit parameterless constructor. This creates an object whose value is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, as the following example shows.  
   
      [!code-csharp[System.TimeSpan.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.class/cs/instantiate1.cs#2)]
      [!code-vb[System.TimeSpan.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.class/vb/instantiate1.vb#2)]  

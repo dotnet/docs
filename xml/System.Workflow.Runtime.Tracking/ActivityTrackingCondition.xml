@@ -66,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you use the default constructor, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>. You must also set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>. The default value of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A> is `Equals`.  
+ If you use the parameterless constructor, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>. You must also set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>. The default value of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A> is `Equals`.  
   
  ]]></format>
         </remarks>
@@ -130,7 +130,7 @@
 ## Remarks  
  You can specify an activity property or field, a member of an activity property or field, or a single element of an activity property or field (or a member of either) that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, you can specify a single element of a collection.  
   
- If you use the default constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>.  
+ If you use the parameterless constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A>.  
   
  The value of the specified activity member is compared with <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A> by applying <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A>.  
   
@@ -205,7 +205,7 @@
   
  <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Member%2A> by applying <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Operator%2A>.  
   
- If you use the default constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>.  
+ If you use the parameterless constructor for <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition>, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ActivityTrackingCondition.Value%2A>.  
   
    
   

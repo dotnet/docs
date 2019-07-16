@@ -106,7 +106,7 @@
 ## Remarks  
  The <xref:System.Diagnostics.StackTrace> is created with the caller's current thread, and does not contain file name, line number, or column information.  
   
- Use this default constructor when you want a complete trace with only summary method information about the call stack.  
+ Use this parameterless constructor when you want a complete trace with only summary method information about the call stack.  
   
    
   

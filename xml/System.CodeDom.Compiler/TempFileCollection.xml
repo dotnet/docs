@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a default constructor that initializes the collection with default settings. By default, this temporary files collection will store the files in a default temporary directory and will delete the temporary files after they have been generated and used.  
+ This is a parameterless constructor that initializes the collection with default settings. By default, this temporary files collection will store the files in a default temporary directory and will delete the temporary files after they have been generated and used.  
   
  ]]></format>
         </remarks>

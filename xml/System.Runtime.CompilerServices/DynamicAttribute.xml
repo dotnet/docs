@@ -83,7 +83,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When used in an attribute specification, the default constructor is semantically equivalent to `DynamicAttribute({ true })`, and can be considered a shorthand for that expression. It should therefore only be used on an element of type <xref:System.Object>.  
+ When used in an attribute specification, the parameterless constructor is semantically equivalent to `DynamicAttribute({ true })`, and can be considered a shorthand for that expression. It should therefore only be used on an element of type <xref:System.Object>.  
   
  ]]></format>
         </remarks>

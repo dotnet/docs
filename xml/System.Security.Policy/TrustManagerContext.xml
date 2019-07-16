@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the properties to the same settings as the default constructor, with the exception of the <xref:System.Security.Policy.TrustManagerContext.UIContext%2A> property, which is set to the value that is passed in.  
+ This constructor initializes the properties to the same settings as the parameterless constructor, with the exception of the <xref:System.Security.Policy.TrustManagerContext.UIContext%2A> property, which is set to the value that is passed in.  
   
  ]]></format>
         </remarks>

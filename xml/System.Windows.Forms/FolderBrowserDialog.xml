@@ -82,7 +82,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes properties to their default values.  
+ The parameterless constructor initializes properties to their default values.  
   
  When a new <xref:System.Windows.Forms.FolderBrowserDialog> is created, the <xref:System.Windows.Forms.FolderBrowserDialog.RootFolder%2A> property is set to <xref:System.Environment.SpecialFolder.Desktop?displayProperty=nameWithType>, the <xref:System.Windows.Forms.FolderBrowserDialog.Description%2A> property is set to an empty string (""), the <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property is set to an empty string, and the <xref:System.Windows.Forms.FolderBrowserDialog.ShowNewFolderButton%2A> property is set to `true`.  
   

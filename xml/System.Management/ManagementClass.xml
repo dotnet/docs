@@ -59,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementClass" /> class. This is the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -71,7 +71,7 @@
    
   
 ## Examples  
- The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with the <xref:System.Management.ManagementClass> default constructor. The example lists the methods, properties, and qualifiers for the created class.  
+ The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with the <xref:System.Management.ManagementClass> parameterless constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
  [!code-csharp[wminet_ManagementClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass/cs/ManagementClass.cs#1)]
  [!code-vb[wminet_ManagementClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass/vb/ManagementClass.vb#1)]  

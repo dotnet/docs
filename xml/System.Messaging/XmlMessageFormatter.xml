@@ -40,7 +40,7 @@
   
  Only one of the two properties needs to be set when reading from the queue, but you can set both. The set of types is the combined set from the two properties. The decision of which property to use is specific to your application. If the message body contains a type whose schema does not match any of the types in the array for either property, an exception will be thrown when the message is read.  
   
- The <xref:System.Messaging.XmlMessageFormatter> is a crucial component of loosely coupled XML-based messaging. The XSD.exe utility uses the XML format is used to generate XML schema, such as when you use the utility to serialize a class used by your application. The class must have a default constructor.  
+ The <xref:System.Messaging.XmlMessageFormatter> is a crucial component of loosely coupled XML-based messaging. The XSD.exe utility uses the XML format is used to generate XML schema, such as when you use the utility to serialize a class used by your application. The class must have a parameterless constructor.  
   
  The format is used again in the reverse process when the utility generates a class based on the schema you distribute to describe your class data. The use of the utility and the XML schema it generates enables you to avoid redistributing.dll files every time you recompile a class after the implementation of your class has changed. As long as the schema does not change on the client or the server, other changes on either side do not affect the other.  
   

@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This default constructor is called when you declare the `<asp:connectionszone>` element in an ASP.NET page. You do not need to implicitly call this constructor, except in cases where you are adding the control to the page programmatically.  
+ This parameterless constructor is called when you declare the `<asp:connectionszone>` element in an ASP.NET page. You do not need to implicitly call this constructor, except in cases where you are adding the control to the page programmatically.  
   
    
   

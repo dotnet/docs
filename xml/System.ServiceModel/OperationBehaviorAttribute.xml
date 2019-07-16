@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor creates an instance of the class with the following defaults:  
+ The parameterless constructor creates an instance of the class with the following defaults:  
   
 -   The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> property is `true`.  
   

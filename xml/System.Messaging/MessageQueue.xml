@@ -124,7 +124,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class. After the default constructor initializes the new instance, you must set the instance's <see cref="P:System.Messaging.MessageQueue.Path" /> property before you can use the instance.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class. After the parameterless constructor initializes the new instance, you must set the instance's <see cref="P:System.Messaging.MessageQueue.Path" /> property before you can use the instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -137,9 +137,9 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>|The values set by the default constructor of the <xref:System.Messaging.DefaultPropertiesToSend> class.|  
+|<xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>|The values set by the parameterless constructor of the <xref:System.Messaging.DefaultPropertiesToSend> class.|  
 |<xref:System.Messaging.MessageQueue.Formatter%2A>|<xref:System.Messaging.XmlMessageFormatter>|  
-|<xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A>|The values set by the default constructor of the <xref:System.Messaging.MessagePropertyFilter> class. All the filter values are set to `true`.|  
+|<xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A>|The values set by the parameterless constructor of the <xref:System.Messaging.MessagePropertyFilter> class. All the filter values are set to `true`.|  
 |<xref:System.Messaging.MessageQueue.DenySharedReceive%2A>|`false`|  
   
    
@@ -212,14 +212,14 @@
 |<xref:System.Messaging.MessageQueue.Authenticate%2A>|`false`|  
 |<xref:System.Messaging.MessageQueue.BasePriority%2A>|0|  
 |<xref:System.Messaging.MessageQueue.Category%2A>|<xref:System.Guid.Empty>|  
-|<xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>|The values set by the default constructor of the <xref:System.Messaging.DefaultPropertiesToSend> class.|  
+|<xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>|The values set by the parameterless constructor of the <xref:System.Messaging.DefaultPropertiesToSend> class.|  
 |<xref:System.Messaging.MessageQueue.EncryptionRequired%2A>|`true`, if the Message Queuing queue's privacy level setting is "Body"; otherwise, `false`.|  
 |<xref:System.Messaging.MessageQueue.Formatter%2A>|<xref:System.Messaging.XmlMessageFormatter>|  
 |<xref:System.Messaging.MessageQueue.Label%2A>|<xref:System.String.Empty>|  
 |<xref:System.Messaging.MessageQueue.MachineName%2A>|The value of the Message Queuing queue's computer name property.|  
 |<xref:System.Messaging.MessageQueue.MaximumJournalSize%2A>|<xref:System.Messaging.MessageQueue.InfiniteQueueSize>|  
 |<xref:System.Messaging.MessageQueue.MaximumQueueSize%2A>|<xref:System.Messaging.MessageQueue.InfiniteQueueSize>|  
-|<xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A>|The values set by the default constructor of the <xref:System.Messaging.MessagePropertyFilter> class.|  
+|<xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A>|The values set by the parameterless constructor of the <xref:System.Messaging.MessagePropertyFilter> class.|  
 |<xref:System.Messaging.MessageQueue.Path%2A>|<xref:System.String.Empty>, if not set by the constructor.|  
 |<xref:System.Messaging.MessageQueue.QueueName%2A>|<xref:System.String.Empty>, if not set by the constructor.|  
 |<xref:System.Messaging.MessageQueue.DenySharedReceive%2A>|`false`|  
@@ -305,14 +305,14 @@
 |<xref:System.Messaging.MessageQueue.Authenticate%2A>|`false`.|  
 |<xref:System.Messaging.MessageQueue.BasePriority%2A>|0.|  
 |<xref:System.Messaging.MessageQueue.Category%2A>|<xref:System.Guid.Empty>.|  
-|<xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>|The values set by the default constructor of the <xref:System.Messaging.DefaultPropertiesToSend> class.|  
+|<xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>|The values set by the parameterless constructor of the <xref:System.Messaging.DefaultPropertiesToSend> class.|  
 |<xref:System.Messaging.MessageQueue.EncryptionRequired%2A>|`true`, if the Message Queuing queue's privacy level setting is "Body"; otherwise, `false`.|  
 |<xref:System.Messaging.MessageQueue.Formatter%2A>|<xref:System.Messaging.XmlMessageFormatter>.|  
 |<xref:System.Messaging.MessageQueue.Label%2A>|<xref:System.String.Empty>.|  
 |<xref:System.Messaging.MessageQueue.MachineName%2A>|The value of the Message Queuing queue's computer name property.|  
 |<xref:System.Messaging.MessageQueue.MaximumJournalSize%2A>|<xref:System.Messaging.MessageQueue.InfiniteQueueSize>.|  
 |<xref:System.Messaging.MessageQueue.MaximumQueueSize%2A>|<xref:System.Messaging.MessageQueue.InfiniteQueueSize>.|  
-|<xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A>|The values set by the default constructor of the <xref:System.Messaging.MessagePropertyFilter> class.|  
+|<xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A>|The values set by the parameterless constructor of the <xref:System.Messaging.MessagePropertyFilter> class.|  
 |<xref:System.Messaging.MessageQueue.Path%2A>|<xref:System.String.Empty>, if not set by the constructor.|  
 |<xref:System.Messaging.MessageQueue.QueueName%2A>|<xref:System.String.Empty>, if not set by the constructor.|  
 |<xref:System.Messaging.MessageQueue.DenySharedReceive%2A>|The value of the `sharedModeDenyReceive` parameter.|  

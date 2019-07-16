@@ -791,7 +791,7 @@
       </Parameters>
       <Docs>
         <param name="t">The type of the control.</param>
-        <param name="parameters">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <paramref name="parameters" /> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="parameters">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <paramref name="parameters" /> is an empty array or <see langword="null" />, the constructor that takes no parameters (the parameterless constructor) is invoked.</param>
         <summary>Loads a <see cref="T:System.Web.UI.Control" /> object based on a specified type and constructor parameters.</summary>
         <returns>Returns the specified <see cref="T:System.Web.UI.UserControl" />.</returns>
         <remarks>

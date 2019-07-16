@@ -117,7 +117,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null`. This constructor is equivalent to calling the <xref:System.Windows.Forms.BindingNavigator.%23ctor%28System.Boolean%29> constructor with a parameter value of `false`. You can add the standard items by making a separate call to <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A>.  
+ The parameterless constructor sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null`. This constructor is equivalent to calling the <xref:System.Windows.Forms.BindingNavigator.%23ctor%28System.Boolean%29> constructor with a parameter value of `false`. You can add the standard items by making a separate call to <xref:System.Windows.Forms.BindingNavigator.AddStandardItems%2A>.  
   
  ]]></format>
         </remarks>
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is provided as a convenience, combining the steps of creating a new <xref:System.Windows.Forms.BindingNavigator> control and adding it to a parent <xref:System.ComponentModel.IContainer>. Like the default constructor, it sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null` and does not show the standard user interface.  
+ This constructor is provided as a convenience, combining the steps of creating a new <xref:System.Windows.Forms.BindingNavigator> control and adding it to a parent <xref:System.ComponentModel.IContainer>. Like the parameterless constructor, it sets the <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A> property to `null` and does not show the standard user interface.  
   
  ]]></format>
         </remarks>

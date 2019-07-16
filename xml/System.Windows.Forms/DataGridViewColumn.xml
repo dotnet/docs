@@ -247,7 +247,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The constructors for the <xref:System.Windows.Forms.DataGridViewColumn> class initialize this property. The default constructor sets the property to `null`; the other constructor copies the cell template from its parameter.  
+ The constructors for the <xref:System.Windows.Forms.DataGridViewColumn> class initialize this property. The parameterless constructor sets the property to `null`; the other constructor copies the cell template from its parameter.  
   
 > [!NOTE]
 >  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=nameWithType> method).  

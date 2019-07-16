@@ -72,7 +72,7 @@
         </object>  
         ```  
   
-    -   As long as you do not hide the default constructor, the derived collection can also support an object element syntax (where the object element is explicit, as opposed to the implicit usage shown above). It does not need to be the root element. Or, you can also use the derived collection as a root element, without needing to specify , although using a collection as a root element is uncommon.  
+    -   As long as you do not hide the parameterless constructor, the derived collection can also support an object element syntax (where the object element is explicit, as opposed to the implicit usage shown above). It does not need to be the root element. Or, you can also use the derived collection as a root element, without needing to specify , although using a collection as a root element is uncommon.  
   
 -   Any child elements of the collection in either of the above scenarios must be of the type of either the implemented constraint, or as specified by .  
   
@@ -490,7 +490,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Every <see cref="T:System.Windows.Freezable" /> subclass must implement this method. Typical implementation is to simply call the class default constructor and return the result.</para>
+          <para>Every <see cref="T:System.Windows.Freezable" /> subclass must implement this method. Typical implementation is to simply call the class parameterless constructor and return the result.</para>
         </block>
         <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>

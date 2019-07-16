@@ -43,7 +43,7 @@
   
 -   An interface constraint specifies that any type assigned to the generic type parameter must implement a particular interface. Set the interface constraints by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetInterfaceConstraints%2A> method.  
   
--   Special constraints specify that any type assigned to the generic type parameter must have a default constructor, must be a reference type, or must be a value type. Set the special constraints for a type parameter by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method.  
+-   Special constraints specify that any type assigned to the generic type parameter must have a parameterless constructor, must be a reference type, or must be a value type. Set the special constraints for a type parameter by using the <xref:System.Reflection.Emit.GenericTypeParameterBuilder.SetGenericParameterAttributes%2A> method.  
   
  Interface constraints and special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameters, you can use its <xref:System.Type> object to reflect the constraints. Use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method to get the type parameters, and for each type parameter use the <xref:System.Type.GetGenericParameterConstraints%2A?displayProperty=nameWithType> method to get the base type constraint and interface constraints, and the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=nameWithType> property to get the special constraints.  
   
@@ -3148,7 +3148,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Special constraints can specify that any type assigned to the generic type parameter must have a default constructor, must be a reference type, or must be a value type.  
+ Special constraints can specify that any type assigned to the generic type parameter must have a parameterless constructor, must be a reference type, or must be a value type.  
   
  Special constraints cannot be retrieved using methods of the <xref:System.Reflection.Emit.GenericTypeParameterBuilder> class. Once you have created the generic type that contains the type parameter, you can use its <xref:System.Type> object to reflect the type parameters and their constraints. To get the type parameters of a completed generic type, use the <xref:System.Type.GetGenericArguments%2A?displayProperty=nameWithType> method. To get the special constraints for each type parameter, use the <xref:System.Type.GenericParameterAttributes%2A?displayProperty=nameWithType> property.  
   
@@ -3157,7 +3157,7 @@
    
   
 ## Examples  
- The following code example creates a generic type with two type parameters, the first of which is constrained to have a default constructor and to be a reference type, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
+ The following code example creates a generic type with two type parameters, the first of which is constrained to have a parameterless constructor and to be a reference type, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  [!code-cpp[EmitGenericType#1](~/samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
  [!code-csharp[EmitGenericType#1](~/samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]

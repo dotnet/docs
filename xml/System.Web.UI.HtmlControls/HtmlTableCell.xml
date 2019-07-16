@@ -104,7 +104,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's default constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal string "th" to create a `<th>` element.  
+ The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's parameterless constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal string "th" to create a `<th>` element.  
   
  [!code-aspx-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]
  [!code-aspx-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  
@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. It allows you to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents a cell in an <xref:System.Web.UI.HtmlControls.HtmlTable> control. It is commonly used to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents a `<th>` element for a table heading cell. Although you can use this constructor to create a `<td>` element for a table data cell, you typically use the default constructor.  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. It allows you to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents a cell in an <xref:System.Web.UI.HtmlControls.HtmlTable> control. It is commonly used to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents a `<th>` element for a table heading cell. Although you can use this constructor to create a `<td>` element for a table data cell, you typically use the parameterless constructor.  
   
 > [!NOTE]
 >  Although this constructor allows you to specify the cell element to create, the `<th>` element is the only supported cell element. For future compatibility, this constructor allows you to create other HTML cell elements that could become available.  
@@ -159,7 +159,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's default constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal "th" to create a `<th>` element.  
+ The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's parameterless constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal "th" to create a `<th>` element.  
   
  [!code-aspx-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]
  [!code-aspx-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  

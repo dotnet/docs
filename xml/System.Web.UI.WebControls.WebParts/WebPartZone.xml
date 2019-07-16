@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartZone.%23ctor%2A> method is a default constructor and does not set any values. However, derived classes can use the constructor to set base zone properties, to create standard behaviors and appearance for a custom zone control.  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZone.%23ctor%2A> method is a parameterless constructor and does not set any values. However, derived classes can use the constructor to set base zone properties, to create standard behaviors and appearance for a custom zone control.  
   
    
   

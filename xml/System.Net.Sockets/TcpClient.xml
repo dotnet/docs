@@ -127,7 +127,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the default constructor to create a new <xref:System.Net.Sockets.TcpClient>.  
+ The following code example demonstrates how to use the parameterless constructor to create a new <xref:System.Net.Sockets.TcpClient>.  
   
  [!code-cpp[ClassicTcpClient.PublicMethodsAndPropertiesExample#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CPP/source.cpp#4)]
  [!code-csharp[ClassicTcpClient.PublicMethodsAndPropertiesExample#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ClassicTcpClient.PublicMethodsAndPropertiesExample/CS/source.cs#4)]

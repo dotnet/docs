@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields to their default values.  
+ The parameterless constructor initializes all fields to their default values.  
   
  Typically, you do not create an instance of <xref:System.Drawing.Printing.PageSettings>, but instead use the <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A?displayProperty=nameWithType> to set settings for all pages.  
   

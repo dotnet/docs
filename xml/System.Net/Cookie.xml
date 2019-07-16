@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields to their default values, using empty strings ("") for `name`, `value`, `path`, and `domain`. Note that at least the <xref:System.Net.Cookie.Name%2A> property must be initialized before using an instance of the <xref:System.Net.Cookie> class.  
+ The parameterless constructor initializes all fields to their default values, using empty strings ("") for `name`, `value`, `path`, and `domain`. Note that at least the <xref:System.Net.Cookie.Name%2A> property must be initialized before using an instance of the <xref:System.Net.Cookie> class.  
   
  ]]></format>
         </remarks>

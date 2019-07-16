@@ -169,7 +169,7 @@
 ## Remarks  
  The `maskedTextProvider` parameter defines the masking language used by <xref:System.Windows.Forms.MaskedTextBox>. It is responsible for parsing the mask and determining whether user input conforms to the current mask position. You can derive a new class from <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType> to define your own custom masking language, and use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor to replace the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=nameWithType>.  
   
- If you want to use the default masking language and supply your own input mask, you do not need to use this constructor. Instead, you can either use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor, or use the default constructor then set the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
+ If you want to use the default masking language and supply your own input mask, you do not need to use this constructor. Instead, you can either use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor, or use the parameterless constructor then set the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
  ]]></format>
         </remarks>

@@ -590,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `ctorMsg` parameter is `null`, then the <xref:System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject%2A> method calls the default constructor for the new instance of the remote object that is represented by the current <xref:System.Runtime.Remoting.Proxies.RealProxy>.  
+ If the `ctorMsg` parameter is `null`, then the <xref:System.Runtime.Remoting.Proxies.RealProxy.InitializeServerObject%2A> method calls the parameterless constructor for the new instance of the remote object that is represented by the current <xref:System.Runtime.Remoting.Proxies.RealProxy>.  
   
    
   

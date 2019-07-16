@@ -123,7 +123,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the default constructor to create an instance of the <xref:System.Net.Sockets.UdpClient> class.  
+ The following example demonstrates how to use the parameterless constructor to create an instance of the <xref:System.Net.Sockets.UdpClient> class.  
   
  [!code-cpp[Classic UdpClient.PublicMethodsAndPropertiesExample#4](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic UdpClient.PublicMethodsAndPropertiesExample/CPP/source.cpp#4)]
  [!code-csharp[Classic UdpClient.PublicMethodsAndPropertiesExample#4](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic UdpClient.PublicMethodsAndPropertiesExample/CS/source.cs#4)]

@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor sets the <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> properties to `null`.  
+ The parameterless constructor sets the <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DataSource%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember%2A>, <xref:System.ComponentModel.LookupBindingPropertiesAttribute.ValueMember%2A>, and <xref:System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember%2A> properties to `null`.  
   
  ]]></format>
         </remarks>
@@ -257,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> class initialized with the default constructor.  
+ The <xref:System.ComponentModel.LookupBindingPropertiesAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> class initialized with the parameterless constructor.  
   
  ]]></format>
         </remarks>

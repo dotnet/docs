@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you use the default constructor and you do not explicitly set either <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityType%2A> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName%2A> in your code, then if a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> is later used on your tracking profile an exception will be thrown.  
+ If you use the parameterless constructor and you do not explicitly set either <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityType%2A> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ActivityTypeName%2A> in your code, then if a <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> is later used on your tracking profile an exception will be thrown.  
   
  The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation>.  
   

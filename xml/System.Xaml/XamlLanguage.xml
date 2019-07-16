@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A factory method is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for identifying an alternative technique that constructs the underlying type for a XAML type. The `Arguments` specify the input of a factory method and enable specifying that information in markup. The default techniques, in absence of a factory method, are to attempt to find a default constructor and then attempt to find an identified type converter for type, member, or destination type.  
+ A factory method is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for identifying an alternative technique that constructs the underlying type for a XAML type. The `Arguments` specify the input of a factory method and enable specifying that information in markup. The default techniques, in absence of a factory method, are to attempt to find a parameterless constructor and then attempt to find an identified type converter for type, member, or destination type.  
   
  For the generic usage, the `Arguments` wrap the objects or initialization text of all construction inputs that are specified as necessary for the `TypeArguments`.  
   
@@ -483,7 +483,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A factory method is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for identifying an alternative technique that constructs the underlying type for a XAML type. The default technique, if a factory method is unavailable, is to try to find a default constructor, and then try to find an identified type converter on type, member, or destination type.  
+ A factory method is a [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)] feature for identifying an alternative technique that constructs the underlying type for a XAML type. The default technique, if a factory method is unavailable, is to try to find a parameterless constructor, and then try to find an identified type converter on type, member, or destination type.  
   
  ]]></format>
         </remarks>

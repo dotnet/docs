@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This default constructor sets the following properties to a new instance of <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, which is a class that specifies which parts are included in a message:  
+ This parameterless constructor sets the following properties to a new instance of <xref:System.ServiceModel.Security.ScopedMessagePartSpecification>, which is a class that specifies which parts are included in a message:  
   
 -   <xref:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts%2A>,  
   

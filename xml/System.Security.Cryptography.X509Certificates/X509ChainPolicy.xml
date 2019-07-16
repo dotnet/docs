@@ -553,7 +553,7 @@ Every certificate in the chain must have a <xref:System.Security.Cryptography.X5
 <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter?displayProperty=nameWithType> time no earlier than this property's value. Otherwise, the <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.NotTimeValid?displayProperty=nameWithType> flag is asserted. 
 This property may also be used to determine the revocation status of a certificate.
 
-The default constructor for the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> class sets the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime> property to the time the constructor is called.
+The parameterless constructor for the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> class sets the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime> property to the time the constructor is called.
 Calling the <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.Reset> method replaces the value of <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationTime> with the current system time, 
 not with the time that the object was constructed.
 

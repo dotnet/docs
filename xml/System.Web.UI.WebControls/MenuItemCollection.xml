@@ -153,7 +153,7 @@
  Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.MenuItemCollection> class using the specified parent menu item (or owner). This constructor is commonly used when creating a collection of child menu items where you need to specify the parent menu item.  
   
 > [!NOTE]
->  When creating a collection of root menu items, consider using the default constructor because root menu items do not have a parent menu item.  
+>  When creating a collection of root menu items, consider using the parameterless constructor because root menu items do not have a parent menu item.  
   
  This constructor is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.MenuItem> class to initialize the <xref:System.Web.UI.WebControls.MenuItem.ChildItems%2A> property.  
   

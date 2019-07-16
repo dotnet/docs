@@ -31,7 +31,7 @@
   
  An <xref:System.Windows.Input.InputBinding> can be defined on a specific object or at the class level by registering a <xref:System.Windows.Input.CommandManager.RegisterClassInputBinding%2A> with the <xref:System.Windows.Input.CommandManager>.  
   
- The <xref:System.Windows.Input.InputBinding> class itself does not support XAML usage because it does not expose a public default constructor (there is a default constructor, but it is protected). However, derived classes can expose a public constructor and therefore can set properties on the derived class that are inherited from <xref:System.Windows.Input.InputBinding> with a XAML usage. Two existing <xref:System.Windows.Input.InputBinding>-derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>. The typical property in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming that is set in XAML and takes one or more <xref:System.Windows.Input.InputBinding> objects as values is the <xref:System.Windows.UIElement.InputBindings%2A?displayProperty=nameWithType> property.  
+ The <xref:System.Windows.Input.InputBinding> class itself does not support XAML usage because it does not expose a public parameterless constructor (there is a parameterless constructor, but it is protected). However, derived classes can expose a public constructor and therefore can set properties on the derived class that are inherited from <xref:System.Windows.Input.InputBinding> with a XAML usage. Two existing <xref:System.Windows.Input.InputBinding>-derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>. The typical property in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming that is set in XAML and takes one or more <xref:System.Windows.Input.InputBinding> objects as values is the <xref:System.Windows.UIElement.InputBindings%2A?displayProperty=nameWithType> property.  
   
 <a name="xamlObjectElementUsage_InputBinding"></a>   
 ## XAML Object Element Usage  
@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Input.InputBinding> is not technically an abstract class, but the default constructor is deliberately protected access. This has the effect of making <xref:System.Windows.Input.InputBinding> an "abstract" class for XAML. There are existing properties in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] that have XAML usages that expect objects of type <xref:System.Windows.Input.InputBinding>, but you cannot specify an <xref:System.Windows.Input.InputBinding> instance in XAML. Instead, you can specify one of the device-specific <xref:System.Windows.Input.InputBinding> derived classes as values, for instance <xref:System.Windows.Input.KeyBinding> or <xref:System.Windows.Input.MouseBinding>.  
+ <xref:System.Windows.Input.InputBinding> is not technically an abstract class, but the parameterless constructor is deliberately protected access. This has the effect of making <xref:System.Windows.Input.InputBinding> an "abstract" class for XAML. There are existing properties in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] that have XAML usages that expect objects of type <xref:System.Windows.Input.InputBinding>, but you cannot specify an <xref:System.Windows.Input.InputBinding> instance in XAML. Instead, you can specify one of the device-specific <xref:System.Windows.Input.InputBinding> derived classes as values, for instance <xref:System.Windows.Input.KeyBinding> or <xref:System.Windows.Input.MouseBinding>.  
   
  ]]></format>
         </remarks>
@@ -250,7 +250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Input.InputBinding> class does not support XAML usage because it does not expose a public default constructor (it has a default constructor, but it is protected). However, derived classes can expose a public constructor and therefore, can use properties that are inherited from <xref:System.Windows.Input.InputBinding>. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties with XAML usages are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
+ The <xref:System.Windows.Input.InputBinding> class does not support XAML usage because it does not expose a public parameterless constructor (it has a parameterless constructor, but it is protected). However, derived classes can expose a public constructor and therefore, can use properties that are inherited from <xref:System.Windows.Input.InputBinding>. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties with XAML usages are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
   
  <xref:System.Windows.Input.ICommand> references a type converter that enables certain preexisting <xref:System.Windows.Input.ICommand> implementations to specify values in the form of a string. This type conversion behavior sets the attribute value form of this property. You can also bind the <xref:System.Windows.Input.InputBinding.Command%2A>, <xref:System.Windows.Input.InputBinding.CommandParameter%2A>, and <xref:System.Windows.Input.InputBinding.CommandTarget%2A> properties to an <xref:System.Windows.Input.ICommand> that is defined on an object. This enables you to define a custom command and associate it with user input. For more information, see the second example in <xref:System.Windows.Input.InputBinding>.  
   
@@ -275,7 +275,7 @@
  A derived class of <xref:System.Windows.Input.InputBinding> that supports object element syntax, such as <xref:System.Windows.Input.KeyBinding> or <xref:System.Windows.Input.MouseBinding>. See Remarks.  
   
  `iCommandImplementation`  
- An object implementation of <xref:System.Windows.Input.ICommand> that supports object element syntax (has a public default constructor).  
+ An object implementation of <xref:System.Windows.Input.ICommand> that supports object element syntax (has a public parameterless constructor).  
   
    
   
@@ -323,7 +323,7 @@
   
  The data type and purpose of the command parameter are defined differently for each command and can be `null`. You can bind the <xref:System.Windows.Input.InputBinding.Command%2A>, <xref:System.Windows.Input.InputBinding.CommandParameter%2A>, and <xref:System.Windows.Input.InputBinding.CommandTarget%2A> properties to an <xref:System.Windows.Input.ICommand> that is defined on an object. This enables you to define a custom command and associate it with user input. For more information, see the second example in <xref:System.Windows.Input.InputBinding>.  
   
- The <xref:System.Windows.Input.InputBinding> class does not support XAML usage because it does not expose a public default constructor (it has a default constructor, but it is protected). However, derived classes can expose a public constructor and therefore, can set properties that are inherited from <xref:System.Windows.Input.InputBinding> with XAML usage. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
+ The <xref:System.Windows.Input.InputBinding> class does not support XAML usage because it does not expose a public parameterless constructor (it has a parameterless constructor, but it is protected). However, derived classes can expose a public constructor and therefore, can set properties that are inherited from <xref:System.Windows.Input.InputBinding> with XAML usage. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
   
 <a name="xamlAttributeUsage_CommandParameter"></a>   
 ## XAML Attribute Usage  
@@ -352,7 +352,7 @@
  A string that is processed by a particular command. Strings are the common type used for command parameters because they can be easily set in XAML. For the expected string format and its purpose, see the documentation for the particular command that the input binding is associated with. Many commands do not expect parameters.  
   
  `commandParameterObject`  
- An object that is processed by a particular command. All existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] commands use strings. Therefore, this property element syntax is only relevant for custom command scenarios. In order to support this syntax, the `commandParameterObject` object must also support object element syntax (must have a public default constructor).  
+ An object that is processed by a particular command. All existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] commands use strings. Therefore, this property element syntax is only relevant for custom command scenarios. In order to support this syntax, the `commandParameterObject` object must also support object element syntax (must have a public parameterless constructor).  
   
  ]]></format>
         </remarks>
@@ -425,7 +425,7 @@
   
  When used with a <xref:System.Windows.Input.RoutedCommand>, the command target is the object on which the <xref:System.Windows.Input.CommandManager.Executed> and <xref:System.Windows.Input.CommandManager.CanExecute> events are raised. If the <xref:System.Windows.Input.InputBinding.CommandTarget%2A> property is not set, the element with keyboard focus is used as the target.  
   
- The <xref:System.Windows.Input.InputBinding> class itself does not support XAML usage, because it does not expose a public default constructor (there is a default constructor, but it is protected). However, derived classes can expose a public constructor and therefore can set properties that are inherited from <xref:System.Windows.Input.InputBinding> with a XAML usage. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
+ The <xref:System.Windows.Input.InputBinding> class itself does not support XAML usage, because it does not expose a public parameterless constructor (there is a parameterless constructor, but it is protected). However, derived classes can expose a public constructor and therefore can set properties that are inherited from <xref:System.Windows.Input.InputBinding> with a XAML usage. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
   
 <a name="xamlAttributeUsage_CommandTarget"></a>   
 ## XAML Attribute Usage  
@@ -518,7 +518,7 @@
 ## Remarks  
  The input gesture is the action that invokes the command. Examples of input gestures in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] are <xref:System.Windows.Input.KeyGesture> and <xref:System.Windows.Input.MouseGesture>. A <xref:System.Windows.Input.KeyGesture> is a combination of a <xref:System.Windows.Input.Key> and a set of <xref:System.Windows.Input.ModifierKeys>. A <xref:System.Windows.Input.MouseGesture> is a combination of a <xref:System.Windows.Input.MouseAction> and a set of <xref:System.Windows.Input.ModifierKeys>.  
   
- The <xref:System.Windows.Input.InputBinding> class itself does not support XAML usage, because it does not expose a public default constructor (there is a default constructor, but it is protected). However, derived classes can expose a public constructor and thus can set properties that are inherited from <xref:System.Windows.Input.InputBinding> with a XAML usage. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
+ The <xref:System.Windows.Input.InputBinding> class itself does not support XAML usage, because it does not expose a public parameterless constructor (there is a parameterless constructor, but it is protected). However, derived classes can expose a public constructor and thus can set properties that are inherited from <xref:System.Windows.Input.InputBinding> with a XAML usage. Two existing <xref:System.Windows.Input.InputBinding> derived classes that can be instantiated in XAML and can set properties in XAML are <xref:System.Windows.Input.KeyBinding> and <xref:System.Windows.Input.MouseBinding>.  
   
 <a name="xamlAttributeUsage_gesture"></a>   
 ## XAML Attribute Usage  

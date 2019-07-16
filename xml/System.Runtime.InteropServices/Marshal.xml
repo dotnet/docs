@@ -2510,7 +2510,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="type" /> parameter is not a class that can be create by COM. The class must be public, have a public default constructor, and be COM visible.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="type" /> parameter is not a class that can be create by COM. The class must be public, have a public parameterless constructor, and be COM visible.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
@@ -6867,7 +6867,7 @@ There is a difference in the behavior of the `GetLastWin32Error` method on .NET 
  The <paramref name="structureType" /> parameter is a generic type definition.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="structureType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.MissingMethodException">The class specified by <paramref name="structureType" /> does not have an accessible default constructor.</exception>
+        <exception cref="T:System.MissingMethodException">The class specified by <paramref name="structureType" /> does not have an accessible parameterless constructor.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Runtime.InteropServices.UCOMITypeInfo.GetTypeAttr(System.IntPtr@)" />
       </Docs>
@@ -6929,7 +6929,7 @@ There is a difference in the behavior of the `GetLastWin32Error` method on .NET 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The layout of <typeparamref name="T" /> is not sequential or explicit.</exception>
-        <exception cref="T:System.MissingMethodException">The class specified by <typeparamref name="T" /> does not have an accessible default constructor.</exception>
+        <exception cref="T:System.MissingMethodException">The class specified by <typeparamref name="T" /> does not have an accessible parameterless constructor.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>

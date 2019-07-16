@@ -54,7 +54,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.Design.MaskDescriptor.%23ctor%2A> is a compiler-supplied default constructor. A default constructor is required by the <xref:System.ComponentModel.Design.ITypeDiscoveryService> service provider.  
+ <xref:System.Windows.Forms.Design.MaskDescriptor.%23ctor%2A> is a compiler-supplied parameterless constructor. A parameterless constructor is required by the <xref:System.ComponentModel.Design.ITypeDiscoveryService> service provider.  
   
  ]]></format>
         </remarks>

@@ -67,7 +67,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This default constructor sets the <xref:System.Windows.Forms.Control.TabStop%2A> property to `false`.  
+ This parameterless constructor sets the <xref:System.Windows.Forms.Control.TabStop%2A> property to `false`.  
   
  Application code typically won't explicitly create instances of this class, because this is performed automatically when the containing <xref:System.Windows.Forms.DataGridViewTextBoxCell> or <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is created.  
   

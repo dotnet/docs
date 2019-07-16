@@ -121,7 +121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes an empty instance of the <xref:System.Net.WebProxy> class with the <xref:System.Net.WebProxy.Address%2A> property set to `null`.  
+ The parameterless constructor initializes an empty instance of the <xref:System.Net.WebProxy> class with the <xref:System.Net.WebProxy.Address%2A> property set to `null`.  
   
  When the <xref:System.Net.WebProxy.Address%2A> property is `null`, the <xref:System.Net.WebProxy.IsBypassed%2A> method returns `true` and the <xref:System.Net.WebProxy.GetProxy%2A> method returns the destination address.  
   

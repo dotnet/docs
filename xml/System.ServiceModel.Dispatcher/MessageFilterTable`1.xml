@@ -134,7 +134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The larger the integer assigned to a filter table, the higher its priority for use in inspecting messages for a match. The default constructor assigns a `defaultPriority` of 0.  
+ The larger the integer assigned to a filter table, the higher its priority for use in inspecting messages for a match. The parameterless constructor assigns a `defaultPriority` of 0.  
   
  ]]></format>
         </remarks>

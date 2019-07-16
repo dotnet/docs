@@ -66,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor creates a <xref:System.Windows.Input.StylusPointDescription> that contains information for the properties <xref:System.Windows.Input.StylusPointProperties.X>, <xref:System.Windows.Input.StylusPointProperties.Y>, and <xref:System.Windows.Input.StylusPointProperties.NormalPressure>.  
+ The parameterless constructor creates a <xref:System.Windows.Input.StylusPointDescription> that contains information for the properties <xref:System.Windows.Input.StylusPointProperties.X>, <xref:System.Windows.Input.StylusPointProperties.Y>, and <xref:System.Windows.Input.StylusPointProperties.NormalPressure>.  
   
    
   

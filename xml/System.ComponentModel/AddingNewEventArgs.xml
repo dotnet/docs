@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.AddingNewEventArgs> class provides data for the <xref:System.Windows.Forms.BindingSource.AddingNew?displayProperty=nameWithType> event, which signals that an item is about to be added to a collection. The event gives the programmer, within the event handler <xref:System.ComponentModel.AddingNewEventHandler>, the option of supplying the new object by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property to this new item. If this property is not set, the collection will typically use the default constructor of the appropriate type to construct a new item. In either case, the new item will be added to the collection.  
+ The <xref:System.ComponentModel.AddingNewEventArgs> class provides data for the <xref:System.Windows.Forms.BindingSource.AddingNew?displayProperty=nameWithType> event, which signals that an item is about to be added to a collection. The event gives the programmer, within the event handler <xref:System.ComponentModel.AddingNewEventHandler>, the option of supplying the new object by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property to this new item. If this property is not set, the collection will typically use the parameterless constructor of the appropriate type to construct a new item. In either case, the new item will be added to the collection.  
   
  If the collection also implements the <xref:System.ComponentModel.ICancelAddNew> interface, the item will be provisionally added, waiting a subsequent commit or rollback.  
   
@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor sets the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property to `null`. A value that is `null` indicates that, if the <xref:System.ComponentModel.AddingNewEventHandler> does not explicitly set this property, the collection will take standard steps to provide a new item to add to itself.  
+ The parameterless constructor sets the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property to `null`. A value that is `null` indicates that, if the <xref:System.ComponentModel.AddingNewEventHandler> does not explicitly set this property, the collection will take standard steps to provide a new item to add to itself.  
   
  ]]></format>
         </remarks>
@@ -197,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property is set to `null`, it indicates that the collection is to take the standard action, which typically entails creating an object of the appropriate type using its default constructor, and then adding it to the collection.  
+ If the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property is set to `null`, it indicates that the collection is to take the standard action, which typically entails creating an object of the appropriate type using its parameterless constructor, and then adding it to the collection.  
   
    
   

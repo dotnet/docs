@@ -49,13 +49,13 @@
 ## Remarks  
  <xref:System.Reflection.Emit.ConstructorBuilder> is used to fully describe a constructor in Microsoft intermediate language (MSIL), including the name, attributes, signature, and constructor body. It is used in conjunction with the <xref:System.Reflection.Emit.TypeBuilder> class to create classes at run time. Call <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A> to get an instance of <xref:System.Reflection.Emit.ConstructorBuilder>.  
   
- If you do not define a constructor for your dynamic type, a default constructor is provided automatically, and it calls the default constructor of the base class.  
+ If you do not define a constructor for your dynamic type, a parameterless constructor is provided automatically, and it calls the parameterless constructor of the base class.  
   
- If you use <xref:System.Reflection.Emit.ConstructorBuilder> to define a constructor for your dynamic type, a default constructor is not provided. You have the following options for providing a default constructor in addition to the constructor you defined:  
+ If you use <xref:System.Reflection.Emit.ConstructorBuilder> to define a constructor for your dynamic type, a parameterless constructor is not provided. You have the following options for providing a parameterless constructor in addition to the constructor you defined:  
   
--   If you want a default constructor that simply calls the default constructor of the base class, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor%2A?displayProperty=nameWithType> method to create one (and optionally restrict access to it). Do not provide an implementation for this default constructor. If you do, an exception is thrown when you try to use the constructor. No exception is thrown when the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> method is called.  
+-   If you want a parameterless constructor that simply calls the parameterless constructor of the base class, you can use the <xref:System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor%2A?displayProperty=nameWithType> method to create one (and optionally restrict access to it). Do not provide an implementation for this parameterless constructor. If you do, an exception is thrown when you try to use the constructor. No exception is thrown when the <xref:System.Reflection.Emit.TypeBuilder.CreateType%2A?displayProperty=nameWithType> method is called.  
   
--   If you want a default constructor that does something more than simply calling the default constructor of the base class, or that calls another constructor of the base class, or that does something else entirely, you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=nameWithType> method to create a <xref:System.Reflection.Emit.ConstructorBuilder>, and provide your own implementation.  
+-   If you want a parameterless constructor that does something more than simply calling the parameterless constructor of the base class, or that calls another constructor of the base class, or that does something else entirely, you must use the <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A?displayProperty=nameWithType> method to create a <xref:System.Reflection.Emit.ConstructorBuilder>, and provide your own implementation.  
   
    
   
@@ -491,7 +491,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The runtime generates the code for default constructors. Therefore, if an attempt is made to obtain an `ILGenerator`, an exception will be thrown.  
+ The runtime generates the code for parameterless constructors. Therefore, if an attempt is made to obtain an `ILGenerator`, an exception will be thrown.  
   
    
   
@@ -504,7 +504,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The constructor is a default constructor.  
+        <exception cref="T:System.InvalidOperationException">The constructor is a parameterless constructor.  
   
  -or-  
   
@@ -549,11 +549,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The runtime generates the code for default constructors. Therefore, if an attempt is made to obtain an `ILGenerator` for a default constructor, an exception is thrown.  
+ The runtime generates the code for parameterless constructors. Therefore, if an attempt is made to obtain an `ILGenerator` for a parameterless constructor, an exception is thrown.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The constructor is a default constructor.  
+        <exception cref="T:System.InvalidOperationException">The constructor is a parameterless constructor.  
   
  -or-  
   

@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes an empty track point. No matching locations, excluded locations, data extracts or annotations are specified. You must configure the track point by adding at least one <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A>. You may optionally add objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A>, and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A>.  
+ The parameterless constructor initializes an empty track point. No matching locations, excluded locations, data extracts or annotations are specified. You must configure the track point by adding at least one <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A>. You may optionally add objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A>, and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A>.  
   
  ]]></format>
         </remarks>

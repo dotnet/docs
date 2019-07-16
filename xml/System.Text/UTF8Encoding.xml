@@ -1703,7 +1703,7 @@
 >  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix the beginning of a stream of encoded bytes with a preamble. Note that the <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.
   
 ## Examples  
- The following example uses the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to return the Unicode byte order mark encoded in UTF-8 format. Notice that the default constructor for <xref:System.Text.UTF8Encoding> does not provide a preamble.  
+ The following example uses the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to return the Unicode byte order mark encoded in UTF-8 format. Notice that the parameterless constructor for <xref:System.Text.UTF8Encoding> does not provide a preamble.  
   
  [!code-cpp[System.Text.UTF8Encoding.GetPreamble Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/CPP/getpreamble-.cpp#1)]
  [!code-csharp[System.Text.UTF8Encoding.GetPreamble Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/CS/getpreamble-.cs#1)]

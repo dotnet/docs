@@ -26,16 +26,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies that an object can be initialized by using a non-default constructor syntax, and that a property of the specified name supplies construction information.  This information is primarily for XAML serialization.</summary>
+    <summary>Specifies that an object can be initialized by using a non-parameterless constructor syntax, and that a property of the specified name supplies construction information.  This information is primarily for XAML serialization.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute specifies that the associated property can be initialized by a constructor parameter and should be ignored for XAML serialization if the constructor is used to construct the instance. This provides better round trip representations for parameterized constructor syntax rather than default constructor instantiation plus specific attributes.  
+ This attribute specifies that the associated property can be initialized by a constructor parameter and should be ignored for XAML serialization if the constructor is used to construct the instance. This provides better round trip representations for parameterized constructor syntax rather than parameterless constructor instantiation plus specific attributes.  
   
  A framework can potentially support preserving markup extension usages and reconstituting them rather than relying on `ProvideValue` output in the object tree for serialization. In this case, the <xref:System.Windows.Markup.ConstructorArgumentAttribute> information is useful during serialization for producing an accurate representation of the typical markup extension usage. For more information about markup extensions, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
   
- In order to be valid for a <xref:System.Windows.Markup.ConstructorArgumentAttribute> attribution, a type's public non-default constructor must support exactly one parameter. The name of the parameter must correspond to a read/write property. The property must be otherwise serializable. You use this attribute to create the correspondence between the name of the parameter in the constructor, and the property. Specifically, you apply this attribute to the property-level definition of the connecting read/write property.  
+ In order to be valid for a <xref:System.Windows.Markup.ConstructorArgumentAttribute> attribution, a type's public non-parameterless constructor must support exactly one parameter. The name of the parameter must correspond to a read/write property. The property must be otherwise serializable. You use this attribute to create the correspondence between the name of the parameter in the constructor, and the property. Specifically, you apply this attribute to the property-level definition of the connecting read/write property.  
   
  Consumers of <xref:System.Windows.Markup.ConstructorArgumentAttribute> may throw in cases where <xref:System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName%2A> does not resolve to type backing, or when applied to a type that does not have the appropriate construction arguments and arity.  
   

@@ -5219,14 +5219,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes every element of the value-type <see cref="T:System.Array" /> by calling the default constructor of the value type.</summary>
+        <summary>Initializes every element of the value-type <see cref="T:System.Array" /> by calling the parameterless constructor of the value type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This method is designed to help compilers support value-type arrays; most users do not need this method. It must not be used on reference-type arrays.  
   
- If the <xref:System.Array> is not a value-type <xref:System.Array> or if the value type does not have a default constructor, the <xref:System.Array> is not modified.  
+ If the <xref:System.Array> is not a value-type <xref:System.Array> or if the value type does not have a parameterless constructor, the <xref:System.Array> is not modified.  
   
  The value-type <xref:System.Array> can have any lower bound and any number of dimensions.  
   

@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Types derived from <xref:System.Activities.Handle> have their lifetimes controlled by the workflow runtime. For workflow variables of handle types, the runtime uses the required default constructor to create an instance of the type, assigns it to the <xref:System.Activities.Variable>, and calls <xref:System.Activities.Handle.OnInitialize%2A> when initializing the environment. When the variable goes out of scope, <xref:System.Activities.Handle.OnUninitialize%2A> is called.  
+ Types derived from <xref:System.Activities.Handle> have their lifetimes controlled by the workflow runtime. For workflow variables of handle types, the runtime uses the required parameterless constructor to create an instance of the type, assigns it to the <xref:System.Activities.Variable>, and calls <xref:System.Activities.Handle.OnInitialize%2A> when initializing the environment. When the variable goes out of scope, <xref:System.Activities.Handle.OnUninitialize%2A> is called.  
   
  ]]></format>
     </remarks>
@@ -48,7 +48,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Classes that derive from <xref:System.Activities.Handle> must provide a default constructor.  
+ Classes that derive from <xref:System.Activities.Handle> must provide a parameterless constructor.  
   
  ]]></format>
         </remarks>

@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A>, and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties with an empty `string`.  
+ The parameterless constructor initializes the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A>, and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties with an empty `string`.  
   
  ]]></format>
         </remarks>

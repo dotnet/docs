@@ -118,7 +118,7 @@ override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite si
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default constructor for <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
+ Parameterless constructor for <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
   
  ]]></format>
         </remarks>

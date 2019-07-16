@@ -75,7 +75,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor creates an instance of the class with the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property initialized to <xref:System.String.Empty?displayProperty=nameWithType> and the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties initialized to zero.  
+ The parameterless constructor creates an instance of the class with the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property initialized to <xref:System.String.Empty?displayProperty=nameWithType> and the <xref:System.Web.UI.DataSourceSelectArguments.StartRowIndex%2A> and <xref:System.Web.UI.DataSourceSelectArguments.MaximumRows%2A> properties initialized to zero.  
   
  ]]></format>
         </remarks>

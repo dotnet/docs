@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor is not generally used, because a <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> value and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> value are required for proper initialization. The default constructor exists primarily to support [ComponentResourceKey Markup Extension](~/docs/framework/wpf/advanced/componentresourcekey-markup-extension.md) XAML usage in named parameter form.  
+ The parameterless constructor is not generally used, because a <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> value and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> value are required for proper initialization. The parameterless constructor exists primarily to support [ComponentResourceKey Markup Extension](~/docs/framework/wpf/advanced/componentresourcekey-markup-extension.md) XAML usage in named parameter form.  
   
  ]]></format>
         </remarks>

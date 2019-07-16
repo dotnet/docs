@@ -129,7 +129,7 @@
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.ComponentModel.BindingList%601.AllowEdit%2A>|`true`|  
-|<xref:System.ComponentModel.BindingList%601.AllowNew%2A>|`true` if the list type has a default constructor; otherwise, `false`.|  
+|<xref:System.ComponentModel.BindingList%601.AllowNew%2A>|`true` if the list type has a parameterless constructor; otherwise, `false`.|  
 |<xref:System.ComponentModel.BindingList%601.AllowRemove%2A>|`true`|  
 |<xref:System.ComponentModel.BindingList%601.RaiseListChangedEvents%2A>|`true`|  
   
@@ -187,7 +187,7 @@
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.ComponentModel.BindingList%601.AllowEdit%2A>|`true`|  
-|<xref:System.ComponentModel.BindingList%601.AllowNew%2A>|`true` if the list type has a default constructor; otherwise, `false`.|  
+|<xref:System.ComponentModel.BindingList%601.AllowNew%2A>|`true` if the list type has a parameterless constructor; otherwise, `false`.|  
 |<xref:System.ComponentModel.BindingList%601.AllowRemove%2A>|`true`|  
 |<xref:System.ComponentModel.BindingList%601.RaiseListChangedEvents%2A>|`true`|  
   
@@ -289,7 +289,7 @@
   
      This event can be programmatically handled to construct a new custom item. This is accomplished in the event handler by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item.  
   
-     Otherwise, the new item is automatically created through its public default constructor.  
+     Otherwise, the new item is automatically created through its public parameterless constructor.  
   
 2.  The position of the new item is tracked, but it is not added to the list until one of the following conditions are met:  
   
@@ -315,7 +315,7 @@
   
  -or-  
   
- A public default constructor could not be found for the current item type.</exception>
+ A public parameterless constructor could not be found for the current item type.</exception>
         <altmember cref="M:System.ComponentModel.IBindingList.AddNew" />
         <altmember cref="M:System.Activator.CreateInstance(System.Type)" />
         <altmember cref="P:System.Collections.ObjectModel.Collection`1.Items" />
@@ -362,7 +362,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.BindingList%601.AddNewCore%2A> method adds a new item to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. <xref:System.ComponentModel.BindingList%601.AddNewCore%2A> raises the <xref:System.ComponentModel.BindingList%601.AddingNew> event. This allows you to add a new item by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item. Otherwise, the new item is automatically created through its public default constructor.  
+ The <xref:System.ComponentModel.BindingList%601.AddNewCore%2A> method adds a new item to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. <xref:System.ComponentModel.BindingList%601.AddNewCore%2A> raises the <xref:System.ComponentModel.BindingList%601.AddingNew> event. This allows you to add a new item by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item. Otherwise, the new item is automatically created through its public parameterless constructor.  
   
  ]]></format>
         </remarks>
@@ -465,9 +465,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.BindingList%601.AllowNew%2A> property is typically used by other components to determine if the creation of new items is allowed. <xref:System.ComponentModel.BindingList%601.AllowNew%2A> defaults to `true` if the type contained in the list has a default constructor or the <xref:System.ComponentModel.BindingList%601.AddingNew> event is handled. If the <xref:System.ComponentModel.BindingList%601.AddingNew> event is not handled or the list type does not have a default constructor, then <xref:System.ComponentModel.BindingList%601.AllowNew%2A> defaults to `false`.  
+ The <xref:System.ComponentModel.BindingList%601.AllowNew%2A> property is typically used by other components to determine if the creation of new items is allowed. <xref:System.ComponentModel.BindingList%601.AllowNew%2A> defaults to `true` if the type contained in the list has a parameterless constructor or the <xref:System.ComponentModel.BindingList%601.AddingNew> event is handled. If the <xref:System.ComponentModel.BindingList%601.AddingNew> event is not handled or the list type does not have a parameterless constructor, then <xref:System.ComponentModel.BindingList%601.AllowNew%2A> defaults to `false`.  
   
- If <xref:System.ComponentModel.BindingList%601.AllowNew%2A> is explicitly set, the set value will always be used by bound objects to determine if new items can be added to the list. Whether <xref:System.ComponentModel.BindingList%601.AllowNew%2A> is `true` or `false`, new items can be added by explicitly calling <xref:System.ComponentModel.BindingList%601.AddNew%2A> if the list type has a default constructor or the <xref:System.ComponentModel.BindingList%601.AddingNew> event is handled. In addition, setting <xref:System.ComponentModel.BindingList%601.AllowNew%2A> causes a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType.Reset> to occur.  
+ If <xref:System.ComponentModel.BindingList%601.AllowNew%2A> is explicitly set, the set value will always be used by bound objects to determine if new items can be added to the list. Whether <xref:System.ComponentModel.BindingList%601.AllowNew%2A> is `true` or `false`, new items can be added by explicitly calling <xref:System.ComponentModel.BindingList%601.AddNew%2A> if the list type has a parameterless constructor or the <xref:System.ComponentModel.BindingList%601.AddingNew> event is handled. In addition, setting <xref:System.ComponentModel.BindingList%601.AllowNew%2A> causes a <xref:System.ComponentModel.BindingList%601.ListChanged> event of type <xref:System.ComponentModel.ListChangedType.Reset> to occur.  
   
    
   

@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
+ The parameterless constructor initializes timeout properties with the service model timeout values when exchanging messages. The default value is 1 minute for open, send, and close operations and 10 minutes for the receive operation. Use <xref:System.ServiceModel.Channels.ChannelFactoryBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> if you want to specify other values for these operation timeouts.  
   
  ]]></format>
         </remarks>
@@ -143,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.ServiceModel.Channels.ChannelFactoryBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the default constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
+ Use <xref:System.ServiceModel.Channels.ChannelFactoryBase%601.%23ctor%28System.ServiceModel.IDefaultCommunicationTimeouts%29> instead of the parameterless constructor if you want to specify custom values for the open, send, receive, and close operation timeouts instead of using the service model default values.  
   
  ]]></format>
         </remarks>

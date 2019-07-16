@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor when you want to configure the security explicitly. The default is <xref:System.ServiceModel.NetNamedPipeSecurityMode.Transport> when using the default constructor.  
+ Use this constructor when you want to configure the security explicitly. The default is <xref:System.ServiceModel.NetNamedPipeSecurityMode.Transport> when using the parameterless constructor.  
   
    
   

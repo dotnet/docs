@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a <xref:System.Windows.Navigation.PageFunction%601> is not being kept alive (see <xref:System.Windows.Controls.Page.KeepAlive%2A>), it needs to implement a default constructor to allow [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to create a new instance of it when navigated to in back or forward navigation history.  
+ If a <xref:System.Windows.Navigation.PageFunction%601> is not being kept alive (see <xref:System.Windows.Controls.Page.KeepAlive%2A>), it needs to implement a parameterless constructor to allow [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to create a new instance of it when navigated to in back or forward navigation history.  
   
  ]]></format>
         </remarks>

@@ -296,12 +296,12 @@
         <param name="relationshipName">The relationship name.</param>
         <param name="targetRoleName">The role name of the related end.</param>
         <param name="entityCollection">The <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" /> to initialize.</param>
-        <summary>Initializes an existing <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" /> that was created by using the default constructor.</summary>
+        <summary>Initializes an existing <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" /> that was created by using the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedCollection%2A> method initializes an existing <xref:System.Data.Objects.DataClasses.EntityCollection%601> that was created by using the default constructor. The <xref:System.Data.Objects.DataClasses.EntityCollection%601> is initialized by using the provided relationship and target role names.  
+ The <xref:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedCollection%2A> method initializes an existing <xref:System.Data.Objects.DataClasses.EntityCollection%601> that was created by using the parameterless constructor. The <xref:System.Data.Objects.DataClasses.EntityCollection%601> is initialized by using the provided relationship and target role names.  
   
  The <xref:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedCollection%2A> method is used during deserialization only.  
   
@@ -359,12 +359,12 @@
         <param name="relationshipName">The relationship name.</param>
         <param name="targetRoleName">The role name of the related end.</param>
         <param name="entityReference">The <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> to initialize.</param>
-        <summary>Initializes an existing <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> that was created by using the default constructor.</summary>
+        <summary>Initializes an existing <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> that was created by using the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedReference%2A> method initializes an existing <xref:System.Data.Objects.DataClasses.EntityReference%601> that was created by using the default constructor. The <xref:System.Data.Objects.DataClasses.EntityReference%601> is initialized by using the provided relationship and target role names.  
+ The <xref:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedReference%2A> method initializes an existing <xref:System.Data.Objects.DataClasses.EntityReference%601> that was created by using the parameterless constructor. The <xref:System.Data.Objects.DataClasses.EntityReference%601> is initialized by using the provided relationship and target role names.  
   
  The <xref:System.Data.Objects.DataClasses.RelationshipManager.InitializeRelatedReference%2A> method is used during deserialization only.  
   

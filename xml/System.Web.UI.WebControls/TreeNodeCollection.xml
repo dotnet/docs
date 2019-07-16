@@ -157,7 +157,7 @@
  Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.TreeNodeCollection> class using the specified parent node (or owner). This constructor is commonly used when creating a collection of non-root nodes where you need to specify the parent node.  
   
 > [!NOTE]
->  When creating a collection of root nodes, consider using the default constructor because root nodes do not have a parent node.  
+>  When creating a collection of root nodes, consider using the parameterless constructor because root nodes do not have a parent node.  
   
  This constructor is used primarily by control developers.  
   

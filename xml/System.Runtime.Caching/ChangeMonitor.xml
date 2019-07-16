@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.ChangeMonitor> class has a default constructor. However, classes that inherit from the base <xref:System.Runtime.Caching.ChangeMonitor> class and define custom change-monitoring behavior must perform initialization in the constructor. For more information, see the Notes for Inheritors section.  
+ The <xref:System.Runtime.Caching.ChangeMonitor> class has a parameterless constructor. However, classes that inherit from the base <xref:System.Runtime.Caching.ChangeMonitor> class and define custom change-monitoring behavior must perform initialization in the constructor. For more information, see the Notes for Inheritors section.  
   
  ]]></format>
         </remarks>

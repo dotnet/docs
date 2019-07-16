@@ -325,7 +325,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not pass a `null` value. To set a <xref:System.Activities.Presentation.ContextItem> to an empty value, create an instance of the item using a default constructor.  
+ Do not pass a `null` value. To set a <xref:System.Activities.Presentation.ContextItem> to an empty value, create an instance of the item using a parameterless constructor.  
   
  ]]></format>
         </remarks>

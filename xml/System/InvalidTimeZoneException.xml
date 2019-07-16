@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the default constructor of the <xref:System.InvalidTimeZoneException> class. It initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Exception of type 'System.InvalidTimeZoneException' was thrown." This message is localized for the current system culture.  
+ This is the parameterless constructor of the <xref:System.InvalidTimeZoneException> class. It initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Exception of type 'System.InvalidTimeZoneException' was thrown." This message is localized for the current system culture.  
   
  ]]></format>
         </remarks>

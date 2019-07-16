@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you use the default constructor you must explicitly set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to a value different from a null reference (`Nothing` in Visual Basic) in your code.  
+ If you use the parameterless constructor you must explicitly set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to a value different from a null reference (`Nothing` in Visual Basic) in your code.  
   
  ]]></format>
         </remarks>

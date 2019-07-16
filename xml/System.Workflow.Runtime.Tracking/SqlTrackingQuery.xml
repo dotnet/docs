@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> to a null reference (`Nothing` in Visual Basic). You must set <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> before you call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> or <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> or an <xref:System.InvalidOperationException> will be thrown.  
+ The parameterless constructor initializes <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> to a null reference (`Nothing` in Visual Basic). You must set <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> before you call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> or <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> or an <xref:System.InvalidOperationException> will be thrown.  
   
  ]]></format>
         </remarks>

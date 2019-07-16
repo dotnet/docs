@@ -586,7 +586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After the registration process has been stopped, the registration object's state is equal to the state directly after being constructed by the default constructor. In this state, all of its properties are assumed to have no value. The <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> method may be used to restart it.  
+ After the registration process has been stopped, the registration object's state is equal to the state directly after being constructed by the parameterless constructor. In this state, all of its properties are assumed to have no value. The <xref:System.Net.PeerToPeer.PeerNameRegistration.Start%2A> method may be used to restart it.  
   
  It is possible to have multiple registration objects for the same peer name.  In such a case, if the peer name is secured, each instance will represent a registration in a different PNRP cloud.  However, if the peer name is not secured, it can be registered in the same cloud multiple times.  
   

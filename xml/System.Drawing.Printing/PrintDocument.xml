@@ -89,7 +89,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields based upon the default printer. Typically, after creating a new <xref:System.Drawing.Printing.PrintDocument>, you set printer and page settings that affect the output through the <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A> and <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A> properties, respectively.  
+ The parameterless constructor initializes all fields based upon the default printer. Typically, after creating a new <xref:System.Drawing.Printing.PrintDocument>, you set printer and page settings that affect the output through the <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A> and <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A> properties, respectively.  
   
    
   

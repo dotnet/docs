@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the default constructor of the <xref:System.TimeZoneNotFoundException> class. This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The time zone '*timeZoneName*' was not found on the local computer." This message is localized for the current system culture.  
+ This is the parameterless constructor of the <xref:System.TimeZoneNotFoundException> class. This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The time zone '*timeZoneName*' was not found on the local computer." This message is localized for the current system culture.  
   
  ]]></format>
         </remarks>

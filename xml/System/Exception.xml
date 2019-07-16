@@ -335,7 +335,7 @@ Stack Trace:
 ## Remarks  
  This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture.  
   
- All the derived classes should provide this default constructor. The following table shows the initial property values for an instance of <xref:System.Exception>.  
+ All the derived classes should provide this parameterless constructor. The following table shows the initial property values for an instance of <xref:System.Exception>.  
   
 |Property|Value|  
 |--------------|-----------|  

@@ -2276,7 +2276,7 @@
   
  -or-  
   
- The type does not have a default constructor.</exception>
+ The type does not have a parameterless constructor.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="excType" /> is <see langword="null" />.</exception>
       </Docs>

@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor sets the <xref:System.ComponentModel.DefaultBindingPropertyAttribute.Name%2A> property to `null`.  
+ The parameterless constructor sets the <xref:System.ComponentModel.DefaultBindingPropertyAttribute.Name%2A> property to `null`.  
   
  ]]></format>
         </remarks>
@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.DefaultBindingPropertyAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> class initialized with the default constructor.  
+ The <xref:System.ComponentModel.DefaultBindingPropertyAttribute.Default> member is a static, read-only field that defines an instance of the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> class initialized with the parameterless constructor.  
   
  ]]></format>
         </remarks>

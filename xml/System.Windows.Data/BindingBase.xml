@@ -189,7 +189,7 @@
 <a name="xamlValues_FallbackValue"></a>   
 ## XAML Values  
  *fallbackValue*  
- An attribute or object element value of the same type as the target property. See that type's documentation for XAML usage information. That type may or may not support attribute syntax for its values, or may or may not support object element syntax (which requires a default constructor on that type). The target property type will therefore influence which syntax you use for the value of the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> property.  
+ An attribute or object element value of the same type as the target property. See that type's documentation for XAML usage information. That type may or may not support attribute syntax for its values, or may or may not support object element syntax (which requires a parameterless constructor on that type). The target property type will therefore influence which syntax you use for the value of the <xref:System.Windows.Data.BindingBase.FallbackValue%2A> property.  
   
  ]]></format>
         </remarks>
@@ -397,7 +397,7 @@
 <a name="xamlValues_TargetNullValue"></a>   
 ## XAML Values  
  *nullValue*  
- An attribute or object element value of the same type as the target property. See that type's documentation for XAML usage information. That type may or may not support attribute syntax for its values, or may or may not support object element syntax (which requires a default constructor on that type).  
+ An attribute or object element value of the same type as the target property. See that type's documentation for XAML usage information. That type may or may not support attribute syntax for its values, or may or may not support object element syntax (which requires a parameterless constructor on that type).  
   
    
   

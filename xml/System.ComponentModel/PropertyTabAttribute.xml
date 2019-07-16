@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a default constructor that creates an uninitialized <xref:System.ComponentModel.PropertyTabAttribute>. This constructor can be used to derive from this attribute and specify multiple tab types by calling <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A>.  
+ This is a parameterless constructor that creates an uninitialized <xref:System.ComponentModel.PropertyTabAttribute>. This constructor can be used to derive from this attribute and specify multiple tab types by calling <xref:System.ComponentModel.PropertyTabAttribute.InitializeArrays%2A>.  
   
  ]]></format>
         </remarks>

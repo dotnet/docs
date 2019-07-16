@@ -44,7 +44,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class. This is the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -481,7 +481,7 @@
    
   
 ## Examples  
- The following example initializes a <xref:System.Management.SelectQuery> with the default constructor and then changes the <xref:System.Management.SelectQuery.QueryString%2A> property.  
+ The following example initializes a <xref:System.Management.SelectQuery> with the parameterless constructor and then changes the <xref:System.Management.SelectQuery.QueryString%2A> property.  
   
  [!code-csharp[wminet_SelectQuery_QueryString#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery_QueryString/cs/SelectQuery_QueryString.cs#1)]
  [!code-vb[wminet_SelectQuery_QueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery_QueryString/vb/SelectQuery_QueryString.vb#1)]  

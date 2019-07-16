@@ -73,7 +73,7 @@
    
   
 ## Examples  
- The following code example demonstrates how the <xref:System.Web.UI.IDReferencePropertyAttribute> attribute is applied to a property that evaluates to a string. In this example, the `DataSourceID` member identifies a data source control at run time. By using the default constructor, the <xref:System.Web.UI.IDReferencePropertyAttribute.ReferencedControlType%2A> property is set to the default value, <xref:System.Web.UI.Control>.  
+ The following code example demonstrates how the <xref:System.Web.UI.IDReferencePropertyAttribute> attribute is applied to a property that evaluates to a string. In this example, the `DataSourceID` member identifies a data source control at run time. By using the parameterless constructor, the <xref:System.Web.UI.IDReferencePropertyAttribute.ReferencedControlType%2A> property is set to the default value, <xref:System.Web.UI.Control>.  
   
  [!code-csharp[System.Web.UI.IDReferencePropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IDReferencePropertyAttribute/CS/IDReferencePropertyAttribute1.cs#1)]
  [!code-vb[System.Web.UI.IDReferencePropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IDReferencePropertyAttribute/VB/IDReferencePropertyAttribute1.vb#1)]  

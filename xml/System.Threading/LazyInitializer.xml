@@ -115,7 +115,7 @@ ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _data
       <Docs>
         <typeparam name="T">The type of the reference to be initialized.</typeparam>
         <param name="target">A reference to initialize if it has not already been initialized.</param>
-        <summary>Initializes a target reference type with the type's default constructor if it hasn't already been initialized.</summary>
+        <summary>Initializes a target reference type with the type's parameterless constructor if it hasn't already been initialized.</summary>
         <returns>The initialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -130,7 +130,7 @@ ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _data
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
-        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a parameterless constructor.</exception>
         <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@ ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _data
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a parameterless constructor.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="valueFactory" /> returned null (Nothing in Visual Basic).</exception>
         <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
@@ -238,7 +238,7 @@ ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _data
         <param name="target">A reference or value of type <c>T</c> to initialize if it hasn't already been initialized.</param>
         <param name="initialized">A reference to a Boolean value that determines whether the target has already been initialized.</param>
         <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <paramref name="target" />. If <paramref name="syncLock" /> is <see langword="null" />, a new object will be instantiated.</param>
-        <summary>Initializes a target reference or value type with its default constructor if it hasn't already been initialized.</summary>
+        <summary>Initializes a target reference or value type with its parameterless constructor if it hasn't already been initialized.</summary>
         <returns>The initialized object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -249,7 +249,7 @@ ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _data
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
-        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a parameterless constructor.</exception>
         <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
@@ -353,7 +353,7 @@ ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _data
  ]]></format>
         </remarks>
         <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
-        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a parameterless constructor.</exception>
         <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>

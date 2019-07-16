@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor sets the <xref:System.Windows.Forms.BindingManagerBase.Bindings%2A> property to `null`.  
+ The parameterless constructor sets the <xref:System.Windows.Forms.BindingManagerBase.Bindings%2A> property to `null`.  
   
  ]]></format>
         </remarks>
@@ -107,13 +107,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> method adds a new item to the underlying list by using the default constructor for that item's type. <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> is intended primarily to be used by programmers adding complex data-binding support to their custom component.  
+ The <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> method adds a new item to the underlying list by using the parameterless constructor for that item's type. <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> is intended primarily to be used by programmers adding complex data-binding support to their custom component.  
   
  <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> is commonly implemented using the following pattern that allows application programmers to inject their own code for creating customized items:  
   
 1.  <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> raises the <xref:System.Windows.Forms.BindingSource.AddingNew> event.  
   
-2.  The programmer can supply a custom item by handling the <xref:System.Windows.Forms.BindingSource.AddingNew> event and setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item. Otherwise, the component should create an item using the default constructor.  
+2.  The programmer can supply a custom item by handling the <xref:System.Windows.Forms.BindingSource.AddingNew> event and setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item. Otherwise, the component should create an item using the parameterless constructor.  
   
 3.  If the data source does not implement the <xref:System.ComponentModel.IEditableObject> interface, the item is immediately added to the data source and underlying list. If this interface is supported, then the addition is transacted by the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> and <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> methods.  
   

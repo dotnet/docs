@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor creates a new instance of the <xref:System.Net.WebClient> class. The default HTTP method is GET. The default FTP method is RETR. The default <xref:System.Net.WebClient.Encoding%2A> is <xref:System.Text.Encoding.Default%2A>. The default value of <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A> is `true`.  
+ The parameterless constructor creates a new instance of the <xref:System.Net.WebClient> class. The default HTTP method is GET. The default FTP method is RETR. The default <xref:System.Net.WebClient.Encoding%2A> is <xref:System.Text.Encoding.Default%2A>. The default value of <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A> is `true`.  
   
    
   

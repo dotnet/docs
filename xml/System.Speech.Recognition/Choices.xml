@@ -80,7 +80,7 @@ private Grammar CreateColorGrammar()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can construct a <xref:System.Speech.Recognition.Choices> object using a default constructor (which returns an empty object), from a group of <xref:System.String> objects, or a from set of <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+ You can construct a <xref:System.Speech.Recognition.Choices> object using a parameterless constructor (which returns an empty object), from a group of <xref:System.String> objects, or a from set of <xref:System.Speech.Recognition.GrammarBuilder> objects.  
   
  Because the <xref:System.Speech.Recognition.GrammarBuilder> object supports implicit conversion from <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>, a <xref:System.Speech.Recognition.Choices> can be constructed from an array of these objects using a cast.  
   

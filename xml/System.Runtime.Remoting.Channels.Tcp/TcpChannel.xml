@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields to their default values. If the default constructor is used, the channel functions only as a client channel, and does not listen on any ports.  
+ The parameterless constructor initializes all fields to their default values. If the parameterless constructor is used, the channel functions only as a client channel, and does not listen on any ports.  
   
    
   

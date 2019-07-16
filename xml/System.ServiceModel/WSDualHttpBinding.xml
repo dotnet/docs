@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to use the default constructor for wsDualHttpBinding.  
+ The following example shows how to use the parameterless constructor for wsDualHttpBinding.  
   
  [!code-csharp[S_dualhttp#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_dualhttp/cs/program.cs#1)]
  [!code-vb[S_dualhttp#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_dualhttp/vb/module1.vb#1)]  

@@ -246,7 +246,7 @@
       </Parameters>
       <Docs>
         <param name="type">The type to create an instance of.</param>
-        <param name="arguments">The parameters of the type's constructor. This can be <see langword="null" /> or an empty collection to invoke the default constructor.</param>
+        <param name="arguments">The parameters of the type's constructor. This can be <see langword="null" /> or an empty collection to invoke the parameterless constructor.</param>
         <param name="name">A name to give the object. If <see langword="null" />, the object will not be given a name, unless the object is added to a container and the container gives the object a name.</param>
         <param name="addToContainer">
           <see langword="true" /> to add the object to the container if the object implements <see cref="T:System.ComponentModel.IComponent" />; otherwise, <see langword="false" />.</param>

@@ -433,7 +433,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Every <see cref="T:System.Windows.Freezable" /> derived class must implement this method. A typical implementation is to simply call the default constructor and return the result.</para>
+          <para>Every <see cref="T:System.Windows.Freezable" /> derived class must implement this method. A typical implementation is to simply call the parameterless constructor and return the result.</para>
         </block>
         <altmember cref="M:System.Windows.Freezable.CreateInstance" />
       </Docs>

@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor creates a host execution context whose <xref:System.Threading.HostExecutionContext.State%2A> property value is `null`.  
+ The parameterless constructor creates a host execution context whose <xref:System.Threading.HostExecutionContext.State%2A> property value is `null`.  
   
  ]]></format>
         </remarks>

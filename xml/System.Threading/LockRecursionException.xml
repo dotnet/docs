@@ -55,7 +55,7 @@
    
   
 ## Examples  
- The following example shows two causes of <xref:System.Threading.LockRecursionException> when using the <xref:System.Threading.ReaderWriterLockSlim> class. The program creates a <xref:System.Threading.ReaderWriterLockSlim> by using the default constructor, which disallows recursion. The program then starts a thread that enters the lock in read mode. The thread tries to enter the lock recursively in read mode, and catches the resulting exception. Finally, the thread tries to enter write mode, which would create a potential for deadlocks. The thread catches the resulting exception.  
+ The following example shows two causes of <xref:System.Threading.LockRecursionException> when using the <xref:System.Threading.ReaderWriterLockSlim> class. The program creates a <xref:System.Threading.ReaderWriterLockSlim> by using the parameterless constructor, which disallows recursion. The program then starts a thread that enters the lock in read mode. The thread tries to enter the lock recursively in read mode, and catches the resulting exception. Finally, the thread tries to enter write mode, which would create a potential for deadlocks. The thread catches the resulting exception.  
   
  [!code-csharp[System.Threading.LockRecursionException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.LockRecursionException/cs/source.cs#1)]
  [!code-vb[System.Threading.LockRecursionException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.LockRecursionException/vb/source.vb#1)]  

@@ -148,7 +148,7 @@
   
  The example includes a nested enumeration that specifies the return values for the method that demonstrates upgradeable mode.  
   
- The example uses the default constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
+ The example uses the parameterless constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
   
  [!code-csharp[System.Threading.ReaderWriterLockSlim_Shadow#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ReaderWriterLockSlim_Shadow/cs/classexample1.cs#11)]
  [!code-vb[System.Threading.ReaderWriterLockSlim_Shadow#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ReaderWriterLockSlim_Shadow/vb/classexample1.vb#11)]  
@@ -230,7 +230,7 @@
   
  The example includes a nested enumeration that specifies the return values for the method that demonstrates upgradeable mode.  
   
- The example uses the default constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
+ The example uses the parameterless constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
   
  [!code-csharp[System.Threading.ReaderWriterLockSlim_Shadow#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ReaderWriterLockSlim_Shadow/cs/classexample1.cs#11)]
  [!code-vb[System.Threading.ReaderWriterLockSlim_Shadow#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ReaderWriterLockSlim_Shadow/vb/classexample1.vb#11)]  
@@ -299,7 +299,7 @@
 ## Examples  
  The following example shows two exception scenarios, one that depends on the <xref:System.Threading.LockRecursionPolicy> setting and one that does not.  
   
- In the first scenario, the thread enters read mode and then tries to enter read mode recursively. If the <xref:System.Threading.ReaderWriterLockSlim> is created by using the default constructor, which sets recursion policy to <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType>, an exception is thrown. If <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType> is used to create the <xref:System.Threading.ReaderWriterLockSlim>, no exception is thrown.  
+ In the first scenario, the thread enters read mode and then tries to enter read mode recursively. If the <xref:System.Threading.ReaderWriterLockSlim> is created by using the parameterless constructor, which sets recursion policy to <xref:System.Threading.LockRecursionPolicy.NoRecursion?displayProperty=nameWithType>, an exception is thrown. If <xref:System.Threading.LockRecursionPolicy.SupportsRecursion?displayProperty=nameWithType> is used to create the <xref:System.Threading.ReaderWriterLockSlim>, no exception is thrown.  
   
  In the second scenario, the thread enters read mode and then tries to enter write mode. <xref:System.Threading.LockRecursionException> is thrown regardless of the lock recursion policy.  
   
@@ -567,7 +567,7 @@
   
  The method shown in the example retrieves the value associated with a key and compares it with a new value. If the value is unchanged, the method returns a status indicating no change. It no value is found for the key, the key/value pair is inserted. If the value has changed, it is updated. Upgradeable mode allows the thread to upgrade the read lock as needed, without risk of deadlocks.  
   
- The example uses the default constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
+ The example uses the parameterless constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
   
  This code is part of a larger example provided for the <xref:System.Threading.ReaderWriterLockSlim> class.  
   
@@ -765,7 +765,7 @@
   
  The method shown in the example retrieves the value associated with a key and compares it with a new value. If the value is unchanged, the method returns a status indicating no change. It no value is found for the key, the key/value pair is inserted. If the value has changed, it is updated. Upgradeable mode allows the thread to upgrade the read lock as needed, without risk of deadlocks.  
   
- The example uses the default constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
+ The example uses the parameterless constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
   
  This code is part of a larger example provided for the <xref:System.Threading.ReaderWriterLockSlim> class.  
   

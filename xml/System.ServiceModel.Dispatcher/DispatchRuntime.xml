@@ -539,7 +539,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Implement the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface and assign the implementation to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property to control instances of the service type using a constructor other than the default constructor, for example, to implement a custom instancing mode such as instance pooling.  
+ Implement the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface and assign the implementation to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property to control instances of the service type using a constructor other than the parameterless constructor, for example, to implement a custom instancing mode such as instance pooling.  
   
  Typically the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method is invoked once, when the <xref:System.ServiceModel.InstanceContext> object is first created. The <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method is also invoked once, when the <xref:System.ServiceModel.InstanceContext> object is closed.  
   

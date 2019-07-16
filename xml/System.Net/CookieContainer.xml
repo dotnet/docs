@@ -107,7 +107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields to their default values. <xref:System.Net.CookieContainer.DefaultCookieLimit> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
+ The parameterless constructor initializes all fields to their default values. <xref:System.Net.CookieContainer.DefaultCookieLimit> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
   
  ]]></format>
         </remarks>

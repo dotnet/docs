@@ -789,7 +789,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to the <xref:System.IO.UnmanagedMemoryStream.%23ctor%2A> constructor. It supports methods that need to initialize the pointer before setting stream variables and, therefore, cannot call the parameterized constructor. Such methods should use the default constructor, <xref:System.IO.UnmanagedMemoryStream.%23ctor>, initialize the pointer, and then invoke the <xref:System.IO.UnmanagedMemoryStream.Initialize%2A> method.  
+ This method is equivalent to the <xref:System.IO.UnmanagedMemoryStream.%23ctor%2A> constructor. It supports methods that need to initialize the pointer before setting stream variables and, therefore, cannot call the parameterized constructor. Such methods should use the parameterless constructor, <xref:System.IO.UnmanagedMemoryStream.%23ctor>, initialize the pointer, and then invoke the <xref:System.IO.UnmanagedMemoryStream.Initialize%2A> method.  
   
  ]]></format>
         </remarks>

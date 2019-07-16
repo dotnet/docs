@@ -516,7 +516,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. The <xref:System.Web.UI.WebControls.LinqDataSource> control calls the default constructor of the data context object to create an instance of the object. It is possible that you have to use a non-default constructor or you have to create an object that differs from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. In that case, you must handle the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event and manually create the data context object.  
+ By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. The <xref:System.Web.UI.WebControls.LinqDataSource> control calls the parameterless constructor of the data context object to create an instance of the object. It is possible that you have to use a non-parameterless constructor or you have to create an object that differs from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. In that case, you must handle the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event and manually create the data context object.  
   
  The context type object is created during select, update, insert, and delete operations.  
   
@@ -525,7 +525,7 @@
    
   
 ## Examples  
- The following example shows how to create the data context object by using a non-default constructor during the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
+ The following example shows how to create the data context object by using a non-parameterless constructor during the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
   
  [!code-csharp[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs#1)]
  [!code-vb[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb#1)]  

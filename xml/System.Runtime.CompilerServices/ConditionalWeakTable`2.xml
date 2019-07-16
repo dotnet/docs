@@ -355,15 +355,15 @@
       </Parameters>
       <Docs>
         <param name="key">The key to search for. <paramref name="key" /> represents the object to which the property is attached.</param>
-        <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes the default constructor of the class that represents the table's value to create a value that is bound to the specified key.</summary>
-        <returns>The value that corresponds to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, a new value created by the default constructor of the class defined by the <paramref name="TValue" /> generic type parameter.</returns>
+        <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes the parameterless constructor of the class that represents the table's value to create a value that is bound to the specified key.</summary>
+        <returns>The value that corresponds to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, a new value created by the parameterless constructor of the class defined by the <paramref name="TValue" /> generic type parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `key` does not exist in the table, the method adds it, along with the object that is instantiated by calling the default constructor of the class defined by the `TValue` generic type parameter. If the `TValue` class has no default constructor, a <xref:System.MissingMethodException> is thrown.  
+ If `key` does not exist in the table, the method adds it, along with the object that is instantiated by calling the parameterless constructor of the class defined by the `TValue` generic type parameter. If the `TValue` class has no parameterless constructor, a <xref:System.MissingMethodException> is thrown.  
   
- This is the recommended method of retrieving an existing value or adding a new value to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table if the class of the table's value defines a default constructor. If it does not define a default constructor, you can instead call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> method, which relies on a callback-provided method to instantiate the object representing the table's value  
+ This is the recommended method of retrieving an existing value or adding a new value to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table if the class of the table's value defines a parameterless constructor. If it does not define a parameterless constructor, you can instead call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> method, which relies on a callback-provided method to instantiate the object representing the table's value  
   
  To retrieve the value of an existing key without adding the key/value pair if the key is not found in the table, call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method.  
   
@@ -387,7 +387,7 @@
 </para>
           </block>  
   
- The class that represents the table's value does not define a default constructor.</exception>
+ The class that represents the table's value does not define a parameterless constructor.</exception>
         <altmember cref="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable{`0,`1}.CreateValueCallback)" />
         <altmember cref="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)" />
       </Docs>
@@ -442,7 +442,7 @@
 ## Remarks  
  If `key` does not exist in the table, <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> invokes the method that is defined by the `createValueCallback` parameter and passes it the key. A new value is bound to the key in the table and returned as a result.  
   
- Use this method only when the class that represents the table's value does not define a default constructor. If it does define a default constructor, use the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> method instead. To retrieve the value of an existing key without adding the key/value pair if the key is not found in the table, call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method.  
+ Use this method only when the class that represents the table's value does not define a parameterless constructor. If it does define a parameterless constructor, use the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> method instead. To retrieve the value of an existing key without adding the key/value pair if the key is not found in the table, call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method.  
   
  If multiple threads try to create the same key, `createValueCallback` may be invoked multiple times with the same key. Only one of these calls will succeed, and its returned value will be added to the table. Which thread succeeds in creating the value is indeterminate. This rule permits the table to invoke `createValueCallback` outside the internal table lock to prevent deadlocks.  
   

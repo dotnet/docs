@@ -95,9 +95,9 @@
   
  A fully specified <xref:System.Reflection.AssemblyName> must have the name, culture, public key or public key token, major version, minor version, build number, and revision number parameters. The last four are packaged in the <xref:System.Version> type.  
   
- To create a simple name, create an <xref:System.Reflection.AssemblyName> object using the default constructor and set the <xref:System.Reflection.AssemblyName.Name%2A>. The other properties are optional.  
+ To create a simple name, create an <xref:System.Reflection.AssemblyName> object using the parameterless constructor and set the <xref:System.Reflection.AssemblyName.Name%2A>. The other properties are optional.  
   
- To create a full strong name, create an <xref:System.Reflection.AssemblyName> object using the default constructor and set the <xref:System.Reflection.AssemblyName.Name%2A> and <xref:System.Reflection.AssemblyName.KeyPair%2A>. The other properties are optional. Use <xref:System.Reflection.AssemblyName.SetPublicKey%2A> and <xref:System.Reflection.AssemblyName.SetPublicKeyToken%2A> to set the public key and the strong name. The strong name signing always uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
+ To create a full strong name, create an <xref:System.Reflection.AssemblyName> object using the parameterless constructor and set the <xref:System.Reflection.AssemblyName.Name%2A> and <xref:System.Reflection.AssemblyName.KeyPair%2A>. The other properties are optional. Use <xref:System.Reflection.AssemblyName.SetPublicKey%2A> and <xref:System.Reflection.AssemblyName.SetPublicKeyToken%2A> to set the public key and the strong name. The strong name signing always uses the <xref:System.Security.Cryptography.SHA1> hash algorithm.  
   
  To ensure that the names are constructed correctly, use the following properties:  
   
@@ -109,7 +109,7 @@
   
  You can also get the name by using the `/l` option with the [Gacutil.exe (Global Assembly Cache Tool)](~/docs/framework/tools/gacutil-exe-gac-tool.md)  
   
- For a partially specified strong name, create an <xref:System.Reflection.AssemblyName> object using the default constructor and set the name and public key. An assembly created using such an <xref:System.Reflection.AssemblyName> can be signed later using the Assembly Linker (Al.exe).  
+ For a partially specified strong name, create an <xref:System.Reflection.AssemblyName> object using the parameterless constructor and set the name and public key. An assembly created using such an <xref:System.Reflection.AssemblyName> can be signed later using the Assembly Linker (Al.exe).  
   
  It is possible to specify a public key and a <xref:System.Reflection.AssemblyName.KeyPair%2A> with inconsistent values. This can be useful in developer scenarios. In this case, the public key retrieved with <xref:System.Reflection.AssemblyName.GetPublicKey%2A> specifies the correct public key, while the <xref:System.Reflection.AssemblyName.KeyPair%2A> specifies the public and private keys used during development. When the runtime detects a mismatch between the <xref:System.Reflection.AssemblyName.KeyPair%2A> and the public key, it looks up in the registry the correct key that matches the public key.  
   

@@ -109,7 +109,7 @@
 ## Remarks  
  The default value for the <xref:Microsoft.SqlServer.Server.SqlMethodAttribute.InvokeIfReceiverIsNull%2A> property is `false`.  
   
- That is, the method is not invoked on a null instance. If <xref:Microsoft.SqlServer.Server.SqlMethodAttribute.InvokeIfReceiverIsNull%2A> is true, the return value of the method depends upon its type. If the return type of the method is nullable, the distinguished null value for the type is returned. If the return type is non-nullable, the default CLR value for the type is returned. The default value for reference types is null. The default value for a value type is the value that is  returned when you call the default constructor for the type.  
+ That is, the method is not invoked on a null instance. If <xref:Microsoft.SqlServer.Server.SqlMethodAttribute.InvokeIfReceiverIsNull%2A> is true, the return value of the method depends upon its type. If the return type of the method is nullable, the distinguished null value for the type is returned. If the return type is non-nullable, the default CLR value for the type is returned. The default value for reference types is null. The default value for a value type is the value that is  returned when you call the parameterless constructor for the type.  
   
  ]]></format>
         </remarks>

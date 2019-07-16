@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes a new instance of the <xref:System.DirectoryServices.AccountManagement.PrincipalExistsException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
+ The parameterless constructor initializes a new instance of the <xref:System.DirectoryServices.AccountManagement.PrincipalExistsException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> property is initialized to `null`.  
   
  ]]></format>
         </remarks>

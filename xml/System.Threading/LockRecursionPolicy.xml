@@ -43,7 +43,7 @@
 ## Examples  
  The following example shows two exception scenarios, one that depends on the <xref:System.Threading.LockRecursionPolicy> setting and one that does not.  
   
- In the first scenario, the thread enters the lock in read mode and then tries to enter read mode recursively. If the <xref:System.Threading.ReaderWriterLockSlim> is created by using the default constructor, which sets recursion policy to NoRecursion, an exception is thrown. If SupportsRecursion is used to create the <xref:System.Threading.ReaderWriterLockSlim>, no exception is thrown.  
+ In the first scenario, the thread enters the lock in read mode and then tries to enter read mode recursively. If the <xref:System.Threading.ReaderWriterLockSlim> is created by using the parameterless constructor, which sets recursion policy to NoRecursion, an exception is thrown. If SupportsRecursion is used to create the <xref:System.Threading.ReaderWriterLockSlim>, no exception is thrown.  
   
  In the second scenario, the thread enters the lock in read mode and then tries to enter the lock in write mode. <xref:System.Threading.LockRecursionException> is thrown regardless of the lock recursion policy.  
   

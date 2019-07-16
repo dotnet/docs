@@ -15,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>Defines the core behavior of authentication providers and provides a base class for derived classes. </summary>
-    <remarks>Derived classes must provide a default constructor if they can be instantiated from the app.config file.</remarks>
+    <remarks>Derived classes must provide a parameterless constructor if they can be instantiated from the app.config file.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

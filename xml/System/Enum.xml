@@ -97,7 +97,7 @@
      [!code-csharp[System.Enum.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/class2.cs#4)]
      [!code-vb[System.Enum.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/class2.vb#4)]  
   
--   By calling its implicit default constructor. As the following example shows, in this case the underlying value of the enumeration instance is 0. However, this is not necessarily the value of a valid constant in the enumeration.  
+-   By calling its implicit parameterless constructor. As the following example shows, in this case the underlying value of the enumeration instance is 0. However, this is not necessarily the value of a valid constant in the enumeration.  
   
      [!code-csharp[System.Enum.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/class2.cs#3)]
      [!code-vb[System.Enum.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/class2.vb#3)]  

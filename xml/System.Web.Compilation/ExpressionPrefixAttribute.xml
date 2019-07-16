@@ -93,7 +93,7 @@ Text="<%$ MyCustomExpression:Hello, world! %>" />
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.Compilation.ExpressionPrefixAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class using a prefix identifier. The <xref:System.Web.Compilation.ExpressionPrefixAttribute.%23ctor%2A> is the default constructor for the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class.  
+ Use the <xref:System.Web.Compilation.ExpressionPrefixAttribute.%23ctor%2A> constructor to initialize an instance of the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class using a prefix identifier. The <xref:System.Web.Compilation.ExpressionPrefixAttribute.%23ctor%2A> is the parameterless constructor for the <xref:System.Web.Compilation.ExpressionPrefixAttribute> class.  
   
  ]]></format>
         </remarks>

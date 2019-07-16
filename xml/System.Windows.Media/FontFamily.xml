@@ -173,7 +173,7 @@ Example of typefaces that are members of the "Times New Roman" font family
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this default constructor when you want to create a composite font programmatically. This means that you do not have to specify a font family name for the constructor, but you must populate the collections in the <xref:System.Windows.Media.FontFamily.FamilyMaps%2A> and <xref:System.Windows.Media.FontFamily.FamilyNames%2A> collections prior to using the constructed instance.  
+ Use this parameterless constructor when you want to create a composite font programmatically. This means that you do not have to specify a font family name for the constructor, but you must populate the collections in the <xref:System.Windows.Media.FontFamily.FamilyMaps%2A> and <xref:System.Windows.Media.FontFamily.FamilyNames%2A> collections prior to using the constructed instance.  
   
  ]]></format>
         </remarks>

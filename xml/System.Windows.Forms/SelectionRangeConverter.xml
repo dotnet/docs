@@ -64,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.SelectionRangeConverter.%23ctor%2A> is the default constructor supplied by the compiler.  
+ <xref:System.Windows.Forms.SelectionRangeConverter.%23ctor%2A> is the parameterless constructor supplied by the compiler.  
   
  You should never create a <xref:System.Windows.Forms.SelectionRangeConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of the <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the examples in the <xref:System.ComponentModel.TypeConverter> base class.  
   

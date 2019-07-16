@@ -142,11 +142,11 @@
 ## Calendars and cultural data  
  If you attempt to instantiate a calendar but the runtime is unable to instantiate  the <xref:System.Globalization.CultureInfo> object that corresponds to that calendar, it throws a <xref:System.TypeInitializationException> exception. This exception can be thrown by the following calendar class constructors:  
   
--   The default constructor of the <xref:System.Globalization.JapaneseCalendar> class.  
+-   The parameterless constructor of the <xref:System.Globalization.JapaneseCalendar> class.  
   
--   The default constructor of the <xref:System.Globalization.KoreanCalendar> class.  
+-   The parameterless constructor of the <xref:System.Globalization.KoreanCalendar> class.  
   
--   The default constructor of the <xref:System.Globalization.TaiwanCalendar> class.  
+-   The parameterless constructor of the <xref:System.Globalization.TaiwanCalendar> class.  
   
  Since cultural data for these cultures should be available on all systems, you should rarely, if ever, encounter this exception.  
   

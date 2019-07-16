@@ -116,7 +116,7 @@
   
  The following example demonstrates several properties and methods of the <xref:System.Collections.Generic.List%601> generic class of type string. (For an example of a <xref:System.Collections.Generic.List%601> of complex types, see the <xref:System.Collections.Generic.List%601.Contains%2A> method.)  
   
- The default constructor is used to create a list of strings with the default capacity. The <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed and then the <xref:System.Collections.Generic.List%601.Add%2A> method is used to add several items. The items are listed, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
+ The parameterless constructor is used to create a list of strings with the default capacity. The <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed and then the <xref:System.Collections.Generic.List%601.Add%2A> method is used to add several items. The items are listed, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
   
  The <xref:System.Collections.Generic.List%601.Contains%2A> method is used to test for the presence of an item in the list, the <xref:System.Collections.Generic.List%601.Insert%2A> method is used to insert a new item in the middle of the list, and the contents of the list are displayed again.  
   
@@ -201,7 +201,7 @@
    
   
 ## Examples  
- The following example demonstrates the default constructor of the <xref:System.Collections.Generic.List%601> generic class. The default constructor creates a list with the default capacity, as demonstrated by displaying the <xref:System.Collections.Generic.List%601.Capacity%2A> property.  
+ The following example demonstrates the parameterless constructor of the <xref:System.Collections.Generic.List%601> generic class. The parameterless constructor creates a list with the default capacity, as demonstrated by displaying the <xref:System.Collections.Generic.List%601.Capacity%2A> property.  
   
  The example adds, inserts, and removes items, showing how the capacity changes as these methods are used.  
   
@@ -393,7 +393,7 @@
  [!code-vb[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/vb/module1.vb#1)]  
  [!code-fsharp[System.Collections.Generic.List.AddRemoveInsert#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.collections.generic.list.addremoveinsert/fs/addremoveinsert.fs#1)]
   
- The following example demonstrates several properties and methods of the <xref:System.Collections.Generic.List%601> generic class, including the <xref:System.Collections.Generic.List%601.Add%2A> method. The default constructor is used to create a list of strings with a capacity of 0. The <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed, and then the <xref:System.Collections.Generic.List%601.Add%2A> method is used to add several items. The items are listed, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
+ The following example demonstrates several properties and methods of the <xref:System.Collections.Generic.List%601> generic class, including the <xref:System.Collections.Generic.List%601.Add%2A> method. The parameterless constructor is used to create a list of strings with a capacity of 0. The <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed, and then the <xref:System.Collections.Generic.List%601.Add%2A> method is used to add several items. The items are listed, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
   
  Other properties and methods are used to search for, insert, and remove elements from the list, and finally to clear the list.  
   
@@ -847,7 +847,7 @@
  [!code-csharp[System.Collections.Generic.List.CapacityCount#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.list.capacitycount/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.List.CapacityCount#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.list.capacitycount/vb/module1.vb#1)]  
   
- The following example shows the <xref:System.Collections.Generic.List%601.Capacity%2A> property at several points in the life of a list. The default constructor is used to create a list of strings with a capacity of 0, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed to demonstrate this. After the <xref:System.Collections.Generic.List%601.Add%2A> method has been used to add several items, the items are listed, and then the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
+ The following example shows the <xref:System.Collections.Generic.List%601.Capacity%2A> property at several points in the life of a list. The parameterless constructor is used to create a list of strings with a capacity of 0, and the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed to demonstrate this. After the <xref:System.Collections.Generic.List%601.Add%2A> method has been used to add several items, the items are listed, and then the <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again, along with the <xref:System.Collections.Generic.List%601.Count%2A> property, to show that the capacity has been increased as needed.  
   
  The <xref:System.Collections.Generic.List%601.Capacity%2A> property is displayed again after the <xref:System.Collections.Generic.List%601.TrimExcess%2A> method is used to reduce the capacity to match the count. Finally, the <xref:System.Collections.Generic.List%601.Clear%2A> method is used to remove all items from the list, and the <xref:System.Collections.Generic.List%601.Capacity%2A> and <xref:System.Collections.Generic.List%601.Count%2A> properties are displayed again.  
   

@@ -792,7 +792,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Every <see cref="T:System.Windows.Media.Animation.Storyboard" /> subclass must implement this method. Typical implementation is to simply call the class default constructor and return the result.</para>
+          <para>Every <see cref="T:System.Windows.Media.Animation.Storyboard" /> subclass must implement this method. Typical implementation is to simply call the class parameterless constructor and return the result.</para>
         </block>
         <altmember cref="M:System.Windows.Freezable.CreateInstanceCore" />
       </Docs>

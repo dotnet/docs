@@ -69,15 +69,15 @@ Text in brackets are placeholders; replace the text with the requested informati
 
    `[friendly description of API](link to API on docs.microsoft.com)`
 
-   For example, `[String.IndexOf(String)](https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof#System_String_IndexOf_System_String_)  
+   For example, `[String.IndexOf(String)](https://docs.microsoft.com/dotnet/api/system.string.indexof#System_String_IndexOf_System_String_)  
 
    For methods, if all overloads are affected, link to the general overloaded method page. For example:
 
-      <https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof>
+      <https://docs.microsoft.com/dotnet/api/system.string.indexof>
 
   Otherwise, link to the individual method overload. For example:
 
-      <https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof#System_String_IndexOf_System_String_>
+      <https://docs.microsoft.com/dotnet/api/system.string.indexof#System_String_IndexOf_System_String_>
 
 ]
 

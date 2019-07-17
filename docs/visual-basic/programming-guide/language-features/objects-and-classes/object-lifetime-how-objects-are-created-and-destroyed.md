@@ -54,7 +54,7 @@ An instance of a class, an object, is created by using the `New` keyword. Initia
   
  The `Finalize` destructor is a protected method that can be called only from the class it belongs to, or from derived classes. The system calls `Finalize` automatically when an object is destroyed, so you should not explicitly call `Finalize` from outside of a derived class's `Finalize` implementation.  
   
- Unlike `Class_Terminate`, which executes as soon as an object is set to nothing, there is usually a delay between when an object loses scope and when Visual Basic calls the `Finalize` destructor. Visual Basic 2005 and later versions allow for a second kind of destructor, <xref:System.IDisposable.Dispose%2A>, which can be explicitly called at any time to immediately release resources.  
+ Unlike `Class_Terminate`, which executes as soon as an object is set to nothing, there is usually a delay between when an object loses scope and when Visual Basic calls the `Finalize` destructor. Visual Basic .NET allows for a second kind of destructor, <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>, which can be explicitly called at any time to immediately release resources.  
   
 > [!NOTE]
 >  A `Finalize` destructor should not throw exceptions, because they cannot be handled by the application and can cause the application to terminate.  

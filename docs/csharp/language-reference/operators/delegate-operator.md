@@ -19,7 +19,7 @@ When you use the `delegate` operator, you might omit the parameter list. If you 
 
 [!code-csharp-interactive[no parameter list](~/samples/csharp/language-reference/operators/DelegateOperator.cs#WithoutParameterList)]
 
-That's the only functionality of anonymous methods that is not supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code.
+That's the only functionality of anonymous methods that is not supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code. For more information about features of lambda expressions, for example, capturing outer variables, see [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md).
 
 You also use the `delegate` keyword to declare a [delegate type](../builtin-types/reference-types.md#the-delegate-type).
 

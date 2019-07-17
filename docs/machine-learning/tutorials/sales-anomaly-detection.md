@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
 description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
@@ -165,7 +165,7 @@ static void DetectSpike(MLContext mlContext, int docSize, IDataView productSales
 }
 ```
 
-Use the [IidSpikeEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidSpikeEstimator) to train the model for spike detection. Add it to the `DetectChangepoint()` method with the following code:
+Use the [IidSpikeEstimator](xref:Microsoft.ML.Transforms.TimeSeries.IidSpikeEstimator) to train the model for spike detection. Add it to the `DetectSpike()` method with the following code:
 
 [!code-csharp[AddSpikeTrainer](~/samples/machine-learning/tutorials/ProductSalesAnomalyDetection/Program.cs#AddSpikeTrainer)]
 

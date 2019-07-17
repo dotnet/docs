@@ -110,7 +110,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  To detect whether the .NET Framework is installed, [!INCLUDE[TLA2#tla_ie](../../../../includes/tla2sharptla-ie-md.md)] includes a bootstrapper application that is registered as the fallback [!INCLUDE[TLA#tla_mime](../../../../includes/tlasharptla-mime-md.md)] handler for content files with the following extensions: .xaml, .xps, .xbap, and .application. If you navigate to these file types and the .NET Framework is not installed on the client, the bootstrapper application requests permission to install it. If permission is not provided, neither the .NET Framework nor the application is installed.  
   
- If permission is granted, [!INCLUDE[TLA2#tla_ie](../../../../includes/tla2sharptla-ie-md.md)] downloads and installs the .NET Framework using the [!INCLUDE[TLA#tla_bits](../../../../includes/tlasharptla-bits-md.md)]. After successful installation of the .NET Framework, the originally requested file is opened in a new browser window.  
+ If permission is granted, [!INCLUDE[TLA2#tla_ie](../../../../includes/tla2sharptla-ie-md.md)] downloads and installs the .NET Framework using the Microsoft Background Intelligent Transfer Service (BITS). After successful installation of the .NET Framework, the originally requested file is opened in a new browser window.  
   
  .NET Framework auto-detection is available on [!INCLUDE[TLA#tla_longhorn](../../../../includes/tlasharptla-longhorn-md.md)], [!INCLUDE[TLA#tla_winxpsp2](../../../../includes/tlasharptla-winxpsp2-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfamsp1](../../../../includes/tlasharptla-winnetsvrfamsp1-md.md)] clients that have [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)] or later installed.  
   

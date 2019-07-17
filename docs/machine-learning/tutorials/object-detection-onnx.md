@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Tutorial: Detect objects using ONNX in ML.NET
 
-Learn how to use a pre-trained ONNX model in ML.NET to detect objects. The pre-trained model was trained to localize and classify objects in an image.
+Learn how to use a pre-trained ONNX model in ML.NET to detect objects. The pre-trained model was trained to find and classify objects in an image.
 
 Training an object detection model from scratch requires setting millions of parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pre-trained model allows you to shortcut the training process.
 
@@ -36,7 +36,7 @@ This sample creates a .NET core console application that detects objects within 
 
 ## What is object detection
 
-Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. When an image is processed, there is first a check on whether there is an object present or not. If so, the detected object is classified and using localization, the location of that object is returned along with the class. Typically, you want to use this approach on images where there are multiple objects of different types so that each is individually recognized. 
+Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. When an image is processed, there is first a check on whether there is an object present or not. If so, the detected object is classified and using object localization, the location of that object is returned along with the class. Typically, you want to use this approach on images where there are multiple objects of different types so that each is individually recognized. 
 
 ![](./media/object-detection-onnx/img-classification-obj-detection.PNG)
 
@@ -345,7 +345,7 @@ Add a new directory to your project to organize the set of parser classes.
 
 ### Create bounding boxes and dimensions
 
-Localization is a core component of object detection. As such, much of the data output by the model contains coordinates and dimensions of the bounding boxes of objects within the image. Create a base class for dimensions.
+Object localization is a core component of object detection. As such, much of the data output by the model contains coordinates and dimensions of the bounding boxes of objects within the image. Create a base class for dimensions.
 
 1. In **Solution Explorer**, right-click the *YoloParser* directory, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *DimensionsBase.cs*. Then, select the **Add** button.

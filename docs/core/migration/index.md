@@ -36,7 +36,7 @@ Files that were migrated (*project.json*, *global.json*, *.xproj* and solution f
 A file named *UpgradeLog.htm* is also saved and automatically opened that contains a migration report.
 
 > [!IMPORTANT]
-> The above tooling is only available between Visual Studio 2017 (version 15.0) and Visual Studio 2019 (version 16.3). If you are using a version of Visual Studio outside of that range, you should either install a suitable version of Visual Studio or use the command line migration tool described below.
+> The above tooling is only available between Visual Studio 2017 (version 15.0) and Visual Studio 2019 (version 16.2). If you are using a version of Visual Studio outside of that range, you should either install a suitable version of Visual Studio or use the command line migration tool described below.
 
 ### dotnet migrate
 
@@ -55,7 +55,7 @@ If you get an error:
 
 > No executable found matching command dotnet-migrate
 
-Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) is only available between .NET Core CLI RC3 and 3.0.100.
+Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) was introduced in .NET Core CLI RC3 and removed in version 3.0.100.
 You'll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to a version outside this range.
 
 ## Migration from DNX to csproj

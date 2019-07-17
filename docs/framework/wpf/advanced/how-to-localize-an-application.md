@@ -193,7 +193,7 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="Some_Tips_for_Using_LocBaml"></a>   
 ## Some Tips for Using LocBaml  
   
-- All dependent assemblies that define custom controls must be copied into the local directory of LocBaml or installed into the GAC. This is necessary because the localization API must have access to the dependent assemblies when it reads the [!INCLUDE[TLA#tla_baml](../../../../includes/tlasharptla-baml-md.md)].  
+- All dependent assemblies that define custom controls must be copied into the local directory of LocBaml or installed into the GAC. This is necessary because the localization API must have access to the dependent assemblies when it reads the binary XAML (BAML).  
   
 - If the main assembly is signed, the generated resource DLL must also be signed in order for it to be loaded.  
   

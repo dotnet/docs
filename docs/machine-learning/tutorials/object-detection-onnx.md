@@ -1105,6 +1105,10 @@ person and its Confidence score: 0.5551759
 ========= End of Process..Hit any Key ========
 ```
 
+To see the images with bounding boxes, navigate to the `assets/images/output/` directory. Below is a sample from one of the processed images. 
+
+![](./media/object-detection-onnx/image3.jpg)
+
 Congratulations! You've now successfully built a machine learning model for object detection by reusing a pre-trained `ONNX` model in ML.NET.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx) repository.

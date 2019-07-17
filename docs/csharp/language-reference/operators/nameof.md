@@ -5,6 +5,8 @@ ms.date: 07/12/2019
 f1_keywords:
   - "nameof_CSharpKeyword"
   - "nameof"
+helpviewer_keywords:
+  - "nameof operator [C#]"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 ---
 # nameof operator (C# reference)

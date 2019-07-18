@@ -99,27 +99,11 @@ Next, define the paths of the various assets.
 
 1. First, add the `GetAbsolutePath` method below the `Main` method in the `Program` class. 
 
-    ```csharp
-    public static string GetAbsolutePath(string relativePath)
-    {
-        FileInfo _dataRoot = new FileInfo(typeof(Program).Assembly.Location);
-        string assemblyFolderPath = _dataRoot.Directory.FullName;
-
-        string fullPath = Path.Combine(assemblyFolderPath, relativePath);
-
-        return fullPath;
-    }
-    ``` 
+    [!code-csharp [GetAbsolutePath](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L66-L74)]
 
 1. Then, inside the `Main` method, create fields to store the location of your assets:
 
-    ```csharp
-    var assetsRelativePath = @"../../../assets";
-    string assetsPath = GetAbsolutePath(assetsRelativePath);
-    var modelFilePath = Path.Combine(assetsPath, "Model", "TinyYolo2_model.onnx");
-    var imagesFolder = Path.Combine(assetsPath, "images");
-    var outputFolder = Path.Combine(assetsPath, "images", "output");
-    ```
+    [!code-csharp [AssetDefinition](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L17-L21)]
 
 Add a new directory to your project to store your input data and prediction classes.
 
@@ -132,40 +116,18 @@ Create your input data class in the newly created *DataStructures* directory.
      
     The *ImageNetData.cs* file opens in the code editor. Add the following `using` statement to the top of *ImageNetData.cs*:
 
-    ```csharp
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using Microsoft.ML.Data;
-    ```
+    [!code-csharp [ImageNetDataUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L1-L4)]
 
     Remove the existing class definition and add the following code for the `ImageNetData` class to the *ImageNetData.cs* file:
     
-    ```csharp
-    public class ImageNetData
-    {
-        [LoadColumn(0)]
-        public string ImagePath;
-    
-        [LoadColumn(1)]
-        public string Label;
-    
-        public static IEnumerable<ImageNetData> ReadFromFile(string imageFolder)
-        {
-            return Directory
-                .GetFiles(imageFolder)
-                .Where(filePath => Path.GetExtension(filePath) != ".md")
-                .Select(filePath => new ImageNetData { ImagePath = filePath, Label = Path.GetFileName(filePath) });
-        }
-    }
-    ```
+    [!code-csharp [ImageNetDataClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetData.cs#L8-L23)]
 
-    `ImageData` is the input image data class and has the following <xref:System.String> fields:
+    `ImageNetData` is the input image data class and has the following <xref:System.String> fields:
 
     - `ImagePath` contains the path where the image is stored.
     - `Label` contains the name of the file.
 
-    Additionally, `ImageData` contains a method `ReadFromFile` which loads multiple image files stored in the `imageFolder` path specified and returns them as a collection of `ImageNetData` objects.
+    Additionally, `ImageNetData` contains a method `ReadFromFile` which loads multiple image files stored in the `imageFolder` path specified and returns them as a collection of `ImageNetData` objects.
 
 Create your prediction class in the *DataStructures* directory.
 
@@ -174,19 +136,11 @@ Create your prediction class in the *DataStructures* directory.
 
     The *ImageNetPrediction.cs* file opens in the code editor. Add the following `using` statement to the top of *ImageNetPrediction.cs*:
 
-    ```csharp
-    using Microsoft.ML.Data;
-    ```
+    [!code-csharp [ImageNetPredictionUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetPrediction.cs#L1)]
 
     Remove the existing class definition and add the following code for the `ImageNetPrediction` class to the *ImageNetPrediction.cs* file:
 
-    ```csharp
-    public class ImageNetPrediction
-    {
-        [ColumnName("grid")]
-        public float[] PredictedLabels;
-    }
-    ```
+    [!code-csharp [ImageNetPredictionClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/DataStructures/ImageNetPrediction.cs#L5-L9)]
 
     `ImageNetPrediction` is the prediction data class and has the following `float[]` field:
 
@@ -198,9 +152,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 Initialize the `mlContext` variable with a new instance of `MLContext` by adding the following line to the `Main` method of *Program.cs* below the `outputFolder` field.
 
-```csharp
-MLContext mlContext = new MLContext();
-```
+[!code-csharp [InitMLContext](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L24)]
 
 ### Add Helper Methods
 
@@ -214,12 +166,7 @@ private static void DrawBoundingBox(string inputImageLocation, string outputImag
 
 First, load the image and get the height and width dimensions in the `DrawBoundingBox` method.
 
-```csharp
-Image image = Image.FromFile(Path.Combine(inputImageLocation, imageName));
-
-var originalImageHeight = image.Height;
-var originalImageWidth = image.Width;
-```
+[!code-csharp [LoadImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L78-L81)]
 
 Then, create a for-each loop to iterate over each of the bounding boxes detected by the model.
 
@@ -231,28 +178,15 @@ foreach (var box in filteredBoundingBoxes)
 
 Inside of the for-each loop, get the dimensions of the bounding box.
 
-```csharp
-// Get Bounding Box Dimensions
-var x = (uint)Math.Max(box.Dimensions.X, 0);
-var y = (uint)Math.Max(box.Dimensions.Y, 0);
-var width = (uint)Math.Min(originalImageWidth - x, box.Dimensions.Width);
-var height = (uint)Math.Min(originalImageHeight - y, box.Dimensions.Height);
-```
+[!code-csharp [GetBBoxDimensions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L86-L89)]
 
 Because the dimensions of the bounding box correspond to the model input of `416 x 416`, scale the bounding box dimensions to match the actual size of the image.
 
-```csharp
-x = (uint)originalImageWidth * x / 416;
-y = (uint)originalImageHeight * y / 416;
-width = (uint)originalImageWidth * width / 416;
-height = (uint)originalImageHeight * height / 416;
-```
+[!code-csharp [ScaleImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L92-L95)]
 
 Then, define a template for text that will apear above each bounding box. The text will contain the class of the object inside of the respective bounding box as well as the confidence.
 
-```csharp
-string text = $"{box.Label} ({(box.Confidence * 100).ToString("0")}%)";
-```
+[!code-csharp [DefineBBoxText](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L98)]
 
 In order to draw on the image, convert it to a [`Graphics`](xref:System.Drawing.Graphics) object.
 
@@ -264,64 +198,27 @@ using (Graphics thumbnailGraphic = Graphics.FromImage(image))
 
 Inside the `using` code block, tune the graphic's [`Graphics`](xref:System.Drawing.Graphics) object settings.
 
-```csharp
-thumbnailGraphic.CompositingQuality = CompositingQuality.HighQuality;
-thumbnailGraphic.SmoothingMode = SmoothingMode.HighQuality;
-thumbnailGraphic.InterpolationMode = InterpolationMode.HighQualityBicubic;
-```
+[!code-csharp [TuneGraphicSettings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L102-L104)]
 
 Below that, set the font and color options for the text and bounding box.
 
-```csharp
-Font drawFont = new Font("Arial", 12, FontStyle.Bold);
-SizeF size = thumbnailGraphic.MeasureString(text, drawFont);
-SolidBrush fontBrush = new SolidBrush(Color.Black);
-Point atPoint = new Point((int)x, (int)y - (int)size.Height - 1);
-
-Pen pen = new Pen(box.BoxColor, 3.2f);
-SolidBrush colorBrush = new SolidBrush(box.BoxColor);
-```
+[!code-csharp [SetColorOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L106-L114)]
 
 Create and fill a rectangle above the bounding box to contain the text using the [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle*) method. This will help contrast the text and improve readability.
 
-```csharp
-thumbnailGraphic.FillRectangle(colorBrush, (int)x, (int)(y - size.Height - 1), (int)size.Width, (int)size.Height);
-```
+[!code-csharp [DrawTextBackground](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L117)]
 
 Then, Draw the text and bounding box on the image using the [`DrawString`](xref:System.Drawing.Graphics.DrawString*) and [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle*) methods.
 
-```csharp
-thumbnailGraphic.DrawString(text, drawFont, fontBrush, atPoint);
-
-thumbnailGraphic.DrawRectangle(pen, x, y, width, height);
-```
+[!code-csharp [DrawClassAndBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L118-L121)]
 
 Outside of the for-each loop, add code to save the images in the `outputDirectory`.
 
-```csharp
-if (!Directory.Exists(outputImageLocation))
-{
-    Directory.CreateDirectory(outputImageLocation);
-}
-
-image.Save(Path.Combine(outputImageLocation, imageName));
-```
+[!code-csharp [SaveImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L125-L130)]
 
 To get additional feedback that the application is making predictions as expected at runtime, add a method called `LogDetectedObjects` below the `DrawBoundingBox` method in the *Program.cs* file to output the detected objects to the console.
 
-```csharp
-private static void LogDetectedObjects(string imageName, IList<YoloBoundingBox> boundingBoxes)
-{
-    Console.WriteLine($".....The objects in the image {imageName} are detected as below....");
-
-    foreach (var box in boundingBoxes)
-    {
-        Console.WriteLine($"{box.Label} and its Confidence score: {box.Confidence}");
-    }
-
-    Console.WriteLine("");
-}
-```
+[!code-csharp [LogOuptuts](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L133-L143)]
 
 Both of these methods will be useful when the model has produced outputs and those have been processed. First though, create the functionality to process the model outputs.
 
@@ -344,15 +241,7 @@ Object localization is a core component of object detection. As such, much of th
 
     Add the following code for the `DimensionsBase` class to the *DimensionsBase.cs* file:
 
-    ```csharp
-    public class DimensionsBase
-    {
-        public float X { get; set; }
-        public float Y { get; set; }
-        public float Height { get; set; }
-        public float Width { get; set; }
-    }
-    ```
+    [!code-csharp [DimensionsBaseClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/DimensionsBase.cs#L3-L9)]
 
     `DimensionsBase` has the following `float` fields:
 
@@ -368,37 +257,17 @@ Next, create a class for your bounding boxes.
 
     The *YoloBoundingBox.cs* file opens in the code editor. Add the following `using` statement to the top of *YoloBoundingBox.cs*:
 
-    ```csharp
-    using System.Drawing;
-    ```
+    [!code-csharp [YoloBoundingBoxUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L1)]
 
     Just above the existing class definition, add a new class definition called `BoundingBoxDimensions` which inherits from the `DimensionsBase` class to contain the dimensions of the respective bounding box.
 
-    ```csharp
-    public class BoundingBoxDimensions : DimensionsBase { }
-    ```
+    [!code-csharp [BoundingBoxDimClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L5)]
 
     Remove the existing `YoloBoundingBox` class definition and add the following code for the `YoloBoundingBox` class to the *YoloBoundingBox.cs* file:
 
-    ```csharp
-    public class YoloBoundingBox
-    {
-        public BoundingBoxDimensions Dimensions { get; set; }
-
-        public string Label { get; set; }
-
-        public float Confidence { get; set; }
-
-        public RectangleF Rect
-        {
-            get { return new RectangleF(Dimensions.X, Dimensions.Y, Dimensions.Width, Dimensions.Height); }
-        }
-
-        public Color BoxColor { get; set; }
-    }
-    ```
-
-    `DimensionsBase` has the following fields:
+    [!code-csharp [YoloBoundingBoxClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L7-L21)]
+    
+    `YoloBoundingBox` has the following fields:
 
     - `Dimensions` contains dimensions of the bounding box.
     - `Label` contains the class of object detected within the bounding box.
@@ -411,37 +280,19 @@ Next, create a class for your bounding boxes.
 Now that the classes for dimensions and bounding boxes are created, it's time to create the parser.
 
 1. In **Solution Explorer**, right-click the *YoloParser* directory, and then select **Add** > **New Item**.
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *YoloWinMlParser.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *YoloOutputParser.cs*. Then, select the **Add** button.
 
-    The *YoloWinMlParser.cs* file opens in the code editor. Add the following `using` statement to the top of *YoloWinMlParser.cs*:
+    The *YoloOutputParser.cs* file opens in the code editor. Add the following `using` statement to the top of *YoloOutputParser.cs*:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Drawing;
-    using System.Linq;
-    ```
+    [!code-csharp [YoloParserUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L1-L4)]
 
-    Inside the existing `YoloWinMlParser` class definition, add a nested class that contains the dimensions of each of the cells in the image. Add the following code for the `CellDimensions` class which inherits from the `DimensionsBase` class at the top of the `YoloOutputParser` class definition.
+    Inside the existing `YoloOutputParser` class definition, add a nested class that contains the dimensions of each of the cells in the image. Add the following code for the `CellDimensions` class which inherits from the `DimensionsBase` class at the top of the `YoloOutputParser` class definition.
 
-    ```csharp
-    class CellDimensions : DimensionsBase { }
-    ```
+    [!code-csharp [YoloParserUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L10)]
 
 1. Define constant and fields.
 
-    ```csharp
-    public const int ROW_COUNT = 13;
-    public const int COL_COUNT = 13;
-    public const int CHANNEL_COUNT = 125;
-    public const int BOXES_PER_CELL = 5;
-    public const int BOX_INFO_FEATURE_COUNT = 5;
-    public const int CLASS_COUNT = 20;
-    public const float CELL_WIDTH = 32;
-    public const float CELL_HEIGHT = 32;
-
-    private int channelStride = ROW_COUNT * COL_COUNT;
-    ```
+    [!code-csharp [ParserVarDefinitions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L12-L21)]    
 
     - `ROW_COUNT` is the number of rows in the grid the image is divided into.
     - `COL_COUNT` is the number of columns in the grid the image is divided into.
@@ -458,12 +309,7 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
 
 Create a list of anchors below `channelStride` for all 5 bounding boxes:
 
-```csharp
-private float[] anchors = new float[]
-{
-    1.08F, 1.19F, 3.42F, 4.41F, 6.63F, 11.38F, 9.42F, 5.11F, 16.62F, 10.52F
-};
-```
+[!code-csharp [ParserAnchors](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L23-L26)]   
 
 Anchors are pre-defined height and width ratios of bounding boxes. Most object or classes detected by a model have similar ratios. This is valuable when it comes to creating bounding boxes. Instead of predicting the bounding boxes, the offset from the pre-defined dimensions is calculated therefore reducing the computation required to predict the bounding box. Typically these anchor ratios are calculated based on the dataset used. In this case because the dataset is known and the values have been pre-computed, the anchors can be hard-coded.
 
@@ -471,44 +317,11 @@ Next, define the labels or classes that the model will predict. This model predi
 
 Add your list of labels below the `anchors`. 
 
-```csharp
-private string[] labels = new string[]
-{
-    "aeroplane", "bicycle", "bird", "boat", "bottle",
-    "bus", "car", "cat", "chair", "cow",
-    "diningtable", "dog", "horse", "motorbike", "person",
-    "pottedplant", "sheep", "sofa", "train", "tvmonitor"
-};
-```
+[!code-csharp [ParserLabels](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L28-L34)]
 
 There are colors associated with each of the classes. Assign your class colors below your `labels`:
 
-```csharp
-private static Color[] classColors = new Color[]
-{
-    Color.Khaki,
-    Color.Fuchsia,
-    Color.Silver,
-    Color.RoyalBlue,
-    Color.Green,
-    Color.DarkOrange,
-    Color.Purple,
-    Color.Gold,
-    Color.Red,
-    Color.Aquamarine,
-    Color.Lime,
-    Color.AliceBlue,
-    Color.Sienna,
-    Color.Orchid,
-    Color.Tan,
-    Color.LightPink,
-    Color.Yellow,
-    Color.HotPink,
-    Color.OliveDrab,
-    Color.SandyBrown,
-    Color.DarkTurquoise
-};
-```
+[!code-csharp [ParserColors](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L36-L59)]
 
 ### Create Helper Functions
 
@@ -528,95 +341,7 @@ The helper methods used in by the parser are:
 
 Add the code for all the helper methods below your list of `classColors`.
 
-```csharp
-private float Sigmoid(float value)
-{
-    var k = (float)Math.Exp(value);
-    return k / (1.0f + k);
-}
-
-private float[] Softmax(float[] values)
-{
-    var maxVal = values.Max();
-    var exp = values.Select(v => Math.Exp(v - maxVal));
-    var sumExp = exp.Sum();
-
-    return exp.Select(v => (float)(v / sumExp)).ToArray();
-}
-
-private int GetOffset(int x, int y, int channel)
-{
-    return (channel * this.channelStride) + (y * COL_COUNT) + x;
-}
-
-private BoundingBoxDimensions ExtractBoundingBoxDimensions(float[] modelOutput, int x, int y, int channel)
-{
-    return new BoundingBoxDimensions
-    {
-        X = modelOutput[GetOffset(x, y, channel)],
-        Y = modelOutput[GetOffset(x, y, channel + 1)],
-        Width = modelOutput[GetOffset(x, y, channel + 2)],
-        Height = modelOutput[GetOffset(x, y, channel + 3)]
-    };
-}
-
-private float GetConfidence(float[] modelOutput, int x, int y, int channel)
-{
-    return Sigmoid(modelOutput[GetOffset(x, y, channel + 4)]);
-}
-
-private CellDimensions MapBoundingBoxToCell(int x, int y, int box, BoundingBoxDimensions boxDimensions)
-{
-    return new CellDimensions
-    {
-        X = ((float)x + Sigmoid(boxDimensions.X)) * CELL_WIDTH,
-        Y = ((float)y + Sigmoid(boxDimensions.Y)) * CELL_HEIGHT,
-        Width = (float)Math.Exp(boxDimensions.Width) * CELL_WIDTH * anchors[box * 2],
-        Height = (float)Math.Exp(boxDimensions.Height) * CELL_HEIGHT * anchors[box * 2 + 1],
-    };
-}
-
-public float[] ExtractClasses(float[] modelOutput, int x, int y, int channel)
-{
-    float[] predictedClasses = new float[CLASS_COUNT];
-    int predictedClassOffset = channel + BOX_INFO_FEATURE_COUNT;
-    for (int predictedClass = 0; predictedClass < CLASS_COUNT; predictedClass++)
-    {
-        predictedClasses[predictedClass] = modelOutput[GetOffset(x, y, predictedClass + predictedClassOffset)];
-    }
-    return Softmax(predictedClasses);
-}
-
-private ValueTuple<int, float> GetTopResult(float[] predictedClasses)
-{
-    return predictedClasses
-        .Select((predictedClass, index) => (Index: index, Value: predictedClass))
-        .OrderByDescending(result => result.Value)
-        .First();
-}
-
-private float IntersectionOverUnion(RectangleF boundingBoxA, RectangleF boundingBoxB)
-{
-    var areaA = boundingBoxA.Width * boundingBoxA.Height;
-
-    if (areaA <= 0)
-        return 0;
-
-    var areaB = boundingBoxB.Width * boundingBoxB.Height;
-
-    if (areaB <= 0)
-        return 0;
-
-    var minX = Math.Max(boundingBoxA.Left, boundingBoxB.Left);
-    var minY = Math.Max(boundingBoxA.Top, boundingBoxB.Top);
-    var maxX = Math.Min(boundingBoxA.Right, boundingBoxB.Right);
-    var maxY = Math.Min(boundingBoxA.Bottom, boundingBoxB.Bottom);
-
-    var intersectionArea = Math.Max(maxY - minY, 0) * Math.Max(maxX - minX, 0);
-
-    return intersectionArea / (areaA + areaB - intersectionArea);
-}
-```
+[!code-csharp [ParserHelperMethods](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L61-L151)]
 
 Once you have defined all of the helper methods, it's time to use them to process the model output.
 
@@ -631,9 +356,7 @@ public IList<YoloBoundingBox> ParseOutputs(float[] yoloModelOutputs, float thres
     
 Create a list to store your bounding boxes and define variables inside the `ParseOutputs` method.
 
-```csharp
-var boxes = new List<YoloBoundingBox>();
-```
+[!code-csharp [BBoxList](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L155)]
 
 Each image is divided into a grid of `13 x 13` cells. Each cell contains five bounding boxes. Below the `boxes` variable, add code to process all of the boxes in each of the cells.
 
@@ -652,78 +375,43 @@ for (int row = 0; row < ROW_COUNT; row++)
 
 Inside the inner-most loop, calculate the starting position of the current box within the one-dimensional model output.
 
-```csharp
-var channel = (box * (CLASS_COUNT + BOX_INFO_FEATURE_COUNT));
-```
+[!code-csharp [ChannelDef](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L163)]
 
 Directly below that, use the `ExtractBoundingBoxDimensions` method to get the dimensions of the current bounding box.
 
-```csharp
-BoundingBoxDimensions boundingBoxDimensions = ExtractBoundingBoxDimensions(yoloModelOutputs, row, column, channel);
-```
+[!code-csharp [GetBBoxDims](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L165)]
 
 Then, use the `GetConfidence` method to get the confidence for the current bounding box.
 
-```csharp
-float confidence = GetConfidence(yoloModelOutputs, row, column, channel);
-```
+[!code-csharp [GetConfidence](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L167)]
 
 After that, use the `MapBoundingBoxToCell` method to map the current bounding box to the current cell being processed.
 
-```csharp
-CellDimensions mappedBoundingBox = MapBoundingBoxToCell(row, column, box, boundingBoxDimensions);
-```
+[!code-csharp [MapBoundingBoxes](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L169)]
 
 Before doing any further processing, check whether your confidence value is greater than the threshold provided. If not, process the next bounding box.
 
-```csharp
-if (confidence < threshold)
-    continue;
-```
+[!code-csharp [CheckThreshold1](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L171-L172)]
 
 Otherwise, continue processing the output. The next step is to get the probability distribution of the predicted classes for the current bounding box using the `ExtractClasses` method.
 
-```csharp
-float[] predictedClasses = ExtractClasses(yoloModelOutputs, row, column, channel);
-```
+[!code-csharp [ExtractClasses](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L174)]
 
 Then, use the `GetTopResult` method to get the value and index of the class with the highest probability for the current box and compute its score.
 
-```csharp
-var (topResultIndex, topResultScore) = GetTopResult(predictedClasses);
-var topScore = topResultScore * confidence;
-```
+[!code-csharp [GetTopResult](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L176-L177)]
 
 Use the `topScore` to once again keep only those bounding boxes that are above the specified threshold.
 
-```csharp
-if (topScore < threshold)
-    continue;
-```
+[!code-csharp [CheckThreshold2](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L179-L180)]
 
 Finally, if the current bounding box exceeds the threshold, create a new `BoundingBox` object and add it to the `boxes` list.
 
-```csharp
-boxes.Add(new YoloBoundingBox()
-{
-    Dimensions = new BoundingBoxDimensions
-    {
-        X = (mappedBoundingBox.X - mappedBoundingBox.Width / 2),
-        Y = (mappedBoundingBox.Y - mappedBoundingBox.Height / 2),
-        Width = mappedBoundingBox.Width,
-        Height = mappedBoundingBox.Height,
-    },
-    Confidence = topScore,
-    Label = labels[topResultIndex],
-    BoxColor = classColors[topResultIndex]
-});
-```
+[!code-csharp [AddBBoxToList](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L182-L194)]
 
 Once all cells in the image have been processed, return the `boxes` list. Add the following return statement below the outer-most for-loop in the `ParseOutputs` method.
 
-```csharp
-return boxes;
-```
+[!code-csharp [ReturnBoxes](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L198)]
 
 ### Filter overlapping boxes
 
@@ -737,27 +425,15 @@ public IList<YoloBoundingBox> FilterBoundingBoxes(IList<YoloBoundingBox> boxes, 
 
 Inside the `FilterBoundingBoxes` method, start off by creating an array equal to the size of detected boxes and marking all slots as active or ready for processing.
 
-```csharp
-var activeCount = boxes.Count;
-var isActiveBoxes = new bool[boxes.Count];
-
-for (int i = 0; i < isActiveBoxes.Length; i++)
-    isActiveBoxes[i] = true;
-```
+[!code-csharp [InitActiveSlots](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L203-L207)]
 
 Then, sort the list containing your bounding boxes in descending order based on confidence.
 
-```csharp
-var sortedBoxes = boxes.Select((b, i) => new { Box = b, Index = i })
-                    .OrderByDescending(b => b.Box.Confidence)
-                    .ToList();
-```
+[!code-csharp [SortBoxes](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L209-L211)]
 
 After that, create a list to hold the filtered results.
 
-```csharp
-var results = new List<YoloBoundingBox>();
-```
+[!code-csharp [InitFilterResult](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L213)]
 
 Begin processing each bounding box by iterating over each of the bounding boxes.
 
@@ -779,10 +455,7 @@ if (isActiveBoxes[i])
 
 If so, add the bounding box to the list of results. If the results exceeds the specified limit of boxes to be extracted, break out of the loop. Add the following code inside the if-statement.
 
-```csharp
-if (results.Count >= limit)
-    break;
-```
+[!code-csharp [AddFirstBBoxToResults](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L219-L223)]
 
 Otherwise, look at the adjacent bounding boxes. Add the following code below the box limit check.
 
@@ -793,36 +466,17 @@ for (var j = i + 1; j < boxes.Count; j++)
 }
 ```
 
-Like the first box, if the adjacent box is active or ready to be processed, use the `IntersectionOverUnion` method to check whether the first box and the second box exceed the specified threshold. Add the following code to your for-loop.
+Like the first box, if the adjacent box is active or ready to be processed, use the `IntersectionOverUnion` method to check whether the first box and the second box exceed the specified threshold. Add the following code to your inner-most for-loop.
 
-```csharp
-if (isActiveBoxes[j])
-{
-    var boxB = sortedBoxes[j].Box;
+[!code-csharp [IOUBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L227-L239)]
 
-    if (IntersectionOverUnion(boxA.Rect, boxB.Rect) > threshold)
-    {
-        isActiveBoxes[j] = false;
-        activeCount--;
+Outside of the inner-most for-loop that checks adjacent bounding boxes, check whether there are any remaining bounding boxes to be processed. If not, break out of the outer for-loop.
 
-        if (activeCount <= 0)
-            break;
-    }
-}
-```
-
-Outside of the for-loop that checks adjacent bounding boxes, check whether there are any remaining bounding boxes to be processed. If not, break out of the for-loop.
-
-```csharp
-if (activeCount <= 0)
-    break;
-```
+[!code-csharp [CheckActiveSlots](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L242-L243)]
 
 Finally, outside of the initial for-loop of the `FilterBoundingBoxes` method, return the results:
 
-```chsarp
-return results;
-```
+[!code-csharp [ReturnFilteredBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L246)]
 
 Great! Now it's time to leverage this code along with the model for scoring.
 
@@ -835,64 +489,23 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     The *OnnxModelScorer.cs* file opens in the code editor. Add the following `using` statement to the top of *OnnxModelScorer.cs*:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using Microsoft.ML;
-    using Microsoft.ML.Data;
-    using ObjectDetection.DataStructures;
-    using ObjectDetection.YoloParser;
-    ```
+    [!code-csharp [ScorerUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L1-L7)]
 
     Inside the `OnnxModelScorer` class definition add the following variables.
 
-    ```csharp
-    private readonly string imagesFolder;
-    private readonly string modelLocation;
-    private readonly MLContext mlContext;
-
-    private IList<YoloBoundingBox> _boundingBoxes = new List<YoloBoundingBox>();
-    ```
+    [!code-csharp [InitScorerVars](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L13-L17)]
 
     Directly below that, create a constructor for the `OnnxModelScorer` class that will initialize the previously defined variables.
 
-    ```csharp
-    public OnnxModelScorer(string imagesFolder, string modelLocation, MLContext mlContext)
-    {
-        this.imagesFolder = imagesFolder;
-        this.modelLocation = modelLocation;
-        this.mlContext = mlContext;
-    }
-    ```
+    [!code-csharp [ScorerCtor](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L19-L24)]
 
     Once you have created the constructor, define a couple of structs that contain variables related to the image and model settings. Create a struct called `ImageNetSettings` to contain the height and width expected as input for the model.
 
-    ```csharp
-    public struct ImageNetSettings
-    {
-        public const int imageHeight = 416;
-        public const int imageWidth = 416;
-    }    
-    ```
+    [!code-csharp [ImageNetSettingStruct](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L26-L30)]
 
     After that, create another struct called `TinyYoloModelSettings` which contains the names of the input and output layers of the model. To visualize the name of the input and output layers of the model you can use a tool like [Netron](https://github.com/lutzroeder/netron).
 
-    ```csharp
-    public struct TinyYoloModelSettings
-    {
-        // for checking Tiny yolo2 Model input and  output  parameter names,
-        //you can use tools like Netron, 
-        // which is installed by Visual Studio AI Tools
-
-        // input tensor name
-        public const string ModelInput = "image";
-
-        // output tensor name
-        public const string ModelOutput = "grid";
-    }    
-    ```
-
+    [!code-csharp [YoloSettingsStruct](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L32-L43)]
 
     Next, create the first set of methods use for scoring. Create the `LoadModel` method inside of your `OnnxModelScorer` class.
 
@@ -904,17 +517,11 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     Inside the `LoadModel` method, add the following code for logging.
 
-    ```csharp
-    Console.WriteLine("Read model");
-    Console.WriteLine($"Model location: {modelLocation}");
-    Console.WriteLine($"Default parameters: image size=({ImageNetSettings.imageWidth},{ImageNetSettings.imageHeight})");
-    ```
+    [!code-csharp [LoadModelLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L47-L49)]
 
     ML.NET pipelines typically expect data to operate on when the [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) method is called. In this case, a process similar to training will be used. However, because no actual training is happening, it is acceptable to use an empty [`IDataView`](xref:Microsoft.ML.IDataView). Create a new [`IDataView`](xref:Microsoft.ML.IDataView) for the pipeline from an empty list.
 
-    ```csharp
-    var data = _mlContext.Data.LoadFromEnumerable(new List<ImageNetData>());
-    ```
+    [!code-csharp [LoadEmptyIDV](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L52)]    
 
     Below that, define the pipeline. The pipeline will consist of four transforms.
 
@@ -925,6 +532,8 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     Define your pipeline in the `LoadModel` method below the `data` variable.
 
+    [!code-csharp [ScoringPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L55-L58)]
+
     ```csharp
     var pipeline = _mlContext.Transforms.LoadImages(outputColumnName: "image", imageFolder: "", inputColumnName: nameof(ImageNetData.ImagePath))
                 .Append(_mlContext.Transforms.ResizeImages(outputColumnName: "image", imageWidth: ImageNetSettings.imageWidth, imageHeight: ImageNetSettings.imageHeight, inputColumnName: "image"))
@@ -934,11 +543,7 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     Now it's time to instantiate the model for scoring. Call the [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) method on the pipeline and return it for further processing.
 
-    ```csharp
-    var model = pipeline.Fit(data);
-
-    return model;
-    ```
+    [!code-csharp [FitReturnModel](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L61-L63)]
 
 Once the model is loaded, it can then be used to make predictions. To facilitate that process, create a method called `PredictDataUsingModel` below the `LoadModel` method.
 
@@ -950,37 +555,19 @@ private IEnumerable<float[]> PredictDataUsingModel(IDataView testData, ITransfor
 
 Inside the `PredictDataUsingModel` add the following code for logging.
 
-```csharp
-Console.WriteLine($"Images location: {imagesFolder}");
-Console.WriteLine("");
-Console.WriteLine("=====Identify the objects in the images=====");
-Console.WriteLine("");
-```
+[!code-csharp [PredictDataLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L68-L71)]
 
 Then, use the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) method to score the data.
 
-```csharp
-IDataView scoredData = model.Transform(testData);
-```
+[!code-csharp [ScoreImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L73)
 
 Extract the predicted probabilities and return them for additional processing.
 
-```csharp
-IEnumerable<float[]> probabilities = scoredData.GetColumn<float[]>(TinyYoloModelSettings.ModelOutput);
-
-return probabilities;
-```
+[!code-csharp [ReturnModelOutput](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L75-L77)
 
 Now that both steps are set up, combine them into a single method. Below the `PredictDataUsingModel` method, add a new method called `Score`.
 
-```csharp
-public IEnumerable<float[]> Score(IDataView data)
-{
-    var model = LoadModel(_modelLocation);
-
-    return PredictDataUsingModel(data, model);
-}
-```
+[!code-csharp [ScoreMethod](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L80-L85)
 
 Almost there! Now it's time to put it all to use.
 
@@ -1001,29 +588,15 @@ catch (Exception ex)
 
 Inside of the `try` block, start implementing the object detection logic. First, load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
-```csharp
-IEnumerable<ImageNetData> images = ImageNetData.ReadFromFile(imagesFolder);
-IDataView imageDataView = mlContext.Data.LoadFromEnumerable(images);
-```
+[!code-csharp [LoadData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L29-L30)
 
 Then, create an instance of `OnnxModelScorer` and use it to score the loaded data.
 
-```csharp
-var modelScorer = new OnnxModelScorer(imagesFolder, modelFilePath, mlContext);
-
-IEnumerable<float[]> probabilities = modelScorer.Score(imageDataView);
-```
+[!code-csharp [ScoreData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L33-L36)
 
 Now it's time for the post-processing step. Create an instance of `YoloOutputParser` and use it to process the model output.
 
-```csharp
-YoloOutputParser parser = new YoloOutputParser();
-
-var boundingBoxes =
-    probabilities
-    .Select(probability => parser.ParseOutputs(probability))
-    .Select(boxes => parser.FilterBoundingBoxes(boxes, 5, .5F));
-```
+[!code-csharp [ParsePredictions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L39-L44)
 
 Once the model output has been processed, it's time to draw the bounding boxes on the images. Create a for-loop to iterate over each of the scored images.
 
@@ -1035,29 +608,20 @@ for (var i = 0; i < images.Count(); i++)
 
 Inside of the for-loop, get the name of the image file and the bounding boxes associated with it.
 
-```csharp
-string imageFileName = images.ElementAt(i).Label;
-IList<YoloBoundingBox> detectedObjects = boundingBoxes.ElementAt(i);
-```
+[!code-csharp [GetImageFileName](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L49-L50)
 
 Below that, use the `DrawBoundingBox` method to draw the bounding boxes on the image.
 
-```csharp
-DrawBoundingBox(imagesFolder, outputFolder, imageFileName, detectedObjects);
-```
+[!code-csharp [DrawBBoxes](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L52)
 
 Lastly, add some logging logic with the `LogDetectedObjects` method.
 
-```csharp
-LogDetectedObjects(imageFileName, detectedObjects);
-```
+[!code-csharp [LogPredictionsOutput](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L54)
+
 
 After the try-catch statement, add additional logic to indicate the process is done running.
 
-```csharp
-Console.WriteLine("========= End of Process..Hit any Key ========");
-Console.ReadLine();
-```
+[!code-csharp [EndProcessLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L62-L63)
 
 That's it! 
 

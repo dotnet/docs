@@ -35,8 +35,6 @@ Or you can pass it directly as a method argument:
 [!code-csharp-interactive[lambda is argument](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Argument)]
 
 When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Enumerable?displayProperty=nameWithType> class (as you do in LINQ to Objects and LINQ to XML) the parameter is a delegate type <xref:System.Func%602?displayProperty=nameWithType>. A lambda expression is the most convenient way to create that delegate. When you call the <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType> method in the <xref:System.Linq.Queryable?displayProperty=nameWithType> class (as you do in LINQ to SQL) the parameter type is an expression tree type [`Expression<Func<TSource,TResult>>`](<xref:System.Linq.Expressions.Expression%601>). Again, a lambda expression is just a very concise way to construct that expression tree. The lambdas allow the `Select` calls to look similar although in fact the type of object created from the lambda is different.
-
-All restrictions that apply to [anonymous methods](anonymous-methods.md) also apply to lambda expressions.
   
 ## Expression lambdas
 
@@ -76,7 +74,7 @@ The body of a statement lambda can consist of any number of statements; however,
 
 [!code-csharp-interactive[statement lambda](~/samples/snippets/csharp/programming-guide/lambda-expressions/ExpressionAndStatementLambdas.cs#StatementLambda)]
 
-Statement lambdas, like anonymous methods, cannot be used to create expression trees.
+Statement lambdas cannot be used to create expression trees.
   
 ## Async lambdas
 
@@ -192,7 +190,7 @@ Note that lambda expressions in themselves don't have a type because the common 
 
 ## Capture of outer variables and variable scope in lambda expressions
 
-Lambdas can refer to *outer variables* (see [Anonymous methods](anonymous-methods.md)) that are in scope in the method that defines the lambda expression, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:
+Lambdas can refer to *outer variables*. These are the variables that are in scope in the method that defines the lambda expression, or in scope in the type that contains the lambda expression. Variables that are captured in this manner are stored for use in the lambda expression even if the variables would otherwise go out of scope and be garbage collected. An outer variable must be definitely assigned before it can be consumed in a lambda expression. The following example demonstrates these rules:
 
 [!code-csharp[variable scope](~/samples/snippets/csharp/programming-guide/lambda-expressions/VariableScopeWithLambdas.cs#VariableScope)]
 
@@ -220,7 +218,6 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 
 - [C# Programming Guide](../index.md)
 - [LINQ (Language-Integrated Query)](../concepts/linq/index.md)
-- [Anonymous Methods](anonymous-methods.md)
 - [Expression Trees](../concepts/expression-trees/index.md)
 - [Local functions compared to lambda expressions](../../local-functions-vs-lambdas.md)
 - [Implicitly typed lambda expressions](../../implicitly-typed-lambda-expressions.md)

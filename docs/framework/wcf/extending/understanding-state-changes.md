@@ -58,7 +58,7 @@ Figure 2. The CommunicationObject implementation of the ICommunicationObject sta
   
  <xref:System.ServiceModel.Channels.CommunicationObject> provides three constructors, all of which leave the object in the Created state. The constructors are defined as:  
   
- The first constructor is a default constructor that delegates to the constructor overload that takes an object:  
+ The first constructor is a parameterless constructor that delegates to the constructor overload that takes an object:  
   
  `protected CommunicationObject() : this(new object()) { … }`  
   

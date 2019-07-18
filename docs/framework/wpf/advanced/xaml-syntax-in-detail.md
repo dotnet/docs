@@ -73,7 +73,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## Properties of Object Elements  
  Properties in XAML are set by a variety of possible syntaxes. Which syntax can be used for a particular property will vary, based on the underlying type system characteristics of the property that you are setting.  
   
- By setting values of properties, you add features or characteristics to objects as they exist in the run time object graph. The initial state of the created object from a object element is based on the default constructor behavior. Typically, your application will use something other than a completely default instance of any given object.  
+ By setting values of properties, you add features or characteristics to objects as they exist in the run time object graph. The initial state of the created object from a object element is based on the parameterless constructor behavior. Typically, your application will use something other than a completely default instance of any given object.  
   
 <a name="attribute_syntax_properties"></a>   
 ## Attribute Syntax (Properties)  
@@ -182,7 +182,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 </LinearGradientBrush>  
 ```  
   
- Note that it is not always possible to explicitly declare the collection. For instance, attempting to declare <xref:System.Windows.TriggerCollection> explicitly in the previously shown <xref:System.Windows.Style.Triggers%2A> example would fail. Explicitly declaring the collection requires that the collection class must support a default constructor, and <xref:System.Windows.TriggerCollection> does not have a default constructor.  
+ Note that it is not always possible to explicitly declare the collection. For instance, attempting to declare <xref:System.Windows.TriggerCollection> explicitly in the previously shown <xref:System.Windows.Style.Triggers%2A> example would fail. Explicitly declaring the collection requires that the collection class must support a parameterless constructor, and <xref:System.Windows.TriggerCollection> does not have a parameterless constructor.  
   
 <a name="xaml_content_properties"></a>   
 ## XAML Content Properties  
@@ -225,7 +225,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  [!code-xaml[XAMLOvwSupport#SyntaxContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page5.xaml#syntaxcontent)]  
   
- Note that neither the property element for <xref:System.Windows.Controls.Panel.Children%2A> nor the element for the <xref:System.Windows.Controls.UIElementCollection> is required in the markup. This is a design feature of XAML so that recursively contained elements that define a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] are more intuitively represented as a tree of nested elements with immediate parent-child element relationships, without intervening property element tags or collection objects. In fact, <xref:System.Windows.Controls.UIElementCollection> cannot be specified explicitly in markup as an object element, by design. Because its only intended use is as an implicit collection, <xref:System.Windows.Controls.UIElementCollection> does not expose a public default constructor and thus cannot be instantiated as an object element.  
+ Note that neither the property element for <xref:System.Windows.Controls.Panel.Children%2A> nor the element for the <xref:System.Windows.Controls.UIElementCollection> is required in the markup. This is a design feature of XAML so that recursively contained elements that define a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] are more intuitively represented as a tree of nested elements with immediate parent-child element relationships, without intervening property element tags or collection objects. In fact, <xref:System.Windows.Controls.UIElementCollection> cannot be specified explicitly in markup as an object element, by design. Because its only intended use is as an implicit collection, <xref:System.Windows.Controls.UIElementCollection> does not expose a public parameterless constructor and thus cannot be instantiated as an object element.  
   
 ### Mixing Property Elements and Object Elements in an Object with a Content Property  
  The XAML specification declares that a XAML processor can enforce that object elements that are used to fill the XAML content property within an object element must be contiguous, and must not be mixed. This restriction against mixing property elements and content is enforced by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] XAML processors.  

@@ -263,7 +263,7 @@ The contract name and contract type can be specified in the `Import` attribute f
 
 Exported MEF parts are typically created by the composition engine, in response to a direct request or the need to fill a matched import. By default, when creating a part, the composition engine uses the parameter-less constructor. To make the engine use a different constructor, you can mark it with the `ImportingConstructor` attribute.
 
-Each part may have only one constructor for use by the composition engine. Providing no default constructor and no `ImportingConstructor` attribute, or providing more than one `ImportingConstructor` attribute, will produce an error.
+Each part may have only one constructor for use by the composition engine. Providing no parameterless constructor and no `ImportingConstructor` attribute, or providing more than one `ImportingConstructor` attribute, will produce an error.
 
 To fill the parameters of a constructor marked with the `ImportingConstructor` attribute, all of those parameters are automatically declared as imports. This is a convenient way to declare imports that are used during part initialization. The following class uses `ImportingConstructor` to declare an import.
 

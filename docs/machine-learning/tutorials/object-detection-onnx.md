@@ -81,7 +81,7 @@ The model is stored in ONNX format. The Open Neural Network Exchange (ONNX) is a
 
 1. Copy the `assets` directory into your *ObjectDetection* project directory. This directory and its subdirectories contain the image files (except for the Tiny YOLOv2 model, which you'll download and add in the next step) needed for this tutorial.
 
-1. Download the [Tiny YOLOv2 model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip) from the [ONNX Model Zoo](https://github.com/onnx/models#object-detection--image-segmentation-), and unzip.
+1. Download the [Tiny YOLOv2 model](https://onnxzoo.blob.core.windows.net/models/opset_8/tiny_yolov2/tiny_yolov2.tar.gz) from the [ONNX Model Zoo](https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/tiny_yolov2), and unzip.
 
     Open the command prompt and enter the following command:
 
@@ -111,7 +111,7 @@ Next, define the paths of the various assets.
 
 Add a new directory to your project to store your input data and prediction classes.
 
-In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**. When the new folder appears in the Solution Explorer, name it "DataStructures".
+In **Solution Explorer**, right-click the project, and then select **Add** > **New Folder**. When the new folder appears in the Solution Explorer, name it "DataStructures".
 
 Create your input data class in the newly created *DataStructures* directory.
 
@@ -294,7 +294,7 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
 
     [!code-csharp [YoloParserUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L10)]
 
-1. Define constant and fields.
+1. Inside the `YoloOutputParser` class definition, add the following constant and fields.
 
     [!code-csharp [ParserVarDefinitions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L12-L21)]    
 

@@ -34,7 +34,7 @@ In this tutorial, you learn how to:
 
 This sample creates a .NET core console application that detects objects within an image using a pre-trained deep learning ONNX model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx) on GitHub.
 
-## What is object detection
+## What is object detection?
 
 Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. When an image is processed, there is first a check on whether there is an object present or not. If so, the detected object is classified and using object localization, the location of that object is returned along with the class. Typically, you want to use this approach on images where there are multiple objects of different types so that each is individually recognized. 
 
@@ -69,7 +69,11 @@ The model is stored in ONNX format. The Open Neural Network Exchange (ONNX) is a
 
 1. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**. Select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.ImageAnalytics** and **Microsoft.ML.OnnxTransformer**.
+    - In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. 
+    - Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**. 
+    - Select the **Install** button. 
+    - Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. 
+    - Repeat these steps for **Microsoft.ML.ImageAnalytics** and **Microsoft.ML.OnnxTransformer**.
 
 ### Prepare your data and pre-trained model
 
@@ -107,7 +111,7 @@ Next, define the paths of the various assets.
 
 Add a new directory to your project to store your input data and prediction classes.
 
-    In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**. When the new folder appears in the Solution Explorer, name it "DataStructures".
+In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**. When the new folder appears in the Solution Explorer, name it "DataStructures".
 
 Create your input data class in the newly created *DataStructures* directory.
 

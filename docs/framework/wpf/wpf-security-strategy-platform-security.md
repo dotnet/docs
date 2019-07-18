@@ -84,7 +84,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Common_Language_Runtime_Security"></a>   
 ## Common Language Runtime Security  
- The [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] offers a number of key security benefits that include validation and verification, [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)], and the Security Critical Methodology.  
+ The [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] offers a number of key security benefits that include validation and verification, Code Access Security (CAS), and the Security Critical Methodology.  
   
 <a name="Validation_and_Verification"></a>   
 ### Validation and Verification  
@@ -168,7 +168,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
 ### ClickOnce Deployment  
  [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] is a comprehensive deployment technology that is included with .NET Framework, and integrates with [!INCLUDE[TLA#tla_visualstu](../../../includes/tlasharptla-visualstu-md.md)] (see [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) for detailed information). Standalone [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications can be deployed using [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)], while browser-hosted applications must be deployed with [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)].  
   
- Applications deployed using [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)] are given an additional security layer over [!INCLUDE[TLA#tla_cas](../../../includes/tlasharptla-cas-md.md)]; essentially, [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] deployed applications request the permissions that they need. They are granted only those permissions if they do not exceed the set of permissions for the zone from which the application is deployed. By reducing the set of permissions to only those that are needed, even if they are less than those provided by the launch zone's permission set, the number of resources that the application has access to is reduced to a bare minimum. Consequently, if the application is hijacked, the potential for damage to the client machine is reduced.  
+ Applications deployed using [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)] are given an additional security layer over Code Access Security (CAS); essentially, [!INCLUDE[TLA#tla_clickonce](../../../includes/tlasharptla-clickonce-md.md)] deployed applications request the permissions that they need. They are granted only those permissions if they do not exceed the set of permissions for the zone from which the application is deployed. By reducing the set of permissions to only those that are needed, even if they are less than those provided by the launch zone's permission set, the number of resources that the application has access to is reduced to a bare minimum. Consequently, if the application is hijacked, the potential for damage to the client machine is reduced.  
   
 <a name="Security_Critical_Methodology"></a>   
 ### Security-Critical Methodology  

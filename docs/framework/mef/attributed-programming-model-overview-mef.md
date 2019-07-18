@@ -272,7 +272,7 @@ Public Class MyClass1
 
     Private _theAddin As IMyAddin
 
-    'Default constructor will NOT be used
+    'Parameterless constructor will NOT be used
     'because the ImportingConstructor
     'attribute is present.
     Public Sub New()
@@ -295,7 +295,7 @@ public class MyClass
 {
     private IMyAddin _theAddin;
 
-    //Default constructor will NOT be
+    //Parameterless constructor will NOT be
     //used because the ImportingConstructor
     //attribute is present.
     public MyClass() { }

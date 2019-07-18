@@ -62,7 +62,7 @@ public class MyClass : DependencyObject
 ## Safe Constructor Patterns  
  To avoid the risks of incomplete initialization if your class is used as a base class, follow these patterns:  
   
-#### Default constructors calling base initialization  
+#### Parameterless constructors calling base initialization  
  Implement these constructors calling the base default:  
   
 ```  

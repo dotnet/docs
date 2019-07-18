@@ -106,9 +106,9 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Code_Access_Security"></a>   
 ### Code Access Security  
- A client machine exposes a wide variety of resources that a managed application can have access to, including the file system, the Registry, printing services, the user interface, reflection, and environment variables. Before a managed application can access any of the resources on a client machine, it must have .NET Framework permission to do so. A permission in [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] is a subclass of the <xref:System.Security.CodeAccessPermission>; [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] implements one subclass for each resource that managed applications can access.  
+ A client machine exposes a wide variety of resources that a managed application can have access to, including the file system, the Registry, printing services, the user interface, reflection, and environment variables. Before a managed application can access any of the resources on a client machine, it must have .NET Framework permission to do so. A permission in CAS is a subclass of the <xref:System.Security.CodeAccessPermission>; CAS implements one subclass for each resource that managed applications can access.  
   
- The set of permissions that a managed application is granted by [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] when it starts executing is known as a permission set and is determined by evidence provided by the application. For [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications, the evidence that is provided is the location, or zone, from which the applications are launched. [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] identifies the following zones:  
+ The set of permissions that a managed application is granted by CAS when it starts executing is known as a permission set and is determined by evidence provided by the application. For [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] applications, the evidence that is provided is the location, or zone, from which the applications are launched. CAS identifies the following zones:  
   
 - **My Computer**. Applications launched from the client machine (Fully Trusted).  
   
@@ -120,7 +120,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 - **Untrusted Sites**. Applications identified by a user as being untrusted. (Untrusted).  
   
- For each of these zones, [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] provides a predefined permission set that includes the permissions which matches the level of trust associated with each. These include:  
+ For each of these zones, CAS provides a predefined permission set that includes the permissions which matches the level of trust associated with each. These include:  
   
 - **FullTrust**. For applications launched from the **My Computer** zone. All possible permissions are granted.  
   
@@ -128,7 +128,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 - **Internet**. For applications launched from the **Internet** or **Trusted Sites** zone. A subset of permissions are granted to provided limited access to a client machine’s resources, including isolated storage, file open only, and limited UI. Essentially, this permission set isolates applications from the client machine.  
   
- Applications identified as being from the **Untrusted Sites** zone are granted no permissions by [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)] at all. Consequently, a predefined permission set does not exist for them.  
+ Applications identified as being from the **Untrusted Sites** zone are granted no permissions by CAS at all. Consequently, a predefined permission set does not exist for them.  
   
  The following figure illustrates the relationship between zones, permission sets, permissions, and resources:  
   

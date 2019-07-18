@@ -3,6 +3,9 @@
   "issue": {
     "action": {
       "opened": {
+        "default": {
+          "labels-add": [ ":watch: Not Triaged" ]
+        },
         "processor-custom-meta": {
           "labels-add": {
             "issuetype": {
@@ -12,7 +15,6 @@
         },
         "processor-docs": {
           "labels-add": {
-            "defaults": [ ":watch: Not Triaged" ],
             "product": {
               "(?i).*": "Source - Docs.ms",
               "(?i)dotnet-csharp$": ":books: Area - C# Guide",

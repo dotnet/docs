@@ -29,6 +29,11 @@
               "(?i)dotnet-roslyn-api$": ":books: Area - Roslyn API Reference,:file_folder: Repo - roslyn-api-docs"
             },
             "contentsource": {
+              "(?i).*master\/docs\/architecture\/containerized-lifecycle.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Docker lifecycle",
+              "(?i).*master\/docs\/architecture\/microservices.*": ":card_file_box: Technology - .NET Architecture,:book: guide - .NET Microservices",
+              "(?i).*master\/docs\/architecture\/modern-web-apps-azure.*": ":card_file_box: Technology - .NET Architecture,:book: guide - ASP.NET Core web apps",
+              "(?i).*master\/docs\/architecture\/modernize-with-azure-containers.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Modernizing w/ Windows containers",
+              "(?i).*master\/docs\/architecture\/serverless.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Serverless apps",
               "(?i).*master\/docs\/core\/tools.*": ":card_file_box: Technology - CLI",
               "(?i).*master\/docs\/core\/docker.*": ":card_file_box: Technology - Docker",
               "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/network.*": ":card_file_box: Technology - NCL",
@@ -43,12 +48,7 @@
               "(?i).*master\/docs\/framework\/wpf.*": ":card_file_box: Technology - WPF",
               "(?i).*master\/docs\/framework\/wcf.*": ":card_file_box: Technology - WCF",
               "(?i).*master\/docs\/framework\/winforms.*": ":card_file_box: Technology - WinForms",
-              "(?i).*master\/docs\/standard\/containerized-lifecycle-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Docker lifecycle",
-              "(?i).*master\/docs\/standard\/microservices-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - .NET Microservices",
-              "(?i).*master\/docs\/standard\/modern-web-apps-azure-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - ASP.NET Core web apps",
-              "(?i).*master\/docs\/standard\/modernize-with-azure-and-containers.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Modernizing w/ Windows containers",
               "(?i).*master\/docs\/standard\/security.*": ":card_file_box: Technology - Security",
-              "(?i).*master\/docs\/standard\/serverless-architecture.*": ":card_file_box: Technology - .NET Architecture,:book: guide - Serverless apps",
               "(?i).*master\/docs\/standard\/standard\/design-guidelines\/.*": ":book: guide - Framework Design Guidelines"
             }
           }

@@ -14,7 +14,7 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
   
 - [Qualifying .NET types for interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md).  
   
-     All managed types, methods, properties, fields, and events that you want to expose to COM must be public. Types must have a public default constructor, which is the only constructor that can be invoked through COM.  
+     All managed types, methods, properties, fields, and events that you want to expose to COM must be public. Types must have a public parameterless constructor, which is the only constructor that can be invoked through COM.  
   
 - [Applying interop attributes](../../../docs/framework/interop/applying-interop-attributes.md).  
   

@@ -36,7 +36,7 @@ This sample creates a .NET core console application that detects objects within 
 
 ## What is object detection?
 
-Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. When an image is processed, there is first a check on whether there is an object present or not. If so, the detected object is classified and using object localization, the location of that object is returned along with the class. Typically, you want to use this approach on images where there are multiple objects of different types so that each is individually recognized. 
+Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. When an image is processed, there's first a check on whether there's an object present or not. If so, the detected object is classified and using object localization, the location of that object is returned along with the class. Typically, you want to use this approach on images where there are multiple objects of different types so that each is individually recognized. 
 
 ![](./media/object-detection-onnx/img-classification-obj-detection.PNG)
 
@@ -51,9 +51,9 @@ Some use cases for object detection include:
 
 ## Select the appropriate machine learning task 
 
-Deep learning is a subset of machine learning. To train deep learning models, large quantities of data are required. Patterns in the data are represented by a series of layers. The relationships in the data are encoded as connections between the layers contanining weights. The higher the weight, the stronger the relationship. Collectively, this series of layers and connections are known as artificial neural networks. The more layers in a network, the "deeper" it is, making it a deep neural network. 
+Deep learning is a subset of machine learning. To train deep learning models, large quantities of data are required. Patterns in the data are represented by a series of layers. The relationships in the data are encoded as connections between the layers containing weights. The higher the weight, the stronger the relationship. Collectively, this series of layers and connections are known as artificial neural networks. The more layers in a network, the "deeper" it is, making it a deep neural network. 
 
-There are different types of neural networks, each more suitable than the other for certain tasks. The most common types of neural networks are Multi-Layered Perceptron (MLP), Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN). The most basic is the MLP which maps a set of inputs to a set of outputs. This neural network is good when the data does not have a spatial or time component. The CNN as implied by the name makes use of convolutional layers which take into account spatial information contained in the data. A good use case for CNNs is image processing when trying to detect the presence of a particular feature in a region of an image (i.e. is there a nose in the center of an image?). Finally, RNNs allow for the persistence of state or memory to be used as input therefore making it a good candidates for time-series analysis where the sequential ordering and context of events is important. 
+There are different types of neural networks, each more suitable than the other for certain tasks. The most common types of neural networks are Multi-Layered Perceptron (MLP), Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN). The most basic is the MLP, which maps a set of inputs to a set of outputs. This neural network is good when the data does not have a spatial or time component. The CNN as implied by the name makes use of convolutional layers that take into account spatial information contained in the data. A good use case for CNNs is image processing when trying to detect the presence of a particular feature in a region of an image (i.e. is there a nose in the center of an image?). Finally, RNNs allow for the persistence of state or memory to be used as input therefore making it a good candidate for time-series analysis where the sequential ordering and context of events is important. 
 
 Object detection is an image processing task. Therefore, most deep learning models trained to solve this problem are CNNs. The model used in this tutorial is the Tiny YOLOv2 model, a more compact version of the YOLOv2 model described in the paper: ["YOLO9000: Better, Faster, Stronger" by Redmon and Fadhari](https://arxiv.org/pdf/1612.08242.pdf). Tiny YOLOv2 is trained on the Pascal VOC dataset and is made up of 15 layers that can predict 20 different classes of objects. Because Tiny YOLOv2 is a condensed version of the original YOLOv2 model, a tradeoff is made between speed and accuracy. 
 
@@ -160,11 +160,12 @@ Initialize the `mlContext` variable with a new instance of `MLContext` by adding
 
 ### Add Helper Methods
 
-After the model has scored an image and the outputs have been processed, the bounding boxes have to be drawn on the image. To do so, add a method called `DrawBoundingBox` below the `GetAbsolutePath` method insode of *Program.cs*.
+After the model has made a prediction, commonly referred to as scoring, and the outputs have been processed, the bounding boxes have to be drawn on the image. To do so, add a method called `DrawBoundingBox` below the `GetAbsolutePath` method insode of *Program.cs*.
 
 ```csharp
 private static void DrawBoundingBox(string inputImageLocation, string outputImageLocation, string imageName, IList<YoloBoundingBox> filteredBoundingBoxes)
 {
+
 }
 ```
 
@@ -177,6 +178,7 @@ Then, create a for-each loop to iterate over each of the bounding boxes detected
 ```csharp
 foreach (var box in filteredBoundingBoxes)
 {
+
 }
 ```
 
@@ -197,6 +199,7 @@ In order to draw on the image, convert it to a [`Graphics`](xref:System.Drawing.
 ```csharp
 using (Graphics thumbnailGraphic = Graphics.FromImage(image))
 {
+    
 }
 ```
 
@@ -424,6 +427,7 @@ Now that all of the highly confident bounding boxes have been extracted from the
 ```csharp
 public IList<YoloBoundingBox> FilterBoundingBoxes(IList<YoloBoundingBox> boxes, int limit, float threshold)
 {
+
 }
 ```
 
@@ -474,7 +478,7 @@ Like the first box, if the adjacent box is active or ready to be processed, use 
 
 [!code-csharp [IOUBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L227-L239)]
 
-Outside of the inner-most for-loop that checks adjacent bounding boxes, check whether there are any remaining bounding boxes to be processed. If not, break out of the outer for-loop.
+Outside of the inner-most for-loop that checks adjacent bounding boxes, see whether there are any remaining bounding boxes to be processed. If not, break out of the outer for-loop.
 
 [!code-csharp [CheckActiveSlots](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L242-L243)]
 
@@ -482,7 +486,7 @@ Finally, outside of the initial for-loop of the `FilterBoundingBoxes` method, re
 
 [!code-csharp [ReturnFilteredBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L246)]
 
-Great! Now it's time to leverage this code along with the model for scoring.
+Great! Now it's time to use this code along with the model for scoring.
 
 ## Use the model for scoring
 
@@ -495,7 +499,7 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     [!code-csharp [ScorerUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L1-L7)]
 
-    Inside the `OnnxModelScorer` class definition add the following variables.
+    Inside the `OnnxModelScorer` class definition, add the following variables.
 
     [!code-csharp [InitScorerVars](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L13-L17)]
 
@@ -507,7 +511,7 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
 
     [!code-csharp [ImageNetSettingStruct](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L26-L30)]
 
-    After that, create another struct called `TinyYoloModelSettings` which contains the names of the input and output layers of the model. To visualize the name of the input and output layers of the model you can use a tool like [Netron](https://github.com/lutzroeder/netron).
+    After that, create another struct called `TinyYoloModelSettings` which contains the names of the input and output layers of the model. To visualize the name of the input and output layers of the model, you can use a tool like [Netron](https://github.com/lutzroeder/netron).
 
     [!code-csharp [YoloSettingsStruct](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L32-L43)]
 
@@ -516,6 +520,7 @@ Just like with post-processing, there are a few steps in the scoring steps. To h
     ```csharp
     private ITransformer LoadModel(string modelLocation)
     {
+
     }
     ```
 
@@ -547,10 +552,11 @@ Once the model is loaded, it can then be used to make predictions. To facilitate
 ```csharp
 private IEnumerable<float[]> PredictDataUsingModel(IDataView testData, ITransformer model)
 {
+
 }
 ```
 
-Inside the `PredictDataUsingModel` add the following code for logging.
+Inside the `PredictDataUsingModel`, add the following code for logging.
 
 [!code-csharp [PredictDataLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L68-L71)]
 
@@ -600,6 +606,7 @@ Once the model output has been processed, it's time to draw the bounding boxes o
 ```csharp
 for (var i = 0; i < images.Count(); i++)
 {
+
 }
 ```
 

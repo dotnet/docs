@@ -170,7 +170,7 @@ myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a plaintext file named *Dockerfile* that does not have an extension.
 
-In your terminal, navigate to up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Add the following command as the first line of the file:
+In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Add the following command as the first line of the file:
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/runtime:2.2

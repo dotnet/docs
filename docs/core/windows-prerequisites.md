@@ -15,18 +15,6 @@ This article shows the supported OS versions in order to run .NET Core applicati
 
 Also, if you're developing on Windows using Visual Studio 2017, the [Prerequisites with Visual Studio 2017](#prerequisites-with-visual-studio-2017) section goes in more detail about minimum versions supported for .NET Core development.
 
-## .NET Core supported Windows versions
-
-.NET Core is supported on the following versions of:
-
-* Windows 7 SP1
-* Windows 8.1
-* Windows 10 Anniversary Update (version 1607) or later versions
-* Windows Server 2008 R2 SP1 (Full Server or Server Core)
-* Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 (Full Server or Server Core)
-* Windows Server 2016 or later versions (Full Server, Server Core, or Nano Server)
-
 ## .NET Core supported operating systems
 
 The following articles have a complete list of .NET Core supported operating systems per version:

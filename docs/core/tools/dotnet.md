@@ -48,7 +48,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--additional-deps <PATH>`
 
-Path to additional *deps.json* file.
+Path to additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
@@ -99,7 +99,7 @@ Prints out the version of the .NET Core SDK in use.
 
 `--additional-deps <PATH>`
 
-Path to additional *deps.json* file.
+Path to additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 

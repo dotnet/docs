@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: bc4a3d8e-76e2-423e-a5d1-159a023e82ec
 ---
 # x:Class Directive
-Configures XAML markup compilation to join partial classes between markup and code-behind. The code partial class is defined in a separate code file in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)] language, whereas the markup partial class is typically created by code generation during XAML compilation.  
+Configures XAML markup compilation to join partial classes between markup and code-behind. The code partial class is defined in a separate code file in a Common Language Specification (CLS) language, whereas the markup partial class is typically created by code generation during XAML compilation.  
   
 ## XAML Attribute Usage  
   

@@ -124,7 +124,6 @@ Beyond cloud compute infrastructure, cloud native systems depend upon many diffe
 
 A backing service is any external resource on which an application relies for functionality. Figure 1-7 shows many common backing services consumed by cloud native systems.
 
-
 ![Cloud native backing services](media/cloud-native-backing-services.png)
 **Figure 1-7**. Cloud native backing services
 

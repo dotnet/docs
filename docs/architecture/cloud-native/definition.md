@@ -127,7 +127,7 @@ A backing service is any external resource on which an application relies for fu
 ![Cloud native backing services](media/cloud-native-backing-services.png)
 **Figure 1-7**. Cloud native backing services
 
-Your operations team could accept the responsibility for owning these ancillary services. It wouldn’t be hard to provision a VM and install an instance of the open source RabbitMQ message broker. While feasible, does that make sense - from a business perspective?
+Your operations team could accept the responsibility for owning these ancillary services. It wouldn’t be hard to provision a VM and install an instance of the open-source RabbitMQ message broker. While feasible, does that make sense - from a business perspective?
 
 Chances are you’re not in the message broker, database or identity server business. So, then, why incur the cost and complexity of owning these items when someone else can do it better and for less? No matter how skilled you may be, it is unlikely that you will be able to match the reliability and performance, say, of the fully-managed [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) service in Azure. That Microsoft team that owns it lives and breathes databases - that’s their business. While you, on the other hand, sell consumer items, provide medical services, or deliver packages. Do what you're good at and let others help you with the rest. Focus your effort on building outstanding customer functionality, not becoming experts in open-source backing services.
 

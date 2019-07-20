@@ -167,7 +167,7 @@ Add-ins often provide multiple user interfaces for host applications to display.
 
 In the examples so far, the host application has been an installed standalone application. But [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] can also host add-ins, albeit with the following additional build and implementation requirements:
 
-- The [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application manifest must be configured specially to download the pipeline (folders and assemblies) and add-in assembly to the [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] application cache on the client machine, in the same folder as the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)].
+- The [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application manifest must be configured specially to download the pipeline (folders and assemblies) and add-in assembly to the ClickOnce application cache on the client machine, in the same folder as the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)].
 
 - The [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] code to discover and load add-ins must use the ClickOnce application cache for the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] as the pipeline and add-in location.
 

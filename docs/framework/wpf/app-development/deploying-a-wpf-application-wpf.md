@@ -17,7 +17,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 - [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] deployment.  
   
-- [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] deployment.  
+- ClickOnce deployment.  
   
 <a name="XCopy_Deployment"></a>   
 ### XCopy Deployment  
@@ -67,7 +67,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Deploying_Standalone_Applications"></a>   
 ### Deploying Standalone Applications  
- Standalone applications are deployed using either [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] or [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. Either way, standalone applications require full trust to run. Full trust is automatically granted to standalone applications that are deployed using [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. Standalone applications that are deployed using ClickOnce are not automatically granted full trust. Instead, ClickOnce displays a security warning dialog that users must accept before a standalone application is installed. If accepted, the standalone application is installed and granted full trust. If not, the standalone application is not installed.  
+ Standalone applications are deployed using either ClickOnce or [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. Either way, standalone applications require full trust to run. Full trust is automatically granted to standalone applications that are deployed using [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. Standalone applications that are deployed using ClickOnce are not automatically granted full trust. Instead, ClickOnce displays a security warning dialog that users must accept before a standalone application is installed. If accepted, the standalone application is installed and granted full trust. If not, the standalone application is not installed.  
   
 <a name="Deploying_Markup_Only_XAML_Applications"></a>   
 ### Deploying Markup-Only XAML Applications  
@@ -94,7 +94,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  These files are produced when an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is built. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are typically published to a Web server and viewed using [!INCLUDE[TLA2#tla_iegeneric](../../../../includes/tla2sharptla-iegeneric-md.md)].  
   
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be deployed to clients using any of the deployment techniques. However, [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] is recommended since it provides the following capabilities:  
+ [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be deployed to clients using any of the deployment techniques. However, ClickOnce is recommended since it provides the following capabilities:  
   
 1. Automatic updates when a new version is published.  
   

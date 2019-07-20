@@ -1,7 +1,7 @@
 ---
 title: The Azure Cloud Native Development Stack
 description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud Native Development Stack
-author: vettor
+author: robvet
 ms.date: 07/11/2019
 ---
 

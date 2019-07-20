@@ -27,7 +27,7 @@ This topic describes read-only dependency properties, including existing read-on
   
 - When registering your property, call the <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A> method instead of the normal <xref:System.Windows.DependencyProperty.Register%2A> method for property registration.  
   
-- When implementing the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" property, make sure that the wrapper too doesn't have a set implementation, so that there is no inconsistency in read-only state for the public wrapper you expose.  
+- When implementing the CLR "wrapper" property, make sure that the wrapper too doesn't have a set implementation, so that there is no inconsistency in read-only state for the public wrapper you expose.  
   
 - The object returned by the read-only registration is <xref:System.Windows.DependencyPropertyKey> rather than <xref:System.Windows.DependencyProperty>. You should still store this field as a member but typically you would not make it a public member of the type.  
   

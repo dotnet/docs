@@ -19,7 +19,7 @@ helpviewer_keywords:
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
 ---
 # WPF Security Strategy - Platform Security
-While Windows Presentation Foundation (WPF) provides a variety of security services, it also leverages the security features of the underlying platform, which includes the operating system, the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], and [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]. These layers combine to provide [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] a strong, defense-in-depth security model that attempts to avoid any single point of failure, as shown in the following figure:  
+While Windows Presentation Foundation (WPF) provides a variety of security services, it also leverages the security features of the underlying platform, which includes the operating system, the CLR, and [!INCLUDE[TLA2#tla_ie](../../../includes/tla2sharptla-ie-md.md)]. These layers combine to provide [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] a strong, defense-in-depth security model that attempts to avoid any single point of failure, as shown in the following figure:  
   
  ![Diagram that shows the WPF security model.](./media/wpf-security-strategy-platform-security/windows-presentation-foundation-security.png)  
   
@@ -38,7 +38,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
 - [!INCLUDE[TLA#tla_win_update](../../../includes/tlasharptla-win-update-md.md)].  
   
 #### /GS Compilation  
- [!INCLUDE[TLA2#tla_winxpsp2](../../../includes/tla2sharptla-winxpsp2-md.md)] provides protection by recompiling many core system libraries, including all of the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] dependencies such as the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)], to help mitigate buffer overruns. This is achieved by using the /GS parameter with the C/C++ command-line compiler. Although buffer overruns should be explicitly avoided, /GS compilation provides an example of a defense-in-depth against potential vulnerabilities that are inadvertently or maliciously created by them.  
+ [!INCLUDE[TLA2#tla_winxpsp2](../../../includes/tla2sharptla-winxpsp2-md.md)] provides protection by recompiling many core system libraries, including all of the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] dependencies such as the CLR, to help mitigate buffer overruns. This is achieved by using the /GS parameter with the C/C++ command-line compiler. Although buffer overruns should be explicitly avoided, /GS compilation provides an example of a defense-in-depth against potential vulnerabilities that are inadvertently or maliciously created by them.  
   
  Historically, buffer overruns have been the cause of many high-impact security exploits. A buffer overrun occurs when an attacker takes advantage of a code vulnerability that allows the injection of malicious code that writes past the boundaries of a buffer. This then allows an attacker to hijack the process in which the code is executing by overwriting the return address of a function to cause the execution of the attacker's code. The result is malicious code that executes arbitrary code with the same privileges as the hijacked process.  
   
@@ -88,9 +88,9 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Validation_and_Verification"></a>   
 ### Validation and Verification  
- To provide assembly isolation and integrity, the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] uses a process of validation. [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] validation ensures that assemblies are isolated by validating their Portable Executable (PE) file format for addresses that point outside the assembly. [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] validation also validates the integrity of the metadata that is embedded within an assembly.  
+ To provide assembly isolation and integrity, the CLR uses a process of validation. CLR validation ensures that assemblies are isolated by validating their Portable Executable (PE) file format for addresses that point outside the assembly. CLR validation also validates the integrity of the metadata that is embedded within an assembly.  
   
- To ensure type safety, help prevent common security issues (e.g. buffer overruns), and enable sandboxing through sub-process isolation, [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] security uses the concept of verification.  
+ To ensure type safety, help prevent common security issues (e.g. buffer overruns), and enable sandboxing through sub-process isolation, CLR security uses the concept of verification.  
   
  Managed applications are compiled into Microsoft Intermediate Language (MSIL). When methods in a managed application are executed, its MSIL is compiled into native code through Just-In-Time (JIT) compilation. JIT compilation includes a verification process that applies many safety and robustness rules that ensure code does not:  
   
@@ -172,7 +172,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Security_Critical_Methodology"></a>   
 ### Security-Critical Methodology  
- The [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] code that uses permissions to enable the Internet zone sandbox for XBAP applications must be held to highest possible degree of security audit and control. To facilitate this requirement, .NET Framework provides new support for managing code that elevates privilege. Specifically, the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] enables you to identify code that elevates privilege and mark it with the <xref:System.Security.SecurityCriticalAttribute>; any code not marked with <xref:System.Security.SecurityCriticalAttribute> becomes *transparent* using this methodology. Conversely, managed code that is not marked with <xref:System.Security.SecurityCriticalAttribute> is prevented from elevating privilege.  
+ The [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] code that uses permissions to enable the Internet zone sandbox for XBAP applications must be held to highest possible degree of security audit and control. To facilitate this requirement, .NET Framework provides new support for managing code that elevates privilege. Specifically, the CLR enables you to identify code that elevates privilege and mark it with the <xref:System.Security.SecurityCriticalAttribute>; any code not marked with <xref:System.Security.SecurityCriticalAttribute> becomes *transparent* using this methodology. Conversely, managed code that is not marked with <xref:System.Security.SecurityCriticalAttribute> is prevented from elevating privilege.  
   
  The Security-Critical Methodology allows the organization of [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] code that elevates privilege into *security-critical kernel*, with the remainder being transparent. Isolating the security-critical code enables the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] engineering team focus an additional security analysis and source control on the security-critical kernel above and beyond standard security practices (see [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)).  
   

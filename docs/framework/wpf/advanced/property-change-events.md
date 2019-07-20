@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
 ---
 # Property Change Events
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] defines several events that are raised in response to a change in the value of a property. Often the property is a dependency property. The event itself is sometimes a routed event and is sometimes a standard [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event. The definition of the event varies depending on the scenario, because some property changes are more appropriately routed through an element tree, whereas other property changes are generally only of concern to the object where the property changed.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] defines several events that are raised in response to a change in the value of a property. Often the property is a dependency property. The event itself is sometimes a routed event and is sometimes a standard common language runtime (CLR) event. The definition of the event varies depending on the scenario, because some property changes are more appropriately routed through an element tree, whereas other property changes are generally only of concern to the object where the property changed.  
   
 ## Identifying a Property Change Event  
  Not all events that report a property change are explicitly identified as a property changed event, either by virtue of a signature pattern or a naming pattern. Generally, the description of the event in the [!INCLUDE[TLA#tla_sdk](../../../../includes/tlasharptla-sdk-md.md)] documentation indicates whether the event is directly tied to a property value change and provides cross-references between the property and event.  

@@ -40,7 +40,7 @@ Defines and references keys for resources that are loaded from external assembli
   
 |||  
 |-|-|  
-|`targetTypeName`|The name of the public [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] type that is defined in the resource assembly.|  
+|`targetTypeName`|The name of the public common language runtime (CLR) type that is defined in the resource assembly.|  
 |`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](../../xaml-services/x-key-directive.md) of the resource.|  
   
 ## Remarks  

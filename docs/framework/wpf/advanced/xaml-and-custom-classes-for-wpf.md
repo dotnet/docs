@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
 ---
 # XAML and Custom Classes for WPF
-XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] frameworks supports the ability to define a custom class or structure in any [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] language, and then access that class using XAML markup. You can use a mixture of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
+XAML as implemented in common language runtime (CLR) frameworks supports the ability to define a custom class or structure in any common language runtime (CLR) language, and then access that class using XAML markup. You can use a mixture of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
 
 <a name="Custom_Classes_in_Applications_vs__in_Assemblies"></a>   
 ## Custom Classes in Applications or Assemblies  

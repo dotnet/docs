@@ -84,7 +84,7 @@ While Windows Presentation Foundation (WPF) provides a variety of security servi
   
 <a name="Common_Language_Runtime_Security"></a>   
 ## Common Language Runtime Security  
- The [!INCLUDE[TLA#tla_clr](../../../includes/tlasharptla-clr-md.md)] offers a number of key security benefits that include validation and verification, Code Access Security (CAS), and the Security Critical Methodology.  
+ The common language runtime (CLR) offers a number of key security benefits that include validation and verification, Code Access Security (CAS), and the Security Critical Methodology.  
   
 <a name="Validation_and_Verification"></a>   
 ### Validation and Verification  

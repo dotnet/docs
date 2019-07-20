@@ -94,7 +94,7 @@ As you'll see, the type that is identified with the declaration of a <xref:Syste
 
 To call a page, the calling page must instantiate the called page and navigate to it using the <xref:System.Windows.Navigation.NavigationService.Navigate%2A> method. This allows the calling page to pass initial data to the called page, such as default values for the data being gathered by the called page.
 
-The following code shows the called page with a non-default constructor to accept parameters from the calling page.
+The following code shows the called page with a non-parameterless constructor to accept parameters from the calling page.
 
 [!code-csharp[StructuredNavigationSample#AcceptsInitialDataCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/StructuredNavigationSample/CSharp/CalledPageFunction.xaml.cs#acceptsinitialdatacodebehind1)]
 [!code-vb[StructuredNavigationSample#AcceptsInitialDataCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StructuredNavigationSample/VisualBasic/CalledPageFunction.xaml.vb#acceptsinitialdatacodebehind1)]
@@ -119,7 +119,7 @@ You are not required to pass parameters to the called page. Instead, you could d
 
 - From the calling page:
 
-  1. Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.
+  1. Instantiate the called <xref:System.Windows.Navigation.PageFunction%601> using the parameterless constructor.
 
   2. Store the parameters in <xref:System.Windows.Application.Properties%2A>.
 
@@ -129,7 +129,7 @@ You are not required to pass parameters to the called page. Instead, you could d
 
   - Retrieve and use the parameters stored in <xref:System.Windows.Application.Properties%2A>.
 
-But, as you'll see shortly, you'll still need use code to instantiate and navigate to the called page to collect the data returned by the called page. For this reason, the <xref:System.Windows.Navigation.PageFunction%601> needs to be kept alive; otherwise, the next time you navigate to the <xref:System.Windows.Navigation.PageFunction%601>, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] instantiates the <xref:System.Windows.Navigation.PageFunction%601> using the default constructor.
+But, as you'll see shortly, you'll still need use code to instantiate and navigate to the called page to collect the data returned by the called page. For this reason, the <xref:System.Windows.Navigation.PageFunction%601> needs to be kept alive; otherwise, the next time you navigate to the <xref:System.Windows.Navigation.PageFunction%601>, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] instantiates the <xref:System.Windows.Navigation.PageFunction%601> using the parameterless constructor.
 
 Before the called page can return, however, it needs to return data that can be retrieved by the calling page.
 

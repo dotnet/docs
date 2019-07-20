@@ -31,9 +31,9 @@ If you intend to expose types in an assembly to COM applications, consider the r
   
      Members of public types must also be public if they are to be visible to COM. You can restrict the visibility of an assembly, a public type, or public members of a public type by applying the <xref:System.Runtime.InteropServices.ComVisibleAttribute>. By default, all public types and members are visible.  
   
-- Types must have a public default constructor to be activated from COM.  
+- Types must have a public parameterless constructor to be activated from COM.  
   
-     Managed, public types are visible to COM. However, without a public default constructor (a constructor with no arguments), COM clients cannot create the type. COM clients can still use the type if it is activated by some other means.  
+     Managed, public types are visible to COM. However, without a public parameterless constructor (a constructor with no arguments), COM clients cannot create the type. COM clients can still use the type if it is activated by some other means.  
   
 - Types cannot be abstract.  
   

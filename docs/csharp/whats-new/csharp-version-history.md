@@ -51,7 +51,7 @@ Now things start to get interesting. Let's take a look at some major features of
 
 - [Generics](../programming-guide/generics/index.md)
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
-- [Anonymous methods](../programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [Anonymous methods](../language-reference/operators/delegate-operator.md)
 - [Nullable types](../programming-guide/nullable-types/index.md)
 - [Iterators](../programming-guide/concepts/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)

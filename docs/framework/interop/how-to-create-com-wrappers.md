@@ -47,7 +47,7 @@ You can now write code to access the COM object. You can begin by declaring the 
   
 ### To create a COM callable wrapper using Visual Studio  
   
-1. Create a Class Library project for the managed class that you want to run in native code. The class must have a default constructor.  
+1. Create a Class Library project for the managed class that you want to run in native code. The class must have a parameterless constructor.  
   
      Verify that you have a complete four-part version number for your assembly in the AssemblyInfo file. This number is required for maintaining versioning in the Windows registry. For more information about version numbers, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md).  
   

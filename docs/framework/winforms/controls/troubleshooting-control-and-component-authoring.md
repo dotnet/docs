@@ -93,7 +93,7 @@ This topic lists the following common problems that arise when developing compon
  This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md).  
   
 ## Design-Time Error: "Failed to Create Component 'Component Name'"  
- Your component or control must provide a default constructor with no parameters. When the design environment creates an instance of your component or control, it does not attempt to provide any parameters to constructor overloads that take parameters.  
+ Your component or control must provide a parameterless constructor with no parameters. When the design environment creates an instance of your component or control, it does not attempt to provide any parameters to constructor overloads that take parameters.  
   
 ## STAThreadAttribute  
  The <xref:System.STAThreadAttribute> informs the common language runtime (CLR) that Windows Forms uses the single-threaded apartment model. You may notice unintended behavior if you do not apply this attribute to your Windows Forms application's `Main` method. For example, background images may not appear for controls like <xref:System.Windows.Forms.ListView>. Some controls may also require this attribute for correct AutoComplete and drag-and-drop behavior.  

@@ -115,7 +115,7 @@ The following sections list unsupported scenarios and APIs for general developme
 
 - Value types larger than one megabyte aren't supported.
 
-- Value types can't have a default constructor in .NET Native. (C# and Visual Basic prohibit default constructors on value types. However, these can be created in IL.)
+- Value types can't have a parameterless constructor in .NET Native. (C# and Visual Basic prohibit parameterless constructors on value types. However, these can be created in IL.)
 
 **Arrays**
 

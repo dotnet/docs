@@ -1,13 +1,13 @@
 ---
-title: The Azure Cloud Native Development Stack
-description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud Native Development Stack
-author: vettor
-ms.date: 07/11/2019
+title: The Azure Cloud-Native Development Stack
+description: Architecting Cloud Native .NET Apps for Azure | The Azure Cloud-Native Development Stack
+author: robvet
+ms.date: 07/20/2019
 ---
 
 # The Azure Cloud-Native Development Stack
 
-Microsoft offers organizations seeking to build cloud native systems a compelling value proposition: A tightly integrated, but open, end-to-end stack for constructing and managing cloud native workloads.
+Microsoft offers organizations seeking to build cloud-native systems a compelling value proposition: A tightly integrated, but open, end-to-end stack for constructing and managing cloud-native workloads.
 
 Moreover, Microsoft is [making tremendous investments in open source](https://www.zdnet.com/article/why-microsoft-is-turning-into-an-open-source-company/) and cross-platform development tools to reach a wider range of developers - these tools are easy to acquire and free in many cases. It behooves IT leaders to think differently about Microsoft development tools and investments in the Azure cloud as both provide comprehensive support for Linux and open-source initiatives.
 
@@ -25,7 +25,7 @@ Why is that?
 
 To start, most modern development platforms natively support cross-platform portability. Developers write an application in a preferred language, deploy it to the operating system of choice, and the platform runtime engine automatically handles the environment-specific dependencies. Later, that same application package can be redeployed to a different operating system and ran just the same with the appropriate runtime engine and configuration changes.
 
-Even further clouding operating system concerns is the explosive growth of containers. Containers allow applications to run independently of the operating system. "If you take a look at the way that containers have evolved, it's basically an evolution of the OS model we've had to this point," says Microsoft Azure CTO [Mark Russinovich](https://www.google.com/search?q=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&rlz=1C1GCEU_enFR819US820&oq=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&aqs=chrome..69i57.915j0j9&sourceid=chrome&ie=UTF-8). The operating system still exists, but its role has become further abstracted. Instead, the container orchestrator, which will we cover in detail later in the book, has become the *de-facto operating system* of choice. Developers and cloud administrators are less concerned about the operating system on which the container runs provided that the services exposed by container are reliable and can be quickly deployed.
+Even further clouding operating system concerns is the explosive growth of containers. Containers allow applications to run independently of the operating system. "If you take a look at the way that containers have evolved, it's basically an evolution of the OS model we've had to this point," says Microsoft Azure CTO [Mark Russinovich](https://www.google.com/search?q=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&rlz=1C1GCEU_enFR819US820&oq=If+you+take+a+look+at+the+way+that+containers+have+evolved%2C+it%E2%80%99s+basically+an+evolution+of+the+OS+model+we%E2%80%99ve+had+to+this+point&aqs=chrome..69i57.915j0j9&sourceid=chrome&ie=UTF-8). The operating system still exists, but its role has become further abstracted. Instead, the container orchestrator, which will we cover in detail later in the book, has become the *de-facto operating system* of choice. Developers and cloud administrators are less concerned about the operating system on which the container runs if the services exposed by container are reliable and can be quickly deployed.
 
 ### Azure, LCOW and Windows Server 2019 Platform
 
@@ -33,23 +33,23 @@ Finally, cloud providers like Microsoft openly embrace both Windows and Linux wo
 
 Even [Windows Server 2019](https://cloudblogs.microsoft.com/windowsserver/2018/03/20/introducing-windows-server-2019-now-available-in-preview/) itself features a subsystem for Linux that enables Windows and Linux environments to run simultaneously. Another new Windows feature, [Linux Containers on Windows](https://blogs.msdn.microsoft.com/premier_developer/2018/04/20/running-docker-windows-and-linux-containers-simultaneously/) ([LCOW](https://blogs.msdn.microsoft.com/premier_developer/2018/04/20/running-docker-windows-and-linux-containers-simultaneously/)) makes it possible to run Linux *and* Windows containers simultaneously - all from a single Docker engine. LCOW not only simplifies day-to-day management, but also consolidates infrastructure costs as there is no longer the need for dedicated hosts for each operating system.
 
-As cloud native architecture and container orchestrators evolve, expect to see less and less importance placed on the choice of the operating system.
+As cloud-native architecture and container orchestrators evolve, expect to see less and less importance placed on the choice of the operating system.
 
 ## .NET Core Platform
 
 The Microsoft's .NET development platform originated in 2002 and is among the most loved technologies, according to a [Stack Overflow survey](http://dontcodetired.com/blog/post/Stack-Overflow-Developer-Survey-2018-Overview-for-NET-Developers).
 
-Fast-forward to 2019 and the [Microsoft .NET Core platform](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet), a modernized rewrite of .NET. A free, open source and cross-platform development stack for building applications. It is a feature-rich platform that can be used to build services, devices and IoT applications, among others. It is maintained by Microsoft and the .NET community on GitHub. Cross-platform, applications built with .NET Core can run on Windows, macOS, and most flavors of Linux.
+Fast-forward to 2019 and the [Microsoft .NET Core platform](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet), a modernized rewrite of .NET. A free, open source and cross-platform development stack for building applications. It is a feature-rich platform that can be used to build services, devices and IoT applications, among others. It's maintained by Microsoft and the .NET community on GitHub. Cross-platform applications built with .NET Core can run on Windows, macOS, and most flavors of Linux.
 
 .NET Core supports multiple programming languages, editors, and libraries. It fully supports the C# programming language, which is a widely used and mature language that is frequently updated and continually modernized.
 
 .NET core is highly performant and has scored very well in comparison to Node.js and other completing platforms see the [TechEmpower](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) benchmark.
 
-.NET Core plays especially well with microservice-based applications, including built-in features, open-source initiatives that directly support microservice development and direct support for Docker containers. All that said, the .NET Core stack with C\# is an excellent choice for building cloud native applications in the Azure cloud.
+.NET Core plays especially well with microservice-based applications, including built-in features, open-source initiatives that directly support microservice development and direct support for Docker containers. All that said, the .NET Core stack with C\# is an excellent choice for building cloud-native applications in the Azure cloud.
 
 ## Tooling: IDE vs. Editor
 
-When building cloud native applications with the .NET Core platform, you have several development tools from which to choose.
+When building cloud-native applications with the .NET Core platform, you have several development tools from which to choose.
 
 ### Visual Studio
 
@@ -67,11 +67,11 @@ It supports macOS, Linux, and Windows, featuring support for a variety of progra
 
 One of the key attractions of Visual Studio Code is the rich, fast-growing ecosystem of pluggable extensions. Easily installable from the [Extension Marketplace](https://marketplace.visualstudio.com/), these plug-ins let you customize your editing experience and add programming languages, debuggers, and tools to support a wide variety of development workflows.
 
-Both Visual Studio and Visual Studio Code have tight integration with the Azure platform including productivity tooling and libraries that make it easy to discover and interact with cloud services that power your cloud native applications.
+Both Visual Studio and Visual Studio Code have tight integration with the Azure platform including productivity tooling and libraries that make it easy to discover and interact with cloud services that power your cloud-native applications.
 
 ### Other Open Source Editors
 
-Developers can use other open-source development tools to build .NET Core cloud native applications. Figure 1-12 presents many of them.
+Developers can use other open-source development tools to build .NET Core cloud-native applications. Figure 1-12 presents many of them.
 
 ![Cross-platform editors for .NET Core](media/cross-platform-editors-for-dotnet-core.png)
 **Figure 1-12**. Cross-platform editors for .NET Core
@@ -131,9 +131,9 @@ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD
 
 ## Summary
 
-In this chapter, we flew over cloud native computing, providing a definition along with the key characteristics of a cloud native application. We looked at what types of applications that might justify this investment and effort. Lastly, we looked cloud native development stack available in the Azure Cloud <https://deloitte.wsj.com/cio/2018/08/27/3-reasons-to-go-cloud-native/> working toward a [cloud-native](https://deloitte.wsj.com/cio/2016/12/12/making-the-leap-to-a-cloud-native-world/) mindset reorganizing people and processes and reworking applications with the cloud in mind organizations can maximize the benefits of their cloud efforts.
+In this chapter, we flew over cloud-native computing, providing a definition along with the key characteristics of a cloud-native application. We looked at what types of applications that might justify this investment and effort. Lastly, we looked cloud-native development stack available in the Azure Cloud <https://deloitte.wsj.com/cio/2018/08/27/3-reasons-to-go-cloud-native/> working toward a [cloud-native](https://deloitte.wsj.com/cio/2016/12/12/making-the-leap-to-a-cloud-native-world/) mindset reorganizing people and processes and reworking applications with the cloud in mind organizations can maximize the benefits of their cloud efforts.
 
-In this chapter, we flew over cloud native computing at 5,000 feet, providing a definition and the key characteristics of a cloud native application. We looked at the type of applications that might justify this investment and effort. Lastly, we looked at the cloud native development stack available in the Azure Cloud. 
+In this chapter, we flew over cloud-native computing at 5,000 feet, providing a definition and the key characteristics of a cloud-native application. We looked at the type of applications that might justify this investment and effort. Lastly, we looked at the cloud-native development stack available in the Azure Cloud. 
 
 ### References
 

@@ -22,7 +22,7 @@ What types of applications might be candidates for a cloud-native approach?
 
 - Applications with components that must scale independently
 
-While we'd all like to maximize our developer excitement level building brand new (known as green field) systems, often we're charged with modernizing legacy (known as brownfield) workloads that are critical to the business.
+While we'd all like to maximize our developer excitement level building brand new (known as green field) systems, often we're charged with modernizing legacy (known as brownfield) workloads that are critical to the business. While not "born in the cloud," a legacy brownfield application could be decomposed into microservices, containerized, and eventually "replatformed" into a cloud native architecture.  	
 
 The free Microsoft e-book [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook) provides a wealth of guidance for migrating on-premises workloads into cloud. Figure 1-11 shows that there isn't a single, one-size-fits-all strategy for migrating legacy applications to the cloud.
 

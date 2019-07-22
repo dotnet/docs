@@ -43,7 +43,22 @@ For dependencies, you specify where the restored packages are placed during the 
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
-The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
+### Nuget.Config differences
+The behavior of the `dotnet restore` command is affected by the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
+
+There are three specific settings that `dotnet restore` ignores.
+
+* [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
+
+  Binding redirects does not work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
+
+* [solution](/nuget/schema/nuget-config-file#solution-section)
+
+  This setting is only Visual Studio specific and no longer applies to the latest version of Visual Studio.
+
+* [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
+
+  This setting is not applicable as .NET Core does not yet support cross-platform verification of trusted packages.
 
 ## Implicit `dotnet restore`
 

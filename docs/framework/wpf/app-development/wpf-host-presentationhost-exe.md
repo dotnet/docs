@@ -17,7 +17,7 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 - Launches the registered [!INCLUDE[TLA2#tla_html](../../../../includes/tla2sharptla-html-md.md)] handler to host the Windows Presentation Foundation (WPF) content.  
   
-- Loads the right versions of the required [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] and Windows Presentation Foundation (WPF) assemblies.  
+- Loads the right versions of the required common language runtime (CLR) and Windows Presentation Foundation (WPF) assemblies.  
   
 - Ensures the appropriate permission levels for the zone of deployment are in place.  
   

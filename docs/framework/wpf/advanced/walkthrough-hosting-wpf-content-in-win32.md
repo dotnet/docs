@@ -161,7 +161,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
 <a name="implementing_the_wpf_page"></a>
 ## Implementing the WPF Page
- You can host and use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content without any knowledge of the actual implementation. If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content had been packaged in a separate [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)], it could have been built in any [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] language. Following is a brief walkthrough of the [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] implementation that is used in the sample. This section contains the following subsections.
+ You can host and use the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content without any knowledge of the actual implementation. If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content had been packaged in a separate [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)], it could have been built in any common language runtime (CLR) language. Following is a brief walkthrough of the [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] implementation that is used in the sample. This section contains the following subsections.
 
 <a name="autoNestedSectionsOUTLINE2"></a>
 - [Layout](#page_layout)

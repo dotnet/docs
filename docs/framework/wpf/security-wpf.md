@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 ---
 # Security (WPF)
-<a name="introduction"></a> When developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications, you must consider the security model. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] standalone applications execute with unrestricted permissions ( CAS**FullTrust** permission set), whether deployed using Windows Installer (.msi), XCopy, or [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]. Deploying partial-trust, standalone WPF applications with ClickOnce is unsupported. However, a full-trust host application can create a partial-trust <xref:System.AppDomain> using the .NET Framework Add-in model. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
+<a name="introduction"></a> When developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications, you must consider the security model. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] standalone applications execute with unrestricted permissions ( CAS**FullTrust** permission set), whether deployed using Windows Installer (.msi), XCopy, or ClickOnce. Deploying partial-trust, standalone WPF applications with ClickOnce is unsupported. However, a full-trust host application can create a partial-trust <xref:System.AppDomain> using the .NET Framework Add-in model. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
   
  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications are hosted by [!INCLUDE[TLA#tla_iegeneric](../../../includes/tlasharptla-iegeneric-md.md)] or Firefox, and can be either [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)] or loose [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] documents For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md).  
   
@@ -262,7 +262,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |----------|--------------|  
 |Managed code|[Patterns and Practices Security Guidance for Applications](https://go.microsoft.com/fwlink/?LinkId=117426)|  
 |CAS|[Code Access Security](../misc/code-access-security.md)|  
-|[!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
+|ClickOnce|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](wpf-partial-trust-security.md)|  
   
 ## See also

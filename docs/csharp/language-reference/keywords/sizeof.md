@@ -12,7 +12,7 @@ ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
 ---
 # sizeof (C# Reference)
 
-Used to obtain the size in bytes for an unmanaged type.
+Used to obtain the size in bytes for an [unmanaged type](../builtin-types/unmanaged-types.md).
 
 Unmanaged types include:
 

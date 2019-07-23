@@ -69,7 +69,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### String Data Type  
   
-- Use string interpolation to concatenate short strings, as shown in the following code.
+- Use [string interpolation](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/strings/interpolated-strings) to concatenate short strings, as shown in the following code.
   
      ```vb
      MsgBox($"hello{vbCrLf}goodbye")

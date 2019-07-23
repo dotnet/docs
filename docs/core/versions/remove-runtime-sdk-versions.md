@@ -274,6 +274,8 @@ dotnet-core-uninstall list [options]
 * **`--x86`**
 
   List x86 .NET Core SDKs or Runtimes.
+  
+---
 
 #### Examples
 
@@ -458,6 +460,8 @@ Note:
 1. Exactly one of `--sdk` and `--runtime` is required.
 2. `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor` and `[<VERSION>...]` are exclusive.
 3. If neither of `--x64` or `--x86` is specified, then both x64 and x86 will be removed.
+
+---
 
 #### Examples
 

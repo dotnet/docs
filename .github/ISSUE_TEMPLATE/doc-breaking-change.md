@@ -4,7 +4,11 @@ about: Report a breaking change in .NET Core
 
 ---
 <!--
-This issue template is for use in opening issues that document breaking changes.
+This issue template is for use in opening issues that document breaking changes. This template can be used to create an issue:
+
+- By Microsoft product team members who are documenting a breaking change.
+
+- By Microsoft customers who are experiencing a compatibility issue between .NET Framework and .NET Core or between versions of .NET Core.
 
 Text in brackets are placeholders; replace the text with the requested information and remove the brackets before submitting the issue. Also, remove this comment before submitting the issue.
 

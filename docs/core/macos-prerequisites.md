@@ -35,7 +35,7 @@ For download links and more information, see [.NET Core 1.1 downloads](https://w
 
 # [.NET Core 3.0](#tab/netcore30)
 
-.NET Core 3.0 Preview 3 is supported on the following versions of macOS:
+.NET Core 3.0 is supported on the following versions of macOS:
 
 * macOS 10.13 "High Sierra" and later versions
 

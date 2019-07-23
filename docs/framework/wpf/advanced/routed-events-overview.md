@@ -24,7 +24,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
 
 ## Prerequisites
 
-This topic assumes that you have basic knowledge of the [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] and object-oriented programming, as well as the concept of how the relationships between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write very basic [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).
+This topic assumes that you have basic knowledge of the common language runtime (CLR) and object-oriented programming, as well as the concept of how the relationships between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write very basic [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).
 
 <a name="routing"></a>
 
@@ -34,7 +34,7 @@ You can think about routed events either from a functional or implementation per
 
 Functional definition: A routed event is a type of event that can invoke handlers on multiple listeners in an element tree, rather than just on the object that raised the event.
 
-Implementation definition: A routed event is a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and is processed by the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] event system.
+Implementation definition: A routed event is a CLR event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and is processed by the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] event system.
 
 A typical [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application contains many elements. Whether created in code or declared in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these elements exist in an element tree relationship to each other. The event route can travel in one of two directions depending on the event definition, but generally the route travels from the source element and then "bubbles" upward through the element tree until it reaches the element tree root (typically a page or a window). This bubbling concept might be familiar to you if you have worked with the DHTML object model previously.
 
@@ -54,7 +54,7 @@ Button-->StackPanel-->Border-->...
 
 ### Top-level Scenarios for Routed Events
 
-The following is a brief summary of the scenarios that motivated the routed event concept, and why a typical [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event was not adequate for these scenarios:
+The following is a brief summary of the scenarios that motivated the routed event concept, and why a typical CLR event was not adequate for these scenarios:
 
 **Control composition and encapsulation:** Various controls in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] have a rich content model. For example, you can place an image inside of a <xref:System.Windows.Controls.Button>, which effectively extends the visual tree of the button. However, the added image must not break the hit-testing behavior that causes a button to respond to a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> of its content, even if the user clicks on pixels that are technically part of the image.
 
@@ -69,9 +69,9 @@ The following is a brief summary of the scenarios that motivated the routed even
 
 ### How Routed Events Are Implemented
 
-A routed event is a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and registered with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system. The <xref:System.Windows.RoutedEvent> instance obtained from registration is typically retained as a `public` `static` `readonly` field member of the class that registers and thus "owns" the routed event. The connection to the identically named [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event (which is sometimes termed the "wrapper" event) is accomplished by overriding the `add` and `remove` implementations for the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event. Ordinarily, the `add` and `remove` are left as an implicit default that uses the appropriate language-specific event syntax for adding and removing handlers of that event. The routed event backing and connection mechanism is conceptually similar to how a dependency property is a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property that is backed by the <xref:System.Windows.DependencyProperty> class and registered with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system.
+A routed event is a CLR event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and registered with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system. The <xref:System.Windows.RoutedEvent> instance obtained from registration is typically retained as a `public` `static` `readonly` field member of the class that registers and thus "owns" the routed event. The connection to the identically named CLR event (which is sometimes termed the "wrapper" event) is accomplished by overriding the `add` and `remove` implementations for the CLR event. Ordinarily, the `add` and `remove` are left as an implicit default that uses the appropriate language-specific event syntax for adding and removing handlers of that event. The routed event backing and connection mechanism is conceptually similar to how a dependency property is a CLR property that is backed by the <xref:System.Windows.DependencyProperty> class and registered with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system.
 
-The following example shows the declaration for a custom `Tap` routed event, including the registration and exposure of the <xref:System.Windows.RoutedEvent> identifier field and the `add` and `remove` implementations for the `Tap` [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event.
+The following example shows the declaration for a custom `Tap` routed event, including the registration and exposure of the <xref:System.Windows.RoutedEvent> identifier field and the `add` and `remove` implementations for the `Tap` CLR event.
 
 [!code-csharp[RoutedEventCustom#AddRemoveHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventCustom/CSharp/SDKSampleLibrary/class1.cs#addremovehandler)]
 [!code-vb[RoutedEventCustom#AddRemoveHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventCustom/VB/SDKSampleLibrary/Class1.vb#addremovehandler)]
@@ -82,7 +82,7 @@ To add a handler for an event using [!INCLUDE[TLA2#tla_xaml](../../../../include
 
 [!code-xaml[EventOvwSupport#SimplestSyntax](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]
 
-The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event handlers is the same for adding routed event handlers, because you are really adding handlers to the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [XAML Overview (WPF)](xaml-overview-wpf.md).
+The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard CLR event handlers is the same for adding routed event handlers, because you are really adding handlers to the CLR event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [XAML Overview (WPF)](xaml-overview-wpf.md).
 
 <a name="routing_strategies"></a>
 
@@ -92,7 +92,7 @@ Routed events use one of three routing strategies:
 
 - **Bubbling:** Event handlers on the event source are invoked. The routed event then routes to successive parent elements until reaching the element tree root. Most routed events use the bubbling routing strategy. Bubbling routed events are generally used to report input or state changes from distinct controls or other UI elements.
 
-- **Direct:** Only the source element itself is given the opportunity to invoke handlers in response. This is analogous to the "routing" that [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] uses for events. However, unlike a standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event, direct routed events support class handling (class handling is explained in an upcoming section) and can be used by <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger>.
+- **Direct:** Only the source element itself is given the opportunity to invoke handlers in response. This is analogous to the "routing" that [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] uses for events. However, unlike a standard CLR event, direct routed events support class handling (class handling is explained in an upcoming section) and can be used by <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger>.
 
 - **Tunneling:** Initially, event handlers at the element tree root are invoked. The routed event then travels a route through successive child elements along the route, towards the node element that is the routed event source (the element that raised the routed event). Tunneling routed events are often used or handled as part of the compositing for a control, such that events from composite parts can be deliberately suppressed or replaced by events that are specific to the complete control. Input events provided in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] often come implemented as a tunneling/bubbling pair. Tunneling events are also sometimes referred to as Preview events, because of a naming convention that is used for the pairs.
 
@@ -108,7 +108,7 @@ Routed event listeners and routed event sources do not need to share a common ev
 
 Routed events can also be used to communicate through the element tree, because the event data for the event is perpetuated to each element in the route. One element could change something in the event data, and that change would be available to the next element in the route.
 
-Other than the routing aspect, there are two other reasons that any given [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event might be implemented as a routed event instead of a standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] event. If you are implementing your own events, you might also consider these principles:
+Other than the routing aspect, there are two other reasons that any given [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event might be implemented as a routed event instead of a standard CLR event. If you are implementing your own events, you might also consider these principles:
 
 - Certain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] styling and templating features such as <xref:System.Windows.EventSetter> and <xref:System.Windows.EventTrigger> require the referenced event to be a routed event. This is the event identifier scenario mentioned earlier.
 
@@ -157,7 +157,7 @@ The value of <xref:System.Windows.RoutedEventArgs.Handled%2A> affects how a rout
 
 However, there is a "handledEventsToo" mechanism whereby listeners can still run handlers in response to routed events where <xref:System.Windows.RoutedEventArgs.Handled%2A> is `true` in the event data. In other words, the event route is not truly stopped by marking the event data as handled. You can only use the handledEventsToo mechanism in code, or in an <xref:System.Windows.EventSetter>:
 
-- In code, instead of using a language-specific event syntax that works for general [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] events, call the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] method <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> to add your handler. Specify the value of `handledEventsToo` as `true`.
+- In code, instead of using a language-specific event syntax that works for general CLR events, call the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] method <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> to add your handler. Specify the value of `handledEventsToo` as `true`.
 
 - In an <xref:System.Windows.EventSetter>, set the <xref:System.Windows.EventSetter.HandledEventsToo%2A> attribute to be `true`.
 
@@ -205,7 +205,7 @@ Another syntax usage that resembles *typename*.*eventname* attached event syntax
 
 [!code-xaml[EventOvwSupport#GroupButton](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#groupbutton)]
 
-Here, the parent element listener where the handler is added is a <xref:System.Windows.Controls.StackPanel>. However, it is adding a handler for a routed event that was declared and will be raised by the <xref:System.Windows.Controls.Button> class (<xref:System.Windows.Controls.Primitives.ButtonBase> actually, but available to <xref:System.Windows.Controls.Button> through inheritance). <xref:System.Windows.Controls.Button> "owns" the event, but the routed event system permits handlers for any routed event to be attached to any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> instance listener that could otherwise attach listeners for a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] event. The default xmlns namespace for these qualified event attribute names is typically the default [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] xmlns namespace, but you can also specify prefixed namespaces for custom routed events. For more information about xmlns, see [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
+Here, the parent element listener where the handler is added is a <xref:System.Windows.Controls.StackPanel>. However, it is adding a handler for a routed event that was declared and will be raised by the <xref:System.Windows.Controls.Button> class (<xref:System.Windows.Controls.Primitives.ButtonBase> actually, but available to <xref:System.Windows.Controls.Button> through inheritance). <xref:System.Windows.Controls.Button> "owns" the event, but the routed event system permits handlers for any routed event to be attached to any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> instance listener that could otherwise attach listeners for a common language runtime (CLR) event. The default xmlns namespace for these qualified event attribute names is typically the default [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] xmlns namespace, but you can also specify prefixed namespaces for custom routed events. For more information about xmlns, see [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
 
 <a name="how_event_processing_works"></a>
 

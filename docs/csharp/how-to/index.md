@@ -9,7 +9,7 @@ ms.date: 12/20/2017
 In the How to section of the C# Guide you can find quick answers
 to common questions. In some cases, articles may
 be listed in multiple sections. We wanted to make them easy to find
-for multiple search paths. 
+for multiple search paths.
 
 ## General C# concepts
 
@@ -17,7 +17,6 @@ There are several tips and tricks that are common C# developer practices.
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
-- [How to use lambda expressions](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md).
 - [Resolve type name conflicts by using the global namespace alias](../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).

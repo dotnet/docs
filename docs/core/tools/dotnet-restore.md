@@ -51,11 +51,11 @@ There are three specific settings that `dotnet restore` ignores.
 
 * [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
 
-  Binding redirects does not work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
+  Binding redirects do not work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
 
 * [solution](/nuget/schema/nuget-config-file#solution-section)
 
-  This setting is only Visual Studio specific and no longer applies to the latest version of Visual Studio.
+  This setting is only Visual Studio specific and does not apply to .NET Core. .NET Core does not use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
 
 * [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 

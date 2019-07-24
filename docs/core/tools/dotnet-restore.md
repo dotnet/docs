@@ -44,6 +44,7 @@ For dependencies, you specify where the restored packages are placed during the 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
 ### Nuget.Config differences
+
 The behavior of the `dotnet restore` command is affected by the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
 
 There are three specific settings that `dotnet restore` ignores.

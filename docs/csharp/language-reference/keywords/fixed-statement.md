@@ -20,7 +20,7 @@ You can initialize a pointer by using an array, a string, a fixed-size buffer, o
 
 [!code-csharp[Initializing fixed size buffers](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#2)]
 
-Starting with C# 7.3, the `fixed` statement operates on additional types beyond arrays, strings, fixed-size buffers, or unmanaged variables. Any type that implements a method named `GetPinnableReference` can be pinned. The `GetPinnableReference` must return a `ref` variable to an unmanaged type. See the topic on [pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md) for more information. The .NET types <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> introduced in .NET Core 2.0 make use of this pattern and can be pinned. This is shown in the following example:
+Starting with C# 7.3, the `fixed` statement operates on additional types beyond arrays, strings, fixed size buffers, or unmanaged variables. Any type that implements a method named `GetPinnableReference` can be pinned. The `GetPinnableReference` must return a `ref` variable of an [unmanaged type](../builtin-types/unmanaged-types.md). The .NET types <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> introduced in .NET Core 2.0 make use of this pattern and can be pinned. This is shown in the following example:
 
 [!code-csharp[Accessing fixed memory](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#FixedSpan)]
 
@@ -69,4 +69,5 @@ For more information, see [The fixed statement](~/_csharplang/spec/unsafe-code.m
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [unsafe](unsafe.md)
+- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Fixed Size Buffers](../../programming-guide/unsafe-code-pointers/fixed-size-buffers.md)

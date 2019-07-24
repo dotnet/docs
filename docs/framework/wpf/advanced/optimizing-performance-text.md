@@ -165,7 +165,7 @@ The following table shows the performance cost of displaying 1000 <xref:System.W
 
 ### Avoid Unnecessary Use of Hyphenation
 
-Automatic hyphenation finds hyphen breakpoints for lines of text, and allows additional break positions for lines in <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects. By default, the automatic hyphenation feature is disabled in these objects. You can enable this feature by setting the object's IsHyphenationEnabled property to `true`. However, enabling this feature causes [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to initiate [!INCLUDE[TLA#tla_com](../../../../includes/tlasharptla-com-md.md)] interoperability, which can impact application performance. It is recommended that you do not use automatic hyphenation unless you need it.
+Automatic hyphenation finds hyphen breakpoints for lines of text, and allows additional break positions for lines in <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects. By default, the automatic hyphenation feature is disabled in these objects. You can enable this feature by setting the object's IsHyphenationEnabled property to `true`. However, enabling this feature causes [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] to initiate Component Object Model (COM) interoperability, which can impact application performance. It is recommended that you do not use automatic hyphenation unless you need it.
 
 ### Use Figures Carefully
 

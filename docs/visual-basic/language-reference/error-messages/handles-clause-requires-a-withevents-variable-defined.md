@@ -18,20 +18,31 @@ You did not supply a `WithEvents` variable in your `Handles` clause. The `Handle
 - Supply the necessary `WithEvents` variable.
   
 ## Example
-In the following example, we create a timer and use its `Tick` event to repeat some action. The error `BC30506` is produced when `WithEvents` isn't supplied to the timer variable.
+In the following example, we create a [System.Timers.Timer](https://docs.microsoft.com/dotnet/api/system.timers.timer) and use its `Elapsed` event to repeat some action. The error `BC30506` is produced when `WithEvents` isn't supplied to `_timer1` variable.
 
 ```vb
-Public Class Form1
+Imports System.Timers
+
+Module Module1
     ' This line will cause an error in the Handles clause.
     Private _timer1 As New Timer() With {.Interval = 1000, .Enabled = True}
-    ' Use this line instead.
-    'Private WithEvents _timer1 As New Timer() With {.Interval = 1000, .Enabled = True}
 
-    Private Sub Timer1_Tick(sender As Object, args As EventArgs) Handles _timer1.Tick
-        ' Do something.
-        MessageBox.Show("I'm repeated every one second")
+    ' Use this line instead.
+    'Private WithEvents _timer1 As New Timer() With {.Interval = 1000}
+
+    Sub Main()
+        Console.WriteLine("Press any key to start the timer...")
+        Console.ReadKey()
+        _timer1.Start()
+        Console.ReadKey()
     End Sub
-End Class
+
+    Private Sub Timer1_Tick(sender As Object, args As EventArgs) Handles _timer1.Elapsed
+        Console.WriteLine("Press any key to terminate...")
+    End Sub
+
+End Module
+
 ```
 
 ## See also

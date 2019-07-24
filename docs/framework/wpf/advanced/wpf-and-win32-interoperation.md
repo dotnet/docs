@@ -38,7 +38,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
  Use whatever approach works best for you.  
   
 > [!NOTE]
->  If you have not used [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).  
+>  If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).  
   
 <a name="hwnds"></a>   
 ## How WPF Uses Hwnds  
@@ -54,7 +54,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
 1. Implement your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content (the content root element) as a managed class. Typically, the class inherits from one of the classes that can contain multiple child elements and/or used as a root element, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Page>. In subsequent steps, this class is referred to as the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content class, and instances of the class are referred to as [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content objects.  
   
-2. Implement a [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] application with [!INCLUDE[TLA2#tla_cppcli](../../../../includes/tla2sharptla-cppcli-md.md)]. If you are starting with an existing unmanaged C++ application, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag (the full scope of what might be necessary to support `/clr` compilation is not described in this topic).  
+2. Implement a Windows application with C++/CLI. If you are starting with an existing unmanaged C++ application, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag (the full scope of what might be necessary to support `/clr` compilation is not described in this topic).  
   
 3. Set the threading model to Single Threaded Apartment (STA). [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses this threading model.  
   

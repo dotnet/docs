@@ -241,6 +241,10 @@
       href: core/tutorials/aspnet-core.md
     - name: Hosting .NET Core from native code
       href: core/tutorials/netcore-hosting.md
+  - name: Native Interoperability
+    items:
+    - name: Exposing .NET Core Components to COM
+      href: core/native-interop/expose-components-to-com.md
   - name: Packages, Metapackages and Frameworks
     href: core/packages.md
   - name: Changes in CLI overview

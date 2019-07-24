@@ -43,7 +43,7 @@ This topic further explains the presence and purpose of the two XAML namespace m
   
  `clr-namespace:` The CLR namespace declared within the assembly that contains the public types to expose as elements.  
   
- `assembly=` The assembly that contains some or all of the referenced [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace. This value is typically just the name of the assembly, not the path, and does not include the extension (such as .dll or .exe). The path to that assembly must be established as a project reference in the project file that contains the XAML you are trying to map. In order to incorporate versioning and strong-name signing, the `assembly` value can be a string as defined by <xref:System.Reflection.AssemblyName>, rather than the simple string name.  
+ `assembly=` The assembly that contains some or all of the referenced CLR namespace. This value is typically just the name of the assembly, not the path, and does not include the extension (such as .dll or .exe). The path to that assembly must be established as a project reference in the project file that contains the XAML you are trying to map. In order to incorporate versioning and strong-name signing, the `assembly` value can be a string as defined by <xref:System.Reflection.AssemblyName>, rather than the simple string name.  
   
  Note that the character separating the `clr-namespace` token from its value is a colon (:) whereas the character separating the `assembly` token from its value is an equals sign (=). The character to use between these two tokens is a semicolon. Also, do not include any white space anywhere in the declaration.  
   

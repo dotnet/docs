@@ -8,4 +8,3 @@
 |Version|4.7|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Security.Cryptography.CspParameters.ParentWindowHandle?displayProperty=nameWithType></li></ul>|
-

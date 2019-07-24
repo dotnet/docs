@@ -8,4 +8,3 @@
 |Version|4.6.1|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims(System.String,System.String)?displayProperty=nameWithType></li></ul>|
-

@@ -48,7 +48,7 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--additional-deps <PATH>`
 
-Path to additional *deps.json* file.
+Path to additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
@@ -99,7 +99,7 @@ Prints out the version of the .NET Core SDK in use.
 
 `--additional-deps <PATH>`
 
-Path to additional *deps.json* file.
+Path to additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
@@ -298,7 +298,7 @@ Run an application DLL, such as `myapp.dll`:
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
 `DOTNET_SERVICING`
 
@@ -320,7 +320,7 @@ Disables minor version roll forward, if set to `0`. For more information, see [R
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
 `DOTNET_SERVICING`
 
@@ -338,7 +338,7 @@ Specifies whether .NET Core runtime, shared framework, or SDK are resolved from 
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
 `DOTNET_SERVICING`
 

@@ -34,20 +34,17 @@
           href: keywords/reference-types.md
         - name: class
           href: keywords/class.md
-        - name: delegate
-          href: keywords/delegate.md
-        - name: dynamic
-          href: keywords/dynamic.md
+        - name: Built-in reference types
+          displayName: object, delegate, dynamic, string
+          href: builtin-types/reference-types.md
         - name: interface
           href: keywords/interface.md
-        - name: object
-          href: keywords/object.md
-        - name: string
-          href: keywords/string.md
       - name: void
         href: keywords/void.md
       - name: var
         href: keywords/var.md
+      - name: Unmanaged types
+        href: builtin-types/unmanaged-types.md
       - name: Reference tables for types
         items:
         - name: Built-in types table
@@ -212,8 +209,6 @@
         href: keywords/await.md
       - name: sizeof
         href: keywords/sizeof.md
-      - name: nameof
-        href: keywords/nameof.md
     - name: Access Keywords
       items:
       - name: base
@@ -338,6 +333,11 @@
     - name: ":: operator"
       href: operators/namespace-alias-qualifer.md
       displayName: "namespace alias qualifier"
+    - name: delegate operator
+      href: operators/delegate-operator.md
+      displayName: anonymous
+    - name: nameof operator
+      href: operators/nameof.md
     - name: new operator
       href: operators/new-operator.md
     - name: stackalloc operator

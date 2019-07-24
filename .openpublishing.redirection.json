@@ -241,6 +241,10 @@
             "redirect_url": "/dotnet/core/tutorials"
         },
         {
+            "source_path": "docs/core/tutorials/create-custom-template.md",
+            "redirect_url": "/dotnet/core/tutorials/cli-templates-create-item-template"
+        },
+        {
             "source_path": "docs/core/tutorials/libraries-with-vs.md",
             "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
         },
@@ -427,8 +431,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/delegate.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/double.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/dynamic.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/exception-handling-statements.md",
@@ -491,6 +503,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/keywords"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/nameof.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/nameof"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/namespace-keywords.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/namespace"
         },
@@ -501,6 +517,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/new-operator.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/new-operator"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/object.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/operator.md",
@@ -529,6 +549,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/stackalloc.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/stackalloc"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/string.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true.md",
@@ -901,6 +925,10 @@
             "redirect_url": "/dotnet/api/system.componentmodel.backgroundworker"
         },
         {
+            "source_path": "docs/csharp/programming-guide/events/how-to-use-a-dictionary-to-store-event-instances.md",
+            "redirect_url": "/dotnet/standard/events/how-to-handle-multiple-events-using-event-properties"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
         },
@@ -1019,12 +1047,20 @@
             "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
         },
         {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/delegate-operator"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/conversion-operators.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",

@@ -35,7 +35,7 @@ The following table shows the keywords for built-in C# types, which are aliases 
 
 All of the types in the table, except `object` and `string`, are referred to as simple types.  
   
-The C# type keywords and their aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:  
+The .NET types and their C# type keyword aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:  
 
 ```csharp
 int x = 123;

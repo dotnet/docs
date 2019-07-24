@@ -63,13 +63,13 @@ With Microsoft .NET Framework, application developers using Windows Presentation
  ![Screenshot shows the XPS print system.](./media/printing-overview/xml-paper-specification-print-system.png)  
   
 ### Basic XPS Printing  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] defines both a basic and advanced [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)]. For those applications that do not require extensive print customization or access to the complete XPS feature set, basic print support is available. Basic print support is exposed through a print dialog control that requires minimal configuration and features a familiar [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. Many XPS features are available using this simplified print model.  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] defines both a basic and advanced API. For those applications that do not require extensive print customization or access to the complete XPS feature set, basic print support is available. Basic print support is exposed through a print dialog control that requires minimal configuration and features a familiar [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. Many XPS features are available using this simplified print model.  
   
 #### PrintDialog  
  The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control provides a single entry point for [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], configuration, and XPS job submission. For information about how to instantiate and use the control, see [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
   
 ### Advanced XPS Printing  
- To access the complete set of XPS features, the advanced print API must be used. Several relevant API are described in greater detail below. For a complete list of XPS print path [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)], see the <xref:System.Windows.Xps> and <xref:System.Printing> namespace references.  
+ To access the complete set of XPS features, the advanced print API must be used. Several relevant API are described in greater detail below. For a complete list of XPS print path APIs, see the <xref:System.Windows.Xps> and <xref:System.Printing> namespace references.  
   
 #### PrintTicket and PrintCapabilities  
  The <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes are the foundation of the advanced XPS features. Both types of objects are [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] formatted structures of print-oriented features such as collation, two-sided printing, stapling, etc. These structures are defined by the print schema. A <xref:System.Printing.PrintTicket> instructs a printer how to process a print job. The <xref:System.Printing.PrintCapabilities> class defines the capabilities of a printer. By querying the capabilities of a printer, a <xref:System.Printing.PrintTicket> can be created that takes full advantage of a printer's supported features. Similarly, unsupported features can be avoided.  
@@ -81,7 +81,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
  [!code-vb[xpscreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
   
 #### PrintServer and PrintQueue  
- The <xref:System.Printing.PrintServer> class represents a network print server and the <xref:System.Printing.PrintQueue> class represents a printer and the output job queue associated with it. Together, these [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] allow advanced management of a server's print jobs. A <xref:System.Printing.PrintServer>, or one of its derived classes, is used to manage a <xref:System.Printing.PrintQueue>. The <xref:System.Printing.PrintQueue.AddJob%2A> method is used to insert a new print job into the queue.  
+ The <xref:System.Printing.PrintServer> class represents a network print server and the <xref:System.Printing.PrintQueue> class represents a printer and the output job queue associated with it. Together, these APIs allow advanced management of a server's print jobs. A <xref:System.Printing.PrintServer>, or one of its derived classes, is used to manage a <xref:System.Printing.PrintQueue>. The <xref:System.Printing.PrintQueue.AddJob%2A> method is used to insert a new print job into the queue.  
   
  The following example demonstrates how to create a <xref:System.Printing.LocalPrintServer> and access its default <xref:System.Printing.PrintQueue> by using code.  
   

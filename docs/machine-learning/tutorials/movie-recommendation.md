@@ -242,6 +242,7 @@ public static void EvaluateModel(MLContext mlContext, IDataView testDataView, IT
 ```
 
 Transform the `Test` data by adding the following code to `EvaluateModel()`:
+
 [!code-csharp[Transform](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#Transform "Transform the test data")]
 
 The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for multiple provided input rows of a test dataset.

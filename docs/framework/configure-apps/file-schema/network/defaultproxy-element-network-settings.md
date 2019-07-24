@@ -55,7 +55,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ## Remarks  
  If the defaultProxy element is empty, the proxy settings from Internet Explorer will be used. This behavior is different from version 1.1 of the .NET Framework.  
   
- An exception is thrown if the [module](../../../../../docs/framework/configure-apps/file-schema/network/module-element-network-settings.md) element specifies a non-public type, the type is not deriving from the <xref:System.Net.IWebProxy> class, an exception from the default constructor of this object occurred, or an exception occurred while retrieving the system-specified default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.  
+ An exception is thrown if the [module](../../../../../docs/framework/configure-apps/file-schema/network/module-element-network-settings.md) element specifies a non-public type, the type is not deriving from the <xref:System.Net.IWebProxy> class, an exception from the parameterless constructor of this object occurred, or an exception occurred while retrieving the system-specified default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  

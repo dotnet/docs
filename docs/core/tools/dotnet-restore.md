@@ -59,7 +59,7 @@ There are three specific settings that `dotnet restore` ignores.
 
 * [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 
-  This setting is not applicable as .NET Core does not yet support cross-platform verification of trusted packages.
+  This setting is not applicable as [NuGet does not yet support cross-platform verification](https://github.com/NuGet/Home/issues/7939) of trusted packages.
 
 ## Implicit `dotnet restore`
 

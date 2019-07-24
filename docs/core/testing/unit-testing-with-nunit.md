@@ -129,7 +129,7 @@ namespace Prime.UnitTests.Services
         }
 
         [Test]
-        public void ReturnFalseGivenValueOf1()
+        public void IsPrime_InputIs1_ReturnFalse()
         {
             PrimeService primeService = CreatePrimeService();
             var result = primeService.IsPrime(1);

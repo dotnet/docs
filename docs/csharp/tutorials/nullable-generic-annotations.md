@@ -51,13 +51,13 @@ Another likely source of warnings are return values when the value has not been 
 
 The first step is to use `?` annotations on parameters and return types to indicate when arguments or return values may be null, or must not be null. As you do this, your goal isn't just to fix warnings. The deeper goal is to make the compiler understand your intent for potential null values. As you examine the warnings, you reach your next major decision for your application. Do you want to consider modifying API signatures to more clearly communicate your design intent?
 
-Let's examine an common pattern used in .NET:
+Let's examine a common pattern:
 
 ```csharp
 bool TrtGetvalue(int key, out string val)
 ```
 
-Should this be a `string?`? Maybe, because you can pass `null` into this method. The input to `val` won't be changed if the `key` wasn't found. It would still be `null`. On the other hand, `val` would never be `null` if the `key` was found.
+Should the `val` parameter be an `out string?`? Maybe, because you can pass `null` into this method. The input to `val` won't be changed if the `key` wasn't found. It would still be `null`. On the other hand, `val` would never be `null` if the `key` was found.
 
 If you want to consider breaking changes in your public API, a better signature might be:
 
@@ -69,7 +69,11 @@ The return value indicates success or failure, and carries the value if hte valu
 
 However, for public libraries, or libraries with large user bases, you may prefer not introducing any API signature changes. For those cases, and other common patterns, you can apply attributes to more clearly define when an argument or return value may be null.
 
-## Overriding type declaration with attributes
+Whether or not you consider changing the surface of your API, you'll likely find that type annotations alone are not sufficient for describing when `null` values for arguments or return values. In those instances, you can apply attributes to more clearly describe an API. 
+
+## Attributes extend type annotations
+
+
 
 For some APIs, you want the *type* of a parameter to be a non-nullable type, but still support a null input. One example is a property where the `get` accessor never returns null, but the `set` accessor allow `null` to set a default. 
 

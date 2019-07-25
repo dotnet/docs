@@ -65,7 +65,7 @@ If you want to consider breaking changes in your public API, a better signature 
 string? TryGetValue(int key);
 ```
 
-The return value indicates success or failure, and carries the value if hte value was found. In many cases, changing API signatures can improve how they communicate null values.
+The return value indicates success or failure, and carries the value if the value was found. In many cases, changing API signatures can improve how they communicate null values.
 
 However, for public libraries, or libraries with large user bases, you may prefer not introducing any API signature changes. For those cases, and other common patterns, you can apply attributes to more clearly define when an argument or return value may be null.
 
@@ -73,18 +73,53 @@ Whether or not you consider changing the surface of your API, you'll likely find
 
 ## Attributes extend type annotations
 
+A number of attributes have been added that you use to express further information about the null state of variables. All code you wrote before C# 8 introduced nullable reference types was *null oblivious*. That means any reference type variable may be null, but null checks aren't required. Once your code is *nullable aware*, those rules change. Reference types should never be the `null` value, and nullable reference types must be checked against null before being dereferenced.
 
+Those rules aren't sufficient for much existing code. Many of our APIs have more complex rules for when it could or can't be `null`. In these cases, you'll use one of these attributes to express those rules:
 
-For some APIs, you want the *type* of a parameter to be a non-nullable type, but still support a null input. One example is a property where the `get` accessor never returns null, but the `set` accessor allow `null` to set a default. 
+- `AllowNull`: A non-nullable input argument may be null.
+- `DisallowNull`: A nullable input argument should never be null.
+- `MaybeNull`: A non-nullable return value may be null.
+- `NotNull`: A nullable return value will never be null.
+- `MaybeNullWhen`: A non-nullable `out` or `ref` argument may be null when the return value satisfies a condition.
+- `NotNullWhen`: A nullable `out` or `ref` argument may not be null when the return value satisfies a condition.
+- `NotNullIfNotNull`: a string return value is not null when the input string argument is not null.
+
+In addition, generic types or methods can now use the `notnull` constraint to specify that a type argument cannot be nullable.
+
+The examples that demonstrate these attributes and the `notnull` constraint are contrived to show the kinds of API shapes that prompted their addition. These represent the types of APIs where you'll want to apply these attributes. Many of these examples use properties or `ref` and `out` arguments, because those APIs often have different nullability constraints on the same variable used as input or output.
+
+## Specify Preconditions: `AllowNull` and `DisallowNull`
+
+Consider a read / write property that never returns `null` because it has a reasonable default value. Callers pass `null` to the set accessor when set it to that default value. For example, consider a messaging system that asks for a screen name in a chat room. If none is provided, the system generates a random name:
 
 ```csharp
-public DateTime DateOfPurchase
+public string ScreenName
 {
-   get { return dateOfPurchase ?? DateTime.Today; }
-   [AllowNull] set { dateOfPurchase = value; }
+   get { return screenName; }
+   set { screenName = value ?? GenerateRandomScreenName(); }
 }
-private DateTime? dateOfPurchase;
+private string screenName;
 ```
+
+When you compile the preceding code in a nullable oblivious context, everything is fine. Once you enable nullable reference types, the `ScreenName` property becomes a non-nullable reference. That's correct for the `get` accessor: it never returns `null`. Callers don't need to check the returned property for `null`. But now setting the property to `null` generates a warning. In order to continue to support this type of code, you add the `AllowNull` attribute to the `set` accessor, as shown in the following code: 
+
+```csharp
+public string ScreenName
+{
+   get { return screenName; }
+   [AllowNull] set { screenName = value ?? GenerateRandomScreenName(); }
+}
+private string screenName;
+```
+
+The preceding example demonstrates what to look for when adding the `AllowNull` attribute on an argument:
+
+1. The general contract for that variable is that it should not be `null`, so you want a non-nullable reference type.
+1. There are scenarios for the input variable to be `null`.
+
+Most often you'll need this attribute for properties, or `in` `out` and `ref` arguments.
+
 
 Or, a property may have the default value of `null`, but it should never be set to `null`:
 

@@ -6,25 +6,30 @@ dev_langs:
   - "vb"
 author: thraka
 ms.author: adegeo
-ms.date: 06/14/2019
+ms.date: 07/25/2019
 ---
 
-# What's new in .NET Core 3.0 (Preview 6)
+# What's new in .NET Core 3.0 (Preview 7)
 
-This article describes what is new in .NET Core 3.0 (through preview 6). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
+This article describes what is new in .NET Core 3.0 (through preview 7). One of the biggest enhancements is support for Windows desktop applications (Windows only). By using the .NET Core 3.0 SDK component Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the [Windows desktop](#windows-desktop) section later in this article.
 
 .NET Core 3.0 adds support for C# 8.0. It's highly recommended that you use the [latest release of Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+preview), or Visual Studio Code with the OmniSharp extension.
 
-[Download and get started with .NET Core 3.0 Preview 6](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
+[Download and get started with .NET Core 3.0 preview 7](https://aka.ms/netcore3download) right now on Windows, Mac, and Linux.
 
 For more information about each preview release, see the following announcements:
 
+- [.NET Core 3.0 Preview 7 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-7/)
 - [.NET Core 3.0 Preview 6 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-6/)
 - [.NET Core 3.0 Preview 5 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-5/)
 - [.NET Core 3.0 Preview 4 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-4/)
 - [.NET Core 3.0 Preview 3 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-3/)
 - [.NET Core 3.0 Preview 2 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/)
 - [.NET Core 3.0 Preview 1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/)
+
+## Production supported preview
+
+.NET Core Preview 7 is considered production ready by Microsoft and is fully supported. Starting with preview 7, releases will focus on polishing .NET Core 3.0 instead of adding new features. For more information about what has changed in preview 7, see the [preview 7 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0-preview-7/)
 
 ## .NET Core SDK Windows Installer
 
@@ -173,19 +178,21 @@ R2R binaries improve startup performance by reducing the amount of work the just
 
 R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish a self-contained app that targets a specific runtime environments (RID) such as Linux x64 or Windows x64.
 
-To compile your app as R2R, add the `<PublishReadyToRun>` setting:
+To enable R2R binaries, do the following:
 
-```xml
-<PropertyGroup>
-  <PublishReadyToRun>true</PublishReadyToRun>
-</PropertyGroup>
-```
+01. Add the `<PublishReadyToRun>` setting to your project
 
-Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
+    ```xml
+    <PropertyGroup>
+      <PublishReadyToRun>true</PublishReadyToRun>
+    </PropertyGroup>
+    ```
 
-```console
-dotnet publish -c Release -r win-x64 --self-contained true
-```
+01. Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
+
+    ```console
+    dotnet publish -c Release -r win-x64 --self-contained true
+    ```
 
 ### Cross platform/architecture restrictions
 

@@ -43,7 +43,7 @@ Dim n = 20
   Dim stepVar = 1
   ```
 
-  \—or—
+  -or-
 
   ```vb
   Dim stepVar As Integer = 1

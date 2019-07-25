@@ -13,4 +13,4 @@ The Component Object Model (COM) lets an object expose its functionality to othe
 - [COM Wrappers)](./com-wrappers.md)
 - [COM Callable Wrappers](./com-callable-wrapper.md)
 - [Runtime Callable Wrappers](./runtime-callable-wrapper.md)
-- [Qualifying .NET Types for COM Interoperation](./qualifying-net-types-for-interoperation.md)
+- [Qualifying .NET Types for COM Interoperation](./qualify-net-types-for-interoperation.md)

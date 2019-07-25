@@ -21,7 +21,7 @@ In this article, various names are used to identify types of files used for migr
 | **MyAppCore.exe** | The .NET Core WPF app executable. |
 
 >[!IMPORTANT]
->Even though this article uses C# as the target language, the steps are the same for VB.NET. The differences being that VB.NET uses *.vbproj* and *.vb* files instead of *.csproj* and *.cs* files, respectively.
+>Even though this article uses C# as the target language, the steps are the same for VB.NET, except that VB.NET uses *.vbproj* and *.vb* files instead of *.csproj* and *.cs* files, respectively.
 
 ## Prerequisites
 

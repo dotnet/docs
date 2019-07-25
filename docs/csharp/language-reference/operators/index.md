@@ -59,7 +59,7 @@ These are the highest precedence operators.
 
 [delegate](delegate-operator.md) – declares and returns a delegate instance.
 
-[sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
+[sizeof](sizeof.md) – returns the size in bytes of the type operand.
 
 [stackalloc](stackalloc.md) - allocates a block of memory on the stack.
 

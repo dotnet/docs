@@ -47,10 +47,7 @@ The extended ISO 8601 profile implemented in System.Text.Json uses these compone
 1. `full-date` (ISO 8601-1:2019 5.2.2.1)
 	1. `YYYY-MM-DD`
 
-```markdown
-> [!NOTE]
-> - 5.2.2.2 "Representations with reduced precision" allows for just YYYY[“-”]MM (a) and just YYYY (b), but we currently don't permit it.
-```
+ISO 8601-1:2019 5.2.2.2 "Representations with reduced precision" allows for just YYYY-MM (a) and just YYYY (b), but we currently don't permit it.
 
 2. `full-date "T" time-hour ":" time-minute`
 	1. `YYYY-MM-DDThh:mm`
@@ -68,6 +65,16 @@ The extended ISO 8601 profile implemented in System.Text.Json uses these compone
 	2. `YYYY-MM-DDThh:mm:ss.sZ`
 	3. `YYYY-MM-DDThh:mm:ss("+" / "-")hh":"mm`
 	4. `YYYY-MM-DDThh:mm:ss.s("+" / "-")hh":"mm`
+
+"T" is optional per spec, but _only_ when times are used alone. In our case, we're reading out a complete date & time and as such require "T" (ISO 8601-1:2019 5.4.2.1b).
+
+For time, we allow seconds to be omitted per ISO 8601-1:2019 5.3.1.3a "Representations with reduced precision". ISO 8601-1:2019 5.3.1.3b allows just specifying the hour, but we currently don't permit this.
+
+Decimal fractions are allowed for hours, minutes and seconds (ISO 8601-1:2019 5.3.14). We only allow fractions for seconds currently. Lower order components can't follow, i.e. you can have T23.3, but not T23.3:04.
+There must be one digit, but the max number of digits is implemenation defined. We currently allow up to 16 digits of fractional seconds only. While we support 16 fractional digits we only parse the first seven,
+anything past that is considered a zero. This is to stay compatible with the DateTime implementation which is limited to this resolution.
+
+We currently don't support leap seconds. See https://github.com/dotnet/corefx/issues/39185.
 
 ### Formatting
 

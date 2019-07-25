@@ -18,17 +18,36 @@ You did not supply a `WithEvents` variable in your `Handles` clause. The `Handle
 - Supply the necessary `WithEvents` variable.
   
 ## Example
-In the following example, we create a [System.Timers.Timer](https://docs.microsoft.com/dotnet/api/system.timers.timer) and use its `Elapsed` event to repeat some action. The error `BC30506` is produced when `WithEvents` isn't supplied to `_timer1` variable.
+
+In the following example, Visual Basic generates compiler error `BC30506` because the [WithEvents](../modifiers/withevents.md) keyword is not used in the definition of the <xref:System.Timers.Timer?displayProperty=nameWithType> instance.
 
 ```vb
 Imports System.Timers
 
 Module Module1
-    ' This line will cause an error in the Handles clause.
     Private _timer1 As New Timer() With {.Interval = 1000, .Enabled = True}
+    
+    Sub Main()
+        Console.WriteLine("Press any key to start the timer...")
+        Console.ReadKey()
+        _timer1.Start()
+        Console.ReadKey()
+    End Sub
 
-    ' Use this line instead.
-    'Private WithEvents _timer1 As New Timer() With {.Interval = 1000}
+    Private Sub Timer1_Tick(sender As Object, args As EventArgs) Handles _timer1.Elapsed
+        Console.WriteLine("Press any key to terminate...")
+    End Sub
+End Module
+```
+
+The following example compiles successfully because the `_timer1` variable is defined with the `WithEvents` keyword:
+
+
+```vb
+Imports System.Timers
+
+Module Module1
+    Private WithEvents _timer1 As New Timer() With {.Interval = 1000}
 
     Sub Main()
         Console.WriteLine("Press any key to start the timer...")
@@ -42,7 +61,6 @@ Module Module1
     End Sub
 
 End Module
-
 ```
 
 ## See also

@@ -196,3 +196,9 @@ sudo rm -rf /usr/local/share/dotnet/host/fxr/1.0.1
 The parent directories for the SDK and runtime are listed in the output from the `dotnet --list-sdks` and `dotnet --list-runtimes` command, as shown in the earlier table.
 
 ---
+
+## .NET Core Uninstall Tool
+
+The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) is a guided tool provided to enable the controlled clean-up of a system such that only the desired versions of .NET Core SDKs and Runtimes remain. A collection of options is available to facilitate the aggregation of uninstallations.
+
+The documentation of the tool is available [here](../additional-tools/dotnet-core-uninstall.md).

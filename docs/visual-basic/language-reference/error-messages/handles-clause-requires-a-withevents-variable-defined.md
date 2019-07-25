@@ -42,7 +42,6 @@ End Module
 
 The following example compiles successfully because the `_timer1` variable is defined with the `WithEvents` keyword:
 
-
 ```vb
 Imports System.Timers
 

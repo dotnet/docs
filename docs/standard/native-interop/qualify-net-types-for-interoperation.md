@@ -46,5 +46,5 @@ If you intend to expose types in an assembly to COM applications, consider the r
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 - [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
-- [Applying Interop Attributes](../../../docs/standard/native-interop/applying-interop-attributes.md)
+- [Applying Interop Attributes](../../../docs/standard/native-interop/apply-interop-attributes.md)
 - [Packaging a .NET Framework Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)

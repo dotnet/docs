@@ -104,3 +104,75 @@ To begin, select the type of compatibility change below:
 - [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
 - [What's New](../../../docs/framework/whats-new/index.md)
 - [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+
+## Test
+
+Namespaces:
+
+`<xref:System>` --> <xref:System>
+
+`<xref:System?displayProperty=nameWithType>` --> <xref:System?displayProperty=nameWithType>
+
+`<xref:System?displayProperty=fullName>` --> <xref:System?displayProperty=fullName>
+
+Classes:
+
+`<xref:System.String>` --> <xref:System.String>
+
+`<xref:System.String?displayProperty=nameWithType>` --> <xref:System.String?displayProperty=nameWithType>
+
+`<xref:System.String?displayProperty=fullName>` --> <xref:System.String?displayProperty=fullName>
+
+Constructors:
+
+`<xref:System.String.%23ctor%2A>` --> <xref:System.String.%23ctor%2A>
+
+`<xref:System.String.%23ctor%2A?displayProperty=nameWithType>` --> <xref:System.String.%23ctor%2A?displayProperty=nameWithType>
+
+`<xref:System.String.%23ctor%2A?displayProperty=fullName>` --> <xref:System.String.%23ctor%2A?displayProperty=fullName>
+
+Fields:
+
+`<xref:System.String.Empty>` --> <xref:System.String.Empty>
+
+`<xref:System.String.Empty?displayProperty=nameWithType>` --> <xref:System.String.Empty?displayProperty=nameWithType>
+
+`<xref:System.String.Empty?displayProperty=fullName>` --> <xref:System.String.Empty?displayProperty=fullName>
+
+Properties:
+
+`<xref:System.String.Length>` --> <xref:System.String.Length>
+
+`<xref:System.String.Length?displayProperty=nameWithType>` --> <xref:System.String.Length?displayProperty=nameWithType>
+
+`<xref:System.String.Length?displayProperty=fullName>` --> <xref:System.String.Length?displayProperty=fullName>
+
+Methods:
+
+`<xref:System.String.Clone>` --> <xref:System.String.Clone>
+
+`<xref:System.String.Clone?displayProperty=nameWithType>` --> <xref:System.String.Clone?displayProperty=nameWithType>
+
+`<xref:System.String.Clone?displayProperty=fullName>` --> <xref:System.String.Clone?displayProperty=fullName>
+
+Overloaded methods:
+
+`<xref:System.String.Compare%2A>` --> <xref:System.String.Compare%2A>
+
+`<xref:System.String.Compare%2A?displayProperty=nameWithType>` --> <xref:System.String.Compare%2A?displayProperty=nameWithType>
+
+`<xref:System.String.Compare%2A?displayProperty=fullName>` --> <xref:System.String.Compare%2A?displayProperty=fullName>
+
+`<xref:System.String.Compare(System.String,System.String)>` --> <xref:System.String.Compare(System.String,System.String)>
+
+`<xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType>` --> <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType>
+
+`<xref:System.String.Compare(System.String,System.String)?displayProperty=fullName>` --> <xref:System.String.Compare(System.String,System.String)?displayProperty=fullName>
+
+Generics:
+
+`<xref:System.Collections.Generic.IEnumerable%601>` --> <xref:System.Collections.Generic.IEnumerable%601>
+
+`<xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>` --> <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>
+
+`<xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>` --> <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>

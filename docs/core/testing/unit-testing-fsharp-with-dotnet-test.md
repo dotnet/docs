@@ -108,7 +108,7 @@ let ``Sequence of Evens returns empty collection`` () =
     Assert.Equal<Collections.Generic.IEnumerable<int>>(expected, actual)
 ```
 
-Your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `MathService` class that works:
+Your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `MathService` class that works:
 
 ```csharp
 let squaresOfOdds xs =

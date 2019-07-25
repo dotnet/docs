@@ -35,7 +35,7 @@ In this article, various names are used to identify types of files used for migr
 - Install the latest [.NET Core 3.0](https://aka.ms/netcore3download) preview.
 
 >[!NOTE]
->**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but has limited support for the .NET Core WPF visual designer. To use a fully-supported visual designer, you must have a .NET WPF project in your solution that shares its files with the .NET Core project.
+>**Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but has limited support for the .NET Core WPF visual designer. To use a fully-supported visual designer, you must have a .NET Framework WPF project in your solution that shares its files with the .NET Core project.
 
 ### Consider
 

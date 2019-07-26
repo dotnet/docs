@@ -1,11 +1,15 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
-ms.date: 12/04/2018
+ms.date: 06/26/2019
 ---
 # dotnet pack
 
+**This topic applies to: ✓** .NET Core 1.x SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+-->
 
 ## Name
 
@@ -13,23 +17,11 @@ ms.date: 12/04/2018
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
-
 ```
 dotnet pack [<PROJECT>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--no-build] [--no-dependencies]
     [--no-restore] [-o|--output] [--runtime] [-s|--serviceable] [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-```
-dotnet pack [<PROJECT>] [-c|--configuration] [--include-source] [--include-symbols] [--no-build] [-o|--output]
-    [-s|--serviceable] [-v|--verbosity] [--version-suffix]
-dotnet pack [-h|--help]
-```
-
----
 
 ## Description
 
@@ -67,7 +59,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 * **`--force`**
 
-  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Option available since .NET Core x.x SDK.
 
 * **`-h|--help`**
 
@@ -87,11 +79,11 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 * **`--no-dependencies`**
 
-  Ignores project-to-project references and only restores the root project.
+  Ignores project-to-project references and only restores the root project. Option available since .NET Core x.x SDK.
 
 * **`--no-restore`**
 
-  Doesn't execute an implicit restore when running the command.
+  Doesn't execute an implicit restore when running the command. Option available since .NET Core x.x SDK.
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -99,7 +91,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 * **`--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Option available since .NET Core x.x SDK.
 
 * **`-s|--serviceable`**
 

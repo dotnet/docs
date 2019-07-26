@@ -108,7 +108,7 @@ let ``Sequence of Evens returns empty collection`` () =
 
 Your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `MathService` class that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int>
 ```

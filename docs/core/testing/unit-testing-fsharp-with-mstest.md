@@ -119,7 +119,7 @@ Notice that the `expected` sequence has been converted to a list. The MSTest lib
 
 When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `Mathservice` class that works:
 
-```csharp
+```fsharp
 let squaresOfOdds xs =
     Seq.empty<int> |> Seq.toList
 ```

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 56f314bb-b30b-4f67-8492-8b8a9fa432ae
 ---
 # ClearType Registry Settings
-This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Microsoft ClearType registry settings that are used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
+This topic provides an overview of the Microsoft ClearType registry settings that are used by WPF applications.  
 
 <a name="overview"></a>   
 ## Technology Overview  

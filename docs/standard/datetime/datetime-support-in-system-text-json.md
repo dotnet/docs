@@ -1,28 +1,48 @@
 ---
-# required/recommended metadata
-
-title: Datetime and DateTimeOffset Support in System.Text.Json
-description: An overview of how Datetime and DateTimeOffset types are supported in the System.Text.Json library.
+title: DateTime and DateTimeOffset support in System.Text.Json
+description: An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
+ms.technology: dotnet-standard
 author: layomia
 ms.author: laakinri
 ms.date: 07/22/2019
-ms.topic: [TOPIC TYPE]
-ms.prod: [PRODUCT VALUE]
 helpviewer_keywords:
-  - "JSON DateTime JSON DateTimeOffset"
+  - "JSON DateTime"
+  - "DateTimeOffset"
   - "Serializer, Utf8"
   - "JSON Reader, JSON Writer, times"
-
 ---
-# Datetime and DateTimeOffset Support in System.Text.Json
 
-The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>, and <xref:System.Text.Json.JsonElement> parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations according to an extended profile of the ISO 8601-1:2019 format.
+# DateTime and DateTimeOffset support in System.Text.Json
 
-## Date and Time Components
+The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>, and <xref:System.Text.Json.JsonElement> parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations according to the extended profile of the ISO 8601-1:2019 format, e.g. 2019-07-26T16:59:57-05:00.
 
-ISO 8601-1:2019 defines the following components for date and time text representations:
+Date and time data can be serialized with <xref:System.Text.Json.JsonSerializer>:
 
-| Component         | Format                                                     | ISO 8601-1:2019 Spec | Description                                                                                                     |
+```C#
+Product p = new Product();
+p.Name = "Banana";
+p.ExpiryDate = new DateTime(2019, 7, 26);
+string json = JsonSerializer.Serialize(p);
+
+/// {"Name":"Banana","ExpiryDate":"2019-07-26T00:00:00"}
+```
+
+To deserialize:
+
+```C#
+Product p = JsonSerialize.Deserialize<Product>(@"{""Name"":""Banana"",""ExpiryDate"":""2019-07-26T00:00:00""}");
+Console.WriteLine(p.Name) // Banana
+Console.WriteLine(p.ExpiryDate) // 
+```
+
+
+## Extended ISO 8601-1:2019 Profile in System.Text.Json
+
+### Date and time Components
+
+ISO 8601-1:2019 defines the following components for date and time representations:
+
+| Component         | Format                                                     | ISO 8601-1:2019 spec | Description                                                                                                     |
 |-------------------|------------------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------------------------|
 | `date-fullyear`   | `YYYY`                                                     | 4.3.2                | 0001-9999                                                                                                       |
 | `date-month`      | `MM`                                                       | 4.3.3                | 01-12                                                                                                           |
@@ -30,7 +50,7 @@ ISO 8601-1:2019 defines the following components for date and time text represen
 | `time-hour`       | `hh`                                                       | 4.3.8a               | 00-23                                                                                                           |
 | `time-minute`     | `mm`                                                       | 4.3.9a               | 00-59                                                                                                           |
 | `time-second`     | `ss`                                                       | 4.3.10a              | 00-58, 00-59, 00-60 based on leap second rules                                                                  |
-| `time-secfrac`    | `s`                                                        | 5.3.14               | There must be one digit, but the max number of digits is implemenation defined                                  |
+| `time-secfrac`    | `s`                                                        | 5.3.14               | There must be one digit, but the max number of digits is implemenation-defined                                  |
 | `time-numoffset`  | `("+" / "-") time-hour ":" time-minute`                    |                      |                                                                                                                 |
 | `time-offset`     | `"Z" / time-numoffset`                                     |                      |                                                                                                                 |
 | `partial-time`    | `time-hour ":" time-minute ":" time-second [time-secfrac]` |                      |                                                                                                                 |
@@ -38,16 +58,14 @@ ISO 8601-1:2019 defines the following components for date and time text represen
 | `full-time`       | `partial-time time-offset`                                 | 5.3.3 or 5.3.4.2     | 5.3.3 is "UTC of day" while 5.3.4.2 is "Local time of day with the time shift between local time scale and UTC" |
 | `date-time`       | `full-date "T" full-time`                                  | 5.4.2.1              | Extended calendar date and time of day                                                                          |
 
-## Extended ISO 8601-1:2019 Profile in <xref:System.Text.Json>
+### Support for parsing
 
-### Parsing
-
-The extended ISO 8601 profile implemented in System.Text.Json uses these components to define the following levels of date-time granularity:
+The extended ISO 8601 profile implemented in <xref:System.Text.Json> uses these components to define the following levels of date and time granularity:
 
 1. `full-date` (ISO 8601-1:2019 5.2.2.1)
 	1. `YYYY-MM-DD`
 
-ISO 8601-1:2019 5.2.2.2 "Representations with reduced precision" allows for just YYYY-MM (a) and just YYYY (b), but we currently don't permit it.
+	ISO 8601-1:2019 5.2.2.2 "Representations with reduced precision" allows for just YYYY-MM (a) and just YYYY (b), but neither is supported.
 
 2. `full-date "T" time-hour ":" time-minute`
 	1. `YYYY-MM-DDThh:mm`
@@ -66,229 +84,65 @@ ISO 8601-1:2019 5.2.2.2 "Representations with reduced precision" allows for just
 	3. `YYYY-MM-DDThh:mm:ss("+" / "-")hh":"mm`
 	4. `YYYY-MM-DDThh:mm:ss.s("+" / "-")hh":"mm`
 
-"T" is optional per spec, but _only_ when times are used alone. In our case, we're reading out a complete date & time and as such require "T" (ISO 8601-1:2019 5.4.2.1b).
+Seconds can be omitted according to ISO 8601-1:2019 5.3.1.3a "Representations with reduced precision". ISO 8601-1:2019 5.3.1.3b allows just specifying the hour, but that representation is not supported.
 
-For time, we allow seconds to be omitted per ISO 8601-1:2019 5.3.1.3a "Representations with reduced precision". ISO 8601-1:2019 5.3.1.3b allows just specifying the hour, but we currently don't permit this.
+ISO 8601-1:2019 5.3.14 allows decimal fractions for hours, minutes and seconds. Only second fractions are supported. Lower order components can't follow, i.e. you can have T23.3, but not T23.3:04.
+There must be one digit, but the maximum number of digits is implementation defined. Up to 16 digits of fractional seconds are supported. While up to 16 fractional digits are allowed, only the first seven are parsed.
+Anything beyond that is considered a zero. This is to stay compatible with the <xref:System.DateTime> implementation which is limited to this resolution.
 
-Decimal fractions are allowed for hours, minutes and seconds (ISO 8601-1:2019 5.3.14). We only allow fractions for seconds currently. Lower order components can't follow, i.e. you can have T23.3, but not T23.3:04.
-There must be one digit, but the max number of digits is implemenation defined. We currently allow up to 16 digits of fractional seconds only. While we support 16 fractional digits we only parse the first seven,
-anything past that is considered a zero. This is to stay compatible with the DateTime implementation which is limited to this resolution.
+Leap seconds are not supported.
 
-We currently don't support leap seconds. See https://github.com/dotnet/corefx/issues/39185.
-
-### Formatting
+### Support for formatting
 
 The following levels of granularity are defined for formatting:
 
 1. `full-date "T" partial-time`
 	1. `YYYY-MM-DDThh:mm:ss` 
 
-	Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds and of kind <xref:System.DateTimeKind.Unspecified>
+		Used to format a <xref:System.DateTime> without fractional seconds and without offset information.
 
 	2. `YYYY-MM-DDThh:mm:ss.s`
 
-	Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and of kind <xref:System.DateTimeKind.Unspecified>
+		Used to format a <xref:System.DateTime> with fractional seconds but without offset information.
 
 2. `date-time` (ISO 8601-1:2019 5.4.2.1)
 	1. `YYYY-MM-DDThh:mm:ssZ`
 
-	Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds and of kind <xref:System.DateTimeKind.Utc>
+		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a UTC offset.
 
 	2. `YYYY-MM-DDThh:mm:ss.sZ`
 
-	Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and of kind <xref:System.DateTimeKind.Utc>
+		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a UTC offset.
 
 	3. `YYYY-MM-DDThh:mm:ss("+" / "-")hh":"mm`
 
-	Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds and of kind <xref:System.DateTimeKind.Local>
+		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a local offset.
 
 	4. `YYYY-MM-DDThh:mm:ss.s("+" / "-")hh":"mm`
 
-	Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and of kind <xref:System.DateTimeKind.Local>
+		Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
 
 ## Custom support for date and times in `JsonSerializer`
 
 If you want custom parsing or formatting at the serializer level, you can implement [custom converters](https://github.com/dotnet/corefx/issues/36639). Here are a few examples:
 
-1. Using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
+### Using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
-This allows you to use .NET's most comprehensive effort at parsing various date-time formats including non-ISO 8601 strings and ISO 8601 formats that don't conform to the Extended ISO 8601-1:2019 profile.
-This approach can be used if you can't determine the input date-time formats, but is significantly less performant than using the serializer's native implementation.
+This allows you to use .NET's extensive support for parsing various date and time formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the Extended ISO 8601-1:2019 profile.
+This approach can be used if you can't determine the input date and time formats, but it is significantly less performant than using the serializer's native implementation.
 
-```C#
-using System;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
+[!code-csharp[description-of-code](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example1/Program.cs)]
 
-namespace DateTimeConverterExamples
-{
-    public class DateTimeConverterExample1 : JsonConverter<DateTime>
-    {
-        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-        {
-            if (reader.TokenType != JsonTokenType.String)
-            {
-                throw new JsonException();
-            }
+### Using `UTF8Parser` and `UTF8Formatter`.
 
-            return DateTime.Parse(reader.GetString());
-        }
+This allows you to use fast parsing and formatting methods for UTF-8 date and time data that is compliant with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
+This is much faster than Example 1 and should be used if the input data isn't compliant with the Extended ISO 8601-1:2019 profile but conforms to the "R", "l", "O", or "G" standard format specifiers.
 
-        public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
-        {
-            writer.WriteStringValue(value.ToString());
-        }
-    }
+[!code-csharp[description-of-code](~/samples/snippets/standard/datetime/json/datetime-converter-examples/example2/Program.cs)]
 
-    class Program
-    {
-        private static void ParseDateTimeWithDefaultOptions_Example1()
-        {
-            var _ = JsonSerializer.Deserialize<DateTime>(@"""04-10-2008 6:30 AM"""); // Throws JsonException
-        }
+### Using `DateTime(Offset).Parse` as a fallback to the serializers native parsing.
 
-        private static void FormatDateTimeWithDefaultOptions()
-        {
-            Console.WriteLine(JsonSerializer.Serialize(DateTime.Parse("04-10-2008 6:30 AM -4"))); // "2008-04-10T06:30:00-04:00"
-        }
-
-        private static void ProcessDateTimeWithCustomConverter_Example1()
-        {
-            var options = new JsonSerializerOptions();
-            options.Converters.Add(new DateTimeConverterExample1());
-
-            var testDateTimeStr = "04-10-2008 6:30 AM";
-            var testDateTimeJson = @"""" + testDateTimeStr + @"""";
-
-            var resultDateTime = JsonSerializer.Deserialize<DateTime>(testDateTimeJson, options);
-            Console.WriteLine(resultDateTime); // 4/10/2008 6:30:00 AM
-
-            var resultDateTimeJson = JsonSerializer.Serialize(DateTime.Parse(testDateTimeStr), options);
-            Console.WriteLine(Regex.Unescape(resultDateTimeJson));  // "4/10/2008 6:30:00 AM"
-        }
-
-        static void Main(string[] args)
-        {
-            // Parsing non-compliant format as DateTime fails by default.
-            try
-            {
-                ParseDateTimeWithDefaultOptions_Example1();
-            }
-            catch (JsonException e)
-            {
-                Console.WriteLine(e.Message); // The JSON value could not be converted to System.DateTime. Path: $ | LineNumber: 0 | BytePositionInLine: 20.
-            }
-
-            // Formatting with default options prints according to extended ISO 8601 profile.
-            FormatDateTimeWithDefaultOptions();
-
-            // Using converters gives you control over the serializers parsing and formatting.
-            ProcessDateTimeWithCustomConverter_Example1();
-        }
-    }
-}
-
-// The example displays the following output:
-// The JSON value could not be converted to System.DateTime. Path: $ | LineNumber: 0 | BytePositionInLine: 20.
-// "2008-04-10T06:30:00-04:00"
-// 4/10/2008 6:30:00 AM
-// "4/10/2008 6:30:00 AM"
-```
-
-2. Using `UTF8Parser` and `UTF8Formatter`.
-
-This allows you to use fast parsing and formatting methods for UTF-8 date-time data that is compliant with one of the [Standard Date and Time Format Strings](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
-This is much faster than Example 1 and should be used if the input data isn't compliant with the Extended ISO 8601-1:2019 profile but conforms to the "R", "l", "O", or "G" Standard Format Specifiers.
-
-```C#
-using System;
-using System.Buffers;
-using System.Buffers.Text;
-using System.Diagnostics;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-
-namespace DateTimeConverterExamples
-{
-    public class DateTimeConverterExample2 : JsonConverter<DateTime>
-    {
-        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-        {
-            if (reader.TokenType != JsonTokenType.String)
-            {
-                throw new JsonException();
-            }
-
-            if (Utf8Parser.TryParse(reader.ValueSpan, out DateTime value, out _, 'R'))
-            {
-                reader.Read();
-                return value;
-            }
-
-            throw new FormatException();
-        }
-
-        public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
-        {
-            Span<byte> destination = new byte[29];
-
-            bool result = Utf8Formatter.TryFormat(value, destination, out _, new StandardFormat('R'));
-            Debug.Assert(result);
-
-            writer.WriteStringValue(Encoding.UTF8.GetString(destination));
-        }
-    }
-
-    class Program
-    {
-        private static void ParseDateTimeWithDefaultOptions_Example2()
-        {
-            var _ = JsonSerializer.Deserialize<DateTime>(@"""Thu, 25 Jul 2019 13:36:07 GMT"""); // Throws JsonException
-        }
-
-        private static void ProcessDateTimeWithCustomConverter_Example2()
-        {
-            var options = new JsonSerializerOptions();
-            options.Converters.Add(new DateTimeConverterExample2());
-
-            var testDateTimeStr = "Thu, 25 Jul 2019 13:36:07 GMT";
-            var testDateTimeJson = @"""" + testDateTimeStr + @"""";
-
-            var resultDateTime = JsonSerializer.Deserialize<DateTime>(testDateTimeJson, options);
-            Console.WriteLine(resultDateTime); // 7/25/2019 1:36:07 PM
-
-            Console.WriteLine(JsonSerializer.Serialize(DateTime.Parse(testDateTimeStr), options)); // "Thu, 25 Jul 2019 09:36:07 GMT"
-        }
-
-        static void Main(string[] args)
-        {
-            // Parsing non-compliant format as DateTime fails by default.
-            try
-            {
-                ParseDateTimeWithDefaultOptions_Example2();
-            }
-            catch (JsonException e)
-            {
-                Console.WriteLine(e.Message); // The JSON value could not be converted to System.DateTime. Path: $ | LineNumber: 0 | BytePositionInLine: 31.
-            }
-
-            // Using converters gives you control over the serializers parsing and formatting.
-            ProcessDateTimeWithCustomConverter_Example2();
-        }
-    }
-}
-
-// The example displays the following output:
-// The JSON value could not be converted to System.DateTime.Path: $ | LineNumber: 0 | BytePositionInLine: 31.
-// 7/25/2019 1:36:07 PM
-// "Thu, 25 Jul 2019 09:36:07 GMT"
-```
-
-3. Using `DateTime(Offset).Parse` as a fallback to the serializers native parsing.
-
-This approach can be used if you generally expect the input date-time data to conform to the Extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
+This approach can be used if you generally expect the input date and time data to conform to the Extended ISO 8601-1:2019 profile, but want to have a fallback just in case.
 
 ```C#
 public class DateTimeConverterExample3 : JsonConverter<DateTime>

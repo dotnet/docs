@@ -15,35 +15,26 @@ If you don't want to build the applications yourself, you can download "Async Sa
 
 In this walkthrough, you complete the following tasks:
 
-- [To create a WPF application](#CreateWPFApp)
+> [!div class="checklist"]
+> * [Create a WPF application](#create-a-wpf-application)
+> * [Design a simple WPF MainWindow](#design-a-simple-wpf-mainwindow)
+> * [Add a reference](#add-a-reference)
+> * [Add necessary Imports statements](#add-necessary-imports-statements)
+> * [Create a synchronous application](#create-a-synchronous-application)
+> * [Test the synchronous solution](#test-the-synchronous-solution)
+> * [Convert GetURLContents to an asynchronous method](#convert-geturlcontents-to-an-asynchronous-method)
+> * [Convert SumPageSizes to an asynchronous method](#convert-sumpagesizes-to-an-asynchronous-method)
+> * [Convert startButton_Click to an asynchronous method](#convert-startbutton_click-to-an-asynchronous-method)
+> * [Test the asynchronous solution](#test-the-asynchronous-solution)
+> * [Replace the GetURLContentsAsync method with a .NET Framework method](#replace-the-geturlcontentsasync-method-with-a-net-framework-method)
 
-- [To design a simple WPF MainWindow](#MainWindow)
-
-- [To add a reference](#AddRef)
-
-- [To add necessary Imports statements](#ImportsState)
-
-- [To create a synchronous application](#synchronous)
-
-- [To test the synchronous solution](#testSynch)
-
-- [To convert GetURLContents to an asynchronous method](#GetURLContents)
-
-- [To convert SumPageSizes to an asynchronous method](#SumPageSizes)
-
-- [To convert startButton_Click to an asynchronous method](#startButton)
-
-- [To test the asynchronous solution](#testAsynch)
-
-- [To replace method GetURLContentsAsync with a .NET Framework method](#GetURLContentsAsync)
-
-- [Example](#BKMK_CompleteCodeExamples)
+See the [Example](#example) section for the complete asynchronous example.
 
 ## Prerequisites
 
-Visual Studio 2012 or later must be installed on your computer. For more information, see the [Microsoft website](https://go.microsoft.com/fwlink/?LinkId=235233).
+Visual Studio 2012 or later must be installed on your computer. For more information, see the Visual Studio [Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
 
-### <a name="CreateWPFApp"></a> To create a WPF application
+## Create a WPF application
 
 1. Start Visual Studio.
 
@@ -57,9 +48,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     The new project appears in **Solution Explorer**.
 
-<a name="BKMK_DesignWPFMainWin"></a>
-
-### <a name="MainWindow"></a> To design a simple WPF MainWindow
+## Design a simple WPF MainWindow
 
 1. In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.
 
@@ -87,9 +76,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).
 
-<a name="BKMK_AddReference"></a>
-
-### <a name="AddRef"></a> To add a reference
+## Add a reference
 
 1. In **Solution Explorer**, highlight your project's name.
 
@@ -105,9 +92,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 6. Choose the **OK** button to close the dialog box.
 
-<a name="BKMK_AddStatesandDirs"></a>
-
-### <a name="ImportsState"></a> To add necessary Imports statements
+## Add necessary Imports statements
 
 1. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.
 
@@ -119,9 +104,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
     Imports System.IO
     ```
 
-<a name="BKMK_CreatSynchApp"></a>
-
-### <a name="synchronous"></a> To create a synchronous application
+## Create a synchronous application
 
 1. In the design window, MainWindow.xaml, double-click the **Start** button to create the `startButton_Click` event handler in MainWindow.xaml.vb.
 
@@ -221,9 +204,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
     End Sub
     ```
 
-<a name="BKMK_TestSynchSol"></a>
-
-### <a name="testSynch"></a> To test the synchronous solution
+## Test the synchronous solution
 
 1. Choose the F5 key to run the program, and then choose the **Start** button.
 
@@ -248,11 +229,9 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.
 
-<a name="BKMK_ConvertGtBtArr"></a>
+## Convert GetURLContents to an asynchronous method
 
-### <a name="GetURLContents"></a> To convert GetURLContents to an asynchronous method
-
-1. To convert the synchronous solution to an asynchronous solution, the best place to start is in `GetURLContents` because the calls to the <xref:System.Net.HttpWebRequest> method <xref:System.Net.HttpWebRequest.GetResponse%2A> and to the <xref:System.IO.Stream> method <xref:System.IO.Stream.CopyTo%2A> are where the application accesses the web. The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.
+1. To convert the synchronous solution to an asynchronous solution, the best place to start is in `GetURLContents` because the calls to the <xref:System.Net.HttpWebRequest.GetResponse%2A?displayProperty=nameWithType> method and to the <xref:System.IO.Stream.CopyTo%2A?displayProperty=nameWithType> method are where the application accesses the web. The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.
 
     For more information about the methods that are used in `GetURLContents`, see <xref:System.Net.WebRequest>.
 
@@ -331,9 +310,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     With those few changes, the conversion of `GetURLContents` to an asynchronous method is complete.
 
-<a name="BKMK_ConvertSumPagSzs"></a>
-
-### <a name="SumPageSizes"></a> To convert SumPageSizes to an asynchronous method
+## Convert SumPageSizes to an asynchronous method
 
 1. Repeat the steps from the previous procedure for `SumPageSizes`. First, change the call to `GetURLContents` to an asynchronous call.
 
@@ -372,8 +349,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     The conversion of `SumPageSizes` to `SumPageSizesAsync` is complete.
 
-## <a name="BKMK_Cnvrtbttn1"></a>
-### <a name="startButton"></a> To convert startButton_Click to an asynchronous method
+## Convert startButton_Click to an asynchronous method
 
 1. In the event handler, change the name of the called method from `SumPageSizes` to `SumPageSizesAsync`, if you haven’t already done so.
 
@@ -418,9 +394,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     The conversion of the project from synchronous to asynchronous processing is complete.
 
-<a name="BKMK_testAsynchSolution"></a>
-
-### <a name="testAsynch"></a> To test the asynchronous solution
+## Test the asynchronous solution
 
 1. Choose the F5 key to run the program, and then choose the **Start** button.
 
@@ -430,13 +404,11 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     - Most importantly, the UI thread isn’t blocked during the downloads. You can move or resize the window while the web resources are being downloaded, counted, and displayed. If one of the websites is slow or not responding, you can cancel the operation by choosing the **Close** button (the x in the red field in the upper-right corner).
 
-<a name="BKMK_ReplaceGetByteArrayAsync"></a>
+## Replace the GetURLContentsAsync method with a .NET Framework method
 
-### <a name="GetURLContentsAsync"></a> To replace method GetURLContentsAsync with a .NET Framework method
+1. The .NET Framework provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29?displayProperty=nameWithType> method, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
 
-1. The .NET Framework 4.5 provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
-
-    The first step is to create an `HttpClient` object in method `SumPageSizesAsync`. Add the following declaration at the start of the method.
+    The first step is to create an <xref:System.Net.Http.HttpClient> object in the `SumPageSizesAsync` method. Add the following declaration at the start of the method.
 
     ```vb
     ' Declare an HttpClient object and increase the buffer size. The
@@ -457,9 +429,9 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
     The behavior of this version of the project should match the behavior that the "To test the asynchronous solution" procedure describes but with even less effort from you.
 
-## <a name="BKMK_CompleteCodeExamples"></a> Example
+## Example
 
-The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous `GetURLContentsAsync` method that you wrote. Notice that it strongly resembles the original, synchronous solution.
+The following is the full example of the converted asynchronous solution that uses the asynchronous `GetURLContentsAsync` method. Notice that it strongly resembles the original, synchronous solution.
 
 ```vb
 ' Add the following Imports statements, and add a reference for System.Net.Http.

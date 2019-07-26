@@ -55,7 +55,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 * [solution](/nuget/schema/nuget-config-file#solution-section)
 
-  This setting is only Visual Studio specific and does not apply to .NET Core. .NET Core does not use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
+  This setting is Visual Studio specific and doesn't apply to .NET Core. .NET Core doesn't use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
 
 * [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 

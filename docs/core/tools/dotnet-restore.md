@@ -51,7 +51,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 * [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
 
-  Binding redirects do not work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
+  Binding redirects don't work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
 
 * [solution](/nuget/schema/nuget-config-file#solution-section)
 

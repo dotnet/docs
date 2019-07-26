@@ -15,29 +15,20 @@ If you don't want to build the applications yourself, you can download "Async Sa
 
 In this walkthrough, you complete the following tasks:
 
-- [Create a WPF application](#CreateWPFApp)
+> [!div class="checklist"]
+> * [Create a WPF application](#CreateWPFApp)
+> * [Design a simple WPF MainWindow](#MainWindow)
+> * [Add a reference](#AddRef)
+> * [Add necessary Imports statements](#ImportsState)
+> * [Create a synchronous application](#synchronous)
+> * [Test the synchronous solution](#testSynch)
+> * [Convert GetURLContents to an asynchronous method](#GetURLContents)
+> * [Convert SumPageSizes to an asynchronous method](#SumPageSizes)
+> * [Convert startButton_Click to an asynchronous method](#startButton)
+> * [Test the asynchronous solution](#testAsynch)
+> * [Replace the GetURLContentsAsync method with a .NET Framework method](#GetURLContentsAsync)
 
-- [Design a simple WPF MainWindow](#MainWindow)
-
-- [Add a reference](#AddRef)
-
-- [Add necessary Imports statements](#ImportsState)
-
-- [Create a synchronous application](#synchronous)
-
-- [Test the synchronous solution](#testSynch)
-
-- [Convert GetURLContents to an asynchronous method](#GetURLContents)
-
-- [Convert SumPageSizes to an asynchronous method](#SumPageSizes)
-
-- [Convert startButton_Click to an asynchronous method](#startButton)
-
-- [Test the asynchronous solution](#testAsynch)
-
-- [Replace the GetURLContentsAsync method with a .NET Framework method](#GetURLContentsAsync)
-
-- [Example](#BKMK_CompleteCodeExamples)
+For the complete example, see [Example](#BKMK_CompleteCodeExamples).
 
 ## Prerequisites
 

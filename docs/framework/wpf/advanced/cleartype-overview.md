@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 7e2392e0-75dc-463d-a716-908772782431
 ---
 # ClearType Overview
-This topic provides an overview of the [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] technology found in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
+This topic provides an overview of the Microsoft ClearType technology found in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
 
 <a name="overview"></a>   
 ## Technology Overview  

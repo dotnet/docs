@@ -19,7 +19,7 @@ In this walkthrough, you complete the following tasks:
 > * [Create a WPF application](#create-a-wpf-application)
 > * [Design a simple WPF MainWindow](#design-a-simple-wpf-mainwindow)
 > * [Add a reference](#add-a-reference)
-> * [Add necessary Imports statements](#add-necessary-imports=statements)
+> * [Add necessary Imports statements](#add-necessary-imports-statements)
 > * [Create a synchronous application](#create-a-synchronous-application)
 > * [Test the synchronous solution](#test-the-synchronous-solution)
 > * [Convert GetURLContents to an asynchronous method](#convert-geturlcontents-to-an-asynchronous-method)
@@ -406,9 +406,9 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 ## Replace the GetURLContentsAsync method with a .NET Framework method
 
-1. The .NET Framework 4.5 provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29?displayProperty=nameWithType> method, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
+1. The .NET Framework provides many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29?displayProperty=nameWithType> method, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
 
-    The first step is to create an <xref:System.Net.Http.HttpClient> object in method `SumPageSizesAsync`. Add the following declaration at the start of the method.
+    The first step is to create an <xref:System.Net.Http.HttpClient> object in the `SumPageSizesAsync` method. Add the following declaration at the start of the method.
 
     ```vb
     ' Declare an HttpClient object and increase the buffer size. The

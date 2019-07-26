@@ -8,7 +8,7 @@ ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe
 When you include asynchronous code in your app, you should consider and possibly prevent reentrancy, which refers to reentering an asynchronous operation before it has completed. If you don't identify and handle possibilities for reentrancy, it can cause unexpected results.
 
 > [!NOTE]
->  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+> To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
 
 ## <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy
 

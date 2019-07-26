@@ -110,8 +110,20 @@
       "ms.prod":"dotnet",
       "ms.topic": "conceptual",
       "_op_documentIdPathDepotMapping": {
-	"docs/standard/": { 
-	   "folder_relative_path_in_docset": "docs/architecture/"
+	"docs/standard/containerized-lifecycle-architecture": { 
+	   "folder_relative_path_in_docset": "docs/architecture/containerized-lifecycle"
+	},
+	"docs/standard/microservices-architecture": { 
+	   "folder_relative_path_in_docset": "docs/architecture/microservices"
+	},
+	"docs/standard/modern-web-apps-azure-architecture": { 
+	   "folder_relative_path_in_docset": "docs/architecture/modern-web-apps-azure"
+	},
+	"docs/standard/modernize-with-azure-and-containers": { 
+	   "folder_relative_path_in_docset": "docs/architecture/modernize-with-azure-containers"
+	},
+	"docs/standard/serverless-architecture": { 
+	   "folder_relative_path_in_docset": "dotnet/architecture/serverless"
 	}
       },
       "feedback_system": "GitHub",

@@ -24,7 +24,7 @@ In this walkthrough, you complete the following tasks:
 > * [Test the synchronous solution](#test-the-synchronous-solution)
 > * [Convert GetURLContents to an asynchronous method](#convert-geturlcontents-to-an-asynchronous-method)
 > * [Convert SumPageSizes to an asynchronous method](#convert-sumpagesizes-to-an-asynchronous-method)
-> * [Convert startButton_Click to an asynchronous method](#convert-startbutton-click-to-an-asynchronous-method)
+> * [Convert startButton_Click to an asynchronous method](#convert-startbutton_-_click-to-an-asynchronous-method)
 > * [Test the asynchronous solution](#test-the-asynchronous-solution)
 > * [Replace the GetURLContentsAsync method with a .NET Framework method](#replace-the-geturlcontentsasync-method-with-a-net-framework-method)
 

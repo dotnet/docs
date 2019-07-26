@@ -47,7 +47,7 @@ For project-specific tooling, `dotnet restore` first restores the package in whi
 
 The behavior of the `dotnet restore` command is affected by the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
 
-There are three specific settings that `dotnet restore` ignores.
+There are three specific settings that `dotnet restore` ignores:
 
 * [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
 

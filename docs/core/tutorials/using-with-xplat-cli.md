@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
-author: cartermp
+author: thraka
 ms.date: 09/10/2018
 ms.technology: dotnet-cli
 ms.custom: "seodec18"
@@ -146,6 +146,39 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
    233
    377
    ```
+
+## Publish your app
+
+Once you're ready to distribute your app, you can publish it with the command [`dotnet publish`](../tools/dotnet-publish.md). Depending on the current .NET Core SDK you're using, the default [`dotnet publish`](../tools/dotnet-publish.md) command will choose a specific publishing method by default. For more information on what the default publishing method is for your SDK version, see [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli,md) .
+
+There are two publishing methods:
+
+01. **Framework-dependent deployments** (FDD)\
+Framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core. Because .NET Core is already present, your app is portable between installations of .NET Core. Your app deployment contains your app along with any third-party dependencies that are outside of the .NET Core libraries. FDDs produce a *.dll* file that can be launched by using the `dotnet` utility from the command line. For example, `dotnet app.dll` runs an application named app.
+
+    ```console
+    dotnet publish
+    ```
+
+01. **Self-contained deployments** (SCD)\
+Unlike FDD, a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable named similar to your app which is a of the platform-specific .NET Core host, and your app *.dll* file, which is the actual application. SCD produces platform-specific binaries.
+
+    ```console
+    dotnet publish -c Release -r <RID> --self-contained true
+    ```
+
+    For more information about runtime identifiers (RID), see the [.NET Core RID Catalog](../rid-catalog.md).
+
+<!-- Does not exist in 2.1 which this tutorial was written for --- Update this article for 3.0
+
+01. **Framework-dependent executables** (FDE)\
+Produces an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) are platform-specific and aren't self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run.
+
+-->
+
+For more information on the three publishing methods, see [Application Deployment](../deploying/index.md)
+
+## Conclusion
 
 And that's it! Now, you can start using the basic concepts learned here to create your own programs.
 

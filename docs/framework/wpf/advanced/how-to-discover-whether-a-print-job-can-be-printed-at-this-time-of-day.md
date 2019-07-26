@@ -16,7 +16,7 @@ Print queues are not always available for 24 hours a day. They have start and en
   
  Moreover, print jobs themselves can be set to be printable only within a specified span of time.  
   
- The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
+ The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the APIs of Microsoft .NET Framework provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
   
 ## Example  
  The example below is a sample that can diagnose problems with a print job.  

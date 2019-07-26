@@ -23,7 +23,7 @@ Notifies the debugger that a thread that was executing managed code has exited.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitThread (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *thread  

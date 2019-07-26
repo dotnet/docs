@@ -23,7 +23,7 @@ Gets the number of managed modules that were loaded into the application.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount([out] ULONG * pcelt);  
 ```  
   

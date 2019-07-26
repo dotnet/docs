@@ -23,7 +23,7 @@ Gets an [ICLRReferenceAssemblyEnum](../../../../docs/framework/unmanaged-api/hos
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferencedAssembliesFromFile (  
     [in]  LPCWSTR pwzFilePath,  
     [in]  DWORD   dwFlags,  

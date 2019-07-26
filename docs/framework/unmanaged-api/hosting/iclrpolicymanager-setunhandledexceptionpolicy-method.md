@@ -23,7 +23,7 @@ Specifies the behavior of the common language runtime (CLR) when an unhandled ex
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnhandledExceptionPolicy (  
     [in] EClrUnhandledExceptionPolicy policy  
 );  

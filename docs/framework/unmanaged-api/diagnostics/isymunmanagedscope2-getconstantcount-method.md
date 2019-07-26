@@ -23,7 +23,7 @@ Gets a count of the constants defined within this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConstantCount(  
     [out, retval] ULONG32 *pRetVal);  
 ```  

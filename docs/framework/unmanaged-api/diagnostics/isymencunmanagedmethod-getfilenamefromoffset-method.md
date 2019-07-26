@@ -23,7 +23,7 @@ Gets the file name for the line associated with an offset.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileNameFromOffset(  
     [in]  ULONG32  dwOffset,  
     [in]  ULONG32  cchName,  

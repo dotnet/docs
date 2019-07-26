@@ -28,7 +28,7 @@ Creates an instance of the specified managed type.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI ClrCreateManagedInstance (  
     [in]  LPCWSTR  pTypeName,   
     [in]  REFIID   riid,   

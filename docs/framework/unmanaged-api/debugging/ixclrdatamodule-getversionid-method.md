@@ -24,7 +24,7 @@ Gets the module's version identifier.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetVersionId(
     [out] GUID* vid
 );

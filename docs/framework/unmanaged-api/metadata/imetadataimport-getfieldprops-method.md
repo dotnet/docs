@@ -23,7 +23,7 @@ Gets metadata associated with the field referenced by the specified FieldDef tok
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldProps (  
    [in]  mdFieldDef        mb,   
    [out] mdTypeDef         *pClass,  

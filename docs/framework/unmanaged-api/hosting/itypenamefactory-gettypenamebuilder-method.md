@@ -23,7 +23,7 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeNameBuilder (  
     [out, retval] ITypeNameBuilder** ppTypeBuilder  
 );  

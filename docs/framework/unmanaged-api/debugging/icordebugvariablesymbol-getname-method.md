@@ -10,7 +10,7 @@ Gets the name of a variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   

@@ -23,7 +23,7 @@ Detaches the debugger from the process or application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Detach ();  
 ```  
   

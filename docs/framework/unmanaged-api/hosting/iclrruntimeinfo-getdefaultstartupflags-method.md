@@ -23,7 +23,7 @@ Gets the startup flags and host configuration file that will be used to start th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDefaultStartupFlags(  
      [out]  DWORD *pdwStartupFlags,  
      [out, size_is(*pcchHostConfigFile)] LPWSTR pwzHostConfigFile,  

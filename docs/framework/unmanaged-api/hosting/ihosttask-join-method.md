@@ -23,7 +23,7 @@ Blocks the calling task until the task represented by the current [IHostTask](..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Join (  
     [in] DWORD milliseconds,  
     [in] DWORD option  

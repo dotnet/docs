@@ -23,7 +23,7 @@ Gets an enumerator for the arguments in this frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateArguments (  
     [out] ICorDebugValueEnum    **ppValueEnum  
 );  

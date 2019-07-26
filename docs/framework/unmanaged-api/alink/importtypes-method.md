@@ -22,7 +22,7 @@ Initiates the importing of types from each scope imported via [ImportFile Method
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportTypes(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  

@@ -24,7 +24,7 @@ Contains the offset information for a range of code.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     ULONG32 startOffset;  
     ULONG32 endOffset;  

@@ -22,7 +22,7 @@ Contains values that describe the native type of a runtime handle.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorArgType {  
   
     IMAGE_CEE_CS_END        = 0x0,  

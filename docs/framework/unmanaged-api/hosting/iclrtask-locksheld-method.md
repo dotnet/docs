@@ -23,7 +23,7 @@ Gets the number of locks currently held on the task.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LocksHeld (  
     [out] SIZE_T *pLockCount  
 );  

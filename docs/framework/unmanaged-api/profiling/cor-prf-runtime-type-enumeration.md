@@ -22,7 +22,7 @@ Contains values that indicate the version of the common language runtime (CLR): 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     COR_PRF_DESKTOP_CLR = 0x1,  

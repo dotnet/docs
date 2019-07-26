@@ -18,7 +18,7 @@ Notifies the profiler whenever a dynamic method is garbage collected and subsequ
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DynamicMethodUnloaded(  
      [in]  FunctionID  functionId
 );  

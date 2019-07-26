@@ -23,7 +23,7 @@ Gets the version number of the latest edit made to the function represented by t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentVersionNumber (  
     [out] ULONG32 *pnCurrentVersion  
 );  

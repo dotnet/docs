@@ -10,7 +10,7 @@ Gets the assembly's prefix index.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIndex(  
    [out] ULONG32 *pIndex  
 );  

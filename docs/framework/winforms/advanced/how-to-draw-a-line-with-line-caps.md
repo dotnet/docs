@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: eb68c3e1-c400-4886-8a04-76978a429cb6
 ---
 # How to: Draw a Line with Line Caps
-You can draw the start or end of a line in one of several shapes called line caps. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] supports several line caps, such as round, square, diamond, and arrowhead.  
+You can draw the start or end of a line in one of several shapes called line caps. GDI+ supports several line caps, such as round, square, diamond, and arrowhead.  
   
 ## Example  
  You can specify line caps for the start of a line (start cap), the end of a line (end cap), or the dashes of a dashed line (dash cap).  

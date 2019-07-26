@@ -22,7 +22,7 @@ Indicates the types of code that can be intercepted (that is, stepped into).
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugIntercept {  
     INTERCEPT_NONE                = 0x0,  
     INTERCEPT_CLASS_INIT          = 0x01,  

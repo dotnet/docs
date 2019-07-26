@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: cd0ed96a-cce4-47b9-b58a-3bae2e3d1bee
 ---
 # How to: Draw a Custom Dashed Line
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides several dash styles that are listed in the <xref:System.Drawing.Drawing2D.DashStyle> enumeration. If those standard dash styles do not suit your needs, you can create a custom dash pattern.  
+GDI+ provides several dash styles that are listed in the <xref:System.Drawing.Drawing2D.DashStyle> enumeration. If those standard dash styles do not suit your needs, you can create a custom dash pattern.  
   
 ## Example  
  To draw a custom dashed line, put the lengths of the dashes and spaces in an array and assign the array as the value of the <xref:System.Drawing.Pen.DashPattern%2A> property of a <xref:System.Drawing.Pen> object. The following example draws a custom dashed line based on the array `{5, 2, 15, 4}`. If you multiply the elements of the array by the pen width of 5, you get `{25, 10, 75, 20}`. The displayed dashes alternate in length between 25 and 75, and the spaces alternate in length between 10 and 20.  

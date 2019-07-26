@@ -23,7 +23,7 @@ Notifies the host that the common language runtime (CLR) is about to take the de
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnDefaultAction (  
     [in] EClrOperation  operation,   
     [in] EPolicyAction  action  

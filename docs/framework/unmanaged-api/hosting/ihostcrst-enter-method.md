@@ -23,7 +23,7 @@ Enters the critical section that is represented by the current [IHostCrst](../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Enter (  
     [in] DWORD option  
 );  

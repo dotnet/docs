@@ -23,7 +23,7 @@ Associates an `ICLRTask` instance with the current [IHostTask](../../../../docs/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRTask (  
     [in] ICLRTask *pCLRTask  
 );  

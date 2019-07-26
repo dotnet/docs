@@ -30,7 +30,7 @@ The **behavior** element contains a collection of settings for the behavior of a
                            maxItemsInCache="Integer" />
         </sendMessageChannelCache>
         <sqlWorkflowInstanceStore connectionStringName="String" 
-                                  honstLockRenewalPeriod="TimeSpan" 
+                                  hostLockRenewalPeriod="TimeSpan" 
                                   instanceCompletionAction="DeleteNothing/DeleteAll" 
                                   instanceEncodingAction="None/GZip" 
                                   instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry" 

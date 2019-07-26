@@ -23,7 +23,7 @@ Gets the value of the custom attribute, given its metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomAttributeProps (  
    [in]            mdCustomAttribute   cv,  
    [out, optional] mdToken             *ptkObj,  

@@ -23,7 +23,7 @@ Gets an enumerator that contains all the managed stack frames in the chain, star
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateFrames (  
     [out] ICorDebugFrameEnum **ppFrames  
 );  

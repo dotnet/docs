@@ -23,7 +23,7 @@ Adds imports to the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddImport(  
     mdAssembly      AssemblyID,  
     mdToken         ImportToken,  

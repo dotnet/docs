@@ -22,7 +22,7 @@ Provides an interface for managing the deconstruction of a type name.
   
 ## Syntax  
   
-```  
+```cpp  
 coclass TypeNameFactory {  
     [default] interface ITypeNameFactory;  
 };  

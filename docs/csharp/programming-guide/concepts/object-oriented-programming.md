@@ -264,7 +264,7 @@ SampleClass sampleObject = new SampleClass
 
 For more information, see:
 
-- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)
+- [new Operator](../../../csharp/language-reference/operators/new-operator.md)
 
 - [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
 

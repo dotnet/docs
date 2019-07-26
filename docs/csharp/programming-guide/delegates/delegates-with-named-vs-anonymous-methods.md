@@ -35,6 +35,5 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can be ass
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Delegates](../../../csharp/programming-guide/delegates/index.md)
-- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
 - [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
 - [Events](../../../csharp/programming-guide/events/index.md)

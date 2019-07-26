@@ -23,7 +23,7 @@ Notifies the profiler that the process has received a remote method invocation o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientSendingMessage(  
     [in] GUID *pCookie,  
     [in] BOOL fIsAsync);  

@@ -23,7 +23,7 @@ Reads data from the specified virtual memory address into the specified buffer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReadVirtual (  
     [in] CLRDATA_ADDRESS    address,  
     [out, size_is(bytesRequested), length_is(*bytesRead)]   

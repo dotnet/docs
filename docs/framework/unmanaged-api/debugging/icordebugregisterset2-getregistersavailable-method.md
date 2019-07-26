@@ -23,7 +23,7 @@ Gets an array of bytes that provides a bitmap of the available registers.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegistersAvailable (  
     [in] ULONG32 numChunks,  
     [out, size_is(numChunks)] BYTE availableRegChunks[]  

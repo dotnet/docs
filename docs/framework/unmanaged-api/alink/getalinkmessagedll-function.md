@@ -23,7 +23,7 @@ Finds and loads the message DLL. Returns 0 if the message DLL could not be locat
   
 ## Syntax  
   
-```  
+```cpp  
 HINSTANCE WINAPI GetALinkMessageDll();  
 ```  
   

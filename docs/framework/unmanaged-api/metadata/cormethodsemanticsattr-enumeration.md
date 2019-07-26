@@ -22,7 +22,7 @@ Contains values that describe the relationship between a method and an associate
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodSemanticsAttr {  
   
     msSetter    =   0x0001,  

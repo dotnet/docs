@@ -40,7 +40,7 @@ You subscribe to an event that is published by another class when you want to wr
     }  
     ```  
   
-2. Use the addition assignment operator (`+=`) to attach your event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
+2. Use the addition assignment operator (`+=`) to attach an event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
   
     ```csharp
     publisher.RaiseCustomEvent += HandleCustomEvent;  
@@ -52,19 +52,18 @@ You subscribe to an event that is published by another class when you want to wr
     publisher.RaiseCustomEvent += new CustomEventHandler(HandleCustomEvent);  
     ```  
   
-     An event handler can also be added by using a lambda expression:  
+     You also can use a [lambda expression](../statements-expressions-operators/lambda-expressions.md) to specify an event handler:
   
     ```csharp
     public Form1()  
     {  
         InitializeComponent();  
-        // Use a lambda expression to define an event handler.  
-        this.Click += (s,e) => { MessageBox.Show(  
-           ((MouseEventArgs)e).Location.ToString());};  
+        this.Click += (s,e) =>
+            {
+                MessageBox.Show(((MouseEventArgs)e).Location.ToString());
+            };
     }  
     ```  
-  
-     For more information, see [How to: Use Lambda Expressions Outside LINQ](../../../csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md).  
   
 ### To subscribe to events by using an anonymous method  
   

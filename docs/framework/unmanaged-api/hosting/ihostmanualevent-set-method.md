@@ -23,7 +23,7 @@ Sets the current [IHostManualEvent](../../../../docs/framework/unmanaged-api/hos
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Set ();  
 ```  
   

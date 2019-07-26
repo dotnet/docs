@@ -23,7 +23,7 @@ Installs a specified notification source.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterNotifySource  
 (  
     [in]  INotifySource2*  in_pNotifySource,  

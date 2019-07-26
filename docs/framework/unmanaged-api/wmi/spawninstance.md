@@ -24,7 +24,7 @@ Creates a new instance of a class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SpawnInstance (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 

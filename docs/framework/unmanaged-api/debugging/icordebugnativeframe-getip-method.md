@@ -23,7 +23,7 @@ Gets the native code offset location to which the instruction pointer is current
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
     [out] ULONG32           *pnOffset  
 );  

@@ -23,7 +23,7 @@ Gets the language identifier of this document
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLanguage(  
     [out, retval]  GUID*  pRetVal);  
 ```  

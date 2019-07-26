@@ -22,7 +22,7 @@ Contains constant values that specify special identifiers.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     PROFILER_PARENT_UNKNOWN = 0xFFFFFFFD,  
     PROFILER_GLOBAL_CLASS   = 0xFFFFFFFE,  

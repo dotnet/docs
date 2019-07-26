@@ -29,7 +29,7 @@ Attributes and accessibility modifiers are not permitted on `let` bindings in cl
 
 The following code examples illustrate several types of `let` bindings in classes.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3001.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3001.fs)]
 
 The output is as follows.
 

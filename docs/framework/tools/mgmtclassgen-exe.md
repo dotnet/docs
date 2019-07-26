@@ -77,7 +77,7 @@ WMIClass [options]
   
 - A numeric property can be modified by the **Values** and **ValueMaps** qualifiers to indicate that the property can be set only to specified permissible values. An enumeration is generated with these **Values** and **ValueMaps** and the property is mapped to the enumeration.  
   
-- The WMI uses the term singleton to describe a class that can have only one instance. Therefore, the default constructor for a singleton class will initialize the class to the only instance of the class.  
+- The WMI uses the term singleton to describe a class that can have only one instance. Therefore, the parameterless constructor for a singleton class will initialize the class to the only instance of the class.  
   
 - A WMI class can have properties that are objects. When you generate a strongly-typed class for this type of WMI class, you should consider generating strongly-typed classes for the types of the embedded object properties. This will allow you to access the embedded objects in a strongly-typed manner. Note that the generated code might not be able to detect the type of the embedded object. In this case, a comment will be created in the generated code to notify you of this issue. You can then modify the generated code to type the property to the other generated class.  
   

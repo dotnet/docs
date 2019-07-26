@@ -23,7 +23,7 @@ Gets the native calling convention for the method that is represented by the spe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNativeCallConvFromSig (  
    [in]  void const  *pvSig,  
    [in]  ULONG       cbSig,  

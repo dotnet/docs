@@ -24,7 +24,7 @@ Points to a function that the common language runtime (CLR) calls to indicate th
   
 ## Syntax  
   
-```  
+```cpp  
 typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );  
 ```  
   

@@ -23,7 +23,7 @@ This method is not implemented. If called, it returns E_NOTIMPL.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindAssembly(  
     [in]  LPCWSTR  szAppBase,  
     [in]  LPCWSTR  szPrivateBin,  

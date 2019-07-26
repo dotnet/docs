@@ -22,7 +22,7 @@ Describes an item to be added to a custom dump in error reporting.
   
 ## Syntax  
   
-```  
+```cpp  
 struct {  
     ECustomDumpItemKind itemKind;   
     union {  

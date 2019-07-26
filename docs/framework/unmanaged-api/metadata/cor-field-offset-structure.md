@@ -22,7 +22,7 @@ Stores the offset, within a class, of the specified field.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_FIELD_OFFSET {  
     mdFieldDef  ridOfField;  
     ULONG       ulOffset;  

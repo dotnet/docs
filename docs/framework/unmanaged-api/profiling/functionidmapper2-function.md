@@ -22,7 +22,7 @@ Notifies the profiler that the given identifier of a function may be remapped to
   
 ## Syntax  
   
-```  
+```cpp  
 UINT_PTR __stdcall FunctionIDMapper2 (  
     [in]  FunctionID  funcId,  
     [in]  void * clientData,  

@@ -10,7 +10,7 @@ Decodes managed debug events that have been encapsulated in the payload of speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DecodeEvent(  
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  

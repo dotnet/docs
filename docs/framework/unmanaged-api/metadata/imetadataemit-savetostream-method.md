@@ -23,7 +23,7 @@ Saves all metadata in the current scope to the specified `IStream`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveToStream (   
     [in]  IStream     *pIStream,  
     [in]  DWORD       dwSaveFlags  

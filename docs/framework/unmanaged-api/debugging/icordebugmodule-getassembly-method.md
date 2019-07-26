@@ -23,7 +23,7 @@ Gets the containing assembly for this module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssembly(  
     [out] ICorDebugAssembly **ppAssembly  
 );  

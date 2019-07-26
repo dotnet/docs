@@ -23,7 +23,7 @@ Gets an enumerator that allows iteration over the frozen objects in the specifie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumModuleFrozenObjects(  
     [in] ModuleID moduleID,  
     [out] ICorProfilerObjectEnum** ppEnum);  

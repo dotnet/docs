@@ -23,7 +23,7 @@ Gets the method version. The method version starts at 1 and is incremented each 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodVersion (  
     [in]  ISymUnmanagedMethod* pMethod,  
     [out] int* version);  

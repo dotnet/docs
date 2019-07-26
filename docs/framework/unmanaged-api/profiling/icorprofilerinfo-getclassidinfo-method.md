@@ -23,7 +23,7 @@ Gets the parent module and the metadata token for the specified class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassIDInfo(  
     [in]  ClassID   classId,  
     [out] ModuleID  *pModuleId,  

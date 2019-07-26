@@ -23,7 +23,7 @@ Notifies the profiler that the search phase of exception handling has finished s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionSearchFunctionLeave();  
 ```  
   

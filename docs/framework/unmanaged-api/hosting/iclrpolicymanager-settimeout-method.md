@@ -23,7 +23,7 @@ Sets a timeout value for the specified operation.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTimeout (  
     [in] EClrOperation operation,  
     [in] DWORD dsMilliseconds  

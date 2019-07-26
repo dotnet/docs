@@ -23,7 +23,7 @@ Requests that the host move the task represented by the current [IHostTask](../.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start ();  
 ```  
   

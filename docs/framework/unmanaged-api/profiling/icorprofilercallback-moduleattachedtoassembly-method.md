@@ -23,7 +23,7 @@ Notifies the profiler that a module is being attached to its parent assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleAttachedToAssembly(  
     [in] ModuleID   moduleId,  
     [in] AssemblyID AssemblyId);  

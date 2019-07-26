@@ -23,7 +23,7 @@ Gets the identifier of the task running on this thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTaskID (  
     [out] TASKID  *pTaskId  
 );  

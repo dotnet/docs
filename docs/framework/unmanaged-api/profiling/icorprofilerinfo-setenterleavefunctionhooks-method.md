@@ -23,7 +23,7 @@ Specifies profiler-implemented functions to be called on "enter", "leave", and "
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetEnterLeaveFunctionHooks(  
     [in] FunctionEnter    *pFuncEnter,  
     [in] FunctionLeave    *pFuncLeave,  

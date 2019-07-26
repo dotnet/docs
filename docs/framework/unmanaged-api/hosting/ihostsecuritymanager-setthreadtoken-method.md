@@ -23,7 +23,7 @@ Sets a handle for the currently executing thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadToken (  
     [in] HANDLE hToken  
 );  

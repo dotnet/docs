@@ -17,7 +17,7 @@ In a relying party application, authorization determines what resources an authe
  RBAC is an authorization approach in which user permissions are managed and enforced by an application based on user roles. If a user has a role that is required to perform an action, the access is granted; otherwise, access is denied.  
   
 ### IPrincipal.IsInRole Method  
- To implement the RBAC approach in claims-aware applications, use the **IsInRole()** method in the **IPrinicpal** interface, just as you would in non-claims-aware applications. There are several ways of using the **IsInRole()** method:  
+ To implement the RBAC approach in claims-aware applications, use the **IsInRole()** method in the **IPrincipal** interface, just as you would in non-claims-aware applications. There are several ways of using the **IsInRole()** method:  
   
 - Explicitly calling on **IPrincipal.IsInRole("Administrator")**. In this approach, the outcome is a Boolean. Use it in your conditional statements. It can be used arbitrarily any place in your code.  
   

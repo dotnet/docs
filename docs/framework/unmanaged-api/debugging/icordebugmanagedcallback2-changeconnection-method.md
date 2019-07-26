@@ -23,7 +23,7 @@ Notifies the debugger that the set of tasks associated with the specified connec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ChangeConnection (  
     [in] ICorDebugProcess     *pProcess,  
     [in] CONNID               dwConnectionId  

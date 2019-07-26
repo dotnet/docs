@@ -23,7 +23,7 @@ Notifies the profiler that the specified thread has been suspended or is about t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeThreadSuspended(  
     [in] ThreadID threadId);  
 ```  

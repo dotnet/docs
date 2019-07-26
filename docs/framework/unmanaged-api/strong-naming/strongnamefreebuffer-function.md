@@ -28,7 +28,7 @@ Frees memory that was allocated with a previous call to a strong name function s
   
 ## Syntax  
   
-```  
+```cpp  
 VOID StrongNameFreeBuffer (   
    [in] BYTE   *pbMemory  
 );  

@@ -10,7 +10,7 @@ Creates a new stack unwinder that starts unwinding from an initial context (whic
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateVirtualUnwinder(  
     [in] DWORD nativeThreadID,  
     [in] ULONG32 contextFlags,  

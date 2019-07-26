@@ -97,7 +97,7 @@ You must always use relative endpoint addresses for IIS-hosted service endpoints
 
 ### Available Transports
 
-WCF services hosted in IIS 5.1 and IIS 6.0 are restricted to using HTTP-based communication. On these IIS platforms, configuring a hosted service to use a non-HTTP binding results in an error during service activation. For [!INCLUDE[iisver](../../../../includes/iisver-md.md)], the supported transports include HTTP, Net.TCP, Net.Pipe, Net.MSMQ, and msmq.formatname for backwards compatibility with existing MSMQ applications.
+WCF services hosted in IIS 5.1 and IIS 6.0 are restricted to using HTTP-based communication. On these IIS platforms, configuring a hosted service to use a non-HTTP binding results in an error during service activation. For IIS 7.0, the supported transports include HTTP, Net.TCP, Net.Pipe, Net.MSMQ, and msmq.formatname for backwards compatibility with existing MSMQ applications.
 
 ### HTTP Transport Security
 

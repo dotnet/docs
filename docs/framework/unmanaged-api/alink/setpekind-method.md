@@ -22,7 +22,7 @@ Determines the portable executable type, either machine-specific or machine-agno
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPEKind(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  

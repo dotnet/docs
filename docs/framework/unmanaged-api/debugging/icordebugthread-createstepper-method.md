@@ -23,7 +23,7 @@ Creates an ICorDebugStepper object that allows stepping through the active frame
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateStepper (  
     [out] ICorDebugStepper **ppStepper  
 );  

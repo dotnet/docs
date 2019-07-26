@@ -23,7 +23,7 @@ Notifies the profiler that the application is shutting down.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Shutdown();  
 ```  
   

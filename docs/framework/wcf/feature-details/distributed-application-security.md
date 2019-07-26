@@ -74,7 +74,7 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 |Windows|Allows SOAP message exchanges to occur under the authenticated context of a Windows credential. Uses SSPI negotiation mechanism to pick from either the Kerberos protocol or NTLM as an authentication service.|  
 |Username|Allows the service to require that the client be authenticated with a user name credential. Note that WCF does not allow any cryptographic operations with the user name, such as generating a signature or encrypting data. As such, WCF enforces that the transport is secured when using user name credentials.|  
 |Certificate|Allows the service to require that the client be authenticated using a certificate.|  
-|[!INCLUDE[infocard](../../../../includes/infocard-md.md)]|Allows the service to require that the client be authenticated using an [!INCLUDE[infocard](../../../../includes/infocard-md.md)].|  
+|CardSpace|Allows the service to require that the client be authenticated using an CardSpace.|  
   
 ### Programming Credentials  
  For each of the client credential types, the WCF programming model allows you to specify the credential values and credential validators by using service behaviors and channel behaviors.  

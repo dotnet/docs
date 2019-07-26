@@ -24,7 +24,7 @@ Gets the buffer size required for a hash, using the specified hash algorithm.
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameHashSize (  
     [in]  ULONG   ulHashAlg,  
     [out] DWORD   *pcbSize  

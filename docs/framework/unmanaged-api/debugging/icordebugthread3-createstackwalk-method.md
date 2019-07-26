@@ -23,7 +23,7 @@ Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debuggi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);  
 ```  
   

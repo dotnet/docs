@@ -23,7 +23,7 @@ Gets the number of elements in the enumeration that was retrieved by the specifi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CountEnum (  
    [in]  HCORENUM    hEnum,   
    [out] ULONG       *pulCount  

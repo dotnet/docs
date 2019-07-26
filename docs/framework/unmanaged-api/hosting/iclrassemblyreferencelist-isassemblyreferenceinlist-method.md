@@ -23,7 +23,7 @@ Gets a value that indicates whether the supplied pointer refers to an assembly i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsAssemblyReferenceInList (  
     [in] IUnknown *pName  
 );  

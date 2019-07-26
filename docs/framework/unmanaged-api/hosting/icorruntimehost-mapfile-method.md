@@ -23,7 +23,7 @@ Maps the specified file into memory. This method is obsolete.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MapFile(  
     [in]  HANDLE    hFile,  
     [out] HMODULE*  hMapAddress  

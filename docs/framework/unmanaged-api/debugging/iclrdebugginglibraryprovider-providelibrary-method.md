@@ -23,7 +23,7 @@ Gets a library provider callback interface that allows common language runtime (
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProvideLibrary(  
      [in] const WCHAR* pwszFileName,  
      [in] DWORD dwTimestamp,  

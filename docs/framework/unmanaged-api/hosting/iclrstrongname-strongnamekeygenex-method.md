@@ -23,7 +23,7 @@ Generates a new public/private key pair with the specified key size, for strong 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyGenEx (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  

@@ -23,7 +23,7 @@ Marks the function represented by this ICorDebugFunction2 for Just My Code stepp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMCStatus (  
     [in] BOOL   bIsJustMyCode  
 );  

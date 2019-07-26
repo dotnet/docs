@@ -16,7 +16,7 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
   
 - The WF 3 activity must be declared as `public` and cannot be `abstract`.  
   
-- The WF 3 activity must have a public default constructor.  
+- The WF 3 activity must have a public parameterless constructor.  
   
 - Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](https://go.microsoft.com/fwlink/?LinkId=178889) for details.  
   

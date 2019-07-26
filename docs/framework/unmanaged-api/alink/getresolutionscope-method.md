@@ -22,7 +22,7 @@ Retrieves the scope of a given type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetResolutionScope(  
     mdAssembly  AssemblyID,  
     mdToken     FileToken,  

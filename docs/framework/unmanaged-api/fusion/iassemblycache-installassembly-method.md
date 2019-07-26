@@ -23,7 +23,7 @@ Installs the specified assembly in the global assembly cache.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InstallAssembly (  
     [in] DWORD dwFlags,  
     [in] LPCWSTR pszManifestFilePath,  

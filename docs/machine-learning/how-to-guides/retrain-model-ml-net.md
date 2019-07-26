@@ -38,7 +38,7 @@ MLContext mlContext = new MLContext();
 // Define DataViewSchema of data prep pipeline and trained model
 DataViewSchema dataPrepPipelineSchema, modelSchema;
 
-// Load data prepration pipeline
+// Load data preparation pipeline
 ITransformer dataPrepPipeline = mlContext.Model.Load("data_preparation_pipeline.zip", out dataPrepPipelineSchema);
 
 // Load trained model

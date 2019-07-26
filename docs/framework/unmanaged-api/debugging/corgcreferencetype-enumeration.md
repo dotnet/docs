@@ -22,7 +22,7 @@ Identifies the source of an object to be garbage-collected.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     CorHandleStrong = 1,  
     CorHandleStrongPinning = 2,  

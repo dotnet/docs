@@ -23,7 +23,7 @@ Gets the Edit and Continue version of this function.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionNumber (  
     [out] ULONG32   *pnVersion  
 );  

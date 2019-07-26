@@ -24,7 +24,7 @@ Returns a textual rendering of the object in the Managed Object Format (MOF) syn
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectText (
    [in] int                vFunc, 
    [in] IWbemClassObject*   ptr, 

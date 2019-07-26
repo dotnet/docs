@@ -23,7 +23,7 @@ Returns an HRESULT that indicates whether launching a new process or attaching t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CanLaunchOrAttach (  
     [in] DWORD      dwProcessId,  
     [in] BOOL       win32DebuggingEnabled  

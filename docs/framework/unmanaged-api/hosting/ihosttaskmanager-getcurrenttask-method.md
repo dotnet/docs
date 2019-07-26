@@ -23,7 +23,7 @@ Gets an interface pointer to the task that is currently executing on the operati
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTask (  
     [out] IHostTask **pTask  
 );  

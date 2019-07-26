@@ -23,7 +23,7 @@ Called by the common language runtime (CLR) data access services to allocate mem
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AllocVirtual(  
     [in] CLRDATA_ADDRESS addr,  
     [in] ULONG32 size,  

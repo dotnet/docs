@@ -22,7 +22,7 @@ Closes the assembly file. Call this method after closing all other files, but be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT PreCloseAssembly(  
     mdAssembly AssemblyID  
 ) PURE;  

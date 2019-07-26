@@ -24,7 +24,7 @@ Gets a pointer to an interface that allows the common language runtime (CLR) to 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI GetCLRIdentityManager(  
     [in]  REFIID      riid,  
     [out] IUnknown  **ppManager  

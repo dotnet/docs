@@ -23,7 +23,7 @@ Gets the version number of the runtime that was used to build the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionString (  
    [out] LPWSTR      pwzBuf,  
    [in]  DWORD       ccBufSize,  

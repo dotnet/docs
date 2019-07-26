@@ -24,7 +24,7 @@ Points to a function that is called by the common language runtime (CLR) to exec
   
 ## Syntax  
   
-```  
+```cpp  
 typedef HRESULT (__stdcall *FExecuteInAppDomainCallback) (  
     [in] void  *cookie  
 );  

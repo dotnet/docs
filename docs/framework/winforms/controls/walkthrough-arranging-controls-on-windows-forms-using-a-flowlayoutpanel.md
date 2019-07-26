@@ -49,7 +49,7 @@ When you are finished, you'll have an understanding of the role played by these 
 
  The <xref:System.Windows.Forms.FlowLayoutPanel> control can resize or reflow its child controls as the dimensions of the parent form change.
 
-#### To arrange controls horizontally and vertically using a FlowLayoutPanel
+### To arrange controls horizontally and vertically using a FlowLayoutPanel
 
 1. Drag a <xref:System.Windows.Forms.FlowLayoutPanel> control from the **Toolbox** onto your form.
 
@@ -70,7 +70,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Changing Flow Direction
  The <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property allows you to change the direction in which controls are arranged. You can arrange the child controls from left to right, from right to left, from top to bottom, or from bottom to top.
 
-#### To change the flow direction in a FlowLayoutPanel
+### To change the flow direction in a FlowLayoutPanel
 
 1. Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection.TopDown>. Note that the child controls are rearranged into one or more columns, depending on the height of the control.
 
@@ -79,7 +79,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Inserting Flow Breaks
  The <xref:System.Windows.Forms.FlowLayoutPanel> control provides a FlowBreak property to its child controls. Setting the value of the FlowBreak property to `true` causes the <xref:System.Windows.Forms.FlowLayoutPanel> control to stop laying out controls in the current flow direction and wrap to the next row or column.
 
-#### To insert flow breaks
+### To insert flow breaks
 
 1. Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection.TopDown>.
 
@@ -90,7 +90,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Positioning Controls Using Docking and Anchoring
  Docking and anchoring behaviors of child controls differ from the behaviors in other container controls. Both docking and anchoring are relative to the largest control in the flow direction.
 
-#### To position controls using docking and anchoring
+### To position controls using docking and anchoring
 
 1. Increase the size of the <xref:System.Windows.Forms.FlowLayoutPanel> until the <xref:System.Windows.Forms.Button> controls are all arranged in a column.
 
@@ -109,7 +109,7 @@ When you are finished, you'll have an understanding of the role played by these 
 
  The <xref:System.Windows.Forms.Control.Margin%2A> property allows you to control the spacing between controls.
 
-#### To arrange controls using the Padding and Margin properties
+### To arrange controls using the Padding and Margin properties
 
 1. Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. If your form is large enough, the <xref:System.Windows.Forms.Button> controls will be moved into the first column of the <xref:System.Windows.Forms.FlowLayoutPanel> control.
 
@@ -120,7 +120,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Inserting Controls by Double-clicking Them in the Toolbox
  You can populate your <xref:System.Windows.Forms.FlowLayoutPanel> control by double-clicking controls in the **Toolbox**.
 
-#### To insert controls by double-clicking in the Toolbox
+### To insert controls by double-clicking in the Toolbox
 
 1. Double-click the <xref:System.Windows.Forms.Button> control icon in the **Toolbox**. Note that a new <xref:System.Windows.Forms.Button> control appears in the <xref:System.Windows.Forms.FlowLayoutPanel> control.
 
@@ -129,7 +129,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Inserting a Control by Drawing Its Outline
  You can insert a control into a <xref:System.Windows.Forms.FlowLayoutPanel> control and specify its size by drawing its outline in a cell.
 
-#### To insert a Control by drawing its outline
+### To insert a Control by drawing its outline
 
 1. In the **Toolbox**, click the <xref:System.Windows.Forms.Button> control icon. Do not drag it onto the form.
 
@@ -142,7 +142,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Inserting Controls Using the Insertion Bar
  You can insert controls at a specific position in a <xref:System.Windows.Forms.FlowLayoutPanel> control. When you drag a control into the <xref:System.Windows.Forms.FlowLayoutPanel> control's client area, an insertion bar appears to indicate where the control will be inserted.
 
-#### To insert a control using the caret
+### To insert a control using the caret
 
 1. Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.FlowLayoutPanel> control and point to the space between two <xref:System.Windows.Forms.Button> controls. Note that an insertion bar is drawn, indicating where the <xref:System.Windows.Forms.Button> will be placed when it is dropped into the <xref:System.Windows.Forms.FlowLayoutPanel> control. Before you drop the new <xref:System.Windows.Forms.Button> control into the <xref:System.Windows.Forms.FlowLayoutPanel> control, move the mouse pointer around to observe how the insertion bar moves.
 
@@ -151,7 +151,7 @@ When you are finished, you'll have an understanding of the role played by these 
 ## Reassigning Existing Controls to a Different Parent
  You can assign controls that exist on your form to a new <xref:System.Windows.Forms.FlowLayoutPanel> control.
 
-#### To reparent existing controls
+### To reparent existing controls
 
 1. Drag three <xref:System.Windows.Forms.Button> controls from the **Toolbox** onto the form. Position them near to each other, but leave them unaligned.
 

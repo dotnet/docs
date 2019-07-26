@@ -23,7 +23,7 @@ Gets the identifiers of the application domains in which the given module has be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomainsContainingModule(  
             [in] ModuleID moduleId,  
             [in] ULONG32 cAppDomainIds,  

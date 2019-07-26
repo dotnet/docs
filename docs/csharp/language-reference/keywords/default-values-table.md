@@ -21,20 +21,20 @@ The following table shows the default values of [value types](value-types.md).
 |Value type|Default value|
 |----------------|-------------------|
 |[bool](bool.md)|`false`|
-|[byte](byte.md)|0|
+|[byte](../builtin-types/integral-numeric-types.md)|0|
 |[char](char.md)|'\0'|
-|[decimal](decimal.md)|0M|
-|[double](double.md)|0.0D|
+|[decimal](../builtin-types/floating-point-numeric-types.md)|0M|
+|[double](../builtin-types/floating-point-numeric-types.md)|0.0D|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
-|[float](float.md)|0.0F|
-|[int](int.md)|0|
-|[long](long.md)|0L|
-|[sbyte](sbyte.md)|0|
-|[short](short.md)|0|
+|[float](../builtin-types/floating-point-numeric-types.md)|0.0F|
+|[int](../builtin-types/integral-numeric-types.md)|0|
+|[long](../builtin-types/integral-numeric-types.md)|0L|
+|[sbyte](../builtin-types/integral-numeric-types.md)|0|
+|[short](../builtin-types/integral-numeric-types.md)|0|
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
-|[uint](uint.md)|0|
-|[ulong](ulong.md)|0|
-|[ushort](ushort.md)|0|
+|[uint](../builtin-types/integral-numeric-types.md)|0|
+|[ulong](../builtin-types/integral-numeric-types.md)|0|
+|[ushort](../builtin-types/integral-numeric-types.md)|0|
 
 ## Remarks
 

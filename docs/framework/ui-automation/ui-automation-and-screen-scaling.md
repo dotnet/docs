@@ -36,7 +36,7 @@ ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
   
 <a name="Scaling_in_UI_Automation_Clients"></a>   
 ## Scaling in UI Automation Clients  
- The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] does not use logical coordinates. The following methods and properties either return physical coordinates or take them as parameters.  
+ The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] API does not use logical coordinates. The following methods and properties either return physical coordinates or take them as parameters.  
   
 - <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A>  
   

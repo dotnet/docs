@@ -22,7 +22,7 @@ Defines the product version of the common language runtime (CLR) for debugging p
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _CLR_DEBUGGING_VERSION  
 {  
     WORD wStructVersion;

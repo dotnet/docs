@@ -22,7 +22,7 @@ Provides information about a field in an object.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_FIELD{  
     mdFieldDef token;  
     ULONG32 offset;  

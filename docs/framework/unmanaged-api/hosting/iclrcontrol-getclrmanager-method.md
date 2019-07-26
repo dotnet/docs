@@ -23,7 +23,7 @@ Gets an interface pointer to an instance of any of the manager types the host ca
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCLRManager (  
     [in]  REFIID  riid,  
     [out] void  **ppObject  

@@ -16,7 +16,7 @@ Time-stamps an Authenticode XrML license.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CertTimestampAuthenticodeLicense (  
     [in]  PCRYPT_DATA_BLOB   pSignedLicenseBlob,  
     [in]  LPCWSTR            pwszTimestampURI,  

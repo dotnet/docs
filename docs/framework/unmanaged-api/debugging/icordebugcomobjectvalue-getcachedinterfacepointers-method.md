@@ -21,7 +21,7 @@ Gets the raw interface pointers cached on the current runtime callable wrapper (
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCachedInterfacePointers(  
     [in] BOOL bIInspectableOnly,  
     [in] ULONG32 celt,  

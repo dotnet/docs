@@ -17,7 +17,7 @@ Performs short-circuiting logical conjunction on two expressions.
   
 ## Syntax  
   
-```  
+```vb
 result = expression1 AndAlso expression2  
 ```  
   
@@ -41,7 +41,8 @@ result = expression1 AndAlso expression2
 |`False`|(not evaluated)|`False`|  
   
 ## Data Types  
- The `AndAlso` operator is defined only for the [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md). Visual Basic converts each operand as necessary to `Boolean` and performs the operation entirely in `Boolean`. If you assign the result to a numeric type, Visual Basic converts it from `Boolean` to that type. This could produce unexpected behavior. For example, `5 AndAlso 12` results in `–1` when converted to `Integer`.  
+ The `AndAlso` operator is defined only for the [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md). Visual Basic converts each operand as necessary to `Boolean` before evaluating the expression. If you assign the result to a numeric type, Visual Basic converts it from `Boolean` to that type such that `False` becomes `0` and `True` becomes `-1`.
+For more information, see [Boolean Type Conversions](../data-types/boolean-data-type.md#type-conversions)
   
 ## Overloading  
  The [And Operator](../../../visual-basic/language-reference/operators/and-operator.md) and the [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md) can be *overloaded*, which means that a class or structure can redefine their behavior when an operand has the type of that class or structure. Overloading the `And` and `IsFalse` operators affects the behavior of the `AndAlso` operator. If your code uses `AndAlso` on a class or structure that overloads `And` and `IsFalse`, be sure you understand their redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  

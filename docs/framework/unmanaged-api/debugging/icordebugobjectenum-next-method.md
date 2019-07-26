@@ -23,7 +23,7 @@ Gets the relative virtual addresses (RVAs) of the specified number of objects fr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)]    

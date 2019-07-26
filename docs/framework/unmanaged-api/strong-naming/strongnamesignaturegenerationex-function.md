@@ -24,7 +24,7 @@ Generates a strong name signature for the specified assembly, according to the s
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameSignatureGenerationEx (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  

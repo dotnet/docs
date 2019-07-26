@@ -23,7 +23,7 @@ Gets the literal string represented by the specified metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserString (  
    [in]   mdString    stk,  
    [out]  LPWSTR      szString,  

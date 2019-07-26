@@ -23,7 +23,7 @@ Gets the size, in bytes, of the binary code represented by this "ICorDebugCode".
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize (  
     [out] ULONG32    *pcBytes  
 );  

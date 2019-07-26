@@ -23,7 +23,7 @@ Gets an enumerator for the managed processes running on this computer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProcesses (  
     [in] COR_PUB_ENUMPROCESS       Type,  
     [out] ICorPublishProcessEnum   **ppIEnum  

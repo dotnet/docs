@@ -23,7 +23,7 @@ Gets the metadata associated with the <xref:System.Type> referenced by the speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeRefProps (  
    [in]  mdTypeRef   tr,  
    [out] mdToken     *ptkResolutionScope,  

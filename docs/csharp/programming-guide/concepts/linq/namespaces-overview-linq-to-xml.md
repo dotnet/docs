@@ -18,3 +18,7 @@ One of the advantages of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.
 In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], the class that represents XML names is <xref:System.Xml.Linq.XName>. XML names appear frequently throughout the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] API, and wherever an XML name is required, you will find an <xref:System.Xml.Linq.XName> parameter. However, you rarely work directly with an <xref:System.Xml.Linq.XName>. <xref:System.Xml.Linq.XName> contains an implicit conversion from string.  
   
 For more information, see <xref:System.Xml.Linq.XNamespace> and <xref:System.Xml.Linq.XName>.
+
+## See also
+
+- [Working with XML Namespaces (C#)](working-with-xml-namespaces.md)

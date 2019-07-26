@@ -23,5 +23,6 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 
 - [C# reference](../index.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
-- [sizeof operator](../keywords/sizeof.md)
+- [Memory and span-related types](../../../standard/memory-and-spans/index.md)
+- [sizeof operator](../operators/sizeof.md)
 - [stackalloc operator](../operators/stackalloc.md)
